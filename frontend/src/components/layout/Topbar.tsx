@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiBell, FiChevronDown, FiGlobe, FiMenu, FiMessageSquare, FiSettings } from 'react-icons/fi';
+import { FiBell, FiChevronDown, FiGlobe, FiMenu, FiMessageSquare } from 'react-icons/fi';
 import { SearchField } from '../ui/SearchField';
-import { currentUser } from '../../data/mock';
+import { useApi } from '../../hooks/useApi';
+import { fetchMe } from '../../lib/auth-store';
+import { humanize, unreadCount } from '../../lib/services';
 import { getRole } from '../../lib/nav';
 
 const LANGUAGES = ['Deutsch', 'English', 'Kinyarwanda'];
@@ -17,6 +19,12 @@ export function Topbar({ title, pathname, onMenu }: TopbarProps) {
   const [language, setLanguage] = useState(LANGUAGES[0]);
   const role = getRole(pathname);
   const messagesPath = role === 'admin' ? '/admin' : '/messages';
+  const me = useApi('auth-me', fetchMe);
+  const unread = useApi('unread-count', unreadCount);
+
+  const displayName = me.data ? `${me.data.firstName} ${me.data.lastName}` : '…';
+  const displayRole = me.data ? humanize(me.data.role) : '…';
+  const unreadTotal = unread.data?.count ?? 0;
 
   return (
     <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-line bg-base-100/90 px-4 py-3 backdrop-blur lg:px-6">
@@ -55,21 +63,25 @@ export function Topbar({ title, pathname, onMenu }: TopbarProps) {
           </ul>
         </div>
 
-        <Link to={messagesPath} className="btn btn-ghost btn-sm btn-circle text-muted" aria-label="Messages">
+        <Link to={messagesPath} className="btn btn-ghost btn-sm btn-circle relative text-muted" aria-label="Messages">
           <FiMessageSquare aria-hidden />
+          {unreadTotal > 0 ? (
+            <span className="absolute right-1 top-1 flex size-4 items-center justify-center rounded-full bg-coral text-[9px] font-bold text-white">
+              {unreadTotal > 9 ? '9+' : unreadTotal}
+            </span>
+          ) : null}
         </Link>
-        <button type="button" className="btn btn-ghost btn-sm btn-circle text-muted" aria-label="Notifications">
+        <Link to={messagesPath} className="btn btn-ghost btn-sm btn-circle text-muted" aria-label="Notifications">
           <FiBell aria-hidden />
-        </button>
-        <button type="button" className="btn btn-ghost btn-sm btn-circle text-muted" aria-label="Settings">
-          <FiSettings aria-hidden />
-        </button>
+        </Link>
 
         <div className="ml-1 flex items-center gap-2 border-l border-line pl-2 sm:pl-3">
-          <img src={currentUser.photo} alt={currentUser.name} className="size-9 rounded-full object-cover" />
+          <span className="flex size-9 items-center justify-center rounded-full bg-brand-tint text-sm font-bold text-brand">
+            {me.data ? `${me.data.firstName.charAt(0)}${me.data.lastName.charAt(0)}` : '…'}
+          </span>
           <span className="hidden leading-tight lg:block">
-            <span className="block text-xs font-semibold">{currentUser.name}</span>
-            <span className="block text-[11px] text-muted">{currentUser.role}</span>
+            <span className="block text-xs font-semibold">{displayName}</span>
+            <span className="block text-[11px] text-muted">{displayRole}</span>
           </span>
         </div>
       </div>

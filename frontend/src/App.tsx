@@ -1,9 +1,14 @@
 import { Suspense, lazy } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./components/layout/AppLayout";
 import { AuthLayout } from "./components/layout/AuthLayout";
+import { RouteProgress } from "./components/layout/RouteProgress";
+import { LoadingBlock } from "./components/common/PageState";
 import { Login } from "./pages/auth/Login";
 import { Register } from "./pages/auth/Register";
+import { VerifyCertificate } from "./pages/VerifyCertificate";
+import { useApi } from "./hooks/useApi";
+import { clearTokens, fetchMe, isSignedIn } from "./lib/auth-store";
 
 const Dashboard = lazy(() =>
   import("./pages/student/Dashboard").then((module) => ({
@@ -43,6 +48,11 @@ const AdminTransactions = lazy(() =>
 const AdminLiveClass = lazy(() =>
   import("./pages/admin/LiveClass").then((module) => ({
     default: module.AdminLiveClass,
+  })),
+);
+const AdminCertificates = lazy(() =>
+  import("./pages/admin/Certificates").then((module) => ({
+    default: module.AdminCertificates,
   })),
 );
 
@@ -100,33 +110,61 @@ function PageFallback() {
   );
 }
 
+function RequireAuth() {
+  if (!isSignedIn()) {
+    return <Navigate to="/login" replace />;
+  }
+  return <Outlet />;
+}
+
+function RequireStaff() {
+  const me = useApi('auth-me', fetchMe);
+  if (me.loading) return <LoadingBlock label="Checking access…" />;
+  if (me.error || !me.data) {
+    clearTokens();
+    return <Navigate to="/login" replace />;
+  }
+  if (me.data.role === 'STUDENT') {
+    return <Navigate to="/dashboard" replace />;
+  }
+  return <Outlet />;
+}
+
 export default function App() {
   return (
     <Suspense fallback={<PageFallback />}>
+      <RouteProgress />
       <Routes>
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Route>
 
-        <Route element={<AppLayout />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/courses/:slug" element={<CourseOverview />} />
-          <Route path="/courses/:slug/learn" element={<CourseContents />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/instructors" element={<Teachers />} />
-          <Route path="/messages" element={<Messages />} />
-          <Route path="/activity" element={<Activity />} />
-          <Route path="/profile" element={<Profile />} />
+        <Route path="/verify/:code" element={<VerifyCertificate />} />
 
-          <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/admin/courses" element={<AdminCourses />} />
-          <Route path="/admin/schedule" element={<AdminSchedule />} />
-          <Route path="/admin/students" element={<AdminStudents />} />
-          <Route path="/admin/resources" element={<AdminResources />} />
+        <Route element={<RequireAuth />}>
+          <Route element={<AppLayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/courses/:slug" element={<CourseOverview />} />
+            <Route path="/courses/:slug/learn" element={<CourseContents />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/instructors" element={<Teachers />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/activity" element={<Activity />} />
+            <Route path="/profile" element={<Profile />} />
+
+            <Route element={<RequireStaff />}>
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/courses" element={<AdminCourses />} />
+              <Route path="/admin/schedule" element={<AdminSchedule />} />
+              <Route path="/admin/students" element={<AdminStudents />} />
+              <Route path="/admin/resources" element={<AdminResources />} />
           <Route path="/admin/transactions" element={<AdminTransactions />} />
+          <Route path="/admin/certificates" element={<AdminCertificates />} />
           <Route path="/admin/live-class" element={<AdminLiveClass />} />
+            </Route>
+          </Route>
         </Route>
 
         <Route path="/" element={<Navigate to="/dashboard" replace />} />

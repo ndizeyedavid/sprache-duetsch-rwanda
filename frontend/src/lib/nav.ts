@@ -1,4 +1,5 @@
 import {
+  FiAward,
   FiBook,
   FiCalendar,
   FiClipboard,
@@ -26,6 +27,7 @@ export const NAV: Record<Role, NavItem[]> = {
     { label: 'Students', to: '/admin/students', icon: FiUsers },
     { label: 'Resources', to: '/admin/resources', icon: FiLink },
     { label: 'Transactions', to: '/admin/transactions', icon: FiClipboard },
+    { label: 'Certificates', to: '/admin/certificates', icon: FiAward },
     { label: 'Live Class', to: '/admin/live-class', icon: FiVideo },
   ],
 };
@@ -49,6 +51,7 @@ const TITLES: { match: RegExp; title: string }[] = [
   { match: /^\/admin\/students$/, title: 'Students' },
   { match: /^\/admin\/resources$/, title: 'Resources' },
   { match: /^\/admin\/transactions$/, title: 'Transactions' },
+  { match: /^\/admin\/certificates$/, title: 'Certificates' },
   { match: /^\/admin\/live-class$/, title: '' },
   { match: /^\/admin$/, title: 'Dashboard' },
 ];

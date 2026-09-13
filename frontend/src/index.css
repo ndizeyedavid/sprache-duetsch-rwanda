@@ -93,3 +93,15 @@
     display: none;
   }
 }
+
+/* NProgress — brand-tinted top bar for route changes. */
+#nprogress .bar {
+  background: var(--color-brand);
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow:
+    0 0 10px var(--color-brand),
+    0 0 5px var(--color-brand);
+}
