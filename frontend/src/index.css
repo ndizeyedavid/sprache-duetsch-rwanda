@@ -94,14 +94,16 @@
   }
 }
 
-/* NProgress — brand-tinted top bar for route changes. */
+/* NProgress — brand-tinted top bar for route changes.
+   This file must be imported after `nprogress/nprogress.css` (see main.tsx),
+   otherwise the default blue bar wins the cascade. */
 #nprogress .bar {
-  background: var(--color-brand);
-  height: 10px;
+  background: #fb0d00;
+  height: 5px;
 }
 
 #nprogress .peg {
   box-shadow:
-    0 0 10px var(--color-brand),
-    0 0 5px var(--color-brand);
+    0 0 10px #fb0d00,
+    0 0 5px #fb0d00;
 }
