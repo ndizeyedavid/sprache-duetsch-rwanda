@@ -1,119 +1,182 @@
-import { FiMoreHorizontal } from 'react-icons/fi';
-import { Panel } from '../../components/ui/Panel';
-import { MiniCalendar } from '../../components/ui/Calendar';
+import { useState } from 'react';
+import { FiBookOpen, FiClock, FiDownload, FiTrendingUp, FiUsers } from 'react-icons/fi';
+import { Panel, SectionHeader } from '../../components/ui/Panel';
+import { StatTile } from '../../components/ui/StatTile';
 import { GroupedBar } from '../../components/charts/GroupedBar';
-import { Sparkline } from '../../components/charts/Sparkline';
-import { MiniBars } from '../../components/charts/MiniBars';
-import { TONE_CLASSES, COLORS } from '../../lib/theme';
+import { ScheduleCard } from '../../components/cards/ScheduleCard';
+import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useApi } from '../../hooks/useApi';
+import { apiErrorMessage, downloadFile } from '../../lib/api';
+import { COLORS } from '../../lib/theme';
+import { photos } from '../../lib/images';
 import { rwf } from '../../lib/format';
-import { adminDashboard, adminUpcomingEvents, adminWorkingActivity, earningsSpark, enrollmentBars } from '../../data/mock';
+import {
+  getAcademicDashboard,
+  getFinanceReportSummary,
+  isoDate,
+  isoTime,
+  listLevels,
+  listSessions,
+  money,
+} from '../../lib/services';
+import { sessionStatusLabel, sessionTone, teacherName } from '../../lib/sessions-ui';
+
+const AVATARS = [photos.clarisse, photos.nadine, photos.jeanPaul, photos.aline, photos.eric];
 
 export function AdminDashboard() {
+  const academic = useApi('academic-dashboard', getAcademicDashboard);
+  const finance = useApi('finance-summary', getFinanceReportSummary);
+  const sessions = useApi('all-sessions', listSessions);
+  const levels = useApi('levels-catalog', listLevels);
+  const [exporting, setExporting] = useState<string | null>(null);
+  const [exportError, setExportError] = useState<string | null>(null);
+
+  if (academic.loading) return <LoadingBlock label="Loading academic overview…" />;
+  if (academic.error || !academic.data) {
+    return <ErrorBlock message={academic.error ?? 'Could not load the dashboard.'} onRetry={academic.refetch} />;
+  }
+
+  const data = academic.data;
+
+  async function handleExport(key: string, path: string, filename: string) {
+    setExportError(null);
+    setExporting(key);
+    try {
+      await downloadFile(path, filename);
+    } catch (err) {
+      setExportError(apiErrorMessage(err, `Could not export ${filename}.`));
+    } finally {
+      setExporting(null);
+    }
+  }
+
+  const levelName = (id: string): string =>
+    levels.data?.find((level) => level.id === id)?.code ?? id.slice(0, 8);
+  const enrolmentBars = data.byLevel.map((row) => ({ level: levelName(row.levelId), students: row.count }));
+  const upcomingSessions = (sessions.data ?? [])
+    .filter((session) => ['SCHEDULED', 'LIVE', 'RESCHEDULED'].includes(session.status))
+    .slice(0, 4);
+
   return (
     <div className="grid gap-5 xl:grid-cols-12">
       <div className="space-y-5 xl:col-span-8">
+        <div className="grid gap-4 sm:grid-cols-4">
+          <StatTile label="Total students" value={String(data.totalStudents)} tone="brand" variant="solid" icon={FiUsers} />
+          <StatTile label="Active students" value={String(data.activeStudents)} tone="sun" variant="solid" icon={FiTrendingUp} />
+          <StatTile label="At-risk students" value={String(data.atRiskStudents)} tone="coral" variant="solid" icon={FiClock} />
+          <StatTile label="New registrations" value={String(data.newRegistrations)} tone="navy" variant="solid" icon={FiBookOpen} />
+        </div>
+
+        <Panel>
+          <SectionHeader title="Enrolments by level" />
+          {enrolmentBars.length === 0 ? (
+            <EmptyBlock title="No active enrolments" hint="Enrolments appear here once students are assigned to levels." />
+          ) : (
+            <GroupedBar
+              data={enrolmentBars}
+              xKey="level"
+              barSize={26}
+              series={[{ key: 'students', label: 'Students', color: COLORS.brand }]}
+              height={240}
+            />
+          )}
+        </Panel>
+
         <div className="grid gap-4 sm:grid-cols-3">
           <Panel>
-            <h2 className="text-sm font-semibold">Total Students</h2>
-            <div className="mt-3 flex items-end justify-between gap-3">
-              <span className="text-xl font-semibold">{adminDashboard.totalStudents.toLocaleString('en-US').replace(',', '.')}</span>
-              <MiniBars bars={enrollmentBars} />
-            </div>
-            <p className="mt-3 text-[11px]">
-              <span className="font-semibold text-coral">{adminDashboard.studentDelta}</span>{' '}
-              <span className="text-muted">than last year</span>
-            </p>
+            <p className="text-[11px] text-muted">Attendance rate</p>
+            <p className="mt-1 text-2xl font-semibold">{data.attendanceRate}%</p>
           </Panel>
-
           <Panel>
-            <div className="flex items-center gap-2">
-              <span className="flex size-8 items-center justify-center rounded-xl bg-brand-soft text-sm font-semibold text-brand">
-                A1
-              </span>
-              <span className="text-lg font-semibold">{adminDashboard.courses}</span>
-              <span className="text-[11px] font-medium text-brand">+15% than last year</span>
-            </div>
-            <h2 className="mt-4 text-sm font-semibold">Courses</h2>
-            <p className="mt-1 text-[11px] text-muted">Aktive Stufen und Kurse in allen Standorten</p>
+            <p className="text-[11px] text-muted">Pass rate</p>
+            <p className="mt-1 text-2xl font-semibold">{data.passRate}%</p>
           </Panel>
-
           <Panel>
-            <h2 className="text-sm font-semibold">Earnings</h2>
-            <Sparkline data={earningsSpark} color={COLORS.brand} height={56} className="mt-2" />
-            <p className="mt-3 text-base font-semibold">{rwf(adminDashboard.earnings)}</p>
-            <p className="mt-1 text-[11px] font-medium text-brand">+15% ↑</p>
+            <p className="text-[11px] text-muted">Average score</p>
+            <p className="mt-1 text-2xl font-semibold">{data.averageScore}</p>
           </Panel>
         </div>
 
         <Panel>
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-base font-semibold sm:text-lg">Working Activity</h2>
-            <div className="flex items-center gap-2">
-              <span className="flex items-center gap-2 rounded-field border border-line px-3 py-1.5">
-                <span className="flex size-6 items-center justify-center rounded-lg bg-brand-soft text-[10px] font-semibold text-brand">
-                  P
-                </span>
-                <span>
-                  <span className="block text-[10px] text-muted">Performance</span>
-                  <span className="block text-xs font-semibold">{adminDashboard.performance.toLocaleString('en-US')}</span>
-                </span>
-              </span>
-              <span className="flex items-center gap-2 rounded-field border border-line px-3 py-1.5">
-                <span className="flex size-6 items-center justify-center rounded-lg bg-sun-soft text-[10px] font-semibold text-sun">
-                  I
-                </span>
-                <span>
-                  <span className="block text-[10px] text-muted">Impression</span>
-                  <span className="block text-xs font-semibold">{adminDashboard.impressions.toLocaleString('en-US')}</span>
-                </span>
-              </span>
-            </div>
-          </div>
-          <GroupedBar
-            data={adminWorkingActivity}
-            xKey="month"
-            barSize={6}
-            series={[
-              { key: 'planned', label: 'Planned', color: COLORS.grid },
-              { key: 'morning', label: 'Morning', color: COLORS.brand },
-              { key: 'evening', label: 'Evening', color: COLORS.sun },
-            ]}
-            height={260}
-          />
+          <SectionHeader title="Finance" action={{ label: 'Transactions', to: '/admin/transactions' }} />
+          {finance.loading ? (
+            <LoadingBlock label="Loading finance…" />
+          ) : finance.error || !finance.data ? (
+            <p className="text-xs text-muted">
+              Finance figures need a finance role. {finance.error ?? ''}
+            </p>
+          ) : (
+            <dl className="grid gap-3 text-sm sm:grid-cols-3">
+              <div className="rounded-field bg-base-200 p-3">
+                <dt className="text-[11px] text-muted">Billed</dt>
+                <dd className="mt-1 font-semibold">{rwf(money(finance.data.totalBilled))}</dd>
+              </div>
+              <div className="rounded-field bg-base-200 p-3">
+                <dt className="text-[11px] text-muted">Collected</dt>
+                <dd className="mt-1 font-semibold text-brand">{rwf(money(finance.data.totalCollected))}</dd>
+              </div>
+              <div className="rounded-field bg-base-200 p-3">
+                <dt className="text-[11px] text-muted">Outstanding</dt>
+                <dd className="mt-1 font-semibold">{rwf(money(finance.data.totalOutstanding))}</dd>
+              </div>
+            </dl>
+          )}
         </Panel>
       </div>
 
       <div className="space-y-5 xl:col-span-4">
         <Panel>
-          <MiniCalendar marked={[5, 6]} selected={6} />
+          <SectionHeader title="Reports" />
+          <div className="grid gap-2">
+            {[
+              { key: 'students', label: 'Students CSV', path: '/students/export?pageSize=100', file: 'students.csv' },
+              { key: 'payments', label: 'Payments CSV', path: '/payments/export?pageSize=100', file: 'payments.csv' },
+              { key: 'attendance', label: 'Attendance CSV', path: '/attendance/export', file: 'attendance.csv' },
+              { key: 'grades', label: 'Grades CSV', path: '/assessments/attempts/export', file: 'attempts.csv' },
+            ].map((report) => (
+              <button
+                key={report.key}
+                type="button"
+                disabled={exporting !== null}
+                onClick={() => handleExport(report.key, report.path, report.file)}
+                className="btn btn-sm justify-start gap-2 rounded-full border-line bg-base-200 disabled:opacity-60"
+              >
+                <FiDownload aria-hidden />
+                {exporting === report.key ? 'Exporting…' : report.label}
+              </button>
+            ))}
+          </div>
+          {exportError ? (
+            <p role="alert" className="mt-2 text-xs font-medium text-error">
+              {exportError}
+            </p>
+          ) : null}
         </Panel>
 
         <Panel>
-          <h2 className="text-base font-semibold">Upcoming Events</h2>
-          <div className="mt-4 space-y-5">
-            {adminUpcomingEvents.map((group, index) => (
-              <div key={`${group.date}-${index}`}>
-                <div className="mb-3 flex items-center justify-between">
-                  <h3 className="text-sm font-semibold">{group.date}</h3>
-                  <FiMoreHorizontal className="text-muted" aria-hidden />
-                </div>
-                <ul className="space-y-3">
-                  {group.events.map((event) => (
-                    <li key={event.id} className="flex gap-3">
-                      <span className="w-16 shrink-0 pt-0.5 text-[11px] text-muted">{event.time}</span>
-                      <span
-                        className={`border-l-2 pl-3 ${TONE_CLASSES[event.tone].text}`}
-                        style={{ borderColor: TONE_CLASSES[event.tone].hex }}
-                      >
-                        <span className="block text-[10px]">{event.category}</span>
-                        <span className="block text-xs font-semibold text-ink">{event.title}</span>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <SectionHeader title="Upcoming sessions" action={{ label: 'Schedule', to: '/admin/schedule' }} />
+          {sessions.loading ? (
+            <LoadingBlock label="Loading sessions…" />
+          ) : sessions.error ? (
+            <ErrorBlock message={sessions.error} onRetry={sessions.refetch} />
+          ) : upcomingSessions.length === 0 ? (
+            <EmptyBlock title="Nothing scheduled" hint="Create a session from the schedule page." />
+          ) : (
+            <div className="space-y-3">
+              {upcomingSessions.map((session, index) => (
+                <ScheduleCard
+                  key={session.id}
+                  title={session.title}
+                  teacher={teacherName(session.teacher)}
+                  photo={AVATARS[index % AVATARS.length]}
+                  date={isoDate(session.startAt)}
+                  time={`${isoTime(session.startAt)} – ${isoTime(session.endAt)}`}
+                  tone={sessionTone(session.status)}
+                  status={sessionStatusLabel(session.status)}
+                />
+              ))}
+            </div>
+          )}
         </Panel>
       </div>
     </div>

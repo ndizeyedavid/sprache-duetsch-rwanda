@@ -1,63 +1,145 @@
 import { useState } from 'react';
-import { Panel } from '../../components/ui/Panel';
-import { ActivityRow } from '../../components/cards/ActivityRow';
-import { KebabMenu } from '../../components/ui/KebabMenu';
-import { SegmentedControl } from '../../components/ui/SegmentedControl';
-import { activityFeed, activityYesterday } from '../../data/mock';
+import type { FormEvent } from 'react';
+import { Panel, SectionHeader } from '../../components/ui/Panel';
+import { StatusBadge } from '../../components/ui/StatusBadge';
+import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useApi } from '../../hooks/useApi';
+import { apiErrorMessage } from '../../lib/api';
+import { fetchMe } from '../../lib/auth-store';
+import { getFeed, humanize, isoDate, postFeedEvent } from '../../lib/services';
 
-const TABS = ['Following', 'You'];
-const FILTERS = ['All Type', 'Files', 'Mentions', 'Groups'];
+const FILTERS = ['All', 'Announcement', 'Exam', 'Attendance', 'Enrollment', 'Payment', 'Class'] as const;
+
+const POST_TYPES = ['ANNOUNCEMENT', 'CLASS', 'SCHEDULE', 'EXAM', 'LESSON'] as const;
 
 export function Activity() {
-  const [tab, setTab] = useState(TABS[0]);
-  const [filter, setFilter] = useState(FILTERS[0]);
+  const [filter, setFilter] = useState<(typeof FILTERS)[number]>('All');
+  const me = useApi('auth-me', fetchMe);
+  const feed = useApi(
+    `feed-${filter}`,
+    () => getFeed(filter === 'All' ? undefined : filter.toUpperCase()),
+  );
+
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
+  const [postType, setPostType] = useState<string>('ANNOUNCEMENT');
+  const [postError, setPostError] = useState<string | null>(null);
+  const [posting, setPosting] = useState(false);
+
+  const isStaff = me.data ? me.data.role !== 'STUDENT' : false;
+  const events = feed.data ?? [];
+
+  async function handlePost(event: FormEvent) {
+    event.preventDefault();
+    setPostError(null);
+    setPosting(true);
+    try {
+      await postFeedEvent({ type: postType, title: title.trim(), body: body.trim() || undefined });
+      setTitle('');
+      setBody('');
+      feed.refetch();
+    } catch (err) {
+      setPostError(apiErrorMessage(err, 'Could not publish the update.'));
+    } finally {
+      setPosting(false);
+    }
+  }
 
   return (
-    <Panel>
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
-        <div className="flex items-center gap-5">
-          <button
-            type="button"
-            onClick={() => setTab(TABS[0])}
-            className={`relative pb-2 text-sm font-medium ${
-              tab === TABS[0] ? 'border-b-2 border-brand text-brand' : 'text-muted'
-            }`}
-          >
-            {TABS[0]}
-            <span className="absolute -right-2 top-0 size-1.5 rounded-full bg-coral" aria-hidden />
-          </button>
-          <button
-            type="button"
-            onClick={() => setTab(TABS[1])}
-            className={`pb-2 text-sm font-medium ${
-              tab === TABS[1] ? 'border-b-2 border-brand text-brand' : 'text-muted'
-            }`}
-          >
-            {TABS[1]}
-          </button>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="hidden text-[11px] text-muted sm:block">View:</span>
-          <SegmentedControl options={FILTERS} value={filter} onChange={setFilter} ariaLabel="Activity filter" />
-          <KebabMenu label="Activity options" />
-        </div>
-      </div>
+    <div className="space-y-5">
+      {isStaff ? (
+        <Panel>
+          <SectionHeader title="Post an update" />
+          <form onSubmit={handlePost} className="space-y-3">
+            <div className="grid gap-3 sm:grid-cols-3">
+              <select
+                value={postType}
+                onChange={(event) => setPostType(event.target.value)}
+                className="select w-full rounded-field border-line bg-base-200"
+                aria-label="Update type"
+              >
+                {POST_TYPES.map((type) => (
+                  <option key={type} value={type}>
+                    {humanize(type)}
+                  </option>
+                ))}
+              </select>
+              <input
+                required
+                value={title}
+                onChange={(event) => setTitle(event.target.value)}
+                placeholder="Headline"
+                className="input w-full rounded-field border-line bg-base-200 sm:col-span-2"
+              />
+            </div>
+            <textarea
+              value={body}
+              onChange={(event) => setBody(event.target.value)}
+              placeholder="Details (optional)"
+              rows={2}
+              className="textarea w-full rounded-field border-line bg-base-200"
+            />
+            {postError ? (
+              <p role="alert" className="text-xs font-medium text-error">
+                {postError}
+              </p>
+            ) : null}
+            <button
+              type="submit"
+              disabled={posting}
+              className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+            >
+              {posting ? <span className="loading loading-spinner loading-sm" /> : 'Publish'}
+            </button>
+          </form>
+        </Panel>
+      ) : null}
 
-      <div className="pt-5">
-        <h3 className="mb-4 text-sm font-semibold">Today</h3>
-        <ul className="relative border-l border-dashed border-line pl-5">
-          {activityFeed.map((item) => (
-            <ActivityRow key={item.id} item={item} />
+      <Panel>
+        <SectionHeader title="Activity feed" />
+        <div className="mb-4 flex flex-wrap gap-2">
+          {FILTERS.map((name) => (
+            <button
+              key={name}
+              type="button"
+              onClick={() => setFilter(name)}
+              className={`btn btn-sm rounded-full ${
+                filter === name ? 'border-0 bg-brand text-white' : 'border-line bg-base-200'
+              }`}
+            >
+              {name}
+            </button>
           ))}
-        </ul>
+        </div>
 
-        <h3 className="mb-4 mt-4 text-sm font-semibold">Yesterday</h3>
-        <ul className="relative border-l border-dashed border-line pl-5">
-          {activityYesterday.map((item) => (
-            <ActivityRow key={item.id} item={item} />
-          ))}
-        </ul>
-      </div>
-    </Panel>
+        {feed.loading ? (
+          <LoadingBlock label="Loading activity…" />
+        ) : feed.error ? (
+          <ErrorBlock message={feed.error} onRetry={feed.refetch} />
+        ) : events.length === 0 ? (
+          <EmptyBlock
+            title="Nothing here yet"
+            hint="Enrolments, exams, payments and class updates appear in this feed automatically."
+          />
+        ) : (
+          <ul className="space-y-3">
+            {events.map((event) => (
+              <li key={event.id} className="flex items-start justify-between gap-3 rounded-field bg-base-200 px-4 py-3">
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold leading-snug">{event.title}</p>
+                  {event.body ? (
+                    <p className="mt-1 whitespace-pre-wrap text-xs leading-relaxed text-muted">{event.body}</p>
+                  ) : null}
+                  <p className="mt-1.5 text-[11px] text-muted">
+                    {event.actorName ?? 'Sparch'} · {isoDate(event.createdAt)}
+                  </p>
+                </div>
+                <StatusBadge status={humanize(event.type)} />
+              </li>
+            ))}
+          </ul>
+        )}
+      </Panel>
+    </div>
   );
 }
