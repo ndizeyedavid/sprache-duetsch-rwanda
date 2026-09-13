@@ -253,6 +253,12 @@ model User {
   certificatesIssued Certificate[]    @relation("CertificateIssuer")
   materialsUploaded  LessonMaterial[] @relation("MaterialUploader")
   sessionMaterials   SessionMaterial[] @relation("SessionMaterialUploader")
+  conversationsCreated Conversation[] @relation("ConversationCreator")
+  conversationMemberships ConversationParticipant[]
+  messagesSent       Message[]        @relation("MessageSender")
+  activityAuthored   ActivityEvent[]  @relation("ActivityActor")
+  activityTargeted   ActivityEvent[]  @relation("ActivityTarget")
+  articlesAuthored   Article[]        @relation("ArticleAuthor")
 
   @@index([role, status])
 }
@@ -332,6 +338,7 @@ model Level {
   certificates Certificate[]
   intendedBy  Student[]    @relation("IntendedLevel")
   currentFor  Student[]    @relation("CurrentLevel")
+  activityEvents ActivityEvent[]
 
   @@index([language, order])
 }
@@ -377,6 +384,8 @@ model ClassGroup {
   teacher     User?          @relation("ClassTeacher", fields: [teacherId], references: [id])
   enrollments Enrollment[]
   sessions    ClassSession[]
+  conversations Conversation[]
+  activityEvents ActivityEvent[]
 
   @@index([levelId, intakeId])
   @@index([teacherId])
@@ -420,6 +429,7 @@ model Student {
   payments       Payment[]
   discounts      Discount[]
   certificates   Certificate[]
+  activityEvents ActivityEvent[]
 
   @@index([campusId, status])
   @@index([currentLevelId])
@@ -898,6 +908,122 @@ model Notification {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, readAt])
+}
+
+enum ActivityEventType {
+  ANNOUNCEMENT
+  LESSON
+  ASSIGNMENT
+  EXAM
+  PAYMENT
+  CLASS
+  SCHEDULE
+  ATTENDANCE
+  ENROLLMENT
+  MESSAGE
+  SYSTEM
+}
+
+// ---------------------------------------------------------------------------
+// Direct messaging
+// ---------------------------------------------------------------------------
+
+model Conversation {
+  id           String   @id @default(uuid())
+  title        String?
+  classGroupId String?
+  createdById  String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  classGroup   ClassGroup? @relation(fields: [classGroupId], references: [id])
+  createdBy    User?       @relation("ConversationCreator", fields: [createdById], references: [id])
+  participants ConversationParticipant[]
+  messages     Message[]
+
+  @@index([classGroupId])
+}
+
+model ConversationParticipant {
+  conversationId String
+  userId         String
+  lastReadAt     DateTime?
+  createdAt      DateTime  @default(now())
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([conversationId, userId])
+  @@index([userId])
+}
+
+model Message {
+  id             String   @id @default(uuid())
+  conversationId String
+  senderId       String
+  body           String
+  createdAt      DateTime @default(now())
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  sender       User         @relation("MessageSender", fields: [senderId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId, createdAt])
+}
+
+// ---------------------------------------------------------------------------
+// Activity feed, articles, FAQs
+// ---------------------------------------------------------------------------
+
+model ActivityEvent {
+  id           String            @id @default(uuid())
+  type         ActivityEventType @default(SYSTEM)
+  title        String
+  body         String?
+  actorId      String?
+  actorName    String?
+  levelId      String?
+  classGroupId String?
+  studentId    String?
+  userId       String?
+  createdAt    DateTime          @default(now())
+
+  actor      User?       @relation("ActivityActor", fields: [actorId], references: [id])
+  user       User?       @relation("ActivityTarget", fields: [userId], references: [id], onDelete: Cascade)
+  level      Level?      @relation(fields: [levelId], references: [id])
+  classGroup ClassGroup? @relation(fields: [classGroupId], references: [id])
+  student    Student?    @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@index([createdAt])
+  @@index([levelId, classGroupId])
+  @@index([userId, createdAt])
+}
+
+model Article {
+  id            String    @id @default(uuid())
+  slug          String    @unique
+  title         String
+  excerpt       String?
+  body          String
+  coverImageUrl String?
+  authorId      String?
+  isPublished   Boolean   @default(false)
+  publishedAt   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  author User? @relation("ArticleAuthor", fields: [authorId], references: [id])
+
+  @@index([isPublished, publishedAt])
+}
+
+model Faq {
+  id          String   @id @default(uuid())
+  question    String
+  answer      String
+  order       Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 
 model AuditLog {
