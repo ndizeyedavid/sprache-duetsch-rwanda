@@ -1,10 +1,10 @@
 # AGENTS.md — Sparch Duetsch Rwanda (Deutsch Sprache RW E-Learning)
 
-`frontend/` is a Vite scaffold. `backend/` is a working Express + TypeScript + Prisma + PostgreSQL API (**Phase 1 MVP complete**). Phase 2+ work follows the build order at the bottom.
+`frontend/` is a Vite + React 19 app with real routes/pages (student, auth, admin). `backend/` is a working Express + TypeScript + Prisma + PostgreSQL API (**Phase 1 MVP complete**). Phase 2+ work follows the build order at the bottom.
 
 ## Layout & entrypoints
 
-- `frontend/src/main.tsx` → `App.tsx` (currently empty placeholder), `index.css`.
+- `frontend/src/main.tsx` (BrowserRouter) → `App.tsx` (lazy-loaded routes: `/dashboard`, `/courses`, `/courses/:slug`, `/courses/:slug/learn`, `/schedule`, `/instructors`, `/messages`, `/activity`, `/profile`, `/login`, `/register`, `/admin/*`), `index.css`. `src/lib/api.ts` is the only axios instance; `src/lib/auth-store.ts` owns tokens; `src/components/layout/RouteProgress.tsx` drives NProgress on navigation.
 - `backend/src/server.ts` → `app.ts` → `routes.ts` (mounts every module router under `/api`). Entrypoints below.
 - UI components must use the `daisyui` skill in `.agents/skills/`. No other component library.
 - Backend follows the `express-typescript` skill in `.agents/skills/`.
@@ -44,7 +44,8 @@
 
 - Tailwind v4 via `@tailwindcss/vite` plugin, not v3 config: `src/index.css` uses `@import "tailwindcss";` + `@plugin "daisyui" { themes: light --default; }`. Keep this; add themes only inside that block.
 - Stack: React 19, Vite 7, `typescript ~5.9`, `verbatimModuleSyntax: true` (use `import type`), `erasableSyntaxOnly: true` (no enums/namespaces), `noUnusedLocals`/`noUnusedParameters: true`, `jsx: react-jsx`, `moduleResolution: bundler`.
-- No router, state, or fetch library installed yet. Propose before adding one.
+- Router: `react-router-dom` v7 (BrowserRouter in `main.tsx`). Data/fetch: `axios` (single instance in `src/lib/api.ts`, base URL from `VITE_API_URL`, Bearer access token + refresh retry). Progress: `nprogress` driven by `RouteProgress.tsx` on every pathname change (plus Suspense fallback). Charts: `recharts`; utils: `date-fns`, `react-icons`. No global state library yet — propose before adding one.
+- API envelope: backend returns `{ success: true, data }` or paginated `{ success: true, ...buildPaginated(...) }`. Always unwrap `data` in `api.ts` helpers, never in pages. Tokens live only in `auth-store.ts` (localStorage `sparch.accessToken` / `sparch.refreshToken`).
 
 ## Backend quirks (verified, do not change pattern)
 
@@ -81,6 +82,13 @@
 | `/api/payments`      | `modules/payments`      | methods, charges, discounts, payments, refunds, receipts, reports   |
 | `/api/dashboards`    | `modules/dashboards`    | student / teacher / academic / finance / management KPIs            |
 | `/api/notifications` | `modules/notifications` | inbox, read state (`readAt`), announcements                         |
+| `/api/messages`      | `modules/messages`      | DM threads (participants, unread counts), send, read, contacts      |
+| `/api/activity`      | `modules/activity`      | live feed (`GET /feed`, scoped) + staff posts; emitters in enrollments/assessments/payments/sessions |
+| `/api/articles`      | `modules/articles`      | public articles (`/articles`, `/articles/:slug`) + FAQs; academic CRUD |
+| `/api/certificates`  | `modules/certificates`  | issue/revoke/reissue + eligibility check, `GET /my`, public `/verify/:code`, PDF (`/:id/pdf`, pdfkit + QR) |
+| `/api/uploads`       | `modules/uploads`       | staff file upload (multer, 25 MB, allowlist) + authed download; `./uploads` gitignored |
+
+CSV/PDF exports live in their modules via `src/lib/csv.ts` (`sendCsv`): `GET /students/export`, `/payments/export`, `/assessments/attempts/export`, `/attendance/export`; receipt PDF at `GET /payments/receipts/:id/pdf`. Skill analytics: `GET /assessments/my/skills` + `GET /assessments/skills?studentId=`. Lesson/assessment prerequisites are **blocking** (403 until prerequisite lesson is COMPLETED). `src/lib/notify.ts` is the single notification fan-out (IN_APP persisted; other channels log-driver until provider keys exist). `src/lib/reminders.ts` runs node-cron jobs from `server.ts` (overdue daily 08:00, pre-class hourly; `REMINDERS_ENABLED=false` disables). Frontend is a PWA (`vite-plugin-pwa`, app-shell precache + image cache; API never cached).
 
 ## Domain rules (Deutsch Sprache RW — agent will get these wrong)
 
@@ -110,4 +118,4 @@
 3. **Later:** Gateways, automated receipts/reminders, multi-campus finance, discounts.
 4. **Later:** PWA/mobile, AI practice, integrations, personalization.
 
-Known Phase 1 gaps to pick up first: certificates module + public verification page, password-reset email delivery (token is returned in dev only), notification channels beyond `IN_APP`, and wiring the frontend to this API (frontend still uses `frontend/src/data/mock.ts`).
+Remaining gaps: password-reset email delivery (token is returned in dev only), notification providers beyond `IN_APP` (log driver only), payment gateways (manual records only). Frontend is fully wired to this API. Certificates, chat, activity feed, articles/FAQs, exports, reminders, skills, uploads and PWA are all implemented (see module map above).
