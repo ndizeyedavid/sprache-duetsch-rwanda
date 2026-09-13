@@ -10,8 +10,15 @@ export type ApiState<T> = {
 /**
  * Minimal fetch hook for backend `{ success, data }` endpoints.
  * Pass a stable key; changing it refetches.
+ *
+ * Set `enabled` to false while the fetch has no valid target (e.g. nothing is
+ * selected yet) so we never call an endpoint with an empty id.
  */
-export function useApi<T>(key: string, fetcher: () => Promise<T>): ApiState<T> {
+export function useApi<T>(
+  key: string,
+  fetcher: () => Promise<T>,
+  enabled = true,
+): ApiState<T> {
   const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -20,6 +27,12 @@ export function useApi<T>(key: string, fetcher: () => Promise<T>): ApiState<T> {
   const refetch = useCallback(() => setNonce((value) => value + 1), []);
 
   useEffect(() => {
+    if (!enabled) {
+      setData(null);
+      setError(null);
+      setLoading(false);
+      return;
+    }
     let cancelled = false;
     setLoading(true);
     setError(null);
@@ -40,7 +53,7 @@ export function useApi<T>(key: string, fetcher: () => Promise<T>): ApiState<T> {
       cancelled = true;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key, nonce]);
+  }, [key, nonce, enabled]);
 
   return { data, loading, error, refetch };
 }

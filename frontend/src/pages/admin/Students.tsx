@@ -7,9 +7,13 @@ import { StatusBadge } from '../../components/ui/StatusBadge';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage, downloadFile } from '../../lib/api';
+import { isAcademic } from '../../lib/roles';
+import { useSession } from '../../lib/session';
 import { humanize, listLevels, listStudents, runPlacement } from '../../lib/services';
 
 export function AdminStudents() {
+  const { user } = useSession();
+  const canPlace = user ? isAcademic(user.role) : false;
   const students = useApi('admin-students', listStudents);
   const levels = useApi('levels-catalog', listLevels);
   const [query, setQuery] = useState('');
@@ -69,6 +73,7 @@ export function AdminStudents() {
 
   return (
     <div className="space-y-5">
+      {canPlace ? (
       <Panel>
         <SectionHeader title="Placement test" />
         <form onSubmit={handlePlacement} className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
@@ -101,6 +106,7 @@ export function AdminStudents() {
         ) : null}
         {placeResult ? <p className="mt-2 text-xs font-medium text-brand">{placeResult}</p> : null}
       </Panel>
+      ) : null}
 
       <Panel>
         <SectionHeader title={`Students (${rows.length})`} />

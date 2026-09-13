@@ -69,6 +69,7 @@ function LibraryTab() {
   const modules = useApi(
     `level-modules-${selectedLevelId ?? 'none'}`,
     () => listLevelModules(selectedLevelId ?? ''),
+    selectedLevelId !== null,
   );
 
   async function handleSearch(event: FormEvent) {
@@ -189,7 +190,11 @@ function ArticlesTab({ isStaff }: { isStaff: boolean }) {
   const [formError, setFormError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
-  const detail = useApi(`article-${selectedSlug ?? 'none'}`, () => getArticle(selectedSlug ?? ''));
+  const detail = useApi(
+    `article-${selectedSlug ?? 'none'}`,
+    () => getArticle(selectedSlug ?? ''),
+    selectedSlug !== null,
+  );
 
   async function handleCover(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];

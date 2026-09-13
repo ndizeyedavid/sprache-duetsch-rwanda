@@ -9,15 +9,12 @@ import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage, downloadFile } from '../../lib/api';
 import { COLORS } from '../../lib/theme';
 import { photos } from '../../lib/images';
-import { rwf } from '../../lib/format';
 import {
   getAcademicDashboard,
-  getFinanceReportSummary,
   isoDate,
   isoTime,
   listLevels,
   listSessions,
-  money,
 } from '../../lib/services';
 import { sessionStatusLabel, sessionTone, teacherName } from '../../lib/sessions-ui';
 
@@ -25,7 +22,6 @@ const AVATARS = [photos.clarisse, photos.nadine, photos.jeanPaul, photos.aline, 
 
 export function AdminDashboard() {
   const academic = useApi('academic-dashboard', getAcademicDashboard);
-  const finance = useApi('finance-summary', getFinanceReportSummary);
   const sessions = useApi('all-sessions', listSessions);
   const levels = useApi('levels-catalog', listLevels);
   const [exporting, setExporting] = useState<string | null>(null);
@@ -98,29 +94,25 @@ export function AdminDashboard() {
         </div>
 
         <Panel>
-          <SectionHeader title="Finance" action={{ label: 'Transactions', to: '/admin/transactions' }} />
-          {finance.loading ? (
-            <LoadingBlock label="Loading finance…" />
-          ) : finance.error || !finance.data ? (
-            <p className="text-xs text-muted">
-              Finance figures need a finance role. {finance.error ?? ''}
-            </p>
-          ) : (
-            <dl className="grid gap-3 text-sm sm:grid-cols-3">
-              <div className="rounded-field bg-base-200 p-3">
-                <dt className="text-[11px] text-muted">Billed</dt>
-                <dd className="mt-1 font-semibold">{rwf(money(finance.data.totalBilled))}</dd>
-              </div>
-              <div className="rounded-field bg-base-200 p-3">
-                <dt className="text-[11px] text-muted">Collected</dt>
-                <dd className="mt-1 font-semibold text-brand">{rwf(money(finance.data.totalCollected))}</dd>
-              </div>
-              <div className="rounded-field bg-base-200 p-3">
-                <dt className="text-[11px] text-muted">Outstanding</dt>
-                <dd className="mt-1 font-semibold">{rwf(money(finance.data.totalOutstanding))}</dd>
-              </div>
-            </dl>
-          )}
+          <SectionHeader title="Cohort health" action={{ label: 'Students', to: '/admin/students' }} />
+          <div className="grid gap-3 text-sm sm:grid-cols-4">
+            <div className="rounded-field bg-base-200 p-3">
+              <p className="text-[11px] text-muted">Completion rate</p>
+              <p className="mt-1 font-semibold">{data.completionRate}%</p>
+            </div>
+            <div className="rounded-field bg-base-200 p-3">
+              <p className="text-[11px] text-muted">Completed</p>
+              <p className="mt-1 font-semibold">{data.completed}</p>
+            </div>
+            <div className="rounded-field bg-base-200 p-3">
+              <p className="text-[11px] text-muted">Withdrawn</p>
+              <p className="mt-1 font-semibold">{data.withdrawn}</p>
+            </div>
+            <div className="rounded-field bg-base-200 p-3">
+              <p className="text-[11px] text-muted">At risk</p>
+              <p className="mt-1 font-semibold text-error">{data.atRiskStudents}</p>
+            </div>
+          </div>
         </Panel>
       </div>
 
@@ -130,7 +122,6 @@ export function AdminDashboard() {
           <div className="grid gap-2">
             {[
               { key: 'students', label: 'Students CSV', path: '/students/export?pageSize=100', file: 'students.csv' },
-              { key: 'payments', label: 'Payments CSV', path: '/payments/export?pageSize=100', file: 'payments.csv' },
               { key: 'attendance', label: 'Attendance CSV', path: '/attendance/export', file: 'attendance.csv' },
               { key: 'grades', label: 'Grades CSV', path: '/assessments/attempts/export', file: 'attempts.csv' },
             ].map((report) => (

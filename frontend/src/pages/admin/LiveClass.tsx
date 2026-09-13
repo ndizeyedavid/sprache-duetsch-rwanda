@@ -25,8 +25,16 @@ export function AdminLiveClass() {
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
 
-  const detail = useApi(`session-${selectedId ?? 'none'}`, () => getSession(selectedId ?? ''));
-  const roster = useApi(`roster-${selectedId ?? 'none'}`, () => getSessionRoster(selectedId ?? ''));
+  const detail = useApi(
+    `session-${selectedId ?? 'none'}`,
+    () => getSession(selectedId ?? ''),
+    selectedId !== null,
+  );
+  const roster = useApi(
+    `roster-${selectedId ?? 'none'}`,
+    () => getSessionRoster(selectedId ?? ''),
+    selectedId !== null,
+  );
 
   function pick(id: string) {
     setSelectedId(id);

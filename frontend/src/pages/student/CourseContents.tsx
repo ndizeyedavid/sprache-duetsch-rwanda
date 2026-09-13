@@ -29,6 +29,7 @@ export function CourseContents() {
   const lessonDetail = useApi(
     `lesson-${selectedLessonId ?? 'none'}`,
     () => getStudentLesson(selectedLessonId ?? ''),
+    selectedLessonId !== null,
   );
 
   async function handleComplete() {
@@ -70,29 +71,46 @@ export function CourseContents() {
         </p>
 
         <h2 className="mt-5 text-sm font-semibold">Lessons</h2>
-        {course.lessons.length === 0 ? (
+        {course.modules.length === 0 ? (
           <p className="mt-2 text-xs text-muted">Lessons for this level are not published yet.</p>
         ) : (
-          <ul className="mt-2 space-y-2">
-            {course.lessons.map((lesson) => (
-              <li key={lesson.id}>
-                <button
-                  type="button"
-                  onClick={() => setSelectedLessonId(lesson.id)}
-                  className={`flex w-full items-center justify-between gap-2 rounded-field px-3 py-2 text-left text-xs transition-colors ${
-                    selectedLessonId === lesson.id
-                      ? 'bg-brand-tint font-semibold text-ink'
-                      : 'bg-base-200 text-muted hover:bg-brand-tint hover:text-ink'
-                  }`}
-                >
-                  <span className="truncate">{lesson.title}</span>
-                  <StatusBadge
-                    status={lesson.progressStatus === 'COMPLETED' ? 'Completed' : humanize(lesson.progressStatus)}
-                  />
-                </button>
-              </li>
+          <div className="mt-2 space-y-4">
+            {course.modules.map((module) => (
+              <div key={module.id}>
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-muted">
+                  {module.title}
+                </p>
+                {module.lessons.length === 0 ? (
+                  <p className="mt-1 text-[11px] text-muted">No lessons published yet.</p>
+                ) : (
+                  <ul className="mt-2 space-y-2">
+                    {module.lessons.map((lesson) => (
+                      <li key={lesson.id}>
+                        <button
+                          type="button"
+                          onClick={() => setSelectedLessonId(lesson.id)}
+                          className={`flex w-full items-center justify-between gap-2 rounded-field px-3 py-2 text-left text-xs transition-colors ${
+                            selectedLessonId === lesson.id
+                              ? 'bg-brand-tint font-semibold text-ink'
+                              : 'bg-base-200 text-muted hover:bg-brand-tint hover:text-ink'
+                          }`}
+                        >
+                          <span className="truncate">{lesson.title}</span>
+                          <StatusBadge
+                            status={
+                              lesson.progressStatus === 'COMPLETED'
+                                ? 'Completed'
+                                : humanize(lesson.progressStatus)
+                            }
+                          />
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             ))}
-          </ul>
+          </div>
         )}
       </Panel>
 
