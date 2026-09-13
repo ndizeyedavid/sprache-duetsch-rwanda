@@ -1,4 +1,4 @@
-import { api, apiDelete, apiGet, apiPatch, apiPost } from './api';
+import { api, apiDelete, apiGet, apiPatch, apiPost, apiPut } from './api';
 
 /** Prisma Decimal serialises as a string — accept both. */
 export type Money = string | number;
@@ -89,10 +89,24 @@ export type MyLesson = {
   completedAt: string | null;
 };
 
-export type MyCourse = {
-  level: LevelItem;
+export type MyModule = {
+  id: string;
+  title: string;
+  description: string | null;
+  order: number;
   lessons: MyLesson[];
-  modules?: { id: string; title: string }[];
+};
+
+export type MyCourse = {
+  level: {
+    id: string;
+    code: string;
+    title: string;
+    levelLabel: string;
+    summary: string | null;
+    order: number;
+  };
+  modules: MyModule[];
   stats: { totalLessons: number; completedLessons: number; completionPercentage: number };
 };
 
@@ -286,6 +300,42 @@ export function getAcademicDashboard(): Promise<AcademicDashboard> {
 
 export function getFinanceReportSummary(): Promise<FinanceSummary> {
   return apiGet<FinanceSummary>('/payments/reports/summary');
+}
+
+export type TeacherDashboard = {
+  classesCount: number;
+  studentsCount: number;
+  upcomingSessionsCount: number;
+  pendingGradingCount: number;
+  sessionsToday: {
+    id: string;
+    title: string;
+    startAt: string;
+    endAt: string;
+    status: string;
+    classGroup: { id: string; code: string; name: string };
+  }[];
+  recentAssessments: { id: string; title: string; type: string; createdAt: string }[];
+};
+
+export type FinanceDashboard = {
+  totalBilled: Money;
+  totalCollected: Money;
+  totalOutstanding: Money;
+  collectionRate: number;
+  overdueCount: number;
+  byLevel: { key: string; billed: Money; collected: Money }[];
+  byIntake: { key: string; billed: Money; collected: Money }[];
+  byCampus: { key: string; billed: Money; collected: Money }[];
+  byPaymentMethod: { methodId: string; name: string | null; total: Money }[];
+};
+
+export function getTeacherDashboard(): Promise<TeacherDashboard> {
+  return apiGet<TeacherDashboard>('/dashboards/teacher');
+}
+
+export function getFinanceDashboard(): Promise<FinanceDashboard> {
+  return apiGet<FinanceDashboard>('/dashboards/finance');
 }
 
 // ---------------------------------------------------------------------------
@@ -513,6 +563,62 @@ export function getMySkills(): Promise<SkillStat[]> {
   return apiGet<SkillStat[]>('/assessments/my/skills');
 }
 
+export type StaffAttempt = {
+  id: string;
+  status: string;
+  attemptNumber: number;
+  score: number | null;
+  maxScore: number;
+  passed: boolean | null;
+  feedback: string | null;
+  submittedAt: string | null;
+  student: { id: string; studentCode: string; name: string };
+  assessment: { id: string; title: string; type: string; passMark: Money };
+  answers: {
+    id: string;
+    questionId: string;
+    prompt: string;
+    type: string;
+    maxPoints: number;
+    response: unknown;
+    isCorrect: boolean | null;
+    pointsAwarded: number;
+    feedback: string | null;
+  }[];
+};
+
+export function listAttempts(status?: string): Promise<
+  {
+    id: string;
+    status: string;
+    attemptNumber: number;
+    score: number | null;
+    maxScore: Money;
+    passed: boolean | null;
+    submittedAt: string | null;
+    student: { studentCode: string; user: { firstName: string; lastName: string } };
+    assessment: { id: string; title: string };
+  }[]
+> {
+  const query = status ? `?status=${status}&pageSize=100` : '?pageSize=100';
+  return apiGet(`/assessments/attempts${query}`);
+}
+
+export function getStaffAttempt(id: string): Promise<StaffAttempt> {
+  return apiGet<StaffAttempt>(`/assessments/attempts/${id}`);
+}
+
+export function gradeAttempt(
+  id: string,
+  body: {
+    answers?: { answerId: string; pointsAwarded: number; feedback?: string }[];
+    feedback?: string;
+    passed?: boolean;
+  },
+): Promise<unknown> {
+  return apiPost(`/assessments/attempts/${id}/grade`, body);
+}
+
 // ---------------------------------------------------------------------------
 // Notifications
 // ---------------------------------------------------------------------------
@@ -554,19 +660,287 @@ export function listClasses(): Promise<ClassGroupItem[]> {
   return apiGet<ClassGroupItem[]>('/classes?pageSize=100');
 }
 
-export function createAnnouncement(body: { title: string; body: string }): Promise<NotificationItem> {
+export function createAnnouncement(body: {
+  title: string;
+  body: string;
+  audience?: 'STUDENTS' | 'STAFF' | 'ALL';
+  target?: {
+    levelId?: string;
+    intakeId?: string;
+    campusId?: string;
+    classGroupId?: string;
+  };
+}): Promise<NotificationItem> {
   return apiPost<NotificationItem>('/notifications/announcements', body);
+}
+
+// ---------------------------------------------------------------------------
+// Organisation: campuses, intakes, classes (academic admin)
+// ---------------------------------------------------------------------------
+
+export type CampusItem = {
+  id: string;
+  code: string;
+  name: string;
+  address: string | null;
+  phone: string | null;
+  email: string | null;
+  isActive: boolean;
+};
+
+export type IntakeItem = {
+  id: string;
+  code: string;
+  name: string;
+  startDate: string;
+  endDate: string;
+  registrationFee: Money;
+  bookFee: Money;
+  currency: string;
+  isActive: boolean;
+};
+
+export function listCampusesFull(): Promise<CampusItem[]> {
+  return apiGet<CampusItem[]>('/campuses?pageSize=100');
+}
+
+export function createCampus(body: Record<string, unknown>): Promise<CampusItem> {
+  return apiPost<CampusItem>('/campuses', body);
+}
+
+export function updateCampus(id: string, body: Record<string, unknown>): Promise<CampusItem> {
+  return apiPatch<CampusItem>(`/campuses/${id}`, body);
+}
+
+export function listIntakesFull(): Promise<IntakeItem[]> {
+  return apiGet<IntakeItem[]>('/intakes?pageSize=100');
+}
+
+export function createIntake(body: Record<string, unknown>): Promise<IntakeItem> {
+  return apiPost<IntakeItem>('/intakes', body);
+}
+
+export function updateIntake(id: string, body: Record<string, unknown>): Promise<IntakeItem> {
+  return apiPatch<IntakeItem>(`/intakes/${id}`, body);
+}
+
+export type ClassGroupDetail = {
+  id: string;
+  code: string;
+  name: string;
+  levelId: string;
+  intakeId: string;
+  campusId: string;
+  teacherId: string | null;
+  shift: string;
+  capacity: number;
+  room: string | null;
+  isActive: boolean;
+};
+
+export function getClass(id: string): Promise<ClassGroupDetail> {
+  return apiGet<ClassGroupDetail>(`/classes/${id}`);
+}
+
+export function createClass(body: Record<string, unknown>): Promise<ClassGroupDetail> {
+  return apiPost<ClassGroupDetail>('/classes', body);
+}
+
+export function updateClass(id: string, body: Record<string, unknown>): Promise<ClassGroupDetail> {
+  return apiPatch<ClassGroupDetail>(`/classes/${id}`, body);
+}
+
+// ---------------------------------------------------------------------------
+// Users (academic admin) — teachers and staff accounts
+// ---------------------------------------------------------------------------
+
+export type UserRow = {
+  id: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  phone: string | null;
+  role: string;
+  status: string;
+  lastLoginAt: string | null;
+  createdAt: string;
+};
+
+export function listUsers(params?: { role?: string; search?: string }): Promise<UserRow[]> {
+  const query = new URLSearchParams({ pageSize: '100' });
+  if (params?.role) query.set('role', params.role);
+  if (params?.search) query.set('search', params.search);
+  return apiGet<UserRow[]>(`/users?${query.toString()}`);
+}
+
+export function createUser(body: Record<string, unknown>): Promise<UserRow> {
+  return apiPost<UserRow>('/users', body);
+}
+
+export function updateUser(id: string, body: Record<string, unknown>): Promise<UserRow> {
+  return apiPatch<UserRow>(`/users/${id}`, body);
+}
+
+export function updateUserRole(id: string, role: string): Promise<UserRow> {
+  return apiPatch<UserRow>(`/users/${id}/role`, { role });
+}
+
+export function resetUserPassword(id: string, newPassword: string): Promise<unknown> {
+  return apiPost(`/users/${id}/reset-password`, { newPassword });
+}
+
+// ---------------------------------------------------------------------------
+// Enrollments (academic admin)
+// ---------------------------------------------------------------------------
+
+export type EnrollmentRow = {
+  id: string;
+  status: string;
+  totalFee: Money;
+  discountTotal: Money;
+  currency: string;
+  enrolledAt: string;
+  student: { id: string; studentCode: string; user: { firstName: string; lastName: string; email: string } };
+  level: { id: string; code: string; title: string };
+  intake: { id: string; code: string; name: string };
+  classGroup: { id: string; code: string; name: string; shift: string } | null;
+};
+
+export function listEnrollments(): Promise<EnrollmentRow[]> {
+  return apiGet<EnrollmentRow[]>('/enrollments?pageSize=100');
+}
+
+export function createEnrollment(body: Record<string, unknown>): Promise<EnrollmentRow> {
+  return apiPost<EnrollmentRow>('/enrollments', body);
+}
+
+export function updateEnrollment(id: string, body: Record<string, unknown>): Promise<EnrollmentRow> {
+  return apiPatch<EnrollmentRow>(`/enrollments/${id}`, body);
+}
+
+// ---------------------------------------------------------------------------
+// Curriculum authoring (teacher + academic): modules → lessons → materials/activities
+// ---------------------------------------------------------------------------
+
+export type AuthoredLesson = {
+  id: string;
+  moduleId: string;
+  title: string;
+  description: string | null;
+  order: number;
+  contentType: string;
+  body: string | null;
+  videoUrl: string | null;
+  audioUrl: string | null;
+  estimatedMinutes: number | null;
+  isPublished: boolean;
+  materials: LessonMaterial[];
+  activities: LessonActivity[];
+};
+
+export function getLesson(id: string): Promise<AuthoredLesson> {
+  return apiGet<AuthoredLesson>(`/content/lessons/${id}`);
+}
+
+export function createLesson(
+  moduleId: string,
+  body: Record<string, unknown>,
+): Promise<AuthoredLesson> {
+  return apiPost<AuthoredLesson>(`/content/modules/${moduleId}/lessons`, body);
+}
+
+export function updateLesson(id: string, body: Record<string, unknown>): Promise<AuthoredLesson> {
+  return apiPatch<AuthoredLesson>(`/content/lessons/${id}`, body);
+}
+
+export function deleteLesson(id: string): Promise<unknown> {
+  return apiDelete(`/content/lessons/${id}`);
+}
+
+export function createMaterial(
+  lessonId: string,
+  body: Record<string, unknown>,
+): Promise<LessonMaterial> {
+  return apiPost<LessonMaterial>(`/content/lessons/${lessonId}/materials`, body);
+}
+
+export function createActivity(
+  lessonId: string,
+  body: Record<string, unknown>,
+): Promise<LessonActivity> {
+  return apiPost<LessonActivity>(`/content/lessons/${lessonId}/activities`, body);
+}
+
+// ---------------------------------------------------------------------------
+// Assessment authoring (teacher + academic): question bank + assessments
+// ---------------------------------------------------------------------------
+
+export type QuestionItem = {
+  id: string;
+  levelId: string;
+  moduleId: string | null;
+  type: string;
+  skill: string;
+  difficulty: string;
+  prompt: string;
+  points: Money;
+};
+
+export type AuthoredAssessment = {
+  id: string;
+  levelId: string;
+  title: string;
+  type: string;
+  durationMinutes: number | null;
+  maxAttempts: number | null;
+  passMark: Money;
+  isPublished: boolean;
+  questions?: { questionId: string; order: number }[];
+};
+
+export function listQuestions(): Promise<QuestionItem[]> {
+  return apiGet<QuestionItem[]>('/assessments/questions?pageSize=100');
+}
+
+export function createQuestion(body: Record<string, unknown>): Promise<QuestionItem> {
+  return apiPost<QuestionItem>('/assessments/questions', body);
+}
+
+export function listAssessments(): Promise<AuthoredAssessment[]> {
+  return apiGet<AuthoredAssessment[]>('/assessments/assessments?pageSize=100');
+}
+
+export function createAssessment(body: Record<string, unknown>): Promise<AuthoredAssessment> {
+  return apiPost<AuthoredAssessment>('/assessments/assessments', body);
+}
+
+export function setAssessmentQuestions(
+  id: string,
+  questions: { questionId: string; order?: number }[],
+): Promise<AuthoredAssessment> {
+  return apiPut<AuthoredAssessment>(`/assessments/assessments/${id}/questions`, { questions });
 }
 
 // ---------------------------------------------------------------------------
 // Academic CMS (levels → modules → lessons)
 // ---------------------------------------------------------------------------
 
+export type ModuleLesson = {
+  id: string;
+  title: string;
+  order: number;
+  contentType: string;
+  isPublished: boolean;
+  estimatedMinutes: number | null;
+};
+
 export type ModuleItem = {
   id: string;
   title: string;
   description: string | null;
   order: number;
+  lessons: ModuleLesson[];
+  _count?: { lessons: number };
 };
 
 export function listLevelModules(levelId: string): Promise<ModuleItem[]> {

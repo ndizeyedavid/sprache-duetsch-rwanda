@@ -122,6 +122,15 @@ export async function apiPatch<TResponse, TBody = unknown>(
   return data.data;
 }
 
+export async function apiPut<TResponse, TBody = unknown>(
+  path: string,
+  body?: TBody,
+  config?: AxiosRequestConfig,
+): Promise<TResponse> {
+  const { data } = await api.put<Envelope<TResponse>>(path, body, config);
+  return data.data;
+}
+
 export async function apiDelete<TResponse>(
   path: string,
   config?: AxiosRequestConfig,
