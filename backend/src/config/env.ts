@@ -24,6 +24,11 @@ const envSchema = z.object({
   UNPAID_ACCESS: z.enum(["FULL", "LIMITED", "NONE"]).default("LIMITED"),
   SEED_SUPERADMIN_EMAIL: z.string().min(3).default("admin@sparch.rw"),
   SEED_SUPERADMIN_PASSWORD: z.string().min(8).default("Admin123!"),
+  // Public frontend base URL — embedded in certificate QR codes.
+  PUBLIC_APP_URL: z.string().min(1).default("http://localhost:5173"),
+  // Reminder scheduler (node-cron). DISABLED skips all jobs (tests, one-off scripts).
+  REMINDERS_ENABLED: z.enum(["true", "false"]).default("true"),
+  REMINDER_TIMEZONE: z.string().min(1).default("Africa/Kigali"),
 });
 
 const parsed = envSchema.safeParse(process.env);
