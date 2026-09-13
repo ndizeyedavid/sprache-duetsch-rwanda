@@ -1,152 +1,165 @@
 import { useState } from 'react';
-import { FiBookOpen, FiStar, FiTrendingUp } from 'react-icons/fi';
-import { Panel } from '../../components/ui/Panel';
-import { GroupedBar } from '../../components/charts/GroupedBar';
-import { DonutChart } from '../../components/charts/DonutChart';
-import { LegendRow } from '../../components/ui/LegendRow';
-import { KebabMenu } from '../../components/ui/KebabMenu';
-import { SegmentedControl } from '../../components/ui/SegmentedControl';
-import { Rating } from '../../components/ui/Rating';
-import { COLORS } from '../../lib/theme';
-import { popularClassRows, popularClasses, sellingActivity, topCourses, userReviews } from '../../data/mock';
-import type { Tone } from '../../types';
-
-const RANGES = ['Insight', 'Selling'];
-
-const KPIS: { id: string; label: string; value: string; tone: Tone; icon: typeof FiBookOpen; arc: string }[] = [
-  { id: 'kpi-1', label: 'Total Courses', value: '23.940', tone: 'brand', icon: FiBookOpen, arc: '#8AD9C2' },
-  { id: 'kpi-2', label: 'Courses Content', value: '32.567', tone: 'sun', icon: FiTrendingUp, arc: '#FED47B' },
-  { id: 'kpi-3', label: 'Review', value: '94.230', tone: 'coral', icon: FiStar, arc: '#FD9C8D' },
-];
+import type { FormEvent } from 'react';
+import { Panel, SectionHeader } from '../../components/ui/Panel';
+import { StatusBadge } from '../../components/ui/StatusBadge';
+import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useApi } from '../../hooks/useApi';
+import { apiErrorMessage } from '../../lib/api';
+import { rwf } from '../../lib/format';
+import {
+  createLevel,
+  createModule,
+  listLevelModules,
+  listLevels,
+  money,
+} from '../../lib/services';
 
 export function AdminCourses() {
-  const [range, setRange] = useState(RANGES[1]);
+  const levels = useApi('admin-levels', listLevels);
+  const [selectedLevelId, setSelectedLevelId] = useState<string | null>(null);
+  const [formError, setFormError] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
+
+  const [code, setCode] = useState('');
+  const [title, setTitle] = useState('');
+  const [levelLabel, setLevelLabel] = useState('');
+  const [fee, setFee] = useState('');
+  const [moduleTitle, setModuleTitle] = useState('');
+  const [moduleOrder, setModuleOrder] = useState('0');
+
+  const modules = useApi(
+    `level-modules-${selectedLevelId ?? 'none'}`,
+    () => listLevelModules(selectedLevelId ?? ''),
+  );
+
+  async function handleCreateLevel(event: FormEvent) {
+    event.preventDefault();
+    setFormError(null);
+    setSaving(true);
+    try {
+      await createLevel({
+        code: code.trim().toUpperCase(),
+        title: title.trim(),
+        levelLabel: levelLabel.trim(),
+        defaultFee: fee ? Number(fee) : 0,
+      });
+      setCode('');
+      setTitle('');
+      setLevelLabel('');
+      setFee('');
+      levels.refetch();
+    } catch (err) {
+      setFormError(apiErrorMessage(err, 'Could not create the level.'));
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  async function handleCreateModule(event: FormEvent) {
+    event.preventDefault();
+    if (!selectedLevelId) return;
+    setFormError(null);
+    setSaving(true);
+    try {
+      await createModule(selectedLevelId, {
+        title: moduleTitle.trim(),
+        order: Number(moduleOrder),
+        isPublished: true,
+      });
+      setModuleTitle('');
+      modules.refetch();
+    } catch (err) {
+      setFormError(apiErrorMessage(err, 'Could not create the module.'));
+    } finally {
+      setSaving(false);
+    }
+  }
 
   return (
-    <div className="grid gap-5 xl:grid-cols-12">
-      <div className="space-y-5 xl:col-span-8">
-        <div className="grid gap-4 sm:grid-cols-3">
-          {KPIS.map((kpi) => (
-            <div
-              key={kpi.id}
-              className={`card-shadow relative flex items-center gap-4 overflow-hidden rounded-box p-5 text-white ${
-                kpi.tone === 'brand' ? 'bg-brand' : kpi.tone === 'sun' ? 'bg-sun' : 'bg-coral'
-              }`}
-            >
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-white/20 text-lg">
-                <kpi.icon aria-hidden />
-              </span>
-              <span className="min-w-0">
-                <span className="block text-lg font-semibold">{kpi.value}</span>
-                <span className="block text-[11px] text-white/85">{kpi.label}</span>
-              </span>
-              <span
-                aria-hidden
-                className="absolute -right-4 top-1/2 size-16 -translate-y-1/2 rounded-full"
-                style={{ background: `conic-gradient(#ffffff66 0 65%, transparent 65% 100%)` }}
-              />
-              <span
-                aria-hidden
-                className="absolute -right-1 top-1/2 size-10 -translate-y-1/2 rounded-full"
-                style={{ backgroundColor: kpi.arc, opacity: 0.5 }}
-              />
-            </div>
-          ))}
-        </div>
-
-        <Panel>
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-base font-semibold sm:text-lg">Selling Activity</h2>
-            <div className="flex items-center gap-3">
-              <span className="hidden items-center gap-1.5 text-[11px] text-muted sm:flex">
-                <span className="size-2 rounded-full bg-brand" aria-hidden /> This Week
-              </span>
-              <span className="hidden items-center gap-1.5 text-[11px] text-muted sm:flex">
-                <span className="size-2 rounded-full bg-sun" aria-hidden /> Last Week
-              </span>
-              <SegmentedControl options={RANGES} value={range} onChange={setRange} ariaLabel="Selling activity view" />
-            </div>
-          </div>
-          <GroupedBar
-            data={sellingActivity}
-            xKey="week"
-            layout="vertical"
-            barSize={11}
-            series={
-              range === 'Selling'
-                ? [{ key: 'selling', label: 'Selling', color: COLORS.brand }]
-                : [{ key: 'insight', label: 'Insight', color: COLORS.sun }]
-            }
-            height={240}
-          />
-        </Panel>
-
-        <Panel>
-          <h2 className="mb-4 text-base font-semibold sm:text-lg">User Reviews</h2>
-          <ul className="grid gap-4 sm:grid-cols-3">
-            {userReviews.map((review) => (
-              <li key={review.id} className="rounded-field bg-base-200 p-4">
-                <div className="flex items-center gap-3">
-                  <img src={review.photo} alt={review.name} className="size-9 rounded-full object-cover" />
+    <div className="grid gap-5 lg:grid-cols-2">
+      <Panel>
+        <SectionHeader title="Levels" />
+        {levels.loading ? (
+          <LoadingBlock label="Loading levels…" />
+        ) : levels.error || !levels.data ? (
+          <ErrorBlock message={levels.error ?? 'Could not load levels.'} onRetry={levels.refetch} />
+        ) : (
+          <ul className="space-y-2">
+            {levels.data.map((level) => (
+              <li key={level.id}>
+                <button
+                  type="button"
+                  onClick={() => setSelectedLevelId(level.id)}
+                  className={`flex w-full items-center justify-between gap-3 rounded-field p-3 text-left transition-colors ${
+                    selectedLevelId === level.id ? 'bg-brand-tint' : 'bg-base-200 hover:bg-brand-tint/60'
+                  }`}
+                >
                   <span className="min-w-0">
-                    <span className="block truncate text-xs font-semibold">{review.name}</span>
-                    <Rating value={review.rating} />
+                    <span className="block truncate text-xs font-semibold">
+                      {level.code} · {level.title}
+                    </span>
+                    <span className="block text-[11px] text-muted">
+                      {rwf(money(level.defaultFee))} {level.currency}
+                    </span>
                   </span>
-                </div>
-                <p className="mt-3 text-[11px] leading-relaxed text-muted">{review.body}</p>
+                  <StatusBadge status={level.isActive ? 'Active' : 'Inactive'} />
+                </button>
               </li>
             ))}
           </ul>
-        </Panel>
-      </div>
+        )}
 
-      <div className="space-y-5 xl:col-span-4">
-        <Panel>
-          <div className="mb-2 flex items-center justify-between">
-            <h2 className="text-base font-semibold">Popular Class</h2>
-            <KebabMenu label="Popular class options" />
+        <h2 className="mt-6 text-sm font-semibold">New level</h2>
+        <form onSubmit={handleCreateLevel} className="mt-2 space-y-3">
+          <div className="grid gap-3 sm:grid-cols-2">
+            <input required value={code} onChange={(event) => setCode(event.target.value)} placeholder="Code (A1)" className="input input-sm w-full rounded-field border-line bg-base-200" />
+            <input required value={levelLabel} onChange={(event) => setLevelLabel(event.target.value)} placeholder="Label (Beginner)" className="input input-sm w-full rounded-field border-line bg-base-200" />
           </div>
-          <DonutChart data={popularClasses} innerRadius={66} outerRadius={96} height={230} />
-          <ul className="mt-2 space-y-3">
-            {popularClassRows.map((row) => (
-              <li key={row.id}>
-                <LegendRow label={row.label} value={row.value} color={row.color} />
-              </li>
-            ))}
-          </ul>
-        </Panel>
+          <input required value={title} onChange={(event) => setTitle(event.target.value)} placeholder="Title" className="input input-sm w-full rounded-field border-line bg-base-200" />
+          <input value={fee} onChange={(event) => setFee(event.target.value)} inputMode="numeric" placeholder="Default fee (RWF)" className="input input-sm w-full rounded-field border-line bg-base-200" />
+          {formError ? (
+            <p role="alert" className="text-xs font-medium text-error">
+              {formError}
+            </p>
+          ) : null}
+          <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+            Create level
+          </button>
+        </form>
+      </Panel>
 
-        <Panel>
-          <h2 className="mb-4 text-base font-semibold">Top Courses</h2>
-          <ul className="space-y-3">
-            {topCourses.map((course) => (
-              <li
-                key={course.id}
-                className="flex items-center gap-3 rounded-field bg-base-200 p-3"
-              >
-                <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-base-100 text-xs font-semibold text-brand">
-                  {course.label.slice(-2)}
-                </span>
-                <span className="min-w-0 grow">
-                  <span className="block truncate text-[11px] text-muted">{course.label}</span>
-                  <span className="block text-sm font-semibold">{course.value}</span>
-                </span>
-                <span className="flex items-end gap-0.5" aria-hidden>
-                  {[8, 14, 10, 18].map((height, index) => (
-                    <span
-                      key={index}
-                      className={`w-1.5 rounded-full ${
-                        course.tone === 'brand' ? 'bg-brand' : 'bg-sun'
-                      }`}
-                      style={{ height }}
-                    />
-                  ))}
-                </span>
+      <Panel>
+        <SectionHeader title="Modules" />
+        {!selectedLevelId ? (
+          <EmptyBlock title="Select a level" hint="Choose a level on the left to manage its modules." />
+        ) : modules.loading ? (
+          <LoadingBlock label="Loading modules…" />
+        ) : modules.error ? (
+          <ErrorBlock message={modules.error} onRetry={modules.refetch} />
+        ) : !modules.data || modules.data.length === 0 ? (
+          <EmptyBlock title="No modules yet" hint="Create the first module below." />
+        ) : (
+          <ul className="space-y-2">
+            {modules.data.map((module) => (
+              <li key={module.id} className="flex items-center justify-between gap-3 rounded-field bg-base-200 px-3 py-2 text-xs">
+                <span className="truncate font-medium">{module.title}</span>
+                <span className="shrink-0 text-muted">Order {module.order}</span>
               </li>
             ))}
           </ul>
-        </Panel>
-      </div>
+        )}
+
+        {selectedLevelId ? (
+          <form onSubmit={handleCreateModule} className="mt-4 space-y-3">
+            <h2 className="text-sm font-semibold">New module</h2>
+            <input required value={moduleTitle} onChange={(event) => setModuleTitle(event.target.value)} placeholder="Module title" className="input input-sm w-full rounded-field border-line bg-base-200" />
+            <input value={moduleOrder} onChange={(event) => setModuleOrder(event.target.value)} inputMode="numeric" placeholder="Order" className="input input-sm w-full rounded-field border-line bg-base-200" />
+            <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+              Create module
+            </button>
+          </form>
+        ) : null}
+      </Panel>
     </div>
   );
 }

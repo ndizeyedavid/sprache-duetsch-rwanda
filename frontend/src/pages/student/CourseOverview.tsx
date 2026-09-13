@@ -1,172 +1,99 @@
-import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { FaStar } from 'react-icons/fa6';
-import { FiChevronLeft, FiHeart } from 'react-icons/fi';
 import { Panel } from '../../components/ui/Panel';
-import { TabNav } from '../../components/ui/TabNav';
-import { VideoPlayer } from '../../components/ui/VideoPlayer';
-import { Rating } from '../../components/ui/Rating';
-import { TONE_SURFACE } from '../../lib/status';
+import { StatusBadge } from '../../components/ui/StatusBadge';
+import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useApi } from '../../hooks/useApi';
 import { rwf } from '../../lib/format';
-import { courseReviews, courses } from '../../data/mock';
-
-const TABS = ['About', 'Reviews'];
-
-function Stars({ value }: { value: number }) {
-  return (
-    <span className="inline-flex items-center gap-0.5" aria-label={`${value} out of 5 stars`}>
-      {Array.from({ length: 5 }, (_, index) => (
-        <FaStar key={index} className={index < value ? 'text-sun' : 'text-base-300'} aria-hidden />
-      ))}
-    </span>
-  );
-}
+import { getMyCourses, listLevels, money } from '../../lib/services';
 
 export function CourseOverview() {
-  const { slug } = useParams<{ slug: string }>();
-  const course = courses.find((item) => item.slug === slug) ?? courses[0];
-  const [tab, setTab] = useState(TABS[0]);
+  const { slug = '' } = useParams();
+  const levels = useApi('levels-catalog', listLevels);
+  const mine = useApi('my-courses', getMyCourses);
 
-  const discount = course.oldPrice
-    ? Math.round(((course.oldPrice - course.price) / course.oldPrice) * 100)
-    : 0;
+  if (levels.loading) return <LoadingBlock label="Loading course…" />;
+  if (levels.error || !levels.data) {
+    return <ErrorBlock message={levels.error ?? 'Could not load this course.'} onRetry={levels.refetch} />;
+  }
+
+  const level = levels.data.find((item) => item.code.toLowerCase() === slug.toLowerCase());
+  if (!level) {
+    return <EmptyBlock title="Course not found" hint={`No level matches “${slug}”.`} />;
+  }
+
+  const enrolment = mine.data?.find((course) => course.level.id === level.id) ?? null;
 
   return (
-    <div className="grid gap-5 xl:grid-cols-12">
-      <Panel className="xl:col-span-8">
-        <Link to="/courses" className="mb-5 inline-flex items-center gap-1 text-xs font-medium text-ink">
-          <FiChevronLeft aria-hidden />
-          Back
-        </Link>
+    <div className="grid gap-5 lg:grid-cols-3">
+      <Panel className="lg:col-span-2">
+        <p className="text-[11px] font-semibold uppercase tracking-wide text-brand">
+          {level.code} · {level.levelLabel}
+        </p>
+        <h1 className="mt-1 text-xl font-semibold sm:text-2xl">{level.title}</h1>
+        {level.summary ? (
+          <p className="mt-2 text-sm leading-relaxed text-muted">{level.summary}</p>
+        ) : null}
 
-        <h1 className="text-xl font-semibold leading-snug sm:text-2xl">{course.title}</h1>
-        <p className="mt-3 text-sm leading-relaxed text-muted">{course.summary}</p>
-
-        <div className="mt-4 flex flex-wrap items-center gap-3 text-xs">
-          <span className="flex items-center gap-2">
-            <span className="font-semibold">{course.rating.toFixed(1)}</span>
-            <Stars value={course.rating} />
-          </span>
-          <span className="text-muted" aria-hidden>
-            |
-          </span>
-          <span className="text-muted">Review ({course.reviews})</span>
-          <span className="text-muted" aria-hidden>
-            |
-          </span>
-          <span className="text-muted">{course.students} Students</span>
-        </div>
-
-        <div className="mt-4 flex items-center gap-3 border-b border-line pb-5">
-          <img src={course.teacher.photo} alt={course.teacher.name} className="size-10 rounded-full object-cover" />
-          <span>
-            <span className="block text-sm font-medium">{course.teacher.name}</span>
-            <span className="block text-[11px] text-muted">Kurslehrer · {course.level}</span>
-          </span>
-        </div>
-
-        <TabNav tabs={TABS} active={tab} onChange={setTab} className="mt-5" />
-
-        <div className="mt-5">
-          {tab === 'About' ? (
-            <div className="space-y-4 text-sm leading-relaxed text-muted">
-              <p>{course.summary}</p>
-              <p>
-                Jede Lektion enthält eine kurze Aufnahme, eine Notiz zum Herunterladen und ein Quiz. Fragen stellst du
-                direkt in der Live-Klasse oder im Gruppenchat deiner Stufe.
-              </p>
-            </div>
-          ) : (
-            <ul className="space-y-5">
-              {courseReviews.map((review) => (
-                <li key={review.id}>
-                  <div className="flex items-center gap-3">
-                    <img src={review.photo} alt={review.name} className="size-10 rounded-full object-cover" />
-                    <span>
-                      <span className="block text-sm font-medium">{review.name}</span>
-                      <span className="flex items-center gap-2 text-[11px] text-muted">
-                        <Stars value={review.rating} />
-                        <span>{review.rating.toFixed(1)}</span>
-                        <span aria-hidden>|</span>
-                        <span>{review.when}</span>
-                      </span>
-                    </span>
-                  </div>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">{review.body}</p>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </Panel>
-
-      <div className="space-y-5 xl:col-span-4">
-        <Panel>
-          <VideoPlayer poster={course.thumbnail} alt={`${course.title} Vorschau`} />
-          <div className="mt-4 flex items-center gap-3">
-            <span className="text-xl font-semibold text-ink">{rwf(course.price)}</span>
-            {course.oldPrice ? (
-              <span className="text-sm text-muted line-through">{rwf(course.oldPrice)}</span>
-            ) : null}
-            {discount > 0 ? (
-              <span className={`rounded-full px-3 py-1 text-[11px] font-medium ${TONE_SURFACE.coral}`}>
-                Save {discount}%
-              </span>
-            ) : null}
-            <button
-              type="button"
-              className="ml-auto inline-flex items-center gap-1.5 text-[11px] font-medium text-coral"
-            >
-              <FiHeart aria-hidden />
-              Add to Wishlist
-            </button>
-          </div>
-        </Panel>
-
-        <Panel>
-          <h2 className="text-base font-semibold">What will you learn:</h2>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-            {course.outcomes.map((outcome) => (
-              <li key={outcome} className="flex items-start gap-2 text-xs leading-snug text-muted">
-                <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-brand" aria-hidden />
-                {outcome}
+        <h2 className="mt-6 text-base font-semibold">What you will learn</h2>
+        {level.objectives.length === 0 ? (
+          <p className="mt-2 text-xs text-muted">Objectives for this level are being finalised.</p>
+        ) : (
+          <ul className="mt-2 space-y-2">
+            {level.objectives.map((objective) => (
+              <li key={objective} className="flex items-start gap-2 text-sm">
+                <span aria-hidden className="mt-1.5 size-1.5 shrink-0 rounded-full bg-brand" />
+                {objective}
               </li>
             ))}
           </ul>
-        </Panel>
+        )}
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          <button
-            type="button"
-            className="btn rounded-full border-line bg-base-100 text-ink shadow-none hover:bg-base-100"
-          >
-            Add to Cart
-          </button>
-          <button
-            type="button"
-            className="btn rounded-full border-0 bg-brand text-white hover:bg-brand/90"
-          >
-            Buy Now
-          </button>
-        </div>
+        {enrolment ? (
+          <div className="mt-6">
+            <StatusBadge
+              status={`${enrolment.stats.completedLessons}/${enrolment.stats.totalLessons} lessons complete`}
+            />
+            <Link
+              to={`/courses/${slug.toLowerCase()}/learn`}
+              className="btn mt-4 rounded-full border-0 bg-brand text-white hover:bg-brand/90"
+            >
+              Continue learning
+            </Link>
+          </div>
+        ) : (
+          <p className="mt-6 text-xs text-muted">
+            You are not enrolled in this level yet. Contact an academic admin to join.
+          </p>
+        )}
+      </Panel>
 
-        <Panel className="space-y-3">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-medium">Level</span>
-            <span className="text-xs text-muted">
-              {course.level} · {course.levelLabel}
-            </span>
+      <Panel>
+        <h2 className="text-base font-semibold">Course facts</h2>
+        <dl className="mt-4 space-y-3 text-sm">
+          <div className="flex items-center justify-between gap-3">
+            <dt className="text-muted">Tuition</dt>
+            <dd className="font-semibold text-brand">
+              {rwf(money(level.defaultFee))} {level.currency}
+            </dd>
           </div>
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-medium">Lektionen</span>
-            <span className="text-xs text-muted">{course.lessons}</span>
+          <div className="flex items-center justify-between gap-3">
+            <dt className="text-muted">Language</dt>
+            <dd className="font-medium">{level.language}</dd>
           </div>
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-medium">Bewertung</span>
-            <Rating value={course.rating} />
+          <div className="flex items-center justify-between gap-3">
+            <dt className="text-muted">Status</dt>
+            <dd>
+              <StatusBadge status={level.isActive ? 'Active' : 'Inactive'} />
+            </dd>
           </div>
-        </Panel>
-      </div>
+          {enrolment ? (
+            <div className="flex items-center justify-between gap-3">
+              <dt className="text-muted">Progress</dt>
+              <dd className="font-medium">{enrolment.stats.completionPercentage}%</dd>
+            </div>
+          ) : null}
+        </dl>
+      </Panel>
     </div>
   );
 }

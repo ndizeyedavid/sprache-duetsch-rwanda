@@ -1,112 +1,176 @@
-import { FiChevronRight, FiPlus } from 'react-icons/fi';
-import { Panel } from '../../components/ui/Panel';
-import { DateTile, MonthCalendar } from '../../components/ui/Calendar';
+import { useState } from 'react';
+import type { FormEvent } from 'react';
+import { MonthCalendar } from '../../components/ui/Calendar';
 import type { CalendarEvent } from '../../components/ui/Calendar';
-import { KebabMenu } from '../../components/ui/KebabMenu';
-import { TONE_CLASSES } from '../../lib/theme';
-import { GANTT_DAYS, GANTT_HOURS, adminTasks } from '../../data/mock';
-import type { Tone } from '../../types';
+import { Panel, SectionHeader } from '../../components/ui/Panel';
+import { ScheduleCard } from '../../components/cards/ScheduleCard';
+import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useApi } from '../../hooks/useApi';
+import { apiErrorMessage } from '../../lib/api';
+import { photos } from '../../lib/images';
+import {
+  createSession,
+  isoDate,
+  isoTime,
+  listClasses,
+  listSessions,
+  listTeachers,
+} from '../../lib/services';
+import { sessionStatusLabel, sessionTone, teacherName } from '../../lib/sessions-ui';
 
-const CALENDAR_EVENTS: CalendarEvent[] = [
-  { day: 1, label: 'Deutsch A2', tone: 'coral', time: '10.00 AM' },
-  { day: 10, label: 'Konversation B1', tone: 'sun', time: '10.00 AM' },
-  { day: 17, label: 'Prüfung B1', tone: 'brand', time: '10.00 AM' },
-  { day: 22, label: 'Berufsdeutsch', tone: 'coral', time: '10.00 AM' },
-  { day: 26, label: 'Aussprache A1', tone: 'brand', time: '10.00 AM' },
-];
-
-const UPCOMING: { id: string; title: string; time: string; day: string; month: string; tone: Tone }[] = [
-  { id: 'us-1', title: 'Deutsch A2 — Grammatik', time: '07.00 - 08.00 AM', day: '5', month: 'Jan', tone: 'brand' },
-  { id: 'us-2', title: 'Konversation B1', time: '07.00 - 08.00 AM', day: '5', month: 'Jan', tone: 'sun' },
-];
+const AVATARS = [photos.clarisse, photos.nadine, photos.jeanPaul, photos.aline, photos.eric];
 
 export function AdminSchedule() {
+  const sessions = useApi('all-sessions', listSessions);
+  const classes = useApi('class-groups', listClasses);
+  const teachers = useApi('teachers', listTeachers);
+
+  const [classGroupId, setClassGroupId] = useState('');
+  const [teacherId, setTeacherId] = useState('');
+  const [title, setTitle] = useState('');
+  const [startAt, setStartAt] = useState('');
+  const [endAt, setEndAt] = useState('');
+  const [meetingUrl, setMeetingUrl] = useState('');
+  const [formError, setFormError] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
+
+  const list = sessions.data ?? [];
+  const events: CalendarEvent[] = list.map((session) => ({
+    day: new Date(session.startAt).getDate(),
+    label: session.title,
+    tone: sessionTone(session.status),
+    time: isoTime(session.startAt),
+  }));
+
+  async function handleCreate(event: FormEvent) {
+    event.preventDefault();
+    setFormError(null);
+    if (!classGroupId) {
+      setFormError('Choose a class group first.');
+      return;
+    }
+    setSaving(true);
+    try {
+      await createSession({
+        classGroupId,
+        title: title.trim() || undefined,
+        mode: 'ONLINE',
+        provider: 'GOOGLE_MEET',
+        meetingUrl: meetingUrl.trim() || undefined,
+        startAt,
+        endAt,
+        teacherId: teacherId || undefined,
+      });
+      setTitle('');
+      setStartAt('');
+      setEndAt('');
+      setMeetingUrl('');
+      sessions.refetch();
+    } catch (err) {
+      setFormError(apiErrorMessage(err, 'Could not create the session.'));
+    } finally {
+      setSaving(false);
+    }
+  }
+
   return (
     <div className="grid gap-5 xl:grid-cols-12">
-      <div className="xl:col-span-8">
+      <div className="space-y-5 xl:col-span-8">
         <Panel>
-          <MonthCalendar
-            events={CALENDAR_EVENTS}
-            action={
-              <button
-                type="button"
-                className="btn btn-sm gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90"
-              >
-                <FiPlus aria-hidden />
-                New Schedule
-              </button>
-            }
-          />
+          <SectionHeader title="Month view" />
+          {sessions.loading ? (
+            <LoadingBlock label="Loading sessions…" />
+          ) : sessions.error ? (
+            <ErrorBlock message={sessions.error} onRetry={sessions.refetch} />
+          ) : (
+            <MonthCalendar events={events} />
+          )}
+        </Panel>
+
+        <Panel>
+          <SectionHeader title="All sessions" />
+          {sessions.loading ? (
+            <LoadingBlock label="Loading sessions…" />
+          ) : sessions.error ? (
+            <ErrorBlock message={sessions.error} onRetry={sessions.refetch} />
+          ) : list.length === 0 ? (
+            <EmptyBlock title="No sessions yet" hint="Schedule the first live class with the form." />
+          ) : (
+            <div className="grid gap-4 sm:grid-cols-2">
+              {list.slice(0, 12).map((session, index) => (
+                <ScheduleCard
+                  key={session.id}
+                  title={session.title}
+                  teacher={teacherName(session.teacher)}
+                  photo={AVATARS[index % AVATARS.length]}
+                  date={isoDate(session.startAt)}
+                  time={`${isoTime(session.startAt)} – ${isoTime(session.endAt)}`}
+                  tone={sessionTone(session.status)}
+                  status={sessionStatusLabel(session.status)}
+                />
+              ))}
+            </div>
+          )}
         </Panel>
       </div>
 
-      <div className="space-y-5 xl:col-span-4">
+      <div className="xl:col-span-4">
         <Panel>
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-base font-semibold">Upcoming Task</h2>
-            <KebabMenu label="Upcoming task options" />
-          </div>
-          <div className="overflow-x-auto scrollbar-none">
-            <div className="min-w-[22rem] space-y-3">
-              <div className="grid grid-cols-[2.5rem_repeat(5,1fr)] gap-2 text-[10px] text-muted">
-                <span />
-                {GANTT_HOURS.map((hour) => (
-                  <span key={hour} className="text-center">
-                    {hour}
-                  </span>
-                ))}
-              </div>
-              {GANTT_DAYS.map((day, index) => {
-                const tasks = adminTasks.filter((task) => task.day === index + 1);
-                return (
-                  <div
-                    key={day}
-                    className="grid grid-cols-[2.5rem_repeat(5,1fr)] items-center gap-2 border-t border-dashed border-line pt-2"
-                  >
-                    <span className="text-[11px] text-muted">{day}</span>
-                    {tasks.length > 0 ? (
-                      tasks.map((task) => (
-                        <span
-                          key={task.id}
-                          className={`flex items-center gap-1.5 rounded-full px-3 py-2 text-[10px] font-medium text-white ${TONE_CLASSES[task.tone].bg}`}
-                          style={{ gridColumn: `${task.start + 1} / span ${task.span}` }}
-                        >
-                          <span className="size-1.5 rounded-full bg-white" aria-hidden />
-                          <span className="truncate">{task.label}</span>
-                        </span>
-                      ))
-                    ) : (
-                      <span aria-hidden />
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </Panel>
-
-        <Panel>
-          <h2 className="mb-4 text-base font-semibold">Upcoming Schedule</h2>
-          <ul className="space-y-3">
-            {UPCOMING.map((item) => (
-              <li
-                key={item.id}
-                className="flex items-center gap-3 rounded-field border border-line p-3"
+          <SectionHeader title="New session" />
+          <form onSubmit={handleCreate} className="space-y-3">
+            <label className="block">
+              <span className="mb-1.5 block text-xs font-medium">Class group</span>
+              <select
+                required
+                value={classGroupId}
+                onChange={(event) => setClassGroupId(event.target.value)}
+                className="select w-full rounded-field border-line bg-base-200"
               >
-                <span
-                  aria-hidden
-                  className="w-1 self-stretch rounded-full"
-                  style={{ backgroundColor: TONE_CLASSES[item.tone].hex }}
-                />
-                <DateTile day={item.day} month={item.month} tone={item.tone} />
-                <span className="min-w-0 grow">
-                  <span className="block truncate text-sm font-semibold">{item.title}</span>
-                  <span className="mt-0.5 block text-[11px] text-muted">{item.time}</span>
-                </span>
-                <FiChevronRight className="shrink-0 text-muted" aria-hidden />
-              </li>
-            ))}
-          </ul>
+                <option value="">Choose…</option>
+                {(classes.data ?? []).map((group) => (
+                  <option key={group.id} value={group.id}>
+                    {group.name} ({group.code})
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="block">
+              <span className="mb-1.5 block text-xs font-medium">Teacher (optional)</span>
+              <select
+                value={teacherId}
+                onChange={(event) => setTeacherId(event.target.value)}
+                className="select w-full rounded-field border-line bg-base-200"
+              >
+                <option value="">Auto</option>
+                {(teachers.data ?? []).map((teacher) => (
+                  <option key={teacher.id} value={teacher.id}>
+                    {teacher.firstName} {teacher.lastName}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <input required value={title} onChange={(event) => setTitle(event.target.value)} placeholder="Session title" className="input input-sm w-full rounded-field border-line bg-base-200" />
+            <div className="grid gap-3 sm:grid-cols-2">
+              <label className="block">
+                <span className="mb-1.5 block text-xs font-medium">Starts</span>
+                <input required type="datetime-local" value={startAt} onChange={(event) => setStartAt(event.target.value)} className="input input-sm w-full rounded-field border-line bg-base-200" />
+              </label>
+              <label className="block">
+                <span className="mb-1.5 block text-xs font-medium">Ends</span>
+                <input required type="datetime-local" value={endAt} onChange={(event) => setEndAt(event.target.value)} className="input input-sm w-full rounded-field border-line bg-base-200" />
+              </label>
+            </div>
+            <input value={meetingUrl} onChange={(event) => setMeetingUrl(event.target.value)} placeholder="Meeting link (Meet/Zoom)" className="input input-sm w-full rounded-field border-line bg-base-200" />
+            {formError ? (
+              <p role="alert" className="text-xs font-medium text-error">
+                {formError}
+              </p>
+            ) : null}
+            <button type="submit" disabled={saving} className="btn w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+              {saving ? <span className="loading loading-spinner loading-sm" /> : null}
+              Schedule session
+            </button>
+          </form>
         </Panel>
       </div>
     </div>

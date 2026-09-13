@@ -1,90 +1,104 @@
-import { FiChevronRight } from 'react-icons/fi';
-import { Panel, SectionHeader } from '../../components/ui/Panel';
-import { ProgressBar } from '../../components/ui/ProgressBar';
-import { MiniCalendar, DateTile } from '../../components/ui/Calendar';
-import { DayTimeline } from '../../components/ui/DayTimeline';
-import { RadialStat } from '../../components/charts/RadialStat';
-import { TONE_CLASSES } from '../../lib/theme';
-import { calendarLegend, ongoingClasses, scheduleTimeline, upcomingSchedule } from '../../data/mock';
+import { Link } from 'react-router-dom';
+import { Panel } from '../../components/ui/Panel';
+import { MiniCalendar } from '../../components/ui/Calendar';
+import { ScheduleCard } from '../../components/cards/ScheduleCard';
+import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useApi } from '../../hooks/useApi';
+import { photos } from '../../lib/images';
+import { getMySessions, getUpcomingSessions, isoDate, isoTime } from '../../lib/services';
+import { sessionStatusLabel, sessionTone, teacherName } from '../../lib/sessions-ui';
+
+const AVATARS = [photos.clarisse, photos.nadine, photos.jeanPaul, photos.aline, photos.eric];
 
 export function Schedule() {
+  const upcoming = useApi('upcoming-sessions', getUpcomingSessions);
+  const history = useApi('my-sessions', getMySessions);
+
+  const sessions = upcoming.data ?? [];
+  const past = history.data ?? [];
+
   return (
     <div className="grid gap-5 xl:grid-cols-12">
       <div className="space-y-5 xl:col-span-8">
         <Panel>
-          <h2 className="mb-4 text-base font-semibold sm:text-lg">Ongoing Class</h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {ongoingClasses.map((item) => {
-              const tone = TONE_CLASSES[item.tone];
-              return (
-                <div key={item.id} className="flex items-center gap-4 rounded-box bg-base-200 p-4">
-                  <span className={`flex size-14 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${tone.soft} ${tone.text}`}>
-                    {item.progress}%
-                  </span>
-                  <span className="min-w-0 grow">
-                    <span className="block truncate text-sm font-medium">{item.title}</span>
-                    <ProgressBar value={item.progress} tone={item.tone} className="mt-2" />
-                  </span>
-                  <FiChevronRight className="shrink-0 text-muted" aria-hidden />
+          <h2 className="mb-4 text-base font-semibold sm:text-lg">Upcoming classes</h2>
+          {upcoming.loading ? (
+            <LoadingBlock label="Loading upcoming classes…" />
+          ) : upcoming.error ? (
+            <ErrorBlock message={upcoming.error} onRetry={upcoming.refetch} />
+          ) : sessions.length === 0 ? (
+            <EmptyBlock title="No upcoming classes" hint="Check back later or ask your teacher." />
+          ) : (
+            <div className="grid gap-4 sm:grid-cols-2">
+              {sessions.map((session, index) => (
+                <div key={session.id} className="space-y-2">
+                  <ScheduleCard
+                    title={session.title}
+                    teacher={teacherName(session.teacher)}
+                    photo={AVATARS[index % AVATARS.length]}
+                    date={isoDate(session.startAt)}
+                    time={`${isoTime(session.startAt)} – ${isoTime(session.endAt)}`}
+                    tone={sessionTone(session.status)}
+                    status={sessionStatusLabel(session.status)}
+                  />
+                  {session.meetingUrl ? (
+                    <a
+                      href={session.meetingUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn-sm w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90"
+                    >
+                      Join live class
+                    </a>
+                  ) : null}
                 </div>
-              );
-            })}
-          </div>
+              ))}
+            </div>
+          )}
         </Panel>
 
         <Panel>
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-base font-semibold sm:text-lg">Today Schedule</h2>
-            <span className="text-[11px] text-muted">Heute · 07:00 — 17:00</span>
-          </div>
-          <DayTimeline events={scheduleTimeline} className="pt-4" />
+          <h2 className="mb-4 text-base font-semibold sm:text-lg">Past classes</h2>
+          {history.loading ? (
+            <LoadingBlock label="Loading past classes…" />
+          ) : history.error ? (
+            <ErrorBlock message={history.error} onRetry={history.refetch} />
+          ) : past.length === 0 ? (
+            <EmptyBlock title="No past classes yet" />
+          ) : (
+            <div className="space-y-3">
+              {past.slice(0, 8).map((session, index) => (
+                <ScheduleCard
+                  key={session.id}
+                  title={session.title}
+                  teacher={teacherName(session.teacher)}
+                  photo={AVATARS[index % AVATARS.length]}
+                  date={isoDate(session.startAt)}
+                  time={`${isoTime(session.startAt)} – ${isoTime(session.endAt)}`}
+                  tone={sessionTone(session.status)}
+                  status={sessionStatusLabel(session.status)}
+                />
+              ))}
+            </div>
+          )}
         </Panel>
       </div>
 
       <div className="space-y-5 xl:col-span-4">
         <Panel>
-          <h2 className="mb-4 text-base font-semibold sm:text-lg">Calendar</h2>
-          <MiniCalendar marked={[5, 17]} selected={5} />
-          <div className="mt-5 flex items-center gap-4 border-t border-line pt-5">
-            <RadialStat value={15} size={120} color="#FEC64F" trackColor="#FFF6E5">
-              <span className="text-sm font-semibold text-ink">+15%</span>
-            </RadialStat>
-            <div className="min-w-0">
-              <p className="text-xs font-medium">Your Progress this Month</p>
-              <p className="mt-1 text-[11px] leading-relaxed text-muted">
-                Du hast diesen Monat 15% mehr Lektionen abgeschlossen als im Vormonat.
-              </p>
-            </div>
-          </div>
-          <ul className="mt-5 grid grid-cols-2 gap-3 border-t border-line pt-4">
-            {calendarLegend.map((item) => (
-              <li key={item.label} className="flex items-center gap-2 text-[11px] text-muted">
-                <span
-                  className={`size-2 rounded-full ${TONE_CLASSES[item.tone].bg}`}
-                  aria-hidden
-                />
-                {item.label}
-              </li>
-            ))}
-          </ul>
+          <MiniCalendar marked={sessions.map((session) => new Date(session.startAt).getDate())} />
         </Panel>
-
         <Panel>
-          <SectionHeader title="Upcoming Schedule" action={{ label: 'View all', to: '/schedule' }} />
-          <ul className="space-y-3">
-            {upcomingSchedule.map((event) => (
-              <li key={event.id}>
-                <div className="flex items-center gap-3 rounded-field bg-base-200 p-3">
-                  <DateTile day={event.date.split(' ')[0]} month={event.date.split(' ')[1]?.slice(0, 3) ?? ''} tone={event.tone} />
-                  <span className="min-w-0 grow">
-                    <span className="block truncate text-xs font-semibold">{event.title}</span>
-                    <span className="mt-0.5 block truncate text-[10px] text-muted">{event.time}</span>
-                  </span>
-                  <FiChevronRight className="shrink-0 text-muted" aria-hidden />
-                </div>
-              </li>
-            ))}
-          </ul>
+          <h2 className="text-base font-semibold">Need help?</h2>
+          <p className="mt-1 text-xs leading-relaxed text-muted">
+            Class links appear here once your teacher schedules a live session.
+          </p>
+          <Link
+            to="/instructors"
+            className="btn btn-sm mt-4 w-full rounded-full border-brand bg-transparent text-brand hover:border-brand hover:bg-brand hover:text-white"
+          >
+            View teachers
+          </Link>
         </Panel>
       </div>
     </div>
