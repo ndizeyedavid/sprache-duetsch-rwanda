@@ -12,9 +12,9 @@
   --color-base-200: #fafafa;
   --color-base-300: #f1f0f3;
   --color-base-content: #374557;
-  --color-primary: #4cbc9a;
+  --color-primary: #fb0d00;
   --color-primary-content: #ffffff;
-  --color-secondary: #fec64f;
+  --color-secondary: #f3b800;
   --color-secondary-content: #374557;
   --color-accent: #fc6b57;
   --color-accent-content: #ffffff;
@@ -24,7 +24,7 @@
   --color-info-content: #ffffff;
   --color-success: #4cbc9a;
   --color-success-content: #ffffff;
-  --color-warning: #fec64f;
+  --color-warning: #f3b800;
   --color-warning-content: #374557;
   --color-error: #fc6b57;
   --color-error-content: #ffffff;
@@ -38,11 +38,11 @@
   --color-ink: #374557;
   --color-muted: #a098ae;
   --color-line: #f1f0f3;
-  --color-brand: #4cbc9a;
-  --color-brand-soft: #e4f5f0;
-  --color-brand-tint: #edf8f5;
-  --color-sun: #fec64f;
-  --color-sun-soft: #fff6e5;
+  --color-brand: #fb0d00;
+  --color-brand-soft: #ffe1de;
+  --color-brand-tint: #fff1f0;
+  --color-sun: #f3b800;
+  --color-sun-soft: #fdf0ce;
   --color-coral: #fc6b57;
   --color-coral-soft: #ffe9e6;
   --color-night: #374557;
@@ -97,7 +97,7 @@
 /* NProgress — brand-tinted top bar for route changes. */
 #nprogress .bar {
   background: var(--color-brand);
-  height: 3px;
+  height: 10px;
 }
 
 #nprogress .peg {

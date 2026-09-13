@@ -845,15 +845,15 @@ export const sellingActivity = [
 ];
 
 export const popularClasses = [
-  { name: "Grammatik", value: 27, color: "#FEC64F" },
+  { name: "Grammatik", value: 27, color: "#F3B800" },
   { name: "Konversation", value: 50, color: "#FC6B57" },
-  { name: "Prüfung", value: 23, color: "#4CBC9A" },
+  { name: "Prüfung", value: 23, color: "#FB0D00" },
 ];
 
 export const popularClassRows = [
-  { id: "pc-1", label: "Grammatik (27%)", value: 763, color: "#FEC64F" },
+  { id: "pc-1", label: "Grammatik (27%)", value: 763, color: "#F3B800" },
   { id: "pc-2", label: "Konversation (50%)", value: 321, color: "#FC6B57" },
-  { id: "pc-3", label: "Prüfung (23%)", value: 69, color: "#4CBC9A" },
+  { id: "pc-3", label: "Prüfung (23%)", value: 69, color: "#FB0D00" },
 ];
 
 export const topCourses = [

@@ -34,8 +34,8 @@ export function statusTone(status: string): Tone {
  * mockup so the label passes WCAG AA contrast on its pale background.
  */
 export const TONE_SURFACE: Record<Tone, string> = {
-  brand: 'bg-brand-soft text-[#2F8F73]',
-  sun: 'bg-sun-soft text-[#B37F0B]',
+  brand: 'bg-brand-soft text-[#B30A00]',
+  sun: 'bg-sun-soft text-[#8A6800]',
   coral: 'bg-coral-soft text-[#D8482F]',
   navy: 'bg-night/5 text-night',
   muted: 'bg-muted/10 text-[#6F6880]',
