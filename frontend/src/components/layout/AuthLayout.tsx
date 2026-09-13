@@ -46,7 +46,16 @@ export function AuthLayout({ portal = "student" }: { portal?: Portal }) {
 
   return (
     <div className="grid min-h-screen lg:grid-cols-2">
-      <div className="relative hidden flex-col justify-between overflow-hidden bg-night p-10 text-white lg:flex">
+      <div
+        className="relative hidden flex-col justify-between overflow-hidden  p-10 text-white lg:flex"
+        style={{
+          background:
+            "linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.9)), url('/auth-image.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div
           aria-hidden
           className="pointer-events-none absolute -right-24 -top-24 size-80 rounded-full bg-brand/25 blur-3xl"
@@ -77,7 +86,7 @@ export function AuthLayout({ portal = "student" }: { portal?: Portal }) {
           </dl>
         </div>
         <p className="relative text-xs text-white/50">
-          © 2025 Deutsch Sprache RW
+          © 2026 Deutsch Sprache RW
         </p>
       </div>
 
