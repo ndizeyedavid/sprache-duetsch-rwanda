@@ -4,97 +4,126 @@ import { AppLayout } from "./components/layout/AppLayout";
 import { AuthLayout } from "./components/layout/AuthLayout";
 import { RouteProgress } from "./components/layout/RouteProgress";
 import { LoadingBlock } from "./components/common/PageState";
-import { Login } from "./pages/auth/Login";
+import { LoginStudent } from "./pages/auth/LoginStudent";
+import { LoginTeacher } from "./pages/auth/LoginTeacher";
+import { LoginStaff } from "./pages/auth/LoginStaff";
 import { Register } from "./pages/auth/Register";
 import { VerifyCertificate } from "./pages/VerifyCertificate";
-import { useApi } from "./hooks/useApi";
-import { clearTokens, fetchMe, isSignedIn } from "./lib/auth-store";
+import { SessionProvider, useSession } from "./lib/session";
+import {
+  ADMIN_ROLES,
+  FINANCE_ROLES,
+  STAFF_ROLES,
+  STUDENT_ROLES,
+  TEACHER_ROLES,
+  homePath,
+} from "./lib/roles";
+import type { AuthRole } from "./lib/auth-store";
 
+// ---------------------------------------------------------------------------
+// Student pages
+// ---------------------------------------------------------------------------
 const Dashboard = lazy(() =>
-  import("./pages/student/Dashboard").then((module) => ({
-    default: module.Dashboard,
-  })),
+  import("./pages/student/Dashboard").then((module) => ({ default: module.Dashboard })),
 );
-const AdminDashboard = lazy(() =>
-  import("./pages/admin/Dashboard").then((module) => ({
-    default: module.AdminDashboard,
-  })),
-);
-const AdminCourses = lazy(() =>
-  import("./pages/admin/Courses").then((module) => ({
-    default: module.AdminCourses,
-  })),
-);
-const AdminSchedule = lazy(() =>
-  import("./pages/admin/Schedule").then((module) => ({
-    default: module.AdminSchedule,
-  })),
-);
-const AdminStudents = lazy(() =>
-  import("./pages/admin/Students").then((module) => ({
-    default: module.AdminStudents,
-  })),
-);
-const AdminResources = lazy(() =>
-  import("./pages/admin/Resources").then((module) => ({
-    default: module.AdminResources,
-  })),
-);
-const AdminTransactions = lazy(() =>
-  import("./pages/admin/Transactions").then((module) => ({
-    default: module.AdminTransactions,
-  })),
-);
-const AdminLiveClass = lazy(() =>
-  import("./pages/admin/LiveClass").then((module) => ({
-    default: module.AdminLiveClass,
-  })),
-);
-const AdminCertificates = lazy(() =>
-  import("./pages/admin/Certificates").then((module) => ({
-    default: module.AdminCertificates,
-  })),
-);
-
 const Courses = lazy(() =>
-  import("./pages/student/Courses").then((module) => ({
-    default: module.Courses,
-  })),
+  import("./pages/student/Courses").then((module) => ({ default: module.Courses })),
 );
 const CourseOverview = lazy(() =>
-  import("./pages/student/CourseOverview").then((module) => ({
-    default: module.CourseOverview,
-  })),
+  import("./pages/student/CourseOverview").then((module) => ({ default: module.CourseOverview })),
 );
 const CourseContents = lazy(() =>
-  import("./pages/student/CourseContents").then((module) => ({
-    default: module.CourseContents,
-  })),
+  import("./pages/student/CourseContents").then((module) => ({ default: module.CourseContents })),
 );
 const Schedule = lazy(() =>
-  import("./pages/student/Schedule").then((module) => ({
-    default: module.Schedule,
-  })),
+  import("./pages/student/Schedule").then((module) => ({ default: module.Schedule })),
 );
 const Teachers = lazy(() =>
-  import("./pages/student/Teachers").then((module) => ({
-    default: module.Teachers,
-  })),
-);
-const Messages = lazy(() =>
-  import("./pages/student/Messages").then((module) => ({
-    default: module.Messages,
-  })),
-);
-const Activity = lazy(() =>
-  import("./pages/student/Activity").then((module) => ({
-    default: module.Activity,
-  })),
+  import("./pages/student/Teachers").then((module) => ({ default: module.Teachers })),
 );
 const Profile = lazy(() =>
-  import("./pages/student/Profile").then((module) => ({
-    default: module.Profile,
-  })),
+  import("./pages/student/Profile").then((module) => ({ default: module.Profile })),
+);
+
+// ---------------------------------------------------------------------------
+// Shared pages (every role)
+// ---------------------------------------------------------------------------
+const Messages = lazy(() =>
+  import("./pages/shared/Messages").then((module) => ({ default: module.Messages })),
+);
+const Activity = lazy(() =>
+  import("./pages/shared/Activity").then((module) => ({ default: module.Activity })),
+);
+
+// ---------------------------------------------------------------------------
+// Teacher pages
+// ---------------------------------------------------------------------------
+const TeacherDashboard = lazy(() =>
+  import("./pages/teacher/Dashboard").then((module) => ({ default: module.TeacherDashboard })),
+);
+const TeacherClasses = lazy(() =>
+  import("./pages/teacher/Classes").then((module) => ({ default: module.TeacherClasses })),
+);
+const TeacherSchedule = lazy(() =>
+  import("./pages/teacher/Schedule").then((module) => ({ default: module.TeacherSchedule })),
+);
+const TeacherAttendance = lazy(() =>
+  import("./pages/teacher/Attendance").then((module) => ({ default: module.TeacherAttendance })),
+);
+const TeacherGrading = lazy(() =>
+  import("./pages/teacher/Grading").then((module) => ({ default: module.TeacherGrading })),
+);
+const TeacherContent = lazy(() =>
+  import("./pages/teacher/Content").then((module) => ({ default: module.TeacherContent })),
+);
+const TeacherAssessments = lazy(() =>
+  import("./pages/teacher/Assessments").then((module) => ({ default: module.TeacherAssessments })),
+);
+
+// ---------------------------------------------------------------------------
+// Admin / finance pages
+// ---------------------------------------------------------------------------
+const AdminDashboard = lazy(() =>
+  import("./pages/admin/Dashboard").then((module) => ({ default: module.AdminDashboard })),
+);
+const AdminFinance = lazy(() =>
+  import("./pages/admin/Finance").then((module) => ({ default: module.AdminFinance })),
+);
+const AdminCourses = lazy(() =>
+  import("./pages/admin/Courses").then((module) => ({ default: module.AdminCourses })),
+);
+const AdminSchedule = lazy(() =>
+  import("./pages/admin/Schedule").then((module) => ({ default: module.AdminSchedule })),
+);
+const AdminStudents = lazy(() =>
+  import("./pages/admin/Students").then((module) => ({ default: module.AdminStudents })),
+);
+const AdminResources = lazy(() =>
+  import("./pages/admin/Resources").then((module) => ({ default: module.AdminResources })),
+);
+const AdminTransactions = lazy(() =>
+  import("./pages/admin/Transactions").then((module) => ({ default: module.AdminTransactions })),
+);
+const AdminCertificates = lazy(() =>
+  import("./pages/admin/Certificates").then((module) => ({ default: module.AdminCertificates })),
+);
+const AdminLiveClass = lazy(() =>
+  import("./pages/admin/LiveClass").then((module) => ({ default: module.AdminLiveClass })),
+);
+const AdminClasses = lazy(() =>
+  import("./pages/admin/Classes").then((module) => ({ default: module.AdminClasses })),
+);
+const AdminEnrolments = lazy(() =>
+  import("./pages/admin/Enrolments").then((module) => ({ default: module.AdminEnrolments })),
+);
+const AdminPeople = lazy(() =>
+  import("./pages/admin/People").then((module) => ({ default: module.AdminPeople })),
+);
+const AdminAnnouncements = lazy(() =>
+  import("./pages/admin/Announcements").then((module) => ({ default: module.AdminAnnouncements })),
+);
+const AdminOrganisation = lazy(() =>
+  import("./pages/admin/Organisation").then((module) => ({ default: module.AdminOrganisation })),
 );
 
 function PageFallback() {
@@ -110,39 +139,45 @@ function PageFallback() {
   );
 }
 
-function RequireAuth() {
-  if (!isSignedIn()) {
-    return <Navigate to="/login" replace />;
-  }
+/** Sends the visitor to the dashboard that matches their role (or to sign-in). */
+function RoleHome() {
+  const { user, loading } = useSession();
+  if (loading) return <PageFallback />;
+  return <Navigate to={user ? homePath[user.role] : "/login"} replace />;
+}
+
+/**
+ * Route guard: signed-in users only, restricted to the given roles. A user who
+ * is not allowed here is redirected to their own dashboard instead of seeing 403s.
+ */
+function RequireRole({ roles }: { roles: AuthRole[] }) {
+  const { user, loading } = useSession();
+  if (loading) return <LoadingBlock label="Checking access…" />;
+  if (!user) return <Navigate to="/login" replace />;
+  if (!roles.includes(user.role)) return <Navigate to={homePath[user.role]} replace />;
   return <Outlet />;
 }
 
-function RequireStaff() {
-  const me = useApi('auth-me', fetchMe);
-  if (me.loading) return <LoadingBlock label="Checking access…" />;
-  if (me.error || !me.data) {
-    clearTokens();
-    return <Navigate to="/login" replace />;
-  }
-  if (me.data.role === 'STUDENT') {
-    return <Navigate to="/dashboard" replace />;
-  }
-  return <Outlet />;
-}
-
-export default function App() {
+function AppRoutes() {
   return (
     <Suspense fallback={<PageFallback />}>
       <RouteProgress />
       <Routes>
-        <Route element={<AuthLayout />}>
-          <Route path="/login" element={<Login />} />
+        <Route element={<AuthLayout portal="student" />}>
+          <Route path="/login" element={<LoginStudent />} />
           <Route path="/register" element={<Register />} />
+        </Route>
+        <Route element={<AuthLayout portal="teacher" />}>
+          <Route path="/login/teacher" element={<LoginTeacher />} />
+        </Route>
+        <Route element={<AuthLayout portal="staff" />}>
+          <Route path="/login/staff" element={<LoginStaff />} />
         </Route>
 
         <Route path="/verify/:code" element={<VerifyCertificate />} />
 
-        <Route element={<RequireAuth />}>
+        {/* Student */}
+        <Route element={<RequireRole roles={STUDENT_ROLES} />}>
           <Route element={<AppLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/courses" element={<Courses />} />
@@ -153,23 +188,75 @@ export default function App() {
             <Route path="/messages" element={<Messages />} />
             <Route path="/activity" element={<Activity />} />
             <Route path="/profile" element={<Profile />} />
-
-            <Route element={<RequireStaff />}>
-              <Route path="/admin" element={<AdminDashboard />} />
-              <Route path="/admin/courses" element={<AdminCourses />} />
-              <Route path="/admin/schedule" element={<AdminSchedule />} />
-              <Route path="/admin/students" element={<AdminStudents />} />
-              <Route path="/admin/resources" element={<AdminResources />} />
-          <Route path="/admin/transactions" element={<AdminTransactions />} />
-          <Route path="/admin/certificates" element={<AdminCertificates />} />
-          <Route path="/admin/live-class" element={<AdminLiveClass />} />
-            </Route>
           </Route>
         </Route>
 
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        {/* Teacher */}
+        <Route element={<RequireRole roles={TEACHER_ROLES} />}>
+          <Route element={<AppLayout />}>
+            <Route path="/teacher" element={<TeacherDashboard />} />
+            <Route path="/teacher/classes" element={<TeacherClasses />} />
+            <Route path="/teacher/content" element={<TeacherContent />} />
+            <Route path="/teacher/assessments" element={<TeacherAssessments />} />
+            <Route path="/teacher/schedule" element={<TeacherSchedule />} />
+            <Route path="/teacher/attendance" element={<TeacherAttendance />} />
+            <Route path="/teacher/grading" element={<TeacherGrading />} />
+            <Route path="/teacher/messages" element={<Messages />} />
+            <Route path="/teacher/activity" element={<Activity />} />
+          </Route>
+        </Route>
+
+        {/* Academic admin + super admin */}
+        <Route element={<RequireRole roles={ADMIN_ROLES} />}>
+          <Route element={<AppLayout />}>
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin/courses" element={<AdminCourses />} />
+            <Route path="/admin/classes" element={<AdminClasses />} />
+            <Route path="/admin/enrolments" element={<AdminEnrolments />} />
+            <Route path="/admin/people" element={<AdminPeople />} />
+            <Route path="/admin/schedule" element={<AdminSchedule />} />
+            <Route path="/admin/announcements" element={<AdminAnnouncements />} />
+            <Route path="/admin/resources" element={<AdminResources />} />
+            <Route path="/admin/certificates" element={<AdminCertificates />} />
+            <Route path="/admin/live-class" element={<AdminLiveClass />} />
+            <Route path="/admin/organisation" element={<AdminOrganisation />} />
+          </Route>
+        </Route>
+
+        {/* Finance admin + super admin */}
+        <Route element={<RequireRole roles={FINANCE_ROLES} />}>
+          <Route element={<AppLayout />}>
+            <Route path="/admin/finance" element={<AdminFinance />} />
+            <Route path="/admin/transactions" element={<AdminTransactions />} />
+          </Route>
+        </Route>
+
+        {/* Shared by academic + finance admins */}
+        <Route element={<RequireRole roles={[...ADMIN_ROLES, ...FINANCE_ROLES]} />}>
+          <Route element={<AppLayout />}>
+            <Route path="/admin/students" element={<AdminStudents />} />
+          </Route>
+        </Route>
+
+        {/* Shared by all staff (incl. teachers) */}
+        <Route element={<RequireRole roles={STAFF_ROLES} />}>
+          <Route element={<AppLayout />}>
+            <Route path="/admin/messages" element={<Messages />} />
+            <Route path="/admin/activity" element={<Activity />} />
+          </Route>
+        </Route>
+
+        <Route path="/" element={<RoleHome />} />
+        <Route path="*" element={<RoleHome />} />
       </Routes>
     </Suspense>
+  );
+}
+
+export default function App() {
+  return (
+    <SessionProvider>
+      <AppRoutes />
+    </SessionProvider>
   );
 }

@@ -5,7 +5,7 @@ import { StatusBadge } from '../../components/ui/StatusBadge';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { fetchMe } from '../../lib/auth-store';
+import { useSession } from '../../lib/session';
 import {
   createConversation,
   humanize,
@@ -23,7 +23,7 @@ import type { Conversation } from '../../lib/services';
 
 const TABS = ['Chats', 'Notices'] as const;
 
-function threadTitle(thread: Conversation, myId: string | null): string {
+function threadTitle(thread: Conversation, myId: string | null | undefined): string {
   if (thread.title) return thread.title;
   const others = thread.participants.filter((member) => member.user.id !== myId);
   if (others.length === 0) return 'Just me';
@@ -33,9 +33,10 @@ function threadTitle(thread: Conversation, myId: string | null): string {
     .join(', ');
 }
 
+/** Shared inbox for every role: direct chats + announcement notices. */
 export function Messages() {
+  const { user: me } = useSession();
   const [tab, setTab] = useState<(typeof TABS)[number]>('Chats');
-  const me = useApi('auth-me', fetchMe);
 
   // ---- Chats ----
   const threads = useApi('conversations', listConversations);
@@ -46,8 +47,10 @@ export function Messages() {
   const [sending, setSending] = useState(false);
   const [showNewChat, setShowNewChat] = useState(false);
 
-  const messages = useApi(`thread-${selectedId ?? 'none'}`, () =>
-    listThreadMessages(selectedId ?? ''),
+  const messages = useApi(
+    `thread-${selectedId ?? 'none'}`,
+    () => listThreadMessages(selectedId ?? ''),
+    selectedId !== null,
   );
 
   // Light polling so new messages arrive without a reload.
@@ -209,7 +212,7 @@ export function Messages() {
                       >
                         <span className="flex items-center justify-between gap-2">
                           <span className="truncate text-xs font-semibold">
-                            {threadTitle(thread, me.data?.id ?? null)}
+                            {threadTitle(thread, me?.id)}
                           </span>
                           {thread.unreadCount > 0 ? (
                             <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-white">
@@ -243,14 +246,14 @@ export function Messages() {
             ) : (
               <div>
                 <h1 className="text-base font-semibold">
-                  {selectedThread ? threadTitle(selectedThread, me.data?.id ?? null) : 'Conversation'}
+                  {selectedThread ? threadTitle(selectedThread, me?.id) : 'Conversation'}
                 </h1>
                 <ul className="mt-4 max-h-[50vh] space-y-3 overflow-y-auto pr-1">
                   {threadMessages.length === 0 ? (
                     <li className="text-xs text-muted">Say hello to start the conversation.</li>
                   ) : (
                     threadMessages.map((message) => {
-                      const mine = message.senderId === me.data?.id;
+                      const mine = message.senderId === me?.id;
                       return (
                         <li key={message.id} className={`flex ${mine ? 'justify-end' : 'justify-start'}`}>
                           <div

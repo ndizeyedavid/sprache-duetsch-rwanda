@@ -1,61 +1,132 @@
 import {
+  FiActivity,
   FiAward,
+  FiBell,
   FiBook,
   FiCalendar,
+  FiCheckCircle,
+  FiCheckSquare,
   FiClipboard,
+  FiDollarSign,
+  FiEdit3,
   FiGrid,
+  FiLayers,
   FiLink,
+  FiMapPin,
   FiUser,
+  FiUserPlus,
   FiUsers,
   FiVideo,
-} from 'react-icons/fi';
-import type { NavItem, Role } from '../types';
+} from "react-icons/fi";
+import type { NavItem, Role } from "../types";
 
+/**
+ * Navigation is keyed by the real backend role so every entry points at an
+ * endpoint that role is allowed to call (no 403s in the sidebar).
+ */
 export const NAV: Record<Role, NavItem[]> = {
-  student: [
-    { label: 'Dashboard', to: '/dashboard', icon: FiGrid },
-    { label: 'Courses', to: '/courses', icon: FiBook },
-    { label: 'Schedule', to: '/schedule', icon: FiCalendar },
-    { label: 'Teachers', to: '/instructors', icon: FiUsers },
-    { label: 'Profile', to: '/profile', icon: FiUser },
-    { label: 'Activity', to: '/activity', icon: FiClipboard },
+  STUDENT: [
+    { label: "Dashboard", to: "/dashboard", icon: FiGrid },
+    { label: "My Course", to: "/courses", icon: FiBook },
+    { label: "Schedule", to: "/schedule", icon: FiCalendar },
+    { label: "Teachers", to: "/instructors", icon: FiUsers },
+    { label: "Messages", to: "/messages", icon: FiClipboard },
+    { label: "Activity", to: "/activity", icon: FiActivity },
+    { label: "Profile", to: "/profile", icon: FiUser },
   ],
-  admin: [
-    { label: 'Dashboard', to: '/admin', icon: FiGrid },
-    { label: 'Courses', to: '/admin/courses', icon: FiBook },
-    { label: 'Schedule', to: '/admin/schedule', icon: FiCalendar },
-    { label: 'Students', to: '/admin/students', icon: FiUsers },
-    { label: 'Resources', to: '/admin/resources', icon: FiLink },
-    { label: 'Transactions', to: '/admin/transactions', icon: FiClipboard },
-    { label: 'Certificates', to: '/admin/certificates', icon: FiAward },
-    { label: 'Live Class', to: '/admin/live-class', icon: FiVideo },
+  TEACHER: [
+    { label: "Dashboard", to: "/teacher", icon: FiGrid },
+    { label: "My Classes", to: "/teacher/classes", icon: FiBook },
+    { label: "Course Content", to: "/teacher/content", icon: FiEdit3 },
+    { label: "Assessments", to: "/teacher/assessments", icon: FiCheckCircle },
+    { label: "Schedule", to: "/teacher/schedule", icon: FiCalendar },
+    { label: "Attendance", to: "/teacher/attendance", icon: FiCheckSquare },
+    { label: "Grading", to: "/teacher/grading", icon: FiAward },
+    { label: "Messages", to: "/teacher/messages", icon: FiClipboard },
+    { label: "Activity", to: "/teacher/activity", icon: FiActivity },
+  ],
+  ACADEMIC_ADMIN: [
+    { label: "Dashboard", to: "/admin", icon: FiGrid },
+    { label: "Courses", to: "/admin/courses", icon: FiBook },
+    { label: "Classes", to: "/admin/classes", icon: FiLayers },
+    { label: "Students", to: "/admin/students", icon: FiUsers },
+    { label: "Enrolments", to: "/admin/enrolments", icon: FiClipboard },
+    { label: "People", to: "/admin/people", icon: FiUserPlus },
+    { label: "Schedule", to: "/admin/schedule", icon: FiCalendar },
+    { label: "Announcements", to: "/admin/announcements", icon: FiBell },
+    { label: "Resources", to: "/admin/resources", icon: FiLink },
+    { label: "Certificates", to: "/admin/certificates", icon: FiAward },
+    { label: "Live Class", to: "/admin/live-class", icon: FiVideo },
+    { label: "Organisation", to: "/admin/organisation", icon: FiMapPin },
+    { label: "Messages", to: "/admin/messages", icon: FiClipboard },
+    { label: "Activity", to: "/admin/activity", icon: FiActivity },
+  ],
+  FINANCE_ADMIN: [
+    { label: "Dashboard", to: "/admin/finance", icon: FiGrid },
+    { label: "Transactions", to: "/admin/transactions", icon: FiDollarSign },
+    { label: "Students", to: "/admin/students", icon: FiUsers },
+    { label: "Messages", to: "/admin/messages", icon: FiClipboard },
+    { label: "Activity", to: "/admin/activity", icon: FiActivity },
+  ],
+  SUPER_ADMIN: [
+    { label: "Dashboard", to: "/admin", icon: FiGrid },
+    { label: "Finance", to: "/admin/finance", icon: FiDollarSign },
+    { label: "Transactions", to: "/admin/transactions", icon: FiClipboard },
+    { label: "Courses", to: "/admin/courses", icon: FiBook },
+    { label: "Classes", to: "/admin/classes", icon: FiLayers },
+    { label: "Students", to: "/admin/students", icon: FiUsers },
+    { label: "Enrolments", to: "/admin/enrolments", icon: FiClipboard },
+    { label: "People", to: "/admin/people", icon: FiUserPlus },
+    { label: "Schedule", to: "/admin/schedule", icon: FiCalendar },
+    { label: "Announcements", to: "/admin/announcements", icon: FiBell },
+    { label: "Resources", to: "/admin/resources", icon: FiLink },
+    { label: "Certificates", to: "/admin/certificates", icon: FiAward },
+    { label: "Live Class", to: "/admin/live-class", icon: FiVideo },
+    { label: "Organisation", to: "/admin/organisation", icon: FiMapPin },
+    { label: "Messages", to: "/admin/messages", icon: FiClipboard },
+    { label: "Activity", to: "/admin/activity", icon: FiActivity },
   ],
 };
 
-export function getRole(pathname: string): Role {
-  return pathname.startsWith('/admin') ? 'admin' : 'student';
-}
-
 const TITLES: { match: RegExp; title: string }[] = [
-  { match: /^\/courses\/[^/]+\/learn$/, title: 'Course Contents' },
-  { match: /^\/courses\/[^/]+$/, title: 'Course Overview' },
-  { match: /^\/messages$/, title: 'Messages' },
-  { match: /^\/dashboard$/, title: 'Dashboard' },
-  { match: /^\/courses$/, title: 'Courses' },
-  { match: /^\/schedule$/, title: 'Schedule' },
-  { match: /^\/instructors$/, title: 'Teachers' },
-  { match: /^\/profile$/, title: 'Profile' },
-  { match: /^\/activity$/, title: 'Activity' },
-  { match: /^\/admin\/courses$/, title: 'Courses' },
-  { match: /^\/admin\/schedule$/, title: 'Schedule' },
-  { match: /^\/admin\/students$/, title: 'Students' },
-  { match: /^\/admin\/resources$/, title: 'Resources' },
-  { match: /^\/admin\/transactions$/, title: 'Transactions' },
-  { match: /^\/admin\/certificates$/, title: 'Certificates' },
-  { match: /^\/admin\/live-class$/, title: '' },
-  { match: /^\/admin$/, title: 'Dashboard' },
+  { match: /^\/courses\/[^/]+\/learn$/, title: "Course Contents" },
+  { match: /^\/courses\/[^/]+$/, title: "Course Overview" },
+  { match: /^\/dashboard$/, title: "Dashboard" },
+  { match: /^\/courses$/, title: "My Course" },
+  { match: /^\/schedule$/, title: "Schedule" },
+  { match: /^\/instructors$/, title: "Teachers" },
+  { match: /^\/messages$/, title: "Messages" },
+  { match: /^\/activity$/, title: "Activity" },
+  { match: /^\/profile$/, title: "Profile" },
+
+  { match: /^\/teacher\/classes$/, title: "My Classes" },
+  { match: /^\/teacher\/content$/, title: "Course Content" },
+  { match: /^\/teacher\/assessments$/, title: "Assessments" },
+  { match: /^\/teacher\/schedule$/, title: "Schedule" },
+  { match: /^\/teacher\/attendance$/, title: "Attendance" },
+  { match: /^\/teacher\/grading$/, title: "Grading" },
+  { match: /^\/teacher\/messages$/, title: "Messages" },
+  { match: /^\/teacher\/activity$/, title: "Activity" },
+  { match: /^\/teacher$/, title: "Teacher Dashboard" },
+
+  { match: /^\/admin\/finance$/, title: "Finance Dashboard" },
+  { match: /^\/admin\/courses$/, title: "Courses" },
+  { match: /^\/admin\/classes$/, title: "Classes" },
+  { match: /^\/admin\/students$/, title: "Students" },
+  { match: /^\/admin\/enrolments$/, title: "Enrolments" },
+  { match: /^\/admin\/people$/, title: "People" },
+  { match: /^\/admin\/schedule$/, title: "Schedule" },
+  { match: /^\/admin\/announcements$/, title: "Announcements" },
+  { match: /^\/admin\/resources$/, title: "Resources" },
+  { match: /^\/admin\/transactions$/, title: "Transactions" },
+  { match: /^\/admin\/certificates$/, title: "Certificates" },
+  { match: /^\/admin\/organisation$/, title: "Organisation" },
+  { match: /^\/admin\/messages$/, title: "Messages" },
+  { match: /^\/admin\/activity$/, title: "Activity" },
+  { match: /^\/admin\/live-class$/, title: "" },
+  { match: /^\/admin$/, title: "Dashboard" },
 ];
 
 export function getPageTitle(pathname: string): string {
-  return TITLES.find((entry) => entry.match.test(pathname))?.title ?? '';
+  return TITLES.find((entry) => entry.match.test(pathname))?.title ?? "";
 }

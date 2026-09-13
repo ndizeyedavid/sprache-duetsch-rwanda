@@ -5,16 +5,17 @@ import { StatusBadge } from '../../components/ui/StatusBadge';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { fetchMe } from '../../lib/auth-store';
+import { useSession } from '../../lib/session';
 import { getFeed, humanize, isoDate, postFeedEvent } from '../../lib/services';
 
 const FILTERS = ['All', 'Announcement', 'Exam', 'Attendance', 'Enrollment', 'Payment', 'Class'] as const;
 
 const POST_TYPES = ['ANNOUNCEMENT', 'CLASS', 'SCHEDULE', 'EXAM', 'LESSON'] as const;
 
+/** Shared activity feed. Staff/teachers additionally get the post composer. */
 export function Activity() {
+  const { user } = useSession();
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>('All');
-  const me = useApi('auth-me', fetchMe);
   const feed = useApi(
     `feed-${filter}`,
     () => getFeed(filter === 'All' ? undefined : filter.toUpperCase()),
@@ -26,7 +27,7 @@ export function Activity() {
   const [postError, setPostError] = useState<string | null>(null);
   const [posting, setPosting] = useState(false);
 
-  const isStaff = me.data ? me.data.role !== 'STUDENT' : false;
+  const isStaff = user ? user.role !== 'STUDENT' : false;
   const events = feed.data ?? [];
 
   async function handlePost(event: FormEvent) {
@@ -131,7 +132,7 @@ export function Activity() {
                     <p className="mt-1 whitespace-pre-wrap text-xs leading-relaxed text-muted">{event.body}</p>
                   ) : null}
                   <p className="mt-1.5 text-[11px] text-muted">
-                    {event.actorName ?? 'Sparch'} · {isoDate(event.createdAt)}
+                    {event.actorName ?? 'Sprache RW'} · {isoDate(event.createdAt)}
                   </p>
                 </div>
                 <StatusBadge status={humanize(event.type)} />

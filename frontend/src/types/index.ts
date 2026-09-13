@@ -1,6 +1,7 @@
 import type { IconType } from 'react-icons';
 
-export type Role = 'student' | 'admin';
+/** Mirrors the backend `Role` enum — one nav entry per real role. */
+export type Role = 'STUDENT' | 'TEACHER' | 'ACADEMIC_ADMIN' | 'FINANCE_ADMIN' | 'SUPER_ADMIN';
 
 export type NavItem = {
   label: string;
