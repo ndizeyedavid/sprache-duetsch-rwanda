@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Logo } from "../ui/Logo";
 import { NAV } from "../../lib/nav";
-import { roleLabel } from "../../lib/roles";
 import type { Role } from "../../types";
 
 type SidebarProps = {
@@ -29,11 +28,8 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-center gap-3 px-6 py-6">
+        <div className="flex items-center justify-center px-6 py-6">
           <Logo size={120} />
-          {/* <span className="rounded-full bg-brand-tint px-2 py-0.5 text-[10px] font-semibold uppercase text-brand">
-            {roleLabel[role]}
-          </span> */}
         </div>
 
         <nav
