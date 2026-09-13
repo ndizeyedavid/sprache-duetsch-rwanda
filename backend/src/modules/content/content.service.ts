@@ -115,7 +115,20 @@ export const listModules = async (levelId: string) => {
   return prisma.module.findMany({
     where: { levelId },
     orderBy: { order: "asc" },
-    include: { _count: { select: { lessons: true } } },
+    include: {
+      _count: { select: { lessons: true } },
+      lessons: {
+        orderBy: { order: "asc" },
+        select: {
+          id: true,
+          title: true,
+          order: true,
+          contentType: true,
+          isPublished: true,
+          estimatedMinutes: true,
+        },
+      },
+    },
   });
 };
 

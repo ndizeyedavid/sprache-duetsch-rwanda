@@ -546,6 +546,57 @@ export const getMySkillProfile = async (userId: string) => {
   return getSkillProfile(profile.studentId);
 };
 
+/** Academic-staff view of one attempt: answers plus the ids needed for manual grading. */
+export const getAttemptDetail = async (attemptId: string) => {
+  const attempt = await prisma.attempt.findUnique({
+    where: { id: attemptId },
+    include: {
+      student: {
+        select: { id: true, studentCode: true, user: { select: { firstName: true, lastName: true } } },
+      },
+      assessment: { select: { id: true, title: true, type: true, levelId: true, passMark: true } },
+      answers: {
+        include: {
+          question: { select: { id: true, prompt: true, type: true, points: true } },
+        },
+      },
+    },
+  });
+  if (!attempt) {
+    throw notFound("Attempt not found");
+  }
+
+  return {
+    id: attempt.id,
+    status: attempt.status,
+    attemptNumber: attempt.attemptNumber,
+    score: attempt.score === null ? null : Number(attempt.score),
+    maxScore: Number(attempt.maxScore),
+    passed: attempt.passed,
+    feedback: attempt.feedback,
+    startedAt: attempt.startedAt,
+    submittedAt: attempt.submittedAt,
+    gradedAt: attempt.gradedAt,
+    student: {
+      id: attempt.student.id,
+      studentCode: attempt.student.studentCode,
+      name: `${attempt.student.user.firstName} ${attempt.student.user.lastName}`.trim(),
+    },
+    assessment: attempt.assessment,
+    answers: attempt.answers.map((answer) => ({
+      id: answer.id,
+      questionId: answer.questionId,
+      prompt: answer.question.prompt,
+      type: answer.question.type,
+      maxPoints: Number(answer.question.points),
+      response: answer.response,
+      isCorrect: answer.isCorrect,
+      pointsAwarded: Number(answer.pointsAwarded),
+      feedback: answer.feedback,
+    })),
+  };
+};
+
 export const gradeAttempt = async (id: string, input: GradeAttemptInput, actorId?: string) => {
   const before = await prisma.attempt.findUnique({
     where: { id },

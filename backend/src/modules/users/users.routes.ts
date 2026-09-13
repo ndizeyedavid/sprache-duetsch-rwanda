@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ACADEMIC_ROLES, ADMIN_ROLES } from "../../lib/roles.js";
+import { ADMIN_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
@@ -25,12 +25,8 @@ usersRouter.get(
 );
 
 // Declared before "/:id" so the literal segment is not swallowed by the param route.
-usersRouter.get(
-  "/teachers",
-  requireAuth,
-  requireRole(...ACADEMIC_ROLES),
-  asyncHandler(controller.listTeachers),
-);
+// Any signed-in user may see the teacher directory (students need it to know who teaches them).
+usersRouter.get("/teachers", requireAuth, asyncHandler(controller.listTeachers));
 
 usersRouter.get(
   "/:id",

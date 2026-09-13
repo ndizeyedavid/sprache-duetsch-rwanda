@@ -207,6 +207,14 @@ assessmentsRouter.get(
   asyncHandler(controller.exportAttemptsCsv),
 );
 
+assessmentsRouter.get(
+  "/attempts/:id",
+  requireAuth,
+  academic,
+  validate({ params: assessmentIdSchema }),
+  asyncHandler(controller.getStaffAttempt),
+);
+
 assessmentsRouter.post(
   "/attempts/:id/grade",
   requireAuth,

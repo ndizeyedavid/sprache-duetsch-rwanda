@@ -117,6 +117,12 @@ export const listAttempts = async (req: Request, res: Response): Promise<void> =
   res.json({ success: true, ...result });
 };
 
+export const getStaffAttempt = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const attempt = await service.getAttemptDetail(id);
+  res.json({ success: true, data: attempt });
+};
+
 export const exportAttemptsCsv = async (req: Request, res: Response): Promise<void> => {
   sendCsv(res, "attempts.csv", await service.exportAttempts(validatedQuery<ListAttemptQuery>(req)));
 };
