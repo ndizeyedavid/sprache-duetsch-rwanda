@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
+import { Logo } from '../components/ui/Logo';
 import { Panel } from '../components/ui/Panel';
 import { StatusBadge } from '../components/ui/StatusBadge';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../components/common/PageState';
@@ -12,8 +13,8 @@ export function VerifyCertificate() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-base-200 px-4 py-10">
       <div className="w-full max-w-md">
-        <Link to="/" className="mb-8 block text-center text-xl font-bold tracking-tight text-ink">
-          Sparch<span className="text-brand">.</span>
+        <Link to="/" className="mb-8 flex justify-center">
+          <Logo size={44} withWordmark wordmarkClassName="text-ink" />
         </Link>
         <Panel>
           <p className="text-[11px] font-semibold uppercase tracking-wide text-brand">
@@ -52,7 +53,7 @@ export function VerifyCertificate() {
             </div>
           )}
         </Panel>
-        <p className="mt-4 text-center text-xs text-muted">© 2025 Sparch Deutsch Rwanda</p>
+        <p className="mt-4 text-center text-xs text-muted">© 2025 Deutsch Sprache RW</p>
       </div>
     </div>
   );

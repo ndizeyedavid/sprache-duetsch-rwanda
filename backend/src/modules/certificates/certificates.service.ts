@@ -282,7 +282,7 @@ export const renderCertificatePdf = async (id: string): Promise<Buffer> => {
     doc.on("error", (error: Error) => reject(error));
   });
 
-  doc.rect(0, 0, 595, 18).fill("#4cbc9a");
+  doc.rect(0, 0, 595, 18).fill("#fb0d00");
   doc.rect(0, 824, 595, 18).fill("#374557");
   doc.moveDown(3);
   doc.fontSize(13).fillColor("#a098ae").text("DEUTSCH SPRACHE RW", { align: "center" });
@@ -297,7 +297,7 @@ export const renderCertificatePdf = async (id: string): Promise<Buffer> => {
   doc.moveDown(0.5);
   doc.fontSize(12).fillColor("#374557").text("has successfully completed", { align: "center" });
   doc.moveDown(0.5);
-  doc.fontSize(18).fillColor("#2f8f73").text(`${certificate.level.code} — ${certificate.level.title}`, { align: "center" });
+  doc.fontSize(18).fillColor("#b30a00").text(`${certificate.level.code} — ${certificate.level.title}`, { align: "center" });
   doc.moveDown(2);
   doc.fontSize(11).fillColor("#374557").text(`Certificate No: ${certificate.certificateNumber}`, { align: "center" });
   doc.text(`Issued: ${certificate.issuedAt.toISOString().slice(0, 10)}`, { align: "center" });

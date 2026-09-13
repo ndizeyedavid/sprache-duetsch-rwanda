@@ -25,13 +25,13 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: "Sparch Deutsch Rwanda",
-        short_name: "Sparch",
+        name: "Deutsch Sprache RW",
+        short_name: "Sprache RW",
         description: "German language e-learning for A1 to B2 levels.",
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff",
-        theme_color: "#4cbc9a",
+        theme_color: "#fb0d00",
         icons: [
           { src: "logo.png", sizes: "any", type: "image/png", purpose: "any" },
         ],

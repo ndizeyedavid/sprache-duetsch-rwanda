@@ -627,9 +627,9 @@ export const renderReceiptPdf = async (
     doc.on("error", (error: Error) => reject(error));
   });
 
-  doc.rect(0, 0, 420, 12).fill("#4cbc9a");
+  doc.rect(0, 0, 420, 12).fill("#fb0d00");
   doc.moveDown(2);
-  doc.fontSize(16).fillColor("#374557").text("Sparch Deutsch Rwanda");
+  doc.fontSize(16).fillColor("#374557").text("Deutsch Sprache RW");
   doc.fontSize(11).fillColor("#a098ae").text("Payment Receipt");
   doc.moveDown();
   doc.fontSize(12).fillColor("#374557").text(`Receipt No: ${receipt.receiptNumber}`);

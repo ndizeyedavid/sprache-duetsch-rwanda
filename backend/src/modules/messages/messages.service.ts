@@ -18,7 +18,7 @@ const senderName = async (userId: string): Promise<string> => {
     where: { id: userId },
     select: { firstName: true, lastName: true },
   });
-  return user ? `${user.firstName} ${user.lastName}`.trim() : "Sparch";
+  return user ? `${user.firstName} ${user.lastName}`.trim() : "Sprache RW";
 };
 
 const assertMembership = async (conversationId: string, userId: string) => {
