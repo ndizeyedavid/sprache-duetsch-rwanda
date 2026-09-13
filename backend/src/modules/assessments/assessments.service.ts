@@ -6,6 +6,7 @@ import {
   assertPaymentAccess,
   loadStudentAccessProfile,
 } from "../../lib/access.js";
+import { emitActivity } from "../activity/activity.service.js";
 import { writeAudit } from "../../lib/audit.js";
 import { badRequest, conflict, forbidden, notFound } from "../../lib/http-error.js";
 import { buildPaginated, parsePagination } from "../../lib/pagination.js";
@@ -300,6 +301,7 @@ export const createAssessment = async (input: CreateAssessmentInput, actorId?: s
       data: {
         levelId: input.levelId,
         lessonId: input.lessonId ?? null,
+        prerequisiteLessonId: input.prerequisiteLessonId ?? null,
         title: input.title,
         description: input.description ?? null,
         type: input.type,
@@ -350,6 +352,7 @@ export const updateAssessment = async (
   const data: Prisma.AssessmentUncheckedUpdateInput = {
     levelId: input.levelId,
     lessonId: input.lessonId,
+    prerequisiteLessonId: input.prerequisiteLessonId,
     title: input.title,
     description: input.description,
     type: input.type,
@@ -473,6 +476,76 @@ export const listAttempts = async (query: ListAttemptQuery) => {
   return buildPaginated(rows, total, pagination);
 };
 
+export const exportAttempts = async (query: ListAttemptQuery) => {
+  const where: Prisma.AttemptWhereInput = {};
+  if (query.assessmentId) {
+    where.assessmentId = query.assessmentId;
+  }
+  if (query.studentId) {
+    where.studentId = query.studentId;
+  }
+  if (query.status) {
+    where.status = query.status;
+  }
+
+  const rows = await prisma.attempt.findMany({
+    where,
+    orderBy: { startedAt: "desc" },
+    take: 5000,
+    include: {
+      student: {
+        select: { studentCode: true, user: { select: { firstName: true, lastName: true } } },
+      },
+      assessment: { select: { id: true, title: true } },
+    },
+  });
+
+  return rows.map((row) => ({
+    startedAt: row.startedAt.toISOString(),
+    studentCode: row.student.studentCode,
+    studentName: `${row.student.user.firstName} ${row.student.user.lastName}`.trim(),
+    assessment: row.assessment.title,
+    status: row.status,
+    score: row.score?.toString() ?? "",
+    maxScore: row.maxScore.toString(),
+    passed: row.passed === null ? "" : String(row.passed),
+    submittedAt: row.submittedAt?.toISOString() ?? "",
+    gradedAt: row.gradedAt?.toISOString() ?? "",
+  }));
+};
+
+export const getSkillProfile = async (studentId: string) => {
+  const answers = await prisma.answer.findMany({
+    where: { attempt: { studentId, score: { not: null } } },
+    select: {
+      pointsAwarded: true,
+      question: { select: { skill: true, points: true } },
+    },
+  });
+
+  const bySkill = new Map<string, { answered: number; earned: number; possible: number }>();
+  for (const answer of answers) {
+    const entry = bySkill.get(answer.question.skill) ?? { answered: 0, earned: 0, possible: 0 };
+    entry.answered += 1;
+    entry.earned += Number(answer.pointsAwarded ?? 0);
+    entry.possible += Number(answer.question.points);
+    bySkill.set(answer.question.skill, entry);
+  }
+
+  return [...bySkill.entries()]
+    .map(([skill, stats]) => ({
+      skill,
+      ...stats,
+      percentage: stats.possible > 0 ? Math.round((stats.earned / stats.possible) * 100) : 0,
+    }))
+    .sort((a, b) => a.skill.localeCompare(b.skill));
+};
+
+export const getMySkillProfile = async (userId: string) => {
+  const profile = await loadStudentAccessProfile(userId);
+  return getSkillProfile(profile.studentId);
+};
+
 export const gradeAttempt = async (id: string, input: GradeAttemptInput, actorId?: string) => {
   const before = await prisma.attempt.findUnique({
     where: { id },
@@ -538,6 +611,19 @@ export const gradeAttempt = async (id: string, input: GradeAttemptInput, actorId
     entityId: attempt.id,
     before,
     after: attempt,
+  });
+
+  const gradedAssessment = await prisma.assessment.findUnique({
+    where: { id: before.assessmentId },
+    select: { title: true, levelId: true },
+  });
+  await emitActivity({
+    actorId,
+    type: "EXAM",
+    title: `Attempt graded: ${gradedAssessment?.title ?? "exam"}`,
+    body: `Score ${score}/${maxScore} — ${passed ? "passed" : "not passed"}.`,
+    levelId: gradedAssessment?.levelId ?? null,
+    studentId: before.studentId,
   });
 
   return attempt;
@@ -678,6 +764,7 @@ export const startAttempt = async (userId: string, assessmentId: string) => {
       maxAttempts: true,
       availableFrom: true,
       availableUntil: true,
+      prerequisiteLessonId: true,
       questions: { select: { points: true, question: { select: { points: true } } } },
     },
   });
@@ -689,6 +776,21 @@ export const startAttempt = async (userId: string, assessmentId: string) => {
   await assertLevelAccess(userId, assessment.levelId);
   const profile = await loadStudentAccessProfile(userId);
   assertPaymentAccess(profile, "ASSESSMENT");
+
+  if (assessment.prerequisiteLessonId) {
+    const prerequisite = await prisma.lessonProgress.findUnique({
+      where: {
+        studentId_lessonId: {
+          studentId: profile.studentId,
+          lessonId: assessment.prerequisiteLessonId,
+        },
+      },
+      select: { status: true },
+    });
+    if (prerequisite?.status !== "COMPLETED") {
+      throw forbidden("Complete the prerequisite lesson before starting this assessment");
+    }
+  }
 
   const now = new Date();
   if (assessment.availableFrom && now < assessment.availableFrom) {
@@ -842,6 +944,12 @@ export const submitAttempt = async (
   const percentage = maxScore > 0 ? (score / maxScore) * 100 : 0;
   const now = new Date();
 
+  const submittedAssessment = await prisma.assessment.findUnique({
+    where: { id: attempt.assessment.id },
+    select: { title: true },
+  });
+  const submittedTitle = submittedAssessment?.title ?? "exam";
+
   if (hasSubjective) {
     const updated = await prisma.attempt.update({
       where: { id: attemptId },
@@ -858,6 +966,15 @@ export const submitAttempt = async (
       entityType: "Attempt",
       entityId: attemptId,
       after: updated,
+    });
+
+    await emitActivity({
+      actorId: userId,
+      type: "EXAM",
+      title: `Exam submitted: ${submittedTitle}`,
+      body: "Awaiting manual grading.",
+      levelId: attempt.assessment.levelId,
+      studentId: attempt.studentId,
     });
 
     return { status: "SUBMITTED", message: "Awaiting manual grading" };
@@ -881,6 +998,15 @@ export const submitAttempt = async (
     entityType: "Attempt",
     entityId: attemptId,
     after: updated,
+  });
+
+  await emitActivity({
+    actorId: userId,
+    type: "EXAM",
+    title: `Exam auto-graded: ${submittedTitle}`,
+    body: `Score ${score}/${maxScore} — ${passed ? "passed" : "not passed"}.`,
+    levelId: attempt.assessment.levelId,
+    studentId: attempt.studentId,
   });
 
   return {

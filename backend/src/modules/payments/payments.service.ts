@@ -1,5 +1,7 @@
+import PDFDocument from "pdfkit";
 import { Prisma } from "../../generated/prisma/client.js";
 import type { Role } from "../../generated/prisma/client.js";
+import { emitActivity } from "../activity/activity.service.js";
 import { writeAudit } from "../../lib/audit.js";
 import { recalculateStudentFinance } from "../../lib/finance.js";
 import { badRequest, conflict, forbidden, notFound } from "../../lib/http-error.js";
@@ -548,18 +550,30 @@ export const createPayment = async (input: CreatePaymentInput, actorId?: string)
     after: payment,
   });
 
+  await emitActivity({
+    actorId,
+    type: "PAYMENT",
+    title: `Payment of ${payment.amount.toString()} ${payment.currency} recorded`,
+    body: payment.reference ? `Reference ${payment.reference}.` : null,
+    studentId: input.studentId,
+  });
+
   return payment;
 };
 
-export const listPayments = async (query: ListPaymentsQuery) => {
-  const pagination = parsePagination(query);
-
+const paymentListWhere = (query: ListPaymentsQuery): Prisma.PaymentWhereInput => {
   const where: Prisma.PaymentWhereInput = {};
   if (query.studentId) where.studentId = query.studentId;
   if (query.enrollmentId) where.enrollmentId = query.enrollmentId;
   if (query.methodId) where.methodId = query.methodId;
   if (query.txnType) where.txnType = query.txnType;
   where.paidAt = dateFilter(query.from, query.to);
+  return where;
+};
+
+export const listPayments = async (query: ListPaymentsQuery) => {
+  const pagination = parsePagination(query);
+  const where = paymentListWhere(query);
 
   const [rows, total] = await prisma.$transaction([
     prisma.payment.findMany({
@@ -573,6 +587,67 @@ export const listPayments = async (query: ListPaymentsQuery) => {
   ]);
 
   return buildPaginated(rows, total, pagination);
+};
+
+export const exportPayments = async (query: ListPaymentsQuery) => {
+  const rows = await prisma.payment.findMany({
+    where: paymentListWhere(query),
+    orderBy: { paidAt: "desc" },
+    take: 5000,
+    include: paymentInclude,
+  });
+
+  return rows.map((row) => ({
+    paidAt: row.paidAt.toISOString(),
+    studentCode: row.student.studentCode,
+    studentName: `${row.student.user.firstName} ${row.student.user.lastName}`.trim(),
+    amount: row.amount.toString(),
+    currency: row.currency,
+    txnType: row.txnType,
+    method: row.method.name,
+    reference: row.reference ?? "",
+    receiptNumber: row.receipt?.receiptNumber ?? "",
+    notes: row.notes ?? "",
+  }));
+};
+
+export const renderReceiptPdf = async (
+  id: string,
+  user: { id: string; role: Role },
+): Promise<{ filename: string; pdf: Buffer }> => {
+  const receipt = await getReceipt(id, user);
+  const name =
+    `${receipt.payment.student.user.firstName} ${receipt.payment.student.user.lastName}`.trim();
+
+  const doc = new PDFDocument({ size: "A5", margin: 48 });
+  const chunks: Buffer[] = [];
+  const done = new Promise<Buffer>((resolve, reject) => {
+    doc.on("data", (chunk: Buffer) => chunks.push(chunk));
+    doc.on("end", () => resolve(Buffer.concat(chunks)));
+    doc.on("error", (error: Error) => reject(error));
+  });
+
+  doc.rect(0, 0, 420, 12).fill("#4cbc9a");
+  doc.moveDown(2);
+  doc.fontSize(16).fillColor("#374557").text("Sparch Deutsch Rwanda");
+  doc.fontSize(11).fillColor("#a098ae").text("Payment Receipt");
+  doc.moveDown();
+  doc.fontSize(12).fillColor("#374557").text(`Receipt No: ${receipt.receiptNumber}`);
+  doc.text(`Date: ${receipt.issuedAt.toISOString().slice(0, 10)}`);
+  doc.moveDown();
+  doc.text(`Received from: ${name} (${receipt.payment.student.studentCode})`);
+  doc.text(`Amount: ${receipt.payment.amount.toString()} ${receipt.payment.currency}`);
+  doc.text(`Method: ${receipt.payment.method.name}`);
+  doc.text(`Reference: ${receipt.payment.reference ?? "—"}`);
+  if (receipt.notes) {
+    doc.moveDown();
+    doc.fontSize(10).fillColor("#a098ae").text(receipt.notes);
+  }
+  doc.moveDown(2);
+  doc.fontSize(10).fillColor("#a098ae").text("Murakoze! Thank you for your payment.");
+  doc.end();
+
+  return { filename: `receipt-${receipt.receiptNumber}.pdf`, pdf: await done };
 };
 
 export const getPayment = async (id: string) => {

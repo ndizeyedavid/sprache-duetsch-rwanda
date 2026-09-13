@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { sendCsv } from "../../lib/csv.js";
 import { unauthorized } from "../../lib/http-error.js";
 import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
 import type {
@@ -153,4 +154,12 @@ export const attendanceSummary = async (req: Request, res: Response): Promise<vo
 export const myAttendance = async (req: Request, res: Response): Promise<void> => {
   const data = await service.getMyAttendance(currentUserId(req));
   res.json({ success: true, data });
+};
+
+export const exportAttendanceCsv = async (req: Request, res: Response): Promise<void> => {
+  const rows = await service.exportAttendance(validatedQuery<AttendanceSummaryQuery>(req), {
+    id: currentUserId(req),
+    role: req.user?.role ?? "STUDENT",
+  });
+  sendCsv(res, "attendance.csv", rows);
 };

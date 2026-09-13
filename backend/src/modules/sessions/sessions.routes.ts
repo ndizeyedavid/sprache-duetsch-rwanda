@@ -145,6 +145,14 @@ attendanceRouter.get(
 );
 
 attendanceRouter.get(
+  "/export",
+  requireAuth,
+  requireRole(...STAFF_ROLES),
+  validate({ query: attendanceSummaryQuerySchema }),
+  asyncHandler(controller.exportAttendanceCsv),
+);
+
+attendanceRouter.get(
   "/me",
   requireAuth,
   requireRole("STUDENT"),

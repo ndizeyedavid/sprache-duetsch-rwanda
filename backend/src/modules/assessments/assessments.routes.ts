@@ -12,6 +12,7 @@ import {
   gradeAttemptSchema,
   listAssessmentQuerySchema,
   listAttemptQuerySchema,
+  skillProfileQuerySchema,
   listQuestionQuerySchema,
   myAssessmentsQuerySchema,
   replaceAssessmentQuestionsSchema,
@@ -73,6 +74,21 @@ assessmentsRouter.get(
   requireRole("STUDENT"),
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.getMyAttempt),
+);
+
+assessmentsRouter.get(
+  "/my/skills",
+  requireAuth,
+  requireRole("STUDENT"),
+  asyncHandler(controller.mySkills),
+);
+
+assessmentsRouter.get(
+  "/skills",
+  requireAuth,
+  academic,
+  validate({ query: skillProfileQuerySchema }),
+  asyncHandler(controller.studentSkills),
 );
 
 // ---------------------------------------------------------------------------
@@ -181,6 +197,14 @@ assessmentsRouter.get(
   academic,
   validate({ query: listAttemptQuerySchema }),
   asyncHandler(controller.listAttempts),
+);
+
+assessmentsRouter.get(
+  "/attempts/export",
+  requireAuth,
+  academic,
+  validate({ query: listAttemptQuerySchema }),
+  asyncHandler(controller.exportAttemptsCsv),
 );
 
 assessmentsRouter.post(

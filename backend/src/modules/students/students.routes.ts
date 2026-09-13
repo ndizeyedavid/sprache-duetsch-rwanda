@@ -33,6 +33,14 @@ studentsRouter.get(
 );
 
 studentsRouter.get(
+  "/export",
+  requireAuth,
+  requireRole(...STAFF_ROLES),
+  validate({ query: listStudentsQuerySchema }),
+  asyncHandler(controller.exportCsv),
+);
+
+studentsRouter.get(
   "/:id",
   requireAuth,
   requireRole(...STAFF_ROLES),

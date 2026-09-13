@@ -1,5 +1,6 @@
 import type { Prisma, AttendanceStatus, Role } from "../../generated/prisma/client.js";
 import { assertTeacherOwnsClass, loadStudentAccessProfile } from "../../lib/access.js";
+import { emitActivity } from "../activity/activity.service.js";
 import { writeAudit } from "../../lib/audit.js";
 import { env } from "../../config/env.js";
 import { badRequest, forbidden, notFound } from "../../lib/http-error.js";
@@ -570,6 +571,14 @@ export const markAttendance = async (
     studentUserIds,
   );
 
+  await emitActivity({
+    actorId,
+    type: "ATTENDANCE",
+    title: `Attendance marked for ${session.title}`,
+    body: `${input.records.length} student records in ${session.classGroup.name}.`,
+    classGroupId: session.classGroupId,
+  });
+
   return { sessionId, marked: input.records.length };
 };
 
@@ -690,6 +699,60 @@ export const getAttendanceSummary = async (
   return [...grouped.entries()]
     .map(([studentId, statuses]) => ({ studentId, ...countAttendance(statuses) }))
     .sort((a, b) => a.studentId.localeCompare(b.studentId));
+};
+
+export const exportAttendance = async (
+  query: AttendanceSummaryQuery,
+  actor: { id: string; role: Role },
+) => {
+  const where: Prisma.AttendanceWhereInput = {};
+
+  const sessionWhere: Prisma.ClassSessionWhereInput = {};
+  if (query.classGroupId) sessionWhere.classGroupId = query.classGroupId;
+  if (query.from || query.to) sessionWhere.startAt = { gte: query.from, lte: query.to };
+  if (Object.keys(sessionWhere).length > 0) {
+    where.session = sessionWhere;
+  }
+  if (query.studentId) {
+    where.studentId = query.studentId;
+  } else if (actor.role === "STUDENT") {
+    const student = await prisma.student.findUnique({
+      where: { userId: actor.id },
+      select: { id: true },
+    });
+    if (!student) {
+      throw notFound("Student profile not found");
+    }
+    where.studentId = student.id;
+  }
+
+  const rows = await prisma.attendance.findMany({
+    where,
+    orderBy: { session: { startAt: "desc" } },
+    take: 5000,
+    include: {
+      student: {
+        select: { studentCode: true, user: { select: { firstName: true, lastName: true } } },
+      },
+      session: {
+        select: {
+          title: true,
+          startAt: true,
+          classGroup: { select: { name: true } },
+        },
+      },
+    },
+  });
+
+  return rows.map((row) => ({
+    date: row.session.startAt.toISOString(),
+    classGroup: row.session.classGroup.name,
+    session: row.session.title,
+    studentCode: row.student.studentCode,
+    studentName: `${row.student.user.firstName} ${row.student.user.lastName}`.trim(),
+    status: row.status,
+    note: row.note ?? "",
+  }));
 };
 
 export const getMyAttendance = async (userId: string) => {

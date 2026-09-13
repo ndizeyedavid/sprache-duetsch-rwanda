@@ -78,6 +78,7 @@ export const assessmentQuestionInputSchema = z.object({
 export const createAssessmentSchema = z.object({
   levelId: z.string().min(1),
   lessonId: z.string().min(1).nullable().optional(),
+  prerequisiteLessonId: z.string().min(1).nullable().optional(),
   title: z.string().trim().min(2).max(200),
   description: optionalText(2000),
   type: assessmentTypeSchema,
@@ -146,6 +147,10 @@ export const submitAttemptSchema = z.object({
 
 export const assessmentIdSchema = idParam;
 
+export const skillProfileQuerySchema = z.object({
+  studentId: z.string().min(1),
+});
+
 export type CreateQuestionInput = z.infer<typeof createQuestionSchema>;
 export type UpdateQuestionInput = z.infer<typeof updateQuestionSchema>;
 export type ListQuestionQuery = z.infer<typeof listQuestionQuerySchema>;
@@ -156,5 +161,6 @@ export type ReplaceAssessmentQuestionsInput = z.infer<typeof replaceAssessmentQu
 export type ListAssessmentQuery = z.infer<typeof listAssessmentQuerySchema>;
 export type MyAssessmentsQuery = z.infer<typeof myAssessmentsQuerySchema>;
 export type ListAttemptQuery = z.infer<typeof listAttemptQuerySchema>;
+export type SkillProfileQuery = z.infer<typeof skillProfileQuerySchema>;
 export type GradeAttemptInput = z.infer<typeof gradeAttemptSchema>;
 export type SubmitAttemptInput = z.infer<typeof submitAttemptSchema>;

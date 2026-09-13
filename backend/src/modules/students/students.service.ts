@@ -239,9 +239,7 @@ export const getMyProgress = async (userId: string) => {
   };
 };
 
-export const listStudents = async (query: ListStudentsQuery) => {
-  const pagination = parsePagination(query);
-
+const studentListWhere = (query: ListStudentsQuery): Prisma.StudentWhereInput => {
   const where: Prisma.StudentWhereInput = {};
   if (query.campusId) where.campusId = query.campusId;
   if (query.intakeId) where.intakeId = query.intakeId;
@@ -256,6 +254,12 @@ export const listStudents = async (query: ListStudentsQuery) => {
       { user: { lastName: { contains: query.search, mode: "insensitive" } } },
     ];
   }
+  return where;
+};
+
+export const listStudents = async (query: ListStudentsQuery) => {
+  const pagination = parsePagination(query);
+  const where = studentListWhere(query);
 
   const [rows, total] = await prisma.$transaction([
     prisma.student.findMany({
@@ -275,6 +279,39 @@ export const listStudents = async (query: ListStudentsQuery) => {
   ]);
 
   return buildPaginated(rows, total, pagination);
+};
+
+export const exportStudents = async (query: ListStudentsQuery) => {
+  const rows = await prisma.student.findMany({
+    where: studentListWhere(query),
+    orderBy: { createdAt: "desc" },
+    take: 5000,
+    include: {
+      user: { select: safeUserSelect },
+      campus: { select: { name: true } },
+      intake: { select: { name: true } },
+      currentLevel: { select: { code: true } },
+      finance: true,
+    },
+  });
+
+  return rows.map((row) => ({
+    studentCode: row.studentCode,
+    firstName: row.user.firstName,
+    lastName: row.user.lastName,
+    email: row.user.email,
+    phone: row.user.phone ?? "",
+    status: row.status,
+    shift: row.shift,
+    campus: row.campus?.name ?? "",
+    intake: row.intake?.name ?? "",
+    currentLevel: row.currentLevel?.code ?? "",
+    totalDue: row.finance?.totalDue.toString() ?? "0",
+    totalPaid: row.finance?.totalPaid.toString() ?? "0",
+    balance: row.finance?.balance.toString() ?? "0",
+    financeStatus: row.finance?.status ?? "",
+    createdAt: row.createdAt.toISOString(),
+  }));
 };
 
 export const getStudent = async (id: string) => {

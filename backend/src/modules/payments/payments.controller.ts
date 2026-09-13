@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { sendCsv } from "../../lib/csv.js";
 import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
 import type {
   CreateChargeInput,
@@ -172,6 +173,19 @@ export const getReceipt = async (req: Request, res: Response): Promise<void> => 
   const user = req.user!;
   const receipt = await service.getReceipt(id, { id: user.id, role: user.role });
   res.json({ success: true, data: receipt });
+};
+
+export const receiptPdf = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const user = req.user!;
+  const { filename, pdf } = await service.renderReceiptPdf(id, { id: user.id, role: user.role });
+  res.setHeader("Content-Type", "application/pdf");
+  res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
+  res.send(pdf);
+};
+
+export const exportPaymentsCsv = async (req: Request, res: Response): Promise<void> => {
+  sendCsv(res, "payments.csv", await service.exportPayments(validatedQuery<ListPaymentsQuery>(req)));
 };
 
 // --- Student self-service ---

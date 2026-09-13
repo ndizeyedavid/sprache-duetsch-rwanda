@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { sendCsv } from "../../lib/csv.js";
 import { unauthorized } from "../../lib/http-error.js";
 import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
 import type { ListStudentsQuery, PlacementInput, UpdateStudentInput } from "./students.schema.js";
@@ -30,6 +31,10 @@ export const myProgress = async (req: Request, res: Response): Promise<void> => 
 export const list = async (req: Request, res: Response): Promise<void> => {
   const result = await service.listStudents(validatedQuery<ListStudentsQuery>(req));
   res.json({ success: true, ...result });
+};
+
+export const exportCsv = async (req: Request, res: Response): Promise<void> => {
+  sendCsv(res, "students.csv", await service.exportStudents(validatedQuery<ListStudentsQuery>(req)));
 };
 
 export const get = async (req: Request, res: Response): Promise<void> => {

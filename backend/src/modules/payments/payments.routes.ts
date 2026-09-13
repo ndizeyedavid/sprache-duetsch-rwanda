@@ -166,6 +166,13 @@ paymentsRouter.get(
   asyncHandler(controller.getReceipt),
 );
 
+paymentsRouter.get(
+  "/receipts/:id/pdf",
+  requireRole(...FINANCE_ROLES, "STUDENT"),
+  validate({ params: receiptIdSchema }),
+  asyncHandler(controller.receiptPdf),
+);
+
 // --- Student self-service ---
 
 paymentsRouter.get(
@@ -204,6 +211,13 @@ paymentsRouter.post(
   requireRole(...FINANCE_ROLES),
   validate({ body: runRemindersSchema }),
   asyncHandler(controller.runReminders),
+);
+
+paymentsRouter.get(
+  "/export",
+  requireRole(...FINANCE_ROLES),
+  validate({ query: listPaymentsQuerySchema }),
+  asyncHandler(controller.exportPaymentsCsv),
 );
 
 // --- Single payment (keep after all literal single-segment paths) ---

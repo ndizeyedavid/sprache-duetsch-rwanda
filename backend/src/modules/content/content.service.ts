@@ -602,6 +602,9 @@ export const getStudentLesson = async (userId: string, lessonId: string) => {
       select: { status: true },
     });
     lockedByPrerequisite = prerequisite?.status !== "COMPLETED";
+    if (lockedByPrerequisite) {
+      throw forbidden("Complete the prerequisite lesson first");
+    }
   }
 
   return {
@@ -620,13 +623,28 @@ export const upsertLessonProgress = async (
 ) => {
   const lesson = await prisma.lesson.findUnique({
     where: { id: lessonId },
-    select: { module: { select: { levelId: true } } },
+    select: { prerequisiteLessonId: true, module: { select: { levelId: true } } },
   });
   if (!lesson) {
     throw notFound("Lesson not found");
   }
   await assertLevelAccess(userId, lesson.module.levelId);
   const profile = await loadStudentAccessProfile(userId);
+
+  if (input.status === "COMPLETED" && lesson.prerequisiteLessonId) {
+    const prerequisite = await prisma.lessonProgress.findUnique({
+      where: {
+        studentId_lessonId: {
+          studentId: profile.studentId,
+          lessonId: lesson.prerequisiteLessonId,
+        },
+      },
+      select: { status: true },
+    });
+    if (prerequisite?.status !== "COMPLETED") {
+      throw forbidden("Complete the prerequisite lesson first");
+    }
+  }
 
   const completedAt = input.status === "COMPLETED" ? new Date() : null;
 

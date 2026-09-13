@@ -1,4 +1,5 @@
 import { Prisma } from "../../generated/prisma/client.js";
+import { emitActivity } from "../activity/activity.service.js";
 import { writeAudit } from "../../lib/audit.js";
 import { recalculateStudentFinance } from "../../lib/finance.js";
 import { badRequest, conflict, notFound } from "../../lib/http-error.js";
@@ -226,6 +227,16 @@ export const createEnrollment = async (input: CreateEnrollmentInput, actorId?: s
     entityType: "Enrollment",
     entityId: enrollment.id,
     after: enrollment,
+  });
+
+  await emitActivity({
+    actorId,
+    type: "ENROLLMENT",
+    title: `New enrolment in ${level.title}`,
+    body: `Enrolled for intake ${intake.code}.`,
+    levelId: input.levelId,
+    classGroupId: input.classGroupId ?? null,
+    studentId: input.studentId,
   });
 
   return enrollment;

@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { sendCsv } from "../../lib/csv.js";
 import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
 import type {
   CreateAssessmentInput,
@@ -9,6 +10,7 @@ import type {
   ListQuestionQuery,
   MyAssessmentsQuery,
   ReplaceAssessmentQuestionsInput,
+  SkillProfileQuery,
   SubmitAttemptInput,
   UpdateAssessmentInput,
   UpdateQuestionInput,
@@ -113,6 +115,21 @@ export const replaceAssessmentQuestions = async (
 export const listAttempts = async (req: Request, res: Response): Promise<void> => {
   const result = await service.listAttempts(validatedQuery<ListAttemptQuery>(req));
   res.json({ success: true, ...result });
+};
+
+export const exportAttemptsCsv = async (req: Request, res: Response): Promise<void> => {
+  sendCsv(res, "attempts.csv", await service.exportAttempts(validatedQuery<ListAttemptQuery>(req)));
+};
+
+export const mySkills = async (req: Request, res: Response): Promise<void> => {
+  const skills = await service.getMySkillProfile(req.user!.id);
+  res.json({ success: true, data: skills });
+};
+
+export const studentSkills = async (req: Request, res: Response): Promise<void> => {
+  const { studentId } = validatedQuery<SkillProfileQuery>(req);
+  const skills = await service.getSkillProfile(studentId);
+  res.json({ success: true, data: skills });
 };
 
 export const gradeAttempt = async (req: Request, res: Response): Promise<void> => {
