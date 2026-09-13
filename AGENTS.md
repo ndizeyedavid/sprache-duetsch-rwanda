@@ -1,25 +1,86 @@
 # AGENTS.md — Sparch Duetsch Rwanda (Deutsch Sprache RW E-Learning)
 
-Greenfield repo. `frontend/` is a Vite scaffold; `backend/` is empty (`.gitkeep` only). Follow the Phase 1 MVP order below; do not scaffold everything at once.
+`frontend/` is a Vite scaffold. `backend/` is a working Express + TypeScript + Prisma + PostgreSQL API (**Phase 1 MVP complete**). Phase 2+ work follows the build order at the bottom.
 
 ## Layout & entrypoints
 
 - `frontend/src/main.tsx` → `App.tsx` (currently empty placeholder), `index.css`.
-- `backend/` has no code yet — new Express + TypeScript API goes here (see `express-typescript` skill in `.agents/skills/`).
+- `backend/src/server.ts` → `app.ts` → `routes.ts` (mounts every module router under `/api`). Entrypoints below.
 - UI components must use the `daisyui` skill in `.agents/skills/`. No other component library.
+- Backend follows the `express-typescript` skill in `.agents/skills/`.
 
-## Commands (run in `frontend/`; no root scripts, no tests yet)
+### Backend entrypoints
+
+- `src/server.ts` — listen + graceful shutdown; `src/app.ts` — helmet/cors/compression/JSON/cookies/pino-http/rate-limit + error handler; `src/routes.ts` — `apiRouter` (mounted at `/api`), `/health` included.
+- `src/config/env.ts` — the only place `process.env` is read (Zod-validated).
+- `src/lib/prisma.ts` — `PrismaClient` with the `@prisma/adapter-pg` driver adapter.
+- `prisma/schema.prisma` — domain model (31 models / 25 enums); `prisma/seed.ts` — idempotent demo seed.
+- Generated client lives at `src/generated/prisma` and is **gitignored** — run `npm run db:generate` after a fresh clone.
+
+## Commands
+
+### `frontend/`
 
 - `npm run dev` — Vite dev server.
 - `npm run build` — always `tsc -b && vite build`; fix TS errors before debugging Vite output.
 - `npm run lint` — `eslint .` (`dist/` is globally ignored).
 - `npm run preview` — serve a production build locally.
 
+### `backend/`
+
+- `npm run dev` — `tsx watch src/server.ts` (API on `http://localhost:4000/api`).
+- `npm run typecheck` / `npm run lint` — must both exit 0 before pushing.
+- `npm run build` → `npm start` — compile to `dist/` and run.
+- `npm run db:generate` — regenerate the Prisma client after schema edits.
+- `npm run db:migrate` — create/apply a dev migration; `npm run db:deploy` applies existing ones.
+- `npm run db:seed` — reseed (safe to re-run); `npm run db:reset` — wipe + re-migrate + reseed; `npm run db:studio` — browse data.
+- `npm run test` — Vitest (no tests written yet).
+
+**Local database (no Docker needed):** PostgreSQL 17 runs natively. `DATABASE_URL=postgresql://sparch:sparch_dev@localhost:5432/sparch_rw?schema=public` in `backend/.env`. `psql.exe` lives at `C:\Program Files\PostgreSQL\17\bin\psql.exe` (not on PATH). `docker-compose.yml` exists but is unused.
+
+**Seeded logins (dev only):** `admin@sparch.rw` / `Admin123!` (Super Admin), `academic@sparch.rw` / `Academic123!`, `finance@sparch.rw` / `Finance123!`, `clarisse@sparch.rw` / `Teacher123!`, `nella@student.sparch.rw` / `Student123!`.
+
 ## Frontend quirks (verified, do not change pattern)
 
 - Tailwind v4 via `@tailwindcss/vite` plugin, not v3 config: `src/index.css` uses `@import "tailwindcss";` + `@plugin "daisyui" { themes: light --default; }`. Keep this; add themes only inside that block.
 - Stack: React 19, Vite 7, `typescript ~5.9`, `verbatimModuleSyntax: true` (use `import type`), `erasableSyntaxOnly: true` (no enums/namespaces), `noUnusedLocals`/`noUnusedParameters: true`, `jsx: react-jsx`, `moduleResolution: bundler`.
 - No router, state, or fetch library installed yet. Propose before adding one.
+
+## Backend quirks (verified, do not change pattern)
+
+- **Prisma 7 is Rust-free and needs a driver adapter.** `src/lib/prisma.ts` builds `new PrismaClient({ adapter: new PrismaPg({ connectionString: env.DATABASE_URL }) })`. The CLI reads `prisma7.config.ts` (**not** `prisma.config.ts`) — `migrations.seed` there is what makes `prisma db seed` work.
+- The `prisma-client` generator **requires `output`** → `src/generated/prisma` (gitignored). Import types/enums from `src/generated/prisma/client.js`.
+- ESM + `NodeNext` + `verbatimModuleSyntax`: **every relative import needs the `.js` extension**, and type-only imports must use `import type`.
+- ESM interop: `jsonwebtoken` is CJS — use `import jwt from "jsonwebtoken"` + `jwt.sign`/`jwt.verify`, never named imports.
+- `erasableSyntaxOnly`: no TS `enum`, no namespaces. Enums come from Prisma; shared role groups live in `src/lib/roles.ts`.
+- Each module is `x.schema.ts` (Zod) → `x.service.ts` (Prisma) → `x.controller.ts` (thin handlers) → `x.routes.ts` (exported router). Adding a module means: create the folder, then mount it in `src/routes.ts`.
+- Validation goes through `validate({ body, query, params })`; controllers read values with `validatedBody/validatedQuery/validatedParams` from `src/lib/request.ts`.
+- Responses are enveloped: `{ success: true, data }` or `{ success: true, ...buildPaginated(...) }`. Errors are thrown as `AppError` helpers from `src/lib/http-error.ts`.
+- Access control: `requireAuth` + `requireRole(...GROUPS)` middleware inside each router. Student scope is enforced by `src/lib/access.ts` (`assertLevelAccess`, `assertPaymentAccess`, `assertTeacherOwnsClass`).
+- **Money is `Prisma.Decimal`, never JS floats.** Balances have one writer only: `recalculateStudentFinance(client, studentId)` in `src/lib/finance.ts`. Any charge/discount/payment/refund mutation must call it.
+- Admin/finance mutations write an audit row via `writeAudit` (`src/lib/audit.ts`). Never store card data.
+- `src/lib/query.ts` holds the shared query validators (`paginationQuery`, `booleanQuery`, `idParam`) — reuse instead of re-declaring.
+- `tsconfig.json` covers `src/` only (the build). `tsconfig.eslint.json` adds `prisma/**` + `prisma7.config.ts` for typed linting — update it if you add root-level TS.
+
+### Backend module map (all mounted in `src/routes.ts`)
+
+| Mount                | Folder                  | Purpose                                                             |
+| -------------------- | ----------------------- | ------------------------------------------------------------------- |
+| `/api/auth`          | `modules/auth`          | register, login, refresh, logout, me, password reset/change         |
+| `/api/campuses`      | `modules/campuses`      | campuses (reference module — copy this shape)                       |
+| `/api/levels`        | `modules/levels`        | A1–B2 + specialised levels                                          |
+| `/api/intakes`       | `modules/intakes`       | intakes / academic periods                                          |
+| `/api/classes`       | `modules/classes`       | class groups + roster                                               |
+| `/api/users`         | `modules/users`         | staff accounts + roles                                              |
+| `/api/students`      | `modules/students`      | profiles, placement, own progress/attendance                        |
+| `/api/enrollments`   | `modules/enrollments`   | student + level + intake + class + tuition charge                   |
+| `/api/content`       | `modules/content`       | CMS (modules/lessons/materials/activities) + student learning views |
+| `/api/assessments`   | `modules/assessments`   | question bank, assessments, attempts, grading                       |
+| `/api/sessions`      | `modules/sessions`      | live classes, scheduling, materials, roster                         |
+| `/api/attendance`    | `modules/sessions`      | same folder exports `attendanceRouter`                              |
+| `/api/payments`      | `modules/payments`      | methods, charges, discounts, payments, refunds, receipts, reports   |
+| `/api/dashboards`    | `modules/dashboards`    | student / teacher / academic / finance / management KPIs            |
+| `/api/notifications` | `modules/notifications` | inbox, read state (`readAt`), announcements                         |
 
 ## Domain rules (Deutsch Sprache RW — agent will get these wrong)
 
@@ -44,7 +105,9 @@ Greenfield repo. `frontend/` is a Vite scaffold; `backend/` is empty (`.gitkeep`
 
 ## Build order (MVP first)
 
-1. Auth, registration, A1–B2 structure, lessons/notes/video/audio, 3 dashboards, payment tracking, attendance, basic quizzes.
-2. Assignments, question bank, skill analytics, certificates, reports, notifications.
-3. Gateways, automated receipts/reminders, multi-campus finance, discounts.
-4. PWA/mobile, AI practice, integrations, personalization.
+1. **✅ Done (backend):** Auth, registration, A1–B2 structure, lessons/notes/video/audio, dashboards (student/academic/finance/management), payment tracking, attendance, basic quizzes.
+2. **Next:** Assignments, question bank depth, skill analytics, certificates (schema exists, no module/API yet), reports, notifications delivery (email/SMS/WhatsApp are still in-app only).
+3. **Later:** Gateways, automated receipts/reminders, multi-campus finance, discounts.
+4. **Later:** PWA/mobile, AI practice, integrations, personalization.
+
+Known Phase 1 gaps to pick up first: certificates module + public verification page, password-reset email delivery (token is returned in dev only), notification channels beyond `IN_APP`, and wiring the frontend to this API (frontend still uses `frontend/src/data/mock.ts`).
