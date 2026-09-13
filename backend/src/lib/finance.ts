@@ -45,28 +45,27 @@ const deriveStatus = (params: {
 };
 
 export const recalculateStudentFinance = async (client: Executor, studentId: string) => {
-  const [chargeAgg, discountAgg, paymentAgg, refundAgg, overdueCount, lastPayment] =
-    await Promise.all([
-      client.charge.aggregate({ where: { studentId }, _sum: { amount: true } }),
-      client.discount.aggregate({
-        where: { studentId, status: "APPROVED" },
-        _sum: { amount: true },
-      }),
-      client.payment.aggregate({
-        where: { studentId, txnType: "PAYMENT" },
-        _sum: { amount: true },
-      }),
-      client.payment.aggregate({
-        where: { studentId, txnType: "REFUND" },
-        _sum: { amount: true },
-      }),
-      client.charge.count({ where: { studentId, dueDate: { lt: new Date() } } }),
-      client.payment.findFirst({
-        where: { studentId, txnType: "PAYMENT" },
-        orderBy: { paidAt: "desc" },
-        select: { paidAt: true },
-      }),
-    ]);
+  // Sequential on the hosted DB (max 5 connections) — Promise.all would burst 6
+  // concurrent queries and hit "too many connections".
+  const chargeAgg = await client.charge.aggregate({ where: { studentId }, _sum: { amount: true } });
+  const discountAgg = await client.discount.aggregate({
+    where: { studentId, status: "APPROVED" },
+    _sum: { amount: true },
+  });
+  const paymentAgg = await client.payment.aggregate({
+    where: { studentId, txnType: "PAYMENT" },
+    _sum: { amount: true },
+  });
+  const refundAgg = await client.payment.aggregate({
+    where: { studentId, txnType: "REFUND" },
+    _sum: { amount: true },
+  });
+  const overdueCount = await client.charge.count({ where: { studentId, dueDate: { lt: new Date() } } });
+  const lastPayment = await client.payment.findFirst({
+    where: { studentId, txnType: "PAYMENT" },
+    orderBy: { paidAt: "desc" },
+    select: { paidAt: true },
+  });
 
   const charges = amountOrZero(chargeAgg._sum.amount);
   const discounts = amountOrZero(discountAgg._sum.amount);
