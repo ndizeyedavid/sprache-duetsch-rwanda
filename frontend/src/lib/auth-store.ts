@@ -17,6 +17,7 @@ export type AuthUser = {
   lastName: string;
   role: AuthRole;
   status: string;
+  avatarUrl?: string | null;
 };
 
 export type AuthTokens = {

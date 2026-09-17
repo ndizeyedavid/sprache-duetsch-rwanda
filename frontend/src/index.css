@@ -1,9 +1,30 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: light --default;
+  themes:
+    light --default,
+    dark,
+    cupcake,
+    bumblebee,
+    emerald,
+    corporate,
+    synthwave,
+    retro,
+    valentine,
+    aqua,
+    night,
+    winter;
 }
 
+/* ════════════════════════════════════════════════════════════════
+   THEME — light (single source of truth for colors & radii)
+   ── Colors: edit here to re-theme the whole app ──
+   ── Radii : edit the 3 values below to change ALL components
+       --radius-selector → buttons, tabs, badges, toggles
+       --radius-field    → inputs, selects, textareas, nav items
+       --radius-box      → cards, panels, modals, boxes
+       Rounded-full/pill stays 9999px (never change).
+   ════════════════════════════════════════════════════════════════ */
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
@@ -28,11 +49,19 @@
   --color-warning-content: #374557;
   --color-error: #fc6b57;
   --color-error-content: #ffffff;
+
+  /* ── Border radius tokens (edit here, whole app updates) ── */
   --radius-selector: 0.5rem;
-  --radius-field: 0.75rem;
-  --radius-box: 1rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
 }
 
+/* ════════════════════════════════════════════════════════════════
+   GLOBAL TOKENS — extra radii & semantic aliases
+   All component radii below alias the 3 daisyUI tokens above,
+   so changing those 3 cascades everywhere. Override an alias
+   here if you need a specific element to diverge.
+   ════════════════════════════════════════════════════════════════ */
 @theme {
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --color-ink: #374557;
@@ -46,6 +75,14 @@
   --color-coral: #fc6b57;
   --color-coral-soft: #ffe9e6;
   --color-night: #374557;
+
+  /* Aliases — change these if you want an element family to differ */
+  --radius-nav: var(--radius-field);
+  --radius-card: var(--radius-box);
+  --radius-panel: var(--radius-box);
+  --radius-modal: var(--radius-box);
+  --radius-input: var(--radius-field);
+  --radius-pill: 9999px;
 }
 
 @layer base {
@@ -63,8 +100,10 @@
   }
 }
 
+/* Shadows intentionally disabled per client request (flat, no elevation). */
 @utility card-shadow {
-  box-shadow: 0 10px 30px rgba(55, 69, 87, 0.06);
+  /* box-shadow: none; */
+  box-shadow: 0 1px rgba(0, 0, 0, 0.09);
 }
 
 @utility scrollbar-thin {

@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 export type ApiState<T> = {
   data: T | null;
   loading: boolean;
+  fetching: boolean;
   error: string | null;
   refetch: () => void;
 };
@@ -22,6 +23,7 @@ export function useApi<T>(
   const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [fetching, setFetching] = useState(false);
   const [nonce, setNonce] = useState(0);
 
   const refetch = useCallback(() => setNonce((value) => value + 1), []);
@@ -31,22 +33,29 @@ export function useApi<T>(
       setData(null);
       setError(null);
       setLoading(false);
+      setFetching(false);
       return;
     }
     let cancelled = false;
-    setLoading(true);
+    // Only show full loading on first fetch — background refetches keep current data
+    // so the inbox/thread doesn't flash LoadingBlock on every poll or send.
+    const isInitial = data === null;
+    if (isInitial) setLoading(true);
+    setFetching(true);
     setError(null);
     fetcher()
       .then((result) => {
         if (!cancelled) {
           setData(result);
           setLoading(false);
+          setFetching(false);
         }
       })
       .catch((err: unknown) => {
         if (!cancelled) {
           setError(err instanceof Error ? err.message : 'Something went wrong.');
           setLoading(false);
+          setFetching(false);
         }
       });
     return () => {
@@ -55,5 +64,5 @@ export function useApi<T>(
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, nonce, enabled]);
 
-  return { data, loading, error, refetch };
+  return { data, loading, fetching, error, refetch };
 }
