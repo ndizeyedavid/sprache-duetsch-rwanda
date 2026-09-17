@@ -1,178 +1,119 @@
-import { useState } from 'react';
-import type { FormEvent } from 'react';
-import { MonthCalendar } from '../../components/ui/Calendar';
-import type { CalendarEvent } from '../../components/ui/Calendar';
-import { Panel, SectionHeader } from '../../components/ui/Panel';
-import { ScheduleCard } from '../../components/cards/ScheduleCard';
+import { useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { addDays, addMonths, format, isSameDay, parseISO, subDays, subMonths } from 'date-fns';
+import { FiCalendar } from 'react-icons/fi';
+import { Panel } from '../../components/ui/Panel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { photos } from '../../lib/images';
-import {
-  createSession,
-  isoDate,
-  isoTime,
-  listClasses,
-  listSessions,
-  listTeachers,
-} from '../../lib/services';
-import { sessionStatusLabel, sessionTone, teacherName } from '../../lib/sessions-ui';
-
-const AVATARS = [photos.clarisse, photos.nadine, photos.jeanPaul, photos.aline, photos.eric];
+import { listClasses, listSessions } from '../../lib/services';
+import { ScheduleToolbar } from '../../components/schedule/ScheduleToolbar';
+import { ClassFilterChips } from '../../components/schedule/ClassFilterChips';
+import { AgendaGrouped } from '../../components/schedule/AgendaGrouped';
+import { MonthGrid } from '../../components/schedule/MonthGrid';
+import { WeekGrid } from '../../components/schedule/WeekGrid';
+import { SessionDetailDrawer } from '../../components/schedule/SessionDetailDrawer';
+import { SessionEditorModal } from '../../components/schedule/SessionEditorModal';
+import type { ScheduleView } from '../../components/schedule/constants';
 
 export function AdminSchedule() {
-  const sessions = useApi('all-sessions', listSessions);
-  const classes = useApi('class-groups', listClasses);
-  const teachers = useApi('teachers', listTeachers);
+ const [searchParams, setSearchParams] = useSearchParams();
+ const sessions = useApi('all-sessions', listSessions);
+ const classes = useApi('class-groups', listClasses);
 
-  const [classGroupId, setClassGroupId] = useState('');
-  const [teacherId, setTeacherId] = useState('');
-  const [title, setTitle] = useState('');
-  const [startAt, setStartAt] = useState('');
-  const [endAt, setEndAt] = useState('');
-  const [meetingUrl, setMeetingUrl] = useState('');
-  const [formError, setFormError] = useState<string | null>(null);
-  const [saving, setSaving] = useState(false);
+ const view = (searchParams.get('view') as ScheduleView) || 'agenda';
+ const dateParam = searchParams.get('date');
+ const anchor = useMemo(() => (dateParam ? parseISO(dateParam) : new Date()), [dateParam]);
+ const classFilter = searchParams.get('class') || null;
+ const statusFilter = searchParams.get('status') || '';
+ const q = searchParams.get('q') || '';
+ const [localQ, setLocalQ] = useState(q);
+ const [drawerId, setDrawerId] = useState<string | null>(null);
+ const [editorOpen, setEditorOpen] = useState(false);
+ const [editingId, setEditingId] = useState<string | null>(null);
+ const [draftDate, setDraftDate] = useState<string | null>(null);
 
-  const list = sessions.data ?? [];
-  const events: CalendarEvent[] = list.map((session) => ({
-    day: new Date(session.startAt).getDate(),
-    label: session.title,
-    tone: sessionTone(session.status),
-    time: isoTime(session.startAt),
-  }));
+ function setParam(key: string, value: string | null) {
+ const next = new URLSearchParams(searchParams);
+ if (!value) next.delete(key);
+ else next.set(key, value);
+ setSearchParams(next);
+ }
+ function setView(v: ScheduleView) { setParam('view', v === 'agenda' ? null : v); }
+ function setAnchor(d: Date) { setParam('date', format(d, 'yyyy-MM-dd')); }
+ function step(dir: number) {
+ if (view === 'month') setAnchor(dir > 0 ? addMonths(anchor, 1) : subMonths(anchor, 1));
+ else if (view === 'week') setAnchor(dir > 0 ? addDays(anchor, 7) : subDays(anchor, 7));
+ else setAnchor(dir > 0 ? addDays(anchor, 1) : subDays(anchor, 1));
+ }
 
-  async function handleCreate(event: FormEvent) {
-    event.preventDefault();
-    setFormError(null);
-    if (!classGroupId) {
-      setFormError('Choose a class group first.');
-      return;
-    }
-    setSaving(true);
-    try {
-      await createSession({
-        classGroupId,
-        title: title.trim() || undefined,
-        mode: 'ONLINE',
-        provider: 'GOOGLE_MEET',
-        meetingUrl: meetingUrl.trim() || undefined,
-        startAt,
-        endAt,
-        teacherId: teacherId || undefined,
-      });
-      setTitle('');
-      setStartAt('');
-      setEndAt('');
-      setMeetingUrl('');
-      sessions.refetch();
-    } catch (err) {
-      setFormError(apiErrorMessage(err, 'Could not create the session.'));
-    } finally {
-      setSaving(false);
-    }
-  }
+ const filtered = useMemo(() => {
+ let list = sessions.data ?? [];
+ if (classFilter) list = list.filter((s) => s.classGroup?.id === classFilter);
+ if (statusFilter) list = list.filter((s) => s.status === statusFilter);
+ if (q) {
+ const needle = q.toLowerCase();
+ list = list.filter((s) => s.title.toLowerCase().includes(needle) || (s.classGroup?.name ?? '').toLowerCase().includes(needle));
+ }
+ if (view === 'agenda') return [...list].sort((a, b) => new Date(a.startAt).getTime() - new Date(b.startAt).getTime());
+ if (view === 'week') {
+ const start = new Date(anchor); start.setDate(anchor.getDate() - anchor.getDay() + 1); start.setHours(0, 0, 0, 0);
+ const end = new Date(start); end.setDate(end.getDate() + 7);
+ return list.filter((s) => { const d = new Date(s.startAt); return d >= start && d < end; });
+ }
+ const m = anchor.getMonth(); const y = anchor.getFullYear();
+ return list.filter((s) => { const d = new Date(s.startAt); return d.getMonth() === m && d.getFullYear() === y; });
+ }, [sessions.data, classFilter, statusFilter, q, view, anchor]);
 
-  return (
-    <div className="grid gap-5 xl:grid-cols-12">
-      <div className="space-y-5 xl:col-span-8">
-        <Panel>
-          <SectionHeader title="Month view" />
-          {sessions.loading ? (
-            <LoadingBlock label="Loading sessions…" />
-          ) : sessions.error ? (
-            <ErrorBlock message={sessions.error} onRetry={sessions.refetch} />
-          ) : (
-            <MonthCalendar events={events} />
-          )}
-        </Panel>
+ const drawerSession = drawerId ? (sessions.data ?? []).find((s) => s.id === drawerId) ?? null : null;
+ const editingSession = editingId ? (sessions.data ?? []).find((s) => s.id === editingId) ?? null : null;
+ const todayCount = (sessions.data ?? []).filter((s) => isSameDay(parseISO(s.startAt), new Date())).length;
 
-        <Panel>
-          <SectionHeader title="All sessions" />
-          {sessions.loading ? (
-            <LoadingBlock label="Loading sessions…" />
-          ) : sessions.error ? (
-            <ErrorBlock message={sessions.error} onRetry={sessions.refetch} />
-          ) : list.length === 0 ? (
-            <EmptyBlock title="No sessions yet" hint="Schedule the first live class with the form." />
-          ) : (
-            <div className="grid gap-4 sm:grid-cols-2">
-              {list.slice(0, 12).map((session, index) => (
-                <ScheduleCard
-                  key={session.id}
-                  title={session.title}
-                  teacher={teacherName(session.teacher)}
-                  photo={AVATARS[index % AVATARS.length]}
-                  date={isoDate(session.startAt)}
-                  time={`${isoTime(session.startAt)} – ${isoTime(session.endAt)}`}
-                  tone={sessionTone(session.status)}
-                  status={sessionStatusLabel(session.status)}
-                />
-              ))}
-            </div>
-          )}
-        </Panel>
-      </div>
+ return (
+ <div className="space-y-4">
+ <Panel>
+ <ScheduleToolbar view={view} onView={setView} anchor={anchor} onPrev={() => step(-1)} onNext={() => step(1)} onToday={() => setAnchor(new Date())} onNew={() => { setEditingId(null); setDraftDate(null); setEditorOpen(true); }} canCreate />
+ <div className="mt-4">
+ <ClassFilterChips classes={(classes.data ?? []) as never} selected={classFilter} onSelect={(id) => setParam('class', id)} search={localQ} onSearch={setLocalQ} status={statusFilter} onStatus={(v) => setParam('status', v || null)} />
+ {localQ !== q ? <button type="button" onClick={() => setParam('q', localQ || null)} className="btn btn-xs mt-2 rounded-full border-line bg-base-100">Apply search</button> : null}
+ </div>
+ <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-muted">
+ <span className="inline-flex items-center gap-1 rounded-full bg-brand-soft px-2.5 py-1 font-medium text-[#B30A00]"><FiCalendar aria-hidden />{filtered.length} sessions</span>
+ <span>·</span><span>{todayCount} today</span>
+ {classFilter || statusFilter || q ? <button type="button" onClick={() => { setSearchParams(new URLSearchParams(view !== 'agenda' ? `view=${view}` : '')); setLocalQ(''); }} className="link link-hover text-brand">Clear filters</button> : null}
+ </div>
+ </Panel>
 
-      <div className="xl:col-span-4">
-        <Panel>
-          <SectionHeader title="New session" />
-          <form onSubmit={handleCreate} className="space-y-3">
-            <label className="block">
-              <span className="mb-1.5 block text-xs font-medium">Class group</span>
-              <select
-                required
-                value={classGroupId}
-                onChange={(event) => setClassGroupId(event.target.value)}
-                className="select w-full rounded-field border-line bg-base-200"
-              >
-                <option value="">Choose…</option>
-                {(classes.data ?? []).map((group) => (
-                  <option key={group.id} value={group.id}>
-                    {group.name} ({group.code})
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="block">
-              <span className="mb-1.5 block text-xs font-medium">Teacher (optional)</span>
-              <select
-                value={teacherId}
-                onChange={(event) => setTeacherId(event.target.value)}
-                className="select w-full rounded-field border-line bg-base-200"
-              >
-                <option value="">Auto</option>
-                {(teachers.data ?? []).map((teacher) => (
-                  <option key={teacher.id} value={teacher.id}>
-                    {teacher.firstName} {teacher.lastName}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <input required value={title} onChange={(event) => setTitle(event.target.value)} placeholder="Session title" className="input input-sm w-full rounded-field border-line bg-base-200" />
-            <div className="grid gap-3 sm:grid-cols-2">
-              <label className="block">
-                <span className="mb-1.5 block text-xs font-medium">Starts</span>
-                <input required type="datetime-local" value={startAt} onChange={(event) => setStartAt(event.target.value)} className="input input-sm w-full rounded-field border-line bg-base-200" />
-              </label>
-              <label className="block">
-                <span className="mb-1.5 block text-xs font-medium">Ends</span>
-                <input required type="datetime-local" value={endAt} onChange={(event) => setEndAt(event.target.value)} className="input input-sm w-full rounded-field border-line bg-base-200" />
-              </label>
-            </div>
-            <input value={meetingUrl} onChange={(event) => setMeetingUrl(event.target.value)} placeholder="Meeting link (Meet/Zoom)" className="input input-sm w-full rounded-field border-line bg-base-200" />
-            {formError ? (
-              <p role="alert" className="text-xs font-medium text-error">
-                {formError}
-              </p>
-            ) : null}
-            <button type="submit" disabled={saving} className="btn w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
-              {saving ? <span className="loading loading-spinner loading-sm" /> : null}
-              Schedule session
-            </button>
-          </form>
-        </Panel>
-      </div>
-    </div>
-  );
+ <div className="grid gap-4 xl:grid-cols-12">
+ <div className="xl:col-span-8">
+ <Panel>
+ {sessions.loading ? <LoadingBlock label="Loading schedule…" /> : sessions.error ? <ErrorBlock message={sessions.error} onRetry={sessions.refetch} /> : view === 'month' ? <MonthGrid anchor={anchor} onAnchor={setAnchor} sessions={filtered as never} onOpen={setDrawerId} onPickDay={(d) => { setAnchor(d); setView('agenda'); }} onCreateAtDate={(d) => { setEditingId(null); setDraftDate(format(d, 'yyyy-MM-dd')); setEditorOpen(true); }} /> : view === 'week' ? <WeekGrid anchor={anchor} sessions={filtered as never} onOpen={setDrawerId} onPickDay={(d) => { setAnchor(d); setView('agenda'); }} onCreateAtDate={(d) => { setEditingId(null); setDraftDate(format(d, 'yyyy-MM-dd')); setEditorOpen(true); }} /> : <AgendaGrouped sessions={filtered as never} onOpen={setDrawerId} onEdit={(id) => { setEditingId(id); setEditorOpen(true); }} onCancel={async (id) => { if (!confirm('Cancel this session? Students will be notified.')) return; try { const { apiPost } = await import('../../lib/api'); await apiPost(`/sessions/${id}/cancel`, { reason: 'Cancelled from schedule' }); sessions.refetch(); } catch (e) { alert(apiErrorMessage(e, 'Could not cancel.')); } }} />}
+ </Panel>
+ </div>
+ <div className="space-y-4 xl:col-span-4">
+ <Panel>
+ <h3 className="flex items-center gap-2 text-sm font-bold"><FiCalendar aria-hidden className="text-brand" />Up next</h3>
+ {filtered.length === 0 ? <EmptyBlock title="Nothing scheduled" hint="Schedule the first live class." /> : (
+ <div className="mt-3 space-y-2">
+ {filtered.slice(0, 3).map((s) => (
+ <button key={s.id} type="button" onClick={() => setDrawerId(s.id)} className="w-full rounded-box border border-line bg-base-100 p-3 text-left hover:border-brand/20">
+ <p className="truncate text-xs font-semibold">{s.title || 'Untitled'}</p>
+ <p className="truncate text-[11px] text-muted">{s.classGroup?.name} · {format(parseISO(s.startAt), 'EEE d MMM, HH:mm')}</p>
+ </button>
+ ))}
+ </div>
+ )}
+ </Panel>
+ <Panel className="border-l-4 border-l-info bg-[#eff6ff]">
+ <h4 className="text-xs font-bold">Admin tip</h4>
+ <p className="mt-1 text-xs leading-snug text-muted">You see every class. Filter by class to focus — Month shows all sessions as colored chips, Agenda groups by day like Canvas.</p>
+ </Panel>
+ </div>
+ </div>
+
+ <SessionDetailDrawer open={Boolean(drawerId)} onClose={() => setDrawerId(null)} session={drawerSession as never} onEdit={() => { setEditingId(drawerId); setDrawerId(null); setEditorOpen(true); }} onCancel={async () => { if (!drawerId || !confirm('Cancel this session? Students will be notified.')) return; try { const { apiPost } = await import('../../lib/api'); await apiPost(`/sessions/${drawerId}/cancel`, { reason: 'Cancelled from schedule' }); sessions.refetch(); setDrawerId(null); } catch (e) { alert(apiErrorMessage(e, 'Could not cancel.')); } }} onReschedule={() => { setEditingId(drawerId); setDrawerId(null); setEditorOpen(true); }} />
+
+ <SessionEditorModal open={editorOpen} onClose={() => { setEditorOpen(false); setDraftDate(null); }} classes={(classes.data ?? []) as never} editing={editingSession ? { id: editingSession.id, title: editingSession.title, classGroupId: (editingSession as unknown as { classGroup: { id: string } }).classGroup?.id ?? classFilter ?? '', startAt: editingSession.startAt, endAt: editingSession.endAt, mode: editingSession.mode, provider: editingSession.provider, meetingUrl: editingSession.meetingUrl, room: (editingSession as unknown as { room: string | null }).room ?? null, notes: (editingSession as unknown as { notes: string | null }).notes ?? null } : null} initialDate={draftDate} onSaved={() => sessions.refetch()} />
+ </div>
+ );
 }

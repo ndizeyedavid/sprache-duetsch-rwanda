@@ -10,19 +10,19 @@ NProgress.configure({ showSpinner: false, trickleSpeed: 160, minimum: 0.15 });
  * completes on the next paint so lazy pages still show feedback.
  */
 export function RouteProgress() {
-  const { pathname, search } = useLocation();
+ const { pathname, search } = useLocation();
 
-  useEffect(() => {
-    NProgress.start();
-    const done = requestAnimationFrame(() => {
-      // Second frame lets the Suspense fallback paint first on lazy routes.
-      requestAnimationFrame(() => NProgress.done());
-    });
-    return () => {
-      cancelAnimationFrame(done);
-      NProgress.done();
-    };
-  }, [pathname, search]);
+ useEffect(() => {
+ NProgress.start();
+ const done = requestAnimationFrame(() => {
+ // Second frame lets the Suspense fallback paint first on lazy routes.
+ requestAnimationFrame(() => NProgress.done());
+ });
+ return () => {
+ cancelAnimationFrame(done);
+ NProgress.done();
+ };
+ }, [pathname, search]);
 
-  return null;
+ return null;
 }

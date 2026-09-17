@@ -19,7 +19,7 @@ export function AppLayout() {
   return (
     <div className="min-h-screen bg-base-200">
       <Sidebar role={role} open={navOpen} onClose={() => setNavOpen(false)} />
-      <div className="lg:pl-64">
+      <div className="lg:pl-28">
         <Topbar title={getPageTitle(pathname)} onMenu={() => setNavOpen(true)} />
         <main className="mx-auto max-w-[1440px] px-4 py-5 lg:px-6">
           <Outlet />
