@@ -119,11 +119,17 @@ export const getFeed = async (userId: string, role: Role, query: ListFeedQuery) 
       orderBy: { createdAt: "desc" },
       skip: pagination.skip,
       take: pagination.take,
+      include: { actor: { select: { avatarUrl: true } } },
     }),
     prisma.activityEvent.count({ where }),
   ]);
 
-  return buildPaginated(rows, total, pagination);
+  const enriched = rows.map((row) => ({
+    ...row,
+    actorAvatarUrl: row.actor?.avatarUrl ?? null,
+  }));
+
+  return buildPaginated(enriched, total, pagination);
 };
 
 export const createEvent = async (actorId: string | undefined, input: CreateEventInput) => {

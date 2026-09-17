@@ -2,7 +2,7 @@ import type { Request, Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
 import * as authService from "./auth.service.js";
 import type { RequestMeta } from "./auth.service.js";
-import type { LoginInput, RegisterInput, ResetPasswordInput } from "./auth.schema.js";
+import type { LoginInput, RegisterInput, ResetPasswordInput, UpdateProfileInput } from "./auth.schema.js";
 
 const requestMeta = (req: Request): RequestMeta => ({
   ipAddress: req.ip ?? null,
@@ -65,4 +65,10 @@ export const changePassword = async (req: Request, res: Response): Promise<void>
   }
   await authService.changePassword(req.user.id, req.body as { currentPassword: string; newPassword: string });
   res.json({ success: true, data: { message: "Password has been changed" } });
+};
+
+export const updateMe = async (req: Request, res: Response): Promise<void> => {
+  if (!req.user) throw unauthorized();
+  const updated = await authService.updateMyProfile(req.user.id, req.body as UpdateProfileInput);
+  res.json({ success: true, data: updated });
 };

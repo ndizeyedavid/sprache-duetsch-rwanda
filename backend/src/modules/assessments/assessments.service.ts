@@ -452,6 +452,15 @@ export const listAttempts = async (query: ListAttemptQuery) => {
   }
   if (query.studentId) {
     where.studentId = query.studentId;
+  } else if (query.classGroupId) {
+    const studentIds = await prisma.enrollment
+      .findMany({
+        where: { classGroupId: query.classGroupId },
+        select: { studentId: true },
+        distinct: ["studentId"],
+      })
+      .then((rows) => rows.map((row) => row.studentId));
+    where.studentId = studentIds.length > 0 ? { in: studentIds } : { in: [] };
   }
   if (query.status) {
     where.status = query.status;
@@ -483,6 +492,15 @@ export const exportAttempts = async (query: ListAttemptQuery) => {
   }
   if (query.studentId) {
     where.studentId = query.studentId;
+  } else if (query.classGroupId) {
+    const studentIds = await prisma.enrollment
+      .findMany({
+        where: { classGroupId: query.classGroupId },
+        select: { studentId: true },
+        distinct: ["studentId"],
+      })
+      .then((rows) => rows.map((row) => row.studentId));
+    where.studentId = studentIds.length > 0 ? { in: studentIds } : { in: [] };
   }
   if (query.status) {
     where.status = query.status;

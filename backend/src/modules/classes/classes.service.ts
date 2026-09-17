@@ -92,7 +92,7 @@ export const getClass = async (id: string) => {
               studentCode: true,
               status: true,
               user: {
-                select: { firstName: true, lastName: true, email: true, phone: true },
+                select: { id: true, firstName: true, lastName: true, email: true, phone: true },
               },
             },
           },

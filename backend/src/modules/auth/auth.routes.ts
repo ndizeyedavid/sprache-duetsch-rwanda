@@ -12,6 +12,7 @@ import {
   refreshSchema,
   registerSchema,
   resetPasswordSchema,
+  updateProfileSchema,
 } from "./auth.schema.js";
 
 export const authRouter = Router();
@@ -43,6 +44,8 @@ authRouter.post(
 );
 
 authRouter.get("/me", requireAuth, asyncHandler(controller.me));
+
+authRouter.patch("/me", requireAuth, validate({ body: updateProfileSchema }), asyncHandler(controller.updateMe));
 
 authRouter.post(
   "/forgot-password",

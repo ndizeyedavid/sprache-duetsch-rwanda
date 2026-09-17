@@ -119,6 +119,7 @@ export const listAttemptQuerySchema = z.object({
   assessmentId: z.string().min(1).optional(),
   studentId: z.string().min(1).optional(),
   status: attemptStatusSchema.optional(),
+  classGroupId: z.string().min(1).optional(),
   ...paginationQuery,
 });
 

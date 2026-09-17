@@ -42,8 +42,18 @@ export const changePasswordSchema = z.object({
   newPassword: z.string().min(8).max(128),
 });
 
+export const updateProfileSchema = z
+  .object({
+    firstName: z.string().trim().min(1).max(80).optional(),
+    lastName: z.string().trim().min(1).max(80).optional(),
+    phone: z.string().trim().min(6).max(30).nullable().optional(),
+    avatarUrl: z.string().trim().max(1000).nullable().optional(),
+  })
+  .refine((v) => Object.keys(v).length > 0, { message: 'At least one field must be provided' });
+
 export type RegisterInput = z.infer<typeof registerSchema>;
 export type LoginInput = z.infer<typeof loginSchema>;
 export type ForgotPasswordInput = z.infer<typeof forgotPasswordSchema>;
 export type ResetPasswordInput = z.infer<typeof resetPasswordSchema>;
 export type ChangePasswordInput = z.infer<typeof changePasswordSchema>;
+export type UpdateProfileInput = z.infer<typeof updateProfileSchema>;
