@@ -2,3 +2,8 @@ memory.md
 backend/.windsurf
 backend/.claude
 backend/.agents
+docs/*
+!docs/superpowers
+docs/superpowers/*
+!docs/superpowers/specs
+!docs/superpowers/plans
