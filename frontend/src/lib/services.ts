@@ -114,9 +114,11 @@ export type LessonMaterial = {
   id: string;
   title: string;
   type: string;
-  url: string;
+  url: string | null;
   mimeType: string | null;
+  sizeBytes: number | null;
   isDownloadable: boolean;
+  createdAt: string;
 };
 
 export type LessonActivity = {
@@ -125,6 +127,8 @@ export type LessonActivity = {
   type: string;
   instructions: string | null;
   order: number;
+  isPublished: boolean;
+  config: unknown;
 };
 
 export type StudentLesson = {
@@ -587,7 +591,7 @@ export type StaffAttempt = {
   }[];
 };
 
-export function listAttempts(status?: string): Promise<
+export function listAttempts(status?: string, classGroupId?: string, assessmentId?: string): Promise<
   {
     id: string;
     status: string;
@@ -600,8 +604,11 @@ export function listAttempts(status?: string): Promise<
     assessment: { id: string; title: string };
   }[]
 > {
-  const query = status ? `?status=${status}&pageSize=100` : '?pageSize=100';
-  return apiGet(`/assessments/attempts${query}`);
+  const params = new URLSearchParams({ pageSize: '100' });
+  if (status) params.set('status', status);
+  if (classGroupId) params.set('classGroupId', classGroupId);
+  if (assessmentId) params.set('assessmentId', assessmentId);
+  return apiGet(`/assessments/attempts?${params.toString()}`);
 }
 
 export function getStaffAttempt(id: string): Promise<StaffAttempt> {
@@ -654,6 +661,14 @@ export type ClassGroupItem = {
   name: string;
   shift: string;
   levelId: string;
+  intakeId: string;
+  campusId: string;
+  teacherId: string | null;
+  isActive: boolean;
+  level: { id: string; code: string; title: string; levelLabel: string };
+  intake: { id: string; code: string; name: string };
+  campus: { id: string; code: string; name: string };
+  _count: { enrollments: number };
 };
 
 export function listClasses(): Promise<ClassGroupItem[]> {
@@ -736,6 +751,17 @@ export type ClassGroupDetail = {
   capacity: number;
   room: string | null;
   isActive: boolean;
+  level: { id: string; code: string; title: string };
+  intake: { id: string; code: string; name: string };
+  campus: { id: string; code: string; name: string };
+  enrollments: {
+    student: {
+      id: string;
+      studentCode: string;
+      status: string;
+      user: { id: string; firstName: string; lastName: string; email: string; phone: string | null };
+    };
+  }[];
 };
 
 export function getClass(id: string): Promise<ClassGroupDetail> {
@@ -864,11 +890,27 @@ export function createMaterial(
   return apiPost<LessonMaterial>(`/content/lessons/${lessonId}/materials`, body);
 }
 
+export function updateMaterial(id: string, body: Record<string, unknown>): Promise<LessonMaterial> {
+  return apiPatch<LessonMaterial>(`/content/materials/${id}`, body);
+}
+
+export function deleteMaterial(id: string): Promise<unknown> {
+  return apiDelete(`/content/materials/${id}`);
+}
+
 export function createActivity(
   lessonId: string,
   body: Record<string, unknown>,
 ): Promise<LessonActivity> {
   return apiPost<LessonActivity>(`/content/lessons/${lessonId}/activities`, body);
+}
+
+export function updateActivity(id: string, body: Record<string, unknown>): Promise<LessonActivity> {
+  return apiPatch<LessonActivity>(`/content/activities/${id}`, body);
+}
+
+export function deleteActivity(id: string): Promise<unknown> {
+  return apiDelete(`/content/activities/${id}`);
 }
 
 // ---------------------------------------------------------------------------
@@ -884,12 +926,22 @@ export type QuestionItem = {
   difficulty: string;
   prompt: string;
   points: Money;
+  options?: unknown;
+  correctAnswer?: unknown;
+  explanation?: string | null;
+  audioUrl?: string | null;
+  imageUrl?: string | null;
 };
+
+export function getQuestion(id: string): Promise<QuestionItem> {
+  return apiGet<QuestionItem>(`/assessments/questions/${id}`);
+}
 
 export type AuthoredAssessment = {
   id: string;
   levelId: string;
   title: string;
+  description: string | null;
   type: string;
   durationMinutes: number | null;
   maxAttempts: number | null;
@@ -921,6 +973,26 @@ export function setAssessmentQuestions(
   return apiPut<AuthoredAssessment>(`/assessments/assessments/${id}/questions`, { questions });
 }
 
+export function updateQuestion(id: string, body: Record<string, unknown>): Promise<QuestionItem> {
+  return apiPatch<QuestionItem>(`/assessments/questions/${id}`, body);
+}
+
+export function deleteQuestion(id: string): Promise<unknown> {
+  return apiDelete(`/assessments/questions/${id}`);
+}
+
+export function getAssessment(id: string): Promise<AuthoredAssessment> {
+  return apiGet<AuthoredAssessment>(`/assessments/assessments/${id}`);
+}
+
+export function updateAssessment(id: string, body: Record<string, unknown>): Promise<AuthoredAssessment> {
+  return apiPatch<AuthoredAssessment>(`/assessments/assessments/${id}`, body);
+}
+
+export function deleteAssessment(id: string): Promise<unknown> {
+  return apiDelete(`/assessments/assessments/${id}`);
+}
+
 // ---------------------------------------------------------------------------
 // Academic CMS (levels → modules → lessons)
 // ---------------------------------------------------------------------------
@@ -939,9 +1011,14 @@ export type ModuleItem = {
   title: string;
   description: string | null;
   order: number;
+  isPublished: boolean;
   lessons: ModuleLesson[];
   _count?: { lessons: number };
 };
+
+export function updateModule(id: string, body: Record<string, unknown>): Promise<ModuleItem> {
+  return apiPatch<ModuleItem>(`/content/modules/${id}`, body);
+}
 
 export function listLevelModules(levelId: string): Promise<ModuleItem[]> {
   return apiGet<ModuleItem[]>(`/content/levels/${levelId}/modules`);
@@ -1029,6 +1106,7 @@ export type FeedEvent = {
   body: string | null;
   actorId: string | null;
   actorName: string | null;
+  actorAvatarUrl?: string | null;
   createdAt: string;
 };
 
@@ -1039,6 +1117,14 @@ export function getFeed(type?: string): Promise<FeedEvent[]> {
 
 export function postFeedEvent(body: { type: string; title: string; body?: string }): Promise<FeedEvent> {
   return apiPost<FeedEvent>('/activity/events', body);
+}
+
+export function updateMyProfile(body: Record<string, unknown>): Promise<{ id: string; email: string; firstName: string; lastName: string; phone: string | null; avatarUrl: string | null }> {
+  return apiPatch('/auth/me', body);
+}
+
+export function changeMyPassword(body: { currentPassword: string; newPassword: string }): Promise<{ message: string }> {
+  return apiPost('/auth/change-password', body);
 }
 
 // ---------------------------------------------------------------------------

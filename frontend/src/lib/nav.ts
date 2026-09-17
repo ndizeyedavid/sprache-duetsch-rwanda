@@ -1,6 +1,7 @@
 import {
   FiActivity,
   FiAward,
+  FiBarChart2,
   FiBell,
   FiBook,
   FiCalendar,
@@ -42,6 +43,7 @@ export const NAV: Record<Role, NavItem[]> = {
     { label: "Schedule", to: "/teacher/schedule", icon: FiCalendar },
     { label: "Attendance", to: "/teacher/attendance", icon: FiCheckSquare },
     { label: "Grading", to: "/teacher/grading", icon: FiAward },
+    { label: "Reports", to: "/teacher/reports", icon: FiBarChart2 },
     { label: "Messages", to: "/teacher/messages", icon: FiClipboard },
     { label: "Activity", to: "/teacher/activity", icon: FiActivity },
   ],
@@ -105,6 +107,7 @@ const TITLES: { match: RegExp; title: string }[] = [
   { match: /^\/teacher\/schedule$/, title: "Schedule" },
   { match: /^\/teacher\/attendance$/, title: "Attendance" },
   { match: /^\/teacher\/grading$/, title: "Grading" },
+  { match: /^\/teacher\/reports$/, title: "Reports" },
   { match: /^\/teacher\/messages$/, title: "Messages" },
   { match: /^\/teacher\/activity$/, title: "Activity" },
   { match: /^\/teacher$/, title: "Teacher Dashboard" },
