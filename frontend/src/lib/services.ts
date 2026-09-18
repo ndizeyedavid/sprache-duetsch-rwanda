@@ -121,6 +121,21 @@ export type LessonMaterial = {
   createdAt: string;
 };
 
+export type ActivitySubmission = {
+  id: string;
+  activityId: string;
+  studentId: string;
+  response: unknown;
+  isCorrect: boolean | null;
+  score: Money | null;
+  maxScore: Money;
+  status: string;
+  feedback: string | null;
+  attemptNumber: number;
+  submittedAt: string;
+  gradedAt: string | null;
+};
+
 export type LessonActivity = {
   id: string;
   title: string;
@@ -129,6 +144,7 @@ export type LessonActivity = {
   order: number;
   isPublished: boolean;
   config: unknown;
+  mySubmission?: ActivitySubmission | null;
 };
 
 export type StudentLesson = {
@@ -347,15 +363,18 @@ export function getFinanceDashboard(): Promise<FinanceDashboard> {
 // ---------------------------------------------------------------------------
 
 export type MyProfile = {
-  user: { id: string; firstName: string; lastName: string; email: string; phone: string | null; status: string };
+  user: { id: string; firstName: string; lastName: string; email: string; phone: string | null; status: string; avatarUrl: string | null };
   studentCode: string;
   campus: { id: string; code: string; name: string } | null;
   intake: { id: string; code: string; name: string } | null;
-  intendedLevel: { id: string; code: string; title: string } | null;
-  currentLevel: { id: string; code: string; title: string } | null;
+  intendedLevel: { id: string; code: string; title: string; levelLabel: string } | null;
+  currentLevel: { id: string; code: string; title: string; levelLabel: string } | null;
   finance: { totalDue: Money; totalPaid: Money; balance: Money; status: string; currency: string } | null;
   enrollments: {
-    level: { id: string; code: string; title: string };
+    id?: string;
+    status?: string;
+    level: { id: string; code: string; title: string; levelLabel?: string };
+    intake?: { id: string; code: string; name: string } | null;
     classGroup: { id: string; code: string; name: string; shift: string } | null;
   }[];
   attendance: { total: number; present: number; absent: number; late: number; excused: number; percentage: number };
@@ -384,15 +403,13 @@ export type TeacherRow = {
 };
 
 export type MyProgressLevel = {
-  id: string;
-  code: string;
-  title: string;
-  levelLabel: string;
+  level: { id: string; code: string; title: string; levelLabel: string; order: number };
   completionPercentage: number;
   modules: {
     id: string;
     title: string;
-    lessons: { id: string; title: string; status: string; completedAt: string | null }[];
+    order: number;
+    lessons: { id: string; title: string; order: number; status: string; completedAt: string | null }[];
   }[];
 };
 
@@ -410,6 +427,16 @@ export function listStudents(): Promise<StudentRow[]> {
 
 export function listTeachers(): Promise<TeacherRow[]> {
   return apiGet<TeacherRow[]>('/users/teachers');
+}
+
+export type MyPeople = {
+  groups: { id: string; code: string; name: string; shift: string; capacity: number; room: string | null; isActive: boolean; level: { id: string; code: string; title: string; levelLabel: string }; intake: { id: string; code: string; name: string }; campus: { id: string; code: string; name: string }; teacher: { id: string; firstName: string; lastName: string; email: string; avatarUrl: string | null } | null; _count: { enrollments: number } }[];
+  classmates: { userId: string; studentId: string; studentCode: string; firstName: string; lastName: string; email: string; avatarUrl: string | null; status: string; shift: string; currentLevel: { code: string; title: string } | null; groups: { id: string; name: string }[] }[];
+  teachers: { id: string; firstName: string; lastName: string; email: string; avatarUrl: string | null; groups: { id: string; name: string }[] }[];
+};
+
+export function getMyPeople(): Promise<MyPeople> {
+  return apiGet<MyPeople>('/students/me/people');
 }
 
 export function getMyEnrollments(): Promise<
@@ -465,7 +492,7 @@ export function getMyFinance(): Promise<MyFinance> {
 }
 
 export function getMyReceipts(): Promise<ReceiptRow[]> {
-  return apiGet<ReceiptRow[]>('/payments/me/receipts?pageSize=50');
+  return apiGet<{ data: ReceiptRow[]; meta: unknown }>('/payments/me/receipts?pageSize=50').then((r) => (Array.isArray((r as unknown as ReceiptRow[])) ? (r as unknown as ReceiptRow[]) : r.data));
 }
 
 export function listPayments(): Promise<PaymentRow[]> {
@@ -528,6 +555,8 @@ export type MyAssessment = {
   title: string;
   type: string;
   levelId: string;
+  level?: { id: string; code: string; title: string; levelLabel: string };
+  description: string | null;
   durationMinutes: number | null;
   maxAttempts: number | null;
   passMark: number | null;
@@ -535,6 +564,10 @@ export type MyAssessment = {
   availableUntil: string | null;
   attemptCount: number;
   bestScore: number | null;
+  maxScore: number;
+  latestStatus: string | null;
+  latestSubmittedAt: string | null;
+  attempts?: { score: number | null; maxScore: number; status: string; passed: boolean | null; submittedAt: string | null }[];
 };
 
 export type MyAttempt = {
@@ -542,8 +575,10 @@ export type MyAttempt = {
   attemptNumber: number;
   status: string;
   score: number | null;
+  maxScore: number;
   passed: boolean | null;
   submittedAt: string | null;
+  startedAt: string;
   assessment: { id: string; title: string };
 };
 
@@ -911,6 +946,33 @@ export function updateActivity(id: string, body: Record<string, unknown>): Promi
 
 export function deleteActivity(id: string): Promise<unknown> {
   return apiDelete(`/content/activities/${id}`);
+}
+
+export function submitActivity(activityId: string, response: unknown): Promise<ActivitySubmission> {
+  return apiPost<ActivitySubmission>(`/content/activities/${activityId}/submit`, { response });
+}
+
+export function getMyActivitySubmission(activityId: string): Promise<ActivitySubmission | null> {
+  return apiGet<ActivitySubmission | null>(`/content/activities/${activityId}/my-submission`);
+}
+
+export function listMyActivitySubmissions(lessonId?: string): Promise<ActivitySubmission[]> {
+  const q = lessonId ? `?lessonId=${lessonId}` : '';
+  return apiGet<ActivitySubmission[]>(`/content/my/activity-submissions${q}`);
+}
+
+export function listActivitySubmissions(params?: { lessonId?: string; activityId?: string; studentId?: string; status?: string }): Promise<ActivitySubmission[]> {
+  const search = new URLSearchParams();
+  if (params?.lessonId) search.set('lessonId', params.lessonId);
+  if (params?.activityId) search.set('activityId', params.activityId);
+  if (params?.studentId) search.set('studentId', params.studentId);
+  if (params?.status) search.set('status', params.status);
+  const qs = search.toString();
+  return apiGet<ActivitySubmission[]>(`/content/activity-submissions${qs ? `?${qs}` : ''}`);
+}
+
+export function gradeActivitySubmission(id: string, body: { score?: number; isCorrect?: boolean; feedback?: string }): Promise<ActivitySubmission> {
+  return apiPatch<ActivitySubmission>(`/content/activity-submissions/${id}/grade`, body);
 }
 
 // ---------------------------------------------------------------------------

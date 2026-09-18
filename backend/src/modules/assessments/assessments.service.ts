@@ -730,25 +730,34 @@ export const listMyAssessments = async (userId: string, query: MyAssessmentsQuer
         passMark: true,
         availableFrom: true,
         availableUntil: true,
+        level: { select: { id: true, code: true, title: true, levelLabel: true } },
+        questions: { select: { points: true, question: { select: { points: true } } } },
         attempts: {
           where: { studentId: profile.studentId },
-          select: { score: true, status: true, passed: true },
+          select: { score: true, maxScore: true, status: true, passed: true, submittedAt: true, gradedAt: true },
         },
       },
     }),
     prisma.assessment.count({ where }),
   ]);
 
-  const data = rows.map(({ attempts, ...assessment }) => {
+  const data = rows.map(({ attempts, questions, ...assessment }) => {
+    const maxScore = questions.reduce((sum, q) => sum + Number(q.points ?? q.question.points), 0);
     const bestScore = attempts.reduce<number | null>((best, attempt) => {
-      if (attempt.score === null) {
-        return best;
-      }
+      if (attempt.score === null) return best;
       const value = Number(attempt.score);
       return best === null || value > best ? value : best;
     }, null);
-
-    return { ...assessment, attemptCount: attempts.length, bestScore };
+    const latest = attempts.length ? attempts.reduce((a, b) => (a.submittedAt && b.submittedAt ? (a.submittedAt > b.submittedAt ? a : b) : a)) : null;
+    return {
+      ...assessment,
+      attemptCount: attempts.length,
+      bestScore,
+      maxScore: maxScore || (attempts[0] ? Number(attempts[0].maxScore) : 0),
+      latestStatus: latest?.status ?? null,
+      latestSubmittedAt: latest?.submittedAt ?? null,
+      attempts,
+    };
   });
 
   return buildPaginated(data, total, pagination);

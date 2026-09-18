@@ -28,6 +28,11 @@ export const myProgress = async (req: Request, res: Response): Promise<void> => 
   res.json({ success: true, data });
 };
 
+export const myPeople = async (req: Request, res: Response): Promise<void> => {
+  const data = await service.getMyPeople(currentUserId(req));
+  res.json({ success: true, data });
+};
+
 export const list = async (req: Request, res: Response): Promise<void> => {
   const result = await service.listStudents(validatedQuery<ListStudentsQuery>(req));
   res.json({ success: true, ...result });

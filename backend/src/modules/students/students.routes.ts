@@ -23,6 +23,7 @@ studentsRouter.get(
   requireRole("STUDENT"),
   asyncHandler(controller.myProgress),
 );
+studentsRouter.get("/me/people", requireAuth, requireRole("STUDENT"), asyncHandler(controller.myPeople));
 
 studentsRouter.get(
   "/",

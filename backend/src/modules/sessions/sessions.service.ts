@@ -33,6 +33,7 @@ const classGroupDetailSelect = {
 } as const;
 
 // Lightweight shape for the mobile-first student views (low-bandwidth friendly).
+// Includes room/notes/recording so the detail drawer renders essential info.
 const studentSessionSelect = {
   id: true,
   title: true,
@@ -43,6 +44,9 @@ const studentSessionSelect = {
   provider: true,
   status: true,
   meetingUrl: true,
+  recordingUrl: true,
+  room: true,
+  notes: true,
   teacher: { select: { firstName: true, lastName: true } },
   classGroup: { select: { id: true, name: true } },
 } as const;
