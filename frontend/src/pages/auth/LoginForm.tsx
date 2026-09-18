@@ -5,14 +5,15 @@ import { FiArrowRight } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
 import { clearTokens, login } from '../../lib/auth-store';
 import {
- homePath,
- portalLabel,
- portalLoginPath,
- portalRoles,
- roleLabel,
+  homePath,
+  portalLabel,
+  portalLoginPath,
+  portalRoles,
+  roleLabel,
 } from '../../lib/roles';
 import type { Portal } from '../../lib/roles';
 import { useSession } from '../../lib/session';
+import { GoogleButton } from '../../components/auth/GoogleButton';
 
 type LoginFormProps = {
  portal: Portal;
@@ -36,35 +37,46 @@ export function LoginForm({ portal, title, subtitle }: LoginFormProps) {
  }
  }, [sessionLoading, user, navigate]);
 
- async function handleSubmit(event: FormEvent) {
- event.preventDefault();
- setError(null);
- setWrongPortal(null);
- setPending(true);
- try {
- const account = await login(email.trim(), password);
+  function handleGoogleSuccess(account: { role: import('../../lib/auth-store').AuthRole }) {
+  if (!portalRoles[portal].includes(account.role)) {
+  clearTokens();
+  const correct = (Object.keys(portalRoles) as Portal[]).find((key) => portalRoles[key].includes(account.role));
+  setWrongPortal(correct ?? null);
+  setError(`This is the ${portalLabel[portal]} portal, but your account is a ${roleLabel[account.role]}.`);
+  return;
+  }
+  void refresh().then(() => navigate(homePath[account.role], { replace: true }));
+  }
 
- if (!portalRoles[portal].includes(account.role)) {
- // Signed in with the wrong portal — do not keep the session.
- clearTokens();
- const correct = (Object.keys(portalRoles) as Portal[]).find((key) =>
- portalRoles[key].includes(account.role),
- );
- setWrongPortal(correct ?? null);
- setError(
- `This is the ${portalLabel[portal]} portal, but your account is a ${roleLabel[account.role]}.`,
- );
- return;
- }
+  async function handleSubmit(event: FormEvent) {
+  event.preventDefault();
+  setError(null);
+  setWrongPortal(null);
+  setPending(true);
+  try {
+  const account = await login(email.trim(), password);
 
- await refresh();
- navigate(homePath[account.role], { replace: true });
- } catch (err) {
- setError(apiErrorMessage(err, 'Sign in failed. Please try again.'));
- } finally {
- setPending(false);
- }
- }
+  if (!portalRoles[portal].includes(account.role)) {
+  // Signed in with the wrong portal — do not keep the session.
+  clearTokens();
+  const correct = (Object.keys(portalRoles) as Portal[]).find((key) =>
+  portalRoles[key].includes(account.role),
+  );
+  setWrongPortal(correct ?? null);
+  setError(
+  `This is the ${portalLabel[portal]} portal, but your account is a ${roleLabel[account.role]}.`,
+  );
+  return;
+  }
+
+  await refresh();
+  navigate(homePath[account.role], { replace: true });
+  } catch (err) {
+  setError(apiErrorMessage(err, 'Sign in failed. Please try again.'));
+  } finally {
+  setPending(false);
+  }
+  }
 
  return (
  <section className=" rounded-box bg-base-100 p-6 sm:p-8">
@@ -122,16 +134,24 @@ export function LoginForm({ portal, title, subtitle }: LoginFormProps) {
  </a>
  </div>
 
- <button
- type="submit"
- disabled={pending}
- className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
- >
- {pending ? <span className="loading loading-spinner loading-sm" /> : null}
- Sign in
- <FiArrowRight aria-hidden />
- </button>
- </form>
+  <button
+  type="submit"
+  disabled={pending}
+  className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+  >
+  {pending ? <span className="loading loading-spinner loading-sm" /> : null}
+  Sign in
+  <FiArrowRight aria-hidden />
+  </button>
+  </form>
+
+  <div className="my-4 flex items-center gap-3">
+  <span className="h-px flex-1 bg-line" />
+  <span className="text-xs text-muted">or</span>
+  <span className="h-px flex-1 bg-line" />
+  </div>
+
+  <GoogleButton portal={portal} onSuccess={handleGoogleSuccess} onError={(msg) => { setWrongPortal(null); setError(msg); }} />
 
  {portal === 'student' ? (
  <p className="mt-6 text-center text-xs text-muted">

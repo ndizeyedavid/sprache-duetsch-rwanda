@@ -42,6 +42,11 @@ export const changePasswordSchema = z.object({
   newPassword: z.string().min(8).max(128),
 });
 
+export const googleAuthSchema = z.object({
+  idToken: z.string().min(10),
+  portal: z.enum(["student", "teacher", "staff"]).optional(),
+});
+
 export const updateProfileSchema = z
   .object({
     firstName: z.string().trim().min(1).max(80).optional(),
@@ -57,3 +62,4 @@ export type ForgotPasswordInput = z.infer<typeof forgotPasswordSchema>;
 export type ResetPasswordInput = z.infer<typeof resetPasswordSchema>;
 export type ChangePasswordInput = z.infer<typeof changePasswordSchema>;
 export type UpdateProfileInput = z.infer<typeof updateProfileSchema>;
+export type GoogleAuthInput = z.infer<typeof googleAuthSchema>;

@@ -17,7 +17,12 @@ export const createApp = (): Express => {
   app.set("trust proxy", 1);
   app.disable("x-powered-by");
 
-  app.use(helmet());
+  app.use(
+    helmet({
+      crossOriginOpenerPolicy: { policy: "same-origin-allow-popups" },
+      crossOriginEmbedderPolicy: false,
+    }),
+  );
   app.use(cors({ origin: corsOrigins, credentials: true }));
   app.use(compression());
   app.use(express.json({ limit: "2mb" }));

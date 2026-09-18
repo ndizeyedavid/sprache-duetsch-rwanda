@@ -29,6 +29,9 @@ const envSchema = z.object({
   // Reminder scheduler (node-cron). DISABLED skips all jobs (tests, one-off scripts).
   REMINDERS_ENABLED: z.enum(["true", "false"]).default("true"),
   REMINDER_TIMEZONE: z.string().min(1).default("Africa/Kigali"),
+  // Google OAuth — Client ID for verifying ID tokens from @react-oauth/google.
+  GOOGLE_CLIENT_ID: z.string().optional(),
+  GOOGLE_CLIENT_SECRET: z.string().optional(),
 });
 
 const parsed = envSchema.safeParse(process.env);

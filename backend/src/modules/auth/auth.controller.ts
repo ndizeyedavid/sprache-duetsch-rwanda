@@ -72,3 +72,9 @@ export const updateMe = async (req: Request, res: Response): Promise<void> => {
   const updated = await authService.updateMyProfile(req.user.id, req.body as UpdateProfileInput);
   res.json({ success: true, data: updated });
 };
+
+export const google = async (req: Request, res: Response): Promise<void> => {
+  const { idToken, portal } = req.body as { idToken: string; portal?: string };
+  const result = await authService.googleAuth(idToken, { ipAddress: req.ip ?? null, userAgent: req.headers["user-agent"] ?? null }, portal);
+  res.json({ success: true, data: result });
+};

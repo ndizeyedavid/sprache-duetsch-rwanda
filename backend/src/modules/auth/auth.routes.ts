@@ -7,6 +7,7 @@ import * as controller from "./auth.controller.js";
 import {
   changePasswordSchema,
   forgotPasswordSchema,
+  googleAuthSchema,
   loginSchema,
   logoutSchema,
   refreshSchema,
@@ -29,6 +30,13 @@ authRouter.post(
   authLimiter,
   validate({ body: loginSchema }),
   asyncHandler(controller.login),
+);
+
+authRouter.post(
+  "/google",
+  authLimiter,
+  validate({ body: googleAuthSchema }),
+  asyncHandler(controller.google),
 );
 
 authRouter.post(

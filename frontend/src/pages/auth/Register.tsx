@@ -5,6 +5,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import { apiErrorMessage, apiGet } from '../../lib/api';
 import { register } from '../../lib/auth-store';
 import type { RegisterPayload } from '../../lib/auth-store';
+import { GoogleButton } from '../../components/auth/GoogleButton';
 
 const SHIFTS = [
  { label: 'Morning', value: 'MORNING' },
@@ -250,16 +251,24 @@ export function Register() {
  </span>
  </label>
 
- <button
- type="submit"
- disabled={pending || loadingRefs}
- className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
- >
- {pending ? <span className="loading loading-spinner loading-sm" /> : null}
- Create account
- <FiArrowRight aria-hidden />
- </button>
- </form>
+  <button
+  type="submit"
+  disabled={pending || loadingRefs}
+  className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+  >
+  {pending ? <span className="loading loading-spinner loading-sm" /> : null}
+  Create account
+  <FiArrowRight aria-hidden />
+  </button>
+  </form>
+
+  <div className="my-4 flex items-center gap-3">
+  <span className="h-px flex-1 bg-line" />
+  <span className="text-xs text-muted">or</span>
+  <span className="h-px flex-1 bg-line" />
+  </div>
+
+  <GoogleButton portal="student" onSuccess={() => navigate('/dashboard', { replace: true })} onError={(msg) => setError(msg)} />
 
  <p className="mt-6 text-center text-xs text-muted">
  Already enrolled?{' '}
