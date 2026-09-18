@@ -33,16 +33,25 @@ const CourseOverview = lazy(() =>
  import("./pages/student/CourseOverview").then((module) => ({ default: module.CourseOverview })),
 );
 const CourseContents = lazy(() =>
- import("./pages/student/CourseContents").then((module) => ({ default: module.CourseContents })),
+  import("./pages/student/CourseContents").then((module) => ({ default: module.CourseContents })),
+);
+const StudentLesson = lazy(() =>
+  import("./pages/student/LessonView").then((module) => ({ default: module.StudentLesson })),
+);
+const StudentActivity = lazy(() =>
+  import("./pages/student/StudentActivity").then((module) => ({ default: module.StudentActivity })),
 );
 const Schedule = lazy(() =>
  import("./pages/student/Schedule").then((module) => ({ default: module.Schedule })),
 );
 const Teachers = lazy(() =>
- import("./pages/student/Teachers").then((module) => ({ default: module.Teachers })),
+  import("./pages/student/Teachers").then((module) => ({ default: module.Teachers })),
+);
+const Grades = lazy(() =>
+  import("./pages/student/Grades").then((module) => ({ default: module.Grades })),
 );
 const Profile = lazy(() =>
- import("./pages/student/Profile").then((module) => ({ default: module.Profile })),
+  import("./pages/student/Profile").then((module) => ({ default: module.Profile })),
 );
 
 // ---------------------------------------------------------------------------
@@ -190,11 +199,14 @@ function AppRoutes() {
  <Route element={<AppLayout />}>
  <Route path="/dashboard" element={<Dashboard />} />
  <Route path="/courses" element={<Courses />} />
- <Route path="/courses/:slug" element={<CourseOverview />} />
- <Route path="/courses/:slug/learn" element={<CourseContents />} />
- <Route path="/schedule" element={<Schedule />} />
- <Route path="/instructors" element={<Teachers />} />
- <Route path="/messages" element={<Messages />} />
+            <Route path="/courses/:slug" element={<CourseOverview />} />
+            <Route path="/courses/:slug/learn" element={<CourseContents />} />
+            <Route path="/courses/:slug/learn/:lessonId" element={<StudentLesson />} />
+            <Route path="/courses/:slug/learn/:lessonId/activity/:activityId" element={<StudentActivity />} />
+  <Route path="/schedule" element={<Schedule />} />
+  <Route path="/grades" element={<Grades />} />
+  <Route path="/instructors" element={<Teachers />} />
+  <Route path="/messages" element={<Messages />} />
  <Route path="/activity" element={<Activity />} />
  <Route path="/profile" element={<Profile />} />
  </Route>

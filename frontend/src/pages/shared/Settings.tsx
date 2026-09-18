@@ -21,8 +21,8 @@ export function Settings() {
  setSearchParams(p, { replace: true });
  }
 
- return (
- <div className="mx-auto max-w-5xl space-y-4">
+  return (
+  <div className="space-y-4">
  <Panel>
  <h1 className="flex items-center gap-2 text-base font-bold">
  <FiSettings aria-hidden className="text-brand" />

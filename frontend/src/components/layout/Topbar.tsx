@@ -34,12 +34,13 @@ export function Topbar({ title, onMenu }: TopbarProps) {
  const navigate = useNavigate();
  const unread = useApi("unread-count", unreadCount);
 
- const messagesPath = user
- ? (MESSAGES_PATH[user.role] ?? "/admin/messages")
- : "/messages";
- const displayName = user ? `${user.firstName} ${user.lastName}` : "…";
- const displayRole = user ? roleLabel[user.role] : "…";
- const unreadTotal = unread.data?.count ?? 0;
+  const messagesPath = user
+  ? (MESSAGES_PATH[user.role] ?? "/admin/messages")
+  : "/messages";
+  const profilePath = user?.role === "STUDENT" ? "/profile" : "/settings";
+  const displayName = user ? `${user.firstName} ${user.lastName}` : "…";
+  const displayRole = user ? roleLabel[user.role] : "…";
+  const unreadTotal = unread.data?.count ?? 0;
 
  async function handleSignOut() {
  await signOut();
@@ -145,12 +146,12 @@ export function Topbar({ title, onMenu }: TopbarProps) {
  <li className="menu-title">
  <span className="text-xs">{displayRole} · {user?.email}</span>
  </li>
- <li>
- <Link to="/settings" className="gap-2">
- <FiUser aria-hidden />
- Profile
- </Link>
- </li>
+  <li>
+  <Link to={profilePath} className="gap-2">
+  <FiUser aria-hidden />
+  Profile
+  </Link>
+  </li>
  <li>
  <Link to="/settings?tab=appearance" className="gap-2">
  <FiSettings aria-hidden />

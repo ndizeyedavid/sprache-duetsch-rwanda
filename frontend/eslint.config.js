@@ -49,6 +49,7 @@ export default defineConfig([
       'src/pages/teacher/Dashboard.tsx',
       'src/pages/teacher/People.tsx',
       'src/pages/student/CourseContents.tsx',
+      'src/pages/teacher/Reports.tsx',
     ],
     rules: {
       'max-lines': 'off',

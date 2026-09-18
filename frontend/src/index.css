@@ -66,7 +66,7 @@
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --color-ink: #374557;
   --color-muted: #a098ae;
-  --color-line: #f1f0f3;
+  --color-line: var(--color-base-300);
   --color-brand: #fb0d00;
   --color-brand-soft: #ffe1de;
   --color-brand-tint: #fff1f0;
@@ -83,6 +83,19 @@
   --radius-modal: var(--radius-box);
   --radius-input: var(--radius-field);
   --radius-pill: 9999px;
+}
+
+/* Every theme — including dark/night/synthwave — must obey the
+   project's 0-radius for cards/inputs (like light does). DaisyUI
+   ships per-theme radii; this forces them flat globally.
+   Also makes the custom --color-line follow the theme's border
+   color (base-300) so dark mode doesn't render white borders. */
+:root,
+[data-theme] {
+  --radius-selector: 0.5rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+  --color-line: var(--color-base-300);
 }
 
 @layer base {
@@ -108,7 +121,7 @@
 
 @utility scrollbar-thin {
   scrollbar-width: thin;
-  scrollbar-color: #e6e4ea transparent;
+  scrollbar-color: var(--color-base-300) transparent;
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -116,7 +129,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #e6e4ea;
+    background-color: var(--color-base-300);
     border-radius: 9999px;
   }
 
