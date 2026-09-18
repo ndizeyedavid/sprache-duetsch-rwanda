@@ -22,6 +22,7 @@ import {
 } from 'react-icons/fi';
 import { Panel, SectionHeader } from '../ui/Panel';
 import { StatusBadge } from '../ui/StatusBadge';
+import { ActivityGradingPanel } from '../teacher/ActivityGradingPanel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
@@ -146,11 +147,16 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  const toggleCollapsed = (id: string) =>
  setCollapsed((prev) => ({ ...prev, [id]: !prev[id] }));
 
- // Drag state for module reordering (Canvas-style) — optimistic, no full reload
- const [dragId, setDragId] = useState<string | null>(null);
- const [dragOverId, setDragOverId] = useState<string | null>(null);
- const [reordering, setReordering] = useState(false);
- const [publishingIds, setPublishingIds] = useState<Set<string>>(new Set());
+  // Drag state for module reordering (Canvas-style) — optimistic, no full reload
+  const [dragId, setDragId] = useState<string | null>(null);
+  const [dragOverId, setDragOverId] = useState<string | null>(null);
+  const [reordering, setReordering] = useState(false);
+  const [publishingIds, setPublishingIds] = useState<Set<string>>(new Set());
+
+  // Drag state for lessons inside a module — Canvas lets teachers reorder lessons like modules
+  const [lessonDrag, setLessonDrag] = useState<{ moduleId: string; lessonId: string } | null>(null);
+  const [lessonDragOver, setLessonDragOver] = useState<{ moduleId: string; lessonId: string } | null>(null);
+  const [lessonReorderingIds, setLessonReorderingIds] = useState<Set<string>>(new Set());
 
  // Local optimistic copy of modules so we can reorder / toggle publish without a full reload
  const [localModules, setLocalModules] = useState<typeof modules.data | null>(null);
@@ -183,35 +189,80 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  }
  }
 
- async function handleDrop(targetId: string) {
- if (!dragId || dragId === targetId || !selectedLevelId) return;
- const ordered = [...displayModules].sort((a, b) => a.order - b.order);
- const from = ordered.findIndex((m) => m.id === dragId);
- const to = ordered.findIndex((m) => m.id === targetId);
- if (from === -1 || to === -1) return;
- const [moved] = ordered.splice(from, 1);
- ordered.splice(to, 0, moved);
- const optimistic = ordered.map((m, index) => ({ ...m, order: index }));
- setLocalModules(optimistic);
- setDragId(null);
- setDragOverId(null);
- setReordering(true);
- setError(null);
- try {
- for (let i = 0; i < optimistic.length; i++) {
- const original = (modules.data ?? []).find((m) => m.id === optimistic[i].id);
- if (original?.order !== optimistic[i].order) {
- await updateModule(optimistic[i].id, { order: optimistic[i].order });
- }
- }
- } catch (err) {
- setError(apiErrorMessage(err, 'Could not reorder modules.'));
- setLocalModules(modules.data ? [...modules.data].sort((a, b) => a.order - b.order) : null);
- } finally {
- setReordering(false);
- modules.refetch();
- }
- }
+  async function handleDrop(targetId: string) {
+    if (!dragId || dragId === targetId || !selectedLevelId) return;
+    const ordered = [...displayModules].sort((a, b) => a.order - b.order);
+    const from = ordered.findIndex((m) => m.id === dragId);
+    const to = ordered.findIndex((m) => m.id === targetId);
+    if (from === -1 || to === -1) return;
+    const [moved] = ordered.splice(from, 1);
+    ordered.splice(to, 0, moved);
+    const optimistic = ordered.map((m, index) => ({ ...m, order: index }));
+    setLocalModules(optimistic);
+    setDragId(null);
+    setDragOverId(null);
+    setReordering(true);
+    setError(null);
+    try {
+      // Avoid unique [levelId, order] collisions — bump to temp offset first, then to final order
+      const TEMP = 1000;
+      for (let i = 0; i < optimistic.length; i++) {
+        await updateModule(optimistic[i].id, { order: TEMP + i });
+      }
+      for (let i = 0; i < optimistic.length; i++) {
+        const original = (modules.data ?? []).find((m) => m.id === optimistic[i].id);
+        if (original?.order !== optimistic[i].order) {
+          await updateModule(optimistic[i].id, { order: optimistic[i].order });
+        }
+      }
+    } catch (err) {
+      setError(apiErrorMessage(err, 'Could not reorder modules.'));
+      setLocalModules(modules.data ? [...modules.data].sort((a, b) => a.order - b.order) : null);
+    } finally {
+      setReordering(false);
+      modules.refetch();
+    }
+  }
+
+  async function handleLessonDrop(targetModuleId: string, targetLessonId: string) {
+    if (!lessonDrag || lessonDrag.moduleId !== targetModuleId || lessonDrag.lessonId === targetLessonId) return;
+    const mod = displayModules.find((m) => m.id === targetModuleId);
+    if (!mod) return;
+    const ordered = [...mod.lessons].sort((a, b) => a.order - b.order);
+    const from = ordered.findIndex((l) => l.id === lessonDrag.lessonId);
+    const to = ordered.findIndex((l) => l.id === targetLessonId);
+    if (from === -1 || to === -1) return;
+    const [moved] = ordered.splice(from, 1);
+    ordered.splice(to, 0, moved);
+    const optimistic = ordered.map((l, index) => ({ ...l, order: index }));
+    setLocalModules((prev) => (prev ? prev.map((m) => (m.id === targetModuleId ? { ...m, lessons: optimistic as never } : m)) : prev));
+    setLessonDrag(null);
+    setLessonDragOver(null);
+    setLessonReorderingIds((prev) => new Set(prev).add(targetModuleId));
+    setError(null);
+    try {
+      const TEMP = 1000;
+      for (let i = 0; i < optimistic.length; i++) {
+        await updateLesson(optimistic[i].id, { order: TEMP + i });
+      }
+      for (let i = 0; i < optimistic.length; i++) {
+        const original = (modules.data ?? []).find((m) => m.id === targetModuleId)?.lessons.find((l) => l.id === optimistic[i].id);
+        if (original?.order !== optimistic[i].order) {
+          await updateLesson(optimistic[i].id, { order: optimistic[i].order });
+        }
+      }
+    } catch (err) {
+      setError(apiErrorMessage(err, 'Could not reorder lessons.'));
+      setLocalModules(modules.data ? [...modules.data].sort((a, b) => a.order - b.order) : null);
+    } finally {
+      setLessonReorderingIds((prev) => {
+        const next = new Set(prev);
+        next.delete(targetModuleId);
+        return next;
+      });
+      modules.refetch();
+    }
+  }
 
  const [expandedLessonId, setExpandedLessonId] = useState<string | null>(() => {
  return new URLSearchParams(window.location.search).get('lesson');
@@ -523,39 +574,42 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  const isPublishing = publishingIds.has(mod.id);
  const lessons = [...mod.lessons].sort((a, b) => a.order - b.order);
  const publishedCount = lessons.filter((l) => l.isPublished).length;
- return (
- <div
- key={mod.id}
- draggable={!reordering && !isPublishing}
- onDragStart={() => {
- if (reordering || isPublishing) return;
- setDragId(mod.id);
- }}
- onDragEnd={() => {
- setDragId(null);
- setDragOverId(null);
- }}
- onDragOver={(e) => {
- e.preventDefault();
- if (dragId && dragId !== mod.id) setDragOverId(mod.id);
- }}
- onDragLeave={() => setDragOverId((prev) => (prev === mod.id ? null : prev))}
- onDrop={(e) => {
- e.preventDefault();
- void handleDrop(mod.id);
- }}
- className={`overflow-hidden rounded-box border bg-base-100 transition ${isDragging ? 'opacity-50' : ''} ${isDragOver ? 'border-brand ring-1 ring-brand' : 'border-line'} ${reordering ? 'pointer-events-none' : ''} ${isPublishing ? 'opacity-60' : ''}`}
- aria-busy={isPublishing || reordering}
- >
- {/* Module header — Canvas module bar */}
- <div className="flex items-center gap-3 bg-base-200 px-4 py-3">
- <span
- className={`flex size-7 shrink-0 items-center justify-center rounded text-muted ${reordering ? 'cursor-not-allowed opacity-40' : 'cursor-grab hover:bg-base-300 active:cursor-grabbing'}`}
- aria-label="Drag to reorder"
- title={reordering ? 'Saving…' : 'Drag to reorder'}
- >
- {reordering ? <span className="loading loading-spinner loading-xs" /> : <FiMove aria-hidden />}
- </span>
+  return (
+  <div
+  key={mod.id}
+  onDragOver={(e) => {
+  e.preventDefault();
+  if (dragId && dragId !== mod.id) setDragOverId(mod.id);
+  }}
+  onDragLeave={() => setDragOverId((prev) => (prev === mod.id ? null : prev))}
+  onDrop={(e) => {
+  e.preventDefault();
+  // Only handle module drops — lesson drops are handled per-lesson
+  if (lessonDrag) return;
+  void handleDrop(mod.id);
+  }}
+  className={`overflow-hidden rounded-box border bg-base-100 transition ${isDragging ? 'opacity-50' : ''} ${isDragOver ? 'border-brand ring-1 ring-brand' : 'border-line'} ${reordering ? 'pointer-events-none' : ''} ${isPublishing ? 'opacity-60' : ''}`}
+  aria-busy={isPublishing || reordering}
+  >
+  {/* Module header — Canvas module bar */}
+  <div className="flex items-center gap-3 bg-base-200 px-4 py-3">
+  <span
+  draggable={!reordering && !isPublishing}
+  onDragStart={(e) => {
+  if (reordering || isPublishing) { e.preventDefault(); return; }
+  e.stopPropagation();
+  setDragId(mod.id);
+  }}
+  onDragEnd={() => {
+  setDragId(null);
+  setDragOverId(null);
+  }}
+  className={`flex size-7 shrink-0 items-center justify-center rounded text-muted ${reordering ? 'cursor-not-allowed opacity-40' : 'cursor-grab hover:bg-base-300 active:cursor-grabbing'}`}
+  aria-label="Drag to reorder module"
+  title={reordering ? 'Saving…' : 'Drag to reorder module'}
+  >
+  {reordering ? <span className="loading loading-spinner loading-xs" /> : <FiMove aria-hidden />}
+  </span>
  <button
  type="button"
  onClick={() => {
@@ -627,32 +681,68 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  {lessons.length === 0 ? (
  <p className="px-4 py-6 text-center text-xs text-muted">No lessons in this module yet. Add one below.</p>
  ) : (
- lessons.map((item) => {
- const Icon = contentIcon(item.contentType);
- const isExpanded = expandedLessonId === item.id;
- return (
- <div key={item.id} className="bg-base-100">
- <button
- type="button"
- onClick={() => toggleLesson(item.id)}
- className={`flex w-full items-center gap-3 border-l-4 px-4 py-3 text-left transition-colors hover:bg-base-200/60 ${isExpanded ? 'bg-brand-tint border-brand' : 'border-transparent'}`}
- >
- <span className={`flex size-8 shrink-0 items-center justify-center rounded-full ${isExpanded ? 'bg-brand text-white' : 'bg-base-200 text-muted'}`}>
- <Icon aria-hidden className="text-sm" />
- </span>
- <span className="min-w-0 grow">
- <span className="block truncate text-sm font-medium leading-tight">{item.title}</span>
- <span className="block truncate text-[11px] text-muted">
- {humanize(item.contentType)} · Order {item.order}
- {item.estimatedMinutes ? ` · ${item.estimatedMinutes} min` : ''}
- </span>
- </span>
- <StatusBadge status={item.isPublished ? 'Active' : 'Pending'} />
- {isExpanded && lessonLoadingIds.has(item.id) ? (
- <span className="loading loading-spinner loading-xs text-brand" />
- ) : null}
- <FiChevronDown className={`shrink-0 text-muted transition-transform ${isExpanded ? 'rotate-180' : ''}`} aria-hidden />
- </button>
+  lessons.map((item) => {
+  const Icon = contentIcon(item.contentType);
+  const isExpanded = expandedLessonId === item.id;
+  const isLessonDragging = lessonDrag?.lessonId === item.id && lessonDrag?.moduleId === mod.id;
+  const isLessonDragOver = lessonDragOver?.lessonId === item.id && lessonDragOver?.moduleId === mod.id && !isLessonDragging;
+  const isLessonReordering = lessonReorderingIds.has(mod.id);
+  return (
+  <div
+  key={item.id}
+  draggable={false}
+  onDragOver={(e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  if (lessonDrag && lessonDrag.moduleId === mod.id && lessonDrag.lessonId !== item.id) {
+  setLessonDragOver({ moduleId: mod.id, lessonId: item.id });
+  }
+  }}
+  onDragLeave={() => setLessonDragOver((prev) => (prev?.lessonId === item.id && prev?.moduleId === mod.id ? null : prev))}
+  onDrop={(e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  void handleLessonDrop(mod.id, item.id);
+  }}
+  className={`bg-base-100 transition ${isLessonDragging ? 'opacity-50' : ''} ${isLessonDragOver ? 'ring-1 ring-inset ring-brand' : ''} ${isLessonReordering ? 'pointer-events-none opacity-60' : ''}`}
+  >
+  <div className="flex w-full items-center gap-2 border-l-4 pl-1 pr-2 py-0 text-left transition-colors hover:bg-base-200/60 data-[expanded=true]:bg-brand-tint data-[expanded=true]:border-brand" data-expanded={isExpanded}>
+  {/* Lesson drag handle — independent from module drag */}
+  <span
+  draggable={!isLessonReordering}
+  onDragStart={(e) => {
+  e.stopPropagation();
+  setLessonDrag({ moduleId: mod.id, lessonId: item.id });
+  }}
+  onDragEnd={() => { setLessonDrag(null); setLessonDragOver(null); }}
+  className={`flex size-6 shrink-0 items-center justify-center rounded text-muted ${isLessonReordering ? 'cursor-not-allowed opacity-40' : 'cursor-grab hover:bg-base-300 active:cursor-grabbing'}`}
+  aria-label="Drag to reorder lesson"
+  title={isLessonReordering ? 'Saving…' : 'Drag to reorder lesson'}
+  >
+  {isLessonReordering && isLessonDragging ? <span className="loading loading-spinner loading-xs" /> : <FiMove aria-hidden className="text-xs" />}
+  </span>
+  <button
+  type="button"
+  onClick={() => toggleLesson(item.id)}
+  className="flex min-w-0 grow items-center gap-3 py-3 text-left"
+  >
+  <span className={`flex size-8 shrink-0 items-center justify-center rounded-full ${isExpanded ? 'bg-brand text-white' : 'bg-base-200 text-muted'}`}>
+  <Icon aria-hidden className="text-sm" />
+  </span>
+  <span className="min-w-0 grow">
+  <span className="block truncate text-sm font-medium leading-tight">{item.title}</span>
+  <span className="block truncate text-[11px] text-muted">
+  {humanize(item.contentType)} · Order {item.order}
+  {item.estimatedMinutes ? ` · ${item.estimatedMinutes} min` : ''}
+  </span>
+  </span>
+  <StatusBadge status={item.isPublished ? 'Active' : 'Pending'} />
+  {isExpanded && lessonLoadingIds.has(item.id) ? (
+  <span className="loading loading-spinner loading-xs text-brand" />
+  ) : null}
+  <FiChevronDown className={`shrink-0 text-muted transition-transform ${isExpanded ? 'rotate-180' : ''}`} aria-hidden />
+  </button>
+  </div>
 
  {isExpanded ? (
  <div className="border-t border-line bg-base-200/30 px-4 py-4">
@@ -1395,9 +1485,13 @@ function LessonEditor({
  </ul>
  )}
 
- <button type="button" onClick={() => setShowAddActivity(true)} className="mt-4 btn btn-sm gap-2 rounded-full border border-dashed border-sun bg-[#fffbeb] text-[#8A6800] hover:bg-sun hover:text-white">
- <FiPlus aria-hidden /> Add practice activity
- </button>
+          <button type="button" onClick={() => setShowAddActivity(true)} className="mt-4 btn btn-sm gap-2 rounded-full border border-dashed border-sun bg-[#fffbeb] text-[#8A6800] hover:bg-sun hover:text-white">
+            <FiPlus aria-hidden /> Add practice activity
+          </button>
+
+          <div className="mt-6">
+            <ActivityGradingPanel lessonId={lessonId} />
+          </div>
 
  {showAddActivity ? (
  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
