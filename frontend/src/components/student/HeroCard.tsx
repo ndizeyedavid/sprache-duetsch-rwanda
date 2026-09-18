@@ -7,12 +7,13 @@ type Props = {
   campusName: string | null;
   className: string | null;
   balanceLabel: string | null;
+  financeStatus?: string;
   completion: number;
   completed: number;
   total: number;
 };
 
-export function HeroCard({ code, title, campusName, className: groupName, balanceLabel, completion, completed, total }: Props) {
+export function HeroCard({ code, title, campusName, className: groupName, balanceLabel, financeStatus, completion, completed, total }: Props) {
   return (
     <section className="relative overflow-hidden rounded-box bg-brand text-white">
       <div className="relative z-10 max-w-xl p-6 sm:p-7">
@@ -26,7 +27,7 @@ export function HeroCard({ code, title, campusName, className: groupName, balanc
         <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-white/80">
           {campusName ? <span className="rounded-full bg-white/15 px-2.5 py-1">{campusName}</span> : null}
           {groupName ? <span className="rounded-full bg-white/15 px-2.5 py-1">{groupName}</span> : <span className="rounded-full bg-white/15 px-2.5 py-1">No class yet</span>}
-          {balanceLabel ? <span className="rounded-full bg-white px-2.5 py-1 font-semibold text-brand">{balanceLabel}</span> : null}
+          {balanceLabel ? <span className={`rounded-full px-2.5 py-1 font-semibold ${financeStatus === 'OVERDUE' ? 'bg-coral text-white' : 'bg-white text-brand'}`}>{balanceLabel}</span> : null}
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           <Link to="/courses" className="btn btn-sm gap-1 rounded-full bg-white text-brand hover:bg-white/90">

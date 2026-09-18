@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { FiAward, FiBell, FiBookOpen, FiClock, FiEye, FiGrid, FiSettings, FiTrendingUp, FiMove, FiEyeOff } from 'react-icons/fi';
+import { FiAward, FiBell, FiClock, FiEye, FiGrid, FiSettings, FiTrendingUp, FiMove, FiEyeOff, FiLayers } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { Panel } from '../../components/ui/Panel';
 import { ProgressRow } from '../../components/ui/ProgressBar';
@@ -9,7 +9,7 @@ import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/Pa
 import { useApi } from '../../hooks/useApi';
 import { COLORS } from '../../lib/theme';
 import { rwf } from '../../lib/format';
-import { getMyCourses, getMySkills, getStudentDashboard, getUpcomingSessions, money } from '../../lib/services';
+import { getMyCourses, getMySkills, getStudentDashboard, getUpcomingSessions, humanize, money } from '../../lib/services';
 import { HeroCard } from '../../components/student/HeroCard';
 import { CourseProgressCard } from '../../components/student/CourseProgressCard';
 import { UpNextCard } from '../../components/student/UpNextCard';
@@ -19,17 +19,16 @@ import { WeeklyRings } from '../../components/student/WeeklyRings';
 import { useSession } from '../../lib/session';
 import { addWeeks, subWeeks } from 'date-fns';
 
-type WidgetId = 'myCourses' | 'progressOverview' | 'learningStatus' | 'skills' | 'schedule';
+type WidgetId = 'myCourses' | 'learningStatus' | 'skills' | 'attendance';
 
 const WIDGETS: { id: WidgetId; label: string }[] = [
   { id: 'myCourses', label: 'My courses' },
-  { id: 'progressOverview', label: 'Progress overview' },
   { id: 'learningStatus', label: 'Learning status' },
   { id: 'skills', label: 'Skills' },
-  { id: 'schedule', label: 'Upcoming classes' },
+  { id: 'attendance', label: 'Attendance' },
 ];
 
-const DEFAULT_ORDER: WidgetId[] = ['myCourses', 'progressOverview', 'learningStatus', 'skills', 'schedule'];
+const DEFAULT_ORDER: WidgetId[] = ['myCourses', 'learningStatus', 'skills', 'attendance'];
 
 function widgetOrderKey(userId: string | undefined): string { return `student.dashboard.widgets.order.${userId ?? 'anon'}`; }
 function widgetHiddenKey(userId: string | undefined): string { return `student.dashboard.widgets.hidden.${userId ?? 'anon'}`; }
@@ -66,7 +65,10 @@ export function Dashboard() {
       const rawWOrder = localStorage.getItem(widgetOrderKey(user.id));
       if (rawWOrder) {
         const parsed = JSON.parse(rawWOrder) as WidgetId[];
-        if (Array.isArray(parsed) && parsed.length) setWidgetOrder(parsed);
+        if (Array.isArray(parsed) && parsed.length) {
+          const valid = (parsed as unknown as string[]).filter((id) => (WIDGETS as { id: string }[]).some((w) => w.id === id)) as unknown as WidgetId[];
+          if (valid.length) setWidgetOrder(valid);
+        }
       }
       const rawWHidden = localStorage.getItem(widgetHiddenKey(user.id));
       if (rawWHidden) setWidgetHidden(new Set(JSON.parse(rawWHidden) as string[]));
@@ -130,6 +132,7 @@ export function Dashboard() {
 
   const data = dashboard.data;
   const sessions = upcoming.data ?? [];
+  const attendanceTotal = data.attendance.present + data.attendance.absent + data.attendance.late + data.attendance.excused;
   const attendanceBars = [{ label: 'Sessions', present: data.attendance.present, absent: data.attendance.absent, late: data.attendance.late, excused: data.attendance.excused }];
 
   function renderWidget(id: WidgetId) {
@@ -185,25 +188,37 @@ export function Dashboard() {
             ) : null}
           </Panel>
         );
-      case 'progressOverview':
-        return (
-          <div key="progressOverview" className="grid gap-4 lg:grid-cols-3">
-            <Panel className="lg:col-span-2">
-              <h2 className="mb-3 text-sm font-bold">Attendance breakdown</h2>
-              <GroupedBar data={attendanceBars} xKey="label" barSize={22} series={[{ key: 'present', label: 'Present', color: COLORS.brand }, { key: 'late', label: 'Late', color: COLORS.sun }, { key: 'absent', label: 'Absent', color: COLORS.coral }, { key: 'excused', label: 'Excused', color: COLORS.muted }]} height={200} />
-            </Panel>
-            <Panel className="flex flex-col items-center justify-center" padded>
-              <CourseProgressCard completion={data.progress.completionPercentage} code={data.currentLevel?.code ?? null} nextTitle={data.nextLesson?.title ?? null} />
-            </Panel>
-          </div>
-        );
       case 'learningStatus':
         return (
           <Panel key="learningStatus">
             <h2 className="mb-3 flex items-center gap-2 text-sm font-bold"><FiClock aria-hidden className="text-brand" />Learning status</h2>
             <ProgressRow label="Lessons completed" value={data.progress.completionPercentage} caption={`${data.progress.lessonsCompleted}/${data.progress.lessonsTotal}`} tone="brand" />
-            <ProgressRow label="Attendance" value={data.attendance.percentage} caption={`${data.attendance.present} present · ${data.attendance.late} late`} tone="sun" />
-            {data.nextExam ? <p className="mt-2 text-xs text-muted">Next exam: <span className="font-semibold text-ink">{data.nextExam.title}</span> ({data.nextExam.type})</p> : <p className="mt-2 text-xs text-muted">No upcoming exam — keep studying and one will be assigned.</p>}
+            {data.nextExam ? (
+              <p className="mt-3 rounded-box bg-base-200 px-3 py-2 text-xs">
+                <span className="text-muted">Next exam</span> <span className="font-semibold text-ink">{data.nextExam.title}</span>
+                <span className="ml-1 rounded-full bg-brand-soft px-2 py-0.5 text-[11px] font-medium text-brand">{humanize(data.nextExam.type)}</span>
+              </p>
+            ) : <p className="mt-3 text-xs text-muted">No upcoming exam — keep studying and one will be assigned.</p>}
+            <div className="mt-3 lg:hidden">
+              <CourseProgressCard completion={data.progress.completionPercentage} code={data.currentLevel?.code ?? null} nextTitle={data.nextLesson?.title ?? null} />
+            </div>
+          </Panel>
+        );
+      case 'attendance':
+        return (
+          <Panel key="attendance">
+            <h2 className="mb-3 flex items-center gap-2 text-sm font-bold"><FiTrendingUp aria-hidden className="text-brand" />Attendance</h2>
+            {attendanceTotal === 0 ? (
+              <EmptyBlock title="No attendance yet" hint="Attendance appears after your first live class is marked." />
+            ) : (
+              <>
+                <GroupedBar data={attendanceBars} xKey="label" barSize={22} series={[{ key: 'present', label: 'Present', color: COLORS.brand }, { key: 'late', label: 'Late', color: COLORS.sun }, { key: 'absent', label: 'Absent', color: COLORS.coral }, { key: 'excused', label: 'Excused', color: COLORS.muted }]} height={200} />
+                <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs">
+                  <span className="text-muted">{data.attendance.percentage}% overall</span>
+                  {data.attendance.percentage < 75 ? <Link to="/activity" className="rounded-full bg-coral-soft px-2.5 py-1 font-medium text-coral">Low attendance — check in</Link> : <span className="rounded-full bg-success/10 px-2.5 py-1 font-medium text-success">On track</span>}
+                </div>
+              </>
+            )}
           </Panel>
         );
       case 'skills':
@@ -211,26 +226,9 @@ export function Dashboard() {
           <Panel key="skills">
             <div className="mb-3 flex items-center justify-between gap-2">
               <h2 className="text-sm font-bold">Skills</h2>
-              <Link to="/courses" className="text-xs font-medium text-brand hover:underline">My course →</Link>
+              <Link to="/grades" className="text-xs font-medium text-brand hover:underline">Grades →</Link>
             </div>
             {skills.loading ? <LoadingBlock label="Loading skills…" /> : skills.error ? <ErrorBlock message={skills.error} onRetry={skills.refetch} /> : <SkillsPanel skills={skills.data ?? []} />}
-          </Panel>
-        );
-      case 'schedule':
-        return (
-          <Panel key="schedule">
-            <h3 className="mb-3 text-sm font-bold">Upcoming live classes</h3>
-            {upcoming.loading ? <LoadingBlock label="Loading sessions…" /> : upcoming.error ? <ErrorBlock message={upcoming.error} onRetry={upcoming.refetch} /> : sessions.length === 0 ? <EmptyBlock title="No upcoming classes" hint="Your teacher will schedule the next live class — check back soon." /> : (
-              <ul className="space-y-2">
-                {sessions.slice(0, 3).map((s) => (
-                  <li key={s.id} className="rounded-box border border-line bg-base-100 p-3">
-                    <p className="truncate text-xs font-semibold">{s.title}</p>
-                    <p className="truncate text-[11px] text-muted">{s.classGroup?.name ?? '—'} · {s.status}</p>
-                  </li>
-                ))}
-              </ul>
-            )}
-            <Link to="/schedule" className="btn btn-sm mt-3 w-full rounded-full border-line bg-base-100">View full schedule</Link>
           </Panel>
         );
       default: return null;
@@ -249,13 +247,23 @@ export function Dashboard() {
       </div>
       {customize ? <p className="text-right text-xs text-muted">Drag cards to rearrange · Tap eye to hide · Rings stay on the right.</p> : null}
 
-      <HeroCard code={data.currentLevel?.code ?? null} title={data.currentLevel?.title ?? null} campusName={data.campus?.name ?? null} className={data.classGroup?.name ?? null} balanceLabel={data.finance.balance ? `Balance ${rwf(money(data.finance.balance))}` : null} completion={data.progress.completionPercentage} completed={data.progress.lessonsCompleted} total={data.progress.lessonsTotal} />
+      <HeroCard
+        code={data.currentLevel?.code ?? null}
+        title={data.currentLevel?.title ?? null}
+        campusName={data.campus?.name ?? null}
+        className={data.classGroup?.name ?? null}
+        balanceLabel={money(data.finance.balance) !== 0 ? `${humanize(data.finance.status)} · ${rwf(money(data.finance.balance))}` : null}
+        financeStatus={data.finance.status}
+        completion={data.progress.completionPercentage}
+        completed={data.progress.lessonsCompleted}
+        total={data.progress.lessonsTotal}
+      />
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <StatTile label="Syllabus" value={`${data.progress.completionPercentage}%`} tone="brand" icon={FiBookOpen} delta={`${data.progress.lessonsCompleted}/${data.progress.lessonsTotal} lessons`} />
-        <StatTile label="Attendance" value={`${data.attendance.percentage}%`} tone={data.attendance.percentage < 75 ? 'coral' : 'sun'} icon={FiTrendingUp} delta={`${data.attendance.present} present · ${data.attendance.late} late`} />
+        <StatTile label="Courses" value={String(courseList.length)} tone="brand" icon={FiLayers} delta={data.currentLevel ? `${data.currentLevel.code} active` : 'No active level'} />
+        <StatTile label="Attendance" value={`${data.attendance.percentage}%`} tone={data.attendance.percentage < 75 ? 'coral' : 'sun'} icon={FiTrendingUp} delta={data.attendance.percentage < 75 && attendanceTotal > 0 ? 'Low — check activity' : `${data.attendance.present} present · ${data.attendance.late} late`} />
         <StatTile label="Notifications" value={String(data.unreadNotificationsCount)} tone="navy" icon={FiBell} delta={data.nextLesson ? `Next: ${data.nextLesson.title}` : 'All caught up'} />
-        <StatTile label="Next exam" value={data.nextExam ? data.nextExam.title : '—'} tone="coral" icon={FiAward} delta={data.nextExam ? `${data.nextExam.type}` : 'No exam scheduled'} />
+        <StatTile label="Next exam" value={data.nextExam ? humanize(data.nextExam.type) : '—'} tone="coral" icon={FiAward} delta={data.nextExam ? data.nextExam.title : 'No exam scheduled'} />
       </div>
 
       <div className="grid gap-4 xl:grid-cols-12">
@@ -266,12 +274,21 @@ export function Dashboard() {
             return (
               <div
                 key={w.id}
+                role="listitem"
+                aria-grabbed={customize ? isDragging : undefined}
                 draggable={customize}
                 onDragStart={() => { if (customize) setWidgetDragId(w.id); }}
                 onDragEnd={() => { setWidgetDragId(null); setWidgetDragOverId(null); }}
                 onDragOver={(e) => { e.preventDefault(); if (customize && widgetDragId && widgetDragId !== w.id) setWidgetDragOverId(w.id); }}
                 onDrop={(e) => { e.preventDefault(); handleWidgetDrop(w.id); }}
-                className={`relative rounded-box transition ${isDragging ? 'opacity-50' : ''} ${isDragOver ? 'ring-1 ring-brand' : ''} ${customize ? 'cursor-grab active:cursor-grabbing' : ''}`}
+                onKeyDown={(e) => {
+                  if (!customize) return;
+                  const idx = widgetOrder.indexOf(w.id);
+                  if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { e.preventDefault(); if (idx < widgetOrder.length - 1) { const next = [...widgetOrder]; const [m] = next.splice(idx, 1); next.splice(idx + 1, 0, m); setWidgetOrder(next as typeof widgetOrder); } }
+                  if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); if (idx > 0) { const next = [...widgetOrder]; const [m] = next.splice(idx, 1); next.splice(idx - 1, 0, m); setWidgetOrder(next as typeof widgetOrder); } }
+                }}
+                tabIndex={customize ? 0 : undefined}
+                className={`relative rounded-box transition ${isDragging ? 'opacity-50' : ''} ${isDragOver ? 'ring-1 ring-brand' : ''} ${customize ? 'cursor-grab active:cursor-grabbing focus:outline-none focus:ring-1 focus:ring-brand' : ''}`}
               >
                 {customize ? (
                   <div className="absolute right-2 top-2 z-10 flex items-center gap-1">
@@ -305,7 +322,9 @@ export function Dashboard() {
 
         <div className="xl:col-span-4">
           <div className="sticky top-4 space-y-4">
-            <WeeklyRings courses={courseList} weekAnchor={weekAnchor} onPrev={() => setWeekAnchor((d) => subWeeks(d, 1))} onNext={() => setWeekAnchor((d) => addWeeks(d, 1))} onToday={() => setWeekAnchor(new Date())} />
+            <div className="hidden xl:block">
+              <WeeklyRings courses={courseList} weekAnchor={weekAnchor} onPrev={() => setWeekAnchor((d) => subWeeks(d, 1))} onNext={() => setWeekAnchor((d) => addWeeks(d, 1))} onToday={() => setWeekAnchor(new Date())} />
+            </div>
             <Panel><UpNextCard session={data.upcomingClass} sessions={sessions} /></Panel>
           </div>
         </div>

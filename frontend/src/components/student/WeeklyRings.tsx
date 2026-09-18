@@ -65,7 +65,7 @@ export function WeeklyRings({ courses, weekAnchor, onPrev, onNext, onToday }: Pr
   const gap = 5;
 
   return (
-    <div className="rounded-box border border-line bg-base-100 p-4">
+    <div className="rounded-box border border-line bg-base-100 p-4" role="img" aria-label={`Weekly progress ${label}`}>
       <div className="flex items-center justify-between gap-2">
         <h3 className="flex items-center gap-2 text-sm font-bold"><FiClock aria-hidden className="text-brand" />Weekly progress</h3>
         <span className="flex items-center gap-1">

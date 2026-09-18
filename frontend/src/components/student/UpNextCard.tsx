@@ -14,7 +14,8 @@ export function UpNextCard({ session, sessions }: Props) {
       <div className="p-5 text-center">
         <p className="inline-flex items-center gap-2 text-sm font-bold"><FiCalendar aria-hidden className="text-brand" />Up next</p>
         <p className="mt-1 text-xs text-muted">No class scheduled</p>
-        <p className="mt-1 text-[11px] text-muted">Your teacher will schedule the next live class — it appears here.</p>
+        <p className="mt-1 text-xs text-muted">Check the full schedule or ask your teacher.</p>
+        <a href="/schedule" className="btn btn-xs mt-3 rounded-full border-line bg-base-100">View schedule</a>
       </div>
     );
   }
