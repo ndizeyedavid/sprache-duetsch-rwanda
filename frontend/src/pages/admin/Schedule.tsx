@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { addDays, addMonths, format, isSameDay, parseISO, subDays, subMonths } from 'date-fns';
+import { addDays, addMonths, endOfWeek, format, isSameDay, parseISO, startOfWeek, subDays, subMonths } from 'date-fns';
 import { FiCalendar } from 'react-icons/fi';
 import { Panel } from '../../components/ui/Panel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
@@ -56,11 +56,13 @@ export function AdminSchedule() {
  list = list.filter((s) => s.title.toLowerCase().includes(needle) || (s.classGroup?.name ?? '').toLowerCase().includes(needle));
  }
  if (view === 'agenda') return [...list].sort((a, b) => new Date(a.startAt).getTime() - new Date(b.startAt).getTime());
- if (view === 'week') {
- const start = new Date(anchor); start.setDate(anchor.getDate() - anchor.getDay() + 1); start.setHours(0, 0, 0, 0);
- const end = new Date(start); end.setDate(end.getDate() + 7);
- return list.filter((s) => { const d = new Date(s.startAt); return d >= start && d < end; });
- }
+  if (view === 'week') {
+  const start = startOfWeek(anchor, { weekStartsOn: 1 });
+  start.setHours(0, 0, 0, 0);
+  const end = endOfWeek(anchor, { weekStartsOn: 1 });
+  end.setHours(23, 59, 59, 999);
+  return list.filter((s) => { const d = new Date(s.startAt); return d >= start && d <= end; });
+  }
  const m = anchor.getMonth(); const y = anchor.getFullYear();
  return list.filter((s) => { const d = new Date(s.startAt); return d.getMonth() === m && d.getFullYear() === y; });
  }, [sessions.data, classFilter, statusFilter, q, view, anchor]);
