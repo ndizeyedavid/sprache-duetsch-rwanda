@@ -50,6 +50,12 @@ const Teachers = lazy(() =>
 const Grades = lazy(() =>
   import("./pages/student/Grades").then((module) => ({ default: module.Grades })),
 );
+const Assignments = lazy(() =>
+  import("./pages/student/Assignments").then((module) => ({ default: module.Assignments })),
+);
+const AssignmentDetail = lazy(() =>
+  import("./pages/student/AssignmentDetail").then((module) => ({ default: module.AssignmentDetail })),
+);
 const Profile = lazy(() =>
   import("./pages/student/Profile").then((module) => ({ default: module.Profile })),
 );
@@ -204,6 +210,8 @@ function AppRoutes() {
             <Route path="/courses/:slug/learn/:lessonId" element={<StudentLesson />} />
             <Route path="/courses/:slug/learn/:lessonId/activity/:activityId" element={<StudentActivity />} />
   <Route path="/schedule" element={<Schedule />} />
+  <Route path="/assignments" element={<Assignments />} />
+  <Route path="/assignments/:id" element={<AssignmentDetail />} />
   <Route path="/grades" element={<Grades />} />
   <Route path="/instructors" element={<Teachers />} />
   <Route path="/messages" element={<Messages />} />

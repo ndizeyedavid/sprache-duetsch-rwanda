@@ -177,6 +177,21 @@ contentRouter.get(
   asyncHandler(controller.myNotes),
 );
 
+contentRouter.get(
+  "/my/assignments",
+  requireAuth,
+  requireRole("STUDENT"),
+  asyncHandler(controller.myAssignments),
+);
+
+contentRouter.get(
+  "/my/assignments/:id",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: idParamsSchema }),
+  asyncHandler(controller.myAssignmentDetail),
+);
+
 // ---------------------------------------------------------------------------
 // Activity submissions (student submit + redo, teacher grading)
 // ---------------------------------------------------------------------------

@@ -975,6 +975,36 @@ export function gradeActivitySubmission(id: string, body: { score?: number; isCo
   return apiPatch<ActivitySubmission>(`/content/activity-submissions/${id}/grade`, body);
 }
 
+export type AssignmentItem = {
+  id: string;
+  source: "ACTIVITY" | "ASSESSMENT";
+  activityId: string | null;
+  assessmentId: string | null;
+  lessonId: string | null;
+  title: string;
+  type: string;
+  levelId: string;
+  levelCode: string;
+  levelTitle: string;
+  moduleTitle: string | null;
+  lessonTitle: string | null;
+  dueAt: string | null;
+  points: number;
+  maxScore: number;
+  score: number | null;
+  status: string;
+  submittedAt: string | null;
+  attemptCount: number;
+};
+
+export function getMyAssignments(): Promise<AssignmentItem[]> {
+  return apiGet<AssignmentItem[]>("/content/my/assignments");
+}
+
+export function getMyAssignmentDetail(id: string): Promise<{ source: string; activity?: unknown; assessment?: unknown; submission?: unknown; lesson?: unknown; level?: unknown; attempts?: unknown[] }> {
+  return apiGet(`/content/my/assignments/${encodeURIComponent(id)}`);
+}
+
 // ---------------------------------------------------------------------------
 // Assessment authoring (teacher + academic): question bank + assessments
 // ---------------------------------------------------------------------------

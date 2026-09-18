@@ -138,6 +138,17 @@ export const myNotes = async (req: Request, res: Response): Promise<void> => {
   res.json({ success: true, ...result });
 };
 
+export const myAssignments = async (req: Request, res: Response): Promise<void> => {
+  const data = await service.getMyAssignments(req.user?.id ?? "");
+  res.json({ success: true, data });
+};
+
+export const myAssignmentDetail = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const data = await service.getMyAssignmentDetail(req.user?.id ?? "", id);
+  res.json({ success: true, data });
+};
+
 // ---------------------------------------------------------------------------
 // Activity submissions
 // ---------------------------------------------------------------------------
