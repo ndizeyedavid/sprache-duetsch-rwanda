@@ -104,6 +104,24 @@ export const updateProgressSchema = z.object({
   secondsWatched: z.coerce.number().int().min(0).optional(),
 });
 
+export const submitActivitySchema = z.object({
+  response: z.unknown(),
+});
+
+export const gradeActivitySubmissionSchema = z.object({
+  score: z.coerce.number().min(0).max(100).optional(),
+  isCorrect: z.boolean().optional(),
+  feedback: optionalText(5000),
+});
+
+export const listActivitySubmissionsQuerySchema = z.object({
+  lessonId: z.string().min(1).optional(),
+  activityId: z.string().min(1).optional(),
+  studentId: z.string().min(1).optional(),
+  status: z.enum(["SUBMITTED", "GRADED"]).optional(),
+  ...paginationQuery,
+});
+
 export const myNotesQuerySchema = z.object({
   type: noteMaterialTypeSchema.optional(),
   search: optionalText(200),
@@ -126,5 +144,8 @@ export type UpdateMaterialInput = z.infer<typeof updateMaterialSchema>;
 export type CreateActivityInput = z.infer<typeof createActivitySchema>;
 export type UpdateActivityInput = z.infer<typeof updateActivitySchema>;
 export type UpdateProgressInput = z.infer<typeof updateProgressSchema>;
+export type SubmitActivityInput = z.infer<typeof submitActivitySchema>;
+export type GradeActivitySubmissionInput = z.infer<typeof gradeActivitySubmissionSchema>;
+export type ListActivitySubmissionsQuery = z.infer<typeof listActivitySubmissionsQuerySchema>;
 export type MyNotesQuery = z.infer<typeof myNotesQuerySchema>;
 export type SearchQuery = z.infer<typeof searchQuerySchema>;

@@ -10,10 +10,13 @@ import {
   createLessonSchema,
   createMaterialSchema,
   createModuleSchema,
+  gradeActivitySubmissionSchema,
   idParamsSchema,
   levelIdParamsSchema,
+  listActivitySubmissionsQuerySchema,
   myNotesQuerySchema,
   searchQuerySchema,
+  submitActivitySchema,
   updateActivitySchema,
   updateLessonSchema,
   updateMaterialSchema,
@@ -172,6 +175,49 @@ contentRouter.get(
   requireRole("STUDENT"),
   validate({ query: myNotesQuerySchema }),
   asyncHandler(controller.myNotes),
+);
+
+// ---------------------------------------------------------------------------
+// Activity submissions (student submit + redo, teacher grading)
+// ---------------------------------------------------------------------------
+
+contentRouter.post(
+  "/activities/:id/submit",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: idParamsSchema, body: submitActivitySchema }),
+  asyncHandler(controller.submitActivity),
+);
+
+contentRouter.get(
+  "/activities/:id/my-submission",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: idParamsSchema }),
+  asyncHandler(controller.myActivitySubmission),
+);
+
+contentRouter.get(
+  "/my/activity-submissions",
+  requireAuth,
+  requireRole("STUDENT"),
+  asyncHandler(controller.myActivitySubmissions),
+);
+
+contentRouter.get(
+  "/activity-submissions",
+  requireAuth,
+  requireRole(...ACADEMIC_ROLES),
+  validate({ query: listActivitySubmissionsQuerySchema }),
+  asyncHandler(controller.listActivitySubmissions),
+);
+
+contentRouter.patch(
+  "/activity-submissions/:id/grade",
+  requireAuth,
+  requireRole(...ACADEMIC_ROLES),
+  validate({ params: idParamsSchema, body: gradeActivitySubmissionSchema }),
+  asyncHandler(controller.gradeActivitySubmission),
 );
 
 // ---------------------------------------------------------------------------

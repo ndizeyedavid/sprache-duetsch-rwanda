@@ -5,8 +5,11 @@ import type {
   CreateLessonInput,
   CreateMaterialInput,
   CreateModuleInput,
+  GradeActivitySubmissionInput,
+  ListActivitySubmissionsQuery,
   MyNotesQuery,
   SearchQuery,
+  SubmitActivityInput,
   UpdateActivityInput,
   UpdateLessonInput,
   UpdateMaterialInput,
@@ -133,6 +136,39 @@ export const updateProgress = async (req: Request, res: Response): Promise<void>
 export const myNotes = async (req: Request, res: Response): Promise<void> => {
   const result = await service.getStudentNotes(req.user?.id ?? "", validatedQuery<MyNotesQuery>(req));
   res.json({ success: true, ...result });
+};
+
+// ---------------------------------------------------------------------------
+// Activity submissions
+// ---------------------------------------------------------------------------
+
+export const submitActivity = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const result = await service.submitActivity(req.user?.id ?? "", id, validatedBody<SubmitActivityInput>(req));
+  res.json({ success: true, data: result });
+};
+
+export const myActivitySubmission = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const result = await service.getMyActivitySubmission(req.user?.id ?? "", id);
+  res.json({ success: true, data: result });
+};
+
+export const myActivitySubmissions = async (req: Request, res: Response): Promise<void> => {
+  const { lessonId } = validatedQuery<{ lessonId?: string }>(req);
+  const result = await service.listMyActivitySubmissions(req.user?.id ?? "", lessonId);
+  res.json({ success: true, data: result });
+};
+
+export const listActivitySubmissions = async (req: Request, res: Response): Promise<void> => {
+  const result = await service.listActivitySubmissions(actor(req), validatedQuery<ListActivitySubmissionsQuery>(req));
+  res.json({ success: true, ...result });
+};
+
+export const gradeActivitySubmission = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const result = await service.gradeActivitySubmission(actor(req), id, validatedBody<GradeActivitySubmissionInput>(req));
+  res.json({ success: true, data: result });
 };
 
 // ---------------------------------------------------------------------------

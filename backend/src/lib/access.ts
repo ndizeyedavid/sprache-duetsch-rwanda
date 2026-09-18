@@ -23,7 +23,7 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
       currentLevelId: true,
       finance: { select: { status: true, balance: true } },
       enrollments: {
-        where: { status: "ACTIVE" },
+        where: { status: { in: ["ACTIVE", "COMPLETED"] } },
         select: { levelId: true, classGroupId: true },
       },
     },

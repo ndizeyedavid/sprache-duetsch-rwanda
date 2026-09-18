@@ -250,6 +250,7 @@ model User {
   passwordResetTokens PasswordResetToken[]
   auditLogs          AuditLog[]       @relation("AuditActor")
   attemptsGraded     Attempt[]        @relation("AttemptGrader")
+  activitySubmissionsGraded ActivitySubmission[] @relation("ActivitySubmissionGrader")
   certificatesIssued Certificate[]    @relation("CertificateIssuer")
   materialsUploaded  LessonMaterial[] @relation("MaterialUploader")
   sessionMaterials   SessionMaterial[] @relation("SessionMaterialUploader")
@@ -425,6 +426,7 @@ model Student {
   attendance     Attendance[]
   attempts       Attempt[]
   lessonProgress LessonProgress[]
+  activitySubmissions ActivitySubmission[]
   charges        Charge[]
   payments       Payment[]
   discounts      Discount[]
@@ -582,8 +584,41 @@ model Activity {
   updatedAt    DateTime     @updatedAt
 
   lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  submissions ActivitySubmission[]
 
   @@index([lessonId])
+}
+
+enum ActivitySubmissionStatus {
+  SUBMITTED
+  GRADED
+}
+
+model ActivitySubmission {
+  id           String                     @id @default(uuid())
+  activityId   String
+  studentId    String
+  response     Json?
+  isCorrect    Boolean?
+  score        Decimal?                   @db.Decimal(5, 2)
+  maxScore     Decimal                    @default(1) @db.Decimal(5, 2)
+  status       ActivitySubmissionStatus   @default(SUBMITTED)
+  feedback     String?
+  attemptNumber Int                       @default(1)
+  submittedAt  DateTime                   @default(now())
+  gradedAt     DateTime?
+  gradedById   String?
+  createdAt    DateTime                   @default(now())
+  updatedAt    DateTime                   @updatedAt
+
+  activity Activity @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  student  Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  gradedBy User?    @relation("ActivitySubmissionGrader", fields: [gradedById], references: [id])
+
+  @@unique([activityId, studentId])
+  @@index([studentId])
+  @@index([activityId])
+  @@index([status])
 }
 
 // ---------------------------------------------------------------------------
