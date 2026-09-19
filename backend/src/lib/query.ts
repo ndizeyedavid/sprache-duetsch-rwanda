@@ -12,6 +12,10 @@ export const booleanQuery = z
   .enum(["true", "false", "1", "0"])
   .transform((value) => value === "true" || value === "1");
 
-export const optionalText = (max = 240) => z.string().trim().max(max).optional();
+export const optionalText = (max = 240) =>
+  z
+    .union([z.string().trim().max(max), z.null(), z.literal("")])
+    .optional()
+    .transform((v) => (typeof v === "string" && v.trim() !== "" ? v.trim() : undefined));
 
 export const idParam = z.object({ id: z.string().min(1) });

@@ -16,7 +16,7 @@ export const notFoundHandler: RequestHandler = (req, res) => {
 };
 
 const PRISMA_STATUS: Record<string, { status: number; code: string; message: string }> = {
-  P2002: { status: 409, code: "DUPLICATE", message: "A record with these details already exists" },
+  P2002: { status: 409, code: "DUPLICATE", message: "A record with this order already exists — try again, it will auto-place at the next slot" },
   P2003: { status: 409, code: "FK_CONSTRAINT", message: "Related record constraint failed" },
   P2025: { status: 404, code: "NOT_FOUND", message: "Record not found" },
 };

@@ -146,6 +146,26 @@
   }
 }
 
+/* TipTap — ensure lists and headings match prose rendering */
+.ProseMirror { outline: none; min-height: 120px; }
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #a098ae;
+  pointer-events: none;
+  height: 0;
+  font-size: 0.875rem;
+}
+.ProseMirror ul, .ProseMirror ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+.ProseMirror ul { list-style: disc; }
+.ProseMirror ol { list-style: decimal; }
+.ProseMirror h1 { font-size: 1.5rem; font-weight: 700; margin: 0.75rem 0 0.25rem; }
+.ProseMirror h2 { font-size: 1.25rem; font-weight: 700; margin: 0.6rem 0 0.25rem; }
+.ProseMirror h3 { font-size: 1.05rem; font-weight: 700; margin: 0.5rem 0 0.25rem; }
+.ProseMirror blockquote { border-left: 2px solid #fb0d00; padding-left: 0.75rem; margin: 0.5rem 0; color: #374557; }
+.ProseMirror img { max-width: 100%; border-radius: 0; margin: 0.5rem auto; display: block; }
+.ProseMirror a { color: #fb0d00; text-decoration: underline; }
+
 /* NProgress — brand-tinted top bar for route changes.
    This file must be imported after `nprogress/nprogress.css` (see main.tsx),
    otherwise the default blue bar wins the cascade. */

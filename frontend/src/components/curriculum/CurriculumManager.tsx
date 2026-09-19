@@ -22,23 +22,23 @@ import {
 } from 'react-icons/fi';
 import { Panel, SectionHeader } from '../ui/Panel';
 import { StatusBadge } from '../ui/StatusBadge';
-import { ActivityGradingPanel } from '../teacher/ActivityGradingPanel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../common/PageState';
 import { useApi } from '../../hooks/useApi';
-import { apiErrorMessage } from '../../lib/api';
+import { RichTextEditor } from '../ui/RichTextEditor';
+import { apiErrorMessage, apiFieldErrors } from '../../lib/api';
 import {
- createActivity,
- createLesson,
- createLevel,
- createMaterial,
- createModule,
- deleteLesson,
- getLesson,
- humanize,
- listLevelModules,
- updateLesson,
- updateModule,
- uploadFile,
+  createActivity,
+  createLesson,
+  createLevel,
+  createMaterial,
+  createModule,
+  deleteLesson,
+  getLesson,
+  humanize,
+  listLevelModules,
+  updateLesson,
+  updateModule,
+  uploadFile,
 } from '../../lib/services';
 import type { LevelItem } from '../../lib/services';
 
@@ -383,8 +383,9 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  modules.refetch();
  }
 
- const [error, setError] = useState<string | null>(null);
- const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+  const [busy, setBusy] = useState(false);
 
  // Forms
  const [levelForm, setLevelForm] = useState({ code: '', title: '', levelLabel: '', defaultFee: '' });
@@ -395,18 +396,20 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  const [materialForm, setMaterialForm] = useState({ title: '', type: 'NOTE', url: '' });
  const [activityForm, setActivityForm] = useState({ title: '', type: 'MCQ', instructions: '' });
 
- async function run(action: () => Promise<unknown>, fallback: string, after?: () => void) {
- setError(null);
- setBusy(true);
- try {
- await action();
- after?.();
- } catch (err) {
- setError(apiErrorMessage(err, fallback));
- } finally {
- setBusy(false);
- }
- }
+  async function run(action: () => Promise<unknown>, fallback: string, after?: () => void) {
+  setError(null);
+  setFieldErrors({});
+  setBusy(true);
+  try {
+  await action();
+  after?.();
+  } catch (err) {
+  setError(apiErrorMessage(err, fallback));
+  setFieldErrors(apiFieldErrors(err));
+  } finally {
+  setBusy(false);
+  }
+  }
 
  const totalLessons = useMemo(
  () => (modules.data ?? []).reduce((acc, m) => acc + m.lessons.length, 0),
@@ -498,9 +501,9 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  <span className="mb-1.5 block text-xs font-medium">Default fee (RWF)</span>
  <input value={levelForm.defaultFee} onChange={(e) => { const v = e.currentTarget.value; setLevelForm((f) => ({ ...f, defaultFee: v })) }} inputMode="numeric" placeholder="e.g. 45000" className="input input w-full rounded-field border-line bg-base-100" />
  </label>
- <button type="submit" disabled={busy} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- Create level
- </button>
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : null} Create level
+  </button>
  </form>
  </div>
  </details>
@@ -552,13 +555,13 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  <span className="mb-1.5 block text-xs font-medium">Module title</span>
  <input required value={moduleForm.title} onChange={(e) => { const v = e.currentTarget.value; setModuleForm((f) => ({ ...f, title: v })) }} placeholder="e.g. Module 1: Foundations" className="input input w-full rounded-full border-line bg-base-200" />
  </label>
- <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- <FiPlus aria-hidden /> Add module
- </button>
- </form>
- </Panel>
- ) : (
- <div className="space-y-4">
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add module
+  </button>
+  </form>
+  </Panel>
+  ) : (
+  <div className="space-y-4">
  {reordering ? (
  <p className="flex items-center gap-2 text-xs text-muted" role="status" aria-live="polite">
  <span className="loading loading-spinner loading-xs text-brand" /> Saving new order…
@@ -751,26 +754,28 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  ) : lessonErrors[item.id] || !lessonCache[item.id] ? (
  <ErrorBlock message={lessonErrors[item.id] ?? 'Could not load this lesson.'} onRetry={() => void ensureLessonLoaded(item.id)} />
  ) : (
- <LessonEditor
- lessonId={item.id}
- data={lessonCache[item.id]}
- busy={busy}
- onRun={run}
- onSaved={() => refreshCachedLesson(item.id)}
- onDeleted={() => {
- setExpandedLessonId(null);
- setLessonCache((prev) => {
- const next = { ...prev };
- delete next[item.id];
- return next;
- });
- modules.refetch();
- }}
- materialForm={materialForm}
- setMaterialForm={setMaterialForm}
- activityForm={activityForm}
- setActivityForm={setActivityForm}
- />
+  <LessonEditor
+  lessonId={item.id}
+  data={lessonCache[item.id]}
+  busy={busy}
+  onRun={run}
+  fieldErrors={fieldErrors}
+  onFieldErrorsChange={setFieldErrors}
+  onSaved={() => refreshCachedLesson(item.id)}
+  onDeleted={() => {
+  setExpandedLessonId(null);
+  setLessonCache((prev) => {
+  const next = { ...prev };
+  delete next[item.id];
+  return next;
+  });
+  modules.refetch();
+  }}
+  materialForm={materialForm}
+  setMaterialForm={setMaterialForm}
+  activityForm={activityForm}
+  setActivityForm={setActivityForm}
+  />
  )}
  </div>
  ) : null}
@@ -828,19 +833,19 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  ))}
  </select>
  </label>
- <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- <FiPlus aria-hidden /> Add lesson
- </button>
- </form>
- </div>
- </div>
- ) : null}
- </div>
- );
- })}
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add lesson
+  </button>
+  </form>
+  </div>
+  </div>
+  ) : null}
+  </div>
+  );
+  })}
 
- <Panel>
- <SectionHeader title="Add a module" />
+  <Panel>
+  <SectionHeader title="Add a module" />
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -860,23 +865,23 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  >
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Module title</span>
- <input
- required
- value={moduleForm.title}
- onChange={(e) => { const v = e.currentTarget.value; setModuleForm((f) => ({ ...f, title: v })) }}
- placeholder="e.g. Module 2: Everyday German"
- className="input input w-full rounded-full border-line bg-base-200"
- />
- </label>
- <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- <FiPlus aria-hidden /> Add module
- </button>
- </form>
- </Panel>
- </div>
- )}
- </div>
- );
+  <input
+  required
+  value={moduleForm.title}
+  onChange={(e) => { const v = e.currentTarget.value; setModuleForm((f) => ({ ...f, title: v })) }}
+  placeholder="e.g. Module 2: Everyday German"
+  className="input input w-full rounded-full border-line bg-base-200"
+  />
+  </label>
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add module
+  </button>
+  </form>
+  </Panel>
+  </div>
+  )}
+  </div>
+  );
 }
 
 function materialIcon(type: string) {
@@ -897,51 +902,55 @@ function materialIcon(type: string) {
 }
 
 function LessonEditor({
- lessonId,
- data,
- busy,
- onRun,
- onSaved,
- onDeleted,
- materialForm,
- setMaterialForm,
- activityForm,
- setActivityForm,
+  lessonId,
+  data,
+  busy,
+  onRun,
+  fieldErrors,
+  onFieldErrorsChange,
+  onSaved,
+  onDeleted,
+  materialForm,
+  setMaterialForm,
+  activityForm,
+  setActivityForm,
 }: {
- lessonId: string;
- data: NonNullable<ReturnType<typeof useApi>['data']> & {
- title: string;
- contentType: string;
- body: string | null;
- videoUrl: string | null;
- audioUrl: string | null;
- estimatedMinutes: number | null;
- isPublished: boolean;
- materials: {
- id: string;
- title: string;
- type: string;
- url: string | null;
- isDownloadable: boolean;
- mimeType: string | null;
- }[];
- activities: {
- id: string;
- title: string;
- type: string;
- instructions: string | null;
- order: number;
- isPublished: boolean;
- }[];
- };
- busy: boolean;
- onRun: (action: () => Promise<unknown>, fallback: string, after?: () => void) => Promise<void>;
- onSaved: () => void;
- onDeleted: () => void;
- materialForm: { title: string; type: string; url: string };
- setMaterialForm: React.Dispatch<React.SetStateAction<{ title: string; type: string; url: string }>>;
- activityForm: { title: string; type: string; instructions: string };
- setActivityForm: React.Dispatch<React.SetStateAction<{ title: string; type: string; instructions: string }>>;
+  lessonId: string;
+  data: NonNullable<ReturnType<typeof useApi>['data']> & {
+  title: string;
+  contentType: string;
+  body: string | null;
+  videoUrl: string | null;
+  audioUrl: string | null;
+  estimatedMinutes: number | null;
+  isPublished: boolean;
+  materials: {
+  id: string;
+  title: string;
+  type: string;
+  url: string | null;
+  isDownloadable: boolean;
+  mimeType: string | null;
+  }[];
+  activities: {
+  id: string;
+  title: string;
+  type: string;
+  instructions: string | null;
+  order: number;
+  isPublished: boolean;
+  }[];
+  };
+  busy: boolean;
+  onRun: (action: () => Promise<unknown>, fallback: string, after?: () => void) => Promise<void>;
+  fieldErrors: Record<string, string>;
+  onFieldErrorsChange: React.Dispatch<React.SetStateAction<Record<string, string>>>;
+  onSaved: () => void;
+  onDeleted: () => void;
+  materialForm: { title: string; type: string; url: string };
+  setMaterialForm: React.Dispatch<React.SetStateAction<{ title: string; type: string; url: string }>>;
+  activityForm: { title: string; type: string; instructions: string };
+  setActivityForm: React.Dispatch<React.SetStateAction<{ title: string; type: string; instructions: string }>>;
 }) {
  const [edit, setEdit] = useState({
  title: data.title,
@@ -1000,80 +1009,85 @@ function LessonEditor({
  </span>
  </div>
  <div className="space-y-4 p-4">
- <div className="grid gap-3 sm:grid-cols-2">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Lesson title</span>
- <input value={edit.title} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, title: v })) }} placeholder="e.g. Greetings & Introductions" className="input input w-full rounded-field border-line bg-base-100" />
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Content type</span>
- <select value={edit.contentType} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, contentType: v })) }} className="select select w-full rounded-field border-line bg-base-100">
- {CONTENT_TYPES.map((t) => (
- <option key={t} value={t}>
- {humanize(t)}
- </option>
- ))}
- </select>
- </label>
- </div>
- <div className="grid gap-3 sm:grid-cols-2">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Duration (minutes)</span>
- <input value={edit.estimatedMinutes} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, estimatedMinutes: v })) }} inputMode="numeric" placeholder="e.g. 30" className="input input w-full rounded-field border-line bg-base-100" />
- </label>
- <label className="flex items-center gap-2 pt-6 text-xs font-medium">
- <input type="checkbox" className="checkbox checkbox-sm" checked={edit.isPublished} onChange={(e) => { const v = e.currentTarget.checked; setEdit((f) => ({ ...f, isPublished: v })) }} />
- Published — visible to students
- </label>
- </div>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Lesson notes</span>
- <textarea value={edit.body} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, body: v })) }} placeholder="Write the lesson content, explanations and examples..." rows={4} className="textarea w-full rounded-field border-line bg-base-100" />
- </label>
- <div className="grid gap-3 sm:grid-cols-2">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Video URL</span>
- <input value={edit.videoUrl} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, videoUrl: v })) }} placeholder="https://youtube.com/..." className="input input w-full rounded-field border-line bg-base-100" />
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Audio URL</span>
- <input value={edit.audioUrl} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, audioUrl: v })) }} placeholder="https://..." className="input input w-full rounded-field border-line bg-base-100" />
- </label>
- </div>
+  <div className="grid gap-3 sm:grid-cols-2">
+  <label className="block">
+  <span className="mb-1.5 block text-xs font-medium">Lesson title</span>
+  <input value={edit.title} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, title: v })); if (fieldErrors.title) onFieldErrorsChange((prev) => { const n = { ...prev }; delete n.title; return n; }) }} placeholder="e.g. Greetings & Introductions" className={`input input w-full rounded-field bg-base-100 ${fieldErrors.title ? 'input-error border-error' : 'border-line'}`} aria-invalid={Boolean(fieldErrors.title)} />
+  {fieldErrors.title ? <p className="mt-1 text-xs text-error">{fieldErrors.title}</p> : null}
+  </label>
+  <label className="block">
+  <span className="mb-1.5 block text-xs font-medium">Content type</span>
+  <select value={edit.contentType} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, contentType: v })); if (fieldErrors.contentType) onFieldErrorsChange((prev) => { const n = { ...prev }; delete n.contentType; return n; }) }} className={`select select w-full rounded-field bg-base-100 ${fieldErrors.contentType ? 'select-error border-error' : 'border-line'}`}>
+  {CONTENT_TYPES.map((t) => (
+  <option key={t} value={t}>
+  {humanize(t)}
+  </option>
+  ))}
+  </select>
+  {fieldErrors.contentType ? <p className="mt-1 text-xs text-error">{fieldErrors.contentType}</p> : null}
+  </label>
+  </div>
+  <div className="grid gap-3 sm:grid-cols-2">
+  <label className="block">
+  <span className="mb-1.5 block text-xs font-medium">Duration (minutes)</span>
+  <input value={edit.estimatedMinutes} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, estimatedMinutes: v })); if (fieldErrors.estimatedMinutes) onFieldErrorsChange((prev) => { const n = { ...prev }; delete n.estimatedMinutes; return n; }) }} inputMode="numeric" placeholder="e.g. 30" className={`input input w-full rounded-field bg-base-100 ${fieldErrors.estimatedMinutes ? 'input-error border-error' : 'border-line'}`} />
+  {fieldErrors.estimatedMinutes ? <p className="mt-1 text-xs text-error">{fieldErrors.estimatedMinutes}</p> : null}
+  </label>
+  <label className="flex items-center gap-2 pt-6 text-xs font-medium">
+  <input type="checkbox" className="checkbox checkbox-sm" checked={edit.isPublished} onChange={(e) => { const v = e.currentTarget.checked; setEdit((f) => ({ ...f, isPublished: v })) }} />
+  Published — visible to students
+  </label>
+  </div>
+  <label className="block">
+  <span className="mb-1.5 block text-xs font-medium">Lesson notes — rich text</span>
+  <RichTextEditor value={edit.body} onChange={(html) => { setEdit((f) => ({ ...f, body: html })); if (fieldErrors.body) onFieldErrorsChange((prev) => { const n = { ...prev }; delete n.body; return n; }) }} placeholder="Write the lesson content — bold, colors, headings, lists, images…" error={fieldErrors.body ?? null} />
+  </label>
+  <div className="grid gap-3 sm:grid-cols-2">
+  <label className="block">
+  <span className="mb-1.5 block text-xs font-medium">Video URL</span>
+  <input value={edit.videoUrl} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, videoUrl: v })); if (fieldErrors.videoUrl) onFieldErrorsChange((prev) => { const n = { ...prev }; delete n.videoUrl; return n; }) }} placeholder="https://youtube.com/..." className={`input input w-full rounded-field bg-base-100 ${fieldErrors.videoUrl ? 'input-error border-error' : 'border-line'}`} aria-invalid={Boolean(fieldErrors.videoUrl)} />
+  {fieldErrors.videoUrl ? <p className="mt-1 text-xs text-error">{fieldErrors.videoUrl}</p> : null}
+  </label>
+  <label className="block">
+  <span className="mb-1.5 block text-xs font-medium">Audio URL</span>
+  <input value={edit.audioUrl} onChange={(e) => { const v = e.currentTarget.value; setEdit((f) => ({ ...f, audioUrl: v })); if (fieldErrors.audioUrl) onFieldErrorsChange((prev) => { const n = { ...prev }; delete n.audioUrl; return n; }) }} placeholder="https://..." className={`input input w-full rounded-field bg-base-100 ${fieldErrors.audioUrl ? 'input-error border-error' : 'border-line'}`} aria-invalid={Boolean(fieldErrors.audioUrl)} />
+  {fieldErrors.audioUrl ? <p className="mt-1 text-xs text-error">{fieldErrors.audioUrl}</p> : null}
+  </label>
+  </div>
 
- <div className="flex flex-wrap gap-2">
- <button
- type="button"
- disabled={busy}
- onClick={() =>
- onRun(
- () =>
- updateLesson(lessonId, {
- title: edit.title.trim(),
- contentType: edit.contentType,
- body: edit.body.trim() || null,
- videoUrl: edit.videoUrl.trim() || null,
- audioUrl: edit.audioUrl.trim() || null,
- estimatedMinutes: edit.estimatedMinutes ? Number(edit.estimatedMinutes) : null,
- isPublished: edit.isPublished,
- }),
- 'Could not save the lesson.',
- onSaved,
- )
- }
- className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
- >
- Save lesson
- </button>
- <button
- type="button"
- disabled={busy}
- onClick={() => onRun(() => deleteLesson(lessonId), 'Could not delete the lesson.', onDeleted)}
- className="btn btn-sm gap-1 rounded-full border-0 bg-coral text-white hover:bg-coral/90 disabled:opacity-60"
- >
- <FiTrash2 aria-hidden /> Delete lesson
- </button>
- </div>
+  <div className="flex flex-wrap gap-2">
+  <button
+  type="button"
+  disabled={busy}
+  onClick={() =>
+  onRun(
+  () =>
+  updateLesson(lessonId, {
+  title: edit.title.trim(),
+  contentType: edit.contentType,
+  body: edit.body.trim() || null,
+  videoUrl: edit.videoUrl.trim() || null,
+  audioUrl: edit.audioUrl.trim() || null,
+  estimatedMinutes: edit.estimatedMinutes ? Number(edit.estimatedMinutes) : null,
+  isPublished: edit.isPublished,
+  }),
+  'Could not save the lesson.',
+  onSaved,
+  )
+  }
+  className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+  >
+  {busy ? <span className="loading loading-spinner loading-xs" /> : null} Save lesson
+  </button>
+  <button
+  type="button"
+  disabled={busy}
+  onClick={() => onRun(() => deleteLesson(lessonId), 'Could not delete the lesson.', onDeleted)}
+  className="btn btn-sm gap-1 rounded-full border-0 bg-coral text-white hover:bg-coral/90 disabled:opacity-60"
+  >
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiTrash2 aria-hidden />} Delete lesson
+  </button>
+  </div>
  </div>
  </div>
 
@@ -1228,9 +1242,9 @@ function LessonEditor({
  <button type="button" onClick={() => setEditingMaterialId(null)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
- <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- <FiCheck aria-hidden /> Save changes
- </button>
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiCheck aria-hidden />} Save changes
+  </button>
  </div>
  </form>
  </div>
@@ -1324,9 +1338,9 @@ function LessonEditor({
  <button type="button" onClick={() => setShowAddMaterial(false)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
- <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- <FiPlus aria-hidden /> Add resource
- </button>
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add resource
+  </button>
  </div>
  </form>
  </div>
@@ -1472,9 +1486,9 @@ function LessonEditor({
  <button type="button" onClick={() => setEditingActivityId(null)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
- <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- <FiCheck aria-hidden /> Save changes
- </button>
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiCheck aria-hidden />} Save changes
+  </button>
  </div>
  </form>
  </div>
@@ -1485,13 +1499,9 @@ function LessonEditor({
  </ul>
  )}
 
-          <button type="button" onClick={() => setShowAddActivity(true)} className="mt-4 btn btn-sm gap-2 rounded-full border border-dashed border-sun bg-[#fffbeb] text-[#8A6800] hover:bg-sun hover:text-white">
-            <FiPlus aria-hidden /> Add practice activity
-          </button>
-
-          <div className="mt-6">
-            <ActivityGradingPanel lessonId={lessonId} />
-          </div>
+           <button type="button" onClick={() => setShowAddActivity(true)} className="mt-4 btn btn-sm gap-2 rounded-full border border-dashed border-sun bg-[#fffbeb] text-[#8A6800] hover:bg-sun hover:text-white">
+             <FiPlus aria-hidden /> Add practice activity
+           </button>
 
  {showAddActivity ? (
  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
@@ -1642,9 +1652,9 @@ function LessonEditor({
  <button type="button" onClick={() => setShowAddActivity(false)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
- <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- <FiPlus aria-hidden /> Add activity
- </button>
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add activity
+  </button>
  </div>
  </form>
  </div>

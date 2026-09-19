@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FiArrowRight, FiCheck, FiClock, FiDownload, FiExternalLink, FiFileText, FiFilm, FiLayers, FiMusic } from 'react-icons/fi';
 import { StatusBadge } from '../ui/StatusBadge';
+import { RichTextViewer } from '../ui/RichTextViewer';
 import { humanize } from '../../lib/services';
 
 function materialIcon(type: string) {
@@ -72,7 +73,7 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
 
       {detail.videoUrl ? <video key={detail.videoUrl} controls preload="metadata" className="w-full rounded-box bg-night"><source src={detail.videoUrl} /></video> : null}
       {detail.audioUrl ? <audio key={detail.audioUrl} controls preload="metadata" className="w-full"><source src={detail.audioUrl} /></audio> : null}
-      {detail.body ? <div className="whitespace-pre-wrap rounded-box border border-line bg-base-200/40 p-5 text-sm leading-relaxed">{detail.body}</div> : null}
+      <RichTextViewer html={detail.body} />
 
       {detail.materials.length > 0 ? (
         <div className="overflow-hidden rounded-box border border-line bg-base-100">
