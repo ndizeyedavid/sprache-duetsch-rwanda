@@ -6,7 +6,7 @@ import type { Filter } from './constants';
 import { TONE_CLASSES } from '../../lib/theme';
 import { initials } from './utils';
 
-type Attempt = { id: string; status: string; assessment: { title: string }; student: { studentCode: string; user: { firstName: string; lastName: string } }; submittedAt: string | null; score: number | null };
+type Attempt = { id: string; status: string; cheatFlagged?: boolean; cheatCount?: number; assessment: { title: string }; student: { studentCode: string; user: { firstName: string; lastName: string } }; submittedAt: string | null; score: number | null };
 
 type Props = {
  attempts: Attempt[];
@@ -61,10 +61,11 @@ export function QueueList({ attempts, loading, error, onRetry, filter, onFilter,
  <span className="min-w-0 grow">
  <span className="block truncate text-xs font-semibold leading-tight">{a.assessment.title}</span>
  <span className="block truncate text-[11px] text-muted">{a.student.user.firstName} {a.student.user.lastName} · {a.student.studentCode}</span>
- <span className="mt-1 flex flex-wrap items-center gap-1.5">
- <span className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${tc.soft} ${tc.text}`}>{humanize(a.status)}</span>
- <span className="text-[11px] text-muted">{a.score != null ? `${a.score} pts` : isoDate(a.submittedAt) ?? '—'}</span>
- </span>
+  <span className="mt-1 flex flex-wrap items-center gap-1.5">
+  <span className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${tc.soft} ${tc.text}`}>{humanize(a.status)}</span>
+  <span className="text-[11px] text-muted">{a.score != null ? `${a.score} pts` : isoDate(a.submittedAt) ?? '—'}</span>
+  {a.cheatFlagged ? <span className="rounded-full bg-error px-2 py-0.5 text-[11px] font-bold text-white">Flagged · {a.cheatCount ?? 3}</span> : a.cheatCount ? <span className="rounded-full bg-warning/20 px-2 py-0.5 text-[11px] font-medium text-warning">{a.cheatCount} violations</span> : null}
+  </span>
  </span>
  {active ? <FiInbox aria-hidden className="shrink-0 text-brand" /> : null}
  </button>

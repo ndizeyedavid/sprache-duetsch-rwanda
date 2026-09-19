@@ -9,7 +9,7 @@ import {
 import { useApi } from "../../hooks/useApi";
 import { downloadFile } from "../../lib/api";
 import { apiErrorMessage } from "../../lib/api";
-import { listAssessments, listAttempts, listClasses } from "../../lib/services";
+import { listActivitySubmissions, listAssessments, listAttempts, listClasses } from "../../lib/services";
 import { COLORS } from "../../lib/theme";
 import { AreaTrend } from "../../components/charts/AreaTrend";
 import { DonutChart } from "../../components/charts/DonutChart";
@@ -18,6 +18,9 @@ import { ReportsToolbar } from "../../components/reports/ReportsToolbar";
 import { KpiStrip } from "../../components/reports/KpiStrip";
 import { StudentTable } from "../../components/reports/StudentTable";
 import {
+  activityDistribution,
+  activityPerTitle,
+  activityTrendByWeek,
   distribution,
   filterByDate,
   perAssessment,
@@ -81,6 +84,7 @@ export function TeacherReports() {
       listAttempts(undefined, classId ?? undefined, assessmentId ?? undefined),
     true,
   );
+  const activitySubs = useApi("activity-subs-report", () => listActivitySubmissions({}));
 
   const baseAttempts = useMemo(
     () => attemptsFiltered.data ?? attemptsRaw.data ?? [],
@@ -142,17 +146,24 @@ export function TeacherReports() {
       trendByWeek(attempts as never).map((d) => ({ week: d.date, avg: d.avg })),
     [attempts],
   );
+  const actTrend = useMemo(() => activityTrendByWeek((activitySubs.data ?? []) as never), [activitySubs.data]);
+  const actDist = useMemo(() => activityDistribution((activitySubs.data ?? []) as never), [activitySubs.data]);
+  const actPer = useMemo(() => activityPerTitle((activitySubs.data ?? []) as never), [activitySubs.data]);
   const dist = useMemo(() => distribution(attempts as never), [attempts]);
   const perAss = useMemo(() => perAssessment(attempts as never), [attempts]);
   const students = useMemo(() => studentRows(attempts as never), [attempts]);
+  const actTotal = (activitySubs.data ?? []).length;
+  const actGraded = ((activitySubs.data ?? []) as { status: string }[]).filter((s) => s.status === "GRADED").length;
   const loading =
     attemptsFiltered.loading ||
     attemptsRaw.loading ||
+    activitySubs.loading ||
     classes.loading ||
     assessments.loading;
   const error =
     attemptsFiltered.error ||
     attemptsRaw.error ||
+    activitySubs.error ||
     classes.error ||
     assessments.error;
 
@@ -331,11 +342,13 @@ export function TeacherReports() {
             passRate={passRate}
             atRisk={atRisk}
             pending={pending}
+            actTotal={actTotal}
+            actGraded={actGraded}
           />
 
           <div className="grid gap-4 lg:grid-cols-12">
             <Panel className="lg:col-span-8">
-              <SectionHeader title="Performance trend" />
+              <SectionHeader title="Performance trend — exams" />
               {trend.length === 0 ? (
                 <EmptyBlock
                   title="Not enough graded data"
@@ -349,12 +362,10 @@ export function TeacherReports() {
                   suffix="%"
                 />
               )}
-              <p className="mt-2 text-[11px] text-muted">
-                Weekly average of graded scores — hover for values.
-              </p>
+              <p className="mt-2 text-[11px] text-muted">Weekly average of graded exam scores.</p>
             </Panel>
             <Panel className="lg:col-span-4">
-              <SectionHeader title="Status split" />
+              <SectionHeader title="Exam status" />
               {(() => {
                 const sub = pending;
                 const grd = graded;
@@ -385,8 +396,38 @@ export function TeacherReports() {
           </div>
 
           <div className="grid gap-4 lg:grid-cols-12">
+            <Panel className="lg:col-span-8">
+              <SectionHeader title="Activity trend" />
+              {actTrend.length === 0 ? (
+                <EmptyBlock title="No graded activity data" hint="Trend appears once activities are graded." />
+              ) : (
+                <AreaTrend
+                  data={actTrend as never}
+                  xKey="date"
+                  series={[{ key: "avg", label: "Avg %", color: COLORS.navy }]}
+                  suffix="%"
+                />
+              )}
+              <p className="mt-2 text-[11px] text-muted">Weekly average score for lesson activities (0-1 scaled to %).</p>
+            </Panel>
+            <Panel className="lg:col-span-4">
+              <SectionHeader title="Activity scores" />
+              {actDist.every((d) => d.count === 0) ? (
+                <EmptyBlock title="No graded activities yet" />
+              ) : (
+                <GroupedBar
+                  data={actDist.map((d) => ({ bucket: d.bucket, count: d.count }))}
+                  xKey="bucket"
+                  series={[{ key: "count", label: "Students", color: COLORS.navy }]}
+                  height={240}
+                />
+              )}
+            </Panel>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-12">
             <Panel className="lg:col-span-6">
-              <SectionHeader title="Grade distribution" />
+              <SectionHeader title="Grade distribution — exams" />
               {dist.every((d) => d.count === 0) ? (
                 <EmptyBlock title="No graded scores yet" />
               ) : (
@@ -428,6 +469,36 @@ export function TeacherReports() {
             </Panel>
           </div>
 
+          <div className="grid gap-4 lg:grid-cols-12">
+            <Panel className="lg:col-span-6">
+              <SectionHeader title="Activity scores" />
+              {actDist.every((d) => d.count === 0) ? (
+                <EmptyBlock title="No activity scores yet" />
+              ) : (
+                <GroupedBar
+                  data={actDist.map((d) => ({ bucket: `Score ${d.bucket}`, count: d.count }))}
+                  xKey="bucket"
+                  series={[{ key: "count", label: "Students", color: COLORS.navy }]}
+                  height={240}
+                />
+              )}
+            </Panel>
+            <Panel className="lg:col-span-6">
+              <SectionHeader title="By activity" />
+              {actPer.length === 0 ? (
+                <EmptyBlock title="No activity data" hint="Grade activities to see averages." />
+              ) : (
+                <GroupedBar
+                  data={actPer.map((a) => ({ name: a.name, avg: a.avg }))}
+                  xKey="name"
+                  series={[{ key: "avg", label: "Avg %", color: COLORS.brand }]}
+                  height={240}
+                  suffix="%"
+                />
+              )}
+            </Panel>
+          </div>
+
           <Panel>
             <div className="flex flex-wrap items-center justify-between gap-3">
               <SectionHeader
@@ -436,7 +507,7 @@ export function TeacherReports() {
               />
               <span className="flex items-center gap-1 text-xs text-muted">
                 <FiAward aria-hidden className="text-brand" />
-                Click a header to sort — like Canvas gradebook
+                Click a header to sort
               </span>
             </div>
             <div className="mt-4">

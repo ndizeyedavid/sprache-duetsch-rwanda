@@ -9,5 +9,5 @@ export const FILTER_META: Record<Filter, { label: string; icon: typeof FiInbox; 
   IN_PROGRESS: { label: 'In progress', icon: FiClock, tone: 'sun', desc: 'Student is working' },
 };
 
-export const VIEWS = ['queue', 'gradebook'] as const;
+export const VIEWS = ['queue', 'gradebook', 'activities'] as const;
 export type View = (typeof VIEWS)[number];

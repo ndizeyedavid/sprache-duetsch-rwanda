@@ -23,6 +23,7 @@ import type { Filter, View } from "../../components/grading/constants";
 import { QueueList } from "../../components/grading/QueueList";
 import { GradingDetail } from "../../components/grading/GradingDetail";
 import { GradebookPanel } from "../../components/grading/GradebookPanel";
+import { ActivityGradingPanel } from "../../components/teacher/ActivityGradingPanel";
 
 export function TeacherGrading() {
  const [searchParams, setSearchParams] = useSearchParams();
@@ -210,22 +211,29 @@ export function TeacherGrading() {
  </option>
  ))}
  </select>
- <div className="tabs tabs-boxed bg-base-200 p-1">
- <button
- type="button"
- onClick={() => setView("queue")}
- className={`tab tab-sm ${view === "queue" ? "tab-active bg-brand text-white" : ""}`}
- >
- Queue
- </button>
- <button
- type="button"
- onClick={() => setView("gradebook")}
- className={`tab tab-sm ${view === "gradebook" ? "tab-active bg-brand text-white" : ""}`}
- >
- Gradebook
- </button>
- </div>
+  <div className="tabs tabs-boxed bg-base-200 p-1">
+  <button
+  type="button"
+  onClick={() => setView("queue")}
+  className={`tab tab-sm ${view === "queue" ? "tab-active bg-brand text-white" : ""}`}
+  >
+  Queue
+  </button>
+  <button
+  type="button"
+  onClick={() => setView("gradebook")}
+  className={`tab tab-sm ${view === "gradebook" ? "tab-active bg-brand text-white" : ""}`}
+  >
+  Gradebook
+  </button>
+  <button
+  type="button"
+  onClick={() => setView("activities")}
+  className={`tab tab-sm ${view === "activities" ? "tab-active bg-brand text-white" : ""}`}
+  >
+  Activities
+  </button>
+  </div>
  </div>
  {assessmentId ? (
  <div className="mt-3 flex flex-wrap items-center gap-2 rounded-full border border-brand/20 bg-brand-soft px-4 py-2 text-xs">
@@ -249,9 +257,19 @@ export function TeacherGrading() {
  ) : null}
  </Panel>
 
- {view === "gradebook" ? (
- <Panel>
- <SectionHeader title="Gradebook" />
+  {view === "activities" ? (
+  <Panel>
+  <SectionHeader title="Lesson activities" />
+  <p className="mb-3 text-xs leading-snug text-muted">
+  Submissions from lesson practice activities across your levels. Grade, give feedback and track completion here.
+  </p>
+  <ActivityGradingPanel />
+  </Panel>
+  ) : null}
+
+  {view === "gradebook" ? (
+  <Panel>
+  <SectionHeader title="Gradebook" />
  {!classGroupId ? (
  <EmptyBlock
  title="Select a class"
@@ -306,9 +324,9 @@ export function TeacherGrading() {
  </Panel>
  ) : null}
 
- <div
- className={`grid gap-5 lg:grid-cols-12 ${view === "gradebook" ? "hidden lg:grid" : ""}`}
- >
+  <div
+  className={`grid gap-5 lg:grid-cols-12 ${view === "gradebook" || view === "activities" ? "hidden lg:grid" : ""}`}
+  >
  <Panel className="lg:col-span-4 xl:col-span-4">
  <SectionHeader
  title={`Submissions · ${list.length}`}

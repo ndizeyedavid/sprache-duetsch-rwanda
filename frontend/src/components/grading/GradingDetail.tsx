@@ -5,7 +5,7 @@ import { humanize } from '../../lib/services';
 import { AnswerCard } from './AnswerCard';
 
 type Attempt = {
- id: string; status: string; attemptNumber: number; score: number | null; maxScore: number; passed: boolean | null; feedback: string | null;
+ id: string; status: string; attemptNumber: number; score: number | null; maxScore: number; passed: boolean | null; feedback: string | null; cheatFlagged?: boolean; cheatCount?: number; cheatLog?: { type: string; at: string }[];
  student: { name: string; studentCode: string };
  assessment: { title: string; passMark: unknown; type: string };
  answers: { id: string; prompt: string; type: string; maxPoints: number; response: unknown; isCorrect: boolean | null; pointsAwarded: number; feedback: string | null }[];
@@ -63,11 +63,13 @@ export function GradingDetail({ selectedId, loading, error, data, onRetry, index
  </div>
  </div>
 
- <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
- <span className="rounded-full bg-brand-soft px-3 py-1 font-semibold text-[#B30A00]"><FiAward aria-hidden className="inline" /> {earned} / {possible} pts</span>
- {data.score != null ? <span className="rounded-full bg-base-200 px-3 py-1 font-medium">{data.score} scored</span> : null}
- {data.passed != null ? <span className={`rounded-full px-3 py-1 font-medium ${data.passed ? 'bg-brand-soft text-[#B30A00]' : 'bg-coral-soft text-[#D8482F]'}`}>{data.passed ? 'Passed' : 'Not passed'}</span> : null}
- </div>
+  <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
+  <span className="rounded-full bg-brand-soft px-3 py-1 font-semibold text-[#B30A00]"><FiAward aria-hidden className="inline" /> {earned} / {possible} pts</span>
+  {data.score != null ? <span className="rounded-full bg-base-200 px-3 py-1 font-medium">{data.score} scored</span> : null}
+  {data.passed != null ? <span className={`rounded-full px-3 py-1 font-medium ${data.passed ? 'bg-brand-soft text-[#B30A00]' : 'bg-coral-soft text-[#D8482F]'}`}>{data.passed ? 'Passed' : 'Not passed'}</span> : null}
+  {data.cheatFlagged ? <span className="rounded-full bg-error px-3 py-1 font-bold text-white">Flagged · {data.cheatCount ?? 3} violations</span> : data.cheatCount ? <span className="rounded-full bg-warning/20 px-3 py-1 font-medium text-warning">{data.cheatCount} violations</span> : null}
+  </div>
+  {data.cheatLog && data.cheatLog.length ? <p className="mb-3 rounded-box bg-error/10 px-3 py-2 text-xs font-medium text-error">Cheat log: {data.cheatLog.map((v) => `${v.type} @ ${new Date(v.at).toLocaleTimeString()}`).join(" · ")}</p> : null}
 
  {!hasAnswers ? <EmptyBlock title="No answers" hint="This attempt has no recorded answers." /> : (
  <ul className="space-y-3">
