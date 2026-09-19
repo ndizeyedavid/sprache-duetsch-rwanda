@@ -211,7 +211,7 @@ export const listContacts = async (userId: string) => {
       select: {
         id: true,
         enrollments: {
-          where: { status: "ACTIVE" },
+          where: { status: { in: ["ACTIVE", "COMPLETED"] } },
           select: { classGroupId: true },
         },
       },
@@ -223,7 +223,7 @@ export const listContacts = async (userId: string) => {
 
     const [classmates, groups] = await Promise.all([
       prisma.enrollment.findMany({
-        where: { classGroupId: { in: groupIds }, status: "ACTIVE", student: { userId: { not: userId } } },
+        where: { classGroupId: { in: groupIds }, status: { in: ["ACTIVE", "COMPLETED"] }, student: { userId: { not: userId } } },
         select: {
           student: {
             select: { user: { select: { id: true, firstName: true, lastName: true, role: true } } },
@@ -253,7 +253,7 @@ export const listContacts = async (userId: string) => {
     if (groupIds.length === 0) return [];
 
     const enrollments = await prisma.enrollment.findMany({
-      where: { classGroupId: { in: groupIds }, status: "ACTIVE" },
+      where: { classGroupId: { in: groupIds }, status: { in: ["ACTIVE", "COMPLETED"] } },
       select: {
         student: {
           select: { user: { select: { id: true, firstName: true, lastName: true, role: true } } },

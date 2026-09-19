@@ -84,7 +84,7 @@ export const getClass = async (id: string) => {
       campus: briefCampus,
       teacher: briefTeacher,
       enrollments: {
-        where: { status: "ACTIVE" },
+        where: { status: { in: ["ACTIVE", "COMPLETED"] } },
         select: {
           student: {
             select: {

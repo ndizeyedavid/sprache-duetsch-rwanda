@@ -239,7 +239,7 @@ const notifyEnrolledStudents = async (
   data: Prisma.InputJsonValue,
 ): Promise<void> => {
   const enrollments = await prisma.enrollment.findMany({
-    where: { classGroupId, status: "ACTIVE" },
+    where: { classGroupId, status: { in: ["ACTIVE", "COMPLETED"] } },
     select: { student: { select: { userId: true } } },
   });
   const userIds = [...new Set(enrollments.map((enrollment) => enrollment.student.userId))];
@@ -419,7 +419,7 @@ export const getSessionRoster = async (id: string) => {
   }
 
   const enrollments = await prisma.enrollment.findMany({
-    where: { classGroupId: session.classGroupId, status: "ACTIVE" },
+    where: { classGroupId: session.classGroupId, status: { in: ["ACTIVE", "COMPLETED"] } },
     orderBy: { enrolledAt: "asc" },
     select: {
       student: {
@@ -524,7 +524,7 @@ export const markAttendance = async (
   await assertTeacherIfNeeded(actorId, actorRole, session.classGroupId);
 
   const enrollments = await prisma.enrollment.findMany({
-    where: { classGroupId: session.classGroupId, status: "ACTIVE" },
+    where: { classGroupId: session.classGroupId, status: { in: ["ACTIVE", "COMPLETED"] } },
     select: { student: { select: { id: true, userId: true } } },
   });
   const studentUserIds = new Map(
