@@ -204,6 +204,14 @@ contentRouter.post(
   asyncHandler(controller.submitActivity),
 );
 
+contentRouter.post(
+  "/activities/:id/violation",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: idParamsSchema }),
+  asyncHandler(controller.recordActivityViolation),
+);
+
 contentRouter.get(
   "/activities/:id/my-submission",
   requireAuth,

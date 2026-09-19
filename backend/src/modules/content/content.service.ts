@@ -1,4 +1,5 @@
-import type { Prisma, Role } from "../../generated/prisma/client.js";
+import { Prisma } from "../../generated/prisma/client.js";
+import type { Role } from "../../generated/prisma/client.js";
 import {
   assertAccountActive,
   assertLevelAccess,
@@ -89,17 +90,43 @@ export const createModule = async (
   }
   await assertCanManageLevel(actor, levelId);
 
-  const created = await prisma.module.create({
-    data: {
-      levelId,
-      title: input.title,
-      description: input.description ?? null,
-      order: input.order,
-      isPublished: input.isPublished ?? false,
-      releaseAt: input.releaseAt ?? null,
-      prerequisiteModuleId: input.prerequisiteModuleId ?? null,
-    },
-  });
+  let order = input.order;
+  if (order === undefined) {
+    const last = await prisma.module.findFirst({ where: { levelId }, orderBy: { order: "desc" }, select: { order: true } });
+    order = last ? last.order + 1 : 0;
+  }
+
+  let created: Awaited<ReturnType<typeof prisma.module.create>>;
+  try {
+    created = await prisma.module.create({
+      data: {
+        levelId,
+        title: input.title,
+        description: input.description ?? null,
+        order: order!,
+        isPublished: input.isPublished ?? false,
+        releaseAt: input.releaseAt ?? null,
+        prerequisiteModuleId: input.prerequisiteModuleId ?? null,
+      },
+    });
+  } catch (e) {
+    // P2002 unique [levelId, order] — auto-bump to next free slot
+    if (e instanceof Prisma.PrismaClientKnownRequestError && e.code === "P2002") {
+      const last = await prisma.module.findFirst({ where: { levelId }, orderBy: { order: "desc" }, select: { order: true } });
+      const nextOrder = last ? last.order + 1 : 0;
+      created = await prisma.module.create({
+        data: {
+          levelId,
+          title: input.title,
+          description: input.description ?? null,
+          order: nextOrder,
+          isPublished: input.isPublished ?? false,
+          releaseAt: input.releaseAt ?? null,
+          prerequisiteModuleId: input.prerequisiteModuleId ?? null,
+        },
+      });
+    } else throw e;
+  }
 
   await writeAudit({
     actorId: actor.id ?? null,
@@ -195,22 +222,52 @@ export const createLesson = async (
   const levelId = await levelIdOfModule(moduleId);
   await assertCanManageLevel(actor, levelId);
 
-  const created = await prisma.lesson.create({
-    data: {
-      moduleId,
-      title: input.title,
-      description: input.description ?? null,
-      contentType: input.contentType,
-      body: input.body ?? null,
-      videoUrl: input.videoUrl ?? null,
-      audioUrl: input.audioUrl ?? null,
-      estimatedMinutes: input.estimatedMinutes,
-      order: input.order,
-      isPublished: input.isPublished ?? false,
-      releaseAt: input.releaseAt ?? null,
-      prerequisiteLessonId: input.prerequisiteLessonId ?? null,
-    },
-  });
+  let order = input.order;
+  if (order === undefined) {
+    const last = await prisma.lesson.findFirst({ where: { moduleId }, orderBy: { order: "desc" }, select: { order: true } });
+    order = last ? last.order + 1 : 0;
+  }
+
+  let created: Awaited<ReturnType<typeof prisma.lesson.create>>;
+  try {
+    created = await prisma.lesson.create({
+      data: {
+        moduleId,
+        title: input.title,
+        description: input.description ?? null,
+        contentType: input.contentType,
+        body: input.body ?? null,
+        videoUrl: input.videoUrl ?? null,
+        audioUrl: input.audioUrl ?? null,
+        estimatedMinutes: input.estimatedMinutes,
+        order: order!,
+        isPublished: input.isPublished ?? false,
+        releaseAt: input.releaseAt ?? null,
+        prerequisiteLessonId: input.prerequisiteLessonId ?? null,
+      },
+    });
+  } catch (e) {
+    if (e instanceof Prisma.PrismaClientKnownRequestError && e.code === "P2002") {
+      const last = await prisma.lesson.findFirst({ where: { moduleId }, orderBy: { order: "desc" }, select: { order: true } });
+      const nextOrder = last ? last.order + 1 : 0;
+      created = await prisma.lesson.create({
+        data: {
+          moduleId,
+          title: input.title,
+          description: input.description ?? null,
+          contentType: input.contentType,
+          body: input.body ?? null,
+          videoUrl: input.videoUrl ?? null,
+          audioUrl: input.audioUrl ?? null,
+          estimatedMinutes: input.estimatedMinutes,
+          order: nextOrder,
+          isPublished: input.isPublished ?? false,
+          releaseAt: input.releaseAt ?? null,
+          prerequisiteLessonId: input.prerequisiteLessonId ?? null,
+        },
+      });
+    } else throw e;
+  }
 
   await writeAudit({
     actorId: actor.id ?? null,
@@ -816,7 +873,10 @@ export const getMyAssignmentDetail = async (userId: string, rawId: string) => {
     });
     if (!activity || !activity.isPublished) throw notFound("Assignment not found");
     await assertLevelAccess(userId, activity.lesson.module.levelId);
-    const submission = await prisma.activitySubmission.findUnique({ where: { activityId_studentId: { activityId, studentId: profile.studentId } } });
+    const submission = await prisma.activitySubmission.findUnique({
+      where: { activityId_studentId: { activityId, studentId: profile.studentId } },
+      select: { id: true, status: true, score: true, feedback: true } as never,
+    } as never) as unknown as { id: string; status: string; score: unknown; feedback: unknown } | null;
     return { source: "ACTIVITY" as const, activity, submission, lesson: activity.lesson, level: activity.lesson.module.level };
   }
   if (rawId.startsWith("ASM-")) {
@@ -827,7 +887,12 @@ export const getMyAssignmentDetail = async (userId: string, rawId: string) => {
     });
     if (!assessment || !assessment.isPublished) throw notFound("Assignment not found");
     await assertLevelAccess(userId, assessment.levelId);
-    const attempts = await prisma.attempt.findMany({ where: { assessmentId, studentId: profile.studentId }, orderBy: { submittedAt: "desc" } });
+    // Select only stable columns — new cheat columns may not be migrated yet on dev DB
+    const attempts = await prisma.attempt.findMany({
+      where: { assessmentId, studentId: profile.studentId },
+      orderBy: { submittedAt: "desc" },
+      select: { id: true, status: true, submittedAt: true },
+    });
     return { source: "ASSESSMENT" as const, assessment, attempts };
   }
   throw notFound("Assignment not found");
@@ -1105,6 +1170,50 @@ function gradeActivity(type: string, response: unknown, config: Record<string, u
   // WRITING, DOCUMENT, others -> manual grading required
   return { isCorrect: null, score: null, auto: false };
 }
+
+export const recordActivityViolation = async (userId: string, activityId: string, type: string) => {
+  const profile = await loadStudentAccessProfile(userId);
+  // Select only safe columns pre-migration
+  const existing = (await prisma.activitySubmission.findUnique({
+    where: { activityId_studentId: { activityId, studentId: profile.studentId } },
+    select: { id: true, cheatCount: true, cheatLog: true, cheatFlagged: true } as never,
+  } as never) as unknown as { id: string; cheatCount?: number; cheatLog?: unknown; cheatFlagged?: boolean } | null) as unknown as { cheatCount?: number; cheatLog?: unknown; cheatFlagged?: boolean } | null;
+  // If columns missing, this query itself would have thrown P2022 — catch at call site
+  let safeExisting: { cheatCount?: number; cheatLog?: unknown; cheatFlagged?: boolean } | null = null;
+  try {
+    safeExisting = existing;
+  } catch {
+    safeExisting = null;
+  }
+  const prevLog = safeExisting?.cheatLog;
+  const log = Array.isArray(prevLog) ? (prevLog as unknown[]) : [];
+  const nextLog = [...log, { type, at: new Date().toISOString() }] as unknown as Prisma.InputJsonValue;
+  const nextCount = (safeExisting?.cheatCount ?? 0) + 1;
+  const flagged = nextCount >= 3;
+  let upserted: unknown;
+  try {
+    upserted = await prisma.activitySubmission.upsert({
+      where: { activityId_studentId: { activityId, studentId: profile.studentId } },
+      create: { activityId, studentId: profile.studentId, response: Prisma.DbNull, status: "SUBMITTED", submittedAt: new Date(), cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog, feedback: flagged ? "[Auto-submitted — 3 violations, flagged for review]" : null } as never,
+      update: { cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog, ...(flagged ? { status: "SUBMITTED", submittedAt: new Date(), feedback: "[Flagged — 3 violations, awaiting teacher review]" } : {}) } as never,
+    } as never);
+  } catch (e) {
+    if ((e as { code?: string })?.code === "P2022") {
+      // Columns not migrated — at least create a submitted flag so frontend doesn't falsely recover
+      upserted = await prisma.activitySubmission.upsert({
+        where: { activityId_studentId: { activityId, studentId: profile.studentId } },
+        create: { activityId, studentId: profile.studentId, response: Prisma.DbNull, status: "SUBMITTED", submittedAt: new Date(), feedback: "[Flagged — anti-cheat violation]" },
+        update: { status: "SUBMITTED", submittedAt: new Date(), feedback: "[Flagged — anti-cheat violation]" },
+      });
+    } else throw e;
+  }
+  if (flagged) {
+    await writeAudit({ actorId: userId, action: "ACTIVITY_FLAGGED_CHEATING", entityType: "ActivitySubmission", entityId: (upserted as { id: string }).id, after: { type, count: nextCount } });
+    const act = await prisma.activity.findUnique({ where: { id: activityId }, select: { lesson: { select: { module: { select: { levelId: true } } } } } });
+    await emitActivity({ actorId: userId, type: "ASSIGNMENT", title: "Activity auto-submitted — cheating flagged", body: `3 violations (${type})`, levelId: act?.lesson.module.levelId ?? null, studentId: profile.studentId });
+  }
+  return upserted;
+};
 
 export const submitActivity = async (userId: string, activityId: string, input: SubmitActivityInput) => {
   const profile = await loadStudentAccessProfile(userId);

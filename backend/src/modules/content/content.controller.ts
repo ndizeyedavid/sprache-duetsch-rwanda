@@ -182,6 +182,13 @@ export const gradeActivitySubmission = async (req: Request, res: Response): Prom
   res.json({ success: true, data: result });
 };
 
+export const recordActivityViolation = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const { type } = req.body as { type?: string };
+  const result = await service.recordActivityViolation(req.user?.id ?? "", id, type ?? "unknown");
+  res.json({ success: true, data: result });
+};
+
 // ---------------------------------------------------------------------------
 // Search
 // ---------------------------------------------------------------------------

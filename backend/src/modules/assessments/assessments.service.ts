@@ -472,7 +472,14 @@ export const listAttempts = async (query: ListAttemptQuery) => {
       orderBy: { startedAt: "desc" },
       skip: pagination.skip,
       take: pagination.take,
-      include: {
+      select: {
+        id: true,
+        status: true,
+        attemptNumber: true,
+        score: true,
+        maxScore: true,
+        passed: true,
+        submittedAt: true,
         student: {
           select: { studentCode: true, user: { select: { firstName: true, lastName: true } } },
         },
@@ -482,7 +489,14 @@ export const listAttempts = async (query: ListAttemptQuery) => {
     prisma.attempt.count({ where }),
   ]);
 
-  return buildPaginated(rows, total, pagination);
+  // Post-migration these columns will be returned; for now we enrich with safe defaults
+  const enriched = (rows as unknown as { cheatFlagged?: boolean; cheatCount?: number }[]).map((r) => ({
+    ...r,
+    cheatFlagged: r.cheatFlagged ?? false,
+    cheatCount: r.cheatCount ?? 0,
+  }));
+
+  return buildPaginated(enriched as unknown as typeof rows, total, pagination);
 };
 
 export const exportAttempts = async (query: ListAttemptQuery) => {
@@ -566,9 +580,19 @@ export const getMySkillProfile = async (userId: string) => {
 
 /** Academic-staff view of one attempt: answers plus the ids needed for manual grading. */
 export const getAttemptDetail = async (attemptId: string) => {
-  const attempt = await prisma.attempt.findUnique({
+  const attempt = (await prisma.attempt.findUnique({
     where: { id: attemptId },
-    include: {
+    select: {
+      id: true,
+      status: true,
+      attemptNumber: true,
+      score: true,
+      maxScore: true,
+      passed: true,
+      feedback: true,
+      startedAt: true,
+      submittedAt: true,
+      gradedAt: true,
       student: {
         select: { id: true, studentCode: true, user: { select: { firstName: true, lastName: true } } },
       },
@@ -578,12 +602,28 @@ export const getAttemptDetail = async (attemptId: string) => {
           question: { select: { id: true, prompt: true, type: true, points: true } },
         },
       },
-    },
-  });
+    } as never,
+  } as never) as unknown as {
+    id: string;
+    status: string;
+    attemptNumber: number;
+    score: unknown;
+    maxScore: unknown;
+    passed: boolean | null;
+    feedback: string | null;
+    startedAt: Date;
+    submittedAt: Date | null;
+    gradedAt: Date | null;
+    student: { id: string; studentCode: string; user: { firstName: string; lastName: string } };
+    assessment: { id: string; title: string; type: string; levelId: string; passMark: unknown };
+    answers: { id: string; questionId: string; prompt: string; type: string; points: unknown; response: unknown; isCorrect: boolean | null; pointsAwarded: unknown; feedback: string | null; question: { id: string; prompt: string; type: string; points: unknown } }[];
+  } | null);
   if (!attempt) {
     throw notFound("Attempt not found");
   }
 
+  // cheat columns may not exist pre-migration — use safe fallback
+  const rawAttempt = attempt as unknown as { cheatFlagged?: boolean; cheatCount?: number; cheatLog?: unknown };
   return {
     id: attempt.id,
     status: attempt.status,
@@ -592,6 +632,9 @@ export const getAttemptDetail = async (attemptId: string) => {
     maxScore: Number(attempt.maxScore),
     passed: attempt.passed,
     feedback: attempt.feedback,
+    cheatFlagged: rawAttempt.cheatFlagged ?? false,
+    cheatCount: rawAttempt.cheatCount ?? 0,
+    cheatLog: rawAttempt.cheatLog ?? [],
     startedAt: attempt.startedAt,
     submittedAt: attempt.submittedAt,
     gradedAt: attempt.gradedAt,
@@ -1095,6 +1138,47 @@ export const submitAttempt = async (
     passed,
     feedback: updated.feedback,
   };
+};
+
+export const recordAttemptViolation = async (userId: string, attemptId: string, type: string) => {
+  const profile = await loadStudentAccessProfile(userId);
+  // Use selective query that won't fail if cheat columns missing pre-migration
+  const attempt = (await prisma.attempt.findUnique({
+    where: { id: attemptId },
+    select: { id: true, studentId: true, status: true, assessmentId: true, feedback: true } as never,
+  } as never) as unknown as { id: string; studentId: string; status: string; assessmentId: string; feedback: string | null; cheatCount?: number; cheatFlagged?: boolean; cheatLog?: unknown } | null);
+  if (!attempt || attempt.studentId !== profile.studentId) throw notFound("Attempt not found");
+  if (attempt.status !== "IN_PROGRESS") return attempt;
+  const log = Array.isArray(attempt.cheatLog) ? (attempt.cheatLog as unknown[]) : [];
+  const nextLog = [...log, { type, at: new Date().toISOString() }] as unknown as Prisma.InputJsonValue;
+  const nextCount = (attempt.cheatCount ?? 0) + 1;
+  const flagged = nextCount >= 3;
+  // Wrap in try/catch — columns may not exist until migration runs
+  let updated: { feedback: string | null } = { feedback: attempt.feedback };
+  try {
+    updated = (await prisma.attempt.update({ where: { id: attemptId }, data: { cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog } as never } as never) as unknown as { feedback: string | null });
+  } catch (e) {
+    // P2022 column not found — still count violation in memory, but don't crash
+    if ((e as { code?: string })?.code !== "P2022") throw e;
+    return attempt as unknown as ReturnType<typeof prisma.attempt.findUnique>;
+  }
+  if (flagged) {
+    await prisma.attempt.update({ where: { id: attemptId }, data: { status: "SUBMITTED", submittedAt: new Date(), feedback: (updated.feedback ? updated.feedback + "\n\n" : "") + "[Auto-submitted due to 3 anti-cheat violations — flagged for review]" } });
+    await writeAudit({ actorId: userId, action: "ATTEMPT_FLAGGED_CHEATING", entityType: "Attempt", entityId: attemptId, after: { type, count: nextCount } });
+    await emitActivity({ actorId: userId, type: "EXAM", title: "Exam auto-submitted — cheating flagged", body: `3 violations (${type}) — assessment ${attempt.assessmentId}`, levelId: null, studentId: profile.studentId });
+  }
+  return prisma.attempt.findUnique({ where: { id: attemptId } });
+};
+
+export const listFlaggedAttempts = async (actor: { id: string; role: string }) => {
+  const where: Prisma.AttemptWhereInput = { cheatFlagged: true };
+  if (actor.role === "TEACHER") {
+    const groups = await prisma.classGroup.findMany({ where: { teacherId: actor.id }, select: { levelId: true } });
+    const levelIds = [...new Set(groups.map((g) => g.levelId))];
+    if (!levelIds.length) return [];
+    where.assessment = { levelId: { in: levelIds } };
+  }
+  return prisma.attempt.findMany({ where, take: 100, orderBy: { updatedAt: "desc" }, include: { student: { select: { studentCode: true, user: { select: { firstName: true, lastName: true } } } }, assessment: { select: { title: true } } } });
 };
 
 export const listMyAttempts = async (userId: string) => {

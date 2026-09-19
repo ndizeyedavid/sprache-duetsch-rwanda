@@ -586,6 +586,50 @@ export function getMyAssessments(): Promise<MyAssessment[]> {
   return apiGet<MyAssessment[]>('/assessments/my/assessments?pageSize=50');
 }
 
+export type MyAssessmentDetail = {
+  id: string;
+  title: string;
+  description: string | null;
+  type: string;
+  durationMinutes: number | null;
+  maxAttempts: number | null;
+  passMark: number | null;
+  availableUntil: string | null;
+  availableFrom: string | null;
+  questions: {
+    id: string;
+    order: number;
+    points: Money | null;
+    question: {
+      id: string;
+      type: string;
+      skill: string;
+      difficulty: string;
+      prompt: string;
+      options: unknown;
+      imageUrl: string | null;
+      audioUrl: string | null;
+      points: Money;
+    };
+  }[];
+  attemptCount: number;
+};
+
+export function getMyAssessment(id: string): Promise<MyAssessmentDetail> {
+  return apiGet<MyAssessmentDetail>(`/assessments/my/assessments/${id}`);
+}
+
+export function startAttempt(assessmentId: string): Promise<{ id: string; status: string; startedAt: string; maxScore: Money }> {
+  return apiPost<{ id: string; status: string; startedAt: string; maxScore: Money }>(`/assessments/my/assessments/${assessmentId}/attempts`, {});
+}
+
+export function submitAttempt(
+  attemptId: string,
+  answers: { questionId: string; response: unknown }[],
+): Promise<{ status: string; score?: number; maxScore?: number; percentage?: number; passed?: boolean; message?: string }> {
+  return apiPost(`/assessments/my/attempts/${attemptId}/submit`, { answers });
+}
+
 export function getMyAttempts(): Promise<MyAttempt[]> {
   return apiGet<MyAttempt[]>('/assessments/my/attempts');
 }
@@ -973,6 +1017,14 @@ export function listActivitySubmissions(params?: { lessonId?: string; activityId
 
 export function gradeActivitySubmission(id: string, body: { score?: number; isCorrect?: boolean; feedback?: string }): Promise<ActivitySubmission> {
   return apiPatch<ActivitySubmission>(`/content/activity-submissions/${id}/grade`, body);
+}
+
+export function reportAttemptViolation(attemptId: string, type: string): Promise<unknown> {
+  return apiPost(`/assessments/my/attempts/${attemptId}/violation`, { type });
+}
+
+export function reportActivityViolation(activityId: string, type: string): Promise<unknown> {
+  return apiPost(`/content/activities/${activityId}/violation`, { type });
 }
 
 export type AssignmentItem = {

@@ -192,3 +192,10 @@ export const getMyAttempt = async (req: Request, res: Response): Promise<void> =
   const attempt = await service.getMyAttempt(req.user!.id, id);
   res.json({ success: true, data: attempt });
 };
+
+export const recordViolation = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const { type } = req.body as { type?: string };
+  const result = await service.recordAttemptViolation(req.user!.id, id, type ?? "unknown");
+  res.json({ success: true, data: result });
+};

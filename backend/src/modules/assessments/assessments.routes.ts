@@ -61,6 +61,14 @@ assessmentsRouter.post(
   asyncHandler(controller.submitAttempt),
 );
 
+assessmentsRouter.post(
+  "/my/attempts/:id/violation",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: assessmentIdSchema }),
+  asyncHandler(controller.recordViolation),
+);
+
 assessmentsRouter.get(
   "/my/attempts",
   requireAuth,
