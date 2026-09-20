@@ -18,6 +18,7 @@ import { notificationsRouter } from "./modules/notifications/notifications.route
 import { uploadsRouter } from "./modules/uploads/uploads.routes.js";
 import { paymentsRouter } from "./modules/payments/payments.routes.js";
 import { attendanceRouter, sessionsRouter } from "./modules/sessions/sessions.routes.js";
+import { enrollmentRouter } from "./modules/enrollment/enrollment.routes.js";
 import { studentsRouter } from "./modules/students/students.routes.js";
 import { usersRouter } from "./modules/users/users.routes.js";
 
@@ -43,6 +44,7 @@ apiRouter.use("/activity", activityRouter);
 apiRouter.use("/articles", articlesRouter);
 apiRouter.use("/certificates", certificatesRouter);
 apiRouter.use("/uploads", uploadsRouter);
+apiRouter.use("/enrollment", enrollmentRouter);
 
 apiRouter.get(
   "/health",

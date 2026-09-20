@@ -32,6 +32,15 @@ const envSchema = z.object({
   // Google OAuth — Client ID for verifying ID tokens from @react-oauth/google.
   GOOGLE_CLIENT_ID: z.string().optional(),
   GOOGLE_CLIENT_SECRET: z.string().optional(),
+  // SMTP — Gmail (App Password) for transactional emails (enrollment confirmations, etc).
+  SMTP_HOST: z.string().default("smtp.gmail.com"),
+  SMTP_PORT: z.coerce.number().int().positive().default(587),
+  SMTP_SECURE: z.enum(["true", "false"]).default("false"),
+  SMTP_USER: z.string().optional(),
+  SMTP_PASS: z.string().optional(),
+  SMTP_FROM: z.string().optional(),
+  // Comma-separated origins allowed to call public enrollment endpoint without auth
+  ENROLLMENT_ALLOWED_ORIGINS: z.string().optional(),
 });
 
 const parsed = envSchema.safeParse(process.env);
@@ -53,6 +62,20 @@ export const isTest = env.NODE_ENV === "test";
 export const corsOrigins = env.CORS_ORIGINS.split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
+
+export const enrollmentAllowedOrigins = (env.ENROLLMENT_ALLOWED_ORIGINS ?? "")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+// Hard-known enrollment site origins (always allowed for /api/enrollment, even if CORS_ORIGINS not updated)
+export const defaultEnrollmentOrigins = [
+  "https://deutsch-prache-rw.vercel.app",
+  "https://www.deutshsprache.org",
+];
+
+export const smtpEnabled = Boolean(env.SMTP_USER && env.SMTP_PASS);
+export const smtpFrom = env.SMTP_FROM ?? env.SMTP_USER ?? "noreply@sparch.rw";
 
 // Refresh tokens get their own secret when configured, otherwise share the access secret.
 export const refreshTokenSecret = env.JWT_REFRESH_SECRET ?? env.JWT_SECRET;
