@@ -34,7 +34,7 @@ export const sendEnrollmentConfirmation = async (input: EnrollmentConfirmInput):
         </td></tr>
         <tr><td style="padding:28px 32px 8px;text-align:center;">
           <p style="margin:0;font-size:10px;letter-spacing:0.18em;font-weight:700;color:#c5a253;">DEUTSCH SPRACHE RW · KIGALI</p>
-          <h1 style="margin:10px 0 0;font-size:22px;line-height:1.2;color:#0f204b;">Murakaza neza, ${safeFirstName}! 🎉</h1>
+          <h1 style="margin:10px 0 0;font-size:22px;line-height:1.2;color:#0f204b;">Hello There, ${safeFirstName}! 🎉</h1>
           <p style="margin:6px 0 0;font-size:12px;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;">Enrollment confirmation</p>
         </td></tr>
         <tr><td style="padding:16px 32px 0;">
