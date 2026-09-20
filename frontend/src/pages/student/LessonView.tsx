@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { FiArrowLeft, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiArrowLeft, FiChevronLeft, FiChevronRight, FiGrid, FiList } from 'react-icons/fi';
 import { Panel } from '../../components/ui/Panel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
 import { completeLesson, getMyCourses, getStudentLesson, humanize } from '../../lib/services';
 import { LessonDetail } from '../../components/student/LessonDetail';
+import { CoursePlayerShell } from '../../components/student/CoursePlayerShell';
 
 export function StudentLesson() {
   const { slug = '', lessonId = '' } = useParams();
@@ -17,6 +18,28 @@ export function StudentLesson() {
   const [actionError, setActionError] = useState<string | null>(null);
   const [completing, setCompleting] = useState(false);
   const [localCompleted, setLocalCompleted] = useState(false);
+  const [layout, setLayout] = useState<'vertical' | 'horizontal'>(() => {
+    try {
+      const v = localStorage.getItem('sparch.course.layout') as 'vertical' | 'horizontal' | null;
+      return v === 'horizontal' ? 'horizontal' : 'vertical';
+    } catch {
+      return 'vertical';
+    }
+  });
+  useEffect(() => {
+    try {
+      localStorage.setItem('sparch.course.layout', layout);
+    } catch {
+      // ignore
+    }
+  }, [layout]);
+  useEffect(() => {
+    function onStorage(e: StorageEvent) {
+      if (e.key === 'sparch.course.layout' && (e.newValue === 'vertical' || e.newValue === 'horizontal')) setLayout(e.newValue);
+    }
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
 
   useEffect(() => {
     setLocalCompleted(false);
@@ -78,14 +101,69 @@ export function StudentLesson() {
   const rawDetail = lesson.data;
   const detail = localCompleted ? { ...rawDetail, progressStatus: 'COMPLETED' } : rawDetail;
 
+  // Horizontal mode: Coursera-style player with sidebar + big pane
+  if (layout === 'horizontal') {
+    return (
+      <div className="space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <span className="flex items-center gap-2 text-xs">
+            <Link to="/courses" className="hover:underline">My courses</Link>
+            <span className="text-muted">/</span>
+            <Link to={`/courses/${slug}/learn`} className="hover:underline">{course.level.code}</Link>
+            <span className="text-muted">/</span>
+            <span className="truncate font-medium text-ink">{currentMeta?.moduleTitle ?? rawDetail.module.title}</span>
+          </span>
+          <span className="flex items-center gap-1 rounded-full border border-line bg-base-100 p-1">
+            <button type="button" onClick={() => setLayout('vertical')} className="btn btn-xs gap-1 rounded-full btn-ghost" aria-pressed={false}><FiList aria-hidden />Vertical</button>
+            <button type="button" onClick={() => setLayout('horizontal')} className="btn btn-xs gap-1 rounded-full border-0 bg-brand text-white" aria-pressed={true}><FiGrid aria-hidden />Horizontal</button>
+          </span>
+        </div>
+        <CoursePlayerShell course={course} slug={slug} activeLessonId={lessonId}>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between gap-2">
+              <p className="text-xs text-muted">{currentMeta?.moduleTitle ?? rawDetail.module.title} · {index + 1}/{ordered.length} · {humanize(rawDetail.contentType)}{rawDetail.estimatedMinutes ? ` · ${rawDetail.estimatedMinutes} min` : ''}</p>
+              <span className="flex items-center gap-1">
+                <button type="button" disabled={!prev || isSwitching} onClick={() => prev && navigate(`/courses/${slug}/learn/${prev.id}`)} className="btn btn-xs btn-circle border-line bg-base-100 disabled:opacity-40" aria-label="Previous"><FiChevronLeft aria-hidden /></button>
+                <span className="text-xs text-muted">{index + 1} / {ordered.length}</span>
+                <button type="button" disabled={!next || isSwitching} onClick={() => next && navigate(`/courses/${slug}/learn/${next.id}`)} className="btn btn-xs btn-circle border-line bg-base-100 disabled:opacity-40" aria-label="Next"><FiChevronRight aria-hidden /></button>
+              </span>
+            </div>
+            <Panel className="relative overflow-hidden">
+              {isSwitching ? (
+                <div className="pointer-events-none absolute inset-0 z-10 flex items-start justify-center bg-base-100/70 pt-12 backdrop-blur-[1px]">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-line bg-base-100 px-4 py-2 text-xs font-medium shadow">
+                    <span className="loading loading-spinner loading-xs text-brand" aria-hidden /> Loading…
+                  </span>
+                </div>
+              ) : null}
+              <div className={`${isSwitching ? 'opacity-50' : 'opacity-100'} transition`} aria-busy={isSwitching}>
+                <LessonDetail detail={detail as never} slug={slug} completing={completing} actionError={actionError} onComplete={handleComplete} />
+              </div>
+              <div className="mt-6 flex flex-wrap justify-between gap-2 border-t border-line pt-4">
+                {prev ? <Link to={`/courses/${slug}/learn/${prev.id}`} className="btn btn-sm gap-1 rounded-full border-line bg-base-100"><FiChevronLeft aria-hidden />Previous</Link> : <span />}
+                {next ? <Link to={`/courses/${slug}/learn/${next.id}`} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90">Next — {next.title}<FiChevronRight aria-hidden /></Link> : <Link to={`/courses/${slug}/learn`} className="btn btn-sm rounded-full border-0 bg-brand text-white">Back to course</Link>}
+              </div>
+            </Panel>
+          </div>
+        </CoursePlayerShell>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-2 text-xs">
-        <Link to="/courses" className="hover:underline">My courses</Link>
-        <span className="text-muted">/</span>
-        <Link to={`/courses/${slug}/learn`} className="hover:underline">{course.level.code}</Link>
-        <span className="text-muted">/</span>
-        <span className="truncate font-medium text-ink">{currentMeta?.moduleTitle ?? rawDetail.module.title}</span>
+      <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+        <span className="flex items-center gap-2">
+          <Link to="/courses" className="hover:underline">My courses</Link>
+          <span className="text-muted">/</span>
+          <Link to={`/courses/${slug}/learn`} className="hover:underline">{course.level.code}</Link>
+          <span className="text-muted">/</span>
+          <span className="truncate font-medium text-ink">{currentMeta?.moduleTitle ?? rawDetail.module.title}</span>
+        </span>
+        <span className="flex items-center gap-1 rounded-full border border-line bg-base-100 p-1">
+          <button type="button" onClick={() => setLayout('vertical')} className="btn btn-xs gap-1 rounded-full border-0 bg-brand text-white" aria-pressed={true}><FiList aria-hidden />Vertical</button>
+          <button type="button" onClick={() => setLayout('horizontal')} className="btn btn-xs gap-1 rounded-full btn-ghost" aria-pressed={false}><FiGrid aria-hidden />Horizontal</button>
+        </span>
       </div>
 
       <div className="flex items-center justify-between gap-2">

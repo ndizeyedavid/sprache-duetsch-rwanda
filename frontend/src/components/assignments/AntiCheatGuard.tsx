@@ -75,18 +75,34 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
       ) : null}
 
       {enabled && !isFullscreen ? (
-        <div className="relative z-20 m-3 rounded-box border border-warning bg-warning/5 p-4 text-center">
-          <FiAlertTriangle aria-hidden className="mx-auto text-warning" size={20} />
-          <p className="mt-1 text-sm font-bold">Fullscreen required</p>
-          <p className="mx-auto mt-1 max-w-md text-xs leading-relaxed text-muted">
-            This assignment must be completed in fullscreen. Exiting fullscreen counts as a violation (3 = auto-lock). Clipboard,
-            right-click and tab switching are blocked.
-          </p>
-          <button type="button" onClick={() => void enterFullscreen()} className="btn btn-sm mt-3 gap-1 rounded-full border-0 bg-warning text-white">
-            <FiMaximize2 aria-hidden />
-            Enter fullscreen to continue
-          </button>
-        </div>
+        <>
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-base-100/70 p-4 backdrop-blur-sm" role="dialog" aria-modal="true">
+            <div className="w-full max-w-md rounded-box border border-warning bg-base-100 p-6 text-center shadow-xl">
+              <span className="mx-auto flex size-12 items-center justify-center rounded-full bg-warning/10 text-warning">
+                <FiMaximize2 aria-hidden size={22} />
+              </span>
+              <h3 className="mt-3 text-base font-bold">Fullscreen required</h3>
+              <p className="mx-auto mt-1 max-w-sm text-sm leading-relaxed text-muted">
+                This assignment must be completed in fullscreen. Tap the button below or press{" "}
+                <kbd className="rounded bg-base-200 px-1.5 py-0.5 text-xs font-mono">F11</kbd> to continue. Exiting counts as a
+                violation (3 = auto-submit & flagged).
+              </p>
+              <button
+                type="button"
+                onClick={() => void enterFullscreen()}
+                className="btn mt-4 gap-2 rounded-full border-0 bg-warning px-6 text-white hover:bg-warning/90"
+                autoFocus
+              >
+                <FiMaximize2 aria-hidden />
+                Go to fullscreen
+              </button>
+              <p className="mt-2 text-[11px] text-muted">Press Esc to exit is blocked — it will count as a violation.</p>
+            </div>
+          </div>
+          <div className="relative z-20 m-3 rounded-box border border-warning bg-warning/5 p-3 text-center text-xs font-medium text-warning">
+            Fullscreen is required to view questions — click Go to fullscreen above
+          </div>
+        </>
       ) : null}
 
       {enabled && violations.length > 0 ? (
@@ -106,7 +122,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
         </div>
       ) : null}
 
-      <div className={`relative z-10 ${enabled && !isFullscreen ? "pointer-events-none opacity-40" : ""} ${enabled ? "select-none" : ""}`}>{children}</div>
+      <div className={`relative z-10 ${enabled && !isFullscreen ? "pointer-events-none opacity-40 blur-[1.5px]" : ""} ${enabled ? "select-none" : ""}`}>{children}</div>
     </div>
   );
 }

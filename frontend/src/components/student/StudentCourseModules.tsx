@@ -27,9 +27,9 @@ function LessonIcon({ status }: { status: string }) {
   return <FiPlayCircle aria-hidden className="text-sm" />;
 }
 
-type Props = { course: MyCourse; slug: string };
+type Props = { course: MyCourse; slug: string; layout?: 'vertical' | 'horizontal' };
 
-export function StudentCourseModules({ course, slug }: Props) {
+export function StudentCourseModules({ course, slug, layout = 'vertical' }: Props) {
   const [q, setQ] = useState('');
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
@@ -51,25 +51,42 @@ export function StudentCourseModules({ course, slug }: Props) {
     });
   }
 
+  // Horizontal mode: single expandable module at a time (Coursera) vs all stacked (Canvas)
+  const horizontalActive = layout === 'horizontal' ? (filteredModules.find((m) => !collapsed.has(m.id))?.id ?? filteredModules[0]?.id ?? null) : null;
+
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
         <div className="relative grow sm:max-w-sm">
           <FiSearch aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
-          <input value={q} onChange={(e) => setQ(e.currentTarget.value)} placeholder="Search lessons…" className="input input-sm w-full rounded-full border-line bg-base-100 pl-9 pr-8 text-xs" />
+          <input value={q} onChange={(e) => setQ(e.currentTarget.value)} placeholder="Search lessons…" className="input w-full rounded-full border-line bg-base-100 pl-9 pr-8 text-sm" />
           {q ? <button type="button" onClick={() => setQ('')} className="btn btn-ghost btn-xs btn-circle absolute right-1 top-1/2 -translate-y-1/2">×</button> : null}
         </div>
         <button type="button" onClick={() => setCollapsed(new Set(filteredModules.map((m) => m.id)))} className="btn btn-xs rounded-full border-line bg-base-100">Collapse all</button>
         <button type="button" onClick={() => setCollapsed(new Set())} className="btn btn-xs rounded-full border-line bg-base-100">Expand all</button>
       </div>
+      {layout === 'horizontal' && filteredModules.length > 1 ? (
+        <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+          {filteredModules.map((mod) => (
+            <button
+              key={mod.id}
+              type="button"
+              onClick={() => setCollapsed(new Set(filteredModules.filter((m) => m.id !== mod.id).map((m) => m.id)))}
+              className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-medium ${horizontalActive === mod.id ? 'border-brand bg-brand text-white' : 'border-line bg-base-100'}`}
+            >
+              {mod.title} · {mod.lessons.length}
+            </button>
+          ))}
+        </div>
+      ) : null}
 
       {filteredModules.length === 0 ? (
         <p className="py-8 text-center text-sm text-muted">No modules published yet.</p>
       ) : null}
 
-      {filteredModules.map((mod) => {
+      {(layout === 'horizontal' && filteredModules.length > 1 ? filteredModules.filter((m) => m.id === horizontalActive) : filteredModules).map((mod) => {
         const done = mod.lessons.filter((l) => l.progressStatus === 'COMPLETED').length;
-        const isCollapsed = collapsed.has(mod.id);
+        const isCollapsed = layout === 'horizontal' ? false : collapsed.has(mod.id);
         const lessons = [...mod.lessons].sort((a, b) => a.order - b.order);
         return (
           <div key={mod.id} className="overflow-hidden rounded-box border border-line bg-base-100">
