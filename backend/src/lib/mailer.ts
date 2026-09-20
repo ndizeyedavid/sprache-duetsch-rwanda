@@ -8,11 +8,19 @@ let transporter: Transporter | null = null;
 const getTransporter = (): Transporter | null => {
   if (!smtpEnabled) return null;
   if (transporter) return transporter;
+  const secure = env.SMTP_SECURE === "true";
   transporter = nodemailer.createTransport({
     host: env.SMTP_HOST,
     port: env.SMTP_PORT,
-    secure: env.SMTP_SECURE === "true",
+    secure,
     auth: { user: env.SMTP_USER, pass: env.SMTP_PASS },
+    // Gmail on 587 = STARTTLS — fail fast instead of hanging 30s+ on Render
+    connectionTimeout: 10_000,
+    greetingTimeout: 10_000,
+    socketTimeout: 15_000,
+    requireTLS: !secure && env.SMTP_PORT === 587,
+    tls: { minVersion: "TLSv1.2" },
+    logger: false,
   });
   return transporter;
 };
@@ -42,8 +50,9 @@ export const sendMail = async (opts: {
     logger.warn({ to: opts.to, subject: opts.subject }, "SMTP not configured — email skipped (set SMTP_USER/SMTP_PASS)");
     return;
   }
+  const from = smtpFrom.includes("<") ? smtpFrom : `Deutsch Sprache RW <${smtpFrom}>`;
   await t.sendMail({
-    from: smtpFrom,
+    from,
     to: opts.to,
     subject: opts.subject,
     html: opts.html,
