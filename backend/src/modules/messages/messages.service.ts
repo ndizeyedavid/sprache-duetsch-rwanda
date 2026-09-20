@@ -86,6 +86,25 @@ export const createConversation = async (creatorId: string, input: CreateConvers
     }
   }
 
+  // Idempotency for ad-hoc DMs: reuse an existing conversation with the exact same
+  // participant set instead of creating duplicates. This covers both 1-1 chats and
+  // group selections from People / ComposeModal when no title/classGroupId is given.
+  const isAdHoc = !input.title && !input.classGroupId;
+  if (isAdHoc) {
+    const candidates = await prisma.conversation.findMany({
+      where: {
+        title: null,
+        classGroupId: null,
+        participants: { every: { userId: { in: uniqueIds } } },
+      },
+      include: { participants: { select: participantSelect } },
+    });
+    const existing = candidates.find(
+      (c) => c.participants.length === uniqueIds.length && c.participants.every((p) => uniqueIds.includes(p.user.id)),
+    );
+    if (existing) return existing;
+  }
+
   const conversation = await prisma.conversation.create({
     data: {
       title: input.title ?? null,

@@ -865,10 +865,6 @@ export const getMyAssessment = async (userId: string, id: string) => {
     where: { assessmentId: id, studentId: profile.studentId },
     select: { status: true },
   });
-  const hasInProgress = attempts.some((attempt) => attempt.status === "IN_PROGRESS");
-  if (!hasInProgress && attempts.length >= assessment.maxAttempts) {
-    throw forbidden("You have reached the maximum number of attempts");
-  }
 
   const { isPublished: _isPublished, ...meta } = assessment;
   return { ...meta, attemptCount: attempts.length };
@@ -924,7 +920,8 @@ export const startAttempt = async (userId: string, assessmentId: string) => {
   const existing = await prisma.attempt.findFirst({
     where: { assessmentId, studentId: profile.studentId, status: "IN_PROGRESS" },
     orderBy: { startedAt: "desc" },
-  });
+    select: { id: true, startedAt: true, assessmentId: true, studentId: true, status: true } as never,
+  } as never);
   if (existing) {
     const stillValid =
       assessment.durationMinutes === null ||
@@ -935,8 +932,8 @@ export const startAttempt = async (userId: string, assessmentId: string) => {
   }
 
   const attemptCount = await prisma.attempt.count({
-    where: { assessmentId, studentId: profile.studentId },
-  });
+    where: { assessmentId, studentId: profile.studentId } as never,
+  } as never);
   if (attemptCount >= assessment.maxAttempts) {
     throw forbidden("You have reached the maximum number of attempts");
   }
