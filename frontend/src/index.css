@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @plugin "daisyui" {
   themes:
@@ -146,8 +147,8 @@
   }
 }
 
-/* TipTap — ensure lists and headings match prose rendering */
-.ProseMirror { outline: none; min-height: 120px; }
+/* TipTap — match viewer scale so teacher sees what student sees */
+.ProseMirror { outline: none; min-height: 140px; font-size: 0.95rem; line-height: 1.75; }
 .ProseMirror p.is-editor-empty:first-child::before {
   content: attr(data-placeholder);
   float: left;
@@ -156,15 +157,38 @@
   height: 0;
   font-size: 0.875rem;
 }
-.ProseMirror ul, .ProseMirror ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+.ProseMirror ul, .ProseMirror ol { padding-left: 1.5rem; margin: 0.75rem 0; }
 .ProseMirror ul { list-style: disc; }
 .ProseMirror ol { list-style: decimal; }
-.ProseMirror h1 { font-size: 1.5rem; font-weight: 700; margin: 0.75rem 0 0.25rem; }
-.ProseMirror h2 { font-size: 1.25rem; font-weight: 700; margin: 0.6rem 0 0.25rem; }
-.ProseMirror h3 { font-size: 1.05rem; font-weight: 700; margin: 0.5rem 0 0.25rem; }
-.ProseMirror blockquote { border-left: 2px solid #fb0d00; padding-left: 0.75rem; margin: 0.5rem 0; color: #374557; }
-.ProseMirror img { max-width: 100%; border-radius: 0; margin: 0.5rem auto; display: block; }
-.ProseMirror a { color: #fb0d00; text-decoration: underline; }
+.ProseMirror h1 { font-size: 1.7rem !important; font-weight: 700 !important; line-height: 1.2 !important; border-bottom: 1px solid #f1f0f3; padding-bottom: 0.4rem; margin: 0.9rem 0 0.4rem !important; }
+.ProseMirror h2 { font-size: 1.35rem !important; font-weight: 700 !important; line-height: 1.3 !important; border-bottom: 1px solid #f1f0f3; padding-bottom: 0.3rem; margin: 0.75rem 0 0.35rem !important; }
+.ProseMirror h3 { font-size: 1.05rem !important; font-weight: 700 !important; letter-spacing: 0.06em; text-transform: uppercase; color: #a098ae !important; margin: 0.6rem 0 0.3rem !important; }
+.ProseMirror blockquote { border-left: 3px solid #fb0d00 !important; padding: 0.4rem 0 0.4rem 0.75rem !important; margin: 0.6rem 0 !important; color: #374557 !important; background: #fff1f0 !important; font-style: italic; }
+.ProseMirror a { color: #fb0d00 !important; font-weight: 600 !important; text-decoration: underline !important; text-underline-offset: 2px !important; text-decoration-thickness: 2px !important; }
+.ProseMirror a:hover { color: #B30A00 !important; }
+.ProseMirror code { background: #fafafa; border: 1px solid #f1f0f3; border-radius: 4px; padding: 1px 4px; font-size: 0.8rem; }
+.ProseMirror img { max-width: 100%; border-radius: 0; margin: 0.75rem auto; display: block; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+.ProseMirror strong { color: #374557; }
+.ProseMirror em { color: #374557; }
+
+/* RichTextViewer — explicit so Tailwind base reset doesn't flatten headings/links.
+   Mirrors the editor scale; !important beats Tailwind's preflight. */
+.rich-viewer { font-size: 0.95rem; line-height: 1.75; }
+.rich-viewer h1 { font-size: 1.7rem !important; font-weight: 700 !important; line-height: 1.2 !important; border-bottom: 1px solid var(--color-line) !important; padding-bottom: 0.4rem !important; margin: 0.9rem 0 0.4rem !important; }
+.rich-viewer h2 { font-size: 1.35rem !important; font-weight: 700 !important; line-height: 1.3 !important; border-bottom: 1px solid color-mix(in srgb, var(--color-line) 70%, transparent) !important; padding-bottom: 0.3rem !important; margin: 0.75rem 0 0.35rem !important; }
+.rich-viewer h3 { font-size: 1.05rem !important; font-weight: 700 !important; letter-spacing: 0.06em !important; text-transform: uppercase !important; color: var(--color-muted) !important; margin: 0.6rem 0 0.3rem !important; }
+.rich-viewer p { margin: 0.75rem 0 !important; }
+.rich-viewer ul { list-style: disc !important; padding-left: 1.5rem !important; margin: 0.75rem 0 !important; }
+.rich-viewer ol { list-style: decimal !important; padding-left: 1.5rem !important; margin: 0.75rem 0 !important; }
+.rich-viewer li { margin: 0.25rem 0 !important; }
+.rich-viewer a { color: #fb0d00 !important; font-weight: 600 !important; text-decoration: underline !important; text-underline-offset: 2px !important; text-decoration-thickness: 2px !important; }
+.rich-viewer a:hover { color: #B30A00 !important; }
+.rich-viewer blockquote { border-left: 3px solid #fb0d00 !important; padding: 0.4rem 0 0.4rem 0.75rem !important; margin: 0.6rem 0 !important; background: #fff1f0 !important; font-style: italic !important; }
+.rich-viewer img { max-width: 100% !important; border-radius: 0 !important; margin: 0.75rem auto !important; display: block !important; box-shadow: 0 1px 6px rgba(0,0,0,0.08) !important; }
+.rich-viewer code { background: #fafafa !important; border: 1px solid #f1f0f3 !important; border-radius: 4px !important; padding: 1px 4px !important; font-size: 0.8rem !important; }
+.rich-viewer strong { color: var(--color-ink) !important; font-weight: 700 !important; }
+.rich-viewer em { color: var(--color-ink) !important; }
+.rich-viewer mark { background: #fdf0ce !important; padding: 1px 2px !important; border-radius: 2px !important; }
 
 /* NProgress — brand-tinted top bar for route changes.
    This file must be imported after `nprogress/nprogress.css` (see main.tsx),

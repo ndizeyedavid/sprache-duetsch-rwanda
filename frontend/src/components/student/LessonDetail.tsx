@@ -81,6 +81,24 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
             <h2 className="flex items-center gap-2 text-sm font-bold"><FiFileText aria-hidden className="text-brand" />Resources<span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">{detail.materials.length}</span></h2>
             <span className="hidden text-[11px] text-muted sm:block">Tap Open to view or download</span>
           </div>
+          {/* Inline preview for first PDF/video if available */}
+          {(() => {
+            const first = detail.materials.find((m) => m.url && (m.type === 'PDF' || m.type === 'VIDEO' || m.mimeType?.includes('pdf') || m.url?.endsWith('.pdf')));
+            if (!first?.url) return null;
+            const isPdf = first.type === 'PDF' || first.mimeType?.includes('pdf') || first.url.endsWith('.pdf');
+            return (
+              <div className="border-b border-line bg-base-200/30 p-3">
+                <p className="mb-2 flex items-center gap-2 text-xs font-semibold"><FiFileText aria-hidden className="text-brand" />Preview — {first.title}</p>
+                {isPdf ? (
+                  <div className="overflow-hidden rounded-box border border-line bg-base-100">
+                    <iframe src={first.url} title={first.title} className="h-[420px] w-full" />
+                  </div>
+                ) : (
+                  <video controls src={first.url} className="max-h-[420px] w-full rounded-box bg-night" />
+                )}
+              </div>
+            );
+          })()}
           <ul className="grid gap-3 p-4 sm:grid-cols-2">
             {detail.materials.map((m) => {
               const Icon = materialIcon(m.type);
