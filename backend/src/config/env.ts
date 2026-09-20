@@ -41,6 +41,9 @@ const envSchema = z.object({
   SMTP_FROM: z.string().optional(),
   // Comma-separated origins allowed to call public enrollment endpoint without auth
   ENROLLMENT_ALLOWED_ORIGINS: z.string().optional(),
+  // HTTP relay on your VPS — Render calls this over HTTPS, VPS does SMTP to Gmail (bypasses Render's SMTP block)
+  EMAIL_RELAY_URL: z.string().optional(),
+  EMAIL_RELAY_SECRET: z.string().optional(),
 });
 
 const parsed = envSchema.safeParse(process.env);

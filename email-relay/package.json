@@ -1,0 +1,28 @@
+{
+  "name": "sparch-email-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tiny HTTPS relay on Ubuntu VPS — Render calls it, it does Gmail SMTP (bypasses Render's SMTP block)",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.0.0",
+    "nodemailer": "^7.0.5",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0"
+  }
+}

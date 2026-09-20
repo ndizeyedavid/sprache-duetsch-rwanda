@@ -44,6 +44,27 @@ export const verifyMailer = async (): Promise<boolean> => {
   }
 };
 
+const sendViaRelay = async (opts: { to: string; subject: string; html: string; text?: string; replyTo?: string }): Promise<boolean> => {
+  const url = env.EMAIL_RELAY_URL;
+  if (!url) return false;
+  const endpoint = url.replace(/\/$/, "") + "/send";
+  logger.info({ to: opts.to, endpoint }, "SMTP blocked — forwarding to VPS relay over HTTPS");
+  const res = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      ...(env.EMAIL_RELAY_SECRET ? { "x-relay-secret": env.EMAIL_RELAY_SECRET } : {}),
+    },
+    body: JSON.stringify(opts),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`Relay failed ${res.status}: ${body.slice(0, 500)}`);
+  }
+  logger.info({ to: opts.to }, "Email sent via VPS relay");
+  return true;
+};
+
 export const sendMail = async (opts: {
   to: string;
   subject: string;
@@ -53,7 +74,9 @@ export const sendMail = async (opts: {
 }): Promise<void> => {
   const t = getTransporter();
   if (!t) {
-    logger.warn({ to: opts.to, subject: opts.subject }, "SMTP not configured — email skipped (set SMTP_USER/SMTP_PASS)");
+    // No SMTP configured — try relay
+    if (await sendViaRelay(opts)) return;
+    logger.warn({ to: opts.to, subject: opts.subject }, "SMTP not configured — email skipped (set SMTP_USER/SMTP_PASS or EMAIL_RELAY_URL)");
     return;
   }
   const from = smtpFrom.includes("<") ? smtpFrom : `Deutsch Sprache RW <${smtpFrom}>`;
@@ -63,24 +86,31 @@ export const sendMail = async (opts: {
     await t.sendMail(mail);
   } catch (err) {
     const code = (err as { code?: string })?.code;
-    // Render free tier often blocks outbound 587 (ETIMEDOUT on CONN). Retry once on 465/SSL.
-    const isTimeout = code === "ETIMEDOUT" || code === "ECONNECTION" || code === "ETLS";
-    const already465 = env.SMTP_PORT === 465 && env.SMTP_SECURE === "true";
-    if (isTimeout && !already465) {
-      logger.warn({ code, to: opts.to }, "SMTP 587 timed out — retrying once on 465/SSL (Render often blocks 587 on free tier)");
-      const fallback = buildTransporter(465, true);
-      await fallback.sendMail(mail);
-      // Promote fallback so next send doesn't retry 587 again
-      transporter = fallback;
-      transporterKey = `${env.SMTP_HOST}:465:true`;
-      logger.info("SMTP fallback to 465/SSL succeeded");
-      return;
-    }
-    // Surface actionable hint for Render
-    if (code === "ETIMEDOUT") {
+    const isNetworkBlock = code === "ETIMEDOUT" || code === "ESOCKET" || code === "ENETUNREACH" || code === "ECONNECTION" || code === "ETLS" || code === "ECONNREFUSED";
+    if (isNetworkBlock) {
+      // Try 465 fallback first (if not already on 465), then VPS relay
+      const already465 = env.SMTP_PORT === 465 && env.SMTP_SECURE === "true";
+      if (!already465 && (code === "ETIMEDOUT" || code === "ECONNECTION")) {
+        try {
+          logger.warn({ code, to: opts.to }, "SMTP 587 timed out — retrying once on 465/SSL");
+          const fallback = buildTransporter(465, true);
+          await fallback.sendMail(mail);
+          transporter = fallback;
+          transporterKey = `${env.SMTP_HOST}:465:true`;
+          logger.info("SMTP fallback to 465/SSL succeeded");
+          return;
+        } catch (fallbackErr) {
+          const fbCode = (fallbackErr as { code?: string })?.code;
+          logger.warn({ fbCode, to: opts.to }, "465 fallback also failed — trying VPS relay");
+        }
+      }
+      if (env.EMAIL_RELAY_URL) {
+        await sendViaRelay(opts);
+        return;
+      }
       logger.error(
         { code, host: env.SMTP_HOST, port: env.SMTP_PORT },
-        "SMTP ETIMEDOUT — outbound SMTP blocked or DNS unreachable. On Render free tier use 465/SSL or switch to HTTP email API (Resend/SendGrid).",
+        "SMTP blocked on Render (ETIMEDOUT/ENETUNREACH). Set EMAIL_RELAY_URL to your VPS relay — see email-relay/README.md",
       );
     }
     throw err;
