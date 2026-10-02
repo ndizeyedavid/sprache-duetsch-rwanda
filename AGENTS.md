@@ -19,6 +19,10 @@
 
 ## Commands
 
+### repo root
+
+- `npm run dev` — `scripts/dev.mjs`: starts PostgreSQL if port 5432 is closed, runs `db:generate` + `db:deploy`, then both dev servers with `[api]`/`[web]` prefixed logs. `npm run db:start` / `npm run db:stop` manage the DB only.
+
 ### `frontend/`
 
 - `npm run dev` — Vite dev server.
@@ -36,7 +40,7 @@
 - `npm run db:seed` — reseed (safe to re-run); `npm run db:reset` — wipe + re-migrate + reseed; `npm run db:studio` — browse data.
 - `npm run test` — Vitest (no tests written yet).
 
-**Local database (no Docker needed):** PostgreSQL 17 runs natively. `DATABASE_URL=postgresql://sparch:sparch_dev@localhost:5432/sparch_rw?schema=public` in `backend/.env`. `psql.exe` lives at `C:\Program Files\PostgreSQL\17\bin\psql.exe` (not on PATH). `docker-compose.yml` exists but is unused.
+**Local database (no Docker needed):** PostgreSQL 17 runs natively. `DATABASE_URL=postgresql://sparch:sparch_dev@localhost:5432/sparch_rw?schema=public` in `backend/.env`. `psql.exe` lives at `C:\Program Files\PostgreSQL\17\bin\psql.exe` (service install) or `%LOCALAPPDATA%\Programs\PostgreSQL\17\pgsql\bin\psql.exe` (portable, no admin; data in `...\17\data`) — neither is on PATH. Server time zone must stay UTC. `docker-compose.yml` exists but is unused.
 
 **Seeded logins (dev only):** `admin@sparch.rw` / `Admin123!` (Super Admin), `academic@sparch.rw` / `Academic123!`, `finance@sparch.rw` / `Finance123!`, `clarisse@sparch.rw` / `Teacher123!`, `nella@student.sparch.rw` / `Student123!`.
 

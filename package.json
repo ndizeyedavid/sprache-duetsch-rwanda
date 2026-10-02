@@ -1,0 +1,10 @@
+{
+  "name": "sparch-duetsch-rwanda",
+  "private": true,
+  "description": "Root dev runner: starts PostgreSQL, the API (backend/) and the web app (frontend/) together.",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "db:start": "node scripts/dev.mjs db:start",
+    "db:stop": "node scripts/dev.mjs db:stop"
+  }
+}

@@ -10,6 +10,17 @@ E-learning platform for **Deutsch Sprache RW** — level-based German courses (A
 
 ## Quickstart
 
+**One command** (from the repo root, after the first-time setup below):
+
+```bash
+npm run dev        # starts PostgreSQL if needed, applies pending migrations, runs API + web
+npm run db:stop    # stop PostgreSQL (Ctrl+C on `npm run dev` leaves it running)
+```
+
+API on http://localhost:4000/api, web on http://localhost:5173. `scripts/dev.mjs` finds PostgreSQL 17 in `%LOCALAPPDATA%\Programs\PostgreSQL\17` (portable, no admin) or `C:\Program Files\PostgreSQL\17`; override with `PG_BIN` / `PGDATA` / `PGPORT`.
+
+**First-time setup** (each app separately):
+
 ```bash
 # Backend
 cd backend
@@ -27,7 +38,7 @@ npm run dev
 
 Seeded dev logins: `admin@sparch.rw` / `Admin123!` (Super Admin), `academic@sparch.rw` / `Academic123!`, `finance@sparch.rw` / `Finance123!`, `clarisse@sparch.rw` / `Teacher123!`, `nella@student.sparch.rw` / `Student123!`.
 
-Local DB: `DATABASE_URL=postgresql://localhost:5432/sparch_rw?schema=public` in `backend/.env`.
+Local DB: `DATABASE_URL=postgresql://sparch:sparch_dev@localhost:5432/sparch_rw?schema=public` in `backend/.env`. Keep the server time zone at UTC (Prisma `timestamp` columns assume it).
 
 ## Roles & portals
 
