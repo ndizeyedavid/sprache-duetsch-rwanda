@@ -48,6 +48,8 @@ export type LevelItem = {
   defaultFee: Money;
   currency: string;
   isActive: boolean;
+  /** Only returned by GET /levels/:id. */
+  _count?: { modules: number; enrollments: number; classes: number; certificates: number };
 };
 
 export type ReferenceItem = {
@@ -1174,6 +1176,10 @@ export function createLevel(body: Record<string, unknown>): Promise<LevelItem> {
 
 export function updateLevel(id: string, body: Record<string, unknown>): Promise<LevelItem> {
   return apiPatch<LevelItem>(`/levels/${id}`, body);
+}
+
+export function deleteLevel(id: string): Promise<{ id: string; code: string }> {
+  return apiDelete<{ id: string; code: string }>(`/levels/${id}`);
 }
 
 export function createModule(levelId: string, body: Record<string, unknown>): Promise<ModuleItem> {

@@ -4,6 +4,8 @@ export type ApiState<T> = {
   data: T | null;
   loading: boolean;
   fetching: boolean;
+  /** `data` still belongs to the previous key while the new key loads (e.g. switching level). */
+  stale: boolean;
   error: string | null;
   refetch: () => void;
 };
@@ -21,6 +23,7 @@ export function useApi<T>(
   enabled = true,
 ): ApiState<T> {
   const [data, setData] = useState<T | null>(null);
+  const [dataKey, setDataKey] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [fetching, setFetching] = useState(false);
@@ -47,6 +50,7 @@ export function useApi<T>(
       .then((result) => {
         if (!cancelled) {
           setData(result);
+          setDataKey(key);
           setLoading(false);
           setFetching(false);
         }
@@ -64,5 +68,7 @@ export function useApi<T>(
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, nonce, enabled]);
 
-  return { data, loading, fetching, error, refetch };
+  const stale = data !== null && dataKey !== key && error === null;
+
+  return { data, loading, fetching, stale, error, refetch };
 }

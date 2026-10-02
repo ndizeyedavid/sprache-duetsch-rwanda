@@ -11,7 +11,6 @@ import {
  FiEyeOff,
  FiFileText,
  FiFilm,
- FiGrid,
  FiLink,
  FiMove,
  FiLayers,
@@ -21,6 +20,7 @@ import {
  FiX,
 } from 'react-icons/fi';
 import { Panel, SectionHeader } from '../ui/Panel';
+import { LevelPicker } from './LevelPicker';
 import { StatusBadge } from '../ui/StatusBadge';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../common/PageState';
 import { useApi } from '../../hooks/useApi';
@@ -29,7 +29,6 @@ import { apiErrorMessage, apiFieldErrors } from '../../lib/api';
 import {
   createActivity,
   createLesson,
-  createLevel,
   createMaterial,
   createModule,
   deleteLesson,
@@ -100,37 +99,14 @@ type CurriculumManagerProps = {
 export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: CurriculumManagerProps) {
  const [searchParams, setSearchParams] = useSearchParams();
 
- const [selectedLevelId, setSelectedLevelId] = useState<string | null>(() => {
- const param = new URLSearchParams(window.location.search).get('level');
- if (param) {
- const found = levels.find((l) => l.id === param || l.code === param);
- if (found) return found.id;
- }
- return levels[0]?.id ?? null;
- });
-
- // Keep selected level in sync with URL (?level=) — deep link & back/forward
- useEffect(() => {
- const param = searchParams.get('level');
- if (param) {
- const found = levels.find((l) => l.id === param || l.code === param);
- if (found && found.id !== selectedLevelId) setSelectedLevelId(found.id);
- } else if (!selectedLevelId && levels.length > 0) {
- setSelectedLevelId(levels[0].id);
- }
- }, [levels, searchParams, selectedLevelId]);
-
- // Push level to URL when it changes (so sharing & history work)
- useEffect(() => {
- if (!selectedLevelId) return;
- const param = searchParams.get('level');
- // Use code for prettier URLs when possible, but accept id too
- const levelForUrl = levels.find((l) => l.id === selectedLevelId)?.code ?? selectedLevelId;
- if (param === selectedLevelId || param === levelForUrl) return;
- const next = new URLSearchParams(searchParams);
- next.set('level', selectedLevelId);
- setSearchParams(next, { replace: true });
- }, [selectedLevelId, levels, searchParams, setSearchParams]);
+ // ?level= is the single source of truth. Mirroring it in state made a click flash:
+ // React Router commits URL changes in a transition, so the stale param snapped the
+ // selection back for a render before the new one landed.
+ const levelParam = searchParams.get('level');
+ const selectedLevelId = useMemo(() => {
+ const found = levelParam ? levels.find((l) => l.id === levelParam || l.code === levelParam) : undefined;
+ return found?.id ?? levels[0]?.id ?? null;
+ }, [levels, levelParam]);
 
  const modules = useApi(
  `level-modules-${selectedLevelId ?? 'none'}`,
@@ -160,6 +136,11 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
 
  // Local optimistic copy of modules so we can reorder / toggle publish without a full reload
  const [localModules, setLocalModules] = useState<typeof modules.data | null>(null);
+ const [localModulesLevelId, setLocalModulesLevelId] = useState(selectedLevelId);
+ if (localModulesLevelId !== selectedLevelId) {
+ setLocalModulesLevelId(selectedLevelId);
+ setLocalModules(null);
+ }
  useEffect(() => {
  if (modules.data) {
  if (!reordering) setLocalModules([...modules.data].sort((a, b) => a.order - b.order));
@@ -264,9 +245,7 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
     }
   }
 
- const [expandedLessonId, setExpandedLessonId] = useState<string | null>(() => {
- return new URLSearchParams(window.location.search).get('lesson');
- });
+ const expandedLessonId = searchParams.get('lesson');
  const [lessonCache, setLessonCache] = useState<Record<string, Awaited<ReturnType<typeof getLesson>>>>({});
  const [lessonLoadingIds, setLessonLoadingIds] = useState<Set<string>>(new Set());
  const [lessonErrors, setLessonErrors] = useState<Record<string, string>>({});
@@ -293,18 +272,12 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  }
  }
 
- // Sync expanded lesson with URL (?lesson= & ?module=) — deep link, share, back/forward
+ // Load the open lesson whenever ?lesson= changes — clicks, deep links, back/forward
  useEffect(() => {
- const lessonParam = searchParams.get('lesson');
- if (lessonParam && lessonParam !== expandedLessonId) {
- setExpandedLessonId(lessonParam);
- void ensureLessonLoaded(lessonParam);
- } else if (!lessonParam && expandedLessonId) {
- setExpandedLessonId(null);
- }
+ if (expandedLessonId) void ensureLessonLoaded(expandedLessonId);
  // ensureLessonLoaded is intentionally not in deps — we only want to react to URL changes
  // eslint-disable-next-line react-hooks/exhaustive-deps
- }, [searchParams, expandedLessonId]);
+ }, [expandedLessonId]);
 
  // When lesson param changes and modules are ready, un-collapse its parent module
  useEffect(() => {
@@ -337,24 +310,13 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  setSearchParams(next, { replace: true });
  }, [expandedLessonId, displayModules, selectedLevelId, searchParams, setSearchParams]);
 
- // Ensure the deep-linked lesson from the initial URL is fetched on first paint
- useEffect(() => {
- const lessonParam = new URLSearchParams(window.location.search).get('lesson');
- if (lessonParam) void ensureLessonLoaded(lessonParam);
- // run once on mount — ensureLessonLoaded is stable for this purpose
- // eslint-disable-next-line react-hooks/exhaustive-deps
- }, []);
-
  function toggleLesson(id: string) {
  if (expandedLessonId === id) {
- setExpandedLessonId(null);
  const next = new URLSearchParams(searchParams);
  next.delete('lesson');
  // keep ?module so user stays in the module, keep ?level
  setSearchParams(next);
  } else {
- setExpandedLessonId(id);
- void ensureLessonLoaded(id);
  const next = new URLSearchParams(searchParams);
  next.set('lesson', id);
  const parent = displayModules.find((m) => m.lessons.some((l) => l.id === id));
@@ -383,12 +345,21 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  modules.refetch();
  }
 
+ // Switch level and drop lesson/module deep links from the URL.
+ function selectLevel(levelId: string | null) {
+ const next = new URLSearchParams(searchParams);
+ if (levelId) next.set('level', levelId);
+ else next.delete('level');
+ next.delete('lesson');
+ next.delete('module');
+ setSearchParams(next);
+ }
+
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [busy, setBusy] = useState(false);
 
  // Forms
- const [levelForm, setLevelForm] = useState({ code: '', title: '', levelLabel: '', defaultFee: '' });
  const [moduleForm, setModuleForm] = useState({ title: '', order: '' });
  const [lessonForms, setLessonForms] = useState<Record<string, string>>({});
  const [lessonTypeForms, setLessonTypeForms] = useState<Record<string, string>>({});
@@ -418,97 +389,19 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
 
  return (
  <div className="space-y-5">
- {/* Level selector — Canvas course picker analogue */}
- <Panel>
- <div className="flex flex-wrap items-center gap-2">
- <span className="inline-flex items-center gap-2 text-xs font-semibold text-muted">
- <FiGrid aria-hidden /> Level
- </span>
- <div className="flex flex-wrap gap-2">
- {levels.length === 0 ? (
- <span className="text-xs text-muted">No levels assigned</span>
- ) : (
- levels.map((level) => (
- <button
- key={level.id}
- type="button"
- onClick={() => {
- setSelectedLevelId(level.id);
- setExpandedLessonId(null);
- const next = new URLSearchParams(searchParams);
- next.set('level', level.id);
- next.delete('lesson');
- next.delete('module');
- setSearchParams(next);
- }}
- className={`btn btn-sm rounded-full ${selectedLevelId === level.id ? 'border-0 bg-brand text-white' : 'border-line bg-base-200'}`}
- >
- {level.code} · {level.levelLabel}
- </button>
- ))
- )}
- </div>
- {selectedLevel ? (
- <span className="ml-auto hidden items-center gap-2 text-xs text-muted lg:flex">
- <span className="font-semibold text-ink">{selectedLevel.title}</span>
- <span>·</span>
- <span>{modules.data?.length ?? 0} modules</span>
- <span>·</span>
- <span>{totalLessons} lessons</span>
- </span>
- ) : null}
- </div>
-
- {canCreateLevel ? (
- <details className="collapse collapse-arrow mt-3 rounded-box border border-line bg-base-200/40">
- <summary className="collapse-title py-3 text-xs font-semibold">Create a new level</summary>
- <div className="collapse-content">
- <form
- onSubmit={(e) => {
- e.preventDefault();
- void run(
- () =>
- createLevel({
- code: levelForm.code.trim().toUpperCase(),
- title: levelForm.title.trim(),
- levelLabel: levelForm.levelLabel.trim(),
- defaultFee: levelForm.defaultFee ? Number(levelForm.defaultFee) : 0,
- }),
- 'Could not create the level.',
- () => {
- setLevelForm({ code: '', title: '', levelLabel: '', defaultFee: '' });
+ <LevelPicker
+ levels={levels}
+ selectedLevel={selectedLevel}
+ onSelect={selectLevel}
+ moduleCount={modules.data?.length ?? 0}
+ lessonCount={totalLessons}
+ canManage={canCreateLevel}
+ onLevelsChanged={onLevelsChanged}
+ onLevelDeleted={(deletedId) => {
+ selectLevel(levels.find((l) => l.id !== deletedId)?.id ?? null);
  onLevelsChanged?.();
- },
- );
  }}
- className="space-y-3 pt-2"
- >
- <div className="grid gap-3 sm:grid-cols-2">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Code</span>
- <input required value={levelForm.code} onChange={(e) => { const v = e.currentTarget.value; setLevelForm((f) => ({ ...f, code: v })) }} placeholder="e.g. A1" className="input input w-full rounded-field border-line bg-base-100" />
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Label</span>
- <input required value={levelForm.levelLabel} onChange={(e) => { const v = e.currentTarget.value; setLevelForm((f) => ({ ...f, levelLabel: v })) }} placeholder="e.g. Beginner" className="input input w-full rounded-field border-line bg-base-100" />
- </label>
- </div>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Title</span>
- <input required value={levelForm.title} onChange={(e) => { const v = e.currentTarget.value; setLevelForm((f) => ({ ...f, title: v })) }} placeholder="e.g. German A1 — Beginner" className="input input w-full rounded-field border-line bg-base-100" />
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Default fee (RWF)</span>
- <input value={levelForm.defaultFee} onChange={(e) => { const v = e.currentTarget.value; setLevelForm((f) => ({ ...f, defaultFee: v })) }} inputMode="numeric" placeholder="e.g. 45000" className="input input w-full rounded-field border-line bg-base-100" />
- </label>
-  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
-  {busy ? <span className="loading loading-spinner loading-xs" /> : null} Create level
-  </button>
- </form>
- </div>
- </details>
- ) : null}
- </Panel>
+ />
 
  {error ? (
  <div role="alert" className="alert alert-error py-2 text-xs">
@@ -520,6 +413,7 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
  ) : null}
 
  {/* Modules — Canvas vertical stack */}
+ <div aria-busy={modules.stale} className={`transition-opacity ${modules.stale ? 'pointer-events-none opacity-50' : ''}`}>
  {!selectedLevelId ? (
  <Panel>
  <EmptyBlock title="Select a level above" hint="Choose a level to view and organize its modules." />
@@ -763,7 +657,9 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
   onFieldErrorsChange={setFieldErrors}
   onSaved={() => refreshCachedLesson(item.id)}
   onDeleted={() => {
-  setExpandedLessonId(null);
+  const next = new URLSearchParams(searchParams);
+  next.delete('lesson');
+  setSearchParams(next, { replace: true });
   setLessonCache((prev) => {
   const next = { ...prev };
   delete next[item.id];
@@ -880,6 +776,7 @@ export function CurriculumManager({ levels, canCreateLevel, onLevelsChanged }: C
   </Panel>
   </div>
   )}
+ </div>
   </div>
   );
 }
