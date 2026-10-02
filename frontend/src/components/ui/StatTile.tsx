@@ -38,8 +38,8 @@ export function StatTile({
  <p className={`text-xs font-medium ${solid ? 'text-white/80' : 'text-muted'}`}>{label}</p>
  {Icon ? (
  <span
- className={`inline-flex size-9 items-center justify-center rounded-xl ${
- solid ? 'bg-white/20 text-white' : `${tones.soft} ${tones.text}`
+ className={`inline-flex items-center justify-center ${
+ solid ? 'size-9 rounded-xl bg-white/20 text-white' : `text-xl ${tones.text}`
  }`}
  >
  <Icon aria-hidden />

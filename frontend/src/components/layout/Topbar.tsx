@@ -88,7 +88,7 @@ export function Topbar({ title, onMenu }: TopbarProps) {
             tabIndex={0}
             className="ml-1 flex items-center gap-2 border-l border-line pl-2 text-left sm:pl-3"
           >
-            <span className="flex size-9 items-center justify-center overflow-hidden rounded-full bg-brand-tint text-sm font-bold text-brand">
+            <span className="flex size-9 items-center justify-center overflow-hidden rounded-full bg-brand text-sm font-bold text-white">
               {user?.avatarUrl ? (
                 <img
                   src={user.avatarUrl}

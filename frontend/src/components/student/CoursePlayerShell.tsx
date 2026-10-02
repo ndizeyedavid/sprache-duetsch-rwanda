@@ -27,7 +27,7 @@ export function CoursePlayerShell({ course, slug, activeLessonId, header, childr
     <div className="flex min-h-[70vh] flex-col gap-4 lg:flex-row">
       {/* Desktop sidebar */}
       <aside className="hidden w-[320px] shrink-0 lg:block">
-        <div className="sticky top-[68px] max-h-[calc(100vh-76px)] overflow-y-auto pr-1 scrollbar-thin">
+        <div className="sticky top-[68px] max-h-[calc(100vh-76px)] overflow-y-auto pr-1 scrollbar-slim">
           <CourseSidebar course={course} slug={slug} activeLessonId={activeLessonId} collapsed={collapsed} onToggle={toggle} onSelect={onSelect} />
         </div>
       </aside>

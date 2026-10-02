@@ -1,20 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Panel } from '../../components/ui/Panel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { ClassGroupCard } from '../../components/teacher/ClassGroupCard';
 import { TodoRail } from '../../components/teacher/TodoRail';
 import { COLORS } from '../../lib/theme';
 import { useSession } from '../../lib/session';
-import {
- humanize,
- listCampusesFull,
- listClasses,
- listIntakesFull,
- listLevels,
- listSessions,
- listAttempts,
-} from '../../lib/services';
+import { WelcomeHero } from '../../components/common/WelcomeHero';
+import { humanize, listClasses, listSessions, listAttempts } from '../../lib/services';
 
 const PALETTE = [COLORS.brand, COLORS.sun, COLORS.navy, COLORS.coral, '#5b8def', '#A098AE'];
 
@@ -25,14 +17,8 @@ function hiddenKey(userId: string | undefined): string {
 export function TeacherDashboard() {
  const { user } = useSession();
  const classes = useApi('teacher-classes', listClasses);
- const levels = useApi('levels-catalog', listLevels);
- const campuses = useApi('campuses-full', listCampusesFull);
- const intakes = useApi('intakes-full', listIntakesFull);
  const sessions = useApi('teacher-sessions', listSessions);
 
- const [levelId, setLevelId] = useState<string | null>(null);
- const [campusId, setCampusId] = useState<string | null>(null);
- const [intakeId, setIntakeId] = useState<string | null>(null);
  const [showHidden, setShowHidden] = useState(false);
  const [hiddenSet, setHiddenSet] = useState<Set<string>>(new Set());
  const [gradingCounts, setGradingCounts] = useState<Record<string, number>>({});
@@ -59,15 +45,6 @@ export function TeacherDashboard() {
  });
  }
 
- const taughtLevelIds = useMemo(
- () => new Set((classes.data ?? []).map((group) => group.levelId)),
- [classes.data],
- );
- const taughtLevels = useMemo(
- () => (levels.data ?? []).filter((level) => taughtLevelIds.has(level.id)),
- [levels.data, taughtLevelIds],
- );
-
  // Fetch per-class grading counts (SUBMITTED) for dots and To-Do
  useEffect(() => {
  if (!classes.data || classes.data.length === 0) return;
@@ -89,18 +66,12 @@ export function TeacherDashboard() {
  };
  }, [classes.data]);
 
- const filtered = useMemo(() => {
- const list = classes.data ?? [];
- return list.filter((group) => {
- if (levelId && group.levelId !== levelId) return false;
- if (campusId && group.campusId !== campusId) return false;
- if (intakeId && group.intakeId !== intakeId) return false;
- if (!showHidden && hiddenSet.has(group.id)) return false;
- return true;
- });
- }, [classes.data, levelId, campusId, intakeId, hiddenSet, showHidden]);
+ const visibleClasses = useMemo(
+ () => (classes.data ?? []).filter((group) => showHidden || !hiddenSet.has(group.id)),
+ [classes.data, hiddenSet, showHidden],
+ );
 
- const visibleHiddenCount = useMemo(
+ const hiddenCount = useMemo(
  () => (classes.data ?? []).filter((g) => hiddenSet.has(g.id)).length,
  [classes.data, hiddenSet],
  );
@@ -113,16 +84,8 @@ export function TeacherDashboard() {
  className: group.name,
  count: gradingCounts[group.id] ?? 0,
  }))
- .filter((row) => row.count > 0)
- .filter((row) => {
- const g = (classes.data ?? []).find((c) => c.id === row.classGroupId);
- if (!g) return false;
- if (levelId && g.levelId !== levelId) return false;
- if (campusId && g.campusId !== campusId) return false;
- if (intakeId && g.intakeId !== intakeId) return false;
- return true;
- }),
- [classes.data, gradingCounts, levelId, campusId, intakeId],
+ .filter((row) => row.count > 0),
+ [classes.data, gradingCounts],
  );
 
  const upcoming = useMemo(() => {
@@ -161,82 +124,48 @@ export function TeacherDashboard() {
  return items.slice(0, 5);
  }, [needsGrading, sessions.data]);
 
- if (classes.loading || levels.loading) return <LoadingBlock label="Loading your dashboard…" />;
+ if (classes.loading) return <LoadingBlock label="Loading your dashboard…" />;
  if (classes.error) return <ErrorBlock message={classes.error} onRetry={classes.refetch} />;
+
+ const welcome = (
+ <WelcomeHero
+ firstName={user?.firstName ?? null}
+ message="Here's what's happening across your classes. Your to-do list keeps grading and upcoming sessions in one place."
+ action={{ label: 'Open grading', to: '/teacher/grading' }}
+ />
+ );
+
  if (!classes.data || classes.data.length === 0) {
  return (
+ <div className="space-y-5">
+ {welcome}
  <EmptyBlock
  title="No classes assigned yet"
  hint="An academic admin will assign you to a class group. It will then appear here as a course card."
  />
+ </div>
  );
  }
 
  return (
  <div className="space-y-5">
- {/* Header filters */}
- <Panel>
- <div className="flex flex-wrap items-center gap-2">
- <div className="flex flex-wrap gap-2">
- {taughtLevels.map((level) => (
- <button
- key={level.id}
- type="button"
- onClick={() => setLevelId((prev) => (prev === level.id ? null : level.id))}
- className={`btn btn-sm rounded-full ${levelId === level.id ? 'border-0 bg-brand text-white' : 'border-line bg-base-200'}`}
- >
- {level.code}
- </button>
- ))}
- </div>
- <div className="ml-auto flex flex-wrap gap-2">
- <select value={campusId ?? ''} onChange={(e) => setCampusId(e.currentTarget.value || null)} className="select select rounded-full border-line bg-base-200" aria-label="Campus filter">
- <option value="">All campuses</option>
- {(campuses.data ?? []).map((c) => (
- <option key={c.id} value={c.id}>
- {c.name}
- </option>
- ))}
- </select>
- <select value={intakeId ?? ''} onChange={(e) => setIntakeId(e.currentTarget.value || null)} className="select select rounded-full border-line bg-base-200" aria-label="Intake filter">
- <option value="">All intakes</option>
- {(intakes.data ?? []).map((i) => (
- <option key={i.id} value={i.id}>
- {i.name}
- </option>
- ))}
- </select>
- {(levelId || campusId || intakeId) && (
- <button
- type="button"
- onClick={() => {
- setLevelId(null);
- setCampusId(null);
- setIntakeId(null);
- }}
- className="btn btn-sm rounded-full border-line bg-base-200"
- >
- Clear filters
- </button>
- )}
- {visibleHiddenCount > 0 && (
- <label className="flex items-center gap-2 text-xs">
- <input type="checkbox" className="checkbox checkbox-xs" checked={showHidden} onChange={(e) => setShowHidden(e.currentTarget.checked)} />
- Show hidden ({visibleHiddenCount})
- </label>
- )}
- </div>
- </div>
- </Panel>
+ {welcome}
 
  <div className="grid gap-5 xl:grid-cols-12">
  <div className="xl:col-span-8">
- {filtered.length === 0 ? (
- <EmptyBlock title="No classes match your filters" hint="Try clearing filters or showing hidden cards." />
+ {/* Only way back for cards hidden via a card's "Hide" action. */}
+ {hiddenCount > 0 ? (
+ <label className="mb-3 flex items-center justify-end gap-2 text-xs text-muted">
+ <input type="checkbox" className="checkbox checkbox-xs" checked={showHidden} onChange={(e) => setShowHidden(e.currentTarget.checked)} />
+ Show hidden classes ({hiddenCount})
+ </label>
+ ) : null}
+ {visibleClasses.length === 0 ? (
+ <EmptyBlock title="All your classes are hidden" hint="Tick “Show hidden classes” above to bring them back." />
  ) : (
  <div className="grid gap-4 sm:grid-cols-2">
- {filtered.map((group) => {
- // Deterministic palette by class id so colors don't shuffle when filtering
+ {visibleClasses.map((group) => {
+ // Deterministic palette by class id so colors don't shuffle when cards are hidden
  const hash = [...group.id].reduce((acc, char) => acc + char.charCodeAt(0), 0);
  return (
  <ClassGroupCard

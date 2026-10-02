@@ -15,6 +15,8 @@
     aqua,
     night,
     winter;
+  /* Its :root scrollbar-color makes Chromium ignore our ::-webkit-scrollbar design below. */
+  exclude: scrollbar;
 }
 
 /* ════════════════════════════════════════════════════════════════
@@ -120,22 +122,22 @@
   box-shadow: 0 1px rgba(0, 0, 0, 0.09);
 }
 
-@utility scrollbar-thin {
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-base-300) transparent;
-
+/* Compact variant of the global scrollbar (sidebar, course player). Not named
+   `scrollbar-thin`: Tailwind 4.3 ships that as `scrollbar-width: thin`, which makes
+   Chromium drop the ::-webkit-scrollbar design. Same reason the standard property
+   below is only applied where ::-webkit-scrollbar is unsupported (Firefox). */
+@utility scrollbar-slim {
   &::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--color-base-300);
-    border-radius: 9999px;
+    border: 0;
   }
 
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
+  @supports not selector(::-webkit-scrollbar) {
+    scrollbar-width: thin;
   }
 }
 
@@ -144,6 +146,45 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+/* Scrollbars — slim floating pill, no arrow buttons, brand red on hover/drag.
+   Token-driven, so every theme (incl. dark) gets a matching thumb. */
+@layer base {
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /* Transparent border + padding-box clip = pill inset from the edges. */
+    border: 3px solid transparent;
+    border-radius: 9999px;
+    background-clip: padding-box;
+    background-color: color-mix(in oklab, var(--color-base-content) 22%, transparent);
+  }
+
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-brand);
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  /* Firefox: no ::-webkit-scrollbar, so use the standard properties instead. */
+  @supports not selector(::-webkit-scrollbar) {
+    :root {
+      scrollbar-width: thin;
+      scrollbar-color: color-mix(in oklab, var(--color-base-content) 25%, transparent) transparent;
+    }
   }
 }
 

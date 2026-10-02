@@ -66,7 +66,7 @@ export function StudentCourseModules({ course, slug, layout = 'vertical' }: Prop
         <button type="button" onClick={() => setCollapsed(new Set())} className="btn btn-xs rounded-full border-line bg-base-100">Expand all</button>
       </div>
       {layout === 'horizontal' && filteredModules.length > 1 ? (
-        <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+        <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-slim">
           {filteredModules.map((mod) => (
             <button
               key={mod.id}

@@ -1,6 +1,8 @@
-import { NavLink, useNavigate } from "react-router-dom";
-import { FiLogOut } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
+import { FiLogOut, FiSettings } from "react-icons/fi";
 import { Logo } from "../ui/Logo";
+import { SidebarLink } from "./SidebarLink";
+import { NAV_DIVIDER_MY, NAV_ITEM_PAD_Y, NAV_SECTION_PAD_Y } from "./constants";
 import { NAV } from "../../lib/nav";
 import type { Role } from "../../types";
 import { useSession } from "../../lib/session";
@@ -10,6 +12,11 @@ type SidebarProps = {
   open: boolean;
   onClose: () => void;
 };
+
+// daisyUI `menu` themed through its own variables: the active item is a brand pill.
+const MENU_CLASS =
+  "menu w-full gap-0.5 px-3 py-0 [--menu-active-bg:var(--color-brand)] [--menu-active-fg:var(--color-white)]";
+const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-xs font-semibold text-base-content";
 
 export function Sidebar({ role, open, onClose }: SidebarProps) {
   const items = NAV[role];
@@ -33,59 +40,42 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
       ) : null}
 
       <aside
-        className={`fixed inset-y-0 left-0 z-50 flex w-28 flex-col border-r border-line bg-base-100 transition-transform duration-300 lg:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 z-50 flex w-64 flex-col border-r border-line bg-base-300 transition-transform duration-300 lg:translate-x-0 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-center px-4 py-4">
-          <Logo size={80} />
+        <div className="flex h-16 shrink-0 items-center border-b border-line bg-base-100 px-6">
+          <Logo size={36} withWordmark wordmarkClassName="font-bold text-ink" />
         </div>
 
-        <nav
-          aria-label="Main navigation"
-          className="flex-1 overflow-y-auto scrollbar-thin pb-4"
-        >
-          <ul>
+        <nav aria-label="Main navigation" className={`flex-1 overflow-y-auto scrollbar-slim ${NAV_SECTION_PAD_Y}`}>
+          <ul className={MENU_CLASS}>
+            <li className={TITLE_CLASS}>Menu</li>
             {items.map((item) => (
-              <li
-                key={item.to}
-                className="border-b border-line/60 last:border-b-0"
-              >
-                <NavLink
-                  to={item.to}
-                  end={
-                    item.to === "/dashboard" ||
-                    item.to === "/teacher" ||
-                    item.to === "/admin" ||
-                    item.to === "/admin/finance"
-                  }
-                  onClick={onClose}
-                  className={({ isActive }) =>
-                    `flex flex-col items-center gap-1.5 px-2 py-4 text-center text-[11px] font-medium leading-tight transition-colors ${
-                      isActive
-                        ? "bg-brand text-white"
-                        : "text-muted hover:bg-base-200 hover:text-ink"
-                    }`
-                  }
-                >
-                  <item.icon className="shrink-0 text-[23px]" aria-hidden />
-                  <span>{item.label}</span>
-                </NavLink>
-              </li>
+              <SidebarLink key={item.to} item={item} onNavigate={onClose} />
             ))}
           </ul>
-        </nav>
 
-        <div className="border-t border-line">
-          <button
-            type="button"
-            onClick={() => void handleLogout()}
-            className="flex w-full flex-col items-center gap-1.5 px-2 py-4 text-center text-[11px] font-medium leading-tight text-muted transition-colors hover:bg-coral-soft hover:text-coral"
-          >
-            <FiLogOut className="shrink-0 text-[22px]" aria-hidden />
-            <span>Log out</span>
-          </button>
-        </div>
+          <div className={`divider mx-6 ${NAV_DIVIDER_MY}`} />
+
+          <ul className={MENU_CLASS}>
+            <li className={TITLE_CLASS}>General</li>
+            <SidebarLink
+              item={{ label: "Settings", to: "/settings", icon: FiSettings }}
+              onNavigate={onClose}
+            />
+            <li>
+              <button
+                type="button"
+                onClick={() => void handleLogout()}
+                className={`gap-3 rounded-selector font-medium text-base-content/70 hover:text-coral ${NAV_ITEM_PAD_Y}`}
+              >
+                <FiLogOut aria-hidden className="shrink-0 text-lg" />
+                <span>Log out</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
       </aside>
     </>
   );
