@@ -53,8 +53,8 @@ export function CourseContents() {
           <span className="font-medium text-brand">Modules</span>
         </span>
         <span className="flex items-center gap-1 rounded-full border border-line bg-base-100 p-1">
-          <button type="button" onClick={() => setLayout('vertical')} className={`btn btn-xs gap-1 rounded-full ${layout === 'vertical' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'vertical'}><FiList aria-hidden />Vertical</button>
-          <button type="button" onClick={() => setLayout('horizontal')} className={`btn btn-xs gap-1 rounded-full ${layout === 'horizontal' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'horizontal'}><FiGrid aria-hidden />Horizontal</button>
+          <button type="button" onClick={() => setLayout('vertical')} className={`btn btn-xs gap-1 rounded-full ${layout === 'vertical' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'vertical'}><FiList aria-hidden />Path</button>
+          <button type="button" onClick={() => setLayout('horizontal')} className={`btn btn-xs gap-1 rounded-full ${layout === 'horizontal' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'horizontal'}><FiGrid aria-hidden />Study</button>
         </span>
       </div>
 
