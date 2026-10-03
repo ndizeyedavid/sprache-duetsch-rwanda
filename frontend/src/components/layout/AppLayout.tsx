@@ -17,11 +17,11 @@ export function AppLayout() {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen bg-base-200">
+    <div className="learning-workspace min-h-screen">
       <Sidebar role={role} open={navOpen} onClose={() => setNavOpen(false)} />
-      <div className="lg:pl-64">
+      <div className="lg:pl-[272px]">
         <Topbar title={getPageTitle(pathname)} onMenu={() => setNavOpen(true)} />
-        <main className="mx-auto max-w-[1440px] px-4 py-5 lg:px-6">
+        <main className={`mx-auto px-4 py-5 lg:px-6 lg:py-6 ${pathname === "/dashboard" ? "w-full" : "max-w-[1600px]"}`}>
           <Outlet />
         </main>
       </div>
