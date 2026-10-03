@@ -1,13 +1,13 @@
 /** Chart palette sampled from the design mockup. Recharts needs raw color values. */
 export const COLORS = {
-  brand: '#FB0D00',
-  brandSoft: '#FFE1DE',
-  sun: '#F3B800',
+  brand: '#B60E1C',
+  brandSoft: '#FAE6E5',
+  sun: '#C28335',
   sunSoft: '#FDF0CE',
-  coral: '#FC6B57',
-  navy: '#374557',
-  muted: '#A098AE',
-  grid: '#F1F0F3',
+  coral: '#D76D5B',
+  navy: '#203044',
+  muted: '#7B777C',
+  grid: '#ECE2DE',
   white: '#FFFFFF',
 } as const;
 
