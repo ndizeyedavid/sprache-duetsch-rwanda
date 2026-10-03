@@ -11,7 +11,7 @@ type PanelProps = {
 
 export function Panel({ children, className = '', padded = true }: PanelProps) {
  return (
- <section className={` rounded-box bg-base-100 ${padded ? 'p-5' : ''} ${className}`}>
+ <section className={`card learning-panel rounded-box ${padded ? 'p-5' : ''} ${className}`}>
  {children}
  </section>
  );
