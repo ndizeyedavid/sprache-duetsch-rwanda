@@ -61,15 +61,14 @@ export function Courses() {
   }, [courses]);
 
   return (
-    <div className="space-y-4">
+    <div className="journey-enter space-y-6">
       <Panel>
         <SectionHeader
-          title="My courses"
+          title="A world of possibility, one course at a time."
           // action={{ label: "Dashboard", to: "/dashboard" }}
         />
         <p className="text-xs leading-relaxed text-muted">
-          Only your enrolled courses appear here. Filter by enrolled or
-          completed, search, then continue where you left off.
+          Your courses, your pace. Follow your learning path and make your next step count.
         </p>
         {courses.length > 0 ? (
           <div className="mt-3 flex flex-wrap gap-1.5">
