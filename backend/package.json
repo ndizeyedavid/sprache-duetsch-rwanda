@@ -29,6 +29,7 @@
     "db:push": "prisma db push",
     "db:reset": "prisma migrate reset --force",
     "db:seed": "prisma db seed",
+    "db:seed:demo": "tsx prisma/seed.demo.ts",
     "db:studio": "prisma studio"
   },
   "dependencies": {
