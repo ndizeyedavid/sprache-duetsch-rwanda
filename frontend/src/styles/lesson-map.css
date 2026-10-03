@@ -1,0 +1,20 @@
+.lesson-map-surface {
+  background-image: radial-gradient(color-mix(in oklab, var(--color-base-content) 9%, transparent) 0.7px, transparent 0.7px);
+  background-size: 16px 16px;
+}
+
+.lesson-map-grid { row-gap: 8px; }
+
+/* On narrow phones, keep the path beside the label instead of beneath it. */
+.lesson-map-single .lesson-map-link {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 16px;
+  text-align: left;
+  padding-block: 10px;
+}
+
+.lesson-map-single [data-lesson-node] { grid-row: 1 / 3; }
+.lesson-map-single .lesson-map-label { margin-top: 0; max-width: none; align-self: end; }
+.lesson-map-single .lesson-map-label + span { align-self: start; justify-self: start; }
