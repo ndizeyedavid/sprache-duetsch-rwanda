@@ -61,91 +61,6 @@ const levels = [
       "Erste 500 Wörter",
     ],
   },
-  {
-    code: "A2",
-    title: "Deutsch A2 — Grundstufe",
-    levelLabel: "Elementary",
-    order: 2,
-    defaultFee: 45000,
-    summary:
-      "Hold simple conversations about work, family and travel. Past tense, Dativ and Akkusativ explained with Rwandan everyday examples.",
-    objectives: [
-      "Perfekt & Präteritum",
-      "Akkusativ & Dativ",
-      "Arbeit & Bewerbung",
-      "Reisen & Transport",
-      "Telefonieren",
-      "Briefe schreiben",
-    ],
-  },
-  {
-    code: "B1",
-    title: "Deutsch B1 — Mittelstufe",
-    levelLabel: "Intermediate",
-    order: 3,
-    defaultFee: 55000,
-    summary:
-      "Become independent. Discuss opinions, read news articles and prepare for the Goethe B1 exam.",
-    objectives: [
-      "Nebensätze & Konnektoren",
-      "Meinung & Diskussion",
-      "Nachrichten lesen",
-      "Prüfungstraining B1",
-      "Formelle E-Mails",
-      "Bewerbungsgespräch",
-    ],
-  },
-  {
-    code: "B2",
-    title: "Deutsch B2 — Fortgeschritten",
-    levelLabel: "Upper Intermediate",
-    order: 4,
-    defaultFee: 65000,
-    summary:
-      "University-level German. Academic writing, complex grammar, debates and listening to native speakers.",
-    objectives: [
-      "Passiv & Konjunktiv",
-      "Akademisches Schreiben",
-      "Debattieren",
-      "Wissenschaftliches Hören",
-      "Studium in Deutschland",
-      "Prüfungstraining B2",
-    ],
-  },
-  {
-    code: "B1-BERUF",
-    title: "Berufsdeutsch B1 — Pflege & Technik",
-    levelLabel: "Intermediate",
-    order: 5,
-    defaultFee: 60000,
-    summary:
-      "German for nursing, hospitality and technical jobs, with interview practice and workplace vocabulary.",
-    objectives: [
-      "Pflege-Wortschatz",
-      "Technik-Wortschatz",
-      "Bewerbung & Lebenslauf",
-      "Kollegengespräche",
-      "Sicherheit am Arbeitsplatz",
-      "Vorstellungsgespräch",
-    ],
-  },
-  {
-    code: "B2-TESTDAF",
-    title: "TestDaF Vorbereitung",
-    levelLabel: "Advanced",
-    order: 6,
-    defaultFee: 70000,
-    summary:
-      "Focused TestDaF drilling: Leseverstehen, Hörverstehen, Schriftlicher and Mündlicher Ausdruck with timed mock exams.",
-    objectives: [
-      "Leseverstehen Taktik",
-      "Hörverstehen Taktik",
-      "Schriftlicher Ausdruck",
-      "Mündlicher Ausdruck",
-      "Zeitmanagement",
-      "Mock-Prüfungen",
-    ],
-  },
 ];
 
 const intakes = [
@@ -273,15 +188,11 @@ const staffAccounts = [
 ] as const;
 
 const teacherByLevel: Record<string, string> = {
-  A1: "nadine@sparch.rw",
-  A2: "clarisse@sparch.rw",
-  B1: "jeanpaul@sparch.rw",
-  B2: "aline@sparch.rw",
-  "B1-BERUF": "yves@sparch.rw",
-  "B2-TESTDAF": "eric@sparch.rw",
+  A1: "clarisse@sparch.rw",
 };
 
-// Demo students. `paid`/`refund`/`discount` drive the financial status each row lands in.
+// Seed students for the clean dataset (A1). Nella is the primary active demo student,
+// Diane is a pending/unpaid registration.
 type StudentSeed = {
   code: string;
   firstName: string;
@@ -303,42 +214,6 @@ type StudentSeed = {
 
 const studentSeeds: StudentSeed[] = [
   {
-    code: "SDR-2024-0142",
-    firstName: "Sandrine",
-    lastName: "Ineza",
-    email: "sandrine@student.sparch.rw",
-    phone: "+250 788 100 142",
-    levelCode: "A2",
-    intakeCode: "INTAKE-2024-07",
-    shift: "EVENING",
-    accountStatus: "ACTIVE",
-    enrollmentStatus: "COMPLETED",
-    fee: 45000,
-    paid: 45000,
-    refund: 0,
-    discount: 0,
-    methodCode: "MOMO",
-    dueInDays: -30,
-  },
-  {
-    code: "SDR-2024-0187",
-    firstName: "Patrick",
-    lastName: "Mugenzi",
-    email: "patrick@student.sparch.rw",
-    phone: "+250 788 100 187",
-    levelCode: "B1-BERUF",
-    intakeCode: "INTAKE-2026-09",
-    shift: "EVENING",
-    accountStatus: "ACTIVE",
-    enrollmentStatus: "ACTIVE",
-    fee: 60000,
-    paid: 30000,
-    refund: 0,
-    discount: 0,
-    methodCode: "AIRTEL",
-    dueInDays: 21,
-  },
-  {
     code: "SDR-2024-0203",
     firstName: "Diane",
     lastName: "Umutoni",
@@ -357,66 +232,12 @@ const studentSeeds: StudentSeed[] = [
     dueInDays: -14,
   },
   {
-    code: "SDR-2024-0211",
-    firstName: "Fabrice",
-    lastName: "Rwigema",
-    email: "fabrice@student.sparch.rw",
-    phone: "+250 788 100 211",
-    levelCode: "B2-TESTDAF",
-    intakeCode: "INTAKE-2026-09",
-    shift: "WEEKEND",
-    accountStatus: "ACTIVE",
-    enrollmentStatus: "ACTIVE",
-    fee: 70000,
-    paid: 70000,
-    refund: 0,
-    discount: 0,
-    methodCode: "CARD",
-    dueInDays: -60,
-  },
-  {
-    code: "SDR-2024-0234",
-    firstName: "Solange",
-    lastName: "Nyirahabimana",
-    email: "solange@student.sparch.rw",
-    phone: "+250 788 100 234",
-    levelCode: "B2",
-    intakeCode: "INTAKE-2024-07",
-    shift: "EVENING",
-    accountStatus: "GRADUATED",
-    enrollmentStatus: "COMPLETED",
-    fee: 65000,
-    paid: 0,
-    refund: 0,
-    discount: 65000,
-    methodCode: "SCHOLARSHIP",
-    dueInDays: -120,
-  },
-  {
-    code: "SDR-2024-0255",
-    firstName: "Emmanuel",
-    lastName: "Butera",
-    email: "emmanuel@student.sparch.rw",
-    phone: "+250 788 100 255",
-    levelCode: "B1",
-    intakeCode: "INTAKE-2026-01",
-    shift: "AFTERNOON",
-    accountStatus: "SUSPENDED",
-    enrollmentStatus: "WITHDRAWN",
-    fee: 55000,
-    paid: 55000,
-    refund: 55000,
-    discount: 0,
-    methodCode: "MOMO",
-    dueInDays: -200,
-  },
-  {
     code: "SDR-2024-0301",
     firstName: "Nella",
     lastName: "Ishimwe",
     email: "nella@student.sparch.rw",
     phone: "+250 788 100 301",
-    levelCode: "A2",
+    levelCode: "A1",
     intakeCode: "INTAKE-2026-09",
     shift: "EVENING",
     accountStatus: "ACTIVE",
@@ -935,30 +756,33 @@ const seedSessionsAndAttendance = async (params: {
   studentIds: Map<string, string>;
 }) => {
   const { classIds, staffIds, studentIds } = params;
-  const a2ClassId = classIds.get("A2")!;
+  const a1ClassId = classIds.get("A1");
+  if (!a1ClassId) return;
 
-  await prisma.classSession.deleteMany({ where: { classGroupId: a2ClassId } });
+  await prisma.classSession.deleteMany({ where: { classGroupId: a1ClassId } });
 
   const teacherId = staffIds.get("clarisse@sparch.rw") ?? null;
-  const a2Students = ["SDR-2024-0142", "SDR-2024-0301"].map((code) => studentIds.get(code)!);
+  const a1Students = ["SDR-2024-0301"]
+    .map((code) => studentIds.get(code))
+    .filter((id): id is string => Boolean(id));
 
   const sessions = [
     {
-      title: "Grammatik: Akkusativ",
+      title: "Grammatik: Erste Schritte & Aussprache",
       startAt: daysFromNow(-7),
       endAt: daysFromNow(-7),
       status: "COMPLETED" as const,
-      attendance: ["PRESENT", "LATE"] as AttendanceStatus[],
+      attendance: ["PRESENT"] as AttendanceStatus[],
     },
     {
-      title: "Konversation im Alltag",
+      title: "Konversation: Begrüssung & Vorstellung",
       startAt: daysFromNow(0),
       endAt: daysFromNow(0),
       status: "SCHEDULED" as const,
       attendance: null,
     },
     {
-      title: "Prüfungstraining A2",
+      title: "Zahlen & Uhrzeit im Alltag",
       startAt: daysFromNow(3),
       endAt: daysFromNow(3),
       status: "SCHEDULED" as const,
@@ -974,12 +798,12 @@ const seedSessionsAndAttendance = async (params: {
 
     const created = await prisma.classSession.create({
       data: {
-        classGroupId: a2ClassId,
+        classGroupId: a1ClassId,
         teacherId,
         title: session.title,
         mode: "ONLINE",
         provider: "GOOGLE_MEET",
-        meetingUrl: "https://meet.google.com/sparch-a2-demo",
+        meetingUrl: "https://meet.google.com/sparch-a1-demo",
         startAt: start,
         endAt: end,
         timezone: "Africa/Kigali",
@@ -988,11 +812,11 @@ const seedSessionsAndAttendance = async (params: {
     });
 
     if (session.attendance) {
-      for (let i = 0; i < a2Students.length; i += 1) {
+      for (let i = 0; i < a1Students.length; i += 1) {
         await prisma.attendance.create({
           data: {
             sessionId: created.id,
-            studentId: a2Students[i],
+            studentId: a1Students[i],
             status: session.attendance[i] ?? "PRESENT",
             markedById: teacherId,
           },
@@ -1004,21 +828,17 @@ const seedSessionsAndAttendance = async (params: {
 
 const seedNotifications = async (params: { studentIds: Map<string, string> }) => {
   const { studentIds } = params;
-  const nellaId = studentIds.get("SDR-2024-0301")!;
-  const patrickId = studentIds.get("SDR-2024-0187")!;
+  const nellaId = studentIds.get("SDR-2024-0301");
+  if (!nellaId) return;
 
   const nellaUser = await prisma.student.findUnique({
     where: { id: nellaId },
     select: { userId: true },
   });
-  const patrickUser = await prisma.student.findUnique({
-    where: { id: patrickId },
-    select: { userId: true },
-  });
-  if (!nellaUser || !patrickUser) return;
+  if (!nellaUser) return;
 
   await prisma.notification.deleteMany({
-    where: { userId: { in: [nellaUser.userId, patrickUser.userId] } },
+    where: { userId: nellaUser.userId },
   });
 
   await prisma.notification.createMany({
@@ -1028,8 +848,8 @@ const seedNotifications = async (params: { studentIds: Map<string, string> }) =>
         type: "SCHEDULE",
         channel: "IN_APP",
         title: "Live-Klasse heute 18:00",
-        body: "Konversation im Alltag — Klicke zum Beitreten.",
-        data: { link: "https://meet.google.com/sparch-a2-demo" },
+        body: "Begrüssung & Vorstellung — Klicke zum Beitreten.",
+        data: { link: "https://meet.google.com/sparch-a1-demo" },
       },
       {
         userId: nellaUser.userId,
@@ -1037,13 +857,6 @@ const seedNotifications = async (params: { studentIds: Map<string, string> }) =>
         channel: "IN_APP",
         title: "Offener Betrag",
         body: "Dein Saldo beträgt 25.000 RWF. Teilzahlungen sind möglich.",
-      },
-      {
-        userId: patrickUser.userId,
-        type: "EXAM",
-        channel: "IN_APP",
-        title: "Neue Aufgabe verfügbar",
-        body: "Berufsdeutsch B1 — Vorstellungsgespräch Übung ist bereit.",
       },
     ],
   });
@@ -1168,11 +981,12 @@ const main = async () => {
   console.info("→ Seeding articles + FAQs");
   await seedArticlesAndFaqs({ staffIds });
 
-  console.info("✔ Seed complete");
+  console.info("✔ Seed complete (Core dataset with A1 level)");
   console.info(`  Super admin: ${staffAccounts[0].email} / ${staffAccounts[0].password}`);
   console.info("  Teacher:     clarisse@sparch.rw / Teacher123!");
   console.info("  Finance:     finance@sparch.rw / Finance123!");
   console.info("  Student:     nella@student.sparch.rw / Student123!");
+  console.info("  Demo levels: Run 'npm run db:seed:demo' if you want additional demo levels (A2-B2).");
 };
 
 main()
