@@ -34,7 +34,7 @@ export function Topbar({ title, onMenu }: TopbarProps) {
   }
 
   return (
-    <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-line bg-base-100/90 px-4 py-3 backdrop-blur lg:px-6">
+    <header className="sticky top-3 z-30 mx-4 mt-3 flex items-center gap-3 rounded-box border border-base-300/70 bg-base-100/85 px-4 py-3 backdrop-blur-xl lg:mx-8 lg:px-5">
       <button
         type="button"
         onClick={onMenu}
