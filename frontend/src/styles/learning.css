@@ -1,0 +1,74 @@
+.learning-workspace {
+  background:
+    radial-gradient(ellipse at 80% 0%, color-mix(in oklab, var(--color-secondary) 10%, transparent), transparent 40%),
+    radial-gradient(ellipse at 15% 35%, color-mix(in oklab, var(--color-primary) 9%, transparent), transparent 45%),
+    var(--color-base-200);
+}
+
+.learning-panel {
+  border: 1px solid color-mix(in oklab, var(--color-base-300) 75%, transparent);
+  background: color-mix(in oklab, var(--color-base-100) 88%, transparent);
+}
+
+.workspace-sidebar {
+  box-shadow: 0 12px 40px color-mix(in oklab, var(--color-base-content) 5%, transparent);
+}
+
+.journey-hero {
+  background:
+    radial-gradient(ellipse at 90% 0%, color-mix(in oklab, var(--color-secondary) 18%, transparent), transparent 65%),
+    color-mix(in oklab, var(--color-primary) 8%, var(--color-base-100));
+}
+
+.journey-orbit {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 1px dashed color-mix(in oklab, var(--color-primary) 30%, transparent);
+  background: radial-gradient(circle, color-mix(in oklab, var(--color-primary) 10%, transparent), transparent 70%);
+}
+
+.journey-orbit::before {
+  content: '';
+  position: absolute;
+  inset: 23px;
+  border: 1px solid color-mix(in oklab, var(--color-primary) 14%, transparent);
+  border-radius: 50%;
+}
+
+.journey-orbit-label {
+  position: absolute;
+  padding: 10px 16px;
+  border-radius: var(--radius-field);
+  border: 1px solid var(--color-base-300);
+  background: color-mix(in oklab, var(--color-base-100) 90%, transparent);
+  font-size: 12px;
+  font-weight: 600;
+  transform: rotate(-7deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .journey-enter { animation: journey-enter 450ms ease-out both; }
+  .journey-orbit-label { animation: journey-float 6s ease-in-out infinite; }
+  .journey-orbit-label:nth-child(2) { animation-delay: -3s; }
+  .learning-workspace .btn { transition: transform 180ms, background-color 180ms; }
+  .learning-workspace .btn:hover { transform: translateY(-2px); }
+}
+
+@keyframes journey-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes journey-float {
+  0%, 100% { transform: translateY(0) rotate(-7deg); }
+  50% { transform: translateY(-7px) rotate(-4deg); }
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
