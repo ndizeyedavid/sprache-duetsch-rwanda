@@ -1,3 +1,4 @@
+import { apiErrorMessage } from '../lib/api';
 import { useCallback, useEffect, useState } from 'react';
 
 export type ApiState<T> = {
@@ -57,7 +58,7 @@ export function useApi<T>(
       })
       .catch((err: unknown) => {
         if (!cancelled) {
-          setError(err instanceof Error ? err.message : 'Something went wrong.');
+          setError(apiErrorMessage(err, err instanceof Error ? err.message : 'Something went wrong.'));
           setLoading(false);
           setFetching(false);
         }
