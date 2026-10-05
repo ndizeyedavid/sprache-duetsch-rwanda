@@ -76,17 +76,18 @@ export const assessmentQuestionInputSchema = z.object({
 });
 
 export const createAssessmentSchema = z.object({
+  protectedMode: z.boolean().optional(),
   levelId: z.string().min(1),
   lessonId: z.string().min(1).nullable().optional(),
   prerequisiteLessonId: z.string().min(1).nullable().optional(),
   title: z.string().trim().min(2).max(200),
   description: optionalText(2000),
   type: assessmentTypeSchema,
-  durationMinutes: z.coerce.number().int().positive().max(10000).optional(),
+  durationMinutes: z.coerce.number().int().positive().max(10000).nullable().optional(),
   maxAttempts: z.coerce.number().int().positive().max(100).optional(),
   passMark: z.coerce.number().min(0).max(100).optional(),
-  availableFrom: z.coerce.date().optional(),
-  availableUntil: z.coerce.date().optional(),
+  availableFrom: z.coerce.date().nullable().optional(),
+  availableUntil: z.coerce.date().nullable().optional(),
   isPublished: z.boolean().optional(),
   questions: z.array(assessmentQuestionInputSchema).optional(),
 });
@@ -138,6 +139,7 @@ export const gradeAttemptSchema = z.object({
 });
 
 export const submitAttemptSchema = z.object({
+  requestReview: z.boolean().optional(),
   answers: z.array(
     z.object({
       questionId: z.string().min(1),
