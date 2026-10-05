@@ -21,9 +21,13 @@ import {
   updateQuestionSchema,
 } from "./assessments.schema.js";
 
+import { checkTeacherAssessmentAccess } from "./teacher-access.js";
+import { attemptDraftBody, saveAttemptDraft } from "./attempt-drafts.js";
+
 export const assessmentsRouter = Router();
 
-const academic = requireRole(...ACADEMIC_ROLES);
+const academic = [requireRole(...ACADEMIC_ROLES), checkTeacherAssessmentAccess];
+assessmentsRouter.put("/my/attempts/:id/draft", requireAuth, requireRole("STUDENT"), validate({ params: assessmentIdSchema, body: attemptDraftBody }), asyncHandler(saveAttemptDraft));
 
 // ---------------------------------------------------------------------------
 // Student routes (declared first so /my/* can never be shadowed)
