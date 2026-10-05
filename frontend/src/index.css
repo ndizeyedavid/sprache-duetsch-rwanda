@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./styles/learning.css";
+@import "./styles/course-content.css";
 @plugin "@tailwindcss/typography";
 
 @plugin "daisyui" {
@@ -125,12 +126,12 @@
    below is only applied where ::-webkit-scrollbar is unsupported (Firefox). */
 @utility scrollbar-slim {
   &::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
-    border: 0;
+    border: 2px solid transparent;
   }
 
   @supports not selector(::-webkit-scrollbar) {
@@ -146,12 +147,12 @@
   }
 }
 
-/* Scrollbars — slim floating pill, no arrow buttons, brand red on hover/drag.
+/* Scrollbars — slim floating pill, no arrow buttons, a muted ink thumb on hover/drag.
    Token-driven, so every theme (incl. dark) gets a matching thumb. */
 @layer base {
   ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
   }
 
   ::-webkit-scrollbar-track,
@@ -161,15 +162,15 @@
 
   ::-webkit-scrollbar-thumb {
     /* Transparent border + padding-box clip = pill inset from the edges. */
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-radius: 9999px;
     background-clip: padding-box;
-    background-color: color-mix(in oklab, var(--color-base-content) 22%, transparent);
+    background-color: color-mix(in oklab, var(--color-base-content) 28%, transparent);
   }
 
   ::-webkit-scrollbar-thumb:hover,
   ::-webkit-scrollbar-thumb:active {
-    background-color: var(--color-brand);
+    background-color: color-mix(in oklab, var(--color-base-content) 55%, transparent);
   }
 
   ::-webkit-scrollbar-button {
