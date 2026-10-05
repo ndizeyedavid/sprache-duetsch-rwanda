@@ -40,7 +40,7 @@ export const create = async (req: Request, res: Response): Promise<void> => {
 
 export const update = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
-  const user = await service.updateUser(id, validatedBody<UpdateUserInput>(req), actorId(req));
+  const user = await service.updateUser(id, validatedBody<UpdateUserInput>(req), actorId(req), req.user?.role);
   res.json({ success: true, data: user });
 };
 
