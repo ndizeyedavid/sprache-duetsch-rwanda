@@ -1,0 +1,30 @@
+import { useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
+import { FiPlus, FiArrowUpRight, FiFileText } from 'react-icons/fi';
+import { useApi } from '../../hooks/useApi';
+import { listStaffHomework } from '../../lib/homework';
+import { useSession } from '../../lib/session';
+import { LoadingBlock, ErrorBlock } from '../../components/common/PageState';
+import { AssignmentEditor } from '../../components/assignments/teacher/AssignmentEditor';
+import { AssignmentReview } from '../../components/assignments/teacher/AssignmentReview';
+import { dateLabel, responseLabels } from '../../components/assignments/homework/format';
+import type { Homework } from '../../components/assignments/homework/types';
+export function TeacherAssignments() {
+  const data = useApi('staff-homework', listStaffHomework);
+  const [params, setParams] = useSearchParams();
+  const { user } = useSession();
+  const [editing, setEditing] = useState<Homework | undefined>(), [search, setSearch] = useState(''), [status, setStatus] = useState(''), [course, setCourse] = useState('');
+  const creating = params.get('new') === '1', selected = params.get('task');
+  function close() { setEditing(undefined); setParams({}); data.refetch(); }
+  if (creating || editing) return <AssignmentEditor key={editing?.id ?? 'new'} assignment={editing} onClose={close} onSaved={id => { setEditing(undefined); setParams({ task: id }); data.refetch(); }} />;
+  if (selected) return <AssignmentReview key={selected} id={selected} onClose={close} onEdit={setEditing} />;
+  if (data.loading) return <LoadingBlock label="Loading class assignments…" />;
+  if (data.error) return <ErrorBlock message={data.error} onRetry={data.refetch} />;
+  const items = data.data ?? [];
+  const list = items.filter(a => (!status || a.status === status) && (!course || a.classGroupId === course) && `${a.title} ${a.classGroup.name}`.toLowerCase().includes(search.toLowerCase()));
+  return <div className="space-y-5"><section className="card overflow-hidden border border-base-300/70 bg-base-100"><div className="flex items-center gap-6 p-6 sm:p-8"><div className="flex-1"><p className="text-[10px] font-semibold uppercase tracking-[.2em] text-primary">From practice to progress</p><h1 className="mt-3 text-2xl font-bold sm:text-3xl">Give learning a purpose.</h1><p className="mt-3 max-w-xl text-sm leading-7 text-base-content/65">Create focused tasks for your classes. Set clear expectations, follow submissions, and give feedback students can act on.</p><button className="btn btn-primary btn-sm mt-5 rounded-full" onClick={() => setParams({ new: '1' })}><FiPlus />Create assignment</button></div><img src="/illustrations/course-learner.webp" alt="" className="hidden size-40 object-contain md:block" /></div><div className="grid grid-cols-3 border-t border-base-300/60 bg-base-200/35 px-5 py-4 text-center text-xs">{[['Published', items.filter(a => a.status === 'PUBLISHED').length], ['Drafts', items.filter(a => a.status === 'DRAFT').length], ['To review', items.reduce((sum, a) => sum + (a.submissions?.filter(s => s.status === 'SUBMITTED').length ?? 0), 0)]].map(([label, count]) => <div key={label}><p className="text-xl font-semibold">{count}</p><p className="mt-1 text-base-content/55">{label}</p></div>)}</div></section>
+    <div className="flex flex-col gap-2 sm:flex-row"><input aria-label="Search class assignments" className="input input-sm min-w-0 flex-1 rounded-full" placeholder="Search tasks or classes…" value={search} onChange={e => setSearch(e.target.value)} /><select aria-label="Filter by class" className="select select-sm rounded-full" value={course} onChange={e => setCourse(e.target.value)}><option value="">All classes</option>{[...new Map(items.map(a => [a.classGroupId, a.classGroup.name])).entries()].map(([id, name]) => <option key={id} value={id}>{name}</option>)}</select><select aria-label="Filter visibility" className="select select-sm rounded-full" value={status} onChange={e => setStatus(e.target.value)}><option value="">All visibility</option><option value="DRAFT">Drafts</option><option value="PUBLISHED">Published</option><option value="ARCHIVED">Archived</option></select></div>
+    <section className="card overflow-hidden border border-base-300/70 bg-base-100">{list.length ? list.map(a => <button key={a.id} onClick={() => setParams({ task: a.id })} className="flex flex-wrap items-center gap-4 border-b border-base-300/60 p-5 text-left hover:bg-base-200/40 last:border-0"><span className="grid size-11 place-items-center rounded-2xl bg-success text-success-content"><FiFileText size={20} /></span><div className="min-w-0 flex-1"><p className="text-[10px] uppercase tracking-wider text-base-content/50">{a.classGroup.level.code} · {a.classGroup.name}</p><h2 className="mt-1 text-sm font-semibold">{a.title}</h2><p className="mt-1 text-xs text-base-content/55">{responseLabels[a.responseType]} · {a.maxPoints} pts</p></div><span className="badge badge-ghost badge-sm">{a.status.toLowerCase()}</span><span className="text-xs text-base-content/55">{dateLabel(a.dueAt)}</span><FiArrowUpRight /></button>) : <div className="p-10 text-center"><h2 className="font-semibold">{items.length ? 'No matching assignments' : 'Start with one achievable task'}</h2><p className="mx-auto mt-3 max-w-md text-sm leading-7 text-base-content/60">Give your class a short writing or speaking task, include a clear example, and tell them what you’ll look for.</p><button className="btn btn-sm mt-5 rounded-full" onClick={() => setParams({ new: '1' })}><FiPlus />Create a task</button></div>}</section>
+    <div className="flex flex-wrap justify-between gap-3 rounded-box border border-base-300/60 p-5 text-xs leading-6 text-base-content/60"><span><strong className="text-base-content">Building a quiz or exam?</strong> Use the question bank and assessment builder for timed questions.</span><Link className="inline-flex items-center gap-2 font-semibold text-primary" to={user?.role === 'TEACHER' ? '/teacher/assessments' : '/admin/courses'}>Open assessment tools<FiArrowUpRight /></Link></div>
+  </div>;
+}
