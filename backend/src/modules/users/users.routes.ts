@@ -1,3 +1,4 @@
+import { teachingLevelsRouter } from "./teaching-levels.routes.js";
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
 import { ADMIN_ROLES } from "../../lib/roles.js";
@@ -15,6 +16,7 @@ import {
 } from "./users.schema.js";
 
 export const usersRouter = Router();
+usersRouter.use(teachingLevelsRouter);
 
 usersRouter.get(
   "/",
