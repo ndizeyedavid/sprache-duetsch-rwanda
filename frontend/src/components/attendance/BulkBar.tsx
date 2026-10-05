@@ -5,7 +5,7 @@ type Props = { onPick: (status: string) => void; onClear: () => void; disabled?:
 export function BulkBar({ onPick, onClear, disabled }: Props) {
  return (
  <div className="flex flex-wrap items-center gap-2 rounded-box border border-line bg-base-200/40 p-2">
- <span className="px-2 text-xs font-semibold">Mark all</span>
+ <span className="px-2 text-xs font-semibold">Mark all shown</span>
  {STATUSES.map((s) => {
  const meta = STATUS_META[s];
  const Icon = meta.icon;
@@ -16,7 +16,7 @@ export function BulkBar({ onPick, onClear, disabled }: Props) {
  </button>
  );
  })}
- <button type="button" onClick={onClear} className="btn btn-ghost btn-xs rounded-full">Clear</button>
+ <button type="button" disabled={disabled} onClick={onClear} className="btn btn-ghost btn-xs rounded-full">Reset</button>
  </div>
  );
 }
