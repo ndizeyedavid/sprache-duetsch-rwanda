@@ -1,0 +1,17 @@
+export type Resource = { title: string; url: string };
+export type RubricCriterion = { title: string; description: string; points: number };
+export type Homework = {
+  id: string; title: string; instructions: string; classGroupId: string; responseType: 'TEXT' | 'FILE' | 'AUDIO' | 'MIXED';
+  status: 'DRAFT' | 'PUBLISHED' | 'ARCHIVED'; dueAt: string | null; releaseAt: string | null; estimatedMinutes: number;
+  maxPoints: string | number; allowLate: boolean; maxSubmissions: number; resources: Resource[]; rubric: RubricCriterion[];
+  classGroup: { id: string; name: string; level: { code: string; title: string } };
+  createdBy: { firstName: string; lastName: string }; recipients: { studentId: string }[];
+  submissions?: Submission[];
+};
+export type Attachment = { id: string; originalName: string; mimeType: string; sizeBytes: number };
+export type Version = { id: string; revision: number; text: string; fileIds: string[]; submittedAt: string; isLate: boolean; score: string | null; feedback: string | null; gradedAt: string | null };
+export type Submission = { id: string; studentId: string; status: 'DRAFT' | 'SUBMITTED' | 'RETURNED' | 'GRADED'; text: string; fileIds: string[]; revision: number; score: string | null; feedback: string | null; rubricScores: number[] | null; submittedAt: string | null; updatedAt: string; versions?: Version[]; student?: RosterStudent };
+export type RosterStudent = { id: string; studentCode: string; user: { firstName: string; lastName: string } };
+export type HomeworkDetail = { assignment: Homework; submission: Submission | null; files: Attachment[] };
+export type StaffHomeworkDetail = { assignment: Homework; submissions: Submission[]; roster: RosterStudent[]; files: Attachment[] };
+export type HomeworkInput = Omit<Homework, 'id' | 'classGroup' | 'createdBy' | 'recipients' | 'submissions' | 'maxPoints'> & { maxPoints: number; studentIds: string[] };
