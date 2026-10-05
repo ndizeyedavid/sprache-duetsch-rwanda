@@ -9,6 +9,7 @@ import { campusesRouter } from "./modules/campuses/campuses.routes.js";
 import { certificatesRouter } from "./modules/certificates/certificates.routes.js";
 import { classesRouter } from "./modules/classes/classes.routes.js";
 import { contentRouter } from "./modules/content/content.routes.js";
+import { coursebookRouter } from "./modules/content/coursebook.routes.js";
 import { dashboardsRouter } from "./modules/dashboards/dashboards.routes.js";
 import { enrollmentsRouter } from "./modules/enrollments/enrollments.routes.js";
 import { intakesRouter } from "./modules/intakes/intakes.routes.js";
@@ -22,6 +23,8 @@ import { enrollmentRouter } from "./modules/enrollment/enrollment.routes.js";
 import { studentsRouter } from "./modules/students/students.routes.js";
 import { usersRouter } from "./modules/users/users.routes.js";
 
+import { assignmentsRouter } from "./modules/assignments/assignments.routes.js";
+
 export const apiRouter = Router();
 
 apiRouter.use("/auth", authRouter);
@@ -33,7 +36,9 @@ apiRouter.use("/users", usersRouter);
 apiRouter.use("/students", studentsRouter);
 apiRouter.use("/enrollments", enrollmentsRouter);
 apiRouter.use("/content", contentRouter);
+apiRouter.use("/content", coursebookRouter);
 apiRouter.use("/assessments", assessmentsRouter);
+apiRouter.use("/assignments", assignmentsRouter);
 apiRouter.use("/sessions", sessionsRouter);
 apiRouter.use("/attendance", attendanceRouter);
 apiRouter.use("/payments", paymentsRouter);
