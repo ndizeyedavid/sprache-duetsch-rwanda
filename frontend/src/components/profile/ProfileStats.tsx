@@ -1,28 +1,21 @@
-import { FiAward, FiBookOpen, FiClock, FiTrendingUp } from "react-icons/fi";
+import type { CSSProperties } from "react";
+import { FiAward, FiBookOpen, FiCheckCircle } from "react-icons/fi";
 import type { MyProfile } from "../../lib/services";
 
-type Props = { profile: MyProfile; overall: number | null };
-
-export function ProfileStats({ profile, overall }: Props) {
-  const attendance = profile.attendance.percentage;
+export function ProfileStats({ profile, overall }: { profile: MyProfile; overall: number | null }) {
   const cards = [
-    { label: "Overall progress", value: overall !== null ? `${overall}%` : "—", sub: `${profile.lessonsCompleted} lessons done`, icon: FiTrendingUp, tone: "bg-brand text-white" },
-    { label: "Attendance", value: `${attendance}%`, sub: `${profile.attendance.present}/${profile.attendance.total} present`, icon: FiClock, tone: "bg-info text-white" },
-    { label: "Certificates", value: String(profile.certificates), sub: profile.currentLevel ? profile.currentLevel.code : "No level", icon: FiAward, tone: "bg-success text-white" },
-    { label: "Enrolments", value: String(profile.enrollments.length), sub: profile.campus?.name ?? "—", icon: FiBookOpen, tone: "bg-base-200" },
+    { label: "Lessons completed", value: profile.lessonsCompleted, icon: FiBookOpen },
+    { label: "Attendance", value: profile.attendance.total ? `${profile.attendance.percentage}%` : '—', icon: FiCheckCircle },
+    { label: "Certificates earned", value: profile.certificates, icon: FiAward },
   ];
+  const percent = Math.min(100, Math.max(0, overall ?? 0));
   return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      {cards.map((c) => (
-        <div key={c.label} className="rounded-box border border-line bg-base-100 p-4">
-          <div className="flex items-center justify-between">
-            <p className="text-xs font-medium text-muted">{c.label}</p>
-            <span className={`flex size-7 items-center justify-center rounded-full text-xs ${c.tone}`}><c.icon aria-hidden size={14} /></span>
-          </div>
-          <p className="mt-2 text-2xl font-bold">{c.value}</p>
-          <p className="truncate text-xs text-muted">{c.sub}</p>
-        </div>
-      ))}
+    <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
+      <div className="card flex-row items-center gap-3 border border-base-300/70 bg-base-100 p-4">
+        <div className="radial-progress shrink-0 text-primary" style={{ '--value': percent, '--size': '3rem', '--thickness': '4px' } as CSSProperties} role="progressbar" aria-label="Learning progress" aria-valuenow={percent} aria-valuemin={0} aria-valuemax={100}><span className="text-[10px] font-semibold">{overall === null ? '—' : `${percent}%`}</span></div>
+        <p className="text-xs text-base-content/60">Learning<br />progress</p>
+      </div>
+      {cards.map(c => <div key={c.label} className="card flex-row items-center gap-3 border border-base-300/70 bg-base-100 p-4"><span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-base-200 text-base-content/65"><c.icon aria-hidden size={18} /></span><div><p className="text-xl font-semibold">{c.value}</p><p className="text-[10px] text-base-content/60">{c.label}</p></div></div>)}
     </div>
   );
 }
