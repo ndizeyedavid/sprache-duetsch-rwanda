@@ -223,6 +223,11 @@ enum NotificationChannel {
 // ---------------------------------------------------------------------------
 
 model User {
+  teachingLevels TeacherLevel[] @relation("TeachingLevelTeacher")
+  levelsAssigned TeacherLevel[] @relation("TeachingLevelAssigner")
+  assignmentsCreated Assignment[]
+  assignmentFiles AssignmentFile[]
+
   id           String        @id @default(uuid())
   email        String        @unique
   phone        String?
@@ -317,6 +322,7 @@ model Campus {
 // "Level" is intentionally generic (language + code) so non-German courses and
 // additional CEFR-like tracks can be added without a schema change.
 model Level {
+  teachers TeacherLevel[]
   id          String   @id @default(uuid())
   code        String   @unique
   language    String   @default("German")
@@ -365,6 +371,8 @@ model Intake {
 }
 
 model ClassGroup {
+  assignments Assignment[]
+
   id        String   @id @default(uuid())
   code      String   @unique
   name      String
@@ -397,6 +405,9 @@ model ClassGroup {
 // ---------------------------------------------------------------------------
 
 model Student {
+  assignmentRecipients AssignmentRecipient[]
+  assignmentSubmissions AssignmentSubmission[]
+
   id              String        @id @default(uuid())
   studentCode     String        @unique
   userId          String        @unique
@@ -655,6 +666,7 @@ model Question {
 }
 
 model Assessment {
+  protectedMode Boolean @default(false)
   id                 String         @id @default(uuid())
   levelId            String
   lessonId           String?
@@ -693,6 +705,8 @@ model AssessmentQuestion {
 }
 
 model Attempt {
+  draftResponses Json @default("{}")
+  draftUpdatedAt DateTime?
   id            String        @id @default(uuid())
   assessmentId  String
   studentId     String
@@ -1084,4 +1098,116 @@ model AuditLog {
 
   @@index([entityType, entityId])
   @@index([actorId, createdAt])
+}
+
+// Class homework is separate from quizzes and lesson practice.
+enum HomeworkStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+enum HomeworkResponseType {
+  TEXT
+  FILE
+  AUDIO
+  MIXED
+}
+enum HomeworkSubmissionStatus {
+  DRAFT
+  SUBMITTED
+  RETURNED
+  GRADED
+}
+model Assignment {
+  id String @id @default(uuid())
+  classGroupId String
+  createdById String
+  title String
+  instructions String
+  responseType HomeworkResponseType @default(TEXT)
+  status HomeworkStatus @default(DRAFT)
+  dueAt DateTime?
+  releaseAt DateTime?
+  estimatedMinutes Int @default(20)
+  maxPoints Decimal @default(10) @db.Decimal(6, 2)
+  allowLate Boolean @default(true)
+  maxSubmissions Int @default(3)
+  resources Json @default("[]")
+  rubric Json @default("[]")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  classGroup ClassGroup @relation(fields: [classGroupId], references: [id])
+  createdBy User @relation(fields: [createdById], references: [id])
+  recipients AssignmentRecipient[]
+  submissions AssignmentSubmission[]
+  files AssignmentFile[]
+  @@index([classGroupId, status, dueAt])
+}
+model AssignmentRecipient {
+  assignmentId String
+  studentId String
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  @@id([assignmentId, studentId])
+}
+model AssignmentSubmission {
+  id String @id @default(uuid())
+  assignmentId String
+  studentId String
+  status HomeworkSubmissionStatus @default(DRAFT)
+  text String @default("")
+  fileIds String[] @default([])
+  revision Int @default(0)
+  score Decimal? @db.Decimal(6, 2)
+  feedback String?
+  rubricScores Json?
+  submittedAt DateTime?
+  gradedAt DateTime?
+  updatedAt DateTime @updatedAt
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  student Student @relation(fields: [studentId], references: [id])
+  versions AssignmentVersion[]
+  @@unique([assignmentId, studentId])
+  @@index([status, assignmentId])
+}
+model AssignmentVersion {
+  id String @id @default(uuid())
+  submissionId String
+  revision Int
+  text String
+  fileIds String[]
+  submittedAt DateTime @default(now())
+  isLate Boolean @default(false)
+  score Decimal? @db.Decimal(6, 2)
+  feedback String?
+  rubricScores Json?
+  gradedAt DateTime?
+  gradedById String?
+  submission AssignmentSubmission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+  @@unique([submissionId, revision])
+}
+model AssignmentFile {
+  id String @id @default(uuid())
+  assignmentId String
+  uploaderId String
+  storageName String @unique
+  originalName String
+  mimeType String
+  sizeBytes Int
+  createdAt DateTime @default(now())
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  uploader User @relation(fields: [uploaderId], references: [id])
+  @@index([assignmentId, uploaderId])
+}
+
+model TeacherLevel {
+  teacherId String
+  levelId String
+  assignedById String?
+  assignedAt DateTime @default(now())
+  teacher User @relation("TeachingLevelTeacher", fields: [teacherId], references: [id], onDelete: Cascade)
+  level Level @relation(fields: [levelId], references: [id], onDelete: Cascade)
+  assignedBy User? @relation("TeachingLevelAssigner", fields: [assignedById], references: [id], onDelete: SetNull)
+  @@id([teacherId, levelId])
+  @@index([levelId])
 }
