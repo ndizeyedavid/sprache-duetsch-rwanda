@@ -3,6 +3,7 @@ import type { AssignmentItem } from "../../lib/services";
 export function bucketOf(a: AssignmentItem, now = new Date()): string {
   if (a.status === "GRADED" || a.status === "SUBMITTED") return "Done";
   if (a.status === "MISSING") return "Missing";
+  if (a.status === "OVERDUE") return "Overdue";
   if (!a.dueAt) return "Undated";
   const due = new Date(a.dueAt);
   if (Number.isNaN(due.getTime())) return "Undated";
