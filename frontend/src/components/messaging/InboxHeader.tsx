@@ -1,60 +1,6 @@
-// import { FiEdit3 } from "react-icons/fi";
-import { TABS } from "./constants";
-import type { Tab } from "./constants";
-
-type Props = {
-  tab: Tab;
-  onTab: (t: Tab) => void;
-  unreadChats: number;
-  unreadNotices: number;
-  totalChats: number;
-  totalNotices: number;
-  onCompose: () => void;
-};
-
-export function InboxHeader({
-  tab,
-  onTab,
-  unreadChats,
-  unreadNotices,
-  totalChats,
-  totalNotices,
-}: Props) {
-  return (
-    <div className="flex flex-wrap items-center justify-between gap-3">
-      <div className="flex items-center gap-3">
-        <h1 className="text-xl font-bold tracking-tight">Inbox</h1>
-        <div
-          role="tablist"
-          aria-label="Inbox sections"
-          className="tabs tabs-boxed bg-base-200 p-1"
-        >
-          {TABS.map((name) => {
-            const isChats = name === "Chats";
-            const unread = isChats ? unreadChats : unreadNotices;
-            const total = isChats ? totalChats : totalNotices;
-            return (
-              <button
-                key={name}
-                role="tab"
-                aria-selected={tab === name}
-                onClick={() => onTab(name as Tab)}
-                className={`tab tab-sm gap-1.5 ${tab === name ? "tab-active bg-brand text-white" : ""}`}
-              >
-                {name}
-                <span
-                  className={`rounded-full px-1.5 py-0.5 text-[10px] font-bold ${tab === name ? "bg-white/20 text-white" : unread ? "bg-brand text-white" : "bg-base-300"}`}
-                >
-                  {unread ? `${unread}` : `${total}`}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-      {/* <button type="button" onClick={onCompose} className="btn btn-sm gap-1.5 rounded-full border-0 bg-brand text-white hover:bg-brand/90">
-        <FiEdit3 aria-hidden />Compose
-      </button> */}
-    </div>
-  );
+import { FiEdit3, FiMessageCircle, FiBell } from 'react-icons/fi';
+import type { Tab } from './constants';
+type Props = { tab: Tab; onTab: (t: Tab) => void; unreadChats: number; unreadNotices: number; totalChats: number; totalNotices: number; onCompose: () => void };
+export function InboxHeader({ tab, onTab, unreadChats, unreadNotices, onCompose }: Props) {
+  return <div className="flex flex-wrap items-end justify-between gap-4"><div><p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-base-content/50">Your learning community</p><h1 className="mt-2 text-3xl font-semibold tracking-tight">Stay connected.</h1><p className="mt-2 text-sm text-base-content/60">Ask a question, share an idea, or catch up on class updates.</p><div className="mt-5 flex gap-2">{([{name:'Chats',Icon:FiMessageCircle,count:unreadChats},{name:'Notices',Icon:FiBell,count:unreadNotices}] as const).map(t => <button key={t.name} onClick={() => onTab(t.name)} aria-pressed={tab === t.name} className={`btn btn-sm gap-2 ${tab === t.name ? 'btn-neutral' : 'btn-ghost'}`}><t.Icon aria-hidden />{t.name === 'Chats' ? 'Conversations' : 'Class updates'}{t.count > 0 ? <span className="rounded-full bg-base-100 px-1.5 text-[10px] text-base-content">{t.count}</span> : null}</button>)}</div></div><button onClick={onCompose} className="btn btn-sm mb-1"><FiEdit3 aria-hidden />New message</button></div>;
 }
