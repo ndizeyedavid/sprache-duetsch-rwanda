@@ -1,8 +1,5 @@
 .learning-workspace {
-  background:
-    radial-gradient(ellipse at 80% 0%, color-mix(in oklab, var(--color-secondary) 10%, transparent), transparent 40%),
-    radial-gradient(ellipse at 15% 35%, color-mix(in oklab, var(--color-primary) 9%, transparent), transparent 45%),
-    var(--color-base-200);
+  background: var(--color-base-200);
 }
 
 .learning-panel {
@@ -15,9 +12,7 @@
 }
 
 .journey-hero {
-  background:
-    radial-gradient(ellipse at 90% 0%, color-mix(in oklab, var(--color-secondary) 18%, transparent), transparent 65%),
-    color-mix(in oklab, var(--color-primary) 8%, var(--color-base-100));
+  background: var(--color-base-100);
 }
 
 .journey-orbit {
