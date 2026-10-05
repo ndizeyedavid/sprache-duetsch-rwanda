@@ -1,5 +1,4 @@
 import { Prisma } from "../../generated/prisma/client.js";
-import type { Role } from "../../generated/prisma/client.js";
 import { env } from "../../config/env.js";
 import { notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
@@ -218,100 +217,7 @@ export const getStudentDashboard = async (userId: string, _filter: DashboardFilt
 // Teacher dashboard
 // ---------------------------------------------------------------------------
 
-export const getTeacherDashboard = async (userId: string, role: Role, filter: DashboardFilter) => {
-  const classWhere = courseScope(filter);
-  // Teachers only ever see their own classes; admins may narrow by teacherId.
-  if (role === "TEACHER") {
-    classWhere.teacherId = userId;
-  }
-
-  const classes = await prisma.classGroup.findMany({
-    where: classWhere,
-    select: { id: true, levelId: true },
-  });
-
-  const classIds = classes.map((classGroup) => classGroup.id);
-  const levelIds = [...new Set(classes.map((classGroup) => classGroup.levelId))];
-
-  if (classIds.length === 0) {
-    return {
-      classesCount: 0,
-      studentsCount: 0,
-      upcomingSessionsCount: 0,
-      pendingGradingCount: 0,
-      sessionsToday: [],
-      recentAssessments: [],
-    };
-  }
-
-  const now = new Date();
-
-  let rangeStart: Date;
-  let rangeEnd: Date;
-  if (filter.from || filter.to) {
-    rangeStart = filter.from ?? new Date(0);
-    rangeEnd = filter.to ?? new Date(8640000000000000);
-  } else {
-    rangeStart = new Date(now);
-    rangeStart.setHours(0, 0, 0, 0);
-    rangeEnd = new Date(rangeStart);
-    rangeEnd.setDate(rangeEnd.getDate() + 1);
-  }
-
-  const [
-    studentGroups,
-    upcomingSessionsCount,
-    pendingGradingCount,
-    sessionsToday,
-    recentAssessments,
-  ] = await Promise.all([
-    prisma.enrollment.groupBy({
-      by: ["studentId"],
-      where: { classGroupId: { in: classIds }, status: "ACTIVE" },
-    }),
-    prisma.classSession.count({
-      where: {
-        classGroupId: { in: classIds },
-        status: { in: ["SCHEDULED", "LIVE"] },
-        startAt: { gte: now },
-      },
-    }),
-    prisma.attempt.count({
-      where: { status: "SUBMITTED", assessment: { levelId: { in: levelIds } } },
-    }),
-    prisma.classSession.findMany({
-      where: {
-        classGroupId: { in: classIds },
-        startAt: { gte: rangeStart, lt: rangeEnd },
-      },
-      orderBy: { startAt: "asc" },
-      take: 20,
-      select: {
-        id: true,
-        title: true,
-        startAt: true,
-        endAt: true,
-        status: true,
-        classGroup: { select: { id: true, code: true, name: true } },
-      },
-    }),
-    prisma.assessment.findMany({
-      where: { isPublished: true, levelId: { in: levelIds } },
-      orderBy: { createdAt: "desc" },
-      take: 5,
-      select: { id: true, title: true, type: true, levelId: true, createdAt: true },
-    }),
-  ]);
-
-  return {
-    classesCount: classIds.length,
-    studentsCount: studentGroups.length,
-    upcomingSessionsCount,
-    pendingGradingCount,
-    sessionsToday,
-    recentAssessments,
-  };
-};
+export { getTeacherDashboard } from "./teacher-dashboard.service.js";
 
 // ---------------------------------------------------------------------------
 // Academic dashboard
