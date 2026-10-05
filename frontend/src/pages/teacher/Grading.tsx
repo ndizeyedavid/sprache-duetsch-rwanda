@@ -39,7 +39,7 @@ export function TeacherGrading() {
  const [assessmentId, setAssessmentId] = useState<string | null>(
  initialAssessment,
  );
- const [view, setView] = useState<View>("queue");
+ const [view, setView] = useState<View>(searchParams.get("view") === "activities" ? "activities" : "queue");
  const [queueSearch, setQueueSearch] = useState("");
 
  const classes = useApi("teacher-classes", listClasses);
