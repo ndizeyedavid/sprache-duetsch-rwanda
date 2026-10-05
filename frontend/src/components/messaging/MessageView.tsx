@@ -1,86 +1,22 @@
-import { useEffect, useMemo, useRef } from "react";
-import { FiArrowLeft } from "react-icons/fi";
-import { EmptyBlock, ErrorBlock, LoadingBlock } from "../common/PageState";
-import { threadTitle, initials, accentFor, dedupeParticipants } from "./utils";
-import type { ChatMessage, Conversation } from "../../lib/services";
-import { ChatBubble } from "../ui/ChatBubble";
-import { isoDate } from "../../lib/services";
-import { MessageComposer } from "./MessageComposer";
-import { format, isToday, isYesterday, parseISO } from "date-fns";
-
-type Props = {
-  thread: Conversation | null;
-  messages: ChatMessage[];
-  loading: boolean;
-  error: string | null;
-  onRetry: () => void;
-  myId: string | null | undefined;
-  draft: string;
-  onDraft: (v: string) => void;
-  onSend: () => void;
-  sending: boolean;
-  chatError: string | null;
-  onBack?: () => void;
-};
-
-function dayLabel(iso: string): string {
-  try {
-    const d = parseISO(iso);
-    if (isToday(d)) return "Today";
-    if (isYesterday(d)) return "Yesterday";
-    return format(d, "EEE, d MMM yyyy");
-  } catch { return ""; }
-}
-
-export function MessageView({ thread, messages, loading, error, onRetry, myId, draft, onDraft, onSend, sending, chatError, onBack }: Props) {
-  const listRef = useRef<HTMLUListElement>(null);
-  useEffect(() => { if (listRef.current) listRef.current.scrollTop = listRef.current.scrollHeight; }, [messages]);
-
-  const grouped = useMemo(() => {
-    const out: { label: string; items: ChatMessage[] }[] = [];
-    let lastLabel = "";
-    for (const m of messages) {
-      const label = dayLabel(m.createdAt);
-      if (!out.length || label !== lastLabel) { out.push({ label, items: [m] }); lastLabel = label; }
-      else out[out.length - 1].items.push(m);
-    }
-    return out;
-  }, [messages]);
-
-  if (!thread) {
-    return <div className="flex h-full min-h-[50vh] items-center justify-center p-6"><EmptyBlock title="Select a conversation" hint="Choose a thread on the left to read and reply." /></div>;
-  }
-  if (loading) return <LoadingBlock label="Loading messages…" />;
-  if (error) return <ErrorBlock message={error} onRetry={onRetry} />;
-
-  const title = threadTitle(thread, myId);
-  const others = dedupeParticipants(thread.participants).filter((p) => p.user.id !== myId);
-
-  return (
-    <div className="flex h-full min-h-[60vh] flex-col">
-      <div className="flex items-center gap-3 border-b border-line bg-base-100 px-4 py-3">
-        {onBack ? <button type="button" onClick={onBack} className="btn btn-ghost btn-xs btn-circle lg:hidden"><FiArrowLeft aria-hidden /></button> : null}
-        <span className="flex -space-x-2">
-          {others.slice(0, 3).map((p) => <span key={p.user.id} className={`flex size-8 items-center justify-center rounded-full border-2 border-base-100 text-[11px] font-bold ${accentFor(p.user.firstName)}`}>{initials(p.user.firstName, p.user.lastName)}</span>)}
-        </span>
-        <span className="min-w-0 grow">
-          <span className="block truncate text-sm font-bold leading-tight">{title}</span>
-          <span className="block truncate text-xs text-muted">{others.map((p) => `${p.user.firstName} ${p.user.lastName}`).join(" · ") || "Just you"} · {dedupeParticipants(thread.participants).length} members</span>
-        </span>
-      </div>
-
-      {chatError ? <p role="alert" className="mx-4 mt-3 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">{chatError}</p> : null}
-
-      <ul ref={listRef} className="flex-1 space-y-4 overflow-y-auto bg-base-200/20 px-4 py-4">
-        {grouped.length === 0 ? <li className="py-10 text-center text-xs text-muted">No messages yet — say hello to start the conversation.</li> : grouped.map((g) => (
-          <li key={g.label} className="space-y-3">
-            <div className="flex justify-center"><span className="rounded-full bg-base-200 px-3 py-1 text-xs font-medium text-muted">{g.label}</span></div>
-            {g.items.map((m) => { const mine = m.senderId === myId; return <div key={m.id} className={`flex ${mine ? "justify-end" : "justify-start"}`}><ChatBubble body={m.body} time={isoDate(m.createdAt)} from={mine ? "me" : "them"} /></div>; })}
-          </li>
-        ))}
-      </ul>
-
-      <MessageComposer draft={draft} onDraft={onDraft} onSend={onSend} sending={sending} />
-    </div>
-  );
+import { useEffect, useMemo, useRef } from 'react';
+import { FiArrowLeft, FiMessageCircle } from 'react-icons/fi';
+import { ErrorBlock, LoadingBlock } from '../common/PageState';
+import { threadTitle, initials, accentFor, dedupeParticipants } from './utils';
+import type { ChatMessage, Conversation } from '../../lib/services';
+import { MessageComposer } from './MessageComposer';
+import { format, isToday, isYesterday, parseISO } from 'date-fns';
+type Props = { thread: Conversation | null; messages: ChatMessage[]; loading: boolean; error: string | null; onRetry: () => void; myId: string | null | undefined; draft: string; onDraft: (v: string) => void; onSend: () => void; sending: boolean; chatError: string | null; onBack?: () => void };
+function dayLabel(iso:string){const d=parseISO(iso);return isToday(d)?'Today':isYesterday(d)?'Yesterday':format(d,'d MMM yyyy');}
+export function MessageView({ thread, messages, loading, error, onRetry, myId, draft, onDraft, onSend, sending, chatError, onBack }:Props) {
+  const list=useRef<HTMLUListElement>(null),nearBottom=useRef(true),lastThread=useRef<string|undefined>(undefined);
+  const last=messages[messages.length-1];
+  useEffect(()=>{const changed=lastThread.current!==thread?.id;if(list.current&&(changed||nearBottom.current||last?.senderId===myId))list.current.scrollTop=list.current.scrollHeight;lastThread.current=thread?.id;},[thread?.id,last?.id,last?.senderId,myId,loading]);
+  const grouped=useMemo(()=>{const out:{label:string;items:ChatMessage[]}[]=[];for(const m of messages){const label=dayLabel(m.createdAt);if(out.at(-1)?.label!==label)out.push({label,items:[m]});else out.at(-1)!.items.push(m);}return out;},[messages]);
+  if(!thread)return <div className="flex h-full flex-col items-center justify-center px-8 py-12 text-center"><span className="grid size-20 place-items-center rounded-3xl bg-neutral text-neutral-content"><FiMessageCircle aria-hidden size={34}/></span><p className="mt-6 text-[10px] font-semibold uppercase tracking-widest text-base-content/45">A little conversation goes a long way</p><h2 className="mt-2 text-2xl font-semibold">Learning is better together.</h2><p className="mt-3 max-w-sm text-sm leading-6 text-base-content/60">Choose a conversation to catch up, ask for help, or share what you’re learning.</p><img src="/illustrations/study-books.webp" alt="" width={160} height={120} className="mt-8 h-28 w-36 object-contain" /></div>;
+  const others=dedupeParticipants(thread.participants).filter(p=>p.user.id!==myId),person=others[0]?.user;
+  return <div className="flex h-full min-h-0 flex-col"><header className="flex shrink-0 items-center gap-3 border-b border-base-300 bg-base-100 px-4 py-4 sm:px-6">{onBack?<button aria-label="Back to conversations" onClick={onBack} className="btn btn-ghost btn-sm btn-circle lg:hidden"><FiArrowLeft aria-hidden/></button>:null}<span className={`grid size-11 shrink-0 place-items-center rounded-2xl text-xs font-semibold ${person?accentFor(person.firstName):'bg-base-200'}`}>{person?initials(person.firstName,person.lastName):'Me'}</span><div className="min-w-0 flex-1"><h2 className="truncate text-sm font-semibold">{threadTitle(thread,myId)}</h2><p className="mt-1 truncate text-xs text-base-content/55">{others.length>1?`${others.length+1} people · Group conversation`:person?'Direct conversation':'Personal notes'}</p></div></header>
+    {chatError?<p role="alert" className="mx-4 mt-3 rounded-xl bg-error/10 p-3 text-xs text-error">{chatError} Your message is still in the composer.</p>:null}
+    {loading?<div className="min-h-0 flex-1"><LoadingBlock label="Loading messages…" /></div>:error?<div className="min-h-0 flex-1"><ErrorBlock message={error} onRetry={onRetry}/></div>:<ul ref={list} onScroll={()=>{const el=list.current;if(el)nearBottom.current=el.scrollHeight-el.scrollTop-el.clientHeight<90;}} className="min-h-0 flex-1 space-y-5 overflow-y-auto bg-base-200/45 px-4 py-6 sm:px-6">{!grouped.length?<li className="py-12 text-center"><FiMessageCircle aria-hidden size={28} className="mx-auto text-base-content/35"/><p className="mt-3 text-sm font-semibold">Say hello.</p><p className="mt-2 text-xs text-base-content/55">This is the beginning of your conversation.</p></li>:grouped.map(g=><li key={g.label}><div className="mb-5 flex justify-center"><span className="rounded-full bg-base-100 px-3 py-1 text-[10px] text-base-content/55">{g.label}</span></div>{g.items.map(m=>{const mine=m.senderId===myId;return <div key={m.id} className={`chat ${mine?'chat-end':'chat-start'}`}><div className="chat-header mb-1 text-[10px] text-base-content/55">{mine?'You':`${m.sender.firstName} ${m.sender.lastName}`}<time className="ml-2" dateTime={m.createdAt}>{format(parseISO(m.createdAt),'HH:mm')}</time></div><div className={`chat-bubble max-w-[90%] whitespace-pre-wrap break-words text-sm leading-6 [overflow-wrap:anywhere] sm:max-w-[80%] ${mine?'chat-bubble-neutral':'bg-base-100 text-base-content'}`}>{m.body}</div></div>;})}</li>)}</ul>}
+    <MessageComposer draft={draft} onDraft={onDraft} onSend={onSend} sending={sending||loading||!!error}/>
+  </div>;
 }
