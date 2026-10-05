@@ -1,3 +1,6 @@
+import { assertTeacherLevel, getTeacherLevelIds } from "../../lib/teacher-levels.js";
+export { submitActivity } from "./activity-submission.service.js";
+import { getPracticeActivityIds } from "./practice.utils.js";
 import { Prisma } from "../../generated/prisma/client.js";
 import type { Role } from "../../generated/prisma/client.js";
 import {
@@ -20,7 +23,6 @@ import type {
   ListActivitySubmissionsQuery,
   MyNotesQuery,
   SearchQuery,
-  SubmitActivityInput,
   UpdateActivityInput,
   UpdateLessonInput,
   UpdateMaterialInput,
@@ -47,10 +49,7 @@ const assertCanManageLevel = async (actor: ContentActor, levelId: string): Promi
   if (!actor.id) {
     throw forbidden("Authentication required");
   }
-  const owned = await prisma.classGroup.count({ where: { teacherId: actor.id, levelId } });
-  if (owned === 0) {
-    throw forbidden("You can only manage content for levels you teach");
-  }
+  await assertTeacherLevel(actor.id, levelId);
 };
 
 const levelIdOfModule = async (moduleId: string): Promise<string> => {
@@ -103,7 +102,7 @@ export const createModule = async (
         levelId,
         title: input.title,
         description: input.description ?? null,
-        order: order!,
+        order: order,
         isPublished: input.isPublished ?? false,
         releaseAt: input.releaseAt ?? null,
         prerequisiteModuleId: input.prerequisiteModuleId ?? null,
@@ -240,7 +239,7 @@ export const createLesson = async (
         videoUrl: input.videoUrl ?? null,
         audioUrl: input.audioUrl ?? null,
         estimatedMinutes: input.estimatedMinutes,
-        order: order!,
+        order: order,
         isPublished: input.isPublished ?? false,
         releaseAt: input.releaseAt ?? null,
         prerequisiteLessonId: input.prerequisiteLessonId ?? null,
@@ -751,152 +750,8 @@ export const upsertLessonProgress = async (
   });
 };
 
-export const getMyAssignments = async (userId: string) => {
-  const profile = await loadStudentAccessProfile(userId);
-  assertAccountActive(profile);
-
-  const now = new Date();
-
-  const [activities, assessments, submissions, attempts, courses] = await Promise.all([
-    prisma.activity.findMany({
-      where: { isPublished: true, lesson: { isPublished: true, OR: [{ releaseAt: null }, { releaseAt: { lte: now } }], module: { isPublished: true, OR: [{ releaseAt: null }, { releaseAt: { lte: now } }], levelId: { in: profile.levelIds } } } },
-      orderBy: { createdAt: "asc" },
-      select: { id: true, title: true, type: true, lessonId: true, createdAt: true, lesson: { select: { id: true, title: true, module: { select: { id: true, title: true, level: { select: { id: true, code: true, title: true } } } } } } },
-      take: 500,
-    }),
-    prisma.assessment.findMany({
-      where: { isPublished: true, levelId: { in: profile.levelIds } },
-      orderBy: { availableUntil: "asc" },
-      select: { id: true, title: true, type: true, levelId: true, availableFrom: true, availableUntil: true, passMark: true, durationMinutes: true, level: { select: { id: true, code: true, title: true } }, _count: { select: { questions: true } }, questions: { select: { points: true, question: { select: { points: true } } } } },
-      take: 200,
-    }),
-    prisma.activitySubmission.findMany({ where: { studentId: profile.studentId }, select: { activityId: true, status: true, score: true, submittedAt: true, gradedAt: true, attemptNumber: true, feedback: true } }),
-    prisma.attempt.findMany({ where: { studentId: profile.studentId }, select: { assessmentId: true, status: true, score: true, maxScore: true, submittedAt: true, attemptNumber: true } }),
-    prisma.level.findMany({ where: { id: { in: profile.levelIds } }, select: { id: true, code: true, title: true } }),
-  ]);
-
-  const seenActivity = new Set<string>();
-  const dedupedActivities = activities.filter((a) => { if (seenActivity.has(a.id)) return false; seenActivity.add(a.id); return true; });
-  const seenAssessment = new Set<string>();
-  const dedupedAssessments = assessments.filter((a) => { if (seenAssessment.has(a.id)) return false; seenAssessment.add(a.id); return true; });
-  const subByActivity = new Map(submissions.map((s) => [s.activityId, s]));
-  const attemptsByAssessment = new Map<string, typeof attempts>();
-  for (const a of attempts) { const arr = attemptsByAssessment.get(a.assessmentId) ?? []; arr.push(a); attemptsByAssessment.set(a.assessmentId, arr); }
-
-  const levelById = new Map(courses.map((l) => [l.id, l]));
-
-  const activityItems = dedupedActivities.map((a) => {
-    const sub = subByActivity.get(a.id) ?? null;
-    let status: string = "NOT_STARTED";
-    if (sub) status = sub.status;
-    const dueAt = null as string | null;
-    const points = 1;
-    const maxScore = 1;
-    return {
-      id: `ACT-${a.id}`,
-      source: "ACTIVITY" as const,
-      activityId: a.id,
-      assessmentId: null as string | null,
-      lessonId: a.lessonId,
-      title: a.title,
-      type: a.type,
-      levelId: a.lesson.module.level.id,
-      levelCode: a.lesson.module.level.code,
-      levelTitle: a.lesson.module.level.title,
-      moduleTitle: a.lesson.module.title,
-      lessonTitle: a.lesson.title,
-      dueAt,
-      points,
-      maxScore,
-      score: sub?.score ?? null,
-      status,
-      submittedAt: sub?.submittedAt ?? null,
-      attemptCount: sub ? sub.attemptNumber : 0,
-    };
-  });
-
-  const assessmentItems = dedupedAssessments.map((a) => {
-    const list = attemptsByAssessment.get(a.id) ?? [];
-    const graded = list.find((x) => x.status === "GRADED");
-    const submitted = list.find((x) => x.status === "SUBMITTED");
-    const inProg = list.find((x) => x.status === "IN_PROGRESS");
-    let status: string = "NOT_STARTED";
-    let score: number | null = null;
-    let submittedAt: Date | null = null;
-    let attemptCount = list.length;
-    if (graded) { status = "GRADED"; score = graded.score !== null ? Number(graded.score) : null; submittedAt = graded.submittedAt; }
-    else if (submitted) { status = "SUBMITTED"; submittedAt = submitted.submittedAt; }
-    else if (inProg) { status = "IN_PROGRESS"; }
-    else if (a.availableUntil && now > a.availableUntil && list.length === 0) status = "MISSING";
-    else if (a.availableUntil && now > a.availableUntil && !graded && !submitted) status = "OVERDUE";
-    const maxScore = a.questions.reduce((sum, q) => sum + Number(q.points ?? q.question.points), 0) || a._count.questions || 0;
-    const lvl = a.level ?? levelById.get(a.levelId) ?? { code: a.levelId, title: a.levelId };
-    return {
-      id: `ASM-${a.id}`,
-      source: "ASSESSMENT" as const,
-      activityId: null as string | null,
-      assessmentId: a.id,
-      lessonId: null as string | null,
-      title: a.title,
-      type: a.type,
-      levelId: a.levelId,
-      levelCode: (lvl as { code: string }).code,
-      levelTitle: (lvl as { title: string }).title,
-      moduleTitle: null as string | null,
-      lessonTitle: null as string | null,
-      dueAt: a.availableUntil ? a.availableUntil.toISOString() : null,
-      points: maxScore,
-      maxScore,
-      score,
-      status,
-      submittedAt,
-      attemptCount,
-    };
-  });
-
-  return [...activityItems, ...assessmentItems].sort((a, b) => {
-    if (!a.dueAt && !b.dueAt) return a.title.localeCompare(b.title);
-    if (!a.dueAt) return 1;
-    if (!b.dueAt) return -1;
-    return new Date(a.dueAt).getTime() - new Date(b.dueAt).getTime();
-  });
-};
-
-export const getMyAssignmentDetail = async (userId: string, rawId: string) => {
-  const profile = await loadStudentAccessProfile(userId);
-  assertAccountActive(profile);
-  if (rawId.startsWith("ACT-")) {
-    const activityId = rawId.slice(4);
-    const activity = await prisma.activity.findUnique({
-      where: { id: activityId },
-      include: { lesson: { include: { module: { include: { level: true } } } } },
-    });
-    if (!activity || !activity.isPublished) throw notFound("Assignment not found");
-    await assertLevelAccess(userId, activity.lesson.module.levelId);
-    const submission = await prisma.activitySubmission.findUnique({
-      where: { activityId_studentId: { activityId, studentId: profile.studentId } },
-      select: { id: true, status: true, score: true, feedback: true } as never,
-    } as never) as unknown as { id: string; status: string; score: unknown; feedback: unknown } | null;
-    return { source: "ACTIVITY" as const, activity, submission, lesson: activity.lesson, level: activity.lesson.module.level };
-  }
-  if (rawId.startsWith("ASM-")) {
-    const assessmentId = rawId.slice(4);
-    const assessment = await prisma.assessment.findUnique({
-      where: { id: assessmentId },
-      include: { level: true, _count: { select: { questions: true } }, questions: { select: { points: true, question: { select: { points: true } } } } },
-    });
-    if (!assessment || !assessment.isPublished) throw notFound("Assignment not found");
-    await assertLevelAccess(userId, assessment.levelId);
-    // Select only stable columns — new cheat columns may not be migrated yet on dev DB
-    const attempts = await prisma.attempt.findMany({
-      where: { assessmentId, studentId: profile.studentId },
-      orderBy: { submittedAt: "desc" },
-      select: { id: true, status: true, submittedAt: true },
-    });
-    return { source: "ASSESSMENT" as const, assessment, attempts };
-  }
-  throw notFound("Assignment not found");
-};
+export { getMyAssignments } from "./assignment-feed.service.js";
+export { getMyAssignmentDetail } from "./assignment-detail.service.js";
 
 export const getStudentNotes = async (userId: string, query: MyNotesQuery) => {
   const profile = await loadStudentAccessProfile(userId);
@@ -1127,64 +982,15 @@ export const searchContent = async (query: SearchQuery, viewer: SearchViewer) =>
 // Activity submissions: student submit, redo, facilitator grading
 // ---------------------------------------------------------------------------
 
-const canon = (v: unknown): string => (typeof v === 'string' ? v.trim().toLowerCase() : Array.isArray(v) ? JSON.stringify(v) : String(v ?? '').trim().toLowerCase());
-const sameSequence = (a: string[], b: string[]): boolean => a.length === b.length && a.every((v, i) => v === b[i]);
-
-function gradeActivity(type: string, response: unknown, config: Record<string, unknown>): { isCorrect: boolean | null; score: number | null; auto: boolean } {
-  const cfg = config as Record<string, unknown>;
-  if (type === 'FILL_BLANK') {
-    const expected = (cfg.answer as string) ?? (cfg.correctAnswer as string) ?? '';
-    if (!expected) return { isCorrect: null, score: null, auto: false };
-    const ok = canon(response) === canon(expected);
-    return { isCorrect: ok, score: ok ? 1 : 0, auto: true };
-  }
-  if (type === 'TRUE_FALSE') {
-    const expected = cfg.correct ?? cfg.answer;
-    if (expected === undefined) return { isCorrect: null, score: null, auto: false };
-    const ok = String(response) === String(expected) || String(response).toLowerCase() === String(expected).toLowerCase();
-    return { isCorrect: ok, score: ok ? 1 : 0, auto: true };
-  }
-  if (type === 'MCQ' || type === 'MULTIPLE_SELECT') {
-    const expected = Number(cfg.correctIndex ?? cfg.answer ?? -1);
-    if (!Number.isFinite(expected) || expected < 0) return { isCorrect: null, score: null, auto: false };
-    const given = Number(response);
-    const ok = given === expected;
-    return { isCorrect: ok, score: ok ? 1 : 0, auto: true };
-  }
-  if (type === 'ORDERING') {
-    const expected = Array.isArray(cfg.answer) ? (cfg.answer as unknown[]) : Array.isArray((cfg as Record<string, unknown>).correctAnswer) ? ((cfg as Record<string, unknown>).correctAnswer as unknown[]) : null;
-    const given = Array.isArray(response) ? (response as unknown[]).map(canon) : [];
-    if (!expected) return { isCorrect: null, score: null, auto: false };
-    const exp = (expected as unknown[]).map(canon);
-    const ok = sameSequence(given, exp);
-    return { isCorrect: ok, score: ok ? 1 : 0, auto: true };
-  }
-  if (type === 'LISTENING') {
-    const expected = Number(cfg.correctIndex ?? cfg.answer ?? -1);
-    if (Number.isFinite(expected) && expected >= 0) {
-      const ok = Number(response) === expected;
-      return { isCorrect: ok, score: ok ? 1 : 0, auto: true };
-    }
-    return { isCorrect: null, score: null, auto: false };
-  }
-  // WRITING, DOCUMENT, others -> manual grading required
-  return { isCorrect: null, score: null, auto: false };
-}
-
 export const recordActivityViolation = async (userId: string, activityId: string, type: string) => {
   const profile = await loadStudentAccessProfile(userId);
   // Select only safe columns pre-migration
-  const existing = (await prisma.activitySubmission.findUnique({
+  const existing = await prisma.activitySubmission.findUnique({
     where: { activityId_studentId: { activityId, studentId: profile.studentId } },
-    select: { id: true, cheatCount: true, cheatLog: true, cheatFlagged: true } as never,
-  } as never) as unknown as { id: string; cheatCount?: number; cheatLog?: unknown; cheatFlagged?: boolean } | null) as unknown as { cheatCount?: number; cheatLog?: unknown; cheatFlagged?: boolean } | null;
+    select: { id: true, cheatCount: true, cheatLog: true, cheatFlagged: true },
+  });
   // If columns missing, this query itself would have thrown P2022 — catch at call site
-  let safeExisting: { cheatCount?: number; cheatLog?: unknown; cheatFlagged?: boolean } | null = null;
-  try {
-    safeExisting = existing;
-  } catch {
-    safeExisting = null;
-  }
+  const safeExisting = existing;
   const prevLog = safeExisting?.cheatLog;
   const log = Array.isArray(prevLog) ? (prevLog as unknown[]) : [];
   const nextLog = [...log, { type, at: new Date().toISOString() }] as unknown as Prisma.InputJsonValue;
@@ -1194,9 +1000,9 @@ export const recordActivityViolation = async (userId: string, activityId: string
   try {
     upserted = await prisma.activitySubmission.upsert({
       where: { activityId_studentId: { activityId, studentId: profile.studentId } },
-      create: { activityId, studentId: profile.studentId, response: Prisma.DbNull, status: "SUBMITTED", submittedAt: new Date(), cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog, feedback: flagged ? "[Auto-submitted — 3 violations, flagged for review]" : null } as never,
-      update: { cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog, ...(flagged ? { status: "SUBMITTED", submittedAt: new Date(), feedback: "[Flagged — 3 violations, awaiting teacher review]" } : {}) } as never,
-    } as never);
+      create: { activityId, studentId: profile.studentId, response: Prisma.DbNull, status: "SUBMITTED", submittedAt: new Date(), cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog, feedback: flagged ? "[Auto-submitted — 3 violations, flagged for review]" : null },
+      update: { cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog, ...(flagged ? { status: "SUBMITTED", submittedAt: new Date(), feedback: "[Flagged — 3 violations, awaiting teacher review]" } : {}) },
+    });
   } catch (e) {
     if ((e as { code?: string })?.code === "P2022") {
       // Columns not migrated — at least create a submitted flag so frontend doesn't falsely recover
@@ -1215,60 +1021,6 @@ export const recordActivityViolation = async (userId: string, activityId: string
   return upserted;
 };
 
-export const submitActivity = async (userId: string, activityId: string, input: SubmitActivityInput) => {
-  const profile = await loadStudentAccessProfile(userId);
-  assertAccountActive(profile);
-  const activity = await prisma.activity.findUnique({
-    where: { id: activityId },
-    include: { lesson: { select: { id: true, module: { select: { levelId: true } }, isPublished: true } } },
-  });
-  if (!activity || !activity.isPublished) throw notFound("Activity not found");
-  await assertLevelAccess(userId, activity.lesson.module.levelId);
-  assertPaymentAccess(profile, "LESSON");
-
-  const graded = gradeActivity(activity.type, input.response, (activity.config ?? {}) as Record<string, unknown>);
-  const status = graded.auto ? 'GRADED' as const : 'SUBMITTED' as const;
-
-  const existing = await prisma.activitySubmission.findUnique({ where: { activityId_studentId: { activityId, studentId: profile.studentId } } });
-
-  const submission = await prisma.activitySubmission.upsert({
-    where: { activityId_studentId: { activityId, studentId: profile.studentId } },
-    create: {
-      activityId,
-      studentId: profile.studentId,
-      response: input.response as unknown as Prisma.InputJsonValue,
-      isCorrect: graded.isCorrect,
-      score: graded.score !== null ? graded.score : null,
-      maxScore: 1,
-      status,
-      attemptNumber: 1,
-      submittedAt: new Date(),
-      gradedAt: graded.auto ? new Date() : null,
-    },
-    update: {
-      response: input.response as unknown as Prisma.InputJsonValue,
-      isCorrect: graded.isCorrect,
-      score: graded.score !== null ? graded.score : null,
-      status,
-      feedback: null,
-      attemptNumber: existing ? existing.attemptNumber + 1 : 1,
-      submittedAt: new Date(),
-      gradedAt: graded.auto ? new Date() : null,
-      gradedById: null,
-    },
-  });
-
-  await writeAudit({ actorId: userId, action: existing ? "ACTIVITY_RESUBMITTED" : "ACTIVITY_SUBMITTED", entityType: "ActivitySubmission", entityId: submission.id, after: submission });
-
-  if (graded.auto) {
-    await emitActivity({ actorId: userId, type: 'ASSIGNMENT', title: `Activity completed: ${activity.title}`, body: graded.isCorrect ? 'Correct' : 'Needs review', levelId: activity.lesson.module.levelId, studentId: profile.studentId });
-  } else {
-    await emitActivity({ actorId: userId, type: 'ASSIGNMENT', title: `Activity submitted: ${activity.title}`, body: 'Awaiting grading', levelId: activity.lesson.module.levelId, studentId: profile.studentId });
-  }
-
-  return submission;
-};
-
 export const getMyActivitySubmission = async (userId: string, activityId: string) => {
   const profile = await loadStudentAccessProfile(userId);
   return prisma.activitySubmission.findUnique({ where: { activityId_studentId: { activityId, studentId: profile.studentId } } });
@@ -1282,12 +1034,12 @@ export const listMyActivitySubmissions = async (userId: string, lessonId?: strin
     if (!lesson) throw notFound("Lesson not found");
     where.activity = { lessonId };
   }
-  return prisma.activitySubmission.findMany({ where, orderBy: { updatedAt: 'desc' }, include: { activity: { select: { id: true, title: true, type: true, lessonId: true } } } });
+  return prisma.activitySubmission.findMany({ where: lessonId ? where : { ...where, activityId: { notIn: await getPracticeActivityIds() } }, orderBy: { updatedAt: 'desc' }, include: { activity: { select: { id: true, title: true, type: true, lessonId: true } } } });
 };
 
 export const listActivitySubmissions = async (actor: ContentActor, query: ListActivitySubmissionsQuery) => {
   const pagination = parsePagination(query);
-  const where: Prisma.ActivitySubmissionWhereInput = {};
+  const where: Prisma.ActivitySubmissionWhereInput = { AND: [{ activityId: { notIn: await getPracticeActivityIds() } }] };
   if (query.activityId) where.activityId = query.activityId;
   if (query.studentId) where.studentId = query.studentId;
   if (query.status) where.status = query.status;
@@ -1295,11 +1047,11 @@ export const listActivitySubmissions = async (actor: ContentActor, query: ListAc
 
   // Scope teachers to their levels
   if (actor.role === 'TEACHER' && actor.id) {
-    const classGroups = await prisma.classGroup.findMany({ where: { teacherId: actor.id }, select: { levelId: true } });
-    const levelIds = [...new Set(classGroups.map((c) => c.levelId))];
+    const levelIds = await getTeacherLevelIds(actor.id);
+    where.student = { enrollments: { some: { status: "ACTIVE", classGroup: { teacherId: actor.id } } } };
     if (levelIds.length === 0) return buildPaginated([], 0, pagination);
     // filter lessons whose module levelId in levelIds
-    where.activity = { ...(where.activity as object ?? {}), lesson: { module: { levelId: { in: levelIds } } } } as Prisma.ActivitySubmissionWhereInput['activity'];
+    where.activity = { ...(query.lessonId ? { lessonId: query.lessonId } : {}), lesson: { module: { levelId: { in: levelIds } } } };
     if (query.lessonId) {
       // also verify requested lesson is in teacher's levels
       const lesson = await prisma.lesson.findUnique({ where: { id: query.lessonId }, select: { module: { select: { levelId: true } } } });
@@ -1330,6 +1082,7 @@ export const gradeActivitySubmission = async (actor: ContentActor, submissionId:
   });
   if (!existing) throw notFound("Submission not found");
   await assertCanManageLevel(actor, existing.activity.lesson.module.levelId);
+  if (actor.role === "TEACHER" && !await prisma.enrollment.findFirst({ where: { studentId: existing.studentId, status: "ACTIVE", levelId: existing.activity.lesson.module.levelId, classGroup: { teacherId: actor.id } } })) throw forbidden("This student is not in your assigned classes");
 
   const updated = await prisma.activitySubmission.update({
     where: { id: submissionId },
