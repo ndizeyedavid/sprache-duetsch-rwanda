@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { FiArrowRight, FiCheck, FiClock, FiDownload, FiExternalLink, FiFileText, FiFilm, FiLayers, FiMusic } from 'react-icons/fi';
-import { StatusBadge } from '../ui/StatusBadge';
-import { RichTextViewer } from '../ui/RichTextViewer';
+import { CourseLessonReader } from './CourseLessonReader';
+import { CoursePractice } from './CoursePractice';
+import { isBookPractice } from './course-practice-utils';
 import { humanize } from '../../lib/services';
 
 function materialIcon(type: string) {
@@ -26,7 +27,7 @@ function activityIcon(type: string) {
 }
 
 type Material = { id: string; title: string; type: string; url: string | null; mimeType: string | null; sizeBytes: number | null; isDownloadable: boolean };
-type ActivitySubmission = { id: string; status: string; score: string | number | null; maxScore: string | number; isCorrect: boolean | null; feedback: string | null; attemptNumber: number; submittedAt: string };
+type ActivitySubmission = { id: string; status: string; score: string | number | null; maxScore: string | number; isCorrect: boolean | null; feedback: string | null; attemptNumber: number; submittedAt: string; response?: unknown };
 type Activity = { id: string; title: string; type: string; instructions: string | null; config?: unknown; mySubmission?: ActivitySubmission | null };
 type Detail = {
   id: string;
@@ -61,23 +62,25 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
   if (!detail) return null;
   const done = detail.progressStatus === 'COMPLETED';
   return (
-    <article className="space-y-6">
+    <article id="lesson-content" className="scroll-mt-24 space-y-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="inline-flex items-center gap-1.5 rounded-full bg-brand-soft px-2.5 py-1 text-[11px] font-semibold text-[#B30A00]">{humanize(detail.contentType)}{detail.estimatedMinutes ? ` · ${detail.estimatedMinutes} min` : ''}</p>
+          <p className="inline-flex items-center gap-1.5 rounded-full bg-primary px-2.5 py-1 text-[11px] font-semibold text-primary-content">{humanize(detail.contentType)}{detail.estimatedMinutes ? ` · ${detail.estimatedMinutes} min` : ''}</p>
           <h1 className="mt-3 text-2xl font-bold leading-tight">{detail.title}</h1>
           {detail.description ? <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted">{detail.description}</p> : null}
         </div>
-        <StatusBadge status={done ? 'Completed' : humanize(detail.progressStatus)} />
+        <span className={`badge border-0 px-3 py-3 text-[11px] font-medium ${done ? 'bg-success text-success-content' : detail.progressStatus === 'IN_PROGRESS' ? 'bg-info text-info-content' : 'bg-neutral text-neutral-content'}`}>{done ? 'Completed' : humanize(detail.progressStatus)}</span>
       </div>
 
       {detail.videoUrl ? <video key={detail.videoUrl} controls preload="metadata" className="w-full rounded-box bg-night"><source src={detail.videoUrl} /></video> : null}
       {detail.audioUrl ? <audio key={detail.audioUrl} controls preload="metadata" className="w-full"><source src={detail.audioUrl} /></audio> : null}
-      <RichTextViewer html={detail.body} />
+      <CourseLessonReader key={detail.id} html={detail.body}>
+        <CoursePractice key={`practice-${detail.id}`} activities={detail.activities} />
+      </CourseLessonReader>
 
       {detail.materials.length > 0 ? (
-        <div className="overflow-hidden rounded-box border border-line bg-base-100">
-          <div className="flex items-center justify-between gap-2 border-b border-line bg-[#eff6ff] px-4 py-3">
+        <div id="lesson-resources" className="scroll-mt-24 overflow-hidden rounded-box border border-line bg-base-100">
+          <div className="flex items-center justify-between gap-2 border-b border-line bg-base-200/60 px-4 py-3">
             <h2 className="flex items-center gap-2 text-sm font-bold"><FiFileText aria-hidden className="text-brand" />Resources<span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">{detail.materials.length}</span></h2>
             <span className="hidden text-[11px] text-muted sm:block">Tap Open to view or download</span>
           </div>
@@ -122,14 +125,14 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
         </div>
       ) : null}
 
-      {detail.activities.length > 0 ? (
-        <div className="overflow-hidden rounded-box border border-line bg-base-100">
+      {detail.activities.some(a => !isBookPractice(a)) ? (
+        <div id="lesson-practice" className="scroll-mt-24 overflow-hidden rounded-box border border-line bg-base-100">
           <div className="border-b border-line bg-base-200/50 px-4 py-3">
             <h2 className="flex items-center gap-2 text-sm font-bold">Practice activities<span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">{detail.activities.length}</span></h2>
             <p className="mt-1 text-xs text-muted">Work on each activity on its own page — your progress saves for your facilitator.</p>
           </div>
           <ul className="grid gap-3 p-4 sm:grid-cols-2">
-            {detail.activities.map((a) => {
+            {detail.activities.filter(a => !isBookPractice(a)).map((a) => {
               const sub = a.mySubmission;
               const done = !!sub;
               const graded = sub?.status === 'GRADED';
@@ -168,7 +171,7 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
 
       <div className="flex flex-wrap items-center gap-3 rounded-box border border-line bg-base-100 p-4">
         <div className="min-w-0 grow">
-          <p className="text-sm font-semibold">{done ? 'Lesson completed' : 'Ready to continue?'}</p>
+          <p className="text-sm font-semibold">{done ? 'Lesson completed' : 'Finished this lesson?'}</p>
           <p className="text-xs text-muted">{done ? 'You can revisit resources or redo practice any time.' : 'Mark as complete to update your progress and unlock the next lesson.'}</p>
         </div>
         <button type="button" disabled={completing || done} onClick={onComplete} className="btn gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
