@@ -1,3 +1,4 @@
+import { assertTeacherOwnsClass } from "../../lib/access.js";
 import type { Request, Response } from "express";
 import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
 import type { CreateClassInput, ListClassQuery, UpdateClassInput } from "./classes.schema.js";
@@ -11,6 +12,7 @@ export const list = async (req: Request, res: Response): Promise<void> => {
 
 export const get = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
+  if (req.user?.role === "TEACHER") await assertTeacherOwnsClass(req.user.id, id);
   const classGroup = await service.getClass(id);
   res.json({ success: true, data: classGroup });
 };
