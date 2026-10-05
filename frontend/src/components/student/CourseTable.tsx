@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FiArrowUpRight, FiBookOpen, FiSearch } from 'react-icons/fi';
+import { FiArrowUpRight, FiSearch } from 'react-icons/fi';
 import type { MyCourse } from '../../lib/services';
 
 type Props = {
@@ -34,13 +34,22 @@ export function CourseTable({ courses, filter, q, onQ }: Props) {
           const path = `/courses/${course.level.code.toLowerCase()}`;
           return (
             <article key={course.level.id} className="card learning-panel overflow-hidden">
-              <div className="journey-hero relative flex h-40 items-center justify-between overflow-hidden p-6">
-                <span aria-hidden className="absolute -right-5 -top-12 size-48 rounded-full border-[24px] border-base-content/5" />
-                <div className="relative">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-base-content/60">Your next chapter</p>
+              <div className="journey-hero relative flex h-44 items-center overflow-hidden p-6">
+                <span aria-hidden className="absolute -right-6 bottom-0 size-44 rounded-full bg-success/10" />
+                <div className="relative z-10 w-[45%]">
+                  <p className="max-w-28 text-[10px] font-semibold uppercase leading-relaxed tracking-[0.2em] text-base-content/60">Your next chapter</p>
                   <p className="mt-1 text-5xl font-semibold tracking-tight">{course.level.code}</p>
                 </div>
-                <FiBookOpen aria-hidden className="relative text-4xl text-base-content/40" />
+                <img
+                  src="/illustrations/course-learner.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width={480}
+                  height={480}
+                  loading="lazy"
+                  decoding="async"
+                  className="pointer-events-none absolute bottom-0 right-1 h-42 w-[55%] object-contain object-bottom"
+                />
               </div>
               <div className="card-body gap-3 p-6">
                 <div className="flex items-center justify-between gap-2 text-xs text-base-content/60">
