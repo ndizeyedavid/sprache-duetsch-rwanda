@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import { FiArrowRight, FiBookOpen, FiClock, FiPlay } from 'react-icons/fi';
+import { FiArrowRight, FiClock, FiPlay } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { LevelItem, MyCourse } from '../../lib/services';
 
@@ -16,7 +16,7 @@ export function CourseOverviewHero({ level, course }: Props) {
     <section className="card overflow-hidden border border-base-300/70 bg-base-100">
       <div className="flex flex-wrap items-center gap-5 p-5 sm:p-7">
         <div aria-hidden className="journey-hero flex size-20 shrink-0 flex-col items-center justify-center rounded-2xl border border-base-300/50 sm:size-24">
-          <FiBookOpen className="mb-1 text-xl text-base-content/60" /><span className="text-3xl font-semibold tracking-tight">{level.code}</span>
+          <img src="/illustrations/study-books.webp" alt="" width={400} height={366} className="h-12 w-16 object-contain" /><span className="text-3xl font-semibold tracking-tight">{level.code}</span>
         </div>
         <div className="min-w-0 flex-1">
           <p className="text-xs text-base-content/60">{level.language} · {level.levelLabel}</p>
