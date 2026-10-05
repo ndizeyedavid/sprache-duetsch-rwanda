@@ -26,27 +26,6 @@ export const roleLabel: Record<AuthRole, string> = {
   SUPER_ADMIN: 'Super Admin',
 };
 
-export type Portal = 'student' | 'teacher' | 'staff';
-
-/** Roles allowed through each login portal. */
-export const portalRoles: Record<Portal, AuthRole[]> = {
-  student: ['STUDENT'],
-  teacher: ['TEACHER'],
-  staff: ['ACADEMIC_ADMIN', 'FINANCE_ADMIN', 'SUPER_ADMIN'],
-};
-
-export const portalLoginPath: Record<Portal, string> = {
-  student: '/login',
-  teacher: '/login/teacher',
-  staff: '/login/staff',
-};
-
-export const portalLabel: Record<Portal, string> = {
-  student: 'Student',
-  teacher: 'Teacher',
-  staff: 'Staff',
-};
-
 export function isAcademic(role: AuthRole): boolean {
   return ACADEMIC_ROLES.includes(role);
 }
