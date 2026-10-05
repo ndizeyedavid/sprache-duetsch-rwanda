@@ -35,7 +35,9 @@ export function Messages() {
 
   const threadParam = searchParams.get("thread");
   const [selectedId, setSelectedId] = useState<string | null>(threadParam);
-  const [draft, setDraft] = useState("");
+  const [drafts, setDrafts] = useState<Record<string, string>>({});
+  const draft = selectedId ? drafts[selectedId] ?? "" : "";
+  const setDraft = (value: string) => { if (selectedId) setDrafts(prev => ({ ...prev, [selectedId]: value })); };
   const [chatError, setChatError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
   const [showCompose, setShowCompose] = useState(false);
@@ -47,14 +49,14 @@ export function Messages() {
   const [noticeError, setNoticeError] = useState<string | null>(null);
   const [markingAll, setMarkingAll] = useState(false);
   const selectedNoticeId = searchParams.get("notice");
-  const [mobileView, setMobileView] = useState<"list" | "thread">("list");
+  const [mobileView, setMobileView] = useState<"list" | "thread">(threadParam || selectedNoticeId ? "thread" : "list");
 
   const messagesApi = useApi(`thread-${selectedId ?? "none"}`, () => listThreadMessages(selectedId ?? ""), selectedId !== null);
   const [localThreads, setLocalThreads] = useState<typeof threads.data>(null);
   const [localMessages, setLocalMessages] = useState<typeof messagesApi.data>(null);
   useEffect(() => { if (threads.data) setLocalThreads(threads.data); }, [threads.data]);
   useEffect(() => { setLocalMessages(null); }, [selectedId]);
-  useEffect(() => { if (messagesApi.data) setLocalMessages(messagesApi.data); }, [messagesApi.data]);
+  useEffect(() => { if (messagesApi.data && !messagesApi.stale) setLocalMessages(messagesApi.data); }, [messagesApi.data, messagesApi.stale]);
 
   useEffect(() => {
     const v = searchParams.get("tab") as Tab;
@@ -65,6 +67,7 @@ export function Messages() {
 
   function switchTab(next: Tab) {
     setTab(next);
+    setMobileView("list");
     const p = new URLSearchParams(searchParams);
     p.set("tab", next);
     setSearchParams(p);
@@ -90,13 +93,13 @@ export function Messages() {
 
   async function handleSend() {
     const body = draft.trim();
-    if (!selectedId || !body) return;
+    if (!selectedId || !body || sending) return;
     setSending(true);
     setChatError(null);
     try {
       const msg = await sendChatMessage(selectedId, body);
-      setDraft("");
-      setLocalMessages((prev) => (prev ? [...prev, msg] : [msg]));
+      setDrafts(prev => ({ ...prev, [selectedId]: "" }));
+      messagesApi.refetch();
       setLocalThreads((prev) => {
         if (!prev) return prev;
         const idx = prev.findIndex((t) => t.id === selectedId);
@@ -122,7 +125,7 @@ export function Messages() {
         if (existing) { pickThread(existing.id); setShowCompose(false); return; }
       }
       const created = await createConversation({ participantIds: ids, title });
-      setLocalThreads((prev) => (prev ? [created as never, ...prev] : [created as never]));
+      setLocalThreads((prev) => [created, ...(prev ?? []).filter((thread) => thread.id !== created.id)]);
       pickThread(created.id);
       threads.refetch();
       setShowCompose(false);
@@ -154,42 +157,41 @@ export function Messages() {
     return list;
   }, [notices, noticeFilter, noticeSearch]);
   const selectedNotice = useMemo(() => (selectedNoticeId ? notices.find((n) => n.id === selectedNoticeId) ?? null : filteredNotices[0] ?? null), [notices, selectedNoticeId, filteredNotices]);
-  const threadMessages = useMemo(() => localMessages ?? messagesApi.data ?? [], [localMessages, messagesApi.data]);
+  const threadMessages = useMemo(() => messagesApi.stale ? [] : localMessages ?? messagesApi.data ?? [], [localMessages, messagesApi.data, messagesApi.stale]);
   const unreadChats = threadList.filter((t) => t.unreadCount > 0).length;
   const unreadNotices = notices.filter((n) => !n.readAt).length;
 
   return (
     <div className="space-y-4">
-      <Panel>
+      <Panel className="p-5 sm:p-7">
         <InboxHeader tab={tab} onTab={switchTab} unreadChats={unreadChats} unreadNotices={unreadNotices} totalChats={threadList.length} totalNotices={notices.length} onCompose={() => setShowCompose(true)} />
-        <p className="mt-2 text-xs text-muted">{tab === "Chats" ? `${unreadChats} unread · ${threadList.length} conversations` : `${unreadNotices} unread · ${notices.length} notices`}</p>
       </Panel>
 
       {tab === "Chats" ? (
-        <div className="grid gap-4 lg:grid-cols-12">
-          <Panel className={`lg:col-span-4 xl:col-span-4 ${mobileView === "thread" ? "hidden lg:block" : ""}`} padded={false}>
-            <div className="p-4">
+        <div className="grid min-h-[480px] gap-0 overflow-hidden rounded-box border border-base-300 bg-base-100 lg:h-[min(720px,calc(100dvh-260px))] lg:grid-cols-12">
+          <Panel className={`min-h-0 border-0 border-r border-base-300 rounded-none! lg:col-span-4 xl:col-span-4 ${mobileView === "thread" ? "hidden lg:block" : ""}`} padded={false}>
+            <div className="h-full min-h-[460px] lg:min-h-0">
               <ConversationList threads={threadList} loading={threads.loading} error={threads.error} onRetry={threads.refetch} selectedId={selectedId} onPick={pickThread} myId={me?.id} search={threadSearch} onSearch={setThreadSearch} filter={threadFilter} onFilter={setThreadFilter} onCompose={() => setShowCompose(true)} />
             </div>
           </Panel>
-          <Panel className={`overflow-hidden p-0 lg:col-span-8 xl:col-span-8 ${mobileView === "list" ? "hidden lg:block" : ""}`}>
-            <MessageView thread={selectedThread} messages={threadMessages} loading={messagesApi.loading && !localMessages} error={messagesApi.error} onRetry={messagesApi.refetch} myId={me?.id} draft={draft} onDraft={setDraft} onSend={() => void handleSend()} sending={sending} chatError={chatError} onBack={() => setMobileView("list")} />
+          <Panel padded={false} className={`h-[calc(100dvh-240px)] min-h-[440px] overflow-hidden rounded-none! border-0 lg:h-full lg:col-span-8 xl:col-span-8 ${mobileView === "list" ? "hidden lg:block" : ""}`}>
+            <MessageView thread={selectedThread} messages={threadMessages} loading={messagesApi.stale || (messagesApi.loading && !localMessages)} error={messagesApi.error} onRetry={messagesApi.refetch} myId={me?.id} draft={draft} onDraft={setDraft} onSend={() => void handleSend()} sending={sending} chatError={chatError} onBack={() => setMobileView("list")} />
           </Panel>
         </div>
       ) : (
-        <div className="grid gap-4 lg:grid-cols-12">
-          <Panel className={`lg:col-span-4 xl:col-span-4 ${selectedNoticeId && mobileView === "thread" ? "hidden lg:block" : ""}`} padded={false}>
+        <div className="grid min-w-0 gap-4 lg:grid-cols-12">
+          <Panel className={`min-w-0 lg:col-span-4 xl:col-span-4 ${selectedNoticeId && mobileView === "thread" ? "hidden lg:block" : ""}`} padded={false}>
             <div className="p-4">
               <NoticeList notices={filteredNotices} loading={inbox.loading} error={inbox.error} onRetry={inbox.refetch} selectedId={selectedNotice?.id ?? null} onPick={openNotice} search={noticeSearch} onSearch={setNoticeSearch} filter={noticeFilter} onFilter={setNoticeFilter} onMarkAll={() => void handleMarkAll()} markingAll={markingAll} noticeError={noticeError} />
             </div>
           </Panel>
-          <Panel className={`overflow-hidden p-0 lg:col-span-8 xl:col-span-8 ${!selectedNoticeId && mobileView === "list" ? "hidden lg:block" : ""}`}>
+          <Panel className={`min-w-0 overflow-hidden p-0 lg:col-span-8 xl:col-span-8 ${mobileView === "list" ? "hidden lg:block" : ""}`}>
             <NoticeDetail notice={selectedNotice as never} onBack={() => setMobileView("list")} />
           </Panel>
         </div>
       )}
 
-      <ComposeModal open={showCompose} onClose={() => setShowCompose(false)} contacts={contacts.data ?? []} loading={contacts.loading} error={contacts.error} onCreate={(ids, title) => void handleCreate(ids, title)} creating={creating} />
+      <ComposeModal key={showCompose ? "open" : "closed"} open={showCompose} onClose={() => setShowCompose(false)} contacts={contacts.data ?? []} loading={contacts.loading} error={contacts.error || chatError} onCreate={(ids, title) => void handleCreate(ids, title)} creating={creating} />
     </div>
   );
 }
