@@ -117,12 +117,13 @@ export const createUser = async (
   return user;
 };
 
-export const updateUser = async (id: string, input: UpdateUserInput, actorId?: string) => {
+export const updateUser = async (id: string, input: UpdateUserInput, actorId?: string, actorRole?: Role) => {
   const before = await prisma.user.findUnique({ where: { id }, select: safeUserSelect });
   if (!before) {
     throw notFound("User not found");
   }
 
+  if (actorRole === "ACADEMIC_ADMIN" && before.role !== "TEACHER") throw forbidden("Academic staff can manage teacher accounts only");
   const user = await prisma.user.update({
     where: { id },
     data: {
