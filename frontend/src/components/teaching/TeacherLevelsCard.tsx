@@ -1,0 +1,13 @@
+import { useState } from 'react';
+import { FiBookOpen, FiCheck } from 'react-icons/fi';
+import type { TeachingTeacher } from '../../lib/teaching';
+import { assignTeachingLevels } from '../../lib/teaching';
+import type { LevelItem } from '../../lib/services';
+import { apiErrorMessage } from '../../lib/api';
+export function TeacherLevelsCard({ teacher: t, levels, onSaved }: { teacher: TeachingTeacher; levels: LevelItem[]; onSaved: () => void }) {
+  const [selected,setSelected]=useState(t.teachingLevels.map(a=>a.levelId));
+  const [saving,setSaving]=useState(false),[error,setError]=useState<string|null>(null),[saved,setSaved]=useState(false);
+  const changed=selected.length!==t.teachingLevels.length||selected.some(id=>!t.teachingLevels.some(a=>a.levelId===id));
+  async function save(){setSaving(true);setError(null);try{await assignTeachingLevels(t.id,selected);setSaved(true);onSaved();}catch(e){setError(apiErrorMessage(e, 'Could not save. Please try again.'));}finally{setSaving(false);}}
+  return <article className="card border border-base-300 bg-base-100 p-5"><div className="flex items-start gap-3"><span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-neutral text-neutral-content">{t.firstName[0]}{t.lastName[0]}</span><div className="min-w-0"><h2 className="font-semibold">{t.firstName} {t.lastName}</h2><p className="break-all text-xs text-base-content/55">{t.email}</p><p className="mt-1 text-xs text-base-content/55">{t.status==='ACTIVE'?'Active teacher':'Account inactive'} · {t.teacherClasses.filter(c=>c.isActive).length} active classes</p></div></div><p className="mt-5 flex items-center gap-2 text-xs font-semibold"><FiBookOpen aria-hidden/>Approved teaching levels</p><fieldset disabled={saving||t.status!=='ACTIVE'} className="mt-3 flex flex-wrap gap-2">{levels.map(l=><label key={l.id} className={`flex cursor-pointer items-center gap-2 rounded-xl border px-3 py-2 text-xs ${selected.includes(l.id)?'border-neutral bg-base-200':'border-base-300'}`}><input type="checkbox" className="checkbox checkbox-xs" checked={selected.includes(l.id)} onChange={()=>{setSelected(p=>p.includes(l.id)?p.filter(id=>id!==l.id):[...p,l.id]);setSaved(false);}}/>{l.code}</label>)}</fieldset><p className="mt-3 text-xs leading-5 text-base-content/55">Levels → curriculum & assessments. Classes → students & attendance.</p>{error?<p role="alert" className="mt-3 text-xs text-error">{error}</p>:null}{saved?<p role="status" className="mt-3 text-xs text-success">Teaching levels saved.</p>:null}<button disabled={saving||!changed} onClick={()=>void save()} className="btn btn-sm mt-4 self-start">{saving?<span className="loading loading-spinner loading-xs"/>:<FiCheck aria-hidden/>}Save levels</button></article>;
+}
