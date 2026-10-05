@@ -1,0 +1,7 @@
+export function MatchingAnswer({ options, value, onChange, disabled }: { options: unknown; value: unknown; onChange: (value: Record<string, string>) => void; disabled: boolean }) {
+  const config = options && typeof options === 'object' ? options as Record<string, unknown> : {};
+  const left = Array.isArray(config.left) ? config.left.map(String) : [], right = Array.isArray(config.right) ? config.right.map(String) : [];
+  const answer = value && typeof value === 'object' ? value as Record<string, string> : {};
+  if (!left.length || !right.length) return <label className="block"><span className="mb-2 block text-xs text-base-content/60">Enter matching pairs as key:value, one per line.</span><textarea className="textarea w-full" disabled={disabled} value={Object.entries(answer).map(([k, v]) => `${k}:${v}`).join('\n')} onChange={e => onChange(Object.fromEntries(e.target.value.split('\n').filter(v => v.includes(':')).map(v => { const i = v.indexOf(':'); return [v.slice(0, i).trim(), v.slice(i + 1).trim()]; })))} /></label>;
+  return <div className="space-y-3">{left.map((label, i) => <label key={i} className="grid items-center gap-2 rounded-field border border-base-300 p-3 sm:grid-cols-2"><span className="text-sm">{label}</span><select className="select select-sm w-full" aria-label={`Match ${label}`} disabled={disabled} value={answer[label] ?? ''} onChange={e => onChange({ ...answer, [label]: e.target.value })}><option value="">Choose a match</option>{right.map((r, n) => <option key={n}>{r}</option>)}</select></label>)}</div>;
+}
