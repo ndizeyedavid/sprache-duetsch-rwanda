@@ -9,7 +9,7 @@ export const createClassSchema = z.object({
   levelId: z.string().min(1),
   intakeId: z.string().min(1),
   campusId: z.string().min(1),
-  teacherId: z.string().min(1).optional(),
+  teacherId: z.string().min(1).nullable().optional(),
   shift: shiftEnum.default("EVENING"),
   capacity: z.coerce.number().int().positive().optional(),
   room: optionalText(60),
