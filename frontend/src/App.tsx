@@ -1,12 +1,12 @@
+import { StudentAttendance } from "./pages/student/Attendance";
+import { AdminTeaching } from "./pages/admin/Teaching";
 import { Suspense, lazy } from "react";
 import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./components/layout/AppLayout";
 import { AuthLayout } from "./components/layout/AuthLayout";
 import { RouteProgress } from "./components/layout/RouteProgress";
 import { LoadingBlock } from "./components/common/PageState";
-import { LoginStudent } from "./pages/auth/LoginStudent";
-import { LoginTeacher } from "./pages/auth/LoginTeacher";
-import { LoginStaff } from "./pages/auth/LoginStaff";
+import { LoginForm } from "./pages/auth/LoginForm";
 import { Register } from "./pages/auth/Register";
 import { VerifyCertificate } from "./pages/VerifyCertificate";
 import { SessionProvider, useSession } from "./lib/session";
@@ -141,6 +141,7 @@ const TeacherContent = lazy(() =>
     default: module.TeacherContent,
   })),
 );
+const TeacherAssignments = lazy(() => import("./pages/teacher/Assignments").then(module => ({ default: module.TeacherAssignments })));
 const TeacherAssessments = lazy(() =>
   import("./pages/teacher/Assessments").then((module) => ({
     default: module.TeacherAssessments,
@@ -264,16 +265,12 @@ function AppRoutes() {
     <Suspense fallback={<PageFallback />}>
       <RouteProgress />
       <Routes>
-        <Route element={<AuthLayout portal="student" />}>
-          <Route path="/login" element={<LoginStudent />} />
+        <Route element={<AuthLayout />}>
+          <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<Register />} />
         </Route>
-        <Route element={<AuthLayout portal="teacher" />}>
-          <Route path="/login/teacher" element={<LoginTeacher />} />
-        </Route>
-        <Route element={<AuthLayout portal="staff" />}>
-          <Route path="/login/staff" element={<LoginStaff />} />
-        </Route>
+        <Route path="/login/teacher" element={<Navigate to="/login" replace />} />
+        <Route path="/login/staff" element={<Navigate to="/login" replace />} />
 
         <Route path="/verify/:code" element={<VerifyCertificate />} />
 
@@ -296,6 +293,7 @@ function AppRoutes() {
             <Route path="/assignments" element={<Assignments />} />
             <Route path="/assignments/:id" element={<AssignmentDetail />} />
             <Route path="/grades" element={<Grades />} />
+            <Route path="/attendance" element={<StudentAttendance />} />
             <Route path="/instructors" element={<Teachers />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/activity" element={<Activity />} />
@@ -319,6 +317,7 @@ function AppRoutes() {
             />
             <Route path="/teacher/schedule" element={<TeacherSchedule />} />
             <Route path="/teacher/attendance" element={<TeacherAttendance />} />
+            <Route path="/teacher/assignments" element={<TeacherAssignments />} />
             <Route path="/teacher/grading" element={<TeacherGrading />} />
             <Route path="/teacher/reports" element={<TeacherReports />} />
             <Route path="/teacher/messages" element={<Messages />} />
@@ -330,8 +329,11 @@ function AppRoutes() {
         <Route element={<RequireRole roles={ADMIN_ROLES} />}>
           <Route element={<AppLayout />}>
             <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin/assignments" element={<TeacherAssignments />} />
             <Route path="/admin/courses" element={<AdminCourses />} />
             <Route path="/admin/classes" element={<AdminClasses />} />
+            <Route path="/admin/teaching" element={<AdminTeaching />} />
+            <Route path="/admin/attendance" element={<TeacherAttendance />} />
             <Route path="/admin/enrolments" element={<AdminEnrolments />} />
             <Route path="/admin/people" element={<AdminPeople />} />
             <Route path="/admin/schedule" element={<AdminSchedule />} />
