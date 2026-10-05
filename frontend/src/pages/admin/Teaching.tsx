@@ -1,0 +1,13 @@
+import { FiBookOpen } from 'react-icons/fi';
+import { useApi } from '../../hooks/useApi';
+import { listLevels, listClasses } from '../../lib/services';
+import { listTeachingAssignments } from '../../lib/teaching';
+import { ErrorBlock, LoadingBlock, EmptyBlock } from '../../components/common/PageState';
+import { TeacherLevelsCard } from '../../components/teaching/TeacherLevelsCard';
+import { ClassTeacherAssignment } from '../../components/teaching/ClassTeacherAssignment';
+export function AdminTeaching() {
+  const teachers=useApi('teaching-assignments',listTeachingAssignments),levels=useApi('levels-catalog',listLevels),classes=useApi('teaching-classes',listClasses);
+  const loading=teachers.loading||levels.loading||classes.loading,error=teachers.error||levels.error||classes.error;
+  const refresh=()=>{teachers.refetch();classes.refetch();};
+  return <div className="space-y-5"><section className="card border border-base-300 bg-base-100 p-6 sm:p-8"><span className="mb-4 grid size-12 place-items-center rounded-2xl bg-neutral text-neutral-content"><FiBookOpen aria-hidden size={22}/></span><p className="text-xs uppercase tracking-widest text-base-content/50">Academic coordination</p><h1 className="mt-2 text-3xl font-semibold">Teaching assignments</h1><p className="mt-3 max-w-xl text-sm leading-6 text-base-content/60">Approve levels, then assign classes. Academic staff control these permissions.</p></section>{loading?<LoadingBlock label="Loading teaching assignments…"/>:error?<ErrorBlock message={error} onRetry={()=>{refresh();levels.refetch();}}/>:<><div><h2 className="text-lg font-semibold">Teaching levels</h2><p className="mt-1 text-xs text-base-content/55">Reassign active classes before removing a level.</p></div>{!teachers.data?.length?<EmptyBlock title="No teachers yet" hint="Create a teacher account in People, then assign levels here."/>:<div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">{teachers.data.map(t=><TeacherLevelsCard key={`${t.id}-${t.teachingLevels.map(l=>l.levelId).join(',')}`} teacher={t} levels={levels.data??[]} onSaved={refresh}/>)}</div>}<div><h2 className="text-lg font-semibold">Class teachers</h2><p className="mt-1 text-xs text-base-content/55">Only active teachers approved for that class’s level are available.</p></div><section className="card overflow-hidden border border-base-300 bg-base-100">{classes.data?.length?classes.data.map(g=><ClassTeacherAssignment key={`${g.id}-${g.teacherId}`} group={g} teachers={teachers.data??[]} onSaved={refresh}/>):<div className="p-6"><EmptyBlock title="No classes yet" hint="Create a class first, then assign its teacher here."/></div>}</section></>}</div>;
+}
