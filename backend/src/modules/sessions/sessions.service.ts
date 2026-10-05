@@ -1,22 +1,15 @@
+import { enforceAttendanceScope, loadScheduleAccess, protectStudentSession } from "./session-access.js";
 import type { Prisma, AttendanceStatus, Role } from "../../generated/prisma/client.js";
-import { assertTeacherOwnsClass, loadStudentAccessProfile } from "../../lib/access.js";
-import { emitActivity } from "../activity/activity.service.js";
+import { assertTeacherOwnsClass } from "../../lib/access.js";
 import { writeAudit } from "../../lib/audit.js";
-import { env } from "../../config/env.js";
-import { badRequest, forbidden, notFound } from "../../lib/http-error.js";
+import { forbidden, notFound } from "../../lib/http-error.js";
 import { buildPaginated, parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import type {
   AttendanceSummaryQuery,
-  CancelSessionInput,
-  CreateSessionInput,
   CreateSessionMaterialInput,
   ListSessionsQuery,
-  MarkAttendanceInput,
-  RescheduleSessionInput,
   StudentSessionsQuery,
-  UpdateAttendanceInput,
-  UpdateSessionInput,
 } from "./sessions.schema.js";
 
 const briefLevel = { select: { id: true, code: true, title: true, levelLabel: true } } as const;
@@ -67,8 +60,8 @@ export const listSessions = async (query: ListSessionsQuery, forcedTeacherId?: s
   const where: Prisma.ClassSessionWhereInput = {};
   if (query.classGroupId) where.classGroupId = query.classGroupId;
   if (query.status) where.status = query.status;
-  const teacherId = forcedTeacherId ?? query.teacherId;
-  if (teacherId) where.teacherId = teacherId;
+  if (query.teacherId) where.teacherId = query.teacherId;
+  if (forcedTeacherId) where.AND = [{ classGroup: { teacherId: forcedTeacherId } }];
   if (query.from || query.to) where.startAt = { gte: query.from, lte: query.to };
   if (query.levelId || query.campusId || query.intakeId) {
     where.classGroup = {
@@ -128,220 +121,7 @@ export const getSession = async (id: string) => {
   return session;
 };
 
-export const createSession = async (
-  input: CreateSessionInput,
-  actorId?: string,
-  actorRole?: Role,
-) => {
-  const classGroup = await prisma.classGroup.findUnique({
-    where: { id: input.classGroupId },
-    select: { id: true, teacherId: true },
-  });
-  if (!classGroup) {
-    throw notFound("Class group not found");
-  }
-
-  await assertTeacherIfNeeded(actorId, actorRole, input.classGroupId);
-
-  if (input.startAt >= input.endAt) {
-    throw badRequest("startAt must be before endAt");
-  }
-  if ((input.mode === "ONLINE" || input.mode === "HYBRID") && !input.meetingUrl) {
-    throw badRequest("meetingUrl is required for online or hybrid sessions");
-  }
-
-  const session = await prisma.classSession.create({
-    data: {
-      classGroupId: input.classGroupId,
-      teacherId: input.teacherId ?? classGroup.teacherId ?? null,
-      title: input.title ?? null,
-      mode: input.mode,
-      provider: input.provider,
-      meetingUrl: input.meetingUrl ?? null,
-      startAt: input.startAt,
-      endAt: input.endAt,
-      timezone: input.timezone ?? "Africa/Kigali",
-      room: input.room ?? null,
-      recordingUrl: input.recordingUrl ?? null,
-      notes: input.notes ?? null,
-    },
-  });
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "SESSION_CREATED",
-    entityType: "ClassSession",
-    entityId: session.id,
-    after: session,
-  });
-
-  return session;
-};
-
-export const updateSession = async (
-  id: string,
-  input: UpdateSessionInput,
-  actorId?: string,
-  actorRole?: Role,
-) => {
-  const before = await prisma.classSession.findUnique({ where: { id } });
-  if (!before) {
-    throw notFound("Session not found");
-  }
-
-  await assertTeacherIfNeeded(actorId, actorRole, before.classGroupId);
-
-  const startAt = input.startAt ?? before.startAt;
-  const endAt = input.endAt ?? before.endAt;
-  if (startAt >= endAt) {
-    throw badRequest("startAt must be before endAt");
-  }
-
-  const mode = input.mode ?? before.mode;
-  const meetingUrl = input.meetingUrl ?? before.meetingUrl;
-  if ((mode === "ONLINE" || mode === "HYBRID") && !meetingUrl) {
-    throw badRequest("meetingUrl is required for online or hybrid sessions");
-  }
-
-  const session = await prisma.classSession.update({
-    where: { id },
-    data: {
-      title: input.title,
-      mode: input.mode,
-      provider: input.provider,
-      meetingUrl: input.meetingUrl,
-      startAt: input.startAt,
-      endAt: input.endAt,
-      timezone: input.timezone,
-      room: input.room,
-      status: input.status,
-      recordingUrl: input.recordingUrl,
-      notes: input.notes,
-    },
-  });
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "SESSION_UPDATED",
-    entityType: "ClassSession",
-    entityId: id,
-    before,
-    after: session,
-  });
-
-  return session;
-};
-
-const notifyEnrolledStudents = async (
-  classGroupId: string,
-  title: string,
-  body: string,
-  data: Prisma.InputJsonValue,
-): Promise<void> => {
-  const enrollments = await prisma.enrollment.findMany({
-    where: { classGroupId, status: { in: ["ACTIVE", "COMPLETED"] } },
-    select: { student: { select: { userId: true } } },
-  });
-  const userIds = [...new Set(enrollments.map((enrollment) => enrollment.student.userId))];
-  if (userIds.length === 0) {
-    return;
-  }
-
-  await prisma.notification.createMany({
-    data: userIds.map((userId) => ({
-      userId,
-      type: "SCHEDULE",
-      channel: "IN_APP",
-      title,
-      body,
-      data,
-    })),
-  });
-};
-
-export const cancelSession = async (
-  id: string,
-  input: CancelSessionInput,
-  actorId?: string,
-  actorRole?: Role,
-) => {
-  const before = await prisma.classSession.findUnique({ where: { id } });
-  if (!before) {
-    throw notFound("Session not found");
-  }
-
-  await assertTeacherIfNeeded(actorId, actorRole, before.classGroupId);
-
-  const session = await prisma.classSession.update({
-    where: { id },
-    data: { status: "CANCELLED" },
-  });
-
-  await notifyEnrolledStudents(
-    before.classGroupId,
-    "Class cancelled",
-    `${session.title ?? "A class"} scheduled for ${session.startAt.toISOString()} was cancelled.${
-      input.reason ? ` Reason: ${input.reason}` : ""
-    }`,
-    { sessionId: session.id, status: "CANCELLED", reason: input.reason ?? null },
-  );
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "SESSION_CANCELLED",
-    entityType: "ClassSession",
-    entityId: id,
-    before,
-    after: session,
-    reason: input.reason ?? null,
-  });
-
-  return session;
-};
-
-export const rescheduleSession = async (
-  id: string,
-  input: RescheduleSessionInput,
-  actorId?: string,
-  actorRole?: Role,
-) => {
-  const before = await prisma.classSession.findUnique({ where: { id } });
-  if (!before) {
-    throw notFound("Session not found");
-  }
-
-  await assertTeacherIfNeeded(actorId, actorRole, before.classGroupId);
-
-  if (input.startAt >= input.endAt) {
-    throw badRequest("startAt must be before endAt");
-  }
-
-  const session = await prisma.classSession.update({
-    where: { id },
-    data: { startAt: input.startAt, endAt: input.endAt, status: "RESCHEDULED" },
-  });
-
-  await notifyEnrolledStudents(
-    before.classGroupId,
-    "Class rescheduled",
-    `${session.title ?? "A class"} was moved to ${session.startAt.toISOString()}.${
-      input.reason ? ` Reason: ${input.reason}` : ""
-    }`,
-    { sessionId: session.id, status: "RESCHEDULED", reason: input.reason ?? null },
-  );
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "SESSION_RESCHEDULED",
-    entityType: "ClassSession",
-    entityId: id,
-    before,
-    after: session,
-    reason: input.reason ?? null,
-  });
-
-  return session;
-};
+export { createSession, updateSession, cancelSession, rescheduleSession } from "./session-commands.js";
 
 export const addSessionMaterial = async (
   sessionId: string,
@@ -351,7 +131,7 @@ export const addSessionMaterial = async (
 ) => {
   const session = await prisma.classSession.findUnique({
     where: { id: sessionId },
-    select: { id: true, classGroupId: true },
+    select: { id: true, classGroupId: true, endAt: true },
   });
   if (!session) {
     throw notFound("Session not found");
@@ -412,14 +192,14 @@ export const deleteSessionMaterial = async (
 export const getSessionRoster = async (id: string) => {
   const session = await prisma.classSession.findUnique({
     where: { id },
-    select: { id: true, classGroupId: true },
+    select: { id: true, classGroupId: true, endAt: true },
   });
   if (!session) {
     throw notFound("Session not found");
   }
 
   const enrollments = await prisma.enrollment.findMany({
-    where: { classGroupId: session.classGroupId, status: { in: ["ACTIVE", "COMPLETED"] } },
+    where: { classGroupId: session.classGroupId, enrolledAt: { lte: session.endAt }, status: { in: ["ACTIVE", "COMPLETED"] } },
     orderBy: { enrolledAt: "asc" },
     select: {
       student: {
@@ -427,7 +207,7 @@ export const getSessionRoster = async (id: string) => {
           id: true,
           studentCode: true,
           user: { select: { firstName: true, lastName: true, email: true, phone: true } },
-          attendance: { where: { sessionId: id }, select: { status: true, note: true } },
+          attendance: { where: { sessionId: id }, select: { status: true, note: true, markedAt: true, updatedAt: true, markedBy: { select: { firstName: true, lastName: true } } } },
         },
       },
     },
@@ -445,184 +225,14 @@ export const getSessionRoster = async (id: string) => {
       phone: student.user.phone,
       status: record?.status ?? null,
       note: record?.note ?? null,
+      markedAt: record?.markedAt ?? null,
+      updatedAt: record?.updatedAt ?? null,
+      markedBy: record?.markedBy ?? null,
     };
   });
 };
 
-const notifyLowAttendance = async (
-  classGroupId: string,
-  classGroupName: string,
-  studentIds: string[],
-  studentUserIds: Map<string, string>,
-): Promise<void> => {
-  if (studentIds.length === 0) {
-    return;
-  }
-
-  const rows = await prisma.attendance.findMany({
-    where: { studentId: { in: studentIds }, session: { classGroupId } },
-    select: { studentId: true, status: true },
-  });
-
-  const counts = new Map<string, { total: number; attended: number }>();
-  for (const row of rows) {
-    const entry = counts.get(row.studentId) ?? { total: 0, attended: 0 };
-    entry.total += 1;
-    if (row.status === "PRESENT" || row.status === "LATE") {
-      entry.attended += 1;
-    }
-    counts.set(row.studentId, entry);
-  }
-
-  const notifications: Prisma.NotificationCreateManyInput[] = [];
-  for (const studentId of studentIds) {
-    const entry = counts.get(studentId);
-    const userId = studentUserIds.get(studentId);
-    if (!entry || entry.total === 0 || !userId) {
-      continue;
-    }
-
-    const percentage = Math.round((entry.attended / entry.total) * 10000) / 100;
-    if (percentage >= env.ATTENDANCE_ALERT_THRESHOLD) {
-      continue;
-    }
-
-    notifications.push({
-      userId,
-      type: "CLASS",
-      channel: "IN_APP",
-      title: "Low attendance",
-      body: `Your attendance in ${classGroupName} is ${percentage}%, below the required ${env.ATTENDANCE_ALERT_THRESHOLD}%.`,
-      data: { classGroupId, percentage },
-    });
-  }
-
-  if (notifications.length > 0) {
-    await prisma.notification.createMany({ data: notifications });
-  }
-};
-
-export const markAttendance = async (
-  sessionId: string,
-  input: MarkAttendanceInput,
-  actorId?: string,
-  actorRole?: Role,
-) => {
-  const session = await prisma.classSession.findUnique({
-    where: { id: sessionId },
-    select: {
-      id: true,
-      classGroupId: true,
-      title: true,
-      classGroup: { select: { name: true } },
-    },
-  });
-  if (!session) {
-    throw notFound("Session not found");
-  }
-
-  await assertTeacherIfNeeded(actorId, actorRole, session.classGroupId);
-
-  const enrollments = await prisma.enrollment.findMany({
-    where: { classGroupId: session.classGroupId, status: { in: ["ACTIVE", "COMPLETED"] } },
-    select: { student: { select: { id: true, userId: true } } },
-  });
-  const studentUserIds = new Map(
-    enrollments.map((enrollment) => [enrollment.student.id, enrollment.student.userId]),
-  );
-
-  for (const record of input.records) {
-    if (!studentUserIds.has(record.studentId)) {
-      throw badRequest(`Student ${record.studentId} is not enrolled in this class group`);
-    }
-  }
-
-  const now = new Date();
-  await prisma.$transaction(
-    input.records.map((record) =>
-      prisma.attendance.upsert({
-        where: { sessionId_studentId: { sessionId, studentId: record.studentId } },
-        create: {
-          sessionId,
-          studentId: record.studentId,
-          status: record.status,
-          note: record.note ?? null,
-          markedById: actorId ?? null,
-          markedAt: now,
-        },
-        update: {
-          status: record.status,
-          note: record.note ?? null,
-          markedById: actorId ?? null,
-          markedAt: now,
-        },
-      }),
-    ),
-  );
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "ATTENDANCE_MARKED",
-    entityType: "ClassSession",
-    entityId: sessionId,
-    after: { records: input.records },
-  });
-
-  await notifyLowAttendance(
-    session.classGroupId,
-    session.classGroup.name,
-    [...new Set(input.records.map((record) => record.studentId))],
-    studentUserIds,
-  );
-
-  await emitActivity({
-    actorId,
-    type: "ATTENDANCE",
-    title: `Attendance marked for ${session.title}`,
-    body: `${input.records.length} student records in ${session.classGroup.name}.`,
-    classGroupId: session.classGroupId,
-  });
-
-  return { sessionId, marked: input.records.length };
-};
-
-export const updateAttendance = async (
-  recordId: string,
-  input: UpdateAttendanceInput,
-  actorId?: string,
-  actorRole?: Role,
-) => {
-  const before = await prisma.attendance.findUnique({
-    where: { id: recordId },
-    include: { session: { select: { classGroupId: true } } },
-  });
-  if (!before) {
-    throw notFound("Attendance record not found");
-  }
-
-  await assertTeacherIfNeeded(actorId, actorRole, before.session.classGroupId);
-
-  const record = await prisma.attendance.update({
-    where: { id: recordId },
-    data: {
-      status: input.status,
-      note: input.note,
-      markedById: actorId ?? before.markedById,
-      markedAt: new Date(),
-    },
-  });
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "ATTENDANCE_UPDATED",
-    entityType: "Attendance",
-    entityId: recordId,
-    before,
-    after: record,
-  });
-
-  return record;
-};
+export { markAttendance, updateAttendance } from "./attendance-commands.js";
 
 export interface AttendanceCounts {
   present: number;
@@ -665,7 +275,7 @@ export const getAttendanceSummary = async (
 ) => {
   const where: Prisma.AttendanceWhereInput = {};
 
-  const sessionWhere: Prisma.ClassSessionWhereInput = {};
+  const sessionWhere: Prisma.ClassSessionWhereInput = { ...await enforceAttendanceScope(actor, query.classGroupId), status: { not: "CANCELLED" } };
   if (query.classGroupId) sessionWhere.classGroupId = query.classGroupId;
   if (query.from || query.to) sessionWhere.startAt = { gte: query.from, lte: query.to };
   if (Object.keys(sessionWhere).length > 0) {
@@ -711,7 +321,7 @@ export const exportAttendance = async (
 ) => {
   const where: Prisma.AttendanceWhereInput = {};
 
-  const sessionWhere: Prisma.ClassSessionWhereInput = {};
+  const sessionWhere: Prisma.ClassSessionWhereInput = { ...await enforceAttendanceScope(actor, query.classGroupId), status: { not: "CANCELLED" } };
   if (query.classGroupId) sessionWhere.classGroupId = query.classGroupId;
   if (query.from || query.to) sessionWhere.startAt = { gte: query.from, lte: query.to };
   if (Object.keys(sessionWhere).length > 0) {
@@ -760,6 +370,7 @@ export const exportAttendance = async (
 };
 
 export const getMyAttendance = async (userId: string) => {
+  await loadScheduleAccess(userId);
   const student = await prisma.student.findUnique({
     where: { userId },
     select: { id: true },
@@ -769,7 +380,7 @@ export const getMyAttendance = async (userId: string) => {
   }
 
   const history = await prisma.attendance.findMany({
-    where: { studentId: student.id },
+    where: { studentId: student.id, session: { status: { not: "CANCELLED" } } },
     orderBy: { session: { startAt: "desc" } },
     select: {
       id: true,
@@ -795,24 +406,25 @@ export const getMyAttendance = async (userId: string) => {
 };
 
 export const getMyUpcomingSessions = async (userId: string) => {
-  const profile = await loadStudentAccessProfile(userId);
+  const profile = await loadScheduleAccess(userId);
   if (profile.classGroupIds.length === 0) {
     return [];
   }
 
-  return prisma.classSession.findMany({
+  const rows = await prisma.classSession.findMany({
     where: {
       classGroupId: { in: profile.classGroupIds },
-      startAt: { gte: new Date() },
+      endAt: { gt: new Date() },
       status: { in: ["SCHEDULED", "LIVE", "RESCHEDULED"] },
     },
     orderBy: { startAt: "asc" },
     select: studentSessionSelect,
   });
+  return rows.map(row => protectStudentSession(row, profile));
 };
 
 export const getMySessions = async (userId: string, query: StudentSessionsQuery) => {
-  const profile = await loadStudentAccessProfile(userId);
+  const profile = await loadScheduleAccess(userId);
   const pagination = parsePagination(query);
   if (profile.classGroupIds.length === 0) {
     return buildPaginated([], 0, pagination);
@@ -820,7 +432,7 @@ export const getMySessions = async (userId: string, query: StudentSessionsQuery)
 
   const where: Prisma.ClassSessionWhereInput = {
     classGroupId: { in: profile.classGroupIds },
-    startAt: { lt: new Date() },
+    ...(query.scope === "all" ? {} : { startAt: { lt: new Date() } }),
   };
 
   const [rows, total] = await prisma.$transaction([
@@ -834,11 +446,11 @@ export const getMySessions = async (userId: string, query: StudentSessionsQuery)
     prisma.classSession.count({ where }),
   ]);
 
-  return buildPaginated(rows, total, pagination);
+  return buildPaginated(rows.map(row => protectStudentSession(row, profile)), total, pagination);
 };
 
 export const getMySession = async (userId: string, id: string) => {
-  const profile = await loadStudentAccessProfile(userId);
+  const profile = await loadScheduleAccess(userId);
 
   const session = await prisma.classSession.findUnique({
     where: { id },
@@ -856,5 +468,6 @@ export const getMySession = async (userId: string, id: string) => {
     throw forbidden("You do not have access to this session");
   }
 
-  return session;
+  const protectedSession = protectStudentSession(session, profile);
+  return { ...protectedSession, materials: protectedSession.accessMessage ? [] : session.materials };
 };
