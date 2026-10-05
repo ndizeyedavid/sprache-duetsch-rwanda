@@ -17,6 +17,9 @@ export function AssessmentEditorModal({ open, onClose, levels, initialLevelId, e
  const [passMark, setPassMark] = useState('50');
  const [duration, setDuration] = useState('30');
  const [maxAttempts, setMaxAttempts] = useState('1');
+ const [protectedMode, setProtectedMode] = useState(false);
+ const [availableFrom, setAvailableFrom] = useState(''), [availableUntil, setAvailableUntil] = useState('');
+ const localDate = (v: string | null) => v ? new Date(new Date(v).getTime() - new Date(v).getTimezoneOffset() * 60000).toISOString().slice(0, 16) : '';
  const [isPublished, setIsPublished] = useState(true);
  const [description, setDescription] = useState('');
  const [selected, setSelected] = useState<Record<string, boolean>>({});
@@ -38,6 +41,7 @@ export function AssessmentEditorModal({ open, onClose, levels, initialLevelId, e
  setPassMark(String(a.passMark ?? 50));
  setDuration(a.durationMinutes != null ? String(a.durationMinutes) : '30');
  setMaxAttempts(a.maxAttempts != null ? String(a.maxAttempts) : '1');
+ setProtectedMode(a.protectedMode); setAvailableFrom(localDate(a.availableFrom)); setAvailableUntil(localDate(a.availableUntil));
  setIsPublished(a.isPublished); setDescription(a.description ?? '');
  const map: Record<string, boolean> = {};
  (a.questions ?? []).forEach((q) => { map[q.questionId] = true; });
@@ -45,6 +49,7 @@ export function AssessmentEditorModal({ open, onClose, levels, initialLevelId, e
  }).catch((err) => setError(apiErrorMessage(err, 'Could not load assessment.'))).finally(() => setLoadingEdit(false));
  } else {
  setLevelId(initialLevelId); setTitle(''); setType('QUIZ'); setPassMark('50');
+ setProtectedMode(false); setAvailableFrom(''); setAvailableUntil('');
  setDuration('30'); setMaxAttempts('1'); setIsPublished(true); setDescription(''); setSelected({});
  }
  }, [open, editing?.id, initialLevelId]);
@@ -59,16 +64,18 @@ export function AssessmentEditorModal({ open, onClose, levels, initialLevelId, e
 
  async function handleSubmit(e: FormEvent) {
  e.preventDefault();
+ if (availableFrom && availableUntil && availableFrom >= availableUntil) { setFieldError('Closing time must be after opening time.'); return; }
  if (!title.trim()) { setFieldError('Please enter a title.'); return; }
  setFieldError(null); setError(null); setSaving(true);
  try {
+ const settings = { protectedMode, availableFrom: availableFrom ? new Date(availableFrom).toISOString() : null, availableUntil: availableUntil ? new Date(availableUntil).toISOString() : null };
  const chosen = levelQuestions.filter((q) => selected[q.id]).map((q, i) => ({ questionId: q.id, order: i }));
  if (editing?.id) {
- await updateAssessment(editing.id, { levelId, title: title.trim(), type, passMark: Number(passMark) || 50, durationMinutes: duration ? Number(duration) : null, maxAttempts: maxAttempts ? Number(maxAttempts) : null, isPublished, description: description.trim() || null });
+ await updateAssessment(editing.id, { ...settings, levelId, title: title.trim(), type, passMark: Number(passMark), durationMinutes: duration ? Number(duration) : null, maxAttempts: Number(maxAttempts) || 1, isPublished, description: description.trim() || null });
  // always sync questions so removals are persisted; keeping empty is intentional (clears)
  await setAssessmentQuestions(editing.id, chosen);
  } else {
- await createAssessment({ levelId, title: title.trim(), type, passMark: Number(passMark) || 50, durationMinutes: duration ? Number(duration) : undefined, maxAttempts: maxAttempts ? Number(maxAttempts) : undefined, isPublished, description: description.trim() || undefined, questions: chosen });
+ await createAssessment({ ...settings, levelId, title: title.trim(), type, passMark: Number(passMark), durationMinutes: duration ? Number(duration) : undefined, maxAttempts: maxAttempts ? Number(maxAttempts) : undefined, isPublished, description: description.trim() || undefined, questions: chosen });
  }
  onSaved(); onClose();
  } catch (err) { setError(apiErrorMessage(err, 'Could not save assessment.')); } finally { setSaving(false); }
@@ -87,6 +94,8 @@ export function AssessmentEditorModal({ open, onClose, levels, initialLevelId, e
  <label className="block"><span className="mb-1.5 block text-xs font-medium">Description</span><textarea value={description} onChange={(e) => setDescription(e.currentTarget.value)} rows={2} placeholder="Instructions students see before starting…" className="textarea w-full rounded-field border-line bg-base-100" /></label>
  <div className="grid gap-3 sm:grid-cols-2"><label className="block"><span className="mb-1.5 block text-xs font-medium">Type</span><select value={type} onChange={(e) => setType(e.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">{ASSESSMENT_TYPES.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}</select></label><label className="block"><span className="mb-1.5 block text-xs font-medium">Pass mark (%)</span><input value={passMark} onChange={(e) => setPassMark(e.currentTarget.value)} inputMode="numeric" className="input w-full rounded-field border-line bg-base-200" /></label></div>
  <div className="grid gap-3 sm:grid-cols-2"><label className="block"><span className="mb-1.5 block text-xs font-medium">Duration (minutes)</span><input value={duration} onChange={(e) => setDuration(e.currentTarget.value)} inputMode="numeric" className="input w-full rounded-field border-line bg-base-200" /></label><label className="block"><span className="mb-1.5 block text-xs font-medium">Max attempts</span><input value={maxAttempts} onChange={(e) => setMaxAttempts(e.currentTarget.value)} inputMode="numeric" className="input w-full rounded-field border-line bg-base-200" /></label></div>
+ <div className="grid gap-3 sm:grid-cols-2">{[{ label: "Available from", value: availableFrom, change: setAvailableFrom }, { label: "Closes at", value: availableUntil, change: setAvailableUntil }].map(({ label, value, change }) => <label key={label}><span className="mb-1.5 block text-xs font-medium">{label} · local time</span><input type="datetime-local" value={value} onChange={e => change(e.target.value)} className="input w-full" /></label>)}</div>
+ <label className="flex items-center gap-2 text-xs font-medium"><input type="checkbox" className="checkbox checkbox-sm" checked={protectedMode} onChange={e => setProtectedMode(e.target.checked)} />Protected exam mode (fullscreen and violation checks)</label>
  <label className="flex items-center gap-2 text-xs font-medium"><input type="checkbox" className="checkbox checkbox-sm" checked={isPublished} onChange={(e) => setIsPublished(e.currentTarget.checked)} />Publish immediately</label>
  <div className="rounded-box border border-line bg-base-200/40 p-3">
  <div className="flex items-center justify-between gap-2"><p className="text-xs font-semibold">Questions ({levelQuestions.filter((q) => selected[q.id]).length} selected)</p><span className="text-[11px] text-muted">{levelQuestions.length} for this level</span></div>
