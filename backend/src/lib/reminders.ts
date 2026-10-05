@@ -15,7 +15,7 @@ export const runPreClassReminders = async (): Promise<number> => {
   const cutoff = new Date(now.getTime() - DEDUPE_WINDOW_HOURS * 3_600_000);
 
   const sessions = await prisma.classSession.findMany({
-    where: { status: "SCHEDULED", startAt: { gt: now, lte: horizon } },
+    where: { status: { in: ["SCHEDULED", "RESCHEDULED"] }, startAt: { gt: now, lte: horizon } },
     select: { id: true, title: true, startAt: true, classGroupId: true },
   });
 
