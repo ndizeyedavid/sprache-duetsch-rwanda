@@ -1,3 +1,4 @@
+import { assertTeacherLevel } from "../../lib/teacher-levels.js";
 import type { Request, Response } from "express";
 import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
 import type {
@@ -32,6 +33,7 @@ export const createModule = async (req: Request, res: Response): Promise<void> =
 
 export const listModules = async (req: Request, res: Response): Promise<void> => {
   const { levelId } = validatedParams<{ levelId: string }>(req);
+  if (req.user?.role === "TEACHER") await assertTeacherLevel(req.user.id, levelId);
   const modules = await service.listModules(levelId);
   res.json({ success: true, data: modules });
 };
@@ -57,6 +59,7 @@ export const createLesson = async (req: Request, res: Response): Promise<void> =
 export const getLesson = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
   const lesson = await service.getLesson(id);
+  if (req.user?.role === "TEACHER") await assertTeacherLevel(req.user.id, lesson.module.levelId);
   res.json({ success: true, data: lesson });
 };
 
