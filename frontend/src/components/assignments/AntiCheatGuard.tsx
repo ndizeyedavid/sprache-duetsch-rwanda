@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { FiAlertTriangle, FiMaximize2, FiShield, FiEyeOff } from "react-icons/fi";
 import { useAntiCheat } from "../../hooks/useAntiCheat";
 import type { ViolationType } from "../../hooks/useAntiCheat";
@@ -18,10 +19,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
     onViolation,
   });
 
-  if (locked && onLock) {
-    // Trigger once when locked
-    setTimeout(() => onLock(), 0);
-  }
+  useEffect(() => { if (enabled && locked) onLock?.(); }, [enabled, locked, onLock]);
 
   const watermark = user ? `${user.firstName} ${user.lastName} · ${user.email}` : "";
 
