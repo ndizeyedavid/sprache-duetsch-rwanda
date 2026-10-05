@@ -195,6 +195,9 @@ export type SessionItem = {
   provider: string | null;
   status: string;
   meetingUrl: string | null;
+  room?: string | null;
+  notes?: string | null;
+  recordingUrl?: string | null;
   teacher: { firstName: string; lastName: string } | null;
   classGroup: { id: string; name: string } | null;
 };
@@ -233,6 +236,7 @@ export function getAttendanceSummary(): Promise<AttendanceSummary> {
 }
 
 export type SessionRosterRow = {
+  updatedAt?: string | null;
   studentId: string;
   studentCode: string;
   firstName: string;
@@ -263,7 +267,7 @@ export function updateSession(id: string, body: Record<string, unknown>): Promis
 
 export function markSessionAttendance(
   id: string,
-  records: { studentId: string; status: string }[],
+  records: { studentId: string; status: string; note?: string | null; expectedUpdatedAt?: string | null }[],
 ): Promise<unknown> {
   return apiPost(`/sessions/${id}/attendance`, { records });
 }
@@ -589,6 +593,7 @@ export function getMyAssessments(): Promise<MyAssessment[]> {
 }
 
 export type MyAssessmentDetail = {
+  protectedMode: boolean;
   id: string;
   title: string;
   description: string | null;
@@ -621,15 +626,16 @@ export function getMyAssessment(id: string): Promise<MyAssessmentDetail> {
   return apiGet<MyAssessmentDetail>(`/assessments/my/assessments/${id}`);
 }
 
-export function startAttempt(assessmentId: string): Promise<{ id: string; status: string; startedAt: string; maxScore: Money }> {
-  return apiPost<{ id: string; status: string; startedAt: string; maxScore: Money }>(`/assessments/my/assessments/${assessmentId}/attempts`, {});
+export function startAttempt(assessmentId: string): Promise<{ id: string; status: string; startedAt: string; draftResponses: Record<string, unknown>; maxScore: Money }> {
+  return apiPost<{ id: string; status: string; startedAt: string; draftResponses: Record<string, unknown>; maxScore: Money }>(`/assessments/my/assessments/${assessmentId}/attempts`, {});
 }
 
 export function submitAttempt(
   attemptId: string,
   answers: { questionId: string; response: unknown }[],
+  requestReview = false,
 ): Promise<{ status: string; score?: number; maxScore?: number; percentage?: number; passed?: boolean; message?: string }> {
-  return apiPost(`/assessments/my/attempts/${attemptId}/submit`, { answers });
+  return apiPost(`/assessments/my/attempts/${attemptId}/submit`, { answers, requestReview });
 }
 
 export function getMyAttempts(): Promise<MyAttempt[]> {
@@ -1084,6 +1090,9 @@ export function getQuestion(id: string): Promise<QuestionItem> {
 }
 
 export type AuthoredAssessment = {
+  protectedMode: boolean;
+  availableFrom: string | null;
+  availableUntil: string | null;
   id: string;
   levelId: string;
   title: string;
@@ -1222,11 +1231,14 @@ export function listConversations(): Promise<Conversation[]> {
   return apiGet<Conversation[]>('/messages/conversations');
 }
 
-export function createConversation(body: {
+export async function createConversation(body: {
   participantIds: string[];
   title?: string;
 }): Promise<Conversation> {
-  return apiPost<Conversation>('/messages/conversations', body);
+  const conversation = await apiPost<Omit<Conversation, 'messages' | 'unreadCount'> &
+    Partial<Pick<Conversation, 'messages' | 'unreadCount'>>>('/messages/conversations', body);
+  // Creation (including reused chats) returns participants without message metadata.
+  return { ...conversation, messages: conversation.messages ?? [], unreadCount: conversation.unreadCount ?? 0 };
 }
 
 export function listThreadMessages(conversationId: string): Promise<ChatMessage[]> {
