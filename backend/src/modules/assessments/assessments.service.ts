@@ -1,3 +1,4 @@
+import { teacherLevels } from "./teacher-access.js";
 import { Prisma } from "../../generated/prisma/client.js";
 import type { QuestionType } from "../../generated/prisma/client.js";
 import {
@@ -117,10 +118,11 @@ export const gradeObjectiveAnswer = (
 // Question bank
 // ---------------------------------------------------------------------------
 
-export const listQuestions = async (query: ListQuestionQuery) => {
+export const listQuestions = async (query: ListQuestionQuery, teacherId?: string) => {
   const pagination = parsePagination(query);
 
-  const where: Prisma.QuestionWhereInput = {};
+  const levels = await teacherLevels(teacherId);
+  const where: Prisma.QuestionWhereInput = levels ? { AND: [{ levelId: { in: levels } }] } : {};
   if (query.levelId) {
     where.levelId = query.levelId;
   }
@@ -251,10 +253,11 @@ export const deleteQuestion = async (id: string, actorId?: string) => {
 // Assessments (staff)
 // ---------------------------------------------------------------------------
 
-export const listAssessments = async (query: ListAssessmentQuery) => {
+export const listAssessments = async (query: ListAssessmentQuery, teacherId?: string) => {
   const pagination = parsePagination(query);
 
-  const where: Prisma.AssessmentWhereInput = {};
+  const levels = await teacherLevels(teacherId);
+  const where: Prisma.AssessmentWhereInput = levels ? { AND: [{ levelId: { in: levels } }] } : {};
   if (query.levelId) {
     where.levelId = query.levelId;
   }
@@ -305,6 +308,7 @@ export const createAssessment = async (input: CreateAssessmentInput, actorId?: s
         title: input.title,
         description: input.description ?? null,
         type: input.type,
+        protectedMode: input.protectedMode ?? false,
         durationMinutes: input.durationMinutes ?? null,
         maxAttempts: input.maxAttempts ?? 1,
         passMark: input.passMark !== undefined ? new Prisma.Decimal(input.passMark) : undefined,
@@ -356,6 +360,7 @@ export const updateAssessment = async (
     title: input.title,
     description: input.description,
     type: input.type,
+    protectedMode: input.protectedMode,
     durationMinutes: input.durationMinutes,
     maxAttempts: input.maxAttempts,
     availableFrom: input.availableFrom,
@@ -443,10 +448,11 @@ export const replaceAssessmentQuestions = async (
 // Attempts (staff)
 // ---------------------------------------------------------------------------
 
-export const listAttempts = async (query: ListAttemptQuery) => {
+export const listAttempts = async (query: ListAttemptQuery, teacherId?: string) => {
   const pagination = parsePagination(query);
 
-  const where: Prisma.AttemptWhereInput = {};
+  const levels = await teacherLevels(teacherId);
+  const where: Prisma.AttemptWhereInput = teacherId ? { AND: [{ assessment: { levelId: { in: levels ?? [] } } }, { student: { enrollments: { some: { classGroup: { teacherId }, status: "ACTIVE" } } } }] } : {};
   if (query.assessmentId) {
     where.assessmentId = query.assessmentId;
   }
@@ -499,8 +505,9 @@ export const listAttempts = async (query: ListAttemptQuery) => {
   return buildPaginated(enriched as unknown as typeof rows, total, pagination);
 };
 
-export const exportAttempts = async (query: ListAttemptQuery) => {
-  const where: Prisma.AttemptWhereInput = {};
+export const exportAttempts = async (query: ListAttemptQuery, teacherId?: string) => {
+  const levels = await teacherLevels(teacherId);
+  const where: Prisma.AttemptWhereInput = teacherId ? { AND: [{ assessment: { levelId: { in: levels ?? [] } } }, { student: { enrollments: { some: { classGroup: { teacherId }, status: "ACTIVE" } } } }] } : {};
   if (query.assessmentId) {
     where.assessmentId = query.assessmentId;
   }
@@ -603,7 +610,7 @@ export const getAttemptDetail = async (attemptId: string) => {
         },
       },
     } as never,
-  } as never) as unknown as {
+  }) as unknown as {
     id: string;
     status: string;
     attemptNumber: number;
@@ -768,7 +775,8 @@ export const listMyAssessments = async (userId: string, query: MyAssessmentsQuer
         title: true,
         description: true,
         type: true,
-        durationMinutes: true,
+        protectedMode: true,
+      durationMinutes: true,
         maxAttempts: true,
         passMark: true,
         availableFrom: true,
@@ -815,6 +823,7 @@ export const getMyAssessment = async (userId: string, id: string) => {
       title: true,
       description: true,
       type: true,
+      protectedMode: true,
       durationMinutes: true,
       maxAttempts: true,
       passMark: true,
@@ -857,15 +866,13 @@ export const getMyAssessment = async (userId: string, id: string) => {
   if (assessment.availableFrom && now < assessment.availableFrom) {
     throw badRequest("This assessment is not yet available");
   }
-  if (assessment.availableUntil && now > assessment.availableUntil) {
-    throw badRequest("This assessment is no longer available");
-  }
 
   const attempts = await prisma.attempt.findMany({
     where: { assessmentId: id, studentId: profile.studentId },
     select: { status: true },
   });
 
+  if (assessment.availableUntil && now > assessment.availableUntil && !attempts.length) throw badRequest("This assessment is no longer available");
   const { isPublished: _isPublished, ...meta } = assessment;
   return { ...meta, attemptCount: attempts.length };
 };
@@ -877,6 +884,7 @@ export const startAttempt = async (userId: string, assessmentId: string) => {
       id: true,
       levelId: true,
       isPublished: true,
+      protectedMode: true,
       durationMinutes: true,
       maxAttempts: true,
       availableFrom: true,
@@ -913,27 +921,20 @@ export const startAttempt = async (userId: string, assessmentId: string) => {
   if (assessment.availableFrom && now < assessment.availableFrom) {
     throw badRequest("This assessment is not yet available");
   }
-  if (assessment.availableUntil && now > assessment.availableUntil) {
-    throw badRequest("This assessment is no longer available");
-  }
 
   const existing = await prisma.attempt.findFirst({
     where: { assessmentId, studentId: profile.studentId, status: "IN_PROGRESS" },
     orderBy: { startedAt: "desc" },
-    select: { id: true, startedAt: true, assessmentId: true, studentId: true, status: true } as never,
+    select: { id: true, startedAt: true, assessmentId: true, studentId: true, status: true, draftResponses: true } as never,
   } as never);
   if (existing) {
-    const stillValid =
-      assessment.durationMinutes === null ||
-      now.getTime() - existing.startedAt.getTime() < assessment.durationMinutes * 60_000;
-    if (stillValid) {
-      return existing;
-    }
+    return existing;
   }
 
+  if (assessment.availableUntil && now > assessment.availableUntil) throw badRequest("This assessment is no longer available");
   const attemptCount = await prisma.attempt.count({
     where: { assessmentId, studentId: profile.studentId } as never,
-  } as never);
+  });
   if (attemptCount >= assessment.maxAttempts) {
     throw forbidden("You have reached the maximum number of attempts");
   }
@@ -980,6 +981,8 @@ export const submitAttempt = async (
           id: true,
           levelId: true,
           passMark: true,
+          durationMinutes: true,
+          protectedMode: true,
           questions: {
             select: {
               points: true,
@@ -1013,9 +1016,13 @@ export const submitAttempt = async (
     ]),
   );
 
+  const expired = attempt.assessment.durationMinutes !== null && Date.now() > attempt.startedAt.getTime() + attempt.assessment.durationMinutes * 60000 + 10000;
+  const stored = (attempt.draftResponses ?? {}) as Record<string, unknown>;
+  const answers = expired ? Object.entries(stored).map(([questionId, response]) => ({ questionId, response })) : input.answers;
+  if (new Set(answers.map(a => a.questionId)).size !== answers.length) throw badRequest("Duplicate answers are not allowed");
   let score = 0;
 
-  const operations = input.answers
+  const operations = answers
     .filter((answer) => questionMeta.has(answer.questionId))
     .map((answer) => {
       const meta = questionMeta.get(answer.questionId);
@@ -1068,11 +1075,13 @@ export const submitAttempt = async (
   });
   const submittedTitle = submittedAssessment?.title ?? "exam";
 
-  if (hasSubjective) {
+  const flagged = attempt.cheatFlagged || !!input.requestReview && attempt.assessment.protectedMode;
+  if (hasSubjective || flagged) {
     const updated = await prisma.attempt.update({
       where: { id: attemptId },
       data: {
         status: "SUBMITTED",
+        cheatFlagged: flagged,
         submittedAt: now,
         score: new Prisma.Decimal(score),
       },
@@ -1142,25 +1151,24 @@ export const recordAttemptViolation = async (userId: string, attemptId: string, 
   // Use selective query that won't fail if cheat columns missing pre-migration
   const attempt = (await prisma.attempt.findUnique({
     where: { id: attemptId },
-    select: { id: true, studentId: true, status: true, assessmentId: true, feedback: true } as never,
-  } as never) as unknown as { id: string; studentId: string; status: string; assessmentId: string; feedback: string | null; cheatCount?: number; cheatFlagged?: boolean; cheatLog?: unknown } | null);
+    select: { id: true, studentId: true, status: true, assessmentId: true, feedback: true, cheatCount: true, cheatFlagged: true, cheatLog: true, assessment: { select: { protectedMode: true } } } as never,
+  }) as unknown as { id: string; studentId: string; status: string; assessmentId: string; feedback: string | null; assessment: { protectedMode: boolean }; cheatCount?: number; cheatFlagged?: boolean; cheatLog?: unknown } | null);
   if (!attempt || attempt.studentId !== profile.studentId) throw notFound("Attempt not found");
-  if (attempt.status !== "IN_PROGRESS") return attempt;
+  if (attempt.status !== "IN_PROGRESS" || !attempt.assessment.protectedMode) return attempt;
   const log = Array.isArray(attempt.cheatLog) ? (attempt.cheatLog as unknown[]) : [];
   const nextLog = [...log, { type, at: new Date().toISOString() }] as unknown as Prisma.InputJsonValue;
   const nextCount = (attempt.cheatCount ?? 0) + 1;
   const flagged = nextCount >= 3;
   // Wrap in try/catch — columns may not exist until migration runs
-  let updated: { feedback: string | null } = { feedback: attempt.feedback };
   try {
-    updated = (await prisma.attempt.update({ where: { id: attemptId }, data: { cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog } as never } as never) as unknown as { feedback: string | null });
+    await prisma.attempt.update({ where: { id: attemptId }, data: { cheatCount: nextCount, cheatFlagged: flagged, cheatLog: nextLog } as never });
   } catch (e) {
     // P2022 column not found — still count violation in memory, but don't crash
     if ((e as { code?: string })?.code !== "P2022") throw e;
     return attempt as unknown as ReturnType<typeof prisma.attempt.findUnique>;
   }
   if (flagged) {
-    await prisma.attempt.update({ where: { id: attemptId }, data: { status: "SUBMITTED", submittedAt: new Date(), feedback: (updated.feedback ? updated.feedback + "\n\n" : "") + "[Auto-submitted due to 3 anti-cheat violations — flagged for review]" } });
+    await prisma.attempt.update({ where: { id: attemptId }, data: { feedback: "[Protected assessment flagged for teacher review]" } });
     await writeAudit({ actorId: userId, action: "ATTEMPT_FLAGGED_CHEATING", entityType: "Attempt", entityId: attemptId, after: { type, count: nextCount } });
     await emitActivity({ actorId: userId, type: "EXAM", title: "Exam auto-submitted — cheating flagged", body: `3 violations (${type}) — assessment ${attempt.assessmentId}`, levelId: null, studentId: profile.studentId });
   }
