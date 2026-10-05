@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { FiAlertCircle, FiArrowLeft, FiArrowRight, FiCheck, FiClock, FiExternalLink, FiRefreshCw } from 'react-icons/fi';
+import { FiArrowLeft, FiClock } from 'react-icons/fi';
 import { Panel } from '../../components/ui/Panel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
 import { getMyCourses, getStudentLesson, reportActivityViolation, submitActivity } from '../../lib/services';
-import { humanize } from '../../lib/services';
+import { ActivityNavigation } from '../../components/student/practice/ActivityNavigation';
+import { ActivityChoices } from '../../components/student/practice/ActivityChoices';
+import { ActivityOutcome } from '../../components/student/practice/ActivityOutcome';
 import { AntiCheatGuard } from '../../components/assignments/AntiCheatGuard';
 
 type ActivityConfig = Record<string, unknown>;
@@ -104,6 +106,7 @@ export function StudentActivity() {
 
   function handleRedo() {
     setSubmitted(false);
+    setMcqChoice(null);
     setIsCorrect(null);
     setScore(null);
     setFeedback(null);
@@ -112,17 +115,7 @@ export function StudentActivity() {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-2 text-xs">
-        <Link to="/courses" className="hover:underline">My courses</Link><span className="text-muted">/</span>
-        <Link to={`/courses/${slug}/learn`} className="hover:underline">{course.level.code}</Link><span className="text-muted">/</span>
-        <Link to={`/courses/${slug}/learn/${lessonId}`} className="hover:underline">Lesson</Link><span className="text-muted">/</span>
-        <span className="font-medium text-ink truncate">{activity.title}</span>
-      </div>
-
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <Link to={`/courses/${slug}/learn/${lessonId}`} className="btn btn-xs gap-1 rounded-full border-line bg-base-100"><FiArrowLeft aria-hidden />Back to lesson</Link>
-        <span className="rounded-full bg-base-200 px-2.5 py-1 text-xs font-medium">{humanize(type)}</span>
-      </div>
+      <ActivityNavigation slug={slug} lessonId={lessonId} code={course.level.code} title={activity.title} type={type} />
 
       <Panel>
         <div className="flex flex-wrap gap-2">
@@ -175,20 +168,7 @@ export function StudentActivity() {
                 </div>
               ) : null}
 
-              {type === 'MCQ' ? (
-                <div>
-                  <p className="text-sm font-medium">{String(cfg.question ?? cfg.prompt ?? activity.title)}</p>
-                  <div className="mt-3 space-y-2">
-                    {(Array.isArray(cfg.options) ? cfg.options as string[] : []).map((opt: string, idx: number) => (
-                      <button key={idx} type="button" onClick={() => setMcqChoice(idx)} className={`flex w-full items-center gap-3 rounded-box border px-4 py-3 text-left text-sm transition ${mcqChoice === idx ? 'border-brand bg-brand-soft' : 'border-line bg-base-100 hover:border-brand/20'}`}>
-                        <span className={`flex size-6 shrink-0 items-center justify-center rounded-full border text-xs font-bold ${mcqChoice === idx ? 'border-brand bg-brand text-white' : 'border-line bg-base-200'}`}>{String.fromCharCode(65 + idx)}</span>
-                        {opt}
-                      </button>
-                    ))}
-                    {(!cfg.options || (cfg.options as unknown[]).length === 0) ? <p className="text-xs text-muted">No options configured — contact your teacher.</p> : null}
-                  </div>
-                </div>
-              ) : null}
+              {type === 'MCQ' ? <ActivityChoices id={activityId} options={Array.isArray(cfg.options) ? cfg.options as string[] : []} question={String(cfg.question ?? cfg.prompt ?? activity.title)} choice={mcqChoice} onChange={setMcqChoice} /> : null}
 
               {(type === 'WRITING' || type === 'DOCUMENT') ? (
                 <div>
@@ -211,28 +191,7 @@ export function StudentActivity() {
               <button type="button" onClick={() => void handleSubmit()} disabled={submitting || cheatLocked || (type === 'MCQ' ? mcqChoice === null : type === 'TRUE_FALSE' ? tfChoice === null : !answer.trim())} className="btn rounded-full border-0 bg-brand px-6 text-white hover:bg-brand/90 disabled:opacity-50">{submitting ? <span className="loading loading-spinner loading-xs" /> : null}Submit</button>
             </div>
           ) : (
-            <div className="space-y-4 text-center">
-              <div className={`mx-auto flex size-14 items-center justify-center rounded-full ${isCorrect ? 'bg-brand-soft text-brand' : isCorrect === false ? 'bg-coral-soft text-coral' : 'bg-sun-soft text-[#8A6800]'}`}>
-                {isCorrect ? <FiCheck aria-hidden className="text-xl" /> : isCorrect === false ? <FiAlertCircle aria-hidden className="text-xl" /> : <FiClock aria-hidden className="text-xl" />}
-              </div>
-              <h2 className="text-lg font-bold">{isCorrect ? 'Well done!' : isCorrect === false ? 'Not quite' : existingSubmission?.status === 'SUBMITTED' ? 'Submitted — awaiting grading' : 'Submitted'}</h2>
-              <p className="mx-auto max-w-md text-sm leading-relaxed text-muted">
-                {isCorrect ? 'Your answer was correct.' : isCorrect === false ? 'Check the feedback and try again, or continue.' : existingSubmission?.status === 'SUBMITTED' ? 'Your facilitator will review and grade this soon.' : 'Your submission has been recorded.'}
-              </p>
-              <div className="mx-auto flex max-w-md flex-wrap justify-center gap-2">
-                <span className="rounded-full bg-base-200 px-3 py-1 text-xs font-medium">Attempt #{attemptNumber ?? 1}</span>
-                {score !== null ? <span className={`rounded-full px-3 py-1 text-xs font-bold ${isCorrect ? 'bg-brand text-white' : isCorrect === false ? 'bg-coral text-white' : 'bg-base-200'}`}>Score: {score}/1</span> : null}
-                {existingSubmission?.status ? <span className="rounded-full bg-base-200 px-3 py-1 text-xs">{existingSubmission.status}</span> : null}
-              </div>
-              {feedback ? <p className="mx-auto max-w-md rounded-box bg-base-200 px-3 py-2 text-xs">Feedback: <span className="font-medium">{feedback}</span></p> : null}
-              {type === 'FILL_BLANK' && isCorrect === false && cfg.answer ? <p className="rounded-box bg-base-200 px-3 py-2 text-xs">Correct answer: <span className="font-semibold">{String(cfg.answer)}</span></p> : null}
-              <div className="flex flex-wrap justify-center gap-2 pt-2">
-                <Link to={`/courses/${slug}/learn/${lessonId}`} className="btn gap-1 rounded-full border-line bg-base-100"><FiArrowLeft aria-hidden />Back to lesson</Link>
-                <button type="button" onClick={handleRedo} className="btn gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90"><FiRefreshCw aria-hidden />Redo</button>
-                {nextLesson ? <Link to={`/courses/${slug}/learn/${nextLesson.id}`} className="btn gap-1 rounded-full border-line bg-base-100">Next lesson<FiArrowRight aria-hidden /></Link> : <Link to={`/courses/${slug}/learn`} className="btn gap-1 rounded-full border-line bg-base-100">Back to course<FiExternalLink aria-hidden /></Link>}
-              </div>
-              <p className="text-[11px] text-muted">Your progress is saved for your facilitator to review.</p>
-            </div>
+            <ActivityOutcome isCorrect={isCorrect} status={existingSubmission?.status} attemptNumber={attemptNumber} score={score} feedback={feedback} type={type} cfg={cfg} slug={slug} lessonId={lessonId} nextLesson={nextLesson} handleRedo={handleRedo} />
           )}
         </AntiCheatGuard>
       </Panel>
