@@ -1,59 +1,34 @@
 import { Link } from 'react-router-dom';
-import { Panel, SectionHeader } from '../../components/ui/Panel';
-import { StatusBadge } from '../../components/ui/StatusBadge';
+import { FiCalendar, FiUsers } from 'react-icons/fi';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { TeacherClassDetailCard } from '../../components/teacher/TeacherClassDetailCard';
 import { useApi } from '../../hooks/useApi';
-import { humanize, listClasses, listLevels } from '../../lib/services';
+import { listClasses } from '../../lib/services';
 
 export function TeacherClasses() {
- const classes = useApi('teacher-classes', listClasses);
- const levels = useApi('levels-catalog', listLevels);
-
- const levelCode = (levelId: string): string =>
- levels.data?.find((level) => level.id === levelId)?.code ?? '—';
-
- return (
- <Panel>
- <SectionHeader title={`My Classes (${classes.data?.length ?? 0})`} action={{ label: 'Schedule', to: '/teacher/schedule' }} />
- {classes.loading ? (
- <LoadingBlock label="Loading your classes…" />
- ) : classes.error || !classes.data ? (
- <ErrorBlock message={classes.error ?? 'Could not load your classes.'} onRetry={classes.refetch} />
- ) : classes.data.length === 0 ? (
- <EmptyBlock
- title="No classes assigned yet"
- hint="An academic admin will assign you to a class group. It will then appear here."
- />
- ) : (
- <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
- {classes.data.map((group) => (
- <article key={group.id} className=" rounded-box bg-base-100 p-4">
- <div className="flex items-center justify-between gap-2">
- <p className="text-[11px] font-semibold uppercase tracking-wide text-brand">
- {levelCode(group.levelId)}
- </p>
- <StatusBadge status={humanize(group.shift)} />
- </div>
- <h3 className="mt-1 text-sm font-semibold leading-snug">{group.name}</h3>
- <p className="mt-0.5 text-xs text-muted">Class code · {group.code}</p>
- <div className="mt-4 flex gap-2">
- <Link
- to="/teacher/attendance"
- className="btn btn-sm grow rounded-full border-0 bg-brand text-white hover:bg-brand/90"
- >
- Attendance
- </Link>
- <Link
- to="/teacher/grading"
- className="btn btn-sm grow rounded-full border-brand bg-transparent text-brand hover:border-brand hover:bg-brand hover:text-white"
- >
- Grading
- </Link>
- </div>
- </article>
- ))}
- </div>
- )}
- </Panel>
- );
+  const classes = useApi('teacher-classes', listClasses);
+  if (classes.loading) return <LoadingBlock label="Loading your classes…" />;
+  if (classes.error || !classes.data) return <ErrorBlock message={classes.error ?? 'Could not load your classes.'} onRetry={classes.refetch} />;
+  const active = classes.data.filter(group => group.isActive);
+  const archived = classes.data.filter(group => !group.isActive);
+  return (
+    <div className="space-y-6">
+      <header className="card overflow-hidden bg-base-100">
+        <div className="flex items-center justify-between gap-4 p-6 sm:p-8">
+          <div className="min-w-0">
+            <h1 className="text-2xl font-semibold sm:text-3xl">My Classes</h1>
+            <p className="mt-2 text-sm text-base-content/60">Your students. Your teaching space.</p>
+            <Link to="/teacher/schedule" className="btn btn-sm mt-5"><FiCalendar aria-hidden />View schedule</Link>
+          </div>
+          <img src="/illustrations/study-books.webp" alt="" width={160} height={140} className="w-24 object-contain sm:w-40" />
+        </div>
+        <div className="flex flex-wrap gap-x-6 gap-y-2 bg-base-200/50 px-6 py-4 text-sm sm:px-8">
+          <span><strong>{active.length}</strong> active {active.length === 1 ? 'class' : 'classes'}</span>
+          <span className="inline-flex items-center gap-2"><FiUsers aria-hidden /><strong>{active.reduce((total, group) => total + group._count.enrollments, 0)}</strong> enrollments</span>
+        </div>
+      </header>
+      {active.length ? <section aria-label="Active classes" className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{active.map(group => <TeacherClassDetailCard key={group.id} group={group} />)}</section> : <div className="card bg-base-100 p-8"><EmptyBlock title="No active classes yet" hint="Your assigned classes will appear here." /></div>}
+      {archived.length ? <section><h2 className="mb-4 text-lg font-semibold text-base-content/60">Past classes <span className="text-sm font-normal">({archived.length})</span></h2><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{archived.map(group => <TeacherClassDetailCard key={group.id} group={group} />)}</div></section> : null}
+    </div>
+  );
 }
