@@ -22,7 +22,7 @@ import * as service from "./assessments.service.js";
 // ---------------------------------------------------------------------------
 
 export const listQuestions = async (req: Request, res: Response): Promise<void> => {
-  const result = await service.listQuestions(validatedQuery<ListQuestionQuery>(req));
+  const result = await service.listQuestions(validatedQuery<ListQuestionQuery>(req), req.user?.role === "TEACHER" ? req.user.id : undefined);
   res.json({ success: true, ...result });
 };
 
@@ -61,7 +61,7 @@ export const deleteQuestion = async (req: Request, res: Response): Promise<void>
 // ---------------------------------------------------------------------------
 
 export const listAssessments = async (req: Request, res: Response): Promise<void> => {
-  const result = await service.listAssessments(validatedQuery<ListAssessmentQuery>(req));
+  const result = await service.listAssessments(validatedQuery<ListAssessmentQuery>(req), req.user?.role === "TEACHER" ? req.user.id : undefined);
   res.json({ success: true, ...result });
 };
 
@@ -113,7 +113,7 @@ export const replaceAssessmentQuestions = async (
 // ---------------------------------------------------------------------------
 
 export const listAttempts = async (req: Request, res: Response): Promise<void> => {
-  const result = await service.listAttempts(validatedQuery<ListAttemptQuery>(req));
+  const result = await service.listAttempts(validatedQuery<ListAttemptQuery>(req), req.user?.role === "TEACHER" ? req.user.id : undefined);
   res.json({ success: true, ...result });
 };
 
@@ -124,7 +124,7 @@ export const getStaffAttempt = async (req: Request, res: Response): Promise<void
 };
 
 export const exportAttemptsCsv = async (req: Request, res: Response): Promise<void> => {
-  sendCsv(res, "attempts.csv", await service.exportAttempts(validatedQuery<ListAttemptQuery>(req)));
+  sendCsv(res, "attempts.csv", await service.exportAttempts(validatedQuery<ListAttemptQuery>(req), req.user?.role === "TEACHER" ? req.user.id : undefined));
 };
 
 export const mySkills = async (req: Request, res: Response): Promise<void> => {
