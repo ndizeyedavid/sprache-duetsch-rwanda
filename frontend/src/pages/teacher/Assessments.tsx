@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { Panel } from '../../components/ui/Panel';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
-import { listClasses, listLevels } from '../../lib/services';
+import { listMyTeachingLevels } from '../../lib/teaching';
 import { LevelRail } from '../../components/assessments/LevelRail';
 import { QuestionBankPanel } from '../../components/assessments/QuestionBankPanel';
 import { AssessmentGroups } from '../../components/assessments/AssessmentGroups';
@@ -13,13 +13,10 @@ type Tab = (typeof TABS)[number];
 
 export function TeacherAssessments() {
  const [searchParams, setSearchParams] = useSearchParams();
- const classes = useApi('teacher-classes', listClasses);
- const levels = useApi('levels-catalog', listLevels);
+ 
+ const levels = useApi('my-teaching-levels', listMyTeachingLevels);
 
- const allowedLevels = useMemo(() => {
- const ids = new Set((classes.data ?? []).map((g) => g.levelId));
- return (levels.data ?? []).filter((l) => ids.has(l.id));
- }, [classes.data, levels.data]);
+ const allowedLevels = useMemo(() => levels.data ?? [], [levels.data]);
 
  const tabParam = searchParams.get('tab');
  const initialTab: Tab = tabParam === 'assessments' ? 'Assessments' : 'Question bank';
@@ -66,12 +63,12 @@ export function TeacherAssessments() {
  setSearchParams(next);
  }
 
- if (classes.loading || levels.loading) return <LoadingBlock label="Loading your levels…" />;
- if (classes.error || levels.error) {
- return <ErrorBlock message={classes.error ?? levels.error ?? 'Could not load levels.'} onRetry={() => { classes.refetch(); levels.refetch(); }} />;
+ if (levels.loading) return <LoadingBlock label="Loading your levels…" />;
+ if (levels.error) {
+ return <ErrorBlock message={levels.error ?? 'Could not load levels.'} onRetry={() => {  levels.refetch(); }} />;
  }
  if (allowedLevels.length === 0) {
- return <Panel><EmptyBlock title="No levels assigned" hint="You can create assessments once an academic admin assigns you to a class group." /></Panel>;
+ return <Panel><EmptyBlock title="No levels assigned" hint="You can create assessments once an academic admin approves your teaching levels." /></Panel>;
  }
 
  return (
