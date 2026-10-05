@@ -3,6 +3,7 @@ import { FiArrowLeft, FiCheck, FiChevronDown } from 'react-icons/fi';
 import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { CourseOverviewHero } from '../../components/student/CourseOverviewHero';
 import { CourseModuleNavigation } from '../../components/student/CourseModuleNavigation';
+import { CoursebookResource } from '../../components/student/coursebook/CoursebookResource';
 import { useApi } from '../../hooks/useApi';
 import { getMyCourses, listLevels } from '../../lib/services';
 
@@ -22,6 +23,7 @@ export function CourseOverview() {
     <div className="journey-enter space-y-4">
       <Link to="/courses" className="inline-flex items-center gap-2 text-xs text-base-content/65 hover:text-base-content"><FiArrowLeft aria-hidden />My courses</Link>
       <CourseOverviewHero level={level} course={course} />
+      {course ? <CoursebookResource key={level.id} levelId={level.id} /> : null}
       {course ? <CourseModuleNavigation course={course} /> : null}
       {level.objectives.length > 0 ? <details className="group rounded-box border border-base-300/70 bg-base-100 px-5 py-4 sm:px-7">
         <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold">What you’ll learn<FiChevronDown aria-hidden className="transition-transform group-open:rotate-180" /></summary>
