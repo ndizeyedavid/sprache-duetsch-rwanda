@@ -1,45 +1,8 @@
-import { FiSend } from "react-icons/fi";
-
-type Props = {
-  draft: string;
-  onDraft: (v: string) => void;
-  onSend: () => void;
-  sending: boolean;
-};
-
+import { useEffect, useRef } from 'react';
+import { FiSend } from 'react-icons/fi';
+type Props = { draft: string; onDraft: (v: string) => void; onSend: () => void; sending: boolean };
 export function MessageComposer({ draft, onDraft, onSend, sending }: Props) {
-  return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        onSend();
-      }}
-      className="flex items-end gap-2 border-t border-line bg-base-100 p-3 relative"
-    >
-      <textarea
-        value={draft}
-        onChange={(e) => onDraft(e.target.value)}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" && !e.shiftKey) {
-            e.preventDefault();
-            onSend();
-          }
-        }}
-        placeholder="Write a message…"
-        rows={1}
-        className="relative z-10 textarea max-h-24 min-h-10 flex-1 resize-none rounded-box border-line bg-base-200 text-sm leading-relaxed"
-      />
-      <button
-        type="submit"
-        disabled={sending || !draft.trim()}
-        className="absolute right-4 bottom-4 z-30  btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
-      >
-        {sending ? (
-          <span className="loading loading-spinner loading-xs" />
-        ) : (
-          <FiSend aria-label="Send" size={16} />
-        )}
-      </button>
-    </form>
-  );
+  const input = useRef<HTMLTextAreaElement>(null);
+  useEffect(()=>{if(input.current){input.current.style.height='auto';input.current.style.height=`${Math.min(input.current.scrollHeight,140)}px`;}},[draft]);
+  return <form onSubmit={e=>{e.preventDefault();if(!sending&&draft.trim())onSend();}} className="shrink-0 border-t border-base-300 bg-base-100 p-4"><div className="flex items-end gap-3 rounded-2xl border border-base-300 bg-base-200/40 p-2"><textarea ref={input} aria-label="Message" value={draft} disabled={sending} onChange={e=>onDraft(e.target.value)} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing&&window.matchMedia('(pointer: fine)').matches){e.preventDefault();if(!sending&&draft.trim())onSend();}}} maxLength={4000} placeholder="Write your message…" rows={1} className="textarea textarea-ghost min-h-10 min-w-0 flex-1 resize-none text-sm focus:outline-none" /><button type="submit" aria-label="Send message" disabled={sending||!draft.trim()} className="btn btn-neutral btn-square shrink-0 rounded-xl">{sending?<span className="loading loading-spinner loading-xs" />:<FiSend aria-hidden size={18}/>}</button></div><p className="mt-2 hidden text-[10px] text-base-content/45 sm:block">Enter to send · Shift + Enter for a new line</p></form>;
 }
