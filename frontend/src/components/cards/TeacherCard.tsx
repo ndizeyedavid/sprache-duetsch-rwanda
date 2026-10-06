@@ -1,6 +1,6 @@
 import { FaStar } from 'react-icons/fa6';
-import { KebabMenu } from '../ui/KebabMenu';
 import type { Teacher } from '../../types';
+import { KebabMenu } from '../ui/KebabMenu';
 
 type TeacherCardProps = {
  teacher: Teacher;
