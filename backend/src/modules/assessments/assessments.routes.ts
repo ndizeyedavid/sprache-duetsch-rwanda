@@ -5,34 +5,15 @@ import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./assessments.controller.js";
-import {
-  assessmentIdSchema,
-  createAssessmentSchema,
-  createQuestionSchema,
-  gradeAttemptSchema,
-  listAssessmentQuerySchema,
-  listAttemptQuerySchema,
-  skillProfileQuerySchema,
-  listQuestionQuerySchema,
-  myAssessmentsQuerySchema,
-  replaceAssessmentQuestionsSchema,
-  submitAttemptSchema,
-  updateAssessmentSchema,
-  updateQuestionSchema,
-} from "./assessments.schema.js";
-
+import { assessmentIdSchema, createAssessmentSchema, createQuestionSchema, gradeAttemptSchema, listAssessmentQuerySchema, listAttemptQuerySchema, listQuestionQuerySchema, myAssessmentsQuerySchema, replaceAssessmentQuestionsSchema, skillProfileQuerySchema, submitAttemptSchema, updateAssessmentSchema, updateQuestionSchema, } from "./assessments.schema.js";
+import { attemptDraftBody,saveAttemptDraft } from "./attempt-drafts.js";
 import { checkTeacherAssessmentAccess } from "./teacher-access.js";
-import { attemptDraftBody, saveAttemptDraft } from "./attempt-drafts.js";
-
 export const assessmentsRouter = Router();
-
 const academic = [requireRole(...ACADEMIC_ROLES), checkTeacherAssessmentAccess];
 assessmentsRouter.put("/my/attempts/:id/draft", requireAuth, requireRole("STUDENT"), validate({ params: assessmentIdSchema, body: attemptDraftBody }), asyncHandler(saveAttemptDraft));
-
 // ---------------------------------------------------------------------------
 // Student routes (declared first so /my/* can never be shadowed)
 // ---------------------------------------------------------------------------
-
 assessmentsRouter.get(
   "/my/assessments",
   requireAuth,
@@ -40,7 +21,6 @@ assessmentsRouter.get(
   validate({ query: myAssessmentsQuerySchema }),
   asyncHandler(controller.listMyAssessments),
 );
-
 assessmentsRouter.get(
   "/my/assessments/:id",
   requireAuth,
@@ -48,7 +28,6 @@ assessmentsRouter.get(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.getMyAssessment),
 );
-
 assessmentsRouter.post(
   "/my/assessments/:id/attempts",
   requireAuth,
@@ -56,7 +35,6 @@ assessmentsRouter.post(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.startAttempt),
 );
-
 assessmentsRouter.post(
   "/my/attempts/:id/submit",
   requireAuth,
@@ -64,7 +42,6 @@ assessmentsRouter.post(
   validate({ params: assessmentIdSchema, body: submitAttemptSchema }),
   asyncHandler(controller.submitAttempt),
 );
-
 assessmentsRouter.post(
   "/my/attempts/:id/violation",
   requireAuth,
@@ -72,14 +49,12 @@ assessmentsRouter.post(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.recordViolation),
 );
-
 assessmentsRouter.get(
   "/my/attempts",
   requireAuth,
   requireRole("STUDENT"),
   asyncHandler(controller.listMyAttempts),
 );
-
 assessmentsRouter.get(
   "/my/attempts/:id",
   requireAuth,
@@ -87,14 +62,12 @@ assessmentsRouter.get(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.getMyAttempt),
 );
-
 assessmentsRouter.get(
   "/my/skills",
   requireAuth,
   requireRole("STUDENT"),
   asyncHandler(controller.mySkills),
 );
-
 assessmentsRouter.get(
   "/skills",
   requireAuth,
@@ -102,11 +75,9 @@ assessmentsRouter.get(
   validate({ query: skillProfileQuerySchema }),
   asyncHandler(controller.studentSkills),
 );
-
 // ---------------------------------------------------------------------------
 // Question bank (academic staff)
 // ---------------------------------------------------------------------------
-
 assessmentsRouter.post(
   "/questions",
   requireAuth,
@@ -114,7 +85,6 @@ assessmentsRouter.post(
   validate({ body: createQuestionSchema }),
   asyncHandler(controller.createQuestion),
 );
-
 assessmentsRouter.get(
   "/questions",
   requireAuth,
@@ -122,7 +92,6 @@ assessmentsRouter.get(
   validate({ query: listQuestionQuerySchema }),
   asyncHandler(controller.listQuestions),
 );
-
 assessmentsRouter.get(
   "/questions/:id",
   requireAuth,
@@ -130,7 +99,6 @@ assessmentsRouter.get(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.getQuestion),
 );
-
 assessmentsRouter.patch(
   "/questions/:id",
   requireAuth,
@@ -138,7 +106,6 @@ assessmentsRouter.patch(
   validate({ params: assessmentIdSchema, body: updateQuestionSchema }),
   asyncHandler(controller.updateQuestion),
 );
-
 assessmentsRouter.delete(
   "/questions/:id",
   requireAuth,
@@ -146,11 +113,9 @@ assessmentsRouter.delete(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.deleteQuestion),
 );
-
 // ---------------------------------------------------------------------------
 // Assessments (academic staff)
 // ---------------------------------------------------------------------------
-
 assessmentsRouter.post(
   "/assessments",
   requireAuth,
@@ -158,7 +123,6 @@ assessmentsRouter.post(
   validate({ body: createAssessmentSchema }),
   asyncHandler(controller.createAssessment),
 );
-
 assessmentsRouter.get(
   "/assessments",
   requireAuth,
@@ -166,7 +130,6 @@ assessmentsRouter.get(
   validate({ query: listAssessmentQuerySchema }),
   asyncHandler(controller.listAssessments),
 );
-
 assessmentsRouter.get(
   "/assessments/:id",
   requireAuth,
@@ -174,7 +137,6 @@ assessmentsRouter.get(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.getAssessment),
 );
-
 assessmentsRouter.patch(
   "/assessments/:id",
   requireAuth,
@@ -182,7 +144,6 @@ assessmentsRouter.patch(
   validate({ params: assessmentIdSchema, body: updateAssessmentSchema }),
   asyncHandler(controller.updateAssessment),
 );
-
 assessmentsRouter.delete(
   "/assessments/:id",
   requireAuth,
@@ -190,7 +151,6 @@ assessmentsRouter.delete(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.deleteAssessment),
 );
-
 assessmentsRouter.put(
   "/assessments/:id/questions",
   requireAuth,
@@ -198,11 +158,9 @@ assessmentsRouter.put(
   validate({ params: assessmentIdSchema, body: replaceAssessmentQuestionsSchema }),
   asyncHandler(controller.replaceAssessmentQuestions),
 );
-
 // ---------------------------------------------------------------------------
 // Attempts (academic staff)
 // ---------------------------------------------------------------------------
-
 assessmentsRouter.get(
   "/attempts",
   requireAuth,
@@ -210,7 +168,6 @@ assessmentsRouter.get(
   validate({ query: listAttemptQuerySchema }),
   asyncHandler(controller.listAttempts),
 );
-
 assessmentsRouter.get(
   "/attempts/export",
   requireAuth,
@@ -218,7 +175,6 @@ assessmentsRouter.get(
   validate({ query: listAttemptQuerySchema }),
   asyncHandler(controller.exportAttemptsCsv),
 );
-
 assessmentsRouter.get(
   "/attempts/:id",
   requireAuth,
@@ -226,7 +182,6 @@ assessmentsRouter.get(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.getStaffAttempt),
 );
-
 assessmentsRouter.post(
   "/attempts/:id/grade",
   requireAuth,
