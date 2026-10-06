@@ -19,3 +19,18 @@ export const optionalText = (max = 240) =>
     .transform((v) => (typeof v === "string" && v.trim() !== "" ? v.trim() : undefined));
 
 export const idParam = z.object({ id: z.string().min(1) });
+
+/**
+ * A nullable timestamp for optional columns. Blank strings and `null` resolve to
+ * `null` ("not set") instead of being coerced: `z.coerce.date()` runs
+ * `new Date(null)`, which quietly yields 1970-01-01 rather than failing.
+ */
+export const nullableDate = z.preprocess(
+  (value) => (value === "" || value === null ? null : value),
+  z.coerce.date().nullable().optional(),
+);
+
+/** Optional editable text: null or blank clears the stored value. */
+export const nullableText = (max = 240) =>
+  z.union([z.string().trim().max(max), z.null()]).optional()
+    .transform((value) => value === undefined ? undefined : value || null);
