@@ -1,6 +1,7 @@
-import type { Request, Response } from "express";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
-import type { CreateAnnouncementInput, ListNotificationQuery } from "./notifications.schema.js";
+import type { Request,Response } from "express";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
+import * as preferences from "./notification-preferences.service.js";
+import type { CreateAnnouncementInput,ListNotificationQuery,NotificationPreferences } from "./notifications.schema.js";
 import * as service from "./notifications.service.js";
 
 export const list = async (req: Request, res: Response): Promise<void> => {
@@ -39,4 +40,14 @@ export const announce = async (req: Request, res: Response): Promise<void> => {
     actorId(req),
   );
   res.status(201).json({ success: true, data: result });
+};
+
+export const getPreferences = async (req: Request, res: Response): Promise<void> => {
+  const result = await preferences.getPreferences(req.user!.id);
+  res.json({ success: true, data: result });
+};
+
+export const updatePreferences = async (req: Request, res: Response): Promise<void> => {
+  const result = await preferences.updatePreferences(req.user!.id, validatedBody<NotificationPreferences>(req));
+  res.json({ success: true, data: result });
 };
