@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Rating } from '../ui/Rating';
 import { rwf } from '../../lib/format';
 import type { Course } from '../../types';
+import { Rating } from '../ui/Rating';
 
 type CourseCardProps = {
  course: Course;
