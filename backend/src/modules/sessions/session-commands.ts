@@ -1,15 +1,15 @@
-import { assertTeacherLevel } from "../../lib/teacher-levels.js";
-import { addSessionWeeks } from "./session-dates.js";
-import type { Role, Prisma, ClassSession } from '../../generated/prisma/client.js';
-import { isScheduleWriteConflict } from './session-conflicts.js';
-import { prisma } from '../../lib/prisma.js';
+import type { ClassSession,Prisma,Role } from '../../generated/prisma/client.js';
 import { assertTeacherOwnsClass } from '../../lib/access.js';
 import { writeAudit } from '../../lib/audit.js';
-import { badRequest, conflict, forbidden, notFound } from '../../lib/http-error.js';
+import { badRequest,conflict,forbidden,notFound } from '../../lib/http-error.js';
+import { prisma } from '../../lib/prisma.js';
+import { assertTeacherLevel } from "../../lib/teacher-levels.js";
 import { assertValidTeacher } from './session-access.js';
-import { checkOverlap, checkSessionChange } from './session-policy.js';
+import { isScheduleWriteConflict } from './session-conflicts.js';
+import { addSessionWeeks } from "./session-dates.js";
 import { notifySessionChange } from './session-notifications.js';
-import type { CreateSessionInput, UpdateSessionInput, CancelSessionInput, RescheduleSessionInput } from './sessions.schema.js';
+import { checkOverlap,checkSessionChange } from './session-policy.js';
+import type { CancelSessionInput,CreateSessionInput,RescheduleSessionInput,UpdateSessionInput } from './sessions.schema.js';
 async function transact<T>(work: (tx: Prisma.TransactionClient) => Promise<T>): Promise<T> {
   try { return await prisma.$transaction(work, { isolationLevel: 'Serializable', timeout: 15000 }); }
   catch(e) { if(isScheduleWriteConflict(e)) throw conflict('Another schedule change happened at the same time. Please retry.'); throw e; }
