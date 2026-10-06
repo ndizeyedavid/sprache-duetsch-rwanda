@@ -1,19 +1,19 @@
-import { useEffect, useState } from 'react';
-import { FiBookOpen, FiCheck, FiEye, FiMoreHorizontal, FiPaperclip, FiSave, FiSend, FiZap } from 'react-icons/fi';
+import { useEffect,useState } from 'react';
+import { FiBookOpen,FiCheck,FiEye,FiMoreHorizontal,FiPaperclip,FiSave,FiSend,FiZap } from 'react-icons/fi';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { getLesson, updateLesson, deleteLesson } from '../../lib/services';
 import type { AuthoredLesson } from '../../lib/services';
-import { ErrorBlock, LoadingBlock } from '../common/PageState';
+import { deleteLesson,getLesson,updateLesson } from '../../lib/services';
+import { ErrorBlock,LoadingBlock } from '../common/PageState';
 import { CourseLessonReader } from '../student/CourseLessonReader';
-import { PreparationResources } from './PreparationResources';
 import { PreparationPractice } from './PreparationPractice';
 import { PreparationPreview } from './PreparationPreview';
+import { PreparationResources } from './PreparationResources';
 import { StudioDialog } from './StudioDialog';
 import { LessonContentFields } from './studio/LessonContentFields';
 import { LessonSettings } from './studio/LessonSettings';
-import { formatNames, toLessonDraft } from './studio/lesson-draft';
 import type { ChangeLesson } from './studio/lesson-draft';
+import { formatNames,toLessonDraft } from './studio/lesson-draft';
 import './studio/studio.css';
 
 type Props = { id: string; moduleTitle: string; modulePublished: boolean; onSaved: () => void; onDirty: (value: boolean) => void; onDeleted: () => void };
