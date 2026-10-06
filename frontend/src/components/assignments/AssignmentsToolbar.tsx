@@ -1,6 +1,6 @@
-import { FiSearch, FiX } from 'react-icons/fi';
-import { TABS, STATUS_LABEL } from './constants';
+import { FiSearch,FiX } from 'react-icons/fi';
 import type { AssignmentsTab } from './constants';
+import { STATUS_LABEL,TABS } from './constants';
 
 type Props = {
   tab: AssignmentsTab; onTab: (tab: AssignmentsTab) => void; counts: Record<string, number>;
