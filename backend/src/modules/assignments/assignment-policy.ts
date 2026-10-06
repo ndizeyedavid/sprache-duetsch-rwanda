@@ -1,4 +1,4 @@
-import { badRequest, forbidden } from "../../lib/http-error.js";
+import { badRequest,forbidden } from "../../lib/http-error.js";
 interface Policy {
   dueAt: Date | null;
   allowLate: boolean;
