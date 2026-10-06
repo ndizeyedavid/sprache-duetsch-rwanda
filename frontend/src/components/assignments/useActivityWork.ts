@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect,useRef,useState } from 'react';
 import { apiErrorMessage } from '../../lib/api';
 import { submitActivity } from '../../lib/services';
-import type { AssignmentDetailData } from './types';
 import { useSession } from '../../lib/session';
+import type { AssignmentDetailData } from './types';
 export function useActivityWork(activity: NonNullable<AssignmentDetailData['activity']>, refetch: () => void) {
   const { user } = useSession();
   const key = `activity-draft:${user?.id}:${activity.id}`;
