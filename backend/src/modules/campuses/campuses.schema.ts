@@ -1,12 +1,12 @@
 import { z } from "zod";
-import { booleanQuery, idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { booleanQuery,idParam,nullableText,optionalText,paginationQuery } from "../../lib/query.js";
 
 export const createCampusSchema = z.object({
   code: z.string().trim().min(2).max(20).toUpperCase(),
   name: z.string().trim().min(2).max(120),
-  address: optionalText(240),
-  phone: optionalText(30),
-  email: z.string().trim().email().max(160).optional(),
+  address: nullableText(240),
+  phone: nullableText(30),
+  email: z.string().trim().email().max(160).nullable().optional(),
   isActive: z.boolean().optional(),
 });
 
