@@ -1,12 +1,12 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import type {
-  CreateUserInput,
-  ListUserQuery,
-  ResetUserPasswordInput,
-  UpdateUserInput,
-  UpdateUserRoleInput,
+CreateUserInput,
+ListUserQuery,
+ResetUserPasswordInput,
+UpdateUserInput,
+UpdateUserRoleInput,
 } from "./users.schema.js";
 import * as service from "./users.service.js";
 
