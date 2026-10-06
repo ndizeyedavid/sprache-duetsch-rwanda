@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
-import { checkEditable, checkResponse } from "./assignment-policy.js";
+import { describe,expect,it } from "vitest";
+import { checkEditable,checkResponse } from "./assignment-policy.js";
 import { assignmentBody } from "./assignments.schema.js";
 const policy = { dueAt: new Date('2026-01-01'), allowLate: false, maxSubmissions: 2, responseType: 'TEXT' };
 describe('homework submission policy', () => {
