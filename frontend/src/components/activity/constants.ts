@@ -1,4 +1,4 @@
-import { FiAward, FiBell, FiBookOpen, FiCalendar, FiClipboard, FiDollarSign, FiUsers, FiActivity } from 'react-icons/fi';
+import { FiActivity,FiAward,FiBell,FiBookOpen,FiCalendar,FiClipboard,FiDollarSign,FiUsers } from 'react-icons/fi';
 
 export const FILTERS = ['All', 'Announcement', 'Exam', 'Attendance', 'Enrollment', 'Payment', 'Class', 'Lesson'] as const;
 export type Filter = (typeof FILTERS)[number];
