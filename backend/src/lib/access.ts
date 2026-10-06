@@ -1,6 +1,7 @@
 import { env } from "../config/env.js";
-import type { AccountStatus, PaymentStatus } from "../generated/prisma/client.js";
-import { forbidden, notFound } from "./http-error.js";
+import type { AccountStatus,PaymentStatus } from "../generated/prisma/client.js";
+import { recalculateStudentFinance } from "./finance.js";
+import { forbidden,notFound } from "./http-error.js";
 import { prisma } from "./prisma.js";
 
 // Snapshot of what a student account is allowed to reach. Built once per request.
@@ -12,6 +13,7 @@ export interface StudentAccessProfile {
   classGroupIds: string[];
   paymentStatus: PaymentStatus | null;
   balance: number;
+  overdueAmount: number;
 }
 
 export const loadStudentAccessProfile = async (userId: string): Promise<StudentAccessProfile> => {
@@ -33,10 +35,8 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
     throw forbidden("No student profile is linked to this account");
   }
 
+  const finance = await recalculateStudentFinance(prisma, student.id);
   const levelIds = new Set<string>();
-  if (student.currentLevelId) {
-    levelIds.add(student.currentLevelId);
-  }
 
   const classGroupIds: string[] = [];
   for (const enrollment of student.enrollments) {
@@ -52,8 +52,9 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
     currentLevelId: student.currentLevelId,
     levelIds: [...levelIds],
     classGroupIds,
-    paymentStatus: student.finance?.status ?? null,
-    balance: student.finance ? Number(student.finance.balance) : 0,
+    paymentStatus: finance.status ?? null,
+    balance: Number(finance.balance),
+    overdueAmount: Number(finance.overdueAmount),
   };
 };
 
@@ -87,7 +88,7 @@ export const assertPaymentAccess = (
     return;
   }
 
-  const owing = profile.balance > 0 || profile.paymentStatus === "OVERDUE";
+  const owing = profile.overdueAmount > 0;
   if (!owing) {
     return;
   }
