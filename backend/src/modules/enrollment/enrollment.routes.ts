@@ -1,8 +1,8 @@
 import { Router } from "express";
 import rateLimit from "express-rate-limit";
 import { validate } from "../../middleware/validate.js";
-import { enrollmentConfirmSchema } from "./enrollment.schema.js";
 import { confirmEnrollment } from "./enrollment.controller.js";
+import { enrollmentConfirmSchema } from "./enrollment.schema.js";
 
 export const enrollmentRouter = Router();
 
