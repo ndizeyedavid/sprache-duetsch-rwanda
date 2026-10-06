@@ -1,8 +1,8 @@
-import { useState } from 'react';
 import type { FormEvent } from 'react';
-import { FiAlertCircle, FiSend } from 'react-icons/fi';
+import { useState } from 'react';
+import { FiAlertCircle,FiSend } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
-import { humanize, postFeedEvent } from '../../lib/services';
+import { humanize,postFeedEvent } from '../../lib/services';
 import { POST_TYPES } from './constants';
 import { initials } from './utils';
 
