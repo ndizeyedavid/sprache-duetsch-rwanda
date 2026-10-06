@@ -6,10 +6,10 @@ import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./levels.controller.js";
 import {
-  createLevelSchema,
-  levelIdSchema,
-  listLevelQuerySchema,
-  updateLevelSchema,
+createLevelSchema,
+levelIdSchema,
+listLevelQuerySchema,
+updateLevelSchema,
 } from "./levels.schema.js";
 
 export const levelsRouter = Router();
