@@ -1,8 +1,8 @@
-import { FiArrowUpRight, FiAward, FiCalendar, FiCheck, FiEdit3, FiHeadphones, FiMic, FiType } from 'react-icons/fi';
+import { FiArrowUpRight,FiAward,FiCalendar,FiCheck,FiEdit3,FiHeadphones,FiMic,FiType } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { AssignmentItem } from '../../lib/services';
-import { STATUS_LABEL, STATUS_TONE } from './constants';
-import { bucketOf, humanType } from './utils';
+import { STATUS_LABEL,STATUS_TONE } from './constants';
+import { bucketOf,humanType } from './utils';
 
 type Props = { item: AssignmentItem };
 
