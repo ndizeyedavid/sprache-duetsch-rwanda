@@ -1,5 +1,5 @@
+import { FiArrowRight,FiAward,FiBell,FiClock,FiMessageSquare } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { FiBell, FiAward, FiArrowRight, FiClock, FiMessageSquare } from "react-icons/fi";
 import { relative } from "./utils";
 
 type FeedEvent = { id: string; title: string; type: string; createdAt: string };
