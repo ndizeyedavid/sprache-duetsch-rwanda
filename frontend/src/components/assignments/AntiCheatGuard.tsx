@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { FiAlertTriangle, FiMaximize2, FiShield, FiEyeOff } from "react-icons/fi";
-import { useAntiCheat } from "../../hooks/useAntiCheat";
+import { FiAlertTriangle,FiEyeOff,FiMaximize2,FiShield } from "react-icons/fi";
 import type { ViolationType } from "../../hooks/useAntiCheat";
+import { useAntiCheat } from "../../hooks/useAntiCheat";
 import { useSession } from "../../lib/session";
 
 type Props = {
