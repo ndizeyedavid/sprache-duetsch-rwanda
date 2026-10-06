@@ -3,8 +3,8 @@ import { ActivityAnswer } from './ActivityAnswer';
 import { AssignmentInstructions } from './AssignmentInstructions';
 import { AssignmentReadyPanel } from './AssignmentReadyPanel';
 import { AssignmentResult } from './AssignmentResult';
-import { useActivityWork } from './useActivityWork';
 import type { AssignmentDetailData } from './types';
+import { useActivityWork } from './useActivityWork';
 
 type Props = { data: AssignmentDetailData; activity: NonNullable<AssignmentDetailData['activity']>; refetch: () => void };
 
