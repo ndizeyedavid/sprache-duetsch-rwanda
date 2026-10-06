@@ -1,6 +1,6 @@
-import { FiActivity, FiSearch, FiX } from "react-icons/fi";
-import { FILTERS, FILTER_ICON } from "./constants";
+import { FiActivity,FiSearch,FiX } from "react-icons/fi";
 import type { Filter } from "./constants";
+import { FILTERS,FILTER_ICON } from "./constants";
 
 type Props = {
   total: number;
