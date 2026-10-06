@@ -1,7 +1,7 @@
 import { academicTransaction } from "../../lib/academic-transaction.js";
-import { prisma } from '../../lib/prisma.js';
-import { badRequest, conflict, notFound } from '../../lib/http-error.js';
 import { writeAuditTx } from '../../lib/audit.js';
+import { badRequest,conflict,notFound } from '../../lib/http-error.js';
+import { prisma } from '../../lib/prisma.js';
 export async function listTeachingAssignments() {
   return prisma.user.findMany({ where: { role: 'TEACHER' }, select: { id: true, firstName: true, lastName: true, email: true, status: true, teachingLevels: { include: { level: { select: { id: true, code: true, title: true, isActive: true } } } }, teacherClasses: { select: { id: true, name: true, levelId: true, isActive: true, _count: { select: { enrollments: true } } } } }, orderBy: [{ firstName: 'asc' }, { lastName: 'asc' }] });
 }
