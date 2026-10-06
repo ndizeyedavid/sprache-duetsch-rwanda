@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { idParam,optionalText,paginationQuery } from "../../lib/query.js";
 
 export const accountStatusEnum = z.enum([
   "ACTIVE",
