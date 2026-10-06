@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile, access } from 'node:fs/promises';
+import { access,readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { prisma } from '../../src/lib/prisma.js';
 import { isPracticeConfig } from '../../src/modules/content/practice.utils.js';
