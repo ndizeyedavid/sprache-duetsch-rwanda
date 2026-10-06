@@ -1,5 +1,5 @@
+import { assertAccountActive,loadStudentAccessProfile } from "../../lib/access.js";
 import { prisma } from "../../lib/prisma.js";
-import { assertAccountActive, loadStudentAccessProfile } from "../../lib/access.js";
 import { isPracticeConfig } from "./practice.utils.js";
 export const getMyAssignments = async (userId: string) => {
   const profile = await loadStudentAccessProfile(userId);
