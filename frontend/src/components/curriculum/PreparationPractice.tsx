@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { FiArrowRight, FiBookOpen, FiEdit2, FiPlus, FiTrash2 } from 'react-icons/fi';
+import { FiArrowRight,FiBookOpen,FiEdit2,FiPlus,FiTrash2 } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
+import type { AuthoredLesson,LessonActivity } from '../../lib/services';
 import { deleteActivity } from '../../lib/services';
-import type { AuthoredLesson, LessonActivity } from '../../lib/services';
 import { StudioDialog } from './StudioDialog';
 import { PracticeEditor } from './studio/PracticeEditor';
-import { activityConfig, practiceKinds } from './studio/practice-draft';
+import { activityConfig,practiceKinds } from './studio/practice-draft';
 
 export function PreparationPractice({ lesson, onSaved }: { lesson: AuthoredLesson; onSaved: () => void }) {
   const [picking,setPicking]=useState(false),[editor,setEditor]=useState<{type:string;activity?:LessonActivity}|null>(null);
