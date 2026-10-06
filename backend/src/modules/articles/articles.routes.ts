@@ -6,13 +6,13 @@ import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./articles.controller.js";
 import {
-  articleIdSchema,
-  createArticleSchema,
-  createFaqSchema,
-  faqIdSchema,
-  listArticlesQuerySchema,
-  updateArticleSchema,
-  updateFaqSchema,
+articleIdSchema,
+createArticleSchema,
+createFaqSchema,
+faqIdSchema,
+listArticlesQuerySchema,
+updateArticleSchema,
+updateFaqSchema,
 } from "./articles.schema.js";
 
 export const articlesRouter = Router();
