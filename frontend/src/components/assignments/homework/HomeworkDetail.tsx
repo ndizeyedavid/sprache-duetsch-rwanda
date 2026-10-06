@@ -1,6 +1,6 @@
 import { useApi } from '../../../hooks/useApi';
 import { getHomework } from '../../../lib/homework';
-import { LoadingBlock, ErrorBlock } from '../../common/PageState';
+import { ErrorBlock,LoadingBlock } from '../../common/PageState';
 import { HomeworkWorkspace } from './HomeworkWorkspace';
 export function HomeworkDetail({ id }: { id: string }) {
   const detail = useApi(`homework-${id}`, () => getHomework(id));
