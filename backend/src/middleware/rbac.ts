@@ -1,6 +1,6 @@
 import type { RequestHandler } from "express";
 import type { Role } from "../generated/prisma/client.js";
-import { forbidden, unauthorized } from "../lib/http-error.js";
+import { forbidden,unauthorized } from "../lib/http-error.js";
 
 /** Route guard: the authenticated user must hold one of the given roles. */
 export const requireRole =
