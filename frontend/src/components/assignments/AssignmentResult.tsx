@@ -1,4 +1,4 @@
-import { FiCheck, FiMessageCircle } from 'react-icons/fi';
+import { FiCheck,FiMessageCircle } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 type Props = { title: string; score?: string | null; feedback?: string | null; onRedo?: () => void; retryLabel?: string };
