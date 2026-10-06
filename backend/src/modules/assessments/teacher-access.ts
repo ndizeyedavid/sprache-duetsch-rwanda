@@ -1,7 +1,7 @@
-import { getTeacherLevelIds } from "../../lib/teacher-levels.js";
-import type { Request, Response, NextFunction } from "express";
+import type { NextFunction,Request,Response } from "express";
+import { forbidden,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
-import { forbidden, notFound } from "../../lib/http-error.js";
+import { getTeacherLevelIds } from "../../lib/teacher-levels.js";
 export const teacherLevels = async (teacherId?: string): Promise<string[] | null> => teacherId ? getTeacherLevelIds(teacherId) : null;
 export const checkTeacherAssessmentAccess = async (
   req: Request,
