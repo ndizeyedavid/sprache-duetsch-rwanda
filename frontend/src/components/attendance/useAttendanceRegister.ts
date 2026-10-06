@@ -1,10 +1,10 @@
-import { useScheduleClock } from "../schedule/useScheduleClock";
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect,useMemo,useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useApi } from '../../hooks/useApi';
-import { getTeacherSchedule } from '../../lib/schedule-api';
-import { getSessionRoster, markSessionAttendance } from '../../lib/services';
 import { apiErrorMessage } from '../../lib/api';
+import { getTeacherSchedule } from '../../lib/schedule-api';
+import { getSessionRoster,markSessionAttendance } from '../../lib/services';
+import { useScheduleClock } from "../schedule/useScheduleClock";
 export function useAttendanceRegister() {
   useScheduleClock();
   const [params,setParams]=useSearchParams(),id=params.get('session');
