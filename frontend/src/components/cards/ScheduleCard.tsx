@@ -1,5 +1,5 @@
 import { TONE_CLASSES } from '../../lib/theme';
-import type { LiveClassStatus, Tone } from '../../types';
+import type { LiveClassStatus,Tone } from '../../types';
 
 type ScheduleCardProps = {
  title: string;
