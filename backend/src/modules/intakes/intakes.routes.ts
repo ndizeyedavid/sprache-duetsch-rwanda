@@ -6,10 +6,10 @@ import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./intakes.controller.js";
 import {
-  createIntakeSchema,
-  intakeIdSchema,
-  listIntakeQuerySchema,
-  updateIntakeSchema,
+createIntakeSchema,
+intakeIdSchema,
+listIntakeQuerySchema,
+updateIntakeSchema,
 } from "./intakes.schema.js";
 
 export const intakesRouter = Router();
