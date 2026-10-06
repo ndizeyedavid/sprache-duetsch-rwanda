@@ -1,9 +1,9 @@
 import type { RequestHandler } from 'express';
-import { assertTeacherOwnsClass, assertAccountActive, assertPaymentAccess, loadStudentAccessProfile } from '../../lib/access.js';
-import { asyncHandler } from '../../lib/async-handler.js';
-import { forbidden, notFound } from '../../lib/http-error.js';
-import { prisma } from '../../lib/prisma.js';
 import type { StudentAccessProfile } from '../../lib/access.js';
+import { assertAccountActive,assertPaymentAccess,assertTeacherOwnsClass,loadStudentAccessProfile } from '../../lib/access.js';
+import { asyncHandler } from '../../lib/async-handler.js';
+import { forbidden,notFound } from '../../lib/http-error.js';
+import { prisma } from '../../lib/prisma.js';
 
 export const requireSessionOwnership: RequestHandler = asyncHandler(async (req, _res, next) => {
   if (req.user?.role === 'TEACHER') {
