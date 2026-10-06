@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { STATUSES, STATUS_META } from './constants';
+import { STATUSES,STATUS_META } from './constants';
 type Props = { firstName:string;lastName:string;studentCode:string;current:string;savedStatus:string|null;note?:string;onNote?:(value:string)=>void;onPick:(status:string)=>void };
 export function AttendanceRow({ firstName,lastName,current,note,onNote,onPick }:Props){
   const [showNote,setShowNote]=useState(!!note);
