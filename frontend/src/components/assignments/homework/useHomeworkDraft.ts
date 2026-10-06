@@ -1,25 +1,26 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect,useRef,useState } from 'react';
 import { apiErrorMessage } from '../../../lib/api';
-import { saveHomeworkDraft, submitHomework } from '../../../lib/homework';
+import { saveHomeworkDraft,submitHomework } from '../../../lib/homework';
 import { useSession } from '../../../lib/session';
 import type { HomeworkDetail } from './types';
 export function useHomeworkDraft(data: HomeworkDetail, onSubmitted: () => void) {
   const { user } = useSession();
   const key = `homework:${user?.id}:${data.assignment.id}`;
   const editable = !['SUBMITTED', 'GRADED'].includes(data.submission?.status ?? '') && (data.submission?.revision ?? 0) < data.assignment.maxSubmissions;
-  const initial = { text: data.submission?.text ?? '', fileIds: data.submission?.fileIds ?? [] };
+  const cleanResponses = (responses: Record<string, unknown>) => Object.fromEntries(Object.entries(responses).filter(([id]) => data.assignment.questions?.some(q => q.question.id === id)));
+  const initial = { text: data.submission?.text ?? '', fileIds: data.submission?.fileIds ?? [], responses: cleanResponses(data.submission?.responses ?? {}) };
   const version = useRef(data.submission?.updatedAt ?? null);
   const [work, setWork] = useState(() => {
-    try { const local = JSON.parse(localStorage.getItem(key) ?? 'null') as { text: string; fileIds: string[]; version: string | null } | null;
-      if (editable && local && local.version === version.current && typeof local.text === 'string' && Array.isArray(local.fileIds)) return { text: local.text, fileIds: local.fileIds };
+    try { const local = JSON.parse(localStorage.getItem(key) ?? 'null') as { text: string; fileIds: string[]; responses?: Record<string, unknown>; version: string | null } | null;
+      if (editable && local && local.version === version.current && typeof local.text === 'string' && Array.isArray(local.fileIds)) return { text: local.text, fileIds: local.fileIds, responses: cleanResponses(local.responses ?? {}) };
     } catch { /* Use the server draft if local storage is unavailable. */ }
     return initial;
   });
-  const [recovery, setRecovery] = useState<{ text: string; fileIds: string[] } | null>(() => {
+  const [recovery, setRecovery] = useState<{ text: string; fileIds: string[]; responses: Record<string, unknown> } | null>(() => {
     try {
-      const local = JSON.parse(localStorage.getItem(key) ?? 'null') as { text: string; fileIds: string[]; version: string | null } | null;
+      const local = JSON.parse(localStorage.getItem(key) ?? 'null') as { text: string; fileIds: string[]; responses?: Record<string, unknown>; version: string | null } | null;
       if (editable && local && local.version !== version.current && typeof local.text === 'string' && Array.isArray(local.fileIds)
-        && (local.text !== initial.text || JSON.stringify(local.fileIds) !== JSON.stringify(initial.fileIds))) return { text: local.text, fileIds: local.fileIds };
+        && (local.text !== initial.text || JSON.stringify(local.fileIds) !== JSON.stringify(initial.fileIds) || JSON.stringify(local.responses ?? {}) !== JSON.stringify(initial.responses))) return { text: local.text, fileIds: local.fileIds, responses: cleanResponses(local.responses ?? {}) };
     } catch { /* A damaged device copy should not block the server draft. */ }
     return null;
   });
