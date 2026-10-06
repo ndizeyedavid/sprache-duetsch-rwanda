@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { FiEdit2, FiFileText, FiHeadphones, FiLink, FiTrash2, FiUploadCloud, FiVideo } from 'react-icons/fi';
+import { FiEdit2,FiFileText,FiHeadphones,FiLink,FiTrash2,FiUploadCloud,FiVideo } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
-import { deleteMaterial, humanize } from '../../lib/services';
-import type { AuthoredLesson, LessonMaterial } from '../../lib/services';
+import type { AuthoredLesson,LessonMaterial } from '../../lib/services';
+import { deleteMaterial,humanize } from '../../lib/services';
 import { ResourceEditor } from './studio/ResourceEditor';
 
 export function PreparationResources({lesson,onSaved}:{lesson:AuthoredLesson;onSaved:()=>void}){
