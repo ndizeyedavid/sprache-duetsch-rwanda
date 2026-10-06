@@ -18,6 +18,7 @@ export const registerSchema = z.object({
 export const loginSchema = z.object({
   email: z.string().trim().email(),
   password: z.string().min(1),
+  portal: z.enum(["student", "teacher", "staff"]).optional(),
 });
 
 export const refreshSchema = z.object({
