@@ -1,8 +1,10 @@
-import type { Request, Response } from "express";
-import { validatedBody, validatedParams } from "../../lib/request.js";
-import type { AssignmentInput, DraftInput, ReviewInput } from "./assignments.schema.js";
+import type { Request,Response } from "express";
+import { sendCsv } from "../../lib/csv.js";
+import { validatedBody,validatedParams } from "../../lib/request.js";
+import * as management from "./assignment-management.js";
+import { reviewWork,saveWork } from "./assignment-submissions.js";
+import type { AssignmentInput,DraftInput,ReviewInput } from "./assignments.schema.js";
 import * as service from "./assignments.service.js";
-import { reviewWork, saveWork } from "./assignment-submissions.js";
 const idOf = (req: Request): string => validatedParams<{ id: string }>(req).id;
 export const listMine = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await service.listStudent(req.user!.id) }); };
 export const getMine = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await service.getStudentDetail(req.user!.id, idOf(req)) }); };
@@ -15,3 +17,8 @@ export const update = async (req: Request, res: Response): Promise<void> => { re
 export const review = async (req: Request, res: Response): Promise<void> => { const { id, submissionId } = validatedParams<{ id: string; submissionId: string }>(req); res.json({ success: true, data: await reviewWork(req.user!, id, submissionId, validatedBody<ReviewInput>(req)) }); };
 
 export const roster = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await service.getClassRecipients(req.user!, idOf(req)) }); };
+
+export const status = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await management.changeAssignmentStatus(req.user!, idOf(req), validatedBody<{ status: 'DRAFT' | 'PUBLISHED' | 'ARCHIVED' }>(req).status) }); };
+export const duplicate = async (req: Request, res: Response): Promise<void> => { res.status(201).json({ success: true, data: await management.duplicateAssignment(req.user!, idOf(req)) }); };
+export const remove = async (req: Request, res: Response): Promise<void> => { await management.deleteAssignment(req.user!, idOf(req)); res.json({ success: true, data: null }); };
+export const exportResults = async (req: Request, res: Response): Promise<void> => { sendCsv(res, 'assignment-results.csv', await management.assignmentResults(req.user!, idOf(req))); };
