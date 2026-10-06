@@ -1,12 +1,12 @@
+import type { NextFunction,Request,Response } from "express";
+import multer from "multer";
+import { randomUUID } from "node:crypto";
 import { mkdirSync } from "node:fs";
 import { unlink } from "node:fs/promises";
-import { randomUUID } from "node:crypto";
 import path from "node:path";
-import multer from "multer";
-import type { Request, Response, NextFunction } from "express";
+import { badRequest,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
-import { badRequest, notFound } from "../../lib/http-error.js";
-import { getStaffAssignment, getStudentAssignment } from "./assignment-access.js";
+import { getStaffAssignment,getStudentAssignment } from "./assignment-access.js";
 import { checkEditable } from "./assignment-policy.js";
 import { matchesFileSignature } from "./file-signature.js";
 const directory = path.resolve(process.cwd(), "uploads", "assignments");
