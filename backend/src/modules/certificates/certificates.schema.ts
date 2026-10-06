@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { idParam, paginationQuery } from "../../lib/query.js";
+import { idParam,paginationQuery } from "../../lib/query.js";
 
 export const issueCertificateSchema = z.object({
   studentId: z.string().min(1),
