@@ -1,11 +1,11 @@
-import { FiArrowRight, FiClock } from 'react-icons/fi';
+import { FiArrowRight,FiClock } from 'react-icons/fi';
 import { AntiCheatGuard } from './AntiCheatGuard';
+import { AssessmentQuestion } from './AssessmentQuestion';
 import { AssignmentInstructions } from './AssignmentInstructions';
 import { AssignmentReadyPanel } from './AssignmentReadyPanel';
 import { AssignmentResult } from './AssignmentResult';
-import { AssessmentQuestion } from './AssessmentQuestion';
-import { useAssessmentWork } from './useAssessmentWork';
 import type { AssignmentDetailData } from './types';
+import { useAssessmentWork } from './useAssessmentWork';
 
 export function AssessmentWork({ data }: { data: AssignmentDetailData }) {
   const work = useAssessmentWork(data);
