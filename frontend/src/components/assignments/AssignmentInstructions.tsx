@@ -1,6 +1,6 @@
 import { FiFileText } from 'react-icons/fi';
-import type { AssignmentDetailData } from './types';
 import { useShuffledOptions } from '../../hooks/useShuffledOptions';
+import type { AssignmentDetailData } from './types';
 
 export function AssignmentInstructions({ data }: { data: AssignmentDetailData }) {
   const config = (data.activity?.config ?? {}) as Record<string, unknown>;
