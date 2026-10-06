@@ -1,4 +1,5 @@
-import { FiCheck, FiMusic, FiPlus, FiTrash2, FiUpload, FiX } from 'react-icons/fi';
+import { FiCheck,FiMusic,FiPlus,FiTrash2,FiUpload,FiX } from 'react-icons/fi';
+import { AuthenticatedMedia } from '../ui/AuthenticatedMedia';
 import type { FriendlyType } from './constants';
 
 type Props = {
@@ -109,7 +110,7 @@ export function QuestionTypeFields({
  <p className="mt-1 text-[11px] leading-snug text-muted">Students press play, listen, then answer the question below. Upload an mp3 or paste a link.</p>
  {audioUrl ? (
  <div className="mt-3 rounded-box border border-brand/20 bg-brand-soft/40 p-3">
- <audio controls src={audioUrl} className="w-full" preload="metadata" />
+ <AuthenticatedMedia url={audioUrl} kind="audio" className="w-full" />
  <div className="mt-2 flex items-center gap-2">
  <span className="truncate text-[11px] text-muted">{audioUrl}</span>
  <button type="button" onClick={() => onAudioUrl('')} className="btn btn-ghost btn-xs gap-1 text-coral"><FiX aria-hidden />Remove</button>
