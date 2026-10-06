@@ -1,12 +1,12 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
-import * as service from "./certificates.service.js";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import type {
-  IssueCertificateInput,
-  ListCertificatesQuery,
-  RevokeCertificateInput,
+IssueCertificateInput,
+ListCertificatesQuery,
+RevokeCertificateInput,
 } from "./certificates.schema.js";
+import * as service from "./certificates.service.js";
 
 export const issue = async (req: Request, res: Response): Promise<void> => {
   const certificate = await service.issueCertificate(
