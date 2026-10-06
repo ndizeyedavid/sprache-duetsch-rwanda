@@ -1,13 +1,14 @@
 import { randomUUID } from "node:crypto";
 import type { Prisma } from "../../generated/prisma/client.js";
 import { writeAudit } from "../../lib/audit.js";
-import { forbidden, notFound } from "../../lib/http-error.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { forbidden,notFound } from "../../lib/http-error.js";
+import { notifyUsers } from "../../lib/notify.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import { STAFF_ROLES } from "../../lib/roles.js";
 import type {
-  CreateAnnouncementInput,
-  ListNotificationQuery,
+CreateAnnouncementInput,
+ListNotificationQuery,
 } from "./notifications.schema.js";
 
 export const listNotifications = async (userId: string, query: ListNotificationQuery) => {
@@ -148,15 +149,12 @@ export const createAnnouncement = async (input: CreateAnnouncementInput, actorId
   const batchId = randomUUID();
 
   if (recipients.length > 0) {
-    await prisma.notification.createMany({
-      data: recipients.map((userId) => ({
-        userId,
-        type: input.type,
-        channel: input.channel,
-        title: input.title,
-        body: input.body,
-        data: { batchId },
-      })),
+    await notifyUsers(recipients, {
+      type: input.type,
+      channel: input.channel,
+      title: input.title,
+      body: input.body,
+      data: { batchId },
     });
   }
 
