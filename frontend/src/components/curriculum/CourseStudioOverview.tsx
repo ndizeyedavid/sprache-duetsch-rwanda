@@ -1,4 +1,4 @@
-import { FiArrowRight, FiBookOpen, FiEdit2, FiPlus } from 'react-icons/fi';
+import { FiArrowRight,FiBookOpen,FiEdit2,FiPlus } from 'react-icons/fi';
 import type { ModuleItem } from '../../lib/services';
 
 type Props = { modules: ModuleItem[]; onOpen: (id: string) => void; onCreate: () => void; onEdit: (module: ModuleItem) => void };
