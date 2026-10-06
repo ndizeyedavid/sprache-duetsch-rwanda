@@ -1,5 +1,5 @@
-import { prisma } from './prisma.js';
 import { forbidden } from './http-error.js';
+import { prisma } from './prisma.js';
 export async function getTeacherLevelIds(teacherId: string): Promise<string[]> {
   const rows = await prisma.teacherLevel.findMany({ where: { teacherId, teacher: { role: 'TEACHER', status: 'ACTIVE' } }, select: { levelId: true } });
   return rows.map(row => row.levelId);
