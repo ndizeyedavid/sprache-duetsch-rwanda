@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { FiMic, FiSquare } from 'react-icons/fi';
+import { useEffect,useRef,useState } from 'react';
+import { FiMic,FiSquare } from 'react-icons/fi';
 export function AudioRecorder({ onFile, disabled, onRecordingChange }: { onRecordingChange: (recording: boolean) => void; onFile: (file: File) => Promise<void>; disabled: boolean }) {
   const recorder = useRef<MediaRecorder | null>(null), stream = useRef<MediaStream | null>(null);
   const [recording, setRecording] = useState(false), [error, setError] = useState('');
