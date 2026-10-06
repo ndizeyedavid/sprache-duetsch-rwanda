@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe,expect,it } from 'vitest';
 import { gradeActivity } from './activity-grading.js';
 
 describe('inline practice grading', () => {
