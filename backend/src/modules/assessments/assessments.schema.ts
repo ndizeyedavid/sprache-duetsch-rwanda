@@ -1,5 +1,6 @@
 import { z } from "zod";
-import { booleanQuery, idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { booleanQuery,idParam,optionalText,paginationQuery } from "../../lib/query.js";
+import { authoredQuestionsSchema } from "./authored-question.schema.js";
 
 // Closed enum sets mirrored from the Prisma schema (UPPER_SNAKE literals).
 export const assessmentTypeSchema = z.enum(["QUIZ", "MODULE_TEST", "FINAL_EXAM", "PLACEMENT"]);
@@ -90,6 +91,7 @@ export const createAssessmentSchema = z.object({
   availableUntil: z.coerce.date().nullable().optional(),
   isPublished: z.boolean().optional(),
   questions: z.array(assessmentQuestionInputSchema).optional(),
+  authoredQuestions: authoredQuestionsSchema.optional(),
 });
 
 export const updateAssessmentSchema = createAssessmentSchema
