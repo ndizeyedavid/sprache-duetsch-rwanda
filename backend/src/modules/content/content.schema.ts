@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { optionalText, paginationQuery } from "../../lib/query.js";
+import { optionalText,paginationQuery } from "../../lib/query.js";
 
 // DB enums are UPPER_SNAKE literals (Prisma enum values).
 export const lessonContentTypeSchema = z.enum(["VIDEO", "AUDIO", "TEXT", "PDF", "MIXED"]);
