@@ -1,4 +1,4 @@
-import { FiChevronDown, FiShield } from 'react-icons/fi';
+import { FiChevronDown,FiShield } from 'react-icons/fi';
 
 export function AssignmentRules() {
   return (
