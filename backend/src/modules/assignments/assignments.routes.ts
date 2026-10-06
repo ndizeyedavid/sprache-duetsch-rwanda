@@ -1,13 +1,13 @@
 import { Router } from "express";
+import { z } from "zod";
 import { asyncHandler } from "../../lib/async-handler.js";
 import { ACADEMIC_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
-import { z } from "zod";
+import { downloadAttachment,receiveFile } from "./assignment-files.js";
 import * as c from "./assignments.controller.js";
-import { assignmentBody, assignmentParams, draftBody, reviewBody, submissionParams } from "./assignments.schema.js";
-import { downloadAttachment, receiveFile } from "./assignment-files.js";
+import { assignmentBody,assignmentParams,assignmentStatusBody,draftBody,reviewBody,submissionParams } from "./assignments.schema.js";
 export const assignmentsRouter = Router();
 assignmentsRouter.use(requireAuth);
 const student = requireRole("STUDENT"), staff = requireRole(...ACADEMIC_ROLES);
@@ -23,3 +23,8 @@ assignmentsRouter.post("/", staff, validate({ body: assignmentBody }), asyncHand
 assignmentsRouter.get("/:id", staff, validate({ params: assignmentParams }), asyncHandler(c.get));
 assignmentsRouter.put("/:id", staff, validate({ params: assignmentParams, body: assignmentBody }), asyncHandler(c.update));
 assignmentsRouter.post("/:id/submissions/:submissionId/review", staff, validate({ params: submissionParams, body: reviewBody }), asyncHandler(c.review));
+
+assignmentsRouter.patch('/:id/status', staff, validate({ params: assignmentParams, body: assignmentStatusBody }), asyncHandler(c.status));
+assignmentsRouter.post('/:id/duplicate', staff, validate({ params: assignmentParams }), asyncHandler(c.duplicate));
+assignmentsRouter.delete('/:id', staff, validate({ params: assignmentParams }), asyncHandler(c.remove));
+assignmentsRouter.get('/:id/export', staff, validate({ params: assignmentParams }), asyncHandler(c.exportResults));
