@@ -237,6 +237,7 @@ model User {
   role         Role          @default(STUDENT)
   status       AccountStatus @default(PENDING)
   avatarUrl    String?
+  notificationPreferences Json?
   lastLoginAt  DateTime?
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
@@ -322,6 +323,9 @@ model Campus {
 // "Level" is intentionally generic (language + code) so non-German courses and
 // additional CEFR-like tracks can be added without a schema change.
 model Level {
+  coursebookUrl String?
+  coursebookPages Int?
+  completionRules Json?
   teachers TeacherLevel[]
   id          String   @id @default(uuid())
   code        String   @unique
@@ -482,6 +486,9 @@ model Enrollment {
 // Denormalised financial profile kept in sync by the payments service so the
 // dashboards and student profile can read balances without aggregating history.
 model StudentFinance {
+  overdueAmount Decimal @default(0) @db.Decimal(12, 2)
+  nextDueAmount Decimal @default(0) @db.Decimal(12, 2)
+  nextDueAt DateTime?
   id             String        @id @default(uuid())
   studentId      String        @unique
   totalDue       Decimal       @default(0) @db.Decimal(12, 2)
@@ -705,6 +712,7 @@ model AssessmentQuestion {
 }
 
 model Attempt {
+  questionSnapshot Json?
   draftResponses Json @default("{}")
   draftUpdatedAt DateTime?
   id            String        @id @default(uuid())
@@ -882,6 +890,7 @@ model Discount {
 }
 
 model Payment {
+  idempotencyKey String? @unique
   id            String         @id @default(uuid())
   studentId     String
   enrollmentId  String?
@@ -910,6 +919,7 @@ model Payment {
 }
 
 model Receipt {
+  voidedAt DateTime?
   id            String   @id @default(uuid())
   paymentId     String   @unique
   receiptNumber String   @unique
@@ -1132,6 +1142,7 @@ model Assignment {
   maxPoints Decimal @default(10) @db.Decimal(6, 2)
   allowLate Boolean @default(true)
   maxSubmissions Int @default(3)
+  questions Json @default("[]")
   resources Json @default("[]")
   rubric Json @default("[]")
   createdAt DateTime @default(now())
@@ -1156,6 +1167,8 @@ model AssignmentSubmission {
   studentId String
   status HomeworkSubmissionStatus @default(DRAFT)
   text String @default("")
+  responses Json @default("{}")
+  questionScores Json @default("[]")
   fileIds String[] @default([])
   revision Int @default(0)
   score Decimal? @db.Decimal(6, 2)
@@ -1175,6 +1188,8 @@ model AssignmentVersion {
   submissionId String
   revision Int
   text String
+  responses Json @default("{}")
+  questionScores Json @default("[]")
   fileIds String[]
   submittedAt DateTime @default(now())
   isLate Boolean @default(false)
@@ -1210,4 +1225,29 @@ model TeacherLevel {
   assignedBy User? @relation("TeachingLevelAssigner", fields: [assignedById], references: [id], onDelete: SetNull)
   @@id([teacherId, levelId])
   @@index([levelId])
+}
+
+model IdentifierCounter {
+  prefix String @id
+  value Int
+}
+model NotificationDelivery {
+  id String @id @default(uuid())
+  eventKey String? @unique
+  userId String
+  payload Json
+  email String
+  status String @default("PENDING")
+  attempts Int @default(0)
+  nextAttemptAt DateTime @default(now())
+  lastError String?
+  sentAt DateTime?
+  createdAt DateTime @default(now())
+  @@index([status, nextAttemptAt])
+}
+model UploadedFile {
+  name String @id
+  uploaderId String
+  mimeType String
+  createdAt DateTime @default(now())
 }
