@@ -1,4 +1,4 @@
-import { FiBell, FiAward, FiClock } from "react-icons/fi";
+import { FiAward,FiBell,FiClock } from "react-icons/fi";
 
 type Props = { total: number; announcements: number; recent: number };
 
