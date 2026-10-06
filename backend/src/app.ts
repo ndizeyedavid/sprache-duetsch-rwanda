@@ -1,13 +1,13 @@
 import compression from "compression";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import express from "express";
 import type { Express } from "express";
+import express from "express";
 import helmet from "helmet";
 import { pinoHttp } from "pino-http";
-import { corsOrigins, defaultEnrollmentOrigins, enrollmentAllowedOrigins, isTest } from "./config/env.js";
+import { corsOrigins,defaultEnrollmentOrigins,enrollmentAllowedOrigins,isTest } from "./config/env.js";
 import { logger } from "./lib/logger.js";
-import { errorHandler, notFoundHandler } from "./middleware/error.js";
+import { errorHandler,notFoundHandler } from "./middleware/error.js";
 import { globalLimiter } from "./middleware/rate-limit.js";
 import { apiRouter } from "./routes.js";
 
