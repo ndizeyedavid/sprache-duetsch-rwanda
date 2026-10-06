@@ -1,5 +1,5 @@
-import { useEffect, useId, useRef } from 'react';
 import type { ReactNode } from 'react';
+import { useEffect,useId,useRef } from 'react';
 import { FiX } from 'react-icons/fi';
 
 type Props = { title: string; children: ReactNode; onClose: () => void; wide?: boolean; busy?: boolean };
