@@ -1,4 +1,4 @@
-import { badRequest, conflict } from '../../lib/http-error.js';
+import { badRequest,conflict } from '../../lib/http-error.js';
 export function assertAttendanceOpen(session: { status: string; startAt: Date }, now = new Date()): void {
   if (session.status === 'CANCELLED') throw conflict('Cancelled sessions do not take attendance');
   if (session.startAt > now) throw conflict('Attendance opens when the session starts');
