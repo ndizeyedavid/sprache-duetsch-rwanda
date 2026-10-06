@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { badRequest, conflict } from '../../lib/http-error.js';
-import type { ClassSession, Prisma } from '../../generated/prisma/client.js';
+import type { ClassSession,Prisma } from '../../generated/prisma/client.js';
+import { badRequest,conflict } from '../../lib/http-error.js';
 export const safeSessionUrl = z.string().trim().max(1000).url().refine(v => ['https:', 'http:'].includes(new URL(v).protocol), 'Use an HTTP or HTTPS URL').nullable().optional();
 export const timezoneSchema = z.string().trim().max(64).refine(v => { try { new Intl.DateTimeFormat('en', { timeZone: v }); return true; } catch { return false; } }, 'Invalid timezone').optional();
 export function checkSessionChange(before: ClassSession, input: { startAt?: Date; endAt?: Date; status?: string; title?: unknown; mode?: unknown; provider?: unknown; meetingUrl?: unknown; timezone?: unknown; room?: unknown }, now = new Date()) {
