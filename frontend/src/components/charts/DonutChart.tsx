@@ -1,4 +1,4 @@
-import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
+import { Cell,Pie,PieChart,ResponsiveContainer,Tooltip } from 'recharts';
 import { ChartTooltip } from './ChartTooltip';
 
 export type DonutSlice = { name: string; value: number; color: string };
