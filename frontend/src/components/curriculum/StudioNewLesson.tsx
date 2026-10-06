@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { FiBookOpen, FiHeadphones, FiVideo } from 'react-icons/fi';
-import { createLesson } from '../../lib/services';
+import { FiBookOpen,FiHeadphones,FiVideo } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
+import { createLesson } from '../../lib/services';
 import { StudioDialog } from './StudioDialog';
 
 export function StudioNewLesson({ moduleId, onClose, onCreated }: { moduleId: string; onClose: () => void; onCreated: (id: string) => void }) {
