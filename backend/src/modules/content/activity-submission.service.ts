@@ -1,12 +1,13 @@
 import type { Prisma } from "../../generated/prisma/client.js";
-import { assertAccountActive, assertLevelAccess, assertPaymentAccess, loadStudentAccessProfile } from "../../lib/access.js";
+import { assertAccountActive,assertLevelAccess,assertPaymentAccess,loadStudentAccessProfile } from "../../lib/access.js";
 import { writeAudit } from "../../lib/audit.js";
-import { notFound, forbidden } from "../../lib/http-error.js";
+import { forbidden,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
 import { emitActivity } from "../activity/activity.service.js";
 import { gradeActivity } from "./activity-grading.js";
-import { isPracticeConfig } from "./practice.utils.js";
 import type { SubmitActivityInput } from "./content.schema.js";
+import { assertLessonAvailable } from "./lesson-availability.js";
+import { isPracticeConfig } from "./practice.utils.js";
 
 export const submitActivity = async (userId: string, activityId: string, input: SubmitActivityInput) => {
   const profile = await loadStudentAccessProfile(userId);
@@ -16,6 +17,7 @@ export const submitActivity = async (userId: string, activityId: string, input: 
     include: { lesson: { select: { id: true, prerequisiteLessonId: true, releaseAt: true, module: { select: { levelId: true, isPublished: true } }, isPublished: true } } },
   });
   if (!activity || !activity.isPublished || !activity.lesson.isPublished) throw notFound("Activity not found");
+  await assertLessonAvailable(userId, activity.lesson.id);
   await assertLevelAccess(userId, activity.lesson.module.levelId);
   assertPaymentAccess(profile, "LESSON");
 
@@ -60,7 +62,7 @@ export const submitActivity = async (userId: string, activityId: string, input: 
 
   await writeAudit({ actorId: userId, action: existing ? "ACTIVITY_RESUBMITTED" : "ACTIVITY_SUBMITTED", entityType: "ActivitySubmission", entityId: submission.id, after: submission });
 
-  if (isPracticeConfig(activity.config)) return submission;
+  if (isPracticeConfig(activity.config)) return { ...submission, practiceFeedback: activity.config };
 
   if (graded.auto) {
     await emitActivity({ actorId: userId, type: 'ASSIGNMENT', title: `Activity completed: ${activity.title}`, body: graded.isCorrect ? 'Correct' : 'Needs review', levelId: activity.lesson.module.levelId, studentId: profile.studentId });
@@ -70,4 +72,3 @@ export const submitActivity = async (userId: string, activityId: string, input: 
 
   return submission;
 };
-
