@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
-import { apiErrorMessage, apiPut } from '../../lib/api';
-import { getMyAssessment, reportAttemptViolation, startAttempt, submitAttempt } from '../../lib/services';
-import type { MyAssessmentDetail } from '../../lib/services';
+import { useEffect,useRef,useState } from 'react';
 import type { ViolationType } from '../../hooks/useAntiCheat';
-import type { AssignmentDetailData, QuizResult } from './types';
-import { enterAssignmentFullscreen, exitAssignmentFullscreen } from './fullscreen';
+import { apiErrorMessage,apiPut } from '../../lib/api';
+import type { MyAssessmentDetail } from '../../lib/services';
+import { getMyAssessment,reportAttemptViolation,startAttempt,submitAttempt } from '../../lib/services';
+import { enterAssignmentFullscreen,exitAssignmentFullscreen } from './fullscreen';
+import type { AssignmentDetailData,QuizResult } from './types';
 export function useAssessmentWork(data: AssignmentDetailData) {
   const [assessment, setAssessment] = useState<MyAssessmentDetail | null>(null);
   const [attempt, setAttempt] = useState<{ id: string } | null>(null);
