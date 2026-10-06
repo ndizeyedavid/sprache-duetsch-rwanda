@@ -1,18 +1,18 @@
-import { GoogleLogin } from "@react-oauth/google";
-import { useGoogleLogin } from "@react-oauth/google";
-import { apiErrorMessage, apiPost } from "../../lib/api";
-import { setTokens } from "../../lib/auth-store";
+import { GoogleLogin,useGoogleLogin } from "@react-oauth/google";
+import { apiErrorMessage,apiPost } from "../../lib/api";
 import type { AuthUser } from "../../lib/auth-store";
+import { setTokens } from "../../lib/auth-store";
 
 export type GoogleButtonProps = {
   portal?: "student" | "teacher" | "staff";
+  remember?: boolean;
   onSuccess: (user: AuthUser) => void;
   onError: (msg: string) => void;
 };
 
 // Uses @react-oauth/google hooks, so it must render inside GoogleOAuthProvider
 // (main.tsx only mounts the provider when VITE_GOOGLE_CLIENT_ID is set).
-export function GoogleSignIn({ portal, onSuccess, onError }: GoogleButtonProps) {
+export function GoogleSignIn({ portal, remember = true, onSuccess, onError }: GoogleButtonProps) {
   const implicitLogin = useGoogleLogin({
     flow: "implicit",
     scope: "openid email profile",
@@ -25,7 +25,7 @@ export function GoogleSignIn({ portal, onSuccess, onError }: GoogleButtonProps) 
           idToken: tokenResponse.access_token,
           portal,
         });
-        setTokens(result.tokens.accessToken, result.tokens.refreshToken);
+        setTokens(result.tokens.accessToken, result.tokens.refreshToken, remember);
         onSuccess(result.user);
       } catch (err) {
         onError(apiErrorMessage(err, "Google sign-in failed."));
@@ -52,7 +52,7 @@ export function GoogleSignIn({ portal, onSuccess, onError }: GoogleButtonProps) 
                 idToken: credential,
                 portal,
               });
-              setTokens(result.tokens.accessToken, result.tokens.refreshToken);
+              setTokens(result.tokens.accessToken, result.tokens.refreshToken, remember);
               onSuccess(result.user);
             } catch (err) {
               onError(apiErrorMessage(err, "Google sign-in failed."));
