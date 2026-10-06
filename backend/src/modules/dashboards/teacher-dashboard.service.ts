@@ -1,6 +1,6 @@
-import { getPracticeActivityIds } from "../content/practice.utils.js";
-import type { Prisma, Role } from '../../generated/prisma/client.js';
+import type { Prisma,Role } from '../../generated/prisma/client.js';
 import { prisma } from '../../lib/prisma.js';
+import { getPracticeActivityIds } from "../content/practice.utils.js";
 import type { DashboardFilter } from './dashboards.schema.js';
 export async function getTeacherDashboard(userId: string, role: Role, filter: DashboardFilter) {
   const where: Prisma.ClassGroupWhereInput={isActive:true,...(role==='TEACHER'?{teacherId:userId}:filter.teacherId?{teacherId:filter.teacherId}:{}),...(filter.levelId?{levelId:filter.levelId}:{}),...(filter.campusId?{campusId:filter.campusId}:{}),...(filter.intakeId?{intakeId:filter.intakeId}:{})};
