@@ -1,8 +1,9 @@
-import { FiAward, FiClipboard, FiClock, FiEdit2, FiEye, FiEyeOff, FiTrash2 } from 'react-icons/fi';
+import { FiAward,FiClipboard,FiClock,FiEdit2,FiEye,FiEyeOff,FiTrash2 } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
-import { humanize, money } from '../../lib/services';
+import { humanize,money } from '../../lib/services';
+import { useSession } from '../../lib/session';
+import { RowMenu } from '../ui/RowMenu';
 import { ASSESSMENT_ICON } from './constants';
-import { RowMenu } from './RowMenu';
 
 type Props = {
  assessment: { id: string; title: string; type: string; levelId: string; durationMinutes: number | null; maxAttempts: number | null; passMark: unknown; isPublished: boolean };
@@ -17,6 +18,8 @@ type Props = {
 export function AssessmentCard({ assessment, levelCode, questionCount, onEdit, onDelete, onTogglePublish, publishing }: Props) {
  const Icon = ASSESSMENT_ICON[assessment.type] ?? FiAward;
  const navigate = useNavigate();
+ const { user } = useSession();
+ const portal = user?.role === 'TEACHER' ? '/teacher' : '/admin';
  return (
  <div className={`flex gap-3 border-l-4 bg-base-100 px-4 py-3 ${assessment.isPublished ? 'border-brand' : 'border-line opacity-90'}`}>
  <span className={`flex size-9 shrink-0 items-center justify-center rounded-full ${assessment.isPublished ? 'bg-brand-soft text-brand' : 'bg-base-200 text-muted'}`}>
@@ -38,7 +41,7 @@ export function AssessmentCard({ assessment, levelCode, questionCount, onEdit, o
  <RowMenu
  label={`Actions for ${assessment.title}`}
  items={[
- { label: 'View submissions', icon: FiClipboard, onClick: () => navigate(`/teacher/grading?assessmentId=${assessment.id}`) },
+ { label: 'View submissions', icon: FiClipboard, onClick: () => navigate(`${portal}/grading?assessmentId=${assessment.id}`) },
  { label: assessment.isPublished ? 'Unpublish' : 'Publish', icon: assessment.isPublished ? FiEyeOff : FiEye, onClick: onTogglePublish, disabled: publishing },
  { label: 'Edit assessment', icon: FiEdit2, onClick: onEdit },
  { label: 'Delete assessment', icon: FiTrash2, onClick: onDelete, tone: 'danger' },
