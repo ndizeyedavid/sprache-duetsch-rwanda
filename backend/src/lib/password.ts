@@ -1,4 +1,4 @@
-import { compare, hash } from "bcryptjs";
+import { compare,hash } from "bcryptjs";
 import { env } from "../config/env.js";
 
 export const hashPassword = (plain: string): Promise<string> => hash(plain, env.BCRYPT_ROUNDS);
