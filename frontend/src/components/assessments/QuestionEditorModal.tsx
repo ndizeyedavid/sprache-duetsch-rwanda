@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useState } from 'react';
 import type { FormEvent } from 'react';
-import { FiAlertCircle, FiCheck, FiX } from 'react-icons/fi';
+import { useEffect,useMemo,useState } from 'react';
+import { FiAlertCircle,FiCheck,FiX } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
-import { createQuestion, getQuestion, humanize, updateQuestion } from '../../lib/services';
-import { DIFFICULTIES, SKILLS, friendlyToBackend, hydrateFriendlyType } from './constants';
+import { createQuestion,getQuestion,humanize,updateQuestion } from '../../lib/services';
 import type { FriendlyType } from './constants';
+import { DIFFICULTIES,SKILLS,friendlyToBackend,hydrateFriendlyType } from './constants';
 import { QuestionTypeFields } from './QuestionTypeFields';
 import { QuestionTypePicker } from './QuestionTypePicker';
 
