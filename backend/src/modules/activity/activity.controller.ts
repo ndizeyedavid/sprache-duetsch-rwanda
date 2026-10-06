@@ -1,8 +1,8 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
+import type { CreateEventInput,ListFeedQuery } from "./activity.schema.js";
 import * as service from "./activity.service.js";
-import type { CreateEventInput, ListFeedQuery } from "./activity.schema.js";
 
 export const feed = async (req: Request, res: Response): Promise<void> => {
   if (!req.user) {
