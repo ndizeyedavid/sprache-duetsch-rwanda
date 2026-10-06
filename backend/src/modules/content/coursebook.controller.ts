@@ -1,6 +1,6 @@
-import type { Request, Response } from "express";
-import { actorId, validatedParams } from "../../lib/request.js";
+import type { Request,Response } from "express";
 import { notFound } from "../../lib/http-error.js";
+import { actorId,validatedParams } from "../../lib/request.js";
 import { getCoursebook } from "./coursebook.service.js";
 
 export const coursebookInfo = async (req: Request, res: Response): Promise<void> => {
