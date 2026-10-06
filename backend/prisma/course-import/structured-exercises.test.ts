@@ -1,4 +1,4 @@
-import { expect, it } from 'vitest';
+import { expect,it } from 'vitest';
 import { structureExercise } from './structured-exercises.js';
 it('splits book prompts and aligns their labelled answer keys', () => {
   const result = structureExercise({ key: '1.1', prompt: 'Mark each vowel as long (L) or short (S): a) Vater b) Mann', modelAnswer: 'a) L b) S' });
