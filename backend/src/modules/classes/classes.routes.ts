@@ -1,15 +1,15 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ADMIN_ROLES, ACADEMIC_ROLES } from "../../lib/roles.js";
+import { ACADEMIC_ROLES,ADMIN_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./classes.controller.js";
 import {
-  classIdSchema,
-  createClassSchema,
-  listClassQuerySchema,
-  updateClassSchema,
+classIdSchema,
+createClassSchema,
+listClassQuerySchema,
+updateClassSchema,
 } from "./classes.schema.js";
 
 export const classesRouter = Router();
