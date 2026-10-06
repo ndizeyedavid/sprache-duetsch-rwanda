@@ -1,13 +1,13 @@
-import { academicTransaction } from "../../lib/academic-transaction.js";
 import type { Role } from '../../generated/prisma/client.js';
-import { prisma } from '../../lib/prisma.js';
+import { academicTransaction } from "../../lib/academic-transaction.js";
 import { assertTeacherOwnsClass } from '../../lib/access.js';
 import { writeAuditTx } from '../../lib/audit.js';
-import { badRequest, conflict, forbidden, notFound } from '../../lib/http-error.js';
+import { badRequest,conflict,forbidden,notFound } from '../../lib/http-error.js';
+import { prisma } from '../../lib/prisma.js';
 import { emitActivity } from '../activity/activity.service.js';
-import { assertAttendanceOpen, assertUniqueStudents } from './attendance-policy.js';
 import { alertLowAttendance } from './attendance-alerts.js';
-import type { MarkAttendanceInput, UpdateAttendanceInput } from './sessions.schema.js';
+import { assertAttendanceOpen,assertUniqueStudents } from './attendance-policy.js';
+import type { MarkAttendanceInput,UpdateAttendanceInput } from './sessions.schema.js';
 export async function markAttendance(sessionId: string, input: MarkAttendanceInput, actorId?: string, actorRole?: Role) {
   assertUniqueStudents(input.records);
   const session = await prisma.classSession.findUnique({ where: { id: sessionId }, include: { classGroup: { select: { name: true } } } });
