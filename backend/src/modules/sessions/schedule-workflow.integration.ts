@@ -2,8 +2,8 @@
 import assert from 'node:assert/strict';
 import request from 'supertest';
 import { createApp } from '../../app.js';
-import { prisma } from '../../lib/prisma.js';
 import { recalculateStudentFinance } from '../../lib/finance.js';
+import { prisma } from '../../lib/prisma.js';
 import { createPayment } from '../payments/payments.service.js';
 const app=createApp(),stamp=`schedule-test-${Date.now()}`;
 const users:string[]=[],groups:string[]=[],sessionIds:string[]=[],extraAuditIds:string[]=[];
