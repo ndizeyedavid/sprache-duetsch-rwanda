@@ -4,10 +4,10 @@ import { requireAuth } from "../../middleware/auth.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./messages.controller.js";
 import {
-  conversationIdSchema,
-  createConversationSchema,
-  listMessagesQuerySchema,
-  sendMessageSchema,
+conversationIdSchema,
+createConversationSchema,
+listMessagesQuerySchema,
+sendMessageSchema,
 } from "./messages.schema.js";
 
 export const messagesRouter = Router();
