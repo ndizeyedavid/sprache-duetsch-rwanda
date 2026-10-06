@@ -1,7 +1,8 @@
+import { assertAccountActive,assertLevelAccess,loadStudentAccessProfile } from "../../lib/access.js";
+import { forbidden,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
-import { assertAccountActive, assertLevelAccess, loadStudentAccessProfile } from "../../lib/access.js";
-import { forbidden, notFound } from "../../lib/http-error.js";
 import { sanitizeActivityConfig } from "./assignment-config.js";
+import { assertLessonAvailable } from "./lesson-availability.js";
 export const getMyAssignmentDetail = async (userId: string, rawId: string) => {
   const profile = await loadStudentAccessProfile(userId);
   assertAccountActive(profile);
@@ -12,7 +13,7 @@ export const getMyAssignmentDetail = async (userId: string, rawId: string) => {
       include: { lesson: { include: { module: { include: { level: true } } } } },
     });
     if (!activity || !activity.isPublished) throw notFound("Assignment not found");
-    await assertLevelAccess(userId, activity.lesson.module.levelId);
+    await assertLessonAvailable(userId, activity.lessonId);
     if (!activity.lesson.isPublished || !activity.lesson.module.isPublished || (activity.lesson.releaseAt && activity.lesson.releaseAt > new Date()) || (activity.lesson.module.releaseAt && activity.lesson.module.releaseAt > new Date())) throw forbidden("This lesson is not available yet");
     if (activity.lesson.prerequisiteLessonId) {
       const prior = await prisma.lessonProgress.findUnique({ where: { studentId_lessonId: { studentId: profile.studentId, lessonId: activity.lesson.prerequisiteLessonId } } });
