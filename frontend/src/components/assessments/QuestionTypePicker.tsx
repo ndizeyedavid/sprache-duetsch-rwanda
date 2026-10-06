@@ -1,5 +1,5 @@
-import { FRIENDLY_TYPES } from './constants';
 import type { FriendlyType } from './constants';
+import { FRIENDLY_TYPES } from './constants';
 
 type Props = { value: FriendlyType; onChange: (v: FriendlyType) => void };
 
