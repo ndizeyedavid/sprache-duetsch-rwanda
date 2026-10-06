@@ -88,6 +88,7 @@ export const getFeed = async (userId: string, role: Role, query: ListFeedQuery) 
 
   const where: Prisma.ActivityEventWhereInput = {};
   if (query.type) where.type = query.type;
+  if (role === "ACADEMIC_ADMIN") where.AND = [{ type: { not: "PAYMENT" } }];
   if (query.levelId) where.levelId = query.levelId;
   if (query.classGroupId) where.classGroupId = query.classGroupId;
 
