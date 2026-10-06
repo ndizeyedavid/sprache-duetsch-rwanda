@@ -1,9 +1,10 @@
 import { Prisma } from "../../generated/prisma/client.js";
 import { writeAudit } from "../../lib/audit.js";
-import { conflict, notFound } from "../../lib/http-error.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { conflict,notFound } from "../../lib/http-error.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
-import type { CreateIntakeInput, ListIntakeQuery, UpdateIntakeInput } from "./intakes.schema.js";
+import { validateIntakeDates } from "../enrollments/enrollment-policy.js";
+import type { CreateIntakeInput,ListIntakeQuery,UpdateIntakeInput } from "./intakes.schema.js";
 
 export const listIntakes = async (query: ListIntakeQuery) => {
   const pagination = parsePagination(query);
@@ -49,6 +50,7 @@ export const getIntake = async (id: string) => {
 };
 
 export const createIntake = async (input: CreateIntakeInput, actorId?: string) => {
+  validateIntakeDates(input);
   const existing = await prisma.intake.findUnique({
     where: { code: input.code },
     select: { id: true },
@@ -89,6 +91,8 @@ export const updateIntake = async (id: string, input: UpdateIntakeInput, actorId
     throw notFound("Intake not found");
   }
 
+  validateIntakeDates({ ...before, ...input });
+  if (input.currency && input.currency !== before.currency && await prisma.enrollment.count({ where: { intakeId: id } })) throw conflict("Currency cannot change after enrolment");
   if (input.code && input.code !== before.code) {
     const duplicate = await prisma.intake.findUnique({
       where: { code: input.code },
