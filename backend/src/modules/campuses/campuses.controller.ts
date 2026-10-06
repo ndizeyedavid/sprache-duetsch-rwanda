@@ -1,6 +1,6 @@
-import type { Request, Response } from "express";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
-import type { CreateCampusInput, ListCampusQuery, UpdateCampusInput } from "./campuses.schema.js";
+import type { Request,Response } from "express";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
+import type { CreateCampusInput,ListCampusQuery,UpdateCampusInput } from "./campuses.schema.js";
 import * as service from "./campuses.service.js";
 
 export const list = async (req: Request, res: Response): Promise<void> => {
