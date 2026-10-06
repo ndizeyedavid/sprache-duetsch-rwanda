@@ -1,5 +1,5 @@
-import { getMyAssignments } from '../../lib/services';
 import { listMyHomework } from '../../lib/homework';
+import { getMyAssignments } from '../../lib/services';
 export type FeedItem = { id: string; title: string; course: string; context: string; kind: string; status: string; dueAt: string | null; points: number; score: number | null; minutes?: number; isHomework: boolean };
 export async function getAssignmentFeed(): Promise<FeedItem[]> {
   const [homework, legacy] = await Promise.all([listMyHomework(), getMyAssignments()]);
