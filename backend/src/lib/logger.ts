@@ -1,5 +1,5 @@
 import { pino } from "pino";
-import { env, isDevelopment } from "../config/env.js";
+import { env,isDevelopment } from "../config/env.js";
 
 // Single app logger. Pretty output in development, JSON in production.
 export const logger = pino({
