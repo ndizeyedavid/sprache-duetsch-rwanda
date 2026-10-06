@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { FiDownload, FiSave } from 'react-icons/fi';
-import type { SessionItem, SessionRosterRow } from '../../lib/services';
-import { downloadFile, apiErrorMessage } from '../../lib/api';
+import { FiDownload,FiSave } from 'react-icons/fi';
+import { apiErrorMessage,downloadFile } from '../../lib/api';
+import type { SessionItem,SessionRosterRow } from '../../lib/services';
 import { AttendanceRow } from './AttendanceRow';
 import { BulkBar } from './BulkBar';
 import { StatsStrip } from './StatsStrip';
