@@ -1,7 +1,7 @@
-import { FiArrowUpRight, FiClock, FiFileText, FiHeadphones, FiCheckCircle } from 'react-icons/fi';
+import { FiArrowUpRight,FiCheckCircle,FiClock,FiFileText,FiHeadphones } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { FeedItem } from './assignment-feed';
-import { dateLabel, statusLabels, statusTone } from './homework/format';
+import { dateLabel,statusLabels,statusTone } from './homework/format';
 export function AssignmentRow({ item }: { item: FeedItem }) {
   const late = item.dueAt && new Date(item.dueAt) < new Date() && !['GRADED', 'SUBMITTED'].includes(item.status);
   const status = late && item.status !== 'RETURNED' ? 'OVERDUE' : item.status;
