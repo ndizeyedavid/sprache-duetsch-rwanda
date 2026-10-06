@@ -1,7 +1,7 @@
-import { OrderingAnswer } from "./OrderingAnswer";
-import { MatchingAnswer } from "./MatchingAnswer";
-import type { AssignmentDetailData } from './types';
 import { useShuffledOptions } from '../../hooks/useShuffledOptions';
+import { MatchingAnswer } from "./MatchingAnswer";
+import { OrderingAnswer } from "./OrderingAnswer";
+import type { AssignmentDetailData } from './types';
 
 type Props = { activity: NonNullable<AssignmentDetailData['activity']>; answer: string; onAnswer: (value: string) => void; disabled: boolean };
 
