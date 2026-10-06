@@ -1,4 +1,4 @@
-import { Area, AreaChart, ResponsiveContainer } from 'recharts';
+import { Area,AreaChart,ResponsiveContainer } from 'recharts';
 
 type SparklineProps = {
  data: { value: number }[];
