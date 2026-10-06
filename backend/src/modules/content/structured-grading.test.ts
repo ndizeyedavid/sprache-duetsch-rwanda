@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe,expect,it } from 'vitest';
 import { gradeStructured } from './structured-grading.js';
 
 describe('structured course exercises', () => {
