@@ -1,4 +1,4 @@
-import { FiArrowLeft, FiCheck, FiPlus } from 'react-icons/fi';
+import { FiArrowLeft,FiCheck,FiPlus } from 'react-icons/fi';
 import type { ModuleItem } from '../../lib/services';
 import { contentIcon } from './utils';
 
