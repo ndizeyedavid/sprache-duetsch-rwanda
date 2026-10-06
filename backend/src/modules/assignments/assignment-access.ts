@@ -1,13 +1,13 @@
 import type { Prisma } from "../../generated/prisma/client.js";
-import type { AuthUser } from "../../types/auth.js";
 import {
-  assertAccountActive,
-  assertPaymentAccess,
-  assertTeacherOwnsClass,
-  loadStudentAccessProfile,
+assertAccountActive,
+assertPaymentAccess,
+assertTeacherOwnsClass,
+loadStudentAccessProfile,
 } from "../../lib/access.js";
-import { forbidden, notFound } from "../../lib/http-error.js";
+import { forbidden,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
+import type { AuthUser } from "../../types/auth.js";
 export const assignmentInclude = {
   classGroup: { include: { level: { select: { code: true, title: true } } } },
   createdBy: { select: { firstName: true, lastName: true } },
