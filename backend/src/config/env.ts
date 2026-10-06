@@ -26,8 +26,9 @@ const envSchema = z.object({
   SEED_SUPERADMIN_PASSWORD: z.string().min(8).default("Admin123!"),
   // Public frontend base URL — embedded in certificate QR codes.
   PUBLIC_APP_URL: z.string().min(1).default("http://localhost:5173"),
-  // Reminder scheduler (node-cron). DISABLED skips all jobs (tests, one-off scripts).
+  // Reminder scheduler; email delivery continues when reminders are disabled.
   REMINDERS_ENABLED: z.enum(["true", "false"]).default("true"),
+  PAYMENT_REMINDER_LEAD_DAYS: z.coerce.number().int().min(1).max(90).default(7),
   REMINDER_TIMEZONE: z.string().min(1).default("Africa/Kigali"),
   // Google OAuth — Client ID for verifying ID tokens from @react-oauth/google.
   GOOGLE_CLIENT_ID: z.string().optional(),
