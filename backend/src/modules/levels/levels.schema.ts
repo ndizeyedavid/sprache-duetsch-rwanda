@@ -1,7 +1,11 @@
 import { z } from "zod";
-import { booleanQuery, idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { booleanQuery,idParam,optionalText,paginationQuery } from "../../lib/query.js";
+import { completionRulesSchema } from "../certificates/completion-policy.js";
 
 export const createLevelSchema = z.object({
+  coursebookUrl: z.string().regex(/^\/api\/uploads\/[a-zA-Z0-9._-]+$/, "Upload a PDF and use its resource URL").nullable().optional(),
+  coursebookPages: z.number().int().positive().nullable().optional(),
+  completionRules: completionRulesSchema.optional(),
   code: z.string().trim().min(1).max(30).toUpperCase(),
   language: z.string().trim().min(2).max(60).default("German"),
   title: z.string().trim().min(2).max(160),
