@@ -1,5 +1,6 @@
+import type { NextFunction,Request,Response } from "express";
 import { Router } from "express";
-import type { NextFunction, Request, Response } from "express";
+import { asyncHandler } from "../../lib/async-handler.js";
 import { badRequest } from "../../lib/http-error.js";
 import { ACADEMIC_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
@@ -20,7 +21,7 @@ uploadsRouter.post(
         if (error) {
           throw badRequest(error instanceof Error ? error.message : "Upload failed");
         }
-        controller.uploadFile(req, res);
+        void controller.uploadFile(req, res).catch(next);
       } catch (thrown) {
         next(thrown);
       }
@@ -28,10 +29,4 @@ uploadsRouter.post(
   },
 );
 
-uploadsRouter.get("/:name", (req: Request, res: Response, next: NextFunction) => {
-  try {
-    controller.downloadFile(req, res);
-  } catch (thrown) {
-    next(thrown);
-  }
-});
+uploadsRouter.get("/:name", asyncHandler(controller.downloadFile));
