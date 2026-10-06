@@ -1,7 +1,7 @@
-import { FiEdit2, FiTrash2 } from 'react-icons/fi';
-import { humanize, money } from '../../lib/services';
-import { DIFFICULTY_TONE, FRIENDLY_TYPES, TYPE_ICON, hydrateFriendlyType } from './constants';
-import { RowMenu } from './RowMenu';
+import { FiEdit2,FiTrash2 } from 'react-icons/fi';
+import { humanize,money } from '../../lib/services';
+import { RowMenu } from '../ui/RowMenu';
+import { DIFFICULTY_TONE,FRIENDLY_TYPES,TYPE_ICON,hydrateFriendlyType } from './constants';
 
 type Props = {
  question: { id: string; type: string; skill: string; difficulty: string; prompt: string; points: unknown; levelId: string; audioUrl?: string | null };
