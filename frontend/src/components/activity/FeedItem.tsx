@@ -1,7 +1,7 @@
 import { FiClock } from 'react-icons/fi';
 import { humanize } from '../../lib/services';
 import { TYPE_STYLE } from './constants';
-import { initials, relative } from './utils';
+import { initials,relative } from './utils';
 
 type Props = { title: string; body: string | null; type: string; actorName: string | null; actorAvatarUrl?: string | null; createdAt: string };
 
