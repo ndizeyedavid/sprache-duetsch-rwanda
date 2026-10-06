@@ -1,7 +1,7 @@
+import type { Request,Response } from "express";
 import { assertTeacherOwnsClass } from "../../lib/access.js";
-import type { Request, Response } from "express";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
-import type { CreateClassInput, ListClassQuery, UpdateClassInput } from "./classes.schema.js";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
+import type { CreateClassInput,ListClassQuery,UpdateClassInput } from "./classes.schema.js";
 import * as service from "./classes.service.js";
 
 export const list = async (req: Request, res: Response): Promise<void> => {
