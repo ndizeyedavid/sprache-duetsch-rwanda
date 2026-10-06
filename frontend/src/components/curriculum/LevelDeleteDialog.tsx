@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { FiTrash2 } from 'react-icons/fi';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { deleteLevel, getLevel } from '../../lib/services';
 import type { LevelItem } from '../../lib/services';
+import { deleteLevel,getLevel } from '../../lib/services';
 
 type LevelDeleteDialogProps = {
   level: LevelItem;
