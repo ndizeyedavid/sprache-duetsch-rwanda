@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { FiChevronDown, FiLayout, FiMusic, FiVideo } from 'react-icons/fi';
+import { FiChevronDown,FiLayout,FiMusic,FiVideo } from 'react-icons/fi';
 import { StudioNotesEditor } from './StudioNotesEditor';
+import type { ChangeLesson,LessonDraft } from './lesson-draft';
 import { lessonStructure } from './lesson-draft';
-import type { ChangeLesson, LessonDraft } from './lesson-draft';
 
 export function LessonContentFields({ draft, change }: { draft: LessonDraft; change: ChangeLesson }) {
   const [summary, setSummary] = useState(!!draft.description);
