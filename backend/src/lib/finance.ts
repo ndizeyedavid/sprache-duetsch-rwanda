@@ -1,101 +1,55 @@
-import { Prisma } from "../generated/prisma/client.js";
 import type { PaymentStatus } from "../generated/prisma/client.js";
-import type { prisma } from "./prisma.js";
-
-// Student finance is denormalised on StudentFinance so dashboards and the profile
-// read balances without aggregating full history. This is the single place that
-// derives those totals; every charge, discount, payment or refund calls it.
-//
-// Source of truth per the spec:
-//   totalDue  = sum(charges) - sum(approved discounts)
-//   totalPaid = sum(payments) - sum(refunds)
-//   balance   = totalDue - totalPaid
-
-type Executor = Prisma.TransactionClient | typeof prisma;
+import { Prisma } from "../generated/prisma/client.js";
+import { allocateObligations,assertCurrency } from "./finance-policy.js";
+import { prisma } from "./prisma.js";
+import { transact } from "./transactions.js";
 
 const ZERO = new Prisma.Decimal(0);
+type Executor = Prisma.TransactionClient | typeof prisma;
 
-const amountOrZero = (value: Prisma.Decimal | null | undefined): Prisma.Decimal => value ?? ZERO;
+export async function recalculateStudentFinance(client: Executor, studentId: string) {
+  if (client === prisma) return transact(tx => calculate(tx, studentId));
+  return calculate(client, studentId);
+}
 
-const deriveStatus = (params: {
-  totalDue: Prisma.Decimal;
-  netPaid: Prisma.Decimal;
-  balance: Prisma.Decimal;
-  refunds: Prisma.Decimal;
-  hasOverdue: boolean;
-}): PaymentStatus => {
-  const { totalDue, netPaid, balance, refunds, hasOverdue } = params;
+async function calculate(client: Prisma.TransactionClient, studentId: string) {
+  await client.$executeRaw`SELECT pg_advisory_xact_lock(hashtext(${studentId}))`;
+  const charges = await client.charge.findMany({ where: { studentId } });
+  const payments = await client.payment.findMany({ where: { studentId } });
+  const discounts = await client.discount.findMany({ where: { studentId, status: "APPROVED" } });
+  const currency = assertCurrency([...charges, ...payments].map(row => row.currency));
+  const sum = (rows: { amount: Prisma.Decimal }[]) => rows.reduce((total, row) => total.plus(row.amount), ZERO);
+  const totalDiscount = sum(discounts);
+  const totalDue = sum(charges).minus(totalDiscount);
+  const refunds = sum(payments.filter(row => row.txnType === "REFUND"));
+  const totalPaid = sum(payments.filter(row => row.txnType === "PAYMENT")).minus(refunds);
+  const balance = totalDue.minus(totalPaid);
+  const schedule = allocateObligations(charges, totalPaid.plus(totalDiscount));
+  let status: PaymentStatus = "UNPAID";
+  if (totalDue.lessThanOrEqualTo(ZERO)) status = "WAIVED";
+  else if (balance.lessThanOrEqualTo(ZERO)) status = "FULLY_PAID";
+  else if (schedule.overdueAmount.greaterThan(ZERO)) status = "OVERDUE";
+  else if (refunds.greaterThan(ZERO) && totalPaid.lessThanOrEqualTo(ZERO)) status = "REFUNDED";
+  else if (totalPaid.greaterThan(ZERO)) status = "PARTIALLY_PAID";
+  const lastPaymentAt = payments.filter(row => row.txnType === "PAYMENT")
+    .sort((a, b) => b.paidAt.getTime() - a.paidAt.getTime())[0]?.paidAt ?? null;
+  const data = { totalDue, totalDiscount, totalPaid, balance, currency, status, lastPaymentAt,
+    overdueAmount: schedule.overdueAmount, nextDueAt: schedule.nextDueAt, nextDueAmount: schedule.nextDueAmount };
+  const existing = await client.studentFinance.findUnique({ where: { studentId } });
+  if (existing && existing.currency === currency && existing.status === status &&
+    existing.totalDue.equals(totalDue) && existing.totalPaid.equals(totalPaid) && existing.totalDiscount.equals(totalDiscount) &&
+    existing.balance.equals(balance) && existing.overdueAmount.equals(schedule.overdueAmount) && existing.nextDueAmount.equals(schedule.nextDueAmount) &&
+    existing.lastPaymentAt?.getTime() === lastPaymentAt?.getTime() && existing.nextDueAt?.getTime() === schedule.nextDueAt?.getTime()) return existing;
+  return client.studentFinance.upsert({ where: { studentId }, create: { studentId, ...data }, update: data });
+}
 
-  if (refunds.greaterThan(ZERO) && netPaid.lessThanOrEqualTo(ZERO)) {
-    return "REFUNDED";
-  }
-  if (totalDue.lessThanOrEqualTo(ZERO)) {
-    return "WAIVED";
-  }
-  if (balance.lessThanOrEqualTo(ZERO)) {
-    return "FULLY_PAID";
-  }
-  if (hasOverdue) {
-    return "OVERDUE";
-  }
-  if (netPaid.greaterThan(ZERO)) {
-    return "PARTIALLY_PAID";
-  }
-  return "UNPAID";
-};
+export async function refreshFinanceProfiles() {
+  const students = await prisma.student.findMany({ select: { id: true } });
+  for (const student of students) await recalculateStudentFinance(prisma, student.id);
+}
 
-export const recalculateStudentFinance = async (client: Executor, studentId: string) => {
-  // Sequential on the hosted DB (max 5 connections) — Promise.all would burst 6
-  // concurrent queries and hit "too many connections".
-  const chargeAgg = await client.charge.aggregate({ where: { studentId }, _sum: { amount: true } });
-  const discountAgg = await client.discount.aggregate({
-    where: { studentId, status: "APPROVED" },
-    _sum: { amount: true },
-  });
-  const paymentAgg = await client.payment.aggregate({
-    where: { studentId, txnType: "PAYMENT" },
-    _sum: { amount: true },
-  });
-  const refundAgg = await client.payment.aggregate({
-    where: { studentId, txnType: "REFUND" },
-    _sum: { amount: true },
-  });
-  const overdueCount = await client.charge.count({ where: { studentId, dueDate: { lt: new Date() } } });
-  const lastPayment = await client.payment.findFirst({
-    where: { studentId, txnType: "PAYMENT" },
-    orderBy: { paidAt: "desc" },
-    select: { paidAt: true },
-  });
-
-  const charges = amountOrZero(chargeAgg._sum.amount);
-  const discounts = amountOrZero(discountAgg._sum.amount);
-  const payments = amountOrZero(paymentAgg._sum.amount);
-  const refunds = amountOrZero(refundAgg._sum.amount);
-
-  const totalDue = charges.minus(discounts);
-  const netPaid = payments.minus(refunds);
-  const balance = totalDue.minus(netPaid);
-
-  const status = deriveStatus({
-    totalDue,
-    netPaid,
-    balance,
-    refunds,
-    hasOverdue: overdueCount > 0 && balance.greaterThan(ZERO),
-  });
-
-  const data = {
-    totalDue,
-    totalDiscount: discounts,
-    totalPaid: netPaid,
-    balance,
-    status,
-    lastPaymentAt: lastPayment?.paidAt ?? null,
-  };
-
-  return client.studentFinance.upsert({
-    where: { studentId },
-    create: { studentId, ...data },
-    update: data,
-  });
-};
+export async function assertStudentCurrency(tx: Prisma.TransactionClient, studentId: string, currency: string) {
+  const charges = await tx.charge.findMany({ where: { studentId }, select: { currency: true } });
+  const payments = await tx.payment.findMany({ where: { studentId }, select: { currency: true } });
+  return assertCurrency([...charges, ...payments].map(row => row.currency), currency);
+}
