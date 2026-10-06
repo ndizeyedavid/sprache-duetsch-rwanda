@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
-import { assertAttendanceOpen, assertUniqueStudents } from './attendance-policy.js';
-import { markAttendanceSchema, updateAttendanceSchema } from './sessions.schema.js';
+import { describe,expect,it } from 'vitest';
+import { assertAttendanceOpen,assertUniqueStudents } from './attendance-policy.js';
+import { markAttendanceSchema,updateAttendanceSchema } from './sessions.schema.js';
 describe('attendance rules',()=>{
   const now=new Date('2026-10-05T10:00:00Z');
   it('rejects future and cancelled sessions',()=>{expect(()=>assertAttendanceOpen({status:'SCHEDULED',startAt:new Date('2026-10-06')},now)).toThrow();expect(()=>assertAttendanceOpen({status:'CANCELLED',startAt:new Date('2026-10-01')},now)).toThrow();});
