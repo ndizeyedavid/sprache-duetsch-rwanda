@@ -1,10 +1,10 @@
-import { writeAuditTx } from '../../lib/audit.js';
-import { badRequest, conflict, forbidden, notFound } from '../../lib/http-error.js';
-import { prisma } from '../../lib/prisma.js';
 import type { Prisma } from '../../generated/prisma/client.js';
+import { writeAuditTx } from '../../lib/audit.js';
+import { badRequest,conflict,forbidden,notFound } from '../../lib/http-error.js';
+import { prisma } from '../../lib/prisma.js';
 import { isScheduleWriteConflict } from '../sessions/session-conflicts.js';
 import { checkOverlap } from '../sessions/session-policy.js';
-import type { CreateClassInput, UpdateClassInput } from './classes.schema.js';
+import type { CreateClassInput,UpdateClassInput } from './classes.schema.js';
 async function transact<T>(work:(tx:Prisma.TransactionClient)=>Promise<T>):Promise<T>{try{return await prisma.$transaction(work,{isolationLevel:'Serializable',timeout:15000});}catch(e){if(isScheduleWriteConflict(e))throw conflict('Another assignment changed at the same time. Please retry.');throw e;}}
 async function validateTeacher(tx:Prisma.TransactionClient,id:string,levelId:string){
   const teacher=await tx.user.findUnique({where:{id},select:{role:true,status:true}});
@@ -28,6 +28,8 @@ export async function updateClass(id:string,input:UpdateClassInput,actorId?:stri
   if(input.code&&input.code!==before.code&&await tx.classGroup.findUnique({where:{code:input.code}}))throw conflict('A class with this code already exists');
   await validateReferences(tx,input);
   if(input.levelId&&input.levelId!==before.levelId&&await tx.enrollment.count({where:{classGroupId:id}}))throw conflict('A class with enrolled students cannot change levels. Create a new class instead.');
+  if(input.capacity!==undefined&&await tx.enrollment.count({where:{classGroupId:id,status:"ACTIVE"}})>input.capacity)throw conflict("Capacity cannot be lower than active enrolments");
+  if((input.intakeId&&input.intakeId!==before.intakeId||input.campusId&&input.campusId!==before.campusId)&&await tx.enrollment.count({where:{classGroupId:id}}))throw conflict("A class with enrolments cannot change intake or campus");
   const teacherId=input.teacherId===undefined?before.teacherId:input.teacherId;
   if(teacherId&&(input.isActive??before.isActive))await validateTeacher(tx,teacherId,input.levelId??before.levelId);
   if(input.teacherId!==undefined&&teacherId!==before.teacherId){
