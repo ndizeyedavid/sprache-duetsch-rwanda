@@ -1,13 +1,13 @@
-import type { Request, Response } from "express";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
-import * as service from "./articles.service.js";
+import type { Request,Response } from "express";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import type {
-  CreateArticleInput,
-  CreateFaqInput,
-  ListArticlesQuery,
-  UpdateArticleInput,
-  UpdateFaqInput,
+CreateArticleInput,
+CreateFaqInput,
+ListArticlesQuery,
+UpdateArticleInput,
+UpdateFaqInput,
 } from "./articles.schema.js";
+import * as service from "./articles.service.js";
 
 const staffView = (req: Request): boolean =>
   req.user?.role === "TEACHER" ||
