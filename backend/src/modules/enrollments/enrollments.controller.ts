@@ -1,10 +1,10 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import type {
-  CreateEnrollmentInput,
-  ListEnrollmentsQuery,
-  UpdateEnrollmentInput,
+CreateEnrollmentInput,
+ListEnrollmentsQuery,
+UpdateEnrollmentInput,
 } from "./enrollments.schema.js";
 import * as service from "./enrollments.service.js";
 
