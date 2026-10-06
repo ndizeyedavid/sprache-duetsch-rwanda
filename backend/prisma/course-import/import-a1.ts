@@ -1,9 +1,9 @@
-import { readFile, mkdir, writeFile } from "node:fs/promises";
-import { fileURLToPath } from "node:url";
-import { structureExercise } from "./structured-exercises.js";
 import { createHash } from "node:crypto";
-import { prisma } from "../../src/lib/prisma.js";
+import { mkdir,readFile,writeFile } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
 import type { Prisma } from "../../src/generated/prisma/client.js";
+import { prisma } from "../../src/lib/prisma.js";
+import { structureExercise } from "./structured-exercises.js";
 
 type Unit = {
   number: number;
