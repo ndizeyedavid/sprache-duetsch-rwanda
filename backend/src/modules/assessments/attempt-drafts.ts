@@ -1,10 +1,11 @@
+import type { Request,Response } from "express";
 import { z } from "zod";
-import type { Request, Response } from "express";
 import type { Prisma } from "../../generated/prisma/client.js";
+import { assertLevelAccess,loadStudentAccessProfile } from "../../lib/access.js";
+import { badRequest,conflict,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
-import { assertLevelAccess, loadStudentAccessProfile } from "../../lib/access.js";
-import { badRequest, conflict, notFound } from "../../lib/http-error.js";
-import { validatedBody, validatedParams } from "../../lib/request.js";
+import { validatedBody,validatedParams } from "../../lib/request.js";
+import { readAttemptPolicy,readSnapshot } from "./attempt-snapshot.js";
 export const attemptDraftBody = z.object({
   responses: z
     .record(z.string(), z.unknown())
@@ -28,13 +29,12 @@ export const saveAttemptDraft = async (req: Request, res: Response): Promise<voi
   if (!attempt || attempt.studentId !== profile.studentId) throw notFound("Attempt not found");
   await assertLevelAccess(req.user!.id, attempt.assessment.levelId);
   if (attempt.status !== "IN_PROGRESS") throw conflict("This attempt has already been submitted");
-  if (
-    attempt.assessment.durationMinutes &&
-    Date.now() > attempt.startedAt.getTime() + attempt.assessment.durationMinutes * 60000
-  )
+  const policy = readAttemptPolicy(attempt.questionSnapshot, attempt.assessment);
+  if (policy.durationMinutes && Date.now() > attempt.startedAt.getTime() + policy.durationMinutes * 60000)
     throw badRequest("Time has expired. Submit your saved answers");
   const { responses } = validatedBody<z.infer<typeof attemptDraftBody>>(req);
-  const ids = new Set(attempt.assessment.questions.map((q) => q.questionId));
+  const snapshot = readSnapshot(attempt.questionSnapshot);
+  const ids = new Set(snapshot ? snapshot.map(row => row.question.id) : attempt.assessment.questions.map(q => q.questionId));
   if (Object.keys(responses).some((key) => !ids.has(key)))
     throw badRequest("Unknown question in draft");
   const result = await prisma.attempt.updateMany({
