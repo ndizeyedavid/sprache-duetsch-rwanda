@@ -7,3 +7,9 @@ docs/*
 docs/superpowers/*
 !docs/superpowers/specs
 !docs/superpowers/plans
+
+# Private deployment backups, credentials and runtime manifests
+.deployment-private/
+.hubfly/
+backend/hubfly.build.json
+frontend/hubfly.build.json
