@@ -1,9 +1,9 @@
-import { isScheduleWriteConflict } from './session-conflicts.js';
-import { describe,it,expect } from 'vitest';
-import { createSessionSchema, updateSessionSchema } from './sessions.schema.js';
-import { checkSessionChange } from './session-policy.js';
-import { addSessionWeeks } from './session-dates.js';
+import { describe,expect,it } from 'vitest';
 import type { ClassSession } from '../../generated/prisma/client.js';
+import { isScheduleWriteConflict } from './session-conflicts.js';
+import { addSessionWeeks } from './session-dates.js';
+import { checkSessionChange } from './session-policy.js';
+import { createSessionSchema,updateSessionSchema } from './sessions.schema.js';
 const now=new Date('2026-10-05T12:00:00Z');
 const base={status:'SCHEDULED',startAt:new Date('2026-10-05T11:00:00Z'),endAt:new Date('2026-10-05T13:00:00Z')} as ClassSession;
 describe('session policy',()=>{
