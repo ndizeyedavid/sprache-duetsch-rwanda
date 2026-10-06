@@ -1,7 +1,7 @@
-import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar,BarChart,CartesianGrid,Legend,ResponsiveContainer,Tooltip,XAxis,YAxis } from 'recharts';
 import { COLORS } from '../../lib/theme';
 import { ChartTooltip } from './ChartTooltip';
-import type { TrendDatum, TrendSeries } from './LineTrend';
+import type { TrendDatum,TrendSeries } from './LineTrend';
 
 type GroupedBarProps = {
  data: TrendDatum[];
@@ -37,7 +37,7 @@ export function GroupedBar({
  <BarChart
  data={data}
  layout={layout}
- margin={{ top: 8, right: 12, bottom: 0, left: vertical ? 8 : -18 }}
+ margin={{ top: 8, right: 12, bottom: 0, left: vertical ? 8 : 4 }}
  barGap={stacked ? 0 : 4}
  >
  <CartesianGrid horizontal={!vertical} vertical={vertical} stroke={COLORS.grid} strokeDasharray="4 4" />
@@ -56,7 +56,7 @@ export function GroupedBar({
  tickLine={false}
  axisLine={false}
  tick={{ fill: COLORS.muted, fontSize: 11 }}
- width={vertical ? 52 : 38}
+ width={vertical ? 52 : 56}
  />
  <Tooltip content={<ChartTooltip suffix={suffix} />} cursor={{ fill: 'rgba(55,69,87,0.04)' }} />
  {showLegend ? <Legend iconType="circle" wrapperStyle={{ fontSize: 12 }} /> : null}
