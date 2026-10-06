@@ -1,7 +1,8 @@
-import { OrderingAnswer } from "./OrderingAnswer";
-import { MatchingAnswer } from "./MatchingAnswer";
-import type { MyAssessmentDetail } from '../../lib/services';
 import { useShuffledOptions } from '../../hooks/useShuffledOptions';
+import type { MyAssessmentDetail } from '../../lib/services';
+import { AuthenticatedMedia } from '../ui/AuthenticatedMedia';
+import { MatchingAnswer } from "./MatchingAnswer";
+import { OrderingAnswer } from "./OrderingAnswer";
 
 type Props = { item: MyAssessmentDetail['questions'][number]; index: number; value: unknown; onChange: (value: unknown) => void; disabled: boolean };
 
@@ -11,8 +12,8 @@ export function AssessmentQuestion({ item, index, value, onChange, disabled }: P
   return (
     <section className="card gap-4 border border-base-300/70 bg-base-100 p-4 sm:p-5">
       <h3 className="flex items-start gap-3 text-sm font-semibold leading-6"><span className="grid size-7 shrink-0 place-items-center rounded-lg bg-primary/10 text-xs text-primary">{index + 1}</span>{question.prompt}</h3>
-      {question.imageUrl ? <img src={question.imageUrl} alt="Question illustration" className="max-h-52 max-w-full rounded-field object-contain" /> : null}
-      {question.audioUrl ? <audio controls src={question.audioUrl} className="w-full" /> : null}
+      {question.imageUrl ? <AuthenticatedMedia url={question.imageUrl} kind="image" title="Question illustration" className="max-h-52 max-w-full rounded-field object-contain" /> : null}
+      {question.audioUrl ? <AuthenticatedMedia url={question.audioUrl} kind="audio" className="w-full" /> : null}
       {question.type === 'SINGLE_CHOICE' || question.type === 'TRUE_FALSE' ? <fieldset className="grid gap-2 sm:grid-cols-2"><legend className="sr-only">Select one answer for question {index + 1}</legend>{options.map(({ value: option, index: optionIndex }) => {
         const checked = value === option || value === String(optionIndex) || value === optionIndex;
         return <label key={optionIndex} className={`flex cursor-pointer items-center gap-3 rounded-field border p-3 text-sm ${checked ? 'border-primary/40 bg-primary/5' : 'border-base-300'}`}><input type="radio" name={question.id} checked={checked} onChange={() => onChange(option)} disabled={disabled} className="radio radio-primary radio-sm" />{option}</label>;
