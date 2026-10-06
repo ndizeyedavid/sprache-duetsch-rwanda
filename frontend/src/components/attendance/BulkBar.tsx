@@ -1,4 +1,4 @@
-import { STATUSES, STATUS_META } from './constants';
+import { STATUSES,STATUS_META } from './constants';
 
 type Props = { onPick: (status: string) => void; onClear: () => void; disabled?: boolean };
 
