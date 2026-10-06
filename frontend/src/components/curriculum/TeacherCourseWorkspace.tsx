@@ -1,17 +1,17 @@
 import { useState } from 'react';
+import { FiArrowRight,FiEdit2,FiPlus } from 'react-icons/fi';
 import { useSearchParams } from 'react-router-dom';
-import { FiArrowRight, FiEdit2, FiPlus } from 'react-icons/fi';
 import { useApi } from '../../hooks/useApi';
+import type { LevelItem,ModuleItem } from '../../lib/services';
 import { listLevelModules } from '../../lib/services';
-import type { LevelItem, ModuleItem } from '../../lib/services';
-import { ErrorBlock, LoadingBlock } from '../common/PageState';
+import { ErrorBlock,LoadingBlock } from '../common/PageState';
 import { CourseOutline } from './CourseOutline';
 import { CourseStudioOverview } from './CourseStudioOverview';
 import { PreparationLesson } from './PreparationLesson';
 import { StudioModuleForm } from './StudioModuleForm';
 import { StudioNewLesson } from './StudioNewLesson';
 
-export function TeacherCourseWorkspace({ levels }: { levels: LevelItem[] }) {
+export function TeacherCourseWorkspace({ levels, academic = false }: { levels: LevelItem[]; academic?: boolean }) {
   const [params, setParams] = useSearchParams();
   const [dirty, setDirty] = useState(false);
   const [moduleForm, setModuleForm] = useState<ModuleItem | 'new' | null>(null);
@@ -37,7 +37,7 @@ export function TeacherCourseWorkspace({ levels }: { levels: LevelItem[] }) {
   const overview = () => navigate({ level: level.id });
   return <div className="space-y-6">
     <header className="flex flex-wrap items-center justify-between gap-4">
-      <div><p className="mb-1 text-xs font-medium text-base-content/50">TEACHING WORKSPACE</p><h1 className="text-2xl font-semibold">Course studio</h1></div>
+      <div><p className="mb-1 text-xs font-medium text-base-content/50">{academic ? 'ACADEMIC CURRICULUM' : 'TEACHING WORKSPACE'}</p><h1 className="text-2xl font-semibold">Course studio</h1></div>
       <label className="flex items-center gap-3 text-sm"><span className="text-base-content/60">Course</span>
         <select aria-label="Choose course" className="select max-w-[260px] border-0 bg-base-100" value={level.id} onChange={event => navigate({ level: event.target.value })}>
           {levels.map(item => <option key={item.id} value={item.id}>{item.code} · {item.title}</option>)}
@@ -60,7 +60,7 @@ export function TeacherCourseWorkspace({ levels }: { levels: LevelItem[] }) {
         </div>
       </div>
     ) : <><section className="flex items-center justify-between gap-5 rounded-box bg-neutral px-6 py-6 text-neutral-content sm:px-8">
-      <div><p className="text-sm text-neutral-content/60">{level.code} · {lessonCount} lessons</p><h2 className="mt-2 text-xl font-semibold sm:text-2xl">Good lessons start here.</h2><p className="mt-2 text-sm text-neutral-content/70">Choose a module and make it your own.</p></div>
+      <div><p className="text-sm text-neutral-content/60">{level.code} · {lessonCount} lessons</p><h2 className="mt-2 text-xl font-semibold sm:text-2xl">{academic ? level.title : 'Good lessons start here.'}</h2><p className="mt-2 text-sm text-neutral-content/70">{academic ? `${ordered.length} modules · ${lessonCount} lessons` : 'Choose a module and make it your own.'}</p></div>
       <img src="/illustrations/study-books.webp" alt="" width={130} height={110} className="hidden h-28 w-32 object-contain sm:block"/></section>
       <CourseStudioOverview modules={ordered} onOpen={openModule} onCreate={() => setModuleForm('new')} onEdit={setModuleForm}/></>}
     {moduleForm ? <StudioModuleForm levelId={level.id} module={moduleForm === 'new' ? undefined : moduleForm} onClose={() => setModuleForm(null)} onSaved={modules.refetch}/> : null}
