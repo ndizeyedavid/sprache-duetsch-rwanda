@@ -1,15 +1,15 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ADMIN_ROLES, STAFF_ROLES } from "../../lib/roles.js";
+import { ADMIN_ROLES,STAFF_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./enrollments.controller.js";
 import {
-  createEnrollmentSchema,
-  enrollmentIdSchema,
-  listEnrollmentsQuerySchema,
-  updateEnrollmentSchema,
+createEnrollmentSchema,
+enrollmentIdSchema,
+listEnrollmentsQuerySchema,
+updateEnrollmentSchema,
 } from "./enrollments.schema.js";
 
 export const enrollmentsRouter = Router();
