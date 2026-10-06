@@ -4,7 +4,7 @@ import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import { levelIdParamsSchema } from "./content.schema.js";
-import { coursebookInfo, coursebookPdf } from "./coursebook.controller.js";
+import { coursebookInfo,coursebookPdf } from "./coursebook.controller.js";
 
 export const coursebookRouter = Router();
 coursebookRouter.get("/my/levels/:levelId/coursebook", requireAuth, requireRole("STUDENT"), validate({ params: levelIdParamsSchema }), asyncHandler(coursebookInfo));
