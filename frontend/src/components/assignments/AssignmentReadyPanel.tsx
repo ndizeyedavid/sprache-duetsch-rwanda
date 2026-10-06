@@ -1,4 +1,4 @@
-import { FiArrowRight, FiAward, FiCalendar, FiClock, FiFileText, FiRepeat } from 'react-icons/fi';
+import { FiArrowRight,FiAward,FiCalendar,FiClock,FiFileText,FiRepeat } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { AssignmentRules } from './AssignmentRules';
 
