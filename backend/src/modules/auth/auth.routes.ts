@@ -5,15 +5,15 @@ import { authLimiter } from "../../middleware/rate-limit.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./auth.controller.js";
 import {
-  changePasswordSchema,
-  forgotPasswordSchema,
-  googleAuthSchema,
-  loginSchema,
-  logoutSchema,
-  refreshSchema,
-  registerSchema,
-  resetPasswordSchema,
-  updateProfileSchema,
+changePasswordSchema,
+forgotPasswordSchema,
+googleAuthSchema,
+loginSchema,
+logoutSchema,
+refreshSchema,
+registerSchema,
+resetPasswordSchema,
+updateProfileSchema,
 } from "./auth.schema.js";
 
 export const authRouter = Router();
