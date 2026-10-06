@@ -1,9 +1,9 @@
 import type { Prisma } from "../../generated/prisma/client.js";
 import { writeAudit } from "../../lib/audit.js";
-import { conflict, notFound } from "../../lib/http-error.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { conflict,notFound } from "../../lib/http-error.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
-import type { CreateCampusInput, ListCampusQuery, UpdateCampusInput } from "./campuses.schema.js";
+import type { CreateCampusInput,ListCampusQuery,UpdateCampusInput } from "./campuses.schema.js";
 
 export const listCampuses = async (query: ListCampusQuery) => {
   const pagination = parsePagination(query);
