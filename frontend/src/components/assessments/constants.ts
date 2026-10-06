@@ -1,4 +1,4 @@
-import { FiAward, FiBookOpen, FiCheckCircle, FiCheckSquare, FiClipboard, FiEdit3, FiFileText, FiLayers, FiMapPin, FiMove, FiMusic } from 'react-icons/fi';
+import { FiAward,FiBookOpen,FiCheckCircle,FiCheckSquare,FiClipboard,FiEdit3,FiFileText,FiLayers,FiMapPin,FiMove,FiMusic } from 'react-icons/fi';
 
 export const SKILLS = [
   { value: 'VOCABULARY', label: 'Vocabulary' },
@@ -80,6 +80,3 @@ export const DIFFICULTY_TONE: Record<string, string> = {
   MEDIUM: 'bg-sun-soft text-[#8A6800]',
   HARD: 'bg-coral-soft text-[#D8482F]',
 };
-
-export const TABS = ['Question bank', 'Assessments'] as const;
-export type Tab = (typeof TABS)[number];
