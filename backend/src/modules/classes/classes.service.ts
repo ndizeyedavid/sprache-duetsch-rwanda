@@ -1,6 +1,6 @@
 import type { Prisma } from "../../generated/prisma/client.js";
 import { notFound } from "../../lib/http-error.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import type { ListClassQuery } from "./classes.schema.js";
 
@@ -99,4 +99,4 @@ export const getClass = async (id: string) => {
 };
 
 
-export { createClass, updateClass, deleteClass } from "./class-commands.js";
+export { createClass,deleteClass,updateClass } from "./class-commands.js";
