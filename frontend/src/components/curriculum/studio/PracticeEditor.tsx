@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { createActivity, updateActivity } from '../../../lib/services';
-import type { LessonActivity } from '../../../lib/services';
 import { apiErrorMessage } from '../../../lib/api';
+import type { LessonActivity } from '../../../lib/services';
+import { createActivity,updateActivity } from '../../../lib/services';
 import { StudioDialog } from '../StudioDialog';
 import { PracticeQuestionFields } from './PracticeQuestionFields';
-import { canEditQuestions, practiceDraft, practiceKinds, practicePayload } from './practice-draft';
 import type { ChangePractice } from './practice-draft';
+import { canEditQuestions,practiceDraft,practiceKinds,practicePayload } from './practice-draft';
 
 type Props = { lessonId: string; type: string; activity?: LessonActivity; onClose: () => void; onSaved: () => void };
 export function PracticeEditor({ lessonId, type, activity, onClose, onSaved }: Props) {
