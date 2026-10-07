@@ -1,4 +1,4 @@
-import { FiAward, FiCheckCircle, FiClock, FiEdit3 } from "react-icons/fi";
+import { FiAward,FiCheckCircle,FiClock,FiEdit3 } from "react-icons/fi";
 import type { MyAssessment } from "../../lib/services";
 
 type Props = { assessments: MyAssessment[]; whatIf: Record<string, number>; whatIfOn: boolean };
