@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { FiAlertCircle, FiCheck, FiChevronDown, FiChevronUp, FiEdit2, FiEye, FiSearch, FiX } from "react-icons/fi";
-import { EmptyBlock, ErrorBlock, LoadingBlock } from "../common/PageState";
+import { FiAlertCircle,FiCheck,FiChevronDown,FiChevronUp,FiEdit2,FiEye,FiSearch,FiX } from "react-icons/fi";
 import { useApi } from "../../hooks/useApi";
 import { apiErrorMessage } from "../../lib/api";
-import { gradeActivitySubmission, listActivitySubmissions } from "../../lib/services";
-
+import { gradeActivitySubmission,listActivitySubmissions } from "../../lib/services";
+import { EmptyBlock,ErrorBlock,LoadingBlock } from "../common/PageState";
 type Props = { lessonId?: string };
-
 export function ActivityGradingPanel({ lessonId }: Props) {
   const submissions = useApi(`activity-subs-${lessonId ?? "all"}`, () =>
     listActivitySubmissions(lessonId ? { lessonId } : {}),
@@ -18,7 +16,6 @@ export function ActivityGradingPanel({ lessonId }: Props) {
   const [feedback, setFeedback] = useState("");
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
   const filtered = (
     (submissions.data ?? []) as unknown as {
       id: string;
@@ -42,7 +39,6 @@ export function ActivityGradingPanel({ lessonId }: Props) {
       .toLowerCase()
       .includes(needle);
   });
-
   function selectForGrading(s: (typeof filtered)[number]) {
     setGradingId(s.id);
     setScore(String(s.score ?? 1));
@@ -50,7 +46,6 @@ export function ActivityGradingPanel({ lessonId }: Props) {
     setFeedback(s.feedback ?? "");
     setError(null);
   }
-
   async function handleGrade(id: string) {
     setError(null);
     setSaving(true);
@@ -68,7 +63,6 @@ export function ActivityGradingPanel({ lessonId }: Props) {
       setSaving(false);
     }
   }
-
   return (
     <div className="overflow-hidden rounded-box border border-line bg-base-100">
       <div className="border-b border-line bg-base-200/50 px-4 py-3">
@@ -96,7 +90,6 @@ export function ActivityGradingPanel({ lessonId }: Props) {
             </button>
           ) : null}
         </div>
-
         {submissions.loading ? (
           <div className="mt-3">
             <LoadingBlock label="Loading submissions…" />
