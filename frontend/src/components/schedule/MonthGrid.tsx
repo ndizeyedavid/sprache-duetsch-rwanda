@@ -1,6 +1,6 @@
-import { eachDayOfInterval, endOfMonth, endOfWeek, format, isSameMonth, isToday, startOfMonth, startOfWeek } from 'date-fns';
+import { eachDayOfInterval,endOfMonth,endOfWeek,format,isSameMonth,isToday,startOfMonth,startOfWeek } from 'date-fns';
 import { FiPlus } from 'react-icons/fi';
-import { sessionTone, sessionStatusLabel } from '../../lib/sessions-ui';
+import { sessionStatusLabel,sessionTone } from '../../lib/sessions-ui';
 import { TONE_CLASSES } from '../../lib/theme';
 
 type Session = { id: string; title: string; startAt: string; status: string };
