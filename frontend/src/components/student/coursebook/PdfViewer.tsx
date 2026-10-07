@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist';
-import type { PDFDocumentProxy, RenderTask } from 'pdfjs-dist';
+import type { PDFDocumentProxy,RenderTask } from 'pdfjs-dist';
+import { getDocument,GlobalWorkerOptions } from 'pdfjs-dist';
 import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+import { useEffect,useRef,useState } from 'react';
+import { FiChevronLeft,FiChevronRight } from 'react-icons/fi';
 
 GlobalWorkerOptions.workerSrc = workerUrl;
 
