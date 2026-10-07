@@ -1,5 +1,5 @@
-import { FiPlus, FiX } from 'react-icons/fi';
-import type { ChangePractice, PracticeDraft } from './practice-draft';
+import { FiPlus,FiX } from 'react-icons/fi';
+import type { ChangePractice,PracticeDraft } from './practice-draft';
 
 export function PracticeQuestionFields({ draft, change }: { draft: PracticeDraft; change: ChangePractice }) {
   if (draft.type === 'MATCHING') return <div className="space-y-3"><p className="text-sm font-medium">Matching pairs</p>{draft.pairs.map((pair, index) => <div key={index} className="flex items-center gap-2"><input required aria-label={`Pair ${index + 1} word`} className="input min-w-0 flex-1" placeholder="Word" value={pair.left} onChange={event => change('pairs', draft.pairs.map((p,i) => i === index ? {...p,left:event.target.value} : p))}/><span className="text-base-content/40">↔</span><input required aria-label={`Pair ${index + 1} match`} className="input min-w-0 flex-1" placeholder="Meaning" value={pair.right} onChange={event => change('pairs', draft.pairs.map((p,i) => i === index ? {...p,right:event.target.value} : p))}/><button type="button" className="btn btn-sm btn-square btn-ghost" aria-label={`Remove pair ${index+1}`} disabled={draft.pairs.length < 2} onClick={() => change('pairs',draft.pairs.filter((_,i)=>i!==index))}><FiX aria-hidden/></button></div>)}<button type="button" className="btn btn-sm btn-ghost" onClick={() => change('pairs',[...draft.pairs,{left:'',right:''}])}><FiPlus aria-hidden/>Add pair</button></div>;
