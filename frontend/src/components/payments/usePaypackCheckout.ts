@@ -8,9 +8,11 @@ export function usePaypackCheckout(onPaid: () => void) {
   const [historyReady, setHistoryReady] = useState(false);
   const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState(false);
+  const [checking, setChecking] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [retryAvailable, setRetryAvailable] = useState(false);
   const inFlight = useRef(false);
+  const refreshInFlight = useRef(false);
   const request = useRef<{ amount: number; phone: string; requestKey: string } | null>(null);
   const paidCallback = useRef(onPaid);
   useEffect(() => { paidCallback.current = onPaid; }, [onPaid]);
@@ -22,12 +24,15 @@ export function usePaypackCheckout(onPaid: () => void) {
   useEffect(() => { void load(); }, [load]);
   const pending = rows.find(isUnresolved);
   const refresh = useCallback(async (id: string) => {
+    if (refreshInFlight.current) return;
+    refreshInFlight.current = true; setChecking(true);
     try {
       const next = await checkPayment(id);
       setRows(current => current.map(row => row.id === next.id ? next : row));
       setError(null);
       if (next.status === 'SUCCESSFUL') paidCallback.current();
     } catch (err) { setError(apiErrorMessage(err, 'Could not check payment status.')); }
+    finally { refreshInFlight.current = false; setChecking(false); }
   }, []);
   useEffect(() => {
     if (!pending?.providerRef) return;
@@ -59,5 +64,5 @@ export function usePaypackCheckout(onPaid: () => void) {
   const retry = () => {
     if (request.current) void pay(request.current.amount, request.current.phone);
   };
-  return { historyReady, retry, retryAvailable, rows, pending, loading, busy, error, pay, refresh, load };
+  return { historyReady, retry, retryAvailable, rows, pending, loading, busy, checking, error, pay, refresh, load };
 }
