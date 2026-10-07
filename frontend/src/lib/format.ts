@@ -1,5 +1,9 @@
 const numberFormat = new Intl.NumberFormat('en-US');
 
+export function currencyAmount(amount: number, currency = 'RWF'): string {
+  return `${currency} ${numberFormat.format(amount)}`;
+}
+
 /** Rwandan Franc, e.g. `RWF 45,000`. */
 export function rwf(amount: number): string {
   return `RWF ${numberFormat.format(amount)}`;
