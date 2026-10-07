@@ -9,6 +9,7 @@ import { corsOrigins,defaultEnrollmentOrigins,enrollmentAllowedOrigins,isTest } 
 import { logger } from "./lib/logger.js";
 import { errorHandler,notFoundHandler } from "./middleware/error.js";
 import { globalLimiter } from "./middleware/rate-limit.js";
+import { paypackWebhookRouter } from "./modules/paypack/webhook.routes.js";
 import { apiRouter } from "./routes.js";
 
 export const createApp = (): Express => {
@@ -37,6 +38,7 @@ export const createApp = (): Express => {
     }),
   );
   app.use(compression());
+  app.use("/api/payments/paypack/webhook", paypackWebhookRouter);
   app.use(express.json({ limit: "2mb" }));
   app.use(express.urlencoded({ extended: true, limit: "2mb" }));
   app.use(cookieParser());
