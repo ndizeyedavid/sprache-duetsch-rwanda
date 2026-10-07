@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu,FiX } from 'react-icons/fi';
+import type { MyCourse } from '../../lib/services';
 import { CourseSidebar } from './CourseSidebar';
 import { CoursebookResource } from './coursebook/CoursebookResource';
-import type { MyCourse } from '../../lib/services';
 
 type Props = {
   course: MyCourse;
