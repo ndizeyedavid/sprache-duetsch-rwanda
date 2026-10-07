@@ -1,7 +1,7 @@
+import { FiArrowRight,FiBookOpen,FiMapPin,FiUsers } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiBookOpen, FiMapPin, FiUsers } from 'react-icons/fi';
-import { humanize } from '../../lib/services';
 import type { ClassGroupItem } from '../../lib/services';
+import { humanize } from '../../lib/services';
 
 export function TeacherClassDetailCard({ group }: { group: ClassGroupItem }) {
   return (
