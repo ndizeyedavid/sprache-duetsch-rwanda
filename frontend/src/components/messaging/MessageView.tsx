@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useRef } from 'react';
-import { FiArrowLeft, FiMessageCircle } from 'react-icons/fi';
-import { ErrorBlock, LoadingBlock } from '../common/PageState';
-import { threadTitle, initials, accentFor, dedupeParticipants } from './utils';
-import type { ChatMessage, Conversation } from '../../lib/services';
+import { format,isToday,isYesterday,parseISO } from 'date-fns';
+import { useEffect,useMemo,useRef } from 'react';
+import { FiArrowLeft,FiMessageCircle } from 'react-icons/fi';
+import type { ChatMessage,Conversation } from '../../lib/services';
+import { ErrorBlock,LoadingBlock } from '../common/PageState';
 import { MessageComposer } from './MessageComposer';
-import { format, isToday, isYesterday, parseISO } from 'date-fns';
+import { accentFor,dedupeParticipants,initials,threadTitle } from './utils';
 type Props = { thread: Conversation | null; messages: ChatMessage[]; loading: boolean; error: string | null; onRetry: () => void; myId: string | null | undefined; draft: string; onDraft: (v: string) => void; onSend: () => void; sending: boolean; chatError: string | null; onBack?: () => void };
 function dayLabel(iso:string){const d=parseISO(iso);return isToday(d)?'Today':isYesterday(d)?'Yesterday':format(d,'d MMM yyyy');}
 export function MessageView({ thread, messages, loading, error, onRetry, myId, draft, onDraft, onSend, sending, chatError, onBack }:Props) {
