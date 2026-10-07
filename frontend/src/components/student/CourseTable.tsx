@@ -1,5 +1,5 @@
+import { FiArrowUpRight,FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiArrowUpRight, FiSearch } from 'react-icons/fi';
 import type { MyCourse } from '../../lib/services';
 
 type Props = {
@@ -37,7 +37,7 @@ export function CourseTable({ courses, filter, q, onQ }: Props) {
               <div className="journey-hero relative flex h-44 items-center overflow-hidden p-6">
                 <span aria-hidden className="absolute -right-6 bottom-0 size-44 rounded-full bg-success/10" />
                 <div className="relative z-10 w-[45%]">
-                  <p className="max-w-28 text-[10px] font-semibold uppercase leading-relaxed tracking-[0.2em] text-base-content/60">Your next chapter</p>
+                  <p className="max-w-28 text-[10px] font-semibold uppercase leading-relaxed tracking-[0.2em] text-primary-content">Your next chapter</p>
                   <p className="mt-1 text-5xl font-semibold tracking-tight">{course.level.code}</p>
                 </div>
                 <img
