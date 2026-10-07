@@ -1,4 +1,4 @@
-import { FiArrowUpRight, FiCheck, FiLayers } from 'react-icons/fi';
+import { FiArrowUpRight,FiCheck,FiLayers } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { MyCourse } from '../../lib/services';
 
