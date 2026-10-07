@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import {
-  FiChevronDown,
-  FiGlobe,
-  FiLogOut,
-  FiMenu,
-  FiSettings,
-  FiUser,
+FiChevronDown,
+FiGlobe,
+FiLogOut,
+FiMenu,
+FiSettings,
+FiUser,
 } from "react-icons/fi";
-import { SearchField } from "../ui/SearchField";
+import { Link,useNavigate } from "react-router-dom";
 import { roleLabel } from "../../lib/roles";
 import { useSession } from "../../lib/session";
+import { SearchField } from "../ui/SearchField";
 
 const LANGUAGES = ["Deutsch", "English", "Kinyarwanda"];
 
