@@ -1,7 +1,7 @@
 import { FiZap } from 'react-icons/fi';
 import { isBookPractice } from './course-practice-utils';
-import { PracticeItem } from './practice/PracticeItem';
 import { ExerciseDeck } from './practice/ExerciseDeck';
+import { PracticeItem } from './practice/PracticeItem';
 import type { Activity } from './practice/types';
 export function CoursePractice({ activities }: { activities: Activity[] }) {
   const practice = activities.filter(isBookPractice);
