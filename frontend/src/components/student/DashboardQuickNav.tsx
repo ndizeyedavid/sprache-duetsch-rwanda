@@ -1,4 +1,4 @@
-import { FiArrowUpRight, FiCalendar, FiEdit3, FiMessageCircle, FiStar } from 'react-icons/fi';
+import { FiArrowUpRight,FiCalendar,FiEdit3,FiMessageCircle,FiStar } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 const SHORTCUTS = [
