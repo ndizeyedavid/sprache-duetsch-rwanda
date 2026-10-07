@@ -1,4 +1,4 @@
-import { FiVideo, FiMapPin, FiLayers, FiCalendar } from 'react-icons/fi';
+import { FiCalendar,FiLayers,FiMapPin,FiVideo } from 'react-icons/fi';
 
 export const VIEWS = ['month', 'week', 'agenda'] as const;
 export type ScheduleView = (typeof VIEWS)[number];
