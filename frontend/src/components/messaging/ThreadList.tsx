@@ -1,7 +1,7 @@
-import { FiMessageSquare, FiSearch, FiX } from 'react-icons/fi';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../common/PageState';
-import { relativeTime, snippet, threadTitle, initials, accentFor, dedupeParticipants } from './utils';
+import { FiMessageSquare,FiSearch,FiX } from 'react-icons/fi';
 import type { Conversation } from '../../lib/services';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../common/PageState';
+import { accentFor,dedupeParticipants,initials,relativeTime,snippet,threadTitle } from './utils';
 
 type Props = {
  threads: Conversation[];
