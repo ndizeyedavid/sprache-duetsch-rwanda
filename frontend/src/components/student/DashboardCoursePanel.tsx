@@ -1,4 +1,4 @@
-import { FiArrowUpRight, FiBookOpen, FiCheck, FiPlay } from 'react-icons/fi';
+import { FiArrowUpRight,FiBookOpen,FiCheck,FiPlay } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { MyCourse } from '../../lib/services';
 
@@ -18,7 +18,7 @@ export function DashboardCoursePanel({ courses, course, onSelect }: Props) {
         {courses.map((item) => <button key={item.level.id} type="button" aria-pressed={item.level.id === course.level.id} onClick={() => onSelect(item.level.id)} className={`btn btn-xs rounded-full ${item.level.id === course.level.id ? 'btn-neutral' : 'btn-ghost'}`}>{item.level.code}</button>)}
       </div> : null}
       <div className="flex items-center gap-4">
-        <span aria-hidden className="journey-hero grid size-14 shrink-0 place-items-center rounded-xl text-xl font-semibold">{course.level.code}</span>
+        <span aria-hidden className="bg-primary text-primary-content grid size-14 shrink-0 place-items-center rounded-xl text-xl font-semibold">{course.level.code}</span>
         <div className="min-w-0 flex-1"><Link to={base} className="text-sm font-semibold hover:underline">{course.level.title}</Link>
           <div className="mt-2 flex items-center gap-3"><progress className="progress progress-primary h-1.5 flex-1" value={course.stats.completionPercentage} max={100} aria-label="Course progress" /><span className="text-xs font-semibold">{course.stats.completionPercentage}%</span></div>
           <p className="mt-1.5 text-[10px] text-base-content/60">{course.stats.completedLessons}/{course.stats.totalLessons} lessons</p>
