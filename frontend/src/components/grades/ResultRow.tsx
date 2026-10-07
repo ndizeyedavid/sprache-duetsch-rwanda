@@ -1,5 +1,5 @@
+import { FiArrowUpRight,FiCheck,FiClock,FiFileText,FiMessageSquare } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiArrowUpRight, FiCheck, FiClock, FiFileText, FiMessageSquare } from 'react-icons/fi';
 import type { GradeEntry } from './result-model';
 import { resultLabels } from './result-model';
 export function ResultRow({ entry: e }: { entry: GradeEntry }) {
