@@ -1,4 +1,4 @@
-import { FiSearch, FiX } from 'react-icons/fi';
+import { FiSearch,FiX } from 'react-icons/fi';
 
 type ClassItem = { id: string; name: string; code: string; level?: { code: string } };
 
