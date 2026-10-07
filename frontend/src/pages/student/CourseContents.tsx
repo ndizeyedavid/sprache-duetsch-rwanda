@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { FiArrowLeft, FiGrid, FiList } from 'react-icons/fi';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useEffect,useMemo,useState } from 'react';
+import { FiArrowLeft,FiGrid,FiList } from 'react-icons/fi';
+import { Link,useParams } from 'react-router-dom';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { HorizontalCourseView } from '../../components/student/HorizontalCourseView';
+import { StudentCourseModules } from '../../components/student/StudentCourseModules';
 import { useApi } from '../../hooks/useApi';
 import { getMyCourses } from '../../lib/services';
-import { StudentCourseModules } from '../../components/student/StudentCourseModules';
-import { HorizontalCourseView } from '../../components/student/HorizontalCourseView';
 
 const LAYOUT_KEY = 'sparch.course.layout';
 
