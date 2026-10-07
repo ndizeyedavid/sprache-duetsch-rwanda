@@ -1,14 +1,14 @@
-import { useMemo, useState, useEffect } from "react";
+import { useEffect,useMemo,useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Panel, SectionHeader } from "../../components/ui/Panel";
 import {
-  EmptyBlock,
-  ErrorBlock,
-  LoadingBlock,
+EmptyBlock,
+ErrorBlock,
+LoadingBlock,
 } from "../../components/common/PageState";
+import { CourseTable } from "../../components/student/CourseTable";
+import { Panel,SectionHeader } from "../../components/ui/Panel";
 import { useApi } from "../../hooks/useApi";
 import { getMyCourses } from "../../lib/services";
-import { CourseTable } from "../../components/student/CourseTable";
 
 type Filter = "all" | "enrolled" | "completed";
 
