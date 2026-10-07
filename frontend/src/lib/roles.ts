@@ -1,7 +1,6 @@
 import type { AuthRole } from './auth-store';
 
-// Role groups mirror the backend (`src/lib/roles.ts`) so the UI never offers an
-// action the API will reject with 403.
+// Keep role permissions synchronized with backend/src/lib/roles.ts.
 export const STUDENT_ROLES: AuthRole[] = ['STUDENT'];
 export const TEACHER_ROLES: AuthRole[] = ['TEACHER'];
 export const ACADEMIC_ROLES: AuthRole[] = ['TEACHER', 'ACADEMIC_ADMIN', 'SUPER_ADMIN'];
