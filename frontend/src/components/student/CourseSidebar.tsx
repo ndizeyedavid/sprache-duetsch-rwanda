@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { FiCheck,FiChevronDown,FiChevronRight,FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiCheck, FiChevronDown, FiChevronRight, FiSearch } from 'react-icons/fi';
 import type { MyCourse } from '../../lib/services';
 
 type Props = { course: MyCourse; slug: string; activeLessonId: string | null; collapsed: Set<string>; onToggle: (id: string) => void; onSelect?: (id: string) => void };
@@ -11,7 +11,7 @@ export function CourseSidebar({ course, slug, activeLessonId, collapsed, onToggl
   const modules = course.modules.slice().sort((a, b) => a.order - b.order);
   const matches = modules.some(m => m.lessons.some(l => l.title.toLowerCase().includes(needle)) || m.title.toLowerCase().includes(needle));
   return <nav aria-label="Course content" className="card overflow-hidden border border-base-300/70 bg-base-100">
-    <div className="journey-hero relative border-b border-base-300/60 p-5"><img src="/illustrations/study-books.webp" alt="" aria-hidden="true" width={400} height={366} className="pointer-events-none absolute right-3 top-3 h-14 w-16 object-contain" /><p className="pr-14 text-[10px] font-semibold uppercase tracking-widest text-primary">{course.level.code} · Learning guide</p><Link to={`/courses/${slug}`} className="mt-2 block pr-12 text-base font-semibold leading-snug">{course.level.title}</Link><div className="mt-4 flex justify-between text-[10px] text-base-content/60"><span>{course.stats.completedLessons}/{course.stats.totalLessons} complete</span><span>{course.stats.completionPercentage}%</span></div><progress className="progress mt-2 h-1.5 w-full text-primary" value={course.stats.completedLessons} max={course.stats.totalLessons || 1} aria-label="Course completion" /></div>
+    <div className="journey-hero relative border-b border-base-300/60 p-5"><img src="/illustrations/study-books.webp" alt="" aria-hidden="true" width={400} height={366} className="pointer-events-none absolute right-3 top-3 h-14 w-16 object-contain" /><p className="pr-14 text-[10px] font-semibold uppercase tracking-widest text-primary-content">{course.level.code} · Learning guide</p><Link to={`/courses/${slug}`} className="mt-2 block pr-12 text-base font-semibold leading-snug">{course.level.title}</Link><div className="mt-4 flex justify-between text-[10px] text-primary-content"><span>{course.stats.completedLessons}/{course.stats.totalLessons} complete</span><span>{course.stats.completionPercentage}%</span></div><progress className="progress mt-2 h-1.5 w-full text-primary-content" value={course.stats.completedLessons} max={course.stats.totalLessons || 1} aria-label="Course completion" /></div>
     <div className="p-3"><label className="input input-sm w-full rounded-xl border-base-300 bg-base-200/40"><FiSearch aria-hidden /><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Find a lesson…" aria-label="Find a course lesson" />{query ? <button type="button" onClick={() => setQuery('')} aria-label="Clear lesson search" className="btn btn-ghost btn-xs btn-circle">×</button> : null}</label></div>
     <div className="px-2 pb-3">{modules.map((m, i) => {
       const lessons = m.lessons.slice().sort((a, b) => a.order - b.order).filter(l => !needle || m.title.toLowerCase().includes(needle) || l.title.toLowerCase().includes(needle));
