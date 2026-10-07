@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useApi } from '../../hooks/useApi';
 import { listMyHomework } from '../../lib/homework';
-import { statusLabels, dateLabel } from '../assignments/homework/format';
+import { dateLabel,statusLabels } from '../assignments/homework/format';
 export function HomeworkGrades() {
   const data = useApi('homework-grades', listMyHomework);
   const reviewed = (data.data ?? []).filter(a => a.submissions?.some(s => ['GRADED', 'RETURNED', 'SUBMITTED'].includes(s.status)));
