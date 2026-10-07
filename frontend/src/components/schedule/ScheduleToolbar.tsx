@@ -1,8 +1,8 @@
-import { FiChevronLeft, FiChevronRight, FiPlus } from 'react-icons/fi';
 import { format } from 'date-fns';
-import { VIEWS, VIEW_LABEL } from './constants';
-import { weekRangeLabel } from './utils';
+import { FiChevronLeft,FiChevronRight,FiPlus } from 'react-icons/fi';
 import type { ScheduleView } from './constants';
+import { VIEWS,VIEW_LABEL } from './constants';
+import { weekRangeLabel } from './utils';
 type Props = { view: ScheduleView; onView: (v: ScheduleView) => void; anchor: Date; onPrev: () => void; onNext: () => void; onToday: () => void; onNew: () => void; canCreate: boolean };
 export function ScheduleToolbar({ view, onView, anchor, onPrev, onNext, onToday, onNew, canCreate }: Props) {
   return <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
