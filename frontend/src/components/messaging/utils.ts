@@ -1,4 +1,4 @@
-import { formatDistanceToNow, parseISO } from 'date-fns';
+import { formatDistanceToNow,parseISO } from 'date-fns';
 import type { Conversation } from '../../lib/services';
 
 export function dedupeParticipants<T extends { user: { id: string } }>(participants: T[]): T[] {
