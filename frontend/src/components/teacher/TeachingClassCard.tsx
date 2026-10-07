@@ -1,4 +1,4 @@
-import { FiArrowRight, FiUsers } from 'react-icons/fi';
+import { FiArrowRight,FiUsers } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { ClassGroupItem } from '../../lib/services';
 import { humanize } from '../../lib/services';
