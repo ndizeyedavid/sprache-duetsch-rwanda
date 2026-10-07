@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { FiCheck, FiUploadCloud } from 'react-icons/fi';
+import { FiCheck,FiUploadCloud } from 'react-icons/fi';
 import { apiErrorMessage } from '../../../lib/api';
-import { createMaterial, updateMaterial, uploadFile, humanize } from '../../../lib/services';
 import type { LessonMaterial } from '../../../lib/services';
+import { createMaterial,humanize,updateMaterial,uploadFile } from '../../../lib/services';
 import { StudioDialog } from '../StudioDialog';
 import { MATERIAL_TYPES } from '../constants';
 
