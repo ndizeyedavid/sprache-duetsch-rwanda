@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiAlertCircle, FiCheck, FiLock } from 'react-icons/fi';
+import { FiAlertCircle,FiCheck,FiLock } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
 import { changeMyPassword } from '../../lib/services';
 
