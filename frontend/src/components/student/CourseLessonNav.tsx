@@ -1,8 +1,8 @@
-import { FiBookOpen, FiCheckCircle, FiClock, FiPlayCircle } from 'react-icons/fi';
+import { FiBookOpen,FiCheckCircle,FiClock,FiPlayCircle } from 'react-icons/fi';
+import type { MyCourse } from '../../lib/services';
+import { humanize } from '../../lib/services';
 import { ProgressBar } from '../ui/ProgressBar';
 import { StatusBadge } from '../ui/StatusBadge';
-import { humanize } from '../../lib/services';
-import type { MyCourse } from '../../lib/services';
 
 type Props = {
   course: MyCourse;
