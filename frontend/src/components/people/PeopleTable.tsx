@@ -1,6 +1,6 @@
-import { FiMail, FiMessageCircle } from "react-icons/fi";
-import { StatusBadge } from "../ui/StatusBadge";
+import { FiMail,FiMessageCircle } from "react-icons/fi";
 import { humanize } from "../../lib/services";
+import { StatusBadge } from "../ui/StatusBadge";
 import { initials } from "./utils";
 
 type Person = {
