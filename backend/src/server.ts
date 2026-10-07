@@ -4,6 +4,9 @@ import { logger } from "./lib/logger.js";
 import { prisma } from "./lib/prisma.js";
 import { startReminderJobs } from "./lib/reminders.js";
 
+import { startPaypackReconciliation } from "./modules/paypack/reconciliation.js";
+
+const paypackJob = startPaypackReconciliation();
 const app = createApp();
 
 const server = app.listen(env.PORT, () => {
@@ -18,6 +21,7 @@ const shutdown = (signal: string): void => {
     return;
   }
   shuttingDown = true;
+  void paypackJob?.stop();
   logger.info({ signal }, "Shutting down");
 
   const forceExit = setTimeout(() => {
