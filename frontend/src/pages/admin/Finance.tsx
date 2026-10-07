@@ -1,17 +1,20 @@
+import { FiAlertCircle,FiDollarSign,FiTrendingDown,FiTrendingUp } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiAlertCircle, FiDollarSign, FiTrendingDown, FiTrendingUp } from 'react-icons/fi';
-import { Panel, SectionHeader } from '../../components/ui/Panel';
-import { StatTile } from '../../components/ui/StatTile';
+import { AcademicMetricCard } from '../../components/admin/AcademicMetricCard';
+import { AcademicRateGauge } from '../../components/admin/AcademicRateGauge';
 import { GroupedBar } from '../../components/charts/GroupedBar';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { Panel,SectionHeader } from '../../components/ui/Panel';
 import { useApi } from '../../hooks/useApi';
+import { currencyAmount } from '../../lib/format';
+import { getFinanceDashboard,listCampuses,listLevels,money } from '../../lib/services';
+import { PaypackMonitor } from '../../components/payments/PaypackMonitor';
 import { COLORS } from '../../lib/theme';
-import { rwf } from '../../lib/format';
-import { getFinanceDashboard, listLevels, money } from '../../lib/services';
 
 export function AdminFinance() {
  const dashboard = useApi('finance-dashboard', getFinanceDashboard);
  const levels = useApi('levels-catalog', listLevels);
+ const campuses = useApi('finance-campus-labels', listCampuses);
 
  if (dashboard.loading) return <LoadingBlock label="Loading finance overview…" />;
  if (dashboard.error || !dashboard.data) {
@@ -19,6 +22,7 @@ export function AdminFinance() {
  }
 
  const data = dashboard.data;
+ const format = (amount: number) => currencyAmount(amount, data.currency);
  const levelName = (id: string): string =>
  levels.data?.find((level) => level.id === id)?.code ?? 'Unassigned';
 
@@ -30,11 +34,12 @@ export function AdminFinance() {
 
  return (
  <div className="space-y-5">
+ <PaypackMonitor />
  <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
- <StatTile label="Total billed" value={rwf(money(data.totalBilled))} tone="navy" variant="solid" icon={FiDollarSign} />
- <StatTile label="Collected" value={rwf(money(data.totalCollected))} tone="brand" variant="solid" icon={FiTrendingUp} />
- <StatTile label="Outstanding" value={rwf(money(data.totalOutstanding))} tone="coral" variant="solid" icon={FiTrendingDown} />
- <StatTile label="Overdue accounts" value={String(data.overdueCount)} tone="sun" variant="solid" icon={FiAlertCircle} />
+ <AcademicMetricCard label="Total billed" value={format(money(data.totalBilled))} note="Charges less approved discounts" icon={FiDollarSign} />
+ <AcademicMetricCard label="Collected" value={format(money(data.totalCollected))} note="Payments less refunds" tone="success" icon={FiTrendingUp} />
+ <AcademicMetricCard label="Outstanding" value={format(money(data.totalOutstanding))} note="Current unpaid obligations" tone="warning" icon={FiTrendingDown} />
+ <AcademicMetricCard label="Overdue accounts" value={data.overdueCount} note="Accounts requiring payment follow-up" tone="info" icon={FiAlertCircle} />
  </div>
 
  <div className="grid gap-5 lg:grid-cols-3">
@@ -58,9 +63,9 @@ export function AdminFinance() {
 
  <Panel>
  <SectionHeader title="Collection rate" />
- <p className="text-3xl font-semibold text-brand">{data.collectionRate}%</p>
+ <div className="my-5 flex justify-center"><AcademicRateGauge value={data.collectionRate} label="Tuition collection rate" /></div>
  <p className="mt-1 text-xs text-muted">
- {rwf(money(data.totalCollected))} of {rwf(money(data.totalBilled))} collected.
+ {format(money(data.totalCollected))} of {format(money(data.totalBilled))} collected.
  </p>
  <Link
  to="/admin/transactions"
@@ -81,10 +86,9 @@ export function AdminFinance() {
  {data.byPaymentMethod.map((row) => (
  <li
  key={row.methodId}
- className="flex items-center justify-between gap-3 rounded-field bg-base-200 px-3 py-2 text-xs"
+ className="rounded-box border border-base-300/60 bg-base-100 p-4 text-xs"
  >
- <span className="font-medium">{row.name ?? 'Unknown method'}</span>
- <span className="font-semibold text-brand">{rwf(money(row.total))}</span>
+ <div className="flex flex-wrap items-center justify-between gap-2"><span className="font-medium">{row.name ?? 'Unknown method'}</span><span className="font-semibold">{format(money(row.total))}</span></div><progress aria-label={`${row.name ?? 'Payment method'} share of collected payments`} className="progress progress-success mt-3 h-1.5 w-full" value={money(row.total)} max={Math.max(1, money(data.totalCollected))} />
  </li>
  ))}
  </ul>
@@ -100,11 +104,11 @@ export function AdminFinance() {
  {data.byCampus.map((row) => (
  <li
  key={row.key}
- className="flex items-center justify-between gap-3 rounded-field bg-base-200 px-3 py-2 text-xs"
+ className="flex flex-wrap items-center justify-between gap-3 rounded-box border border-base-300/60 bg-base-100 p-4 text-xs"
  >
- <span className="font-medium">{row.key === 'UNASSIGNED' ? 'Unassigned' : row.key}</span>
+ <span className="font-medium">{campuses.data?.find(c => c.id === row.key)?.name ?? (row.key === 'UNASSIGNED' ? 'Unassigned' : 'Campus')}</span>
  <span className="text-muted">
- {rwf(money(row.collected))} / {rwf(money(row.billed))}
+ {format(money(row.collected))} / {format(money(row.billed))}
  </span>
  </li>
  ))}
