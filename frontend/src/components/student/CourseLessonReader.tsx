@@ -1,14 +1,14 @@
-import { useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
-import { FiArrowLeft, FiArrowRight, FiBookOpen } from 'react-icons/fi';
+import { useMemo,useState } from 'react';
+import { FiArrowLeft,FiArrowRight,FiBookOpen } from 'react-icons/fi';
 import { RichTextViewer } from '../ui/RichTextViewer';
-import { normalizeRepeatedTables } from './reading-tables';
-import { normalizeReadingLists } from './reading-lists';
-import { normalizeTypingTable } from './typing-table';
 import { normalizeBulletLists } from './bullet-lists';
 import { repairNumberTable } from './number-table';
 import { normalizePracticeReading } from './practice-reading';
 import { normalizePracticeText } from './practice-text';
+import { normalizeReadingLists } from './reading-lists';
+import { normalizeRepeatedTables } from './reading-tables';
+import { normalizeTypingTable } from './typing-table';
 
 function sections(html: string) {
   const document = new DOMParser().parseFromString(html, 'text/html');
