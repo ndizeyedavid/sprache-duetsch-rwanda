@@ -1,5 +1,5 @@
-import { FiArrowDownRight, FiArrowUpRight, FiMinus } from "react-icons/fi";
-import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { FiArrowDownRight,FiArrowUpRight,FiMinus } from "react-icons/fi";
+import { Area,AreaChart,ResponsiveContainer,Tooltip,XAxis,YAxis } from "recharts";
 import type { MyAttempt } from "../../lib/services";
 import { trendDirection } from "./utils";
 
