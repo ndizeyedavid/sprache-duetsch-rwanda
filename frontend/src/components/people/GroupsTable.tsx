@@ -1,4 +1,4 @@
-import { FiBookOpen, FiMapPin, FiUsers } from "react-icons/fi";
+import { FiBookOpen,FiMapPin,FiUsers } from "react-icons/fi";
 
 type Group = {
   id: string;
