@@ -1,8 +1,8 @@
-import { FiArrowRight, FiCheckCircle, FiClock, FiEdit3 } from 'react-icons/fi';
+import { FiArrowRight,FiCheckCircle,FiClock,FiEdit3 } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { MyAssessment } from '../../lib/services';
-import { pct } from './utils';
 import { TYPE_LABEL } from './constants';
+import { pct } from './utils';
 
 type Props = { assessment: MyAssessment; whatIfOn: boolean; projected?: number; onProjection: (value: number | null) => void };
 export function GradeResultCard({ assessment: a, whatIfOn, projected, onProjection }: Props) {
