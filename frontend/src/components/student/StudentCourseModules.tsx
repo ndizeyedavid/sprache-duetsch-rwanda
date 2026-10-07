@@ -1,7 +1,7 @@
-import '../../styles/lesson-map.css';
 import { useState } from 'react';
-import { FiCheck, FiPlay, FiSearch, FiX } from 'react-icons/fi';
+import { FiCheck,FiPlay,FiSearch,FiX } from 'react-icons/fi';
 import type { MyCourse } from '../../lib/services';
+import '../../styles/lesson-map.css';
 import { JourneyModule } from './JourneyModule';
 
 type Props = { course: MyCourse; slug: string; layout?: 'vertical' | 'horizontal' };
