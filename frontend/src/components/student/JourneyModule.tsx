@@ -1,5 +1,5 @@
 import { useId } from 'react';
-import { FiCheck, FiChevronDown } from 'react-icons/fi';
+import { FiCheck,FiChevronDown } from 'react-icons/fi';
 import type { MyModule } from '../../lib/services';
 import { JourneyLessonCard } from './JourneyLessonCard';
 import { useLessonCanvas } from './useLessonCanvas';
