@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect,useRef,useState } from 'react';
 
 type Point = { x: number; y: number; width: number };
 type CanvasLayout = { columns: number; width: number; height: number; paths: string[] };
