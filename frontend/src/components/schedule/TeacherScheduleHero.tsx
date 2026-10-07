@@ -1,5 +1,5 @@
-import { FiCalendar, FiArrowUpRight } from 'react-icons/fi';
 import { format } from 'date-fns';
+import { FiArrowUpRight,FiCalendar } from 'react-icons/fi';
 import type { SessionItem } from '../../lib/services';
 export function TeacherScheduleHero({ sessions, onOpen }: { sessions: SessionItem[]; onOpen: (id: string) => void }) {
   const next = sessions.filter(s => ['LIVE','SCHEDULED','RESCHEDULED'].includes(s.status) && Date.parse(s.endAt)>Date.now()).sort((a,b) => Number(b.status==='LIVE')-Number(a.status==='LIVE') || Date.parse(a.startAt)-Date.parse(b.startAt))[0];
