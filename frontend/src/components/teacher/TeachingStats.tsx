@@ -1,4 +1,4 @@
-import { FiBookOpen, FiUsers, FiClipboard, FiCheckSquare } from 'react-icons/fi';
+import { FiBookOpen,FiCheckSquare,FiClipboard,FiUsers } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { TeachingOverview } from './dashboard-data';
 export function TeachingStats({ data:d }: { data:TeachingOverview }) {
