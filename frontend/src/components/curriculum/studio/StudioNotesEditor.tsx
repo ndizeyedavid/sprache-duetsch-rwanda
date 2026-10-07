@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
-import { EditorContent, useEditor } from '@tiptap/react';
-import StarterKit from '@tiptap/starter-kit';
-import Image from '@tiptap/extension-image';
-import Placeholder from '@tiptap/extension-placeholder';
-import { TextStyle } from '@tiptap/extension-text-style';
 import Color from '@tiptap/extension-color';
 import Highlight from '@tiptap/extension-highlight';
+import Image from '@tiptap/extension-image';
+import Placeholder from '@tiptap/extension-placeholder';
 import TextAlign from '@tiptap/extension-text-align';
+import { TextStyle } from '@tiptap/extension-text-style';
+import { EditorContent,useEditor } from '@tiptap/react';
+import StarterKit from '@tiptap/starter-kit';
+import { useEffect } from 'react';
 import { noteTableNodes } from './note-table-nodes';
 import { NotesToolbar } from './NotesToolbar';
 
