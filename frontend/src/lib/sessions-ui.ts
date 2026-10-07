@@ -1,4 +1,4 @@
-import type { LiveClassStatus, Tone } from '../types';
+import type { LiveClassStatus,Tone } from '../types';
 
 export function sessionStatusLabel(status: string): LiveClassStatus {
   switch (status) {
