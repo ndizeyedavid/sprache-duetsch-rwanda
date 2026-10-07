@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect,useRef } from 'react';
 import { FiSend } from 'react-icons/fi';
 type Props = { draft: string; onDraft: (v: string) => void; onSend: () => void; sending: boolean };
 export function MessageComposer({ draft, onDraft, onSend, sending }: Props) {
