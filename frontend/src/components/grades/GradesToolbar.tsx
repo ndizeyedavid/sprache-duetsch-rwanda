@@ -1,4 +1,4 @@
-import { FiDownload, FiSearch } from "react-icons/fi";
+import { FiDownload,FiSearch } from "react-icons/fi";
 
 type Props = {
   search: string;
