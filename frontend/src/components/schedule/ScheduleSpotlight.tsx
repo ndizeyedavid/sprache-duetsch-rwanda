@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { FiArrowUpRight, FiClock } from 'react-icons/fi';
+import { FiArrowUpRight,FiClock } from 'react-icons/fi';
 import type { ScheduleSession } from './ScheduleSessionCard';
 
 export function ScheduleSpotlight({ sessions, onOpen, teacher = false }: { sessions: ScheduleSession[]; onOpen: (id: string) => void; teacher?: boolean }) {
