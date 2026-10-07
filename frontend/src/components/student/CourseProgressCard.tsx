@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { RadialStat } from '../charts/RadialStat';
 
 type Props = { completion: number; code: string | null; nextTitle: string | null };
