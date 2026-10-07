@@ -1,6 +1,6 @@
+import { addMonths,addWeeks,endOfWeek,format,isValid,parseISO,startOfWeek } from 'date-fns';
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { addMonths, addWeeks, endOfWeek, format, isValid, parseISO, startOfWeek } from 'date-fns';
 import type { ScheduleView } from './constants';
 export function useScheduleNavigation() {
   const [params, setParams] = useSearchParams();
