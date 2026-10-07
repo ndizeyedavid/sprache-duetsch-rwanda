@@ -44,7 +44,7 @@ export function DocumentsView({
 
       <p className="flex items-start gap-2 px-1 text-xs leading-5 text-muted">
         <FiFileText aria-hidden className="mt-0.5 shrink-0" />
-        Certificates are issued by the academic office once you pass. Every payment recorded by finance gets a
+        Certificates are issued by the academic office once you pass. Every confirmed payment gets a
         receipt you can download here.
       </p>
 
