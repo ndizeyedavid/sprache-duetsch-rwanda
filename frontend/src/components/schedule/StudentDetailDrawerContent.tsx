@@ -1,9 +1,9 @@
-import { SessionMaterials } from './SessionMaterials';
-import type { SessionMaterial } from './SessionMaterials';
-import { FiCalendar, FiClock, FiExternalLink, FiLink, FiMapPin, FiVideo, FiX, FiUser } from 'react-icons/fi';
-import { isoDate, isoTime } from '../../lib/services';
-import { sessionStatusLabel, sessionTone, teacherName } from '../../lib/sessions-ui';
+import { FiCalendar,FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
+import { isoDate,isoTime } from '../../lib/services';
+import { sessionStatusLabel,sessionTone,teacherName } from '../../lib/sessions-ui';
 import { TONE_CLASSES } from '../../lib/theme';
+import type { SessionMaterial } from './SessionMaterials';
+import { SessionMaterials } from './SessionMaterials';
 
 export type StudentSessionDetail = {
   id: string;
