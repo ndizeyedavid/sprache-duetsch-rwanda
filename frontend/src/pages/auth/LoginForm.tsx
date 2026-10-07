@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
 import type { FormEvent } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect,useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
+import { Link,useNavigate } from 'react-router-dom';
+import { GoogleButton } from '../../components/auth/GoogleButton';
 import { apiErrorMessage } from '../../lib/api';
 import { login } from '../../lib/auth-store';
 import { homePath } from '../../lib/roles';
 import { useSession } from '../../lib/session';
-import { GoogleButton } from '../../components/auth/GoogleButton';
 
 export function LoginForm() {
  const navigate = useNavigate();
@@ -15,6 +15,7 @@ export function LoginForm() {
  const [password, setPassword] = useState('');
  const [error, setError] = useState<string | null>(null);
  const [pending, setPending] = useState(false);
+ const [remember, setRemember] = useState(true);
 
  // Already signed in? Send the user straight to their dashboard.
  useEffect(() => {
@@ -32,7 +33,7 @@ export function LoginForm() {
   setError(null);
   setPending(true);
   try {
-  const account = await login(email.trim(), password);
+  const account = await login(email.trim(), password, remember);
 
   await refresh();
   navigate(homePath[account.role], { replace: true });
@@ -86,12 +87,12 @@ export function LoginForm() {
 
  <div className="flex flex-wrap items-center justify-between gap-3 text-xs">
  <label className="flex items-center gap-2">
- <input type="checkbox" className="checkbox checkbox-sm" />
+ <input type="checkbox" className="checkbox checkbox-sm" checked={remember} onChange={(event) => setRemember(event.currentTarget.checked)} />
  <span className="text-muted">Keep me signed in</span>
  </label>
- <a href="#reset" className="font-medium text-brand hover:underline">
+ <Link to="/forgot-password" className="link link-primary font-medium">
  Forgot password?
- </a>
+ </Link>
  </div>
 
   <button
@@ -105,17 +106,17 @@ export function LoginForm() {
   </button>
   </form>
 
-  <div className="my-4 flex items-center gap-3">
+  {import.meta.env.VITE_GOOGLE_CLIENT_ID?.trim() && <div className="my-4 flex items-center gap-3">
   <span className="h-px flex-1 bg-line" />
   <span className="text-xs text-muted">or</span>
   <span className="h-px flex-1 bg-line" />
-  </div>
+  </div>}
 
-  <GoogleButton onSuccess={handleGoogleSuccess} onError={setError} />
+ <GoogleButton remember={remember} onSuccess={handleGoogleSuccess} onError={setError} />
 
  <p className="mt-6 text-center text-xs text-muted">
  New here?{' '}
- <Link to="/register" className="font-medium text-brand hover:underline">
+ <Link to="/register" className="link link-primary font-medium">
  Create a student account
  </Link>
  </p>
