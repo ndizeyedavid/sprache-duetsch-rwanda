@@ -443,6 +443,7 @@ model Student {
   lessonProgress LessonProgress[]
   activitySubmissions ActivitySubmission[]
   charges        Charge[]
+  checkouts      PaymentCheckout[]
   payments       Payment[]
   discounts      Discount[]
   certificates   Certificate[]
@@ -912,6 +913,7 @@ model Payment {
   receivedBy    User?               @relation("PaymentReceiver", fields: [receivedById], references: [id])
   parentPayment Payment?            @relation("PaymentRefund", fields: [parentPaymentId], references: [id])
   refunds       Payment[]           @relation("PaymentRefund")
+  checkout      PaymentCheckout?
   receipt       Receipt?
 
   @@index([studentId, paidAt])
@@ -1250,4 +1252,44 @@ model UploadedFile {
   uploaderId String
   mimeType String
   createdAt DateTime @default(now())
+}
+
+// Gateway requests remain separate from received money in the ledger.
+enum CheckoutStatus {
+  INITIATING
+  PENDING
+  UNKNOWN
+  SUCCESSFUL
+  FAILED
+}
+
+model PaymentCheckout {
+  id             String         @id @default(uuid())
+  requestKey     String         @unique
+  studentId      String
+  phone          String
+  amount         Decimal        @db.Decimal(12, 2)
+  currency       String         @default("RWF")
+  status         CheckoutStatus @default(INITIATING)
+  providerRef    String?        @unique
+  paymentId      String?        @unique
+  lastCheckedAt  DateTime?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  student        Student        @relation(fields: [studentId], references: [id])
+  payment        Payment?       @relation(fields: [paymentId], references: [id])
+
+  @@index([studentId, createdAt])
+  @@index([status, lastCheckedAt])
+}
+
+// Durable inbox also handles callbacks that arrive before cashin returns.
+model PaypackEvent {
+  id          String   @id
+  providerRef String
+  payload     Json
+  processedAt DateTime?
+  createdAt   DateTime @default(now())
+
+  @@index([providerRef, processedAt])
 }
