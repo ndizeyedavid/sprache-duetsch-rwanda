@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { FiCheck, FiDroplet } from "react-icons/fi";
-import { THEMES, getTheme, setTheme } from "../../lib/theme-store";
+import { FiCheck,FiDroplet } from "react-icons/fi";
 import type { ThemeId } from "../../lib/theme-store";
+import { THEMES,getTheme,setTheme } from "../../lib/theme-store";
 
 export function AppearancePane() {
  const [current, setCurrent] = useState<ThemeId>(getTheme());
