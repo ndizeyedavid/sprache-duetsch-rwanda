@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { FiArrowUpRight, FiClock, FiVideo } from 'react-icons/fi';
+import { FiArrowUpRight,FiClock,FiVideo } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { SessionItem } from '../../lib/services';
 import { isoTime } from '../../lib/services';
