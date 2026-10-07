@@ -4,6 +4,11 @@ import { z } from "zod";
 // Every runtime setting is validated once. Code never reads process.env directly.
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
+  PAYPACK_ENABLED: z.enum(["true", "false"]).default("false"),
+  PAYPACK_CLIENT_ID: z.string().optional(),
+  PAYPACK_CLIENT_SECRET: z.string().optional(),
+  PAYPACK_WEBHOOK_SECRET: z.string().optional(),
+  PAYPACK_WEBHOOK_MODE: z.enum(["development", "production"]).default("development"),
   PORT: z.coerce.number().int().positive().default(4000),
   DATABASE_URL: z.string().min(1, "DATABASE_URL is required"),
   JWT_SECRET: z.string().min(16, "JWT_SECRET must be at least 16 characters"),
@@ -47,7 +52,16 @@ const envSchema = z.object({
   EMAIL_RELAY_SECRET: z.string().optional(),
 });
 
-const parsed = envSchema.safeParse(process.env);
+const parsed = envSchema.superRefine((value, ctx) => {
+  if (value.PAYPACK_ENABLED === "true") {
+    for (const key of ["PAYPACK_CLIENT_ID", "PAYPACK_CLIENT_SECRET", "PAYPACK_WEBHOOK_SECRET"] as const) {
+      if (!value[key]?.trim()) ctx.addIssue({ code: "custom", path: [key], message: "Required when Paypack is enabled" });
+    }
+    if (value.NODE_ENV === "production" && value.PAYPACK_WEBHOOK_MODE !== "production") {
+      ctx.addIssue({ code: "custom", path: ["PAYPACK_WEBHOOK_MODE"], message: "Use production webhook mode in production" });
+    }
+  }
+}).safeParse(process.env);
 
 if (!parsed.success) {
   const issues = parsed.error.issues
