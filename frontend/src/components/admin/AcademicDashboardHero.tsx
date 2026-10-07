@@ -28,13 +28,13 @@ export function AcademicDashboardHero({ firstName }: Props) {
           </Link>
         </div>
       </div>
-      <figure className="relative min-h-36 bg-[#fcf3df] lg:min-h-56">
+      <figure className="relative aspect-[1000/667] bg-[#fcf3df]">
         <img
           src="/illustrations/academic-planning.webp"
           alt="Two educators planning lessons together with books and a laptop"
           width={1000}
           height={667}
-          className="h-full max-h-44 w-full object-cover object-top lg:absolute lg:inset-0 lg:max-h-none"
+          className="absolute inset-0 h-full w-full object-contain"
           fetchPriority="high"
         />
       </figure>
