@@ -65,8 +65,8 @@ export function AssessmentGroups({ levels, selectedLevelId }: Props) {
 
  return (
  <>
- <div className="overflow-hidden rounded-box border border-line bg-base-100">
- <div className="border-b border-line bg-base-200/40 px-4 py-3">
+ <div className="rounded-box border border-line bg-base-100">
+ <div className="rounded-t-box border-b border-line bg-base-200/40 px-4 py-3">
  <div className="flex flex-wrap items-center gap-2">
  <div className="relative grow sm:max-w-sm">
  <FiSearch aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
