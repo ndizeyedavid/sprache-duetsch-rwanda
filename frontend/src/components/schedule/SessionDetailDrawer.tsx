@@ -1,10 +1,10 @@
-import { SessionLifecycle } from './SessionLifecycle';
-import { SessionMaterials } from './SessionMaterials';
-import type { SessionMaterial } from './SessionMaterials';
-import { FiClock, FiExternalLink, FiLink, FiMapPin, FiVideo, FiX, FiCalendar, FiUser } from 'react-icons/fi';
-import { isoDate, isoTime } from '../../lib/services';
-import { sessionStatusLabel, sessionTone, teacherName } from '../../lib/sessions-ui';
+import { FiCalendar,FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
+import { isoDate,isoTime } from '../../lib/services';
+import { sessionStatusLabel,sessionTone,teacherName } from '../../lib/sessions-ui';
 import { TONE_CLASSES } from '../../lib/theme';
+import { SessionLifecycle } from './SessionLifecycle';
+import type { SessionMaterial } from './SessionMaterials';
+import { SessionMaterials } from './SessionMaterials';
 
 type Session = { id: string; title: string; startAt: string; endAt: string; timezone: string | null; mode: string; provider: string | null; status: string; meetingUrl: string | null; room: string | null; notes: string | null; recordingUrl?: string | null; materials?: SessionMaterial[]; teacher: { firstName: string; lastName: string } | null; classGroup: { id: string; name: string } | null };
 
