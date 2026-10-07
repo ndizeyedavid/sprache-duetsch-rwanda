@@ -1,7 +1,7 @@
+import { FiBookOpen,FiGrid } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiBookOpen, FiGrid } from 'react-icons/fi';
-import { ProgressBar } from '../ui/ProgressBar';
 import { COLORS } from '../../lib/theme';
+import { ProgressBar } from '../ui/ProgressBar';
 
 const PALETTE = [COLORS.brand, '#5b8def', COLORS.sun, COLORS.coral, '#4cbc9a', COLORS.navy];
 
