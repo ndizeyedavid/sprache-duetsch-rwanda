@@ -31,7 +31,7 @@ export function ReceiptsCard({ receipts, loading, error, onRetry, pendingId, onD
         onRetry={onRetry}
         isEmpty={!rows.length}
         emptyTitle="No receipts yet"
-        emptyHint="Every payment recorded by the finance office gets a receipt PDF you can download here."
+        emptyHint="Confirmed mobile-money and other payments get a receipt PDF you can download here."
       >
         <ul>
           {rows.map((receipt) => (
@@ -50,14 +50,14 @@ export function ReceiptsCard({ receipts, loading, error, onRetry, pendingId, onD
                 type="button"
                 disabled={pendingId === receipt.id}
                 onClick={() => onDownload(receipt)}
-                className="btn btn-outline btn-xs gap-1.5 rounded-full"
+                className="btn btn-outline btn-sm min-h-10 gap-2"
               >
                 {pendingId === receipt.id ? (
                   <span className="loading loading-spinner loading-xs" />
                 ) : (
                   <FiDownload aria-hidden size={12} />
                 )}
-                Download
+                {pendingId === receipt.id ? 'Downloading…' : 'Download PDF'}
               </button>
             </li>
           ))}
