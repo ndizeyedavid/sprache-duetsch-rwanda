@@ -1,6 +1,6 @@
-import { FiCalendar, FiSearch, FiX } from 'react-icons/fi';
-import { DATE_PRESETS } from './constants';
+import { FiCalendar,FiSearch,FiX } from 'react-icons/fi';
 import type { PresetId } from './constants';
+import { DATE_PRESETS } from './constants';
 
 type Props = {
   preset: PresetId;
