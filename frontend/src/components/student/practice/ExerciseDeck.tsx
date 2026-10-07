@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiArrowLeft, FiArrowRight, FiEdit3 } from 'react-icons/fi';
+import { FiArrowLeft,FiArrowRight,FiEdit3 } from 'react-icons/fi';
 import { PracticeItem } from './PracticeItem';
 import type { Activity } from './types';
 export function ExerciseDeck({ activities }: { activities: Activity[] }) {
