@@ -1,5 +1,5 @@
-import { lazy, Suspense, useEffect, useRef } from 'react';
-import { FiDownload, FiExternalLink, FiX } from 'react-icons/fi';
+import { lazy,Suspense,useEffect,useRef } from 'react';
+import { FiDownload,FiExternalLink,FiX } from 'react-icons/fi';
 
 type Props = { url: string; filename: string; onClose: () => void };
 const PdfViewer = lazy(() => import('./PdfViewer'));
