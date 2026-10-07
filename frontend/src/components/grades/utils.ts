@@ -1,4 +1,4 @@
-import type { MyAssessment, MyAttempt } from "../../lib/services";
+import type { MyAssessment,MyAttempt } from "../../lib/services";
 
 export function pct(score: number | null, max: number): number | null {
   if (score === null || !max) return null;
