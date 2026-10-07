@@ -1,6 +1,6 @@
-import axios, { AxiosError } from 'axios';
-import type { AxiosInstance, AxiosRequestConfig, InternalAxiosRequestConfig } from 'axios';
-import { clearTokens, getAccessToken, getRefreshToken, setTokens } from './auth-store';
+import type { AxiosInstance,AxiosRequestConfig,InternalAxiosRequestConfig } from 'axios';
+import axios,{ AxiosError } from 'axios';
+import { clearTokens,getAccessToken,getRefreshToken,setTokens } from './auth-store';
 
 export const API_BASE_URL =
   import.meta.env.VITE_API_URL?.trim() || 'http://localhost:4000/api';
@@ -15,6 +15,11 @@ type ApiErrorBody = { message?: string; error?: { message?: string; code?: strin
 
 function isAxiosError(error: unknown): error is AxiosError<ApiErrorBody> {
   return error instanceof AxiosError;
+}
+
+/** Status for distinguishing rejected requests from uncertain transport failures. */
+export function apiErrorStatus(error: unknown): number | undefined {
+  return isAxiosError(error) ? error.response?.status : undefined;
 }
 
 /** Extract field-level errors from a 400/409 response shape. */
