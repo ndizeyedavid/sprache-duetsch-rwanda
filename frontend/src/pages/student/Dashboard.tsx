@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { FiArrowUpRight, FiAward } from 'react-icons/fi';
+import { FiArrowUpRight,FiAward } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
 import { DashboardAttendanceCard } from '../../components/student/DashboardAttendanceCard';
 import { DashboardClassCard } from '../../components/student/DashboardClassCard';
 import { DashboardCoursePanel } from '../../components/student/DashboardCoursePanel';
@@ -10,7 +10,7 @@ import { DashboardSkillsCard } from '../../components/student/DashboardSkillsCar
 import { DashboardWeekPanel } from '../../components/student/DashboardWeekPanel';
 import { LearningJourneyHero } from '../../components/student/LearningJourneyHero';
 import { useApi } from '../../hooks/useApi';
-import { getMyCourses, getMySkills, getStudentDashboard } from '../../lib/services';
+import { getMyCourses,getMySkills,getStudentDashboard } from '../../lib/services';
 import { useSession } from '../../lib/session';
 
 export function Dashboard() {
