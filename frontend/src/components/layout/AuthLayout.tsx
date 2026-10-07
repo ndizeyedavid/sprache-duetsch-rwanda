@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link,Outlet } from "react-router-dom";
 import { Logo } from "../ui/Logo";
 const STATS = [
  { label: "Levels", value: "A1–B2" },
