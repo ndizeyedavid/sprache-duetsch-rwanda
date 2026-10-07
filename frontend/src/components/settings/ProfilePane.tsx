@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
-import { FiAlertCircle, FiCheck, FiUpload } from "react-icons/fi";
+import { useEffect,useState } from "react";
+import { FiAlertCircle,FiCheck,FiUpload } from "react-icons/fi";
 import { apiErrorMessage } from "../../lib/api";
-import { updateMyProfile, uploadFile } from "../../lib/services";
+import { updateMyProfile,uploadFile } from "../../lib/services";
 import { useSession } from "../../lib/session";
 
 export function ProfilePane() {
