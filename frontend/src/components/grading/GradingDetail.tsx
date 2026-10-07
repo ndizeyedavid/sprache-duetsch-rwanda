@@ -1,7 +1,7 @@
-import { FiAward, FiChevronLeft, FiChevronRight, FiClock, FiUser } from 'react-icons/fi';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../common/PageState';
-import { StatusBadge } from '../ui/StatusBadge';
+import { FiAward,FiChevronLeft,FiChevronRight,FiClock,FiUser } from 'react-icons/fi';
 import { humanize } from '../../lib/services';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../common/PageState';
+import { StatusBadge } from '../ui/StatusBadge';
 import { AnswerCard } from './AnswerCard';
 
 type Attempt = {
