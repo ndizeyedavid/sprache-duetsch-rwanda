@@ -1,4 +1,4 @@
-import { FiArrowUpRight, FiCheckCircle } from 'react-icons/fi';
+import { FiArrowUpRight,FiCheckCircle } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { StudentDashboard } from '../../lib/services';
 
