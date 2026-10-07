@@ -1,5 +1,5 @@
-import type { Item } from './types';
 import { ExerciseChoices } from './ExerciseChoices';
+import type { Item } from './types';
 export function ExerciseFields({ items, answers, checked, onChange, group }: {
   group: string; items: Item[]; answers: Record<string, string>; checked: boolean; onChange: (id: string, value: string) => void;
 }) {
