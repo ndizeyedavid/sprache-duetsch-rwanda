@@ -1,5 +1,5 @@
 import type { LessonActivity } from '../../../lib/services';
-import { activityConfig, practiceKinds } from './practice-draft';
+import { activityConfig,practiceKinds } from './practice-draft';
 
 export function PracticePreview({ activity }: { activity: LessonActivity }) {
   const config=activityConfig(activity),kind=practiceKinds.find(item=>item.type===activity.type);
