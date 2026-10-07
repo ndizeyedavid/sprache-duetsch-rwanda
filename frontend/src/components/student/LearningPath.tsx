@@ -1,4 +1,4 @@
-import { FiArrowRight, FiCheck, FiFlag, FiPlay } from 'react-icons/fi';
+import { FiArrowRight,FiCheck,FiFlag,FiPlay } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { MyCourse } from '../../lib/services';
 import { Panel } from '../ui/Panel';
