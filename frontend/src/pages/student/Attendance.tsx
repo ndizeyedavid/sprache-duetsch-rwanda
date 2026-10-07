@@ -1,8 +1,8 @@
 import { FiCheckSquare } from 'react-icons/fi';
+import { STATUS_META } from '../../components/attendance/constants';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { getMyAttendance } from '../../lib/services';
-import { ErrorBlock, LoadingBlock, EmptyBlock } from '../../components/common/PageState';
-import { STATUS_META } from '../../components/attendance/constants';
 export function StudentAttendance(){
   const attendance=useApi('my-attendance',getMyAttendance);
   const s=attendance.data?.summary;
