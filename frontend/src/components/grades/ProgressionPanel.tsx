@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import type { MyAssessment, MyAttempt, SkillStat } from "../../lib/services";
+import { Area,AreaChart,Bar,BarChart,CartesianGrid,ResponsiveContainer,Tooltip,XAxis,YAxis } from "recharts";
+import type { MyAssessment,MyAttempt,SkillStat } from "../../lib/services";
 import { CourseTrendCard } from "./CourseTrendCard";
 
 type Props = { assessments: MyAssessment[]; attempts: MyAttempt[]; skills: SkillStat[] | null };
