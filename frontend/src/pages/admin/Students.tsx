@@ -1,15 +1,17 @@
-import { useMemo, useState } from 'react';
-import type { FormEvent } from 'react';
+import { useMemo,useState } from 'react';
 import { FiDownload } from 'react-icons/fi';
-import { Panel, SectionHeader } from '../../components/ui/Panel';
+import { AcademicModalAction } from '../../components/admin/AcademicModalAction';
+import { StudentPlacement } from '../../components/admin/StudentPlacement';
+import { StudentRegisterSummary } from '../../components/admin/StudentRegisterSummary';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { Panel,SectionHeader } from '../../components/ui/Panel';
 import { SearchField } from '../../components/ui/SearchField';
 import { StatusBadge } from '../../components/ui/StatusBadge';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
-import { apiErrorMessage, downloadFile } from '../../lib/api';
+import { apiErrorMessage,downloadFile } from '../../lib/api';
 import { isAcademic } from '../../lib/roles';
+import { humanize,listLevels,listStudents } from '../../lib/services';
 import { useSession } from '../../lib/session';
-import { humanize, listLevels, listStudents, runPlacement } from '../../lib/services';
 
 export function AdminStudents() {
  const { user } = useSession();
@@ -19,34 +21,6 @@ export function AdminStudents() {
  const [query, setQuery] = useState('');
  const [exporting, setExporting] = useState(false);
  const [exportError, setExportError] = useState<string | null>(null);
-
- const [placeStudent, setPlaceStudent] = useState('');
- const [placeScore, setPlaceScore] = useState('');
- const [placeLevel, setPlaceLevel] = useState('');
- const [placeNote, setPlaceNote] = useState('');
- const [placeResult, setPlaceResult] = useState<string | null>(null);
- const [placeError, setPlaceError] = useState<string | null>(null);
- const [placing, setPlacing] = useState(false);
-
- async function handlePlacement(event: FormEvent) {
- event.preventDefault();
- setPlaceError(null);
- setPlaceResult(null);
- setPlacing(true);
- try {
- const result = await runPlacement(placeStudent, {
- score: Number(placeScore),
- recommendedLevelId: placeLevel || undefined,
- note: placeNote.trim() || undefined,
- });
- setPlaceResult(`Score ${result.score} → recommended ${result.recommendedLevel.code} (${result.recommendedLevel.title}).`);
- students.refetch();
- } catch (err) {
- setPlaceError(apiErrorMessage(err, 'Could not save the placement.'));
- } finally {
- setPlacing(false);
- }
- }
 
  async function handleExport() {
  setExportError(null);
@@ -73,54 +47,9 @@ export function AdminStudents() {
 
  return (
  <div className="space-y-5">
- {canPlace ? (
- <Panel>
- <SectionHeader title="Placement test" />
- <form onSubmit={handlePlacement} className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
- <label className="block">
- <span className="mb-1 block text-[11px] font-medium">Student</span>
- <select required value={placeStudent} onChange={(event) => setPlaceStudent(event.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">
- <option value="">Select student</option>
- {(students.data ?? []).map((row) => (
- <option key={row.id} value={row.id}>
- {row.user.firstName} {row.user.lastName}
- </option>
- ))}
- </select>
- </label>
- <label className="block">
- <span className="mb-1 block text-[11px] font-medium">Score (0–100)</span>
- <input required value={placeScore} onChange={(event) => setPlaceScore(event.currentTarget.value)} inputMode="numeric" min={0} max={100} placeholder="e.g. 72" className="input input w-full rounded-field border-line bg-base-200" />
- </label>
- <label className="block">
- <span className="mb-1 block text-[11px] font-medium">Override level</span>
- <select value={placeLevel} onChange={(event) => setPlaceLevel(event.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">
- <option value="">Auto level</option>
- {(levels.data ?? []).map((level) => (
- <option key={level.id} value={level.id}>
- Override: {level.code}
- </option>
- ))}
- </select>
- </label>
- <label className="block">
- <span className="mb-1 block text-[11px] font-medium">Note</span>
- <input value={placeNote} onChange={(event) => setPlaceNote(event.currentTarget.value)} placeholder="Optional note" className="input input w-full rounded-field border-line bg-base-200" />
- </label>
- <div className="flex items-end">
- <button type="submit" disabled={placing} className="btn btn-sm w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- Save placement
- </button>
- </div>
- </form>
- {placeError ? (
- <p role="alert" className="mt-2 text-xs font-medium text-error">
- {placeError}
- </p>
- ) : null}
- {placeResult ? <p className="mt-2 text-xs font-medium text-brand">{placeResult}</p> : null}
- </Panel>
- ) : null}
+ <StudentRegisterSummary rows={students.data} />
+ {canPlace && <AcademicModalAction label="Record placement" title="Placement result" wide>{done => <StudentPlacement students={students.data ?? []} levels={levels.data ?? []} onSaved={() => { students.refetch(); done('Placement saved.'); }} />}</AcademicModalAction>}
+
 
  <Panel>
  <SectionHeader title={`Students (${rows.length})`} />
