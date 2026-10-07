@@ -1,8 +1,8 @@
 import { useApi } from '../../hooks/useApi';
 import { apiGet } from '../../lib/api';
-import { ErrorBlock, LoadingBlock } from '../common/PageState';
-import { StudentDetailDrawerContent } from './StudentDetailDrawerContent';
+import { ErrorBlock,LoadingBlock } from '../common/PageState';
 import type { StudentSessionDetail } from './StudentDetailDrawerContent';
+import { StudentDetailDrawerContent } from './StudentDetailDrawerContent';
 export function StudentSessionDetails({id,onClose}:{id:string;onClose:()=>void}) {
   const detail=useApi(`student-session-${id}`,()=>apiGet<StudentSessionDetail>(`/sessions/me/${id}`));
   if(detail.data)return <StudentDetailDrawerContent session={detail.data} onClose={onClose} />;
