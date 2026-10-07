@@ -1,4 +1,4 @@
-import { apiGet, apiPost } from './api';
+import { apiGet,apiPost } from './api';
 
 const ACCESS_KEY = 'sparch.accessToken';
 const REFRESH_KEY = 'sparch.refreshToken';
@@ -42,30 +42,36 @@ export type RegisterPayload = {
 
 /** Token storage lives here and nowhere else. */
 export function getAccessToken(): string | null {
-  return localStorage.getItem(ACCESS_KEY);
+  return localStorage.getItem(ACCESS_KEY) ?? sessionStorage.getItem(ACCESS_KEY);
 }
 
 export function getRefreshToken(): string | null {
-  return localStorage.getItem(REFRESH_KEY);
+  return localStorage.getItem(REFRESH_KEY) ?? sessionStorage.getItem(REFRESH_KEY);
 }
 
-export function setTokens(accessToken: string, refreshToken: string): void {
-  localStorage.setItem(ACCESS_KEY, accessToken);
-  localStorage.setItem(REFRESH_KEY, refreshToken);
+export function setTokens(accessToken: string, refreshToken: string, remember = localStorage.getItem(ACCESS_KEY) !== null): void {
+  const storage = remember ? localStorage : sessionStorage;
+  const other = remember ? sessionStorage : localStorage;
+  other.removeItem(ACCESS_KEY);
+  other.removeItem(REFRESH_KEY);
+  storage.setItem(ACCESS_KEY, accessToken);
+  storage.setItem(REFRESH_KEY, refreshToken);
 }
 
 export function clearTokens(): void {
   localStorage.removeItem(ACCESS_KEY);
   localStorage.removeItem(REFRESH_KEY);
+  sessionStorage.removeItem(ACCESS_KEY);
+  sessionStorage.removeItem(REFRESH_KEY);
 }
 
 export function isSignedIn(): boolean {
   return getAccessToken() !== null;
 }
 
-export async function login(email: string, password: string): Promise<AuthUser> {
+export async function login(email: string, password: string, remember = true): Promise<AuthUser> {
   const result = await apiPost<LoginResult>('/auth/login', { email, password });
-  setTokens(result.tokens.accessToken, result.tokens.refreshToken);
+  setTokens(result.tokens.accessToken, result.tokens.refreshToken, remember);
   return result.user;
 }
 
