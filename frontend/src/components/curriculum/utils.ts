@@ -1,4 +1,4 @@
-import { FiBookOpen, FiFileText, FiFilm, FiLayers, FiMusic } from "react-icons/fi";
+import { FiBookOpen,FiFileText,FiFilm,FiLayers,FiMusic } from "react-icons/fi";
 import type { ActivityQuestion } from "./types";
 
 export function contentIcon(type: string) {
