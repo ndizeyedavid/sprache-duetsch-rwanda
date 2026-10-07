@@ -1,6 +1,6 @@
 import { FiTrash2 } from 'react-icons/fi';
 import { StudioDialog } from '../StudioDialog';
-import type { ChangeLesson, LessonDraft } from './lesson-draft';
+import type { ChangeLesson,LessonDraft } from './lesson-draft';
 import { formatNames } from './lesson-draft';
 
 type Props = { draft: LessonDraft; change: ChangeLesson; busy: boolean; onClose: () => void; onDelete: () => void; onUnpublish: () => void };
