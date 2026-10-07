@@ -1,9 +1,9 @@
-import { FiCalendar, FiCheckCircle } from 'react-icons/fi';
-import { groupByDay } from './utils';
+import { FiCalendar,FiCheckCircle } from 'react-icons/fi';
 import { AgendaDayHeading } from './AgendaDayHeading';
+import type { ScheduleSession } from './ScheduleSessionCard';
 import { SessionRow } from './SessionRow';
 import { StudentSessionRow } from './StudentSessionRow';
-import type { ScheduleSession } from './ScheduleSessionCard';
+import { groupByDay } from './utils';
 
 type Props = { sessions: ScheduleSession[]; onOpen: (id: string) => void; onEdit?: (id: string) => void; onCancel?: (id: string) => void };
 export function ScheduleAgenda({ sessions, onOpen, onEdit, onCancel }: Props) {
