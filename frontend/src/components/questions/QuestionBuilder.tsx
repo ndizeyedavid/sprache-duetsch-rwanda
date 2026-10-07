@@ -1,0 +1,9 @@
+import { FiPlus } from 'react-icons/fi';
+import { AuthoredQuestionCard } from './AuthoredQuestionCard';
+import type { AuthoredQuestion } from './types';
+import { newQuestion } from './types';
+export function QuestionBuilder({ value, onChange, locked = false }: { value: AuthoredQuestion[]; onChange: (q: AuthoredQuestion[]) => void; locked?: boolean }) {
+  const points = value.reduce((sum, q) => sum + Number(q.points || 0), 0);
+  function move(index: number, delta: number) { const next = [...value]; [next[index], next[index + delta]] = [next[index + delta], next[index]]; onChange(next); }
+  return <section className="space-y-4"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-sm font-semibold">Questions</h2><p className="mt-1 text-xs text-base-content/60">{value.length}/50 questions · {points} total points</p></div><button type="button" className="btn btn-sm rounded-full" disabled={locked || value.length >= 50} onClick={() => onChange([...value, newQuestion()])}><FiPlus aria-hidden />Add question</button></div>{!value.length ? <div className="rounded-box border border-dashed border-base-300 p-6 text-center"><p className="text-sm font-medium">Write your first question</p><p className="mt-2 text-xs leading-6 text-base-content/60">Choose multiple choice, true or false, a blank, or a written answer. Mark the correct answers to enable suggested grading.</p></div> : value.map((q, index) => <AuthoredQuestionCard key={q.id} value={q} index={index} count={value.length} locked={locked} onChange={updated => onChange(value.map(item => item.id === q.id ? updated : item))} onRemove={() => onChange(value.filter(item => item.id !== q.id))} onMove={delta => move(index, delta)} />)}{locked ? <p className="text-xs text-base-content/60">Questions stay fixed after students submit.</p> : null}</section>;
+}
