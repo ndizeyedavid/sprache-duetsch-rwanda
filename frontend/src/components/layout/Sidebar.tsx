@@ -1,11 +1,11 @@
+import { FiLogOut,FiSettings } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import { FiLogOut, FiSettings } from "react-icons/fi";
+import { NAV } from "../../lib/nav";
+import { useSession } from "../../lib/session";
+import type { Role } from "../../types";
 import { Logo } from "../ui/Logo";
 import { SidebarLink } from "./SidebarLink";
-import { NAV_DIVIDER_MY, NAV_ITEM_PAD_Y, NAV_SECTION_PAD_Y } from "./constants";
-import { NAV } from "../../lib/nav";
-import type { Role } from "../../types";
-import { useSession } from "../../lib/session";
+import { NAV_DIVIDER_MY,NAV_ITEM_PAD_Y,NAV_SECTION_PAD_Y } from "./constants";
 
 type SidebarProps = {
   role: Role;
