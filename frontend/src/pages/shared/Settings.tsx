@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { useSearchParams } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
-import { Panel } from "../../components/ui/Panel";
-import { SettingsNav } from "../../components/settings/SettingsNav";
-import type { SettingsTab } from "../../components/settings/SettingsNav";
-import { ProfilePane } from "../../components/settings/ProfilePane";
-import { SecurityPane } from "../../components/settings/SecurityPane";
+import { useSearchParams } from "react-router-dom";
 import { AppearancePane } from "../../components/settings/AppearancePane";
 import { NotificationsPane } from "../../components/settings/NotificationsPane";
+import { ProfilePane } from "../../components/settings/ProfilePane";
+import { SecurityPane } from "../../components/settings/SecurityPane";
+import type { SettingsTab } from "../../components/settings/SettingsNav";
+import { SettingsNav } from "../../components/settings/SettingsNav";
+import { Panel } from "../../components/ui/Panel";
 
 export function Settings() {
  const [searchParams, setSearchParams] = useSearchParams();
