@@ -1,4 +1,4 @@
-import { statusTone, TONE_SURFACE } from '../../lib/status';
+import { statusTone,TONE_SURFACE } from '../../lib/status';
 
 type StatusBadgeProps = {
  status: string;
