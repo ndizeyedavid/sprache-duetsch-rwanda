@@ -1,5 +1,5 @@
 import type { Editor } from '@tiptap/react';
-import { FiBold, FiImage, FiItalic, FiLink, FiList, FiRotateCcw, FiRotateCw } from 'react-icons/fi';
+import { FiBold,FiImage,FiItalic,FiLink,FiList,FiRotateCcw,FiRotateCw } from 'react-icons/fi';
 
 export function NotesToolbar({ editor }: { editor: Editor }) {
   const button = (active = false) => `btn btn-sm btn-square ${active ? 'btn-neutral' : 'btn-ghost'}`;
