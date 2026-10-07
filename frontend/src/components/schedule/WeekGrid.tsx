@@ -1,7 +1,7 @@
+import { format,isSameDay,isToday } from 'date-fns';
 import { FiPlus } from 'react-icons/fi';
-import { format, isSameDay, isToday } from 'date-fns';
-import { weekDays } from './utils';
 import { sessionStatusLabel } from '../../lib/sessions-ui';
+import { weekDays } from './utils';
 type Session = { id: string; title: string; startAt: string; endAt: string; status: string; classGroup: { name: string } | null };
 type Props = { anchor: Date; sessions: Session[]; onOpen: (id: string) => void; onPickDay: (d: Date) => void; onCreateAtDate?: (d: Date) => void };
 export function WeekGrid({ anchor, sessions, onOpen, onPickDay, onCreateAtDate }: Props) {
