@@ -1,4 +1,4 @@
-import { FiArrowUpRight, FiBookOpen, FiEdit3, FiHeadphones, FiMic } from 'react-icons/fi';
+import { FiArrowUpRight,FiBookOpen,FiEdit3,FiHeadphones,FiMic } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { SkillStat } from '../../lib/services';
 import { humanize } from '../../lib/services';
