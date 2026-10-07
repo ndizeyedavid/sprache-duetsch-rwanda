@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiPaperclip, FiSend } from 'react-icons/fi';
+import { FiPaperclip,FiSend } from 'react-icons/fi';
 
 type MessageComposerProps = {
  placeholder?: string;
