@@ -1,7 +1,7 @@
+import { FiBookOpen,FiCheck,FiFileText,FiFilm,FiHeadphones,FiLayers,FiPlay } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiBookOpen, FiCheck, FiFileText, FiFilm, FiHeadphones, FiLayers, FiPlay } from 'react-icons/fi';
-import { humanize } from '../../lib/services';
 import type { MyLesson } from '../../lib/services';
+import { humanize } from '../../lib/services';
 
 type Props = { lesson: MyLesson; index: number; position: number; columns: number; slug: string; next: boolean };
 
