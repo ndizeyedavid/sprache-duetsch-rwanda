@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ALL_ROLES,FINANCE_ROLES } from "../../lib/roles.js";
+import { FINANCE_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
@@ -11,7 +11,7 @@ paymentsRouter.use(requireAuth);
 // --- Payment methods ---
 paymentsRouter.get(
   "/methods",
-  requireRole(...ALL_ROLES),
+  requireRole(...FINANCE_ROLES, "STUDENT"),
   validate({ query: listPaymentMethodQuerySchema }),
   asyncHandler(controller.listMethods),
 );
