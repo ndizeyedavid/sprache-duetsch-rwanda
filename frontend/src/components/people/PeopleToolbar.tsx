@@ -1,6 +1,6 @@
 import { FiSearch } from "react-icons/fi";
-import { TABS } from "./constants";
 import type { PeopleTab } from "./constants";
+import { TABS } from "./constants";
 
 type Props = {
   tab: PeopleTab;
