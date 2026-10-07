@@ -1,4 +1,4 @@
-import { FiCheckCircle, FiEdit3, FiFileText, FiGrid, FiList, FiType } from 'react-icons/fi';
+import { FiCheckCircle,FiEdit3,FiFileText,FiGrid,FiList,FiType } from 'react-icons/fi';
 import type { LessonActivity } from '../../../lib/services';
 
 export const practiceKinds = [
