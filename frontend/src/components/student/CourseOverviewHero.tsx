@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
-import { FiArrowRight, FiClock, FiPlay } from 'react-icons/fi';
+import { FiArrowRight,FiClock,FiPlay } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import type { LevelItem, MyCourse } from '../../lib/services';
+import type { LevelItem,MyCourse } from '../../lib/services';
 
 type Props = { level: LevelItem; course: MyCourse | null };
 
