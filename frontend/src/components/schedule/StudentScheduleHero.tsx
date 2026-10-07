@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { FiCalendar, FiVideo } from 'react-icons/fi';
+import { FiCalendar,FiVideo } from 'react-icons/fi';
 import type { SessionItem } from '../../lib/services';
 
 export function StudentScheduleHero({ sessions, loading, onOpen }: { sessions: SessionItem[]; loading: boolean; onOpen: (id: string) => void }) {
