@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { humanize } from '../../../lib/services';
 
 type Props = { slug: string; lessonId: string; code: string; title: string; type: string };
