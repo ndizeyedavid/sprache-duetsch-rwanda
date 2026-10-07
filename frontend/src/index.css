@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./styles/learning.css";
 @import "./styles/course-content.css";
+@import "./styles/academic.css";
 @plugin "@tailwindcss/typography";
 
 @plugin "daisyui" {
@@ -80,6 +81,15 @@
   --color-coral: #d76d5b;
   --color-coral-soft: #ffe9e6;
   --color-night: #203044;
+
+  /* Status-pill surfaces. Each pairs a solid tint with an "ink" mixed toward
+     --color-base-content, so light themes get dark ink on a pale tint and dark
+     themes get light ink on a dark tint. All solid — never an alpha modifier. */
+  --color-brand-soft-ink: color-mix(in oklab, var(--color-primary) 72%, var(--color-base-content));
+  --color-night-soft: color-mix(in oklab, var(--color-night) 12%, var(--color-base-100));
+  --color-night-soft-ink: color-mix(in oklab, var(--color-night) 35%, var(--color-base-content));
+  --color-muted-soft: color-mix(in oklab, var(--color-base-content) 8%, var(--color-base-100));
+  --color-muted-ink: color-mix(in oklab, var(--color-base-content) 85%, var(--color-base-100));
 
   /* Aliases — change these if you want an element family to differ */
   --radius-nav: var(--radius-field);
