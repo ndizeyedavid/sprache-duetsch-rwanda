@@ -60,8 +60,8 @@ function AppRoutes() {
       <Routes>
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<LoginForm />} />
-          <Route path="/login/teacher" element={<LoginForm portal="teacher" />} />
-          <Route path="/login/staff" element={<LoginForm portal="staff" />} />
+          <Route path="/login/teacher" element={<Navigate to="/login" replace />} />
+          <Route path="/login/staff" element={<Navigate to="/login" replace />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
