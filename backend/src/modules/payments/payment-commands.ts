@@ -8,7 +8,9 @@ import { transact } from "../../lib/transactions.js";
 import { ledgerContext,validateMethod } from "./ledger-context.js";
 import type { CreatePaymentInput,DeletePaymentInput,UpdatePaymentInput } from "./payments.schema.js";
 
-export const createPayment = (input: CreatePaymentInput, actorId?: string) => transact(async tx => {
+export const createPayment = (input: CreatePaymentInput, actorId?: string) => transact(tx => createPaymentTx(tx, input, actorId));
+
+export const createPaymentTx = async (tx: Prisma.TransactionClient, input: CreatePaymentInput, actorId?: string, gatewayConfirmed = false) => {
   if (input.idempotencyKey) {
     const recorded = await tx.payment.findUnique({ where: { idempotencyKey: input.idempotencyKey }, include: {
       method: true, receipt: true, student: { include: { user: { select: { firstName: true, lastName: true, email: true } } } },
@@ -22,7 +24,8 @@ export const createPayment = (input: CreatePaymentInput, actorId?: string) => tr
     }
   }
   const { currency } = await ledgerContext(tx, input.studentId, input.enrollmentId, input.currency);
-  await validateMethod(tx, input.methodId, input.reference);
+  const method = await validateMethod(tx, input.methodId, input.reference);
+  if (method.code === "PAYPACK" && !gatewayConfirmed) throw badRequest("Paypack payments must be confirmed by the gateway");
   if (input.paidAt && input.paidAt > new Date()) throw badRequest("A received payment cannot be dated in the future");
   if (input.reference && await tx.payment.findFirst({ where: { methodId: input.methodId, reference: input.reference, txnType: "PAYMENT" } }))
     throw badRequest("This transaction reference is already recorded");
@@ -35,11 +38,12 @@ export const createPayment = (input: CreatePaymentInput, actorId?: string) => tr
   await writeAuditTx(tx, { actorId, action: "PAYMENT_RECORDED", entityType: "Payment", entityId: payment.id, after: payment });
   await writeActivityTx(tx, { actorId, type: "PAYMENT", title: `Payment of ${payment.amount.toString()} ${payment.currency} recorded`, studentId: input.studentId });
   return { ...payment, receipt };
-});
+};
 
 export const updatePayment = (id: string, input: UpdatePaymentInput, actorId?: string) => transact(async tx => {
   const before = await tx.payment.findUnique({ where: { id }, include: { refunds: true, receipt: true } });
   if (!before) throw notFound("Payment not found");
+  if (await tx.paymentCheckout.findUnique({ where: { paymentId: id } })) throw badRequest("Gateway payments are immutable. Use the refund workflow with a reason.");
   if (before.txnType === "REFUND") throw badRequest("Refund records are immutable. Record a correcting payment with a reason.");
   if (before.receipt?.voidedAt) throw badRequest("Voided payments are immutable. Record a new payment instead.");
   const amount = new Prisma.Decimal(input.amount ?? before.amount);
@@ -60,6 +64,7 @@ export const updatePayment = (id: string, input: UpdatePaymentInput, actorId?: s
 export const deletePayment = (id: string, input: DeletePaymentInput, actorId?: string) => transact(async tx => {
   const before = await tx.payment.findUnique({ where: { id }, include: { refunds: true } });
   if (!before) throw notFound("Payment not found");
+  if (await tx.paymentCheckout.findUnique({ where: { paymentId: id } })) throw badRequest("Gateway payments are immutable. Use the refund workflow with a reason.");
   if (before.txnType === "REFUND") throw badRequest("Refund records cannot be deleted");
   // Void by refunding the remaining amount; original payment and receipt remain traceable.
   const remaining = before.amount.minus(before.refunds.reduce((sum, r) => sum.plus(r.amount), new Prisma.Decimal(0)));
