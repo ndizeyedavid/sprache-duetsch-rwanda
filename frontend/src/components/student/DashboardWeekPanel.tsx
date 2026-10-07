@@ -1,7 +1,7 @@
+import { addDays,addWeeks,format,isSameDay,startOfWeek } from 'date-fns';
 import type { CSSProperties } from 'react';
 import { useState } from 'react';
-import { addDays, addWeeks, format, isSameDay, startOfWeek } from 'date-fns';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiChevronLeft,FiChevronRight } from 'react-icons/fi';
 import type { MyCourse } from '../../lib/services';
 
 export function DashboardWeekPanel({ courses }: { courses: MyCourse[] }) {
