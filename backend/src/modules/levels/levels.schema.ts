@@ -18,7 +18,8 @@ export const createLevelSchema = z.object({
   isActive: z.boolean().optional(),
 });
 
-export const updateLevelSchema = createLevelSchema.partial().refine(
+export const updateLevelSchema = createLevelSchema.omit({ currency: true })
+  .extend({ currency: z.string().trim().min(1).max(10).optional() }).partial().refine(
   (value) => Object.keys(value).length > 0,
   { message: "At least one field must be provided" },
 );
