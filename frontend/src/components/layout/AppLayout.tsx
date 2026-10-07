@@ -1,15 +1,17 @@
-import { useEffect, useState } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
-import { Sidebar } from './Sidebar';
-import { Topbar } from './Topbar';
+import { useEffect,useState } from 'react';
+import { Outlet,useLocation } from 'react-router-dom';
 import { getPageTitle } from '../../lib/nav';
 import { useSession } from '../../lib/session';
+import { AcademicWorkspaceBar } from '../admin/AcademicWorkspaceBar';
+import { Sidebar } from './Sidebar';
+import { Topbar } from './Topbar';
 
 export function AppLayout() {
   const { pathname } = useLocation();
   const { user } = useSession();
   const [navOpen, setNavOpen] = useState(false);
   const role = user?.role ?? 'STUDENT';
+  const academicRole = role === 'ACADEMIC_ADMIN' || role === 'SUPER_ADMIN';
 
   useEffect(() => {
     setNavOpen(false);
@@ -21,7 +23,8 @@ export function AppLayout() {
       <Sidebar role={role} open={navOpen} onClose={() => setNavOpen(false)} />
       <div className="lg:pl-[272px]">
         <Topbar title={getPageTitle(pathname)} onMenu={() => setNavOpen(true)} />
-        <main className={`mx-auto px-4 py-5 lg:px-6 lg:py-6 ${pathname === "/dashboard" ? "w-full" : "max-w-[1600px]"}`}>
+        <main className={`${academicRole && pathname.startsWith('/admin') ? 'academic-workspace' : ''} mx-auto px-4 py-5 lg:px-6 lg:py-6 ${pathname === "/dashboard" ? "w-full" : "max-w-[1600px]"}`}>
+          {academicRole && pathname.startsWith('/admin/') ? <AcademicWorkspaceBar pathname={pathname} title={getPageTitle(pathname)} /> : null}
           <Outlet />
         </main>
       </div>
