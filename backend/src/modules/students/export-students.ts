@@ -2,7 +2,7 @@ import { prisma } from "../../lib/prisma.js";
 import { safeUserSelect } from './safe-user-select.js';
 import { studentListWhere } from './student-list-where.js';
 import type { ListStudentsQuery } from "./students.schema.js";
-export const exportStudents = async (query: ListStudentsQuery) => {
+export const exportStudents = async (query: ListStudentsQuery, includeFinance = false) => {
   const rows = await prisma.student.findMany({
     where: studentListWhere(query),
     orderBy: { createdAt: "desc" },
@@ -27,10 +27,10 @@ export const exportStudents = async (query: ListStudentsQuery) => {
     campus: row.campus?.name ?? "",
     intake: row.intake?.name ?? "",
     currentLevel: row.currentLevel?.code ?? "",
-    totalDue: row.finance?.totalDue.toString() ?? "0",
+    ...(includeFinance ? { totalDue: row.finance?.totalDue.toString() ?? "0",
     totalPaid: row.finance?.totalPaid.toString() ?? "0",
     balance: row.finance?.balance.toString() ?? "0",
-    financeStatus: row.finance?.status ?? "",
+    financeStatus: row.finance?.status ?? "" } : {}),
     createdAt: row.createdAt.toISOString(),
   }));
 };
