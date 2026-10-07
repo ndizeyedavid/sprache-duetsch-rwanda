@@ -1,4 +1,4 @@
-import { FiEdit3, FiMessageCircle, FiBell } from 'react-icons/fi';
+import { FiBell,FiEdit3,FiMessageCircle } from 'react-icons/fi';
 import type { Tab } from './constants';
 type Props = { tab: Tab; onTab: (t: Tab) => void; unreadChats: number; unreadNotices: number; totalChats: number; totalNotices: number; onCompose: () => void };
 export function InboxHeader({ tab, onTab, unreadChats, unreadNotices, onCompose }: Props) {
