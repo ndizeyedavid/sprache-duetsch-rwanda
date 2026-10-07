@@ -1,19 +1,11 @@
+import { FiArrowRight,FiCheck,FiClock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiCheck, FiClock, FiDownload, FiExternalLink, FiFileText, FiFilm, FiLayers, FiMusic } from 'react-icons/fi';
+import { humanize } from '../../lib/services';
+import { AuthenticatedMedia } from '../ui/AuthenticatedMedia';
 import { CourseLessonReader } from './CourseLessonReader';
 import { CoursePractice } from './CoursePractice';
+import { MaterialResourceList } from './MaterialResourceList';
 import { isBookPractice } from './course-practice-utils';
-import { humanize } from '../../lib/services';
-
-function materialIcon(type: string) {
-  switch (type) {
-    case 'VIDEO': return FiFilm;
-    case 'AUDIO': return FiMusic;
-    case 'PDF': return FiFileText;
-    case 'SLIDE': return FiLayers;
-    default: return FiFileText;
-  }
-}
 
 function activityIcon(type: string) {
   switch (type) {
@@ -51,13 +43,6 @@ type Props = {
   onComplete: () => void;
 };
 
-function formatSize(bytes: number | null): string | null {
-  if (!bytes) return null;
-  if (bytes < 1024) return `${bytes} B`;
-  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`;
-  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
-}
-
 export function LessonDetail({ detail, slug, completing, actionError, onComplete }: Props) {
   if (!detail) return null;
   const done = detail.progressStatus === 'COMPLETED';
@@ -72,58 +57,13 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
         <span className={`badge border-0 px-3 py-3 text-[11px] font-medium ${done ? 'bg-success text-success-content' : detail.progressStatus === 'IN_PROGRESS' ? 'bg-info text-info-content' : 'bg-neutral text-neutral-content'}`}>{done ? 'Completed' : humanize(detail.progressStatus)}</span>
       </div>
 
-      {detail.videoUrl ? <video key={detail.videoUrl} controls preload="metadata" className="w-full rounded-box bg-night"><source src={detail.videoUrl} /></video> : null}
-      {detail.audioUrl ? <audio key={detail.audioUrl} controls preload="metadata" className="w-full"><source src={detail.audioUrl} /></audio> : null}
+      {detail.videoUrl ? <AuthenticatedMedia key={detail.videoUrl} url={detail.videoUrl} kind="video" className="w-full rounded-box" /> : null}
+      {detail.audioUrl ? <AuthenticatedMedia key={detail.audioUrl} url={detail.audioUrl} kind="audio" className="w-full" /> : null}
       <CourseLessonReader key={detail.id} html={detail.body}>
         <CoursePractice key={`practice-${detail.id}`} activities={detail.activities} />
       </CourseLessonReader>
 
-      {detail.materials.length > 0 ? (
-        <div id="lesson-resources" className="scroll-mt-24 overflow-hidden rounded-box border border-line bg-base-100">
-          <div className="flex items-center justify-between gap-2 border-b border-line bg-base-200/60 px-4 py-3">
-            <h2 className="flex items-center gap-2 text-sm font-bold"><FiFileText aria-hidden className="text-brand" />Resources<span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">{detail.materials.length}</span></h2>
-            <span className="hidden text-[11px] text-muted sm:block">Tap Open to view or download</span>
-          </div>
-          {/* Inline preview for first PDF/video if available */}
-          {(() => {
-            const first = detail.materials.find((m) => m.url && (m.type === 'PDF' || m.type === 'VIDEO' || m.mimeType?.includes('pdf') || m.url?.endsWith('.pdf')));
-            if (!first?.url) return null;
-            const isPdf = first.type === 'PDF' || first.mimeType?.includes('pdf') || first.url.endsWith('.pdf');
-            return (
-              <div className="border-b border-line bg-base-200/30 p-3">
-                <p className="mb-2 flex items-center gap-2 text-xs font-semibold"><FiFileText aria-hidden className="text-brand" />Preview — {first.title}</p>
-                {isPdf ? (
-                  <div className="overflow-hidden rounded-box border border-line bg-base-100">
-                    <iframe src={first.url} title={first.title} className="h-[420px] w-full" />
-                  </div>
-                ) : (
-                  <video controls src={first.url} className="max-h-[420px] w-full rounded-box bg-night" />
-                )}
-              </div>
-            );
-          })()}
-          <ul className="grid gap-3 p-4 sm:grid-cols-2">
-            {detail.materials.map((m) => {
-              const Icon = materialIcon(m.type);
-              const size = formatSize(m.sizeBytes);
-              return (
-                <li key={m.id} className="flex gap-3 rounded-box border border-line bg-base-100 p-3 transition hover:border-brand/20">
-                  <span className="flex size-10 shrink-0 items-center justify-center rounded-box bg-base-200 text-muted"><Icon aria-hidden /></span>
-                  <span className="min-w-0 grow">
-                    <span className="block truncate text-sm font-semibold leading-tight">{m.title}</span>
-                    <span className="mt-0.5 flex flex-wrap items-center gap-1.5 text-[11px] text-muted">
-                      <span className="rounded-full bg-base-200 px-2 py-0.5">{humanize(m.type)}</span>
-                      {size ? <span>{size}</span> : null}
-                      {m.isDownloadable ? <span className="inline-flex items-center gap-1"><FiDownload aria-hidden />Downloadable</span> : null}
-                    </span>
-                  </span>
-                  {m.url ? <a href={m.url} target="_blank" rel="noreferrer" className="btn btn-sm shrink-0 gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90"><FiExternalLink aria-hidden />Open</a> : <span className="shrink-0 rounded-full bg-base-200 px-2.5 py-1 text-[11px] text-muted">No file</span>}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      ) : null}
+      {detail.materials.length > 0 ? <MaterialResourceList materials={detail.materials} /> : null}
 
       {detail.activities.some(a => !isBookPractice(a)) ? (
         <div id="lesson-practice" className="scroll-mt-24 overflow-hidden rounded-box border border-line bg-base-100">
