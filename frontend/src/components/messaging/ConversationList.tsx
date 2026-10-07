@@ -1,7 +1,7 @@
-import { FiMessageCircle, FiSearch, FiX } from 'react-icons/fi';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../common/PageState';
-import { threadTitle, initials, accentFor, dedupeParticipants, relativeTime, snippet } from './utils';
+import { FiMessageCircle,FiSearch,FiX } from 'react-icons/fi';
 import type { Conversation } from '../../lib/services';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../common/PageState';
+import { accentFor,dedupeParticipants,initials,relativeTime,snippet,threadTitle } from './utils';
 type Props = { threads: Conversation[]; loading: boolean; error: string | null; onRetry: () => void; selectedId: string | null; onPick: (id: string) => void; myId: string | null | undefined; search: string; onSearch: (v: string) => void; filter: 'all' | 'unread'; onFilter: (v: 'all' | 'unread') => void; onCompose: () => void };
 export function ConversationList({ threads, loading, error, onRetry, selectedId, onPick, myId, search, onSearch, filter, onFilter, onCompose }: Props) {
   const unread = threads.filter(t => t.unreadCount > 0).length;
