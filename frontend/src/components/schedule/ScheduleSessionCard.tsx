@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
-import { FiArrowUpRight, FiClock, FiMapPin, FiVideo } from 'react-icons/fi';
-import { sessionStatusLabel, teacherName } from '../../lib/sessions-ui';
 import type { ReactNode } from 'react';
+import { FiArrowUpRight,FiClock,FiMapPin,FiVideo } from 'react-icons/fi';
+import { sessionStatusLabel,teacherName } from '../../lib/sessions-ui';
 
 export type ScheduleSession = {
   id: string; title: string; startAt: string; endAt: string; status: string; mode: string;
