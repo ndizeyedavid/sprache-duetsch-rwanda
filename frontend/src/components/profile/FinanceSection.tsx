@@ -35,8 +35,6 @@ export function FinanceSection({ finance, loading, error, onRetry }: Props) {
       emptyHint="Charges appear once an academic admin enrols you and sets your fee."
     >
       <div className="space-y-4">
-        <PaypackCheckout balance={summary.balance} currency={account?.currency ?? 'RWF'} onPaid={onRetry} />
-        <PaymentSchedule finance={finance} />
         <Panel>
           <div className="flex flex-wrap items-center justify-between gap-3">
             <h2 className="text-base font-semibold">Tuition summary</h2>
@@ -73,6 +71,9 @@ export function FinanceSection({ finance, loading, error, onRetry }: Props) {
             </p>
           ) : null}
         </Panel>
+
+        <PaypackCheckout balance={summary.balance} currency={account?.currency ?? 'RWF'} onPaid={onRetry} />
+        <PaymentSchedule finance={finance} />
 
         <div className="grid items-start gap-4 lg:grid-cols-2">
           <Panel padded={false}>
