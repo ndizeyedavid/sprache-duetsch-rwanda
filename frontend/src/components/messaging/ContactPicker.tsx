@@ -1,8 +1,8 @@
-import { useMemo, useState } from 'react';
-import { FiSearch, FiX } from 'react-icons/fi';
-import { humanize } from '../../lib/services';
-import { initials, accentFor } from './utils';
+import { useMemo,useState } from 'react';
+import { FiSearch,FiX } from 'react-icons/fi';
 import type { Contact } from '../../lib/services';
+import { humanize } from '../../lib/services';
+import { accentFor,initials } from './utils';
 
 type Props = { open: boolean; onClose: () => void; contacts: Contact[]; loading: boolean; error: string | null; onPick: (id: string) => void };
 
