@@ -1,4 +1,4 @@
-import { FiBell, FiDroplet, FiLock, FiShield, FiUser } from 'react-icons/fi';
+import { FiBell,FiDroplet,FiLock,FiShield,FiUser } from 'react-icons/fi';
 
 export const SETTINGS_TABS = [
  { id: 'profile', label: 'Profile', icon: FiUser, desc: 'Name, email, avatar' },
