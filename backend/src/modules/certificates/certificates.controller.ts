@@ -7,6 +7,7 @@ ListCertificatesQuery,
 RevokeCertificateInput,
 } from "./certificates.schema.js";
 import * as service from "./certificates.service.js";
+import { previewCertificate } from './preview-certificate.js';
 
 export const issue = async (req: Request, res: Response): Promise<void> => {
   const certificate = await service.issueCertificate(
@@ -30,7 +31,7 @@ export const reissue = async (req: Request, res: Response): Promise<void> => {
 };
 
 export const eligibility = async (req: Request, res: Response): Promise<void> => {
-  const { studentId, levelId } = req.query as { studentId: string; levelId: string };
+  const { studentId, levelId } = validatedQuery<{ studentId: string; levelId: string }>(req);
   const result = await service.checkEligibility(studentId, levelId);
   res.json({ success: true, data: result });
 };
@@ -71,6 +72,15 @@ export const pdf = async (req: Request, res: Response): Promise<void> => {
   await service.getCertificate(id, req.user.id, req.user.role);
   const buffer = await service.renderCertificatePdf(id);
   res.setHeader("Content-Type", "application/pdf");
+  res.setHeader('Cache-Control', 'private, no-store');
   res.setHeader("Content-Disposition", `attachment; filename="certificate-${id.slice(0, 8)}.pdf"`);
+  res.send(buffer);
+};
+
+export const preview = async (req: Request, res: Response): Promise<void> => {
+  const buffer = await previewCertificate(validatedBody<IssueCertificateInput>(req), actorId(req));
+  res.setHeader('Content-Type', 'application/pdf');
+  res.setHeader('Content-Disposition', 'inline; filename="certificate-preview.pdf"');
+  res.setHeader('Cache-Control', 'private, no-store');
   res.send(buffer);
 };
