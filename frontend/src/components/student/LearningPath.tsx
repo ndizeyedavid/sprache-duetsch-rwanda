@@ -13,7 +13,7 @@ export function LearningPath({ course }: { course: MyCourse }) {
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-base-content/55">One step closer</p>
-          <h2 className="mt-1 text-xl font-semibold">Your learning path</h2>
+          <h2 className="mt-1 text-xl font-semibold">Course content</h2>
           <p className="mt-1 text-xs text-base-content/65">{course.level.code} · {course.level.title}</p>
         </div>
         <Link to={basePath} className="btn btn-ghost btn-sm rounded-full">All lessons <FiArrowRight aria-hidden /></Link>
