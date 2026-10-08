@@ -1,3 +1,4 @@
+import { CoursePaymentLock } from '../../components/student/CoursePaymentLock';
 import { useEffect,useMemo,useState } from 'react';
 import { FiArrowLeft,FiGrid,FiList } from 'react-icons/fi';
 import { Link,useParams } from 'react-router-dom';
@@ -41,6 +42,8 @@ export function CourseContents() {
   if (courses.loading) return <LoadingBlock label="Loading course…" />;
   if (courses.error || !courses.data) return <ErrorBlock message={courses.error ?? 'Could not load course.'} onRetry={courses.refetch} />;
   if (!course) return <EmptyBlock title="Not enrolled in this level" hint="Ask an admin to enrol you — only enrolled courses appear." />;
+
+  if (course?.paymentRequired) return <CoursePaymentLock title={course.level.title} />;
 
   return (
     <div className="space-y-4">
