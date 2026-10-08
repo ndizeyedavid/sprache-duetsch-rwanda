@@ -10,7 +10,8 @@ export const getStudentCourses = async (userId: string) => {
 
   const enrollments = await prisma.enrollment.findMany({
     where: { studentId: profile.studentId, status: { in: ["ACTIVE", "COMPLETED"] } },
-    select: { levelId: true },
+    select: { levelId: true, totalFee: true, currency: true },
+    orderBy: [{ enrolledAt: 'desc' }, { id: 'desc' }],
     distinct: ["levelId"],
   });
   const levelIds = enrollments.map((enrollment) => enrollment.levelId);
@@ -87,6 +88,9 @@ export const getStudentCourses = async (userId: string) => {
     }));
 
     return {
+      paymentRequired: !profile.levelIds.includes(level.id),
+      price: enrollments.find(row => row.levelId === level.id)!.totalFee.toString(),
+      currency: enrollments.find(row => row.levelId === level.id)!.currency,
       level: {
         id: level.id,
         code: level.code,
