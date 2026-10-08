@@ -1,0 +1,17 @@
+import { lazyPage } from '../lib/lazy-page';
+export const AdminDashboard = lazyPage(() => import("../pages/admin/Dashboard").then((module) => module.AdminDashboard));
+export const AdminFinance = lazyPage(() => import("../pages/admin/Finance").then((module) => module.AdminFinance));
+export const AdminCourses = lazyPage(() => import("../pages/admin/Courses").then((module) => module.AdminCourses));
+export const AdminSchedule = lazyPage(() => import("../pages/admin/Schedule").then((module) => module.AdminSchedule));
+export const AdminStudents = lazyPage(() => import("../pages/admin/Students").then((module) => module.AdminStudents));
+export const AdminResources = lazyPage(() => import("../pages/admin/Resources").then((module) => module.AdminResources));
+export const AdminTransactions = lazyPage(() => import("../pages/admin/Transactions").then((module) => module.AdminTransactions));
+export const AdminCertificates = lazyPage(() => import("../pages/admin/Certificates").then((module) => module.AdminCertificates));
+export const AdminLiveClass = lazyPage(() => import("../pages/admin/LiveClass").then((module) => module.AdminLiveClass));
+export const AdminClasses = lazyPage(() => import("../pages/admin/Classes").then((module) => module.AdminClasses));
+export const AdminEnrolments = lazyPage(() => import("../pages/admin/Enrolments").then((module) => module.AdminEnrolments));
+export const AdminPeople = lazyPage(() => import("../pages/admin/People").then((module) => module.AdminPeople));
+export const AdminTeaching = lazyPage(() => import("../pages/admin/Teaching").then((module) => module.AdminTeaching));
+export const AdminAnnouncements = lazyPage(() => import("../pages/admin/Announcements").then((module) => module.AdminAnnouncements));
+export const AdminOrganisation = lazyPage(() => import("../pages/admin/Organisation").then((module) => module.AdminOrganisation));
+export const AdminIntakes = lazyPage(() => import("../pages/admin/Intakes").then((module) => module.AdminIntakes));
