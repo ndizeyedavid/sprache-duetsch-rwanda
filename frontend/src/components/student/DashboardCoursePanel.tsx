@@ -1,3 +1,4 @@
+import { CoursePaymentLock } from './CoursePaymentLock';
 import { FiArrowUpRight,FiBookOpen,FiCheck,FiPlay } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { MyCourse } from '../../lib/services';
@@ -5,6 +6,10 @@ import type { MyCourse } from '../../lib/services';
 type Props = { courses: MyCourse[]; course: MyCourse; onSelect: (id: string) => void };
 
 export function DashboardCoursePanel({ courses, course, onSelect }: Props) {
+  if (course.paymentRequired) return <div className="space-y-3">
+    <div className="flex flex-wrap gap-2">{courses.map(item => <button key={item.level.id} type="button" className="btn btn-sm" aria-pressed={item.level.id === course.level.id} onClick={() => onSelect(item.level.id)}>{item.level.code}</button>)}</div>
+    <CoursePaymentLock title={course.level.title} />
+  </div>;
   const modules = [...course.modules].sort((a, b) => a.order - b.order);
   const next = modules.flatMap((module) => [...module.lessons].sort((a, b) => a.order - b.order)).find((lesson) => lesson.progressStatus !== 'COMPLETED');
   const base = `/courses/${course.level.code.toLowerCase()}`;
