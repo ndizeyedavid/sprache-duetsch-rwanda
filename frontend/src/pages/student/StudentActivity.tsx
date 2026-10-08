@@ -1,15 +1,15 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { FiArrowLeft, FiClock } from 'react-icons/fi';
+import { useEffect,useMemo,useState } from 'react';
+import { FiArrowLeft,FiClock } from 'react-icons/fi';
+import { Link,useParams } from 'react-router-dom';
+import { AntiCheatGuard } from '../../components/assignments/AntiCheatGuard';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { ActivityChoices } from '../../components/student/practice/ActivityChoices';
+import { ActivityNavigation } from '../../components/student/practice/ActivityNavigation';
+import { ActivityOutcome } from '../../components/student/practice/ActivityOutcome';
 import { Panel } from '../../components/ui/Panel';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { getMyCourses, getStudentLesson, reportActivityViolation, submitActivity } from '../../lib/services';
-import { ActivityNavigation } from '../../components/student/practice/ActivityNavigation';
-import { ActivityChoices } from '../../components/student/practice/ActivityChoices';
-import { ActivityOutcome } from '../../components/student/practice/ActivityOutcome';
-import { AntiCheatGuard } from '../../components/assignments/AntiCheatGuard';
+import { getMyCourses,getStudentLesson,reportActivityViolation,submitActivity } from '../../lib/services';
 
 type ActivityConfig = Record<string, unknown>;
 
