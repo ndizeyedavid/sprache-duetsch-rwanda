@@ -6,7 +6,8 @@ import { FiChevronLeft,FiChevronRight } from 'react-icons/fi';
 
 GlobalWorkerOptions.workerSrc = workerUrl;
 
-export default function PdfViewer({ url }: { url: string }) {
+type Props = { url: string; documentLabel?: string; onReady?: () => void; onError?: () => void };
+export default function PdfViewer({ url, documentLabel = 'Original coursebook', onReady, onError }: Props) {
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [page, setPage] = useState(1);
   const [pageInput, setPageInput] = useState('1');
@@ -27,9 +28,9 @@ export default function PdfViewer({ url }: { url: string }) {
     const task = getDocument({ url });
     let active = true;
     task.promise.then(document => { if (active) setPdf(document); })
-      .catch(() => { if (active) { setError('Could not display this PDF. You can still download or open it in a new tab.'); setLoading(false); } });
+      .catch(() => { if (active) { setError('Could not display this PDF. You can still download or open it in a new tab.'); setLoading(false); onError?.(); } });
     return () => { active = false; void task.destroy(); };
-  }, [url]);
+  }, [url, onError]);
   useEffect(() => {
     const element = surface.current;
     if (!element) return;
@@ -43,7 +44,7 @@ export default function PdfViewer({ url }: { url: string }) {
     let render: RenderTask | undefined;
     const canvas = document.createElement('canvas');
     canvas.setAttribute('role', 'img');
-    canvas.setAttribute('aria-label', `Original coursebook page ${page}`);
+    canvas.setAttribute('aria-label', `${documentLabel} page ${page}`);
     surface.current.scrollTop = 0;
     setLoading(true);
     setError('');
@@ -58,10 +59,10 @@ export default function PdfViewer({ url }: { url: string }) {
       surface.current?.append(canvas);
       render = sheet.render({ canvas, viewport, transform: [ratio, 0, 0, ratio, 0, 0] });
       await render.promise;
-      if (active) setLoading(false);
-    }).catch(() => { if (active) { setError('Could not display this page. Please try another page or download the PDF.'); setLoading(false); } });
+      if (active) { setLoading(false); onReady?.(); }
+    }).catch(() => { if (active) { setError('Could not display this page. Please try another page or download the PDF.'); setLoading(false); onError?.(); } });
     return () => { active = false; render?.cancel(); canvas.remove(); };
-  }, [pdf, page, width, zoom]);
+  }, [pdf, page, width, zoom, documentLabel, onReady, onError]);
   return <div className="flex min-h-0 flex-1 flex-col gap-3">
     <div className="flex flex-wrap items-center justify-between gap-2">
       <div className="flex items-center gap-2">
