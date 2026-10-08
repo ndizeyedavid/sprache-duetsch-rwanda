@@ -20,7 +20,7 @@ type Props = {
 /** The five create-enrolment fields, with the guards rendered inline. */
 export function EnrolFields({ draft, students, levels, intakes }: Props) {
   const canFinance = useFinanceAccess();
-  const intake = intakes.find(row => row.id === draft.intakeId);
+
   const defaultFee = draft.level ? rwf(money(draft.level.defaultFee)) : null;
   const feeHint =
     draft.fee !== undefined && defaultFee
@@ -31,7 +31,7 @@ export function EnrolFields({ draft, students, levels, intakes }: Props) {
 
   return (
     <div className="space-y-4">
-      {canFinance && intake ? <p className="text-xs">Registration: {rwf(Number(intake.registrationFee ?? 0))} · Books: {rwf(Number(intake.bookFee ?? 0))}. Charged once per student in this intake.</p> : null}
+      <p className="text-xs text-base-content/60">Intake membership is free. Only the selected course’s tuition is charged.</p>
       <ReferenceSelect
         id={STUDENT_FIELD_ID}
         label="Student"
@@ -46,18 +46,6 @@ export function EnrolFields({ draft, students, levels, intakes }: Props) {
       />
 
       <ReferenceSelect
-        id="enrol-level"
-        label="Level"
-        required
-        value={draft.levelId}
-        onChange={draft.setLevelId}
-        placeholder="Select level"
-        options={levels
-          .filter((item) => item.isActive)
-          .map((item) => ({ id: item.id, label: `${item.code} · ${item.title}` }))}
-      />
-
-      <ReferenceSelect
         id="enrol-intake"
         label="Intake"
         required
@@ -67,6 +55,18 @@ export function EnrolFields({ draft, students, levels, intakes }: Props) {
         options={intakes
           .filter((item) => item.isActive)
           .map((item) => ({ id: item.id, label: item.name }))}
+      />
+
+      <ReferenceSelect
+        id="enrol-level"
+        label="Level"
+        required
+        value={draft.levelId}
+        onChange={draft.setLevelId}
+        placeholder="Select level"
+        options={levels
+          .filter((item) => item.isActive && intakes.find(intake => intake.id === draft.intakeId)?.levels?.some(level => level.id === item.id))
+          .map((item) => ({ id: item.id, label: `${item.code} · ${item.title}` }))}
       />
 
       <ReferenceSelect
