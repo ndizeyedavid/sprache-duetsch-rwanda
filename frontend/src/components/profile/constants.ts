@@ -40,7 +40,6 @@ export function skillBand(percentage: number): { tone: Tone; hint: string } {
 }
 
 /** Ledger rows are capped so a long payment history cannot bury the summary. */
-export const LEDGER_LIMIT = 8;
 
 /**
  * Solid equivalents of `TONE_SURFACE`: same tones and the same darkened text,
