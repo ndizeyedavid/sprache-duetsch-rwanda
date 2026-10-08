@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./styles/learning.css";
+@import "./styles/motion.css";
 @import "./styles/course-content.css";
 @import "./styles/academic.css";
 @plugin "@tailwindcss/typography";
@@ -122,6 +123,16 @@
   a {
     -webkit-tap-highlight-color: transparent;
   }
+}
+
+/* Slow drifting colour pools behind the auth pages (sign in / register). */
+@keyframes auth-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(2.5rem, -1.5rem, 0) scale(1.08); }
+}
+@utility auth-blob {
+  animation: auth-drift 20s ease-in-out infinite;
+  @media (prefers-reduced-motion: reduce) { animation: none; }
 }
 
 /* Shadows intentionally disabled per client request (flat, no elevation). */
