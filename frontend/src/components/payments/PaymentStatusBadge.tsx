@@ -1,11 +1,11 @@
 import type { PaymentCheckout } from '../../lib/paypack';
 
 const states = {
-  INITIATING: { label: 'Sending request', style: 'badge-info' },
-  PENDING: { label: 'Awaiting approval', style: 'badge-warning' },
-  UNKNOWN: { label: 'Needs confirmation', style: 'badge-warning' },
+  INITIATING: { label: 'Sending', style: 'badge-info' },
+  PENDING: { label: 'Waiting for approval', style: 'badge-warning' },
+  UNKNOWN: { label: 'Being checked', style: 'badge-warning' },
   SUCCESSFUL: { label: 'Paid', style: 'badge-success' },
-  FAILED: { label: 'Unsuccessful', style: 'badge-error' },
+  FAILED: { label: 'Failed', style: 'badge-error' },
 };
 
 export function PaymentStatusBadge({ status }: { status: PaymentCheckout['status'] }) {
