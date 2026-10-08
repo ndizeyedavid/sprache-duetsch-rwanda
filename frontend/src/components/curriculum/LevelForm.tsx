@@ -1,4 +1,3 @@
-import { useFinanceAccess } from '../../hooks/useFinanceAccess';
 import type { ChangeEvent,FormEvent } from 'react';
 import { useState } from 'react';
 import { apiErrorMessage } from '../../lib/api';
@@ -38,7 +37,6 @@ const toDraft = (level?: LevelItem) => ({
 });
 
 export function LevelForm({ initial, submitLabel, onSubmit, onDone, onCancel }: LevelFormProps) {
-  const canFinance = useFinanceAccess();
   const [draft, setDraft] = useState(() => toDraft(initial));
   const [uploading, setUploading] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -64,7 +62,7 @@ export function LevelForm({ initial, submitLabel, onSubmit, onDone, onCancel }: 
         code: draft.code.trim().toUpperCase(),
         levelLabel: draft.levelLabel.trim(),
         title: draft.title.trim(),
-        ...(canFinance ? { defaultFee: Number(draft.defaultFee) || 0 } : {}),
+        defaultFee: Number(draft.defaultFee) || 0,
         order: Number(draft.order) || 0,
       });
       if (!initial) setDraft(toDraft());
@@ -93,10 +91,11 @@ export function LevelForm({ initial, submitLabel, onSubmit, onDone, onCancel }: 
         <input required minLength={2} {...field('title')} placeholder="e.g. German A1 — Beginner" className={INPUT} />
       </label>
       <div className="grid gap-3 sm:grid-cols-2">
-        {canFinance && <label className="block">
-          <span className="mb-1.5 block text-xs font-medium">Default fee (RWF)</span>
-          <input {...field('defaultFee')} inputMode="numeric" placeholder="e.g. 45000" className={INPUT} />
-        </label>}
+        <label className="block">
+          <span className="mb-1.5 block text-xs font-medium">Course price ({initial?.currency ?? 'RWF'})</span>
+          <input {...field('defaultFee')} type="number" min="0" step={initial?.currency === 'RWF' || !initial ? '1' : '0.01'} inputMode="numeric" placeholder="e.g. 45000" className={INPUT} />
+          <span className="mt-1 block text-xs text-base-content/60">Used for new enrollments. Existing students keep their enrolled price.</span>
+        </label>
         <label className="block">
           <span className="mb-1.5 block text-xs font-medium">Position in list</span>
           <input {...field('order')} inputMode="numeric" placeholder="e.g. 1" className={INPUT} />
