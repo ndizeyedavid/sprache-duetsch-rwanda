@@ -9,14 +9,15 @@ const currencySchema = z.string().trim().min(1).max(10);
  * every PATCH reset the stored currency to RWF.
  */
 const intakeFields = {
+  levelIds: z.array(z.string().min(1)).min(1, 'Choose at least one level').refine(ids => new Set(ids).size === ids.length, 'Choose each level once'),
   code: z.string().trim().min(1).max(30).toUpperCase(),
   name: z.string().trim().min(2).max(120),
   startDate: z.coerce.date(),
   endDate: z.coerce.date(),
   enrollmentOpensAt: nullableDate,
   enrollmentEndsAt: nullableDate,
-  registrationFee: z.coerce.number().min(0).optional(),
-  bookFee: z.coerce.number().min(0).optional(),
+  registrationFee: z.coerce.number().max(0).min(0).optional(),
+  bookFee: z.coerce.number().max(0).min(0).optional(),
   currency: currencySchema,
   isActive: z.boolean().optional(),
 };
