@@ -1,20 +1,20 @@
-import { useScheduleClock } from '../../components/schedule/useScheduleClock';
-import { getStudentSchedule } from '../../lib/schedule-api';
-import { ScheduleSpotlight } from '../../components/schedule/ScheduleSpotlight';
-import { useMemo, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { addDays, addMonths, endOfWeek, format, isValid, parseISO, startOfWeek, subDays, subMonths } from 'date-fns';
+import { addDays,addMonths,endOfWeek,format,isValid,parseISO,startOfWeek,subDays,subMonths } from 'date-fns';
+import { useMemo,useState } from 'react';
 import { FiCalendar } from 'react-icons/fi';
-import { Panel } from '../../components/ui/Panel';
-import { ErrorBlock, LoadingBlock } from '../../components/common/PageState';
-import { useApi } from '../../hooks/useApi';
-import { getUpcomingSessions } from '../../lib/services';
+import { useSearchParams } from 'react-router-dom';
+import { ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { MonthGrid } from '../../components/schedule/MonthGrid';
+import { ScheduleSpotlight } from '../../components/schedule/ScheduleSpotlight';
 import { ScheduleToolbar } from '../../components/schedule/ScheduleToolbar';
 import { StudentAgendaGrouped } from '../../components/schedule/StudentAgendaGrouped';
-import { MonthGrid } from '../../components/schedule/MonthGrid';
-import { WeekGrid } from '../../components/schedule/WeekGrid';
 import { StudentDetailDrawer } from '../../components/schedule/StudentDetailDrawer';
+import { WeekGrid } from '../../components/schedule/WeekGrid';
 import type { ScheduleView } from '../../components/schedule/constants';
+import { useScheduleClock } from '../../components/schedule/useScheduleClock';
+import { Panel } from '../../components/ui/Panel';
+import { useApi } from '../../hooks/useApi';
+import { getStudentSchedule } from '../../lib/schedule-api';
+import { getUpcomingSessions } from '../../lib/services';
 
 export function Schedule() {
   useScheduleClock();
