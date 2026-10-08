@@ -18,7 +18,7 @@ export const WORKSPACE_CONTEXT: Record<string, Context> = {
   finance: { category: 'Tuition overview', icon: FiCreditCard, image: books, links: [{ label: 'Transactions', to: '/admin/transactions' }, { label: 'Students', to: '/admin/students' }] },
   transactions: { category: 'Payment records', icon: FiCreditCard, image: books, links: [{ label: 'Finance overview', to: '/admin/finance' }, { label: 'Enrolments', to: '/admin/enrolments' }] },
   intakes: { category: 'Cohort planning', icon: FiCalendar, image: owl, links: [{ label: 'Enrolments', to: '/admin/enrolments' }, { label: 'Classes', to: '/admin/classes' }] },
-  certificates: { category: 'Celebrate achievement', icon: FiAward, image: owl, links: [{ label: 'Students', to: '/admin/students' }, { label: 'Curriculum', to: '/admin/courses' }] },
+  certificates: { category: 'Certificates', icon: FiAward, image: owl, links: [{ label: 'Students', to: '/admin/students' }, { label: 'Curriculum', to: '/admin/courses' }] },
   announcements: { category: 'School communication', icon: FiMessageCircle, image: owl, links: [{ label: 'Messages', to: '/admin/messages' }, { label: 'Schedule', to: '/admin/schedule' }] },
   resources: { category: 'Learning library', icon: FiBookOpen, image: books, links: [{ label: 'Curriculum', to: '/admin/courses' }, { label: 'Announcements', to: '/admin/announcements' }] },
   'live-class': { category: 'Live learning', icon: FiRadio, image: learner, links: [{ label: 'Schedule', to: '/admin/schedule' }, { label: 'Attendance', to: '/admin/attendance' }] },
