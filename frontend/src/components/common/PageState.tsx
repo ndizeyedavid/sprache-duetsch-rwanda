@@ -1,14 +1,7 @@
+import { BookLoader } from './BookLoader';
+
 export function LoadingBlock({ label = 'Loading…' }: { label?: string }) {
- return (
- <div
- className="flex min-h-40 items-center justify-center gap-3 py-10"
- role="status"
- aria-live="polite"
- >
- <span className="loading loading-spinner loading-md text-brand" />
- <span className="text-sm text-muted">{label}</span>
- </div>
- );
+ return <BookLoader label={label} className="min-h-40 py-10" />;
 }
 
 export function ErrorBlock({
