@@ -1,0 +1,11 @@
+import { lazyPage } from '../lib/lazy-page';
+export const TeacherDashboard = lazyPage(() => import("../pages/teacher/Dashboard").then((module) => module.TeacherDashboard));
+export const TeacherClasses = lazyPage(() => import("../pages/teacher/Classes").then((module) => module.TeacherClasses));
+export const TeacherSchedule = lazyPage(() => import("../pages/teacher/Schedule").then((module) => module.TeacherSchedule));
+export const TeacherAttendance = lazyPage(() => import("../pages/teacher/Attendance").then((module) => module.TeacherAttendance));
+export const TeacherGrading = lazyPage(() => import("../pages/teacher/Grading").then((module) => module.TeacherGrading));
+export const TeacherReports = lazyPage(() => import("../pages/teacher/Reports").then((module) => module.TeacherReports));
+export const TeacherContent = lazyPage(() => import("../pages/teacher/Content").then((module) => module.TeacherContent));
+export const TeacherAssignments = lazyPage(() => import("../pages/teacher/Assignments").then((module) => module.TeacherAssignments));
+export const TeacherAssessments = lazyPage(() => import("../pages/teacher/Assessments").then((module) => module.TeacherAssessments));
+export const TeacherPeople = lazyPage(() => import("../pages/teacher/People").then((module) => module.TeacherPeople));
