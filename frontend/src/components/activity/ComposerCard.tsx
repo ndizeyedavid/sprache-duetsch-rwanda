@@ -1,3 +1,4 @@
+import { profilePhotoUrl } from '../../lib/profile-photo';
 import type { FormEvent } from 'react';
 import { useState } from 'react';
 import { FiAlertCircle,FiSend } from 'react-icons/fi';
@@ -31,7 +32,7 @@ export function ComposerCard({ displayName, avatarUrl, onPosted }: Props) {
  <form onSubmit={handleSubmit} className="p-4">
  <div className="flex gap-3">
  {avatarUrl ? (
- <img src={avatarUrl} alt={displayName} className="size-9 shrink-0 rounded-full object-cover" />
+ <img src={profilePhotoUrl(avatarUrl)} alt={displayName} className="size-9 shrink-0 rounded-full object-cover" />
  ) : (
  <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">{initials(displayName)}</span>
  )}
