@@ -2,6 +2,7 @@ import { forbidden,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
 import { certificateInclude } from './certificate-include.js';
 export const getCertificate = async (id: string, userId: string, role: string) => {
+  if (!['STUDENT', 'ACADEMIC_ADMIN', 'SUPER_ADMIN'].includes(role)) throw forbidden('Certificates are available to the student and academic administration');
   const certificate = await prisma.certificate.findUnique({
     where: { id },
     include: certificateInclude,
