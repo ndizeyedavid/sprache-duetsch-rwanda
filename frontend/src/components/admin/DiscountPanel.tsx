@@ -73,7 +73,7 @@ export function DiscountPanel({ students, onApproved }: { students: StudentRow[]
  </button>
  <input
  value={rejectReason[discount.id] ?? ''}
- onChange={(event) => setRejectReason((current) => ({ ...current, [discount.id]: event.currentTarget.value }))}
+ onChange={(event) => { const reason = event.currentTarget.value; setRejectReason((current) => ({ ...current, [discount.id]: reason })); }}
  placeholder="Reject reason"
  aria-label={`Reject reason for discount ${discount.id}`}
  className="input input grow rounded-field border-line bg-base-100"
