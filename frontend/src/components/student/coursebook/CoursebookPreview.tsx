@@ -1,8 +1,9 @@
-import { lazy,Suspense,useEffect,useRef } from 'react';
+import { Suspense,useEffect,useRef } from 'react';
+import { lazyPage } from '../../../lib/lazy-page';
 import { FiDownload,FiExternalLink,FiX } from 'react-icons/fi';
 
 type Props = { url: string; filename: string; onClose: () => void };
-const PdfViewer = lazy(() => import('./PdfViewer'));
+const PdfViewer = lazyPage(() => import('./PdfViewer').then(module => module.default));
 export function CoursebookPreview({ url, filename, onClose }: Props) {
   const dialog = useRef<HTMLDialogElement>(null);
   useEffect(() => { dialog.current?.showModal(); }, []);
