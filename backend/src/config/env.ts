@@ -50,6 +50,9 @@ const envSchema = z.object({
   // HTTP relay on your VPS — Render calls this over HTTPS, VPS does SMTP to Gmail (bypasses Render's SMTP block)
   EMAIL_RELAY_URL: z.string().optional(),
   EMAIL_RELAY_SECRET: z.string().optional(),
+  // JSON list of test accounts shown on the public /demo page. Leave unset in real use:
+  // when it is missing the page and its endpoint are switched off.
+  DEMO_ACCOUNTS: z.string().optional(),
 });
 
 const parsed = envSchema.superRefine((value, ctx) => {
