@@ -1,3 +1,5 @@
+import type { CertificateDesign } from '../../components/certificates/certificate-types';
+
 export type Certificate = {
   id: string;
   certificateNumber: string;
@@ -6,6 +8,8 @@ export type Certificate = {
   issuedAt: string;
   revokedAt: string | null;
   revokeReason: string | null;
+  pdfUrl?: string | null;
+  metadata?: { document?: { studentName: string; studentCode: string; levelCode: string; levelTitle: string; design: CertificateDesign } } | null;
   level: { id: string; code: string; title: string };
   student?: {
     id: string;
