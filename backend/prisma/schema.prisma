@@ -349,6 +349,7 @@ model Level {
   certificates Certificate[]
   intendedBy  Student[]    @relation("IntendedLevel")
   currentFor  Student[]    @relation("CurrentLevel")
+  intakes     Intake[]     @relation("IntakeLevels")
   activityEvents ActivityEvent[]
 
   @@index([language, order])
@@ -372,6 +373,7 @@ model Intake {
   students    Student[]
   classes     ClassGroup[]
   enrollments Enrollment[]
+  levels      Level[]      @relation("IntakeLevels")
 }
 
 model ClassGroup {
