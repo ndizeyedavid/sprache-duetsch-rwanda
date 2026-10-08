@@ -60,6 +60,7 @@ const validateCoursebook = async (url?: string | null) => {
 
 export const createLevel = async (input: CreateLevelInput, actorId?: string) => {
   await validateCoursebook(input.coursebookUrl);
+  if (input.currency.toUpperCase() === "RWF" && !Number.isInteger(input.defaultFee ?? 0)) throw badRequest("Course prices in RWF must be whole amounts");
   const existing = await prisma.level.findUnique({
     where: { code: input.code },
     select: { id: true },
@@ -101,6 +102,8 @@ export const updateLevel = async (id: string, input: UpdateLevelInput, actorId?:
   if (!before) {
     throw notFound("Level not found");
   }
+
+  if ((input.currency ?? before.currency).toUpperCase() === "RWF" && !Number.isInteger(input.defaultFee ?? Number(before.defaultFee))) throw badRequest("Course prices in RWF must be whole amounts");
 
   if (input.code && input.code !== before.code) {
     const duplicate = await prisma.level.findUnique({
