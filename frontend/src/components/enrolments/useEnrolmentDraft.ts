@@ -52,6 +52,7 @@ export function useEnrolmentDraft(
     intakeId,
     setIntakeId: (value: string) => {
       setIntakeId(value);
+      setLevelId('');
       setClassGroupId('');
     },
     classGroupId,
