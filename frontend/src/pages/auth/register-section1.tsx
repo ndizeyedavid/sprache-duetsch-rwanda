@@ -1,3 +1,4 @@
+import { currencyAmount } from '../../lib/format';
 import type { ReferenceItem } from './reference-item';
 import type { FormEvent } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
@@ -98,12 +99,13 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Intake</span>
  <select
+ required
  value={intakeId}
  disabled={loadingRefs}
- onChange={(event) => setIntakeId(event.currentTarget.value)}
+ onChange={(event) => { setIntakeId(event.currentTarget.value); setIntendedLevelId(''); }}
  className="select w-full rounded-field border-line bg-base-200"
  >
- <option value="">No preference</option>
+ <option value="">Select intake (free to join)</option>
  {intakes.map((intake) => (
  <option key={intake.id} value={intake.id}>
  {labelOf(intake)}
@@ -113,17 +115,18 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  </label>
 
  <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Intended level</span>
+ <span className="mb-1.5 block text-xs font-medium">Course level</span>
  <select
+ required
  value={intendedLevelId}
  disabled={loadingRefs}
  onChange={(event) => setIntendedLevelId(event.currentTarget.value)}
  className="select w-full rounded-field border-line bg-base-200"
  >
- <option value="">Decide later</option>
+ <option value="">Select a level from this intake</option>
  {levels.map((level) => (
  <option key={level.id} value={level.id}>
- {labelOf(level)}
+ {labelOf(level)} · {currencyAmount(Number(level.defaultFee ?? 0), level.currency ?? 'RWF')}
  </option>
  ))}
  </select>
