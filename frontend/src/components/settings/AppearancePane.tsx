@@ -19,8 +19,7 @@ export function AppearancePane() {
  Appearance
  </p>
  <p className="mt-1 text-xs leading-snug text-muted">
- Pick a daisyUI theme — like Canvas display preferences. Saved on this
- device.
+ Choose how the app looks. Your choice is saved on this device.
  </p>
  </div>
 
