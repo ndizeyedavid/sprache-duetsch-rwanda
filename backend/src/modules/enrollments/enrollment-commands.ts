@@ -8,13 +8,15 @@ import { checkEnrollmentClass,reconcileStudent } from "./enrollment-policy.js";
 import type { CreateEnrollmentInput,UpdateEnrollmentInput } from "./enrollments.schema.js";
 import { writeTuitionSchedule } from "./tuition-schedule.js";
 
-export const createEnrollment = (input: CreateEnrollmentInput, actorId?: string) => transact(async tx => {
+export const createEnrollment = (input: CreateEnrollmentInput, actorId?: string) => transact(tx => createEnrollmentTx(tx, input, actorId));
+export const createEnrollmentTx = async (tx: Prisma.TransactionClient, input: CreateEnrollmentInput, actorId?: string) => {
   const student = await tx.student.findUnique({ where: { id: input.studentId } });
   const level = await tx.level.findUnique({ where: { id: input.levelId } });
-  const intake = await tx.intake.findUnique({ where: { id: input.intakeId } });
+  const intake = await tx.intake.findUnique({ where: { id: input.intakeId }, include: { levels: { select: { id: true } } } });
   if (!student || !level || !intake) throw notFound("Student, level or intake not found");
   if (["SUSPENDED", "WITHDRAWN"].includes(student.status)) throw badRequest("Student account cannot be enrolled in its current status");
   if (!level.isActive || !intake.isActive) throw badRequest("Choose an active level and intake");
+  if (!intake.levels.some(row => row.id === level.id)) throw badRequest('This level is not offered in the selected intake');
   const now = new Date();
   const outsideWindow = intake.endDate < now || (intake.enrollmentOpensAt && now < intake.enrollmentOpensAt) || (intake.enrollmentEndsAt && now > intake.enrollmentEndsAt);
   if (outsideWindow && !input.windowOverrideReason) throw badRequest("Intake enrolment is closed. An audited override reason is required.");
@@ -27,26 +29,20 @@ export const createEnrollment = (input: CreateEnrollmentInput, actorId?: string)
   if (existing) throw conflict("Student already has this enrolment; manage its status instead");
   if (input.discountTotal) throw badRequest("Request and approve discounts through Finance");
   const currency = await assertStudentCurrency(tx, input.studentId, input.currency ?? level.currency);
-  if (intake.currency.toUpperCase() !== currency && (intake.registrationFee.greaterThan(0) || intake.bookFee.greaterThan(0))) throw badRequest("Intake fees and tuition must use the same currency");
   const totalFee = new Prisma.Decimal(input.totalFee ?? level.defaultFee);
-  const firstInIntake = !await tx.enrollment.findFirst({ where: { studentId: input.studentId, intakeId: input.intakeId } });
+  if (currency === 'RWF' && !totalFee.isInteger()) throw badRequest('Course tuition in RWF must be a whole amount');
   const enrollment = await tx.enrollment.create({ data: { studentId: input.studentId, levelId: input.levelId,
     intakeId: input.intakeId, campusId, classGroupId: input.classGroupId, totalFee, currency } });
   await writeTuitionSchedule(tx, { studentId: input.studentId, enrollmentId: enrollment.id, totalFee, currency,
     installments: input.installments, dueDate: input.dueDate ? new Date(input.dueDate) : intake.startDate,
     description: `Tuition — ${level.title} (${intake.code})`, actorId });
-  if (firstInIntake) for (const fee of [{ type: "REGISTRATION" as const, amount: intake.registrationFee }, { type: "BOOKS" as const, amount: intake.bookFee }]) {
-    if (fee.amount.greaterThan(0)) await tx.charge.create({ data: { studentId: input.studentId,
-      enrollmentId: enrollment.id, type: fee.type, description: `${fee.type} — ${intake.code}`,
-      amount: fee.amount, currency, dueDate: intake.startDate, createdById: actorId } });
-  }
   await reconcileStudent(tx, input.studentId);
   await recalculateStudentFinance(tx, input.studentId);
   await writeAuditTx(tx, { actorId, action: "ENROLLMENT_CREATED", entityType: "Enrollment", entityId: enrollment.id,
     after: enrollment, reason: input.windowOverrideReason });
   await writeActivityTx(tx, { actorId, type: "ENROLLMENT", title: `New enrolment in ${level.title}`, body: `Enrolled for intake ${intake.code}.`, studentId: input.studentId });
   return enrollment;
-});
+};
 
 export const updateEnrollment = (id: string, input: UpdateEnrollmentInput, actorId?: string) => transact(async tx => {
   const before = await tx.enrollment.findUnique({ where: { id } });
@@ -56,6 +52,7 @@ export const updateEnrollment = (id: string, input: UpdateEnrollmentInput, actor
   await checkEnrollmentClass(tx, { ...before, classGroupId: input.classGroupId === undefined ? before.classGroupId : input.classGroupId,
     active: status === "ACTIVE", enrollmentId: id });
   const totalFee = new Prisma.Decimal(input.totalFee ?? before.totalFee);
+  if (input.totalFee !== undefined && before.currency === 'RWF' && !totalFee.isInteger()) throw badRequest('Course tuition in RWF must be a whole amount');
   const enrollment = await tx.enrollment.update({ where: { id }, data: {
     status, classGroupId: input.classGroupId, totalFee,
     completedAt: status === "COMPLETED" ? before.completedAt ?? new Date() : null,
