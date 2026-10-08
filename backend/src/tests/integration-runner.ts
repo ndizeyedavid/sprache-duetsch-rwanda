@@ -1,6 +1,7 @@
 import { spawnSync } from 'node:child_process';
 import { env } from '../config/env.js';
 const fixtures = [
+  'src/tests/course-photo.integration.ts',
   'src/modules/payments/finance-workflow.integration.ts',
   'src/modules/content/learning-workflow.integration.ts',
   'src/modules/notifications/delivery-workflow.integration.ts',
