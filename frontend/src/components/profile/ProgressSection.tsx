@@ -20,7 +20,7 @@ export function ProgressSection({ levels, loading, error, onRetry }: Props) {
     <Panel>
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="flex items-center gap-2 text-base font-semibold">
-          <FiCompass aria-hidden className="text-brand" />Learning journey
+          <FiCompass aria-hidden className="text-brand" />Progress
         </h2>
         {lessons ? <p className="text-xs text-muted">{lessons} lessons across {ordered.length} level{ordered.length === 1 ? '' : 's'}</p> : null}
       </div>
