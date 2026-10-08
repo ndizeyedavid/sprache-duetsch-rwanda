@@ -10,6 +10,7 @@ import { getUserProfile } from './get-user-profile.js';
 import { issueTokens } from './issue-tokens.js';
 import type { RegisterResult } from './register-result.js';
 import type { RequestMeta } from './request-meta.js';
+import { createEnrollmentTx } from '../enrollments/enrollment-commands.js';
 export const registerStudent = async (
   input: RegisterInput,
   meta: RequestMeta,
@@ -27,6 +28,8 @@ export const registerStudent = async (
   if (!campus || !campus.isActive) {
     throw badRequest("Selected campus is not available");
   }
+  const intakeId = input.intakeId, levelId = input.intendedLevelId;
+  if (!intakeId || !levelId) throw badRequest('Choose an intake and one of its offered levels');
 
   const passwordHash = await hashPassword(input.password);
 
@@ -61,6 +64,7 @@ export const registerStudent = async (
       },
     });
 
+    await createEnrollmentTx(tx, { studentId: student.id, intakeId, levelId, campusId: input.campusId }, user.id);
     return { user, student };
   });
 
