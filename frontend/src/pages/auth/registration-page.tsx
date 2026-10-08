@@ -29,12 +29,12 @@ export function Register() {
  try {
  const [campusList, intakeList, levelList] = await Promise.all([
  apiGet<ReferenceItem[]>('/campuses?pageSize=100'),
- apiGet<ReferenceItem[]>('/intakes?pageSize=100'),
+ apiGet<ReferenceItem[]>('/intakes?pageSize=100&isActive=true&upcoming=true'),
  apiGet<ReferenceItem[]>('/levels?pageSize=100'),
  ]);
  if (cancelled) return;
  setCampuses(campusList);
- setIntakes(intakeList);
+ setIntakes(intakeList.filter(item => item.levels?.some(level => level.isActive)));
  setLevels(levelList);
  setCampusId((current) => current || campusList[0]?.id || '');
  } catch (err) {
@@ -54,6 +54,6 @@ export function Register() {
  const handleSubmit = (...args: Parameters<ReturnType<typeof createHandleSubmit>>) => createHandleSubmit({ password, shift, setError, fullName, campusId, setPending, email, phone, intakeId, intendedLevelId, navigate })(...args);
 
  return (
- <RegisterSection1 handleSubmit={handleSubmit} fullName={fullName} setFullName={setFullName} phone={phone} setPhone={setPhone} email={email} setEmail={setEmail} campusId={campusId} loadingRefs={loadingRefs} setCampusId={setCampusId} campuses={campuses} shift={shift} setShift={setShift} intakeId={intakeId} setIntakeId={setIntakeId} intakes={intakes} intendedLevelId={intendedLevelId} setIntendedLevelId={setIntendedLevelId} levels={levels} password={password} setPassword={setPassword} error={error} pending={pending} navigate={navigate} setError={setError} />
+ <RegisterSection1 handleSubmit={handleSubmit} fullName={fullName} setFullName={setFullName} phone={phone} setPhone={setPhone} email={email} setEmail={setEmail} campusId={campusId} loadingRefs={loadingRefs} setCampusId={setCampusId} campuses={campuses} shift={shift} setShift={setShift} intakeId={intakeId} setIntakeId={setIntakeId} intakes={intakes} intendedLevelId={intendedLevelId} setIntendedLevelId={setIntendedLevelId} levels={levels.filter(level => intakes.find(intake => intake.id === intakeId)?.levels?.some(offered => offered.id === level.id && offered.isActive))} password={password} setPassword={setPassword} error={error} pending={pending} navigate={navigate} setError={setError} />
  );
 }
