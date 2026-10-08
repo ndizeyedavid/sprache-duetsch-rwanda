@@ -1,68 +1,27 @@
-import { Link,Outlet } from "react-router-dom";
-import { Logo } from "../ui/Logo";
-const STATS = [
- { label: "Levels", value: "A1–B2" },
- { label: "Campuses", value: "3" },
- { label: "Students", value: "1.2k" },
-];
+import { Outlet } from 'react-router-dom';
+import { AuthPhoto } from '../auth/AuthPhoto';
+import { AuthSeal } from '../auth/AuthSeal';
+import { LiquidEdge } from '../auth/LiquidEdge';
 
+/** Photo-led shell for sign-in, registration and password pages. */
 export function AuthLayout() {
- return (
- <div className="grid min-h-screen lg:grid-cols-2">
- <div
- className="relative hidden flex-col justify-between overflow-hidden p-10 text-white lg:flex"
- style={{
- background:
- "linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.9)), url('/auth-image.webp')",
- backgroundSize: "cover",
- backgroundPosition: "center",
- backgroundRepeat: "no-repeat",
- }}
- >
- <div
- aria-hidden
- className="pointer-events-none absolute -right-24 -top-24 size-80 rounded-full bg-brand/25 blur-3xl"
- />
- <Link to="/" className="relative">
- {/* <Logo size={44} withWordmark wordmarkClassName="text-white" /> */}
- <Logo size={130} />
- </Link>
- <div className="relative max-w-sm">
- <span className="inline-flex rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand">
- Deutsch Sprache RW
- </span>
- <h2 className="mt-4 text-3xl font-semibold leading-snug">
- One connected school.
- </h2>
- <p className="mt-3 text-sm leading-relaxed text-white/70">
- Learn, teach and manage your school in one place. Sign in with your account to access your dashboard.
- </p>
- <dl className="mt-8 grid grid-cols-3 gap-4">
- {STATS.map((stat) => (
- <div key={stat.label}>
- <dt className="text-[11px] uppercase tracking-wide text-white/60">
- {stat.label}
- </dt>
- <dd className="text-lg font-semibold">{stat.value}</dd>
- </div>
- ))}
- </dl>
- </div>
- <p className="relative text-xs text-white/50">
- © 2026 Deutsch Sprache RW
- </p>
- </div>
-
- <div className="flex items-center justify-center bg-base-200 px-4 py-10 sm:px-8">
- <div className="w-full max-w-md">
- <Link to="/" className="mb-8 flex justify-center lg:hidden">
- <Logo size={40} withWordmark wordmarkClassName="text-ink" />
- </Link>
- <Outlet />
-
-
- </div>
- </div>
- </div>
- );
+  return (
+    <div className="min-h-screen bg-base-100 lg:grid lg:h-screen lg:grid-cols-[1fr_minmax(480px,40%)] lg:overflow-hidden">
+      <AuthPhoto />
+      <div className="relative z-10 bg-base-100">
+        <LiquidEdge />
+        <AuthSeal />
+        <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+          <span className="auth-blob absolute -bottom-40 -right-32 size-[28rem] rounded-full bg-secondary/15 blur-3xl" />
+          <span className="auth-blob absolute -top-32 right-1/4 size-80 rounded-full bg-brand/5 blur-3xl" style={{ animationDelay: '-10s' }} />
+        </div>
+        <main className="relative flex items-center justify-center px-6 pb-12 pt-14 sm:px-10 lg:h-full lg:overflow-y-auto lg:py-16 lg:pl-24 lg:pr-14">
+          <div className="w-full max-w-md">
+            <Outlet />
+            <p className="mt-12 text-center text-xs text-muted">© 2026 Deutsch Sprache RW · Kigali, Rwanda</p>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
 }
