@@ -21,6 +21,15 @@ export default defineConfig([
     },
     rules: {
       'max-lines': ['error', { max: 200, skipBlankLines: false, skipComments: false }],
+      // React clears event.currentTarget once the handler returns, so reading it
+      // inside a state updater (which runs later) crashes with "currentTarget is null".
+      'no-restricted-syntax': ['error', {
+        selector: "CallExpression[callee.name=/^set[A-Z]/] > ArrowFunctionExpression MemberExpression[property.name='currentTarget']",
+        message: 'Read event.currentTarget before calling the state setter, then use the captured value.',
+      }, {
+        selector: "CallExpression[callee.property.name=/^set[A-Z]/] > ArrowFunctionExpression MemberExpression[property.name='currentTarget']",
+        message: 'Read event.currentTarget before calling the state setter, then use the captured value.',
+      }],
     },
   },
 ])
