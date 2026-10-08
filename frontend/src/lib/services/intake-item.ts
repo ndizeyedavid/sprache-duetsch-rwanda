@@ -1,5 +1,6 @@
 import type { Money } from './money';
 export type IntakeItem = {
+  levels?: { id: string; code: string; title: string; isActive: boolean }[];
   id: string;
   code: string;
   name: string;
