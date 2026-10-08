@@ -19,6 +19,7 @@ async function validateReferences(tx:Prisma.TransactionClient,input:Partial<Crea
 export async function createClass(input:CreateClassInput,actorId?:string){return transact(async tx=>{
   if(await tx.classGroup.findUnique({where:{code:input.code}}))throw conflict('A class with this code already exists');
   await validateReferences(tx,input);
+  if (input.levelId && input.intakeId && !await tx.intake.findFirst({ where: { id: input.intakeId, levels: { some: { id: input.levelId } } } })) throw badRequest('This level is not offered in the selected intake');
   if(input.teacherId)await validateTeacher(tx,input.teacherId,input.levelId);
   const row=await tx.classGroup.create({data:{...input,teacherId:input.teacherId??null,capacity:input.capacity??30,isActive:input.isActive??true}});
   await writeAuditTx(tx,{actorId,action:'CLASS_CREATED',entityType:'ClassGroup',entityId:row.id,after:row});return row;
@@ -27,6 +28,7 @@ export async function updateClass(id:string,input:UpdateClassInput,actorId?:stri
   const before=await tx.classGroup.findUnique({where:{id}});if(!before)throw notFound('Class not found');
   if(input.code&&input.code!==before.code&&await tx.classGroup.findUnique({where:{code:input.code}}))throw conflict('A class with this code already exists');
   await validateReferences(tx,input);
+  if (!await tx.intake.findFirst({ where: { id: input.intakeId ?? before.intakeId, levels: { some: { id: input.levelId ?? before.levelId } } } })) throw badRequest('This level is not offered in the selected intake');
   if(input.levelId&&input.levelId!==before.levelId&&await tx.enrollment.count({where:{classGroupId:id}}))throw conflict('A class with enrolled students cannot change levels. Create a new class instead.');
   if(input.capacity!==undefined&&await tx.enrollment.count({where:{classGroupId:id,status:"ACTIVE"}})>input.capacity)throw conflict("Capacity cannot be lower than active enrolments");
   if((input.intakeId&&input.intakeId!==before.intakeId||input.campusId&&input.campusId!==before.campusId)&&await tx.enrollment.count({where:{classGroupId:id}}))throw conflict("A class with enrolments cannot change intake or campus");
