@@ -15,7 +15,7 @@ try {
   const campus = await prisma.campus.create({ data: { code: stamp, name: stamp } }); campusId = campus.id;
   const level = await prisma.level.create({ data: { code: stamp, title: stamp, levelLabel: 'A1', defaultFee: 200 } }); levelId = level.id;
   const now = Date.now();
-  const intake = await prisma.intake.create({ data: { code: stamp, name: stamp, startDate: new Date(now + 86400000), endDate: new Date(now + 30 * 86400000), registrationFee: 20, bookFee: 10 } }); intakeIds.push(intake.id);
+  const intake = await prisma.intake.create({ data: { code: stamp, name: stamp, levels: { connect: { id: level.id } }, startDate: new Date(now + 86400000), endDate: new Date(now + 30 * 86400000), registrationFee: 20, bookFee: 10 } }); intakeIds.push(intake.id);
   const group = await prisma.classGroup.create({ data: { code: stamp, name: stamp, levelId: level.id, campusId: campus.id, intakeId: intake.id, capacity: 1, shift: 'EVENING' } }); classIds.push(group.id);
   for (let i = 0; i < 2; i++) {
     const user = await prisma.user.create({ data: { email: `${stamp}-${i}@test.local`, firstName: 'Fixture', lastName: 'Student', passwordHash: 'unused', role: 'STUDENT', status: 'ACTIVE' } }); userIds.push(user.id);
@@ -25,7 +25,7 @@ try {
   const enrollment = await createEnrollment({ studentId: studentIds[0], levelId: level.id, intakeId: intake.id, classGroupId: group.id,
     installments: [{ amount: 100, dueDate: new Date(now - 86400000) }, { amount: 100, dueDate: new Date(now + 10 * 86400000) }] });
   let finance = await recalculateStudentFinance(prisma, studentIds[0]);
-  assert.equal(finance.totalDue.toString(), '230'); assert.equal(finance.overdueAmount.toString(), '100');
+  assert.equal(finance.totalDue.toString(), '200'); assert.equal(finance.overdueAmount.toString(), '100');
   await assert.rejects(createEnrollment({ studentId: studentIds[1], levelId: level.id, intakeId: intake.id, classGroupId: group.id }), /full/);
   await assert.rejects(createPayment({ reference: undefined, notes: undefined, studentId: studentIds[0], amount: 100, methodId: method.id, currency: 'USD' }), /currency/);
   const payment = await createPayment({ reference: undefined, notes: undefined, studentId: studentIds[0], enrollmentId: enrollment.id, amount: 100, methodId: method.id });
@@ -53,16 +53,16 @@ try {
   assert.equal(await prisma.payment.count({ where: { idempotencyKey: requestKey } }), 1);
   assert.equal(await prisma.activityEvent.count({ where: { studentId: studentIds[0], type: 'PAYMENT', title: 'Payment of 5 RWF recorded' } }), 1);
   await assert.rejects(createPayment({ ...retryInput, amount: 6 }), /different details/);
-  const secondIntake = await prisma.intake.create({ data: { code: `${stamp}-next`, name: stamp, startDate: new Date(now + 40 * 86400000), endDate: new Date(now + 80 * 86400000) } }); intakeIds.push(secondIntake.id);
+  const secondIntake = await prisma.intake.create({ data: { code: `${stamp}-next`, name: stamp, levels: { connect: { id: level.id } }, startDate: new Date(now + 40 * 86400000), endDate: new Date(now + 80 * 86400000) } }); intakeIds.push(secondIntake.id);
   await prisma.student.update({ where: { id: studentIds[0] }, data: { intakeId: secondIntake.id } });
-  const report = await getFinanceSummary({ intakeId: intake.id }); assert.equal(report.totalBilled.toString(), '230');
+  const report = await getFinanceSummary({ intakeId: intake.id }); assert.equal(report.totalBilled.toString(), '200');
   await updateEnrollment(enrollment.id, { status: 'WITHDRAWN' });
   assert.equal((await loadStudentAccessProfile(userIds[0])).levelIds.length, 0);
   const lastSeat = await prisma.classGroup.create({ data: { code: `${stamp}-seat`, name: stamp, levelId: level.id, campusId: campus.id, intakeId: secondIntake.id, capacity: 1, shift: 'EVENING' } }); classIds.push(lastSeat.id);
   const competing = await Promise.allSettled(studentIds.map(studentId => createEnrollment({ studentId, levelId: level.id, intakeId: secondIntake.id, classGroupId: lastSeat.id })));
   assert.equal(competing.filter(row => row.status === 'fulfilled').length, 1);
   assert.equal(await prisma.enrollment.count({ where: { classGroupId: lastSeat.id, status: 'ACTIVE' } }), 1);
-  process.stdout.write('Finance integration passed: intake fees, instalments, capacity, currency, concurrency, refunds, discounts, receipt voiding, historical reports and withdrawal.\n');
+  process.stdout.write('Finance integration passed: free intake membership, course instalments, capacity, currency, concurrency, refunds, discounts, receipt voiding, historical reports and withdrawal.\n');
 } finally {
   const related = await Promise.all([
     prisma.payment.findMany({ where: { studentId: { in: studentIds } }, select: { id: true } }),
