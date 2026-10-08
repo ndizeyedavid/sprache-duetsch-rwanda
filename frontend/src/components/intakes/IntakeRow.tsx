@@ -1,8 +1,5 @@
-import { useFinanceAccess } from '../../hooks/useFinanceAccess';
 import { FiArchive,FiEdit2,FiRotateCcw } from 'react-icons/fi';
-import { rwf } from '../../lib/format';
 import type { IntakeItem } from '../../lib/services';
-import { money } from '../../lib/services';
 import { StatusBadge } from '../ui/StatusBadge';
 import { QUIET_BTN } from './constants';
 import { IntakeTimeline } from './IntakeTimeline';
@@ -17,7 +14,6 @@ type IntakeRowProps = {
 };
 
 export function IntakeRow({ intake, onEdit, onArchive, onRestore, busyId }: IntakeRowProps) {
-  const canFinance = useFinanceAccess();
   const phase = intakePhase(intake);
   const busy = busyId === intake.id;
 
@@ -38,21 +34,7 @@ export function IntakeRow({ intake, onEdit, onArchive, onRestore, busyId }: Inta
       </div>
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-3">
-        {canFinance && <><dl className="flex flex-wrap items-baseline gap-x-4 gap-y-1 text-xs text-muted">
-          <div className="flex items-baseline gap-1.5">
-            <dt>Registration</dt>
-            <dd className="font-semibold text-ink tabular-nums">
-              {rwf(money(intake.registrationFee))}
-            </dd>
-          </div>
-          <div className="flex items-baseline gap-1.5">
-            <dt>Books</dt>
-            <dd className="font-semibold text-ink tabular-nums">
-              {rwf(money(intake.bookFee))}
-            </dd>
-          </div>
-          <dd className="text-[11px]">{intake.currency}</dd>
-        </dl></>}
+        <div className="flex flex-wrap gap-2">{intake.levels?.map(level => <span className="badge badge-soft" key={level.id}>{level.code}</span>)}<span className="text-xs text-base-content/60">Free intake registration</span></div>
         <div className="flex gap-2">
           <button
             type="button"
