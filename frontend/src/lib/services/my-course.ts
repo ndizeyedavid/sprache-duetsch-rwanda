@@ -1,5 +1,8 @@
 import type { MyModule } from './my-module';
 export type MyCourse = {
+  paymentRequired?: boolean;
+  price?: string;
+  currency?: string;
   level: {
     id: string;
     code: string;
