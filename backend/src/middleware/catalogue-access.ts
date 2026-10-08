@@ -1,5 +1,5 @@
 import type { RequestHandler } from 'express';
-import { withoutFinancialFields } from '../lib/financial-visibility.js';
+import { coursePriceFields,withoutFinancialFields } from '../lib/financial-visibility.js';
 import { FINANCE_ROLES } from '../lib/roles.js';
 import { requireAuth } from './auth.js';
 
@@ -9,7 +9,8 @@ export const catalogueAccess: RequestHandler = (req, res, next) => {
     if (error) { next(error); return; }
     if (!req.user || !FINANCE_ROLES.includes(req.user.role)) {
       const sendJson = res.json.bind(res);
-      res.json = (body: unknown) => sendJson(withoutFinancialFields(body));
+      const allowed = req.baseUrl === '/api/levels' ? coursePriceFields : new Set<string>();
+      res.json = (body: unknown) => sendJson(withoutFinancialFields(body, allowed));
     }
     next();
   }
