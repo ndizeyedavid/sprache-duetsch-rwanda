@@ -38,7 +38,7 @@ export function CourseOutline({ modules, module, selected, busy, onSelect, onMod
             <span className={`flex size-9 shrink-0 items-center justify-center rounded-field ${active ? 'bg-neutral-content/15' : 'bg-base-200'}`}><Icon aria-hidden /></span>
             <span className="min-w-0 grow"><span className="block text-[13px] font-medium leading-5">{lesson.title}</span>
               <span className="mt-1 block text-[11px] opacity-60">Lesson {index + 1}{lesson.estimatedMinutes ? ` · ${lesson.estimatedMinutes} min` : ''}</span></span>
-            {lesson.isPublished ? <FiCheck aria-label="Published" className="shrink-0" /> : null}
+            {lesson.isPublished && module.isPublished ? <FiCheck aria-label="Published" className="shrink-0" /> : null}
           </button>;
         })}
       </nav>
