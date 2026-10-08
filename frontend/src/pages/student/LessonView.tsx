@@ -1,13 +1,13 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { FiArrowLeft, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { useEffect,useMemo,useState } from 'react';
+import { FiArrowLeft,FiChevronLeft,FiChevronRight } from 'react-icons/fi';
+import { Link,useParams } from 'react-router-dom';
+import { ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { CoursePlayerShell } from '../../components/student/CoursePlayerShell';
+import { LessonDetail } from '../../components/student/LessonDetail';
+import { LessonOverview } from '../../components/student/LessonOverview';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { completeLesson, getMyCourses, getStudentLesson } from '../../lib/services';
-import { LessonDetail } from '../../components/student/LessonDetail';
-import { CoursePlayerShell } from '../../components/student/CoursePlayerShell';
-import { LessonOverview } from '../../components/student/LessonOverview';
+import { completeLesson,getMyCourses,getStudentLesson } from '../../lib/services';
 
 export function StudentLesson() {
   const { slug = '', lessonId = '' } = useParams();
@@ -43,7 +43,7 @@ export function StudentLesson() {
         <section className="card overflow-hidden border border-base-300/70 bg-base-100 p-5 sm:p-7"><LessonDetail key={lessonId} detail={detail} slug={slug} completing={completing} actionError={actionError} onComplete={handleComplete} /></section>
         <nav aria-label="Lesson navigation" className="grid gap-3 sm:grid-cols-2">
           {prev ? <Link to={`/courses/${slug}/learn/${prev.id}`} className="card flex-row items-center gap-3 border border-base-300/70 bg-base-100 p-4 hover:border-primary/30"><FiChevronLeft aria-hidden className="shrink-0" /><div><p className="text-[10px] text-base-content/50">Previous lesson</p><p className="mt-1 text-xs font-semibold">{prev.title}</p></div></Link> : <span />}
-          <Link to={next ? `/courses/${slug}/learn/${next.id}` : `/courses/${slug}/learn`} className="card flex-row items-center justify-between gap-3 border border-base-300/70 bg-base-100 p-4 hover:border-primary/30"><div><p className="text-[10px] text-base-content/50">{next ? 'Next lesson' : 'Course overview'}</p><p className="mt-1 text-xs font-semibold">{next?.title ?? 'Return to your learning path'}</p></div><FiChevronRight aria-hidden className="shrink-0" /></Link>
+          <Link to={next ? `/courses/${slug}/learn/${next.id}` : `/courses/${slug}/learn`} className="card flex-row items-center justify-between gap-3 border border-base-300/70 bg-base-100 p-4 hover:border-primary/30"><div><p className="text-[10px] text-base-content/50">{next ? 'Next lesson' : 'Course overview'}</p><p className="mt-1 text-xs font-semibold">{next?.title ?? 'Back to the course'}</p></div><FiChevronRight aria-hidden className="shrink-0" /></Link>
         </nav>
       </div>}
     </CoursePlayerShell>
