@@ -17,7 +17,7 @@ const name = `${stamp}.pdf`;
 try {
   const campus = await prisma.campus.create({ data: { code: stamp, name: stamp } }); campusId = campus.id;
   const level = await prisma.level.create({ data: { code: stamp, title: stamp, levelLabel: 'A1' } }); levelId = level.id;
-  const intake = await prisma.intake.create({ data: { code: stamp, name: stamp, startDate: new Date(), endDate: new Date(Date.now() + 86400000) } }); intakeId = intake.id;
+  const intake = await prisma.intake.create({ data: { code: stamp, name: stamp, levels: { connect: { id: level.id } }, startDate: new Date(), endDate: new Date(Date.now() + 86400000) } }); intakeId = intake.id;
   for (let i = 0; i < 2; i++) {
     const user = await prisma.user.create({ data: { email: `${stamp}-${i}@test.local`, firstName: 'Fixture', lastName: 'Student', role: 'STUDENT', status: 'ACTIVE', passwordHash: 'unused' } }); users.push(user.id);
     const student = await prisma.student.create({ data: { userId: user.id, studentCode: `${stamp}-${i}`, campusId: campus.id, currentLevelId: level.id, status: 'ACTIVE' } }); students.push(student.id);
