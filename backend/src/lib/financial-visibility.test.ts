@@ -1,8 +1,14 @@
 import { describe,expect,it } from 'vitest';
-import { hasFinancialFields,withoutFinancialFields } from './financial-visibility.js';
+import { coursePriceFields,hasFinancialFields,withoutFinancialFields } from './financial-visibility.js';
 import { FINANCE_ROLES } from './roles.js';
 
 describe('academic financial isolation', () => {
+  it('permits catalogue price configuration without exposing transaction data', () => {
+    expect(hasFinancialFields({ defaultFee: 1234, currency: 'RWF' }, coursePriceFields)).toBe(false);
+    expect(hasFinancialFields({ balance: 1234 }, coursePriceFields)).toBe(true);
+    expect(withoutFinancialFields({ defaultFee: '1234', currency: 'RWF', payments: [], finance: { balance: 10 } }, coursePriceFields))
+      .toEqual({ defaultFee: '1234', currency: 'RWF' });
+  });
   it('keeps finance access exclusive to finance and super administrators', () => {
     expect(FINANCE_ROLES).toEqual(['FINANCE_ADMIN', 'SUPER_ADMIN']);
   });
