@@ -1,8 +1,7 @@
 import type { IconType } from 'react-icons';
 import { FiAward,FiBookOpen,FiCalendar,FiCheckCircle,FiMapPin,FiTarget } from 'react-icons/fi';
-import { currencyAmount } from '../../lib/format';
-import type { MyFinance,MyProfile,MyProgressLevel,SkillStat } from '../../lib/services';
-import { humanize,isoDate,money } from '../../lib/services';
+import type { MyProfile,MyProgressLevel,SkillStat } from '../../lib/services';
+import { money } from '../../lib/services';
 import type { Tone } from '../../types';
 import type { AttendanceSliceKey } from './constants';
 import { ATTENDANCE_SLICES,ATTENDANCE_TARGET } from './constants';
@@ -148,22 +147,5 @@ export function moneySummary(finance: MyProfile['finance']): MoneySummary {
   return { due, paid, balance, paidShare };
 }
 
-export type LedgerRow = { id: string; title: string; meta: string; amount: string };
 
-export function chargeRows(finance: MyFinance): LedgerRow[] {
-  return finance.charges.map((charge) => ({
-    id: charge.id,
-    title: humanize(charge.type),
-    meta: isoDate(charge.createdAt),
-    amount: currencyAmount(money(charge.amount), charge.currency),
-  }));
-}
 
-export function paymentRows(finance: MyFinance): LedgerRow[] {
-  return finance.payments.map((payment) => ({
-    id: payment.id,
-    title: `${payment.txnType === 'REFUND' ? 'Refund · ' : ''}${payment.method?.name ?? 'Payment'}`,
-    meta: payment.reference ? `${isoDate(payment.paidAt)} · ${payment.reference}` : isoDate(payment.paidAt),
-    amount: currencyAmount(money(payment.amount) * (payment.txnType === "REFUND" ? -1 : 1), payment.currency),
-  }));
-}
