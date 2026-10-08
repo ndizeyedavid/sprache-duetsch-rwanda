@@ -1,4 +1,5 @@
 import { PaymentManageDialog } from './PaymentManageDialog';
+import { ReceiptDocumentDialog } from '../receipts/ReceiptDocumentDialog';
 import { useState } from 'react';
 import { FiDownload,FiSearch } from 'react-icons/fi';
 import type { ApiState } from '../../hooks/useApi';
@@ -11,6 +12,7 @@ import { Panel,SectionHeader } from '../ui/Panel';
 
 export function PaymentLedger({ payments, onChanged }: { payments: ApiState<PaymentRow[]>; onChanged: () => void }) {
  const [selected, setSelected] = useState<PaymentRow | null>(null);
+ const [receipt, setReceipt] = useState<NonNullable<PaymentRow['receipt']> | null>(null);
  const [query, setQuery] = useState('');
  const needle = query.trim().toLowerCase();
  const visible = (payments.data ?? []).filter(p => `${p.student.user.firstName} ${p.student.user.lastName} ${p.student.studentCode} ${p.reference ?? ''} ${p.method?.name ?? ''}`.toLowerCase().includes(needle));
@@ -27,15 +29,6 @@ export function PaymentLedger({ payments, onChanged }: { payments: ApiState<Paym
  setExportError(apiErrorMessage(err, 'Could not export payments.'));
  } finally {
  setExporting(false);
- }
- }
-
- async function handleReceipt(id: string, number: string) {
- setExportError(null);
- try {
- await downloadFile(`/payments/receipts/${id}/pdf`, `${number}.pdf`);
- } catch (err) {
- setExportError(apiErrorMessage(err, 'Could not download the receipt.'));
  }
  }
 
@@ -124,7 +117,7 @@ export function PaymentLedger({ payments, onChanged }: { payments: ApiState<Paym
  {payment.receipt ? (
  <button
  type="button"
- onClick={() => handleReceipt(payment.receipt!.id, payment.receipt!.receiptNumber)}
+ onClick={() => setReceipt(payment.receipt!)}
  className="font-semibold text-brand hover:underline"
  >
  {payment.receipt.receiptNumber}{payment.receipt.voidedAt ? " · VOID" : ""}
@@ -140,6 +133,7 @@ export function PaymentLedger({ payments, onChanged }: { payments: ApiState<Paym
  </table>
  </div>
  )}
+ {receipt ? <ReceiptDocumentDialog receipt={receipt} onClose={() => setReceipt(null)} /> : null}
  {selected ? <PaymentManageDialog key={selected.id} payment={selected} onClose={() => setSelected(null)} onSaved={onChanged} /> : null}
  </Panel>
  );
