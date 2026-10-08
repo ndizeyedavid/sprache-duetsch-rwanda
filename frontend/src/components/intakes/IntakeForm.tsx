@@ -1,9 +1,9 @@
-import { useFinanceAccess } from '../../hooks/useFinanceAccess';
+import { IntakeLevelPicker } from './IntakeLevelPicker';
 import type { ChangeEvent,FormEvent } from 'react';
 import { useState } from 'react';
 import { apiErrorMessage } from '../../lib/api';
 import type { IntakeItem } from '../../lib/services';
-import { CURRENCIES,FIELD,PRIMARY_BTN,SELECT } from './constants';
+import { FIELD,PRIMARY_BTN } from './constants';
 import type { IntakeDraft } from './types';
 import { emptyDraft,toDraft,toIsoDate,withStartDate } from './utils';
 
@@ -27,7 +27,7 @@ function validate(draft: IntakeDraft): string | null {
 }
 
 export function IntakeForm({ initial, onSubmit, onDone, onCancel }: IntakeFormProps) {
-  const canFinance = useFinanceAccess();
+  const [levelIds, setLevelIds] = useState(initial?.levels?.map(level => level.id) ?? []);
   const [draft, setDraft] = useState<IntakeDraft>(() => (initial ? toDraft(initial) : emptyDraft()));
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -60,7 +60,7 @@ export function IntakeForm({ initial, onSubmit, onDone, onCancel }: IntakeFormPr
         endDate: toIsoDate(draft.endDate),
         enrollmentOpensAt: draft.enrollmentOpensAt ? toIsoDate(draft.enrollmentOpensAt) : null,
         enrollmentEndsAt: draft.enrollmentEndsAt ? toIsoDate(draft.enrollmentEndsAt) : null,
-        ...(canFinance ? { registrationFee: Number(draft.registrationFee) || 0, bookFee: Number(draft.bookFee) || 0, currency: draft.currency } : {}),
+        levelIds,
         isActive: draft.isActive,
       };
       // The code is derived from the start month on create and frozen on edit.
@@ -132,35 +132,16 @@ export function IntakeForm({ initial, onSubmit, onDone, onCancel }: IntakeFormPr
         </div>
       </fieldset>
 
-      {canFinance && <><fieldset>
-        <legend className="mb-1.5 text-xs font-semibold">Fees</legend>
-        <div className="grid gap-3 sm:grid-cols-3">
-          <label className="block">
-            <span className="mb-1.5 block text-xs font-medium">Registration</span>
-            <input inputMode="numeric" min={0} value={draft.registrationFee} onChange={set('registrationFee')} placeholder="0" className={FIELD} />
-          </label>
-          <label className="block">
-            <span className="mb-1.5 block text-xs font-medium">Books</span>
-            <input inputMode="numeric" min={0} value={draft.bookFee} onChange={set('bookFee')} placeholder="0" className={FIELD} />
-          </label>
-          <label className="block">
-            <span className="mb-1.5 block text-xs font-medium">Currency</span>
-            <select value={draft.currency} onChange={set('currency')} className={SELECT}>
-              {CURRENCIES.map((code) => (
-                <option key={code} value={code}>{code}</option>
-              ))}
-            </select>
-          </label>
-        </div>
-      </fieldset></>}
+      <IntakeLevelPicker selected={levelIds} onChange={setLevelIds} />
 
       <label className="flex items-center gap-3 rounded-field bg-base-200 px-3 py-2.5">
         <input
           type="checkbox"
           checked={draft.isActive}
-          onChange={(event) =>
-            setDraft((current) => ({ ...current, isActive: event.currentTarget.checked }))
-          }
+          onChange={(event) => {
+            const isActive = event.currentTarget.checked;
+            setDraft((current) => ({ ...current, isActive }));
+          }}
           className="toggle toggle-primary"
         />
         <span className="text-xs font-medium">
