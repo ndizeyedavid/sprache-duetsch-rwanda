@@ -1,3 +1,4 @@
+import { CoursePaymentLock } from '../../components/student/CoursePaymentLock';
 import { FiArrowLeft,FiCheck,FiChevronDown } from 'react-icons/fi';
 import { Link,useParams } from 'react-router-dom';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
@@ -18,6 +19,8 @@ export function CourseOverview() {
   const level = levels.data.find((item) => item.code.toLowerCase() === slug.toLowerCase());
   if (!level) return <EmptyBlock title="Course not found" hint="Choose a course from My courses." />;
   const course = mine.data?.find((item) => item.level.id === level.id) ?? null;
+
+  if (course?.paymentRequired) return <CoursePaymentLock title={course.level.title} />;
 
   return (
     <div className="journey-enter space-y-4">
