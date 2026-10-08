@@ -5,10 +5,10 @@ const ZERO = new Prisma.Decimal(0);
 interface Obligation { id: string; amount: Prisma.Decimal; dueDate: Date | null; createdAt: Date }
 
 /** Oldest due obligations are covered first; undated charges are due immediately. */
-export function allocateObligations(charges: Obligation[], credit: Prisma.Decimal, now = new Date()) {
+export function allocateObligations<T extends Obligation>(charges: T[], credit: Prisma.Decimal, now = new Date()) {
   let available = Prisma.Decimal.max(ZERO, credit);
   const obligations = [...charges].sort((a, b) =>
-    (a.dueDate ?? a.createdAt).getTime() - (b.dueDate ?? b.createdAt).getTime());
+    (a.dueDate ?? a.createdAt).getTime() - (b.dueDate ?? b.createdAt).getTime() || a.createdAt.getTime() - b.createdAt.getTime() || a.id.localeCompare(b.id));
   const rows = obligations.map(charge => {
     const applied = Prisma.Decimal.min(available, charge.amount);
     available = available.minus(applied);
