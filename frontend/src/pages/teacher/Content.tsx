@@ -1,5 +1,5 @@
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
 import { TeacherCourseWorkspace } from '../../components/curriculum/TeacherCourseWorkspace';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { listMyTeachingLevels } from '../../lib/teaching';
 
