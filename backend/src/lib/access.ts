@@ -3,6 +3,7 @@ import type { AccountStatus,PaymentStatus } from "../generated/prisma/client.js"
 import { recalculateStudentFinance } from "./finance.js";
 import { forbidden,notFound } from "./http-error.js";
 import { prisma } from "./prisma.js";
+import { paidCourseEnrollments } from './course-payment-access.js';
 
 // Snapshot of what a student account is allowed to reach. Built once per request.
 export interface StudentAccessProfile {
@@ -10,6 +11,8 @@ export interface StudentAccessProfile {
   status: AccountStatus;
   currentLevelId: string | null;
   levelIds: string[];
+  enrolledLevelIds: string[];
+  coursePaymentsChecked: boolean;
   classGroupIds: string[];
   paymentStatus: PaymentStatus | null;
   balance: number;
@@ -26,7 +29,7 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
       finance: { select: { status: true, balance: true } },
       enrollments: {
         where: { status: { in: ["ACTIVE", "COMPLETED"] } },
-        select: { levelId: true, classGroupId: true },
+        select: { id: true, levelId: true, classGroupId: true, totalFee: true, enrolledAt: true },
       },
     },
   });
@@ -36,11 +39,12 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
   }
 
   const finance = await recalculateStudentFinance(prisma, student.id);
-  const levelIds = new Set<string>();
+  const charges = await prisma.charge.findMany({ where: { studentId: student.id } });
+  const paidEnrollments = paidCourseEnrollments(student.enrollments, charges, finance.totalPaid.plus(finance.totalDiscount));
 
+  const levelIds = paidEnrollments.map(row => row.levelId);
   const classGroupIds: string[] = [];
-  for (const enrollment of student.enrollments) {
-    levelIds.add(enrollment.levelId);
+  for (const enrollment of paidEnrollments) {
     if (enrollment.classGroupId) {
       classGroupIds.push(enrollment.classGroupId);
     }
@@ -50,7 +54,9 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
     studentId: student.id,
     status: student.status,
     currentLevelId: student.currentLevelId,
-    levelIds: [...levelIds],
+    levelIds,
+    enrolledLevelIds: [...new Set(student.enrollments.map(row => row.levelId))],
+    coursePaymentsChecked: true,
     classGroupIds,
     paymentStatus: finance.status ?? null,
     balance: Number(finance.balance),
@@ -70,6 +76,7 @@ export const assertLevelAccess = async (userId: string, levelId: string): Promis
   const profile = await loadStudentAccessProfile(userId);
   assertAccountActive(profile);
   if (!profile.levelIds.includes(levelId)) {
+    if (profile.enrolledLevelIds.includes(levelId)) throw forbidden('Complete payment for this course to unlock its learning content');
     throw forbidden("You do not have access to this level");
   }
 };
@@ -84,6 +91,9 @@ export const assertPaymentAccess = (
   profile: StudentAccessProfile,
   resource: PaidResource,
 ): void => {
+  // Course-level entitlement already restricts the level/class IDs above. A debt
+  // on another course must not block a course the student has fully paid for.
+  if (profile.coursePaymentsChecked) return;
   if (env.UNPAID_ACCESS === "FULL") {
     return;
   }
