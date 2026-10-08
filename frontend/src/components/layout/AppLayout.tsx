@@ -1,8 +1,10 @@
-import { useEffect,useState } from 'react';
+import { Suspense,useEffect,useState } from 'react';
 import { Outlet,useLocation } from 'react-router-dom';
 import { getPageTitle } from '../../lib/nav';
 import { useSession } from '../../lib/session';
 import { AcademicWorkspaceBar } from '../admin/AcademicWorkspaceBar';
+import { BookLoader } from '../common/BookLoader';
+import { RouteErrorBoundary } from '../common/RouteErrorBoundary';
 import { Sidebar } from './Sidebar';
 import { Topbar } from './Topbar';
 
@@ -25,7 +27,11 @@ export function AppLayout() {
         <Topbar title={getPageTitle(pathname)} onMenu={() => setNavOpen(true)} />
         <main className={`${academicRole && pathname.startsWith('/admin') ? 'academic-workspace' : ''} mx-auto px-4 py-5 lg:px-6 lg:py-6 ${pathname === "/dashboard" ? "w-full" : "max-w-[1600px]"}`}>
           {academicRole && pathname.startsWith('/admin/') ? <AcademicWorkspaceBar pathname={pathname} title={getPageTitle(pathname)} /> : null}
-          <Outlet />
+          <RouteErrorBoundary resetKey={pathname}>
+            <Suspense fallback={<BookLoader className="min-h-[50vh]" />}>
+              <div key={pathname} className="page-enter"><Outlet /></div>
+            </Suspense>
+          </RouteErrorBoundary>
         </main>
       </div>
     </div>
