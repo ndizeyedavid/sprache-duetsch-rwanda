@@ -63,6 +63,7 @@ export function CertificatesCard({
                 <button
                   type="button"
                   onClick={() => onPreview(certificate)}
+                  disabled={certificate.status !== 'ISSUED'}
                   className="btn btn-ghost btn-xs gap-1.5 rounded-full border border-line"
                 >
                   <FiEye aria-hidden size={12} />
@@ -70,7 +71,7 @@ export function CertificatesCard({
                 </button>
                 <button
                   type="button"
-                  disabled={pendingId === certificate.id}
+                  disabled={pendingId === certificate.id || certificate.status !== 'ISSUED'}
                   onClick={() => onDownload(certificate)}
                   className="btn btn-primary btn-xs gap-1.5 rounded-full"
                 >
