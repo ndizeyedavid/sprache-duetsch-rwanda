@@ -6,8 +6,14 @@ import { transact } from "../../lib/transactions.js";
 import { certificateInclude } from './certificate-include.js';
 import type { IssueCertificateInput } from "./certificates.schema.js";
 import { checkEligibility } from "./completion-policy.js";
+import { buildCertificateSnapshot } from './certificate-snapshot.js';
+import { readCertificateUpload } from './certificate-upload.js';
 export const issueCertificate = async (input: IssueCertificateInput, actorId?: string) => {
+  if (input.pdfUrl) await readCertificateUpload(input.pdfUrl);
   const certificate = await transact(async tx => {
+  if (input.replacesCertificateId && !await tx.certificate.findFirst({ where: {
+    id: input.replacesCertificateId, studentId: input.studentId, levelId: input.levelId, status: 'REVOKED',
+  } })) throw badRequest('A replacement must refer to a revoked certificate for the same student and course');
   const eligibility = await checkEligibility(input.studentId, input.levelId, tx);
   if (input.enrollmentId && !await tx.enrollment.findFirst({ where: { id: input.enrollmentId, studentId: input.studentId, levelId: input.levelId, status: { in: ["ACTIVE", "COMPLETED"] } } })) throw badRequest("Enrolment must belong to this student and level");
   if (!eligibility.eligible) {
@@ -15,6 +21,7 @@ export const issueCertificate = async (input: IssueCertificateInput, actorId?: s
   }
 
 
+    const document = await buildCertificateSnapshot(input, actorId, tx);
     const certificateNumber = await generateCertificateNumber(tx);
     const created = await tx.certificate.create({
       data: {
@@ -24,7 +31,10 @@ export const issueCertificate = async (input: IssueCertificateInput, actorId?: s
         levelId: input.levelId,
         enrollmentId: input.enrollmentId ?? eligibility.enrollmentId,
         issuedById: actorId ?? null,
+        pdfUrl: input.pdfUrl ?? null,
         metadata: {
+          document,
+          ...(input.replacesCertificateId ? { replacesCertificateId: input.replacesCertificateId } : {}),
           completionPercentage: eligibility.completionPercentage,
           finalExamPassed: eligibility.finalExamPassed,
         },
