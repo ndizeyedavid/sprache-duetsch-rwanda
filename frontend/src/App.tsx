@@ -1,6 +1,8 @@
 import { Suspense } from "react";
-import { Navigate,Outlet,Route,Routes } from "react-router-dom";
-import { LoadingBlock } from "./components/common/PageState";
+import { Navigate,Outlet,Route,Routes,useLocation } from "react-router-dom";
+import { BookLoader } from "./components/common/BookLoader";
+import { RouteErrorBoundary } from "./components/common/RouteErrorBoundary";
+import { UpdateNotice } from "./components/common/UpdateNotice";
 import { AppLayout } from "./components/layout/AppLayout";
 import { AuthLayout } from "./components/layout/AuthLayout";
 import { RouteProgress } from "./components/layout/RouteProgress";
@@ -20,20 +22,13 @@ import { Register } from "./pages/auth/Register";
 import { ResetPassword } from "./pages/auth/ResetPassword";
 import { StudentAttendance } from "./pages/student/Attendance";
 import { VerifyCertificate } from "./pages/VerifyCertificate";
+import { VerifyReceipt } from "./pages/VerifyReceipt";
+import { DemoAccounts } from "./pages/DemoAccounts";
 import { AdminAnnouncements,AdminCertificates,AdminClasses,AdminCourses,AdminDashboard,AdminEnrolments,AdminFinance,AdminIntakes,AdminLiveClass,AdminOrganisation,AdminPeople,AdminResources,AdminSchedule,AdminStudents,AdminTeaching,AdminTransactions } from './routes/admin-pages';
 import { Activity,AssignmentDetail,Assignments,CourseContents,CourseOverview,Courses,Dashboard,Grades,Messages,Profile,Schedule,Settings,StudentActivity,StudentLesson,Teachers } from './routes/student-pages';
 import { TeacherAssessments,TeacherAssignments,TeacherAttendance,TeacherClasses,TeacherContent,TeacherDashboard,TeacherGrading,TeacherPeople,TeacherReports,TeacherSchedule } from './routes/teacher-pages';
 function PageFallback() {
-  return (
-    <div
-      className="flex min-h-[40vh] items-center justify-center"
-      role="status"
-      aria-live="polite"
-    >
-      <span className="loading loading-spinner loading-lg text-brand" />
-      <span className="sr-only">Loading…</span>
-    </div>
-  );
+  return <BookLoader className="min-h-[60vh]" />;
 }
 /** Sends the visitor to the dashboard that matches their role (or to sign-in). */
 function RoleHome() {
@@ -47,14 +42,16 @@ function RoleHome() {
  */
 function RequireRole({ roles }: { roles: AuthRole[] }) {
   const { user, loading } = useSession();
-  if (loading) return <LoadingBlock label="Checking access…" />;
+  if (loading) return <PageFallback />;
   if (!user) return <Navigate to="/login" replace />;
   if (!roles.includes(user.role))
     return <Navigate to={homePath[user.role]} replace />;
   return <Outlet />;
 }
 function AppRoutes() {
+  const { pathname } = useLocation();
   return (
+    <RouteErrorBoundary resetKey={pathname}>
     <Suspense fallback={<PageFallback />}>
       <RouteProgress />
       <Routes>
@@ -66,7 +63,9 @@ function AppRoutes() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
         </Route>
+        <Route path="/verify/receipt/:id" element={<VerifyReceipt />} />
         <Route path="/verify/:code" element={<VerifyCertificate />} />
+        <Route path="/demo" element={<DemoAccounts />} />
         {/* Student */}
         <Route element={<RequireRole roles={STUDENT_ROLES} />}>
           <Route element={<AppLayout />}>
@@ -173,12 +172,14 @@ function AppRoutes() {
         <Route path="*" element={<RoleHome />} />
       </Routes>
     </Suspense>
+    </RouteErrorBoundary>
   );
 }
 export default function App() {
   return (
     <SessionProvider>
       <AppRoutes />
+      <UpdateNotice />
     </SessionProvider>
   );
 }
