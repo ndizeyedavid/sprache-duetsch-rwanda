@@ -12,6 +12,7 @@ async function handleSubmit(event: FormEvent) {
  setError('Please enter your full name.');
  return;
  }
+ if (!intakeId || !intendedLevelId) { setError('Choose an intake and a course level.'); return; }
  if (!campusId) {
  setError('Please choose a campus.');
  return;
