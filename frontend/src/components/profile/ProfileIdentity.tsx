@@ -1,3 +1,4 @@
+import { profilePhotoUrl } from '../../lib/profile-photo';
 import { FiEdit3,FiMail,FiPhone } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { MyProfile } from '../../lib/services';
@@ -22,7 +23,7 @@ export function ProfileIdentity({ profile }: Props) {
             <div className={`avatar ${user.avatarUrl ? '' : 'avatar-placeholder'}`}>
               <div className="size-20 rounded-t-box bg-white text-night sm:size-24">
                 {user.avatarUrl ? (
-                  <img src={user.avatarUrl} alt={`${name} profile photo`} width={96} height={96} className="size-full object-cover" />
+                  <img src={profilePhotoUrl(user.avatarUrl)} alt={`${name} profile photo`} width={96} height={96} className="size-full object-cover" />
                 ) : (
                   <span className="text-2xl font-bold sm:text-3xl">{initials(user.firstName, user.lastName)}</span>
                 )}
