@@ -17,6 +17,7 @@ type Props = {
   onPreview: (certificate: Certificate) => void;
   onCertificateDownload: (certificate: Certificate) => void;
   onReceiptDownload: (receipt: ReceiptRow) => void;
+  onReceiptPreview: (receipt: ReceiptRow) => void;
 };
 
 export function DocumentsView({
@@ -33,6 +34,7 @@ export function DocumentsView({
   onPreview,
   onCertificateDownload,
   onReceiptDownload,
+  onReceiptPreview,
 }: Props) {
   return (
     <div className="space-y-4">
@@ -44,8 +46,7 @@ export function DocumentsView({
 
       <p className="flex items-start gap-2 px-1 text-xs leading-5 text-muted">
         <FiFileText aria-hidden className="mt-0.5 shrink-0" />
-        Certificates are issued by the academic office once you pass. Every confirmed payment gets a
-        receipt you can download here.
+        Your certificates and payment receipts. Open one to view it, or download the PDF.
       </p>
 
       <CertificatesCard
@@ -64,6 +65,7 @@ export function DocumentsView({
         error={receiptsError}
         onRetry={onRetryReceipts}
         pendingId={pendingId}
+        onPreview={onReceiptPreview}
         onDownload={onReceiptDownload}
       />
     </div>
