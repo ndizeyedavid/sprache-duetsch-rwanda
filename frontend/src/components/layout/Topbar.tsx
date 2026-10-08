@@ -1,3 +1,4 @@
+import { profilePhotoUrl } from '../../lib/profile-photo';
 import { useState } from "react";
 import {
 FiChevronDown,
@@ -91,7 +92,7 @@ export function Topbar({ title, onMenu }: TopbarProps) {
             <span className="flex size-9 items-center justify-center overflow-hidden rounded-full bg-brand text-sm font-bold text-white">
               {user?.avatarUrl ? (
                 <img
-                  src={user.avatarUrl}
+                  src={profilePhotoUrl(user.avatarUrl)}
                   alt={displayName}
                   className="size-9 object-cover"
                 />
