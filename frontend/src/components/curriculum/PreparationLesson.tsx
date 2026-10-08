@@ -3,7 +3,7 @@ import { FiBookOpen,FiCheck,FiEye,FiMoreHorizontal,FiPaperclip,FiSave,FiSend,FiZ
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
 import type { AuthoredLesson } from '../../lib/services';
-import { deleteLesson,getLesson,updateLesson } from '../../lib/services';
+import { deleteLesson,getLesson,updateLesson,updateModule } from '../../lib/services';
 import { ErrorBlock,LoadingBlock } from '../common/PageState';
 import { CourseLessonReader } from '../student/CourseLessonReader';
 import { PreparationPractice } from './PreparationPractice';
@@ -29,6 +29,7 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
   const [tab, setTab] = useState('Content'), [preview, setPreview] = useState(false), [settings, setSettings] = useState(false);
   const [busy, setBusy] = useState(false), [error, setError] = useState<string | null>(null), [saved, setSaved] = useState(false);
   const dirty = JSON.stringify(draft) !== initial;
+  const publishedToStudents = draft.isPublished && props.modulePublished;
   const { onDirty } = props;
   useEffect(() => { onDirty(dirty); return () => onDirty(false); }, [dirty, onDirty]);
   useEffect(() => {
@@ -43,9 +44,18 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
     const next = { ...draft, title: draft.title.trim(), isPublished: published };
     setBusy(true); setError(null);
     try {
-      await updateLesson(props.id, { ...next, description: next.description || null, body: next.body || null, videoUrl: next.videoUrl || null, audioUrl: next.audioUrl || null, estimatedMinutes: next.estimatedMinutes ? Number(next.estimatedMinutes) : undefined });
-      setDraft(next); setInitial(JSON.stringify(next)); setSaved(true); props.onSaved(); setSettings(false);
+      const updated = await updateLesson(props.id, { ...next, description: next.description || null, body: next.body || null, videoUrl: next.videoUrl || null, audioUrl: next.audioUrl || null, estimatedMinutes: next.estimatedMinutes ? Number(next.estimatedMinutes) : undefined });
+      const persisted = toLessonDraft(updated);
+      setDraft(persisted); setInitial(JSON.stringify(persisted)); setSaved(true); props.onSaved(); setSettings(false);
     } catch (e) { setError(apiErrorMessage(e, 'Could not save lesson.')); } finally { setBusy(false); }
+  }
+  async function publishModule() {
+    setBusy(true); setError(null);
+    try {
+      await updateModule(data.moduleId, { isPublished: true });
+      props.onSaved();
+    } catch (e) { setError(apiErrorMessage(e, 'Could not publish module.')); }
+    finally { setBusy(false); }
   }
   async function remove() {
     if (!confirm(`Delete “${draft.title}” and its resources? This cannot be undone.`)) return;
@@ -56,7 +66,7 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
   return <section className="card studio-lesson bg-base-100">
     <div className="px-5 pt-6 sm:px-7">
       <div className="flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-base-content/50">{props.moduleTitle}</p>
-        <div className="flex items-center gap-2"><span className={`rounded-full px-3 py-1 text-xs ${draft.isPublished ? 'bg-success/15' : 'bg-base-200 text-base-content/60'}`}>{draft.isPublished ? 'Published' : 'Draft'}</span><button className="btn btn-sm btn-circle btn-ghost" aria-label="Lesson settings" onClick={() => setSettings(true)} disabled={busy}><FiMoreHorizontal size={20} aria-hidden/></button></div></div>
+        <div className="flex items-center gap-2"><span className={`badge badge-sm ${publishedToStudents ? 'badge-success badge-soft' : 'badge-ghost'}`}>{publishedToStudents ? 'Published' : draft.isPublished ? 'Module draft' : 'Draft'}</span><button className="btn btn-sm btn-circle btn-ghost" aria-label="Lesson settings" onClick={() => setSettings(true)} disabled={busy}><FiMoreHorizontal size={20} aria-hidden/></button></div></div>
       <h2 className="mt-3 text-xl font-semibold leading-8 sm:text-2xl">{draft.title || 'Untitled lesson'}</h2>
       <div className="mt-3 flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-base-content/60">{formatNames[draft.contentType]}{draft.estimatedMinutes ? ` · ${draft.estimatedMinutes} min` : ''}</p>
         <button className="btn btn-sm btn-ghost" onClick={() => setPreview(true)}><FiEye aria-hidden/>Student preview</button></div>
@@ -72,8 +82,9 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
     <footer className="sticky bottom-3 z-10 mx-4 mb-4 flex flex-wrap items-center justify-between gap-3 rounded-box bg-base-200 px-4 py-3 sm:mx-6">
       <div className="text-xs text-base-content/60" role="status">{error ? <span className="text-error" role="alert">{error}</span> : busy ? 'Saving…' : dirty ? 'Unsaved changes' : <span className="flex items-center gap-1.5"><FiCheck aria-hidden/>{saved ? 'Changes saved' : 'All changes saved'}</span>}</div>
       <div className="flex gap-2"><button className="btn btn-sm border-0 bg-base-100" disabled={busy || !dirty} onClick={() => void save()}><FiSave aria-hidden/>Save{draft.isPublished ? '' : ' draft'}</button>
-        {!draft.isPublished ? <button className="btn btn-sm btn-primary" disabled={busy || draft.title.trim().length < 2} onClick={() => void save(true)}><FiSend aria-hidden/>Publish</button> : null}</div>
-      {!props.modulePublished && draft.isPublished ? <p className="w-full text-xs text-base-content/60">Publish the module to make this lesson available to students.</p> : null}
+        {!draft.isPublished ? <button className="btn btn-sm btn-primary" disabled={busy || draft.title.trim().length < 2} onClick={() => void save(true)}><FiSend aria-hidden/>Publish lesson</button> : null}
+        {!props.modulePublished && draft.isPublished ? <button className="btn btn-sm btn-primary" disabled={busy} onClick={() => void publishModule()}><FiSend aria-hidden/>Publish module</button> : null}</div>
+      {!props.modulePublished ? <p className="w-full text-xs text-base-content/60">This module is a draft. Publishing it makes its published lessons available to enrolled students.</p> : null}
     </footer>
     {settings ? <LessonSettings draft={draft} change={change} busy={busy} onClose={() => setSettings(false)} onDelete={() => void remove()} onUnpublish={() => void save(false)}/> : null}
     {preview ? <StudioDialog title="Student preview" wide onClose={() => setPreview(false)}><PreparationPreview draft={draft} lesson={data}><CourseLessonReader key={draft.body} html={draft.body}/></PreparationPreview></StudioDialog> : null}
