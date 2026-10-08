@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { AcademicModalAction } from "../../components/admin/AcademicModalAction";
 import { AcademicSummary } from "../../components/admin/AcademicSummary";
-import { CertificateIssueForm } from "../../components/admin/CertificateIssueForm";
+import { CertificateComposer } from '../../components/certificates/CertificateComposer';
+import { CertificateDocumentDialog } from '../../components/certificates/CertificateDocumentDialog';
+import { Modal } from '../../components/ui/Modal';
 import { CertificateRegister } from "../../components/admin/CertificateRegister";
 import { CertificateRevokeDialog } from "../../components/admin/CertificateRevokeDialog";
 import {
@@ -18,6 +19,9 @@ export function AdminCertificates() {
   const issued = useApi("certificates-list", listCertificates);
   const [revoking, setRevoking] = useState<Certificate | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [composing, setComposing] = useState<Certificate | 'new' | null>(null);
+  const [preview, setPreview] = useState<Certificate | null>(null);
+  const [busy, setBusy] = useState(false);
   const rows = issued.data ?? [];
   return (
     <div className="space-y-5">
@@ -45,19 +49,7 @@ export function AdminCertificates() {
       <Panel>
         <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
           <SectionHeader title="Certificates" className="mb-0" />
-          <AcademicModalAction
-            label="Issue certificate"
-            title="Issue certificate"
-          >
-            {(done) => (
-              <CertificateIssueForm
-                onIssued={() => {
-                  issued.refetch();
-                  done("Certificate issued.");
-                }}
-              />
-            )}
-          </AcademicModalAction>
+          <button className="btn btn-sm" onClick={() => setComposing('new')}>Prepare certificate</button>
         </div>
         {success && (
           <p
@@ -74,9 +66,15 @@ export function AdminCertificates() {
         ) : !rows.length ? (
           <EmptyBlock title="No certificates yet" />
         ) : (
-          <CertificateRegister certificates={rows} onRevoke={setRevoking} />
+          <CertificateRegister certificates={rows} onRevoke={setRevoking} onPreview={setPreview} onReissue={setComposing}/>
         )}
       </Panel>
+      <Modal open={composing !== null} busy={busy} onClose={() => setComposing(null)} title={composing === 'new' ? 'Prepare a certificate' : 'Prepare a replacement certificate'} boxClassName="max-w-7xl">
+        {composing && <CertificateComposer initial={composing === 'new' ? undefined : composing} onBusyChange={setBusy} onIssued={certificate => {
+          setComposing(null); setPreview(certificate); setSuccess('Certificate issued and added to the student’s profile.'); issued.refetch();
+        }}/>}
+      </Modal>
+      {preview && <CertificateDocumentDialog certificate={preview} onClose={() => setPreview(null)}/>}
       {revoking && (
         <CertificateRevokeDialog
           certificate={revoking}
