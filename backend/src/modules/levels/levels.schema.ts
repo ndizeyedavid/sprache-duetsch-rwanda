@@ -13,7 +13,7 @@ export const createLevelSchema = z.object({
   summary: optionalText(1000),
   objectives: z.array(z.string().trim().min(1).max(240)).optional(),
   order: z.coerce.number().int().optional(),
-  defaultFee: z.coerce.number().min(0).optional(),
+  defaultFee: z.coerce.number().finite().min(0).max(999999999).optional(),
   currency: z.string().trim().min(1).max(10).default("RWF"),
   isActive: z.boolean().optional(),
 });
