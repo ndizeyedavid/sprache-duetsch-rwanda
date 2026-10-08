@@ -120,7 +120,7 @@ export function QuestionTypeFields({
  <div className="mt-3 flex flex-wrap items-center gap-2">
  <label className="btn btn-sm gap-1 rounded-full border-line bg-base-100">
  <FiUpload aria-hidden />{audioUploading ? <span className="loading loading-spinner loading-xs" /> : 'Upload audio'}
- <input type="file" accept="audio/*" className="hidden" onChange={async (e) => { const f = e.currentTarget.files?.[0]; if (!f) return; onAudioUploading(true); try { const { uploadFile } = await import('../../lib/services'); const r = await uploadFile(f); onAudioUploaded(r.url); } finally { onAudioUploading(false); e.currentTarget.value = ''; } }} />
+ <input type="file" accept="audio/*" className="hidden" onChange={async (e) => { const input = e.currentTarget; const f = input.files?.[0]; if (!f) return; onAudioUploading(true); try { const { uploadFile } = await import('../../lib/services'); const r = await uploadFile(f); onAudioUploaded(r.url); } finally { onAudioUploading(false); input.value = ''; } }} />
  </label>
  <span className="text-[11px] text-muted">or</span>
  <input value={audioUrl} onChange={(e) => onAudioUrl(e.currentTarget.value)} placeholder="https://.../audio.mp3" className="input input-sm flex-1 rounded-full border-line bg-base-100" />
