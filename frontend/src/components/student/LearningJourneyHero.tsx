@@ -5,29 +5,29 @@ import type { MyCourse } from '../../lib/services';
 type Props = { firstName?: string; course?: MyCourse };
 
 export function LearningJourneyHero({ firstName, course }: Props) {
-  const lessons = course ? [...course.modules].sort((a, b) => a.order - b.order).flatMap((module) => [...module.lessons].sort((a, b) => a.order - b.order)) : [];
+  const lessons = course && !course.paymentRequired ? [...course.modules].sort((a, b) => a.order - b.order).flatMap((module) => [...module.lessons].sort((a, b) => a.order - b.order)) : [];
   const next = lessons.find((lesson) => lesson.progressStatus === 'IN_PROGRESS')
     ?? lessons.find((lesson) => lesson.progressStatus !== 'COMPLETED');
-  const coursePath = course ? `/courses/${course.level.code.toLowerCase()}/learn` : '/courses';
+  const coursePath = course?.paymentRequired ? '/profile?view=payments' : course ? `/courses/${course.level.code.toLowerCase()}/learn` : '/courses';
 
   return (
     <section className="journey-hero card overflow-hidden border border-primary text-primary-content">
       <div className="relative grid items-center gap-5 p-5 sm:p-6 md:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,1fr)_360px] lg:px-8 lg:py-6">
         <div>
           <p className="mb-3 flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-primary-content/80">
-            <FiCompass aria-hidden /> YOUR LEARNING SPACE
+            <FiCompass aria-hidden /> DASHBOARD
           </p>
           <h2 className="max-w-xl text-3xl font-semibold leading-[1.2] tracking-tight sm:text-3xl xl:text-4xl">
-            Hallo{firstName ? `, ${firstName}` : ''}.<br />Ready for your next step?
+            Hallo{firstName ? `, ${firstName}` : ''}.
           </h2>
           <p className="mt-3 max-w-lg text-sm leading-6 text-primary-content/85">
-            {next ? <>Up next: <strong className="font-semibold text-primary-content">{next.title}</strong>.</>
+            {course?.paymentRequired ? 'You have a place in the intake. Pay the course fee to start your lessons.' : next ? <>Up next: <strong className="font-semibold text-primary-content">{next.title}</strong>.</>
               : course ? lessons.length ? 'Look how far you’ve come. Revisit a lesson and put your German into practice.' : 'Your teacher is preparing your lessons. Explore your course while you wait for your first chapter.'
-                : 'Your learning journey starts with your enrolled courses. Explore your space and get ready for your first lesson.'}
+                : 'Your courses and classes are below. Open a course to start your first lesson.'}
           </p>
           <div className="mt-4 flex flex-wrap items-center gap-4">
             <Link to={next ? `${coursePath}/${next.id}` : coursePath} className="btn gap-3 rounded-full border-primary-content bg-primary-content px-6 text-primary shadow-none hover:border-primary-content/90 hover:bg-primary-content/90 focus-visible:outline-primary-content">
-              {next ? 'Continue learning' : course ? 'Explore my course' : 'View my courses'} <FiArrowUpRight aria-hidden className="text-lg" />
+              {course?.paymentRequired ? 'Pay for my course' : next ? 'Continue learning' : course ? 'Explore my course' : 'View my courses'} <FiArrowUpRight aria-hidden className="text-lg" />
             </Link>
             {next?.estimatedMinutes ? <span className="text-xs text-primary-content/80">{next.estimatedMinutes} min</span> : null}
           </div>
