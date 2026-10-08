@@ -4,21 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#fb0d00" />
+    <meta name="theme-color" content="#b60e1c" />
     <meta
       name="description"
       content="Deutsch Sprache RW — German language e-learning for A1 to B2 levels."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Non-blocking font load: text shows immediately on slow networks. -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <style>
+      /* First-paint loader shown until the app starts (replaced by React). */
+      body{margin:0}
+      .boot{min-height:100vh;display:grid;place-content:center;justify-items:center;gap:12px;background:#faf5f2;font:14px system-ui,sans-serif;color:#6b7079}
+      .boot svg{width:64px;height:48px}
+      .boot .leaf{transform-box:view-box;transform-origin:32px 24px;fill:#fff;stroke:#e7dbd4;stroke-width:.6;animation:boot-flip 1.8s cubic-bezier(.45,0,.25,1) infinite}
+      .boot .late{animation-delay:.45s}
+      @keyframes boot-flip{0%,12%{transform:scaleX(1)}68%,100%{transform:scaleX(-1)}}
+      @media (prefers-reduced-motion:reduce){.boot .leaf{animation:none}.boot .late{display:none}}
+    </style>
     <title>Deutsch Sprache RW</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="boot" role="status" aria-live="polite">
+        <svg viewBox="0 0 64 48" aria-hidden="true">
+          <path d="M4 10Q18 3.5 32 10Q46 3.5 60 10V42.5Q46 36 32 42.5Q18 36 4 42.5Z" fill="#b60e1c" />
+          <path d="M7 9.5Q19 4.5 32 10V39Q19 34 7 38.5Z" fill="#fff" />
+          <path d="M57 9.5Q45 4.5 32 10V39Q45 34 57 38.5Z" fill="#fff" />
+          <path class="leaf" d="M57 9.5Q45 4.5 32 10V39Q45 34 57 38.5Z" />
+          <path class="leaf late" d="M57 9.5Q45 4.5 32 10V39Q45 34 57 38.5Z" />
+        </svg>
+        <span>Loading…</span>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
