@@ -104,7 +104,7 @@ export function RichTextEditor({ value, onChange, placeholder, error }: Props) {
         />
       </div>
       {error ? (
-        <p className="rounded-b-box border-t border-error bg-error/5 px-3 py-1.5 text-xs text-error">
+        <p className="rounded-b-box border-t border-error bg-error text-error-content px-3 py-1.5 text-xs text-error">
           {error}
         </p>
       ) : null}
