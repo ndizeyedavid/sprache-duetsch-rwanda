@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { Prisma } from '../generated/prisma/client.js';
-import { paidCourseLevels } from './course-payment-access.js';
+import { paidCourseLevels,paidEnrollments } from './course-payment-access.js';
 const decimal = (amount: number) => new Prisma.Decimal(amount);
 const enrollments = [{ id: 'a', levelId: 'A1', enrolledAt: new Date(0), totalFee: decimal(1234) }, { id: 'b', levelId: 'B1', enrolledAt: new Date(0), totalFee: decimal(5678) }];
 const charges = enrollments.map((row, index) => ({ id: row.id, enrollmentId: row.id, type: 'TUITION', amount: row.totalFee, dueDate: null, createdAt: new Date(index * 1000) }));
@@ -22,6 +22,11 @@ describe('course-specific tuition access', () => {
     const repeatedCharges = [...charges, { ...charges[0], id: 'repeat-charge', enrollmentId: repeat.id, amount: repeat.totalFee, createdAt: repeat.enrolledAt }];
     expect(paidCourseLevels([repeat, ...enrollments], repeatedCharges, decimal(1234))).toEqual([]);
     expect(paidCourseLevels([...enrollments, repeat], repeatedCharges, decimal(11233))).toEqual(['A1', 'B1']);
+  });
+  it('keeps an older paid class enrolment when a newer one exists in the same level', () => {
+    const extra = { ...enrollments[0], id: 'extra', enrolledAt: new Date(2000), totalFee: decimal(0) };
+    expect(paidEnrollments([...enrollments, extra], charges, decimal(6912)).map(row => row.id)).toEqual(['a', 'b', 'extra']);
+    expect(paidEnrollments([...enrollments, extra], charges, decimal(1234)).map(row => row.id)).toEqual(['a', 'extra']);
   });
   it('locks a course again after credit is reduced by a refund', () => {
     expect(paidCourseLevels(enrollments, charges, decimal(1200))).toEqual([]);
