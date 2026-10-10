@@ -79,11 +79,11 @@ export function Courses() {
                   key={f}
                   type="button"
                   onClick={() => updateFilter(f)}
-                  className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition ${active ? "border-brand bg-brand/10 text-brand" : "border-line bg-base-100 text-muted hover:border-brand/30 hover:text-ink"}`}
+                  className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition ${active ? "border-brand bg-brand text-primary-content" : "border-line bg-base-100 text-muted hover:border-brand hover:text-ink"}`}
                 >
                   {FILTER_LABELS[f]}{" "}
                   <span
-                    className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? "bg-brand/15" : "bg-base-200"}`}
+                    className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? "bg-brand text-primary-content" : "bg-base-200"}`}
                   >
                     {c}
                   </span>
