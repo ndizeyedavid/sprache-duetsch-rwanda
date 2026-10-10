@@ -65,7 +65,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
   }
   return (
     <div className="overflow-hidden rounded-box border border-line bg-base-100">
-      <div className="border-b border-line bg-base-200/50 px-4 py-3">
+      <div className="border-b border-line bg-base-200 px-4 py-3">
         <h3 className="flex items-center gap-2 text-sm font-bold">
           <FiEye aria-hidden className="text-brand" />
           Student submissions
@@ -119,7 +119,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                   role="button"
                   tabIndex={0}
                   aria-expanded={active}
-                  className={`group w-full rounded-box border p-3 text-left transition ${active ? "border-brand bg-brand-soft/20 ring-1 ring-brand/20" : "border-line bg-base-100 hover:border-brand/20 hover:bg-base-200/40"} cursor-pointer`}
+                  className={`group w-full rounded-box border p-3 text-left transition ${active ? "border-brand bg-brand text-primary-content ring-1 ring-brand" : "border-line bg-base-100 hover:border-brand hover:bg-base-200"} cursor-pointer`}
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0 flex-1">
@@ -137,11 +137,11 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                         Response: {typeof s.response === "string" ? s.response : JSON.stringify(s.response)}
                       </p>
                       <p className="mt-1.5 flex flex-wrap gap-1.5 text-[11px]">
-                        {s.score !== null ? <span className="rounded-full bg-base-200 px-2 py-0.5">Score: {String(s.score)}/1</span> : <span className="rounded-full bg-coral-soft px-2 py-0.5 font-medium text-coral">Needs grading</span>}
+                        {s.score !== null ? <span className="rounded-full bg-base-200 px-2 py-0.5">Score: {String(s.score)}/1</span> : <span className="rounded-full bg-coral text-error-content px-2 py-0.5 font-medium text-coral">Needs grading</span>}
                         {s.isCorrect !== null ? (
-                          <span className={`rounded-full px-2 py-0.5 font-medium ${s.isCorrect ? "bg-brand-soft text-brand" : "bg-coral-soft text-coral"}`}>{s.isCorrect ? "Correct" : "Incorrect"}</span>
+                          <span className={`rounded-full px-2 py-0.5 font-medium ${s.isCorrect ? "bg-brand text-primary-content" : "bg-coral text-error-content"}`}>{s.isCorrect ? "Correct" : "Incorrect"}</span>
                         ) : null}
-                        {s.cheatFlagged ? <span className="rounded-full bg-error px-2 py-0.5 font-bold text-white">Flagged · {s.cheatCount} violations</span> : s.cheatCount ? <span className="rounded-full bg-warning/20 px-2 py-0.5 font-medium text-warning">{s.cheatCount} violations</span> : null}
+                        {s.cheatFlagged ? <span className="rounded-full bg-error px-2 py-0.5 font-bold text-white">Flagged · {s.cheatCount} violations</span> : s.cheatCount ? <span className="rounded-full bg-warning text-warning-content px-2 py-0.5 font-medium text-warning">{s.cheatCount} violations</span> : null}
                       </p>
                       {s.cheatLog && s.cheatLog.length ? <p className="mt-1 text-[11px] text-error">Violations: {s.cheatLog.map((v) => v.type).join(", ")}</p> : null}
                       {s.feedback ? <p className="mt-1 rounded bg-base-200 px-2 py-1 text-xs">Feedback: {s.feedback}</p> : null}
@@ -154,7 +154,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                   </div>
                   {!active ? <p className="mt-2 flex items-center gap-1 text-[11px] font-medium text-brand opacity-0 transition group-hover:opacity-100">Tap to grade — add score & feedback <FiChevronDown aria-hidden /></p> : null}
                   {active ? (
-                    <div onClick={(e) => e.stopPropagation()} onKeyDown={(e) => e.stopPropagation()} className="mt-3 rounded-box border border-line bg-base-100 p-3 shadow-sm">
+                    <div onClick={(e) => e.stopPropagation()} onKeyDown={(e) => e.stopPropagation()} className="mt-3 rounded-box border border-line bg-base-100 p-3 ">
                       <div className="grid gap-2 sm:grid-cols-3">
                         <label className="block">
                           <span className="mb-1 block text-xs font-medium">Score (0-1)</span>
@@ -170,7 +170,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                         <textarea value={feedback} onChange={(e) => setFeedback(e.currentTarget.value)} rows={2} placeholder="Feedback for student…" className="textarea w-full rounded-box border-line bg-base-100 text-sm" autoFocus />
                       </label>
                       {error ? (
-                        <p role="alert" className="mt-2 flex gap-2 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">
+                        <p role="alert" className="mt-2 flex gap-2 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]">
                           <FiAlertCircle aria-hidden />
                           {error}
                         </p>
@@ -179,7 +179,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                         <button type="button" onClick={() => setGradingId(null)} className="btn btn-sm rounded-full border-line bg-base-100">
                           Cancel
                         </button>
-                        <button type="button" disabled={saving} onClick={() => void handleGrade(s.id)} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+                        <button type="button" disabled={saving} onClick={() => void handleGrade(s.id)} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
                           {saving ? <span className="loading loading-spinner loading-xs" /> : <FiCheck aria-hidden />}
                           Save grade
                         </button>
