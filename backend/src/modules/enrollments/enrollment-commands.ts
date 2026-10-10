@@ -4,7 +4,7 @@ import { writeAuditTx } from "../../lib/audit.js";
 import { assertStudentCurrency,recalculateStudentFinance } from "../../lib/finance.js";
 import { badRequest,conflict,notFound } from "../../lib/http-error.js";
 import { transact } from "../../lib/transactions.js";
-import { checkEnrollmentClass,reconcileStudent } from "./enrollment-policy.js";
+import { assertSingleActiveLevel,checkEnrollmentClass,reconcileStudent } from "./enrollment-policy.js";
 import type { CreateEnrollmentInput,UpdateEnrollmentInput } from "./enrollments.schema.js";
 import { writeTuitionSchedule } from "./tuition-schedule.js";
 
@@ -27,6 +27,7 @@ export const createEnrollmentTx = async (tx: Prisma.TransactionClient, input: Cr
     studentId: input.studentId, levelId: input.levelId, intakeId: input.intakeId,
   } } });
   if (existing) throw conflict("Student already has this enrolment; manage its status instead");
+  await assertSingleActiveLevel(tx, input);
   if (input.discountTotal) throw badRequest("Request and approve discounts through Finance");
   const currency = await assertStudentCurrency(tx, input.studentId, input.currency ?? level.currency);
   const totalFee = new Prisma.Decimal(input.totalFee ?? level.defaultFee);
@@ -49,6 +50,8 @@ export const updateEnrollment = (id: string, input: UpdateEnrollmentInput, actor
   if (!before) throw notFound("Enrolment not found");
   if (input.discountTotal !== undefined) throw badRequest("Use the audited Finance discount workflow");
   const status = input.status ?? before.status;
+  // Re-activating must not create a second live enrolment in the level; existing ones stay editable.
+  if (status === "ACTIVE" && before.status !== "ACTIVE") await assertSingleActiveLevel(tx, { ...before, enrollmentId: id });
   await checkEnrollmentClass(tx, { ...before, classGroupId: input.classGroupId === undefined ? before.classGroupId : input.classGroupId,
     active: status === "ACTIVE", enrollmentId: id });
   const totalFee = new Prisma.Decimal(input.totalFee ?? before.totalFee);
