@@ -13,7 +13,7 @@ export function AppearancePane() {
 
  return (
  <div className="space-y-4">
- <div className="rounded-box border border-line bg-base-200/30 p-3">
+ <div className="rounded-box border border-line bg-base-200 p-3">
  <p className="flex items-center gap-2 text-xs font-semibold">
  <FiDroplet aria-hidden className="text-brand" />
  Appearance
@@ -33,7 +33,7 @@ export function AppearancePane() {
  onClick={() => pick(t.id as ThemeId)}
  data-theme={t.id}
  aria-pressed={active}
- className={`flex items-center gap-3 rounded-box border p-3 text-left transition ${active ? "border-brand bg-brand-soft" : "border-line bg-base-100 hover:border-brand/20"}`}
+ className={`flex items-center gap-3 rounded-box border p-3 text-left transition ${active ? "border-brand bg-brand text-primary-content" : "border-line bg-base-100 hover:border-brand"}`}
  >
  <span className="flex gap-1">
  <span className="size-3 rounded-full bg-primary" />
