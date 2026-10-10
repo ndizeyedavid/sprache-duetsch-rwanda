@@ -15,9 +15,9 @@ export function WelcomeHero({ firstName, message, action }: Props) {
         <h2 className="text-2xl font-bold leading-snug sm:text-3xl">
           Welcome back{firstName ? `, ${firstName}` : ''}!
         </h2>
-        <p className="mt-2 max-w-md text-sm text-white/85">{message}</p>
+        <p className="mt-2 max-w-md text-sm text-white">{message}</p>
         <div className="mt-5">
-          <Link to={action.to} className="btn btn-sm gap-1 rounded-full bg-white text-brand hover:bg-white/90">
+          <Link to={action.to} className="btn btn-sm gap-1 rounded-full bg-white text-brand hover:bg-white">
             {action.label} <FiArrowRight aria-hidden />
           </Link>
         </div>
