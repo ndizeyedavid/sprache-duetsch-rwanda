@@ -5,9 +5,9 @@ type Props = { firstName?: string };
 
 export function AcademicDashboardHero({ firstName }: Props) {
   return (
-    <section className="card overflow-hidden border border-base-300/70 bg-base-100 lg:grid lg:grid-cols-[1.15fr_1fr]">
+    <section className="card overflow-hidden border border-base-300 bg-base-100 lg:grid lg:grid-cols-[1.15fr_1fr]">
       <div className="flex flex-col justify-center p-6 sm:p-8">
-        <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[.2em] text-base-content/55">
+        <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[.2em] text-muted">
           <span className="size-2 rounded-full bg-success" />
           Academic overview
         </p>
