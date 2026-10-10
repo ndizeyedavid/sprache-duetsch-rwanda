@@ -130,15 +130,15 @@ export function AnnouncementComposer({ onSent }: { onSent: () => void }) {
  {formError}
  </p>
  ) : null}
- <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {saving ? <span className="loading loading-spinner loading-sm" /> : 'Send announcement'}
  </button>
  </form>
- <div className="mb-5 rounded-box border border-base-300/70 bg-base-200/45 p-4">
- <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-base-content/55"><FiMessageCircle aria-hidden />Message preview</p>
+ <div className="mb-5 rounded-box border border-base-300 bg-base-200 p-4">
+ <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-muted"><FiMessageCircle aria-hidden />Message preview</p>
  <h3 className="mt-3 break-words text-base font-semibold">{title.trim() || 'Your headline appears here'}</h3>
- <p className="mt-2 whitespace-pre-wrap break-words text-xs leading-6 text-base-content/65">{body.trim() || 'Write a short, helpful update for your school community.'}</p>
- <p className="mt-4 border-t border-base-300/60 pt-3 text-[11px] text-base-content/60">Audience: {humanize(audience)}{levelId || intakeId || campusId || classGroupId ? ' · Cohort filters applied' : ' · No cohort filters'}</p>
+ <p className="mt-2 whitespace-pre-wrap break-words text-xs leading-6 text-muted">{body.trim() || 'Write a short, helpful update for your school community.'}</p>
+ <p className="mt-4 border-t border-base-300 pt-3 text-[11px] text-muted">Audience: {humanize(audience)}{levelId || intakeId || campusId || classGroupId ? ' · Cohort filters applied' : ' · No cohort filters'}</p>
  </div>
 
  </div>);
