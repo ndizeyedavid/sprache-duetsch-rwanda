@@ -17,7 +17,7 @@ return (<Panel>
  assessment, search, then grade and hit Save & next.
  </p>
  </div>
- <span className="rounded-full bg-coral-soft px-3 py-1 text-xs font-semibold text-[#D8482F]">
+ <span className="rounded-full bg-coral text-error-content px-3 py-1 text-xs font-semibold text-[#D8482F]">
  {pendingCount} to grade
  </span>
  </div>
@@ -79,7 +79,7 @@ return (<Panel>
   </div>
  </div>
  {assessmentId ? (
- <div className="mt-3 flex flex-wrap items-center gap-2 rounded-full border border-brand/20 bg-brand-soft px-4 py-2 text-xs">
+ <div className="mt-3 flex flex-wrap items-center gap-2 rounded-full border border-brand bg-brand text-primary-content px-4 py-2 text-xs">
  <FiFilter aria-hidden className="text-brand" />
  <span className="font-medium text-[#B30A00]">Filtered:</span>
  <span className="font-semibold">
