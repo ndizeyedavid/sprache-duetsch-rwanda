@@ -10,7 +10,7 @@ import { login } from '../../lib/auth-store';
 import { homePath } from '../../lib/roles';
 import { useSession } from '../../lib/session';
 
-const FIELD = 'input h-12 w-full rounded-field border-base-300 bg-base-100 text-[15px] focus:border-brand/50 focus:outline-none';
+const FIELD = 'input h-12 w-full rounded-field border-base-300 bg-base-100 text-[15px] focus:border-brand focus:outline-none';
 
 export function LoginForm() {
   const navigate = useNavigate();
@@ -65,7 +65,7 @@ export function LoginForm() {
         </label>
 
         {error ? (
-          <p role="alert" className="rounded-field bg-coral-soft px-3 py-2 text-xs font-medium text-coral">{error}</p>
+          <p role="alert" className="rounded-field bg-coral text-error-content px-3 py-2 text-xs font-medium text-coral">{error}</p>
         ) : null}
 
         <div className="flex items-center justify-between gap-3 text-sm">
@@ -78,7 +78,7 @@ export function LoginForm() {
         </div>
 
         <button type="submit" disabled={pending}
-          className="btn mt-2 h-12 w-full gap-2 rounded-full border-0 bg-brand text-[15px] text-white hover:bg-brand/90 disabled:opacity-60">
+          className="btn mt-2 h-12 w-full gap-2 rounded-full border-0 bg-brand text-[15px] text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
           {pending ? <span className="loading loading-spinner loading-sm" /> : null}
           Sign in
           <FiArrowRight aria-hidden />
