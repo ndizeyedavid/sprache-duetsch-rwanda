@@ -15,6 +15,8 @@ export default function PdfViewer({ url, documentLabel = 'Original coursebook', 
   const [width, setWidth] = useState(600);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  // If the PDF.js reader cannot start, fall back to the browser's own PDF display.
+  const [native, setNative] = useState(false);
   const surface = useRef<HTMLDivElement>(null);
   function movePage(next: number) {
     setPage(next);
@@ -28,9 +30,9 @@ export default function PdfViewer({ url, documentLabel = 'Original coursebook', 
     const task = getDocument({ url });
     let active = true;
     task.promise.then(document => { if (active) setPdf(document); })
-      .catch(() => { if (active) { setError('Could not display this PDF. You can still download or open it in a new tab.'); setLoading(false); onError?.(); } });
+      .catch(() => { if (active) { setNative(true); setLoading(false); onReady?.(); } });
     return () => { active = false; void task.destroy(); };
-  }, [url, onError]);
+  }, [url, onReady]);
   useEffect(() => {
     const element = surface.current;
     if (!element) return;
@@ -63,6 +65,10 @@ export default function PdfViewer({ url, documentLabel = 'Original coursebook', 
     }).catch(() => { if (active) { setError('Could not display this page. Please try another page or download the PDF.'); setLoading(false); onError?.(); } });
     return () => { active = false; render?.cancel(); canvas.remove(); };
   }, [pdf, page, width, zoom, documentLabel, onReady, onError]);
+  if (native) return <div className="flex min-h-0 flex-1 flex-col gap-2">
+    <iframe src={url} title={documentLabel} className="min-h-[60vh] w-full flex-1 rounded-box border border-base-300 bg-base-100" />
+    <a href={url} target="_blank" rel="noreferrer" className="link link-primary self-start text-xs">Open in a new tab</a>
+  </div>;
   return <div className="flex min-h-0 flex-1 flex-col gap-3">
     <div className="flex flex-wrap items-center justify-between gap-2">
       <div className="flex items-center gap-2">
@@ -74,7 +80,7 @@ export default function PdfViewer({ url, documentLabel = 'Original coursebook', 
         <option value={1}>Fit width</option><option value={1.5}>150%</option><option value={2}>200%</option>
       </select>
     </div>
-    {loading ? <p role="status" className="flex items-center gap-2 text-xs text-base-content/60"><span className="loading loading-spinner loading-xs" />Rendering page…</p> : null}
+    {loading ? <p role="status" className="flex items-center gap-2 text-xs text-muted"><span className="loading loading-spinner loading-xs" />Rendering page…</p> : null}
     {error ? <p role="alert" className="text-xs text-error">{error}</p> : null}
     <div ref={surface} className="min-h-0 flex-1 overflow-auto rounded-box border border-base-300 bg-base-200 p-3" />
   </div>;
