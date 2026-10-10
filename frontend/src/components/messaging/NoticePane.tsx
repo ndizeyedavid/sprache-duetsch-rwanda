@@ -27,12 +27,12 @@ export function NoticeList({ notices, loading, error, onRetry, selectedId, onPic
  <div className="flex h-full min-w-0 flex-col">
  <div className="flex flex-wrap items-center justify-between gap-2">
  <h3 className="flex items-center gap-2 text-sm font-semibold"><FiBell aria-hidden />Class updates</h3>
- <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${unread ? 'bg-error/10 text-error' : 'bg-base-200 text-muted'}`}>{unread} unread</span>
+ <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${unread ? 'bg-error text-error-content' : 'bg-base-200 text-muted'}`}>{unread} unread</span>
  </div>
   <button type="button" disabled={markingAll} onClick={onMarkAll} className="btn btn-sm mt-3 w-full gap-1 rounded-full border-line bg-base-100 disabled:opacity-60">
   {markingAll ? <span className="loading loading-spinner loading-xs" /> : <FiCheck aria-hidden />}Mark all as read
   </button>
-  {noticeError ? <p role="alert" className="mt-2 rounded-box bg-error/10 px-3 py-2 text-xs font-medium text-error">{noticeError}</p> : null}
+  {noticeError ? <p role="alert" className="mt-2 rounded-box bg-error text-error-content px-3 py-2 text-xs font-medium text-error">{noticeError}</p> : null}
   <div className="relative mt-3">
   <FiSearch aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
   <input value={search} onChange={(e) => onSearch(e.currentTarget.value)} aria-label="Search class updates" placeholder="Search class updates…" className="input input-sm w-full rounded-full border-line bg-base-100 pl-9 pr-8 text-sm" />
@@ -50,7 +50,7 @@ export function NoticeList({ notices, loading, error, onRetry, selectedId, onPic
  const unreadFlag = !n.readAt;
  return (
  <li key={n.id}>
- <button type="button" onClick={() => onPick(n.id)} className={`w-full rounded-box border p-3 text-left transition ${active ? 'border-neutral bg-base-200' : unreadFlag ? 'border-brand/20 bg-base-200/50 hover:border-brand/30' : 'border-line bg-base-100 hover:border-brand/20'}`}>
+ <button type="button" onClick={() => onPick(n.id)} className={`w-full rounded-box border p-3 text-left transition ${active ? 'border-neutral bg-base-200' : unreadFlag ? 'border-brand bg-base-200 hover:border-brand' : 'border-line bg-base-100 hover:border-brand'}`}>
  <span className="flex min-w-0 items-start justify-between gap-2">
  <span className="min-w-0 truncate text-xs font-semibold leading-tight">{n.title}</span>
  {unreadFlag ? <span aria-label="Unread" className="size-2 shrink-0 rounded-full bg-neutral" /> : null}
@@ -76,7 +76,7 @@ export function NoticeDetail({ notice, onBack }: { notice: { title: string; body
   <StatusBadge status={notice.readAt ? 'Read' : 'Unread'} />
   <h2 className="mt-3 text-2xl font-semibold leading-tight">{notice.title}</h2>
   <p className="mt-1 text-xs text-muted">{humanize(notice.type)} · {isoDate(notice.createdAt)}</p>
-  <div className="mt-4 mt-6 rounded-2xl bg-base-200/60 p-5 sm:p-6">
+  <div className="mt-4 mt-6 rounded-2xl bg-base-200 p-5 sm:p-6">
   <p className="whitespace-pre-wrap text-sm leading-relaxed">{notice.body ?? 'No content.'}</p>
   </div>
   </article>
