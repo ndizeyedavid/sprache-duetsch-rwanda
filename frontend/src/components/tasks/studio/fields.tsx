@@ -31,7 +31,7 @@ export function Segmented<T extends string>({ value, options, onChange, disabled
     <div className="inline-flex flex-wrap gap-1 rounded-full bg-base-200 p-1" role="radiogroup">
       {options.map(o => (
         <button key={o.value} type="button" role="radio" aria-checked={value === o.value} disabled={disabled} onClick={() => onChange(o.value)}
-          className={`rounded-full px-3.5 py-1.5 text-sm transition-colors ${value === o.value ? 'bg-base-100 font-semibold text-brand shadow-sm' : 'text-base-content/70 hover:text-base-content'}`}>{o.label}</button>
+          className={`rounded-full px-3.5 py-1.5 text-sm transition-colors ${value === o.value ? 'bg-base-100 font-semibold text-brand ' : 'text-muted hover:text-base-content'}`}>{o.label}</button>
       ))}
     </div>
   );
