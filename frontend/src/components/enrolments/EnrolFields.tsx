@@ -31,7 +31,7 @@ export function EnrolFields({ draft, students, levels, intakes }: Props) {
 
   return (
     <div className="space-y-4">
-      <p className="text-xs text-base-content/60">Intake membership is free. Only the selected course’s tuition is charged.</p>
+      <p className="text-xs text-muted">Intake membership is free. Only the selected course’s tuition is charged.</p>
       <ReferenceSelect
         id={STUDENT_FIELD_ID}
         label="Student"
