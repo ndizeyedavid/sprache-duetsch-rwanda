@@ -29,26 +29,26 @@ export function StudentCourseModules({ course, slug }: Props) {
     <div className="journey-enter space-y-3">
       <header className="flex flex-wrap items-center justify-between gap-3">
         <h2 className="text-lg font-semibold">{course.level.title}</h2>
-        <div className="flex items-center gap-3 text-xs text-base-content/65">
+        <div className="flex items-center gap-3 text-xs text-muted">
           <span>{course.stats.completedLessons}/{course.stats.totalLessons}</span>
           <progress className="progress progress-primary h-1.5 w-24" value={course.stats.completionPercentage} max={100} aria-label="Course completion" />
           <span className="font-semibold text-base-content">{course.stats.completionPercentage}%</span>
         </div>
       </header>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div aria-label="Progress legend" className="flex gap-3 text-[10px] text-base-content/65">
+        <div aria-label="Progress legend" className="flex gap-3 text-[10px] text-muted">
           <span className="flex items-center gap-1"><FiCheck aria-hidden className="text-primary" />Done</span>
           <span className="flex items-center gap-1"><FiPlay aria-hidden className="text-primary" />Next</span>
-          <span className="flex items-center gap-1"><span aria-hidden className="size-2 rounded-full border border-base-content/40" />Upcoming</span>
+          <span className="flex items-center gap-1"><span aria-hidden className="size-2 rounded-full border border-base-content" />Upcoming</span>
         </div>
         <label className="input input-sm w-full rounded-full border-base-300 bg-base-100 sm:w-52">
-          <FiSearch aria-hidden className="shrink-0 text-base-content/50" />
+          <FiSearch aria-hidden className="shrink-0 text-muted" />
           <input aria-label="Search lessons" value={q} onChange={(event) => setQ(event.currentTarget.value)} placeholder="Find a lesson…" className="min-w-0 grow text-xs" />
           {q ? <button type="button" onClick={() => setQ('')} aria-label="Clear lesson search" className="btn btn-ghost btn-xs btn-circle"><FiX aria-hidden /></button> : null}
         </label>
       </div>
       {filtered.map((module) => <JourneyModule key={module.id} module={module} index={modules.indexOf(module)} slug={slug} nextId={next?.id} collapsed={collapsed.has(module.id)} onToggle={() => toggle(module.id)} query={query} />)}
-      {filtered.length === 0 ? <p role="status" className="p-6 text-center text-sm text-base-content/65">{query ? 'No matching lessons.' : 'No lessons yet.'}</p> : null}
+      {filtered.length === 0 ? <p role="status" className="p-6 text-center text-sm text-muted">{query ? 'No matching lessons.' : 'No lessons yet.'}</p> : null}
     </div>
   );
 }
