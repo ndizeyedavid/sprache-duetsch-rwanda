@@ -68,7 +68,7 @@ export function DiscountPanel({ students, onApproved }: { students: StudentRow[]
  </span>
  <span className="mt-0.5 block text-muted">{discount.reason}</span>
  <span className="mt-2 flex gap-2">
- <button type="button" disabled={working !== null} onClick={() => handleApprove(discount.id)} className="btn btn-xs rounded-full border-0 bg-brand text-white hover:bg-brand/90">
+ <button type="button" disabled={working !== null} onClick={() => handleApprove(discount.id)} className="btn btn-xs rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">
  Approve
  </button>
  <input
@@ -78,7 +78,7 @@ export function DiscountPanel({ students, onApproved }: { students: StudentRow[]
  aria-label={`Reject reason for discount ${discount.id}`}
  className="input input grow rounded-field border-line bg-base-100"
  />
- <button type="button" disabled={working !== null} onClick={() => handleReject(discount.id)} className="btn btn-xs rounded-full border-0 bg-coral text-white hover:bg-coral/90">
+ <button type="button" disabled={working !== null} onClick={() => handleReject(discount.id)} className="btn btn-xs rounded-full border-0 bg-coral text-white hover:bg-coral hover:text-error-content">
  Reject
  </button>
  </span>
