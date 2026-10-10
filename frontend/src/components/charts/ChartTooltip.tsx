@@ -24,7 +24,7 @@ export function ChartTooltip({ active, payload, label, prefix = '', suffix = '' 
  <p key={String(entry.dataKey ?? entry.name)} className="flex items-center gap-2 whitespace-nowrap">
  <span className="size-2 rounded-full" style={{ backgroundColor: entry.color }} />
  <span className="font-medium">{entry.name}</span>
- <span className="text-white/80">
+ <span className="text-white">
  {prefix}
  {entry.value}
  {suffix}
