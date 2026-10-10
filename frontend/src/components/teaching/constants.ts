@@ -21,9 +21,9 @@ export const selectField =
  * change per theme, so each ink is a darkened companion that clears AA on that
  * tint in every theme — the same rule `lib/status.ts` follows.
  */
-export const SUN_SOFT = 'bg-sun-soft';
+export const SUN_SOFT = 'bg-sun text-warning-content';
 export const SUN_INK = 'text-[#6B5200]';
-export const CORAL_SOFT = 'bg-coral-soft';
+export const CORAL_SOFT = 'bg-coral text-error-content';
 export const CORAL_INK = 'text-[#AE3522]';
 
 /** Both halves together, for surfaces that need one background + one ink. */
