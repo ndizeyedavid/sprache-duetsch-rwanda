@@ -1,13 +1,13 @@
 /* A consistent work surface for the academic portal, including shared pages. */
 .academic-workspace .learning-panel {
-  border-color: color-mix(in oklab, var(--color-base-300) 75%, transparent);
+  border-color: var(--color-base-300);
   background: var(--color-base-100);
 }
 .academic-workspace .learning-panel > form {
   padding-top: .25rem;
 }
 .academic-workspace .table thead {
-  background: color-mix(in oklab, var(--color-base-200) 75%, transparent);
+  background: var(--color-base-200);
   color: var(--color-base-content);
 }
 .academic-workspace .table th {
@@ -20,7 +20,7 @@
   padding-block: 1rem;
 }
 .academic-workspace .table tbody tr:hover {
-  background: color-mix(in oklab, var(--color-base-200) 50%, transparent);
+  background: var(--color-base-200);
 }
 .academic-workspace .table {
   border-collapse: separate;
