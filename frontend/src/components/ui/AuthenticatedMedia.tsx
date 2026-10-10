@@ -5,7 +5,7 @@ export function AuthenticatedMedia({ url, kind, title, className }: {
 }) {
   const { source, error } = useMediaSource(url);
   if (error) return <p role="alert" className="alert alert-error text-sm">Unable to load {title ?? kind}. Check your connection and reload.</p>;
-  if (!source) return <p role="status" className="text-sm text-base-content/60">Loading {title ?? kind}…</p>;
+  if (!source) return <p role="status" className="text-sm text-muted">Loading {title ?? kind}…</p>;
   if (kind === 'image') return <img src={source} alt={title ?? 'Learning illustration'} className={className} />;
   if (kind === 'pdf') return <iframe src={source} title={title ?? 'Document'} className={className} />;
   if (kind === 'video') return <video controls preload="metadata" src={source} className={className} />;
