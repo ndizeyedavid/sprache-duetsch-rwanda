@@ -28,7 +28,7 @@ export class RouteErrorBoundary extends Component<Props, State> {
           {stale ? 'Reload to get the latest version of the app.' : 'Check your connection, then try again.'}
         </p>
         <div className="mt-5 flex gap-2">
-          <button type="button" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90" onClick={() => window.location.reload()}>
+          <button type="button" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content" onClick={() => window.location.reload()}>
             <FiRefreshCw aria-hidden /> Reload
           </button>
           {!stale ? <button type="button" className="btn btn-ghost btn-sm rounded-full" onClick={() => this.setState({ error: null })}>Try again</button> : null}
