@@ -69,7 +69,7 @@ export function CampusEditorForm({ initial, onSaved }: { initial: CampusItem | n
  </p>
  ) : null}
  <label className="block"><span className="mb-1 block text-xs font-medium">Status</span><select className="select w-full" value={String(isActive)} onChange={e => setIsActive(e.target.value === 'true')}><option value="true">Active</option><option value="false">Inactive</option></select></label>
- <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {saving ? 'Saving…' : initial ? 'Save changes' : 'Create campus'}
  </button>
  </form>
