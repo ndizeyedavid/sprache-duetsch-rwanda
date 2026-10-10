@@ -8,10 +8,10 @@ export function AcademicWorkspaceBar({ pathname, title }: Props) {
   if (!context || ["assignments", "attendance", "messages", "activity"].includes(pathname.split("/")[2])) return null;
   const Icon = context.icon;
   return (
-    <header className="card mb-5 overflow-hidden border border-base-300/70 bg-base-100">
+    <header className="card mb-5 overflow-hidden border border-base-300 bg-base-100">
       <div className="flex items-center gap-4 p-5 sm:p-6">
         <div className="min-w-0 flex-1">
-          <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[.18em] text-base-content/55">
+          <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[.18em] text-muted">
             <Icon aria-hidden />
             {context.category}
           </p>
@@ -27,7 +27,7 @@ export function AcademicWorkspaceBar({ pathname, title }: Props) {
               <Link
                 key={link.to}
                 to={link.to}
-                className="btn btn-sm rounded-full border-base-300/70 bg-base-100 text-xs"
+                className="btn btn-sm rounded-full border-base-300 bg-base-100 text-xs"
               >
                 {link.label}
                 <FiArrowUpRight aria-hidden />
