@@ -24,7 +24,7 @@ import { StudentAttendance } from "./pages/student/Attendance";
 import { VerifyCertificate } from "./pages/VerifyCertificate";
 import { VerifyReceipt } from "./pages/VerifyReceipt";
 import { DemoAccounts } from "./pages/DemoAccounts";
-import { AdminAnnouncements,AdminCertificates,AdminClasses,AdminCourses,AdminDashboard,AdminEnrolments,AdminFinance,AdminIntakes,AdminLiveClass,AdminOrganisation,AdminPeople,AdminResources,AdminSchedule,AdminStudents,AdminTeaching,AdminTransactions } from './routes/admin-pages';
+import { AdminAnnouncements,AdminCertificates,AdminClasses,AdminCourses,AdminDashboard,AdminEnrolments,AdminFinance,AdminIntakes,AdminLiveClass,AdminOrganisation,AdminPeople,AdminResources,AdminSchedule,AdminStudentDetail,AdminStudents,AdminTeaching,AdminTransactions } from './routes/admin-pages';
 import { Activity,AssignmentDetail,Assignments,CourseContents,CourseOverview,Courses,Dashboard,Grades,Messages,Profile,Schedule,Settings,StudentActivity,StudentLesson,Teachers } from './routes/student-pages';
 import { TeacherAssessments,TeacherAssignments,TeacherAttendance,TeacherClasses,TeacherContent,TeacherDashboard,TeacherGrading,TeacherPeople,TeacherReports,TeacherSchedule } from './routes/teacher-pages';
 function PageFallback() {
@@ -147,10 +147,11 @@ function AppRoutes() {
             <Route path="/admin/transactions" element={<AdminTransactions />} />
           </Route>
         </Route>
-        {/* Shared by academic + finance admins (ACADEMIC_ADMIN is in both groups) */}
-        <Route element={<RequireRole roles={FINANCE_ROLES} />}>
+        {/* Shared by academic + finance admins (the page hides placement for finance) */}
+        <Route element={<RequireRole roles={[...ADMIN_ROLES, ...FINANCE_ROLES]} />}>
           <Route element={<AppLayout />}>
             <Route path="/admin/students" element={<AdminStudents />} />
+            <Route path="/admin/students/:studentId" element={<AdminStudentDetail />} />
           </Route>
         </Route>
         {/* Shared by all staff (incl. teachers) */}
