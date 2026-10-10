@@ -20,7 +20,7 @@ export function AcademicEnrolmentChart({ data }: { data: AcademicDashboard }) {
         title="Enrolments by level"
         action={{ label: "Enrolments", to: "/admin/enrolments" }}
       />
-      <div className="mb-3 flex items-center gap-2 text-xs text-base-content/60">
+      <div className="mb-3 flex items-center gap-2 text-xs text-muted">
         <FiBookOpen aria-hidden />
         <strong className="text-base-content">{total}</strong> active enrolments
         across {data.byLevel.length} levels
