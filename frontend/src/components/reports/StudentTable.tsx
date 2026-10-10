@@ -50,7 +50,7 @@ export function StudentTable({ rows }: Props) {
     <div className="overflow-x-auto">
       <table className="table w-full text-xs">
         <thead>
-          <tr className="bg-base-200/60 text-muted">
+          <tr className="bg-base-200 text-muted">
             <th className="text-left">{head('Student', 'name')}</th>
             <th className="text-left">Code</th>
             <th className="text-center">{head('Submissions', 'count')}</th>
@@ -61,12 +61,12 @@ export function StudentTable({ rows }: Props) {
         </thead>
         <tbody>
           {sorted.map((r) => (
-            <tr key={r.code} className="border-t border-line hover:bg-base-200/30">
+            <tr key={r.code} className="border-t border-line hover:bg-base-200">
               <td className="font-medium">{r.name}</td>
               <td className="font-mono text-[11px] text-muted">{r.code}</td>
               <td className="text-center">{r.count}</td>
               <td className="text-center">
-                {r.avg === null ? <span className="text-muted">—</span> : <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${r.avg < 50 ? 'bg-coral-soft text-[#D8482F]' : r.avg < 70 ? 'bg-sun-soft text-[#8A6800]' : 'bg-brand-soft text-[#B30A00]'}`}>{r.avg}%</span>}
+                {r.avg === null ? <span className="text-muted">—</span> : <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${r.avg < 50 ? 'bg-coral text-error-content text-[#D8482F]' : r.avg < 70 ? 'bg-sun text-warning-content text-[#8A6800]' : 'bg-brand text-primary-content text-[#B30A00]'}`}>{r.avg}%</span>}
               </td>
               <td className="text-center">{r.passRate === null ? <span className="text-muted">—</span> : `${r.passRate}%`}</td>
               <td className="text-muted">{r.lastAt ? isoDate(r.lastAt) : '—'}</td>
