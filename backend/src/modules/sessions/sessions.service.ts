@@ -11,4 +11,5 @@ export { getMyUpcomingSessions } from './get-my-upcoming-sessions.js';
 export { getSessionRoster } from './get-session-roster.js';
 export { getSession } from './get-session.js';
 export { listSessions } from './list-sessions.js';
+export { recordStudentJoin } from './record-join.js';
 export { cancelSession,createSession,rescheduleSession,updateSession } from "./session-commands.js";
