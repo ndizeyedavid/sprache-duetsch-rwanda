@@ -67,7 +67,7 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
 
       {detail.activities.some(a => !isBookPractice(a)) ? (
         <div id="lesson-practice" className="scroll-mt-24 overflow-hidden rounded-box border border-line bg-base-100">
-          <div className="border-b border-line bg-base-200/50 px-4 py-3">
+          <div className="border-b border-line bg-base-200 px-4 py-3">
             <h2 className="flex items-center gap-2 text-sm font-bold">Practice activities<span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">{detail.activities.length}</span></h2>
             <p className="mt-1 text-xs text-muted">Work on each activity on its own page — your progress saves for your facilitator.</p>
           </div>
@@ -79,9 +79,9 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
               const score = sub?.score !== null && sub?.score !== undefined ? Number(sub.score) : null;
               const max = sub ? Number(sub.maxScore ?? 1) : 1;
               return (
-                <li key={a.id} className={`flex flex-col rounded-box border p-4 transition ${done ? (graded ? (sub.isCorrect === false ? 'border-coral/30 bg-coral-soft/20' : 'border-brand/20 bg-brand-soft/30') : 'border-sun/30 bg-sun-soft/20') : 'border-line bg-base-100 hover:border-brand/20'}`}>
+                <li key={a.id} className={`flex flex-col rounded-box border p-4 transition ${done ? (graded ? (sub.isCorrect === false ? 'border-coral bg-coral text-error-content' : 'border-brand bg-brand text-primary-content') : 'border-sun bg-sun text-warning-content') : 'border-line bg-base-100 hover:border-brand'}`}>
                   <div className="flex items-start justify-between gap-2">
-                    <span className={`flex size-8 shrink-0 items-center justify-center rounded-full text-xs font-bold ${done ? (graded ? 'bg-brand text-white' : 'bg-sun text-white') : 'bg-brand-soft text-brand'}`}>{activityIcon(a.type)}</span>
+                    <span className={`flex size-8 shrink-0 items-center justify-center rounded-full text-xs font-bold ${done ? (graded ? 'bg-brand text-white' : 'bg-sun text-white') : 'bg-brand text-primary-content'}`}>{activityIcon(a.type)}</span>
                     <span className="flex items-center gap-1">
                       <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px]">{humanize(a.type)}</span>
                       {done ? <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${graded ? 'bg-brand text-white' : 'bg-sun text-white'}`}>{graded ? 'Completed' : 'Submitted'}</span> : null}
@@ -93,7 +93,7 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
                     <div className="mt-2 space-y-1 rounded-box bg-base-100 p-2">
                       <p className="flex items-center justify-between text-xs">
                         <span className="font-medium">{graded ? (score !== null ? `Score: ${score}/${max}` : 'Graded') : 'Awaiting grading'}</span>
-                        <span className={`rounded-full px-2 py-0.5 text-[11px] font-bold ${graded ? (sub.isCorrect ? 'bg-brand-soft text-brand' : sub.isCorrect === false ? 'bg-coral-soft text-coral' : 'bg-base-200 text-muted') : 'bg-sun-soft text-[#8A6800]'}`}>{graded ? (sub.isCorrect === true ? 'Correct' : sub.isCorrect === false ? 'Incorrect' : 'Graded') : 'Submitted'}</span>
+                        <span className={`rounded-full px-2 py-0.5 text-[11px] font-bold ${graded ? (sub.isCorrect ? 'bg-brand text-primary-content' : sub.isCorrect === false ? 'bg-coral text-error-content' : 'bg-base-200 text-muted') : 'bg-sun text-warning-content text-[#8A6800]'}`}>{graded ? (sub.isCorrect === true ? 'Correct' : sub.isCorrect === false ? 'Incorrect' : 'Graded') : 'Submitted'}</span>
                       </p>
                       {sub.feedback ? <p className="rounded bg-base-200 px-2 py-1 text-[11px] leading-relaxed">Feedback: {sub.feedback}</p> : null}
                     </div>
@@ -114,11 +114,11 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
           <p className="text-sm font-semibold">{done ? 'Lesson completed' : 'Finished this lesson?'}</p>
           <p className="text-xs text-muted">{done ? 'You can revisit resources or redo practice any time.' : 'Mark as complete to update your progress and unlock the next lesson.'}</p>
         </div>
-        <button type="button" disabled={completing || done} onClick={onComplete} className="btn gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+        <button type="button" disabled={completing || done} onClick={onComplete} className="btn gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
           {completing ? <span className="loading loading-spinner loading-xs" /> : done ? <FiCheck aria-hidden /> : <FiClock aria-hidden />}{done ? 'Completed' : 'Mark as complete'}
         </button>
       </div>
-      {actionError ? <p role="alert" className="rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">{actionError}</p> : null}
+      {actionError ? <p role="alert" className="rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]">{actionError}</p> : null}
     </article>
   );
 }
