@@ -23,7 +23,7 @@ export function QuestionRow({ value: q, index, count, open, locked, onToggle, on
     </>
   );
   return (
-    <li className={`min-w-0 rounded-box border bg-base-100 transition-colors ${open ? 'border-brand/40' : 'border-base-300 hover:border-base-content/20'}`}>
+    <li className={`min-w-0 rounded-box border bg-base-100 transition-colors ${open ? 'border-brand' : 'border-base-300 hover:border-base-content'}`}>
       <div className="flex items-center gap-2 p-2 pl-3">
         <button type="button" onClick={onToggle} aria-expanded={open} className="flex min-w-0 flex-1 items-center gap-3 text-left">
           <span className="w-5 shrink-0 text-xs font-semibold text-muted">{index + 1}</span>
@@ -37,7 +37,7 @@ export function QuestionRow({ value: q, index, count, open, locked, onToggle, on
       </div>
       {open ? (
         <>
-          <div className="flex justify-end border-t border-base-300/70 px-2 py-1 sm:hidden">{tools}</div>
+          <div className="flex justify-end border-t border-base-300 px-2 py-1 sm:hidden">{tools}</div>
           {issue ? <p className="mx-4 mb-2 text-xs text-warning">To finish: {issue}</p> : null}
           <QuestionEditor value={q} index={index} locked={locked} onChange={onChange} />
         </>
