@@ -15,11 +15,11 @@ export function NewTaskMenu({ onCreate }: { onCreate: (kind: TaskKind) => void }
   }, [open]);
   return (
     <div ref={ref} className="relative">
-      <button type="button" aria-expanded={open} onClick={() => setOpen(o => !o)} className="btn rounded-full border-0 bg-brand text-white hover:bg-brand/90">
+      <button type="button" aria-expanded={open} onClick={() => setOpen(o => !o)} className="btn rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">
         <FiPlus aria-hidden />New<FiChevronDown aria-hidden />
       </button>
       {open ? (
-        <ul className="absolute right-0 z-30 mt-2 w-80 rounded-box border border-base-300 bg-base-100 p-1.5 shadow-lg">
+        <ul className="absolute right-0 z-30 mt-2 w-80 rounded-box border border-base-300 bg-base-100 p-1.5 ">
           {KINDS.map(k => { const Icon = k.icon; return (
             <li key={k.kind}>
               <button type="button" className="flex w-full gap-3 rounded-field p-3 text-left hover:bg-base-200" onClick={() => { setOpen(false); onCreate(k.kind); }}>
