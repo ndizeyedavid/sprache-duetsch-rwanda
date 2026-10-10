@@ -30,7 +30,7 @@ export function AcademicModalAction({ label, title, children, wide }: Props) {
         {label}
       </button>
       {success && (
-        <p role="status" className="mt-2 text-xs text-base-content/65">
+        <p role="status" className="mt-2 text-xs text-muted">
           {success}
         </p>
       )}
