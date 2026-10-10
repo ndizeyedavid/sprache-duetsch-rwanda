@@ -1,5 +1,6 @@
 import { useMemo,useState } from 'react';
-import { FiDownload } from 'react-icons/fi';
+import { FiChevronRight,FiDownload } from 'react-icons/fi';
+import { Link,useNavigate } from 'react-router-dom';
 import { AcademicModalAction } from '../../components/admin/AcademicModalAction';
 import { StudentPlacement } from '../../components/admin/StudentPlacement';
 import { StudentRegisterSummary } from '../../components/admin/StudentRegisterSummary';
@@ -15,6 +16,7 @@ import { useSession } from '../../lib/session';
 
 export function AdminStudents() {
  const { user } = useSession();
+ const navigate = useNavigate();
  const canPlace = user ? isAcademic(user.role) : false;
  const students = useApi('admin-students', listStudents);
  const levels = useApi('levels-catalog', listLevels);
@@ -94,15 +96,20 @@ export function AdminStudents() {
  <th className="text-left">Level</th>
  <th className="text-left">Campus</th>
  <th className="text-left">Status</th>
+ <th><span className="sr-only">Open</span></th>
  </tr>
  </thead>
  <tbody>
  {rows.map((row) => (
- <tr key={row.id} className="border-t border-line">
+ <tr
+ key={row.id}
+ onClick={() => navigate(`/admin/students/${row.id}`)}
+ className="cursor-pointer border-t border-line hover:bg-base-200"
+ >
  <td className="py-3 pr-4">
- <p className="font-semibold">
+ <Link to={`/admin/students/${row.id}`} onClick={(event) => event.stopPropagation()} className="font-semibold hover:underline">
  {row.user.firstName} {row.user.lastName}
- </p>
+ </Link>
  <p className="text-muted">{row.user.email}</p>
  </td>
  <td className="py-3 pr-4 font-medium">{row.studentCode}</td>
@@ -110,6 +117,9 @@ export function AdminStudents() {
  <td className="py-3 pr-4">{row.campus?.name ?? '—'}</td>
  <td className="py-3">
  <StatusBadge status={humanize(row.status)} />
+ </td>
+ <td className="py-3 text-right text-muted">
+ <FiChevronRight aria-hidden />
  </td>
  </tr>
  ))}
