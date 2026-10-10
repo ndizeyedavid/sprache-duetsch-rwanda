@@ -26,14 +26,14 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden rounded-box border bg-base-100 ${enabled ? "border-warning/30 select-none" : "border-line"}`}
+      className={`relative overflow-hidden rounded-box border bg-base-100 ${enabled ? "border-warning select-none" : "border-line"}`}
     >
       {enabled ? (
-        <div className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-2 border-b border-warning/20 bg-warning/10 px-3 py-2 text-xs">
+        <div className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-2 border-b border-warning bg-warning text-warning-content px-3 py-2 text-xs">
           <span className="flex items-center gap-2 font-semibold">
             <FiShield aria-hidden className="text-warning" />
             Protected assignment — fullscreen required
-            <span className={`rounded-full px-2 py-0.5 text-[11px] ${remaining === 0 ? "bg-error text-white" : remaining === 1 ? "bg-coral-soft text-coral" : "bg-base-100 text-muted"}`}>
+            <span className={`rounded-full px-2 py-0.5 text-[11px] ${remaining === 0 ? "bg-error text-white" : remaining === 1 ? "bg-coral text-error-content" : "bg-base-100 text-muted"}`}>
               {violations.length}/3 violations
             </span>
           </span>
@@ -44,7 +44,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
                 Enter fullscreen
               </button>
             ) : (
-              <span className="rounded-full bg-success/15 px-2 py-1 text-[11px] font-medium text-success">Fullscreen active</span>
+              <span className="rounded-full bg-success text-success-content px-2 py-1 text-[11px] font-medium text-success">Fullscreen active</span>
             )}
             <span className="hidden items-center gap-1 text-[11px] text-muted sm:inline-flex">
               <FiEyeOff aria-hidden />
@@ -74,9 +74,9 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
 
       {enabled && !isFullscreen ? (
         <>
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-base-100/70 p-4 backdrop-blur-sm" role="dialog" aria-modal="true">
-            <div className="w-full max-w-md rounded-box border border-warning bg-base-100 p-6 text-center shadow-xl">
-              <span className="mx-auto flex size-12 items-center justify-center rounded-full bg-warning/10 text-warning">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-base-100 p-4 " role="dialog" aria-modal="true">
+            <div className="w-full max-w-md rounded-box border border-warning bg-base-100 p-6 text-center ">
+              <span className="mx-auto flex size-12 items-center justify-center rounded-full bg-warning text-warning-content">
                 <FiMaximize2 aria-hidden size={22} />
               </span>
               <h3 className="mt-3 text-base font-bold">Fullscreen required</h3>
@@ -88,7 +88,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
               <button
                 type="button"
                 onClick={() => void enterFullscreen()}
-                className="btn mt-4 gap-2 rounded-full border-0 bg-warning px-6 text-white hover:bg-warning/90"
+                className="btn mt-4 gap-2 rounded-full border-0 bg-warning px-6 text-white hover:bg-warning hover:text-warning-content"
                 autoFocus
               >
                 <FiMaximize2 aria-hidden />
@@ -97,7 +97,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
               <p className="mt-2 text-[11px] text-muted">Press Esc to exit is blocked — it will count as a violation.</p>
             </div>
           </div>
-          <div className="relative z-20 m-3 rounded-box border border-warning bg-warning/5 p-3 text-center text-xs font-medium text-warning">
+          <div className="relative z-20 m-3 rounded-box border border-warning bg-warning text-warning-content p-3 text-center text-xs font-medium text-warning">
             Fullscreen is required to view questions — click Go to fullscreen above
           </div>
         </>
@@ -106,7 +106,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
       {enabled && violations.length > 0 ? (
         <div className="relative z-20 mx-3 mt-3 space-y-1">
           {violations.slice(-2).map((v, idx) => (
-            <p key={`${v.at}-${idx}`} role="alert" className="flex items-center gap-2 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-coral">
+            <p key={`${v.at}-${idx}`} role="alert" className="flex items-center gap-2 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-coral">
               <FiAlertTriangle aria-hidden />
               {v.message}
               <span className="ml-auto text-[11px]">{remaining} left</span>
