@@ -61,7 +61,7 @@ export function ResourceLibrary() {
  <div className="grow">
  <SearchField value={query} onChange={setQuery} ariaLabel="Search content" placeholder="Search modules, lessons, materials…" />
  </div>
- <button type="submit" disabled={searching} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={searching} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {searching ? <span className="loading loading-spinner loading-sm" /> : 'Search'}
  </button>
  </div>
