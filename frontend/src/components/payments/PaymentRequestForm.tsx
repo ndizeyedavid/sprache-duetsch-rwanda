@@ -4,7 +4,7 @@ import { currencyAmount } from '../../lib/format';
 
 type Props = { balance: number; minimum: number; busy: boolean; onPay: (amount: number, phone: string) => Promise<void> };
 
-const FIELD = 'input h-12 w-full rounded-field border-base-300 bg-base-100 text-[15px] focus:border-brand/50 focus:outline-none';
+const FIELD = 'input h-12 w-full rounded-field border-base-300 bg-base-100 text-[15px] focus:border-brand focus:outline-none';
 
 export function PaymentRequestForm({ balance, minimum, busy, onPay }: Props) {
   const full = Math.floor(balance);
@@ -48,7 +48,7 @@ export function PaymentRequestForm({ balance, minimum, busy, onPay }: Props) {
             <div className="mb-3 flex flex-wrap gap-2">
               {options.map(sum => (
                 <button key={sum} type="button" disabled={busy} onClick={() => { setAmount(String(sum)); setError(null); }}
-                  className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${value === sum ? 'border-brand bg-brand/10 text-brand' : 'border-base-300 hover:border-brand/40'}`}>
+                  className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${value === sum ? 'border-brand bg-brand text-primary-content' : 'border-base-300 hover:border-brand'}`}>
                   {sum === full ? 'Full amount' : 'Half'} · {currencyAmount(sum, 'RWF')}
                 </button>
               ))}
@@ -61,7 +61,7 @@ export function PaymentRequestForm({ balance, minimum, busy, onPay }: Props) {
       {error ? <p className="text-sm text-error" role="alert">{error}</p> : null}
       <div className="mt-auto flex flex-col-reverse gap-2 sm:flex-row">
         {review ? <button className="btn btn-ghost h-12 rounded-full" type="button" disabled={busy} onClick={() => setReview(false)}><FiArrowLeft aria-hidden />Back</button> : null}
-        <button className="btn h-12 w-full rounded-full border-0 bg-brand sm:flex-1 text-[15px] text-white hover:bg-brand/90" type="submit" disabled={busy}>
+        <button className="btn h-12 w-full rounded-full border-0 bg-brand sm:flex-1 text-[15px] text-white hover:bg-brand hover:text-primary-content" type="submit" disabled={busy}>
           {busy ? <><span className="loading loading-spinner loading-sm" aria-hidden />Sending…</> : review ? `Pay ${currencyAmount(value, 'RWF')}` : 'Continue'}
         </button>
       </div>
