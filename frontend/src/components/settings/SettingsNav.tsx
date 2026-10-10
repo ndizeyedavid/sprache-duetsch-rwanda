@@ -10,11 +10,11 @@ export function SettingsNav({ active, onChange }: Props) {
         const isActive = active === id;
         return (
           <button key={id} type="button" onClick={() => onChange(id)} aria-current={isActive ? 'page' : undefined}
-            className={`flex shrink-0 items-center gap-3 rounded-field px-3 py-2.5 text-left transition-colors lg:w-full ${isActive ? 'bg-brand/10 text-brand' : 'text-base-content/75 hover:bg-base-200'}`}>
+            className={`flex shrink-0 items-center gap-3 rounded-field px-3 py-2.5 text-left transition-colors lg:w-full ${isActive ? 'bg-brand text-primary-content' : 'text-muted hover:bg-base-200'}`}>
             <Icon aria-hidden className="shrink-0 text-base" />
             <span className="min-w-0">
               <span className="block text-sm font-semibold leading-tight">{label}</span>
-              <span className={`hidden text-xs lg:block ${isActive ? 'text-brand/70' : 'text-muted'}`}>{desc}</span>
+              <span className={`hidden text-xs lg:block ${isActive ? 'text-primary-content' : 'text-muted'}`}>{desc}</span>
             </span>
           </button>
         );
