@@ -29,7 +29,7 @@ export function CertificateRecord({ data }: { data: CertificateVerification }) {
           <span className="rounded-lg bg-brand px-2.5 py-1 text-sm font-bold text-white">{data.levelCode}</span>
           <span className="text-lg font-semibold sm:text-xl">{data.levelTitle}</span>
         </div>
-        {data.grade ? <p className="mt-4 inline-flex rounded-full bg-brand/10 px-3 py-1 text-sm font-medium text-brand">{data.grade}</p> : null}
+        {data.grade ? <p className="mt-4 inline-flex rounded-full bg-brand text-primary-content px-3 py-1 text-sm font-medium text-brand">{data.grade}</p> : null}
 
         <dl className="mt-9 grid gap-px overflow-hidden rounded-box border border-base-300 bg-base-300 sm:grid-cols-3">
           {facts.map(fact => (
@@ -41,7 +41,7 @@ export function CertificateRecord({ data }: { data: CertificateVerification }) {
         </dl>
         {data.issuedBy ? <p className="mt-6 text-sm text-muted">Signed by <span className="font-semibold text-base-content">{data.issuedBy}</span>{data.issuedByRole ? `, ${data.issuedByRole}` : ''}</p> : null}
       </div>
-      <footer className="flex flex-wrap items-center justify-between gap-3 border-t border-base-300 bg-base-200/50 px-6 py-4 sm:px-10">
+      <footer className="flex flex-wrap items-center justify-between gap-3 border-t border-base-300 bg-base-200 px-6 py-4 sm:px-10">
         <p className="text-xs text-muted">Verification code <span className="ml-1 font-mono text-base-content">{data.verificationCode}</span></p>
         <button type="button" onClick={() => void copyLink()} className="btn btn-ghost btn-sm rounded-full">
           {copied ? <FiCheck aria-hidden /> : <FiLink aria-hidden />}{copied ? 'Link copied' : 'Copy link'}
