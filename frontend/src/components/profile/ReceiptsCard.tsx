@@ -42,7 +42,7 @@ export function ReceiptsCard({ receipts, loading, error, onRetry, pendingId, onP
               </div>
               <div className="flex gap-2">
                 <button type="button" onClick={() => onPreview(receipt)} className="btn btn-ghost btn-sm rounded-full border border-line"><FiEye aria-hidden />View</button>
-                <button type="button" disabled={pendingId === receipt.id} onClick={() => onDownload(receipt)} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90">
+                <button type="button" disabled={pendingId === receipt.id} onClick={() => onDownload(receipt)} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">
                   {pendingId === receipt.id ? <span className="loading loading-spinner loading-xs" /> : <FiDownload aria-hidden />}PDF
                 </button>
               </div>
