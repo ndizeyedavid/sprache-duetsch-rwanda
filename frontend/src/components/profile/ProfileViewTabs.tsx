@@ -23,12 +23,12 @@ export function ProfileViewTabs({ view, onChange, counts }: Props) {
             aria-controls={`profile-panel-${item.key}`}
             onClick={() => onChange(item.key)}
             className={`btn btn-sm gap-2 rounded-full ${
-              active ? 'btn-neutral' : 'btn-ghost border border-line bg-base-100'
+              active ? 'border-0 bg-brand text-white hover:bg-brand' : 'btn-ghost border border-line bg-base-100'
             }`}
           >
             {item.label}
             {count === undefined ? null : (
-              <span className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? 'bg-white text-night' : 'bg-base-200 text-muted'}`}>
+              <span className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? 'bg-white text-brand' : 'bg-base-200 text-muted'}`}>
                 {count}
               </span>
             )}
