@@ -143,6 +143,12 @@ export const mySession = async (req: Request, res: Response): Promise<void> => {
   res.json({ success: true, data });
 };
 
+export const joinMySession = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const data = await service.recordStudentJoin(currentUserId(req), id);
+  res.json({ success: true, data });
+};
+
 export const attendanceSummary = async (req: Request, res: Response): Promise<void> => {
   const data = await service.getAttendanceSummary(validatedQuery<AttendanceSummaryQuery>(req), {
     id: currentUserId(req),
