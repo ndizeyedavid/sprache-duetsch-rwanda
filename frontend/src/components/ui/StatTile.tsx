@@ -35,11 +35,11 @@ export function StatTile({
  } ${className}`}
  >
  <div className="flex items-start justify-between gap-3">
- <p className={`text-xs font-medium ${solid ? 'text-white/80' : 'text-muted'}`}>{label}</p>
+ <p className={`text-xs font-medium ${solid ? 'text-white' : 'text-muted'}`}>{label}</p>
  {Icon ? (
  <span
  className={`inline-flex items-center justify-center ${
- solid ? 'size-9 rounded-xl bg-white/20 text-white' : `text-xl ${tones.text}`
+ solid ? 'size-9 rounded-xl bg-white text-white' : `text-xl ${tones.text}`
  }`}
  >
  <Icon aria-hidden />
@@ -50,7 +50,7 @@ export function StatTile({
  {delta ? (
  <p
  className={`mt-1 text-xs font-medium ${
- solid ? 'text-white/85' : 'text-brand'
+ solid ? 'text-white' : 'text-brand'
  }`}
  >
  {delta}
