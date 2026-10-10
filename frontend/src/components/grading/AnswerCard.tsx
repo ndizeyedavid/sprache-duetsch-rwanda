@@ -23,16 +23,16 @@ export function AnswerCard({ index, total, prompt, response, maxPoints, points, 
 
  return (
  <li className="overflow-hidden rounded-box border border-line bg-base-100">
- <div className="flex items-center justify-between gap-2 bg-base-200/50 px-3 py-2">
+ <div className="flex items-center justify-between gap-2 bg-base-200 px-3 py-2">
  <span className="text-xs font-bold">Question {index + 1} of {total}</span>
  <span className="flex items-center gap-2">
- {isCorrect === true ? <span className="rounded-full bg-brand-soft px-2 py-0.5 text-[11px] font-medium text-[#B30A00]">Correct</span> : isCorrect === false ? <span className="rounded-full bg-coral-soft px-2 py-0.5 text-[11px] font-medium text-[#D8482F]">Incorrect</span> : null}
+ {isCorrect === true ? <span className="rounded-full bg-brand text-primary-content px-2 py-0.5 text-[11px] font-medium text-[#B30A00]">Correct</span> : isCorrect === false ? <span className="rounded-full bg-coral text-error-content px-2 py-0.5 text-[11px] font-medium text-[#D8482F]">Incorrect</span> : null}
  <span className="rounded-full bg-base-100 px-2 py-0.5 text-[11px] font-medium text-muted">{maxPoints} pts</span>
  </span>
  </div>
  <div className="p-3">
  <p className="text-sm font-semibold leading-snug">{prompt}</p>
- <div className="mt-2 rounded-box border border-line bg-base-200/30 p-3">
+ <div className="mt-2 rounded-box border border-line bg-base-200 p-3">
  <p className="flex items-center gap-1.5 text-[11px] font-semibold text-muted"><FiMessageSquare aria-hidden />Student answer</p>
  {audio ? <audio controls src={audio} className="mt-2 w-full" preload="metadata" /> : <p className="mt-1 whitespace-pre-wrap break-words text-sm leading-relaxed">{text || '— No answer'}</p>}
  </div>
