@@ -163,7 +163,7 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
   <button
   type="submit"
   disabled={pending || loadingRefs}
-  className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+  className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60"
   >
   {pending ? <span className="loading loading-spinner loading-sm" /> : null}
   Create account
