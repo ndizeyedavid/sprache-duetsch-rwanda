@@ -32,7 +32,7 @@ export function PracticeItem({ activity }: { activity: Activity }) {
   return <div className="space-y-5">
     <p className="whitespace-pre-wrap text-sm leading-relaxed">{config.instruction || activity.instructions}</p>
     {config.items ? <>
-      <p className="text-xs text-base-content/60">{answered} of {config.items.length} answered</p>
+      <p className="text-xs text-muted">{answered} of {config.items.length} answered</p>
       <ExerciseFields group={activity.id} items={config.items.map(item => ({ ...item, answer: feedback?.items?.find(row => row.id === item.id)?.answer }))} answers={answers} checked={saved} onChange={(id, value) => change({ ...answers, [id]: value })} />
     </> : config.options ? <fieldset className="grid gap-2" aria-label={activity.instructions || activity.title}>
       {options.map(({ value: option, index: i }) => <label key={i} className={`flex cursor-pointer items-center gap-3 rounded-box border p-3 text-sm ${response === i ? 'border-primary bg-base-200' : 'border-base-300'}`}>
