@@ -10,7 +10,7 @@ export function AddQuestionBar({ onAdd, disabled, autoOnly = false }: { onAdd: (
           const Icon = meta.icon;
           return (
             <button key={type} type="button" disabled={disabled} onClick={() => onAdd(type)} title={meta.label}
-              className="btn btn-sm gap-1.5 rounded-full border-base-300 bg-base-100 font-normal hover:border-brand/40 hover:text-brand">
+              className="btn btn-sm gap-1.5 rounded-full border-base-300 bg-base-100 font-normal hover:border-brand hover:text-brand">
               <Icon aria-hidden />{meta.short}
             </button>
           );
