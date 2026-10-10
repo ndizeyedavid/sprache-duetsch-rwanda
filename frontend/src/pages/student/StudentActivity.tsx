@@ -119,13 +119,13 @@ export function StudentActivity() {
 
       <Panel>
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-box border border-warning/20 bg-warning/5 px-3 py-1.5 text-xs font-bold text-warning">Anti-cheat: fullscreen · no copy/paste · 3 strikes lock</span>
+          <span className="rounded-box border border-warning bg-warning text-warning-content px-3 py-1.5 text-xs font-bold text-warning">Anti-cheat: fullscreen · no copy/paste · 3 strikes lock</span>
         </div>
-        <span className="mt-3 inline-flex items-center gap-2 rounded-full bg-brand-soft px-2.5 py-1 text-xs font-semibold text-[#B30A00]"><FiClock aria-hidden />Practice activity</span>
+        <span className="mt-3 inline-flex items-center gap-2 rounded-full bg-brand text-primary-content px-2.5 py-1 text-xs font-semibold text-[#B30A00]"><FiClock aria-hidden />Practice activity</span>
         <h1 className="mt-2 text-xl font-bold leading-tight">{activity.title}</h1>
         {activity.instructions ? <p className="mt-1 text-sm leading-relaxed text-muted">{activity.instructions}</p> : null}
-        {type === 'WRITING' && cfg.prompt ? <p className="mt-3 rounded-box border border-line bg-base-200/40 p-3 text-sm">{String(cfg.prompt)}</p> : null}
-        {type === 'DOCUMENT' && cfg.prompt ? <p className="mt-3 rounded-box border border-line bg-base-200/40 p-3 text-sm">{String(cfg.prompt)}</p> : null}
+        {type === 'WRITING' && cfg.prompt ? <p className="mt-3 rounded-box border border-line bg-base-200 p-3 text-sm">{String(cfg.prompt)}</p> : null}
+        {type === 'DOCUMENT' && cfg.prompt ? <p className="mt-3 rounded-box border border-line bg-base-200 p-3 text-sm">{String(cfg.prompt)}</p> : null}
       </Panel>
 
       <Panel>
@@ -162,8 +162,8 @@ export function StudentActivity() {
                   <p className="text-sm font-medium">True or false?</p>
                   <p className="mt-2 rounded-box border border-line bg-base-100 p-4 text-sm font-medium">{String(cfg.statement ?? cfg.sentence ?? activity.title)}</p>
                   <div className="mt-3 grid grid-cols-2 gap-3">
-                    <button type="button" onClick={() => setTfChoice(true)} className={`rounded-box border p-4 text-sm font-semibold transition ${tfChoice === true ? 'border-brand bg-brand-soft text-brand' : 'border-line bg-base-100 hover:border-brand/20'}`}>True</button>
-                    <button type="button" onClick={() => setTfChoice(false)} className={`rounded-box border p-4 text-sm font-semibold transition ${tfChoice === false ? 'border-brand bg-brand-soft text-brand' : 'border-line bg-base-100 hover:border-brand/20'}`}>False</button>
+                    <button type="button" onClick={() => setTfChoice(true)} className={`rounded-box border p-4 text-sm font-semibold transition ${tfChoice === true ? 'border-brand bg-brand text-primary-content' : 'border-line bg-base-100 hover:border-brand'}`}>True</button>
+                    <button type="button" onClick={() => setTfChoice(false)} className={`rounded-box border p-4 text-sm font-semibold transition ${tfChoice === false ? 'border-brand bg-brand text-primary-content' : 'border-line bg-base-100 hover:border-brand'}`}>False</button>
                   </div>
                 </div>
               ) : null}
@@ -187,8 +187,8 @@ export function StudentActivity() {
               ) : null}
 
               {cheatLocked ? <p role="alert" className="rounded-box bg-error px-3 py-2 text-xs font-bold text-white">Locked — 3 violations. Flagged for review.</p> : null}
-              {submitError ? <p role="alert" className="rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">{submitError}</p> : null}
-              <button type="button" onClick={() => void handleSubmit()} disabled={submitting || cheatLocked || (type === 'MCQ' ? mcqChoice === null : type === 'TRUE_FALSE' ? tfChoice === null : !answer.trim())} className="btn rounded-full border-0 bg-brand px-6 text-white hover:bg-brand/90 disabled:opacity-50">{submitting ? <span className="loading loading-spinner loading-xs" /> : null}Submit</button>
+              {submitError ? <p role="alert" className="rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]">{submitError}</p> : null}
+              <button type="button" onClick={() => void handleSubmit()} disabled={submitting || cheatLocked || (type === 'MCQ' ? mcqChoice === null : type === 'TRUE_FALSE' ? tfChoice === null : !answer.trim())} className="btn rounded-full border-0 bg-brand px-6 text-white hover:bg-brand hover:text-primary-content disabled:opacity-50">{submitting ? <span className="loading loading-spinner loading-xs" /> : null}Submit</button>
             </div>
           ) : (
             <ActivityOutcome isCorrect={isCorrect} status={existingSubmission?.status} attemptNumber={attemptNumber} score={score} feedback={feedback} type={type} cfg={cfg} slug={slug} lessonId={lessonId} nextLesson={nextLesson} handleRedo={handleRedo} />
