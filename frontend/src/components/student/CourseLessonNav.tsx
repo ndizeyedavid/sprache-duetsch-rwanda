@@ -75,9 +75,9 @@ export function CourseLessonNav({ course, selectedId, onSelect, q, onQ, collapse
                           <button
                             type="button"
                             onClick={() => onSelect(lesson.id)}
-                            className={`flex w-full items-center gap-2 px-3 py-2.5 text-left text-xs transition ${active ? 'bg-brand-soft text-[#B30A00]' : 'hover:bg-base-200/50'}`}
+                            className={`flex w-full items-center gap-2 px-3 py-2.5 text-left text-xs transition ${active ? 'bg-brand text-primary-content text-[#B30A00]' : 'hover:bg-base-200'}`}
                           >
-                            <span className={`flex size-7 shrink-0 items-center justify-center rounded-full ${active ? 'bg-brand text-white' : tone === 'brand' ? 'bg-brand-soft text-brand' : tone === 'sun' ? 'bg-sun-soft text-[#8A6800]' : 'bg-base-200 text-muted'}`}>
+                            <span className={`flex size-7 shrink-0 items-center justify-center rounded-full ${active ? 'bg-brand text-white' : tone === 'brand' ? 'bg-brand text-primary-content' : tone === 'sun' ? 'bg-sun text-warning-content text-[#8A6800]' : 'bg-base-200 text-muted'}`}>
                               <Icon aria-hidden className="text-sm" />
                             </span>
                             <span className="min-w-0 grow">
