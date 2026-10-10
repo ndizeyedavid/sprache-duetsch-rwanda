@@ -12,7 +12,7 @@ import { buildActivityConfig } from './build-activity-config';
 export function LessonEditorSection5(props: { setShowAddActivity: import("react").Dispatch<import("react").SetStateAction<boolean>>; onRun: (action: () => Promise<unknown>, fallback: string, after?: () => void) => Promise<void>; activityForm: { title: string; type: string; instructions: string; }; activityQ: ActivityQuestion; lessonId: string; setActivityForm: import("react").Dispatch<import("react").SetStateAction<{ title: string; type: string; instructions: string; }>>; onSaved: () => void; setActivityQ: import("react").Dispatch<import("react").SetStateAction<ActivityQuestion>>; busy: boolean }) {
 const { setShowAddActivity, onRun, activityForm, activityQ, lessonId, setActivityForm, onSaved, setActivityQ, busy } = props;
 return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={() => setShowAddActivity(false)} className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+ <button type="button" aria-label="Close" onClick={() => setShowAddActivity(false)} className="absolute inset-0 bg-black/40 " />
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -80,7 +80,7 @@ return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4"
  <input value={activityForm.instructions} onChange={(e) => { const v = e.currentTarget.value; setActivityForm((f) => ({ ...f, instructions: v })) }} placeholder="What should students do?" className="input input w-full rounded-field border-line bg-base-100" />
  </label>
 
- <div className="rounded-box border border-line bg-base-200/30 p-3">
+ <div className="rounded-box border border-line bg-base-200 p-3">
  <p className="text-xs font-semibold">Question details</p>
  {activityQ.kind === 'MCQ' ? (
  <div className="mt-2 space-y-2">
@@ -159,7 +159,7 @@ return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4"
  <button type="button" onClick={() => setShowAddActivity(false)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
-  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
   {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add activity
   </button>
  </div>
