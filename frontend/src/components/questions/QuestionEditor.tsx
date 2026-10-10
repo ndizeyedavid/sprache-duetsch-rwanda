@@ -11,7 +11,7 @@ type Props = { value: AuthoredQuestion; index: number; locked: boolean; onChange
 export function QuestionEditor({ value: q, index, locked, onChange }: Props) {
   const changeType = (type: string) => onChange({ ...newQuestion(type), id: q.id, prompt: q.prompt, difficulty: q.difficulty, audioUrl: q.audioUrl, imageUrl: q.imageUrl });
   return (
-    <div className="space-y-4 border-t border-base-300/70 p-4">
+    <div className="space-y-4 border-t border-base-300 p-4">
       <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_96px]">
         <label className="block"><span className="mb-1.5 block text-xs font-medium">Type</span>
           <select className="select select-sm w-full" value={q.type} disabled={locked} onChange={e => changeType(e.target.value)}>
@@ -32,7 +32,7 @@ export function QuestionEditor({ value: q, index, locked, onChange }: Props) {
           <div className="flex gap-2" role="radiogroup" aria-label="Correct answer">
             {['True', 'False'].map(option => (
               <button key={option} type="button" disabled={locked} aria-pressed={String(q.correctAnswer) === option} onClick={() => onChange({ ...q, correctAnswer: option })}
-                className={`btn btn-sm flex-1 rounded-full ${String(q.correctAnswer) === option ? 'border-brand bg-brand/10 text-brand' : 'btn-ghost border-base-300'}`}>{option}</button>
+                className={`btn btn-sm flex-1 rounded-full ${String(q.correctAnswer) === option ? 'border-brand bg-brand text-primary-content' : 'btn-ghost border-base-300'}`}>{option}</button>
             ))}
           </div>
         ) : q.type === 'FILL_BLANK' ? (
@@ -42,7 +42,7 @@ export function QuestionEditor({ value: q, index, locked, onChange }: Props) {
           </label>
         ) : q.type === 'MATCHING' ? <MatchingEditor value={q} onChange={onChange} locked={locked} />
         : q.type === 'ORDERING' ? <OrderingEditor value={q} onChange={onChange} locked={locked} />
-        : <p className="rounded-field bg-base-200/60 px-3 py-2 text-xs text-muted">You mark this answer yourself after students submit.</p>}
+        : <p className="rounded-field bg-base-200 px-3 py-2 text-xs text-muted">You mark this answer yourself after students submit.</p>}
       <details className="text-xs">
         <summary className="cursor-pointer text-muted">More options · skill, difficulty, image or audio</summary>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
