@@ -26,7 +26,7 @@ export function RepeatField({ enabled, onEnabled, count, onCount, date, startTim
  })();
 
  return (
- <div className={`rounded-box border p-3 ${enabled ? 'border-brand/30 bg-brand-soft/40' : 'border-line bg-base-200/30'}`}>
+ <div className={`rounded-box border p-3 ${enabled ? 'border-brand bg-brand text-primary-content' : 'border-line bg-base-200'}`}>
  <label className="flex cursor-pointer items-center justify-between gap-3">
  <span className="flex items-center gap-2">
  <span className={`flex size-7 items-center justify-center rounded-full ${enabled ? 'bg-brand text-white' : 'bg-base-200 text-muted'}`}><FiRepeat aria-hidden className="text-xs" /></span>
@@ -49,11 +49,11 @@ export function RepeatField({ enabled, onEnabled, count, onCount, date, startTim
  </div>
 
  {preview.length > 0 ? (
- <div className="rounded-box border border-brand/20 bg-white p-2">
+ <div className="rounded-box border border-brand bg-white p-2">
  <p className="px-1 pb-1 text-[11px] font-semibold text-muted">Preview — {preview.length} sessions will be created</p>
  <ul className="max-h-28 space-y-1 overflow-y-auto">
  {preview.map((p, i) => (
- <li key={p.dateStr} className="flex items-center justify-between gap-2 rounded-field bg-base-200/60 px-2.5 py-1.5 text-xs">
+ <li key={p.dateStr} className="flex items-center justify-between gap-2 rounded-field bg-base-200 px-2.5 py-1.5 text-xs">
  <span className="flex items-center gap-2">
  <span className="flex size-5 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-white">{i + 1}</span>
  <span className="font-medium">{p.label}</span>
