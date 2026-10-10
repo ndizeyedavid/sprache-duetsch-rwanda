@@ -11,8 +11,8 @@ export function StudioSteps({ step, issues, onStep, homeworkWork }: { step: Step
         const active = step === s.id; const issue = issues[s.id];
         return (
           <button key={s.id} type="button" onClick={() => onStep(s.id)} aria-current={active ? 'step' : undefined} title={issue ?? 'Ready'}
-            className={`flex shrink-0 items-center gap-2 rounded-full px-3 py-1.5 text-sm transition-colors ${active ? 'bg-brand/10 font-semibold text-brand' : 'text-base-content/70 hover:bg-base-200'}`}>
-            <span className={`grid size-5 place-items-center rounded-full text-[11px] ${issue ? 'bg-base-200 text-base-content/70' : 'bg-success text-white'}`}>{issue ? i + 1 : <FiCheck aria-hidden />}</span>
+            className={`flex shrink-0 items-center gap-2 rounded-full px-3 py-1.5 text-sm transition-colors ${active ? 'bg-brand text-primary-content font-semibold text-brand' : 'text-muted hover:bg-base-200'}`}>
+            <span className={`grid size-5 place-items-center rounded-full text-[11px] ${issue ? 'bg-base-200 text-muted' : 'bg-success text-white'}`}>{issue ? i + 1 : <FiCheck aria-hidden />}</span>
             {s.id === 'content' && homeworkWork ? 'Task' : s.label}
           </button>
         );
