@@ -13,7 +13,7 @@ export function CourseProgressCard({ completion, code, nextTitle }: Props) {
       </RadialStat>
       <h3 className="mt-3 text-sm font-bold">My progress</h3>
       <p className="mt-1 max-w-[16rem] truncate text-xs text-muted">{nextTitle ? `Next: ${nextTitle}` : 'All lessons completed'}</p>
-      <Link to="/courses" className="btn btn-sm mt-3 gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90">
+      <Link to="/courses" className="btn btn-sm mt-3 gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">
         Open my course <FiArrowRight aria-hidden />
       </Link>
     </div>
