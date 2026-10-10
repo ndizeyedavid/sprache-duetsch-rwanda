@@ -69,11 +69,11 @@ export function MiniCalendar({
  onClick={() => onSelect?.(dayNumber)}
  className={`relative mx-auto flex size-8 items-center justify-center rounded-full text-xs transition-colors ${
  !inMonth
- ? "text-muted/30"
+ ? "text-muted"
  : isSelected
  ? "bg-brand font-semibold text-white"
  : isMarked
- ? "bg-brand-tint font-semibold text-brand"
+ ? "bg-brand text-primary-content font-semibold text-brand"
  : "text-ink hover:bg-base-300"
  }`}
  >
