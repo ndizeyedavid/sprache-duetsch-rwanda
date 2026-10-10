@@ -73,7 +73,7 @@ export function StaffPasswordDialog({ row, saving, onClose, onSave }: Props) {
             />
           </div>
 
-          <p className="mt-4 flex items-start gap-2 rounded-field bg-coral-soft px-3 py-2 text-[11px] font-medium text-[#D8482F]">
+          <p className="mt-4 flex items-start gap-2 rounded-field bg-coral text-error-content px-3 py-2 text-[11px] font-medium text-[#D8482F]">
             <FiAlertTriangle aria-hidden className="mt-0.5 shrink-0" />
             <span>
               Every active session is revoked at once. Anyone using the old password is signed out
