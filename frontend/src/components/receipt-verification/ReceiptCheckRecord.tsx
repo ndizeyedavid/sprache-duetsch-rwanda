@@ -12,13 +12,13 @@ export function ReceiptCheckRecord({ data }: { data: ReceiptVerification }) {
   ];
   return (
     <article className="page-enter overflow-hidden rounded-[1.75rem] border border-base-300 bg-base-100">
-      <div className={`flex items-center gap-3 px-6 py-4 sm:px-10 ${data.valid ? 'bg-success/10' : 'bg-error/10'}`}>
+      <div className={`flex items-center gap-3 px-6 py-4 sm:px-10 ${data.valid ? 'bg-success text-success-content' : 'bg-error text-error-content'}`}>
         <span className={`grid size-9 shrink-0 place-items-center rounded-full text-white ${data.valid ? 'bg-success' : 'bg-error'}`}>
           {data.valid ? <FiCheck aria-hidden className="text-lg" /> : <FiAlertTriangle aria-hidden />}
         </span>
         <div>
           <p className={`font-semibold ${data.valid ? 'text-success' : 'text-error'}`}>{data.valid ? 'Genuine receipt' : 'This receipt was cancelled'}</p>
-          <p className="text-xs text-base-content/70">{data.valid ? 'Issued by Deutsch Sprache RW and recorded in the school accounts.' : `It was cancelled by the school${data.voidedAt ? ` on ${longDate(data.voidedAt)}` : ''}.`}</p>
+          <p className="text-xs text-muted">{data.valid ? 'Issued by Deutsch Sprache RW and recorded in the school accounts.' : `It was cancelled by the school${data.voidedAt ? ` on ${longDate(data.voidedAt)}` : ''}.`}</p>
         </div>
       </div>
       <div className={`relative overflow-hidden px-6 py-9 sm:px-10 sm:py-12 ${data.valid ? '' : 'opacity-70'}`}>
