@@ -33,7 +33,7 @@ export function PaypackMonitor() {
   };
 
   return (
-    <Panel className="border-warning/40">
+    <Panel className="border-warning">
       <h2 className="text-base font-semibold">Mobile-money payments to confirm</h2>
       <p className="mt-1 text-sm text-muted">
         {rows.length === 1 ? 'One payment' : `${rows.length} payments`} did not get a clear result. Check the status, or confirm it with the reference.
