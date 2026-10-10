@@ -15,7 +15,7 @@ export function BasicsStep({ draft: d, update, switchKind, creating, locked, cla
             const Icon = k.icon; const active = d.kind === k.kind;
             return (
               <button key={k.kind} type="button" role="radio" aria-checked={active} onClick={() => switchKind(k.kind)}
-                className={`rounded-box border p-3 text-left transition-colors ${active ? 'border-brand bg-brand/5' : 'border-base-300 hover:border-brand/30'}`}>
+                className={`rounded-box border p-3 text-left transition-colors ${active ? 'border-brand bg-brand text-primary-content' : 'border-base-300 hover:border-brand'}`}>
                 <span className={`flex items-center gap-2 text-sm font-semibold ${active ? 'text-brand' : ''}`}><Icon aria-hidden />{k.label}</span>
                 <span className="mt-1 block text-xs leading-5 text-muted">{k.hint}</span>
               </button>
