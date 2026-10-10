@@ -49,6 +49,23 @@ studentsRouter.get(
   asyncHandler(controller.get),
 );
 
+// Lesson progress and per-session attendance: academic records, so no Finance Admin.
+studentsRouter.get(
+  "/:id/progress",
+  requireAuth,
+  requireRole(...ADMIN_ROLES),
+  validate({ params: studentIdSchema }),
+  asyncHandler(controller.progress),
+);
+
+studentsRouter.get(
+  "/:id/attendance",
+  requireAuth,
+  requireRole(...ADMIN_ROLES),
+  validate({ params: studentIdSchema }),
+  asyncHandler(controller.attendance),
+);
+
 studentsRouter.patch(
   "/:id",
   requireAuth,
