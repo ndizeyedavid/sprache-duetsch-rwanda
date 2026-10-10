@@ -24,7 +24,7 @@ export function SecurityPane() {
 
  return (
  <form onSubmit={handleSubmit} className="space-y-4">
- <div className="rounded-box border border-line bg-base-200/30 p-3">
+ <div className="rounded-box border border-line bg-base-200 p-3">
  <p className="flex items-center gap-2 text-xs font-semibold"><FiLock aria-hidden className="text-brand" />Change password</p>
  <p className="mt-1 text-xs leading-snug text-muted">Use 8+ characters. Changing your password signs you out everywhere.</p>
  </div>
@@ -33,9 +33,9 @@ export function SecurityPane() {
  <label className="block"><span className="mb-1.5 block text-xs font-medium">New password *</span><input type="password" required value={newPassword} onChange={(e) => setNewPassword(e.currentTarget.value)} className="input w-full rounded-box border-line bg-base-100 text-sm" /></label>
  <label className="block"><span className="mb-1.5 block text-xs font-medium">Confirm *</span><input type="password" required value={confirm} onChange={(e) => setConfirm(e.currentTarget.value)} className="input w-full rounded-box border-line bg-base-100 text-sm" /></label>
  </div>
- {error ? <p role="alert" className="flex gap-2 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]"><FiAlertCircle aria-hidden className="mt-0.5 shrink-0" />{error}</p> : null}
- {ok ? <p role="status" className="flex gap-2 rounded-box bg-brand-soft px-3 py-2 text-xs font-medium text-[#B30A00]"><FiCheck aria-hidden />Password changed — you will be signed out on next refresh.</p> : null}
- <div className="flex justify-end"><button type="submit" disabled={saving} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">{saving ? <span className="loading loading-spinner loading-xs" /> : <FiLock aria-hidden />}Update password</button></div>
+ {error ? <p role="alert" className="flex gap-2 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]"><FiAlertCircle aria-hidden className="mt-0.5 shrink-0" />{error}</p> : null}
+ {ok ? <p role="status" className="flex gap-2 rounded-box bg-brand text-primary-content px-3 py-2 text-xs font-medium text-[#B30A00]"><FiCheck aria-hidden />Password changed — you will be signed out on next refresh.</p> : null}
+ <div className="flex justify-end"><button type="submit" disabled={saving} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">{saving ? <span className="loading loading-spinner loading-xs" /> : <FiLock aria-hidden />}Update password</button></div>
  </form>
  );
 }
