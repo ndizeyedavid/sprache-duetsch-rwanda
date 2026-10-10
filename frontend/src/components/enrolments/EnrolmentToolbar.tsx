@@ -99,7 +99,7 @@ export function EnrolmentToolbar({
         </button>
       ) : null}
       {filters.awaitingOnly ? (
-        <span className="badge badge-sm gap-1 rounded-full bg-coral-soft font-medium text-[#D8482F]">
+        <span className="badge badge-sm gap-1 rounded-full bg-coral text-error-content font-medium text-[#D8482F]">
           Awaiting class only
         </span>
       ) : null}
