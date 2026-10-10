@@ -21,10 +21,10 @@ export function UpdateNotice() {
   }, []);
   if (!ready) return null;
   return (
-    <div role="status" className="page-enter fixed inset-x-3 bottom-3 z-[60] mx-auto flex max-w-md items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3 pl-4 shadow-lg sm:inset-x-auto sm:right-4">
+    <div role="status" className="page-enter fixed inset-x-3 bottom-3 z-[60] mx-auto flex max-w-md items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3 pl-4  sm:inset-x-auto sm:right-4">
       <p className="flex-1 text-sm">A new version of the app is ready.</p>
       <button type="button" className="btn btn-ghost btn-sm rounded-full" onClick={() => setReady(false)}>Later</button>
-      <button type="button" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90" onClick={() => window.location.reload()}>Reload</button>
+      <button type="button" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content" onClick={() => window.location.reload()}>Reload</button>
     </div>
   );
 }
