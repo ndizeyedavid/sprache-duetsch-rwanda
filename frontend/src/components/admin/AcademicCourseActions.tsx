@@ -60,7 +60,7 @@ export function AcademicCourseActions({ levels, onChanged }: Props) {
         )}
       </div>
       {success && (
-        <p role="status" className="text-xs text-base-content/65">
+        <p role="status" className="text-xs text-muted">
           {success}
         </p>
       )}
