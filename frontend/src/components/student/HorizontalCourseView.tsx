@@ -134,8 +134,8 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
         </div>
         <Panel className="relative overflow-hidden">
           {isSwitching ? (
-            <div className="pointer-events-none absolute inset-0 z-10 flex items-start justify-center bg-base-100/70 pt-12 backdrop-blur-[1px]">
-              <span className="inline-flex items-center gap-2 rounded-full border border-line bg-base-100 px-4 py-2 text-xs font-medium shadow">
+            <div className="pointer-events-none absolute inset-0 z-10 flex items-start justify-center bg-base-100 pt-12 -[1px]">
+              <span className="inline-flex items-center gap-2 rounded-full border border-line bg-base-100 px-4 py-2 text-xs font-medium ">
                 <span
                   className="loading loading-spinner loading-xs text-brand"
                   aria-hidden
@@ -174,7 +174,7 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
                 type="button"
                 onClick={() => setActiveId(next.id)}
                 data-tip={next.title}
-                className="tooltip tooltip-left btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90"
+                className="tooltip tooltip-left btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content"
               >
                 Next
                 <FiChevronRight aria-hidden />
