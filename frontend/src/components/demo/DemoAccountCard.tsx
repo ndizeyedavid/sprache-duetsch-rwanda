@@ -16,7 +16,7 @@ export function DemoAccountCard({ account, busy, disabled, onSignIn }: Props) {
         <CopyValue label="Password" value={account.password} mono />
       </div>
       <button type="button" disabled={disabled} onClick={() => onSignIn(account)}
-        className="btn mt-5 h-11 w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+        className="btn mt-5 h-11 w-full rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
         {busy ? <span className="loading loading-spinner loading-sm" aria-hidden /> : null}
         Sign in as {roleLabel[account.role]}<FiArrowRight aria-hidden />
       </button>
