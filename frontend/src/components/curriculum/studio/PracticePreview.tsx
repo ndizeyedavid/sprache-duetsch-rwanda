@@ -4,9 +4,9 @@ import { activityConfig,practiceKinds } from './practice-draft';
 export function PracticePreview({ activity }: { activity: LessonActivity }) {
   const config=activityConfig(activity),kind=practiceKinds.find(item=>item.type===activity.type);
   const question=String(config.question??config.statement??config.prompt??config.sentence??'');
-  return <article className="rounded-box bg-base-200/60 p-5">
-    <p className="text-xs text-base-content/50">{kind?.label??'Practice activity'}</p><h3 className="mt-1 text-base font-semibold">{activity.title}</h3>
-    {activity.instructions?<p className="mt-2 text-sm text-base-content/60">{activity.instructions}</p>:null}
+  return <article className="rounded-box bg-base-200 p-5">
+    <p className="text-xs text-muted">{kind?.label??'Practice activity'}</p><h3 className="mt-1 text-base font-semibold">{activity.title}</h3>
+    {activity.instructions?<p className="mt-2 text-sm text-muted">{activity.instructions}</p>:null}
     {question?<p className="mt-4 text-sm">{question}</p>:null}
     {activity.type==='MCQ'&&Array.isArray(config.options)?<div className="mt-4 space-y-2">{config.options.map((option,index)=><label key={index} className="flex items-center gap-3 rounded-field bg-base-100 p-3 text-sm"><input type="radio" name={`preview-${activity.id}`} className="radio radio-sm"/>{String(option)}</label>)}</div>:null}
     {activity.type==='TRUE_FALSE'?<div className="mt-4 flex gap-5">{['True','False'].map(value=><label key={value} className="flex items-center gap-2 text-sm"><input type="radio" className="radio radio-sm" name={`preview-${activity.id}`}/>{value}</label>)}</div>:null}
