@@ -11,10 +11,6 @@ export function AuthLayout() {
       <div className="relative z-10 bg-base-100">
         <LiquidEdge />
         <AuthSeal />
-        <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-          <span className="auth-blob absolute -bottom-40 -right-32 size-[28rem] rounded-full bg-secondary/15 blur-3xl" />
-          <span className="auth-blob absolute -top-32 right-1/4 size-80 rounded-full bg-brand/5 blur-3xl" style={{ animationDelay: '-10s' }} />
-        </div>
         <main className="relative flex items-center justify-center px-6 pb-12 pt-14 sm:px-10 lg:h-full lg:overflow-y-auto lg:py-16 lg:pl-24 lg:pr-14">
           <div className="w-full max-w-md">
             <Outlet />
