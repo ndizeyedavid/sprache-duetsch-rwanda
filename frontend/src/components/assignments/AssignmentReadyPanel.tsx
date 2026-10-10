@@ -14,12 +14,12 @@ export function AssignmentReadyPanel({ onStart, loading, error, exhausted, quest
   return (
     <aside className="card learning-panel gap-4 p-5 sm:p-6">
       <h3 className="text-sm font-semibold">{exhausted ? 'Attempts complete' : 'Ready to begin?'}</h3>
-      <dl className={`grid gap-2 ${activity ? '' : 'grid-cols-2'}`}>{facts.map((fact) => <div key={fact.label} className="rounded-field bg-base-200/65 p-3"><dt className="flex items-center gap-1.5 text-[10px] text-base-content/60"><fact.icon aria-hidden />{fact.label}</dt><dd className="mt-2 text-sm font-semibold">{fact.value}</dd></div>)}</dl>
-      {due ? <p className="flex items-center gap-2 text-[11px] text-base-content/65"><FiCalendar aria-hidden />Due {new Date(due).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</p> : null}
-      {protectedMode ? <AssignmentRules /> : <p className="rounded-field bg-success/5 p-3 text-xs leading-6 text-base-content/65">{activity ? "Prepare your response, then submit when ready." : "Answers save as you work. If timed, the timer continues when you leave or resume."}</p>}
-      {error ? <p role="alert" className="rounded-field bg-error/10 p-3 text-xs text-error">{error}</p> : null}
+      <dl className={`grid gap-2 ${activity ? '' : 'grid-cols-2'}`}>{facts.map((fact) => <div key={fact.label} className="rounded-field bg-base-200 p-3"><dt className="flex items-center gap-1.5 text-[10px] text-muted"><fact.icon aria-hidden />{fact.label}</dt><dd className="mt-2 text-sm font-semibold">{fact.value}</dd></div>)}</dl>
+      {due ? <p className="flex items-center gap-2 text-[11px] text-muted"><FiCalendar aria-hidden />Due {new Date(due).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</p> : null}
+      {protectedMode ? <AssignmentRules /> : <p className="rounded-field bg-success text-success-content p-3 text-xs leading-6 text-muted">{activity ? "Prepare your response, then submit when ready." : "Answers save as you work. If timed, the timer continues when you leave or resume."}</p>}
+      {error ? <p role="alert" className="rounded-field bg-error text-error-content p-3 text-xs text-error">{error}</p> : null}
       <button type="button" disabled={loading || exhausted} onClick={onStart} className="btn btn-primary w-full gap-2 rounded-full">{loading ? <span className="loading loading-spinner loading-xs" /> : null}{exhausted ? 'No attempts left' : activity ? 'Start assignment' : 'Start assessment'}<FiArrowRight aria-hidden /></button>
-      {exhausted ? <Link to="/grades" className="btn btn-ghost btn-sm rounded-full">View grades</Link> : <p className="text-center text-[10px] text-base-content/55">{protectedMode ? 'Starting opens fullscreen.' : 'Read carefully. You can review answers before submitting.'}</p>}
+      {exhausted ? <Link to="/grades" className="btn btn-ghost btn-sm rounded-full">View grades</Link> : <p className="text-center text-[10px] text-muted">{protectedMode ? 'Starting opens fullscreen.' : 'Read carefully. You can review answers before submitting.'}</p>}
     </aside>
   );
 }
