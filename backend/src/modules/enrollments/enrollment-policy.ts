@@ -28,3 +28,18 @@ export async function reconcileStudent(tx: Prisma.TransactionClient, studentId: 
   } });
   else await tx.student.update({ where: { id: studentId }, data: { currentLevelId: null } });
 }
+
+/**
+ * One live enrolment per level. A second ACTIVE enrolment in the same level splits the student
+ * across two intakes/classes and hides one of them from their schedule. Repeating a level is
+ * still allowed once the earlier enrolment is completed, withdrawn or deferred.
+ */
+export async function assertSingleActiveLevel(tx: Prisma.TransactionClient, input: {
+  studentId: string; levelId: string; enrollmentId?: string;
+}) {
+  const other = await tx.enrollment.findFirst({
+    where: { studentId: input.studentId, levelId: input.levelId, status: "ACTIVE", ...(input.enrollmentId ? { id: { not: input.enrollmentId } } : {}) },
+    select: { level: { select: { code: true } }, intake: { select: { name: true } } },
+  });
+  if (other) throw conflict(`Already actively enrolled in ${other.level.code} (${other.intake.name}). Complete, withdraw or defer that enrolment first, or assign its class instead.`);
+}
