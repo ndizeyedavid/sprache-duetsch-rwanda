@@ -11,8 +11,8 @@ export const STATUS_META: Record<AttendanceStatus, { label: string; icon: typeof
 };
 
 export const STATUS_CHIP_CLASS: Record<string, string> = {
-  PRESENT: 'bg-brand-soft text-[#B30A00] border-brand/20',
-  ABSENT: 'bg-coral-soft text-[#D8482F] border-coral/20',
-  LATE: 'bg-sun-soft text-[#8A6800] border-sun/30',
-  EXCUSED: 'bg-night/5 text-night border-night/20',
+  PRESENT: 'bg-brand text-primary-content text-[#B30A00] border-brand',
+  ABSENT: 'bg-coral text-error-content text-[#D8482F] border-coral',
+  LATE: 'bg-sun text-warning-content text-[#8A6800] border-sun',
+  EXCUSED: 'bg-night/5 text-night border-night',
 };
