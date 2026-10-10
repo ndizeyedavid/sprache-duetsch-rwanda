@@ -43,7 +43,7 @@ return (<div className="divide-y divide-line">
   }}
   className={`bg-base-100 transition ${isLessonDragging ? 'opacity-50' : ''} ${isLessonDragOver ? 'ring-1 ring-inset ring-brand' : ''} ${isLessonReordering ? 'pointer-events-none opacity-60' : ''}`}
   >
-  <div className="flex w-full items-center gap-2 border-l-4 pl-1 pr-2 py-0 text-left transition-colors hover:bg-base-200/60 data-[expanded=true]:bg-brand-tint data-[expanded=true]:border-brand" data-expanded={isExpanded}>
+  <div className="flex w-full items-center gap-2 border-l-4 pl-1 pr-2 py-0 text-left transition-colors hover:bg-base-200 data-[expanded=true]:bg-brand text-primary-content data-[expanded=true]:border-brand" data-expanded={isExpanded}>
   {/* Lesson drag handle — independent from module drag */}
   <span
   draggable={!isLessonReordering}
@@ -82,7 +82,7 @@ return (<div className="divide-y divide-line">
   </div>
 
  {isExpanded ? (
- <div className="border-t border-line bg-base-200/30 px-4 py-4">
+ <div className="border-t border-line bg-base-200 px-4 py-4">
  {lessonLoadingIds.has(item.id) ? (
  <LoadingBlock label="Loading lesson…" />
  ) : lessonErrors[item.id] || !lessonCache[item.id] ? (
@@ -120,7 +120,7 @@ return (<div className="divide-y divide-line">
  })
  )}
 
- <div className="bg-base-200/30 px-4 py-3">
+ <div className="bg-base-200 px-4 py-3">
  <p className="mb-2 text-xs font-semibold">Add a lesson to this module</p>
  <form
  onSubmit={(e) => {
@@ -169,7 +169,7 @@ return (<div className="divide-y divide-line">
  ))}
  </select>
  </label>
-  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
   {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add lesson
   </button>
   </form>
