@@ -20,7 +20,7 @@ export function LevelCompletionFields({ value, onChange, onBusyChange }: { value
     <label className="block text-xs">Minimum attendance (%) — 0 disables this rule<input type="number" min="0" max="100" value={value.minimumAttendance} onChange={event => onChange({ ...value, minimumAttendance: event.target.value })} className="input input-sm mt-1 w-full" /></label>
     <label className="flex items-center gap-2 text-xs"><input type="checkbox" className="checkbox checkbox-sm" checked={value.requireHomework} onChange={event => onChange({ ...value, requireHomework: event.target.checked })} />Require all assigned homework to pass</label>
     <label className="block text-xs">Homework pass mark (%)<input type="number" min="0" max="100" value={value.homeworkPassMark} onChange={event => onChange({ ...value, homeworkPassMark: event.target.value })} className="input input-sm mt-1 w-full" /></label>
-    <p className="text-xs text-base-content/60">Certificates always require all published lessons and every published final exam. Payment clearance is separate.</p>
+    <p className="text-xs text-muted">Certificates always require all published lessons and every published final exam. Payment clearance is separate.</p>
     {busy ? <p role="status" className="text-xs">Uploading coursebook…</p> : null}{error ? <p role="alert" className="text-xs text-error">{error}</p> : null}
   </fieldset>;
 }
