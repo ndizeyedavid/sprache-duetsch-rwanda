@@ -30,11 +30,12 @@ function ModuleRow({ module }: { module: Module }) {
 }
 
 /** One level rendered as a spine: a rail of modules where completed nodes fill in,
- *  so distance travelled is legible without reading a single number. */
-export function ProgressSpine({ level }: { level: MyProgressLevel }) {
+ *  so distance travelled is legible without reading a single number.
+ *  Staff views pass `showResume={false}`: the "Up next" link opens the student's own course player. */
+export function ProgressSpine({ level, showResume = true }: { level: MyProgressLevel; showResume?: boolean }) {
   const percent = clampPercent(level.completionPercentage);
   const tally = levelTally(level);
-  const resume = resumeTarget(level);
+  const resume = showResume ? resumeTarget(level) : null;
   const modules = [...level.modules].sort((a, b) => a.order - b.order);
 
   return (
