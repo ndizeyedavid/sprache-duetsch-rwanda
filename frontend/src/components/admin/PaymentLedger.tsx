@@ -63,7 +63,7 @@ export function PaymentLedger({ payments, onChanged }: { payments: ApiState<Paym
  type="button"
  disabled={exporting}
  onClick={handleReminders}
- className="btn btn-sm gap-2 rounded-full border-0 bg-sun text-ink hover:bg-sun/90 disabled:opacity-60"
+ className="btn btn-sm gap-2 rounded-full border-0 bg-sun text-ink hover:bg-sun hover:text-warning-content disabled:opacity-60"
  >
  Run overdue reminders
  </button>
