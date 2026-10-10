@@ -18,34 +18,34 @@ export function ClassGroupGrid({
       {rows.map((group) => (
         <article
           key={group.id}
-          className="card overflow-hidden border border-base-300/70 bg-base-100"
+          className="card overflow-hidden border border-base-300 bg-base-100"
         >
-          <div className="flex items-center justify-between border-b border-base-300/50 bg-base-200/60 px-4 py-3">
+          <div className="flex items-center justify-between border-b border-base-300 bg-base-200 px-4 py-3">
             <span className="badge badge-ghost text-xs font-semibold">
               {group.level.code}
             </span>
             <StatusBadge status={group.isActive ? "Active" : "Inactive"} />
           </div>
           <div className="p-4">
-            <p className="text-[10px] uppercase tracking-wider text-base-content/50">
+            <p className="text-[10px] uppercase tracking-wider text-muted">
               {group.code}
             </p>
             <h3 className="mt-1 text-base font-semibold">{group.name}</h3>
-            <p className="mt-2 text-xs leading-5 text-base-content/65">
+            <p className="mt-2 text-xs leading-5 text-muted">
               {group.intake.name} · {humanize(group.shift)}
             </p>
-            <p className="mt-3 flex items-center gap-2 text-xs text-base-content/60">
+            <p className="mt-3 flex items-center gap-2 text-xs text-muted">
               <FiMapPin aria-hidden />
               {group.campus.name}
             </p>
-            <div className="mt-4 flex items-center justify-between gap-2 border-t border-base-300/60 pt-3 text-xs">
+            <div className="mt-4 flex items-center justify-between gap-2 border-t border-base-300 pt-3 text-xs">
               <span className="flex items-center gap-1.5">
                 <FiUsers aria-hidden />
                 {group._count.enrollments} enrolments
               </span>
               <span
                 className={
-                  group.teacherId ? "text-base-content/65" : "text-error"
+                  group.teacherId ? "text-muted" : "text-error"
                 }
               >
                 {group.teacherId
