@@ -49,7 +49,7 @@ export function LiveSessionPicker({ sessions, selectedId, onPick, disabled }: Pr
  const active = selectedId === item.id;
  return (
  <li key={item.id}>
- <button type="button" disabled={disabled} onClick={() => onPick(item.id)} className={`flex w-full gap-3 rounded-box border p-3 text-left transition ${active ? 'border-brand bg-brand-soft' : 'border-line bg-base-100 hover:border-brand/20'}`}>
+ <button type="button" disabled={disabled} onClick={() => onPick(item.id)} className={`flex w-full gap-3 rounded-box border p-3 text-left transition ${active ? 'border-brand bg-brand text-primary-content' : 'border-line bg-base-100 hover:border-brand'}`}>
  <span className="w-1 shrink-0 self-stretch rounded-full" style={{ background: tc.hex }} aria-hidden />
  <span className="min-w-0 grow">
  <span className="block truncate text-xs font-semibold leading-tight">{item.title}</span>
