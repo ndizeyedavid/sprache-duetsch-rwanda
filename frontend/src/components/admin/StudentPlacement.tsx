@@ -67,7 +67,7 @@ export function StudentPlacement({ students, levels, onSaved }: { students: Stud
  <input value={placeNote} onChange={(event) => setPlaceNote(event.currentTarget.value)} placeholder="Optional note" className="input input w-full rounded-field border-line bg-base-200" />
  </label>
  <div className="flex items-end">
- <button type="submit" disabled={placing} className="btn btn-sm w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={placing} className="btn btn-sm w-full rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {placing ? 'Saving…' : 'Save placement'}
  </button>
  </div>
