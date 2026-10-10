@@ -1,0 +1,26 @@
+/* Saturated surfaces keep readable foregrounds, including nested muted labels.
+   Scrims over photos, videos and dialogs intentionally retain transparency. */
+@layer utilities {
+  :is(.bg-brand, .bg-primary) { --surface-content: var(--color-primary-content); }
+  :is(.bg-coral, .bg-error) { --surface-content: var(--color-error-content); }
+  :is(.bg-sun, .bg-warning) { --surface-content: var(--color-warning-content); }
+  .bg-success { --surface-content: var(--color-success-content); }
+  .bg-info { --surface-content: var(--color-info-content); }
+  .bg-secondary { --surface-content: var(--color-secondary-content); }
+  .bg-accent { --surface-content: var(--color-accent-content); }
+  .bg-neutral { --surface-content: var(--color-neutral-content); }
+}
+:is(.bg-brand, .bg-primary, .bg-coral, .bg-error, .bg-sun, .bg-warning,
+    .bg-success, .bg-info, .bg-secondary, .bg-accent, .bg-neutral) {
+  color: var(--surface-content);
+}
+:is(.bg-brand, .bg-primary, .bg-coral, .bg-error, .bg-sun, .bg-warning,
+    .bg-success, .bg-info, .bg-secondary, .bg-accent, .bg-neutral)
+  :where([class*="text-brand"], [class*="text-primary"], [class*="text-coral"],
+    [class*="text-error"], [class*="text-sun"], [class*="text-warning"],
+    [class*="text-success"], [class*="text-info"], [class*="text-base-content"],
+    [class*="text-muted"], [class*="text-ink"], [class*="text-[#"]) {
+  color: var(--surface-content);
+}
+
+:is(.bg-base-100, .bg-base-200, .bg-base-300) { --surface-content: var(--color-base-content); }
