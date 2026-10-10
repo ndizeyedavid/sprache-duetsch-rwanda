@@ -42,7 +42,7 @@ return (<div className="space-y-6">
 
  <div className="p-3">
  {data.materials.length === 0 ? (
- <div className="rounded-box border border-dashed border-line bg-base-200/30 px-4 py-6 text-center">
+ <div className="rounded-box border border-dashed border-line bg-base-200 px-4 py-6 text-center">
  <FiFileText aria-hidden className="mx-auto text-xl text-muted" />
  <p className="mt-2 text-xs font-medium">No resources yet</p>
  <p className="mx-auto mt-1 max-w-sm text-[11px] leading-snug text-muted">
@@ -65,7 +65,7 @@ return (<div className="space-y-6">
 
  {/* ── Activities — Canvas Assignments / Practice ───────────── */}
  <div className="rounded-box border border-line bg-base-100">
- <div className="border-b border-line bg-base-200/50 px-3 py-2">
+ <div className="border-b border-line bg-base-200 px-3 py-2">
  <div className="flex items-center justify-between gap-2">
  <h4 className="flex items-center gap-2 text-xs font-semibold">
  <FiLayers aria-hidden className="text-brand" />
@@ -81,7 +81,7 @@ return (<div className="space-y-6">
 
  <div className="p-3">
  {data.activities.length === 0 ? (
- <div className="rounded-box border border-dashed border-line bg-base-200/30 px-4 py-6 text-center">
+ <div className="rounded-box border border-dashed border-line bg-base-200 px-4 py-6 text-center">
  <FiLayers aria-hidden className="mx-auto text-xl text-muted" />
  <p className="mt-2 text-xs font-medium">No activities yet</p>
  <p className="mx-auto mt-1 max-w-sm text-[11px] leading-snug text-muted">
