@@ -17,11 +17,11 @@ export function ProfileIdentity({ profile }: Props) {
 
   return (
     <section className="card overflow-hidden border border-line bg-base-100">
-      <div className="bg-night p-5 text-white sm:p-7">
+      <div className="bg-brand p-5 text-white sm:p-7">
         <div className="flex items-start gap-4 sm:gap-5">
           <div className="shrink-0">
             <div className={`avatar ${user.avatarUrl ? '' : 'avatar-placeholder'}`}>
-              <div className="size-20 rounded-t-box bg-white text-night sm:size-24">
+              <div className="size-20 rounded-t-box bg-white text-brand sm:size-24">
                 {user.avatarUrl ? (
                   <img src={profilePhotoUrl(user.avatarUrl)} alt={`${name} profile photo`} width={96} height={96} className="size-full object-cover" />
                 ) : (
@@ -29,7 +29,7 @@ export function ProfileIdentity({ profile }: Props) {
                 )}
               </div>
             </div>
-            <div className="mt-px rounded-b-box bg-brand px-2 py-1 text-center text-xs font-bold text-white">
+            <div className="rounded-b-box border-t border-line bg-white px-2 py-1 text-center text-xs font-bold text-brand">
               {currentLevel?.code ?? '—'}
             </div>
           </div>
@@ -38,7 +38,7 @@ export function ProfileIdentity({ profile }: Props) {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-base-200">Student record</p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">{name}</h2>
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-night">
+              <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-brand">
                 {humanize(user.status)}
               </span>
               {currentLevel ? (
