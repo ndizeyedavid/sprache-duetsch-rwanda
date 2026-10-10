@@ -46,10 +46,10 @@ return (<div className="grid gap-4 lg:grid-cols-12">
                 );
               })()}
               <div className="mt-2 flex flex-wrap gap-2 text-[11px]">
-                <span className="rounded-full bg-brand-soft px-2 py-1 text-[#B30A00]">
+                <span className="rounded-full bg-brand text-primary-content px-2 py-1 text-[#B30A00]">
                   Graded {graded}
                 </span>
-                <span className="rounded-full bg-coral-soft px-2 py-1 text-[#D8482F]">
+                <span className="rounded-full bg-coral text-error-content px-2 py-1 text-[#D8482F]">
                   Pending {pending}
                 </span>
               </div>
