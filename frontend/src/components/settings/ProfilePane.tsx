@@ -92,7 +92,7 @@ export function ProfilePane() {
  {error ? (
  <p
  role="alert"
- className="flex gap-2 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]"
+ className="flex gap-2 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]"
  >
  <FiAlertCircle aria-hidden className="mt-0.5 shrink-0" />
  {error}
@@ -101,7 +101,7 @@ export function ProfilePane() {
  {ok ? (
  <p
  role="status"
- className="flex gap-2 rounded-box bg-brand-soft px-3 py-2 text-xs font-medium text-[#B30A00]"
+ className="flex gap-2 rounded-box bg-brand text-primary-content px-3 py-2 text-xs font-medium text-[#B30A00]"
  >
  <FiCheck aria-hidden />
  Profile saved.
@@ -112,7 +112,7 @@ export function ProfilePane() {
  <button
  type="submit"
  disabled={saving}
- className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+ className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60"
  >
  {saving ? (
  <span className="loading loading-spinner loading-xs" />
