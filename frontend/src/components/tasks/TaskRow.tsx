@@ -11,7 +11,7 @@ type Props = {
   homeworkActions: ReturnType<typeof useAssignmentActions>; assessmentActions: ReturnType<typeof useAssessmentActions>;
 };
 
-const tone = { HOMEWORK: 'bg-brand/10 text-brand', QUIZ: 'bg-secondary/20 text-secondary-content', TEST: 'bg-night/10 text-night' } as const;
+const tone = { HOMEWORK: 'bg-brand text-primary-content', QUIZ: 'bg-secondary text-secondary-content text-secondary-content', TEST: 'bg-night/10 text-night' } as const;
 const statusLabel = { DRAFT: ['Draft', 'badge-ghost'], PUBLISHED: ['Published', 'badge-success'], ARCHIVED: ['Archived', 'badge-ghost'] } as const;
 
 export function TaskRow({ item, onOpen, onEdit, onResults, homeworkActions, assessmentActions }: Props) {
@@ -41,7 +41,7 @@ export function TaskRow({ item, onOpen, onEdit, onResults, homeworkActions, asse
       </button>
       <span className="hidden w-32 shrink-0 text-xs text-muted md:block">{item.whenLabel}</span>
       <span className={`badge badge-sm badge-soft shrink-0 ${statusLabel[item.status][1]}`}>{statusLabel[item.status][0]}</span>
-      {item.toReview ? <button type="button" className="btn btn-xs shrink-0 rounded-full border-0 bg-brand text-white hover:bg-brand/90" onClick={() => onOpen(item)}>Review {item.toReview}</button> : null}
+      {item.toReview ? <button type="button" className="btn btn-xs shrink-0 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content" onClick={() => onOpen(item)}>Review {item.toReview}</button> : null}
       {busy ? <span className="loading loading-spinner loading-xs" aria-label="Saving" /> : null}
       <RowMenu label={`Actions for ${item.title}`} items={menu} />
     </li>
