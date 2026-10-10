@@ -30,7 +30,7 @@ export function UpNextCard({ session, sessions }: Props) {
       <p className="mt-2 text-sm font-semibold leading-snug">{session.title}</p>
       <p className="mt-1 flex items-center gap-1.5 text-xs text-muted"><FiClock aria-hidden />{isoDate(session.startAt)} · {isoTime(session.startAt)} – {isoTime(session.endAt)}</p>
       <div className="mt-3 flex flex-wrap gap-2">
-        {session.meetingUrl ? <a href={session.meetingUrl} target="_blank" rel="noreferrer" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90">Join live</a> : <span className="rounded-full bg-base-200 px-3 py-1 text-xs text-muted">No link yet</span>}
+        {session.meetingUrl ? <a href={session.meetingUrl} target="_blank" rel="noreferrer" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">Join live</a> : <span className="rounded-full bg-base-200 px-3 py-1 text-xs text-muted">No link yet</span>}
         <Link to="/schedule" className="btn btn-sm rounded-full border-line bg-base-100">View schedule</Link>
       </div>
       {more.length ? (
