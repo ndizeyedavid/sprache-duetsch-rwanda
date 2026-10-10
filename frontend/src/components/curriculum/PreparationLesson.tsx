@@ -65,12 +65,12 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
   const tabs = [{ name: 'Content', Icon: FiBookOpen }, { name: 'Resources', Icon: FiPaperclip, count: data.materials.length }, { name: 'Practice', Icon: FiZap, count: data.activities.length }];
   return <section className="card studio-lesson bg-base-100">
     <div className="px-5 pt-6 sm:px-7">
-      <div className="flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-base-content/50">{props.moduleTitle}</p>
+      <div className="flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-muted">{props.moduleTitle}</p>
         <div className="flex items-center gap-2"><span className={`badge badge-sm ${publishedToStudents ? 'badge-success badge-soft' : 'badge-ghost'}`}>{publishedToStudents ? 'Published' : draft.isPublished ? 'Module draft' : 'Draft'}</span><button className="btn btn-sm btn-circle btn-ghost" aria-label="Lesson settings" onClick={() => setSettings(true)} disabled={busy}><FiMoreHorizontal size={20} aria-hidden/></button></div></div>
       <h2 className="mt-3 text-xl font-semibold leading-8 sm:text-2xl">{draft.title || 'Untitled lesson'}</h2>
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-base-content/60">{formatNames[draft.contentType]}{draft.estimatedMinutes ? ` · ${draft.estimatedMinutes} min` : ''}</p>
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-muted">{formatNames[draft.contentType]}{draft.estimatedMinutes ? ` · ${draft.estimatedMinutes} min` : ''}</p>
         <button className="btn btn-sm btn-ghost" onClick={() => setPreview(true)}><FiEye aria-hidden/>Student preview</button></div>
-      <div role="tablist" aria-label="Lesson editor" className="tabs tabs-box mt-5 grid grid-cols-3 bg-base-200/70 p-1.5">
+      <div role="tablist" aria-label="Lesson editor" className="tabs tabs-box mt-5 grid grid-cols-3 bg-base-200 p-1.5">
         {tabs.map(({ name, Icon, count }) => <button key={name} type="button" role="tab" aria-selected={tab === name} aria-controls={`studio-${name}`} id={`studio-tab-${name}`} className={`tab gap-2 rounded-field text-xs sm:text-sm ${tab === name ? 'tab-active bg-base-100 font-semibold' : ''}`} onClick={() => setTab(name)}><Icon aria-hidden/><span>{name}</span>{count ? <span className="hidden text-xs opacity-50 sm:inline">{count}</span> : null}</button>)}
       </div>
     </div>
@@ -80,11 +80,11 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
       <div role="tabpanel" id="studio-Practice" aria-labelledby="studio-tab-Practice" hidden={tab !== 'Practice'}><PreparationPractice lesson={data} onSaved={refresh}/></div>
     </fieldset>
     <footer className="sticky bottom-3 z-10 mx-4 mb-4 flex flex-wrap items-center justify-between gap-3 rounded-box bg-base-200 px-4 py-3 sm:mx-6">
-      <div className="text-xs text-base-content/60" role="status">{error ? <span className="text-error" role="alert">{error}</span> : busy ? 'Saving…' : dirty ? 'Unsaved changes' : <span className="flex items-center gap-1.5"><FiCheck aria-hidden/>{saved ? 'Changes saved' : 'All changes saved'}</span>}</div>
+      <div className="text-xs text-muted" role="status">{error ? <span className="text-error" role="alert">{error}</span> : busy ? 'Saving…' : dirty ? 'Unsaved changes' : <span className="flex items-center gap-1.5"><FiCheck aria-hidden/>{saved ? 'Changes saved' : 'All changes saved'}</span>}</div>
       <div className="flex gap-2"><button className="btn btn-sm border-0 bg-base-100" disabled={busy || !dirty} onClick={() => void save()}><FiSave aria-hidden/>Save{draft.isPublished ? '' : ' draft'}</button>
         {!draft.isPublished ? <button className="btn btn-sm btn-primary" disabled={busy || draft.title.trim().length < 2} onClick={() => void save(true)}><FiSend aria-hidden/>Publish lesson</button> : null}
         {!props.modulePublished && draft.isPublished ? <button className="btn btn-sm btn-primary" disabled={busy} onClick={() => void publishModule()}><FiSend aria-hidden/>Publish module</button> : null}</div>
-      {!props.modulePublished ? <p className="w-full text-xs text-base-content/60">This module is a draft. Publishing it makes its published lessons available to enrolled students.</p> : null}
+      {!props.modulePublished ? <p className="w-full text-xs text-muted">This module is a draft. Publishing it makes its published lessons available to enrolled students.</p> : null}
     </footer>
     {settings ? <LessonSettings draft={draft} change={change} busy={busy} onClose={() => setSettings(false)} onDelete={() => void remove()} onUnpublish={() => void save(false)}/> : null}
     {preview ? <StudioDialog title="Student preview" wide onClose={() => setPreview(false)}><PreparationPreview draft={draft} lesson={data}><CourseLessonReader key={draft.body} html={draft.body}/></PreparationPreview></StudioDialog> : null}
