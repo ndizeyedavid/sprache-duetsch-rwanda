@@ -45,6 +45,14 @@ sessionsRouter.get(
   validate({ params: sessionIdSchema }),
   asyncHandler(controller.mySession),
 );
+// Opening the class link checks the student in (PRESENT/LATE) during the join window.
+sessionsRouter.post(
+  "/me/:id/join",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: sessionIdSchema }),
+  asyncHandler(controller.joinMySession),
+);
 
 // Staff views.
 sessionsRouter.get(
