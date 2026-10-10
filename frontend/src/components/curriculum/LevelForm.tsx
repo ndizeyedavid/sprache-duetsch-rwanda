@@ -94,7 +94,7 @@ export function LevelForm({ initial, submitLabel, onSubmit, onDone, onCancel }: 
         <label className="block">
           <span className="mb-1.5 block text-xs font-medium">Course price ({initial?.currency ?? 'RWF'})</span>
           <input {...field('defaultFee')} type="number" min="0" step={initial?.currency === 'RWF' || !initial ? '1' : '0.01'} inputMode="numeric" placeholder="e.g. 45000" className={INPUT} />
-          <span className="mt-1 block text-xs text-base-content/60">Used for new enrollments. Existing students keep their enrolled price.</span>
+          <span className="mt-1 block text-xs text-muted">Used for new enrollments. Existing students keep their enrolled price.</span>
         </label>
         <label className="block">
           <span className="mb-1.5 block text-xs font-medium">Position in list</span>
@@ -112,7 +112,7 @@ export function LevelForm({ initial, submitLabel, onSubmit, onDone, onCancel }: 
         <button
           type="submit"
           disabled={busy || uploading}
-          className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+          className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60"
         >
           {busy ? <span className="loading loading-spinner loading-xs" /> : null} {submitLabel}
         </button>
