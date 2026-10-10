@@ -1,0 +1,11 @@
+/* Flat surfaces across all themes; focus outlines remain visible. */
+*,
+::before,
+::after {
+  box-shadow: none;
+}
+
+:root,
+[data-theme] {
+  --depth: 0;
+}
