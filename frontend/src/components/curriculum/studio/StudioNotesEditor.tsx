@@ -18,6 +18,6 @@ export function StudioNotesEditor({value,onChange}:{value:string;onChange:(value
     onUpdate:({editor:current})=>onChange(current.getHTML()),
   });
   useEffect(()=>{if(editor&&editor.getHTML()!==value)editor.commands.setContent(value,{emitUpdate:false});},[editor,value]);
-  if(!editor)return <p className="p-5 text-sm text-base-content/50">Opening editor…</p>;
+  if(!editor)return <p className="p-5 text-sm text-muted">Opening editor…</p>;
   return <div className="rounded-box bg-base-100"><NotesToolbar editor={editor}/><EditorContent editor={editor} className="course-content prose max-w-none overflow-x-auto p-4 text-sm leading-7 prose-headings:font-semibold prose-img:rounded-box"/></div>;
 }
