@@ -8,7 +8,7 @@ type Props = { isCorrect: boolean | null; status?: string; attemptNumber: number
 export function ActivityOutcome({ isCorrect, status, attemptNumber, score, feedback, type, cfg, slug, lessonId, nextLesson, handleRedo }: Props) {
   return (
             <div className="space-y-4 text-center">
-              <div className={`mx-auto flex size-14 items-center justify-center rounded-full ${isCorrect ? 'bg-brand-soft text-brand' : isCorrect === false ? 'bg-coral-soft text-coral' : 'bg-sun-soft text-[#8A6800]'}`}>
+              <div className={`mx-auto flex size-14 items-center justify-center rounded-full ${isCorrect ? 'bg-brand text-primary-content' : isCorrect === false ? 'bg-coral text-error-content' : 'bg-sun text-warning-content text-[#8A6800]'}`}>
                 {isCorrect ? <FiCheck aria-hidden className="text-xl" /> : isCorrect === false ? <FiAlertCircle aria-hidden className="text-xl" /> : <FiClock aria-hidden className="text-xl" />}
               </div>
               <h2 className="text-lg font-bold">{isCorrect ? 'Well done!' : isCorrect === false ? 'Not quite' : status === 'SUBMITTED' ? 'Submitted — awaiting grading' : 'Submitted'}</h2>
@@ -24,7 +24,7 @@ export function ActivityOutcome({ isCorrect, status, attemptNumber, score, feedb
               {type === 'FILL_BLANK' && isCorrect === false && cfg.answer ? <p className="rounded-box bg-base-200 px-3 py-2 text-xs">Correct answer: <span className="font-semibold">{String(cfg.answer)}</span></p> : null}
               <div className="flex flex-wrap justify-center gap-2 pt-2">
                 <Link to={`/courses/${slug}/learn/${lessonId}`} className="btn gap-1 rounded-full border-line bg-base-100"><FiArrowLeft aria-hidden />Back to lesson</Link>
-                <button type="button" onClick={handleRedo} className="btn gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90"><FiRefreshCw aria-hidden />Redo</button>
+                <button type="button" onClick={handleRedo} className="btn gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content"><FiRefreshCw aria-hidden />Redo</button>
                 {nextLesson ? <Link to={`/courses/${slug}/learn/${nextLesson.id}`} className="btn gap-1 rounded-full border-line bg-base-100">Next lesson<FiArrowRight aria-hidden /></Link> : <Link to={`/courses/${slug}/learn`} className="btn gap-1 rounded-full border-line bg-base-100">Back to course<FiExternalLink aria-hidden /></Link>}
               </div>
               <p className="text-[11px] text-muted">Your progress is saved for your facilitator to review.</p>
