@@ -3,7 +3,7 @@ import type { AccountStatus,PaymentStatus } from "../generated/prisma/client.js"
 import { recalculateStudentFinance } from "./finance.js";
 import { forbidden,notFound } from "./http-error.js";
 import { prisma } from "./prisma.js";
-import { paidCourseEnrollments } from './course-payment-access.js';
+import { paidCourseEnrollments,paidEnrollments as paidClassEnrollments } from './course-payment-access.js';
 
 // Snapshot of what a student account is allowed to reach. Built once per request.
 export interface StudentAccessProfile {
@@ -40,15 +40,14 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
 
   const finance = await recalculateStudentFinance(prisma, student.id);
   const charges = await prisma.charge.findMany({ where: { studentId: student.id } });
-  const paidEnrollments = paidCourseEnrollments(student.enrollments, charges, finance.totalPaid.plus(finance.totalDiscount));
+  const credit = finance.totalPaid.plus(finance.totalDiscount);
+  const paidEnrollments = paidCourseEnrollments(student.enrollments, charges, credit);
 
   const levelIds = paidEnrollments.map(row => row.levelId);
-  const classGroupIds: string[] = [];
-  for (const enrollment of paidEnrollments) {
-    if (enrollment.classGroupId) {
-      classGroupIds.push(enrollment.classGroupId);
-    }
-  }
+  // Classes come from every paid enrolment, not just the newest per level, so a later
+  // class-less enrolment in the same level cannot empty the student's schedule.
+  const classGroupIds = [...new Set(paidClassEnrollments(student.enrollments, charges, credit)
+    .flatMap(row => row.classGroupId ? [row.classGroupId] : []))];
 
   return {
     studentId: student.id,
