@@ -34,7 +34,7 @@ export function AcademicOutcomes({ data }: { data: AcademicDashboard }) {
         {rates.map((rate) => (
           <div
             key={rate.label}
-            className="flex items-center gap-4 rounded-box bg-base-200/50 p-4 sm:flex-col sm:text-center"
+            className="flex items-center gap-4 rounded-box bg-base-200 p-4 sm:flex-col sm:text-center"
           >
             <div
               className={`radial-progress shrink-0 ${rate.color}`}
@@ -57,14 +57,14 @@ export function AcademicOutcomes({ data }: { data: AcademicDashboard }) {
             </div>
             <div>
               <h3 className="text-sm font-semibold">{rate.label}</h3>
-              <p className="mt-1 text-[11px] leading-5 text-base-content/55">
+              <p className="mt-1 text-[11px] leading-5 text-muted">
                 {rate.note}
               </p>
             </div>
           </div>
         ))}
       </div>
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-base-300/60 pt-4 text-xs text-base-content/60">
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-base-300 pt-4 text-xs text-muted">
         <span className="flex items-center gap-2">
           <FiAward aria-hidden />
           Average graded score{" "}
