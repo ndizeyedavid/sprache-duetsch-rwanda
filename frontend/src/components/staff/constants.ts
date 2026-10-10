@@ -88,9 +88,9 @@ export const STATUS_LABELS: Record<string, string> = {
  * white text, so the glyph always uses a darkened tone that passes WCAG AA.
  */
 export const STATUS_SURFACE: Record<string, string> = {
-  ACTIVE: 'bg-brand-soft text-[#B30A00]',
-  PENDING: 'bg-sun-soft text-[#8A6800]',
-  SUSPENDED: 'bg-coral-soft text-[#D8482F]',
+  ACTIVE: 'bg-brand text-primary-content text-[#B30A00]',
+  PENDING: 'bg-sun text-warning-content text-[#8A6800]',
+  SUSPENDED: 'bg-coral text-error-content text-[#D8482F]',
   COMPLETED: 'bg-base-200 text-ink',
   GRADUATED: 'bg-base-200 text-ink',
   WITHDRAWN: 'bg-base-200 text-ink',
