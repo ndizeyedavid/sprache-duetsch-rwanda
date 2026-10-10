@@ -1,6 +1,6 @@
-import { FiActivity, FiSearch, FiX } from "react-icons/fi";
-import { FILTERS, FILTER_ICON } from "./constants";
+import { FiActivity,FiSearch,FiX } from "react-icons/fi";
 import type { Filter } from "./constants";
+import { FILTERS,FILTER_ICON } from "./constants";
 
 type Props = {
   total: number;
@@ -40,11 +40,11 @@ export function ActivityHeader({ total, counts, filter, onFilter, q, onQ, fetchi
               onClick={() => onFilter(name)}
               aria-pressed={active}
               disabled={fetching}
-              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition disabled:opacity-60 ${active ? "border-brand bg-brand text-white" : "border-line bg-base-100 text-muted hover:border-brand/20 hover:text-ink"}`}
+              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition disabled:opacity-60 ${active ? "border-brand bg-brand text-white" : "border-line bg-base-100 text-muted hover:border-brand hover:text-ink"}`}
             >
               {active && fetching ? <span className="loading loading-spinner loading-xs" aria-hidden /> : <Icon aria-hidden className="text-xs" />}
               {name}
-              {c > 0 ? <span className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? "bg-white/20" : "bg-base-200"}`}>{c}</span> : null}
+              {c > 0 ? <span className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? "bg-white" : "bg-base-200"}`}>{c}</span> : null}
             </button>
           );
         })}

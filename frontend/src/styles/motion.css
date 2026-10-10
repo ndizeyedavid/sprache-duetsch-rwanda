@@ -1,0 +1,28 @@
+/* Book loader: a leaf turns from the right page onto the left, on a loop. */
+.book-loader .book-leaf {
+  transform-box: view-box;
+  transform-origin: 32px 24px;
+  fill: var(--color-base-100);
+  stroke: color-mix(in oklab, var(--color-base-content) 14%, transparent);
+  stroke-width: 0.6;
+  animation: book-flip 1.8s cubic-bezier(0.45, 0, 0.25, 1) infinite;
+}
+.book-loader .book-leaf-late { animation-delay: 0.45s; }
+@keyframes book-flip {
+  0%, 12% { transform: scaleX(1); fill: var(--color-base-100); }
+  40% { fill: var(--color-base-200); }
+  68%, 100% { transform: scaleX(-1); fill: var(--color-base-100); }
+}
+
+/* Loaders fade in after a beat so quick loads never flash. */
+.loader-in { animation: loader-in 0.3s ease 0.18s both; }
+@keyframes loader-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+/* Gentle entrance for each page. */
+.page-enter { animation: page-enter 0.24s ease-out both; }
+@keyframes page-enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .book-loader .book-leaf, .loader-in, .page-enter { animation: none; }
+  .book-loader .book-leaf-late { display: none; }
+}

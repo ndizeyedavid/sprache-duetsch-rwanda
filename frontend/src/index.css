@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "./styles/learning.css";
+@import "./styles/motion.css";
+@import "./styles/course-content.css";
+@import "./styles/academic.css";
 @plugin "@tailwindcss/typography";
 
 @plugin "daisyui" {
@@ -33,30 +37,30 @@
   default: true;
   color-scheme: light;
   --color-base-100: #ffffff;
-  --color-base-200: #fafafa;
-  --color-base-300: #f1f0f3;
-  --color-base-content: #374557;
-  --color-primary: #fb0d00;
+  --color-base-200: #faf5f2;
+  --color-base-300: #ece2de;
+  --color-base-content: #203044;
+  --color-primary: #b60e1c;
   --color-primary-content: #ffffff;
-  --color-secondary: #f3b800;
-  --color-secondary-content: #374557;
-  --color-accent: #fc6b57;
-  --color-accent-content: #ffffff;
-  --color-neutral: #374557;
+  --color-secondary: #eea76d;
+  --color-secondary-content: #203044;
+  --color-accent: #f1b39a;
+  --color-accent-content: #203044;
+  --color-neutral: #203044;
   --color-neutral-content: #ffffff;
   --color-info: #5b8def;
   --color-info-content: #ffffff;
   --color-success: #4cbc9a;
   --color-success-content: #ffffff;
-  --color-warning: #f3b800;
-  --color-warning-content: #374557;
-  --color-error: #fc6b57;
+  --color-warning: #e5a134;
+  --color-warning-content: #203044;
+  --color-error: #c83333;
   --color-error-content: #ffffff;
 
   /* ── Border radius tokens (edit here, whole app updates) ── */
   --radius-selector: 0.5rem;
-  --radius-field: 0rem;
-  --radius-box: 0rem;
+  --radius-field: 0.875rem;
+  --radius-box: 1.5rem;
 }
 
 /* ════════════════════════════════════════════════════════════════
@@ -67,17 +71,26 @@
    ════════════════════════════════════════════════════════════════ */
 @theme {
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --color-ink: #374557;
-  --color-muted: #a098ae;
+  --color-ink: var(--color-base-content);
+  --color-muted: color-mix(in oklab, var(--color-base-content) 65%, var(--color-base-100));
   --color-line: var(--color-base-300);
-  --color-brand: #fb0d00;
-  --color-brand-soft: #ffe1de;
-  --color-brand-tint: #fff1f0;
-  --color-sun: #f3b800;
+  --color-brand: var(--color-primary);
+  --color-brand-soft: color-mix(in oklab, var(--color-primary) 12%, var(--color-base-100));
+  --color-brand-tint: color-mix(in oklab, var(--color-primary) 5%, var(--color-base-100));
+  --color-sun: #c28335;
   --color-sun-soft: #fdf0ce;
-  --color-coral: #fc6b57;
+  --color-coral: #d76d5b;
   --color-coral-soft: #ffe9e6;
-  --color-night: #374557;
+  --color-night: #203044;
+
+  /* Status-pill surfaces. Each pairs a solid tint with an "ink" mixed toward
+     --color-base-content, so light themes get dark ink on a pale tint and dark
+     themes get light ink on a dark tint. All solid — never an alpha modifier. */
+  --color-brand-soft-ink: color-mix(in oklab, var(--color-primary) 72%, var(--color-base-content));
+  --color-night-soft: color-mix(in oklab, var(--color-night) 12%, var(--color-base-100));
+  --color-night-soft-ink: color-mix(in oklab, var(--color-night) 35%, var(--color-base-content));
+  --color-muted-soft: color-mix(in oklab, var(--color-base-content) 8%, var(--color-base-100));
+  --color-muted-ink: color-mix(in oklab, var(--color-base-content) 85%, var(--color-base-100));
 
   /* Aliases — change these if you want an element family to differ */
   --radius-nav: var(--radius-field);
@@ -88,16 +101,12 @@
   --radius-pill: 9999px;
 }
 
-/* Every theme — including dark/night/synthwave — must obey the
-   project's 0-radius for cards/inputs (like light does). DaisyUI
-   ships per-theme radii; this forces them flat globally.
-   Also makes the custom --color-line follow the theme's border
-   color (base-300) so dark mode doesn't render white borders. */
+/* Consistent rounded surfaces across the supported themes. */
 :root,
 [data-theme] {
   --radius-selector: 0.5rem;
-  --radius-field: 0rem;
-  --radius-box: 0rem;
+  --radius-field: 0.875rem;
+  --radius-box: 1.5rem;
   --color-line: var(--color-base-300);
 }
 
@@ -116,6 +125,16 @@
   }
 }
 
+/* Slow drifting colour pools behind the auth pages (sign in / register). */
+@keyframes auth-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(2.5rem, -1.5rem, 0) scale(1.08); }
+}
+@utility auth-blob {
+  animation: auth-drift 20s ease-in-out infinite;
+  @media (prefers-reduced-motion: reduce) { animation: none; }
+}
+
 /* Shadows intentionally disabled per client request (flat, no elevation). */
 @utility card-shadow {
   /* box-shadow: none; */
@@ -128,12 +147,12 @@
    below is only applied where ::-webkit-scrollbar is unsupported (Firefox). */
 @utility scrollbar-slim {
   &::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
-    border: 0;
+    border: 2px solid transparent;
   }
 
   @supports not selector(::-webkit-scrollbar) {
@@ -149,12 +168,12 @@
   }
 }
 
-/* Scrollbars — slim floating pill, no arrow buttons, brand red on hover/drag.
+/* Scrollbars — slim floating pill, no arrow buttons, a muted ink thumb on hover/drag.
    Token-driven, so every theme (incl. dark) gets a matching thumb. */
 @layer base {
   ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
   }
 
   ::-webkit-scrollbar-track,
@@ -164,15 +183,15 @@
 
   ::-webkit-scrollbar-thumb {
     /* Transparent border + padding-box clip = pill inset from the edges. */
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-radius: 9999px;
     background-clip: padding-box;
-    background-color: color-mix(in oklab, var(--color-base-content) 22%, transparent);
+    background-color: color-mix(in oklab, var(--color-base-content) 28%, transparent);
   }
 
   ::-webkit-scrollbar-thumb:hover,
   ::-webkit-scrollbar-thumb:active {
-    background-color: var(--color-brand);
+    background-color: color-mix(in oklab, var(--color-base-content) 55%, transparent);
   }
 
   ::-webkit-scrollbar-button {
@@ -235,12 +254,12 @@
    This file must be imported after `nprogress/nprogress.css` (see main.tsx),
    otherwise the default blue bar wins the cascade. */
 #nprogress .bar {
-  background: #fb0d00;
+  background: var(--color-primary);
   height: 5px;
 }
 
 #nprogress .peg {
   box-shadow:
-    0 0 10px #fb0d00,
-    0 0 5px #fb0d00;
+    0 0 10px var(--color-primary),
+    0 0 5px var(--color-primary);
 }

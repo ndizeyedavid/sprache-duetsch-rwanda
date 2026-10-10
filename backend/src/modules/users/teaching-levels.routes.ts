@@ -1,0 +1,16 @@
+import { Router } from 'express';
+import { z } from 'zod';
+import { asyncHandler } from '../../lib/async-handler.js';
+import { idParam } from '../../lib/query.js';
+import { validatedBody,validatedParams } from '../../lib/request.js';
+import { ADMIN_ROLES } from '../../lib/roles.js';
+import { getTeacherLevelIds } from '../../lib/teacher-levels.js';
+import { requireAuth } from '../../middleware/auth.js';
+import { requireRole } from '../../middleware/rbac.js';
+import { validate } from '../../middleware/validate.js';
+import { listTeachingAssignments,replaceTeachingLevels } from './teaching-levels.service.js';
+export const teachingLevelsRouter = Router();
+const levelsBody = z.object({ levelIds: z.array(z.string().min(1)).max(100) });
+teachingLevelsRouter.get('/me/teaching-levels', requireAuth, requireRole('TEACHER'), asyncHandler(async (req,res) => { res.json({ success: true, data: await getTeacherLevelIds(req.user!.id) }); }));
+teachingLevelsRouter.get('/teaching-assignments', requireAuth, requireRole(...ADMIN_ROLES), asyncHandler(async (_req,res) => { res.json({ success: true, data: await listTeachingAssignments() }); }));
+teachingLevelsRouter.put('/:id/teaching-levels', requireAuth, requireRole(...ADMIN_ROLES), validate({ params: idParam, body: levelsBody }), asyncHandler(async (req,res) => { const {id}=validatedParams<{id:string}>(req);const {levelIds}=validatedBody<{levelIds:string[]}>(req);res.json({success:true,data:await replaceTeachingLevels(id,levelIds,req.user!.id)}); }));

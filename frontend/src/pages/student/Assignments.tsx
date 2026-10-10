@@ -1,179 +1,26 @@
-import { useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-import { Panel } from "../../components/ui/Panel";
-import {
-  EmptyBlock,
-  ErrorBlock,
-  LoadingBlock,
-} from "../../components/common/PageState";
-import { useApi } from "../../hooks/useApi";
-import { getMyAssignments } from "../../lib/services";
-import { AssignmentsToolbar } from "../../components/assignments/AssignmentsToolbar";
-import { AssignmentCard } from "../../components/assignments/AssignmentCard";
-import {
-  groupByBucket,
-  groupByCourse,
-} from "../../components/assignments/utils";
-import type { AssignmentsTab } from "../../components/assignments/constants";
-
+import { FiBookOpen,FiSearch } from 'react-icons/fi';
+import { useSearchParams } from 'react-router-dom';
+import { AssignmentHero } from '../../components/assignments/AssignmentHero';
+import { AssignmentRow } from '../../components/assignments/AssignmentRow';
+import { feedBucket,getAssignmentFeed } from '../../components/assignments/assignment-feed';
+import { ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { useApi } from '../../hooks/useApi';
+const tabs = ['All', 'To do', 'Submitted', 'Feedback'];
 export function Assignments() {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const assignments = useApi("my-assignments", getMyAssignments);
-
-  const tab = (searchParams.get("tab") as AssignmentsTab) || "All";
-  const q = searchParams.get("q") || "";
-  const course = searchParams.get("course") || "";
-  const status = searchParams.get("status") || "";
-  const [localQ, setLocalQ] = useState(q);
-
-  function setParam(key: string, value: string | null) {
-    const next = new URLSearchParams(searchParams);
-    if (!value) next.delete(key);
-    else next.set(key, value);
-    setSearchParams(next);
-  }
-
-  const list = useMemo(() => assignments.data ?? [], [assignments.data]);
-
-  const courses = useMemo(() => {
-    const map = new Map<string, string>();
-    for (const a of list) map.set(a.levelCode, a.levelTitle);
-    return [...map.entries()].map(([code, title]) => ({ code, title }));
-  }, [list]);
-
-  const filtered = useMemo(() => {
-    let out = list;
-    if (tab !== "All") {
-      const now = new Date();
-      out = out.filter((a) => {
-        if (tab === "Missing") return a.status === "MISSING";
-        if (tab === "Overdue")
-          return a.dueAt
-            ? new Date(a.dueAt) < now &&
-                a.status !== "GRADED" &&
-                a.status !== "SUBMITTED"
-            : false;
-        if (tab === "Upcoming")
-          return a.dueAt
-            ? new Date(a.dueAt) >= now &&
-                a.status !== "GRADED" &&
-                a.status !== "SUBMITTED"
-            : false;
-        if (tab === "Done")
-          return a.status === "GRADED" || a.status === "SUBMITTED";
-        return true;
-      });
-    }
-    if (course) out = out.filter((a) => a.levelCode === course);
-    if (status) out = out.filter((a) => a.status === status);
-    if (q) {
-      const needle = q.toLowerCase();
-      out = out.filter((a) =>
-        `${a.title} ${a.levelCode} ${a.type}`.toLowerCase().includes(needle),
-      );
-    }
-    return out;
-  }, [list, tab, course, status, q]);
-
-  const grouped = useMemo(
-    () =>
-      course
-        ? groupByCourse(filtered).map((g) => ({
-            label: `${g.code} · ${g.title}`,
-            items: g.items,
-          }))
-        : groupByBucket(filtered),
-    [filtered, course],
-  );
-  const counts = useMemo(() => {
-    const now = new Date();
-    const c: Record<string, number> = {
-      All: list.length,
-      Missing: 0,
-      Overdue: 0,
-      Upcoming: 0,
-      Done: 0,
-    };
-    for (const a of list) {
-      if (a.status === "MISSING") c.Missing += 1;
-      if (
-        a.dueAt &&
-        new Date(a.dueAt) < now &&
-        a.status !== "GRADED" &&
-        a.status !== "SUBMITTED"
-      )
-        c.Overdue += 1;
-      if (
-        a.dueAt &&
-        new Date(a.dueAt) >= now &&
-        a.status !== "GRADED" &&
-        a.status !== "SUBMITTED"
-      )
-        c.Upcoming += 1;
-      if (a.status === "GRADED" || a.status === "SUBMITTED") c.Done += 1;
-    }
-    return c;
-  }, [list]);
-
-  return (
-    <div className="space-y-4">
-      <Panel>
-        <h1 className="text-xl font-bold">Assignments</h1>
-        <p className="text-sm text-muted">
-          All activities and assessments due for your levels.
-        </p>
-        <div className="mt-4">
-          <AssignmentsToolbar
-            tab={tab}
-            onTab={(t) => setParam("tab", t === "All" ? null : t)}
-            counts={counts}
-            search={localQ}
-            onSearch={setLocalQ}
-            course={course}
-            onCourse={(v) => setParam("course", v || null)}
-            courses={courses}
-            status={status}
-            onStatus={(v) => setParam("status", v || null)}
-          />
-          {localQ !== q ? (
-            <button
-              type="button"
-              onClick={() => setParam("q", localQ || null)}
-              className="btn btn-xs mt-2 rounded-full border-line bg-base-100"
-            >
-              Apply search
-            </button>
-          ) : null}
-        </div>
-      </Panel>
-
-      {assignments.loading ? (
-        <LoadingBlock label="Loading assignments…" />
-      ) : assignments.error ? (
-        <ErrorBlock message={assignments.error} onRetry={assignments.refetch} />
-      ) : filtered.length === 0 ? (
-        <Panel>
-          <EmptyBlock
-            title="No assignments"
-            hint="Nothing matches your filters — try another course or clear the search."
-          />
-        </Panel>
-      ) : (
-        <div className="space-y-6">
-          {grouped.map((g) => (
-            <div key={g.label}>
-              <h2 className="mb-2 text-xs font-bold tracking-widest text-muted">
-                {g.label} · {g.items.length}
-              </h2>
-              <div className="space-y-2">
-                {g.items.map((a) => (
-                  <AssignmentCard key={a.id} item={a} />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+  const data = useApi('assignment-feed', getAssignmentFeed);
+  const [params, setParams] = useSearchParams();
+  const tab = tabs.includes(params.get('tab') ?? '') ? params.get('tab')! : 'All';
+  const q = params.get('q') ?? '', course = params.get('course') ?? '', kind = params.get('kind') ?? '';
+  const change = (key: string, value: string) => setParams(p => { const n = new URLSearchParams(p); if (value) n.set(key, value); else n.delete(key); return n; }, { replace: true });
+  if (data.loading) return <LoadingBlock label="Preparing your assignments…" />;
+  if (data.error) return <ErrorBlock message={data.error} onRetry={data.refetch} />;
+  const items = data.data ?? [];
+  const filtered = items.filter(i => (tab === 'All' || feedBucket(i) === tab) && (!course || course === i.course) && (!kind || (kind === 'homework' ? i.isHomework : !i.isHomework)) && `${i.title} ${i.context} ${i.course}`.toLowerCase().includes(q.toLowerCase()));
+  return <div className="journey-enter space-y-5">
+    <AssignmentHero items={items} />
+    <div className="flex flex-wrap items-center justify-between gap-3"><div className="flex flex-wrap gap-1" role="tablist" aria-label="Assignment status">{tabs.map(t => <button key={t} role="tab" aria-selected={tab === t} onClick={() => change('tab', t === 'All' ? '' : t)} className={`btn btn-sm rounded-full ${tab === t ? 'btn-neutral' : 'btn-ghost'}`}>{t}<span className="text-[10px] opacity-60">{items.filter(i => t === 'All' || feedBucket(i) === t).length}</span></button>)}</div><button onClick={data.refetch} className="btn btn-ghost btn-sm">Refresh</button></div>
+    <div className="flex flex-col gap-2 sm:flex-row"><label className="input input-sm min-w-0 flex-1 rounded-full"><FiSearch aria-hidden /><input aria-label="Search assignments" placeholder="Find an assignment…" value={q} onChange={e => change('q', e.target.value)} /></label><select className="select select-sm rounded-full" aria-label="Filter by course" value={course} onChange={e => change('course', e.target.value)}><option value="">All courses</option>{[...new Set(items.map(i => i.course))].map(c => <option key={c}>{c}</option>)}</select><select className="select select-sm rounded-full" aria-label="Filter by task type" value={kind} onChange={e => change('kind', e.target.value)}><option value="">All task types</option><option value="homework">Homework</option><option value="quiz">Quizzes & activities</option></select></div>
+    <section className="card overflow-hidden border border-base-300/70 bg-base-100"><div className="flex items-center justify-between border-b border-base-300/60 px-5 py-4"><h2 className="text-sm font-semibold">{tab === 'All' ? 'Your assignments' : tab}</h2><span className="text-xs text-base-content/50">{filtered.length} {filtered.length === 1 ? 'task' : 'tasks'}</span></div>{filtered.length ? filtered.map(i => <AssignmentRow key={i.id} item={i} />) : <div className="flex flex-col items-center gap-3 px-6 py-12 text-center"><FiBookOpen size={28} className="text-base-content/40" /><h3 className="font-semibold">{items.length ? 'Nothing here just yet' : 'Your next assignment will appear here'}</h3><p className="max-w-sm text-sm leading-6 text-base-content/60">{items.length ? 'Try a different filter, or check another tab.' : 'Your teacher will share instructions and a deadline when your class is ready.'}</p>{items.length ? <button className="btn btn-sm" onClick={() => setParams({})}>Clear filters</button> : null}</div>}</section>
+    <div className="rounded-box border border-base-300/60 p-5 text-xs leading-6 text-base-content/60"><strong className="text-base-content">A simple rhythm: </strong>Read the instructions → prepare your work → submit → use feedback to improve. Homework drafts save automatically. Timed quizzes keep their original timer when you resume.</div>
+  </div>;
 }

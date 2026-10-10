@@ -1,4 +1,4 @@
-import { createHash, randomBytes } from "node:crypto";
+import { createHash,randomBytes } from "node:crypto";
 import type { Prisma } from "../generated/prisma/client.js";
 
 // Any Prisma client or interactive-transaction client can run these generators.
@@ -7,33 +7,22 @@ type PrismaExecutor = Prisma.TransactionClient;
 const pad = (value: number, size = 4): string => String(value).padStart(size, "0");
 
 export const dateStamp = (date: Date = new Date()): string =>
-  `${date.getFullYear()}${pad(date.getMonth() + 1, 2)}${pad(date.getDate(), 2)}`;
+  `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1, 2)}${pad(date.getUTCDate(), 2)}`;
 
-// Human-facing identifiers. Counting the same prefix keeps them short and readable;
-// the unique constraint on each column is the real guard against duplicates.
-export const generateStudentCode = async (tx: PrismaExecutor, when = new Date()): Promise<string> => {
-  const prefix = `SDR-${when.getFullYear()}-`;
-  const count = await tx.student.count({ where: { studentCode: { startsWith: prefix } } });
-  return `${prefix}${pad(count + 1)}`;
+// Persistent atomic counters reserve each human-facing identifier exactly once.
+// Deleting or voiding a record does not reduce its prefix counter.
+const nextNumber = async (tx: PrismaExecutor, prefix: string): Promise<string> => {
+  const counter = await tx.identifierCounter.upsert({
+    where: { prefix }, create: { prefix, value: 1 }, update: { value: { increment: 1 } },
+  });
+  return `${prefix}${pad(counter.value)}`;
 };
-
-export const generateReceiptNumber = async (
-  tx: PrismaExecutor,
-  when = new Date(),
-): Promise<string> => {
-  const prefix = `RCP-${dateStamp(when)}-`;
-  const count = await tx.receipt.count({ where: { receiptNumber: { startsWith: prefix } } });
-  return `${prefix}${pad(count + 1)}`;
-};
-
-export const generateCertificateNumber = async (
-  tx: PrismaExecutor,
-  when = new Date(),
-): Promise<string> => {
-  const prefix = `CERT-${when.getFullYear()}-`;
-  const count = await tx.certificate.count({ where: { certificateNumber: { startsWith: prefix } } });
-  return `${prefix}${pad(count + 1)}`;
-};
+export const generateStudentCode = (tx: PrismaExecutor, when = new Date()): Promise<string> =>
+  nextNumber(tx, `SDR-${when.getUTCFullYear()}-`);
+export const generateReceiptNumber = (tx: PrismaExecutor, when = new Date()): Promise<string> =>
+  nextNumber(tx, `RCP-${dateStamp(when)}-`);
+export const generateCertificateNumber = (tx: PrismaExecutor, when = new Date()): Promise<string> =>
+  nextNumber(tx, `CERT-${when.getUTCFullYear()}-`);
 
 export const generateVerificationCode = (): string =>
   randomBytes(8).toString("hex").toUpperCase();

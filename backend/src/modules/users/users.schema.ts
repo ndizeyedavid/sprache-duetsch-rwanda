@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { idParam,optionalText,paginationQuery } from "../../lib/query.js";
 
 export const roleEnum = z.enum([
   "STUDENT",
@@ -38,7 +38,9 @@ export const updateUserSchema = z
   .object({
     firstName: z.string().trim().min(1).max(80).optional(),
     lastName: z.string().trim().min(1).max(80).optional(),
-    phone: optionalText(30),
+    // Not `optionalText`: that helper maps "" and null to undefined, which Prisma
+    // treats as "leave unchanged" — so a phone could be set but never cleared.
+    phone: z.union([z.string().trim().min(1).max(30), z.null()]).optional(),
     avatarUrl: z.string().trim().url().max(500).optional(),
     status: accountStatusEnum.optional(),
   })

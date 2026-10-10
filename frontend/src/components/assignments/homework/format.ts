@@ -1,0 +1,4 @@
+export const dateLabel = (date: string | null, full = false) => date ? new Date(date).toLocaleString('en-GB', { day: 'numeric', month: 'short', ...(full ? { year: 'numeric', hour: '2-digit', minute: '2-digit' } : {}) }) : 'No deadline';
+export const responseLabels = { TEXT: 'Written response', FILE: 'File upload', AUDIO: 'Audio recording', MIXED: 'Text or attachment' };
+export const statusLabels: Record<string, string> = { NOT_STARTED: 'Ready to start', DRAFT: 'Draft saved', IN_PROGRESS: 'In progress', SUBMITTED: 'Awaiting feedback', RETURNED: 'Revision requested', GRADED: 'Graded', MISSING: 'Missing', OVERDUE: 'Past due' };
+export const statusTone: Record<string, string> = { RETURNED: 'badge-warning', GRADED: 'badge-success', SUBMITTED: 'badge-info', OVERDUE: 'badge-error', MISSING: 'badge-error' };

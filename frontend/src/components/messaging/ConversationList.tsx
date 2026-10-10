@@ -1,84 +1,14 @@
-import { FiInbox, FiSearch, FiX } from "react-icons/fi";
-import { EmptyBlock, ErrorBlock, LoadingBlock } from "../common/PageState";
-import { threadTitle, initials, accentFor, dedupeParticipants, relativeTime, snippet } from "./utils";
-import type { Conversation } from "../../lib/services";
-
-type Props = {
-  threads: Conversation[];
-  loading: boolean;
-  error: string | null;
-  onRetry: () => void;
-  selectedId: string | null;
-  onPick: (id: string) => void;
-  myId: string | null | undefined;
-  search: string;
-  onSearch: (v: string) => void;
-  filter: "all" | "unread";
-  onFilter: (v: "all" | "unread") => void;
-  onCompose: () => void;
-};
-
+import { FiMessageCircle,FiSearch,FiX } from 'react-icons/fi';
+import type { Conversation } from '../../lib/services';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../common/PageState';
+import { accentFor,dedupeParticipants,initials,relativeTime,snippet,threadTitle } from './utils';
+type Props = { threads: Conversation[]; loading: boolean; error: string | null; onRetry: () => void; selectedId: string | null; onPick: (id: string) => void; myId: string | null | undefined; search: string; onSearch: (v: string) => void; filter: 'all' | 'unread'; onFilter: (v: 'all' | 'unread') => void; onCompose: () => void };
 export function ConversationList({ threads, loading, error, onRetry, selectedId, onPick, myId, search, onSearch, filter, onFilter, onCompose }: Props) {
-  const filtered = threads.filter((t) => {
-    if (filter === "unread" && t.unreadCount === 0) return false;
-    if (!search.trim()) return true;
-    const q = search.trim().toLowerCase();
-    return threadTitle(t, myId).toLowerCase().includes(q) || (t.messages[0]?.body ?? "").toLowerCase().includes(q);
-  });
-
-  return (
-    <div className="flex h-full flex-col">
-      <div className="flex items-center justify-between">
-        <h2 className="flex items-center gap-2 text-sm font-bold"><FiInbox aria-hidden className="text-brand" />Conversations</h2>
-        <span className="rounded-full bg-base-200 px-2.5 py-1 text-xs font-medium">{threads.length}</span>
-      </div>
-
-      <button type="button" onClick={onCompose} className="btn btn-sm mt-3 w-full rounded-full border-line bg-base-100 hover:border-brand/20">
-        New message
-      </button>
-
-      <div className="relative mt-3">
-        <FiSearch aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
-        <input value={search} onChange={(e) => onSearch(e.target.value)} placeholder="Search" className="input input-sm w-full rounded-full border-line bg-base-100 pl-9 pr-8 text-sm" />
-        {search ? <button type="button" onClick={() => onSearch("")} className="btn btn-ghost btn-xs btn-circle absolute right-1 top-1/2 -translate-y-1/2" aria-label="Clear"><FiX aria-hidden /></button> : null}
-      </div>
-
-      <div className="mt-3 flex gap-1.5">
-        <button type="button" onClick={() => onFilter("all")} className={`btn btn-xs rounded-full ${filter === "all" ? "border-0 bg-brand text-white" : "border-line bg-base-100"}`}>All</button>
-        <button type="button" onClick={() => onFilter("unread")} className={`btn btn-xs rounded-full ${filter === "unread" ? "border-0 bg-brand text-white" : "border-line bg-base-100"}`}>Unread {threads.filter((t) => t.unreadCount > 0).length ? `(${threads.filter((t) => t.unreadCount > 0).length})` : ""}</button>
-      </div>
-
-      <div className="mt-3 flex-1 overflow-y-auto pr-1">
-        {loading ? <LoadingBlock label="Loading conversations…" /> : error ? <ErrorBlock message={error} onRetry={onRetry} /> : filtered.length === 0 ? (
-          <EmptyBlock title={threads.length === 0 ? "No conversations" : "No matches"} hint={threads.length === 0 ? "Start a chat with a classmate or teacher." : "Try another search or clear the filter."} />
-        ) : (
-          <ul className="space-y-1.5">
-            {filtered.map((t) => {
-              const active = selectedId === t.id;
-              const title = threadTitle(t, myId);
-              const last = t.messages[0];
-              const others = dedupeParticipants(t.participants).filter((p) => p.user.id !== myId).slice(0, 2);
-              return (
-                <li key={t.id}>
-                  <button type="button" onClick={() => onPick(t.id)} className={`flex w-full gap-3 rounded-box border p-3 text-left transition ${active ? "border-brand bg-brand-soft" : "border-line bg-base-100 hover:border-brand/20"}`}>
-                    <span className="flex -space-x-2">
-                      {others.length === 0 ? <span className={`flex size-9 items-center justify-center rounded-full text-xs font-bold ${accentFor(title)}`}>{initials("Y", "ou")}</span> : others.map((p) => <span key={p.user.id} className={`flex size-9 items-center justify-center rounded-full border-2 border-base-100 text-xs font-bold ${accentFor(p.user.firstName)}`}>{initials(p.user.firstName, p.user.lastName)}</span>)}
-                    </span>
-                    <span className="min-w-0 grow">
-                      <span className="flex items-start justify-between gap-2">
-                        <span className="truncate text-sm font-semibold leading-tight">{title}</span>
-                        {t.unreadCount > 0 ? <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-white">{t.unreadCount}</span> : null}
-                      </span>
-                      <span className="block truncate text-xs text-muted">{last ? `${last.sender.firstName}: ${snippet(last.body, 48)}` : "No messages yet"}</span>
-                      <span className="block text-[11px] text-muted">{relativeTime(t.updatedAt)}</span>
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-      </div>
-    </div>
-  );
+  const unread = threads.filter(t => t.unreadCount > 0).length;
+  const filtered = threads.filter(t => (filter !== 'unread' || t.unreadCount > 0) && (!search.trim() || `${threadTitle(t,myId)} ${t.messages[0]?.body ?? ''}`.toLowerCase().includes(search.trim().toLowerCase())));
+  return <div className="flex h-full min-h-0 flex-col"><div className="p-5"><div className="flex items-center justify-between"><h2 className="text-sm font-semibold">Messages</h2><span className="text-xs text-base-content/50">{threads.length} chats</span></div><label className="input input-sm mt-4 flex w-full items-center gap-2"><FiSearch aria-hidden className="shrink-0 opacity-50" /><input aria-label="Search conversations" value={search} onChange={e=>onSearch(e.target.value)} placeholder="Find a conversation" className="min-w-0 grow" />{search ? <button aria-label="Clear conversation search" type="button" onClick={()=>onSearch('')} className="btn btn-xs btn-ghost btn-circle"><FiX aria-hidden /></button> : null}</label><div className="mt-3 flex gap-2">{(['all','unread'] as const).map(v=><button key={v} onClick={()=>onFilter(v)} aria-pressed={filter===v} className={`btn btn-xs rounded-full ${filter===v?'btn-neutral':'btn-ghost'}`}>{v==='all'?'All conversations':`Unread · ${unread}`}</button>)}</div></div>
+    <div className="min-h-0 flex-1 overflow-y-auto px-3 pb-3">{loading ? <LoadingBlock label="Loading conversations…" /> : error ? <ErrorBlock message={error} onRetry={onRetry} /> : !filtered.length ? <div className="py-8 text-center"><FiMessageCircle aria-hidden size={28} className="mx-auto text-base-content/35" /><EmptyBlock title={threads.length ? 'No matching conversations' : 'Your conversations start here'} hint={threads.length ? 'Try another search or view all chats.' : 'Reach out to a teacher or someone in your class.'} />{!threads.length ? <button onClick={onCompose} className="btn btn-sm mt-3">Start a conversation</button> : <button onClick={()=>{onSearch('');onFilter('all');}} className="btn btn-sm mt-3">Show all conversations</button>}</div> : <ul className="space-y-1">{filtered.map(t=>{
+      const title=threadTitle(t,myId),last=t.messages[0],others=dedupeParticipants(t.participants).filter(p=>p.user.id!==myId),person=others[0]?.user,active=selectedId===t.id;
+      return <li key={t.id}><button onClick={()=>onPick(t.id)} aria-current={active?'true':undefined} className={`flex w-full items-start gap-3 rounded-2xl p-4 text-left transition-colors ${active?'bg-neutral text-neutral-content':'hover:bg-base-200'}`}><span className={`grid size-11 shrink-0 place-items-center rounded-2xl text-xs font-semibold ${person?accentFor(person.firstName):'bg-base-200 text-base-content'}`}>{person?initials(person.firstName,person.lastName):'Me'}</span><span className="min-w-0 flex-1"><span className="flex items-center justify-between gap-2"><span className="truncate text-sm font-semibold">{title}</span>{t.unreadCount>0?<span aria-label={`${t.unreadCount} unread messages`} className="grid min-w-5 place-items-center rounded-full bg-primary px-1.5 text-[10px] text-primary-content">{t.unreadCount}</span>:null}</span><span className={`mt-1 block truncate text-xs ${active?'text-neutral-content/70':'text-base-content/60'}`}>{last?`${last.senderId===myId?'You':last.sender.firstName}: ${snippet(last.body,60)}`:'Say hello to start chatting'}</span><span className={`mt-2 block text-[10px] ${active?'text-neutral-content/50':'text-base-content/45'}`}>{others.length>1?'Group conversation · ':''}{relativeTime(t.updatedAt)}</span></span></button></li>;
+    })}</ul>}</div></div>;
 }

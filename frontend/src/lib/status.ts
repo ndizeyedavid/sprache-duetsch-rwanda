@@ -1,4 +1,4 @@
-import type { AccountStatus, AttendanceStatus, CourseProgressStatus, LiveClassStatus, PaymentStatus, Tone } from '../types';
+import type { AccountStatus,AttendanceStatus,CourseProgressStatus,LiveClassStatus,PaymentStatus,Tone } from '../types';
 
 const STATUS_TONES: Record<string, Tone> = {
   Completed: 'brand',
@@ -11,6 +11,8 @@ const STATUS_TONES: Record<string, Tone> = {
   Waived: 'navy',
   Refunded: 'muted',
   Active: 'brand',
+  Deferred: 'sun',
+  Inactive: 'muted',
   Pending: 'sun',
   Suspended: 'coral',
   Withdrawn: 'muted',
@@ -23,6 +25,11 @@ const STATUS_TONES: Record<string, Tone> = {
   Live: 'coral',
   Cancelled: 'muted',
   Rescheduled: 'sun',
+  // Intake lifecycle (derived from the intake dates, see components/intakes/utils.ts).
+  Upcoming: 'navy',
+  Enrolling: 'brand',
+  Running: 'sun',
+  Ended: 'muted',
 };
 
 export function statusTone(status: string): Tone {
@@ -30,15 +37,17 @@ export function statusTone(status: string): Tone {
 }
 
 /**
- * Tinted surfaces for status pills. Text tones are darkened one step from the
- * mockup so the label passes WCAG AA contrast on its pale background.
+ * Tinted surfaces for status pills. The `brand`/`navy`/`muted` tones use
+ * theme-aware `-soft`/`-ink` token pairs (see `index.css` `@theme`) so the
+ * label keeps WCAG AA contrast on light *and* dark themes. `sun`/`coral` sit on
+ * fixed pale backgrounds, so their darkened ink works in every theme.
  */
 export const TONE_SURFACE: Record<Tone, string> = {
-  brand: 'bg-brand-soft text-[#B30A00]',
+  brand: 'bg-brand-soft text-brand-soft-ink',
   sun: 'bg-sun-soft text-[#8A6800]',
-  coral: 'bg-coral-soft text-[#D8482F]',
-  navy: 'bg-night/5 text-night',
-  muted: 'bg-muted/10 text-[#6F6880]',
+  coral: 'bg-coral-soft text-[#AE3522]',
+  navy: 'bg-night-soft text-night-soft-ink',
+  muted: 'bg-muted-soft text-muted-ink',
 };
 
-export type { AccountStatus, AttendanceStatus, CourseProgressStatus, LiveClassStatus, PaymentStatus };
+export type { AccountStatus,AttendanceStatus,CourseProgressStatus,LiveClassStatus,PaymentStatus };

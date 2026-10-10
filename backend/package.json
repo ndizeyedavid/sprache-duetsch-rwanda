@@ -29,7 +29,9 @@
     "db:push": "prisma db push",
     "db:reset": "prisma migrate reset --force",
     "db:seed": "prisma db seed",
-    "db:studio": "prisma studio"
+    "db:seed:demo": "tsx prisma/seed.demo.ts",
+    "db:studio": "prisma studio",
+    "test:integration": "tsx src/tests/integration-runner.ts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.10.0",
@@ -79,5 +81,9 @@
     "supertest": "^7.2.2",
     "typescript-eslint": "^8.70.0",
     "vitest": "^4.1.11"
+  },
+  "overrides": {
+    "deepmerge-ts": "^8.0.0",
+    "mysql2": "^3.24.5"
   }
 }

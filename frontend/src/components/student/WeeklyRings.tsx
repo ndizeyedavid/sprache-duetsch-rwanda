@@ -1,8 +1,8 @@
+import { endOfWeek,format,isWithinInterval,parseISO,startOfWeek } from 'date-fns';
 import { useMemo } from 'react';
-import { FiChevronLeft, FiChevronRight, FiClock } from 'react-icons/fi';
-import { format, isWithinInterval, parseISO, startOfWeek, endOfWeek } from 'date-fns';
-import { COLORS } from '../../lib/theme';
+import { FiChevronLeft,FiChevronRight,FiClock } from 'react-icons/fi';
 import type { MyCourse } from '../../lib/services';
+import { COLORS } from '../../lib/theme';
 
 const PALETTE = [COLORS.brand, '#5b8def', COLORS.sun, COLORS.coral, '#4cbc9a', COLORS.navy, '#A098AE', '#ff6b35'];
 

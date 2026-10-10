@@ -1,4 +1,4 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { validatedQuery } from "../../lib/request.js";
 import type { DashboardFilter } from "./dashboards.schema.js";
 import * as service from "./dashboards.service.js";

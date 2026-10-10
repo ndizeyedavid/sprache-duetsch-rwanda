@@ -1,15 +1,15 @@
-import { useMemo, useState } from "react";
-import { Panel } from "../../components/ui/Panel";
-import { useApi } from "../../hooks/useApi";
-import { useSession } from "../../lib/session";
-import { getFeed } from "../../lib/services";
-import type { Filter } from "../../components/activity/constants";
+import { useMemo,useState } from "react";
+import { ActivityFeed } from "../../components/activity/ActivityFeed";
 import { ActivityHeader } from "../../components/activity/ActivityHeader";
 import { ActivityStats } from "../../components/activity/ActivityStats";
-import { ActivityFeed } from "../../components/activity/ActivityFeed";
 import { ComposerCard } from "../../components/activity/ComposerCard";
+import type { Filter } from "../../components/activity/constants";
 import { HighlightsRail } from "../../components/activity/HighlightsRail";
 import { groupByDay } from "../../components/activity/utils";
+import { Panel } from "../../components/ui/Panel";
+import { useApi } from "../../hooks/useApi";
+import { getFeed } from "../../lib/services";
+import { useSession } from "../../lib/session";
 
 export function Activity() {
   const { user } = useSession();

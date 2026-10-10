@@ -1,6 +1,6 @@
+import NProgress from 'nprogress';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import NProgress from 'nprogress';
 
 NProgress.configure({ showSpinner: false, trickleSpeed: 160, minimum: 0.15 });
 

@@ -1,20 +1,22 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ADMIN_ROLES, STAFF_ROLES } from "../../lib/roles.js";
+import { ADMIN_ROLES,STAFF_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./enrollments.controller.js";
+import { joinIntake, joinIntakeSchema } from './join-intake.js';
 import {
-  createEnrollmentSchema,
-  enrollmentIdSchema,
-  listEnrollmentsQuerySchema,
-  updateEnrollmentSchema,
+createEnrollmentSchema,
+enrollmentIdSchema,
+listEnrollmentsQuerySchema,
+updateEnrollmentSchema,
 } from "./enrollments.schema.js";
 
 export const enrollmentsRouter = Router();
 
 enrollmentsRouter.get("/me", requireAuth, requireRole("STUDENT"), asyncHandler(controller.me));
+enrollmentsRouter.post('/join', requireAuth, requireRole('STUDENT'), validate({ body: joinIntakeSchema }), asyncHandler(joinIntake));
 
 enrollmentsRouter.get(
   "/",

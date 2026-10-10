@@ -1,4 +1,4 @@
-import { formatDistanceToNow, parseISO } from 'date-fns';
+import { formatDistanceToNow,parseISO } from 'date-fns';
 import type { Conversation } from '../../lib/services';
 
 export function dedupeParticipants<T extends { user: { id: string } }>(participants: T[]): T[] {
@@ -25,7 +25,7 @@ export function initials(first: string, last: string): string {
 }
 
 export function accentFor(name: string): string {
-  const accents = ['bg-brand text-white', 'bg-info text-white', 'bg-success text-white', 'bg-sun text-night', 'bg-coral text-white', 'bg-night text-white'];
+  const accents = ['bg-neutral text-neutral-content', 'bg-info text-info-content', 'bg-success text-success-content', 'bg-warning text-warning-content'];
   let hash = 0;
   for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
   return accents[hash % accents.length];

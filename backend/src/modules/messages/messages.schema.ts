@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { idParam,optionalText,paginationQuery } from "../../lib/query.js";
 
 export const createConversationSchema = z.object({
   participantIds: z.array(z.string().min(1)).min(1).max(20),

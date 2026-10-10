@@ -1,7 +1,6 @@
 import type { AuthRole } from './auth-store';
 
-// Role groups mirror the backend (`src/lib/roles.ts`) so the UI never offers an
-// action the API will reject with 403.
+// Keep role permissions synchronized with backend/src/lib/roles.ts.
 export const STUDENT_ROLES: AuthRole[] = ['STUDENT'];
 export const TEACHER_ROLES: AuthRole[] = ['TEACHER'];
 export const ACADEMIC_ROLES: AuthRole[] = ['TEACHER', 'ACADEMIC_ADMIN', 'SUPER_ADMIN'];
@@ -24,27 +23,6 @@ export const roleLabel: Record<AuthRole, string> = {
   ACADEMIC_ADMIN: 'Academic Admin',
   FINANCE_ADMIN: 'Finance Admin',
   SUPER_ADMIN: 'Super Admin',
-};
-
-export type Portal = 'student' | 'teacher' | 'staff';
-
-/** Roles allowed through each login portal. */
-export const portalRoles: Record<Portal, AuthRole[]> = {
-  student: ['STUDENT'],
-  teacher: ['TEACHER'],
-  staff: ['ACADEMIC_ADMIN', 'FINANCE_ADMIN', 'SUPER_ADMIN'],
-};
-
-export const portalLoginPath: Record<Portal, string> = {
-  student: '/login',
-  teacher: '/login/teacher',
-  staff: '/login/staff',
-};
-
-export const portalLabel: Record<Portal, string> = {
-  student: 'Student',
-  teacher: 'Teacher',
-  staff: 'Staff',
 };
 
 export function isAcademic(role: AuthRole): boolean {

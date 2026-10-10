@@ -1,0 +1,21 @@
+export type AssignmentItem = {
+  id: string;
+  source: "ACTIVITY" | "ASSESSMENT";
+  activityId: string | null;
+  assessmentId: string | null;
+  lessonId: string | null;
+  title: string;
+  type: string;
+  levelId: string;
+  levelCode: string;
+  levelTitle: string;
+  moduleTitle: string | null;
+  lessonTitle: string | null;
+  dueAt: string | null;
+  points: number;
+  maxScore: number;
+  score: number | null;
+  status: string;
+  submittedAt: string | null;
+  attemptCount: number;
+};

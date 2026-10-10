@@ -5,7 +5,7 @@ import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./campuses.controller.js";
-import { campusIdSchema, createCampusSchema, listCampusQuerySchema, updateCampusSchema } from "./campuses.schema.js";
+import { campusIdSchema,createCampusSchema,listCampusQuerySchema,updateCampusSchema } from "./campuses.schema.js";
 
 export const campusesRouter = Router();
 

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { booleanQuery, idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { booleanQuery,idParam,optionalText,paginationQuery } from "../../lib/query.js";
 
 const slugInput = z
   .string()

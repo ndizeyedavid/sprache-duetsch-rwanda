@@ -4,16 +4,19 @@ import { ACADEMIC_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
+import { deliveryRouter } from "./delivery.routes.js";
 import * as controller from "./notifications.controller.js";
 import {
-  createAnnouncementSchema,
-  listNotificationQuerySchema,
-  notificationIdSchema,
+createAnnouncementSchema,
+listNotificationQuerySchema,
+notificationIdSchema,
+notificationPreferencesSchema,
 } from "./notifications.schema.js";
 
 export const notificationsRouter = Router();
 
 notificationsRouter.use(requireAuth);
+notificationsRouter.use("/deliveries", deliveryRouter);
 
 notificationsRouter.get(
   "/",
@@ -22,6 +25,8 @@ notificationsRouter.get(
 );
 
 notificationsRouter.get("/unread-count", asyncHandler(controller.unreadCount));
+notificationsRouter.get("/preferences", asyncHandler(controller.getPreferences));
+notificationsRouter.put("/preferences", validate({ body: notificationPreferencesSchema }), asyncHandler(controller.updatePreferences));
 
 notificationsRouter.post("/read-all", asyncHandler(controller.readAll));
 

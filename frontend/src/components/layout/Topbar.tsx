@@ -1,16 +1,17 @@
+import { profilePhotoUrl } from '../../lib/profile-photo';
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import {
-  FiChevronDown,
-  FiGlobe,
-  FiLogOut,
-  FiMenu,
-  FiSettings,
-  FiUser,
+FiChevronDown,
+FiGlobe,
+FiLogOut,
+FiMenu,
+FiSettings,
+FiUser,
 } from "react-icons/fi";
-import { SearchField } from "../ui/SearchField";
+import { Link,useNavigate } from "react-router-dom";
 import { roleLabel } from "../../lib/roles";
 import { useSession } from "../../lib/session";
+import { SearchField } from "../ui/SearchField";
 
 const LANGUAGES = ["Deutsch", "English", "Kinyarwanda"];
 
@@ -34,7 +35,7 @@ export function Topbar({ title, onMenu }: TopbarProps) {
   }
 
   return (
-    <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-line bg-base-100/90 px-4 py-3 backdrop-blur lg:px-6">
+    <header className="sticky top-3 z-30 mx-4 mt-3 flex items-center gap-3 rounded-box border border-base-300/70 bg-base-100/85 px-4 py-3 backdrop-blur-xl lg:mx-8 lg:px-5">
       <button
         type="button"
         onClick={onMenu}
@@ -91,7 +92,7 @@ export function Topbar({ title, onMenu }: TopbarProps) {
             <span className="flex size-9 items-center justify-center overflow-hidden rounded-full bg-brand text-sm font-bold text-white">
               {user?.avatarUrl ? (
                 <img
-                  src={user.avatarUrl}
+                  src={profilePhotoUrl(user.avatarUrl)}
                   alt={displayName}
                   className="size-9 object-cover"
                 />

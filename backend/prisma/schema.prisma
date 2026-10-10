@@ -223,6 +223,11 @@ enum NotificationChannel {
 // ---------------------------------------------------------------------------
 
 model User {
+  teachingLevels TeacherLevel[] @relation("TeachingLevelTeacher")
+  levelsAssigned TeacherLevel[] @relation("TeachingLevelAssigner")
+  assignmentsCreated Assignment[]
+  assignmentFiles AssignmentFile[]
+
   id           String        @id @default(uuid())
   email        String        @unique
   phone        String?
@@ -232,6 +237,7 @@ model User {
   role         Role          @default(STUDENT)
   status       AccountStatus @default(PENDING)
   avatarUrl    String?
+  notificationPreferences Json?
   lastLoginAt  DateTime?
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
@@ -317,6 +323,10 @@ model Campus {
 // "Level" is intentionally generic (language + code) so non-German courses and
 // additional CEFR-like tracks can be added without a schema change.
 model Level {
+  coursebookUrl String?
+  coursebookPages Int?
+  completionRules Json?
+  teachers TeacherLevel[]
   id          String   @id @default(uuid())
   code        String   @unique
   language    String   @default("German")
@@ -339,6 +349,7 @@ model Level {
   certificates Certificate[]
   intendedBy  Student[]    @relation("IntendedLevel")
   currentFor  Student[]    @relation("CurrentLevel")
+  intakes     Intake[]     @relation("IntakeLevels")
   activityEvents ActivityEvent[]
 
   @@index([language, order])
@@ -362,9 +373,12 @@ model Intake {
   students    Student[]
   classes     ClassGroup[]
   enrollments Enrollment[]
+  levels      Level[]      @relation("IntakeLevels")
 }
 
 model ClassGroup {
+  assignments Assignment[]
+
   id        String   @id @default(uuid())
   code      String   @unique
   name      String
@@ -397,6 +411,9 @@ model ClassGroup {
 // ---------------------------------------------------------------------------
 
 model Student {
+  assignmentRecipients AssignmentRecipient[]
+  assignmentSubmissions AssignmentSubmission[]
+
   id              String        @id @default(uuid())
   studentCode     String        @unique
   userId          String        @unique
@@ -428,6 +445,7 @@ model Student {
   lessonProgress LessonProgress[]
   activitySubmissions ActivitySubmission[]
   charges        Charge[]
+  checkouts      PaymentCheckout[]
   payments       Payment[]
   discounts      Discount[]
   certificates   Certificate[]
@@ -471,6 +489,9 @@ model Enrollment {
 // Denormalised financial profile kept in sync by the payments service so the
 // dashboards and student profile can read balances without aggregating history.
 model StudentFinance {
+  overdueAmount Decimal @default(0) @db.Decimal(12, 2)
+  nextDueAmount Decimal @default(0) @db.Decimal(12, 2)
+  nextDueAt DateTime?
   id             String        @id @default(uuid())
   studentId      String        @unique
   totalDue       Decimal       @default(0) @db.Decimal(12, 2)
@@ -655,6 +676,7 @@ model Question {
 }
 
 model Assessment {
+  protectedMode Boolean @default(false)
   id                 String         @id @default(uuid())
   levelId            String
   lessonId           String?
@@ -693,6 +715,9 @@ model AssessmentQuestion {
 }
 
 model Attempt {
+  questionSnapshot Json?
+  draftResponses Json @default("{}")
+  draftUpdatedAt DateTime?
   id            String        @id @default(uuid())
   assessmentId  String
   studentId     String
@@ -868,6 +893,7 @@ model Discount {
 }
 
 model Payment {
+  idempotencyKey String? @unique
   id            String         @id @default(uuid())
   studentId     String
   enrollmentId  String?
@@ -889,6 +915,7 @@ model Payment {
   receivedBy    User?               @relation("PaymentReceiver", fields: [receivedById], references: [id])
   parentPayment Payment?            @relation("PaymentRefund", fields: [parentPaymentId], references: [id])
   refunds       Payment[]           @relation("PaymentRefund")
+  checkout      PaymentCheckout?
   receipt       Receipt?
 
   @@index([studentId, paidAt])
@@ -896,6 +923,7 @@ model Payment {
 }
 
 model Receipt {
+  voidedAt DateTime?
   id            String   @id @default(uuid())
   paymentId     String   @unique
   receiptNumber String   @unique
@@ -1084,4 +1112,186 @@ model AuditLog {
 
   @@index([entityType, entityId])
   @@index([actorId, createdAt])
+}
+
+// Class homework is separate from quizzes and lesson practice.
+enum HomeworkStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+enum HomeworkResponseType {
+  TEXT
+  FILE
+  AUDIO
+  MIXED
+}
+enum HomeworkSubmissionStatus {
+  DRAFT
+  SUBMITTED
+  RETURNED
+  GRADED
+}
+model Assignment {
+  id String @id @default(uuid())
+  classGroupId String
+  createdById String
+  title String
+  instructions String
+  responseType HomeworkResponseType @default(TEXT)
+  status HomeworkStatus @default(DRAFT)
+  dueAt DateTime?
+  releaseAt DateTime?
+  estimatedMinutes Int @default(20)
+  maxPoints Decimal @default(10) @db.Decimal(6, 2)
+  allowLate Boolean @default(true)
+  maxSubmissions Int @default(3)
+  questions Json @default("[]")
+  resources Json @default("[]")
+  rubric Json @default("[]")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  classGroup ClassGroup @relation(fields: [classGroupId], references: [id])
+  createdBy User @relation(fields: [createdById], references: [id])
+  recipients AssignmentRecipient[]
+  submissions AssignmentSubmission[]
+  files AssignmentFile[]
+  @@index([classGroupId, status, dueAt])
+}
+model AssignmentRecipient {
+  assignmentId String
+  studentId String
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  @@id([assignmentId, studentId])
+}
+model AssignmentSubmission {
+  id String @id @default(uuid())
+  assignmentId String
+  studentId String
+  status HomeworkSubmissionStatus @default(DRAFT)
+  text String @default("")
+  responses Json @default("{}")
+  questionScores Json @default("[]")
+  fileIds String[] @default([])
+  revision Int @default(0)
+  score Decimal? @db.Decimal(6, 2)
+  feedback String?
+  rubricScores Json?
+  submittedAt DateTime?
+  gradedAt DateTime?
+  updatedAt DateTime @updatedAt
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  student Student @relation(fields: [studentId], references: [id])
+  versions AssignmentVersion[]
+  @@unique([assignmentId, studentId])
+  @@index([status, assignmentId])
+}
+model AssignmentVersion {
+  id String @id @default(uuid())
+  submissionId String
+  revision Int
+  text String
+  responses Json @default("{}")
+  questionScores Json @default("[]")
+  fileIds String[]
+  submittedAt DateTime @default(now())
+  isLate Boolean @default(false)
+  score Decimal? @db.Decimal(6, 2)
+  feedback String?
+  rubricScores Json?
+  gradedAt DateTime?
+  gradedById String?
+  submission AssignmentSubmission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+  @@unique([submissionId, revision])
+}
+model AssignmentFile {
+  id String @id @default(uuid())
+  assignmentId String
+  uploaderId String
+  storageName String @unique
+  originalName String
+  mimeType String
+  sizeBytes Int
+  createdAt DateTime @default(now())
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  uploader User @relation(fields: [uploaderId], references: [id])
+  @@index([assignmentId, uploaderId])
+}
+
+model TeacherLevel {
+  teacherId String
+  levelId String
+  assignedById String?
+  assignedAt DateTime @default(now())
+  teacher User @relation("TeachingLevelTeacher", fields: [teacherId], references: [id], onDelete: Cascade)
+  level Level @relation(fields: [levelId], references: [id], onDelete: Cascade)
+  assignedBy User? @relation("TeachingLevelAssigner", fields: [assignedById], references: [id], onDelete: SetNull)
+  @@id([teacherId, levelId])
+  @@index([levelId])
+}
+
+model IdentifierCounter {
+  prefix String @id
+  value Int
+}
+model NotificationDelivery {
+  id String @id @default(uuid())
+  eventKey String? @unique
+  userId String
+  payload Json
+  email String
+  status String @default("PENDING")
+  attempts Int @default(0)
+  nextAttemptAt DateTime @default(now())
+  lastError String?
+  sentAt DateTime?
+  createdAt DateTime @default(now())
+  @@index([status, nextAttemptAt])
+}
+model UploadedFile {
+  name String @id
+  uploaderId String
+  mimeType String
+  createdAt DateTime @default(now())
+}
+
+// Gateway requests remain separate from received money in the ledger.
+enum CheckoutStatus {
+  INITIATING
+  PENDING
+  UNKNOWN
+  SUCCESSFUL
+  FAILED
+}
+
+model PaymentCheckout {
+  id             String         @id @default(uuid())
+  requestKey     String         @unique
+  studentId      String
+  phone          String
+  amount         Decimal        @db.Decimal(12, 2)
+  currency       String         @default("RWF")
+  status         CheckoutStatus @default(INITIATING)
+  providerRef    String?        @unique
+  paymentId      String?        @unique
+  lastCheckedAt  DateTime?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  student        Student        @relation(fields: [studentId], references: [id])
+  payment        Payment?       @relation(fields: [paymentId], references: [id])
+
+  @@index([studentId, createdAt])
+  @@index([status, lastCheckedAt])
+}
+
+// Durable inbox also handles callbacks that arrive before cashin returns.
+model PaypackEvent {
+  id          String   @id
+  providerRef String
+  payload     Json
+  processedAt DateTime?
+  createdAt   DateTime @default(now())
+
+  @@index([providerRef, processedAt])
 }

@@ -1,11 +1,12 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { FiArrowLeft, FiGrid, FiList } from 'react-icons/fi';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { CoursePaymentLock } from '../../components/student/CoursePaymentLock';
+import { useEffect,useMemo,useState } from 'react';
+import { FiArrowLeft,FiGrid,FiList } from 'react-icons/fi';
+import { Link,useParams } from 'react-router-dom';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { HorizontalCourseView } from '../../components/student/HorizontalCourseView';
+import { StudentCourseModules } from '../../components/student/StudentCourseModules';
 import { useApi } from '../../hooks/useApi';
 import { getMyCourses } from '../../lib/services';
-import { StudentCourseModules } from '../../components/student/StudentCourseModules';
-import { HorizontalCourseView } from '../../components/student/HorizontalCourseView';
 
 const LAYOUT_KEY = 'sparch.course.layout';
 
@@ -42,6 +43,8 @@ export function CourseContents() {
   if (courses.error || !courses.data) return <ErrorBlock message={courses.error ?? 'Could not load course.'} onRetry={courses.refetch} />;
   if (!course) return <EmptyBlock title="Not enrolled in this level" hint="Ask an admin to enrol you — only enrolled courses appear." />;
 
+  if (course?.paymentRequired) return <CoursePaymentLock title={course.level.title} />;
+
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
@@ -53,8 +56,8 @@ export function CourseContents() {
           <span className="font-medium text-brand">Modules</span>
         </span>
         <span className="flex items-center gap-1 rounded-full border border-line bg-base-100 p-1">
-          <button type="button" onClick={() => setLayout('vertical')} className={`btn btn-xs gap-1 rounded-full ${layout === 'vertical' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'vertical'}><FiList aria-hidden />Vertical</button>
-          <button type="button" onClick={() => setLayout('horizontal')} className={`btn btn-xs gap-1 rounded-full ${layout === 'horizontal' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'horizontal'}><FiGrid aria-hidden />Horizontal</button>
+          <button type="button" onClick={() => setLayout('vertical')} className={`btn btn-xs gap-1 rounded-full ${layout === 'vertical' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'vertical'}><FiList aria-hidden />Path</button>
+          <button type="button" onClick={() => setLayout('horizontal')} className={`btn btn-xs gap-1 rounded-full ${layout === 'horizontal' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'horizontal'}><FiGrid aria-hidden />Study</button>
         </span>
       </div>
 

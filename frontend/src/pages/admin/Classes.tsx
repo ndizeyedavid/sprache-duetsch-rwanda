@@ -1,200 +1,163 @@
-import { useState } from 'react';
-import type { FormEvent } from 'react';
-import { Panel, SectionHeader } from '../../components/ui/Panel';
-import { StatusBadge } from '../../components/ui/StatusBadge';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
-import { useApi } from '../../hooks/useApi';
-import { apiErrorMessage } from '../../lib/api';
+import { useState } from "react";
+import { FiPlus,FiSearch } from "react-icons/fi";
+import { AcademicSummary } from "../../components/admin/AcademicSummary";
+import { ClassEditorDialog } from "../../components/admin/ClassEditorDialog";
+import { ClassGroupGrid } from "../../components/admin/ClassGroupGrid";
 import {
- createClass,
- humanize,
- listCampusesFull,
- listClasses,
- listIntakesFull,
- listLevels,
- listTeachers,
-} from '../../lib/services';
-
-const SHIFTS = ['MORNING', 'AFTERNOON', 'EVENING', 'WEEKEND'] as const;
+EmptyBlock,
+ErrorBlock,
+LoadingBlock,
+} from "../../components/common/PageState";
+import { Panel,SectionHeader } from "../../components/ui/Panel";
+import { useApi } from "../../hooks/useApi";
+import type { ClassGroupItem } from "../../lib/services";
+import { listClasses,listTeachers } from "../../lib/services";
 
 export function AdminClasses() {
- const classes = useApi('admin-classes', listClasses);
- const levels = useApi('levels-catalog', listLevels);
- const intakes = useApi('intakes-full', listIntakesFull);
- const campuses = useApi('campuses-full', listCampusesFull);
- const teachers = useApi('teachers', listTeachers);
-
- const [code, setCode] = useState('');
- const [name, setName] = useState('');
- const [levelId, setLevelId] = useState('');
- const [intakeId, setIntakeId] = useState('');
- const [campusId, setCampusId] = useState('');
- const [teacherId, setTeacherId] = useState('');
- const [shift, setShift] = useState<string>('EVENING');
- const [capacity, setCapacity] = useState('30');
- const [room, setRoom] = useState('');
- const [formError, setFormError] = useState<string | null>(null);
- const [saving, setSaving] = useState(false);
-
- const levelName = (id: string): string => levels.data?.find((l) => l.id === id)?.code ?? '—';
-
- async function handleCreate(event: FormEvent) {
- event.preventDefault();
- setFormError(null);
- setSaving(true);
- try {
- await createClass({
- code: code.trim().toUpperCase(),
- name: name.trim(),
- levelId,
- intakeId,
- campusId,
- teacherId: teacherId || undefined,
- shift,
- capacity: Number(capacity) || undefined,
- room: room.trim() || undefined,
- });
- setCode('');
- setName('');
- setRoom('');
- classes.refetch();
- } catch (err) {
- setFormError(apiErrorMessage(err, 'Could not create the class.'));
- } finally {
- setSaving(false);
- }
- }
-
- return (
- <div className="grid gap-5 lg:grid-cols-3">
- <Panel className="lg:col-span-1">
- <SectionHeader title="Create a class" />
- <form onSubmit={handleCreate} className="space-y-3">
- <div className="grid gap-3 sm:grid-cols-2">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Code</span>
- <input required value={code} onChange={(e) => setCode(e.currentTarget.value)} placeholder="e.g. CLS-A1-01" className="input input w-full rounded-field border-line bg-base-200" />
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Class name</span>
- <input required value={name} onChange={(e) => setName(e.currentTarget.value)} placeholder="e.g. A1 Evening Group A" className="input input w-full rounded-field border-line bg-base-200" />
- </label>
- </div>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Level</span>
- <select required value={levelId} onChange={(e) => setLevelId(e.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">
- <option value="">Select level</option>
- {(levels.data ?? []).map((level) => (
- <option key={level.id} value={level.id}>
- {level.code} · {level.title}
- </option>
- ))}
- </select>
- </label>
- <div className="grid gap-3 sm:grid-cols-2">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Intake</span>
- <select required value={intakeId} onChange={(e) => setIntakeId(e.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">
- <option value="">Select intake</option>
- {(intakes.data ?? []).map((intake) => (
- <option key={intake.id} value={intake.id}>
- {intake.name}
- </option>
- ))}
- </select>
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Campus</span>
- <select required value={campusId} onChange={(e) => setCampusId(e.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">
- <option value="">Select campus</option>
- {(campuses.data ?? []).map((campus) => (
- <option key={campus.id} value={campus.id}>
- {campus.name}
- </option>
- ))}
- </select>
- </label>
- </div>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Teacher</span>
- <select value={teacherId} onChange={(e) => setTeacherId(e.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">
- <option value="">Assign teacher later</option>
- {(teachers.data ?? []).map((teacher) => (
- <option key={teacher.id} value={teacher.id}>
- {teacher.firstName} {teacher.lastName}
- </option>
- ))}
- </select>
- </label>
- <div className="grid gap-3 sm:grid-cols-3">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Shift</span>
- <select value={shift} onChange={(e) => setShift(e.currentTarget.value)} className="select w-full rounded-field border-line bg-base-200">
- {SHIFTS.map((option) => (
- <option key={option} value={option}>
- {humanize(option)}
- </option>
- ))}
- </select>
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Capacity</span>
- <input value={capacity} onChange={(e) => setCapacity(e.currentTarget.value)} inputMode="numeric" placeholder="e.g. 30" className="input input w-full rounded-field border-line bg-base-200" />
- </label>
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Room</span>
- <input value={room} onChange={(e) => setRoom(e.currentTarget.value)} placeholder="e.g. Room 2" className="input input w-full rounded-field border-line bg-base-200" />
- </label>
- </div>
- {formError ? (
- <p role="alert" className="text-xs font-medium text-error">
- {formError}
- </p>
- ) : null}
- <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
- {saving ? <span className="loading loading-spinner loading-sm" /> : 'Create class'}
- </button>
- </form>
- </Panel>
-
- <Panel className="lg:col-span-2">
- <SectionHeader title={`Classes (${classes.data?.length ?? 0})`} />
- {classes.loading ? (
- <LoadingBlock label="Loading classes…" />
- ) : classes.error || !classes.data ? (
- <ErrorBlock message={classes.error ?? 'Could not load classes.'} onRetry={classes.refetch} />
- ) : classes.data.length === 0 ? (
- <EmptyBlock title="No classes yet" hint="Create the first class group with the form." />
- ) : (
- <div className="overflow-x-auto">
- <table className="table w-full text-xs">
- <thead>
- <tr className="text-muted">
- <th className="text-left">Class</th>
- <th className="text-left">Level</th>
- <th className="text-left">Shift</th>
- <th className="text-left">Status</th>
- </tr>
- </thead>
- <tbody>
- {classes.data.map((group) => (
- <tr key={group.id} className="border-t border-line">
- <td className="py-3 pr-4">
- <p className="font-semibold">{group.name}</p>
- <p className="text-muted">{group.code}</p>
- </td>
- <td className="py-3 pr-4">{levelName(group.levelId)}</td>
- <td className="py-3 pr-4">{humanize(group.shift)}</td>
- <td className="py-3">
- <StatusBadge status="Active" />
- </td>
- </tr>
- ))}
- </tbody>
- </table>
- </div>
- )}
- </Panel>
- </div>
- );
+  const classes = useApi("admin-classes", listClasses);
+  const teachers = useApi("class-teacher-names", listTeachers);
+  const [editing, setEditing] = useState<ClassGroupItem | null>(null);
+  const [editorOpen, setEditorOpen] = useState(false);
+  const [success, setSuccess] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [level, setLevel] = useState("");
+  const rows = classes.data ?? [];
+  const needle = query.trim().toLowerCase();
+  const visible = rows.filter(
+    (r) =>
+      (!level || r.levelId === level) &&
+      (!needle ||
+        `${r.name} ${r.code} ${r.campus.name} ${r.intake.name}`
+          .toLowerCase()
+          .includes(needle)),
+  );
+  const names = Object.fromEntries(
+    (teachers.data ?? []).map((t) => [t.id, `${t.firstName} ${t.lastName}`]),
+  );
+  return (
+    <div className="space-y-5">
+      {classes.data && (
+        <AcademicSummary
+          items={[
+            {
+              label: "Class groups",
+              value: rows.length,
+              note: "Across campuses and intakes",
+            },
+            {
+              label: "Active classes",
+              value: rows.filter((r) => r.isActive).length,
+              note: "Available learning cohorts",
+            },
+            {
+              label: "Enrolments",
+              value: rows.reduce((n, r) => n + r._count.enrollments, 0),
+              note: "Enrolment records in these classes",
+            },
+            {
+              label: "Teacher needed",
+              value: rows.filter((r) => r.isActive && !r.teacherId).length,
+              note: "Active classes without an assignment",
+            },
+          ]}
+        />
+      )}
+      <div>
+        <Panel>
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <SectionHeader title="Class groups" className="mb-0" />
+            <button
+              className="btn btn-primary btn-sm rounded-full"
+              onClick={() => {
+                setEditing(null);
+                setEditorOpen(true);
+                setSuccess(null);
+              }}
+            >
+              <FiPlus aria-hidden />
+              New class
+            </button>
+          </div>
+          {success && (
+            <p
+              role="status"
+              className="alert alert-success alert-soft mb-4 text-xs"
+            >
+              {success}
+            </p>
+          )}
+          <div className="mb-4 flex flex-wrap gap-3">
+            <label className="input flex min-w-0 flex-1 items-center gap-2">
+              <FiSearch aria-hidden />
+              <input
+                aria-label="Search class groups"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search class, campus, or intake…"
+                className="min-w-0 grow"
+              />
+            </label>
+            <select
+              aria-label="Filter classes by level"
+              className="select w-full sm:w-auto"
+              value={level}
+              onChange={(e) => setLevel(e.target.value)}
+            >
+              <option value="">All levels</option>
+              {[
+                ...new Map(
+                  rows.map((r) => [r.levelId, r.level.code]),
+                ).entries(),
+              ].map(([id, code]) => (
+                <option key={id} value={id}>
+                  {code}
+                </option>
+              ))}
+            </select>
+          </div>
+          {classes.loading ? (
+            <LoadingBlock label="Loading classes…" />
+          ) : classes.error ? (
+            <ErrorBlock message={classes.error} onRetry={classes.refetch} />
+          ) : !visible.length ? (
+            <EmptyBlock
+              title={
+                rows.length ? "No matching classes" : "Create your first cohort"
+              }
+              hint={
+                rows.length
+                  ? "Try another search or level."
+                  : "Choose a level, campus, and intake to get started."
+              }
+            />
+          ) : (
+            <>
+              <p className="mb-3 text-xs text-base-content/55">
+                Showing {visible.length} of {rows.length} class groups
+              </p>
+              <ClassGroupGrid
+                rows={visible}
+                teacherNames={names}
+                onEdit={(row) => {
+                  setEditing(row);
+                  setEditorOpen(true);
+                  setSuccess(null);
+                }}
+              />
+            </>
+          )}
+        </Panel>
+      </div>
+      <ClassEditorDialog
+        open={editorOpen}
+        row={editing}
+        onClose={() => setEditorOpen(false)}
+        onSaved={() => {
+          classes.refetch();
+          setSuccess(editing ? "Class updated." : "Class created.");
+          setEditorOpen(false);
+        }}
+      />
+    </div>
+  );
 }

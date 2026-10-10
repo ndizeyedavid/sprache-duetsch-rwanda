@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { booleanQuery, idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { booleanQuery,idParam,nullableText,optionalText,paginationQuery } from "../../lib/query.js";
 
 export const shiftEnum = z.enum(["MORNING", "AFTERNOON", "EVENING", "WEEKEND"]);
 
@@ -9,10 +9,10 @@ export const createClassSchema = z.object({
   levelId: z.string().min(1),
   intakeId: z.string().min(1),
   campusId: z.string().min(1),
-  teacherId: z.string().min(1).optional(),
+  teacherId: z.string().min(1).nullable().optional(),
   shift: shiftEnum.default("EVENING"),
   capacity: z.coerce.number().int().positive().optional(),
-  room: optionalText(60),
+  room: nullableText(60),
   isActive: z.boolean().optional(),
 });
 

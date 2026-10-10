@@ -11,7 +11,7 @@ export function rosterStats(rows: { status: string | null }[], marks: Record<str
   const total = rows.length;
   const marked = total - counts.UNMARKED;
   const presentLike = counts.PRESENT + counts.LATE;
-  const rate = total ? Math.round((presentLike / total) * 100) : 0;
+  const rate = marked ? Math.round((presentLike / marked) * 100) : 0;
   return { counts, total, marked, rate };
 }
 

@@ -9,18 +9,24 @@ import { campusesRouter } from "./modules/campuses/campuses.routes.js";
 import { certificatesRouter } from "./modules/certificates/certificates.routes.js";
 import { classesRouter } from "./modules/classes/classes.routes.js";
 import { contentRouter } from "./modules/content/content.routes.js";
+import { coursebookRouter } from "./modules/content/coursebook.routes.js";
 import { dashboardsRouter } from "./modules/dashboards/dashboards.routes.js";
+import { demoRouter } from "./modules/demo/demo.routes.js";
+import { enrollmentRouter } from "./modules/enrollment/enrollment.routes.js";
 import { enrollmentsRouter } from "./modules/enrollments/enrollments.routes.js";
 import { intakesRouter } from "./modules/intakes/intakes.routes.js";
 import { levelsRouter } from "./modules/levels/levels.routes.js";
 import { messagesRouter } from "./modules/messages/messages.routes.js";
 import { notificationsRouter } from "./modules/notifications/notifications.routes.js";
-import { uploadsRouter } from "./modules/uploads/uploads.routes.js";
+import { paypackRouter } from "./modules/paypack/paypack.routes.js";
 import { paymentsRouter } from "./modules/payments/payments.routes.js";
-import { attendanceRouter, sessionsRouter } from "./modules/sessions/sessions.routes.js";
-import { enrollmentRouter } from "./modules/enrollment/enrollment.routes.js";
+import { receiptVerifyRouter } from "./modules/payments/receipt-verify.routes.js";
+import { attendanceRouter,sessionsRouter } from "./modules/sessions/sessions.routes.js";
 import { studentsRouter } from "./modules/students/students.routes.js";
+import { uploadsRouter } from "./modules/uploads/uploads.routes.js";
 import { usersRouter } from "./modules/users/users.routes.js";
+
+import { assignmentsRouter } from "./modules/assignments/assignments.routes.js";
 
 export const apiRouter = Router();
 
@@ -33,10 +39,14 @@ apiRouter.use("/users", usersRouter);
 apiRouter.use("/students", studentsRouter);
 apiRouter.use("/enrollments", enrollmentsRouter);
 apiRouter.use("/content", contentRouter);
+apiRouter.use("/content", coursebookRouter);
 apiRouter.use("/assessments", assessmentsRouter);
+apiRouter.use("/assignments", assignmentsRouter);
 apiRouter.use("/sessions", sessionsRouter);
 apiRouter.use("/attendance", attendanceRouter);
+apiRouter.use("/payments/paypack", paypackRouter);
 apiRouter.use("/payments", paymentsRouter);
+apiRouter.use("/receipts", receiptVerifyRouter);
 apiRouter.use("/dashboards", dashboardsRouter);
 apiRouter.use("/notifications", notificationsRouter);
 apiRouter.use("/messages", messagesRouter);
@@ -45,6 +55,7 @@ apiRouter.use("/articles", articlesRouter);
 apiRouter.use("/certificates", certificatesRouter);
 apiRouter.use("/uploads", uploadsRouter);
 apiRouter.use("/enrollment", enrollmentRouter);
+apiRouter.use("/demo", demoRouter);
 
 apiRouter.get(
   "/health",

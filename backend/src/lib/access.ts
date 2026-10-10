@@ -1,7 +1,9 @@
 import { env } from "../config/env.js";
-import type { AccountStatus, PaymentStatus } from "../generated/prisma/client.js";
-import { forbidden, notFound } from "./http-error.js";
+import type { AccountStatus,PaymentStatus } from "../generated/prisma/client.js";
+import { recalculateStudentFinance } from "./finance.js";
+import { forbidden,notFound } from "./http-error.js";
 import { prisma } from "./prisma.js";
+import { paidCourseEnrollments,paidEnrollments as paidClassEnrollments } from './course-payment-access.js';
 
 // Snapshot of what a student account is allowed to reach. Built once per request.
 export interface StudentAccessProfile {
@@ -9,9 +11,12 @@ export interface StudentAccessProfile {
   status: AccountStatus;
   currentLevelId: string | null;
   levelIds: string[];
+  enrolledLevelIds: string[];
+  coursePaymentsChecked: boolean;
   classGroupIds: string[];
   paymentStatus: PaymentStatus | null;
   balance: number;
+  overdueAmount: number;
 }
 
 export const loadStudentAccessProfile = async (userId: string): Promise<StudentAccessProfile> => {
@@ -24,7 +29,7 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
       finance: { select: { status: true, balance: true } },
       enrollments: {
         where: { status: { in: ["ACTIVE", "COMPLETED"] } },
-        select: { levelId: true, classGroupId: true },
+        select: { id: true, levelId: true, classGroupId: true, totalFee: true, enrolledAt: true },
       },
     },
   });
@@ -33,27 +38,28 @@ export const loadStudentAccessProfile = async (userId: string): Promise<StudentA
     throw forbidden("No student profile is linked to this account");
   }
 
-  const levelIds = new Set<string>();
-  if (student.currentLevelId) {
-    levelIds.add(student.currentLevelId);
-  }
+  const finance = await recalculateStudentFinance(prisma, student.id);
+  const charges = await prisma.charge.findMany({ where: { studentId: student.id } });
+  const credit = finance.totalPaid.plus(finance.totalDiscount);
+  const paidEnrollments = paidCourseEnrollments(student.enrollments, charges, credit);
 
-  const classGroupIds: string[] = [];
-  for (const enrollment of student.enrollments) {
-    levelIds.add(enrollment.levelId);
-    if (enrollment.classGroupId) {
-      classGroupIds.push(enrollment.classGroupId);
-    }
-  }
+  const levelIds = paidEnrollments.map(row => row.levelId);
+  // Classes come from every paid enrolment, not just the newest per level, so a later
+  // class-less enrolment in the same level cannot empty the student's schedule.
+  const classGroupIds = [...new Set(paidClassEnrollments(student.enrollments, charges, credit)
+    .flatMap(row => row.classGroupId ? [row.classGroupId] : []))];
 
   return {
     studentId: student.id,
     status: student.status,
     currentLevelId: student.currentLevelId,
-    levelIds: [...levelIds],
+    levelIds,
+    enrolledLevelIds: [...new Set(student.enrollments.map(row => row.levelId))],
+    coursePaymentsChecked: true,
     classGroupIds,
-    paymentStatus: student.finance?.status ?? null,
-    balance: student.finance ? Number(student.finance.balance) : 0,
+    paymentStatus: finance.status ?? null,
+    balance: Number(finance.balance),
+    overdueAmount: Number(finance.overdueAmount),
   };
 };
 
@@ -69,6 +75,7 @@ export const assertLevelAccess = async (userId: string, levelId: string): Promis
   const profile = await loadStudentAccessProfile(userId);
   assertAccountActive(profile);
   if (!profile.levelIds.includes(levelId)) {
+    if (profile.enrolledLevelIds.includes(levelId)) throw forbidden('Complete payment for this course to unlock its learning content');
     throw forbidden("You do not have access to this level");
   }
 };
@@ -83,11 +90,14 @@ export const assertPaymentAccess = (
   profile: StudentAccessProfile,
   resource: PaidResource,
 ): void => {
+  // Course-level entitlement already restricts the level/class IDs above. A debt
+  // on another course must not block a course the student has fully paid for.
+  if (profile.coursePaymentsChecked) return;
   if (env.UNPAID_ACCESS === "FULL") {
     return;
   }
 
-  const owing = profile.balance > 0 || profile.paymentStatus === "OVERDUE";
+  const owing = profile.overdueAmount > 0;
   if (!owing) {
     return;
   }

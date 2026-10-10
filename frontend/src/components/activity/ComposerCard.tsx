@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { profilePhotoUrl } from '../../lib/profile-photo';
 import type { FormEvent } from 'react';
-import { FiAlertCircle, FiSend } from 'react-icons/fi';
+import { useState } from 'react';
+import { FiAlertCircle,FiSend } from 'react-icons/fi';
 import { apiErrorMessage } from '../../lib/api';
-import { humanize, postFeedEvent } from '../../lib/services';
+import { humanize,postFeedEvent } from '../../lib/services';
 import { POST_TYPES } from './constants';
 import { initials } from './utils';
 
@@ -31,7 +32,7 @@ export function ComposerCard({ displayName, avatarUrl, onPosted }: Props) {
  <form onSubmit={handleSubmit} className="p-4">
  <div className="flex gap-3">
  {avatarUrl ? (
- <img src={avatarUrl} alt={displayName} className="size-9 shrink-0 rounded-full object-cover" />
+ <img src={profilePhotoUrl(avatarUrl)} alt={displayName} className="size-9 shrink-0 rounded-full object-cover" />
  ) : (
  <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">{initials(displayName)}</span>
  )}
@@ -51,14 +52,14 @@ export function ComposerCard({ displayName, avatarUrl, onPosted }: Props) {
   </select>
   <span className="ml-auto flex gap-2">
   <button type="button" onClick={() => { setExpanded(false); setError(null); }} className="btn btn-sm rounded-full border-line bg-base-100">Cancel</button>
-  <button type="submit" disabled={posting} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  <button type="submit" disabled={posting} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
   {posting ? <span className="loading loading-spinner loading-xs" /> : <FiSend aria-hidden />}Publish
   </button>
   </span>
   </div>
   </div>
  </div>
- {error ? <p role="alert" className="mt-2 flex gap-2 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]"><FiAlertCircle aria-hidden className="mt-0.5 shrink-0" />{error}</p> : null}
+ {error ? <p role="alert" className="mt-2 flex gap-2 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]"><FiAlertCircle aria-hidden className="mt-0.5 shrink-0" />{error}</p> : null}
  </form>
  </div>
  );

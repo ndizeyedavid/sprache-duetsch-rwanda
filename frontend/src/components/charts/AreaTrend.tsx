@@ -1,7 +1,7 @@
-import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area,AreaChart,CartesianGrid,Legend,ResponsiveContainer,Tooltip,XAxis,YAxis } from 'recharts';
 import { COLORS } from '../../lib/theme';
 import { ChartTooltip } from './ChartTooltip';
-import type { TrendDatum, TrendSeries } from './LineTrend';
+import type { TrendDatum,TrendSeries } from './LineTrend';
 
 type AreaTrendProps = {
  data: TrendDatum[];

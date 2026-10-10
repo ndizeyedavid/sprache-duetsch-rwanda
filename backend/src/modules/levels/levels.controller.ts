@@ -1,6 +1,6 @@
-import type { Request, Response } from "express";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
-import type { CreateLevelInput, ListLevelQuery, UpdateLevelInput } from "./levels.schema.js";
+import type { Request,Response } from "express";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
+import type { CreateLevelInput,ListLevelQuery,UpdateLevelInput } from "./levels.schema.js";
 import * as service from "./levels.service.js";
 
 export const list = async (req: Request, res: Response): Promise<void> => {

@@ -1,5 +1,6 @@
 import { z } from "zod";
-import { idParam, paginationQuery } from "../../lib/query.js";
+import { idParam,paginationQuery } from "../../lib/query.js";
+import { installmentsSchema } from "./tuition-schedule.js";
 
 export const enrollmentStatusEnum = z.enum(["ACTIVE", "COMPLETED", "WITHDRAWN", "DEFERRED"]);
 
@@ -14,6 +15,8 @@ export const listEnrollmentsQuerySchema = z.object({
 });
 
 export const createEnrollmentSchema = z.object({
+  installments: installmentsSchema.optional(),
+  windowOverrideReason: z.string().trim().min(10).max(500).optional(),
   studentId: z.string().min(1),
   levelId: z.string().min(1),
   intakeId: z.string().min(1),
@@ -27,6 +30,8 @@ export const createEnrollmentSchema = z.object({
 
 export const updateEnrollmentSchema = z
   .object({
+    installments: installmentsSchema.optional(),
+    reason: z.string().trim().min(5).max(500).optional(),
     classGroupId: z.string().min(1).nullable().optional(),
     status: enrollmentStatusEnum.optional(),
     totalFee: z.coerce.number().min(0).optional(),

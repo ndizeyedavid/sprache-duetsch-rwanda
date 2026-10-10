@@ -1,174 +1,32 @@
-import { Link } from "react-router-dom";
-import {
-  FiBookOpen,
-  FiCheckCircle,
-  FiChevronDown,
-  FiChevronUp,
-  FiFileText,
-  FiFilm,
-  FiLayers,
-  FiMusic,
-} from "react-icons/fi";
-import { ProgressBar } from "../ui/ProgressBar";
-import { humanize } from "../../lib/services";
-import type { MyCourse } from "../../lib/services";
+import { useState } from 'react';
+import { FiCheck,FiChevronDown,FiChevronRight,FiSearch } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import type { MyCourse } from '../../lib/services';
 
-function contentIcon(type: string) {
-  switch (type) {
-    case "VIDEO":
-      return FiFilm;
-    case "AUDIO":
-      return FiMusic;
-    case "PDF":
-      return FiFileText;
-    case "MIXED":
-      return FiLayers;
-    default:
-      return FiBookOpen;
-  }
-}
+type Props = { course: MyCourse; slug: string; activeLessonId: string | null; collapsed: Set<string>; onToggle: (id: string) => void; onSelect?: (id: string) => void };
 
-type Props = {
-  course: MyCourse;
-  slug: string;
-  activeLessonId: string | null;
-  collapsed: Set<string>;
-  onToggle: (id: string) => void;
-  onSelect?: (id: string) => void;
-};
-
-export function CourseSidebar({
-  course,
-  slug,
-  activeLessonId,
-  collapsed,
-  onToggle,
-  onSelect,
-}: Props) {
-  return (
-    <nav aria-label="Course content" className="space-y-3">
-      <div className="rounded-box border border-line bg-base-100 p-3">
-        <p className="text-[11px] font-semibold uppercase tracking-wide text-brand">
-          {course.level.code} · {course.level.levelLabel}
-        </p>
-        <Link
-          to={`/courses/${slug.toLowerCase()}`}
-          className="mt-1 block text-sm font-bold leading-tight hover:text-brand hover:underline"
-        >
-          {course.level.title}
-        </Link>
-        <div className="mt-2">
-          <ProgressBar value={course.stats.completionPercentage} tone="brand" />
-        </div>
-        <p className="mt-1.5 text-xs text-muted">
-          {course.stats.completedLessons}/{course.stats.totalLessons} lessons ·{" "}
-          {course.stats.completionPercentage}%
-        </p>
-      </div>
-      {course.modules
-        .slice()
-        .sort((a, b) => a.order - b.order)
-        .map((mod) => {
-          const done = mod.lessons.filter(
-            (l) => l.progressStatus === "COMPLETED",
-          ).length;
-          const isCollapsed = collapsed.has(mod.id);
-          const lessons = [...mod.lessons].sort((a, b) => a.order - b.order);
-          return (
-            <div
-              key={mod.id}
-              className="overflow-hidden rounded-box border border-line bg-base-100"
-            >
-              <button
-                type="button"
-                onClick={() => onToggle(mod.id)}
-                className="flex w-full items-center gap-2 bg-base-200 px-3 py-2.5 text-left"
-              >
-                <span className="min-w-0 grow">
-                  <span className="block truncate text-xs font-bold leading-tight">
-                    {mod.title}
-                  </span>
-                  <span className="block text-[11px] text-muted">
-                    {done}/{lessons.length} ·{" "}
-                    {mod.description?.slice(0, 40) ?? ""}
-                  </span>
-                </span>
-                {isCollapsed ? (
-                  <FiChevronDown aria-hidden className="text-muted" />
-                ) : (
-                  <FiChevronUp aria-hidden className="text-muted" />
-                )}
-              </button>
-              {!isCollapsed ? (
-                <ul className="divide-y divide-line">
-                  {lessons.map((lesson) => {
-                    const Icon = contentIcon(lesson.contentType);
-                    const active = lesson.id === activeLessonId;
-                    const Row = (
-                      <>
-                        <span
-                          className={`flex size-7 shrink-0 items-center justify-center rounded-full text-xs ${active || lesson.progressStatus === "COMPLETED" ? "bg-brand text-white" : "bg-base-200 text-muted"}`}
-                        >
-                          {lesson.progressStatus === "COMPLETED" ? (
-                            <FiCheckCircle aria-hidden />
-                          ) : (
-                            <Icon aria-hidden />
-                          )}
-                        </span>
-                        <span className="min-w-0 grow">
-                          <span
-                            className={`block truncate text-xs font-medium leading-tight ${active ? "text-brand" : ""}`}
-                          >
-                            {lesson.title}
-                          </span>
-                          <span
-                            className={`block text-[11px] ${active ? "text-brand/70" : "text-muted"}`}
-                          >
-                            {humanize(lesson.contentType)} ·{" "}
-                            {lesson.progressStatus === "COMPLETED"
-                              ? "Completed"
-                              : lesson.progressStatus === "IN_PROGRESS"
-                                ? "In progress"
-                                : `${lesson.estimatedMinutes ?? ""} min`}
-                          </span>
-                        </span>
-                        <span
-                          className={`hidden size-2 shrink-0 rounded-full ${lesson.progressStatus === "COMPLETED" ? "bg-brand" : lesson.progressStatus === "IN_PROGRESS" ? "bg-sun" : "bg-base-300"}`}
-                          aria-hidden
-                        />
-                      </>
-                    );
-                    return (
-                      <li key={lesson.id}>
-                        {onSelect ? (
-                          <button
-                            type="button"
-                            onClick={() => onSelect(lesson.id)}
-                            className={`flex w-full items-center gap-2 px-3 py-2.5 text-left transition ${active ? "bg-brand-soft text-brand border-l-4 border-brand" : "hover:bg-base-200/60 border-l-4 border-transparent"}`}
-                          >
-                            {Row}
-                          </button>
-                        ) : (
-                          <Link
-                            to={`/courses/${slug}/learn/${lesson.id}`}
-                            className={`flex items-center gap-2 px-3 py-2.5 text-left transition ${active ? "bg-brand-soft text-brand border-l-4 border-brand" : "hover:bg-base-200/60 border-l-4 border-transparent"}`}
-                          >
-                            {Row}
-                          </Link>
-                        )}
-                      </li>
-                    );
-                  })}
-                  {lessons.length === 0 ? (
-                    <li className="px-3 py-4 text-center text-xs text-muted">
-                      No lessons yet
-                    </li>
-                  ) : null}
-                </ul>
-              ) : null}
-            </div>
-          );
-        })}
-    </nav>
-  );
+export function CourseSidebar({ course, slug, activeLessonId, collapsed, onToggle, onSelect }: Props) {
+  const [query, setQuery] = useState('');
+  const needle = query.trim().toLowerCase();
+  const modules = course.modules.slice().sort((a, b) => a.order - b.order);
+  const matches = modules.some(m => m.lessons.some(l => l.title.toLowerCase().includes(needle)) || m.title.toLowerCase().includes(needle));
+  return <nav aria-label="Course content" className="card overflow-hidden border border-base-300/70 bg-base-100">
+    <div className="journey-hero relative border-b border-base-300/60 p-5"><img src="/illustrations/study-books.webp" alt="" aria-hidden="true" width={400} height={366} className="pointer-events-none absolute right-3 top-3 h-14 w-16 object-contain" /><p className="pr-14 text-[10px] font-semibold uppercase tracking-widest text-primary-content">{course.level.code} · Learning guide</p><Link to={`/courses/${slug}`} className="mt-2 block pr-12 text-base font-semibold leading-snug">{course.level.title}</Link><div className="mt-4 flex justify-between text-[10px] text-primary-content"><span>{course.stats.completedLessons}/{course.stats.totalLessons} complete</span><span>{course.stats.completionPercentage}%</span></div><progress className="progress mt-2 h-1.5 w-full text-primary-content" value={course.stats.completedLessons} max={course.stats.totalLessons || 1} aria-label="Course completion" /></div>
+    <div className="p-3"><label className="input input-sm w-full rounded-xl border-base-300 bg-base-200/40"><FiSearch aria-hidden /><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Find a lesson…" aria-label="Find a course lesson" />{query ? <button type="button" onClick={() => setQuery('')} aria-label="Clear lesson search" className="btn btn-ghost btn-xs btn-circle">×</button> : null}</label></div>
+    <div className="px-2 pb-3">{modules.map((m, i) => {
+      const lessons = m.lessons.slice().sort((a, b) => a.order - b.order).filter(l => !needle || m.title.toLowerCase().includes(needle) || l.title.toLowerCase().includes(needle));
+      if (needle && !lessons.length) return null;
+      const closed = !needle && collapsed.has(m.id);
+      const done = m.lessons.filter(l => l.progressStatus === 'COMPLETED').length;
+      return <section key={m.id} className="mb-2"><button type="button" onClick={() => onToggle(m.id)} aria-expanded={!closed} aria-controls={`module-${m.id}`} className="flex w-full items-center gap-2 rounded-xl px-3 py-3 text-left hover:bg-base-200"><span className="min-w-0 flex-1"><span className="block text-[9px] uppercase tracking-widest text-base-content/45">Section {String(i + 1).padStart(2, '0')} · {done}/{m.lessons.length}</span><span className="mt-1 block text-xs font-semibold">{m.title}</span></span>{closed ? <FiChevronRight aria-hidden /> : <FiChevronDown aria-hidden />}</button>
+        {!closed ? <ul id={`module-${m.id}`} className="menu menu-sm w-full gap-1 p-0">{lessons.map(l => {
+          const active = l.id === activeLessonId;
+          const complete = l.progressStatus === 'COMPLETED';
+          const row = <><span className={`grid size-6 shrink-0 place-items-center rounded-lg text-[10px] ${active ? 'bg-primary-content/20 text-primary-content' : complete ? 'bg-success/10 text-success' : 'bg-base-200 text-base-content/50'}`}>{complete ? <FiCheck aria-hidden /> : l.order}</span><span className="min-w-0 flex-1"><span className="block text-xs leading-5">{l.title}</span><span className="block text-[9px] opacity-65">{active ? 'You are here' : complete ? 'Completed' : l.progressStatus === 'IN_PROGRESS' ? 'In progress' : 'Not started'}{l.estimatedMinutes ? ` · ${l.estimatedMinutes} min` : ''}</span></span></>;
+          const style = `flex gap-2 rounded-xl px-3 py-2.5 ${active ? 'bg-primary! font-semibold text-primary-content!' : 'hover:bg-base-200'}`;
+          return <li key={l.id}>{onSelect ? <button type="button" onClick={() => onSelect(l.id)} aria-current={active ? 'page' : undefined} className={style}>{row}</button> : <Link to={`/courses/${slug}/learn/${l.id}`} aria-current={active ? 'page' : undefined} className={style}>{row}</Link>}</li>;
+        })}{!lessons.length ? <li className="px-3 py-2 text-xs text-base-content/50">No lessons yet.</li> : null}</ul> : null}
+      </section>;
+    })}{!matches ? <p className="p-4 text-center text-xs text-base-content/55">No lessons found.</p> : null}</div>
+  </nav>;
 }

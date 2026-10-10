@@ -1,21 +1,29 @@
 type SegmentedControlProps = {
- options: string[];
- value: string;
- onChange: (value: string) => void;
- ariaLabel?: string;
- className?: string;
+  options: string[];
+  value: string;
+  onChange: (value: string) => void;
+  ariaLabel?: string;
+  className?: string;
+  /** Wrap onto a second line instead of overflowing a narrow container. */
+  wrap?: boolean;
 };
 
 /** Pill switcher used for "Last Week / This Week" and "Insight / Selling". */
 export function SegmentedControl({
- options,
- value,
- onChange,
- ariaLabel = 'View',
- className = '',
+  options,
+  value,
+  onChange,
+  ariaLabel = 'View',
+  className = '',
+  wrap = false,
 }: SegmentedControlProps) {
- return (
- <div role="group" aria-label={ariaLabel} className={`flex items-center gap-1 ${className}`}>
+  return (
+    <div
+      role="group"
+      aria-label={ariaLabel}
+      className={`flex items-center gap-1 ${wrap ? 'flex-wrap' : ''} ${className}`}
+    >
+
  {options.map((option) => {
  const selected = option === value;
  return (

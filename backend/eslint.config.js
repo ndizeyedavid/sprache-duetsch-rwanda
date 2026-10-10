@@ -21,6 +21,7 @@ export default defineConfig([
       },
     },
     rules: {
+      "max-lines": ["error", { "max": 200, "skipBlankLines": false, "skipComments": false }],
       "@typescript-eslint/no-unused-vars": [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },

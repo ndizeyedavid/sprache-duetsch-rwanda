@@ -1,18 +1,18 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { sendCsv } from "../../lib/csv.js";
 import { unauthorized } from "../../lib/http-error.js";
-import { actorId, validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import type {
-  AttendanceSummaryQuery,
-  CancelSessionInput,
-  CreateSessionInput,
-  CreateSessionMaterialInput,
-  ListSessionsQuery,
-  MarkAttendanceInput,
-  RescheduleSessionInput,
-  StudentSessionsQuery,
-  UpdateAttendanceInput,
-  UpdateSessionInput,
+AttendanceSummaryQuery,
+CancelSessionInput,
+CreateSessionInput,
+CreateSessionMaterialInput,
+ListSessionsQuery,
+MarkAttendanceInput,
+RescheduleSessionInput,
+StudentSessionsQuery,
+UpdateAttendanceInput,
+UpdateSessionInput,
 } from "./sessions.schema.js";
 import * as service from "./sessions.service.js";
 
@@ -140,6 +140,12 @@ export const mySessions = async (req: Request, res: Response): Promise<void> => 
 export const mySession = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
   const data = await service.getMySession(currentUserId(req), id);
+  res.json({ success: true, data });
+};
+
+export const joinMySession = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const data = await service.recordStudentJoin(currentUserId(req), id);
   res.json({ success: true, data });
 };
 

@@ -1,10 +1,10 @@
-import type { ActivityEventType, Prisma, Role } from "../../generated/prisma/client.js";
+import type { ActivityEventType,Prisma,Role } from "../../generated/prisma/client.js";
+import { writeAudit } from "../../lib/audit.js";
 import { notFound } from "../../lib/http-error.js";
 import { logger } from "../../lib/logger.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
-import { writeAudit } from "../../lib/audit.js";
-import type { CreateEventInput, ListFeedQuery } from "./activity.schema.js";
+import type { CreateEventInput,ListFeedQuery } from "./activity.schema.js";
 
 export interface EmitActivityInput {
   actorId?: string | null;
@@ -88,6 +88,7 @@ export const getFeed = async (userId: string, role: Role, query: ListFeedQuery) 
 
   const where: Prisma.ActivityEventWhereInput = {};
   if (query.type) where.type = query.type;
+  if (role === "ACADEMIC_ADMIN") where.AND = [{ type: { not: "PAYMENT" } }];
   if (query.levelId) where.levelId = query.levelId;
   if (query.classGroupId) where.classGroupId = query.classGroupId;
 

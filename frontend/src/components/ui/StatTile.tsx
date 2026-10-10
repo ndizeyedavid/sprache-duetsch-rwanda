@@ -31,7 +31,7 @@ export function StatTile({
  return (
  <div
  className={` relative overflow-hidden rounded-box p-5 ${
- solid ? `${tones.bg} text-white` : 'bg-base-100'
+ solid ? `${tones.bg} text-white` : 'learning-panel'
  } ${className}`}
  >
  <div className="flex items-start justify-between gap-3">

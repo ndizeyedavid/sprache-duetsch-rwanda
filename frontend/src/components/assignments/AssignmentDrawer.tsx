@@ -1,7 +1,7 @@
-import { FiCalendar, FiX } from "react-icons/fi";
+import { FiCalendar,FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import type { AssignmentItem } from "../../lib/services";
-import { STATUS_LABEL, STATUS_TONE } from "./constants";
+import { STATUS_LABEL,STATUS_TONE } from "./constants";
 import { humanType } from "./utils";
 
 type Props = { open: boolean; onClose: () => void; item: AssignmentItem | null };

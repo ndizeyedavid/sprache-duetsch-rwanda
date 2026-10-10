@@ -1,4 +1,4 @@
-import { EmptyBlock, ErrorBlock, LoadingBlock } from "../common/PageState";
+import { EmptyBlock,ErrorBlock,LoadingBlock } from "../common/PageState";
 import { FeedItem } from "./FeedItem";
 
 type Group = { label: string; items: { id: string; title: string; body: string | null; type: string; actorName: string | null; actorAvatarUrl?: string | null; createdAt: string }[] };
@@ -22,7 +22,7 @@ export function ActivityFeed({ groups, loading, error, onRetry, fetching, hasQue
   return (
     <div className="relative">
       {fetching ? (
-        <div className="pointer-events-none absolute inset-0 z-10 flex items-start justify-center rounded-box bg-base-100/60 pt-6 backdrop-blur-[1px]" aria-live="polite" aria-busy="true">
+        <div className="pointer-events-none absolute inset-0 z-10 flex items-start justify-center rounded-box bg-base-100 pt-6 -[1px]" aria-live="polite" aria-busy="true">
           <span className="inline-flex items-center gap-2 rounded-full border border-line bg-base-100 px-4 py-2 text-xs font-medium">
             <span className="loading loading-spinner loading-xs text-brand" aria-hidden /> Updating feed…
           </span>
@@ -31,7 +31,7 @@ export function ActivityFeed({ groups, loading, error, onRetry, fetching, hasQue
       <div className={`space-y-6 transition ${fetching ? "opacity-60" : "opacity-100"}`} aria-busy={fetching}>
         {groups.map((g) => (
           <div key={g.label}>
-            <div className="sticky top-0 z-10 -mx-5 bg-base-100/80 px-5 py-2 backdrop-blur">
+            <div className="sticky top-0 z-10 -mx-5 bg-base-100 px-5 py-2 ">
               <h2 className="inline-flex rounded-full bg-base-200 px-3 py-1 text-xs font-bold tracking-wide text-muted">{g.label}</h2>
             </div>
             <ul className="mt-3">

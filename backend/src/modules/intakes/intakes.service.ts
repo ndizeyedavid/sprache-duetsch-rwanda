@@ -1,9 +1,11 @@
 import { Prisma } from "../../generated/prisma/client.js";
 import { writeAudit } from "../../lib/audit.js";
-import { conflict, notFound } from "../../lib/http-error.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { conflict,notFound } from "../../lib/http-error.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
-import type { CreateIntakeInput, ListIntakeQuery, UpdateIntakeInput } from "./intakes.schema.js";
+import { validateIntakeDates } from "../enrollments/enrollment-policy.js";
+import type { CreateIntakeInput,ListIntakeQuery,UpdateIntakeInput } from "./intakes.schema.js";
+import { intakeLevelSelect, validateIntakeLevels } from './intake-levels.js';
 
 export const listIntakes = async (query: ListIntakeQuery) => {
   const pagination = parsePagination(query);
@@ -24,6 +26,7 @@ export const listIntakes = async (query: ListIntakeQuery) => {
 
   const [rows, total] = await prisma.$transaction([
     prisma.intake.findMany({
+      include: { levels: { select: intakeLevelSelect } },
       where,
       orderBy: { startDate: "desc" },
       skip: pagination.skip,
@@ -38,7 +41,7 @@ export const listIntakes = async (query: ListIntakeQuery) => {
 export const getIntake = async (id: string) => {
   const intake = await prisma.intake.findUnique({
     where: { id },
-    include: { _count: { select: { enrollments: true, classes: true } } },
+    include: { levels: { select: intakeLevelSelect }, _count: { select: { enrollments: true, classes: true } } },
   });
 
   if (!intake) {
@@ -49,6 +52,8 @@ export const getIntake = async (id: string) => {
 };
 
 export const createIntake = async (input: CreateIntakeInput, actorId?: string) => {
+  await validateIntakeLevels(input.levelIds);
+  validateIntakeDates(input);
   const existing = await prisma.intake.findUnique({
     where: { code: input.code },
     select: { id: true },
@@ -59,6 +64,7 @@ export const createIntake = async (input: CreateIntakeInput, actorId?: string) =
 
   const intake = await prisma.intake.create({
     data: {
+      levels: { connect: input.levelIds.map(id => ({ id })) },
       code: input.code,
       name: input.name,
       startDate: input.startDate,
@@ -84,11 +90,15 @@ export const createIntake = async (input: CreateIntakeInput, actorId?: string) =
 };
 
 export const updateIntake = async (id: string, input: UpdateIntakeInput, actorId?: string) => {
-  const before = await prisma.intake.findUnique({ where: { id } });
+  const before = await prisma.intake.findUnique({ where: { id }, include: { levels: { select: intakeLevelSelect } } });
   if (!before) {
     throw notFound("Intake not found");
   }
 
+  validateIntakeDates({ ...before, ...input });
+  if (input.levelIds) await validateIntakeLevels(input.levelIds, id);
+  else if (input.isActive === true) await validateIntakeLevels(before.levels.map(level => level.id), id);
+  if (input.currency && input.currency !== before.currency && await prisma.enrollment.count({ where: { intakeId: id } })) throw conflict("Currency cannot change after enrolment");
   if (input.code && input.code !== before.code) {
     const duplicate = await prisma.intake.findUnique({
       where: { code: input.code },
@@ -100,6 +110,7 @@ export const updateIntake = async (id: string, input: UpdateIntakeInput, actorId
   }
 
   const data: Prisma.IntakeUpdateInput = {
+    levels: input.levelIds ? { set: input.levelIds.map(id => ({ id })) } : undefined,
     code: input.code,
     name: input.name,
     startDate: input.startDate,

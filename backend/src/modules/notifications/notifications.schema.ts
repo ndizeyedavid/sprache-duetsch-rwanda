@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { booleanQuery, idParam, paginationQuery } from "../../lib/query.js";
+import { booleanQuery,idParam,paginationQuery } from "../../lib/query.js";
 
 export const notificationTypeEnum = z.enum([
   "ANNOUNCEMENT",
@@ -47,6 +47,14 @@ export const createAnnouncementSchema = z.object({
 });
 
 export const notificationIdSchema = idParam;
+export const notificationPreferencesSchema = z.object({
+  email: z.boolean(),
+  inApp: z.boolean(),
+  schedule: z.boolean(),
+  exam: z.boolean(),
+  payment: z.boolean(),
+});
 
 export type ListNotificationQuery = z.infer<typeof listNotificationQuerySchema>;
 export type CreateAnnouncementInput = z.infer<typeof createAnnouncementSchema>;
+export type NotificationPreferences = z.infer<typeof notificationPreferencesSchema>;

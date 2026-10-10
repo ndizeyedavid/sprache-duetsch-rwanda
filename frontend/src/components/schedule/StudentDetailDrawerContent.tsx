@@ -1,0 +1,122 @@
+import { FiCalendar,FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
+import { isoDate,isoTime } from '../../lib/services';
+import { sessionStatusLabel,sessionTone,teacherName } from '../../lib/sessions-ui';
+import { TONE_CLASSES } from '../../lib/theme';
+import type { SessionMaterial } from './SessionMaterials';
+import { SessionMaterials } from './SessionMaterials';
+
+export type StudentSessionDetail = {
+  id: string;
+  title: string;
+  startAt: string;
+  endAt: string;
+  timezone: string | null;
+  mode: string;
+  provider: string | null;
+  status: string;
+  meetingUrl: string | null;
+  room: string | null;
+  notes: string | null;
+  recordingUrl?: string | null;
+  accessMessage?: string | null;
+  materials?: SessionMaterial[];
+  teacher: { firstName: string; lastName: string } | null;
+  classGroup: { id: string; name: string } | null;
+};
+
+export function StudentDetailDrawerContent({session,onClose}:{session:StudentSessionDetail;onClose:()=>void}) {
+  const expired = Date.parse(session.endAt)<=Date.now();
+ const tone = expired ? 'muted' : sessionTone(session.status);
+  const tc = TONE_CLASSES[tone];
+  const isLive = session.status === 'LIVE';
+  const canJoin = !session.accessMessage && !['CANCELLED','COMPLETED'].includes(session.status) && Date.parse(session.endAt)>Date.now();
+  return (
+    <div className="fixed inset-0 z-40 flex justify-end">
+      <button type="button" aria-label="Close" onClick={onClose} className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+      <div className="relative flex h-full w-full max-w-md flex-col bg-base-100">
+        <div className="shrink-0 border-b border-line p-5 pr-12">
+          <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-medium ${tc.soft} ${tc.text}`}>{expired && !['COMPLETED','CANCELLED'].includes(session.status) ? 'Ended' : sessionStatusLabel(session.status)}</span>
+          <h3 className="mt-2 text-base font-bold leading-tight">{session.title || 'Untitled session'}</h3>
+          <p className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted">
+            <FiCalendar aria-hidden />
+            {isoDate(session.startAt)} · {isoTime(session.startAt)} – {isoTime(session.endAt)}
+            {` · ${Intl.DateTimeFormat().resolvedOptions().timeZone}`}
+          </p>
+          <button type="button" onClick={onClose} className="btn btn-ghost btn-xs btn-circle absolute right-3 top-3">
+            <FiX aria-hidden />
+          </button>
+        </div>
+        <div className="flex-1 overflow-y-auto p-5">
+          <div className="space-y-4">
+            <div className="rounded-box bg-base-200 p-4">
+              <p className="flex items-center gap-2 text-xs font-semibold">
+                <FiUser aria-hidden className="text-brand" />
+                Class & teacher
+              </p>
+              <p className="mt-1 text-sm font-medium">{session.classGroup?.name ?? '—'}</p>
+              <p className="text-xs text-muted">{teacherName(session.teacher)}</p>
+              <p className="mt-2 flex items-center gap-2 text-xs text-muted">
+                <FiClock aria-hidden />
+                {session.mode} {session.provider ? `· ${session.provider.replace('_', ' ')}` : ''}
+              </p>
+              {session.room ? (
+                <p className="flex items-center gap-2 text-xs text-muted">
+                  <FiMapPin aria-hidden />
+                  Room: {session.room}
+                </p>
+              ) : null}
+            </div>
+            {session.meetingUrl && canJoin ? (
+              <div className="rounded-box border border-brand/20 bg-brand-soft/40 p-4">
+                <p className="flex items-center gap-2 text-xs font-bold text-[#B30A00]">
+                  <FiVideo aria-hidden />
+                  Meeting link
+                </p>
+                <p className="mt-1 text-[11px] text-muted">Open the link to join your scheduled class.</p>
+                <a href={session.meetingUrl} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-2 break-all text-sm font-medium text-brand hover:underline">
+                  <FiLink aria-hidden />
+                  {session.meetingUrl}
+                </a>
+                <div className="mt-3 flex gap-2">
+                  <a href={session.meetingUrl} target="_blank" rel="noreferrer" className={`btn btn-sm gap-1 rounded-full border-0 text-white ${isLive ? 'bg-coral hover:bg-coral/90' : 'bg-brand hover:bg-brand/90'}`}>
+                    <FiExternalLink aria-hidden />
+                    {isLive ? 'Join now' : 'Open link'}
+                  </a>
+                  <button type="button" onClick={() => navigator.clipboard.writeText(session.meetingUrl ?? '')} className="btn btn-sm rounded-full border-line bg-white">
+                    Copy link
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <p className="rounded-box border border-dashed border-line bg-base-200/30 p-4 text-center text-xs text-muted">{session.accessMessage ?? (session.status === 'CANCELLED' ? 'This class was cancelled.' : !canJoin ? 'This class has ended.' : 'Your teacher will add the meeting link before class.')}</p>
+            )}
+            {!session.accessMessage ? <SessionMaterials id={session.id} materials={session.materials ?? []} /> : null}
+            {session.recordingUrl ? (
+              <a href={session.recordingUrl} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-xs font-medium text-brand hover:underline">
+                <FiVideo aria-hidden />
+                Watch recording
+              </a>
+            ) : null}
+            {session.notes ? (
+              <div className="rounded-box border border-line bg-base-100 p-4">
+                <p className="text-xs font-semibold">Notes from teacher</p>
+                <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed">{session.notes}</p>
+              </div>
+            ) : null}
+          </div>
+        </div>
+        <div className="flex shrink-0 gap-2 border-t border-line bg-base-200/30 p-4">
+          {session.meetingUrl && canJoin ? (
+            <a href={session.meetingUrl} target="_blank" rel="noreferrer" className={`btn btn-sm gap-1 rounded-full border-0 text-white ${isLive ? 'bg-coral hover:bg-coral/90' : 'bg-brand hover:bg-brand/90'}`}>
+              <FiExternalLink aria-hidden />
+              {isLive ? 'Join now' : 'Join live class'}
+            </a>
+          ) : null}
+          <button type="button" onClick={onClose} className="btn btn-sm ml-auto rounded-full border-line bg-base-100">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

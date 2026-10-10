@@ -1,9 +1,8 @@
 import type { Prisma } from "../../generated/prisma/client.js";
-import { writeAudit } from "../../lib/audit.js";
-import { badRequest, conflict, notFound } from "../../lib/http-error.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { notFound } from "../../lib/http-error.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
-import type { CreateClassInput, ListClassQuery, UpdateClassInput } from "./classes.schema.js";
+import type { ListClassQuery } from "./classes.schema.js";
 
 const briefLevel = { select: { id: true, title: true, levelLabel: true, code: true } } as const;
 const briefIntake = { select: { id: true, code: true, name: true } } as const;
@@ -11,16 +10,6 @@ const briefCampus = { select: { id: true, name: true, code: true } } as const;
 const briefTeacher = {
   select: { id: true, firstName: true, lastName: true, email: true },
 } as const;
-
-const assertTeacher = async (teacherId: string): Promise<void> => {
-  const teacher = await prisma.user.findUnique({
-    where: { id: teacherId },
-    select: { role: true, status: true },
-  });
-  if (!teacher || teacher.role !== "TEACHER" || teacher.status !== "ACTIVE") {
-    throw badRequest("teacherId must reference an active teacher");
-  }
-};
 
 export const listClasses = async (query: ListClassQuery, forcedTeacherId?: string) => {
   const pagination = parsePagination(query);
@@ -109,123 +98,5 @@ export const getClass = async (id: string) => {
   return classGroup;
 };
 
-export const createClass = async (input: CreateClassInput, actorId?: string) => {
-  const existing = await prisma.classGroup.findUnique({
-    where: { code: input.code },
-    select: { id: true },
-  });
-  if (existing) {
-    throw conflict("A class with this code already exists");
-  }
 
-  const [level, intake, campus] = await Promise.all([
-    prisma.level.findUnique({ where: { id: input.levelId }, select: { id: true } }),
-    prisma.intake.findUnique({ where: { id: input.intakeId }, select: { id: true } }),
-    prisma.campus.findUnique({ where: { id: input.campusId }, select: { id: true } }),
-  ]);
-  if (!level) {
-    throw notFound("Level not found");
-  }
-  if (!intake) {
-    throw notFound("Intake not found");
-  }
-  if (!campus) {
-    throw notFound("Campus not found");
-  }
-  if (input.teacherId) {
-    await assertTeacher(input.teacherId);
-  }
-
-  const classGroup = await prisma.classGroup.create({
-    data: {
-      code: input.code,
-      name: input.name,
-      levelId: input.levelId,
-      intakeId: input.intakeId,
-      campusId: input.campusId,
-      teacherId: input.teacherId ?? null,
-      shift: input.shift,
-      capacity: input.capacity ?? 30,
-      room: input.room ?? null,
-      isActive: input.isActive ?? true,
-    },
-  });
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "CLASS_CREATED",
-    entityType: "ClassGroup",
-    entityId: classGroup.id,
-    after: classGroup,
-  });
-
-  return classGroup;
-};
-
-export const updateClass = async (id: string, input: UpdateClassInput, actorId?: string) => {
-  const before = await prisma.classGroup.findUnique({ where: { id } });
-  if (!before) {
-    throw notFound("Class not found");
-  }
-
-  if (input.code && input.code !== before.code) {
-    const duplicate = await prisma.classGroup.findUnique({
-      where: { code: input.code },
-      select: { id: true },
-    });
-    if (duplicate) {
-      throw conflict("A class with this code already exists");
-    }
-  }
-
-  if (input.teacherId) {
-    await assertTeacher(input.teacherId);
-  }
-
-  const classGroup = await prisma.classGroup.update({
-    where: { id },
-    data: {
-      code: input.code,
-      name: input.name,
-      levelId: input.levelId,
-      intakeId: input.intakeId,
-      campusId: input.campusId,
-      teacherId: input.teacherId,
-      shift: input.shift,
-      capacity: input.capacity,
-      room: input.room,
-      isActive: input.isActive,
-    },
-  });
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "CLASS_UPDATED",
-    entityType: "ClassGroup",
-    entityId: classGroup.id,
-    before,
-    after: classGroup,
-  });
-
-  return classGroup;
-};
-
-export const deleteClass = async (id: string, actorId?: string) => {
-  const before = await prisma.classGroup.findUnique({ where: { id } });
-  if (!before) {
-    throw notFound("Class not found");
-  }
-
-  const classGroup = await prisma.classGroup.update({ where: { id }, data: { isActive: false } });
-
-  await writeAudit({
-    actorId: actorId ?? null,
-    action: "CLASS_DISABLED",
-    entityType: "ClassGroup",
-    entityId: classGroup.id,
-    before,
-    after: classGroup,
-  });
-
-  return classGroup;
-};
+export { createClass,deleteClass,updateClass } from "./class-commands.js";

@@ -1,17 +1,15 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect,useMemo,useState } from "react";
+import { FiChevronLeft,FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { Panel } from "../ui/Panel";
-import { EmptyBlock, LoadingBlock } from "../common/PageState";
 import { useApi } from "../../hooks/useApi";
 import { apiErrorMessage } from "../../lib/api";
-import { completeLesson, getStudentLesson, humanize } from "../../lib/services";
 import type { MyCourse } from "../../lib/services";
-import { LessonDetail } from "./LessonDetail";
+import { completeLesson,getStudentLesson,humanize } from "../../lib/services";
+import { EmptyBlock,LoadingBlock } from "../common/PageState";
+import { Panel } from "../ui/Panel";
 import { CoursePlayerShell } from "./CoursePlayerShell";
-
+import { LessonDetail } from "./LessonDetail";
 type Props = { course: MyCourse; slug: string; onProgress?: () => void };
-
 export function HorizontalCourseView({ course, slug, onProgress }: Props) {
   const ordered = useMemo(
     () =>
@@ -34,7 +32,6 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
     if (activeId && !ordered.some((l) => l.id === activeId))
       setActiveId(ordered[0]?.id ?? null);
   }, [ordered, activeId]);
-
   const lesson = useApi(
     `lesson-${activeId ?? "none"}`,
     () => getStudentLesson(activeId!),
@@ -47,7 +44,6 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
     setLocalCompleted(false);
     setActionError(null);
   }, [activeId]);
-
   const idx = ordered.findIndex((l) => l.id === activeId);
   const prev = idx > 0 ? ordered[idx - 1] : null;
   const next = idx >= 0 && idx < ordered.length - 1 ? ordered[idx + 1] : null;
@@ -55,7 +51,6 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
     lesson.fetching &&
     !!lesson.data &&
     (lesson.data as { id: string }).id !== activeId;
-
   async function handleComplete() {
     if (!activeId) return;
     setActionError(null);
@@ -70,7 +65,6 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
       setCompleting(false);
     }
   }
-
   if (ordered.length === 0)
     return (
       <Panel>
@@ -94,7 +88,6 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
       </Panel>
     );
   }
-
   const rawDetail = lesson.data as unknown as {
     id: string;
     module: { title: string };
@@ -105,7 +98,6 @@ export function HorizontalCourseView({ course, slug, onProgress }: Props) {
     ? ({ ...(lesson.data as object), progressStatus: "COMPLETED" } as never)
     : (lesson.data as never);
   const currentMeta = ordered.find((l) => l.id === activeId) ?? null;
-
   return (
     <CoursePlayerShell
       course={course}

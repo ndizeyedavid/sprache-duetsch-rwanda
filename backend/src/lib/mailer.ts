@@ -1,6 +1,6 @@
-import nodemailer from "nodemailer";
 import type { Transporter } from "nodemailer";
-import { env, smtpEnabled, smtpFrom } from "../config/env.js";
+import nodemailer from "nodemailer";
+import { env,smtpEnabled,smtpFrom } from "../config/env.js";
 import { logger } from "./logger.js";
 
 let transporter: Transporter | null = null;
@@ -51,6 +51,7 @@ const sendViaRelay = async (opts: { to: string; subject: string; html: string; t
   logger.info({ to: opts.to, endpoint }, "SMTP blocked — forwarding to VPS relay over HTTPS");
   const res = await fetch(endpoint, {
     method: "POST",
+    signal: AbortSignal.timeout(25000),
     headers: {
       "content-type": "application/json",
       ...(env.EMAIL_RELAY_SECRET ? { "x-relay-secret": env.EMAIL_RELAY_SECRET } : {}),

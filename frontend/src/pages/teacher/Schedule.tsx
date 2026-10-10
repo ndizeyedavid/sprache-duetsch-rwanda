@@ -1,346 +1,54 @@
-import { useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-import {
-  addDays,
-  addMonths,
-  endOfWeek,
-  format,
-  isSameDay,
-  parseISO,
-  startOfWeek,
-  subDays,
-  subMonths,
-} from "date-fns";
-import { FiCalendar } from "react-icons/fi";
-import { Panel } from "../../components/ui/Panel";
-import {
- EmptyBlock,
- ErrorBlock,
- LoadingBlock,
-} from "../../components/common/PageState";
-import { useApi } from "../../hooks/useApi";
-import { apiErrorMessage } from "../../lib/api";
-import { listClasses, listSessions } from "../../lib/services";
-import { ScheduleToolbar } from "../../components/schedule/ScheduleToolbar";
-import { ClassFilterChips } from "../../components/schedule/ClassFilterChips";
-import { AgendaGrouped } from "../../components/schedule/AgendaGrouped";
-import { MonthGrid } from "../../components/schedule/MonthGrid";
-import { WeekGrid } from "../../components/schedule/WeekGrid";
-import { SessionDetailDrawer } from "../../components/schedule/SessionDetailDrawer";
-import { SessionEditorModal } from "../../components/schedule/SessionEditorModal";
-import type { ScheduleView } from "../../components/schedule/constants";
+import { format } from 'date-fns';
+import { useMemo,useState } from 'react';
+import { ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { AgendaGrouped } from '../../components/schedule/AgendaGrouped';
+import { MonthGrid } from '../../components/schedule/MonthGrid';
+import { ScheduleSpotlight } from '../../components/schedule/ScheduleSpotlight';
+import { ScheduleToolbar } from '../../components/schedule/ScheduleToolbar';
+import { SessionDetailDrawer } from '../../components/schedule/SessionDetailDrawer';
+import { SessionEditorModal } from '../../components/schedule/SessionEditorModal';
+import type { SessionMaterial } from '../../components/schedule/SessionMaterials';
+import { useScheduleClock } from '../../components/schedule/useScheduleClock';
+import { useScheduleNavigation } from '../../components/schedule/useScheduleNavigation';
+import { WeekGrid } from '../../components/schedule/WeekGrid';
+import { Panel } from '../../components/ui/Panel';
+import { useApi } from '../../hooks/useApi';
+import { apiErrorMessage,apiPost } from '../../lib/api';
+import { getTeacherSchedule } from '../../lib/schedule-api';
+import type { SessionItem } from '../../lib/services';
+import { getSession,listClasses } from '../../lib/services';
 
 export function TeacherSchedule() {
- const [searchParams, setSearchParams] = useSearchParams();
- const sessions = useApi("teacher-sessions", listSessions);
- const classes = useApi("teacher-classes", listClasses);
-
- const view = (searchParams.get("view") as ScheduleView) || "agenda";
- const dateParam = searchParams.get("date");
- const anchor = useMemo(
- () => (dateParam ? parseISO(dateParam) : new Date()),
- [dateParam],
- );
- const classFilter = searchParams.get("class") || null;
- const statusFilter = searchParams.get("status") || "";
- const q = searchParams.get("q") || "";
-
- const [localQ, setLocalQ] = useState(q);
- const [drawerId, setDrawerId] = useState<string | null>(null);
- const [editorOpen, setEditorOpen] = useState(false);
- const [editingId, setEditingId] = useState<string | null>(null);
- const [draftDate, setDraftDate] = useState<string | null>(null);
-
- function setParam(key: string, value: string | null) {
- const next = new URLSearchParams(searchParams);
- if (value === null || value === "") next.delete(key);
- else next.set(key, value);
- setSearchParams(next);
- }
-
- function setView(v: ScheduleView) {
- setParam("view", v === "agenda" ? null : v);
- }
- function setAnchor(d: Date) {
- setParam("date", format(d, "yyyy-MM-dd"));
- }
- function step(dir: number) {
- if (view === "month")
- setAnchor(dir > 0 ? addMonths(anchor, 1) : subMonths(anchor, 1));
- else if (view === "week")
- setAnchor(dir > 0 ? addDays(anchor, 7) : subDays(anchor, 7));
- else setAnchor(dir > 0 ? addDays(anchor, 1) : subDays(anchor, 1));
- }
-
- const filtered = useMemo(() => {
- let list = sessions.data ?? [];
- if (classFilter)
- list = list.filter((s) => s.classGroup?.id === classFilter);
- if (statusFilter) list = list.filter((s) => s.status === statusFilter);
- if (q) {
- const needle = q.toLowerCase();
- list = list.filter(
- (s) =>
- s.title.toLowerCase().includes(needle) ||
- (s.classGroup?.name ?? "").toLowerCase().includes(needle),
- );
- }
- if (view === "agenda") {
- // show all, sorted asc like Canvas agenda
- return [...list].sort(
- (a, b) => new Date(a.startAt).getTime() - new Date(b.startAt).getTime(),
- );
- }
-  if (view === "week") {
-  const start = startOfWeek(anchor, { weekStartsOn: 1 });
-  start.setHours(0, 0, 0, 0);
-  const end = endOfWeek(anchor, { weekStartsOn: 1 });
-  end.setHours(23, 59, 59, 999);
-  return list.filter((s) => {
-  const d = new Date(s.startAt);
-  return d >= start && d <= end;
-  });
+  useScheduleClock();
+  const sessions = useApi('teacher-full-schedule', getTeacherSchedule);
+  const classes = useApi('teacher-classes', listClasses);
+  const nav = useScheduleNavigation();
+  const [drawerId, setDrawerId] = useState<string | null>(null);
+  const [editorOpen, setEditorOpen] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [draftDate, setDraftDate] = useState<string | null>(null);
+  const [actionError, setActionError] = useState('');
+  const details = useApi(`staff-session-${drawerId ?? ''}`, () => getSession(drawerId!) as Promise<SessionItem & { materials: SessionMaterial[] }>, Boolean(drawerId));
+  const all = sessions.data ?? [];
+  const filtered = all.filter(s => nav.inRange(s.startAt)).sort((a,b) => Date.parse(a.startAt)-Date.parse(b.startAt));
+  const selected = details.data?.id === drawerId && !details.stale ? details.data : all.find(s => s.id === drawerId) ?? null;
+  const editing = all.find(s => s.id === editingId) ?? null;
+  const editorClasses = useMemo(() => (classes.data ?? []).filter(c => c.isActive || c.id === editing?.classGroup?.id), [classes.data, editing?.classGroup?.id]);
+  const editorSession = useMemo(() => editing ? { id:editing.id,title:editing.title,classGroupId:editing.classGroup?.id ?? '',startAt:editing.startAt,endAt:editing.endAt,mode:editing.mode,provider:editing.provider,meetingUrl:editing.meetingUrl,room:editing.room ?? null,notes:editing.notes ?? null,recordingUrl:editing.recordingUrl,status:editing.status } : null, [editing]);
+  function create(day?: Date) { setEditingId(null); setDraftDate(day ? format(day,'yyyy-MM-dd') : null); setEditorOpen(true); }
+  function edit(id: string) { setEditingId(id); setDrawerId(null); setEditorOpen(true); }
+  async function cancel(id: string) {
+    if (!confirm('Cancel this session? Students will be notified.')) return;
+    setActionError('');
+    try { await apiPost(`/sessions/${id}/cancel`, { reason:'Cancelled from schedule' }); sessions.refetch(); setDrawerId(null); }
+    catch (e) { setActionError(apiErrorMessage(e,'Could not cancel this session.')); }
   }
- // month
- const m = anchor.getMonth();
- const y = anchor.getFullYear();
- return list.filter((s) => {
- const d = new Date(s.startAt);
- return d.getMonth() === m && d.getFullYear() === y;
- });
- }, [sessions.data, classFilter, statusFilter, q, view, anchor]);
-
- const drawerSession = drawerId
- ? ((sessions.data ?? []).find((s) => s.id === drawerId) ?? null)
- : null;
- const editingSession = editingId
- ? ((sessions.data ?? []).find((s) => s.id === editingId) ?? null)
- : null;
-
- const todayCount = (sessions.data ?? []).filter((s) =>
- isSameDay(parseISO(s.startAt), new Date()),
- ).length;
-
- return (
- <div className="space-y-4">
- <Panel>
- <ScheduleToolbar
- view={view}
- onView={setView}
- anchor={anchor}
- onPrev={() => step(-1)}
- onNext={() => step(1)}
- onToday={() => setAnchor(new Date())}
- onNew={() => {
- setEditingId(null);
- setDraftDate(null);
- setEditorOpen(true);
- }}
- canCreate
- />
- <div className="mt-4">
- <ClassFilterChips
- classes={(classes.data ?? []) as never}
- selected={classFilter}
- onSelect={(id) => setParam("class", id)}
- search={localQ}
- onSearch={(v) => setLocalQ(v)}
- status={statusFilter}
- onStatus={(v) => setParam("status", v || null)}
- />
- {localQ !== q ? (
- <button
- type="button"
- onClick={() => setParam("q", localQ || null)}
- className="btn btn-xs mt-2 rounded-full border-line bg-base-100"
- >
- Apply search
- </button>
- ) : null}
- </div>
- <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-muted">
- <span className="inline-flex items-center gap-1 rounded-full bg-brand-soft px-2.5 py-1 font-medium text-[#B30A00]">
- <FiCalendar aria-hidden />
- {filtered.length} session{filtered.length === 1 ? "" : "s"}
- </span>
- <span>·</span>
- <span>{todayCount} today</span>
- {classFilter || statusFilter || q ? (
- <button
- type="button"
- onClick={() => {
- setSearchParams(
- new URLSearchParams(view !== "agenda" ? `view=${view}` : ""),
- );
- setLocalQ("");
- }}
- className="link link-hover text-brand"
- >
- Clear filters
- </button>
- ) : null}
- </div>
- </Panel>
-
- <div className="grid gap-4 xl:grid-cols-12">
- <div className="xl:col-span-8">
- <Panel>
- {sessions.loading ? (
- <LoadingBlock label="Loading schedule…" />
- ) : sessions.error ? (
- <ErrorBlock message={sessions.error} onRetry={sessions.refetch} />
- ) : view === "month" ? (
- <MonthGrid
- anchor={anchor}
- onAnchor={setAnchor}
- sessions={filtered as never}
- onOpen={setDrawerId}
- onPickDay={(d) => {
- setAnchor(d);
- setView("agenda");
- }}
- onCreateAtDate={(d) => {
- setEditingId(null);
- setDraftDate(format(d, "yyyy-MM-dd"));
- setEditorOpen(true);
- }}
- />
- ) : view === "week" ? (
- <WeekGrid
- anchor={anchor}
- sessions={filtered as never}
- onOpen={setDrawerId}
- onPickDay={(d) => {
- setAnchor(d);
- setView("agenda");
- }}
- onCreateAtDate={(d) => {
- setEditingId(null);
- setDraftDate(format(d, "yyyy-MM-dd"));
- setEditorOpen(true);
- }}
- />
- ) : (
- <AgendaGrouped
- sessions={filtered as never}
- onOpen={setDrawerId}
- onEdit={(id) => {
- setEditingId(id);
- setEditorOpen(true);
- }}
- onCancel={async (id) => {
- if (!confirm('Cancel this session? Students will be notified.')) return;
- try {
- const { apiPost } = await import('../../lib/api');
- await apiPost(`/sessions/${id}/cancel`, { reason: 'Cancelled from schedule' });
- sessions.refetch();
- } catch (e) {
- alert(apiErrorMessage(e, 'Could not cancel.'));
- }
- }}
- />
- )}
- </Panel>
- </div>
- <div className="space-y-4 xl:col-span-4">
- <Panel>
- <h3 className="flex items-center gap-2 text-sm font-bold">
- <FiCalendar aria-hidden className="text-brand" />
- Up next
- </h3>
- {filtered.length === 0 ? (
- <EmptyBlock
- title="Nothing scheduled"
- hint="Create your first live class."
- />
- ) : (
- <div className="mt-3 space-y-2">
- {filtered.slice(0, 3).map((s) => (
- <button
- key={s.id}
- type="button"
- onClick={() => setDrawerId(s.id)}
- className="w-full rounded-box border border-line bg-base-100 p-3 text-left hover:border-brand/20"
- >
- <p className="truncate text-xs font-semibold">
- {s.title || "Untitled"}
- </p>
- <p className="truncate text-[11px] text-muted">
- {s.classGroup?.name} ·{" "}
- {format(parseISO(s.startAt), "EEE d MMM, HH:mm")}
- </p>
- </button>
- ))}
- </div>
- )}
- </Panel>
- </div>
- </div>
-
- <SessionDetailDrawer
- open={Boolean(drawerId)}
- onClose={() => setDrawerId(null)}
- session={drawerSession as never}
- onEdit={() => {
- setEditingId(drawerId);
- setDrawerId(null);
- setEditorOpen(true);
- }}
- onCancel={async () => {
- if (
- !drawerId ||
- !confirm("Cancel this session? Students will be notified.")
- )
- return;
- try {
- const { apiPost } = await import("../../lib/api");
- await apiPost(`/sessions/${drawerId}/cancel`, {
- reason: "Cancelled from schedule",
- });
- sessions.refetch();
- setDrawerId(null);
- } catch (e) {
- alert(apiErrorMessage(e, "Could not cancel."));
- }
- }}
- onReschedule={() => {
- setEditingId(drawerId);
- setDrawerId(null);
- setEditorOpen(true);
- }}
- />
-
- <SessionEditorModal
- open={editorOpen}
- onClose={() => { setEditorOpen(false); setDraftDate(null); }}
- classes={(classes.data ?? []) as never}
- editing={
- editingSession
- ? {
- id: editingSession.id,
- title: editingSession.title,
- classGroupId:
- (editingSession as unknown as { classGroup: { id: string } })
- .classGroup?.id ??
- classFilter ??
- "",
- startAt: editingSession.startAt,
- endAt: editingSession.endAt,
- mode: editingSession.mode,
- provider: editingSession.provider,
- meetingUrl: editingSession.meetingUrl,
- room:
- (editingSession as unknown as { room: string | null }).room ??
- null,
- notes:
- (editingSession as unknown as { notes: string | null })
- .notes ?? null,
- }
- : null
- }
- initialDate={draftDate}
- onSaved={() => sessions.refetch()}
- />
- </div>
- );
+  return <div className="space-y-4">
+    <Panel><ScheduleSpotlight sessions={all} onOpen={setDrawerId} teacher /><p className="mb-4 text-xs text-base-content/55">Your classes · Times in {Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll('_', ' ')}</p><ScheduleToolbar view={nav.view} onView={nav.setView} anchor={nav.anchor} onPrev={() => nav.step(-1)} onNext={() => nav.step(1)} onToday={() => nav.setAnchor(new Date())} onNew={() => create()} canCreate />
+      <div className="mt-4 flex items-center gap-3 text-xs text-base-content/60"><span>{filtered.length} session{filtered.length === 1 ? '' : 's'} {nav.view === 'agenda' ? 'in total' : nav.view === 'month' ? 'this month' : 'this week'}</span></div>
+    {actionError ? <div role="alert" className="alert alert-error text-sm">{actionError}<button className="btn btn-ghost btn-xs" onClick={() => setActionError('')}>Dismiss</button></div> : null}
+    <div className="mt-5">{sessions.loading ? <LoadingBlock label="Loading schedule…" /> : sessions.error ? <ErrorBlock message={sessions.error} onRetry={sessions.refetch} /> : nav.view === 'month' ? <MonthGrid anchor={nav.anchor} onAnchor={nav.setAnchor} sessions={filtered} onOpen={setDrawerId} onPickDay={nav.pickDay} onCreateAtDate={create} /> : nav.view === 'week' ? <WeekGrid anchor={nav.anchor} sessions={filtered} onOpen={setDrawerId} onPickDay={nav.pickDay} onCreateAtDate={create} /> : <AgendaGrouped sessions={filtered} onOpen={setDrawerId} onEdit={edit} onCancel={cancel} />}</div></Panel>
+    <SessionDetailDrawer open={Boolean(drawerId)} onClose={() => setDrawerId(null)} onSaved={() => { details.refetch(); sessions.refetch(); }} session={selected ? { ...selected, room: selected.room ?? null, notes: selected.notes ?? null } : null} onEdit={() => { if(drawerId) edit(drawerId); }} onCancel={() => { if(drawerId) void cancel(drawerId); }} onReschedule={() => { if(drawerId) edit(drawerId); }} />
+    <SessionEditorModal open={editorOpen} onClose={() => { setEditorOpen(false); setDraftDate(null); }} classes={editorClasses} editing={editorSession} initialDate={draftDate} onSaved={() => { sessions.refetch(); details.refetch(); }} />
+  </div>;
 }

@@ -4,6 +4,11 @@ import { z } from "zod";
 // Every runtime setting is validated once. Code never reads process.env directly.
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
+  PAYPACK_ENABLED: z.enum(["true", "false"]).default("false"),
+  PAYPACK_CLIENT_ID: z.string().optional(),
+  PAYPACK_CLIENT_SECRET: z.string().optional(),
+  PAYPACK_WEBHOOK_SECRET: z.string().optional(),
+  PAYPACK_WEBHOOK_MODE: z.enum(["development", "production"]).default("development"),
   PORT: z.coerce.number().int().positive().default(4000),
   DATABASE_URL: z.string().min(1, "DATABASE_URL is required"),
   JWT_SECRET: z.string().min(16, "JWT_SECRET must be at least 16 characters"),
@@ -26,8 +31,9 @@ const envSchema = z.object({
   SEED_SUPERADMIN_PASSWORD: z.string().min(8).default("Admin123!"),
   // Public frontend base URL — embedded in certificate QR codes.
   PUBLIC_APP_URL: z.string().min(1).default("http://localhost:5173"),
-  // Reminder scheduler (node-cron). DISABLED skips all jobs (tests, one-off scripts).
+  // Reminder scheduler; email delivery continues when reminders are disabled.
   REMINDERS_ENABLED: z.enum(["true", "false"]).default("true"),
+  PAYMENT_REMINDER_LEAD_DAYS: z.coerce.number().int().min(1).max(90).default(7),
   REMINDER_TIMEZONE: z.string().min(1).default("Africa/Kigali"),
   // Google OAuth — Client ID for verifying ID tokens from @react-oauth/google.
   GOOGLE_CLIENT_ID: z.string().optional(),
@@ -44,9 +50,21 @@ const envSchema = z.object({
   // HTTP relay on your VPS — Render calls this over HTTPS, VPS does SMTP to Gmail (bypasses Render's SMTP block)
   EMAIL_RELAY_URL: z.string().optional(),
   EMAIL_RELAY_SECRET: z.string().optional(),
+  // JSON list of test accounts shown on the public /demo page. Leave unset in real use:
+  // when it is missing the page and its endpoint are switched off.
+  DEMO_ACCOUNTS: z.string().optional(),
 });
 
-const parsed = envSchema.safeParse(process.env);
+const parsed = envSchema.superRefine((value, ctx) => {
+  if (value.PAYPACK_ENABLED === "true") {
+    for (const key of ["PAYPACK_CLIENT_ID", "PAYPACK_CLIENT_SECRET", "PAYPACK_WEBHOOK_SECRET"] as const) {
+      if (!value[key]?.trim()) ctx.addIssue({ code: "custom", path: [key], message: "Required when Paypack is enabled" });
+    }
+    if (value.NODE_ENV === "production" && value.PAYPACK_WEBHOOK_MODE !== "production") {
+      ctx.addIssue({ code: "custom", path: ["PAYPACK_WEBHOOK_MODE"], message: "Use production webhook mode in production" });
+    }
+  }
+}).safeParse(process.env);
 
 if (!parsed.success) {
   const issues = parsed.error.issues

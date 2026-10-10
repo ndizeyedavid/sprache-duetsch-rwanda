@@ -1,10 +1,10 @@
 import type { RequestHandler } from "express";
-import { validatedBody } from "../../lib/request.js";
 import { logger } from "../../lib/logger.js";
-import { sendEnrollmentConfirmation } from "./enrollment.service.js";
+import { validatedBody } from "../../lib/request.js";
 import type { EnrollmentConfirmInput } from "./enrollment.schema.js";
+import { sendEnrollmentConfirmation } from "./enrollment.service.js";
 
-export const confirmEnrollment: RequestHandler = async (req, res) => {
+export const confirmEnrollment: RequestHandler = (req, res) => {
   const input = validatedBody<EnrollmentConfirmInput>(req);
 
   // Respond immediately so the enrollment site never hangs — email sends in background.

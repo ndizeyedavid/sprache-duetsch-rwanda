@@ -4,17 +4,19 @@ import { ADMIN_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
+import { teachingLevelsRouter } from "./teaching-levels.routes.js";
 import * as controller from "./users.controller.js";
 import {
-  createUserSchema,
-  listUserQuerySchema,
-  resetUserPasswordSchema,
-  updateUserRoleSchema,
-  updateUserSchema,
-  userIdSchema,
+createUserSchema,
+listUserQuerySchema,
+resetUserPasswordSchema,
+updateUserRoleSchema,
+updateUserSchema,
+userIdSchema,
 } from "./users.schema.js";
 
 export const usersRouter = Router();
+usersRouter.use(teachingLevelsRouter);
 
 usersRouter.get(
   "/",

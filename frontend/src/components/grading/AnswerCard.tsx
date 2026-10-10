@@ -1,5 +1,5 @@
-import { FiAward, FiMessageSquare } from 'react-icons/fi';
-import { formatResponse, isAudioResponse } from './utils';
+import { FiAward,FiMessageSquare } from 'react-icons/fi';
+import { formatResponse,isAudioResponse } from './utils';
 
 type Props = {
  index: number;

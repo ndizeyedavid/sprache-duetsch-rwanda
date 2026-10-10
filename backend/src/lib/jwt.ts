@@ -1,6 +1,6 @@
-import jwt from "jsonwebtoken";
 import type { SignOptions } from "jsonwebtoken";
-import { env, refreshTokenSecret } from "../config/env.js";
+import jwt from "jsonwebtoken";
+import { env,refreshTokenSecret } from "../config/env.js";
 import type { Role } from "../generated/prisma/client.js";
 import { unauthorized } from "./http-error.js";
 

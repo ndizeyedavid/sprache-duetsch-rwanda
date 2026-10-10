@@ -1,19 +1,19 @@
-import { useMemo, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { Panel } from "../../components/ui/Panel";
+import { useMemo,useState } from "react";
+import { useNavigate,useSearchParams } from "react-router-dom";
 import {
-  EmptyBlock,
-  ErrorBlock,
-  LoadingBlock,
+EmptyBlock,
+ErrorBlock,
+LoadingBlock,
 } from "../../components/common/PageState";
-import { useApi } from "../../hooks/useApi";
-import { apiErrorMessage } from "../../lib/api";
-import { createConversation, getMyPeople } from "../../lib/services";
-import { PeopleToolbar } from "../../components/people/PeopleToolbar";
-import { PeopleTable } from "../../components/people/PeopleTable";
 import { GroupsTable } from "../../components/people/GroupsTable";
+import { PeopleTable } from "../../components/people/PeopleTable";
+import { PeopleToolbar } from "../../components/people/PeopleToolbar";
 import type { PeopleTab } from "../../components/people/constants";
 import { matches } from "../../components/people/utils";
+import { Panel } from "../../components/ui/Panel";
+import { useApi } from "../../hooks/useApi";
+import { apiErrorMessage } from "../../lib/api";
+import { createConversation,getMyPeople } from "../../lib/services";
 
 export function Teachers() {
   const [searchParams, setSearchParams] = useSearchParams();

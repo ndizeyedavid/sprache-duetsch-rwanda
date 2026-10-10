@@ -1,24 +1,25 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ACADEMIC_ROLES, STAFF_ROLES } from "../../lib/roles.js";
+import { ACADEMIC_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
+import { requireSessionOwnership } from "./session-access.js";
 import * as controller from "./sessions.controller.js";
 import {
-  attendanceRecordIdSchema,
-  attendanceSummaryQuerySchema,
-  cancelSessionSchema,
-  createSessionMaterialSchema,
-  createSessionSchema,
-  listSessionsQuerySchema,
-  markAttendanceSchema,
-  materialIdSchema,
-  rescheduleSessionSchema,
-  sessionIdSchema,
-  studentSessionsQuerySchema,
-  updateAttendanceSchema,
-  updateSessionSchema,
+attendanceRecordIdSchema,
+attendanceSummaryQuerySchema,
+cancelSessionSchema,
+createSessionMaterialSchema,
+createSessionSchema,
+listSessionsQuerySchema,
+markAttendanceSchema,
+materialIdSchema,
+rescheduleSessionSchema,
+sessionIdSchema,
+studentSessionsQuerySchema,
+updateAttendanceSchema,
+updateSessionSchema,
 } from "./sessions.schema.js";
 
 export const sessionsRouter = Router();
@@ -44,12 +45,20 @@ sessionsRouter.get(
   validate({ params: sessionIdSchema }),
   asyncHandler(controller.mySession),
 );
+// Opening the class link checks the student in (PRESENT/LATE) during the join window.
+sessionsRouter.post(
+  "/me/:id/join",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: sessionIdSchema }),
+  asyncHandler(controller.joinMySession),
+);
 
 // Staff views.
 sessionsRouter.get(
   "/",
   requireAuth,
-  requireRole(...STAFF_ROLES),
+  requireRole(...ACADEMIC_ROLES),
   validate({ query: listSessionsQuerySchema }),
   asyncHandler(controller.list),
 );
@@ -73,8 +82,9 @@ sessionsRouter.delete(
 sessionsRouter.get(
   "/:id",
   requireAuth,
-  requireRole(...STAFF_ROLES),
+  requireRole(...ACADEMIC_ROLES),
   validate({ params: sessionIdSchema }),
+  requireSessionOwnership,
   asyncHandler(controller.get),
 );
 
@@ -113,8 +123,9 @@ sessionsRouter.post(
 sessionsRouter.get(
   "/:id/roster",
   requireAuth,
-  requireRole(...STAFF_ROLES),
+  requireRole(...ACADEMIC_ROLES),
   validate({ params: sessionIdSchema }),
+  requireSessionOwnership,
   asyncHandler(controller.roster),
 );
 
@@ -139,7 +150,7 @@ export const attendanceRouter = Router();
 attendanceRouter.get(
   "/summary",
   requireAuth,
-  requireRole(...STAFF_ROLES, "STUDENT"),
+  requireRole(...ACADEMIC_ROLES, "STUDENT"),
   validate({ query: attendanceSummaryQuerySchema }),
   asyncHandler(controller.attendanceSummary),
 );
@@ -147,7 +158,7 @@ attendanceRouter.get(
 attendanceRouter.get(
   "/export",
   requireAuth,
-  requireRole(...STAFF_ROLES),
+  requireRole(...ACADEMIC_ROLES),
   validate({ query: attendanceSummaryQuerySchema }),
   asyncHandler(controller.exportAttendanceCsv),
 );

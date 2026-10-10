@@ -1,4 +1,4 @@
-import { FiChevronDown, FiChevronRight, FiLock } from 'react-icons/fi';
+import { FiChevronDown,FiChevronRight,FiLock } from 'react-icons/fi';
 import type { LessonGroup } from '../../types';
 
 type LessonAccordionProps = {

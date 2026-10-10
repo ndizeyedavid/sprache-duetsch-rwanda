@@ -1,0 +1,12 @@
+import { format } from 'date-fns';
+import { FiCalendar,FiVideo } from 'react-icons/fi';
+import type { SessionItem } from '../../lib/services';
+
+export function StudentScheduleHero({ sessions, loading, onOpen }: { sessions: SessionItem[]; loading: boolean; onOpen: (id: string) => void }) {
+  const next = sessions.filter(s => ['LIVE', 'SCHEDULED', 'RESCHEDULED'].includes(s.status) && new Date(s.endAt).getTime() > Date.now()).sort((a, b) => Number(b.status === 'LIVE') - Number(a.status === 'LIVE') || new Date(a.startAt).getTime() - new Date(b.startAt).getTime())[0];
+  const zone = Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll('_', ' ');
+  return <section className="card border border-base-300/70 bg-base-100 p-5 sm:p-6">
+    <div className="flex items-center justify-between gap-4"><div><h1 className="text-2xl font-semibold">My schedule</h1><p className="mt-2 text-xs text-base-content/60">Class times shown in {zone}.</p></div><span className="grid size-12 place-items-center rounded-2xl bg-neutral text-neutral-content"><FiCalendar aria-hidden className="text-xl" /></span></div>
+    <div className="mt-5 border-t border-base-300/70 pt-5">{loading ? <p className="text-xs">Finding your next class…</p> : next ? <div className="flex flex-wrap items-center justify-between gap-4"><div><span className={`badge border-0 ${next.status === 'LIVE' ? 'badge-success' : 'badge-neutral'}`}>{next.status === 'LIVE' ? 'Live now' : 'Next class'}</span><h2 className="mt-3 text-lg font-semibold">{next.title}</h2><p className="mt-2 text-xs">{format(new Date(next.startAt), 'EEE d MMM · HH:mm')}–{format(new Date(next.endAt), 'HH:mm')}</p><p className="mt-2 text-xs text-base-content/60">{next.teacher ? `${next.teacher.firstName} ${next.teacher.lastName}` : 'Teacher to be confirmed'}</p></div><div className="flex gap-2">{next.meetingUrl ? <a href={next.meetingUrl} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm rounded-full"><FiVideo aria-hidden />{next.status === 'LIVE' ? 'Join class' : 'Open class link'}</a> : null}<button type="button" onClick={() => onOpen(next.id)} className="btn btn-sm rounded-full">Class details</button></div></div> : <div className="flex items-center gap-4"><img src="/illustrations/study-books.webp" alt="" width={400} height={366} className="h-16 w-16 object-contain" /><div><h2 className="text-sm font-semibold">No upcoming classes yet</h2><p className="mt-1 text-xs text-base-content/60">Your next class appears here when your teacher schedules it.</p></div></div>}</div>
+  </section>;
+}

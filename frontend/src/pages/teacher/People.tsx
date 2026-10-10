@@ -1,29 +1,25 @@
-import { useMemo, useState } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
-import { FiMail, FiCheckSquare, FiAward } from 'react-icons/fi';
-import { Panel, SectionHeader } from '../../components/ui/Panel';
+import { useMemo,useState } from 'react';
+import { FiAward,FiCheckSquare,FiMail } from 'react-icons/fi';
+import { Link,useNavigate,useParams } from 'react-router-dom';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { Panel,SectionHeader } from '../../components/ui/Panel';
 import { SearchField } from '../../components/ui/SearchField';
 import { StatusBadge } from '../../components/ui/StatusBadge';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
-import { humanize, listClasses, getClass, createConversation } from '../../lib/services';
-
+import { createConversation,getClass,humanize,listClasses } from '../../lib/services';
 export function TeacherPeople() {
  const { classGroupId = '' } = useParams();
  const navigate = useNavigate();
  const classes = useApi('teacher-classes', listClasses);
  const detail = useApi(`class-${classGroupId}`, () => getClass(classGroupId), Boolean(classGroupId));
-
  const [query, setQuery] = useState('');
  const [statusFilter, setStatusFilter] = useState<string>('ALL');
  const [sort, setSort] = useState<'name' | 'id'>('name');
  const [selected, setSelected] = useState<Set<string>>(new Set());
  const [bulkError, setBulkError] = useState<string | null>(null);
  const [bulkSending, setBulkSending] = useState(false);
-
  const enrollments = useMemo(() => detail.data?.enrollments ?? [], [detail.data]);
-
  const filtered = useMemo(() => {
  let list = [...enrollments];
  if (query.trim()) {
@@ -46,7 +42,6 @@ export function TeacherPeople() {
  }
  return list;
  }, [enrollments, query, statusFilter, sort]);
-
  function toggle(id: string) {
  setSelected((prev) => {
  const next = new Set(prev);
@@ -55,12 +50,10 @@ export function TeacherPeople() {
  return next;
  });
  }
-
  function toggleAll() {
  if (selected.size === filtered.length) setSelected(new Set());
  else setSelected(new Set(filtered.map((e) => e.student.user.id)));
  }
-
  async function handleBulkMessage() {
  if (selected.size === 0) {
  setBulkError('Select at least one student to message.');
@@ -70,21 +63,17 @@ export function TeacherPeople() {
  setBulkSending(true);
  try {
  await createConversation({ participantIds: [...selected] });
- setSelected(new Set());
- } catch (err) {
+ setSelected(new Set()); } catch (err) {
  setBulkError(apiErrorMessage(err, 'Could not start the conversation.'));
  } finally {
  setBulkSending(false);
  }
  }
-
  if (detail.loading) return <LoadingBlock label="Loading roster…" />;
  if (detail.error || !detail.data) {
  return <ErrorBlock message={detail.error ?? 'Could not load this class.'} onRetry={detail.refetch} />;
  }
-
  const group = detail.data;
-
  return (
  <div className="space-y-5">
  <Panel>
@@ -109,7 +98,6 @@ export function TeacherPeople() {
  <p className="mt-1 text-xs text-muted">
  {group.level.code} · {group.intake.name} · {group.campus.name} · {humanize(group.shift)} · {enrollments.length} student{enrollments.length === 1 ? '' : 's'}
  </p>
-
  <div className="mt-4 flex flex-wrap gap-2">
  <SearchField value={query} onChange={setQuery} ariaLabel="Search students" placeholder="Search name or student ID…" />
  <select value={statusFilter} onChange={(e) => setStatusFilter(e.currentTarget.value)} className="select select rounded-full border-line bg-base-200" aria-label="Status filter">
@@ -144,7 +132,6 @@ export function TeacherPeople() {
  </p>
  ) : null}
  </Panel>
-
  <Panel>
  {filtered.length === 0 ? (
  <EmptyBlock title="No students match your search" hint="Try a different filter or switch class." />
@@ -210,5 +197,4 @@ export function TeacherPeople() {
  )}
  </Panel>
  </div>
- );
-}
+ ); }

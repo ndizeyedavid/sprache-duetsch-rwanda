@@ -1,0 +1,47 @@
+{
+  "project": {
+    "id": "prj_3ab27652-f90f-4dd1-8a19-86ddade0b63d",
+    "name": "deutsch-sprache-rwanda",
+    "region": "eu-central"
+  },
+  "url": "https://deutsch-sprache-rwanda.eu1.hubfly.app",
+  "mode": "smart",
+  "status": "success",
+  "deployments": [
+    {
+      "service": "api",
+      "containerId": "cont_b79ce9a8-1304-4683-b7a3-c9aee303db8e",
+      "buildId": "build_55c5c028-9097-4971-a0ec-f2947e94e508",
+      "status": "success"
+    },
+    {
+      "service": "frontend",
+      "containerId": "cont_10143c56-0ed1-4cfa-bb3f-facaaadd273b",
+      "buildId": "build_65294198-d01d-43a4-b03f-fb86ec46742f",
+      "status": "success"
+    }
+  ],
+  "a1": {
+    "modules": 13,
+    "lessons": 63,
+    "activities": 314
+  },
+  "demoAccounts": 5,
+  "verification": [
+    "all role logins and dashboards",
+    "finance academic access denied",
+    "student lesson browser navigation",
+    "coursebook PDF download",
+    "authenticated upload/download",
+    "database and uploaded file survive backend restart",
+    "unified login for all five roles and teacher dashboard browser redirect",
+    "assessment options menu visible without clipping",
+    "academic finance access denied; financial fields and CSV columns removed; finance, super admin and student self-service verified",
+    "academic browser navigation and enrolment columns exclude finance",
+    "full dashboard photo verified at 390px and 1920px viewports"
+  ],
+  "remainingConfiguration": [
+    "Email provider credentials",
+    "Verify daily backup destination and restoration"
+  ]
+}

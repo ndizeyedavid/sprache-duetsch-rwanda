@@ -1,9 +1,9 @@
 import { Prisma } from "../../generated/prisma/client.js";
 import { writeAudit } from "../../lib/audit.js";
-import { conflict, notFound } from "../../lib/http-error.js";
-import { buildPaginated, parsePagination } from "../../lib/pagination.js";
+import { badRequest,conflict,notFound } from "../../lib/http-error.js";
+import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
-import type { CreateLevelInput, ListLevelQuery, UpdateLevelInput } from "./levels.schema.js";
+import type { CreateLevelInput,ListLevelQuery,UpdateLevelInput } from "./levels.schema.js";
 
 export const listLevels = async (query: ListLevelQuery) => {
   const pagination = parsePagination(query);
@@ -51,7 +51,16 @@ export const getLevel = async (id: string) => {
   return level;
 };
 
+const validateCoursebook = async (url?: string | null) => {
+  if (!url) return;
+  const name = url.split('/').pop();
+  const file = name ? await prisma.uploadedFile.findUnique({ where: { name } }) : null;
+  if (!file || file.mimeType !== "application/pdf") throw badRequest("Coursebook must be an uploaded PDF");
+};
+
 export const createLevel = async (input: CreateLevelInput, actorId?: string) => {
+  await validateCoursebook(input.coursebookUrl);
+  if (input.currency.toUpperCase() === "RWF" && !Number.isInteger(input.defaultFee ?? 0)) throw badRequest("Course prices in RWF must be whole amounts");
   const existing = await prisma.level.findUnique({
     where: { code: input.code },
     select: { id: true },
@@ -62,6 +71,7 @@ export const createLevel = async (input: CreateLevelInput, actorId?: string) => 
 
   const level = await prisma.level.create({
     data: {
+      coursebookUrl: input.coursebookUrl, coursebookPages: input.coursebookPages, completionRules: input.completionRules,
       code: input.code,
       language: input.language,
       title: input.title,
@@ -87,10 +97,13 @@ export const createLevel = async (input: CreateLevelInput, actorId?: string) => 
 };
 
 export const updateLevel = async (id: string, input: UpdateLevelInput, actorId?: string) => {
+  await validateCoursebook(input.coursebookUrl);
   const before = await prisma.level.findUnique({ where: { id } });
   if (!before) {
     throw notFound("Level not found");
   }
+
+  if ((input.currency ?? before.currency).toUpperCase() === "RWF" && !Number.isInteger(input.defaultFee ?? Number(before.defaultFee))) throw badRequest("Course prices in RWF must be whole amounts");
 
   if (input.code && input.code !== before.code) {
     const duplicate = await prisma.level.findUnique({
@@ -103,6 +116,7 @@ export const updateLevel = async (id: string, input: UpdateLevelInput, actorId?:
   }
 
   const data: Prisma.LevelUpdateInput = {
+    coursebookUrl: input.coursebookUrl, coursebookPages: input.coursebookPages, completionRules: input.completionRules,
     code: input.code,
     language: input.language,
     title: input.title,

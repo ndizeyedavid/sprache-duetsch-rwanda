@@ -1,10 +1,10 @@
-import { useEffect, useRef } from 'react';
-import { FiArrowLeft, FiSend } from 'react-icons/fi';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../common/PageState';
+import { useEffect,useRef } from 'react';
+import { FiArrowLeft,FiSend } from 'react-icons/fi';
+import type { ChatMessage,Conversation } from '../../lib/services';
 import { isoDate } from '../../lib/services';
-import { threadTitle, initials, accentFor, dedupeParticipants } from './utils';
-import type { ChatMessage, Conversation } from '../../lib/services';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../common/PageState';
 import { ChatBubble } from '../ui/ChatBubble';
+import { accentFor,dedupeParticipants,initials,threadTitle } from './utils';
 
 type Props = {
  thread: Conversation | null;

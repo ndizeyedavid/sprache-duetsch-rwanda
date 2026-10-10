@@ -1,12 +1,12 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import { validatedBody, validatedParams, validatedQuery } from "../../lib/request.js";
-import * as service from "./messages.service.js";
+import { validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import type {
-  CreateConversationInput,
-  ListMessagesQuery,
-  SendMessageInput,
+CreateConversationInput,
+ListMessagesQuery,
+SendMessageInput,
 } from "./messages.schema.js";
+import * as service from "./messages.service.js";
 
 const requesterId = (req: Request): string => {
   if (!req.user) {

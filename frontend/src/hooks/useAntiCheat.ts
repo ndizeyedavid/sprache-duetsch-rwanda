@@ -1,9 +1,6 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-
+import { useCallback,useEffect,useRef,useState } from "react";
 export type ViolationType =
-  | "copy"
-  | "cut"
-  | "paste"
+  | "copy" | "cut" | "paste"
   | "contextmenu"
   | "tab_switch"
   | "window_blur"
@@ -11,9 +8,7 @@ export type ViolationType =
   | "printscreen"
   | "select_all"
   | "refresh_attempt";
-
 export type Violation = { type: ViolationType; at: number; message: string };
-
 const MESSAGES: Record<ViolationType, string> = {
   copy: "Copying is not allowed during this assignment.",
   cut: "Cutting is not allowed.",
@@ -26,7 +21,6 @@ const MESSAGES: Record<ViolationType, string> = {
   select_all: "Select-all is disabled.",
   refresh_attempt: "Refreshing during assignment is a violation.",
 };
-
 export function useAntiCheat(
   enabled: boolean,
   maxViolations = 3,
@@ -45,9 +39,7 @@ export function useAntiCheat(
   const [isFullscreen, setIsFullscreen] = useState<boolean>(Boolean(document.fullscreenElement));
   const containerRef = useRef<HTMLDivElement>(null);
   const lastViolationRef = useRef<number>(0);
-
   const persistKey = opts?.persistKey;
-
   useEffect(() => {
     if (!persistKey) return;
     try {
@@ -56,7 +48,6 @@ export function useAntiCheat(
       // ignore
     }
   }, [violations, persistKey]);
-
   const addViolation = useCallback(
     (type: ViolationType) => {
       const now = Date.now();
@@ -77,7 +68,6 @@ export function useAntiCheat(
     },
     [maxViolations, opts],
   );
-
   const enterFullscreen = useCallback(async () => {
     const el = containerRef.current;
     if (!el) return;
@@ -87,7 +77,6 @@ export function useAntiCheat(
       // ignore — user may have denied
     }
   }, []);
-
   const exitFullscreen = useCallback(async () => {
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
@@ -95,12 +84,10 @@ export function useAntiCheat(
       // ignore
     }
   }, []);
-
   useEffect(() => {
     if (!enabled) return;
     void enterFullscreen();
   }, [enabled, enterFullscreen]);
-
   useEffect(() => {
     if (!enabled) return;
     const onCopy = (e: ClipboardEvent) => {
@@ -169,7 +156,6 @@ export function useAntiCheat(
       const target = e.target as HTMLElement | null;
       if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)) return;
     };
-
     document.addEventListener("copy", onCopy);
     document.addEventListener("cut", onCut);
     document.addEventListener("paste", onPaste);
@@ -181,7 +167,6 @@ export function useAntiCheat(
     window.addEventListener("blur", onBlur);
     document.addEventListener("fullscreenchange", onFullscreen);
     window.addEventListener("beforeunload", onBeforeUnload);
-
     return () => {
       document.removeEventListener("copy", onCopy);
       document.removeEventListener("cut", onCut);
@@ -196,10 +181,8 @@ export function useAntiCheat(
       window.removeEventListener("beforeunload", onBeforeUnload);
     };
   }, [enabled, addViolation]);
-
   const locked = violations.length >= maxViolations;
   const remaining = Math.max(0, maxViolations - violations.length);
-
   return {
     containerRef,
     violations,

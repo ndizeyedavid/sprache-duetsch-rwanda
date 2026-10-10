@@ -1,16 +1,18 @@
-import { useMemo, useState, useEffect } from "react";
+import { JoinIntake } from '../../components/student/JoinIntake';
+import { useEffect,useMemo,useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Panel, SectionHeader } from "../../components/ui/Panel";
 import {
-  EmptyBlock,
-  ErrorBlock,
-  LoadingBlock,
+EmptyBlock,
+ErrorBlock,
+LoadingBlock,
 } from "../../components/common/PageState";
+import { CourseTable } from "../../components/student/CourseTable";
+import { Panel } from "../../components/ui/Panel";
 import { useApi } from "../../hooks/useApi";
 import { getMyCourses } from "../../lib/services";
-import { CourseTable } from "../../components/student/CourseTable";
 
 type Filter = "all" | "enrolled" | "completed";
+const FILTER_LABELS: Record<Filter, string> = { all: "All", enrolled: "In progress", completed: "Completed" };
 
 export function Courses() {
   const mine = useApi("my-courses", getMyCourses);
@@ -61,15 +63,11 @@ export function Courses() {
   }, [courses]);
 
   return (
-    <div className="space-y-4">
+    <div className="journey-enter space-y-6">
       <Panel>
-        <SectionHeader
-          title="My courses"
-          // action={{ label: "Dashboard", to: "/dashboard" }}
-        />
-        <p className="text-xs leading-relaxed text-muted">
-          Only your enrolled courses appear here. Filter by enrolled or
-          completed, search, then continue where you left off.
+        <h1 className="text-xl font-semibold">My courses</h1>
+        <p className="mt-1 text-sm text-muted">
+          Continue a course, or open a finished one to revise.
         </p>
         {courses.length > 0 ? (
           <div className="mt-3 flex flex-wrap gap-1.5">
@@ -81,11 +79,11 @@ export function Courses() {
                   key={f}
                   type="button"
                   onClick={() => updateFilter(f)}
-                  className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium capitalize transition ${active ? "border-brand bg-brand text-white" : "border-line bg-base-100 text-muted hover:border-brand/20 hover:text-ink"}`}
+                  className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition ${active ? "border-brand bg-brand/10 text-brand" : "border-line bg-base-100 text-muted hover:border-brand/30 hover:text-ink"}`}
                 >
-                  {f}{" "}
+                  {FILTER_LABELS[f]}{" "}
                   <span
-                    className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? "bg-white/20" : "bg-base-200"}`}
+                    className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${active ? "bg-brand/15" : "bg-base-200"}`}
                   >
                     {c}
                   </span>
@@ -107,8 +105,8 @@ export function Courses() {
       ) : !mine.data || mine.data.length === 0 ? (
         <Panel>
           <EmptyBlock
-            title="No enrolments yet"
-            hint="An academic admin will enrol you — only then will it appear here. Dashboard cards and this table stay empty until then."
+            title="No courses yet"
+            hint="Join a course below. It appears here and opens once its fee is paid."
           />
         </Panel>
       ) : (
@@ -120,6 +118,8 @@ export function Courses() {
           onQ={updateQ}
         />
       )}
+
+      <JoinIntake onJoined={mine.refetch} />
     </div>
   );
 }

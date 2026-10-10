@@ -1,11 +1,11 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ACADEMIC_ROLES, ADMIN_ROLES, STAFF_ROLES } from "../../lib/roles.js";
+import { ACADEMIC_ROLES,ADMIN_ROLES,STAFF_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./students.controller.js";
-import { listStudentsQuerySchema, placementSchema, studentIdSchema, updateStudentSchema } from "./students.schema.js";
+import { listStudentsQuerySchema,placementSchema,studentIdSchema,updateStudentSchema } from "./students.schema.js";
 
 export const studentsRouter = Router();
 
@@ -47,6 +47,23 @@ studentsRouter.get(
   requireRole(...STAFF_ROLES),
   validate({ params: studentIdSchema }),
   asyncHandler(controller.get),
+);
+
+// Lesson progress and per-session attendance: academic records, so no Finance Admin.
+studentsRouter.get(
+  "/:id/progress",
+  requireAuth,
+  requireRole(...ADMIN_ROLES),
+  validate({ params: studentIdSchema }),
+  asyncHandler(controller.progress),
+);
+
+studentsRouter.get(
+  "/:id/attendance",
+  requireAuth,
+  requireRole(...ADMIN_ROLES),
+  validate({ params: studentIdSchema }),
+  asyncHandler(controller.attendance),
 );
 
 studentsRouter.patch(

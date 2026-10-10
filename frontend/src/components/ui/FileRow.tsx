@@ -1,4 +1,4 @@
-import { FiDownload, FiFileText } from 'react-icons/fi';
+import { FiDownload,FiFileText } from 'react-icons/fi';
 
 type FileRowProps = {
  name: string;

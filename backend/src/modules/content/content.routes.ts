@@ -6,30 +6,26 @@ import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./content.controller.js";
 import {
-  createActivitySchema,
-  createLessonSchema,
-  createMaterialSchema,
-  createModuleSchema,
-  gradeActivitySubmissionSchema,
-  idParamsSchema,
-  levelIdParamsSchema,
-  listActivitySubmissionsQuerySchema,
-  myNotesQuerySchema,
-  searchQuerySchema,
-  submitActivitySchema,
-  updateActivitySchema,
-  updateLessonSchema,
-  updateMaterialSchema,
-  updateModuleSchema,
-  updateProgressSchema,
+createActivitySchema,
+createLessonSchema,
+createMaterialSchema,
+createModuleSchema,
+gradeActivitySubmissionSchema,
+idParamsSchema,
+levelIdParamsSchema,
+listActivitySubmissionsQuerySchema,
+searchQuerySchema,
+updateActivitySchema,
+updateLessonSchema,
+updateMaterialSchema,
+updateModuleSchema
 } from "./content.schema.js";
-
+import { studentContentRouter } from "./student-content.routes.js";
 export const contentRouter = Router();
-
+contentRouter.use(studentContentRouter);
 // ---------------------------------------------------------------------------
 // Staff / teacher CMS (academic roles; teachers limited to their own levels)
 // ---------------------------------------------------------------------------
-
 contentRouter.post(
   "/levels/:levelId/modules",
   requireAuth,
@@ -37,7 +33,6 @@ contentRouter.post(
   validate({ params: levelIdParamsSchema, body: createModuleSchema }),
   asyncHandler(controller.createModule),
 );
-
 contentRouter.get(
   "/levels/:levelId/modules",
   requireAuth,
@@ -45,7 +40,6 @@ contentRouter.get(
   validate({ params: levelIdParamsSchema }),
   asyncHandler(controller.listModules),
 );
-
 contentRouter.patch(
   "/modules/:id",
   requireAuth,
@@ -53,7 +47,6 @@ contentRouter.patch(
   validate({ params: idParamsSchema, body: updateModuleSchema }),
   asyncHandler(controller.updateModule),
 );
-
 contentRouter.delete(
   "/modules/:id",
   requireAuth,
@@ -61,7 +54,6 @@ contentRouter.delete(
   validate({ params: idParamsSchema }),
   asyncHandler(controller.deleteModule),
 );
-
 contentRouter.post(
   "/modules/:id/lessons",
   requireAuth,
@@ -69,7 +61,6 @@ contentRouter.post(
   validate({ params: idParamsSchema, body: createLessonSchema }),
   asyncHandler(controller.createLesson),
 );
-
 contentRouter.get(
   "/lessons/:id",
   requireAuth,
@@ -77,7 +68,6 @@ contentRouter.get(
   validate({ params: idParamsSchema }),
   asyncHandler(controller.getLesson),
 );
-
 contentRouter.patch(
   "/lessons/:id",
   requireAuth,
@@ -85,7 +75,6 @@ contentRouter.patch(
   validate({ params: idParamsSchema, body: updateLessonSchema }),
   asyncHandler(controller.updateLesson),
 );
-
 contentRouter.delete(
   "/lessons/:id",
   requireAuth,
@@ -93,7 +82,6 @@ contentRouter.delete(
   validate({ params: idParamsSchema }),
   asyncHandler(controller.deleteLesson),
 );
-
 contentRouter.post(
   "/lessons/:id/materials",
   requireAuth,
@@ -101,7 +89,6 @@ contentRouter.post(
   validate({ params: idParamsSchema, body: createMaterialSchema }),
   asyncHandler(controller.createMaterial),
 );
-
 contentRouter.patch(
   "/materials/:id",
   requireAuth,
@@ -109,7 +96,6 @@ contentRouter.patch(
   validate({ params: idParamsSchema, body: updateMaterialSchema }),
   asyncHandler(controller.updateMaterial),
 );
-
 contentRouter.delete(
   "/materials/:id",
   requireAuth,
@@ -117,7 +103,6 @@ contentRouter.delete(
   validate({ params: idParamsSchema }),
   asyncHandler(controller.deleteMaterial),
 );
-
 contentRouter.post(
   "/lessons/:id/activities",
   requireAuth,
@@ -125,7 +110,6 @@ contentRouter.post(
   validate({ params: idParamsSchema, body: createActivitySchema }),
   asyncHandler(controller.createActivity),
 );
-
 contentRouter.patch(
   "/activities/:id",
   requireAuth,
@@ -133,7 +117,6 @@ contentRouter.patch(
   validate({ params: idParamsSchema, body: updateActivitySchema }),
   asyncHandler(controller.updateActivity),
 );
-
 contentRouter.delete(
   "/activities/:id",
   requireAuth,
@@ -141,68 +124,18 @@ contentRouter.delete(
   validate({ params: idParamsSchema }),
   asyncHandler(controller.deleteActivity),
 );
-
 // ---------------------------------------------------------------------------
 // Student learning views (access-gated)
 // ---------------------------------------------------------------------------
 
-contentRouter.get(
-  "/my/courses",
-  requireAuth,
-  requireRole("STUDENT"),
-  asyncHandler(controller.myCourses),
-);
 
-contentRouter.get(
-  "/my/lessons/:id",
-  requireAuth,
-  requireRole("STUDENT"),
-  validate({ params: idParamsSchema }),
-  asyncHandler(controller.myLesson),
-);
 
-contentRouter.post(
-  "/my/lessons/:id/progress",
-  requireAuth,
-  requireRole("STUDENT"),
-  validate({ params: idParamsSchema, body: updateProgressSchema }),
-  asyncHandler(controller.updateProgress),
-);
 
-contentRouter.get(
-  "/my/notes",
-  requireAuth,
-  requireRole("STUDENT"),
-  validate({ query: myNotesQuerySchema }),
-  asyncHandler(controller.myNotes),
-);
 
-contentRouter.get(
-  "/my/assignments",
-  requireAuth,
-  requireRole("STUDENT"),
-  asyncHandler(controller.myAssignments),
-);
-
-contentRouter.get(
-  "/my/assignments/:id",
-  requireAuth,
-  requireRole("STUDENT"),
-  validate({ params: idParamsSchema }),
-  asyncHandler(controller.myAssignmentDetail),
-);
 
 // ---------------------------------------------------------------------------
 // Activity submissions (student submit + redo, teacher grading)
 // ---------------------------------------------------------------------------
-
-contentRouter.post(
-  "/activities/:id/submit",
-  requireAuth,
-  requireRole("STUDENT"),
-  validate({ params: idParamsSchema, body: submitActivitySchema }),
-  asyncHandler(controller.submitActivity),
-);
 
 contentRouter.post(
   "/activities/:id/violation",
@@ -212,20 +145,6 @@ contentRouter.post(
   asyncHandler(controller.recordActivityViolation),
 );
 
-contentRouter.get(
-  "/activities/:id/my-submission",
-  requireAuth,
-  requireRole("STUDENT"),
-  validate({ params: idParamsSchema }),
-  asyncHandler(controller.myActivitySubmission),
-);
-
-contentRouter.get(
-  "/my/activity-submissions",
-  requireAuth,
-  requireRole("STUDENT"),
-  asyncHandler(controller.myActivitySubmissions),
-);
 
 contentRouter.get(
   "/activity-submissions",
@@ -234,7 +153,6 @@ contentRouter.get(
   validate({ query: listActivitySubmissionsQuerySchema }),
   asyncHandler(controller.listActivitySubmissions),
 );
-
 contentRouter.patch(
   "/activity-submissions/:id/grade",
   requireAuth,
@@ -242,11 +160,9 @@ contentRouter.patch(
   validate({ params: idParamsSchema, body: gradeActivitySubmissionSchema }),
   asyncHandler(controller.gradeActivitySubmission),
 );
-
 // ---------------------------------------------------------------------------
 // Search (all authenticated roles; students scoped to their levels)
 // ---------------------------------------------------------------------------
-
 contentRouter.get(
   "/search",
   requireAuth,

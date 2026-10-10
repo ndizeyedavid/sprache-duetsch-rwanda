@@ -1,4 +1,4 @@
-import type { NextFunction, Request, RequestHandler, Response } from "express";
+import type { NextFunction,Request,RequestHandler,Response } from "express";
 
 // Express 5 forwards rejected promises from async handlers automatically, but wrapping
 // keeps behaviour explicit and works the same for any handler we mix in.

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { FiEdit2, FiGrid, FiTrash2 } from 'react-icons/fi';
-import { Panel } from '../ui/Panel';
-import { Modal } from '../ui/Modal';
-import { createLevel, updateLevel } from '../../lib/services';
+import { FiEdit2,FiGrid,FiTrash2 } from 'react-icons/fi';
 import type { LevelItem } from '../../lib/services';
+import { createLevel,updateLevel } from '../../lib/services';
+import { Modal } from '../ui/Modal';
+import { Panel } from '../ui/Panel';
 import { LevelDeleteDialog } from './LevelDeleteDialog';
 import { LevelForm } from './LevelForm';
 

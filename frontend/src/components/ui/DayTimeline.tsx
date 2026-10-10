@@ -1,7 +1,7 @@
 import { FiMoreHorizontal } from "react-icons/fi";
-import { AvatarGroup } from "./AvatarGroup";
 import { TONE_CLASSES } from "../../lib/theme";
 import type { Tone } from "../../types";
+import { AvatarGroup } from "./AvatarGroup";
 
 export type DayTimelineEvent = {
  id: string;

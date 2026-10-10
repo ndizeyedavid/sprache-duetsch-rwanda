@@ -1,6 +1,7 @@
-import { FiMail, FiMessageCircle } from "react-icons/fi";
-import { StatusBadge } from "../ui/StatusBadge";
+import { profilePhotoUrl } from '../../lib/profile-photo';
+import { FiMail,FiMessageCircle } from "react-icons/fi";
 import { humanize } from "../../lib/services";
+import { StatusBadge } from "../ui/StatusBadge";
 import { initials } from "./utils";
 
 type Person = {
@@ -43,7 +44,7 @@ export function PeopleTable({ rows, onMessage, sendingId }: Props) {
                 <div className="flex items-center gap-3">
                   {p.avatarUrl ? (
                     <img
-                      src={p.avatarUrl}
+                      src={profilePhotoUrl(p.avatarUrl)}
                       alt=""
                       className="size-9 rounded-full object-cover"
                     />

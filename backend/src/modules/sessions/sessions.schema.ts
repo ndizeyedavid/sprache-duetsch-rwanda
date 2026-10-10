@@ -1,5 +1,6 @@
 import { z } from "zod";
-import { idParam, optionalText, paginationQuery } from "../../lib/query.js";
+import { idParam,optionalText,paginationQuery } from "../../lib/query.js";
+import { safeSessionUrl,timezoneSchema } from "./session-policy.js";
 
 export const sessionModeEnum = z.enum(["ONSITE", "ONLINE", "HYBRID"]);
 export const meetingProviderEnum = z.enum(["GOOGLE_MEET", "ZOOM", "MICROSOFT_TEAMS", "OTHER"]);
@@ -24,32 +25,33 @@ export const materialTypeEnum = z.enum([
 
 export const createSessionSchema = z.object({
   classGroupId: z.string().min(1),
-  title: optionalText(200),
+  title: z.string().trim().max(200).nullable().optional(),
   mode: sessionModeEnum,
   provider: meetingProviderEnum,
-  meetingUrl: optionalText(1000),
+  meetingUrl: safeSessionUrl,
   startAt: z.coerce.date(),
   endAt: z.coerce.date(),
-  timezone: optionalText(64),
-  room: optionalText(120),
+  timezone: timezoneSchema,
+  room: z.string().trim().max(120).nullable().optional(),
   teacherId: z.string().min(1).optional(),
-  recordingUrl: optionalText(1000),
-  notes: optionalText(2000),
+  repeatWeeks: z.number().int().min(1).max(16).optional(),
+  recordingUrl: safeSessionUrl,
+  notes: z.string().trim().max(2000).nullable().optional(),
 });
 
 export const updateSessionSchema = z
   .object({
-    title: optionalText(200),
+    title: z.string().trim().max(200).nullable().optional(),
     mode: sessionModeEnum.optional(),
     provider: meetingProviderEnum.optional(),
-    meetingUrl: optionalText(1000),
+    meetingUrl: safeSessionUrl,
     startAt: z.coerce.date().optional(),
     endAt: z.coerce.date().optional(),
-    timezone: optionalText(64),
-    room: optionalText(120),
+    timezone: timezoneSchema,
+    room: z.string().trim().max(120).nullable().optional(),
     status: sessionStatusEnum.optional(),
-    recordingUrl: optionalText(1000),
-    notes: optionalText(2000),
+    recordingUrl: safeSessionUrl,
+    notes: z.string().trim().max(2000).nullable().optional(),
   })
   .refine((value) => Object.keys(value).length > 0, {
     message: "At least one field must be provided",
@@ -67,7 +69,7 @@ export const listSessionsQuerySchema = z.object({
   ...paginationQuery,
 });
 
-export const studentSessionsQuerySchema = z.object({ ...paginationQuery });
+export const studentSessionsQuerySchema = z.object({ ...paginationQuery, scope: z.enum(["past", "all"]).optional() });
 
 export const cancelSessionSchema = z.object({
   reason: optionalText(500),
@@ -82,7 +84,7 @@ export const rescheduleSessionSchema = z.object({
 export const createSessionMaterialSchema = z.object({
   title: z.string().trim().min(1).max(200),
   type: materialTypeEnum,
-  url: optionalText(1000),
+  url: safeSessionUrl,
   description: optionalText(1000),
 });
 
@@ -91,17 +93,18 @@ export const markAttendanceSchema = z.object({
     .array(
       z.object({
         studentId: z.string().min(1),
+        expectedUpdatedAt: z.coerce.date().nullable().optional(),
         status: attendanceStatusEnum,
-        note: optionalText(500),
+        note: z.string().trim().max(500).nullable().optional(),
       }),
     )
-    .min(1),
+    .min(1).max(500).refine(records => new Set(records.map(r => r.studentId)).size === records.length, "Each student must appear only once"),
 });
 
 export const updateAttendanceSchema = z
   .object({
     status: attendanceStatusEnum.optional(),
-    note: optionalText(500),
+    note: z.string().trim().max(500).nullable().optional(),
   })
   .refine((value) => Object.keys(value).length > 0, {
     message: "At least one field must be provided",
@@ -115,7 +118,7 @@ export const attendanceSummaryQuerySchema = z.object({
 });
 
 export const sessionIdSchema = idParam;
-export const materialIdSchema = idParam;
+export const materialIdSchema = z.object({ materialId: z.string().min(1) });
 export const attendanceRecordIdSchema = idParam;
 
 export type CreateSessionInput = z.infer<typeof createSessionSchema>;

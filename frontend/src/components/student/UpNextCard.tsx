@@ -1,7 +1,7 @@
+import { FiCalendar,FiClock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { FiCalendar, FiClock } from 'react-icons/fi';
-import { isoDate, isoTime } from '../../lib/services';
-import { sessionStatusLabel, sessionTone } from '../../lib/sessions-ui';
+import { isoDate,isoTime } from '../../lib/services';
+import { sessionStatusLabel,sessionTone } from '../../lib/sessions-ui';
 import { TONE_CLASSES } from '../../lib/theme';
 
 type Session = { id: string; title: string; startAt: string; endAt: string; status: string; meetingUrl: string | null } | null;

@@ -1,33 +1,24 @@
-import { useMemo } from 'react';
-import { CurriculumManager } from '../../components/curriculum/CurriculumManager';
-import { EmptyBlock, ErrorBlock, LoadingBlock } from '../../components/common/PageState';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { TeacherCourseWorkspace } from '../../components/curriculum/TeacherCourseWorkspace';
 import { useApi } from '../../hooks/useApi';
-import { listClasses, listLevels } from '../../lib/services';
+import { listMyTeachingLevels } from '../../lib/teaching';
 
 /**
  * Teachers author content only for the levels they teach. The allowed levels are
- * derived from their own class groups; the API enforces the same rule.
+ * approved by academic staff; the API enforces the same rule.
  */
 export function TeacherContent() {
- const classes = useApi('teacher-classes', listClasses);
- const levels = useApi('levels-catalog', listLevels);
+ 
+ const levels = useApi('my-teaching-levels', listMyTeachingLevels);
 
- const allowedLevelIds = useMemo(
- () => new Set((classes.data ?? []).map((group) => group.levelId)),
- [classes.data],
- );
- const allowedLevels = useMemo(
- () => (levels.data ?? []).filter((level) => allowedLevelIds.has(level.id)),
- [levels.data, allowedLevelIds],
- );
-
- if (classes.loading || levels.loading) return <LoadingBlock label="Loading your curriculum…" />;
- if (classes.error || levels.error) {
+ const allowedLevels = levels.data ?? [];
+ if (levels.loading) return <LoadingBlock label="Loading your curriculum…" />;
+ if (levels.error) {
  return (
  <ErrorBlock
- message={classes.error ?? levels.error ?? 'Could not load your curriculum.'}
+ message={levels.error ?? 'Could not load your curriculum.'}
  onRetry={() => {
- classes.refetch();
+ 
  levels.refetch();
  }}
  />
@@ -38,10 +29,10 @@ export function TeacherContent() {
  return (
  <EmptyBlock
  title="No levels to author yet"
- hint="You can add lessons once an academic admin assigns you to a class group."
+ hint="You can add lessons once an academic admin approves your teaching levels."
  />
  );
  }
 
- return <CurriculumManager levels={allowedLevels} canCreateLevel={false} />;
+ return <TeacherCourseWorkspace levels={allowedLevels} />;
 }

@@ -9,13 +9,19 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
+      // New deploys take over at once; UpdateNotice registers the worker and asks open
+      // tabs to reload, and lazyPage() recovers if an old code file is already gone.
       registerType: "autoUpdate",
+      injectRegister: false,
       // App-shell precache + image runtime cache (low-bandwidth friendly).
       // API responses are never cached — learning and payment data stays live.
       workbox: {
+        cleanupOutdatedCaches: true,
+        skipWaiting: true,
+        clientsClaim: true,
         runtimeCaching: [
           {
-            urlPattern: ({ request }) => request.destination === "image",
+            urlPattern: ({ request, url }) => request.destination === "image" && !url.pathname.startsWith("/api/"),
             handler: "CacheFirst",
             options: {
               cacheName: "sparch-images",
@@ -31,7 +37,7 @@ export default defineConfig({
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff",
-        theme_color: "#fb0d00",
+        theme_color: "#b60e1c",
         icons: [
           { src: "logo.png", sizes: "any", type: "image/png", purpose: "any" },
         ],

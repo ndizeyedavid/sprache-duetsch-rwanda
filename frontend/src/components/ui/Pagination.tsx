@@ -1,4 +1,4 @@
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiChevronLeft,FiChevronRight } from 'react-icons/fi';
 
 type PaginationProps = {
  page: number;

@@ -1,8 +1,9 @@
-import type { Request, Response } from "express";
+import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import * as authService from "./auth.service.js";
+import type { LoginInput,RegisterInput,ResetPasswordInput,UpdateProfileInput } from "./auth.schema.js";
 import type { RequestMeta } from "./auth.service.js";
-import type { LoginInput, RegisterInput, ResetPasswordInput, UpdateProfileInput } from "./auth.schema.js";
+import * as authService from "./auth.service.js";
+import type { AuthPortal } from "./portal-access.js";
 
 const requestMeta = (req: Request): RequestMeta => ({
   ipAddress: req.ip ?? null,
@@ -74,7 +75,7 @@ export const updateMe = async (req: Request, res: Response): Promise<void> => {
 };
 
 export const google = async (req: Request, res: Response): Promise<void> => {
-  const { idToken, portal } = req.body as { idToken: string; portal?: string };
+  const { idToken, portal } = req.body as { idToken: string; portal?: AuthPortal };
   const result = await authService.googleAuth(idToken, { ipAddress: req.ip ?? null, userAgent: req.headers["user-agent"] ?? null }, portal);
   res.json({ success: true, data: result });
 };

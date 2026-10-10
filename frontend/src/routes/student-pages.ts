@@ -1,0 +1,16 @@
+import { lazyPage } from '../lib/lazy-page';
+export const Dashboard = lazyPage(() => import("../pages/student/Dashboard").then((module) => module.Dashboard));
+export const Courses = lazyPage(() => import("../pages/student/Courses").then((module) => module.Courses));
+export const CourseOverview = lazyPage(() => import("../pages/student/CourseOverview").then((module) => module.CourseOverview));
+export const CourseContents = lazyPage(() => import("../pages/student/CourseContents").then((module) => module.CourseContents));
+export const StudentLesson = lazyPage(() => import("../pages/student/LessonView").then((module) => module.StudentLesson));
+export const StudentActivity = lazyPage(() => import("../pages/student/StudentActivity").then((module) => module.StudentActivity));
+export const Schedule = lazyPage(() => import("../pages/student/Schedule").then((module) => module.Schedule));
+export const Teachers = lazyPage(() => import("../pages/student/Teachers").then((module) => module.Teachers));
+export const Grades = lazyPage(() => import("../pages/student/Grades").then((module) => module.Grades));
+export const Assignments = lazyPage(() => import("../pages/student/Assignments").then((module) => module.Assignments));
+export const AssignmentDetail = lazyPage(() => import("../pages/student/AssignmentDetail").then((module) => module.AssignmentDetail));
+export const Profile = lazyPage(() => import("../pages/student/Profile").then((module) => module.Profile));
+export const Messages = lazyPage(() => import("../pages/shared/Messages").then((module) => module.Messages));
+export const Activity = lazyPage(() => import("../pages/shared/Activity").then((module) => module.Activity));
+export const Settings = lazyPage(() => import("../pages/shared/Settings").then((module) => module.Settings));

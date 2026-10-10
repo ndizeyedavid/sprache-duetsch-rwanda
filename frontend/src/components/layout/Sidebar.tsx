@@ -1,11 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import { FiLogOut, FiSettings } from "react-icons/fi";
+import { FiLogOut,FiSettings } from "react-icons/fi";
+import { useState } from "react";
+import { useLocation,useNavigate } from "react-router-dom";
+import { NAV } from "../../lib/nav";
+import { useSession } from "../../lib/session";
+import type { Role } from "../../types";
 import { Logo } from "../ui/Logo";
 import { SidebarLink } from "./SidebarLink";
-import { NAV_DIVIDER_MY, NAV_ITEM_PAD_Y, NAV_SECTION_PAD_Y } from "./constants";
-import { NAV } from "../../lib/nav";
-import type { Role } from "../../types";
-import { useSession } from "../../lib/session";
+import { NAV_DIVIDER_MY,NAV_ITEM_PAD_Y,NAV_SECTION_PAD_Y } from "./constants";
 
 type SidebarProps = {
   role: Role;
@@ -13,15 +14,20 @@ type SidebarProps = {
   onClose: () => void;
 };
 
-// daisyUI `menu` themed through its own variables: the active item is a brand pill.
+// daisyUI `menu` pressed state uses these variables; keep it a soft brand tint, never a solid fill.
 const MENU_CLASS =
-  "menu w-full gap-0.5 px-3 py-0 [--menu-active-bg:var(--color-brand)] [--menu-active-fg:var(--color-white)]";
-const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-xs font-semibold text-base-content";
+  "menu w-full gap-1 px-3 py-0 [--menu-active-bg:color-mix(in_oklab,var(--color-brand)_10%,transparent)] [--menu-active-fg:var(--color-brand)]";
+const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-base-content/50";
 
 export function Sidebar({ role, open, onClose }: SidebarProps) {
   const items = NAV[role];
   const { signOut } = useSession();
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  // The clicked link shows a pending dot until the router commits the new page.
+  const [clicked, setClicked] = useState<{ to: string; from: string } | null>(null);
+  const pendingTo = clicked && clicked.from === pathname && clicked.to !== pathname ? clicked.to : null;
+  const go = (to: string) => { setClicked({ to, from: pathname }); onClose(); };
 
   async function handleLogout() {
     await signOut();
@@ -40,19 +46,19 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
       ) : null}
 
       <aside
-        className={`fixed inset-y-0 left-0 z-50 flex w-64 flex-col border-r border-line bg-base-300 transition-transform duration-300 lg:translate-x-0 ${
-          open ? "translate-x-0" : "-translate-x-full"
+        className={`workspace-sidebar fixed inset-y-3 left-3 z-50 flex w-60 flex-col rounded-box border border-base-300 bg-base-100/95 backdrop-blur-xl transition-transform duration-300 lg:translate-x-0 ${
+          open ? "translate-x-0" : "-translate-x-[110%]"
         }`}
       >
-        <div className="flex h-16 shrink-0 items-center border-b border-line bg-base-100 px-6">
+        <div className="flex h-24 shrink-0 items-center px-5">
           <Logo size={36} withWordmark wordmarkClassName="font-bold text-ink" />
         </div>
 
         <nav aria-label="Main navigation" className={`flex-1 overflow-y-auto scrollbar-slim ${NAV_SECTION_PAD_Y}`}>
           <ul className={MENU_CLASS}>
-            <li className={TITLE_CLASS}>Menu</li>
+            <li className={TITLE_CLASS}>{role === "STUDENT" ? "Learning" : "Workspace"}</li>
             {items.map((item) => (
-              <SidebarLink key={item.to} item={item} onNavigate={onClose} />
+              <SidebarLink key={item.to} item={item} pending={pendingTo === item.to} onNavigate={go} />
             ))}
           </ul>
 
@@ -62,13 +68,14 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
             <li className={TITLE_CLASS}>General</li>
             <SidebarLink
               item={{ label: "Settings", to: "/settings", icon: FiSettings }}
-              onNavigate={onClose}
+              pending={pendingTo === "/settings"}
+              onNavigate={go}
             />
             <li>
               <button
                 type="button"
                 onClick={() => void handleLogout()}
-                className={`gap-3 rounded-selector font-medium text-base-content/70 hover:text-coral ${NAV_ITEM_PAD_Y}`}
+                className={`gap-3 rounded-field px-3 font-medium text-base-content/70 hover:bg-coral-soft hover:text-coral ${NAV_ITEM_PAD_Y}`}
               >
                 <FiLogOut aria-hidden className="shrink-0 text-lg" />
                 <span>Log out</span>

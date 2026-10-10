@@ -1,4 +1,4 @@
-import { FiCheckCircle, FiClock, FiMinusCircle, FiXCircle } from 'react-icons/fi';
+import { FiCheckCircle,FiClock,FiMinusCircle,FiXCircle } from 'react-icons/fi';
 
 export const STATUSES = ['PRESENT', 'ABSENT', 'LATE', 'EXCUSED'] as const;
 export type AttendanceStatus = (typeof STATUSES)[number];

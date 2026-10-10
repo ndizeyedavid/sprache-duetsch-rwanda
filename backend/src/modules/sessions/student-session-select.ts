@@ -1,0 +1,16 @@
+export const studentSessionSelect = {
+  id: true,
+  title: true,
+  startAt: true,
+  endAt: true,
+  timezone: true,
+  mode: true,
+  provider: true,
+  status: true,
+  meetingUrl: true,
+  recordingUrl: true,
+  room: true,
+  notes: true,
+  teacher: { select: { firstName: true, lastName: true } },
+  classGroup: { select: { id: true, name: true } },
+} as const;
