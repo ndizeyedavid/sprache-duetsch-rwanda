@@ -4,6 +4,7 @@ export const AdminFinance = lazyPage(() => import("../pages/admin/Finance").then
 export const AdminCourses = lazyPage(() => import("../pages/admin/Courses").then((module) => module.AdminCourses));
 export const AdminSchedule = lazyPage(() => import("../pages/admin/Schedule").then((module) => module.AdminSchedule));
 export const AdminStudents = lazyPage(() => import("../pages/admin/Students").then((module) => module.AdminStudents));
+export const AdminStudentDetail = lazyPage(() => import("../pages/admin/StudentDetail").then((module) => module.AdminStudentDetail));
 export const AdminResources = lazyPage(() => import("../pages/admin/Resources").then((module) => module.AdminResources));
 export const AdminTransactions = lazyPage(() => import("../pages/admin/Transactions").then((module) => module.AdminTransactions));
 export const AdminCertificates = lazyPage(() => import("../pages/admin/Certificates").then((module) => module.AdminCertificates));
