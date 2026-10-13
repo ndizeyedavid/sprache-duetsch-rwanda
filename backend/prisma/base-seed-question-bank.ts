@@ -2,6 +2,7 @@ import type {
 Skill
 } from "../src/generated/prisma/client.js";
 import { prisma } from "../src/lib/prisma.js";
+import { seedPlacementTest } from "./seed-placement-test.js";
 export const seedQuestionBank = async (params: { levelIds: Map<string, string> }) => {
   const { levelIds } = params;
   const levelId = levelIds.get("A1")!;
@@ -10,8 +11,8 @@ export const seedQuestionBank = async (params: { levelIds: Map<string, string> }
     prompt: string;
     type: "SINGLE_CHOICE" | "TRUE_FALSE" | "FILL_BLANK";
     skill: Skill;
-    options?: unknown;
-    correctAnswer: unknown;
+    options?: string[];
+    correctAnswer: string;
     explanation?: string;
   }[] = [
     {
@@ -38,51 +39,25 @@ export const seedQuestionBank = async (params: { levelIds: Map<string, string> }
     },
   ];
 
-  const questionIds: string[] = [];
+  // A1 starter question bank (kept for teachers; no longer used as the placement test).
   for (const q of questions) {
     const existing = await prisma.question.findFirst({ where: { levelId, prompt: q.prompt } });
-    const record =
-      existing ??
-      (await prisma.question.create({
-        data: {
-          levelId,
-          skill: q.skill,
-          difficulty: "EASY",
-          type: q.type,
-          prompt: q.prompt,
-          explanation: q.explanation ?? null,
-          options: q.options ?? null,
-          correctAnswer: q.correctAnswer,
-          points: 1,
-        },
-      }));
-    questionIds.push(record.id);
-  }
-
-  const title = "Einstufungstest — A1";
-  let assessment = await prisma.assessment.findFirst({ where: { levelId, title } });
-  if (!assessment) {
-    assessment = await prisma.assessment.create({
+    if (existing) continue;
+    await prisma.question.create({
       data: {
         levelId,
-        title,
-        description: "Kurzer Test zur Einstufung. Empfiehlt A1 oder höher.",
-        type: "PLACEMENT",
-        durationMinutes: 15,
-        maxAttempts: 1,
-        passMark: 50,
-        isPublished: true,
+        skill: q.skill,
+        difficulty: "EASY",
+        type: q.type,
+        prompt: q.prompt,
+        explanation: q.explanation ?? null,
+        options: q.options,
+        correctAnswer: q.correctAnswer,
+        points: 1,
       },
     });
   }
 
-  for (let i = 0; i < questionIds.length; i += 1) {
-    await prisma.assessmentQuestion.upsert({
-      where: {
-        assessmentId_questionId: { assessmentId: assessment.id, questionId: questionIds[i] },
-      },
-      update: { order: i + 1 },
-      create: { assessmentId: assessment.id, questionId: questionIds[i], order: i + 1 },
-    });
-  }
+  // The online placement test (A1 → B2) replaces the old 3-question "Einstufungstest — A1".
+  await seedPlacementTest();
 };
