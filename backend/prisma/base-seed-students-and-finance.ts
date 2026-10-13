@@ -12,7 +12,7 @@ export const seedStudentsAndFinance = async (params: {
   staffIds: Map<string, string>;
 }) => {
   const { levelIds, intakeIds, campusIds, classIds, methodIds, staffIds } = params;
-  const remeraId = campusIds.get("REMERA")!;
+  const mainCampusId = campusIds.get("NORRSKEN")!;
   const financeUserId = staffIds.get("finance@sparch.rw") ?? null;
   const studentIds = new Map<string, string>();
 
@@ -46,7 +46,7 @@ export const seedStudentsAndFinance = async (params: {
       where: { studentCode: seed.code },
       update: {
         userId: user.id,
-        campusId: remeraId,
+        campusId: mainCampusId,
         intakeId,
         intendedLevelId: levelId,
         currentLevelId: levelId,
@@ -56,7 +56,7 @@ export const seedStudentsAndFinance = async (params: {
       create: {
         studentCode: seed.code,
         userId: user.id,
-        campusId: remeraId,
+        campusId: mainCampusId,
         intakeId,
         intendedLevelId: levelId,
         currentLevelId: levelId,
@@ -78,7 +78,7 @@ export const seedStudentsAndFinance = async (params: {
         studentId: student.id,
         levelId,
         intakeId,
-        campusId: remeraId,
+        campusId: mainCampusId,
         classGroupId: classIds.get(seed.levelCode) ?? null,
         status: seed.enrollmentStatus,
         totalFee: seed.fee,
