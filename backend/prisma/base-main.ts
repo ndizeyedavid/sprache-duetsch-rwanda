@@ -1,4 +1,3 @@
-import { levels } from './base-levels.js';
 import { prisma } from "../src/lib/prisma.js";
 import { seedArticlesAndFaqs } from './base-seed-articles-and-faqs.js';
 import { seedCampuses } from './base-seed-campuses.js';
@@ -28,8 +27,8 @@ export const main = async () => {
   const teachingClasses = await prisma.classGroup.findMany({ where: { teacherId: { not: null } }, select: { teacherId: true, levelId: true } });
   await prisma.teacherLevel.createMany({ data: teachingClasses.map(c => ({ teacherId: c.teacherId!, levelId: c.levelId, assignedById: null })), skipDuplicates: true });
 
-  console.info("→ Seeding curriculum (modules, lessons, materials, activities)");
-  await seedContent({ levelIds, staffIds, levels });
+  console.info("→ Importing curriculum (A1 coursebook + B1 course)");
+  await seedContent();
 
   console.info("→ Seeding question bank + placement test");
   await seedQuestionBank({ levelIds });
@@ -53,10 +52,10 @@ export const main = async () => {
   console.info("→ Seeding articles + FAQs");
   await seedArticlesAndFaqs({ staffIds });
 
-  console.info("✔ Seed complete (Core dataset with A1 level)");
+  console.info("✔ Seed complete (Core dataset with A1 level + B1 course content)");
   console.info(`  Super admin: ${staffAccounts[0].email} / ${staffAccounts[0].password}`);
   console.info("  Teacher:     clarisse@sparch.rw / Teacher123!");
   console.info("  Finance:     finance@sparch.rw / Finance123!");
   console.info("  Student:     nella@student.sparch.rw / Student123!");
-  console.info("  Demo levels: Run 'npm run db:seed:demo' if you want additional demo levels (A2-B2).");
+  console.info("  Demo levels: Run 'npm run db:seed:demo' for A2-B2 classes/students (B1 keeps its imported course).");
 };
