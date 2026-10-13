@@ -1,8 +1,8 @@
 import { OAuth2Client } from "google-auth-library";
 import { env } from "../../config/env.js";
 import { writeAudit } from "../../lib/audit.js";
-import { badRequest,unauthorized } from "../../lib/http-error.js";
-import { generateStudentCode } from "../../lib/ids.js";
+import { badRequest,notFound,unauthorized } from "../../lib/http-error.js";
+import { generateOpaqueToken,generateStudentCode } from "../../lib/ids.js";
 import { hashPassword } from "../../lib/password.js";
 import { prisma } from "../../lib/prisma.js";
 import { BLOCKED_LOGIN_STATUSES } from './blocked_login_statuses.js';
@@ -17,33 +17,23 @@ export const googleAuth = async (
   meta: RequestMeta,
   portal?: AuthPortal,
 ): Promise<LoginResult> => {
+  if (env.GOOGLE_AUTH_ENABLED !== "true") throw notFound("Google sign-in is disabled");
   if (!env.GOOGLE_CLIENT_ID) throw badRequest("Google sign-in is not configured");
 
   const client = new OAuth2Client(env.GOOGLE_CLIENT_ID);
   let payload: { email?: string; given_name?: string; family_name?: string; name?: string; picture?: string; sub: string; email_verified?: boolean } | null = null;
+  // Only ID tokens issued for our own client ID are accepted. Access tokens are
+  // rejected: their audience cannot be checked, so a token from another app could log in.
   try {
     const ticket = await client.verifyIdToken({ idToken, audience: env.GOOGLE_CLIENT_ID });
     const p = ticket.getPayload();
     if (p?.email && p.sub) payload = p;
   } catch {
-    // verifyIdToken failed — may be an access_token, try userinfo fallback below
+    payload = null;
   }
+  if (!payload) throw unauthorized("Invalid Google token");
 
-  if (!payload) {
-    try {
-      const res = await fetch("https://www.googleapis.com/oauth2/v3/userinfo", {
-        headers: { Authorization: `Bearer ${idToken}` },
-      });
-      if (!res.ok) throw new Error("userinfo failed");
-      const data = (await res.json()) as { email?: string; given_name?: string; family_name?: string; name?: string; picture?: string; sub?: string; email_verified?: boolean | string };
-      if (!data.email || !data.sub) throw new Error("Invalid userinfo payload");
-      payload = { email: data.email, given_name: data.given_name, family_name: data.family_name, name: data.name, picture: data.picture, sub: data.sub, email_verified: data.email_verified === true || data.email_verified === "true" };
-    } catch {
-      throw unauthorized("Invalid Google token");
-    }
-  }
-
-  if (payload.email_verified === false) throw unauthorized("Google email not verified");
+  if (payload.email_verified !== true) throw unauthorized("Google email not verified");
 
   const email = payload.email!.toLowerCase();
   const existing = await prisma.user.findUnique({ where: { email } });
@@ -70,7 +60,7 @@ export const googleAuth = async (
   const campus = await prisma.campus.findFirst({ where: { isActive: true }, select: { id: true } });
   if (!campus) throw badRequest("No active campus — contact administration");
 
-  const randomHash = await hashPassword(payload.sub + env.JWT_SECRET);
+  const randomHash = await hashPassword(generateOpaqueToken());
 
   const created = await prisma.$transaction(async (tx) => {
     const user = await tx.user.create({
