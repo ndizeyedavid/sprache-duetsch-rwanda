@@ -10,6 +10,7 @@ export { logout } from './logout.js';
 export { refreshSession } from './refresh-session.js';
 export type { RegisterResult } from './register-result.js';
 export { registerStudent } from './register-student.js';
+export { requestRegisterOtp } from './register-otp.js';
 export type { RequestMeta } from './request-meta.js';
 export { resetPassword } from './reset-password.js';
 export { revokeAllSessions } from './revoke-all-sessions.js';
