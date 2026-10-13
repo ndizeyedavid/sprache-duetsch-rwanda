@@ -35,13 +35,15 @@ const envSchema = z.object({
   REMINDERS_ENABLED: z.enum(["true", "false"]).default("true"),
   PAYMENT_REMINDER_LEAD_DAYS: z.coerce.number().int().min(1).max(90).default(7),
   REMINDER_TIMEZONE: z.string().min(1).default("Africa/Kigali"),
-  // Google OAuth — Client ID for verifying ID tokens from @react-oauth/google.
+  // Google sign-in is switched off; the endpoint answers 404 unless this is "true".
+  GOOGLE_AUTH_ENABLED: z.enum(["true", "false"]).default("false"),
+  // Google OAuth — Client ID used to verify Google ID tokens (audience check).
   GOOGLE_CLIENT_ID: z.string().optional(),
   GOOGLE_CLIENT_SECRET: z.string().optional(),
-  // SMTP — Gmail (App Password) for transactional emails (enrollment confirmations, etc).
-  SMTP_HOST: z.string().default("smtp.gmail.com"),
-  SMTP_PORT: z.coerce.number().int().positive().default(587),
-  SMTP_SECURE: z.enum(["true", "false"]).default("false"),
+  // SMTP — Zoho Mail (smtp.zoho.com:465 SSL) for transactional and notification emails.
+  SMTP_HOST: z.string().default("smtp.zoho.com"),
+  SMTP_PORT: z.coerce.number().int().positive().default(465),
+  SMTP_SECURE: z.enum(["true", "false"]).default("true"),
   SMTP_USER: z.string().optional(),
   SMTP_PASS: z.string().optional(),
   SMTP_FROM: z.string().optional(),
@@ -50,9 +52,6 @@ const envSchema = z.object({
   // HTTP relay on your VPS — Render calls this over HTTPS, VPS does SMTP to Gmail (bypasses Render's SMTP block)
   EMAIL_RELAY_URL: z.string().optional(),
   EMAIL_RELAY_SECRET: z.string().optional(),
-  // JSON list of test accounts shown on the public /demo page. Leave unset in real use:
-  // when it is missing the page and its endpoint are switched off.
-  DEMO_ACCOUNTS: z.string().optional(),
 });
 
 const parsed = envSchema.superRefine((value, ctx) => {
