@@ -13,6 +13,12 @@ export const registerSchema = z.object({
   intakeId: z.string().min(1).optional(),
   intendedLevelId: z.string().min(1).optional(),
   dateOfBirth: z.string().datetime().optional(),
+  otp: z.string().trim().regex(/^\d{6}$/, "Enter the 6-digit code from your email"),
+});
+
+export const registerOtpSchema = z.object({
+  email: z.string().trim().email().max(160),
+  firstName: z.string().trim().min(1).max(80).optional(),
 });
 
 export const loginSchema = z.object({
@@ -58,6 +64,7 @@ export const updateProfileSchema = z
   .refine((v) => Object.keys(v).length > 0, { message: 'At least one field must be provided' });
 
 export type RegisterInput = z.infer<typeof registerSchema>;
+export type RegisterOtpInput = z.infer<typeof registerOtpSchema>;
 export type LoginInput = z.infer<typeof loginSchema>;
 export type ForgotPasswordInput = z.infer<typeof forgotPasswordSchema>;
 export type ResetPasswordInput = z.infer<typeof resetPasswordSchema>;
