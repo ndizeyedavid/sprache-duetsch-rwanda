@@ -4,6 +4,8 @@ import { ACADEMIC_ROLES,ADMIN_ROLES,FINANCE_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
+import * as analytics from "./analytics.controller.js";
+import { atRiskQuerySchema,gradingBacklogQuerySchema,retentionQuerySchema } from "./analytics.schema.js";
 import * as controller from "./dashboards.controller.js";
 import { dashboardFilterSchema } from "./dashboards.schema.js";
 
@@ -44,4 +46,26 @@ dashboardsRouter.get(
   requireRole("SUPER_ADMIN"),
   validate({ query: dashboardFilterSchema }),
   asyncHandler(controller.management),
+);
+
+// Analytics. Teachers are scoped to their own classes / own backlog row; finance admins get none.
+dashboardsRouter.get(
+  "/at-risk",
+  requireRole(...ACADEMIC_ROLES),
+  validate({ query: atRiskQuerySchema }),
+  asyncHandler(analytics.atRisk),
+);
+
+dashboardsRouter.get(
+  "/retention",
+  requireRole(...ADMIN_ROLES),
+  validate({ query: retentionQuerySchema }),
+  asyncHandler(analytics.retention),
+);
+
+dashboardsRouter.get(
+  "/grading-backlog",
+  requireRole(...ACADEMIC_ROLES),
+  validate({ query: gradingBacklogQuerySchema }),
+  asyncHandler(analytics.gradingBacklog),
 );
