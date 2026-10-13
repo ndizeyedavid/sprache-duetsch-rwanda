@@ -17,6 +17,7 @@ export const listMyAssessments = async (userId: string, query: MyAssessmentsQuer
   const pagination = parsePagination(query);
   const where: Prisma.AssessmentWhereInput = {
     isPublished: true,
+    type: { not: "PLACEMENT" },
     levelId: { in: profile.levelIds },
   };
 
