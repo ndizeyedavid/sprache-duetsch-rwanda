@@ -1,6 +1,7 @@
 import { writeAuditTx } from "./audit.js";
 import { badRequest, notFound } from "./http-error.js";
 import { env,smtpEnabled } from "../config/env.js";
+import { canReceiveMail } from "./email-domain.js";
 import type { Prisma } from "../generated/prisma/client.js";
 import { logger } from "./logger.js";
 import { sendMail } from "./mailer.js";
@@ -31,6 +32,10 @@ export async function dispatchEmailDeliveries(deliver: typeof sendMail = sendMai
     const payload = row.payload as unknown as { mail: DeliveryMail; expiresAt?: string | null };
     if (payload.expiresAt && new Date(payload.expiresAt) <= new Date()) {
       await prisma.notificationDelivery.update({ where: { id: row.id }, data: { status: "FAILED", lastError: "Recovery link expired; request a new password reset", payload: {} } });
+      continue;
+    }
+    if (deliver === sendMail && !await canReceiveMail(row.email)) {
+      await prisma.notificationDelivery.update({ where: { id: row.id }, data: { status: "SKIPPED", lastError: "Recipient domain has no mail server", payload: {} } });
       continue;
     }
     try {
