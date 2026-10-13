@@ -8,10 +8,12 @@ loadStudentAccessProfile,
 import { forbidden,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
 import type { AuthUser } from "../../types/auth.js";
+import { effectiveDueAt } from "./late-penalty.js";
 export const assignmentInclude = {
   classGroup: { include: { level: { select: { code: true, title: true } } } },
   createdBy: { select: { firstName: true, lastName: true } },
   recipients: true,
+  lesson: { select: { id: true, title: true } },
 } satisfies Prisma.AssignmentInclude;
 export const staffScope = (actor: AuthUser): Prisma.AssignmentWhereInput =>
   actor.role === "TEACHER" ? { classGroup: { teacherId: actor.id } } : {};
@@ -48,5 +50,13 @@ export const getStudentAssignment = async (userId: string, id: string) => {
   if (assignment.releaseAt && assignment.releaseAt > new Date())
     throw forbidden("This assignment is not available yet");
   assertPaymentAccess(profile, "LESSON");
-  return { assignment, profile };
+  const extension = await prisma.assignmentExtension.findUnique({
+    where: { assignmentId_studentId: { assignmentId: id, studentId: profile.studentId } },
+    select: { dueAt: true, reason: true },
+  });
+  // Students always work against their effective deadline (a granted extension moves it later).
+  return {
+    assignment: { ...assignment, dueAt: effectiveDueAt(assignment.dueAt, extension?.dueAt), originalDueAt: assignment.dueAt, extension },
+    profile,
+  };
 };
