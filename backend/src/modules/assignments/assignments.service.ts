@@ -1,37 +1,32 @@
 import type { Prisma } from "../../generated/prisma/client.js";
-import { assertAccountActive,loadStudentAccessProfile } from "../../lib/access.js";
 import { writeAudit } from "../../lib/audit.js";
 import { badRequest,conflict } from "../../lib/http-error.js";
 import { notifyUsers } from "../../lib/notify.js";
 import { prisma } from "../../lib/prisma.js";
 import type { AuthUser } from "../../types/auth.js";
-import { assignmentInclude,checkClass,getStaffAssignment,getStudentAssignment } from "./assignment-access.js";
+import { assignmentInclude,checkClass,getStaffAssignment } from "./assignment-access.js";
+import { listExtensions } from "./assignment-extensions.js";
+import { checkLesson } from "./assignment-lessons.js";
 import { listStaffAssignments } from "./assignment-list.js";
-import { assertQuestionsUnchanged,prepareQuestions,publicQuestions } from "./assignment-questions.js";
+import { assertQuestionsUnchanged,prepareQuestions } from "./assignment-questions.js";
 import type { AssignmentInput } from "./assignments.schema.js";
+import { computeLateness } from "./late-penalty.js";
 export const listStaff = listStaffAssignments;
-export const listStudent = async (userId: string) => {
-  const p = await loadStudentAccessProfile(userId); assertAccountActive(p);
-  const rows = await prisma.assignment.findMany({ where: { status: "PUBLISHED", classGroupId: { in: p.classGroupIds }, classGroup: { levelId: { in: p.levelIds } }, AND: [ { OR: [{ releaseAt: null }, { releaseAt: { lte: new Date() } }] }, { OR: [{ recipients: { none: {} } }, { recipients: { some: { studentId: p.studentId } } }] } ] }, include: { ...assignmentInclude, submissions: { where: { studentId: p.studentId } } }, orderBy: { dueAt: "asc" } });
-  return rows.map(a => ({ ...a, questions: publicQuestions(a.questions) }));
-};
-export const getStudentDetail = async (userId: string, id: string) => {
-  const { assignment, profile } = await getStudentAssignment(userId, id);
-  const submission = await prisma.assignmentSubmission.findUnique({ where: { assignmentId_studentId: { assignmentId: id, studentId: profile.studentId } }, include: { versions: { orderBy: { revision: "desc" } } } });
-  const files = await prisma.assignmentFile.findMany({ where: { assignmentId: id, uploaderId: userId }, select: { id: true, originalName: true, mimeType: true, sizeBytes: true } });
-  return { assignment: { ...assignment, questions: publicQuestions(assignment.questions) }, submission, files };
-};
 export const getStaffDetail = async (actor: AuthUser, id: string) => {
   const assignment = await getStaffAssignment(actor, id);
   const submissions = await prisma.assignmentSubmission.findMany({ where: { assignmentId: id }, include: { student: { select: { id: true, studentCode: true, user: { select: { firstName: true, lastName: true } } } }, versions: { orderBy: { revision: "desc" } } }, orderBy: { submittedAt: "desc" } });
   const roster = await prisma.enrollment.findMany({ where: { classGroupId: assignment.classGroupId, status: "ACTIVE", ...(assignment.recipients.length ? { studentId: { in: assignment.recipients.map(r => r.studentId) } } : {}) }, select: { student: { select: { id: true, studentCode: true, user: { select: { firstName: true, lastName: true } } } } }, distinct: ["studentId"] });
   const files = await prisma.assignmentFile.findMany({ where: { assignmentId: id }, select: { id: true, originalName: true, mimeType: true, sizeBytes: true } });
-  const visible = submissions.map(s => ({ ...s, text: s.versions[0]?.text ?? "", fileIds: s.versions[0]?.fileIds ?? [], responses: s.versions[0]?.responses ?? {} }));
-  const submittedFiles = new Set(submissions.flatMap(s => s.versions.flatMap(v => v.fileIds)));
-  return { assignment, submissions: visible, roster: roster.map(r => r.student), files: files.filter(f => submittedFiles.has(f.id)) };
+  const extensions = await listExtensions(id);
+  // Lateness is previewed against today's extension and policy; grading applies the same rule.
+  const lateness = (s: (typeof submissions)[number]) => s.versions[0] ? computeLateness({ submittedAt: s.versions[0].submittedAt, dueAt: assignment.dueAt, extensionDueAt: extensions.find(e => e.studentId === s.studentId)?.dueAt, policy: assignment }) : null;
+  const visible = submissions.map(s => ({ ...s, text: s.versions[0]?.text ?? "", fileIds: s.versions[0]?.fileIds ?? [], responses: s.versions[0]?.responses ?? {}, lateness: lateness(s) }));
+  const submittedFiles = new Set(submissions.flatMap(s => [s.feedbackAudioFileId, ...s.versions.flatMap(v => [...v.fileIds, v.feedbackAudioFileId])]));
+  return { assignment, submissions: visible, roster: roster.map(r => r.student), files: files.filter(f => submittedFiles.has(f.id)), extensions };
 };
 export const saveAssignment = async (actor: AuthUser, input: AssignmentInput, id?: string) => {
-  await checkClass(actor, input.classGroupId);
+  const group = await checkClass(actor, input.classGroupId);
+  await checkLesson(input.lessonId, group.levelId);
   const previous = id ? await getStaffAssignment(actor, id) : null;
   if (previous && previous.classGroupId !== input.classGroupId) throw conflict("An assignment cannot be moved to another class");
   const enrolled = await prisma.enrollment.findMany({ where: { classGroupId: input.classGroupId, status: "ACTIVE" }, select: { studentId: true, student: { select: { userId: true } } }, distinct: ["studentId"] });
