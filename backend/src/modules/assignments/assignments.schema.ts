@@ -23,6 +23,10 @@ export const assignmentBody = z
     estimatedMinutes: z.number().int().min(1).max(600).default(20),
     maxPoints: z.number().positive().max(1000).default(10),
     allowLate: z.boolean().default(true),
+    gracePeriodMinutes: z.number().int().min(0).max(10080).default(0),
+    latePenaltyPercentPerDay: z.number().min(0).max(100).default(0),
+    latePenaltyMaxPercent: z.number().min(0).max(100).default(100),
+    lessonId: z.uuid().nullable().default(null),
     maxSubmissions: z.number().int().min(1).max(20).default(3),
     questions: authoredQuestionsSchema.default([]),
     resources: z.array(resource).max(10).default([]),
@@ -55,15 +59,29 @@ export const draftBody = z.object({
   fileIds: z.array(z.uuid()).max(5).default([]),
   version: z.iso.datetime().nullable().optional(),
 });
+export const penaltyOverrideBody = z.object({
+  percent: z.number().min(0).max(100),
+  reason: z.string().trim().min(3).max(500),
+});
 export const reviewBody = z.object({
   action: z.enum(["GRADE", "RETURN"]),
   score: z.number().min(0).max(1000).optional(),
-  feedback: z.string().trim().min(1).max(10000),
+  feedback: z.string().trim().max(10000).default(""),
+  feedbackAudioFileId: z.uuid().nullable().default(null),
+  penaltyOverride: penaltyOverrideBody.optional(),
   questionScores: z.array(z.number().min(0).max(1000)).max(50).default([]),
   rubricScores: z.array(z.number().min(0).max(1000)).max(10).default([]),
-});
+}).refine(v => v.feedback || v.feedbackAudioFileId, { path: ["feedback"], message: "Write feedback or record audio feedback" });
 export type AssignmentInput = z.infer<typeof assignmentBody>;
 export type DraftInput = z.infer<typeof draftBody>;
 export type ReviewInput = z.infer<typeof reviewBody>;
+export type PenaltyOverrideInput = z.infer<typeof penaltyOverrideBody>;
+export const myListQuery = z.object({ lessonId: z.uuid().optional() });
 
 export const assignmentStatusBody = z.object({ status: z.enum(["DRAFT", "PUBLISHED", "ARCHIVED"]) });
+export const extensionParams = z.object({ id: z.uuid(), studentId: z.uuid() });
+export const extensionBody = z.object({
+  dueAt: z.iso.datetime({ offset: true }),
+  reason: z.string().trim().max(500).optional(),
+});
+export type ExtensionInput = z.infer<typeof extensionBody>;
