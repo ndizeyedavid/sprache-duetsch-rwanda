@@ -3,8 +3,9 @@ import { notFound } from "../../lib/http-error.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import type { ListClassQuery } from "./classes.schema.js";
+import { withAttendanceThreshold } from "./class-threshold.js";
 
-const briefLevel = { select: { id: true, title: true, levelLabel: true, code: true } } as const;
+const briefLevel = { select: { id: true, title: true, levelLabel: true, code: true, attendanceAlertThreshold: true } } as const;
 const briefIntake = { select: { id: true, code: true, name: true } } as const;
 const briefCampus = { select: { id: true, name: true, code: true } } as const;
 const briefTeacher = {
@@ -61,7 +62,7 @@ export const listClasses = async (query: ListClassQuery, forcedTeacherId?: strin
     prisma.classGroup.count({ where }),
   ]);
 
-  return buildPaginated(rows, total, pagination);
+  return buildPaginated(rows.map(withAttendanceThreshold), total, pagination);
 };
 
 export const getClass = async (id: string) => {
@@ -95,8 +96,9 @@ export const getClass = async (id: string) => {
     throw notFound("Class not found");
   }
 
-  return classGroup;
+  return withAttendanceThreshold(classGroup);
 };
 
 
 export { createClass,deleteClass,updateClass } from "./class-commands.js";
+export { getInheritedThreshold } from "./class-threshold.js";
