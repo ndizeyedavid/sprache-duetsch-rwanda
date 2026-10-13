@@ -1,45 +1,18 @@
-import type { NextFunction,Request,Response } from "express";
-import multer from "multer";
-import { randomUUID } from "node:crypto";
-import { mkdirSync } from "node:fs";
-import { unlink } from "node:fs/promises";
+import type { NextFunction, Request, Response } from "express";
 import path from "node:path";
-import { badRequest,notFound } from "../../lib/http-error.js";
+import { badRequest, notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
-import { getStaffAssignment,getStudentAssignment } from "./assignment-access.js";
+import { getStaffAssignment, getStudentAssignment } from "./assignment-access.js";
 import { checkEditable } from "./assignment-policy.js";
-import { matchesFileSignature } from "./file-signature.js";
-const directory = path.resolve(process.cwd(), "uploads", "assignments");
-mkdirSync(directory, { recursive: true });
-const accepted = new Set([
-  "application/pdf",
-  "image/png",
-  "image/jpeg",
-  "image/webp",
-  "audio/mpeg",
-  "audio/mp3",
-  "audio/wav",
-  "audio/x-wav",
-  "audio/webm",
-  "audio/ogg",
-  "audio/mp4",
-]);
-const upload = multer({
-  storage: multer.diskStorage({
-    destination: directory,
-    filename: (_req, _file, cb) => cb(null, randomUUID()),
-  }),
-  limits: { fileSize: 10 * 1024 * 1024 },
-  fileFilter: (_req, file, cb) => {
-    if (accepted.has(file.mimetype)) cb(null, true);
-    else cb(new Error("Use PDF, PNG, JPG, WebP or audio (maximum 10 MB)"));
-  },
-});
-export const receiveFile = async (
-  req: Request,
-  res: Response,
-  next: NextFunction,
-): Promise<void> => {
+import { directory, storeAssignmentFile } from "./assignment-storage.js";
+
+const uploadLimit = async (assignmentId: string, uploaderId: string, max: number): Promise<void> => {
+  if ((await prisma.assignmentFile.count({ where: { assignmentId, uploaderId } })) >= max)
+    throw badRequest("Attachment limit reached. Contact your teacher");
+};
+
+/** Student attachment for their own work, while the submission is still editable. */
+export const receiveFile = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const id = req.params.id as string;
     const { assignment, profile } = await getStudentAssignment(req.user!.id, id);
@@ -48,78 +21,50 @@ export const receiveFile = async (
     });
     checkEditable(assignment, submission);
     if (assignment.responseType === "TEXT") throw badRequest("This assignment accepts text only");
-    if (
-      (await prisma.assignmentFile.count({
-        where: { assignmentId: id, uploaderId: req.user!.id },
-      })) >= 100
-    )
-      throw badRequest("Attachment limit reached. Contact your teacher");
-    upload.single("file")(req, res, (err: unknown) => {
-      if (err) {
-        next(badRequest(err instanceof Error ? err.message : "Upload failed"));
-        return;
-      }
-      void (async () => {
-        if (!req.file) throw badRequest("Choose a file to upload");
-        if (assignment.responseType === "AUDIO" && !req.file.mimetype.startsWith("audio/")) {
-          await unlink(req.file.path);
-          throw badRequest("Choose an audio file");
-        }
-        try {
-          if (!(await matchesFileSignature(req.file.path, req.file.mimetype)))
-            throw badRequest("The file contents do not match its format. Choose a valid file");
-          const result = await prisma.assignmentFile.create({
-            data: {
-              assignmentId: id,
-              uploaderId: req.user!.id,
-              storageName: req.file.filename,
-              originalName: path.basename(req.file.originalname).slice(0, 200),
-              mimeType: req.file.mimetype,
-              sizeBytes: req.file.size,
-            },
-          });
-          res
-            .status(201)
-            .json({
-              success: true,
-              data: {
-                id: result.id,
-                originalName: result.originalName,
-                mimeType: result.mimeType,
-                sizeBytes: result.sizeBytes,
-              },
-            });
-        } catch (e) {
-          await unlink(req.file.path).catch(() => {});
-          throw e;
-        }
-      })().catch(next);
-    });
+    await uploadLimit(id, req.user!.id, 100);
+    storeAssignmentFile(req, res, next, { assignmentId: id, uploaderId: req.user!.id, audioOnly: assignment.responseType === "AUDIO" });
   } catch (e) {
     next(e);
   }
 };
+
+/** Teacher's recorded or uploaded audio feedback. Linked to a submission when the review is sent. */
+export const receiveFeedbackAudio = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  try {
+    const id = req.params.id as string;
+    await getStaffAssignment(req.user!, id);
+    await uploadLimit(id, req.user!.id, 500);
+    storeAssignmentFile(req, res, next, { assignmentId: id, uploaderId: req.user!.id, audioOnly: true });
+  } catch (e) {
+    next(e);
+  }
+};
+
+const isFeedbackAudio = async (fileId: string, where: { assignmentId: string; studentId?: string }): Promise<boolean> =>
+  !!(await prisma.assignmentSubmission.findFirst({
+    where: { ...where, OR: [{ feedbackAudioFileId: fileId }, { versions: { some: { feedbackAudioFileId: fileId } } }] },
+    select: { id: true },
+  }));
+
 export const downloadAttachment = async (req: Request, res: Response): Promise<void> => {
-  const file = await prisma.assignmentFile.findUnique({
-    where: { id: req.params.fileId as string },
-  });
+  const file = await prisma.assignmentFile.findUnique({ where: { id: req.params.fileId as string } });
   if (!file || file.assignmentId !== req.params.id) throw notFound("Attachment not found");
   if (req.user!.role === "STUDENT") {
-    await getStudentAssignment(req.user!.id, file.assignmentId);
-    if (file.uploaderId !== req.user!.id) throw notFound("Attachment not found");
+    // Students reach their own uploads and the audio feedback on their own work only.
+    const { profile } = await getStudentAssignment(req.user!.id, file.assignmentId);
+    if (file.uploaderId !== req.user!.id && !(await isFeedbackAudio(file.id, { assignmentId: file.assignmentId, studentId: profile.studentId })))
+      throw notFound("Attachment not found");
   } else {
     await getStaffAssignment(req.user!, file.assignmentId);
-    if (
-      !(await prisma.assignmentVersion.findFirst({
-        where: { fileIds: { has: file.id }, submission: { assignmentId: file.assignmentId } },
-      }))
-    )
+    const submitted = await prisma.assignmentVersion.findFirst({
+      where: { fileIds: { has: file.id }, submission: { assignmentId: file.assignmentId } },
+      select: { id: true },
+    });
+    if (!submitted && file.uploaderId !== req.user!.id && !(await isFeedbackAudio(file.id, { assignmentId: file.assignmentId })))
       throw notFound("Only submitted attachments can be downloaded");
   }
   res.setHeader("Cache-Control", "private, no-store");
   await new Promise<void>((resolve, reject) =>
-    res.download(path.join(directory, file.storageName), file.originalName, (e) =>
-      e ? reject(e) : resolve(),
-    ),
+    res.download(path.join(directory, file.storageName), file.originalName, (e) => (e ? reject(e) : resolve())),
   );
 };
