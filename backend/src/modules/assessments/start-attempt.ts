@@ -13,6 +13,7 @@ export const startAttempt = async (userId: string, assessmentId: string) => tran
     select: {
       id: true,
       levelId: true,
+      type: true,
       isPublished: true,
       protectedMode: true,
       durationMinutes: true,
@@ -28,6 +29,8 @@ export const startAttempt = async (userId: string, assessmentId: string) => tran
   if (!assessment || !assessment.isPublished) {
     throw notFound("Assessment not found");
   }
+  // Placement has its own flow (/students/me/placement) that records a PlacementResult.
+  if (assessment.type === "PLACEMENT") throw badRequest("Take the placement test from the Placement test page");
 
   await assertLevelAccess(userId, assessment.levelId);
   const profile = await loadStudentAccessProfile(userId);
