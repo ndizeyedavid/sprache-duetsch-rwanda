@@ -4,7 +4,7 @@
 
 ## Layout & entrypoints
 
-- `frontend/src/main.tsx` (BrowserRouter, `initTheme()`) → `App.tsx`, which only composes `routes/{public,student,teacher,admin}-routes.tsx` (add new routes there, guards in `routes/guards.tsx`; lazy-loaded routes: `/dashboard`, `/courses`, `/courses/:slug`, `/courses/:slug/learn`, `/schedule`, `/instructors`, `/messages`, `/activity`, `/profile`, `/settings`, `/notifications`, `/notes`, `/payments`, `/placement`, `/login`, `/register`, `/catalog`, `/apply`, `/verify/:code`, `/teacher/*`, `/admin/*`), `index.css`. `src/lib/api.ts` is the only axios instance; `src/lib/auth-store.ts` owns tokens; `src/components/layout/RouteProgress.tsx` drives NProgress on navigation. Teacher adds `/teacher/classes/:classGroupId/people` (roster drill-down) and `/teacher/reports` (class-filtered analytics).
+- `frontend/src/main.tsx` (BrowserRouter, `initTheme()`) → `App.tsx`, which only composes `routes/{public,student,teacher,admin}-routes.tsx` (add new routes there, guards in `routes/guards.tsx`; lazy-loaded routes: `/dashboard`, `/courses`, `/courses/:slug`, `/courses/:slug/learn`, `/schedule`, `/instructors`, `/messages`, `/activity`, `/profile`, `/settings`, `/notifications`, `/notes`, `/payments`, `/placement`, `/login`, `/demo`, `/register`, `/apply`, `/verify/:code`, `/teacher/*`, `/admin/*`), `index.css`. `src/lib/api.ts` is the only axios instance; `src/lib/auth-store.ts` owns tokens; `src/components/layout/RouteProgress.tsx` drives NProgress on navigation. Teacher adds `/teacher/classes/:classGroupId/people` (roster drill-down) and `/teacher/reports` (class-filtered analytics).
 - `backend/src/server.ts` → `app.ts` → `routes.ts` (mounts every module router under `/api`). Entrypoints below.
 - UI components must use the `daisyui` skill in `.agents/skills/`. No other component library.
 - Backend follows the `express-typescript` skill in `.agents/skills/`.
@@ -14,6 +14,7 @@
 - `src/server.ts` — listen + graceful shutdown; `src/app.ts` — helmet/cors/compression/JSON/cookies/pino-http/rate-limit + error handler; `src/routes.ts` — `apiRouter` (mounted at `/api`), `/health` included.
 - `src/config/env.ts` — the only place `process.env` is read (Zod-validated).
 - `src/lib/prisma.ts` — `PrismaClient` with the `@prisma/adapter-pg` driver adapter.
+- `prisma/live-demo/run.ts` — public demo dataset for the hosted site (`@demo.sparch.rw` users, `DEMO-` codes, password `Demo2026!`, listed on `/demo` via `frontend/src/components/demo/demo-accounts.ts`). Re-runnable: it resets only demo rows and never writes levels/modules/lessons/activities. Run with `LIVE_DEMO_CONFIRM=yes PAYPACK_ENABLED=false DATABASE_URL=... node --import tsx prisma/live-demo/run.ts` (`--reset-only` removes it).
 - `prisma/schema.prisma` — domain model (31 models / 25 enums); `prisma/seed.ts` — idempotent demo seed.
 - Generated client lives at `src/generated/prisma` and is **gitignored** — run `npm run db:generate` after a fresh clone.
 
