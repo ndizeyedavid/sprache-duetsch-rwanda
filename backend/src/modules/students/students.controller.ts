@@ -3,7 +3,7 @@ import { sendCsv } from "../../lib/csv.js";
 import { unauthorized } from "../../lib/http-error.js";
 import { FINANCE_ROLES } from "../../lib/roles.js";
 import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
-import type { ListStudentsQuery,PlacementInput,UpdateStudentInput } from "./students.schema.js";
+import type { ListStudentsQuery,UpdateStudentInput } from "./students.schema.js";
 import * as service from "./students.service.js";
 
 const canSeeMoney = (req: Request): boolean => Boolean(req.user && FINANCE_ROLES.includes(req.user.role));
@@ -65,11 +65,5 @@ export const attendance = async (req: Request, res: Response): Promise<void> => 
 export const update = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
   const data = await service.updateStudent(id, validatedBody<UpdateStudentInput>(req), actorId(req));
-  res.json({ success: true, data });
-};
-
-export const placement = async (req: Request, res: Response): Promise<void> => {
-  const { id } = validatedParams<{ id: string }>(req);
-  const data = await service.runPlacement(id, validatedBody<PlacementInput>(req), actorId(req));
   res.json({ success: true, data });
 };
