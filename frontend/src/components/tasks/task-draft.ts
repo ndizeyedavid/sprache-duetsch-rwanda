@@ -9,7 +9,8 @@ export function emptyDraft(kind: TaskKind, scope: { classGroupId?: string; level
   return {
     kind, status: 'DRAFT', title: '', instructions: '', questions: [], classGroupId: scope.classGroupId ?? '', levelId: scope.levelId ?? '',
     homeworkMode: 'work', responseType: 'TEXT', estimatedMinutes: 20, maxPoints: 10, allowLate: true, maxSubmissions: 3,
-    resources: [], rubric: [], studentIds: [], releaseAt: null, dueAt: null,
+    resources: [], rubric: [], studentIds: [], releaseAt: null, dueAt: null, lessonId: null,
+    gracePeriodMinutes: 0, latePenaltyPercentPerDay: 0, latePenaltyMaxPercent: 100,
     testType: kind === 'QUIZ' ? 'QUIZ' : 'MODULE_TEST', durationMinutes: kind === 'TEST' ? 45 : null,
     maxAttempts: kind === 'QUIZ' ? 3 : 1, passMark: kind === 'QUIZ' ? 50 : 60,
     availableFrom: null, availableUntil: null, protectedMode: false,
@@ -28,7 +29,8 @@ export function fromHomework(h: Homework): TaskDraft {
     ...emptyDraft('HOMEWORK'), status: h.status, title: h.title, instructions: h.instructions, questions, classGroupId: h.classGroupId,
     homeworkMode: questions.length ? 'questions' : 'work', responseType: h.responseType, estimatedMinutes: h.estimatedMinutes,
     maxPoints: Number(h.maxPoints), allowLate: h.allowLate, maxSubmissions: h.maxSubmissions, resources: h.resources ?? [],
-    rubric: h.rubric ?? [], studentIds: h.recipients.map(r => r.studentId), releaseAt: h.releaseAt, dueAt: h.dueAt,
+    rubric: h.rubric ?? [], studentIds: h.recipients.map(r => r.studentId), releaseAt: h.releaseAt, dueAt: h.dueAt, lessonId: h.lessonId ?? null,
+    gracePeriodMinutes: h.gracePeriodMinutes ?? 0, latePenaltyPercentPerDay: Number(h.latePenaltyPercentPerDay ?? 0), latePenaltyMaxPercent: Number(h.latePenaltyMaxPercent ?? 100),
   };
 }
 
@@ -48,7 +50,8 @@ export function toHomeworkInput(d: TaskDraft): HomeworkInput {
     classGroupId: d.classGroupId, title: d.title.trim(), instructions: d.instructions.trim(), responseType: questions.length ? 'TEXT' : d.responseType,
     status: d.status, dueAt: d.dueAt, releaseAt: d.releaseAt, estimatedMinutes: d.estimatedMinutes,
     maxPoints: questions.length ? sumPoints(questions) : d.maxPoints, allowLate: d.allowLate, maxSubmissions: d.maxSubmissions,
-    resources: d.resources, rubric: questions.length ? [] : d.rubric, studentIds: d.studentIds, questions,
+    resources: d.resources, rubric: questions.length ? [] : d.rubric, studentIds: d.studentIds, questions, lessonId: d.lessonId,
+    gracePeriodMinutes: d.gracePeriodMinutes, latePenaltyPercentPerDay: d.latePenaltyPercentPerDay, latePenaltyMaxPercent: d.latePenaltyMaxPercent,
   };
 }
 
