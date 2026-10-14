@@ -1,11 +1,11 @@
-import { format } from 'date-fns';
 import type { ReactNode } from 'react';
 import { FiArrowUpRight,FiClock,FiMapPin,FiVideo } from 'react-icons/fi';
 import { sessionStatusLabel,teacherName } from '../../lib/sessions-ui';
 import { ClassJoinLink } from './ClassJoinLink';
+import { SessionTimeShort } from './SessionTimes';
 
 export type ScheduleSession = {
-  id: string; title: string; startAt: string; endAt: string; status: string; mode: string;
+  id: string; title: string; startAt: string; endAt: string; timezone?: string | null; status: string; cancelReason?: string | null; mode: string;
   meetingUrl: string | null; recordingUrl?: string | null; room?: string | null;
   teacher: { firstName: string; lastName: string } | null; classGroup: { name: string } | null;
 };
@@ -23,7 +23,8 @@ export function ScheduleSessionCard({ session, onOpen, actions }: { session: Sch
       <button type="button" onClick={onOpen} className="min-w-0 flex-1 text-left focus-visible:outline-2 focus-visible:outline-secondary">
         <p className="text-xs text-muted">{session.classGroup?.name ?? 'Live class'}</p>
         <h3 className="mt-1 text-sm font-semibold leading-6 sm:text-base">{session.title || 'Untitled session'}</h3>
-        <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted"><span className="inline-flex items-center gap-1.5"><FiClock aria-hidden />{format(new Date(session.startAt), 'HH:mm')}–{format(new Date(session.endAt), 'HH:mm')}</span><span>{teacherName(session.teacher)}</span><span>{session.room ?? (online ? session.mode === 'HYBRID' ? 'Hybrid class' : 'Online class' : 'On campus')}</span></div>
+        <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted"><span className="inline-flex items-center gap-1.5"><FiClock aria-hidden /><SessionTimeShort startAt={session.startAt} endAt={session.endAt} timezone={session.timezone ?? null} /></span><span>{teacherName(session.teacher)}</span><span>{session.room ?? (online ? session.mode === 'HYBRID' ? 'Hybrid class' : 'Online class' : 'On campus')}</span></div>
+        {session.status === 'CANCELLED' && session.cancelReason ? <p className="mt-2 text-xs text-error">Cancelled: {session.cancelReason}</p> : null}
       </button>
       <span className={`badge badge-soft badge-sm ${tone}`}>{ended && session.status === 'SCHEDULED' ? 'Ended' : sessionStatusLabel(session.status)}</span>
       <div className="flex w-full items-center justify-end gap-2 sm:w-auto sm:self-center">
