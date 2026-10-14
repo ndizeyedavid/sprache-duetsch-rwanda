@@ -2,6 +2,8 @@ import { z } from "zod";
 import { booleanQuery,idParam,optionalText,paginationQuery } from "../../lib/query.js";
 import { completionRulesSchema } from "../certificates/completion-policy.js";
 
+const percentField = z.number().int().min(0).max(100).nullable().optional();
+
 export const createLevelSchema = z.object({
   coursebookUrl: z.string().regex(/^\/api\/uploads\/[a-zA-Z0-9._-]+$/, "Upload a PDF and use its resource URL").nullable().optional(),
   coursebookPages: z.number().int().positive().nullable().optional(),
@@ -16,6 +18,10 @@ export const createLevelSchema = z.object({
   defaultFee: z.coerce.number().finite().min(0).max(999999999).optional(),
   currency: z.string().trim().min(1).max(10).default("RWF"),
   isActive: z.boolean().optional(),
+  /** Lowest placement-test % that recommends this level; null = never recommended (specialised tracks). */
+  placementMinScore: percentField,
+  /** Low-attendance alert threshold (%) for classes at this level; null = system default. */
+  attendanceAlertThreshold: percentField,
 });
 
 export const updateLevelSchema = createLevelSchema.omit({ currency: true })
