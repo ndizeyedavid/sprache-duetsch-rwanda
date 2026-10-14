@@ -2,6 +2,7 @@ import { FiPlus, FiX } from 'react-icons/fi';
 import { responseLabels } from '../../assignments/homework/format';
 import type { TaskDraft } from '../task-types';
 import { Field, NumberField } from './fields';
+import { RubricTemplates } from './RubricTemplates';
 
 /** Open-ended homework: what students hand in, total points and an optional rubric. */
 export function WorkFields({ draft: d, update, locked }: { draft: TaskDraft; update: (p: Partial<TaskDraft>) => void; locked: boolean }) {
@@ -22,7 +23,8 @@ export function WorkFields({ draft: d, update, locked }: { draft: TaskDraft; upd
           <div><h3 className="text-sm font-semibold">Marking rubric</h3><p className="text-xs text-muted">Optional. Students see it before they start.{d.rubric.length ? ` ${rubricTotal}/${d.maxPoints} points used.` : ''}</p></div>
           <button type="button" className="btn btn-ghost btn-sm" disabled={locked || d.rubric.length >= 10} onClick={() => update({ rubric: [...d.rubric, { title: '', description: '', points: 1 }] })}><FiPlus aria-hidden />Add criterion</button>
         </div>
-        <ul className="space-y-2">
+        <RubricTemplates rubric={d.rubric} locked={locked} onLoad={rubric => update({ rubric, maxPoints: rubric.reduce((t, r) => t + Number(r.points || 0), 0) })} />
+        <ul className="mt-2 space-y-2">
           {d.rubric.map((r, i) => (
             <li key={i} className="grid gap-2 rounded-field border border-base-300 p-2 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)_72px_auto]">
               <input className="input input-sm" aria-label={`Criterion ${i + 1} name`} placeholder="e.g. Vocabulary" disabled={locked} value={r.title} onChange={e => setRow(i, { title: e.target.value })} />
