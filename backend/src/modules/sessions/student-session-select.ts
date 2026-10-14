@@ -7,6 +7,7 @@ export const studentSessionSelect = {
   mode: true,
   provider: true,
   status: true,
+  cancelReason: true,
   meetingUrl: true,
   recordingUrl: true,
   room: true,
