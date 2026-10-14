@@ -6,13 +6,18 @@ import { PaymentPending } from './PaymentPending';
 import { PaymentRequestForm } from './PaymentRequestForm';
 import type { usePaypackCheckout } from './usePaypackCheckout';
 
-type Props = { balance: number; currency: string; checkout: ReturnType<typeof usePaypackCheckout> };
+type Props = {
+  balance: number; currency: string; checkout: ReturnType<typeof usePaypackCheckout>;
+  /** Supplied by public pages so the signed-in config endpoint is never called. */
+  config?: { enabled: boolean; minimumAmount: number };
+};
 
 /** Mobile-money payment through Paypack: the only way students pay online. */
-export function PaypackCheckout({ balance, currency, checkout }: Props) {
-  const config = useApi('paypack-config', getPaypackConfig);
-  const available = config.data?.enabled && currency === 'RWF';
-  const minimum = config.data?.minimumAmount ?? 100;
+export function PaypackCheckout({ balance, currency, checkout, config: given }: Props) {
+  const config = useApi('paypack-config', getPaypackConfig, !given);
+  const settings = given ?? config.data;
+  const available = settings?.enabled && currency === 'RWF';
+  const minimum = settings?.minimumAmount ?? 100;
   const loading = config.loading || checkout.loading;
   return (
     <div className="flex h-full flex-col">
