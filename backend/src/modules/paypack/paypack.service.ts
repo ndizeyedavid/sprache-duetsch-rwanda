@@ -4,14 +4,21 @@ import { badRequest, conflict, notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
 import { transact } from "../../lib/transactions.js";
 import { resolveStudentId } from "../payments/resolve-student-id.js";
-import { assertPaypackEnabled, findTransaction, requestCashin } from "./paypack-client.js";
+import { assertPaypackEnabled, findTransaction, paypackEnabled, requestCashin } from "./paypack-client.js";
 import type { CheckoutInput } from "./paypack.schema.js";
 import { processStoredEvents } from "./webhook-inbox.js";
 import { settleCheckout } from "./settle-checkout.js";
 
+export const PAYPACK_MINIMUM = 100;
+export async function paypackAvailable(): Promise<boolean> {
+  const method = await prisma.paymentMethodConfig.findUnique({ where: { code: "PAYPACK" } });
+  return paypackEnabled() && method?.isActive !== false;
+}
 export async function startCheckout(userId: string, input: CheckoutInput) {
+  return startStudentCheckout(await resolveStudentId(userId), input);
+}
+export async function startStudentCheckout(studentId: string, input: CheckoutInput) {
   assertPaypackEnabled();
-  const studentId = await resolveStudentId(userId);
   const { checkout, created } = await transact(async tx => {
     const previous = await tx.paymentCheckout.findUnique({ where: { requestKey: input.requestKey } });
     if (previous) {
