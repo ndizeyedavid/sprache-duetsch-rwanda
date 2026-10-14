@@ -44,6 +44,7 @@ export function ClassEditorForm({
     capacity: String(initial?.capacity ?? 30),
     room: initial?.room ?? "",
     isActive: initial?.isActive ?? true,
+    attendanceAlertThreshold: initial?.attendanceAlertThreshold == null ? "" : String(initial.attendanceAlertThreshold),
   });
   const [error, setError] = useState<string | null>(null);
   async function submit(event: FormEvent) {
@@ -58,6 +59,7 @@ export function ClassEditorForm({
         capacity: Number(draft.capacity),
         teacherId: draft.teacherId || null,
         room: draft.room.trim() || null,
+        attendanceAlertThreshold: draft.attendanceAlertThreshold.trim() === "" ? null : Number(draft.attendanceAlertThreshold),
       };
       if (initial) await updateClass(initial.id, body);
       else await createClass(body);
