@@ -1,10 +1,18 @@
+import type { Prisma } from "../../generated/prisma/client.js";
 import { badRequest } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
-export const recommendLevelByScore = async (score: number) => {
-  const levels = await prisma.level.findMany({ orderBy: { order: "asc" } });
-  if (levels.length === 0) {
-    throw badRequest("No levels are configured");
+import { pickPlacementLevel } from "./pick-placement-level.js";
+
+type Client = Prisma.TransactionClient | typeof prisma;
+
+/** Loads the level catalogue and applies the placement bands (see pickPlacementLevel). */
+export const recommendLevelByScore = async (score: number, client: Client = prisma) => {
+  const levels = await client.level.findMany({
+    select: { id: true, code: true, title: true, levelLabel: true, order: true, isActive: true, placementMinScore: true },
+  });
+  const level = pickPlacementLevel(levels, score);
+  if (!level) {
+    throw badRequest("No active levels are configured");
   }
-  const index = Math.min(Math.max(Math.floor(score / 25), 0), levels.length - 1);
-  return levels[index];
+  return level;
 };
