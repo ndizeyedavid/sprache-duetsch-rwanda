@@ -4,9 +4,10 @@ import { recalculateStudentFinance } from "../../lib/finance.js";
 import { prisma } from "../../lib/prisma.js";
 import { methodSummarySelect } from './method-summary-select.js';
 import { resolveStudentId } from './resolve-student-id.js';
-export const getMyFinance = async (userId: string) => {
-  const studentId = await resolveStudentId(userId);
+export const getMyFinance = async (userId: string) => getStudentFinanceDetail(await resolveStudentId(userId));
 
+/** Balance, charges with their schedule status, payments and discounts for one student. */
+export const getStudentFinanceDetail = async (studentId: string) => {
   await recalculateStudentFinance(prisma, studentId);
   const [finance, charges, payments, discounts] = await Promise.all([
     prisma.studentFinance.findUnique({ where: { studentId } }),
