@@ -1,7 +1,10 @@
 import { apiPost } from '.././api';
+import type { StaffPlacementResult } from './placement-types';
+
+/** Staff-entered (MANUAL) placement; optionally decided at once (override needs a reason). */
 export function runPlacement(
   studentId: string,
-  body: { score: number; recommendedLevelId?: string; note?: string },
-): Promise<{ score: number; recommendedLevel: { id: string; code: string; title: string } }> {
+  body: { score: number; assignedLevelId?: string; overrideReason?: string; note?: string },
+): Promise<StaffPlacementResult> {
   return apiPost(`/students/${studentId}/placement`, body);
 }
