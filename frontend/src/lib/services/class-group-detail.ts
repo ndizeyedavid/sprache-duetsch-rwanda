@@ -1,3 +1,4 @@
+import type { ResolvedThreshold } from '../class-threshold';
 export type ClassGroupDetail = {
   id: string;
   code: string;
@@ -10,6 +11,8 @@ export type ClassGroupDetail = {
   capacity: number;
   room: string | null;
   isActive: boolean;
+  attendanceAlertThreshold: number | null;
+  attendanceThreshold?: ResolvedThreshold;
   level: { id: string; code: string; title: string };
   intake: { id: string; code: string; name: string };
   campus: { id: string; code: string; name: string };
