@@ -39,7 +39,11 @@ export type RegisterPayload = {
   shift: 'MORNING' | 'AFTERNOON' | 'EVENING' | 'WEEKEND';
   intakeId?: string;
   intendedLevelId?: string;
+  /** 6-digit code emailed by requestRegisterOtp. */
+  otp: string;
 };
+
+export type RegisterOtpResult = { email: string; expiresInSeconds: number; resendAfterSeconds: number; devCode?: string };
 
 /** Token storage lives here and nowhere else. */
 export function getAccessToken(): string | null {
@@ -75,6 +79,10 @@ export async function login(email: string, password: string, remember = true): P
   setTokens(result.tokens.accessToken, result.tokens.refreshToken, remember);
   return result.user;
 }
+
+/** Step 1 of sign-up: emails a one-time code to prove the address before the account exists. */
+export const requestRegisterOtp = (email: string, firstName?: string) =>
+  apiPost<RegisterOtpResult>('/auth/register/otp', { email, firstName });
 
 export async function register(payload: RegisterPayload): Promise<AuthUser> {
   const result = await apiPost<LoginResult>('/auth/register', payload);
