@@ -1,9 +1,11 @@
-import { FiLogOut,FiSettings } from "react-icons/fi";
+import { FiBell,FiLogOut,FiSettings } from "react-icons/fi";
 import { useState } from "react";
 import { useLocation,useNavigate } from "react-router-dom";
 import { NAV } from "../../lib/nav";
 import { useSession } from "../../lib/session";
 import type { Role } from "../../types";
+import { NOTIFICATIONS_PATH } from "../notifications/notification-links";
+import { useUnreadNotifications } from "../notifications/unread-context";
 import { Logo } from "../ui/Logo";
 import { SidebarLink } from "./SidebarLink";
 import { NAV_DIVIDER_MY,NAV_ITEM_PAD_Y,NAV_SECTION_PAD_Y } from "./constants";
@@ -22,6 +24,7 @@ const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-[10px] font-semibold uppercase 
 export function Sidebar({ role, open, onClose }: SidebarProps) {
   const items = NAV[role];
   const { signOut } = useSession();
+  const { count: unread } = useUnreadNotifications();
   const navigate = useNavigate();
   const { pathname } = useLocation();
   // The clicked link shows a pending dot until the router commits the new page.
@@ -66,6 +69,11 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
 
           <ul className={MENU_CLASS}>
             <li className={TITLE_CLASS}>General</li>
+            <SidebarLink
+              item={{ label: "Notifications", to: NOTIFICATIONS_PATH, icon: FiBell, badge: unread }}
+              pending={pendingTo === NOTIFICATIONS_PATH}
+              onNavigate={go}
+            />
             <SidebarLink
               item={{ label: "Settings", to: "/settings", icon: FiSettings }}
               pending={pendingTo === "/settings"}
