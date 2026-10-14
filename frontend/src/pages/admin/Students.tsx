@@ -50,7 +50,7 @@ export function AdminStudents() {
  return (
  <div className="space-y-5">
  <StudentRegisterSummary rows={students.data} />
- {canPlace && <AcademicModalAction label="Record placement" title="Placement result" wide>{done => <StudentPlacement students={students.data ?? []} levels={levels.data ?? []} onSaved={() => { students.refetch(); done('Placement saved.'); }} />}</AcademicModalAction>}
+ {canPlace && <AcademicModalAction label="Placement results" title="Placement results" wide>{() => <StudentPlacement students={students.data ?? []} levels={levels.data ?? []} onSaved={students.refetch} />}</AcademicModalAction>}
 
 
  <Panel>
