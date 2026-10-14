@@ -4,6 +4,7 @@ import { useApi } from "../../hooks/useApi";
 import { apiErrorMessage } from "../../lib/api";
 import { gradeActivitySubmission,listActivitySubmissions } from "../../lib/services";
 import { EmptyBlock,ErrorBlock,LoadingBlock } from "../common/PageState";
+import { ActivityResponseView } from "./ActivityResponseView";
 type Props = { lessonId?: string };
 export function ActivityGradingPanel({ lessonId }: Props) {
   const submissions = useApi(`activity-subs-${lessonId ?? "all"}`, () =>
@@ -133,9 +134,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                       <p className="mt-1 text-xs text-muted">
                         {s.student.user.firstName} {s.student.user.lastName} · {s.student.studentCode} · Attempt #{s.attemptNumber} · {new Date(s.submittedAt).toLocaleString()}
                       </p>
-                      <p className="mt-1.5 line-clamp-2 rounded bg-base-200 px-2 py-1 text-xs">
-                        Response: {typeof s.response === "string" ? s.response : JSON.stringify(s.response)}
-                      </p>
+                      <ActivityResponseView response={s.response} />
                       <p className="mt-1.5 flex flex-wrap gap-1.5 text-[11px]">
                         {s.score !== null ? <span className="rounded-full bg-base-200 px-2 py-0.5">Score: {String(s.score)}/1</span> : <span className="rounded-full bg-coral text-error-content px-2 py-0.5 font-medium text-coral">Needs grading</span>}
                         {s.isCorrect !== null ? (
@@ -158,7 +157,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                       <div className="grid gap-2 sm:grid-cols-3">
                         <label className="block">
                           <span className="mb-1 block text-xs font-medium">Score (0-1)</span>
-                          <input type="number" min={0} max={1} step={1} value={score} onChange={(e) => setScore(e.currentTarget.value)} className="input w-full rounded-full border-line bg-base-100 text-sm" />
+                          <input type="number" min={0} max={1} step={0.05} value={score} onChange={(e) => setScore(e.currentTarget.value)} className="input w-full rounded-full border-line bg-base-100 text-sm" />
                         </label>
                         <label className="flex items-center gap-2 pt-6 text-xs font-medium">
                           <input type="checkbox" className="checkbox checkbox-sm" checked={isCorrect} onChange={(e) => setIsCorrect(e.currentTarget.checked)} />
