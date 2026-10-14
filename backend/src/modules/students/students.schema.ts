@@ -41,14 +41,7 @@ export const updateStudentSchema = z
     message: "At least one field must be provided",
   });
 
-export const placementSchema = z.object({
-  score: z.coerce.number().int().min(0).max(100),
-  recommendedLevelId: z.string().uuid().optional(),
-  note: optionalText(500),
-});
-
 export const studentIdSchema = idParam;
 
 export type ListStudentsQuery = z.infer<typeof listStudentsQuerySchema>;
 export type UpdateStudentInput = z.infer<typeof updateStudentSchema>;
-export type PlacementInput = z.infer<typeof placementSchema>;
