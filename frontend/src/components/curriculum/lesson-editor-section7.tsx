@@ -19,7 +19,7 @@ return (<ul className="space-y-2">
  return (
  <li key={a.id} className="overflow-hidden rounded-box border border-line bg-base-100">
  <div className="flex items-center gap-3 px-3 py-2.5">
- <span className={`flex size-7 shrink-0 items-center justify-center rounded-full ${a.isPublished ? 'bg-brand-soft text-brand' : 'bg-base-200 text-muted'}`}>
+ <span className={`flex size-7 shrink-0 items-center justify-center rounded-full ${a.isPublished ? 'bg-brand text-primary-content' : 'bg-base-200 text-muted'}`}>
  <FiLayers aria-hidden className="text-xs" />
  </span>
  <span className="min-w-0 grow">
@@ -27,7 +27,7 @@ return (<ul className="space-y-2">
  <span className="truncate text-xs font-medium leading-tight">{a.title}</span>
  <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px]">{humanize(a.type)}</span>
  {a.isPublished ? (
- <span className="rounded-full bg-brand-soft px-2 py-0.5 text-[11px] font-medium text-brand">Published</span>
+ <span className="rounded-full bg-brand text-primary-content px-2 py-0.5 text-[11px] font-medium text-brand">Published</span>
  ) : (
  <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] text-muted">Draft</span>
  )}
@@ -62,7 +62,7 @@ return (<ul className="space-y-2">
 
  {isEditing ? (
  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={() => setEditingActivityId(null)} className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+ <button type="button" aria-label="Close" onClick={() => setEditingActivityId(null)} className="absolute inset-0 bg-black/40 " />
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -123,7 +123,7 @@ return (<ul className="space-y-2">
  <button type="button" onClick={() => setEditingActivityId(null)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
-  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
   {busy ? <span className="loading loading-spinner loading-xs" /> : <FiCheck aria-hidden />} Save changes
   </button>
  </div>

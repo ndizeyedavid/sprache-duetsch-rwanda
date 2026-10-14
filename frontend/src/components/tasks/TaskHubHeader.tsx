@@ -15,7 +15,7 @@ export function TaskHubHeader({ items, onCreate, onFilter }: { items: TaskItem[]
         <p className="mt-1 text-sm text-muted">Homework, quizzes and tests for your classes, in one place.</p>
         <div className="mt-3 flex flex-wrap gap-2">
           {stats.map(([label, count, status]) => (
-            <button key={label} type="button" onClick={() => onFilter(status)} className="rounded-full border border-base-300 bg-base-100 px-3 py-1 text-xs hover:border-brand/40">
+            <button key={label} type="button" onClick={() => onFilter(status)} className="rounded-full border border-base-300 bg-base-100 px-3 py-1 text-xs hover:border-brand">
               <strong className={`tabular-nums ${status === 'review' && count ? 'text-brand' : ''}`}>{count}</strong> <span className="text-muted">{label}</span>
             </button>
           ))}

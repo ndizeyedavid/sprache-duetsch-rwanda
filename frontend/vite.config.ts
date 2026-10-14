@@ -9,8 +9,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      // New deploys take over at once; UpdateNotice registers the worker and asks open
-      // tabs to reload, and lazyPage() recovers if an old code file is already gone.
+      // New deploys take over at once; AppUpdater registers the worker and reloads open tabs
+      // on their next page change, and lazyPage() recovers silently if an old code file is gone.
       registerType: "autoUpdate",
       injectRegister: false,
       // App-shell precache + image runtime cache (low-bandwidth friendly).

@@ -34,7 +34,7 @@ export function Pagination({ page, pages, from, to, total, onChange }: Paginatio
  aria-current={value === page ? 'page' : undefined}
  onClick={() => onChange?.(value)}
  className={`btn btn-sm btn-circle border-0 text-xs font-medium ${
- value === page ? 'bg-brand text-white' : 'bg-brand-tint text-ink hover:bg-brand-soft'
+ value === page ? 'bg-brand text-white' : 'bg-brand text-primary-content text-ink hover:bg-brand hover:text-primary-content'
  }`}
  >
  {value}

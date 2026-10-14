@@ -79,7 +79,7 @@ export function LevelPicker({
       </div>
 
       {canManage ? (
-        <details className="collapse collapse-arrow mt-3 rounded-box border border-line bg-base-200/40">
+        <details className="collapse collapse-arrow mt-3 rounded-box border border-line bg-base-200">
           <summary className="collapse-title py-3 text-xs font-semibold">Create a new level</summary>
           <div className="collapse-content pt-2">
             <LevelForm submitLabel="Create level" onSubmit={createLevel} onDone={() => onLevelsChanged?.()} />

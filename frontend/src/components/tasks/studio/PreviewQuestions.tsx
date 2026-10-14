@@ -28,11 +28,11 @@ export function PreviewQuestions({ questions }: { questions: AuthoredQuestion[] 
           {checked ? <span className={`badge badge-sm badge-soft absolute right-3 top-3 ${badge[results[index]][1]}`}>{badge[results[index]][0]}</span> : null}
         </div>
       ))}
-      <div className="sticky bottom-0 flex flex-wrap items-center gap-2 rounded-box border border-base-300 bg-base-100/95 p-3 backdrop-blur">
+      <div className="sticky bottom-0 flex flex-wrap items-center gap-2 rounded-box border border-base-300 bg-base-100 p-3 ">
         {checked ? <p className="flex-1 text-sm"><strong className="tabular-nums">{earned}/{possible}</strong> points from automatic marking{possible < questions.reduce((t, q) => t + Number(q.points), 0) ? ', plus written answers you mark' : ''}.</p>
           : <p className="flex-1 text-xs text-muted">Answer like a student, then check your answer key.</p>}
         <button type="button" className="btn btn-ghost btn-sm rounded-full" onClick={() => { setAnswers({}); setChecked(false); }}><FiRotateCcw aria-hidden />Reset</button>
-        <button type="button" disabled={!auto.length} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90" onClick={() => setChecked(true)}><FiCheckCircle aria-hidden />Check answers</button>
+        <button type="button" disabled={!auto.length} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content" onClick={() => setChecked(true)}><FiCheckCircle aria-hidden />Check answers</button>
       </div>
     </div>
   );

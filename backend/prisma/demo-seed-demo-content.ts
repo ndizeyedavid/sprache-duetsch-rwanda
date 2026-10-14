@@ -1,4 +1,5 @@
 import { prisma } from "../src/lib/prisma.js";
+import { IMPORTED_COURSE_LEVELS } from "./course-import/imported-levels.js";
 import { demoLevels } from './demo-demo-levels.js';
 import { lessonTitles } from './demo-lesson-titles.js';
 import { moduleTitles } from './demo-module-titles.js';
@@ -11,6 +12,8 @@ export const seedDemoContent = async (params: { levelIds: Map<string, string> })
   const uploaderId = uploader?.id ?? null;
 
   for (const level of demoLevels) {
+    // Imported courses (B1) must never be overwritten by placeholder modules at orders 1–2.
+    if (IMPORTED_COURSE_LEVELS.includes(level.code)) continue;
     const levelId = levelIds.get(level.code)!;
 
     for (let m = 0; m < moduleTitles.length; m += 1) {

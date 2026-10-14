@@ -9,7 +9,7 @@ const manifest = JSON.parse(await readFile(new URL('./a1-course.json', import.me
 try {
   const modules = await prisma.module.findMany({
     where: { level: { code: 'A1' }, isPublished: true }, orderBy: { order: 'asc' },
-    include: { lessons: { where: { isPublished: true }, include: { activities: true } } },
+    include: { lessons: { where: { isPublished: true }, include: { activities: { where: { isPublished: true } } } } },
   });
   assert.equal(modules.length, 10);
   const lessons = modules.flatMap(m => m.lessons).sort((a, b) => a.order - b.order);

@@ -38,7 +38,7 @@ export function Grades() {
       {progress ? attempts.loading || skills.loading ? <LoadingBlock label="Loading learning trends…" /> : attempts.error || skills.error ? <ErrorBlock message={attempts.error ?? skills.error!} onRetry={() => { attempts.refetch(); skills.refetch(); }} /> : <ProgressionPanel assessments={assessments.data ?? []} attempts={attempts.data ?? []} skills={skills.data ?? null} /> : <>
         <div className="flex flex-wrap items-center justify-between gap-3"><div className="flex flex-wrap gap-2" aria-label="Result status">{views.map(v => <button key={v.key} onClick={() => setStatus(v.key)} aria-pressed={status === v.key} className={`btn btn-sm rounded-full ${status === v.key ? 'btn-neutral' : 'btn-ghost border border-base-300'}`}>{v.label}<span className="opacity-60">{entries.filter(e => !v.key || e.state === v.key).length}</span></button>)}</div>{courses.length > 1 ? <label className="flex items-center gap-2 text-xs">Course<select className="select select-sm w-32" value={course} onChange={e => setCourse(e.target.value)}><option value="">All courses</option>{courses.map(c => <option key={c}>{c}</option>)}</select></label> : null}</div>
         <ResultsList entries={filtered} reset={() => { setStatus(''); setCourse(''); }} />
-        <p className="px-1 text-xs leading-5 text-base-content/55">Quiz and exam results show your best score. Homework shows your current reviewed submission. The average is a guide to your progress, not a final course grade.</p>
+        <p className="px-1 text-xs leading-5 text-muted">Quiz and exam results show your best score. Homework shows your current reviewed submission. The average is a guide to your progress, not a final course grade.</p>
       </>}
     </>}
   </div>;

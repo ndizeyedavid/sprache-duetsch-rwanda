@@ -24,14 +24,14 @@ export function CourseOverview() {
 
   return (
     <div className="journey-enter space-y-4">
-      <Link to="/courses" className="inline-flex items-center gap-2 text-xs text-base-content/65 hover:text-base-content"><FiArrowLeft aria-hidden />My courses</Link>
+      <Link to="/courses" className="inline-flex items-center gap-2 text-xs text-muted hover:text-base-content"><FiArrowLeft aria-hidden />My courses</Link>
       <CourseOverviewHero level={level} course={course} />
       {course ? <CoursebookResource key={level.id} levelId={level.id} /> : null}
       {course ? <CourseModuleNavigation course={course} /> : null}
-      {level.objectives.length > 0 ? <details className="group rounded-box border border-base-300/70 bg-base-100 px-5 py-4 sm:px-7">
+      {level.objectives.length > 0 ? <details className="group rounded-box border border-base-300 bg-base-100 px-5 py-4 sm:px-7">
         <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold">What you’ll learn<FiChevronDown aria-hidden className="transition-transform group-open:rotate-180" /></summary>
         <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-          {level.objectives.map((objective) => <li key={objective} className="flex items-start gap-2 text-xs leading-6 text-base-content/70"><FiCheck aria-hidden className="mt-1.5 shrink-0 text-primary" />{objective}</li>)}
+          {level.objectives.map((objective) => <li key={objective} className="flex items-start gap-2 text-xs leading-6 text-muted"><FiCheck aria-hidden className="mt-1.5 shrink-0 text-primary" />{objective}</li>)}
         </ul>
       </details> : null}
     </div>

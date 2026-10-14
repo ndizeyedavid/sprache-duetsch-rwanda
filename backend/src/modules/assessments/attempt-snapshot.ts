@@ -17,7 +17,8 @@ export function readAttemptPolicy(value: Prisma.JsonValue | null, fallback: { du
 }
 export function publicSnapshot(rows: SnapshotQuestion[]) {
   return rows.map(row => {
-    const { correctAnswer: _key, ...question } = row.question;
+    // Explanations often reveal the answer, so students never receive them with open questions.
+    const { correctAnswer: _key, explanation: _explanation, ...question } = row.question as typeof row.question & { explanation?: unknown };
     return { ...row, question };
   });
 }

@@ -113,7 +113,7 @@ export function WeeklyRings({ courses, weekAnchor, onPrev, onNext, onToday }: Pr
 
       <div className="mt-2 space-y-2">
         {courses.length === 0 ? (
-          <p className="rounded-box border border-brand/20 bg-brand-soft px-3 py-2 text-center text-xs font-medium text-[#B30A00]">There are no due tasks at the moment.</p>
+          <p className="rounded-box border border-brand bg-brand text-primary-content px-3 py-2 text-center text-xs font-medium text-[#B30A00]">There are no due tasks at the moment.</p>
         ) : (
           rings.map((ring) => (
             <div key={ring.code} className="flex items-center gap-3 rounded-box border border-line bg-base-100 px-3 py-2">

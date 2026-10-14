@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FiArrowUpRight,FiAward } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { PlacementPromptCard } from '../../components/placement/PlacementPromptCard';
 import { DashboardAttendanceCard } from '../../components/student/DashboardAttendanceCard';
 import { DashboardClassCard } from '../../components/student/DashboardClassCard';
 import { DashboardCoursePanel } from '../../components/student/DashboardCoursePanel';
@@ -29,6 +30,7 @@ export function Dashboard() {
   return (
     <div className="journey-enter space-y-4">
       <LearningJourneyHero firstName={user?.firstName} course={selected} />
+      <PlacementPromptCard hasCourses={courses.loading || courses.error ? undefined : courseList.length > 0} />
       <DashboardQuickNav />
       <div className="grid items-stretch gap-4 lg:grid-cols-3">
         <div className="min-w-0 lg:col-span-2">
@@ -48,7 +50,7 @@ export function Dashboard() {
         </div>
         <DashboardAttendanceCard attendance={data.attendance} />
         <DashboardClassCard session={data.upcomingClass} />
-          {data.nextExam ? <Link to="/assignments" className="card learning-panel flex-row items-center gap-3 p-4 lg:col-span-3"><span className="grid size-9 shrink-0 place-items-center rounded-xl bg-accent/10"><FiAward aria-hidden /></span><div className="min-w-0 flex-1"><p className="text-[10px] text-base-content/60">Next assessment</p><p className="mt-1 text-xs font-semibold">{data.nextExam.title}</p></div><FiArrowUpRight aria-hidden /></Link> : null}
+          {data.nextExam ? <Link to="/assignments" className="card learning-panel flex-row items-center gap-3 p-4 lg:col-span-3"><span className="grid size-9 shrink-0 place-items-center rounded-xl bg-accent text-accent-content"><FiAward aria-hidden /></span><div className="min-w-0 flex-1"><p className="text-[10px] text-muted">Next assessment</p><p className="mt-1 text-xs font-semibold">{data.nextExam.title}</p></div><FiArrowUpRight aria-hidden /></Link> : null}
       </div>
     </div>
   );

@@ -106,7 +106,7 @@ export function AdminLiveClass() {
  {session?.teacher ? <p className="mt-1 text-xs text-muted">{teacherName(session.teacher)}</p> : null}
  </div>
  <div className="flex flex-wrap gap-2">
- {session?.meetingUrl ? <a href={session.meetingUrl} target="_blank" rel="noreferrer" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90">Open meeting</a> : null}
+ {session?.meetingUrl ? <a href={session.meetingUrl} target="_blank" rel="noreferrer" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">Open meeting</a> : null}
  {session?.classGroup ? <button type="button" disabled={exporting} onClick={async () => { if (!session?.classGroup) return; setExporting(true); setActionError(null); try { await downloadFile(`/attendance/export?classGroupId=${session.classGroup.id}`, `attendance-${session.classGroup.name}.csv`); } catch (err: unknown) { setActionError(apiErrorMessage(err, 'Export failed.')); } finally { setExporting(false); } }} className="btn btn-sm gap-1 rounded-full border-line bg-base-100 disabled:opacity-60">{exporting ? <span className="loading loading-spinner loading-xs" /> : <FiDownload aria-hidden />}{exporting ? "Exporting…" : "Export CSV"}</button> : null}
  </div>
  </div>
@@ -129,8 +129,8 @@ export function AdminLiveClass() {
  {q ? <button type="button" onClick={() => setQ('')} className="btn btn-ghost btn-xs btn-circle absolute right-1 top-1/2 -translate-y-1/2"><FiX aria-hidden /></button> : null}
  </div>
  <span className="text-xs text-muted">{filteredRows.length} of {rows.length}</span>
- {hasChanges ? <span className="rounded-full bg-sun-soft px-2.5 py-1 text-xs font-medium text-[#8A6800]">{Object.keys(marks).length} changed</span> : null}
- {stats.counts.UNMARKED ? <span className="rounded-full bg-coral-soft px-2.5 py-1 text-xs font-medium text-[#D8482F]">{stats.counts.UNMARKED} unmarked</span> : rows.length ? <span className="rounded-full bg-brand-soft px-2.5 py-1 text-xs font-medium text-[#B30A00]">All marked</span> : null}
+ {hasChanges ? <span className="rounded-full bg-sun text-warning-content px-2.5 py-1 text-xs font-medium text-[#8A6800]">{Object.keys(marks).length} changed</span> : null}
+ {stats.counts.UNMARKED ? <span className="rounded-full bg-coral text-error-content px-2.5 py-1 text-xs font-medium text-[#D8482F]">{stats.counts.UNMARKED} unmarked</span> : rows.length ? <span className="rounded-full bg-brand text-primary-content px-2.5 py-1 text-xs font-medium text-[#B30A00]">All marked</span> : null}
  </div>
  <div className="mt-3"><BulkBar onPick={handleBulk} onClear={() => { setMarks({}); setActionError(null); }} disabled={filteredRows.length === 0} /></div>
  </>
@@ -145,10 +145,10 @@ export function AdminLiveClass() {
  </ul>
  )}
 
- {actionError ? <p role="alert" className="mt-3 rounded-field bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">{actionError}</p> : null}
- {saved ? <p role="status" className="mt-3 rounded-field bg-brand-soft px-3 py-2 text-xs font-medium text-[#B30A00]">Attendance saved — roster refreshed.</p> : null}
+ {actionError ? <p role="alert" className="mt-3 rounded-field bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]">{actionError}</p> : null}
+ {saved ? <p role="status" className="mt-3 rounded-field bg-brand text-primary-content px-3 py-2 text-xs font-medium text-[#B30A00]">Attendance saved — roster refreshed.</p> : null}
  <div className="mt-4 flex flex-wrap gap-2">
- <button type="button" disabled={saving || rows.length === 0} onClick={handleSave} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="button" disabled={saving || rows.length === 0} onClick={handleSave} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {saving ? <span className="loading loading-spinner loading-xs" /> : null}Save attendance {hasChanges ? `(${Object.keys(marks).length})` : ''}
  </button>
  {hasChanges ? <button type="button" onClick={() => { setMarks({}); setActionError(null); }} className="btn btn-sm rounded-full border-line bg-base-100">Discard changes</button> : null}

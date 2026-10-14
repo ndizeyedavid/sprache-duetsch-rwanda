@@ -2,20 +2,16 @@ import type { RequestHandler } from "express";
 import { logger } from "../../lib/logger.js";
 import { validatedBody } from "../../lib/request.js";
 import type { EnrollmentConfirmInput } from "./enrollment.schema.js";
-import { sendEnrollmentConfirmation } from "./enrollment.service.js";
+import { recordWebsiteEnrollment } from "./enrollment.service.js";
 
 export const confirmEnrollment: RequestHandler = (req, res) => {
   const input = validatedBody<EnrollmentConfirmInput>(req);
 
-  // Respond immediately so the enrollment site never hangs — email sends in background.
-  // This also avoids Render's 30s proxy timeout on slow SMTP handshakes.
+  // Contract kept for the external site: answer immediately, never hang on the database or mail.
   res.status(200).json({ success: true, data: { sent: true, message: "Enrollment received — confirmation email is on its way." } });
 
-  // Background send with detailed error logging (visible in Render → Logs)
-  sendEnrollmentConfirmation(input).catch((err: unknown) => {
-    const msg = err instanceof Error ? err.message : String(err);
-    const code = (err as { code?: string })?.code;
-    const response = (err as { response?: string })?.response;
-    logger.error({ err, email: input.email, code, response, msg }, "Enrollment confirmation email failed");
-  });
+  // Saved as a WEBSITE application; the confirmation email is queued only for a new record.
+  recordWebsiteEnrollment(input)
+    .then((result) => logger.info({ reference: result.reference, created: result.created }, "Website enrollment recorded"))
+    .catch((err: unknown) => logger.error({ err }, "Website enrollment could not be recorded"));
 };

@@ -85,7 +85,7 @@ export function ResourceArticles({ isStaff }: { isStaff: boolean }) {
  type="button"
  onClick={() => setSelectedSlug(article.slug)}
  className={`w-full rounded-field p-3 text-left transition-colors ${
- selectedSlug === article.slug ? 'bg-brand-tint' : 'bg-base-200 hover:bg-brand-tint/60'
+ selectedSlug === article.slug ? 'bg-brand text-primary-content' : 'bg-base-200 hover:bg-brand hover:text-primary-content'
  }`}
  >
  <span className="block truncate text-xs font-semibold">{article.title}</span>
@@ -132,7 +132,7 @@ export function ResourceArticles({ isStaff }: { isStaff: boolean }) {
  {formError}
  </p>
  ) : null}
- <button type="submit" disabled={saving || uploading} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={saving || uploading} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  Publish
  </button>
  </form></Modal>

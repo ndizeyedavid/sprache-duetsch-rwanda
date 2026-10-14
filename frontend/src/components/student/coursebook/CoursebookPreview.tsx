@@ -17,7 +17,7 @@ export function CoursebookPreview({ url, filename, onClose }: Props) {
         <a href={url} download={filename} className="btn btn-sm"><FiDownload aria-hidden />Download PDF</a>
         <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm"><FiExternalLink aria-hidden />Open in new tab</a>
       </div>
-      <Suspense fallback={<p role="status" className="text-xs text-base-content/60">Loading PDF viewer…</p>}><PdfViewer url={url} /></Suspense>
+      <Suspense fallback={<p role="status" className="text-xs text-muted">Loading PDF viewer…</p>}><PdfViewer url={url} /></Suspense>
     </div>
     <form method="dialog" className="modal-backdrop"><button aria-label="Close PDF preview">Close</button></form>
   </dialog>;

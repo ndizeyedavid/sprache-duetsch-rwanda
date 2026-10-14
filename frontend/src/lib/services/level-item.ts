@@ -2,6 +2,10 @@ import type { Money } from './money';
 export type LevelItem = {
   coursebookUrl?: string | null;
   coursebookPages?: number | null;
+  /** Lowest placement-test % that recommends this level; null = never recommended. */
+  placementMinScore?: number | null;
+  /** Low-attendance alert threshold (%) for this level; null = system default. */
+  attendanceAlertThreshold?: number | null;
   completionRules?: { minimumAttendance: number; requireHomework: boolean; homeworkPassMark: number } | null;
   id: string;
   code: string;

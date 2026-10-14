@@ -1,21 +1,23 @@
 import { assertAccountActive,loadStudentAccessProfile } from "../../lib/access.js";
 import { prisma } from "../../lib/prisma.js";
-import { isPracticeConfig } from "./practice.utils.js";
+import { getPracticeActivityIds,isSelfStudyActivity } from "./practice.utils.js";
 export const getMyAssignments = async (userId: string) => {
   const profile = await loadStudentAccessProfile(userId);
   assertAccountActive(profile);
 
   const now = new Date();
 
+  // Self-study is excluded in the query so it cannot crowd formal work out of `take`.
+  const selfStudyIds = await getPracticeActivityIds();
   const [activities, assessments, submissions, attempts, courses] = await Promise.all([
     prisma.activity.findMany({
-      where: { isPublished: true, lesson: { isPublished: true, OR: [{ releaseAt: null }, { releaseAt: { lte: now } }], module: { isPublished: true, OR: [{ releaseAt: null }, { releaseAt: { lte: now } }], levelId: { in: profile.levelIds } } } },
+      where: { isPublished: true, id: { notIn: selfStudyIds }, lesson: { isPublished: true, OR: [{ releaseAt: null }, { releaseAt: { lte: now } }], module: { isPublished: true, OR: [{ releaseAt: null }, { releaseAt: { lte: now } }], levelId: { in: profile.levelIds } } } },
       orderBy: { createdAt: "asc" },
       select: { id: true, config: true, title: true, type: true, lessonId: true, createdAt: true, lesson: { select: { id: true, title: true, module: { select: { id: true, title: true, level: { select: { id: true, code: true, title: true } } } } } } },
       take: 500,
     }),
     prisma.assessment.findMany({
-      where: { isPublished: true, levelId: { in: profile.levelIds } },
+      where: { isPublished: true, type: { not: "PLACEMENT" }, levelId: { in: profile.levelIds } },
       orderBy: { availableUntil: "asc" },
       select: { id: true, title: true, type: true, levelId: true, availableFrom: true, availableUntil: true, passMark: true, durationMinutes: true, level: { select: { id: true, code: true, title: true } }, _count: { select: { questions: true } }, questions: { select: { points: true, question: { select: { points: true } } } } },
       take: 200,
@@ -26,7 +28,7 @@ export const getMyAssignments = async (userId: string) => {
   ]);
 
   const seenActivity = new Set<string>();
-  const dedupedActivities = activities.filter((a) => { if (isPracticeConfig(a.config) || seenActivity.has(a.id)) return false; seenActivity.add(a.id); return true; });
+  const dedupedActivities = activities.filter((a) => { if (isSelfStudyActivity(a) || seenActivity.has(a.id)) return false; seenActivity.add(a.id); return true; });
   const seenAssessment = new Set<string>();
   const dedupedAssessments = assessments.filter((a) => { if (seenAssessment.has(a.id)) return false; seenAssessment.add(a.id); return true; });
   const subByActivity = new Map(submissions.map((s) => [s.activityId, s]));

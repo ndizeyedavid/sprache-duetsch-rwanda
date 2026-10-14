@@ -51,7 +51,7 @@ export function RowMenu({ label, items }: Props) {
  setOpen(false);
  item.onClick();
  }}
- className={`flex items-center gap-3 text-xs ${item.tone === 'danger' ? 'text-coral hover:bg-coral-soft' : 'hover:bg-base-200'} disabled:opacity-40`}
+ className={`flex items-center gap-3 text-xs ${item.tone === 'danger' ? 'text-coral hover:bg-coral hover:text-error-content' : 'hover:bg-base-200'} disabled:opacity-40`}
  >
  <Icon aria-hidden className="text-sm" />
  {item.label}

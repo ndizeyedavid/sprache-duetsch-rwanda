@@ -27,7 +27,8 @@ export async function duplicateAssignment(actor: AuthUser, id: string) {
     const copy = await tx.assignment.create({ data: {
       classGroupId: a.classGroupId, createdById: actor.id, title: `${a.title.slice(0, 153)} (copy)`, instructions: a.instructions,
       responseType: a.responseType, status: 'DRAFT', estimatedMinutes: a.estimatedMinutes,
-      maxPoints: a.maxPoints, allowLate: a.allowLate, maxSubmissions: a.maxSubmissions,
+      maxPoints: a.maxPoints, allowLate: a.allowLate, maxSubmissions: a.maxSubmissions, lessonId: a.lessonId,
+      gracePeriodMinutes: a.gracePeriodMinutes, latePenaltyPercentPerDay: a.latePenaltyPercentPerDay, latePenaltyMaxPercent: a.latePenaltyMaxPercent,
       resources: a.resources as Prisma.InputJsonValue, rubric: a.rubric as Prisma.InputJsonValue,
       questions: a.questions as Prisma.InputJsonValue,
       recipients: { create: a.recipients.filter(r => roster.some(s => s.id === r.studentId)).map(r => ({ studentId: r.studentId })) },
@@ -46,13 +47,16 @@ export async function deleteAssignment(actor: AuthUser, id: string): Promise<voi
 
 const csvText = (s: string) => /^[\s]*[=+\-@]/.test(s) ? `'${s}` : s;
 export async function assignmentResults(actor: AuthUser, id: string): Promise<Record<string, unknown>[]> {
-  const { assignment: a, submissions, roster } = await getStaffDetail(actor, id);
+  const { assignment: a, submissions, roster, extensions } = await getStaffDetail(actor, id);
   const questions = assignmentQuestions(a.questions);
   return roster.map(r => {
     const s = submissions.find(s => s.studentId === r.id && s.revision > 0);
     return { 'Student ID': csvText(r.studentCode), Student: csvText(`${r.user.firstName} ${r.user.lastName}`),
       Assignment: csvText(a.title), Class: csvText(a.classGroup.name), Status: s?.status ?? 'NOT_SUBMITTED',
       'Submitted at': s?.submittedAt?.toISOString() ?? '', Late: s?.versions[0]?.isLate ? 'Yes' : 'No',
+      'Extended to': extensions.find(e => e.studentId === r.id)?.dueAt.toISOString() ?? '',
+      'Teacher score': s?.status === 'GRADED' ? (s.rawScore ?? s.score)?.toString() ?? '' : '',
+      'Late penalty %': s?.status === 'GRADED' ? s.latePenaltyPercent?.toString() ?? '0' : '',
       Score: s?.status === 'GRADED' ? s.score?.toString() ?? '' : '', 'Total points': a.maxPoints.toString(),
       Questions: questions.length, Revision: s?.revision ?? 0, Feedback: csvText(s?.feedback ?? '') };
   });

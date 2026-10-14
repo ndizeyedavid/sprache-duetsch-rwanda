@@ -9,7 +9,7 @@ type FileRowProps = {
 export function FileRow({ name, size, className = '' }: FileRowProps) {
  return (
  <div className={`flex items-center gap-3 ${className}`}>
- <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-brand">
+ <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-brand text-primary-content">
  <FiFileText aria-hidden />
  </span>
  <span className="min-w-0 grow">

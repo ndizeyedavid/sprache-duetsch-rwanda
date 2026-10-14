@@ -11,6 +11,7 @@ import { issueTokens } from './issue-tokens.js';
 import type { RegisterResult } from './register-result.js';
 import type { RequestMeta } from './request-meta.js';
 import { createEnrollmentTx } from '../enrollments/enrollment-commands.js';
+import { consumeRegisterOtp, verifyRegisterOtp } from './register-otp.js';
 export const registerStudent = async (
   input: RegisterInput,
   meta: RequestMeta,
@@ -31,9 +32,11 @@ export const registerStudent = async (
   const intakeId = input.intakeId, levelId = input.intendedLevelId;
   if (!intakeId || !levelId) throw badRequest('Choose an intake and one of its offered levels');
 
+  const otpId = await verifyRegisterOtp(email, input.otp);
   const passwordHash = await hashPassword(input.password);
 
   const created = await prisma.$transaction(async (tx) => {
+    await consumeRegisterOtp(tx, otpId);
     const user = await tx.user.create({
       data: {
         email,

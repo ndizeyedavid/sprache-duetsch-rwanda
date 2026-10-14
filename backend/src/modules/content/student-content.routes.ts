@@ -3,6 +3,7 @@ import { asyncHandler } from "../../lib/async-handler.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
+import { uploadActivityFile } from "./activity-file.controller.js";
 import * as controller from "./content.controller.js";
 import {
 idParamsSchema,
@@ -57,6 +58,13 @@ studentContentRouter.post(
   requireRole("STUDENT"),
   validate({ params: idParamsSchema, body: submitActivitySchema }),
   asyncHandler(controller.submitActivity),
+);
+studentContentRouter.post(
+  "/activities/:id/files",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: idParamsSchema }),
+  uploadActivityFile,
 );
 studentContentRouter.get(
   "/activities/:id/my-submission",

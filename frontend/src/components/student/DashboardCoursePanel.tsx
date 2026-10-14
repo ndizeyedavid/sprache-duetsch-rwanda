@@ -26,7 +26,7 @@ export function DashboardCoursePanel({ courses, course, onSelect }: Props) {
         <span aria-hidden className="bg-primary text-primary-content grid size-14 shrink-0 place-items-center rounded-xl text-xl font-semibold">{course.level.code}</span>
         <div className="min-w-0 flex-1"><Link to={base} className="text-sm font-semibold hover:underline">{course.level.title}</Link>
           <div className="mt-2 flex items-center gap-3"><progress className="progress progress-primary h-1.5 flex-1" value={course.stats.completionPercentage} max={100} aria-label="Course progress" /><span className="text-xs font-semibold">{course.stats.completionPercentage}%</span></div>
-          <p className="mt-1.5 text-[10px] text-base-content/60">{course.stats.completedLessons}/{course.stats.totalLessons} lessons</p>
+          <p className="mt-1.5 text-[10px] text-muted">{course.stats.completedLessons}/{course.stats.totalLessons} lessons</p>
         </div>
       </div>
       <ol className="space-y-2">
@@ -35,17 +35,17 @@ export function DashboardCoursePanel({ courses, course, onSelect }: Props) {
           const done = lessons.filter((lesson) => lesson.progressStatus === 'COMPLETED').length;
           const current = lessons.some((lesson) => lesson.id === next?.id);
           const target = lessons.find((lesson) => lesson.progressStatus === 'IN_PROGRESS') ?? lessons.find((lesson) => lesson.progressStatus !== 'COMPLETED') ?? lessons[0];
-          return <li key={module.id}><Link to={target ? `${base}/learn/${target.id}` : `${base}/learn`} className={`flex flex-wrap items-center gap-3 rounded-field border p-3 sm:flex-nowrap ${current ? 'border-primary/20 bg-primary/5' : 'border-base-300/70 bg-base-100/60'}`}>
+          return <li key={module.id}><Link to={target ? `${base}/learn/${target.id}` : `${base}/learn`} className={`flex flex-wrap items-center gap-3 rounded-field border p-3 sm:flex-nowrap ${current ? 'border-primary bg-primary text-primary-content' : 'border-base-300 bg-base-100'}`}>
             <span aria-hidden className="grid size-8 shrink-0 place-items-center rounded-full bg-base-100 text-xs font-semibold">{done === lessons.length && done ? <FiCheck /> : index + 1}</span>
             <div className="min-w-0 flex-1"><h3 className="text-xs font-semibold">{module.title}</h3>
               <div className="mt-2 flex flex-wrap gap-1.5" aria-label={`${done} of ${lessons.length} lessons completed`}>
-                {lessons.map((lesson) => <span key={lesson.id} aria-hidden className={`grid size-5 place-items-center rounded-full border text-[9px] ${lesson.progressStatus === 'COMPLETED' ? 'border-primary bg-primary text-primary-content' : lesson.id === next?.id ? 'border-primary bg-primary/10 text-primary' : 'border-base-300 bg-base-100'}`}>{lesson.progressStatus === 'COMPLETED' ? <FiCheck /> : lesson.id === next?.id ? <FiPlay /> : null}</span>)}
+                {lessons.map((lesson) => <span key={lesson.id} aria-hidden className={`grid size-5 place-items-center rounded-full border text-[9px] ${lesson.progressStatus === 'COMPLETED' ? 'border-primary bg-primary text-primary-content' : lesson.id === next?.id ? 'border-primary bg-primary text-primary-content' : 'border-base-300 bg-base-100'}`}>{lesson.progressStatus === 'COMPLETED' ? <FiCheck /> : lesson.id === next?.id ? <FiPlay /> : null}</span>)}
               </div>
-            </div><FiArrowUpRight aria-hidden className="shrink-0 text-base-content/50" />
+            </div><FiArrowUpRight aria-hidden className="shrink-0 text-muted" />
           </Link></li>;
         })}
       </ol>
-      {modules.length === 0 ? <p className="text-xs text-base-content/60">Your teacher is preparing your modules.</p> : null}
+      {modules.length === 0 ? <p className="text-xs text-muted">Your teacher is preparing your modules.</p> : null}
       <Link to={`${base}/learn`} className="btn btn-sm mt-auto w-full justify-between rounded-full border-base-300 bg-base-100">Open lesson map <FiArrowUpRight aria-hidden /></Link>
     </section>
   );

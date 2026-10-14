@@ -12,7 +12,7 @@ import { MATERIAL_TYPES } from './material-types';
 export function LessonEditorSection9(props: { setShowAddMaterial: import("react").Dispatch<import("react").SetStateAction<boolean>>; onRun: (action: () => Promise<unknown>, fallback: string, after?: () => void) => Promise<void>; lessonId: string; materialForm: { title: string; type: string; url: string; }; setMaterialForm: import("react").Dispatch<import("react").SetStateAction<{ title: string; type: string; url: string; }>>; onSaved: () => void; busy: boolean }) {
 const { setShowAddMaterial, onRun, lessonId, materialForm, setMaterialForm, onSaved, busy } = props;
 return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={() => setShowAddMaterial(false)} className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+ <button type="button" aria-label="Close" onClick={() => setShowAddMaterial(false)} className="absolute inset-0 bg-black/40 " />
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -89,7 +89,7 @@ return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4"
  <button type="button" onClick={() => setShowAddMaterial(false)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
-  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
   {busy ? <span className="loading loading-spinner loading-xs" /> : <FiPlus aria-hidden />} Add resource
   </button>
  </div>

@@ -12,6 +12,7 @@ import { AcademicMetricCard } from "../../components/admin/AcademicMetricCard";
 import { AcademicOutcomes } from "../../components/admin/AcademicOutcomes";
 import { AcademicReports } from "../../components/admin/AcademicReports";
 import { AcademicSessions } from "../../components/admin/AcademicSessions";
+import { AtRiskPreview } from "../../components/analytics/AtRiskPreview";
 import { ErrorBlock,LoadingBlock } from "../../components/common/PageState";
 import { useApi } from "../../hooks/useApi";
 import { getAcademicDashboard } from "../../lib/services";
@@ -66,8 +67,8 @@ export function AdminDashboard() {
         <AcademicMetricCard
           label="Needs follow-up"
           value={data.atRiskStudents}
-          note="Review attendance"
-          onClick={() => navigate("/admin/attendance")}
+          note="See reasons"
+          onClick={() => navigate("/admin/reports")}
           icon={FiAlertCircle}
           tone="warning"
         />
@@ -80,6 +81,7 @@ export function AdminDashboard() {
       </div>
       <div className="grid gap-5 xl:grid-cols-[minmax(0,1.65fr)_minmax(0,1fr)]">
         <div className="min-w-0 space-y-5">
+          <AtRiskPreview />
           <AcademicOutcomes data={data} />
           <AcademicEnrolmentChart data={data} />
         </div>

@@ -30,7 +30,7 @@ export function StaffHandover({ email, password, nextStep, onDone }: Props) {
 
   return (
     <div>
-      <p className="rounded-field bg-brand-soft px-4 py-3 text-xs font-medium text-[#B30A00]">
+      <p className="rounded-field bg-brand text-primary-content px-4 py-3 text-xs font-medium text-[#B30A00]">
         <strong className="break-all">{email}</strong> is set up. {nextStep} The password is
         shown once and cannot be retrieved later.
       </p>

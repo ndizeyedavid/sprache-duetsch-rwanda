@@ -39,7 +39,7 @@ export function ClassTeacherRow({
   return (
     <li
       className={`flex flex-col gap-3 border-b border-line p-4 last:border-0 lg:flex-row lg:items-center lg:justify-between lg:gap-6 lg:p-5 ${
-        highlighted ? 'bg-brand-tint ring-2 ring-brand ring-inset' : ''
+        highlighted ? 'bg-brand text-primary-content ring-2 ring-brand ring-inset' : ''
       }`}
     >
       <div className="min-w-0">

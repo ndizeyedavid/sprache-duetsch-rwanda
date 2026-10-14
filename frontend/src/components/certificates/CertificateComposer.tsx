@@ -16,7 +16,7 @@ export function CertificateComposer({ initial, onIssued, onBusyChange }: Props) 
   useEffect(() => { onBusyChange(!!draft.busy); }, [draft.busy, onBusyChange]);
   const fetchError = students.error ?? levels.error;
   return <div className="space-y-5">
-    <p className="max-w-3xl text-sm leading-6 text-base-content/65">Recognise a learner’s completed course. Prepare a school certificate or attach an existing PDF, review the document, then issue it to the student.</p>
+    <p className="max-w-3xl text-sm leading-6 text-muted">Recognise a learner’s completed course. Prepare a school certificate or attach an existing PDF, review the document, then issue it to the student.</p>
     <div className="grid items-start gap-6 xl:grid-cols-[minmax(320px,0.85fr)_minmax(0,1.15fr)]">
       <form id="certificate-composer" onSubmit={event => { event.preventDefault(); void draft.showPreview(); }} className="space-y-5">
         <fieldset disabled={!!draft.busy || students.loading || levels.loading} className="space-y-5">
@@ -25,7 +25,7 @@ export function CertificateComposer({ initial, onIssued, onBusyChange }: Props) 
             <label className="block text-sm">Completed course<select required disabled={!!initial} className="select mt-1.5 w-full" value={draft.levelId} onChange={event => draft.setLevelId(event.target.value)}><option value="">Choose course</option>{(levels.data ?? []).map(row => <option key={row.id} value={row.id}>{row.code} · {row.title}</option>)}</select></label>
           </div>
           <label className="block text-sm">Certificate format<select className="select mt-1.5 w-full" value={draft.uploaded ? 'uploaded' : 'generated'} onChange={event => draft.setUploaded(event.target.value === 'uploaded')}><option value="generated">School certificate · generated PDF</option><option value="uploaded">Custom certificate · upload PDF</option></select></label>
-          {draft.uploaded && <div className="rounded-box bg-base-200 p-4"><label className="block text-sm">Certificate PDF<input type="file" accept="application/pdf,.pdf" className="file-input mt-2 w-full" onChange={event => void draft.upload(event.target.files?.[0])}/></label><p className="mt-2 text-xs text-base-content/60">{draft.file?.name ?? 'Choose the final certificate with the correct student and course details. Up to 25 MB.'}</p></div>}
+          {draft.uploaded && <div className="rounded-box bg-base-200 p-4"><label className="block text-sm">Certificate PDF<input type="file" accept="application/pdf,.pdf" className="file-input mt-2 w-full" onChange={event => void draft.upload(event.target.files?.[0])}/></label><p className="mt-2 text-xs text-muted">{draft.file?.name ?? 'Choose the final certificate with the correct student and course details. Up to 25 MB.'}</p></div>}
           <CertificateDesignFields design={draft.design} onChange={draft.setDesign} uploaded={draft.uploaded}/>
         </fieldset>
         {fetchError && <div role="alert" className="alert alert-error alert-soft text-sm">{fetchError}<button type="button" className="btn btn-sm" onClick={() => { students.refetch(); levels.refetch(); }}>Retry</button></div>}
@@ -35,7 +35,7 @@ export function CertificateComposer({ initial, onIssued, onBusyChange }: Props) 
       <div className="space-y-4 xl:sticky xl:top-0">
         <CertificatePdfPanel url={draft.current?.url ?? null} loading={draft.busy === 'preview'} onReady={draft.onReady} onError={draft.onPreviewError}/>
         {draft.current && <CertificateEligibility value={draft.current.eligibility}/>}
-        <div className="flex flex-wrap items-center justify-between gap-3 rounded-box bg-base-200 p-4"><p className="max-w-sm text-xs leading-5 text-base-content/65">Issuing adds this certificate to the student’s profile and creates its public verification record.</p><button type="button" className="btn btn-primary" disabled={!draft.canIssue} onClick={() => void draft.issue()}><FiAward aria-hidden/>{draft.busy === 'issue' ? 'Issuing…' : initial ? 'Issue replacement' : 'Issue certificate'}</button></div>
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-box bg-base-200 p-4"><p className="max-w-sm text-xs leading-5 text-muted">Issuing adds this certificate to the student’s profile and creates its public verification record.</p><button type="button" className="btn btn-primary" disabled={!draft.canIssue} onClick={() => void draft.issue()}><FiAward aria-hidden/>{draft.busy === 'issue' ? 'Issuing…' : initial ? 'Issue replacement' : 'Issue certificate'}</button></div>
       </div>
     </div>
   </div>;

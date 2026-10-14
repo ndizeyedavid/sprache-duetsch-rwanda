@@ -42,11 +42,11 @@ export function CampusEditorForm({ initial, onSaved }: { initial: CampusItem | n
  <div className="grid gap-3 sm:grid-cols-2">
  <label className="block">
  <span className="mb-1 block text-xs font-medium">Code</span>
- <input required value={code} onChange={(e) => setCode(e.currentTarget.value)} placeholder="e.g. REMERA" className="input input w-full rounded-field border-line bg-base-200" />
+ <input required value={code} onChange={(e) => setCode(e.currentTarget.value)} placeholder="e.g. KACYIRU" className="input input w-full rounded-field border-line bg-base-200" />
  </label>
  <label className="block">
  <span className="mb-1 block text-xs font-medium">Name</span>
- <input required value={name} onChange={(e) => setName(e.currentTarget.value)} placeholder="e.g. Kigali — Remera" className="input input w-full rounded-field border-line bg-base-200" />
+ <input required value={name} onChange={(e) => setName(e.currentTarget.value)} placeholder="e.g. Kacyiru" className="input input w-full rounded-field border-line bg-base-200" />
  </label>
  </div>
  <label className="block">
@@ -69,7 +69,7 @@ export function CampusEditorForm({ initial, onSaved }: { initial: CampusItem | n
  </p>
  ) : null}
  <label className="block"><span className="mb-1 block text-xs font-medium">Status</span><select className="select w-full" value={String(isActive)} onChange={e => setIsActive(e.target.value === 'true')}><option value="true">Active</option><option value="false">Inactive</option></select></label>
- <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {saving ? 'Saving…' : initial ? 'Save changes' : 'Create campus'}
  </button>
  </form>

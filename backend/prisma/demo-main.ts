@@ -1,4 +1,5 @@
 import { prisma } from "../src/lib/prisma.js";
+import { applyPlacementBands } from "./placement-level-bands.js";
 import { seedDemoClasses } from './demo-seed-demo-classes.js';
 import { seedDemoContent } from './demo-seed-demo-content.js';
 import { seedDemoLevels } from './demo-seed-demo-levels.js';
@@ -6,9 +7,10 @@ import { seedDemoStudentsAndFinance } from './demo-seed-demo-students-and-financ
 export const main = async () => {
   console.info("→ Seeding additional demo levels (A2, B1, B2, B1-BERUF, B2-TESTDAF)");
   const levelIds = await seedDemoLevels();
+  await applyPlacementBands();
 
-  const remera = await prisma.campus.findUnique({ where: { code: "REMERA" } });
-  if (!remera) {
+  const mainCampus = await prisma.campus.findUnique({ where: { code: "NORRSKEN" } });
+  if (!mainCampus) {
     throw new Error("Base seed must be run first: 'npm run db:seed'");
   }
 
@@ -20,7 +22,7 @@ export const main = async () => {
   console.info("→ Seeding demo class groups");
   const classIds = await seedDemoClasses({
     levelIds,
-    campusId: remera.id,
+    campusId: mainCampus.id,
     intakeId: intake.id,
   });
 
@@ -31,7 +33,7 @@ export const main = async () => {
   await seedDemoStudentsAndFinance({
     levelIds,
     classIds,
-    campusId: remera.id,
+    campusId: mainCampus.id,
   });
 
   console.info("✔ Demo seed complete");

@@ -7,7 +7,7 @@ export function DuplicateNotice({ duplicate }: { duplicate: EnrollmentRow }) {
   return (
     <p
       role="alert"
-      className="flex items-start gap-2 rounded-field bg-sun-soft px-3 py-2 text-[11px] font-medium text-[#8A6800]"
+      className="flex items-start gap-2 rounded-field bg-sun text-warning-content px-3 py-2 text-[11px] font-medium text-[#8A6800]"
     >
       <FiAlertTriangle aria-hidden className="mt-0.5 shrink-0" />
       <span>

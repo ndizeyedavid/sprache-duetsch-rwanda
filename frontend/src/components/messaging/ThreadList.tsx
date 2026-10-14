@@ -35,7 +35,7 @@ export function ThreadList({ threads, loading, error, onRetry, selectedId, onPic
  <span className="rounded-full bg-base-200 px-2.5 py-1 text-xs font-medium">{threads.length}</span>
  </div>
 
- <button type="button" onClick={onNew} className="btn btn-sm mt-3 w-full gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90">New chat</button>
+ <button type="button" onClick={onNew} className="btn btn-sm mt-3 w-full gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">New chat</button>
 
  <div className="relative mt-3">
  <FiSearch aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
@@ -60,7 +60,7 @@ export function ThreadList({ threads, loading, error, onRetry, selectedId, onPic
  const others = dedupeParticipants(t.participants).filter((p) => p.user.id !== myId).slice(0, 2);
  return (
  <li key={t.id}>
- <button type="button" onClick={() => onPick(t.id)} className={`flex w-full gap-3 rounded-box border p-3 text-left transition ${active ? 'border-brand bg-brand-soft' : 'border-line bg-base-100 hover:border-brand/20 hover:'}`}>
+ <button type="button" onClick={() => onPick(t.id)} className={`flex w-full gap-3 rounded-box border p-3 text-left transition ${active ? 'border-brand bg-brand text-primary-content' : 'border-line bg-base-100 hover:border-brand hover:'}`}>
  <span className="flex -space-x-2">
  {others.length === 0 ? (
  <span className={`flex size-9 items-center justify-center rounded-full text-xs font-bold ${accentFor(title)}`}>{initials('Y', 'ou')}</span>

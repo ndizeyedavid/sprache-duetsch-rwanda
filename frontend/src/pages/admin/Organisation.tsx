@@ -74,7 +74,7 @@ export function AdminOrganisation() {
             {rows.map((c) => (
               <article
                 key={c.id}
-                className="card border border-base-300/70 bg-base-100 p-5"
+                className="card border border-base-300 bg-base-100 p-5"
               >
                 <div className="flex items-center justify-between gap-2">
                   <span className="grid size-10 place-items-center rounded-xl bg-base-200">
@@ -82,12 +82,12 @@ export function AdminOrganisation() {
                   </span>
                   <StatusBadge status={c.isActive ? "Active" : "Inactive"} />
                 </div>
-                <p className="mt-4 text-[10px] uppercase tracking-wider text-base-content/50">
+                <p className="mt-4 text-[10px] uppercase tracking-wider text-muted">
                   {c.code}
                 </p>
                 <h3 className="mt-1 font-semibold">{c.name}</h3>
                 {c.address && (
-                  <p className="mt-2 text-xs text-base-content/60">
+                  <p className="mt-2 text-xs text-muted">
                     {c.address}
                   </p>
                 )}
@@ -98,7 +98,7 @@ export function AdminOrganisation() {
                   </p>
                 )}
                 {c.email && (
-                  <p className="mt-2 break-all text-xs text-base-content/60">
+                  <p className="mt-2 break-all text-xs text-muted">
                     {c.email}
                   </p>
                 )}

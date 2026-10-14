@@ -25,7 +25,7 @@ export function ContactPicker({ open, onClose, contacts, loading, error, onPick 
  if (!open) return null;
  return (
  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={onClose} className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+ <button type="button" aria-label="Close" onClick={onClose} className="absolute inset-0 bg-black/40 " />
  <div className="relative flex max-h-[80vh] w-full max-w-md flex-col overflow-hidden rounded-box bg-base-100">
  <div className="border-b border-line px-5 py-4 pr-12">
  <h3 className="text-sm font-bold">New chat</h3>
@@ -40,11 +40,11 @@ export function ContactPicker({ open, onClose, contacts, loading, error, onPick 
  </div>
  </div>
  <div className="flex-1 overflow-y-auto px-4 pb-4">
- {loading ? <p className="py-10 text-center text-xs text-muted">Loading contacts…</p> : error ? <p className="rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">{error}</p> : filtered.length === 0 ? <p className="py-10 text-center text-xs text-muted">{contacts.length === 0 ? 'No contacts yet — classmates and teachers appear here once you are enrolled.' : 'No matches.'}</p> : (
+ {loading ? <p className="py-10 text-center text-xs text-muted">Loading contacts…</p> : error ? <p className="rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]">{error}</p> : filtered.length === 0 ? <p className="py-10 text-center text-xs text-muted">{contacts.length === 0 ? 'No contacts yet — classmates and teachers appear here once you are enrolled.' : 'No matches.'}</p> : (
  <ul className="space-y-1">
  {filtered.map((c) => (
  <li key={c.id}>
- <button type="button" onClick={() => onPick(c.id)} className="flex w-full items-center gap-3 rounded-box border border-line bg-base-100 p-3 text-left hover:border-brand/20 hover:bg-brand-soft/40">
+ <button type="button" onClick={() => onPick(c.id)} className="flex w-full items-center gap-3 rounded-box border border-line bg-base-100 p-3 text-left hover:border-brand hover:bg-brand hover:text-primary-content">
  <span className={`flex size-9 items-center justify-center rounded-full text-xs font-bold ${accentFor(c.firstName)}`}>{initials(c.firstName, c.lastName)}</span>
  <span className="min-w-0 grow">
  <span className="block truncate text-sm font-semibold leading-tight">{c.firstName} {c.lastName}</span>

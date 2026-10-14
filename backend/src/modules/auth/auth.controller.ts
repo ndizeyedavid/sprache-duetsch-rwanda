@@ -1,6 +1,6 @@
 import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import type { LoginInput,RegisterInput,ResetPasswordInput,UpdateProfileInput } from "./auth.schema.js";
+import type { LoginInput,RegisterInput,RegisterOtpInput,ResetPasswordInput,UpdateProfileInput } from "./auth.schema.js";
 import type { RequestMeta } from "./auth.service.js";
 import * as authService from "./auth.service.js";
 import type { AuthPortal } from "./portal-access.js";
@@ -22,6 +22,10 @@ const readRefreshToken = (req: Request): string | undefined => {
 export const register = async (req: Request, res: Response): Promise<void> => {
   const result = await authService.registerStudent(req.body as RegisterInput, requestMeta(req));
   res.status(201).json({ success: true, data: result });
+};
+
+export const registerOtp = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await authService.requestRegisterOtp(req.body as RegisterOtpInput) });
 };
 
 export const login = async (req: Request, res: Response): Promise<void> => {

@@ -47,9 +47,9 @@ export function skillBand(percentage: number): { tone: Tone; hint: string } {
  * half-opacity utilities.
  */
 export const TONE_FLAT: Record<Tone, string> = {
-  brand: 'bg-brand-soft text-[#B30A00]',
-  sun: 'bg-sun-soft text-[#8A6800]',
-  coral: 'bg-coral-soft text-[#D8482F]',
+  brand: 'bg-brand text-primary-content text-[#B30A00]',
+  sun: 'bg-sun text-warning-content text-[#8A6800]',
+  coral: 'bg-coral text-error-content text-[#D8482F]',
   navy: 'bg-base-200 text-night',
   muted: 'bg-base-200 text-[#5C5566]',
 };

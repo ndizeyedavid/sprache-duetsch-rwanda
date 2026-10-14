@@ -16,7 +16,7 @@ export function StudioTopBar({ draft: d, existing, dirty, saving, onBack, onPrev
       <span className="text-xs text-muted" role="status">{saving ? 'Saving…' : dirty ? 'Unsaved changes' : existing ? 'All changes saved' : ''}</span>
       <button type="button" className="btn btn-ghost btn-sm rounded-full xl:hidden" onClick={onPreview}><FiEye aria-hidden />Preview</button>
       {!published ? <button type="button" className="btn btn-sm rounded-full border-base-300" disabled={saving} onClick={() => onSave(false)}><FiSave aria-hidden />Save draft</button> : null}
-      <button type="button" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90" disabled={saving} onClick={() => onSave(true)}>
+      <button type="button" className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content" disabled={saving} onClick={() => onSave(true)}>
         {saving ? <span className="loading loading-spinner loading-xs" aria-hidden /> : <FiSend aria-hidden />}{published ? 'Save changes' : 'Publish'}
       </button>
     </header>

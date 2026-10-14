@@ -69,7 +69,7 @@ return (<ul className="space-y-2">
 
  {isEditing ? (
  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={() => setEditingMaterialId(null)} className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+ <button type="button" aria-label="Close" onClick={() => setEditingMaterialId(null)} className="absolute inset-0 bg-black/40 " />
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -130,7 +130,7 @@ return (<ul className="space-y-2">
  <button type="button" onClick={() => setEditingMaterialId(null)} className="btn btn-sm rounded-full border-line bg-base-100">
  Cancel
  </button>
-  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+  <button type="submit" disabled={busy} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
   {busy ? <span className="loading loading-spinner loading-xs" /> : <FiCheck aria-hidden />} Save changes
   </button>
  </div>

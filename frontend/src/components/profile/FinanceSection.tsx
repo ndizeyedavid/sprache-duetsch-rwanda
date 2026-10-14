@@ -1,3 +1,5 @@
+import { FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import type { MyFinance } from '../../lib/services';
 import { money } from '../../lib/services';
 import { CourseFeeSummary } from '../payments/CourseFeeSummary';
@@ -25,6 +27,10 @@ export function FinanceSection({ finance, loading, error, onRetry }: Props) {
             </div>
           </div>
           <div className="px-2 pb-2 sm:px-3"><PaymentRequestHistory rows={checkout.rows} /></div>
+          <Link to="/payments" className="mx-2 mb-2 flex items-center justify-between rounded-box bg-base-200 px-4 py-3 text-sm font-semibold sm:mx-3">
+            Payment schedule, history and other ways to pay
+            <FiArrowRight aria-hidden className="text-brand" />
+          </Link>
         </Panel>
       ) : null}
     </SectionState>

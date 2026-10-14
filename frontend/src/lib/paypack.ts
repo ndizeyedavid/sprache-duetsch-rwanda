@@ -19,6 +19,13 @@ export const listPaypackCheckouts = () => apiGet<PaymentCheckout[]>('/payments/p
 export const checkPayment = (id: string) => apiGet<PaymentCheckout>(`/payments/paypack/${id}`);
 export const startPayment = (body: { amount: number; phone: string; requestKey: string }) =>
   apiPost<PaymentCheckout>('/payments/paypack/checkout', body);
+/** Where a checkout hook loads, starts and checks payments: the signed-in student or a public invoice link. */
+export interface PaypackClient {
+  list: () => Promise<PaymentCheckout[]>;
+  check: (id: string) => Promise<PaymentCheckout>;
+  start: (body: { amount: number; phone: string; requestKey: string }) => Promise<PaymentCheckout>;
+}
+export const studentPaypackClient: PaypackClient = { list: listMyCheckouts, check: checkPayment, start: startPayment };
 export const reconcilePayment = (id: string, reference: string, reason: string) =>
   apiPost<PaymentCheckout>(`/payments/paypack/${id}/reconcile`, { reference, reason });
 export const closeUnsubmittedPayment = (id: string, reason: string) =>

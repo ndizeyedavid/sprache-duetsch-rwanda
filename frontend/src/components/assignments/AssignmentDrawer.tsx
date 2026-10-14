@@ -16,8 +16,8 @@ export function AssignmentDrawer({ open, onClose, item }: Props) {
         : "/courses";
   return (
     <div className="fixed inset-0 z-40 flex">
-      <button type="button" aria-label="Close" onClick={onClose} className="flex-1 bg-black/40 backdrop-blur-sm" />
-      <div className="flex h-full w-full max-w-md flex-col overflow-hidden bg-base-100 shadow-xl">
+      <button type="button" aria-label="Close" onClick={onClose} className="flex-1 bg-black/40 " />
+      <div className="flex h-full w-full max-w-md flex-col overflow-hidden bg-base-100 ">
         <div className="flex items-start justify-between gap-3 border-b border-line p-4">
           <div className="min-w-0">
             <p className="text-sm font-bold leading-tight">{item.title}</p>
@@ -32,7 +32,7 @@ export function AssignmentDrawer({ open, onClose, item }: Props) {
           {item.score !== null ? <p className="mt-2 text-sm"><span className="font-bold">{item.score}/{item.maxScore}</span> <span className="text-muted">score</span></p> : null}
           {item.submittedAt ? <p className="mt-1 text-xs text-muted">Submitted {new Date(item.submittedAt).toLocaleString("en-GB")}</p> : null}
           <div className="mt-4 flex gap-2">
-            <Link to={link} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90">{item.status === "GRADED" ? "View feedback" : item.status === "SUBMITTED" ? "View submission" : "Open assignment"}</Link>
+            <Link to={link} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">{item.status === "GRADED" ? "View feedback" : item.status === "SUBMITTED" ? "View submission" : "Open assignment"}</Link>
             <button type="button" onClick={onClose} className="btn btn-sm rounded-full border-line bg-base-100">Close</button>
           </div>
         </div>

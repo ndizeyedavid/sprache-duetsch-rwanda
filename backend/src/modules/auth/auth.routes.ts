@@ -1,5 +1,7 @@
 import { Router } from "express";
+import { env } from "../../config/env.js";
 import { asyncHandler } from "../../lib/async-handler.js";
+import { notFound } from "../../lib/http-error.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { authLimiter } from "../../middleware/rate-limit.js";
 import { validate } from "../../middleware/validate.js";
@@ -11,12 +13,21 @@ googleAuthSchema,
 loginSchema,
 logoutSchema,
 refreshSchema,
+registerOtpSchema,
 registerSchema,
 resetPasswordSchema,
 updateProfileSchema,
 } from "./auth.schema.js";
 
 export const authRouter = Router();
+
+// Step 1 of sign-up: email a one-time code. Step 2 (/register) must present it.
+authRouter.post(
+  "/register/otp",
+  authLimiter,
+  validate({ body: registerOtpSchema }),
+  asyncHandler(controller.registerOtp),
+);
 
 authRouter.post(
   "/register",
@@ -32,8 +43,10 @@ authRouter.post(
   asyncHandler(controller.login),
 );
 
+// Google sign-in is kept for later but switched off unless GOOGLE_AUTH_ENABLED="true".
 authRouter.post(
   "/google",
+  (_req, _res, next) => next(env.GOOGLE_AUTH_ENABLED === "true" ? undefined : notFound("Google sign-in is disabled")),
   authLimiter,
   validate({ body: googleAuthSchema }),
   asyncHandler(controller.google),

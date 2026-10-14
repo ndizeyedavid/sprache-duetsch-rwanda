@@ -3,18 +3,13 @@ import type { ReferenceItem } from './reference-item';
 import type { FormEvent } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { GoogleButton } from '../../components/auth/GoogleButton';
 import type { RegisterPayload } from '../../lib/auth-store';
 import { labelOf } from './label-of';
 import { SHIFTS } from './shifts';
 export function RegisterSection1(props: { handleSubmit: (event: FormEvent) => Promise<void>; fullName: string; setFullName: import("react").Dispatch<import("react").SetStateAction<string>>; phone: string; setPhone: import("react").Dispatch<import("react").SetStateAction<string>>; email: string; setEmail: import("react").Dispatch<import("react").SetStateAction<string>>; campusId: string; loadingRefs: boolean; setCampusId: import("react").Dispatch<import("react").SetStateAction<string>>; campuses: ReferenceItem[]; shift: "MORNING" | "AFTERNOON" | "EVENING" | "WEEKEND"; setShift: import("react").Dispatch<import("react").SetStateAction<"MORNING" | "AFTERNOON" | "EVENING" | "WEEKEND">>; intakeId: string; setIntakeId: import("react").Dispatch<import("react").SetStateAction<string>>; intakes: ReferenceItem[]; intendedLevelId: string; setIntendedLevelId: import("react").Dispatch<import("react").SetStateAction<string>>; levels: ReferenceItem[]; password: string; setPassword: import("react").Dispatch<import("react").SetStateAction<string>>; error: string | null; pending: boolean; navigate: import("../../../node_modules/react-router-dom/dist/index").NavigateFunction; setError: import("react").Dispatch<import("react").SetStateAction<string | null>> }) {
-const { handleSubmit, fullName, setFullName, phone, setPhone, email, setEmail, campusId, loadingRefs, setCampusId, campuses, shift, setShift, intakeId, setIntakeId, intakes, intendedLevelId, setIntendedLevelId, levels, password, setPassword, error, pending, navigate, setError } = props;
+const { handleSubmit, fullName, setFullName, phone, setPhone, email, setEmail, campusId, loadingRefs, setCampusId, campuses, shift, setShift, intakeId, setIntakeId, intakes, intendedLevelId, setIntendedLevelId, levels, password, setPassword, error, pending } = props;
 return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  <h1 className="text-xl font-semibold sm:text-2xl">Create your account</h1>
- <p className="mt-1 text-sm leading-relaxed text-muted">
- We generate your student ID automatically. A placement test confirms your German level, and an academic admin
- can override it.
- </p>
 
  <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
  <div className="grid gap-4 sm:grid-cols-2">
@@ -65,7 +60,7 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  value={campusId}
  disabled={loadingRefs}
  onChange={(event) => setCampusId(event.currentTarget.value)}
- className="select w-full rounded-field border-line bg-base-200"
+ className="select w-full truncate rounded-field border-line bg-base-200 pe-10"
  >
  {loadingRefs ? (
  <option>Loading campuses…</option>
@@ -79,14 +74,14 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  </select>
  </label>
 
- <div className="grid gap-4 sm:grid-cols-3">
+ <div className="grid gap-4 sm:grid-cols-2">
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Shift</span>
  <select
  required
  value={shift}
  onChange={(event) => setShift(event.currentTarget.value as RegisterPayload['shift'])}
- className="select w-full rounded-field border-line bg-base-200"
+ className="select w-full truncate rounded-field border-line bg-base-200 pe-10"
  >
  {SHIFTS.map((item) => (
  <option key={item.value} value={item.value}>
@@ -103,9 +98,9 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  value={intakeId}
  disabled={loadingRefs}
  onChange={(event) => { setIntakeId(event.currentTarget.value); setIntendedLevelId(''); }}
- className="select w-full rounded-field border-line bg-base-200"
+ className="select w-full truncate rounded-field border-line bg-base-200 pe-10"
  >
- <option value="">Select intake (free to join)</option>
+ <option value="">Select an intake</option>
  {intakes.map((intake) => (
  <option key={intake.id} value={intake.id}>
  {labelOf(intake)}
@@ -113,6 +108,7 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  ))}
  </select>
  </label>
+ </div>
 
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Course level</span>
@@ -121,7 +117,7 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  value={intendedLevelId}
  disabled={loadingRefs}
  onChange={(event) => setIntendedLevelId(event.currentTarget.value)}
- className="select w-full rounded-field border-line bg-base-200"
+ className="select w-full truncate rounded-field border-line bg-base-200 pe-10"
  >
  <option value="">Select a level from this intake</option>
  {levels.map((level) => (
@@ -131,7 +127,6 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  ))}
  </select>
  </label>
- </div>
 
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Password</span>
@@ -156,28 +151,20 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  <label className="flex items-start gap-2 text-xs text-muted">
  <input type="checkbox" required className="checkbox checkbox-sm mt-0.5" />
  <span>
- I agree to the fee policy: total due, installments and receipts are tracked on my student account.
+ I agree to the terms and conditions.
  </span>
  </label>
 
   <button
   type="submit"
   disabled={pending || loadingRefs}
-  className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+  className="btn w-full gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60"
   >
   {pending ? <span className="loading loading-spinner loading-sm" /> : null}
-  Create account
+  Continue
   <FiArrowRight aria-hidden />
   </button>
   </form>
-
-  {import.meta.env.VITE_GOOGLE_CLIENT_ID?.trim() && <div className="my-4 flex items-center gap-3">
-  <span className="h-px flex-1 bg-line" />
-  <span className="text-xs text-muted">or</span>
-  <span className="h-px flex-1 bg-line" />
-  </div>}
-
-  <GoogleButton portal="student" onSuccess={() => navigate('/dashboard', { replace: true })} onError={(msg) => setError(msg)} />
 
  <p className="mt-6 text-center text-xs text-muted">
  Already enrolled?{' '}

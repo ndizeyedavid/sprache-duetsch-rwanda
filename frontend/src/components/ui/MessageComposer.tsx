@@ -46,7 +46,7 @@ export function MessageComposer({
  />
  <button
  type="submit"
- className="btn btn-sm gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand/90"
+ className="btn btn-sm gap-2 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content"
  >
  Send
  <FiSend aria-hidden />

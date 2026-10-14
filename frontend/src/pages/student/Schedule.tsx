@@ -81,10 +81,10 @@ export function Schedule() {
     <div className="space-y-4">
       <Panel>
         <ScheduleSpotlight sessions={allSessions} onOpen={setDrawerId} />
-        <p className="mb-4 text-xs text-base-content/55">Your classes · Times in {Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll('_', ' ')}</p>
+        <p className="mb-4 text-xs text-muted">Your classes · Times in {Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll('_', ' ')}</p>
         <ScheduleToolbar view={view} onView={setView} anchor={anchor} onPrev={() => step(-1)} onNext={() => step(1)} onToday={() => setAnchor(new Date())} onNew={() => {}} canCreate={false} />
         <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-muted">
-          <span className="inline-flex items-center gap-1 rounded-full bg-base-200 px-2.5 py-1 font-medium text-base-content/65">
+          <span className="inline-flex items-center gap-1 rounded-full bg-base-200 px-2.5 py-1 font-medium text-muted">
             <FiCalendar aria-hidden />
             {filtered.length} session{filtered.length === 1 ? '' : 's'}
           </span>

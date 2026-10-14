@@ -31,8 +31,8 @@ export function GradebookPanel({ loading, error, onRetry, students, assessments,
  <div className="overflow-x-auto">
  <table className="table w-full text-xs">
  <thead>
- <tr className="bg-base-200/60 text-muted">
- <th className="sticky left-0 z-10 bg-base-200/60 text-left">Student</th>
+ <tr className="bg-base-200 text-muted">
+ <th className="sticky left-0 z-10 bg-base-200 text-left">Student</th>
  {assessments.map((a) => (
  <th key={a.id} className="text-center" title={a.title}><span className="block max-w-24 truncate">{a.title}</span></th>
  ))}
@@ -40,7 +40,7 @@ export function GradebookPanel({ loading, error, onRetry, students, assessments,
  </thead>
  <tbody>
  {students.map((row) => (
- <tr key={row.student.id} className="border-t border-line hover:bg-base-200/30">
+ <tr key={row.student.id} className="border-t border-line hover:bg-base-200">
  <td className="sticky left-0 z-10 bg-base-100 py-2 pr-2 font-medium">
  <span className="block truncate">{row.student.user.firstName} {row.student.user.lastName}</span>
  <span className="block font-mono text-[11px] text-muted">{row.student.studentCode}</span>
@@ -51,7 +51,7 @@ export function GradebookPanel({ loading, error, onRetry, students, assessments,
  const isGraded = att.status === 'GRADED';
  return (
  <td key={a.id} className="text-center">
- <button type="button" onClick={() => onJump(att.id, att.status)} className={`rounded-full px-2.5 py-1 text-[11px] font-semibold transition ${isGraded ? 'bg-brand-soft text-[#B30A00] hover:bg-brand hover:text-white' : 'bg-sun-soft text-[#8A6800] hover:bg-sun hover:text-white'}`}>
+ <button type="button" onClick={() => onJump(att.id, att.status)} className={`rounded-full px-2.5 py-1 text-[11px] font-semibold transition ${isGraded ? 'bg-brand text-primary-content text-[#B30A00] hover:bg-brand hover:text-white' : 'bg-sun text-warning-content text-[#8A6800] hover:bg-sun hover:text-white'}`}>
  {att.score != null ? String(att.score) : humanize(att.status)}
  </button>
  </td>

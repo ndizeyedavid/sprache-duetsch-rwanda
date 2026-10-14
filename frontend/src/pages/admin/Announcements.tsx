@@ -45,13 +45,13 @@ export function AdminAnnouncements() {
           {items.map((item) => (
             <article
               key={item.id}
-              className="card border border-base-300/70 bg-base-100 p-5"
+              className="card border border-base-300 bg-base-100 p-5"
             >
-              <p className="text-[10px] text-base-content/50">
+              <p className="text-[10px] text-muted">
                 {isoDate(item.createdAt)}
               </p>
               <h2 className="mt-2 text-base font-semibold">{item.title}</h2>
-              <p className="mt-3 whitespace-pre-wrap break-words text-xs leading-6 text-base-content/65">
+              <p className="mt-3 whitespace-pre-wrap break-words text-xs leading-6 text-muted">
                 {item.body}
               </p>
             </article>

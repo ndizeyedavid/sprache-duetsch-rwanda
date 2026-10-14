@@ -15,7 +15,7 @@ const { toolbarRef, isStuck, toolbarBox, HEADER, editor, btn, addLink, addImage 
 return (<div
         ref={toolbarRef}
         style={isStuck && toolbarBox ? { position: "fixed", top: HEADER, left: toolbarBox.left, width: toolbarBox.width, zIndex: 20 } : undefined}
-        className={`flex flex-wrap gap-1 border-b border-line bg-base-200/95 p-2 backdrop-blur supports-[backdrop-filter]:bg-base-200/90 ${isStuck ? "shadow-md rounded-t-box border-x border-t" : "rounded-t-box"}`}
+        className={`flex flex-wrap gap-1 border-b border-line bg-base-200 p-2  supports-[backdrop-filter]:bg-base-200 ${isStuck ? " rounded-t-box border-x border-t" : "rounded-t-box"}`}
       >
         <button
           type="button"

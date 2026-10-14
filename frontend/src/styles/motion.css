@@ -3,7 +3,7 @@
   transform-box: view-box;
   transform-origin: 32px 24px;
   fill: var(--color-base-100);
-  stroke: color-mix(in oklab, var(--color-base-content) 14%, transparent);
+  stroke: var(--color-base-content);
   stroke-width: 0.6;
   animation: book-flip 1.8s cubic-bezier(0.45, 0, 0.25, 1) infinite;
 }

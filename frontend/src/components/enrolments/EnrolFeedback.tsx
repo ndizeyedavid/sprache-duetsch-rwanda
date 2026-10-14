@@ -13,7 +13,7 @@ export function EnrolFeedback({ error, success, onDismiss }: Props) {
   return (
     <div aria-live="polite">
       {error ? (
-        <div role="alert" className="flex items-start gap-3 rounded-field bg-coral-soft px-4 py-3">
+        <div role="alert" className="flex items-start gap-3 rounded-field bg-coral text-error-content px-4 py-3">
           <FiAlertTriangle aria-hidden className="mt-0.5 shrink-0 text-[#D8482F]" />
           <p className="grow text-xs font-medium text-[#D8482F]">{error}</p>
           <button
@@ -26,7 +26,7 @@ export function EnrolFeedback({ error, success, onDismiss }: Props) {
           </button>
         </div>
       ) : success ? (
-        <div className="flex items-start gap-3 rounded-field bg-brand-soft px-4 py-3">
+        <div className="flex items-start gap-3 rounded-field bg-brand text-primary-content px-4 py-3">
           <FiCheckCircle aria-hidden className="mt-0.5 shrink-0 text-brand" />
           <p className="grow text-xs font-medium text-[#B30A00]">{success}</p>
           <button

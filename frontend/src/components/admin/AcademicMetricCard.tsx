@@ -11,9 +11,9 @@ type Props = {
 };
 const tones = {
   neutral: "bg-base-200 text-base-content",
-  success: "bg-success/10 text-success",
-  warning: "bg-warning/15 text-base-content",
-  info: "bg-info/10 text-info",
+  success: "bg-success text-success-content",
+  warning: "bg-warning text-warning-content text-base-content",
+  info: "bg-info text-info-content",
 };
 
 export function AcademicMetricCard({
@@ -31,10 +31,10 @@ export function AcademicMetricCard({
       type={onClick ? "button" : undefined}
       onClick={onClick}
       aria-pressed={pressed}
-      className={`card text-left min-w-0 border border-base-300/70 bg-base-100 p-4 sm:p-5 ${onClick ? "transition hover:bg-base-200/60" : ""} ${pressed ? "ring-2 ring-base-content/30" : ""}`}
+      className={`card text-left min-w-0 border border-base-300 bg-base-100 p-4 sm:p-5 ${onClick ? "transition hover:bg-base-200" : ""} ${pressed ? "ring-2 ring-base-content" : ""}`}
     >
       <div className="flex items-center justify-between gap-2">
-        <p className="text-xs font-medium text-base-content/65">{label}</p>
+        <p className="text-xs font-medium text-muted">{label}</p>
         <span
           className={`grid size-9 shrink-0 place-items-center rounded-xl ${tones[tone]}`}
         >
@@ -45,7 +45,7 @@ export function AcademicMetricCard({
         {value}
       </p>
       {note && (
-        <p className="mt-2 text-xs leading-5 text-base-content/55">{note}</p>
+        <p className="mt-2 text-xs leading-5 text-muted">{note}</p>
       )}
     </Element>
   );

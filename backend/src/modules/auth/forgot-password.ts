@@ -1,5 +1,6 @@
 import { env,isProduction } from "../../config/env.js";
 import { writeAudit } from "../../lib/audit.js";
+import { renderEmail } from "../../lib/email-layout.js";
 import { generateOpaqueToken,hashToken } from "../../lib/ids.js";
 import { logger } from "../../lib/logger.js";
 import { queueTransactionalEmail } from "../../lib/notification-delivery.js";
@@ -14,7 +15,7 @@ export const forgotPassword = async (
 ): Promise<ForgotPasswordResult> => {
   const user = await prisma.user.findUnique({
     where: { email: input.email.toLowerCase() },
-    select: { id: true },
+    select: { id: true, firstName: true },
   });
 
   // Always report success so the endpoint cannot be used to probe registered emails.
@@ -43,8 +44,14 @@ export const forgotPassword = async (
   try {
     await queueTransactionalEmail(user.id, input.email.toLowerCase(), {
       subject: "Reset your Deutsch Sprache RW password",
-      text: `Use this link within one hour to reset your password: ${resetUrl}`,
-      html: `<p>We received a request to reset your Deutsch Sprache RW password.</p><p><a href="${resetUrl}">Reset your password</a></p><p>This link expires in one hour. If you did not request this, you can ignore this email.</p>`,
+      ...renderEmail({
+        preheader: "Use this link within one hour to choose a new password.",
+        title: "Reset your password",
+        greeting: `Hallo ${user.firstName},`,
+        paragraphs: ["We received a request to reset the password for your Deutsch Sprache RW account. Choose a new password with the button below."],
+        action: { label: "Choose a new password", url: resetUrl },
+        footnote: "This link expires in one hour. If you did not ask to reset your password, you can ignore this email; your password stays the same.",
+      }),
     }, `password-reset:${hashToken(token)}`, new Date(Date.now() + RESET_TOKEN_TTL_MS));
   } catch (error) {
     logger.error({ error }, "Password reset email could not be delivered");

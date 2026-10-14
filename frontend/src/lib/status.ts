@@ -43,9 +43,9 @@ export function statusTone(status: string): Tone {
  * fixed pale backgrounds, so their darkened ink works in every theme.
  */
 export const TONE_SURFACE: Record<Tone, string> = {
-  brand: 'bg-brand-soft text-brand-soft-ink',
-  sun: 'bg-sun-soft text-[#8A6800]',
-  coral: 'bg-coral-soft text-[#AE3522]',
+  brand: 'bg-brand text-primary-content text-brand-soft-ink',
+  sun: 'bg-sun text-warning-content text-[#8A6800]',
+  coral: 'bg-coral text-error-content text-[#AE3522]',
   navy: 'bg-night-soft text-night-soft-ink',
   muted: 'bg-muted-soft text-muted-ink',
 };

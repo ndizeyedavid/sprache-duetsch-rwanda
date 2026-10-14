@@ -20,13 +20,13 @@ export function JourneyModule({ module, index, slug, nextId, collapsed, onToggle
   const canvas = useLessonCanvas(`${expanded}:${visible.map((lesson) => lesson.id).join(',')}`);
 
   return (
-    <section className="card overflow-hidden border border-base-300/80 bg-base-100">
+    <section className="card overflow-hidden border border-base-300 bg-base-100">
       <h3>
         <button type="button" onClick={onToggle} disabled={!!query} aria-expanded={expanded} aria-controls={contentId}
-          className="flex w-full items-center gap-3 border-b border-base-300/60 bg-base-200/50 px-4 py-3 text-left disabled:cursor-default">
+          className="flex w-full items-center gap-3 border-b border-base-300 bg-base-200 px-4 py-3 text-left disabled:cursor-default">
           <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-base-100 text-xs font-semibold">{complete ? <FiCheck aria-hidden /> : String(index + 1).padStart(2, '0')}</span>
           <span className="min-w-0 flex-1 text-sm font-semibold">{module.title}</span>
-          <span className="shrink-0 text-xs text-base-content/60" aria-label={`${done} of ${lessons.length} lessons completed`}>{done}/{lessons.length}</span>
+          <span className="shrink-0 text-xs text-muted" aria-label={`${done} of ${lessons.length} lessons completed`}>{done}/{lessons.length}</span>
           <progress className="progress progress-primary hidden h-1 w-16 sm:block" value={done} max={lessons.length || 1} aria-label={`${module.title} progress`} />
           <FiChevronDown aria-hidden className={`shrink-0 motion-safe:transition-transform ${expanded ? 'rotate-180' : ''}`} />
         </button>
@@ -41,7 +41,7 @@ export function JourneyModule({ module, index, slug, nextId, collapsed, onToggle
           <ol ref={canvas.ref} className={`lesson-map-grid relative grid ${canvas.columns === 1 ? 'lesson-map-single' : ''}`} style={{ gridTemplateColumns: `repeat(${canvas.columns}, minmax(0, 1fr))` }}>
             {visible.map((lesson, position) => <JourneyLessonCard key={lesson.id} lesson={lesson} index={lessons.indexOf(lesson)} position={position} columns={canvas.columns} slug={slug} next={lesson.id === nextId} />)}
           </ol>
-        </div> : <p className="p-5 text-center text-xs text-base-content/60">No lessons yet.</p>}
+        </div> : <p className="p-5 text-center text-xs text-muted">No lessons yet.</p>}
       </div>
     </section>
   );

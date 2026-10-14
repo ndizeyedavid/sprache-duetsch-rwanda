@@ -40,7 +40,7 @@ export function TodoRail({ todos, needsGrading, upcoming, onClassGroupClick }: T
  <li key={item.id}>
  <Link
  to={item.to}
- className="flex items-center gap-3 rounded-field bg-base-200 px-3 py-2 hover:bg-brand-tint"
+ className="flex items-center gap-3 rounded-field bg-base-200 px-3 py-2 hover:bg-brand hover:text-primary-content"
  >
  <span className={`flex size-7 shrink-0 items-center justify-center rounded-full text-white ${TONE_BG[item.tone] ?? 'bg-brand'}`}>
  {item.tone === 'brand' ? <FiCheckSquare aria-hidden /> : item.tone === 'sun' ? <FiAlertCircle aria-hidden /> : <FiClock aria-hidden />}
@@ -67,7 +67,7 @@ export function TodoRail({ todos, needsGrading, upcoming, onClassGroupClick }: T
  <button
  type="button"
  onClick={() => onClassGroupClick?.(row.classGroupId)}
- className="flex w-full items-center justify-between gap-2 rounded-field bg-base-200 px-3 py-2 text-left hover:bg-brand-tint"
+ className="flex w-full items-center justify-between gap-2 rounded-field bg-base-200 px-3 py-2 text-left hover:bg-brand hover:text-primary-content"
  >
  <span className="truncate text-xs font-medium">{row.className}</span>
  <span className="shrink-0 rounded-full bg-brand px-2 py-0.5 text-[11px] font-bold text-white">{row.count}</span>

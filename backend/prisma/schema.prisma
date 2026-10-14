@@ -223,6 +223,11 @@ enum NotificationChannel {
 // ---------------------------------------------------------------------------
 
 model User {
+  placementsDecided PlacementResult[] @relation("PlacementDecider")
+  applicationsReviewed Application[] @relation("ApplicationReviewer")
+  extensionsGranted AssignmentExtension[] @relation("AssignmentExtensionGranter")
+  feedbackComments FeedbackComment[] @relation("FeedbackCommentOwner")
+  rubricTemplates RubricTemplate[] @relation("RubricTemplateOwner")
   teachingLevels TeacherLevel[] @relation("TeachingLevelTeacher")
   levelsAssigned TeacherLevel[] @relation("TeachingLevelAssigner")
   assignmentsCreated Assignment[]
@@ -298,6 +303,20 @@ model PasswordResetToken {
   @@index([userId])
 }
 
+/// One-time email code that proves the address before a student account exists.
+model EmailOtp {
+  id         String    @id @default(uuid())
+  email      String
+  purpose    String    @default("REGISTER")
+  codeHash   String
+  expiresAt  DateTime
+  attempts   Int       @default(0)
+  consumedAt DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([email, purpose, createdAt])
+}
+
 // ---------------------------------------------------------------------------
 // Organisation: campuses, levels, intakes, classes
 // ---------------------------------------------------------------------------
@@ -318,11 +337,20 @@ model Campus {
   enrollments Enrollment[]
 
   @@index([isActive])
+  applications Application[]
 }
 
 // "Level" is intentionally generic (language + code) so non-German courses and
 // additional CEFR-like tracks can be added without a schema change.
 model Level {
+  // Lowest placement-test percentage that recommends this level; null = never recommended by placement.
+  placementMinScore Int?
+  // Overrides ATTENDANCE_ALERT_THRESHOLD for classes at this level (percentage).
+  attendanceAlertThreshold Int?
+  placementsRecommended PlacementResult[] @relation("PlacementRecommended")
+  placementsChosen PlacementResult[] @relation("PlacementChosen")
+  placementsAssigned PlacementResult[] @relation("PlacementAssigned")
+  applications Application[]
   coursebookUrl String?
   coursebookPages Int?
   completionRules Json?
@@ -374,10 +402,13 @@ model Intake {
   classes     ClassGroup[]
   enrollments Enrollment[]
   levels      Level[]      @relation("IntakeLevels")
+  applications Application[]
 }
 
 model ClassGroup {
   assignments Assignment[]
+  // Overrides the level/system low-attendance threshold for this class (percentage).
+  attendanceAlertThreshold Int?
 
   id        String   @id @default(uuid())
   code      String   @unique
@@ -413,6 +444,9 @@ model ClassGroup {
 model Student {
   assignmentRecipients AssignmentRecipient[]
   assignmentSubmissions AssignmentSubmission[]
+  assignmentExtensions AssignmentExtension[]
+  placementResults PlacementResult[]
+  applications Application[]
 
   id              String        @id @default(uuid())
   studentCode     String        @unique
@@ -555,6 +589,7 @@ model Lesson {
   activities   Activity[]
   progress     LessonProgress[]
   assessments  Assessment[]
+  assignments  Assignment[]
 
   @@unique([moduleId, order])
 }
@@ -743,6 +778,7 @@ model Attempt {
   enrollment Enrollment? @relation(fields: [enrollmentId], references: [id])
   gradedBy   User?      @relation("AttemptGrader", fields: [gradedById], references: [id])
   answers    Answer[]
+  placementResult PlacementResult?
 
   @@unique([assessmentId, studentId, attemptNumber])
   @@index([studentId, status])
@@ -784,6 +820,7 @@ model ClassSession {
   room            String?
   status          SessionStatus   @default(SCHEDULED)
   rescheduledFromId String?
+  cancelReason    String?
   notes           String?
   createdAt       DateTime        @default(now())
   updatedAt       DateTime        @updatedAt
@@ -1145,6 +1182,12 @@ model Assignment {
   estimatedMinutes Int @default(20)
   maxPoints Decimal @default(10) @db.Decimal(6, 2)
   allowLate Boolean @default(true)
+  // Late policy: minutes of grace after the due date, then a percentage deducted per started day, capped.
+  gracePeriodMinutes Int @default(0)
+  latePenaltyPercentPerDay Decimal @default(0) @db.Decimal(5, 2)
+  latePenaltyMaxPercent Decimal @default(100) @db.Decimal(5, 2)
+  // Optional curriculum link: the lesson this homework practises.
+  lessonId String?
   maxSubmissions Int @default(3)
   questions Json @default("[]")
   resources Json @default("[]")
@@ -1153,10 +1196,13 @@ model Assignment {
   updatedAt DateTime @updatedAt
   classGroup ClassGroup @relation(fields: [classGroupId], references: [id])
   createdBy User @relation(fields: [createdById], references: [id])
+  lesson Lesson? @relation(fields: [lessonId], references: [id], onDelete: SetNull)
   recipients AssignmentRecipient[]
   submissions AssignmentSubmission[]
   files AssignmentFile[]
+  extensions AssignmentExtension[]
   @@index([classGroupId, status, dueAt])
+  @@index([lessonId])
 }
 model AssignmentRecipient {
   assignmentId String
@@ -1176,7 +1222,12 @@ model AssignmentSubmission {
   fileIds String[] @default([])
   revision Int @default(0)
   score Decimal? @db.Decimal(6, 2)
+  // Score before any late penalty, and the penalty applied (percentage of rawScore).
+  rawScore Decimal? @db.Decimal(6, 2)
+  latePenaltyPercent Decimal? @db.Decimal(5, 2)
   feedback String?
+  // Teacher's recorded audio feedback (an AssignmentFile uploaded by the grader).
+  feedbackAudioFileId String?
   rubricScores Json?
   submittedAt DateTime?
   gradedAt DateTime?
@@ -1197,8 +1248,12 @@ model AssignmentVersion {
   fileIds String[]
   submittedAt DateTime @default(now())
   isLate Boolean @default(false)
+  lateByMinutes Int?
   score Decimal? @db.Decimal(6, 2)
+  rawScore Decimal? @db.Decimal(6, 2)
+  latePenaltyPercent Decimal? @db.Decimal(5, 2)
   feedback String?
+  feedbackAudioFileId String?
   rubricScores Json?
   gradedAt DateTime?
   gradedById String?
@@ -1294,4 +1349,146 @@ model PaypackEvent {
   createdAt   DateTime @default(now())
 
   @@index([providerRef, processedAt])
+}
+
+// ---------------------------------------------------------------------------
+// Assignment depth: per-student extensions, comment bank, rubric templates
+// ---------------------------------------------------------------------------
+
+model AssignmentExtension {
+  assignmentId String
+  studentId    String
+  dueAt        DateTime
+  reason       String?
+  grantedById  String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  student    Student    @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  grantedBy  User       @relation("AssignmentExtensionGranter", fields: [grantedById], references: [id])
+
+  @@id([assignmentId, studentId])
+  @@index([studentId])
+}
+
+model FeedbackComment {
+  id         String   @id @default(uuid())
+  ownerId    String
+  text       String
+  category   String?
+  usageCount Int      @default(0)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  owner User @relation("FeedbackCommentOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+
+  @@index([ownerId, category])
+}
+
+model RubricTemplate {
+  id        String   @id @default(uuid())
+  ownerId   String
+  title     String
+  criteria  Json     @default("[]")
+  isShared  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  owner User @relation("RubricTemplateOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+
+  @@index([ownerId])
+  @@index([isShared])
+}
+
+// ---------------------------------------------------------------------------
+// Placement: every placement decision is kept, separating what the test
+// recommended, what the student chose and what staff assigned.
+// ---------------------------------------------------------------------------
+
+enum PlacementSource {
+  TEST
+  MANUAL
+}
+
+model PlacementResult {
+  id                 String          @id @default(uuid())
+  studentId          String
+  source             PlacementSource
+  attemptId          String?         @unique
+  score              Int
+  recommendedLevelId String
+  chosenLevelId      String?
+  assignedLevelId    String?
+  overrideReason     String?
+  decidedById        String?
+  decidedAt          DateTime?
+  note               String?
+  createdAt          DateTime        @default(now())
+
+  student          Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  attempt          Attempt? @relation(fields: [attemptId], references: [id], onDelete: SetNull)
+  recommendedLevel Level    @relation("PlacementRecommended", fields: [recommendedLevelId], references: [id])
+  chosenLevel      Level?   @relation("PlacementChosen", fields: [chosenLevelId], references: [id])
+  assignedLevel    Level?   @relation("PlacementAssigned", fields: [assignedLevelId], references: [id])
+  decidedBy        User?    @relation("PlacementDecider", fields: [decidedById], references: [id])
+
+  @@index([studentId, createdAt])
+}
+
+// ---------------------------------------------------------------------------
+// Admissions: applications from the public catalog / external site, the
+// review queue and the waitlist (WAITLISTED applications, oldest first).
+// ---------------------------------------------------------------------------
+
+enum ApplicationStatus {
+  NEW
+  REVIEWING
+  ACCEPTED
+  WAITLISTED
+  REJECTED
+  ENROLLED
+  WITHDRAWN
+}
+
+enum ApplicationSource {
+  WEBSITE
+  CATALOG
+  PORTAL
+  WALK_IN
+}
+
+model Application {
+  id             String            @id @default(uuid())
+  reference      String            @unique
+  firstName      String
+  lastName       String
+  email          String
+  phone          String?
+  campusId       String?
+  levelId        String?
+  intakeId       String?
+  shift          Shift?
+  experience     String?
+  message        String?
+  source         ApplicationSource @default(WEBSITE)
+  status         ApplicationStatus @default(NEW)
+  rawPayload     Json?
+  decisionReason String?
+  reviewedById   String?
+  reviewedAt     DateTime?
+  waitlistedAt   DateTime?
+  studentId      String?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+
+  campus     Campus?  @relation(fields: [campusId], references: [id])
+  level      Level?   @relation(fields: [levelId], references: [id])
+  intake     Intake?  @relation(fields: [intakeId], references: [id])
+  reviewedBy User?    @relation("ApplicationReviewer", fields: [reviewedById], references: [id])
+  student    Student? @relation(fields: [studentId], references: [id])
+
+  @@index([status, createdAt])
+  @@index([levelId, intakeId, status])
+  @@index([email])
 }

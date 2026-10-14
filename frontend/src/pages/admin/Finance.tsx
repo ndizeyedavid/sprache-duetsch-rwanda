@@ -69,7 +69,7 @@ export function AdminFinance() {
  </p>
  <Link
  to="/admin/transactions"
- className="btn btn-sm mt-4 w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90"
+ className="btn btn-sm mt-4 w-full rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content"
  >
  Manage transactions
  </Link>
@@ -86,7 +86,7 @@ export function AdminFinance() {
  {data.byPaymentMethod.map((row) => (
  <li
  key={row.methodId}
- className="rounded-box border border-base-300/60 bg-base-100 p-4 text-xs"
+ className="rounded-box border border-base-300 bg-base-100 p-4 text-xs"
  >
  <div className="flex flex-wrap items-center justify-between gap-2"><span className="font-medium">{row.name ?? 'Unknown method'}</span><span className="font-semibold">{format(money(row.total))}</span></div><progress aria-label={`${row.name ?? 'Payment method'} share of collected payments`} className="progress progress-success mt-3 h-1.5 w-full" value={money(row.total)} max={Math.max(1, money(data.totalCollected))} />
  </li>
@@ -104,7 +104,7 @@ export function AdminFinance() {
  {data.byCampus.map((row) => (
  <li
  key={row.key}
- className="flex flex-wrap items-center justify-between gap-3 rounded-box border border-base-300/60 bg-base-100 p-4 text-xs"
+ className="flex flex-wrap items-center justify-between gap-3 rounded-box border border-base-300 bg-base-100 p-4 text-xs"
  >
  <span className="font-medium">{campuses.data?.find(c => c.id === row.key)?.name ?? (row.key === 'UNASSIGNED' ? 'Unassigned' : 'Campus')}</span>
  <span className="text-muted">

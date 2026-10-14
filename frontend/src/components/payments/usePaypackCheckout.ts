@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { apiErrorMessage, apiErrorStatus } from '../../lib/api';
-import { checkPayment, isUnresolved, listMyCheckouts, startPayment } from '../../lib/paypack';
-import type { PaymentCheckout } from '../../lib/paypack';
+import { isUnresolved, studentPaypackClient } from '../../lib/paypack';
+import type { PaymentCheckout, PaypackClient } from '../../lib/paypack';
 
-export function usePaypackCheckout(onPaid: () => void) {
+/** Pass a stable `client` (module constant or memoised) — changing it reloads the history. */
+export function usePaypackCheckout(onPaid: () => void, client: PaypackClient = studentPaypackClient) {
   const [rows, setRows] = useState<PaymentCheckout[]>([]);
   const [historyReady, setHistoryReady] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -17,23 +18,23 @@ export function usePaypackCheckout(onPaid: () => void) {
   const paidCallback = useRef(onPaid);
   useEffect(() => { paidCallback.current = onPaid; }, [onPaid]);
   const load = useCallback(async () => {
-    try { setRows(await listMyCheckouts()); setHistoryReady(true); setError(null); }
+    try { setRows(await client.list()); setHistoryReady(true); setError(null); }
     catch (err) { setHistoryReady(false); setError(apiErrorMessage(err, 'Could not load mobile-money payments.')); }
     finally { setLoading(false); }
-  }, []);
+  }, [client]);
   useEffect(() => { void load(); }, [load]);
   const pending = rows.find(isUnresolved);
   const refresh = useCallback(async (id: string) => {
     if (refreshInFlight.current) return;
     refreshInFlight.current = true; setChecking(true);
     try {
-      const next = await checkPayment(id);
+      const next = await client.check(id);
       setRows(current => current.map(row => row.id === next.id ? next : row));
       setError(null);
       if (next.status === 'SUCCESSFUL') paidCallback.current();
     } catch (err) { setError(apiErrorMessage(err, 'Could not check payment status.')); }
     finally { refreshInFlight.current = false; setChecking(false); }
-  }, []);
+  }, [client]);
   useEffect(() => {
     if (!pending?.providerRef) return;
     const timer = window.setInterval(() => {
@@ -48,7 +49,7 @@ export function usePaypackCheckout(onPaid: () => void) {
     // Keep the same key after a transport failure; changing the form must not silently create another debit.
     request.current ??= { amount, phone, requestKey: crypto.randomUUID() };
     try {
-      const row = await startPayment(request.current);
+      const row = await client.start(request.current);
       request.current = null; setRetryAvailable(false);
       setRows(current => [row, ...current.filter(item => item.id !== row.id)]);
       if (row.status === 'SUCCESSFUL') paidCallback.current();

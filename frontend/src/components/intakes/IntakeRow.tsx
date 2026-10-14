@@ -34,7 +34,7 @@ export function IntakeRow({ intake, onEdit, onArchive, onRestore, busyId }: Inta
       </div>
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-3">
-        <div className="flex flex-wrap gap-2">{intake.levels?.map(level => <span className="badge badge-soft" key={level.id}>{level.code}</span>)}<span className="text-xs text-base-content/60">Free intake registration</span></div>
+        <div className="flex flex-wrap gap-2">{intake.levels?.map(level => <span className="badge badge-soft" key={level.id}>{level.code}</span>)}<span className="text-xs text-muted">Free intake registration</span></div>
         <div className="flex gap-2">
           <button
             type="button"

@@ -26,7 +26,7 @@ export function MonthGrid({ anchor, sessions, onOpen, onPickDay, onCreateAtDate 
  const daySessions = sessions.filter((s) => new Date(s.startAt).toDateString() === day.toDateString());
  const isTodayFlag = isToday(day);
  return (
- <div key={day.toISOString()} role="button" tabIndex={0} onClick={() => onPickDay(day)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onPickDay(day); }} className={`group relative min-h-24 min-w-0 cursor-pointer rounded-xl bg-base-200/40 p-1.5 text-left ${!inMonth ? 'opacity-40' : ''} hover:bg-base-200/50`}>
+ <div key={day.toISOString()} role="button" tabIndex={0} onClick={() => onPickDay(day)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onPickDay(day); }} className={`group relative min-h-24 min-w-0 cursor-pointer rounded-xl bg-base-200 p-1.5 text-left ${!inMonth ? 'opacity-40' : ''} hover:bg-base-200`}>
  <div className="flex items-center justify-between">
  <span className={`inline-flex size-6 items-center justify-center rounded-full text-xs ${isTodayFlag ? 'bg-brand font-bold text-white' : 'font-medium'}`}>{day.getDate()}</span>
  {onCreateAtDate ? (

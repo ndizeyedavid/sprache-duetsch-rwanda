@@ -37,8 +37,8 @@ export function TeacherCourseWorkspace({ levels, academic = false }: { levels: L
   const overview = () => navigate({ level: level.id });
   return <div className="space-y-6">
     <header className="flex flex-wrap items-center justify-between gap-4">
-      <div><p className="mb-1 text-xs font-medium text-base-content/50">{academic ? 'ACADEMIC CURRICULUM' : 'TEACHING WORKSPACE'}</p><h1 className="text-2xl font-semibold">Course studio</h1></div>
-      <label className="flex items-center gap-3 text-sm"><span className="text-base-content/60">Course</span>
+      <div><p className="mb-1 text-xs font-medium text-muted">{academic ? 'ACADEMIC CURRICULUM' : 'TEACHING WORKSPACE'}</p><h1 className="text-2xl font-semibold">Course studio</h1></div>
+      <label className="flex items-center gap-3 text-sm"><span className="text-muted">Course</span>
         <select aria-label="Choose course" className="select max-w-[260px] border-0 bg-base-100" value={level.id} onChange={event => navigate({ level: event.target.value })}>
           {levels.map(item => <option key={item.id} value={item.id}>{item.code} · {item.title}</option>)}
         </select></label>
@@ -52,15 +52,15 @@ export function TeacherCourseWorkspace({ levels, academic = false }: { levels: L
           {selected ? <PreparationLesson key={selected.id} id={selected.id} modulePublished={module.isPublished} moduleTitle={module.title}
             onSaved={modules.refetch} onDirty={setDirty} onDeleted={() => { setDirty(false); setParams({ level: level.id, module: module.id }); modules.refetch(); }}/>
             : <section className="card bg-base-100 p-6 sm:p-8">
-              <div className="flex items-start justify-between gap-3"><div><p className="text-xs text-base-content/50">MODULE {ordered.indexOf(module) + 1}</p><h2 className="mt-2 text-2xl font-semibold">{module.title}</h2></div><button className="btn btn-sm btn-square btn-ghost" aria-label="Edit module" onClick={() => setModuleForm(module)}><FiEdit2 aria-hidden/></button></div>
-              <p className="mt-3 text-sm text-base-content/60">{module.lessons.length} lessons · {module.isPublished ? 'Published' : 'Draft'}</p>
+              <div className="flex items-start justify-between gap-3"><div><p className="text-xs text-muted">MODULE {ordered.indexOf(module) + 1}</p><h2 className="mt-2 text-2xl font-semibold">{module.title}</h2></div><button className="btn btn-sm btn-square btn-ghost" aria-label="Edit module" onClick={() => setModuleForm(module)}><FiEdit2 aria-hidden/></button></div>
+              <p className="mt-3 text-sm text-muted">{module.lessons.length} lessons · {module.isPublished ? 'Published' : 'Draft'}</p>
               <div className="my-10 flex justify-center"><img src="/illustrations/study-books.webp" alt="" width={180} height={150} className="h-36 object-contain"/></div>
               <div className="flex flex-wrap justify-center gap-3">{module.lessons.length ? <button className="btn btn-neutral" onClick={() => select([...module.lessons].sort((a,b)=>a.order-b.order)[0].id, module.id)}>Start preparing<FiArrowRight aria-hidden/></button> : null}<button className="btn border-0" onClick={() => setNewLesson(module.id)}><FiPlus aria-hidden/>New lesson</button></div>
             </section>}
         </div>
       </div>
     ) : <><section className="flex items-center justify-between gap-5 rounded-box bg-neutral px-6 py-6 text-neutral-content sm:px-8">
-      <div><p className="text-sm text-neutral-content/60">{level.code} · {lessonCount} lessons</p><h2 className="mt-2 text-xl font-semibold sm:text-2xl">{academic ? level.title : 'Good lessons start here.'}</h2><p className="mt-2 text-sm text-neutral-content/70">{academic ? `${ordered.length} modules · ${lessonCount} lessons` : 'Choose a module and make it your own.'}</p></div>
+      <div><p className="text-sm text-neutral-content">{level.code} · {lessonCount} lessons</p><h2 className="mt-2 text-xl font-semibold sm:text-2xl">{academic ? level.title : 'Good lessons start here.'}</h2><p className="mt-2 text-sm text-neutral-content">{academic ? `${ordered.length} modules · ${lessonCount} lessons` : 'Choose a module and make it your own.'}</p></div>
       <img src="/illustrations/study-books.webp" alt="" width={130} height={110} className="hidden h-28 w-32 object-contain sm:block"/></section>
       <CourseStudioOverview modules={ordered} onOpen={openModule} onCreate={() => setModuleForm('new')} onEdit={setModuleForm}/></>}
     {moduleForm ? <StudioModuleForm levelId={level.id} module={moduleForm === 'new' ? undefined : moduleForm} onClose={() => setModuleForm(null)} onSaved={modules.refetch}/> : null}

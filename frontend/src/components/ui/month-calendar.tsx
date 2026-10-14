@@ -70,7 +70,7 @@ export function MonthCalendar({
  }`}
  >
  <span
- className={`text-[11px] font-medium ${inMonth ? "text-ink" : "text-muted/30"}`}
+ className={`text-[11px] font-medium ${inMonth ? "text-ink" : "text-muted"}`}
  >
  {day.getDate()}
  </span>

@@ -6,6 +6,10 @@ export type StepIssues = Record<StepId, string | null>;
 export const STEPS: { id: StepId; label: string }[] = [{ id: 'basics', label: 'Basics' }, { id: 'content', label: 'Questions' }, { id: 'settings', label: 'Settings' }];
 
 const after = (a: string | null, b: string | null) => !a || !b || new Date(b) > new Date(a);
+const percent = (v: number) => Number.isFinite(v) && v >= 0 && v <= 100;
+const lateIssue = (d: TaskDraft): string | null =>
+  !Number.isInteger(d.gracePeriodMinutes) || d.gracePeriodMinutes < 0 || d.gracePeriodMinutes > 10080 ? 'Set a grace period between 0 and 10080 minutes (7 days).'
+    : !percent(d.latePenaltyPercentPerDay) || !percent(d.latePenaltyMaxPercent) ? 'Late penalties must be between 0% and 100%.' : null;
 
 /** First problem in each step, so the step bar can show what is left to do. */
 export function stepIssues(d: TaskDraft): StepIssues {
@@ -20,7 +24,8 @@ export function stepIssues(d: TaskDraft): StepIssues {
     : d.rubric.length && Math.abs(rubricTotal - d.maxPoints) > 0.001 ? `Rubric points add up to ${rubricTotal}, but the task is worth ${d.maxPoints}.`
     : d.rubric.some(r => !r.title.trim()) ? 'Give every rubric criterion a name.' : null;
   const settings = homework
-    ? (!after(d.releaseAt, d.dueAt) ? 'The due date must be after the release date.' : d.maxSubmissions < 1 || d.maxSubmissions > 20 ? 'Allow between 1 and 20 submissions.' : null)
+    ? (!after(d.releaseAt, d.dueAt) ? 'The due date must be after the release date.' : d.maxSubmissions < 1 || d.maxSubmissions > 20 ? 'Allow between 1 and 20 submissions.'
+      : d.allowLate ? lateIssue(d) : null)
     : (!after(d.availableFrom, d.availableUntil) ? 'The closing time must be after the opening time.'
       : d.maxAttempts < 1 ? 'Allow at least one attempt.' : d.passMark < 0 || d.passMark > 100 ? 'Set a pass mark between 0 and 100.'
       : d.durationMinutes !== null && d.durationMinutes < 1 ? 'Set a time limit of at least 1 minute, or turn it off.' : null);

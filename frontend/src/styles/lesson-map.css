@@ -1,5 +1,5 @@
 .lesson-map-surface {
-  background-image: radial-gradient(color-mix(in oklab, var(--color-base-content) 9%, transparent) 0.7px, transparent 0.7px);
+  background-image: radial-gradient(var(--color-base-content) 0.7px, transparent 0.7px);
   background-size: 16px 16px;
 }
 

@@ -49,7 +49,7 @@ export function PeopleTable({ rows, onMessage, sendingId }: Props) {
                       className="size-9 rounded-full object-cover"
                     />
                   ) : (
-                    <span className="flex size-9 items-center justify-center rounded-full bg-brand-tint text-xs font-bold text-brand">
+                    <span className="flex size-9 items-center justify-center rounded-full bg-brand text-primary-content text-xs font-bold text-brand">
                       {initials(p.firstName, p.lastName)}
                     </span>
                   )}

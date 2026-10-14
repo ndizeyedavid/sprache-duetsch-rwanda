@@ -94,7 +94,7 @@ export function PaymentRecordPanel({ students, onRecorded }: { students: Student
  {payError}
  </p>
  ) : null}
- <button type="submit" disabled={paySaving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={paySaving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {paySaving ? 'Recording…' : 'Record payment'}
  </button>
  </form>

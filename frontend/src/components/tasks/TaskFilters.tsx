@@ -14,7 +14,7 @@ export function TaskFilters({ items, value, onChange, fetching, onRefresh }: Pro
         {KIND_TABS.map(([kind, label]) => {
           const count = kind ? items.filter(i => i.kind === kind).length : items.length;
           return <button key={kind} type="button" role="tab" aria-selected={value.kind === kind} onClick={() => onChange('kind', kind)}
-            className={`rounded-full px-3 py-1 text-sm ${value.kind === kind ? 'bg-base-100 font-semibold text-brand shadow-sm' : 'text-base-content/70'}`}>{label} <span className="text-xs text-muted">{count}</span></button>;
+            className={`rounded-full px-3 py-1 text-sm ${value.kind === kind ? 'bg-base-100 font-semibold text-brand ' : 'text-muted'}`}>{label} <span className="text-xs text-muted">{count}</span></button>;
         })}
       </div>
       <select aria-label="Status" className="select select-sm w-auto rounded-full" value={value.status} onChange={e => onChange('status', e.target.value)}>

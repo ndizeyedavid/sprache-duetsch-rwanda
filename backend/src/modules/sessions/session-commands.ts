@@ -52,7 +52,7 @@ export async function updateSession(id:string,input:Partial<UpdateSessionInput>,
   if(!before) throw notFound('Session not found');
   await ownClass(before.classGroupId,actorId,role);
   checkSessionChange(before,input);
-  if(input.status==='CANCELLED') return cancelSession(id,{reason:undefined},actorId,role);
+  if(input.status==='CANCELLED') return cancelSession(id,{reason},actorId,role);
   const startAt=input.startAt??before.startAt,endAt=input.endAt??before.endAt,mode=input.mode??before.mode;
   validateTiming(startAt,endAt,mode,input.meetingUrl===undefined?before.meetingUrl:input.meetingUrl);
   const moved=startAt.getTime()!==before.startAt.getTime()||endAt.getTime()!==before.endAt.getTime();
@@ -72,7 +72,7 @@ export async function cancelSession(id:string,input:CancelSessionInput,actorId?:
   await ownClass(before.classGroupId,actorId,role);
   if(before.status==='CANCELLED') return before;
   if(before.status==='COMPLETED'||before.endAt<=new Date()) throw conflict('Past or completed classes cannot be cancelled.');
-  const row=await transact(tx => tx.classSession.update({where:{id,updatedAt:before.updatedAt},data:{status:'CANCELLED'}}));
+  const row=await transact(tx => tx.classSession.update({where:{id,updatedAt:before.updatedAt},data:{status:'CANCELLED',cancelReason:input.reason??null}}));
   await audit('SESSION_CANCELLED',row,actorId,before,input.reason);
   await notifySessionChange(row,'Class cancelled',input.reason);
   return row;

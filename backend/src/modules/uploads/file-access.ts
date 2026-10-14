@@ -3,12 +3,14 @@ import { AppError, forbidden } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
 import { assertTeacherLevel } from "../../lib/teacher-levels.js";
 import type { AuthUser } from "../../types/auth.js";
+import { lessonsWithActivityMedia,teacherCanReviewActivityFile } from "../content/activity-file-access.js";
 import { assertLessonAvailable } from "../content/lesson-availability.js";
 
 export async function assertFileAccess(user: AuthUser, name: string) {
   const file = await prisma.uploadedFile.findUnique({ where: { name } });
   if (file?.uploaderId === user.id || ["SUPER_ADMIN", "ACADEMIC_ADMIN"].includes(user.role)) return;
   if (user.role === "FINANCE_ADMIN") throw forbidden("Learning resources are unavailable to this role");
+  if (user.role === "TEACHER" && file && await teacherCanReviewActivityFile(user.id, file)) return;
   const suffix = `/api/uploads/${name}`;
   const books = await prisma.level.findMany({ where: { coursebookUrl: { endsWith: suffix } }, select: { id: true } });
   for (const book of books) {
@@ -22,7 +24,7 @@ export async function assertFileAccess(user: AuthUser, name: string) {
     { videoUrl: { endsWith: suffix } }, { audioUrl: { endsWith: suffix } },
     { materials: { some: { url: { endsWith: suffix } } } }, { body: { contains: suffix } },
   ] }, select: { id: true, module: { select: { levelId: true } } } });
-  for (const lesson of lessons) {
+  for (const lesson of [...lessons, ...await lessonsWithActivityMedia(suffix)]) {
     try {
       if (user.role === "TEACHER") await assertTeacherLevel(user.id, lesson.module.levelId);
       else await assertLessonAvailable(user.id, lesson.id);

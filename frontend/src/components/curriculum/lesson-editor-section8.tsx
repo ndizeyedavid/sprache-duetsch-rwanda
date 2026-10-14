@@ -92,7 +92,7 @@ return (<div className="overflow-hidden rounded-box border border-line bg-base-1
   onSaved,
   )
   }
-  className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60"
+  className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60"
   >
   {busy ? <span className="loading loading-spinner loading-xs" /> : null} Save lesson
   </button>
@@ -100,7 +100,7 @@ return (<div className="overflow-hidden rounded-box border border-line bg-base-1
   type="button"
   disabled={busy}
   onClick={() => onRun(() => deleteLesson(lessonId), 'Could not delete the lesson.', onDeleted)}
-  className="btn btn-sm gap-1 rounded-full border-0 bg-coral text-white hover:bg-coral/90 disabled:opacity-60"
+  className="btn btn-sm gap-1 rounded-full border-0 bg-coral text-white hover:bg-coral hover:text-error-content disabled:opacity-60"
   >
   {busy ? <span className="loading loading-spinner loading-xs" /> : <FiTrash2 aria-hidden />} Delete lesson
   </button>

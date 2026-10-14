@@ -42,19 +42,19 @@ export function TaskStudio({ target, scope, classes, levels, onClose, onSaved }:
     <div className="space-y-4">
       <StudioTopBar draft={d} existing={!!target.id} dirty={studio.dirty} saving={studio.saving} onBack={back} onPreview={() => setPreviewOpen(true)} onSave={publish => void save(publish)} />
       <StudioSteps step={step} issues={issues} onStep={setStep} homeworkWork={d.kind === 'HOMEWORK' && d.homeworkMode === 'work'} />
-      {studio.locked ? <p className="rounded-box bg-warning/10 px-4 py-2 text-xs">Students have submitted work, so the instructions and questions are locked. Dates and limits can still change.</p> : null}
-      {notice || studio.error ? <p role="alert" className="rounded-box bg-error/10 px-4 py-2 text-sm text-error">{notice || studio.error}</p> : null}
+      {studio.locked ? <p className="rounded-box bg-warning text-warning-content px-4 py-2 text-xs">Students have submitted work, so the instructions and questions are locked. Dates and limits can still change.</p> : null}
+      {notice || studio.error ? <p role="alert" className="rounded-box bg-error text-error-content px-4 py-2 text-sm text-error">{notice || studio.error}</p> : null}
       <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(360px,440px)]">
-        <section className="card min-w-0 border border-base-300/70 bg-base-100 p-4 sm:p-6">
+        <section className="card min-w-0 border border-base-300 bg-base-100 p-4 sm:p-6">
           {step === 'basics' ? <BasicsStep draft={d} update={studio.update} switchKind={studio.switchKind} creating={!target.id} locked={studio.locked} classes={classes} levels={levels} />
             : step === 'content' ? <ContentStep draft={d} update={studio.update} locked={studio.locked} />
             : <SettingsStep draft={d} update={studio.update} locked={studio.locked} existing={!!target.id} />}
-          <div className="mt-6 flex justify-between border-t border-base-300/70 pt-4">
+          <div className="mt-6 flex justify-between border-t border-base-300 pt-4">
             <button type="button" className="btn btn-ghost btn-sm rounded-full" disabled={index === 0} onClick={() => setStep(STEPS[index - 1].id)}><FiArrowLeft aria-hidden />Back</button>
             {index < STEPS.length - 1 ? <button type="button" className="btn btn-sm rounded-full" onClick={() => setStep(STEPS[index + 1].id)}>Next<FiArrowRight aria-hidden /></button> : null}
           </div>
         </section>
-        <aside className="sticky top-4 hidden max-h-[calc(100vh-2rem)] overflow-y-auto rounded-box bg-base-200/60 p-3 xl:block" aria-label="Student preview">
+        <aside className="sticky top-4 hidden max-h-[calc(100vh-2rem)] overflow-y-auto rounded-box bg-base-200 p-3 xl:block" aria-label="Student preview">
           <p className="mb-2 px-1 text-xs font-semibold uppercase tracking-[0.15em] text-muted">Student view</p>{preview}
         </aside>
       </div>

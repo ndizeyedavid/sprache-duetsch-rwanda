@@ -18,7 +18,7 @@ export function StudioNewLesson({ moduleId, onClose, onCreated }: { moduleId: st
       <fieldset><legend className="mb-2 text-sm font-medium">Start with</legend><div className="grid grid-cols-3 gap-3">
         {[{type:'TEXT',label:'Reading',Icon:FiBookOpen},{type:'VIDEO',label:'Video',Icon:FiVideo},{type:'AUDIO',label:'Listening',Icon:FiHeadphones}].map(item => <button type="button" key={item.type} aria-pressed={type === item.type} onClick={() => setType(item.type)} className={`flex flex-col items-center gap-3 rounded-box p-5 text-sm ${type === item.type ? 'bg-neutral text-neutral-content' : 'bg-base-200'}`}><item.Icon size={22} aria-hidden/>{item.label}</button>)}
       </div></fieldset>
-      <p className="text-xs text-base-content/60">Your lesson stays a draft until you publish it.</p>
+      <p className="text-xs text-muted">Your lesson stays a draft until you publish it.</p>
       {error ? <p role="alert" className="text-sm text-error">{error}</p> : null}
       <div className="flex justify-end gap-2"><button type="button" className="btn btn-ghost" disabled={busy} onClick={close}>Cancel</button><button className="btn btn-neutral" disabled={busy}>{busy ? 'Creating…' : 'Create lesson'}</button></div>
     </form>

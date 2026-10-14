@@ -5,6 +5,7 @@ loadStudentAccessProfile
 } from "../../lib/access.js";
 import { forbidden,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
+import { presentSubmission } from "./activity-review.js";
 import { sanitizeActivityConfig } from "./assignment-config.js";
 import { assertLessonAvailable } from "./lesson-availability.js";
 export const getStudentLesson = async (userId: string, lessonId: string) => {
@@ -63,8 +64,8 @@ export const getStudentLesson = async (userId: string, lessonId: string) => {
   const submissionByActivityId = new Map(mySubmissions.map((s) => [s.activityId, s]));
   const activitiesWithMy = lesson.activities.map((a) => ({
     ...a,
-    config: sanitizeActivityConfig(a.config, a.type),
-    mySubmission: submissionByActivityId.has(a.id) ? { ...submissionByActivityId.get(a.id)!, ...(a.config && typeof a.config === "object" && !Array.isArray(a.config) && a.config.practiceMode === true ? { practiceFeedback: a.config } : {}) } : null,
+    config: sanitizeActivityConfig(a.config, a.type, a.id),
+    mySubmission: submissionByActivityId.has(a.id) ? presentSubmission(submissionByActivityId.get(a.id)!, a) : null,
   }));
 
   return {

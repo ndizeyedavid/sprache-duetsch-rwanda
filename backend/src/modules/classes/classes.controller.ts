@@ -1,7 +1,7 @@
 import type { Request,Response } from "express";
 import { assertTeacherOwnsClass } from "../../lib/access.js";
 import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
-import type { CreateClassInput,ListClassQuery,UpdateClassInput } from "./classes.schema.js";
+import type { AttendanceThresholdQuery,CreateClassInput,ListClassQuery,UpdateClassInput } from "./classes.schema.js";
 import * as service from "./classes.service.js";
 
 export const list = async (req: Request, res: Response): Promise<void> => {
@@ -36,4 +36,9 @@ export const remove = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
   const classGroup = await service.deleteClass(id, actorId(req));
   res.json({ success: true, data: classGroup });
+};
+
+export const attendanceThreshold = async (req: Request, res: Response): Promise<void> => {
+  const { levelId } = validatedQuery<AttendanceThresholdQuery>(req);
+  res.json({ success: true, data: await service.getInheritedThreshold(levelId) });
 };

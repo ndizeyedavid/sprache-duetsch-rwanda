@@ -55,7 +55,7 @@ export function JoinIntake({ onJoined }: { onJoined: () => void }) {
             </option>)}
           </select>
         </label>
-        <button className="btn h-12 rounded-full border-0 bg-brand px-6 text-white hover:bg-brand/90" disabled={busy || !level} type="submit">
+        <button className="btn h-12 rounded-full border-0 bg-brand px-6 text-white hover:bg-brand hover:text-primary-content" disabled={busy || !level} type="submit">
           {busy ? 'Joining…' : 'Join course'}
         </button>
       </form>

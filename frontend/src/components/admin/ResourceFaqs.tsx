@@ -82,7 +82,7 @@ export function ResourceFaqs({ isStaff }: { isStaff: boolean }) {
  {formError}
  </p>
  ) : null}
- <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={saving} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  Add FAQ
  </button>
  </form>

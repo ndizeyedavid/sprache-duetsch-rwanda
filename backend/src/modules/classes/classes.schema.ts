@@ -14,6 +14,8 @@ export const createClassSchema = z.object({
   capacity: z.coerce.number().int().positive().optional(),
   room: nullableText(60),
   isActive: z.boolean().optional(),
+  /** Low-attendance alert threshold (%) for this class; null inherits the level, then the system default. */
+  attendanceAlertThreshold: z.number().int().min(0).max(100).nullable().optional(),
 });
 
 export const updateClassSchema = createClassSchema.partial().refine(
@@ -32,8 +34,11 @@ export const listClassQuerySchema = z.object({
   ...paginationQuery,
 });
 
+export const attendanceThresholdQuerySchema = z.object({ levelId: z.string().min(1) });
+
 export const classIdSchema = idParam;
 
 export type CreateClassInput = z.infer<typeof createClassSchema>;
 export type UpdateClassInput = z.infer<typeof updateClassSchema>;
 export type ListClassQuery = z.infer<typeof listClassQuerySchema>;
+export type AttendanceThresholdQuery = z.infer<typeof attendanceThresholdQuerySchema>;

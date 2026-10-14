@@ -49,7 +49,7 @@ export function AcademicReports() {
             key={report.file}
             onClick={() => download(report)}
             disabled={working !== null}
-            className="btn h-auto min-h-11 w-full justify-start gap-3 rounded-box border-base-300/60 bg-base-100 p-3 text-left font-normal"
+            className="btn h-auto min-h-11 w-full justify-start gap-3 rounded-box border-base-300 bg-base-100 p-3 text-left font-normal"
           >
             <FiFileText aria-hidden className="shrink-0" />
             <span className="flex-1">

@@ -27,7 +27,7 @@ export function ProfilePhotoPicker({ url, name, disabled, onSaved }: Props) {
         {url ? <img src={profilePhotoUrl(url)} alt={`${name} profile photo`} className="object-cover" /> : <span>{name.split(' ').map(part => part[0]).slice(0, 2).join('')}</span>}
       </div></div>
       <div className="min-w-0 flex-1"><h3 className="text-sm font-semibold">Your profile photo</h3>
-        <p className="mt-1 text-xs leading-5 text-base-content/60">JPG, PNG or WebP, up to 5 MB. Photos are resized for faster loading.</p>
+        <p className="mt-1 text-xs leading-5 text-muted">JPG, PNG or WebP, up to 5 MB. Photos are resized for faster loading.</p>
         <div className="mt-3 flex flex-wrap gap-2">
           <button className="btn btn-sm min-h-10" type="button" disabled={locked} onClick={() => input.current?.click()}>
             {busy ? <span className="loading loading-spinner loading-xs" aria-hidden /> : <FiCamera aria-hidden />}{url ? 'Change photo' : 'Upload photo'}</button>
@@ -36,7 +36,7 @@ export function ProfilePhotoPicker({ url, name, disabled, onSaved }: Props) {
         <input ref={input} type="file" accept="image/jpeg,image/png,image/webp" className="hidden" disabled={locked} aria-label="Choose profile photo" onChange={event => {
           const file = event.currentTarget.files?.[0]; event.currentTarget.value = ''; if (file) void save(file);
         }} />
-        <p className="mt-2 text-xs text-base-content/60">Photo changes save automatically.</p>
+        <p className="mt-2 text-xs text-muted">Photo changes save automatically.</p>
       </div>
     </div>
     {error ? <p className="mt-3 text-sm text-error" role="alert">{error}</p> : null}

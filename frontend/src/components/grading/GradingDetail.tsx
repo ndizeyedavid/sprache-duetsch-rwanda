@@ -47,7 +47,7 @@ export function GradingDetail({ selectedId, loading, error, data, onRetry, index
 
  return (
  <div>
- <div className="sticky top-0 z-10 -mx-5 -mt-5 mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-line bg-base-100/80 px-5 py-3 backdrop-blur">
+ <div className="sticky top-0 z-10 -mx-5 -mt-5 mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-line bg-base-100 px-5 py-3 ">
  <div className="min-w-0">
  <h2 className="truncate text-sm font-bold leading-tight">{data.assessment.title}</h2>
  <p className="flex flex-wrap items-center gap-2 text-xs text-muted">
@@ -64,12 +64,12 @@ export function GradingDetail({ selectedId, loading, error, data, onRetry, index
  </div>
 
   <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
-  <span className="rounded-full bg-brand-soft px-3 py-1 font-semibold text-[#B30A00]"><FiAward aria-hidden className="inline" /> {earned} / {possible} pts</span>
+  <span className="rounded-full bg-brand text-primary-content px-3 py-1 font-semibold text-[#B30A00]"><FiAward aria-hidden className="inline" /> {earned} / {possible} pts</span>
   {data.score != null ? <span className="rounded-full bg-base-200 px-3 py-1 font-medium">{data.score} scored</span> : null}
-  {data.passed != null ? <span className={`rounded-full px-3 py-1 font-medium ${data.passed ? 'bg-brand-soft text-[#B30A00]' : 'bg-coral-soft text-[#D8482F]'}`}>{data.passed ? 'Passed' : 'Not passed'}</span> : null}
-  {data.cheatFlagged ? <span className="rounded-full bg-error px-3 py-1 font-bold text-white">Flagged · {data.cheatCount ?? 3} violations</span> : data.cheatCount ? <span className="rounded-full bg-warning/20 px-3 py-1 font-medium text-warning">{data.cheatCount} violations</span> : null}
+  {data.passed != null ? <span className={`rounded-full px-3 py-1 font-medium ${data.passed ? 'bg-brand text-primary-content text-[#B30A00]' : 'bg-coral text-error-content text-[#D8482F]'}`}>{data.passed ? 'Passed' : 'Not passed'}</span> : null}
+  {data.cheatFlagged ? <span className="rounded-full bg-error px-3 py-1 font-bold text-white">Flagged · {data.cheatCount ?? 3} violations</span> : data.cheatCount ? <span className="rounded-full bg-warning text-warning-content px-3 py-1 font-medium text-warning">{data.cheatCount} violations</span> : null}
   </div>
-  {data.cheatLog && data.cheatLog.length ? <p className="mb-3 rounded-box bg-error/10 px-3 py-2 text-xs font-medium text-error">Cheat log: {data.cheatLog.map((v) => `${v.type} @ ${new Date(v.at).toLocaleTimeString()}`).join(" · ")}</p> : null}
+  {data.cheatLog && data.cheatLog.length ? <p className="mb-3 rounded-box bg-error text-error-content px-3 py-2 text-xs font-medium text-error">Cheat log: {data.cheatLog.map((v) => `${v.type} @ ${new Date(v.at).toLocaleTimeString()}`).join(" · ")}</p> : null}
 
  {!hasAnswers ? <EmptyBlock title="No answers" hint="This attempt has no recorded answers." /> : (
  <ul className="space-y-3">
@@ -79,17 +79,17 @@ export function GradingDetail({ selectedId, loading, error, data, onRetry, index
  </ul>
  )}
 
- <div className="mt-5 space-y-3 rounded-box border border-line bg-base-200/30 p-4">
+ <div className="mt-5 space-y-3 rounded-box border border-line bg-base-200 p-4">
  <label className="block"><span className="mb-1.5 block text-xs font-semibold">Overall feedback (visible to student)</span><textarea value={overall} onChange={(e) => onOverall(e.currentTarget.value)} placeholder="Great work — watch the dative after 'mit'…" rows={3} className="textarea w-full rounded-box border-line bg-base-100 text-sm" /></label>
  <label className="flex cursor-pointer items-center gap-3 rounded-box border border-line bg-base-100 p-3">
  <input type="checkbox" className="toggle toggle-sm border-line bg-base-200 checked:bg-brand checked:border-brand" checked={passed} onChange={(e) => onPassed(e.currentTarget.checked)} />
  <span className="text-sm font-medium">Mark as passed</span>
  <span className="ml-auto text-xs text-muted">{passed ? 'Student will see Passed' : 'Not passed'}</span>
  </label>
- {saveError ? <p role="alert" className="rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">{saveError}</p> : null}
- {saved ? <p role="status" className="rounded-box bg-brand-soft px-3 py-2 text-xs font-medium text-[#B30A00]">Grade saved ✓</p> : null}
+ {saveError ? <p role="alert" className="rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]">{saveError}</p> : null}
+ {saved ? <p role="status" className="rounded-box bg-brand text-primary-content px-3 py-2 text-xs font-medium text-[#B30A00]">Grade saved ✓</p> : null}
  <div className="flex flex-wrap gap-2">
- <button type="button" disabled={saving} onClick={onSave} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">{saving ? <span className="loading loading-spinner loading-xs" /> : null}Save grade</button>
+ <button type="button" disabled={saving} onClick={onSave} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">{saving ? <span className="loading loading-spinner loading-xs" /> : null}Save grade</button>
  <button type="button" disabled={saving} onClick={onSaveAndNext} className="btn btn-sm rounded-full border-line bg-base-100 disabled:opacity-60">Save & next →</button>
  </div>
  </div>

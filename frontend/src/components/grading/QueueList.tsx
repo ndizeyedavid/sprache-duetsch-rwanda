@@ -30,7 +30,7 @@ export function QueueList({ attempts, loading, error, onRetry, filter, onFilter,
  const m = FILTER_META[name];
  const active = filter === name;
  return (
- <button key={name} type="button" onClick={() => onFilter(name)} aria-pressed={active} className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition ${active ? 'border-brand bg-brand text-white' : 'border-line bg-base-100 text-muted hover:border-brand/20 hover:text-ink'}`}>
+ <button key={name} type="button" onClick={() => onFilter(name)} aria-pressed={active} className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition ${active ? 'border-brand bg-brand text-white' : 'border-line bg-base-100 text-muted hover:border-brand hover:text-ink'}`}>
  <m.icon aria-hidden className="text-xs" />{m.label}
  </button>
  );
@@ -56,7 +56,7 @@ export function QueueList({ attempts, loading, error, onRetry, filter, onFilter,
  const tc = TONE_CLASSES[tone];
  return (
  <li key={a.id}>
- <button type="button" onClick={() => onPick(a.id)} className={`flex w-full gap-3 rounded-box border p-3 text-left transition ${active ? 'border-brand bg-brand-soft' : 'border-line bg-base-100 hover:border-brand/20 hover:'}`}>
+ <button type="button" onClick={() => onPick(a.id)} className={`flex w-full gap-3 rounded-box border p-3 text-left transition ${active ? 'border-brand bg-brand text-primary-content' : 'border-line bg-base-100 hover:border-brand hover:'}`}>
  <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-base-200 text-xs font-bold">{initials(a.student.user.firstName, a.student.user.lastName)}</span>
  <span className="min-w-0 grow">
  <span className="block truncate text-xs font-semibold leading-tight">{a.assessment.title}</span>
@@ -64,7 +64,7 @@ export function QueueList({ attempts, loading, error, onRetry, filter, onFilter,
   <span className="mt-1 flex flex-wrap items-center gap-1.5">
   <span className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${tc.soft} ${tc.text}`}>{humanize(a.status)}</span>
   <span className="text-[11px] text-muted">{a.score != null ? `${a.score} pts` : isoDate(a.submittedAt) ?? '—'}</span>
-  {a.cheatFlagged ? <span className="rounded-full bg-error px-2 py-0.5 text-[11px] font-bold text-white">Flagged · {a.cheatCount ?? 3}</span> : a.cheatCount ? <span className="rounded-full bg-warning/20 px-2 py-0.5 text-[11px] font-medium text-warning">{a.cheatCount} violations</span> : null}
+  {a.cheatFlagged ? <span className="rounded-full bg-error px-2 py-0.5 text-[11px] font-bold text-white">Flagged · {a.cheatCount ?? 3}</span> : a.cheatCount ? <span className="rounded-full bg-warning text-warning-content px-2 py-0.5 text-[11px] font-medium text-warning">{a.cheatCount} violations</span> : null}
   </span>
  </span>
  {active ? <FiInbox aria-hidden className="shrink-0 text-brand" /> : null}

@@ -47,7 +47,7 @@ export function TeacherCard({ teacher, className = '' }: TeacherCardProps) {
  </div>
  <button
  type="button"
- className="btn btn-sm mt-4 w-full rounded-full border-0 bg-brand text-white hover:bg-brand/90"
+ className="btn btn-sm mt-4 w-full rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content"
  >
  View Class
  </button>

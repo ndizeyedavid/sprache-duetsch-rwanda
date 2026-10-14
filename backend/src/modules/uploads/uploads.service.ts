@@ -2,6 +2,7 @@ import multer from "multer";
 import { randomUUID } from "node:crypto";
 import { mkdirSync } from "node:fs";
 import path from "node:path";
+import { EXTENSION_BY_MIME } from "../../lib/file-signature.js";
 
 // Disk storage for teacher-uploaded materials (audio, images, PDFs, worksheets).
 // Files live under ./uploads (gitignored) and are served through an
@@ -29,8 +30,8 @@ export const upload = multer({
   storage: multer.diskStorage({
     destination: UPLOAD_DIR,
     filename: (_req, file, callback) => {
-      const ext = path.extname(file.originalname).toLowerCase();
-      callback(null, `${Date.now()}-${randomUUID()}${ext}`);
+      // The client's filename is never trusted: an ".html" upload must not be served as HTML.
+      callback(null, `${Date.now()}-${randomUUID()}${EXTENSION_BY_MIME[file.mimetype] ?? ""}`);
     },
   }),
   limits: { fileSize: MAX_FILE_BYTES },

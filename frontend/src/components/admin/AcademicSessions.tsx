@@ -42,7 +42,7 @@ export function AcademicSessions() {
             <Link
               key={s.id}
               to={`/admin/live-class?session=${s.id}`}
-              className="group flex gap-3 rounded-box border border-base-300/60 p-3 transition hover:bg-base-200/50"
+              className="group flex gap-3 rounded-box border border-base-300 p-3 transition hover:bg-base-200"
             >
               <span className="flex w-12 shrink-0 flex-col items-center justify-center rounded-xl bg-base-200 text-xs">
                 <strong className="text-lg">
@@ -54,11 +54,11 @@ export function AcademicSessions() {
               </span>
               <div className="min-w-0 flex-1">
                 <p className="text-xs font-semibold">{s.title}</p>
-                <p className="mt-1 text-[11px] text-base-content/60">
+                <p className="mt-1 text-[11px] text-muted">
                   {s.classGroup?.name ?? "All learners"} ·{" "}
                   {teacherName(s.teacher)}
                 </p>
-                <p className="mt-2 flex items-center gap-1 text-[11px] text-base-content/60">
+                <p className="mt-2 flex items-center gap-1 text-[11px] text-muted">
                   <FiClock aria-hidden />
                   {isoDate(s.startAt)} · {isoTime(s.startAt)}
                   <span className="badge badge-ghost badge-xs ml-auto">

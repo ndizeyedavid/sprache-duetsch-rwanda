@@ -29,6 +29,7 @@ export const submitAttempt = async (
         select: {
           id: true,
           levelId: true,
+          type: true,
           passMark: true,
           durationMinutes: true,
           protectedMode: true,
@@ -46,6 +47,7 @@ export const submitAttempt = async (
   if (!attempt || attempt.studentId !== profile.studentId) {
     throw notFound("Attempt not found");
   }
+  if (attempt.assessment.type === "PLACEMENT") throw badRequest("Submit the placement test from the Placement test page");
 
   await assertLevelAccess(userId, attempt.assessment.levelId);
   assertPaymentAccess(profile, "ASSESSMENT");

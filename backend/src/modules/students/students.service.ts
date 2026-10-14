@@ -7,6 +7,5 @@ export { getStudent } from './get-student.js';
 export { getStudentAttendance } from './get-student-attendance.js';
 export { getStudentProgress } from './get-student-progress.js';
 export { listStudents } from './list-students.js';
-export { runPlacement } from './run-placement.js';
 export { updateStudent } from './update-student.js';
 export { withoutMoney } from './without-money.js';

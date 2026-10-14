@@ -11,7 +11,7 @@ export function ScheduleSpotlight({ sessions, onOpen, teacher = false }: { sessi
         <h2 className="mt-2 max-w-xl text-xl font-semibold leading-snug sm:text-2xl">{next?.title ?? (teacher ? 'No class scheduled yet.' : 'No class scheduled yet.')}</h2>
         {next ? <><p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs opacity-80"><span className="inline-flex items-center gap-1.5"><FiClock />{format(new Date(next.startAt), 'EEE d MMM · HH:mm')}–{format(new Date(next.endAt), 'HH:mm')}</span><span>{next.mode === 'ONSITE' ? next.room ?? 'On campus' : 'Online class'}</span></p><button type="button" onClick={() => onOpen(next.id)} className="btn btn-sm mt-4 rounded-full border-0 bg-neutral-content text-neutral">{teacher ? 'Prepare for class' : 'View class details'}<FiArrowUpRight /></button></> : <p className="mt-3 max-w-lg text-sm leading-6 opacity-75">{teacher ? 'Plan a focused session and give your students something to look forward to.' : 'Your live classes will appear below. Until then, keep building your German with your course lessons.'}</p>}
       </div>
-      <div className="hidden shrink-0 items-center justify-center rounded-full bg-neutral-content/10 sm:flex sm:size-36"><img src="/illustrations/course-learner.webp" alt="" className="h-36 w-32 object-contain" /></div>
+      <div className="hidden shrink-0 items-center justify-center rounded-full bg-neutral-content sm:flex sm:size-36"><img src="/illustrations/course-learner.webp" alt="" className="h-36 w-32 object-contain" /></div>
     </div>
   </div>;
 }

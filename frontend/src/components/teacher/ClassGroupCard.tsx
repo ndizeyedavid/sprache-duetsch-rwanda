@@ -142,7 +142,7 @@ export function ClassGroupCard({
  </div>
 
  <div className="mt-4 flex gap-2">
- <Link to={`/teacher/classes/${id}/people`} className="btn btn-sm grow gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90">
+ <Link to={`/teacher/classes/${id}/people`} className="btn btn-sm grow gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">
  <FiUsers aria-hidden />
  People
  </Link>

@@ -14,3 +14,7 @@ export const Profile = lazyPage(() => import("../pages/student/Profile").then((m
 export const Messages = lazyPage(() => import("../pages/shared/Messages").then((module) => module.Messages));
 export const Activity = lazyPage(() => import("../pages/shared/Activity").then((module) => module.Activity));
 export const Settings = lazyPage(() => import("../pages/shared/Settings").then((module) => module.Settings));
+export const Notes = lazyPage(() => import("../pages/student/Notes").then((module) => module.Notes));
+export const Payments = lazyPage(() => import("../pages/student/Payments").then((module) => module.Payments));
+export const Notifications = lazyPage(() => import("../pages/shared/Notifications").then((module) => module.Notifications));
+export const Placement = lazyPage(() => import("../pages/student/Placement").then((module) => module.Placement));

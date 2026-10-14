@@ -18,7 +18,7 @@
   outline: none;
 }
 .studio-notes .tiptap p.is-editor-empty:first-child::before {
-  color: color-mix(in oklab, var(--color-base-content) 45%, transparent);
+  color: var(--color-base-content);
   content: attr(data-placeholder);
   float: left;
   height: 0;

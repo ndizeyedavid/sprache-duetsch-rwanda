@@ -18,7 +18,7 @@ export function NotificationDeliveries() {
     {state.loading ? <p role="status" className="text-sm">Loading delivery status…</p> : null}
     {state.data && !state.data.emailConfigured ? <p role="alert" className="alert alert-warning text-sm">Email is not configured. Recovery and reminder emails stay queued until delivery is configured.</p> : null}
     {error || state.error ? <p role="alert" className="text-sm text-error">{error ?? state.error}</p> : null}
-    {state.data?.deliveries.length === 0 ? <p className="text-xs text-base-content/60">No pending or failed emails.</p> : null}
+    {state.data?.deliveries.length === 0 ? <p className="text-xs text-muted">No pending or failed emails.</p> : null}
     <ul className="space-y-2">{state.data?.deliveries.map(row => <li key={row.id} className="flex flex-wrap items-center justify-between gap-2 rounded-box bg-base-200 p-3 text-xs"><span>{row.email} · {row.status} · {row.attempts} attempts{row.lastError ? <span className="mt-1 block break-all text-error">{row.lastError}</span> : null}</span>{row.status === 'FAILED' ? <button className="btn btn-xs" disabled={busy === row.id} onClick={() => void retry(row.id)}>Retry</button> : null}</li>)}</ul>
   </section>;
 }

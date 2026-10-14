@@ -32,7 +32,7 @@ export function LevelApprovalChips({
               key={level.id}
               className={`flex items-center gap-2 rounded-full border py-2 pr-3 pl-2.5 text-xs font-medium transition-colors ${affordance} ${
                 checked
-                  ? 'border-brand bg-brand-soft text-brand-soft-ink'
+                  ? 'border-brand bg-brand text-primary-content text-brand-soft-ink'
                   : 'border-line bg-base-100 text-muted'
               }`}
             >

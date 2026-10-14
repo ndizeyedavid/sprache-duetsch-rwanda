@@ -58,7 +58,7 @@ return (<Panel>
         {attemptsFiltered.error || exportError ? (
           <p
             role="alert"
-            className="mt-2 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]"
+            className="mt-2 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]"
           >
             {attemptsFiltered.error ?? exportError}
           </p>

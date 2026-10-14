@@ -9,7 +9,7 @@ export const seedClasses = async (params: {
 }) => {
   const { levelIds, intakeIds, campusIds, staffIds } = params;
   const byLevel = new Map<string, string>();
-  const campusId = campusIds.get("REMERA")!;
+  const campusId = campusIds.get("NORRSKEN")!;
   const intakeId = intakeIds.get("INTAKE-2026-09")!;
 
   for (const level of levels) {

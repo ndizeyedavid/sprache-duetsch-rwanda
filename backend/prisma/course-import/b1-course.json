@@ -1,0 +1,5558 @@
+{
+  "source": {
+    "file": "deutschsprache-b1.html",
+    "sha256": "69c94f3d2534ef27aa4715530edaa4f74fa9a5bf6f15cdfbbed2864a1eafb866"
+  },
+  "meta": {
+    "titel": "Deutsch B1 — Kursprogramm",
+    "untertitel": "24 Lektionen in 8 Modulen · GER-Niveau B1",
+    "niveau": "B1",
+    "sprachen": [
+      "de",
+      "en",
+      "fr"
+    ],
+    "herausgeber": "deutshsprache.org",
+    "version": "1.0",
+    "stand": "2026-10-10",
+    "hero": {
+      "id": "photo-1528728329032-2972f65dfb3f",
+      "alt": "Berlin bei Nacht aus der Luft",
+      "fotograf": "Stephan Widua",
+      "profil": "https://unsplash.com/@stephanwidua"
+    },
+    "hinweis": "Alle Texte, Beispielsätze, Wortschatzlisten und Übungen dieses Kurses sind Originalmaterial für deutshsprache.org. Der Kurs orientiert sich an der üblichen B1-Progression des Gemeinsamen Europäischen Referenzrahmens; er enthält keine Inhalte aus urheberrechtlich geschützten Lehrwerken.",
+    "bildquelle": "Alle Fotos: Unsplash (unsplash.com/license)"
+  },
+  "module": [
+    {
+      "nr": 1,
+      "titel": "Menschen und Alltag",
+      "beschreibung": "Freundschaften beschreiben, den eigenen Werdegang erzählen und die eigene Wohnsituation darstellen.",
+      "lektionen": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "nr": 2,
+      "titel": "Service und Zukunft",
+      "beschreibung": "Sich beschweren, Prognosen formulieren und als Gast oder Gastgeber souverän auftreten.",
+      "lektionen": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "nr": 3,
+      "titel": "Entscheidungen",
+      "beschreibung": "Rat geben und annehmen, Berufswege begründen und über Gesundheit sprechen.",
+      "lektionen": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "nr": 4,
+      "titel": "Rückblick",
+      "beschreibung": "Bedauern ausdrücken, Glücksmomente erzählen und Betriebsfeiern organisieren.",
+      "lektionen": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "nr": 5,
+      "titel": "Kommunikation und Karriere",
+      "beschreibung": "Missverständnisse klären, Weiterbildung wählen und sich professionell bewerben.",
+      "lektionen": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "nr": 6,
+      "titel": "Leben und Gesellschaft",
+      "beschreibung": "Von früher erzählen, Biografien zusammenfassen und politisch Stellung beziehen.",
+      "lektionen": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "nr": 7,
+      "titel": "Unterwegs",
+      "beschreibung": "Reisen planen, Regeln verstehen und Veranstaltungen vorbereiten.",
+      "lektionen": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "nr": 8,
+      "titel": "Welt im Wandel",
+      "beschreibung": "Geschichte berichten, über Klimaschutz diskutieren und Zukunftsvisionen entwickeln.",
+      "lektionen": [
+        22,
+        23,
+        24
+      ]
+    }
+  ],
+  "lektionen": [
+    {
+      "nr": 1,
+      "modul": 1,
+      "thema": "Freundschaft",
+      "titel": "Die Netten, die Klugen, die Verrückten",
+      "kurz": "Über Menschen sprechen, die uns wichtig sind — und Eigenschaften zu Nomen machen.",
+      "bild": {
+        "id": "photo-1511988617509-a57c8a288659",
+        "alt": "Vier Freunde lachen zusammen draußen",
+        "fotograf": "Helena Lopes",
+        "profil": "https://unsplash.com/@wildlittlethingsphoto"
+      },
+      "lernziele": [
+        "eine Freundschaft beschreiben und sagen, warum sie wichtig ist",
+        "Eigenschaften von Menschen als Nomen benutzen (der Nette, die Kluge)",
+        "maskuline Nomen der n-Deklination korrekt deklinieren"
+      ],
+      "grammatik": [
+        {
+          "titel": "Adjektive als Nomen",
+          "erklaerung": "Fast jedes Adjektiv kann ein Nomen werden. Es wird großgeschrieben und bekommt trotzdem die normale Adjektivendung — so, als stünde das Nomen noch dahinter: der nette (Mann) → der Nette.",
+          "tabelle": {
+            "kopf": [
+              "",
+              "Nominativ",
+              "Akkusativ",
+              "Dativ"
+            ],
+            "zeilen": [
+              [
+                "maskulin",
+                "der Nette / ein Netter",
+                "den Netten / einen Netten",
+                "dem Netten / einem Netten"
+              ],
+              [
+                "feminin",
+                "die Nette / eine Nette",
+                "die Nette / eine Nette",
+                "der Netten / einer Netten"
+              ],
+              [
+                "Plural",
+                "die Netten / – Nette",
+                "die Netten / – Nette",
+                "den Netten / – Netten"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Der Kluge in unserer Gruppe ist Samuel — er löst jedes Problem.",
+              "hinweis": "der + Adjektiv + e"
+            },
+            {
+              "de": "Ich habe gestern einen Bekannten aus meinem Kurs getroffen.",
+              "hinweis": "einen + Adjektiv + en"
+            },
+            {
+              "de": "Mit den Verwandten meiner Frau verstehe ich mich sehr gut.",
+              "hinweis": "Dativ Plural: -en"
+            }
+          ],
+          "tipp": "Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende."
+        },
+        {
+          "titel": "n-Deklination",
+          "erklaerung": "Eine kleine Gruppe maskuliner Nomen bekommt in allen Fällen außer dem Nominativ Singular ein -n oder -en.",
+          "tabelle": {
+            "kopf": [
+              "",
+              "Singular",
+              "Plural"
+            ],
+            "zeilen": [
+              [
+                "Nominativ",
+                "der Kollege",
+                "die Kollegen"
+              ],
+              [
+                "Akkusativ",
+                "den Kollegen",
+                "die Kollegen"
+              ],
+              [
+                "Dativ",
+                "dem Kollegen",
+                "den Kollegen"
+              ],
+              [
+                "Genitiv",
+                "des Kollegen",
+                "der Kollegen"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Ich habe meinen Nachbarn um Hilfe gebeten.",
+              "hinweis": "Akkusativ: der Nachbar → den Nachbarn"
+            },
+            {
+              "de": "Der Name des Praktikanten steht auf der Liste.",
+              "hinweis": "Genitiv: -en"
+            },
+            {
+              "de": "Wir sprechen mit dem Studenten über sein Projekt.",
+              "hinweis": "Dativ: -en"
+            }
+          ],
+          "tipp": "Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Freundschaft, -en",
+          "en": "friendship",
+          "fr": "l'amitié",
+          "beispiel": "Unsere Freundschaft hält schon seit der Schulzeit."
+        },
+        {
+          "wort": "sich verlassen auf (+ Akk.)",
+          "en": "to rely on",
+          "fr": "compter sur",
+          "beispiel": "Auf meine beste Freundin kann ich mich immer verlassen."
+        },
+        {
+          "wort": "zuverlässig",
+          "en": "reliable",
+          "fr": "fiable",
+          "beispiel": "Er ist der zuverlässigste Mensch, den ich kenne."
+        },
+        {
+          "wort": "großzügig",
+          "en": "generous",
+          "fr": "généreux",
+          "beispiel": "Sie ist sehr großzügig mit ihrer Zeit."
+        },
+        {
+          "wort": "ehrlich",
+          "en": "honest",
+          "fr": "honnête",
+          "beispiel": "Sei bitte ehrlich zu mir."
+        },
+        {
+          "wort": "der/die Bekannte, -n",
+          "en": "acquaintance",
+          "fr": "une connaissance",
+          "beispiel": "Eine Bekannte hat mir die Wohnung empfohlen."
+        },
+        {
+          "wort": "streiten (stritt, gestritten)",
+          "en": "to argue",
+          "fr": "se disputer",
+          "beispiel": "Wir streiten selten, und wenn, dann kurz."
+        },
+        {
+          "wort": "sich versöhnen",
+          "en": "to make up, reconcile",
+          "fr": "se réconcilier",
+          "beispiel": "Nach einer Stunde haben wir uns wieder versöhnt."
+        },
+        {
+          "wort": "die Eigenschaft, -en",
+          "en": "quality, trait",
+          "fr": "la qualité, le trait",
+          "beispiel": "Humor ist für mich die wichtigste Eigenschaft."
+        },
+        {
+          "wort": "vertrauen (+ Dat.)",
+          "en": "to trust",
+          "fr": "faire confiance à",
+          "beispiel": "Ich vertraue meinem Kollegen vollkommen."
+        },
+        {
+          "wort": "gemeinsam",
+          "en": "together, joint",
+          "fr": "ensemble, commun",
+          "beispiel": "Wir haben viele gemeinsame Interessen."
+        },
+        {
+          "wort": "der Streit (Sg.)",
+          "en": "quarrel",
+          "fr": "la dispute",
+          "beispiel": "Der Streit war schnell vergessen."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "eine Person charakterisieren",
+          "saetze": [
+            "Was ich an ihr besonders schätze, ist …",
+            "Sie ist jemand, auf den man sich hundertprozentig verlassen kann.",
+            "Typisch für ihn ist, dass er immer zuhört."
+          ]
+        },
+        {
+          "funktion": "über eine Freundschaft erzählen",
+          "saetze": [
+            "Wir kennen uns seit …",
+            "Kennengelernt haben wir uns, als …",
+            "Was uns verbindet, ist …"
+          ]
+        },
+        {
+          "funktion": "zustimmen / widersprechen",
+          "saetze": [
+            "Da bin ich ganz deiner Meinung.",
+            "Das sehe ich etwas anders.",
+            "Stimmt schon, aber …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Gestern habe ich ___ Bekannten von früher getroffen. (ein)",
+          "loesung": [
+            "einen"
+          ],
+          "erklaerung": "Akkusativ maskulin: einen + Adjektivendung -en → einen Bekannten."
+        },
+        {
+          "typ": "mc",
+          "frage": "Ich habe lange mit ___ gesprochen.",
+          "optionen": [
+            "dem Nachbar",
+            "dem Nachbarn",
+            "den Nachbar"
+          ],
+          "loesung": "dem Nachbarn",
+          "erklaerung": "Nachbar gehört zur n-Deklination: im Dativ Singular steht -n."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ Kluge in unserer Klasse hilft allen anderen. (bestimmter Artikel, maskulin)",
+          "loesung": [
+            "Der"
+          ],
+          "erklaerung": "Nominativ maskulin mit bestimmtem Artikel: der Kluge."
+        },
+        {
+          "typ": "mc",
+          "frage": "Der Chef hat den Namen ___ vergessen.",
+          "optionen": [
+            "des Praktikanten",
+            "des Praktikant",
+            "dem Praktikanten"
+          ],
+          "loesung": "des Praktikanten",
+          "erklaerung": "Genitiv Singular der n-Deklination: des Praktikanten."
+        },
+        {
+          "typ": "gap",
+          "frage": "Wir haben gestern mit vielen ___ gesprochen. (Jugendliche)",
+          "loesung": [
+            "Jugendlichen"
+          ],
+          "erklaerung": "Dativ Plural nach 'vielen': Adjektiv-Nomen endet auf -en."
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "modul": 1,
+      "thema": "Beruf und Arbeit",
+      "titel": "Damals arbeitete sie in einem kleinen Büro",
+      "kurz": "Über den beruflichen Werdegang erzählen — schriftlich, in der Vergangenheit.",
+      "bild": {
+        "id": "photo-1522071820081-009f0129c71c",
+        "alt": "Ein Team arbeitet gemeinsam an Laptops an einem Tisch",
+        "fotograf": "Annie Spratt",
+        "profil": "https://unsplash.com/@anniespratt"
+      },
+      "lernziele": [
+        "einen Lebenslauf und eine Berufsbiografie schriftlich erzählen",
+        "das Präteritum regelmäßiger, unregelmäßiger und gemischter Verben bilden",
+        "Präteritum und Perfekt richtig unterscheiden"
+      ],
+      "grammatik": [
+        {
+          "titel": "Präteritum",
+          "erklaerung": "Das Präteritum ist die Erzählvergangenheit: Man benutzt es vor allem schriftlich — in Berichten, Biografien, Zeitungstexten und Geschichten. Im Gespräch benutzt man dagegen meistens das Perfekt. Ausnahme: sein, haben, werden und die Modalverben stehen auch mündlich im Präteritum.",
+          "tabelle": {
+            "kopf": [
+              "",
+              "regelmäßig (arbeiten)",
+              "unregelmäßig (gehen)",
+              "gemischt (bringen)"
+            ],
+            "zeilen": [
+              [
+                "ich",
+                "arbeitete",
+                "ging",
+                "brachte"
+              ],
+              [
+                "du",
+                "arbeitetest",
+                "gingst",
+                "brachtest"
+              ],
+              [
+                "er/es/sie",
+                "arbeitete",
+                "ging",
+                "brachte"
+              ],
+              [
+                "wir",
+                "arbeiteten",
+                "gingen",
+                "brachten"
+              ],
+              [
+                "ihr",
+                "arbeitetet",
+                "gingt",
+                "brachtet"
+              ],
+              [
+                "sie/Sie",
+                "arbeiteten",
+                "gingen",
+                "brachten"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Nach dem Studium bewarb sie sich bei einer kleinen Agentur.",
+              "hinweis": "unregelmäßig: sich bewerben → bewarb"
+            },
+            {
+              "de": "Drei Jahre lang leitete er das Team in Hamburg.",
+              "hinweis": "regelmäßig: -te"
+            },
+            {
+              "de": "Die Firma kannte er schon aus seinem Praktikum.",
+              "hinweis": "gemischt: kennen → kannte"
+            }
+          ],
+          "tipp": "Merkhilfe: ich und er/es/sie haben im Präteritum immer dieselbe Form — ohne Endung bei unregelmäßigen Verben (ich ging / er ging)."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "der Lebenslauf, ¨-e",
+          "en": "CV, résumé",
+          "fr": "le CV",
+          "beispiel": "Bitte schicken Sie uns Ihren Lebenslauf."
+        },
+        {
+          "wort": "die Ausbildung, -en",
+          "en": "vocational training",
+          "fr": "la formation",
+          "beispiel": "Sie machte eine Ausbildung zur Kauffrau."
+        },
+        {
+          "wort": "sich bewerben um / bei",
+          "en": "to apply for / at",
+          "fr": "postuler pour / chez",
+          "beispiel": "Er bewarb sich bei einem großen Betrieb."
+        },
+        {
+          "wort": "die Stelle, -n",
+          "en": "job, position",
+          "fr": "le poste",
+          "beispiel": "Die Stelle war befristet."
+        },
+        {
+          "wort": "der Betrieb, -e",
+          "en": "company, plant",
+          "fr": "l'entreprise",
+          "beispiel": "Der Betrieb hat 200 Mitarbeiter."
+        },
+        {
+          "wort": "erledigen",
+          "en": "to get done, handle",
+          "fr": "effectuer, régler",
+          "beispiel": "Sie erledigte ihre Aufgaben sehr sorgfältig."
+        },
+        {
+          "wort": "zuständig sein für",
+          "en": "to be responsible for",
+          "fr": "être responsable de",
+          "beispiel": "Ich war für den Einkauf zuständig."
+        },
+        {
+          "wort": "kündigen",
+          "en": "to quit / give notice",
+          "fr": "démissionner, licencier",
+          "beispiel": "Nach zwei Jahren kündigte er."
+        },
+        {
+          "wort": "befördern",
+          "en": "to promote",
+          "fr": "promouvoir",
+          "beispiel": "2019 wurde sie zur Abteilungsleiterin befördert."
+        },
+        {
+          "wort": "die Erfahrung, -en",
+          "en": "experience",
+          "fr": "l'expérience",
+          "beispiel": "Dort sammelte er erste Erfahrungen im Vertrieb."
+        },
+        {
+          "wort": "der Schichtdienst (Sg.)",
+          "en": "shift work",
+          "fr": "le travail posté",
+          "beispiel": "Schichtdienst war für sie sehr anstrengend."
+        },
+        {
+          "wort": "selbstständig",
+          "en": "self-employed; independent",
+          "fr": "indépendant",
+          "beispiel": "Seit 2021 ist er selbstständig."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "eine Berufsbiografie erzählen",
+          "saetze": [
+            "Nach der Schule absolvierte sie zunächst …",
+            "Anschließend arbeitete er einige Jahre als …",
+            "Schließlich wechselte sie in die Branche …"
+          ]
+        },
+        {
+          "funktion": "Zeit strukturieren",
+          "saetze": [
+            "Zunächst … / Danach … / Schließlich …",
+            "Zwei Jahre später …",
+            "Von 2015 bis 2018 …"
+          ]
+        },
+        {
+          "funktion": "ein Arbeitszeugnis formulieren",
+          "saetze": [
+            "Sie erledigte ihre Aufgaben stets zuverlässig.",
+            "Er war für … zuständig.",
+            "Wir bedauern ihr Ausscheiden sehr."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Nach der Ausbildung ___ sie drei Jahre in Leipzig. (arbeiten, Präteritum)",
+          "loesung": [
+            "arbeitete"
+          ],
+          "erklaerung": "Regelmäßiges Verb: Stamm arbeit- + -ete (wegen -t am Stammende)."
+        },
+        {
+          "typ": "gap",
+          "frage": "Er ___ 2018 nach München und begann dort ein Studium. (ziehen, Präteritum)",
+          "loesung": [
+            "zog"
+          ],
+          "erklaerung": "Unregelmäßig: ziehen – zog – gezogen."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz passt in einen schriftlichen Lebensbericht?",
+          "optionen": [
+            "Dann bin ich nach Berlin gegangen.",
+            "Dann ging ich nach Berlin.",
+            "Dann gehe ich nach Berlin."
+          ],
+          "loesung": "Dann ging ich nach Berlin.",
+          "erklaerung": "Schriftliche Erzählung → Präteritum."
+        },
+        {
+          "typ": "gap",
+          "frage": "Die Firma ___ ihm damals ein gutes Angebot. (machen, Präteritum)",
+          "loesung": [
+            "machte"
+          ],
+          "erklaerung": "Regelmäßig: mach- + -te."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welche Form ist das Präteritum von 'bringen'?",
+          "optionen": [
+            "bringte",
+            "brachte",
+            "brang"
+          ],
+          "loesung": "brachte",
+          "erklaerung": "Gemischtes Verb: Vokalwechsel + Endung -te."
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "modul": 1,
+      "thema": "Wohnen",
+      "titel": "Das ist das Zimmer, in dem ich am liebsten sitze",
+      "kurz": "Die eigene Wohnung genau beschreiben — mit Relativsätzen, die eine Präposition brauchen.",
+      "bild": {
+        "id": "photo-1541194577687-8c63bf9e7ee3",
+        "alt": "Helles Wohnzimmer mit Sofa, Couchtisch und großem Fenster",
+        "fotograf": "Christian Lambert",
+        "profil": "https://unsplash.com/@christianlambert"
+      },
+      "lernziele": [
+        "Räume, Möbel und Wohnsituationen detailliert beschreiben",
+        "Relativsätze mit Präpositionen bilden",
+        "wo- und wohin-Relativsätze bei Orten verwenden"
+      ],
+      "grammatik": [
+        {
+          "titel": "Relativsätze mit Präpositionen",
+          "erklaerung": "Wenn das Verb im Relativsatz eine Präposition verlangt, steht diese vor dem Relativpronomen. Die Präposition bestimmt den Kasus des Relativpronomens — das Genus und der Numerus kommen vom Bezugswort.",
+          "tabelle": {
+            "kopf": [
+              "Präposition + Kasus",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "mit Akkusativ",
+                "Das ist der Sessel, für den ich lange gespart habe."
+              ],
+              [
+                "mit Dativ",
+                "Das ist das Regal, auf dem meine Bücher stehen."
+              ],
+              [
+                "Plural Dativ",
+                "Das sind die Nachbarn, mit denen wir oft grillen."
+              ],
+              [
+                "Ort → wo",
+                "Das ist die Küche, wo wir meistens sitzen."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Der Balkon, auf dem ich jeden Morgen frühstücke, ist winzig.",
+              "hinweis": "auf + Dativ (Ort)"
+            },
+            {
+              "de": "Die Wohnung, in die wir nächsten Monat ziehen, hat drei Zimmer.",
+              "hinweis": "in + Akkusativ (Richtung)"
+            },
+            {
+              "de": "Das ist der Vermieter, über den sich alle beschweren.",
+              "hinweis": "sich beschweren über + Akkusativ"
+            }
+          ],
+          "tipp": "Bei Städten und Ländern benutzt man immer wo / wohin: Kigali ist die Stadt, wo ich aufgewachsen bin. (nicht: in der)"
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Miete, -n",
+          "en": "rent",
+          "fr": "le loyer",
+          "beispiel": "Die Miete ist in den letzten Jahren stark gestiegen."
+        },
+        {
+          "wort": "der Vermieter, - / die Vermieterin, -nen",
+          "en": "landlord/landlady",
+          "fr": "le/la propriétaire",
+          "beispiel": "Unser Vermieter reagiert leider sehr langsam."
+        },
+        {
+          "wort": "die Nebenkosten (Pl.)",
+          "en": "utilities, service charges",
+          "fr": "les charges",
+          "beispiel": "Die Nebenkosten sind nicht in der Miete enthalten."
+        },
+        {
+          "wort": "der Stock / die Etage, -n",
+          "en": "floor, storey",
+          "fr": "l'étage",
+          "beispiel": "Wir wohnen im dritten Stock."
+        },
+        {
+          "wort": "gemütlich",
+          "en": "cosy",
+          "fr": "confortable, douillet",
+          "beispiel": "Mit der Lampe wirkt das Zimmer viel gemütlicher."
+        },
+        {
+          "wort": "die Aussicht (Sg.)",
+          "en": "view",
+          "fr": "la vue",
+          "beispiel": "Vom Balkon hat man eine tolle Aussicht."
+        },
+        {
+          "wort": "umziehen (zog um, umgezogen)",
+          "en": "to move house",
+          "fr": "déménager",
+          "beispiel": "Nächsten Monat ziehen wir um."
+        },
+        {
+          "wort": "die WG, -s (Wohngemeinschaft)",
+          "en": "shared flat",
+          "fr": "la colocation",
+          "beispiel": "Als Student wohnte er in einer WG."
+        },
+        {
+          "wort": "renovieren",
+          "en": "to renovate",
+          "fr": "rénover",
+          "beispiel": "Wir haben die Küche selbst renoviert."
+        },
+        {
+          "wort": "der Stadtrand (Sg.)",
+          "en": "outskirts",
+          "fr": "la périphérie",
+          "beispiel": "Am Stadtrand ist es ruhiger und billiger."
+        },
+        {
+          "wort": "die Nachbarschaft, -en",
+          "en": "neighbourhood",
+          "fr": "le voisinage",
+          "beispiel": "In unserer Nachbarschaft hilft man sich."
+        },
+        {
+          "wort": "eng",
+          "en": "narrow, cramped",
+          "fr": "étroit",
+          "beispiel": "Der Flur ist ziemlich eng."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "eine Wohnung beschreiben",
+          "saetze": [
+            "Die Wohnung liegt im … Stock und hat …",
+            "Besonders gefällt mir der Raum, in dem …",
+            "Was mich stört, ist …"
+          ]
+        },
+        {
+          "funktion": "Vor- und Nachteile nennen",
+          "saetze": [
+            "Einerseits …, andererseits …",
+            "Der größte Vorteil ist, dass …",
+            "Nachteilig ist allerdings, dass …"
+          ]
+        },
+        {
+          "funktion": "Wünsche äußern",
+          "saetze": [
+            "Am liebsten hätte ich eine Wohnung, in der …",
+            "Ich suche etwas, was …",
+            "Wichtig wäre mir vor allem …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Das ist das Fenster, ___ ___ man den Berg sieht. (durch)",
+          "loesung": [
+            "durch das"
+          ],
+          "erklaerung": "durch + Akkusativ, Bezugswort 'das Fenster' (neutrum) → durch das."
+        },
+        {
+          "typ": "mc",
+          "frage": "Das sind die Freunde, ___ ich oft koche.",
+          "optionen": [
+            "mit die",
+            "mit denen",
+            "mit der"
+          ],
+          "loesung": "mit denen",
+          "erklaerung": "mit + Dativ, Plural → denen."
+        },
+        {
+          "typ": "gap",
+          "frage": "Kigali ist die Stadt, ___ ich geboren bin.",
+          "loesung": [
+            "wo"
+          ],
+          "erklaerung": "Bei Städten und Ländern benutzt man wo."
+        },
+        {
+          "typ": "mc",
+          "frage": "Das ist der Schrank, ___ ich seit Jahren ärgere.",
+          "optionen": [
+            "über den ich mich",
+            "über dem ich mich",
+            "worüber mich"
+          ],
+          "loesung": "über den ich mich",
+          "erklaerung": "sich ärgern über + Akkusativ, maskulin → über den."
+        },
+        {
+          "typ": "gap",
+          "frage": "Das Haus, ___ ___ wir nächste Woche einziehen, ist noch nicht fertig. (in)",
+          "loesung": [
+            "in das"
+          ],
+          "erklaerung": "einziehen in + Akkusativ (Richtung), neutrum → in das."
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "modul": 2,
+      "thema": "Kundenservice",
+      "titel": "Obwohl ich dreimal angerufen habe, …",
+      "kurz": "Sich beschweren und reklamieren — höflich, aber bestimmt.",
+      "bild": {
+        "id": "photo-1553775282-20af80779df7",
+        "alt": "Headset und Laptop auf einem Schreibtisch im Kundenservice",
+        "fotograf": "Petr Macháček",
+        "profil": "https://unsplash.com/@machec"
+      },
+      "lernziele": [
+        "eine Reklamation mündlich und schriftlich formulieren",
+        "unerwartete Gegensätze mit obwohl und trotzdem ausdrücken",
+        "auf eine Beschwerde angemessen reagieren"
+      ],
+      "grammatik": [
+        {
+          "titel": "obwohl und trotzdem",
+          "erklaerung": "Beide drücken einen unerwarteten Gegensatz aus. Der Unterschied liegt im Satzbau: obwohl leitet einen Nebensatz ein (Verb am Ende), trotzdem steht in einem Hauptsatz auf Position 1 (Verb auf Position 2).",
+          "tabelle": {
+            "kopf": [
+              "Konnektor",
+              "Satztyp",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "obwohl",
+                "Nebensatz: Verb am Ende",
+                "Ich habe keine Antwort bekommen, obwohl ich dreimal geschrieben habe."
+              ],
+              [
+                "obwohl (vorangestellt)",
+                "Nebensatz zuerst → Verb-Verb-Kontakt",
+                "Obwohl ich dreimal geschrieben habe, habe ich keine Antwort bekommen."
+              ],
+              [
+                "trotzdem",
+                "Hauptsatz: Position 1",
+                "Ich habe dreimal geschrieben. Trotzdem habe ich keine Antwort bekommen."
+              ],
+              [
+                "Alternativen",
+                "Hauptsatz",
+                "dennoch, allerdings, aber"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Obwohl das Gerät neu ist, funktioniert es nicht richtig.",
+              "hinweis": "Nebensatz vorn → Hauptsatz beginnt mit dem Verb"
+            },
+            {
+              "de": "Das Gerät ist neu. Trotzdem funktioniert es nicht richtig.",
+              "hinweis": "trotzdem = Position 1, Verb auf Position 2"
+            },
+            {
+              "de": "Ich habe die Rechnung bezahlt, obwohl die Lieferung unvollständig war.",
+              "hinweis": "Nebensatz hinten"
+            }
+          ],
+          "tipp": "Nicht verwechseln: trotz ist eine Präposition mit Genitiv (trotz des Regens), trotzdem ist ein Adverb im Hauptsatz."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Reklamation, -en",
+          "en": "complaint (about goods)",
+          "fr": "la réclamation",
+          "beispiel": "Ihre Reklamation wird bearbeitet."
+        },
+        {
+          "wort": "sich beschweren über (+ Akk.)",
+          "en": "to complain about",
+          "fr": "se plaindre de",
+          "beispiel": "Ich möchte mich über die Lieferzeit beschweren."
+        },
+        {
+          "wort": "der Mangel, ¨-",
+          "en": "defect, fault",
+          "fr": "le défaut",
+          "beispiel": "Das Gerät weist mehrere Mängel auf."
+        },
+        {
+          "wort": "umtauschen",
+          "en": "to exchange",
+          "fr": "échanger",
+          "beispiel": "Kann ich die Schuhe umtauschen?"
+        },
+        {
+          "wort": "erstatten",
+          "en": "to refund",
+          "fr": "rembourser",
+          "beispiel": "Wir erstatten Ihnen den vollen Betrag."
+        },
+        {
+          "wort": "die Garantie, -n",
+          "en": "warranty",
+          "fr": "la garantie",
+          "beispiel": "Die Garantie gilt zwei Jahre."
+        },
+        {
+          "wort": "die Lieferung, -en",
+          "en": "delivery",
+          "fr": "la livraison",
+          "beispiel": "Die Lieferung kam drei Wochen zu spät."
+        },
+        {
+          "wort": "bearbeiten",
+          "en": "to process, deal with",
+          "fr": "traiter",
+          "beispiel": "Wir bearbeiten Ihren Fall sofort."
+        },
+        {
+          "wort": "der Ansprechpartner, -",
+          "en": "contact person",
+          "fr": "l'interlocuteur",
+          "beispiel": "Wer ist mein Ansprechpartner?"
+        },
+        {
+          "wort": "enttäuscht sein von",
+          "en": "to be disappointed by",
+          "fr": "être déçu de",
+          "beispiel": "Ich bin von Ihrem Service sehr enttäuscht."
+        },
+        {
+          "wort": "die Frist, -en",
+          "en": "deadline",
+          "fr": "le délai",
+          "beispiel": "Ich setze Ihnen eine Frist von 14 Tagen."
+        },
+        {
+          "wort": "ärgerlich",
+          "en": "annoying",
+          "fr": "agaçant",
+          "beispiel": "Das ist wirklich sehr ärgerlich."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Problem schildern",
+          "saetze": [
+            "Ich wende mich an Sie, weil …",
+            "Leider muss ich Ihnen mitteilen, dass …",
+            "Die Ware kam beschädigt bei mir an."
+          ]
+        },
+        {
+          "funktion": "Forderung stellen",
+          "saetze": [
+            "Ich fordere Sie auf, … bis zum … zu …",
+            "Bitte bestätigen Sie mir schriftlich, dass …",
+            "Ich erwarte eine Rückerstattung des Kaufpreises."
+          ]
+        },
+        {
+          "funktion": "auf eine Beschwerde reagieren",
+          "saetze": [
+            "Das tut mir außerordentlich leid.",
+            "Ich kümmere mich persönlich darum.",
+            "Als Entschuldigung bieten wir Ihnen … an."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "mc",
+          "frage": "___ ich mehrmals angerufen habe, hat sich niemand gemeldet.",
+          "optionen": [
+            "Trotzdem",
+            "Obwohl",
+            "Trotz"
+          ],
+          "loesung": "Obwohl",
+          "erklaerung": "Am Satzanfang mit folgendem Nebensatz (Verb am Ende) steht obwohl."
+        },
+        {
+          "typ": "gap",
+          "frage": "Die Rechnung war bezahlt. ___ bekam ich eine Mahnung.",
+          "loesung": [
+            "Trotzdem"
+          ],
+          "erklaerung": "Zwei Hauptsätze → trotzdem auf Position 1, Verb auf Position 2."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist grammatisch korrekt?",
+          "optionen": [
+            "Obwohl es regnete, wir sind gegangen.",
+            "Obwohl es regnete, sind wir gegangen.",
+            "Obwohl regnete es, sind wir gegangen."
+          ],
+          "loesung": "Obwohl es regnete, sind wir gegangen.",
+          "erklaerung": "Nach einem vorangestellten Nebensatz folgt sofort das konjugierte Verb des Hauptsatzes."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich habe das Paket nicht erhalten, ___ die Firma die Lieferung bestätigt hat.",
+          "loesung": [
+            "obwohl"
+          ],
+          "erklaerung": "Nebensatz mit Verb am Ende → obwohl."
+        },
+        {
+          "typ": "mc",
+          "frage": "___ des schlechten Wetters fand das Fest statt.",
+          "optionen": [
+            "Trotzdem",
+            "Obwohl",
+            "Trotz"
+          ],
+          "loesung": "Trotz",
+          "erklaerung": "Vor einem Nomen im Genitiv steht die Präposition trotz."
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "modul": 2,
+      "thema": "Zukunft",
+      "titel": "In zehn Jahren wird vieles anders sein",
+      "kurz": "Vorhersagen treffen, Vermutungen äußern und Versprechen geben.",
+      "bild": {
+        "id": "photo-1752742111841-f490c48aa668",
+        "alt": "Beleuchtete futuristische Stadtlandschaft bei Nacht",
+        "fotograf": "Markus Stickling",
+        "profil": "https://unsplash.com/@markusstickling"
+      },
+      "lernziele": [
+        "über die Zukunft sprechen und Prognosen formulieren",
+        "Futur I korrekt bilden und verwenden",
+        "erkennen, wann Präsens + Zeitangabe reicht"
+      ],
+      "grammatik": [
+        {
+          "titel": "Zukunft: Präsens oder Futur I?",
+          "erklaerung": "Für sichere, geplante Ereignisse benutzt man im Deutschen fast immer das Präsens mit einer Zeitangabe. Das Futur I (werden + Infinitiv) benutzt man für Vorhersagen, Vermutungen, Versprechen und starke Aufforderungen.",
+          "tabelle": {
+            "kopf": [
+              "Funktion",
+              "Form",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "sicheres Ereignis / Plan",
+                "Präsens + Zeitangabe",
+                "Morgen fliege ich nach Kigali."
+              ],
+              [
+                "Vorhersage / Vermutung",
+                "Futur I",
+                "Die Preise werden weiter steigen."
+              ],
+              [
+                "Versprechen / Vorsatz",
+                "Futur I",
+                "Ich werde dich nie wieder enttäuschen."
+              ],
+              [
+                "Aufforderung (streng)",
+                "Futur I",
+                "Du wirst jetzt sofort dein Zimmer aufräumen!"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Bald werden die meisten Autos elektrisch fahren.",
+              "hinweis": "werden konjugiert, Infinitiv am Satzende"
+            },
+            {
+              "de": "Wahrscheinlich wird es morgen regnen.",
+              "hinweis": "Vermutung — oft mit wahrscheinlich, wohl, vermutlich"
+            },
+            {
+              "de": "Nächste Woche beginnt der neue Kurs.",
+              "hinweis": "sicheres Ereignis → Präsens"
+            }
+          ],
+          "tipp": "Vermutungen über die Gegenwart gehen auch mit Futur I: Sie wird wohl noch im Büro sein. (= Sie ist wahrscheinlich noch im Büro.)"
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Vorhersage, -n",
+          "en": "prediction, forecast",
+          "fr": "la prévision",
+          "beispiel": "Seine Vorhersage war völlig falsch."
+        },
+        {
+          "wort": "die Entwicklung, -en",
+          "en": "development",
+          "fr": "le développement",
+          "beispiel": "Die technische Entwicklung geht rasant weiter."
+        },
+        {
+          "wort": "voraussichtlich",
+          "en": "probably, expected",
+          "fr": "probablement",
+          "beispiel": "Das Projekt dauert voraussichtlich ein Jahr."
+        },
+        {
+          "wort": "der Fortschritt, -e",
+          "en": "progress",
+          "fr": "le progrès",
+          "beispiel": "Der medizinische Fortschritt rettet Leben."
+        },
+        {
+          "wort": "ersetzen",
+          "en": "to replace",
+          "fr": "remplacer",
+          "beispiel": "Maschinen werden viele Tätigkeiten ersetzen."
+        },
+        {
+          "wort": "künstliche Intelligenz (Sg.)",
+          "en": "artificial intelligence",
+          "fr": "l'intelligence artificielle",
+          "beispiel": "Künstliche Intelligenz verändert die Arbeitswelt."
+        },
+        {
+          "wort": "vermutlich",
+          "en": "presumably",
+          "fr": "vraisemblablement",
+          "beispiel": "Vermutlich wird das teurer als geplant."
+        },
+        {
+          "wort": "sich verändern",
+          "en": "to change",
+          "fr": "changer",
+          "beispiel": "Die Städte werden sich stark verändern."
+        },
+        {
+          "wort": "die Prognose, -n",
+          "en": "forecast",
+          "fr": "le pronostic",
+          "beispiel": "Die Prognose für dieses Jahr ist positiv."
+        },
+        {
+          "wort": "zunehmen (nahm zu, zugenommen)",
+          "en": "to increase",
+          "fr": "augmenter",
+          "beispiel": "Der Verkehr wird weiter zunehmen."
+        },
+        {
+          "wort": "abnehmen (nahm ab, abgenommen)",
+          "en": "to decrease",
+          "fr": "diminuer",
+          "beispiel": "Die Zahl der Beschäftigten nimmt ab."
+        },
+        {
+          "wort": "der Trend, -s",
+          "en": "trend",
+          "fr": "la tendance",
+          "beispiel": "Der Trend geht klar zum Homeoffice."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Vorhersagen",
+          "saetze": [
+            "Ich bin überzeugt, dass … eine große Rolle spielen wird.",
+            "In zehn Jahren wird es … geben.",
+            "Es ist zu erwarten, dass …"
+          ]
+        },
+        {
+          "funktion": "Vermutungen abschwächen",
+          "saetze": [
+            "Das wird wohl noch etwas dauern.",
+            "Möglicherweise wird sich das ändern.",
+            "Ich könnte mir vorstellen, dass …"
+          ]
+        },
+        {
+          "funktion": "Versprechen geben",
+          "saetze": [
+            "Ich werde mich darum kümmern.",
+            "Das werde ich nicht vergessen.",
+            "Darauf können Sie sich verlassen."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "In zwanzig Jahren ___ wir ganz anders arbeiten. (werden)",
+          "loesung": [
+            "werden"
+          ],
+          "erklaerung": "Futur I: werden (konjugiert) + Infinitiv am Ende."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz drückt ein sicheres, geplantes Ereignis aus?",
+          "optionen": [
+            "Nächsten Montag beginnt mein Praktikum.",
+            "Die Welt wird sich verändern.",
+            "Das wird wohl teuer."
+          ],
+          "loesung": "Nächsten Montag beginnt mein Praktikum.",
+          "erklaerung": "Präsens + Zeitangabe steht für feste Pläne."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich verspreche dir: Ich ___ dich morgen ___. (anrufen, Futur I)",
+          "loesung": [
+            "werde anrufen",
+            "werde ... anrufen"
+          ],
+          "erklaerung": "werde + Infinitiv anrufen am Satzende."
+        },
+        {
+          "typ": "mc",
+          "frage": "Sie ist nicht am Platz. Sie ___ wohl in einer Besprechung sein.",
+          "optionen": [
+            "wird",
+            "werde",
+            "wurde"
+          ],
+          "loesung": "wird",
+          "erklaerung": "Vermutung über die Gegenwart mit Futur I: sie wird … sein."
+        },
+        {
+          "typ": "gap",
+          "frage": "Die Mieten ___ in den nächsten Jahren weiter ___. (steigen, Futur I)",
+          "loesung": [
+            "werden steigen",
+            "werden ... steigen"
+          ],
+          "erklaerung": "Vorhersage → Futur I."
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "modul": 2,
+      "thema": "Einladungen",
+      "titel": "Falls Sie etwas nicht essen, sagen Sie bitte Bescheid",
+      "kurz": "Gastgeber und Gast sein — Bedingungen nennen und höflich formulieren.",
+      "bild": {
+        "id": "photo-1659690402718-ea07d943fd42",
+        "alt": "Freunde genießen gemeinsam ein Essen am gedeckten Tisch",
+        "fotograf": "Andrew Amelianovich",
+        "profil": "https://unsplash.com/@tvoygerasim"
+      },
+      "lernziele": [
+        "einladen, zusagen und höflich absagen",
+        "Bedingungen mit falls und wenn ausdrücken",
+        "Wünsche und Bitten mit Konjunktiv II höflich formulieren"
+      ],
+      "grammatik": [
+        {
+          "titel": "Konjunktion falls",
+          "erklaerung": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+          "tabelle": {
+            "kopf": [
+              "",
+              "falls",
+              "wenn"
+            ],
+            "zeilen": [
+              [
+                "Bedingung, eher unwahrscheinlich",
+                "Falls es regnet, essen wir drinnen.",
+                "Wenn es regnet, essen wir drinnen."
+              ],
+              [
+                "wiederholtes Ereignis",
+                "— nicht möglich",
+                "Wenn wir uns treffen, kochen wir."
+              ],
+              [
+                "Zeitpunkt in der Zukunft",
+                "— nicht möglich",
+                "Wenn ich ankomme, rufe ich dich an."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Falls Sie eine Allergie haben, sagen Sie mir bitte rechtzeitig Bescheid.",
+              "hinweis": "Nebensatz vorn → Verb des Hauptsatzes direkt danach"
+            },
+            {
+              "de": "Wir können später gehen, falls du noch arbeiten musst.",
+              "hinweis": "Nebensatz hinten"
+            },
+            {
+              "de": "Falls es Ihnen nichts ausmacht, würde ich lieber Wasser trinken.",
+              "hinweis": "falls + höflicher Konjunktiv II"
+            }
+          ],
+          "tipp": "Höfliche Wünsche beim Einladen: Ich hätte gern …, Ich würde lieber …, Wäre es möglich, dass …?, Es wäre schön, wenn …"
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "der Gastgeber, - / die Gastgeberin, -nen",
+          "en": "host",
+          "fr": "l'hôte",
+          "beispiel": "Die Gastgeberin begrüßte alle an der Tür."
+        },
+        {
+          "wort": "das Gastgeschenk, -e",
+          "en": "host gift",
+          "fr": "le cadeau d'invité",
+          "beispiel": "In Deutschland bringt man oft Blumen als Gastgeschenk mit."
+        },
+        {
+          "wort": "zusagen / absagen",
+          "en": "to accept / to cancel",
+          "fr": "accepter / annuler",
+          "beispiel": "Leider muss ich kurzfristig absagen."
+        },
+        {
+          "wort": "die Vorspeise, -n",
+          "en": "starter",
+          "fr": "l'entrée",
+          "beispiel": "Als Vorspeise gibt es Suppe."
+        },
+        {
+          "wort": "die Hauptspeise, -n",
+          "en": "main course",
+          "fr": "le plat principal",
+          "beispiel": "Die Hauptspeise war ausgezeichnet."
+        },
+        {
+          "wort": "der Sonderwunsch, ¨-e",
+          "en": "special request",
+          "fr": "la demande particulière",
+          "beispiel": "Haben Sie Sonderwünsche beim Essen?"
+        },
+        {
+          "wort": "anstoßen (stieß an, angestoßen)",
+          "en": "to clink glasses, toast",
+          "fr": "trinquer",
+          "beispiel": "Lasst uns auf das neue Jahr anstoßen!"
+        },
+        {
+          "wort": "sich bedanken für",
+          "en": "to thank for",
+          "fr": "remercier pour",
+          "beispiel": "Ich möchte mich herzlich für den Abend bedanken."
+        },
+        {
+          "wort": "die Tischmanieren (Pl.)",
+          "en": "table manners",
+          "fr": "les manières à table",
+          "beispiel": "Tischmanieren sind nicht überall gleich."
+        },
+        {
+          "wort": "unangenehm",
+          "en": "unpleasant, awkward",
+          "fr": "désagréable",
+          "beispiel": "Mir war die Situation sehr unangenehm."
+        },
+        {
+          "wort": "pünktlich",
+          "en": "punctual",
+          "fr": "ponctuel",
+          "beispiel": "In Deutschland erwartet man, dass Gäste pünktlich kommen."
+        },
+        {
+          "wort": "der Anlass, ¨-e",
+          "en": "occasion",
+          "fr": "l'occasion",
+          "beispiel": "Zu welchem Anlass ist die Feier?"
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "einladen",
+          "saetze": [
+            "Ich würde mich freuen, wenn du am Samstag kommen könntest.",
+            "Hättest du Lust, am Freitag vorbeizukommen?",
+            "Wir feiern … — magst du dazukommen?"
+          ]
+        },
+        {
+          "funktion": "höflich absagen",
+          "saetze": [
+            "Das ist sehr nett, aber leider …",
+            "Ich fürchte, an dem Tag geht es bei mir nicht.",
+            "Ein anderes Mal gern!"
+          ]
+        },
+        {
+          "funktion": "als Gast reagieren",
+          "saetze": [
+            "Darf ich etwas mitbringen?",
+            "Es hat wirklich hervorragend geschmeckt.",
+            "Falls es keine Umstände macht, hätte ich lieber …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "___ Sie Vegetarier sind, kochen wir etwas ohne Fleisch.",
+          "loesung": [
+            "Falls",
+            "Wenn"
+          ],
+          "erklaerung": "Bedingung → falls (oder wenn)."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist mit 'falls' NICHT möglich?",
+          "optionen": [
+            "… es regnet, bleiben wir zu Hause.",
+            "Immer … wir uns sehen, lachen wir viel.",
+            "… Sie Fragen haben, rufen Sie an."
+          ],
+          "loesung": "Immer … wir uns sehen, lachen wir viel.",
+          "erklaerung": "Bei wiederholten Ereignissen steht nur wenn."
+        },
+        {
+          "typ": "gap",
+          "frage": "Höfliche Bitte: ___ es Ihnen etwas ausmachen, das Fenster zu schließen? (würden)",
+          "loesung": [
+            "Würde"
+          ],
+          "erklaerung": "Konjunktiv II von 'etwas ausmachen': Würde es Ihnen etwas ausmachen …?"
+        },
+        {
+          "typ": "mc",
+          "frage": "Die höflichste Formulierung ist:",
+          "optionen": [
+            "Ich will Wasser.",
+            "Ich hätte gern ein Wasser.",
+            "Gib mir Wasser."
+          ],
+          "loesung": "Ich hätte gern ein Wasser.",
+          "erklaerung": "Konjunktiv II hätte gern ist die übliche höfliche Form."
+        },
+        {
+          "typ": "gap",
+          "frage": "Wir essen auf dem Balkon, ___ das Wetter schön bleibt.",
+          "loesung": [
+            "falls",
+            "wenn"
+          ],
+          "erklaerung": "Nebensatz mit Bedingung am Satzende."
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "modul": 3,
+      "thema": "Beratung",
+      "titel": "Ich rate Ihnen, noch einmal darüber nachzudenken",
+      "kurz": "Ratschläge geben und annehmen — mit dem Infinitiv mit zu.",
+      "bild": {
+        "id": "photo-1573497620053-ea5300f94f21",
+        "alt": "Zwei Frauen im Beratungsgespräch an einem Tisch",
+        "fotograf": "Christina @ wocintechchat.com",
+        "profil": "https://unsplash.com/@wocintechchat"
+      },
+      "lernziele": [
+        "um Rat bitten und Ratschläge geben",
+        "den Infinitiv mit zu nach Verben, Nomen und es-Konstruktionen bilden",
+        "Vorschläge höflich ablehnen oder annehmen"
+      ],
+      "grammatik": [
+        {
+          "titel": "Infinitiv mit zu",
+          "erklaerung": "Nach bestimmten Verben, nach Nomen-Verb-Verbindungen und nach Konstruktionen mit es folgt ein Nebensatz ohne Konjunktion: zu + Infinitiv am Satzende. Bei trennbaren Verben steht zu zwischen Vorsilbe und Verb: anzurufen, einzukaufen, nachzudenken.",
+          "tabelle": {
+            "kopf": [
+              "nach …",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "bestimmten Verben",
+                "Ich empfehle Ihnen, früher anzufangen."
+              ],
+              [
+                "Nomen + haben",
+                "Ich habe keine Zeit, das heute zu erledigen."
+              ],
+              [
+                "es-Konstruktionen",
+                "Es ist nicht leicht, eine Entscheidung zu treffen."
+              ],
+              [
+                "Adjektiv + sein",
+                "Es ist wichtig, regelmäßig zu üben."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Ich rate dir, dich rechtzeitig zu bewerben.",
+              "hinweis": "nach raten + Dativ"
+            },
+            {
+              "de": "Sie hat vergessen, die Unterlagen mitzubringen.",
+              "hinweis": "trennbares Verb: mit-zu-bringen"
+            },
+            {
+              "de": "Es macht Spaß, mit dieser Gruppe zu arbeiten.",
+              "hinweis": "es macht Spaß, … zu …"
+            }
+          ],
+          "tipp": "Ohne zu stehen Modalverben und die Verben gehen, fahren, kommen, lassen, sehen, hören, bleiben: Ich gehe schwimmen. Ich lasse das Auto reparieren."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "der Rat (Sg.) / der Ratschlag, ¨-e",
+          "en": "advice",
+          "fr": "le conseil",
+          "beispiel": "Darf ich dir einen Rat geben?"
+        },
+        {
+          "wort": "beraten (beriet, beraten)",
+          "en": "to advise",
+          "fr": "conseiller",
+          "beispiel": "Die Mitarbeiterin hat mich sehr gut beraten."
+        },
+        {
+          "wort": "empfehlen (empfahl, empfohlen)",
+          "en": "to recommend",
+          "fr": "recommander",
+          "beispiel": "Ich empfehle Ihnen, das schriftlich zu machen."
+        },
+        {
+          "wort": "sich entscheiden für",
+          "en": "to decide on",
+          "fr": "se décider pour",
+          "beispiel": "Er hat sich für die zweite Variante entschieden."
+        },
+        {
+          "wort": "die Entscheidung, -en",
+          "en": "decision",
+          "fr": "la décision",
+          "beispiel": "Das war eine schwierige Entscheidung."
+        },
+        {
+          "wort": "zögern",
+          "en": "to hesitate",
+          "fr": "hésiter",
+          "beispiel": "Zögern Sie nicht, uns anzurufen."
+        },
+        {
+          "wort": "überlegen",
+          "en": "to consider, think over",
+          "fr": "réfléchir",
+          "beispiel": "Ich muss mir das noch einmal überlegen."
+        },
+        {
+          "wort": "der Vorschlag, ¨-e",
+          "en": "suggestion",
+          "fr": "la proposition",
+          "beispiel": "Dein Vorschlag gefällt mir."
+        },
+        {
+          "wort": "die Möglichkeit, -en",
+          "en": "possibility, option",
+          "fr": "la possibilité",
+          "beispiel": "Es gibt noch eine andere Möglichkeit."
+        },
+        {
+          "wort": "anstrengend",
+          "en": "exhausting",
+          "fr": "fatigant",
+          "beispiel": "Es ist anstrengend, jeden Tag zu pendeln."
+        },
+        {
+          "wort": "aufhören mit",
+          "en": "to stop doing",
+          "fr": "arrêter de",
+          "beispiel": "Er hat aufgehört zu rauchen."
+        },
+        {
+          "wort": "sich kümmern um",
+          "en": "to take care of",
+          "fr": "s'occuper de",
+          "beispiel": "Ich kümmere mich darum, die Termine zu organisieren."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "um Rat bitten",
+          "saetze": [
+            "Was würdest du an meiner Stelle machen?",
+            "Könnten Sie mir da weiterhelfen?",
+            "Ich weiß nicht so recht, ob ich … soll."
+          ]
+        },
+        {
+          "funktion": "raten",
+          "saetze": [
+            "Ich würde dir raten, …",
+            "An deiner Stelle würde ich …",
+            "Es wäre vielleicht sinnvoll, … zu …"
+          ]
+        },
+        {
+          "funktion": "reagieren",
+          "saetze": [
+            "Das ist ein guter Hinweis, danke.",
+            "Darüber muss ich noch nachdenken.",
+            "Das kommt für mich leider nicht infrage."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Ich habe keine Lust, heute noch ___ ___. (einkaufen)",
+          "loesung": [
+            "einzukaufen"
+          ],
+          "erklaerung": "Trennbares Verb: zu steht zwischen Vorsilbe und Stamm → einzukaufen."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist korrekt?",
+          "optionen": [
+            "Ich muss zu arbeiten.",
+            "Ich habe vor zu arbeiten.",
+            "Ich gehe zu arbeiten."
+          ],
+          "loesung": "Ich habe vor zu arbeiten.",
+          "erklaerung": "Nach Modalverben und nach gehen steht der Infinitiv ohne zu."
+        },
+        {
+          "typ": "gap",
+          "frage": "Es ist wichtig, jeden Tag ein bisschen ___ ___. (üben)",
+          "loesung": [
+            "zu üben"
+          ],
+          "erklaerung": "es-Konstruktion + Infinitiv mit zu am Satzende."
+        },
+        {
+          "typ": "mc",
+          "frage": "Sie hat vergessen, …",
+          "optionen": [
+            "mich anrufen.",
+            "mich anzurufen.",
+            "mich zu anrufen."
+          ],
+          "loesung": "mich anzurufen.",
+          "erklaerung": "anrufen ist trennbar: an-zu-rufen."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich empfehle Ihnen, die Unterlagen vorher ___ ___. (lesen)",
+          "loesung": [
+            "zu lesen"
+          ],
+          "erklaerung": "Nach empfehlen folgt ein Infinitivsatz mit zu."
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "modul": 3,
+      "thema": "Berufsfindung",
+      "titel": "Da ich gern mit Menschen arbeite, …",
+      "kurz": "Den passenden Beruf finden — Gründe nennen und Abläufe zeitlich ordnen.",
+      "bild": {
+        "id": "photo-1759662232622-6c0754a379f4",
+        "alt": "Zwei Personen arbeiten gemeinsam in einer Werkstatt",
+        "fotograf": "Marshall Public Library",
+        "profil": "https://unsplash.com/@marshallpubliclibrary"
+      },
+      "lernziele": [
+        "eigene Stärken und Berufswünsche begründen",
+        "Gründe mit da ausdrücken",
+        "Handlungen mit bevor und während zeitlich einordnen"
+      ],
+      "grammatik": [
+        {
+          "titel": "Konjunktion da (Grund)",
+          "erklaerung": "da leitet wie weil einen Grund ein. Unterschied: da nennt einen Grund, den der Hörer schon kennt oder leicht akzeptiert — deshalb steht der da-Satz meistens vorn. weil nennt eine neue Information und steht oft hinten (und kann allein auf die Frage 'Warum?' antworten).",
+          "tabelle": {
+            "kopf": [
+              "",
+              "Position",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "da (bekannter Grund)",
+                "meist vorn",
+                "Da du schon Erfahrung hast, ist die Stelle ideal für dich."
+              ],
+              [
+                "weil (neuer Grund)",
+                "meist hinten",
+                "Die Stelle ist ideal, weil du schon Erfahrung hast."
+              ],
+              [
+                "Antwort auf 'Warum?'",
+                "nur weil",
+                "Warum? — Weil ich gern draußen arbeite."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Da ich sehr gern organisiere, passt ein Büroberuf gut zu mir.",
+              "hinweis": "Nebensatz vorn, Verb am Ende"
+            },
+            {
+              "de": "Da die Bewerbungsfrist abgelaufen ist, musst du bis nächstes Jahr warten.",
+              "hinweis": "Grund ist beiden bekannt"
+            }
+          ],
+          "tipp": "da klingt etwas formeller als weil und passt gut in Bewerbungen und Berichte."
+        },
+        {
+          "titel": "bevor und während",
+          "erklaerung": "Beide Konjunktionen leiten temporale Nebensätze ein (Verb am Ende). bevor: Handlung A liegt zeitlich vor Handlung B. während: beide Handlungen laufen gleichzeitig.",
+          "tabelle": {
+            "kopf": [
+              "Konjunktion",
+              "Zeitverhältnis",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "bevor",
+                "A vor B",
+                "Bevor ich mich bewerbe, informiere ich mich über die Firma."
+              ],
+              [
+                "während",
+                "A und B gleichzeitig",
+                "Während ich studierte, arbeitete ich als Kellner."
+              ],
+              [
+                "nachdem",
+                "A nach B (siehe Lektion 11)",
+                "Nachdem ich das Praktikum beendet hatte, bekam ich eine Zusage."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Während sie telefonierte, notierte er alle wichtigen Daten.",
+              "hinweis": "beide Handlungen gleichzeitig"
+            },
+            {
+              "de": "Bevor du unterschreibst, lies den Vertrag genau durch.",
+              "hinweis": "Reihenfolge: erst lesen, dann unterschreiben"
+            }
+          ],
+          "tipp": "während kann auch einen Gegensatz ausdrücken: Während mein Bruder gern redet, höre ich lieber zu."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Stärke, -n",
+          "en": "strength",
+          "fr": "le point fort",
+          "beispiel": "Meine größte Stärke ist meine Geduld."
+        },
+        {
+          "wort": "die Schwäche, -n",
+          "en": "weakness",
+          "fr": "la faiblesse",
+          "beispiel": "Ungeduld ist eine Schwäche von mir."
+        },
+        {
+          "wort": "die Fähigkeit, -en",
+          "en": "ability, skill",
+          "fr": "la compétence",
+          "beispiel": "Für diesen Beruf braucht man organisatorische Fähigkeiten."
+        },
+        {
+          "wort": "geeignet sein für",
+          "en": "to be suitable for",
+          "fr": "être adapté à",
+          "beispiel": "Dieser Beruf ist gut für dich geeignet."
+        },
+        {
+          "wort": "der Ausbildungsberuf, -e",
+          "en": "apprenticeship occupation",
+          "fr": "le métier en apprentissage",
+          "beispiel": "Es gibt über 300 Ausbildungsberufe."
+        },
+        {
+          "wort": "das Praktikum, Praktika",
+          "en": "internship",
+          "fr": "le stage",
+          "beispiel": "Während des Studiums machte sie zwei Praktika."
+        },
+        {
+          "wort": "die Berufsberatung, -en",
+          "en": "careers guidance",
+          "fr": "l'orientation professionnelle",
+          "beispiel": "Die Berufsberatung hat mir sehr geholfen."
+        },
+        {
+          "wort": "sich orientieren",
+          "en": "to get one's bearings",
+          "fr": "s'orienter",
+          "beispiel": "Ich muss mich beruflich neu orientieren."
+        },
+        {
+          "wort": "der Verdienst (Sg.)",
+          "en": "earnings",
+          "fr": "le salaire",
+          "beispiel": "Der Verdienst ist am Anfang niedrig."
+        },
+        {
+          "wort": "abwechslungsreich",
+          "en": "varied",
+          "fr": "varié",
+          "beispiel": "Die Arbeit ist sehr abwechslungsreich."
+        },
+        {
+          "wort": "der Schreibtisch, -e",
+          "en": "desk",
+          "fr": "le bureau (meuble)",
+          "beispiel": "Ich sitze nicht gern den ganzen Tag am Schreibtisch."
+        },
+        {
+          "wort": "sich vorstellen (etwas)",
+          "en": "to imagine sth.",
+          "fr": "s'imaginer qc.",
+          "beispiel": "Ich kann mir gut vorstellen, im Ausland zu arbeiten."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Interessen begründen",
+          "saetze": [
+            "Da ich gern mit Menschen zu tun habe, …",
+            "Mir liegt besonders …",
+            "Was mir Spaß macht, ist …"
+          ]
+        },
+        {
+          "funktion": "Abläufe schildern",
+          "saetze": [
+            "Bevor ich mich entschieden habe, habe ich …",
+            "Während meiner Ausbildung habe ich …",
+            "Im Anschluss daran …"
+          ]
+        },
+        {
+          "funktion": "abwägen",
+          "saetze": [
+            "Dafür spricht, dass …",
+            "Dagegen spricht allerdings …",
+            "Letztlich war für mich entscheidend, dass …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "___ ich sehr gern reise, suche ich einen Job in der Tourismusbranche.",
+          "loesung": [
+            "Da",
+            "Weil"
+          ],
+          "erklaerung": "Grund am Satzanfang → da (weil ist ebenfalls möglich)."
+        },
+        {
+          "typ": "mc",
+          "frage": "___ ich zur Arbeit fahre, höre ich meistens Podcasts.",
+          "optionen": [
+            "Bevor",
+            "Während",
+            "Nachdem"
+          ],
+          "loesung": "Während",
+          "erklaerung": "Beide Handlungen laufen gleichzeitig."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ du den Vertrag unterschreibst, solltest du ihn genau lesen.",
+          "loesung": [
+            "Bevor"
+          ],
+          "erklaerung": "Das Lesen kommt zeitlich vor dem Unterschreiben."
+        },
+        {
+          "typ": "mc",
+          "frage": "Auf die Frage „Warum willst du das machen?“ antwortet man mit:",
+          "optionen": [
+            "Da ich das spannend finde.",
+            "Weil ich das spannend finde.",
+            "Während ich das spannend finde."
+          ],
+          "loesung": "Weil ich das spannend finde.",
+          "erklaerung": "Nur weil kann allein auf eine Warum-Frage antworten."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ meine Kollegin im Urlaub war, habe ich ihre Aufgaben übernommen.",
+          "loesung": [
+            "Während"
+          ],
+          "erklaerung": "Gleichzeitigkeit über einen Zeitraum."
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "modul": 3,
+      "thema": "Gesundheit",
+      "titel": "Mit mehr Bewegung lebt man gesünder",
+      "kurz": "Über Gesundheit und Bewegung sprechen — und Dinge genau vergleichen.",
+      "bild": {
+        "id": "photo-1486739985386-d4fae04ca6f7",
+        "alt": "Person joggt bei Sonnenaufgang auf einem Weg",
+        "fotograf": "Jenny Hill",
+        "profil": "https://unsplash.com/@jennyhill"
+      },
+      "lernziele": [
+        "über Gesundheit, Sport und Wohlbefinden sprechen",
+        "Komparativ und Superlativ vor dem Nomen richtig deklinieren",
+        "Empfehlungen zu einem gesunden Alltag geben"
+      ],
+      "grammatik": [
+        {
+          "titel": "Komparativ und Superlativ als Attribut",
+          "erklaerung": "Steht ein Komparativ oder Superlativ vor einem Nomen, bekommt er zusätzlich die normale Adjektivendung: klein → kleiner- → der kleinere Raum; am kleinsten → kleinst- → der kleinste Raum. Beim Superlativ vor dem Nomen steht immer ein Artikel (kein am).",
+          "tabelle": {
+            "kopf": [
+              "Grundform",
+              "Komparativ",
+              "Superlativ (prädikativ)",
+              "vor dem Nomen"
+            ],
+            "zeilen": [
+              [
+                "gesund",
+                "gesünder",
+                "am gesündesten",
+                "der gesündere / der gesündeste Lebensstil"
+              ],
+              [
+                "gut",
+                "besser",
+                "am besten",
+                "das bessere / das beste Ergebnis"
+              ],
+              [
+                "viel",
+                "mehr",
+                "am meisten",
+                "die meiste Zeit"
+              ],
+              [
+                "hoch",
+                "höher",
+                "am höchsten",
+                "der höhere / der höchste Preis"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Sport trägt zu einem besseren Wohlbefinden bei.",
+              "hinweis": "Dativ maskulin/neutrum: einem besser+en"
+            },
+            {
+              "de": "Das ist die einfachste Übung für den Rücken.",
+              "hinweis": "Superlativ + Artikel + Endung -e"
+            },
+            {
+              "de": "Ich suche eine gesündere Alternative zu Fertiggerichten.",
+              "hinweis": "Akkusativ feminin: eine gesünder+e"
+            }
+          ],
+          "tipp": "Kurze Adjektive mit a, o, u bekommen im Komparativ oft einen Umlaut: alt → älter, groß → größer, jung → jünger, gesund → gesünder."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "das Wohlbefinden (Sg.)",
+          "en": "well-being",
+          "fr": "le bien-être",
+          "beispiel": "Bewegung steigert das Wohlbefinden."
+        },
+        {
+          "wort": "die Bewegung (Sg.)",
+          "en": "physical activity",
+          "fr": "l'activité physique",
+          "beispiel": "Viele Menschen haben zu wenig Bewegung."
+        },
+        {
+          "wort": "sich erholen",
+          "en": "to recover, relax",
+          "fr": "se reposer",
+          "beispiel": "Im Urlaub habe ich mich gut erholt."
+        },
+        {
+          "wort": "die Ernährung (Sg.)",
+          "en": "diet, nutrition",
+          "fr": "l'alimentation",
+          "beispiel": "Eine ausgewogene Ernährung ist wichtig."
+        },
+        {
+          "wort": "der Stress (Sg.)",
+          "en": "stress",
+          "fr": "le stress",
+          "beispiel": "Stress im Beruf macht auf Dauer krank."
+        },
+        {
+          "wort": "vorbeugen (+ Dat.)",
+          "en": "to prevent",
+          "fr": "prévenir",
+          "beispiel": "Regelmäßiger Sport beugt Rückenschmerzen vor."
+        },
+        {
+          "wort": "die Ausdauer (Sg.)",
+          "en": "stamina",
+          "fr": "l'endurance",
+          "beispiel": "Beim Laufen trainiert man die Ausdauer."
+        },
+        {
+          "wort": "der Muskel, -n",
+          "en": "muscle",
+          "fr": "le muscle",
+          "beispiel": "Nach dem Training tun mir alle Muskeln weh."
+        },
+        {
+          "wort": "fit bleiben",
+          "en": "to stay fit",
+          "fr": "rester en forme",
+          "beispiel": "Mit dem Rad zur Arbeit zu fahren hält fit."
+        },
+        {
+          "wort": "beitragen zu (trug bei)",
+          "en": "to contribute to",
+          "fr": "contribuer à",
+          "beispiel": "Schlaf trägt zu einer besseren Konzentration bei."
+        },
+        {
+          "wort": "der Ausgleich (Sg.)",
+          "en": "balance, counterbalance",
+          "fr": "l'équilibre",
+          "beispiel": "Sport ist für mich ein guter Ausgleich zur Arbeit."
+        },
+        {
+          "wort": "regelmäßig",
+          "en": "regular(ly)",
+          "fr": "régulièrement",
+          "beispiel": "Wichtig ist, dass man regelmäßig trainiert."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "vergleichen",
+          "saetze": [
+            "Im Vergleich zu … ist … deutlich …",
+            "… ist weit gesünder als …",
+            "Den größten Effekt hat …"
+          ]
+        },
+        {
+          "funktion": "empfehlen",
+          "saetze": [
+            "Schon 30 Minuten täglich reichen aus, um …",
+            "Besonders zu empfehlen ist …",
+            "Am wirksamsten ist es, wenn man …"
+          ]
+        },
+        {
+          "funktion": "über eigene Gewohnheiten sprechen",
+          "saetze": [
+            "Ich achte darauf, dass …",
+            "Früher habe ich …, heute dagegen …",
+            "Mir fällt es schwer, regelmäßig …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Radfahren ist eine ___ Alternative zum Auto. (gesund, Komparativ)",
+          "loesung": [
+            "gesündere"
+          ],
+          "erklaerung": "eine + Komparativ gesünder + Endung -e (Akkusativ/Nominativ feminin)."
+        },
+        {
+          "typ": "mc",
+          "frage": "Das ist ___ Übung für Anfänger.",
+          "optionen": [
+            "die einfachste",
+            "die einfachsten",
+            "am einfachsten"
+          ],
+          "loesung": "die einfachste",
+          "erklaerung": "Vor dem Nomen steht der Superlativ mit Artikel und Adjektivendung, nicht mit am."
+        },
+        {
+          "typ": "gap",
+          "frage": "Mit ___ Schlaf fühlt man sich den ganzen Tag besser. (viel, Komparativ)",
+          "loesung": [
+            "mehr"
+          ],
+          "erklaerung": "viel → mehr (unregelmäßig, hier ohne Endung)."
+        },
+        {
+          "typ": "mc",
+          "frage": "Er sucht einen ___ Arbeitsplatz.",
+          "optionen": [
+            "ruhiger",
+            "ruhigeren",
+            "ruhigsten"
+          ],
+          "loesung": "ruhigeren",
+          "erklaerung": "Akkusativ maskulin: einen + ruhiger + en."
+        },
+        {
+          "typ": "gap",
+          "frage": "Bewegung trägt zu einem ___ Wohlbefinden bei. (gut, Komparativ)",
+          "loesung": [
+            "besseren"
+          ],
+          "erklaerung": "gut → besser; Dativ neutrum: einem besser+en."
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "modul": 4,
+      "thema": "Verpasste Gelegenheiten",
+      "titel": "Hätte ich damals nur besser aufgepasst!",
+      "kurz": "Über Dinge sprechen, die man heute anders machen würde.",
+      "bild": {
+        "id": "photo-1646170587936-04f3d59e4d6c",
+        "alt": "Mann steht nachdenklich vor einem verregneten Fenster",
+        "fotograf": "Clay LeConey",
+        "profil": "https://unsplash.com/@clay_leconey"
+      },
+      "lernziele": [
+        "Bedauern über die Vergangenheit ausdrücken",
+        "den Konjunktiv II der Vergangenheit bilden",
+        "irreale Bedingungen in der Vergangenheit formulieren"
+      ],
+      "grammatik": [
+        {
+          "titel": "Konjunktiv II der Vergangenheit",
+          "erklaerung": "Für Wünsche und Bedingungen, die sich auf die Vergangenheit beziehen und nicht mehr änderbar sind, benutzt man hätte oder wäre + Partizip Perfekt. Ob hätte oder wäre: genau wie beim Perfekt entscheidet das Vollverb.",
+          "tabelle": {
+            "kopf": [
+              "",
+              "mit haben-Verben",
+              "mit sein-Verben"
+            ],
+            "zeilen": [
+              [
+                "ich",
+                "hätte gefragt",
+                "wäre gekommen"
+              ],
+              [
+                "du",
+                "hättest gefragt",
+                "wärst gekommen"
+              ],
+              [
+                "er/es/sie",
+                "hätte gefragt",
+                "wäre gekommen"
+              ],
+              [
+                "wir",
+                "hätten gefragt",
+                "wären gekommen"
+              ],
+              [
+                "ihr",
+                "hättet gefragt",
+                "wärt gekommen"
+              ],
+              [
+                "sie/Sie",
+                "hätten gefragt",
+                "wären gekommen"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Hätte ich doch früher mit dem Deutschlernen angefangen!",
+              "hinweis": "irrealer Wunsch, oft mit doch, nur, bloß"
+            },
+            {
+              "de": "Wenn ich mehr Zeit gehabt hätte, wäre ich mitgekommen.",
+              "hinweis": "irreale Bedingung: beide Teile im Konjunktiv II Vergangenheit"
+            },
+            {
+              "de": "An deiner Stelle hätte ich sofort reklamiert.",
+              "hinweis": "Ratschlag im Rückblick"
+            }
+          ],
+          "tipp": "Mit Modalverb: Ich hätte früher fragen sollen. (Doppelinfinitiv — hätte + Infinitiv + Modalverb im Infinitiv, nicht gesollt.)"
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Gelegenheit, -en",
+          "en": "opportunity",
+          "fr": "l'occasion",
+          "beispiel": "Ich habe die Gelegenheit leider verpasst."
+        },
+        {
+          "wort": "verpassen",
+          "en": "to miss",
+          "fr": "rater, manquer",
+          "beispiel": "Wir haben den letzten Bus verpasst."
+        },
+        {
+          "wort": "bereuen",
+          "en": "to regret",
+          "fr": "regretter",
+          "beispiel": "Diese Entscheidung bereue ich bis heute."
+        },
+        {
+          "wort": "die Chance, -n",
+          "en": "chance",
+          "fr": "la chance",
+          "beispiel": "Er hat seine Chance genutzt."
+        },
+        {
+          "wort": "sich ärgern über",
+          "en": "to be annoyed about",
+          "fr": "s'énerver à propos de",
+          "beispiel": "Ich ärgere mich darüber, dass ich nichts gesagt habe."
+        },
+        {
+          "wort": "zögern",
+          "en": "to hesitate",
+          "fr": "hésiter",
+          "beispiel": "Hätte ich nur nicht so lange gezögert!"
+        },
+        {
+          "wort": "rechtzeitig",
+          "en": "in good time",
+          "fr": "à temps",
+          "beispiel": "Wenn wir rechtzeitig losgefahren wären, …"
+        },
+        {
+          "wort": "der Zufall, ¨-e",
+          "en": "coincidence",
+          "fr": "le hasard",
+          "beispiel": "Durch einen Zufall habe ich davon erfahren."
+        },
+        {
+          "wort": "sich trauen",
+          "en": "to dare",
+          "fr": "oser",
+          "beispiel": "Ich habe mich damals nicht getraut zu fragen."
+        },
+        {
+          "wort": "ablehnen",
+          "en": "to turn down",
+          "fr": "refuser",
+          "beispiel": "Warum hast du das Angebot abgelehnt?"
+        },
+        {
+          "wort": "entgehen (entging, entgangen)",
+          "en": "to escape one's notice",
+          "fr": "échapper à",
+          "beispiel": "Mir ist eine gute Chance entgangen."
+        },
+        {
+          "wort": "im Nachhinein",
+          "en": "in hindsight",
+          "fr": "après coup",
+          "beispiel": "Im Nachhinein war das ein Fehler."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Bedauern ausdrücken",
+          "saetze": [
+            "Hätte ich das bloß anders gemacht!",
+            "Wenn ich das gewusst hätte, …",
+            "Es wäre besser gewesen, wenn ich …"
+          ]
+        },
+        {
+          "funktion": "jemanden trösten",
+          "saetze": [
+            "Das konntest du nicht wissen.",
+            "Mach dir keine Vorwürfe.",
+            "Das ist mir auch schon passiert."
+          ]
+        },
+        {
+          "funktion": "im Rückblick raten",
+          "saetze": [
+            "An deiner Stelle hätte ich …",
+            "Du hättest … sollen.",
+            "Vielleicht hätte es geholfen, wenn du …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "___ ich doch früher angefangen! (haben, Konjunktiv II)",
+          "loesung": [
+            "Hätte"
+          ],
+          "erklaerung": "Irrealer Wunsch mit doch: Hätte ich doch …!"
+        },
+        {
+          "typ": "mc",
+          "frage": "Wenn der Zug pünktlich gewesen wäre, ___ wir den Anschluss nicht verpasst.",
+          "optionen": [
+            "hätten",
+            "wären",
+            "würden"
+          ],
+          "loesung": "hätten",
+          "erklaerung": "verpassen bildet das Perfekt mit haben → hätten verpasst."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich ___ gern mitgekommen, aber ich war krank. (sein, Konjunktiv II)",
+          "loesung": [
+            "wäre"
+          ],
+          "erklaerung": "mitkommen ist ein sein-Verb → wäre mitgekommen."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welche Form ist korrekt?",
+          "optionen": [
+            "Ich hätte früher fragen gesollt.",
+            "Ich hätte früher fragen sollen.",
+            "Ich hätte früher gefragt sollen."
+          ],
+          "loesung": "Ich hätte früher fragen sollen.",
+          "erklaerung": "Modalverb im Konjunktiv II Vergangenheit: hätte + Infinitiv + Modalverb im Infinitiv."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ du mir das früher gesagt, hätte ich dir geholfen. (haben, Konjunktiv II)",
+          "loesung": [
+            "Hättest"
+          ],
+          "erklaerung": "Bedingungssatz ohne wenn: das Verb steht auf Position 1."
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "modul": 4,
+      "thema": "Glücksmomente",
+      "titel": "Nachdem wir lange gewartet hatten, kam endlich die Nachricht",
+      "kurz": "Glücksmomente erzählen — und zwei Vergangenheiten sauber verbinden.",
+      "bild": {
+        "id": "photo-1527269534026-c86f4009eace",
+        "alt": "Menschen jubeln unter herabfallendem Konfetti",
+        "fotograf": "Keith Luke",
+        "profil": "https://unsplash.com/@isolatedinmyroom"
+      },
+      "lernziele": [
+        "ein glückliches Erlebnis spannend erzählen",
+        "das Plusquamperfekt bilden",
+        "Handlungsabfolgen mit nachdem verbinden"
+      ],
+      "grammatik": [
+        {
+          "titel": "Plusquamperfekt",
+          "erklaerung": "Das Plusquamperfekt ist die Vergangenheit vor der Vergangenheit. Man bildet es mit hatte oder war (Präteritum) + Partizip Perfekt. Man braucht es vor allem, um zu zeigen, welche von zwei vergangenen Handlungen zuerst passiert ist.",
+          "tabelle": {
+            "kopf": [
+              "Zeitform",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Plusquamperfekt (zuerst)",
+                "Wir hatten tagelang gesucht …"
+              ],
+              [
+                "Präteritum/Perfekt (danach)",
+                "… dann fanden wir endlich die richtige Wohnung."
+              ],
+              [
+                "mit sein",
+                "Nachdem sie angekommen war, rief sie sofort an."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Nachdem ich die Prüfung bestanden hatte, feierten wir die ganze Nacht.",
+              "hinweis": "nachdem-Satz: Plusquamperfekt; Hauptsatz: Präteritum"
+            },
+            {
+              "de": "Er war völlig erschöpft, denn er hatte den ganzen Tag gearbeitet.",
+              "hinweis": "Grund liegt zeitlich davor"
+            }
+          ],
+          "tipp": "Zeitenfolge mit nachdem: Plusquamperfekt + Präteritum/Perfekt. Nicht zweimal dieselbe Zeit verwenden."
+        },
+        {
+          "titel": "Konjunktion nachdem",
+          "erklaerung": "nachdem leitet einen Nebensatz ein (Verb am Ende) und zeigt: Diese Handlung war früher. Der nachdem-Satz kann vorn oder hinten stehen.",
+          "tabelle": {
+            "kopf": [
+              "Reihenfolge",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Nebensatz vorn",
+                "Nachdem der Regen aufgehört hatte, gingen wir spazieren."
+              ],
+              [
+                "Nebensatz hinten",
+                "Wir gingen spazieren, nachdem der Regen aufgehört hatte."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Nachdem wir umgezogen waren, fühlten wir uns sofort wohl.",
+              "hinweis": "umziehen → sein-Verb"
+            }
+          ],
+          "tipp": "Nicht verwechseln: nachdem (Konjunktion, Nebensatz) ≠ danach (Adverb, Hauptsatz): Danach gingen wir spazieren."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "der Glücksmoment, -e",
+          "en": "moment of happiness",
+          "fr": "un moment de bonheur",
+          "beispiel": "Das war einer der schönsten Glücksmomente meines Lebens."
+        },
+        {
+          "wort": "sich freuen über / auf",
+          "en": "to be happy about / look forward to",
+          "fr": "se réjouir de",
+          "beispiel": "Ich habe mich riesig über die Nachricht gefreut."
+        },
+        {
+          "wort": "gelingen (gelang, gelungen)",
+          "en": "to succeed",
+          "fr": "réussir",
+          "beispiel": "Die Überraschung ist uns gelungen."
+        },
+        {
+          "wort": "das Erlebnis, -se",
+          "en": "experience, event",
+          "fr": "l'expérience vécue",
+          "beispiel": "Das war ein unvergessliches Erlebnis."
+        },
+        {
+          "wort": "überraschen",
+          "en": "to surprise",
+          "fr": "surprendre",
+          "beispiel": "Sie hat uns alle überrascht."
+        },
+        {
+          "wort": "erleichtert",
+          "en": "relieved",
+          "fr": "soulagé",
+          "beispiel": "Ich war unglaublich erleichtert."
+        },
+        {
+          "wort": "das Pech (Sg.) / das Glück (Sg.)",
+          "en": "bad luck / luck",
+          "fr": "la malchance / la chance",
+          "beispiel": "Erst hatten wir Pech, dann plötzlich Glück."
+        },
+        {
+          "wort": "aufgeregt",
+          "en": "excited, nervous",
+          "fr": "excité, nerveux",
+          "beispiel": "Vor der Prüfung war ich sehr aufgeregt."
+        },
+        {
+          "wort": "stolz sein auf",
+          "en": "to be proud of",
+          "fr": "être fier de",
+          "beispiel": "Ich bin stolz auf meine Schwester."
+        },
+        {
+          "wort": "sich lohnen",
+          "en": "to be worth it",
+          "fr": "valoir la peine",
+          "beispiel": "Die Mühe hat sich gelohnt."
+        },
+        {
+          "wort": "plötzlich",
+          "en": "suddenly",
+          "fr": "soudain",
+          "beispiel": "Plötzlich klingelte das Telefon."
+        },
+        {
+          "wort": "unvergesslich",
+          "en": "unforgettable",
+          "fr": "inoubliable",
+          "beispiel": "Der Abend war einfach unvergesslich."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "eine Geschichte beginnen",
+          "saetze": [
+            "Das war vor ungefähr zwei Jahren …",
+            "Ich erzähle euch mal, was mir passiert ist.",
+            "Eines Tages …"
+          ]
+        },
+        {
+          "funktion": "Spannung aufbauen",
+          "saetze": [
+            "Und plötzlich …",
+            "Ihr könnt euch nicht vorstellen, was dann passierte.",
+            "Nachdem wir stundenlang gewartet hatten, …"
+          ]
+        },
+        {
+          "funktion": "auf eine Geschichte reagieren",
+          "saetze": [
+            "Was für ein Glück!",
+            "Das kann ich gut nachempfinden.",
+            "So etwas habe ich auch schon einmal erlebt."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Nachdem wir den Vertrag unterschrieben ___, feierten wir. (haben, Plusquamperfekt)",
+          "loesung": [
+            "hatten"
+          ],
+          "erklaerung": "Plusquamperfekt: hatten + Partizip unterschrieben."
+        },
+        {
+          "typ": "mc",
+          "frage": "Nachdem sie in Berlin angekommen ___, suchte sie sofort eine Wohnung.",
+          "optionen": [
+            "hatte",
+            "war",
+            "ist"
+          ],
+          "loesung": "war",
+          "erklaerung": "ankommen bildet das Perfekt mit sein → war angekommen."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz zeigt die richtige Zeitenfolge?",
+          "optionen": [
+            "Nachdem ich gegessen hatte, ging ich los.",
+            "Nachdem ich gegessen habe, ging ich los.",
+            "Nachdem ich aß, ging ich los."
+          ],
+          "loesung": "Nachdem ich gegessen hatte, ging ich los.",
+          "erklaerung": "nachdem-Satz im Plusquamperfekt, Hauptsatz im Präteritum."
+        },
+        {
+          "typ": "gap",
+          "frage": "Er war müde, denn er ___ die ganze Nacht gearbeitet. (haben, Plusquamperfekt)",
+          "loesung": [
+            "hatte"
+          ],
+          "erklaerung": "Die Arbeit liegt zeitlich vor der Müdigkeit."
+        },
+        {
+          "typ": "gap",
+          "frage": "Wir räumten auf. ___ fuhren wir nach Hause. (Adverb, nicht 'nachdem')",
+          "loesung": [
+            "Danach",
+            "Anschließend"
+          ],
+          "erklaerung": "Im Hauptsatz steht ein Adverb wie danach oder anschließend."
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "modul": 4,
+      "thema": "Feiern im Betrieb",
+      "titel": "Trotz des schlechten Wetters war der Ausflug ein Erfolg",
+      "kurz": "Betriebsfeiern organisieren — und den Genitiv sicher benutzen.",
+      "bild": {
+        "id": "photo-1651236456121-a10b22225997",
+        "alt": "Eine Gruppe wandert gemeinsam einen Berg hinauf",
+        "fotograf": "Matteo Tiraboschi",
+        "profil": "https://unsplash.com/@mattstudio"
+      },
+      "lernziele": [
+        "einen Betriebsausflug planen und organisieren",
+        "den Genitiv bei Nomen und Adjektiven bilden",
+        "Präpositionen mit Genitiv verwenden (trotz, wegen, während, aufgrund)"
+      ],
+      "grammatik": [
+        {
+          "titel": "Genitiv",
+          "erklaerung": "Der Genitiv zeigt Zugehörigkeit und steht nach bestimmten Präpositionen. Maskuline und neutrale Nomen bekommen im Singular ein -(e)s; feminine Nomen und der Plural bleiben unverändert. Adjektive enden im Genitiv fast immer auf -en.",
+          "tabelle": {
+            "kopf": [
+              "",
+              "bestimmter Artikel",
+              "unbestimmter / Possessiv",
+              "ohne Artikel"
+            ],
+            "zeilen": [
+              [
+                "maskulin",
+                "des neuen Kollegen",
+                "eines neuen Kollegen",
+                "neuen Kollegen"
+              ],
+              [
+                "neutrum",
+                "des geplanten Festes",
+                "unseres geplanten Festes",
+                "geplanten Festes"
+              ],
+              [
+                "feminin",
+                "der langen Pause",
+                "einer langen Pause",
+                "langer Pause"
+              ],
+              [
+                "Plural",
+                "der neuen Pläne",
+                "meiner neuen Pläne",
+                "neuer Pläne"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Trotz des schlechten Wetters kamen alle Mitarbeiter.",
+              "hinweis": "trotz + Genitiv, Adjektivendung -en"
+            },
+            {
+              "de": "Während der gesamten Veranstaltung gab es Musik.",
+              "hinweis": "während + Genitiv (feminin: der … -en)"
+            },
+            {
+              "de": "Wegen eines technischen Problems beginnt das Programm später.",
+              "hinweis": "wegen + Genitiv"
+            }
+          ],
+          "tipp": "Genitivpräpositionen für B1: trotz, wegen, während, aufgrund, innerhalb, außerhalb, statt. In der gesprochenen Sprache hört man oft wegen + Dativ (wegen dem Regen) — schriftlich bleibt der Genitiv korrekt."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "der Betriebsausflug, ¨-e",
+          "en": "company outing",
+          "fr": "la sortie d'entreprise",
+          "beispiel": "Der Betriebsausflug findet im Juni statt."
+        },
+        {
+          "wort": "die Veranstaltung, -en",
+          "en": "event",
+          "fr": "l'événement",
+          "beispiel": "Die Veranstaltung dauert bis 22 Uhr."
+        },
+        {
+          "wort": "die Tagesordnung, -en",
+          "en": "agenda",
+          "fr": "l'ordre du jour",
+          "beispiel": "Punkt drei der Tagesordnung ist das Sommerfest."
+        },
+        {
+          "wort": "organisieren",
+          "en": "to organise",
+          "fr": "organiser",
+          "beispiel": "Wer organisiert die Busse?"
+        },
+        {
+          "wort": "der Vorschlag, ¨-e",
+          "en": "proposal",
+          "fr": "la proposition",
+          "beispiel": "Mein Vorschlag wäre eine Wanderung."
+        },
+        {
+          "wort": "abstimmen über",
+          "en": "to vote on",
+          "fr": "voter sur",
+          "beispiel": "Wir stimmen über die drei Vorschläge ab."
+        },
+        {
+          "wort": "teilnehmen an (+ Dat.)",
+          "en": "to take part in",
+          "fr": "participer à",
+          "beispiel": "Fast alle haben am Ausflug teilgenommen."
+        },
+        {
+          "wort": "die Verpflegung (Sg.)",
+          "en": "catering, food",
+          "fr": "la restauration",
+          "beispiel": "Die Verpflegung übernimmt die Firma."
+        },
+        {
+          "wort": "der Zeitplan, ¨-e",
+          "en": "schedule",
+          "fr": "le planning",
+          "beispiel": "Hier ist der Zeitplan für den Tag."
+        },
+        {
+          "wort": "sich anmelden für",
+          "en": "to sign up for",
+          "fr": "s'inscrire à",
+          "beispiel": "Bitte melden Sie sich bis Freitag an."
+        },
+        {
+          "wort": "die Betreffzeile, -n",
+          "en": "subject line",
+          "fr": "la ligne d'objet",
+          "beispiel": "Schreiben Sie eine klare Betreffzeile."
+        },
+        {
+          "wort": "der Anlass, ¨-e",
+          "en": "occasion, cause",
+          "fr": "l'occasion",
+          "beispiel": "Aus Anlass des Jubiläums gibt es eine Feier."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "eine E-Mail an Kollegen",
+          "saetze": [
+            "Betreff: Einladung zum Betriebsausflug am …",
+            "Hiermit lade ich Sie herzlich zu … ein.",
+            "Bitte geben Sie mir bis zum … Bescheid."
+          ]
+        },
+        {
+          "funktion": "Vorschläge machen",
+          "saetze": [
+            "Wie wäre es mit …?",
+            "Ich schlage vor, dass wir …",
+            "Spricht etwas dagegen, wenn wir …?"
+          ]
+        },
+        {
+          "funktion": "sich abstimmen",
+          "saetze": [
+            "Sind alle damit einverstanden?",
+            "Wer übernimmt die Organisation?",
+            "Dann halten wir fest: …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Trotz ___ ___ Regens fand das Fest statt. (der stark-)",
+          "loesung": [
+            "des starken"
+          ],
+          "erklaerung": "trotz + Genitiv maskulin: des stark+en Regens."
+        },
+        {
+          "typ": "mc",
+          "frage": "Während ___ Besprechung war das Handy aus.",
+          "optionen": [
+            "der ganzen",
+            "die ganze",
+            "dem ganzen"
+          ],
+          "loesung": "der ganzen",
+          "erklaerung": "während + Genitiv feminin: der ganzen Besprechung."
+        },
+        {
+          "typ": "gap",
+          "frage": "Wegen ___ ___ Wetterberichts verschieben wir den Ausflug. (ein schlecht-)",
+          "loesung": [
+            "eines schlechten"
+          ],
+          "erklaerung": "wegen + Genitiv maskulin: eines schlecht+en."
+        },
+        {
+          "typ": "mc",
+          "frage": "Der Name ___ steht in der Einladung.",
+          "optionen": [
+            "der neuen Kollegin",
+            "die neue Kollegin",
+            "den neuen Kollegin"
+          ],
+          "loesung": "der neuen Kollegin",
+          "erklaerung": "Genitiv feminin: der + Adjektiv + -en."
+        },
+        {
+          "typ": "gap",
+          "frage": "Aufgrund ___ ___ Umbauarbeiten ist die Kantine geschlossen. (die geplant-, Plural)",
+          "loesung": [
+            "der geplanten"
+          ],
+          "erklaerung": "Genitiv Plural: der geplanten Umbauarbeiten."
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "modul": 5,
+      "thema": "Sprache",
+      "titel": "Deshalb kam es zu einem Missverständnis",
+      "kurz": "Über Sprache, Dialekte und Missverständnisse sprechen — Gründe und Folgen verknüpfen.",
+      "bild": {
+        "id": "photo-1513470270416-d3ff6f16b22f",
+        "alt": "Zwei Frauen im Gespräch an einem Tisch am Fenster",
+        "fotograf": "A. C.",
+        "profil": "https://unsplash.com/@good_citizen"
+      },
+      "lernziele": [
+        "ein sprachliches Missverständnis erzählen und aufklären",
+        "Gründe und Folgen mit Konnektoren und Adverbien ausdrücken",
+        "die kausale Präposition wegen + Genitiv verwenden"
+      ],
+      "grammatik": [
+        {
+          "titel": "Gründe und Folgen ausdrücken",
+          "erklaerung": "Für denselben Zusammenhang gibt es im Deutschen mehrere Mittel — sie unterscheiden sich nur im Satzbau. Achten Sie darauf, ob Sie einen Nebensatz, einen Hauptsatz oder eine Präposition brauchen.",
+          "tabelle": {
+            "kopf": [
+              "Mittel",
+              "Typ",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "weil / da",
+                "Nebensatz (Verb am Ende)",
+                "Es gab ein Missverständnis, weil sie Dialekt sprach."
+              ],
+              [
+                "denn",
+                "Hauptsatz (normale Wortstellung)",
+                "Es gab ein Missverständnis, denn sie sprach Dialekt."
+              ],
+              [
+                "deshalb / darum / deswegen / daher / aus diesem Grund",
+                "Hauptsatz, Position 1",
+                "Sie sprach Dialekt. Deshalb gab es ein Missverständnis."
+              ],
+              [
+                "nämlich",
+                "Hauptsatz, nach dem Verb",
+                "Ich habe sie nicht verstanden. Sie sprach nämlich Dialekt."
+              ],
+              [
+                "wegen + Genitiv",
+                "Präposition + Nomen",
+                "Wegen des Dialekts habe ich nichts verstanden."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Aus diesem Grund musste ich dreimal nachfragen.",
+              "hinweis": "Folge, Position 1 → Verb auf Position 2"
+            },
+            {
+              "de": "Ich konnte ihn nicht verstehen. Er sprach nämlich sehr schnell.",
+              "hinweis": "nämlich steht nie auf Position 1"
+            },
+            {
+              "de": "Wegen der starken Betonung klang das Wort ganz anders.",
+              "hinweis": "wegen + Genitiv feminin"
+            }
+          ],
+          "tipp": "nämlich erklärt rückwirkend den vorherigen Satz und steht immer im Mittelfeld — nie am Satzanfang."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "das Missverständnis, -se",
+          "en": "misunderstanding",
+          "fr": "le malentendu",
+          "beispiel": "Es war nur ein kleines Missverständnis."
+        },
+        {
+          "wort": "der Dialekt, -e",
+          "en": "dialect",
+          "fr": "le dialecte",
+          "beispiel": "In Bayern spricht man einen ganz eigenen Dialekt."
+        },
+        {
+          "wort": "die Aussprache (Sg.)",
+          "en": "pronunciation",
+          "fr": "la prononciation",
+          "beispiel": "Seine Aussprache ist sehr deutlich."
+        },
+        {
+          "wort": "die Betonung, -en",
+          "en": "stress, emphasis",
+          "fr": "l'accentuation",
+          "beispiel": "Die Betonung liegt auf der ersten Silbe."
+        },
+        {
+          "wort": "der Akzent, -e",
+          "en": "accent",
+          "fr": "l'accent",
+          "beispiel": "Man hört, dass sie einen leichten Akzent hat."
+        },
+        {
+          "wort": "die Bedeutung, -en",
+          "en": "meaning",
+          "fr": "la signification",
+          "beispiel": "Das Wort hat zwei Bedeutungen."
+        },
+        {
+          "wort": "nachfragen",
+          "en": "to ask for clarification",
+          "fr": "demander des précisions",
+          "beispiel": "Fragen Sie ruhig nach, wenn etwas unklar ist."
+        },
+        {
+          "wort": "sich verständigen",
+          "en": "to communicate, make oneself understood",
+          "fr": "se faire comprendre",
+          "beispiel": "Mit Händen und Füßen konnten wir uns verständigen."
+        },
+        {
+          "wort": "die Muttersprache, -n",
+          "en": "mother tongue",
+          "fr": "la langue maternelle",
+          "beispiel": "Meine Muttersprache ist Kinyarwanda."
+        },
+        {
+          "wort": "peinlich",
+          "en": "embarrassing",
+          "fr": "gênant",
+          "beispiel": "Das war mir ziemlich peinlich."
+        },
+        {
+          "wort": "verwechseln",
+          "en": "to mix up, confuse",
+          "fr": "confondre",
+          "beispiel": "Ich habe die beiden Wörter verwechselt."
+        },
+        {
+          "wort": "der Ausdruck, ¨-e",
+          "en": "expression",
+          "fr": "l'expression",
+          "beispiel": "Dieser Ausdruck ist sehr umgangssprachlich."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "nachfragen",
+          "saetze": [
+            "Entschuldigung, das habe ich nicht ganz verstanden.",
+            "Könnten Sie das bitte noch einmal wiederholen?",
+            "Was bedeutet … genau?"
+          ]
+        },
+        {
+          "funktion": "ein Missverständnis aufklären",
+          "saetze": [
+            "Da haben wir aneinander vorbeigeredet.",
+            "Ich glaube, da liegt ein Missverständnis vor.",
+            "So war das gar nicht gemeint."
+          ]
+        },
+        {
+          "funktion": "eine Geschichte erzählen",
+          "saetze": [
+            "Folgendes ist mir passiert: …",
+            "In meiner Sprache bedeutet das nämlich …",
+            "Da haben alle gelacht."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "mc",
+          "frage": "Er sprach sehr leise. ___ habe ich nichts verstanden.",
+          "optionen": [
+            "Weil",
+            "Deshalb",
+            "Nämlich"
+          ],
+          "loesung": "Deshalb",
+          "erklaerung": "Folge im Hauptsatz auf Position 1 → deshalb, Verb auf Position 2."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich konnte nicht kommen. Ich war ___ krank. (Adverb für den Grund)",
+          "loesung": [
+            "nämlich"
+          ],
+          "erklaerung": "nämlich steht im Mittelfeld, nach dem konjugierten Verb."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ des Lärms konnten wir uns kaum unterhalten.",
+          "loesung": [
+            "Wegen"
+          ],
+          "erklaerung": "Kausale Präposition wegen + Genitiv."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz hat die richtige Wortstellung?",
+          "optionen": [
+            "Denn sie sprach Dialekt, gab es Probleme.",
+            "Es gab Probleme, denn sie sprach Dialekt.",
+            "Es gab Probleme, denn sprach sie Dialekt."
+          ],
+          "loesung": "Es gab Probleme, denn sie sprach Dialekt.",
+          "erklaerung": "Nach denn folgt ein Hauptsatz mit normaler Wortstellung."
+        },
+        {
+          "typ": "gap",
+          "frage": "Sie kannte das Wort nicht. ___ ___ ___ fragte sie nach. (dreiteilig: Aus … … )",
+          "loesung": [
+            "Aus diesem Grund"
+          ],
+          "erklaerung": "Aus diesem Grund = Folge, steht auf Position 1."
+        }
+      ]
+    },
+    {
+      "nr": 14,
+      "modul": 5,
+      "thema": "Weiterbildung",
+      "titel": "Ein spannender Kurs mit ausgewählten Themen",
+      "kurz": "Kursangebote verstehen und auswählen — Partizipien als Adjektive nutzen.",
+      "bild": {
+        "id": "photo-1524178232363-1fb2b075b655",
+        "alt": "Teilnehmende in einem Seminarraum vor einer Leinwand",
+        "fotograf": "Quilia",
+        "profil": "https://unsplash.com/@quilia"
+      },
+      "lernziele": [
+        "Kursbeschreibungen verstehen und vergleichen",
+        "Partizip I und Partizip II als Adjektiv bilden",
+        "sich für eine Weiterbildung anmelden"
+      ],
+      "grammatik": [
+        {
+          "titel": "Partizip I als Adjektiv",
+          "erklaerung": "Partizip I = Infinitiv + d + Adjektivendung. Bedeutung: aktiv und gleichzeitig — die Person oder Sache tut gerade etwas.",
+          "tabelle": {
+            "kopf": [
+              "Infinitiv",
+              "Partizip I",
+              "Beispiel",
+              "Bedeutung"
+            ],
+            "zeilen": [
+              [
+                "faszinieren",
+                "faszinierend-",
+                "ein faszinierender Vortrag",
+                "ein Vortrag, der fasziniert"
+              ],
+              [
+                "passen",
+                "passend-",
+                "die passende Strategie",
+                "die Strategie, die passt"
+              ],
+              [
+                "überzeugen",
+                "überzeugend-",
+                "ein überzeugendes Auftreten",
+                "ein Auftreten, das überzeugt"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Wir suchen eine Lösung mit überzeugenden Argumenten.",
+              "hinweis": "Dativ Plural: -en"
+            },
+            {
+              "de": "Das war ein herausfordernder, aber lohnender Kurs.",
+              "hinweis": "zwei Partizipien I als Attribut"
+            }
+          ],
+          "tipp": "Partizip I steht fast nur vor einem Nomen. Als Prädikat benutzt man es nicht: nicht 'Der Kurs ist interessierend', sondern 'Der Kurs ist interessant'."
+        },
+        {
+          "titel": "Partizip II als Adjektiv",
+          "erklaerung": "Partizip II + Adjektivendung. Bedeutung: passiv und abgeschlossen — mit der Person oder Sache ist etwas gemacht worden.",
+          "tabelle": {
+            "kopf": [
+              "Infinitiv",
+              "Partizip II",
+              "Beispiel",
+              "Bedeutung"
+            ],
+            "zeilen": [
+              [
+                "auswählen",
+                "ausgewählt-",
+                "ausgewählte Themen",
+                "Themen, die ausgewählt wurden"
+              ],
+              [
+                "verstecken",
+                "versteckt-",
+                "versteckte Talente",
+                "Talente, die versteckt sind"
+              ],
+              [
+                "renovieren",
+                "renoviert-",
+                "ein renoviertes Seminarhaus",
+                "ein Haus, das renoviert wurde"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Der Kurs richtet sich an fortgeschrittene Lernende.",
+              "hinweis": "fortgeschritten = Partizip II als Adjektiv"
+            },
+            {
+              "de": "Bitte bringen Sie die ausgefüllten Formulare mit.",
+              "hinweis": "Akkusativ Plural: -en"
+            }
+          ],
+          "tipp": "Faustregel: Partizip I = macht etwas (aktiv), Partizip II = etwas wurde damit gemacht (passiv)."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Weiterbildung, -en",
+          "en": "further training",
+          "fr": "la formation continue",
+          "beispiel": "Die Firma zahlt die Weiterbildung."
+        },
+        {
+          "wort": "der Kurs, -e / der Lehrgang, ¨-e",
+          "en": "course",
+          "fr": "le cours / la formation",
+          "beispiel": "Der Lehrgang dauert sechs Monate."
+        },
+        {
+          "wort": "die Kenntnisse (Pl.)",
+          "en": "knowledge, skills",
+          "fr": "les connaissances",
+          "beispiel": "Gute Computerkenntnisse sind Voraussetzung."
+        },
+        {
+          "wort": "die Voraussetzung, -en",
+          "en": "requirement",
+          "fr": "la condition préalable",
+          "beispiel": "Welche Voraussetzungen muss ich erfüllen?"
+        },
+        {
+          "wort": "der Teilnehmer, - / die Teilnehmerin, -nen",
+          "en": "participant",
+          "fr": "le/la participant(e)",
+          "beispiel": "Der Kurs hat maximal zwölf Teilnehmer."
+        },
+        {
+          "wort": "die Teilnahme (Sg.)",
+          "en": "participation",
+          "fr": "la participation",
+          "beispiel": "Die Teilnahme ist kostenlos."
+        },
+        {
+          "wort": "sich anmelden zu",
+          "en": "to register for",
+          "fr": "s'inscrire à",
+          "beispiel": "Ich habe mich zum Abendkurs angemeldet."
+        },
+        {
+          "wort": "die Gebühr, -en",
+          "en": "fee",
+          "fr": "les frais",
+          "beispiel": "Die Gebühr beträgt 90 Euro."
+        },
+        {
+          "wort": "das Zertifikat, -e",
+          "en": "certificate",
+          "fr": "le certificat",
+          "beispiel": "Am Ende erhalten Sie ein Zertifikat."
+        },
+        {
+          "wort": "anspruchsvoll",
+          "en": "demanding",
+          "fr": "exigeant",
+          "beispiel": "Der Kurs ist ziemlich anspruchsvoll."
+        },
+        {
+          "wort": "berufsbegleitend",
+          "en": "part-time alongside work",
+          "fr": "en cours d'emploi",
+          "beispiel": "Sie studiert berufsbegleitend."
+        },
+        {
+          "wort": "vermitteln",
+          "en": "to impart, teach",
+          "fr": "transmettre",
+          "beispiel": "Der Kurs vermittelt praktische Grundlagen."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "sich informieren",
+          "saetze": [
+            "Ich interessiere mich für den Kurs …",
+            "Könnten Sie mir sagen, ob noch Plätze frei sind?",
+            "Welche Vorkenntnisse werden erwartet?"
+          ]
+        },
+        {
+          "funktion": "sich anmelden",
+          "saetze": [
+            "Hiermit melde ich mich verbindlich zu … an.",
+            "Bitte senden Sie mir die Anmeldeunterlagen.",
+            "Ist eine Ratenzahlung möglich?"
+          ]
+        },
+        {
+          "funktion": "einen Kurs bewerten",
+          "saetze": [
+            "Besonders hilfreich fand ich …",
+            "Was mir gefehlt hat, war …",
+            "Ich würde den Kurs auf jeden Fall weiterempfehlen."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Das war ein ___ Vortrag. (faszinieren, Partizip I)",
+          "loesung": [
+            "faszinierender"
+          ],
+          "erklaerung": "faszinieren + d + Endung -er (Nominativ maskulin)."
+        },
+        {
+          "typ": "mc",
+          "frage": "Bitte bringen Sie die ___ Unterlagen mit.",
+          "optionen": [
+            "ausfüllenden",
+            "ausgefüllten",
+            "ausfüllende"
+          ],
+          "loesung": "ausgefüllten",
+          "erklaerung": "Passiv und abgeschlossen → Partizip II: die ausgefüllten Unterlagen."
+        },
+        {
+          "typ": "gap",
+          "frage": "Der Kurs richtet sich an ___ Lernende. (fortschreiten → fortgeschritten)",
+          "loesung": [
+            "fortgeschrittene"
+          ],
+          "erklaerung": "Partizip II + Endung -e (Akkusativ Plural ohne Artikel)."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welche Bedeutung hat 'duftende Gewürze'?",
+          "optionen": [
+            "Gewürze, die duften",
+            "Gewürze, die geduftet wurden",
+            "Gewürze ohne Duft"
+          ],
+          "loesung": "Gewürze, die duften",
+          "erklaerung": "Partizip I ist aktiv und gleichzeitig."
+        },
+        {
+          "typ": "gap",
+          "frage": "Wir bieten ___ Themen aus der Praxis an. (auswählen, Partizip II)",
+          "loesung": [
+            "ausgewählte"
+          ],
+          "erklaerung": "Akkusativ Plural ohne Artikel: ausgewählte Themen."
+        }
+      ]
+    },
+    {
+      "nr": 15,
+      "modul": 5,
+      "thema": "Bewerbungen",
+      "titel": "Ich spreche sowohl Englisch als auch Französisch",
+      "kurz": "Sich schriftlich und mündlich bewerben — Informationen elegant verbinden.",
+      "bild": {
+        "id": "photo-1521791136064-7986c2920216",
+        "alt": "Händedruck nach einem erfolgreichen Vorstellungsgespräch",
+        "fotograf": "Cytonn Photography",
+        "profil": "https://unsplash.com/@cytonn_photography"
+      },
+      "lernziele": [
+        "ein Bewerbungsschreiben strukturieren",
+        "zweiteilige Konnektoren sicher verwenden",
+        "sich im Vorstellungsgespräch vorstellen"
+      ],
+      "grammatik": [
+        {
+          "titel": "Zweiteilige Konnektoren",
+          "erklaerung": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+          "tabelle": {
+            "kopf": [
+              "Konnektor",
+              "Bedeutung",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "sowohl … als auch",
+                "A und B",
+                "Ich habe sowohl im Verkauf als auch im Einkauf gearbeitet."
+              ],
+              [
+                "nicht nur … sondern auch",
+                "A und zusätzlich B",
+                "Sie spricht nicht nur Deutsch, sondern auch Spanisch."
+              ],
+              [
+                "entweder … oder",
+                "A oder B (nur eins)",
+                "Ich kann entweder montags oder freitags anfangen."
+              ],
+              [
+                "weder … noch",
+                "nicht A und nicht B",
+                "Er hat weder Erfahrung noch eine Ausbildung."
+              ],
+              [
+                "zwar … aber",
+                "Einschränkung",
+                "Ich habe zwar wenig Erfahrung, aber viel Motivation."
+              ],
+              [
+                "je … desto",
+                "Verhältnis (Lektion 19)",
+                "Je mehr Praxis, desto sicherer wird man."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Ich bringe sowohl technisches Verständnis als auch Teamfähigkeit mit.",
+              "hinweis": "zwei Nomengruppen im Akkusativ"
+            },
+            {
+              "de": "Weder die Bezahlung noch die Arbeitszeiten haben mich überzeugt.",
+              "hinweis": "weder … noch ist schon verneint — kein nicht dazu"
+            }
+          ],
+          "tipp": "Nach sondern auch steht kein neues Verb, wenn das Verb gleich bleibt: Sie arbeitet nicht nur schnell, sondern auch sehr genau."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Bewerbung, -en",
+          "en": "application",
+          "fr": "la candidature",
+          "beispiel": "Ihre Bewerbung hat uns überzeugt."
+        },
+        {
+          "wort": "die Stellenanzeige, -n",
+          "en": "job advertisement",
+          "fr": "l'offre d'emploi",
+          "beispiel": "Ich habe Ihre Stellenanzeige im Internet gelesen."
+        },
+        {
+          "wort": "das Anschreiben, -",
+          "en": "cover letter",
+          "fr": "la lettre de motivation",
+          "beispiel": "Das Anschreiben sollte eine Seite lang sein."
+        },
+        {
+          "wort": "die Anlage, -n",
+          "en": "attachment, enclosure",
+          "fr": "la pièce jointe",
+          "beispiel": "Anlagen: Lebenslauf und Zeugnisse."
+        },
+        {
+          "wort": "das Zeugnis, -se",
+          "en": "certificate, reference",
+          "fr": "le certificat, l'attestation",
+          "beispiel": "Bitte legen Sie Ihre Zeugnisse bei."
+        },
+        {
+          "wort": "das Vorstellungsgespräch, -e",
+          "en": "job interview",
+          "fr": "l'entretien d'embauche",
+          "beispiel": "Das Vorstellungsgespräch ist am Dienstag."
+        },
+        {
+          "wort": "die Berufserfahrung (Sg.)",
+          "en": "work experience",
+          "fr": "l'expérience professionnelle",
+          "beispiel": "Ich habe fünf Jahre Berufserfahrung."
+        },
+        {
+          "wort": "beherrschen",
+          "en": "to have a command of",
+          "fr": "maîtriser",
+          "beispiel": "Ich beherrsche Englisch in Wort und Schrift."
+        },
+        {
+          "wort": "teamfähig",
+          "en": "good at teamwork",
+          "fr": "apte au travail en équipe",
+          "beispiel": "Ich bin teamfähig und belastbar."
+        },
+        {
+          "wort": "belastbar",
+          "en": "resilient, able to work under pressure",
+          "fr": "résistant au stress",
+          "beispiel": "Auch unter Zeitdruck bin ich belastbar."
+        },
+        {
+          "wort": "der Arbeitgeber, -",
+          "en": "employer",
+          "fr": "l'employeur",
+          "beispiel": "Mein früherer Arbeitgeber gibt Ihnen gern Auskunft."
+        },
+        {
+          "wort": "zur Verfügung stehen",
+          "en": "to be available",
+          "fr": "être disponible",
+          "beispiel": "Ab dem 1. März stehe ich Ihnen zur Verfügung."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Anschreiben beginnen",
+          "saetze": [
+            "Mit großem Interesse habe ich Ihre Anzeige gelesen.",
+            "Hiermit bewerbe ich mich um die Stelle als …",
+            "Auf Ihre ausgeschriebene Position passe ich besonders gut, weil …"
+          ]
+        },
+        {
+          "funktion": "Qualifikationen nennen",
+          "saetze": [
+            "Ich verfüge sowohl über … als auch über …",
+            "Während meiner Tätigkeit bei … habe ich Erfahrungen in … gesammelt.",
+            "Zu meinen Aufgaben gehörte unter anderem …"
+          ]
+        },
+        {
+          "funktion": "Anschreiben beenden",
+          "saetze": [
+            "Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen.",
+            "Für Rückfragen stehe ich Ihnen gern zur Verfügung.",
+            "Mit freundlichen Grüßen"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Ich spreche ___ Deutsch ___ ___ Französisch. (sowohl … als auch)",
+          "loesung": [
+            "sowohl als auch",
+            "sowohl ... als auch"
+          ],
+          "erklaerung": "sowohl Deutsch als auch Französisch = beide Sprachen."
+        },
+        {
+          "typ": "mc",
+          "frage": "'Weder … noch' bedeutet:",
+          "optionen": [
+            "A und B",
+            "nicht A und nicht B",
+            "A oder B"
+          ],
+          "loesung": "nicht A und nicht B",
+          "erklaerung": "weder … noch enthält die Verneinung bereits."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich kann ___ am Montag ___ am Mittwoch anfangen — bitte wählen Sie. (entweder … oder)",
+          "loesung": [
+            "entweder oder",
+            "entweder ... oder"
+          ],
+          "erklaerung": "entweder … oder nennt zwei Alternativen, von denen nur eine gilt."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist korrekt?",
+          "optionen": [
+            "Sie ist nicht nur schnell, sondern auch genau.",
+            "Sie ist nicht nur schnell, aber auch genau.",
+            "Sie ist sowohl schnell, sondern auch genau."
+          ],
+          "loesung": "Sie ist nicht nur schnell, sondern auch genau.",
+          "erklaerung": "Der feste Konnektor lautet nicht nur … sondern auch."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich habe ___ wenig Erfahrung, ___ ich lerne sehr schnell. (zwar … aber)",
+          "loesung": [
+            "zwar aber",
+            "zwar ... aber"
+          ],
+          "erklaerung": "zwar … aber drückt eine Einschränkung aus."
+        }
+      ]
+    },
+    {
+      "nr": 16,
+      "modul": 6,
+      "thema": "Jugend und Erinnerungen",
+      "titel": "Wir brauchten uns um nichts zu kümmern",
+      "kurz": "Von früher erzählen — und sagen, was man nicht tun musste.",
+      "bild": {
+        "id": "photo-1528569937393-ee892b976859",
+        "alt": "Hände blättern in einem alten Fotoalbum",
+        "fotograf": "Laura Fuhrman",
+        "profil": "https://unsplash.com/@lauraadai"
+      },
+      "lernziele": [
+        "über die eigene Kindheit und Jugend erzählen",
+        "brauchen + nicht/nur … zu + Infinitiv verwenden",
+        "früher und heute vergleichen"
+      ],
+      "grammatik": [
+        {
+          "titel": "nicht/nur brauchen + zu + Infinitiv",
+          "erklaerung": "brauchen ersetzt in der Verneinung das Modalverb müssen. Es steht fast immer zusammen mit nicht, kein, nur, erst oder kaum — und verlangt dann zu + Infinitiv.",
+          "tabelle": {
+            "kopf": [
+              "Mit müssen",
+              "Mit brauchen"
+            ],
+            "zeilen": [
+              [
+                "Ich muss nicht aufräumen.",
+                "Ich brauche nicht aufzuräumen."
+              ],
+              [
+                "Du musst nur unterschreiben.",
+                "Du brauchst nur zu unterschreiben."
+              ],
+              [
+                "Wir mussten uns um nichts kümmern.",
+                "Wir brauchten uns um nichts zu kümmern."
+              ],
+              [
+                "Er muss erst morgen kommen.",
+                "Er braucht erst morgen zu kommen."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Als Kind brauchte ich im Haushalt kaum zu helfen.",
+              "hinweis": "Präteritum: brauchte … zu helfen"
+            },
+            {
+              "de": "Sie brauchen sich keine Sorgen zu machen.",
+              "hinweis": "mit kein-"
+            },
+            {
+              "de": "Du brauchst nur kurz anzurufen.",
+              "hinweis": "trennbares Verb: an-zu-rufen"
+            }
+          ],
+          "tipp": "Eselsbrücke: „Wer brauchen ohne zu gebraucht, braucht brauchen gar nicht zu gebrauchen.“ — In der Standardsprache steht nach brauchen immer zu."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Erinnerung, -en",
+          "en": "memory",
+          "fr": "le souvenir",
+          "beispiel": "Ich habe nur gute Erinnerungen an diese Zeit."
+        },
+        {
+          "wort": "sich erinnern an (+ Akk.)",
+          "en": "to remember",
+          "fr": "se souvenir de",
+          "beispiel": "Erinnerst du dich noch an unseren alten Lehrer?"
+        },
+        {
+          "wort": "die Kindheit (Sg.)",
+          "en": "childhood",
+          "fr": "l'enfance",
+          "beispiel": "Meine Kindheit habe ich auf dem Land verbracht."
+        },
+        {
+          "wort": "aufwachsen (wuchs auf)",
+          "en": "to grow up",
+          "fr": "grandir",
+          "beispiel": "Ich bin in Kigali aufgewachsen."
+        },
+        {
+          "wort": "streng",
+          "en": "strict",
+          "fr": "sévère",
+          "beispiel": "Meine Eltern waren ziemlich streng."
+        },
+        {
+          "wort": "erlauben",
+          "en": "to allow",
+          "fr": "permettre",
+          "beispiel": "Fernsehen war nur am Wochenende erlaubt."
+        },
+        {
+          "wort": "verbieten (verbot, verboten)",
+          "en": "to forbid",
+          "fr": "interdire",
+          "beispiel": "Sie haben mir das verboten."
+        },
+        {
+          "wort": "die Pflicht, -en",
+          "en": "duty",
+          "fr": "le devoir",
+          "beispiel": "Abwaschen war meine tägliche Pflicht."
+        },
+        {
+          "wort": "sorglos",
+          "en": "carefree",
+          "fr": "insouciant",
+          "beispiel": "Es war eine sorglose Zeit."
+        },
+        {
+          "wort": "der Haushalt, -e",
+          "en": "household",
+          "fr": "le ménage",
+          "beispiel": "Im Haushalt mussten alle mithelfen."
+        },
+        {
+          "wort": "verwöhnen",
+          "en": "to spoil",
+          "fr": "gâter",
+          "beispiel": "Meine Großmutter hat mich sehr verwöhnt."
+        },
+        {
+          "wort": "damals",
+          "en": "back then",
+          "fr": "à l'époque",
+          "beispiel": "Damals gab es noch keine Handys."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "von früher erzählen",
+          "saetze": [
+            "Als ich klein war, …",
+            "Damals war es normal, dass …",
+            "Ich kann mich noch gut daran erinnern, wie …"
+          ]
+        },
+        {
+          "funktion": "früher und heute vergleichen",
+          "saetze": [
+            "Heute ist das ganz anders: …",
+            "Im Gegensatz zu früher …",
+            "Was sich kaum geändert hat, ist …"
+          ]
+        },
+        {
+          "funktion": "reagieren",
+          "saetze": [
+            "Das ging mir ganz genauso.",
+            "Bei uns war das völlig anders.",
+            "Das klingt nach einer schönen Zeit."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Du ___ dir keine Sorgen ___ machen. (brauchen + zu)",
+          "loesung": [
+            "brauchst zu",
+            "brauchst ... zu"
+          ],
+          "erklaerung": "brauchen + kein- + zu + Infinitiv."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist standardsprachlich korrekt?",
+          "optionen": [
+            "Du brauchst nicht kommen.",
+            "Du brauchst nicht zu kommen.",
+            "Du brauchst nicht zu kommst."
+          ],
+          "loesung": "Du brauchst nicht zu kommen.",
+          "erklaerung": "Nach brauchen steht zu + Infinitiv."
+        },
+        {
+          "typ": "gap",
+          "frage": "Früher ___ wir uns um nichts ___ kümmern. (brauchen, Präteritum)",
+          "loesung": [
+            "brauchten zu",
+            "brauchten ... zu"
+          ],
+          "erklaerung": "Präteritum von brauchen: brauchten + zu + Infinitiv."
+        },
+        {
+          "typ": "mc",
+          "frage": "'Ich brauche nur zu unterschreiben' bedeutet:",
+          "optionen": [
+            "Ich muss viel tun.",
+            "Ich muss nichts tun.",
+            "Ich muss nur eine einzige Sache tun."
+          ],
+          "loesung": "Ich muss nur eine einzige Sache tun.",
+          "erklaerung": "nur brauchen + zu = es genügt, das Eine zu tun."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ihr ___ mich nicht ___ (abholen) — ich nehme den Bus. (brauchen + zu)",
+          "loesung": [
+            "braucht abzuholen",
+            "braucht ... abzuholen"
+          ],
+          "erklaerung": "Trennbares Verb: ab-zu-holen."
+        }
+      ]
+    },
+    {
+      "nr": 17,
+      "modul": 6,
+      "thema": "Biografien",
+      "titel": "Es lohnt sich, diese Geschichte zu kennen",
+      "kurz": "Lebensgeschichten erzählen und kommentieren — mit festen es-Wendungen.",
+      "bild": {
+        "id": "photo-1566616213894-2d4e1baee5d8",
+        "alt": "Porträt einer lächelnden Frau",
+        "fotograf": "Ravi Patel",
+        "profil": "https://unsplash.com/@ravipatel"
+      },
+      "lernziele": [
+        "eine Biografie zusammenfassen und bewerten",
+        "feste Wendungen mit es erkennen und verwenden",
+        "Fotos und Bilder beschreiben"
+      ],
+      "grammatik": [
+        {
+          "titel": "Ausdrücke mit es",
+          "erklaerung": "In vielen deutschen Sätzen ist es kein echtes Subjekt, sondern ein formales Element, das nicht weggelassen werden darf. Es gibt vier große Gruppen.",
+          "tabelle": {
+            "kopf": [
+              "Gruppe",
+              "Beispiele"
+            ],
+            "zeilen": [
+              [
+                "feste Wendungen",
+                "Es gibt …  /  Es lohnt sich.  /  Es geht um …  /  Es handelt sich um …"
+              ],
+              [
+                "Wetter",
+                "Es regnet. / Es ist neblig. / Es hat kurz vorher geschneit."
+              ],
+              [
+                "Tages- und Jahreszeiten",
+                "Es ist schon spät. / Es wird früh dunkel. / Es ist Frühling."
+              ],
+              [
+                "Befinden und Bewertung",
+                "Wie geht es Ihnen? / Es fällt mir schwer, … / Es ist nicht leicht, …"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Es lohnt sich, dieses Buch bis zum Ende zu lesen.",
+              "hinweis": "es + Infinitivsatz"
+            },
+            {
+              "de": "In diesem Film geht es um eine Familie in den 1960er-Jahren.",
+              "hinweis": "es geht um + Akkusativ"
+            },
+            {
+              "de": "Es fiel ihr schwer, über diese Zeit zu sprechen.",
+              "hinweis": "es fällt jdm. schwer, … zu …"
+            }
+          ],
+          "tipp": "Vorsicht: In manchen Sätzen steht es nur auf Position 1 und verschwindet, wenn etwas anderes vorn steht: Es kamen viele Gäste. → Gestern kamen viele Gäste."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Biografie, -n",
+          "en": "biography",
+          "fr": "la biographie",
+          "beispiel": "Ich lese gerade die Biografie einer Fotografin."
+        },
+        {
+          "wort": "der Lebensweg, -e",
+          "en": "life path",
+          "fr": "le parcours de vie",
+          "beispiel": "Ihr Lebensweg war alles andere als geradlinig."
+        },
+        {
+          "wort": "prägen",
+          "en": "to shape, influence",
+          "fr": "marquer",
+          "beispiel": "Diese Jahre haben ihn stark geprägt."
+        },
+        {
+          "wort": "der Wendepunkt, -e",
+          "en": "turning point",
+          "fr": "le tournant",
+          "beispiel": "Das Jahr 1990 war ein Wendepunkt in seinem Leben."
+        },
+        {
+          "wort": "scheitern an (+ Dat.)",
+          "en": "to fail at",
+          "fr": "échouer à",
+          "beispiel": "Das erste Projekt scheiterte am Geld."
+        },
+        {
+          "wort": "der Erfolg, -e",
+          "en": "success",
+          "fr": "le succès",
+          "beispiel": "Der Erfolg kam erst spät."
+        },
+        {
+          "wort": "die Herausforderung, -en",
+          "en": "challenge",
+          "fr": "le défi",
+          "beispiel": "Für sie war das eine große Herausforderung."
+        },
+        {
+          "wort": "veröffentlichen",
+          "en": "to publish",
+          "fr": "publier",
+          "beispiel": "Er veröffentlichte sein erstes Buch mit 45."
+        },
+        {
+          "wort": "beeindruckend",
+          "en": "impressive",
+          "fr": "impressionnant",
+          "beispiel": "Das ist eine beeindruckende Leistung."
+        },
+        {
+          "wort": "die Aufnahme, -n",
+          "en": "photo, recording",
+          "fr": "la photo, l'enregistrement",
+          "beispiel": "Die Aufnahme stammt aus dem Jahr 1972."
+        },
+        {
+          "wort": "im Vordergrund / im Hintergrund",
+          "en": "in the foreground / background",
+          "fr": "au premier plan / à l'arrière-plan",
+          "beispiel": "Im Vordergrund sieht man zwei Kinder."
+        },
+        {
+          "wort": "ausdrücken",
+          "en": "to express",
+          "fr": "exprimer",
+          "beispiel": "Das Bild drückt viel Ruhe aus."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "ein Foto beschreiben",
+          "saetze": [
+            "Auf dem Foto sieht man …",
+            "Im Vordergrund / Hintergrund befindet sich …",
+            "Das Bild wirkt auf mich …"
+          ]
+        },
+        {
+          "funktion": "eine Biografie zusammenfassen",
+          "saetze": [
+            "In diesem Text geht es um …",
+            "Entscheidend für ihr Leben war, dass …",
+            "Besonders bemerkenswert finde ich, dass …"
+          ]
+        },
+        {
+          "funktion": "bewerten",
+          "saetze": [
+            "Es lohnt sich wirklich, …",
+            "Es hat mich überrascht, dass …",
+            "Es ist beeindruckend, wie …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "In dem Text ___ ___ um die Kindheit der Autorin. (es gehen)",
+          "loesung": [
+            "geht es"
+          ],
+          "erklaerung": "Feste Wendung: es geht um + Akkusativ."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz braucht 'es' nicht?",
+          "optionen": [
+            "Es regnet seit Stunden.",
+            "Es lohnt sich sehr.",
+            "Gestern kamen viele Gäste."
+          ],
+          "loesung": "Gestern kamen viele Gäste.",
+          "erklaerung": "Hier steht ein anderes Element auf Position 1, das formale es entfällt."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ fällt mir schwer, darüber zu sprechen.",
+          "loesung": [
+            "Es"
+          ],
+          "erklaerung": "Feste Wendung: es fällt jemandem schwer, … zu …"
+        },
+        {
+          "typ": "mc",
+          "frage": "Im Winter wird ___ hier schon um vier Uhr dunkel.",
+          "optionen": [
+            "es",
+            "das",
+            "man"
+          ],
+          "loesung": "es",
+          "erklaerung": "Tageszeit und Wetter stehen immer mit es."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ handelt sich um eine wahre Geschichte.",
+          "loesung": [
+            "Es"
+          ],
+          "erklaerung": "es handelt sich um + Akkusativ."
+        }
+      ]
+    },
+    {
+      "nr": 18,
+      "modul": 6,
+      "thema": "Politik und Gesellschaft",
+      "titel": "Davon halte ich ehrlich gesagt wenig",
+      "kurz": "Die eigene Meinung zu gesellschaftlichen Themen sagen — und sich klar auf etwas beziehen.",
+      "bild": {
+        "id": "photo-1777428411691-e4d5c3423ed0",
+        "alt": "Wahlkabine mit Hinweisschildern",
+        "fotograf": "Smithsonian",
+        "profil": "https://unsplash.com/@smithsonian"
+      },
+      "lernziele": [
+        "die eigene Meinung zu politischen und gesellschaftlichen Themen äußern",
+        "Verben mit festen Präpositionen verwenden",
+        "Präpositionaladverbien mit da(r)- und wo(r)- bilden"
+      ],
+      "grammatik": [
+        {
+          "titel": "Präpositionaladverbien: da(r)- und wo(r)-",
+          "erklaerung": "Viele Verben verlangen eine feste Präposition. Bezieht man sich auf eine Sache (nicht auf eine Person), ersetzt man Präposition + Nomen durch da(r)- + Präposition. In Fragen steht wo(r)- + Präposition. Das r kommt dazu, wenn die Präposition mit einem Vokal beginnt.",
+          "tabelle": {
+            "kopf": [
+              "Bezug",
+              "Sache",
+              "Person"
+            ],
+            "zeilen": [
+              [
+                "Aussage",
+                "Ich denke oft daran.",
+                "Ich denke oft an ihn."
+              ],
+              [
+                "Frage",
+                "Woran denkst du?",
+                "An wen denkst du?"
+              ],
+              [
+                "mit Vokal",
+                "darüber, darauf, daran, darin",
+                "über ihn, auf sie, an ihn"
+              ],
+              [
+                "ohne Vokal",
+                "damit, davon, dafür, dagegen",
+                "mit ihm, von ihr, für sie"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Von dieser Idee halte ich wenig. → Davon halte ich wenig.",
+              "hinweis": "halten von + Dativ"
+            },
+            {
+              "de": "Worüber habt ihr so lange diskutiert?",
+              "hinweis": "diskutieren über + Akkusativ"
+            },
+            {
+              "de": "Ich bin dafür, dass alle mitentscheiden dürfen.",
+              "hinweis": "da(r)- kann auf einen dass-Satz vorausweisen"
+            }
+          ],
+          "tipp": "Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Wahl, -en",
+          "en": "election, choice",
+          "fr": "l'élection, le choix",
+          "beispiel": "Die Wahl findet im Herbst statt."
+        },
+        {
+          "wort": "wählen",
+          "en": "to vote, elect",
+          "fr": "voter, élire",
+          "beispiel": "Ab 18 Jahren darf man wählen."
+        },
+        {
+          "wort": "die Partei, -en",
+          "en": "political party",
+          "fr": "le parti",
+          "beispiel": "Mehrere Parteien sind im Parlament vertreten."
+        },
+        {
+          "wort": "sich engagieren für",
+          "en": "to get involved in",
+          "fr": "s'engager pour",
+          "beispiel": "Sie engagiert sich für Bildung."
+        },
+        {
+          "wort": "das Ehrenamt, ¨-er",
+          "en": "voluntary work",
+          "fr": "le bénévolat",
+          "beispiel": "Viele Menschen arbeiten im Ehrenamt."
+        },
+        {
+          "wort": "die Gerechtigkeit (Sg.)",
+          "en": "justice",
+          "fr": "la justice",
+          "beispiel": "Es geht ihnen um soziale Gerechtigkeit."
+        },
+        {
+          "wort": "die Gleichberechtigung (Sg.)",
+          "en": "equal rights",
+          "fr": "l'égalité des droits",
+          "beispiel": "Gleichberechtigung ist noch nicht überall selbstverständlich."
+        },
+        {
+          "wort": "sich einsetzen für",
+          "en": "to stand up for",
+          "fr": "défendre, militer pour",
+          "beispiel": "Er setzt sich für bessere Radwege ein."
+        },
+        {
+          "wort": "die Gesellschaft, -en",
+          "en": "society",
+          "fr": "la société",
+          "beispiel": "Unsere Gesellschaft verändert sich schnell."
+        },
+        {
+          "wort": "die Mehrheit / die Minderheit",
+          "en": "majority / minority",
+          "fr": "la majorité / la minorité",
+          "beispiel": "Die Mehrheit war dagegen."
+        },
+        {
+          "wort": "das Gesetz, -e",
+          "en": "law",
+          "fr": "la loi",
+          "beispiel": "Das neue Gesetz gilt ab Januar."
+        },
+        {
+          "wort": "skeptisch",
+          "en": "sceptical",
+          "fr": "sceptique",
+          "beispiel": "Ich bin da eher skeptisch."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Meinung äußern",
+          "saetze": [
+            "Davon halte ich ehrlich gesagt wenig.",
+            "Ich bin absolut dafür / dagegen, dass …",
+            "Meiner Ansicht nach …"
+          ]
+        },
+        {
+          "funktion": "widersprechen",
+          "saetze": [
+            "Da bin ich ganz anderer Meinung.",
+            "Das kann man so nicht sagen.",
+            "Dem würde ich widersprechen, weil …"
+          ]
+        },
+        {
+          "funktion": "nachhaken",
+          "saetze": [
+            "Worauf stützt sich das?",
+            "Wofür genau setzen Sie sich ein?",
+            "Woran denken Sie dabei konkret?"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "— Ich bin gegen diesen Vorschlag. — Ich bin auch ___. (Präpositionaladverb)",
+          "loesung": [
+            "dagegen"
+          ],
+          "erklaerung": "gegen + Sache → dagegen."
+        },
+        {
+          "typ": "mc",
+          "frage": "___ interessierst du dich am meisten?",
+          "optionen": [
+            "Wofür",
+            "Für wen",
+            "Dafür"
+          ],
+          "loesung": "Wofür",
+          "erklaerung": "sich interessieren für + Sache → Frage mit wofür."
+        },
+        {
+          "typ": "gap",
+          "frage": "Sie hat lange ___ gesprochen, dass sich etwas ändern muss. (darüber/davon?)",
+          "loesung": [
+            "darüber"
+          ],
+          "erklaerung": "sprechen über + Akkusativ → darüber, mit r vor dem Vokal."
+        },
+        {
+          "typ": "mc",
+          "frage": "Ich denke oft an meine Großmutter. → ",
+          "optionen": [
+            "Ich denke oft daran.",
+            "Ich denke oft an sie.",
+            "Ich denke oft davon."
+          ],
+          "loesung": "Ich denke oft an sie.",
+          "erklaerung": "Bei Personen bleibt die Präposition mit Pronomen — da(r)- nur bei Sachen."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ haltet ihr von dem neuen Gesetz? (Fragewort mit wo(r)-)",
+          "loesung": [
+            "Was"
+          ],
+          "erklaerung": "halten von in der Bedeutung 'bewerten' fragt mit Was hältst du von …? — nicht mit wovon."
+        }
+      ]
+    },
+    {
+      "nr": 19,
+      "modul": 7,
+      "thema": "Tourismus",
+      "titel": "Je länger ich unterwegs bin, desto mehr entdecke ich",
+      "kurz": "Reisen planen und bewerten — Verhältnisse ausdrücken und freundlicher klingen.",
+      "bild": {
+        "id": "photo-1551632811-561732d1e306",
+        "alt": "Zwei Wanderer mit Rucksäcken gehen auf schneebedeckte Berge zu",
+        "fotograf": "Toomas Tartes",
+        "profil": "https://unsplash.com/@toomastartes"
+      },
+      "lernziele": [
+        "eine Reise beschreiben und Empfehlungen geben",
+        "je … desto/umso korrekt bilden",
+        "mit Modalpartikeln freundlicher und natürlicher sprechen"
+      ],
+      "grammatik": [
+        {
+          "titel": "je … desto / umso",
+          "erklaerung": "Diese zweiteilige Konjunktion zeigt, dass zwei Dinge sich gemeinsam verändern. Der je-Teil ist ein Nebensatz (Verb am Ende), der desto-Teil ein Hauptsatz (Verb direkt nach desto + Komparativ). In beiden Teilen steht ein Komparativ.",
+          "tabelle": {
+            "kopf": [
+              "Teil",
+              "Struktur",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Nebensatz",
+                "je + Komparativ … Verb",
+                "Je früher man bucht,"
+              ],
+              [
+                "Hauptsatz",
+                "desto/umso + Komparativ + Verb + Subjekt",
+                "desto günstiger wird die Reise."
+              ],
+              [
+                "ganzer Satz",
+                "",
+                "Je länger der Urlaub dauert, umso entspannter werde ich."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Je mehr Menschen mitfahren, desto billiger wird es für alle.",
+              "hinweis": "mehr = Komparativ von viel"
+            },
+            {
+              "de": "Je älter ich wurde, desto lieber reiste ich allein.",
+              "hinweis": "auch in der Vergangenheit möglich"
+            }
+          ],
+          "tipp": "desto und umso sind austauschbar. Der Hauptsatz folgt immer auf den je-Satz — nie umgekehrt."
+        },
+        {
+          "titel": "Modalpartikeln",
+          "erklaerung": "Modalpartikeln verändern den Ton eines Satzes, nicht seinen Inhalt. Sie stehen im Mittelfeld und sind im gesprochenen Deutsch sehr häufig. Ohne sie klingt man oft hart oder unfreundlich.",
+          "tabelle": {
+            "kopf": [
+              "Partikel",
+              "Wirkung",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "denn",
+                "freundliche Frage",
+                "Wo bist du denn gewesen?"
+              ],
+              [
+                "eigentlich",
+                "beiläufige Frage",
+                "Gibt es hier eigentlich ein Museum?"
+              ],
+              [
+                "doch",
+                "freundliche Aufforderung / Bitte",
+                "Komm doch einfach mit!"
+              ],
+              [
+                "ja",
+                "Bezug auf gemeinsames Wissen",
+                "Du warst ja schon einmal dort."
+              ],
+              [
+                "mal",
+                "macht eine Bitte kleiner",
+                "Schau mal kurz auf die Karte."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Wie war es denn in den Bergen?",
+              "hinweis": "echtes Interesse"
+            },
+            {
+              "de": "Fahr doch mal mit dem Zug statt mit dem Auto.",
+              "hinweis": "doch + mal = freundlicher Vorschlag"
+            }
+          ],
+          "tipp": "Modalpartikeln werden nie betont und stehen nie auf Position 1."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Unterkunft, ¨-e",
+          "en": "accommodation",
+          "fr": "l'hébergement",
+          "beispiel": "Wir haben eine günstige Unterkunft gefunden."
+        },
+        {
+          "wort": "die Sehenswürdigkeit, -en",
+          "en": "sight, attraction",
+          "fr": "le site touristique",
+          "beispiel": "Die bekannteste Sehenswürdigkeit ist der Dom."
+        },
+        {
+          "wort": "besichtigen",
+          "en": "to visit, view",
+          "fr": "visiter",
+          "beispiel": "Morgen besichtigen wir die Altstadt."
+        },
+        {
+          "wort": "buchen",
+          "en": "to book",
+          "fr": "réserver",
+          "beispiel": "Je früher man bucht, desto billiger wird es."
+        },
+        {
+          "wort": "die Reiseroute, -n",
+          "en": "itinerary",
+          "fr": "l'itinéraire",
+          "beispiel": "Unsere Reiseroute führt durch drei Länder."
+        },
+        {
+          "wort": "der Ausflug, ¨-e",
+          "en": "excursion",
+          "fr": "l'excursion",
+          "beispiel": "Wir machen einen Ausflug an den See."
+        },
+        {
+          "wort": "sich lohnen",
+          "en": "to be worth it",
+          "fr": "valoir la peine",
+          "beispiel": "Der Umweg lohnt sich wirklich."
+        },
+        {
+          "wort": "überfüllt",
+          "en": "overcrowded",
+          "fr": "bondé",
+          "beispiel": "Im August ist alles überfüllt."
+        },
+        {
+          "wort": "die Nebensaison (Sg.)",
+          "en": "off-season",
+          "fr": "la basse saison",
+          "beispiel": "In der Nebensaison ist es viel ruhiger."
+        },
+        {
+          "wort": "der Reiseführer, -",
+          "en": "guidebook; tour guide",
+          "fr": "le guide",
+          "beispiel": "Im Reiseführer steht ein guter Tipp dazu."
+        },
+        {
+          "wort": "die Landschaft, -en",
+          "en": "landscape",
+          "fr": "le paysage",
+          "beispiel": "Die Landschaft dort ist atemberaubend."
+        },
+        {
+          "wort": "entdecken",
+          "en": "to discover",
+          "fr": "découvrir",
+          "beispiel": "Wir haben ein kleines Dorf entdeckt."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "eine Reise empfehlen",
+          "saetze": [
+            "Besonders lohnt sich ein Besuch in …",
+            "Was du dir unbedingt ansehen solltest, ist …",
+            "Fahr doch mal in der Nebensaison."
+          ]
+        },
+        {
+          "funktion": "von einer Reise erzählen",
+          "saetze": [
+            "Am beeindruckendsten fand ich …",
+            "Was mich überrascht hat, war …",
+            "Je länger wir dort waren, desto besser gefiel es uns."
+          ]
+        },
+        {
+          "funktion": "nachfragen",
+          "saetze": [
+            "Wie war es denn dort?",
+            "Gibt es eigentlich auch günstige Unterkünfte?",
+            "Was würdest du mir empfehlen?"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "___ früher man bucht, ___ billiger wird der Flug.",
+          "loesung": [
+            "Je desto",
+            "Je ... desto",
+            "Je umso",
+            "Je ... umso"
+          ],
+          "erklaerung": "je + Komparativ im Nebensatz, desto/umso + Komparativ im Hauptsatz."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist korrekt?",
+          "optionen": [
+            "Je mehr ich lerne, desto ich verstehe mehr.",
+            "Je mehr ich lerne, desto mehr verstehe ich.",
+            "Desto mehr ich lerne, je mehr verstehe ich."
+          ],
+          "loesung": "Je mehr ich lerne, desto mehr verstehe ich.",
+          "erklaerung": "Nach desto + Komparativ folgt das Verb, dann das Subjekt."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welche Partikel macht die Frage freundlicher? „Wo warst du ___?“",
+          "optionen": [
+            "denn",
+            "doch",
+            "ja"
+          ],
+          "loesung": "denn",
+          "erklaerung": "denn signalisiert echtes Interesse in Fragen."
+        },
+        {
+          "typ": "gap",
+          "frage": "Komm ___ einfach mit! (freundliche Aufforderung)",
+          "loesung": [
+            "doch"
+          ],
+          "erklaerung": "doch macht eine Aufforderung einladend statt befehlend."
+        },
+        {
+          "typ": "gap",
+          "frage": "___ länger die Fahrt dauerte, ___ müder wurden wir.",
+          "loesung": [
+            "Je desto",
+            "Je ... desto",
+            "Je umso",
+            "Je ... umso"
+          ],
+          "erklaerung": "Auch in der Vergangenheit mit je … desto."
+        }
+      ]
+    },
+    {
+      "nr": 20,
+      "modul": 7,
+      "thema": "Regeln",
+      "titel": "Indem man sich vorbereitet, vermeidet man Probleme",
+      "kurz": "Regeln und Sicherheitshinweise verstehen — Mittel und Folge ausdrücken.",
+      "bild": {
+        "id": "photo-1760810555574-33a9f9224df3",
+        "alt": "Wegweiser mit Regeln für Wanderer und Radfahrer in den Bergen",
+        "fotograf": "Duyet Le",
+        "profil": "https://unsplash.com/@duyetle"
+      },
+      "lernziele": [
+        "Regeln und Hinweise verstehen und formulieren",
+        "ein Mittel mit indem ausdrücken",
+        "eine Folge mit sodass ausdrücken"
+      ],
+      "grammatik": [
+        {
+          "titel": "indem (Mittel / Methode)",
+          "erklaerung": "indem beantwortet die Frage: Wie? Auf welche Weise? Es leitet einen Nebensatz ein (Verb am Ende) und nennt das Mittel, mit dem etwas erreicht wird.",
+          "tabelle": {
+            "kopf": [
+              "Frage",
+              "Satz"
+            ],
+            "zeilen": [
+              [
+                "Wie spart man Energie?",
+                "Indem man weniger heizt, spart man viel Energie."
+              ],
+              [
+                "Wie bereitet man sich vor?",
+                "Man bereitet sich vor, indem man die Route vorher notiert."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Indem du jeden Tag zehn Minuten übst, machst du schnelle Fortschritte.",
+              "hinweis": "Mittel vorn"
+            },
+            {
+              "de": "Du kannst viel Geld sparen, indem du mit dem Rad fährst.",
+              "hinweis": "Mittel hinten"
+            }
+          ],
+          "tipp": "Nicht verwechseln: in dem (Präposition + Artikel, z. B. in dem Buch) ≠ indem (Konjunktion)."
+        },
+        {
+          "titel": "sodass (Folge)",
+          "erklaerung": "sodass nennt die Folge einer Handlung und leitet einen Nebensatz ein (Verb am Ende). Oft lassen sich indem- und sodass-Sätze ineinander umformen.",
+          "tabelle": {
+            "kopf": [
+              "Mittel",
+              "Folge"
+            ],
+            "zeilen": [
+              [
+                "Indem du Route und Ziel notierst,",
+                "kann man dich leichter finden."
+              ],
+              [
+                "Notiere Route und Ziel,",
+                "sodass man dich leichter finden kann."
+              ],
+              [
+                "Es hat stark geschneit,",
+                "sodass der Weg gesperrt wurde."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Der Kurs ist gut strukturiert, sodass man schnell vorankommt.",
+              "hinweis": "Folge"
+            },
+            {
+              "de": "Er sprach sehr deutlich, sodass ihn alle verstanden.",
+              "hinweis": "auch: so deutlich, dass …"
+            }
+          ],
+          "tipp": "Variante mit Betonung: Er sprach so deutlich, dass ihn alle verstanden."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Vorschrift, -en",
+          "en": "regulation",
+          "fr": "la prescription",
+          "beispiel": "Die Vorschriften gelten für alle."
+        },
+        {
+          "wort": "die Sicherheit (Sg.)",
+          "en": "safety, security",
+          "fr": "la sécurité",
+          "beispiel": "Sicherheit geht vor."
+        },
+        {
+          "wort": "verboten sein",
+          "en": "to be forbidden",
+          "fr": "être interdit",
+          "beispiel": "Hier ist Rauchen verboten."
+        },
+        {
+          "wort": "erlaubt sein",
+          "en": "to be allowed",
+          "fr": "être permis",
+          "beispiel": "Fotografieren ist erlaubt."
+        },
+        {
+          "wort": "beachten",
+          "en": "to observe, pay attention to",
+          "fr": "respecter, tenir compte de",
+          "beispiel": "Bitte beachten Sie die Hinweise."
+        },
+        {
+          "wort": "vermeiden (vermied, vermieden)",
+          "en": "to avoid",
+          "fr": "éviter",
+          "beispiel": "So vermeidet man unnötige Risiken."
+        },
+        {
+          "wort": "die Gefahr, -en",
+          "en": "danger",
+          "fr": "le danger",
+          "beispiel": "Bei Nebel besteht erhöhte Gefahr."
+        },
+        {
+          "wort": "verunglücken",
+          "en": "to have an accident",
+          "fr": "avoir un accident",
+          "beispiel": "Jedes Jahr verunglücken Wanderer im Gebirge."
+        },
+        {
+          "wort": "die Ausrüstung (Sg.)",
+          "en": "equipment",
+          "fr": "l'équipement",
+          "beispiel": "Ohne passende Ausrüstung sollte man nicht losgehen."
+        },
+        {
+          "wort": "sich vorbereiten auf",
+          "en": "to prepare for",
+          "fr": "se préparer à",
+          "beispiel": "Bereiten Sie sich gut auf die Tour vor."
+        },
+        {
+          "wort": "die Haftung (Sg.)",
+          "en": "liability",
+          "fr": "la responsabilité",
+          "beispiel": "Für Unfälle übernehmen wir keine Haftung."
+        },
+        {
+          "wort": "rücksichtsvoll",
+          "en": "considerate",
+          "fr": "prévenant",
+          "beispiel": "Verhalten Sie sich rücksichtsvoll."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Regeln formulieren",
+          "saetze": [
+            "Bitte beachten Sie, dass …",
+            "Es ist nicht gestattet, … zu …",
+            "Grundsätzlich gilt: …"
+          ]
+        },
+        {
+          "funktion": "Tipps geben",
+          "saetze": [
+            "Am besten gehen Sie so vor: …",
+            "Indem Sie … , vermeiden Sie …",
+            "Achten Sie unbedingt darauf, dass …"
+          ]
+        },
+        {
+          "funktion": "auf Regeln reagieren",
+          "saetze": [
+            "Das leuchtet mir ein.",
+            "Ist das wirklich nötig?",
+            "Dann halte ich mich natürlich daran."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "___ man früh losgeht, vermeidet man die größte Hitze.",
+          "loesung": [
+            "Indem"
+          ],
+          "erklaerung": "indem nennt das Mittel: Wie vermeidet man die Hitze?"
+        },
+        {
+          "typ": "mc",
+          "frage": "Der Weg war gut markiert, ___ wir uns nicht verlaufen haben.",
+          "optionen": [
+            "indem",
+            "sodass",
+            "damit"
+          ],
+          "loesung": "sodass",
+          "erklaerung": "Hier steht die Folge der guten Markierung."
+        },
+        {
+          "typ": "gap",
+          "frage": "Du sparst Strom, ___ du das Licht ausschaltest.",
+          "loesung": [
+            "indem"
+          ],
+          "erklaerung": "Mittel / Methode → indem."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz nennt ein Mittel?",
+          "optionen": [
+            "Es regnete stark, sodass wir umkehrten.",
+            "Indem wir umkehrten, vermieden wir Gefahr.",
+            "Wir kehrten um, weil es regnete."
+          ],
+          "loesung": "Indem wir umkehrten, vermieden wir Gefahr.",
+          "erklaerung": "indem = auf welche Weise."
+        },
+        {
+          "typ": "gap",
+          "frage": "Er erklärte alles sehr genau, ___ jeder es verstand.",
+          "loesung": [
+            "sodass"
+          ],
+          "erklaerung": "Folge eines Verhaltens → sodass."
+        }
+      ]
+    },
+    {
+      "nr": 21,
+      "modul": 7,
+      "thema": "Konzerte und Veranstaltungen",
+      "titel": "Vorher muss noch viel organisiert werden",
+      "kurz": "Eine Veranstaltung vorbereiten — sagen, was getan werden muss.",
+      "bild": {
+        "id": "photo-1470229722913-7c0e2dbbafd3",
+        "alt": "Bühnenlicht über dem Publikum bei einem Konzert",
+        "fotograf": "Yvette de Wit",
+        "profil": "https://unsplash.com/@yvettedewit"
+      },
+      "lernziele": [
+        "Aufgaben bei einer Veranstaltung verteilen",
+        "das Passiv Präsens mit Modalverben bilden",
+        "über Konzerte und Kulturangebote sprechen"
+      ],
+      "grammatik": [
+        {
+          "titel": "Passiv mit Modalverben",
+          "erklaerung": "Im Passiv ist wichtig, WAS gemacht wird, nicht wer es macht. Mit Modalverb lautet die Struktur: Modalverb (konjugiert) + Partizip II + werden (Infinitiv am Satzende).",
+          "tabelle": {
+            "kopf": [
+              "Aktiv",
+              "Passiv mit Modalverb"
+            ],
+            "zeilen": [
+              [
+                "Wir müssen die Tickets verkaufen.",
+                "Die Tickets müssen verkauft werden."
+              ],
+              [
+                "Jemand kann die Plakate drucken.",
+                "Die Plakate können gedruckt werden."
+              ],
+              [
+                "Man darf hier nicht rauchen.",
+                "Hier darf nicht geraucht werden."
+              ],
+              [
+                "Man sollte die Technik prüfen.",
+                "Die Technik sollte geprüft werden."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Die Kostüme müssen bis Freitag fertiggestellt werden.",
+              "hinweis": "müssen + Partizip II + werden"
+            },
+            {
+              "de": "Vorher muss natürlich fleißig geübt werden.",
+              "hinweis": "Passiv ohne Subjekt — der Fokus liegt auf der Handlung"
+            }
+          ],
+          "tipp": "Soll die handelnde Person genannt werden: von + Dativ (Die Halle wird von einer Firma gereinigt) oder durch + Akkusativ bei Mitteln/Ursachen."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Veranstaltung, -en",
+          "en": "event",
+          "fr": "l'événement",
+          "beispiel": "Die Veranstaltung ist ausverkauft."
+        },
+        {
+          "wort": "der Auftritt, -e",
+          "en": "performance, appearance",
+          "fr": "la prestation",
+          "beispiel": "Ihr erster Auftritt war ein großer Erfolg."
+        },
+        {
+          "wort": "die Bühne, -n",
+          "en": "stage",
+          "fr": "la scène",
+          "beispiel": "Auf der Bühne standen fünf Musiker."
+        },
+        {
+          "wort": "das Publikum (Sg.)",
+          "en": "audience",
+          "fr": "le public",
+          "beispiel": "Das Publikum war begeistert."
+        },
+        {
+          "wort": "proben",
+          "en": "to rehearse",
+          "fr": "répéter",
+          "beispiel": "Wir proben zweimal pro Woche."
+        },
+        {
+          "wort": "die Generalprobe, -n",
+          "en": "dress rehearsal",
+          "fr": "la répétition générale",
+          "beispiel": "Die Generalprobe ist am Donnerstag."
+        },
+        {
+          "wort": "der Eintritt (Sg.)",
+          "en": "admission",
+          "fr": "l'entrée",
+          "beispiel": "Der Eintritt kostet 12 Euro."
+        },
+        {
+          "wort": "ausverkauft",
+          "en": "sold out",
+          "fr": "complet",
+          "beispiel": "Das Konzert ist leider ausverkauft."
+        },
+        {
+          "wort": "die Werbung (Sg.)",
+          "en": "advertising",
+          "fr": "la publicité",
+          "beispiel": "Für die Werbung ist Jonas zuständig."
+        },
+        {
+          "wort": "aufbauen / abbauen",
+          "en": "to set up / dismantle",
+          "fr": "monter / démonter",
+          "beispiel": "Die Bühne wird am Vortag aufgebaut."
+        },
+        {
+          "wort": "die Tournee, -n",
+          "en": "tour",
+          "fr": "la tournée",
+          "beispiel": "Die Band geht im Sommer auf Tournee."
+        },
+        {
+          "wort": "sich kümmern um",
+          "en": "to take care of",
+          "fr": "s'occuper de",
+          "beispiel": "Wer kümmert sich um die Technik?"
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Aufgaben verteilen",
+          "saetze": [
+            "Könntest du dich um … kümmern?",
+            "Wer übernimmt …?",
+            "Das muss unbedingt vorher erledigt werden."
+          ]
+        },
+        {
+          "funktion": "über ein Konzert sprechen",
+          "saetze": [
+            "Die Stimmung war unglaublich.",
+            "Besonders gut gefallen hat mir …",
+            "Die Akustik war leider nicht optimal."
+          ]
+        },
+        {
+          "funktion": "planen",
+          "saetze": [
+            "Bis wann muss das fertig sein?",
+            "Was fehlt uns noch?",
+            "Dann halten wir Folgendes fest: …"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Die Plakate ___ bis morgen gedruckt ___. (müssen … werden)",
+          "loesung": [
+            "müssen werden",
+            "müssen ... werden"
+          ],
+          "erklaerung": "Modalverb konjugiert + Partizip II + werden am Ende."
+        },
+        {
+          "typ": "mc",
+          "frage": "Aktiv: „Man darf hier nicht rauchen.“ → Passiv:",
+          "optionen": [
+            "Hier darf nicht geraucht werden.",
+            "Hier darf nicht rauchen werden.",
+            "Hier wird nicht rauchen dürfen."
+          ],
+          "loesung": "Hier darf nicht geraucht werden.",
+          "erklaerung": "Unpersönliches Passiv: darf + Partizip II + werden."
+        },
+        {
+          "typ": "gap",
+          "frage": "Die Technik ___ vorher noch geprüft ___. (sollen … werden)",
+          "loesung": [
+            "sollte werden",
+            "sollte ... werden",
+            "soll werden",
+            "soll ... werden"
+          ],
+          "erklaerung": "sollte/soll + geprüft + werden."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist korrektes Passiv?",
+          "optionen": [
+            "Die Halle muss von einer Firma gereinigt werden.",
+            "Die Halle muss eine Firma reinigen werden.",
+            "Die Halle wird müssen gereinigt."
+          ],
+          "loesung": "Die Halle muss von einer Firma gereinigt werden.",
+          "erklaerung": "Die handelnde Person steht mit von + Dativ."
+        },
+        {
+          "typ": "gap",
+          "frage": "Auftrittsmöglichkeiten ___ noch gesucht ___. (müssen … werden, Plural)",
+          "loesung": [
+            "müssen werden",
+            "müssen ... werden"
+          ],
+          "erklaerung": "Das Subjekt steht im Plural → müssen."
+        }
+      ]
+    },
+    {
+      "nr": 22,
+      "modul": 8,
+      "thema": "Geschichte",
+      "titel": "1989 wurde die Mauer geöffnet",
+      "kurz": "Historische Ereignisse berichten — im Passiv der Vergangenheit.",
+      "bild": {
+        "id": "photo-1560969185-ee68ef9080c0",
+        "alt": "Rest der Berliner Mauer mit Absperrung an einer Straße",
+        "fotograf": "Claudio Schwarz",
+        "profil": "https://unsplash.com/@purzlbaum"
+      },
+      "lernziele": [
+        "über historische Ereignisse berichten",
+        "Passiv Präteritum und Passiv Perfekt bilden",
+        "Jahreszahlen und Zeitangaben in Berichten verwenden"
+      ],
+      "grammatik": [
+        {
+          "titel": "Passiv in der Vergangenheit",
+          "erklaerung": "Für historische Berichte braucht man zwei Formen. Passiv Präteritum (wurde + Partizip II) ist die übliche Schriftform. Passiv Perfekt (ist … worden) benutzt man eher mündlich. Achtung: Im Perfekt heißt das Partizip von werden nicht geworden, sondern worden.",
+          "tabelle": {
+            "kopf": [
+              "Zeitform",
+              "Struktur",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "Passiv Präsens",
+                "wird + Partizip II",
+                "Das Gebäude wird renoviert."
+              ],
+              [
+                "Passiv Präteritum",
+                "wurde + Partizip II",
+                "Das Gebäude wurde 1965 gebaut."
+              ],
+              [
+                "Passiv Perfekt",
+                "ist + Partizip II + worden",
+                "Das Gebäude ist 1965 gebaut worden."
+              ],
+              [
+                "Passiv Plusquamperfekt",
+                "war + Partizip II + worden",
+                "Das Gebäude war schon gebaut worden."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Nach dem Krieg wurde das Land in vier Zonen aufgeteilt.",
+              "hinweis": "Passiv Präteritum — typisch für Geschichtstexte"
+            },
+            {
+              "de": "Die Grenze ist 1989 geöffnet worden.",
+              "hinweis": "Passiv Perfekt mit worden"
+            },
+            {
+              "de": "Viele Städte wurden von den Bürgern selbst wieder aufgebaut.",
+              "hinweis": "Urheber mit von + Dativ"
+            }
+          ],
+          "tipp": "Nur Verben mit Akkusativobjekt können ein persönliches Passiv bilden. Ohne Objekt entsteht ein unpersönliches Passiv: Damals wurde viel diskutiert."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "das Ereignis, -se",
+          "en": "event",
+          "fr": "l'événement",
+          "beispiel": "1989 war ein historisches Ereignis."
+        },
+        {
+          "wort": "die Grenze, -n",
+          "en": "border",
+          "fr": "la frontière",
+          "beispiel": "Die Grenze war jahrzehntelang geschlossen."
+        },
+        {
+          "wort": "die Wiedervereinigung (Sg.)",
+          "en": "reunification",
+          "fr": "la réunification",
+          "beispiel": "Die Wiedervereinigung fand 1990 statt."
+        },
+        {
+          "wort": "die Verfassung, -en",
+          "en": "constitution",
+          "fr": "la constitution",
+          "beispiel": "Die Verfassung wurde 1949 beschlossen."
+        },
+        {
+          "wort": "einführen",
+          "en": "to introduce",
+          "fr": "introduire, instaurer",
+          "beispiel": "Das Frauenwahlrecht wurde 1918 eingeführt."
+        },
+        {
+          "wort": "zerstören",
+          "en": "to destroy",
+          "fr": "détruire",
+          "beispiel": "Viele Städte wurden im Krieg zerstört."
+        },
+        {
+          "wort": "der Wiederaufbau (Sg.)",
+          "en": "reconstruction",
+          "fr": "la reconstruction",
+          "beispiel": "Der Wiederaufbau dauerte Jahrzehnte."
+        },
+        {
+          "wort": "die Besatzung (Sg.)",
+          "en": "occupation",
+          "fr": "l'occupation",
+          "beispiel": "Nach 1945 gab es vier Besatzungszonen."
+        },
+        {
+          "wort": "die Flucht (Sg.)",
+          "en": "escape, flight",
+          "fr": "la fuite",
+          "beispiel": "Die Flucht war lebensgefährlich."
+        },
+        {
+          "wort": "beschließen (beschloss, beschlossen)",
+          "en": "to decide, pass (a law)",
+          "fr": "décider, adopter",
+          "beispiel": "Das Gesetz wurde einstimmig beschlossen."
+        },
+        {
+          "wort": "das Jahrhundert, -e",
+          "en": "century",
+          "fr": "le siècle",
+          "beispiel": "Im 20. Jahrhundert veränderte sich alles."
+        },
+        {
+          "wort": "friedlich",
+          "en": "peaceful",
+          "fr": "pacifique",
+          "beispiel": "Die Revolution verlief friedlich."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "berichten",
+          "saetze": [
+            "Im Jahr … wurde …",
+            "Zu dieser Zeit wurde …",
+            "Erst … Jahre später wurde …"
+          ]
+        },
+        {
+          "funktion": "einordnen",
+          "saetze": [
+            "Das war ein entscheidender Moment, weil …",
+            "Bis dahin war es üblich, dass …",
+            "Infolgedessen änderte sich …"
+          ]
+        },
+        {
+          "funktion": "vergleichen",
+          "saetze": [
+            "In meinem Land war die Entwicklung anders: …",
+            "Ähnlich wie in … wurde auch bei uns …",
+            "Darüber wird bei uns bis heute diskutiert."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Die Universität ___ 1810 gegründet. (werden, Passiv Präteritum)",
+          "loesung": [
+            "wurde"
+          ],
+          "erklaerung": "Passiv Präteritum: wurde + Partizip II."
+        },
+        {
+          "typ": "mc",
+          "frage": "Passiv Perfekt von „Man hat das Museum renoviert“:",
+          "optionen": [
+            "Das Museum ist renoviert worden.",
+            "Das Museum ist renoviert geworden.",
+            "Das Museum hat renoviert worden."
+          ],
+          "loesung": "Das Museum ist renoviert worden.",
+          "erklaerung": "Im Passiv Perfekt heißt das Partizip worden, nicht geworden, und das Hilfsverb ist sein."
+        },
+        {
+          "typ": "gap",
+          "frage": "In der BRD ___ die Demokratie eingeführt. (werden, Präteritum)",
+          "loesung": [
+            "wurde"
+          ],
+          "erklaerung": "Singular Subjekt → wurde."
+        },
+        {
+          "typ": "mc",
+          "frage": "Wer die Handlung ausführt, nennt man im Passiv mit:",
+          "optionen": [
+            "für + Akkusativ",
+            "von + Dativ",
+            "mit + Dativ"
+          ],
+          "loesung": "von + Dativ",
+          "erklaerung": "Der Urheber steht mit von + Dativ: von den Bürgern."
+        },
+        {
+          "typ": "gap",
+          "frage": "Damals ___ viel über die Zukunft diskutiert. (werden, Präteritum, unpersönlich)",
+          "loesung": [
+            "wurde"
+          ],
+          "erklaerung": "Unpersönliches Passiv ohne Subjekt: wurde diskutiert."
+        }
+      ]
+    },
+    {
+      "nr": 23,
+      "modul": 8,
+      "thema": "Umwelt und Klima",
+      "titel": "Statt zu klagen, fahre ich lieber Rad",
+      "kurz": "Über Umweltverhalten diskutieren — Alternativen und fehlende Begleitumstände ausdrücken.",
+      "bild": {
+        "id": "photo-1765273558882-2f281ab58454",
+        "alt": "Radfahrende auf einer von Bäumen gesäumten Straße in der Stadt",
+        "fotograf": "Alain ROUILLER",
+        "profil": "https://unsplash.com/@alainrouiller"
+      },
+      "lernziele": [
+        "über Umwelt und Klimaschutz diskutieren",
+        "(an)statt … zu und ohne … zu verwenden",
+        "den Unterschied zu (an)statt dass / ohne dass verstehen"
+      ],
+      "grammatik": [
+        {
+          "titel": "(an)statt … zu und ohne … zu",
+          "erklaerung": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+          "tabelle": {
+            "kopf": [
+              "Subjekte",
+              "Form",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "gleich",
+                "statt … zu",
+                "Ich fahre Rad, statt im Stau zu stehen."
+              ],
+              [
+                "gleich",
+                "ohne … zu",
+                "Er ging weg, ohne sich zu verabschieden."
+              ],
+              [
+                "verschieden",
+                "statt dass",
+                "Ich fahre Rad, statt dass mein Vater mich fährt."
+              ],
+              [
+                "verschieden",
+                "ohne dass",
+                "Die Bürger demonstrieren, ohne dass sich etwas ändert."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Statt neue Kleidung zu kaufen, repariere ich meine alte.",
+              "hinweis": "gleiches Subjekt → Infinitivkonstruktion"
+            },
+            {
+              "de": "Wir leben komfortabel, ohne auf Nachhaltigkeit zu verzichten.",
+              "hinweis": "ohne … zu"
+            },
+            {
+              "de": "Der Verbrauch steigt, ohne dass es jemand bemerkt.",
+              "hinweis": "anderes Subjekt → ohne dass"
+            }
+          ],
+          "tipp": "Nach ohne steht nie ein zusätzliches nicht — die Verneinung steckt schon im Wort."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "der Klimaschutz (Sg.)",
+          "en": "climate protection",
+          "fr": "la protection du climat",
+          "beispiel": "Klimaschutz beginnt im Alltag."
+        },
+        {
+          "wort": "die Umwelt (Sg.)",
+          "en": "environment",
+          "fr": "l'environnement",
+          "beispiel": "Das schadet der Umwelt."
+        },
+        {
+          "wort": "nachhaltig",
+          "en": "sustainable",
+          "fr": "durable",
+          "beispiel": "Wir wollen nachhaltiger leben."
+        },
+        {
+          "wort": "der Verbrauch (Sg.)",
+          "en": "consumption",
+          "fr": "la consommation",
+          "beispiel": "Der Verbrauch ist deutlich gesunken."
+        },
+        {
+          "wort": "verzichten auf",
+          "en": "to do without",
+          "fr": "renoncer à",
+          "beispiel": "Ich verzichte auf Plastiktüten."
+        },
+        {
+          "wort": "der Müll (Sg.)",
+          "en": "waste, rubbish",
+          "fr": "les déchets",
+          "beispiel": "Müll wird bei uns getrennt."
+        },
+        {
+          "wort": "trennen",
+          "en": "to separate, sort",
+          "fr": "trier",
+          "beispiel": "Papier und Plastik muss man trennen."
+        },
+        {
+          "wort": "die erneuerbaren Energien (Pl.)",
+          "en": "renewable energy",
+          "fr": "les énergies renouvelables",
+          "beispiel": "Erneuerbare Energien werden ausgebaut."
+        },
+        {
+          "wort": "der Abgas, -e / die Abgase (Pl.)",
+          "en": "exhaust fumes",
+          "fr": "les gaz d'échappement",
+          "beispiel": "Die Abgase belasten die Luft."
+        },
+        {
+          "wort": "schaden (+ Dat.)",
+          "en": "to harm",
+          "fr": "nuire à",
+          "beispiel": "Das schadet dem Klima."
+        },
+        {
+          "wort": "der öffentliche Nahverkehr (Sg.)",
+          "en": "public transport",
+          "fr": "les transports en commun",
+          "beispiel": "Der Nahverkehr müsste günstiger sein."
+        },
+        {
+          "wort": "umsteigen auf",
+          "en": "to switch to",
+          "fr": "passer à",
+          "beispiel": "Viele steigen aufs Rad um."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Position beziehen",
+          "saetze": [
+            "Ich bin überzeugt, dass …",
+            "Für mich ist entscheidend, dass …",
+            "Statt immer nur zu diskutieren, sollten wir …"
+          ]
+        },
+        {
+          "funktion": "einwenden",
+          "saetze": [
+            "Das mag sein, allerdings …",
+            "Man darf aber nicht vergessen, dass …",
+            "Das lässt sich so pauschal nicht sagen."
+          ]
+        },
+        {
+          "funktion": "Vorschläge machen",
+          "saetze": [
+            "Ein erster Schritt wäre, … zu …",
+            "Sinnvoll wäre es, wenn …",
+            "Dazu gibt es eigentlich keine Alternative."
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "gap",
+          "frage": "Ich fahre mit dem Rad, ___ im Stau ___ stehen. (statt … zu)",
+          "loesung": [
+            "statt zu",
+            "statt ... zu",
+            "anstatt zu",
+            "anstatt ... zu"
+          ],
+          "erklaerung": "Gleiches Subjekt → Infinitivkonstruktion mit statt … zu."
+        },
+        {
+          "typ": "mc",
+          "frage": "Er ging, ___ sich zu verabschieden.",
+          "optionen": [
+            "ohne",
+            "ohne dass",
+            "ohne nicht"
+          ],
+          "loesung": "ohne",
+          "erklaerung": "Gleiches Subjekt und kein zusätzliches nicht."
+        },
+        {
+          "typ": "gap",
+          "frage": "Die Preise steigen, ___ ___ die Politik reagiert. (verschiedene Subjekte)",
+          "loesung": [
+            "ohne dass"
+          ],
+          "erklaerung": "Unterschiedliche Subjekte → ohne dass + Nebensatz."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welcher Satz ist korrekt?",
+          "optionen": [
+            "Statt zu klagen, handelt er.",
+            "Statt klagen zu, handelt er.",
+            "Statt er klagt zu, handelt er."
+          ],
+          "loesung": "Statt zu klagen, handelt er.",
+          "erklaerung": "Struktur: statt + zu + Infinitiv am Ende des Nebensatzes."
+        },
+        {
+          "typ": "gap",
+          "frage": "Wir leben komfortabel, ___ auf Nachhaltigkeit ___ verzichten. (ohne … zu)",
+          "loesung": [
+            "ohne zu",
+            "ohne ... zu"
+          ],
+          "erklaerung": "ohne … zu nennt den fehlenden Umstand."
+        }
+      ]
+    },
+    {
+      "nr": 24,
+      "modul": 8,
+      "thema": "Zukunftsvisionen",
+      "titel": "Wir handeln jetzt, damit sich etwas ändert",
+      "kurz": "Visionen und Absichten formulieren — und irreale Vergleiche ziehen.",
+      "bild": {
+        "id": "photo-1784601758625-9dcefc5a2b71",
+        "alt": "Vertikale Farm mit grünen Pflanzen unter Pflanzenlicht",
+        "fotograf": "Declan Sun",
+        "profil": "https://unsplash.com/@declansun"
+      },
+      "lernziele": [
+        "Absichten und Ziele ausdrücken",
+        "damit und um … zu richtig unterscheiden",
+        "irreale Vergleiche mit als ob formulieren"
+      ],
+      "grammatik": [
+        {
+          "titel": "damit und um … zu (Absicht)",
+          "erklaerung": "Beide antworten auf die Frage Wozu? Welches Ziel? Entscheidend ist das Subjekt: Sind die Subjekte in Haupt- und Nebensatz gleich, kann man um … zu benutzen. Sind sie verschieden, geht nur damit.",
+          "tabelle": {
+            "kopf": [
+              "Subjekte",
+              "Möglich",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "gleich",
+                "um … zu ODER damit",
+                "Wir sparen Energie, um Kosten zu senken."
+              ],
+              [
+                "gleich",
+                "",
+                "Wir sparen Energie, damit wir Kosten senken."
+              ],
+              [
+                "verschieden",
+                "nur damit",
+                "Ich erkläre es noch einmal, damit alle es verstehen."
+              ],
+              [
+                "verschieden",
+                "nicht möglich",
+                "Ich erkläre es, um alle zu verstehen. ✗ (falsche Bedeutung)"
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Drei Familien haben den Betrieb übernommen, damit das Dorf eine Zukunft hat.",
+              "hinweis": "verschiedene Subjekte → damit"
+            },
+            {
+              "de": "Sie zogen aufs Land, um ruhiger zu leben.",
+              "hinweis": "gleiches Subjekt → um … zu"
+            }
+          ],
+          "tipp": "Mit Modalverb geht nur damit: Ich schreibe es auf, damit du es nachlesen kannst."
+        },
+        {
+          "titel": "als ob + Konjunktiv II (irrealer Vergleich)",
+          "erklaerung": "als ob leitet einen Vergleich ein, der nicht der Wirklichkeit entspricht. Im Nebensatz steht der Konjunktiv II, das Verb steht am Ende. Kurzform: als + Konjunktiv II direkt nach als (ohne ob).",
+          "tabelle": {
+            "kopf": [
+              "Form",
+              "Beispiel"
+            ],
+            "zeilen": [
+              [
+                "als ob + Verb am Ende",
+                "Er tut so, als ob er alles wüsste."
+              ],
+              [
+                "als + Verb direkt danach",
+                "Er tut so, als wüsste er alles."
+              ],
+              [
+                "Vergangenheit",
+                "Sie sah aus, als ob sie geweint hätte."
+              ]
+            ]
+          },
+          "beispiele": [
+            {
+              "de": "Wir tun so, als ob wir unendlich viel Zeit hätten.",
+              "hinweis": "Realität: Wir haben wenig Zeit."
+            },
+            {
+              "de": "Es klingt, als wäre das Problem schon gelöst.",
+              "hinweis": "Kurzform ohne ob"
+            }
+          ],
+          "tipp": "Nach als ob steht immer Konjunktiv II — auch wenn der Hauptsatz im Präsens steht."
+        }
+      ],
+      "wortschatz": [
+        {
+          "wort": "die Vision, -en",
+          "en": "vision",
+          "fr": "la vision",
+          "beispiel": "Seine Vision war ein Dorf ohne Autos."
+        },
+        {
+          "wort": "das Ziel, -e",
+          "en": "goal",
+          "fr": "l'objectif",
+          "beispiel": "Unser Ziel ist, bis 2035 klimaneutral zu sein."
+        },
+        {
+          "wort": "umsetzen",
+          "en": "to implement",
+          "fr": "mettre en œuvre",
+          "beispiel": "Die Idee wurde schnell umgesetzt."
+        },
+        {
+          "wort": "die Herausforderung, -en",
+          "en": "challenge",
+          "fr": "le défi",
+          "beispiel": "Die größte Herausforderung ist die Finanzierung."
+        },
+        {
+          "wort": "die Alternative, -n",
+          "en": "alternative",
+          "fr": "l'alternative",
+          "beispiel": "Dazu gibt es keine echte Alternative."
+        },
+        {
+          "wort": "sich zusammenschließen",
+          "en": "to join forces",
+          "fr": "s'unir",
+          "beispiel": "Mehrere Familien haben sich zusammengeschlossen."
+        },
+        {
+          "wort": "die Genossenschaft, -en",
+          "en": "cooperative",
+          "fr": "la coopérative",
+          "beispiel": "Sie gründeten eine Genossenschaft."
+        },
+        {
+          "wort": "die Nachfrage (Sg.)",
+          "en": "demand",
+          "fr": "la demande",
+          "beispiel": "Die Nachfrage nach regionalen Produkten wächst."
+        },
+        {
+          "wort": "fördern",
+          "en": "to promote, support",
+          "fr": "promouvoir, soutenir",
+          "beispiel": "Der Staat fördert solche Projekte."
+        },
+        {
+          "wort": "realistisch",
+          "en": "realistic",
+          "fr": "réaliste",
+          "beispiel": "Ist dieser Plan überhaupt realistisch?"
+        },
+        {
+          "wort": "die Lösung, -en",
+          "en": "solution",
+          "fr": "la solution",
+          "beispiel": "Das löst mehrere Probleme auf einmal."
+        },
+        {
+          "wort": "überzeugt sein von",
+          "en": "to be convinced of",
+          "fr": "être convaincu de",
+          "beispiel": "Ich bin davon überzeugt, dass es funktioniert."
+        }
+      ],
+      "redemittel": [
+        {
+          "funktion": "Überzeugung ausdrücken",
+          "saetze": [
+            "Ich bin davon überzeugt, dass … eine große Rolle spielen wird.",
+            "Für mich besteht kein Zweifel daran, dass …",
+            "Meiner Überzeugung nach …"
+          ]
+        },
+        {
+          "funktion": "Ziele nennen",
+          "saetze": [
+            "Wir tun das, damit …",
+            "Das Ziel dahinter ist, … zu …",
+            "Langfristig geht es darum, …"
+          ]
+        },
+        {
+          "funktion": "kritisch nachfragen",
+          "saetze": [
+            "Ist das realistisch?",
+            "Wir können nicht so tun, als ob …",
+            "Wie soll das konkret funktionieren?"
+          ]
+        }
+      ],
+      "uebungen": [
+        {
+          "typ": "mc",
+          "frage": "Ich erkläre es noch einmal, ___ alle es verstehen.",
+          "optionen": [
+            "um",
+            "damit",
+            "um … zu"
+          ],
+          "loesung": "damit",
+          "erklaerung": "Die Subjekte sind verschieden (ich / alle) → nur damit."
+        },
+        {
+          "typ": "gap",
+          "frage": "Sie ist aufs Land gezogen, ___ ruhiger ___ leben. (um … zu)",
+          "loesung": [
+            "um zu",
+            "um ... zu"
+          ],
+          "erklaerung": "Gleiches Subjekt → um … zu."
+        },
+        {
+          "typ": "gap",
+          "frage": "Er tut so, ___ ___ er alles wüsste. (irrealer Vergleich)",
+          "loesung": [
+            "als ob"
+          ],
+          "erklaerung": "als ob + Konjunktiv II, Verb am Ende."
+        },
+        {
+          "typ": "mc",
+          "frage": "Welche Kurzform ist korrekt?",
+          "optionen": [
+            "Er tut so, als er wüsste alles.",
+            "Er tut so, als wüsste er alles.",
+            "Er tut so, als ob wüsste er alles."
+          ],
+          "loesung": "Er tut so, als wüsste er alles.",
+          "erklaerung": "Ohne ob folgt das Verb direkt auf als."
+        },
+        {
+          "typ": "gap",
+          "frage": "Ich schreibe es auf, ___ du es später nachlesen kannst. (mit Modalverb)",
+          "loesung": [
+            "damit"
+          ],
+          "erklaerung": "Mit Modalverb im Nebensatz ist nur damit möglich."
+        }
+      ]
+    }
+  ]
+}

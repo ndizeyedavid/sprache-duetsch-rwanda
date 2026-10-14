@@ -132,7 +132,7 @@ export function AdminClasses() {
             />
           ) : (
             <>
-              <p className="mb-3 text-xs text-base-content/55">
+              <p className="mb-3 text-xs text-muted">
                 Showing {visible.length} of {rows.length} class groups
               </p>
               <ClassGroupGrid

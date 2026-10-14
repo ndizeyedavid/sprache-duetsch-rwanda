@@ -13,7 +13,7 @@ export function PaypackReconcileForm({ id, onDone }: Props) {
     void reconcilePayment(id, reference.trim(), reason.trim()).then(onDone)
       .catch(err => setError(apiErrorMessage(err, 'Could not reconcile payment.'))).finally(() => setBusy(false));
   }}>
-    <p className="text-xs text-base-content/70">Find this payment in the Paypack dashboard. The phone and amount must match.</p>
+    <p className="text-xs text-muted">Find this payment in the Paypack dashboard. The phone and amount must match.</p>
     <label className="block text-xs">Paypack reference<input className="input input-sm mt-1 w-full" required value={reference} onChange={event => setReference(event.target.value)} /></label>
     <label className="block text-xs">Reason<input className="input input-sm mt-1 w-full" minLength={5} required value={reason} onChange={event => setReason(event.target.value)} /></label>
     {error ? <p className="text-sm text-error" role="alert">{error}</p> : null}

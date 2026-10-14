@@ -6,7 +6,7 @@ import { NAV_ITEM_PAD_Y } from "./constants";
 const HOME_PATHS = new Set(["/dashboard", "/teacher", "/admin", "/admin/finance"]);
 
 const BASE = `relative flex items-center gap-3 rounded-field px-3 font-medium transition-colors duration-150 ${NAV_ITEM_PAD_Y}`;
-const IDLE = "text-base-content/70 hover:bg-base-200 hover:text-base-content active:bg-brand/10 active:text-brand";
+const IDLE = "text-muted hover:bg-base-200 hover:text-base-content active:bg-brand active:text-primary-content";
 const CURRENT = "bg-brand font-semibold text-white";
 
 type SidebarLinkProps = { item: NavItem; pending?: boolean; onNavigate: (to: string) => void };
@@ -27,7 +27,7 @@ export function SidebarLink({ item, pending = false, onNavigate }: SidebarLinkPr
             <span className="truncate">{item.label}</span>
             {pending && !isActive ? <span aria-hidden className="ml-auto size-1.5 animate-pulse rounded-full bg-brand" /> : null}
             {item.badge && !pending ? (
-              <span className={`badge badge-sm ml-auto rounded-full border-0 font-semibold ${isActive ? "bg-white text-brand" : "bg-brand/10 text-brand"}`}>
+              <span className={`badge badge-sm ml-auto rounded-full border-0 font-semibold ${isActive ? "bg-white text-brand" : "bg-brand text-primary-content"}`}>
                 {item.badge > 99 ? "99+" : item.badge}
               </span>
             ) : null}

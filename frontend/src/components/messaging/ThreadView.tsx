@@ -58,9 +58,9 @@ export function ThreadView({ thread, messages, loading, error, onRetry, myId, dr
  <span className="hidden rounded-full bg-base-200 px-2.5 py-1 text-xs font-medium sm:block">{dedupeParticipants(thread.participants).length} members</span>
  </div>
 
- {chatError ? <p role="alert" className="mx-4 mt-3 rounded-box bg-coral-soft px-3 py-2 text-xs font-medium text-[#D8482F]">{chatError}</p> : null}
+ {chatError ? <p role="alert" className="mx-4 mt-3 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-[#D8482F]">{chatError}</p> : null}
 
- <ul ref={listRef} className="flex-1 space-y-3 overflow-y-auto bg-base-200/20 px-4 py-4">
+ <ul ref={listRef} className="flex-1 space-y-3 overflow-y-auto bg-base-200 px-4 py-4">
  {messages.length === 0 ? (
  <li className="py-10 text-center text-xs text-muted">No messages yet — say hello to start the conversation.</li>
  ) : (
@@ -80,7 +80,7 @@ export function ThreadView({ thread, messages, loading, error, onRetry, myId, dr
  rows={1}
  className="textarea max-h-24 min-h-10 flex-1 resize-none rounded-box border-line bg-base-200 text-sm leading-relaxed placeholder:text-muted"
  />
- <button type="submit" disabled={sending || !draft.trim()} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand/90 disabled:opacity-60">
+ <button type="submit" disabled={sending || !draft.trim()} className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
  {sending ? <span className="loading loading-spinner loading-xs" /> : <FiSend aria-hidden />}Send
  </button>
  </form>

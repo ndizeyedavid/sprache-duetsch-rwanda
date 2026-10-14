@@ -69,7 +69,7 @@ export function DiscountRequestForm({ students, onRequested }: { students: Stude
  {disError}
  </p>
  ) : null}
- <button type="submit" disabled={disSaving} className="btn btn-sm rounded-full border-0 bg-sun text-ink hover:bg-sun/90 disabled:opacity-60">
+ <button type="submit" disabled={disSaving} className="btn btn-sm rounded-full border-0 bg-sun text-ink hover:bg-sun hover:text-warning-content disabled:opacity-60">
  {disSaving ? 'Submitting…' : 'Request discount'}
  </button>
  </form>

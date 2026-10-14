@@ -6,6 +6,7 @@ import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./classes.controller.js";
 import {
+attendanceThresholdQuerySchema,
 classIdSchema,
 createClassSchema,
 listClassQuerySchema,
@@ -20,6 +21,15 @@ classesRouter.get(
   requireRole(...ACADEMIC_ROLES),
   validate({ query: listClassQuerySchema }),
   asyncHandler(controller.list),
+);
+
+// Before "/:id": what a class at this level inherits when it has no threshold of its own.
+classesRouter.get(
+  "/attendance-threshold",
+  requireAuth,
+  requireRole(...ADMIN_ROLES),
+  validate({ query: attendanceThresholdQuerySchema }),
+  asyncHandler(controller.attendanceThreshold),
 );
 
 classesRouter.get(

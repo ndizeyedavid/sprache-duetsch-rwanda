@@ -1,9 +1,11 @@
-import { FiLogOut,FiSettings } from "react-icons/fi";
+import { FiBell,FiLogOut,FiSettings } from "react-icons/fi";
 import { useState } from "react";
 import { useLocation,useNavigate } from "react-router-dom";
 import { NAV } from "../../lib/nav";
 import { useSession } from "../../lib/session";
 import type { Role } from "../../types";
+import { NOTIFICATIONS_PATH } from "../notifications/notification-links";
+import { useUnreadNotifications } from "../notifications/unread-context";
 import { Logo } from "../ui/Logo";
 import { SidebarLink } from "./SidebarLink";
 import { NAV_DIVIDER_MY,NAV_ITEM_PAD_Y,NAV_SECTION_PAD_Y } from "./constants";
@@ -17,11 +19,12 @@ type SidebarProps = {
 // daisyUI `menu` pressed state uses these variables; keep it a soft brand tint, never a solid fill.
 const MENU_CLASS =
   "menu w-full gap-1 px-3 py-0 [--menu-active-bg:color-mix(in_oklab,var(--color-brand)_10%,transparent)] [--menu-active-fg:var(--color-brand)]";
-const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-base-content/50";
+const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted";
 
 export function Sidebar({ role, open, onClose }: SidebarProps) {
   const items = NAV[role];
   const { signOut } = useSession();
+  const { count: unread } = useUnreadNotifications();
   const navigate = useNavigate();
   const { pathname } = useLocation();
   // The clicked link shows a pending dot until the router commits the new page.
@@ -46,7 +49,7 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
       ) : null}
 
       <aside
-        className={`workspace-sidebar fixed inset-y-3 left-3 z-50 flex w-60 flex-col rounded-box border border-base-300 bg-base-100/95 backdrop-blur-xl transition-transform duration-300 lg:translate-x-0 ${
+        className={`workspace-sidebar fixed inset-y-3 left-3 z-50 flex w-60 flex-col rounded-box border border-base-300 bg-base-100  transition-transform duration-300 lg:translate-x-0 ${
           open ? "translate-x-0" : "-translate-x-[110%]"
         }`}
       >
@@ -67,6 +70,11 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
           <ul className={MENU_CLASS}>
             <li className={TITLE_CLASS}>General</li>
             <SidebarLink
+              item={{ label: "Notifications", to: NOTIFICATIONS_PATH, icon: FiBell, badge: unread }}
+              pending={pendingTo === NOTIFICATIONS_PATH}
+              onNavigate={go}
+            />
+            <SidebarLink
               item={{ label: "Settings", to: "/settings", icon: FiSettings }}
               pending={pendingTo === "/settings"}
               onNavigate={go}
@@ -75,7 +83,7 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
               <button
                 type="button"
                 onClick={() => void handleLogout()}
-                className={`gap-3 rounded-field px-3 font-medium text-base-content/70 hover:bg-coral-soft hover:text-coral ${NAV_ITEM_PAD_Y}`}
+                className={`gap-3 rounded-field px-3 font-medium text-muted hover:bg-coral hover:text-error-content ${NAV_ITEM_PAD_Y}`}
               >
                 <FiLogOut aria-hidden className="shrink-0 text-lg" />
                 <span>Log out</span>

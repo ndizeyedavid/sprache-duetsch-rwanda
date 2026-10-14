@@ -91,7 +91,9 @@ export const createActivitySchema = z.object({
   instructions: optionalText(5000),
   order: z.coerce.number().int().min(0).optional(),
   isPublished: z.boolean().optional(),
-  config: z.unknown().optional(),
+  // Per-type shapes are documented in activity-keys.ts; legacy keys stay accepted.
+  config: z.record(z.string(), z.unknown()).nullable().optional()
+    .refine((value) => value == null || JSON.stringify(value).length <= 200_000, { message: "Activity content is too large" }),
 });
 
 export const updateActivitySchema = createActivitySchema.partial().refine(

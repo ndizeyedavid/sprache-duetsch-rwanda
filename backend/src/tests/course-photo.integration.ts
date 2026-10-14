@@ -8,6 +8,7 @@ import { env } from '../config/env.js';
 import { assertLevelAccess } from '../lib/access.js';
 import { signAccessToken } from '../lib/jwt.js';
 import { prisma } from '../lib/prisma.js';
+import { requestRegisterOtp } from '../modules/auth/register-otp.js';
 import { registerStudent } from '../modules/auth/register-student.js';
 import { createPayment } from '../modules/payments/payment-commands.js';
 import { safeFilePath } from '../modules/uploads/uploads.service.js';
@@ -34,7 +35,8 @@ try {
   await request(app).post('/api/intakes').set('Authorization', `Bearer ${academicToken}`).send({ code: 'EMPTY', name: 'Empty intake', startDate: new Date(), endDate: new Date(Date.now() + 86400000) }).expect(400);
   await request(app).patch(`/api/intakes/${intakeId}`).set('Authorization', `Bearer ${academicToken}`).send({ levelIds: [] }).expect(400);
   await prisma.intake.update({ where: { id: intakeId }, data: { levels: { connect: levelIds.map(id => ({ id })) } } });
-  const registered = await registerStudent({ firstName: 'Test', lastName: 'Student', email: `${stamp}-student@test.local`, password: 'TestPassword123!', campusId, intakeId, intendedLevelId: levelIds[0], shift: 'EVENING' }, {});
+  const otpFor = async (email: string) => (await requestRegisterOtp({ email })).devCode!;
+  const registered = await registerStudent({ firstName: 'Test', lastName: 'Student', email: `${stamp}-student@test.local`, password: 'TestPassword123!', campusId, intakeId, intendedLevelId: levelIds[0], shift: 'EVENING', otp: await otpFor(`${stamp}-student@test.local`) }, {});
   userIds.push(registered.user.id);
   const student = await prisma.student.findUniqueOrThrow({ where: { userId: registered.user.id } }); studentIds.push(student.id);
   assert.equal(student.intakeId, intakeId);
@@ -57,7 +59,7 @@ try {
   const changed = await request(app).patch(`/api/levels/${levelIds[0]}`).set('Authorization', `Bearer ${academicToken}`).send({ defaultFee: 4321 });
   assert.equal(changed.status, 200); assert.equal(payload(changed).defaultFee, '4321');
   assert.equal((await prisma.enrollment.findUniqueOrThrow({ where: { id: first.id } })).totalFee.toString(), '1234');
-  const next = await registerStudent({ firstName: 'New', lastName: 'Student', email: `${stamp}-next@test.local`, password: 'TestPassword123!', campusId, intakeId, intendedLevelId: levelIds[0], shift: 'EVENING' }, {});
+  const next = await registerStudent({ firstName: 'New', lastName: 'Student', email: `${stamp}-next@test.local`, password: 'TestPassword123!', campusId, intakeId, intendedLevelId: levelIds[0], shift: 'EVENING', otp: await otpFor(`${stamp}-next@test.local`) }, {});
   userIds.push(next.user.id); const nextStudent = await prisma.student.findUniqueOrThrow({ where: { userId: next.user.id } }); studentIds.push(nextStudent.id);
   assert.equal((await prisma.enrollment.findFirstOrThrow({ where: { studentId: nextStudent.id } })).totalFee.toString(), '4321');
   await request(app).patch(`/api/enrollments/${first.id}`).set('Authorization', `Bearer ${academicToken}`).send({ totalFee: 0 }).expect(403);
@@ -96,6 +98,7 @@ try {
 } finally {
   await prisma.auditLog.deleteMany({ where: { OR: [{ actorId: { in: userIds } }, { entityId: { in: [...userIds, ...levelIds] } }] } });
   await prisma.activityEvent.deleteMany({ where: { studentId: { in: studentIds } } });
+  await prisma.emailOtp.deleteMany({ where: { email: { startsWith: stamp } } });
   await prisma.notificationDelivery.deleteMany({ where: { userId: { in: userIds } } });
   await prisma.student.deleteMany({ where: { id: { in: studentIds } } });
   await prisma.uploadedFile.deleteMany({ where: { uploaderId: { in: userIds } } });

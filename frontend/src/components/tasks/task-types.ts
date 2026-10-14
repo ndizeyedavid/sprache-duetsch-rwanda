@@ -28,7 +28,8 @@ export type TaskDraft = {
   // Homework
   homeworkMode: 'questions' | 'work'; responseType: 'TEXT' | 'FILE' | 'AUDIO' | 'MIXED'; estimatedMinutes: number; maxPoints: number;
   allowLate: boolean; maxSubmissions: number; resources: Resource[]; rubric: RubricCriterion[]; studentIds: string[];
-  releaseAt: string | null; dueAt: string | null;
+  releaseAt: string | null; dueAt: string | null; lessonId: string | null;
+  gracePeriodMinutes: number; latePenaltyPercentPerDay: number; latePenaltyMaxPercent: number;
   // Quiz and test
   testType: TestType; durationMinutes: number | null; maxAttempts: number; passMark: number;
   availableFrom: string | null; availableUntil: string | null; protectedMode: boolean;

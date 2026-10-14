@@ -3,6 +3,8 @@
 @import "./styles/motion.css";
 @import "./styles/course-content.css";
 @import "./styles/academic.css";
+@import "./styles/solid-surfaces.css";
+@import "./styles/flat-surfaces.css";
 @plugin "@tailwindcss/typography";
 
 @plugin "daisyui" {
@@ -125,20 +127,10 @@
   }
 }
 
-/* Slow drifting colour pools behind the auth pages (sign in / register). */
-@keyframes auth-drift {
-  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-  50% { transform: translate3d(2.5rem, -1.5rem, 0) scale(1.08); }
-}
-@utility auth-blob {
-  animation: auth-drift 20s ease-in-out infinite;
-  @media (prefers-reduced-motion: reduce) { animation: none; }
-}
-
 /* Shadows intentionally disabled per client request (flat, no elevation). */
 @utility card-shadow {
   /* box-shadow: none; */
-  box-shadow: 0 1px rgba(0, 0, 0, 0.09);
+  box-shadow: none;
 }
 
 /* Compact variant of the global scrollbar (sidebar, course player). Not named
@@ -186,12 +178,12 @@
     border: 2px solid transparent;
     border-radius: 9999px;
     background-clip: padding-box;
-    background-color: color-mix(in oklab, var(--color-base-content) 28%, transparent);
+    background-color: var(--color-base-content);
   }
 
   ::-webkit-scrollbar-thumb:hover,
   ::-webkit-scrollbar-thumb:active {
-    background-color: color-mix(in oklab, var(--color-base-content) 55%, transparent);
+    background-color: var(--color-base-content);
   }
 
   ::-webkit-scrollbar-button {
@@ -202,7 +194,7 @@
   @supports not selector(::-webkit-scrollbar) {
     :root {
       scrollbar-width: thin;
-      scrollbar-color: color-mix(in oklab, var(--color-base-content) 25%, transparent) transparent;
+      scrollbar-color: var(--color-base-content) transparent;
     }
   }
 }
@@ -227,7 +219,7 @@
 .ProseMirror a { color: #fb0d00 !important; font-weight: 600 !important; text-decoration: underline !important; text-underline-offset: 2px !important; text-decoration-thickness: 2px !important; }
 .ProseMirror a:hover { color: #B30A00 !important; }
 .ProseMirror code { background: #fafafa; border: 1px solid #f1f0f3; border-radius: 4px; padding: 1px 4px; font-size: 0.8rem; }
-.ProseMirror img { max-width: 100%; border-radius: 0; margin: 0.75rem auto; display: block; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+.ProseMirror img { max-width: 100%; border-radius: 0; margin: 0.75rem auto; display: block; box-shadow: none; }
 .ProseMirror strong { color: #374557; }
 .ProseMirror em { color: #374557; }
 
@@ -235,7 +227,7 @@
    Mirrors the editor scale; !important beats Tailwind's preflight. */
 .rich-viewer { font-size: 0.95rem; line-height: 1.75; }
 .rich-viewer h1 { font-size: 1.7rem !important; font-weight: 700 !important; line-height: 1.2 !important; border-bottom: 1px solid var(--color-line) !important; padding-bottom: 0.4rem !important; margin: 0.9rem 0 0.4rem !important; }
-.rich-viewer h2 { font-size: 1.35rem !important; font-weight: 700 !important; line-height: 1.3 !important; border-bottom: 1px solid color-mix(in srgb, var(--color-line) 70%, transparent) !important; padding-bottom: 0.3rem !important; margin: 0.75rem 0 0.35rem !important; }
+.rich-viewer h2 { font-size: 1.35rem !important; font-weight: 700 !important; line-height: 1.3 !important; border-bottom: 1px solid var(--color-line) !important; padding-bottom: 0.3rem !important; margin: 0.75rem 0 0.35rem !important; }
 .rich-viewer h3 { font-size: 1.05rem !important; font-weight: 700 !important; letter-spacing: 0.06em !important; text-transform: uppercase !important; color: var(--color-muted) !important; margin: 0.6rem 0 0.3rem !important; }
 .rich-viewer p { margin: 0.75rem 0 !important; }
 .rich-viewer ul { list-style: disc !important; padding-left: 1.5rem !important; margin: 0.75rem 0 !important; }
@@ -244,7 +236,7 @@
 .rich-viewer a { color: #fb0d00 !important; font-weight: 600 !important; text-decoration: underline !important; text-underline-offset: 2px !important; text-decoration-thickness: 2px !important; }
 .rich-viewer a:hover { color: #B30A00 !important; }
 .rich-viewer blockquote { border-left: 3px solid #fb0d00 !important; padding: 0.4rem 0 0.4rem 0.75rem !important; margin: 0.6rem 0 !important; background: #fff1f0 !important; font-style: italic !important; }
-.rich-viewer img { max-width: 100% !important; border-radius: 0 !important; margin: 0.75rem auto !important; display: block !important; box-shadow: 0 1px 6px rgba(0,0,0,0.08) !important; }
+.rich-viewer img { max-width: 100% !important; border-radius: 0 !important; margin: 0.75rem auto !important; display: block !important; box-shadow: none; }
 .rich-viewer code { background: #fafafa !important; border: 1px solid #f1f0f3 !important; border-radius: 4px !important; padding: 1px 4px !important; font-size: 0.8rem !important; }
 .rich-viewer strong { color: var(--color-ink) !important; font-weight: 700 !important; }
 .rich-viewer em { color: var(--color-ink) !important; }
@@ -259,7 +251,5 @@
 }
 
 #nprogress .peg {
-  box-shadow:
-    0 0 10px var(--color-primary),
-    0 0 5px var(--color-primary);
+  box-shadow: none;
 }

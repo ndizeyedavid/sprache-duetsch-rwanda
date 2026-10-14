@@ -1,11 +1,12 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ACADEMIC_ROLES,ADMIN_ROLES,STAFF_ROLES } from "../../lib/roles.js";
+import { ADMIN_ROLES,STAFF_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import * as controller from "./students.controller.js";
-import { listStudentsQuerySchema,placementSchema,studentIdSchema,updateStudentSchema } from "./students.schema.js";
+import { placementRouter } from "./placement.routes.js";
+import { listStudentsQuerySchema,studentIdSchema,updateStudentSchema } from "./students.schema.js";
 
 export const studentsRouter = Router();
 
@@ -24,6 +25,8 @@ studentsRouter.get(
   asyncHandler(controller.myProgress),
 );
 studentsRouter.get("/me/people", requireAuth, requireRole("STUDENT"), asyncHandler(controller.myPeople));
+// Placement test, review queue and decisions (also before "/:id").
+studentsRouter.use(placementRouter);
 
 studentsRouter.get(
   "/",
@@ -72,12 +75,4 @@ studentsRouter.patch(
   requireRole(...ADMIN_ROLES),
   validate({ params: studentIdSchema, body: updateStudentSchema }),
   asyncHandler(controller.update),
-);
-
-studentsRouter.post(
-  "/:id/placement",
-  requireAuth,
-  requireRole(...ACADEMIC_ROLES),
-  validate({ params: studentIdSchema, body: placementSchema }),
-  asyncHandler(controller.placement),
 );

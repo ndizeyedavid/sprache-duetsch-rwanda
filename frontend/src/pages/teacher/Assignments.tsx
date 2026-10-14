@@ -56,8 +56,8 @@ export function TeacherAssignments() {
       {message ? <p role="alert" className="alert alert-error alert-soft text-sm">{message}</p> : null}
       {notice ? <p role="status" className="alert alert-success alert-soft text-sm">{notice}</p> : null}
       <TaskFilters items={hub.items} value={filters} onChange={(key, value) => set({ [key]: value }, true)} fetching={hub.fetching} onRefresh={hub.refetch} />
-      <section className="card border border-base-300/70 bg-base-100">
-        {list.length ? <ul className="divide-y divide-base-300/60">{list.map(item => (
+      <section className="card border border-base-300 bg-base-100">
+        {list.length ? <ul className="divide-y divide-base-300">{list.map(item => (
           <TaskRow key={item.key} item={item} onOpen={open} homeworkActions={homeworkActions} assessmentActions={assessmentActions}
             onEdit={i => set({ edit: `${i.source}:${i.id}` })} onResults={() => navigate(`${portal}/grading`)} />
         ))}</ul> : (
