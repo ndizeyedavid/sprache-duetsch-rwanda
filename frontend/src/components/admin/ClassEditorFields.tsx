@@ -2,6 +2,7 @@ import type { CampusItem,IntakeItem,LevelItem } from "../../lib/services";
 import { humanize } from "../../lib/services";
 import type { TeachingTeacher } from "../../lib/teaching";
 import type { ClassDraft } from "./class-draft";
+import { ClassThresholdField } from "./ClassThresholdField";
 
 type Props = {
   draft: ClassDraft;
@@ -140,6 +141,11 @@ export function ClassEditorFields({
           <option value="false">Inactive</option>
         </select>
       </label>
+      <ClassThresholdField
+        levelId={draft.levelId}
+        value={draft.attendanceAlertThreshold}
+        onChange={(attendanceAlertThreshold) => onChange({ attendanceAlertThreshold })}
+      />
     </div>
   );
 }
