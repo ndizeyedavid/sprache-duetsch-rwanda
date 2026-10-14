@@ -1,6 +1,7 @@
 import type { TaskDraft, TaskKind } from '../task-types';
 import { KINDS, TEST_TYPES } from '../task-types';
 import { Field } from './fields';
+import { LessonPicker } from './LessonPicker';
 
 type Option = { id: string; label: string };
 type Props = { draft: TaskDraft; update: (p: Partial<TaskDraft>) => void; switchKind: (k: TaskKind) => void; creating: boolean; locked: boolean; classes: Option[]; levels: Option[] };
@@ -26,7 +27,7 @@ export function BasicsStep({ draft: d, update, switchKind, creating, locked, cla
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label={homework ? 'Class' : 'Level'}>
           <select className="select select-sm w-full" disabled={!creating && homework} value={homework ? d.classGroupId : d.levelId}
-            onChange={e => update(homework ? { classGroupId: e.target.value, studentIds: [] } : { levelId: e.target.value })}>
+            onChange={e => update(homework ? { classGroupId: e.target.value, studentIds: [], lessonId: null } : { levelId: e.target.value })}>
             <option value="">Choose a {homework ? 'class' : 'level'}</option>
             {(homework ? classes : levels).map(o => <option key={o.id} value={o.id}>{o.label}</option>)}
           </select>
@@ -38,6 +39,7 @@ export function BasicsStep({ draft: d, update, switchKind, creating, locked, cla
             </select>
           </Field>
         ) : null}
+        {homework ? <LessonPicker classGroupId={d.classGroupId} value={d.lessonId} onChange={lessonId => update({ lessonId })} /> : null}
       </div>
       <Field label="Title">
         <input className="input w-full text-base font-medium" maxLength={160} placeholder={homework ? 'e.g. Introduce yourself in German' : 'e.g. A1 Unit 3 — Numbers and time'}
