@@ -1,7 +1,7 @@
 export const campuses = [
   {
     code: "NORRSKEN",
-    name: "Around Norrsken",
+    name: "Near Norrsken",
     address: "Near Norrsken House, Kigali, Rwanda",
     phone: "+250 788 883 379",
     email: "info@deutshsprache.org",
