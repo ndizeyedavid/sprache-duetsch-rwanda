@@ -1,5 +1,6 @@
 import type { TaskDraft, TaskStatus } from '../task-types';
 import { DateTimeField, Field, NumberField, Segmented, Toggle } from './fields';
+import { LatePolicyFields } from './LatePolicyFields';
 import { RecipientPicker } from './RecipientPicker';
 
 type Props = { draft: TaskDraft; update: (p: Partial<TaskDraft>) => void; locked: boolean; existing: boolean };
@@ -23,7 +24,8 @@ export function SettingsStep({ draft: d, update, locked, existing }: Props) {
             <NumberField label="Expected effort (minutes)" value={d.estimatedMinutes} min={1} max={600} onChange={estimatedMinutes => update({ estimatedMinutes })} />
             <NumberField label="Submissions allowed" hint="Includes revisions you request." value={d.maxSubmissions} min={1} max={20} onChange={maxSubmissions => update({ maxSubmissions })} />
           </div>
-          <Toggle label="Accept late work" hint="Late work is labelled late." checked={d.allowLate} onChange={allowLate => update({ allowLate })} />
+          <Toggle label="Accept late work" hint={d.allowLate ? 'Late work is labelled late. Set an optional penalty below.' : 'Submissions close at the deadline (or a student’s extension).'} checked={d.allowLate} onChange={allowLate => update({ allowLate })} />
+          {d.allowLate ? <LatePolicyFields draft={d} update={update} /> : null}
           <Field label="Students"><RecipientPicker classGroupId={d.classGroupId} value={d.studentIds} disabled={locked} onChange={studentIds => update({ studentIds })} /></Field>
         </>
       ) : (
