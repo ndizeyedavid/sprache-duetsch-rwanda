@@ -1,8 +1,13 @@
 import type { FormEvent } from 'react';
 import { apiErrorMessage } from '../../lib/api';
-import { register } from '../../lib/auth-store';
-export function createHandleSubmit(context: { password: string; shift: import("../../lib/auth-store").RegisterPayload["shift"]; setError: import("react").Dispatch<import("react").SetStateAction<string | null>>; fullName: string; campusId: string; setPending: import("react").Dispatch<import("react").SetStateAction<boolean>>; email: string; phone: string; intakeId: string; intendedLevelId: string; navigate: import("../../../node_modules/react-router-dom/dist/index").NavigateFunction }) {
-const { password, shift, setError, fullName, campusId, setPending, email, phone, intakeId, intendedLevelId, navigate } = context;
+import type { RegisterOtpResult, RegisterPayload } from '../../lib/auth-store';
+import { requestRegisterOtp } from '../../lib/auth-store';
+
+export type PendingRegistration = Omit<RegisterPayload, 'otp'>;
+
+/** Validates the sign-up form, then emails a verification code; the account is created on the next step. */
+export function createHandleSubmit(context: { password: string; shift: RegisterPayload['shift']; setError: import("react").Dispatch<import("react").SetStateAction<string | null>>; fullName: string; campusId: string; setPending: import("react").Dispatch<import("react").SetStateAction<boolean>>; email: string; phone: string; intakeId: string; intendedLevelId: string; onCodeSent: (payload: PendingRegistration, sent: RegisterOtpResult) => void }) {
+const { password, shift, setError, fullName, campusId, setPending, email, phone, intakeId, intendedLevelId, onCodeSent } = context;
 async function handleSubmit(event: FormEvent) {
  event.preventDefault();
  setError(null);
@@ -18,9 +23,7 @@ async function handleSubmit(event: FormEvent) {
  return;
  }
 
- setPending(true);
- try {
- await register({
+ const payload: PendingRegistration = {
  firstName: parts[0] ?? '',
  lastName: parts.length > 1 ? parts.slice(1).join(' ') : parts[0] ?? '',
  email: email.trim(),
@@ -30,10 +33,12 @@ async function handleSubmit(event: FormEvent) {
  shift,
  intakeId: intakeId || undefined,
  intendedLevelId: intendedLevelId || undefined,
- });
- navigate('/dashboard', { replace: true });
+ };
+ setPending(true);
+ try {
+ onCodeSent(payload, await requestRegisterOtp(payload.email, payload.firstName));
  } catch (err) {
- setError(apiErrorMessage(err, 'Could not create your account. Please try again.'));
+ setError(apiErrorMessage(err, 'Could not send your verification code. Please try again.'));
  } finally {
  setPending(false);
  }
