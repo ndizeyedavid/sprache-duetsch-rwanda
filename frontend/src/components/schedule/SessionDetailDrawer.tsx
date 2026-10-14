@@ -1,12 +1,13 @@
-import { FiCalendar,FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
-import { isoDate,isoTime } from '../../lib/services';
+import { FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
 import { sessionStatusLabel,sessionTone,teacherName } from '../../lib/sessions-ui';
 import { TONE_CLASSES } from '../../lib/theme';
+import { CancelReasonNote } from './CancelReasonNote';
 import { SessionLifecycle } from './SessionLifecycle';
 import type { SessionMaterial } from './SessionMaterials';
 import { SessionMaterials } from './SessionMaterials';
+import { SessionTimes } from './SessionTimes';
 
-type Session = { id: string; title: string; startAt: string; endAt: string; timezone: string | null; mode: string; provider: string | null; status: string; meetingUrl: string | null; room: string | null; notes: string | null; recordingUrl?: string | null; materials?: SessionMaterial[]; teacher: { firstName: string; lastName: string } | null; classGroup: { id: string; name: string } | null };
+type Session = { id: string; title: string; startAt: string; endAt: string; timezone: string | null; mode: string; provider: string | null; status: string; cancelReason?: string | null; meetingUrl: string | null; room: string | null; notes: string | null; recordingUrl?: string | null; materials?: SessionMaterial[]; teacher: { firstName: string; lastName: string } | null; classGroup: { id: string; name: string } | null };
 
 type Props = { open: boolean; onClose: () => void; session: Session | null; onEdit: () => void; onCancel: () => void; onReschedule: () => void; onSaved?: () => void };
 
@@ -24,14 +25,12 @@ export function SessionDetailDrawer({ open, onClose, session, onEdit, onCancel, 
  <div className="shrink-0 border-b border-line p-5 pr-12">
  <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-medium ${tc.soft} ${tc.text}`}>{expired && !['COMPLETED','CANCELLED'].includes(session.status) ? 'Ended' : sessionStatusLabel(session.status)}</span>
  <h3 className="mt-2 text-base font-bold leading-tight">{session.title || 'Untitled session'}</h3>
- <p className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted">
- <FiCalendar aria-hidden />{isoDate(session.startAt)} · {isoTime(session.startAt)} – {isoTime(session.endAt)}
- {` · ${Intl.DateTimeFormat().resolvedOptions().timeZone}`}
- </p>
+ <SessionTimes startAt={session.startAt} endAt={session.endAt} timezone={session.timezone} />
  <button type="button" onClick={onClose} className="btn btn-ghost btn-xs btn-circle absolute right-3 top-3"><FiX aria-hidden /></button>
  </div>
  <div className="flex-1 overflow-y-auto p-5">
  <div className="space-y-4">
+ <CancelReasonNote status={session.status} reason={session.cancelReason} />
  <SessionLifecycle session={session} onSaved={onSaved ?? (() => {})} />
  <SessionMaterials id={session.id} materials={session.materials ?? []} manage onSaved={onSaved} />
  <div className="rounded-box bg-base-200 p-4">
