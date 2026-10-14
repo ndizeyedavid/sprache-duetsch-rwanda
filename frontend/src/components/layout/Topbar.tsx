@@ -1,27 +1,17 @@
-import { profilePhotoUrl } from '../../lib/profile-photo';
-import { useState } from "react";
-import {
-FiChevronDown,
-FiGlobe,
-FiLogOut,
-FiMenu,
-FiSettings,
-FiUser,
-} from "react-icons/fi";
+import { FiChevronDown,FiLogOut,FiMenu,FiSettings,FiUser } from "react-icons/fi";
 import { Link,useNavigate } from "react-router-dom";
+import { profilePhotoUrl } from "../../lib/profile-photo";
 import { roleLabel } from "../../lib/roles";
 import { useSession } from "../../lib/session";
-import { SearchField } from "../ui/SearchField";
-
-const LANGUAGES = ["Deutsch", "English", "Kinyarwanda"];
+import { NotificationBell } from "../notifications/NotificationBell";
 
 type TopbarProps = {
   title: string;
   onMenu: () => void;
 };
 
+/** Hamburger (mobile), page title, notification bell and the account menu. */
 export function Topbar({ title, onMenu }: TopbarProps) {
-  const [language, setLanguage] = useState(LANGUAGES[0]);
   const { user, signOut } = useSession();
   const navigate = useNavigate();
 
@@ -48,45 +38,13 @@ export function Topbar({ title, onMenu }: TopbarProps) {
       <h1 className="truncate text-base font-semibold sm:text-lg">{title}</h1>
 
       <div className="ml-auto flex items-center gap-1 sm:gap-2">
-        <SearchField
-          className="hidden w-52 md:flex lg:w-64"
-          placeholder="Search courses, students..."
-        />
-
-        <div className="dropdown dropdown-end hidden ">
-          <button
-            type="button"
-            tabIndex={0}
-            className="btn btn-ghost btn-sm gap-1 text-xs font-medium"
-          >
-            <FiGlobe aria-hidden />
-            {language}
-            <FiChevronDown aria-hidden />
-          </button>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu z-40 w-40 rounded-box bg-base-100 p-2"
-          >
-            {LANGUAGES.map((item) => (
-              <li key={item}>
-                <button
-                  type="button"
-                  onClick={() => setLanguage(item)}
-                  className={
-                    item === language ? "font-semibold text-brand" : ""
-                  }
-                >
-                  {item}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <NotificationBell />
 
         <div className="dropdown dropdown-end">
           <button
             type="button"
             tabIndex={0}
+            aria-label="Account menu"
             className="ml-1 flex items-center gap-2 border-l border-line pl-2 text-left sm:pl-3"
           >
             <span className="flex size-9 items-center justify-center overflow-hidden rounded-full bg-brand text-sm font-bold text-white">
