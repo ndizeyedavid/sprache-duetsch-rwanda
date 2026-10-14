@@ -2,10 +2,7 @@ import type { FormEvent } from 'react';
 import { useEffect, useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link, useNavigate } from 'react-router-dom';
-import { GoogleButton } from '../../components/auth/GoogleButton';
-import { DemoAccountsLink } from '../../components/demo/DemoAccountsLink';
 import { apiErrorMessage } from '../../lib/api';
-import type { AuthRole } from '../../lib/auth-store';
 import { login } from '../../lib/auth-store';
 import { homePath } from '../../lib/roles';
 import { useSession } from '../../lib/session';
@@ -20,16 +17,11 @@ export function LoginForm() {
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const [remember, setRemember] = useState(true);
-  const googleEnabled = !!import.meta.env.VITE_GOOGLE_CLIENT_ID?.trim();
 
   // Already signed in? Send the user straight to their dashboard.
   useEffect(() => {
     if (!sessionLoading && user) navigate(homePath[user.role], { replace: true });
   }, [sessionLoading, user, navigate]);
-
-  function handleGoogleSuccess(account: { role: AuthRole }) {
-    void refresh().then(() => navigate(homePath[account.role], { replace: true }));
-  }
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
@@ -85,22 +77,10 @@ export function LoginForm() {
         </button>
       </form>
 
-      {googleEnabled ? (
-        <>
-          <div className="my-6 flex items-center gap-3">
-            <span className="h-px flex-1 bg-line" />
-            <span className="text-xs text-muted">or</span>
-            <span className="h-px flex-1 bg-line" />
-          </div>
-          <GoogleButton remember={remember} onSuccess={handleGoogleSuccess} onError={setError} />
-        </>
-      ) : null}
-
       <p className="mt-10 text-center text-sm text-muted">
         New here?{' '}
         <Link to="/register" className="font-medium text-brand hover:underline">Create a student account</Link>
       </p>
-      <DemoAccountsLink />
     </section>
   );
 }
