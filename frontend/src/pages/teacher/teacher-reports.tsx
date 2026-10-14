@@ -18,6 +18,7 @@ trendByWeek,
 import { Panel } from "../../components/ui/Panel";
 import { useApi } from "../../hooks/useApi";
 import { listActivitySubmissions,listAssessments,listAttempts,listClasses } from "../../lib/services";
+import { useAtRisk } from "../../components/analytics/useAtRisk";
 import { rangeForPreset } from './range-for-preset';
 import { createHandleExport } from './teacher-reports-handle-export';
 import { TeacherReportsSection101 } from './teacher-reports-section101';
@@ -108,10 +109,9 @@ export function TeacherReports() {
     ).length;
     return Math.round((passed / g.length) * 100);
   }, [attempts]);
-  const atRisk = useMemo(() => {
-    const rows = studentRows(attempts as never);
-    return rows.filter((r) => r.avg !== null && r.avg < 50).length;
-  }, [attempts]);
+  // Server-side at-risk list (attendance, scores, homework, inactivity), scoped to the class filter.
+  const risk = useAtRisk({ classGroupId: classId ?? undefined });
+  const atRisk = risk.state.data?.summary.students ?? 0;
 
   const trend = useMemo(
     () =>
@@ -167,6 +167,6 @@ export function TeacherReports() {
   }
 
   return (
-    <TeacherReportsSection101 exporting={exporting} handleExport={handleExport} preset={preset} setPreset={setPreset} from={from} to={to} setFrom={setFrom} setTo={setTo} classId={classId} setClassId={setClassId} classes={classes} assessmentId={assessmentId} setAssessmentId={setAssessmentId} allowedAssessments={allowedAssessments} q={q} setQ={setQ} attemptsFiltered={attemptsFiltered} exportError={exportError} loading={loading} error={error} attemptsRaw={attemptsRaw} total={total} graded={graded} avg={avg} passRate={passRate} atRisk={atRisk} pending={pending} actTotal={actTotal} actGraded={actGraded} trend={trend} actTrend={actTrend} actDist={actDist} dist={dist} perAss={perAss} actPer={actPer} students={students} />
+    <TeacherReportsSection101 exporting={exporting} handleExport={handleExport} preset={preset} setPreset={setPreset} from={from} to={to} setFrom={setFrom} setTo={setTo} classId={classId} setClassId={setClassId} classes={classes} assessmentId={assessmentId} setAssessmentId={setAssessmentId} allowedAssessments={allowedAssessments} q={q} setQ={setQ} attemptsFiltered={attemptsFiltered} exportError={exportError} loading={loading} error={error} attemptsRaw={attemptsRaw} total={total} graded={graded} avg={avg} passRate={passRate} atRisk={atRisk} risk={risk} pending={pending} actTotal={actTotal} actGraded={actGraded} trend={trend} actTrend={actTrend} actDist={actDist} dist={dist} perAss={perAss} actPer={actPer} students={students} />
   );
 }
