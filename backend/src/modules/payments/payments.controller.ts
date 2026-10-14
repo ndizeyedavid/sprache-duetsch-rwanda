@@ -26,7 +26,9 @@ UpdatePaymentMethodInput,
 import * as service from "./payments.service.js";
 // --- Payment methods ---
 export const listMethods = async (req: Request, res: Response): Promise<void> => {
-  const data = await service.listPaymentMethods(validatedQuery<ListPaymentMethodQuery>(req));
+  const query = validatedQuery<ListPaymentMethodQuery>(req);
+  // Students only ever see methods they can actually pay with.
+  const data = await service.listPaymentMethods(req.user?.role === "STUDENT" ? { ...query, isActive: true } : query);
   res.json({ success: true, data });
 };
 export const createMethod = async (req: Request, res: Response): Promise<void> => {
