@@ -1,10 +1,11 @@
-import { FiCalendar,FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
-import { isoDate,isoTime } from '../../lib/services';
+import { FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
 import { sessionStatusLabel,sessionTone,teacherName } from '../../lib/sessions-ui';
 import { TONE_CLASSES } from '../../lib/theme';
 import type { SessionMaterial } from './SessionMaterials';
 import { SessionMaterials } from './SessionMaterials';
+import { CancelReasonNote } from './CancelReasonNote';
 import { ClassJoinLink } from './ClassJoinLink';
+import { SessionTimes } from './SessionTimes';
 
 export type StudentSessionDetail = {
   id: string;
@@ -15,6 +16,7 @@ export type StudentSessionDetail = {
   mode: string;
   provider: string | null;
   status: string;
+  cancelReason?: string | null;
   meetingUrl: string | null;
   room: string | null;
   notes: string | null;
@@ -38,17 +40,14 @@ export function StudentDetailDrawerContent({session,onClose}:{session:StudentSes
         <div className="shrink-0 border-b border-line p-5 pr-12">
           <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-medium ${tc.soft} ${tc.text}`}>{expired && !['COMPLETED','CANCELLED'].includes(session.status) ? 'Ended' : sessionStatusLabel(session.status)}</span>
           <h3 className="mt-2 text-base font-bold leading-tight">{session.title || 'Untitled session'}</h3>
-          <p className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted">
-            <FiCalendar aria-hidden />
-            {isoDate(session.startAt)} · {isoTime(session.startAt)} – {isoTime(session.endAt)}
-            {` · ${Intl.DateTimeFormat().resolvedOptions().timeZone}`}
-          </p>
+          <SessionTimes startAt={session.startAt} endAt={session.endAt} timezone={session.timezone} />
           <button type="button" onClick={onClose} className="btn btn-ghost btn-xs btn-circle absolute right-3 top-3">
             <FiX aria-hidden />
           </button>
         </div>
         <div className="flex-1 overflow-y-auto p-5">
           <div className="space-y-4">
+            <CancelReasonNote status={session.status} reason={session.cancelReason} />
             <div className="rounded-box bg-base-200 p-4">
               <p className="flex items-center gap-2 text-xs font-semibold">
                 <FiUser aria-hidden className="text-brand" />
@@ -89,7 +88,7 @@ export function StudentDetailDrawerContent({session,onClose}:{session:StudentSes
                 </div>
               </div>
             ) : (
-              <p className="rounded-box border border-dashed border-line bg-base-200 p-4 text-center text-xs text-muted">{session.accessMessage ?? (session.status === 'CANCELLED' ? 'This class was cancelled.' : !canJoin ? 'This class has ended.' : 'Your teacher will add the meeting link before class.')}</p>
+              <p className="rounded-box border border-dashed border-line bg-base-200 p-4 text-center text-xs text-muted">{session.accessMessage ?? (session.status === 'CANCELLED' ? 'Check your schedule for a replacement class.' : !canJoin ? 'This class has ended.' : 'Your teacher will add the meeting link before class.')}</p>
             )}
             {!session.accessMessage ? <SessionMaterials id={session.id} materials={session.materials ?? []} /> : null}
             {session.recordingUrl ? (
