@@ -1,5 +1,6 @@
 import { FiClock, FiExternalLink, FiFlag, FiRepeat, FiTarget } from 'react-icons/fi';
 import { dateLabel, responseLabels } from '../../assignments/homework/format';
+import { latePolicyLabel } from '../../assignments/homework/late-policy';
 import type { TaskDraft } from '../task-types';
 import { kindMeta } from '../task-types';
 import { PreviewQuestions } from './PreviewQuestions';
@@ -21,6 +22,7 @@ export function StudentPreview({ draft: d, scopeLabel }: { draft: TaskDraft; sco
           {chips.map(([Icon, label]) => { const I = Icon as typeof FiClock; return <span key={String(label)} className="inline-flex items-center gap-1.5 rounded-full bg-base-200 px-2.5 py-1 text-xs"><I aria-hidden />{String(label)}</span>; })}
         </div>
         {d.instructions ? <p className="mt-4 whitespace-pre-line text-sm leading-6">{d.instructions}</p> : <p className="mt-4 text-sm text-muted">Instructions appear here.</p>}
+        {homework && d.dueAt ? <p className="mt-3 text-xs text-muted">Late work: {latePolicyLabel(d)}</p> : null}
         {d.resources.length ? <ul className="mt-4 space-y-1">{d.resources.filter(r => r.title).map((r, i) => <li key={i} className="flex items-center gap-2 text-sm text-brand"><FiExternalLink aria-hidden />{r.title}</li>)}</ul> : null}
       </article>
       {usesQuestions ? <PreviewQuestions questions={d.questions} /> : (
