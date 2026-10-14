@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FiArrowUpRight,FiAward } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { PlacementPromptCard } from '../../components/placement/PlacementPromptCard';
 import { DashboardAttendanceCard } from '../../components/student/DashboardAttendanceCard';
 import { DashboardClassCard } from '../../components/student/DashboardClassCard';
 import { DashboardCoursePanel } from '../../components/student/DashboardCoursePanel';
@@ -29,6 +30,7 @@ export function Dashboard() {
   return (
     <div className="journey-enter space-y-4">
       <LearningJourneyHero firstName={user?.firstName} course={selected} />
+      <PlacementPromptCard hasCourses={courses.loading || courses.error ? undefined : courseList.length > 0} />
       <DashboardQuickNav />
       <div className="grid items-stretch gap-4 lg:grid-cols-3">
         <div className="min-w-0 lg:col-span-2">
