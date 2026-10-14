@@ -1,0 +1,80 @@
+import { useEffect,useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { InboxToolbar } from '../../components/notifications/InboxToolbar';
+import { NotificationRow } from '../../components/notifications/NotificationRow';
+import { notificationLink } from '../../components/notifications/notification-links';
+import { useUnreadNotifications } from '../../components/notifications/unread-context';
+import { useNotificationInbox } from '../../components/notifications/useNotificationInbox';
+import { Panel } from '../../components/ui/Panel';
+import type { InboxNotification } from '../../lib/notifications';
+import { useSession } from '../../lib/session';
+
+/** Inbox for every role: list, mark read, mark all read, delete. */
+export function Notifications() {
+  const { count, refresh } = useUnreadNotifications();
+  const { user } = useSession();
+  const navigate = useNavigate();
+  const inbox = useNotificationInbox(refresh);
+  const { reload } = inbox;
+  const lastCount = useRef(count);
+
+  // A new notification arrived while the page is open: show it without a manual refresh.
+  useEffect(() => {
+    if (count > lastCount.current) reload();
+    lastCount.current = count;
+  }, [count, reload]);
+
+  function open(item: InboxNotification, link: string) {
+    void inbox.markRead(item);
+    navigate(link);
+  }
+
+  const empty = inbox.filter === 'unread'
+    ? { title: "You're all caught up", hint: 'No unread notifications. Switch to All to see older ones.' }
+    : { title: 'No notifications yet', hint: 'Class changes, new assignments, payment reminders and messages will show up here.' };
+
+  return (
+    <div className="mx-auto max-w-3xl space-y-4">
+      <InboxToolbar
+        filter={inbox.filter}
+        onFilter={inbox.setFilter}
+        unread={count}
+        markingAll={inbox.markingAll}
+        refreshing={inbox.loading}
+        onMarkAll={() => void inbox.markAll()}
+        onRefresh={() => { reload(); refresh(); }}
+      />
+      {inbox.actionError ? <p role="alert" className="alert alert-error alert-soft text-sm">{inbox.actionError}</p> : null}
+
+      {inbox.loading && inbox.rows.length === 0 ? <LoadingBlock label="Loading notifications…" /> : null}
+      {inbox.error ? <ErrorBlock message={inbox.error} onRetry={reload} /> : null}
+      {!inbox.loading && !inbox.error && inbox.rows.length === 0 ? <EmptyBlock title={empty.title} hint={empty.hint} /> : null}
+
+      {inbox.rows.length > 0 && !inbox.error ? (
+        <Panel padded={false} className="overflow-hidden">
+          <ul className="divide-y divide-base-300">
+            {inbox.rows.map(item => (
+              <NotificationRow
+                key={item.id}
+                item={item}
+                link={user ? notificationLink(item, user.role) : null}
+                busy={inbox.busyId === item.id}
+                onOpen={open}
+                onMarkRead={item => void inbox.markRead(item)}
+                onDelete={item => void inbox.remove(item)}
+              />
+            ))}
+          </ul>
+          {inbox.hasNext ? (
+            <div className="border-t border-base-300 p-3 text-center">
+              <button type="button" disabled={inbox.loadingMore} onClick={() => void inbox.loadMore()} className="btn btn-sm rounded-full">
+                {inbox.loadingMore ? <span className="loading loading-spinner loading-xs" /> : null}Load older
+              </button>
+            </div>
+          ) : null}
+        </Panel>
+      ) : null}
+    </div>
+  );
+}
