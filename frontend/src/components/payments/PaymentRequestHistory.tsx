@@ -3,14 +3,14 @@ import { currencyAmount } from '../../lib/format';
 import type { PaymentCheckout } from '../../lib/paypack';
 import { PaymentStatusBadge } from './PaymentStatusBadge';
 
-/** The student's latest mobile-money payments. */
-export function PaymentRequestHistory({ rows }: { rows: PaymentCheckout[] }) {
+/** The student's latest mobile-money payments. Public invoice pages hide the signed-in receipts link. */
+export function PaymentRequestHistory({ rows, receiptsLink = true }: { rows: PaymentCheckout[]; receiptsLink?: boolean }) {
   if (!rows.length) return null;
   return (
     <section className="mt-6 border-t border-base-300 pt-5">
       <div className="flex items-center justify-between gap-3">
-        <h3 className="text-sm font-semibold">Recent payments</h3>
-        <Link to="/profile?view=documents" className="text-sm font-medium text-brand hover:underline">Receipts</Link>
+        <h3 className="text-sm font-semibold">Mobile-money requests</h3>
+        {receiptsLink ? <Link to="/profile?view=documents" className="text-sm font-medium text-brand hover:underline">Receipts</Link> : null}
       </div>
       <ul className="mt-3 divide-y divide-base-300">
         {rows.slice(0, 5).map(row => (
