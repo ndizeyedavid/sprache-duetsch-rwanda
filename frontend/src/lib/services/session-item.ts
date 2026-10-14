@@ -7,6 +7,7 @@ export type SessionItem = {
   mode: string;
   provider: string | null;
   status: string;
+  cancelReason?: string | null;
   meetingUrl: string | null;
   room?: string | null;
   notes?: string | null;
