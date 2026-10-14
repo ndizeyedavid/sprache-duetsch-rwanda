@@ -2,14 +2,12 @@ import type { Request, Response } from "express";
 import { prisma } from "../../lib/prisma.js";
 import { validatedBody, validatedParams } from "../../lib/request.js";
 import { resolveStudentId } from "../payments/resolve-student-id.js";
-import { paypackEnabled } from "./paypack-client.js";
 import type { CheckoutInput } from "./paypack.schema.js";
-import { listMyCheckouts, refreshCheckout, startCheckout } from "./paypack.service.js";
+import { listMyCheckouts, PAYPACK_MINIMUM, paypackAvailable, refreshCheckout, startCheckout } from "./paypack.service.js";
 import { closeUnsubmittedCheckout, reconcileCheckout } from "./review-checkout.js";
 
 export const config = async (_req: Request, res: Response): Promise<void> => {
-  const method = await prisma.paymentMethodConfig.findUnique({ where: { code: "PAYPACK" } });
-  res.json({ success: true, data: { enabled: paypackEnabled() && method?.isActive !== false, minimumAmount: 100, currency: "RWF" } });
+  res.json({ success: true, data: { enabled: await paypackAvailable(), minimumAmount: PAYPACK_MINIMUM, currency: "RWF" } });
 };
 export const listMine = async (req: Request, res: Response): Promise<void> => {
   res.json({ success: true, data: await listMyCheckouts(req.user!.id) });
