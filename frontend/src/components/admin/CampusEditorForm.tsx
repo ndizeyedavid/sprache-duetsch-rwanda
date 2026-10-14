@@ -42,11 +42,11 @@ export function CampusEditorForm({ initial, onSaved }: { initial: CampusItem | n
  <div className="grid gap-3 sm:grid-cols-2">
  <label className="block">
  <span className="mb-1 block text-xs font-medium">Code</span>
- <input required value={code} onChange={(e) => setCode(e.currentTarget.value)} placeholder="e.g. REMERA" className="input input w-full rounded-field border-line bg-base-200" />
+ <input required value={code} onChange={(e) => setCode(e.currentTarget.value)} placeholder="e.g. KACYIRU" className="input input w-full rounded-field border-line bg-base-200" />
  </label>
  <label className="block">
  <span className="mb-1 block text-xs font-medium">Name</span>
- <input required value={name} onChange={(e) => setName(e.currentTarget.value)} placeholder="e.g. Kigali — Remera" className="input input w-full rounded-field border-line bg-base-200" />
+ <input required value={name} onChange={(e) => setName(e.currentTarget.value)} placeholder="e.g. Kacyiru" className="input input w-full rounded-field border-line bg-base-200" />
  </label>
  </div>
  <label className="block">
