@@ -16,3 +16,5 @@ export const AdminTeaching = lazyPage(() => import("../pages/admin/Teaching").th
 export const AdminAnnouncements = lazyPage(() => import("../pages/admin/Announcements").then((module) => module.AdminAnnouncements));
 export const AdminOrganisation = lazyPage(() => import("../pages/admin/Organisation").then((module) => module.AdminOrganisation));
 export const AdminIntakes = lazyPage(() => import("../pages/admin/Intakes").then((module) => module.AdminIntakes));
+export const AdminApplications = lazyPage(() => import("../pages/admin/Applications").then((module) => module.AdminApplications));
+export const AdminReports = lazyPage(() => import("../pages/admin/Reports").then((module) => module.AdminReports));
