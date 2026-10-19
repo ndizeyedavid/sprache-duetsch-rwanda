@@ -17,7 +17,7 @@ export function ArticleCard({ article, className = '' }: ArticleCardProps) {
  <div className="min-w-0">
  <h3 className="line-clamp-2 text-sm font-semibold leading-snug">{article.title}</h3>
  <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-muted">{article.excerpt}</p>
- <p className="mt-2 text-[11px] text-muted">
+ <p className="mt-2 text-[0.6875rem] text-muted">
  {article.author} - {article.date}
  </p>
  </div>
