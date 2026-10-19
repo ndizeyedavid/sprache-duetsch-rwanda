@@ -1,6 +1,6 @@
 import { FiArrowLeft } from 'react-icons/fi';
 
-export const MAIN_SITE_URL = 'https://deutshsprache.org';
+export const MAIN_SITE_URL = 'https://deutschspracherw.org';
 
 /** Way back to the school's public website from the sign-in pages. */
 export function BackToSite() {
