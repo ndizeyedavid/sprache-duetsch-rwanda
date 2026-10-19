@@ -31,7 +31,7 @@ function studentLink(type: string, data: Record<string, unknown>): string | null
   }
 }
 
-function staffLink(type: string, role: Role): string | null {
+function staffLink(type: string, role: Role, data: Record<string, unknown>): string | null {
   const academic = role === 'ACADEMIC_ADMIN' || role === 'SUPER_ADMIN';
   switch (type) {
     case 'ASSIGNMENT':
@@ -45,7 +45,9 @@ function staffLink(type: string, role: Role): string | null {
       if (role === 'TEACHER') return '/teacher/schedule';
       return academic ? '/admin/schedule' : null;
     case 'PAYMENT':
-      return role === 'FINANCE_ADMIN' || role === 'SUPER_ADMIN' ? '/admin/finance' : null;
+      if (role !== 'FINANCE_ADMIN' && role !== 'SUPER_ADMIN') return null;
+      // Student-reported payments open the approval queue.
+      return text(data.claimId) ? '/admin/transactions#approvals' : '/admin/finance';
     default:
       return null;
   }
@@ -61,5 +63,5 @@ export function notificationLink(item: Pick<InboxNotification, 'type' | 'data'>,
     const thread = text(data.conversationId);
     return thread ? `${messagesPath(role)}?thread=${encodeURIComponent(thread)}` : messagesPath(role);
   }
-  return role === 'STUDENT' ? studentLink(item.type, data) : staffLink(item.type, role);
+  return role === 'STUDENT' ? studentLink(item.type, data) : staffLink(item.type, role, data);
 }
