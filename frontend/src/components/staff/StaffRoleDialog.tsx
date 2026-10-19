@@ -50,7 +50,7 @@ export function StaffRoleDialog({ row, saving, onClose, onSave }: Props) {
 
       <div className="mt-4">
         <label htmlFor="role-select" className="block">
-          <span className="mb-1.5 block text-[11px] font-semibold tracking-wide text-ink uppercase">
+          <span className="mb-1.5 block text-[0.6875rem] font-semibold tracking-wide text-ink uppercase">
             New role
           </span>
           <select
@@ -70,7 +70,7 @@ export function StaffRoleDialog({ row, saving, onClose, onSave }: Props) {
       </div>
 
       {next ? (
-        <div className="mt-4 space-y-2 rounded-field border border-line bg-base-100 px-4 py-3 text-[11px]">
+        <div className="mt-4 space-y-2 rounded-field border border-line bg-base-100 px-4 py-3 text-[0.6875rem]">
           <p className="text-ink">
             <strong>Can do:</strong> {next.scope}
           </p>
