@@ -1,24 +1,22 @@
-import { Suspense,useEffect,useRef } from 'react';
+import { Suspense } from 'react';
+import { FiBookOpen,FiDownload,FiExternalLink } from 'react-icons/fi';
 import { lazyPage } from '../../../lib/lazy-page';
-import { FiDownload,FiExternalLink,FiX } from 'react-icons/fi';
+import { Dialog } from '../../ui/overlay/Dialog';
 
 type Props = { url: string; filename: string; onClose: () => void };
 const PdfViewer = lazyPage(() => import('./PdfViewer').then(module => module.default));
+
+/** The original coursebook PDF in a large dialog, with download and new-tab options pinned below. */
 export function CoursebookPreview({ url, filename, onClose }: Props) {
-  const dialog = useRef<HTMLDialogElement>(null);
-  useEffect(() => { dialog.current?.showModal(); }, []);
-  return <dialog ref={dialog} className="modal" aria-labelledby="coursebook-preview-title" onClose={onClose}>
-    <div className="modal-box flex h-[90dvh] w-full max-w-5xl flex-col gap-3 p-4 sm:p-5">
-      <div className="flex items-center justify-between gap-3">
-        <h2 id="coursebook-preview-title" className="text-base font-semibold">Original coursebook</h2>
-        <form method="dialog"><button className="btn btn-ghost btn-sm btn-circle" aria-label="Close PDF preview"><FiX aria-hidden /></button></form>
+  return (
+    <Dialog open onClose={onClose} icon={FiBookOpen} title="Original coursebook" widthClassName="sm:max-w-5xl"
+      footer={<>
+        <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm gap-1.5 rounded-full"><FiExternalLink aria-hidden />Open in new tab</a>
+        <a href={url} download={filename} className="btn btn-primary btn-sm gap-1.5 rounded-full"><FiDownload aria-hidden />Download PDF</a>
+      </>}>
+      <div className="flex h-[68dvh] flex-col">
+        <Suspense fallback={<p role="status" className="text-xs text-muted">Loading PDF viewer…</p>}><PdfViewer url={url} /></Suspense>
       </div>
-      <div className="flex flex-wrap items-center gap-2">
-        <a href={url} download={filename} className="btn btn-sm"><FiDownload aria-hidden />Download PDF</a>
-        <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm"><FiExternalLink aria-hidden />Open in new tab</a>
-      </div>
-      <Suspense fallback={<p role="status" className="text-xs text-muted">Loading PDF viewer…</p>}><PdfViewer url={url} /></Suspense>
-    </div>
-    <form method="dialog" className="modal-backdrop"><button aria-label="Close PDF preview">Close</button></form>
-  </dialog>;
+    </Dialog>
+  );
 }
