@@ -55,7 +55,7 @@ export function NoticeList({ notices, loading, error, onRetry, selectedId, onPic
  <span className="min-w-0 truncate text-xs font-semibold leading-tight">{n.title}</span>
  {unreadFlag ? <span aria-label="Unread" className="size-2 shrink-0 rounded-full bg-neutral" /> : null}
  </span>
- <span className="mt-1 block truncate text-[11px] text-muted">{humanize(n.type)} · {isoDate(n.createdAt)}</span>
+ <span className="mt-1 block truncate text-[0.6875rem] text-muted">{humanize(n.type)} · {isoDate(n.createdAt)}</span>
  {n.body ? <span className="mt-1 line-clamp-2 block text-xs leading-snug text-muted">{n.body}</span> : null}
  </button>
  </li>
