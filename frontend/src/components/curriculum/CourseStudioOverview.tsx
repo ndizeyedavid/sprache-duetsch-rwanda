@@ -1,21 +1,36 @@
-import { FiArrowRight,FiBookOpen,FiEdit2,FiPlus } from 'react-icons/fi';
+import { FiArchive,FiPlus } from 'react-icons/fi';
 import type { ModuleItem } from '../../lib/services';
+import { ModuleCard } from './module-card/ModuleCard';
+import { isArchived,moduleStats } from './module-card/module-stats';
 
 type Props = { modules: ModuleItem[]; onOpen: (id: string) => void; onCreate: () => void; onEdit: (module: ModuleItem) => void };
+
+const pad = (value: number) => String(value).padStart(2, '0');
+
+/** Course studio home: one chapter card per module, archived seed modules tucked away below. */
 export function CourseStudioOverview({ modules, onOpen, onCreate, onEdit }: Props) {
-  return <section aria-label="Course modules">
-    <div className="mb-4 flex items-center justify-between gap-3"><h2 className="text-lg font-semibold">Your modules <span className="ml-2 text-sm font-normal text-muted">{modules.length}</span></h2>
-      <button className="btn btn-sm border-0" onClick={onCreate}><FiPlus aria-hidden />New module</button></div>
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-      {modules.map((module, index) => <article key={module.id} className="card bg-base-100 p-5">
-        <div className="mb-6 flex items-center justify-between"><span className="flex size-12 items-center justify-center rounded-box bg-neutral text-lg font-semibold text-neutral-content">{String(index + 1).padStart(2, '0')}</span>
-          <span className={`rounded-full px-3 py-1 text-xs ${module.isPublished ? 'bg-success text-success-content text-base-content' : 'bg-base-200 text-muted'}`}>{module.isPublished ? 'Published' : 'Draft'}</span></div>
-        <h3 className="text-base font-semibold leading-6">{module.title}</h3>
-        <p className="mt-2 flex items-center gap-2 text-xs text-muted"><FiBookOpen aria-hidden />{module.lessons.length} lessons · {module.lessons.filter(item => item.isPublished).length} published</p>
-        <div className="mt-auto flex gap-2 pt-6"><button className="btn btn-sm grow justify-between border-0 bg-base-200" onClick={() => onOpen(module.id)}>Open module<FiArrowRight aria-hidden /></button>
-          <button className="btn btn-sm btn-square btn-ghost" aria-label={`Edit module ${module.title}`} onClick={() => onEdit(module)}><FiEdit2 aria-hidden /></button></div>
-      </article>)}
-      {!modules.length ? <div className="card col-span-full items-center bg-base-100 px-6 py-12 text-center"><img src="/illustrations/study-books.webp" alt="" width={120} height={100} className="mb-5 h-24 object-contain"/><h3 className="text-xl font-semibold">A fresh start for your course</h3><p className="mt-2 text-sm text-muted">Group your first lessons into a module.</p><button className="btn mt-5" onClick={onCreate}><FiPlus aria-hidden />Create a module</button></div> : null}
+  const current = modules.filter((module) => !isArchived(module));
+  const archived = modules.filter(isArchived);
+  const totals = current.map(moduleStats).reduce((sum, s) => ({ lessons: sum.lessons + s.lessons, published: sum.published + s.published, activities: sum.activities + s.activities }), { lessons: 0, published: 0, activities: 0 });
+  return <section aria-label="Course modules" className="space-y-4">
+    <div className="flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <h2 className="text-lg font-semibold">Your modules <span className="ml-1 text-sm font-normal text-muted">{current.length}</span></h2>
+        <p className="text-xs text-muted">{totals.published}/{totals.lessons} lessons live · {totals.activities} practice activities</p>
+      </div>
+      <button type="button" className="btn btn-primary btn-sm rounded-full" onClick={onCreate}><FiPlus aria-hidden />New module</button>
     </div>
+    <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {current.map((module, index) => <ModuleCard key={module.id} module={module} number={pad(index + 1)} onOpen={onOpen} onEdit={onEdit} />)}
+      {!current.length ? <div className="card col-span-full items-center bg-base-100 px-6 py-12 text-center"><img src="/illustrations/study-books.webp" alt="" width={120} height={100} className="mb-5 h-24 object-contain"/><h3 className="text-xl font-semibold">A fresh start for your course</h3><p className="mt-2 text-sm text-muted">Group your first lessons into a module.</p><button type="button" className="btn btn-primary mt-5 rounded-full" onClick={onCreate}><FiPlus aria-hidden />Create a module</button></div> : null}
+    </div>
+    {archived.length ? (
+      <details className="rounded-box border border-line bg-base-100">
+        <summary className="flex cursor-pointer items-center gap-2 px-5 py-3 text-sm font-semibold"><FiArchive aria-hidden className="text-muted" />Archived modules <span className="font-normal text-muted">({archived.length}) — older drafts kept for student history</span></summary>
+        <div className="grid gap-5 p-5 pt-2 md:grid-cols-2 xl:grid-cols-3">
+          {archived.map((module) => <ModuleCard key={module.id} module={module} number="—" onOpen={onOpen} onEdit={onEdit} />)}
+        </div>
+      </details>
+    ) : null}
   </section>;
 }
