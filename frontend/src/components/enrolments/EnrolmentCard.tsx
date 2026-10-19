@@ -20,12 +20,12 @@ export function EnrolmentCard({ row, onManage }: Props) {
           <p className="truncate text-sm font-semibold text-ink">
             {row.student.user.firstName} {row.student.user.lastName}
           </p>
-          <p className="truncate text-[11px] text-muted">{row.student.studentCode}</p>
+          <p className="truncate text-[0.6875rem] text-muted">{row.student.studentCode}</p>
         </div>
         <StatusBadge status={humanize(row.status)} />
       </div>
 
-      <dl className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-[11px]">
+      <dl className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-[0.6875rem]">
         <div>
           <dt className="flex items-center gap-1 text-muted">
             <FiLayers aria-hidden />Level
