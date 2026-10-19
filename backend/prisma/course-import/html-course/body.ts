@@ -1,20 +1,14 @@
 // Render a course lesson as the same sanitised HTML the A1 coursebook uses: every <h2> becomes
 // one page in the student reader (CourseLessonReader), tables sit in .course-table-wrap.
+import { photoFigure } from "../lesson-photos/figure.js";
 import type { CourseGrammar, CourseLesson, CoursePhoto, CourseTable } from "./types.js";
 
 const entities: Record<string, string> = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" };
 export const esc = (value: string) => value.replace(/[&<>"]/g, (c) => entities[c]);
 const list = (items: string[]) => `<ul>${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
-const referral = (url: string) => `${url}${url.includes("?") ? "&" : "?"}utm_source=deutschsprache&utm_medium=referral`;
 
-/** One small, compressed image per lesson keeps pages light on mobile data. */
-export const photoUrl = (id: string) => `https://images.unsplash.com/${id}?w=800&q=60&auto=format`;
-
-function figure(photo: CoursePhoto) {
-  const credit = `Foto: <a href="${esc(referral(photo.profil))}" target="_blank" rel="noopener noreferrer">${esc(photo.fotograf)}</a>`
-    + ` auf <a href="${esc(referral("https://unsplash.com/"))}" target="_blank" rel="noopener noreferrer">Unsplash</a>`;
-  return `<figure><img src="${esc(photoUrl(photo.id))}" alt="${esc(photo.alt)}" width="800" loading="lazy"><figcaption>${credit}</figcaption></figure>`;
-}
+/** Lead photo, self-hosted and caption-free (see lesson-photos/figure.ts). */
+const figure = (photo: CoursePhoto) => photoFigure(photo.id, photo.alt);
 
 function table({ kopf, zeilen }: CourseTable) {
   const rowHeader = kopf[0] === "";
@@ -51,6 +45,10 @@ export function renderLessonBody(lesson: CourseLesson): string {
       `<strong>${esc(w.wort)}</strong> — EN: ${esc(w.en)} · FR: <span lang="fr">${esc(w.fr)}</span><br><em>${esc(w.beispiel)}</em>`)),
     "<h2>Redemittel</h2>",
     ...lesson.redemittel.flatMap((group) => [`<h3>${esc(group.funktion)}</h3>`, list(group.saetze.map(esc))]),
+    ...(lesson.dialog ? [
+      `<h2>Dialog: ${esc(lesson.dialog.titel)}</h2>`,
+      ...lesson.dialog.zeilen.map((line) => `<p><strong>${esc(line.wer)}:</strong> ${esc(line.text)}</p>`),
+    ] : []),
   ];
   return sections.join("\n");
 }
