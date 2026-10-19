@@ -1,8 +1,9 @@
+import type { ReactNode } from 'react';
 import { CoursePaymentLock } from '../../components/student/CoursePaymentLock';
 import { useEffect,useMemo,useState } from 'react';
-import { FiArrowLeft,FiGrid,FiList } from 'react-icons/fi';
-import { Link,useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { CourseMapHero } from '../../components/student/CourseMapHero';
 import { HorizontalCourseView } from '../../components/student/HorizontalCourseView';
 import { StudentCourseModules } from '../../components/student/StudentCourseModules';
 import { useApi } from '../../hooks/useApi';
@@ -39,27 +40,16 @@ export function CourseContents() {
 
   const course = useMemo(() => courses.data?.find((c) => c.level.code.toLowerCase() === slug.toLowerCase()) ?? null, [courses.data, slug]);
 
-  if (courses.loading) return <LoadingBlock label="Loading course…" />;
-  if (courses.error || !courses.data) return <ErrorBlock message={courses.error ?? 'Could not load course.'} onRetry={courses.refetch} />;
-  if (!course) return <EmptyBlock title="Not enrolled in this level" hint="Ask an admin to enrol you — only enrolled courses appear." />;
+  const shell = (state: ReactNode) => <div className="space-y-4"><CourseMapHero slug={slug} />{state}</div>;
+  if (courses.loading) return shell(<LoadingBlock label="Loading course…" />);
+  if (courses.error || !courses.data) return shell(<ErrorBlock message={courses.error ?? 'Could not load course.'} onRetry={courses.refetch} />);
+  if (!course) return shell(<EmptyBlock title="Not enrolled in this level" hint="Ask an admin to enrol you — only enrolled courses appear." />);
 
   if (course?.paymentRequired) return <CoursePaymentLock title={course.level.title} />;
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
-        <span className="flex items-center gap-2">
-          <Link to="/courses" className="inline-flex items-center gap-1 hover:underline"><FiArrowLeft aria-hidden />My courses</Link>
-          <span className="text-muted">/</span>
-          <Link to={`/courses/${course.level.code.toLowerCase()}`} className="font-semibold text-ink hover:underline">{course.level.code}</Link>
-          <span className="text-muted">/</span>
-          <span className="font-medium text-brand">Modules</span>
-        </span>
-        <span className="flex items-center gap-1 rounded-full border border-line bg-base-100 p-1">
-          <button type="button" onClick={() => setLayout('vertical')} className={`btn btn-xs gap-1 rounded-full ${layout === 'vertical' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'vertical'}><FiList aria-hidden />Path</button>
-          <button type="button" onClick={() => setLayout('horizontal')} className={`btn btn-xs gap-1 rounded-full ${layout === 'horizontal' ? 'border-0 bg-brand text-white' : 'btn-ghost'}`} aria-pressed={layout === 'horizontal'}><FiGrid aria-hidden />Study</button>
-        </span>
-      </div>
+      <CourseMapHero slug={slug} course={course} layout={layout} onLayout={setLayout} />
 
       {layout === 'horizontal' ? (
         <HorizontalCourseView course={course} slug={slug.toLowerCase()} onProgress={courses.refetch} />
