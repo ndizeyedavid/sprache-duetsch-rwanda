@@ -1,11 +1,15 @@
 import { useMemo,useState } from "react";
+import { FiActivity } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import { ActivityFeed } from "../../components/activity/ActivityFeed";
-import { ActivityHeader } from "../../components/activity/ActivityHeader";
-import { ActivityStats } from "../../components/activity/ActivityStats";
+import { ActivityFilters } from "../../components/activity/ActivityFilters";
+import { communityLinks } from "../../components/activity/community-links";
 import { ComposerCard } from "../../components/activity/ComposerCard";
 import type { Filter } from "../../components/activity/constants";
 import { HighlightsRail } from "../../components/activity/HighlightsRail";
 import { groupByDay } from "../../components/activity/utils";
+import { heroGhost } from "../../components/hero/hero-actions";
+import { PageHero } from "../../components/hero/PageHero";
 import { Panel } from "../../components/ui/Panel";
 import { useApi } from "../../hooks/useApi";
 import { getFeed } from "../../lib/services";
@@ -49,23 +53,15 @@ export function Activity() {
 
   return (
     <div className="space-y-4">
-      <Panel>
-        <ActivityHeader
-          total={total}
-          counts={counts}
-          filter={filter}
-          onFilter={setFilter}
-          q={q}
-          onQ={setQ}
-          fetching={feed.fetching}
-        />
-      </Panel>
-
-      <ActivityStats
-        total={total}
-        announcements={announcements}
-        recent={recent}
-      />
+      <PageHero eyebrow="Community updates" icon={FiActivity} title="Activity" art="team"
+        description="Updates from your classes, exams, attendance and payments, as they happen."
+        meta={feedAll.data || feed.data ? <>
+          <span className="hero-chip hero-chip-solid">{total} updates</span>
+          <span className="hero-chip">{recent} in the last 7 days</span>
+          <span className="hero-chip">{announcements} {announcements === 1 ? "announcement" : "announcements"}</span>
+        </> : null}
+        actions={communityLinks(user?.role, "activity").map((link) => <Link key={link.to} to={link.to} className={heroGhost}>{link.label}</Link>)}
+        footer={<ActivityFilters total={total} counts={counts} filter={filter} onFilter={setFilter} q={q} onQ={setQ} fetching={feed.fetching} />} />
 
       <div className="grid gap-4 lg:grid-cols-12">
         <div className="space-y-4 lg:col-span-8">
