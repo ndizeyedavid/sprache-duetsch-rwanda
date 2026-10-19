@@ -1,3 +1,11 @@
+# class.deutshsprache.org is the retired platform hostname (retired 2026-10-19).
+# Page requests there move permanently to class.deutschspracherw.org, path and query kept,
+# so old bookmarks, emailed links and printed certificate/receipt QR codes keep working.
+map $host $retired_platform_host {
+    default                  0;
+    class.deutshsprache.org  1;
+}
+
 server {
     listen 8080;
     server_name _;
@@ -37,12 +45,23 @@ server {
         try_files $uri =404;
     }
 
+    # Service-worker plumbing is served on every hostname (never redirected): a browser with
+    # the old site installed must be able to fetch the new worker, whose index.html then
+    # sends the tab to the new hostname. A redirected worker script would fail to update.
+    location ~ ^/(sw\.js|registerSW\.js|workbox-[A-Za-z0-9_-]+\.js|manifest\.webmanifest|index\.html)$ {
+        add_header Cache-Control "no-cache";
+        try_files $uri =404;
+    }
+
     location /assets/ {
         add_header Cache-Control "public, max-age=31536000, immutable";
         try_files $uri =404;
     }
 
     location / {
+        if ($retired_platform_host) {
+            return 301 https://class.deutschspracherw.org$request_uri;
+        }
         add_header Cache-Control "no-cache";
         try_files $uri $uri/ /index.html;
     }
