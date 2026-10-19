@@ -1,4 +1,5 @@
 import { FiX } from 'react-icons/fi';
+import { useIntakeScope } from '../../lib/intake-scope/store';
 import type { ClassGroupItem,IntakeItem,LevelItem } from '../../lib/services';
 import { SearchField } from '../ui/SearchField';
 import { STATUS_FILTERS } from './constants';
@@ -28,6 +29,8 @@ export function EnrolmentToolbar({
   intakes,
   groups,
 }: Props) {
+  // The header intake switcher already scopes the register; a second intake filter would only conflict.
+  const scoped = Boolean(useIntakeScope());
   return (
     <div className="flex flex-wrap items-center gap-2">
       <SearchField
@@ -50,7 +53,7 @@ export function EnrolmentToolbar({
           </option>
         ))}
       </select>
-      <select
+      {scoped ? null : <select
         aria-label="Filter by intake"
         value={filters.intakeId}
         onChange={(event) => onFilter({ intakeId: event.currentTarget.value })}
@@ -62,7 +65,7 @@ export function EnrolmentToolbar({
             {intake.name}
           </option>
         ))}
-      </select>
+      </select>}
       <select
         aria-label="Filter by status"
         value={filters.status}
