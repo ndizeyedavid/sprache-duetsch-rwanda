@@ -12,14 +12,14 @@ type Props = {
 export function StaffField({ id, label, hint, error, children }: Props) {
   return (
     <label htmlFor={id} className="block">
-      <span className="mb-1.5 block text-[11px] font-semibold tracking-wide text-ink uppercase">
+      <span className="mb-1.5 block text-[0.6875rem] font-semibold tracking-wide text-ink uppercase">
         {label}
       </span>
       {children}
       {error ? (
-        <span className="mt-1.5 block text-[11px] font-medium text-[#D8482F]">{error}</span>
+        <span className="mt-1.5 block text-[0.6875rem] font-medium text-[#D8482F]">{error}</span>
       ) : hint ? (
-        <span className="mt-1.5 block text-[11px] leading-snug text-muted">{hint}</span>
+        <span className="mt-1.5 block text-[0.6875rem] leading-snug text-muted">{hint}</span>
       ) : null}
     </label>
   );
