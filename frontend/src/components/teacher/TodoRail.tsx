@@ -47,7 +47,7 @@ export function TodoRail({ todos, needsGrading, upcoming, onClassGroupClick }: T
  </span>
  <span className="min-w-0">
  <span className="block truncate text-xs font-semibold">{item.label}</span>
- <span className="block truncate text-[11px] text-muted">{item.hint}</span>
+ <span className="block truncate text-[0.6875rem] text-muted">{item.hint}</span>
  </span>
  </Link>
  </li>
@@ -70,7 +70,7 @@ export function TodoRail({ todos, needsGrading, upcoming, onClassGroupClick }: T
  className="flex w-full items-center justify-between gap-2 rounded-field bg-base-200 px-3 py-2 text-left hover:bg-brand hover:text-primary-content"
  >
  <span className="truncate text-xs font-medium">{row.className}</span>
- <span className="shrink-0 rounded-full bg-brand px-2 py-0.5 text-[11px] font-bold text-white">{row.count}</span>
+ <span className="shrink-0 rounded-full bg-brand px-2 py-0.5 text-[0.6875rem] font-bold text-white">{row.count}</span>
  </button>
  </li>
  ))}
@@ -90,7 +90,7 @@ export function TodoRail({ todos, needsGrading, upcoming, onClassGroupClick }: T
  <p className="mt-0.5 text-muted">
  {session.classGroup?.name ?? '—'} · {isoDate(session.startAt)} {isoTime(session.startAt)}
  </p>
- <p className="text-[11px] text-muted">{humanize(session.status)}</p>
+ <p className="text-[0.6875rem] text-muted">{humanize(session.status)}</p>
  </li>
  ))}
  </ul>
