@@ -1,25 +1,37 @@
-import { FiCreditCard,FiFileText } from 'react-icons/fi';
+import { useState } from 'react';
+import { FiCheckCircle,FiCreditCard,FiFileText } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useApi } from '../../hooks/useApi';
 import { currencyAmount } from '../../lib/format';
 import { listStudentCharges,listStudentPayments } from '../../lib/services/list-student-money';
 import { money } from '../../lib/services/money';
 import type { StudentDetail } from '../../lib/services/student-detail';
+import { MarkPaidDialog } from '../payment-claims/MarkPaidDialog';
 import { SectionState } from '../profile/SectionState';
 import { Panel } from '../ui/Panel';
 import { StatTile } from '../ui/StatTile';
 import { ChargesTable,PaymentsTable } from './LedgerTables';
 
-type Props = { studentId: string; finance: StudentDetail['finance'] };
+type Props = { studentId: string; finance: StudentDetail['finance']; who: { name: string; code: string }; onChanged: () => void };
 
-export function PaymentsTab({ studentId, finance }: Props) {
+export function PaymentsTab({ studentId, finance, who, onChanged }: Props) {
+  const [markingPaid, setMarkingPaid] = useState(false);
+  const [notice, setNotice] = useState<string | null>(null);
   const charges = useApi(`student-charges-${studentId}`, () => listStudentCharges(studentId));
   const payments = useApi(`student-payments-${studentId}`, () => listStudentPayments(studentId));
   const currency = finance?.currency ?? 'RWF';
   const amount = (value: Parameters<typeof money>[0]) => currencyAmount(money(value), currency);
 
+  const balance = money(finance?.balance);
   return (
     <div className="space-y-4">
+      {balance > 0 ? (
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-box border border-line bg-base-100 p-4">
+          <p className="text-sm"><strong>{amount(finance?.balance)}</strong> still to pay. Paid in cash, by bank or MoMo outside the gateway?</p>
+          <button type="button" className="btn btn-primary btn-sm gap-1 rounded-full" onClick={() => { setNotice(null); setMarkingPaid(true); }}><FiCheckCircle aria-hidden />Mark as paid</button>
+        </div>
+      ) : null}
+      {notice ? <p role="status" className="alert alert-success alert-soft text-xs">{notice}</p> : null}
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatTile label="Total due" value={amount(finance?.totalDue)} delta={money(finance?.totalDiscount) ? `${amount(finance?.totalDiscount)} discount` : undefined} />
         <StatTile label="Paid" value={amount(finance?.totalPaid)} />
@@ -47,6 +59,9 @@ export function PaymentsTab({ studentId, finance }: Props) {
           </div>
         </Panel>
       </div>
+      <MarkPaidDialog open={markingPaid} onClose={() => setMarkingPaid(false)}
+        student={{ id: studentId, name: who.name, code: who.code, balance, currency }}
+        onDone={(message) => { setMarkingPaid(false); setNotice(message); payments.refetch(); onChanged(); }} />
     </div>
   );
 }
