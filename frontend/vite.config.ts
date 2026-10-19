@@ -16,6 +16,8 @@ export default defineConfig({
       // App-shell precache + image runtime cache (low-bandwidth friendly).
       // API responses are never cached — learning and payment data stays live.
       workbox: {
+        // Keep the shared auth photo available before the image runtime cache is warm.
+        globPatterns: ["**/*.{js,wasm,css,html}", "**/auth-image-*.webp"],
         cleanupOutdatedCaches: true,
         skipWaiting: true,
         clientsClaim: true,
