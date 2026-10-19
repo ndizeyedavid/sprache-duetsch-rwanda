@@ -22,7 +22,7 @@ export const retentionQuerySchema = z.object({
   recentDays: z.coerce.number().int().min(1).max(365).default(90),
 });
 
-export const gradingBacklogQuerySchema = z.object({ teacherId: optionalId });
+export const gradingBacklogQuerySchema = z.object({ teacherId: optionalId, intakeId: optionalId });
 
 export type AtRiskQuery = z.infer<typeof atRiskQuerySchema>;
 export type RetentionQuery = z.infer<typeof retentionQuerySchema>;
