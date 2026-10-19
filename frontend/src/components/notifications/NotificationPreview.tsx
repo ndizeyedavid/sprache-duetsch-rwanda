@@ -53,7 +53,7 @@ export function NotificationPreview({ rows, loading, error, unread, markingAll, 
                     <span className="min-w-0 flex-1">
                       <span className={`block truncate text-sm ${item.readAt ? 'font-medium' : 'font-semibold'}`}>{item.title}</span>
                       {item.body ? <span className="mt-0.5 line-clamp-2 block text-xs text-muted">{item.body}</span> : null}
-                      <span className="mt-1 block text-[11px] text-muted">{label} · {timeAgo(item.createdAt)}</span>
+                      <span className="mt-1 block text-[0.6875rem] text-muted">{label} · {timeAgo(item.createdAt)}</span>
                     </span>
                     {item.readAt ? null : <span aria-label="Unread" className="mt-2 size-2 shrink-0 rounded-full bg-brand" />}
                   </button>
