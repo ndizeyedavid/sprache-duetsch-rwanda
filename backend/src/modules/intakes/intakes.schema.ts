@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { booleanQuery,idParam,nullableDate,optionalText,paginationQuery } from "../../lib/query.js";
+import { booleanQuery,idParam,optionalText,paginationQuery } from "../../lib/query.js";
 
 const currencySchema = z.string().trim().min(1).max(10);
 
@@ -14,8 +14,7 @@ const intakeFields = {
   name: z.string().trim().min(2).max(120),
   startDate: z.coerce.date(),
   endDate: z.coerce.date(),
-  enrollmentOpensAt: nullableDate,
-  enrollmentEndsAt: nullableDate,
+  registrationOpen: z.boolean().optional(),
   registrationFee: z.coerce.number().max(0).min(0).optional(),
   bookFee: z.coerce.number().max(0).min(0).optional(),
   currency: currencySchema,
@@ -40,6 +39,8 @@ export const listIntakeQuerySchema = z.object({
   search: optionalText(160),
   isActive: booleanQuery.optional(),
   upcoming: booleanQuery.optional(),
+  /** Only intakes taking registrations now (active, switched open, not ended). */
+  open: booleanQuery.optional(),
   ...paginationQuery,
 });
 
