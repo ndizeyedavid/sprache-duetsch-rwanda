@@ -2,6 +2,11 @@ import type { Request,Response } from "express";
 import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import type { CreateIntakeInput,ListIntakeQuery,UpdateIntakeInput } from "./intakes.schema.js";
 import * as service from "./intakes.service.js";
+import { getIntakeOverview } from "./intake-overview.js";
+
+export const overview = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await getIntakeOverview({ id: req.user!.id, role: req.user!.role }) });
+};
 
 export const list = async (req: Request, res: Response): Promise<void> => {
   const result = await service.listIntakes(validatedQuery<ListIntakeQuery>(req));
