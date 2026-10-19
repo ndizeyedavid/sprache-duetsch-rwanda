@@ -13,7 +13,12 @@ vi.hoisted(() => {
 const app = createApp();
 
 describe("marketing website enrollment preflight", () => {
-  it.each(["https://deutshsprache.org", "https://www.deutshsprache.org"])("allows JSON submissions from %s", async (origin) => {
+  it.each([
+    "https://deutschspracherw.org",
+    "https://www.deutschspracherw.org",
+    "https://deutshsprache.org",
+    "https://www.deutshsprache.org",
+  ])("allows JSON submissions from %s", async (origin) => {
     const response = await request(app).options("/api/applications")
       .set("Origin", origin)
       .set("Access-Control-Request-Method", "POST")
