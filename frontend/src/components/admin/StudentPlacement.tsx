@@ -20,7 +20,7 @@ export function StudentPlacement({ students, levels, onSaved }: Props) {
   return (
     <div className="space-y-4">
       <label className="block">
-        <span className="mb-1 block text-[11px] font-medium">Student</span>
+        <span className="mb-1 block text-[0.6875rem] font-medium">Student</span>
         <select value={studentId} onChange={(event) => setStudentId(event.currentTarget.value)} className="select select-sm w-full rounded-field bg-base-200">
           <option value="">Awaiting decision ({queue.data?.length ?? '…'})</option>
           {students.map((row) => (
