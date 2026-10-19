@@ -19,6 +19,9 @@ export type AuthUser = {
   status: string;
   avatarUrl?: string | null;
   phone?: string | null;
+  /** Set while a student is suspended (banned); shown on their suspended screen. */
+  suspendedReason?: string | null;
+  suspendedAt?: string | null;
 };
 
 export type AuthTokens = {
