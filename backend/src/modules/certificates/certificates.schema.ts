@@ -20,6 +20,7 @@ export const revokeCertificateSchema = z.object({
 export const listCertificatesQuerySchema = z.object({
   studentId: z.string().min(1).optional(),
   levelId: z.string().min(1).optional(),
+  intakeId: z.string().min(1).optional(),
   status: z.enum(["ISSUED", "REVOKED"]).optional(),
   ...paginationQuery,
 });
