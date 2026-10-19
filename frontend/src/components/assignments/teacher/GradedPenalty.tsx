@@ -26,7 +26,7 @@ export function GradedPenalty({ assignmentId, submission: s, maxPoints, onSaved 
     <div className="mt-3 space-y-2 rounded-field bg-base-100 p-3 text-xs text-base-content">
       <p>{version?.lateByMinutes ? `Late by ${lateDuration(version.lateByMinutes)} · ` : ''}Teacher score {raw} · Late penalty {applied}% · Final {s.score}/{maxPoints}</p>
       {open ? (
-        <div className="grid gap-2 sm:grid-cols-[110px_minmax(0,1fr)_auto]">
+        <div className="grid gap-2 sm:grid-cols-[6.875rem_minmax(0,1fr)_auto]">
           <label className="flex items-center gap-1"><input type="number" aria-label="New penalty percent" className="input input-xs w-16" min={0} max={100} step={0.5} value={percent} onChange={e => setPercent(e.target.value)} />%</label>
           <input className="input input-xs w-full" aria-label="Reason for the change" placeholder="Reason (kept in the audit log)" maxLength={500} value={reason} onChange={e => setReason(e.target.value)} />
           <button type="button" className="btn btn-xs" disabled={busy} onClick={() => void save()}>{busy ? 'Saving…' : `Save · ${scoreAfterPenalty(raw, Number(percent || 0))}/${maxPoints}`}</button>
