@@ -1,10 +1,13 @@
 import { refreshFinanceProfiles } from "../../lib/finance.js";
 import { prisma } from "../../lib/prisma.js";
-import { getFinanceSummary } from "../payments/finance-reports.js";
+import { getFinanceReport } from "../payments/finance-reports.js";
 import type { DashboardFilter } from "./dashboards.schema.js";
 export const getFinanceDashboard = async (filter: DashboardFilter) => {
   await refreshFinanceProfiles();
-  const summary = await getFinanceSummary(filter);
-  const overdueCount = await prisma.studentFinance.count({ where: { overdueAmount: { gt: 0 }, ...(filter.campusId || filter.intakeId || filter.levelId ? { student: { enrollments: { some: { campusId: filter.campusId, intakeId: filter.intakeId, levelId: filter.levelId } } } } : {}) } });
+  const { summary, overdueStudentIds } = await getFinanceReport(filter);
+  // Scoped: students with an overdue obligation inside the scope (same attribution as the
+  // summary). Unscoped: every student whose finance profile shows an overdue amount.
+  const scoped = Boolean(filter.campusId || filter.intakeId || filter.levelId);
+  const overdueCount = scoped ? overdueStudentIds.size : await prisma.studentFinance.count({ where: { overdueAmount: { gt: 0 } } });
   return { ...summary, overdueCount, byPaymentMethod: summary.byMethod.map(row => ({ methodId: row.methodId, name: row.methodName, total: row.total })) };
 };
