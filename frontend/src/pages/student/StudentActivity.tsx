@@ -1,6 +1,6 @@
+import type { ReactNode } from 'react';
 import { useCallback,useMemo,useState } from 'react';
-import { FiArrowLeft } from 'react-icons/fi';
-import { Link,useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { ActivityIntro } from '../../components/activity-player/ActivityIntro';
 import { ActivityPlayer } from '../../components/activity-player/ActivityPlayer';
 import { ActivityReviewPanel } from '../../components/activity-player/ActivityReviewPanel';
@@ -10,7 +10,6 @@ import type { SubmissionView } from '../../components/activity-player/useActivit
 import { useActivityAttempt } from '../../components/activity-player/useActivityAttempt';
 import { AntiCheatGuard } from '../../components/assignments/AntiCheatGuard';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
-import { ActivityNavigation } from '../../components/student/practice/ActivityNavigation';
 import { ActivityOutcome } from '../../components/student/practice/ActivityOutcome';
 import { Panel } from '../../components/ui/Panel';
 import { useApi } from '../../hooks/useApi';
@@ -31,15 +30,12 @@ export function StudentActivity() {
   const attempt = useActivityAttempt(activityId, type, (activity?.mySubmission ?? null) as SubmissionView | null, useCallback(() => refetchLesson(), [refetchLesson]));
   const [cheatLocked, setCheatLocked] = useState(false);
 
-  if (courses.loading || lessonApi.loading) return <LoadingBlock label="Loading activity…" />;
-  if (courses.error || !course) return <ErrorBlock message={courses.error ?? 'Course not found.'} onRetry={courses.refetch} />;
-  if (lessonApi.error || !lessonApi.data) return <ErrorBlock message={lessonApi.error ?? 'Lesson not found.'} onRetry={lessonApi.refetch} />;
-  if (!activity) return (
-    <div className="space-y-4">
-      <Link to={`/courses/${slug}/learn/${lessonId}`} className="inline-flex items-center gap-1 text-xs hover:underline"><FiArrowLeft aria-hidden />Back to lesson</Link>
-      <Panel><EmptyBlock title="Activity not found" hint="This activity may have been removed." /></Panel>
-    </div>
-  );
+  const code = course?.level.code ?? slug.toUpperCase();
+  const shell = (state: ReactNode) => <div className="space-y-4"><ActivityIntro slug={slug} lessonId={lessonId} code={code} />{state}</div>;
+  if (courses.loading || lessonApi.loading) return shell(<LoadingBlock label="Loading activity…" />);
+  if (courses.error || !course) return shell(<ErrorBlock message={courses.error ?? 'Course not found.'} onRetry={courses.refetch} />);
+  if (lessonApi.error || !lessonApi.data) return shell(<ErrorBlock message={lessonApi.error ?? 'Lesson not found.'} onRetry={lessonApi.refetch} />);
+  if (!activity) return shell(<Panel><EmptyBlock title="Activity not found" hint="This activity may have been removed." /></Panel>);
 
   const guarded = !isAntiCheatExempt(type, config);
   const ready = isResponseReady(type, config, attempt.value);
@@ -52,8 +48,7 @@ export function StudentActivity() {
 
   return (
     <div className="space-y-4">
-      <ActivityNavigation slug={slug} lessonId={lessonId} code={course.level.code} title={activity.title} type={type} />
-      <ActivityIntro title={activity.title} type={type} instructions={activity.instructions} guarded={guarded} />
+      <ActivityIntro slug={slug} lessonId={lessonId} code={code} title={activity.title} type={type} instructions={activity.instructions} guarded={guarded} />
       <Panel>
         <AntiCheatGuard enabled={guarded && attempt.editing && !cheatLocked} persistKey={cheatKey}
           onViolation={(violation) => void reportActivityViolation(activityId, violation).catch(() => {})} onLock={onLock}>
