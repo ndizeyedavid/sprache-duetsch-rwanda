@@ -2,7 +2,7 @@ import type { Editor } from '@tiptap/react';
 import { FiBold,FiImage,FiItalic,FiLink,FiList,FiRotateCcw,FiRotateCw } from 'react-icons/fi';
 
 export function NotesToolbar({ editor }: { editor: Editor }) {
-  const button = (active = false) => `btn btn-sm btn-square ${active ? 'btn-neutral' : 'btn-ghost'}`;
+  const button = (active = false) => `btn btn-sm btn-square ${active ? 'btn-primary' : 'btn-ghost'}`;
   return <div className="flex flex-wrap items-center gap-1 rounded-field bg-base-200 p-2" aria-label="Text formatting">
     <select aria-label="Text style" className="select select-sm mr-2 w-32 border-0 bg-base-100" value={editor.isActive('heading',{level:2})?'section':editor.isActive('heading',{level:3})?'subheading':'paragraph'} onChange={event=>{
       if(event.target.value==='paragraph')editor.chain().focus().setParagraph().run();
