@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ADMIN_ROLES } from "../../lib/roles.js";
+import { ADMIN_ROLES,STAFF_ROLES } from "../../lib/roles.js";
 import { catalogueAccess } from "../../middleware/catalogue-access.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
@@ -17,6 +17,8 @@ export const intakesRouter = Router();
 
 // Public: the registration form needs the list of open intakes.
 intakesRouter.get("/", catalogueAccess, validate({ query: listIntakeQuerySchema }), asyncHandler(controller.list));
+// Staff intake switcher (before "/:id"): phase, counts and — for finance roles — money totals.
+intakesRouter.get("/overview", requireAuth, requireRole(...STAFF_ROLES), asyncHandler(controller.overview));
 intakesRouter.get("/:id", catalogueAccess, validate({ params: intakeIdSchema }), asyncHandler(controller.get));
 
 intakesRouter.post(
