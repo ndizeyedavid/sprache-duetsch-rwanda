@@ -57,7 +57,7 @@ export function AcademicOutcomes({ data }: { data: AcademicDashboard }) {
             </div>
             <div>
               <h3 className="text-sm font-semibold">{rate.label}</h3>
-              <p className="mt-1 text-[11px] leading-5 text-muted">
+              <p className="mt-1 text-[0.6875rem] leading-5 text-muted">
                 {rate.note}
               </p>
             </div>
