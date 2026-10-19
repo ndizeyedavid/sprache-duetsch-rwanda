@@ -1,7 +1,7 @@
+import { Dialog } from '../ui/overlay/Dialog';
 import {
 FiFileText,
-FiPlus,
-FiX
+FiPlus
 } from 'react-icons/fi';
 import {
 createMaterial,
@@ -11,8 +11,7 @@ uploadFile
 import { MATERIAL_TYPES } from './material-types';
 export function LessonEditorSection9(props: { setShowAddMaterial: import("react").Dispatch<import("react").SetStateAction<boolean>>; onRun: (action: () => Promise<unknown>, fallback: string, after?: () => void) => Promise<void>; lessonId: string; materialForm: { title: string; type: string; url: string; }; setMaterialForm: import("react").Dispatch<import("react").SetStateAction<{ title: string; type: string; url: string; }>>; onSaved: () => void; busy: boolean }) {
 const { setShowAddMaterial, onRun, lessonId, materialForm, setMaterialForm, onSaved, busy } = props;
-return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={() => setShowAddMaterial(false)} className="absolute inset-0 bg-black/40 " />
+return (<Dialog open onClose={() => setShowAddMaterial(false)} busy={busy} icon={FiFileText} title="Add resource">
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -32,17 +31,8 @@ return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4"
  },
  );
  }}
- className="relative w-full max-w-lg rounded-box bg-base-100 p-5"
+ className="space-y-1"
  >
- <button type="button" onClick={() => setShowAddMaterial(false)} className="btn btn-ghost btn-xs btn-circle absolute right-3 top-3">
- <FiX aria-hidden />
- </button>
- <h4 className="flex items-center gap-2 text-sm font-bold">
- <span className="flex size-7 items-center justify-center rounded-full bg-info text-white">
- <FiFileText aria-hidden />
- </span>
- Add resource
- </h4>
  <p className="mt-1 text-xs text-muted">A file, link or note students will see inside this lesson.</p>
  <div className="mt-4 grid gap-3 sm:grid-cols-2">
  <label className="block">
@@ -94,5 +84,5 @@ return (<div className="fixed inset-0 z-50 flex items-center justify-center p-4"
   </button>
  </div>
  </form>
- </div>);
+ </Dialog>);
 }
