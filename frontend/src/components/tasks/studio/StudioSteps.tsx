@@ -12,7 +12,7 @@ export function StudioSteps({ step, issues, onStep, homeworkWork }: { step: Step
         return (
           <button key={s.id} type="button" onClick={() => onStep(s.id)} aria-current={active ? 'step' : undefined} title={issue ?? 'Ready'}
             className={`flex shrink-0 items-center gap-2 rounded-full px-3 py-1.5 text-sm transition-colors ${active ? 'bg-brand text-primary-content font-semibold text-brand' : 'text-muted hover:bg-base-200'}`}>
-            <span className={`grid size-5 place-items-center rounded-full text-[11px] ${issue ? 'bg-base-200 text-muted' : 'bg-success text-white'}`}>{issue ? i + 1 : <FiCheck aria-hidden />}</span>
+            <span className={`grid size-5 place-items-center rounded-full text-[0.6875rem] ${issue ? 'bg-base-200 text-muted' : 'bg-success text-white'}`}>{issue ? i + 1 : <FiCheck aria-hidden />}</span>
             {s.id === 'content' && homeworkWork ? 'Task' : s.label}
           </button>
         );
