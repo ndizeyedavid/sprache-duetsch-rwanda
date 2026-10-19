@@ -7,7 +7,7 @@ import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
 import { downloadAttachment,receiveFeedbackAudio,receiveFile } from "./assignment-files.js";
 import * as c from "./assignments.controller.js";
-import { assignmentBody,assignmentParams,assignmentStatusBody,draftBody,extensionBody,extensionParams,myListQuery,penaltyOverrideBody,reviewBody,submissionParams } from "./assignments.schema.js";
+import { assignmentBody,assignmentParams,assignmentStatusBody,draftBody,extensionBody,extensionParams,myListQuery,penaltyOverrideBody,reviewBody,staffListQuery,submissionParams } from "./assignments.schema.js";
 import { feedbackBankRouter } from "./feedback-bank.routes.js";
 export const assignmentsRouter = Router();
 assignmentsRouter.use(requireAuth);
@@ -21,7 +21,7 @@ assignmentsRouter.post("/my/:id/files", student, validate({ params: assignmentPa
 assignmentsRouter.get("/:id/files/:fileId", requireRole("STUDENT", ...ACADEMIC_ROLES), validate({ params: z.object({ id: z.uuid(), fileId: z.uuid() }) }), asyncHandler(downloadAttachment));
 assignmentsRouter.get("/classes/:id/students", staff, validate({ params: assignmentParams }), asyncHandler(c.roster));
 assignmentsRouter.get("/classes/:id/lessons", staff, validate({ params: assignmentParams }), asyncHandler(c.lessons));
-assignmentsRouter.get("/", staff, asyncHandler(c.list));
+assignmentsRouter.get("/", staff, validate({ query: staffListQuery }), asyncHandler(c.list));
 assignmentsRouter.post("/", staff, validate({ body: assignmentBody }), asyncHandler(c.create));
 assignmentsRouter.get("/:id", staff, validate({ params: assignmentParams }), asyncHandler(c.get));
 assignmentsRouter.put("/:id", staff, validate({ params: assignmentParams, body: assignmentBody }), asyncHandler(c.update));
