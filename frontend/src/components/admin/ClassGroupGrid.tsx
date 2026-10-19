@@ -27,7 +27,7 @@ export function ClassGroupGrid({
             <StatusBadge status={group.isActive ? "Active" : "Inactive"} />
           </div>
           <div className="p-4">
-            <p className="text-[10px] uppercase tracking-wider text-muted">
+            <p className="text-[0.625rem] uppercase tracking-wider text-muted">
               {group.code}
             </p>
             <h3 className="mt-1 text-base font-semibold">{group.name}</h3>
@@ -55,7 +55,7 @@ export function ClassGroupGrid({
             </div>
             <div className="mt-4 flex flex-wrap items-center justify-between gap-2"><button onClick={() => onEdit(group)} className="btn btn-sm rounded-full" aria-label={`Edit ${group.name}`}><FiEdit2 aria-hidden />Edit</button>
             <Link
-              to="/admin/teaching"
+              to="/admin/teachers"
               className="inline-flex items-center gap-2 text-xs font-semibold"
             >
               Teaching
