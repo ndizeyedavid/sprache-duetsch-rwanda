@@ -12,7 +12,7 @@ export const AdminLiveClass = lazyPage(() => import("../pages/admin/LiveClass").
 export const AdminClasses = lazyPage(() => import("../pages/admin/Classes").then((module) => module.AdminClasses));
 export const AdminEnrolments = lazyPage(() => import("../pages/admin/Enrolments").then((module) => module.AdminEnrolments));
 export const AdminPeople = lazyPage(() => import("../pages/admin/People").then((module) => module.AdminPeople));
-export const AdminTeaching = lazyPage(() => import("../pages/admin/Teaching").then((module) => module.AdminTeaching));
+export const AdminTeachers = lazyPage(() => import("../pages/admin/Teachers").then((module) => module.AdminTeachers));
 export const AdminAnnouncements = lazyPage(() => import("../pages/admin/Announcements").then((module) => module.AdminAnnouncements));
 export const AdminOrganisation = lazyPage(() => import("../pages/admin/Organisation").then((module) => module.AdminOrganisation));
 export const AdminIntakes = lazyPage(() => import("../pages/admin/Intakes").then((module) => module.AdminIntakes));
