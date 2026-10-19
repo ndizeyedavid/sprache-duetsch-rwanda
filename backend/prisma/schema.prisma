@@ -230,6 +230,8 @@ model User {
   rubricTemplates RubricTemplate[] @relation("RubricTemplateOwner")
   teachingLevels TeacherLevel[] @relation("TeachingLevelTeacher")
   levelsAssigned TeacherLevel[] @relation("TeachingLevelAssigner")
+  teachingIntakes TeacherIntake[] @relation("TeachingIntakeTeacher")
+  intakesAssigned TeacherIntake[] @relation("TeachingIntakeAssigner")
   assignmentsCreated Assignment[]
   assignmentFiles AssignmentFile[]
 
@@ -244,6 +246,12 @@ model User {
   avatarUrl    String?
   notificationPreferences Json?
   lastLoginAt  DateTime?
+  /// Students may only be signed in on one device: the session id of their current sign-in.
+  activeSessionId String?
+  /// Why academic staff suspended (banned) this account; shown to the student when they sign in.
+  suspendedReason String?
+  suspendedAt     DateTime?
+  suspendedById   String?
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
 
@@ -252,6 +260,7 @@ model User {
   sessionsTaught     ClassSession[]   @relation("SessionTeacher")
   markedAttendance   Attendance[]     @relation("AttendanceMarker")
   paymentsReceived   Payment[]        @relation("PaymentReceiver")
+  paymentClaimsReviewed PaymentClaim[] @relation("PaymentClaimReviewer")
   receiptsIssued     Receipt[]        @relation("ReceiptIssuer")
   discountsRequested Discount[]       @relation("DiscountRequester")
   discountsApproved  Discount[]       @relation("DiscountApprover")
@@ -278,6 +287,8 @@ model User {
 model RefreshToken {
   id        String    @id @default(uuid())
   userId    String
+  /// Stable across refresh rotation: identifies one sign-in (one device) end to end.
+  sessionId String    @default(uuid())
   tokenHash String    @unique
   expiresAt DateTime
   revokedAt DateTime?
@@ -288,6 +299,7 @@ model RefreshToken {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
+  @@index([sessionId])
 }
 
 model PasswordResetToken {
@@ -389,8 +401,8 @@ model Intake {
   name              String
   startDate         DateTime
   endDate           DateTime
-  enrollmentOpensAt DateTime?
-  enrollmentEndsAt  DateTime?
+  /// Registration switch: students can apply/register any time this is on and the intake has not ended.
+  registrationOpen  Boolean  @default(true)
   registrationFee   Decimal  @default(0) @db.Decimal(12, 2)
   bookFee           Decimal  @default(0) @db.Decimal(12, 2)
   currency          String   @default("RWF")
@@ -403,6 +415,7 @@ model Intake {
   enrollments Enrollment[]
   levels      Level[]      @relation("IntakeLevels")
   applications Application[]
+  teachers     TeacherIntake[]
 }
 
 model ClassGroup {
@@ -480,6 +493,7 @@ model Student {
   activitySubmissions ActivitySubmission[]
   charges        Charge[]
   checkouts      PaymentCheckout[]
+  paymentClaims  PaymentClaim[]
   payments       Payment[]
   discounts      Discount[]
   certificates   Certificate[]
@@ -873,6 +887,7 @@ model Attendance {
 // ---------------------------------------------------------------------------
 
 model PaymentMethodConfig {
+  claims PaymentClaim[]
   id                 String   @id @default(uuid())
   code               String   @unique
   name               String
@@ -952,6 +967,7 @@ model Payment {
   receivedBy    User?               @relation("PaymentReceiver", fields: [receivedById], references: [id])
   parentPayment Payment?            @relation("PaymentRefund", fields: [parentPaymentId], references: [id])
   refunds       Payment[]           @relation("PaymentRefund")
+  claim         PaymentClaim?
   checkout      PaymentCheckout?
   receipt       Receipt?
 
@@ -1274,6 +1290,19 @@ model AssignmentFile {
   @@index([assignmentId, uploaderId])
 }
 
+/// A teacher working in an intake. Added directly from the Teachers page, and implied whenever they get a class there.
+model TeacherIntake {
+  teacherId    String
+  intakeId     String
+  assignedById String?
+  assignedAt   DateTime @default(now())
+  teacher    User   @relation("TeachingIntakeTeacher", fields: [teacherId], references: [id], onDelete: Cascade)
+  intake     Intake @relation(fields: [intakeId], references: [id], onDelete: Cascade)
+  assignedBy User?  @relation("TeachingIntakeAssigner", fields: [assignedById], references: [id], onDelete: SetNull)
+  @@id([teacherId, intakeId])
+  @@index([intakeId])
+}
+
 model TeacherLevel {
   teacherId String
   levelId String
@@ -1312,6 +1341,41 @@ model UploadedFile {
 }
 
 // Gateway requests remain separate from received money in the ledger.
+enum PaymentClaimStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+// A payment the student made outside the gateway (bank, mobile money to the school number,
+// cash at the desk) and reported with its reference. Finance approves it into a real Payment
+// (same receipt/audit/balance path as a manual payment) or rejects it with a reason.
+model PaymentClaim {
+  id           String             @id @default(uuid())
+  studentId    String
+  methodId     String
+  amount       Decimal            @db.Decimal(12, 2)
+  currency     String             @default("RWF")
+  reference    String?
+  paidAt       DateTime
+  note         String?
+  status       PaymentClaimStatus @default(PENDING)
+  reviewedById String?
+  reviewedAt   DateTime?
+  reviewNote   String?
+  paymentId    String?            @unique
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+
+  student    Student             @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  method     PaymentMethodConfig @relation(fields: [methodId], references: [id])
+  reviewedBy User?               @relation("PaymentClaimReviewer", fields: [reviewedById], references: [id])
+  payment    Payment?            @relation(fields: [paymentId], references: [id])
+
+  @@index([status, createdAt])
+  @@index([studentId, createdAt])
+}
+
 enum CheckoutStatus {
   INITIATING
   PENDING
