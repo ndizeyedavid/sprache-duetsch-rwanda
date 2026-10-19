@@ -9,7 +9,7 @@ export function CourseProgressCard({ completion, code, nextTitle }: Props) {
     <div className="flex flex-col items-center p-5 text-center">
       <RadialStat value={completion} size={152} className="mx-auto">
         <span className="text-2xl font-bold text-ink">{completion}%</span>
-        <span className="mt-1 max-w-28 text-[11px] leading-snug text-muted">of {code ?? 'syllabus'} finished</span>
+        <span className="mt-1 max-w-28 text-[0.6875rem] leading-snug text-muted">of {code ?? 'syllabus'} finished</span>
       </RadialStat>
       <h3 className="mt-3 text-sm font-bold">My progress</h3>
       <p className="mt-1 max-w-[16rem] truncate text-xs text-muted">{nextTitle ? `Next: ${nextTitle}` : 'All lessons completed'}</p>
