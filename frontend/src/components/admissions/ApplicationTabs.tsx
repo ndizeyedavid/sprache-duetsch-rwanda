@@ -20,7 +20,7 @@ export function ApplicationTabs({ active, counts, onChange }: Props) {
               selected ? 'border-brand text-brand' : 'border-transparent text-muted hover:text-ink'}`}>
             {tab.label}
             {count !== undefined ? (
-              <span className={`rounded-full px-1.5 text-[11px] ${selected ? 'bg-brand text-white' : 'bg-base-200 text-muted'}`}>{count}</span>
+              <span className={`rounded-full px-1.5 text-[0.6875rem] ${selected ? 'bg-brand text-white' : 'bg-base-200 text-muted'}`}>{count}</span>
             ) : null}
           </button>
         );
