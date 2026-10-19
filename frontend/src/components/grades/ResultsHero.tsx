@@ -1,7 +1,21 @@
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight,FiStar } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { heroAction } from '../hero/hero-actions';
+import { PageHero } from '../hero/PageHero';
 import type { GradeEntry } from './result-model';
+
+/** Grades header: what this page holds, and the one next step (revise returned work or go practise). */
 export function ResultsHero({ entries }: { entries: GradeEntry[] }) {
   const returned = entries.find(e => e.state === 'returned');
-  return <section className="card overflow-hidden border border-base-300 bg-base-100"><div className="grid items-center gap-5 p-6 sm:grid-cols-[1fr_auto] sm:p-8"><div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Your results</p><h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">See your progress.<br /><span className="text-muted">Know your next step.</span></h1><p className="mt-4 max-w-lg text-sm leading-6 text-muted">All your grades and teacher feedback, together. See your scores and what to practise next.</p><Link className="btn btn-sm mt-5" to={returned?.href ?? '/assignments'}>{returned ? 'Review requested changes' : 'Go to assignments'}<FiArrowRight aria-hidden /></Link></div><img src="/illustrations/course-learner.webp" alt="" width={240} height={240} className="hidden h-48 w-52 object-contain sm:block" /></div><div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-base-300 bg-base-200 px-6 py-3 text-xs text-muted sm:px-8"><span>Homework, quizzes & exams</span><span>Real results from your course</span><span>Feedback to help you improve</span></div></section>;
+  return (
+    <PageHero
+      eyebrow="Your results"
+      icon={FiStar}
+      title="Grades & feedback"
+      description="See your progress, know your next step. All your grades and teacher feedback together — your scores and what to practise next."
+      art="grades"
+      meta={<><span className="hero-chip">Homework, quizzes & exams</span><span className="hero-chip">Feedback to help you improve</span></>}
+      actions={<Link className={heroAction} to={returned?.href ?? '/assignments'}>{returned ? 'Review requested changes' : 'Go to assignments'}<FiArrowRight aria-hidden /></Link>}
+    />
+  );
 }
