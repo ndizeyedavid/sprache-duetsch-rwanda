@@ -24,7 +24,13 @@ export const resetPassword = async (input: ResetPasswordInput): Promise<void> =>
       data: { usedAt: new Date() },
     });
     if (!claimed.count) throw badRequest("Reset token is invalid or has expired");
-    await tx.user.update({ where: { id: record.userId }, data: { passwordHash } });
+    // Completing setup or recovery invalidates every older link for this account.
+    await tx.passwordResetToken.updateMany({
+      where: { userId: record.userId, usedAt: null }, data: { usedAt: new Date() },
+    });
+    // Clearing the active session also kicks the current device: recovery means every
+    // existing sign-in is treated as untrusted.
+    await tx.user.update({ where: { id: record.userId }, data: { passwordHash, activeSessionId: null } });
     await tx.refreshToken.updateMany({
       where: { userId: record.userId, revokedAt: null },
       data: { revokedAt: new Date() },
