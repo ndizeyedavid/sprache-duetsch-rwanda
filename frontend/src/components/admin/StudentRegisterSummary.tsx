@@ -1,12 +1,18 @@
 import type { StudentRow } from '../../lib/services';
-import { AcademicSummary } from './AcademicSummary';
 
-export function StudentRegisterSummary({ rows }: { rows: StudentRow[] | null }) {
+type Props = { rows: StudentRow[] | null; academic: boolean };
+
+/** Register counts as white chips for the Students page hero (placement gaps only for academic staff). */
+export function StudentRegisterSummary({ rows, academic }: Props) {
   if (!rows) return null;
-  return <AcademicSummary items={[
-    { label: 'Learners in register', value: rows.length, note: 'Loaded student profiles' },
-    { label: 'Active learners', value: rows.filter(r => r.status === 'ACTIVE').length, note: 'Currently active accounts' },
-    { label: 'Level assigned', value: rows.filter(r => r.currentLevel !== null).length, note: 'Profiles with a current level' },
-    { label: 'Pending learners', value: rows.filter(r => r.status === 'PENDING').length, note: 'Awaiting activation' },
-  ]} />;
+  const count = (status: string) => rows.filter((row) => row.status === status).length;
+  const unplaced = rows.filter((row) => row.currentLevel === null).length;
+  return (
+    <>
+      <span className="hero-chip">{rows.length} learner{rows.length === 1 ? '' : 's'}</span>
+      <span className="hero-chip">{count('ACTIVE')} active</span>
+      <span className="hero-chip">{count('PENDING')} pending</span>
+      {academic && unplaced ? <span className="hero-chip hero-chip-solid">{unplaced} without a level</span> : null}
+    </>
+  );
 }
