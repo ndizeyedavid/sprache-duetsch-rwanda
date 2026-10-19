@@ -16,7 +16,7 @@ export type StudentDetail = {
   guardianPhone: string | null;
   placementScore: number | null;
   createdAt: string;
-  user: { id: string; firstName: string; lastName: string; email: string; phone: string | null; avatarUrl: string | null; status: string };
+  user: { id: string; firstName: string; lastName: string; email: string; phone: string | null; avatarUrl: string | null; status: string; suspendedReason?: string | null; suspendedAt?: string | null };
   campus: { id: string; code: string; name: string } | null;
   intake: { id: string; code: string; name: string; startDate: string; endDate: string | null } | null;
   intendedLevel: LevelRef | null;
