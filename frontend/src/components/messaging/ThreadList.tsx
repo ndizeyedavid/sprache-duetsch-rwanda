@@ -71,10 +71,10 @@ export function ThreadList({ threads, loading, error, onRetry, selectedId, onPic
  <span className="min-w-0 grow">
  <span className="flex items-start justify-between gap-2">
  <span className="truncate text-xs font-semibold leading-tight">{title}</span>
- {t.unreadCount > 0 ? <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-white">{t.unreadCount}</span> : null}
+ {t.unreadCount > 0 ? <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-brand text-[0.625rem] font-bold text-white">{t.unreadCount}</span> : null}
  </span>
- <span className="block truncate text-[11px] text-muted">{last ? `${last.sender.firstName}: ${snippet(last.body)}` : 'No messages yet'}</span>
- <span className="block text-[10px] text-muted">{relativeTime(t.updatedAt)}</span>
+ <span className="block truncate text-[0.6875rem] text-muted">{last ? `${last.sender.firstName}: ${snippet(last.body)}` : 'No messages yet'}</span>
+ <span className="block text-[0.625rem] text-muted">{relativeTime(t.updatedAt)}</span>
  </span>
  </button>
  </li>
