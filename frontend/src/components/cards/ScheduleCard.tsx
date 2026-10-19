@@ -33,7 +33,7 @@ export function ScheduleCard({
  <div className="flex items-start justify-between gap-2">
  <h3 className="text-sm font-semibold text-ink">{title}</h3>
  {status ? (
- <span className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ${tones.soft}`}>
+ <span className={`shrink-0 rounded-full px-2 py-0.5 text-[0.625rem] font-medium ${tones.soft}`}>
  {status}
  </span>
  ) : null}
