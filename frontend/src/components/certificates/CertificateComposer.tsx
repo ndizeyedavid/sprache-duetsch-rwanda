@@ -17,7 +17,7 @@ export function CertificateComposer({ initial, onIssued, onBusyChange }: Props) 
   const fetchError = students.error ?? levels.error;
   return <div className="space-y-5">
     <p className="max-w-3xl text-sm leading-6 text-muted">Recognise a learner’s completed course. Prepare a school certificate or attach an existing PDF, review the document, then issue it to the student.</p>
-    <div className="grid items-start gap-6 xl:grid-cols-[minmax(320px,0.85fr)_minmax(0,1.15fr)]">
+    <div className="grid items-start gap-6 xl:grid-cols-[minmax(20rem,0.85fr)_minmax(0,1.15fr)]">
       <form id="certificate-composer" onSubmit={event => { event.preventDefault(); void draft.showPreview(); }} className="space-y-5">
         <fieldset disabled={!!draft.busy || students.loading || levels.loading} className="space-y-5">
           <div className="grid gap-4 sm:grid-cols-2">
