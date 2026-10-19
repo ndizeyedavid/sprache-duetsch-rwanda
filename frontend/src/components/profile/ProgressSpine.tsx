@@ -15,7 +15,7 @@ function ModuleRow({ module }: { module: Module }) {
 
   return (
     <li className="relative">
-      <span aria-hidden className={`absolute -left-[27px] top-1.5 size-3 rounded-full border-2 border-base-100 ${node}`} />
+      <span aria-hidden className={`absolute -left-[calc(1.625rem+1px)] top-1.5 size-3 rounded-full border-2 border-base-100 ${node}`} />
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <p className="min-w-0 text-xs">
           <span className="font-medium">{module.title}</span>
@@ -68,7 +68,7 @@ export function ProgressSpine({ level, showResume = true }: { level: MyProgressL
       {resume ? (
         <Link to={resume.coursePath} className="mt-5 flex items-center justify-between gap-3 rounded-box bg-base-200 px-4 py-3">
           <span className="min-w-0">
-            <span className="block text-[10px] font-semibold uppercase tracking-widest text-muted">
+            <span className="block text-[0.625rem] font-semibold uppercase tracking-widest text-muted">
               Up next · {resume.moduleTitle}
             </span>
             <span className="mt-0.5 block truncate text-xs font-semibold">{resume.title}</span>
