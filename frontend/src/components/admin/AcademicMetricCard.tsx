@@ -38,7 +38,7 @@ export function AcademicMetricCard({
         <span
           className={`grid size-9 shrink-0 place-items-center rounded-xl ${tones[tone]}`}
         >
-          <Icon aria-hidden size={18} />
+          <Icon aria-hidden size="1.125rem" />
         </span>
       </div>
       <p className="mt-3 break-words text-2xl font-semibold tracking-tight tabular-nums sm:text-3xl">
