@@ -17,7 +17,7 @@ export function RecordStatStrip({ student, progress }: Props) {
   const lowAttendance = attendance.total > 0 && attendance.percentage < ATTENDANCE_TARGET;
 
   return (
-    <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+    <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
       <StatTile
         label="Attendance"
         value={attendance.total ? `${attendance.percentage}%` : '—'}
