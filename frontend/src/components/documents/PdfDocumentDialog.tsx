@@ -41,7 +41,7 @@ export function PdfDocumentDialog({ title, intro, label, load, downloadPath, fil
     <Modal open onClose={onClose} title={title} boxClassName="max-w-4xl">
       <div className="space-y-4">
         <p className="text-sm text-muted">{intro}</p>
-        <div className="flex min-h-[420px] flex-col rounded-box border border-base-300 bg-base-200 p-3">
+        <div className="flex min-h-[26.25rem] flex-col rounded-box border border-base-300 bg-base-200 p-3">
           {error ? <div role="alert" className="alert alert-error alert-soft">{error}<button className="btn btn-sm" onClick={() => setRetry(value => value + 1)}>Retry</button></div>
             : url ? <Suspense fallback={<BookLoader className="flex-1" />}><PdfViewer key={url} url={url} documentLabel={label} /></Suspense>
             : <BookLoader label={`Preparing your ${label.toLowerCase()}…`} className="flex-1" />}
