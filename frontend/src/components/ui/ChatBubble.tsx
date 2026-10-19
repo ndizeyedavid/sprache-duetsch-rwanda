@@ -16,7 +16,7 @@ export function ChatBubble({ body, time, from }: ChatBubbleProps) {
  >
  {body}
  </p>
- <span className="mt-1 px-1 text-[10px] text-muted">{time}</span>
+ <span className="mt-1 px-1 text-[0.625rem] text-muted">{time}</span>
  </div>
  );
 }
