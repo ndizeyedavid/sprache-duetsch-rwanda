@@ -2,6 +2,7 @@ import { useEffect,useMemo,useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import type { Filter,View } from "../../components/grading/constants";
 import { FILTERS } from "../../components/grading/constants";
+import { GradingHero } from "../../components/grading/GradingHero";
 import { ActivityGradingPanel } from "../../components/teacher/ActivityGradingPanel";
 import { Panel,SectionHeader } from "../../components/ui/Panel";
 import { useApi } from "../../hooks/useApi";
@@ -130,7 +131,8 @@ export function TeacherGrading() {
 
  return (
  <div className="space-y-4">
- <TeacherGradingSection1 pendingCount={pendingCount} classGroupId={classGroupId} setClassGroupId={setClassGroupId} setSelectedId={setSelectedId} classes={classes} assessmentId={assessmentId} setAssessmentId={setAssessmentId} assessmentOptions={assessmentOptions} setView={setView} view={view} selectedAssessment={selectedAssessment} />
+ <GradingHero pending={pendingCount} loaded={Boolean(attempts.data) && filter === "SUBMITTED"} />
+ <TeacherGradingSection1 classGroupId={classGroupId} setClassGroupId={setClassGroupId} setSelectedId={setSelectedId} classes={classes} assessmentId={assessmentId} setAssessmentId={setAssessmentId} assessmentOptions={assessmentOptions} setView={setView} view={view} selectedAssessment={selectedAssessment} />
 
   {view === "activities" ? (
   <Panel>
