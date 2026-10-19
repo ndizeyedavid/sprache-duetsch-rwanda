@@ -1,12 +1,15 @@
-import { FiAlertCircle,FiDollarSign,FiTrendingDown,FiTrendingUp } from 'react-icons/fi';
+import { FiAlertCircle,FiArrowUpRight,FiDollarSign,FiTrendingDown,FiTrendingUp } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { AcademicMetricCard } from '../../components/admin/AcademicMetricCard';
 import { AcademicRateGauge } from '../../components/admin/AcademicRateGauge';
 import { GroupedBar } from '../../components/charts/GroupedBar';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { heroAction,heroGhost } from '../../components/hero/hero-actions';
+import { PageHero } from '../../components/hero/PageHero';
 import { Panel,SectionHeader } from '../../components/ui/Panel';
 import { useApi } from '../../hooks/useApi';
 import { currencyAmount } from '../../lib/format';
+import { listClaims } from '../../lib/payment-claims';
 import { getFinanceDashboard,listCampuses,listLevels,money } from '../../lib/services';
 import { PaypackMonitor } from '../../components/payments/PaypackMonitor';
 import { COLORS } from '../../lib/theme';
@@ -15,10 +18,21 @@ export function AdminFinance() {
  const dashboard = useApi('finance-dashboard', getFinanceDashboard);
  const levels = useApi('levels-catalog', listLevels);
  const campuses = useApi('finance-campus-labels', listCampuses);
+ const claims = useApi('payment-claims-count', () => listClaims('PENDING', 1, 1));
+ const waiting = claims.data?.summary.pending ?? 0;
 
- if (dashboard.loading) return <LoadingBlock label="Loading finance overview…" />;
+ const hero = (
+ <PageHero eyebrow="Tuition overview" icon={FiDollarSign} title="Finance dashboard" art="finance" scoped
+ description="What was billed, what came in and who needs a payment reminder."
+ meta={waiting ? <Link to="/admin/transactions#approvals" className="hero-chip hero-chip-solid">{waiting} student {waiting === 1 ? 'payment' : 'payments'} waiting for approval</Link> : null}
+ actions={<>
+ <Link to="/admin/transactions" className={heroAction}>Transactions <FiArrowUpRight aria-hidden /></Link>
+ <Link to="/admin/students" className={heroGhost}>Student balances</Link>
+ </>} />
+ );
+ if (dashboard.loading) return <div className="space-y-5">{hero}<LoadingBlock label="Loading finance overview…" /></div>;
  if (dashboard.error || !dashboard.data) {
- return <ErrorBlock message={dashboard.error ?? 'Could not load finance data.'} onRetry={dashboard.refetch} />;
+ return <div className="space-y-5">{hero}<ErrorBlock message={dashboard.error ?? 'Could not load finance data.'} onRetry={dashboard.refetch} /></div>;
  }
 
  const data = dashboard.data;
@@ -34,6 +48,7 @@ export function AdminFinance() {
 
  return (
  <div className="space-y-5">
+ {hero}
  <PaypackMonitor />
  <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
  <AcademicMetricCard label="Total billed" value={format(money(data.totalBilled))} note="Charges less approved discounts" icon={FiDollarSign} />
