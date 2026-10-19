@@ -5,6 +5,7 @@ import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/
 import type {
 AttendanceSummaryQuery,
 CancelSessionInput,
+DeleteSessionInput,
 CreateSessionInput,
 CreateSessionMaterialInput,
 ListSessionsQuery,
@@ -15,6 +16,7 @@ UpdateAttendanceInput,
 UpdateSessionInput,
 } from "./sessions.schema.js";
 import * as service from "./sessions.service.js";
+import { deleteSession } from "./delete-session.js";
 
 const currentUserId = (req: Request): string => {
   const id = req.user?.id;
@@ -55,6 +57,12 @@ export const update = async (req: Request, res: Response): Promise<void> => {
     req.user?.role,
   );
   res.json({ success: true, data });
+};
+
+export const remove = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const reason = validatedBody<DeleteSessionInput>(req)?.reason;
+  res.json({ success: true, data: await deleteSession(id, actorId(req), req.user?.role, reason) });
 };
 
 export const cancel = async (req: Request, res: Response): Promise<void> => {
