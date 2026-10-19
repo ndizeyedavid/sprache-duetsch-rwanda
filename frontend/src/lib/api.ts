@@ -1,6 +1,9 @@
 import type { AxiosInstance,AxiosRequestConfig,InternalAxiosRequestConfig } from 'axios';
-import axios,{ AxiosError } from 'axios';
+import axios from 'axios';
+import { isAxiosError } from './api-errors';
 import { clearTokens,getAccessToken,getRefreshToken,setTokens } from './auth-store';
+import { applyIntakeScope } from './intake-scope/apply-scope';
+import { emitSessionEnded,sessionEndedMessage } from './session-events';
 
 export const API_BASE_URL =
   import.meta.env.VITE_API_URL?.trim() || 'http://localhost:4000/api';
@@ -11,58 +14,7 @@ type RefreshEnvelope = Envelope<{
   tokens: { accessToken: string; refreshToken: string };
 }>;
 
-type ApiErrorBody = { message?: string; error?: { message?: string; code?: string; details?: unknown } };
-
-function isAxiosError(error: unknown): error is AxiosError<ApiErrorBody> {
-  return error instanceof AxiosError;
-}
-
-/** Status for distinguishing rejected requests from uncertain transport failures. */
-export function apiErrorStatus(error: unknown): number | undefined {
-  return isAxiosError(error) ? error.response?.status : undefined;
-}
-
-/** Extract field-level errors from a 400/409 response shape. */
-export function apiFieldErrors(error: unknown): Record<string, string> {
-  if (!isAxiosError(error)) return {};
-  const details = (error.response?.data as ApiErrorBody | undefined)?.error?.details as
-    | { body?: { path: (string | number)[]; message: string }[] }
-    | { target?: string[] }
-    | undefined;
-  const out: Record<string, string> = {};
-  if (details && typeof details === "object" && "body" in details && Array.isArray((details as { body: unknown }).body)) {
-    for (const issue of (details as { body: { path: (string | number)[]; message: string }[] }).body) {
-      const key = issue.path.join(".");
-      if (key) out[key] = issue.message;
-    }
-  }
-  // Prisma P2002 duplicate — surface the unique field if available
-  if (details && typeof details === "object" && "target" in details && Array.isArray((details as { target: unknown }).target)) {
-    const target = (details as { target: string[] }).target.join(", ");
-    if (target) out["_form"] = `Duplicate: ${target} already exists`;
-  }
-  return out;
-}
-
-/** Human-readable message from any API failure. */
-export function apiErrorMessage(error: unknown, fallback: string): string {
-  if (isAxiosError(error)) {
-    const data = error.response?.data as ApiErrorBody | undefined;
-    const message = data?.error?.message ?? data?.message;
-    if (typeof message === 'string' && message.length > 0) {
-      // Append first field error if present for immediate clarity
-      const fields = apiFieldErrors(error);
-      const first = Object.entries(fields).find(([k]) => k !== "_form");
-      if (first) return `${message}: ${first[0]} — ${first[1]}`;
-      if (fields._form) return `${message}: ${fields._form}`;
-      return message;
-    }
-    if (error.message === 'Network Error') {
-      return 'Cannot reach the server. Check your connection and try again.';
-    }
-  }
-  return fallback;
-}
+export { apiErrorMessage,apiErrorStatus,apiFieldErrors } from './api-errors';
 
 function attachAuthHeader(
   config: InternalAxiosRequestConfig,
@@ -89,8 +41,10 @@ async function refreshAccessToken(): Promise<string | null> {
         );
         setTokens(data.data.tokens.accessToken, data.data.tokens.refreshToken);
         return data.data.tokens.accessToken;
-      } catch {
+      } catch (error) {
         clearTokens();
+        const ended = sessionEndedMessage(error);
+        if (ended) emitSessionEnded(ended);
         return null;
       } finally {
         refreshInFlight = null;
@@ -106,7 +60,7 @@ export const api: AxiosInstance = axios.create({
   headers: { 'Content-Type': 'application/json' },
 });
 
-api.interceptors.request.use((config) => attachAuthHeader(config));
+api.interceptors.request.use((config) => applyIntakeScope(attachAuthHeader(config)));
 
 api.interceptors.response.use(
   (response) => response,
@@ -119,6 +73,14 @@ api.interceptors.response.use(
     // Never retry the auth endpoints themselves — a 401 there means bad credentials.
     const isAuthCall = url.includes('/auth/login') || url.includes('/auth/refresh');
     if (status !== 401 || original._retried || isAuthCall) throw error;
+
+    // Another device signed in to this student account: no refresh will revive this one.
+    const ended = sessionEndedMessage(error);
+    if (ended) {
+      clearTokens();
+      emitSessionEnded(ended);
+      throw error;
+    }
 
     original._retried = true;
     const nextToken = await refreshAccessToken();
