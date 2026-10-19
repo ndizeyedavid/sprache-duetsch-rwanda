@@ -1,48 +1,54 @@
-import type { CSSProperties } from 'react';
-import { FiArrowRight,FiClock,FiPlay } from 'react-icons/fi';
+import { FiArrowLeft,FiArrowRight,FiBookOpen,FiClock,FiMap,FiPlay } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { LevelItem,MyCourse } from '../../lib/services';
+import { heroAction,heroGhost } from '../hero/hero-actions';
+import { PageHero } from '../hero/PageHero';
 
 type Props = { level: LevelItem; course: MyCourse | null };
 
+const backLink = <Link to="/courses" className={heroGhost}><FiArrowLeft aria-hidden />My courses</Link>;
+
+/** Shown while the course loads, so the header never jumps. */
+export function CourseOverviewHeroPlaceholder({ code }: { code: string }) {
+  return <PageHero eyebrow={`${code.toUpperCase()} · Course`} icon={FiBookOpen} title={`Deutsch ${code.toUpperCase()}`} art="courses" actions={backLink} />;
+}
+
+/** Course overview header: level, summary, progress chips, continue action and an "Up next" strip. */
 export function CourseOverviewHero({ level, course }: Props) {
   const modules = [...(course?.modules ?? [])].sort((a, b) => a.order - b.order);
   const lessons = modules.flatMap((module) => [...module.lessons].sort((a, b) => a.order - b.order));
   const next = lessons.find((lesson) => lesson.progressStatus === 'IN_PROGRESS') ?? lessons.find((lesson) => lesson.progressStatus !== 'COMPLETED');
   const completion = Math.min(100, Math.max(0, course?.stats.completionPercentage ?? 0));
   const path = `/courses/${level.code.toLowerCase()}/learn`;
+  const label = next ? course?.stats.completedLessons || next.progressStatus === 'IN_PROGRESS' ? 'Continue' : 'Start learning' : lessons.length ? 'Review lessons' : 'View course';
 
   return (
-    <section className="card overflow-hidden border border-base-300 bg-base-100">
-      <div className="flex flex-wrap items-center gap-5 p-5 sm:p-7">
-        <div aria-hidden className="journey-hero flex size-20 shrink-0 flex-col items-center justify-center rounded-2xl border border-base-300 sm:size-24">
-          <img src="/illustrations/study-books.webp" alt="" width={400} height={366} className="h-12 w-16 object-contain" /><span className="text-3xl font-semibold tracking-tight">{level.code}</span>
-        </div>
-        <div className="min-w-0 flex-1">
-          <p className="text-xs text-muted">{level.language} · {level.levelLabel}</p>
-          <h2 className="mt-1 text-xl font-semibold tracking-tight sm:text-2xl">{level.title}</h2>
-          {level.summary ? <p className="mt-2 max-w-xl text-xs leading-6 text-muted">{level.summary}</p> : null}
-        </div>
-        {course ? <div className="flex items-center gap-3 sm:flex-col sm:gap-2">
-          <div className="radial-progress text-primary" style={{ '--value': completion, '--size': '4.5rem', '--thickness': '4px' } as CSSProperties} role="progressbar" aria-valuenow={completion} aria-valuemin={0} aria-valuemax={100} aria-label="Course completed">
-            <span className="text-base font-semibold text-base-content">{completion}%</span>
-          </div>
-          <span className="text-[11px] text-muted">{course.stats.completedLessons}/{course.stats.totalLessons} lessons</span>
-        </div> : null}
-      </div>
-      {course ? <div className="flex flex-wrap items-center justify-between gap-4 border-t border-base-300 bg-base-200 px-5 py-4 sm:px-7">
+    <PageHero
+      eyebrow={`${level.code} · ${level.language} · ${level.levelLabel}`}
+      icon={FiBookOpen}
+      title={level.title}
+      description={level.summary}
+      art="courses"
+      meta={course ? <>
+        <span className="hero-chip hero-chip-solid">{completion}% complete</span>
+        <span className="hero-chip">{course.stats.completedLessons}/{course.stats.totalLessons} lessons</span>
+        <span className="hero-chip">{modules.length} modules</span>
+      </> : null}
+      actions={<>
+        {course ? <Link to={next ? `${path}/${next.id}` : path} className={heroAction}>{label}<FiArrowRight aria-hidden /></Link> : null}
+        {course ? <Link to={path} className={heroGhost}><FiMap aria-hidden />Lesson map</Link> : null}
+        {backLink}
+      </>}
+      footer={course ? (
         <div className="flex min-w-0 items-center gap-3">
-          <span aria-hidden className="grid size-9 shrink-0 place-items-center rounded-full bg-base-100"><FiPlay className="text-sm" /></span>
-          <div>
-            <p className="text-[10px] font-medium uppercase tracking-widest text-muted">{next ? 'Up next' : lessons.length ? 'Course complete' : 'Your course'}</p>
-            <h3 className="mt-0.5 text-sm font-semibold">{next?.title ?? (lessons.length ? 'Ready for a review?' : 'Lessons coming soon')}</h3>
-            {next?.estimatedMinutes ? <p className="mt-1 flex items-center gap-1 text-[11px] text-muted"><FiClock aria-hidden />{next.estimatedMinutes} min</p> : null}
+          <span aria-hidden className="grid size-9 shrink-0 place-items-center rounded-full bg-base-200"><FiPlay className="text-sm" /></span>
+          <div className="min-w-0">
+            <p className="text-[0.625rem] font-medium uppercase tracking-widest text-muted">{next ? 'Up next' : lessons.length ? 'Course complete' : 'Your course'}</p>
+            <p className="mt-0.5 truncate text-sm font-semibold">{next?.title ?? (lessons.length ? 'Ready for a review?' : 'Lessons coming soon')}</p>
           </div>
+          {next?.estimatedMinutes ? <span className="ml-auto flex shrink-0 items-center gap-1 text-[0.6875rem] text-muted"><FiClock aria-hidden />{next.estimatedMinutes} min</span> : null}
         </div>
-        <Link to={next ? `${path}/${next.id}` : path} className="btn btn-primary btn-sm w-full gap-3 rounded-full px-5 sm:w-auto">
-          {next ? course.stats.completedLessons || next.progressStatus === 'IN_PROGRESS' ? 'Continue' : 'Start learning' : lessons.length ? 'Review lessons' : 'View course'}<FiArrowRight aria-hidden />
-        </Link>
-      </div> : <p className="border-t border-base-300 px-5 py-4 text-sm text-muted">Contact your academic admin to enrol.</p>}
-    </section>
+      ) : <p className="text-sm text-muted">Contact your academic admin to enrol.</p>}
+    />
   );
 }
