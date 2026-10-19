@@ -32,7 +32,7 @@ export function RepeatField({ enabled, onEnabled, count, onCount, date, startTim
  <span className={`flex size-7 items-center justify-center rounded-full ${enabled ? 'bg-brand text-white' : 'bg-base-200 text-muted'}`}><FiRepeat aria-hidden className="text-xs" /></span>
  <span>
  <span className="block text-xs font-semibold leading-tight">Repeat weekly</span>
- <span className="block text-[11px] text-muted">Same time, same class — every week</span>
+ <span className="block text-[0.6875rem] text-muted">Same time, same class — every week</span>
  </span>
  </span>
  <input type="checkbox" className="toggle toggle-sm border-line bg-base-100 [--tglbg:white] checked:bg-brand checked:border-brand" checked={enabled} disabled={disabled} onChange={(e) => onEnabled(e.currentTarget.checked)} />
@@ -50,24 +50,24 @@ export function RepeatField({ enabled, onEnabled, count, onCount, date, startTim
 
  {preview.length > 0 ? (
  <div className="rounded-box border border-brand bg-white p-2">
- <p className="px-1 pb-1 text-[11px] font-semibold text-muted">Preview — {preview.length} sessions will be created</p>
+ <p className="px-1 pb-1 text-[0.6875rem] font-semibold text-muted">Preview — {preview.length} sessions will be created</p>
  <ul className="max-h-28 space-y-1 overflow-y-auto">
  {preview.map((p, i) => (
  <li key={p.dateStr} className="flex items-center justify-between gap-2 rounded-field bg-base-200 px-2.5 py-1.5 text-xs">
  <span className="flex items-center gap-2">
- <span className="flex size-5 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-white">{i + 1}</span>
+ <span className="flex size-5 items-center justify-center rounded-full bg-brand text-[0.625rem] font-bold text-white">{i + 1}</span>
  <span className="font-medium">{p.label}</span>
  </span>
- <span className="text-[11px] text-muted">{p.time}</span>
+ <span className="text-[0.6875rem] text-muted">{p.time}</span>
  </li>
  ))}
  </ul>
- <p className="px-1 pt-1.5 text-[11px] leading-snug text-muted">All sessions use the same class, title, mode and meeting link. You can edit or cancel any occurrence afterwards.</p>
+ <p className="px-1 pt-1.5 text-[0.6875rem] leading-snug text-muted">All sessions use the same class, title, mode and meeting link. You can edit or cancel any occurrence afterwards.</p>
  </div>
  ) : <p className="text-xs text-muted">Pick a date and times above to see the repeated dates.</p>}
  </div>
  ) : null}
- {disabled ? <p className="mt-2 text-[11px] text-muted">Repeating is only available when creating a new session.</p> : null}
+ {disabled ? <p className="mt-2 text-[0.6875rem] text-muted">Repeating is only available when creating a new session.</p> : null}
  </div>
  );
 }
