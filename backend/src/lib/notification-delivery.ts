@@ -53,6 +53,17 @@ export async function dispatchEmailDeliveries(deliver: typeof sendMail = sendMai
   return sent;
 }
 
+/** Sends these users' queued emails now (batches of 25) instead of waiting for the minute worker. */
+export async function drainEmailDeliveries(userIds: string[], maxRounds = 40): Promise<number> {
+  let total = 0;
+  for (let round = 0; round < maxRounds; round++) {
+    const sent = await dispatchEmailDeliveries(sendMail, userIds);
+    total += sent;
+    if (!sent) break;
+  }
+  return total;
+}
+
 export async function enqueueNotification(tx: Prisma.TransactionClient, input: {
   userId: string; email: string; eventKey?: string; mail?: DeliveryMail; notification?: Prisma.NotificationCreateManyInput;
 }) {
