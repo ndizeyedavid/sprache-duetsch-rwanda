@@ -1,4 +1,5 @@
 import type { Prisma } from "../../generated/prisma/client.js";
+import { andWhere,attemptIntakeWhere,attendanceIntakeWhere } from "../../lib/intake-scope.js";
 import { prisma } from "../../lib/prisma.js";
 import type { DashboardFilter } from "./dashboards.schema.js";
 import { emptyStudentScope } from './empty-student-scope.js';
@@ -12,17 +13,17 @@ export const getAcademicDashboard = async (filter: DashboardFilter) => {
   if (filter.levelId) attemptWhere.assessment = { levelId: filter.levelId };
   const attemptStudentScope: Prisma.StudentWhereInput = {};
   if (filter.campusId) attemptStudentScope.campusId = filter.campusId;
-  if (filter.intakeId) attemptStudentScope.intakeId = filter.intakeId;
   if (Object.keys(attemptStudentScope).length > 0) attemptWhere.student = attemptStudentScope;
+  andWhere(attemptWhere, filter.intakeId && attemptIntakeWhere(filter.intakeId));
 
   const attendanceWhere: Prisma.AttendanceWhereInput = {};
   if (filter.levelId) attendanceWhere.session = { classGroup: { levelId: filter.levelId } };
   const attendanceStudentScope: Prisma.StudentWhereInput = {};
   if (filter.campusId) attendanceStudentScope.campusId = filter.campusId;
-  if (filter.intakeId) attendanceStudentScope.intakeId = filter.intakeId;
   if (Object.keys(attendanceStudentScope).length > 0) {
     attendanceWhere.student = attendanceStudentScope;
   }
+  andWhere(attendanceWhere, filter.intakeId && attendanceIntakeWhere(filter.intakeId));
 
   const progressWhere: Prisma.LessonProgressWhereInput = { status: "COMPLETED" };
   if (Object.keys(studentScope).length > 0) progressWhere.student = studentScope;
