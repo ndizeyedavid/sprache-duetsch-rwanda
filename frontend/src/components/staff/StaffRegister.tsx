@@ -1,4 +1,4 @@
-import { FiPlus,FiRefreshCw } from 'react-icons/fi';
+import { FiRefreshCw } from 'react-icons/fi';
 import type { ApiState } from '../../hooks/useApi';
 import type { UserRow } from '../../lib/services';
 import { ErrorBlock,LoadingBlock } from '../common/PageState';
@@ -18,14 +18,12 @@ type Props = {
   currentUserId: string;
   isSuper: boolean;
   manageableRoles: string[];
-  creating: boolean;
   onFilter: (patch: Partial<StaffFilters>) => void;
   onClear: () => void;
-  onCreate: () => void;
   onOpen: (dialog: StaffDialog) => void;
 };
 
-/** Register panel: the create action, scoping controls, then the list for the viewport. */
+/** Register panel: refresh, scoping controls, then the list for the viewport (create lives in the page hero). */
 export function StaffRegister({
   state,
   rows,
@@ -34,10 +32,8 @@ export function StaffRegister({
   currentUserId,
   isSuper,
   manageableRoles,
-  creating,
   onFilter,
   onClear,
-  onCreate,
   onOpen,
 }: Props) {
   const filtered = hasActiveFilters(filters);
@@ -66,15 +62,6 @@ export function StaffRegister({
               <FiRefreshCw aria-hidden />
             )}
             Refresh
-          </button>
-          <button
-            type="button"
-            onClick={onCreate}
-            disabled={creating}
-            className="btn btn-sm gap-2 rounded-full border-0 bg-brand text-xs font-medium text-white hover:bg-night"
-          >
-            <FiPlus aria-hidden />
-            Add staff account
           </button>
         </div>
       </div>
