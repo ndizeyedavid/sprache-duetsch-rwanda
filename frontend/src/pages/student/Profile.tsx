@@ -1,6 +1,8 @@
 import { useCallback,useMemo,useState } from 'react';
+import { FiUser } from 'react-icons/fi';
 import { useSearchParams } from 'react-router-dom';
 import { ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { PageHero } from '../../components/hero/PageHero';
 import { AttendanceStanding } from '../../components/profile/AttendanceStanding';
 import { CertificatePreview } from '../../components/profile/CertificatePreview';
 import { ReceiptDocumentDialog } from '../../components/receipts/ReceiptDocumentDialog';
@@ -73,9 +75,10 @@ export function Profile() {
     documents: (certificates.data?.length ?? 0) + (receipts.data?.length ?? 0),
   };
 
-  if (profile.loading) return <LoadingBlock label="Loading your profile…" />;
+  const placeholder = <PageHero eyebrow="Student record" icon={FiUser} title="My profile" description="Your progress, payments and documents in one place." art="settings" />;
+  if (profile.loading) return <div className="space-y-4">{placeholder}<LoadingBlock label="Loading your profile…" /></div>;
   if (profile.error || !profile.data) {
-    return <ErrorBlock message={profile.error ?? 'Could not load your profile.'} onRetry={profile.refetch} />;
+    return <div className="space-y-4">{placeholder}<ErrorBlock message={profile.error ?? 'Could not load your profile.'} onRetry={profile.refetch} /></div>;
   }
 
   const data = profile.data;
