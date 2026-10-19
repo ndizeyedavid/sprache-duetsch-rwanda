@@ -14,7 +14,7 @@ export function FileRow({ name, size, className = '' }: FileRowProps) {
  </span>
  <span className="min-w-0 grow">
  <span className="block truncate text-xs font-medium">{name}</span>
- <span className="block text-[11px] text-muted">{size}</span>
+ <span className="block text-[0.6875rem] text-muted">{size}</span>
  </span>
  <button type="button" className="btn btn-ghost btn-xs btn-circle text-muted" aria-label={`Download ${name}`}>
  <FiDownload aria-hidden />
