@@ -7,12 +7,12 @@ const learner = '/illustrations/course-learner.webp';
 const owl = '/illustrations/learning-owl.webp';
 export const WORKSPACE_CONTEXT: Record<string, Context> = {
   students: { category: 'Learner support', icon: FiUsers, image: learner, links: [{ label: 'Enrolments', to: '/admin/enrolments' }, { label: 'Attendance', to: '/admin/attendance' }] },
-  classes: { category: 'Academic coordination', icon: FiGrid, image: books, links: [{ label: 'Teacher coverage', to: '/admin/teaching' }, { label: 'Schedule', to: '/admin/schedule' }] },
+  classes: { category: 'Academic coordination', icon: FiGrid, image: books, links: [{ label: 'Teachers', to: '/admin/teachers' }, { label: 'Schedule', to: '/admin/schedule' }] },
   courses: { category: 'Learning design', icon: FiBookOpen, image: books, links: [{ label: 'Resources', to: '/admin/resources' }, { label: 'Assignments', to: '/admin/assignments' }] },
   assignments: { category: 'Practice & feedback', icon: FiBookOpen, image: owl, links: [{ label: 'Curriculum', to: '/admin/courses' }, { label: 'Classes', to: '/admin/classes' }] },
   enrolments: { category: 'Learner journeys', icon: FiUsers, image: learner, links: [{ label: 'Students', to: '/admin/students' }, { label: 'Intakes', to: '/admin/intakes' }] },
-  people: { category: 'Your school team', icon: FiUsers, image: learner, links: [{ label: 'Teaching', to: '/admin/teaching' }, { label: 'Classes', to: '/admin/classes' }] },
-  teaching: { category: 'Teacher coverage', icon: FiBookOpen, image: books, links: [{ label: 'People', to: '/admin/people' }, { label: 'Classes', to: '/admin/classes' }] },
+  people: { category: 'Your school team', icon: FiUsers, image: learner, links: [{ label: 'Teachers', to: '/admin/teachers' }, { label: 'Classes', to: '/admin/classes' }] },
+  teachers: { category: 'Teaching team', icon: FiBookOpen, image: books, links: [{ label: 'Classes', to: '/admin/classes' }, { label: 'People', to: '/admin/people' }] },
   schedule: { category: 'Learning calendar', icon: FiCalendar, image: owl, links: [{ label: 'Classes', to: '/admin/classes' }, { label: 'Live classes', to: '/admin/live-class' }] },
   attendance: { category: 'Participation & support', icon: FiUsers, image: learner, links: [{ label: 'Students', to: '/admin/students' }, { label: 'Live classes', to: '/admin/live-class' }] },
   finance: { category: 'Tuition overview', icon: FiCreditCard, image: books, links: [{ label: 'Transactions', to: '/admin/transactions' }, { label: 'Students', to: '/admin/students' }] },
