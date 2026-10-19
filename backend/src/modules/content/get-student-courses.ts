@@ -3,6 +3,7 @@ assertAccountActive,
 loadStudentAccessProfile
 } from "../../lib/access.js";
 import { prisma } from "../../lib/prisma.js";
+import { lessonCovers } from './lesson-covers.js';
 import { releasedFilter } from './released-filter.js';
 export const getStudentCourses = async (userId: string) => {
   const profile = await loadStudentAccessProfile(userId);
@@ -60,6 +61,10 @@ export const getStudentCourses = async (userId: string) => {
     },
   });
 
+  // Lead photo per lesson (for the visual course map); one light query per enrolled level.
+  const coverMaps = await Promise.all(levelIds.map((levelId) => lessonCovers(levelId)));
+  const covers = new Map(coverMaps.flatMap((map) => [...map.entries()]));
+
   return levels.map((level) => {
     const allLessons = level.modules.flatMap((item) => item.lessons);
     const completedCount = allLessons.filter(
@@ -83,6 +88,7 @@ export const getStudentCourses = async (userId: string) => {
           progressStatus: progress?.status ?? "NOT_STARTED",
           secondsWatched: progress?.secondsWatched ?? 0,
           completedAt: progress?.completedAt ?? null,
+          coverUrl: covers.get(lesson.id) ?? null,
         };
       }),
     }));
