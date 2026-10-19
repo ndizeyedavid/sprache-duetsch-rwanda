@@ -10,12 +10,12 @@ export function LevelPlacementFields({ value, onChange }: Props) {
       <label className="block text-xs">
         Placement test minimum (%)
         <input type="number" min="0" max="100" step="1" inputMode="numeric" value={value.placementMinScore} onChange={(event) => onChange({ placementMinScore: event.target.value })} placeholder="Blank = never recommended" className="input input-sm mt-1 w-full" />
-        <span className="mt-1 block text-[11px] text-muted">The test recommends the highest active level whose minimum the score reaches. Leave blank for specialised tracks.</span>
+        <span className="mt-1 block text-[0.6875rem] text-muted">The test recommends the highest active level whose minimum the score reaches. Leave blank for specialised tracks.</span>
       </label>
       <label className="block text-xs">
         Low-attendance alert below (%)
         <input type="number" min="0" max="100" step="1" inputMode="numeric" value={value.attendanceAlertThreshold} onChange={(event) => onChange({ attendanceAlertThreshold: event.target.value })} placeholder="Blank = school default" className="input input-sm mt-1 w-full" />
-        <span className="mt-1 block text-[11px] text-muted">Overrides the default alert threshold for classes at this level.</span>
+        <span className="mt-1 block text-[0.6875rem] text-muted">Overrides the default alert threshold for classes at this level.</span>
       </label>
     </fieldset>
   );
