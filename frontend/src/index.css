@@ -112,9 +112,36 @@
   --color-line: var(--color-base-300);
 }
 
+/* ════════════════════════════════════════════════════════════════
+   LAPTOP DENSITY — type, spacing and daisyUI controls are rem-based,
+   so the root size scales the whole app at once, like browser zoom.
+   Every mouse/trackpad screen shows the design scaled to fit a
+   128rem × 60rem box: 15px at 1920 wide (and ≥900 tall), 12px at
+   1536, and never under 11.25px (about 70% zoom) from 1440 wide down
+   (1366 laptops, half-screen windows). The tighter axis wins, so short
+   windows shrink too. Phones and touch tablets keep 16px (touch
+   targets; iOS zooms into inputs under 16px). Media queries always
+   use the browser's 16px rem, so breakpoints never move. Write sizes
+   in rem, never px, or they stop scaling with the text.
+   `roomy:` holds the big-screen padding and type: 1536×800 and up,
+   plus mouse/trackpad screens from 1080×562, which at 70% fit the
+   same design. Use it instead of `2xl:`.
+   ════════════════════════════════════════════════════════════════ */
+@custom-variant roomy {
+  @media (width >= 96rem) and (height >= 50rem), (hover: hover) and (pointer: fine) and (width >= 67.5rem) and (height >= 35.125rem) {
+    @slot;
+  }
+}
+
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    html {
+      font-size: clamp(0.703125rem, min(100vw / 128, 100vh / 60), 0.9375rem);
+    }
   }
 
   body {
