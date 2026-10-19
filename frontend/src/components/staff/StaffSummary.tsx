@@ -15,7 +15,7 @@ export function StaffSummary({
   return (
     <section
       aria-label="Staff summary"
-      className="grid grid-cols-2 gap-3 xl:grid-cols-4"
+      className="grid grid-cols-2 gap-3 md:grid-cols-4"
     >
       <AcademicMetricCard
         label="Staff accounts"
