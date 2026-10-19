@@ -1,5 +1,6 @@
 import { useCallback,useState } from 'react';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { PlacementHero } from '../../components/placement/PlacementHero';
 import { PlacementHistoryList } from '../../components/placement/PlacementHistoryList';
 import { PlacementIntro } from '../../components/placement/PlacementIntro';
 import { PlacementResultCard } from '../../components/placement/PlacementResultCard';
@@ -38,11 +39,11 @@ export function Placement() {
   }
 
   if (session) {
-    return <PlacementRunner session={session} onFinished={finish} onExit={() => { setSession(null); refetch(); }} />;
+    return <div className="space-y-4"><PlacementHero running title={session.title} /><PlacementRunner session={session} onFinished={finish} onExit={() => { setSession(null); refetch(); }} /></div>;
   }
-  if (placement.loading) return <LoadingBlock label="Loading placement test…" />;
+  if (placement.loading) return <div className="space-y-4"><PlacementHero /><LoadingBlock label="Loading placement test…" /></div>;
   if (placement.error || !placement.data) {
-    return <ErrorBlock message={placement.error ?? 'Could not load the placement test.'} onRetry={refetch} />;
+    return <div className="space-y-4"><PlacementHero /><ErrorBlock message={placement.error ?? 'Could not load the placement test.'} onRetry={refetch} /></div>;
   }
 
   const data = placement.data;
@@ -51,7 +52,9 @@ export function Placement() {
   const showIntro = data.status === 'NOT_TAKEN' || data.status === 'IN_PROGRESS' || (data.canStart && !submitted);
 
   return (
-    <div className="mx-auto max-w-3xl space-y-4">
+    <div className="space-y-4">
+      <PlacementHero data={data} latest={latest} />
+      <div className="mx-auto max-w-3xl space-y-4">
       {latest && data.status !== 'IN_PROGRESS' ? (
         <PlacementResultCard result={latest} correct={submitted?.correct} total={submitted?.total} />
       ) : null}
@@ -62,6 +65,7 @@ export function Placement() {
         <PlacementIntro data={data} onStart={() => void start()} starting={starting} error={error} retake={Boolean(latest) && !data.activeAttempt} />
       ) : null}
       {earlier.length > 0 ? <PlacementHistoryList history={earlier} /> : null}
+      </div>
     </div>
   );
 }
