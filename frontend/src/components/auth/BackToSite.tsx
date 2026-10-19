@@ -6,9 +6,9 @@ export const MAIN_SITE_URL = 'https://deutshsprache.org';
 export function BackToSite() {
   return (
     <a href={MAIN_SITE_URL}
-      className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-brand">
+      className="btn btn-primary mb-8 gap-2 rounded-full">
       <FiArrowLeft aria-hidden />
-      Back to deutshsprache.org
+      Return to homepage
     </a>
   );
 }
