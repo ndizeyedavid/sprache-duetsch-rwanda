@@ -21,6 +21,7 @@ import { levelsRouter } from "./modules/levels/levels.routes.js";
 import { messagesRouter } from "./modules/messages/messages.routes.js";
 import { notificationsRouter } from "./modules/notifications/notifications.routes.js";
 import { paypackRouter } from "./modules/paypack/paypack.routes.js";
+import { paymentClaimsRouter } from "./modules/payment-claims/payment-claims.routes.js";
 import { paymentsRouter } from "./modules/payments/payments.routes.js";
 import { receiptVerifyRouter } from "./modules/payments/receipt-verify.routes.js";
 import { attendanceRouter,sessionsRouter } from "./modules/sessions/sessions.routes.js";
@@ -47,6 +48,8 @@ apiRouter.use("/assignments", assignmentsRouter);
 apiRouter.use("/sessions", sessionsRouter);
 apiRouter.use("/attendance", attendanceRouter);
 apiRouter.use("/payments/paypack", paypackRouter);
+// Before /payments so its "/:id" routes never swallow "manual".
+apiRouter.use("/payments/manual", paymentClaimsRouter);
 apiRouter.use("/payments", paymentsRouter);
 apiRouter.use("/receipts", receiptVerifyRouter);
 apiRouter.use("/invoices", invoicesRouter);
