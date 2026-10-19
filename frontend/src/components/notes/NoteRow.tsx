@@ -50,7 +50,7 @@ export function NoteRow({ note, onError }: Props) {
           ) : null}
         </span>
       ) : (
-        <span className="shrink-0 rounded-full bg-base-200 px-2.5 py-1 text-[11px] text-muted">In the lesson</span>
+        <span className="shrink-0 rounded-full bg-base-200 px-2.5 py-1 text-[0.6875rem] text-muted">In the lesson</span>
       )}
     </li>
   );
