@@ -46,7 +46,7 @@ export function StaffTable({
                 <div className="flex items-center gap-3">
                   <span
                     aria-hidden
-                    className={`grid size-9 shrink-0 place-items-center rounded-full text-[11px] font-semibold ${surfaceFor(row.status)}`}
+                    className={`grid size-9 shrink-0 place-items-center rounded-full text-[0.6875rem] font-semibold ${surfaceFor(row.status)}`}
                   >
                     {initials(row)}
                   </span>
@@ -54,7 +54,7 @@ export function StaffTable({
                     <span className="block truncate font-semibold text-ink">
                       {staffName(row)}
                       {row.id === currentUserId ? (
-                        <span className="ml-1.5 text-[10px] font-normal text-muted">you</span>
+                        <span className="ml-1.5 text-[0.625rem] font-normal text-muted">you</span>
                       ) : null}
                     </span>
                     <span className="block truncate text-muted">{row.email}</span>
