@@ -23,8 +23,8 @@ export const ROLE_OPTIONS = [
   {
     value: 'ACADEMIC_ADMIN',
     label: 'Academic Admin',
-    scope: 'Manages people, classes, enrolments, curriculum, announcements and certificates — plus the whole finance module, since enrolments create the tuition charge.',
-    limits: 'Cannot change staff roles or reset passwords; those stay with a super admin.',
+    scope: 'Manages people, classes, enrolments, curriculum, announcements and certificates. Enrolments create the configured tuition charge, but money stays with finance.',
+    limits: 'No finance access. Cannot change staff roles or reset passwords; those stay with a super admin.',
   },
   {
     value: 'FINANCE_ADMIN',
@@ -120,4 +120,4 @@ export const STAFF_SELECT_CLASS =
   'select w-full rounded-field border-line bg-base-200 text-sm disabled:text-muted';
 
 export const FIELD_LABEL_CLASS =
-  'mb-1.5 block text-[11px] font-semibold tracking-wide text-ink uppercase';
+  'mb-1.5 block text-[0.6875rem] font-semibold tracking-wide text-ink uppercase';
