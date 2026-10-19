@@ -46,7 +46,7 @@ export function DayTimeline({ events, className = "" }: DayTimelineProps) {
  className="absolute inset-x-0"
  style={{ top: (hour - START_HOUR) * ROW_HEIGHT }}
  >
- <span className="absolute left-0 top-0 w-14 text-[11px] text-muted">
+ <span className="absolute left-0 top-0 w-14 text-[0.6875rem] text-muted">
  {hour % 12 === 0 ? 12 : hour % 12} {hour < 12 ? "AM" : "PM"}
  </span>
  <span
@@ -76,14 +76,14 @@ export function DayTimeline({ events, className = "" }: DayTimelineProps) {
  <span className="block truncate text-xs font-semibold">
  {event.title}
  </span>
- <span className="block truncate text-[10px] text-muted">
+ <span className="block truncate text-[0.625rem] text-muted">
  {event.subtitle}
  </span>
  </span>
  <FiMoreHorizontal className="shrink-0 text-muted" aria-hidden />
  </div>
  <div className="mt-2 flex items-center justify-between gap-2">
- <span className="text-[10px] font-medium text-muted">
+ <span className="text-[0.625rem] font-medium text-muted">
  {event.time}
  </span>
  <AvatarGroup
