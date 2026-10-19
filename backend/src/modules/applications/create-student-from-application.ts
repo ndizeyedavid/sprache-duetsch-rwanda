@@ -1,33 +1,13 @@
-import type { Application,Prisma } from "../../generated/prisma/client.js";
 import { writeAuditTx } from "../../lib/audit.js";
 import { badRequest,conflict,notFound } from "../../lib/http-error.js";
-import { generateOpaqueToken,generateStudentCode } from "../../lib/ids.js";
+import { generateOpaqueToken } from "../../lib/ids.js";
 import { hashPassword } from "../../lib/password.js";
 import { transact } from "../../lib/transactions.js";
 import { createEnrollmentTx } from "../enrollments/enrollment-commands.js";
 import type { AccountInvite } from "./account-invite.js";
 import { issueAccountInvite } from "./account-invite.js";
+import { createStudentAccount } from "./create-student-account.js";
 import type { CreateStudentFromApplicationInput } from "./applications.schema.js";
-
-/** Reuse the registration shape: PENDING user + student with a zeroed financial profile. */
-async function createStudentAccount(tx: Prisma.TransactionClient, app: Application, passwordHash: string, actorId?: string) {
-  if (!app.campusId) throw badRequest("Choose a campus on the application before creating the account");
-  const user = await tx.user.create({
-    data: { email: app.email, phone: app.phone, firstName: app.firstName, lastName: app.lastName, passwordHash, role: "STUDENT", status: "PENDING" },
-  });
-  const studentCode = await generateStudentCode(tx);
-  const student = await tx.student.create({
-    data: {
-      userId: user.id, studentCode, campusId: app.campusId, intakeId: app.intakeId, intendedLevelId: app.levelId,
-      shift: app.shift ?? "EVENING", status: "PENDING", finance: { create: {} },
-    },
-  });
-  await writeAuditTx(tx, {
-    actorId, action: "STUDENT_REGISTERED", entityType: "Student", entityId: student.id,
-    after: { studentCode, email: app.email, via: "application", reference: app.reference },
-  });
-  return { studentId: student.id, studentCode, user };
-}
 
 export interface CreatedFromApplication {
   studentId: string;
