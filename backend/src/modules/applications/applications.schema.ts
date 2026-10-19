@@ -22,6 +22,8 @@ export const createApplicationSchema = z.object({
   experience: optionalText(500),
   message: optionalText(2000),
   website: z.string().max(200).optional(),
+  createAccount: z.boolean().optional(),
+  source: z.enum(["WEBSITE", "CATALOG"]).optional(),
 });
 
 export const listApplicationsQuerySchema = z.object({
