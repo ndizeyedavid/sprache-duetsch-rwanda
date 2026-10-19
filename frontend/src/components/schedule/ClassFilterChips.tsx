@@ -16,9 +16,9 @@ export function ClassFilterChips({ classes, selected, onSelect, search, onSearch
  return (
  <div className="space-y-2">
  <div className="flex flex-wrap items-center gap-2">
- <button type="button" onClick={() => onSelect(null)} className={`btn btn-xs rounded-full ${!selected ? 'btn-neutral border-0' : 'border-line bg-base-200'}`}>All classes</button>
+ <button type="button" onClick={() => onSelect(null)} className={`btn btn-xs rounded-full ${!selected ? 'btn-primary border-0' : 'border-line bg-base-200'}`}>All classes</button>
  {classes.map((c) => (
- <button key={c.id} type="button" onClick={() => onSelect(c.id)} className={`btn btn-xs rounded-full ${selected === c.id ? 'btn-neutral border-0' : 'border-line bg-base-200'}`}>
+ <button key={c.id} type="button" onClick={() => onSelect(c.id)} className={`btn btn-xs rounded-full ${selected === c.id ? 'btn-primary border-0' : 'border-line bg-base-200'}`}>
  {c.name} {c.level?.code ? `· ${c.level.code}` : ''}
  </button>
  ))}
