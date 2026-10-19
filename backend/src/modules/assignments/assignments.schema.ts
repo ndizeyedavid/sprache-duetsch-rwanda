@@ -77,6 +77,7 @@ export type DraftInput = z.infer<typeof draftBody>;
 export type ReviewInput = z.infer<typeof reviewBody>;
 export type PenaltyOverrideInput = z.infer<typeof penaltyOverrideBody>;
 export const myListQuery = z.object({ lessonId: z.uuid().optional() });
+export const staffListQuery = z.object({ intakeId: z.string().min(1).optional() });
 
 export const assignmentStatusBody = z.object({ status: z.enum(["DRAFT", "PUBLISHED", "ARCHIVED"]) });
 export const extensionParams = z.object({ id: z.uuid(), studentId: z.uuid() });
