@@ -1,3 +1,4 @@
+import { Dialog } from '../ui/overlay/Dialog';
 import {
 FiCheck,
 FiEdit2,
@@ -25,17 +26,17 @@ return (<ul className="space-y-2">
  <span className="min-w-0 grow">
  <span className="flex flex-wrap items-center gap-2">
  <span className="truncate text-xs font-medium leading-tight">{a.title}</span>
- <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px]">{humanize(a.type)}</span>
+ <span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem]">{humanize(a.type)}</span>
  {a.isPublished ? (
- <span className="rounded-full bg-brand text-primary-content px-2 py-0.5 text-[11px] font-medium text-brand">Published</span>
+ <span className="rounded-full bg-brand text-primary-content px-2 py-0.5 text-[0.6875rem] font-medium text-brand">Published</span>
  ) : (
- <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] text-muted">Draft</span>
+ <span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem] text-muted">Draft</span>
  )}
  </span>
  {a.instructions ? (
- <span className="mt-0.5 line-clamp-1 block text-[11px] text-muted">{a.instructions}</span>
+ <span className="mt-0.5 line-clamp-1 block text-[0.6875rem] text-muted">{a.instructions}</span>
  ) : null}
- <span className="text-[11px] text-muted">Order {a.order}</span>
+ <span className="text-[0.6875rem] text-muted">Order {a.order}</span>
  </span>
  <span className="flex shrink-0 items-center gap-1">
  <button
@@ -61,8 +62,7 @@ return (<ul className="space-y-2">
  </div>
 
  {isEditing ? (
- <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={() => setEditingActivityId(null)} className="absolute inset-0 bg-black/40 " />
+ <Dialog open onClose={() => setEditingActivityId(null)} busy={busy} icon={FiLayers} title="Edit activity">
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -83,17 +83,8 @@ return (<ul className="space-y-2">
  },
  );
  }}
- className="relative w-full max-w-lg rounded-box bg-base-100 p-5"
+ className="space-y-1"
  >
- <button type="button" onClick={() => setEditingActivityId(null)} className="btn btn-ghost btn-xs btn-circle absolute right-3 top-3">
- <FiX aria-hidden />
- </button>
- <h4 className="flex items-center gap-2 text-sm font-bold">
- <span className="flex size-7 items-center justify-center rounded-full bg-sun text-white">
- <FiLayers aria-hidden />
- </span>
- Edit activity
- </h4>
  <p className="mt-1 text-xs text-muted">Update instructions or publish state for this practice task.</p>
  <div className="mt-4 grid gap-3 sm:grid-cols-2">
  <label className="block">
@@ -128,7 +119,7 @@ return (<ul className="space-y-2">
   </button>
  </div>
  </form>
- </div>
+ </Dialog>
  ) : null}
  </li>
  );
