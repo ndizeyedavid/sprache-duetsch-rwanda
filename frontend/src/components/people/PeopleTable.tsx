@@ -58,11 +58,11 @@ export function PeopleTable({ rows, onMessage, sendingId }: Props) {
                       {p.firstName} {p.lastName}
                     </p>
                     <p className="flex items-center gap-1 truncate text-xs text-muted">
-                      <FiMail aria-hidden size={11} />
+                      <FiMail aria-hidden size="0.6875rem" />
                       {p.email}
                     </p>
                     {p.extra ? (
-                      <p className="text-[11px] text-muted">{p.extra}</p>
+                      <p className="text-[0.6875rem] text-muted">{p.extra}</p>
                     ) : null}
                   </div>
                 </div>
