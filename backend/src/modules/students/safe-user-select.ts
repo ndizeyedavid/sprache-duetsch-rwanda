@@ -6,4 +6,6 @@ export const safeUserSelect = {
   phone: true,
   avatarUrl: true,
   status: true,
+  suspendedReason: true,
+  suspendedAt: true,
 } as const;
