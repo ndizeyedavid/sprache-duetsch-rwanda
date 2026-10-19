@@ -84,7 +84,7 @@ export function ResourceLibrary() {
  <StatusBadge status={humanize(hit.type)} />
  </span>
  {hit.snippet ? (
- <span className="mt-1 line-clamp-2 block text-[11px] text-muted">{hit.snippet}</span>
+ <span className="mt-1 line-clamp-2 block text-[0.6875rem] text-muted">{hit.snippet}</span>
  ) : null}
  </li>
  ))}
