@@ -1,13 +1,16 @@
+import type { Prisma } from "../../generated/prisma/client.js";
+import { certificateIntakeWhere } from "../../lib/intake-scope.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import { certificateInclude } from './certificate-include.js';
 import type { ListCertificatesQuery } from "./certificates.schema.js";
 export const listCertificates = async (query: ListCertificatesQuery) => {
   const pagination = parsePagination(query);
-  const where = {
+  const where: Prisma.CertificateWhereInput = {
     ...(query.studentId ? { studentId: query.studentId } : {}),
     ...(query.levelId ? { levelId: query.levelId } : {}),
     ...(query.status ? { status: query.status } : {}),
+    ...(query.intakeId ? certificateIntakeWhere(query.intakeId) : {}),
   };
   const [rows, total] = await prisma.$transaction([
     prisma.certificate.findMany({
