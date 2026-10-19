@@ -27,7 +27,7 @@ export function RecordTabs({ active, access, onChange, counts }: Props) {
           >
             {tab.label}
             {count === undefined ? null : (
-              <span className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold ${selected ? 'bg-white text-brand' : 'bg-base-200 text-muted'}`}>
+              <span className={`rounded-full px-1.5 py-0.5 text-[0.6875rem] font-bold ${selected ? 'bg-white text-brand' : 'bg-base-200 text-muted'}`}>
                 {count}
               </span>
             )}
