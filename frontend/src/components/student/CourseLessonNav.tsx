@@ -37,7 +37,7 @@ export function CourseLessonNav({ course, selectedId, onSelect, q, onQ, collapse
 
   return (
     <div>
-      <p className="text-[11px] font-semibold uppercase tracking-wide text-brand">{course.level.code} · {course.level.title}</p>
+      <p className="text-[0.6875rem] font-semibold uppercase tracking-wide text-brand">{course.level.code} · {course.level.title}</p>
       <div className="mt-3"><ProgressBar value={course.stats.completionPercentage} tone="brand" /></div>
       <p className="mt-2 text-xs text-muted">{course.stats.completedLessons}/{course.stats.totalLessons} lessons · {course.stats.completionPercentage}%</p>
 
@@ -54,10 +54,10 @@ export function CourseLessonNav({ course, selectedId, onSelect, q, onQ, collapse
           return (
             <div key={mod.id} className="overflow-hidden rounded-box border border-line bg-base-100">
               <button type="button" onClick={() => onToggle(mod.id)} className="flex w-full items-center gap-2 bg-base-200 px-3 py-2.5 text-left">
-                <span className={`flex size-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${done === mod.lessons.length && mod.lessons.length ? 'bg-brand text-white' : 'bg-base-100 text-muted'}`}>{done}/{mod.lessons.length}</span>
+                <span className={`flex size-6 shrink-0 items-center justify-center rounded-full text-[0.6875rem] font-bold ${done === mod.lessons.length && mod.lessons.length ? 'bg-brand text-white' : 'bg-base-100 text-muted'}`}>{done}/{mod.lessons.length}</span>
                 <span className="min-w-0 grow">
                   <span className="block truncate text-xs font-semibold leading-tight">{mod.title}</span>
-                  <span className="block truncate text-[11px] text-muted">{mod.description ?? `${mod.lessons.length} lessons`}</span>
+                  <span className="block truncate text-[0.6875rem] text-muted">{mod.description ?? `${mod.lessons.length} lessons`}</span>
                 </span>
                 <span className="text-muted">{isCollapsed ? '›' : '⌃'}</span>
               </button>
@@ -82,7 +82,7 @@ export function CourseLessonNav({ course, selectedId, onSelect, q, onQ, collapse
                             </span>
                             <span className="min-w-0 grow">
                               <span className="block truncate font-medium leading-tight">{lesson.title}</span>
-                              <span className="block truncate text-[11px] text-muted">{humanize(lesson.contentType)} {lesson.estimatedMinutes ? `· ${lesson.estimatedMinutes} min` : ''}</span>
+                              <span className="block truncate text-[0.6875rem] text-muted">{humanize(lesson.contentType)} {lesson.estimatedMinutes ? `· ${lesson.estimatedMinutes} min` : ''}</span>
                             </span>
                             <StatusBadge status={lesson.progressStatus === 'COMPLETED' ? 'Completed' : humanize(lesson.progressStatus)} />
                           </button>
