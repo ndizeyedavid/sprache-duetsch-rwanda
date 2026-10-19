@@ -88,11 +88,14 @@ export const enrollmentAllowedOrigins = (env.ENROLLMENT_ALLOWED_ORIGINS ?? "")
   .map((origin) => origin.trim())
   .filter(Boolean);
 
-// Hard-known enrollment site origins (always allowed for /api/enrollment, even if CORS_ORIGINS not updated)
+// Hard-known school website origins (always allowed, even if CORS_ORIGINS is not updated).
+// deutschspracherw.org is the current domain; deutshsprache.org (no "c") is the retired one and still serves the site.
 export const defaultEnrollmentOrigins = [
-  "https://deutsch-prache-rw.vercel.app",
-  "https://www.deutshsprache.org",
+  "https://deutschspracherw.org",
+  "https://www.deutschspracherw.org",
   "https://deutshsprache.org",
+  "https://www.deutshsprache.org",
+  "https://deutsch-prache-rw.vercel.app",
 ];
 
 export const smtpEnabled = Boolean(env.SMTP_USER && env.SMTP_PASS);
