@@ -28,7 +28,7 @@ export function DashboardCourseCard({ code, title, levelLabel, completion, compl
       <span className="h-1.5 w-full" style={{ background: accent }} aria-hidden />
       <div className="flex flex-1 flex-col p-4">
         <div className="flex items-start justify-between gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold" style={{ background: `${accent}14`, color: accent }}>
+          <span className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.6875rem] font-semibold" style={{ background: `${accent}14`, color: accent }}>
             <FiBookOpen aria-hidden className="text-xs" />{code} · {levelLabel}
           </span>
         </div>
