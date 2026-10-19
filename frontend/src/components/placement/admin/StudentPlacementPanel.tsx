@@ -24,9 +24,9 @@ export function StudentPlacementPanel({ studentId, levels, onChanged }: Props) {
   return (
     <div className="space-y-4">
       <div className="grid gap-2 text-xs sm:grid-cols-3">
-        <p className="rounded-field bg-base-200 p-2"><span className="block text-[10px] text-muted">Student's choice</span>{levelName(student.intendedLevel)}</p>
-        <p className="rounded-field bg-base-200 p-2"><span className="block text-[10px] text-muted">Current level</span>{levelName(student.currentLevel)}</p>
-        <p className="rounded-field bg-base-200 p-2"><span className="block text-[10px] text-muted">Latest score</span>{student.placementScore === null ? 'Not tested' : `${student.placementScore}%`}</p>
+        <p className="rounded-field bg-base-200 p-2"><span className="block text-[0.625rem] text-muted">Student's choice</span>{levelName(student.intendedLevel)}</p>
+        <p className="rounded-field bg-base-200 p-2"><span className="block text-[0.625rem] text-muted">Current level</span>{levelName(student.currentLevel)}</p>
+        <p className="rounded-field bg-base-200 p-2"><span className="block text-[0.625rem] text-muted">Latest score</span>{student.placementScore === null ? 'Not tested' : `${student.placementScore}%`}</p>
       </div>
       {results.length === 0 ? (
         <p className="rounded-field border border-dashed border-base-300 p-4 text-center text-xs text-muted">No placement results yet. The student can take the online test, or record one below.</p>
