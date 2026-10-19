@@ -8,4 +8,6 @@ export type MyLesson = {
   progressStatus: string;
   secondsWatched: number | null;
   completedAt: string | null;
+  /** Lesson lead photo for the course map (null when the lesson has none). */
+  coverUrl?: string | null;
 };
