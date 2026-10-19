@@ -13,6 +13,8 @@ export const getUserProfile = async (userId: string) => {
       status: true,
       avatarUrl: true,
       lastLoginAt: true,
+      suspendedReason: true,
+      suspendedAt: true,
       createdAt: true,
       student: {
         select: {
