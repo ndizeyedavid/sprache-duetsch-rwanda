@@ -41,7 +41,7 @@ export function RubricTemplates({ rubric, locked, onLoad }: Props) {
               <li key={t.id} className="flex-row items-center">
                 <button type="button" className="min-w-0 flex-1 flex-col items-start gap-0" disabled={locked} onClick={() => load(t)}>
                   <span className="text-sm font-medium">{t.title}</span>
-                  <span className="text-[11px] text-muted">{t.criteria.length} criteria · {points(t.criteria)} pts{t.isShared ? ' · Shared' : ''}{t.canEdit ? '' : ` · ${t.owner.firstName} ${t.owner.lastName}`}</span>
+                  <span className="text-[0.6875rem] text-muted">{t.criteria.length} criteria · {points(t.criteria)} pts{t.isShared ? ' · Shared' : ''}{t.canEdit ? '' : ` · ${t.owner.firstName} ${t.owner.lastName}`}</span>
                 </button>
                 {t.canEdit ? <span className="flex gap-0 p-0">
                   <button type="button" className={`btn btn-ghost btn-xs btn-square ${t.isShared ? 'text-primary' : ''}`} disabled={busy} aria-label={t.isShared ? `Stop sharing ${t.title}` : `Share ${t.title} with all teachers`} title={t.isShared ? 'Shared · click to make private' : 'Share with all teachers'}
