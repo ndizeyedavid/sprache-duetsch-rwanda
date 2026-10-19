@@ -1,4 +1,5 @@
 import { useMemo,useState } from 'react';
+import { PeopleHero } from '../../components/staff/PeopleHero';
 import { StaffCreateDialog } from '../../components/staff/StaffCreateDialog';
 import { StaffFeedback } from '../../components/staff/StaffFeedback';
 import { StaffManageDialog } from '../../components/staff/StaffManageDialog';
@@ -51,6 +52,8 @@ export function AdminPeople() {
 
   return (
     <div className="space-y-5">
+      <PeopleHero isSuper={capability.isSuper} creating={actions.creating} onCreate={() => open({ kind: 'create' })} />
+
       {users.data && <StaffSummary
         stats={stats}
         suspendedActive={filters.suspendedOnly}
@@ -73,10 +76,8 @@ export function AdminPeople() {
         currentUserId={me?.id ?? ''}
         isSuper={capability.isSuper}
         manageableRoles={capability.manageableRoles}
-        creating={actions.creating}
         onFilter={filter}
         onClear={() => filter(resetFilters())}
-        onCreate={() => open({ kind: 'create' })}
         onOpen={open}
       />
 
