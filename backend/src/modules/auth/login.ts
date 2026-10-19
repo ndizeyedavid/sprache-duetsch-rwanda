@@ -4,7 +4,7 @@ import { prisma } from "../../lib/prisma.js";
 import type {
 LoginInput
 } from "./auth.schema.js";
-import { BLOCKED_LOGIN_STATUSES } from './blocked_login_statuses.js';
+import { isLoginBlocked } from './blocked_login_statuses.js';
 import { getUserProfile } from './get-user-profile.js';
 import { issueTokens } from './issue-tokens.js';
 import type { LoginResult } from './login-result.js';
@@ -19,7 +19,7 @@ export const login = async (input: LoginInput, meta: RequestMeta): Promise<Login
     throw unauthorized("Invalid email or password");
   }
 
-  if (BLOCKED_LOGIN_STATUSES.includes(user.status)) {
+  if (isLoginBlocked(user)) {
     throw unauthorized(`Account is ${user.status.toLowerCase()}`);
   }
 
