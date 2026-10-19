@@ -1,7 +1,9 @@
+import { attemptIntakeWhere } from "../../lib/intake-scope.js";
 import { prisma } from "../../lib/prisma.js";
-export const getSkillProfile = async (studentId: string) => {
+/** `intakeId` (staff only) limits the profile to attempts attributed to that intake. */
+export const getSkillProfile = async (studentId: string, intakeId?: string) => {
   const answers = await prisma.answer.findMany({
-    where: { attempt: { studentId, score: { not: null } } },
+    where: { attempt: { studentId, score: { not: null }, ...(intakeId ? attemptIntakeWhere(intakeId) : {}) } },
     select: {
       pointsAwarded: true,
       question: { select: { skill: true, points: true } },
