@@ -23,7 +23,7 @@ return (<div className="grid gap-4 lg:grid-cols-12">
                   suffix="%"
                 />
               )}
-              <p className="mt-2 text-[11px] text-muted">Weekly average of graded exam scores.</p>
+              <p className="mt-2 text-[0.6875rem] text-muted">Weekly average of graded exam scores.</p>
             </Panel>
             <Panel className="lg:col-span-4">
               <SectionHeader title="Exam status" />
@@ -41,11 +41,11 @@ return (<div className="grid gap-4 lg:grid-cols-12">
                 return (
                   <DonutChart data={data} suffix="">
                     <span className="text-lg font-bold">{total}</span>
-                    <span className="text-[11px] text-muted">total</span>
+                    <span className="text-[0.6875rem] text-muted">total</span>
                   </DonutChart>
                 );
               })()}
-              <div className="mt-2 flex flex-wrap gap-2 text-[11px]">
+              <div className="mt-2 flex flex-wrap gap-2 text-[0.6875rem]">
                 <span className="rounded-full bg-brand text-primary-content px-2 py-1 text-[#B30A00]">
                   Graded {graded}
                 </span>
