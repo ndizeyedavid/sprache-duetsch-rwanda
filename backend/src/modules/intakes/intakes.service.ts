@@ -14,8 +14,12 @@ export const listIntakes = async (query: ListIntakeQuery) => {
   if (query.isActive !== undefined) {
     where.isActive = query.isActive;
   }
-  if (query.upcoming) {
+  if (query.upcoming || query.open) {
     where.endDate = { gte: new Date() };
+  }
+  if (query.open) {
+    where.isActive = true;
+    where.registrationOpen = true;
   }
   if (query.search) {
     where.OR = [
@@ -69,8 +73,7 @@ export const createIntake = async (input: CreateIntakeInput, actorId?: string) =
       name: input.name,
       startDate: input.startDate,
       endDate: input.endDate,
-      enrollmentOpensAt: input.enrollmentOpensAt ?? null,
-      enrollmentEndsAt: input.enrollmentEndsAt ?? null,
+      registrationOpen: input.registrationOpen ?? true,
       registrationFee: new Prisma.Decimal(input.registrationFee ?? 0),
       bookFee: new Prisma.Decimal(input.bookFee ?? 0),
       currency: input.currency,
@@ -115,8 +118,7 @@ export const updateIntake = async (id: string, input: UpdateIntakeInput, actorId
     name: input.name,
     startDate: input.startDate,
     endDate: input.endDate,
-    enrollmentOpensAt: input.enrollmentOpensAt,
-    enrollmentEndsAt: input.enrollmentEndsAt,
+    registrationOpen: input.registrationOpen,
     currency: input.currency,
     isActive: input.isActive,
   };
@@ -128,10 +130,11 @@ export const updateIntake = async (id: string, input: UpdateIntakeInput, actorId
   }
 
   const intake = await prisma.intake.update({ where: { id }, data });
+  const onlyRegistration = Object.keys(input).length === 1 && input.registrationOpen !== undefined;
 
   await writeAudit({
     actorId: actorId ?? null,
-    action: "INTAKE_UPDATED",
+    action: onlyRegistration ? (input.registrationOpen ? "INTAKE_REGISTRATION_OPENED" : "INTAKE_REGISTRATION_CLOSED") : "INTAKE_UPDATED",
     entityType: "Intake",
     entityId: intake.id,
     before,
