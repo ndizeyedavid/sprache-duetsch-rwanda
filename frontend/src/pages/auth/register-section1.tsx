@@ -3,11 +3,9 @@ import type { ReferenceItem } from './reference-item';
 import type { FormEvent } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import type { RegisterPayload } from '../../lib/auth-store';
 import { labelOf } from './label-of';
-import { SHIFTS } from './shifts';
-export function RegisterSection1(props: { handleSubmit: (event: FormEvent) => Promise<void>; fullName: string; setFullName: import("react").Dispatch<import("react").SetStateAction<string>>; phone: string; setPhone: import("react").Dispatch<import("react").SetStateAction<string>>; email: string; setEmail: import("react").Dispatch<import("react").SetStateAction<string>>; campusId: string; loadingRefs: boolean; setCampusId: import("react").Dispatch<import("react").SetStateAction<string>>; campuses: ReferenceItem[]; shift: "MORNING" | "AFTERNOON" | "EVENING" | "WEEKEND"; setShift: import("react").Dispatch<import("react").SetStateAction<"MORNING" | "AFTERNOON" | "EVENING" | "WEEKEND">>; intakeId: string; setIntakeId: import("react").Dispatch<import("react").SetStateAction<string>>; intakes: ReferenceItem[]; intendedLevelId: string; setIntendedLevelId: import("react").Dispatch<import("react").SetStateAction<string>>; levels: ReferenceItem[]; password: string; setPassword: import("react").Dispatch<import("react").SetStateAction<string>>; error: string | null; pending: boolean; navigate: import("../../../node_modules/react-router-dom/dist/index").NavigateFunction; setError: import("react").Dispatch<import("react").SetStateAction<string | null>> }) {
-const { handleSubmit, fullName, setFullName, phone, setPhone, email, setEmail, campusId, loadingRefs, setCampusId, campuses, shift, setShift, intakeId, setIntakeId, intakes, intendedLevelId, setIntendedLevelId, levels, password, setPassword, error, pending } = props;
+export function RegisterSection1(props: { handleSubmit: (event: FormEvent) => Promise<void>; fullName: string; setFullName: import("react").Dispatch<import("react").SetStateAction<string>>; phone: string; setPhone: import("react").Dispatch<import("react").SetStateAction<string>>; email: string; setEmail: import("react").Dispatch<import("react").SetStateAction<string>>; campusId: string; loadingRefs: boolean; setCampusId: import("react").Dispatch<import("react").SetStateAction<string>>; campuses: ReferenceItem[]; intakeId: string; setIntakeId: import("react").Dispatch<import("react").SetStateAction<string>>; intakes: ReferenceItem[]; intendedLevelId: string; setIntendedLevelId: import("react").Dispatch<import("react").SetStateAction<string>>; levels: ReferenceItem[]; password: string; setPassword: import("react").Dispatch<import("react").SetStateAction<string>>; error: string | null; pending: boolean; navigate: import("../../../node_modules/react-router-dom/dist/index").NavigateFunction; setError: import("react").Dispatch<import("react").SetStateAction<string | null>> }) {
+const { handleSubmit, fullName, setFullName, phone, setPhone, email, setEmail, campusId, loadingRefs, setCampusId, campuses, intakeId, setIntakeId, intakes, intendedLevelId, setIntendedLevelId, levels, password, setPassword, error, pending } = props;
 return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  <h1 className="text-xl font-semibold sm:text-2xl">Create your account</h1>
 
@@ -74,23 +72,6 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  </select>
  </label>
 
- <div className="grid gap-4 sm:grid-cols-2">
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Shift</span>
- <select
- required
- value={shift}
- onChange={(event) => setShift(event.currentTarget.value as RegisterPayload['shift'])}
- className="select w-full truncate rounded-field border-line bg-base-200 pe-10"
- >
- {SHIFTS.map((item) => (
- <option key={item.value} value={item.value}>
- {item.label}
- </option>
- ))}
- </select>
- </label>
-
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Intake</span>
  <select
@@ -108,7 +89,6 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  ))}
  </select>
  </label>
- </div>
 
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Course level</span>
