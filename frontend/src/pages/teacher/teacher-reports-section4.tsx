@@ -20,7 +20,7 @@ return (<div className="grid gap-4 lg:grid-cols-12">
                   suffix="%"
                 />
               )}
-              <p className="mt-2 text-[11px] text-muted">Weekly average score for lesson activities (0-1 scaled to %).</p>
+              <p className="mt-2 text-[0.6875rem] text-muted">Weekly average score for lesson activities (0-1 scaled to %).</p>
             </Panel>
             <Panel className="lg:col-span-4">
               <SectionHeader title="Activity scores" />
