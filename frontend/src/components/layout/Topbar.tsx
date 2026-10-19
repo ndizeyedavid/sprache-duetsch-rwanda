@@ -3,6 +3,7 @@ import { Link,useNavigate } from "react-router-dom";
 import { profilePhotoUrl } from "../../lib/profile-photo";
 import { roleLabel } from "../../lib/roles";
 import { useSession } from "../../lib/session";
+import { IntakeSwitcher } from "../intake-scope/IntakeSwitcher";
 import { NotificationBell } from "../notifications/NotificationBell";
 
 type TopbarProps = {
@@ -25,7 +26,7 @@ export function Topbar({ title, onMenu }: TopbarProps) {
   }
 
   return (
-    <header className="sticky top-3 z-30 mx-4 mt-3 flex items-center gap-3 rounded-box border border-base-300 bg-base-100 px-4 py-3  lg:mx-8 lg:px-5">
+    <header className="sticky top-3 z-30 mx-4 mt-3 flex min-w-0 items-center gap-3 rounded-box border border-base-300 bg-base-100 px-4 py-2 roomy:mx-6 roomy:px-5 roomy:py-3">
       <button
         type="button"
         onClick={onMenu}
@@ -35,9 +36,11 @@ export function Topbar({ title, onMenu }: TopbarProps) {
         <FiMenu aria-hidden />
       </button>
 
-      <h1 className="truncate text-base font-semibold sm:text-lg">{title}</h1>
+      <p className={`min-w-0 truncate text-base font-semibold sm:text-lg ${user && user.role !== "STUDENT" ? "hidden sm:block" : ""}`}>{title}</p>
 
-      <div className="ml-auto flex items-center gap-1 sm:gap-2">
+      <div className="ml-auto flex min-w-0 items-center gap-1 sm:gap-2">
+        {/* Staff intake scope sits with the other account-level controls on the right. */}
+        <IntakeSwitcher />
         <NotificationBell />
 
         <div className="dropdown dropdown-end">
@@ -62,7 +65,7 @@ export function Topbar({ title, onMenu }: TopbarProps) {
             </span>
             <span className="hidden leading-tight lg:block">
               <span className="block text-xs font-semibold">{displayName}</span>
-              <span className="block text-[11px] text-muted">
+              <span className="block text-[0.6875rem] text-muted">
                 {displayRole}
               </span>
             </span>
