@@ -18,8 +18,8 @@ export const createEnrollmentTx = async (tx: Prisma.TransactionClient, input: Cr
   if (!level.isActive || !intake.isActive) throw badRequest("Choose an active level and intake");
   if (!intake.levels.some(row => row.id === level.id)) throw badRequest('This level is not offered in the selected intake');
   const now = new Date();
-  const outsideWindow = intake.endDate < now || (intake.enrollmentOpensAt && now < intake.enrollmentOpensAt) || (intake.enrollmentEndsAt && now > intake.enrollmentEndsAt);
-  if (outsideWindow && !input.windowOverrideReason) throw badRequest("Intake enrolment is closed. An audited override reason is required.");
+  const outsideWindow = intake.endDate < now || !intake.registrationOpen;
+  if (outsideWindow && !input.windowOverrideReason) throw badRequest("Registration for this intake is closed. An audited override reason is required.");
   const campusId = input.campusId ?? student.campusId;
   if (!campusId || !await tx.campus.findFirst({ where: { id: campusId, isActive: true } })) throw badRequest("Choose an active campus");
   await checkEnrollmentClass(tx, { ...input, campusId, active: true });
