@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 const toLocal = (v: string | null) => v ? new Date(new Date(v).getTime() - new Date(v).getTimezoneOffset() * 60000).toISOString().slice(0, 16) : '';
 
 export function Field({ label, hint, children }: { label: string; hint?: string; children: ReactNode }) {
-  return <label className="block"><span className="mb-1.5 block text-xs font-medium">{label}</span>{children}{hint ? <span className="mt-1 block text-[11px] text-muted">{hint}</span> : null}</label>;
+  return <label className="block"><span className="mb-1.5 block text-xs font-medium">{label}</span>{children}{hint ? <span className="mt-1 block text-[0.6875rem] text-muted">{hint}</span> : null}</label>;
 }
 
 export function DateTimeField({ label, value, onChange, disabled }: { label: string; value: string | null; onChange: (v: string | null) => void; disabled?: boolean }) {
