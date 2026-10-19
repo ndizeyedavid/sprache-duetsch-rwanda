@@ -10,6 +10,7 @@ import { PeopleTable } from "../../components/people/PeopleTable";
 import { PeopleToolbar } from "../../components/people/PeopleToolbar";
 import type { PeopleTab } from "../../components/people/constants";
 import { matches } from "../../components/people/utils";
+import { PeopleHero } from "../../components/student/PeopleHero";
 import { Panel } from "../../components/ui/Panel";
 import { useApi } from "../../hooks/useApi";
 import { apiErrorMessage } from "../../lib/api";
@@ -128,11 +129,9 @@ export function Teachers() {
 
   return (
     <div className="space-y-4">
+      <PeopleHero teachers={teachers} classmates={classmates.length} groups={groups.length} loaded={Boolean(data)} sendingId={sendingId} onMessage={(id) => void handleMessage(id)} />
       <Panel>
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <h1 className="text-lg font-bold">People</h1>
-        </div>
-        <div className="mt-4">
+        <div>
           <PeopleToolbar
             tab={tab as PeopleTab}
             onTab={(t) => setParam("tab", t === "All" ? null : t)}
