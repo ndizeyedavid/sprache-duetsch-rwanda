@@ -44,15 +44,16 @@ export function TeacherAssignments() {
       onClose={closeEditor} onSaved={saved => { hub.refetch(); set(saved.kind === 'HOMEWORK' ? { new: '', edit: '', task: saved.id } : { new: '', edit: '' }); }} />;
   }
   if (reviewing) return <AssignmentReview key={reviewing} id={reviewing} onClose={() => { set({ task: '' }); hub.refetch(); }} onEdit={h => set({ task: '', edit: `homework:${h.id}` })} />;
-  if (hub.loading) return <LoadingBlock label="Loading assignments…" />;
-  if (hub.error && !hub.items.length) return <ErrorBlock message={hub.error} onRetry={hub.refetch} />;
+  const header = (loaded: boolean) => <TaskHubHeader items={loaded ? hub.items : undefined} admin={portal === '/admin'} onCreate={kind => set({ new: kind })} onFilter={status => set({ status }, true)} />;
+  if (hub.loading) return <div className="space-y-5">{header(false)}<LoadingBlock label="Loading assignments…" /></div>;
+  if (hub.error && !hub.items.length) return <div className="space-y-5">{header(false)}<ErrorBlock message={hub.error} onRetry={hub.refetch} /></div>;
 
   const list = applyFilters(hub.items, filters);
   const message = homeworkActions.error || assessmentActions.error;
   const notice = homeworkActions.notice || assessmentActions.notice;
   return (
     <div className="space-y-5">
-      <TaskHubHeader items={hub.items} onCreate={kind => set({ new: kind })} onFilter={status => set({ status }, true)} />
+      {header(true)}
       {message ? <p role="alert" className="alert alert-error alert-soft text-sm">{message}</p> : null}
       {notice ? <p role="status" className="alert alert-success alert-soft text-sm">{notice}</p> : null}
       <TaskFilters items={hub.items} value={filters} onChange={(key, value) => set({ [key]: value }, true)} fetching={hub.fetching} onRefresh={hub.refetch} />
