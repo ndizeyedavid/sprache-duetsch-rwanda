@@ -1,63 +1,46 @@
-import { FiClock,FiExternalLink,FiLink,FiMapPin,FiUser,FiVideo,FiX } from 'react-icons/fi';
-import { sessionStatusLabel,sessionTone,teacherName } from '../../lib/sessions-ui';
-import { TONE_CLASSES } from '../../lib/theme';
+import { FiEdit2,FiRepeat,FiTrash2,FiVideo,FiXCircle } from 'react-icons/fi';
+import { Drawer } from '../ui/overlay/Drawer';
 import { CancelReasonNote } from './CancelReasonNote';
+import { MeetingCard } from './session-drawer/MeetingCard';
+import { SessionFacts } from './session-drawer/SessionFacts';
+import { SessionHeaderTimes } from './session-drawer/SessionHeaderTimes';
+import { isClosed,statusText } from './session-drawer/status';
+import { useLastValue } from './session-drawer/useLastValue';
 import { SessionLifecycle } from './SessionLifecycle';
 import type { SessionMaterial } from './SessionMaterials';
 import { SessionMaterials } from './SessionMaterials';
-import { SessionTimes } from './SessionTimes';
 
 type Session = { id: string; title: string; startAt: string; endAt: string; timezone: string | null; mode: string; provider: string | null; status: string; cancelReason?: string | null; meetingUrl: string | null; room: string | null; notes: string | null; recordingUrl?: string | null; materials?: SessionMaterial[]; teacher: { firstName: string; lastName: string } | null; classGroup: { id: string; name: string } | null };
 
-type Props = { open: boolean; onClose: () => void; session: Session | null; onEdit: () => void; onCancel: () => void; onReschedule: () => void; onSaved?: () => void };
+type Props = { open: boolean; onClose: () => void; session: Session | null; onEdit: () => void; onCancel: () => void; onReschedule: () => void; onDelete?: () => void; onSaved?: () => void };
 
-export function SessionDetailDrawer({ open, onClose, session, onEdit, onCancel, onReschedule, onSaved }: Props) {
- if (!open || !session) return null;
- const expired = Date.parse(session.endAt)<=Date.now();
- const tone = expired ? 'muted' : sessionTone(session.status);
- const tc = TONE_CLASSES[tone];
- const closed = ['COMPLETED','CANCELLED'].includes(session.status) || Date.parse(session.endAt)<Date.now();
- const canJoin = !closed;
- return (
- <div className="fixed inset-0 z-40 flex justify-end">
- <button type="button" aria-label="Close" onClick={onClose} className="absolute inset-0 bg-black/40 " />
- <div className="relative flex h-full w-full max-w-md flex-col bg-base-100">
- <div className="shrink-0 border-b border-line p-5 pr-12">
- <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-medium ${tc.soft} ${tc.text}`}>{expired && !['COMPLETED','CANCELLED'].includes(session.status) ? 'Ended' : sessionStatusLabel(session.status)}</span>
- <h3 className="mt-2 text-base font-bold leading-tight">{session.title || 'Untitled session'}</h3>
- <SessionTimes startAt={session.startAt} endAt={session.endAt} timezone={session.timezone} />
- <button type="button" onClick={onClose} className="btn btn-ghost btn-xs btn-circle absolute right-3 top-3"><FiX aria-hidden /></button>
- </div>
- <div className="flex-1 overflow-y-auto p-5">
- <div className="space-y-4">
- <CancelReasonNote status={session.status} reason={session.cancelReason} />
- <SessionLifecycle session={session} onSaved={onSaved ?? (() => {})} />
- <SessionMaterials id={session.id} materials={session.materials ?? []} manage onSaved={onSaved} />
- <div className="rounded-box bg-base-200 p-4">
- <p className="flex items-center gap-2 text-xs font-semibold"><FiUser aria-hidden className="text-brand" />Class & teacher</p>
- <p className="mt-1 text-sm font-medium">{session.classGroup?.name ?? '—'}</p>
- <p className="text-xs text-muted">{teacherName(session.teacher)}</p>
- <p className="mt-2 flex items-center gap-2 text-xs text-muted"><FiClock aria-hidden />{session.mode} {session.provider ? `· ${session.provider.replace('_', ' ')}` : ''}</p>
- {session.room ? <p className="flex items-center gap-2 text-xs text-muted"><FiMapPin aria-hidden />Room: {session.room}</p> : null}
- </div>
- {session.meetingUrl && canJoin ? (
- <div className="rounded-box border border-brand bg-brand text-primary-content p-4">
- <p className="flex items-center gap-2 text-xs font-bold text-[#B30A00]"><FiVideo aria-hidden />Meeting link</p>
- <a href={session.meetingUrl} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-2 break-all text-sm font-medium text-brand hover:underline"><FiLink aria-hidden />{session.meetingUrl}</a>
- <div className="mt-3 flex gap-2"><a href={session.meetingUrl} target="_blank" rel="noreferrer" className="btn btn-sm gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content"><FiExternalLink aria-hidden />Open</a><button type="button" onClick={() => navigator.clipboard.writeText(session.meetingUrl ?? '')} className="btn btn-sm rounded-full border-line bg-white">Copy link</button></div>
- </div>
- ) : <p className="rounded-box border border-dashed border-line bg-base-200 p-4 text-center text-xs text-muted">{closed ? 'This class is closed.' : 'No meeting link — add one when editing.'}</p>}
- {session.recordingUrl ? <a href={session.recordingUrl} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-xs font-medium text-brand hover:underline"><FiVideo aria-hidden />Recording</a> : null}
- {session.notes ? <div className="rounded-box border border-line bg-base-100 p-4"><p className="text-xs font-semibold">Notes</p><p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed">{session.notes}</p></div> : null}
- </div>
- </div>
- <div className="flex shrink-0 flex-wrap gap-2 border-t border-line bg-base-200 p-4">
- <button type="button" onClick={onEdit} className="btn btn-sm rounded-full border-line bg-white">Edit</button>
- <button type="button" onClick={onReschedule} disabled={closed || session.status === 'LIVE'} className="btn btn-sm rounded-full border-line bg-white">Reschedule</button>
- <button type="button" onClick={onCancel} disabled={closed} className="btn btn-sm rounded-full border-0 bg-coral text-white hover:bg-coral hover:text-error-content">Cancel</button>
- <button type="button" onClick={onClose} className="btn btn-sm ml-auto rounded-full border-line bg-base-100">Close</button>
- </div>
- </div>
- </div>
- );
+/** Staff view of one class: status, times, lifecycle, link, materials and the actions to change it. */
+export function SessionDetailDrawer({ open, onClose, session: current, onEdit, onCancel, onReschedule, onDelete, onSaved }: Props) {
+  const session = useLastValue(current);
+  if (!session) return null;
+  const closed = isClosed(session);
+  const live = session.status === 'LIVE';
+  return (
+    <Drawer open={open && Boolean(current)} onClose={onClose} icon={FiVideo} title={session.title || 'Untitled class'}
+      subtitle={<SessionHeaderTimes startAt={session.startAt} endAt={session.endAt} timezone={session.timezone} />}
+      meta={<span className={`hero-chip px-2.5 py-0.5 text-[0.6875rem] ${live ? 'hero-chip-solid' : ''}`}>{live ? '● ' : ''}{statusText(session)}</span>}
+      footer={<>
+        <button type="button" onClick={onEdit} className="btn btn-sm gap-1.5 rounded-full border-line bg-base-100"><FiEdit2 aria-hidden />Edit</button>
+        <button type="button" onClick={onReschedule} disabled={closed || live} className="btn btn-sm gap-1.5 rounded-full border-line bg-base-100"><FiRepeat aria-hidden />Reschedule</button>
+        <button type="button" onClick={onCancel} disabled={closed} className="btn btn-sm gap-1.5 rounded-full border-error bg-base-100 text-error hover:bg-error hover:text-error-content"><FiXCircle aria-hidden />Cancel class</button>
+        {onDelete ? <button type="button" onClick={onDelete} disabled={live || session.status === 'COMPLETED'} title="Delete a class created by mistake" aria-label="Delete class"
+          className="btn btn-ghost btn-sm btn-circle ml-auto text-error"><FiTrash2 aria-hidden /></button> : null}
+      </>}>
+      <div className="space-y-4">
+        <CancelReasonNote status={session.status} reason={session.cancelReason} />
+        <SessionFacts classGroup={session.classGroup} teacher={session.teacher} mode={session.mode} provider={session.provider} room={session.room} />
+        {session.meetingUrl && !closed ? <MeetingCard sessionId={session.id} url={session.meetingUrl} live={live} joinLabel={live ? 'Join now' : 'Open meeting'} />
+          : <p className="rounded-box border border-dashed border-line bg-base-200 p-4 text-center text-xs text-muted">{closed ? 'This class is closed.' : 'No meeting link yet — add one with Edit.'}</p>}
+        <SessionLifecycle session={session} onSaved={onSaved ?? (() => {})} />
+        <SessionMaterials id={session.id} materials={session.materials ?? []} manage onSaved={onSaved} />
+        {session.recordingUrl ? <a href={session.recordingUrl} target="_blank" rel="noreferrer" className="btn btn-sm w-full gap-1.5 rounded-full border-line bg-base-100"><FiVideo aria-hidden />Watch recording</a> : null}
+        {session.notes ? <section className="rounded-box border border-line p-4"><h3 className="text-xs font-semibold">Notes</h3><p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed">{session.notes}</p></section> : null}
+      </div>
+    </Drawer>
+  );
 }
