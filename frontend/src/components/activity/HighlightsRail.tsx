@@ -21,7 +21,7 @@ export function HighlightsRail({ events }: Props) {
             {pinned.map((e) => (
               <li key={e.id} className="rounded-box border border-line bg-base-200 p-3">
                 <p className="line-clamp-2 text-sm font-semibold leading-snug">{e.title}</p>
-                <p className="mt-1 flex items-center gap-1 text-xs text-muted"><FiClock aria-hidden size={11} />{relative(e.createdAt)}</p>
+                <p className="mt-1 flex items-center gap-1 text-xs text-muted"><FiClock aria-hidden size="0.6875rem" />{relative(e.createdAt)}</p>
               </li>
             ))}
           </ul>
