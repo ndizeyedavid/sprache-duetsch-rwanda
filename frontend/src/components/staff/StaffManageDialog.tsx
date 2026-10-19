@@ -73,7 +73,7 @@ export function StaffManageDialog({ row, saving, onClose, onSave }: Props) {
         </span>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold text-ink">{staffName(row)}</p>
-          <p className="truncate text-[11px] text-muted">
+          <p className="truncate text-[0.6875rem] text-muted">
             {ROLE_LABELS[row.role]} · {row.email}
           </p>
         </div>
@@ -128,7 +128,7 @@ export function StaffManageDialog({ row, saving, onClose, onSave }: Props) {
       </div>
 
       {suspending ? (
-        <p className="mt-4 flex items-start gap-2 rounded-field bg-coral text-error-content px-3 py-2 text-[11px] font-medium text-[#D8482F]">
+        <p className="mt-4 flex items-start gap-2 rounded-field bg-coral text-error-content px-3 py-2 text-[0.6875rem] font-medium text-[#D8482F]">
           <FiAlertTriangle aria-hidden className="mt-0.5 shrink-0" />
           <span>
             {staffName(row)} will not be able to sign in. Classes, grades and audit history stay
