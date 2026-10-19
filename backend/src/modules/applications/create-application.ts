@@ -6,6 +6,7 @@ export interface PublicApplicationResult {
   reference: string | null;
   status: string;
   duplicate: boolean;
+  accountSetupRequested?: boolean;
 }
 
 /** Public catalogue application. Honeypot hits get a normal-looking answer and are dropped. */
@@ -25,7 +26,8 @@ export async function createCatalogApplication(input: CreateApplicationInput): P
     shift: input.shift,
     experience: input.experience,
     message: input.message,
-    source: "CATALOG",
+    source: input.source ?? "CATALOG",
+    createAccount: input.createAccount,
   });
-  return { reference: result.reference, status: result.status, duplicate: !result.created };
+  return { reference: result.reference, status: result.status, duplicate: !result.created, accountSetupRequested: result.accountSetupRequested };
 }
