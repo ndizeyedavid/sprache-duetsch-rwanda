@@ -1,4 +1,5 @@
 import type { ApplicationSource } from '../../lib/admissions-types';
+import { useIntakeScope } from '../../lib/intake-scope/store';
 import { SearchField } from '../ui/SearchField';
 import { FIELD,SELECT,SOURCE_LABEL } from './constants';
 import type { AdmissionRefs } from './useAdmissionRefs';
@@ -15,6 +16,8 @@ type Props = {
 
 export function ApplicationFiltersBar({ filters, refs, onChange, onClear, compact = false }: Props) {
   const active = Object.values(filters).some(Boolean);
+  // The header intake switcher already scopes the queue.
+  const scoped = Boolean(useIntakeScope());
   return (
     <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
       {!compact ? (
@@ -25,10 +28,10 @@ export function ApplicationFiltersBar({ filters, refs, onChange, onClear, compac
         <option value="">All levels</option>
         {refs.levels.map((level) => <option key={level.id} value={level.id}>{level.code} — {level.title}</option>)}
       </select>
-      <select aria-label="Intake" className={SELECT} value={filters.intakeId ?? ''} onChange={(event) => { const intakeId = event.currentTarget.value; onChange({ intakeId }); }}>
+      {scoped ? null : <select aria-label="Intake" className={SELECT} value={filters.intakeId ?? ''} onChange={(event) => { const intakeId = event.currentTarget.value; onChange({ intakeId }); }}>
         <option value="">All intakes</option>
         {refs.intakes.map((intake) => <option key={intake.id} value={intake.id}>{intake.name}</option>)}
-      </select>
+      </select>}
       {!compact ? (
         <>
           <select aria-label="Campus" className={SELECT} value={filters.campusId ?? ''} onChange={(event) => { const campusId = event.currentTarget.value; onChange({ campusId }); }}>
