@@ -75,7 +75,7 @@ export function EnrolmentManageDialog({ row, groups, saving, onClose, onSave }: 
         <p className="text-sm font-semibold text-ink">
           {row.student.user.firstName} {row.student.user.lastName}
         </p>
-        <p className="mt-0.5 text-[11px] text-muted">
+        <p className="mt-0.5 text-[0.6875rem] text-muted">
           {row.student.studentCode} · {row.level.code} · {row.intake.name} ·{' '}
           {row.classGroup?.name ?? 'no class'}
         </p>
@@ -124,7 +124,7 @@ export function EnrolmentManageDialog({ row, groups, saving, onClose, onSave }: 
         </FormField>
 
         <InstallmentEditor rows={scheduleRows} total={fee ?? currentFee} onChange={rows => { setScheduleRows(rows); setScheduleChanged(true); }} /></>}
-        <p className="flex items-start gap-2 rounded-field bg-base-100 px-3 py-2 text-[11px] text-muted">
+        <p className="flex items-start gap-2 rounded-field bg-base-100 px-3 py-2 text-[0.6875rem] text-muted">
           <FiAlertTriangle aria-hidden className="mt-0.5 shrink-0 text-brand" />
           <span>
             {status === 'ACTIVE' ? ACTIVE_ONLY_NOTE : canFinance ? REFUND_NOTE : 'This changes academic access; financial records are handled separately.'}
