@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { useState } from 'react';
 import { FiArrowRight,FiEdit2,FiPlus } from 'react-icons/fi';
 import { useSearchParams } from 'react-router-dom';
@@ -6,12 +7,14 @@ import type { LevelItem,ModuleItem } from '../../lib/services';
 import { listLevelModules } from '../../lib/services';
 import { ErrorBlock,LoadingBlock } from '../common/PageState';
 import { CourseOutline } from './CourseOutline';
+import { CourseStudioHero } from './CourseStudioHero';
 import { CourseStudioOverview } from './CourseStudioOverview';
+import { isArchived } from './module-card/module-stats';
 import { PreparationLesson } from './PreparationLesson';
 import { StudioModuleForm } from './StudioModuleForm';
 import { StudioNewLesson } from './StudioNewLesson';
 
-export function TeacherCourseWorkspace({ levels, academic = false }: { levels: LevelItem[]; academic?: boolean }) {
+export function TeacherCourseWorkspace({ levels, academic = false, actions }: { levels: LevelItem[]; academic?: boolean; actions?: ReactNode }) {
   const [params, setParams] = useSearchParams();
   const [dirty, setDirty] = useState(false);
   const [moduleForm, setModuleForm] = useState<ModuleItem | 'new' | null>(null);
@@ -21,7 +24,9 @@ export function TeacherCourseWorkspace({ levels, academic = false }: { levels: L
   const ordered = [...(modules.stale ? [] : modules.data ?? [])].sort((a, b) => a.order - b.order);
   const selected = ordered.flatMap(module => module.lessons).find(lesson => lesson.id === params.get('lesson'));
   const module = ordered.find(item => selected ? item.lessons.some(lesson => lesson.id === selected.id) : item.id === params.get('module'));
-  const lessonCount = ordered.reduce((sum, item) => sum + item.lessons.length, 0);
+  // Archived editions stay reachable below the grid but are not counted as the course.
+  const current = ordered.filter(item => !isArchived(item));
+  const lessonCount = current.reduce((sum, item) => sum + item.lessons.length, 0);
   function navigate(next: Record<string, string>) {
     if (dirty && !confirm('Discard unsaved lesson changes?')) return;
     setDirty(false); setParams(next);
@@ -36,15 +41,10 @@ export function TeacherCourseWorkspace({ levels, academic = false }: { levels: L
   }
   const overview = () => navigate({ level: level.id });
   return <div className="space-y-6">
-    <header className="flex flex-wrap items-center justify-between gap-4">
-      <div><p className="mb-1 text-xs font-medium text-muted">{academic ? 'ACADEMIC CURRICULUM' : 'TEACHING WORKSPACE'}</p><h1 className="text-2xl font-semibold">Course studio</h1></div>
-      <label className="flex items-center gap-3 text-sm"><span className="text-muted">Course</span>
-        <select aria-label="Choose course" className="select max-w-[260px] border-0 bg-base-100" value={level.id} onChange={event => navigate({ level: event.target.value })}>
-          {levels.map(item => <option key={item.id} value={item.id}>{item.code} · {item.title}</option>)}
-        </select></label>
-    </header>
+    <CourseStudioHero academic={academic} level={level} levels={levels} onLevel={id => navigate({ level: id })} actions={actions} compact={Boolean(module)}
+      modules={modules.loading || modules.stale ? undefined : current.length} lessons={lessonCount} />
     {modules.loading || modules.stale ? <LoadingBlock label="Loading course…"/> : modules.error ? <ErrorBlock message={modules.error} onRetry={modules.refetch}/> : module ? (
-      <div className="grid items-start gap-5 lg:grid-cols-[250px_minmax(0,1fr)] xl:grid-cols-[270px_minmax(0,1fr)]">
+      <div className="grid items-start gap-5 lg:grid-cols-[15.625rem_minmax(0,1fr)] xl:grid-cols-[16.875rem_minmax(0,1fr)]">
         <CourseOutline modules={ordered} module={module} selected={selected?.id} busy={false} onSelect={select}
           onModule={openModule} onOverview={overview}
           onAdd={item => { if (!dirty || confirm('Discard unsaved lesson changes?')) { setDirty(false); setParams({level:level.id,module:item.id}); setNewLesson(item.id); } }}/>
@@ -55,14 +55,11 @@ export function TeacherCourseWorkspace({ levels, academic = false }: { levels: L
               <div className="flex items-start justify-between gap-3"><div><p className="text-xs text-muted">MODULE {ordered.indexOf(module) + 1}</p><h2 className="mt-2 text-2xl font-semibold">{module.title}</h2></div><button className="btn btn-sm btn-square btn-ghost" aria-label="Edit module" onClick={() => setModuleForm(module)}><FiEdit2 aria-hidden/></button></div>
               <p className="mt-3 text-sm text-muted">{module.lessons.length} lessons · {module.isPublished ? 'Published' : 'Draft'}</p>
               <div className="my-10 flex justify-center"><img src="/illustrations/study-books.webp" alt="" width={180} height={150} className="h-36 object-contain"/></div>
-              <div className="flex flex-wrap justify-center gap-3">{module.lessons.length ? <button className="btn btn-neutral" onClick={() => select([...module.lessons].sort((a,b)=>a.order-b.order)[0].id, module.id)}>Start preparing<FiArrowRight aria-hidden/></button> : null}<button className="btn border-0" onClick={() => setNewLesson(module.id)}><FiPlus aria-hidden/>New lesson</button></div>
+              <div className="flex flex-wrap justify-center gap-3">{module.lessons.length ? <button className="btn btn-primary rounded-full" onClick={() => select([...module.lessons].sort((a,b)=>a.order-b.order)[0].id, module.id)}>Start preparing<FiArrowRight aria-hidden/></button> : null}<button className="btn border-0" onClick={() => setNewLesson(module.id)}><FiPlus aria-hidden/>New lesson</button></div>
             </section>}
         </div>
       </div>
-    ) : <><section className="flex items-center justify-between gap-5 rounded-box bg-neutral px-6 py-6 text-neutral-content sm:px-8">
-      <div><p className="text-sm text-neutral-content">{level.code} · {lessonCount} lessons</p><h2 className="mt-2 text-xl font-semibold sm:text-2xl">{academic ? level.title : 'Good lessons start here.'}</h2><p className="mt-2 text-sm text-neutral-content">{academic ? `${ordered.length} modules · ${lessonCount} lessons` : 'Choose a module and make it your own.'}</p></div>
-      <img src="/illustrations/study-books.webp" alt="" width={130} height={110} className="hidden h-28 w-32 object-contain sm:block"/></section>
-      <CourseStudioOverview modules={ordered} onOpen={openModule} onCreate={() => setModuleForm('new')} onEdit={setModuleForm}/></>}
+    ) : <CourseStudioOverview modules={ordered} onOpen={openModule} onCreate={() => setModuleForm('new')} onEdit={setModuleForm}/>}
     {moduleForm ? <StudioModuleForm levelId={level.id} module={moduleForm === 'new' ? undefined : moduleForm} onClose={() => setModuleForm(null)} onSaved={modules.refetch}/> : null}
     {newLesson ? <StudioNewLesson moduleId={newLesson} onClose={() => setNewLesson(null)} onCreated={id => { setParams({level:level.id,module:newLesson,lesson:id});modules.refetch(); }}/> : null}
   </div>;
