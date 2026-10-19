@@ -15,6 +15,11 @@ export type CourseSpec = {
   /** Prefix for backups/<name>-*.json. */
   backupName: string;
   size: { modules: number; lessons: number; exercises: number; words: number; writingTasks: number };
+  /**
+   * Module ids of an earlier edition this course replaces. They are archived (unpublished, moved
+   * below zero) with all lessons, activities, progress and submissions kept as history.
+   */
+  retiredModuleIds?: readonly string[];
 };
 
 export const courseIds = (spec: CourseSpec) => {
