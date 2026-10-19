@@ -48,12 +48,12 @@ export function ThreadView({ thread, messages, loading, error, onRetry, myId, dr
  {onBack ? <button type="button" onClick={onBack} className="btn btn-ghost btn-xs btn-circle lg:hidden"><FiArrowLeft aria-hidden /></button> : null}
  <span className="flex -space-x-2">
  {others.slice(0, 3).map((p) => (
- <span key={p.user.id} className={`flex size-8 items-center justify-center rounded-full border-2 border-base-100 text-[11px] font-bold ${accentFor(p.user.firstName)}`}>{initials(p.user.firstName, p.user.lastName)}</span>
+ <span key={p.user.id} className={`flex size-8 items-center justify-center rounded-full border-2 border-base-100 text-[0.6875rem] font-bold ${accentFor(p.user.firstName)}`}>{initials(p.user.firstName, p.user.lastName)}</span>
  ))}
  </span>
  <span className="min-w-0 grow">
  <span className="block truncate text-sm font-bold leading-tight">{title}</span>
- <span className="block truncate text-[11px] text-muted">{others.map((p) => `${p.user.firstName} ${p.user.lastName}`).join(' · ') || 'Just you'}</span>
+ <span className="block truncate text-[0.6875rem] text-muted">{others.map((p) => `${p.user.firstName} ${p.user.lastName}`).join(' · ') || 'Just you'}</span>
  </span>
  <span className="hidden rounded-full bg-base-200 px-2.5 py-1 text-xs font-medium sm:block">{dedupeParticipants(thread.participants).length} members</span>
  </div>
