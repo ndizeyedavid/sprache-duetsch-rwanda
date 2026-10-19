@@ -4,6 +4,7 @@ import { badRequest,conflict,forbidden,notFound } from '../../lib/http-error.js'
 import { prisma } from '../../lib/prisma.js';
 import { isScheduleWriteConflict } from '../sessions/session-conflicts.js';
 import { checkOverlap } from '../sessions/session-policy.js';
+import { ensureTeacherIntake } from '../users/teaching-intakes.service.js';
 import type { CreateClassInput,UpdateClassInput } from './classes.schema.js';
 async function transact<T>(work:(tx:Prisma.TransactionClient)=>Promise<T>):Promise<T>{try{return await prisma.$transaction(work,{isolationLevel:'Serializable',timeout:15000});}catch(e){if(isScheduleWriteConflict(e))throw conflict('Another assignment changed at the same time. Please retry.');throw e;}}
 async function validateTeacher(tx:Prisma.TransactionClient,id:string,levelId:string){
@@ -22,6 +23,7 @@ export async function createClass(input:CreateClassInput,actorId?:string){return
   if (input.levelId && input.intakeId && !await tx.intake.findFirst({ where: { id: input.intakeId, levels: { some: { id: input.levelId } } } })) throw badRequest('This level is not offered in the selected intake');
   if(input.teacherId)await validateTeacher(tx,input.teacherId,input.levelId);
   const row=await tx.classGroup.create({data:{...input,teacherId:input.teacherId??null,capacity:input.capacity??30,isActive:input.isActive??true}});
+  if(row.teacherId)await ensureTeacherIntake(tx,row.teacherId,row.intakeId,actorId);
   await writeAuditTx(tx,{actorId,action:'CLASS_CREATED',entityType:'ClassGroup',entityId:row.id,after:row});return row;
 });}
 export async function updateClass(id:string,input:UpdateClassInput,actorId?:string){return transact(async tx=>{
@@ -39,6 +41,7 @@ export async function updateClass(id:string,input:UpdateClassInput,actorId?:stri
     for(const session of future){if(teacherId)await checkOverlap(tx,{...session,teacherId},session.id);await tx.classSession.update({where:{id:session.id},data:{teacherId}});}
   }
   const row=await tx.classGroup.update({where:{id},data:input});
+  if(row.teacherId)await ensureTeacherIntake(tx,row.teacherId,row.intakeId,actorId);
   await writeAuditTx(tx,{actorId,action:'CLASS_UPDATED',entityType:'ClassGroup',entityId:id,before,after:row});return row;
 });}
 export async function deleteClass(id:string,actorId?:string){return updateClass(id,{isActive:false},actorId);}
