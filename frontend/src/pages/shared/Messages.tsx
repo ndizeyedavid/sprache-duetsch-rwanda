@@ -163,18 +163,16 @@ export function Messages() {
 
   return (
     <div className="space-y-4">
-      <Panel className="p-5 sm:p-7">
-        <InboxHeader tab={tab} onTab={switchTab} unreadChats={unreadChats} unreadNotices={unreadNotices} totalChats={threadList.length} totalNotices={notices.length} onCompose={() => setShowCompose(true)} />
-      </Panel>
+      <InboxHeader className={mobileView === "thread" ? "hidden lg:flex" : ""} tab={tab} onTab={switchTab} unreadChats={unreadChats} unreadNotices={unreadNotices} totalChats={threadList.length} totalNotices={notices.length} onCompose={() => setShowCompose(true)} />
 
       {tab === "Chats" ? (
-        <div className="grid min-h-[480px] gap-0 overflow-hidden rounded-box border border-base-300 bg-base-100 lg:h-[min(720px,calc(100dvh-260px))] lg:grid-cols-12">
+        <div className="grid min-h-[30rem] gap-0 overflow-hidden rounded-box border border-base-300 bg-base-100 lg:h-[max(22rem,calc(100dvh-18.5rem))] lg:min-h-[22rem] lg:grid-cols-12 roomy:h-[calc(100dvh-20rem)]">
           <Panel className={`min-h-0 border-0 border-r border-base-300 rounded-none! lg:col-span-4 xl:col-span-4 ${mobileView === "thread" ? "hidden lg:block" : ""}`} padded={false}>
-            <div className="h-full min-h-[460px] lg:min-h-0">
+            <div className="h-full min-h-[28.75rem] lg:min-h-0">
               <ConversationList threads={threadList} loading={threads.loading} error={threads.error} onRetry={threads.refetch} selectedId={selectedId} onPick={pickThread} myId={me?.id} search={threadSearch} onSearch={setThreadSearch} filter={threadFilter} onFilter={setThreadFilter} onCompose={() => setShowCompose(true)} />
             </div>
           </Panel>
-          <Panel padded={false} className={`h-[calc(100dvh-240px)] min-h-[440px] overflow-hidden rounded-none! border-0 lg:h-full lg:col-span-8 xl:col-span-8 ${mobileView === "list" ? "hidden lg:block" : ""}`}>
+          <Panel padded={false} className={`h-[calc(100dvh-11.25rem)] min-h-[27.5rem] overflow-hidden rounded-none! border-0 lg:h-full lg:min-h-0 lg:col-span-8 xl:col-span-8 ${mobileView === "list" ? "hidden lg:block" : ""}`}>
             <MessageView thread={selectedThread} messages={threadMessages} loading={messagesApi.stale || (messagesApi.loading && !localMessages)} error={messagesApi.error} onRetry={messagesApi.refetch} myId={me?.id} draft={draft} onDraft={setDraft} onSend={() => void handleSend()} sending={sending} chatError={chatError} onBack={() => setMobileView("list")} />
           </Panel>
         </div>
