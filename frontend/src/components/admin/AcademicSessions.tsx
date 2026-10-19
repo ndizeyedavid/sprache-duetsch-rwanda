@@ -54,11 +54,11 @@ export function AcademicSessions() {
               </span>
               <div className="min-w-0 flex-1">
                 <p className="text-xs font-semibold">{s.title}</p>
-                <p className="mt-1 text-[11px] text-muted">
+                <p className="mt-1 text-[0.6875rem] text-muted">
                   {s.classGroup?.name ?? "All learners"} ·{" "}
                   {teacherName(s.teacher)}
                 </p>
-                <p className="mt-2 flex items-center gap-1 text-[11px] text-muted">
+                <p className="mt-2 flex items-center gap-1 text-[0.6875rem] text-muted">
                   <FiClock aria-hidden />
                   {isoDate(s.startAt)} · {isoTime(s.startAt)}
                   <span className="badge badge-ghost badge-xs ml-auto">
