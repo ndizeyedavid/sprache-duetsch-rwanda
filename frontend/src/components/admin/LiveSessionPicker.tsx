@@ -28,7 +28,7 @@ export function LiveSessionPicker({ sessions, selectedId, onPick, disabled }: Pr
  <Panel className="lg:col-span-4 xl:col-span-3">
  <div className="flex items-center justify-between gap-2">
  <h3 className="flex items-center gap-2 text-sm font-bold"><FiCalendar aria-hidden className="text-brand" />Sessions</h3>
- <select value={sessionClass} onChange={(e) => setSessionClass(e.currentTarget.value)} className="select select-xs max-w-[140px] rounded-full border-line bg-base-100 text-xs" aria-label="Filter sessions by class">
+ <select value={sessionClass} onChange={(e) => setSessionClass(e.currentTarget.value)} className="select select-xs max-w-[8.75rem] rounded-full border-line bg-base-100 text-xs" aria-label="Filter sessions by class">
  <option value="">All classes</option>
  {(classes.data ?? []).map((c) => (
  <option key={c.id} value={c.id}>{c.name} {c.level ? `· ${c.level.code}` : ''}</option>
@@ -53,8 +53,8 @@ export function LiveSessionPicker({ sessions, selectedId, onPick, disabled }: Pr
  <span className="w-1 shrink-0 self-stretch rounded-full" style={{ background: tc.hex }} aria-hidden />
  <span className="min-w-0 grow">
  <span className="block truncate text-xs font-semibold leading-tight">{item.title}</span>
- <span className="mt-1 block text-[11px] text-muted">{isoDate(item.startAt)} · {isoTime(item.startAt)}</span>
- <span className={`mt-1.5 inline-flex rounded-full px-2 py-0.5 text-[11px] font-medium ${tc.soft} ${tc.text}`}>{sessionStatusLabel(item.status)}</span>
+ <span className="mt-1 block text-[0.6875rem] text-muted">{isoDate(item.startAt)} · {isoTime(item.startAt)}</span>
+ <span className={`mt-1.5 inline-flex rounded-full px-2 py-0.5 text-[0.6875rem] font-medium ${tc.soft} ${tone === 'muted' ? 'text-base-100' : tone === 'navy' ? 'text-base-content' : ''}`}>{sessionStatusLabel(item.status)}</span>
  </span>
  </button>
  </li>
