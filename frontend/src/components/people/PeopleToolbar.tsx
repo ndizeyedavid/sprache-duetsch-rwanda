@@ -21,7 +21,7 @@ export function PeopleToolbar({ tab, onTab, counts, search, onSearch, groupFilte
           {TABS.map((t) => (
             <button key={t} type="button" onClick={() => onTab(t)} className={`tab tab-sm ${tab === t ? "tab-active bg-brand text-white" : ""}`}>
               {t}
-              <span className="ml-1.5 rounded-full bg-black/10 px-1.5 py-0.5 text-[10px]">{counts[t]}</span>
+              <span className="ml-1.5 rounded-full bg-black/10 px-1.5 py-0.5 text-[0.625rem]">{counts[t]}</span>
             </button>
           ))}
         </div>
@@ -31,7 +31,7 @@ export function PeopleToolbar({ tab, onTab, counts, search, onSearch, groupFilte
           <FiSearch aria-hidden className="opacity-50" />
           <input value={search} onChange={(e) => onSearch(e.target.value)} placeholder="Search name or email" className="grow" />
         </label>
-        <select value={groupFilter} onChange={(e) => onGroupFilter(e.target.value)} className="select max-w-[200px]">
+        <select value={groupFilter} onChange={(e) => onGroupFilter(e.target.value)} className="select max-w-[12.5rem]">
           <option value="">All groups</option>
           {groups.map((g) => (
             <option key={g.id} value={g.id}>{g.name}</option>
