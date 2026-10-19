@@ -23,7 +23,7 @@ export function ReceiptCheckRecord({ data }: { data: ReceiptVerification }) {
       </div>
       <div className={`relative overflow-hidden px-6 py-9 sm:px-10 sm:py-12 ${data.valid ? '' : 'opacity-70'}`}>
         <img src="/logo.png" alt="" aria-hidden className="pointer-events-none absolute -right-16 -top-10 size-72 opacity-[0.05]" />
-        <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-brand">Payment receipt</p>
+        <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.25em] text-brand">Payment receipt</p>
         <p className="mt-7 text-sm text-muted">Payment received from</p>
         <h1 className="mt-1 text-3xl font-semibold tracking-tight">{data.payerName}</h1>
         <p className="mt-6 text-sm text-muted">Amount</p>
