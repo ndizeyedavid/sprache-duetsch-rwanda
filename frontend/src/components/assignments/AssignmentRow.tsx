@@ -7,10 +7,10 @@ export function AssignmentRow({ item }: { item: FeedItem }) {
   const status = late && item.status !== 'RETURNED' ? 'OVERDUE' : item.status;
   const Icon = item.status === 'GRADED' ? FiCheckCircle : item.kind === 'Homework' ? FiFileText : FiHeadphones;
   return <Link to={`/assignments/${item.id}`} className="group flex flex-wrap items-center gap-4 border-b border-base-300 p-4 transition hover:bg-base-200 last:border-0 sm:p-5">
-    <span className={`grid size-11 shrink-0 place-items-center rounded-2xl ${item.isHomework ? 'bg-success text-success-content' : 'bg-secondary text-secondary-content'}`}><Icon size={20} /></span>
-    <div className="min-w-0 flex-1"><p className="text-[10px] font-medium uppercase tracking-wider text-muted">{item.course} · {item.kind}</p><h3 className="mt-1 text-sm font-semibold group-hover:text-primary sm:text-base">{item.title}</h3><p className="mt-1 truncate text-xs text-muted">{item.context}</p></div>
+    <span className={`grid size-11 shrink-0 place-items-center rounded-2xl ${item.isHomework ? 'bg-success text-success-content' : 'bg-secondary text-secondary-content'}`}><Icon size="1.25rem" /></span>
+    <div className="min-w-0 flex-1"><p className="text-[0.625rem] font-medium uppercase tracking-wider text-muted">{item.course} · {item.kind}</p><h3 className="mt-1 text-sm font-semibold group-hover:text-primary sm:text-base">{item.title}</h3><p className="mt-1 truncate text-xs text-muted">{item.context}</p></div>
     <span className={`badge badge-soft badge-sm ${statusTone[status] ?? 'badge-ghost'}`}>{statusLabels[status] ?? status}</span>
-    <div className="ml-[60px] flex w-full items-center gap-4 text-xs text-muted sm:ml-0 sm:w-auto sm:min-w-32 sm:flex-col sm:items-end sm:gap-1"><span className={late ? 'text-error' : item.extended ? 'text-info' : ''}>{item.extended ? `Extended to ${dateLabel(item.dueAt)}` : dateLabel(item.dueAt)}</span><span>{item.score !== null ? `${item.score}/${item.points} pts` : `${item.points} pts`}{item.minutes ? ` · ${item.minutes} min` : ''}</span></div>
+    <div className="ml-15 flex w-full items-center gap-4 text-xs text-muted sm:ml-0 sm:w-auto sm:min-w-32 sm:flex-col sm:items-end sm:gap-1"><span className={late ? 'text-error' : item.extended ? 'text-info' : ''}>{item.extended ? `Extended to ${dateLabel(item.dueAt)}` : dateLabel(item.dueAt)}</span><span>{item.score !== null ? `${item.score}/${item.points} pts` : `${item.points} pts`}{item.minutes ? ` · ${item.minutes} min` : ''}</span></div>
     <FiArrowUpRight aria-hidden className="hidden text-muted sm:block" />
     {item.status === 'DRAFT' ? <span className="sr-only"><FiClock />Continue your saved draft</span> : null}
   </Link>;
