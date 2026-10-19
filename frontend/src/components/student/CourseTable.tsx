@@ -2,6 +2,8 @@ import { FiArrowUpRight,FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { currencyAmount } from '../../lib/format';
 import type { MyCourse } from '../../lib/services';
+import { HERO_ART } from '../hero/hero-art';
+import { artForLevel } from '../teacher/class-card/class-insights';
 
 type Props = {
   courses: MyCourse[];
@@ -36,21 +38,17 @@ export function CourseTable({ courses, filter, q, onQ }: Props) {
           return (
             <article key={course.level.id} className={`card learning-panel overflow-hidden ${course.paymentRequired ? 'bg-base-200 text-muted' : ''}`}>
               <div className={`journey-hero relative flex h-44 items-center overflow-hidden p-6 ${course.paymentRequired ? 'grayscale opacity-60' : ''}`}>
-                <span aria-hidden className="absolute -right-6 bottom-0 size-44 rounded-full bg-success text-success-content" />
+                <span aria-hidden className="absolute -bottom-10 -right-8 size-52 rounded-full bg-brand-soft" />
                 <div className="relative z-10 w-[45%]">
-                  <p className="max-w-28 text-[10px] font-semibold uppercase leading-relaxed tracking-[0.2em] text-primary-content">Continue</p>
+                  <p className="max-w-28 text-[0.625rem] font-semibold uppercase leading-relaxed tracking-[0.2em] text-primary-content">Continue</p>
                   <p className="mt-1 text-5xl font-semibold tracking-tight">{course.level.code}</p>
                 </div>
-                <img
-                  src="/illustrations/course-learner.webp"
-                  alt=""
-                  aria-hidden="true"
-                  width={480}
-                  height={480}
-                  loading="lazy"
-                  decoding="async"
-                  className="pointer-events-none absolute bottom-0 right-1 h-42 w-[55%] object-contain object-bottom"
-                />
+                {(() => {
+                  // Same learner cut-outs as the teacher class cards; each level keeps its own photo.
+                  const art = HERO_ART[artForLevel(course.level.code)];
+                  return <img src={art.src} alt="" aria-hidden="true" width={art.width} height={art.height} loading="lazy" decoding="async"
+                    className="pointer-events-none absolute -right-3 bottom-0 h-[92%] w-auto max-w-[58%] object-contain object-right-bottom" />;
+                })()}
               </div>
               <div className="card-body gap-3 p-6">
                 <div className="flex items-center justify-between gap-2 text-xs text-muted">
@@ -64,9 +62,9 @@ export function CourseTable({ courses, filter, q, onQ }: Props) {
                   <span className="text-muted">{course.stats.completedLessons} lessons completed</span>
                   <span className="font-semibold">{course.stats.completionPercentage}%</span>
                 </div>
-                <progress className="progress progress-success h-1.5" value={course.stats.completionPercentage} max={100} aria-label={`${course.level.code} completion`} />
+                <progress className="progress progress-primary h-1.5" value={course.stats.completionPercentage} max={100} aria-label={`${course.level.code} completion`} />
                 {course.paymentRequired ? <p className="text-xs leading-5 text-muted">Pay the course fee to open lessons and tests.</p> : null}
-                <Link to={path} className="btn mt-3 justify-between rounded-full border-base-300 bg-base-100">{course.paymentRequired ? 'Pay course fee' : 'Open course'} <FiArrowUpRight aria-hidden /></Link>
+                <Link to={path} className="btn btn-primary mt-3 justify-between rounded-full">{course.paymentRequired ? 'Pay course fee' : 'Open course'} <FiArrowUpRight aria-hidden /></Link>
               </div>
             </article>
           );
