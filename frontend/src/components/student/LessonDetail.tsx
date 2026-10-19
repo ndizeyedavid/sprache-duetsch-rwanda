@@ -41,21 +41,23 @@ type Props = {
   completing: boolean;
   actionError: string | null;
   onComplete: () => void;
+  /** Off when the page hero already shows the title, type and status. */
+  showHeader?: boolean;
 };
 
-export function LessonDetail({ detail, slug, completing, actionError, onComplete }: Props) {
+export function LessonDetail({ detail, slug, completing, actionError, onComplete, showHeader = true }: Props) {
   if (!detail) return null;
   const done = detail.progressStatus === 'COMPLETED';
   return (
-    <article id="lesson-content" className="scroll-mt-24 space-y-6">
-      <div className="flex flex-wrap items-start justify-between gap-3">
+    <article id="lesson-content" className="min-w-0 scroll-mt-24 space-y-4 break-words roomy:space-y-6">
+      {showHeader ? <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="inline-flex items-center gap-1.5 rounded-full bg-primary px-2.5 py-1 text-[11px] font-semibold text-primary-content">{humanize(detail.contentType)}{detail.estimatedMinutes ? ` · ${detail.estimatedMinutes} min` : ''}</p>
-          <h1 className="mt-3 text-2xl font-bold leading-tight">{detail.title}</h1>
+          <p className="inline-flex items-center gap-1.5 rounded-full bg-primary px-2.5 py-1 text-[0.6875rem] font-semibold text-primary-content">{humanize(detail.contentType)}{detail.estimatedMinutes ? ` · ${detail.estimatedMinutes} min` : ''}</p>
+          <h1 className="mt-2 text-xl font-bold leading-tight roomy:mt-3 roomy:text-2xl">{detail.title}</h1>
           {detail.description ? <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted">{detail.description}</p> : null}
         </div>
-        <span className={`badge border-0 px-3 py-3 text-[11px] font-medium ${done ? 'bg-success text-success-content' : detail.progressStatus === 'IN_PROGRESS' ? 'bg-info text-info-content' : 'bg-neutral text-neutral-content'}`}>{done ? 'Completed' : humanize(detail.progressStatus)}</span>
-      </div>
+        <span className={`badge border-0 px-3 py-3 text-[0.6875rem] font-medium ${done ? 'bg-success text-success-content' : detail.progressStatus === 'IN_PROGRESS' ? 'bg-info text-info-content' : 'bg-neutral text-neutral-content'}`}>{done ? 'Completed' : humanize(detail.progressStatus)}</span>
+      </div> : detail.description ? <p className="max-w-3xl text-sm leading-relaxed text-muted">{detail.description}</p> : null}
 
       {detail.videoUrl ? <AuthenticatedMedia key={detail.videoUrl} url={detail.videoUrl} kind="video" className="w-full rounded-box" /> : null}
       {detail.audioUrl ? <AuthenticatedMedia key={detail.audioUrl} url={detail.audioUrl} kind="audio" className="w-full" /> : null}
@@ -68,7 +70,7 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
       {detail.activities.some(a => !isBookPractice(a)) ? (
         <div id="lesson-practice" className="scroll-mt-24 overflow-hidden rounded-box border border-line bg-base-100">
           <div className="border-b border-line bg-base-200 px-4 py-3">
-            <h2 className="flex items-center gap-2 text-sm font-bold">Practice activities<span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">{detail.activities.length}</span></h2>
+            <h2 className="flex items-center gap-2 text-sm font-bold">Practice activities<span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem] font-normal text-muted">{detail.activities.length}</span></h2>
             <p className="mt-1 text-xs text-muted">Work on each activity on its own page — your progress saves for your facilitator.</p>
           </div>
           <ul className="grid gap-3 p-4 sm:grid-cols-2">
@@ -83,8 +85,8 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
                   <div className="flex items-start justify-between gap-2">
                     <span className={`flex size-8 shrink-0 items-center justify-center rounded-full text-xs font-bold ${done ? (graded ? 'bg-brand text-white' : 'bg-sun text-white') : 'bg-brand text-primary-content'}`}>{activityIcon(a.type)}</span>
                     <span className="flex items-center gap-1">
-                      <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px]">{humanize(a.type)}</span>
-                      {done ? <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${graded ? 'bg-brand text-white' : 'bg-sun text-white'}`}>{graded ? 'Completed' : 'Submitted'}</span> : null}
+                      <span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem]">{humanize(a.type)}</span>
+                      {done ? <span className={`rounded-full px-2 py-0.5 text-[0.6875rem] font-semibold ${graded ? 'bg-brand text-white' : 'bg-sun text-white'}`}>{graded ? 'Completed' : 'Submitted'}</span> : null}
                     </span>
                   </div>
                   <h3 className="mt-2 line-clamp-2 text-sm font-semibold leading-snug">{a.title}</h3>
@@ -93,9 +95,9 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
                     <div className="mt-2 space-y-1 rounded-box bg-base-100 p-2">
                       <p className="flex items-center justify-between text-xs">
                         <span className="font-medium">{graded ? (score !== null ? `Score: ${score}/${max}` : 'Graded') : 'Awaiting grading'}</span>
-                        <span className={`rounded-full px-2 py-0.5 text-[11px] font-bold ${graded ? (sub.isCorrect ? 'bg-brand text-primary-content' : sub.isCorrect === false ? 'bg-coral text-error-content' : 'bg-base-200 text-muted') : 'bg-sun text-warning-content text-[#8A6800]'}`}>{graded ? (sub.isCorrect === true ? 'Correct' : sub.isCorrect === false ? 'Incorrect' : 'Graded') : 'Submitted'}</span>
+                        <span className={`rounded-full px-2 py-0.5 text-[0.6875rem] font-bold ${graded ? (sub.isCorrect ? 'bg-brand text-primary-content' : sub.isCorrect === false ? 'bg-coral text-error-content' : 'bg-base-200 text-muted') : 'bg-sun text-warning-content text-[#8A6800]'}`}>{graded ? (sub.isCorrect === true ? 'Correct' : sub.isCorrect === false ? 'Incorrect' : 'Graded') : 'Submitted'}</span>
                       </p>
-                      {sub.feedback ? <p className="rounded bg-base-200 px-2 py-1 text-[11px] leading-relaxed">Feedback: {sub.feedback}</p> : null}
+                      {sub.feedback ? <p className="rounded bg-base-200 px-2 py-1 text-[0.6875rem] leading-relaxed">Feedback: {sub.feedback}</p> : null}
                     </div>
                   ) : null}
                   <div className="mt-3 flex gap-2">
