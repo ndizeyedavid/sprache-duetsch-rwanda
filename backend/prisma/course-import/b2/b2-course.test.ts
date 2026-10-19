@@ -50,7 +50,8 @@ describe("B2.1 course manifest", () => {
     expect(html).toContain("<p><strong>Textsorte:</strong> Radiosendung · Erfahrungsbericht</p>");
     expect(html).toContain("<p><strong>Prüfungsbezug:</strong> Goethe B2 Sprechen Teil 1");
     expect(html).toContain('class="course-table-wrap"');
-    expect(html).toContain("https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=800&amp;q=60&amp;auto=format");
+    expect(html).toContain('src="/coursebook/photos/photo-1533240332313-0db49b459ad6.webp"');
+    expect(html).not.toMatch(/unsplash|figcaption/);
     expect(html).not.toMatch(/<script|onerror/i);
     expect(estimateMinutes(lesson)).toBeGreaterThanOrEqual(60);
   });
