@@ -26,7 +26,7 @@ export async function importCourse(spec: CourseSpec, { apply }: { apply: boolean
     ...m,
     hasStudentWork: m.lessons.some((l) => l.progress.length > 0 || l.assignments.length > 0
       || l.activities.some((a) => a.submissions.length > 0)),
-  })), importIds, course.module.length);
+  })), importIds, course.module.length, new Set(spec.retiredModuleIds ?? []));
   if (!apply) return { ...summary, mode: "dry-run", levelExists: !!found, existingModules: plan };
 
   // Create the level only when missing; never overwrite a configured level (fees, titles).
