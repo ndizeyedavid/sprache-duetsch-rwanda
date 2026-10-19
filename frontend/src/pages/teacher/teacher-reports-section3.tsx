@@ -40,7 +40,7 @@ return (<div className="grid gap-4 lg:grid-cols-12">
                 />
               )}
               {perAss.length ? (
-                <p className="mt-2 text-[11px] text-muted">
+                <p className="mt-2 text-[0.6875rem] text-muted">
                   <FiTrendingUp aria-hidden className="inline" /> Pass rate
                   shown on hover —{" "}
                   <span className="font-mono">
