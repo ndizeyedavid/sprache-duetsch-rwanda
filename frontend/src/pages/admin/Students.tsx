@@ -1,23 +1,43 @@
 import { useMemo,useState } from 'react';
-import { FiChevronRight,FiDownload } from 'react-icons/fi';
-import { Link,useNavigate } from 'react-router-dom';
-import { AcademicModalAction } from '../../components/admin/AcademicModalAction';
+import { FiCompass,FiDollarSign,FiDownload } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import { BalanceFilter } from '../../components/admin/students/BalanceFilter';
+import { StudentsTable } from '../../components/admin/students/StudentsTable';
+import { SuspendStudentDialog } from '../../components/student-suspension/SuspendStudentDialog';
+import { balanceOf,matchesBalance,type BalanceFilter as BalanceFilterValue } from '../../components/payments/quick-pay/quick-pay';
+import { QuickPaymentDialog } from '../../components/payments/quick-pay/QuickPaymentDialog';
 import { StudentPlacement } from '../../components/admin/StudentPlacement';
 import { StudentRegisterSummary } from '../../components/admin/StudentRegisterSummary';
+import { WORKSPACE_CONTEXT } from '../../components/admin/workspace-context';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
-import { Panel,SectionHeader } from '../../components/ui/Panel';
+import { heroAction,heroGhost } from '../../components/hero/hero-actions';
+import { PageHero } from '../../components/hero/PageHero';
+import { Modal } from '../../components/ui/Modal';
+import { Panel } from '../../components/ui/Panel';
 import { SearchField } from '../../components/ui/SearchField';
-import { StatusBadge } from '../../components/ui/StatusBadge';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage,downloadFile } from '../../lib/api';
-import { isAcademic } from '../../lib/roles';
-import { humanize,listLevels,listStudents } from '../../lib/services';
+import { isAcademic,isAdmin,isFinance } from '../../lib/roles';
+import { listLevels,listStudents } from '../../lib/services';
+import type { StudentRow } from '../../lib/services/student-row';
 import { useSession } from '../../lib/session';
+
+/** Finance admins share this register, so their header links stay inside the finance module. */
+const FINANCE_LINKS = [{ label: 'Finance overview', to: '/admin/finance' }, { label: 'Transactions', to: '/admin/transactions' }];
 
 export function AdminStudents() {
  const { user } = useSession();
- const navigate = useNavigate();
  const canPlace = user ? isAcademic(user.role) : false;
+ const academic = user ? isAdmin(user.role) : false;
+ // Finance and super admins see balances and can record a payment from the row.
+ const money = user ? isFinance(user.role) : false;
+ const [balanceFilter, setBalanceFilter] = useState<BalanceFilterValue>('all');
+ const [paying, setPaying] = useState<StudentRow | null>(null);
+ const [paid, setPaid] = useState<string | null>(null);
+ const [suspending, setSuspending] = useState<StudentRow | null>(null);
+ const suspendDone = (message: string) => { setSuspending(null); setExportError(null); setPaid(message); students.refetch(); };
+ const context = WORKSPACE_CONTEXT.students;
+ const [placing, setPlacing] = useState(false);
  const students = useApi('admin-students', listStudents);
  const levels = useApi('levels-catalog', listLevels);
  const [query, setQuery] = useState('');
@@ -38,39 +58,48 @@ export function AdminStudents() {
 
  const rows = useMemo(() => {
  const needle = query.trim().toLowerCase();
- const list = students.data ?? [];
- if (!needle) return list;
- return list.filter((row) =>
- `${row.user.firstName} ${row.user.lastName} ${row.user.email} ${row.studentCode}`
- .toLowerCase()
- .includes(needle),
- );
- }, [students.data, query]);
+ const list = (students.data ?? []).filter((row) =>
+ (!needle || `${row.user.firstName} ${row.user.lastName} ${row.user.email} ${row.studentCode}`.toLowerCase().includes(needle))
+ && (!money || matchesBalance(balanceOf(row), balanceFilter)));
+ // Finance works the biggest balances first.
+ return money ? [...list].sort((a, b) => (balanceOf(b)?.balance ?? 0) - (balanceOf(a)?.balance ?? 0)) : list;
+ }, [students.data, query, money, balanceFilter]);
 
  return (
  <div className="space-y-5">
- <StudentRegisterSummary rows={students.data} />
- {canPlace && <AcademicModalAction label="Placement results" title="Placement results" wide>{() => <StudentPlacement students={students.data ?? []} levels={levels.data ?? []} onSaved={students.refetch} />}</AcademicModalAction>}
-
-
- <Panel>
- <SectionHeader title={`Students (${rows.length})`} />
- <div className="mb-3 flex items-center gap-2">
- <button
- type="button"
- disabled={exporting}
- onClick={handleExport}
- className="btn btn-sm gap-2 rounded-full border-line bg-base-200 disabled:opacity-60"
- >
- <FiDownload aria-hidden />
+ <PageHero
+ eyebrow={academic ? context.category : 'Student balances'}
+ icon={academic ? context.icon : FiDollarSign}
+ title="Students"
+ description={academic
+ ? 'Every learner in the register with their level, campus and status. Open a record for progress, attendance and certificates.'
+ : 'Every learner with what they still owe. Record a payment straight from the list, or open a record for charges and receipts.'}
+ art="learners"
+ scoped
+ meta={<StudentRegisterSummary rows={students.data} academic={academic} />}
+ actions={<>
+ <button type="button" disabled={exporting} onClick={handleExport} className={`${heroAction} disabled:border-primary-content disabled:bg-primary-content disabled:text-primary`}>
+ {exporting ? <span className="loading loading-spinner loading-xs" /> : <FiDownload aria-hidden />}
  Export CSV
  </button>
+ {canPlace ? (
+ <button type="button" onClick={() => setPlacing(true)} className={heroGhost}>
+ <FiCompass aria-hidden />
+ Placement results
+ </button>
+ ) : null}
+ {(academic ? context.links : FINANCE_LINKS).map((link) => (
+ <Link key={link.to} to={link.to} className={heroGhost}>{link.label}</Link>
+ ))}
+ </>}
+ />
  {exportError ? (
- <p role="alert" className="text-xs font-medium text-error">
+ <p role="alert" className="alert alert-error alert-soft text-xs">
  {exportError}
  </p>
  ) : null}
- </div>
+
+ <Panel>
  <label className="block">
  <span className="mb-1.5 block text-xs font-medium">Search students</span>
  <SearchField
@@ -80,6 +109,13 @@ export function AdminStudents() {
  placeholder="Search name, email or student ID…"
  />
  </label>
+ {money && students.data ? <div className="mt-3"><BalanceFilter rows={students.data} value={balanceFilter} onChange={setBalanceFilter} /></div> : null}
+ {students.data ? (
+ <p className="mt-2 text-xs text-muted">
+ {rows.length === students.data.length ? `${rows.length} students` : `${rows.length} of ${students.data.length} students`}
+ </p>
+ ) : null}
+ {paid ? <p role="status" className="alert alert-success alert-soft mt-3 text-xs">{paid}</p> : null}
  {students.loading ? (
  <LoadingBlock label="Loading students…" />
  ) : students.error || !students.data ? (
@@ -87,47 +123,19 @@ export function AdminStudents() {
  ) : rows.length === 0 ? (
  <EmptyBlock title="No students found" hint="Try a different search or register the first student." />
  ) : (
- <div className="mt-4 overflow-x-auto">
- <table className="table w-full text-xs">
- <thead>
- <tr className="text-muted">
- <th className="text-left">Student</th>
- <th className="text-left">Student ID</th>
- <th className="text-left">Level</th>
- <th className="text-left">Campus</th>
- <th className="text-left">Status</th>
- <th><span className="sr-only">Open</span></th>
- </tr>
- </thead>
- <tbody>
- {rows.map((row) => (
- <tr
- key={row.id}
- onClick={() => navigate(`/admin/students/${row.id}`)}
- className="cursor-pointer border-t border-line hover:bg-base-200"
- >
- <td className="py-3 pr-4">
- <Link to={`/admin/students/${row.id}`} onClick={(event) => event.stopPropagation()} className="font-semibold hover:underline">
- {row.user.firstName} {row.user.lastName}
- </Link>
- <p className="text-muted">{row.user.email}</p>
- </td>
- <td className="py-3 pr-4 font-medium">{row.studentCode}</td>
- <td className="py-3 pr-4">{row.currentLevel?.code ?? '—'}</td>
- <td className="py-3 pr-4">{row.campus?.name ?? '—'}</td>
- <td className="py-3">
- <StatusBadge status={humanize(row.status)} />
- </td>
- <td className="py-3 text-right text-muted">
- <FiChevronRight aria-hidden />
- </td>
- </tr>
- ))}
- </tbody>
- </table>
- </div>
+ <StudentsTable rows={rows} money={money} onPay={(row) => { setPaid(null); setPaying(row); }}
+ suspension={academic ? { onSuspend: (row) => { setPaid(null); setSuspending(row); }, onDone: suspendDone, onError: setExportError } : undefined} />
  )}
  </Panel>
+ {money ? <QuickPaymentDialog student={paying} onClose={() => setPaying(null)}
+ onDone={(message) => { setPaid(`${paying ? `${paying.user.firstName} ${paying.user.lastName}: ` : ''}${message}`); setPaying(null); students.refetch(); }} /> : null}
+ {academic ? <SuspendStudentDialog student={suspending ? { id: suspending.id, name: `${suspending.user.firstName} ${suspending.user.lastName}` } : null}
+ onClose={() => setSuspending(null)} onDone={suspendDone} /> : null}
+ {canPlace ? (
+ <Modal open={placing} onClose={() => setPlacing(false)} title="Placement results" boxClassName="max-w-3xl">
+ <StudentPlacement students={students.data ?? []} levels={levels.data ?? []} onSaved={students.refetch} />
+ </Modal>
+ ) : null}
  </div>
  );
 }
