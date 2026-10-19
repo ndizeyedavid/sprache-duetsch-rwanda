@@ -1,4 +1,5 @@
 import type { Prisma } from "../../generated/prisma/client.js";
+import { andWhere,paymentIntakeWhere } from "../../lib/intake-scope.js";
 import { dateFilter } from './date-filter.js';
 import type {
 ListPaymentsQuery
@@ -10,5 +11,5 @@ export const paymentListWhere = (query: ListPaymentsQuery): Prisma.PaymentWhereI
   if (query.methodId) where.methodId = query.methodId;
   if (query.txnType) where.txnType = query.txnType;
   where.paidAt = dateFilter(query.from, query.to);
-  return where;
+  return andWhere(where, query.intakeId && paymentIntakeWhere(query.intakeId));
 };
