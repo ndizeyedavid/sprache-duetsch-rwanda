@@ -39,7 +39,7 @@ export function PracticeEditor({ lessonId, type, activity, onClose, onSaved }: P
       {editable ? <details className="rounded-box border border-base-300 p-4"><summary className="cursor-pointer text-sm font-medium">Student preview <span className="text-xs font-normal text-muted">· try it, nothing is saved</span></summary>
         <div className="mt-4"><ActivityPreviewPane key={JSON.stringify(preview)} id={activity?.id ?? 'new'} type={backendType(draft.type)} config={preview} /></div></details> : null}
       {error ? <p role="alert" className="text-sm text-error">{error}</p> : null}
-      <div className="flex justify-end gap-2"><button type="button" className="btn btn-ghost" disabled={busy} onClick={close}>Cancel</button><button className="btn btn-neutral" disabled={busy}>{busy ? 'Saving…' : 'Save activity'}</button></div>
+      <div className="flex justify-end gap-2"><button type="button" className="btn btn-ghost" disabled={busy} onClick={close}>Cancel</button><button className="btn btn-primary" disabled={busy}>{busy ? 'Saving…' : 'Save activity'}</button></div>
     </form>
   </StudioDialog>;
 }
