@@ -31,6 +31,9 @@ export const placementSubmitSchema = z.object({
     .max(500),
 });
 
+export const placementQueueQuerySchema = z.object({ intakeId: z.string().min(1).optional() });
+
+export type PlacementQueueQuery = z.infer<typeof placementQueueQuerySchema>;
 export type ManualPlacementInput = z.infer<typeof manualPlacementSchema>;
 export type PlacementDecisionInput = z.infer<typeof placementDecisionSchema>;
 export type PlacementDraftInput = z.infer<typeof placementDraftSchema>;
