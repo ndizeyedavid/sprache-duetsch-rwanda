@@ -4,7 +4,7 @@ export const levels = [
     title: "Deutsch A1 — Anfänger",
     levelLabel: "Beginner",
     order: 1,
-    defaultFee: 45000,
+    defaultFee: 170000,
     summary:
       "Start from zero: alphabet, greetings, numbers, everyday phrases and your first 500 German words.",
     objectives: [
