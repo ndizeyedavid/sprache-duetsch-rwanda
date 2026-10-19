@@ -6,8 +6,8 @@ import { requestRegisterOtp } from '../../lib/auth-store';
 export type PendingRegistration = Omit<RegisterPayload, 'otp'>;
 
 /** Validates the sign-up form, then emails a verification code; the account is created on the next step. */
-export function createHandleSubmit(context: { password: string; shift: RegisterPayload['shift']; setError: import("react").Dispatch<import("react").SetStateAction<string | null>>; fullName: string; campusId: string; setPending: import("react").Dispatch<import("react").SetStateAction<boolean>>; email: string; phone: string; intakeId: string; intendedLevelId: string; onCodeSent: (payload: PendingRegistration, sent: RegisterOtpResult) => void }) {
-const { password, shift, setError, fullName, campusId, setPending, email, phone, intakeId, intendedLevelId, onCodeSent } = context;
+export function createHandleSubmit(context: { password: string; setError: import("react").Dispatch<import("react").SetStateAction<string | null>>; fullName: string; campusId: string; setPending: import("react").Dispatch<import("react").SetStateAction<boolean>>; email: string; phone: string; intakeId: string; intendedLevelId: string; onCodeSent: (payload: PendingRegistration, sent: RegisterOtpResult) => void }) {
+const { password, setError, fullName, campusId, setPending, email, phone, intakeId, intendedLevelId, onCodeSent } = context;
 async function handleSubmit(event: FormEvent) {
  event.preventDefault();
  setError(null);
@@ -30,7 +30,6 @@ async function handleSubmit(event: FormEvent) {
  phone: phone.trim() || undefined,
  password,
  campusId,
- shift,
  intakeId: intakeId || undefined,
  intendedLevelId: intendedLevelId || undefined,
  };
