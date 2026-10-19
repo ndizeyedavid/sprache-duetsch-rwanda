@@ -17,7 +17,7 @@ export function PlacementResultCard({ result, correct, total }: Props) {
     <section className="card learning-panel gap-4 p-5 sm:p-6" aria-labelledby={`placement-result-${result.id}`}>
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-[11px] font-medium uppercase tracking-wide text-muted">{SOURCE_LABEL[result.source]} · {formatDate(result.createdAt)}</p>
+          <p className="text-[0.6875rem] font-medium uppercase tracking-wide text-muted">{SOURCE_LABEL[result.source]} · {formatDate(result.createdAt)}</p>
           <h2 id={`placement-result-${result.id}`} className="mt-1 text-lg font-semibold">Your placement result</h2>
         </div>
         <span className={`badge gap-1 ${confirmed ? 'badge-success' : 'badge-warning'}`}>
@@ -33,7 +33,7 @@ export function PlacementResultCard({ result, correct, total }: Props) {
       <dl className="grid gap-2 sm:grid-cols-3">
         {rows.map((row) => (
           <div key={row.label} className="rounded-field bg-base-200 p-3">
-            <dt className="text-[10px] text-muted">{row.label}</dt>
+            <dt className="text-[0.625rem] text-muted">{row.label}</dt>
             <dd className="mt-1 text-sm font-semibold">{row.value}</dd>
           </div>
         ))}
