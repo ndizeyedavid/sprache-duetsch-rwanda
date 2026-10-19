@@ -1,7 +1,9 @@
 import { useEffect,useMemo,useState } from 'react';
-import { FiCalendar,FiDownload,FiSearch,FiX } from 'react-icons/fi';
-import { useSearchParams } from 'react-router-dom';
-import { AcademicSummary } from '../../components/admin/AcademicSummary';
+import { FiArrowUpRight,FiCalendar,FiDownload,FiSearch,FiX } from 'react-icons/fi';
+import { Link,useSearchParams } from 'react-router-dom';
+import { WORKSPACE_CONTEXT } from '../../components/admin/workspace-context';
+import { heroAction,heroGhost } from '../../components/hero/hero-actions';
+import { PageHero } from '../../components/hero/PageHero';
 import { LiveSessionPicker } from '../../components/admin/LiveSessionPicker';
 import { AttendanceRow } from '../../components/attendance/AttendanceRow';
 import { BulkBar } from '../../components/attendance/BulkBar';
@@ -14,6 +16,8 @@ import { apiErrorMessage,downloadFile } from '../../lib/api';
 import { getSession,getSessionRoster,isoDate,isoTime,listSessions,markSessionAttendance } from '../../lib/services';
 import { sessionStatusLabel,sessionTone,teacherName } from '../../lib/sessions-ui';
 import { TONE_CLASSES } from '../../lib/theme';
+
+const context = WORKSPACE_CONTEXT['live-class'];
 
 export function AdminLiveClass() {
  const [searchParams, setSearchParams] = useSearchParams();
@@ -81,12 +85,17 @@ export function AdminLiveClass() {
 
  return (
  <div className="space-y-4">
- {sessions.data && <AcademicSummary items={[
-   { label: 'Sessions', value: list.length, note: 'Loaded live class records' },
-   { label: 'Live now', value: list.filter(s => s.status === 'LIVE').length, note: 'Sessions marked live' },
-   { label: 'Upcoming', value: list.filter(s => ['SCHEDULED', 'RESCHEDULED'].includes(s.status) && new Date(s.endAt).getTime() >= Date.now()).length, note: 'Scheduled or rescheduled sessions' },
-   { label: 'Completed', value: list.filter(s => s.status === 'COMPLETED').length, note: 'Past sessions marked completed' },
- ]} />}
+ <PageHero eyebrow={context.category} icon={context.icon} title="Live classes" art="live" scoped
+   description="Open a session, join the meeting and take attendance for the class — all in one place."
+   meta={sessions.data ? <>
+     <span className="hero-chip hero-chip-solid">{list.filter(s => s.status === 'LIVE').length} live now</span>
+     <span className="hero-chip">{list.filter(s => ['SCHEDULED', 'RESCHEDULED'].includes(s.status) && new Date(s.endAt).getTime() >= Date.now()).length} upcoming</span>
+     <span className="hidden sm:contents">
+       <span className="hero-chip">{list.filter(s => s.status === 'COMPLETED').length} completed</span>
+       <span className="hero-chip">{list.length} sessions</span>
+     </span>
+   </> : null}
+   actions={context.links.map((link, index) => <Link key={link.to} to={link.to} className={index === 0 ? heroAction : heroGhost}>{link.label}{index === 0 ? <FiArrowUpRight aria-hidden /> : null}</Link>)} />
 
  <div className="grid gap-5 lg:grid-cols-12">
  <LiveSessionPicker sessions={sessions} selectedId={selectedId} onPick={pick} disabled={saving} />
@@ -101,7 +110,7 @@ export function AdminLiveClass() {
  <p className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted">
  {session ? <><FiCalendar aria-hidden />{isoDate(session.startAt)} · {isoTime(session.startAt)} – {isoTime(session.endAt)}</> : null}
  {session?.classGroup ? <span className="rounded-full bg-base-200 px-2 py-0.5 font-medium text-ink">{session.classGroup.name}</span> : null}
- {session ? <span className={`rounded-full px-2 py-0.5 font-medium ${TONE_CLASSES[sessionTone(session.status)].soft} ${TONE_CLASSES[sessionTone(session.status)].text}`}>{sessionStatusLabel(session.status)}</span> : null}
+ {session ? <span className={`rounded-full px-2 py-0.5 font-medium ${TONE_CLASSES[sessionTone(session.status)].soft} ${{ muted: 'text-base-100', navy: 'text-base-content' }[sessionTone(session.status) as string] ?? ''}`}>{sessionStatusLabel(session.status)}</span> : null}
  </p>
  {session?.teacher ? <p className="mt-1 text-xs text-muted">{teacherName(session.teacher)}</p> : null}
  </div>
