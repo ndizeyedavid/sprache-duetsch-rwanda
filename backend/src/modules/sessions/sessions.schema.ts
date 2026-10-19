@@ -113,6 +113,8 @@ export const updateAttendanceSchema = z
 export const attendanceSummaryQuerySchema = z.object({
   studentId: z.string().min(1).optional(),
   classGroupId: z.string().min(1).optional(),
+  /** Staff intake switcher; ignored for students. */
+  intakeId: z.string().min(1).optional(),
   from: z.coerce.date().optional(),
   to: z.coerce.date().optional(),
 });
@@ -131,3 +133,7 @@ export type CreateSessionMaterialInput = z.infer<typeof createSessionMaterialSch
 export type MarkAttendanceInput = z.infer<typeof markAttendanceSchema>;
 export type UpdateAttendanceInput = z.infer<typeof updateAttendanceSchema>;
 export type AttendanceSummaryQuery = z.infer<typeof attendanceSummaryQuerySchema>;
+
+/** DELETE may come without a body (Express 5 leaves req.body undefined then). */
+export const deleteSessionSchema = z.object({ reason: z.string().trim().max(500).optional() }).strict().optional();
+export type DeleteSessionInput = z.infer<typeof deleteSessionSchema>;
