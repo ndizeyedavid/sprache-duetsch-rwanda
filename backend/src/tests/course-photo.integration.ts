@@ -47,7 +47,7 @@ try {
     const response: Response = await request(app).post('/api/enrollments').set('Authorization', `Bearer ${academicToken}`).send({ studentId: student.id, levelId, intakeId });
     assert.equal(response.status, 201); assert.equal(payload(response).totalFee, undefined);
   }
-  const studentToken = signAccessToken(registered.user.id, registered.user.email, 'STUDENT');
+  const studentToken = registered.tokens.accessToken;
   await request(app).post('/api/enrollments/join').set('Authorization', `Bearer ${studentToken}`).send({ intakeId, levelId: levelIds[0], totalFee: 0 }).expect(400);
   await request(app).post('/api/enrollments/join').set('Authorization', `Bearer ${studentToken}`).send({ intakeId, levelId: levelIds[0] }).expect(409);
   const module = await prisma.module.create({ data: { levelId: levelIds[0], title: 'Paid fixture module', order: 0, isPublished: true } });
@@ -78,7 +78,7 @@ try {
   await request(app).post('/api/enrollments/join').set('Authorization', `Bearer ${studentToken}`).send({ intakeId: repeatIntakeId, levelId: levelIds[0] }).expect(201);
   await assert.rejects(assertLevelAccess(registered.user.id, levelIds[0]), /payment/);
   await request(app).get(`/api/content/my/lessons/${lesson.id}`).set('Authorization', `Bearer ${studentToken}`).expect(403);
-  const token = signAccessToken(registered.user.id, registered.user.email, 'STUDENT');
+  const token = registered.tokens.accessToken;
   await request(app).post('/api/uploads').set('Authorization', `Bearer ${token}`).attach('file', png, 'photo.png').expect(403);
   await request(app).post('/api/uploads/avatar').set('Authorization', `Bearer ${token}`).attach('file', Buffer.from('<svg/>'), { filename: 'fake.png', contentType: 'image/png' }).expect(400);
   await request(app).post('/api/uploads/avatar').set('Authorization', `Bearer ${token}`).attach('file', Buffer.alloc(5 * 1024 * 1024 + 1), 'large.png').expect(400);
