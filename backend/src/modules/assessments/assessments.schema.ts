@@ -123,6 +123,7 @@ export const listAttemptQuerySchema = z.object({
   studentId: z.string().min(1).optional(),
   status: attemptStatusSchema.optional(),
   classGroupId: z.string().min(1).optional(),
+  intakeId: z.string().min(1).optional(),
   ...paginationQuery,
 });
 
@@ -154,6 +155,7 @@ export const assessmentIdSchema = idParam;
 
 export const skillProfileQuerySchema = z.object({
   studentId: z.string().min(1),
+  intakeId: z.string().min(1).optional(),
 });
 
 export type CreateQuestionInput = z.infer<typeof createQuestionSchema>;
