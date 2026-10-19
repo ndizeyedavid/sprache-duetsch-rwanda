@@ -15,7 +15,7 @@ export function RecordTimeline({ student }: { student: StudentDetail }) {
       <ol className="mt-4 space-y-4 border-l-2 border-line pl-5">
         {events.map((event) => (
           <li key={event.key} className="relative">
-            <span aria-hidden className={`absolute -left-[27px] top-1 size-3 rounded-full border-2 border-base-100 ${TONE_CLASSES[event.tone].bg}`} />
+            <span aria-hidden className={`absolute -left-[calc(1.625rem+1px)] top-1 size-3 rounded-full border-2 border-base-100 ${TONE_CLASSES[event.tone].bg}`} />
             <div className="flex flex-wrap items-baseline justify-between gap-x-3">
               <p className="text-sm font-medium">{event.title}</p>
               <time dateTime={event.at} className="text-xs text-muted tabular-nums">{shortDate(event.at)}</time>
