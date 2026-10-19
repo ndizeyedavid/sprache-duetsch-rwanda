@@ -84,7 +84,7 @@ export function ProfilePane() {
  disabled
  className="input w-full rounded-box border-line bg-base-200 text-sm"
  />
- <span className="mt-1 block text-[11px] text-muted">
+ <span className="mt-1 block text-[0.6875rem] text-muted">
  Email cannot be changed — contact an admin.
  </span>
  </label>
