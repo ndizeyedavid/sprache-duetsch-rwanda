@@ -19,7 +19,7 @@ try {
   const level = await prisma.level.create({ data: { code: stamp, title: stamp, levelLabel: 'A1' } }); levelId = level.id;
   const intake = await prisma.intake.create({ data: { code: stamp, name: stamp, levels: { connect: { id: level.id } }, startDate: new Date(), endDate: new Date(Date.now() + 86400000) } }); intakeId = intake.id;
   for (let i = 0; i < 2; i++) {
-    const user = await prisma.user.create({ data: { email: `${stamp}-${i}@test.local`, firstName: 'Fixture', lastName: 'Student', role: 'STUDENT', status: 'ACTIVE', passwordHash: 'unused' } }); users.push(user.id);
+    const user = await prisma.user.create({ data: { email: `${stamp}-${i}@test.local`, firstName: 'Fixture', lastName: 'Student', role: 'STUDENT', status: 'ACTIVE', passwordHash: 'unused', activeSessionId: stamp } }); users.push(user.id);
     const student = await prisma.student.create({ data: { userId: user.id, studentCode: `${stamp}-${i}`, campusId: campus.id, currentLevelId: level.id, status: 'ACTIVE' } }); students.push(student.id);
   }
   const enrollment = await prisma.enrollment.create({ data: { studentId: students[0], levelId: level.id, intakeId: intake.id, campusId: campus.id, totalFee: 0 } });
@@ -38,7 +38,7 @@ try {
   await prisma.module.update({ where: { id: module.id }, data: { isPublished: true } });
   await writeFile(path.join(UPLOAD_DIR, name), '%PDF-1.4\nfixture');
   await prisma.lessonMaterial.create({ data: { lessonId: lesson.id, title: 'Fixture PDF', type: 'PDF', url: `/api/uploads/${name}`, mimeType: 'application/pdf' } });
-  const headers = users.map(id => `Bearer ${signAccessToken(id, 'fixture@test.local', 'STUDENT')}`);
+  const headers = users.map(id => `Bearer ${signAccessToken(id, 'fixture@test.local', 'STUDENT', stamp)}`);
   await request(app).get(`/api/uploads/${name}`).expect(401);
   await request(app).get(`/api/uploads/${name}`).set('Authorization', headers[0]).expect(200);
   await request(app).get(`/api/uploads/${name}`).set('Authorization', headers[1]).expect(403);
