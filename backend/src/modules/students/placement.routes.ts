@@ -10,6 +10,7 @@ import {
 manualPlacementSchema,
 placementDecisionSchema,
 placementDraftSchema,
+placementQueueQuerySchema,
 placementResultParamsSchema,
 placementSubmitSchema,
 } from "./placement.schema.js";
@@ -36,7 +37,7 @@ placementRouter.post(
 );
 
 // Academic admin + super admin: review queue, history, manual entry and decisions.
-placementRouter.get("/placements/queue", academicAdmin, asyncHandler(controller.queue));
+placementRouter.get("/placements/queue", academicAdmin, validate({ query: placementQueueQuerySchema }), asyncHandler(controller.queue));
 placementRouter.get("/:id/placements", academicAdmin, validate({ params: idParam }), asyncHandler(controller.history));
 placementRouter.post(
   "/:id/placement",
