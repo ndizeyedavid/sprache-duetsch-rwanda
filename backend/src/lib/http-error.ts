@@ -25,6 +25,10 @@ export const badRequest = (message: string, details?: unknown): AppError =>
 export const unauthorized = (message = "Authentication required"): AppError =>
   new AppError(401, message, { code: "UNAUTHORIZED" });
 
+/** 401 with a stable code so clients can explain a forced sign-out rather than retry a refresh. */
+export const sessionReplaced = (): AppError =>
+  new AppError(401, "This account was signed in on another device. Student accounts can only be signed in on one device at a time.", { code: "SESSION_REPLACED" });
+
 export const forbidden = (message = "Insufficient permissions"): AppError =>
   new AppError(403, message, { code: "FORBIDDEN" });
 
