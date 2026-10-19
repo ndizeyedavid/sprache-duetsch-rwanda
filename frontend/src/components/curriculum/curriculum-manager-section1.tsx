@@ -68,7 +68,7 @@ return (<div className="divide-y divide-line">
   </span>
   <span className="min-w-0 grow">
   <span className="block truncate text-sm font-medium leading-tight">{item.title}</span>
-  <span className="block truncate text-[11px] text-muted">
+  <span className="block truncate text-[0.6875rem] text-muted">
   {humanize(item.contentType)} · Order {item.order}
   {item.estimatedMinutes ? ` · ${item.estimatedMinutes} min` : ''}
   </span>
@@ -146,7 +146,7 @@ return (<div className="divide-y divide-line">
  className="flex flex-wrap items-end gap-2"
  >
  <label className="block grow">
- <span className="mb-1 block text-[11px] font-medium">Lesson title</span>
+ <span className="mb-1 block text-[0.6875rem] font-medium">Lesson title</span>
  <input
  required
  value={lessonForms[mod.id] ?? ''}
@@ -156,7 +156,7 @@ return (<div className="divide-y divide-line">
  />
  </label>
  <label className="block">
- <span className="mb-1 block text-[11px] font-medium">Content type</span>
+ <span className="mb-1 block text-[0.6875rem] font-medium">Content type</span>
  <select
  value={lessonTypeForms[mod.id] ?? 'TEXT'}
  onChange={(e) => { const v = e.currentTarget.value; setLessonTypeForms((prev) => ({ ...prev, [mod.id]: v })); }}
