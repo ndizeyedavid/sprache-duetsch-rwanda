@@ -13,7 +13,7 @@ export function HomeworkFeedback({ assignment: a, submission: s, feedbackFiles }
   const penalty = appliedPenalty(s);
   return (
     <section className={`card border p-5 sm:p-7 ${returned ? 'border-warning bg-warning text-warning-content' : 'border-success bg-success text-success-content'}`}>
-      <p className="text-[10px] font-semibold uppercase tracking-wider">{returned ? 'A chance to improve' : 'Your teacher’s feedback'}</p>
+      <p className="text-[0.625rem] font-semibold uppercase tracking-wider">{returned ? 'A chance to improve' : 'Your teacher’s feedback'}</p>
       <div className="mt-2 flex justify-between gap-4"><h2 className="text-base font-semibold">{statusLabels[s.status]}</h2>{s.score !== null ? <span className="font-bold">{s.score}/{a.maxPoints}</span> : null}</div>
       {penalty ? <p className="mt-2 text-xs">Your teacher scored this {penalty.rawScore}/{a.maxPoints}. It was handed in late, so {penalty.percent}% was taken off.</p> : null}
       {s.feedback ? <p className="mt-3 whitespace-pre-wrap text-sm leading-7">{s.feedback}</p> : null}
