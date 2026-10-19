@@ -89,11 +89,11 @@ export function ClassGroupCard({
 
  <div className="flex grow flex-col p-4">
  <div className="flex items-start justify-between gap-2">
- <span className="inline-flex rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-semibold text-ink">
+ <span className="inline-flex rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem] font-semibold text-ink">
  {levelCode}
  </span>
  {unreadCount > 0 ? (
- <span className="flex size-5 items-center justify-center rounded-full bg-brand text-[11px] font-bold text-white" aria-label={`${unreadCount} ungraded`}>
+ <span className="flex size-5 items-center justify-center rounded-full bg-brand text-[0.6875rem] font-bold text-white" aria-label={`${unreadCount} ungraded`}>
  {unreadCount > 9 ? '9+' : unreadCount}
  </span>
  ) : null}
@@ -126,7 +126,7 @@ export function ClassGroupCard({
  {intakeName} · {studentCount} student{studentCount === 1 ? '' : 's'}
  </p>
 
- <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px]">
+ <div className="mt-3 flex flex-wrap items-center gap-2 text-[0.6875rem]">
  <label className="flex items-center gap-1 text-muted">
  Color
  <input type="color" value={activeColor} onChange={(event) => handleColorChange(event.currentTarget.value)} className="h-5 w-5 cursor-pointer rounded border-0 bg-transparent p-0" aria-label="Card color" />
