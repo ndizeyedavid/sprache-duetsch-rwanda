@@ -12,7 +12,7 @@ export function QuestionEditor({ value: q, index, locked, onChange }: Props) {
   const changeType = (type: string) => onChange({ ...newQuestion(type), id: q.id, prompt: q.prompt, difficulty: q.difficulty, audioUrl: q.audioUrl, imageUrl: q.imageUrl });
   return (
     <div className="space-y-4 border-t border-base-300 p-4">
-      <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_96px]">
+      <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_6rem]">
         <label className="block"><span className="mb-1.5 block text-xs font-medium">Type</span>
           <select className="select select-sm w-full" value={q.type} disabled={locked} onChange={e => changeType(e.target.value)}>
             {QUESTION_TYPES.map(([type, meta]) => <option key={type} value={type}>{meta.label}</option>)}
