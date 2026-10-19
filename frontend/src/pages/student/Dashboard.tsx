@@ -20,8 +20,8 @@ export function Dashboard() {
   const courses = useApi('my-courses', getMyCourses);
   const skills = useApi('my-skills', getMySkills);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  if (dashboard.loading) return <LoadingBlock label="Loading your dashboard…" />;
-  if (dashboard.error || !dashboard.data) return <ErrorBlock message={dashboard.error ?? 'Could not load dashboard.'} onRetry={dashboard.refetch} />;
+  if (dashboard.loading) return <div className="space-y-4"><LearningJourneyHero firstName={user?.firstName} /><LoadingBlock label="Loading your dashboard…" /></div>;
+  if (dashboard.error || !dashboard.data) return <div className="space-y-4"><LearningJourneyHero firstName={user?.firstName} /><ErrorBlock message={dashboard.error ?? 'Could not load dashboard.'} onRetry={dashboard.refetch} /></div>;
   const data = dashboard.data;
   const courseList = courses.data ?? [];
   const selected = courseList.find((course) => course.level.id === selectedId)
@@ -50,7 +50,7 @@ export function Dashboard() {
         </div>
         <DashboardAttendanceCard attendance={data.attendance} />
         <DashboardClassCard session={data.upcomingClass} />
-          {data.nextExam ? <Link to="/assignments" className="card learning-panel flex-row items-center gap-3 p-4 lg:col-span-3"><span className="grid size-9 shrink-0 place-items-center rounded-xl bg-accent text-accent-content"><FiAward aria-hidden /></span><div className="min-w-0 flex-1"><p className="text-[10px] text-muted">Next assessment</p><p className="mt-1 text-xs font-semibold">{data.nextExam.title}</p></div><FiArrowUpRight aria-hidden /></Link> : null}
+          {data.nextExam ? <Link to="/assignments" className="card learning-panel flex-row items-center gap-3 p-4 lg:col-span-3"><span className="grid size-9 shrink-0 place-items-center rounded-xl bg-accent text-accent-content"><FiAward aria-hidden /></span><div className="min-w-0 flex-1"><p className="text-[0.625rem] text-muted">Next assessment</p><p className="mt-1 text-xs font-semibold">{data.nextExam.title}</p></div><FiArrowUpRight aria-hidden /></Link> : null}
       </div>
     </div>
   );
