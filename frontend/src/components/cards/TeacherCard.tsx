@@ -30,18 +30,18 @@ export function TeacherCard({ teacher, className = '' }: TeacherCardProps) {
  </p>
  <div className="mt-3 flex flex-wrap justify-center gap-2">
  {teacher.tags.map((tag) => (
- <span key={tag} className="rounded-full bg-base-200 px-3 py-1 text-[11px] font-medium text-muted">
+ <span key={tag} className="rounded-full bg-base-200 px-3 py-1 text-[0.6875rem] font-medium text-muted">
  {tag}
  </span>
  ))}
  </div>
  <div className="mt-4 grid grid-cols-2 gap-3">
  <div className="rounded-field bg-base-200 px-3 py-2">
- <p className="text-[11px] text-muted">Achievement</p>
+ <p className="text-[0.6875rem] text-muted">Achievement</p>
  <p className="text-sm font-semibold text-ink">{teacher.achievements}</p>
  </div>
  <div className="rounded-field bg-base-200 px-3 py-2">
- <p className="text-[11px] text-muted">Certificate</p>
+ <p className="text-[0.6875rem] text-muted">Certificate</p>
  <p className="text-sm font-semibold text-ink">{teacher.certificates}</p>
  </div>
  </div>
