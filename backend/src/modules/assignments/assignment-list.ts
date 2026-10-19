@@ -2,8 +2,10 @@ import { prisma } from '../../lib/prisma.js';
 import type { AuthUser } from '../../types/auth.js';
 import { assignmentInclude,staffScope } from './assignment-access.js';
 
-export async function listStaffAssignments(actor: AuthUser) {
-  const rows = await prisma.assignment.findMany({ where: staffScope(actor), include: { ...assignmentInclude,
+export async function listStaffAssignments(actor: AuthUser, intakeId?: string) {
+  const scope = staffScope(actor);
+  const where = intakeId ? { AND: [scope, { classGroup: { intakeId } }] } : scope;
+  const rows = await prisma.assignment.findMany({ where, include: { ...assignmentInclude,
     submissions: { select: { status: true, studentId: true, revision: true, score: true } } }, orderBy: { updatedAt: 'desc' } });
   const enrollments = await prisma.enrollment.findMany({ where: { classGroupId: { in: rows.map(a => a.classGroupId) }, status: 'ACTIVE' }, select: { classGroupId: true, studentId: true } });
   return rows.map(a => {
