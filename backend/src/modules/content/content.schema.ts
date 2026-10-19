@@ -121,6 +121,7 @@ export const listActivitySubmissionsQuerySchema = z.object({
   activityId: z.string().min(1).optional(),
   studentId: z.string().min(1).optional(),
   status: z.enum(["SUBMITTED", "GRADED"]).optional(),
+  intakeId: z.string().min(1).optional(),
   ...paginationQuery,
 });
 
