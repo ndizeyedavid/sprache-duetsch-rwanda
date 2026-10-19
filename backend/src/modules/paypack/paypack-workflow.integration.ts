@@ -48,7 +48,7 @@ try {
   campusId = (await prisma.campus.create({ data: { code: stamp, name: stamp } })).id;
   for (let i = 0; i < 2; i++) {
     const user = await prisma.user.create({ data: { email: `${stamp}-${i}@test.local`, firstName: "Paypack", lastName: "Fixture",
-      passwordHash: "unused", role: "STUDENT", status: "ACTIVE" } }); users.push(user.id);
+      passwordHash: "unused", role: "STUDENT", status: "ACTIVE", activeSessionId: stamp } }); users.push(user.id);
     const student = await prisma.student.create({ data: { userId: user.id, campusId, studentCode: `${stamp}-${i}`, status: "ACTIVE" } }); students.push(student.id);
     await prisma.charge.create({ data: { studentId: student.id, amount: 2000, description: "Paypack fixture" } });
   }
@@ -81,7 +81,7 @@ try {
   assert.equal((await prisma.studentFinance.findUniqueOrThrow({ where: { studentId: students[0] } })).balance.toString(), "1900");
   const app = createApp();
   await request(app).get("/api/payments/paypack").set("Authorization", `Bearer ${signAccessToken(academic.id, academic.email, academic.role)}`).expect(403);
-  await request(app).get("/api/payments/paypack").set("Authorization", `Bearer ${signAccessToken(users[0], `${stamp}-0@test.local`, "STUDENT")}`).expect(403);
+  await request(app).get("/api/payments/paypack").set("Authorization", `Bearer ${signAccessToken(users[0], `${stamp}-0@test.local`, "STUDENT", stamp)}`).expect(403);
   await request(app).get("/api/payments/paypack").set("Authorization", `Bearer ${signAccessToken(finance.id, finance.email, finance.role)}`).expect(200);
   await request(app).post("/api/payments/paypack/checkout").set("Authorization", `Bearer ${signAccessToken(finance.id, finance.email, finance.role)}`).send(input).expect(403);
   await request(app).post(`/api/payments/paypack/${checkout.id}/close`).set("Authorization", `Bearer ${signAccessToken(finance.id, finance.email, finance.role)}`)
@@ -92,7 +92,7 @@ try {
   const signature = createHmac("sha256", env.PAYPACK_WEBHOOK_SECRET!).update(body).digest("base64");
   await request(app).post("/api/payments/paypack/webhook").set("Content-Type", "application/json")
     .set("x-paypack-signature", signature).send(body).expect(200);
-  await request(app).get(`/api/payments/paypack/${checkout.id}`).set("Authorization", `Bearer ${signAccessToken(users[1], `${stamp}-1@test.local`, "STUDENT")}`).expect(404);
+  await request(app).get(`/api/payments/paypack/${checkout.id}`).set("Authorization", `Bearer ${signAccessToken(users[1], `${stamp}-1@test.local`, "STUDENT", stamp)}`).expect(404);
   outcome = "failed";
   const failed = await startCheckout(users[0], { ...input, requestKey: randomUUID() }); checkoutIds.push(failed.id);
   await acceptWebhook(event(failed.providerRef!));
