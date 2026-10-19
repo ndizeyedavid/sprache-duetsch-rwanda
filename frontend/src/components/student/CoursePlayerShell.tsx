@@ -25,23 +25,23 @@ export function CoursePlayerShell({ course, slug, activeLessonId, header, childr
     });
   }
   return (
-    <div className="flex min-h-[70vh] flex-col gap-4 lg:flex-row">
+    <div className="flex min-h-[70vh] min-w-0 flex-col gap-3 xl:flex-row roomy:gap-4">
       {/* Desktop sidebar */}
-      <aside className="hidden w-[280px] shrink-0 lg:block">
-        <div className="sticky top-[68px] max-h-[calc(100vh-76px)] overflow-y-auto pr-1 scrollbar-slim">
+      <aside className="hidden w-60 shrink-0 xl:block roomy:w-[17.5rem]">
+        <div className="sticky top-24 max-h-[calc(100dvh-6.75rem)] overflow-y-auto pr-1 scrollbar-slim">
           <CourseSidebar course={course} slug={slug} activeLessonId={activeLessonId} collapsed={collapsed} onToggle={toggle} onSelect={onSelect} />
         </div>
       </aside>
       {/* Mobile drawer toggle */}
-      <div className="flex items-center gap-2 lg:hidden">
-        <button type="button" aria-expanded={mobileOpen} aria-controls="mobile-course-guide" onClick={() => setMobileOpen((v) => !v)} className="btn btn-sm gap-2 rounded-full border-line bg-base-100">
+      <div className="flex min-w-0 items-center gap-2 xl:hidden">
+        <button type="button" aria-expanded={mobileOpen} aria-controls="mobile-course-guide" onClick={() => setMobileOpen((v) => !v)} className="btn btn-sm shrink-0 gap-2 rounded-full border-line bg-base-100">
           {mobileOpen ? <FiX aria-hidden /> : <FiMenu aria-hidden />} {mobileOpen ? 'Hide guide' : 'Course guide'}
         </button>
         <span className="truncate text-xs text-muted">{course.level.code} · {course.level.title}</span>
       </div>
       {mobileOpen ? (
-        <div id="mobile-course-guide" className="lg:hidden">
-          <CourseSidebar course={course} slug={slug} activeLessonId={activeLessonId} collapsed={collapsed} onToggle={toggle} onSelect={onSelect} />
+        <div id="mobile-course-guide" className="max-h-[60dvh] overflow-y-auto scrollbar-slim xl:hidden">
+          <CourseSidebar course={course} slug={slug} activeLessonId={activeLessonId} collapsed={collapsed} onToggle={toggle} onSelect={onSelect ? (id) => { onSelect(id); setMobileOpen(false); } : undefined} />
         </div>
       ) : null}
       <div className="min-w-0 flex-1">
