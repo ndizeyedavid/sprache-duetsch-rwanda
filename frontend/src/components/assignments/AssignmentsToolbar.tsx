@@ -14,7 +14,7 @@ export function AssignmentsToolbar({ tab, onTab, counts, search, onSearch, cours
     <div className="space-y-4">
       <div className="flex flex-wrap gap-2" aria-label="Assignment categories">
         {TABS.map((item) => <button key={item} type="button" aria-pressed={tab === item} onClick={() => onTab(item)} className={`btn btn-sm gap-2 rounded-full ${tab === item ? 'btn-neutral' : 'border-base-300 bg-base-100'}`}>
-          {item === 'Done' ? 'Submitted' : item}<span className={`grid min-w-5 place-items-center rounded-full px-1.5 text-[10px] ${tab === item ? 'bg-neutral-content' : 'bg-base-200'}`}>{counts[item] ?? 0}</span>
+          {item === 'Done' ? 'Submitted' : item}<span className={`grid min-w-5 place-items-center rounded-full px-1.5 text-[0.625rem] ${tab === item ? 'bg-neutral-content' : 'bg-base-200'}`}>{counts[item] ?? 0}</span>
         </button>)}
       </div>
       <div className="flex flex-wrap gap-2">
