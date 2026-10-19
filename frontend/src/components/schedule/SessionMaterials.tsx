@@ -19,7 +19,7 @@ export function SessionMaterials({id,materials,manage=false,onSaved}:{id:string;
     <h3 className="text-sm font-semibold">Class materials</h3>
     {materials.length ? materials.map(m => <div key={m.id} className="rounded-box bg-base-100 p-3">
       <div className="flex items-start justify-between gap-2">
-        <div><p className="text-[10px] text-muted">{m.type}</p>
+        <div><p className="text-[0.625rem] text-muted">{m.type}</p>
           {m.url ? <a href={m.url} target="_blank" rel="noreferrer" className="mt-1 inline-flex items-center gap-2 text-sm font-semibold text-secondary">{m.title}<FiArrowUpRight /></a> : <p className="text-sm font-semibold">{m.title}</p>}
         </div>
         {manage ? <button type="button" disabled={busy} aria-label={`Remove ${m.title}`} className="btn btn-ghost btn-xs btn-circle" onClick={()=>void remove(m.id)}><FiTrash2 /></button> : null}
