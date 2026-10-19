@@ -49,8 +49,10 @@ export const updateChargeSchema = z.object({
   dueDate: z.coerce.date().optional(),
 });
 export const deleteChargeSchema = z.object({ reason: reasonSchema });
+const intakeIdQuery = z.string().min(1).optional();
 export const listChargesQuerySchema = z.object({
   studentId: z.string().min(1).optional(),
+  intakeId: intakeIdQuery,
   enrollmentId: z.string().min(1).optional(),
   type: chargeTypeEnum.optional(),
   from: z.coerce.date().optional(),
@@ -68,6 +70,7 @@ export const createDiscountSchema = z.object({
 });
 export const listDiscountsQuerySchema = z.object({
   studentId: z.string().min(1).optional(),
+  intakeId: intakeIdQuery,
   status: discountStatusEnum.optional(),
   ...paginationQuery,
 });
@@ -95,6 +98,7 @@ export const updatePaymentSchema = z.object({
 export const deletePaymentSchema = z.object({ reason: reasonSchema });
 export const listPaymentsQuerySchema = z.object({
   studentId: z.string().min(1).optional(),
+  intakeId: intakeIdQuery,
   enrollmentId: z.string().min(1).optional(),
   methodId: z.string().min(1).optional(),
   txnType: paymentTxnTypeEnum.optional(),
@@ -113,6 +117,7 @@ export const paymentIdSchema = idParam;
 // --- Receipts ---
 export const listReceiptsQuerySchema = z.object({
   studentId: z.string().min(1).optional(),
+  intakeId: intakeIdQuery,
   from: z.coerce.date().optional(),
   to: z.coerce.date().optional(),
   ...paginationQuery,
