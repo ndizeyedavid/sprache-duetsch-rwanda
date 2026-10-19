@@ -5,14 +5,16 @@ import { useApi } from "../../hooks/useApi";
 import type { LevelItem } from "../../lib/services";
 import { createLevel,listLevelModules,updateLevel } from "../../lib/services";
 import { ErrorBlock,LoadingBlock } from "../common/PageState";
+import { heroAction,heroGhost } from "../hero/hero-actions";
 import { LevelDeleteDialog } from "../curriculum/LevelDeleteDialog";
 import { LevelForm } from "../curriculum/LevelForm";
 import { Modal } from "../ui/Modal";
 
-type Props = { levels: LevelItem[]; onChanged: () => void };
-export function AcademicCourseActions({ levels, onChanged }: Props) {
+type Props = { levels: LevelItem[]; onChanged: () => void; /** Catalogue view: only "New level" (edit/delete live in each course's studio). */ createOnly?: boolean };
+/** Level admin actions (create, edit, delete) as white pills for the Course studio hero, plus their dialogs. */
+export function AcademicCourseActions({ levels, onChanged, createOnly = false }: Props) {
   const [params, setParams] = useSearchParams();
-  const level =
+  const level = createOnly ? undefined :
     levels.find(
       (l) => l.id === params.get("level") || l.code === params.get("level"),
     ) ?? levels[0];
@@ -22,7 +24,7 @@ export function AcademicCourseActions({ levels, onChanged }: Props) {
   const [success, setSuccess] = useState<string | null>(null);
   const modules = useApi(
     `delete-level-lessons-${level?.id ?? "none"}`,
-    () => listLevelModules(level.id),
+    () => listLevelModules(level?.id ?? ""),
     dialog === "delete" && Boolean(level),
   );
   function done(message: string) {
@@ -31,39 +33,30 @@ export function AcademicCourseActions({ levels, onChanged }: Props) {
     onChanged();
   }
   return (
-    <div className="space-y-3">
-      <div className="flex flex-wrap gap-2">
-        <button
-          className="btn btn-sm rounded-full"
-          onClick={() => setDialog("create")}
-        >
-          <FiPlus aria-hidden />
-          New level
-        </button>
-        {level && (
-          <>
-            <button
-              className="btn btn-sm rounded-full"
-              onClick={() => setDialog("edit")}
-            >
-              <FiEdit2 aria-hidden />
-              Edit {level.code}
-            </button>
-            <button
-              className="btn btn-ghost btn-sm rounded-full text-error"
-              onClick={() => setDialog("delete")}
-            >
-              <FiTrash2 aria-hidden />
-              Delete level
-            </button>
-          </>
-        )}
-      </div>
-      {success && (
-        <p role="status" className="text-xs text-muted">
-          {success}
-        </p>
+    <>
+      <button type="button" className={heroAction} onClick={() => setDialog("create")}>
+        <FiPlus aria-hidden />
+        New level
+      </button>
+      {level && (
+        <>
+          <button type="button" className={heroGhost} onClick={() => setDialog("edit")}>
+            <FiEdit2 aria-hidden />
+            Edit {level.code}
+          </button>
+          <button type="button" className={heroGhost} onClick={() => setDialog("delete")}>
+            <FiTrash2 aria-hidden />
+            Delete level
+          </button>
+        </>
       )}
+      {success && (
+        <span role="status" className="hero-chip hero-chip-solid">
+          {success}
+        </span>
+      )}
+      {/* Dialogs inherit text colour; reset it so they read normally when mounted inside the red hero. */}
+      <div className="contents text-base-content">
       <Modal
         open={dialog === "create"}
         onClose={() => setDialog(null)}
@@ -118,6 +111,7 @@ export function AcademicCourseActions({ levels, onChanged }: Props) {
           </Modal>
         </>
       )}
-    </div>
+      </div>
+    </>
   );
 }
