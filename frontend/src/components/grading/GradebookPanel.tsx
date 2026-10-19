@@ -43,7 +43,7 @@ export function GradebookPanel({ loading, error, onRetry, students, assessments,
  <tr key={row.student.id} className="border-t border-line hover:bg-base-200">
  <td className="sticky left-0 z-10 bg-base-100 py-2 pr-2 font-medium">
  <span className="block truncate">{row.student.user.firstName} {row.student.user.lastName}</span>
- <span className="block font-mono text-[11px] text-muted">{row.student.studentCode}</span>
+ <span className="block font-mono text-[0.6875rem] text-muted">{row.student.studentCode}</span>
  </td>
  {assessments.map((a) => {
  const att = map.get(`${row.student.studentCode}-${a.id}`);
@@ -51,7 +51,7 @@ export function GradebookPanel({ loading, error, onRetry, students, assessments,
  const isGraded = att.status === 'GRADED';
  return (
  <td key={a.id} className="text-center">
- <button type="button" onClick={() => onJump(att.id, att.status)} className={`rounded-full px-2.5 py-1 text-[11px] font-semibold transition ${isGraded ? 'bg-brand text-primary-content text-[#B30A00] hover:bg-brand hover:text-white' : 'bg-sun text-warning-content text-[#8A6800] hover:bg-sun hover:text-white'}`}>
+ <button type="button" onClick={() => onJump(att.id, att.status)} className={`rounded-full px-2.5 py-1 text-[0.6875rem] font-semibold transition ${isGraded ? 'bg-brand text-primary-content text-[#B30A00] hover:bg-brand hover:text-white' : 'bg-sun text-warning-content text-[#8A6800] hover:bg-sun hover:text-white'}`}>
  {att.score != null ? String(att.score) : humanize(att.status)}
  </button>
  </td>
@@ -61,7 +61,7 @@ export function GradebookPanel({ loading, error, onRetry, students, assessments,
  ))}
  </tbody>
  </table>
- <p className="mt-2 text-[11px] text-muted">Click a score to jump to SpeedGrader for that submission.</p>
+ <p className="mt-2 text-[0.6875rem] text-muted">Click a score to jump to SpeedGrader for that submission.</p>
  </div>
  );
 }
