@@ -1,5 +1,6 @@
 import type { Prisma } from "../../generated/prisma/client.js";
 import { refreshFinanceProfiles } from "../../lib/finance.js";
+import { andWhere,studentIntakeWhere } from "../../lib/intake-scope.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import type {
@@ -13,7 +14,7 @@ export const listOutstanding = async (query: OutstandingQuery) => {
   const studentWhere: Prisma.StudentWhereInput = {};
   if (query.campusId) studentWhere.campusId = query.campusId;
   if (query.levelId) studentWhere.currentLevelId = query.levelId;
-  if (query.intakeId) studentWhere.intakeId = query.intakeId;
+  andWhere(studentWhere, query.intakeId && studentIntakeWhere(query.intakeId));
 
   const where: Prisma.StudentFinanceWhereInput = {
     balance: { gt: 0 },
