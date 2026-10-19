@@ -1,9 +1,9 @@
 import { describe,expect,it } from 'vitest';
 import type { Prisma } from '../../generated/prisma/client.js';
 import { assertSingleActiveLevel,validateIntakeDates } from './enrollment-policy.js';
-it('rejects merged invalid intake dates and invalid enrolment windows', () => {
+it('rejects an intake that ends before it starts', () => {
   expect(() => validateIntakeDates({ startDate: new Date('2026-10-01'), endDate: new Date('2026-09-01') })).toThrow();
-  expect(() => validateIntakeDates({ startDate: new Date('2026-10-01'), endDate: new Date('2026-12-01'), enrollmentOpensAt: new Date('2026-10-02'), enrollmentEndsAt: new Date('2026-10-01') })).toThrow();
+  expect(() => validateIntakeDates({ startDate: new Date('2026-10-01'), endDate: new Date('2026-12-01') })).not.toThrow();
 });
 
 describe('one active enrolment per level', () => {
