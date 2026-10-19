@@ -8,7 +8,7 @@ export function TrueFalseEditor({ config, onChange }: EditorProps) {
     </label>
     <fieldset><legend className="mb-2 text-sm font-medium">Correct answer</legend>
       <div className="grid grid-cols-2 gap-3">{[true, false].map(value => <button key={String(value)} type="button" aria-pressed={config.correct === value}
-        className={`btn ${config.correct === value ? 'btn-neutral' : 'border-0 bg-base-200'}`} onClick={() => onChange({ ...config, correct: value })}>{value ? 'True' : 'False'}</button>)}</div>
+        className={`btn ${config.correct === value ? 'btn-primary' : 'border-0 bg-base-200'}`} onClick={() => onChange({ ...config, correct: value })}>{value ? 'True' : 'False'}</button>)}</div>
     </fieldset>
   </div>;
 }
