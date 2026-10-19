@@ -30,15 +30,15 @@ export function StaffCard({ row, isSuper, manageable, isSelf, onOpen }: Props) {
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold text-ink">
               {staffName(row)}
-              {isSelf ? <span className="ml-1.5 text-[10px] font-normal text-muted">you</span> : null}
+              {isSelf ? <span className="ml-1.5 text-[0.625rem] font-normal text-muted">you</span> : null}
             </p>
-            <p className="truncate text-[11px] text-muted">{row.email}</p>
+            <p className="truncate text-[0.6875rem] text-muted">{row.email}</p>
           </div>
         </div>
         <StatusBadge status={statusLabel(row.status)} className="shrink-0 px-3 py-1" />
       </div>
 
-      <dl className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-[11px]">
+      <dl className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2 text-[0.6875rem]">
         <div className="col-span-2">
           <dt className="text-muted">Role</dt>
           <dd className="mt-0.5 font-medium text-ink">
@@ -66,7 +66,7 @@ export function StaffCard({ row, isSuper, manageable, isSelf, onOpen }: Props) {
       </dl>
 
       <div className="mt-4 flex items-center justify-between gap-2">
-        <span className="text-[11px] text-muted">Added {isoDate(row.createdAt)}</span>
+        <span className="text-[0.6875rem] text-muted">Added {isoDate(row.createdAt)}</span>
         <StaffRowActions
           row={row}
           manageable={manageable}
