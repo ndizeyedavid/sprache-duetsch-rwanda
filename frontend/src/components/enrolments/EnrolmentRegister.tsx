@@ -1,4 +1,4 @@
-import { FiRefreshCw,FiUserPlus } from 'react-icons/fi';
+import { FiRefreshCw } from 'react-icons/fi';
 import type { ApiState } from '../../hooks/useApi';
 import type { ClassGroupItem,EnrollmentRow,IntakeItem,LevelItem } from '../../lib/services';
 import { ErrorBlock,LoadingBlock } from '../common/PageState';
@@ -18,7 +18,6 @@ type Props = {
   onFilter: (patch: Partial<EnrolmentFilters>) => void;
   onClear: () => void;
   onManage: (row: EnrollmentRow) => void;
-  onCreate: () => void;
   savingId: string | null;
   levels: LevelItem[];
   intakes: IntakeItem[];
@@ -34,7 +33,6 @@ export function EnrolmentRegister({
   onFilter,
   onClear,
   onManage,
-  onCreate,
   savingId,
   levels,
   intakes,
@@ -54,14 +52,6 @@ export function EnrolmentRegister({
           <p className="text-xs text-muted">{countLabel}</p>
         </div>
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={onCreate}
-            className="btn btn-sm gap-2 rounded-full border-0 bg-brand text-xs font-medium text-white hover:bg-night"
-          >
-            <FiUserPlus aria-hidden />
-            Enrol a student
-          </button>
           <button
             type="button"
             onClick={state.refetch}
