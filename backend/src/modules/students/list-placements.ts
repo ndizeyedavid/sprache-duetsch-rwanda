@@ -1,6 +1,8 @@
 import { notFound } from "../../lib/http-error.js";
+import { studentIntakeWhere } from "../../lib/intake-scope.js";
 import { prisma } from "../../lib/prisma.js";
 import { placementResultSelect } from "./placement-view.js";
+import type { PlacementQueueQuery } from "./placement.schema.js";
 
 /** Full placement history of one student (newest first) for academic staff. */
 export const listStudentPlacements = async (studentId: string) => {
@@ -26,9 +28,9 @@ export const listStudentPlacements = async (studentId: string) => {
 };
 
 /** Results still waiting for a staff decision, oldest first so nobody waits too long. */
-export const listPlacementQueue = async () =>
+export const listPlacementQueue = async (query: PlacementQueueQuery = {}) =>
   prisma.placementResult.findMany({
-    where: { assignedLevelId: null },
+    where: { assignedLevelId: null, ...(query.intakeId ? { student: studentIntakeWhere(query.intakeId) } : {}) },
     orderBy: { createdAt: "asc" },
     take: 100,
     select: {
