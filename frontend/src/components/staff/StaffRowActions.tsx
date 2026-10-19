@@ -18,7 +18,7 @@ type Props = {
 /** Role-aware action list for one account. Anything the API would refuse is absent. */
 export function StaffRowActions({ row, manageable, isSuper, isSelf, onOpen }: Props) {
   if (!manageable) {
-    return <span className="text-[11px] text-muted">Managed by a super admin</span>;
+    return <span className="text-[0.6875rem] text-muted">Managed by a super admin</span>;
   }
 
   const items: RowMenuItem[] = [
