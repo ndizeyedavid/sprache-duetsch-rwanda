@@ -66,7 +66,7 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
   return <section className="card studio-lesson bg-base-100">
     <div className="px-5 pt-6 sm:px-7">
       <div className="flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-muted">{props.moduleTitle}</p>
-        <div className="flex items-center gap-2"><span className={`badge badge-sm ${publishedToStudents ? 'badge-success badge-soft' : 'badge-ghost'}`}>{publishedToStudents ? 'Published' : draft.isPublished ? 'Module draft' : 'Draft'}</span><button className="btn btn-sm btn-circle btn-ghost" aria-label="Lesson settings" onClick={() => setSettings(true)} disabled={busy}><FiMoreHorizontal size={20} aria-hidden/></button></div></div>
+        <div className="flex items-center gap-2"><span className={`badge badge-sm ${publishedToStudents ? 'badge-success badge-soft' : 'badge-ghost'}`}>{publishedToStudents ? 'Published' : draft.isPublished ? 'Module draft' : 'Draft'}</span><button className="btn btn-sm btn-circle btn-ghost" aria-label="Lesson settings" onClick={() => setSettings(true)} disabled={busy}><FiMoreHorizontal size="1.25rem" aria-hidden/></button></div></div>
       <h2 className="mt-3 text-xl font-semibold leading-8 sm:text-2xl">{draft.title || 'Untitled lesson'}</h2>
       <div className="mt-3 flex flex-wrap items-center justify-between gap-3"><p className="text-xs text-muted">{formatNames[draft.contentType]}{draft.estimatedMinutes ? ` · ${draft.estimatedMinutes} min` : ''}</p>
         <button className="btn btn-sm btn-ghost" onClick={() => setPreview(true)}><FiEye aria-hidden/>Student preview</button></div>
