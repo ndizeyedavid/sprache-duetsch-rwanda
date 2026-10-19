@@ -1,6 +1,7 @@
 import { FiArrowLeft,FiCheck,FiPlus } from 'react-icons/fi';
 import type { ModuleItem } from '../../lib/services';
 import { contentIcon } from './utils';
+import { isArchived } from './module-card/module-stats';
 
 type Props = {
   modules: ModuleItem[]; module: ModuleItem; selected?: string; busy: boolean;
@@ -23,7 +24,8 @@ export function CourseOutline({ modules, module, selected, busy, onSelect, onMod
       <label className="block text-xs font-semibold text-muted">
         MODULE
         <select className="select mt-2 w-full bg-base-200 border-0" value={module.id} onChange={event => onModule(event.target.value)}>
-          {modules.map((item, index) => <option key={item.id} value={item.id}>{index + 1}. {item.title}</option>)}
+          {modules.filter(item => !isArchived(item)).map((item, index) => <option key={item.id} value={item.id}>{index + 1}. {item.title}</option>)}
+          {modules.some(isArchived) ? <optgroup label="Archived">{modules.filter(isArchived).map(item => <option key={item.id} value={item.id}>{item.title}</option>)}</optgroup> : null}
         </select>
       </label>
       <div className="mb-3 mt-5 flex items-center justify-between text-xs text-muted">
@@ -34,10 +36,10 @@ export function CourseOutline({ modules, module, selected, busy, onSelect, onMod
           const Icon = contentIcon(lesson.contentType);
           const active = selected === lesson.id;
           return <button key={lesson.id} onClick={() => onSelect(lesson.id, module.id)} aria-current={active ? 'page' : undefined}
-            className={`flex w-56 shrink-0 items-center gap-3 rounded-field px-3 py-3 text-left transition lg:w-full ${active ? 'bg-neutral text-neutral-content' : 'hover:bg-base-200'}`}>
-            <span className={`flex size-9 shrink-0 items-center justify-center rounded-field ${active ? 'bg-neutral-content' : 'bg-base-200'}`}><Icon aria-hidden /></span>
-            <span className="min-w-0 grow"><span className="block text-[13px] font-medium leading-5">{lesson.title}</span>
-              <span className="mt-1 block text-[11px] opacity-60">Lesson {index + 1}{lesson.estimatedMinutes ? ` · ${lesson.estimatedMinutes} min` : ''}</span></span>
+            className={`flex w-56 shrink-0 items-center gap-3 rounded-field px-3 py-3 text-left transition lg:w-full ${active ? 'bg-primary text-primary-content' : 'hover:bg-base-200'}`}>
+            <span className={`flex size-9 shrink-0 items-center justify-center rounded-field ${active ? 'bg-base-100 text-primary' : 'bg-base-200'}`}><Icon aria-hidden /></span>
+            <span className="min-w-0 grow"><span className="block text-[0.8125rem] font-medium leading-5">{lesson.title}</span>
+              <span className="mt-1 block text-[0.6875rem] opacity-60">Lesson {index + 1}{lesson.estimatedMinutes ? ` · ${lesson.estimatedMinutes} min` : ''}</span></span>
             {lesson.isPublished && module.isPublished ? <FiCheck aria-label="Published" className="shrink-0" /> : null}
           </button>;
         })}
