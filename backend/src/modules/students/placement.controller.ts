@@ -1,10 +1,10 @@
 import type { Request,Response } from "express";
 import { unauthorized } from "../../lib/http-error.js";
-import { actorId,validatedBody,validatedParams } from "../../lib/request.js";
+import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
 import { decidePlacement } from "./decide-placement.js";
 import { getMyPlacement } from "./get-my-placement.js";
 import { listPlacementQueue,listStudentPlacements } from "./list-placements.js";
-import type { ManualPlacementInput,PlacementDecisionInput,PlacementDraftInput,PlacementSubmitInput } from "./placement.schema.js";
+import type { ManualPlacementInput,PlacementDecisionInput,PlacementDraftInput,PlacementQueueQuery,PlacementSubmitInput } from "./placement.schema.js";
 import { runPlacement } from "./run-placement.js";
 import { saveMyPlacementDraft } from "./save-my-placement-draft.js";
 import { startMyPlacement } from "./start-my-placement.js";
@@ -35,8 +35,8 @@ export const submit = async (req: Request, res: Response): Promise<void> => {
   res.json({ success: true, data: await submitMyPlacement(userId(req), id, validatedBody<PlacementSubmitInput>(req)) });
 };
 
-export const queue = async (_req: Request, res: Response): Promise<void> => {
-  res.json({ success: true, data: await listPlacementQueue() });
+export const queue = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await listPlacementQueue(validatedQuery<PlacementQueueQuery>(req)) });
 };
 
 export const history = async (req: Request, res: Response): Promise<void> => {
