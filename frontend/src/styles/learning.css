@@ -37,11 +37,11 @@
 
 .journey-orbit-label {
   position: absolute;
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   border-radius: var(--radius-field);
   border: 1px solid var(--color-base-300);
   background: var(--color-base-100);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   transform: rotate(-7deg);
 }
@@ -67,4 +67,53 @@
 :where(a, button, input, select, textarea):focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 4px;
+}
+
+/* Shared brand-red page header (components/hero). rem, so tags and chips follow the laptop root size. */
+.hero-tag {
+  position: absolute;
+  z-index: 20;
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius-field);
+  border: 1px solid var(--color-base-300);
+  background: var(--color-base-100);
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transform: rotate(-6deg);
+}
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-primary-content);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.hero-chip-solid {
+  background: var(--color-primary-content);
+  color: var(--color-primary) !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-tag { animation: journey-float 6s ease-in-out infinite; }
+  .hero-tag + .hero-tag { animation-delay: -3s; }
+}
+.hero-band {
+  background: var(--color-primary);
+  color: var(--color-primary-content);
+}
+
+/* Time-grid calendar (components/schedule/time-grid): hour lines + fainter half-hour lines. */
+.time-grid-column {
+  background-image:
+    linear-gradient(to bottom, var(--color-base-300) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-base-300) 45%, var(--color-base-100)) 1px, transparent 1px);
+  background-size: 100% 56px, 100% 28px;
+}
+
+/* Past time on the schedule grid: hatched, and no new classes can be added there. */
+.time-grid-past {
+  background-image: repeating-linear-gradient(135deg, transparent 0 7px, color-mix(in oklab, var(--color-base-content) 7%, transparent) 7px 8px);
 }
