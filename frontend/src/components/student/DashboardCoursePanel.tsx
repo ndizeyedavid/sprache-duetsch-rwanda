@@ -26,7 +26,7 @@ export function DashboardCoursePanel({ courses, course, onSelect }: Props) {
         <span aria-hidden className="bg-primary text-primary-content grid size-14 shrink-0 place-items-center rounded-xl text-xl font-semibold">{course.level.code}</span>
         <div className="min-w-0 flex-1"><Link to={base} className="text-sm font-semibold hover:underline">{course.level.title}</Link>
           <div className="mt-2 flex items-center gap-3"><progress className="progress progress-primary h-1.5 flex-1" value={course.stats.completionPercentage} max={100} aria-label="Course progress" /><span className="text-xs font-semibold">{course.stats.completionPercentage}%</span></div>
-          <p className="mt-1.5 text-[10px] text-muted">{course.stats.completedLessons}/{course.stats.totalLessons} lessons</p>
+          <p className="mt-1.5 text-[0.625rem] text-muted">{course.stats.completedLessons}/{course.stats.totalLessons} lessons</p>
         </div>
       </div>
       <ol className="space-y-2">
@@ -39,7 +39,7 @@ export function DashboardCoursePanel({ courses, course, onSelect }: Props) {
             <span aria-hidden className="grid size-8 shrink-0 place-items-center rounded-full bg-base-100 text-xs font-semibold">{done === lessons.length && done ? <FiCheck /> : index + 1}</span>
             <div className="min-w-0 flex-1"><h3 className="text-xs font-semibold">{module.title}</h3>
               <div className="mt-2 flex flex-wrap gap-1.5" aria-label={`${done} of ${lessons.length} lessons completed`}>
-                {lessons.map((lesson) => <span key={lesson.id} aria-hidden className={`grid size-5 place-items-center rounded-full border text-[9px] ${lesson.progressStatus === 'COMPLETED' ? 'border-primary bg-primary text-primary-content' : lesson.id === next?.id ? 'border-primary bg-primary text-primary-content' : 'border-base-300 bg-base-100'}`}>{lesson.progressStatus === 'COMPLETED' ? <FiCheck /> : lesson.id === next?.id ? <FiPlay /> : null}</span>)}
+                {lessons.map((lesson) => <span key={lesson.id} aria-hidden className={`grid size-5 place-items-center rounded-full border text-[0.5625rem] ${lesson.progressStatus === 'COMPLETED' ? 'border-primary bg-primary text-primary-content' : lesson.id === next?.id ? 'border-primary bg-primary text-primary-content' : 'border-base-300 bg-base-100'}`}>{lesson.progressStatus === 'COMPLETED' ? <FiCheck /> : lesson.id === next?.id ? <FiPlay /> : null}</span>)}
               </div>
             </div><FiArrowUpRight aria-hidden className="shrink-0 text-muted" />
           </Link></li>;
