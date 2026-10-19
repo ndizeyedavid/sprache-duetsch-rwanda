@@ -11,7 +11,7 @@ export function LessonSettings({ draft, change, busy, onClose, onDelete, onUnpub
         <label className="text-sm font-medium">Minutes to complete<input type="number" min={0} max={1000} className="input mt-2 w-full" value={draft.estimatedMinutes} onChange={event => change('estimatedMinutes', event.target.value)}/></label></div>
       {draft.isPublished ? <button className="btn w-full" disabled={busy} onClick={onUnpublish}>Move lesson to draft</button> : null}
       <div className="flex items-center justify-between gap-3 rounded-box bg-base-200 p-4"><span className="text-sm">Remove this lesson</span><button className="btn btn-sm btn-ghost text-error" disabled={busy} onClick={onDelete}><FiTrash2 aria-hidden/>Delete</button></div>
-      <button className="btn btn-neutral w-full" onClick={onClose}>Done</button>
+      <button className="btn btn-primary w-full" onClick={onClose}>Done</button>
     </div>
   </StudioDialog>;
 }
