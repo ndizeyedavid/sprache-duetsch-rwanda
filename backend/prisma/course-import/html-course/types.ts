@@ -32,6 +32,8 @@ export type CourseLesson = {
   grammatik: CourseGrammar[];
   wortschatz: CourseWord[];
   redemittel: CoursePhrases[];
+  /** A2 conversation, preserved as a separate reader page. */
+  dialog?: { titel: string; zeilen: { wer: string; text: string }[] };
   /** Free writing task with word range and checklist (B2 onwards). */
   schreibaufgabe?: CourseWritingTask;
   uebungen: CourseExercise[];
