@@ -22,7 +22,7 @@ export function ProfileStatStrip({ profile, overall }: Props) {
           aria-valuemin={0}
           aria-valuemax={100}
         >
-          <span className="text-[11px] font-bold text-ink">{overall === null ? '—' : `${percent}%`}</span>
+          <span className="text-[0.6875rem] font-bold text-ink">{overall === null ? '—' : `${percent}%`}</span>
         </div>
         <div className="min-w-0">
           <p className="text-sm font-semibold">Course completion</p>
@@ -33,7 +33,7 @@ export function ProfileStatStrip({ profile, overall }: Props) {
       {tiles.map((tile) => (
         <section key={tile.key} className="card border border-line bg-base-100 p-4 sm:p-5">
           <span className={`mb-3 grid size-9 place-items-center rounded-xl ${TONE_FLAT[tile.tone]}`}>
-            <tile.icon aria-hidden size={18} />
+            <tile.icon aria-hidden size="1.125rem" />
           </span>
           <p className="text-2xl font-semibold tracking-tight tabular-nums">{tile.value}</p>
           <p className="mt-1 text-xs font-medium">{tile.label}</p>
