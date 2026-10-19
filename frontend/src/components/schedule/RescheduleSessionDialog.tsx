@@ -4,6 +4,7 @@ import { apiErrorMessage } from '../../lib/api';
 import { rescheduleSession } from '../../lib/session-actions';
 import { sessionTimeLabels,viewerTimeZone,zonedInputs,zonedToUtcIso } from '../../lib/session-time';
 import { Modal } from '../ui/Modal';
+import { withinSchoolHours } from './session-editor/useSessionDraft';
 
 type Target = { id: string; title: string; startAt: string; endAt: string; timezone: string | null };
 type Props = { session: Target | null; onClose: () => void; onDone: () => void };
@@ -33,6 +34,7 @@ function RescheduleForm({ session, busy, onBusy, onClose, onDone }: { session: T
     event.preventDefault();
     if (!startAt || !endAt || startAt >= endAt) { setError('End must be after start.'); return; }
     if (Date.parse(startAt) <= Date.now()) { setError('Pick a time in the future.'); return; }
+    if (!withinSchoolHours(start, end)) { setError('Classes run between 08:00 and 22:00.'); return; }
     if (startAt === session.startAt && endAt === session.endAt) { setError('Choose a different date or time.'); return; }
     onBusy(true);
     setError('');
@@ -46,9 +48,9 @@ function RescheduleForm({ session, busy, onBusy, onClose, onDone }: { session: T
       <fieldset className="fieldset" disabled={busy}>
         <legend className="fieldset-legend">New time · {zone.replaceAll('_', ' ')}</legend>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          <label className="col-span-2 text-xs sm:col-span-1">Date<input required type="date" className="input mt-1 w-full" value={date} onChange={e => setDate(e.target.value)} /></label>
-          <label className="text-xs">Start<input required type="time" className="input mt-1 w-full" value={start} onChange={e => setStart(e.target.value)} /></label>
-          <label className="text-xs">End<input required type="time" className="input mt-1 w-full" value={end} onChange={e => setEnd(e.target.value)} /></label>
+          <label className="col-span-2 text-xs sm:col-span-1">Date<input required type="date" min={new Date().toLocaleDateString('en-CA')} className="input mt-1 w-full" value={date} onChange={e => setDate(e.target.value)} /></label>
+          <label className="text-xs">Start<input required type="time" min="08:00" max="21:30" className="input mt-1 w-full" value={start} onChange={e => setStart(e.target.value)} /></label>
+          <label className="text-xs">End<input required type="time" min="08:30" max="22:00" className="input mt-1 w-full" value={end} onChange={e => setEnd(e.target.value)} /></label>
         </div>
         {preview ? <p className="label">Your time: {preview.date} · {preview.start}–{preview.end}</p> : null}
         <label className="mt-2 text-xs">Reason (optional)
