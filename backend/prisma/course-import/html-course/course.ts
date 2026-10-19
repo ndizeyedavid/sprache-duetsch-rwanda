@@ -22,6 +22,9 @@ export function validateCourse(spec: CourseSpec, course: CourseJson): CourseJson
     if (!lesson.titel || !lesson.thema || !lesson.grammatik.length || !lesson.wortschatz.length) fail(`${at} is incomplete`);
     const task = lesson.schreibaufgabe;
     if (task && (!task.aufgabe || !task.woerter || !task.checkliste?.length)) fail(`${at} has an incomplete writing task`);
+    const dialog = lesson.dialog;
+    if (dialog && (!dialog.titel || !dialog.zeilen?.length
+      || dialog.zeilen.some((line) => !line.wer || !line.text))) fail(`${at} has an incomplete dialog`);
     for (const exercise of lesson.uebungen) {
       if (!exercise.frage || !exercise.erklaerung) fail(`${at} has an empty exercise`);
       if (exercise.typ === "gap" && !exercise.loesung.length) fail(`${at} gap without answer`);
