@@ -23,13 +23,6 @@ export function courseLabel(row: Pick<ApplicationRow, 'level' | 'intake' | 'rawP
   return typeof course === 'string' && course ? `“${course}” (not matched)` : 'Course not set';
 }
 
-/** Plain-language enrolment window for an intake card. */
-export function windowLabel(intake: CatalogIntake): string {
-  if (intake.enrollmentState === 'UPCOMING' && intake.enrollmentOpensAt) return `Applications open ${shortDate(intake.enrollmentOpensAt)}`;
-  if (intake.enrollmentEndsAt) return `Applications close ${shortDate(intake.enrollmentEndsAt)}`;
-  return 'Applications open now';
-}
-
 /** Seats still free for a level across campuses; null when no class capacity is published. */
 export function seatsForLevel(intake: CatalogIntake, levelId: string): number | null {
   const rows = intake.seats.filter((row) => row.levelId === levelId && row.seatsLeft !== null);
