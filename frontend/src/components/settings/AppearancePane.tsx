@@ -47,7 +47,7 @@ export function AppearancePane() {
  >
  {t.label}
  </span>
- <span className="block text-[11px] text-muted">{t.hint}</span>
+ <span className="block text-[0.6875rem] text-muted">{t.hint}</span>
  </span>
  {active ? <FiCheck aria-hidden className="text-brand" /> : null}
  </button>
