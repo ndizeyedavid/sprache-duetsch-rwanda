@@ -33,6 +33,13 @@ The local database was copied into an isolated release database. Operational dat
 
 Private backups, account credentials, deployment logs, and verification results are under `.deployment-private/`. This folder is gitignored and must not be included in images or Git commits.
 
+On 2026-10-16, the A2 and B2.1 curricula were imported and verified against their manifests.
+The active September intake offers A1, A2, B1 and B2. The 15 October 14 demo accounts and their
+linked dataset were removed at the user's request, preserving the production super admin and
+all curriculum. The user subsequently requested a smaller quick-test dataset: `/demo` now lists
+one account per role, created by `prisma/live-demo/quick-test.ts --apply`, with a fee-waived
+student enrolled in A1–B2. The 15-account scenario dataset remains removed.
+
 ## Operations
 
 - Verify `/api/health` after every release; it checks database connectivity.
