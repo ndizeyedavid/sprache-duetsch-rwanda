@@ -13,7 +13,7 @@ export function DateTile({
  className={`flex size-12 shrink-0 flex-col items-center justify-center rounded-xl ${tones.soft} ${tones.text} ${className}`}
  >
  <span className="text-sm font-semibold leading-none">{day}</span>
- <span className="mt-0.5 text-[10px] uppercase tracking-wide">
+ <span className="mt-0.5 text-[0.625rem] uppercase tracking-wide">
  {month}
  </span>
  </div>
