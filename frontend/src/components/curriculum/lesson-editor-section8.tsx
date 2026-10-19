@@ -18,9 +18,9 @@ return (<div className="overflow-hidden rounded-box border border-line bg-base-1
  </span>
  <div>
  <h4 className="text-sm font-bold leading-none">Lesson details</h4>
- <p className="text-[11px] text-muted">Core content students read, watch or listen to</p>
+ <p className="text-[0.6875rem] text-muted">Core content students read, watch or listen to</p>
  </div>
- <span className="ml-auto hidden items-center gap-1 rounded-full bg-base-200 px-2.5 py-1 text-[11px] font-medium text-muted sm:flex">
+ <span className="ml-auto hidden items-center gap-1 rounded-full bg-base-200 px-2.5 py-1 text-[0.6875rem] font-medium text-muted sm:flex">
  <span className={`size-2 rounded-full ${edit.isPublished ? 'bg-success' : 'bg-muted'}`} aria-hidden />
  {edit.isPublished ? 'Published' : 'Draft'}
  </span>
