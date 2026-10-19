@@ -35,7 +35,7 @@ export function PlacementResultItem({ result, levels, onSaved }: Props) {
       <dl className="grid grid-cols-3 gap-2">
         {columns.map((column) => (
           <div key={column.label} className="rounded-field bg-base-200 p-2">
-            <dt className="text-[10px] text-muted">{column.label}</dt>
+            <dt className="text-[0.625rem] text-muted">{column.label}</dt>
             <dd className="text-sm font-semibold">{column.value}</dd>
           </div>
         ))}
@@ -43,7 +43,7 @@ export function PlacementResultItem({ result, levels, onSaved }: Props) {
       {result.overrideReason ? <p className="text-xs"><span className="font-medium">Override reason:</span> {result.overrideReason}</p> : null}
       {result.note ? <p className="text-xs"><span className="font-medium">Note:</span> {result.note}</p> : null}
       {result.decidedAt ? (
-        <p className="text-[11px] text-muted">
+        <p className="text-[0.6875rem] text-muted">
           Decided {formatDate(result.decidedAt)}{result.decidedBy ? ` by ${result.decidedBy.firstName} ${result.decidedBy.lastName}` : ''}
         </p>
       ) : null}
