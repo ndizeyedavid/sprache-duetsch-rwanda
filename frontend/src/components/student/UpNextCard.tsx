@@ -35,12 +35,12 @@ export function UpNextCard({ session, sessions }: Props) {
       </div>
       {more.length ? (
         <div className="mt-4 border-t border-line pt-3">
-          <p className="text-[11px] font-semibold text-muted">Also coming</p>
+          <p className="text-[0.6875rem] font-semibold text-muted">Also coming</p>
           <ul className="mt-2 space-y-1">
             {more.map((s) => (
               <li key={s.id} className="flex items-center justify-between gap-2 text-xs">
                 <span className="truncate font-medium">{s.title}</span>
-                <span className="shrink-0 text-[11px] text-muted">{isoDate(s.startAt)}</span>
+                <span className="shrink-0 text-[0.6875rem] text-muted">{isoDate(s.startAt)}</span>
               </li>
             ))}
           </ul>
