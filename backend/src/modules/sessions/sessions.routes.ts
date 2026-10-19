@@ -10,6 +10,7 @@ import {
 attendanceRecordIdSchema,
 attendanceSummaryQuerySchema,
 cancelSessionSchema,
+deleteSessionSchema,
 createSessionMaterialSchema,
 createSessionSchema,
 listSessionsQuerySchema,
@@ -94,6 +95,14 @@ sessionsRouter.patch(
   requireRole(...ACADEMIC_ROLES),
   validate({ params: sessionIdSchema, body: updateSessionSchema }),
   asyncHandler(controller.update),
+);
+
+sessionsRouter.delete(
+  "/:id",
+  requireAuth,
+  requireRole(...ACADEMIC_ROLES),
+  validate({ params: sessionIdSchema, body: deleteSessionSchema }),
+  asyncHandler(controller.remove),
 );
 
 sessionsRouter.post(
