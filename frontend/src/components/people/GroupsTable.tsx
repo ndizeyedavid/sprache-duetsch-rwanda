@@ -32,11 +32,11 @@ export function GroupsTable({ groups }: { groups: Group[] }) {
             <tr key={g.id} className="hover">
               <td>
                 <p className="text-sm font-semibold">{g.name}</p>
-                <p className="flex items-center gap-1 text-xs text-muted"><FiBookOpen aria-hidden size={11} />{g.code} · {g.shift}{g.room ? ` · ${g.room}` : ""}</p>
+                <p className="flex items-center gap-1 text-xs text-muted"><FiBookOpen aria-hidden size="0.6875rem" />{g.code} · {g.shift}{g.room ? ` · ${g.room}` : ""}</p>
               </td>
               <td><span className="badge badge-sm">{g.level.code}</span> <span className="hidden sm:inline text-xs text-muted">{g.level.title}</span></td>
-              <td className="hidden sm:table-cell text-xs"><span className="inline-flex items-center gap-1"><FiMapPin aria-hidden size={11} />{g.campus.name}</span></td>
-              <td><span className="inline-flex items-center gap-1 text-xs"><FiUsers aria-hidden size={11} />{g._count.enrollments}/{g.capacity}</span></td>
+              <td className="hidden sm:table-cell text-xs"><span className="inline-flex items-center gap-1"><FiMapPin aria-hidden size="0.6875rem" />{g.campus.name}</span></td>
+              <td><span className="inline-flex items-center gap-1 text-xs"><FiUsers aria-hidden size="0.6875rem" />{g._count.enrollments}/{g.capacity}</span></td>
               <td className="text-xs">{g.teacher ? `${g.teacher.firstName} ${g.teacher.lastName}` : "—"}</td>
             </tr>
           ))}
