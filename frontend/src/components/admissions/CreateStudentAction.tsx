@@ -68,7 +68,7 @@ function InviteResult({ created }: { created: StudentFromApplication }) {
             {invite.emailConfigured ? 'Password setup email queued.' : 'Email is not configured on this server — share the setup link with the student yourself.'}
             {' '}Link valid until {new Date(invite.expiresAt).toLocaleDateString()}.
           </p>
-          {invite.setupUrl ? <p className="mt-2 break-all rounded-field bg-base-200 p-2 font-mono text-[11px]">{invite.setupUrl}</p> : null}
+          {invite.setupUrl ? <p className="mt-2 break-all rounded-field bg-base-200 p-2 font-mono text-[0.6875rem]">{invite.setupUrl}</p> : null}
         </>
       )}
     </section>
