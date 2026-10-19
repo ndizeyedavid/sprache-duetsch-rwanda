@@ -11,6 +11,8 @@ export interface NotifyInput {
   channel?: NotificationChannel; eventKey?: string;
   /** Email-only extras: amount rows, a call-to-action button and a closing note. */
   email?: Pick<EmailContent, "details" | "action" | "footnote">;
+  /** School announcements: always in-app and emailed, whatever the recipient's notification settings. */
+  important?: boolean;
 }
 export const notifyUser = (userId: string, input: NotifyInput) => notifyMessages([{ userId, input }]);
 export const notifyUsers = (userIds: string[], input: NotifyInput) => notifyMessages([...new Set(userIds)].map(userId => ({ userId, input })));
@@ -24,8 +26,8 @@ export async function notifyMessages(messages: { userId: string; input: NotifyIn
     const prefs = mergeNotificationPreferences(user.notificationPreferences as Partial<NotificationPreferences> | null);
     const topicEnabled = canEmailNotification(input.type, { ...prefs, email: true });
     const channelSupported = !input.channel || ['IN_APP', 'EMAIL'].includes(input.channel);
-    const email = prefs.email && topicEnabled && channelSupported;
-    const visible = prefs.inApp && topicEnabled && channelSupported;
+    const email = channelSupported && (input.important || (prefs.email && topicEnabled));
+    const visible = channelSupported && (input.important || (prefs.inApp && topicEnabled));
     const queued = await transact(tx => enqueueNotification(tx, { userId, email: user.email,
       eventKey: input.eventKey ? `${input.eventKey}:${userId}` : undefined,
       mail: email ? { subject: input.title, ...renderEmail({ preheader: input.body, title: input.title, greeting: `Hallo ${user.firstName},`,
