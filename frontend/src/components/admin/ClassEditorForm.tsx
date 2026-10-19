@@ -14,6 +14,7 @@ import { listTeachingAssignments } from "../../lib/teaching";
 import { ErrorBlock,LoadingBlock } from "../common/PageState";
 import { ClassEditorFields } from "./ClassEditorFields";
 import type { ClassDraft } from "./class-draft";
+import { getIntakeScope } from "../../lib/intake-scope/store";
 
 type Props = {
   initial: ClassGroupDetail | null;
@@ -37,7 +38,7 @@ export function ClassEditorForm({
     code: initial?.code ?? "",
     name: initial?.name ?? "",
     levelId: initial?.levelId ?? "",
-    intakeId: initial?.intakeId ?? "",
+    intakeId: initial?.intakeId ?? getIntakeScope() ?? "",
     campusId: initial?.campusId ?? "",
     teacherId: initial?.teacherId ?? "",
     shift: initial?.shift ?? "EVENING",
