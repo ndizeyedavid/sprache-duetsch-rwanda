@@ -1,7 +1,7 @@
 import { useEffect,useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { apiErrorMessage,apiGet } from '../../lib/api';
-import type { RegisterOtpResult, RegisterPayload } from '../../lib/auth-store';
+import type { RegisterOtpResult } from '../../lib/auth-store';
 import { register, requestRegisterOtp } from '../../lib/auth-store';
 import type { ReferenceItem } from './reference-item';
 import type { PendingRegistration } from './register-handle-submit';
@@ -15,7 +15,6 @@ export function Register() {
  const [email, setEmail] = useState('');
  const [password, setPassword] = useState('');
  const [campusId, setCampusId] = useState('');
- const [shift, setShift] = useState<RegisterPayload['shift']>('EVENING');
  const [intakeId, setIntakeId] = useState('');
  const [intendedLevelId, setIntendedLevelId] = useState('');
 
@@ -58,7 +57,7 @@ export function Register() {
 
  const codeSent = (payload: PendingRegistration, sent: RegisterOtpResult) =>
  setVerification({ payload, resendAt: Date.now() + sent.resendAfterSeconds * 1000, devCode: sent.devCode });
- const handleSubmit = (...args: Parameters<ReturnType<typeof createHandleSubmit>>) => createHandleSubmit({ password, shift, setError, fullName, campusId, setPending, email, phone, intakeId, intendedLevelId, onCodeSent: codeSent })(...args);
+ const handleSubmit = (...args: Parameters<ReturnType<typeof createHandleSubmit>>) => createHandleSubmit({ password, setError, fullName, campusId, setPending, email, phone, intakeId, intendedLevelId, onCodeSent: codeSent })(...args);
 
  async function verify(otp: string) {
  if (!verification) return;
@@ -84,6 +83,6 @@ export function Register() {
  }
 
  return (
- <RegisterSection1 handleSubmit={handleSubmit} fullName={fullName} setFullName={setFullName} phone={phone} setPhone={setPhone} email={email} setEmail={setEmail} campusId={campusId} loadingRefs={loadingRefs} setCampusId={setCampusId} campuses={campuses} shift={shift} setShift={setShift} intakeId={intakeId} setIntakeId={setIntakeId} intakes={intakes} intendedLevelId={intendedLevelId} setIntendedLevelId={setIntendedLevelId} levels={levels.filter(level => intakes.find(intake => intake.id === intakeId)?.levels?.some(offered => offered.id === level.id && offered.isActive))} password={password} setPassword={setPassword} error={error} pending={pending} navigate={navigate} setError={setError} />
+ <RegisterSection1 handleSubmit={handleSubmit} fullName={fullName} setFullName={setFullName} phone={phone} setPhone={setPhone} email={email} setEmail={setEmail} campusId={campusId} loadingRefs={loadingRefs} setCampusId={setCampusId} campuses={campuses} intakeId={intakeId} setIntakeId={setIntakeId} intakes={intakes} intendedLevelId={intendedLevelId} setIntendedLevelId={setIntendedLevelId} levels={levels.filter(level => intakes.find(intake => intake.id === intakeId)?.levels?.some(offered => offered.id === level.id && offered.isActive))} password={password} setPassword={setPassword} error={error} pending={pending} navigate={navigate} setError={setError} />
  );
 }
