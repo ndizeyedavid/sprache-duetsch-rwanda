@@ -1,5 +1,6 @@
 import type { AttendanceStatus,Prisma,Role } from "../../generated/prisma/client.js";
 import { forbidden,notFound } from "../../lib/http-error.js";
+import { andWhere,sessionIntakeWhere } from "../../lib/intake-scope.js";
 import { prisma } from "../../lib/prisma.js";
 import { countAttendance } from './count-attendance.js';
 import { enforceAttendanceScope } from "./session-access.js";
@@ -15,6 +16,7 @@ export const getAttendanceSummary = async (
   const sessionWhere: Prisma.ClassSessionWhereInput = { ...await enforceAttendanceScope(actor, query.classGroupId), status: { not: "CANCELLED" } };
   if (query.classGroupId) sessionWhere.classGroupId = query.classGroupId;
   if (query.from || query.to) sessionWhere.startAt = { gte: query.from, lte: query.to };
+  if (actor.role !== "STUDENT") andWhere(sessionWhere, query.intakeId && sessionIntakeWhere(query.intakeId));
   if (Object.keys(sessionWhere).length > 0) {
     where.session = sessionWhere;
   }
