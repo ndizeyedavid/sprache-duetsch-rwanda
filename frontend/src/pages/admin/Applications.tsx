@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { FiExternalLink,FiRefreshCw } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
 import { ApplicationDrawer } from '../../components/admissions/ApplicationDrawer';
 import { ApplicationFiltersBar } from '../../components/admissions/ApplicationFiltersBar';
+import { ApplicationsHero } from '../../components/admissions/ApplicationsHero';
 import { ApplicationList } from '../../components/admissions/ApplicationList';
 import { ApplicationTabs } from '../../components/admissions/ApplicationTabs';
 import { WaitlistBoard } from '../../components/admissions/WaitlistBoard';
@@ -23,25 +22,9 @@ export function AdminApplications() {
 
   return (
     <div className="space-y-5">
+      <ApplicationsHero counts={queue.summary.data} refreshing={state.fetching} onRefresh={queue.refresh} />
       <Panel>
-        <div className="flex flex-wrap items-start justify-between gap-3">
-          <div>
-            <h2 className="text-base font-semibold sm:text-lg">Admissions</h2>
-            <p className="text-xs text-muted">Applications from the website and the public course catalogue.</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link to="/catalog" target="_blank" className="btn btn-sm gap-2 rounded-full border-line bg-base-200 text-xs">
-              <FiExternalLink aria-hidden /> Public catalogue
-            </Link>
-            <button type="button" onClick={queue.refresh} disabled={state.fetching} className="btn btn-sm gap-2 rounded-full border-line bg-base-200 text-xs">
-              {state.fetching ? <span className="loading loading-spinner loading-xs" /> : <FiRefreshCw aria-hidden />} Refresh
-            </button>
-          </div>
-        </div>
-
-        <div className="mt-4">
-          <ApplicationTabs active={queue.tab} counts={queue.summary.data} onChange={queue.setTab} />
-        </div>
+        <ApplicationTabs active={queue.tab} counts={queue.summary.data} onChange={queue.setTab} />
         <div className="mt-4">
           <ApplicationFiltersBar filters={queue.filters} refs={refs} onChange={queue.setFilters} onClear={queue.clearFilters} compact={onWaitlist} />
         </div>
