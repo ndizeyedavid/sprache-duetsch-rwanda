@@ -1,7 +1,7 @@
-import { Route } from "react-router-dom";
+import { Navigate,Route } from "react-router-dom";
 import { AppLayout } from "../components/layout/AppLayout";
 import { ADMIN_ROLES,FINANCE_ROLES,STAFF_ROLES,STUDENT_ROLES } from "../lib/roles";
-import { AdminAnnouncements,AdminApplications,AdminCertificates,AdminClasses,AdminCourses,AdminDashboard,AdminEnrolments,AdminFinance,AdminIntakes,AdminLiveClass,AdminOrganisation,AdminPeople,AdminReports,AdminResources,AdminSchedule,AdminStudentDetail,AdminStudents,AdminTeaching,AdminTransactions } from "./admin-pages";
+import { AdminAnnouncements,AdminApplications,AdminCertificates,AdminClasses,AdminCourses,AdminDashboard,AdminEnrolments,AdminFinance,AdminIntakes,AdminLiveClass,AdminOrganisation,AdminPeople,AdminReports,AdminResources,AdminSchedule,AdminStudentDetail,AdminStudents,AdminTeachers,AdminTransactions } from "./admin-pages";
 import { RequireRole } from "./guards";
 import { Activity,Messages,Notifications,Settings } from "./student-pages";
 import { TeacherAssessments,TeacherAssignments,TeacherAttendance,TeacherGrading } from "./teacher-pages";
@@ -19,7 +19,8 @@ export function adminRoutes() {
           <Route path="/admin/grading" element={<TeacherGrading />} />
           <Route path="/admin/courses" element={<AdminCourses />} />
           <Route path="/admin/classes" element={<AdminClasses />} />
-          <Route path="/admin/teaching" element={<AdminTeaching />} />
+          <Route path="/admin/teachers" element={<AdminTeachers />} />
+          <Route path="/admin/teaching" element={<Navigate to="/admin/teachers" replace />} />
           <Route path="/admin/attendance" element={<TeacherAttendance />} />
           <Route path="/admin/enrolments" element={<AdminEnrolments />} />
           <Route path="/admin/applications" element={<AdminApplications />} />
