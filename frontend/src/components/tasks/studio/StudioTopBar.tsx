@@ -10,7 +10,7 @@ export function StudioTopBar({ draft: d, existing, dirty, saving, onBack, onPrev
     <header className="flex flex-wrap items-center gap-3">
       <button type="button" className="btn btn-ghost btn-sm btn-square" aria-label="Back to assignments" onClick={onBack}><FiArrowLeft aria-hidden /></button>
       <div className="min-w-0 flex-1">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand">{existing ? 'Edit' : 'New'} {kindMeta(d.kind).label.toLowerCase()}</p>
+        <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-brand">{existing ? 'Edit' : 'New'} {kindMeta(d.kind).label.toLowerCase()}</p>
         <h1 className="truncate text-lg font-semibold">{d.title || 'Untitled'}</h1>
       </div>
       <span className="text-xs text-muted" role="status">{saving ? 'Saving…' : dirty ? 'Unsaved changes' : existing ? 'All changes saved' : ''}</span>
