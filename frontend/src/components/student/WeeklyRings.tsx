@@ -77,7 +77,7 @@ export function WeeklyRings({ courses, weekAnchor, onPrev, onNext, onToday }: Pr
       {!isCurrentWeek ? <button type="button" onClick={onToday} className="btn btn-xs mx-auto mt-1 flex rounded-full border-line bg-base-100">Today</button> : null}
 
       <div className="mt-4 flex justify-center">
-        <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} role="img" aria-label="Weekly task rings">
+        <svg width={`${size / 16}rem`} height={`${size / 16}rem`} viewBox={`0 0 ${size} ${size}`} role="img" aria-label="Weekly task rings">
           {rings.map((ring, index) => {
             const radius = baseRadius + index * (ringWidth + gap);
             const circumference = 2 * Math.PI * radius;
@@ -120,7 +120,7 @@ export function WeeklyRings({ courses, weekAnchor, onPrev, onNext, onToday }: Pr
               <span className="size-3 shrink-0 rounded-full" style={{ background: ring.color }} aria-hidden />
               <span className="min-w-0 grow">
                 <span className="block truncate text-xs font-semibold leading-tight">{ring.code} · {ring.title}</span>
-                <span className="block text-[11px] text-muted">
+                <span className="block text-[0.6875rem] text-muted">
                   {ring.hasNoDueTasks ? 'No due tasks · All caught up' : `${ring.completedInWeek} done · ${ring.remaining} remaining · ${ring.total} total`}
                 </span>
               </span>
@@ -129,7 +129,7 @@ export function WeeklyRings({ courses, weekAnchor, onPrev, onNext, onToday }: Pr
           ))
         )}
         {allCaughtUp && courses.length > 0 ? <p className="rounded-box bg-base-200 px-3 py-2 text-center text-xs text-muted">There are no due tasks at the moment. You&apos;re all caught up — ring shows 100%.</p> : null}
-        <p className="text-center text-[11px] leading-snug text-muted">Each ring is a course (color matches its card). Use ← → to change week.</p>
+        <p className="text-center text-[0.6875rem] leading-snug text-muted">Each ring is a course (color matches its card). Use ← → to change week.</p>
       </div>
     </div>
   );
