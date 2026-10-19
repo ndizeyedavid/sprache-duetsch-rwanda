@@ -19,7 +19,7 @@ export function StudioModuleForm({ levelId, module, onClose, onSaved }: { levelI
       <label className="block text-sm font-medium">Module name<input className="input mt-2 w-full" autoFocus required minLength={2} maxLength={200} value={title} onChange={event => setTitle(event.target.value)} placeholder="e.g. Everyday conversations"/></label>
       <label className="flex items-center gap-3 rounded-box bg-base-200 p-4 text-sm"><input type="checkbox" className="checkbox checkbox-sm" checked={published} onChange={event => setPublished(event.target.checked)}/>Published to students</label>
       {error ? <p className="text-sm text-error" role="alert">{error}</p> : null}
-      <div className="flex justify-end gap-2"><button type="button" className="btn btn-ghost" disabled={busy} onClick={close}>Cancel</button><button className="btn btn-neutral" disabled={busy}>{busy ? 'Saving…' : module ? 'Save module' : 'Create module'}</button></div>
+      <div className="flex justify-end gap-2"><button type="button" className="btn btn-ghost" disabled={busy} onClick={close}>Cancel</button><button className="btn btn-primary rounded-full" disabled={busy}>{busy ? 'Saving…' : module ? 'Save module' : 'Create module'}</button></div>
     </form>
   </StudioDialog>;
 }
