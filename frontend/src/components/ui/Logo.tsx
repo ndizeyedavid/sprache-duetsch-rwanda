@@ -21,7 +21,8 @@ export function Logo({
  width={size}
  height={size}
  className="shrink-0 rounded-full object-contain"
- style={{ width: size, height: size }}
+ // rem, so the badge scales with the laptop root size like the wordmark beside it.
+ style={{ width: `${size / 16}rem`, height: `${size / 16}rem` }}
  />
  {withWordmark ? (
  <span className={`text-sm font-semibold tracking-tight ${wordmarkClassName}`}>
