@@ -1,30 +1,10 @@
-import type { Prisma } from "../../generated/prisma/client.js";
 import { prisma } from "../../lib/prisma.js";
 import type {
 ListAttemptQuery
 } from "./assessments.schema.js";
-import { teacherLevels } from "./teacher-access.js";
+import { attemptListWhere } from "./attempt-list-where.js";
 export const exportAttempts = async (query: ListAttemptQuery, teacherId?: string) => {
-  const levels = await teacherLevels(teacherId);
-  const where: Prisma.AttemptWhereInput = teacherId ? { AND: [{ assessment: { levelId: { in: levels ?? [] } } }, { student: { enrollments: { some: { classGroup: { teacherId }, status: "ACTIVE" } } } }] } : {};
-  if (query.assessmentId) {
-    where.assessmentId = query.assessmentId;
-  }
-  if (query.studentId) {
-    where.studentId = query.studentId;
-  } else if (query.classGroupId) {
-    const studentIds = await prisma.enrollment
-      .findMany({
-        where: { classGroupId: query.classGroupId },
-        select: { studentId: true },
-        distinct: ["studentId"],
-      })
-      .then((rows) => rows.map((row) => row.studentId));
-    where.studentId = studentIds.length > 0 ? { in: studentIds } : { in: [] };
-  }
-  if (query.status) {
-    where.status = query.status;
-  }
+  const where = await attemptListWhere(query, teacherId);
 
   const rows = await prisma.attempt.findMany({
     where,
