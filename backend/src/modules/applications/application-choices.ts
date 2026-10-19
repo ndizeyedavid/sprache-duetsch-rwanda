@@ -7,8 +7,11 @@ export interface ApplicationChoices {
   campusId?: string | null;
 }
 
-/** The level, intake and campus must be live, and the intake must still offer the level. */
-export async function assertApplicationChoices(tx: Prisma.TransactionClient, choices: ApplicationChoices): Promise<void> {
+/**
+ * The level, intake and campus must be live, and the intake must still offer the level.
+ * `requireOpen` (public submissions) also refuses intakes whose registration staff closed.
+ */
+export async function assertApplicationChoices(tx: Prisma.TransactionClient, choices: ApplicationChoices, requireOpen = false): Promise<void> {
   const { levelId, intakeId, campusId } = choices;
   if (levelId) {
     const level = await tx.level.findUnique({ where: { id: levelId }, select: { isActive: true } });
@@ -17,9 +20,10 @@ export async function assertApplicationChoices(tx: Prisma.TransactionClient, cho
   if (intakeId) {
     const intake = await tx.intake.findUnique({
       where: { id: intakeId },
-      select: { isActive: true, endDate: true, levels: { select: { id: true } } },
+      select: { isActive: true, registrationOpen: true, endDate: true, levels: { select: { id: true } } },
     });
     if (!intake?.isActive || intake.endDate < new Date()) throw badRequest("Choose an open intake");
+    if (requireOpen && !intake.registrationOpen) throw badRequest("Registration for this intake is closed");
     if (levelId && !intake.levels.some((level) => level.id === levelId)) throw badRequest("This level is not offered in the selected intake");
   }
   if (campusId) {
