@@ -1,7 +1,31 @@
 import { format } from 'date-fns';
-import { FiArrowUpRight,FiCalendar } from 'react-icons/fi';
-import type { SessionItem } from '../../lib/services';
-export function TeacherScheduleHero({ sessions, onOpen }: { sessions: SessionItem[]; onOpen: (id: string) => void }) {
-  const next = sessions.filter(s => ['LIVE','SCHEDULED','RESCHEDULED'].includes(s.status) && Date.parse(s.endAt)>Date.now()).sort((a,b) => Number(b.status==='LIVE')-Number(a.status==='LIVE') || Date.parse(a.startAt)-Date.parse(b.startAt))[0];
-  return <section className="card bg-base-100 p-5 sm:p-7"><div className="flex items-start justify-between gap-4"><div><p className="text-[10px] font-semibold uppercase tracking-widest text-muted">Your teaching week</p><h1 className="mt-2 text-2xl font-semibold">Make time for learning.</h1><p className="mt-2 text-sm text-muted">Plan your classes, check the details and get everyone together.</p><p className="mt-2 text-xs text-muted">Times shown in {Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll('_',' ')}.</p></div><span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-neutral text-neutral-content"><FiCalendar size={22} /></span></div>{next ? <button type="button" onClick={() => onOpen(next.id)} className="mt-5 flex items-center justify-between gap-4 rounded-box bg-secondary text-secondary-content p-4 text-left"><div><p className="text-xs font-semibold text-secondary">{next.status === 'LIVE' ? 'Live now' : 'Your next class'} · {format(new Date(next.startAt),'EEE d MMM, HH:mm')}</p><h2 className="mt-2 font-semibold">{next.title}</h2><p className="mt-1 text-xs text-muted">{next.classGroup?.name}</p></div><FiArrowUpRight className="shrink-0" /></button> : <p className="mt-5 rounded-box bg-base-200 p-4 text-sm text-muted">Your next class will appear here. Use “New session” to plan one.</p>}</section>;
+import { FiArrowUpRight,FiCalendar,FiClock,FiPlus } from 'react-icons/fi';
+import { WORKSPACE_CONTEXT } from '../admin/workspace-context';
+import { heroAction,heroGhost } from '../hero/hero-actions';
+import { PageHero } from '../hero/PageHero';
+import { WorkspaceHeroLinks } from '../teacher/WorkspaceHeroLinks';
+import type { ScheduleSession } from './ScheduleSessionCard';
+
+type Props = { sessions: ScheduleSession[]; onOpen: (id: string) => void; onNew: () => void; admin?: boolean };
+
+/** Staff schedule header: the next (or live) class, the calendar time zone and "New session". */
+export function TeacherScheduleHero({ sessions, onOpen, onNew, admin = false }: Props) {
+  const next = sessions.filter(s => ['LIVE','SCHEDULED','RESCHEDULED'].includes(s.status) && Date.parse(s.endAt) > Date.now())
+    .sort((a,b) => Number(b.status === 'LIVE') - Number(a.status === 'LIVE') || Date.parse(a.startAt) - Date.parse(b.startAt))[0];
+  const zone = Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll('_', ' ');
+  return (
+    <PageHero eyebrow={admin ? WORKSPACE_CONTEXT.schedule.category : 'Your teaching week'} icon={FiCalendar} title="Schedule" art="schedule" scoped
+      description={next
+        ? <>{next.status === 'LIVE' ? 'Live now' : 'Next up'}: <strong className="font-semibold">{next.title}</strong>{next.classGroup ? ` · ${next.classGroup.name}` : ''}</>
+        : admin ? 'Plan class sessions across the school and keep every group on track.' : 'Plan a focused session and give your students something to look forward to.'}
+      meta={<>
+        {next ? <span className="hero-chip hero-chip-solid"><FiClock aria-hidden />{format(new Date(next.startAt), 'EEE d MMM · HH:mm')}–{format(new Date(next.endAt), 'HH:mm')}</span> : null}
+        <span className="hero-chip" title="Each class's own time zone is shown in its details">Times in {zone}</span>
+      </>}
+      actions={<>
+        <button type="button" onClick={onNew} className={heroAction}><FiPlus aria-hidden />New session</button>
+        {next ? <button type="button" onClick={() => onOpen(next.id)} className={heroGhost}>{next.status === 'LIVE' ? 'Open live class' : 'Prepare for class'}<FiArrowUpRight aria-hidden /></button> : null}
+        {admin ? <WorkspaceHeroLinks segment="schedule" /> : null}
+      </>} />
+  );
 }
