@@ -1,3 +1,4 @@
+import { Dialog } from '../ui/overlay/Dialog';
 import {
 FiCheck,
 FiDownload,
@@ -26,7 +27,7 @@ return (<ul className="space-y-2">
  </span>
  <span className="min-w-0 grow">
  <span className="block truncate text-xs font-medium leading-tight">{m.title}</span>
- <span className="flex flex-wrap items-center gap-2 text-[11px] text-muted">
+ <span className="flex flex-wrap items-center gap-2 text-[0.6875rem] text-muted">
  <span className="rounded-full bg-base-200 px-2 py-0.5">{humanize(m.type)}</span>
  {m.url ? (
  <a href={m.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 truncate font-medium text-brand hover:underline">
@@ -38,7 +39,7 @@ return (<ul className="space-y-2">
  )}
  {m.isDownloadable ? (
  <span className="inline-flex items-center gap-1">
- <FiDownload aria-hidden className="text-[11px]" />
+ <FiDownload aria-hidden className="text-[0.6875rem]" />
  Downloadable
  </span>
  ) : null}
@@ -68,8 +69,7 @@ return (<ul className="space-y-2">
  </div>
 
  {isEditing ? (
- <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
- <button type="button" aria-label="Close" onClick={() => setEditingMaterialId(null)} className="absolute inset-0 bg-black/40 " />
+ <Dialog open onClose={() => setEditingMaterialId(null)} busy={busy} icon={FiFileText} title="Edit resource">
  <form
  onSubmit={(e) => {
  e.preventDefault();
@@ -90,17 +90,8 @@ return (<ul className="space-y-2">
  },
  );
  }}
- className="relative w-full max-w-lg rounded-box bg-base-100 p-5"
+ className="space-y-1"
  >
- <button type="button" onClick={() => setEditingMaterialId(null)} className="btn btn-ghost btn-xs btn-circle absolute right-3 top-3">
- <FiX aria-hidden />
- </button>
- <h4 className="flex items-center gap-2 text-sm font-bold">
- <span className="flex size-7 items-center justify-center rounded-full bg-info text-white">
- <FiFileText aria-hidden />
- </span>
- Edit resource
- </h4>
  <p className="mt-1 text-xs text-muted">Update the file details — changes are visible to students immediately.</p>
  <div className="mt-4 grid gap-3 sm:grid-cols-2">
  <label className="block">
@@ -135,7 +126,7 @@ return (<ul className="space-y-2">
   </button>
  </div>
  </form>
- </div>
+ </Dialog>
  ) : null}
  </li>
  );
