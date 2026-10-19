@@ -1,18 +1,18 @@
 .lesson-map-surface {
   background-image: radial-gradient(var(--color-base-content) 0.7px, transparent 0.7px);
-  background-size: 16px 16px;
+  background-size: 1rem 1rem;
 }
 
-.lesson-map-grid { row-gap: 8px; }
+.lesson-map-grid { row-gap: 0.5rem; }
 
 /* On narrow phones, keep the path beside the label instead of beneath it. */
 .lesson-map-single .lesson-map-link {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-columns: 3rem minmax(0, 1fr);
   grid-template-rows: auto auto;
-  column-gap: 16px;
+  column-gap: 1rem;
   text-align: left;
-  padding-block: 10px;
+  padding-block: 0.625rem;
 }
 
 .lesson-map-single [data-lesson-node] { grid-row: 1 / 3; }
