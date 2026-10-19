@@ -22,7 +22,7 @@ export function AssessmentQuestion({ item, index, value, onChange, disabled }: P
         const checked = selected.includes(option);
         return <label key={optionIndex} className={`flex cursor-pointer items-center gap-3 rounded-field border p-3 text-sm ${checked ? 'border-primary bg-primary text-primary-content' : 'border-base-300'}`}><input type="checkbox" checked={checked} onChange={(event) => onChange(event.target.checked ? [...selected, option] : selected.filter((entry) => entry !== option))} disabled={disabled} className="checkbox checkbox-primary checkbox-sm" />{option}</label>;
       })}</fieldset> : question.type === 'ORDERING' ? <OrderingAnswer options={Array.isArray(question.options) ? question.options.map(String) : []} value={value} onChange={onChange} disabled={disabled} id={question.id} /> : question.type === 'MATCHING' ? <MatchingAnswer options={question.options} value={value} onChange={onChange} disabled={disabled} /> : question.type === 'FILL_BLANK' ? <input aria-label={`Answer for question ${index + 1}`} value={typeof value === 'string' ? value : ''} onChange={(event) => onChange(event.target.value)} disabled={disabled} placeholder="Your answer…" className="input w-full rounded-field border-base-300 bg-base-100 text-sm" /> : <textarea aria-label={`Answer for question ${index + 1}`} value={typeof value === 'string' ? value : ''} onChange={(event) => onChange(event.target.value)} disabled={disabled} rows={4} placeholder="Your answer…" className="textarea w-full rounded-field border-base-300 bg-base-100 text-sm" />}
-      <p className="text-[10px] text-muted">{String(item.points ?? question.points)} pts</p>
+      <p className="text-[0.625rem] text-muted">{String(item.points ?? question.points)} pts</p>
     </section>
   );
 }
