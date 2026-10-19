@@ -1,12 +1,10 @@
 import type { IntakeItem } from '../../lib/services';
 
-/**
- * Where an intake sits relative to today. The API stores no status for an
- * intake, so this is derived from the dates (see `intakePhase`).
- */
-export type IntakePhase = 'Upcoming' | 'Enrolling' | 'Running' | 'Ended';
+/** Where an intake sits in time; derived from its dates (see `intakePhase`). */
+export type IntakePhase = 'Upcoming' | 'Running' | 'Ended';
 
-export const PHASES: readonly IntakePhase[] = ['Upcoming', 'Enrolling', 'Running', 'Ended'];
+/** Registration filter on the intake list: the switch staff flip, plus archived intakes. */
+export type RegistrationFilter = 'All' | 'Open' | 'Closed' | 'Archived';
 
 /** Form state for `IntakeForm` — dates are `yyyy-mm-dd` for `<input type="date">`. */
 export type IntakeDraft = {
@@ -14,15 +12,8 @@ export type IntakeDraft = {
   name: string;
   startDate: string;
   endDate: string;
-  enrollmentOpensAt: string;
-  enrollmentEndsAt: string;
-  registrationFee: string;
-  bookFee: string;
-  currency: string;
-  isActive: boolean;
+  registrationOpen: boolean;
 };
 
-export type PhaseFields = Pick<
-  IntakeItem,
-  'startDate' | 'endDate' | 'enrollmentOpensAt' | 'enrollmentEndsAt'
->;
+export type PhaseFields = Pick<IntakeItem, 'startDate' | 'endDate'>;
+export type RegistrationFields = Pick<IntakeItem, 'isActive' | 'registrationOpen' | 'endDate'>;
