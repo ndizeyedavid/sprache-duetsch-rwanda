@@ -16,7 +16,7 @@ export function Apply() {
 
   return (
     <section>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-brand">Admissions</p>
+      <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.25em] text-brand">Admissions</p>
       <h1 className="mt-3 text-3xl font-semibold tracking-tight">Apply for a course</h1>
       <p className="mt-2 text-sm leading-relaxed text-muted">
         Tell us who you are and what you want to study. We review every application and reply by email.
