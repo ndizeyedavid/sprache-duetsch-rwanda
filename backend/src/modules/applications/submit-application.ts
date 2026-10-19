@@ -10,6 +10,9 @@ import type { ApplicantMailContext } from "./application-mail.js";
 import { applicationReceivedMail,queueApplicantMail } from "./application-mail.js";
 import { OPEN_APPLICATION_STATUSES } from "./application-policy.js";
 import { generateApplicationReference } from "./application-reference.js";
+import { ensureApplicantAccount } from "./ensure-applicant-account.js";
+import { generateOpaqueToken } from "../../lib/ids.js";
+import { hashPassword } from "../../lib/password.js";
 
 export interface ApplicationDraft {
   firstName: string;
@@ -24,6 +27,7 @@ export interface ApplicationDraft {
   message?: string | null;
   source: ApplicationSource;
   rawPayload?: Prisma.InputJsonValue;
+  createAccount?: boolean;
 }
 
 export interface SubmitResult {
@@ -31,6 +35,7 @@ export interface SubmitResult {
   reference: string;
   status: ApplicationStatus;
   created: boolean;
+  accountSetupRequested?: boolean;
 }
 
 const mailContextInclude = { level: { select: { title: true } }, intake: { select: { name: true } } } as const;
@@ -46,15 +51,19 @@ export async function submitApplication(
   const email = draft.email.trim().toLowerCase();
   const levelId = draft.levelId ?? null;
   const intakeId = draft.intakeId ?? null;
+  const passwordHash = draft.createAccount ? await hashPassword(generateOpaqueToken()) : null;
 
   const result = await transact(async (tx) => {
-    await assertApplicationChoices(tx, { levelId, intakeId, campusId: draft.campusId });
+    await assertApplicationChoices(tx, { levelId, intakeId, campusId: draft.campusId }, true);
     const existing = await tx.application.findFirst({
       where: { email, levelId, intakeId, status: { in: OPEN_APPLICATION_STATUSES } },
       orderBy: { createdAt: "desc" },
       include: mailContextInclude,
     });
-    if (existing) return { application: existing, created: false };
+    if (existing) {
+      if (passwordHash) await ensureApplicantAccount(tx, existing, passwordHash);
+      return { application: existing, created: false };
+    }
     const reference = await generateApplicationReference(tx);
     const application = await tx.application.create({
       data: {
@@ -66,6 +75,7 @@ export async function submitApplication(
       },
       include: mailContextInclude,
     });
+    if (passwordHash) await ensureApplicantAccount(tx, application, passwordHash);
     return { application, created: true };
   });
 
@@ -77,7 +87,8 @@ export async function submitApplication(
     }), "received");
     await notifyAdmissionsTeam(application);
   }
-  return { id: application.id, reference: application.reference, status: application.status, created };
+  return { id: application.id, reference: application.reference, status: application.status, created,
+    ...(draft.createAccount ? { accountSetupRequested: true } : {}) };
 }
 
 /** In-app alert (plus email per each admin's preferences) for academic and super admins. */
