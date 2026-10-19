@@ -34,7 +34,7 @@ export function Register() {
  try {
  const [campusList, intakeList, levelList] = await Promise.all([
  apiGet<ReferenceItem[]>('/campuses?pageSize=100'),
- apiGet<ReferenceItem[]>('/intakes?pageSize=100&isActive=true&upcoming=true'),
+ apiGet<ReferenceItem[]>('/intakes?pageSize=100&open=true'),
  apiGet<ReferenceItem[]>('/levels?pageSize=100'),
  ]);
  if (cancelled) return;
