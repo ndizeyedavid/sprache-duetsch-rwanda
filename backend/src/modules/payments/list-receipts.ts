@@ -1,4 +1,5 @@
 import type { Prisma } from "../../generated/prisma/client.js";
+import { andWhere,receiptIntakeWhere } from "../../lib/intake-scope.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import { dateFilter } from './date-filter.js';
@@ -12,6 +13,7 @@ export const listReceipts = async (query: ListReceiptsQuery) => {
   const where: Prisma.ReceiptWhereInput = {};
   if (query.studentId) where.payment = { studentId: query.studentId };
   where.issuedAt = dateFilter(query.from, query.to);
+  andWhere(where, query.intakeId && receiptIntakeWhere(query.intakeId));
 
   const [rows, total] = await prisma.$transaction([
     prisma.receipt.findMany({
