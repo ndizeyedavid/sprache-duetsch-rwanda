@@ -1,11 +1,13 @@
 import { useMemo,useState } from 'react';
-import { AcademicSummary } from '../../components/admin/AcademicSummary';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
 import { IntakeConfirmDialog } from '../../components/intakes/IntakeConfirmDialog';
 import { IntakeForm } from '../../components/intakes/IntakeForm';
 import { IntakeRow } from '../../components/intakes/IntakeRow';
 import { IntakeToolbar } from '../../components/intakes/IntakeToolbar';
-import { intakePhase } from '../../components/intakes/utils';
+import { IntakesHero } from '../../components/intakes/IntakesHero';
+import type { RegistrationFilter } from '../../components/intakes/types';
+import { useRegistrationToggle } from '../../components/intakes/useRegistrationToggle';
+import { matchesRegistration } from '../../components/intakes/utils';
 import { Modal } from '../../components/ui/Modal';
 import { Panel } from '../../components/ui/Panel';
 import { useApi } from '../../hooks/useApi';
@@ -27,18 +29,20 @@ export function AdminIntakes() {
   const [busyId, setBusyId] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [query, setQuery] = useState('');
-  const [phase, setPhase] = useState('All');
+  const [filter, setFilter] = useState<RegistrationFilter>('All');
+  const registration = useRegistrationToggle(intakes.refetch, setToast);
 
   const rows = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return (intakes.data ?? [])
+      .map(registration.withOverride)
       .filter((intake) =>
         needle
           ? `${intake.code} ${intake.name}`.toLowerCase().includes(needle)
           : true,
       )
-      .filter((intake) => (phase === 'All' ? true : intakePhase(intake) === phase));
-  }, [intakes.data, query, phase]);
+      .filter((intake) => matchesRegistration(intake, filter));
+  }, [intakes.data, query, filter, registration.withOverride]);
 
   const close = () => setDialog(null);
 
@@ -60,7 +64,7 @@ export function AdminIntakes() {
     try {
       await updateIntake(intake.id, { isActive: true });
       intakes.refetch();
-      setToast(`${intake.code} is open again.`);
+      setToast(`${intake.code} restored.`);
     } catch (err) {
       setToast(apiErrorMessage(err, 'Could not restore the intake.'));
     } finally {
@@ -70,23 +74,15 @@ export function AdminIntakes() {
 
   return (
     <div className="space-y-5">
-      {intakes.data && <AcademicSummary items={[
-        { label: 'Intakes', value: intakes.data.length, note: 'Loaded cohort windows' },
-        { label: 'Active intakes', value: intakes.data.filter(i => i.isActive).length, note: 'Available academic periods' },
-        { label: 'Archived', value: intakes.data.filter(i => !i.isActive).length, note: 'Retained for historical records' },
-        { label: 'Matching filters', value: rows.length, note: 'Cohorts shown in the register below' },
-      ]} />}
-
-      <IntakeToolbar
-        query={query}
-        onQueryChange={setQuery}
-        phase={phase}
-        onPhaseChange={setPhase}
+      <IntakesHero
+        intakes={intakes.data}
         onCreate={() => {
           setToast(null);
           setDialog({ kind: 'create' });
         }}
       />
+
+      <IntakeToolbar query={query} onQueryChange={setQuery} filter={filter} onFilterChange={setFilter} />
 
       {toast ? (
         <p role="status" className="text-xs font-medium text-brand">
@@ -104,7 +100,7 @@ export function AdminIntakes() {
             title={intakes.data?.length ? 'No intakes match these filters' : 'No intakes yet'}
             hint={
               intakes.data?.length
-                ? 'Clear the search or pick another phase.'
+                ? 'Clear the search or pick another filter.'
                 : 'Create the first intake so classes and enrolments have a cohort to attach to.'
             }
           />
@@ -121,6 +117,8 @@ export function AdminIntakes() {
                 }}
                 onArchive={setArchiving}
                 onRestore={handleRestore}
+                onToggleRegistration={registration.toggle}
+                toggling={registration.isBusy(intake.id)}
               />
             ))}
           </ul>
