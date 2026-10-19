@@ -18,7 +18,7 @@ return (<div className="space-y-6">
  {/* ── Divider: attached content — visually separates lesson form from extras ── */}
  <div className="relative flex items-center gap-3 py-1">
  <div className="h-px grow bg-line" aria-hidden />
- <span className="rounded-full border border-line bg-base-200 px-3 py-1 text-[11px] font-semibold tracking-widest text-muted">Attached content</span>
+ <span className="rounded-full border border-line bg-base-200 px-3 py-1 text-[0.6875rem] font-semibold tracking-widest text-muted">Attached content</span>
  <div className="h-px grow bg-line" aria-hidden />
  </div>
 
@@ -29,13 +29,13 @@ return (<div className="space-y-6">
  <h4 className="flex items-center gap-2 text-xs font-semibold">
  <FiFileText aria-hidden className="text-brand" />
  Resources
- <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">
+ <span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem] font-normal text-muted">
  {data.materials.length}
  </span>
  </h4>
- <span className="hidden text-[11px] text-muted sm:block">Files & links students use to learn</span>
+ <span className="hidden text-[0.6875rem] text-muted sm:block">Files & links students use to learn</span>
  </div>
- <p className="mt-1 text-[11px] leading-snug text-muted">
+ <p className="mt-1 text-[0.6875rem] leading-snug text-muted">
  Notes, PDFs, slides, videos and links. Published lessons show their resources to enrolled students.
  </p>
  </div>
@@ -45,7 +45,7 @@ return (<div className="space-y-6">
  <div className="rounded-box border border-dashed border-line bg-base-200 px-4 py-6 text-center">
  <FiFileText aria-hidden className="mx-auto text-xl text-muted" />
  <p className="mt-2 text-xs font-medium">No resources yet</p>
- <p className="mx-auto mt-1 max-w-sm text-[11px] leading-snug text-muted">
+ <p className="mx-auto mt-1 max-w-sm text-[0.6875rem] leading-snug text-muted">
  Add the first file — e.g. a vocabulary PDF or a link to a video. Students see it inside this lesson.
  </p>
  </div>
@@ -70,11 +70,11 @@ return (<div className="space-y-6">
  <h4 className="flex items-center gap-2 text-xs font-semibold">
  <FiLayers aria-hidden className="text-brand" />
  Practice activities
- <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">{data.activities.length}</span>
+ <span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem] font-normal text-muted">{data.activities.length}</span>
  </h4>
- <span className="hidden text-[11px] text-muted sm:block">Tasks students do — auto-graded or teacher-graded</span>
+ <span className="hidden text-[0.6875rem] text-muted sm:block">Tasks students do — auto-graded or teacher-graded</span>
  </div>
- <p className="mt-1 text-[11px] leading-snug text-muted">
+ <p className="mt-1 text-[0.6875rem] leading-snug text-muted">
  Vocabulary, listening, writing and speaking exercises. Published activities appear in the lesson for students.
  </p>
  </div>
@@ -84,7 +84,7 @@ return (<div className="space-y-6">
  <div className="rounded-box border border-dashed border-line bg-base-200 px-4 py-6 text-center">
  <FiLayers aria-hidden className="mx-auto text-xl text-muted" />
  <p className="mt-2 text-xs font-medium">No activities yet</p>
- <p className="mx-auto mt-1 max-w-sm text-[11px] leading-snug text-muted">
+ <p className="mx-auto mt-1 max-w-sm text-[0.6875rem] leading-snug text-muted">
  Add the first exercise — e.g. a vocabulary matching or a short writing task. Students complete it inside the lesson.
  </p>
  </div>
