@@ -53,7 +53,7 @@ return (<div className="flex items-center gap-3 bg-base-200 px-4 py-3">
  </button>
  <div className="min-w-0 grow">
  <h3 className="truncate text-sm font-semibold leading-tight">{mod.title}</h3>
- <p className="truncate text-[11px] text-muted">
+ <p className="truncate text-[0.6875rem] text-muted">
  Order {mod.order} · {lessons.length} lesson{lessons.length === 1 ? '' : 's'} · {publishedCount} published
  {mod.description ? ` · ${mod.description}` : ''}
  </p>
