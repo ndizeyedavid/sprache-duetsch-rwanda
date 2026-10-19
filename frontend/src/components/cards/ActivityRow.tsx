@@ -12,7 +12,7 @@ export function ActivityRow({ item, className = '' }: ActivityRowProps) {
 
  return (
  <li className={`flex gap-4 ${className}`}>
- <span className="w-16 shrink-0 pt-0.5 text-[11px] text-muted">{item.time}</span>
+ <span className="w-16 shrink-0 pt-0.5 text-[0.6875rem] text-muted">{item.time}</span>
  <div className="flex min-w-0 flex-1 gap-3">
  <img
  src={item.photo}
@@ -30,7 +30,7 @@ export function ActivityRow({ item, className = '' }: ActivityRowProps) {
  {item.attachments.map((file) => (
  <span
  key={file.name}
- className="flex items-center gap-2 rounded-xl bg-base-200 px-3 py-2 text-[11px] font-medium"
+ className="flex items-center gap-2 rounded-xl bg-base-200 px-3 py-2 text-[0.6875rem] font-medium"
  >
  <FiFileText className="text-brand" aria-hidden />
  {file.name}
