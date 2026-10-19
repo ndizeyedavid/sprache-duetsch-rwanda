@@ -1,34 +1,40 @@
-import { FiCalendar,FiUsers } from 'react-icons/fi';
+import { FiArrowUpRight,FiCalendar,FiGrid } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
-import { TeacherClassDetailCard } from '../../components/teacher/TeacherClassDetailCard';
+import { heroAction,heroGhost } from '../../components/hero/hero-actions';
+import { PageHero } from '../../components/hero/PageHero';
+import { classInsights } from '../../components/teacher/class-card/class-insights';
+import { TeacherClassCard } from '../../components/teacher/class-card/TeacherClassCard';
+import { loadTeachingOverview } from '../../components/teacher/dashboard-data';
 import { useApi } from '../../hooks/useApi';
 import { listClasses } from '../../lib/services';
 
 export function TeacherClasses() {
   const classes = useApi('teacher-classes', listClasses);
-  if (classes.loading) return <LoadingBlock label="Loading your classes…" />;
-  if (classes.error || !classes.data) return <ErrorBlock message={classes.error ?? 'Could not load your classes.'} onRetry={classes.refetch} />;
-  const active = classes.data.filter(group => group.isActive);
-  const archived = classes.data.filter(group => !group.isActive);
+  // Optional extras for the cards (work to review, next class); the page works without them.
+  const overview = useApi('teaching-overview', loadTeachingOverview);
+  const active = (classes.data ?? []).filter(group => group.isActive);
+  const archived = (classes.data ?? []).filter(group => !group.isActive);
+  const learners = active.reduce((total, group) => total + group._count.enrollments, 0);
+  const hero = (
+    <PageHero eyebrow="Teaching groups" icon={FiGrid} title="My classes" art="learners" scoped
+      description="Your students, your teaching space. Open a class to see its people, attendance and work to grade."
+      meta={classes.data ? <>
+        <span className="hero-chip">{active.length} active {active.length === 1 ? 'class' : 'classes'}</span>
+        <span className="hero-chip">{learners} {learners === 1 ? 'enrolment' : 'enrolments'}</span>
+      </> : null}
+      actions={<>
+        <Link to="/teacher/schedule" className={heroAction}><FiCalendar aria-hidden />View schedule <FiArrowUpRight aria-hidden /></Link>
+        <Link to="/teacher/attendance" className={heroGhost}>Attendance</Link>
+      </>} />
+  );
+  if (classes.loading) return <div className="space-y-6">{hero}<LoadingBlock label="Loading your classes…" /></div>;
+  if (classes.error || !classes.data) return <div className="space-y-6">{hero}<ErrorBlock message={classes.error ?? 'Could not load your classes.'} onRetry={classes.refetch} /></div>;
   return (
     <div className="space-y-6">
-      <header className="card overflow-hidden bg-base-100">
-        <div className="flex items-center justify-between gap-4 p-6 sm:p-8">
-          <div className="min-w-0">
-            <h1 className="text-2xl font-semibold sm:text-3xl">My Classes</h1>
-            <p className="mt-2 text-sm text-muted">Your students. Your teaching space.</p>
-            <Link to="/teacher/schedule" className="btn btn-sm mt-5"><FiCalendar aria-hidden />View schedule</Link>
-          </div>
-          <img src="/illustrations/study-books.webp" alt="" width={160} height={140} className="w-24 object-contain sm:w-40" />
-        </div>
-        <div className="flex flex-wrap gap-x-6 gap-y-2 bg-base-200 px-6 py-4 text-sm sm:px-8">
-          <span><strong>{active.length}</strong> active {active.length === 1 ? 'class' : 'classes'}</span>
-          <span className="inline-flex items-center gap-2"><FiUsers aria-hidden /><strong>{active.reduce((total, group) => total + group._count.enrollments, 0)}</strong> enrollments</span>
-        </div>
-      </header>
-      {active.length ? <section aria-label="Active classes" className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{active.map(group => <TeacherClassDetailCard key={group.id} group={group} />)}</section> : <div className="card bg-base-100 p-8"><EmptyBlock title="No active classes yet" hint="Your assigned classes will appear here." /></div>}
-      {archived.length ? <section><h2 className="mb-4 text-lg font-semibold text-muted">Past classes <span className="text-sm font-normal">({archived.length})</span></h2><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{archived.map(group => <TeacherClassDetailCard key={group.id} group={group} />)}</div></section> : null}
+      {hero}
+      {active.length ? <section aria-label="Active classes" className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{active.map(group => <TeacherClassCard key={group.id} group={group} insights={overview.error ? null : classInsights(overview.data, group)} />)}</section> : <div className="card bg-base-100 p-8"><EmptyBlock title="No active classes yet" hint="Your assigned classes will appear here." /></div>}
+      {archived.length ? <section><h2 className="mb-4 text-lg font-semibold text-muted">Past classes <span className="text-sm font-normal">({archived.length})</span></h2><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{archived.map(group => <TeacherClassCard key={group.id} group={group} insights={overview.error ? null : classInsights(overview.data, group)} />)}</div></section> : null}
     </div>
   );
 }
