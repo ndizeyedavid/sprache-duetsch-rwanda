@@ -18,7 +18,7 @@ export function EnrolmentSummary({
   return (
     <section
       aria-label="Register summary"
-      className="grid grid-cols-2 gap-3 xl:grid-cols-4"
+      className="grid grid-cols-2 gap-3 md:grid-cols-4"
     >
       <AcademicMetricCard
         label="Enrolment records"
