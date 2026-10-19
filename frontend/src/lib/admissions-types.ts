@@ -11,10 +11,8 @@ export type CatalogLevel = {
 
 export type CatalogIntake = {
   id: string; code: string; name: string; startDate: string; endDate: string;
-  enrollmentOpensAt: string | null; enrollmentEndsAt: string | null;
   registrationFee: Money; bookFee: Money; currency: string;
   levels: { id: string; code: string; title: string }[];
-  enrollmentState: 'OPEN' | 'UPCOMING';
   seats: { levelId: string; campusId: string; seatsLeft: number | null }[];
 };
 
