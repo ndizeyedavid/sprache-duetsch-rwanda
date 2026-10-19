@@ -48,7 +48,7 @@ export function MiniCalendar({
  {WEEKDAYS.map((day, index) => (
  <span
  key={`${day}-${index}`}
- className="pb-2 text-[11px] font-medium text-muted"
+ className="pb-2 text-[0.6875rem] font-medium text-muted"
  >
  {day}
  </span>
