@@ -19,7 +19,7 @@ type SidebarProps = {
 // daisyUI `menu` pressed state uses these variables; keep it a soft brand tint, never a solid fill.
 const MENU_CLASS =
   "menu w-full gap-1 px-3 py-0 [--menu-active-bg:color-mix(in_oklab,var(--color-brand)_10%,transparent)] [--menu-active-fg:var(--color-brand)]";
-const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted";
+const TITLE_CLASS = "menu-title pb-1.5 pt-0 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-muted";
 
 export function Sidebar({ role, open, onClose }: SidebarProps) {
   const items = NAV[role];
@@ -44,17 +44,17 @@ export function Sidebar({ role, open, onClose }: SidebarProps) {
           type="button"
           aria-label="Close navigation"
           onClick={onClose}
-          className="fixed inset-0 z-40 bg-night/40 lg:hidden"
+          className="fixed inset-0 z-40 bg-[#1d1511]/40 backdrop-blur-[3px] lg:hidden"
         />
       ) : null}
 
       <aside
-        className={`workspace-sidebar fixed inset-y-3 left-3 z-50 flex w-60 flex-col rounded-box border border-base-300 bg-base-100  transition-transform duration-300 lg:translate-x-0 ${
+        className={`workspace-sidebar fixed inset-y-3 left-3 z-50 flex w-60 flex-col rounded-box border border-base-300 bg-base-100 transition-transform duration-300 lg:w-56 lg:translate-x-0 roomy:w-60 ${
           open ? "translate-x-0" : "-translate-x-[110%]"
         }`}
       >
-        <div className="flex h-24 shrink-0 items-center px-5">
-          <Logo size={36} withWordmark wordmarkClassName="font-bold text-ink" />
+        <div className="flex h-16 shrink-0 items-center px-4 roomy:h-24 roomy:px-5">
+          <Logo size={36} withWordmark wordmarkClassName="whitespace-nowrap font-bold text-ink" />
         </div>
 
         <nav aria-label="Main navigation" className={`flex-1 overflow-y-auto scrollbar-slim ${NAV_SECTION_PAD_Y}`}>
