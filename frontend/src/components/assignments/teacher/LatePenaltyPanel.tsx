@@ -20,7 +20,7 @@ export function LatePenaltyPanel({ lateness, total, maxPoints, value, onChange, 
         Waive or change the penalty for this student
       </label>
       {value.on ? (
-        <div className="grid gap-2 sm:grid-cols-[120px_minmax(0,1fr)]">
+        <div className="grid gap-2 sm:grid-cols-[7.5rem_minmax(0,1fr)]">
           <label className="flex items-center gap-1 text-xs"><input type="number" aria-label="Penalty percent" className="input input-sm w-20" min={0} max={100} step={0.5} disabled={disabled} value={value.percent} onChange={e => onChange({ ...value, percent: e.target.value })} />%</label>
           <input className="input input-sm w-full" aria-label="Reason for changing the penalty" maxLength={500} disabled={disabled} placeholder="Reason (required, kept in the audit log)" value={value.reason} onChange={e => onChange({ ...value, reason: e.target.value })} />
         </div>
