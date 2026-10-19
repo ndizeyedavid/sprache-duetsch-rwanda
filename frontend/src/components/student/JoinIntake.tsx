@@ -6,7 +6,7 @@ import { currencyAmount } from '../../lib/format';
 import type { IntakeItem } from '../../lib/services';
 import { getMyEnrollments, listLevels } from '../../lib/services';
 
-const getIntakes = () => apiGet<IntakeItem[]>('/intakes?isActive=true&upcoming=true&pageSize=100');
+const getIntakes = () => apiGet<IntakeItem[]>('/intakes?open=true&pageSize=100');
 
 /** Lets a student add a course: pick an intake, then a level offered in it. */
 export function JoinIntake({ onJoined }: { onJoined: () => void }) {
