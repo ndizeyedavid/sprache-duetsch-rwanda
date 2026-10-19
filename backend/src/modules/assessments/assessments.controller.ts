@@ -114,8 +114,8 @@ export const mySkills = async (req: Request, res: Response): Promise<void> => {
   res.json({ success: true, data: skills });
 };
 export const studentSkills = async (req: Request, res: Response): Promise<void> => {
-  const { studentId } = validatedQuery<SkillProfileQuery>(req);
-  const skills = await service.getSkillProfile(studentId);
+  const { studentId, intakeId } = validatedQuery<SkillProfileQuery>(req);
+  const skills = await service.getSkillProfile(studentId, intakeId);
   res.json({ success: true, data: skills });
 };
 export const gradeAttempt = async (req: Request, res: Response): Promise<void> => {
