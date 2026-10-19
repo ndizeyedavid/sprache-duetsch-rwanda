@@ -21,7 +21,7 @@ export function FileSubmissionPlayer({ activityId, config, value, onChange, disa
       <span className="mb-2 block text-xs font-semibold">{busy ? 'Uploading…' : file ? 'Replace your file' : 'Upload your work'}</span>
       <input type="file" accept={ACCEPT} disabled={disabled || busy} className="file-input file-input-sm w-full" aria-label="Upload your work"
         onChange={event => { const selected = event.target.files?.[0]; if (selected) void choose(selected); event.target.value = ''; }} />
-      <span className="mt-2 block text-[11px] text-muted">PDF or a clear photo (JPG, PNG, WebP) · up to 10 MB</span>
+      <span className="mt-2 block text-[0.6875rem] text-muted">PDF or a clear photo (JPG, PNG, WebP) · up to 10 MB</span>
     </label>
     {file ? <button type="button" className="btn btn-sm gap-2 rounded-full" onClick={() => void openMaterial(file.fileUrl, 'Your submission').catch(() => {})}><FiFileText aria-hidden />Open uploaded file</button> : null}
     {error ? <p role="alert" className="text-xs text-error">{error}</p> : null}
