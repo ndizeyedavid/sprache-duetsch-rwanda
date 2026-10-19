@@ -15,6 +15,7 @@ studentRows,
 toScorePct,
 trendByWeek,
 } from "../../components/reports/utils";
+import { TeacherReportsHero } from "../../components/reports/TeacherReportsHero";
 import { Panel } from "../../components/ui/Panel";
 import { useApi } from "../../hooks/useApi";
 import { listActivitySubmissions,listAssessments,listAttempts,listClasses } from "../../lib/services";
@@ -151,18 +152,19 @@ export function TeacherReports() {
     }
   }, [classId, assessmentId, classes.data, allowedAssessments]);
 
+  const hero = <TeacherReportsHero classes={classes.data?.length} />;
   if (classes.loading && !classes.data)
-    return <LoadingBlock label="Loading reports…" />;
+    return <div className="space-y-4">{hero}<LoadingBlock label="Loading reports…" /></div>;
   if (classes.error)
-    return <ErrorBlock message={classes.error} onRetry={classes.refetch} />;
+    return <div className="space-y-4">{hero}<ErrorBlock message={classes.error} onRetry={classes.refetch} /></div>;
   if (!classes.data || classes.data.length === 0) {
     return (
-      <Panel>
-        <EmptyBlock
-          title="No classes assigned"
-          hint="Reports appear once you are assigned to a class group."
-        />
-      </Panel>
+      <div className="space-y-4">
+        {hero}
+        <Panel>
+          <EmptyBlock title="No classes assigned" hint="Reports appear once you are assigned to a class group." />
+        </Panel>
+      </div>
     );
   }
 
