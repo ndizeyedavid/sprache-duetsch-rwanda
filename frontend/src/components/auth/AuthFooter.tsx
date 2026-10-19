@@ -11,13 +11,13 @@ export function AuthFooter() {
   return (
     <footer className="mt-12 text-center text-xs text-muted">
       <p>© 2026 Deutsch Sprache RW · Kigali, Rwanda</p>
-      <dl className={`mx-auto mt-4 inline-grid grid-cols-[auto_auto] gap-x-3 gap-y-1.5 rounded-box px-5 py-3 text-left text-white [text-shadow:0_1px_2px_rgb(0_42_110_/_0.45)] ${CREDIT_GRADIENT}`}>
+      <dl className={`mx-auto mt-4 inline-grid grid-cols-[auto_auto] gap-x-3 gap-y-1.5 px-5 py-3 bg-clip-text text-left text-transparent ${CREDIT_GRADIENT}`}>
         {CREDITS.map((credit) => (
           <div key={credit.label} className="contents">
             <dt className="text-right text-[0.6875rem] font-medium uppercase tracking-[0.15em]">{credit.label}</dt>
             <dd className="font-semibold">
               {'href' in credit ? (
-                <a href={credit.href} target="_blank" rel="noopener" className="hover:underline">{credit.name}</a>
+                <a href={credit.href} target="_blank" rel="noopener" className="decoration-[#004aad] underline-offset-2 hover:underline">{credit.name}</a>
               ) : credit.name}
             </dd>
           </div>
