@@ -1,5 +1,5 @@
 import type { IntakeItem } from '../../lib/services';
-import type { IntakeDraft,IntakePhase,PhaseFields } from './types';
+import type { IntakeDraft,IntakePhase,PhaseFields,RegistrationFields,RegistrationFilter } from './types';
 
 const pad = (value: number) => String(value).padStart(2, '0');
 
@@ -22,12 +22,7 @@ export function emptyDraft(): IntakeDraft {
     name: '',
     startDate: '',
     endDate: '',
-    enrollmentOpensAt: '',
-    enrollmentEndsAt: '',
-    registrationFee: '',
-    bookFee: '',
-    currency: 'RWF',
-    isActive: true,
+    registrationOpen: true,
   };
 }
 
@@ -37,12 +32,7 @@ export function toDraft(intake: IntakeItem): IntakeDraft {
     name: intake.name,
     startDate: toDateInput(intake.startDate),
     endDate: toDateInput(intake.endDate),
-    enrollmentOpensAt: toDateInput(intake.enrollmentOpensAt),
-    enrollmentEndsAt: toDateInput(intake.enrollmentEndsAt),
-    registrationFee: String(Number(intake.registrationFee)),
-    bookFee: String(Number(intake.bookFee)),
-    currency: intake.currency,
-    isActive: intake.isActive,
+    registrationOpen: intake.registrationOpen,
   };
 }
 
@@ -83,48 +73,29 @@ export function withStartDate(
   };
 }
 
-/** The four lifecycle phases, derived from the dates. `now` is injectable for tests. */
-export function intakePhase(
-  intake: PhaseFields,
-  now: Date = new Date(),
-): IntakePhase {
+/** Where the intake sits in time. `now` is injectable for tests. */
+export function intakePhase(intake: PhaseFields, now: Date = new Date()): IntakePhase {
   const time = now.getTime();
-  const start = new Date(intake.startDate).getTime();
-  const end = new Date(intake.endDate).getTime();
-  if (time < start) return 'Upcoming';
-  if (time > end) return 'Ended';
-  const opens = intake.enrollmentOpensAt ? new Date(intake.enrollmentOpensAt).getTime() : null;
-  const closes = intake.enrollmentEndsAt ? new Date(intake.enrollmentEndsAt).getTime() : null;
-  if (opens !== null && closes !== null && time >= opens && time <= closes) return 'Enrolling';
+  if (time < new Date(intake.startDate).getTime()) return 'Upcoming';
+  if (time > new Date(intake.endDate).getTime()) return 'Ended';
   return 'Running';
 }
 
-/** Percentage position of a window on the shared timeline, clamped to 0–100. */
-export function windowSpan(
-  from: string | null | undefined,
-  to: string | null | undefined,
-  origin: number,
-  size: number,
-): { left: number; width: number } | null {
-  if (!from || !to || size <= 0) return null;
-  const start = new Date(from).getTime();
-  const end = new Date(to).getTime();
-  if (Number.isNaN(start) || Number.isNaN(end) || end <= start) return null;
-  const left = ((Math.max(start, origin) - origin) / size) * 100;
-  const right = ((Math.min(end, origin + size) - origin) / size) * 100;
-  return { left, width: Math.max(right - left, 2) };
+/** Students can register only while the switch is on, the intake is live and has not ended. */
+export function isRegistrationOpen(intake: RegistrationFields, now: Date = new Date()): boolean {
+  return intake.isActive && intake.registrationOpen && new Date(intake.endDate).getTime() >= now.getTime();
 }
 
-export type TimelineScale = { origin: number; size: number; today: number | null };
+export function matchesRegistration(intake: RegistrationFields, filter: RegistrationFilter): boolean {
+  if (filter === 'All') return true;
+  if (filter === 'Archived') return !intake.isActive;
+  return intake.isActive && isRegistrationOpen(intake) === (filter === 'Open');
+}
 
-/** One scale for the course and enrolment rails so the two bars line up. */
-export function timelineScale(intake: PhaseFields, now: Date = new Date()): TimelineScale {
-  const stamps = [new Date(intake.startDate).getTime(), new Date(intake.endDate).getTime()];
-  for (const value of [intake.enrollmentOpensAt, intake.enrollmentEndsAt]) {
-    if (value) stamps.push(new Date(value).getTime());
-  }
-  const origin = Math.min(...stamps);
-  const size = Math.max(Math.max(...stamps) - origin, 1);
-  const now_ = now.getTime();
-  return { origin, size, today: now_ >= origin && now_ <= origin + size ? now_ : null };
+/** Percentage of the course already taught (0 before the start, 100 after the end). */
+export function courseProgress(intake: PhaseFields, now: Date = new Date()): number {
+  const start = new Date(intake.startDate).getTime();
+  const end = new Date(intake.endDate).getTime();
+  if (end <= start) return 0;
+  return Math.round(Math.min(Math.max((now.getTime() - start) / (end - start), 0), 1) * 100);
 }
