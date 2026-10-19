@@ -18,14 +18,14 @@ export function PlacementIntro({ data, onStart, starting, error, retake }: Props
   return (
     <section className="card learning-panel gap-4 p-5 sm:p-6">
       <div>
-        <p className="text-[11px] font-medium uppercase tracking-wide text-muted">{retake ? 'Retake available' : 'Placement test'}</p>
+        <p className="text-[0.6875rem] font-medium uppercase tracking-wide text-muted">{retake ? 'Retake available' : 'About the test'}</p>
         <h2 className="mt-1 text-lg font-semibold">{test.title}</h2>
         {test.description ? <p className="mt-2 text-sm leading-6 text-muted">{test.description}</p> : null}
       </div>
       <dl className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         {facts.map((fact) => (
           <div key={fact.label} className="rounded-field bg-base-200 p-3">
-            <dt className="flex items-center gap-1.5 text-[10px] text-muted"><fact.icon aria-hidden />{fact.label}</dt>
+            <dt className="flex items-center gap-1.5 text-[0.625rem] text-muted"><fact.icon aria-hidden />{fact.label}</dt>
             <dd className="mt-1.5 text-sm font-semibold">{fact.value}</dd>
           </div>
         ))}
