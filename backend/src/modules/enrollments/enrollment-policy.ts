@@ -1,11 +1,8 @@
 import type { Prisma } from "../../generated/prisma/client.js";
 import { badRequest,conflict,notFound } from "../../lib/http-error.js";
 
-export function validateIntakeDates(value: { startDate: Date; endDate: Date; enrollmentOpensAt?: Date | null; enrollmentEndsAt?: Date | null }) {
+export function validateIntakeDates(value: { startDate: Date; endDate: Date }) {
   if (value.endDate <= value.startDate) throw badRequest("Intake end must be after its start");
-  if (value.enrollmentOpensAt && value.enrollmentEndsAt && value.enrollmentEndsAt <= value.enrollmentOpensAt)
-    throw badRequest("Enrolment closing must be after opening");
-  if (value.enrollmentEndsAt && value.enrollmentEndsAt > value.endDate) throw badRequest("Enrolment cannot close after the intake ends");
 }
 
 export async function checkEnrollmentClass(tx: Prisma.TransactionClient, input: {
