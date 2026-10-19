@@ -38,7 +38,8 @@ describe("B1 course manifest", () => {
     expect(html).toContain("<h2>Grammatik: Adjektive als Nomen</h2>");
     expect(html).toContain('class="course-table-wrap"');
     expect(html).toContain("EN: friendship · FR: <span lang=\"fr\">l'amitié</span>");
-    expect(html).toContain("https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&amp;q=60&amp;auto=format");
+    expect(html).toContain('src="/coursebook/photos/photo-1511988617509-a57c8a288659.webp"');
+    expect(html).not.toMatch(/unsplash|figcaption/);
     expect(html).not.toMatch(/<script|onerror/i);
     expect(estimateMinutes(course.lektionen[0])).toBeGreaterThanOrEqual(40);
   });
