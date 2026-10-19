@@ -1,4 +1,5 @@
 import type { Prisma } from "../../generated/prisma/client.js";
+import { andWhere,chargeIntakeWhere } from "../../lib/intake-scope.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import { dateFilter } from './date-filter.js';
@@ -14,6 +15,7 @@ export const listCharges = async (query: ListChargesQuery) => {
   if (query.enrollmentId) where.enrollmentId = query.enrollmentId;
   if (query.type) where.type = query.type;
   where.createdAt = dateFilter(query.from, query.to);
+  andWhere(where, query.intakeId && chargeIntakeWhere(query.intakeId));
 
   const [rows, total] = await prisma.$transaction([
     prisma.charge.findMany({
