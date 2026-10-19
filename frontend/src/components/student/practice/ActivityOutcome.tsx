@@ -32,7 +32,7 @@ export function ActivityOutcome({ isCorrect, status, attemptNumber, score, feedb
         <button type="button" onClick={handleRedo} className="btn gap-1 rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content"><FiRefreshCw aria-hidden />{completion ? 'Review again' : 'Redo'}</button>
         {nextLesson ? <Link to={`/courses/${slug}/learn/${nextLesson.id}`} className="btn gap-1 rounded-full border-line bg-base-100">Next lesson<FiArrowRight aria-hidden /></Link> : <Link to={`/courses/${slug}/learn`} className="btn gap-1 rounded-full border-line bg-base-100">Back to course<FiExternalLink aria-hidden /></Link>}
       </div>
-      <p className="text-[11px] text-muted">Your progress is saved for your facilitator to review.</p>
+      <p className="text-[0.6875rem] text-muted">Your progress is saved for your facilitator to review.</p>
     </div>
   );
 }
