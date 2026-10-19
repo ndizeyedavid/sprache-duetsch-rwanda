@@ -14,7 +14,7 @@ listLevels,
 
 const AUDIENCES = ['STUDENTS', 'STAFF', 'ALL'] as const;
 
-export function AnnouncementComposer({ onSent }: { onSent: () => void }) {
+export function AnnouncementComposer({ onSent }: { onSent: (recipients: number) => void }) {
  const levels = useApi('levels-catalog', listLevels);
  const intakes = useApi('intakes-full', listIntakesFull);
  const campuses = useApi('campuses-full', listCampusesFull);
@@ -41,7 +41,7 @@ export function AnnouncementComposer({ onSent }: { onSent: () => void }) {
  ...(campusId ? { campusId } : {}),
  ...(classGroupId ? { classGroupId } : {}),
  };
- await createAnnouncement({
+ const sent = await createAnnouncement({
  title: title.trim(),
  body: body.trim(),
  audience: audience as 'STUDENTS' | 'STAFF' | 'ALL',
@@ -49,7 +49,7 @@ export function AnnouncementComposer({ onSent }: { onSent: () => void }) {
  });
  setTitle('');
  setBody('');
- onSent();
+ onSent(sent.recipientCount);
  } catch (err) {
  setFormError(apiErrorMessage(err, 'Could not send the announcement.'));
  } finally {
@@ -135,10 +135,10 @@ export function AnnouncementComposer({ onSent }: { onSent: () => void }) {
  </button>
  </form>
  <div className="mb-5 rounded-box border border-base-300 bg-base-200 p-4">
- <p className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-muted"><FiMessageCircle aria-hidden />Message preview</p>
+ <p className="flex items-center gap-2 text-[0.625rem] font-bold uppercase tracking-wider text-muted"><FiMessageCircle aria-hidden />Message preview</p>
  <h3 className="mt-3 break-words text-base font-semibold">{title.trim() || 'Your headline appears here'}</h3>
  <p className="mt-2 whitespace-pre-wrap break-words text-xs leading-6 text-muted">{body.trim() || 'Write a short, helpful update for your school community.'}</p>
- <p className="mt-4 border-t border-base-300 pt-3 text-[11px] text-muted">Audience: {humanize(audience)}{levelId || intakeId || campusId || classGroupId ? ' · Cohort filters applied' : ' · No cohort filters'}</p>
+ <p className="mt-4 border-t border-base-300 pt-3 text-[0.6875rem] text-muted">Members get it in the app (pop-up on their dashboard) and by email · Audience: {humanize(audience)}{levelId || intakeId || campusId || classGroupId ? ' · Cohort filters applied' : ' · No cohort filters'}</p>
  </div>
 
  </div>);
