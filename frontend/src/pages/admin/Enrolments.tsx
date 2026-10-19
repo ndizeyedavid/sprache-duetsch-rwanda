@@ -4,6 +4,7 @@ import { EnrolmentCreateDialog } from '../../components/enrolments/EnrolmentCrea
 import { EnrolmentManageDialog } from '../../components/enrolments/EnrolmentManageDialog';
 import { EnrolmentRegister } from '../../components/enrolments/EnrolmentRegister';
 import { EnrolmentSummary } from '../../components/enrolments/EnrolmentSummary';
+import { EnrolmentsHero } from '../../components/enrolments/EnrolmentsHero';
 import { EMPTY_FILTERS } from '../../components/enrolments/constants';
 import type { EnrolmentFilters } from '../../components/enrolments/types';
 import { useEnrolmentActions } from '../../components/enrolments/useEnrolmentActions';
@@ -37,6 +38,8 @@ export function AdminEnrolments() {
 
   return (
     <div className="space-y-5">
+      <EnrolmentsHero onCreate={() => setCreating(true)} />
+
       {enrolments.data && <EnrolmentSummary
         stats={stats}
         awaitingActive={filters.awaitingOnly}
@@ -59,7 +62,6 @@ export function AdminEnrolments() {
           onFilter={(patch) => setFilters((current) => ({ ...current, ...patch }))}
           onClear={() => setFilters(resetFilters())}
           onManage={setManaging}
-          onCreate={() => setCreating(true)}
           savingId={actions.savingId}
           levels={levels.data ?? []}
           intakes={intakes.data ?? []}
