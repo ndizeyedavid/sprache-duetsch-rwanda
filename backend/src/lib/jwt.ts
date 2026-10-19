@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import type { SignOptions } from "jsonwebtoken";
 import jwt from "jsonwebtoken";
 import { env,refreshTokenSecret } from "../config/env.js";
@@ -9,6 +10,8 @@ export interface TokenPayload {
   email: string;
   role: Role;
   typ: "access" | "refresh";
+  /** Sign-in session id; students are allowed one active session at a time. */
+  sid?: string;
 }
 
 const accessOptions: SignOptions = {
@@ -19,18 +22,20 @@ const refreshOptions: SignOptions = {
   expiresIn: env.JWT_REFRESH_EXPIRES_IN as SignOptions["expiresIn"],
 };
 
-const buildPayload = (userId: string, email: string, role: Role, typ: TokenPayload["typ"]) => ({
-  sub: userId,
-  email,
-  role,
-  typ,
-});
+const buildPayload = (
+  userId: string,
+  email: string,
+  role: Role,
+  typ: TokenPayload["typ"],
+  sessionId?: string,
+): TokenPayload => ({ sub: userId, email, role, typ, ...(sessionId ? { sid: sessionId } : {}) });
 
-export const signAccessToken = (userId: string, email: string, role: Role): string =>
-  jwt.sign(buildPayload(userId, email, role, "access"), env.JWT_SECRET, accessOptions);
+export const signAccessToken = (userId: string, email: string, role: Role, sessionId?: string): string =>
+  jwt.sign(buildPayload(userId, email, role, "access", sessionId), env.JWT_SECRET, accessOptions);
 
-export const signRefreshToken = (userId: string, email: string, role: Role): string =>
-  jwt.sign(buildPayload(userId, email, role, "refresh"), refreshTokenSecret, refreshOptions);
+// `jwtid` keeps two refresh tokens issued in the same second from colliding on their stored hash.
+export const signRefreshToken = (userId: string, email: string, role: Role, sessionId?: string): string =>
+  jwt.sign(buildPayload(userId, email, role, "refresh", sessionId), refreshTokenSecret, { ...refreshOptions, jwtid: randomUUID() });
 
 const verifyWith = (token: string, secret: string, expected: TokenPayload["typ"]): TokenPayload => {
   try {
