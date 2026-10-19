@@ -6,8 +6,8 @@ export type IntakeItem = {
   name: string;
   startDate: string;
   endDate: string;
-  enrollmentOpensAt: string | null;
-  enrollmentEndsAt: string | null;
+  /** Registration switch: students can register while this is on and the intake has not ended. */
+  registrationOpen: boolean;
   registrationFee: Money;
   bookFee: Money;
   currency: string;
