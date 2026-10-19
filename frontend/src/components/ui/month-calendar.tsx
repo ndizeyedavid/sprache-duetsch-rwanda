@@ -51,7 +51,7 @@ export function MonthCalendar({
  {WEEKDAYS.map((day, index) => (
  <span
  key={`${day}-${index}`}
- className="text-[11px] font-medium text-muted"
+ className="text-[0.6875rem] font-medium text-muted"
  >
  {day}
  </span>
@@ -70,7 +70,7 @@ export function MonthCalendar({
  }`}
  >
  <span
- className={`text-[11px] font-medium ${inMonth ? "text-ink" : "text-muted"}`}
+ className={`text-[0.6875rem] font-medium ${inMonth ? "text-ink" : "text-muted"}`}
  >
  {day.getDate()}
  </span>
@@ -78,20 +78,20 @@ export function MonthCalendar({
  {dayEvents.slice(0, 2).map((event) => (
  <span
  key={event.label}
- className={`block truncate rounded-md px-1.5 py-1 text-[10px] font-medium ${TONE_CLASSES[event.tone].soft} ${TONE_CLASSES[event.tone].text}`}
+ className={`block truncate rounded-md px-1.5 py-1 text-[0.625rem] font-medium ${TONE_CLASSES[event.tone].soft} ${TONE_CLASSES[event.tone].text}`}
  >
  <span className="block truncate font-semibold">
  {event.label}
  </span>
  {event.time ? (
- <span className="block text-[9px] opacity-80">
+ <span className="block text-[0.5625rem] opacity-80">
  {event.time}
  </span>
  ) : null}
  </span>
  ))}
  {dayEvents.length > 2 ? (
- <span className="block text-[10px] text-muted">
+ <span className="block text-[0.625rem] text-muted">
  +{dayEvents.length - 2} more
  </span>
  ) : null}
