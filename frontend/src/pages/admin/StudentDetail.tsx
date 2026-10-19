@@ -12,6 +12,8 @@ import { PaymentsTab } from '../../components/student-record/PaymentsTab';
 import { RecordTabs } from '../../components/student-record/RecordTabs';
 import { StudentRecordHeader } from '../../components/student-record/StudentRecordHeader';
 import { resolveTab } from '../../components/student-record/utils';
+import { useRecordSuspension } from '../../components/student-suspension/useRecordSuspension';
+import { SuspensionNotice } from '../../components/student-suspension/SuspensionNotice';
 import { useApi } from '../../hooks/useApi';
 import { isAdmin,isFinance } from '../../lib/roles';
 import { getStudent } from '../../lib/services/get-student';
@@ -30,14 +32,28 @@ export function AdminStudentDetail() {
   const wantsProgress = access.academic && (tab === 'overview' || tab === 'learning');
   const progress = useApi(`student-progress-${studentId}`, () => getStudentProgress(studentId), wantsProgress);
 
+  const suspended = student.data?.user.status === 'SUSPENDED';
+  const suspension = useRecordSuspension({
+    student: { id: student.data?.id ?? '', name: student.data ? `${student.data.user.firstName} ${student.data.user.lastName}` : '', suspended },
+    onChanged: student.refetch,
+  });
+
   const openTab = useCallback(
     (next: RecordTab) => setParams(next === DEFAULT_TAB ? {} : { tab: next }, { replace: true }),
     [setParams],
   );
 
-  if (student.loading) return <LoadingBlock label="Loading student record…" />;
-  if (student.error || !student.data) {
-    return <ErrorBlock message={student.error ?? 'Could not load this student.'} onRetry={student.refetch} />;
+  if (student.loading || student.error || !student.data) {
+    return (
+      <div className="space-y-4">
+        <StudentRecordHeader student={null} />
+        {student.loading ? (
+          <LoadingBlock label="Loading student record…" />
+        ) : (
+          <ErrorBlock message={student.error ?? 'Could not load this student.'} onRetry={student.refetch} />
+        )}
+      </div>
+    );
   }
 
   const data = student.data;
@@ -50,7 +66,9 @@ export function AdminStudentDetail() {
 
   return (
     <div className="space-y-4">
-      <StudentRecordHeader student={data} />
+      <StudentRecordHeader student={data} extraActions={access.academic ? suspension.action : null} />
+      {suspended ? <SuspensionNotice reason={data.user.suspendedReason} since={data.user.suspendedAt} /> : null}
+      {access.academic ? suspension.extras : null}
       <RecordTabs active={tab} access={access} onChange={openTab} counts={counts} />
       <div id={`record-panel-${tab}`} role="tabpanel" aria-labelledby={`record-tab-${tab}`}>
         {tab === 'overview' ? (
@@ -60,7 +78,7 @@ export function AdminStudentDetail() {
         {tab === 'assessments' ? <AssessmentsTab studentId={data.id} /> : null}
         {tab === 'attendance' ? <AttendanceTab studentId={data.id} summary={data.attendance} /> : null}
         {tab === 'certificates' ? <CertificatesTab studentId={data.id} /> : null}
-        {tab === 'payments' ? <PaymentsTab studentId={data.id} finance={data.finance} /> : null}
+        {tab === 'payments' ? <PaymentsTab studentId={data.id} finance={data.finance} who={{ name: `${data.user.firstName} ${data.user.lastName}`, code: data.studentCode }} onChanged={student.refetch} /> : null}
       </div>
     </div>
   );
