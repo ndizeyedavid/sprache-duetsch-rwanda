@@ -13,6 +13,7 @@ const STATUS_TONES: Record<string, Tone> = {
   Active: 'brand',
   Deferred: 'sun',
   Inactive: 'muted',
+  Archived: 'muted',
   Pending: 'sun',
   Suspended: 'coral',
   Withdrawn: 'muted',
