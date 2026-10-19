@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { asyncHandler } from "../../lib/async-handler.js";
-import { ACADEMIC_ROLES } from "../../lib/roles.js";
+import { ACADEMIC_ROLES,ADMIN_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
@@ -20,6 +20,8 @@ updateLessonSchema,
 updateMaterialSchema,
 updateModuleSchema
 } from "./content.schema.js";
+import { levelsOverviewList,levelsOverviewQuerySchema,type LevelsOverviewQuery } from "./levels-overview.js";
+import { validatedQuery } from "../../lib/request.js";
 import { studentContentRouter } from "./student-content.routes.js";
 export const contentRouter = Router();
 contentRouter.use(studentContentRouter);
@@ -32,6 +34,14 @@ contentRouter.post(
   requireRole(...ACADEMIC_ROLES),
   validate({ params: levelIdParamsSchema, body: createModuleSchema }),
   asyncHandler(controller.createModule),
+);
+// Course catalogue stats for the admin Courses page (before "/levels/:levelId/...").
+contentRouter.get(
+  "/levels/overview",
+  requireAuth,
+  requireRole(...ADMIN_ROLES),
+  validate({ query: levelsOverviewQuerySchema }),
+  asyncHandler(async (req, res) => { res.json({ success: true, data: await levelsOverviewList(validatedQuery<LevelsOverviewQuery>(req)) }); }),
 );
 contentRouter.get(
   "/levels/:levelId/modules",
