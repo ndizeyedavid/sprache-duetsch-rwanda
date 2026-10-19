@@ -66,7 +66,7 @@ export function CertificatesCard({
                   disabled={certificate.status !== 'ISSUED'}
                   className="btn btn-ghost btn-xs gap-1.5 rounded-full border border-line"
                 >
-                  <FiEye aria-hidden size={12} />
+                  <FiEye aria-hidden size="0.75rem" />
                   Preview
                 </button>
                 <button
@@ -78,7 +78,7 @@ export function CertificatesCard({
                   {pendingId === certificate.id ? (
                     <span className="loading loading-spinner loading-xs" />
                   ) : (
-                    <FiDownload aria-hidden size={12} />
+                    <FiDownload aria-hidden size="0.75rem" />
                   )}
                   PDF
                 </button>
