@@ -1,5 +1,6 @@
 import type { Prisma } from "../../generated/prisma/client.js";
 import { notFound } from "../../lib/http-error.js";
+import { andWhere,studentIntakeWhere } from "../../lib/intake-scope.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import { getTeacherLevelIds } from "../../lib/teacher-levels.js";
@@ -15,6 +16,7 @@ export const listActivitySubmissions = async (actor: ContentActor, query: ListAc
   if (query.studentId) where.studentId = query.studentId;
   if (query.status) where.status = query.status;
   if (query.lessonId) where.activity = { lessonId: query.lessonId };
+  andWhere(where, query.intakeId && { student: studentIntakeWhere(query.intakeId) });
 
   // Scope teachers to their levels
   if (actor.role === 'TEACHER' && actor.id) {
