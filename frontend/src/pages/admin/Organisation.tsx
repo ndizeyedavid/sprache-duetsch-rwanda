@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { FiEdit2,FiMapPin,FiPhone,FiPlus } from "react-icons/fi";
-import { AcademicSummary } from "../../components/admin/AcademicSummary";
+import { Link } from "react-router-dom";
+import { WORKSPACE_CONTEXT } from "../../components/admin/workspace-context";
+import { heroAction,heroGhost } from "../../components/hero/hero-actions";
+import { PageHero } from "../../components/hero/PageHero";
 import { CampusEditorForm } from "../../components/admin/CampusEditorForm";
 import {
 EmptyBlock,
@@ -13,6 +16,8 @@ import { StatusBadge } from "../../components/ui/StatusBadge";
 import { useApi } from "../../hooks/useApi";
 import type { CampusItem } from "../../lib/services";
 import { listCampusesFull } from "../../lib/services";
+
+const context = WORKSPACE_CONTEXT.organisation;
 
 export function AdminOrganisation() {
   const campuses = useApi("campuses-full", listCampusesFull);
@@ -27,34 +32,19 @@ export function AdminOrganisation() {
   }
   return (
     <div className="space-y-5">
-      {campuses.data && (
-        <AcademicSummary
-          items={[
-            { label: "Campuses", value: rows.length, note: "School locations" },
-            {
-              label: "Active",
-              value: rows.filter((c) => c.isActive).length,
-              note: "Available campuses",
-            },
-            {
-              label: "With contact details",
-              value: rows.filter((c) => c.phone || c.email).length,
-              note: "Phone or email available",
-            },
-          ]}
-        />
-      )}
+      <PageHero eyebrow={context.category} icon={FiMapPin} title="Organisation" art="campus"
+        description="Your campuses, addresses and contact details, as learners and staff see them across the school."
+        meta={campuses.data ? <>
+          <span className="hero-chip hero-chip-solid">{rows.length} {rows.length === 1 ? "campus" : "campuses"}</span>
+          <span className="hero-chip">{rows.filter((c) => c.isActive).length} active</span>
+          <span className="hero-chip">{rows.filter((c) => c.phone || c.email).length} with contact details</span>
+        </> : null}
+        actions={<>
+          <button type="button" onClick={() => edit(null)} className={heroAction}><FiPlus aria-hidden />New campus</button>
+          {context.links.map((link) => <Link key={link.to} to={link.to} className={heroGhost}>{link.label}</Link>)}
+        </>} />
       <Panel>
-        <div className="mb-4 flex items-center justify-between gap-3">
-          <SectionHeader title="Campuses" className="mb-0" />
-          <button
-            onClick={() => edit(null)}
-            className="btn btn-primary btn-sm rounded-full"
-          >
-            <FiPlus aria-hidden />
-            New campus
-          </button>
-        </div>
+        <SectionHeader title="Campuses" />
         {success && (
           <p
             role="status"
@@ -82,7 +72,7 @@ export function AdminOrganisation() {
                   </span>
                   <StatusBadge status={c.isActive ? "Active" : "Inactive"} />
                 </div>
-                <p className="mt-4 text-[10px] uppercase tracking-wider text-muted">
+                <p className="mt-4 text-[0.625rem] uppercase tracking-wider text-muted">
                   {c.code}
                 </p>
                 <h3 className="mt-1 font-semibold">{c.name}</h3>
