@@ -1,0 +1,24 @@
+Generated with the Codex CLI built-in image tool on a flat #B60E1C background, then keyed to transparent WebP (alpha), cropped and resized to 640px tall.
+
+Shared style:
+Photorealistic editorial photo cut-out, warm natural studio lighting, Rwandan adults (age 20-40) in a German-language school in Kigali. Wardrobe in mustard, cream, rust, olive and navy tones — absolutely NO red or pink clothing or red objects. The subject(s) are isolated on a perfectly flat, uniform solid background of exact colour #B60E1C with no gradient, no vignette, no cast shadow, no floor line. Landscape 3:2 (1536x1024), subjects occupy the right 60% of the frame and are cropped at the bottom edge (waist-up or desk-level), with plenty of empty red on the left. No text, no letters, no logos, no watermark, no screens showing readable words.
+
+Per image (files are named after the key; schedule is schedule-2.webp so cached old copies are not reused):
+courses|A young Rwandan woman student wearing headphones smiling while reading an open German textbook with colourful sticky tabs, a second student beside her pointing at the page.
+notes|A Rwandan student writing neat vocabulary notes in a spiral notebook with a pen, flash cards and a highlighter on the desk, focused and happy.
+assignments|A Rwandan young man student finishing homework on a laptop and a worksheet with ticked boxes, a pencil behind his ear, satisfied smile.
+schedule|A friendly Rwandan male teacher and a young woman student standing side by side in front of a large wall timetable board with coloured blocks arranged in a weekly grid (no readable text or numbers), the teacher pointing at one block while the student checks a smartphone; a round clock without numerals on the wall above. (Regenerated 2026-10-17: the first version — a woman pointing at a blank desk calendar — did not read as a class schedule.)
+attendance|A friendly Rwandan male teacher holding a clipboard and ticking names while smiling towards students out of frame.
+grades|A joyful Rwandan woman student holding up a graded test paper with a large gold star sticker, celebrating.
+placement|A Rwandan student thinking while taking a test on a tablet, holding a stylus, a small stack of books with different coloured spines graded by size.
+finance|A smiling Rwandan woman finance officer holding a smartphone showing a green check mark payment confirmation, a paper receipt in the other hand, calculator and ledger on the desk.
+messages|Two Rwandan students sitting side by side laughing while looking at one smartphone, chatting.
+team|A small diverse group of three Rwandan teachers and staff standing together, arms relaxed, warm welcoming smiles, smart-casual clothing.
+reports|A Rwandan woman academic manager reviewing printed bar charts and a tablet at a desk, pen in hand, thoughtful.
+certificates|A proud Rwandan graduate holding up a framed certificate with a gold seal (no readable text) and smiling.
+admissions|A welcoming Rwandan school receptionist handing an application folder to a new student across a desk, both smiling.
+live|A Rwandan student wearing a headset waving at a laptop during an online video class, a notebook open beside the laptop.
+campus|A modern small two-storey language school building in Kigali with green plants and a few students walking in, shot as an isolated cut-out building on the solid colour.
+announcements|A cheerful Rwandan woman staff member holding a small megaphone and a stack of colourful flyers.
+teaching|A Rwandan woman teacher standing beside a small whiteboard (no readable text), gesturing while explaining, holding a marker.
+settings|A relaxed Rwandan young professional sitting with a laptop on their lap adjusting settings, a small potted plant and a cup of coffee nearby.
