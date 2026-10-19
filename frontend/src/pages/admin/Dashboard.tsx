@@ -22,19 +22,23 @@ export function AdminDashboard() {
   const { user } = useSession();
   const navigate = useNavigate();
   const academic = useApi("academic-dashboard", getAcademicDashboard);
+  const hero = <AcademicDashboardHero firstName={user?.firstName} />;
   if (academic.loading)
-    return <LoadingBlock label="Loading academic overview…" />;
+    return <div className="space-y-5">{hero}<LoadingBlock label="Loading academic overview…" /></div>;
   if (academic.error || !academic.data)
     return (
-      <ErrorBlock
-        message={academic.error ?? "Could not load the dashboard."}
-        onRetry={academic.refetch}
-      />
+      <div className="space-y-5">
+        {hero}
+        <ErrorBlock
+          message={academic.error ?? "Could not load the dashboard."}
+          onRetry={academic.refetch}
+        />
+      </div>
     );
   const data = academic.data;
   return (
     <div className="journey-enter space-y-5">
-      <AcademicDashboardHero firstName={user?.firstName} />
+      {hero}
       <div className="flex items-center justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold">Overview</h2>
@@ -52,7 +56,7 @@ export function AdminDashboard() {
           <span className="hidden sm:inline">Refresh</span>
         </button>
       </div>
-      <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <AcademicMetricCard
           label="Total learners"
           value={data.totalStudents}
