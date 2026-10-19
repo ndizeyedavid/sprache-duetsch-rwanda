@@ -1,9 +1,10 @@
 import { FiCalendar,FiLayers,FiMapPin,FiVideo } from 'react-icons/fi';
 
-export const VIEWS = ['month', 'week', 'agenda'] as const;
+export const VIEWS = ['day', 'week', 'month', 'agenda'] as const;
 export type ScheduleView = (typeof VIEWS)[number];
 
 export const VIEW_LABEL: Record<ScheduleView, string> = {
+  day: 'Day',
   agenda: 'List',
   week: 'Week',
   month: 'Month',
