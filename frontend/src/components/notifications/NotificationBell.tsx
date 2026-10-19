@@ -41,7 +41,7 @@ export function NotificationBell() {
       >
         <span className="indicator">
           {label ? (
-            <span className="indicator-item badge badge-xs min-w-4 rounded-full border-0 bg-brand px-1 text-[10px] font-bold text-white">
+            <span className="indicator-item badge badge-xs min-w-4 rounded-full border-0 bg-brand px-1 text-[0.625rem] font-bold text-white">
               {label}
             </span>
           ) : null}
