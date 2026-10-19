@@ -63,7 +63,7 @@ export function StudentTable({ rows }: Props) {
           {sorted.map((r) => (
             <tr key={r.code} className="border-t border-line hover:bg-base-200">
               <td className="font-medium">{r.name}</td>
-              <td className="font-mono text-[11px] text-muted">{r.code}</td>
+              <td className="font-mono text-[0.6875rem] text-muted">{r.code}</td>
               <td className="text-center">{r.count}</td>
               <td className="text-center">
                 {r.avg === null ? <span className="text-muted">—</span> : <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${r.avg < 50 ? 'bg-coral text-error-content text-[#D8482F]' : r.avg < 70 ? 'bg-sun text-warning-content text-[#8A6800]' : 'bg-brand text-primary-content text-[#B30A00]'}`}>{r.avg}%</span>}
