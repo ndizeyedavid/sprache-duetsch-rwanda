@@ -3,7 +3,7 @@ import { AppLayout } from "../components/layout/AppLayout";
 import { STUDENT_ROLES } from "../lib/roles";
 import { StudentAttendance } from "../pages/student/Attendance";
 import { RequireRole } from "./guards";
-import { Activity,AssignmentDetail,Assignments,CourseContents,CourseOverview,Courses,Dashboard,Grades,Messages,Notes,Payments,Placement,Profile,Schedule,StudentActivity,StudentLesson,Teachers } from "./student-pages";
+import { Activity,AssignmentDetail,Assignments,CourseContents,CourseOverview,Courses,Dashboard,Grades,Messages,/* Notes, */Payments,Placement,Profile,Schedule,StudentActivity,StudentLesson,Teachers } from "./student-pages";
 
 /** Student pages. Rendered inside <Routes> as a fragment. */
 export function studentRoutes() {
@@ -26,7 +26,8 @@ export function studentRoutes() {
         <Route path="/activity" element={<Activity />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/placement" element={<Placement />} />
-        <Route path="/notes" element={<Notes />} />
+        {/* Notes page hidden at the client's request (2026-10-18). Keep it commented out unless the client asks for it back. */}
+        {/* <Route path="/notes" element={<Notes />} /> */}
         <Route path="/payments" element={<Payments />} />
       </Route>
     </Route>
