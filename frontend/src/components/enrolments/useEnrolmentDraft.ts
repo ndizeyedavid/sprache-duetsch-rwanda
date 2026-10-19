@@ -4,6 +4,7 @@ import { parseInstallments } from './installment-utils';
 import type { InstallmentDraft } from './InstallmentEditor';
 import type { CreateEnrolmentPayload } from './types';
 import { classOptionsFor,duplicateEnrolment,parseFee } from './utils';
+import { getIntakeScope } from '../../lib/intake-scope/store';
 
 export type EnrolmentDraft = ReturnType<typeof useEnrolmentDraft>;
 
@@ -18,7 +19,8 @@ export function useEnrolmentDraft(
 ) {
   const [studentId, setStudentId] = useState('');
   const [levelId, setLevelId] = useState('');
-  const [intakeId, setIntakeId] = useState('');
+  // New enrolments start in the intake the staff member is working in.
+  const [intakeId, setIntakeId] = useState(() => getIntakeScope() ?? '');
   const [classGroupId, setClassGroupId] = useState('');
   const [feeInput, setFeeInput] = useState('');
   const [installments, setInstallments] = useState<InstallmentDraft[]>([]);
