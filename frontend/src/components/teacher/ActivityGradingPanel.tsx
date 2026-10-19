@@ -70,7 +70,7 @@ export function ActivityGradingPanel({ lessonId }: Props) {
         <h3 className="flex items-center gap-2 text-sm font-bold">
           <FiEye aria-hidden className="text-brand" />
           Student submissions
-          <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal text-muted">
+          <span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem] font-normal text-muted">
             {(submissions.data ?? []).length}
           </span>
         </h3>
@@ -126,8 +126,8 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                     <div className="min-w-0 flex-1">
                       <p className="flex flex-wrap items-center gap-1.5 text-sm font-semibold leading-tight">
                         {s.activity.title}
-                        <span className="rounded-full bg-base-200 px-2 py-0.5 text-[11px] font-normal">{s.activity.type}</span>
-                        <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${s.status === "GRADED" ? "bg-brand text-white" : "bg-sun text-white"}`}>
+                        <span className="rounded-full bg-base-200 px-2 py-0.5 text-[0.6875rem] font-normal">{s.activity.type}</span>
+                        <span className={`rounded-full px-2 py-0.5 text-[0.6875rem] font-semibold ${s.status === "GRADED" ? "bg-brand text-white" : "bg-sun text-white"}`}>
                           {s.status}
                         </span>
                       </p>
@@ -135,23 +135,23 @@ export function ActivityGradingPanel({ lessonId }: Props) {
                         {s.student.user.firstName} {s.student.user.lastName} · {s.student.studentCode} · Attempt #{s.attemptNumber} · {new Date(s.submittedAt).toLocaleString()}
                       </p>
                       <ActivityResponseView response={s.response} />
-                      <p className="mt-1.5 flex flex-wrap gap-1.5 text-[11px]">
+                      <p className="mt-1.5 flex flex-wrap gap-1.5 text-[0.6875rem]">
                         {s.score !== null ? <span className="rounded-full bg-base-200 px-2 py-0.5">Score: {String(s.score)}/1</span> : <span className="rounded-full bg-coral text-error-content px-2 py-0.5 font-medium text-coral">Needs grading</span>}
                         {s.isCorrect !== null ? (
                           <span className={`rounded-full px-2 py-0.5 font-medium ${s.isCorrect ? "bg-brand text-primary-content" : "bg-coral text-error-content"}`}>{s.isCorrect ? "Correct" : "Incorrect"}</span>
                         ) : null}
                         {s.cheatFlagged ? <span className="rounded-full bg-error px-2 py-0.5 font-bold text-white">Flagged · {s.cheatCount} violations</span> : s.cheatCount ? <span className="rounded-full bg-warning text-warning-content px-2 py-0.5 font-medium text-warning">{s.cheatCount} violations</span> : null}
                       </p>
-                      {s.cheatLog && s.cheatLog.length ? <p className="mt-1 text-[11px] text-error">Violations: {s.cheatLog.map((v) => v.type).join(", ")}</p> : null}
+                      {s.cheatLog && s.cheatLog.length ? <p className="mt-1 text-[0.6875rem] text-error">Violations: {s.cheatLog.map((v) => v.type).join(", ")}</p> : null}
                       {s.feedback ? <p className="mt-1 rounded bg-base-200 px-2 py-1 text-xs">Feedback: {s.feedback}</p> : null}
                     </div>
                     <span className={`flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium transition ${active ? "bg-brand text-white" : "bg-base-200 text-muted group-hover:bg-brand group-hover:text-white"}`}>
-                      <FiEdit2 aria-hidden size={12} />
+                      <FiEdit2 aria-hidden size="0.75rem" />
                       {active ? "Grading" : "Grade"}
-                      {active ? <FiChevronUp aria-hidden size={14} /> : <FiChevronDown aria-hidden size={14} />}
+                      {active ? <FiChevronUp aria-hidden size="0.875rem" /> : <FiChevronDown aria-hidden size="0.875rem" />}
                     </span>
                   </div>
-                  {!active ? <p className="mt-2 flex items-center gap-1 text-[11px] font-medium text-brand opacity-0 transition group-hover:opacity-100">Tap to grade — add score & feedback <FiChevronDown aria-hidden /></p> : null}
+                  {!active ? <p className="mt-2 flex items-center gap-1 text-[0.6875rem] font-medium text-brand opacity-0 transition group-hover:opacity-100">Tap to grade — add score & feedback <FiChevronDown aria-hidden /></p> : null}
                   {active ? (
                     <div onClick={(e) => e.stopPropagation()} onKeyDown={(e) => e.stopPropagation()} className="mt-3 rounded-box border border-line bg-base-100 p-3 ">
                       <div className="grid gap-2 sm:grid-cols-3">
