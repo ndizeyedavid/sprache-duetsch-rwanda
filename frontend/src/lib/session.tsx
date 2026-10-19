@@ -3,6 +3,13 @@ import { createContext,useCallback,useContext,useEffect,useMemo,useState } from 
 import { apiErrorMessage } from './api';
 import type { AuthUser } from './auth-store';
 import { clearTokens,fetchMe,isSignedIn,logout } from './auth-store';
+import { bindIntakeScope } from './intake-scope/store';
+import { onSessionEnded } from './session-events';
+
+/** Staff work inside an intake scope; students never do. */
+function bindScopeFor(user: AuthUser | null) {
+  bindIntakeScope(user && user.role !== 'STUDENT' ? user.id : null);
+}
 
 type SessionValue = {
  user: AuthUser | null;
@@ -25,6 +32,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
 
  const refresh = useCallback(async () => {
  if (!isSignedIn()) {
+ bindScopeFor(null);
  setUser(null);
  setError(null);
  setLoading(false);
@@ -33,10 +41,13 @@ export function SessionProvider({ children }: { children: ReactNode }) {
  setLoading(true);
  try {
  const profile = await fetchMe();
+ // Bind before render so the first page fetches are already scoped.
+ bindScopeFor(profile);
  setUser(profile);
  setError(null);
  } catch (err) {
  clearTokens();
+ bindScopeFor(null);
  setUser(null);
  setError(apiErrorMessage(err, 'Your session has expired. Please sign in again.'));
  } finally {
@@ -48,8 +59,19 @@ export function SessionProvider({ children }: { children: ReactNode }) {
  void refresh();
  }, [refresh]);
 
+ // The API layer reports a forced sign-out (student signed in elsewhere); drop the
+ // session here so the guards send the user to /login with the reason shown.
+ useEffect(() => onSessionEnded((message) => {
+ clearTokens();
+ bindScopeFor(null);
+ setUser(null);
+ setError(message);
+ setLoading(false);
+ }), []);
+
  const signOut = useCallback(async () => {
  await logout();
+ bindScopeFor(null);
  setUser(null);
  setError(null);
  }, []);
