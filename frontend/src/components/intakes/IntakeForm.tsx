@@ -18,11 +18,6 @@ type IntakeFormProps = {
 function validate(draft: IntakeDraft): string | null {
   if (!draft.startDate || !draft.endDate) return 'Both course dates are required.';
   if (draft.endDate <= draft.startDate) return 'The course must end after it starts.';
-  if (draft.enrollmentOpensAt && draft.enrollmentEndsAt) {
-    if (draft.enrollmentEndsAt <= draft.enrollmentOpensAt) {
-      return 'Registration must close after it opens.';
-    }
-  }
   return null;
 }
 
@@ -58,10 +53,8 @@ export function IntakeForm({ initial, onSubmit, onDone, onCancel }: IntakeFormPr
         name: draft.name.trim(),
         startDate: toIsoDate(draft.startDate),
         endDate: toIsoDate(draft.endDate),
-        enrollmentOpensAt: draft.enrollmentOpensAt ? toIsoDate(draft.enrollmentOpensAt) : null,
-        enrollmentEndsAt: draft.enrollmentEndsAt ? toIsoDate(draft.enrollmentEndsAt) : null,
+        registrationOpen: draft.registrationOpen,
         levelIds,
-        isActive: draft.isActive,
       };
       // The code is derived from the start month on create and frozen on edit.
       if (!initial) values.code = draft.code;
@@ -105,7 +98,7 @@ export function IntakeForm({ initial, onSubmit, onDone, onCancel }: IntakeFormPr
       </fieldset>
 
       <fieldset>
-        <legend className="mb-1.5 text-xs font-semibold">Course window</legend>
+        <legend className="mb-1.5 text-xs font-semibold">When does the intake run?</legend>
         <div className="grid gap-3 sm:grid-cols-2">
           <label className="block">
             <span className="mb-1.5 block text-xs font-medium">Starts</span>
@@ -118,36 +111,22 @@ export function IntakeForm({ initial, onSubmit, onDone, onCancel }: IntakeFormPr
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend className="mb-1.5 text-xs font-semibold">Registration window</legend>
-        <div className="grid gap-3 sm:grid-cols-2">
-          <label className="block">
-            <span className="mb-1.5 block text-xs font-medium">Opens</span>
-            <input type="date" value={draft.enrollmentOpensAt} onChange={set('enrollmentOpensAt')} className={FIELD} />
-          </label>
-          <label className="block">
-            <span className="mb-1.5 block text-xs font-medium">Closes</span>
-            <input type="date" value={draft.enrollmentEndsAt} onChange={set('enrollmentEndsAt')} className={FIELD} />
-          </label>
-        </div>
-      </fieldset>
-
       <IntakeLevelPicker selected={levelIds} onChange={setLevelIds} />
 
       <label className="flex items-center gap-3 rounded-field bg-base-200 px-3 py-2.5">
         <input
           type="checkbox"
-          checked={draft.isActive}
+          checked={draft.registrationOpen}
           onChange={(event) => {
-            const isActive = event.currentTarget.checked;
-            setDraft((current) => ({ ...current, isActive }));
+            const registrationOpen = event.currentTarget.checked;
+            setDraft((current) => ({ ...current, registrationOpen }));
           }}
           className="toggle toggle-primary"
         />
         <span className="text-xs font-medium">
-          Open for enrolment and scheduling
-          <span className="block text-[11px] text-muted">
-            Archived intakes stay readable but cannot take new registrations.
+          Registration open
+          <span className="block text-[0.6875rem] text-muted">
+            Students can register any time it is open, until the intake ends. You can open or close it later in one click.
           </span>
         </span>
       </label>
