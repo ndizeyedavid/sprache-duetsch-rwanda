@@ -37,7 +37,7 @@ export function PlacementDecisionForm({ result, levels, onSaved, onCancel }: Pro
   return (
     <form onSubmit={submit} className="space-y-3 rounded-field bg-base-200 p-3">
       <label className="block">
-        <span className="mb-1 block text-[11px] font-medium">Assigned level</span>
+        <span className="mb-1 block text-[0.6875rem] font-medium">Assigned level</span>
         <select value={levelId} onChange={(event) => setLevelId(event.currentTarget.value)} className="select select-sm w-full rounded-field bg-base-100">
           {active.map((level) => (
             <option key={level.id} value={level.id}>
@@ -48,7 +48,7 @@ export function PlacementDecisionForm({ result, levels, onSaved, onCancel }: Pro
       </label>
       {override ? (
         <label className="block">
-          <span className="mb-1 block text-[11px] font-medium">Reason for override (required)</span>
+          <span className="mb-1 block text-[0.6875rem] font-medium">Reason for override (required)</span>
           <textarea required value={reason} onChange={(event) => setReason(event.currentTarget.value)} rows={2} maxLength={500} placeholder="e.g. Strong speaking in the interview, weak grammar" className="textarea textarea-sm w-full rounded-field bg-base-100" />
         </label>
       ) : null}
