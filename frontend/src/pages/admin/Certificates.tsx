@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { AcademicSummary } from "../../components/admin/AcademicSummary";
+import { FiPlus } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import { WORKSPACE_CONTEXT } from "../../components/admin/workspace-context";
+import { heroAction,heroGhost } from "../../components/hero/hero-actions";
+import { PageHero } from "../../components/hero/PageHero";
 import { CertificateComposer } from '../../components/certificates/CertificateComposer';
 import { CertificateDocumentDialog } from '../../components/certificates/CertificateDocumentDialog';
 import { Modal } from '../../components/ui/Modal';
@@ -15,6 +19,8 @@ import { useApi } from "../../hooks/useApi";
 import type { Certificate } from "../../lib/services";
 import { listCertificates } from "../../lib/services";
 
+const context = WORKSPACE_CONTEXT.certificates;
+
 export function AdminCertificates() {
   const issued = useApi("certificates-list", listCertificates);
   const [revoking, setRevoking] = useState<Certificate | null>(null);
@@ -23,34 +29,22 @@ export function AdminCertificates() {
   const [preview, setPreview] = useState<Certificate | null>(null);
   const [busy, setBusy] = useState(false);
   const rows = issued.data ?? [];
+  const count = (status: Certificate["status"]) => rows.filter((c) => c.status === status).length;
   return (
     <div className="space-y-5">
-      {issued.data && (
-        <AcademicSummary
-          items={[
-            {
-              label: "Certificates",
-              value: rows.length,
-              note: "Certificate records",
-            },
-            {
-              label: "Issued",
-              value: rows.filter((c) => c.status === "ISSUED").length,
-              note: "Current credentials",
-            },
-            {
-              label: "Revoked",
-              value: rows.filter((c) => c.status === "REVOKED").length,
-              note: "Withdrawn credentials",
-            },
-          ]}
-        />
-      )}
+      <PageHero eyebrow={context.category} icon={context.icon} title="Certificates" art="certificates" scoped
+        description="Prepare, preview and verify certificates for learners who completed their level."
+        meta={issued.data ? <>
+          <span className="hero-chip hero-chip-solid">{rows.length} {rows.length === 1 ? "record" : "records"}</span>
+          <span className="hero-chip">{count("ISSUED")} issued</span>
+          <span className="hero-chip">{count("REVOKED")} revoked</span>
+        </> : null}
+        actions={<>
+          <button type="button" className={heroAction} onClick={() => setComposing('new')}><FiPlus aria-hidden />Prepare certificate</button>
+          {context.links.map((link) => <Link key={link.to} to={link.to} className={heroGhost}>{link.label}</Link>)}
+        </>} />
       <Panel>
-        <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
-          <SectionHeader title="Certificates" className="mb-0" />
-          <button className="btn btn-sm" onClick={() => setComposing('new')}>Prepare certificate</button>
-        </div>
+        <SectionHeader title="Certificate register" />
         {success && (
           <p
             role="status"
