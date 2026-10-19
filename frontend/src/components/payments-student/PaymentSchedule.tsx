@@ -19,7 +19,7 @@ export function PaymentSchedule({ rows }: { rows: ScheduleRow[] }) {
         <p className="px-5 py-8 text-center text-sm text-muted">No fees have been charged yet.</p>
       ) : (
         <>
-          <div aria-hidden className={`hidden gap-3 border-b border-base-300 px-5 py-2 text-[11px] font-semibold uppercase tracking-wide text-muted sm:grid ${COLUMNS}`}>
+          <div aria-hidden className={`hidden gap-3 border-b border-base-300 px-5 py-2 text-[0.6875rem] font-semibold uppercase tracking-wide text-muted sm:grid ${COLUMNS}`}>
             <span>Fee and due date</span><span className="text-right">Amount</span><span className="text-right">Paid</span><span className="text-right">Left</span><span className="text-right">Status</span>
           </div>
           <ul className="divide-y divide-base-300">
