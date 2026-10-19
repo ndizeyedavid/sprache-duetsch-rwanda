@@ -26,14 +26,14 @@ export function AnswerCard({ index, total, prompt, response, maxPoints, points, 
  <div className="flex items-center justify-between gap-2 bg-base-200 px-3 py-2">
  <span className="text-xs font-bold">Question {index + 1} of {total}</span>
  <span className="flex items-center gap-2">
- {isCorrect === true ? <span className="rounded-full bg-brand text-primary-content px-2 py-0.5 text-[11px] font-medium text-[#B30A00]">Correct</span> : isCorrect === false ? <span className="rounded-full bg-coral text-error-content px-2 py-0.5 text-[11px] font-medium text-[#D8482F]">Incorrect</span> : null}
- <span className="rounded-full bg-base-100 px-2 py-0.5 text-[11px] font-medium text-muted">{maxPoints} pts</span>
+ {isCorrect === true ? <span className="rounded-full bg-brand text-primary-content px-2 py-0.5 text-[0.6875rem] font-medium text-[#B30A00]">Correct</span> : isCorrect === false ? <span className="rounded-full bg-coral text-error-content px-2 py-0.5 text-[0.6875rem] font-medium text-[#D8482F]">Incorrect</span> : null}
+ <span className="rounded-full bg-base-100 px-2 py-0.5 text-[0.6875rem] font-medium text-muted">{maxPoints} pts</span>
  </span>
  </div>
  <div className="p-3">
  <p className="text-sm font-semibold leading-snug">{prompt}</p>
  <div className="mt-2 rounded-box border border-line bg-base-200 p-3">
- <p className="flex items-center gap-1.5 text-[11px] font-semibold text-muted"><FiMessageSquare aria-hidden />Student answer</p>
+ <p className="flex items-center gap-1.5 text-[0.6875rem] font-semibold text-muted"><FiMessageSquare aria-hidden />Student answer</p>
  {audio ? <audio controls src={audio} className="mt-2 w-full" preload="metadata" /> : <p className="mt-1 whitespace-pre-wrap break-words text-sm leading-relaxed">{text || '— No answer'}</p>}
  </div>
  <div className="mt-3 flex flex-wrap items-end gap-2">
@@ -46,8 +46,8 @@ export function AnswerCard({ index, total, prompt, response, maxPoints, points, 
  <button type="button" onClick={() => onPoints(String(maxPoints))} className={`btn btn-xs rounded-full ${isFull ? 'bg-brand text-white border-brand' : 'border-line bg-base-100'}`}>Full</button>
  <button type="button" onClick={() => onPoints('0')} className={`btn btn-xs rounded-full ${isZero ? 'bg-night text-white border-night' : 'border-line bg-base-100'}`}>Zero</button>
  </span>
- <label className="block min-w-[200px] grow">
- <span className="mb-1 block text-[11px] font-medium text-muted">Feedback for this answer</span>
+ <label className="block min-w-[12.5rem] grow">
+ <span className="mb-1 block text-[0.6875rem] font-medium text-muted">Feedback for this answer</span>
  <input value={feedback} onChange={(e) => onFeedback(e.currentTarget.value)} placeholder="Optional — visible to student" className="input input-sm w-full rounded-full border-line bg-base-100 text-xs" />
  </label>
  </div>
