@@ -1,4 +1,5 @@
 import type { Prisma } from "../../generated/prisma/client.js";
+import { andWhere,discountIntakeWhere } from "../../lib/intake-scope.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
 import type {
@@ -11,6 +12,7 @@ export const listDiscounts = async (query: ListDiscountsQuery) => {
   const where: Prisma.DiscountWhereInput = {};
   if (query.studentId) where.studentId = query.studentId;
   if (query.status) where.status = query.status;
+  andWhere(where, query.intakeId && discountIntakeWhere(query.intakeId));
 
   const [rows, total] = await prisma.$transaction([
     prisma.discount.findMany({
