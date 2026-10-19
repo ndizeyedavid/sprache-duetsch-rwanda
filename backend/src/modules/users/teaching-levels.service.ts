@@ -2,8 +2,25 @@ import { academicTransaction } from "../../lib/academic-transaction.js";
 import { writeAuditTx } from '../../lib/audit.js';
 import { badRequest,conflict,notFound } from '../../lib/http-error.js';
 import { prisma } from '../../lib/prisma.js';
+/** Teachers page: profile, approved levels and every class they run (with its intake), unscoped. */
 export async function listTeachingAssignments() {
-  return prisma.user.findMany({ where: { role: 'TEACHER' }, select: { id: true, firstName: true, lastName: true, email: true, status: true, teachingLevels: { include: { level: { select: { id: true, code: true, title: true, isActive: true } } } }, teacherClasses: { select: { id: true, name: true, levelId: true, isActive: true, _count: { select: { enrollments: true } } } } }, orderBy: [{ firstName: 'asc' }, { lastName: 'asc' }] });
+  return prisma.user.findMany({
+    where: { role: 'TEACHER' },
+    select: {
+      id: true, firstName: true, lastName: true, email: true, phone: true, avatarUrl: true, status: true, lastLoginAt: true,
+      teachingLevels: { include: { level: { select: { id: true, code: true, title: true, isActive: true } } } },
+      teachingIntakes: { select: { intakeId: true, assignedAt: true, intake: { select: { id: true, name: true, startDate: true, endDate: true, isActive: true } } } },
+      teacherClasses: {
+        orderBy: { name: 'asc' },
+        select: {
+          id: true, name: true, code: true, levelId: true, isActive: true, shift: true, capacity: true,
+          level: { select: { code: true } }, intake: { select: { id: true, name: true } }, campus: { select: { name: true } },
+          _count: { select: { enrollments: true } },
+        },
+      },
+    },
+    orderBy: [{ firstName: 'asc' }, { lastName: 'asc' }],
+  });
 }
 export async function replaceTeachingLevels(teacherId: string, levelIds: string[], actorId: string) {
   const unique = [...new Set(levelIds)];
