@@ -27,16 +27,8 @@ export function StudentCourseModules({ course, slug }: Props) {
 
   return (
     <div className="journey-enter space-y-3">
-      <header className="flex flex-wrap items-center justify-between gap-3">
-        <h2 className="text-lg font-semibold">{course.level.title}</h2>
-        <div className="flex items-center gap-3 text-xs text-muted">
-          <span>{course.stats.completedLessons}/{course.stats.totalLessons}</span>
-          <progress className="progress progress-primary h-1.5 w-24" value={course.stats.completionPercentage} max={100} aria-label="Course completion" />
-          <span className="font-semibold text-base-content">{course.stats.completionPercentage}%</span>
-        </div>
-      </header>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div aria-label="Progress legend" className="flex gap-3 text-[10px] text-muted">
+        <div aria-label="Progress legend" className="flex gap-3 text-[0.625rem] text-muted">
           <span className="flex items-center gap-1"><FiCheck aria-hidden className="text-primary" />Done</span>
           <span className="flex items-center gap-1"><FiPlay aria-hidden className="text-primary" />Next</span>
           <span className="flex items-center gap-1"><span aria-hidden className="size-2 rounded-full border border-base-content" />Upcoming</span>
