@@ -13,11 +13,12 @@ const unique = <T>(values: T[]) => [...new Set(values)];
  */
 export async function getGradingBacklog(actor: AnalyticsActor, query: GradingBacklogQuery, now = new Date()) {
   const teacherId = actor.role === "TEACHER" ? actor.id : query.teacherId;
-  const classes = await prisma.classGroup.findMany({ where: { isActive: true, teacherId: teacherId ?? { not: null } },
+  const classes = await prisma.classGroup.findMany({ where: { isActive: true, teacherId: teacherId ?? { not: null }, ...(query.intakeId ? { intakeId: query.intakeId } : {}) },
     select: { id: true, levelId: true, teacherId: true, enrollments: { where: { status: "ACTIVE" }, select: { studentId: true } } } });
   const classTeacherIds = unique(classes.flatMap(c => (c.teacherId ? [c.teacherId] : [])));
   const teachers = await prisma.user.findMany({
-    where: { role: "TEACHER", ...(teacherId ? { id: teacherId } : { OR: [{ status: "ACTIVE" }, { id: { in: classTeacherIds } }] }) },
+    // With an intake selected, only teachers who have classes in it are listed.
+    where: { role: "TEACHER", ...(teacherId ? { id: teacherId } : query.intakeId ? { id: { in: classTeacherIds } } : { OR: [{ status: "ACTIVE" }, { id: { in: classTeacherIds } }] }) },
     select: { id: true, firstName: true, lastName: true, avatarUrl: true }, orderBy: [{ firstName: "asc" }, { lastName: "asc" }],
   });
   if (!teachers.length) return [];
