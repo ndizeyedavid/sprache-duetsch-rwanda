@@ -1,110 +1,48 @@
-import { addDays,addMonths,endOfWeek,format,isValid,parseISO,startOfWeek,subDays,subMonths } from 'date-fns';
 import { useMemo,useState } from 'react';
-import { FiCalendar } from 'react-icons/fi';
-import { useSearchParams } from 'react-router-dom';
-import { ErrorBlock,LoadingBlock } from '../../components/common/PageState';
-import { MonthGrid } from '../../components/schedule/MonthGrid';
-import { ScheduleSpotlight } from '../../components/schedule/ScheduleSpotlight';
-import { ScheduleToolbar } from '../../components/schedule/ScheduleToolbar';
+import { ScheduleCalendar } from '../../components/schedule/ScheduleCalendar';
 import { StudentAgendaGrouped } from '../../components/schedule/StudentAgendaGrouped';
 import { StudentDetailDrawer } from '../../components/schedule/StudentDetailDrawer';
-import { WeekGrid } from '../../components/schedule/WeekGrid';
-import type { ScheduleView } from '../../components/schedule/constants';
+import { StudentScheduleHero } from '../../components/schedule/StudentScheduleHero';
 import { useScheduleClock } from '../../components/schedule/useScheduleClock';
+import { useScheduleNavigation } from '../../components/schedule/useScheduleNavigation';
 import { Panel } from '../../components/ui/Panel';
 import { useApi } from '../../hooks/useApi';
 import { getStudentSchedule } from '../../lib/schedule-api';
 import { getUpcomingSessions } from '../../lib/services';
 
+type StudentSession = {
+  id: string; title: string; startAt: string; endAt: string; status: string; mode: string; provider: string | null;
+  timezone: string | null; meetingUrl: string | null; room?: string | null; notes?: string | null;
+  teacher: { firstName: string; lastName: string } | null; classGroup: { id: string; name: string } | null;
+};
+
+/** Upcoming + past classes merged by id (the history endpoint may return a bare array or a page). */
+function mergeSessions(upcoming: unknown, history: unknown): StudentSession[] {
+  const list = (value: unknown): StudentSession[] => Array.isArray(value) ? value as StudentSession[]
+    : Array.isArray((value as { data?: unknown })?.data) ? (value as { data: StudentSession[] }).data : [];
+  const map = new Map<string, StudentSession>();
+  for (const session of [...list(upcoming), ...list(history)]) map.set(session.id, session);
+  return [...map.values()];
+}
+
 export function Schedule() {
   useScheduleClock();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const nav = useScheduleNavigation();
   const upcoming = useApi('upcoming-sessions', getUpcomingSessions);
   const history = useApi('student-full-schedule', getStudentSchedule);
-
-  const view: ScheduleView = searchParams.get('view') === 'agenda' ? 'agenda' : searchParams.get('view') === 'week' ? 'week' : 'month';
-  const dateParam = searchParams.get('date');
-  const anchor = useMemo(() => { const d = dateParam ? parseISO(dateParam) : new Date(); return isValid(d) ? d : new Date(); }, [dateParam]);
-
   const [drawerId, setDrawerId] = useState<string | null>(null);
-
-  function setParam(key: string, value: string | null) {
-    const next = new URLSearchParams(searchParams);
-    if (value === null || value === '') next.delete(key);
-    else next.set(key, value);
-    setSearchParams(next, { replace: true });
-  }
-  function setView(v: ScheduleView) { setParam('view', v === 'month' ? null : v); }
-  function setAnchor(d: Date) { setParam('date', format(d, 'yyyy-MM-dd')); }
-  function step(dir: number) {
-    if (view === 'month') setAnchor(dir > 0 ? addMonths(anchor, 1) : subMonths(anchor, 1));
-    else if (view === 'week') setAnchor(dir > 0 ? addDays(anchor, 7) : subDays(anchor, 7));
-    else setAnchor(dir > 0 ? addDays(anchor, 7) : subDays(anchor, 7));
-  }
-
-  const allSessions = useMemo(() => {
-    const a = (upcoming.data ?? []) as unknown as { id: string; title: string; startAt: string; endAt: string; status: string; mode: string; provider: string | null; timezone: string | null; meetingUrl: string | null; room?: string | null; notes?: string | null; teacher: { firstName: string; lastName: string } | null; classGroup: { id: string; name: string } | null }[];
-    const bRaw = history.data as unknown;
-    const b = Array.isArray(bRaw) ? (bRaw as typeof a) : Array.isArray((bRaw as { data?: typeof a })?.data) ? ((bRaw as { data: typeof a }).data) : [];
-    const map = new Map<string, (typeof a)[number]>();
-    for (const s of [...a, ...b]) map.set(s.id, s);
-    return [...map.values()];
-  }, [upcoming.data, history.data]);
-
-  const filtered = useMemo(() => {
-    const list = [...allSessions];
-    list.sort((a, b) => Date.parse(a.startAt) - Date.parse(b.startAt));
-    if (view === 'agenda') return list;
-    if (view === 'week') {
-      const start = startOfWeek(anchor, { weekStartsOn: 1 });
-      start.setHours(0, 0, 0, 0);
-      const end = endOfWeek(anchor, { weekStartsOn: 1 });
-      end.setHours(23, 59, 59, 999);
-      return list.filter((s) => {
-        const d = new Date(s.startAt);
-        return d >= start && d <= end;
-      });
-    }
-    const m = anchor.getMonth();
-    const y = anchor.getFullYear();
-    return list.filter((s) => {
-      const d = new Date(s.startAt);
-      return d.getMonth() === m && d.getFullYear() === y;
-    });
-  }, [allSessions, view, anchor]);
-
-  const drawerSession = useMemo(() => allSessions.find((s) => s.id === drawerId) ?? null, [allSessions, drawerId]);
+  const allSessions = useMemo(() => mergeSessions(upcoming.data, history.data), [upcoming.data, history.data]);
+  const drawerSession = allSessions.find((s) => s.id === drawerId) ?? null;
   const loading = upcoming.loading || history.loading;
-  const error = upcoming.error || history.error;
 
   return (
     <div className="space-y-4">
+      <StudentScheduleHero sessions={allSessions} loading={loading} onOpen={setDrawerId} />
       <Panel>
-        <ScheduleSpotlight sessions={allSessions} onOpen={setDrawerId} />
-        <p className="mb-4 text-xs text-muted">Your classes · Times in {Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll('_', ' ')}</p>
-        <ScheduleToolbar view={view} onView={setView} anchor={anchor} onPrev={() => step(-1)} onNext={() => step(1)} onToday={() => setAnchor(new Date())} onNew={() => {}} canCreate={false} />
-        <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-muted">
-          <span className="inline-flex items-center gap-1 rounded-full bg-base-200 px-2.5 py-1 font-medium text-muted">
-            <FiCalendar aria-hidden />
-            {filtered.length} session{filtered.length === 1 ? '' : 's'}
-          </span>
-
-        </div>
-        <div className="mt-5 min-w-0">
-            {loading ? (
-              <LoadingBlock label="Loading schedule…" />
-            ) : error ? (
-              <ErrorBlock message={error} onRetry={() => { upcoming.refetch(); history.refetch(); }} />
-            ) : view === 'month' ? (
-              <MonthGrid anchor={anchor} onAnchor={setAnchor} sessions={filtered as never} onOpen={setDrawerId} onPickDay={(d) => { const next = new URLSearchParams(searchParams); next.set('date', format(d, 'yyyy-MM-dd')); next.set('view', 'week'); setSearchParams(next); }} />
-            ) : view === 'week' ? (
-              <WeekGrid anchor={anchor} sessions={filtered as never} onOpen={setDrawerId} onPickDay={(d) => { const next = new URLSearchParams(searchParams); next.set('date', format(d, 'yyyy-MM-dd')); next.set('view', 'week'); setSearchParams(next); }} />
-            ) : (
-              <StudentAgendaGrouped sessions={filtered as never} onOpen={setDrawerId} />
-            )}
-        </div>
+        <ScheduleCalendar nav={nav} sessions={allSessions} loading={loading} error={upcoming.error || history.error}
+          onRetry={() => { upcoming.refetch(); history.refetch(); }} onOpen={setDrawerId}
+          renderAgenda={(list) => <StudentAgendaGrouped sessions={list as never} onOpen={setDrawerId} />} />
       </Panel>
-
       <StudentDetailDrawer open={Boolean(drawerId)} onClose={() => setDrawerId(null)} session={drawerSession as never} />
     </div>
   );
