@@ -89,7 +89,7 @@ export function ResourceArticles({ isStaff }: { isStaff: boolean }) {
  }`}
  >
  <span className="block truncate text-xs font-semibold">{article.title}</span>
- <span className="mt-1 block text-[11px] text-muted">
+ <span className="mt-1 block text-[0.6875rem] text-muted">
  {article.author ? `${article.author.firstName} ${article.author.lastName} · ` : ''}
  {isoDate(article.publishedAt ?? article.createdAt)}
  </span>
@@ -151,8 +151,8 @@ export function ResourceArticles({ isStaff }: { isStaff: boolean }) {
  {detail.data.coverImageUrl ? (
  <img src={detail.data.coverImageUrl} alt="" className="mb-4 aspect-video w-full rounded-box object-cover" />
  ) : null}
- <h1 className="text-xl font-semibold">{detail.data.title}</h1>
- <p className="mt-1 text-[11px] text-muted">
+ <h2 className="text-xl font-semibold">{detail.data.title}</h2>
+ <p className="mt-1 text-[0.6875rem] text-muted">
  {detail.data.author ? `${detail.data.author.firstName} ${detail.data.author.lastName} · ` : ''}
  {isoDate(detail.data.publishedAt ?? detail.data.createdAt)}
  </p>
