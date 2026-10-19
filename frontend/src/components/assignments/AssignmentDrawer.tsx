@@ -1,42 +1,35 @@
-import { FiCalendar,FiX } from "react-icons/fi";
+import { FiAward,FiBookOpen,FiCalendar,FiCheckCircle,FiClipboard } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import type { AssignmentItem } from "../../lib/services";
-import { STATUS_LABEL,STATUS_TONE } from "./constants";
+import { Drawer } from "../ui/overlay/Drawer";
+import { useLastValue } from "../ui/overlay/useLastValue";
+import { STATUS_LABEL } from "./constants";
 import { humanType } from "./utils";
 
 type Props = { open: boolean; onClose: () => void; item: AssignmentItem | null };
 
-export function AssignmentDrawer({ open, onClose, item }: Props) {
-  if (!open || !item) return null;
-  const link =
-    item.source === "ACTIVITY" && item.lessonId
-      ? `/courses/${item.levelCode.toLowerCase()}/learn/${item.lessonId}/activity/${item.activityId}`
-      : item.assessmentId
-        ? `/courses/${item.levelCode.toLowerCase()}`
-        : "/courses";
+const linkFor = (item: AssignmentItem) =>
+  item.source === "ACTIVITY" && item.lessonId
+    ? `/courses/${item.levelCode.toLowerCase()}/learn/${item.lessonId}/activity/${item.activityId}`
+    : item.assessmentId ? `/courses/${item.levelCode.toLowerCase()}` : "/courses";
+
+/** One assignment at a glance — where it lives, when it is due, the score — and a way into it. */
+export function AssignmentDrawer({ open, onClose, item: current }: Props) {
+  const item = useLastValue(current);
+  if (!item) return null;
+  const fact = "flex items-center gap-2 rounded-box bg-base-200 px-3 py-2.5 text-sm";
   return (
-    <div className="fixed inset-0 z-40 flex">
-      <button type="button" aria-label="Close" onClick={onClose} className="flex-1 bg-black/40 " />
-      <div className="flex h-full w-full max-w-md flex-col overflow-hidden bg-base-100 ">
-        <div className="flex items-start justify-between gap-3 border-b border-line p-4">
-          <div className="min-w-0">
-            <p className="text-sm font-bold leading-tight">{item.title}</p>
-            <p className="mt-1 text-xs text-muted">{item.levelCode} · {humanType(item.type)} · {item.points} pts</p>
-            <span className={`badge badge-sm mt-2 ${STATUS_TONE[item.status] ?? "badge-ghost"}`}>{STATUS_LABEL[item.status] ?? item.status}</span>
-          </div>
-          <button type="button" onClick={onClose} className="btn btn-ghost btn-xs btn-circle"><FiX aria-hidden /></button>
-        </div>
-        <div className="flex-1 overflow-y-auto p-4">
-          {item.moduleTitle || item.lessonTitle ? <p className="text-xs text-muted">{[item.moduleTitle, item.lessonTitle].filter(Boolean).join(" · ")}</p> : null}
-          <p className="mt-3 flex items-center gap-1.5 text-xs text-muted"><FiCalendar aria-hidden />{item.dueAt ? new Date(item.dueAt).toLocaleString("en-GB") : "No due date"}</p>
-          {item.score !== null ? <p className="mt-2 text-sm"><span className="font-bold">{item.score}/{item.maxScore}</span> <span className="text-muted">score</span></p> : null}
-          {item.submittedAt ? <p className="mt-1 text-xs text-muted">Submitted {new Date(item.submittedAt).toLocaleString("en-GB")}</p> : null}
-          <div className="mt-4 flex gap-2">
-            <Link to={link} className="btn btn-sm rounded-full border-0 bg-brand text-white hover:bg-brand hover:text-primary-content">{item.status === "GRADED" ? "View feedback" : item.status === "SUBMITTED" ? "View submission" : "Open assignment"}</Link>
-            <button type="button" onClick={onClose} className="btn btn-sm rounded-full border-line bg-base-100">Close</button>
-          </div>
-        </div>
+    <Drawer open={open && Boolean(current)} onClose={onClose} icon={FiClipboard} title={item.title}
+      subtitle={`${item.levelCode} · ${humanType(item.type)} · ${item.points} pts`}
+      meta={<span className="hero-chip hero-chip-solid px-2.5 py-0.5 text-[0.6875rem]">{STATUS_LABEL[item.status] ?? item.status}</span>}
+      footer={<Link to={linkFor(item)} className="btn btn-primary btn-sm w-full rounded-full">
+        {item.status === "GRADED" ? "View feedback" : item.status === "SUBMITTED" ? "View submission" : "Open assignment"}</Link>}>
+      <div className="space-y-2">
+        {item.moduleTitle || item.lessonTitle ? <p className={fact}><FiBookOpen aria-hidden className="shrink-0 text-primary" />{[item.moduleTitle, item.lessonTitle].filter(Boolean).join(" · ")}</p> : null}
+        <p className={fact}><FiCalendar aria-hidden className="shrink-0 text-primary" />{item.dueAt ? `Due ${new Date(item.dueAt).toLocaleString("en-GB")}` : "No due date"}</p>
+        {item.score !== null ? <p className={fact}><FiAward aria-hidden className="shrink-0 text-primary" /><strong>{item.score}/{item.maxScore}</strong> score</p> : null}
+        {item.submittedAt ? <p className={fact}><FiCheckCircle aria-hidden className="shrink-0 text-primary" />Submitted {new Date(item.submittedAt).toLocaleString("en-GB")}</p> : null}
       </div>
-    </div>
+    </Drawer>
   );
 }
