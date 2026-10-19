@@ -1,6 +1,24 @@
-import { FiArrowRight,FiCalendar } from 'react-icons/fi';
+import { FiArrowUpRight,FiCalendar,FiSun } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-export function TeacherDashboardHero({ name }: { name:string }) {
-  const date=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
-  return <section className="card overflow-hidden bg-base-100"><div className="grid items-center gap-5 p-6 grid-cols-[minmax(0,1fr)_auto] sm:p-8"><div><p className="flex items-center gap-2 text-xs text-muted"><FiCalendar aria-hidden/>{date}</p><h1 className="mt-4 text-2xl font-semibold tracking-tight sm:text-4xl">Hello, {name}.</h1><div className="mt-5 flex flex-wrap gap-2"><Link to="/teacher/schedule" className="btn btn-neutral btn-sm">Schedule<FiArrowRight aria-hidden/></Link><Link to="/teacher/assignments" className="btn btn-ghost btn-sm">Assignments</Link></div></div><div className="flex h-28 w-24 items-center justify-center rounded-3xl bg-base-200 sm:h-52 sm:w-56"><img src="/illustrations/course-learner.webp" width={224} height={208} alt="" className="h-24 w-24 object-contain sm:h-48 sm:w-52"/></div></div></section>;
+import { heroAction,heroGhost } from '../hero/hero-actions';
+import { PageHero } from '../hero/PageHero';
+
+type Props = { name?: string; classes?: number; toReview?: number };
+
+/** Teacher home header: greeting, today's date and the two places teachers go most. */
+export function TeacherDashboardHero({ name, classes, toReview }: Props) {
+  const date = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+  return (
+    <PageHero eyebrow="Teaching overview" icon={FiSun} art="teaching" scoped
+      title={`Hallo${name ? `, ${name}` : ''}.`}
+      description={`${date} — your classes, work to review and the next lessons at a glance.`}
+      meta={<>
+        {classes !== undefined ? <span className="hero-chip">{classes} active {classes === 1 ? 'class' : 'classes'}</span> : null}
+        {toReview ? <span className="hero-chip hero-chip-solid">{toReview} to review</span> : null}
+      </>}
+      actions={<>
+        <Link to="/teacher/schedule" className={heroAction}><FiCalendar aria-hidden />Schedule <FiArrowUpRight aria-hidden /></Link>
+        <Link to="/teacher/assignments" className={heroGhost}>Assignments</Link>
+      </>} />
+  );
 }
