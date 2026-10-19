@@ -19,16 +19,22 @@ export function isPlaceholderModule(module: Pick<ExistingModule, "title" | "desc
 
 /**
  * Placeholders without student work are deleted; with work they are unpublished and moved
- * below zero (history kept). Other staff-made modules stay published and only move if their
- * position collides with the imported modules 1..courseSize.
+ * below zero (history kept). Modules of a retired edition are always archived the same way,
+ * never deleted. Other staff-made modules stay published and only move if their position
+ * collides with the imported modules 1..courseSize.
  */
 export function planExistingModules(
   level: string, existing: ExistingModule[], importIds: Set<string>, courseSize: number,
+  retired: ReadonlySet<string> = new Set(),
 ): ModulePlan[] {
   const others = existing.filter((m) => !importIds.has(m.id));
   let archiveOrder = Math.min(-999, ...existing.map((m) => m.order));
   let moveOrder = Math.max(courseSize, ...existing.map((m) => m.order));
   return others.map((m): ModulePlan => {
+    if (retired.has(m.id)) {
+      if (m.order < 0 && !m.isPublished) return { id: m.id, title: m.title, action: "keep" };
+      return { id: m.id, title: m.title, action: "archive", order: m.order < 0 ? m.order : (archiveOrder -= 1) };
+    }
     if (isPlaceholderModule(m, level)) {
       if (!m.hasStudentWork) return { id: m.id, title: m.title, action: "delete" };
       return { id: m.id, title: m.title, action: "archive", order: m.order < 0 ? m.order : (archiveOrder -= 1) };
