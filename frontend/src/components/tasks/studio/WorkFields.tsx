@@ -26,7 +26,7 @@ export function WorkFields({ draft: d, update, locked }: { draft: TaskDraft; upd
         <RubricTemplates rubric={d.rubric} locked={locked} onLoad={rubric => update({ rubric, maxPoints: rubric.reduce((t, r) => t + Number(r.points || 0), 0) })} />
         <ul className="mt-2 space-y-2">
           {d.rubric.map((r, i) => (
-            <li key={i} className="grid gap-2 rounded-field border border-base-300 p-2 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)_72px_auto]">
+            <li key={i} className="grid gap-2 rounded-field border border-base-300 p-2 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)_4.5rem_auto]">
               <input className="input input-sm" aria-label={`Criterion ${i + 1} name`} placeholder="e.g. Vocabulary" disabled={locked} value={r.title} onChange={e => setRow(i, { title: e.target.value })} />
               <input className="input input-sm" aria-label={`Criterion ${i + 1} description`} placeholder="What does good work show?" disabled={locked} value={r.description} onChange={e => setRow(i, { description: e.target.value })} />
               <input type="number" min="0.5" step="0.5" className="input input-sm" aria-label={`Criterion ${i + 1} points`} disabled={locked} value={r.points} onChange={e => setRow(i, { points: Number(e.target.value) })} />
