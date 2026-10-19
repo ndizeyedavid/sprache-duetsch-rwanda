@@ -92,6 +92,7 @@ export const enrollmentAllowedOrigins = (env.ENROLLMENT_ALLOWED_ORIGINS ?? "")
 export const defaultEnrollmentOrigins = [
   "https://deutsch-prache-rw.vercel.app",
   "https://www.deutshsprache.org",
+  "https://deutshsprache.org",
 ];
 
 export const smtpEnabled = Boolean(env.SMTP_USER && env.SMTP_PASS);
