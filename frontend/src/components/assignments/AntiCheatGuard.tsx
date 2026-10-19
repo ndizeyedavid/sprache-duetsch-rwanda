@@ -33,7 +33,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
           <span className="flex items-center gap-2 font-semibold">
             <FiShield aria-hidden className="text-warning" />
             Protected assignment — fullscreen required
-            <span className={`rounded-full px-2 py-0.5 text-[11px] ${remaining === 0 ? "bg-error text-white" : remaining === 1 ? "bg-coral text-error-content" : "bg-base-100 text-muted"}`}>
+            <span className={`rounded-full px-2 py-0.5 text-[0.6875rem] ${remaining === 0 ? "bg-error text-white" : remaining === 1 ? "bg-coral text-error-content" : "bg-base-100 text-muted"}`}>
               {violations.length}/3 violations
             </span>
           </span>
@@ -44,9 +44,9 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
                 Enter fullscreen
               </button>
             ) : (
-              <span className="rounded-full bg-success text-success-content px-2 py-1 text-[11px] font-medium text-success">Fullscreen active</span>
+              <span className="rounded-full bg-success text-success-content px-2 py-1 text-[0.6875rem] font-medium text-success">Fullscreen active</span>
             )}
-            <span className="hidden items-center gap-1 text-[11px] text-muted sm:inline-flex">
+            <span className="hidden items-center gap-1 text-[0.6875rem] text-muted sm:inline-flex">
               <FiEyeOff aria-hidden />
               Copy / paste / tab switch blocked
             </span>
@@ -62,7 +62,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
             backgroundImage: `repeating-linear-gradient(-25deg, transparent 0 180px, currentColor 180px 181px)`,
           }}
         >
-          <div className="flex h-full w-full flex-wrap content-center justify-center gap-8 p-8 text-[11px] font-bold tracking-widest text-ink">
+          <div className="flex h-full w-full flex-wrap content-center justify-center gap-8 p-8 text-[0.6875rem] font-bold tracking-widest text-ink">
             {Array.from({ length: 24 }).map((_, i) => (
               <span key={i} className="rotate-[-18deg] whitespace-nowrap">
                 {watermark}
@@ -77,7 +77,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-base-100 p-4 " role="dialog" aria-modal="true">
             <div className="w-full max-w-md rounded-box border border-warning bg-base-100 p-6 text-center ">
               <span className="mx-auto flex size-12 items-center justify-center rounded-full bg-warning text-warning-content">
-                <FiMaximize2 aria-hidden size={22} />
+                <FiMaximize2 aria-hidden size="1.375rem" />
               </span>
               <h3 className="mt-3 text-base font-bold">Fullscreen required</h3>
               <p className="mx-auto mt-1 max-w-sm text-sm leading-relaxed text-muted">
@@ -94,7 +94,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
                 <FiMaximize2 aria-hidden />
                 Go to fullscreen
               </button>
-              <p className="mt-2 text-[11px] text-muted">Press Esc to exit is blocked — it will count as a violation.</p>
+              <p className="mt-2 text-[0.6875rem] text-muted">Press Esc to exit is blocked — it will count as a violation.</p>
             </div>
           </div>
           <div className="relative z-20 m-3 rounded-box border border-warning bg-warning text-warning-content p-3 text-center text-xs font-medium text-warning">
@@ -109,7 +109,7 @@ export function AntiCheatGuard({ enabled, persistKey, onViolation, onLock, child
             <p key={`${v.at}-${idx}`} role="alert" className="flex items-center gap-2 rounded-box bg-coral text-error-content px-3 py-2 text-xs font-medium text-coral">
               <FiAlertTriangle aria-hidden />
               {v.message}
-              <span className="ml-auto text-[11px]">{remaining} left</span>
+              <span className="ml-auto text-[0.6875rem]">{remaining} left</span>
             </p>
           ))}
           {locked ? (
