@@ -22,12 +22,12 @@ export function GradesSummary({ assessments, whatIf, whatIfOn }: Props) {
     { label: "Not started", value: String(assessments.filter(a => a.attemptCount === 0).length), sub: "Your next opportunities", icon: FiEdit3, tone: "bg-primary text-primary-content" },
   ];
   return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-4">
       {cards.map((c) => (
         <div key={c.label} className="rounded-box border border-line bg-base-100 p-4">
           <div className="flex items-center justify-between">
             <p className="text-xs font-medium text-muted">{c.label}</p>
-            <span className={`flex size-7 items-center justify-center rounded-full text-xs ${c.tone}`}><c.icon aria-hidden size={14} /></span>
+            <span className={`flex size-7 items-center justify-center rounded-full text-xs ${c.tone}`}><c.icon aria-hidden size="0.875rem" /></span>
           </div>
           <p className="mt-2 text-2xl font-bold">{c.value}</p>
           <p className="text-xs text-muted">{c.sub}</p>
