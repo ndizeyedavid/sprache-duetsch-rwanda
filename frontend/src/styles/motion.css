@@ -19,10 +19,31 @@
 @keyframes loader-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 
 /* Gentle entrance for each page. */
-.page-enter { animation: page-enter 0.24s ease-out both; }
+/* "backwards", not "both": a transform that stays applied after the animation would turn every page
+   into a containing block for position:fixed, trapping dialogs and drawers inside the content area. */
+.page-enter { animation: page-enter 0.24s ease-out backwards; }
 @keyframes page-enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   .book-loader .book-leaf, .loader-in, .page-enter { animation: none; }
   .book-loader .book-leaf-late { display: none; }
+}
+
+/* Overlays (components/ui/overlay): backdrop fade, dialog pop / bottom-sheet rise, drawer slide. */
+.overlay-in { animation: overlay-fade 0.2s ease-out both; }
+.overlay-out { animation: overlay-fade 0.18s ease-in reverse both; }
+@keyframes overlay-fade { from { opacity: 0; } to { opacity: 1; } }
+.dialog-in { animation: sheet-rise 0.28s cubic-bezier(0.2, 0.9, 0.3, 1) both; }
+.dialog-out { animation: sheet-rise 0.18s ease-in reverse both; }
+@keyframes sheet-rise { from { opacity: 0.6; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+@media (min-width: 640px) {
+  .dialog-in { animation: dialog-pop 0.24s cubic-bezier(0.2, 0.9, 0.3, 1.15) both; }
+  .dialog-out { animation: dialog-pop 0.16s ease-in reverse both; }
+}
+@keyframes dialog-pop { from { opacity: 0; transform: translateY(12px) scale(0.96); } to { opacity: 1; transform: none; } }
+.drawer-in { animation: drawer-slide 0.3s cubic-bezier(0.2, 0.9, 0.3, 1) both; }
+.drawer-out { animation: drawer-slide 0.18s ease-in reverse both; }
+@keyframes drawer-slide { from { transform: translateX(100%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .overlay-in, .overlay-out, .dialog-in, .dialog-out, .drawer-in, .drawer-out { animation-duration: 1ms; }
 }
