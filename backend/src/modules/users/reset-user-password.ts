@@ -18,7 +18,7 @@ export const resetUserPassword = async (
   const passwordHash = await hashPassword(input.newPassword);
 
   await prisma.$transaction([
-    prisma.user.update({ where: { id }, data: { passwordHash } }),
+    prisma.user.update({ where: { id }, data: { passwordHash, activeSessionId: null } }),
     // Revoke every active session so the old credentials can no longer be used.
     prisma.refreshToken.deleteMany({ where: { userId: id } }),
   ]);
