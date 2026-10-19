@@ -4,7 +4,7 @@ export const demoLevels = [
     title: "Deutsch A2 — Grundstufe",
     levelLabel: "Elementary",
     order: 2,
-    defaultFee: 45000,
+    defaultFee: 170000,
     summary:
       "Hold simple conversations about work, family and travel. Past tense, Dativ and Akkusativ explained with Rwandan everyday examples.",
     objectives: [
@@ -21,7 +21,7 @@ export const demoLevels = [
     title: "Deutsch B1 — Mittelstufe",
     levelLabel: "Intermediate",
     order: 3,
-    defaultFee: 55000,
+    defaultFee: 170000,
     summary:
       "Become independent. Discuss opinions, read news articles and prepare for the Goethe B1 exam.",
     objectives: [
@@ -38,7 +38,7 @@ export const demoLevels = [
     title: "Deutsch B2 — Fortgeschritten",
     levelLabel: "Upper Intermediate",
     order: 4,
-    defaultFee: 65000,
+    defaultFee: 200000,
     summary:
       "University-level German. Academic writing, complex grammar, debates and listening to native speakers.",
     objectives: [
@@ -55,7 +55,7 @@ export const demoLevels = [
     title: "Berufsdeutsch B1 — Pflege & Technik",
     levelLabel: "Intermediate",
     order: 5,
-    defaultFee: 60000,
+    defaultFee: 170000,
     summary:
       "German for nursing, hospitality and technical jobs, with interview practice and workplace vocabulary.",
     objectives: [
@@ -72,7 +72,7 @@ export const demoLevels = [
     title: "TestDaF Vorbereitung",
     levelLabel: "Advanced",
     order: 6,
-    defaultFee: 70000,
+    defaultFee: 170000,
     summary:
       "Focused TestDaF drilling: Leseverstehen, Hörverstehen, Schriftlicher and Mündlicher Ausdruck with timed mock exams.",
     objectives: [
