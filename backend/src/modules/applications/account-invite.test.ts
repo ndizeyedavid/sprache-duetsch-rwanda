@@ -3,10 +3,10 @@ import type { Prisma } from "../../generated/prisma/client.js";
 import { describe, expect, it, vi } from "vitest";
 import { queueAccountInvite } from "./account-invite.js";
 
-vi.mock("../../config/env.js", () => ({ isProduction: true, env: { PUBLIC_APP_URL: "https://class.deutshsprache.org" } }));
+vi.mock("../../config/env.js", () => ({ isProduction: true, env: { PUBLIC_APP_URL: "https://class.deutschspracherw.org" } }));
 vi.mock("../../lib/notification-delivery.js", () => ({ emailAvailable: () => true }));
 vi.mock("../../lib/transactions.js", () => ({ transact: vi.fn() }));
-vi.mock("./application-mail.js", () => ({ appUrl: () => "https://class.deutshsprache.org" }));
+vi.mock("./application-mail.js", () => ({ appUrl: () => "https://class.deutschspracherw.org" }));
 interface ResetRecord { data: { userId: string; tokenHash: string; expiresAt: Date } }
 interface EmailRecord { data: { userId: string; email: string; eventKey: string; payload: { mail: { subject: string; text: string }; expiresAt: string } } }
 
@@ -20,7 +20,7 @@ describe("account verification invitations", () => {
     const tokenRecord = tokenCreate.mock.calls[0][0].data;
     const delivery = emailCreate.mock.calls[0][0].data;
     const url = new URL(delivery.payload.mail.text.match(/https:\/\/[^\s]+/)![0]);
-    expect(url.origin).toBe("https://class.deutshsprache.org");
+    expect(url.origin).toBe("https://class.deutschspracherw.org");
     expect(url.pathname).toBe("/reset-password");
     expect(url.searchParams.get("setup")).toBe("1");
     const token = url.searchParams.get("token")!;
