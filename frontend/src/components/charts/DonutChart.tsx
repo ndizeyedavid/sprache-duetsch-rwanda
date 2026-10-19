@@ -21,7 +21,7 @@ export function DonutChart({
  children,
 }: DonutChartProps) {
  return (
- <div className="relative" style={{ height }}>
+ <div className="relative" style={{ height: `${height / 16}rem` }}>
  <ResponsiveContainer width="100%" height="100%">
  <PieChart>
  <Tooltip content={<ChartTooltip suffix={suffix} />} />
