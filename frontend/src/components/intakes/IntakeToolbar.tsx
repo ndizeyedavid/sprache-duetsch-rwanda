@@ -1,49 +1,34 @@
-import { FiPlus } from 'react-icons/fi';
 import { SearchField } from '../ui/SearchField';
 import { SegmentedControl } from '../ui/SegmentedControl';
-import { PRIMARY_BTN } from './constants';
+import type { RegistrationFilter } from './types';
 
 type IntakeToolbarProps = {
   query: string;
   onQueryChange: (value: string) => void;
-  phase: string;
-  onPhaseChange: (value: string) => void;
-  onCreate: () => void;
+  filter: RegistrationFilter;
+  onFilterChange: (value: RegistrationFilter) => void;
 };
 
-const PHASE_OPTIONS = ['All', 'Upcoming', 'Enrolling', 'Running', 'Ended'];
+const FILTERS: RegistrationFilter[] = ['All', 'Open', 'Closed', 'Archived'];
 
-/** Toolbar: search by code/name, filter by lifecycle phase, and open the create form. */
-export function IntakeToolbar({
-  query,
-  onQueryChange,
-  phase,
-  onPhaseChange,
-  onCreate,
-}: IntakeToolbarProps) {
+/** Toolbar: search by code/name and filter by registration status (creating lives in the page hero). */
+export function IntakeToolbar({ query, onQueryChange, filter, onFilterChange }: IntakeToolbarProps) {
   return (
-    <div className="space-y-3">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <SearchField
-          value={query}
-          onChange={onQueryChange}
-          ariaLabel="Search intakes by code or name"
-          placeholder="Search code or name…"
-          className="sm:max-w-xs"
-        />
-        <button type="button" onClick={onCreate} className={`${PRIMARY_BTN} sm:ml-auto`}>
-          <FiPlus aria-hidden /> New intake
-        </button>
-      </div>
-      <div>
-        <SegmentedControl
-          options={PHASE_OPTIONS}
-          value={phase}
-          onChange={onPhaseChange}
-          ariaLabel="Filter by phase"
-          wrap
-        />
-      </div>
+    <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
+      <SearchField
+        value={query}
+        onChange={onQueryChange}
+        ariaLabel="Search intakes by code or name"
+        placeholder="Search code or name…"
+        className="lg:max-w-xs"
+      />
+      <SegmentedControl
+        options={FILTERS}
+        value={filter}
+        onChange={(value) => onFilterChange(value as RegistrationFilter)}
+        ariaLabel="Filter by registration"
+        wrap
+      />
     </div>
   );
 }
