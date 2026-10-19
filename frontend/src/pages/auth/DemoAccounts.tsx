@@ -31,7 +31,7 @@ export function DemoAccounts() {
 
   return (
     <section>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-brand">Deutsch Sprache RW · Demo</p>
+      <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.25em] text-brand">Deutsch Sprache RW · Demo</p>
       <h1 className="mt-3 text-3xl font-semibold tracking-tight">Demo accounts</h1>
       <p className="mt-3 text-sm leading-relaxed text-muted">
         Every account uses the password <code className="rounded bg-base-200 px-1.5 py-0.5 font-mono text-ink">{DEMO_PASSWORD}</code>.
