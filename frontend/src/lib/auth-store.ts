@@ -39,7 +39,8 @@ export type RegisterPayload = {
   phone?: string;
   password: string;
   campusId: string;
-  shift: 'MORNING' | 'AFTERNOON' | 'EVENING' | 'WEEKEND';
+  /** Not asked anymore; the API defaults new students to EVENING. */
+  shift?: 'MORNING' | 'AFTERNOON' | 'EVENING' | 'WEEKEND';
   intakeId?: string;
   intendedLevelId?: string;
   /** 6-digit code emailed by requestRegisterOtp. */
