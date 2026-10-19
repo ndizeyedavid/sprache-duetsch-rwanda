@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
-import { useEffect,useId,useRef } from 'react';
+import { Dialog } from './overlay/Dialog';
+import { useLastValue } from './overlay/useLastValue';
 
 type ModalProps = {
   open: boolean;
@@ -7,33 +8,28 @@ type ModalProps = {
   onClose: () => void;
   title: string;
   children: ReactNode;
-  /** Extra classes on the dialog box, for wide content such as a certificate. */
+  /** Extra width for wide content such as a certificate, e.g. "max-w-3xl". */
   boxClassName?: string;
 };
 
-/** daisyUI modal on a native <dialog>: ESC and backdrop clicks call `onClose`. */
+// Written out in full: Tailwind only generates classes it can find in the source, never a built `sm:${c}`.
+const WIDTHS: Record<string, string> = {
+  'max-w-md': 'sm:max-w-md', 'max-w-lg': 'sm:max-w-lg', 'max-w-xl': 'sm:max-w-xl', 'max-w-2xl': 'sm:max-w-2xl',
+  'max-w-3xl': 'sm:max-w-3xl', 'max-w-4xl': 'sm:max-w-4xl', 'max-w-5xl': 'sm:max-w-5xl', 'max-w-6xl': 'sm:max-w-6xl', 'max-w-7xl': 'sm:max-w-7xl',
+};
+
+/** Any max-w-* in boxClassName becomes the desktop width (phones always get a full-width sheet). */
+const widthFrom = (boxClassName: string) => boxClassName.split(/\s+/).map((c) => WIDTHS[c]).filter(Boolean).join(' ') || undefined;
+
+/**
+ * The app-wide modal: same red-header dialog as the schedule editor, rendered at <body>,
+ * with a soft backdrop, Escape/backdrop to close (unless busy) and an enter/exit animation.
+ */
 export function Modal({ open, onClose, title, children, boxClassName = '', busy = false }: ModalProps) {
-  const titleId = useId();
-  const ref = useRef<HTMLDialogElement>(null);
-
-  useEffect(() => {
-    const dialog = ref.current;
-    if (!dialog) return;
-    if (open && !dialog.open) dialog.showModal();
-    if (!open && dialog.open) dialog.close();
-  }, [open]);
-
+  const content = useLastValue(open ? children : null);
   return (
-    <dialog ref={ref} className="modal modal-bottom sm:modal-middle" aria-labelledby={titleId} onClose={onClose} onCancel={event => { event.preventDefault(); if (!busy) onClose(); }}>
-      <div className={`modal-box rounded-modal ${boxClassName}`}>
-        <div className="flex items-center justify-between gap-3"><h3 id={titleId} className="text-base font-semibold text-ink">{title}</h3><button type="button" aria-label="Close dialog" disabled={busy} onClick={onClose} className="btn btn-ghost btn-sm btn-circle">✕</button></div>
-        <div className="mt-4">{open ? children : null}</div>
-      </div>
-      <form method="dialog" className="modal-backdrop" onSubmit={event => { event.preventDefault(); if (!busy) onClose(); }}>
-        <button type="submit" disabled={busy} aria-label="Close">
-          close
-        </button>
-      </form>
-    </dialog>
+    <Dialog open={open} onClose={onClose} busy={busy} title={title} widthClassName={widthFrom(boxClassName)}>
+      {content}
+    </Dialog>
   );
 }
