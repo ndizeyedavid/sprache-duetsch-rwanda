@@ -7,11 +7,11 @@ import { login } from '../../lib/auth-store';
 import { homePath } from '../../lib/roles';
 import { useSession } from '../../lib/session';
 
-const FIELD = 'input h-12 w-full rounded-field border-base-300 bg-base-100 text-[15px] focus:border-brand focus:outline-none';
+const FIELD = 'input h-12 w-full rounded-field border-base-300 bg-base-100 text-[0.9375rem] focus:border-brand focus:outline-none';
 
 export function LoginForm() {
   const navigate = useNavigate();
-  const { user, loading: sessionLoading, refresh } = useSession();
+  const { user, loading: sessionLoading, error: sessionError, refresh } = useSession();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -40,9 +40,9 @@ export function LoginForm() {
 
   return (
     <section>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-brand">Deutsch Sprache RW</p>
+      <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.25em] text-brand">Deutsch Sprache RW</p>
       <h1 className="mt-3 text-4xl font-semibold tracking-tight">Welcome back</h1>
-      <p className="mt-3 text-[15px] leading-relaxed text-muted">Sign in to continue your lessons, classes and progress.</p>
+      <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted">Sign in to continue your lessons, classes and progress.</p>
 
       <form className="mt-10 space-y-5" onSubmit={handleSubmit}>
         <label className="block">
@@ -58,6 +58,8 @@ export function LoginForm() {
 
         {error ? (
           <p role="alert" className="rounded-field bg-coral text-error-content px-3 py-2 text-xs font-medium text-coral">{error}</p>
+        ) : sessionError ? (
+          <p role="status" className="rounded-field border border-line bg-base-200 px-3 py-2 text-xs font-medium text-muted">{sessionError}</p>
         ) : null}
 
         <div className="flex items-center justify-between gap-3 text-sm">
@@ -70,7 +72,7 @@ export function LoginForm() {
         </div>
 
         <button type="submit" disabled={pending}
-          className="btn mt-2 h-12 w-full gap-2 rounded-full border-0 bg-brand text-[15px] text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
+          className="btn mt-2 h-12 w-full gap-2 rounded-full border-0 bg-brand text-[0.9375rem] text-white hover:bg-brand hover:text-primary-content disabled:opacity-60">
           {pending ? <span className="loading loading-spinner loading-sm" /> : null}
           Sign in
           <FiArrowRight aria-hidden />
