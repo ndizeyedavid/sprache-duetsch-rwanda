@@ -17,7 +17,7 @@ export function AvatarGroup({ items, extra, size = 'sm', className = '' }: Avata
  ))}
  {extra ? (
  <div className={`avatar placeholder border-2 border-base-100 ${dimensions}`}>
- <div className="w-full bg-brand text-[11px] font-semibold text-white">
+ <div className="w-full bg-brand text-[0.6875rem] font-semibold text-white">
  <span>+{extra}</span>
  </div>
  </div>
