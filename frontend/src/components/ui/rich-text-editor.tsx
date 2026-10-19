@@ -97,7 +97,7 @@ export function RichTextEditor({ value, onChange, placeholder, error }: Props) {
     >
       <RichTextEditorSection1 toolbarRef={toolbarRef} isStuck={isStuck} toolbarBox={toolbarBox} HEADER={HEADER} editor={editor} btn={btn} addLink={addLink} addImage={addImage} />
       {isStuck && toolbarBox ? <div aria-hidden style={{ height: toolbarBox.height }} /> : null}
-      <div className="min-h-[180px] rounded-b-box bg-base-100">
+      <div className="min-h-[11.25rem] rounded-b-box bg-base-100">
         <EditorContent
           editor={editor}
           className="prose max-w-none p-4 text-sm leading-relaxed prose-headings:font-bold prose-p:my-2 prose-ul:my-2 prose-img:rounded-box prose-a:text-brand prose-a:underline"
