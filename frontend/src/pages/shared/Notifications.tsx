@@ -1,6 +1,9 @@
 import { useEffect,useRef } from 'react';
+import { FiBell,FiCheck,FiRefreshCw } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
+import { heroAction,heroGhost } from '../../components/hero/hero-actions';
+import { PageHero } from '../../components/hero/PageHero';
 import { InboxToolbar } from '../../components/notifications/InboxToolbar';
 import { NotificationRow } from '../../components/notifications/NotificationRow';
 import { notificationLink } from '../../components/notifications/notification-links';
@@ -35,16 +38,20 @@ export function Notifications() {
     : { title: 'No notifications yet', hint: 'Class changes, new assignments, payment reminders and messages will show up here.' };
 
   return (
-    <div className="mx-auto max-w-3xl space-y-4">
-      <InboxToolbar
-        filter={inbox.filter}
-        onFilter={inbox.setFilter}
-        unread={count}
-        markingAll={inbox.markingAll}
-        refreshing={inbox.loading}
-        onMarkAll={() => void inbox.markAll()}
-        onRefresh={() => { reload(); refresh(); }}
-      />
+    <div className="space-y-4">
+      <PageHero eyebrow="Inbox" icon={FiBell} title="Notifications" art="announcements"
+        description="Class changes, new assignments, payment reminders and messages — everything that needs your attention."
+        meta={<span className="hero-chip hero-chip-solid">{count > 0 ? `${count > 99 ? '99+' : count} unread` : 'All caught up'}</span>}
+        actions={<>
+          <button type="button" onClick={() => void inbox.markAll()} disabled={inbox.markingAll || count === 0} className={`${heroAction} disabled:border-primary-content disabled:bg-primary-content disabled:text-primary`}>
+            {inbox.markingAll ? <span className="loading loading-spinner loading-xs" /> : <FiCheck aria-hidden />}Mark all read
+          </button>
+          <button type="button" onClick={() => { reload(); refresh(); }} disabled={inbox.loading} className={`${heroGhost} disabled:border-primary-content disabled:bg-transparent disabled:text-primary-content`}>
+            <FiRefreshCw aria-hidden className={inbox.loading ? 'animate-spin' : ''} />Refresh
+          </button>
+        </>} />
+      <div className="mx-auto max-w-3xl space-y-4">
+      <InboxToolbar filter={inbox.filter} onFilter={inbox.setFilter} unread={count} />
       {inbox.actionError ? <p role="alert" className="alert alert-error alert-soft text-sm">{inbox.actionError}</p> : null}
 
       {inbox.loading && inbox.rows.length === 0 ? <LoadingBlock label="Loading notifications…" /> : null}
@@ -75,6 +82,7 @@ export function Notifications() {
           ) : null}
         </Panel>
       ) : null}
+      </div>
     </div>
   );
 }
