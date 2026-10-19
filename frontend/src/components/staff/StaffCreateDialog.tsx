@@ -150,7 +150,7 @@ export function StaffCreateDialog({ creatableRoles, saving, onClose, onSubmit }:
               hint="Read it out over the phone rather than sending it in chat."
             />
             {role ? (
-              <p className="rounded-field bg-base-200 px-3 py-2 text-[11px] text-muted">
+              <p className="rounded-field bg-base-200 px-3 py-2 text-[0.6875rem] text-muted">
                 {role.limits}
               </p>
             ) : null}
