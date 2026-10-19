@@ -27,7 +27,8 @@ export function RadialStat({
  const inner = outer - thickness;
 
  return (
- <div className={`relative ${className}`} style={{ width: size, height: size }}>
+ // rem, so the gauge follows the laptop root size like the text inside it.
+ <div className={`relative ${className}`} style={{ width: `${size / 16}rem`, height: `${size / 16}rem` }}>
  <ResponsiveContainer width="100%" height="100%">
  <RadialBarChart
  data={[{ name: 'progress', value: clamped }]}
