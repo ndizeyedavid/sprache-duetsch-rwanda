@@ -14,7 +14,7 @@ export const listMine = async (req: Request, res: Response): Promise<void> => { 
 export const getMine = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await getStudentDetail(req.user!.id, idOf(req)) }); };
 export const draft = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await saveWork(req.user!.id, idOf(req), validatedBody<DraftInput>(req)) }); };
 export const submit = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await saveWork(req.user!.id, idOf(req), validatedBody<DraftInput>(req), true) }); };
-export const list = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await service.listStaff(req.user!) }); };
+export const list = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await service.listStaff(req.user!, validatedQuery<{ intakeId?: string }>(req).intakeId) }); };
 export const get = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await service.getStaffDetail(req.user!, idOf(req)) }); };
 export const create = async (req: Request, res: Response): Promise<void> => { res.status(201).json({ success: true, data: await service.saveAssignment(req.user!, validatedBody<AssignmentInput>(req)) }); };
 export const update = async (req: Request, res: Response): Promise<void> => { res.json({ success: true, data: await service.saveAssignment(req.user!, validatedBody<AssignmentInput>(req), idOf(req)) }); };
