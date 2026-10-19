@@ -16,7 +16,7 @@ export function StudentPreview({ draft: d, scopeLabel }: { draft: TaskDraft; sco
   return (
     <div className="space-y-3">
       <article className="rounded-box border border-base-300 bg-base-100 p-5">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand">{kindMeta(d.kind).label}{scopeLabel ? ` · ${scopeLabel}` : ''}</p>
+        <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.2em] text-brand">{kindMeta(d.kind).label}{scopeLabel ? ` · ${scopeLabel}` : ''}</p>
         <h2 className="mt-2 text-xl font-semibold">{d.title || <span className="text-muted">Untitled</span>}</h2>
         <div className="mt-3 flex flex-wrap gap-1.5">
           {chips.map(([Icon, label]) => { const I = Icon as typeof FiClock; return <span key={String(label)} className="inline-flex items-center gap-1.5 rounded-full bg-base-200 px-2.5 py-1 text-xs"><I aria-hidden />{String(label)}</span>; })}
