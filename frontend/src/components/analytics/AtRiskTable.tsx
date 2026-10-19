@@ -36,7 +36,7 @@ export function AtRiskTable({ rows, linkFor, compact = false }: Props) {
                 {!compact ? (
                   <td className="hidden text-right tabular-nums md:table-cell">
                     {formatPercent(row.attendanceRate)}
-                    <span className="block text-[11px] text-muted">needs {row.attendanceThreshold}%</span>
+                    <span className="block text-[0.6875rem] text-muted">needs {row.attendanceThreshold}%</span>
                   </td>
                 ) : null}
                 {!compact ? <td className="hidden text-right tabular-nums md:table-cell">{formatPercent(row.averageScore)}</td> : null}
