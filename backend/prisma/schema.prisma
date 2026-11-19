@@ -119,6 +119,8 @@ enum ActivityType {
   SPEAKING
   PRONUNCIATION
   FLASHCARD
+  /// Duolingo-style practice session: mixed items checked one by one (course v2).
+  PRACTICE
 }
 
 enum AssessmentType {
@@ -391,6 +393,7 @@ model Level {
   currentFor  Student[]    @relation("CurrentLevel")
   intakes     Intake[]     @relation("IntakeLevels")
   activityEvents ActivityEvent[]
+  examPapers  ExamPaper[]
 
   @@index([language, order])
 }
@@ -455,6 +458,8 @@ model ClassGroup {
 // ---------------------------------------------------------------------------
 
 model Student {
+  learningEvents LearningEvent[]
+  examPaperAttempts ExamPaperAttempt[]
   assignmentRecipients AssignmentRecipient[]
   assignmentSubmissions AssignmentSubmission[]
   assignmentExtensions AssignmentExtension[]
@@ -587,6 +592,11 @@ model Lesson {
   order                Int
   contentType          LessonContentType @default(VIDEO)
   body                 String?
+  /// Structured bilingual lesson (course v2): sections, English help, audio, glossary. Students see it instead of `body` when set.
+  content              Json?
+  /// English help for a `body` lesson: block text → English, tap-to-translate glossary and the lesson's word list
+  /// (prisma/course-import/translate). Explanation and model-answer translations live in the activity configs instead.
+  translation          Json?
   videoUrl             String?
   audioUrl             String?
   estimatedMinutes     Int               @default(10)
@@ -739,6 +749,9 @@ model Assessment {
   availableUntil     DateTime?
   isPublished        Boolean        @default(false)
   prerequisiteLessonId String?
+  /// Exam parts ("Hören, Teil 1"): instructions, reading text and shared recording shown once above their
+  /// questions, plus play limits and a/b/c labels. Shape: src/modules/assessments/assessment-sections.ts.
+  sections           Json?
   createdAt          DateTime       @default(now())
   updatedAt          DateTime       @updatedAt
 
@@ -748,6 +761,63 @@ model Assessment {
   attempts   Attempt[]
 
   @@index([levelId, isPublished])
+}
+
+/// A paper in the student exam centre: an official sample exam (e.g. Goethe Modellsatz) or a past paper,
+/// as a PDF upload and/or a link, with an optional answer key for the online answer sheet (answer-key.ts).
+model ExamPaper {
+  id          String   @id @default(uuid())
+  levelId     String
+  title       String
+  description String?
+  provider    String   @default("Goethe-Institut")
+  edition     String?
+  fileUrl     String?
+  fileName    String?
+  sizeBytes   Int?
+  sourceUrl   String?
+  answerKey   Json?
+  order       Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdById String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  level    Level              @relation(fields: [levelId], references: [id], onDelete: Cascade)
+  audio    ExamPaperAudio[]
+  attempts ExamPaperAttempt[]
+
+  @@index([levelId, isPublished])
+}
+
+/// A listening recording of an exam paper ("Hören, Teil 1"), uploaded through /api/uploads and played in the app.
+model ExamPaperAudio {
+  id      String @id @default(uuid())
+  paperId String
+  title   String
+  url     String
+  order   Int    @default(0)
+
+  paper ExamPaper @relation(fields: [paperId], references: [id], onDelete: Cascade)
+
+  @@index([paperId])
+}
+
+/// One checked online answer sheet: the student's picks and the marks per part and section.
+model ExamPaperAttempt {
+  id        String   @id @default(uuid())
+  paperId   String
+  studentId String
+  score     Int
+  total     Int
+  responses Json
+  sections  Json
+  createdAt DateTime @default(now())
+
+  paper   ExamPaper @relation(fields: [paperId], references: [id], onDelete: Cascade)
+  student Student   @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@index([paperId, studentId])
 }
 
 model AssessmentQuestion {
@@ -1384,6 +1454,7 @@ enum CheckoutStatus {
   FAILED
 }
 
+/// One mobile-money payment request sent to the gateway (XendlyPay). Its id is the gateway `reference`.
 model PaymentCheckout {
   id             String         @id @default(uuid())
   requestKey     String         @unique
@@ -1392,7 +1463,11 @@ model PaymentCheckout {
   amount         Decimal        @db.Decimal(12, 2)
   currency       String         @default("RWF")
   status         CheckoutStatus @default(INITIATING)
+  /// Gateway that handled the request. Rows from the retired Paypack integration keep "PAYPACK".
+  provider       String         @default("XENDLYPAY")
   providerRef    String?        @unique
+  /// Readable reason from the gateway when a request failed or was refused.
+  failureReason  String?
   paymentId      String?        @unique
   lastCheckedAt  DateTime?
   createdAt      DateTime       @default(now())
@@ -1402,17 +1477,22 @@ model PaymentCheckout {
 
   @@index([studentId, createdAt])
   @@index([status, lastCheckedAt])
+  @@index([provider, status])
 }
 
 // Durable inbox also handles callbacks that arrive before cashin returns.
-model PaypackEvent {
-  id          String   @id
+/// Signed gateway callbacks, stored before processing so a crash never loses one. id = delivery id.
+model PaymentWebhookEvent {
+  id          String    @id
+  provider    String
+  type        String
   providerRef String
   payload     Json
   processedAt DateTime?
-  createdAt   DateTime @default(now())
+  createdAt   DateTime  @default(now())
 
-  @@index([providerRef, processedAt])
+  @@index([provider, processedAt])
+  @@index([providerRef])
 }
 
 // ---------------------------------------------------------------------------
@@ -1555,4 +1635,23 @@ model Application {
   @@index([status, createdAt])
   @@index([levelId, intakeId, status])
   @@index([email])
+}
+
+/// Course v2: one row per finished practice session (XP, first-try accuracy) — streaks, daily goal, history.
+model LearningEvent {
+  id         String   @id @default(uuid())
+  studentId  String
+  activityId String?
+  lessonId   String?
+  levelId    String?
+  kind       String   @default("PRACTICE")
+  xp         Int      @default(0)
+  correct    Int      @default(0)
+  total      Int      @default(0)
+  seconds    Int      @default(0)
+  createdAt  DateTime @default(now())
+
+  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@index([studentId, createdAt])
 }
