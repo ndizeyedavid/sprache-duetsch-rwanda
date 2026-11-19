@@ -1,0 +1,775 @@
+{
+ "level": "A1",
+ "lesson": 14,
+ "title": "Haus und Wohnung — Wie findest du Annas Haus?",
+ "lines": [
+  {
+   "de": "Eine Wohnung beschreiben und sagen, wem etwas gehört.",
+   "en": "Describe a flat and say who something belongs to."
+  },
+  {
+   "de": "Textsorte: Gespräch · Wohnungsanzeige",
+   "en": "Text type: Conversation · Flat advertisement"
+  },
+  {
+   "de": "Räume und Teile eines Hauses benennen",
+   "en": "name the rooms and parts of a house"
+  },
+  {
+   "de": "die Possessivartikel sein und ihr verwenden",
+   "en": "use the possessive articles (Possessivartikel) sein and ihr"
+  },
+  {
+   "de": "mit dem Genitiv-s bei Namen sagen, wem etwas gehört",
+   "en": "use the genitive -s (Genitiv-s) with names to say who something belongs to"
+  },
+  {
+   "de": "Grammatik: Possessivartikel sein und ihr",
+   "en": "Grammar: possessive articles (Possessivartikel) sein and ihr"
+  },
+  {
+   "de": "sein gehört zu er, ihr gehört zu sie. Die Endungen sind wie bei mein. Im Akkusativ bekommt nur das maskuline Nomen ein -en.",
+   "en": "sein goes with er, ihr goes with sie. The endings are the same as for mein. In the accusative, only the masculine form gets an -en."
+  },
+  {
+   "de": "Nominativ (Da ist …)",
+   "en": "Nominative (There is …)"
+  },
+  {
+   "de": "Akkusativ (Ich mag …)",
+   "en": "Accusative (I like …)"
+  },
+  {
+   "de": "sein / ihr Garten",
+   "en": "his / her garden"
+  },
+  {
+   "de": "seinen / ihren Garten",
+   "en": "his / her garden"
+  },
+  {
+   "de": "sein / ihr Haus",
+   "en": "his / her house"
+  },
+  {
+   "de": "seine / ihre Küche",
+   "en": "his / her kitchen"
+  },
+  {
+   "de": "seine / ihre Kinder",
+   "en": "his / her children"
+  },
+  {
+   "de": "Das ist Otto. Sein Haus ist sehr schön.er → sein",
+   "en": "This is Otto. His house is very beautiful. er → sein"
+  },
+  {
+   "de": "Das ist Anna. Ihre Küche ist neu.sie → ihre",
+   "en": "This is Anna. Her kitchen is new. sie → ihre"
+  },
+  {
+   "de": "Ich mag ihren Garten sehr.Akkusativ maskulin: ihren",
+   "en": "I really like her garden. Accusative masculine: ihren"
+  },
+  {
+   "de": "Tipp: Die Endung richtet sich nach dem Nomen danach — nicht nach der Person: Anna und ihr Garten, Otto und seine Küche.",
+   "en": "Tip: The ending depends on the noun that follows — not on the person: Anna and her garden (ihr Garten), Otto and his kitchen (seine Küche)."
+  },
+  {
+   "de": "Grammatik: Genitiv bei Eigennamen",
+   "en": "Grammar: genitive (Genitiv) with proper names"
+  },
+  {
+   "de": "Um zu sagen, wem etwas gehört, hängt man bei Namen einfach ein -s an — ohne Apostroph.",
+   "en": "To say who something belongs to, you simply add an -s to the name — without an apostrophe."
+  },
+  {
+   "de": "mit -s",
+   "en": "with -s"
+  },
+  {
+   "de": "mit von",
+   "en": "with von"
+  },
+  {
+   "de": "Annas Haus",
+   "en": "Anna's house"
+  },
+  {
+   "de": "das Haus von Anna",
+   "en": "the house of Anna"
+  },
+  {
+   "de": "Ottos Garten",
+   "en": "Otto's garden"
+  },
+  {
+   "de": "der Garten von Otto",
+   "en": "the garden of Otto"
+  },
+  {
+   "de": "Vanillas Küche",
+   "en": "Vanilla's kitchen"
+  },
+  {
+   "de": "die Küche von Vanilla",
+   "en": "the kitchen of Vanilla"
+  },
+  {
+   "de": "Wie findest du Annas Haus?Annas = von Anna",
+   "en": "What do you think of Anna's house? Annas = von Anna"
+  },
+  {
+   "de": "Ottos Nachbarin ist sehr nett.kein Apostroph im Deutschen",
+   "en": "Otto's neighbour is very nice. No apostrophe in German."
+  },
+  {
+   "de": "Tipp: Vorsicht: Im Deutschen schreibt man Annas Haus — nicht „Anna's Haus\".",
+   "en": "Tip: Careful: in German you write Annas Haus — not \"Anna's Haus\"."
+  },
+  {
+   "de": "das Haus, ¨-er — EN: house · FR: la maisonIhr Haus ist sehr groß.",
+   "en": "Example: Her house is very big."
+  },
+  {
+   "de": "die Wohnung, -en — EN: flat · FR: l'appartementDie Wohnung hat drei Zimmer.",
+   "en": "Example: The flat has three rooms."
+  },
+  {
+   "de": "das Zimmer, - — EN: room · FR: la pièceMein Zimmer ist klein.",
+   "en": "Example: My room is small."
+  },
+  {
+   "de": "die Küche, -n — EN: kitchen · FR: la cuisineDie Küche ist neu.",
+   "en": "Example: The kitchen is new."
+  },
+  {
+   "de": "das Bad, ¨-er — EN: bathroom · FR: la salle de bainsDas Bad ist leider sehr klein.",
+   "en": "Example: Unfortunately, the bathroom is very small."
+  },
+  {
+   "de": "der Garten, ¨- — EN: garden · FR: le jardinSein Garten ist wunderschön.",
+   "en": "Example: His garden is really beautiful."
+  },
+  {
+   "de": "der Balkon, -e — EN: balcony · FR: le balconWir haben einen Balkon.",
+   "en": "Example: We have a balcony."
+  },
+  {
+   "de": "der Nachbar, -n / die Nachbarin, -nen — EN: neighbour · FR: le voisin / la voisineUnsere Nachbarn sind sehr freundlich.",
+   "en": "Example: Our neighbours are very friendly."
+  },
+  {
+   "de": "groß / klein — EN: big / small · FR: grand / petitDie Wohnung ist ziemlich klein.",
+   "en": "Example: The flat is quite small."
+  },
+  {
+   "de": "hell / dunkel — EN: bright / dark · FR: clair / sombreDas Zimmer ist sehr hell.",
+   "en": "Example: The room is very bright."
+  },
+  {
+   "de": "die Miete, -n — EN: rent · FR: le loyerWie hoch ist die Miete?",
+   "en": "Example: How much is the rent?"
+  },
+  {
+   "de": "gefallen — EN: to please, to like · FR: plaireDie Wohnung gefällt mir.",
+   "en": "Example: I like the flat."
+  },
+  {
+   "de": "eine Wohnung beschreiben",
+   "en": "describing a flat"
+  },
+  {
+   "de": "Die Wohnung hat drei Zimmer.",
+   "en": "The flat has three rooms."
+  },
+  {
+   "de": "Das Bad ist klein, aber hell.",
+   "en": "The bathroom is small but bright."
+  },
+  {
+   "de": "Wir haben auch einen Balkon.",
+   "en": "We also have a balcony."
+  },
+  {
+   "de": "bewerten",
+   "en": "giving your opinion"
+  },
+  {
+   "de": "Wie findest du das Haus?",
+   "en": "What do you think of the house?"
+  },
+  {
+   "de": "Das Haus gefällt mir sehr.",
+   "en": "I like the house a lot."
+  },
+  {
+   "de": "Der Garten ist mir zu klein.",
+   "en": "The garden is too small for me."
+  },
+  {
+   "de": "Wie hoch ist die Miete?",
+   "en": "How much is the rent?"
+  },
+  {
+   "de": "Wie viele Zimmer hat die Wohnung?",
+   "en": "How many rooms does the flat have?"
+  },
+  {
+   "de": "Gibt es auch einen Garten?",
+   "en": "Is there a garden too?"
+  },
+  {
+   "de": "Dialog: Zu Besuch",
+   "en": "Dialogue: On a visit"
+  },
+  {
+   "de": "Tim: Wie findest du Annas Haus?",
+   "en": "Tim: What do you think of Anna's house?"
+  },
+  {
+   "de": "Mo: Sehr schön! Ihre Küche ist super.",
+   "en": "Mo: Very nice! Her kitchen is great."
+  },
+  {
+   "de": "Tim: Ja, und ihr Garten ist auch toll.",
+   "en": "Tim: Yes, and her garden is great too."
+  },
+  {
+   "de": "Mo: Wie viele Zimmer hat das Haus?",
+   "en": "Mo: How many rooms does the house have?"
+  },
+  {
+   "de": "Tim: Vier. Und Ottos Haus nebenan hat sogar fünf.",
+   "en": "Tim: Four. And Otto's house next door even has five."
+  },
+  {
+   "de": "Mo: Aber sein Garten ist viel kleiner.",
+   "en": "Mo: But his garden is much smaller."
+  },
+  {
+   "de": "Ihr Haus ist sehr groß.",
+   "en": "Her house is very big."
+  },
+  {
+   "de": "Mein Zimmer ist klein.",
+   "en": "My room is small."
+  },
+  {
+   "de": "Die Küche ist neu.",
+   "en": "The kitchen is new."
+  },
+  {
+   "de": "Das Bad ist leider sehr klein.",
+   "en": "Unfortunately, the bathroom is very small."
+  },
+  {
+   "de": "Sein Garten ist wunderschön.",
+   "en": "His garden is really beautiful."
+  },
+  {
+   "de": "Wir haben einen Balkon.",
+   "en": "We have a balcony."
+  },
+  {
+   "de": "Unsere Nachbarn sind sehr freundlich.",
+   "en": "Our neighbours are very friendly."
+  },
+  {
+   "de": "Die Wohnung ist ziemlich klein.",
+   "en": "The flat is quite small."
+  },
+  {
+   "de": "Das Zimmer ist sehr hell.",
+   "en": "The room is very bright."
+  },
+  {
+   "de": "Die Wohnung gefällt mir.",
+   "en": "I like the flat."
+  },
+  {
+   "de": "Das ist Anna. ___ Küche ist neu. (Possessivartikel, feminin)",
+   "en": "This is Anna. ___ kitchen is new. (possessive article, feminine)"
+  },
+  {
+   "de": "Das ist Otto. ___ Garten ist groß.",
+   "en": "This is Otto. ___ garden is big."
+  },
+  {
+   "de": "Ich mag ___ Garten sehr. (ihr, maskulin Akkusativ)",
+   "en": "I really like ___ garden. (ihr, masculine accusative)"
+  },
+  {
+   "de": "das Haus von Anna = ___ Haus (Genitiv-s)",
+   "en": "the house of Anna = ___ house (genitive -s)"
+  },
+  {
+   "de": "das Haus → Plural:",
+   "en": "the house → plural:"
+  },
+  {
+   "de": "Beschreiben Sie Ihre Wohnung oder das Haus einer Freundin. Umfang: 30–40 Wörter Checkliste: • Nennen Sie mindestens drei Räume. • Benutzen Sie sein oder ihr richtig. • Schreiben Sie einmal einen Namen mit Genitiv-s.",
+   "en": "Describe your flat or a friend's house. Length: 30–40 words Checklist: • Name at least three rooms. • Use sein or ihr correctly. • Write a name with the genitive -s once."
+  },
+  {
+   "de": "sie → ihr; die Küche ist feminin → ihre.",
+   "en": "sie → ihr; die Küche is feminine → ihre."
+  },
+  {
+   "de": "er → sein; der Garten ist maskulin, Nominativ → sein.",
+   "en": "er → sein; der Garten is masculine, nominative → sein."
+  },
+  {
+   "de": "Akkusativ maskulin: ihr → ihren.",
+   "en": "Accusative masculine: ihr → ihren."
+  },
+  {
+   "de": "Bei Namen hängt man -s an, ohne Apostroph.",
+   "en": "With names you add -s, without an apostrophe."
+  },
+  {
+   "de": "Plural mit Umlaut und -er.",
+   "en": "Plural with umlaut and -er."
+  }
+ ],
+ "forms": [
+  {
+   "form": "wem",
+   "context": "Eine Wohnung beschreiben und sagen, wem etwas gehört.",
+   "en": "(to) whom",
+   "lemma": ""
+  },
+  {
+   "form": "gehört",
+   "context": "Eine Wohnung beschreiben und sagen, wem etwas gehört.",
+   "en": "belongs",
+   "lemma": "gehören"
+  },
+  {
+   "form": "Wohnungsanzeige",
+   "context": "Textsorte: Gespräch · Wohnungsanzeige",
+   "en": "flat advert",
+   "lemma": "die Wohnungsanzeige"
+  },
+  {
+   "form": "Teile",
+   "context": "Räume und Teile eines Hauses benennen",
+   "en": "parts",
+   "lemma": "der Teil"
+  },
+  {
+   "form": "eines",
+   "context": "Räume und Teile eines Hauses benennen",
+   "en": "of a",
+   "lemma": ""
+  },
+  {
+   "form": "Hauses",
+   "context": "Räume und Teile eines Hauses benennen",
+   "en": "(of a) house",
+   "lemma": "das Haus"
+  },
+  {
+   "form": "Possessivartikel",
+   "context": "die Possessivartikel sein und ihr verwenden",
+   "en": "possessive articles",
+   "lemma": "der Possessivartikel"
+  },
+  {
+   "form": "Genitiv-s",
+   "context": "mit dem Genitiv-s bei Namen sagen, wem etwas gehört",
+   "en": "genitive -s",
+   "lemma": "das Genitiv-s"
+  },
+  {
+   "form": "bekommt",
+   "context": "sein gehört zu er, ihr gehört zu sie. Die Endungen sind wie bei mein. Im Akkusativ bekommt nur das maskuline Nomen ein -en.",
+   "en": "gets",
+   "lemma": "bekommen"
+  },
+  {
+   "form": "maskuline",
+   "context": "sein gehört zu er, ihr gehört zu sie. Die Endungen sind wie bei mein. Im Akkusativ bekommt nur das maskuline Nomen ein -en.",
+   "en": "masculine",
+   "lemma": "maskulin"
+  },
+  {
+   "form": "Garten",
+   "context": "sein / ihr Garten",
+   "en": "garden",
+   "lemma": "der Garten"
+  },
+  {
+   "form": "Haus",
+   "context": "sein / ihr Haus",
+   "en": "house",
+   "lemma": "das Haus"
+  },
+  {
+   "form": "seine",
+   "context": "seine / ihre Küche",
+   "en": "his",
+   "lemma": ""
+  },
+  {
+   "form": "Küche",
+   "context": "seine / ihre Küche",
+   "en": "kitchen",
+   "lemma": "die Küche"
+  },
+  {
+   "form": "Otto",
+   "context": "Das ist Otto. Sein Haus ist sehr schön.er → sein",
+   "en": "Otto (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Anna",
+   "context": "Das ist Anna. Ihre Küche ist neu.sie → ihre",
+   "en": "Anna (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Genitiv",
+   "context": "Grammatik: Genitiv bei Eigennamen",
+   "en": "genitive",
+   "lemma": "der Genitiv"
+  },
+  {
+   "form": "Eigennamen",
+   "context": "Grammatik: Genitiv bei Eigennamen",
+   "en": "proper names",
+   "lemma": "der Eigenname"
+  },
+  {
+   "form": "Apostroph",
+   "context": "Um zu sagen, wem etwas gehört, hängt man bei Namen einfach ein -s an — ohne Apostroph.",
+   "en": "apostrophe",
+   "lemma": "der Apostroph"
+  },
+  {
+   "form": "Annas",
+   "context": "Annas Haus",
+   "en": "Anna's",
+   "lemma": ""
+  },
+  {
+   "form": "Ottos",
+   "context": "Ottos Garten",
+   "en": "Otto's",
+   "lemma": ""
+  },
+  {
+   "form": "Vanillas",
+   "context": "Vanillas Küche",
+   "en": "Vanilla's",
+   "lemma": ""
+  },
+  {
+   "form": "Vanilla",
+   "context": "die Küche von Vanilla",
+   "en": "Vanilla (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Nachbarin",
+   "context": "Ottos Nachbarin ist sehr nett.kein Apostroph im Deutschen",
+   "en": "neighbour (female)",
+   "lemma": "die Nachbarin"
+  },
+  {
+   "form": "Vorsicht",
+   "context": "Tipp: Vorsicht: Im Deutschen schreibt man Annas Haus — nicht „Anna's Haus\".",
+   "en": "careful; caution",
+   "lemma": "die Vorsicht"
+  },
+  {
+   "form": "Anna's",
+   "context": "Tipp: Vorsicht: Im Deutschen schreibt man Annas Haus — nicht „Anna's Haus\".",
+   "en": "Anna's (wrong in German)",
+   "lemma": ""
+  },
+  {
+   "form": "house",
+   "context": "das Haus, ¨-er — EN: house · FR: la maisonIhr Haus ist sehr groß.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "maisonIhr",
+   "context": "das Haus, ¨-er — EN: house · FR: la maisonIhr Haus ist sehr groß.",
+   "en": "her; their",
+   "lemma": ""
+  },
+  {
+   "form": "flat",
+   "context": "die Wohnung, -en — EN: flat · FR: l'appartementDie Wohnung hat drei Zimmer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'appartementDie",
+   "context": "die Wohnung, -en — EN: flat · FR: l'appartementDie Wohnung hat drei Zimmer.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "room",
+   "context": "das Zimmer, - — EN: room · FR: la pièceMein Zimmer ist klein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pièceMein",
+   "context": "das Zimmer, - — EN: room · FR: la pièceMein Zimmer ist klein.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "kitchen",
+   "context": "die Küche, -n — EN: kitchen · FR: la cuisineDie Küche ist neu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cuisineDie",
+   "context": "die Küche, -n — EN: kitchen · FR: la cuisineDie Küche ist neu.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Bad",
+   "context": "das Bad, ¨-er — EN: bathroom · FR: la salle de bainsDas Bad ist leider sehr klein.",
+   "en": "bathroom; bath",
+   "lemma": "das Bad"
+  },
+  {
+   "form": "bathroom",
+   "context": "das Bad, ¨-er — EN: bathroom · FR: la salle de bainsDas Bad ist leider sehr klein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "salle",
+   "context": "das Bad, ¨-er — EN: bathroom · FR: la salle de bainsDas Bad ist leider sehr klein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bainsDas",
+   "context": "das Bad, ¨-er — EN: bathroom · FR: la salle de bainsDas Bad ist leider sehr klein.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "garden",
+   "context": "der Garten, ¨- — EN: garden · FR: le jardinSein Garten ist wunderschön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jardinSein",
+   "context": "der Garten, ¨- — EN: garden · FR: le jardinSein Garten ist wunderschön.",
+   "en": "his",
+   "lemma": ""
+  },
+  {
+   "form": "wunderschön",
+   "context": "der Garten, ¨- — EN: garden · FR: le jardinSein Garten ist wunderschön.",
+   "en": "really beautiful",
+   "lemma": ""
+  },
+  {
+   "form": "Balkon",
+   "context": "der Balkon, -e — EN: balcony · FR: le balconWir haben einen Balkon.",
+   "en": "balcony",
+   "lemma": "der Balkon"
+  },
+  {
+   "form": "balcony",
+   "context": "der Balkon, -e — EN: balcony · FR: le balconWir haben einen Balkon.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "balconWir",
+   "context": "der Balkon, -e — EN: balcony · FR: le balconWir haben einen Balkon.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "Nachbar",
+   "context": "der Nachbar, -n / die Nachbarin, -nen — EN: neighbour · FR: le voisin / la voisineUnsere Nachbarn sind sehr freundlich.",
+   "en": "neighbour",
+   "lemma": "der Nachbar"
+  },
+  {
+   "form": "nen",
+   "context": "der Nachbar, -n / die Nachbarin, -nen — EN: neighbour · FR: le voisin / la voisineUnsere Nachbarn sind sehr freundlich.",
+   "en": "plural ending (-nen)",
+   "lemma": ""
+  },
+  {
+   "form": "neighbour",
+   "context": "der Nachbar, -n / die Nachbarin, -nen — EN: neighbour · FR: le voisin / la voisineUnsere Nachbarn sind sehr freundlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "voisin",
+   "context": "der Nachbar, -n / die Nachbarin, -nen — EN: neighbour · FR: le voisin / la voisineUnsere Nachbarn sind sehr freundlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "voisineUnsere",
+   "context": "der Nachbar, -n / die Nachbarin, -nen — EN: neighbour · FR: le voisin / la voisineUnsere Nachbarn sind sehr freundlich.",
+   "en": "our",
+   "lemma": ""
+  },
+  {
+   "form": "Nachbarn",
+   "context": "der Nachbar, -n / die Nachbarin, -nen — EN: neighbour · FR: le voisin / la voisineUnsere Nachbarn sind sehr freundlich.",
+   "en": "neighbours",
+   "lemma": "der Nachbar"
+  },
+  {
+   "form": "big",
+   "context": "groß / klein — EN: big / small · FR: grand / petitDie Wohnung ist ziemlich klein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "small",
+   "context": "groß / klein — EN: big / small · FR: grand / petitDie Wohnung ist ziemlich klein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "grand",
+   "context": "groß / klein — EN: big / small · FR: grand / petitDie Wohnung ist ziemlich klein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "petitDie",
+   "context": "groß / klein — EN: big / small · FR: grand / petitDie Wohnung ist ziemlich klein.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "ziemlich",
+   "context": "groß / klein — EN: big / small · FR: grand / petitDie Wohnung ist ziemlich klein.",
+   "en": "quite; rather",
+   "lemma": ""
+  },
+  {
+   "form": "hell",
+   "context": "hell / dunkel — EN: bright / dark · FR: clair / sombreDas Zimmer ist sehr hell.",
+   "en": "bright; light",
+   "lemma": ""
+  },
+  {
+   "form": "dunkel",
+   "context": "hell / dunkel — EN: bright / dark · FR: clair / sombreDas Zimmer ist sehr hell.",
+   "en": "dark",
+   "lemma": ""
+  },
+  {
+   "form": "bright",
+   "context": "hell / dunkel — EN: bright / dark · FR: clair / sombreDas Zimmer ist sehr hell.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dark",
+   "context": "hell / dunkel — EN: bright / dark · FR: clair / sombreDas Zimmer ist sehr hell.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "clair",
+   "context": "hell / dunkel — EN: bright / dark · FR: clair / sombreDas Zimmer ist sehr hell.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sombreDas",
+   "context": "hell / dunkel — EN: bright / dark · FR: clair / sombreDas Zimmer ist sehr hell.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Miete",
+   "context": "die Miete, -n — EN: rent · FR: le loyerWie hoch ist die Miete?",
+   "en": "rent",
+   "lemma": "die Miete"
+  },
+  {
+   "form": "rent",
+   "context": "die Miete, -n — EN: rent · FR: le loyerWie hoch ist die Miete?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "loyerWie",
+   "context": "die Miete, -n — EN: rent · FR: le loyerWie hoch ist die Miete?",
+   "en": "how",
+   "lemma": ""
+  },
+  {
+   "form": "hoch",
+   "context": "die Miete, -n — EN: rent · FR: le loyerWie hoch ist die Miete?",
+   "en": "high",
+   "lemma": ""
+  },
+  {
+   "form": "please",
+   "context": "gefallen — EN: to please, to like · FR: plaireDie Wohnung gefällt mir.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "plaireDie",
+   "context": "gefallen — EN: to please, to like · FR: plaireDie Wohnung gefällt mir.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Besuch",
+   "context": "Dialog: Zu Besuch",
+   "en": "visit",
+   "lemma": "der Besuch"
+  },
+  {
+   "form": "Tim",
+   "context": "Tim: Wie findest du Annas Haus?",
+   "en": "Tim (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Mo",
+   "context": "Mo: Sehr schön! Ihre Küche ist super.",
+   "en": "Mo (name)",
+   "lemma": ""
+  },
+  {
+   "form": "nebenan",
+   "context": "Tim: Vier. Und Ottos Haus nebenan hat sogar fünf.",
+   "en": "next door",
+   "lemma": ""
+  },
+  {
+   "form": "sogar",
+   "context": "Tim: Vier. Und Ottos Haus nebenan hat sogar fünf.",
+   "en": "even",
+   "lemma": ""
+  },
+  {
+   "form": "kleiner",
+   "context": "Mo: Aber sein Garten ist viel kleiner.",
+   "en": "smaller",
+   "lemma": "klein"
+  }
+ ]
+}
