@@ -1,0 +1,633 @@
+{
+ "level": "B1",
+ "lesson": 10,
+ "title": "Verpasste Gelegenheiten — Hätte ich damals nur besser aufgepasst!",
+ "lines": [
+  {
+   "de": "Über Dinge sprechen, die man heute anders machen würde.",
+   "en": "Talking about things you would do differently today."
+  },
+  {
+   "de": "Bedauern über die Vergangenheit ausdrücken",
+   "en": "express regret about the past"
+  },
+  {
+   "de": "den Konjunktiv II der Vergangenheit bilden",
+   "en": "form the past subjunctive II (Konjunktiv II der Vergangenheit)"
+  },
+  {
+   "de": "irreale Bedingungen in der Vergangenheit formulieren",
+   "en": "express unreal conditions in the past"
+  },
+  {
+   "de": "Grammatik: Konjunktiv II der Vergangenheit",
+   "en": "Grammar: past subjunctive II (Konjunktiv II der Vergangenheit)"
+  },
+  {
+   "de": "Für Wünsche und Bedingungen, die sich auf die Vergangenheit beziehen und nicht mehr änderbar sind, benutzt man hätte oder wäre + Partizip Perfekt. Ob hätte oder wäre: genau wie beim Perfekt entscheidet das Vollverb.",
+   "en": "For wishes and conditions that refer to the past and can no longer be changed, you use hätte or wäre + past participle. Whether it is hätte or wäre: just as in the perfect tense, the main verb decides."
+  },
+  {
+   "de": "mit haben-Verben",
+   "en": "with haben verbs"
+  },
+  {
+   "de": "mit sein-Verben",
+   "en": "with sein verbs"
+  },
+  {
+   "de": "hätte gefragt",
+   "en": "would have asked"
+  },
+  {
+   "de": "wäre gekommen",
+   "en": "would have come"
+  },
+  {
+   "de": "hättest gefragt",
+   "en": "you would have asked"
+  },
+  {
+   "de": "wärst gekommen",
+   "en": "you would have come"
+  },
+  {
+   "de": "hätten gefragt",
+   "en": "we/they would have asked"
+  },
+  {
+   "de": "wären gekommen",
+   "en": "we/they would have come"
+  },
+  {
+   "de": "hättet gefragt",
+   "en": "you (plural) would have asked"
+  },
+  {
+   "de": "wärt gekommen",
+   "en": "you (plural) would have come"
+  },
+  {
+   "de": "Hätte ich doch früher mit dem Deutschlernen angefangen!irrealer Wunsch, oft mit doch, nur, bloß",
+   "en": "If only I had started learning German earlier! (unreal wish, often with doch, nur, bloß)"
+  },
+  {
+   "de": "Wenn ich mehr Zeit gehabt hätte, wäre ich mitgekommen.irreale Bedingung: beide Teile im Konjunktiv II Vergangenheit",
+   "en": "If I had had more time, I would have come along. (unreal condition: both parts in the past subjunctive II)"
+  },
+  {
+   "de": "An deiner Stelle hätte ich sofort reklamiert.Ratschlag im Rückblick",
+   "en": "In your place, I would have complained straight away. (advice in hindsight)"
+  },
+  {
+   "de": "Tipp: Mit Modalverb: Ich hätte früher fragen sollen. (Doppelinfinitiv — hätte + Infinitiv + Modalverb im Infinitiv, nicht gesollt.)",
+   "en": "Tip: With a modal verb: I should have asked earlier. (double infinitive — hätte + infinitive + modal verb in the infinitive, not gesollt.)"
+  },
+  {
+   "de": "die Gelegenheit, -en — EN: opportunity · FR: l'occasionIch habe die Gelegenheit leider verpasst.",
+   "en": "Example: Unfortunately I missed the opportunity."
+  },
+  {
+   "de": "verpassen — EN: to miss · FR: rater, manquerWir haben den letzten Bus verpasst.",
+   "en": "Example: We missed the last bus."
+  },
+  {
+   "de": "bereuen — EN: to regret · FR: regretterDiese Entscheidung bereue ich bis heute.",
+   "en": "Example: I still regret this decision today."
+  },
+  {
+   "de": "die Chance, -n — EN: chance · FR: la chanceEr hat seine Chance genutzt.",
+   "en": "Example: He made use of his chance."
+  },
+  {
+   "de": "sich ärgern über — EN: to be annoyed about · FR: s'énerver à propos deIch ärgere mich darüber, dass ich nichts gesagt habe.",
+   "en": "Example: I'm annoyed that I didn't say anything."
+  },
+  {
+   "de": "zögern — EN: to hesitate · FR: hésiterHätte ich nur nicht so lange gezögert!",
+   "en": "Example: If only I hadn't hesitated for so long!"
+  },
+  {
+   "de": "rechtzeitig — EN: in good time · FR: à tempsWenn wir rechtzeitig losgefahren wären, …",
+   "en": "Example: If we had set off in good time, …"
+  },
+  {
+   "de": "der Zufall, ¨-e — EN: coincidence · FR: le hasardDurch einen Zufall habe ich davon erfahren.",
+   "en": "Example: I found out about it by chance."
+  },
+  {
+   "de": "sich trauen — EN: to dare · FR: oserIch habe mich damals nicht getraut zu fragen.",
+   "en": "Example: Back then I didn't dare to ask."
+  },
+  {
+   "de": "ablehnen — EN: to turn down · FR: refuserWarum hast du das Angebot abgelehnt?",
+   "en": "Example: Why did you turn down the offer?"
+  },
+  {
+   "de": "entgehen (entging, entgangen) — EN: to escape one's notice · FR: échapper àMir ist eine gute Chance entgangen.",
+   "en": "Example: A good opportunity passed me by."
+  },
+  {
+   "de": "im Nachhinein — EN: in hindsight · FR: après coupIm Nachhinein war das ein Fehler.",
+   "en": "Example: In hindsight, that was a mistake."
+  },
+  {
+   "de": "Bedauern ausdrücken",
+   "en": "expressing regret"
+  },
+  {
+   "de": "Hätte ich das bloß anders gemacht!",
+   "en": "If only I had done that differently!"
+  },
+  {
+   "de": "Wenn ich das gewusst hätte, …",
+   "en": "If I had known that, …"
+  },
+  {
+   "de": "Es wäre besser gewesen, wenn ich …",
+   "en": "It would have been better if I …"
+  },
+  {
+   "de": "jemanden trösten",
+   "en": "comforting someone"
+  },
+  {
+   "de": "Das konntest du nicht wissen.",
+   "en": "You couldn't have known that."
+  },
+  {
+   "de": "Mach dir keine Vorwürfe.",
+   "en": "Don't blame yourself."
+  },
+  {
+   "de": "Das ist mir auch schon passiert.",
+   "en": "That has happened to me too."
+  },
+  {
+   "de": "im Rückblick raten",
+   "en": "giving advice in hindsight"
+  },
+  {
+   "de": "An deiner Stelle hätte ich …",
+   "en": "In your place, I would have …"
+  },
+  {
+   "de": "Du hättest … sollen.",
+   "en": "You should have …"
+  },
+  {
+   "de": "Vielleicht hätte es geholfen, wenn du …",
+   "en": "Maybe it would have helped if you …"
+  },
+  {
+   "de": "Ich habe die Gelegenheit leider verpasst.",
+   "en": "Unfortunately I missed the opportunity."
+  },
+  {
+   "de": "Wir haben den letzten Bus verpasst.",
+   "en": "We missed the last bus."
+  },
+  {
+   "de": "Diese Entscheidung bereue ich bis heute.",
+   "en": "I still regret this decision today."
+  },
+  {
+   "de": "Er hat seine Chance genutzt.",
+   "en": "He made use of his chance."
+  },
+  {
+   "de": "Ich ärgere mich darüber, dass ich nichts gesagt habe.",
+   "en": "I'm annoyed that I didn't say anything."
+  },
+  {
+   "de": "Hätte ich nur nicht so lange gezögert!",
+   "en": "If only I hadn't hesitated for so long!"
+  },
+  {
+   "de": "Wenn wir rechtzeitig losgefahren wären, …",
+   "en": "If we had set off in good time, …"
+  },
+  {
+   "de": "Durch einen Zufall habe ich davon erfahren.",
+   "en": "I found out about it by chance."
+  },
+  {
+   "de": "Ich habe mich damals nicht getraut zu fragen.",
+   "en": "Back then I didn't dare to ask."
+  },
+  {
+   "de": "Warum hast du das Angebot abgelehnt?",
+   "en": "Why did you turn down the offer?"
+  },
+  {
+   "de": "Mir ist eine gute Chance entgangen.",
+   "en": "A good opportunity passed me by."
+  },
+  {
+   "de": "Im Nachhinein war das ein Fehler.",
+   "en": "In hindsight, that was a mistake."
+  },
+  {
+   "de": "___ ich doch früher angefangen! (haben, Konjunktiv II)",
+   "en": "If only I ___ started earlier! (haben, subjunctive II)"
+  },
+  {
+   "de": "Wenn der Zug pünktlich gewesen wäre, ___ wir den Anschluss nicht verpasst.",
+   "en": "If the train had been on time, we ___ not missed the connection."
+  },
+  {
+   "de": "Ich ___ gern mitgekommen, aber ich war krank. (sein, Konjunktiv II)",
+   "en": "I ___ gladly come along, but I was ill. (sein, subjunctive II)"
+  },
+  {
+   "de": "Welche Form ist korrekt?",
+   "en": "Which form is correct?"
+  },
+  {
+   "de": "___ du mir das früher gesagt, hätte ich dir geholfen. (haben, Konjunktiv II)",
+   "en": "___ you told me that earlier, I would have helped you. (haben, subjunctive II)"
+  },
+  {
+   "de": "Irrealer Wunsch mit doch: Hätte ich doch …!",
+   "en": "Unreal wish with doch: Hätte ich doch …! (If only I had …!)"
+  },
+  {
+   "de": "verpassen bildet das Perfekt mit haben → hätten verpasst.",
+   "en": "verpassen forms the perfect tense with haben → hätten verpasst."
+  },
+  {
+   "de": "mitkommen ist ein sein-Verb → wäre mitgekommen.",
+   "en": "mitkommen is a sein verb → wäre mitgekommen."
+  },
+  {
+   "de": "Modalverb im Konjunktiv II Vergangenheit: hätte + Infinitiv + Modalverb im Infinitiv.",
+   "en": "Modal verb in the past subjunctive II: hätte + infinitive + modal verb in the infinitive."
+  },
+  {
+   "de": "Bedingungssatz ohne wenn: das Verb steht auf Position 1.",
+   "en": "Conditional clause without wenn: the verb goes in position 1."
+  }
+ ],
+ "forms": [
+  {
+   "form": "irreale",
+   "context": "irreale Bedingungen in der Vergangenheit formulieren",
+   "en": "unreal, hypothetical",
+   "lemma": "irreal"
+  },
+  {
+   "form": "beziehen",
+   "context": "Für Wünsche und Bedingungen, die sich auf die Vergangenheit beziehen und nicht mehr änderbar sind, benutzt man hätte oder wäre + Partizip Perfekt. Ob hätte oder wäre: genau wie beim Perfekt entscheidet das Vollverb.",
+   "en": "refer (to)",
+   "lemma": "sich beziehen"
+  },
+  {
+   "form": "änderbar",
+   "context": "Für Wünsche und Bedingungen, die sich auf die Vergangenheit beziehen und nicht mehr änderbar sind, benutzt man hätte oder wäre + Partizip Perfekt. Ob hätte oder wäre: genau wie beim Perfekt entscheidet das Vollverb.",
+   "en": "changeable",
+   "lemma": ""
+  },
+  {
+   "form": "Vollverb",
+   "context": "Für Wünsche und Bedingungen, die sich auf die Vergangenheit beziehen und nicht mehr änderbar sind, benutzt man hätte oder wäre + Partizip Perfekt. Ob hätte oder wäre: genau wie beim Perfekt entscheidet das Vollverb.",
+   "en": "main verb",
+   "lemma": "das Vollverb"
+  },
+  {
+   "form": "haben-Verben",
+   "context": "mit haben-Verben",
+   "en": "haben verbs",
+   "lemma": "das haben-Verb"
+  },
+  {
+   "form": "sein-Verben",
+   "context": "mit sein-Verben",
+   "en": "sein verbs",
+   "lemma": "das sein-Verb"
+  },
+  {
+   "form": "gefragt",
+   "context": "hätte gefragt",
+   "en": "asked",
+   "lemma": "fragen"
+  },
+  {
+   "form": "wärst",
+   "context": "wärst gekommen",
+   "en": "would be; would have (with du)",
+   "lemma": "sein"
+  },
+  {
+   "form": "hätten",
+   "context": "hätten gefragt",
+   "en": "would have (we/they)",
+   "lemma": "haben"
+  },
+  {
+   "form": "wären",
+   "context": "wären gekommen",
+   "en": "would be; would have (we/they)",
+   "lemma": "sein"
+  },
+  {
+   "form": "hättet",
+   "context": "hättet gefragt",
+   "en": "would have (with ihr)",
+   "lemma": "haben"
+  },
+  {
+   "form": "wärt",
+   "context": "wärt gekommen",
+   "en": "would be; would have (with ihr)",
+   "lemma": "sein"
+  },
+  {
+   "form": "Deutschlernen",
+   "context": "Hätte ich doch früher mit dem Deutschlernen angefangen!irrealer Wunsch, oft mit doch, nur, bloß",
+   "en": "learning German",
+   "lemma": "das Deutschlernen"
+  },
+  {
+   "form": "irrealer",
+   "context": "Hätte ich doch früher mit dem Deutschlernen angefangen!irrealer Wunsch, oft mit doch, nur, bloß",
+   "en": "unreal, hypothetical",
+   "lemma": "irreal"
+  },
+  {
+   "form": "bloß",
+   "context": "Hätte ich doch früher mit dem Deutschlernen angefangen!irrealer Wunsch, oft mit doch, nur, bloß",
+   "en": "only, just",
+   "lemma": ""
+  },
+  {
+   "form": "gehabt",
+   "context": "Wenn ich mehr Zeit gehabt hätte, wäre ich mitgekommen.irreale Bedingung: beide Teile im Konjunktiv II Vergangenheit",
+   "en": "had",
+   "lemma": "haben"
+  },
+  {
+   "form": "mitgekommen",
+   "context": "Wenn ich mehr Zeit gehabt hätte, wäre ich mitgekommen.irreale Bedingung: beide Teile im Konjunktiv II Vergangenheit",
+   "en": "come along",
+   "lemma": "mitkommen"
+  },
+  {
+   "form": "reklamiert",
+   "context": "An deiner Stelle hätte ich sofort reklamiert.Ratschlag im Rückblick",
+   "en": "complained",
+   "lemma": "reklamieren"
+  },
+  {
+   "form": "Rückblick",
+   "context": "An deiner Stelle hätte ich sofort reklamiert.Ratschlag im Rückblick",
+   "en": "hindsight, looking back",
+   "lemma": "der Rückblick"
+  },
+  {
+   "form": "Doppelinfinitiv",
+   "context": "Tipp: Mit Modalverb: Ich hätte früher fragen sollen. (Doppelinfinitiv — hätte + Infinitiv + Modalverb im Infinitiv, nicht gesollt.)",
+   "en": "double infinitive",
+   "lemma": "der Doppelinfinitiv"
+  },
+  {
+   "form": "gesollt",
+   "context": "Tipp: Mit Modalverb: Ich hätte früher fragen sollen. (Doppelinfinitiv — hätte + Infinitiv + Modalverb im Infinitiv, nicht gesollt.)",
+   "en": "past participle of sollen",
+   "lemma": "sollen"
+  },
+  {
+   "form": "Gelegenheit",
+   "context": "die Gelegenheit, -en — EN: opportunity · FR: l'occasionIch habe die Gelegenheit leider verpasst.",
+   "en": "opportunity",
+   "lemma": "die Gelegenheit"
+  },
+  {
+   "form": "opportunity",
+   "context": "die Gelegenheit, -en — EN: opportunity · FR: l'occasionIch habe die Gelegenheit leider verpasst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'occasionIch",
+   "context": "die Gelegenheit, -en — EN: opportunity · FR: l'occasionIch habe die Gelegenheit leider verpasst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verpasst",
+   "context": "die Gelegenheit, -en — EN: opportunity · FR: l'occasionIch habe die Gelegenheit leider verpasst.",
+   "en": "missed",
+   "lemma": "verpassen"
+  },
+  {
+   "form": "verpassen",
+   "context": "verpassen — EN: to miss · FR: rater, manquerWir haben den letzten Bus verpasst.",
+   "en": "to miss",
+   "lemma": ""
+  },
+  {
+   "form": "rater",
+   "context": "verpassen — EN: to miss · FR: rater, manquerWir haben den letzten Bus verpasst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "manquerWir",
+   "context": "verpassen — EN: to miss · FR: rater, manquerWir haben den letzten Bus verpasst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bereuen",
+   "context": "bereuen — EN: to regret · FR: regretterDiese Entscheidung bereue ich bis heute.",
+   "en": "to regret",
+   "lemma": ""
+  },
+  {
+   "form": "regret",
+   "context": "bereuen — EN: to regret · FR: regretterDiese Entscheidung bereue ich bis heute.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "regretterDiese",
+   "context": "bereuen — EN: to regret · FR: regretterDiese Entscheidung bereue ich bis heute.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bereue",
+   "context": "bereuen — EN: to regret · FR: regretterDiese Entscheidung bereue ich bis heute.",
+   "en": "regret",
+   "lemma": "bereuen"
+  },
+  {
+   "form": "Chance",
+   "context": "die Chance, -n — EN: chance · FR: la chanceEr hat seine Chance genutzt.",
+   "en": "chance",
+   "lemma": "die Chance"
+  },
+  {
+   "form": "chance",
+   "context": "die Chance, -n — EN: chance · FR: la chanceEr hat seine Chance genutzt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chanceEr",
+   "context": "die Chance, -n — EN: chance · FR: la chanceEr hat seine Chance genutzt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "genutzt",
+   "context": "die Chance, -n — EN: chance · FR: la chanceEr hat seine Chance genutzt.",
+   "en": "used, made use of",
+   "lemma": "nutzen"
+  },
+  {
+   "form": "hésiterHätte",
+   "context": "zögern — EN: to hesitate · FR: hésiterHätte ich nur nicht so lange gezögert!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gezögert",
+   "context": "zögern — EN: to hesitate · FR: hésiterHätte ich nur nicht so lange gezögert!",
+   "en": "hesitated",
+   "lemma": "zögern"
+  },
+  {
+   "form": "tempsWenn",
+   "context": "rechtzeitig — EN: in good time · FR: à tempsWenn wir rechtzeitig losgefahren wären, …",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "losgefahren",
+   "context": "rechtzeitig — EN: in good time · FR: à tempsWenn wir rechtzeitig losgefahren wären, …",
+   "en": "set off, left",
+   "lemma": "losfahren"
+  },
+  {
+   "form": "Zufall",
+   "context": "der Zufall, ¨-e — EN: coincidence · FR: le hasardDurch einen Zufall habe ich davon erfahren.",
+   "en": "coincidence, chance",
+   "lemma": "der Zufall"
+  },
+  {
+   "form": "coincidence",
+   "context": "der Zufall, ¨-e — EN: coincidence · FR: le hasardDurch einen Zufall habe ich davon erfahren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "hasardDurch",
+   "context": "der Zufall, ¨-e — EN: coincidence · FR: le hasardDurch einen Zufall habe ich davon erfahren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erfahren",
+   "context": "der Zufall, ¨-e — EN: coincidence · FR: le hasardDurch einen Zufall habe ich davon erfahren.",
+   "en": "found out, learned; experienced",
+   "lemma": ""
+  },
+  {
+   "form": "oserIch",
+   "context": "sich trauen — EN: to dare · FR: oserIch habe mich damals nicht getraut zu fragen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "refuserWarum",
+   "context": "ablehnen — EN: to turn down · FR: refuserWarum hast du das Angebot abgelehnt?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "abgelehnt",
+   "context": "ablehnen — EN: to turn down · FR: refuserWarum hast du das Angebot abgelehnt?",
+   "en": "turned down, rejected",
+   "lemma": "ablehnen"
+  },
+  {
+   "form": "entgehen",
+   "context": "entgehen (entging, entgangen) — EN: to escape one's notice · FR: échapper àMir ist eine gute Chance entgangen.",
+   "en": "to escape (one's notice)",
+   "lemma": ""
+  },
+  {
+   "form": "entging",
+   "context": "entgehen (entging, entgangen) — EN: to escape one's notice · FR: échapper àMir ist eine gute Chance entgangen.",
+   "en": "escaped, passed by",
+   "lemma": "entgehen"
+  },
+  {
+   "form": "entgangen",
+   "context": "entgehen (entging, entgangen) — EN: to escape one's notice · FR: échapper àMir ist eine gute Chance entgangen.",
+   "en": "escaped, passed by",
+   "lemma": "entgehen"
+  },
+  {
+   "form": "escape",
+   "context": "entgehen (entging, entgangen) — EN: to escape one's notice · FR: échapper àMir ist eine gute Chance entgangen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "échapper",
+   "context": "entgehen (entging, entgangen) — EN: to escape one's notice · FR: échapper àMir ist eine gute Chance entgangen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àMir",
+   "context": "entgehen (entging, entgangen) — EN: to escape one's notice · FR: échapper àMir ist eine gute Chance entgangen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Nachhinein",
+   "context": "im Nachhinein — EN: in hindsight · FR: après coupIm Nachhinein war das ein Fehler.",
+   "en": "im Nachhinein = in hindsight",
+   "lemma": "das Nachhinein"
+  },
+  {
+   "form": "hindsight",
+   "context": "im Nachhinein — EN: in hindsight · FR: après coupIm Nachhinein war das ein Fehler.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "coupIm",
+   "context": "im Nachhinein — EN: in hindsight · FR: après coupIm Nachhinein war das ein Fehler.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gewusst",
+   "context": "Wenn ich das gewusst hätte, …",
+   "en": "known",
+   "lemma": "wissen"
+  },
+  {
+   "form": "trösten",
+   "context": "jemanden trösten",
+   "en": "to comfort",
+   "lemma": ""
+  },
+  {
+   "form": "konntest",
+   "context": "Das konntest du nicht wissen.",
+   "en": "could (with du)",
+   "lemma": "können"
+  },
+  {
+   "form": "Vorwürfe",
+   "context": "Mach dir keine Vorwürfe.",
+   "en": "reproaches, blame",
+   "lemma": "der Vorwurf"
+  }
+ ]
+}
