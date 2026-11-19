@@ -1,0 +1,769 @@
+{
+ "level": "A2",
+ "lesson": 13,
+ "title": "Sprachen lernen — Meine erste „Deutschlehrerin\"",
+ "lines": [
+  {
+   "de": "Von eigenen Erfahrungen beim Sprachenlernen erzählen.",
+   "en": "Talk about your own experiences of learning languages."
+  },
+  {
+   "de": "Textsorte: Gespräch · Lerntipps",
+   "en": "Text type: Conversation · Learning tips"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 1; ÖSD A2 Sprechen",
+   "en": "Exam link: Goethe A2 Speaking part 1; ÖSD A2 Speaking"
+  },
+  {
+   "de": "von Erfahrungen beim Sprachenlernen berichten",
+   "en": "report on your experiences of learning languages"
+  },
+  {
+   "de": "über einen einmaligen Moment in der Vergangenheit sprechen",
+   "en": "talk about a one-time moment in the past"
+  },
+  {
+   "de": "die Konjunktion als richtig verwenden",
+   "en": "use the conjunction als correctly"
+  },
+  {
+   "de": "Grammatik: Die Konjunktion als",
+   "en": "Grammar: The conjunction als"
+  },
+  {
+   "de": "als benutzt man für einen einmaligen Zeitpunkt oder Zeitraum in der Vergangenheit. Es leitet einen Nebensatz ein, das Verb steht am Ende. Nicht verwechseln mit wenn (wiederholt) und wann (Frage).",
+   "en": "You use als for a single point in time or a period of time in the past. It introduces a subordinate clause (Nebensatz); the verb goes at the end. Do not confuse it with wenn (repeated) and wann (question)."
+  },
+  {
+   "de": "Wort",
+   "en": "Word"
+  },
+  {
+   "de": "als",
+   "en": "when (once, in the past)"
+  },
+  {
+   "de": "einmal, Vergangenheit",
+   "en": "once, past"
+  },
+  {
+   "de": "Als ich nach Berlin kam, sprach ich kein Wort Deutsch.",
+   "en": "When I came to Berlin, I didn't speak a word of German."
+  },
+  {
+   "de": "wenn",
+   "en": "when, whenever; if"
+  },
+  {
+   "de": "immer wenn / Bedingung",
+   "en": "whenever / condition"
+  },
+  {
+   "de": "Wenn ich ein neues Wort höre, schreibe ich es auf.",
+   "en": "When I hear a new word, I write it down."
+  },
+  {
+   "de": "wann",
+   "en": "when? (question)"
+  },
+  {
+   "de": "Frage nach der Zeit",
+   "en": "question about time"
+  },
+  {
+   "de": "Wann hast du angefangen, Deutsch zu lernen?",
+   "en": "When did you start learning German?"
+  },
+  {
+   "de": "als (Zeitraum)",
+   "en": "when (period of time)"
+  },
+  {
+   "de": "eine ganze Lebensphase",
+   "en": "a whole phase of life"
+  },
+  {
+   "de": "Als ich Kind war, lernte ich Französisch.",
+   "en": "When I was a child, I learned French."
+  },
+  {
+   "de": "Als ich sie zum ersten Mal traf, verstand ich fast nichts.einmaliger Moment",
+   "en": "When I met her for the first time, I understood almost nothing. — one-time moment"
+  },
+  {
+   "de": "Ich war sehr nervös, als ich meine erste Prüfung machte.Nebensatz hinten",
+   "en": "I was very nervous when I took my first exam. — subordinate clause at the end"
+  },
+  {
+   "de": "Als Studentin hatte ich mehr Zeit zum Lernen.als + Nomen ohne Artikel = in dieser Rolle",
+   "en": "As a student, I had more time for studying. — als + noun without article = in this role"
+  },
+  {
+   "de": "Tipp: Merksatz: als = einmal in der Vergangenheit, wenn = immer oder in der Zukunft, wann = Frage.",
+   "en": "Tip: Rule to remember: als = once in the past, wenn = always or in the future, wann = question."
+  },
+  {
+   "de": "die Muttersprache, -n — EN: mother tongue · FR: la langue maternelleMeine Muttersprache ist Kinyarwanda.",
+   "en": "Example: My mother tongue is Kinyarwanda."
+  },
+  {
+   "de": "die Fremdsprache, -n — EN: foreign language · FR: la langue étrangèreDeutsch ist meine dritte Fremdsprache.",
+   "en": "Example: German is my third foreign language."
+  },
+  {
+   "de": "der Lerntipp, -s — EN: learning tip · FR: le conseil d'apprentissageHast du einen guten Lerntipp für mich?",
+   "en": "Example: Do you have a good learning tip for me?"
+  },
+  {
+   "de": "auswendig lernen — EN: to learn by heart · FR: apprendre par cœurVokabeln lerne ich nicht gern auswendig.",
+   "en": "Example: I don't like learning vocabulary by heart."
+  },
+  {
+   "de": "die Vokabel, -n — EN: vocabulary item · FR: le mot de vocabulaireIch schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "Example: I write down ten vocabulary words every day."
+  },
+  {
+   "de": "der Fehler, - — EN: mistake · FR: l'erreurFehler sind beim Lernen ganz normal.",
+   "en": "Example: Mistakes are completely normal when you are learning."
+  },
+  {
+   "de": "sich trauen — EN: to dare · FR: oserAm Anfang habe ich mich nicht getraut zu sprechen.",
+   "en": "Example: At the beginning I didn't dare to speak."
+  },
+  {
+   "de": "verstehen (verstand) — EN: to understand · FR: comprendreIch verstehe schon fast alles.",
+   "en": "Example: I already understand almost everything."
+  },
+  {
+   "de": "aussprechen (sprach aus) — EN: to pronounce · FR: prononcerWie spricht man dieses Wort aus?",
+   "en": "Example: How do you pronounce this word?"
+  },
+  {
+   "de": "Fortschritte machen — EN: to make progress · FR: faire des progrèsDu machst wirklich gute Fortschritte!",
+   "en": "Example: You are really making good progress!"
+  },
+  {
+   "de": "üben — EN: to practise · FR: s'entraînerIch übe jeden Tag zwanzig Minuten.",
+   "en": "Example: I practise for twenty minutes every day."
+  },
+  {
+   "de": "die Erfahrung, -en — EN: experience · FR: l'expérienceDas war eine gute Erfahrung.",
+   "en": "Example: That was a good experience."
+  },
+  {
+   "de": "von Erfahrungen berichten",
+   "en": "Reporting on experiences"
+  },
+  {
+   "de": "Als ich angefangen habe, …",
+   "en": "When I started, …"
+  },
+  {
+   "de": "Am Anfang war es schwer, aber …",
+   "en": "At the beginning it was hard, but …"
+  },
+  {
+   "de": "Inzwischen geht es viel besser.",
+   "en": "By now it's going much better."
+  },
+  {
+   "de": "Lerntipps geben",
+   "en": "Giving learning tips"
+  },
+  {
+   "de": "Mir hilft es, wenn ich …",
+   "en": "It helps me when I …"
+  },
+  {
+   "de": "Du solltest jeden Tag ein bisschen üben.",
+   "en": "You should practise a little every day."
+  },
+  {
+   "de": "Am besten lernst du mit …",
+   "en": "The best way for you to learn is with …"
+  },
+  {
+   "de": "über Schwierigkeiten sprechen",
+   "en": "Talking about difficulties"
+  },
+  {
+   "de": "Die Aussprache fällt mir schwer.",
+   "en": "I find pronunciation difficult."
+  },
+  {
+   "de": "Grammatik finde ich nicht so schlimm.",
+   "en": "I don't find grammar so bad."
+  },
+  {
+   "de": "Am schwierigsten ist für mich …",
+   "en": "The most difficult thing for me is …"
+  },
+  {
+   "de": "Dialog: Wie hast du Deutsch gelernt?",
+   "en": "Dialogue: How did you learn German?"
+  },
+  {
+   "de": "Amina: Wie hast du eigentlich angefangen, Deutsch zu lernen?",
+   "en": "Amina: How did you actually start learning German?"
+  },
+  {
+   "de": "Luca: Als ich nach Hamburg kam, sprach ich kein Wort.",
+   "en": "Luca: When I came to Hamburg, I didn't speak a word."
+  },
+  {
+   "de": "Amina: Und wer hat dir geholfen?",
+   "en": "Amina: And who helped you?"
+  },
+  {
+   "de": "Luca: Meine Nachbarin. Sie war meine erste „Deutschlehrerin\".",
+   "en": "Luca: My neighbour. She was my first “German teacher”."
+  },
+  {
+   "de": "Amina: Das ist ja schön! Hattest du keine Angst vor Fehlern?",
+   "en": "Amina: That's lovely! Weren't you afraid of making mistakes?"
+  },
+  {
+   "de": "Luca: Doch, am Anfang habe ich mich kaum getraut. Aber sie hatte viel Geduld.",
+   "en": "Luca: Oh yes, at the beginning I hardly dared. But she had a lot of patience."
+  },
+  {
+   "de": "Meine Muttersprache ist Kinyarwanda.",
+   "en": "My mother tongue is Kinyarwanda."
+  },
+  {
+   "de": "Deutsch ist meine dritte Fremdsprache.",
+   "en": "German is my third foreign language."
+  },
+  {
+   "de": "Hast du einen guten Lerntipp für mich?",
+   "en": "Do you have a good learning tip for me?"
+  },
+  {
+   "de": "Vokabeln lerne ich nicht gern auswendig.",
+   "en": "I don't like learning vocabulary by heart."
+  },
+  {
+   "de": "Ich schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "I write down ten vocabulary words every day."
+  },
+  {
+   "de": "Fehler sind beim Lernen ganz normal.",
+   "en": "Mistakes are completely normal when you are learning."
+  },
+  {
+   "de": "Am Anfang habe ich mich nicht getraut zu sprechen.",
+   "en": "At the beginning I didn't dare to speak."
+  },
+  {
+   "de": "Ich verstehe schon fast alles.",
+   "en": "I already understand almost everything."
+  },
+  {
+   "de": "Wie spricht man dieses Wort aus?",
+   "en": "How do you pronounce this word?"
+  },
+  {
+   "de": "Du machst wirklich gute Fortschritte!",
+   "en": "You are really making good progress!"
+  },
+  {
+   "de": "Ich übe jeden Tag zwanzig Minuten.",
+   "en": "I practise for twenty minutes every day."
+  },
+  {
+   "de": "Das war eine gute Erfahrung.",
+   "en": "That was a good experience."
+  },
+  {
+   "de": "___ ich nach Berlin kam, sprach ich kein Deutsch. (einmal, Vergangenheit)",
+   "en": "___ I came to Berlin, I didn't speak any German. (once, past)"
+  },
+  {
+   "de": "___ ich ein neues Wort höre, schreibe ich es auf. (immer)",
+   "en": "___ I hear a new word, I write it down. (always)"
+  },
+  {
+   "de": "___ hast du angefangen, Deutsch zu lernen?",
+   "en": "___ did you start learning German?"
+  },
+  {
+   "de": "Ich war nervös, ___ ich die Prüfung machte.",
+   "en": "I was nervous ___ I took the exam."
+  },
+  {
+   "de": "Als ich Kind ___, lernte ich Französisch. (sein, Präteritum)",
+   "en": "When I ___ a child, I learned French. (sein, simple past)"
+  },
+  {
+   "de": "Erzählen Sie kurz, wie Sie angefangen haben, Deutsch zu lernen. Umfang: 50–70 Wörter Checkliste: • Schreiben Sie, wann und warum Sie angefangen haben. • Benutzen Sie mindestens zwei Sätze mit als. • Geben Sie am Ende einen Lerntipp.",
+   "en": "Briefly describe how you started learning German. Length: 50–70 words Checklist: • Write when and why you started. • Use at least two sentences with als. • Give a learning tip at the end."
+  },
+  {
+   "de": "Einmaliger Moment in der Vergangenheit → als.",
+   "en": "A one-time moment in the past → als."
+  },
+  {
+   "de": "Wiederholte Situation → wenn.",
+   "en": "A repeated situation → wenn."
+  },
+  {
+   "de": "In einer Frage nach der Zeit steht wann.",
+   "en": "In a question about time, you use wann."
+  },
+  {
+   "de": "Einmaliges Ereignis in der Vergangenheit.",
+   "en": "A one-time event in the past."
+  },
+  {
+   "de": "Im als-Satz steht das Verb am Ende, hier im Präteritum.",
+   "en": "In the als clause, the verb goes at the end, here in the simple past (Präteritum)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Erfahrungen",
+   "context": "Von eigenen Erfahrungen beim Sprachenlernen erzählen.",
+   "en": "experiences",
+   "lemma": "die Erfahrung"
+  },
+  {
+   "form": "Sprachenlernen",
+   "context": "Von eigenen Erfahrungen beim Sprachenlernen erzählen.",
+   "en": "language learning",
+   "lemma": "das Sprachenlernen"
+  },
+  {
+   "form": "Lerntipps",
+   "context": "Textsorte: Gespräch · Lerntipps",
+   "en": "learning tips",
+   "lemma": "der Lerntipp"
+  },
+  {
+   "form": "berichten",
+   "context": "von Erfahrungen beim Sprachenlernen berichten",
+   "en": "to report",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitraum",
+   "context": "als benutzt man für einen einmaligen Zeitpunkt oder Zeitraum in der Vergangenheit. Es leitet einen Nebensatz ein, das Verb steht am Ende. Nicht verwechseln mit wenn (wiederholt) und wann (Frage).",
+   "en": "period of time",
+   "lemma": "der Zeitraum"
+  },
+  {
+   "form": "kam",
+   "context": "Als ich nach Berlin kam, sprach ich kein Wort Deutsch.",
+   "en": "came",
+   "lemma": "kommen"
+  },
+  {
+   "form": "sprach",
+   "context": "Als ich nach Berlin kam, sprach ich kein Wort Deutsch.",
+   "en": "spoke",
+   "lemma": "sprechen"
+  },
+  {
+   "form": "neues",
+   "context": "Wenn ich ein neues Wort höre, schreibe ich es auf.",
+   "en": "new",
+   "lemma": "neu"
+  },
+  {
+   "form": "höre",
+   "context": "Wenn ich ein neues Wort höre, schreibe ich es auf.",
+   "en": "hear",
+   "lemma": "hören"
+  },
+  {
+   "form": "schreibe",
+   "context": "Wenn ich ein neues Wort höre, schreibe ich es auf.",
+   "en": "(… auf) write down; write",
+   "lemma": "schreiben"
+  },
+  {
+   "form": "Lebensphase",
+   "context": "eine ganze Lebensphase",
+   "en": "phase of life",
+   "lemma": "die Lebensphase"
+  },
+  {
+   "form": "ersten",
+   "context": "Als ich sie zum ersten Mal traf, verstand ich fast nichts.einmaliger Moment",
+   "en": "first",
+   "lemma": "erste"
+  },
+  {
+   "form": "traf",
+   "context": "Als ich sie zum ersten Mal traf, verstand ich fast nichts.einmaliger Moment",
+   "en": "met",
+   "lemma": "treffen"
+  },
+  {
+   "form": "verstand",
+   "context": "Als ich sie zum ersten Mal traf, verstand ich fast nichts.einmaliger Moment",
+   "en": "understood",
+   "lemma": "verstehen"
+  },
+  {
+   "form": "einmaliger",
+   "context": "Als ich sie zum ersten Mal traf, verstand ich fast nichts.einmaliger Moment",
+   "en": "one-time, single",
+   "lemma": "einmalig"
+  },
+  {
+   "form": "Prüfung",
+   "context": "Ich war sehr nervös, als ich meine erste Prüfung machte.Nebensatz hinten",
+   "en": "exam",
+   "lemma": "die Prüfung"
+  },
+  {
+   "form": "machte",
+   "context": "Ich war sehr nervös, als ich meine erste Prüfung machte.Nebensatz hinten",
+   "en": "took (an exam); did, made",
+   "lemma": "machen"
+  },
+  {
+   "form": "Rolle",
+   "context": "Als Studentin hatte ich mehr Zeit zum Lernen.als + Nomen ohne Artikel = in dieser Rolle",
+   "en": "role",
+   "lemma": "die Rolle"
+  },
+  {
+   "form": "Merksatz",
+   "context": "Tipp: Merksatz: als = einmal in der Vergangenheit, wenn = immer oder in der Zukunft, wann = Frage.",
+   "en": "rule to remember",
+   "lemma": "der Merksatz"
+  },
+  {
+   "form": "Muttersprache",
+   "context": "die Muttersprache, -n — EN: mother tongue · FR: la langue maternelleMeine Muttersprache ist Kinyarwanda.",
+   "en": "mother tongue",
+   "lemma": "die Muttersprache"
+  },
+  {
+   "form": "mother",
+   "context": "die Muttersprache, -n — EN: mother tongue · FR: la langue maternelleMeine Muttersprache ist Kinyarwanda.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tongue",
+   "context": "die Muttersprache, -n — EN: mother tongue · FR: la langue maternelleMeine Muttersprache ist Kinyarwanda.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "langue",
+   "context": "die Muttersprache, -n — EN: mother tongue · FR: la langue maternelleMeine Muttersprache ist Kinyarwanda.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "maternelleMeine",
+   "context": "die Muttersprache, -n — EN: mother tongue · FR: la langue maternelleMeine Muttersprache ist Kinyarwanda.",
+   "en": "Meine = my",
+   "lemma": ""
+  },
+  {
+   "form": "Fremdsprache",
+   "context": "die Fremdsprache, -n — EN: foreign language · FR: la langue étrangèreDeutsch ist meine dritte Fremdsprache.",
+   "en": "foreign language",
+   "lemma": "die Fremdsprache"
+  },
+  {
+   "form": "foreign",
+   "context": "die Fremdsprache, -n — EN: foreign language · FR: la langue étrangèreDeutsch ist meine dritte Fremdsprache.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "language",
+   "context": "die Fremdsprache, -n — EN: foreign language · FR: la langue étrangèreDeutsch ist meine dritte Fremdsprache.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "étrangèreDeutsch",
+   "context": "die Fremdsprache, -n — EN: foreign language · FR: la langue étrangèreDeutsch ist meine dritte Fremdsprache.",
+   "en": "Deutsch = German",
+   "lemma": ""
+  },
+  {
+   "form": "dritte",
+   "context": "die Fremdsprache, -n — EN: foreign language · FR: la langue étrangèreDeutsch ist meine dritte Fremdsprache.",
+   "en": "third",
+   "lemma": ""
+  },
+  {
+   "form": "learning",
+   "context": "der Lerntipp, -s — EN: learning tip · FR: le conseil d'apprentissageHast du einen guten Lerntipp für mich?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "conseil",
+   "context": "der Lerntipp, -s — EN: learning tip · FR: le conseil d'apprentissageHast du einen guten Lerntipp für mich?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'apprentissageHast",
+   "context": "der Lerntipp, -s — EN: learning tip · FR: le conseil d'apprentissageHast du einen guten Lerntipp für mich?",
+   "en": "Hast = have (with du)",
+   "lemma": "haben"
+  },
+  {
+   "form": "auswendig",
+   "context": "auswendig lernen — EN: to learn by heart · FR: apprendre par cœurVokabeln lerne ich nicht gern auswendig.",
+   "en": "by heart",
+   "lemma": ""
+  },
+  {
+   "form": "apprendre",
+   "context": "auswendig lernen — EN: to learn by heart · FR: apprendre par cœurVokabeln lerne ich nicht gern auswendig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cœurVokabeln",
+   "context": "auswendig lernen — EN: to learn by heart · FR: apprendre par cœurVokabeln lerne ich nicht gern auswendig.",
+   "en": "Vokabeln = vocabulary words",
+   "lemma": "die Vokabel"
+  },
+  {
+   "form": "Vokabel",
+   "context": "die Vokabel, -n — EN: vocabulary item · FR: le mot de vocabulaireIch schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "vocabulary word",
+   "lemma": "die Vokabel"
+  },
+  {
+   "form": "vocabulary",
+   "context": "die Vokabel, -n — EN: vocabulary item · FR: le mot de vocabulaireIch schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "item",
+   "context": "die Vokabel, -n — EN: vocabulary item · FR: le mot de vocabulaireIch schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mot",
+   "context": "die Vokabel, -n — EN: vocabulary item · FR: le mot de vocabulaireIch schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vocabulaireIch",
+   "context": "die Vokabel, -n — EN: vocabulary item · FR: le mot de vocabulaireIch schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "Vokabeln",
+   "context": "die Vokabel, -n — EN: vocabulary item · FR: le mot de vocabulaireIch schreibe jeden Tag zehn Vokabeln auf.",
+   "en": "vocabulary words",
+   "lemma": "die Vokabel"
+  },
+  {
+   "form": "mistake",
+   "context": "der Fehler, - — EN: mistake · FR: l'erreurFehler sind beim Lernen ganz normal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'erreurFehler",
+   "context": "der Fehler, - — EN: mistake · FR: l'erreurFehler sind beim Lernen ganz normal.",
+   "en": "Fehler = mistakes",
+   "lemma": "der Fehler"
+  },
+  {
+   "form": "normal",
+   "context": "der Fehler, - — EN: mistake · FR: l'erreurFehler sind beim Lernen ganz normal.",
+   "en": "normal",
+   "lemma": ""
+  },
+  {
+   "form": "trauen",
+   "context": "sich trauen — EN: to dare · FR: oserAm Anfang habe ich mich nicht getraut zu sprechen.",
+   "en": "to dare (sich trauen)",
+   "lemma": ""
+  },
+  {
+   "form": "dare",
+   "context": "sich trauen — EN: to dare · FR: oserAm Anfang habe ich mich nicht getraut zu sprechen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "oserAm",
+   "context": "sich trauen — EN: to dare · FR: oserAm Anfang habe ich mich nicht getraut zu sprechen.",
+   "en": "Am = at the",
+   "lemma": ""
+  },
+  {
+   "form": "getraut",
+   "context": "sich trauen — EN: to dare · FR: oserAm Anfang habe ich mich nicht getraut zu sprechen.",
+   "en": "dared",
+   "lemma": "sich trauen"
+  },
+  {
+   "form": "understand",
+   "context": "verstehen (verstand) — EN: to understand · FR: comprendreIch verstehe schon fast alles.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "comprendreIch",
+   "context": "verstehen (verstand) — EN: to understand · FR: comprendreIch verstehe schon fast alles.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "aussprechen",
+   "context": "aussprechen (sprach aus) — EN: to pronounce · FR: prononcerWie spricht man dieses Wort aus?",
+   "en": "to pronounce",
+   "lemma": ""
+  },
+  {
+   "form": "pronounce",
+   "context": "aussprechen (sprach aus) — EN: to pronounce · FR: prononcerWie spricht man dieses Wort aus?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prononcerWie",
+   "context": "aussprechen (sprach aus) — EN: to pronounce · FR: prononcerWie spricht man dieses Wort aus?",
+   "en": "Wie = how",
+   "lemma": ""
+  },
+  {
+   "form": "spricht",
+   "context": "aussprechen (sprach aus) — EN: to pronounce · FR: prononcerWie spricht man dieses Wort aus?",
+   "en": "(… aus) pronounces; speaks",
+   "lemma": "sprechen"
+  },
+  {
+   "form": "Fortschritte",
+   "context": "Fortschritte machen — EN: to make progress · FR: faire des progrèsDu machst wirklich gute Fortschritte!",
+   "en": "progress",
+   "lemma": "der Fortschritt"
+  },
+  {
+   "form": "progress",
+   "context": "Fortschritte machen — EN: to make progress · FR: faire des progrèsDu machst wirklich gute Fortschritte!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "progrèsDu",
+   "context": "Fortschritte machen — EN: to make progress · FR: faire des progrèsDu machst wirklich gute Fortschritte!",
+   "en": "Du = you",
+   "lemma": ""
+  },
+  {
+   "form": "practise",
+   "context": "üben — EN: to practise · FR: s'entraînerIch übe jeden Tag zwanzig Minuten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'entraînerIch",
+   "context": "üben — EN: to practise · FR: s'entraînerIch übe jeden Tag zwanzig Minuten.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "übe",
+   "context": "üben — EN: to practise · FR: s'entraînerIch übe jeden Tag zwanzig Minuten.",
+   "en": "practise",
+   "lemma": "üben"
+  },
+  {
+   "form": "Erfahrung",
+   "context": "die Erfahrung, -en — EN: experience · FR: l'expérienceDas war eine gute Erfahrung.",
+   "en": "experience",
+   "lemma": "die Erfahrung"
+  },
+  {
+   "form": "experience",
+   "context": "die Erfahrung, -en — EN: experience · FR: l'expérienceDas war eine gute Erfahrung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'expérienceDas",
+   "context": "die Erfahrung, -en — EN: experience · FR: l'expérienceDas war eine gute Erfahrung.",
+   "en": "Das = that",
+   "lemma": ""
+  },
+  {
+   "form": "Inzwischen",
+   "context": "Inzwischen geht es viel besser.",
+   "en": "by now, meanwhile",
+   "lemma": ""
+  },
+  {
+   "form": "lernst",
+   "context": "Am besten lernst du mit …",
+   "en": "learn (with du)",
+   "lemma": "lernen"
+  },
+  {
+   "form": "Schwierigkeiten",
+   "context": "über Schwierigkeiten sprechen",
+   "en": "difficulties",
+   "lemma": "die Schwierigkeit"
+  },
+  {
+   "form": "Aussprache",
+   "context": "Die Aussprache fällt mir schwer.",
+   "en": "pronunciation",
+   "lemma": "die Aussprache"
+  },
+  {
+   "form": "schwierigsten",
+   "context": "Am schwierigsten ist für mich …",
+   "en": "most difficult",
+   "lemma": "schwierig"
+  },
+  {
+   "form": "Luca",
+   "context": "Luca: Als ich nach Hamburg kam, sprach ich kein Wort.",
+   "en": "Luca (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Hamburg",
+   "context": "Luca: Als ich nach Hamburg kam, sprach ich kein Wort.",
+   "en": "Hamburg (city in Germany)",
+   "lemma": ""
+  },
+  {
+   "form": "Deutschlehrerin",
+   "context": "Luca: Meine Nachbarin. Sie war meine erste „Deutschlehrerin\".",
+   "en": "German teacher (woman)",
+   "lemma": "die Deutschlehrerin"
+  },
+  {
+   "form": "Angst",
+   "context": "Amina: Das ist ja schön! Hattest du keine Angst vor Fehlern?",
+   "en": "fear",
+   "lemma": "die Angst"
+  },
+  {
+   "form": "Fehlern",
+   "context": "Amina: Das ist ja schön! Hattest du keine Angst vor Fehlern?",
+   "en": "mistakes",
+   "lemma": "der Fehler"
+  },
+  {
+   "form": "kaum",
+   "context": "Luca: Doch, am Anfang habe ich mich kaum getraut. Aber sie hatte viel Geduld.",
+   "en": "hardly, barely",
+   "lemma": ""
+  }
+ ]
+}
