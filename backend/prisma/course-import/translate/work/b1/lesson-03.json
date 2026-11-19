@@ -1,0 +1,639 @@
+{
+ "level": "B1",
+ "lesson": 3,
+ "title": "Wohnen — Das ist das Zimmer, in dem ich am liebsten sitze",
+ "lines": [
+  {
+   "de": "Die eigene Wohnung genau beschreiben — mit Relativsätzen, die eine Präposition brauchen.",
+   "en": "Describing your own home in detail — with relative clauses that need a preposition."
+  },
+  {
+   "de": "Räume, Möbel und Wohnsituationen detailliert beschreiben",
+   "en": "describe rooms, furniture and living situations in detail"
+  },
+  {
+   "de": "Relativsätze mit Präpositionen bilden",
+   "en": "form relative clauses with prepositions"
+  },
+  {
+   "de": "wo- und wohin-Relativsätze bei Orten verwenden",
+   "en": "use relative clauses with wo and wohin for places"
+  },
+  {
+   "de": "Grammatik: Relativsätze mit Präpositionen",
+   "en": "Grammar: relative clauses with prepositions"
+  },
+  {
+   "de": "Wenn das Verb im Relativsatz eine Präposition verlangt, steht diese vor dem Relativpronomen. Die Präposition bestimmt den Kasus des Relativpronomens — das Genus und der Numerus kommen vom Bezugswort.",
+   "en": "If the verb in the relative clause needs a preposition, the preposition comes before the relative pronoun. The preposition decides the case of the relative pronoun — the gender and number come from the word it refers to."
+  },
+  {
+   "de": "Präposition + Kasus",
+   "en": "Preposition + case"
+  },
+  {
+   "de": "mit Akkusativ",
+   "en": "with accusative"
+  },
+  {
+   "de": "Das ist der Sessel, für den ich lange gespart habe.",
+   "en": "This is the armchair I spent a long time saving up for."
+  },
+  {
+   "de": "mit Dativ",
+   "en": "with dative"
+  },
+  {
+   "de": "Das ist das Regal, auf dem meine Bücher stehen.",
+   "en": "This is the shelf on which my books stand."
+  },
+  {
+   "de": "Plural Dativ",
+   "en": "Dative plural"
+  },
+  {
+   "de": "Das sind die Nachbarn, mit denen wir oft grillen.",
+   "en": "These are the neighbours with whom we often have barbecues."
+  },
+  {
+   "de": "Ort → wo",
+   "en": "Place → wo"
+  },
+  {
+   "de": "Das ist die Küche, wo wir meistens sitzen.",
+   "en": "This is the kitchen where we usually sit."
+  },
+  {
+   "de": "Der Balkon, auf dem ich jeden Morgen frühstücke, ist winzig.auf + Dativ (Ort)",
+   "en": "The balcony on which I have breakfast every morning is tiny. (auf + dative, place)"
+  },
+  {
+   "de": "Die Wohnung, in die wir nächsten Monat ziehen, hat drei Zimmer.in + Akkusativ (Richtung)",
+   "en": "The flat we are moving into next month has three rooms. (in + accusative, direction)"
+  },
+  {
+   "de": "Das ist der Vermieter, über den sich alle beschweren.sich beschweren über + Akkusativ",
+   "en": "This is the landlord everyone complains about. (sich beschweren über + accusative)"
+  },
+  {
+   "de": "Tipp: Bei Städten und Ländern benutzt man immer wo / wohin: Kigali ist die Stadt, wo ich aufgewachsen bin. (nicht: in der)",
+   "en": "Tip: With cities and countries you always use wo / wohin: Kigali is the city where (wo) I grew up. (not: in der)"
+  },
+  {
+   "de": "die Miete, -n — EN: rent · FR: le loyerDie Miete ist in den letzten Jahren stark gestiegen.",
+   "en": "Example: The rent has risen sharply in recent years."
+  },
+  {
+   "de": "der Vermieter, - / die Vermieterin, -nen — EN: landlord/landlady · FR: le/la propriétaireUnser Vermieter reagiert leider sehr langsam.",
+   "en": "Example: Unfortunately our landlord reacts very slowly."
+  },
+  {
+   "de": "die Nebenkosten (Pl.) — EN: utilities, service charges · FR: les chargesDie Nebenkosten sind nicht in der Miete enthalten.",
+   "en": "Example: The service charges are not included in the rent."
+  },
+  {
+   "de": "der Stock / die Etage, -n — EN: floor, storey · FR: l'étageWir wohnen im dritten Stock.",
+   "en": "Example: We live on the third floor."
+  },
+  {
+   "de": "gemütlich — EN: cosy · FR: confortable, douilletMit der Lampe wirkt das Zimmer viel gemütlicher.",
+   "en": "Example: With the lamp the room feels much cosier."
+  },
+  {
+   "de": "die Aussicht (Sg.) — EN: view · FR: la vueVom Balkon hat man eine tolle Aussicht.",
+   "en": "Example: From the balcony you have a great view."
+  },
+  {
+   "de": "umziehen (zog um, umgezogen) — EN: to move house · FR: déménagerNächsten Monat ziehen wir um.",
+   "en": "Example: We are moving house next month."
+  },
+  {
+   "de": "die WG, -s (Wohngemeinschaft) — EN: shared flat · FR: la colocationAls Student wohnte er in einer WG.",
+   "en": "Example: As a student he lived in a shared flat."
+  },
+  {
+   "de": "renovieren — EN: to renovate · FR: rénoverWir haben die Küche selbst renoviert.",
+   "en": "Example: We renovated the kitchen ourselves."
+  },
+  {
+   "de": "der Stadtrand (Sg.) — EN: outskirts · FR: la périphérieAm Stadtrand ist es ruhiger und billiger.",
+   "en": "Example: On the outskirts it is quieter and cheaper."
+  },
+  {
+   "de": "die Nachbarschaft, -en — EN: neighbourhood · FR: le voisinageIn unserer Nachbarschaft hilft man sich.",
+   "en": "Example: In our neighbourhood people help each other."
+  },
+  {
+   "de": "eng — EN: narrow, cramped · FR: étroitDer Flur ist ziemlich eng.",
+   "en": "Example: The hallway is quite narrow."
+  },
+  {
+   "de": "Die Wohnung liegt im … Stock und hat …",
+   "en": "The flat is on the … floor and has …"
+  },
+  {
+   "de": "Besonders gefällt mir der Raum, in dem …",
+   "en": "I particularly like the room in which …"
+  },
+  {
+   "de": "Was mich stört, ist …",
+   "en": "What bothers me is …"
+  },
+  {
+   "de": "Einerseits …, andererseits …",
+   "en": "On the one hand …, on the other hand …"
+  },
+  {
+   "de": "Der größte Vorteil ist, dass …",
+   "en": "The biggest advantage is that …"
+  },
+  {
+   "de": "Nachteilig ist allerdings, dass …",
+   "en": "One disadvantage, however, is that …"
+  },
+  {
+   "de": "Wünsche äußern",
+   "en": "expressing wishes"
+  },
+  {
+   "de": "Am liebsten hätte ich eine Wohnung, in der …",
+   "en": "Ideally I would like a flat in which …"
+  },
+  {
+   "de": "Ich suche etwas, was …",
+   "en": "I'm looking for something that …"
+  },
+  {
+   "de": "Wichtig wäre mir vor allem …",
+   "en": "What would matter most to me is …"
+  },
+  {
+   "de": "Die Miete ist in den letzten Jahren stark gestiegen.",
+   "en": "The rent has risen sharply in recent years."
+  },
+  {
+   "de": "Unser Vermieter reagiert leider sehr langsam.",
+   "en": "Unfortunately our landlord reacts very slowly."
+  },
+  {
+   "de": "Die Nebenkosten sind nicht in der Miete enthalten.",
+   "en": "The service charges are not included in the rent."
+  },
+  {
+   "de": "Wir wohnen im dritten Stock.",
+   "en": "We live on the third floor."
+  },
+  {
+   "de": "Mit der Lampe wirkt das Zimmer viel gemütlicher.",
+   "en": "With the lamp the room feels much cosier."
+  },
+  {
+   "de": "Vom Balkon hat man eine tolle Aussicht.",
+   "en": "From the balcony you have a great view."
+  },
+  {
+   "de": "Nächsten Monat ziehen wir um.",
+   "en": "We are moving house next month."
+  },
+  {
+   "de": "Als Student wohnte er in einer WG.",
+   "en": "As a student he lived in a shared flat."
+  },
+  {
+   "de": "Wir haben die Küche selbst renoviert.",
+   "en": "We renovated the kitchen ourselves."
+  },
+  {
+   "de": "Am Stadtrand ist es ruhiger und billiger.",
+   "en": "On the outskirts it is quieter and cheaper."
+  },
+  {
+   "de": "In unserer Nachbarschaft hilft man sich.",
+   "en": "In our neighbourhood people help each other."
+  },
+  {
+   "de": "Der Flur ist ziemlich eng.",
+   "en": "The hallway is quite narrow."
+  },
+  {
+   "de": "Das ist das Fenster, ___ ___ man den Berg sieht. (durch)",
+   "en": "This is the window ___ ___ you can see the mountain. (durch)"
+  },
+  {
+   "de": "Das sind die Freunde, ___ ich oft koche.",
+   "en": "These are the friends ___ I often cook."
+  },
+  {
+   "de": "Kigali ist die Stadt, ___ ich geboren bin.",
+   "en": "Kigali is the city ___ I was born."
+  },
+  {
+   "de": "Das ist der Schrank, ___ ich seit Jahren ärgere.",
+   "en": "This is the cupboard ___ I have been annoyed for years."
+  },
+  {
+   "de": "Das Haus, ___ ___ wir nächste Woche einziehen, ist noch nicht fertig. (in)",
+   "en": "The house ___ ___ we are moving next week is not finished yet. (in)"
+  },
+  {
+   "de": "durch + Akkusativ, Bezugswort 'das Fenster' (neutrum) → durch das.",
+   "en": "durch + accusative, reference word 'das Fenster' (neuter) → durch das."
+  },
+  {
+   "de": "mit + Dativ, Plural → denen.",
+   "en": "mit + dative, plural → denen."
+  },
+  {
+   "de": "Bei Städten und Ländern benutzt man wo.",
+   "en": "With cities and countries you use wo."
+  },
+  {
+   "de": "sich ärgern über + Akkusativ, maskulin → über den.",
+   "en": "sich ärgern über (to be annoyed about) + accusative, masculine → über den."
+  },
+  {
+   "de": "einziehen in + Akkusativ (Richtung), neutrum → in das.",
+   "en": "einziehen in (to move into) + accusative (direction), neuter → in das."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Relativsätzen",
+   "context": "Die eigene Wohnung genau beschreiben — mit Relativsätzen, die eine Präposition brauchen.",
+   "en": "relative clauses",
+   "lemma": "der Relativsatz"
+  },
+  {
+   "form": "Wohnsituationen",
+   "context": "Räume, Möbel und Wohnsituationen detailliert beschreiben",
+   "en": "living situations",
+   "lemma": "die Wohnsituation"
+  },
+  {
+   "form": "detailliert",
+   "context": "Räume, Möbel und Wohnsituationen detailliert beschreiben",
+   "en": "in detail; detailed",
+   "lemma": ""
+  },
+  {
+   "form": "wohin-Relativsätze",
+   "context": "wo- und wohin-Relativsätze bei Orten verwenden",
+   "en": "relative clauses with wohin",
+   "lemma": "der wohin-Relativsatz"
+  },
+  {
+   "form": "verlangt",
+   "context": "Wenn das Verb im Relativsatz eine Präposition verlangt, steht diese vor dem Relativpronomen. Die Präposition bestimmt den Kasus des Relativpronomens — das Genus und der Numerus kommen vom Bezugswort.",
+   "en": "requires, demands",
+   "lemma": "verlangen"
+  },
+  {
+   "form": "Relativpronomens",
+   "context": "Wenn das Verb im Relativsatz eine Präposition verlangt, steht diese vor dem Relativpronomen. Die Präposition bestimmt den Kasus des Relativpronomens — das Genus und der Numerus kommen vom Bezugswort.",
+   "en": "relative pronoun",
+   "lemma": "das Relativpronomen"
+  },
+  {
+   "form": "Bezugswort",
+   "context": "Wenn das Verb im Relativsatz eine Präposition verlangt, steht diese vor dem Relativpronomen. Die Präposition bestimmt den Kasus des Relativpronomens — das Genus und der Numerus kommen vom Bezugswort.",
+   "en": "word referred to",
+   "lemma": "das Bezugswort"
+  },
+  {
+   "form": "Sessel",
+   "context": "Das ist der Sessel, für den ich lange gespart habe.",
+   "en": "armchair",
+   "lemma": "der Sessel"
+  },
+  {
+   "form": "gespart",
+   "context": "Das ist der Sessel, für den ich lange gespart habe.",
+   "en": "saved (money)",
+   "lemma": "sparen"
+  },
+  {
+   "form": "denen",
+   "context": "Das sind die Nachbarn, mit denen wir oft grillen.",
+   "en": "whom, which (dative plural)",
+   "lemma": ""
+  },
+  {
+   "form": "winzig",
+   "context": "Der Balkon, auf dem ich jeden Morgen frühstücke, ist winzig.auf + Dativ (Ort)",
+   "en": "tiny",
+   "lemma": ""
+  },
+  {
+   "form": "Städten",
+   "context": "Tipp: Bei Städten und Ländern benutzt man immer wo / wohin: Kigali ist die Stadt, wo ich aufgewachsen bin. (nicht: in der)",
+   "en": "cities, towns",
+   "lemma": "die Stadt"
+  },
+  {
+   "form": "aufgewachsen",
+   "context": "Tipp: Bei Städten und Ländern benutzt man immer wo / wohin: Kigali ist die Stadt, wo ich aufgewachsen bin. (nicht: in der)",
+   "en": "grown up, grew up",
+   "lemma": "aufwachsen"
+  },
+  {
+   "form": "loyerDie",
+   "context": "die Miete, -n — EN: rent · FR: le loyerDie Miete ist in den letzten Jahren stark gestiegen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stark",
+   "context": "die Miete, -n — EN: rent · FR: le loyerDie Miete ist in den letzten Jahren stark gestiegen.",
+   "en": "sharply; strong",
+   "lemma": ""
+  },
+  {
+   "form": "gestiegen",
+   "context": "die Miete, -n — EN: rent · FR: le loyerDie Miete ist in den letzten Jahren stark gestiegen.",
+   "en": "risen",
+   "lemma": "steigen"
+  },
+  {
+   "form": "landlord",
+   "context": "der Vermieter, - / die Vermieterin, -nen — EN: landlord/landlady · FR: le/la propriétaireUnser Vermieter reagiert leider sehr langsam.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "landlady",
+   "context": "der Vermieter, - / die Vermieterin, -nen — EN: landlord/landlady · FR: le/la propriétaireUnser Vermieter reagiert leider sehr langsam.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "propriétaireUnser",
+   "context": "der Vermieter, - / die Vermieterin, -nen — EN: landlord/landlady · FR: le/la propriétaireUnser Vermieter reagiert leider sehr langsam.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Nebenkosten",
+   "context": "die Nebenkosten (Pl.) — EN: utilities, service charges · FR: les chargesDie Nebenkosten sind nicht in der Miete enthalten.",
+   "en": "service charges, utilities",
+   "lemma": "die Nebenkosten"
+  },
+  {
+   "form": "utilities",
+   "context": "die Nebenkosten (Pl.) — EN: utilities, service charges · FR: les chargesDie Nebenkosten sind nicht in der Miete enthalten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "charges",
+   "context": "die Nebenkosten (Pl.) — EN: utilities, service charges · FR: les chargesDie Nebenkosten sind nicht in der Miete enthalten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chargesDie",
+   "context": "die Nebenkosten (Pl.) — EN: utilities, service charges · FR: les chargesDie Nebenkosten sind nicht in der Miete enthalten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Etage",
+   "context": "der Stock / die Etage, -n — EN: floor, storey · FR: l'étageWir wohnen im dritten Stock.",
+   "en": "floor, storey",
+   "lemma": "die Etage"
+  },
+  {
+   "form": "floor",
+   "context": "der Stock / die Etage, -n — EN: floor, storey · FR: l'étageWir wohnen im dritten Stock.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "storey",
+   "context": "der Stock / die Etage, -n — EN: floor, storey · FR: l'étageWir wohnen im dritten Stock.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'étageWir",
+   "context": "der Stock / die Etage, -n — EN: floor, storey · FR: l'étageWir wohnen im dritten Stock.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "confortable",
+   "context": "gemütlich — EN: cosy · FR: confortable, douilletMit der Lampe wirkt das Zimmer viel gemütlicher.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "douilletMit",
+   "context": "gemütlich — EN: cosy · FR: confortable, douilletMit der Lampe wirkt das Zimmer viel gemütlicher.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "wirkt",
+   "context": "gemütlich — EN: cosy · FR: confortable, douilletMit der Lampe wirkt das Zimmer viel gemütlicher.",
+   "en": "seems, looks; works",
+   "lemma": "wirken"
+  },
+  {
+   "form": "vueVom",
+   "context": "die Aussicht (Sg.) — EN: view · FR: la vueVom Balkon hat man eine tolle Aussicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "umziehen",
+   "context": "umziehen (zog um, umgezogen) — EN: to move house · FR: déménagerNächsten Monat ziehen wir um.",
+   "en": "to move house",
+   "lemma": ""
+  },
+  {
+   "form": "zog",
+   "context": "umziehen (zog um, umgezogen) — EN: to move house · FR: déménagerNächsten Monat ziehen wir um.",
+   "en": "moved; pulled",
+   "lemma": "ziehen"
+  },
+  {
+   "form": "umgezogen",
+   "context": "umziehen (zog um, umgezogen) — EN: to move house · FR: déménagerNächsten Monat ziehen wir um.",
+   "en": "moved (house)",
+   "lemma": "umziehen"
+  },
+  {
+   "form": "déménagerNächsten",
+   "context": "umziehen (zog um, umgezogen) — EN: to move house · FR: déménagerNächsten Monat ziehen wir um.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "WG",
+   "context": "die WG, -s (Wohngemeinschaft) — EN: shared flat · FR: la colocationAls Student wohnte er in einer WG.",
+   "en": "shared flat",
+   "lemma": "die WG"
+  },
+  {
+   "form": "Wohngemeinschaft",
+   "context": "die WG, -s (Wohngemeinschaft) — EN: shared flat · FR: la colocationAls Student wohnte er in einer WG.",
+   "en": "shared flat",
+   "lemma": "die Wohngemeinschaft"
+  },
+  {
+   "form": "shared",
+   "context": "die WG, -s (Wohngemeinschaft) — EN: shared flat · FR: la colocationAls Student wohnte er in einer WG.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "colocationAls",
+   "context": "die WG, -s (Wohngemeinschaft) — EN: shared flat · FR: la colocationAls Student wohnte er in einer WG.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "wohnte",
+   "context": "die WG, -s (Wohngemeinschaft) — EN: shared flat · FR: la colocationAls Student wohnte er in einer WG.",
+   "en": "lived",
+   "lemma": "wohnen"
+  },
+  {
+   "form": "renovieren",
+   "context": "renovieren — EN: to renovate · FR: rénoverWir haben die Küche selbst renoviert.",
+   "en": "to renovate",
+   "lemma": ""
+  },
+  {
+   "form": "renovate",
+   "context": "renovieren — EN: to renovate · FR: rénoverWir haben die Küche selbst renoviert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rénoverWir",
+   "context": "renovieren — EN: to renovate · FR: rénoverWir haben die Küche selbst renoviert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "renoviert",
+   "context": "renovieren — EN: to renovate · FR: rénoverWir haben die Küche selbst renoviert.",
+   "en": "renovated",
+   "lemma": "renovieren"
+  },
+  {
+   "form": "Stadtrand",
+   "context": "der Stadtrand (Sg.) — EN: outskirts · FR: la périphérieAm Stadtrand ist es ruhiger und billiger.",
+   "en": "outskirts (of town)",
+   "lemma": "der Stadtrand"
+  },
+  {
+   "form": "outskirts",
+   "context": "der Stadtrand (Sg.) — EN: outskirts · FR: la périphérieAm Stadtrand ist es ruhiger und billiger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "périphérieAm",
+   "context": "der Stadtrand (Sg.) — EN: outskirts · FR: la périphérieAm Stadtrand ist es ruhiger und billiger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ruhiger",
+   "context": "der Stadtrand (Sg.) — EN: outskirts · FR: la périphérieAm Stadtrand ist es ruhiger und billiger.",
+   "en": "quieter",
+   "lemma": "ruhig"
+  },
+  {
+   "form": "Nachbarschaft",
+   "context": "die Nachbarschaft, -en — EN: neighbourhood · FR: le voisinageIn unserer Nachbarschaft hilft man sich.",
+   "en": "neighbourhood",
+   "lemma": "die Nachbarschaft"
+  },
+  {
+   "form": "neighbourhood",
+   "context": "die Nachbarschaft, -en — EN: neighbourhood · FR: le voisinageIn unserer Nachbarschaft hilft man sich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "voisinageIn",
+   "context": "die Nachbarschaft, -en — EN: neighbourhood · FR: le voisinageIn unserer Nachbarschaft hilft man sich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "narrow",
+   "context": "eng — EN: narrow, cramped · FR: étroitDer Flur ist ziemlich eng.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cramped",
+   "context": "eng — EN: narrow, cramped · FR: étroitDer Flur ist ziemlich eng.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "étroitDer",
+   "context": "eng — EN: narrow, cramped · FR: étroitDer Flur ist ziemlich eng.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stört",
+   "context": "Was mich stört, ist …",
+   "en": "bothers, disturbs",
+   "lemma": "stören"
+  },
+  {
+   "form": "Einerseits",
+   "context": "Einerseits …, andererseits …",
+   "en": "on the one hand",
+   "lemma": ""
+  },
+  {
+   "form": "andererseits",
+   "context": "Einerseits …, andererseits …",
+   "en": "on the other hand",
+   "lemma": ""
+  },
+  {
+   "form": "größte",
+   "context": "Der größte Vorteil ist, dass …",
+   "en": "biggest, largest",
+   "lemma": "groß"
+  },
+  {
+   "form": "Vorteil",
+   "context": "Der größte Vorteil ist, dass …",
+   "en": "advantage",
+   "lemma": "der Vorteil"
+  },
+  {
+   "form": "Nachteilig",
+   "context": "Nachteilig ist allerdings, dass …",
+   "en": "disadvantageous, a drawback",
+   "lemma": ""
+  },
+  {
+   "form": "allerdings",
+   "context": "Nachteilig ist allerdings, dass …",
+   "en": "however; certainly",
+   "lemma": ""
+  },
+  {
+   "form": "geboren",
+   "context": "Kigali ist die Stadt, ___ ich geboren bin.",
+   "en": "born",
+   "lemma": ""
+  },
+  {
+   "form": "einziehen",
+   "context": "Das Haus, ___ ___ wir nächste Woche einziehen, ist noch nicht fertig. (in)",
+   "en": "to move in",
+   "lemma": ""
+  }
+ ]
+}
