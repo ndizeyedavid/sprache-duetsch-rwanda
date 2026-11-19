@@ -1,0 +1,897 @@
+{
+ "level": "B2",
+ "lesson": 8,
+ "title": "Den Traumjob finden — Die im Ausland gesammelten Erfahrungen",
+ "lines": [
+  {
+   "de": "Stellenanzeigen verstehen und ein Bewerbungsschreiben verfassen — mit dichten Partizipialattributen.",
+   "en": "Understanding job advertisements and writing a letter of application — with dense participial attributes (Partizipialattribute)."
+  },
+  {
+   "de": "Textsorte: Stellenanzeige · Bewerbungsschreiben",
+   "en": "Text type: job advertisement · letter of application"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Schreiben Teil 2 (formeller Brief); telc B2 Schreiben",
+   "en": "Exam link: Goethe B2 Writing part 2 (formal letter); telc B2 Writing"
+  },
+  {
+   "de": "über Erfahrungen und Ziele in Ausbildung, Studium und Beruf sprechen",
+   "en": "talk about experiences and goals in training, studies and work"
+  },
+  {
+   "de": "eine Stellenanzeige genau auswerten",
+   "en": "analyse a job advertisement in detail"
+  },
+  {
+   "de": "erweiterte Partizipialattribute verstehen und selbst bilden",
+   "en": "understand and form extended participial attributes (erweiterte Partizipialattribute) yourself"
+  },
+  {
+   "de": "ein vollständiges Bewerbungsschreiben verfassen",
+   "en": "write a complete letter of application"
+  },
+  {
+   "de": "Grammatik: Erweiterte Partizipialattribute",
+   "en": "Grammar: extended participial attributes (erweiterte Partizipialattribute)"
+  },
+  {
+   "de": "In Stellenanzeigen, Bewerbungen und Fachtexten wird ein ganzer Relativsatz oft in ein Attribut vor dem Nomen gepackt. Das Partizip steht direkt vor dem Nomen, seine Ergänzungen davor. Partizip I ist aktiv und gleichzeitig, Partizip II passiv und abgeschlossen.",
+   "en": "In job advertisements, applications and specialist texts, a whole relative clause is often packed into an attribute before the noun. The participle comes directly before the noun, with its complements in front of it. The present participle (Partizip I) is active and simultaneous; the past participle (Partizip II) is passive and completed."
+  },
+  {
+   "de": "Relativsatz",
+   "en": "Relative clause"
+  },
+  {
+   "de": "Partizipialattribut",
+   "en": "Participial attribute"
+  },
+  {
+   "de": "die Erfahrungen, die ich im Ausland gesammelt habe",
+   "en": "the experience that I gained abroad"
+  },
+  {
+   "de": "die im Ausland gesammelten Erfahrungen",
+   "en": "the experience gained abroad"
+  },
+  {
+   "de": "Partizip II, passiv",
+   "en": "Past participle, passive"
+  },
+  {
+   "de": "ein Team, das schnell wächst",
+   "en": "a team that is growing fast"
+  },
+  {
+   "de": "ein schnell wachsendes Team",
+   "en": "a fast-growing team"
+  },
+  {
+   "de": "Partizip I, aktiv",
+   "en": "Present participle, active"
+  },
+  {
+   "de": "die Stelle, die in der Zeitung ausgeschrieben wurde",
+   "en": "the position that was advertised in the newspaper"
+  },
+  {
+   "de": "die in der Zeitung ausgeschriebene Stelle",
+   "en": "the position advertised in the newspaper"
+  },
+  {
+   "de": "Aufgaben, die selbstständig zu lösen sind",
+   "en": "tasks that are to be solved independently"
+  },
+  {
+   "de": "selbstständig zu lösende Aufgaben",
+   "en": "tasks to be solved independently"
+  },
+  {
+   "de": "zu + Partizip I: Notwendigkeit",
+   "en": "zu + present participle: necessity"
+  },
+  {
+   "de": "Wir suchen eine für dieses Aufgabengebiet bestens qualifizierte Person.Ergänzung + Partizip II + Nomen",
+   "en": "We are looking for a person ideally qualified for this area of responsibility. Complement + past participle + noun"
+  },
+  {
+   "de": "Die von Ihnen geforderten Kenntnisse bringe ich vollständig mit.Urheber mit von im Attribut",
+   "en": "I fully possess the skills required by you. Agent with von in the attribute"
+  },
+  {
+   "de": "Es handelt sich um eine zum 1. März zu besetzende Stelle.zu + Partizip I = muss besetzt werden",
+   "en": "This is a position to be filled on 1 March. zu + present participle = must be filled"
+  },
+  {
+   "de": "Tipp: Zum Lesen: Suchen Sie zuerst Artikel und Nomen, lesen Sie dann das Attribut dazwischen als Relativsatz. „die … gesammelten Erfahrungen\" = „die Erfahrungen, die … gesammelt wurden\".",
+   "en": "Tip: For reading: first look for the article and the noun, then read the attribute in between as a relative clause. “die … gesammelten Erfahrungen” = “die Erfahrungen, die … gesammelt wurden”."
+  },
+  {
+   "de": "die Stellenanzeige, -n — EN: job advertisement · FR: l'offre d'emploiIch bin auf Ihre Stellenanzeige gestoßen.",
+   "en": "Example: I came across your job advertisement."
+  },
+  {
+   "de": "das Anschreiben, - — EN: cover letter · FR: la lettre de motivationDas Anschreiben sollte eine Seite nicht überschreiten.",
+   "en": "Example: The cover letter should not be longer than one page."
+  },
+  {
+   "de": "die Qualifikation, -en — EN: qualification · FR: la qualificationMeine Qualifikationen passen genau zum Profil.",
+   "en": "Example: My qualifications match the profile exactly."
+  },
+  {
+   "de": "das Anforderungsprofil, -e — EN: requirements profile · FR: le profil recherchéDas Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "Example: The requirements profile names three key areas."
+  },
+  {
+   "de": "einschlägig — EN: relevant (experience) · FR: pertinent, dans le domaineEinschlägige Berufserfahrung ist erwünscht.",
+   "en": "Example: Relevant work experience is desirable."
+  },
+  {
+   "de": "der Werdegang, ¨-e — EN: career path · FR: le parcoursMein beruflicher Werdegang ist nicht geradlinig.",
+   "en": "Example: My career path has not been straightforward."
+  },
+  {
+   "de": "die Kenntnisse (Pl.) — EN: skills, knowledge · FR: les connaissancesSehr gute Deutschkenntnisse werden vorausgesetzt.",
+   "en": "Example: Very good German skills are required."
+  },
+  {
+   "de": "voraussetzen — EN: to require, presuppose · FR: exiger, présupposerTeamfähigkeit setzen wir voraus.",
+   "en": "Example: We require the ability to work in a team."
+  },
+  {
+   "de": "sich auszeichnen durch — EN: to be distinguished by · FR: se distinguer parIch zeichne mich durch große Sorgfalt aus.",
+   "en": "Example: I stand out for being very thorough."
+  },
+  {
+   "de": "die Eigeninitiative (Sg.) — EN: initiative · FR: l'esprit d'initiativeEigeninitiative ist in dieser Rolle entscheidend.",
+   "en": "Example: Initiative is crucial in this role."
+  },
+  {
+   "de": "die Probezeit (Sg.) — EN: probationary period · FR: la période d'essaiDie Probezeit beträgt sechs Monate.",
+   "en": "Example: The probationary period is six months."
+  },
+  {
+   "de": "der Quereinsteiger, - — EN: career changer · FR: le/la reconverti(e)Auch Quereinsteiger sind willkommen.",
+   "en": "Example: Career changers are also welcome."
+  },
+  {
+   "de": "die Vergütung (Sg.) — EN: remuneration · FR: la rémunérationÜber die Vergütung sprechen wir im Gespräch.",
+   "en": "Example: We will discuss pay at the interview."
+  },
+  {
+   "de": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "Example: The position is to be filled at the earliest possible date."
+  },
+  {
+   "de": "Bewerbung einleiten",
+   "en": "Starting an application"
+  },
+  {
+   "de": "mit großem Interesse habe ich Ihre Anzeige vom … gelesen.",
+   "en": "I read your advertisement of … with great interest."
+  },
+  {
+   "de": "Hiermit bewerbe ich mich um die ausgeschriebene Stelle als …",
+   "en": "I hereby apply for the advertised position as …"
+  },
+  {
+   "de": "Ihre Ausschreibung hat mich sofort angesprochen, weil …",
+   "en": "Your job posting appealed to me immediately because …"
+  },
+  {
+   "de": "Eignung begründen",
+   "en": "Explaining why you are suitable"
+  },
+  {
+   "de": "Die von Ihnen geforderten Kenntnisse bringe ich durch … mit.",
+   "en": "I have the skills you require thanks to …"
+  },
+  {
+   "de": "Während meiner Tätigkeit bei … habe ich … verantwortet.",
+   "en": "During my time at …, I was responsible for …"
+  },
+  {
+   "de": "Besonders reizt mich an der Position, dass …",
+   "en": "What particularly attracts me to the position is that …"
+  },
+  {
+   "de": "Bewerbung abschließen",
+   "en": "Ending an application"
+  },
+  {
+   "de": "Über eine Einladung zu einem persönlichen Gespräch freue ich mich sehr.",
+   "en": "I would be very pleased to be invited to an interview."
+  },
+  {
+   "de": "Für Rückfragen stehe ich Ihnen jederzeit zur Verfügung.",
+   "en": "I am available at any time if you have any questions."
+  },
+  {
+   "de": "Ich bin auf Ihre Stellenanzeige gestoßen.",
+   "en": "I came across your job advertisement."
+  },
+  {
+   "de": "Das Anschreiben sollte eine Seite nicht überschreiten.",
+   "en": "The cover letter should not be longer than one page."
+  },
+  {
+   "de": "Meine Qualifikationen passen genau zum Profil.",
+   "en": "My qualifications match the profile exactly."
+  },
+  {
+   "de": "Das Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "The requirements profile names three key areas."
+  },
+  {
+   "de": "Einschlägige Berufserfahrung ist erwünscht.",
+   "en": "Relevant work experience is desirable."
+  },
+  {
+   "de": "Mein beruflicher Werdegang ist nicht geradlinig.",
+   "en": "My career path has not been straightforward."
+  },
+  {
+   "de": "Sehr gute Deutschkenntnisse werden vorausgesetzt.",
+   "en": "Very good German skills are required."
+  },
+  {
+   "de": "Teamfähigkeit setzen wir voraus.",
+   "en": "We require the ability to work in a team."
+  },
+  {
+   "de": "Ich zeichne mich durch große Sorgfalt aus.",
+   "en": "I stand out for being very thorough."
+  },
+  {
+   "de": "Eigeninitiative ist in dieser Rolle entscheidend.",
+   "en": "Initiative is crucial in this role."
+  },
+  {
+   "de": "Die Probezeit beträgt sechs Monate.",
+   "en": "The probationary period is six months."
+  },
+  {
+   "de": "Auch Quereinsteiger sind willkommen.",
+   "en": "Career changers are also welcome."
+  },
+  {
+   "de": "Über die Vergütung sprechen wir im Gespräch.",
+   "en": "We will discuss pay at the interview."
+  },
+  {
+   "de": "Die Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "The position is to be filled at the earliest possible date."
+  },
+  {
+   "de": "„die im Ausland gesammelten Erfahrungen\" bedeutet:",
+   "en": "“die im Ausland gesammelten Erfahrungen” means:"
+  },
+  {
+   "de": "ein Team, das schnell wächst → ein schnell ___ Team (Partizip I)",
+   "en": "a team that is growing fast → a fast-___ team (present participle)"
+  },
+  {
+   "de": "Welches Attribut ist aktiv und gleichzeitig?",
+   "en": "Which attribute is active and simultaneous?"
+  },
+  {
+   "de": "die Stelle, die zum 1. März besetzt werden muss → die zum 1. März ___ ___ Stelle (zu + Partizip I)",
+   "en": "the position that must be filled on 1 March → the position ___ ___ on 1 March (zu + present participle)"
+  },
+  {
+   "de": "die Kenntnisse, die Sie fordern → die von Ihnen ___ Kenntnisse (Partizip II)",
+   "en": "the skills that you require → the skills ___ by you (past participle)"
+  },
+  {
+   "de": "Was gehört NICHT in ein Anschreiben?",
+   "en": "What does NOT belong in a cover letter?"
+  },
+  {
+   "de": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "Write a complete letter of application in response to a job advertisement of your choice. Length: 200–250 words Checklist: • Subject line with the job title and where you found the advertisement. • One paragraph each for motivation, qualifications and availability. • At least one extended participial attribute. • Don't repeat your CV — only the relevant points."
+  },
+  {
+   "de": "Partizip II im Attribut ist passiv und abgeschlossen.",
+   "en": "A past participle in the attribute is passive and completed."
+  },
+  {
+   "de": "wachsen + d + Endung -es (Nominativ/Akkusativ neutrum): wachsendes.",
+   "en": "wachsen + d + ending -es (nominative/accusative neuter): wachsendes."
+  },
+  {
+   "de": "Partizip I (steigend) ist aktiv: die Nachfrage steigt gerade.",
+   "en": "The present participle (steigend) is active: demand is rising right now."
+  },
+  {
+   "de": "zu + Partizip I drückt Notwendigkeit aus: die zu besetzende Stelle.",
+   "en": "zu + present participle expresses necessity: die zu besetzende Stelle."
+  },
+  {
+   "de": "Partizip II + Adjektivendung -en nach dem bestimmten Artikel im Plural.",
+   "en": "Past participle + adjective ending -en after the definite article in the plural."
+  },
+  {
+   "de": "Das Anschreiben ergänzt den Lebenslauf, es wiederholt ihn nicht.",
+   "en": "The cover letter complements the CV; it doesn't repeat it."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Stellenanzeigen",
+   "context": "Stellenanzeigen verstehen und ein Bewerbungsschreiben verfassen — mit dichten Partizipialattributen.",
+   "en": "job advertisements",
+   "lemma": "die Stellenanzeige"
+  },
+  {
+   "form": "verfassen",
+   "context": "Stellenanzeigen verstehen und ein Bewerbungsschreiben verfassen — mit dichten Partizipialattributen.",
+   "en": "to write, compose",
+   "lemma": ""
+  },
+  {
+   "form": "dichten",
+   "context": "Stellenanzeigen verstehen und ein Bewerbungsschreiben verfassen — mit dichten Partizipialattributen.",
+   "en": "dense",
+   "lemma": "dicht"
+  },
+  {
+   "form": "Partizipialattributen",
+   "context": "Stellenanzeigen verstehen und ein Bewerbungsschreiben verfassen — mit dichten Partizipialattributen.",
+   "en": "participial attributes",
+   "lemma": "das Partizipialattribut"
+  },
+  {
+   "form": "auswerten",
+   "context": "eine Stellenanzeige genau auswerten",
+   "en": "to analyse, evaluate",
+   "lemma": ""
+  },
+  {
+   "form": "erweiterte",
+   "context": "erweiterte Partizipialattribute verstehen und selbst bilden",
+   "en": "extended",
+   "lemma": "erweitert"
+  },
+  {
+   "form": "Partizipialattribute",
+   "context": "erweiterte Partizipialattribute verstehen und selbst bilden",
+   "en": "participial attributes",
+   "lemma": "das Partizipialattribut"
+  },
+  {
+   "form": "vollständiges",
+   "context": "ein vollständiges Bewerbungsschreiben verfassen",
+   "en": "complete",
+   "lemma": "vollständig"
+  },
+  {
+   "form": "Erweiterte",
+   "context": "Grammatik: Erweiterte Partizipialattribute",
+   "en": "extended",
+   "lemma": "erweitert"
+  },
+  {
+   "form": "Fachtexten",
+   "context": "In Stellenanzeigen, Bewerbungen und Fachtexten wird ein ganzer Relativsatz oft in ein Attribut vor dem Nomen gepackt. Das Partizip steht direkt vor dem Nomen, seine Ergänzungen davor. Partizip I ist aktiv und gleichzeitig, Partizip II passiv und abgeschlossen.",
+   "en": "specialist texts",
+   "lemma": "der Fachtext"
+  },
+  {
+   "form": "Ergänzungen",
+   "context": "In Stellenanzeigen, Bewerbungen und Fachtexten wird ein ganzer Relativsatz oft in ein Attribut vor dem Nomen gepackt. Das Partizip steht direkt vor dem Nomen, seine Ergänzungen davor. Partizip I ist aktiv und gleichzeitig, Partizip II passiv und abgeschlossen.",
+   "en": "complements; additions",
+   "lemma": "die Ergänzung"
+  },
+  {
+   "form": "Partizipialattribut",
+   "context": "Partizipialattribut",
+   "en": "participial attribute",
+   "lemma": "das Partizipialattribut"
+  },
+  {
+   "form": "gesammelten",
+   "context": "die im Ausland gesammelten Erfahrungen",
+   "en": "collected, gained",
+   "lemma": "sammeln"
+  },
+  {
+   "form": "wachsendes",
+   "context": "ein schnell wachsendes Team",
+   "en": "growing",
+   "lemma": "wachsen"
+  },
+  {
+   "form": "ausgeschrieben",
+   "context": "die Stelle, die in der Zeitung ausgeschrieben wurde",
+   "en": "advertised",
+   "lemma": "ausschreiben"
+  },
+  {
+   "form": "lösen",
+   "context": "Aufgaben, die selbstständig zu lösen sind",
+   "en": "to solve",
+   "lemma": ""
+  },
+  {
+   "form": "lösende",
+   "context": "selbstständig zu lösende Aufgaben",
+   "en": "(zu lösende) to be solved",
+   "lemma": "lösen"
+  },
+  {
+   "form": "Notwendigkeit",
+   "context": "zu + Partizip I: Notwendigkeit",
+   "en": "necessity",
+   "lemma": "die Notwendigkeit"
+  },
+  {
+   "form": "Aufgabengebiet",
+   "context": "Wir suchen eine für dieses Aufgabengebiet bestens qualifizierte Person.Ergänzung + Partizip II + Nomen",
+   "en": "area of responsibility",
+   "lemma": "das Aufgabengebiet"
+  },
+  {
+   "form": "bestens",
+   "context": "Wir suchen eine für dieses Aufgabengebiet bestens qualifizierte Person.Ergänzung + Partizip II + Nomen",
+   "en": "very well, excellently",
+   "lemma": ""
+  },
+  {
+   "form": "qualifizierte",
+   "context": "Wir suchen eine für dieses Aufgabengebiet bestens qualifizierte Person.Ergänzung + Partizip II + Nomen",
+   "en": "qualified",
+   "lemma": "qualifiziert"
+  },
+  {
+   "form": "geforderten",
+   "context": "Die von Ihnen geforderten Kenntnisse bringe ich vollständig mit.Urheber mit von im Attribut",
+   "en": "required, demanded",
+   "lemma": "fordern"
+  },
+  {
+   "form": "vollständig",
+   "context": "Die von Ihnen geforderten Kenntnisse bringe ich vollständig mit.Urheber mit von im Attribut",
+   "en": "completely, fully",
+   "lemma": ""
+  },
+  {
+   "form": "besetzende",
+   "context": "Es handelt sich um eine zum 1. März zu besetzende Stelle.zu + Partizip I = muss besetzt werden",
+   "en": "(zu besetzende) to be filled",
+   "lemma": "besetzen"
+  },
+  {
+   "form": "dazwischen",
+   "context": "Tipp: Zum Lesen: Suchen Sie zuerst Artikel und Nomen, lesen Sie dann das Attribut dazwischen als Relativsatz. „die … gesammelten Erfahrungen\" = „die Erfahrungen, die … gesammelt wurden\".",
+   "en": "in between",
+   "lemma": ""
+  },
+  {
+   "form": "gestoßen",
+   "context": "die Stellenanzeige, -n — EN: job advertisement · FR: l'offre d'emploiIch bin auf Ihre Stellenanzeige gestoßen.",
+   "en": "come across (stoßen auf); pushed",
+   "lemma": "stoßen"
+  },
+  {
+   "form": "überschreiten",
+   "context": "das Anschreiben, - — EN: cover letter · FR: la lettre de motivationDas Anschreiben sollte eine Seite nicht überschreiten.",
+   "en": "to exceed",
+   "lemma": ""
+  },
+  {
+   "form": "Qualifikation",
+   "context": "die Qualifikation, -en — EN: qualification · FR: la qualificationMeine Qualifikationen passen genau zum Profil.",
+   "en": "qualification",
+   "lemma": "die Qualifikation"
+  },
+  {
+   "form": "qualificationMeine",
+   "context": "die Qualifikation, -en — EN: qualification · FR: la qualificationMeine Qualifikationen passen genau zum Profil.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Profil",
+   "context": "die Qualifikation, -en — EN: qualification · FR: la qualificationMeine Qualifikationen passen genau zum Profil.",
+   "en": "profile",
+   "lemma": "das Profil"
+  },
+  {
+   "form": "Anforderungsprofil",
+   "context": "das Anforderungsprofil, -e — EN: requirements profile · FR: le profil recherchéDas Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "requirements profile",
+   "lemma": "das Anforderungsprofil"
+  },
+  {
+   "form": "requirements",
+   "context": "das Anforderungsprofil, -e — EN: requirements profile · FR: le profil recherchéDas Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "profile",
+   "context": "das Anforderungsprofil, -e — EN: requirements profile · FR: le profil recherchéDas Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "profil",
+   "context": "das Anforderungsprofil, -e — EN: requirements profile · FR: le profil recherchéDas Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "recherchéDas",
+   "context": "das Anforderungsprofil, -e — EN: requirements profile · FR: le profil recherchéDas Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Schwerpunkte",
+   "context": "das Anforderungsprofil, -e — EN: requirements profile · FR: le profil recherchéDas Anforderungsprofil nennt drei Schwerpunkte.",
+   "en": "key areas, main focuses",
+   "lemma": "der Schwerpunkt"
+  },
+  {
+   "form": "einschlägig",
+   "context": "einschlägig — EN: relevant (experience) · FR: pertinent, dans le domaineEinschlägige Berufserfahrung ist erwünscht.",
+   "en": "relevant (experience)",
+   "lemma": ""
+  },
+  {
+   "form": "relevant",
+   "context": "einschlägig — EN: relevant (experience) · FR: pertinent, dans le domaineEinschlägige Berufserfahrung ist erwünscht.",
+   "en": "relevant",
+   "lemma": ""
+  },
+  {
+   "form": "pertinent",
+   "context": "einschlägig — EN: relevant (experience) · FR: pertinent, dans le domaineEinschlägige Berufserfahrung ist erwünscht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "domaineEinschlägige",
+   "context": "einschlägig — EN: relevant (experience) · FR: pertinent, dans le domaineEinschlägige Berufserfahrung ist erwünscht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erwünscht",
+   "context": "einschlägig — EN: relevant (experience) · FR: pertinent, dans le domaineEinschlägige Berufserfahrung ist erwünscht.",
+   "en": "desired, welcome",
+   "lemma": ""
+  },
+  {
+   "form": "career",
+   "context": "der Werdegang, ¨-e — EN: career path · FR: le parcoursMein beruflicher Werdegang ist nicht geradlinig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parcoursMein",
+   "context": "der Werdegang, ¨-e — EN: career path · FR: le parcoursMein beruflicher Werdegang ist nicht geradlinig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beruflicher",
+   "context": "der Werdegang, ¨-e — EN: career path · FR: le parcoursMein beruflicher Werdegang ist nicht geradlinig.",
+   "en": "professional, career",
+   "lemma": "beruflich"
+  },
+  {
+   "form": "connaissancesSehr",
+   "context": "die Kenntnisse (Pl.) — EN: skills, knowledge · FR: les connaissancesSehr gute Deutschkenntnisse werden vorausgesetzt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Deutschkenntnisse",
+   "context": "die Kenntnisse (Pl.) — EN: skills, knowledge · FR: les connaissancesSehr gute Deutschkenntnisse werden vorausgesetzt.",
+   "en": "knowledge of German",
+   "lemma": "die Deutschkenntnisse"
+  },
+  {
+   "form": "vorausgesetzt",
+   "context": "die Kenntnisse (Pl.) — EN: skills, knowledge · FR: les connaissancesSehr gute Deutschkenntnisse werden vorausgesetzt.",
+   "en": "required, presupposed",
+   "lemma": "voraussetzen"
+  },
+  {
+   "form": "voraussetzen",
+   "context": "voraussetzen — EN: to require, presuppose · FR: exiger, présupposerTeamfähigkeit setzen wir voraus.",
+   "en": "to require, presuppose",
+   "lemma": ""
+  },
+  {
+   "form": "require",
+   "context": "voraussetzen — EN: to require, presuppose · FR: exiger, présupposerTeamfähigkeit setzen wir voraus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "presuppose",
+   "context": "voraussetzen — EN: to require, presuppose · FR: exiger, présupposerTeamfähigkeit setzen wir voraus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "exiger",
+   "context": "voraussetzen — EN: to require, presuppose · FR: exiger, présupposerTeamfähigkeit setzen wir voraus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "présupposerTeamfähigkeit",
+   "context": "voraussetzen — EN: to require, presuppose · FR: exiger, présupposerTeamfähigkeit setzen wir voraus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "auszeichnen",
+   "context": "sich auszeichnen durch — EN: to be distinguished by · FR: se distinguer parIch zeichne mich durch große Sorgfalt aus.",
+   "en": "to distinguish (sich auszeichnen durch = to stand out for)",
+   "lemma": ""
+  },
+  {
+   "form": "distinguished",
+   "context": "sich auszeichnen durch — EN: to be distinguished by · FR: se distinguer parIch zeichne mich durch große Sorgfalt aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "distinguer",
+   "context": "sich auszeichnen durch — EN: to be distinguished by · FR: se distinguer parIch zeichne mich durch große Sorgfalt aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parIch",
+   "context": "sich auszeichnen durch — EN: to be distinguished by · FR: se distinguer parIch zeichne mich durch große Sorgfalt aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zeichne",
+   "context": "sich auszeichnen durch — EN: to be distinguished by · FR: se distinguer parIch zeichne mich durch große Sorgfalt aus.",
+   "en": "(zeichne … aus) stand out; draw",
+   "lemma": "zeichnen"
+  },
+  {
+   "form": "Sorgfalt",
+   "context": "sich auszeichnen durch — EN: to be distinguished by · FR: se distinguer parIch zeichne mich durch große Sorgfalt aus.",
+   "en": "care, thoroughness",
+   "lemma": "die Sorgfalt"
+  },
+  {
+   "form": "Eigeninitiative",
+   "context": "die Eigeninitiative (Sg.) — EN: initiative · FR: l'esprit d'initiativeEigeninitiative ist in dieser Rolle entscheidend.",
+   "en": "initiative",
+   "lemma": "die Eigeninitiative"
+  },
+  {
+   "form": "initiative",
+   "context": "die Eigeninitiative (Sg.) — EN: initiative · FR: l'esprit d'initiativeEigeninitiative ist in dieser Rolle entscheidend.",
+   "en": "initiative",
+   "lemma": "die Initiative"
+  },
+  {
+   "form": "l'esprit",
+   "context": "die Eigeninitiative (Sg.) — EN: initiative · FR: l'esprit d'initiativeEigeninitiative ist in dieser Rolle entscheidend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'initiativeEigeninitiative",
+   "context": "die Eigeninitiative (Sg.) — EN: initiative · FR: l'esprit d'initiativeEigeninitiative ist in dieser Rolle entscheidend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Probezeit",
+   "context": "die Probezeit (Sg.) — EN: probationary period · FR: la période d'essaiDie Probezeit beträgt sechs Monate.",
+   "en": "probationary period",
+   "lemma": "die Probezeit"
+  },
+  {
+   "form": "probationary",
+   "context": "die Probezeit (Sg.) — EN: probationary period · FR: la période d'essaiDie Probezeit beträgt sechs Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "period",
+   "context": "die Probezeit (Sg.) — EN: probationary period · FR: la période d'essaiDie Probezeit beträgt sechs Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "période",
+   "context": "die Probezeit (Sg.) — EN: probationary period · FR: la période d'essaiDie Probezeit beträgt sechs Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'essaiDie",
+   "context": "die Probezeit (Sg.) — EN: probationary period · FR: la période d'essaiDie Probezeit beträgt sechs Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Quereinsteiger",
+   "context": "der Quereinsteiger, - — EN: career changer · FR: le/la reconverti(e)Auch Quereinsteiger sind willkommen.",
+   "en": "career changer",
+   "lemma": "der Quereinsteiger"
+  },
+  {
+   "form": "reconverti",
+   "context": "der Quereinsteiger, - — EN: career changer · FR: le/la reconverti(e)Auch Quereinsteiger sind willkommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "willkommen",
+   "context": "der Quereinsteiger, - — EN: career changer · FR: le/la reconverti(e)Auch Quereinsteiger sind willkommen.",
+   "en": "welcome",
+   "lemma": ""
+  },
+  {
+   "form": "Vergütung",
+   "context": "die Vergütung (Sg.) — EN: remuneration · FR: la rémunérationÜber die Vergütung sprechen wir im Gespräch.",
+   "en": "pay, remuneration",
+   "lemma": "die Vergütung"
+  },
+  {
+   "form": "remuneration",
+   "context": "die Vergütung (Sg.) — EN: remuneration · FR: la rémunérationÜber die Vergütung sprechen wir im Gespräch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rémunérationÜber",
+   "context": "die Vergütung (Sg.) — EN: remuneration · FR: la rémunérationÜber die Vergütung sprechen wir im Gespräch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nächstmöglichen",
+   "context": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "earliest possible, next possible",
+   "lemma": "nächstmöglich"
+  },
+  {
+   "form": "earliest",
+   "context": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "possible",
+   "context": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "date",
+   "context": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dès",
+   "context": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "possibleDie",
+   "context": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "besetzen",
+   "context": "zum nächstmöglichen Zeitpunkt — EN: at the earliest possible date · FR: dès que possibleDie Stelle ist zum nächstmöglichen Zeitpunkt zu besetzen.",
+   "en": "to fill (a position); to occupy",
+   "lemma": ""
+  },
+  {
+   "form": "Ausschreibung",
+   "context": "Ihre Ausschreibung hat mich sofort angesprochen, weil …",
+   "en": "job posting, advertisement",
+   "lemma": "die Ausschreibung"
+  },
+  {
+   "form": "angesprochen",
+   "context": "Ihre Ausschreibung hat mich sofort angesprochen, weil …",
+   "en": "appealed to; addressed",
+   "lemma": "ansprechen"
+  },
+  {
+   "form": "Eignung",
+   "context": "Eignung begründen",
+   "en": "suitability",
+   "lemma": "die Eignung"
+  },
+  {
+   "form": "verantwortet",
+   "context": "Während meiner Tätigkeit bei … habe ich … verantwortet.",
+   "en": "been responsible for",
+   "lemma": "verantworten"
+  },
+  {
+   "form": "reizt",
+   "context": "Besonders reizt mich an der Position, dass …",
+   "en": "attracts, appeals to",
+   "lemma": "reizen"
+  },
+  {
+   "form": "abschließen",
+   "context": "Bewerbung abschließen",
+   "en": "to finish, conclude",
+   "lemma": ""
+  },
+  {
+   "form": "jederzeit",
+   "context": "Für Rückfragen stehe ich Ihnen jederzeit zur Verfügung.",
+   "en": "at any time",
+   "lemma": ""
+  },
+  {
+   "form": "Einschlägige",
+   "context": "Einschlägige Berufserfahrung ist erwünscht.",
+   "en": "relevant",
+   "lemma": "einschlägig"
+  },
+  {
+   "form": "fordern",
+   "context": "die Kenntnisse, die Sie fordern → die von Ihnen ___ Kenntnisse (Partizip II)",
+   "en": "require, demand",
+   "lemma": ""
+  },
+  {
+   "form": "gewählte",
+   "context": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "chosen",
+   "lemma": "wählen"
+  },
+  {
+   "form": "Stellenbezeichnung",
+   "context": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "job title",
+   "lemma": "die Stellenbezeichnung"
+  },
+  {
+   "form": "Fundstelle",
+   "context": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "place where something was found",
+   "lemma": "die Fundstelle"
+  },
+  {
+   "form": "Verfügbarkeit",
+   "context": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "availability",
+   "lemma": "die Verfügbarkeit"
+  },
+  {
+   "form": "erweitertes",
+   "context": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "extended",
+   "lemma": "erweitert"
+  },
+  {
+   "form": "Lebenslaufs",
+   "context": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "CV, résumé",
+   "lemma": "der Lebenslauf"
+  },
+  {
+   "form": "Punkte",
+   "context": "Schreiben Sie ein vollständiges Bewerbungsschreiben auf eine selbst gewählte Stellenanzeige. Umfang: 200–250 Wörter Checkliste: • Betreffzeile mit Stellenbezeichnung und Fundstelle der Anzeige. • Je ein Absatz für Motivation, Qualifikation und Verfügbarkeit. • Mindestens ein erweitertes Partizipialattribut. • Keine Wiederholung des Lebenslaufs — nur die passenden Punkte.",
+   "en": "points",
+   "lemma": "der Punkt"
+  }
+ ]
+}
