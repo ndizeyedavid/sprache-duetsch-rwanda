@@ -1,0 +1,909 @@
+{
+ "level": "B2",
+ "lesson": 12,
+ "title": "Digitale Kommunikation — Der mit Abstand höchste Anteil",
+ "lines": [
+  {
+   "de": "Eine Grafik beschreiben und digitale Medien vergleichen — mit sicherer Steigerung vor dem Nomen.",
+   "en": "Describe a chart and compare digital media — using comparatives and superlatives confidently before nouns."
+  },
+  {
+   "de": "Textsorte: Infografik · Grafikbeschreibung",
+   "en": "Text type: Infographic · Chart description"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 1 (Grafik präsentieren); telc B2 Sprechen 1",
+   "en": "Exam link: Goethe B2 Speaking part 1 (presenting a chart); telc B2 Speaking 1"
+  },
+  {
+   "de": "über digitale Medien und Mediennutzung sprechen",
+   "en": "talk about digital media and media use"
+  },
+  {
+   "de": "eine Grafik strukturiert beschreiben und auswerten",
+   "en": "describe and analyse a chart in a structured way"
+  },
+  {
+   "de": "Komparativ und Superlativ vor dem Nomen korrekt deklinieren",
+   "en": "decline comparatives and superlatives correctly before the noun"
+  },
+  {
+   "de": "Grammatik: Adjektivdeklination: Komparativ und Superlativ",
+   "en": "Grammar: Adjective declension (Adjektivdeklination): comparative and superlative"
+  },
+  {
+   "de": "Vor einem Nomen bekommt der Komparativ oder Superlativ zuerst seine Steigerungsendung und dann zusätzlich die normale Adjektivendung. Beim Superlativ vor dem Nomen steht immer ein Artikel — die Form mit am ist nur möglich, wenn kein Nomen folgt.",
+   "en": "Before a noun, the comparative or superlative first gets its comparison ending and then, in addition, the normal adjective ending. A superlative before a noun always has an article — the form with am is only possible when no noun follows."
+  },
+  {
+   "de": "Superlativ",
+   "en": "Superlative"
+  },
+  {
+   "de": "ohne Nomen",
+   "en": "without a noun"
+  },
+  {
+   "de": "Diese Gruppe nutzt es häufiger.",
+   "en": "This group uses it more often."
+  },
+  {
+   "de": "Diese Gruppe nutzt es am häufigsten.",
+   "en": "This group uses it most often."
+  },
+  {
+   "de": "vor dem Nomen (best. Artikel)",
+   "en": "before the noun (def. article)"
+  },
+  {
+   "de": "die häufigere Nutzung",
+   "en": "the more frequent use"
+  },
+  {
+   "de": "die häufigste Nutzung",
+   "en": "the most frequent use"
+  },
+  {
+   "de": "vor dem Nomen (unbest. Artikel)",
+   "en": "before the noun (indef. article)"
+  },
+  {
+   "de": "eine höhere Zahl",
+   "en": "a higher number"
+  },
+  {
+   "de": "ohne Artikel (Plural)",
+   "en": "without an article (plural)"
+  },
+  {
+   "de": "jüngere Nutzerinnen",
+   "en": "younger (female) users"
+  },
+  {
+   "de": "gut → besser, viel → mehr, hoch → höher",
+   "en": "good → better, much → more, high → higher"
+  },
+  {
+   "de": "am besten / die beste, am meisten / die meisten",
+   "en": "best / the best, most / the most"
+  },
+  {
+   "de": "Den mit Abstand höchsten Anteil haben die unter 30-Jährigen.Akkusativ maskulin: den höchst+en",
+   "en": "The under-30s have by far the highest share. — accusative masculine: den höchst+en"
+  },
+  {
+   "de": "Bei den älteren Befragten ist der Anteil deutlich geringer.Dativ Plural: den älter+en",
+   "en": "Among the older respondents, the share is considerably lower. — dative plural: den älter+en"
+  },
+  {
+   "de": "Die meisten Nutzerinnen greifen mehrmals täglich zum Handy.viel → die meisten",
+   "en": "Most (female) users reach for their mobile phone several times a day. — viel → die meisten"
+  },
+  {
+   "de": "Tipp: mehr und weniger bekommen nie eine Adjektivendung: „mehr Zeit\", „weniger Nutzer\" — nie „mehrere Zeit\" in dieser Bedeutung.",
+   "en": "Tip: mehr and weniger never take an adjective ending: “mehr Zeit”, “weniger Nutzer” — never “mehrere Zeit” in this meaning."
+  },
+  {
+   "de": "die Grafik, -en — EN: chart, graphic · FR: le graphiqueDie Grafik zeigt die Mediennutzung nach Alter.",
+   "en": "Example: The chart shows media use by age."
+  },
+  {
+   "de": "die Umfrage, -n — EN: survey · FR: l'enquêteDie Umfrage wurde 2024 durchgeführt.",
+   "en": "Example: The survey was carried out in 2024."
+  },
+  {
+   "de": "der Anteil, -e — EN: share, proportion · FR: la partDer Anteil der Jüngeren liegt bei 78 Prozent.",
+   "en": "Example: The share of younger people is 78 per cent."
+  },
+  {
+   "de": "betragen (betrug) — EN: to amount to · FR: s'élever àDer Wert beträgt knapp ein Drittel.",
+   "en": "Example: The value amounts to just under a third."
+  },
+  {
+   "de": "zunehmen / abnehmen — EN: to increase / decrease · FR: augmenter / diminuerDie Nutzung hat deutlich zugenommen.",
+   "en": "Example: Use has increased considerably."
+  },
+  {
+   "de": "die Befragten (Pl.) — EN: respondents · FR: les personnes interrogéesZwei Drittel der Befragten stimmten zu.",
+   "en": "Example: Two thirds of the respondents agreed."
+  },
+  {
+   "de": "an erster Stelle stehen — EN: to rank first · FR: occuper la première placeAn erster Stelle stehen Messenger-Dienste.",
+   "en": "Example: Messaging services rank first."
+  },
+  {
+   "de": "im Vergleich zu — EN: compared to · FR: par rapport àIm Vergleich zum Vorjahr ist das ein Plus.",
+   "en": "Example: Compared to the previous year, that is an increase."
+  },
+  {
+   "de": "auffällig — EN: striking, notable · FR: frappantAuffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "Example: The difference between the age groups is striking."
+  },
+  {
+   "de": "die Quelle der Daten — EN: data source · FR: la source des donnéesAls Quelle ist das Statistische Bundesamt angegeben.",
+   "en": "Example: The Federal Statistical Office is given as the source."
+  },
+  {
+   "de": "rund / knapp / gut — EN: roughly / just under / just over · FR: environ / un peu moins de / un peu plus deRund 40 Prozent, knapp ein Viertel, gut die Hälfte.",
+   "en": "Example: Roughly 40 per cent, just under a quarter, just over half."
+  },
+  {
+   "de": "die Reichweite (Sg.) — EN: reach · FR: la portéeDie Reichweite klassischer Medien sinkt.",
+   "en": "Example: The reach of traditional media is falling."
+  },
+  {
+   "de": "die Bildschirmzeit (Sg.) — EN: screen time · FR: le temps d'écranDie durchschnittliche Bildschirmzeit steigt weiter.",
+   "en": "Example: Average screen time continues to rise."
+  },
+  {
+   "de": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht eindeutig zum Video.",
+   "en": "Example: The trend is clearly towards video."
+  },
+  {
+   "de": "eine Grafik einleiten",
+   "en": "Introducing a chart"
+  },
+  {
+   "de": "Die vorliegende Grafik mit dem Titel „…\" zeigt …",
+   "en": "The chart here, entitled “…”, shows …"
+  },
+  {
+   "de": "Die Daten stammen aus … und beziehen sich auf das Jahr …",
+   "en": "The data come from … and refer to the year …"
+  },
+  {
+   "de": "Angegeben sind die Werte in Prozent.",
+   "en": "The values are given in per cent."
+  },
+  {
+   "de": "Werte beschreiben",
+   "en": "Describing values"
+  },
+  {
+   "de": "Den höchsten Wert erreicht … mit … Prozent.",
+   "en": "… reaches the highest value, with … per cent."
+  },
+  {
+   "de": "An zweiter Stelle folgt … mit deutlichem Abstand.",
+   "en": "… follows in second place, by a clear margin."
+  },
+  {
+   "de": "Am geringsten fällt der Anteil bei … aus.",
+   "en": "The share is lowest among …"
+  },
+  {
+   "de": "auswerten und deuten",
+   "en": "Analysing and interpreting"
+  },
+  {
+   "de": "Besonders auffällig ist, dass …",
+   "en": "It is particularly striking that …"
+  },
+  {
+   "de": "Daraus lässt sich schließen, dass …",
+   "en": "From this, one can conclude that …"
+  },
+  {
+   "de": "Eine mögliche Erklärung wäre …",
+   "en": "One possible explanation would be …"
+  },
+  {
+   "de": "Die Grafik zeigt die Mediennutzung nach Alter.",
+   "en": "The chart shows media use by age."
+  },
+  {
+   "de": "Die Umfrage wurde 2024 durchgeführt.",
+   "en": "The survey was carried out in 2024."
+  },
+  {
+   "de": "Der Anteil der Jüngeren liegt bei 78 Prozent.",
+   "en": "The share of younger people is 78 per cent."
+  },
+  {
+   "de": "Der Wert beträgt knapp ein Drittel.",
+   "en": "The value amounts to just under a third."
+  },
+  {
+   "de": "Die Nutzung hat deutlich zugenommen.",
+   "en": "Use has increased considerably."
+  },
+  {
+   "de": "Zwei Drittel der Befragten stimmten zu.",
+   "en": "Two thirds of the respondents agreed."
+  },
+  {
+   "de": "An erster Stelle stehen Messenger-Dienste.",
+   "en": "Messaging services rank first."
+  },
+  {
+   "de": "Im Vergleich zum Vorjahr ist das ein Plus.",
+   "en": "Compared to the previous year, that is an increase."
+  },
+  {
+   "de": "Auffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "The difference between the age groups is striking."
+  },
+  {
+   "de": "Als Quelle ist das Statistische Bundesamt angegeben.",
+   "en": "The Federal Statistical Office is given as the source."
+  },
+  {
+   "de": "Rund 40 Prozent, knapp ein Viertel, gut die Hälfte.",
+   "en": "Roughly 40 per cent, just under a quarter, just over half."
+  },
+  {
+   "de": "Die Reichweite klassischer Medien sinkt.",
+   "en": "The reach of traditional media is falling."
+  },
+  {
+   "de": "Die durchschnittliche Bildschirmzeit steigt weiter.",
+   "en": "Average screen time continues to rise."
+  },
+  {
+   "de": "Der Trend geht eindeutig zum Video.",
+   "en": "The trend is clearly towards video."
+  },
+  {
+   "de": "Den mit Abstand ___ Anteil haben die Jüngeren. (hoch, Superlativ, Akkusativ maskulin)",
+   "en": "The young people have by far the ___ share. (hoch, superlative, accusative masculine)"
+  },
+  {
+   "de": "Welche Form ist vor einem Nomen richtig?",
+   "en": "Which form is correct before a noun?"
+  },
+  {
+   "de": "Bei den ___ Befragten ist der Wert niedriger. (alt, Komparativ, Dativ Plural)",
+   "en": "Among the ___ respondents, the value is lower. (alt, comparative, dative plural)"
+  },
+  {
+   "de": "___ Nutzerinnen greifen täglich zum Handy.",
+   "en": "___ (female) users reach for their mobile phone every day."
+  },
+  {
+   "de": "Jugendliche verbringen ___ Zeit online als Ältere. (viel, Komparativ, ohne Endung)",
+   "en": "Young people spend ___ time online than older people. (viel, comparative, no ending)"
+  },
+  {
+   "de": "Was gehört in die Einleitung einer Grafikbeschreibung?",
+   "en": "What belongs in the introduction of a chart description?"
+  },
+  {
+   "de": "Beschreiben und interpretieren Sie eine Grafik zur Mediennutzung in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Einleitung mit Titel, Quelle, Zeitraum und Einheit. • Beschreiben Sie zuerst die auffälligsten Werte, dann die Details. • Verwenden Sie mindestens drei Komparativ- oder Superlativformen vor einem Nomen. • Trennen Sie Beschreibung und Deutung klar voneinander.",
+   "en": "Describe and interpret a chart on media use in your country. Length: 180–220 words Checklist: • Introduction with title, source, period and unit. • First describe the most striking values, then the details. • Use at least three comparative or superlative forms before a noun. • Keep description and interpretation clearly separate."
+  },
+  {
+   "de": "hoch → höchst- + Endung -en nach dem bestimmten Artikel im Akkusativ maskulin.",
+   "en": "hoch → höchst- + ending -en after the definite article in the accusative masculine."
+  },
+  {
+   "de": "Vor dem Nomen steht der Superlativ mit Artikel, die Form mit am nur ohne Nomen.",
+   "en": "Before a noun, the superlative has an article; the form with am is used only without a noun."
+  },
+  {
+   "de": "alt → älter + Endung -en im Dativ Plural.",
+   "en": "alt → älter + ending -en in the dative plural."
+  },
+  {
+   "de": "viel → mehr → die meisten (unregelmäßige Steigerung).",
+   "en": "viel → mehr → die meisten (irregular comparison)."
+  },
+  {
+   "de": "mehr bekommt nie eine Adjektivendung.",
+   "en": "mehr never takes an adjective ending."
+  },
+  {
+   "de": "Deutung und Meinung folgen erst nach der Beschreibung.",
+   "en": "Interpretation and opinion only come after the description."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Grafik",
+   "context": "Eine Grafik beschreiben und digitale Medien vergleichen — mit sicherer Steigerung vor dem Nomen.",
+   "en": "chart, graphic",
+   "lemma": "die Grafik"
+  },
+  {
+   "form": "Steigerung",
+   "context": "Eine Grafik beschreiben und digitale Medien vergleichen — mit sicherer Steigerung vor dem Nomen.",
+   "en": "comparison (of adjectives); increase",
+   "lemma": "die Steigerung"
+  },
+  {
+   "form": "Infografik",
+   "context": "Textsorte: Infografik · Grafikbeschreibung",
+   "en": "infographic",
+   "lemma": "die Infografik"
+  },
+  {
+   "form": "Grafikbeschreibung",
+   "context": "Textsorte: Infografik · Grafikbeschreibung",
+   "en": "chart description",
+   "lemma": "die Grafikbeschreibung"
+  },
+  {
+   "form": "präsentieren",
+   "context": "Prüfungsbezug: Goethe B2 Sprechen Teil 1 (Grafik präsentieren); telc B2 Sprechen 1",
+   "en": "to present",
+   "lemma": ""
+  },
+  {
+   "form": "Mediennutzung",
+   "context": "über digitale Medien und Mediennutzung sprechen",
+   "en": "media use",
+   "lemma": "die Mediennutzung"
+  },
+  {
+   "form": "Adjektivdeklination",
+   "context": "Grammatik: Adjektivdeklination: Komparativ und Superlativ",
+   "en": "adjective declension",
+   "lemma": "die Adjektivdeklination"
+  },
+  {
+   "form": "Steigerungsendung",
+   "context": "Vor einem Nomen bekommt der Komparativ oder Superlativ zuerst seine Steigerungsendung und dann zusätzlich die normale Adjektivendung. Beim Superlativ vor dem Nomen steht immer ein Artikel — die Form mit am ist nur möglich, wenn kein Nomen folgt.",
+   "en": "comparison ending",
+   "lemma": "die Steigerungsendung"
+  },
+  {
+   "form": "nutzt",
+   "context": "Diese Gruppe nutzt es häufiger.",
+   "en": "uses",
+   "lemma": "nutzen"
+  },
+  {
+   "form": "häufigsten",
+   "context": "Diese Gruppe nutzt es am häufigsten.",
+   "en": "most often",
+   "lemma": "häufig"
+  },
+  {
+   "form": "best",
+   "context": "vor dem Nomen (best. Artikel)",
+   "en": "definite (abbr.)",
+   "lemma": "bestimmt"
+  },
+  {
+   "form": "häufigere",
+   "context": "die häufigere Nutzung",
+   "en": "more frequent",
+   "lemma": "häufig"
+  },
+  {
+   "form": "Nutzung",
+   "context": "die häufigere Nutzung",
+   "en": "use, usage",
+   "lemma": "die Nutzung"
+  },
+  {
+   "form": "häufigste",
+   "context": "die häufigste Nutzung",
+   "en": "most frequent",
+   "lemma": "häufig"
+  },
+  {
+   "form": "unbest",
+   "context": "vor dem Nomen (unbest. Artikel)",
+   "en": "indefinite (abbr.)",
+   "lemma": "unbestimmt"
+  },
+  {
+   "form": "jüngere",
+   "context": "jüngere Nutzerinnen",
+   "en": "younger",
+   "lemma": "jung"
+  },
+  {
+   "form": "Nutzerinnen",
+   "context": "jüngere Nutzerinnen",
+   "en": "(female) users",
+   "lemma": "die Nutzerin"
+  },
+  {
+   "form": "Abstand",
+   "context": "Den mit Abstand höchsten Anteil haben die unter 30-Jährigen.Akkusativ maskulin: den höchst+en",
+   "en": "margin, distance",
+   "lemma": "der Abstand"
+  },
+  {
+   "form": "Anteil",
+   "context": "Den mit Abstand höchsten Anteil haben die unter 30-Jährigen.Akkusativ maskulin: den höchst+en",
+   "en": "share, proportion",
+   "lemma": "der Anteil"
+  },
+  {
+   "form": "Jährigen",
+   "context": "Den mit Abstand höchsten Anteil haben die unter 30-Jährigen.Akkusativ maskulin: den höchst+en",
+   "en": "-year-olds",
+   "lemma": "der/die Jährige"
+  },
+  {
+   "form": "höchst",
+   "context": "Den mit Abstand höchsten Anteil haben die unter 30-Jährigen.Akkusativ maskulin: den höchst+en",
+   "en": "highest (stem)",
+   "lemma": "hoch"
+  },
+  {
+   "form": "älteren",
+   "context": "Bei den älteren Befragten ist der Anteil deutlich geringer.Dativ Plural: den älter+en",
+   "en": "older",
+   "lemma": "alt"
+  },
+  {
+   "form": "Befragten",
+   "context": "Bei den älteren Befragten ist der Anteil deutlich geringer.Dativ Plural: den älter+en",
+   "en": "respondents",
+   "lemma": "der/die Befragte"
+  },
+  {
+   "form": "geringer",
+   "context": "Bei den älteren Befragten ist der Anteil deutlich geringer.Dativ Plural: den älter+en",
+   "en": "lower, smaller",
+   "lemma": "gering"
+  },
+  {
+   "form": "greifen",
+   "context": "Die meisten Nutzerinnen greifen mehrmals täglich zum Handy.viel → die meisten",
+   "en": "reach (for), grab",
+   "lemma": ""
+  },
+  {
+   "form": "Nutzer",
+   "context": "Tipp: mehr und weniger bekommen nie eine Adjektivendung: „mehr Zeit\", „weniger Nutzer\" — nie „mehrere Zeit\" in dieser Bedeutung.",
+   "en": "users",
+   "lemma": "der Nutzer"
+  },
+  {
+   "form": "chart",
+   "context": "die Grafik, -en — EN: chart, graphic · FR: le graphiqueDie Grafik zeigt die Mediennutzung nach Alter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "graphic",
+   "context": "die Grafik, -en — EN: chart, graphic · FR: le graphiqueDie Grafik zeigt die Mediennutzung nach Alter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "graphiqueDie",
+   "context": "die Grafik, -en — EN: chart, graphic · FR: le graphiqueDie Grafik zeigt die Mediennutzung nach Alter.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Alter",
+   "context": "die Grafik, -en — EN: chart, graphic · FR: le graphiqueDie Grafik zeigt die Mediennutzung nach Alter.",
+   "en": "age",
+   "lemma": "das Alter"
+  },
+  {
+   "form": "Umfrage",
+   "context": "die Umfrage, -n — EN: survey · FR: l'enquêteDie Umfrage wurde 2024 durchgeführt.",
+   "en": "survey",
+   "lemma": "die Umfrage"
+  },
+  {
+   "form": "survey",
+   "context": "die Umfrage, -n — EN: survey · FR: l'enquêteDie Umfrage wurde 2024 durchgeführt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'enquêteDie",
+   "context": "die Umfrage, -n — EN: survey · FR: l'enquêteDie Umfrage wurde 2024 durchgeführt.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "durchgeführt",
+   "context": "die Umfrage, -n — EN: survey · FR: l'enquêteDie Umfrage wurde 2024 durchgeführt.",
+   "en": "carried out",
+   "lemma": "durchführen"
+  },
+  {
+   "form": "share",
+   "context": "der Anteil, -e — EN: share, proportion · FR: la partDer Anteil der Jüngeren liegt bei 78 Prozent.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "proportion",
+   "context": "der Anteil, -e — EN: share, proportion · FR: la partDer Anteil der Jüngeren liegt bei 78 Prozent.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "partDer",
+   "context": "der Anteil, -e — EN: share, proportion · FR: la partDer Anteil der Jüngeren liegt bei 78 Prozent.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Jüngeren",
+   "context": "der Anteil, -e — EN: share, proportion · FR: la partDer Anteil der Jüngeren liegt bei 78 Prozent.",
+   "en": "younger people",
+   "lemma": "der/die Jüngere"
+  },
+  {
+   "form": "betragen",
+   "context": "betragen (betrug) — EN: to amount to · FR: s'élever àDer Wert beträgt knapp ein Drittel.",
+   "en": "to amount to",
+   "lemma": ""
+  },
+  {
+   "form": "betrug",
+   "context": "betragen (betrug) — EN: to amount to · FR: s'élever àDer Wert beträgt knapp ein Drittel.",
+   "en": "amounted to",
+   "lemma": "betragen"
+  },
+  {
+   "form": "amount",
+   "context": "betragen (betrug) — EN: to amount to · FR: s'élever àDer Wert beträgt knapp ein Drittel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'élever",
+   "context": "betragen (betrug) — EN: to amount to · FR: s'élever àDer Wert beträgt knapp ein Drittel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Drittel",
+   "context": "betragen (betrug) — EN: to amount to · FR: s'élever àDer Wert beträgt knapp ein Drittel.",
+   "en": "third",
+   "lemma": "das Drittel"
+  },
+  {
+   "form": "augmenter",
+   "context": "zunehmen / abnehmen — EN: to increase / decrease · FR: augmenter / diminuerDie Nutzung hat deutlich zugenommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "respondents",
+   "context": "die Befragten (Pl.) — EN: respondents · FR: les personnes interrogéesZwei Drittel der Befragten stimmten zu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "personnes",
+   "context": "die Befragten (Pl.) — EN: respondents · FR: les personnes interrogéesZwei Drittel der Befragten stimmten zu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "interrogéesZwei",
+   "context": "die Befragten (Pl.) — EN: respondents · FR: les personnes interrogéesZwei Drittel der Befragten stimmten zu.",
+   "en": "two",
+   "lemma": ""
+  },
+  {
+   "form": "stimmten",
+   "context": "die Befragten (Pl.) — EN: respondents · FR: les personnes interrogéesZwei Drittel der Befragten stimmten zu.",
+   "en": "agreed",
+   "lemma": "zustimmen"
+  },
+  {
+   "form": "rank",
+   "context": "an erster Stelle stehen — EN: to rank first · FR: occuper la première placeAn erster Stelle stehen Messenger-Dienste.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "occuper",
+   "context": "an erster Stelle stehen — EN: to rank first · FR: occuper la première placeAn erster Stelle stehen Messenger-Dienste.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "placeAn",
+   "context": "an erster Stelle stehen — EN: to rank first · FR: occuper la première placeAn erster Stelle stehen Messenger-Dienste.",
+   "en": "in, at",
+   "lemma": ""
+  },
+  {
+   "form": "Messenger-Dienste",
+   "context": "an erster Stelle stehen — EN: to rank first · FR: occuper la première placeAn erster Stelle stehen Messenger-Dienste.",
+   "en": "messaging services",
+   "lemma": "der Messenger-Dienst"
+  },
+  {
+   "form": "compared",
+   "context": "im Vergleich zu — EN: compared to · FR: par rapport àIm Vergleich zum Vorjahr ist das ein Plus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rapport",
+   "context": "im Vergleich zu — EN: compared to · FR: par rapport àIm Vergleich zum Vorjahr ist das ein Plus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àIm",
+   "context": "im Vergleich zu — EN: compared to · FR: par rapport àIm Vergleich zum Vorjahr ist das ein Plus.",
+   "en": "in the",
+   "lemma": ""
+  },
+  {
+   "form": "Vorjahr",
+   "context": "im Vergleich zu — EN: compared to · FR: par rapport àIm Vergleich zum Vorjahr ist das ein Plus.",
+   "en": "previous year",
+   "lemma": "das Vorjahr"
+  },
+  {
+   "form": "auffällig",
+   "context": "auffällig — EN: striking, notable · FR: frappantAuffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "striking, noticeable",
+   "lemma": ""
+  },
+  {
+   "form": "striking",
+   "context": "auffällig — EN: striking, notable · FR: frappantAuffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "notable",
+   "context": "auffällig — EN: striking, notable · FR: frappantAuffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "frappantAuffällig",
+   "context": "auffällig — EN: striking, notable · FR: frappantAuffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "striking",
+   "lemma": "auffällig"
+  },
+  {
+   "form": "Altersgruppen",
+   "context": "auffällig — EN: striking, notable · FR: frappantAuffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "age groups",
+   "lemma": "die Altersgruppe"
+  },
+  {
+   "form": "data",
+   "context": "die Quelle der Daten — EN: data source · FR: la source des donnéesAls Quelle ist das Statistische Bundesamt angegeben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "donnéesAls",
+   "context": "die Quelle der Daten — EN: data source · FR: la source des donnéesAls Quelle ist das Statistische Bundesamt angegeben.",
+   "en": "as",
+   "lemma": ""
+  },
+  {
+   "form": "Statistische",
+   "context": "die Quelle der Daten — EN: data source · FR: la source des donnéesAls Quelle ist das Statistische Bundesamt angegeben.",
+   "en": "statistical",
+   "lemma": "statistisch"
+  },
+  {
+   "form": "Bundesamt",
+   "context": "die Quelle der Daten — EN: data source · FR: la source des donnéesAls Quelle ist das Statistische Bundesamt angegeben.",
+   "en": "federal office",
+   "lemma": "das Bundesamt"
+  },
+  {
+   "form": "angegeben",
+   "context": "die Quelle der Daten — EN: data source · FR: la source des donnéesAls Quelle ist das Statistische Bundesamt angegeben.",
+   "en": "given, stated",
+   "lemma": "angeben"
+  },
+  {
+   "form": "roughly",
+   "context": "rund / knapp / gut — EN: roughly / just under / just over · FR: environ / un peu moins de / un peu plus deRund 40 Prozent, knapp ein Viertel, gut die Hälfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "just",
+   "context": "rund / knapp / gut — EN: roughly / just under / just over · FR: environ / un peu moins de / un peu plus deRund 40 Prozent, knapp ein Viertel, gut die Hälfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "environ",
+   "context": "rund / knapp / gut — EN: roughly / just under / just over · FR: environ / un peu moins de / un peu plus deRund 40 Prozent, knapp ein Viertel, gut die Hälfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deRund",
+   "context": "rund / knapp / gut — EN: roughly / just under / just over · FR: environ / un peu moins de / un peu plus deRund 40 Prozent, knapp ein Viertel, gut die Hälfte.",
+   "en": "roughly, around",
+   "lemma": "rund"
+  },
+  {
+   "form": "Hälfte",
+   "context": "rund / knapp / gut — EN: roughly / just under / just over · FR: environ / un peu moins de / un peu plus deRund 40 Prozent, knapp ein Viertel, gut die Hälfte.",
+   "en": "half",
+   "lemma": "die Hälfte"
+  },
+  {
+   "form": "Reichweite",
+   "context": "die Reichweite (Sg.) — EN: reach · FR: la portéeDie Reichweite klassischer Medien sinkt.",
+   "en": "reach",
+   "lemma": "die Reichweite"
+  },
+  {
+   "form": "reach",
+   "context": "die Reichweite (Sg.) — EN: reach · FR: la portéeDie Reichweite klassischer Medien sinkt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "portéeDie",
+   "context": "die Reichweite (Sg.) — EN: reach · FR: la portéeDie Reichweite klassischer Medien sinkt.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "klassischer",
+   "context": "die Reichweite (Sg.) — EN: reach · FR: la portéeDie Reichweite klassischer Medien sinkt.",
+   "en": "traditional, classic",
+   "lemma": "klassisch"
+  },
+  {
+   "form": "sinkt",
+   "context": "die Reichweite (Sg.) — EN: reach · FR: la portéeDie Reichweite klassischer Medien sinkt.",
+   "en": "is falling, sinks",
+   "lemma": "sinken"
+  },
+  {
+   "form": "Bildschirmzeit",
+   "context": "die Bildschirmzeit (Sg.) — EN: screen time · FR: le temps d'écranDie durchschnittliche Bildschirmzeit steigt weiter.",
+   "en": "screen time",
+   "lemma": "die Bildschirmzeit"
+  },
+  {
+   "form": "temps",
+   "context": "die Bildschirmzeit (Sg.) — EN: screen time · FR: le temps d'écranDie durchschnittliche Bildschirmzeit steigt weiter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'écranDie",
+   "context": "die Bildschirmzeit (Sg.) — EN: screen time · FR: le temps d'écranDie durchschnittliche Bildschirmzeit steigt weiter.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "durchschnittliche",
+   "context": "die Bildschirmzeit (Sg.) — EN: screen time · FR: le temps d'écranDie durchschnittliche Bildschirmzeit steigt weiter.",
+   "en": "average",
+   "lemma": "durchschnittlich"
+  },
+  {
+   "form": "eindeutig",
+   "context": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht eindeutig zum Video.",
+   "en": "clearly",
+   "lemma": ""
+  },
+  {
+   "form": "Video",
+   "context": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht eindeutig zum Video.",
+   "en": "video",
+   "lemma": "das Video"
+  },
+  {
+   "form": "vorliegende",
+   "context": "Die vorliegende Grafik mit dem Titel „…\" zeigt …",
+   "en": "present, this",
+   "lemma": "vorliegend"
+  },
+  {
+   "form": "stammen",
+   "context": "Die Daten stammen aus … und beziehen sich auf das Jahr …",
+   "en": "come (from)",
+   "lemma": ""
+  },
+  {
+   "form": "Angegeben",
+   "context": "Angegeben sind die Werte in Prozent.",
+   "en": "given, stated",
+   "lemma": "angeben"
+  },
+  {
+   "form": "Werte",
+   "context": "Angegeben sind die Werte in Prozent.",
+   "en": "values, figures",
+   "lemma": "der Wert"
+  },
+  {
+   "form": "deutlichem",
+   "context": "An zweiter Stelle folgt … mit deutlichem Abstand.",
+   "en": "clear, considerable",
+   "lemma": "deutlich"
+  },
+  {
+   "form": "geringsten",
+   "context": "Am geringsten fällt der Anteil bei … aus.",
+   "en": "lowest, smallest",
+   "lemma": "gering"
+  },
+  {
+   "form": "Erklärung",
+   "context": "Eine mögliche Erklärung wäre …",
+   "en": "explanation",
+   "lemma": "die Erklärung"
+  },
+  {
+   "form": "Auffällig",
+   "context": "Auffällig ist der Unterschied zwischen den Altersgruppen.",
+   "en": "striking",
+   "lemma": "auffällig"
+  },
+  {
+   "form": "Ältere",
+   "context": "Jugendliche verbringen ___ Zeit online als Ältere. (viel, Komparativ, ohne Endung)",
+   "en": "older people",
+   "lemma": "der/die Ältere"
+  },
+  {
+   "form": "Einleitung",
+   "context": "Was gehört in die Einleitung einer Grafikbeschreibung?",
+   "en": "introduction",
+   "lemma": "die Einleitung"
+  },
+  {
+   "form": "interpretieren",
+   "context": "Beschreiben und interpretieren Sie eine Grafik zur Mediennutzung in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Einleitung mit Titel, Quelle, Zeitraum und Einheit. • Beschreiben Sie zuerst die auffälligsten Werte, dann die Details. • Verwenden Sie mindestens drei Komparativ- oder Superlativformen vor einem Nomen. • Trennen Sie Beschreibung und Deutung klar voneinander.",
+   "en": "interpret",
+   "lemma": ""
+  },
+  {
+   "form": "auffälligsten",
+   "context": "Beschreiben und interpretieren Sie eine Grafik zur Mediennutzung in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Einleitung mit Titel, Quelle, Zeitraum und Einheit. • Beschreiben Sie zuerst die auffälligsten Werte, dann die Details. • Verwenden Sie mindestens drei Komparativ- oder Superlativformen vor einem Nomen. • Trennen Sie Beschreibung und Deutung klar voneinander.",
+   "en": "most striking",
+   "lemma": "auffällig"
+  },
+  {
+   "form": "Details",
+   "context": "Beschreiben und interpretieren Sie eine Grafik zur Mediennutzung in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Einleitung mit Titel, Quelle, Zeitraum und Einheit. • Beschreiben Sie zuerst die auffälligsten Werte, dann die Details. • Verwenden Sie mindestens drei Komparativ- oder Superlativformen vor einem Nomen. • Trennen Sie Beschreibung und Deutung klar voneinander.",
+   "en": "details",
+   "lemma": "das Detail"
+  },
+  {
+   "form": "Superlativformen",
+   "context": "Beschreiben und interpretieren Sie eine Grafik zur Mediennutzung in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Einleitung mit Titel, Quelle, Zeitraum und Einheit. • Beschreiben Sie zuerst die auffälligsten Werte, dann die Details. • Verwenden Sie mindestens drei Komparativ- oder Superlativformen vor einem Nomen. • Trennen Sie Beschreibung und Deutung klar voneinander.",
+   "en": "superlative forms",
+   "lemma": "die Superlativform"
+  },
+  {
+   "form": "Deutung",
+   "context": "Beschreiben und interpretieren Sie eine Grafik zur Mediennutzung in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Einleitung mit Titel, Quelle, Zeitraum und Einheit. • Beschreiben Sie zuerst die auffälligsten Werte, dann die Details. • Verwenden Sie mindestens drei Komparativ- oder Superlativformen vor einem Nomen. • Trennen Sie Beschreibung und Deutung klar voneinander.",
+   "en": "interpretation",
+   "lemma": "die Deutung"
+  },
+  {
+   "form": "voneinander",
+   "context": "Beschreiben und interpretieren Sie eine Grafik zur Mediennutzung in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Einleitung mit Titel, Quelle, Zeitraum und Einheit. • Beschreiben Sie zuerst die auffälligsten Werte, dann die Details. • Verwenden Sie mindestens drei Komparativ- oder Superlativformen vor einem Nomen. • Trennen Sie Beschreibung und Deutung klar voneinander.",
+   "en": "from each other",
+   "lemma": ""
+  }
+ ]
+}
