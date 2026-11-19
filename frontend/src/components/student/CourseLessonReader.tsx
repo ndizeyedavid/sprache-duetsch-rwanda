@@ -1,6 +1,11 @@
 import type { ReactNode } from 'react';
 import { useMemo,useState } from 'react';
 import { FiArrowLeft,FiArrowRight,FiBookOpen } from 'react-icons/fi';
+import { normalizeText } from '../learn/translate/annotate-html';
+import { EnglishLine } from '../learn/translate/EnglishLine';
+import { EnglishToggle } from '../learn/translate/EnglishToggle';
+import { TranslatedHtml } from '../learn/translate/TranslatedHtml';
+import type { LessonTranslation } from '../learn/types';
 import { RichTextViewer } from '../ui/RichTextViewer';
 import { normalizeBulletLists } from './bullet-lists';
 import { repairNumberTable } from './number-table';
@@ -23,7 +28,10 @@ function sections(html: string) {
   return result.filter(section => !/^Übungen(?:\s|$)/i.test(section.title));
 }
 
-export function CourseLessonReader({ html, children }: { html: string | null; children?: ReactNode }) {
+type Props = { html: string | null; children?: ReactNode; translation?: LessonTranslation | null; level?: string };
+
+/** An HTML lesson read section by section; with a translation, English help and tap-to-translate words. */
+export function CourseLessonReader({ html, children, translation, level = '' }: Props) {
   const readingHtml = useMemo(() => {
     const tables = normalizeTypingTable(normalizeRepeatedTables(repairNumberTable(html || '')));
     const practice = normalizePracticeText(normalizePracticeReading(tables));
@@ -31,8 +39,15 @@ export function CourseLessonReader({ html, children }: { html: string | null; ch
   }, [html]);
   const pages = useMemo(() => sections(readingHtml), [readingHtml]);
   const [active, setActive] = useState(0);
-  if (pages.length < 2) return <><RichTextViewer html={readingHtml} className="course-content border-0! p-0!" />{children}</>;
+  const view = (pageHtml: string) => translation
+    ? <TranslatedHtml html={pageHtml} translation={translation} level={level} className="course-content border-0! p-0!" />
+    : <RichTextViewer html={pageHtml} className="course-content border-0! p-0!" />;
+  const englishBar = translation ? <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+    <EnglishToggle level={level} /><span className="text-xs text-muted">Tap a German word to see its meaning.</span>
+  </div> : null;
+  if (pages.length < 2) return <>{englishBar}{view(readingHtml)}{children}</>;
   const page = pages[active] ?? pages[0];
+  const titleEn = translation?.lines[normalizeText(page.title)];
   function move(index: number) {
     setActive(index);
     document.getElementById('course-reading')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -45,10 +60,14 @@ export function CourseLessonReader({ html, children }: { html: string | null; ch
         <select id="course-section" className="select select-sm min-w-0 flex-1" value={active} onChange={e => move(Number(e.target.value))}>
           {pages.map((p, i) => <option key={i} value={i}>{i + 1}. {p.title}</option>)}
         </select>
+        {englishBar}
       </div>
       <progress className="progress progress-primary h-1 w-full" value={active + 1} max={pages.length} aria-label="Reading position" />
-      <h2 className="text-xl font-bold">{page.title}</h2>
-      <RichTextViewer html={page.html} className="course-content border-0! p-0!" />
+      <div>
+        <h2 className="text-xl font-bold">{page.title}</h2>
+        {titleEn ? <EnglishLine en={titleEn} level={level} /> : null}
+      </div>
+      {view(page.html)}
       <div className="flex items-center justify-between gap-3 border-t border-line pt-4">
         <button className="btn btn-sm btn-ghost" disabled={active === 0} onClick={() => move(active - 1)}><FiArrowLeft aria-hidden />Back</button>
         {active < pages.length - 1 ? <button className="btn btn-sm btn-primary" onClick={() => move(active + 1)}>Next section<FiArrowRight aria-hidden /></button>
