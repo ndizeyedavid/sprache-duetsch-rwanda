@@ -1,16 +1,19 @@
 import type {
+AdmitRequest,
+AdmitResult,
 ApplicationDetail,
 ApplicationFilters,
 ApplicationPayload,
 ApplicationReceipt,
 ApplicationRow,
 ApplicationStatus,
+BulkStatusResult,
 Catalog,
 Paged,
 StudentFromApplication,
 WaitlistGroup,
 } from './admissions-types';
-import { api,apiGet,apiPatch,apiPost } from './api';
+import { api,apiGet,apiPatch,apiPost,downloadFile } from './api';
 
 /** Drop blank filters so the query string only carries real choices. */
 function query(filters: ApplicationFilters): string {
@@ -61,4 +64,19 @@ export function transitionApplication(id: string, status: ApplicationStatus, rea
 
 export function createStudentFromApplication(id: string, body: { enroll?: boolean; classGroupId?: string; windowOverrideReason?: string }): Promise<StudentFromApplication> {
   return apiPost<StudentFromApplication>(`/applications/${id}/student`, body);
+}
+
+/** Enrol in one step: course details, the right student (own account, a confirmed match or a new one) and the enrolment. */
+export function admitApplication(id: string, body: AdmitRequest): Promise<AdmitResult> {
+  return apiPost<AdmitResult>(`/applications/${id}/admit`, body);
+}
+
+/** The same decision for many applications; ones that cannot take it are skipped with a reason. */
+export function bulkApplicationStatus(ids: string[], status: ApplicationStatus, reason?: string): Promise<BulkStatusResult> {
+  return apiPost<BulkStatusResult>('/applications/bulk-status', { ids, status, reason: reason || undefined });
+}
+
+/** Spreadsheet of the queue with the current filters (every page). */
+export function exportApplications(filters: ApplicationFilters): Promise<void> {
+  return downloadFile(`/applications/export${query({ ...filters, page: undefined, pageSize: undefined })}`, `applications-${new Date().toISOString().slice(0, 10)}.csv`);
 }
