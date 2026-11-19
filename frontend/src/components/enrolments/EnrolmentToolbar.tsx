@@ -2,7 +2,7 @@ import { FiX } from 'react-icons/fi';
 import { useIntakeScope } from '../../lib/intake-scope/store';
 import type { ClassGroupItem,IntakeItem,LevelItem } from '../../lib/services';
 import { SearchField } from '../ui/SearchField';
-import { STATUS_FILTERS } from './constants';
+import { ACCESS_FILTERS,ACTIVITY_FILTERS,STATUS_FILTERS } from './constants';
 import type { EnrolmentFilters } from './types';
 import { classOptionLabel } from './utils';
 
@@ -14,6 +14,7 @@ type Props = {
   levels: LevelItem[];
   intakes: IntakeItem[];
   groups: ClassGroupItem[];
+  campuses: { id: string; name: string }[];
 };
 
 const selectClass =
@@ -28,6 +29,7 @@ export function EnrolmentToolbar({
   levels,
   intakes,
   groups,
+  campuses,
 }: Props) {
   // The header intake switcher already scopes the register; a second intake filter would only conflict.
   const scoped = Boolean(useIntakeScope());
@@ -37,7 +39,7 @@ export function EnrolmentToolbar({
         value={filters.query}
         onChange={(query) => onFilter({ query })}
         ariaLabel="Search enrolments"
-        placeholder="Search name, student ID…"
+        placeholder="Search name, ID, email, phone…"
         className="w-full border border-line sm:w-64"
       />
       <select
@@ -66,6 +68,19 @@ export function EnrolmentToolbar({
           </option>
         ))}
       </select>}
+      {campuses.length > 1 ? <select
+        aria-label="Filter by campus"
+        value={filters.campusId}
+        onChange={(event) => onFilter({ campusId: event.currentTarget.value })}
+        className={selectClass}
+      >
+        <option value="">All campuses</option>
+        {campuses.map((campus) => (
+          <option key={campus.id} value={campus.id}>
+            {campus.name}
+          </option>
+        ))}
+      </select> : null}
       <select
         aria-label="Filter by status"
         value={filters.status}
@@ -88,6 +103,30 @@ export function EnrolmentToolbar({
         {groups.map((group) => (
           <option key={group.id} value={group.id}>
             {classOptionLabel(group)}
+          </option>
+        ))}
+      </select>
+      <select
+        aria-label="Filter by course access"
+        value={filters.access}
+        onChange={(event) => onFilter({ access: event.currentTarget.value })}
+        className={selectClass}
+      >
+        {ACCESS_FILTERS.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+      <select
+        aria-label="Filter by learning activity"
+        value={filters.activity}
+        onChange={(event) => onFilter({ activity: event.currentTarget.value })}
+        className={selectClass}
+      >
+        {ACTIVITY_FILTERS.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
           </option>
         ))}
       </select>
