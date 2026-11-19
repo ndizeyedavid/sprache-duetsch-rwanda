@@ -1,0 +1,697 @@
+{
+ "level": "B1",
+ "lesson": 6,
+ "title": "Einladungen — Falls Sie etwas nicht essen, sagen Sie bitte Bescheid",
+ "lines": [
+  {
+   "de": "Gastgeber und Gast sein — Bedingungen nennen und höflich formulieren.",
+   "en": "Being a host and a guest — stating conditions and phrasing things politely."
+  },
+  {
+   "de": "einladen, zusagen und höflich absagen",
+   "en": "invite, accept and politely decline"
+  },
+  {
+   "de": "Bedingungen mit falls und wenn ausdrücken",
+   "en": "express conditions with falls and wenn (if)"
+  },
+  {
+   "de": "Wünsche und Bitten mit Konjunktiv II höflich formulieren",
+   "en": "phrase wishes and requests politely with the subjunctive II (Konjunktiv II)"
+  },
+  {
+   "de": "Grammatik: Konjunktion falls",
+   "en": "Grammar: the conjunction falls (if, in case)"
+  },
+  {
+   "de": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+   "en": "Like wenn, falls introduces a conditional clause (subordinate clause, verb at the end). falls sounds a little more cautious: you don't really expect the condition to happen. In general rules and with repeated events, only wenn fits."
+  },
+  {
+   "de": "falls",
+   "en": "if, in case"
+  },
+  {
+   "de": "Bedingung, eher unwahrscheinlich",
+   "en": "condition, rather unlikely"
+  },
+  {
+   "de": "Falls es regnet, essen wir drinnen.",
+   "en": "Should it rain, we'll eat indoors."
+  },
+  {
+   "de": "Wenn es regnet, essen wir drinnen.",
+   "en": "If it rains, we'll eat indoors."
+  },
+  {
+   "de": "wiederholtes Ereignis",
+   "en": "repeated event"
+  },
+  {
+   "de": "— nicht möglich",
+   "en": "— not possible"
+  },
+  {
+   "de": "Wenn wir uns treffen, kochen wir.",
+   "en": "Whenever we meet, we cook."
+  },
+  {
+   "de": "Zeitpunkt in der Zukunft",
+   "en": "point in time in the future"
+  },
+  {
+   "de": "Wenn ich ankomme, rufe ich dich an.",
+   "en": "When I arrive, I'll call you."
+  },
+  {
+   "de": "Falls Sie eine Allergie haben, sagen Sie mir bitte rechtzeitig Bescheid.Nebensatz vorn → Verb des Hauptsatzes direkt danach",
+   "en": "If you have an allergy, please let me know in good time. (subordinate clause first → the verb of the main clause comes directly after it)"
+  },
+  {
+   "de": "Wir können später gehen, falls du noch arbeiten musst.Nebensatz hinten",
+   "en": "We can go later if you still have to work. (subordinate clause at the end)"
+  },
+  {
+   "de": "Falls es Ihnen nichts ausmacht, würde ich lieber Wasser trinken.falls + höflicher Konjunktiv II",
+   "en": "If you don't mind, I'd rather drink water. (falls + polite subjunctive II)"
+  },
+  {
+   "de": "Tipp: Höfliche Wünsche beim Einladen: Ich hätte gern …, Ich würde lieber …, Wäre es möglich, dass …?, Es wäre schön, wenn …",
+   "en": "Tip: Polite wishes at an invitation: I'd like …, I'd rather …, Would it be possible that …?, It would be nice if …"
+  },
+  {
+   "de": "der Gastgeber, - / die Gastgeberin, -nen — EN: host · FR: l'hôteDie Gastgeberin begrüßte alle an der Tür.",
+   "en": "Example: The host greeted everyone at the door."
+  },
+  {
+   "de": "das Gastgeschenk, -e — EN: host gift · FR: le cadeau d'invitéIn Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "Example: In Germany people often bring flowers as a gift for the host."
+  },
+  {
+   "de": "zusagen / absagen — EN: to accept / to cancel · FR: accepter / annulerLeider muss ich kurzfristig absagen.",
+   "en": "Example: Unfortunately I have to cancel at short notice."
+  },
+  {
+   "de": "die Vorspeise, -n — EN: starter · FR: l'entréeAls Vorspeise gibt es Suppe.",
+   "en": "Example: There is soup as a starter."
+  },
+  {
+   "de": "die Hauptspeise, -n — EN: main course · FR: le plat principalDie Hauptspeise war ausgezeichnet.",
+   "en": "Example: The main course was excellent."
+  },
+  {
+   "de": "der Sonderwunsch, ¨-e — EN: special request · FR: la demande particulièreHaben Sie Sonderwünsche beim Essen?",
+   "en": "Example: Do you have any special requests regarding the food?"
+  },
+  {
+   "de": "anstoßen (stieß an, angestoßen) — EN: to clink glasses, toast · FR: trinquerLasst uns auf das neue Jahr anstoßen!",
+   "en": "Example: Let's drink a toast to the new year!"
+  },
+  {
+   "de": "sich bedanken für — EN: to thank for · FR: remercier pourIch möchte mich herzlich für den Abend bedanken.",
+   "en": "Example: I would like to thank you warmly for the evening."
+  },
+  {
+   "de": "die Tischmanieren (Pl.) — EN: table manners · FR: les manières à tableTischmanieren sind nicht überall gleich.",
+   "en": "Example: Table manners are not the same everywhere."
+  },
+  {
+   "de": "unangenehm — EN: unpleasant, awkward · FR: désagréableMir war die Situation sehr unangenehm.",
+   "en": "Example: The situation was very awkward for me."
+  },
+  {
+   "de": "pünktlich — EN: punctual · FR: ponctuelIn Deutschland erwartet man, dass Gäste pünktlich kommen.",
+   "en": "Example: In Germany guests are expected to arrive on time."
+  },
+  {
+   "de": "der Anlass, ¨-e — EN: occasion · FR: l'occasionZu welchem Anlass ist die Feier?",
+   "en": "Example: What is the occasion for the party?"
+  },
+  {
+   "de": "Ich würde mich freuen, wenn du am Samstag kommen könntest.",
+   "en": "I'd be happy if you could come on Saturday."
+  },
+  {
+   "de": "Hättest du Lust, am Freitag vorbeizukommen?",
+   "en": "Would you like to come round on Friday?"
+  },
+  {
+   "de": "Wir feiern … — magst du dazukommen?",
+   "en": "We're celebrating … — would you like to join us?"
+  },
+  {
+   "de": "höflich absagen",
+   "en": "declining politely"
+  },
+  {
+   "de": "Das ist sehr nett, aber leider …",
+   "en": "That's very kind, but unfortunately …"
+  },
+  {
+   "de": "Ich fürchte, an dem Tag geht es bei mir nicht.",
+   "en": "I'm afraid that day doesn't work for me."
+  },
+  {
+   "de": "Ein anderes Mal gern!",
+   "en": "Another time, I'd love to!"
+  },
+  {
+   "de": "als Gast reagieren",
+   "en": "responding as a guest"
+  },
+  {
+   "de": "Darf ich etwas mitbringen?",
+   "en": "May I bring something?"
+  },
+  {
+   "de": "Es hat wirklich hervorragend geschmeckt.",
+   "en": "It was really delicious."
+  },
+  {
+   "de": "Falls es keine Umstände macht, hätte ich lieber …",
+   "en": "If it's no trouble, I'd prefer …"
+  },
+  {
+   "de": "Die Gastgeberin begrüßte alle an der Tür.",
+   "en": "The host greeted everyone at the door."
+  },
+  {
+   "de": "In Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "In Germany people often bring flowers as a gift for the host."
+  },
+  {
+   "de": "Leider muss ich kurzfristig absagen.",
+   "en": "Unfortunately I have to cancel at short notice."
+  },
+  {
+   "de": "Als Vorspeise gibt es Suppe.",
+   "en": "There is soup as a starter."
+  },
+  {
+   "de": "Die Hauptspeise war ausgezeichnet.",
+   "en": "The main course was excellent."
+  },
+  {
+   "de": "Haben Sie Sonderwünsche beim Essen?",
+   "en": "Do you have any special requests regarding the food?"
+  },
+  {
+   "de": "Lasst uns auf das neue Jahr anstoßen!",
+   "en": "Let's drink a toast to the new year!"
+  },
+  {
+   "de": "Ich möchte mich herzlich für den Abend bedanken.",
+   "en": "I would like to thank you warmly for the evening."
+  },
+  {
+   "de": "Tischmanieren sind nicht überall gleich.",
+   "en": "Table manners are not the same everywhere."
+  },
+  {
+   "de": "Mir war die Situation sehr unangenehm.",
+   "en": "The situation was very awkward for me."
+  },
+  {
+   "de": "In Deutschland erwartet man, dass Gäste pünktlich kommen.",
+   "en": "In Germany guests are expected to arrive on time."
+  },
+  {
+   "de": "Zu welchem Anlass ist die Feier?",
+   "en": "What is the occasion for the party?"
+  },
+  {
+   "de": "___ Sie Vegetarier sind, kochen wir etwas ohne Fleisch.",
+   "en": "___ you are vegetarian, we'll cook something without meat."
+  },
+  {
+   "de": "Welcher Satz ist mit 'falls' NICHT möglich?",
+   "en": "Which sentence is NOT possible with 'falls'?"
+  },
+  {
+   "de": "Höfliche Bitte: ___ es Ihnen etwas ausmachen, das Fenster zu schließen? (würden)",
+   "en": "Polite request: ___ you mind closing the window? (würden)"
+  },
+  {
+   "de": "Die höflichste Formulierung ist:",
+   "en": "The most polite way of saying it is:"
+  },
+  {
+   "de": "Wir essen auf dem Balkon, ___ das Wetter schön bleibt.",
+   "en": "We'll eat on the balcony ___ the weather stays nice."
+  },
+  {
+   "de": "Bedingung → falls (oder wenn).",
+   "en": "Condition → falls (or wenn)."
+  },
+  {
+   "de": "Bei wiederholten Ereignissen steht nur wenn.",
+   "en": "With repeated events, only wenn is used."
+  },
+  {
+   "de": "Konjunktiv II von 'etwas ausmachen': Würde es Ihnen etwas ausmachen …?",
+   "en": "Subjunctive II (Konjunktiv II) of 'etwas ausmachen': Würde es Ihnen etwas ausmachen …? (Would you mind …?)"
+  },
+  {
+   "de": "Konjunktiv II hätte gern ist die übliche höfliche Form.",
+   "en": "The subjunctive II (Konjunktiv II) hätte gern is the usual polite form."
+  },
+  {
+   "de": "Nebensatz mit Bedingung am Satzende.",
+   "en": "Subordinate clause with the condition at the end of the sentence."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Gastgeber",
+   "context": "Gastgeber und Gast sein — Bedingungen nennen und höflich formulieren.",
+   "en": "host",
+   "lemma": "der Gastgeber"
+  },
+  {
+   "form": "Bedingungssatz",
+   "context": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+   "en": "conditional clause",
+   "lemma": "der Bedingungssatz"
+  },
+  {
+   "form": "vorsichtiger",
+   "context": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+   "en": "more cautious",
+   "lemma": "vorsichtig"
+  },
+  {
+   "form": "rechnet",
+   "context": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+   "en": "expects (with mit); calculates",
+   "lemma": "rechnen"
+  },
+  {
+   "form": "allgemeinen",
+   "context": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+   "en": "general",
+   "lemma": "allgemein"
+  },
+  {
+   "form": "wiederholten",
+   "context": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+   "en": "repeated",
+   "lemma": "wiederholt"
+  },
+  {
+   "form": "Ereignissen",
+   "context": "falls leitet wie wenn einen Bedingungssatz ein (Nebensatz, Verb am Ende). falls klingt etwas vorsichtiger: Man rechnet eher nicht damit, dass die Bedingung eintritt. In allgemeinen Regeln und bei wiederholten Ereignissen passt nur wenn.",
+   "en": "events",
+   "lemma": "das Ereignis"
+  },
+  {
+   "form": "unwahrscheinlich",
+   "context": "Bedingung, eher unwahrscheinlich",
+   "en": "unlikely",
+   "lemma": ""
+  },
+  {
+   "form": "drinnen",
+   "context": "Falls es regnet, essen wir drinnen.",
+   "en": "inside, indoors",
+   "lemma": ""
+  },
+  {
+   "form": "wiederholtes",
+   "context": "wiederholtes Ereignis",
+   "en": "repeated",
+   "lemma": "wiederholt"
+  },
+  {
+   "form": "ankomme",
+   "context": "Wenn ich ankomme, rufe ich dich an.",
+   "en": "arrive",
+   "lemma": "ankommen"
+  },
+  {
+   "form": "Allergie",
+   "context": "Falls Sie eine Allergie haben, sagen Sie mir bitte rechtzeitig Bescheid.Nebensatz vorn → Verb des Hauptsatzes direkt danach",
+   "en": "allergy",
+   "lemma": "die Allergie"
+  },
+  {
+   "form": "rechtzeitig",
+   "context": "Falls Sie eine Allergie haben, sagen Sie mir bitte rechtzeitig Bescheid.Nebensatz vorn → Verb des Hauptsatzes direkt danach",
+   "en": "in good time, on time",
+   "lemma": ""
+  },
+  {
+   "form": "Bescheid",
+   "context": "Falls Sie eine Allergie haben, sagen Sie mir bitte rechtzeitig Bescheid.Nebensatz vorn → Verb des Hauptsatzes direkt danach",
+   "en": "word; Bescheid sagen = let know",
+   "lemma": "der Bescheid"
+  },
+  {
+   "form": "Hauptsatzes",
+   "context": "Falls Sie eine Allergie haben, sagen Sie mir bitte rechtzeitig Bescheid.Nebensatz vorn → Verb des Hauptsatzes direkt danach",
+   "en": "main clause",
+   "lemma": "der Hauptsatz"
+  },
+  {
+   "form": "ausmacht",
+   "context": "Falls es Ihnen nichts ausmacht, würde ich lieber Wasser trinken.falls + höflicher Konjunktiv II",
+   "en": "bothers, matters (to); switches off",
+   "lemma": "ausmachen"
+  },
+  {
+   "form": "Gastgeberin",
+   "context": "der Gastgeber, - / die Gastgeberin, -nen — EN: host · FR: l'hôteDie Gastgeberin begrüßte alle an der Tür.",
+   "en": "host (woman)",
+   "lemma": "die Gastgeberin"
+  },
+  {
+   "form": "host",
+   "context": "der Gastgeber, - / die Gastgeberin, -nen — EN: host · FR: l'hôteDie Gastgeberin begrüßte alle an der Tür.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'hôteDie",
+   "context": "der Gastgeber, - / die Gastgeberin, -nen — EN: host · FR: l'hôteDie Gastgeberin begrüßte alle an der Tür.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "begrüßte",
+   "context": "der Gastgeber, - / die Gastgeberin, -nen — EN: host · FR: l'hôteDie Gastgeberin begrüßte alle an der Tür.",
+   "en": "greeted, welcomed",
+   "lemma": "begrüßen"
+  },
+  {
+   "form": "Gastgeschenk",
+   "context": "das Gastgeschenk, -e — EN: host gift · FR: le cadeau d'invitéIn Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "gift for the host",
+   "lemma": "das Gastgeschenk"
+  },
+  {
+   "form": "gift",
+   "context": "das Gastgeschenk, -e — EN: host gift · FR: le cadeau d'invitéIn Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cadeau",
+   "context": "das Gastgeschenk, -e — EN: host gift · FR: le cadeau d'invitéIn Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'invitéIn",
+   "context": "das Gastgeschenk, -e — EN: host gift · FR: le cadeau d'invitéIn Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bringt",
+   "context": "das Gastgeschenk, -e — EN: host gift · FR: le cadeau d'invitéIn Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "brings; brings along (with mit)",
+   "lemma": "bringen"
+  },
+  {
+   "form": "Blumen",
+   "context": "das Gastgeschenk, -e — EN: host gift · FR: le cadeau d'invitéIn Deutschland bringt man oft Blumen als Gastgeschenk mit.",
+   "en": "flowers",
+   "lemma": "die Blume"
+  },
+  {
+   "form": "accept",
+   "context": "zusagen / absagen — EN: to accept / to cancel · FR: accepter / annulerLeider muss ich kurzfristig absagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "accepter",
+   "context": "zusagen / absagen — EN: to accept / to cancel · FR: accepter / annulerLeider muss ich kurzfristig absagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "kurzfristig",
+   "context": "zusagen / absagen — EN: to accept / to cancel · FR: accepter / annulerLeider muss ich kurzfristig absagen.",
+   "en": "at short notice",
+   "lemma": ""
+  },
+  {
+   "form": "l'entréeAls",
+   "context": "die Vorspeise, -n — EN: starter · FR: l'entréeAls Vorspeise gibt es Suppe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Hauptspeise",
+   "context": "die Hauptspeise, -n — EN: main course · FR: le plat principalDie Hauptspeise war ausgezeichnet.",
+   "en": "main course",
+   "lemma": "die Hauptspeise"
+  },
+  {
+   "form": "main",
+   "context": "die Hauptspeise, -n — EN: main course · FR: le plat principalDie Hauptspeise war ausgezeichnet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "plat",
+   "context": "die Hauptspeise, -n — EN: main course · FR: le plat principalDie Hauptspeise war ausgezeichnet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "principalDie",
+   "context": "die Hauptspeise, -n — EN: main course · FR: le plat principalDie Hauptspeise war ausgezeichnet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ausgezeichnet",
+   "context": "die Hauptspeise, -n — EN: main course · FR: le plat principalDie Hauptspeise war ausgezeichnet.",
+   "en": "excellent",
+   "lemma": ""
+  },
+  {
+   "form": "Sonderwunsch",
+   "context": "der Sonderwunsch, ¨-e — EN: special request · FR: la demande particulièreHaben Sie Sonderwünsche beim Essen?",
+   "en": "special request",
+   "lemma": "der Sonderwunsch"
+  },
+  {
+   "form": "special",
+   "context": "der Sonderwunsch, ¨-e — EN: special request · FR: la demande particulièreHaben Sie Sonderwünsche beim Essen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "request",
+   "context": "der Sonderwunsch, ¨-e — EN: special request · FR: la demande particulièreHaben Sie Sonderwünsche beim Essen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "demande",
+   "context": "der Sonderwunsch, ¨-e — EN: special request · FR: la demande particulièreHaben Sie Sonderwünsche beim Essen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "particulièreHaben",
+   "context": "der Sonderwunsch, ¨-e — EN: special request · FR: la demande particulièreHaben Sie Sonderwünsche beim Essen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Sonderwünsche",
+   "context": "der Sonderwunsch, ¨-e — EN: special request · FR: la demande particulièreHaben Sie Sonderwünsche beim Essen?",
+   "en": "special requests",
+   "lemma": "der Sonderwunsch"
+  },
+  {
+   "form": "anstoßen",
+   "context": "anstoßen (stieß an, angestoßen) — EN: to clink glasses, toast · FR: trinquerLasst uns auf das neue Jahr anstoßen!",
+   "en": "to clink glasses, toast",
+   "lemma": ""
+  },
+  {
+   "form": "stieß",
+   "context": "anstoßen (stieß an, angestoßen) — EN: to clink glasses, toast · FR: trinquerLasst uns auf das neue Jahr anstoßen!",
+   "en": "pushed; stieß an = toasted",
+   "lemma": "stoßen"
+  },
+  {
+   "form": "angestoßen",
+   "context": "anstoßen (stieß an, angestoßen) — EN: to clink glasses, toast · FR: trinquerLasst uns auf das neue Jahr anstoßen!",
+   "en": "toasted, clinked glasses",
+   "lemma": "anstoßen"
+  },
+  {
+   "form": "clink",
+   "context": "anstoßen (stieß an, angestoßen) — EN: to clink glasses, toast · FR: trinquerLasst uns auf das neue Jahr anstoßen!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "toast",
+   "context": "anstoßen (stieß an, angestoßen) — EN: to clink glasses, toast · FR: trinquerLasst uns auf das neue Jahr anstoßen!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trinquerLasst",
+   "context": "anstoßen (stieß an, angestoßen) — EN: to clink glasses, toast · FR: trinquerLasst uns auf das neue Jahr anstoßen!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Tischmanieren",
+   "context": "die Tischmanieren (Pl.) — EN: table manners · FR: les manières à tableTischmanieren sind nicht überall gleich.",
+   "en": "table manners",
+   "lemma": "die Tischmanieren"
+  },
+  {
+   "form": "manners",
+   "context": "die Tischmanieren (Pl.) — EN: table manners · FR: les manières à tableTischmanieren sind nicht überall gleich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "manières",
+   "context": "die Tischmanieren (Pl.) — EN: table manners · FR: les manières à tableTischmanieren sind nicht überall gleich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tableTischmanieren",
+   "context": "die Tischmanieren (Pl.) — EN: table manners · FR: les manières à tableTischmanieren sind nicht überall gleich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "unpleasant",
+   "context": "unangenehm — EN: unpleasant, awkward · FR: désagréableMir war die Situation sehr unangenehm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "awkward",
+   "context": "unangenehm — EN: unpleasant, awkward · FR: désagréableMir war die Situation sehr unangenehm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "désagréableMir",
+   "context": "unangenehm — EN: unpleasant, awkward · FR: désagréableMir war die Situation sehr unangenehm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "punctual",
+   "context": "pünktlich — EN: punctual · FR: ponctuelIn Deutschland erwartet man, dass Gäste pünktlich kommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ponctuelIn",
+   "context": "pünktlich — EN: punctual · FR: ponctuelIn Deutschland erwartet man, dass Gäste pünktlich kommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "occasion",
+   "context": "der Anlass, ¨-e — EN: occasion · FR: l'occasionZu welchem Anlass ist die Feier?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'occasionZu",
+   "context": "der Anlass, ¨-e — EN: occasion · FR: l'occasionZu welchem Anlass ist die Feier?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Feier",
+   "context": "der Anlass, ¨-e — EN: occasion · FR: l'occasionZu welchem Anlass ist die Feier?",
+   "en": "party, celebration",
+   "lemma": "die Feier"
+  },
+  {
+   "form": "Hättest",
+   "context": "Hättest du Lust, am Freitag vorbeizukommen?",
+   "en": "would have (with du)",
+   "lemma": "haben"
+  },
+  {
+   "form": "vorbeizukommen",
+   "context": "Hättest du Lust, am Freitag vorbeizukommen?",
+   "en": "to come round, drop by",
+   "lemma": "vorbeikommen"
+  },
+  {
+   "form": "dazukommen",
+   "context": "Wir feiern … — magst du dazukommen?",
+   "en": "to join (us)",
+   "lemma": ""
+  },
+  {
+   "form": "fürchte",
+   "context": "Ich fürchte, an dem Tag geht es bei mir nicht.",
+   "en": "fear, am afraid",
+   "lemma": "fürchten"
+  },
+  {
+   "form": "hervorragend",
+   "context": "Es hat wirklich hervorragend geschmeckt.",
+   "en": "excellently; excellent",
+   "lemma": ""
+  },
+  {
+   "form": "Umstände",
+   "context": "Falls es keine Umstände macht, hätte ich lieber …",
+   "en": "trouble, bother; circumstances",
+   "lemma": "der Umstand"
+  },
+  {
+   "form": "Lasst",
+   "context": "Lasst uns auf das neue Jahr anstoßen!",
+   "en": "let (lasst uns = let's)",
+   "lemma": "lassen"
+  },
+  {
+   "form": "Vegetarier",
+   "context": "___ Sie Vegetarier sind, kochen wir etwas ohne Fleisch.",
+   "en": "vegetarian(s)",
+   "lemma": "der Vegetarier"
+  },
+  {
+   "form": "Fleisch",
+   "context": "___ Sie Vegetarier sind, kochen wir etwas ohne Fleisch.",
+   "en": "meat",
+   "lemma": "das Fleisch"
+  },
+  {
+   "form": "ausmachen",
+   "context": "Höfliche Bitte: ___ es Ihnen etwas ausmachen, das Fenster zu schließen? (würden)",
+   "en": "mind, bother; switch off",
+   "lemma": ""
+  },
+  {
+   "form": "schließen",
+   "context": "Höfliche Bitte: ___ es Ihnen etwas ausmachen, das Fenster zu schließen? (würden)",
+   "en": "close",
+   "lemma": ""
+  },
+  {
+   "form": "höflichste",
+   "context": "Die höflichste Formulierung ist:",
+   "en": "most polite",
+   "lemma": "höflich"
+  },
+  {
+   "form": "Formulierung",
+   "context": "Die höflichste Formulierung ist:",
+   "en": "wording, phrasing",
+   "lemma": "die Formulierung"
+  }
+ ]
+}
