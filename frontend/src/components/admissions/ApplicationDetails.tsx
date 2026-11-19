@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import type { ApplicationDetail } from '../../lib/admissions-types';
 import { ApplicationStatusBadge } from './ApplicationStatusBadge';
+import { ContactLinks } from './ContactLinks';
 import { SHIFT_LABEL,SOURCE_LABEL } from './constants';
 import { courseLabel,dateTime,fullName } from './utils';
 
@@ -25,6 +26,7 @@ export function ApplicationDetails({ app }: { app: ApplicationDetail }) {
         <div>
           <p className="text-lg font-semibold">{fullName(app)}</p>
           <p className="text-xs text-muted">{SOURCE_LABEL[app.source]} · received {dateTime(app.createdAt)}</p>
+          <div className="mt-2"><ContactLinks phone={app.phone} email={app.email} /></div>
         </div>
         <ApplicationStatusBadge status={app.status} />
       </div>
