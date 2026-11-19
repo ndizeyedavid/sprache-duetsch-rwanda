@@ -1,12 +1,13 @@
 import { FiArrowUpRight,FiZap } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { DailyGoal } from './DailyGoal';
 import { DailyWordCard } from './DailyWordCard';
 import { progressNudge } from './progress-stats';
 
-type Props = { weekly: number; streak: number; left: number; total: number; to: string };
+type Props = { weekly: number; streak: number; left: number; total: number; to: string; goal?: { xpToday: number; dailyGoal: number } };
 
 /** Friendly nudge on top, learner photo below growing into whatever height the panel has spare. */
-export function ProgressMotivation({ weekly, streak, left, total, to }: Props) {
+export function ProgressMotivation({ weekly, streak, left, total, to, goal }: Props) {
   const nudge = progressNudge({ weekly, streak, left, total });
   return (
     <div className="flex min-h-72 flex-1 flex-col overflow-hidden rounded-box bg-brand-tint">
@@ -24,6 +25,7 @@ export function ProgressMotivation({ weekly, streak, left, total, to }: Props) {
           Continue learning <FiArrowUpRight aria-hidden />
         </Link>
       ) : null}
+      {goal ? <DailyGoal xpToday={goal.xpToday} dailyGoal={goal.dailyGoal} /> : null}
       <DailyWordCard />
       <div className="relative mt-2 min-h-40 flex-1">
         <img src="/heroes/courses.webp" alt="" aria-hidden width={699} height={640} loading="lazy" decoding="async"
