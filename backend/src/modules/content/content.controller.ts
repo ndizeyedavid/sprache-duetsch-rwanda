@@ -18,6 +18,9 @@ UpdateModuleInput,
 UpdateProgressInput,
 } from "./content.schema.js";
 import * as service from "./content.service.js";
+import { getMyProgress } from "./learning-events.js";
+import { getReviewSession,saveReview } from "./review-session.js";
+import { getMyWordList } from "./get-my-word-list.js";
 const actor = (req: Request) => ({ id: actorId(req), role: req.user?.role });
 // ---------------------------------------------------------------------------
 // Staff CMS
@@ -100,6 +103,21 @@ export const deleteActivity = async (req: Request, res: Response): Promise<void>
 export const myCourses = async (req: Request, res: Response): Promise<void> => {
   const courses = await service.getStudentCourses(req.user?.id ?? "");
   res.json({ success: true, data: courses });
+};
+/** Today's review session (recent mistakes + words from completed lessons) and saving it. */
+export const myReview = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await getReviewSession(req.user?.id ?? "", validatedParams<{ levelId: string }>(req).levelId) });
+};
+export const saveMyReview = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await saveReview(req.user?.id ?? "", validatedParams<{ levelId: string }>(req).levelId, validatedBody<{ results: Record<string, boolean>; seconds?: number }>(req)) });
+};
+/** Every released lesson's vocabulary for a paid level, in course order (word list page). */
+export const myWordList = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await getMyWordList(req.user?.id ?? "", validatedParams<{ levelId: string }>(req).levelId) });
+};
+/** XP today, daily goal, streak and the last 7 days (course v2 practice). */
+export const myProgress = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await getMyProgress(req.user?.id ?? "") });
 };
 export const myLesson = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
