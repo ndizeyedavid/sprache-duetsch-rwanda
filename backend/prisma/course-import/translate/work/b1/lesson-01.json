@@ -1,0 +1,883 @@
+{
+ "level": "B1",
+ "lesson": 1,
+ "title": "Freundschaft — Die Netten, die Klugen, die Verrückten",
+ "lines": [
+  {
+   "de": "Über Menschen sprechen, die uns wichtig sind — und Eigenschaften zu Nomen machen.",
+   "en": "Talking about people who are important to us — and turning qualities into nouns."
+  },
+  {
+   "de": "eine Freundschaft beschreiben und sagen, warum sie wichtig ist",
+   "en": "describe a friendship and say why it is important"
+  },
+  {
+   "de": "Eigenschaften von Menschen als Nomen benutzen (der Nette, die Kluge)",
+   "en": "use people's qualities as nouns (der Nette = the nice man, die Kluge = the clever woman)"
+  },
+  {
+   "de": "maskuline Nomen der n-Deklination korrekt deklinieren",
+   "en": "decline masculine nouns of the n-declension (n-Deklination) correctly"
+  },
+  {
+   "de": "Grammatik: Adjektive als Nomen",
+   "en": "Grammar: adjectives as nouns"
+  },
+  {
+   "de": "Fast jedes Adjektiv kann ein Nomen werden. Es wird großgeschrieben und bekommt trotzdem die normale Adjektivendung — so, als stünde das Nomen noch dahinter: der nette (Mann) → der Nette.",
+   "en": "Almost any adjective can become a noun. It is written with a capital letter and still takes the normal adjective ending — as if the noun were still there after it: der nette (Mann) → der Nette (the nice man → the nice one)."
+  },
+  {
+   "de": "der Nette / ein Netter",
+   "en": "the nice man / a nice man"
+  },
+  {
+   "de": "den Netten / einen Netten",
+   "en": "the nice man / a nice man (accusative)"
+  },
+  {
+   "de": "dem Netten / einem Netten",
+   "en": "(to) the nice man / (to) a nice man"
+  },
+  {
+   "de": "die Nette / eine Nette",
+   "en": "the nice woman / a nice woman"
+  },
+  {
+   "de": "der Netten / einer Netten",
+   "en": "(to) the nice woman / (to) a nice woman"
+  },
+  {
+   "de": "die Netten / – Nette",
+   "en": "the nice people / nice people"
+  },
+  {
+   "de": "den Netten / – Netten",
+   "en": "(to) the nice people / (to) nice people"
+  },
+  {
+   "de": "Der Kluge in unserer Gruppe ist Samuel — er löst jedes Problem.der + Adjektiv + e",
+   "en": "The clever one in our group is Samuel — he solves every problem. (der + adjective + e)"
+  },
+  {
+   "de": "Ich habe gestern einen Bekannten aus meinem Kurs getroffen.einen + Adjektiv + en",
+   "en": "Yesterday I met an acquaintance from my course. (einen + adjective + en)"
+  },
+  {
+   "de": "Mit den Verwandten meiner Frau verstehe ich mich sehr gut.Dativ Plural: -en",
+   "en": "I get on very well with my wife's relatives. (dative plural: -en)"
+  },
+  {
+   "de": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "Tip: Common ones: der/die Deutsche (German person), Bekannte (acquaintance), Verwandte (relative), Erwachsene (adult), Jugendliche (young person), Fremde (stranger), Angestellte (employee), Arbeitslose (unemployed person), Reisende (traveller)."
+  },
+  {
+   "de": "Grammatik: n-Deklination",
+   "en": "Grammar: n-declension (n-Deklination)"
+  },
+  {
+   "de": "Eine kleine Gruppe maskuliner Nomen bekommt in allen Fällen außer dem Nominativ Singular ein -n oder -en.",
+   "en": "A small group of masculine nouns takes an -n or -en in all cases except the nominative singular."
+  },
+  {
+   "de": "der Kollege",
+   "en": "the colleague"
+  },
+  {
+   "de": "die Kollegen",
+   "en": "the colleagues"
+  },
+  {
+   "de": "den Kollegen",
+   "en": "the colleague (accusative); (to) the colleagues (dative plural)"
+  },
+  {
+   "de": "dem Kollegen",
+   "en": "(to) the colleague"
+  },
+  {
+   "de": "Genitiv",
+   "en": "Genitive"
+  },
+  {
+   "de": "des Kollegen",
+   "en": "of the colleague, the colleague's"
+  },
+  {
+   "de": "der Kollegen",
+   "en": "of the colleagues, the colleagues'"
+  },
+  {
+   "de": "Ich habe meinen Nachbarn um Hilfe gebeten.Akkusativ: der Nachbar → den Nachbarn",
+   "en": "I asked my neighbour for help. (accusative: der Nachbar → den Nachbarn)"
+  },
+  {
+   "de": "Der Name des Praktikanten steht auf der Liste.Genitiv: -en",
+   "en": "The intern's name is on the list. (genitive: -en)"
+  },
+  {
+   "de": "Wir sprechen mit dem Studenten über sein Projekt.Dativ: -en",
+   "en": "We are talking to the student about his project. (dative: -en)"
+  },
+  {
+   "de": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "Tip: This group includes masculine nouns ending in -e (Kollege, Junge, Kunde = colleague, boy, customer), in -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe = student, intern, journalist, biologist), and Mensch, Nachbar, Herr, Bauer, Held (person, neighbour, gentleman, farmer, hero)."
+  },
+  {
+   "de": "die Freundschaft, -en — EN: friendship · FR: l'amitiéUnsere Freundschaft hält schon seit der Schulzeit.",
+   "en": "Example: Our friendship has lasted since our school days."
+  },
+  {
+   "de": "sich verlassen auf (+ Akk.) — EN: to rely on · FR: compter surAuf meine beste Freundin kann ich mich immer verlassen.",
+   "en": "Example: I can always rely on my best friend."
+  },
+  {
+   "de": "zuverlässig — EN: reliable · FR: fiableEr ist der zuverlässigste Mensch, den ich kenne.",
+   "en": "Example: He is the most reliable person I know."
+  },
+  {
+   "de": "großzügig — EN: generous · FR: généreuxSie ist sehr großzügig mit ihrer Zeit.",
+   "en": "Example: She is very generous with her time."
+  },
+  {
+   "de": "ehrlich — EN: honest · FR: honnêteSei bitte ehrlich zu mir.",
+   "en": "Example: Please be honest with me."
+  },
+  {
+   "de": "der/die Bekannte, -n — EN: acquaintance · FR: une connaissanceEine Bekannte hat mir die Wohnung empfohlen.",
+   "en": "Example: An acquaintance recommended the flat to me."
+  },
+  {
+   "de": "streiten (stritt, gestritten) — EN: to argue · FR: se disputerWir streiten selten, und wenn, dann kurz.",
+   "en": "Example: We rarely argue, and when we do, it's brief."
+  },
+  {
+   "de": "sich versöhnen — EN: to make up, reconcile · FR: se réconcilierNach einer Stunde haben wir uns wieder versöhnt.",
+   "en": "Example: After an hour we made up again."
+  },
+  {
+   "de": "die Eigenschaft, -en — EN: quality, trait · FR: la qualité, le traitHumor ist für mich die wichtigste Eigenschaft.",
+   "en": "Example: For me, humour is the most important quality."
+  },
+  {
+   "de": "vertrauen (+ Dat.) — EN: to trust · FR: faire confiance àIch vertraue meinem Kollegen vollkommen.",
+   "en": "Example: I trust my colleague completely."
+  },
+  {
+   "de": "gemeinsam — EN: together, joint · FR: ensemble, communWir haben viele gemeinsame Interessen.",
+   "en": "Example: We have many interests in common."
+  },
+  {
+   "de": "der Streit (Sg.) — EN: quarrel · FR: la disputeDer Streit war schnell vergessen.",
+   "en": "Example: The quarrel was quickly forgotten."
+  },
+  {
+   "de": "eine Person charakterisieren",
+   "en": "describing a person"
+  },
+  {
+   "de": "Was ich an ihr besonders schätze, ist …",
+   "en": "What I particularly value about her is …"
+  },
+  {
+   "de": "Sie ist jemand, auf den man sich hundertprozentig verlassen kann.",
+   "en": "She is someone you can rely on one hundred per cent."
+  },
+  {
+   "de": "Typisch für ihn ist, dass er immer zuhört.",
+   "en": "What's typical of him is that he always listens."
+  },
+  {
+   "de": "über eine Freundschaft erzählen",
+   "en": "talking about a friendship"
+  },
+  {
+   "de": "Wir kennen uns seit …",
+   "en": "We have known each other for/since …"
+  },
+  {
+   "de": "Kennengelernt haben wir uns, als …",
+   "en": "We got to know each other when …"
+  },
+  {
+   "de": "Was uns verbindet, ist …",
+   "en": "What connects us is …"
+  },
+  {
+   "de": "zustimmen / widersprechen",
+   "en": "agreeing / disagreeing"
+  },
+  {
+   "de": "Da bin ich ganz deiner Meinung.",
+   "en": "I completely agree with you there."
+  },
+  {
+   "de": "Das sehe ich etwas anders.",
+   "en": "I see that a little differently."
+  },
+  {
+   "de": "Stimmt schon, aber …",
+   "en": "That's true, but …"
+  },
+  {
+   "de": "Unsere Freundschaft hält schon seit der Schulzeit.",
+   "en": "Our friendship has lasted since our school days."
+  },
+  {
+   "de": "Auf meine beste Freundin kann ich mich immer verlassen.",
+   "en": "I can always rely on my best friend."
+  },
+  {
+   "de": "Er ist der zuverlässigste Mensch, den ich kenne.",
+   "en": "He is the most reliable person I know."
+  },
+  {
+   "de": "Sie ist sehr großzügig mit ihrer Zeit.",
+   "en": "She is very generous with her time."
+  },
+  {
+   "de": "Sei bitte ehrlich zu mir.",
+   "en": "Please be honest with me."
+  },
+  {
+   "de": "Eine Bekannte hat mir die Wohnung empfohlen.",
+   "en": "An acquaintance recommended the flat to me."
+  },
+  {
+   "de": "Wir streiten selten, und wenn, dann kurz.",
+   "en": "We rarely argue, and when we do, it's brief."
+  },
+  {
+   "de": "Nach einer Stunde haben wir uns wieder versöhnt.",
+   "en": "After an hour we made up again."
+  },
+  {
+   "de": "Humor ist für mich die wichtigste Eigenschaft.",
+   "en": "For me, humour is the most important quality."
+  },
+  {
+   "de": "Ich vertraue meinem Kollegen vollkommen.",
+   "en": "I trust my colleague completely."
+  },
+  {
+   "de": "Wir haben viele gemeinsame Interessen.",
+   "en": "We have many interests in common."
+  },
+  {
+   "de": "Der Streit war schnell vergessen.",
+   "en": "The quarrel was quickly forgotten."
+  },
+  {
+   "de": "Gestern habe ich ___ Bekannten von früher getroffen. (ein)",
+   "en": "Yesterday I met ___ acquaintance from the past. (ein)"
+  },
+  {
+   "de": "Ich habe lange mit ___ gesprochen.",
+   "en": "I talked to ___ for a long time."
+  },
+  {
+   "de": "___ Kluge in unserer Klasse hilft allen anderen. (bestimmter Artikel, maskulin)",
+   "en": "___ clever one in our class helps all the others. (definite article, masculine)"
+  },
+  {
+   "de": "Der Chef hat den Namen ___ vergessen.",
+   "en": "The boss has forgotten the name ___."
+  },
+  {
+   "de": "Wir haben gestern mit vielen ___ gesprochen. (Jugendliche)",
+   "en": "Yesterday we talked with many ___. (Jugendliche)"
+  },
+  {
+   "de": "Akkusativ maskulin: einen + Adjektivendung -en → einen Bekannten.",
+   "en": "Accusative masculine: einen + adjective ending -en → einen Bekannten."
+  },
+  {
+   "de": "Nachbar gehört zur n-Deklination: im Dativ Singular steht -n.",
+   "en": "Nachbar belongs to the n-declension: in the dative singular it takes -n."
+  },
+  {
+   "de": "Nominativ maskulin mit bestimmtem Artikel: der Kluge.",
+   "en": "Nominative masculine with the definite article: der Kluge."
+  },
+  {
+   "de": "Genitiv Singular der n-Deklination: des Praktikanten.",
+   "en": "Genitive singular of the n-declension: des Praktikanten."
+  },
+  {
+   "de": "Dativ Plural nach 'vielen': Adjektiv-Nomen endet auf -en.",
+   "en": "Dative plural after 'vielen': the adjectival noun ends in -en."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Menschen",
+   "context": "Über Menschen sprechen, die uns wichtig sind — und Eigenschaften zu Nomen machen.",
+   "en": "people",
+   "lemma": "der Mensch"
+  },
+  {
+   "form": "Eigenschaften",
+   "context": "Über Menschen sprechen, die uns wichtig sind — und Eigenschaften zu Nomen machen.",
+   "en": "qualities, traits",
+   "lemma": "die Eigenschaft"
+  },
+  {
+   "form": "Freundschaft",
+   "context": "eine Freundschaft beschreiben und sagen, warum sie wichtig ist",
+   "en": "friendship",
+   "lemma": "die Freundschaft"
+  },
+  {
+   "form": "Nette",
+   "context": "Eigenschaften von Menschen als Nomen benutzen (der Nette, die Kluge)",
+   "en": "nice one (person)",
+   "lemma": "der/die Nette"
+  },
+  {
+   "form": "Kluge",
+   "context": "Eigenschaften von Menschen als Nomen benutzen (der Nette, die Kluge)",
+   "en": "clever one (person)",
+   "lemma": "der/die Kluge"
+  },
+  {
+   "form": "n-Deklination",
+   "context": "maskuline Nomen der n-Deklination korrekt deklinieren",
+   "en": "n-declension",
+   "lemma": "die n-Deklination"
+  },
+  {
+   "form": "korrekt",
+   "context": "maskuline Nomen der n-Deklination korrekt deklinieren",
+   "en": "correctly; correct",
+   "lemma": ""
+  },
+  {
+   "form": "großgeschrieben",
+   "context": "Fast jedes Adjektiv kann ein Nomen werden. Es wird großgeschrieben und bekommt trotzdem die normale Adjektivendung — so, als stünde das Nomen noch dahinter: der nette (Mann) → der Nette.",
+   "en": "written with a capital",
+   "lemma": "großschreiben"
+  },
+  {
+   "form": "trotzdem",
+   "context": "Fast jedes Adjektiv kann ein Nomen werden. Es wird großgeschrieben und bekommt trotzdem die normale Adjektivendung — so, als stünde das Nomen noch dahinter: der nette (Mann) → der Nette.",
+   "en": "still, nevertheless",
+   "lemma": ""
+  },
+  {
+   "form": "Adjektivendung",
+   "context": "Fast jedes Adjektiv kann ein Nomen werden. Es wird großgeschrieben und bekommt trotzdem die normale Adjektivendung — so, als stünde das Nomen noch dahinter: der nette (Mann) → der Nette.",
+   "en": "adjective ending",
+   "lemma": "die Adjektivendung"
+  },
+  {
+   "form": "stünde",
+   "context": "Fast jedes Adjektiv kann ein Nomen werden. Es wird großgeschrieben und bekommt trotzdem die normale Adjektivendung — so, als stünde das Nomen noch dahinter: der nette (Mann) → der Nette.",
+   "en": "would stand",
+   "lemma": "stehen"
+  },
+  {
+   "form": "nette",
+   "context": "Fast jedes Adjektiv kann ein Nomen werden. Es wird großgeschrieben und bekommt trotzdem die normale Adjektivendung — so, als stünde das Nomen noch dahinter: der nette (Mann) → der Nette.",
+   "en": "nice",
+   "lemma": "nett"
+  },
+  {
+   "form": "Netter",
+   "context": "der Nette / ein Netter",
+   "en": "nice one (a man)",
+   "lemma": "der Nette"
+  },
+  {
+   "form": "Netten",
+   "context": "den Netten / einen Netten",
+   "en": "nice one; nice people",
+   "lemma": "der/die Nette"
+  },
+  {
+   "form": "Samuel",
+   "context": "Der Kluge in unserer Gruppe ist Samuel — er löst jedes Problem.der + Adjektiv + e",
+   "en": "Samuel (name)",
+   "lemma": ""
+  },
+  {
+   "form": "löst",
+   "context": "Der Kluge in unserer Gruppe ist Samuel — er löst jedes Problem.der + Adjektiv + e",
+   "en": "solves",
+   "lemma": "lösen"
+  },
+  {
+   "form": "Bekannten",
+   "context": "Ich habe gestern einen Bekannten aus meinem Kurs getroffen.einen + Adjektiv + en",
+   "en": "acquaintance; acquaintances",
+   "lemma": "der/die Bekannte"
+  },
+  {
+   "form": "Verwandten",
+   "context": "Mit den Verwandten meiner Frau verstehe ich mich sehr gut.Dativ Plural: -en",
+   "en": "relatives",
+   "lemma": "der/die Verwandte"
+  },
+  {
+   "form": "Häufig",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "common; often",
+   "lemma": ""
+  },
+  {
+   "form": "Bekannte",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "acquaintance",
+   "lemma": "der/die Bekannte"
+  },
+  {
+   "form": "Erwachsene",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "adult",
+   "lemma": "der/die Erwachsene"
+  },
+  {
+   "form": "Jugendliche",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "young person, teenager",
+   "lemma": "der/die Jugendliche"
+  },
+  {
+   "form": "Fremde",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "stranger; foreign",
+   "lemma": "der/die Fremde"
+  },
+  {
+   "form": "Angestellte",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "employee",
+   "lemma": "der/die Angestellte"
+  },
+  {
+   "form": "Arbeitslose",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "unemployed person",
+   "lemma": "der/die Arbeitslose"
+  },
+  {
+   "form": "Reisende",
+   "context": "Tipp: Häufig: der/die Deutsche, Bekannte, Verwandte, Erwachsene, Jugendliche, Fremde, Angestellte, Arbeitslose, Reisende.",
+   "en": "traveller",
+   "lemma": "der/die Reisende"
+  },
+  {
+   "form": "maskuliner",
+   "context": "Eine kleine Gruppe maskuliner Nomen bekommt in allen Fällen außer dem Nominativ Singular ein -n oder -en.",
+   "en": "masculine",
+   "lemma": "maskulin"
+  },
+  {
+   "form": "gebeten",
+   "context": "Ich habe meinen Nachbarn um Hilfe gebeten.Akkusativ: der Nachbar → den Nachbarn",
+   "en": "asked (for)",
+   "lemma": "bitten"
+  },
+  {
+   "form": "Praktikanten",
+   "context": "Der Name des Praktikanten steht auf der Liste.Genitiv: -en",
+   "en": "intern, trainee",
+   "lemma": "der Praktikant"
+  },
+  {
+   "form": "Projekt",
+   "context": "Wir sprechen mit dem Studenten über sein Projekt.Dativ: -en",
+   "en": "project",
+   "lemma": "das Projekt"
+  },
+  {
+   "form": "Junge",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "boy",
+   "lemma": "der Junge"
+  },
+  {
+   "form": "ant",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "noun ending -ant",
+   "lemma": ""
+  },
+  {
+   "form": "oge",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "noun ending -oge",
+   "lemma": ""
+  },
+  {
+   "form": "Praktikant",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "intern, trainee",
+   "lemma": "der Praktikant"
+  },
+  {
+   "form": "Biologe",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "biologist",
+   "lemma": "der Biologe"
+  },
+  {
+   "form": "Mensch",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "person, human being",
+   "lemma": "der Mensch"
+  },
+  {
+   "form": "Bauer",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "farmer",
+   "lemma": "der Bauer"
+  },
+  {
+   "form": "Held",
+   "context": "Tipp: Dazu gehören: maskuline Nomen auf -e (Kollege, Junge, Kunde), auf -ent/-ant/-ist/-oge (Student, Praktikant, Journalist, Biologe) und Mensch, Nachbar, Herr, Bauer, Held.",
+   "en": "hero",
+   "lemma": "der Held"
+  },
+  {
+   "form": "friendship",
+   "context": "die Freundschaft, -en — EN: friendship · FR: l'amitiéUnsere Freundschaft hält schon seit der Schulzeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'amitiéUnsere",
+   "context": "die Freundschaft, -en — EN: friendship · FR: l'amitiéUnsere Freundschaft hält schon seit der Schulzeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Schulzeit",
+   "context": "die Freundschaft, -en — EN: friendship · FR: l'amitiéUnsere Freundschaft hält schon seit der Schulzeit.",
+   "en": "school days",
+   "lemma": "die Schulzeit"
+  },
+  {
+   "form": "verlassen",
+   "context": "sich verlassen auf (+ Akk.) — EN: to rely on · FR: compter surAuf meine beste Freundin kann ich mich immer verlassen.",
+   "en": "to rely (on); to leave",
+   "lemma": ""
+  },
+  {
+   "form": "rely",
+   "context": "sich verlassen auf (+ Akk.) — EN: to rely on · FR: compter surAuf meine beste Freundin kann ich mich immer verlassen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "compter",
+   "context": "sich verlassen auf (+ Akk.) — EN: to rely on · FR: compter surAuf meine beste Freundin kann ich mich immer verlassen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "surAuf",
+   "context": "sich verlassen auf (+ Akk.) — EN: to rely on · FR: compter surAuf meine beste Freundin kann ich mich immer verlassen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beste",
+   "context": "sich verlassen auf (+ Akk.) — EN: to rely on · FR: compter surAuf meine beste Freundin kann ich mich immer verlassen.",
+   "en": "best",
+   "lemma": "gut"
+  },
+  {
+   "form": "zuverlässig",
+   "context": "zuverlässig — EN: reliable · FR: fiableEr ist der zuverlässigste Mensch, den ich kenne.",
+   "en": "reliable",
+   "lemma": ""
+  },
+  {
+   "form": "reliable",
+   "context": "zuverlässig — EN: reliable · FR: fiableEr ist der zuverlässigste Mensch, den ich kenne.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fiableEr",
+   "context": "zuverlässig — EN: reliable · FR: fiableEr ist der zuverlässigste Mensch, den ich kenne.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zuverlässigste",
+   "context": "zuverlässig — EN: reliable · FR: fiableEr ist der zuverlässigste Mensch, den ich kenne.",
+   "en": "most reliable",
+   "lemma": "zuverlässig"
+  },
+  {
+   "form": "großzügig",
+   "context": "großzügig — EN: generous · FR: généreuxSie ist sehr großzügig mit ihrer Zeit.",
+   "en": "generous",
+   "lemma": ""
+  },
+  {
+   "form": "generous",
+   "context": "großzügig — EN: generous · FR: généreuxSie ist sehr großzügig mit ihrer Zeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "généreuxSie",
+   "context": "großzügig — EN: generous · FR: généreuxSie ist sehr großzügig mit ihrer Zeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ehrlich",
+   "context": "ehrlich — EN: honest · FR: honnêteSei bitte ehrlich zu mir.",
+   "en": "honest",
+   "lemma": ""
+  },
+  {
+   "form": "honest",
+   "context": "ehrlich — EN: honest · FR: honnêteSei bitte ehrlich zu mir.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "honnêteSei",
+   "context": "ehrlich — EN: honest · FR: honnêteSei bitte ehrlich zu mir.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "acquaintance",
+   "context": "der/die Bekannte, -n — EN: acquaintance · FR: une connaissanceEine Bekannte hat mir die Wohnung empfohlen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "connaissanceEine",
+   "context": "der/die Bekannte, -n — EN: acquaintance · FR: une connaissanceEine Bekannte hat mir die Wohnung empfohlen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "empfohlen",
+   "context": "der/die Bekannte, -n — EN: acquaintance · FR: une connaissanceEine Bekannte hat mir die Wohnung empfohlen.",
+   "en": "recommended",
+   "lemma": "empfehlen"
+  },
+  {
+   "form": "streiten",
+   "context": "streiten (stritt, gestritten) — EN: to argue · FR: se disputerWir streiten selten, und wenn, dann kurz.",
+   "en": "to argue",
+   "lemma": ""
+  },
+  {
+   "form": "stritt",
+   "context": "streiten (stritt, gestritten) — EN: to argue · FR: se disputerWir streiten selten, und wenn, dann kurz.",
+   "en": "argued",
+   "lemma": "streiten"
+  },
+  {
+   "form": "gestritten",
+   "context": "streiten (stritt, gestritten) — EN: to argue · FR: se disputerWir streiten selten, und wenn, dann kurz.",
+   "en": "argued",
+   "lemma": "streiten"
+  },
+  {
+   "form": "argue",
+   "context": "streiten (stritt, gestritten) — EN: to argue · FR: se disputerWir streiten selten, und wenn, dann kurz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "disputerWir",
+   "context": "streiten (stritt, gestritten) — EN: to argue · FR: se disputerWir streiten selten, und wenn, dann kurz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "selten",
+   "context": "streiten (stritt, gestritten) — EN: to argue · FR: se disputerWir streiten selten, und wenn, dann kurz.",
+   "en": "rarely; rare",
+   "lemma": ""
+  },
+  {
+   "form": "versöhnen",
+   "context": "sich versöhnen — EN: to make up, reconcile · FR: se réconcilierNach einer Stunde haben wir uns wieder versöhnt.",
+   "en": "to make up, reconcile",
+   "lemma": ""
+  },
+  {
+   "form": "reconcile",
+   "context": "sich versöhnen — EN: to make up, reconcile · FR: se réconcilierNach einer Stunde haben wir uns wieder versöhnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réconcilierNach",
+   "context": "sich versöhnen — EN: to make up, reconcile · FR: se réconcilierNach einer Stunde haben wir uns wieder versöhnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "versöhnt",
+   "context": "sich versöhnen — EN: to make up, reconcile · FR: se réconcilierNach einer Stunde haben wir uns wieder versöhnt.",
+   "en": "made up, reconciled",
+   "lemma": "sich versöhnen"
+  },
+  {
+   "form": "trait",
+   "context": "die Eigenschaft, -en — EN: quality, trait · FR: la qualité, le traitHumor ist für mich die wichtigste Eigenschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "qualité",
+   "context": "die Eigenschaft, -en — EN: quality, trait · FR: la qualité, le traitHumor ist für mich die wichtigste Eigenschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "traitHumor",
+   "context": "die Eigenschaft, -en — EN: quality, trait · FR: la qualité, le traitHumor ist für mich die wichtigste Eigenschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vertrauen",
+   "context": "vertrauen (+ Dat.) — EN: to trust · FR: faire confiance àIch vertraue meinem Kollegen vollkommen.",
+   "en": "to trust",
+   "lemma": ""
+  },
+  {
+   "form": "trust",
+   "context": "vertrauen (+ Dat.) — EN: to trust · FR: faire confiance àIch vertraue meinem Kollegen vollkommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "confiance",
+   "context": "vertrauen (+ Dat.) — EN: to trust · FR: faire confiance àIch vertraue meinem Kollegen vollkommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vertraue",
+   "context": "vertrauen (+ Dat.) — EN: to trust · FR: faire confiance àIch vertraue meinem Kollegen vollkommen.",
+   "en": "trust",
+   "lemma": "vertrauen"
+  },
+  {
+   "form": "vollkommen",
+   "context": "vertrauen (+ Dat.) — EN: to trust · FR: faire confiance àIch vertraue meinem Kollegen vollkommen.",
+   "en": "completely; perfect",
+   "lemma": ""
+  },
+  {
+   "form": "joint",
+   "context": "gemeinsam — EN: together, joint · FR: ensemble, communWir haben viele gemeinsame Interessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ensemble",
+   "context": "gemeinsam — EN: together, joint · FR: ensemble, communWir haben viele gemeinsame Interessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "communWir",
+   "context": "gemeinsam — EN: together, joint · FR: ensemble, communWir haben viele gemeinsame Interessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gemeinsame",
+   "context": "gemeinsam — EN: together, joint · FR: ensemble, communWir haben viele gemeinsame Interessen.",
+   "en": "shared, common",
+   "lemma": "gemeinsam"
+  },
+  {
+   "form": "Interessen",
+   "context": "gemeinsam — EN: together, joint · FR: ensemble, communWir haben viele gemeinsame Interessen.",
+   "en": "interests",
+   "lemma": "das Interesse"
+  },
+  {
+   "form": "Streit",
+   "context": "der Streit (Sg.) — EN: quarrel · FR: la disputeDer Streit war schnell vergessen.",
+   "en": "quarrel, argument",
+   "lemma": "der Streit"
+  },
+  {
+   "form": "quarrel",
+   "context": "der Streit (Sg.) — EN: quarrel · FR: la disputeDer Streit war schnell vergessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "disputeDer",
+   "context": "der Streit (Sg.) — EN: quarrel · FR: la disputeDer Streit war schnell vergessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "charakterisieren",
+   "context": "eine Person charakterisieren",
+   "en": "to characterise, describe",
+   "lemma": ""
+  },
+  {
+   "form": "schätze",
+   "context": "Was ich an ihr besonders schätze, ist …",
+   "en": "value, appreciate; estimate",
+   "lemma": "schätzen"
+  },
+  {
+   "form": "hundertprozentig",
+   "context": "Sie ist jemand, auf den man sich hundertprozentig verlassen kann.",
+   "en": "one hundred per cent",
+   "lemma": ""
+  },
+  {
+   "form": "zuhört",
+   "context": "Typisch für ihn ist, dass er immer zuhört.",
+   "en": "listens",
+   "lemma": "zuhören"
+  },
+  {
+   "form": "Kennengelernt",
+   "context": "Kennengelernt haben wir uns, als …",
+   "en": "met, got to know",
+   "lemma": "kennenlernen"
+  },
+  {
+   "form": "verbindet",
+   "context": "Was uns verbindet, ist …",
+   "en": "connects, unites",
+   "lemma": "verbinden"
+  },
+  {
+   "form": "widersprechen",
+   "context": "zustimmen / widersprechen",
+   "en": "to disagree, contradict",
+   "lemma": ""
+  },
+  {
+   "form": "Humor",
+   "context": "Humor ist für mich die wichtigste Eigenschaft.",
+   "en": "humour",
+   "lemma": "der Humor"
+  },
+  {
+   "form": "Klasse",
+   "context": "___ Kluge in unserer Klasse hilft allen anderen. (bestimmter Artikel, maskulin)",
+   "en": "class; great (informal)",
+   "lemma": "die Klasse"
+  },
+  {
+   "form": "bestimmter",
+   "context": "___ Kluge in unserer Klasse hilft allen anderen. (bestimmter Artikel, maskulin)",
+   "en": "definite; certain",
+   "lemma": "bestimmt"
+  }
+ ]
+}
