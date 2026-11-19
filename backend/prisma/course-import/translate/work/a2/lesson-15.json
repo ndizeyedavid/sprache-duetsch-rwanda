@@ -1,0 +1,781 @@
+{
+ "level": "A2",
+ "lesson": 15,
+ "title": "Medien — Gleich geht's los!",
+ "lines": [
+  {
+   "de": "Über Fernsehen und Mediengewohnheiten sprechen.",
+   "en": "Talk about television and media habits."
+  },
+  {
+   "de": "Textsorte: Sachtext · Programmzeitschrift",
+   "en": "Text type: Factual text · TV guide"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Hören Teil 1; ÖSD A2 Hören",
+   "en": "Exam link: Goethe A2 Listening part 1; ÖSD A2 Listening"
+  },
+  {
+   "de": "über Fernsehgewohnheiten und Medien sprechen",
+   "en": "talk about TV habits and media"
+  },
+  {
+   "de": "Verben mit Dativ und Akkusativ verwenden",
+   "en": "use verbs with the dative (Dativ) and the accusative (Akkusativ)"
+  },
+  {
+   "de": "die Objekte im Satz richtig anordnen",
+   "en": "put the objects in a sentence in the right order"
+  },
+  {
+   "de": "Grammatik: Verben mit Dativ und Akkusativ",
+   "en": "Grammar: Verbs with dative and accusative (Dativ und Akkusativ)"
+  },
+  {
+   "de": "Manche Verben haben zwei Objekte: eine Person im Dativ (wem?) und eine Sache im Akkusativ (was?). Typisch sind geben, schenken, zeigen, erklären, empfehlen, schicken, bringen.",
+   "en": "Some verbs have two objects: a person in the dative (wem? – to whom?) and a thing in the accusative (was? – what?). Typical ones are geben, schenken, zeigen, erklären, empfehlen, schicken, bringen."
+  },
+  {
+   "de": "Dativ (wem?)",
+   "en": "Dative (wem? – to whom?)"
+  },
+  {
+   "de": "Akkusativ (was?)",
+   "en": "Accusative (was? – what?)"
+  },
+  {
+   "de": "Ich zeige",
+   "en": "I show"
+  },
+  {
+   "de": "den Film.",
+   "en": "the film."
+  },
+  {
+   "de": "Er erklärt",
+   "en": "He explains"
+  },
+  {
+   "de": "seiner Tochter",
+   "en": "(to) his daughter"
+  },
+  {
+   "de": "die Fernbedienung.",
+   "en": "the remote control."
+  },
+  {
+   "de": "Sie empfiehlt",
+   "en": "She recommends"
+  },
+  {
+   "de": "eine neue Serie.",
+   "en": "a new series."
+  },
+  {
+   "de": "Wir schenken",
+   "en": "We give (as a present)"
+  },
+  {
+   "de": "ein Tablet.",
+   "en": "a tablet."
+  },
+  {
+   "de": "Kannst du mir die Sendung empfehlen?mir = Dativ, die Sendung = Akkusativ",
+   "en": "Can you recommend the programme to me? — mir = dative, die Sendung = accusative"
+  },
+  {
+   "de": "Ich schicke dir den Link später.Person vor Sache",
+   "en": "I'll send you the link later. — person before thing"
+  },
+  {
+   "de": "Tipp: Merkhilfe: Die Person steht meistens zuerst, die Sache danach.",
+   "en": "Tip: Memory aid: The person usually comes first, the thing after it."
+  },
+  {
+   "de": "Grammatik: Stellung der Objekte",
+   "en": "Grammar: Position of the objects"
+  },
+  {
+   "de": "Die Reihenfolge hängt davon ab, ob die Objekte Nomen oder Pronomen sind. Eine Regel gilt immer: Pronomen stehen vor Nomen, und zwei Pronomen stehen in der Reihenfolge Akkusativ vor Dativ.",
+   "en": "The order depends on whether the objects are nouns or pronouns. One rule always applies: pronouns come before nouns, and two pronouns come in the order accusative before dative."
+  },
+  {
+   "de": "Kombination",
+   "en": "Combination"
+  },
+  {
+   "de": "Reihenfolge",
+   "en": "Order"
+  },
+  {
+   "de": "Nomen + Nomen",
+   "en": "Noun + noun"
+  },
+  {
+   "de": "Dativ → Akkusativ",
+   "en": "Dative → accusative"
+  },
+  {
+   "de": "Ich zeige meinem Bruder den Film.",
+   "en": "I show my brother the film."
+  },
+  {
+   "de": "Pronomen + Nomen",
+   "en": "Pronoun + noun"
+  },
+  {
+   "de": "Pronomen zuerst",
+   "en": "Pronoun first"
+  },
+  {
+   "de": "Ich zeige ihm den Film.",
+   "en": "I show him the film."
+  },
+  {
+   "de": "Nomen + Pronomen",
+   "en": "Noun + pronoun"
+  },
+  {
+   "de": "Ich zeige ihn meinem Bruder.",
+   "en": "I show it to my brother."
+  },
+  {
+   "de": "Pronomen + Pronomen",
+   "en": "Pronoun + pronoun"
+  },
+  {
+   "de": "Akkusativ → Dativ",
+   "en": "Accusative → dative"
+  },
+  {
+   "de": "Ich zeige ihn ihm.",
+   "en": "I show it to him."
+  },
+  {
+   "de": "Gib mir bitte die Fernbedienung. — Gib sie mir bitte.zwei Pronomen: sie (Akk.) vor mir (Dat.)",
+   "en": "Please give me the remote control. — Please give it to me. — two pronouns: sie (acc.) before mir (dat.)"
+  },
+  {
+   "de": "Tipp: Nie sagen: „Gib mir sie.\" Richtig ist: „Gib sie mir.\"",
+   "en": "Tip: Never say: “Gib mir sie.” The correct form is: “Gib sie mir.”"
+  },
+  {
+   "de": "die Sendung, -en — EN: programme, show · FR: l'émissionWelche Sendung siehst du am liebsten?",
+   "en": "Example: Which programme do you like watching most?"
+  },
+  {
+   "de": "die Serie, -n — EN: series · FR: la sérieDiese Serie kann ich dir sehr empfehlen.",
+   "en": "Example: I can really recommend this series to you."
+  },
+  {
+   "de": "die Nachrichten (Pl.) — EN: the news · FR: les informationsDie Nachrichten kommen um acht.",
+   "en": "Example: The news is on at eight."
+  },
+  {
+   "de": "der Fernseher, - — EN: TV set · FR: le téléviseurUnser Fernseher ist ziemlich alt.",
+   "en": "Example: Our TV is quite old."
+  },
+  {
+   "de": "die Fernbedienung, -en — EN: remote control · FR: la télécommandeWo ist denn die Fernbedienung?",
+   "en": "Example: Where is the remote control?"
+  },
+  {
+   "de": "einschalten / ausschalten — EN: to switch on / off · FR: allumer / éteindreSchalt bitte den Fernseher aus.",
+   "en": "Example: Please switch off the TV."
+  },
+  {
+   "de": "das Programm, -e — EN: channel; programme · FR: la chaîne; le programmeAuf welchem Programm läuft das?",
+   "en": "Example: Which channel is that on?"
+  },
+  {
+   "de": "der Film, -e — EN: film · FR: le filmDer Film beginnt gleich.",
+   "en": "Example: The film is about to start."
+  },
+  {
+   "de": "online streamen — EN: to stream online · FR: regarder en streamingIch streame fast alles online.",
+   "en": "Example: I stream almost everything online."
+  },
+  {
+   "de": "empfehlen (empfahl) — EN: to recommend · FR: recommanderKannst du mir etwas empfehlen?",
+   "en": "Example: Can you recommend something to me?"
+  },
+  {
+   "de": "langweilig / spannend — EN: boring / exciting · FR: ennuyeux / passionnantDie erste Folge war ziemlich langweilig.",
+   "en": "Example: The first episode was quite boring."
+  },
+  {
+   "de": "die Folge, -n — EN: episode · FR: l'épisodeEs gibt zwölf Folgen.",
+   "en": "Example: There are twelve episodes."
+  },
+  {
+   "de": "über Mediengewohnheiten sprechen",
+   "en": "Talking about media habits"
+  },
+  {
+   "de": "Ich sehe eigentlich kaum fern.",
+   "en": "I actually hardly watch TV."
+  },
+  {
+   "de": "Am liebsten schaue ich …",
+   "en": "Most of all I like watching …"
+  },
+  {
+   "de": "Ich streame lieber, als fernzusehen.",
+   "en": "I prefer streaming to watching TV."
+  },
+  {
+   "de": "etwas empfehlen",
+   "en": "Recommending something"
+  },
+  {
+   "de": "Das kann ich dir wirklich empfehlen.",
+   "en": "I can really recommend that to you."
+  },
+  {
+   "de": "Schau dir mal … an!",
+   "en": "Have a look at …!"
+  },
+  {
+   "de": "Das ist nichts für dich, glaube ich.",
+   "en": "That's not for you, I think."
+  },
+  {
+   "de": "Die Serie ist total spannend.",
+   "en": "The series is really exciting."
+  },
+  {
+   "de": "Mir war das zu langweilig.",
+   "en": "It was too boring for me."
+  },
+  {
+   "de": "Die erste Folge fand ich am besten.",
+   "en": "I liked the first episode best."
+  },
+  {
+   "de": "Dialog: Vor dem Fernseher",
+   "en": "Dialogue: In front of the TV"
+  },
+  {
+   "de": "Rosa: Gleich geht's los! Wo ist die Fernbedienung?",
+   "en": "Rosa: It's about to start! Where is the remote control?"
+  },
+  {
+   "de": "Theo: Hier. Soll ich sie dir geben?",
+   "en": "Theo: Here. Shall I give it to you?"
+  },
+  {
+   "de": "Rosa: Ja, gib sie mir bitte. Auf welchem Programm läuft der Film?",
+   "en": "Rosa: Yes, please give it to me. Which channel is the film on?"
+  },
+  {
+   "de": "Theo: Auf dem Zweiten. Aber die Serie gestern war besser.",
+   "en": "Theo: On Channel Two. But the series yesterday was better."
+  },
+  {
+   "de": "Rosa: Welche denn?",
+   "en": "Rosa: Which one?"
+  },
+  {
+   "de": "Theo: Ich schicke dir nachher den Link. Die kann ich dir wirklich empfehlen.",
+   "en": "Theo: I'll send you the link later. I can really recommend it to you."
+  },
+  {
+   "de": "Welche Sendung siehst du am liebsten?",
+   "en": "Which programme do you like watching most?"
+  },
+  {
+   "de": "Diese Serie kann ich dir sehr empfehlen.",
+   "en": "I can really recommend this series to you."
+  },
+  {
+   "de": "Die Nachrichten kommen um acht.",
+   "en": "The news is on at eight."
+  },
+  {
+   "de": "Unser Fernseher ist ziemlich alt.",
+   "en": "Our TV is quite old."
+  },
+  {
+   "de": "Wo ist denn die Fernbedienung?",
+   "en": "Where is the remote control?"
+  },
+  {
+   "de": "Schalt bitte den Fernseher aus.",
+   "en": "Please switch off the TV."
+  },
+  {
+   "de": "Auf welchem Programm läuft das?",
+   "en": "Which channel is that on?"
+  },
+  {
+   "de": "Der Film beginnt gleich.",
+   "en": "The film is about to start."
+  },
+  {
+   "de": "Ich streame fast alles online.",
+   "en": "I stream almost everything online."
+  },
+  {
+   "de": "Kannst du mir etwas empfehlen?",
+   "en": "Can you recommend something to me?"
+  },
+  {
+   "de": "Die erste Folge war ziemlich langweilig.",
+   "en": "The first episode was quite boring."
+  },
+  {
+   "de": "Es gibt zwölf Folgen.",
+   "en": "There are twelve episodes."
+  },
+  {
+   "de": "Ich zeige ___ den Film. (er → Dativ)",
+   "en": "I show ___ the film. (er → dative)"
+  },
+  {
+   "de": "Ich empfehle ___ diese Serie.",
+   "en": "I recommend this series to ___."
+  },
+  {
+   "de": "Ich schicke den Link ___ Schwester. (meine, Dativ)",
+   "en": "I send the link to ___ sister. (meine, dative)"
+  },
+  {
+   "de": "Welche Reihenfolge ist richtig? (zwei Nomen)",
+   "en": "Which order is correct? (two nouns)"
+  },
+  {
+   "de": "Empfehlen Sie einer Freundin eine Serie oder einen Film in einer kurzen Nachricht. Umfang: 40–60 Wörter Checkliste: • Nennen Sie Titel und Thema. • Benutzen Sie ein Verb mit Dativ und Akkusativ (empfehlen, schicken, zeigen). • Schreiben Sie, warum Ihnen das gefällt.",
+   "en": "Recommend a series or a film to a friend in a short message. Length: 40–60 words Checklist: • Give the title and the topic. • Use a verb with dative and accusative (empfehlen, schicken, zeigen). • Write why you like it."
+  },
+  {
+   "de": "Zwei Pronomen: Akkusativ (sie) steht vor Dativ (mir).",
+   "en": "Two pronouns: the accusative (sie) comes before the dative (mir)."
+  },
+  {
+   "de": "Die Person steht im Dativ: ihm.",
+   "en": "The person is in the dative: ihm."
+  },
+  {
+   "de": "empfehlen steht mit dem Dativ für die Person.",
+   "en": "empfehlen takes the dative for the person."
+  },
+  {
+   "de": "Dativ feminin: meiner Schwester.",
+   "en": "Dative feminine: meiner Schwester."
+  },
+  {
+   "de": "Zwei Nomen: Dativ vor Akkusativ.",
+   "en": "Two nouns: dative before accusative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Mediengewohnheiten",
+   "context": "Über Fernsehen und Mediengewohnheiten sprechen.",
+   "en": "media habits",
+   "lemma": "die Mediengewohnheit"
+  },
+  {
+   "form": "Programmzeitschrift",
+   "context": "Textsorte: Sachtext · Programmzeitschrift",
+   "en": "TV guide (magazine)",
+   "lemma": "die Programmzeitschrift"
+  },
+  {
+   "form": "Fernsehgewohnheiten",
+   "context": "über Fernsehgewohnheiten und Medien sprechen",
+   "en": "TV habits",
+   "lemma": "die Fernsehgewohnheit"
+  },
+  {
+   "form": "Medien",
+   "context": "über Fernsehgewohnheiten und Medien sprechen",
+   "en": "media",
+   "lemma": "das Medium"
+  },
+  {
+   "form": "Objekte",
+   "context": "die Objekte im Satz richtig anordnen",
+   "en": "objects",
+   "lemma": "das Objekt"
+  },
+  {
+   "form": "anordnen",
+   "context": "die Objekte im Satz richtig anordnen",
+   "en": "to arrange, to put in order",
+   "lemma": ""
+  },
+  {
+   "form": "Manche",
+   "context": "Manche Verben haben zwei Objekte: eine Person im Dativ (wem?) und eine Sache im Akkusativ (was?). Typisch sind geben, schenken, zeigen, erklären, empfehlen, schicken, bringen.",
+   "en": "some",
+   "lemma": ""
+  },
+  {
+   "form": "Typisch",
+   "context": "Manche Verben haben zwei Objekte: eine Person im Dativ (wem?) und eine Sache im Akkusativ (was?). Typisch sind geben, schenken, zeigen, erklären, empfehlen, schicken, bringen.",
+   "en": "typical",
+   "lemma": "typisch"
+  },
+  {
+   "form": "schenken",
+   "context": "Manche Verben haben zwei Objekte: eine Person im Dativ (wem?) und eine Sache im Akkusativ (was?). Typisch sind geben, schenken, zeigen, erklären, empfehlen, schicken, bringen.",
+   "en": "to give (as a present)",
+   "lemma": ""
+  },
+  {
+   "form": "erklären",
+   "context": "Manche Verben haben zwei Objekte: eine Person im Dativ (wem?) und eine Sache im Akkusativ (was?). Typisch sind geben, schenken, zeigen, erklären, empfehlen, schicken, bringen.",
+   "en": "to explain",
+   "lemma": ""
+  },
+  {
+   "form": "zeige",
+   "context": "Ich zeige",
+   "en": "show",
+   "lemma": "zeigen"
+  },
+  {
+   "form": "Film",
+   "context": "den Film.",
+   "en": "film",
+   "lemma": "der Film"
+  },
+  {
+   "form": "erklärt",
+   "context": "Er erklärt",
+   "en": "explains",
+   "lemma": "erklären"
+  },
+  {
+   "form": "seiner",
+   "context": "seiner Tochter",
+   "en": "(to) his",
+   "lemma": ""
+  },
+  {
+   "form": "Fernbedienung",
+   "context": "die Fernbedienung.",
+   "en": "remote control",
+   "lemma": "die Fernbedienung"
+  },
+  {
+   "form": "empfiehlt",
+   "context": "Sie empfiehlt",
+   "en": "recommends",
+   "lemma": "empfehlen"
+  },
+  {
+   "form": "Serie",
+   "context": "eine neue Serie.",
+   "en": "series",
+   "lemma": "die Serie"
+  },
+  {
+   "form": "schicke",
+   "context": "Ich schicke dir den Link später.Person vor Sache",
+   "en": "send",
+   "lemma": "schicken"
+  },
+  {
+   "form": "Link",
+   "context": "Ich schicke dir den Link später.Person vor Sache",
+   "en": "link",
+   "lemma": "der Link"
+  },
+  {
+   "form": "Stellung",
+   "context": "Grammatik: Stellung der Objekte",
+   "en": "position",
+   "lemma": "die Stellung"
+  },
+  {
+   "form": "ob",
+   "context": "Die Reihenfolge hängt davon ab, ob die Objekte Nomen oder Pronomen sind. Eine Regel gilt immer: Pronomen stehen vor Nomen, und zwei Pronomen stehen in der Reihenfolge Akkusativ vor Dativ.",
+   "en": "whether, if",
+   "lemma": ""
+  },
+  {
+   "form": "gilt",
+   "context": "Die Reihenfolge hängt davon ab, ob die Objekte Nomen oder Pronomen sind. Eine Regel gilt immer: Pronomen stehen vor Nomen, und zwei Pronomen stehen in der Reihenfolge Akkusativ vor Dativ.",
+   "en": "applies, is valid",
+   "lemma": "gelten"
+  },
+  {
+   "form": "Kombination",
+   "context": "Kombination",
+   "en": "combination",
+   "lemma": "die Kombination"
+  },
+  {
+   "form": "programme",
+   "context": "die Sendung, -en — EN: programme, show · FR: l'émissionWelche Sendung siehst du am liebsten?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "show",
+   "context": "die Sendung, -en — EN: programme, show · FR: l'émissionWelche Sendung siehst du am liebsten?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'émissionWelche",
+   "context": "die Sendung, -en — EN: programme, show · FR: l'émissionWelche Sendung siehst du am liebsten?",
+   "en": "Welche = which",
+   "lemma": ""
+  },
+  {
+   "form": "series",
+   "context": "die Serie, -n — EN: series · FR: la sérieDiese Serie kann ich dir sehr empfehlen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sérieDiese",
+   "context": "die Serie, -n — EN: series · FR: la sérieDiese Serie kann ich dir sehr empfehlen.",
+   "en": "Diese = this",
+   "lemma": ""
+  },
+  {
+   "form": "Nachrichten",
+   "context": "die Nachrichten (Pl.) — EN: the news · FR: les informationsDie Nachrichten kommen um acht.",
+   "en": "the news; messages",
+   "lemma": "die Nachricht"
+  },
+  {
+   "form": "news",
+   "context": "die Nachrichten (Pl.) — EN: the news · FR: les informationsDie Nachrichten kommen um acht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "informationsDie",
+   "context": "die Nachrichten (Pl.) — EN: the news · FR: les informationsDie Nachrichten kommen um acht.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "Fernseher",
+   "context": "der Fernseher, - — EN: TV set · FR: le téléviseurUnser Fernseher ist ziemlich alt.",
+   "en": "TV (set)",
+   "lemma": "der Fernseher"
+  },
+  {
+   "form": "téléviseurUnser",
+   "context": "der Fernseher, - — EN: TV set · FR: le téléviseurUnser Fernseher ist ziemlich alt.",
+   "en": "Unser = our",
+   "lemma": ""
+  },
+  {
+   "form": "remote",
+   "context": "die Fernbedienung, -en — EN: remote control · FR: la télécommandeWo ist denn die Fernbedienung?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "control",
+   "context": "die Fernbedienung, -en — EN: remote control · FR: la télécommandeWo ist denn die Fernbedienung?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "télécommandeWo",
+   "context": "die Fernbedienung, -en — EN: remote control · FR: la télécommandeWo ist denn die Fernbedienung?",
+   "en": "Wo = where",
+   "lemma": ""
+  },
+  {
+   "form": "einschalten",
+   "context": "einschalten / ausschalten — EN: to switch on / off · FR: allumer / éteindreSchalt bitte den Fernseher aus.",
+   "en": "to switch on",
+   "lemma": ""
+  },
+  {
+   "form": "ausschalten",
+   "context": "einschalten / ausschalten — EN: to switch on / off · FR: allumer / éteindreSchalt bitte den Fernseher aus.",
+   "en": "to switch off",
+   "lemma": ""
+  },
+  {
+   "form": "switch",
+   "context": "einschalten / ausschalten — EN: to switch on / off · FR: allumer / éteindreSchalt bitte den Fernseher aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "allumer",
+   "context": "einschalten / ausschalten — EN: to switch on / off · FR: allumer / éteindreSchalt bitte den Fernseher aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "éteindreSchalt",
+   "context": "einschalten / ausschalten — EN: to switch on / off · FR: allumer / éteindreSchalt bitte den Fernseher aus.",
+   "en": "Schalt … aus = switch off",
+   "lemma": "schalten"
+  },
+  {
+   "form": "channel",
+   "context": "das Programm, -e — EN: channel; programme · FR: la chaîne; le programmeAuf welchem Programm läuft das?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "programmeAuf",
+   "context": "das Programm, -e — EN: channel; programme · FR: la chaîne; le programmeAuf welchem Programm läuft das?",
+   "en": "Auf = on",
+   "lemma": ""
+  },
+  {
+   "form": "film",
+   "context": "der Film, -e — EN: film · FR: le filmDer Film beginnt gleich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "filmDer",
+   "context": "der Film, -e — EN: film · FR: le filmDer Film beginnt gleich.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "streamen",
+   "context": "online streamen — EN: to stream online · FR: regarder en streamingIch streame fast alles online.",
+   "en": "to stream",
+   "lemma": ""
+  },
+  {
+   "form": "stream",
+   "context": "online streamen — EN: to stream online · FR: regarder en streamingIch streame fast alles online.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "streamingIch",
+   "context": "online streamen — EN: to stream online · FR: regarder en streamingIch streame fast alles online.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "streame",
+   "context": "online streamen — EN: to stream online · FR: regarder en streamingIch streame fast alles online.",
+   "en": "stream",
+   "lemma": "streamen"
+  },
+  {
+   "form": "recommanderKannst",
+   "context": "empfehlen (empfahl) — EN: to recommend · FR: recommanderKannst du mir etwas empfehlen?",
+   "en": "Kannst = can (with du)",
+   "lemma": "können"
+  },
+  {
+   "form": "spannend",
+   "context": "langweilig / spannend — EN: boring / exciting · FR: ennuyeux / passionnantDie erste Folge war ziemlich langweilig.",
+   "en": "exciting",
+   "lemma": ""
+  },
+  {
+   "form": "boring",
+   "context": "langweilig / spannend — EN: boring / exciting · FR: ennuyeux / passionnantDie erste Folge war ziemlich langweilig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "exciting",
+   "context": "langweilig / spannend — EN: boring / exciting · FR: ennuyeux / passionnantDie erste Folge war ziemlich langweilig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ennuyeux",
+   "context": "langweilig / spannend — EN: boring / exciting · FR: ennuyeux / passionnantDie erste Folge war ziemlich langweilig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "passionnantDie",
+   "context": "langweilig / spannend — EN: boring / exciting · FR: ennuyeux / passionnantDie erste Folge war ziemlich langweilig.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "episode",
+   "context": "die Folge, -n — EN: episode · FR: l'épisodeEs gibt zwölf Folgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'épisodeEs",
+   "context": "die Folge, -n — EN: episode · FR: l'épisodeEs gibt zwölf Folgen.",
+   "en": "Es gibt = there are",
+   "lemma": ""
+  },
+  {
+   "form": "Folgen",
+   "context": "die Folge, -n — EN: episode · FR: l'épisodeEs gibt zwölf Folgen.",
+   "en": "episodes; consequences",
+   "lemma": "die Folge"
+  },
+  {
+   "form": "fernzusehen",
+   "context": "Ich streame lieber, als fernzusehen.",
+   "en": "to watch TV",
+   "lemma": "fernsehen"
+  },
+  {
+   "form": "total",
+   "context": "Die Serie ist total spannend.",
+   "en": "totally, really",
+   "lemma": ""
+  },
+  {
+   "form": "geht's",
+   "context": "Rosa: Gleich geht's los! Wo ist die Fernbedienung?",
+   "en": "(… los) it starts; it goes",
+   "lemma": "gehen"
+  },
+  {
+   "form": "Theo",
+   "context": "Theo: Hier. Soll ich sie dir geben?",
+   "en": "Theo (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Zweiten",
+   "context": "Theo: Auf dem Zweiten. Aber die Serie gestern war besser.",
+   "en": "second (TV channel)",
+   "lemma": "das Zweite"
+  },
+  {
+   "form": "nachher",
+   "context": "Theo: Ich schicke dir nachher den Link. Die kann ich dir wirklich empfehlen.",
+   "en": "later, afterwards",
+   "lemma": ""
+  },
+  {
+   "form": "Schalt",
+   "context": "Schalt bitte den Fernseher aus.",
+   "en": "(… aus) switch off; switch",
+   "lemma": "schalten"
+  },
+  {
+   "form": "empfehle",
+   "context": "Ich empfehle ___ diese Serie.",
+   "en": "recommend",
+   "lemma": "empfehlen"
+  },
+  {
+   "form": "Titel",
+   "context": "Empfehlen Sie einer Freundin eine Serie oder einen Film in einer kurzen Nachricht. Umfang: 40–60 Wörter Checkliste: • Nennen Sie Titel und Thema. • Benutzen Sie ein Verb mit Dativ und Akkusativ (empfehlen, schicken, zeigen). • Schreiben Sie, warum Ihnen das gefällt.",
+   "en": "title",
+   "lemma": "der Titel"
+  },
+  {
+   "form": "Thema",
+   "context": "Empfehlen Sie einer Freundin eine Serie oder einen Film in einer kurzen Nachricht. Umfang: 40–60 Wörter Checkliste: • Nennen Sie Titel und Thema. • Benutzen Sie ein Verb mit Dativ und Akkusativ (empfehlen, schicken, zeigen). • Schreiben Sie, warum Ihnen das gefällt.",
+   "en": "topic, subject",
+   "lemma": "das Thema"
+  }
+ ]
+}
