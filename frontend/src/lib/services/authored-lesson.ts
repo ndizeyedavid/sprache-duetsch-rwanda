@@ -8,6 +8,8 @@ export type AuthoredLesson = {
   order: number;
   contentType: string;
   body: string | null;
+  /** Course v2 structured lesson; staff edit `body`, students see this when it is set. */
+  content?: unknown;
   videoUrl: string | null;
   audioUrl: string | null;
   estimatedMinutes: number | null;
