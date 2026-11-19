@@ -1,4 +1,4 @@
-import { FiArrowLeft,FiGrid,FiList,FiMap } from 'react-icons/fi';
+import { FiArrowLeft,FiBookOpen,FiGrid,FiList,FiMap,FiRefreshCw } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import type { MyCourse } from '../../lib/services';
 import { heroAction,heroGhost } from '../hero/hero-actions';
@@ -29,6 +29,8 @@ export function CourseMapHero({ slug, course, layout, onLayout }: Props) {
       </> : null}
       actions={<>
         {course && onLayout ? <span role="group" aria-label="Course layout" className="flex flex-wrap gap-2">{toggle('vertical', 'Path', FiList)}{toggle('horizontal', 'Study', FiGrid)}</span> : null}
+        {course ? <Link to={`/courses/${slug.toLowerCase()}/review`} className={heroGhost}><FiRefreshCw aria-hidden />Practise mistakes</Link> : null}
+        {course ? <Link to={`/courses/${slug.toLowerCase()}/words`} className={heroGhost}><FiBookOpen aria-hidden />Word list</Link> : null}
         <Link to={`/courses/${slug.toLowerCase()}`} className={heroGhost}><FiArrowLeft aria-hidden />{code} overview</Link>
       </>}
     />
