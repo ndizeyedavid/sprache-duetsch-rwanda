@@ -1,4 +1,4 @@
-import type { PaymentCheckout } from '../../lib/paypack';
+import type { PaymentCheckout } from '../../lib/mobile-money';
 
 const states = {
   INITIATING: { label: 'Sending', style: 'badge-info' },
