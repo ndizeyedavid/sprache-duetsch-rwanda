@@ -1,0 +1,789 @@
+{
+ "level": "A2",
+ "lesson": 3,
+ "title": "Tourismus — Hier finden Sie Ruhe und Erholung",
+ "lines": [
+  {
+   "de": "Urlaubsangebote verstehen und sagen, was einem gefällt.",
+   "en": "Understand holiday offers and say what you like."
+  },
+  {
+   "de": "Textsorte: Werbebroschüre · Anzeige",
+   "en": "Text type: Advertising brochure · Advert"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Lesen Teil 2 (Anzeigen); telc A2 Lesen",
+   "en": "Exam link: Goethe A2 Reading part 2 (adverts); telc A2 Reading"
+  },
+  {
+   "de": "Anzeigen und Werbetexte für Urlaub verstehen",
+   "en": "understand adverts and promotional texts for holidays"
+  },
+  {
+   "de": "aus Verben Nomen bilden (-er und -ung)",
+   "en": "form nouns from verbs (-er and -ung)"
+  },
+  {
+   "de": "etwas bewerten und Vorlieben ausdrücken",
+   "en": "evaluate something and express preferences"
+  },
+  {
+   "de": "Grammatik: Wortbildung: aus Verben Nomen machen",
+   "en": "Grammar: word formation (Wortbildung): making nouns from verbs"
+  },
+  {
+   "de": "Zwei Endungen helfen Ihnen, viele neue Wörter zu verstehen. Mit -er entsteht meist eine Person (maskulin), mit -ung eine Sache oder eine Handlung (immer feminin).",
+   "en": "Two endings help you understand many new words. With -er you usually get a person (masculine), with -ung a thing or an action (always feminine)."
+  },
+  {
+   "de": "+ -er → Person",
+   "en": "+ -er → person"
+  },
+  {
+   "de": "+ -ung → Sache/Handlung",
+   "en": "+ -ung → thing/action"
+  },
+  {
+   "de": "wandern",
+   "en": "to hike"
+  },
+  {
+   "de": "der Wanderer",
+   "en": "the hiker"
+  },
+  {
+   "de": "erholen",
+   "en": "to relax, to recover"
+  },
+  {
+   "de": "die Erholung",
+   "en": "rest, relaxation"
+  },
+  {
+   "de": "vermieten",
+   "en": "to rent out"
+  },
+  {
+   "de": "der Vermieter",
+   "en": "the landlord"
+  },
+  {
+   "de": "die Wanderung",
+   "en": "the hike"
+  },
+  {
+   "de": "der Fahrer",
+   "en": "the driver"
+  },
+  {
+   "de": "anmelden",
+   "en": "to register"
+  },
+  {
+   "de": "die Anmeldung",
+   "en": "the registration"
+  },
+  {
+   "de": "surfen",
+   "en": "to surf"
+  },
+  {
+   "de": "der Surfer",
+   "en": "the surfer"
+  },
+  {
+   "de": "übernachten",
+   "en": "to stay overnight"
+  },
+  {
+   "de": "die Übernachtung",
+   "en": "the overnight stay"
+  },
+  {
+   "de": "Hier finden Sie Ruhe und Erholung.erholen → die Erholung",
+   "en": "Here you will find peace and relaxation. erholen → die Erholung"
+  },
+  {
+   "de": "Die Wanderung dauert etwa drei Stunden.wandern → die Wanderung",
+   "en": "The hike takes about three hours. wandern → die Wanderung"
+  },
+  {
+   "de": "Der Vermieter wohnt im Erdgeschoss.vermieten → der Vermieter",
+   "en": "The landlord lives on the ground floor. vermieten → der Vermieter"
+  },
+  {
+   "de": "Tipp: Nomen auf -ung sind immer feminin: die Wohnung, die Rechnung, die Einladung, die Bewegung.",
+   "en": "Tip: Nouns ending in -ung are always feminine: die Wohnung (apartment), die Rechnung (bill), die Einladung (invitation), die Bewegung (movement)."
+  },
+  {
+   "de": "die Erholung (Sg.) — EN: rest, relaxation · FR: le reposIm Urlaub suche ich vor allem Erholung.",
+   "en": "Example: On holiday, I'm looking for relaxation above all."
+  },
+  {
+   "de": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementDie Unterkunft war sauber und günstig.",
+   "en": "Example: The accommodation was clean and cheap."
+  },
+  {
+   "de": "die Übernachtung, -en — EN: overnight stay · FR: la nuitéeEine Übernachtung kostet 60 Euro.",
+   "en": "Example: An overnight stay costs 60 euros."
+  },
+  {
+   "de": "die Gegend, -en — EN: area, region · FR: la régionDie Gegend ist sehr ruhig.",
+   "en": "Example: The area is very quiet."
+  },
+  {
+   "de": "die Landschaft, -en — EN: landscape · FR: le paysageDie Landschaft dort ist wunderschön.",
+   "en": "Example: The landscape there is beautiful."
+  },
+  {
+   "de": "der See, -n — EN: lake · FR: le lacDas Hotel liegt direkt am See.",
+   "en": "Example: The hotel is right on the lake."
+  },
+  {
+   "de": "die Wanderung, -en — EN: hike · FR: la randonnéeWir machen morgen eine Wanderung.",
+   "en": "Example: We're going on a hike tomorrow."
+  },
+  {
+   "de": "sich erholen — EN: to relax, recover · FR: se reposerIch habe mich gut erholt.",
+   "en": "Example: I had a good rest."
+  },
+  {
+   "de": "die Aussicht (Sg.) — EN: view · FR: la vueVon hier hat man eine tolle Aussicht.",
+   "en": "Example: You have a great view from here."
+  },
+  {
+   "de": "anbieten (bot an) — EN: to offer · FR: proposerDas Hotel bietet auch Fahrräder an.",
+   "en": "Example: The hotel also offers bicycles."
+  },
+  {
+   "de": "günstig — EN: cheap, good value · FR: avantageuxIm Herbst sind die Preise günstiger.",
+   "en": "Example: In autumn the prices are cheaper."
+  },
+  {
+   "de": "sich anmelden — EN: to register, sign up · FR: s'inscrireFür die Wanderung muss man sich anmelden.",
+   "en": "Example: You have to register for the hike."
+  },
+  {
+   "de": "Das klingt wirklich gut.",
+   "en": "That sounds really good."
+  },
+  {
+   "de": "Das ist genau das Richtige für mich.",
+   "en": "That's exactly the right thing for me."
+  },
+  {
+   "de": "Das wäre nichts für mich.",
+   "en": "That wouldn't be for me."
+  },
+  {
+   "de": "Vorlieben ausdrücken",
+   "en": "expressing preferences"
+  },
+  {
+   "de": "Am liebsten mache ich Urlaub am See.",
+   "en": "Most of all, I like holidays by a lake."
+  },
+  {
+   "de": "Ich mag lieber Berge als Strand.",
+   "en": "I prefer mountains to the beach."
+  },
+  {
+   "de": "Hauptsache, es ist ruhig.",
+   "en": "The main thing is that it's quiet."
+  },
+  {
+   "de": "nach Informationen fragen",
+   "en": "asking for information"
+  },
+  {
+   "de": "Was kostet eine Übernachtung?",
+   "en": "How much does an overnight stay cost?"
+  },
+  {
+   "de": "Gibt es dort auch Wanderwege?",
+   "en": "Are there hiking trails there too?"
+  },
+  {
+   "de": "Muss man sich vorher anmelden?",
+   "en": "Do you have to register in advance?"
+  },
+  {
+   "de": "Dialog: Urlaub planen",
+   "en": "Dialogue: Planning a holiday"
+  },
+  {
+   "de": "Mira: Schau mal, dieses Angebot: „Hier finden Sie Ruhe und Erholung.\"",
+   "en": "Mira: Look at this offer: \"Here you will find peace and relaxation.\""
+  },
+  {
+   "de": "Jo: Wo ist das denn?",
+   "en": "Jo: So where is that?"
+  },
+  {
+   "de": "Mira: Direkt am See. Mit Aussicht auf die Berge.",
+   "en": "Mira: Right on the lake. With a view of the mountains."
+  },
+  {
+   "de": "Jo: Und was kostet eine Übernachtung?",
+   "en": "Jo: And how much does an overnight stay cost?"
+  },
+  {
+   "de": "Mira: 65 Euro. Es gibt auch geführte Wanderungen.",
+   "en": "Mira: 65 euros. There are also guided hikes."
+  },
+  {
+   "de": "Jo: Das klingt gut. Aber man muss sich sicher anmelden, oder?",
+   "en": "Jo: That sounds good. But I'm sure you have to register, right?"
+  },
+  {
+   "de": "Im Urlaub suche ich vor allem Erholung.",
+   "en": "On holiday, I'm looking for relaxation above all."
+  },
+  {
+   "de": "Die Unterkunft war sauber und günstig.",
+   "en": "The accommodation was clean and cheap."
+  },
+  {
+   "de": "Eine Übernachtung kostet 60 Euro.",
+   "en": "An overnight stay costs 60 euros."
+  },
+  {
+   "de": "Die Gegend ist sehr ruhig.",
+   "en": "The area is very quiet."
+  },
+  {
+   "de": "Die Landschaft dort ist wunderschön.",
+   "en": "The landscape there is beautiful."
+  },
+  {
+   "de": "Das Hotel liegt direkt am See.",
+   "en": "The hotel is right on the lake."
+  },
+  {
+   "de": "Wir machen morgen eine Wanderung.",
+   "en": "We're going on a hike tomorrow."
+  },
+  {
+   "de": "Ich habe mich gut erholt.",
+   "en": "I had a good rest."
+  },
+  {
+   "de": "Von hier hat man eine tolle Aussicht.",
+   "en": "You have a great view from here."
+  },
+  {
+   "de": "Das Hotel bietet auch Fahrräder an.",
+   "en": "The hotel also offers bicycles."
+  },
+  {
+   "de": "Im Herbst sind die Preise günstiger.",
+   "en": "In autumn the prices are cheaper."
+  },
+  {
+   "de": "Für die Wanderung muss man sich anmelden.",
+   "en": "You have to register for the hike."
+  },
+  {
+   "de": "wandern → die ___ (Nomen auf -ung)",
+   "en": "wandern (to hike) → die ___ (noun ending in -ung)"
+  },
+  {
+   "de": "vermieten → der ___ (Person)",
+   "en": "vermieten (to rent out) → der ___ (person)"
+  },
+  {
+   "de": "Welchen Artikel hat „Erholung\"?",
+   "en": "Which article does \"Erholung\" have?"
+  },
+  {
+   "de": "übernachten → die ___",
+   "en": "übernachten (to stay overnight) → die ___"
+  },
+  {
+   "de": "Was bedeutet „der Fahrer\"?",
+   "en": "What does \"der Fahrer\" mean?"
+  },
+  {
+   "de": "Schreiben Sie eine kurze Anzeige für einen Urlaubsort, den Sie kennen. Umfang: 40–60 Wörter Checkliste: • Nennen Sie den Ort und die Landschaft. • Benutzen Sie mindestens zwei Nomen auf -ung. • Schreiben Sie, was man dort machen kann.",
+   "en": "Write a short advert for a holiday destination you know. Length: 40–60 words Checklist: • Name the place and describe the landscape. • Use at least two nouns ending in -ung. • Write what you can do there."
+  },
+  {
+   "de": "wander- + -ung → die Wanderung. Nomen auf -ung sind feminin.",
+   "en": "wander- + -ung → die Wanderung (hike). Nouns ending in -ung are feminine."
+  },
+  {
+   "de": "vermiet- + -er → der Vermieter.",
+   "en": "vermiet- + -er → der Vermieter (landlord)."
+  },
+  {
+   "de": "Alle Nomen auf -ung sind feminin.",
+   "en": "All nouns ending in -ung are feminine."
+  },
+  {
+   "de": "übernacht- + -ung → die Übernachtung.",
+   "en": "übernacht- + -ung → die Übernachtung (overnight stay)."
+  },
+  {
+   "de": "Verb + -er bezeichnet meist eine Person.",
+   "en": "Verb + -er usually refers to a person."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Urlaubsangebote",
+   "context": "Urlaubsangebote verstehen und sagen, was einem gefällt.",
+   "en": "holiday offers",
+   "lemma": "das Urlaubsangebot"
+  },
+  {
+   "form": "Werbebroschüre",
+   "context": "Textsorte: Werbebroschüre · Anzeige",
+   "en": "advertising brochure",
+   "lemma": "die Werbebroschüre"
+  },
+  {
+   "form": "Werbetexte",
+   "context": "Anzeigen und Werbetexte für Urlaub verstehen",
+   "en": "advertising texts",
+   "lemma": "der Werbetext"
+  },
+  {
+   "form": "Vorlieben",
+   "context": "etwas bewerten und Vorlieben ausdrücken",
+   "en": "preferences",
+   "lemma": "die Vorliebe"
+  },
+  {
+   "form": "Wortbildung",
+   "context": "Grammatik: Wortbildung: aus Verben Nomen machen",
+   "en": "word formation",
+   "lemma": "die Wortbildung"
+  },
+  {
+   "form": "entsteht",
+   "context": "Zwei Endungen helfen Ihnen, viele neue Wörter zu verstehen. Mit -er entsteht meist eine Person (maskulin), mit -ung eine Sache oder eine Handlung (immer feminin).",
+   "en": "is formed, comes about",
+   "lemma": "entstehen"
+  },
+  {
+   "form": "meist",
+   "context": "Zwei Endungen helfen Ihnen, viele neue Wörter zu verstehen. Mit -er entsteht meist eine Person (maskulin), mit -ung eine Sache oder eine Handlung (immer feminin).",
+   "en": "usually, mostly",
+   "lemma": ""
+  },
+  {
+   "form": "Handlung",
+   "context": "Zwei Endungen helfen Ihnen, viele neue Wörter zu verstehen. Mit -er entsteht meist eine Person (maskulin), mit -ung eine Sache oder eine Handlung (immer feminin).",
+   "en": "action; plot",
+   "lemma": "die Handlung"
+  },
+  {
+   "form": "wandern",
+   "context": "wandern",
+   "en": "to hike",
+   "lemma": ""
+  },
+  {
+   "form": "Wanderer",
+   "context": "der Wanderer",
+   "en": "hiker",
+   "lemma": "der Wanderer"
+  },
+  {
+   "form": "erholen",
+   "context": "erholen",
+   "en": "to relax, to recover",
+   "lemma": ""
+  },
+  {
+   "form": "Erholung",
+   "context": "die Erholung",
+   "en": "rest, relaxation",
+   "lemma": "die Erholung"
+  },
+  {
+   "form": "vermieten",
+   "context": "vermieten",
+   "en": "to rent out",
+   "lemma": ""
+  },
+  {
+   "form": "Vermieter",
+   "context": "der Vermieter",
+   "en": "landlord",
+   "lemma": "der Vermieter"
+  },
+  {
+   "form": "Wanderung",
+   "context": "die Wanderung",
+   "en": "hike",
+   "lemma": "die Wanderung"
+  },
+  {
+   "form": "Fahrer",
+   "context": "der Fahrer",
+   "en": "driver",
+   "lemma": "der Fahrer"
+  },
+  {
+   "form": "anmelden",
+   "context": "anmelden",
+   "en": "to register, to sign up",
+   "lemma": ""
+  },
+  {
+   "form": "Anmeldung",
+   "context": "die Anmeldung",
+   "en": "registration",
+   "lemma": "die Anmeldung"
+  },
+  {
+   "form": "surfen",
+   "context": "surfen",
+   "en": "to surf",
+   "lemma": ""
+  },
+  {
+   "form": "Surfer",
+   "context": "der Surfer",
+   "en": "surfer",
+   "lemma": "der Surfer"
+  },
+  {
+   "form": "übernachten",
+   "context": "übernachten",
+   "en": "to stay overnight",
+   "lemma": ""
+  },
+  {
+   "form": "Übernachtung",
+   "context": "die Übernachtung",
+   "en": "overnight stay",
+   "lemma": "die Übernachtung"
+  },
+  {
+   "form": "Ruhe",
+   "context": "Hier finden Sie Ruhe und Erholung.erholen → die Erholung",
+   "en": "peace, quiet",
+   "lemma": "die Ruhe"
+  },
+  {
+   "form": "Erdgeschoss",
+   "context": "Der Vermieter wohnt im Erdgeschoss.vermieten → der Vermieter",
+   "en": "ground floor",
+   "lemma": "das Erdgeschoss"
+  },
+  {
+   "form": "relaxation",
+   "context": "die Erholung (Sg.) — EN: rest, relaxation · FR: le reposIm Urlaub suche ich vor allem Erholung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reposIm",
+   "context": "die Erholung (Sg.) — EN: rest, relaxation · FR: le reposIm Urlaub suche ich vor allem Erholung.",
+   "en": "in the",
+   "lemma": "in"
+  },
+  {
+   "form": "allem",
+   "context": "die Erholung (Sg.) — EN: rest, relaxation · FR: le reposIm Urlaub suche ich vor allem Erholung.",
+   "en": "all (vor allem = above all)",
+   "lemma": "alles"
+  },
+  {
+   "form": "Unterkunft",
+   "context": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementDie Unterkunft war sauber und günstig.",
+   "en": "accommodation",
+   "lemma": "die Unterkunft"
+  },
+  {
+   "form": "accommodation",
+   "context": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementDie Unterkunft war sauber und günstig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'hébergementDie",
+   "context": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementDie Unterkunft war sauber und günstig.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "sauber",
+   "context": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementDie Unterkunft war sauber und günstig.",
+   "en": "clean",
+   "lemma": ""
+  },
+  {
+   "form": "overnight",
+   "context": "die Übernachtung, -en — EN: overnight stay · FR: la nuitéeEine Übernachtung kostet 60 Euro.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nuitéeEine",
+   "context": "die Übernachtung, -en — EN: overnight stay · FR: la nuitéeEine Übernachtung kostet 60 Euro.",
+   "en": "a, one",
+   "lemma": "ein"
+  },
+  {
+   "form": "Gegend",
+   "context": "die Gegend, -en — EN: area, region · FR: la régionDie Gegend ist sehr ruhig.",
+   "en": "area, region",
+   "lemma": "die Gegend"
+  },
+  {
+   "form": "area",
+   "context": "die Gegend, -en — EN: area, region · FR: la régionDie Gegend ist sehr ruhig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "region",
+   "context": "die Gegend, -en — EN: area, region · FR: la régionDie Gegend ist sehr ruhig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "régionDie",
+   "context": "die Gegend, -en — EN: area, region · FR: la régionDie Gegend ist sehr ruhig.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "Landschaft",
+   "context": "die Landschaft, -en — EN: landscape · FR: le paysageDie Landschaft dort ist wunderschön.",
+   "en": "landscape",
+   "lemma": "die Landschaft"
+  },
+  {
+   "form": "landscape",
+   "context": "die Landschaft, -en — EN: landscape · FR: le paysageDie Landschaft dort ist wunderschön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "paysageDie",
+   "context": "die Landschaft, -en — EN: landscape · FR: le paysageDie Landschaft dort ist wunderschön.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "lacDas",
+   "context": "der See, -n — EN: lake · FR: le lacDas Hotel liegt direkt am See.",
+   "en": "the",
+   "lemma": "das"
+  },
+  {
+   "form": "hike",
+   "context": "die Wanderung, -en — EN: hike · FR: la randonnéeWir machen morgen eine Wanderung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "randonnéeWir",
+   "context": "die Wanderung, -en — EN: hike · FR: la randonnéeWir machen morgen eine Wanderung.",
+   "en": "we",
+   "lemma": "wir"
+  },
+  {
+   "form": "relax",
+   "context": "sich erholen — EN: to relax, recover · FR: se reposerIch habe mich gut erholt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "recover",
+   "context": "sich erholen — EN: to relax, recover · FR: se reposerIch habe mich gut erholt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reposerIch",
+   "context": "sich erholen — EN: to relax, recover · FR: se reposerIch habe mich gut erholt.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "erholt",
+   "context": "sich erholen — EN: to relax, recover · FR: se reposerIch habe mich gut erholt.",
+   "en": "rested, recovered",
+   "lemma": "sich erholen"
+  },
+  {
+   "form": "Aussicht",
+   "context": "die Aussicht (Sg.) — EN: view · FR: la vueVon hier hat man eine tolle Aussicht.",
+   "en": "view",
+   "lemma": "die Aussicht"
+  },
+  {
+   "form": "view",
+   "context": "die Aussicht (Sg.) — EN: view · FR: la vueVon hier hat man eine tolle Aussicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vueVon",
+   "context": "die Aussicht (Sg.) — EN: view · FR: la vueVon hier hat man eine tolle Aussicht.",
+   "en": "from",
+   "lemma": "von"
+  },
+  {
+   "form": "tolle",
+   "context": "die Aussicht (Sg.) — EN: view · FR: la vueVon hier hat man eine tolle Aussicht.",
+   "en": "great",
+   "lemma": "toll"
+  },
+  {
+   "form": "bot",
+   "context": "anbieten (bot an) — EN: to offer · FR: proposerDas Hotel bietet auch Fahrräder an.",
+   "en": "offered",
+   "lemma": "anbieten"
+  },
+  {
+   "form": "offer",
+   "context": "anbieten (bot an) — EN: to offer · FR: proposerDas Hotel bietet auch Fahrräder an.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "proposerDas",
+   "context": "anbieten (bot an) — EN: to offer · FR: proposerDas Hotel bietet auch Fahrräder an.",
+   "en": "the",
+   "lemma": "das"
+  },
+  {
+   "form": "bietet",
+   "context": "anbieten (bot an) — EN: to offer · FR: proposerDas Hotel bietet auch Fahrräder an.",
+   "en": "offers",
+   "lemma": "anbieten"
+  },
+  {
+   "form": "Fahrräder",
+   "context": "anbieten (bot an) — EN: to offer · FR: proposerDas Hotel bietet auch Fahrräder an.",
+   "en": "bicycles",
+   "lemma": "das Fahrrad"
+  },
+  {
+   "form": "value",
+   "context": "günstig — EN: cheap, good value · FR: avantageuxIm Herbst sind die Preise günstiger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "avantageuxIm",
+   "context": "günstig — EN: cheap, good value · FR: avantageuxIm Herbst sind die Preise günstiger.",
+   "en": "in the",
+   "lemma": "in"
+  },
+  {
+   "form": "Preise",
+   "context": "günstig — EN: cheap, good value · FR: avantageuxIm Herbst sind die Preise günstiger.",
+   "en": "prices",
+   "lemma": "der Preis"
+  },
+  {
+   "form": "günstiger",
+   "context": "günstig — EN: cheap, good value · FR: avantageuxIm Herbst sind die Preise günstiger.",
+   "en": "cheaper",
+   "lemma": "günstig"
+  },
+  {
+   "form": "register",
+   "context": "sich anmelden — EN: to register, sign up · FR: s'inscrireFür die Wanderung muss man sich anmelden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'inscrireFür",
+   "context": "sich anmelden — EN: to register, sign up · FR: s'inscrireFür die Wanderung muss man sich anmelden.",
+   "en": "for",
+   "lemma": "für"
+  },
+  {
+   "form": "Berge",
+   "context": "Ich mag lieber Berge als Strand.",
+   "en": "mountains",
+   "lemma": "der Berg"
+  },
+  {
+   "form": "Strand",
+   "context": "Ich mag lieber Berge als Strand.",
+   "en": "beach",
+   "lemma": "der Strand"
+  },
+  {
+   "form": "Hauptsache",
+   "context": "Hauptsache, es ist ruhig.",
+   "en": "the main thing",
+   "lemma": "die Hauptsache"
+  },
+  {
+   "form": "Informationen",
+   "context": "nach Informationen fragen",
+   "en": "information",
+   "lemma": "die Information"
+  },
+  {
+   "form": "Wanderwege",
+   "context": "Gibt es dort auch Wanderwege?",
+   "en": "hiking trails",
+   "lemma": "der Wanderweg"
+  },
+  {
+   "form": "vorher",
+   "context": "Muss man sich vorher anmelden?",
+   "en": "beforehand, in advance",
+   "lemma": ""
+  },
+  {
+   "form": "planen",
+   "context": "Dialog: Urlaub planen",
+   "en": "to plan",
+   "lemma": ""
+  },
+  {
+   "form": "Mira",
+   "context": "Mira: Schau mal, dieses Angebot: „Hier finden Sie Ruhe und Erholung.\"",
+   "en": "Mira (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Angebot",
+   "context": "Mira: Schau mal, dieses Angebot: „Hier finden Sie Ruhe und Erholung.\"",
+   "en": "offer",
+   "lemma": "das Angebot"
+  },
+  {
+   "form": "geführte",
+   "context": "Mira: 65 Euro. Es gibt auch geführte Wanderungen.",
+   "en": "guided",
+   "lemma": "geführt"
+  },
+  {
+   "form": "Wanderungen",
+   "context": "Mira: 65 Euro. Es gibt auch geführte Wanderungen.",
+   "en": "hikes",
+   "lemma": "die Wanderung"
+  },
+  {
+   "form": "Urlaubsort",
+   "context": "Schreiben Sie eine kurze Anzeige für einen Urlaubsort, den Sie kennen. Umfang: 40–60 Wörter Checkliste: • Nennen Sie den Ort und die Landschaft. • Benutzen Sie mindestens zwei Nomen auf -ung. • Schreiben Sie, was man dort machen kann.",
+   "en": "holiday destination",
+   "lemma": "der Urlaubsort"
+  },
+  {
+   "form": "kennen",
+   "context": "Schreiben Sie eine kurze Anzeige für einen Urlaubsort, den Sie kennen. Umfang: 40–60 Wörter Checkliste: • Nennen Sie den Ort und die Landschaft. • Benutzen Sie mindestens zwei Nomen auf -ung. • Schreiben Sie, was man dort machen kann.",
+   "en": "know",
+   "lemma": ""
+  },
+  {
+   "form": "Ort",
+   "context": "Schreiben Sie eine kurze Anzeige für einen Urlaubsort, den Sie kennen. Umfang: 40–60 Wörter Checkliste: • Nennen Sie den Ort und die Landschaft. • Benutzen Sie mindestens zwei Nomen auf -ung. • Schreiben Sie, was man dort machen kann.",
+   "en": "place",
+   "lemma": "der Ort"
+  }
+ ]
+}
