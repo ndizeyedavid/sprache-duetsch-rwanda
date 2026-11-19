@@ -1,0 +1,583 @@
+{
+ "level": "A2",
+ "lesson": 19,
+ "title": "Kulturelle Veranstaltungen — Wohin gehen wir heute?",
+ "lines": [
+  {
+   "de": "Jemanden für etwas begeistern und auf Vorschläge zögernd reagieren.",
+   "en": "Get someone excited about something and react hesitantly to suggestions."
+  },
+  {
+   "de": "Textsorte: Veranstaltungskalender · Gespräch",
+   "en": "Text type: Events calendar · Conversation"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 3; ÖSD A2 Sprechen",
+   "en": "Exam link: Goethe A2 Speaking part 3; ÖSD A2 Speaking"
+  },
+  {
+   "de": "jemanden überzeugen und begeistern",
+   "en": "convince someone and get them excited"
+  },
+  {
+   "de": "auf Vorschläge zögernd reagieren",
+   "en": "react hesitantly to suggestions"
+  },
+  {
+   "de": "sagen, woher jemand oder etwas kommt",
+   "en": "say where someone or something comes from"
+  },
+  {
+   "de": "Grammatik: Woher? — lokale Präpositionen",
+   "en": "Grammar: Woher? (where from?) — prepositions of place"
+  },
+  {
+   "de": "Auf die Frage Woher? antwortet man mit aus, von oder vom. aus benutzt man, wenn man aus einem Raum oder einem Land kommt; von und vom, wenn man von einem Ort, einer Veranstaltung oder einer Person zurückkommt.",
+   "en": "To the question Woher? you answer with aus, von or vom. You use aus when you come out of a room or from a country; von and vom when you come back from a place, an event or a person."
+  },
+  {
+   "de": "Woher?",
+   "en": "Where from?"
+  },
+  {
+   "de": "aus einem Raum / Gebäude",
+   "en": "out of a room / building"
+  },
+  {
+   "de": "aus + Dativ",
+   "en": "aus + dative"
+  },
+  {
+   "de": "Ich komme gerade aus dem Kino.",
+   "en": "I've just come out of the cinema."
+  },
+  {
+   "de": "aus einem Land / einer Stadt",
+   "en": "from a country / a city"
+  },
+  {
+   "de": "Sie kommt aus der Schweiz.",
+   "en": "She comes from Switzerland."
+  },
+  {
+   "de": "von einem Ort / Platz",
+   "en": "from a place / square"
+  },
+  {
+   "de": "von + Dativ",
+   "en": "von + dative"
+  },
+  {
+   "de": "Wir kommen vom Markt.",
+   "en": "We are coming from the market."
+  },
+  {
+   "de": "von einer Veranstaltung",
+   "en": "from an event"
+  },
+  {
+   "de": "Ich komme gerade vom Konzert.",
+   "en": "I've just come from the concert."
+  },
+  {
+   "de": "von einer Person",
+   "en": "from a person"
+  },
+  {
+   "de": "Er kommt von seiner Tante.",
+   "en": "He is coming from his aunt's."
+  },
+  {
+   "de": "Woher kommt ihr denn so spät? — Vom Theater.von dem → vom",
+   "en": "Where are you coming from so late? — From the theatre. — von dem → vom"
+  },
+  {
+   "de": "Sie ist gerade aus dem Museum gekommen.aus + Dativ bei Gebäuden",
+   "en": "She has just come out of the museum. — aus + dative with buildings"
+  },
+  {
+   "de": "Tipp: Kurzformen: von dem → vom, zu dem → zum, zu der → zur.",
+   "en": "Tip: Short forms: von dem → vom, zu dem → zum, zu der → zur."
+  },
+  {
+   "de": "die Veranstaltung, -en — EN: event · FR: l'événementDie Veranstaltung ist kostenlos.",
+   "en": "Example: The event is free."
+  },
+  {
+   "de": "das Theater, - — EN: theatre · FR: le théâtreGehen wir heute Abend ins Theater?",
+   "en": "Example: Shall we go to the theatre this evening?"
+  },
+  {
+   "de": "die Vorstellung, -en — EN: performance, showing · FR: la représentationDie Vorstellung beginnt um acht.",
+   "en": "Example: The performance starts at eight."
+  },
+  {
+   "de": "das Museum, Museen — EN: museum · FR: le muséeDas Museum hat bis 18 Uhr geöffnet.",
+   "en": "Example: The museum is open until 18:00."
+  },
+  {
+   "de": "die Kasse, -n — EN: box office · FR: la caisseKarten gibt es an der Kasse.",
+   "en": "Example: You can get tickets at the box office."
+  },
+  {
+   "de": "ausverkauft — EN: sold out · FR: completLeider ist alles ausverkauft.",
+   "en": "Example: Unfortunately, everything is sold out."
+  },
+  {
+   "de": "überzeugen — EN: to convince · FR: convaincreDu hast mich überzeugt — ich komme mit!",
+   "en": "Example: You've convinced me — I'm coming along!"
+  },
+  {
+   "de": "begeistert sein von — EN: to be enthusiastic about · FR: être enthousiasmé parAlle waren begeistert von dem Konzert.",
+   "en": "Example: Everyone was enthusiastic about the concert."
+  },
+  {
+   "de": "zögern — EN: to hesitate · FR: hésiterWarum zögerst du?",
+   "en": "Example: Why are you hesitating?"
+  },
+  {
+   "de": "Lust haben — EN: to feel like · FR: avoir envieIch habe heute keine große Lust.",
+   "en": "Example: I don't really feel like it today."
+  },
+  {
+   "de": "mitkommen (kam mit) — EN: to come along · FR: venir avecKommst du mit?",
+   "en": "Example: Are you coming along?"
+  },
+  {
+   "de": "sich entscheiden — EN: to decide · FR: se déciderIch kann mich nicht entscheiden.",
+   "en": "Example: I can't decide."
+  },
+  {
+   "de": "jemanden begeistern",
+   "en": "Getting someone excited"
+  },
+  {
+   "de": "Das musst du unbedingt sehen!",
+   "en": "You really must see that!"
+  },
+  {
+   "de": "Das wird dir bestimmt gefallen.",
+   "en": "You'll definitely like it."
+  },
+  {
+   "de": "Komm doch einfach mit!",
+   "en": "Just come along!"
+  },
+  {
+   "de": "zögernd reagieren",
+   "en": "Reacting hesitantly"
+  },
+  {
+   "de": "Hm, ich weiß noch nicht so recht.",
+   "en": "Hm, I'm not really sure yet."
+  },
+  {
+   "de": "Na ja, eigentlich bin ich ziemlich müde.",
+   "en": "Well, actually I'm quite tired."
+  },
+  {
+   "de": "Mal sehen — vielleicht.",
+   "en": "We'll see — maybe."
+  },
+  {
+   "de": "Also gut, überredet!",
+   "en": "All right, you've talked me into it!"
+  },
+  {
+   "de": "Dann treffen wir uns um sieben.",
+   "en": "Then let's meet at seven."
+  },
+  {
+   "de": "Abgemacht.",
+   "en": "Agreed."
+  },
+  {
+   "de": "Dialog: Ein Vorschlag am Abend",
+   "en": "Dialogue: A suggestion in the evening"
+  },
+  {
+   "de": "Mert: Wohin gehen wir heute? Im Theater gibt es noch Karten.",
+   "en": "Mert: Where shall we go today? There are still tickets at the theatre."
+  },
+  {
+   "de": "Ana: Hm, ich weiß noch nicht so recht. Ich bin ziemlich müde.",
+   "en": "Ana: Hm, I'm not really sure yet. I'm quite tired."
+  },
+  {
+   "de": "Mert: Das Stück soll richtig gut sein. Alle sind begeistert davon.",
+   "en": "Mert: The play is supposed to be really good. Everyone is enthusiastic about it."
+  },
+  {
+   "de": "Ana: Und was kostet das?",
+   "en": "Ana: And how much does it cost?"
+  },
+  {
+   "de": "Mert: Zwölf Euro mit Ermäßigung. Komm doch einfach mit!",
+   "en": "Mert: Twelve euros with a discount. Just come along!"
+  },
+  {
+   "de": "Ana: Also gut, überredet. Aber ich komme direkt vom Büro.",
+   "en": "Ana: All right, you've talked me into it. But I'm coming straight from the office."
+  },
+  {
+   "de": "Die Veranstaltung ist kostenlos.",
+   "en": "The event is free."
+  },
+  {
+   "de": "Gehen wir heute Abend ins Theater?",
+   "en": "Shall we go to the theatre this evening?"
+  },
+  {
+   "de": "Die Vorstellung beginnt um acht.",
+   "en": "The performance starts at eight."
+  },
+  {
+   "de": "Das Museum hat bis 18 Uhr geöffnet.",
+   "en": "The museum is open until 18:00."
+  },
+  {
+   "de": "Karten gibt es an der Kasse.",
+   "en": "You can get tickets at the box office."
+  },
+  {
+   "de": "Leider ist alles ausverkauft.",
+   "en": "Unfortunately, everything is sold out."
+  },
+  {
+   "de": "Du hast mich überzeugt — ich komme mit!",
+   "en": "You've convinced me — I'm coming along!"
+  },
+  {
+   "de": "Alle waren begeistert von dem Konzert.",
+   "en": "Everyone was enthusiastic about the concert."
+  },
+  {
+   "de": "Warum zögerst du?",
+   "en": "Why are you hesitating?"
+  },
+  {
+   "de": "Ich habe heute keine große Lust.",
+   "en": "I don't really feel like it today."
+  },
+  {
+   "de": "Ich kann mich nicht entscheiden.",
+   "en": "I can't decide."
+  },
+  {
+   "de": "Ich komme gerade ___ dem Kino. (Woher? Gebäude)",
+   "en": "I've just come ___ the cinema. (Woher? building)"
+  },
+  {
+   "de": "Woher kommt ihr so spät? — ___ Theater.",
+   "en": "Where are you coming from so late? — ___ theatre."
+  },
+  {
+   "de": "Sie kommt ___ der Schweiz. (Land mit Artikel)",
+   "en": "She comes ___ Switzerland. (country with an article)"
+  },
+  {
+   "de": "Wie reagiert man zögernd?",
+   "en": "How do you react hesitantly?"
+  },
+  {
+   "de": "Wir kommen gerade ___ Markt. (von dem)",
+   "en": "We've just come ___ market. (von dem)"
+  },
+  {
+   "de": "Schreiben Sie eine Nachricht: Laden Sie jemanden zu einer Veranstaltung ein und überzeugen Sie die Person. Umfang: 40–60 Wörter Checkliste: • Nennen Sie die Veranstaltung, Ort und Uhrzeit. • Schreiben Sie zwei Sätze, die überzeugen sollen. • Fragen Sie nach einer Antwort.",
+   "en": "Write a message: Invite someone to an event and convince the person. Length: 40–60 words Checklist: • Name the event, the place and the time. • Write two sentences that are meant to convince. • Ask for a reply."
+  },
+  {
+   "de": "Aus einem Gebäude kommt man mit aus + Dativ.",
+   "en": "For coming out of a building, you use aus + dative."
+  },
+  {
+   "de": "Von einer Veranstaltung kommt man mit von dem → vom.",
+   "en": "For coming from an event, you use von dem → vom."
+  },
+  {
+   "de": "Herkunft aus einem Land: aus + Dativ.",
+   "en": "Coming from a country: aus + dative."
+  },
+  {
+   "de": "Zögern heißt: noch unsicher, aber nicht endgültig abgelehnt.",
+   "en": "Hesitating means: still unsure, but not definitely refused."
+  },
+  {
+   "de": "von dem → vom.",
+   "en": "von dem → vom (from the)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "begeistern",
+   "context": "Jemanden für etwas begeistern und auf Vorschläge zögernd reagieren.",
+   "en": "to get (someone) excited",
+   "lemma": ""
+  },
+  {
+   "form": "zögernd",
+   "context": "Jemanden für etwas begeistern und auf Vorschläge zögernd reagieren.",
+   "en": "hesitantly",
+   "lemma": "zögern"
+  },
+  {
+   "form": "überzeugen",
+   "context": "jemanden überzeugen und begeistern",
+   "en": "to convince",
+   "lemma": ""
+  },
+  {
+   "form": "Raum",
+   "context": "Auf die Frage Woher? antwortet man mit aus, von oder vom. aus benutzt man, wenn man aus einem Raum oder einem Land kommt; von und vom, wenn man von einem Ort, einer Veranstaltung oder einer Person zurückkommt.",
+   "en": "room; space",
+   "lemma": "der Raum"
+  },
+  {
+   "form": "zurückkommt",
+   "context": "Auf die Frage Woher? antwortet man mit aus, von oder vom. aus benutzt man, wenn man aus einem Raum oder einem Land kommt; von und vom, wenn man von einem Ort, einer Veranstaltung oder einer Person zurückkommt.",
+   "en": "comes back",
+   "lemma": "zurückkommen"
+  },
+  {
+   "form": "Gebäuden",
+   "context": "Sie ist gerade aus dem Museum gekommen.aus + Dativ bei Gebäuden",
+   "en": "buildings",
+   "lemma": "das Gebäude"
+  },
+  {
+   "form": "kostenlos",
+   "context": "die Veranstaltung, -en — EN: event · FR: l'événementDie Veranstaltung ist kostenlos.",
+   "en": "free (of charge)",
+   "lemma": ""
+  },
+  {
+   "form": "theatre",
+   "context": "das Theater, - — EN: theatre · FR: le théâtreGehen wir heute Abend ins Theater?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "théâtreGehen",
+   "context": "das Theater, - — EN: theatre · FR: le théâtreGehen wir heute Abend ins Theater?",
+   "en": "Gehen = go",
+   "lemma": "gehen"
+  },
+  {
+   "form": "Vorstellung",
+   "context": "die Vorstellung, -en — EN: performance, showing · FR: la représentationDie Vorstellung beginnt um acht.",
+   "en": "performance; idea",
+   "lemma": "die Vorstellung"
+  },
+  {
+   "form": "performance",
+   "context": "die Vorstellung, -en — EN: performance, showing · FR: la représentationDie Vorstellung beginnt um acht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "showing",
+   "context": "die Vorstellung, -en — EN: performance, showing · FR: la représentationDie Vorstellung beginnt um acht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "représentationDie",
+   "context": "die Vorstellung, -en — EN: performance, showing · FR: la représentationDie Vorstellung beginnt um acht.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "Museen",
+   "context": "das Museum, Museen — EN: museum · FR: le muséeDas Museum hat bis 18 Uhr geöffnet.",
+   "en": "museums",
+   "lemma": "das Museum"
+  },
+  {
+   "form": "muséeDas",
+   "context": "das Museum, Museen — EN: museum · FR: le muséeDas Museum hat bis 18 Uhr geöffnet.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "box",
+   "context": "die Kasse, -n — EN: box office · FR: la caisseKarten gibt es an der Kasse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "caisseKarten",
+   "context": "die Kasse, -n — EN: box office · FR: la caisseKarten gibt es an der Kasse.",
+   "en": "Karten = tickets",
+   "lemma": "die Karte"
+  },
+  {
+   "form": "sold",
+   "context": "ausverkauft — EN: sold out · FR: completLeider ist alles ausverkauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "out",
+   "context": "ausverkauft — EN: sold out · FR: completLeider ist alles ausverkauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "completLeider",
+   "context": "ausverkauft — EN: sold out · FR: completLeider ist alles ausverkauft.",
+   "en": "Leider = unfortunately",
+   "lemma": ""
+  },
+  {
+   "form": "convince",
+   "context": "überzeugen — EN: to convince · FR: convaincreDu hast mich überzeugt — ich komme mit!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "convaincreDu",
+   "context": "überzeugen — EN: to convince · FR: convaincreDu hast mich überzeugt — ich komme mit!",
+   "en": "Du = you",
+   "lemma": ""
+  },
+  {
+   "form": "überzeugt",
+   "context": "überzeugen — EN: to convince · FR: convaincreDu hast mich überzeugt — ich komme mit!",
+   "en": "convinced",
+   "lemma": "überzeugen"
+  },
+  {
+   "form": "begeistert",
+   "context": "begeistert sein von — EN: to be enthusiastic about · FR: être enthousiasmé parAlle waren begeistert von dem Konzert.",
+   "en": "enthusiastic, thrilled",
+   "lemma": ""
+  },
+  {
+   "form": "enthusiastic",
+   "context": "begeistert sein von — EN: to be enthusiastic about · FR: être enthousiasmé parAlle waren begeistert von dem Konzert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "enthousiasmé",
+   "context": "begeistert sein von — EN: to be enthusiastic about · FR: être enthousiasmé parAlle waren begeistert von dem Konzert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parAlle",
+   "context": "begeistert sein von — EN: to be enthusiastic about · FR: être enthousiasmé parAlle waren begeistert von dem Konzert.",
+   "en": "Alle = everyone",
+   "lemma": ""
+  },
+  {
+   "form": "zögern",
+   "context": "zögern — EN: to hesitate · FR: hésiterWarum zögerst du?",
+   "en": "to hesitate",
+   "lemma": ""
+  },
+  {
+   "form": "hesitate",
+   "context": "zögern — EN: to hesitate · FR: hésiterWarum zögerst du?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "hésiterWarum",
+   "context": "zögern — EN: to hesitate · FR: hésiterWarum zögerst du?",
+   "en": "Warum = why",
+   "lemma": ""
+  },
+  {
+   "form": "zögerst",
+   "context": "zögern — EN: to hesitate · FR: hésiterWarum zögerst du?",
+   "en": "hesitate (with du)",
+   "lemma": "zögern"
+  },
+  {
+   "form": "envieIch",
+   "context": "Lust haben — EN: to feel like · FR: avoir envieIch habe heute keine große Lust.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "große",
+   "context": "Lust haben — EN: to feel like · FR: avoir envieIch habe heute keine große Lust.",
+   "en": "big, great",
+   "lemma": "groß"
+  },
+  {
+   "form": "entscheiden",
+   "context": "sich entscheiden — EN: to decide · FR: se déciderIch kann mich nicht entscheiden.",
+   "en": "to decide (sich entscheiden)",
+   "lemma": ""
+  },
+  {
+   "form": "decide",
+   "context": "sich entscheiden — EN: to decide · FR: se déciderIch kann mich nicht entscheiden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déciderIch",
+   "context": "sich entscheiden — EN: to decide · FR: se déciderIch kann mich nicht entscheiden.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "unbedingt",
+   "context": "Das musst du unbedingt sehen!",
+   "en": "definitely, absolutely",
+   "lemma": ""
+  },
+  {
+   "form": "sehen",
+   "context": "Das musst du unbedingt sehen!",
+   "en": "to see",
+   "lemma": ""
+  },
+  {
+   "form": "Na",
+   "context": "Na ja, eigentlich bin ich ziemlich müde.",
+   "en": "well (na ja = oh well)",
+   "lemma": ""
+  },
+  {
+   "form": "Also",
+   "context": "Also gut, überredet!",
+   "en": "well, so (also gut = all right)",
+   "lemma": ""
+  },
+  {
+   "form": "überredet",
+   "context": "Also gut, überredet!",
+   "en": "persuaded, talked into",
+   "lemma": "überreden"
+  },
+  {
+   "form": "Mert",
+   "context": "Mert: Wohin gehen wir heute? Im Theater gibt es noch Karten.",
+   "en": "Mert (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Ana",
+   "context": "Ana: Hm, ich weiß noch nicht so recht. Ich bin ziemlich müde.",
+   "en": "Ana (name)",
+   "lemma": ""
+  },
+  {
+   "form": "reagiert",
+   "context": "Wie reagiert man zögernd?",
+   "en": "reacts",
+   "lemma": "reagieren"
+  },
+  {
+   "form": "Laden",
+   "context": "Schreiben Sie eine Nachricht: Laden Sie jemanden zu einer Veranstaltung ein und überzeugen Sie die Person. Umfang: 40–60 Wörter Checkliste: • Nennen Sie die Veranstaltung, Ort und Uhrzeit. • Schreiben Sie zwei Sätze, die überzeugen sollen. • Fragen Sie nach einer Antwort.",
+   "en": "(… ein) invite; (der Laden) shop",
+   "lemma": "einladen"
+  }
+ ]
+}
