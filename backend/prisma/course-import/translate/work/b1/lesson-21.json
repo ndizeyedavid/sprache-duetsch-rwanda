@@ -1,0 +1,625 @@
+{
+ "level": "B1",
+ "lesson": 21,
+ "title": "Konzerte und Veranstaltungen — Vorher muss noch viel organisiert werden",
+ "lines": [
+  {
+   "de": "Eine Veranstaltung vorbereiten — sagen, was getan werden muss.",
+   "en": "Preparing an event — saying what needs to be done."
+  },
+  {
+   "de": "Aufgaben bei einer Veranstaltung verteilen",
+   "en": "assign tasks for an event"
+  },
+  {
+   "de": "das Passiv Präsens mit Modalverben bilden",
+   "en": "form the present passive (Passiv Präsens) with modal verbs"
+  },
+  {
+   "de": "über Konzerte und Kulturangebote sprechen",
+   "en": "talk about concerts and cultural events"
+  },
+  {
+   "de": "Grammatik: Passiv mit Modalverben",
+   "en": "Grammar: passive voice (Passiv) with modal verbs"
+  },
+  {
+   "de": "Im Passiv ist wichtig, WAS gemacht wird, nicht wer es macht. Mit Modalverb lautet die Struktur: Modalverb (konjugiert) + Partizip II + werden (Infinitiv am Satzende).",
+   "en": "In the passive, what matters is WHAT is done, not who does it. With a modal verb, the structure is: modal verb (conjugated) + past participle (Partizip II) + werden (infinitive at the end of the sentence)."
+  },
+  {
+   "de": "Passiv mit Modalverb",
+   "en": "Passive with a modal verb"
+  },
+  {
+   "de": "Wir müssen die Tickets verkaufen.",
+   "en": "We have to sell the tickets."
+  },
+  {
+   "de": "Die Tickets müssen verkauft werden.",
+   "en": "The tickets have to be sold."
+  },
+  {
+   "de": "Jemand kann die Plakate drucken.",
+   "en": "Someone can print the posters."
+  },
+  {
+   "de": "Die Plakate können gedruckt werden.",
+   "en": "The posters can be printed."
+  },
+  {
+   "de": "Man darf hier nicht rauchen.",
+   "en": "You're not allowed to smoke here."
+  },
+  {
+   "de": "Hier darf nicht geraucht werden.",
+   "en": "Smoking is not permitted here."
+  },
+  {
+   "de": "Man sollte die Technik prüfen.",
+   "en": "Someone should check the technical equipment."
+  },
+  {
+   "de": "Die Technik sollte geprüft werden.",
+   "en": "The technical equipment should be checked."
+  },
+  {
+   "de": "Die Kostüme müssen bis Freitag fertiggestellt werden.müssen + Partizip II + werden",
+   "en": "The costumes have to be finished by Friday. müssen + past participle + werden"
+  },
+  {
+   "de": "Vorher muss natürlich fleißig geübt werden.Passiv ohne Subjekt — der Fokus liegt auf der Handlung",
+   "en": "Before that, of course, there has to be a lot of practice. passive without a subject — the focus is on the action"
+  },
+  {
+   "de": "Tipp: Soll die handelnde Person genannt werden: von + Dativ (Die Halle wird von einer Firma gereinigt) oder durch + Akkusativ bei Mitteln/Ursachen.",
+   "en": "Tip: If the person doing the action is to be named: von + dative (The hall is cleaned by a company) or durch + accusative for means/causes."
+  },
+  {
+   "de": "die Veranstaltung, -en — EN: event · FR: l'événementDie Veranstaltung ist ausverkauft.",
+   "en": "Example: The event is sold out."
+  },
+  {
+   "de": "der Auftritt, -e — EN: performance, appearance · FR: la prestationIhr erster Auftritt war ein großer Erfolg.",
+   "en": "Example: Her first performance was a great success."
+  },
+  {
+   "de": "die Bühne, -n — EN: stage · FR: la scèneAuf der Bühne standen fünf Musiker.",
+   "en": "Example: There were five musicians on the stage."
+  },
+  {
+   "de": "das Publikum (Sg.) — EN: audience · FR: le publicDas Publikum war begeistert.",
+   "en": "Example: The audience was thrilled."
+  },
+  {
+   "de": "proben — EN: to rehearse · FR: répéterWir proben zweimal pro Woche.",
+   "en": "Example: We rehearse twice a week."
+  },
+  {
+   "de": "die Generalprobe, -n — EN: dress rehearsal · FR: la répétition généraleDie Generalprobe ist am Donnerstag.",
+   "en": "Example: The dress rehearsal is on Thursday."
+  },
+  {
+   "de": "der Eintritt (Sg.) — EN: admission · FR: l'entréeDer Eintritt kostet 12 Euro.",
+   "en": "Example: Admission costs 12 euros."
+  },
+  {
+   "de": "ausverkauft — EN: sold out · FR: completDas Konzert ist leider ausverkauft.",
+   "en": "Example: Unfortunately, the concert is sold out."
+  },
+  {
+   "de": "die Werbung (Sg.) — EN: advertising · FR: la publicitéFür die Werbung ist Jonas zuständig.",
+   "en": "Example: Jonas is responsible for the advertising."
+  },
+  {
+   "de": "aufbauen / abbauen — EN: to set up / dismantle · FR: monter / démonterDie Bühne wird am Vortag aufgebaut.",
+   "en": "Example: The stage is set up the day before."
+  },
+  {
+   "de": "die Tournee, -n — EN: tour · FR: la tournéeDie Band geht im Sommer auf Tournee.",
+   "en": "Example: The band is going on tour in the summer."
+  },
+  {
+   "de": "sich kümmern um — EN: to take care of · FR: s'occuper deWer kümmert sich um die Technik?",
+   "en": "Example: Who is taking care of the technical equipment?"
+  },
+  {
+   "de": "Aufgaben verteilen",
+   "en": "Assigning tasks"
+  },
+  {
+   "de": "Könntest du dich um … kümmern?",
+   "en": "Could you take care of …?"
+  },
+  {
+   "de": "Wer übernimmt …?",
+   "en": "Who will take on …?"
+  },
+  {
+   "de": "Das muss unbedingt vorher erledigt werden.",
+   "en": "That absolutely has to be done beforehand."
+  },
+  {
+   "de": "über ein Konzert sprechen",
+   "en": "Talking about a concert"
+  },
+  {
+   "de": "Die Stimmung war unglaublich.",
+   "en": "The atmosphere was incredible."
+  },
+  {
+   "de": "Besonders gut gefallen hat mir …",
+   "en": "What I particularly liked was …"
+  },
+  {
+   "de": "Die Akustik war leider nicht optimal.",
+   "en": "Unfortunately, the acoustics weren't ideal."
+  },
+  {
+   "de": "planen",
+   "en": "Planning"
+  },
+  {
+   "de": "Bis wann muss das fertig sein?",
+   "en": "By when does that have to be ready?"
+  },
+  {
+   "de": "Was fehlt uns noch?",
+   "en": "What are we still missing?"
+  },
+  {
+   "de": "Dann halten wir Folgendes fest: …",
+   "en": "Then let's note down the following: …"
+  },
+  {
+   "de": "Die Veranstaltung ist ausverkauft.",
+   "en": "The event is sold out."
+  },
+  {
+   "de": "Ihr erster Auftritt war ein großer Erfolg.",
+   "en": "Her first performance was a great success."
+  },
+  {
+   "de": "Auf der Bühne standen fünf Musiker.",
+   "en": "There were five musicians on the stage."
+  },
+  {
+   "de": "Das Publikum war begeistert.",
+   "en": "The audience was thrilled."
+  },
+  {
+   "de": "Wir proben zweimal pro Woche.",
+   "en": "We rehearse twice a week."
+  },
+  {
+   "de": "Die Generalprobe ist am Donnerstag.",
+   "en": "The dress rehearsal is on Thursday."
+  },
+  {
+   "de": "Der Eintritt kostet 12 Euro.",
+   "en": "Admission costs 12 euros."
+  },
+  {
+   "de": "Das Konzert ist leider ausverkauft.",
+   "en": "Unfortunately, the concert is sold out."
+  },
+  {
+   "de": "Für die Werbung ist Jonas zuständig.",
+   "en": "Jonas is responsible for the advertising."
+  },
+  {
+   "de": "Die Bühne wird am Vortag aufgebaut.",
+   "en": "The stage is set up the day before."
+  },
+  {
+   "de": "Die Band geht im Sommer auf Tournee.",
+   "en": "The band is going on tour in the summer."
+  },
+  {
+   "de": "Wer kümmert sich um die Technik?",
+   "en": "Who is taking care of the technical equipment?"
+  },
+  {
+   "de": "Die Plakate ___ bis morgen gedruckt ___. (müssen … werden)",
+   "en": "The posters ___ ___ printed by tomorrow. (müssen … werden)"
+  },
+  {
+   "de": "Aktiv: „Man darf hier nicht rauchen.“ → Passiv:",
+   "en": "Active: “You're not allowed to smoke here.” → Passive:"
+  },
+  {
+   "de": "Die Technik ___ vorher noch geprüft ___. (sollen … werden)",
+   "en": "The technical equipment ___ ___ checked beforehand. (sollen … werden)"
+  },
+  {
+   "de": "Welcher Satz ist korrektes Passiv?",
+   "en": "Which sentence is a correct passive?"
+  },
+  {
+   "de": "Auftrittsmöglichkeiten ___ noch gesucht ___. (müssen … werden, Plural)",
+   "en": "Opportunities to perform still ___ ___ looked for. (müssen … werden, plural)"
+  },
+  {
+   "de": "Modalverb konjugiert + Partizip II + werden am Ende.",
+   "en": "Modal verb conjugated + past participle + werden at the end."
+  },
+  {
+   "de": "Unpersönliches Passiv: darf + Partizip II + werden.",
+   "en": "Impersonal passive: darf + past participle + werden."
+  },
+  {
+   "de": "sollte/soll + geprüft + werden.",
+   "en": "sollte/soll + geprüft + werden = should be checked."
+  },
+  {
+   "de": "Die handelnde Person steht mit von + Dativ.",
+   "en": "The person doing the action is named with von + dative."
+  },
+  {
+   "de": "Das Subjekt steht im Plural → müssen.",
+   "en": "The subject is plural → müssen."
+  }
+ ],
+ "forms": [
+  {
+   "form": "getan",
+   "context": "Eine Veranstaltung vorbereiten — sagen, was getan werden muss.",
+   "en": "done",
+   "lemma": "tun"
+  },
+  {
+   "form": "verteilen",
+   "context": "Aufgaben bei einer Veranstaltung verteilen",
+   "en": "to distribute, assign",
+   "lemma": ""
+  },
+  {
+   "form": "Kulturangebote",
+   "context": "über Konzerte und Kulturangebote sprechen",
+   "en": "cultural events",
+   "lemma": "das Kulturangebot"
+  },
+  {
+   "form": "lautet",
+   "context": "Im Passiv ist wichtig, WAS gemacht wird, nicht wer es macht. Mit Modalverb lautet die Struktur: Modalverb (konjugiert) + Partizip II + werden (Infinitiv am Satzende).",
+   "en": "is, reads",
+   "lemma": "lauten"
+  },
+  {
+   "form": "Tickets",
+   "context": "Wir müssen die Tickets verkaufen.",
+   "en": "tickets",
+   "lemma": "das Ticket"
+  },
+  {
+   "form": "Plakate",
+   "context": "Jemand kann die Plakate drucken.",
+   "en": "posters",
+   "lemma": "das Plakat"
+  },
+  {
+   "form": "drucken",
+   "context": "Jemand kann die Plakate drucken.",
+   "en": "to print",
+   "lemma": ""
+  },
+  {
+   "form": "gedruckt",
+   "context": "Die Plakate können gedruckt werden.",
+   "en": "printed",
+   "lemma": "drucken"
+  },
+  {
+   "form": "geraucht",
+   "context": "Hier darf nicht geraucht werden.",
+   "en": "smoked",
+   "lemma": "rauchen"
+  },
+  {
+   "form": "prüfen",
+   "context": "Man sollte die Technik prüfen.",
+   "en": "to check, test",
+   "lemma": ""
+  },
+  {
+   "form": "geprüft",
+   "context": "Die Technik sollte geprüft werden.",
+   "en": "checked, tested",
+   "lemma": "prüfen"
+  },
+  {
+   "form": "Kostüme",
+   "context": "Die Kostüme müssen bis Freitag fertiggestellt werden.müssen + Partizip II + werden",
+   "en": "costumes",
+   "lemma": "das Kostüm"
+  },
+  {
+   "form": "fertiggestellt",
+   "context": "Die Kostüme müssen bis Freitag fertiggestellt werden.müssen + Partizip II + werden",
+   "en": "finished, completed",
+   "lemma": "fertigstellen"
+  },
+  {
+   "form": "geübt",
+   "context": "Vorher muss natürlich fleißig geübt werden.Passiv ohne Subjekt — der Fokus liegt auf der Handlung",
+   "en": "practised",
+   "lemma": "üben"
+  },
+  {
+   "form": "Fokus",
+   "context": "Vorher muss natürlich fleißig geübt werden.Passiv ohne Subjekt — der Fokus liegt auf der Handlung",
+   "en": "focus",
+   "lemma": "der Fokus"
+  },
+  {
+   "form": "handelnde",
+   "context": "Tipp: Soll die handelnde Person genannt werden: von + Dativ (Die Halle wird von einer Firma gereinigt) oder durch + Akkusativ bei Mitteln/Ursachen.",
+   "en": "acting, doing the action",
+   "lemma": "handelnd"
+  },
+  {
+   "form": "Halle",
+   "context": "Tipp: Soll die handelnde Person genannt werden: von + Dativ (Die Halle wird von einer Firma gereinigt) oder durch + Akkusativ bei Mitteln/Ursachen.",
+   "en": "hall",
+   "lemma": "die Halle"
+  },
+  {
+   "form": "gereinigt",
+   "context": "Tipp: Soll die handelnde Person genannt werden: von + Dativ (Die Halle wird von einer Firma gereinigt) oder durch + Akkusativ bei Mitteln/Ursachen.",
+   "en": "cleaned",
+   "lemma": "reinigen"
+  },
+  {
+   "form": "Mitteln",
+   "context": "Tipp: Soll die handelnde Person genannt werden: von + Dativ (Die Halle wird von einer Firma gereinigt) oder durch + Akkusativ bei Mitteln/Ursachen.",
+   "en": "means",
+   "lemma": "das Mittel"
+  },
+  {
+   "form": "Ursachen",
+   "context": "Tipp: Soll die handelnde Person genannt werden: von + Dativ (Die Halle wird von einer Firma gereinigt) oder durch + Akkusativ bei Mitteln/Ursachen.",
+   "en": "causes",
+   "lemma": "die Ursache"
+  },
+  {
+   "form": "Auftritt",
+   "context": "der Auftritt, -e — EN: performance, appearance · FR: la prestationIhr erster Auftritt war ein großer Erfolg.",
+   "en": "performance, appearance",
+   "lemma": "der Auftritt"
+  },
+  {
+   "form": "appearance",
+   "context": "der Auftritt, -e — EN: performance, appearance · FR: la prestationIhr erster Auftritt war ein großer Erfolg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prestationIhr",
+   "context": "der Auftritt, -e — EN: performance, appearance · FR: la prestationIhr erster Auftritt war ein großer Erfolg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erster",
+   "context": "der Auftritt, -e — EN: performance, appearance · FR: la prestationIhr erster Auftritt war ein großer Erfolg.",
+   "en": "first",
+   "lemma": "erste"
+  },
+  {
+   "form": "Bühne",
+   "context": "die Bühne, -n — EN: stage · FR: la scèneAuf der Bühne standen fünf Musiker.",
+   "en": "stage",
+   "lemma": "die Bühne"
+  },
+  {
+   "form": "stage",
+   "context": "die Bühne, -n — EN: stage · FR: la scèneAuf der Bühne standen fünf Musiker.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "scèneAuf",
+   "context": "die Bühne, -n — EN: stage · FR: la scèneAuf der Bühne standen fünf Musiker.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "standen",
+   "context": "die Bühne, -n — EN: stage · FR: la scèneAuf der Bühne standen fünf Musiker.",
+   "en": "stood",
+   "lemma": "stehen"
+  },
+  {
+   "form": "Musiker",
+   "context": "die Bühne, -n — EN: stage · FR: la scèneAuf der Bühne standen fünf Musiker.",
+   "en": "musician(s)",
+   "lemma": "der Musiker"
+  },
+  {
+   "form": "Publikum",
+   "context": "das Publikum (Sg.) — EN: audience · FR: le publicDas Publikum war begeistert.",
+   "en": "audience",
+   "lemma": "das Publikum"
+  },
+  {
+   "form": "audience",
+   "context": "das Publikum (Sg.) — EN: audience · FR: le publicDas Publikum war begeistert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "publicDas",
+   "context": "das Publikum (Sg.) — EN: audience · FR: le publicDas Publikum war begeistert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "proben",
+   "context": "proben — EN: to rehearse · FR: répéterWir proben zweimal pro Woche.",
+   "en": "to rehearse",
+   "lemma": ""
+  },
+  {
+   "form": "rehearse",
+   "context": "proben — EN: to rehearse · FR: répéterWir proben zweimal pro Woche.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "répéterWir",
+   "context": "proben — EN: to rehearse · FR: répéterWir proben zweimal pro Woche.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Generalprobe",
+   "context": "die Generalprobe, -n — EN: dress rehearsal · FR: la répétition généraleDie Generalprobe ist am Donnerstag.",
+   "en": "dress rehearsal",
+   "lemma": "die Generalprobe"
+  },
+  {
+   "form": "rehearsal",
+   "context": "die Generalprobe, -n — EN: dress rehearsal · FR: la répétition généraleDie Generalprobe ist am Donnerstag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "répétition",
+   "context": "die Generalprobe, -n — EN: dress rehearsal · FR: la répétition généraleDie Generalprobe ist am Donnerstag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "généraleDie",
+   "context": "die Generalprobe, -n — EN: dress rehearsal · FR: la répétition généraleDie Generalprobe ist am Donnerstag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Donnerstag",
+   "context": "die Generalprobe, -n — EN: dress rehearsal · FR: la répétition généraleDie Generalprobe ist am Donnerstag.",
+   "en": "Thursday",
+   "lemma": "der Donnerstag"
+  },
+  {
+   "form": "completDas",
+   "context": "ausverkauft — EN: sold out · FR: completDas Konzert ist leider ausverkauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Werbung",
+   "context": "die Werbung (Sg.) — EN: advertising · FR: la publicitéFür die Werbung ist Jonas zuständig.",
+   "en": "advertising",
+   "lemma": "die Werbung"
+  },
+  {
+   "form": "advertising",
+   "context": "die Werbung (Sg.) — EN: advertising · FR: la publicitéFür die Werbung ist Jonas zuständig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "publicitéFür",
+   "context": "die Werbung (Sg.) — EN: advertising · FR: la publicitéFür die Werbung ist Jonas zuständig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "abbauen",
+   "context": "aufbauen / abbauen — EN: to set up / dismantle · FR: monter / démonterDie Bühne wird am Vortag aufgebaut.",
+   "en": "to dismantle, take down",
+   "lemma": ""
+  },
+  {
+   "form": "dismantle",
+   "context": "aufbauen / abbauen — EN: to set up / dismantle · FR: monter / démonterDie Bühne wird am Vortag aufgebaut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "démonterDie",
+   "context": "aufbauen / abbauen — EN: to set up / dismantle · FR: monter / démonterDie Bühne wird am Vortag aufgebaut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Vortag",
+   "context": "aufbauen / abbauen — EN: to set up / dismantle · FR: monter / démonterDie Bühne wird am Vortag aufgebaut.",
+   "en": "the day before",
+   "lemma": "der Vortag"
+  },
+  {
+   "form": "aufgebaut",
+   "context": "aufbauen / abbauen — EN: to set up / dismantle · FR: monter / démonterDie Bühne wird am Vortag aufgebaut.",
+   "en": "set up",
+   "lemma": "aufbauen"
+  },
+  {
+   "form": "Tournee",
+   "context": "die Tournee, -n — EN: tour · FR: la tournéeDie Band geht im Sommer auf Tournee.",
+   "en": "tour",
+   "lemma": "die Tournee"
+  },
+  {
+   "form": "tournéeDie",
+   "context": "die Tournee, -n — EN: tour · FR: la tournéeDie Band geht im Sommer auf Tournee.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Band",
+   "context": "die Tournee, -n — EN: tour · FR: la tournéeDie Band geht im Sommer auf Tournee.",
+   "en": "band (music)",
+   "lemma": "die Band"
+  },
+  {
+   "form": "deWer",
+   "context": "sich kümmern um — EN: to take care of · FR: s'occuper deWer kümmert sich um die Technik?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "kümmert",
+   "context": "sich kümmern um — EN: to take care of · FR: s'occuper deWer kümmert sich um die Technik?",
+   "en": "takes care (sich kümmern um)",
+   "lemma": "sich kümmern"
+  },
+  {
+   "form": "erledigt",
+   "context": "Das muss unbedingt vorher erledigt werden.",
+   "en": "done, taken care of",
+   "lemma": "erledigen"
+  },
+  {
+   "form": "Stimmung",
+   "context": "Die Stimmung war unglaublich.",
+   "en": "atmosphere, mood",
+   "lemma": "die Stimmung"
+  },
+  {
+   "form": "Akustik",
+   "context": "Die Akustik war leider nicht optimal.",
+   "en": "acoustics",
+   "lemma": "die Akustik"
+  },
+  {
+   "form": "optimal",
+   "context": "Die Akustik war leider nicht optimal.",
+   "en": "ideal, optimal",
+   "lemma": ""
+  },
+  {
+   "form": "korrektes",
+   "context": "Welcher Satz ist korrektes Passiv?",
+   "en": "correct",
+   "lemma": "korrekt"
+  },
+  {
+   "form": "Auftrittsmöglichkeiten",
+   "context": "Auftrittsmöglichkeiten ___ noch gesucht ___. (müssen … werden, Plural)",
+   "en": "opportunities to perform",
+   "lemma": "die Auftrittsmöglichkeit"
+  }
+ ]
+}
