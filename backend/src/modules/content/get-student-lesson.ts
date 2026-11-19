@@ -68,8 +68,16 @@ export const getStudentLesson = async (userId: string, lessonId: string) => {
     mySubmission: submissionByActivityId.has(a.id) ? presentSubmission(submissionByActivityId.get(a.id)!, a) : null,
   }));
 
+  // Module tests / final exams that open after this lesson (course v2), with the latest attempt.
+  const tests = await prisma.assessment.findMany({
+    where: { lessonId, isPublished: true, type: { in: ["MODULE_TEST", "FINAL_EXAM"] } },
+    select: { id: true, title: true, type: true, durationMinutes: true, passMark: true,
+      attempts: { where: { studentId: profile.studentId }, orderBy: { attemptNumber: "desc" }, take: 1, select: { status: true, score: true, maxScore: true, passed: true } } },
+  });
+
   return {
     ...lesson,
+    tests,
     activities: activitiesWithMy,
     progressStatus: progress?.status ?? "NOT_STARTED",
     secondsWatched: progress?.secondsWatched ?? 0,
