@@ -2,7 +2,7 @@ import { Router } from "express";
 import rateLimit from "express-rate-limit";
 import { asyncHandler } from "../../lib/async-handler.js";
 import { validate } from "../../middleware/validate.js";
-import { checkoutSchema } from "../paypack/paypack.schema.js";
+import { checkoutSchema } from "../mobile-money/mobile-money.schema.js";
 import * as controller from "./invoices.controller.js";
 import { invoiceCheckoutParam, invoiceTokenParam } from "./invoices.schema.js";
 
