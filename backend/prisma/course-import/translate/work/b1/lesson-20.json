@@ -1,0 +1,819 @@
+{
+ "level": "B1",
+ "lesson": 20,
+ "title": "Regeln — Indem man sich vorbereitet, vermeidet man Probleme",
+ "lines": [
+  {
+   "de": "Regeln und Sicherheitshinweise verstehen — Mittel und Folge ausdrücken.",
+   "en": "Understanding rules and safety instructions — expressing means and consequence."
+  },
+  {
+   "de": "Regeln und Hinweise verstehen und formulieren",
+   "en": "understand and formulate rules and instructions"
+  },
+  {
+   "de": "ein Mittel mit indem ausdrücken",
+   "en": "express a means with indem"
+  },
+  {
+   "de": "eine Folge mit sodass ausdrücken",
+   "en": "express a consequence with sodass"
+  },
+  {
+   "de": "Grammatik: indem (Mittel / Methode)",
+   "en": "Grammar: indem (means / method)"
+  },
+  {
+   "de": "indem beantwortet die Frage: Wie? Auf welche Weise? Es leitet einen Nebensatz ein (Verb am Ende) und nennt das Mittel, mit dem etwas erreicht wird.",
+   "en": "indem answers the question: How? In what way? It introduces a subordinate clause (verb at the end) and names the means by which something is achieved."
+  },
+  {
+   "de": "Satz",
+   "en": "Sentence"
+  },
+  {
+   "de": "Wie spart man Energie?",
+   "en": "How do you save energy?"
+  },
+  {
+   "de": "Indem man weniger heizt, spart man viel Energie.",
+   "en": "By heating less, you save a lot of energy."
+  },
+  {
+   "de": "Wie bereitet man sich vor?",
+   "en": "How do you prepare?"
+  },
+  {
+   "de": "Man bereitet sich vor, indem man die Route vorher notiert.",
+   "en": "You prepare by writing down the route beforehand."
+  },
+  {
+   "de": "Indem du jeden Tag zehn Minuten übst, machst du schnelle Fortschritte.Mittel vorn",
+   "en": "By practising ten minutes every day, you make quick progress. means at the front"
+  },
+  {
+   "de": "Du kannst viel Geld sparen, indem du mit dem Rad fährst.Mittel hinten",
+   "en": "You can save a lot of money by cycling. means at the end"
+  },
+  {
+   "de": "Tipp: Nicht verwechseln: in dem (Präposition + Artikel, z. B. in dem Buch) ≠ indem (Konjunktion).",
+   "en": "Tip: Don't mix them up: in dem (preposition + article, e.g. in dem Buch) ≠ indem (conjunction)."
+  },
+  {
+   "de": "Grammatik: sodass (Folge)",
+   "en": "Grammar: sodass (consequence)"
+  },
+  {
+   "de": "sodass nennt die Folge einer Handlung und leitet einen Nebensatz ein (Verb am Ende). Oft lassen sich indem- und sodass-Sätze ineinander umformen.",
+   "en": "sodass names the consequence of an action and introduces a subordinate clause (verb at the end). indem and sodass clauses can often be turned into each other."
+  },
+  {
+   "de": "Folge",
+   "en": "Consequence"
+  },
+  {
+   "de": "Indem du Route und Ziel notierst,",
+   "en": "By writing down your route and destination,"
+  },
+  {
+   "de": "kann man dich leichter finden.",
+   "en": "people can find you more easily."
+  },
+  {
+   "de": "Notiere Route und Ziel,",
+   "en": "Write down your route and destination,"
+  },
+  {
+   "de": "sodass man dich leichter finden kann.",
+   "en": "so that people can find you more easily."
+  },
+  {
+   "de": "Es hat stark geschneit,",
+   "en": "It snowed heavily,"
+  },
+  {
+   "de": "sodass der Weg gesperrt wurde.",
+   "en": "so that the path was closed."
+  },
+  {
+   "de": "Der Kurs ist gut strukturiert, sodass man schnell vorankommt.Folge",
+   "en": "The course is well structured, so you make quick progress. consequence"
+  },
+  {
+   "de": "Er sprach sehr deutlich, sodass ihn alle verstanden.auch: so deutlich, dass …",
+   "en": "He spoke very clearly, so that everyone understood him. also: so deutlich, dass …"
+  },
+  {
+   "de": "Tipp: Variante mit Betonung: Er sprach so deutlich, dass ihn alle verstanden.",
+   "en": "Tip: Variant with emphasis: He spoke so clearly that everyone understood him."
+  },
+  {
+   "de": "die Vorschrift, -en — EN: regulation · FR: la prescriptionDie Vorschriften gelten für alle.",
+   "en": "Example: The regulations apply to everyone."
+  },
+  {
+   "de": "die Sicherheit (Sg.) — EN: safety, security · FR: la sécuritéSicherheit geht vor.",
+   "en": "Example: Safety comes first."
+  },
+  {
+   "de": "verboten sein — EN: to be forbidden · FR: être interditHier ist Rauchen verboten.",
+   "en": "Example: Smoking is forbidden here."
+  },
+  {
+   "de": "erlaubt sein — EN: to be allowed · FR: être permisFotografieren ist erlaubt.",
+   "en": "Example: Taking photos is allowed."
+  },
+  {
+   "de": "beachten — EN: to observe, pay attention to · FR: respecter, tenir compte deBitte beachten Sie die Hinweise.",
+   "en": "Example: Please pay attention to the notices."
+  },
+  {
+   "de": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "Example: That's how you avoid unnecessary risks."
+  },
+  {
+   "de": "die Gefahr, -en — EN: danger · FR: le dangerBei Nebel besteht erhöhte Gefahr.",
+   "en": "Example: In fog there is an increased danger."
+  },
+  {
+   "de": "verunglücken — EN: to have an accident · FR: avoir un accidentJedes Jahr verunglücken Wanderer im Gebirge.",
+   "en": "Example: Every year hikers have accidents in the mountains."
+  },
+  {
+   "de": "die Ausrüstung (Sg.) — EN: equipment · FR: l'équipementOhne passende Ausrüstung sollte man nicht losgehen.",
+   "en": "Example: You shouldn't set off without suitable equipment."
+  },
+  {
+   "de": "sich vorbereiten auf — EN: to prepare for · FR: se préparer àBereiten Sie sich gut auf die Tour vor.",
+   "en": "Example: Prepare well for the tour."
+  },
+  {
+   "de": "die Haftung (Sg.) — EN: liability · FR: la responsabilitéFür Unfälle übernehmen wir keine Haftung.",
+   "en": "Example: We accept no liability for accidents."
+  },
+  {
+   "de": "rücksichtsvoll — EN: considerate · FR: prévenantVerhalten Sie sich rücksichtsvoll.",
+   "en": "Example: Please be considerate."
+  },
+  {
+   "de": "Regeln formulieren",
+   "en": "Formulating rules"
+  },
+  {
+   "de": "Bitte beachten Sie, dass …",
+   "en": "Please note that …"
+  },
+  {
+   "de": "Es ist nicht gestattet, … zu …",
+   "en": "It is not permitted to …"
+  },
+  {
+   "de": "Grundsätzlich gilt: …",
+   "en": "As a general rule: …"
+  },
+  {
+   "de": "Tipps geben",
+   "en": "Giving tips"
+  },
+  {
+   "de": "Am besten gehen Sie so vor: …",
+   "en": "The best way to proceed is as follows: …"
+  },
+  {
+   "de": "Indem Sie … , vermeiden Sie …",
+   "en": "By … , you avoid …"
+  },
+  {
+   "de": "Achten Sie unbedingt darauf, dass …",
+   "en": "Make absolutely sure that …"
+  },
+  {
+   "de": "auf Regeln reagieren",
+   "en": "Reacting to rules"
+  },
+  {
+   "de": "Das leuchtet mir ein.",
+   "en": "That makes sense to me."
+  },
+  {
+   "de": "Ist das wirklich nötig?",
+   "en": "Is that really necessary?"
+  },
+  {
+   "de": "Dann halte ich mich natürlich daran.",
+   "en": "Then of course I'll stick to it."
+  },
+  {
+   "de": "Die Vorschriften gelten für alle.",
+   "en": "The regulations apply to everyone."
+  },
+  {
+   "de": "Sicherheit geht vor.",
+   "en": "Safety comes first."
+  },
+  {
+   "de": "Hier ist Rauchen verboten.",
+   "en": "Smoking is forbidden here."
+  },
+  {
+   "de": "Fotografieren ist erlaubt.",
+   "en": "Taking photos is allowed."
+  },
+  {
+   "de": "Bitte beachten Sie die Hinweise.",
+   "en": "Please pay attention to the notices."
+  },
+  {
+   "de": "So vermeidet man unnötige Risiken.",
+   "en": "That's how you avoid unnecessary risks."
+  },
+  {
+   "de": "Bei Nebel besteht erhöhte Gefahr.",
+   "en": "In fog there is an increased danger."
+  },
+  {
+   "de": "Jedes Jahr verunglücken Wanderer im Gebirge.",
+   "en": "Every year hikers have accidents in the mountains."
+  },
+  {
+   "de": "Ohne passende Ausrüstung sollte man nicht losgehen.",
+   "en": "You shouldn't set off without suitable equipment."
+  },
+  {
+   "de": "Bereiten Sie sich gut auf die Tour vor.",
+   "en": "Prepare well for the tour."
+  },
+  {
+   "de": "Für Unfälle übernehmen wir keine Haftung.",
+   "en": "We accept no liability for accidents."
+  },
+  {
+   "de": "Verhalten Sie sich rücksichtsvoll.",
+   "en": "Please be considerate."
+  },
+  {
+   "de": "___ man früh losgeht, vermeidet man die größte Hitze.",
+   "en": "___ you set off early, you avoid the worst of the heat."
+  },
+  {
+   "de": "Der Weg war gut markiert, ___ wir uns nicht verlaufen haben.",
+   "en": "The path was well marked, ___ we didn't get lost."
+  },
+  {
+   "de": "Du sparst Strom, ___ du das Licht ausschaltest.",
+   "en": "You save electricity ___ you switch off the light."
+  },
+  {
+   "de": "Welcher Satz nennt ein Mittel?",
+   "en": "Which sentence names a means?"
+  },
+  {
+   "de": "Er erklärte alles sehr genau, ___ jeder es verstand.",
+   "en": "He explained everything very precisely, ___ everyone understood it."
+  },
+  {
+   "de": "indem nennt das Mittel: Wie vermeidet man die Hitze?",
+   "en": "indem names the means: How do you avoid the heat?"
+  },
+  {
+   "de": "Hier steht die Folge der guten Markierung.",
+   "en": "Here the clause gives the consequence of the good markings."
+  },
+  {
+   "de": "Mittel / Methode → indem.",
+   "en": "Means / method → indem."
+  },
+  {
+   "de": "indem = auf welche Weise.",
+   "en": "indem = in what way."
+  },
+  {
+   "de": "Folge eines Verhaltens → sodass.",
+   "en": "Consequence of a behaviour → sodass."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Sicherheitshinweise",
+   "context": "Regeln und Sicherheitshinweise verstehen — Mittel und Folge ausdrücken.",
+   "en": "safety instructions",
+   "lemma": "der Sicherheitshinweis"
+  },
+  {
+   "form": "indem",
+   "context": "ein Mittel mit indem ausdrücken",
+   "en": "by (doing)",
+   "lemma": ""
+  },
+  {
+   "form": "sodass",
+   "context": "eine Folge mit sodass ausdrücken",
+   "en": "so that",
+   "lemma": ""
+  },
+  {
+   "form": "Methode",
+   "context": "Grammatik: indem (Mittel / Methode)",
+   "en": "method",
+   "lemma": "die Methode"
+  },
+  {
+   "form": "beantwortet",
+   "context": "indem beantwortet die Frage: Wie? Auf welche Weise? Es leitet einen Nebensatz ein (Verb am Ende) und nennt das Mittel, mit dem etwas erreicht wird.",
+   "en": "answers",
+   "lemma": "beantworten"
+  },
+  {
+   "form": "Weise",
+   "context": "indem beantwortet die Frage: Wie? Auf welche Weise? Es leitet einen Nebensatz ein (Verb am Ende) und nennt das Mittel, mit dem etwas erreicht wird.",
+   "en": "way, manner",
+   "lemma": "die Weise"
+  },
+  {
+   "form": "erreicht",
+   "context": "indem beantwortet die Frage: Wie? Auf welche Weise? Es leitet einen Nebensatz ein (Verb am Ende) und nennt das Mittel, mit dem etwas erreicht wird.",
+   "en": "achieved, reached",
+   "lemma": "erreichen"
+  },
+  {
+   "form": "Energie",
+   "context": "Wie spart man Energie?",
+   "en": "energy",
+   "lemma": "die Energie"
+  },
+  {
+   "form": "Indem",
+   "context": "Indem man weniger heizt, spart man viel Energie.",
+   "en": "by (doing)",
+   "lemma": ""
+  },
+  {
+   "form": "heizt",
+   "context": "Indem man weniger heizt, spart man viel Energie.",
+   "en": "heats",
+   "lemma": "heizen"
+  },
+  {
+   "form": "bereitet",
+   "context": "Wie bereitet man sich vor?",
+   "en": "prepares (sich … vor)",
+   "lemma": "vorbereiten"
+  },
+  {
+   "form": "Route",
+   "context": "Man bereitet sich vor, indem man die Route vorher notiert.",
+   "en": "route",
+   "lemma": "die Route"
+  },
+  {
+   "form": "notiert",
+   "context": "Man bereitet sich vor, indem man die Route vorher notiert.",
+   "en": "writes down, notes",
+   "lemma": "notieren"
+  },
+  {
+   "form": "übst",
+   "context": "Indem du jeden Tag zehn Minuten übst, machst du schnelle Fortschritte.Mittel vorn",
+   "en": "practise (with du)",
+   "lemma": "üben"
+  },
+  {
+   "form": "schnelle",
+   "context": "Indem du jeden Tag zehn Minuten übst, machst du schnelle Fortschritte.Mittel vorn",
+   "en": "quick, fast",
+   "lemma": "schnell"
+  },
+  {
+   "form": "fährst",
+   "context": "Du kannst viel Geld sparen, indem du mit dem Rad fährst.Mittel hinten",
+   "en": "ride, go (with du)",
+   "lemma": "fahren"
+  },
+  {
+   "form": "sodass-Sätze",
+   "context": "sodass nennt die Folge einer Handlung und leitet einen Nebensatz ein (Verb am Ende). Oft lassen sich indem- und sodass-Sätze ineinander umformen.",
+   "en": "sodass clauses",
+   "lemma": "der sodass-Satz"
+  },
+  {
+   "form": "ineinander",
+   "context": "sodass nennt die Folge einer Handlung und leitet einen Nebensatz ein (Verb am Ende). Oft lassen sich indem- und sodass-Sätze ineinander umformen.",
+   "en": "into each other",
+   "lemma": ""
+  },
+  {
+   "form": "umformen",
+   "context": "sodass nennt die Folge einer Handlung und leitet einen Nebensatz ein (Verb am Ende). Oft lassen sich indem- und sodass-Sätze ineinander umformen.",
+   "en": "to transform, rephrase",
+   "lemma": ""
+  },
+  {
+   "form": "notierst",
+   "context": "Indem du Route und Ziel notierst,",
+   "en": "write down (with du)",
+   "lemma": "notieren"
+  },
+  {
+   "form": "leichter",
+   "context": "kann man dich leichter finden.",
+   "en": "more easily; lighter",
+   "lemma": "leicht"
+  },
+  {
+   "form": "Notiere",
+   "context": "Notiere Route und Ziel,",
+   "en": "write down (command)",
+   "lemma": "notieren"
+  },
+  {
+   "form": "gesperrt",
+   "context": "sodass der Weg gesperrt wurde.",
+   "en": "closed, blocked",
+   "lemma": "sperren"
+  },
+  {
+   "form": "strukturiert",
+   "context": "Der Kurs ist gut strukturiert, sodass man schnell vorankommt.Folge",
+   "en": "structured",
+   "lemma": "strukturieren"
+  },
+  {
+   "form": "vorankommt",
+   "context": "Der Kurs ist gut strukturiert, sodass man schnell vorankommt.Folge",
+   "en": "makes progress",
+   "lemma": "vorankommen"
+  },
+  {
+   "form": "Vorschrift",
+   "context": "die Vorschrift, -en — EN: regulation · FR: la prescriptionDie Vorschriften gelten für alle.",
+   "en": "regulation, rule",
+   "lemma": "die Vorschrift"
+  },
+  {
+   "form": "regulation",
+   "context": "die Vorschrift, -en — EN: regulation · FR: la prescriptionDie Vorschriften gelten für alle.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prescriptionDie",
+   "context": "die Vorschrift, -en — EN: regulation · FR: la prescriptionDie Vorschriften gelten für alle.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Vorschriften",
+   "context": "die Vorschrift, -en — EN: regulation · FR: la prescriptionDie Vorschriften gelten für alle.",
+   "en": "regulations, rules",
+   "lemma": "die Vorschrift"
+  },
+  {
+   "form": "Sicherheit",
+   "context": "die Sicherheit (Sg.) — EN: safety, security · FR: la sécuritéSicherheit geht vor.",
+   "en": "safety, security",
+   "lemma": "die Sicherheit"
+  },
+  {
+   "form": "safety",
+   "context": "die Sicherheit (Sg.) — EN: safety, security · FR: la sécuritéSicherheit geht vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "security",
+   "context": "die Sicherheit (Sg.) — EN: safety, security · FR: la sécuritéSicherheit geht vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sécuritéSicherheit",
+   "context": "die Sicherheit (Sg.) — EN: safety, security · FR: la sécuritéSicherheit geht vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "interditHier",
+   "context": "verboten sein — EN: to be forbidden · FR: être interditHier ist Rauchen verboten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "permisFotografieren",
+   "context": "erlaubt sein — EN: to be allowed · FR: être permisFotografieren ist erlaubt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beachten",
+   "context": "beachten — EN: to observe, pay attention to · FR: respecter, tenir compte deBitte beachten Sie die Hinweise.",
+   "en": "to observe, pay attention to",
+   "lemma": ""
+  },
+  {
+   "form": "observe",
+   "context": "beachten — EN: to observe, pay attention to · FR: respecter, tenir compte deBitte beachten Sie die Hinweise.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "respecter",
+   "context": "beachten — EN: to observe, pay attention to · FR: respecter, tenir compte deBitte beachten Sie die Hinweise.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tenir",
+   "context": "beachten — EN: to observe, pay attention to · FR: respecter, tenir compte deBitte beachten Sie die Hinweise.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "compte",
+   "context": "beachten — EN: to observe, pay attention to · FR: respecter, tenir compte deBitte beachten Sie die Hinweise.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deBitte",
+   "context": "beachten — EN: to observe, pay attention to · FR: respecter, tenir compte deBitte beachten Sie die Hinweise.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vermeiden",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "to avoid",
+   "lemma": ""
+  },
+  {
+   "form": "vermied",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "avoided",
+   "lemma": "vermeiden"
+  },
+  {
+   "form": "vermieden",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "avoided",
+   "lemma": "vermeiden"
+  },
+  {
+   "form": "avoid",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "éviterSo",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vermeidet",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "avoids",
+   "lemma": "vermeiden"
+  },
+  {
+   "form": "unnötige",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "unnecessary",
+   "lemma": "unnötig"
+  },
+  {
+   "form": "Risiken",
+   "context": "vermeiden (vermied, vermieden) — EN: to avoid · FR: éviterSo vermeidet man unnötige Risiken.",
+   "en": "risks",
+   "lemma": "das Risiko"
+  },
+  {
+   "form": "Gefahr",
+   "context": "die Gefahr, -en — EN: danger · FR: le dangerBei Nebel besteht erhöhte Gefahr.",
+   "en": "danger",
+   "lemma": "die Gefahr"
+  },
+  {
+   "form": "danger",
+   "context": "die Gefahr, -en — EN: danger · FR: le dangerBei Nebel besteht erhöhte Gefahr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dangerBei",
+   "context": "die Gefahr, -en — EN: danger · FR: le dangerBei Nebel besteht erhöhte Gefahr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Nebel",
+   "context": "die Gefahr, -en — EN: danger · FR: le dangerBei Nebel besteht erhöhte Gefahr.",
+   "en": "fog",
+   "lemma": "der Nebel"
+  },
+  {
+   "form": "erhöhte",
+   "context": "die Gefahr, -en — EN: danger · FR: le dangerBei Nebel besteht erhöhte Gefahr.",
+   "en": "increased",
+   "lemma": "erhöht"
+  },
+  {
+   "form": "verunglücken",
+   "context": "verunglücken — EN: to have an accident · FR: avoir un accidentJedes Jahr verunglücken Wanderer im Gebirge.",
+   "en": "to have an accident",
+   "lemma": ""
+  },
+  {
+   "form": "accidentJedes",
+   "context": "verunglücken — EN: to have an accident · FR: avoir un accidentJedes Jahr verunglücken Wanderer im Gebirge.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Gebirge",
+   "context": "verunglücken — EN: to have an accident · FR: avoir un accidentJedes Jahr verunglücken Wanderer im Gebirge.",
+   "en": "mountains",
+   "lemma": "das Gebirge"
+  },
+  {
+   "form": "Ausrüstung",
+   "context": "die Ausrüstung (Sg.) — EN: equipment · FR: l'équipementOhne passende Ausrüstung sollte man nicht losgehen.",
+   "en": "equipment",
+   "lemma": "die Ausrüstung"
+  },
+  {
+   "form": "equipment",
+   "context": "die Ausrüstung (Sg.) — EN: equipment · FR: l'équipementOhne passende Ausrüstung sollte man nicht losgehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'équipementOhne",
+   "context": "die Ausrüstung (Sg.) — EN: equipment · FR: l'équipementOhne passende Ausrüstung sollte man nicht losgehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "losgehen",
+   "context": "die Ausrüstung (Sg.) — EN: equipment · FR: l'équipementOhne passende Ausrüstung sollte man nicht losgehen.",
+   "en": "to set off",
+   "lemma": ""
+  },
+  {
+   "form": "vorbereiten",
+   "context": "sich vorbereiten auf — EN: to prepare for · FR: se préparer àBereiten Sie sich gut auf die Tour vor.",
+   "en": "(sich) to prepare",
+   "lemma": ""
+  },
+  {
+   "form": "prepare",
+   "context": "sich vorbereiten auf — EN: to prepare for · FR: se préparer àBereiten Sie sich gut auf die Tour vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "préparer",
+   "context": "sich vorbereiten auf — EN: to prepare for · FR: se préparer àBereiten Sie sich gut auf die Tour vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àBereiten",
+   "context": "sich vorbereiten auf — EN: to prepare for · FR: se préparer àBereiten Sie sich gut auf die Tour vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Haftung",
+   "context": "die Haftung (Sg.) — EN: liability · FR: la responsabilitéFür Unfälle übernehmen wir keine Haftung.",
+   "en": "liability",
+   "lemma": "die Haftung"
+  },
+  {
+   "form": "liability",
+   "context": "die Haftung (Sg.) — EN: liability · FR: la responsabilitéFür Unfälle übernehmen wir keine Haftung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "responsabilitéFür",
+   "context": "die Haftung (Sg.) — EN: liability · FR: la responsabilitéFür Unfälle übernehmen wir keine Haftung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Unfälle",
+   "context": "die Haftung (Sg.) — EN: liability · FR: la responsabilitéFür Unfälle übernehmen wir keine Haftung.",
+   "en": "accidents",
+   "lemma": "der Unfall"
+  },
+  {
+   "form": "rücksichtsvoll",
+   "context": "rücksichtsvoll — EN: considerate · FR: prévenantVerhalten Sie sich rücksichtsvoll.",
+   "en": "considerate",
+   "lemma": ""
+  },
+  {
+   "form": "considerate",
+   "context": "rücksichtsvoll — EN: considerate · FR: prévenantVerhalten Sie sich rücksichtsvoll.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prévenantVerhalten",
+   "context": "rücksichtsvoll — EN: considerate · FR: prévenantVerhalten Sie sich rücksichtsvoll.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gestattet",
+   "context": "Es ist nicht gestattet, … zu …",
+   "en": "permitted",
+   "lemma": "gestatten"
+  },
+  {
+   "form": "Grundsätzlich",
+   "context": "Grundsätzlich gilt: …",
+   "en": "in principle, as a rule",
+   "lemma": ""
+  },
+  {
+   "form": "leuchtet",
+   "context": "Das leuchtet mir ein.",
+   "en": "makes sense (… ein); shines",
+   "lemma": "einleuchten"
+  },
+  {
+   "form": "Fotografieren",
+   "context": "Fotografieren ist erlaubt.",
+   "en": "taking photos",
+   "lemma": "das Fotografieren"
+  },
+  {
+   "form": "Bereiten",
+   "context": "Bereiten Sie sich gut auf die Tour vor.",
+   "en": "prepare (… vor)",
+   "lemma": "vorbereiten"
+  },
+  {
+   "form": "Verhalten",
+   "context": "Verhalten Sie sich rücksichtsvoll.",
+   "en": "behave (sich verhalten); behaviour",
+   "lemma": "sich verhalten"
+  },
+  {
+   "form": "losgeht",
+   "context": "___ man früh losgeht, vermeidet man die größte Hitze.",
+   "en": "sets off",
+   "lemma": "losgehen"
+  },
+  {
+   "form": "Hitze",
+   "context": "___ man früh losgeht, vermeidet man die größte Hitze.",
+   "en": "heat",
+   "lemma": "die Hitze"
+  },
+  {
+   "form": "markiert",
+   "context": "Der Weg war gut markiert, ___ wir uns nicht verlaufen haben.",
+   "en": "marked",
+   "lemma": "markieren"
+  },
+  {
+   "form": "verlaufen",
+   "context": "Der Weg war gut markiert, ___ wir uns nicht verlaufen haben.",
+   "en": "got lost (sich verlaufen)",
+   "lemma": "sich verlaufen"
+  },
+  {
+   "form": "sparst",
+   "context": "Du sparst Strom, ___ du das Licht ausschaltest.",
+   "en": "save (with du)",
+   "lemma": "sparen"
+  },
+  {
+   "form": "Strom",
+   "context": "Du sparst Strom, ___ du das Licht ausschaltest.",
+   "en": "electricity; stream",
+   "lemma": "der Strom"
+  },
+  {
+   "form": "Licht",
+   "context": "Du sparst Strom, ___ du das Licht ausschaltest.",
+   "en": "light",
+   "lemma": "das Licht"
+  },
+  {
+   "form": "ausschaltest",
+   "context": "Du sparst Strom, ___ du das Licht ausschaltest.",
+   "en": "switch off (with du)",
+   "lemma": "ausschalten"
+  },
+  {
+   "form": "erklärte",
+   "context": "Er erklärte alles sehr genau, ___ jeder es verstand.",
+   "en": "explained",
+   "lemma": "erklären"
+  }
+ ]
+}
