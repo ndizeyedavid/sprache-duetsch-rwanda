@@ -31,7 +31,7 @@ export function ActivityReviewPanel({ type, config, response, review }: Props) {
       : <button type="button" className="btn btn-sm gap-2 rounded-full" onClick={() => void openMaterial(file.fileUrl, 'Your submission').catch(() => {})}><FiFileText aria-hidden />Open your file</button> : null}
     {file?.text ? <p className="rounded-box bg-base-200 p-3 text-xs">Your note: {file.text}</p> : null}
     {review?.transcript ? <details className="rounded-box bg-base-200 p-3 text-sm" open><summary className="cursor-pointer text-xs font-semibold">Transcript</summary><p className="mt-2 whitespace-pre-wrap" lang="de">{review.transcript}</p></details> : null}
-    {review?.modelAnswer ? <details className="rounded-box bg-base-200 p-3 text-sm"><summary className="cursor-pointer text-xs font-semibold">Compare with the model answer</summary><p className="mt-2 whitespace-pre-wrap" lang="de">{review.modelAnswer}</p></details> : null}
+    {review?.modelAnswer ? <details className="rounded-box bg-base-200 p-3 text-sm"><summary className="cursor-pointer text-xs font-semibold">Compare with the model answer</summary><p className="mt-2 whitespace-pre-wrap" lang="de">{review.modelAnswer}</p>{review.modelAnswerEn ? <p className="mt-2 whitespace-pre-wrap italic text-muted">{review.modelAnswerEn}</p> : null}</details> : null}
     {review?.explanation ? <p className="rounded-box bg-base-200 p-3 text-xs">{review.explanation}</p> : null}
   </section>;
 }
