@@ -20,6 +20,7 @@ export function RecordingPlayer({ activityId, type, config, value, onChange, dis
     {say ? <div className="rounded-box border border-base-300 bg-base-100 p-4">
       <p className="text-xs font-semibold text-muted">{type === 'PRONUNCIATION' ? 'Say this aloud' : 'Your speaking task'}</p>
       <p className={`mt-1 whitespace-pre-wrap ${type === 'PRONUNCIATION' ? 'text-2xl font-bold' : 'text-sm'}`} lang={type === 'PRONUNCIATION' ? 'de' : undefined}>{say}</p>
+      {text(config.promptEn) ? <p className="mt-2 whitespace-pre-wrap rounded-box bg-brand-tint p-3 text-sm"><span className="font-semibold">In English: </span>{text(config.promptEn)}</p> : null}
     </div> : null}
     {model ? <div><p className="mb-1 text-xs font-semibold">Listen to the model first</p><AuthenticatedMedia url={model} kind="audio" title="model audio" className="w-full" /></div> : null}
     <AudioRecorder disabled={disabled || busy} onRecordingChange={setRecording} onFile={attach} maxSeconds={maxSeconds}
