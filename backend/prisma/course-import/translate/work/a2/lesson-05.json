@@ -1,0 +1,757 @@
+{
+ "level": "A2",
+ "lesson": 5,
+ "title": "Stadtbesichtigung — Schaut mal, der schöne Dom!",
+ "lines": [
+  {
+   "de": "Eine Stadt besichtigen, Sehenswürdigkeiten beschreiben und gemeinsam planen.",
+   "en": "Visit a city, describe sights and make plans together."
+  },
+  {
+   "de": "Textsorte: Postkarte · Internet-Eintrag",
+   "en": "Text type: Postcard · Internet post"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Schreiben Teil 1 (kurze Mitteilung); ÖSD A2 Schreiben",
+   "en": "Exam link: Goethe A2 Writing part 1 (short message); ÖSD A2 Writing"
+  },
+  {
+   "de": "Sehenswürdigkeiten beschreiben und bewerten",
+   "en": "describe and evaluate sights"
+  },
+  {
+   "de": "etwas gemeinsam planen",
+   "en": "plan something together"
+  },
+  {
+   "de": "Adjektive nach dem bestimmten Artikel richtig deklinieren",
+   "en": "use the correct adjective endings after the definite article"
+  },
+  {
+   "de": "Grammatik: Adjektive nach dem bestimmten Artikel",
+   "en": "Grammar: adjectives after the definite article (bestimmter Artikel)"
+  },
+  {
+   "de": "Nach der, die, das (und nach dieser, jeder, alle) ist es einfach: Das Adjektiv endet nur auf -e oder -en. Im Nominativ und im Akkusativ außer maskulin steht -e, sonst überall -en.",
+   "en": "After der, die, das (and after dieser, jeder, alle) it is easy: the adjective only ends in -e or -en. In the nominative, and in the accusative except masculine, the ending is -e; everywhere else it is -en."
+  },
+  {
+   "de": "der schöne Dom",
+   "en": "the beautiful cathedral"
+  },
+  {
+   "de": "den schönen Dom",
+   "en": "the beautiful cathedral"
+  },
+  {
+   "de": "dem schönen Dom",
+   "en": "the beautiful cathedral"
+  },
+  {
+   "de": "das alte Rathaus",
+   "en": "the old town hall"
+  },
+  {
+   "de": "dem alten Rathaus",
+   "en": "the old town hall"
+  },
+  {
+   "de": "die neue Brücke",
+   "en": "the new bridge"
+  },
+  {
+   "de": "der neuen Brücke",
+   "en": "the new bridge"
+  },
+  {
+   "de": "die alten Häuser",
+   "en": "the old houses"
+  },
+  {
+   "de": "den alten Häusern",
+   "en": "the old houses"
+  },
+  {
+   "de": "Schaut mal, der schöne Dom!Nominativ maskulin: -e",
+   "en": "Look, the beautiful cathedral! Nominative masculine: -e"
+  },
+  {
+   "de": "Wir besichtigen heute das alte Rathaus.Akkusativ neutrum: -e",
+   "en": "Today we're visiting the old town hall. Accusative neuter: -e"
+  },
+  {
+   "de": "In den engen Gassen ist es sehr schön.Dativ Plural: -en",
+   "en": "It's very nice in the narrow alleys. Dative plural: -en"
+  },
+  {
+   "de": "Tipp: Fünfmal -e, der Rest -en: Nominativ maskulin/neutrum/feminin und Akkusativ neutrum/feminin.",
+   "en": "Tip: Five times -e, the rest -en: nominative masculine/neuter/feminine and accusative neuter/feminine."
+  },
+  {
+   "de": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueWelche Sehenswürdigkeiten gibt es hier?",
+   "en": "Example: What sights are there here?"
+  },
+  {
+   "de": "der Dom, -e — EN: cathedral · FR: la cathédraleDer Dom ist fast 700 Jahre alt.",
+   "en": "Example: The cathedral is almost 700 years old."
+  },
+  {
+   "de": "das Rathaus, ¨-er — EN: town hall · FR: la mairieDas Rathaus steht am Marktplatz.",
+   "en": "Example: The town hall is on the market square."
+  },
+  {
+   "de": "die Führung, -en — EN: guided tour · FR: la visite guidéeDie Führung dauert eine Stunde.",
+   "en": "Example: The guided tour lasts an hour."
+  },
+  {
+   "de": "besichtigen — EN: to visit, view · FR: visiterMorgen besichtigen wir die Altstadt.",
+   "en": "Example: Tomorrow we're visiting the old town."
+  },
+  {
+   "de": "die Altstadt (Sg.) — EN: old town · FR: la vieille villeDie Altstadt ist sehr gut erhalten.",
+   "en": "Example: The old town is very well preserved."
+  },
+  {
+   "de": "die Brücke, -n — EN: bridge · FR: le pontVon der Brücke hat man eine gute Aussicht.",
+   "en": "Example: You have a good view from the bridge."
+  },
+  {
+   "de": "der Turm, ¨-e — EN: tower · FR: la tourMan kann auf den Turm steigen.",
+   "en": "Example: You can climb up the tower."
+  },
+  {
+   "de": "beeindruckend — EN: impressive · FR: impressionnantDie Kirche ist wirklich beeindruckend.",
+   "en": "Example: The church is really impressive."
+  },
+  {
+   "de": "der Eintritt (Sg.) — EN: admission · FR: l'entréeDer Eintritt kostet acht Euro.",
+   "en": "Example: Admission costs eight euros."
+  },
+  {
+   "de": "geöffnet / geschlossen — EN: open / closed · FR: ouvert / ferméMontags ist das Museum geschlossen.",
+   "en": "Example: The museum is closed on Mondays."
+  },
+  {
+   "de": "vorschlagen (schlug vor) — EN: to suggest · FR: proposerIch schlage vor, wir gehen zuerst zum Dom.",
+   "en": "Example: I suggest we go to the cathedral first."
+  },
+  {
+   "de": "Was wollen wir zuerst machen?",
+   "en": "What shall we do first?"
+  },
+  {
+   "de": "Ich schlage vor, wir gehen zum …",
+   "en": "I suggest we go to the …"
+  },
+  {
+   "de": "Danach könnten wir …",
+   "en": "After that, we could …"
+  },
+  {
+   "de": "Schaut mal, der schöne Dom!",
+   "en": "Look, the beautiful cathedral!"
+  },
+  {
+   "de": "Das ist wirklich beeindruckend.",
+   "en": "That's really impressive."
+  },
+  {
+   "de": "Das finde ich nicht so interessant.",
+   "en": "I don't find that very interesting."
+  },
+  {
+   "de": "eine Postkarte schreiben",
+   "en": "writing a postcard"
+  },
+  {
+   "de": "Liebe Grüße aus …!",
+   "en": "Best wishes from …!"
+  },
+  {
+   "de": "Hier gefällt es uns sehr gut.",
+   "en": "We like it here very much."
+  },
+  {
+   "de": "Bis bald, deine …",
+   "en": "See you soon, your …"
+  },
+  {
+   "de": "Dialog: In der Altstadt",
+   "en": "Dialogue: In the old town"
+  },
+  {
+   "de": "Pia: Schaut mal, der schöne Dom! Gehen wir rein?",
+   "en": "Pia: Look, the beautiful cathedral! Shall we go in?"
+  },
+  {
+   "de": "Omar: Gern. Was kostet denn der Eintritt?",
+   "en": "Omar: Sure. How much is admission?"
+  },
+  {
+   "de": "Pia: Für den Dom nichts, nur der Turm kostet vier Euro.",
+   "en": "Pia: Nothing for the cathedral, only the tower costs four euros."
+  },
+  {
+   "de": "Omar: Dann steigen wir auf den alten Turm. Von oben sieht man sicher viel.",
+   "en": "Omar: Then let's climb the old tower. You can surely see a lot from the top."
+  },
+  {
+   "de": "Pia: Gute Idee. Und danach? Das Rathaus ist auch sehr schön.",
+   "en": "Pia: Good idea. And after that? The town hall is very beautiful too."
+  },
+  {
+   "de": "Omar: Ich schlage vor, wir machen zuerst eine Pause in der Altstadt.",
+   "en": "Omar: I suggest we take a break in the old town first."
+  },
+  {
+   "de": "Welche Sehenswürdigkeiten gibt es hier?",
+   "en": "What sights are there here?"
+  },
+  {
+   "de": "Der Dom ist fast 700 Jahre alt.",
+   "en": "The cathedral is almost 700 years old."
+  },
+  {
+   "de": "Das Rathaus steht am Marktplatz.",
+   "en": "The town hall is on the market square."
+  },
+  {
+   "de": "Die Führung dauert eine Stunde.",
+   "en": "The guided tour lasts an hour."
+  },
+  {
+   "de": "Morgen besichtigen wir die Altstadt.",
+   "en": "Tomorrow we're visiting the old town."
+  },
+  {
+   "de": "Die Altstadt ist sehr gut erhalten.",
+   "en": "The old town is very well preserved."
+  },
+  {
+   "de": "Von der Brücke hat man eine gute Aussicht.",
+   "en": "You have a good view from the bridge."
+  },
+  {
+   "de": "Man kann auf den Turm steigen.",
+   "en": "You can climb up the tower."
+  },
+  {
+   "de": "Die Kirche ist wirklich beeindruckend.",
+   "en": "The church is really impressive."
+  },
+  {
+   "de": "Der Eintritt kostet acht Euro.",
+   "en": "Admission costs eight euros."
+  },
+  {
+   "de": "Montags ist das Museum geschlossen.",
+   "en": "The museum is closed on Mondays."
+  },
+  {
+   "de": "Ich schlage vor, wir gehen zuerst zum Dom.",
+   "en": "I suggest we go to the cathedral first."
+  },
+  {
+   "de": "Schaut mal, ___ ___ Dom! (der, schön, Nominativ)",
+   "en": "Look, ___ ___ cathedral! (der, schön, nominative)"
+  },
+  {
+   "de": "Wir besichtigen ___ Rathaus.",
+   "en": "We are visiting ___ town hall."
+  },
+  {
+   "de": "In ___ ___ Gassen ist es sehr schön. (die, eng, Dativ Plural)",
+   "en": "In ___ ___ alleys it is very nice. (die, eng, dative plural)"
+  },
+  {
+   "de": "Welche Endung ist nach dem bestimmten Artikel NICHT möglich?",
+   "en": "Which ending is NOT possible after the definite article?"
+  },
+  {
+   "de": "Wir steigen auf ___ ___ Turm. (der, hoch → hoh-, Akkusativ)",
+   "en": "We climb up ___ ___ tower. (der, hoch → hoh-, accusative)"
+  },
+  {
+   "de": "Schreiben Sie eine Postkarte aus einer Stadt, die Sie besichtigt haben. Umfang: 40–60 Wörter Checkliste: • Beginnen Sie mit einer Anrede und einem Gruß aus der Stadt. • Nennen Sie zwei Sehenswürdigkeiten mit Adjektiv (der alte Dom …). • Schreiben Sie, was Ihnen besonders gefallen hat, und eine Schlussformel.",
+   "en": "Write a postcard from a city you have visited. Length: 40–60 words Checklist: • Begin with a salutation and a greeting from the city. • Name two sights with an adjective (der alte Dom …). • Write what you especially liked, and add a closing phrase."
+  },
+  {
+   "de": "Nominativ maskulin nach dem bestimmten Artikel: -e.",
+   "en": "Nominative masculine after the definite article: -e."
+  },
+  {
+   "de": "Akkusativ neutrum nach dem bestimmten Artikel: -e.",
+   "en": "Accusative neuter after the definite article: -e."
+  },
+  {
+   "de": "Dativ Plural: den + Adjektiv auf -en.",
+   "en": "Dative plural: den + adjective ending in -en."
+  },
+  {
+   "de": "Nach der/die/das gibt es nur -e oder -en.",
+   "en": "After der/die/das, there is only -e or -en."
+  },
+  {
+   "de": "Akkusativ maskulin: den + -en. Achtung: hoch wird vor dem Nomen zu hoh-.",
+   "en": "Accusative masculine: den + -en. Careful: hoch becomes hoh- before a noun."
+  }
+ ],
+ "forms": [
+  {
+   "form": "besichtigen",
+   "context": "Eine Stadt besichtigen, Sehenswürdigkeiten beschreiben und gemeinsam planen.",
+   "en": "to visit, to see (sights)",
+   "lemma": ""
+  },
+  {
+   "form": "Sehenswürdigkeiten",
+   "context": "Eine Stadt besichtigen, Sehenswürdigkeiten beschreiben und gemeinsam planen.",
+   "en": "sights",
+   "lemma": "die Sehenswürdigkeit"
+  },
+  {
+   "form": "gemeinsam",
+   "context": "Eine Stadt besichtigen, Sehenswürdigkeiten beschreiben und gemeinsam planen.",
+   "en": "together",
+   "lemma": ""
+  },
+  {
+   "form": "Postkarte",
+   "context": "Textsorte: Postkarte · Internet-Eintrag",
+   "en": "postcard",
+   "lemma": "die Postkarte"
+  },
+  {
+   "form": "Internet-Eintrag",
+   "context": "Textsorte: Postkarte · Internet-Eintrag",
+   "en": "internet post",
+   "lemma": "der Internet-Eintrag"
+  },
+  {
+   "form": "jeder",
+   "context": "Nach der, die, das (und nach dieser, jeder, alle) ist es einfach: Das Adjektiv endet nur auf -e oder -en. Im Nominativ und im Akkusativ außer maskulin steht -e, sonst überall -en.",
+   "en": "every, each",
+   "lemma": ""
+  },
+  {
+   "form": "außer",
+   "context": "Nach der, die, das (und nach dieser, jeder, alle) ist es einfach: Das Adjektiv endet nur auf -e oder -en. Im Nominativ und im Akkusativ außer maskulin steht -e, sonst überall -en.",
+   "en": "except",
+   "lemma": ""
+  },
+  {
+   "form": "überall",
+   "context": "Nach der, die, das (und nach dieser, jeder, alle) ist es einfach: Das Adjektiv endet nur auf -e oder -en. Im Nominativ und im Akkusativ außer maskulin steht -e, sonst überall -en.",
+   "en": "everywhere",
+   "lemma": ""
+  },
+  {
+   "form": "alte",
+   "context": "das alte Rathaus",
+   "en": "old",
+   "lemma": "alt"
+  },
+  {
+   "form": "Rathaus",
+   "context": "das alte Rathaus",
+   "en": "town hall",
+   "lemma": "das Rathaus"
+  },
+  {
+   "form": "alten",
+   "context": "dem alten Rathaus",
+   "en": "old",
+   "lemma": "alt"
+  },
+  {
+   "form": "Brücke",
+   "context": "die neue Brücke",
+   "en": "bridge",
+   "lemma": "die Brücke"
+  },
+  {
+   "form": "neuen",
+   "context": "der neuen Brücke",
+   "en": "new",
+   "lemma": "neu"
+  },
+  {
+   "form": "Schaut",
+   "context": "Schaut mal, der schöne Dom!Nominativ maskulin: -e",
+   "en": "look (you all)",
+   "lemma": "schauen"
+  },
+  {
+   "form": "engen",
+   "context": "In den engen Gassen ist es sehr schön.Dativ Plural: -en",
+   "en": "narrow",
+   "lemma": "eng"
+  },
+  {
+   "form": "Gassen",
+   "context": "In den engen Gassen ist es sehr schön.Dativ Plural: -en",
+   "en": "alleys, narrow streets",
+   "lemma": "die Gasse"
+  },
+  {
+   "form": "Sehenswürdigkeit",
+   "context": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueWelche Sehenswürdigkeiten gibt es hier?",
+   "en": "sight, attraction",
+   "lemma": "die Sehenswürdigkeit"
+  },
+  {
+   "form": "sight",
+   "context": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueWelche Sehenswürdigkeiten gibt es hier?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "attraction",
+   "context": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueWelche Sehenswürdigkeiten gibt es hier?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "site",
+   "context": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueWelche Sehenswürdigkeiten gibt es hier?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "touristiqueWelche",
+   "context": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueWelche Sehenswürdigkeiten gibt es hier?",
+   "en": "which",
+   "lemma": "welcher"
+  },
+  {
+   "form": "cathedral",
+   "context": "der Dom, -e — EN: cathedral · FR: la cathédraleDer Dom ist fast 700 Jahre alt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cathédraleDer",
+   "context": "der Dom, -e — EN: cathedral · FR: la cathédraleDer Dom ist fast 700 Jahre alt.",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "town",
+   "context": "das Rathaus, ¨-er — EN: town hall · FR: la mairieDas Rathaus steht am Marktplatz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "hall",
+   "context": "das Rathaus, ¨-er — EN: town hall · FR: la mairieDas Rathaus steht am Marktplatz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mairieDas",
+   "context": "das Rathaus, ¨-er — EN: town hall · FR: la mairieDas Rathaus steht am Marktplatz.",
+   "en": "the",
+   "lemma": "das"
+  },
+  {
+   "form": "Führung",
+   "context": "die Führung, -en — EN: guided tour · FR: la visite guidéeDie Führung dauert eine Stunde.",
+   "en": "guided tour",
+   "lemma": "die Führung"
+  },
+  {
+   "form": "guided",
+   "context": "die Führung, -en — EN: guided tour · FR: la visite guidéeDie Führung dauert eine Stunde.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tour",
+   "context": "die Führung, -en — EN: guided tour · FR: la visite guidéeDie Führung dauert eine Stunde.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "visite",
+   "context": "die Führung, -en — EN: guided tour · FR: la visite guidéeDie Führung dauert eine Stunde.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "guidéeDie",
+   "context": "die Führung, -en — EN: guided tour · FR: la visite guidéeDie Führung dauert eine Stunde.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "visit",
+   "context": "besichtigen — EN: to visit, view · FR: visiterMorgen besichtigen wir die Altstadt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "visiterMorgen",
+   "context": "besichtigen — EN: to visit, view · FR: visiterMorgen besichtigen wir die Altstadt.",
+   "en": "tomorrow",
+   "lemma": "morgen"
+  },
+  {
+   "form": "Altstadt",
+   "context": "besichtigen — EN: to visit, view · FR: visiterMorgen besichtigen wir die Altstadt.",
+   "en": "old town",
+   "lemma": "die Altstadt"
+  },
+  {
+   "form": "vieille",
+   "context": "die Altstadt (Sg.) — EN: old town · FR: la vieille villeDie Altstadt ist sehr gut erhalten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "villeDie",
+   "context": "die Altstadt (Sg.) — EN: old town · FR: la vieille villeDie Altstadt ist sehr gut erhalten.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "erhalten",
+   "context": "die Altstadt (Sg.) — EN: old town · FR: la vieille villeDie Altstadt ist sehr gut erhalten.",
+   "en": "preserved; to receive",
+   "lemma": ""
+  },
+  {
+   "form": "bridge",
+   "context": "die Brücke, -n — EN: bridge · FR: le pontVon der Brücke hat man eine gute Aussicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pontVon",
+   "context": "die Brücke, -n — EN: bridge · FR: le pontVon der Brücke hat man eine gute Aussicht.",
+   "en": "from",
+   "lemma": "von"
+  },
+  {
+   "form": "Turm",
+   "context": "der Turm, ¨-e — EN: tower · FR: la tourMan kann auf den Turm steigen.",
+   "en": "tower",
+   "lemma": "der Turm"
+  },
+  {
+   "form": "tower",
+   "context": "der Turm, ¨-e — EN: tower · FR: la tourMan kann auf den Turm steigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tourMan",
+   "context": "der Turm, ¨-e — EN: tower · FR: la tourMan kann auf den Turm steigen.",
+   "en": "one, you (people)",
+   "lemma": "man"
+  },
+  {
+   "form": "steigen",
+   "context": "der Turm, ¨-e — EN: tower · FR: la tourMan kann auf den Turm steigen.",
+   "en": "climb; rise",
+   "lemma": ""
+  },
+  {
+   "form": "beeindruckend",
+   "context": "beeindruckend — EN: impressive · FR: impressionnantDie Kirche ist wirklich beeindruckend.",
+   "en": "impressive",
+   "lemma": ""
+  },
+  {
+   "form": "impressive",
+   "context": "beeindruckend — EN: impressive · FR: impressionnantDie Kirche ist wirklich beeindruckend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "impressionnantDie",
+   "context": "beeindruckend — EN: impressive · FR: impressionnantDie Kirche ist wirklich beeindruckend.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "Kirche",
+   "context": "beeindruckend — EN: impressive · FR: impressionnantDie Kirche ist wirklich beeindruckend.",
+   "en": "church",
+   "lemma": "die Kirche"
+  },
+  {
+   "form": "Eintritt",
+   "context": "der Eintritt (Sg.) — EN: admission · FR: l'entréeDer Eintritt kostet acht Euro.",
+   "en": "admission, entry",
+   "lemma": "der Eintritt"
+  },
+  {
+   "form": "admission",
+   "context": "der Eintritt (Sg.) — EN: admission · FR: l'entréeDer Eintritt kostet acht Euro.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'entréeDer",
+   "context": "der Eintritt (Sg.) — EN: admission · FR: l'entréeDer Eintritt kostet acht Euro.",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "geöffnet",
+   "context": "geöffnet / geschlossen — EN: open / closed · FR: ouvert / ferméMontags ist das Museum geschlossen.",
+   "en": "open",
+   "lemma": ""
+  },
+  {
+   "form": "geschlossen",
+   "context": "geöffnet / geschlossen — EN: open / closed · FR: ouvert / ferméMontags ist das Museum geschlossen.",
+   "en": "closed",
+   "lemma": ""
+  },
+  {
+   "form": "open",
+   "context": "geöffnet / geschlossen — EN: open / closed · FR: ouvert / ferméMontags ist das Museum geschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "closed",
+   "context": "geöffnet / geschlossen — EN: open / closed · FR: ouvert / ferméMontags ist das Museum geschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ouvert",
+   "context": "geöffnet / geschlossen — EN: open / closed · FR: ouvert / ferméMontags ist das Museum geschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ferméMontags",
+   "context": "geöffnet / geschlossen — EN: open / closed · FR: ouvert / ferméMontags ist das Museum geschlossen.",
+   "en": "on Mondays",
+   "lemma": "montags"
+  },
+  {
+   "form": "schlug",
+   "context": "vorschlagen (schlug vor) — EN: to suggest · FR: proposerIch schlage vor, wir gehen zuerst zum Dom.",
+   "en": "suggested",
+   "lemma": "vorschlagen"
+  },
+  {
+   "form": "suggest",
+   "context": "vorschlagen (schlug vor) — EN: to suggest · FR: proposerIch schlage vor, wir gehen zuerst zum Dom.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "proposerIch",
+   "context": "vorschlagen (schlug vor) — EN: to suggest · FR: proposerIch schlage vor, wir gehen zuerst zum Dom.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "schlage",
+   "context": "vorschlagen (schlug vor) — EN: to suggest · FR: proposerIch schlage vor, wir gehen zuerst zum Dom.",
+   "en": "suggest",
+   "lemma": "vorschlagen"
+  },
+  {
+   "form": "könnten",
+   "context": "Danach könnten wir …",
+   "en": "could",
+   "lemma": "können"
+  },
+  {
+   "form": "Liebe",
+   "context": "Liebe Grüße aus …!",
+   "en": "dear, kind; love",
+   "lemma": "lieb"
+  },
+  {
+   "form": "Grüße",
+   "context": "Liebe Grüße aus …!",
+   "en": "greetings, regards",
+   "lemma": "der Gruß"
+  },
+  {
+   "form": "bald",
+   "context": "Bis bald, deine …",
+   "en": "soon",
+   "lemma": ""
+  },
+  {
+   "form": "Pia",
+   "context": "Pia: Schaut mal, der schöne Dom! Gehen wir rein?",
+   "en": "Pia (name)",
+   "lemma": ""
+  },
+  {
+   "form": "rein",
+   "context": "Pia: Schaut mal, der schöne Dom! Gehen wir rein?",
+   "en": "in, inside; pure",
+   "lemma": ""
+  },
+  {
+   "form": "oben",
+   "context": "Omar: Dann steigen wir auf den alten Turm. Von oben sieht man sicher viel.",
+   "en": "up, at the top",
+   "lemma": ""
+  },
+  {
+   "form": "Pause",
+   "context": "Omar: Ich schlage vor, wir machen zuerst eine Pause in der Altstadt.",
+   "en": "break",
+   "lemma": "die Pause"
+  },
+  {
+   "form": "Montags",
+   "context": "Montags ist das Museum geschlossen.",
+   "en": "on Mondays",
+   "lemma": ""
+  },
+  {
+   "form": "eng",
+   "context": "In ___ ___ Gassen ist es sehr schön. (die, eng, Dativ Plural)",
+   "en": "narrow; tight",
+   "lemma": ""
+  },
+  {
+   "form": "möglich",
+   "context": "Welche Endung ist nach dem bestimmten Artikel NICHT möglich?",
+   "en": "possible",
+   "lemma": ""
+  },
+  {
+   "form": "hoh",
+   "context": "Wir steigen auf ___ ___ Turm. (der, hoch → hoh-, Akkusativ)",
+   "en": "high",
+   "lemma": "hoch"
+  },
+  {
+   "form": "besichtigt",
+   "context": "Schreiben Sie eine Postkarte aus einer Stadt, die Sie besichtigt haben. Umfang: 40–60 Wörter Checkliste: • Beginnen Sie mit einer Anrede und einem Gruß aus der Stadt. • Nennen Sie zwei Sehenswürdigkeiten mit Adjektiv (der alte Dom …). • Schreiben Sie, was Ihnen besonders gefallen hat, und eine Schlussformel.",
+   "en": "visited",
+   "lemma": "besichtigen"
+  },
+  {
+   "form": "Anrede",
+   "context": "Schreiben Sie eine Postkarte aus einer Stadt, die Sie besichtigt haben. Umfang: 40–60 Wörter Checkliste: • Beginnen Sie mit einer Anrede und einem Gruß aus der Stadt. • Nennen Sie zwei Sehenswürdigkeiten mit Adjektiv (der alte Dom …). • Schreiben Sie, was Ihnen besonders gefallen hat, und eine Schlussformel.",
+   "en": "form of address",
+   "lemma": "die Anrede"
+  },
+  {
+   "form": "Gruß",
+   "context": "Schreiben Sie eine Postkarte aus einer Stadt, die Sie besichtigt haben. Umfang: 40–60 Wörter Checkliste: • Beginnen Sie mit einer Anrede und einem Gruß aus der Stadt. • Nennen Sie zwei Sehenswürdigkeiten mit Adjektiv (der alte Dom …). • Schreiben Sie, was Ihnen besonders gefallen hat, und eine Schlussformel.",
+   "en": "greeting",
+   "lemma": "der Gruß"
+  },
+  {
+   "form": "Schlussformel",
+   "context": "Schreiben Sie eine Postkarte aus einer Stadt, die Sie besichtigt haben. Umfang: 40–60 Wörter Checkliste: • Beginnen Sie mit einer Anrede und einem Gruß aus der Stadt. • Nennen Sie zwei Sehenswürdigkeiten mit Adjektiv (der alte Dom …). • Schreiben Sie, was Ihnen besonders gefallen hat, und eine Schlussformel.",
+   "en": "closing phrase",
+   "lemma": "die Schlussformel"
+  }
+ ]
+}
