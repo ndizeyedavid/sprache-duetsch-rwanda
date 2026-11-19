@@ -4,19 +4,19 @@ import { Link, useParams } from 'react-router-dom';
 import { BookLoader } from '../components/common/BookLoader';
 import { InvoiceDocument } from '../components/invoice/InvoiceDocument';
 import { PaymentRequestHistory } from '../components/payments/PaymentRequestHistory';
-import { PaypackCheckout } from '../components/payments/PaypackCheckout';
-import { usePaypackCheckout } from '../components/payments/usePaypackCheckout';
+import { MobileMoneyCheckout } from '../components/payments/MobileMoneyCheckout';
+import { useMobileMoneyCheckout } from '../components/payments/useMobileMoneyCheckout';
 import { Logo } from '../components/ui/Logo';
 import { useApi } from '../hooks/useApi';
-import { getInvoice, invoicePaypackClient } from '../lib/invoice';
+import { getInvoice, invoiceMobileMoneyClient } from '../lib/invoice';
 import { money } from '../lib/services/money';
 
 /** Public invoice opened from a balance-reminder email: see every charge and pay by mobile money without signing in. */
 export function PublicInvoice() {
   const { token = '' } = useParams();
   const invoice = useApi(`invoice-${token}`, () => getInvoice(token));
-  const client = useMemo(() => invoicePaypackClient(token), [token]);
-  const checkout = usePaypackCheckout(invoice.refetch, client);
+  const client = useMemo(() => invoiceMobileMoneyClient(token), [token]);
+  const checkout = useMobileMoneyCheckout(invoice.refetch, client);
   const data = invoice.data;
   const expired = !!invoice.error && /invalid or has expired|no longer available/i.test(invoice.error);
 
@@ -32,8 +32,8 @@ export function PublicInvoice() {
             <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
               <InvoiceDocument invoice={data} />
               <section className="rounded-box border border-base-300 bg-base-100 p-6 sm:p-7">
-                <PaypackCheckout balance={Math.max(0, money(data.summary?.balance))} currency={data.summary?.currency ?? 'RWF'}
-                  checkout={checkout} config={data.paypack} />
+                <MobileMoneyCheckout balance={Math.max(0, money(data.summary?.balance))} currency={data.summary?.currency ?? 'RWF'}
+                  checkout={checkout} config={data.mobileMoney} />
                 <PaymentRequestHistory rows={checkout.rows} receiptsLink={false} />
                 <p className="mt-6 border-t border-base-300 pt-4 text-xs text-muted">
                   Receipts are issued automatically once a payment is confirmed. Sign in to download them, or contact the finance office with any questions.
