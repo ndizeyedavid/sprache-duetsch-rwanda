@@ -9,7 +9,7 @@ describe("claimProblem", () => {
     expect(claimProblem({ paidAt: new Date("2026-10-10"), reference: "MP123" }, momo, 0, now)).toBeNull();
   });
   it("rejects gateway, missing reference, future dates and spam", () => {
-    expect(claimProblem({ paidAt: now }, { ...momo, code: "PAYPACK" }, 0, now)).toMatch(/Pay now/);
+    expect(claimProblem({ paidAt: now }, { ...momo, code: "XENDLYPAY" }, 0, now)).toMatch(/Pay now/);
     expect(claimProblem({ paidAt: now, reference: " " }, momo, 0, now)).toMatch(/reference/);
     expect(claimProblem({ paidAt: new Date("2026-10-20"), reference: "x" }, momo, 0, now)).toMatch(/future/);
     expect(claimProblem({ paidAt: now, reference: "x" }, momo, 5, now)).toMatch(/waiting/);
