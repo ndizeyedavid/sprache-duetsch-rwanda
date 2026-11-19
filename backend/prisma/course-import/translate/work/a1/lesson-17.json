@@ -1,0 +1,751 @@
+{
+ "level": "A1",
+ "lesson": 17,
+ "title": "Wünsche und Pläne — Was willst du später machen?",
+ "lines": [
+  {
+   "de": "Über Pläne und Wünsche für die Zukunft sprechen.",
+   "en": "Talk about plans and wishes for the future."
+  },
+  {
+   "de": "Textsorte: Interview · Porträt",
+   "en": "Text type: Interview · Portrait"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Sprechen Teil 1; telc A1 Sprechen",
+   "en": "Exam link: Start Deutsch 1 Speaking part 1; telc A1 Speaking"
+  },
+  {
+   "de": "über Pläne und Wünsche sprechen",
+   "en": "talk about plans and wishes"
+  },
+  {
+   "de": "das Modalverb wollen verwenden",
+   "en": "use the modal verb (Modalverb) wollen"
+  },
+  {
+   "de": "die Präpositionen mit und ohne benutzen",
+   "en": "use the prepositions mit and ohne"
+  },
+  {
+   "de": "Grammatik: Das Modalverb wollen",
+   "en": "Grammar: the modal verb (Modalverb) wollen"
+  },
+  {
+   "de": "wollen drückt einen starken Wunsch oder einen festen Plan aus. Wie bei allen Modalverben steht das zweite Verb im Infinitiv am Ende.",
+   "en": "wollen expresses a strong wish or a firm plan. As with all modal verbs, the second verb goes at the end in the infinitive."
+  },
+  {
+   "de": "wollen",
+   "en": "to want"
+  },
+  {
+   "de": "will",
+   "en": "want(s)"
+  },
+  {
+   "de": "willst",
+   "en": "(you) want"
+  },
+  {
+   "de": "wollt",
+   "en": "(you all) want"
+  },
+  {
+   "de": "Wer will Popstar werden?will + Infinitiv am Ende",
+   "en": "Who wants to become a pop star? will + infinitive at the end"
+  },
+  {
+   "de": "Ich will nächstes Jahr nach Deutschland gehen.fester Plan",
+   "en": "I want to go to Germany next year. firm plan"
+  },
+  {
+   "de": "Tipp: wollen ist sehr direkt. Höflicher ist möchte: Ich möchte einen Kaffee — nicht „Ich will einen Kaffee\".",
+   "en": "Tip: wollen is very direct. möchte is more polite: I'd like a coffee — not \"I want a coffee\"."
+  },
+  {
+   "de": "Grammatik: Die Präpositionen mit und ohne",
+   "en": "Grammar: the prepositions mit and ohne"
+  },
+  {
+   "de": "mit steht mit dem Dativ, ohne mit dem Akkusativ.",
+   "en": "mit takes the dative, ohne takes the accusative."
+  },
+  {
+   "de": "Kasus",
+   "en": "Case"
+  },
+  {
+   "de": "mit",
+   "en": "with"
+  },
+  {
+   "de": "mit dem Handy, mit meinem Bruder",
+   "en": "with the mobile phone, with my brother"
+  },
+  {
+   "de": "ohne",
+   "en": "without"
+  },
+  {
+   "de": "Akkusativ",
+   "en": "Accusative"
+  },
+  {
+   "de": "ohne das Handy, ohne meinen Bruder",
+   "en": "without the mobile phone, without my brother"
+  },
+  {
+   "de": "Verkehrsmittel",
+   "en": "Means of transport"
+  },
+  {
+   "de": "mit dem Bus, mit der Bahn",
+   "en": "by bus, by train"
+  },
+  {
+   "de": "Ich fahre mit dem Bus zur Arbeit.mit + Dativ",
+   "en": "I go to work by bus. mit + dative"
+  },
+  {
+   "de": "Ohne meinen Laptop kann ich nicht arbeiten.ohne + Akkusativ maskulin: meinen",
+   "en": "I can't work without my laptop. ohne + accusative masculine: meinen"
+  },
+  {
+   "de": "Tipp: Für Verkehrsmittel immer mit + Dativ: mit dem Auto, mit der U-Bahn, mit dem Fahrrad.",
+   "en": "Tip: For means of transport, always use mit + dative: mit dem Auto (by car), mit der U-Bahn (by underground), mit dem Fahrrad (by bike)."
+  },
+  {
+   "de": "wollen — EN: to want · FR: vouloirWas willst du später machen?",
+   "en": "Example: What do you want to do later?"
+  },
+  {
+   "de": "der Plan, ¨-e — EN: plan · FR: le projetHast du schon Pläne?",
+   "en": "Example: Do you already have plans?"
+  },
+  {
+   "de": "der Traum, ¨-e — EN: dream · FR: le rêveMein Traum ist eine eigene Firma.",
+   "en": "Example: My dream is my own company."
+  },
+  {
+   "de": "werden — EN: to become · FR: devenirIch will Lehrerin werden.",
+   "en": "Example: I want to become a teacher."
+  },
+  {
+   "de": "später — EN: later · FR: plus tardSpäter möchte ich im Ausland arbeiten.",
+   "en": "Example: Later I would like to work abroad."
+  },
+  {
+   "de": "die Musik (Sg.) — EN: music · FR: la musiqueMusik ist mein Leben.",
+   "en": "Example: Music is my life."
+  },
+  {
+   "de": "der Popstar, -s — EN: pop star · FR: la pop starAls Kind wollte ich Popstar werden.",
+   "en": "Example: As a child, I wanted to become a pop star."
+  },
+  {
+   "de": "studieren — EN: to study · FR: faire des étudesIch will Medizin studieren.",
+   "en": "Example: I want to study medicine."
+  },
+  {
+   "de": "die Zukunft (Sg.) — EN: future · FR: l'avenirIn Zukunft wird alles anders.",
+   "en": "Example: In the future, everything will be different."
+  },
+  {
+   "de": "mit / ohne — EN: with / without · FR: avec / sansIch komme mit meiner Schwester.",
+   "en": "Example: I'm coming with my sister."
+  },
+  {
+   "de": "nächstes Jahr — EN: next year · FR: l'année prochaineNächstes Jahr ziehe ich um.",
+   "en": "Example: Next year I'm moving house."
+  },
+  {
+   "de": "hoffentlich — EN: hopefully · FR: espéronsHoffentlich klappt das!",
+   "en": "Example: Hopefully that works out!"
+  },
+  {
+   "de": "über Pläne sprechen",
+   "en": "talking about plans"
+  },
+  {
+   "de": "Ich will später … werden.",
+   "en": "Later I want to become …"
+  },
+  {
+   "de": "Nächstes Jahr will ich …",
+   "en": "Next year I want to …"
+  },
+  {
+   "de": "Mein Traum ist …",
+   "en": "My dream is …"
+  },
+  {
+   "de": "nach Plänen fragen",
+   "en": "asking about plans"
+  },
+  {
+   "de": "Was willst du später machen?",
+   "en": "What do you want to do later?"
+  },
+  {
+   "de": "Hast du schon Pläne?",
+   "en": "Do you already have plans?"
+  },
+  {
+   "de": "Und wie geht es dann weiter?",
+   "en": "And what happens after that?"
+  },
+  {
+   "de": "Das klingt gut!",
+   "en": "That sounds good!"
+  },
+  {
+   "de": "Hoffentlich klappt das.",
+   "en": "Hopefully that works out."
+  },
+  {
+   "de": "Das schaffst du bestimmt.",
+   "en": "I'm sure you can do it."
+  },
+  {
+   "de": "Dialog: Ein Interview",
+   "en": "Dialogue: An interview"
+  },
+  {
+   "de": "Reporter: Was willst du später machen, Ella?",
+   "en": "Reporter: What do you want to do later, Ella?"
+  },
+  {
+   "de": "Ella: Ich will Musikerin werden. Das ist mein Traum.",
+   "en": "Ella: I want to become a musician. That's my dream."
+  },
+  {
+   "de": "Reporter: Und wie willst du das machen?",
+   "en": "Reporter: And how do you want to do that?"
+  },
+  {
+   "de": "Ella: Nächstes Jahr will ich Musik studieren.",
+   "en": "Ella: Next year I want to study music."
+  },
+  {
+   "de": "Reporter: Gehst du allein oder mit deiner Familie?",
+   "en": "Reporter: Are you going alone or with your family?"
+  },
+  {
+   "de": "Ella: Ohne meine Familie. Aber mit meiner besten Freundin.",
+   "en": "Ella: Without my family. But with my best friend."
+  },
+  {
+   "de": "Mein Traum ist eine eigene Firma.",
+   "en": "My dream is my own company."
+  },
+  {
+   "de": "Ich will Lehrerin werden.",
+   "en": "I want to become a teacher."
+  },
+  {
+   "de": "Später möchte ich im Ausland arbeiten.",
+   "en": "Later I would like to work abroad."
+  },
+  {
+   "de": "Musik ist mein Leben.",
+   "en": "Music is my life."
+  },
+  {
+   "de": "Als Kind wollte ich Popstar werden.",
+   "en": "As a child, I wanted to become a pop star."
+  },
+  {
+   "de": "Ich will Medizin studieren.",
+   "en": "I want to study medicine."
+  },
+  {
+   "de": "In Zukunft wird alles anders.",
+   "en": "In the future, everything will be different."
+  },
+  {
+   "de": "Ich komme mit meiner Schwester.",
+   "en": "I'm coming with my sister."
+  },
+  {
+   "de": "Nächstes Jahr ziehe ich um.",
+   "en": "Next year I'm moving house."
+  },
+  {
+   "de": "Hoffentlich klappt das!",
+   "en": "Hopefully that works out!"
+  },
+  {
+   "de": "Ich ___ Lehrerin werden. (wollen, ich)",
+   "en": "I ___ to become a teacher. (wollen, ich)"
+  },
+  {
+   "de": "Was ___ du später machen?",
+   "en": "What do you ___ to do later?"
+  },
+  {
+   "de": "Ich fahre ___ dem Bus. (Präposition + Dativ)",
+   "en": "I travel ___ bus. (preposition + dative)"
+  },
+  {
+   "de": "___ meinen Laptop kann ich nicht arbeiten.",
+   "en": "I can't work ___ my laptop."
+  },
+  {
+   "de": "Was ist höflicher im Café?",
+   "en": "What is more polite in a café?"
+  },
+  {
+   "de": "Schreiben Sie über Ihre Pläne: Was wollen Sie in den nächsten Jahren machen? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie dreimal wollen mit einem Infinitiv am Ende. • Benutzen Sie einmal mit und einmal ohne. • Schreiben Sie, wann Sie das machen wollen.",
+   "en": "Write about your plans: What do you want to do in the next few years? Length: 30–40 words Checklist: • Use wollen three times with an infinitive at the end. • Use mit once and ohne once. • Write when you want to do it."
+  },
+  {
+   "de": "ich will — ohne Endung.",
+   "en": "ich will — no ending."
+  },
+  {
+   "de": "2. Person Singular: willst.",
+   "en": "2nd person singular: willst."
+  },
+  {
+   "de": "Verkehrsmittel: mit + Dativ.",
+   "en": "Means of transport: mit + dative."
+  },
+  {
+   "de": "ohne + Akkusativ: ohne meinen Laptop.",
+   "en": "ohne + accusative: ohne meinen Laptop (without my laptop)."
+  },
+  {
+   "de": "wollen ist sehr direkt; möchte ist die höfliche Form.",
+   "en": "wollen is very direct; möchte is the polite form."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Pläne",
+   "context": "Über Pläne und Wünsche für die Zukunft sprechen.",
+   "en": "plans",
+   "lemma": "der Plan"
+  },
+  {
+   "form": "Wünsche",
+   "context": "Über Pläne und Wünsche für die Zukunft sprechen.",
+   "en": "wishes",
+   "lemma": "der Wunsch"
+  },
+  {
+   "form": "Interview",
+   "context": "Textsorte: Interview · Porträt",
+   "en": "interview",
+   "lemma": "das Interview"
+  },
+  {
+   "form": "Porträt",
+   "context": "Textsorte: Interview · Porträt",
+   "en": "portrait",
+   "lemma": "das Porträt"
+  },
+  {
+   "form": "wollen",
+   "context": "das Modalverb wollen verwenden",
+   "en": "to want",
+   "lemma": ""
+  },
+  {
+   "form": "starken",
+   "context": "wollen drückt einen starken Wunsch oder einen festen Plan aus. Wie bei allen Modalverben steht das zweite Verb im Infinitiv am Ende.",
+   "en": "strong",
+   "lemma": "stark"
+  },
+  {
+   "form": "festen",
+   "context": "wollen drückt einen starken Wunsch oder einen festen Plan aus. Wie bei allen Modalverben steht das zweite Verb im Infinitiv am Ende.",
+   "en": "firm; fixed",
+   "lemma": "fest"
+  },
+  {
+   "form": "Plan",
+   "context": "wollen drückt einen starken Wunsch oder einen festen Plan aus. Wie bei allen Modalverben steht das zweite Verb im Infinitiv am Ende.",
+   "en": "plan",
+   "lemma": "der Plan"
+  },
+  {
+   "form": "allen",
+   "context": "wollen drückt einen starken Wunsch oder einen festen Plan aus. Wie bei allen Modalverben steht das zweite Verb im Infinitiv am Ende.",
+   "en": "all",
+   "lemma": ""
+  },
+  {
+   "form": "Modalverben",
+   "context": "wollen drückt einen starken Wunsch oder einen festen Plan aus. Wie bei allen Modalverben steht das zweite Verb im Infinitiv am Ende.",
+   "en": "modal verbs",
+   "lemma": "das Modalverb"
+  },
+  {
+   "form": "will",
+   "context": "will",
+   "en": "want(s)",
+   "lemma": "wollen"
+  },
+  {
+   "form": "willst",
+   "context": "willst",
+   "en": "(you) want",
+   "lemma": "wollen"
+  },
+  {
+   "form": "wollt",
+   "context": "wollt",
+   "en": "(you all) want",
+   "lemma": "wollen"
+  },
+  {
+   "form": "Popstar",
+   "context": "Wer will Popstar werden?will + Infinitiv am Ende",
+   "en": "pop star",
+   "lemma": "der Popstar"
+  },
+  {
+   "form": "nächstes",
+   "context": "Ich will nächstes Jahr nach Deutschland gehen.fester Plan",
+   "en": "next",
+   "lemma": "nächste"
+  },
+  {
+   "form": "fester",
+   "context": "Ich will nächstes Jahr nach Deutschland gehen.fester Plan",
+   "en": "firm; fixed",
+   "lemma": "fest"
+  },
+  {
+   "form": "direkt",
+   "context": "Tipp: wollen ist sehr direkt. Höflicher ist möchte: Ich möchte einen Kaffee — nicht „Ich will einen Kaffee\".",
+   "en": "direct",
+   "lemma": ""
+  },
+  {
+   "form": "Höflicher",
+   "context": "Tipp: wollen ist sehr direkt. Höflicher ist möchte: Ich möchte einen Kaffee — nicht „Ich will einen Kaffee\".",
+   "en": "more polite",
+   "lemma": "höflich"
+  },
+  {
+   "form": "Kasus",
+   "context": "Kasus",
+   "en": "case (grammar)",
+   "lemma": "der Kasus"
+  },
+  {
+   "form": "meinem",
+   "context": "mit dem Handy, mit meinem Bruder",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "Verkehrsmittel",
+   "context": "Verkehrsmittel",
+   "en": "means of transport",
+   "lemma": "das Verkehrsmittel"
+  },
+  {
+   "form": "Bahn",
+   "context": "mit dem Bus, mit der Bahn",
+   "en": "train; railway",
+   "lemma": "die Bahn"
+  },
+  {
+   "form": "want",
+   "context": "wollen — EN: to want · FR: vouloirWas willst du später machen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vouloirWas",
+   "context": "wollen — EN: to want · FR: vouloirWas willst du später machen?",
+   "en": "what",
+   "lemma": ""
+  },
+  {
+   "form": "plan",
+   "context": "der Plan, ¨-e — EN: plan · FR: le projetHast du schon Pläne?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "projetHast",
+   "context": "der Plan, ¨-e — EN: plan · FR: le projetHast du schon Pläne?",
+   "en": "have",
+   "lemma": "haben"
+  },
+  {
+   "form": "Traum",
+   "context": "der Traum, ¨-e — EN: dream · FR: le rêveMein Traum ist eine eigene Firma.",
+   "en": "dream",
+   "lemma": "der Traum"
+  },
+  {
+   "form": "dream",
+   "context": "der Traum, ¨-e — EN: dream · FR: le rêveMein Traum ist eine eigene Firma.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rêveMein",
+   "context": "der Traum, ¨-e — EN: dream · FR: le rêveMein Traum ist eine eigene Firma.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "become",
+   "context": "werden — EN: to become · FR: devenirIch will Lehrerin werden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "devenirIch",
+   "context": "werden — EN: to become · FR: devenirIch will Lehrerin werden.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "tardSpäter",
+   "context": "später — EN: later · FR: plus tardSpäter möchte ich im Ausland arbeiten.",
+   "en": "later",
+   "lemma": ""
+  },
+  {
+   "form": "Ausland",
+   "context": "später — EN: later · FR: plus tardSpäter möchte ich im Ausland arbeiten.",
+   "en": "abroad",
+   "lemma": "das Ausland"
+  },
+  {
+   "form": "Musik",
+   "context": "die Musik (Sg.) — EN: music · FR: la musiqueMusik ist mein Leben.",
+   "en": "music",
+   "lemma": "die Musik"
+  },
+  {
+   "form": "music",
+   "context": "die Musik (Sg.) — EN: music · FR: la musiqueMusik ist mein Leben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "musiqueMusik",
+   "context": "die Musik (Sg.) — EN: music · FR: la musiqueMusik ist mein Leben.",
+   "en": "music",
+   "lemma": "die Musik"
+  },
+  {
+   "form": "pop",
+   "context": "der Popstar, -s — EN: pop star · FR: la pop starAls Kind wollte ich Popstar werden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "star",
+   "context": "der Popstar, -s — EN: pop star · FR: la pop starAls Kind wollte ich Popstar werden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "starAls",
+   "context": "der Popstar, -s — EN: pop star · FR: la pop starAls Kind wollte ich Popstar werden.",
+   "en": "as",
+   "lemma": ""
+  },
+  {
+   "form": "wollte",
+   "context": "der Popstar, -s — EN: pop star · FR: la pop starAls Kind wollte ich Popstar werden.",
+   "en": "wanted",
+   "lemma": "wollen"
+  },
+  {
+   "form": "studieren",
+   "context": "studieren — EN: to study · FR: faire des étudesIch will Medizin studieren.",
+   "en": "to study",
+   "lemma": ""
+  },
+  {
+   "form": "des",
+   "context": "studieren — EN: to study · FR: faire des étudesIch will Medizin studieren.",
+   "en": "of the",
+   "lemma": ""
+  },
+  {
+   "form": "étudesIch",
+   "context": "studieren — EN: to study · FR: faire des étudesIch will Medizin studieren.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "Medizin",
+   "context": "studieren — EN: to study · FR: faire des étudesIch will Medizin studieren.",
+   "en": "medicine",
+   "lemma": "die Medizin"
+  },
+  {
+   "form": "future",
+   "context": "die Zukunft (Sg.) — EN: future · FR: l'avenirIn Zukunft wird alles anders.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'avenirIn",
+   "context": "die Zukunft (Sg.) — EN: future · FR: l'avenirIn Zukunft wird alles anders.",
+   "en": "in",
+   "lemma": ""
+  },
+  {
+   "form": "anders",
+   "context": "die Zukunft (Sg.) — EN: future · FR: l'avenirIn Zukunft wird alles anders.",
+   "en": "different(ly)",
+   "lemma": ""
+  },
+  {
+   "form": "with",
+   "context": "mit / ohne — EN: with / without · FR: avec / sansIch komme mit meiner Schwester.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "without",
+   "context": "mit / ohne — EN: with / without · FR: avec / sansIch komme mit meiner Schwester.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "avec",
+   "context": "mit / ohne — EN: with / without · FR: avec / sansIch komme mit meiner Schwester.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sansIch",
+   "context": "mit / ohne — EN: with / without · FR: avec / sansIch komme mit meiner Schwester.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "year",
+   "context": "nächstes Jahr — EN: next year · FR: l'année prochaineNächstes Jahr ziehe ich um.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'année",
+   "context": "nächstes Jahr — EN: next year · FR: l'année prochaineNächstes Jahr ziehe ich um.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prochaineNächstes",
+   "context": "nächstes Jahr — EN: next year · FR: l'année prochaineNächstes Jahr ziehe ich um.",
+   "en": "next",
+   "lemma": "nächste"
+  },
+  {
+   "form": "hoffentlich",
+   "context": "hoffentlich — EN: hopefully · FR: espéronsHoffentlich klappt das!",
+   "en": "hopefully",
+   "lemma": ""
+  },
+  {
+   "form": "hopefully",
+   "context": "hoffentlich — EN: hopefully · FR: espéronsHoffentlich klappt das!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "espéronsHoffentlich",
+   "context": "hoffentlich — EN: hopefully · FR: espéronsHoffentlich klappt das!",
+   "en": "hopefully",
+   "lemma": ""
+  },
+  {
+   "form": "klappt",
+   "context": "hoffentlich — EN: hopefully · FR: espéronsHoffentlich klappt das!",
+   "en": "works out",
+   "lemma": "klappen"
+  },
+  {
+   "form": "Nächstes",
+   "context": "Nächstes Jahr will ich …",
+   "en": "next",
+   "lemma": "nächste"
+  },
+  {
+   "form": "Plänen",
+   "context": "nach Plänen fragen",
+   "en": "plans",
+   "lemma": "der Plan"
+  },
+  {
+   "form": "weiter",
+   "context": "Und wie geht es dann weiter?",
+   "en": "further; on",
+   "lemma": ""
+  },
+  {
+   "form": "Hoffentlich",
+   "context": "Hoffentlich klappt das.",
+   "en": "hopefully",
+   "lemma": ""
+  },
+  {
+   "form": "schaffst",
+   "context": "Das schaffst du bestimmt.",
+   "en": "(you) manage",
+   "lemma": "schaffen"
+  },
+  {
+   "form": "Reporter",
+   "context": "Reporter: Was willst du später machen, Ella?",
+   "en": "reporter",
+   "lemma": "der Reporter"
+  },
+  {
+   "form": "Ella",
+   "context": "Reporter: Was willst du später machen, Ella?",
+   "en": "Ella (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Musikerin",
+   "context": "Ella: Ich will Musikerin werden. Das ist mein Traum.",
+   "en": "musician (female)",
+   "lemma": "die Musikerin"
+  },
+  {
+   "form": "Gehst",
+   "context": "Reporter: Gehst du allein oder mit deiner Familie?",
+   "en": "(you) go",
+   "lemma": "gehen"
+  },
+  {
+   "form": "allein",
+   "context": "Reporter: Gehst du allein oder mit deiner Familie?",
+   "en": "alone",
+   "lemma": ""
+  },
+  {
+   "form": "deiner",
+   "context": "Reporter: Gehst du allein oder mit deiner Familie?",
+   "en": "your",
+   "lemma": ""
+  },
+  {
+   "form": "besten",
+   "context": "Ella: Ohne meine Familie. Aber mit meiner besten Freundin.",
+   "en": "best",
+   "lemma": "gut"
+  },
+  {
+   "form": "höflicher",
+   "context": "Was ist höflicher im Café?",
+   "en": "more polite",
+   "lemma": "höflich"
+  }
+ ]
+}
