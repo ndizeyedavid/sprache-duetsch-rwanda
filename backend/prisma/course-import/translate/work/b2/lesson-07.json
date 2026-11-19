@@ -1,0 +1,985 @@
+{
+ "level": "B2",
+ "lesson": 7,
+ "title": "Auf der Suche nach Informationen — Es kommt darauf an, wo man sucht",
+ "lines": [
+  {
+   "de": "Über Informationssuche und Quellenkritik sprechen — und das vielseitige Wort es beherrschen.",
+   "en": "Talking about searching for information and evaluating sources — and mastering the versatile word es."
+  },
+  {
+   "de": "Textsorte: Zeitschriftenartikel · Videoreportage",
+   "en": "Text type: magazine article · video report"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Lesen Teil 1; telc B2 Lesen",
+   "en": "Exam link: Goethe B2 Reading part 1; telc B2 Reading"
+  },
+  {
+   "de": "über Informationssuche im Internet sprechen",
+   "en": "talk about searching for information on the internet"
+  },
+  {
+   "de": "Quellen einschätzen und Informationen prüfen",
+   "en": "assess sources and check information"
+  },
+  {
+   "de": "die verschiedenen Funktionen des Wortes es erkennen und richtig setzen",
+   "en": "recognise the different functions of the word es and use it correctly"
+  },
+  {
+   "de": "Grammatik: Das Wort es",
+   "en": "Grammar: The word es"
+  },
+  {
+   "de": "es hat im Deutschen fünf deutlich verschiedene Aufgaben. Entscheidend ist, ob es weggelassen werden kann: Als echtes Subjekt oder Objekt und in festen Wendungen ist es obligatorisch, als bloßer Platzhalter auf Position 1 verschwindet es, sobald etwas anderes vorn steht.",
+   "en": "In German, es has five clearly different jobs. What matters is whether it can be left out: as a real subject or object and in fixed expressions it is obligatory; as a mere placeholder in position 1, it disappears as soon as something else comes first."
+  },
+  {
+   "de": "weglassbar?",
+   "en": "Can it be left out?"
+  },
+  {
+   "de": "Pronomen für ein Neutrum",
+   "en": "Pronoun for a neuter noun"
+  },
+  {
+   "de": "Wo ist das Buch? — Es liegt auf dem Tisch.",
+   "en": "Where is the book? — It's on the table."
+  },
+  {
+   "de": "nein",
+   "en": "no"
+  },
+  {
+   "de": "unpersönliches Subjekt",
+   "en": "Impersonal subject"
+  },
+  {
+   "de": "Es regnet. / Es ist spät. / Es gibt viele Quellen.",
+   "en": "It's raining. / It's late. / There are many sources."
+  },
+  {
+   "de": "festes Objekt in Wendungen",
+   "en": "Fixed object in expressions"
+  },
+  {
+   "de": "Ich habe es eilig. / Sie meint es gut.",
+   "en": "I'm in a hurry. / She means well."
+  },
+  {
+   "de": "Vorausweis auf einen Nebensatz",
+   "en": "Pointing ahead to a subordinate clause"
+  },
+  {
+   "de": "Es ist wichtig, dass man Quellen prüft.",
+   "en": "It is important that you check sources."
+  },
+  {
+   "de": "ja, wenn der Nebensatz vorn steht",
+   "en": "yes, if the subordinate clause comes first"
+  },
+  {
+   "de": "Platzhalter auf Position 1",
+   "en": "Placeholder in position 1"
+  },
+  {
+   "de": "Es wurden viele Fehler gefunden.",
+   "en": "Many mistakes were found."
+  },
+  {
+   "de": "ja: Viele Fehler wurden gefunden.",
+   "en": "yes: Viele Fehler wurden gefunden. (Many mistakes were found.)"
+  },
+  {
+   "de": "Es kommt darauf an, wie zuverlässig die Quelle ist.feste Wendung: es kommt auf etwas an",
+   "en": "It depends on how reliable the source is. Fixed expression: es kommt auf etwas an (it depends on something)"
+  },
+  {
+   "de": "Es lohnt sich, mehrere Seiten zu vergleichen.Vorausweis auf den Infinitivsatz",
+   "en": "It's worth comparing several websites. Pointing ahead to the infinitive clause"
+  },
+  {
+   "de": "Es sind zahlreiche Studien erschienen. → Zahlreiche Studien sind erschienen.Platzhalter — fällt weg, wenn das Subjekt nach vorn rückt",
+   "en": "There have been numerous studies published. → Numerous studies have been published. Placeholder — drops out when the subject moves to the front"
+  },
+  {
+   "de": "Tipp: Nützliche feste Wendungen für B2: es geht um, es handelt sich um, es kommt darauf an, es liegt an, es fehlt an, es lohnt sich, es hat keinen Sinn.",
+   "en": "Tip: Useful fixed expressions for B2: es geht um (it's about), es handelt sich um (it concerns), es kommt darauf an (it depends), es liegt an (it's due to), es fehlt an (there's a lack of), es lohnt sich (it's worth it), es hat keinen Sinn (there's no point)."
+  },
+  {
+   "de": "die Quelle, -n — EN: source · FR: la sourcePrüfen Sie immer die Quelle einer Information.",
+   "en": "Example: Always check the source of a piece of information."
+  },
+  {
+   "de": "die Recherche, -n — EN: research, investigation · FR: la rechercheEine gründliche Recherche kostet Zeit.",
+   "en": "Example: Thorough research takes time."
+  },
+  {
+   "de": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "Example: Wikipedia is a reliable starting point, but not proof."
+  },
+  {
+   "de": "der Beleg, -e — EN: proof, reference · FR: la preuve, la référenceFür diese Behauptung fehlt jeder Beleg.",
+   "en": "Example: There is no evidence at all for this claim."
+  },
+  {
+   "de": "die Falschmeldung, -en — EN: fake news item · FR: la fausse informationFalschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "Example: Fake news spreads faster than corrections."
+  },
+  {
+   "de": "etwas überprüfen — EN: to verify, check · FR: vérifierÜberprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "Example: Check the information in a second source."
+  },
+  {
+   "de": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "Example: Search engines sort results according to their own criteria."
+  },
+  {
+   "de": "der Algorithmus, Algorithmen — EN: algorithm · FR: l'algorithmeDer Algorithmus entscheidet, was Sie zuerst sehen.",
+   "en": "Example: The algorithm decides what you see first."
+  },
+  {
+   "de": "glaubwürdig — EN: credible · FR: crédibleDie Seite wirkt auf den ersten Blick glaubwürdig.",
+   "en": "Example: At first glance, the website seems credible."
+  },
+  {
+   "de": "der Verfasser, - / die Verfasserin, -nen — EN: author · FR: l'auteur(e)Wer ist der Verfasser des Beitrags?",
+   "en": "Example: Who is the author of the article?"
+  },
+  {
+   "de": "das Impressum, Impressen — EN: legal notice, imprint · FR: les mentions légalesSeriöse Seiten haben immer ein Impressum.",
+   "en": "Example: Reputable websites always have a legal notice."
+  },
+  {
+   "de": "sich auf etwas verlassen — EN: to rely on sth. · FR: se fier à qc.Darauf würde ich mich nicht verlassen.",
+   "en": "Example: I wouldn't rely on that."
+  },
+  {
+   "de": "die Fachliteratur (Sg.) — EN: specialist literature · FR: la littérature spécialiséeFür die Arbeit brauchen Sie Fachliteratur.",
+   "en": "Example: For the paper, you need specialist literature."
+  },
+  {
+   "de": "etwas einordnen — EN: to classify, put in context · FR: replacer dans son contexteZahlen muss man immer einordnen können.",
+   "en": "Example: You must always be able to put figures into context."
+  },
+  {
+   "de": "eine Quelle einschätzen",
+   "en": "Assessing a source"
+  },
+  {
+   "de": "Die Seite macht einen seriösen Eindruck, weil …",
+   "en": "The website seems reputable because …"
+  },
+  {
+   "de": "Hier fehlt eine Angabe dazu, wer …",
+   "en": "There is no information here about who …"
+  },
+  {
+   "de": "Das lässt sich so nicht überprüfen.",
+   "en": "That can't be verified like this."
+  },
+  {
+   "de": "über Suchstrategien sprechen",
+   "en": "Talking about search strategies"
+  },
+  {
+   "de": "Ich gehe meistens so vor: Zuerst …, dann …",
+   "en": "I usually go about it like this: first …, then …"
+  },
+  {
+   "de": "Es kommt darauf an, wonach genau ich suche.",
+   "en": "It depends on what exactly I'm looking for."
+  },
+  {
+   "de": "Bei Fachfragen verlasse ich mich eher auf …",
+   "en": "For specialist questions, I tend to rely on …"
+  },
+  {
+   "de": "Zweifel ausdrücken",
+   "en": "Expressing doubt"
+  },
+  {
+   "de": "Das klingt mir zu pauschal.",
+   "en": "That sounds too sweeping to me."
+  },
+  {
+   "de": "Ich würde das erst einmal mit Vorsicht genießen.",
+   "en": "I would take that with a grain of salt for now."
+  },
+  {
+   "de": "Dafür hätte ich gern einen Beleg.",
+   "en": "I'd like to see some evidence for that."
+  },
+  {
+   "de": "Prüfen Sie immer die Quelle einer Information.",
+   "en": "Always check the source of a piece of information."
+  },
+  {
+   "de": "Eine gründliche Recherche kostet Zeit.",
+   "en": "Thorough research takes time."
+  },
+  {
+   "de": "Wikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "Wikipedia is a reliable starting point, but not proof."
+  },
+  {
+   "de": "Für diese Behauptung fehlt jeder Beleg.",
+   "en": "There is no evidence at all for this claim."
+  },
+  {
+   "de": "Falschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "Fake news spreads faster than corrections."
+  },
+  {
+   "de": "Überprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "Check the information in a second source."
+  },
+  {
+   "de": "Suchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "Search engines sort results according to their own criteria."
+  },
+  {
+   "de": "Der Algorithmus entscheidet, was Sie zuerst sehen.",
+   "en": "The algorithm decides what you see first."
+  },
+  {
+   "de": "Die Seite wirkt auf den ersten Blick glaubwürdig.",
+   "en": "At first glance, the website seems credible."
+  },
+  {
+   "de": "Wer ist der Verfasser des Beitrags?",
+   "en": "Who is the author of the article?"
+  },
+  {
+   "de": "Seriöse Seiten haben immer ein Impressum.",
+   "en": "Reputable websites always have a legal notice."
+  },
+  {
+   "de": "Darauf würde ich mich nicht verlassen.",
+   "en": "I wouldn't rely on that."
+  },
+  {
+   "de": "Für die Arbeit brauchen Sie Fachliteratur.",
+   "en": "For the paper, you need specialist literature."
+  },
+  {
+   "de": "Zahlen muss man immer einordnen können.",
+   "en": "You must always be able to put figures into context."
+  },
+  {
+   "de": "___ kommt darauf an, wie alt die Studie ist.",
+   "en": "___ depends on how old the study is."
+  },
+  {
+   "de": "In welchem Satz kann es wegfallen?",
+   "en": "In which sentence can es be left out?"
+  },
+  {
+   "de": "___ lohnt sich, mehrere Quellen zu vergleichen.",
+   "en": "___ is worth comparing several sources."
+  },
+  {
+   "de": "Welche Wendung bedeutet „das Thema ist …\"?",
+   "en": "Which expression means “the topic is …”?"
+  },
+  {
+   "de": "In dem Artikel geht ___ um Künstliche Intelligenz.",
+   "en": "In the article, ___ is about artificial intelligence."
+  },
+  {
+   "de": "Welcher Satz ist falsch?",
+   "en": "Which sentence is wrong?"
+  },
+  {
+   "de": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "In a short advice text, describe how to find reliable information on the internet. Length: 150–180 words Checklist: • Name three concrete checking steps in a sensible order. • Use at least three fixed expressions with es. • Address the readers directly. • End with a warning or a rule to remember."
+  },
+  {
+   "de": "Feste Wendung: es kommt auf etwas an.",
+   "en": "Fixed expression: es kommt auf etwas an."
+  },
+  {
+   "de": "Hier ist es nur Platzhalter auf Position 1: „Drei Fehler wurden gefunden.\"",
+   "en": "Here es is only a placeholder in position 1: “Drei Fehler wurden gefunden.”"
+  },
+  {
+   "de": "es weist auf den folgenden Infinitivsatz voraus.",
+   "en": "es points ahead to the following infinitive clause."
+  },
+  {
+   "de": "es handelt sich um + Akkusativ benennt das Thema oder den Gegenstand.",
+   "en": "es handelt sich um + accusative names the topic or the subject matter."
+  },
+  {
+   "de": "es geht um + Akkusativ — obligatorisch, auch im Mittelfeld.",
+   "en": "es geht um + accusative — obligatory, even in the middle field."
+  },
+  {
+   "de": "Der Satz braucht ein Subjekt oder ein Element auf Position 1.",
+   "en": "The sentence needs a subject or an element in position 1."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Informationssuche",
+   "context": "Über Informationssuche und Quellenkritik sprechen — und das vielseitige Wort es beherrschen.",
+   "en": "search for information",
+   "lemma": "die Informationssuche"
+  },
+  {
+   "form": "Quellenkritik",
+   "context": "Über Informationssuche und Quellenkritik sprechen — und das vielseitige Wort es beherrschen.",
+   "en": "critical evaluation of sources",
+   "lemma": "die Quellenkritik"
+  },
+  {
+   "form": "vielseitige",
+   "context": "Über Informationssuche und Quellenkritik sprechen — und das vielseitige Wort es beherrschen.",
+   "en": "versatile",
+   "lemma": "vielseitig"
+  },
+  {
+   "form": "Zeitschriftenartikel",
+   "context": "Textsorte: Zeitschriftenartikel · Videoreportage",
+   "en": "magazine article",
+   "lemma": "der Zeitschriftenartikel"
+  },
+  {
+   "form": "Videoreportage",
+   "context": "Textsorte: Zeitschriftenartikel · Videoreportage",
+   "en": "video report",
+   "lemma": "die Videoreportage"
+  },
+  {
+   "form": "Quellen",
+   "context": "Quellen einschätzen und Informationen prüfen",
+   "en": "sources",
+   "lemma": "die Quelle"
+  },
+  {
+   "form": "einschätzen",
+   "context": "Quellen einschätzen und Informationen prüfen",
+   "en": "to assess, evaluate",
+   "lemma": ""
+  },
+  {
+   "form": "Wortes",
+   "context": "die verschiedenen Funktionen des Wortes es erkennen und richtig setzen",
+   "en": "word",
+   "lemma": "das Wort"
+  },
+  {
+   "form": "obligatorisch",
+   "context": "es hat im Deutschen fünf deutlich verschiedene Aufgaben. Entscheidend ist, ob es weggelassen werden kann: Als echtes Subjekt oder Objekt und in festen Wendungen ist es obligatorisch, als bloßer Platzhalter auf Position 1 verschwindet es, sobald etwas anderes vorn steht.",
+   "en": "obligatory",
+   "lemma": ""
+  },
+  {
+   "form": "bloßer",
+   "context": "es hat im Deutschen fünf deutlich verschiedene Aufgaben. Entscheidend ist, ob es weggelassen werden kann: Als echtes Subjekt oder Objekt und in festen Wendungen ist es obligatorisch, als bloßer Platzhalter auf Position 1 verschwindet es, sobald etwas anderes vorn steht.",
+   "en": "mere",
+   "lemma": "bloß"
+  },
+  {
+   "form": "Platzhalter",
+   "context": "es hat im Deutschen fünf deutlich verschiedene Aufgaben. Entscheidend ist, ob es weggelassen werden kann: Als echtes Subjekt oder Objekt und in festen Wendungen ist es obligatorisch, als bloßer Platzhalter auf Position 1 verschwindet es, sobald etwas anderes vorn steht.",
+   "en": "placeholder",
+   "lemma": "der Platzhalter"
+  },
+  {
+   "form": "sobald",
+   "context": "es hat im Deutschen fünf deutlich verschiedene Aufgaben. Entscheidend ist, ob es weggelassen werden kann: Als echtes Subjekt oder Objekt und in festen Wendungen ist es obligatorisch, als bloßer Platzhalter auf Position 1 verschwindet es, sobald etwas anderes vorn steht.",
+   "en": "as soon as",
+   "lemma": ""
+  },
+  {
+   "form": "weglassbar",
+   "context": "weglassbar?",
+   "en": "can be left out",
+   "lemma": ""
+  },
+  {
+   "form": "eilig",
+   "context": "Ich habe es eilig. / Sie meint es gut.",
+   "en": "urgent (es eilig haben = to be in a hurry)",
+   "lemma": ""
+  },
+  {
+   "form": "meint",
+   "context": "Ich habe es eilig. / Sie meint es gut.",
+   "en": "means; thinks",
+   "lemma": "meinen"
+  },
+  {
+   "form": "prüft",
+   "context": "Es ist wichtig, dass man Quellen prüft.",
+   "en": "checks",
+   "lemma": "prüfen"
+  },
+  {
+   "form": "Quelle",
+   "context": "Es kommt darauf an, wie zuverlässig die Quelle ist.feste Wendung: es kommt auf etwas an",
+   "en": "source",
+   "lemma": "die Quelle"
+  },
+  {
+   "form": "Wendung",
+   "context": "Es kommt darauf an, wie zuverlässig die Quelle ist.feste Wendung: es kommt auf etwas an",
+   "en": "expression, phrase; turn",
+   "lemma": "die Wendung"
+  },
+  {
+   "form": "Seiten",
+   "context": "Es lohnt sich, mehrere Seiten zu vergleichen.Vorausweis auf den Infinitivsatz",
+   "en": "websites, pages; sides",
+   "lemma": "die Seite"
+  },
+  {
+   "form": "zahlreiche",
+   "context": "Es sind zahlreiche Studien erschienen. → Zahlreiche Studien sind erschienen.Platzhalter — fällt weg, wenn das Subjekt nach vorn rückt",
+   "en": "numerous",
+   "lemma": "zahlreich"
+  },
+  {
+   "form": "Studien",
+   "context": "Es sind zahlreiche Studien erschienen. → Zahlreiche Studien sind erschienen.Platzhalter — fällt weg, wenn das Subjekt nach vorn rückt",
+   "en": "studies",
+   "lemma": "die Studie"
+  },
+  {
+   "form": "erschienen",
+   "context": "Es sind zahlreiche Studien erschienen. → Zahlreiche Studien sind erschienen.Platzhalter — fällt weg, wenn das Subjekt nach vorn rückt",
+   "en": "appeared, been published",
+   "lemma": "erscheinen"
+  },
+  {
+   "form": "Zahlreiche",
+   "context": "Es sind zahlreiche Studien erschienen. → Zahlreiche Studien sind erschienen.Platzhalter — fällt weg, wenn das Subjekt nach vorn rückt",
+   "en": "numerous",
+   "lemma": "zahlreich"
+  },
+  {
+   "form": "Sinn",
+   "context": "Tipp: Nützliche feste Wendungen für B2: es geht um, es handelt sich um, es kommt darauf an, es liegt an, es fehlt an, es lohnt sich, es hat keinen Sinn.",
+   "en": "sense, point (es hat keinen Sinn = there's no point)",
+   "lemma": "der Sinn"
+  },
+  {
+   "form": "source",
+   "context": "die Quelle, -n — EN: source · FR: la sourcePrüfen Sie immer die Quelle einer Information.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sourcePrüfen",
+   "context": "die Quelle, -n — EN: source · FR: la sourcePrüfen Sie immer die Quelle einer Information.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Recherche",
+   "context": "die Recherche, -n — EN: research, investigation · FR: la rechercheEine gründliche Recherche kostet Zeit.",
+   "en": "research",
+   "lemma": "die Recherche"
+  },
+  {
+   "form": "research",
+   "context": "die Recherche, -n — EN: research, investigation · FR: la rechercheEine gründliche Recherche kostet Zeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "investigation",
+   "context": "die Recherche, -n — EN: research, investigation · FR: la rechercheEine gründliche Recherche kostet Zeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rechercheEine",
+   "context": "die Recherche, -n — EN: research, investigation · FR: la rechercheEine gründliche Recherche kostet Zeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gründliche",
+   "context": "die Recherche, -n — EN: research, investigation · FR: la rechercheEine gründliche Recherche kostet Zeit.",
+   "en": "thorough",
+   "lemma": "gründlich"
+  },
+  {
+   "form": "unzuverlässig",
+   "context": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "unreliable",
+   "lemma": ""
+  },
+  {
+   "form": "unreliable",
+   "context": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fiable",
+   "context": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "peu",
+   "context": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fiableWikipedia",
+   "context": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zuverlässiger",
+   "context": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "reliable",
+   "lemma": "zuverlässig"
+  },
+  {
+   "form": "Beleg",
+   "context": "zuverlässig / unzuverlässig — EN: reliable / unreliable · FR: fiable / peu fiableWikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "proof, evidence; receipt",
+   "lemma": "der Beleg"
+  },
+  {
+   "form": "proof",
+   "context": "der Beleg, -e — EN: proof, reference · FR: la preuve, la référenceFür diese Behauptung fehlt jeder Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "preuve",
+   "context": "der Beleg, -e — EN: proof, reference · FR: la preuve, la référenceFür diese Behauptung fehlt jeder Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "référenceFür",
+   "context": "der Beleg, -e — EN: proof, reference · FR: la preuve, la référenceFür diese Behauptung fehlt jeder Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Behauptung",
+   "context": "der Beleg, -e — EN: proof, reference · FR: la preuve, la référenceFür diese Behauptung fehlt jeder Beleg.",
+   "en": "claim",
+   "lemma": "die Behauptung"
+  },
+  {
+   "form": "Falschmeldung",
+   "context": "die Falschmeldung, -en — EN: fake news item · FR: la fausse informationFalschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "false report, fake news item",
+   "lemma": "die Falschmeldung"
+  },
+  {
+   "form": "fake",
+   "context": "die Falschmeldung, -en — EN: fake news item · FR: la fausse informationFalschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fausse",
+   "context": "die Falschmeldung, -en — EN: fake news item · FR: la fausse informationFalschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "informationFalschmeldungen",
+   "context": "die Falschmeldung, -en — EN: fake news item · FR: la fausse informationFalschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verbreiten",
+   "context": "die Falschmeldung, -en — EN: fake news item · FR: la fausse informationFalschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "spread",
+   "lemma": ""
+  },
+  {
+   "form": "Korrekturen",
+   "context": "die Falschmeldung, -en — EN: fake news item · FR: la fausse informationFalschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "corrections",
+   "lemma": "die Korrektur"
+  },
+  {
+   "form": "überprüfen",
+   "context": "etwas überprüfen — EN: to verify, check · FR: vérifierÜberprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "to check, verify",
+   "lemma": ""
+  },
+  {
+   "form": "verify",
+   "context": "etwas überprüfen — EN: to verify, check · FR: vérifierÜberprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "check",
+   "context": "etwas überprüfen — EN: to verify, check · FR: vérifierÜberprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vérifierÜberprüfen",
+   "context": "etwas überprüfen — EN: to verify, check · FR: vérifierÜberprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Angaben",
+   "context": "etwas überprüfen — EN: to verify, check · FR: vérifierÜberprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "details, information",
+   "lemma": "die Angabe"
+  },
+  {
+   "form": "Suchmaschine",
+   "context": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "search engine",
+   "lemma": "die Suchmaschine"
+  },
+  {
+   "form": "search",
+   "context": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "engine",
+   "context": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "moteur",
+   "context": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rechercheSuchmaschinen",
+   "context": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Ergebnisse",
+   "context": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "results",
+   "lemma": "das Ergebnis"
+  },
+  {
+   "form": "Kriterien",
+   "context": "die Suchmaschine, -n — EN: search engine · FR: le moteur de rechercheSuchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "criteria",
+   "lemma": "das Kriterium"
+  },
+  {
+   "form": "Algorithmus",
+   "context": "der Algorithmus, Algorithmen — EN: algorithm · FR: l'algorithmeDer Algorithmus entscheidet, was Sie zuerst sehen.",
+   "en": "algorithm",
+   "lemma": "der Algorithmus"
+  },
+  {
+   "form": "Algorithmen",
+   "context": "der Algorithmus, Algorithmen — EN: algorithm · FR: l'algorithmeDer Algorithmus entscheidet, was Sie zuerst sehen.",
+   "en": "algorithms",
+   "lemma": "der Algorithmus"
+  },
+  {
+   "form": "algorithm",
+   "context": "der Algorithmus, Algorithmen — EN: algorithm · FR: l'algorithmeDer Algorithmus entscheidet, was Sie zuerst sehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'algorithmeDer",
+   "context": "der Algorithmus, Algorithmen — EN: algorithm · FR: l'algorithmeDer Algorithmus entscheidet, was Sie zuerst sehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "glaubwürdig",
+   "context": "glaubwürdig — EN: credible · FR: crédibleDie Seite wirkt auf den ersten Blick glaubwürdig.",
+   "en": "credible",
+   "lemma": ""
+  },
+  {
+   "form": "credible",
+   "context": "glaubwürdig — EN: credible · FR: crédibleDie Seite wirkt auf den ersten Blick glaubwürdig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "crédibleDie",
+   "context": "glaubwürdig — EN: credible · FR: crédibleDie Seite wirkt auf den ersten Blick glaubwürdig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Verfasser",
+   "context": "der Verfasser, - / die Verfasserin, -nen — EN: author · FR: l'auteur(e)Wer ist der Verfasser des Beitrags?",
+   "en": "author (a man)",
+   "lemma": "der Verfasser"
+  },
+  {
+   "form": "Verfasserin",
+   "context": "der Verfasser, - / die Verfasserin, -nen — EN: author · FR: l'auteur(e)Wer ist der Verfasser des Beitrags?",
+   "en": "author (a woman)",
+   "lemma": "die Verfasserin"
+  },
+  {
+   "form": "author",
+   "context": "der Verfasser, - / die Verfasserin, -nen — EN: author · FR: l'auteur(e)Wer ist der Verfasser des Beitrags?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'auteur",
+   "context": "der Verfasser, - / die Verfasserin, -nen — EN: author · FR: l'auteur(e)Wer ist der Verfasser des Beitrags?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Beitrags",
+   "context": "der Verfasser, - / die Verfasserin, -nen — EN: author · FR: l'auteur(e)Wer ist der Verfasser des Beitrags?",
+   "en": "article, post; contribution",
+   "lemma": "der Beitrag"
+  },
+  {
+   "form": "Impressum",
+   "context": "das Impressum, Impressen — EN: legal notice, imprint · FR: les mentions légalesSeriöse Seiten haben immer ein Impressum.",
+   "en": "legal notice, imprint",
+   "lemma": "das Impressum"
+  },
+  {
+   "form": "Impressen",
+   "context": "das Impressum, Impressen — EN: legal notice, imprint · FR: les mentions légalesSeriöse Seiten haben immer ein Impressum.",
+   "en": "legal notices",
+   "lemma": "das Impressum"
+  },
+  {
+   "form": "legal",
+   "context": "das Impressum, Impressen — EN: legal notice, imprint · FR: les mentions légalesSeriöse Seiten haben immer ein Impressum.",
+   "en": "legal, lawful",
+   "lemma": ""
+  },
+  {
+   "form": "imprint",
+   "context": "das Impressum, Impressen — EN: legal notice, imprint · FR: les mentions légalesSeriöse Seiten haben immer ein Impressum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mentions",
+   "context": "das Impressum, Impressen — EN: legal notice, imprint · FR: les mentions légalesSeriöse Seiten haben immer ein Impressum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "légalesSeriöse",
+   "context": "das Impressum, Impressen — EN: legal notice, imprint · FR: les mentions légalesSeriöse Seiten haben immer ein Impressum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Fachliteratur",
+   "context": "die Fachliteratur (Sg.) — EN: specialist literature · FR: la littérature spécialiséeFür die Arbeit brauchen Sie Fachliteratur.",
+   "en": "specialist literature",
+   "lemma": "die Fachliteratur"
+  },
+  {
+   "form": "specialist",
+   "context": "die Fachliteratur (Sg.) — EN: specialist literature · FR: la littérature spécialiséeFür die Arbeit brauchen Sie Fachliteratur.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "literature",
+   "context": "die Fachliteratur (Sg.) — EN: specialist literature · FR: la littérature spécialiséeFür die Arbeit brauchen Sie Fachliteratur.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "littérature",
+   "context": "die Fachliteratur (Sg.) — EN: specialist literature · FR: la littérature spécialiséeFür die Arbeit brauchen Sie Fachliteratur.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "spécialiséeFür",
+   "context": "die Fachliteratur (Sg.) — EN: specialist literature · FR: la littérature spécialiséeFür die Arbeit brauchen Sie Fachliteratur.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "classify",
+   "context": "etwas einordnen — EN: to classify, put in context · FR: replacer dans son contexteZahlen muss man immer einordnen können.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "context",
+   "context": "etwas einordnen — EN: to classify, put in context · FR: replacer dans son contexteZahlen muss man immer einordnen können.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "replacer",
+   "context": "etwas einordnen — EN: to classify, put in context · FR: replacer dans son contexteZahlen muss man immer einordnen können.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "son",
+   "context": "etwas einordnen — EN: to classify, put in context · FR: replacer dans son contexteZahlen muss man immer einordnen können.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "contexteZahlen",
+   "context": "etwas einordnen — EN: to classify, put in context · FR: replacer dans son contexteZahlen muss man immer einordnen können.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "seriösen",
+   "context": "Die Seite macht einen seriösen Eindruck, weil …",
+   "en": "reputable, serious",
+   "lemma": "seriös"
+  },
+  {
+   "form": "Angabe",
+   "context": "Hier fehlt eine Angabe dazu, wer …",
+   "en": "detail, information",
+   "lemma": "die Angabe"
+  },
+  {
+   "form": "Suchstrategien",
+   "context": "über Suchstrategien sprechen",
+   "en": "search strategies",
+   "lemma": "die Suchstrategie"
+  },
+  {
+   "form": "wonach",
+   "context": "Es kommt darauf an, wonach genau ich suche.",
+   "en": "what … for (wonach suchst du? = what are you looking for?)",
+   "lemma": ""
+  },
+  {
+   "form": "Fachfragen",
+   "context": "Bei Fachfragen verlasse ich mich eher auf …",
+   "en": "specialist questions",
+   "lemma": "die Fachfrage"
+  },
+  {
+   "form": "verlasse",
+   "context": "Bei Fachfragen verlasse ich mich eher auf …",
+   "en": "rely (sich verlassen auf); leave",
+   "lemma": "verlassen"
+  },
+  {
+   "form": "genießen",
+   "context": "Ich würde das erst einmal mit Vorsicht genießen.",
+   "en": "to enjoy (mit Vorsicht genießen = to take with a grain of salt)",
+   "lemma": ""
+  },
+  {
+   "form": "Wikipedia",
+   "context": "Wikipedia ist ein zuverlässiger Einstieg, aber kein Beleg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Falschmeldungen",
+   "context": "Falschmeldungen verbreiten sich schneller als Korrekturen.",
+   "en": "false reports, fake news",
+   "lemma": "die Falschmeldung"
+  },
+  {
+   "form": "Überprüfen",
+   "context": "Überprüfen Sie die Angaben in einer zweiten Quelle.",
+   "en": "check, verify",
+   "lemma": "überprüfen"
+  },
+  {
+   "form": "Suchmaschinen",
+   "context": "Suchmaschinen sortieren Ergebnisse nach eigenen Kriterien.",
+   "en": "search engines",
+   "lemma": "die Suchmaschine"
+  },
+  {
+   "form": "Seriöse",
+   "context": "Seriöse Seiten haben immer ein Impressum.",
+   "en": "reputable",
+   "lemma": "seriös"
+  },
+  {
+   "form": "Studie",
+   "context": "___ kommt darauf an, wie alt die Studie ist.",
+   "en": "study",
+   "lemma": "die Studie"
+  },
+  {
+   "form": "wegfallen",
+   "context": "In welchem Satz kann es wegfallen?",
+   "en": "to be dropped, disappear",
+   "lemma": ""
+  },
+  {
+   "form": "Ratgebertext",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "advice text, guide",
+   "lemma": "der Ratgebertext"
+  },
+  {
+   "form": "zuverlässige",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "reliable",
+   "lemma": "zuverlässig"
+  },
+  {
+   "form": "konkrete",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "concrete, specific",
+   "lemma": "konkret"
+  },
+  {
+   "form": "Prüfschritte",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "checking steps",
+   "lemma": "der Prüfschritt"
+  },
+  {
+   "form": "sinnvoller",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "sensible",
+   "lemma": "sinnvoll"
+  },
+  {
+   "form": "Leserinnen",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "readers (women)",
+   "lemma": "die Leserin"
+  },
+  {
+   "form": "Leser",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "readers; reader",
+   "lemma": "der Leser"
+  },
+  {
+   "form": "Warnung",
+   "context": "Beschreiben Sie in einem kurzen Ratgebertext, wie man im Internet zuverlässige Informationen findet. Umfang: 150–180 Wörter Checkliste: • Nennen Sie drei konkrete Prüfschritte in sinnvoller Reihenfolge. • Verwenden Sie mindestens drei feste Wendungen mit es. • Sprechen Sie die Leserinnen und Leser direkt an. • Schließen Sie mit einer Warnung oder einem Merksatz.",
+   "en": "warning",
+   "lemma": "die Warnung"
+  }
+ ]
+}
