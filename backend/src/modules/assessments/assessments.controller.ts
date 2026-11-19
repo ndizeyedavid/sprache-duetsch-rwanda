@@ -142,6 +142,10 @@ export const getMyAssessment = async (req: Request, res: Response): Promise<void
   const assessment = await service.getMyAssessment(req.user!.id, id);
   res.json({ success: true, data: assessment });
 };
+export const getMyAssessmentResult = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  res.json({ success: true, data: await service.getMyAssessmentResult(req.user!.id, id) });
+};
 export const startAttempt = async (req: Request, res: Response): Promise<void> => {
   const { id } = validatedParams<{ id: string }>(req);
   const attempt = await service.startAttempt(req.user!.id, id);
