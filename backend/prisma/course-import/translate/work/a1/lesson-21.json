@@ -1,0 +1,745 @@
+{
+ "level": "A1",
+ "lesson": 21,
+ "title": "Regeln — Hier musst du langsam fahren",
+ "lines": [
+  {
+   "de": "Über Regeln sprechen: Was ist erlaubt, was ist verboten?",
+   "en": "Talk about rules: What is allowed, what is forbidden?"
+  },
+  {
+   "de": "Textsorte: Schilder · Gespräch",
+   "en": "Text type: Signs · Conversation"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 3 (Schilder); telc A1 Lesen",
+   "en": "Exam link: Start Deutsch 1 Reading part 3 (signs); telc A1 Reading"
+  },
+  {
+   "de": "Regeln und Verbote verstehen",
+   "en": "understand rules and bans"
+  },
+  {
+   "de": "die Modalverben müssen und dürfen verwenden",
+   "en": "use the modal verbs (Modalverben) müssen and dürfen"
+  },
+  {
+   "de": "Schilder und Hinweise lesen",
+   "en": "read signs and notices"
+  },
+  {
+   "de": "Grammatik: Die Modalverben müssen und dürfen",
+   "en": "Grammar: the modal verbs (Modalverben) müssen and dürfen"
+  },
+  {
+   "de": "müssen bedeutet: Es ist nötig, es gibt keine Wahl. dürfen bedeutet: Es ist erlaubt. nicht dürfen heißt: Es ist verboten.",
+   "en": "müssen means: it is necessary, there is no choice. dürfen means: it is allowed. nicht dürfen means: it is forbidden."
+  },
+  {
+   "de": "müssen",
+   "en": "must; to have to"
+  },
+  {
+   "de": "dürfen",
+   "en": "may; to be allowed to"
+  },
+  {
+   "de": "muss",
+   "en": "must; have to / has to"
+  },
+  {
+   "de": "darf",
+   "en": "may; am / is allowed to"
+  },
+  {
+   "de": "musst",
+   "en": "(you) must"
+  },
+  {
+   "de": "darfst",
+   "en": "(you) may"
+  },
+  {
+   "de": "müsst",
+   "en": "(you all) must"
+  },
+  {
+   "de": "dürft",
+   "en": "(you all) may"
+  },
+  {
+   "de": "Bei Rot musst du stehen, bei Grün darfst du gehen.müssen = nötig, dürfen = erlaubt",
+   "en": "When it's red you have to stop, when it's green you may go. müssen = necessary, dürfen = allowed"
+  },
+  {
+   "de": "Hier darf man nicht parken.nicht dürfen = verboten",
+   "en": "You're not allowed to park here. nicht dürfen = forbidden"
+  },
+  {
+   "de": "Man muss in der Bibliothek leise sein.man = alle Leute",
+   "en": "You have to be quiet in the library. man = everyone"
+  },
+  {
+   "de": "Tipp: Achtung: „Du musst nicht kommen\" heißt, es ist nicht nötig — nicht, dass es verboten ist. Verboten ist: „Du darfst nicht kommen.\"",
+   "en": "Tip: Careful: \"Du musst nicht kommen\" (you don't have to come) means it is not necessary — not that it is forbidden. Forbidden is: \"Du darfst nicht kommen.\" (You must not come.)"
+  },
+  {
+   "de": "die Regel, -n — EN: rule · FR: la règleHier gelten besondere Regeln.",
+   "en": "Example: Special rules apply here."
+  },
+  {
+   "de": "erlaubt / verboten — EN: allowed / forbidden · FR: autorisé / interditRauchen ist hier verboten.",
+   "en": "Example: Smoking is forbidden here."
+  },
+  {
+   "de": "das Schild, -er — EN: sign · FR: le panneauLies mal das Schild!",
+   "en": "Example: Read the sign!"
+  },
+  {
+   "de": "die Ampel, -n — EN: traffic light · FR: le feuWarte an der Ampel!",
+   "en": "Example: Wait at the traffic light!"
+  },
+  {
+   "de": "rot / grün — EN: red / green · FR: rouge / vertBei Rot musst du stehen.",
+   "en": "Example: When it's red, you have to stop."
+  },
+  {
+   "de": "parken — EN: to park · FR: se garerHier darf man nicht parken.",
+   "en": "Example: You're not allowed to park here."
+  },
+  {
+   "de": "rauchen — EN: to smoke · FR: fumerRauchen ist im Zug verboten.",
+   "en": "Example: Smoking is forbidden on the train."
+  },
+  {
+   "de": "langsam / schnell — EN: slow / fast · FR: lentement / viteFahr bitte langsam!",
+   "en": "Example: Please drive slowly!"
+  },
+  {
+   "de": "leise / laut — EN: quiet / loud · FR: doucement / fortIn der Bibliothek muss man leise sein.",
+   "en": "Example: You have to be quiet in the library."
+  },
+  {
+   "de": "man — EN: one, you (general) · FR: onHier darf man nicht telefonieren.",
+   "en": "Example: You're not allowed to make phone calls here."
+  },
+  {
+   "de": "aufpassen — EN: to pay attention · FR: faire attentionPass bitte auf!",
+   "en": "Example: Please pay attention!"
+  },
+  {
+   "de": "die Vorsicht (Sg.) — EN: caution · FR: la prudenceVorsicht, die Straße ist nass!",
+   "en": "Example: Careful, the road is wet!"
+  },
+  {
+   "de": "Regeln nennen",
+   "en": "stating rules"
+  },
+  {
+   "de": "Hier muss man langsam fahren.",
+   "en": "You have to drive slowly here."
+  },
+  {
+   "de": "Das darf man nicht.",
+   "en": "You're not allowed to do that."
+  },
+  {
+   "de": "Rauchen ist hier verboten.",
+   "en": "Smoking is forbidden here."
+  },
+  {
+   "de": "nach Regeln fragen",
+   "en": "asking about rules"
+  },
+  {
+   "de": "Darf man hier parken?",
+   "en": "Are you allowed to park here?"
+  },
+  {
+   "de": "Muss ich das machen?",
+   "en": "Do I have to do that?"
+  },
+  {
+   "de": "Was bedeutet das Schild?",
+   "en": "What does the sign mean?"
+  },
+  {
+   "de": "warnen",
+   "en": "warning someone"
+  },
+  {
+   "de": "Pass auf!",
+   "en": "Watch out!"
+  },
+  {
+   "de": "Vorsicht!",
+   "en": "Careful!"
+  },
+  {
+   "de": "Das ist gefährlich.",
+   "en": "That is dangerous."
+  },
+  {
+   "de": "Dialog: Im Auto",
+   "en": "Dialogue: In the car"
+  },
+  {
+   "de": "Fahrlehrer: Hier musst du langsam fahren. Siehst du das Schild?",
+   "en": "Driving instructor: You have to drive slowly here. Do you see the sign?"
+  },
+  {
+   "de": "Yasin: Ja, dreißig. Und darf ich hier parken?",
+   "en": "Yasin: Yes, thirty. And am I allowed to park here?"
+  },
+  {
+   "de": "Fahrlehrer: Nein, hier darf man nicht parken.",
+   "en": "Driving instructor: No, you're not allowed to park here."
+  },
+  {
+   "de": "Yasin: Und bei Gelb? Muss ich da stehen?",
+   "en": "Yasin: And when it's yellow? Do I have to stop then?"
+  },
+  {
+   "de": "Fahrlehrer: Bei Rot musst du stehen, bei Grün darfst du fahren.",
+   "en": "Driving instructor: When it's red you have to stop; when it's green you may drive."
+  },
+  {
+   "de": "Yasin: Alles klar. Dann passe ich gut auf.",
+   "en": "Yasin: All right. Then I'll pay close attention."
+  },
+  {
+   "de": "Hier gelten besondere Regeln.",
+   "en": "Special rules apply here."
+  },
+  {
+   "de": "Lies mal das Schild!",
+   "en": "Read the sign!"
+  },
+  {
+   "de": "Warte an der Ampel!",
+   "en": "Wait at the traffic light!"
+  },
+  {
+   "de": "Bei Rot musst du stehen.",
+   "en": "When it's red, you have to stop."
+  },
+  {
+   "de": "Hier darf man nicht parken.",
+   "en": "You're not allowed to park here."
+  },
+  {
+   "de": "Rauchen ist im Zug verboten.",
+   "en": "Smoking is forbidden on the train."
+  },
+  {
+   "de": "Fahr bitte langsam!",
+   "en": "Please drive slowly!"
+  },
+  {
+   "de": "In der Bibliothek muss man leise sein.",
+   "en": "You have to be quiet in the library."
+  },
+  {
+   "de": "Hier darf man nicht telefonieren.",
+   "en": "You're not allowed to make phone calls here."
+  },
+  {
+   "de": "Pass bitte auf!",
+   "en": "Please pay attention!"
+  },
+  {
+   "de": "Vorsicht, die Straße ist nass!",
+   "en": "Careful, the road is wet!"
+  },
+  {
+   "de": "Bei Rot ___ du stehen. (müssen, du)",
+   "en": "When it's red, you ___ stop. (müssen, du)"
+  },
+  {
+   "de": "Hier ___ man nicht parken.",
+   "en": "You ___ not park here."
+  },
+  {
+   "de": "Ich ___ heute arbeiten. (müssen, ich)",
+   "en": "I ___ work today. (müssen, ich)"
+  },
+  {
+   "de": "Was bedeutet „Du musst nicht kommen\"?",
+   "en": "What does \"Du musst nicht kommen\" mean?"
+  },
+  {
+   "de": "In der Bibliothek ___ man leise sein. (müssen)",
+   "en": "In the library you ___ be quiet. (müssen)"
+  },
+  {
+   "de": "Schreiben Sie fünf Regeln für Ihren Deutschkurs oder Ihren Arbeitsplatz. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie dreimal müssen und zweimal dürfen. • Schreiben Sie mindestens ein Verbot (nicht dürfen). • Benutzen Sie man.",
+   "en": "Write five rules for your German course or your workplace. Length: 30–40 words Checklist: • Use müssen three times and dürfen twice. • Write at least one ban (nicht dürfen). • Use man."
+  },
+  {
+   "de": "2. Person Singular: musst.",
+   "en": "2nd person singular: musst."
+  },
+  {
+   "de": "nicht dürfen bedeutet: Es ist verboten.",
+   "en": "nicht dürfen means: it is forbidden."
+  },
+  {
+   "de": "ich muss — ohne Endung.",
+   "en": "ich muss — no ending."
+  },
+  {
+   "de": "nicht müssen = nicht nötig; verboten wäre nicht dürfen.",
+   "en": "nicht müssen = not necessary; forbidden would be nicht dürfen."
+  },
+  {
+   "de": "man → muss.",
+   "en": "man (one, you) → muss."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Regeln",
+   "context": "Über Regeln sprechen: Was ist erlaubt, was ist verboten?",
+   "en": "rules",
+   "lemma": "die Regel"
+  },
+  {
+   "form": "erlaubt",
+   "context": "Über Regeln sprechen: Was ist erlaubt, was ist verboten?",
+   "en": "allowed",
+   "lemma": "erlauben"
+  },
+  {
+   "form": "verboten",
+   "context": "Über Regeln sprechen: Was ist erlaubt, was ist verboten?",
+   "en": "forbidden",
+   "lemma": "verbieten"
+  },
+  {
+   "form": "Schilder",
+   "context": "Textsorte: Schilder · Gespräch",
+   "en": "signs",
+   "lemma": "das Schild"
+  },
+  {
+   "form": "Verbote",
+   "context": "Regeln und Verbote verstehen",
+   "en": "bans",
+   "lemma": "das Verbot"
+  },
+  {
+   "form": "dürfen",
+   "context": "die Modalverben müssen und dürfen verwenden",
+   "en": "may; be allowed to",
+   "lemma": ""
+  },
+  {
+   "form": "Hinweise",
+   "context": "Schilder und Hinweise lesen",
+   "en": "notices; hints",
+   "lemma": "der Hinweis"
+  },
+  {
+   "form": "nötig",
+   "context": "müssen bedeutet: Es ist nötig, es gibt keine Wahl. dürfen bedeutet: Es ist erlaubt. nicht dürfen heißt: Es ist verboten.",
+   "en": "necessary",
+   "lemma": ""
+  },
+  {
+   "form": "darf",
+   "context": "darf",
+   "en": "may; is allowed to",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "musst",
+   "context": "musst",
+   "en": "(you) must",
+   "lemma": "müssen"
+  },
+  {
+   "form": "darfst",
+   "context": "darfst",
+   "en": "(you) may",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "müsst",
+   "context": "müsst",
+   "en": "(you all) must",
+   "lemma": "müssen"
+  },
+  {
+   "form": "dürft",
+   "context": "dürft",
+   "en": "(you all) may",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "parken",
+   "context": "Hier darf man nicht parken.nicht dürfen = verboten",
+   "en": "park",
+   "lemma": ""
+  },
+  {
+   "form": "Bibliothek",
+   "context": "Man muss in der Bibliothek leise sein.man = alle Leute",
+   "en": "library",
+   "lemma": "die Bibliothek"
+  },
+  {
+   "form": "leise",
+   "context": "Man muss in der Bibliothek leise sein.man = alle Leute",
+   "en": "quiet",
+   "lemma": ""
+  },
+  {
+   "form": "dass",
+   "context": "Tipp: Achtung: „Du musst nicht kommen\" heißt, es ist nicht nötig — nicht, dass es verboten ist. Verboten ist: „Du darfst nicht kommen.\"",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "Verboten",
+   "context": "Tipp: Achtung: „Du musst nicht kommen\" heißt, es ist nicht nötig — nicht, dass es verboten ist. Verboten ist: „Du darfst nicht kommen.\"",
+   "en": "forbidden",
+   "lemma": "verbieten"
+  },
+  {
+   "form": "Regel",
+   "context": "die Regel, -n — EN: rule · FR: la règleHier gelten besondere Regeln.",
+   "en": "rule",
+   "lemma": "die Regel"
+  },
+  {
+   "form": "rule",
+   "context": "die Regel, -n — EN: rule · FR: la règleHier gelten besondere Regeln.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "règleHier",
+   "context": "die Regel, -n — EN: rule · FR: la règleHier gelten besondere Regeln.",
+   "en": "here",
+   "lemma": ""
+  },
+  {
+   "form": "gelten",
+   "context": "die Regel, -n — EN: rule · FR: la règleHier gelten besondere Regeln.",
+   "en": "apply; are valid",
+   "lemma": ""
+  },
+  {
+   "form": "besondere",
+   "context": "die Regel, -n — EN: rule · FR: la règleHier gelten besondere Regeln.",
+   "en": "special",
+   "lemma": ""
+  },
+  {
+   "form": "allowed",
+   "context": "erlaubt / verboten — EN: allowed / forbidden · FR: autorisé / interditRauchen ist hier verboten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "forbidden",
+   "context": "erlaubt / verboten — EN: allowed / forbidden · FR: autorisé / interditRauchen ist hier verboten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "autorisé",
+   "context": "erlaubt / verboten — EN: allowed / forbidden · FR: autorisé / interditRauchen ist hier verboten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "interditRauchen",
+   "context": "erlaubt / verboten — EN: allowed / forbidden · FR: autorisé / interditRauchen ist hier verboten.",
+   "en": "smoking",
+   "lemma": "das Rauchen"
+  },
+  {
+   "form": "Schild",
+   "context": "das Schild, -er — EN: sign · FR: le panneauLies mal das Schild!",
+   "en": "sign",
+   "lemma": "das Schild"
+  },
+  {
+   "form": "sign",
+   "context": "das Schild, -er — EN: sign · FR: le panneauLies mal das Schild!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "panneauLies",
+   "context": "das Schild, -er — EN: sign · FR: le panneauLies mal das Schild!",
+   "en": "read! (du)",
+   "lemma": "lesen"
+  },
+  {
+   "form": "Ampel",
+   "context": "die Ampel, -n — EN: traffic light · FR: le feuWarte an der Ampel!",
+   "en": "traffic light",
+   "lemma": "die Ampel"
+  },
+  {
+   "form": "traffic",
+   "context": "die Ampel, -n — EN: traffic light · FR: le feuWarte an der Ampel!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "light",
+   "context": "die Ampel, -n — EN: traffic light · FR: le feuWarte an der Ampel!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "feuWarte",
+   "context": "die Ampel, -n — EN: traffic light · FR: le feuWarte an der Ampel!",
+   "en": "wait! (du)",
+   "lemma": "warten"
+  },
+  {
+   "form": "red",
+   "context": "rot / grün — EN: red / green · FR: rouge / vertBei Rot musst du stehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "green",
+   "context": "rot / grün — EN: red / green · FR: rouge / vertBei Rot musst du stehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rouge",
+   "context": "rot / grün — EN: red / green · FR: rouge / vertBei Rot musst du stehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vertBei",
+   "context": "rot / grün — EN: red / green · FR: rouge / vertBei Rot musst du stehen.",
+   "en": "at; when",
+   "lemma": ""
+  },
+  {
+   "form": "garerHier",
+   "context": "parken — EN: to park · FR: se garerHier darf man nicht parken.",
+   "en": "here",
+   "lemma": ""
+  },
+  {
+   "form": "rauchen",
+   "context": "rauchen — EN: to smoke · FR: fumerRauchen ist im Zug verboten.",
+   "en": "to smoke",
+   "lemma": ""
+  },
+  {
+   "form": "smoke",
+   "context": "rauchen — EN: to smoke · FR: fumerRauchen ist im Zug verboten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fumerRauchen",
+   "context": "rauchen — EN: to smoke · FR: fumerRauchen ist im Zug verboten.",
+   "en": "smoking",
+   "lemma": "das Rauchen"
+  },
+  {
+   "form": "schnell",
+   "context": "langsam / schnell — EN: slow / fast · FR: lentement / viteFahr bitte langsam!",
+   "en": "fast; quick",
+   "lemma": ""
+  },
+  {
+   "form": "slow",
+   "context": "langsam / schnell — EN: slow / fast · FR: lentement / viteFahr bitte langsam!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lentement",
+   "context": "langsam / schnell — EN: slow / fast · FR: lentement / viteFahr bitte langsam!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "viteFahr",
+   "context": "langsam / schnell — EN: slow / fast · FR: lentement / viteFahr bitte langsam!",
+   "en": "drive! (du)",
+   "lemma": "fahren"
+  },
+  {
+   "form": "laut",
+   "context": "leise / laut — EN: quiet / loud · FR: doucement / fortIn der Bibliothek muss man leise sein.",
+   "en": "loud; according to",
+   "lemma": ""
+  },
+  {
+   "form": "loud",
+   "context": "leise / laut — EN: quiet / loud · FR: doucement / fortIn der Bibliothek muss man leise sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "doucement",
+   "context": "leise / laut — EN: quiet / loud · FR: doucement / fortIn der Bibliothek muss man leise sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fortIn",
+   "context": "leise / laut — EN: quiet / loud · FR: doucement / fortIn der Bibliothek muss man leise sein.",
+   "en": "in",
+   "lemma": ""
+  },
+  {
+   "form": "one",
+   "context": "man — EN: one, you (general) · FR: onHier darf man nicht telefonieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "you",
+   "context": "man — EN: one, you (general) · FR: onHier darf man nicht telefonieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "general",
+   "context": "man — EN: one, you (general) · FR: onHier darf man nicht telefonieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "onHier",
+   "context": "man — EN: one, you (general) · FR: onHier darf man nicht telefonieren.",
+   "en": "here",
+   "lemma": ""
+  },
+  {
+   "form": "aufpassen",
+   "context": "aufpassen — EN: to pay attention · FR: faire attentionPass bitte auf!",
+   "en": "to pay attention; watch out",
+   "lemma": ""
+  },
+  {
+   "form": "attention",
+   "context": "aufpassen — EN: to pay attention · FR: faire attentionPass bitte auf!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "attentionPass",
+   "context": "aufpassen — EN: to pay attention · FR: faire attentionPass bitte auf!",
+   "en": "watch out! (du)",
+   "lemma": "aufpassen"
+  },
+  {
+   "form": "caution",
+   "context": "die Vorsicht (Sg.) — EN: caution · FR: la prudenceVorsicht, die Straße ist nass!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prudenceVorsicht",
+   "context": "die Vorsicht (Sg.) — EN: caution · FR: la prudenceVorsicht, die Straße ist nass!",
+   "en": "careful!; caution",
+   "lemma": "die Vorsicht"
+  },
+  {
+   "form": "nass",
+   "context": "die Vorsicht (Sg.) — EN: caution · FR: la prudenceVorsicht, die Straße ist nass!",
+   "en": "wet",
+   "lemma": ""
+  },
+  {
+   "form": "Rauchen",
+   "context": "Rauchen ist hier verboten.",
+   "en": "smoking",
+   "lemma": "das Rauchen"
+  },
+  {
+   "form": "Darf",
+   "context": "Darf man hier parken?",
+   "en": "may; is allowed to",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "warnen",
+   "context": "warnen",
+   "en": "to warn",
+   "lemma": ""
+  },
+  {
+   "form": "Pass",
+   "context": "Pass auf!",
+   "en": "watch out! (du); passport",
+   "lemma": "aufpassen"
+  },
+  {
+   "form": "gefährlich",
+   "context": "Das ist gefährlich.",
+   "en": "dangerous",
+   "lemma": ""
+  },
+  {
+   "form": "Fahrlehrer",
+   "context": "Fahrlehrer: Hier musst du langsam fahren. Siehst du das Schild?",
+   "en": "driving instructor",
+   "lemma": "der Fahrlehrer"
+  },
+  {
+   "form": "Yasin",
+   "context": "Yasin: Ja, dreißig. Und darf ich hier parken?",
+   "en": "Yasin (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Gelb",
+   "context": "Yasin: Und bei Gelb? Muss ich da stehen?",
+   "en": "yellow",
+   "lemma": "das Gelb"
+  },
+  {
+   "form": "passe",
+   "context": "Yasin: Alles klar. Dann passe ich gut auf.",
+   "en": "(I) pay attention",
+   "lemma": "aufpassen"
+  },
+  {
+   "form": "Lies",
+   "context": "Lies mal das Schild!",
+   "en": "read! (du)",
+   "lemma": "lesen"
+  },
+  {
+   "form": "Warte",
+   "context": "Warte an der Ampel!",
+   "en": "wait! (du)",
+   "lemma": "warten"
+  },
+  {
+   "form": "Fahr",
+   "context": "Fahr bitte langsam!",
+   "en": "drive! (du)",
+   "lemma": "fahren"
+  },
+  {
+   "form": "Deutschkurs",
+   "context": "Schreiben Sie fünf Regeln für Ihren Deutschkurs oder Ihren Arbeitsplatz. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie dreimal müssen und zweimal dürfen. • Schreiben Sie mindestens ein Verbot (nicht dürfen). • Benutzen Sie man.",
+   "en": "German course",
+   "lemma": "der Deutschkurs"
+  },
+  {
+   "form": "Verbot",
+   "context": "Schreiben Sie fünf Regeln für Ihren Deutschkurs oder Ihren Arbeitsplatz. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie dreimal müssen und zweimal dürfen. • Schreiben Sie mindestens ein Verbot (nicht dürfen). • Benutzen Sie man.",
+   "en": "ban",
+   "lemma": "das Verbot"
+  }
+ ]
+}
