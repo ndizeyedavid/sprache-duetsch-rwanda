@@ -1,0 +1,795 @@
+{
+ "level": "A2",
+ "lesson": 12,
+ "title": "Ernährung — Wenn es warm ist, essen wir meist Salat",
+ "lines": [
+  {
+   "de": "Über Essgewohnheiten sprechen und Bedingungen nennen.",
+   "en": "Talk about eating habits and state conditions."
+  },
+  {
+   "de": "Textsorte: Sachtext · Interview",
+   "en": "Text type: Factual text · Interview"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Hören Teil 3; telc A2 Lesen",
+   "en": "Exam link: Goethe A2 Listening part 3; telc A2 Reading"
+  },
+  {
+   "de": "über Essgewohnheiten sprechen",
+   "en": "talk about eating habits"
+  },
+  {
+   "de": "Bedingungen und wiederholte Situationen mit wenn ausdrücken",
+   "en": "express conditions and repeated situations with wenn"
+  },
+  {
+   "de": "etwas vergleichen und Überraschung ausdrücken",
+   "en": "compare things and express surprise"
+  },
+  {
+   "de": "Grammatik: Die Konjunktion wenn",
+   "en": "Grammar: the conjunction wenn (if, when)"
+  },
+  {
+   "de": "wenn hat zwei Bedeutungen: Es nennt eine Bedingung (falls) oder eine Situation, die sich wiederholt (immer wenn). In beiden Fällen ist es ein Nebensatz — das Verb steht am Ende.",
+   "en": "wenn has two meanings: it states a condition (falls = if) or a situation that repeats itself (immer wenn = whenever). In both cases it is a subordinate clause — the verb goes at the end."
+  },
+  {
+   "de": "Bedingung",
+   "en": "Condition"
+  },
+  {
+   "de": "Wenn ich Zeit habe, koche ich selbst.",
+   "en": "If I have time, I cook for myself."
+  },
+  {
+   "de": "Wiederholung",
+   "en": "Repetition"
+  },
+  {
+   "de": "Wenn es warm ist, essen wir meist Salat.",
+   "en": "When it's warm, we usually eat salad."
+  },
+  {
+   "de": "Nebensatz hinten",
+   "en": "Subordinate clause at the end"
+  },
+  {
+   "de": "Ich esse mehr Obst, wenn es Sommer ist.",
+   "en": "I eat more fruit when it's summer."
+  },
+  {
+   "de": "mit dann",
+   "en": "with dann (then)"
+  },
+  {
+   "de": "Wenn ich müde bin, dann esse ich zu viel.",
+   "en": "When I'm tired, then I eat too much."
+  },
+  {
+   "de": "Wenn ich arbeite, esse ich nur schnell etwas.Nebensatz vorn → Hauptsatz beginnt mit dem Verb",
+   "en": "When I'm working, I just eat something quickly. Subordinate clause first → main clause begins with the verb"
+  },
+  {
+   "de": "Wir grillen oft, wenn das Wetter schön ist.Nebensatz hinten",
+   "en": "We often have a barbecue when the weather is nice. Subordinate clause at the end"
+  },
+  {
+   "de": "Wenn man wenig schläft, hat man mehr Hunger.allgemeine Aussage mit man",
+   "en": "If you sleep little, you are hungrier. General statement with man"
+  },
+  {
+   "de": "Tipp: Für die Vergangenheit benutzt man bei einem einmaligen Ereignis als, nicht wenn: Als ich klein war, mochte ich kein Gemüse.",
+   "en": "Tip: For a one-off event in the past, you use als, not wenn: Als ich klein war, mochte ich kein Gemüse. (When I was little, I didn't like vegetables.)"
+  },
+  {
+   "de": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine gesunde Ernährung ist wichtig.",
+   "en": "Example: A healthy diet is important."
+  },
+  {
+   "de": "die Essgewohnheiten (Pl.) — EN: eating habits · FR: les habitudes alimentairesUnsere Essgewohnheiten haben sich geändert.",
+   "en": "Example: Our eating habits have changed."
+  },
+  {
+   "de": "das Gericht, -e — EN: dish · FR: le platDas ist mein Lieblingsgericht.",
+   "en": "Example: That's my favourite dish."
+  },
+  {
+   "de": "die Mahlzeit, -en — EN: meal · FR: le repasIch esse drei Mahlzeiten am Tag.",
+   "en": "Example: I eat three meals a day."
+  },
+  {
+   "de": "selbst kochen — EN: to cook for oneself · FR: cuisiner soi-mêmeAm Wochenende koche ich immer selbst.",
+   "en": "Example: At the weekend I always cook for myself."
+  },
+  {
+   "de": "das Getreide (Sg.) — EN: grain, cereal · FR: les céréalesBrot wird aus Getreide gemacht.",
+   "en": "Example: Bread is made from grain."
+  },
+  {
+   "de": "der Geschmack (Sg.) — EN: taste · FR: le goûtDas ist Geschmackssache.",
+   "en": "Example: That's a matter of taste."
+  },
+  {
+   "de": "frisch / tiefgekühlt — EN: fresh / frozen · FR: frais / surgeléFrisches Gemüse schmeckt viel besser.",
+   "en": "Example: Fresh vegetables taste much better."
+  },
+  {
+   "de": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Zucker.",
+   "en": "Example: I do without sugar."
+  },
+  {
+   "de": "sich ernähren — EN: to eat, feed oneself · FR: se nourrirSie ernährt sich sehr gesund.",
+   "en": "Example: She eats very healthily."
+  },
+  {
+   "de": "gleichzeitig — EN: at the same time · FR: en même tempsIch esse nicht gern und arbeite gleichzeitig.",
+   "en": "Example: I don't like eating and working at the same time."
+  },
+  {
+   "de": "überraschend — EN: surprising · FR: surprenantDas Ergebnis war wirklich überraschend.",
+   "en": "Example: The result was really surprising."
+  },
+  {
+   "de": "über Gewohnheiten sprechen",
+   "en": "talking about habits"
+  },
+  {
+   "de": "Meistens esse ich …",
+   "en": "Most of the time I eat …"
+  },
+  {
+   "de": "Wenn ich wenig Zeit habe, …",
+   "en": "When I don't have much time, …"
+  },
+  {
+   "de": "Früher habe ich oft …, heute eher …",
+   "en": "In the past I often …, these days more …"
+  },
+  {
+   "de": "Im Sommer essen wir anders als im Winter.",
+   "en": "In summer we eat differently than in winter."
+  },
+  {
+   "de": "Bei uns ist das ganz ähnlich.",
+   "en": "It's very similar where I'm from."
+  },
+  {
+   "de": "In meinem Land isst man …",
+   "en": "In my country, people eat …"
+  },
+  {
+   "de": "Überraschung ausdrücken",
+   "en": "expressing surprise"
+  },
+  {
+   "de": "Das überrascht mich wirklich!",
+   "en": "That really surprises me!"
+  },
+  {
+   "de": "Echt? Das hätte ich nicht gedacht.",
+   "en": "Really? I wouldn't have thought so."
+  },
+  {
+   "de": "Interessant, das wusste ich nicht.",
+   "en": "Interesting, I didn't know that."
+  },
+  {
+   "de": "Dialog: Was kommt bei euch auf den Tisch?",
+   "en": "Dialogue: What's on the table at your place?"
+  },
+  {
+   "de": "Lia: Was esst ihr eigentlich im Sommer?",
+   "en": "Lia: What do you actually eat in summer?"
+  },
+  {
+   "de": "Paul: Wenn es warm ist, essen wir meist Salat. Oder wir grillen.",
+   "en": "Paul: When it's warm, we usually eat salad. Or we have a barbecue."
+  },
+  {
+   "de": "Lia: Und im Winter?",
+   "en": "Lia: And in winter?"
+  },
+  {
+   "de": "Paul: Dann gibt es viel Suppe. Wenn ich nach Hause komme, will ich etwas Warmes.",
+   "en": "Paul: Then there's a lot of soup. When I come home, I want something warm."
+  },
+  {
+   "de": "Lia: Kochst du immer selbst?",
+   "en": "Lia: Do you always cook for yourself?"
+  },
+  {
+   "de": "Paul: Meistens. Nur wenn ich sehr spät arbeite, hole ich mir etwas.",
+   "en": "Paul: Mostly. Only when I work very late do I get myself something."
+  },
+  {
+   "de": "Eine gesunde Ernährung ist wichtig.",
+   "en": "A healthy diet is important."
+  },
+  {
+   "de": "Unsere Essgewohnheiten haben sich geändert.",
+   "en": "Our eating habits have changed."
+  },
+  {
+   "de": "Das ist mein Lieblingsgericht.",
+   "en": "That's my favourite dish."
+  },
+  {
+   "de": "Ich esse drei Mahlzeiten am Tag.",
+   "en": "I eat three meals a day."
+  },
+  {
+   "de": "Am Wochenende koche ich immer selbst.",
+   "en": "At the weekend I always cook for myself."
+  },
+  {
+   "de": "Brot wird aus Getreide gemacht.",
+   "en": "Bread is made from grain."
+  },
+  {
+   "de": "Das ist Geschmackssache.",
+   "en": "That's a matter of taste."
+  },
+  {
+   "de": "Frisches Gemüse schmeckt viel besser.",
+   "en": "Fresh vegetables taste much better."
+  },
+  {
+   "de": "Ich verzichte auf Zucker.",
+   "en": "I do without sugar."
+  },
+  {
+   "de": "Sie ernährt sich sehr gesund.",
+   "en": "She eats very healthily."
+  },
+  {
+   "de": "Ich esse nicht gern und arbeite gleichzeitig.",
+   "en": "I don't like eating and working at the same time."
+  },
+  {
+   "de": "Das Ergebnis war wirklich überraschend.",
+   "en": "The result was really surprising."
+  },
+  {
+   "de": "___ es warm ist, essen wir meist Salat.",
+   "en": "___ it's warm, we usually eat salad."
+  },
+  {
+   "de": "Wir grillen oft, ___ das Wetter schön ist.",
+   "en": "We often have a barbecue ___ the weather is nice."
+  },
+  {
+   "de": "Einmal in der Vergangenheit: ___ ich klein war, mochte ich kein Gemüse.",
+   "en": "Once in the past: ___ I was little, I didn't like vegetables."
+  },
+  {
+   "de": "Wenn man wenig schläft, ___ man mehr Hunger. (haben, Präsens)",
+   "en": "If you sleep little, you ___ more hungry. (haben, present tense)"
+  },
+  {
+   "de": "Beschreiben Sie Ihre Essgewohnheiten: Was essen Sie wann und warum? Umfang: 50–70 Wörter Checkliste: • Schreiben Sie über zwei verschiedene Situationen (z. B. Sommer und Winter). • Benutzen Sie mindestens zwei Sätze mit wenn. • Schreiben Sie, was Ihr Lieblingsgericht ist.",
+   "en": "Describe your eating habits: What do you eat, when, and why? Length: 50–70 words Checklist: • Write about two different situations (e.g. summer and winter). • Use at least two sentences with wenn. • Write what your favourite dish is."
+  },
+  {
+   "de": "wenn für eine wiederholte Situation; das Verb steht am Ende des Nebensatzes.",
+   "en": "wenn for a repeated situation; the verb goes at the end of the subordinate clause."
+  },
+  {
+   "de": "Nach dem Nebensatz folgt sofort das konjugierte Verb des Hauptsatzes.",
+   "en": "After the subordinate clause, the conjugated verb of the main clause follows immediately."
+  },
+  {
+   "de": "Der Nebensatz kann auch hinten stehen.",
+   "en": "The subordinate clause can also come at the end."
+  },
+  {
+   "de": "Für ein einmaliges Ereignis in der Vergangenheit benutzt man als.",
+   "en": "For a one-off event in the past, you use als."
+  },
+  {
+   "de": "Im Hauptsatz nach dem Nebensatz steht das Verb direkt am Anfang.",
+   "en": "In the main clause after the subordinate clause, the verb comes right at the beginning."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Essgewohnheiten",
+   "context": "Über Essgewohnheiten sprechen und Bedingungen nennen.",
+   "en": "eating habits",
+   "lemma": "die Essgewohnheit"
+  },
+  {
+   "form": "Bedingungen",
+   "context": "Über Essgewohnheiten sprechen und Bedingungen nennen.",
+   "en": "conditions",
+   "lemma": "die Bedingung"
+  },
+  {
+   "form": "wiederholte",
+   "context": "Bedingungen und wiederholte Situationen mit wenn ausdrücken",
+   "en": "repeated",
+   "lemma": "wiederholt"
+  },
+  {
+   "form": "Situationen",
+   "context": "Bedingungen und wiederholte Situationen mit wenn ausdrücken",
+   "en": "situations",
+   "lemma": "die Situation"
+  },
+  {
+   "form": "Überraschung",
+   "context": "etwas vergleichen und Überraschung ausdrücken",
+   "en": "surprise",
+   "lemma": "die Überraschung"
+  },
+  {
+   "form": "Bedeutungen",
+   "context": "wenn hat zwei Bedeutungen: Es nennt eine Bedingung (falls) oder eine Situation, die sich wiederholt (immer wenn). In beiden Fällen ist es ein Nebensatz — das Verb steht am Ende.",
+   "en": "meanings",
+   "lemma": "die Bedeutung"
+  },
+  {
+   "form": "Bedingung",
+   "context": "wenn hat zwei Bedeutungen: Es nennt eine Bedingung (falls) oder eine Situation, die sich wiederholt (immer wenn). In beiden Fällen ist es ein Nebensatz — das Verb steht am Ende.",
+   "en": "condition",
+   "lemma": "die Bedingung"
+  },
+  {
+   "form": "falls",
+   "context": "wenn hat zwei Bedeutungen: Es nennt eine Bedingung (falls) oder eine Situation, die sich wiederholt (immer wenn). In beiden Fällen ist es ein Nebensatz — das Verb steht am Ende.",
+   "en": "if, in case",
+   "lemma": ""
+  },
+  {
+   "form": "wiederholt",
+   "context": "wenn hat zwei Bedeutungen: Es nennt eine Bedingung (falls) oder eine Situation, die sich wiederholt (immer wenn). In beiden Fällen ist es ein Nebensatz — das Verb steht am Ende.",
+   "en": "repeats; repeated",
+   "lemma": "wiederholen"
+  },
+  {
+   "form": "beiden",
+   "context": "wenn hat zwei Bedeutungen: Es nennt eine Bedingung (falls) oder eine Situation, die sich wiederholt (immer wenn). In beiden Fällen ist es ein Nebensatz — das Verb steht am Ende.",
+   "en": "both",
+   "lemma": "beide"
+  },
+  {
+   "form": "Fällen",
+   "context": "wenn hat zwei Bedeutungen: Es nennt eine Bedingung (falls) oder eine Situation, die sich wiederholt (immer wenn). In beiden Fällen ist es ein Nebensatz — das Verb steht am Ende.",
+   "en": "cases",
+   "lemma": "der Fall"
+  },
+  {
+   "form": "koche",
+   "context": "Wenn ich Zeit habe, koche ich selbst.",
+   "en": "cook",
+   "lemma": "kochen"
+  },
+  {
+   "form": "Wiederholung",
+   "context": "Wiederholung",
+   "en": "repetition",
+   "lemma": "die Wiederholung"
+  },
+  {
+   "form": "hinten",
+   "context": "Nebensatz hinten",
+   "en": "at the back, at the end",
+   "lemma": ""
+  },
+  {
+   "form": "grillen",
+   "context": "Wir grillen oft, wenn das Wetter schön ist.Nebensatz hinten",
+   "en": "have a barbecue, grill",
+   "lemma": ""
+  },
+  {
+   "form": "schläft",
+   "context": "Wenn man wenig schläft, hat man mehr Hunger.allgemeine Aussage mit man",
+   "en": "sleeps",
+   "lemma": "schlafen"
+  },
+  {
+   "form": "Hunger",
+   "context": "Wenn man wenig schläft, hat man mehr Hunger.allgemeine Aussage mit man",
+   "en": "hunger (Hunger haben = to be hungry)",
+   "lemma": "der Hunger"
+  },
+  {
+   "form": "allgemeine",
+   "context": "Wenn man wenig schläft, hat man mehr Hunger.allgemeine Aussage mit man",
+   "en": "general",
+   "lemma": "allgemein"
+  },
+  {
+   "form": "einmaligen",
+   "context": "Tipp: Für die Vergangenheit benutzt man bei einem einmaligen Ereignis als, nicht wenn: Als ich klein war, mochte ich kein Gemüse.",
+   "en": "one-off",
+   "lemma": "einmalig"
+  },
+  {
+   "form": "Ereignis",
+   "context": "Tipp: Für die Vergangenheit benutzt man bei einem einmaligen Ereignis als, nicht wenn: Als ich klein war, mochte ich kein Gemüse.",
+   "en": "event",
+   "lemma": "das Ereignis"
+  },
+  {
+   "form": "mochte",
+   "context": "Tipp: Für die Vergangenheit benutzt man bei einem einmaligen Ereignis als, nicht wenn: Als ich klein war, mochte ich kein Gemüse.",
+   "en": "liked",
+   "lemma": "mögen"
+  },
+  {
+   "form": "Gemüse",
+   "context": "Tipp: Für die Vergangenheit benutzt man bei einem einmaligen Ereignis als, nicht wenn: Als ich klein war, mochte ich kein Gemüse.",
+   "en": "vegetables",
+   "lemma": "das Gemüse"
+  },
+  {
+   "form": "Ernährung",
+   "context": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine gesunde Ernährung ist wichtig.",
+   "en": "diet, nutrition",
+   "lemma": "die Ernährung"
+  },
+  {
+   "form": "diet",
+   "context": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine gesunde Ernährung ist wichtig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nutrition",
+   "context": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine gesunde Ernährung ist wichtig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'alimentationEine",
+   "context": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine gesunde Ernährung ist wichtig.",
+   "en": "a, an",
+   "lemma": "ein"
+  },
+  {
+   "form": "gesunde",
+   "context": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine gesunde Ernährung ist wichtig.",
+   "en": "healthy",
+   "lemma": "gesund"
+  },
+  {
+   "form": "eating",
+   "context": "die Essgewohnheiten (Pl.) — EN: eating habits · FR: les habitudes alimentairesUnsere Essgewohnheiten haben sich geändert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "habits",
+   "context": "die Essgewohnheiten (Pl.) — EN: eating habits · FR: les habitudes alimentairesUnsere Essgewohnheiten haben sich geändert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "habitudes",
+   "context": "die Essgewohnheiten (Pl.) — EN: eating habits · FR: les habitudes alimentairesUnsere Essgewohnheiten haben sich geändert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "alimentairesUnsere",
+   "context": "die Essgewohnheiten (Pl.) — EN: eating habits · FR: les habitudes alimentairesUnsere Essgewohnheiten haben sich geändert.",
+   "en": "our",
+   "lemma": "unser"
+  },
+  {
+   "form": "geändert",
+   "context": "die Essgewohnheiten (Pl.) — EN: eating habits · FR: les habitudes alimentairesUnsere Essgewohnheiten haben sich geändert.",
+   "en": "changed",
+   "lemma": "ändern"
+  },
+  {
+   "form": "Gericht",
+   "context": "das Gericht, -e — EN: dish · FR: le platDas ist mein Lieblingsgericht.",
+   "en": "dish; court",
+   "lemma": "das Gericht"
+  },
+  {
+   "form": "dish",
+   "context": "das Gericht, -e — EN: dish · FR: le platDas ist mein Lieblingsgericht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "platDas",
+   "context": "das Gericht, -e — EN: dish · FR: le platDas ist mein Lieblingsgericht.",
+   "en": "that, the",
+   "lemma": "das"
+  },
+  {
+   "form": "Lieblingsgericht",
+   "context": "das Gericht, -e — EN: dish · FR: le platDas ist mein Lieblingsgericht.",
+   "en": "favourite dish",
+   "lemma": "das Lieblingsgericht"
+  },
+  {
+   "form": "Mahlzeit",
+   "context": "die Mahlzeit, -en — EN: meal · FR: le repasIch esse drei Mahlzeiten am Tag.",
+   "en": "meal",
+   "lemma": "die Mahlzeit"
+  },
+  {
+   "form": "repasIch",
+   "context": "die Mahlzeit, -en — EN: meal · FR: le repasIch esse drei Mahlzeiten am Tag.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "Mahlzeiten",
+   "context": "die Mahlzeit, -en — EN: meal · FR: le repasIch esse drei Mahlzeiten am Tag.",
+   "en": "meals",
+   "lemma": "die Mahlzeit"
+  },
+  {
+   "form": "oneself",
+   "context": "selbst kochen — EN: to cook for oneself · FR: cuisiner soi-mêmeAm Wochenende koche ich immer selbst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cuisiner",
+   "context": "selbst kochen — EN: to cook for oneself · FR: cuisiner soi-mêmeAm Wochenende koche ich immer selbst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soi-mêmeAm",
+   "context": "selbst kochen — EN: to cook for oneself · FR: cuisiner soi-mêmeAm Wochenende koche ich immer selbst.",
+   "en": "at the, on the",
+   "lemma": "an"
+  },
+  {
+   "form": "Getreide",
+   "context": "das Getreide (Sg.) — EN: grain, cereal · FR: les céréalesBrot wird aus Getreide gemacht.",
+   "en": "grain, cereal",
+   "lemma": "das Getreide"
+  },
+  {
+   "form": "grain",
+   "context": "das Getreide (Sg.) — EN: grain, cereal · FR: les céréalesBrot wird aus Getreide gemacht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cereal",
+   "context": "das Getreide (Sg.) — EN: grain, cereal · FR: les céréalesBrot wird aus Getreide gemacht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "céréalesBrot",
+   "context": "das Getreide (Sg.) — EN: grain, cereal · FR: les céréalesBrot wird aus Getreide gemacht.",
+   "en": "bread",
+   "lemma": "das Brot"
+  },
+  {
+   "form": "Geschmack",
+   "context": "der Geschmack (Sg.) — EN: taste · FR: le goûtDas ist Geschmackssache.",
+   "en": "taste",
+   "lemma": "der Geschmack"
+  },
+  {
+   "form": "Geschmackssache",
+   "context": "der Geschmack (Sg.) — EN: taste · FR: le goûtDas ist Geschmackssache.",
+   "en": "matter of taste",
+   "lemma": "die Geschmackssache"
+  },
+  {
+   "form": "tiefgekühlt",
+   "context": "frisch / tiefgekühlt — EN: fresh / frozen · FR: frais / surgeléFrisches Gemüse schmeckt viel besser.",
+   "en": "frozen",
+   "lemma": ""
+  },
+  {
+   "form": "frozen",
+   "context": "frisch / tiefgekühlt — EN: fresh / frozen · FR: frais / surgeléFrisches Gemüse schmeckt viel besser.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "frais",
+   "context": "frisch / tiefgekühlt — EN: fresh / frozen · FR: frais / surgeléFrisches Gemüse schmeckt viel besser.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "surgeléFrisches",
+   "context": "frisch / tiefgekühlt — EN: fresh / frozen · FR: frais / surgeléFrisches Gemüse schmeckt viel besser.",
+   "en": "fresh",
+   "lemma": "frisch"
+  },
+  {
+   "form": "verzichten",
+   "context": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Zucker.",
+   "en": "to do without (verzichten auf)",
+   "lemma": ""
+  },
+  {
+   "form": "renoncer",
+   "context": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Zucker.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àIch",
+   "context": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Zucker.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "verzichte",
+   "context": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Zucker.",
+   "en": "do without",
+   "lemma": "verzichten"
+  },
+  {
+   "form": "Zucker",
+   "context": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Zucker.",
+   "en": "sugar",
+   "lemma": "der Zucker"
+  },
+  {
+   "form": "ernähren",
+   "context": "sich ernähren — EN: to eat, feed oneself · FR: se nourrirSie ernährt sich sehr gesund.",
+   "en": "to feed (sich ernähren = to eat)",
+   "lemma": ""
+  },
+  {
+   "form": "feed",
+   "context": "sich ernähren — EN: to eat, feed oneself · FR: se nourrirSie ernährt sich sehr gesund.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nourrirSie",
+   "context": "sich ernähren — EN: to eat, feed oneself · FR: se nourrirSie ernährt sich sehr gesund.",
+   "en": "she",
+   "lemma": "sie"
+  },
+  {
+   "form": "ernährt",
+   "context": "sich ernähren — EN: to eat, feed oneself · FR: se nourrirSie ernährt sich sehr gesund.",
+   "en": "eats, feeds (sich ernähren)",
+   "lemma": "sich ernähren"
+  },
+  {
+   "form": "gleichzeitig",
+   "context": "gleichzeitig — EN: at the same time · FR: en même tempsIch esse nicht gern und arbeite gleichzeitig.",
+   "en": "at the same time",
+   "lemma": ""
+  },
+  {
+   "form": "at",
+   "context": "gleichzeitig — EN: at the same time · FR: en même tempsIch esse nicht gern und arbeite gleichzeitig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "same",
+   "context": "gleichzeitig — EN: at the same time · FR: en même tempsIch esse nicht gern und arbeite gleichzeitig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "même",
+   "context": "gleichzeitig — EN: at the same time · FR: en même tempsIch esse nicht gern und arbeite gleichzeitig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tempsIch",
+   "context": "gleichzeitig — EN: at the same time · FR: en même tempsIch esse nicht gern und arbeite gleichzeitig.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "überraschend",
+   "context": "überraschend — EN: surprising · FR: surprenantDas Ergebnis war wirklich überraschend.",
+   "en": "surprising",
+   "lemma": ""
+  },
+  {
+   "form": "surprising",
+   "context": "überraschend — EN: surprising · FR: surprenantDas Ergebnis war wirklich überraschend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "surprenantDas",
+   "context": "überraschend — EN: surprising · FR: surprenantDas Ergebnis war wirklich überraschend.",
+   "en": "the",
+   "lemma": "das"
+  },
+  {
+   "form": "Ergebnis",
+   "context": "überraschend — EN: surprising · FR: surprenantDas Ergebnis war wirklich überraschend.",
+   "en": "result",
+   "lemma": "das Ergebnis"
+  },
+  {
+   "form": "Gewohnheiten",
+   "context": "über Gewohnheiten sprechen",
+   "en": "habits",
+   "lemma": "die Gewohnheit"
+  },
+  {
+   "form": "eher",
+   "context": "Früher habe ich oft …, heute eher …",
+   "en": "rather, more",
+   "lemma": ""
+  },
+  {
+   "form": "ähnlich",
+   "context": "Bei uns ist das ganz ähnlich.",
+   "en": "similar",
+   "lemma": ""
+  },
+  {
+   "form": "isst",
+   "context": "In meinem Land isst man …",
+   "en": "eats",
+   "lemma": "essen"
+  },
+  {
+   "form": "überrascht",
+   "context": "Das überrascht mich wirklich!",
+   "en": "surprises; surprised",
+   "lemma": "überraschen"
+  },
+  {
+   "form": "Echt",
+   "context": "Echt? Das hätte ich nicht gedacht.",
+   "en": "really?; real, genuine",
+   "lemma": ""
+  },
+  {
+   "form": "gedacht",
+   "context": "Echt? Das hätte ich nicht gedacht.",
+   "en": "thought",
+   "lemma": "denken"
+  },
+  {
+   "form": "wusste",
+   "context": "Interessant, das wusste ich nicht.",
+   "en": "knew",
+   "lemma": "wissen"
+  },
+  {
+   "form": "esst",
+   "context": "Lia: Was esst ihr eigentlich im Sommer?",
+   "en": "eat (with ihr)",
+   "lemma": "essen"
+  },
+  {
+   "form": "Warmes",
+   "context": "Paul: Dann gibt es viel Suppe. Wenn ich nach Hause komme, will ich etwas Warmes.",
+   "en": "something warm (etwas Warmes)",
+   "lemma": "warm"
+  },
+  {
+   "form": "Kochst",
+   "context": "Lia: Kochst du immer selbst?",
+   "en": "cook (with du)",
+   "lemma": "kochen"
+  },
+  {
+   "form": "hole",
+   "context": "Paul: Meistens. Nur wenn ich sehr spät arbeite, hole ich mir etwas.",
+   "en": "get, fetch",
+   "lemma": "holen"
+  },
+  {
+   "form": "verschiedene",
+   "context": "Beschreiben Sie Ihre Essgewohnheiten: Was essen Sie wann und warum? Umfang: 50–70 Wörter Checkliste: • Schreiben Sie über zwei verschiedene Situationen (z. B. Sommer und Winter). • Benutzen Sie mindestens zwei Sätze mit wenn. • Schreiben Sie, was Ihr Lieblingsgericht ist.",
+   "en": "different, various",
+   "lemma": "verschieden"
+  }
+ ]
+}
