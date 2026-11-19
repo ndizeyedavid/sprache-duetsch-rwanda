@@ -28,6 +28,7 @@ assessmentsRouter.get(
   validate({ params: assessmentIdSchema }),
   asyncHandler(controller.getMyAssessment),
 );
+assessmentsRouter.get("/my/assessments/:id/result", requireAuth, requireRole("STUDENT"), validate({ params: assessmentIdSchema }), asyncHandler(controller.getMyAssessmentResult));
 assessmentsRouter.post(
   "/my/assessments/:id/attempts",
   requireAuth,
