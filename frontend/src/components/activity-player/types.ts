@@ -14,6 +14,8 @@ export type ActivityReview = {
   order?: string[] | null;
   transcript?: string;
   modelAnswer?: string;
+  /** Course v2: English version of the model answer. */
+  modelAnswerEn?: string;
   explanation?: string;
 };
 
