@@ -1,0 +1,863 @@
+{
+ "level": "B2",
+ "lesson": 6,
+ "title": "Miteinander arbeiten — Darüber sollten wir dringend sprechen",
+ "lines": [
+  {
+   "de": "Probleme am Arbeitsplatz oder an der Universität ansprechen und Ratschläge geben.",
+   "en": "Raising problems at work or at university and giving advice."
+  },
+  {
+   "de": "Textsorte: Sprachnachricht · Infoflyer",
+   "en": "Text type: voice message · information flyer"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 2; telc B2 Schreiben (formelle Nachricht)",
+   "en": "Exam link: Goethe B2 Speaking part 2; telc B2 Writing (formal message)"
+  },
+  {
+   "de": "Probleme am Arbeitsplatz oder im Studium ansprechen",
+   "en": "raise problems at work or in your studies"
+  },
+  {
+   "de": "Nomen und Adjektive mit fester Präposition verwenden",
+   "en": "use nouns and adjectives with fixed prepositions"
+  },
+  {
+   "de": "Präpositionaladverbien bilden und auf Nebensätze vorausweisen",
+   "en": "form prepositional adverbs (Präpositionaladverbien) and use them to point ahead to subordinate clauses"
+  },
+  {
+   "de": "Grammatik: Nomen und Adjektive mit Präposition",
+   "en": "Grammar: nouns and adjectives with prepositions"
+  },
+  {
+   "de": "Nicht nur Verben, auch viele Nomen und Adjektive haben eine feste Präposition. Diese Verbindung muss man als Einheit lernen — sie ist selten vorhersagbar und oft anders als in der Muttersprache.",
+   "en": "Not only verbs but also many nouns and adjectives have a fixed preposition. You have to learn the combination as a unit — it is rarely predictable and often different from your mother tongue."
+  },
+  {
+   "de": "Nomen + Präposition",
+   "en": "Noun + preposition"
+  },
+  {
+   "de": "die Angst vor (+ Dat.), das Interesse an (+ Dat.), der Grund für (+ Akk.), die Kritik an (+ Dat.), die Freude über (+ Akk.)",
+   "en": "fear of (+ dat.), interest in (+ dat.), reason for (+ acc.), criticism of (+ dat.), joy about (+ acc.)"
+  },
+  {
+   "de": "Adjektiv + Präposition",
+   "en": "Adjective + preposition"
+  },
+  {
+   "de": "stolz auf (+ Akk.), verantwortlich für (+ Akk.), zufrieden mit (+ Dat.), abhängig von (+ Dat.), begeistert von (+ Dat.)",
+   "en": "proud of (+ acc.), responsible for (+ acc.), satisfied with (+ dat.), dependent on (+ dat.), enthusiastic about (+ dat.)"
+  },
+  {
+   "de": "sich beschweren über (+ Akk.), sich kümmern um (+ Akk.), bestehen auf (+ Dat.), hinweisen auf (+ Akk.)",
+   "en": "to complain about (+ acc.), to take care of (+ acc.), to insist on (+ dat.), to point out (+ acc.)"
+  },
+  {
+   "de": "Die Kritik an der neuen Regelung wurde immer lauter.Kritik an + Dativ",
+   "en": "The criticism of the new rule grew louder and louder. Kritik an + dative"
+  },
+  {
+   "de": "Wer ist für die Einarbeitung verantwortlich?verantwortlich für + Akkusativ",
+   "en": "Who is responsible for the onboarding? verantwortlich für + accusative"
+  },
+  {
+   "de": "Ich bin mit der Arbeitsverteilung nicht zufrieden.zufrieden mit + Dativ",
+   "en": "I'm not satisfied with the distribution of work. zufrieden mit + dative"
+  },
+  {
+   "de": "Tipp: Lernen Sie die Präposition immer zusammen mit dem Kasus: „stolz auf + Akkusativ\", nicht nur „stolz auf\".",
+   "en": "Tip: Always learn the preposition together with the case: “stolz auf + accusative”, not just “stolz auf”."
+  },
+  {
+   "de": "Bezieht sich die Präposition auf eine Sache, einen ganzen Satz oder einen folgenden Nebensatz, ersetzt man sie durch da(r)- + Präposition. Gefragt wird mit wo(r)- + Präposition. Bei Personen bleibt die Präposition mit Pronomen stehen.",
+   "en": "If the preposition refers to a thing, a whole sentence or a following subordinate clause, you replace it with da(r)- + preposition. Questions use wo(r)- + preposition. With people, the preposition stays, followed by a pronoun."
+  },
+  {
+   "de": "Sache / Satz",
+   "en": "Thing / sentence"
+  },
+  {
+   "de": "Ich ärgere mich darüber.",
+   "en": "I'm annoyed about it."
+  },
+  {
+   "de": "Ich ärgere mich über ihn.",
+   "en": "I'm annoyed with him."
+  },
+  {
+   "de": "Worüber ärgerst du dich?",
+   "en": "What are you annoyed about?"
+  },
+  {
+   "de": "Über wen ärgerst du dich?",
+   "en": "Who are you annoyed with?"
+  },
+  {
+   "de": "Vorausweis auf dass",
+   "en": "Pointing ahead to a dass clause"
+  },
+  {
+   "de": "Ich bestehe darauf, dass wir das klären.",
+   "en": "I insist that we clear this up."
+  },
+  {
+   "de": "Vorausweis auf zu",
+   "en": "Pointing ahead to a zu clause"
+  },
+  {
+   "de": "Ich habe Angst davor, etwas falsch zu machen.",
+   "en": "I'm afraid of doing something wrong."
+  },
+  {
+   "de": "Worauf sollte man bei der Einarbeitung achten?achten auf → worauf",
+   "en": "What should you pay attention to during onboarding? achten auf → worauf"
+  },
+  {
+   "de": "Ich weise Sie darauf hin, dass die Frist morgen endet.da(r)- weist auf den dass-Satz voraus",
+   "en": "I would like to point out that the deadline ends tomorrow. da(r)- points ahead to the dass clause"
+  },
+  {
+   "de": "Damit bin ich überhaupt nicht einverstanden.einverstanden mit → damit",
+   "en": "I don't agree with that at all. einverstanden mit → damit"
+  },
+  {
+   "de": "Tipp: Das r kommt nur dazu, wenn die Präposition mit einem Vokal beginnt: darauf, darüber, daran — aber damit, davon, dafür.",
+   "en": "Tip: The r is only added when the preposition begins with a vowel: darauf, darüber, daran — but damit, davon, dafür."
+  },
+  {
+   "de": "die Zusammenarbeit (Sg.) — EN: cooperation · FR: la collaborationDie Zusammenarbeit im Team läuft gut.",
+   "en": "Example: Cooperation in the team is going well."
+  },
+  {
+   "de": "die Arbeitsverteilung (Sg.) — EN: distribution of work · FR: la répartition du travailDie Arbeitsverteilung ist ungerecht.",
+   "en": "Example: The distribution of work is unfair."
+  },
+  {
+   "de": "der Konflikt, -e — EN: conflict · FR: le conflitDer Konflikt schwelt schon seit Monaten.",
+   "en": "Example: The conflict has been smouldering for months."
+  },
+  {
+   "de": "etwas ansprechen (sprach an) — EN: to raise, bring up · FR: aborder qc.Du solltest das Problem direkt ansprechen.",
+   "en": "Example: You should raise the problem directly."
+  },
+  {
+   "de": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "Example: Without clear agreements, chaos arises."
+  },
+  {
+   "de": "zuständig sein für — EN: to be responsible for · FR: être responsable deWer ist eigentlich für die Doku zuständig?",
+   "en": "Example: Who is actually responsible for the documentation?"
+  },
+  {
+   "de": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "Example: The overtime hours are piling up."
+  },
+  {
+   "de": "sich beschweren über — EN: to complain about · FR: se plaindre deMehrere Kolleginnen haben sich darüber beschwert.",
+   "en": "Example: Several colleagues have complained about it."
+  },
+  {
+   "de": "die Einarbeitung (Sg.) — EN: onboarding, training-in · FR: la formation initialeDie Einarbeitung dauert vier Wochen.",
+   "en": "Example: The onboarding takes four weeks."
+  },
+  {
+   "de": "der Vorgesetzte, -n / die Vorgesetzte, -n — EN: superior, manager · FR: le/la supérieur(e)Sprechen Sie zuerst mit Ihrer Vorgesetzten.",
+   "en": "Example: Speak to your manager first."
+  },
+  {
+   "de": "das Betriebsklima (Sg.) — EN: working atmosphere · FR: l'ambiance de travailDas Betriebsklima hat sich deutlich verbessert.",
+   "en": "Example: The working atmosphere has improved considerably."
+  },
+  {
+   "de": "eskalieren — EN: to escalate · FR: s'envenimerLassen Sie die Sache nicht eskalieren.",
+   "en": "Example: Don't let the matter escalate."
+  },
+  {
+   "de": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "Example: The management met us halfway on the schedule."
+  },
+  {
+   "de": "die Rücksprache (Sg.) — EN: consultation · FR: la concertationNach Rücksprache mit dem Team entscheiden wir morgen.",
+   "en": "Example: After consulting the team, we will decide tomorrow."
+  },
+  {
+   "de": "ein Problem ansprechen",
+   "en": "Raising a problem"
+  },
+  {
+   "de": "Ich wollte etwas ansprechen, das mich schon länger beschäftigt.",
+   "en": "I wanted to raise something that has been on my mind for a while."
+  },
+  {
+   "de": "Mir ist aufgefallen, dass …",
+   "en": "I've noticed that …"
+  },
+  {
+   "de": "Könnten wir kurz darüber sprechen, wie …?",
+   "en": "Could we talk briefly about how …?"
+  },
+  {
+   "de": "An deiner Stelle würde ich das direkt klären.",
+   "en": "If I were you, I would sort that out directly."
+  },
+  {
+   "de": "Es wäre vielleicht sinnvoll, zuerst … zu …",
+   "en": "It might make sense to … first …"
+  },
+  {
+   "de": "Ich würde dir raten, dich darauf vorzubereiten.",
+   "en": "I would advise you to prepare for it."
+  },
+  {
+   "de": "eine Lösung aushandeln",
+   "en": "Negotiating a solution"
+  },
+  {
+   "de": "Wie wäre es, wenn wir … ?",
+   "en": "How about if we … ?"
+  },
+  {
+   "de": "Könnten wir uns darauf einigen, dass …?",
+   "en": "Could we agree that …?"
+  },
+  {
+   "de": "Damit wäre mir sehr geholfen.",
+   "en": "That would help me a lot."
+  },
+  {
+   "de": "Die Zusammenarbeit im Team läuft gut.",
+   "en": "Cooperation in the team is going well."
+  },
+  {
+   "de": "Die Arbeitsverteilung ist ungerecht.",
+   "en": "The distribution of work is unfair."
+  },
+  {
+   "de": "Der Konflikt schwelt schon seit Monaten.",
+   "en": "The conflict has been smouldering for months."
+  },
+  {
+   "de": "Du solltest das Problem direkt ansprechen.",
+   "en": "You should raise the problem directly."
+  },
+  {
+   "de": "Ohne klare Absprachen entsteht Chaos.",
+   "en": "Without clear agreements, chaos arises."
+  },
+  {
+   "de": "Wer ist eigentlich für die Doku zuständig?",
+   "en": "Who is actually responsible for the documentation?"
+  },
+  {
+   "de": "Die Überstunden häufen sich.",
+   "en": "The overtime hours are piling up."
+  },
+  {
+   "de": "Mehrere Kolleginnen haben sich darüber beschwert.",
+   "en": "Several colleagues have complained about it."
+  },
+  {
+   "de": "Die Einarbeitung dauert vier Wochen.",
+   "en": "The onboarding takes four weeks."
+  },
+  {
+   "de": "Sprechen Sie zuerst mit Ihrer Vorgesetzten.",
+   "en": "Speak to your manager first."
+  },
+  {
+   "de": "Das Betriebsklima hat sich deutlich verbessert.",
+   "en": "The working atmosphere has improved considerably."
+  },
+  {
+   "de": "Lassen Sie die Sache nicht eskalieren.",
+   "en": "Don't let the matter escalate."
+  },
+  {
+   "de": "Die Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "The management met us halfway on the schedule."
+  },
+  {
+   "de": "Nach Rücksprache mit dem Team entscheiden wir morgen.",
+   "en": "After consulting the team, we will decide tomorrow."
+  },
+  {
+   "de": "Ich bin mit der Lösung nicht zufrieden. → ___ bin ich nicht zufrieden.",
+   "en": "I'm not satisfied with the solution. → I'm not satisfied ___."
+  },
+  {
+   "de": "___ sollte man bei einer Bewerbung achten?",
+   "en": "___ should you pay attention to in a job application?"
+  },
+  {
+   "de": "Ich habe Angst ___, etwas falsch zu machen. (Präpositionaladverb)",
+   "en": "I'm afraid ___ doing something wrong. (prepositional adverb)"
+  },
+  {
+   "de": "Welche Präposition passt? „Er ist sehr stolz ___ seine Arbeit.\"",
+   "en": "Which preposition fits? “He is very proud ___ his work.”"
+  },
+  {
+   "de": "Die Kritik ___ dem neuen Verfahren war deutlich. (Präposition)",
+   "en": "The criticism ___ the new procedure was clear. (preposition)"
+  },
+  {
+   "de": "Bezug auf eine Person: „Ich ärgere mich über meinen Chef.\" →",
+   "en": "Referring to a person: “I'm annoyed with my boss.” →"
+  },
+  {
+   "de": "Schreiben Sie eine Sprachnachricht-Transkription oder eine kurze Nachricht an eine Kollegin, in der Sie ein konkretes Problem im Team ansprechen und einen Lösungsvorschlag machen. Umfang: 120–160 Wörter Checkliste: • Beginnen Sie freundlich und nennen Sie den Anlass. • Beschreiben Sie das Problem sachlich, ohne Vorwürfe. • Verwenden Sie mindestens zwei Präpositionaladverbien. • Machen Sie am Ende einen konkreten Vorschlag.",
+   "en": "Write a voice message transcript or a short message to a colleague in which you raise a specific problem in the team and suggest a solution. Length: 120–160 words Checklist: • Begin in a friendly way and state the reason for writing. • Describe the problem objectively, without accusations. • Use at least two prepositional adverbs. • At the end, make a concrete suggestion."
+  },
+  {
+   "de": "zufrieden mit + Sache → damit, ohne r (die Präposition beginnt mit einem Konsonanten).",
+   "en": "zufrieden mit + thing → damit, without r (the preposition begins with a consonant)."
+  },
+  {
+   "de": "achten auf + Akkusativ → worauf.",
+   "en": "achten auf + accusative → worauf."
+  },
+  {
+   "de": "Angst vor + Dativ; da(r)- weist auf den Infinitivsatz voraus → davor.",
+   "en": "Angst vor + dative; da(r)- points ahead to the infinitive clause → davor."
+  },
+  {
+   "de": "stolz auf + Akkusativ.",
+   "en": "stolz auf + accusative."
+  },
+  {
+   "de": "die Kritik an + Dativ.",
+   "en": "die Kritik an + dative."
+  },
+  {
+   "de": "Bei Personen bleibt die Präposition mit Personalpronomen — da(r)- nur bei Sachen.",
+   "en": "With people, the preposition stays with a personal pronoun — da(r)- is only used for things."
+  }
+ ],
+ "forms": [
+  {
+   "form": "ansprechen",
+   "context": "Probleme am Arbeitsplatz oder an der Universität ansprechen und Ratschläge geben.",
+   "en": "to raise, bring up; to address",
+   "lemma": ""
+  },
+  {
+   "form": "Sprachnachricht",
+   "context": "Textsorte: Sprachnachricht · Infoflyer",
+   "en": "voice message",
+   "lemma": "die Sprachnachricht"
+  },
+  {
+   "form": "Infoflyer",
+   "context": "Textsorte: Sprachnachricht · Infoflyer",
+   "en": "information flyer",
+   "lemma": "der Infoflyer"
+  },
+  {
+   "form": "formelle",
+   "context": "Prüfungsbezug: Goethe B2 Sprechen Teil 2; telc B2 Schreiben (formelle Nachricht)",
+   "en": "formal",
+   "lemma": "formell"
+  },
+  {
+   "form": "Verbindung",
+   "context": "Nicht nur Verben, auch viele Nomen und Adjektive haben eine feste Präposition. Diese Verbindung muss man als Einheit lernen — sie ist selten vorhersagbar und oft anders als in der Muttersprache.",
+   "en": "combination, connection",
+   "lemma": "die Verbindung"
+  },
+  {
+   "form": "Einheit",
+   "context": "Nicht nur Verben, auch viele Nomen und Adjektive haben eine feste Präposition. Diese Verbindung muss man als Einheit lernen — sie ist selten vorhersagbar und oft anders als in der Muttersprache.",
+   "en": "unit",
+   "lemma": "die Einheit"
+  },
+  {
+   "form": "vorhersagbar",
+   "context": "Nicht nur Verben, auch viele Nomen und Adjektive haben eine feste Präposition. Diese Verbindung muss man als Einheit lernen — sie ist selten vorhersagbar und oft anders als in der Muttersprache.",
+   "en": "predictable",
+   "lemma": ""
+  },
+  {
+   "form": "Freude",
+   "context": "die Angst vor (+ Dat.), das Interesse an (+ Dat.), der Grund für (+ Akk.), die Kritik an (+ Dat.), die Freude über (+ Akk.)",
+   "en": "joy, pleasure",
+   "lemma": "die Freude"
+  },
+  {
+   "form": "verantwortlich",
+   "context": "stolz auf (+ Akk.), verantwortlich für (+ Akk.), zufrieden mit (+ Dat.), abhängig von (+ Dat.), begeistert von (+ Dat.)",
+   "en": "responsible",
+   "lemma": ""
+  },
+  {
+   "form": "abhängig",
+   "context": "stolz auf (+ Akk.), verantwortlich für (+ Akk.), zufrieden mit (+ Dat.), abhängig von (+ Dat.), begeistert von (+ Dat.)",
+   "en": "dependent",
+   "lemma": ""
+  },
+  {
+   "form": "hinweisen",
+   "context": "sich beschweren über (+ Akk.), sich kümmern um (+ Akk.), bestehen auf (+ Dat.), hinweisen auf (+ Akk.)",
+   "en": "to point out (auf … hinweisen)",
+   "lemma": ""
+  },
+  {
+   "form": "Regelung",
+   "context": "Die Kritik an der neuen Regelung wurde immer lauter.Kritik an + Dativ",
+   "en": "rule, regulation",
+   "lemma": "die Regelung"
+  },
+  {
+   "form": "lauter",
+   "context": "Die Kritik an der neuen Regelung wurde immer lauter.Kritik an + Dativ",
+   "en": "louder; nothing but",
+   "lemma": "laut"
+  },
+  {
+   "form": "Einarbeitung",
+   "context": "Wer ist für die Einarbeitung verantwortlich?verantwortlich für + Akkusativ",
+   "en": "onboarding, induction training",
+   "lemma": "die Einarbeitung"
+  },
+  {
+   "form": "Arbeitsverteilung",
+   "context": "Ich bin mit der Arbeitsverteilung nicht zufrieden.zufrieden mit + Dativ",
+   "en": "distribution of work",
+   "lemma": "die Arbeitsverteilung"
+  },
+  {
+   "form": "folgenden",
+   "context": "Bezieht sich die Präposition auf eine Sache, einen ganzen Satz oder einen folgenden Nebensatz, ersetzt man sie durch da(r)- + Präposition. Gefragt wird mit wo(r)- + Präposition. Bei Personen bleibt die Präposition mit Pronomen stehen.",
+   "en": "following",
+   "lemma": "folgend"
+  },
+  {
+   "form": "Vorausweis",
+   "context": "Vorausweis auf dass",
+   "en": "pointing ahead, forward reference",
+   "lemma": "der Vorausweis"
+  },
+  {
+   "form": "bestehe",
+   "context": "Ich bestehe darauf, dass wir das klären.",
+   "en": "insist (bestehen auf); pass (an exam)",
+   "lemma": "bestehen"
+  },
+  {
+   "form": "klären",
+   "context": "Ich bestehe darauf, dass wir das klären.",
+   "en": "to clear up, clarify",
+   "lemma": ""
+  },
+  {
+   "form": "voraus",
+   "context": "Ich weise Sie darauf hin, dass die Frist morgen endet.da(r)- weist auf den dass-Satz voraus",
+   "en": "ahead (vorausweisen = to point ahead)",
+   "lemma": ""
+  },
+  {
+   "form": "Zusammenarbeit",
+   "context": "die Zusammenarbeit (Sg.) — EN: cooperation · FR: la collaborationDie Zusammenarbeit im Team läuft gut.",
+   "en": "cooperation",
+   "lemma": "die Zusammenarbeit"
+  },
+  {
+   "form": "cooperation",
+   "context": "die Zusammenarbeit (Sg.) — EN: cooperation · FR: la collaborationDie Zusammenarbeit im Team läuft gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "collaborationDie",
+   "context": "die Zusammenarbeit (Sg.) — EN: cooperation · FR: la collaborationDie Zusammenarbeit im Team läuft gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "distribution",
+   "context": "die Arbeitsverteilung (Sg.) — EN: distribution of work · FR: la répartition du travailDie Arbeitsverteilung ist ungerecht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "répartition",
+   "context": "die Arbeitsverteilung (Sg.) — EN: distribution of work · FR: la répartition du travailDie Arbeitsverteilung ist ungerecht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "travailDie",
+   "context": "die Arbeitsverteilung (Sg.) — EN: distribution of work · FR: la répartition du travailDie Arbeitsverteilung ist ungerecht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ungerecht",
+   "context": "die Arbeitsverteilung (Sg.) — EN: distribution of work · FR: la répartition du travailDie Arbeitsverteilung ist ungerecht.",
+   "en": "unfair",
+   "lemma": ""
+  },
+  {
+   "form": "Konflikt",
+   "context": "der Konflikt, -e — EN: conflict · FR: le conflitDer Konflikt schwelt schon seit Monaten.",
+   "en": "conflict",
+   "lemma": "der Konflikt"
+  },
+  {
+   "form": "conflict",
+   "context": "der Konflikt, -e — EN: conflict · FR: le conflitDer Konflikt schwelt schon seit Monaten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "conflitDer",
+   "context": "der Konflikt, -e — EN: conflict · FR: le conflitDer Konflikt schwelt schon seit Monaten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "schwelt",
+   "context": "der Konflikt, -e — EN: conflict · FR: le conflitDer Konflikt schwelt schon seit Monaten.",
+   "en": "smoulders",
+   "lemma": "schwelen"
+  },
+  {
+   "form": "raise",
+   "context": "etwas ansprechen (sprach an) — EN: to raise, bring up · FR: aborder qc.Du solltest das Problem direkt ansprechen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aborder",
+   "context": "etwas ansprechen (sprach an) — EN: to raise, bring up · FR: aborder qc.Du solltest das Problem direkt ansprechen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Absprache",
+   "context": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "agreement, arrangement",
+   "lemma": "die Absprache"
+  },
+  {
+   "form": "agreement",
+   "context": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "arrangement",
+   "context": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'accord",
+   "context": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'ententeOhne",
+   "context": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Absprachen",
+   "context": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "agreements, arrangements",
+   "lemma": "die Absprache"
+  },
+  {
+   "form": "Chaos",
+   "context": "die Absprache, -n — EN: agreement, arrangement · FR: l'accord, l'ententeOhne klare Absprachen entsteht Chaos.",
+   "en": "chaos",
+   "lemma": "das Chaos"
+  },
+  {
+   "form": "Doku",
+   "context": "zuständig sein für — EN: to be responsible for · FR: être responsable deWer ist eigentlich für die Doku zuständig?",
+   "en": "documentation; documentary",
+   "lemma": "die Doku"
+  },
+  {
+   "form": "Überstunde",
+   "context": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "overtime hour",
+   "lemma": "die Überstunde"
+  },
+  {
+   "form": "overtime",
+   "context": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "hour",
+   "context": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'heure",
+   "context": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "supplémentaireDie",
+   "context": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Überstunden",
+   "context": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "overtime (hours)",
+   "lemma": "die Überstunde"
+  },
+  {
+   "form": "häufen",
+   "context": "die Überstunde, -n — EN: overtime hour · FR: l'heure supplémentaireDie Überstunden häufen sich.",
+   "en": "pile up (sich häufen)",
+   "lemma": ""
+  },
+  {
+   "form": "deMehrere",
+   "context": "sich beschweren über — EN: to complain about · FR: se plaindre deMehrere Kolleginnen haben sich darüber beschwert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Kolleginnen",
+   "context": "sich beschweren über — EN: to complain about · FR: se plaindre deMehrere Kolleginnen haben sich darüber beschwert.",
+   "en": "colleagues (women)",
+   "lemma": "die Kollegin"
+  },
+  {
+   "form": "beschwert",
+   "context": "sich beschweren über — EN: to complain about · FR: se plaindre deMehrere Kolleginnen haben sich darüber beschwert.",
+   "en": "complained (sich beschweren)",
+   "lemma": "beschweren"
+  },
+  {
+   "form": "onboarding",
+   "context": "die Einarbeitung (Sg.) — EN: onboarding, training-in · FR: la formation initialeDie Einarbeitung dauert vier Wochen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "training-in",
+   "context": "die Einarbeitung (Sg.) — EN: onboarding, training-in · FR: la formation initialeDie Einarbeitung dauert vier Wochen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "initialeDie",
+   "context": "die Einarbeitung (Sg.) — EN: onboarding, training-in · FR: la formation initialeDie Einarbeitung dauert vier Wochen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Vorgesetzte",
+   "context": "der Vorgesetzte, -n / die Vorgesetzte, -n — EN: superior, manager · FR: le/la supérieur(e)Sprechen Sie zuerst mit Ihrer Vorgesetzten.",
+   "en": "superior, boss",
+   "lemma": "der/die Vorgesetzte"
+  },
+  {
+   "form": "superior",
+   "context": "der Vorgesetzte, -n / die Vorgesetzte, -n — EN: superior, manager · FR: le/la supérieur(e)Sprechen Sie zuerst mit Ihrer Vorgesetzten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "manager",
+   "context": "der Vorgesetzte, -n / die Vorgesetzte, -n — EN: superior, manager · FR: le/la supérieur(e)Sprechen Sie zuerst mit Ihrer Vorgesetzten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "supérieur",
+   "context": "der Vorgesetzte, -n / die Vorgesetzte, -n — EN: superior, manager · FR: le/la supérieur(e)Sprechen Sie zuerst mit Ihrer Vorgesetzten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Vorgesetzten",
+   "context": "der Vorgesetzte, -n / die Vorgesetzte, -n — EN: superior, manager · FR: le/la supérieur(e)Sprechen Sie zuerst mit Ihrer Vorgesetzten.",
+   "en": "superior, boss",
+   "lemma": "der/die Vorgesetzte"
+  },
+  {
+   "form": "Betriebsklima",
+   "context": "das Betriebsklima (Sg.) — EN: working atmosphere · FR: l'ambiance de travailDas Betriebsklima hat sich deutlich verbessert.",
+   "en": "working atmosphere",
+   "lemma": "das Betriebsklima"
+  },
+  {
+   "form": "working",
+   "context": "das Betriebsklima (Sg.) — EN: working atmosphere · FR: l'ambiance de travailDas Betriebsklima hat sich deutlich verbessert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "atmosphere",
+   "context": "das Betriebsklima (Sg.) — EN: working atmosphere · FR: l'ambiance de travailDas Betriebsklima hat sich deutlich verbessert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'ambiance",
+   "context": "das Betriebsklima (Sg.) — EN: working atmosphere · FR: l'ambiance de travailDas Betriebsklima hat sich deutlich verbessert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "travailDas",
+   "context": "das Betriebsklima (Sg.) — EN: working atmosphere · FR: l'ambiance de travailDas Betriebsklima hat sich deutlich verbessert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verbessert",
+   "context": "das Betriebsklima (Sg.) — EN: working atmosphere · FR: l'ambiance de travailDas Betriebsklima hat sich deutlich verbessert.",
+   "en": "improved",
+   "lemma": "verbessern"
+  },
+  {
+   "form": "eskalieren",
+   "context": "eskalieren — EN: to escalate · FR: s'envenimerLassen Sie die Sache nicht eskalieren.",
+   "en": "to escalate",
+   "lemma": ""
+  },
+  {
+   "form": "escalate",
+   "context": "eskalieren — EN: to escalate · FR: s'envenimerLassen Sie die Sache nicht eskalieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'envenimerLassen",
+   "context": "eskalieren — EN: to escalate · FR: s'envenimerLassen Sie die Sache nicht eskalieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "entgegenkommen",
+   "context": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "to meet halfway, accommodate",
+   "lemma": ""
+  },
+  {
+   "form": "accommodate",
+   "context": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "halfway",
+   "context": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "geste",
+   "context": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "gesture",
+   "lemma": "die Geste"
+  },
+  {
+   "form": "enversDie",
+   "context": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Leitung",
+   "context": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "management; line, pipe",
+   "lemma": "die Leitung"
+  },
+  {
+   "form": "entgegengekommen",
+   "context": "entgegenkommen (+ Dat.) — EN: to accommodate, meet halfway · FR: faire un geste enversDie Leitung ist uns beim Zeitplan entgegengekommen.",
+   "en": "met halfway, accommodated",
+   "lemma": "entgegenkommen"
+  },
+  {
+   "form": "Rücksprache",
+   "context": "die Rücksprache (Sg.) — EN: consultation · FR: la concertationNach Rücksprache mit dem Team entscheiden wir morgen.",
+   "en": "consultation",
+   "lemma": "die Rücksprache"
+  },
+  {
+   "form": "consultation",
+   "context": "die Rücksprache (Sg.) — EN: consultation · FR: la concertationNach Rücksprache mit dem Team entscheiden wir morgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "concertationNach",
+   "context": "die Rücksprache (Sg.) — EN: consultation · FR: la concertationNach Rücksprache mit dem Team entscheiden wir morgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beschäftigt",
+   "context": "Ich wollte etwas ansprechen, das mich schon länger beschäftigt.",
+   "en": "occupies, is on one's mind; busy",
+   "lemma": "beschäftigen"
+  },
+  {
+   "form": "aufgefallen",
+   "context": "Mir ist aufgefallen, dass …",
+   "en": "noticed (mir ist aufgefallen = I noticed)",
+   "lemma": "auffallen"
+  },
+  {
+   "form": "vorzubereiten",
+   "context": "Ich würde dir raten, dich darauf vorzubereiten.",
+   "en": "to prepare",
+   "lemma": "vorbereiten"
+  },
+  {
+   "form": "Verfahren",
+   "context": "Die Kritik ___ dem neuen Verfahren war deutlich. (Präposition)",
+   "en": "procedure, process",
+   "lemma": "das Verfahren"
+  },
+  {
+   "form": "Sprachnachricht-Transkription",
+   "context": "Schreiben Sie eine Sprachnachricht-Transkription oder eine kurze Nachricht an eine Kollegin, in der Sie ein konkretes Problem im Team ansprechen und einen Lösungsvorschlag machen. Umfang: 120–160 Wörter Checkliste: • Beginnen Sie freundlich und nennen Sie den Anlass. • Beschreiben Sie das Problem sachlich, ohne Vorwürfe. • Verwenden Sie mindestens zwei Präpositionaladverbien. • Machen Sie am Ende einen konkreten Vorschlag.",
+   "en": "voice message transcript",
+   "lemma": "die Sprachnachricht-Transkription"
+  },
+  {
+   "form": "konkretes",
+   "context": "Schreiben Sie eine Sprachnachricht-Transkription oder eine kurze Nachricht an eine Kollegin, in der Sie ein konkretes Problem im Team ansprechen und einen Lösungsvorschlag machen. Umfang: 120–160 Wörter Checkliste: • Beginnen Sie freundlich und nennen Sie den Anlass. • Beschreiben Sie das Problem sachlich, ohne Vorwürfe. • Verwenden Sie mindestens zwei Präpositionaladverbien. • Machen Sie am Ende einen konkreten Vorschlag.",
+   "en": "concrete, specific",
+   "lemma": "konkret"
+  },
+  {
+   "form": "Lösungsvorschlag",
+   "context": "Schreiben Sie eine Sprachnachricht-Transkription oder eine kurze Nachricht an eine Kollegin, in der Sie ein konkretes Problem im Team ansprechen und einen Lösungsvorschlag machen. Umfang: 120–160 Wörter Checkliste: • Beginnen Sie freundlich und nennen Sie den Anlass. • Beschreiben Sie das Problem sachlich, ohne Vorwürfe. • Verwenden Sie mindestens zwei Präpositionaladverbien. • Machen Sie am Ende einen konkreten Vorschlag.",
+   "en": "suggested solution",
+   "lemma": "der Lösungsvorschlag"
+  },
+  {
+   "form": "sachlich",
+   "context": "Schreiben Sie eine Sprachnachricht-Transkription oder eine kurze Nachricht an eine Kollegin, in der Sie ein konkretes Problem im Team ansprechen und einen Lösungsvorschlag machen. Umfang: 120–160 Wörter Checkliste: • Beginnen Sie freundlich und nennen Sie den Anlass. • Beschreiben Sie das Problem sachlich, ohne Vorwürfe. • Verwenden Sie mindestens zwei Präpositionaladverbien. • Machen Sie am Ende einen konkreten Vorschlag.",
+   "en": "objective, factual",
+   "lemma": ""
+  },
+  {
+   "form": "konkreten",
+   "context": "Schreiben Sie eine Sprachnachricht-Transkription oder eine kurze Nachricht an eine Kollegin, in der Sie ein konkretes Problem im Team ansprechen und einen Lösungsvorschlag machen. Umfang: 120–160 Wörter Checkliste: • Beginnen Sie freundlich und nennen Sie den Anlass. • Beschreiben Sie das Problem sachlich, ohne Vorwürfe. • Verwenden Sie mindestens zwei Präpositionaladverbien. • Machen Sie am Ende einen konkreten Vorschlag.",
+   "en": "concrete, specific",
+   "lemma": "konkret"
+  }
+ ]
+}
