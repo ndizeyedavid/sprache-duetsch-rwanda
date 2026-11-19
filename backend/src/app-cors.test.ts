@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import { createApp } from "./app.js";
 
 vi.hoisted(() => {
-  vi.stubEnv("PAYPACK_ENABLED", "false");
+  vi.stubEnv("XENDLYPAY_ENABLED", "false");
   vi.stubEnv("DATABASE_URL", "postgresql://test:test@localhost/cors_test");
   vi.stubEnv("JWT_SECRET", "cors-test-secret-long-enough");
   vi.stubEnv("CORS_ORIGINS", "http://localhost:5173");
