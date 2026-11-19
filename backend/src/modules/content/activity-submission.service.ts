@@ -6,6 +6,8 @@ import { normalizeFileResponse } from "./activity-file-response.js";
 import { gradeActivity } from "./activity-grading.js";
 import { asConfig } from "./activity-keys.js";
 import { presentSubmission } from "./activity-review.js";
+import { completePractisedLesson } from "./complete-practised-lesson.js";
+import { getMyProgress,recordPractice } from "./learning-events.js";
 import type { SubmitActivityInput } from "./content.schema.js";
 import { isPracticeConfig } from "./practice.utils.js";
 import { loadStudentActivity } from "./student-activity-access.js";
@@ -47,6 +49,13 @@ export const submitActivity = async (userId: string, activityId: string, input: 
 
   await writeAudit({ actorId: userId, action: existing ? "ACTIVITY_RESUBMITTED" : "ACTIVITY_SUBMITTED", entityType: "ActivitySubmission", entityId: submission.id, after: submission });
 
+  if (activity.type === "PRACTICE") {
+    const items = asConfig(activity.config).items;
+    const event = await recordPractice({ studentId: profile.studentId, activityId, lessonId: activity.lesson.id, levelId: activity.lesson.module.levelId,
+      score: graded.score ?? 1, total: Array.isArray(items) ? items.length : 0, seconds: Number(asConfig(response).seconds) || 0 });
+    const lessonCompleted = await completePractisedLesson(profile.studentId, activity.lesson.id);
+    return { ...presentSubmission(submission, activity), lessonCompleted, xp: event.xp, progress: await getMyProgress(userId) };
+  }
   if (isPracticeConfig(activity.config)) return presentSubmission(submission, activity);
 
   const levelId = activity.lesson.module.levelId;
