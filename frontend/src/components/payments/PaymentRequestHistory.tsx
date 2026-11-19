@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { currencyAmount } from '../../lib/format';
-import type { PaymentCheckout } from '../../lib/paypack';
+import type { PaymentCheckout } from '../../lib/mobile-money';
 import { PaymentStatusBadge } from './PaymentStatusBadge';
 
 /** The student's latest mobile-money payments. Public invoice pages hide the signed-in receipts link. */
@@ -18,6 +18,7 @@ export function PaymentRequestHistory({ rows, receiptsLink = true }: { rows: Pay
             <div>
               <p className="text-sm font-semibold tabular-nums">{currencyAmount(Number(row.amount), row.currency)}</p>
               <p className="text-xs text-muted">{new Date(row.createdAt).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' })} · {row.phone}</p>
+              {row.status === 'FAILED' && row.failureReason ? <p className="mt-0.5 text-xs text-muted">{row.failureReason}</p> : null}
             </div>
             <PaymentStatusBadge status={row.status} />
           </li>
