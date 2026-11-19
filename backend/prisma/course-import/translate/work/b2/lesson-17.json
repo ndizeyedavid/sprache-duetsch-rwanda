@@ -1,0 +1,853 @@
+{
+ "level": "B2",
+ "lesson": 17,
+ "title": "Das Gedächtnis — Erinnerungen werden durch Gerüche ausgelöst",
+ "lines": [
+  {
+   "de": "Über Gedächtnis und Lernstrategien sprechen — mit Passiv und klarer Urheberangabe.",
+   "en": "Talk about memory and learning strategies — using the passive and clearly naming the agent."
+  },
+  {
+   "de": "Textsorte: Zeitschriftenartikel · Umfrage",
+   "en": "Text type: Magazine article · Survey"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Lesen Teil 2; telc B2 Hören",
+   "en": "Exam link: Goethe B2 Reading part 2; telc B2 Listening"
+  },
+  {
+   "de": "über die Funktionsweise des Gedächtnisses sprechen",
+   "en": "talk about how memory works"
+  },
+  {
+   "de": "Lernstrategien und Mnemotechniken beschreiben und bewerten",
+   "en": "describe and evaluate learning strategies and mnemonic techniques"
+  },
+  {
+   "de": "im Passiv zwischen von und durch unterscheiden",
+   "en": "distinguish between von and durch in the passive"
+  },
+  {
+   "de": "Grammatik: Passiv mit von und durch",
+   "en": "Grammar: The passive (Passiv) with von and durch"
+  },
+  {
+   "de": "Im Passiv steht die Handlung im Vordergrund. Will man trotzdem sagen, wer oder was beteiligt ist, entscheidet die Rolle: von + Dativ nennt den handelnden Urheber, durch + Akkusativ das Mittel, die Ursache oder den Vermittler.",
+   "en": "In the passive, the action is in the foreground. If you still want to say who or what is involved, the role decides: von + dative names the agent who acts; durch + accusative names the means, the cause or the intermediary."
+  },
+  {
+   "de": "Rolle",
+   "en": "Role"
+  },
+  {
+   "de": "Urheber (Person, Institution)",
+   "en": "agent (person, institution)"
+  },
+  {
+   "de": "Die Studie wurde von Hirnforschern durchgeführt.",
+   "en": "The study was carried out by brain researchers."
+  },
+  {
+   "de": "Mittel / Ursache",
+   "en": "means / cause"
+  },
+  {
+   "de": "durch + Akkusativ",
+   "en": "durch + accusative (by, through)"
+  },
+  {
+   "de": "Erinnerungen werden durch Gerüche ausgelöst.",
+   "en": "Memories are triggered by smells."
+  },
+  {
+   "de": "Vermittler",
+   "en": "intermediary"
+  },
+  {
+   "de": "Die Information wurde durch einen Kollegen weitergegeben.",
+   "en": "The information was passed on through a colleague."
+  },
+  {
+   "de": "beides zusammen",
+   "en": "both together"
+  },
+  {
+   "de": "von … durch …",
+   "en": "von … durch … (by … through …)"
+  },
+  {
+   "de": "Der Test wurde von der Uni durch eine Online-Umfrage erhoben.",
+   "en": "The data for the test were collected by the university through an online survey."
+  },
+  {
+   "de": "Das Kurzzeitgedächtnis wird durch Stress spürbar beeinträchtigt.Ursache → durch",
+   "en": "Short-term memory is noticeably impaired by stress. — cause → durch"
+  },
+  {
+   "de": "Die Theorie wurde von einer Forschergruppe in Leipzig entwickelt.Urheber → von",
+   "en": "The theory was developed by a research group in Leipzig. — agent → von"
+  },
+  {
+   "de": "Viele Inhalte werden durch Wiederholung dauerhaft gespeichert.Mittel → durch",
+   "en": "A lot of content is stored permanently through repetition. — means → durch"
+  },
+  {
+   "de": "Tipp: Faustregel: Wer handelt bewusst? → von. Was wirkt, ohne zu wollen? → durch.",
+   "en": "Tip: Rule of thumb: Who acts deliberately? → von. What has an effect without intending to? → durch."
+  },
+  {
+   "de": "das Gedächtnis (Sg.) — EN: memory (faculty) · FR: la mémoireMein Gedächtnis für Namen ist schlecht.",
+   "en": "Example: My memory for names is bad."
+  },
+  {
+   "de": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "Example: Getting from short-term into long-term memory takes repetition."
+  },
+  {
+   "de": "sich etwas einprägen — EN: to memorise sth. · FR: mémoriser qc.Bilder prägt man sich leichter ein als Zahlen.",
+   "en": "Example: Pictures are easier to memorise than numbers."
+  },
+  {
+   "de": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "Example: Under stress, it is harder to recall what you have learned."
+  },
+  {
+   "de": "die Wiederholung, -en — EN: repetition · FR: la répétitionOhne Wiederholung geht fast alles verloren.",
+   "en": "Example: Without repetition, almost everything is lost."
+  },
+  {
+   "de": "die Mnemotechnik, -en — EN: mnemonic technique · FR: la technique mnémoniqueMnemotechniken verknüpfen Neues mit Bekanntem.",
+   "en": "Example: Mnemonic techniques link new things with familiar ones."
+  },
+  {
+   "de": "die Eselsbrücke, -n — EN: mnemonic, memory aid · FR: le moyen mnémotechniqueDafür gibt es eine schöne Eselsbrücke.",
+   "en": "Example: There’s a nice memory aid for that."
+  },
+  {
+   "de": "verknüpfen mit — EN: to link with · FR: associer àNeues Wissen sollte man mit Bekanntem verknüpfen.",
+   "en": "Example: You should link new knowledge with what you already know."
+  },
+  {
+   "de": "auslösen — EN: to trigger · FR: déclencherEin Lied kann starke Erinnerungen auslösen.",
+   "en": "Example: A song can trigger strong memories."
+  },
+  {
+   "de": "beeinträchtigen — EN: to impair · FR: nuire à, altérerSchlafmangel beeinträchtigt die Merkfähigkeit.",
+   "en": "Example: Lack of sleep impairs the ability to remember."
+  },
+  {
+   "de": "die Konzentration (Sg.) — EN: concentration · FR: la concentrationNach 45 Minuten lässt die Konzentration nach.",
+   "en": "Example: After 45 minutes, concentration declines."
+  },
+  {
+   "de": "speichern — EN: to store · FR: stockerDas Gehirn speichert nicht alles gleich gut.",
+   "en": "Example: The brain doesn’t store everything equally well."
+  },
+  {
+   "de": "die Lernstrategie, -n — EN: learning strategy · FR: la stratégie d'apprentissageJeder braucht seine eigene Lernstrategie.",
+   "en": "Example: Everyone needs their own learning strategy."
+  },
+  {
+   "de": "nachweislich — EN: demonstrably · FR: de façon prouvéeSchlaf verbessert nachweislich das Behalten.",
+   "en": "Example: Sleep demonstrably improves retention."
+  },
+  {
+   "de": "Vorgänge erklären",
+   "en": "Explaining processes"
+  },
+  {
+   "de": "Zunächst wird … aufgenommen, anschließend …",
+   "en": "First, … is taken in, then …"
+  },
+  {
+   "de": "Dabei spielt … eine entscheidende Rolle.",
+   "en": "… plays a decisive role in this."
+  },
+  {
+   "de": "Das lässt sich damit erklären, dass …",
+   "en": "This can be explained by the fact that …"
+  },
+  {
+   "de": "Diese Methode halte ich für besonders wirksam, weil …",
+   "en": "I consider this method particularly effective because …"
+  },
+  {
+   "de": "Davon verspreche ich mir wenig.",
+   "en": "I don’t expect much from that."
+  },
+  {
+   "de": "Bei mir funktioniert das überhaupt nicht.",
+   "en": "That doesn’t work for me at all."
+  },
+  {
+   "de": "eigene Erfahrungen einbringen",
+   "en": "Bringing in your own experience"
+  },
+  {
+   "de": "Ich merke mir Dinge am besten, indem ich …",
+   "en": "I remember things best by …"
+  },
+  {
+   "de": "Was bei mir gar nicht klappt, ist …",
+   "en": "What doesn’t work for me at all is …"
+  },
+  {
+   "de": "Seit ich … mache, behalte ich deutlich mehr.",
+   "en": "Since I started doing …, I remember much more."
+  },
+  {
+   "de": "Mein Gedächtnis für Namen ist schlecht.",
+   "en": "My memory for names is bad."
+  },
+  {
+   "de": "Vom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "Getting from short-term into long-term memory takes repetition."
+  },
+  {
+   "de": "Bilder prägt man sich leichter ein als Zahlen.",
+   "en": "Pictures are easier to memorise than numbers."
+  },
+  {
+   "de": "Unter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "Under stress, it is harder to recall what you have learned."
+  },
+  {
+   "de": "Ohne Wiederholung geht fast alles verloren.",
+   "en": "Without repetition, almost everything is lost."
+  },
+  {
+   "de": "Mnemotechniken verknüpfen Neues mit Bekanntem.",
+   "en": "Mnemonic techniques link new things with familiar ones."
+  },
+  {
+   "de": "Dafür gibt es eine schöne Eselsbrücke.",
+   "en": "There’s a nice memory aid for that."
+  },
+  {
+   "de": "Neues Wissen sollte man mit Bekanntem verknüpfen.",
+   "en": "You should link new knowledge with what you already know."
+  },
+  {
+   "de": "Ein Lied kann starke Erinnerungen auslösen.",
+   "en": "A song can trigger strong memories."
+  },
+  {
+   "de": "Schlafmangel beeinträchtigt die Merkfähigkeit.",
+   "en": "Lack of sleep impairs the ability to remember."
+  },
+  {
+   "de": "Nach 45 Minuten lässt die Konzentration nach.",
+   "en": "After 45 minutes, concentration declines."
+  },
+  {
+   "de": "Das Gehirn speichert nicht alles gleich gut.",
+   "en": "The brain doesn’t store everything equally well."
+  },
+  {
+   "de": "Jeder braucht seine eigene Lernstrategie.",
+   "en": "Everyone needs their own learning strategy."
+  },
+  {
+   "de": "Schlaf verbessert nachweislich das Behalten.",
+   "en": "Sleep demonstrably improves retention."
+  },
+  {
+   "de": "Erinnerungen werden ___ Gerüche ausgelöst.",
+   "en": "Memories are triggered ___ smells."
+  },
+  {
+   "de": "Die Studie wurde ___ einer Forschergruppe durchgeführt. (Präposition)",
+   "en": "The study was carried out ___ a research group. (preposition)"
+  },
+  {
+   "de": "Welche Faustregel stimmt?",
+   "en": "Which rule of thumb is correct?"
+  },
+  {
+   "de": "Das Kurzzeitgedächtnis wird ___ Stress beeinträchtigt.",
+   "en": "Short-term memory is impaired ___ stress."
+  },
+  {
+   "de": "Passiv Präteritum: Die Theorie ___ 2018 entwickelt. (werden)",
+   "en": "Passive, simple past: The theory ___ developed in 2018. (werden)"
+  },
+  {
+   "de": "Beschreiben Sie in einem kurzen Sachtext, wie Erinnerungen entstehen, und stellen Sie zwei Lernstrategien gegenüber. Umfang: 160–200 Wörter Checkliste: • Erklären Sie den Vorgang in einer logischen Reihenfolge. • Verwenden Sie mindestens drei Passivsätze. • Benutzen Sie einmal von und einmal durch korrekt. • Schließen Sie mit einer begründeten Empfehlung.",
+   "en": "In a short factual text, describe how memories are formed and compare two learning strategies. Length: 160–200 words Checklist: • Explain the process in a logical order. • Use at least three passive sentences. • Use von once and durch once, correctly. • End with a well-founded recommendation."
+  },
+  {
+   "de": "Gerüche sind kein bewusst handelnder Urheber, sondern die Ursache → durch + Akkusativ.",
+   "en": "Smells are not an agent acting deliberately but the cause → durch + accusative."
+  },
+  {
+   "de": "Eine Forschergruppe handelt bewusst → von + Dativ.",
+   "en": "A research group acts deliberately → von + dative."
+  },
+  {
+   "de": "Wer bewusst handelt, steht mit von; Mittel und Ursachen stehen mit durch.",
+   "en": "Whoever acts deliberately takes von; means and causes take durch."
+  },
+  {
+   "de": "Stress ist eine Ursache, kein Handelnder.",
+   "en": "Stress is a cause, not an agent."
+  },
+  {
+   "de": "Wiederholung ist das Mittel → durch, und das Passiv braucht werden + Partizip II.",
+   "en": "Repetition is the means → durch, and the passive needs werden + past participle (Partizip II)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Gedächtnis",
+   "context": "Über Gedächtnis und Lernstrategien sprechen — mit Passiv und klarer Urheberangabe.",
+   "en": "memory",
+   "lemma": "das Gedächtnis"
+  },
+  {
+   "form": "Lernstrategien",
+   "context": "Über Gedächtnis und Lernstrategien sprechen — mit Passiv und klarer Urheberangabe.",
+   "en": "learning strategies",
+   "lemma": "die Lernstrategie"
+  },
+  {
+   "form": "klarer",
+   "context": "Über Gedächtnis und Lernstrategien sprechen — mit Passiv und klarer Urheberangabe.",
+   "en": "clear",
+   "lemma": "klar"
+  },
+  {
+   "form": "Urheberangabe",
+   "context": "Über Gedächtnis und Lernstrategien sprechen — mit Passiv und klarer Urheberangabe.",
+   "en": "naming of the agent",
+   "lemma": "die Urheberangabe"
+  },
+  {
+   "form": "Funktionsweise",
+   "context": "über die Funktionsweise des Gedächtnisses sprechen",
+   "en": "way it works",
+   "lemma": "die Funktionsweise"
+  },
+  {
+   "form": "Gedächtnisses",
+   "context": "über die Funktionsweise des Gedächtnisses sprechen",
+   "en": "(of the) memory",
+   "lemma": "das Gedächtnis"
+  },
+  {
+   "form": "Mnemotechniken",
+   "context": "Lernstrategien und Mnemotechniken beschreiben und bewerten",
+   "en": "mnemonic techniques",
+   "lemma": "die Mnemotechnik"
+  },
+  {
+   "form": "beteiligt",
+   "context": "Im Passiv steht die Handlung im Vordergrund. Will man trotzdem sagen, wer oder was beteiligt ist, entscheidet die Rolle: von + Dativ nennt den handelnden Urheber, durch + Akkusativ das Mittel, die Ursache oder den Vermittler.",
+   "en": "involved",
+   "lemma": "beteiligen"
+  },
+  {
+   "form": "handelnden",
+   "context": "Im Passiv steht die Handlung im Vordergrund. Will man trotzdem sagen, wer oder was beteiligt ist, entscheidet die Rolle: von + Dativ nennt den handelnden Urheber, durch + Akkusativ das Mittel, die Ursache oder den Vermittler.",
+   "en": "acting",
+   "lemma": "handelnd"
+  },
+  {
+   "form": "Ursache",
+   "context": "Im Passiv steht die Handlung im Vordergrund. Will man trotzdem sagen, wer oder was beteiligt ist, entscheidet die Rolle: von + Dativ nennt den handelnden Urheber, durch + Akkusativ das Mittel, die Ursache oder den Vermittler.",
+   "en": "cause",
+   "lemma": "die Ursache"
+  },
+  {
+   "form": "Vermittler",
+   "context": "Im Passiv steht die Handlung im Vordergrund. Will man trotzdem sagen, wer oder was beteiligt ist, entscheidet die Rolle: von + Dativ nennt den handelnden Urheber, durch + Akkusativ das Mittel, die Ursache oder den Vermittler.",
+   "en": "intermediary",
+   "lemma": "der Vermittler"
+  },
+  {
+   "form": "Institution",
+   "context": "Urheber (Person, Institution)",
+   "en": "institution",
+   "lemma": "die Institution"
+  },
+  {
+   "form": "Hirnforschern",
+   "context": "Die Studie wurde von Hirnforschern durchgeführt.",
+   "en": "brain researchers",
+   "lemma": "der Hirnforscher"
+  },
+  {
+   "form": "Gerüche",
+   "context": "Erinnerungen werden durch Gerüche ausgelöst.",
+   "en": "smells",
+   "lemma": "der Geruch"
+  },
+  {
+   "form": "ausgelöst",
+   "context": "Erinnerungen werden durch Gerüche ausgelöst.",
+   "en": "triggered",
+   "lemma": "auslösen"
+  },
+  {
+   "form": "weitergegeben",
+   "context": "Die Information wurde durch einen Kollegen weitergegeben.",
+   "en": "passed on",
+   "lemma": "weitergeben"
+  },
+  {
+   "form": "Test",
+   "context": "Der Test wurde von der Uni durch eine Online-Umfrage erhoben.",
+   "en": "test",
+   "lemma": "der Test"
+  },
+  {
+   "form": "Uni",
+   "context": "Der Test wurde von der Uni durch eine Online-Umfrage erhoben.",
+   "en": "university, uni",
+   "lemma": "die Uni"
+  },
+  {
+   "form": "Online-Umfrage",
+   "context": "Der Test wurde von der Uni durch eine Online-Umfrage erhoben.",
+   "en": "online survey",
+   "lemma": "die Online-Umfrage"
+  },
+  {
+   "form": "erhoben",
+   "context": "Der Test wurde von der Uni durch eine Online-Umfrage erhoben.",
+   "en": "collected (data)",
+   "lemma": "erheben"
+  },
+  {
+   "form": "Kurzzeitgedächtnis",
+   "context": "Das Kurzzeitgedächtnis wird durch Stress spürbar beeinträchtigt.Ursache → durch",
+   "en": "short-term memory",
+   "lemma": "das Kurzzeitgedächtnis"
+  },
+  {
+   "form": "spürbar",
+   "context": "Das Kurzzeitgedächtnis wird durch Stress spürbar beeinträchtigt.Ursache → durch",
+   "en": "noticeably",
+   "lemma": ""
+  },
+  {
+   "form": "beeinträchtigt",
+   "context": "Das Kurzzeitgedächtnis wird durch Stress spürbar beeinträchtigt.Ursache → durch",
+   "en": "impaired",
+   "lemma": "beeinträchtigen"
+  },
+  {
+   "form": "Theorie",
+   "context": "Die Theorie wurde von einer Forschergruppe in Leipzig entwickelt.Urheber → von",
+   "en": "theory",
+   "lemma": "die Theorie"
+  },
+  {
+   "form": "Forschergruppe",
+   "context": "Die Theorie wurde von einer Forschergruppe in Leipzig entwickelt.Urheber → von",
+   "en": "research group",
+   "lemma": "die Forschergruppe"
+  },
+  {
+   "form": "entwickelt",
+   "context": "Die Theorie wurde von einer Forschergruppe in Leipzig entwickelt.Urheber → von",
+   "en": "developed",
+   "lemma": "entwickeln"
+  },
+  {
+   "form": "dauerhaft",
+   "context": "Viele Inhalte werden durch Wiederholung dauerhaft gespeichert.Mittel → durch",
+   "en": "permanently",
+   "lemma": ""
+  },
+  {
+   "form": "gespeichert",
+   "context": "Viele Inhalte werden durch Wiederholung dauerhaft gespeichert.Mittel → durch",
+   "en": "stored",
+   "lemma": "speichern"
+  },
+  {
+   "form": "faculty",
+   "context": "das Gedächtnis (Sg.) — EN: memory (faculty) · FR: la mémoireMein Gedächtnis für Namen ist schlecht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mémoireMein",
+   "context": "das Gedächtnis (Sg.) — EN: memory (faculty) · FR: la mémoireMein Gedächtnis für Namen ist schlecht.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "Kurzzeit",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "short-term (memory)",
+   "lemma": "das Kurzzeitgedächtnis"
+  },
+  {
+   "form": "Langzeitgedächtnis",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "long-term memory",
+   "lemma": "das Langzeitgedächtnis"
+  },
+  {
+   "form": "short-term",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "long-term",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mémoire",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "court",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "long",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "termeVom",
+   "context": "das Kurzzeit- / Langzeitgedächtnis — EN: short-term / long-term memory · FR: la mémoire à court / long termeVom Kurzzeit- ins Langzeitgedächtnis braucht es Wiederholung.",
+   "en": "from the",
+   "lemma": ""
+  },
+  {
+   "form": "einprägen",
+   "context": "sich etwas einprägen — EN: to memorise sth. · FR: mémoriser qc.Bilder prägt man sich leichter ein als Zahlen.",
+   "en": "to memorise",
+   "lemma": ""
+  },
+  {
+   "form": "memorise",
+   "context": "sich etwas einprägen — EN: to memorise sth. · FR: mémoriser qc.Bilder prägt man sich leichter ein als Zahlen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mémoriser",
+   "context": "sich etwas einprägen — EN: to memorise sth. · FR: mémoriser qc.Bilder prägt man sich leichter ein als Zahlen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prägt",
+   "context": "sich etwas einprägen — EN: to memorise sth. · FR: mémoriser qc.Bilder prägt man sich leichter ein als Zahlen.",
+   "en": "memorises; shapes",
+   "lemma": "sich einprägen"
+  },
+  {
+   "form": "abrufen",
+   "context": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "to retrieve, recall",
+   "lemma": ""
+  },
+  {
+   "form": "retrieve",
+   "context": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "recall",
+   "context": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "récupérer",
+   "context": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rappelerUnter",
+   "context": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "under",
+   "lemma": ""
+  },
+  {
+   "form": "Gelerntes",
+   "context": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "what you have learned",
+   "lemma": "das Gelernte"
+  },
+  {
+   "form": "schlechter",
+   "context": "abrufen (rief ab) — EN: to retrieve, recall · FR: récupérer, rappelerUnter Stress kann man Gelerntes schlechter abrufen.",
+   "en": "worse, less well",
+   "lemma": "schlecht"
+  },
+  {
+   "form": "repetition",
+   "context": "die Wiederholung, -en — EN: repetition · FR: la répétitionOhne Wiederholung geht fast alles verloren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "répétitionOhne",
+   "context": "die Wiederholung, -en — EN: repetition · FR: la répétitionOhne Wiederholung geht fast alles verloren.",
+   "en": "without",
+   "lemma": ""
+  },
+  {
+   "form": "Mnemotechnik",
+   "context": "die Mnemotechnik, -en — EN: mnemonic technique · FR: la technique mnémoniqueMnemotechniken verknüpfen Neues mit Bekanntem.",
+   "en": "mnemonic technique",
+   "lemma": "die Mnemotechnik"
+  },
+  {
+   "form": "mnemonic",
+   "context": "die Mnemotechnik, -en — EN: mnemonic technique · FR: la technique mnémoniqueMnemotechniken verknüpfen Neues mit Bekanntem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "technique",
+   "context": "die Mnemotechnik, -en — EN: mnemonic technique · FR: la technique mnémoniqueMnemotechniken verknüpfen Neues mit Bekanntem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mnémoniqueMnemotechniken",
+   "context": "die Mnemotechnik, -en — EN: mnemonic technique · FR: la technique mnémoniqueMnemotechniken verknüpfen Neues mit Bekanntem.",
+   "en": "mnemonic techniques",
+   "lemma": "die Mnemotechnik"
+  },
+  {
+   "form": "Bekanntem",
+   "context": "die Mnemotechnik, -en — EN: mnemonic technique · FR: la technique mnémoniqueMnemotechniken verknüpfen Neues mit Bekanntem.",
+   "en": "what is familiar",
+   "lemma": "das Bekannte"
+  },
+  {
+   "form": "aid",
+   "context": "die Eselsbrücke, -n — EN: mnemonic, memory aid · FR: le moyen mnémotechniqueDafür gibt es eine schöne Eselsbrücke.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mnémotechniqueDafür",
+   "context": "die Eselsbrücke, -n — EN: mnemonic, memory aid · FR: le moyen mnémotechniqueDafür gibt es eine schöne Eselsbrücke.",
+   "en": "for that",
+   "lemma": ""
+  },
+  {
+   "form": "associer",
+   "context": "verknüpfen mit — EN: to link with · FR: associer àNeues Wissen sollte man mit Bekanntem verknüpfen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àNeues",
+   "context": "verknüpfen mit — EN: to link with · FR: associer àNeues Wissen sollte man mit Bekanntem verknüpfen.",
+   "en": "new",
+   "lemma": "neu"
+  },
+  {
+   "form": "auslösen",
+   "context": "auslösen — EN: to trigger · FR: déclencherEin Lied kann starke Erinnerungen auslösen.",
+   "en": "to trigger",
+   "lemma": ""
+  },
+  {
+   "form": "trigger",
+   "context": "auslösen — EN: to trigger · FR: déclencherEin Lied kann starke Erinnerungen auslösen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déclencherEin",
+   "context": "auslösen — EN: to trigger · FR: déclencherEin Lied kann starke Erinnerungen auslösen.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "beeinträchtigen",
+   "context": "beeinträchtigen — EN: to impair · FR: nuire à, altérerSchlafmangel beeinträchtigt die Merkfähigkeit.",
+   "en": "to impair",
+   "lemma": ""
+  },
+  {
+   "form": "impair",
+   "context": "beeinträchtigen — EN: to impair · FR: nuire à, altérerSchlafmangel beeinträchtigt die Merkfähigkeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "altérerSchlafmangel",
+   "context": "beeinträchtigen — EN: to impair · FR: nuire à, altérerSchlafmangel beeinträchtigt die Merkfähigkeit.",
+   "en": "lack of sleep",
+   "lemma": "der Schlafmangel"
+  },
+  {
+   "form": "Merkfähigkeit",
+   "context": "beeinträchtigen — EN: to impair · FR: nuire à, altérerSchlafmangel beeinträchtigt die Merkfähigkeit.",
+   "en": "ability to remember",
+   "lemma": "die Merkfähigkeit"
+  },
+  {
+   "form": "concentration",
+   "context": "die Konzentration (Sg.) — EN: concentration · FR: la concentrationNach 45 Minuten lässt die Konzentration nach.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "concentrationNach",
+   "context": "die Konzentration (Sg.) — EN: concentration · FR: la concentrationNach 45 Minuten lässt die Konzentration nach.",
+   "en": "after",
+   "lemma": ""
+  },
+  {
+   "form": "speichern",
+   "context": "speichern — EN: to store · FR: stockerDas Gehirn speichert nicht alles gleich gut.",
+   "en": "to store",
+   "lemma": ""
+  },
+  {
+   "form": "store",
+   "context": "speichern — EN: to store · FR: stockerDas Gehirn speichert nicht alles gleich gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stockerDas",
+   "context": "speichern — EN: to store · FR: stockerDas Gehirn speichert nicht alles gleich gut.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Gehirn",
+   "context": "speichern — EN: to store · FR: stockerDas Gehirn speichert nicht alles gleich gut.",
+   "en": "brain",
+   "lemma": "das Gehirn"
+  },
+  {
+   "form": "speichert",
+   "context": "speichern — EN: to store · FR: stockerDas Gehirn speichert nicht alles gleich gut.",
+   "en": "stores",
+   "lemma": "speichern"
+  },
+  {
+   "form": "Lernstrategie",
+   "context": "die Lernstrategie, -n — EN: learning strategy · FR: la stratégie d'apprentissageJeder braucht seine eigene Lernstrategie.",
+   "en": "learning strategy",
+   "lemma": "die Lernstrategie"
+  },
+  {
+   "form": "strategy",
+   "context": "die Lernstrategie, -n — EN: learning strategy · FR: la stratégie d'apprentissageJeder braucht seine eigene Lernstrategie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stratégie",
+   "context": "die Lernstrategie, -n — EN: learning strategy · FR: la stratégie d'apprentissageJeder braucht seine eigene Lernstrategie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'apprentissageJeder",
+   "context": "die Lernstrategie, -n — EN: learning strategy · FR: la stratégie d'apprentissageJeder braucht seine eigene Lernstrategie.",
+   "en": "everyone",
+   "lemma": ""
+  },
+  {
+   "form": "nachweislich",
+   "context": "nachweislich — EN: demonstrably · FR: de façon prouvéeSchlaf verbessert nachweislich das Behalten.",
+   "en": "demonstrably",
+   "lemma": ""
+  },
+  {
+   "form": "demonstrably",
+   "context": "nachweislich — EN: demonstrably · FR: de façon prouvéeSchlaf verbessert nachweislich das Behalten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "façon",
+   "context": "nachweislich — EN: demonstrably · FR: de façon prouvéeSchlaf verbessert nachweislich das Behalten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prouvéeSchlaf",
+   "context": "nachweislich — EN: demonstrably · FR: de façon prouvéeSchlaf verbessert nachweislich das Behalten.",
+   "en": "sleep",
+   "lemma": "der Schlaf"
+  },
+  {
+   "form": "Vorgänge",
+   "context": "Vorgänge erklären",
+   "en": "processes",
+   "lemma": "der Vorgang"
+  },
+  {
+   "form": "aufgenommen",
+   "context": "Zunächst wird … aufgenommen, anschließend …",
+   "en": "taken in, absorbed",
+   "lemma": "aufnehmen"
+  },
+  {
+   "form": "entscheidende",
+   "context": "Dabei spielt … eine entscheidende Rolle.",
+   "en": "decisive",
+   "lemma": "entscheidend"
+  },
+  {
+   "form": "einbringen",
+   "context": "eigene Erfahrungen einbringen",
+   "en": "to bring in, contribute",
+   "lemma": ""
+  },
+  {
+   "form": "behalte",
+   "context": "Seit ich … mache, behalte ich deutlich mehr.",
+   "en": "remember, retain",
+   "lemma": "behalten"
+  },
+  {
+   "form": "Schlafmangel",
+   "context": "Schlafmangel beeinträchtigt die Merkfähigkeit.",
+   "en": "lack of sleep",
+   "lemma": "der Schlafmangel"
+  },
+  {
+   "form": "Vorgang",
+   "context": "Beschreiben Sie in einem kurzen Sachtext, wie Erinnerungen entstehen, und stellen Sie zwei Lernstrategien gegenüber. Umfang: 160–200 Wörter Checkliste: • Erklären Sie den Vorgang in einer logischen Reihenfolge. • Verwenden Sie mindestens drei Passivsätze. • Benutzen Sie einmal von und einmal durch korrekt. • Schließen Sie mit einer begründeten Empfehlung.",
+   "en": "process",
+   "lemma": "der Vorgang"
+  },
+  {
+   "form": "logischen",
+   "context": "Beschreiben Sie in einem kurzen Sachtext, wie Erinnerungen entstehen, und stellen Sie zwei Lernstrategien gegenüber. Umfang: 160–200 Wörter Checkliste: • Erklären Sie den Vorgang in einer logischen Reihenfolge. • Verwenden Sie mindestens drei Passivsätze. • Benutzen Sie einmal von und einmal durch korrekt. • Schließen Sie mit einer begründeten Empfehlung.",
+   "en": "logical",
+   "lemma": "logisch"
+  },
+  {
+   "form": "Passivsätze",
+   "context": "Beschreiben Sie in einem kurzen Sachtext, wie Erinnerungen entstehen, und stellen Sie zwei Lernstrategien gegenüber. Umfang: 160–200 Wörter Checkliste: • Erklären Sie den Vorgang in einer logischen Reihenfolge. • Verwenden Sie mindestens drei Passivsätze. • Benutzen Sie einmal von und einmal durch korrekt. • Schließen Sie mit einer begründeten Empfehlung.",
+   "en": "passive sentences",
+   "lemma": "der Passivsatz"
+  },
+  {
+   "form": "begründeten",
+   "context": "Beschreiben Sie in einem kurzen Sachtext, wie Erinnerungen entstehen, und stellen Sie zwei Lernstrategien gegenüber. Umfang: 160–200 Wörter Checkliste: • Erklären Sie den Vorgang in einer logischen Reihenfolge. • Verwenden Sie mindestens drei Passivsätze. • Benutzen Sie einmal von und einmal durch korrekt. • Schließen Sie mit einer begründeten Empfehlung.",
+   "en": "well-founded",
+   "lemma": "begründet"
+  }
+ ]
+}
