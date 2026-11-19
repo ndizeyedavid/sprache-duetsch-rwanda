@@ -1,0 +1,679 @@
+{
+ "level": "B1",
+ "lesson": 17,
+ "title": "Biografien — Es lohnt sich, diese Geschichte zu kennen",
+ "lines": [
+  {
+   "de": "Lebensgeschichten erzählen und kommentieren — mit festen es-Wendungen.",
+   "en": "Telling and commenting on life stories — with fixed expressions with es."
+  },
+  {
+   "de": "eine Biografie zusammenfassen und bewerten",
+   "en": "summarise and evaluate a biography"
+  },
+  {
+   "de": "feste Wendungen mit es erkennen und verwenden",
+   "en": "recognise and use fixed expressions with es"
+  },
+  {
+   "de": "Fotos und Bilder beschreiben",
+   "en": "describe photos and pictures"
+  },
+  {
+   "de": "Grammatik: Ausdrücke mit es",
+   "en": "Grammar: expressions with es"
+  },
+  {
+   "de": "In vielen deutschen Sätzen ist es kein echtes Subjekt, sondern ein formales Element, das nicht weggelassen werden darf. Es gibt vier große Gruppen.",
+   "en": "In many German sentences, es is not a real subject but a formal element that must not be left out. There are four main groups."
+  },
+  {
+   "de": "Gruppe",
+   "en": "Group"
+  },
+  {
+   "de": "feste Wendungen",
+   "en": "fixed expressions"
+  },
+  {
+   "de": "Es gibt … / Es lohnt sich. / Es geht um … / Es handelt sich um …",
+   "en": "There is/are … / It's worth it. / It's about … / It's a matter of …"
+  },
+  {
+   "de": "Wetter",
+   "en": "Weather"
+  },
+  {
+   "de": "Es regnet. / Es ist neblig. / Es hat kurz vorher geschneit.",
+   "en": "It's raining. / It's foggy. / It snowed shortly before."
+  },
+  {
+   "de": "Tages- und Jahreszeiten",
+   "en": "Times of day and seasons"
+  },
+  {
+   "de": "Es ist schon spät. / Es wird früh dunkel. / Es ist Frühling.",
+   "en": "It's already late. / It gets dark early. / It's spring."
+  },
+  {
+   "de": "Befinden und Bewertung",
+   "en": "Well-being and evaluation"
+  },
+  {
+   "de": "Wie geht es Ihnen? / Es fällt mir schwer, … / Es ist nicht leicht, …",
+   "en": "How are you? / I find it hard to … / It isn't easy to …"
+  },
+  {
+   "de": "Es lohnt sich, dieses Buch bis zum Ende zu lesen.es + Infinitivsatz",
+   "en": "It's worth reading this book to the end. es + infinitive clause"
+  },
+  {
+   "de": "In diesem Film geht es um eine Familie in den 1960er-Jahren.es geht um + Akkusativ",
+   "en": "This film is about a family in the 1960s. es geht um + accusative"
+  },
+  {
+   "de": "Es fiel ihr schwer, über diese Zeit zu sprechen.es fällt jdm. schwer, … zu …",
+   "en": "She found it hard to talk about that time. es fällt jdm. schwer, … zu …"
+  },
+  {
+   "de": "Tipp: Vorsicht: In manchen Sätzen steht es nur auf Position 1 und verschwindet, wenn etwas anderes vorn steht: Es kamen viele Gäste. → Gestern kamen viele Gäste.",
+   "en": "Tip: Careful: in some sentences, es only stands in position 1 and disappears when something else comes first: Es kamen viele Gäste. → Gestern kamen viele Gäste."
+  },
+  {
+   "de": "die Biografie, -n — EN: biography · FR: la biographieIch lese gerade die Biografie einer Fotografin.",
+   "en": "Example: I'm reading the biography of a photographer at the moment."
+  },
+  {
+   "de": "der Lebensweg, -e — EN: life path · FR: le parcours de vieIhr Lebensweg war alles andere als geradlinig.",
+   "en": "Example: Her path through life was anything but straightforward."
+  },
+  {
+   "de": "prägen — EN: to shape, influence · FR: marquerDiese Jahre haben ihn stark geprägt.",
+   "en": "Example: These years shaped him profoundly."
+  },
+  {
+   "de": "der Wendepunkt, -e — EN: turning point · FR: le tournantDas Jahr 1990 war ein Wendepunkt in seinem Leben.",
+   "en": "Example: The year 1990 was a turning point in his life."
+  },
+  {
+   "de": "scheitern an (+ Dat.) — EN: to fail at · FR: échouer àDas erste Projekt scheiterte am Geld.",
+   "en": "Example: The first project failed because of money."
+  },
+  {
+   "de": "der Erfolg, -e — EN: success · FR: le succèsDer Erfolg kam erst spät.",
+   "en": "Example: Success came only late."
+  },
+  {
+   "de": "die Herausforderung, -en — EN: challenge · FR: le défiFür sie war das eine große Herausforderung.",
+   "en": "Example: For her, that was a big challenge."
+  },
+  {
+   "de": "veröffentlichen — EN: to publish · FR: publierEr veröffentlichte sein erstes Buch mit 45.",
+   "en": "Example: He published his first book at 45."
+  },
+  {
+   "de": "beeindruckend — EN: impressive · FR: impressionnantDas ist eine beeindruckende Leistung.",
+   "en": "Example: That is an impressive achievement."
+  },
+  {
+   "de": "die Aufnahme, -n — EN: photo, recording · FR: la photo, l'enregistrementDie Aufnahme stammt aus dem Jahr 1972.",
+   "en": "Example: The photo dates from 1972."
+  },
+  {
+   "de": "im Vordergrund / im Hintergrund — EN: in the foreground / background · FR: au premier plan / à l'arrière-planIm Vordergrund sieht man zwei Kinder.",
+   "en": "Example: In the foreground you can see two children."
+  },
+  {
+   "de": "ausdrücken — EN: to express · FR: exprimerDas Bild drückt viel Ruhe aus.",
+   "en": "Example: The picture expresses a lot of calm."
+  },
+  {
+   "de": "ein Foto beschreiben",
+   "en": "Describing a photo"
+  },
+  {
+   "de": "Auf dem Foto sieht man …",
+   "en": "In the photo you can see …"
+  },
+  {
+   "de": "Im Vordergrund / Hintergrund befindet sich …",
+   "en": "In the foreground / background there is …"
+  },
+  {
+   "de": "Das Bild wirkt auf mich …",
+   "en": "To me, the picture seems …"
+  },
+  {
+   "de": "eine Biografie zusammenfassen",
+   "en": "Summarising a biography"
+  },
+  {
+   "de": "In diesem Text geht es um …",
+   "en": "This text is about …"
+  },
+  {
+   "de": "Entscheidend für ihr Leben war, dass …",
+   "en": "What was decisive in her life was that …"
+  },
+  {
+   "de": "Besonders bemerkenswert finde ich, dass …",
+   "en": "I find it particularly remarkable that …"
+  },
+  {
+   "de": "Es lohnt sich wirklich, …",
+   "en": "It's really worth …"
+  },
+  {
+   "de": "Es hat mich überrascht, dass …",
+   "en": "It surprised me that …"
+  },
+  {
+   "de": "Es ist beeindruckend, wie …",
+   "en": "It's impressive how …"
+  },
+  {
+   "de": "Ich lese gerade die Biografie einer Fotografin.",
+   "en": "I'm reading the biography of a photographer at the moment."
+  },
+  {
+   "de": "Ihr Lebensweg war alles andere als geradlinig.",
+   "en": "Her path through life was anything but straightforward."
+  },
+  {
+   "de": "Diese Jahre haben ihn stark geprägt.",
+   "en": "These years shaped him profoundly."
+  },
+  {
+   "de": "Das Jahr 1990 war ein Wendepunkt in seinem Leben.",
+   "en": "The year 1990 was a turning point in his life."
+  },
+  {
+   "de": "Das erste Projekt scheiterte am Geld.",
+   "en": "The first project failed because of money."
+  },
+  {
+   "de": "Der Erfolg kam erst spät.",
+   "en": "Success came only late."
+  },
+  {
+   "de": "Für sie war das eine große Herausforderung.",
+   "en": "For her, that was a big challenge."
+  },
+  {
+   "de": "Er veröffentlichte sein erstes Buch mit 45.",
+   "en": "He published his first book at 45."
+  },
+  {
+   "de": "Das ist eine beeindruckende Leistung.",
+   "en": "That is an impressive achievement."
+  },
+  {
+   "de": "Die Aufnahme stammt aus dem Jahr 1972.",
+   "en": "The photo dates from 1972."
+  },
+  {
+   "de": "Im Vordergrund sieht man zwei Kinder.",
+   "en": "In the foreground you can see two children."
+  },
+  {
+   "de": "Das Bild drückt viel Ruhe aus.",
+   "en": "The picture expresses a lot of calm."
+  },
+  {
+   "de": "In dem Text ___ ___ um die Kindheit der Autorin. (es gehen)",
+   "en": "In the text, ___ ___ about the author's childhood. (es gehen)"
+  },
+  {
+   "de": "Welcher Satz braucht 'es' nicht?",
+   "en": "Which sentence does not need 'es'?"
+  },
+  {
+   "de": "___ fällt mir schwer, darüber zu sprechen.",
+   "en": "___ is hard for me to talk about it."
+  },
+  {
+   "de": "Im Winter wird ___ hier schon um vier Uhr dunkel.",
+   "en": "In winter, ___ gets dark here as early as four o'clock."
+  },
+  {
+   "de": "___ handelt sich um eine wahre Geschichte.",
+   "en": "___ is a true story."
+  },
+  {
+   "de": "Feste Wendung: es geht um + Akkusativ.",
+   "en": "Fixed expression: es geht um + accusative."
+  },
+  {
+   "de": "Hier steht ein anderes Element auf Position 1, das formale es entfällt.",
+   "en": "Here another element is in position 1, so the formal es is dropped."
+  },
+  {
+   "de": "Feste Wendung: es fällt jemandem schwer, … zu …",
+   "en": "Fixed expression: es fällt jemandem schwer, … zu …"
+  },
+  {
+   "de": "Tageszeit und Wetter stehen immer mit es.",
+   "en": "Time of day and weather always take es."
+  },
+  {
+   "de": "es handelt sich um + Akkusativ.",
+   "en": "es handelt sich um + accusative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Lebensgeschichten",
+   "context": "Lebensgeschichten erzählen und kommentieren — mit festen es-Wendungen.",
+   "en": "life stories",
+   "lemma": "die Lebensgeschichte"
+  },
+  {
+   "form": "es-Wendungen",
+   "context": "Lebensgeschichten erzählen und kommentieren — mit festen es-Wendungen.",
+   "en": "expressions with es",
+   "lemma": "die es-Wendung"
+  },
+  {
+   "form": "Biografie",
+   "context": "eine Biografie zusammenfassen und bewerten",
+   "en": "biography",
+   "lemma": "die Biografie"
+  },
+  {
+   "form": "zusammenfassen",
+   "context": "eine Biografie zusammenfassen und bewerten",
+   "en": "to summarise",
+   "lemma": ""
+  },
+  {
+   "form": "Wendungen",
+   "context": "feste Wendungen mit es erkennen und verwenden",
+   "en": "expressions, phrases",
+   "lemma": "die Wendung"
+  },
+  {
+   "form": "Fotos",
+   "context": "Fotos und Bilder beschreiben",
+   "en": "photos",
+   "lemma": "das Foto"
+  },
+  {
+   "form": "echtes",
+   "context": "In vielen deutschen Sätzen ist es kein echtes Subjekt, sondern ein formales Element, das nicht weggelassen werden darf. Es gibt vier große Gruppen.",
+   "en": "real, genuine",
+   "lemma": "echt"
+  },
+  {
+   "form": "formales",
+   "context": "In vielen deutschen Sätzen ist es kein echtes Subjekt, sondern ein formales Element, das nicht weggelassen werden darf. Es gibt vier große Gruppen.",
+   "en": "formal",
+   "lemma": "formal"
+  },
+  {
+   "form": "Element",
+   "context": "In vielen deutschen Sätzen ist es kein echtes Subjekt, sondern ein formales Element, das nicht weggelassen werden darf. Es gibt vier große Gruppen.",
+   "en": "element",
+   "lemma": "das Element"
+  },
+  {
+   "form": "weggelassen",
+   "context": "In vielen deutschen Sätzen ist es kein echtes Subjekt, sondern ein formales Element, das nicht weggelassen werden darf. Es gibt vier große Gruppen.",
+   "en": "left out, omitted",
+   "lemma": "weglassen"
+  },
+  {
+   "form": "lohnt",
+   "context": "Es gibt … / Es lohnt sich. / Es geht um … / Es handelt sich um …",
+   "en": "is worth it (sich lohnen)",
+   "lemma": "sich lohnen"
+  },
+  {
+   "form": "handelt",
+   "context": "Es gibt … / Es lohnt sich. / Es geht um … / Es handelt sich um …",
+   "en": "is about (es handelt sich um); acts",
+   "lemma": "handeln"
+  },
+  {
+   "form": "neblig",
+   "context": "Es regnet. / Es ist neblig. / Es hat kurz vorher geschneit.",
+   "en": "foggy",
+   "lemma": ""
+  },
+  {
+   "form": "Befinden",
+   "context": "Befinden und Bewertung",
+   "en": "well-being, state of health",
+   "lemma": "das Befinden"
+  },
+  {
+   "form": "Infinitivsatz",
+   "context": "Es lohnt sich, dieses Buch bis zum Ende zu lesen.es + Infinitivsatz",
+   "en": "infinitive clause",
+   "lemma": "der Infinitivsatz"
+  },
+  {
+   "form": "er-Jahren",
+   "context": "In diesem Film geht es um eine Familie in den 1960er-Jahren.es geht um + Akkusativ",
+   "en": "the …s (decade)",
+   "lemma": ""
+  },
+  {
+   "form": "fiel",
+   "context": "Es fiel ihr schwer, über diese Zeit zu sprechen.es fällt jdm. schwer, … zu …",
+   "en": "fell; (… schwer) was hard",
+   "lemma": "fallen"
+  },
+  {
+   "form": "jdm",
+   "context": "Es fiel ihr schwer, über diese Zeit zu sprechen.es fällt jdm. schwer, … zu …",
+   "en": "someone (jemandem, dative)",
+   "lemma": "jemand"
+  },
+  {
+   "form": "manchen",
+   "context": "Tipp: Vorsicht: In manchen Sätzen steht es nur auf Position 1 und verschwindet, wenn etwas anderes vorn steht: Es kamen viele Gäste. → Gestern kamen viele Gäste.",
+   "en": "some",
+   "lemma": "mancher"
+  },
+  {
+   "form": "verschwindet",
+   "context": "Tipp: Vorsicht: In manchen Sätzen steht es nur auf Position 1 und verschwindet, wenn etwas anderes vorn steht: Es kamen viele Gäste. → Gestern kamen viele Gäste.",
+   "en": "disappears",
+   "lemma": "verschwinden"
+  },
+  {
+   "form": "biography",
+   "context": "die Biografie, -n — EN: biography · FR: la biographieIch lese gerade die Biografie einer Fotografin.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "biographieIch",
+   "context": "die Biografie, -n — EN: biography · FR: la biographieIch lese gerade die Biografie einer Fotografin.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Fotografin",
+   "context": "die Biografie, -n — EN: biography · FR: la biographieIch lese gerade die Biografie einer Fotografin.",
+   "en": "photographer (a woman)",
+   "lemma": "die Fotografin"
+  },
+  {
+   "form": "Lebensweg",
+   "context": "der Lebensweg, -e — EN: life path · FR: le parcours de vieIhr Lebensweg war alles andere als geradlinig.",
+   "en": "path through life",
+   "lemma": "der Lebensweg"
+  },
+  {
+   "form": "path",
+   "context": "der Lebensweg, -e — EN: life path · FR: le parcours de vieIhr Lebensweg war alles andere als geradlinig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parcours",
+   "context": "der Lebensweg, -e — EN: life path · FR: le parcours de vieIhr Lebensweg war alles andere als geradlinig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vieIhr",
+   "context": "der Lebensweg, -e — EN: life path · FR: le parcours de vieIhr Lebensweg war alles andere als geradlinig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "geradlinig",
+   "context": "der Lebensweg, -e — EN: life path · FR: le parcours de vieIhr Lebensweg war alles andere als geradlinig.",
+   "en": "straightforward, linear",
+   "lemma": ""
+  },
+  {
+   "form": "prägen",
+   "context": "prägen — EN: to shape, influence · FR: marquerDiese Jahre haben ihn stark geprägt.",
+   "en": "to shape, influence",
+   "lemma": ""
+  },
+  {
+   "form": "shape",
+   "context": "prägen — EN: to shape, influence · FR: marquerDiese Jahre haben ihn stark geprägt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "influence",
+   "context": "prägen — EN: to shape, influence · FR: marquerDiese Jahre haben ihn stark geprägt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "marquerDiese",
+   "context": "prägen — EN: to shape, influence · FR: marquerDiese Jahre haben ihn stark geprägt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "geprägt",
+   "context": "prägen — EN: to shape, influence · FR: marquerDiese Jahre haben ihn stark geprägt.",
+   "en": "shaped, influenced",
+   "lemma": "prägen"
+  },
+  {
+   "form": "Wendepunkt",
+   "context": "der Wendepunkt, -e — EN: turning point · FR: le tournantDas Jahr 1990 war ein Wendepunkt in seinem Leben.",
+   "en": "turning point",
+   "lemma": "der Wendepunkt"
+  },
+  {
+   "form": "turning",
+   "context": "der Wendepunkt, -e — EN: turning point · FR: le tournantDas Jahr 1990 war ein Wendepunkt in seinem Leben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tournantDas",
+   "context": "der Wendepunkt, -e — EN: turning point · FR: le tournantDas Jahr 1990 war ein Wendepunkt in seinem Leben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "scheitern",
+   "context": "scheitern an (+ Dat.) — EN: to fail at · FR: échouer àDas erste Projekt scheiterte am Geld.",
+   "en": "to fail",
+   "lemma": ""
+  },
+  {
+   "form": "fail",
+   "context": "scheitern an (+ Dat.) — EN: to fail at · FR: échouer àDas erste Projekt scheiterte am Geld.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "échouer",
+   "context": "scheitern an (+ Dat.) — EN: to fail at · FR: échouer àDas erste Projekt scheiterte am Geld.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "scheiterte",
+   "context": "scheitern an (+ Dat.) — EN: to fail at · FR: échouer àDas erste Projekt scheiterte am Geld.",
+   "en": "failed",
+   "lemma": "scheitern"
+  },
+  {
+   "form": "succèsDer",
+   "context": "der Erfolg, -e — EN: success · FR: le succèsDer Erfolg kam erst spät.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Herausforderung",
+   "context": "die Herausforderung, -en — EN: challenge · FR: le défiFür sie war das eine große Herausforderung.",
+   "en": "challenge",
+   "lemma": "die Herausforderung"
+  },
+  {
+   "form": "challenge",
+   "context": "die Herausforderung, -en — EN: challenge · FR: le défiFür sie war das eine große Herausforderung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "défiFür",
+   "context": "die Herausforderung, -en — EN: challenge · FR: le défiFür sie war das eine große Herausforderung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "veröffentlichen",
+   "context": "veröffentlichen — EN: to publish · FR: publierEr veröffentlichte sein erstes Buch mit 45.",
+   "en": "to publish",
+   "lemma": ""
+  },
+  {
+   "form": "publish",
+   "context": "veröffentlichen — EN: to publish · FR: publierEr veröffentlichte sein erstes Buch mit 45.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "publierEr",
+   "context": "veröffentlichen — EN: to publish · FR: publierEr veröffentlichte sein erstes Buch mit 45.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "veröffentlichte",
+   "context": "veröffentlichen — EN: to publish · FR: publierEr veröffentlichte sein erstes Buch mit 45.",
+   "en": "published",
+   "lemma": "veröffentlichen"
+  },
+  {
+   "form": "erstes",
+   "context": "veröffentlichen — EN: to publish · FR: publierEr veröffentlichte sein erstes Buch mit 45.",
+   "en": "first",
+   "lemma": "erste"
+  },
+  {
+   "form": "impressionnantDas",
+   "context": "beeindruckend — EN: impressive · FR: impressionnantDas ist eine beeindruckende Leistung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beeindruckende",
+   "context": "beeindruckend — EN: impressive · FR: impressionnantDas ist eine beeindruckende Leistung.",
+   "en": "impressive",
+   "lemma": "beeindruckend"
+  },
+  {
+   "form": "Leistung",
+   "context": "beeindruckend — EN: impressive · FR: impressionnantDas ist eine beeindruckende Leistung.",
+   "en": "achievement; performance",
+   "lemma": "die Leistung"
+  },
+  {
+   "form": "Aufnahme",
+   "context": "die Aufnahme, -n — EN: photo, recording · FR: la photo, l'enregistrementDie Aufnahme stammt aus dem Jahr 1972.",
+   "en": "photo, recording; admission",
+   "lemma": "die Aufnahme"
+  },
+  {
+   "form": "photo",
+   "context": "die Aufnahme, -n — EN: photo, recording · FR: la photo, l'enregistrementDie Aufnahme stammt aus dem Jahr 1972.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "recording",
+   "context": "die Aufnahme, -n — EN: photo, recording · FR: la photo, l'enregistrementDie Aufnahme stammt aus dem Jahr 1972.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stammt",
+   "context": "die Aufnahme, -n — EN: photo, recording · FR: la photo, l'enregistrementDie Aufnahme stammt aus dem Jahr 1972.",
+   "en": "comes, dates (from)",
+   "lemma": "stammen"
+  },
+  {
+   "form": "Vordergrund",
+   "context": "im Vordergrund / im Hintergrund — EN: in the foreground / background · FR: au premier plan / à l'arrière-planIm Vordergrund sieht man zwei Kinder.",
+   "en": "foreground",
+   "lemma": "der Vordergrund"
+  },
+  {
+   "form": "Hintergrund",
+   "context": "im Vordergrund / im Hintergrund — EN: in the foreground / background · FR: au premier plan / à l'arrière-planIm Vordergrund sieht man zwei Kinder.",
+   "en": "background",
+   "lemma": "der Hintergrund"
+  },
+  {
+   "form": "foreground",
+   "context": "im Vordergrund / im Hintergrund — EN: in the foreground / background · FR: au premier plan / à l'arrière-planIm Vordergrund sieht man zwei Kinder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "background",
+   "context": "im Vordergrund / im Hintergrund — EN: in the foreground / background · FR: au premier plan / à l'arrière-planIm Vordergrund sieht man zwei Kinder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "premier",
+   "context": "im Vordergrund / im Hintergrund — EN: in the foreground / background · FR: au premier plan / à l'arrière-planIm Vordergrund sieht man zwei Kinder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'arrière-planIm",
+   "context": "im Vordergrund / im Hintergrund — EN: in the foreground / background · FR: au premier plan / à l'arrière-planIm Vordergrund sieht man zwei Kinder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "express",
+   "context": "ausdrücken — EN: to express · FR: exprimerDas Bild drückt viel Ruhe aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "exprimerDas",
+   "context": "ausdrücken — EN: to express · FR: exprimerDas Bild drückt viel Ruhe aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "befindet",
+   "context": "Im Vordergrund / Hintergrund befindet sich …",
+   "en": "is (located)",
+   "lemma": "sich befinden"
+  },
+  {
+   "form": "Text",
+   "context": "In diesem Text geht es um …",
+   "en": "text",
+   "lemma": "der Text"
+  },
+  {
+   "form": "bemerkenswert",
+   "context": "Besonders bemerkenswert finde ich, dass …",
+   "en": "remarkable",
+   "lemma": ""
+  },
+  {
+   "form": "Autorin",
+   "context": "In dem Text ___ ___ um die Kindheit der Autorin. (es gehen)",
+   "en": "author (a woman)",
+   "lemma": "die Autorin"
+  },
+  {
+   "form": "wahre",
+   "context": "___ handelt sich um eine wahre Geschichte.",
+   "en": "true",
+   "lemma": "wahr"
+  }
+ ]
+}
