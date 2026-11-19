@@ -28,7 +28,10 @@ export const getMyAssignments = async (userId: string) => {
   ]);
 
   const seenActivity = new Set<string>();
-  const dedupedActivities = activities.filter((a) => { if (isSelfStudyActivity(a) || seenActivity.has(a.id)) return false; seenActivity.add(a.id); return true; });
+  // Course v2 lesson tasks (writing/speaking) live in their lesson; they join this list once handed in.
+  const courseTask = (config: unknown) => !!config && typeof config === "object" && (config as { courseTask?: unknown }).courseTask === true;
+  const handedIn = new Set(submissions.map((s) => s.activityId));
+  const dedupedActivities = activities.filter((a) => { if (isSelfStudyActivity(a) || seenActivity.has(a.id) || (courseTask(a.config) && !handedIn.has(a.id))) return false; seenActivity.add(a.id); return true; });
   const seenAssessment = new Set<string>();
   const dedupedAssessments = assessments.filter((a) => { if (seenAssessment.has(a.id)) return false; seenAssessment.add(a.id); return true; });
   const subByActivity = new Map(submissions.map((s) => [s.activityId, s]));
