@@ -1,5 +1,6 @@
 import { notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
+import { findMatches } from "./application-matches.js";
 import { transitionOptions } from "./application-policy.js";
 import { applicationListInclude } from "./application-select.js";
 
@@ -8,7 +9,7 @@ export const getApplication = async (id: string) => {
   const application = await prisma.application.findUnique({ where: { id }, include: applicationListInclude });
   if (!application) throw notFound("Application not found");
 
-  const [history, waitlistPosition] = await Promise.all([
+  const [history, waitlistPosition, matches] = await Promise.all([
     prisma.auditLog.findMany({
       where: { entityType: "Application", entityId: id },
       orderBy: { createdAt: "desc" },
@@ -22,7 +23,8 @@ export const getApplication = async (id: string) => {
             waitlistedAt: { lt: application.waitlistedAt } } })
           .then((ahead) => ahead + 1)
       : Promise.resolve(null),
+    findMatches([application]).then((found) => found.get(application.id) ?? null),
   ]);
 
-  return { ...application, transitions: transitionOptions(application.status), waitlistPosition, history };
+  return { ...application, transitions: transitionOptions(application.status), waitlistPosition, history, matches };
 };
