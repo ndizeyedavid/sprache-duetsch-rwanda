@@ -1,0 +1,265 @@
+{
+  "level": "A1",
+  "lesson": 1,
+  "title": "Begrüßung und Vorstellung — Ich heiße Amina. Und du?",
+  "titleEn": "Greetings and introductions — My name is Amina. And you?",
+  "summary": "Sich begrüßen, den Namen sagen und fragen, woher jemand kommt.",
+  "summaryEn": "Greet people, say your name and ask where someone is from.",
+  "exam": "Goethe-Zertifikat A1 (Start Deutsch 1): Sprechen Teil 1 — sich vorstellen",
+  "goals": [
+    { "de": "sich begrüßen und verabschieden", "en": "greet people and say goodbye" },
+    { "de": "den Namen und das Herkunftsland sagen", "en": "say your name and the country you come from" },
+    { "de": "W-Fragen mit wer, wie, woher stellen", "en": "ask questions with wer (who), wie (how/what) and woher (where … from)" }
+  ],
+  "vocab": [
+    { "de": "heißen", "en": "to be called", "example": "Ich heiße Daniel.", "exampleEn": "My name is Daniel.", "noteEn": "German says “I am called …”: Ich heiße …" },
+    { "de": "kommen aus", "en": "to come from", "example": "Ich komme aus Ruanda.", "exampleEn": "I come from Rwanda." },
+    { "de": "wohnen in", "en": "to live in", "example": "Wir wohnen in Kigali.", "exampleEn": "We live in Kigali." },
+    { "de": "der Name, -n", "en": "name", "say": "der Name", "example": "Mein Name ist Keza.", "exampleEn": "My name is Keza.", "noteEn": "Plural: die Namen" },
+    { "de": "guten Tag", "en": "hello, good day", "example": "Guten Tag, Frau Weber!", "exampleEn": "Hello, Mrs Weber!" },
+    { "de": "auf Wiedersehen", "en": "goodbye", "example": "Auf Wiedersehen und bis morgen!", "exampleEn": "Goodbye and see you tomorrow!" },
+    { "de": "das Land, ¨-er", "en": "country", "say": "das Land", "example": "Aus welchem Land kommst du?", "exampleEn": "Which country are you from?", "noteEn": "Plural: die Länder" },
+    { "de": "die Sprache, -n", "en": "language", "say": "die Sprache", "example": "Ich spreche drei Sprachen.", "exampleEn": "I speak three languages.", "noteEn": "Plural: die Sprachen" },
+    { "de": "buchstabieren", "en": "to spell", "example": "Können Sie das buchstabieren?", "exampleEn": "Can you spell that?" },
+    { "de": "die Stadt, ¨-e", "en": "city, town", "say": "die Stadt", "example": "Kigali ist eine schöne Stadt.", "exampleEn": "Kigali is a beautiful city.", "noteEn": "Plural: die Städte" },
+    { "de": "danke / bitte", "en": "thank you / please", "example": "Danke schön! — Bitte schön!", "exampleEn": "Thank you very much! — You’re welcome!", "noteEn": "Bitte also means “you’re welcome”." },
+    { "de": "und du? / und Sie?", "en": "and you?", "example": "Ich komme aus Ruanda. Und du?", "exampleEn": "I come from Rwanda. And you?", "noteEn": "Use du with friends, Sie with people you do not know." },
+    { "de": "sprechen", "en": "to speak", "example": "Ich spreche Kinyarwanda und Englisch.", "exampleEn": "I speak Kinyarwanda and English." },
+    { "de": "lernen", "en": "to learn", "example": "Jetzt lerne ich Deutsch.", "exampleEn": "Now I am learning German." },
+    { "de": "Hallo!", "en": "Hi! / Hello!", "example": "Hallo, ich bin Tom.", "exampleEn": "Hi, I’m Tom." },
+    { "de": "Tschüss!", "en": "Bye!", "example": "Tschüss, bis morgen!", "exampleEn": "Bye, see you tomorrow!" }
+  ],
+  "grammar": [
+    {
+      "title": "Der Aussagesatz: Verb auf Position 2",
+      "titleEn": "Statements: the verb comes second",
+      "explanation": "Im deutschen Aussagesatz steht das Verb immer an zweiter Stelle. Position 1 kann das Subjekt sein — oder etwas anderes.",
+      "explanationEn": "In a German statement the verb is always the second element. Position 1 can be the subject (ich, mein Name …) or something else, such as a time word (heute, jetzt). Then the subject moves behind the verb: Heute bin ich in Köln.",
+      "table": {
+        "head": ["Position 1", "Position 2 (Verb)", "Rest"],
+        "rows": [["Ich", "heiße", "Amina."], ["Ich", "komme", "aus Ruanda."], ["Mein Name", "ist", "Amina Uwase."], ["Heute", "bin", "ich in Köln."]]
+      },
+      "examples": [
+        { "de": "Ich wohne in Kigali.", "en": "I live in Kigali.", "note": "Subjekt auf Position 1", "noteEn": "The subject is in position 1." },
+        { "de": "Jetzt lerne ich Deutsch.", "en": "Now I am learning German.", "note": "Zeitangabe auf Position 1 — das Verb bleibt auf Position 2", "noteEn": "A time word is in position 1 — the verb stays in position 2 and the subject comes after it." },
+        { "de": "Mein Name ist Amina Uwase.", "en": "My name is Amina Uwase.", "noteEn": "Mein Name is two words but only one position." }
+      ],
+      "tip": "Merken Sie sich: Das Verb hat im Aussagesatz immer Platz 2 — egal, was auf Platz 1 steht.",
+      "tipEn": "Remember: in a statement the verb is always in place 2, whatever is in place 1."
+    },
+    {
+      "title": "W-Fragen: wer, wie, woher",
+      "titleEn": "Question words: who, how/what, where from",
+      "explanation": "Eine W-Frage beginnt mit einem Fragewort. Danach kommt sofort das Verb, dann das Subjekt.",
+      "explanationEn": "A W-question starts with a question word: wer (who), wie (how, what), woher (where … from), wo (where). The verb comes straight after it, then the subject.",
+      "table": {
+        "head": ["Fragewort", "Verb", "Subjekt", "Antwort"],
+        "rows": [["Wie", "heißt", "du?", "Ich heiße Amina."], ["Woher", "kommst", "du?", "Ich komme aus Ruanda."], ["Wer", "ist", "das?", "Das ist Herr Weber."], ["Wo", "wohnst", "du?", "Ich wohne in Kigali."]]
+      },
+      "examples": [
+        { "de": "Wie heißt du?", "en": "What is your name?", "noteEn": "German asks “How are you called?” — wie, not was." },
+        { "de": "Wie geht es Ihnen? — Danke, gut.", "en": "How are you? — Fine, thank you.", "note": "höfliche Form mit Sie", "noteEn": "Polite form with Sie (Ihnen)." },
+        { "de": "Woher kommen Sie?", "en": "Where are you from?", "note": "Verb direkt nach dem Fragewort", "noteEn": "The verb comes right after the question word." }
+      ],
+      "tip": "du für Freunde und Familie, Sie für fremde Personen und im Beruf.",
+      "tipEn": "Say du to friends and family, and Sie to people you do not know and at work."
+    },
+    {
+      "title": "Verben im Präsens: ich, du, Sie",
+      "titleEn": "Verbs in the present tense: I, you, you (polite)",
+      "explanation": "Das Verb hat eine Endung für jede Person: ich → -e, du → -st, Sie → -en. Das Verb sein ist unregelmäßig.",
+      "explanationEn": "A German verb changes its ending for each person: ich → -e, du → -st, Sie (polite you) → -en. Verbs whose stem ends in -ß, -s or -z only add -t for du: du heißt. The verb sein (to be) is irregular: ich bin, du bist, Sie sind.",
+      "table": {
+        "head": ["", "heißen", "kommen", "wohnen", "sein"],
+        "rows": [["ich", "heiße", "komme", "wohne", "bin"], ["du", "heißt", "kommst", "wohnst", "bist"], ["Sie", "heißen", "kommen", "wohnen", "sind"]]
+      },
+      "examples": [
+        { "de": "Ich komme aus Ruanda. Und woher kommst du?", "en": "I come from Rwanda. And where do you come from?" },
+        { "de": "Wie heißen Sie? — Ich heiße Weber.", "en": "What is your name? — My name is Weber.", "noteEn": "Polite question with Sie." },
+        { "de": "Bist du Tom? — Ja, ich bin Tom.", "en": "Are you Tom? — Yes, I am Tom." }
+      ],
+      "tip": "Mit Sie sieht das Verb aus wie im Wörterbuch: Sie heißen, Sie kommen, Sie wohnen.",
+      "tipEn": "With Sie the verb looks just like the dictionary form: Sie heißen, Sie kommen, Sie wohnen."
+    }
+  ],
+  "phrases": [
+    { "function": "begrüßen", "functionEn": "saying hello", "items": [
+      { "de": "Hallo! / Guten Tag!", "en": "Hi! / Hello!" },
+      { "de": "Guten Morgen! / Guten Abend!", "en": "Good morning! / Good evening!" },
+      { "de": "Wie geht es dir? — Danke, gut.", "en": "How are you? — Fine, thanks." }
+    ] },
+    { "function": "sich vorstellen", "functionEn": "introducing yourself", "items": [
+      { "de": "Ich heiße …", "en": "My name is …" },
+      { "de": "Mein Name ist …", "en": "My name is …" },
+      { "de": "Ich komme aus … und wohne in …", "en": "I come from … and live in …" }
+    ] },
+    { "function": "sich verabschieden", "functionEn": "saying goodbye", "items": [
+      { "de": "Auf Wiedersehen!", "en": "Goodbye!" },
+      { "de": "Tschüss! Bis morgen!", "en": "Bye! See you tomorrow!" },
+      { "de": "Schönen Tag noch!", "en": "Have a nice day!" }
+    ] }
+  ],
+  "pronunciation": {
+    "focus": "Satzmelodie",
+    "focusEn": "Sentence melody",
+    "explanation": "Bei einer Aussage geht die Stimme am Ende nach unten ↘. Bei einer W-Frage geht sie auch nach unten ↘. Nur bei einer Ja/Nein-Frage geht die Stimme nach oben ↗.",
+    "explanationEn": "In a statement your voice goes down at the end ↘. In a W-question (wie, woher, wer …) it also goes down ↘. Only in a yes/no question does your voice go up ↗.",
+    "examples": [
+      { "de": "Ich heiße Amina. ↘", "en": "My name is Amina. (voice goes down)" },
+      { "de": "Wie heißt du? ↘", "en": "What is your name? (voice goes down)" },
+      { "de": "Kommst du aus Kigali? ↗", "en": "Are you from Kigali? (voice goes up)" }
+    ]
+  },
+  "dialogue": {
+    "title": "Im Deutschkurs",
+    "titleEn": "In the German class",
+    "speakers": { "Amina": "f", "Tom": "m" },
+    "lines": [
+      { "speaker": "Amina", "de": "Hallo! Ich heiße Amina. Und du?", "en": "Hi! My name is Amina. And you?" },
+      { "speaker": "Tom", "de": "Ich bin Tom. Woher kommst du?", "en": "I’m Tom. Where are you from?" },
+      { "speaker": "Amina", "de": "Ich komme aus Ruanda. Und du?", "en": "I’m from Rwanda. And you?" },
+      { "speaker": "Tom", "de": "Aus Österreich. Jetzt wohne ich in Köln.", "en": "From Austria. Now I live in Cologne." },
+      { "speaker": "Amina", "de": "Wie schreibt man deinen Namen?", "en": "How do you spell your name?" },
+      { "speaker": "Tom", "de": "T-O-M. Ganz einfach!", "en": "T-O-M. Very easy!", "say": "Tee — O — Emm. Ganz einfach!" },
+      { "speaker": "Amina", "de": "Danke, Tom. Bis morgen!", "en": "Thanks, Tom. See you tomorrow!" },
+      { "speaker": "Tom", "de": "Tschüss, Amina!", "en": "Bye, Amina!" }
+    ]
+  },
+  "reading": {
+    "title": "Hallo, ich bin Keza!",
+    "titleEn": "Hi, I’m Keza!",
+    "paragraphs": [
+      [
+        { "de": "Hallo! Ich heiße Keza Mugisha.", "en": "Hi! My name is Keza Mugisha." },
+        { "de": "Ich komme aus Ruanda.", "en": "I come from Rwanda." },
+        { "de": "Ich wohne in Kigali.", "en": "I live in Kigali." },
+        { "de": "Kigali ist eine schöne Stadt.", "en": "Kigali is a beautiful city." }
+      ],
+      [
+        { "de": "Ich spreche drei Sprachen: Kinyarwanda, Englisch und Französisch.", "en": "I speak three languages: Kinyarwanda, English and French." },
+        { "de": "Jetzt lerne ich Deutsch.", "en": "Now I am learning German." },
+        { "de": "Mein Deutschlehrer heißt Herr Weber.", "en": "My German teacher is called Mr Weber." },
+        { "de": "Er kommt aus Berlin.", "en": "He comes from Berlin." }
+      ],
+      [
+        { "de": "Und du? Wie heißt du? Woher kommst du?", "en": "And you? What is your name? Where are you from?" }
+      ]
+    ]
+  },
+  "sessions": [
+    {
+      "key": "words",
+      "title": "Wörter",
+      "titleEn": "Words",
+      "items": [
+        { "kind": "match", "pairs": [["heißen", "to be called"], ["kommen aus", "to come from"], ["wohnen in", "to live in"], ["die Sprache", "language"], ["die Stadt", "city"], ["das Land", "country"]] },
+        { "kind": "choose", "prompt": "der Name", "listen": true, "options": ["name", "country", "language", "city"], "optionsLang": "en", "answer": "name" },
+        { "kind": "choose", "promptEn": "Which word means “goodbye”?", "options": ["auf Wiedersehen", "guten Tag", "danke", "bitte"], "answer": "auf Wiedersehen" },
+        { "kind": "choose", "prompt": "buchstabieren", "promptEn": "What does this mean?", "options": ["to spell", "to speak", "to learn", "to live"], "optionsLang": "en", "answer": "to spell" },
+        { "kind": "match", "pairs": [["Hallo!", "Hi!"], ["Tschüss!", "Bye!"], ["danke", "thank you"], ["bitte", "please"], ["guten Tag", "hello, good day"]] },
+        { "kind": "choose", "promptEn": "Which word means “to speak”?", "options": ["sprechen", "lernen", "wohnen", "heißen"], "answer": "sprechen" },
+        { "kind": "translate", "from": "de", "text": "Ich spreche drei Sprachen.", "answer": "I speak three languages.", "accepted": ["I speak 3 languages."], "distractors": ["learn", "two"] },
+        { "kind": "choose", "prompt": "die Sprache", "listen": true, "options": ["language", "city", "name", "country"], "optionsLang": "en", "answer": "language" },
+        { "kind": "translate", "from": "en", "text": "I live in Huye.", "answer": "Ich wohne in Huye.", "distractors": ["komme", "aus", "heiße"] },
+        { "kind": "fill", "text": "Ich ___ aus Kenia.", "answer": "komme", "options": ["komme", "wohne", "heiße"], "en": "I come from Kenya." },
+        { "kind": "listen", "mode": "choose", "text": "Kigali ist eine schöne Stadt.", "options": ["Kigali ist eine schöne Stadt.", "Kigali ist ein schönes Land.", "Kigali ist eine große Stadt."], "en": "Kigali is a beautiful city." },
+        { "kind": "choose", "promptEn": "How do you say “thank you”?", "options": ["danke", "bitte", "Tschüss", "Hallo"], "answer": "danke" }
+      ]
+    },
+    {
+      "key": "grammar",
+      "title": "Grammatik",
+      "titleEn": "Grammar",
+      "items": [
+        { "kind": "fill", "text": "___ heißt du?", "answer": "Wie", "en": "What is your name?", "hintEn": "question word", "explanationEn": "You ask for a name with Wie heißt du? (literally: How are you called?)" },
+        { "kind": "choose", "promptEn": "Which sentence is correct?", "options": ["Ich aus Ruanda komme.", "Ich komme aus Ruanda.", "Komme ich aus Ruanda."], "answer": "Ich komme aus Ruanda.", "explanationEn": "In a statement the verb is in position 2." },
+        { "kind": "fill", "text": "___ kommst du? — Aus Kigali.", "answer": "Woher", "en": "Where are you from? — From Kigali.", "hintEn": "question word", "explanationEn": "You ask about someone’s origin with woher (where … from)." },
+        { "kind": "choose", "prompt": "Heute ___ ich in Köln.", "promptEn": "Today I am in Cologne.", "options": ["bin", "ist", "bist"], "answer": "bin", "explanationEn": "The subject is ich, so the verb is bin. It stays in position 2." },
+        { "kind": "fill", "text": "___ ist das? — Das ist Frau Weber.", "answer": "Wer", "en": "Who is that? — That is Mrs Weber.", "hintEn": "question word for people", "explanationEn": "You ask about a person with wer (who)." },
+        { "kind": "fill", "text": "Ich ___ Eric.", "answer": "heiße", "options": ["heiße", "heißt", "heißen"], "en": "My name is Eric.", "explanationEn": "ich → heiße: the ending for ich is -e." },
+        { "kind": "fill", "text": "Wo ___ du? — In Kigali.", "answer": "wohnst", "options": ["wohnst", "wohne", "wohnen"], "en": "Where do you live? — In Kigali.", "explanationEn": "du → wohnst: the ending for du is -st." },
+        { "kind": "fill", "text": "Woher ___ Sie, Herr Weber?", "answer": "kommen", "options": ["kommen", "kommst", "komme"], "en": "Where are you from, Mr Weber?", "explanationEn": "Sie → kommen: with Sie the verb ends in -en." },
+        { "kind": "order", "answer": "Jetzt wohne ich in Köln.", "en": "Now I live in Cologne." },
+        { "kind": "order", "answer": "Woher kommen Sie?", "en": "Where are you from? (polite)" },
+        { "kind": "order", "answer": "Heute lerne ich Deutsch.", "en": "Today I am learning German." },
+        { "kind": "choose", "promptEn": "Which question asks for someone’s name?", "options": ["Wie heißt du?", "Woher kommst du?", "Wo wohnst du?"], "answer": "Wie heißt du?" },
+        { "kind": "fill", "text": "Mein Name ___ Keza.", "answer": "ist", "options": ["ist", "bin", "heißt"], "en": "My name is Keza.", "explanationEn": "Mein Name works like er/sie (he/she), so the verb is ist." }
+      ]
+    },
+    {
+      "key": "listen",
+      "title": "Hören & Sprechen",
+      "titleEn": "Listening & speaking",
+      "passage": "dialogue",
+      "items": [
+        { "kind": "truefalse", "statement": "Amina kommt aus Ruanda.", "statementEn": "Amina comes from Rwanda.", "answer": true },
+        { "kind": "truefalse", "statement": "Tom wohnt in Österreich.", "statementEn": "Tom lives in Austria.", "answer": false, "explanationEn": "Tom comes from Austria, but now he lives in Cologne (Köln)." },
+        { "kind": "truefalse", "statement": "Tom buchstabiert seinen Namen.", "statementEn": "Tom spells his name.", "answer": true },
+        { "kind": "listen", "mode": "choose", "text": "Woher kommen Sie?", "options": ["Woher kommen Sie?", "Wo wohnen Sie?", "Wie heißen Sie?"], "en": "Where are you from? (polite)" },
+        { "kind": "listen", "mode": "type", "text": "Mein Name ist Tom.", "en": "My name is Tom." },
+        { "kind": "listen", "mode": "choose", "text": "Ich wohne in Musanze.", "options": ["Ich wohne in Musanze.", "Ich komme aus Musanze.", "Ich bin in Musanze."], "en": "I live in Musanze." },
+        { "kind": "listen", "mode": "type", "text": "Guten Tag!", "en": "Hello! / Good day!" },
+        { "kind": "speak", "text": "Hallo! Ich heiße Amina.", "en": "Hi! My name is Amina." },
+        { "kind": "speak", "text": "Guten Tag! Wie geht es Ihnen?", "en": "Hello! How are you?" },
+        { "kind": "speak", "text": "Ich komme aus Ruanda und wohne in Kigali.", "en": "I come from Rwanda and live in Kigali." },
+        { "kind": "listen", "mode": "type", "text": "Auf Wiedersehen!", "en": "Goodbye!" }
+      ]
+    },
+    {
+      "key": "read",
+      "title": "Lesen",
+      "titleEn": "Reading",
+      "passage": "reading",
+      "items": [
+        { "kind": "truefalse", "statement": "Keza kommt aus Ruanda.", "statementEn": "Keza comes from Rwanda.", "answer": true },
+        { "kind": "truefalse", "statement": "Keza wohnt in Köln.", "statementEn": "Keza lives in Cologne.", "answer": false, "explanationEn": "Keza lives in Kigali." },
+        { "kind": "choose", "promptEn": "How many languages does Keza speak?", "options": ["zwei", "drei", "vier"], "answer": "drei" },
+        { "kind": "truefalse", "statement": "Keza lernt jetzt Deutsch.", "statementEn": "Keza is learning German now.", "answer": true },
+        { "kind": "choose", "promptEn": "What is the name of Keza’s German teacher?", "options": ["Herr Weber", "Tom", "Herr Mugisha"], "answer": "Herr Weber" },
+        { "kind": "choose", "promptEn": "Which languages does Keza speak?", "options": ["Kinyarwanda, Englisch und Französisch", "Kinyarwanda, Deutsch und Englisch", "Englisch und Französisch"], "answer": "Kinyarwanda, Englisch und Französisch" },
+        { "kind": "truefalse", "statement": "Herr Weber kommt aus Berlin.", "statementEn": "Mr Weber comes from Berlin.", "answer": true }
+      ]
+    },
+    {
+      "key": "translate",
+      "title": "Übersetzen",
+      "titleEn": "Translate",
+      "items": [
+        { "kind": "translate", "from": "de", "text": "Ich heiße Amina.", "answer": "My name is Amina.", "accepted": ["I am called Amina.", "I am Amina."] },
+        { "kind": "translate", "from": "de", "text": "Woher kommst du?", "answer": "Where are you from?", "accepted": ["Where do you come from?"] },
+        { "kind": "translate", "from": "de", "text": "Ich wohne in Kigali.", "answer": "I live in Kigali." },
+        { "kind": "translate", "from": "de", "text": "Wie geht es Ihnen?", "answer": "How are you?" },
+        { "kind": "translate", "from": "de", "text": "Ich spreche Englisch und Französisch.", "answer": "I speak English and French." },
+        { "kind": "translate", "from": "en", "text": "My name is Tom.", "answer": "Ich heiße Tom.", "accepted": ["Mein Name ist Tom.", "Ich bin Tom."] },
+        { "kind": "translate", "from": "en", "text": "I come from Rwanda.", "answer": "Ich komme aus Ruanda." },
+        { "kind": "translate", "from": "en", "text": "Where do you live?", "answer": "Wo wohnst du?", "accepted": ["Wo wohnen Sie?"] },
+        { "kind": "translate", "from": "en", "text": "Goodbye and see you tomorrow!", "answer": "Auf Wiedersehen und bis morgen!", "accepted": ["Tschüss und bis morgen!"] },
+        { "kind": "translate", "from": "en", "text": "Now I am learning German.", "answer": "Jetzt lerne ich Deutsch.", "accepted": ["Ich lerne jetzt Deutsch."] }
+      ]
+    }
+  ],
+  "writing": {
+    "task": "Stellen Sie sich kurz vor: Name, Land, Stadt, Sprachen.",
+    "taskEn": "Introduce yourself briefly: your name, country, city and languages.",
+    "wordRange": "20–30 Wörter",
+    "checklist": [
+      { "de": "Beginnen Sie mit einer Begrüßung.", "en": "Start with a greeting." },
+      { "de": "Schreiben Sie vier Sätze mit dem Verb auf Position 2.", "en": "Write four sentences with the verb in position 2." },
+      { "de": "Stellen Sie am Ende eine Frage.", "en": "Ask a question at the end." }
+    ],
+    "modelAnswer": "Hallo! Ich heiße Eric Habimana. Ich komme aus Ruanda und wohne in Huye. Ich spreche Kinyarwanda, Englisch und ein bisschen Französisch. Jetzt lerne ich Deutsch. Und du? Woher kommst du?",
+    "modelAnswerEn": "Hi! My name is Eric Habimana. I come from Rwanda and live in Huye. I speak Kinyarwanda, English and a little French. Now I am learning German. And you? Where are you from?"
+  },
+  "speaking": {
+    "task": "Stellen Sie sich vor. Sprechen Sie 30 bis 60 Sekunden.",
+    "taskEn": "Introduce yourself. Speak for 30 to 60 seconds.",
+    "prompts": [
+      { "de": "Name: Wie heißen Sie?", "en": "Name: What is your name?" },
+      { "de": "Land: Woher kommen Sie?", "en": "Country: Where are you from?" },
+      { "de": "Wohnort: Wo wohnen Sie?", "en": "Home: Where do you live?" },
+      { "de": "Sprachen: Welche Sprachen sprechen Sie?", "en": "Languages: Which languages do you speak?" }
+    ],
+    "modelAnswer": "Guten Tag! Mein Name ist Aline Uwase. Ich komme aus Ruanda. Ich wohne in Kigali. Ich spreche Kinyarwanda, Englisch und Französisch. Jetzt lerne ich Deutsch.",
+    "modelAnswerEn": "Hello! My name is Aline Uwase. I come from Rwanda. I live in Kigali. I speak Kinyarwanda, English and French. Now I am learning German."
+  }
+}
