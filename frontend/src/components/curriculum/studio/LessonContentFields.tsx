@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { FiChevronDown,FiLayout,FiMusic,FiVideo } from 'react-icons/fi';
+import { FiChevronDown,FiInfo,FiLayout,FiMusic,FiVideo } from 'react-icons/fi';
 import { StudioNotesEditor } from './StudioNotesEditor';
 import type { ChangeLesson,LessonDraft } from './lesson-draft';
 import { lessonStructure } from './lesson-draft';
 
-export function LessonContentFields({ draft, change }: { draft: LessonDraft; change: ChangeLesson }) {
+/** `interactive`: a course v2 lesson — students see its structured version, not these notes. */
+export function LessonContentFields({ draft, change, interactive = false }: { draft: LessonDraft; change: ChangeLesson; interactive?: boolean }) {
   const [summary, setSummary] = useState(!!draft.description);
   return <div className="space-y-6">
     <label className="block text-xs font-medium text-muted">LESSON TITLE
@@ -15,6 +16,8 @@ export function LessonContentFields({ draft, change }: { draft: LessonDraft; cha
     <div className="studio-notes">
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2"><h3 className="text-sm font-semibold">Lesson notes</h3>
         {!draft.body.replace(/<[^>]*>/g, '').trim() ? <button type="button" className="btn btn-sm btn-ghost" onClick={() => change('body', lessonStructure)}><FiLayout aria-hidden/>Use a starter</button> : null}</div>
+      {interactive ? <p className="mb-3 flex gap-2 rounded-box bg-brand-tint p-3 text-xs leading-relaxed"><FiInfo aria-hidden className="mt-0.5 shrink-0 text-primary"/>
+        <span>This lesson uses the interactive course format (audio, English help, practice sessions). Students see that version; the notes below are the printable copy, so changes here do not reach students. Ask the course team to update the interactive lesson.</span></p> : null}
       <StudioNotesEditor value={draft.body} onChange={html => change('body', html)}/>
     </div>
     <details className="rounded-box bg-base-200 p-4" open={draft.contentType === 'VIDEO' || draft.contentType === 'AUDIO' || undefined}>
