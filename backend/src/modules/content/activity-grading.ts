@@ -2,6 +2,7 @@ import { gradeMultipleSelect,gradeQuestionSet,gradeSingleChoice,gradeTrueFalse }
 import { gradeBlanks,gradeMatching,gradeOrdering } from "./activity-grading-text.js";
 import type { GradeResult } from "./activity-grading-utils.js";
 import { COMPLETED,MANUAL } from "./activity-grading-utils.js";
+import { gradePractice } from "./practice-grading.js";
 import { gradeStructured } from "./structured-grading.js";
 
 export type { GradeResult } from "./activity-grading-utils.js";
@@ -14,6 +15,7 @@ export const COMPLETION_TYPES = new Set(["VOCABULARY", "FLASHCARD"]);
  * for open tasks and whenever the config carries no usable answer key.
  */
 export function gradeActivity(type: string, response: unknown, config: Record<string, unknown>): GradeResult {
+  if (type === "PRACTICE") return gradePractice(response, config);
   // Structured self-study (course imports) keeps its own per-item grader.
   if (config.practiceMode === true && Array.isArray(config.items)) return gradeStructured(response, config.items);
   switch (type) {
