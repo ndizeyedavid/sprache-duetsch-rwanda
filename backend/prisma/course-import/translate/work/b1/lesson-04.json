@@ -1,0 +1,749 @@
+{
+ "level": "B1",
+ "lesson": 4,
+ "title": "Kundenservice — Obwohl ich dreimal angerufen habe, …",
+ "lines": [
+  {
+   "de": "Sich beschweren und reklamieren — höflich, aber bestimmt.",
+   "en": "Complaining about poor service and faulty goods — politely but firmly."
+  },
+  {
+   "de": "eine Reklamation mündlich und schriftlich formulieren",
+   "en": "word a complaint about goods orally and in writing"
+  },
+  {
+   "de": "unerwartete Gegensätze mit obwohl und trotzdem ausdrücken",
+   "en": "express unexpected contrasts with obwohl (although) and trotzdem (nevertheless)"
+  },
+  {
+   "de": "auf eine Beschwerde angemessen reagieren",
+   "en": "respond appropriately to a complaint"
+  },
+  {
+   "de": "Grammatik: obwohl und trotzdem",
+   "en": "Grammar: obwohl (although) and trotzdem (nevertheless)"
+  },
+  {
+   "de": "Beide drücken einen unerwarteten Gegensatz aus. Der Unterschied liegt im Satzbau: obwohl leitet einen Nebensatz ein (Verb am Ende), trotzdem steht in einem Hauptsatz auf Position 1 (Verb auf Position 2).",
+   "en": "Both express an unexpected contrast. The difference is in the sentence structure: obwohl introduces a subordinate clause (verb at the end); trotzdem goes in position 1 of a main clause (verb in position 2)."
+  },
+  {
+   "de": "obwohl",
+   "en": "although"
+  },
+  {
+   "de": "Ich habe keine Antwort bekommen, obwohl ich dreimal geschrieben habe.",
+   "en": "I didn't get an answer, although I wrote three times."
+  },
+  {
+   "de": "obwohl (vorangestellt)",
+   "en": "although (clause placed first)"
+  },
+  {
+   "de": "Nebensatz zuerst → Verb-Verb-Kontakt",
+   "en": "Subordinate clause first → verb-verb contact"
+  },
+  {
+   "de": "Obwohl ich dreimal geschrieben habe, habe ich keine Antwort bekommen.",
+   "en": "Although I wrote three times, I didn't get an answer."
+  },
+  {
+   "de": "trotzdem",
+   "en": "nevertheless, even so"
+  },
+  {
+   "de": "Ich habe dreimal geschrieben. Trotzdem habe ich keine Antwort bekommen.",
+   "en": "I wrote three times. Nevertheless, I didn't get an answer."
+  },
+  {
+   "de": "Alternativen",
+   "en": "Alternatives"
+  },
+  {
+   "de": "dennoch, allerdings, aber",
+   "en": "nevertheless, however, but"
+  },
+  {
+   "de": "Obwohl das Gerät neu ist, funktioniert es nicht richtig.Nebensatz vorn → Hauptsatz beginnt mit dem Verb",
+   "en": "Although the device is new, it doesn't work properly. (subordinate clause first → the main clause starts with the verb)"
+  },
+  {
+   "de": "Das Gerät ist neu. Trotzdem funktioniert es nicht richtig.trotzdem = Position 1, Verb auf Position 2",
+   "en": "The device is new. Even so, it doesn't work properly. (trotzdem = position 1, verb in position 2)"
+  },
+  {
+   "de": "Ich habe die Rechnung bezahlt, obwohl die Lieferung unvollständig war.Nebensatz hinten",
+   "en": "I paid the bill, although the delivery was incomplete. (subordinate clause at the end)"
+  },
+  {
+   "de": "Tipp: Nicht verwechseln: trotz ist eine Präposition mit Genitiv (trotz des Regens), trotzdem ist ein Adverb im Hauptsatz.",
+   "en": "Tip: Don't mix them up: trotz (despite) is a preposition with the genitive (trotz des Regens = despite the rain); trotzdem (nevertheless) is an adverb in the main clause."
+  },
+  {
+   "de": "die Reklamation, -en — EN: complaint (about goods) · FR: la réclamationIhre Reklamation wird bearbeitet.",
+   "en": "Example: Your complaint is being processed."
+  },
+  {
+   "de": "sich beschweren über (+ Akk.) — EN: to complain about · FR: se plaindre deIch möchte mich über die Lieferzeit beschweren.",
+   "en": "Example: I would like to complain about the delivery time."
+  },
+  {
+   "de": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "Example: The device has several defects."
+  },
+  {
+   "de": "umtauschen — EN: to exchange · FR: échangerKann ich die Schuhe umtauschen?",
+   "en": "Example: Can I exchange the shoes?"
+  },
+  {
+   "de": "erstatten — EN: to refund · FR: rembourserWir erstatten Ihnen den vollen Betrag.",
+   "en": "Example: We will refund you the full amount."
+  },
+  {
+   "de": "die Garantie, -n — EN: warranty · FR: la garantieDie Garantie gilt zwei Jahre.",
+   "en": "Example: The warranty is valid for two years."
+  },
+  {
+   "de": "die Lieferung, -en — EN: delivery · FR: la livraisonDie Lieferung kam drei Wochen zu spät.",
+   "en": "Example: The delivery came three weeks late."
+  },
+  {
+   "de": "bearbeiten — EN: to process, deal with · FR: traiterWir bearbeiten Ihren Fall sofort.",
+   "en": "Example: We will deal with your case immediately."
+  },
+  {
+   "de": "der Ansprechpartner, - — EN: contact person · FR: l'interlocuteurWer ist mein Ansprechpartner?",
+   "en": "Example: Who is my contact person?"
+  },
+  {
+   "de": "enttäuscht sein von — EN: to be disappointed by · FR: être déçu deIch bin von Ihrem Service sehr enttäuscht.",
+   "en": "Example: I am very disappointed with your service."
+  },
+  {
+   "de": "die Frist, -en — EN: deadline · FR: le délaiIch setze Ihnen eine Frist von 14 Tagen.",
+   "en": "Example: I am giving you a deadline of 14 days."
+  },
+  {
+   "de": "ärgerlich — EN: annoying · FR: agaçantDas ist wirklich sehr ärgerlich.",
+   "en": "Example: That is really very annoying."
+  },
+  {
+   "de": "Problem schildern",
+   "en": "describing the problem"
+  },
+  {
+   "de": "Ich wende mich an Sie, weil …",
+   "en": "I am contacting you because …"
+  },
+  {
+   "de": "Leider muss ich Ihnen mitteilen, dass …",
+   "en": "Unfortunately I must inform you that …"
+  },
+  {
+   "de": "Die Ware kam beschädigt bei mir an.",
+   "en": "The goods arrived damaged."
+  },
+  {
+   "de": "Forderung stellen",
+   "en": "making a demand"
+  },
+  {
+   "de": "Ich fordere Sie auf, … bis zum … zu …",
+   "en": "I request that you … by …"
+  },
+  {
+   "de": "Bitte bestätigen Sie mir schriftlich, dass …",
+   "en": "Please confirm to me in writing that …"
+  },
+  {
+   "de": "Ich erwarte eine Rückerstattung des Kaufpreises.",
+   "en": "I expect a refund of the purchase price."
+  },
+  {
+   "de": "auf eine Beschwerde reagieren",
+   "en": "responding to a complaint"
+  },
+  {
+   "de": "Das tut mir außerordentlich leid.",
+   "en": "I am extremely sorry about that."
+  },
+  {
+   "de": "Ich kümmere mich persönlich darum.",
+   "en": "I will take care of it personally."
+  },
+  {
+   "de": "Als Entschuldigung bieten wir Ihnen … an.",
+   "en": "By way of apology, we are offering you …"
+  },
+  {
+   "de": "Ihre Reklamation wird bearbeitet.",
+   "en": "Your complaint is being processed."
+  },
+  {
+   "de": "Ich möchte mich über die Lieferzeit beschweren.",
+   "en": "I would like to complain about the delivery time."
+  },
+  {
+   "de": "Das Gerät weist mehrere Mängel auf.",
+   "en": "The device has several defects."
+  },
+  {
+   "de": "Kann ich die Schuhe umtauschen?",
+   "en": "Can I exchange the shoes?"
+  },
+  {
+   "de": "Wir erstatten Ihnen den vollen Betrag.",
+   "en": "We will refund you the full amount."
+  },
+  {
+   "de": "Die Garantie gilt zwei Jahre.",
+   "en": "The warranty is valid for two years."
+  },
+  {
+   "de": "Die Lieferung kam drei Wochen zu spät.",
+   "en": "The delivery came three weeks late."
+  },
+  {
+   "de": "Wir bearbeiten Ihren Fall sofort.",
+   "en": "We will deal with your case immediately."
+  },
+  {
+   "de": "Wer ist mein Ansprechpartner?",
+   "en": "Who is my contact person?"
+  },
+  {
+   "de": "Ich bin von Ihrem Service sehr enttäuscht.",
+   "en": "I am very disappointed with your service."
+  },
+  {
+   "de": "Ich setze Ihnen eine Frist von 14 Tagen.",
+   "en": "I am giving you a deadline of 14 days."
+  },
+  {
+   "de": "Das ist wirklich sehr ärgerlich.",
+   "en": "That is really very annoying."
+  },
+  {
+   "de": "___ ich mehrmals angerufen habe, hat sich niemand gemeldet.",
+   "en": "___ I called several times, nobody got back to me."
+  },
+  {
+   "de": "Die Rechnung war bezahlt. ___ bekam ich eine Mahnung.",
+   "en": "The bill had been paid. ___ I received a payment reminder."
+  },
+  {
+   "de": "Welcher Satz ist grammatisch korrekt?",
+   "en": "Which sentence is grammatically correct?"
+  },
+  {
+   "de": "Ich habe das Paket nicht erhalten, ___ die Firma die Lieferung bestätigt hat.",
+   "en": "I have not received the parcel, ___ the company confirmed the delivery."
+  },
+  {
+   "de": "___ des schlechten Wetters fand das Fest statt.",
+   "en": "___ the bad weather, the party took place."
+  },
+  {
+   "de": "Am Satzanfang mit folgendem Nebensatz (Verb am Ende) steht obwohl.",
+   "en": "At the start of the sentence, followed by a subordinate clause (verb at the end), you use obwohl."
+  },
+  {
+   "de": "Zwei Hauptsätze → trotzdem auf Position 1, Verb auf Position 2.",
+   "en": "Two main clauses → trotzdem in position 1, verb in position 2."
+  },
+  {
+   "de": "Nach einem vorangestellten Nebensatz folgt sofort das konjugierte Verb des Hauptsatzes.",
+   "en": "After a subordinate clause placed first, the conjugated verb of the main clause follows immediately."
+  },
+  {
+   "de": "Nebensatz mit Verb am Ende → obwohl.",
+   "en": "Subordinate clause with the verb at the end → obwohl."
+  },
+  {
+   "de": "Vor einem Nomen im Genitiv steht die Präposition trotz.",
+   "en": "Before a noun in the genitive, you use the preposition trotz."
+  }
+ ],
+ "forms": [
+  {
+   "form": "unerwartete",
+   "context": "unerwartete Gegensätze mit obwohl und trotzdem ausdrücken",
+   "en": "unexpected",
+   "lemma": "unerwartet"
+  },
+  {
+   "form": "Gegensätze",
+   "context": "unerwartete Gegensätze mit obwohl und trotzdem ausdrücken",
+   "en": "contrasts, opposites",
+   "lemma": "der Gegensatz"
+  },
+  {
+   "form": "obwohl",
+   "context": "unerwartete Gegensätze mit obwohl und trotzdem ausdrücken",
+   "en": "although",
+   "lemma": ""
+  },
+  {
+   "form": "Beschwerde",
+   "context": "auf eine Beschwerde angemessen reagieren",
+   "en": "complaint",
+   "lemma": "die Beschwerde"
+  },
+  {
+   "form": "angemessen",
+   "context": "auf eine Beschwerde angemessen reagieren",
+   "en": "appropriately; appropriate",
+   "lemma": ""
+  },
+  {
+   "form": "drücken",
+   "context": "Beide drücken einen unerwarteten Gegensatz aus. Der Unterschied liegt im Satzbau: obwohl leitet einen Nebensatz ein (Verb am Ende), trotzdem steht in einem Hauptsatz auf Position 1 (Verb auf Position 2).",
+   "en": "express (with aus); press",
+   "lemma": "ausdrücken"
+  },
+  {
+   "form": "unerwarteten",
+   "context": "Beide drücken einen unerwarteten Gegensatz aus. Der Unterschied liegt im Satzbau: obwohl leitet einen Nebensatz ein (Verb am Ende), trotzdem steht in einem Hauptsatz auf Position 1 (Verb auf Position 2).",
+   "en": "unexpected",
+   "lemma": "unerwartet"
+  },
+  {
+   "form": "Gegensatz",
+   "context": "Beide drücken einen unerwarteten Gegensatz aus. Der Unterschied liegt im Satzbau: obwohl leitet einen Nebensatz ein (Verb am Ende), trotzdem steht in einem Hauptsatz auf Position 1 (Verb auf Position 2).",
+   "en": "contrast",
+   "lemma": "der Gegensatz"
+  },
+  {
+   "form": "vorangestellt",
+   "context": "obwohl (vorangestellt)",
+   "en": "placed first",
+   "lemma": "voranstellen"
+  },
+  {
+   "form": "Verb-Verb-Kontakt",
+   "context": "Nebensatz zuerst → Verb-Verb-Kontakt",
+   "en": "verb-verb contact",
+   "lemma": "der Verb-Verb-Kontakt"
+  },
+  {
+   "form": "Obwohl",
+   "context": "Obwohl ich dreimal geschrieben habe, habe ich keine Antwort bekommen.",
+   "en": "although",
+   "lemma": ""
+  },
+  {
+   "form": "Alternativen",
+   "context": "Alternativen",
+   "en": "alternatives",
+   "lemma": "die Alternative"
+  },
+  {
+   "form": "dennoch",
+   "context": "dennoch, allerdings, aber",
+   "en": "nevertheless, still",
+   "lemma": ""
+  },
+  {
+   "form": "bezahlt",
+   "context": "Ich habe die Rechnung bezahlt, obwohl die Lieferung unvollständig war.Nebensatz hinten",
+   "en": "paid",
+   "lemma": "bezahlen"
+  },
+  {
+   "form": "Lieferung",
+   "context": "Ich habe die Rechnung bezahlt, obwohl die Lieferung unvollständig war.Nebensatz hinten",
+   "en": "delivery",
+   "lemma": "die Lieferung"
+  },
+  {
+   "form": "unvollständig",
+   "context": "Ich habe die Rechnung bezahlt, obwohl die Lieferung unvollständig war.Nebensatz hinten",
+   "en": "incomplete",
+   "lemma": ""
+  },
+  {
+   "form": "trotz",
+   "context": "Tipp: Nicht verwechseln: trotz ist eine Präposition mit Genitiv (trotz des Regens), trotzdem ist ein Adverb im Hauptsatz.",
+   "en": "despite, in spite of",
+   "lemma": ""
+  },
+  {
+   "form": "Regens",
+   "context": "Tipp: Nicht verwechseln: trotz ist eine Präposition mit Genitiv (trotz des Regens), trotzdem ist ein Adverb im Hauptsatz.",
+   "en": "rain",
+   "lemma": "der Regen"
+  },
+  {
+   "form": "Adverb",
+   "context": "Tipp: Nicht verwechseln: trotz ist eine Präposition mit Genitiv (trotz des Regens), trotzdem ist ein Adverb im Hauptsatz.",
+   "en": "adverb",
+   "lemma": "das Adverb"
+  },
+  {
+   "form": "complaint",
+   "context": "die Reklamation, -en — EN: complaint (about goods) · FR: la réclamationIhre Reklamation wird bearbeitet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "goods",
+   "context": "die Reklamation, -en — EN: complaint (about goods) · FR: la réclamationIhre Reklamation wird bearbeitet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réclamationIhre",
+   "context": "die Reklamation, -en — EN: complaint (about goods) · FR: la réclamationIhre Reklamation wird bearbeitet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bearbeitet",
+   "context": "die Reklamation, -en — EN: complaint (about goods) · FR: la réclamationIhre Reklamation wird bearbeitet.",
+   "en": "processed, dealt with",
+   "lemma": "bearbeiten"
+  },
+  {
+   "form": "plaindre",
+   "context": "sich beschweren über (+ Akk.) — EN: to complain about · FR: se plaindre deIch möchte mich über die Lieferzeit beschweren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Lieferzeit",
+   "context": "sich beschweren über (+ Akk.) — EN: to complain about · FR: se plaindre deIch möchte mich über die Lieferzeit beschweren.",
+   "en": "delivery time",
+   "lemma": "die Lieferzeit"
+  },
+  {
+   "form": "Mangel",
+   "context": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "defect, fault; lack",
+   "lemma": "der Mangel"
+  },
+  {
+   "form": "defect",
+   "context": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fault",
+   "context": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "défautDas",
+   "context": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "weist",
+   "context": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "has, shows (with auf)",
+   "lemma": "aufweisen"
+  },
+  {
+   "form": "mehrere",
+   "context": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "several",
+   "lemma": ""
+  },
+  {
+   "form": "Mängel",
+   "context": "der Mangel, ¨- — EN: defect, fault · FR: le défautDas Gerät weist mehrere Mängel auf.",
+   "en": "defects, faults",
+   "lemma": "der Mangel"
+  },
+  {
+   "form": "erstatten",
+   "context": "erstatten — EN: to refund · FR: rembourserWir erstatten Ihnen den vollen Betrag.",
+   "en": "refund, reimburse",
+   "lemma": ""
+  },
+  {
+   "form": "refund",
+   "context": "erstatten — EN: to refund · FR: rembourserWir erstatten Ihnen den vollen Betrag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rembourserWir",
+   "context": "erstatten — EN: to refund · FR: rembourserWir erstatten Ihnen den vollen Betrag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vollen",
+   "context": "erstatten — EN: to refund · FR: rembourserWir erstatten Ihnen den vollen Betrag.",
+   "en": "full",
+   "lemma": "voll"
+  },
+  {
+   "form": "Betrag",
+   "context": "erstatten — EN: to refund · FR: rembourserWir erstatten Ihnen den vollen Betrag.",
+   "en": "amount (of money)",
+   "lemma": "der Betrag"
+  },
+  {
+   "form": "warranty",
+   "context": "die Garantie, -n — EN: warranty · FR: la garantieDie Garantie gilt zwei Jahre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "garantieDie",
+   "context": "die Garantie, -n — EN: warranty · FR: la garantieDie Garantie gilt zwei Jahre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "delivery",
+   "context": "die Lieferung, -en — EN: delivery · FR: la livraisonDie Lieferung kam drei Wochen zu spät.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "livraisonDie",
+   "context": "die Lieferung, -en — EN: delivery · FR: la livraisonDie Lieferung kam drei Wochen zu spät.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bearbeiten",
+   "context": "bearbeiten — EN: to process, deal with · FR: traiterWir bearbeiten Ihren Fall sofort.",
+   "en": "to process, deal with",
+   "lemma": ""
+  },
+  {
+   "form": "process",
+   "context": "bearbeiten — EN: to process, deal with · FR: traiterWir bearbeiten Ihren Fall sofort.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deal",
+   "context": "bearbeiten — EN: to process, deal with · FR: traiterWir bearbeiten Ihren Fall sofort.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "traiterWir",
+   "context": "bearbeiten — EN: to process, deal with · FR: traiterWir bearbeiten Ihren Fall sofort.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Ansprechpartner",
+   "context": "der Ansprechpartner, - — EN: contact person · FR: l'interlocuteurWer ist mein Ansprechpartner?",
+   "en": "contact person",
+   "lemma": "der Ansprechpartner"
+  },
+  {
+   "form": "contact",
+   "context": "der Ansprechpartner, - — EN: contact person · FR: l'interlocuteurWer ist mein Ansprechpartner?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'interlocuteurWer",
+   "context": "der Ansprechpartner, - — EN: contact person · FR: l'interlocuteurWer ist mein Ansprechpartner?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déçu",
+   "context": "enttäuscht sein von — EN: to be disappointed by · FR: être déçu deIch bin von Ihrem Service sehr enttäuscht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Frist",
+   "context": "die Frist, -en — EN: deadline · FR: le délaiIch setze Ihnen eine Frist von 14 Tagen.",
+   "en": "deadline",
+   "lemma": "die Frist"
+  },
+  {
+   "form": "deadline",
+   "context": "die Frist, -en — EN: deadline · FR: le délaiIch setze Ihnen eine Frist von 14 Tagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "délaiIch",
+   "context": "die Frist, -en — EN: deadline · FR: le délaiIch setze Ihnen eine Frist von 14 Tagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "setze",
+   "context": "die Frist, -en — EN: deadline · FR: le délaiIch setze Ihnen eine Frist von 14 Tagen.",
+   "en": "set; put",
+   "lemma": "setzen"
+  },
+  {
+   "form": "ärgerlich",
+   "context": "ärgerlich — EN: annoying · FR: agaçantDas ist wirklich sehr ärgerlich.",
+   "en": "annoying; annoyed",
+   "lemma": ""
+  },
+  {
+   "form": "annoying",
+   "context": "ärgerlich — EN: annoying · FR: agaçantDas ist wirklich sehr ärgerlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "agaçantDas",
+   "context": "ärgerlich — EN: annoying · FR: agaçantDas ist wirklich sehr ärgerlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "schildern",
+   "context": "Problem schildern",
+   "en": "to describe",
+   "lemma": ""
+  },
+  {
+   "form": "wende",
+   "context": "Ich wende mich an Sie, weil …",
+   "en": "turn (to), contact",
+   "lemma": "sich wenden"
+  },
+  {
+   "form": "mitteilen",
+   "context": "Leider muss ich Ihnen mitteilen, dass …",
+   "en": "to inform, tell",
+   "lemma": ""
+  },
+  {
+   "form": "Ware",
+   "context": "Die Ware kam beschädigt bei mir an.",
+   "en": "goods",
+   "lemma": "die Ware"
+  },
+  {
+   "form": "beschädigt",
+   "context": "Die Ware kam beschädigt bei mir an.",
+   "en": "damaged",
+   "lemma": "beschädigen"
+  },
+  {
+   "form": "Forderung",
+   "context": "Forderung stellen",
+   "en": "demand, claim",
+   "lemma": "die Forderung"
+  },
+  {
+   "form": "fordere",
+   "context": "Ich fordere Sie auf, … bis zum … zu …",
+   "en": "request, call on (with auf)",
+   "lemma": "auffordern"
+  },
+  {
+   "form": "bestätigen",
+   "context": "Bitte bestätigen Sie mir schriftlich, dass …",
+   "en": "confirm",
+   "lemma": ""
+  },
+  {
+   "form": "erwarte",
+   "context": "Ich erwarte eine Rückerstattung des Kaufpreises.",
+   "en": "expect",
+   "lemma": "erwarten"
+  },
+  {
+   "form": "Rückerstattung",
+   "context": "Ich erwarte eine Rückerstattung des Kaufpreises.",
+   "en": "refund",
+   "lemma": "die Rückerstattung"
+  },
+  {
+   "form": "Kaufpreises",
+   "context": "Ich erwarte eine Rückerstattung des Kaufpreises.",
+   "en": "purchase price",
+   "lemma": "der Kaufpreis"
+  },
+  {
+   "form": "außerordentlich",
+   "context": "Das tut mir außerordentlich leid.",
+   "en": "extremely; extraordinary",
+   "lemma": ""
+  },
+  {
+   "form": "kümmere",
+   "context": "Ich kümmere mich persönlich darum.",
+   "en": "take care (of)",
+   "lemma": "sich kümmern"
+  },
+  {
+   "form": "persönlich",
+   "context": "Ich kümmere mich persönlich darum.",
+   "en": "personally; personal",
+   "lemma": ""
+  },
+  {
+   "form": "bieten",
+   "context": "Als Entschuldigung bieten wir Ihnen … an.",
+   "en": "offer (with an)",
+   "lemma": "anbieten"
+  },
+  {
+   "form": "mehrmals",
+   "context": "___ ich mehrmals angerufen habe, hat sich niemand gemeldet.",
+   "en": "several times",
+   "lemma": ""
+  },
+  {
+   "form": "niemand",
+   "context": "___ ich mehrmals angerufen habe, hat sich niemand gemeldet.",
+   "en": "nobody, no one",
+   "lemma": ""
+  },
+  {
+   "form": "gemeldet",
+   "context": "___ ich mehrmals angerufen habe, hat sich niemand gemeldet.",
+   "en": "got in touch",
+   "lemma": "sich melden"
+  },
+  {
+   "form": "bekam",
+   "context": "Die Rechnung war bezahlt. ___ bekam ich eine Mahnung.",
+   "en": "got, received",
+   "lemma": "bekommen"
+  },
+  {
+   "form": "Mahnung",
+   "context": "Die Rechnung war bezahlt. ___ bekam ich eine Mahnung.",
+   "en": "payment reminder",
+   "lemma": "die Mahnung"
+  },
+  {
+   "form": "grammatisch",
+   "context": "Welcher Satz ist grammatisch korrekt?",
+   "en": "grammatically",
+   "lemma": ""
+  },
+  {
+   "form": "bestätigt",
+   "context": "Ich habe das Paket nicht erhalten, ___ die Firma die Lieferung bestätigt hat.",
+   "en": "confirmed",
+   "lemma": "bestätigen"
+  },
+  {
+   "form": "schlechten",
+   "context": "___ des schlechten Wetters fand das Fest statt.",
+   "en": "bad",
+   "lemma": "schlecht"
+  },
+  {
+   "form": "Wetters",
+   "context": "___ des schlechten Wetters fand das Fest statt.",
+   "en": "weather",
+   "lemma": "das Wetter"
+  }
+ ]
+}
