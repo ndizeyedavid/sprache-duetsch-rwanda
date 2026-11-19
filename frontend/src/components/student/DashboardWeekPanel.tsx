@@ -2,7 +2,9 @@ import { addDays,addWeeks,format,isSameDay,startOfWeek } from 'date-fns';
 import type { CSSProperties } from 'react';
 import { useState } from 'react';
 import { FiChevronLeft,FiChevronRight } from 'react-icons/fi';
+import { useApi } from '../../hooks/useApi';
 import type { MyCourse } from '../../lib/services';
+import { getMyPracticeProgress } from '../../lib/services';
 import { CourseProgressBars } from './CourseProgressBars';
 import { learningStreak } from './progress-stats';
 import { ProgressMotivation } from './ProgressMotivation';
@@ -19,7 +21,9 @@ export function DashboardWeekPanel({ courses }: { courses: MyCourse[] }) {
   const weekly = days.reduce((sum, day) => sum + day.count, 0);
   const done = lessons.filter((lesson) => lesson.progressStatus === 'COMPLETED').length;
   const percentage = lessons.length ? Math.round(done / lessons.length * 100) : 0;
-  const streak = learningStreak(lessons.flatMap((lesson) => lesson.completedAt ? [new Date(lesson.completedAt)] : []));
+  const progress = useApi('my-progress', getMyPracticeProgress);
+  // Practice days (server) and lesson completions both keep the streak alive.
+  const streak = Math.max(progress.data?.streak ?? 0, learningStreak(lessons.flatMap((lesson) => lesson.completedAt ? [new Date(lesson.completedAt)] : [])));
   const nextCourse = courses.find((course) => !course.paymentRequired && course.stats.completedLessons < course.stats.totalLessons);
   const continuePath = nextCourse ? `/courses/${nextCourse.level.code.toLowerCase()}/learn` : '/courses';
   return (
@@ -30,7 +34,7 @@ export function DashboardWeekPanel({ courses }: { courses: MyCourse[] }) {
         <div><p className="text-3xl font-semibold">{weekly}</p><p className="mt-1 text-xs text-muted">{weekly === 1 ? 'lesson' : 'lessons'} this week</p><p className="mt-2 text-[0.625rem] text-muted">{lessons.length - done} left to explore</p></div>
       </div>
       <CourseProgressBars courses={courses} />
-      <ProgressMotivation weekly={weekly} streak={streak} left={lessons.length - done} total={lessons.length} to={continuePath} />
+      <ProgressMotivation weekly={weekly} streak={streak} left={lessons.length - done} total={lessons.length} to={continuePath} goal={progress.data ?? undefined} />
       <div className="flex items-center justify-between border-t border-base-300 pt-3">
         <button type="button" aria-label="Previous week" onClick={() => setAnchor((date) => addWeeks(date, -1))} className="btn btn-ghost btn-xs btn-circle"><FiChevronLeft aria-hidden /></button>
         <button type="button" onClick={() => setAnchor(new Date())} aria-label="Return to current week" className="btn btn-ghost btn-xs rounded-full text-[0.625rem]">{format(start, 'd MMM')} – {format(addDays(start, 6), 'd MMM')}</button>
