@@ -1,0 +1,745 @@
+{
+ "level": "A2",
+ "lesson": 6,
+ "title": "Kultur — Meine Lieblingsveranstaltung",
+ "lines": [
+  {
+   "de": "Über Veranstaltungen sprechen, sich verabreden und Zeiten angeben.",
+   "en": "Talk about events, arrange to meet and give times."
+  },
+  {
+   "de": "Textsorte: Leserbeitrag · Veranstaltungskalender",
+   "en": "Text type: Reader's post · Events calendar"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Lesen Teil 3 (Veranstaltungen zuordnen); telc A2 Lesen",
+   "en": "Exam link: Goethe A2 Reading part 3 (matching events); telc A2 Reading"
+  },
+  {
+   "de": "über Veranstaltungen und Freizeit sprechen",
+   "en": "talk about events and free time"
+  },
+  {
+   "de": "etwas vorschlagen und sich verabreden",
+   "en": "suggest something and arrange to meet"
+  },
+  {
+   "de": "Zeiträume mit von … an, von … bis, seit und über angeben",
+   "en": "give periods of time with von … an, von … bis, seit and über"
+  },
+  {
+   "de": "Grammatik: Temporale Präpositionen: Zeiträume angeben",
+   "en": "Grammar: prepositions of time (temporale Präpositionen): giving periods of time"
+  },
+  {
+   "de": "Drei Fragen, drei Gruppen. Ab wann beginnt etwas? Wie lange dauert es? Und seit wann läuft es schon? seit und von … an stehen mit dem Dativ, über mit dem Akkusativ.",
+   "en": "Three questions, three groups. From when does something start? How long does it last? And since when has it been going on? seit and von … an take the dative, über takes the accusative."
+  },
+  {
+   "de": "Ab wann?",
+   "en": "From when?"
+  },
+  {
+   "de": "von … an (+ Dativ)",
+   "en": "from … on (+ dative)"
+  },
+  {
+   "de": "Von morgen an habe ich Urlaub.",
+   "en": "From tomorrow on, I'm on holiday."
+  },
+  {
+   "de": "ab (+ Dativ)",
+   "en": "from (+ dative)"
+  },
+  {
+   "de": "Ab dem 1. Juni gibt es das Programm.",
+   "en": "From 1 June, the programme is available."
+  },
+  {
+   "de": "Wie lange? (Anfang–Ende)",
+   "en": "How long? (start–end)"
+  },
+  {
+   "de": "von … bis (+ Dativ/Akk.)",
+   "en": "from … until (+ dative/acc.)"
+  },
+  {
+   "de": "Das Fest geht vom 8. bis zum 10. Juli.",
+   "en": "The festival runs from 8 to 10 July."
+  },
+  {
+   "de": "Seit wann? (noch jetzt)",
+   "en": "Since when? (still now)"
+  },
+  {
+   "de": "seit (+ Dativ)",
+   "en": "since, for (+ dative)"
+  },
+  {
+   "de": "Ich wohne seit zwei Jahren hier.",
+   "en": "I have been living here for two years."
+  },
+  {
+   "de": "Wie lange? (Dauer)",
+   "en": "How long? (duration)"
+  },
+  {
+   "de": "über (+ Akkusativ)",
+   "en": "over (+ accusative)"
+  },
+  {
+   "de": "Das Festival dauert über eine Woche.",
+   "en": "The festival lasts over a week."
+  },
+  {
+   "de": "Wann genau?",
+   "en": "When exactly?"
+  },
+  {
+   "de": "zwischen (+ Dativ)",
+   "en": "between (+ dative)"
+  },
+  {
+   "de": "Wir treffen uns zwischen acht und neun.",
+   "en": "We'll meet between eight and nine."
+  },
+  {
+   "de": "Vom 1. September an gibt es jeden Freitag Konzerte.von … an = Beginn",
+   "en": "From 1 September on, there are concerts every Friday. von … an = start"
+  },
+  {
+   "de": "Seit einem Jahr gehe ich regelmäßig ins Theater.seit + Dativ, die Handlung dauert an",
+   "en": "I have been going to the theatre regularly for a year. seit + dative, the action is still going on"
+  },
+  {
+   "de": "Die Ausstellung läuft über drei Monate.über + Akkusativ = Dauer",
+   "en": "The exhibition runs over three months. über + accusative = duration"
+  },
+  {
+   "de": "Tipp: seit nie mit Präsens verwechseln: „Ich wohne seit 2020 hier\" — im Deutschen steht hier das Präsens, nicht das Perfekt.",
+   "en": "Tip: Don't get the tense wrong with seit: \"Ich wohne seit 2020 hier\" (I have lived here since 2020) — German uses the present tense (Präsens) here, not the present perfect (Perfekt)."
+  },
+  {
+   "de": "die Veranstaltung, -en — EN: event · FR: l'événementDie Veranstaltung beginnt um 20 Uhr.",
+   "en": "Example: The event starts at 8 p.m."
+  },
+  {
+   "de": "das Konzert, -e — EN: concert · FR: le concertDas Konzert war ausverkauft.",
+   "en": "Example: The concert was sold out."
+  },
+  {
+   "de": "die Ausstellung, -en — EN: exhibition · FR: l'expositionDie Ausstellung läuft noch bis Mai.",
+   "en": "Example: The exhibition is on until May."
+  },
+  {
+   "de": "das Festival, -s — EN: festival · FR: le festivalJeden Sommer gibt es hier ein Festival.",
+   "en": "Example: There is a festival here every summer."
+  },
+  {
+   "de": "die Karte, -n — EN: ticket · FR: le billetIch habe zwei Karten gekauft.",
+   "en": "Example: I bought two tickets."
+  },
+  {
+   "de": "die Ermäßigung, -en — EN: discount, reduction · FR: la réductionStudenten bekommen eine Ermäßigung.",
+   "en": "Example: Students get a discount."
+  },
+  {
+   "de": "stattfinden (fand statt) — EN: to take place · FR: avoir lieuDas Fest findet am Samstag statt.",
+   "en": "Example: The festival takes place on Saturday."
+  },
+  {
+   "de": "sich verabreden — EN: to arrange to meet · FR: se donner rendez-vousWollen wir uns für Freitag verabreden?",
+   "en": "Example: Shall we arrange to meet on Friday?"
+  },
+  {
+   "de": "Lust haben auf — EN: to fancy, feel like · FR: avoir envie deHast du Lust auf ein Konzert?",
+   "en": "Example: Do you fancy a concert?"
+  },
+  {
+   "de": "absagen — EN: to cancel · FR: annulerLeider muss ich absagen.",
+   "en": "Example: Unfortunately, I have to cancel."
+  },
+  {
+   "de": "der Eintritt frei — EN: free admission · FR: entrée libreFür Kinder ist der Eintritt frei.",
+   "en": "Example: Admission is free for children."
+  },
+  {
+   "de": "sich einigen — EN: to agree · FR: se mettre d'accordEinigen wir uns auf Samstag?",
+   "en": "Example: Shall we agree on Saturday?"
+  },
+  {
+   "de": "Hast du Lust, am Samstag ins Konzert zu gehen?",
+   "en": "Do you fancy going to the concert on Saturday?"
+  },
+  {
+   "de": "Wollen wir zusammen hingehen?",
+   "en": "Shall we go together?"
+  },
+  {
+   "de": "Wie wäre es mit Freitagabend?",
+   "en": "How about Friday evening?"
+  },
+  {
+   "de": "zustimmen oder ablehnen",
+   "en": "agreeing or declining"
+  },
+  {
+   "de": "Ja, gern! Das machen wir.",
+   "en": "Yes, I'd love to! Let's do that."
+  },
+  {
+   "de": "Tut mir leid, da kann ich leider nicht.",
+   "en": "Sorry, I can't make it then."
+  },
+  {
+   "de": "Freitag passt mir besser.",
+   "en": "Friday suits me better."
+  },
+  {
+   "de": "sich einigen",
+   "en": "reaching an agreement"
+  },
+  {
+   "de": "Dann sagen wir Samstag um acht.",
+   "en": "Then let's say Saturday at eight."
+  },
+  {
+   "de": "Wo treffen wir uns?",
+   "en": "Where shall we meet?"
+  },
+  {
+   "de": "Abgemacht!",
+   "en": "It's a deal!"
+  },
+  {
+   "de": "Dialog: Eine Verabredung",
+   "en": "Dialogue: Arranging to meet"
+  },
+  {
+   "de": "Sara: Vom 8. bis zum 10. Juli ist das Stadtfest. Hast du Lust?",
+   "en": "Sara: The town festival is from 8 to 10 July. Do you fancy it?"
+  },
+  {
+   "de": "Jonas: Klar! Aber am Freitag arbeite ich bis sieben.",
+   "en": "Jonas: Sure! But on Friday I work until seven."
+  },
+  {
+   "de": "Sara: Kein Problem. Wir können uns zwischen acht und neun treffen.",
+   "en": "Sara: No problem. We can meet between eight and nine."
+  },
+  {
+   "de": "Jonas: Gut. Kostet das eigentlich Eintritt?",
+   "en": "Jonas: Good. By the way, is there an entrance fee?"
+  },
+  {
+   "de": "Sara: Nein, der Eintritt ist frei. Nur die Konzerte kosten etwas.",
+   "en": "Sara: No, admission is free. Only the concerts cost something."
+  },
+  {
+   "de": "Jonas: Perfekt. Dann sagen wir Freitag halb neun am Marktplatz.",
+   "en": "Jonas: Perfect. Then let's say Friday at half past eight at the market square."
+  },
+  {
+   "de": "Die Veranstaltung beginnt um 20 Uhr.",
+   "en": "The event starts at 8 p.m."
+  },
+  {
+   "de": "Das Konzert war ausverkauft.",
+   "en": "The concert was sold out."
+  },
+  {
+   "de": "Die Ausstellung läuft noch bis Mai.",
+   "en": "The exhibition is on until May."
+  },
+  {
+   "de": "Jeden Sommer gibt es hier ein Festival.",
+   "en": "There is a festival here every summer."
+  },
+  {
+   "de": "Ich habe zwei Karten gekauft.",
+   "en": "I bought two tickets."
+  },
+  {
+   "de": "Studenten bekommen eine Ermäßigung.",
+   "en": "Students get a discount."
+  },
+  {
+   "de": "Das Fest findet am Samstag statt.",
+   "en": "The festival takes place on Saturday."
+  },
+  {
+   "de": "Wollen wir uns für Freitag verabreden?",
+   "en": "Shall we arrange to meet on Friday?"
+  },
+  {
+   "de": "Hast du Lust auf ein Konzert?",
+   "en": "Do you fancy a concert?"
+  },
+  {
+   "de": "Leider muss ich absagen.",
+   "en": "Unfortunately, I have to cancel."
+  },
+  {
+   "de": "Für Kinder ist der Eintritt frei.",
+   "en": "Admission is free for children."
+  },
+  {
+   "de": "Einigen wir uns auf Samstag?",
+   "en": "Shall we agree on Saturday?"
+  },
+  {
+   "de": "___ morgen an habe ich Urlaub.",
+   "en": "___ tomorrow onwards, I'm on holiday."
+  },
+  {
+   "de": "Ich wohne ___ zwei Jahren in Köln.",
+   "en": "I have been living in Cologne ___ two years."
+  },
+  {
+   "de": "Das Festival dauert ___ eine Woche. (Dauer, + Akkusativ)",
+   "en": "The festival lasts ___ a week. (duration, + accusative)"
+  },
+  {
+   "de": "Das Fest geht ___ 8. bis ___ 10. Juli. (von dem → ?, zu dem → ?)",
+   "en": "The festival runs ___ 8th until ___ 10th July. (von dem → ?, zu dem → ?)"
+  },
+  {
+   "de": "Wir treffen uns ___ acht und neun.",
+   "en": "We'll meet ___ eight and nine."
+  },
+  {
+   "de": "Schreiben Sie eine kurze Nachricht an eine Freundin und schlagen Sie eine Veranstaltung vor. Umfang: 40–60 Wörter Checkliste: • Nennen Sie die Veranstaltung und das Datum. • Benutzen Sie mindestens zwei Zeitangaben (von … bis, ab, seit). • Fragen Sie nach einer Antwort und nennen Sie einen Treffpunkt.",
+   "en": "Write a short message to a friend and suggest an event. Length: 40–60 words Checklist: • Name the event and the date. • Use at least two time expressions (von … bis, ab, seit). • Ask for a reply and suggest a meeting point."
+  },
+  {
+   "de": "von … an gibt den Beginn an: Von morgen an …",
+   "en": "von … an gives the start: Von morgen an … (from tomorrow on …)"
+  },
+  {
+   "de": "seit + Dativ für etwas, das in der Vergangenheit begann und noch andauert.",
+   "en": "seit + dative is for something that began in the past and is still going on."
+  },
+  {
+   "de": "über + Akkusativ gibt eine Dauer an.",
+   "en": "über + accusative expresses a duration."
+  },
+  {
+   "de": "Kurzformen: von dem → vom, zu dem → zum.",
+   "en": "Short forms: von dem → vom, zu dem → zum."
+  },
+  {
+   "de": "zwischen + Dativ nennt einen Zeitpunkt zwischen zwei Zeiten.",
+   "en": "zwischen + dative names a point in time between two times."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Veranstaltungen",
+   "context": "Über Veranstaltungen sprechen, sich verabreden und Zeiten angeben.",
+   "en": "events",
+   "lemma": "die Veranstaltung"
+  },
+  {
+   "form": "verabreden",
+   "context": "Über Veranstaltungen sprechen, sich verabreden und Zeiten angeben.",
+   "en": "to arrange to meet",
+   "lemma": ""
+  },
+  {
+   "form": "Zeiten",
+   "context": "Über Veranstaltungen sprechen, sich verabreden und Zeiten angeben.",
+   "en": "times",
+   "lemma": "die Zeit"
+  },
+  {
+   "form": "Leserbeitrag",
+   "context": "Textsorte: Leserbeitrag · Veranstaltungskalender",
+   "en": "reader's post",
+   "lemma": "der Leserbeitrag"
+  },
+  {
+   "form": "Veranstaltungskalender",
+   "context": "Textsorte: Leserbeitrag · Veranstaltungskalender",
+   "en": "events calendar",
+   "lemma": "der Veranstaltungskalender"
+  },
+  {
+   "form": "zuordnen",
+   "context": "Prüfungsbezug: Goethe A2 Lesen Teil 3 (Veranstaltungen zuordnen); telc A2 Lesen",
+   "en": "to match",
+   "lemma": ""
+  },
+  {
+   "form": "Freizeit",
+   "context": "über Veranstaltungen und Freizeit sprechen",
+   "en": "free time",
+   "lemma": "die Freizeit"
+  },
+  {
+   "form": "Gruppen",
+   "context": "Drei Fragen, drei Gruppen. Ab wann beginnt etwas? Wie lange dauert es? Und seit wann läuft es schon? seit und von … an stehen mit dem Dativ, über mit dem Akkusativ.",
+   "en": "groups",
+   "lemma": "die Gruppe"
+  },
+  {
+   "form": "läuft",
+   "context": "Drei Fragen, drei Gruppen. Ab wann beginnt etwas? Wie lange dauert es? Und seit wann läuft es schon? seit und von … an stehen mit dem Dativ, über mit dem Akkusativ.",
+   "en": "runs, is on; walks",
+   "lemma": "laufen"
+  },
+  {
+   "form": "Programm",
+   "context": "Ab dem 1. Juni gibt es das Programm.",
+   "en": "programme",
+   "lemma": "das Programm"
+  },
+  {
+   "form": "Akk",
+   "context": "von … bis (+ Dativ/Akk.)",
+   "en": "accusative (abbreviation)",
+   "lemma": "der Akkusativ"
+  },
+  {
+   "form": "Juli",
+   "context": "Das Fest geht vom 8. bis zum 10. Juli.",
+   "en": "July",
+   "lemma": "der Juli"
+  },
+  {
+   "form": "September",
+   "context": "Vom 1. September an gibt es jeden Freitag Konzerte.von … an = Beginn",
+   "en": "September",
+   "lemma": "der September"
+  },
+  {
+   "form": "Konzerte",
+   "context": "Vom 1. September an gibt es jeden Freitag Konzerte.von … an = Beginn",
+   "en": "concerts",
+   "lemma": "das Konzert"
+  },
+  {
+   "form": "Beginn",
+   "context": "Vom 1. September an gibt es jeden Freitag Konzerte.von … an = Beginn",
+   "en": "start, beginning",
+   "lemma": "der Beginn"
+  },
+  {
+   "form": "Theater",
+   "context": "Seit einem Jahr gehe ich regelmäßig ins Theater.seit + Dativ, die Handlung dauert an",
+   "en": "theatre",
+   "lemma": "das Theater"
+  },
+  {
+   "form": "Ausstellung",
+   "context": "Die Ausstellung läuft über drei Monate.über + Akkusativ = Dauer",
+   "en": "exhibition",
+   "lemma": "die Ausstellung"
+  },
+  {
+   "form": "Veranstaltung",
+   "context": "die Veranstaltung, -en — EN: event · FR: l'événementDie Veranstaltung beginnt um 20 Uhr.",
+   "en": "event",
+   "lemma": "die Veranstaltung"
+  },
+  {
+   "form": "event",
+   "context": "die Veranstaltung, -en — EN: event · FR: l'événementDie Veranstaltung beginnt um 20 Uhr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'événementDie",
+   "context": "die Veranstaltung, -en — EN: event · FR: l'événementDie Veranstaltung beginnt um 20 Uhr.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "Konzert",
+   "context": "das Konzert, -e — EN: concert · FR: le concertDas Konzert war ausverkauft.",
+   "en": "concert",
+   "lemma": "das Konzert"
+  },
+  {
+   "form": "concert",
+   "context": "das Konzert, -e — EN: concert · FR: le concertDas Konzert war ausverkauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "concertDas",
+   "context": "das Konzert, -e — EN: concert · FR: le concertDas Konzert war ausverkauft.",
+   "en": "the",
+   "lemma": "das"
+  },
+  {
+   "form": "ausverkauft",
+   "context": "das Konzert, -e — EN: concert · FR: le concertDas Konzert war ausverkauft.",
+   "en": "sold out",
+   "lemma": ""
+  },
+  {
+   "form": "exhibition",
+   "context": "die Ausstellung, -en — EN: exhibition · FR: l'expositionDie Ausstellung läuft noch bis Mai.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'expositionDie",
+   "context": "die Ausstellung, -en — EN: exhibition · FR: l'expositionDie Ausstellung läuft noch bis Mai.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "Mai",
+   "context": "die Ausstellung, -en — EN: exhibition · FR: l'expositionDie Ausstellung läuft noch bis Mai.",
+   "en": "May",
+   "lemma": "der Mai"
+  },
+  {
+   "form": "festivalJeden",
+   "context": "das Festival, -s — EN: festival · FR: le festivalJeden Sommer gibt es hier ein Festival.",
+   "en": "every",
+   "lemma": "jeder"
+  },
+  {
+   "form": "ticket",
+   "context": "die Karte, -n — EN: ticket · FR: le billetIch habe zwei Karten gekauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "billetIch",
+   "context": "die Karte, -n — EN: ticket · FR: le billetIch habe zwei Karten gekauft.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "Karten",
+   "context": "die Karte, -n — EN: ticket · FR: le billetIch habe zwei Karten gekauft.",
+   "en": "tickets; cards",
+   "lemma": "die Karte"
+  },
+  {
+   "form": "Ermäßigung",
+   "context": "die Ermäßigung, -en — EN: discount, reduction · FR: la réductionStudenten bekommen eine Ermäßigung.",
+   "en": "discount, reduction",
+   "lemma": "die Ermäßigung"
+  },
+  {
+   "form": "discount",
+   "context": "die Ermäßigung, -en — EN: discount, reduction · FR: la réductionStudenten bekommen eine Ermäßigung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reduction",
+   "context": "die Ermäßigung, -en — EN: discount, reduction · FR: la réductionStudenten bekommen eine Ermäßigung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réductionStudenten",
+   "context": "die Ermäßigung, -en — EN: discount, reduction · FR: la réductionStudenten bekommen eine Ermäßigung.",
+   "en": "students",
+   "lemma": "der Student"
+  },
+  {
+   "form": "stattfinden",
+   "context": "stattfinden (fand statt) — EN: to take place · FR: avoir lieuDas Fest findet am Samstag statt.",
+   "en": "to take place",
+   "lemma": ""
+  },
+  {
+   "form": "fand",
+   "context": "stattfinden (fand statt) — EN: to take place · FR: avoir lieuDas Fest findet am Samstag statt.",
+   "en": "took place; found",
+   "lemma": "stattfinden"
+  },
+  {
+   "form": "lieuDas",
+   "context": "stattfinden (fand statt) — EN: to take place · FR: avoir lieuDas Fest findet am Samstag statt.",
+   "en": "the",
+   "lemma": "das"
+  },
+  {
+   "form": "arrange",
+   "context": "sich verabreden — EN: to arrange to meet · FR: se donner rendez-vousWollen wir uns für Freitag verabreden?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "donner",
+   "context": "sich verabreden — EN: to arrange to meet · FR: se donner rendez-vousWollen wir uns für Freitag verabreden?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rendez-vousWollen",
+   "context": "sich verabreden — EN: to arrange to meet · FR: se donner rendez-vousWollen wir uns für Freitag verabreden?",
+   "en": "shall (we); want",
+   "lemma": "wollen"
+  },
+  {
+   "form": "Lust",
+   "context": "Lust haben auf — EN: to fancy, feel like · FR: avoir envie deHast du Lust auf ein Konzert?",
+   "en": "desire (Lust haben = to feel like)",
+   "lemma": "die Lust"
+  },
+  {
+   "form": "fancy",
+   "context": "Lust haben auf — EN: to fancy, feel like · FR: avoir envie deHast du Lust auf ein Konzert?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "feel",
+   "context": "Lust haben auf — EN: to fancy, feel like · FR: avoir envie deHast du Lust auf ein Konzert?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "envie",
+   "context": "Lust haben auf — EN: to fancy, feel like · FR: avoir envie deHast du Lust auf ein Konzert?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deHast",
+   "context": "Lust haben auf — EN: to fancy, feel like · FR: avoir envie deHast du Lust auf ein Konzert?",
+   "en": "have (with du)",
+   "lemma": "haben"
+  },
+  {
+   "form": "cancel",
+   "context": "absagen — EN: to cancel · FR: annulerLeider muss ich absagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "annulerLeider",
+   "context": "absagen — EN: to cancel · FR: annulerLeider muss ich absagen.",
+   "en": "unfortunately",
+   "lemma": "leider"
+  },
+  {
+   "form": "free",
+   "context": "der Eintritt frei — EN: free admission · FR: entrée libreFür Kinder ist der Eintritt frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "entrée",
+   "context": "der Eintritt frei — EN: free admission · FR: entrée libreFür Kinder ist der Eintritt frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "libreFür",
+   "context": "der Eintritt frei — EN: free admission · FR: entrée libreFür Kinder ist der Eintritt frei.",
+   "en": "for",
+   "lemma": "für"
+  },
+  {
+   "form": "einigen",
+   "context": "sich einigen — EN: to agree · FR: se mettre d'accordEinigen wir uns auf Samstag?",
+   "en": "to agree (sich einigen); some, a few",
+   "lemma": ""
+  },
+  {
+   "form": "agree",
+   "context": "sich einigen — EN: to agree · FR: se mettre d'accordEinigen wir uns auf Samstag?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'accordEinigen",
+   "context": "sich einigen — EN: to agree · FR: se mettre d'accordEinigen wir uns auf Samstag?",
+   "en": "agree",
+   "lemma": "sich einigen"
+  },
+  {
+   "form": "hingehen",
+   "context": "Wollen wir zusammen hingehen?",
+   "en": "to go (there)",
+   "lemma": ""
+  },
+  {
+   "form": "Freitagabend",
+   "context": "Wie wäre es mit Freitagabend?",
+   "en": "Friday evening",
+   "lemma": "der Freitagabend"
+  },
+  {
+   "form": "zustimmen",
+   "context": "zustimmen oder ablehnen",
+   "en": "to agree",
+   "lemma": ""
+  },
+  {
+   "form": "ablehnen",
+   "context": "zustimmen oder ablehnen",
+   "en": "to decline, to refuse",
+   "lemma": ""
+  },
+  {
+   "form": "Abgemacht",
+   "context": "Abgemacht!",
+   "en": "agreed, it's a deal",
+   "lemma": "abmachen"
+  },
+  {
+   "form": "Verabredung",
+   "context": "Dialog: Eine Verabredung",
+   "en": "arrangement to meet, date",
+   "lemma": "die Verabredung"
+  },
+  {
+   "form": "Sara",
+   "context": "Sara: Vom 8. bis zum 10. Juli ist das Stadtfest. Hast du Lust?",
+   "en": "Sara (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Stadtfest",
+   "context": "Sara: Vom 8. bis zum 10. Juli ist das Stadtfest. Hast du Lust?",
+   "en": "town festival",
+   "lemma": "das Stadtfest"
+  },
+  {
+   "form": "Jonas",
+   "context": "Jonas: Klar! Aber am Freitag arbeite ich bis sieben.",
+   "en": "Jonas (name)",
+   "lemma": ""
+  },
+  {
+   "form": "eigentlich",
+   "context": "Jonas: Gut. Kostet das eigentlich Eintritt?",
+   "en": "actually, by the way",
+   "lemma": ""
+  },
+  {
+   "form": "Einigen",
+   "context": "Einigen wir uns auf Samstag?",
+   "en": "agree (sich einigen); some, a few",
+   "lemma": "sich einigen"
+  },
+  {
+   "form": "schlagen",
+   "context": "Schreiben Sie eine kurze Nachricht an eine Freundin und schlagen Sie eine Veranstaltung vor. Umfang: 40–60 Wörter Checkliste: • Nennen Sie die Veranstaltung und das Datum. • Benutzen Sie mindestens zwei Zeitangaben (von … bis, ab, seit). • Fragen Sie nach einer Antwort und nennen Sie einen Treffpunkt.",
+   "en": "suggest (… vor); hit",
+   "lemma": "vorschlagen"
+  },
+  {
+   "form": "Datum",
+   "context": "Schreiben Sie eine kurze Nachricht an eine Freundin und schlagen Sie eine Veranstaltung vor. Umfang: 40–60 Wörter Checkliste: • Nennen Sie die Veranstaltung und das Datum. • Benutzen Sie mindestens zwei Zeitangaben (von … bis, ab, seit). • Fragen Sie nach einer Antwort und nennen Sie einen Treffpunkt.",
+   "en": "date",
+   "lemma": "das Datum"
+  },
+  {
+   "form": "Treffpunkt",
+   "context": "Schreiben Sie eine kurze Nachricht an eine Freundin und schlagen Sie eine Veranstaltung vor. Umfang: 40–60 Wörter Checkliste: • Nennen Sie die Veranstaltung und das Datum. • Benutzen Sie mindestens zwei Zeitangaben (von … bis, ab, seit). • Fragen Sie nach einer Antwort und nennen Sie einen Treffpunkt.",
+   "en": "meeting point",
+   "lemma": "der Treffpunkt"
+  }
+ ]
+}
