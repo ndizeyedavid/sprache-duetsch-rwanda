@@ -1,0 +1,747 @@
+{
+ "level": "A2",
+ "lesson": 18,
+ "title": "Wetter und Klima — Ich freue mich auf Sonne und Wärme",
+ "lines": [
+  {
+   "de": "Über das Wetter sprechen und sagen, worauf man sich freut.",
+   "en": "Talk about the weather and say what you are looking forward to."
+  },
+  {
+   "de": "Textsorte: Wetterbericht · Sachtext",
+   "en": "Text type: Weather report · Factual text"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Hören Teil 2 (Ansagen); telc A2 Hören",
+   "en": "Exam link: Goethe A2 Listening part 2 (announcements); telc A2 Listening"
+  },
+  {
+   "de": "über das Wetter und die Jahreszeiten sprechen",
+   "en": "talk about the weather and the seasons"
+  },
+  {
+   "de": "Verben mit fester Präposition verwenden",
+   "en": "use verbs with a fixed preposition"
+  },
+  {
+   "de": "mit wo(r)- und da(r)- fragen und antworten",
+   "en": "ask and answer with wo(r)- and da(r)-"
+  },
+  {
+   "de": "Grammatik: Verben mit Präposition",
+   "en": "Grammar: Verbs with prepositions"
+  },
+  {
+   "de": "Viele Verben haben eine feste Präposition, die man zusammen mit dem Verb lernen muss. Oft ist sie anders als in der Muttersprache.",
+   "en": "Many verbs have a fixed preposition that you have to learn together with the verb. It is often different from your mother tongue."
+  },
+  {
+   "de": "Verb + Präposition",
+   "en": "Verb + preposition"
+  },
+  {
+   "de": "sich freuen auf",
+   "en": "to look forward to"
+  },
+  {
+   "de": "Ich freue mich auf den Sommer.",
+   "en": "I'm looking forward to the summer."
+  },
+  {
+   "de": "sich interessieren für",
+   "en": "to be interested in"
+  },
+  {
+   "de": "Er interessiert sich für das Klima.",
+   "en": "He is interested in the climate."
+  },
+  {
+   "de": "warten auf",
+   "en": "to wait for"
+  },
+  {
+   "de": "Wir warten auf besseres Wetter.",
+   "en": "We are waiting for better weather."
+  },
+  {
+   "de": "sich ärgern über",
+   "en": "to be annoyed about"
+  },
+  {
+   "de": "Ich ärgere mich über den Regen.",
+   "en": "I'm annoyed about the rain."
+  },
+  {
+   "de": "Angst haben vor",
+   "en": "to be afraid of"
+  },
+  {
+   "de": "Sie hat Angst vor Gewittern.",
+   "en": "She is afraid of thunderstorms."
+  },
+  {
+   "de": "sprechen über",
+   "en": "to talk about"
+  },
+  {
+   "de": "Alle sprechen über das Wetter.",
+   "en": "Everyone is talking about the weather."
+  },
+  {
+   "de": "Ich freue mich auf Sonne und Wärme.sich freuen auf + Akkusativ",
+   "en": "I'm looking forward to sun and warmth. — sich freuen auf + accusative"
+  },
+  {
+   "de": "Wir warten seit Tagen auf Regen.warten auf + Akkusativ",
+   "en": "We have been waiting for rain for days. — warten auf + accusative"
+  },
+  {
+   "de": "Tipp: Unterschied: sich freuen auf = Zukunft, sich freuen über = etwas, das schon passiert ist.",
+   "en": "Tip: Difference: sich freuen auf = future, sich freuen über = something that has already happened."
+  },
+  {
+   "de": "Grammatik: Fragen und Antworten mit wo(r)- und da(r)-",
+   "en": "Grammar: Questions and answers with wo(r)- and da(r)-"
+  },
+  {
+   "de": "Wenn es um eine Sache geht, fragt man mit wo(r)- + Präposition und antwortet mit da(r)- + Präposition. Bei Personen bleibt die Präposition stehen.",
+   "en": "When it is about a thing, you ask with wo(r)- + preposition and answer with da(r)- + preposition. With people, the preposition stays as it is."
+  },
+  {
+   "de": "Sache",
+   "en": "Thing"
+  },
+  {
+   "de": "Worauf freust du dich?",
+   "en": "What are you looking forward to?"
+  },
+  {
+   "de": "Auf wen wartest du?",
+   "en": "Who are you waiting for?"
+  },
+  {
+   "de": "Auf den Urlaub. / Darauf.",
+   "en": "To the holiday. / To that."
+  },
+  {
+   "de": "Auf meine Schwester. / Auf sie.",
+   "en": "For my sister. / For her."
+  },
+  {
+   "de": "mit Vokal",
+   "en": "with a vowel"
+  },
+  {
+   "de": "worauf, worüber, woran",
+   "en": "on what, about what, of what"
+  },
+  {
+   "de": "darauf, darüber, daran",
+   "en": "on it, about it, of it"
+  },
+  {
+   "de": "ohne Vokal",
+   "en": "without a vowel"
+  },
+  {
+   "de": "wovon, wofür, womit",
+   "en": "of what, for what, with what"
+  },
+  {
+   "de": "davon, dafür, damit",
+   "en": "of it, for it, with it"
+  },
+  {
+   "de": "Worüber ärgerst du dich? — Über das schlechte Wetter.Sache → worüber",
+   "en": "What are you annoyed about? — About the bad weather. — thing → worüber"
+  },
+  {
+   "de": "Ich freue mich schon sehr darauf.darauf ersetzt „auf den Urlaub\"",
+   "en": "I'm really looking forward to it. — darauf replaces “auf den Urlaub”"
+  },
+  {
+   "de": "Tipp: Das r kommt nur, wenn die Präposition mit einem Vokal beginnt: worauf, darauf — aber womit, damit.",
+   "en": "Tip: The r is only added when the preposition starts with a vowel: worauf, darauf — but womit, damit."
+  },
+  {
+   "de": "das Wetter (Sg.) — EN: weather · FR: le tempsWie wird das Wetter morgen?",
+   "en": "Example: What will the weather be like tomorrow?"
+  },
+  {
+   "de": "die Sonne (Sg.) — EN: sun · FR: le soleilEndlich scheint die Sonne!",
+   "en": "Example: At last the sun is shining!"
+  },
+  {
+   "de": "der Regen (Sg.) — EN: rain · FR: la pluieBei Regen bleiben wir zu Hause.",
+   "en": "Example: When it rains, we stay at home."
+  },
+  {
+   "de": "der Schnee (Sg.) — EN: snow · FR: la neigeIm Dezember liegt hier oft Schnee.",
+   "en": "Example: In December there is often snow here."
+  },
+  {
+   "de": "das Gewitter, - — EN: thunderstorm · FR: l'orageAm Abend gibt es vielleicht ein Gewitter.",
+   "en": "Example: There may be a thunderstorm in the evening."
+  },
+  {
+   "de": "der Wind, -e — EN: wind · FR: le ventHeute weht ein starker Wind.",
+   "en": "Example: A strong wind is blowing today."
+  },
+  {
+   "de": "die Temperatur, -en — EN: temperature · FR: la températureDie Temperaturen steigen auf 28 Grad.",
+   "en": "Example: Temperatures are rising to 28 degrees."
+  },
+  {
+   "de": "die Wärme / die Kälte (Sg.) — EN: warmth / cold · FR: la chaleur / le froidIch mag Wärme lieber als Kälte.",
+   "en": "Example: I prefer warmth to cold."
+  },
+  {
+   "de": "bewölkt / sonnig — EN: cloudy / sunny · FR: nuageux / ensoleilléMorgen wird es bewölkt.",
+   "en": "Example: Tomorrow it will be cloudy."
+  },
+  {
+   "de": "das Klima (Sg.) — EN: climate · FR: le climatDas Klima verändert sich.",
+   "en": "Example: The climate is changing."
+  },
+  {
+   "de": "die Jahreszeit, -en — EN: season · FR: la saisonWelche Jahreszeit magst du am liebsten?",
+   "en": "Example: Which season do you like best?"
+  },
+  {
+   "de": "der Grad, -e — EN: degree · FR: le degréHeute sind es nur fünf Grad.",
+   "en": "Example: Today it's only five degrees."
+  },
+  {
+   "de": "Heute ist es ziemlich kalt.",
+   "en": "Today it's quite cold."
+  },
+  {
+   "de": "Morgen soll es regnen.",
+   "en": "It's supposed to rain tomorrow."
+  },
+  {
+   "de": "So ein schönes Wetter!",
+   "en": "What lovely weather!"
+  },
+  {
+   "de": "Kälte mag ich überhaupt nicht.",
+   "en": "I don't like the cold at all."
+  },
+  {
+   "de": "Am liebsten ist mir der Herbst.",
+   "en": "I like autumn best."
+  },
+  {
+   "de": "Worauf freust du dich am meisten?",
+   "en": "What are you looking forward to most?"
+  },
+  {
+   "de": "Wie ist das Wetter bei euch?",
+   "en": "What's the weather like where you are?"
+  },
+  {
+   "de": "Was sagt der Wetterbericht?",
+   "en": "What does the weather report say?"
+  },
+  {
+   "de": "Dialog: Endlich Sommer",
+   "en": "Dialogue: Summer at last"
+  },
+  {
+   "de": "Elif: Nächste Woche soll es 28 Grad werden!",
+   "en": "Elif: Next week it's supposed to get up to 28 degrees!"
+  },
+  {
+   "de": "Karl: Super. Ich freue mich schon sehr auf Sonne und Wärme.",
+   "en": "Karl: Great. I'm really looking forward to sun and warmth."
+  },
+  {
+   "de": "Elif: Worauf freust du dich am meisten?",
+   "en": "Elif: What are you looking forward to most?"
+  },
+  {
+   "de": "Karl: Auf die Abende draußen. Im Winter ärgere ich mich immer über die Dunkelheit.",
+   "en": "Karl: The evenings outside. In winter I always get annoyed about the darkness."
+  },
+  {
+   "de": "Elif: Ich mag den Winter eigentlich. Nur vor Gewittern habe ich Angst.",
+   "en": "Elif: I actually like winter. I'm only afraid of thunderstorms."
+  },
+  {
+   "de": "Karl: Davor? Wirklich? Ich finde Gewitter spannend.",
+   "en": "Karl: Of them? Really? I find thunderstorms exciting."
+  },
+  {
+   "de": "Wie wird das Wetter morgen?",
+   "en": "What will the weather be like tomorrow?"
+  },
+  {
+   "de": "Endlich scheint die Sonne!",
+   "en": "At last the sun is shining!"
+  },
+  {
+   "de": "Bei Regen bleiben wir zu Hause.",
+   "en": "When it rains, we stay at home."
+  },
+  {
+   "de": "Im Dezember liegt hier oft Schnee.",
+   "en": "In December there is often snow here."
+  },
+  {
+   "de": "Am Abend gibt es vielleicht ein Gewitter.",
+   "en": "There may be a thunderstorm in the evening."
+  },
+  {
+   "de": "Heute weht ein starker Wind.",
+   "en": "A strong wind is blowing today."
+  },
+  {
+   "de": "Die Temperaturen steigen auf 28 Grad.",
+   "en": "Temperatures are rising to 28 degrees."
+  },
+  {
+   "de": "Ich mag Wärme lieber als Kälte.",
+   "en": "I prefer warmth to cold."
+  },
+  {
+   "de": "Morgen wird es bewölkt.",
+   "en": "Tomorrow it will be cloudy."
+  },
+  {
+   "de": "Das Klima verändert sich.",
+   "en": "The climate is changing."
+  },
+  {
+   "de": "Welche Jahreszeit magst du am liebsten?",
+   "en": "Which season do you like best?"
+  },
+  {
+   "de": "Heute sind es nur fünf Grad.",
+   "en": "Today it's only five degrees."
+  },
+  {
+   "de": "Ich freue mich ___ den Sommer. (Präposition)",
+   "en": "I'm looking forward ___ the summer. (preposition)"
+  },
+  {
+   "de": "___ freust du dich? (Sache)",
+   "en": "___ are you looking forward to? (thing)"
+  },
+  {
+   "de": "Ich freue mich schon sehr ___. (Antwort auf „Worauf?\")",
+   "en": "I'm really looking forward ___. (answer to “Worauf?”)"
+  },
+  {
+   "de": "Sie hat Angst ___ Gewittern.",
+   "en": "She is afraid ___ thunderstorms."
+  },
+  {
+   "de": "Wir warten seit Tagen ___ Regen.",
+   "en": "We have been waiting ___ rain for days."
+  },
+  {
+   "de": "Beschreiben Sie das Wetter in Ihrem Land zu zwei verschiedenen Jahreszeiten. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Temperaturen und typisches Wetter. • Benutzen Sie einmal sich freuen auf und einmal sich ärgern über. • Schreiben Sie, welche Jahreszeit Sie lieber mögen.",
+   "en": "Describe the weather in your country in two different seasons. Length: 50–70 words Checklist: • Give temperatures and typical weather. • Use sich freuen auf once and sich ärgern über once. • Write which season you prefer."
+  },
+  {
+   "de": "sich freuen auf + Akkusativ (für die Zukunft).",
+   "en": "sich freuen auf + accusative (for the future)."
+  },
+  {
+   "de": "sich freuen auf → Frage mit worauf.",
+   "en": "sich freuen auf → question with worauf."
+  },
+  {
+   "de": "da(r)- + auf → darauf, mit r vor dem Vokal.",
+   "en": "da(r)- + auf → darauf, with r before the vowel."
+  },
+  {
+   "de": "Angst haben vor + Dativ.",
+   "en": "Angst haben vor + dative."
+  },
+  {
+   "de": "warten auf + Akkusativ.",
+   "en": "warten auf + accusative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Wetterbericht",
+   "context": "Textsorte: Wetterbericht · Sachtext",
+   "en": "weather report",
+   "lemma": "der Wetterbericht"
+  },
+  {
+   "form": "Klima",
+   "context": "Er interessiert sich für das Klima.",
+   "en": "climate",
+   "lemma": "das Klima"
+  },
+  {
+   "form": "besseres",
+   "context": "Wir warten auf besseres Wetter.",
+   "en": "better",
+   "lemma": "gut"
+  },
+  {
+   "form": "Regen",
+   "context": "Ich ärgere mich über den Regen.",
+   "en": "rain",
+   "lemma": "der Regen"
+  },
+  {
+   "form": "Gewittern",
+   "context": "Sie hat Angst vor Gewittern.",
+   "en": "thunderstorms",
+   "lemma": "das Gewitter"
+  },
+  {
+   "form": "Wärme",
+   "context": "Ich freue mich auf Sonne und Wärme.sich freuen auf + Akkusativ",
+   "en": "warmth, heat",
+   "lemma": "die Wärme"
+  },
+  {
+   "form": "fragt",
+   "context": "Wenn es um eine Sache geht, fragt man mit wo(r)- + Präposition und antwortet mit da(r)- + Präposition. Bei Personen bleibt die Präposition stehen.",
+   "en": "asks",
+   "lemma": "fragen"
+  },
+  {
+   "form": "wen",
+   "context": "Auf wen wartest du?",
+   "en": "whom, who",
+   "lemma": ""
+  },
+  {
+   "form": "wartest",
+   "context": "Auf wen wartest du?",
+   "en": "wait (with du)",
+   "lemma": "warten"
+  },
+  {
+   "form": "Vokal",
+   "context": "mit Vokal",
+   "en": "vowel",
+   "lemma": "der Vokal"
+  },
+  {
+   "form": "worüber",
+   "context": "worauf, worüber, woran",
+   "en": "about what",
+   "lemma": ""
+  },
+  {
+   "form": "woran",
+   "context": "worauf, worüber, woran",
+   "en": "of what, on what",
+   "lemma": ""
+  },
+  {
+   "form": "daran",
+   "context": "darauf, darüber, daran",
+   "en": "of it, on it",
+   "lemma": ""
+  },
+  {
+   "form": "wovon",
+   "context": "wovon, wofür, womit",
+   "en": "of what, about what",
+   "lemma": ""
+  },
+  {
+   "form": "wofür",
+   "context": "wovon, wofür, womit",
+   "en": "for what",
+   "lemma": ""
+  },
+  {
+   "form": "womit",
+   "context": "wovon, wofür, womit",
+   "en": "with what",
+   "lemma": ""
+  },
+  {
+   "form": "damit",
+   "context": "davon, dafür, damit",
+   "en": "with it; so that",
+   "lemma": ""
+  },
+  {
+   "form": "Worüber",
+   "context": "Worüber ärgerst du dich? — Über das schlechte Wetter.Sache → worüber",
+   "en": "about what",
+   "lemma": ""
+  },
+  {
+   "form": "ärgerst",
+   "context": "Worüber ärgerst du dich? — Über das schlechte Wetter.Sache → worüber",
+   "en": "(… dich) are annoyed",
+   "lemma": "sich ärgern"
+  },
+  {
+   "form": "schlechte",
+   "context": "Worüber ärgerst du dich? — Über das schlechte Wetter.Sache → worüber",
+   "en": "bad",
+   "lemma": "schlecht"
+  },
+  {
+   "form": "soleilEndlich",
+   "context": "die Sonne (Sg.) — EN: sun · FR: le soleilEndlich scheint die Sonne!",
+   "en": "Endlich = at last",
+   "lemma": ""
+  },
+  {
+   "form": "scheint",
+   "context": "die Sonne (Sg.) — EN: sun · FR: le soleilEndlich scheint die Sonne!",
+   "en": "shines; seems",
+   "lemma": "scheinen"
+  },
+  {
+   "form": "pluieBei",
+   "context": "der Regen (Sg.) — EN: rain · FR: la pluieBei Regen bleiben wir zu Hause.",
+   "en": "Bei Regen = when it rains",
+   "lemma": ""
+  },
+  {
+   "form": "Schnee",
+   "context": "der Schnee (Sg.) — EN: snow · FR: la neigeIm Dezember liegt hier oft Schnee.",
+   "en": "snow",
+   "lemma": "der Schnee"
+  },
+  {
+   "form": "neigeIm",
+   "context": "der Schnee (Sg.) — EN: snow · FR: la neigeIm Dezember liegt hier oft Schnee.",
+   "en": "Im = in (the)",
+   "lemma": ""
+  },
+  {
+   "form": "Gewitter",
+   "context": "das Gewitter, - — EN: thunderstorm · FR: l'orageAm Abend gibt es vielleicht ein Gewitter.",
+   "en": "thunderstorm",
+   "lemma": "das Gewitter"
+  },
+  {
+   "form": "thunderstorm",
+   "context": "das Gewitter, - — EN: thunderstorm · FR: l'orageAm Abend gibt es vielleicht ein Gewitter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'orageAm",
+   "context": "das Gewitter, - — EN: thunderstorm · FR: l'orageAm Abend gibt es vielleicht ein Gewitter.",
+   "en": "Am Abend = in the evening",
+   "lemma": ""
+  },
+  {
+   "form": "Wind",
+   "context": "der Wind, -e — EN: wind · FR: le ventHeute weht ein starker Wind.",
+   "en": "wind",
+   "lemma": "der Wind"
+  },
+  {
+   "form": "wind",
+   "context": "der Wind, -e — EN: wind · FR: le ventHeute weht ein starker Wind.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ventHeute",
+   "context": "der Wind, -e — EN: wind · FR: le ventHeute weht ein starker Wind.",
+   "en": "Heute = today",
+   "lemma": ""
+  },
+  {
+   "form": "weht",
+   "context": "der Wind, -e — EN: wind · FR: le ventHeute weht ein starker Wind.",
+   "en": "blows",
+   "lemma": "wehen"
+  },
+  {
+   "form": "starker",
+   "context": "der Wind, -e — EN: wind · FR: le ventHeute weht ein starker Wind.",
+   "en": "strong",
+   "lemma": "stark"
+  },
+  {
+   "form": "Temperatur",
+   "context": "die Temperatur, -en — EN: temperature · FR: la températureDie Temperaturen steigen auf 28 Grad.",
+   "en": "temperature",
+   "lemma": "die Temperatur"
+  },
+  {
+   "form": "temperature",
+   "context": "die Temperatur, -en — EN: temperature · FR: la températureDie Temperaturen steigen auf 28 Grad.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "températureDie",
+   "context": "die Temperatur, -en — EN: temperature · FR: la températureDie Temperaturen steigen auf 28 Grad.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "Temperaturen",
+   "context": "die Temperatur, -en — EN: temperature · FR: la températureDie Temperaturen steigen auf 28 Grad.",
+   "en": "temperatures",
+   "lemma": "die Temperatur"
+  },
+  {
+   "form": "Grad",
+   "context": "die Temperatur, -en — EN: temperature · FR: la températureDie Temperaturen steigen auf 28 Grad.",
+   "en": "degree, degrees",
+   "lemma": "der Grad"
+  },
+  {
+   "form": "Kälte",
+   "context": "die Wärme / die Kälte (Sg.) — EN: warmth / cold · FR: la chaleur / le froidIch mag Wärme lieber als Kälte.",
+   "en": "cold, coldness",
+   "lemma": "die Kälte"
+  },
+  {
+   "form": "warmth",
+   "context": "die Wärme / die Kälte (Sg.) — EN: warmth / cold · FR: la chaleur / le froidIch mag Wärme lieber als Kälte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chaleur",
+   "context": "die Wärme / die Kälte (Sg.) — EN: warmth / cold · FR: la chaleur / le froidIch mag Wärme lieber als Kälte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "froidIch",
+   "context": "die Wärme / die Kälte (Sg.) — EN: warmth / cold · FR: la chaleur / le froidIch mag Wärme lieber als Kälte.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "bewölkt",
+   "context": "bewölkt / sonnig — EN: cloudy / sunny · FR: nuageux / ensoleilléMorgen wird es bewölkt.",
+   "en": "cloudy",
+   "lemma": ""
+  },
+  {
+   "form": "sonnig",
+   "context": "bewölkt / sonnig — EN: cloudy / sunny · FR: nuageux / ensoleilléMorgen wird es bewölkt.",
+   "en": "sunny",
+   "lemma": ""
+  },
+  {
+   "form": "cloudy",
+   "context": "bewölkt / sonnig — EN: cloudy / sunny · FR: nuageux / ensoleilléMorgen wird es bewölkt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sunny",
+   "context": "bewölkt / sonnig — EN: cloudy / sunny · FR: nuageux / ensoleilléMorgen wird es bewölkt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nuageux",
+   "context": "bewölkt / sonnig — EN: cloudy / sunny · FR: nuageux / ensoleilléMorgen wird es bewölkt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ensoleilléMorgen",
+   "context": "bewölkt / sonnig — EN: cloudy / sunny · FR: nuageux / ensoleilléMorgen wird es bewölkt.",
+   "en": "Morgen = tomorrow",
+   "lemma": ""
+  },
+  {
+   "form": "climate",
+   "context": "das Klima (Sg.) — EN: climate · FR: le climatDas Klima verändert sich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "climatDas",
+   "context": "das Klima (Sg.) — EN: climate · FR: le climatDas Klima verändert sich.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "saisonWelche",
+   "context": "die Jahreszeit, -en — EN: season · FR: la saisonWelche Jahreszeit magst du am liebsten?",
+   "en": "Welche = which",
+   "lemma": ""
+  },
+  {
+   "form": "degree",
+   "context": "der Grad, -e — EN: degree · FR: le degréHeute sind es nur fünf Grad.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "degréHeute",
+   "context": "der Grad, -e — EN: degree · FR: le degréHeute sind es nur fünf Grad.",
+   "en": "Heute = today",
+   "lemma": ""
+  },
+  {
+   "form": "schönes",
+   "context": "So ein schönes Wetter!",
+   "en": "lovely, nice",
+   "lemma": "schön"
+  },
+  {
+   "form": "Endlich",
+   "context": "Dialog: Endlich Sommer",
+   "en": "at last, finally",
+   "lemma": ""
+  },
+  {
+   "form": "Elif",
+   "context": "Elif: Nächste Woche soll es 28 Grad werden!",
+   "en": "Elif (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Nächste",
+   "context": "Elif: Nächste Woche soll es 28 Grad werden!",
+   "en": "next",
+   "lemma": "nächste"
+  },
+  {
+   "form": "Karl",
+   "context": "Karl: Super. Ich freue mich schon sehr auf Sonne und Wärme.",
+   "en": "Karl (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Abende",
+   "context": "Karl: Auf die Abende draußen. Im Winter ärgere ich mich immer über die Dunkelheit.",
+   "en": "evenings",
+   "lemma": "der Abend"
+  },
+  {
+   "form": "draußen",
+   "context": "Karl: Auf die Abende draußen. Im Winter ärgere ich mich immer über die Dunkelheit.",
+   "en": "outside",
+   "lemma": ""
+  },
+  {
+   "form": "Dunkelheit",
+   "context": "Karl: Auf die Abende draußen. Im Winter ärgere ich mich immer über die Dunkelheit.",
+   "en": "darkness",
+   "lemma": "die Dunkelheit"
+  },
+  {
+   "form": "verschiedenen",
+   "context": "Beschreiben Sie das Wetter in Ihrem Land zu zwei verschiedenen Jahreszeiten. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Temperaturen und typisches Wetter. • Benutzen Sie einmal sich freuen auf und einmal sich ärgern über. • Schreiben Sie, welche Jahreszeit Sie lieber mögen.",
+   "en": "different",
+   "lemma": "verschieden"
+  },
+  {
+   "form": "typisches",
+   "context": "Beschreiben Sie das Wetter in Ihrem Land zu zwei verschiedenen Jahreszeiten. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Temperaturen und typisches Wetter. • Benutzen Sie einmal sich freuen auf und einmal sich ärgern über. • Schreiben Sie, welche Jahreszeit Sie lieber mögen.",
+   "en": "typical",
+   "lemma": "typisch"
+  }
+ ]
+}
