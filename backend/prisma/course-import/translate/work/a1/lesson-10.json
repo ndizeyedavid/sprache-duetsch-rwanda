@@ -1,0 +1,823 @@
+{
+ "level": "A1",
+ "lesson": 10,
+ "title": "Tagesablauf — Ich stehe um sechs Uhr auf",
+ "lines": [
+  {
+   "de": "Den Tagesablauf beschreiben — mit trennbaren Verben.",
+   "en": "Describe your daily routine — with separable verbs."
+  },
+  {
+   "de": "Textsorte: Gespräch · Tagesplan",
+   "en": "Text type: Conversation · Daily schedule"
+  },
+  {
+   "de": "den eigenen Tagesablauf beschreiben",
+   "en": "describe your own daily routine"
+  },
+  {
+   "de": "trennbare Verben bilden",
+   "en": "form separable verbs"
+  },
+  {
+   "de": "trennbare Verben im Satz richtig stellen",
+   "en": "put separable verbs in the right place in a sentence"
+  },
+  {
+   "de": "Grammatik: Trennbare Verben",
+   "en": "Grammar: Separable verbs (trennbare Verben)"
+  },
+  {
+   "de": "Viele deutsche Verben bestehen aus einer Vorsilbe und einem Verb. Im Satz trennt man sie: Das Verb steht auf Position 2, die Vorsilbe ganz am Ende.",
+   "en": "Many German verbs consist of a prefix and a verb. In a sentence you separate them: the verb is in position 2, the prefix at the very end."
+  },
+  {
+   "de": "aufstehen",
+   "en": "to get up"
+  },
+  {
+   "de": "Ich stehe um sechs Uhr auf.",
+   "en": "I get up at six o'clock."
+  },
+  {
+   "de": "einkaufen",
+   "en": "to go shopping"
+  },
+  {
+   "de": "Vielleicht kaufe ich noch etwas ein.",
+   "en": "Maybe I'll buy a few more things."
+  },
+  {
+   "de": "anrufen",
+   "en": "to call (on the phone)"
+  },
+  {
+   "de": "Wann rufst du mich an?",
+   "en": "When will you call me?"
+  },
+  {
+   "de": "Rufst du mich heute an?",
+   "en": "Will you call me today?"
+  },
+  {
+   "de": "einsteigen",
+   "en": "to get on (a bus or train)"
+  },
+  {
+   "de": "mit Modalverb",
+   "en": "with a modal verb"
+  },
+  {
+   "de": "Ich muss jetzt einsteigen.",
+   "en": "I have to get on now."
+  },
+  {
+   "de": "Ich steige jetzt in die U-Bahn ein.steige … ein",
+   "en": "I'm getting on the underground now. steige … ein"
+  },
+  {
+   "de": "Am Abend sehe ich fern.fernsehen → sehe … fern",
+   "en": "In the evening I watch TV. fernsehen → sehe … fern"
+  },
+  {
+   "de": "Kannst du mich morgen anrufen?mit Modalverb bleibt das Verb zusammen",
+   "en": "Can you call me tomorrow? with a modal verb the verb stays together"
+  },
+  {
+   "de": "Tipp: Häufige trennbare Vorsilben: auf-, ein-, an-, aus-, mit-, ab-, zu-, vor-, fern-.",
+   "en": "Tip: Common separable prefixes: auf-, ein-, an-, aus-, mit-, ab-, zu-, vor-, fern-."
+  },
+  {
+   "de": "aufstehen — EN: to get up · FR: se leverIch stehe um sechs Uhr auf.",
+   "en": "Example: I get up at six o'clock."
+  },
+  {
+   "de": "einkaufen — EN: to shop · FR: faire les coursesAm Samstag kaufe ich ein.",
+   "en": "Example: I go shopping on Saturday."
+  },
+  {
+   "de": "anrufen — EN: to call · FR: appelerRuf mich bitte heute Abend an!",
+   "en": "Example: Please call me this evening!"
+  },
+  {
+   "de": "einsteigen / aussteigen — EN: to get on / off · FR: monter / descendreIch steige jetzt ein.",
+   "en": "Example: I'm getting on now."
+  },
+  {
+   "de": "fernsehen — EN: to watch TV · FR: regarder la téléAbends sehe ich fern.",
+   "en": "Example: In the evenings I watch TV."
+  },
+  {
+   "de": "aufräumen — EN: to tidy up · FR: rangerIch räume mein Zimmer auf.",
+   "en": "Example: I tidy up my room."
+  },
+  {
+   "de": "mitkommen — EN: to come along · FR: venir avecKommst du mit?",
+   "en": "Example: Are you coming along?"
+  },
+  {
+   "de": "anfangen — EN: to start · FR: commencerDer Kurs fängt um neun an.",
+   "en": "Example: The course starts at nine."
+  },
+  {
+   "de": "die U-Bahn, -en — EN: underground · FR: le métroIch fahre mit der U-Bahn.",
+   "en": "Example: I take the underground."
+  },
+  {
+   "de": "frühstücken — EN: to have breakfast · FR: prendre le petit-déjeunerIch frühstücke um sieben.",
+   "en": "Example: I have breakfast at seven."
+  },
+  {
+   "de": "arbeiten gehen — EN: to go to work · FR: aller travaillerUm acht gehe ich arbeiten.",
+   "en": "Example: At eight I go to work."
+  },
+  {
+   "de": "schlafen gehen — EN: to go to bed · FR: aller se coucherIch gehe um elf schlafen.",
+   "en": "Example: I go to bed at eleven."
+  },
+  {
+   "de": "den Tag beschreiben",
+   "en": "describing your day"
+  },
+  {
+   "de": "Ich stehe um … auf.",
+   "en": "I get up at …"
+  },
+  {
+   "de": "Dann frühstücke ich.",
+   "en": "Then I have breakfast."
+  },
+  {
+   "de": "Am Abend sehe ich fern.",
+   "en": "In the evening I watch TV."
+  },
+  {
+   "de": "nach dem Tag fragen",
+   "en": "asking about someone's day"
+  },
+  {
+   "de": "Wann stehst du auf?",
+   "en": "When do you get up?"
+  },
+  {
+   "de": "Was machst du am Morgen?",
+   "en": "What do you do in the morning?"
+  },
+  {
+   "de": "Wann fängt dein Kurs an?",
+   "en": "When does your course start?"
+  },
+  {
+   "de": "etwas vorschlagen",
+   "en": "suggesting something"
+  },
+  {
+   "de": "Kommst du mit?",
+   "en": "Are you coming along?"
+  },
+  {
+   "de": "Rufst du mich später an?",
+   "en": "Will you call me later?"
+  },
+  {
+   "de": "Kaufen wir zusammen ein?",
+   "en": "Shall we go shopping together?"
+  },
+  {
+   "de": "Dialog: In der U-Bahn",
+   "en": "Dialogue: On the underground"
+  },
+  {
+   "de": "Jo: Du bist ja schon so früh unterwegs!",
+   "en": "Jo: You're out and about so early!"
+  },
+  {
+   "de": "Rita: Ja, ich stehe immer um sechs Uhr auf.",
+   "en": "Rita: Yes, I always get up at six o'clock."
+  },
+  {
+   "de": "Jo: So früh? Wann fängt deine Arbeit an?",
+   "en": "Jo: So early? When does your work start?"
+  },
+  {
+   "de": "Rita: Um halb acht. Ich steige jetzt in die U-Bahn ein.",
+   "en": "Rita: At half past seven. I'm getting on the underground now."
+  },
+  {
+   "de": "Jo: Und am Abend? Was machst du da?",
+   "en": "Jo: And in the evening? What do you do then?"
+  },
+  {
+   "de": "Rita: Meistens räume ich auf und dann sehe ich fern.",
+   "en": "Rita: Usually I tidy up and then I watch TV."
+  },
+  {
+   "de": "Am Samstag kaufe ich ein.",
+   "en": "I go shopping on Saturday."
+  },
+  {
+   "de": "Ruf mich bitte heute Abend an!",
+   "en": "Please call me this evening!"
+  },
+  {
+   "de": "Ich steige jetzt ein.",
+   "en": "I'm getting on now."
+  },
+  {
+   "de": "Abends sehe ich fern.",
+   "en": "In the evenings I watch TV."
+  },
+  {
+   "de": "Ich räume mein Zimmer auf.",
+   "en": "I tidy up my room."
+  },
+  {
+   "de": "Der Kurs fängt um neun an.",
+   "en": "The course starts at nine."
+  },
+  {
+   "de": "Ich fahre mit der U-Bahn.",
+   "en": "I take the underground."
+  },
+  {
+   "de": "Ich frühstücke um sieben.",
+   "en": "I have breakfast at seven."
+  },
+  {
+   "de": "Um acht gehe ich arbeiten.",
+   "en": "At eight I go to work."
+  },
+  {
+   "de": "Ich gehe um elf schlafen.",
+   "en": "I go to bed at eleven."
+  },
+  {
+   "de": "Ergänzen Sie die Lücken. Schreiben Sie alle fehlenden Wörter der Reihe nach in das Antwortfeld.",
+   "en": "Fill in the gaps. Write all the missing words in order in the answer box."
+  },
+  {
+   "de": "Ich ___ um sechs Uhr ___. (aufstehen, Präsens)",
+   "en": "I ___ at six o'clock ___. (aufstehen, present tense)"
+  },
+  {
+   "de": "Wann ___ du mich ___? (anrufen, du)",
+   "en": "When ___ you ___ me? (anrufen, du)"
+  },
+  {
+   "de": "Mit Modalverb: „Ich muss jetzt ___.\"",
+   "en": "With a modal verb: \"I have to ___ now.\""
+  },
+  {
+   "de": "Der Kurs ___ um neun ___. (anfangen, er/sie/es)",
+   "en": "The course ___ at nine ___. (anfangen, er/sie/es)"
+  },
+  {
+   "de": "Beschreiben Sie Ihren normalen Tag von morgens bis abends. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens vier trennbare Verben. • Nennen Sie bei drei Aktivitäten die Uhrzeit. • Benutzen Sie dann, danach oder am Abend.",
+   "en": "Describe your normal day from morning to evening. Length: 30–40 words Checklist: • Use at least four separable verbs. • Give the time for three activities. • Use dann, danach or am Abend."
+  },
+  {
+   "de": "Trennbares Verb: stehe … auf.",
+   "en": "Separable verb: stehe … auf."
+  },
+  {
+   "de": "Die Vorsilbe steht ganz am Satzende.",
+   "en": "The prefix goes at the very end of the sentence."
+  },
+  {
+   "de": "anrufen → rufst … an.",
+   "en": "="
+  },
+  {
+   "de": "Mit einem Modalverb bleibt das trennbare Verb im Infinitiv zusammen.",
+   "en": "With a modal verb, the separable verb stays together in the infinitive."
+  },
+  {
+   "de": "anfangen → fängt … an (mit Vokalwechsel).",
+   "en": "anfangen → fängt … an (with a vowel change)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Tagesablauf",
+   "context": "Den Tagesablauf beschreiben — mit trennbaren Verben.",
+   "en": "daily routine",
+   "lemma": "der Tagesablauf"
+  },
+  {
+   "form": "trennbaren",
+   "context": "Den Tagesablauf beschreiben — mit trennbaren Verben.",
+   "en": "separable",
+   "lemma": "trennbar"
+  },
+  {
+   "form": "Tagesplan",
+   "context": "Textsorte: Gespräch · Tagesplan",
+   "en": "daily schedule",
+   "lemma": "der Tagesplan"
+  },
+  {
+   "form": "trennbare",
+   "context": "trennbare Verben bilden",
+   "en": "separable",
+   "lemma": "trennbar"
+  },
+  {
+   "form": "Trennbare",
+   "context": "Grammatik: Trennbare Verben",
+   "en": "separable",
+   "lemma": "trennbar"
+  },
+  {
+   "form": "Viele",
+   "context": "Viele deutsche Verben bestehen aus einer Vorsilbe und einem Verb. Im Satz trennt man sie: Das Verb steht auf Position 2, die Vorsilbe ganz am Ende.",
+   "en": "many",
+   "lemma": ""
+  },
+  {
+   "form": "bestehen",
+   "context": "Viele deutsche Verben bestehen aus einer Vorsilbe und einem Verb. Im Satz trennt man sie: Das Verb steht auf Position 2, die Vorsilbe ganz am Ende.",
+   "en": "to consist (of); to pass (an exam)",
+   "lemma": ""
+  },
+  {
+   "form": "Vorsilbe",
+   "context": "Viele deutsche Verben bestehen aus einer Vorsilbe und einem Verb. Im Satz trennt man sie: Das Verb steht auf Position 2, die Vorsilbe ganz am Ende.",
+   "en": "prefix",
+   "lemma": "die Vorsilbe"
+  },
+  {
+   "form": "trennt",
+   "context": "Viele deutsche Verben bestehen aus einer Vorsilbe und einem Verb. Im Satz trennt man sie: Das Verb steht auf Position 2, die Vorsilbe ganz am Ende.",
+   "en": "separates",
+   "lemma": "trennen"
+  },
+  {
+   "form": "aufstehen",
+   "context": "aufstehen",
+   "en": "to get up",
+   "lemma": ""
+  },
+  {
+   "form": "stehe",
+   "context": "Ich stehe um sechs Uhr auf.",
+   "en": "stand; (… auf) get up",
+   "lemma": "stehen"
+  },
+  {
+   "form": "einkaufen",
+   "context": "einkaufen",
+   "en": "to go shopping",
+   "lemma": ""
+  },
+  {
+   "form": "Vielleicht",
+   "context": "Vielleicht kaufe ich noch etwas ein.",
+   "en": "maybe, perhaps",
+   "lemma": ""
+  },
+  {
+   "form": "kaufe",
+   "context": "Vielleicht kaufe ich noch etwas ein.",
+   "en": "buy; (… ein) shop",
+   "lemma": "kaufen"
+  },
+  {
+   "form": "anrufen",
+   "context": "anrufen",
+   "en": "to call (on the phone)",
+   "lemma": ""
+  },
+  {
+   "form": "rufst",
+   "context": "Wann rufst du mich an?",
+   "en": "call (with du)",
+   "lemma": "rufen"
+  },
+  {
+   "form": "Rufst",
+   "context": "Rufst du mich heute an?",
+   "en": "call (with du)",
+   "lemma": "rufen"
+  },
+  {
+   "form": "einsteigen",
+   "context": "einsteigen",
+   "en": "to get on, to get in",
+   "lemma": ""
+  },
+  {
+   "form": "muss",
+   "context": "Ich muss jetzt einsteigen.",
+   "en": "must, have to",
+   "lemma": "müssen"
+  },
+  {
+   "form": "steige",
+   "context": "Ich steige jetzt in die U-Bahn ein.steige … ein",
+   "en": "climb; (… ein) get on",
+   "lemma": "steigen"
+  },
+  {
+   "form": "U-Bahn",
+   "context": "Ich steige jetzt in die U-Bahn ein.steige … ein",
+   "en": "underground, metro",
+   "lemma": "die U-Bahn"
+  },
+  {
+   "form": "fern",
+   "context": "Am Abend sehe ich fern.fernsehen → sehe … fern",
+   "en": "far; (sehe … fern) watch TV",
+   "lemma": ""
+  },
+  {
+   "form": "fernsehen",
+   "context": "Am Abend sehe ich fern.fernsehen → sehe … fern",
+   "en": "to watch TV",
+   "lemma": ""
+  },
+  {
+   "form": "Häufige",
+   "context": "Tipp: Häufige trennbare Vorsilben: auf-, ein-, an-, aus-, mit-, ab-, zu-, vor-, fern-.",
+   "en": "common, frequent",
+   "lemma": "häufig"
+  },
+  {
+   "form": "Vorsilben",
+   "context": "Tipp: Häufige trennbare Vorsilben: auf-, ein-, an-, aus-, mit-, ab-, zu-, vor-, fern-.",
+   "en": "prefixes",
+   "lemma": "die Vorsilbe"
+  },
+  {
+   "form": "ab",
+   "context": "Tipp: Häufige trennbare Vorsilben: auf-, ein-, an-, aus-, mit-, ab-, zu-, vor-, fern-.",
+   "en": "off, away; from",
+   "lemma": ""
+  },
+  {
+   "form": "get",
+   "context": "aufstehen — EN: to get up · FR: se leverIch stehe um sechs Uhr auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "up",
+   "context": "aufstehen — EN: to get up · FR: se leverIch stehe um sechs Uhr auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "se",
+   "context": "aufstehen — EN: to get up · FR: se leverIch stehe um sechs Uhr auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "leverIch",
+   "context": "aufstehen — EN: to get up · FR: se leverIch stehe um sechs Uhr auf.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "shop",
+   "context": "einkaufen — EN: to shop · FR: faire les coursesAm Samstag kaufe ich ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "faire",
+   "context": "einkaufen — EN: to shop · FR: faire les coursesAm Samstag kaufe ich ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "coursesAm",
+   "context": "einkaufen — EN: to shop · FR: faire les coursesAm Samstag kaufe ich ein.",
+   "en": "on the (an + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "Samstag",
+   "context": "einkaufen — EN: to shop · FR: faire les coursesAm Samstag kaufe ich ein.",
+   "en": "Saturday",
+   "lemma": "der Samstag"
+  },
+  {
+   "form": "call",
+   "context": "anrufen — EN: to call · FR: appelerRuf mich bitte heute Abend an!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "appelerRuf",
+   "context": "anrufen — EN: to call · FR: appelerRuf mich bitte heute Abend an!",
+   "en": "call",
+   "lemma": ""
+  },
+  {
+   "form": "aussteigen",
+   "context": "einsteigen / aussteigen — EN: to get on / off · FR: monter / descendreIch steige jetzt ein.",
+   "en": "to get off, to get out",
+   "lemma": ""
+  },
+  {
+   "form": "monter",
+   "context": "einsteigen / aussteigen — EN: to get on / off · FR: monter / descendreIch steige jetzt ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "descendreIch",
+   "context": "einsteigen / aussteigen — EN: to get on / off · FR: monter / descendreIch steige jetzt ein.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "watch",
+   "context": "fernsehen — EN: to watch TV · FR: regarder la téléAbends sehe ich fern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "TV",
+   "context": "fernsehen — EN: to watch TV · FR: regarder la téléAbends sehe ich fern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "regarder",
+   "context": "fernsehen — EN: to watch TV · FR: regarder la téléAbends sehe ich fern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "téléAbends",
+   "context": "fernsehen — EN: to watch TV · FR: regarder la téléAbends sehe ich fern.",
+   "en": "in the evenings",
+   "lemma": ""
+  },
+  {
+   "form": "aufräumen",
+   "context": "aufräumen — EN: to tidy up · FR: rangerIch räume mein Zimmer auf.",
+   "en": "to tidy up",
+   "lemma": ""
+  },
+  {
+   "form": "tidy",
+   "context": "aufräumen — EN: to tidy up · FR: rangerIch räume mein Zimmer auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rangerIch",
+   "context": "aufräumen — EN: to tidy up · FR: rangerIch räume mein Zimmer auf.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "räume",
+   "context": "aufräumen — EN: to tidy up · FR: rangerIch räume mein Zimmer auf.",
+   "en": "clear; (… auf) tidy up",
+   "lemma": "räumen"
+  },
+  {
+   "form": "mitkommen",
+   "context": "mitkommen — EN: to come along · FR: venir avecKommst du mit?",
+   "en": "to come along",
+   "lemma": ""
+  },
+  {
+   "form": "come",
+   "context": "mitkommen — EN: to come along · FR: venir avecKommst du mit?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "along",
+   "context": "mitkommen — EN: to come along · FR: venir avecKommst du mit?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "venir",
+   "context": "mitkommen — EN: to come along · FR: venir avecKommst du mit?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "avecKommst",
+   "context": "mitkommen — EN: to come along · FR: venir avecKommst du mit?",
+   "en": "come (with du)",
+   "lemma": ""
+  },
+  {
+   "form": "anfangen",
+   "context": "anfangen — EN: to start · FR: commencerDer Kurs fängt um neun an.",
+   "en": "to start, to begin",
+   "lemma": ""
+  },
+  {
+   "form": "commencerDer",
+   "context": "anfangen — EN: to start · FR: commencerDer Kurs fängt um neun an.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "fängt",
+   "context": "anfangen — EN: to start · FR: commencerDer Kurs fängt um neun an.",
+   "en": "(… an) starts; catches",
+   "lemma": "fangen"
+  },
+  {
+   "form": "underground",
+   "context": "die U-Bahn, -en — EN: underground · FR: le métroIch fahre mit der U-Bahn.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "métroIch",
+   "context": "die U-Bahn, -en — EN: underground · FR: le métroIch fahre mit der U-Bahn.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "fahre",
+   "context": "die U-Bahn, -en — EN: underground · FR: le métroIch fahre mit der U-Bahn.",
+   "en": "go, travel (by vehicle)",
+   "lemma": "fahren"
+  },
+  {
+   "form": "frühstücken",
+   "context": "frühstücken — EN: to have breakfast · FR: prendre le petit-déjeunerIch frühstücke um sieben.",
+   "en": "to have breakfast",
+   "lemma": ""
+  },
+  {
+   "form": "breakfast",
+   "context": "frühstücken — EN: to have breakfast · FR: prendre le petit-déjeunerIch frühstücke um sieben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prendre",
+   "context": "frühstücken — EN: to have breakfast · FR: prendre le petit-déjeunerIch frühstücke um sieben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "petit-déjeunerIch",
+   "context": "frühstücken — EN: to have breakfast · FR: prendre le petit-déjeunerIch frühstücke um sieben.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "frühstücke",
+   "context": "frühstücken — EN: to have breakfast · FR: prendre le petit-déjeunerIch frühstücke um sieben.",
+   "en": "have breakfast",
+   "lemma": "frühstücken"
+  },
+  {
+   "form": "gehen",
+   "context": "arbeiten gehen — EN: to go to work · FR: aller travaillerUm acht gehe ich arbeiten.",
+   "en": "to go",
+   "lemma": ""
+  },
+  {
+   "form": "go",
+   "context": "arbeiten gehen — EN: to go to work · FR: aller travaillerUm acht gehe ich arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "work",
+   "context": "arbeiten gehen — EN: to go to work · FR: aller travaillerUm acht gehe ich arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aller",
+   "context": "arbeiten gehen — EN: to go to work · FR: aller travaillerUm acht gehe ich arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "travaillerUm",
+   "context": "arbeiten gehen — EN: to go to work · FR: aller travaillerUm acht gehe ich arbeiten.",
+   "en": "at",
+   "lemma": ""
+  },
+  {
+   "form": "gehe",
+   "context": "arbeiten gehen — EN: to go to work · FR: aller travaillerUm acht gehe ich arbeiten.",
+   "en": "go",
+   "lemma": "gehen"
+  },
+  {
+   "form": "schlafen",
+   "context": "schlafen gehen — EN: to go to bed · FR: aller se coucherIch gehe um elf schlafen.",
+   "en": "to sleep",
+   "lemma": ""
+  },
+  {
+   "form": "coucherIch",
+   "context": "schlafen gehen — EN: to go to bed · FR: aller se coucherIch gehe um elf schlafen.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "stehst",
+   "context": "Wann stehst du auf?",
+   "en": "stand (with du); (… auf) get up",
+   "lemma": "stehen"
+  },
+  {
+   "form": "Kaufen",
+   "context": "Kaufen wir zusammen ein?",
+   "en": "buy; (… ein) shop",
+   "lemma": "kaufen"
+  },
+  {
+   "form": "Jo",
+   "context": "Jo: Du bist ja schon so früh unterwegs!",
+   "en": "Jo (name)",
+   "lemma": ""
+  },
+  {
+   "form": "früh",
+   "context": "Jo: Du bist ja schon so früh unterwegs!",
+   "en": "early",
+   "lemma": ""
+  },
+  {
+   "form": "unterwegs",
+   "context": "Jo: Du bist ja schon so früh unterwegs!",
+   "en": "on the way, out and about",
+   "lemma": ""
+  },
+  {
+   "form": "Rita",
+   "context": "Rita: Ja, ich stehe immer um sechs Uhr auf.",
+   "en": "Rita (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Ruf",
+   "context": "Ruf mich bitte heute Abend an!",
+   "en": "call (… an = phone)",
+   "lemma": "rufen"
+  },
+  {
+   "form": "Abends",
+   "context": "Abends sehe ich fern.",
+   "en": "in the evenings",
+   "lemma": ""
+  },
+  {
+   "form": "Lücken",
+   "context": "Ergänzen Sie die Lücken. Schreiben Sie alle fehlenden Wörter der Reihe nach in das Antwortfeld.",
+   "en": "gaps",
+   "lemma": "die Lücke"
+  },
+  {
+   "form": "fehlenden",
+   "context": "Ergänzen Sie die Lücken. Schreiben Sie alle fehlenden Wörter der Reihe nach in das Antwortfeld.",
+   "en": "missing",
+   "lemma": "fehlend"
+  },
+  {
+   "form": "Reihe",
+   "context": "Ergänzen Sie die Lücken. Schreiben Sie alle fehlenden Wörter der Reihe nach in das Antwortfeld.",
+   "en": "row (der Reihe nach = in order)",
+   "lemma": "die Reihe"
+  },
+  {
+   "form": "Antwortfeld",
+   "context": "Ergänzen Sie die Lücken. Schreiben Sie alle fehlenden Wörter der Reihe nach in das Antwortfeld.",
+   "en": "answer box",
+   "lemma": "das Antwortfeld"
+  },
+  {
+   "form": "normalen",
+   "context": "Beschreiben Sie Ihren normalen Tag von morgens bis abends. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens vier trennbare Verben. • Nennen Sie bei drei Aktivitäten die Uhrzeit. • Benutzen Sie dann, danach oder am Abend.",
+   "en": "normal",
+   "lemma": "normal"
+  },
+  {
+   "form": "morgens",
+   "context": "Beschreiben Sie Ihren normalen Tag von morgens bis abends. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens vier trennbare Verben. • Nennen Sie bei drei Aktivitäten die Uhrzeit. • Benutzen Sie dann, danach oder am Abend.",
+   "en": "in the mornings",
+   "lemma": ""
+  },
+  {
+   "form": "abends",
+   "context": "Beschreiben Sie Ihren normalen Tag von morgens bis abends. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens vier trennbare Verben. • Nennen Sie bei drei Aktivitäten die Uhrzeit. • Benutzen Sie dann, danach oder am Abend.",
+   "en": "in the evenings",
+   "lemma": ""
+  },
+  {
+   "form": "Aktivitäten",
+   "context": "Beschreiben Sie Ihren normalen Tag von morgens bis abends. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens vier trennbare Verben. • Nennen Sie bei drei Aktivitäten die Uhrzeit. • Benutzen Sie dann, danach oder am Abend.",
+   "en": "activities",
+   "lemma": "die Aktivität"
+  }
+ ]
+}
