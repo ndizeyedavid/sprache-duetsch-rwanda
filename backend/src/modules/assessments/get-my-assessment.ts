@@ -5,7 +5,8 @@ loadStudentAccessProfile
 } from "../../lib/access.js";
 import { badRequest,notFound } from "../../lib/http-error.js";
 import { prisma } from "../../lib/prisma.js";
-import { publicSnapshot,readAttemptPolicy,readSnapshot } from "./attempt-snapshot.js";
+import { readSections } from "./assessment-sections.js";
+import { publicSnapshot,readAttemptPolicy,readSnapshot,snapshotSections } from "./attempt-snapshot.js";
 export const getMyAssessment = async (userId: string, id: string) => {
   const assessment = await prisma.assessment.findUnique({
     where: { id },
@@ -22,6 +23,7 @@ export const getMyAssessment = async (userId: string, id: string) => {
       availableFrom: true,
       availableUntil: true,
       isPublished: true,
+      sections: true,
       questions: {
         orderBy: { order: "asc" },
         select: {
@@ -68,5 +70,6 @@ export const getMyAssessment = async (userId: string, id: string) => {
   const { isPublished: _isPublished, ...meta } = assessment;
   const active = await prisma.attempt.findFirst({ where: { assessmentId: id, studentId: profile.studentId, status: "IN_PROGRESS" }, orderBy: { startedAt: "desc" } });
   const snapshot = active ? readSnapshot(active.questionSnapshot) : null;
-  return { ...meta, ...(active ? readAttemptPolicy(active.questionSnapshot, assessment) : {}), questions: snapshot ? publicSnapshot(snapshot) : meta.questions, attemptCount: attempts.length };
+  const sections = (active ? snapshotSections(active.questionSnapshot) : null) ?? readSections(assessment.sections);
+  return { ...meta, ...(active ? readAttemptPolicy(active.questionSnapshot, assessment) : {}), sections, questions: snapshot ? publicSnapshot(snapshot) : meta.questions, attemptCount: attempts.length };
 };
