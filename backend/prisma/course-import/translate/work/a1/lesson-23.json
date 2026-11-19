@@ -1,0 +1,625 @@
+{
+ "level": "A1",
+ "lesson": 23,
+ "title": "Wetter und Urlaub — Es war schön, denn wir hatten Glück",
+ "lines": [
+  {
+   "de": "Über das Wetter und den Urlaub erzählen und Gründe nennen.",
+   "en": "Talk about the weather and your holiday, and give reasons."
+  },
+  {
+   "de": "Textsorte: Gespräch · Urlaubsbericht",
+   "en": "Text type: Conversation · Holiday report"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Schreiben Teil 2; telc A1 Schreiben",
+   "en": "Exam link: Start Deutsch 1 Writing part 2; telc A1 Writing"
+  },
+  {
+   "de": "über das Wetter sprechen",
+   "en": "talk about the weather"
+  },
+  {
+   "de": "vom Urlaub erzählen",
+   "en": "tell someone about your holiday"
+  },
+  {
+   "de": "Gründe mit denn nennen",
+   "en": "give reasons with denn"
+  },
+  {
+   "de": "Grammatik: Die Konjunktion denn",
+   "en": "Grammar: the conjunction (Konjunktion) denn"
+  },
+  {
+   "de": "denn nennt einen Grund. Wichtig: Nach denn bleibt die normale Wortstellung — das Verb steht auf Position 2, nicht am Ende.",
+   "en": "denn gives a reason. Important: after denn, the normal word order stays — the verb is in position 2, not at the end."
+  },
+  {
+   "de": "Position 2",
+   "en": "position 2"
+  },
+  {
+   "de": "Hauptsatz",
+   "en": "Main clause"
+  },
+  {
+   "de": "Es",
+   "en": "It"
+  },
+  {
+   "de": "wunderbar,",
+   "en": "wonderful,"
+  },
+  {
+   "de": "denn + Hauptsatz",
+   "en": "denn + main clause"
+  },
+  {
+   "de": "denn wir",
+   "en": "because we"
+  },
+  {
+   "de": "ein Traumwetter.",
+   "en": "perfect weather."
+  },
+  {
+   "de": "Vergleich mit weil",
+   "en": "Comparison with weil"
+  },
+  {
+   "de": "…, weil wir",
+   "en": "…, because we"
+  },
+  {
+   "de": "ein Traumwetter hatten.",
+   "en": "had perfect weather."
+  },
+  {
+   "de": "Wir sind viel geschwommen, denn das Wasser war warm.nach denn: normale Wortstellung",
+   "en": "We swam a lot because the water was warm. after denn: normal word order"
+  },
+  {
+   "de": "Ich bin zu Hause geblieben, denn es hat geregnet.Grund nach denn",
+   "en": "I stayed at home because it rained. reason after denn"
+  },
+  {
+   "de": "Tipp: Merken Sie: Nach denn ändert sich nichts. Nach weil geht das Verb ans Ende.",
+   "en": "Tip: Remember: after denn, nothing changes. After weil, the verb goes to the end."
+  },
+  {
+   "de": "das Wetter (Sg.) — EN: weather · FR: le tempsWie war das Wetter?",
+   "en": "Example: What was the weather like?"
+  },
+  {
+   "de": "die Sonne (Sg.) — EN: sun · FR: le soleilDie Sonne hat jeden Tag geschienen.",
+   "en": "Example: The sun shone every day."
+  },
+  {
+   "de": "regnen — EN: to rain · FR: pleuvoirEs hat den ganzen Tag geregnet.",
+   "en": "Example: It rained all day."
+  },
+  {
+   "de": "schneien — EN: to snow · FR: neigerIm Dezember hat es geschneit.",
+   "en": "Example: It snowed in December."
+  },
+  {
+   "de": "warm / kalt — EN: warm / cold · FR: chaud / froidEs war sehr warm.",
+   "en": "Example: It was very warm."
+  },
+  {
+   "de": "der Urlaub (Sg.) — EN: holiday · FR: les vacancesWir waren zwei Wochen im Urlaub.",
+   "en": "Example: We were on holiday for two weeks."
+  },
+  {
+   "de": "schwimmen — EN: to swim · FR: nagerWir sind jeden Tag geschwommen.",
+   "en": "Example: We swam every day."
+  },
+  {
+   "de": "der See, -n — EN: lake · FR: le lacDer See war sehr schön.",
+   "en": "Example: The lake was very beautiful."
+  },
+  {
+   "de": "das Meer, -e — EN: sea · FR: la merWir waren am Meer.",
+   "en": "Example: We were by the sea."
+  },
+  {
+   "de": "wunderbar — EN: wonderful · FR: merveilleuxDer Urlaub war wunderbar!",
+   "en": "Example: The holiday was wonderful!"
+  },
+  {
+   "de": "Glück haben — EN: to be lucky · FR: avoir de la chanceWir hatten Glück mit dem Wetter.",
+   "en": "Example: We were lucky with the weather."
+  },
+  {
+   "de": "denn — EN: because (coordinating) · FR: carIch bleibe zu Hause, denn es regnet.",
+   "en": "Example: I'm staying at home because it's raining."
+  },
+  {
+   "de": "Das Wetter war wunderbar.",
+   "en": "The weather was wonderful."
+  },
+  {
+   "de": "Es hat leider viel geregnet.",
+   "en": "Unfortunately, it rained a lot."
+  },
+  {
+   "de": "Wir hatten Glück mit dem Wetter.",
+   "en": "We were lucky with the weather."
+  },
+  {
+   "de": "Wir waren zwei Wochen am See.",
+   "en": "We were at the lake for two weeks."
+  },
+  {
+   "de": "Wir sind jeden Tag geschwommen.",
+   "en": "We swam every day."
+  },
+  {
+   "de": "Es war wirklich schön.",
+   "en": "It was really nice."
+  },
+  {
+   "de": "Gründe nennen",
+   "en": "giving reasons"
+  },
+  {
+   "de": "…, denn das Wasser war warm.",
+   "en": "…, because the water was warm."
+  },
+  {
+   "de": "…, denn wir hatten viel Zeit.",
+   "en": "…, because we had a lot of time."
+  },
+  {
+   "de": "…, denn es hat nur geregnet.",
+   "en": "…, because it did nothing but rain."
+  },
+  {
+   "de": "Dialog: Nach dem Urlaub",
+   "en": "Dialogue: After the holiday"
+  },
+  {
+   "de": "Ria: Wie war euer Urlaub am See?",
+   "en": "Ria: How was your holiday at the lake?"
+  },
+  {
+   "de": "Paul: Wunderbar! Wir hatten Glück, denn das Wetter war super.",
+   "en": "Paul: Wonderful! We were lucky because the weather was great."
+  },
+  {
+   "de": "Ria: Habt ihr viel gemacht?",
+   "en": "Ria: Did you do a lot?"
+  },
+  {
+   "de": "Paul: Wir sind jeden Tag geschwommen, denn das Wasser war warm.",
+   "en": "Paul: We swam every day because the water was warm."
+  },
+  {
+   "de": "Ria: Und hat es gar nicht geregnet?",
+   "en": "Ria: And didn't it rain at all?"
+  },
+  {
+   "de": "Paul: Nur einmal. Da sind wir ins Museum gegangen.",
+   "en": "Paul: Only once. Then we went to the museum."
+  },
+  {
+   "de": "Wie war das Wetter?",
+   "en": "What was the weather like?"
+  },
+  {
+   "de": "Die Sonne hat jeden Tag geschienen.",
+   "en": "The sun shone every day."
+  },
+  {
+   "de": "Es hat den ganzen Tag geregnet.",
+   "en": "It rained all day."
+  },
+  {
+   "de": "Im Dezember hat es geschneit.",
+   "en": "It snowed in December."
+  },
+  {
+   "de": "Es war sehr warm.",
+   "en": "It was very warm."
+  },
+  {
+   "de": "Wir waren zwei Wochen im Urlaub.",
+   "en": "We were on holiday for two weeks."
+  },
+  {
+   "de": "Der See war sehr schön.",
+   "en": "The lake was very beautiful."
+  },
+  {
+   "de": "Wir waren am Meer.",
+   "en": "We were by the sea."
+  },
+  {
+   "de": "Der Urlaub war wunderbar!",
+   "en": "The holiday was wonderful!"
+  },
+  {
+   "de": "Ich bleibe zu Hause, denn es regnet.",
+   "en": "I'm staying at home because it's raining."
+  },
+  {
+   "de": "Es war schön, ___ wir hatten gutes Wetter. (Konjunktion)",
+   "en": "It was nice, ___ we had good weather. (conjunction)"
+  },
+  {
+   "de": "Es ___ den ganzen Tag geregnet. (haben, Perfekt)",
+   "en": "It ___ rained all day. (haben, present perfect)"
+  },
+  {
+   "de": "Wir ___ jeden Tag geschwommen. (sein, wir)",
+   "en": "We ___ swum every day. (sein, wir)"
+  },
+  {
+   "de": "Was ist der Unterschied zwischen denn und weil?",
+   "en": "What is the difference between denn and weil?"
+  },
+  {
+   "de": "Schreiben Sie über einen Urlaub: Wo waren Sie, wie war das Wetter und was haben Sie gemacht? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie das Perfekt und war / hatte. • Nennen Sie einmal einen Grund mit denn. • Schreiben Sie, wie es Ihnen gefallen hat.",
+   "en": "Write about a holiday: Where were you, what was the weather like and what did you do? Length: 30–40 words Checklist: • Use the present perfect and war / hatte. • Give a reason with denn once. • Write how you liked it."
+  },
+  {
+   "de": "denn nennt einen Grund.",
+   "en": "denn gives a reason."
+  },
+  {
+   "de": "Nach denn bleibt die normale Wortstellung: Verb auf Position 2.",
+   "en": "After denn, the normal word order stays: verb in position 2."
+  },
+  {
+   "de": "regnen → es hat geregnet.",
+   "en": "regnen (to rain) → es hat geregnet (it rained)."
+  },
+  {
+   "de": "schwimmen als Bewegung → Perfekt mit sein.",
+   "en": "schwimmen as movement → present perfect with sein."
+  },
+  {
+   "de": "weil leitet einen Nebensatz ein, denn verbindet zwei Hauptsätze.",
+   "en": "weil introduces a subordinate clause; denn joins two main clauses."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Wetter",
+   "context": "Über das Wetter und den Urlaub erzählen und Gründe nennen.",
+   "en": "weather",
+   "lemma": "das Wetter"
+  },
+  {
+   "form": "Urlaub",
+   "context": "Über das Wetter und den Urlaub erzählen und Gründe nennen.",
+   "en": "holiday",
+   "lemma": "der Urlaub"
+  },
+  {
+   "form": "Gründe",
+   "context": "Über das Wetter und den Urlaub erzählen und Gründe nennen.",
+   "en": "reasons",
+   "lemma": "der Grund"
+  },
+  {
+   "form": "Urlaubsbericht",
+   "context": "Textsorte: Gespräch · Urlaubsbericht",
+   "en": "holiday report",
+   "lemma": "der Urlaubsbericht"
+  },
+  {
+   "form": "Konjunktion",
+   "context": "Grammatik: Die Konjunktion denn",
+   "en": "conjunction",
+   "lemma": "die Konjunktion"
+  },
+  {
+   "form": "Grund",
+   "context": "denn nennt einen Grund. Wichtig: Nach denn bleibt die normale Wortstellung — das Verb steht auf Position 2, nicht am Ende.",
+   "en": "reason",
+   "lemma": "der Grund"
+  },
+  {
+   "form": "Wichtig",
+   "context": "denn nennt einen Grund. Wichtig: Nach denn bleibt die normale Wortstellung — das Verb steht auf Position 2, nicht am Ende.",
+   "en": "important",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "Wortstellung",
+   "context": "denn nennt einen Grund. Wichtig: Nach denn bleibt die normale Wortstellung — das Verb steht auf Position 2, nicht am Ende.",
+   "en": "word order",
+   "lemma": "die Wortstellung"
+  },
+  {
+   "form": "Hauptsatz",
+   "context": "Hauptsatz",
+   "en": "main clause",
+   "lemma": "der Hauptsatz"
+  },
+  {
+   "form": "wunderbar",
+   "context": "wunderbar,",
+   "en": "wonderful",
+   "lemma": ""
+  },
+  {
+   "form": "Traumwetter",
+   "context": "ein Traumwetter.",
+   "en": "perfect weather",
+   "lemma": "das Traumwetter"
+  },
+  {
+   "form": "Vergleich",
+   "context": "Vergleich mit weil",
+   "en": "comparison",
+   "lemma": "der Vergleich"
+  },
+  {
+   "form": "weil",
+   "context": "Vergleich mit weil",
+   "en": "because",
+   "lemma": ""
+  },
+  {
+   "form": "geschwommen",
+   "context": "Wir sind viel geschwommen, denn das Wasser war warm.nach denn: normale Wortstellung",
+   "en": "swum",
+   "lemma": "schwimmen"
+  },
+  {
+   "form": "geregnet",
+   "context": "Ich bin zu Hause geblieben, denn es hat geregnet.Grund nach denn",
+   "en": "rained",
+   "lemma": "regnen"
+  },
+  {
+   "form": "ans",
+   "context": "Tipp: Merken Sie: Nach denn ändert sich nichts. Nach weil geht das Verb ans Ende.",
+   "en": "to the (an das)",
+   "lemma": ""
+  },
+  {
+   "form": "weather",
+   "context": "das Wetter (Sg.) — EN: weather · FR: le tempsWie war das Wetter?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tempsWie",
+   "context": "das Wetter (Sg.) — EN: weather · FR: le tempsWie war das Wetter?",
+   "en": "how",
+   "lemma": ""
+  },
+  {
+   "form": "Sonne",
+   "context": "die Sonne (Sg.) — EN: sun · FR: le soleilDie Sonne hat jeden Tag geschienen.",
+   "en": "sun",
+   "lemma": "die Sonne"
+  },
+  {
+   "form": "sun",
+   "context": "die Sonne (Sg.) — EN: sun · FR: le soleilDie Sonne hat jeden Tag geschienen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soleilDie",
+   "context": "die Sonne (Sg.) — EN: sun · FR: le soleilDie Sonne hat jeden Tag geschienen.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "geschienen",
+   "context": "die Sonne (Sg.) — EN: sun · FR: le soleilDie Sonne hat jeden Tag geschienen.",
+   "en": "shone",
+   "lemma": "scheinen"
+  },
+  {
+   "form": "regnen",
+   "context": "regnen — EN: to rain · FR: pleuvoirEs hat den ganzen Tag geregnet.",
+   "en": "to rain",
+   "lemma": ""
+  },
+  {
+   "form": "rain",
+   "context": "regnen — EN: to rain · FR: pleuvoirEs hat den ganzen Tag geregnet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pleuvoirEs",
+   "context": "regnen — EN: to rain · FR: pleuvoirEs hat den ganzen Tag geregnet.",
+   "en": "it",
+   "lemma": ""
+  },
+  {
+   "form": "ganzen",
+   "context": "regnen — EN: to rain · FR: pleuvoirEs hat den ganzen Tag geregnet.",
+   "en": "whole",
+   "lemma": "ganz"
+  },
+  {
+   "form": "schneien",
+   "context": "schneien — EN: to snow · FR: neigerIm Dezember hat es geschneit.",
+   "en": "to snow",
+   "lemma": ""
+  },
+  {
+   "form": "snow",
+   "context": "schneien — EN: to snow · FR: neigerIm Dezember hat es geschneit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "neigerIm",
+   "context": "schneien — EN: to snow · FR: neigerIm Dezember hat es geschneit.",
+   "en": "in the",
+   "lemma": ""
+  },
+  {
+   "form": "Dezember",
+   "context": "schneien — EN: to snow · FR: neigerIm Dezember hat es geschneit.",
+   "en": "December",
+   "lemma": "der Dezember"
+  },
+  {
+   "form": "geschneit",
+   "context": "schneien — EN: to snow · FR: neigerIm Dezember hat es geschneit.",
+   "en": "snowed",
+   "lemma": "schneien"
+  },
+  {
+   "form": "kalt",
+   "context": "warm / kalt — EN: warm / cold · FR: chaud / froidEs war sehr warm.",
+   "en": "cold",
+   "lemma": ""
+  },
+  {
+   "form": "chaud",
+   "context": "warm / kalt — EN: warm / cold · FR: chaud / froidEs war sehr warm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "froidEs",
+   "context": "warm / kalt — EN: warm / cold · FR: chaud / froidEs war sehr warm.",
+   "en": "it",
+   "lemma": ""
+  },
+  {
+   "form": "holiday",
+   "context": "der Urlaub (Sg.) — EN: holiday · FR: les vacancesWir waren zwei Wochen im Urlaub.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vacancesWir",
+   "context": "der Urlaub (Sg.) — EN: holiday · FR: les vacancesWir waren zwei Wochen im Urlaub.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "nagerWir",
+   "context": "schwimmen — EN: to swim · FR: nagerWir sind jeden Tag geschwommen.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "See",
+   "context": "der See, -n — EN: lake · FR: le lacDer See war sehr schön.",
+   "en": "lake; sea",
+   "lemma": "der See"
+  },
+  {
+   "form": "lake",
+   "context": "der See, -n — EN: lake · FR: le lacDer See war sehr schön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lacDer",
+   "context": "der See, -n — EN: lake · FR: le lacDer See war sehr schön.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Meer",
+   "context": "das Meer, -e — EN: sea · FR: la merWir waren am Meer.",
+   "en": "sea",
+   "lemma": "das Meer"
+  },
+  {
+   "form": "sea",
+   "context": "das Meer, -e — EN: sea · FR: la merWir waren am Meer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "merWir",
+   "context": "das Meer, -e — EN: sea · FR: la merWir waren am Meer.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "wonderful",
+   "context": "wunderbar — EN: wonderful · FR: merveilleuxDer Urlaub war wunderbar!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "merveilleuxDer",
+   "context": "wunderbar — EN: wonderful · FR: merveilleuxDer Urlaub war wunderbar!",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "lucky",
+   "context": "Glück haben — EN: to be lucky · FR: avoir de la chanceWir hatten Glück mit dem Wetter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chanceWir",
+   "context": "Glück haben — EN: to be lucky · FR: avoir de la chanceWir hatten Glück mit dem Wetter.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "because",
+   "context": "denn — EN: because (coordinating) · FR: carIch bleibe zu Hause, denn es regnet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "coordinating",
+   "context": "denn — EN: because (coordinating) · FR: carIch bleibe zu Hause, denn es regnet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "carIch",
+   "context": "denn — EN: because (coordinating) · FR: carIch bleibe zu Hause, denn es regnet.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "bleibe",
+   "context": "denn — EN: because (coordinating) · FR: carIch bleibe zu Hause, denn es regnet.",
+   "en": "stay",
+   "lemma": "bleiben"
+  },
+  {
+   "form": "regnet",
+   "context": "denn — EN: because (coordinating) · FR: carIch bleibe zu Hause, denn es regnet.",
+   "en": "rains; is raining",
+   "lemma": "regnen"
+  },
+  {
+   "form": "Ria",
+   "context": "Ria: Wie war euer Urlaub am See?",
+   "en": "Ria (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Paul",
+   "context": "Paul: Wunderbar! Wir hatten Glück, denn das Wetter war super.",
+   "en": "Paul (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Wunderbar",
+   "context": "Paul: Wunderbar! Wir hatten Glück, denn das Wetter war super.",
+   "en": "wonderful",
+   "lemma": "wunderbar"
+  },
+  {
+   "form": "gutes",
+   "context": "Es war schön, ___ wir hatten gutes Wetter. (Konjunktion)",
+   "en": "good",
+   "lemma": "gut"
+  }
+ ]
+}
