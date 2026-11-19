@@ -1,0 +1,827 @@
+{
+ "level": "B1",
+ "lesson": 2,
+ "title": "Beruf und Arbeit — Damals arbeitete sie in einem kleinen Büro",
+ "lines": [
+  {
+   "de": "Über den beruflichen Werdegang erzählen — schriftlich, in der Vergangenheit.",
+   "en": "Talking about your career path — in writing, in the past tense."
+  },
+  {
+   "de": "einen Lebenslauf und eine Berufsbiografie schriftlich erzählen",
+   "en": "describe a CV and a career history in writing"
+  },
+  {
+   "de": "das Präteritum regelmäßiger, unregelmäßiger und gemischter Verben bilden",
+   "en": "form the simple past (Präteritum) of regular, irregular and mixed verbs"
+  },
+  {
+   "de": "Präteritum und Perfekt richtig unterscheiden",
+   "en": "correctly distinguish between the simple past (Präteritum) and the present perfect (Perfekt)"
+  },
+  {
+   "de": "Grammatik: Präteritum",
+   "en": "Grammar: simple past (Präteritum)"
+  },
+  {
+   "de": "Das Präteritum ist die Erzählvergangenheit: Man benutzt es vor allem schriftlich — in Berichten, Biografien, Zeitungstexten und Geschichten. Im Gespräch benutzt man dagegen meistens das Perfekt. Ausnahme: sein, haben, werden und die Modalverben stehen auch mündlich im Präteritum.",
+   "en": "The simple past (Präteritum) is the narrative past tense: it is used mainly in writing — in reports, biographies, newspaper articles and stories. In conversation, on the other hand, people mostly use the present perfect (Perfekt). Exception: sein, haben, werden and the modal verbs are also used in the simple past when speaking."
+  },
+  {
+   "de": "regelmäßig (arbeiten)",
+   "en": "regular (arbeiten = to work)"
+  },
+  {
+   "de": "unregelmäßig (gehen)",
+   "en": "irregular (gehen = to go)"
+  },
+  {
+   "de": "gemischt (bringen)",
+   "en": "mixed (bringen = to bring)"
+  },
+  {
+   "de": "arbeitete",
+   "en": "worked"
+  },
+  {
+   "de": "ging",
+   "en": "went"
+  },
+  {
+   "de": "brachte",
+   "en": "brought"
+  },
+  {
+   "de": "arbeitetest",
+   "en": "you worked"
+  },
+  {
+   "de": "gingst",
+   "en": "you went"
+  },
+  {
+   "de": "brachtest",
+   "en": "you brought"
+  },
+  {
+   "de": "arbeiteten",
+   "en": "we/they worked"
+  },
+  {
+   "de": "gingen",
+   "en": "we/they went"
+  },
+  {
+   "de": "brachten",
+   "en": "we/they brought"
+  },
+  {
+   "de": "arbeitetet",
+   "en": "you (plural) worked"
+  },
+  {
+   "de": "gingt",
+   "en": "you (plural) went"
+  },
+  {
+   "de": "brachtet",
+   "en": "you (plural) brought"
+  },
+  {
+   "de": "Nach dem Studium bewarb sie sich bei einer kleinen Agentur.unregelmäßig: sich bewerben → bewarb",
+   "en": "After her studies she applied to a small agency. (irregular: sich bewerben → bewarb)"
+  },
+  {
+   "de": "Drei Jahre lang leitete er das Team in Hamburg.regelmäßig: -te",
+   "en": "For three years he led the team in Hamburg. (regular: -te)"
+  },
+  {
+   "de": "Die Firma kannte er schon aus seinem Praktikum.gemischt: kennen → kannte",
+   "en": "He already knew the company from his internship. (mixed: kennen → kannte)"
+  },
+  {
+   "de": "Tipp: Merkhilfe: ich und er/es/sie haben im Präteritum immer dieselbe Form — ohne Endung bei unregelmäßigen Verben (ich ging / er ging).",
+   "en": "Tip: Memory aid: in the simple past, ich and er/es/sie always have the same form — with no ending for irregular verbs (ich ging / er ging)."
+  },
+  {
+   "de": "der Lebenslauf, ¨-e — EN: CV, résumé · FR: le CVBitte schicken Sie uns Ihren Lebenslauf.",
+   "en": "Example: Please send us your CV."
+  },
+  {
+   "de": "die Ausbildung, -en — EN: vocational training · FR: la formationSie machte eine Ausbildung zur Kauffrau.",
+   "en": "Example: She trained as a commercial clerk."
+  },
+  {
+   "de": "sich bewerben um / bei — EN: to apply for / at · FR: postuler pour / chezEr bewarb sich bei einem großen Betrieb.",
+   "en": "Example: He applied to a large company."
+  },
+  {
+   "de": "die Stelle, -n — EN: job, position · FR: le posteDie Stelle war befristet.",
+   "en": "Example: The job was fixed-term."
+  },
+  {
+   "de": "der Betrieb, -e — EN: company, plant · FR: l'entrepriseDer Betrieb hat 200 Mitarbeiter.",
+   "en": "Example: The company has 200 employees."
+  },
+  {
+   "de": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "Example: She did her tasks very carefully."
+  },
+  {
+   "de": "zuständig sein für — EN: to be responsible for · FR: être responsable deIch war für den Einkauf zuständig.",
+   "en": "Example: I was responsible for purchasing."
+  },
+  {
+   "de": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "Example: After two years he quit."
+  },
+  {
+   "de": "befördern — EN: to promote · FR: promouvoir2019 wurde sie zur Abteilungsleiterin befördert.",
+   "en": "Example: In 2019 she was promoted to head of department."
+  },
+  {
+   "de": "die Erfahrung, -en — EN: experience · FR: l'expérienceDort sammelte er erste Erfahrungen im Vertrieb.",
+   "en": "Example: There he gained his first experience in sales."
+  },
+  {
+   "de": "der Schichtdienst (Sg.) — EN: shift work · FR: le travail postéSchichtdienst war für sie sehr anstrengend.",
+   "en": "Example: Shift work was very tiring for her."
+  },
+  {
+   "de": "selbstständig — EN: self-employed; independent · FR: indépendantSeit 2021 ist er selbstständig.",
+   "en": "Example: He has been self-employed since 2021."
+  },
+  {
+   "de": "eine Berufsbiografie erzählen",
+   "en": "telling a career history"
+  },
+  {
+   "de": "Nach der Schule absolvierte sie zunächst …",
+   "en": "After school she first completed …"
+  },
+  {
+   "de": "Anschließend arbeitete er einige Jahre als …",
+   "en": "After that he worked for several years as …"
+  },
+  {
+   "de": "Schließlich wechselte sie in die Branche …",
+   "en": "Finally she moved into the … sector"
+  },
+  {
+   "de": "Zeit strukturieren",
+   "en": "structuring time"
+  },
+  {
+   "de": "Zunächst … / Danach … / Schließlich …",
+   "en": "First … / After that … / Finally …"
+  },
+  {
+   "de": "Zwei Jahre später …",
+   "en": "Two years later …"
+  },
+  {
+   "de": "Von 2015 bis 2018 …",
+   "en": "From 2015 to 2018 …"
+  },
+  {
+   "de": "ein Arbeitszeugnis formulieren",
+   "en": "writing a job reference"
+  },
+  {
+   "de": "Sie erledigte ihre Aufgaben stets zuverlässig.",
+   "en": "She always carried out her tasks reliably."
+  },
+  {
+   "de": "Er war für … zuständig.",
+   "en": "He was responsible for …"
+  },
+  {
+   "de": "Wir bedauern ihr Ausscheiden sehr.",
+   "en": "We very much regret her departure."
+  },
+  {
+   "de": "Bitte schicken Sie uns Ihren Lebenslauf.",
+   "en": "Please send us your CV."
+  },
+  {
+   "de": "Sie machte eine Ausbildung zur Kauffrau.",
+   "en": "She trained as a commercial clerk."
+  },
+  {
+   "de": "Er bewarb sich bei einem großen Betrieb.",
+   "en": "He applied to a large company."
+  },
+  {
+   "de": "Die Stelle war befristet.",
+   "en": "The job was fixed-term."
+  },
+  {
+   "de": "Der Betrieb hat 200 Mitarbeiter.",
+   "en": "The company has 200 employees."
+  },
+  {
+   "de": "Sie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "She did her tasks very carefully."
+  },
+  {
+   "de": "Ich war für den Einkauf zuständig.",
+   "en": "I was responsible for purchasing."
+  },
+  {
+   "de": "Nach zwei Jahren kündigte er.",
+   "en": "After two years he quit."
+  },
+  {
+   "de": "2019 wurde sie zur Abteilungsleiterin befördert.",
+   "en": "In 2019 she was promoted to head of department."
+  },
+  {
+   "de": "Dort sammelte er erste Erfahrungen im Vertrieb.",
+   "en": "There he gained his first experience in sales."
+  },
+  {
+   "de": "Schichtdienst war für sie sehr anstrengend.",
+   "en": "Shift work was very tiring for her."
+  },
+  {
+   "de": "Seit 2021 ist er selbstständig.",
+   "en": "He has been self-employed since 2021."
+  },
+  {
+   "de": "Nach der Ausbildung ___ sie drei Jahre in Leipzig. (arbeiten, Präteritum)",
+   "en": "After her training she ___ in Leipzig for three years. (arbeiten, simple past)"
+  },
+  {
+   "de": "Er ___ 2018 nach München und begann dort ein Studium. (ziehen, Präteritum)",
+   "en": "In 2018 he ___ to Munich and started a degree there. (ziehen, simple past)"
+  },
+  {
+   "de": "Welcher Satz passt in einen schriftlichen Lebensbericht?",
+   "en": "Which sentence fits in a written account of someone's life?"
+  },
+  {
+   "de": "Die Firma ___ ihm damals ein gutes Angebot. (machen, Präteritum)",
+   "en": "Back then the company ___ him a good offer. (machen, simple past)"
+  },
+  {
+   "de": "Welche Form ist das Präteritum von 'bringen'?",
+   "en": "Which form is the simple past of 'bringen'?"
+  },
+  {
+   "de": "Regelmäßiges Verb: Stamm arbeit- + -ete (wegen -t am Stammende).",
+   "en": "Regular verb: stem arbeit- + -ete (because the stem ends in -t)."
+  },
+  {
+   "de": "Unregelmäßig: ziehen – zog – gezogen.",
+   "en": "Irregular: ziehen – zog – gezogen."
+  },
+  {
+   "de": "Schriftliche Erzählung → Präteritum.",
+   "en": "Written narrative → simple past (Präteritum)."
+  },
+  {
+   "de": "Regelmäßig: mach- + -te.",
+   "en": "Regular: mach- + -te."
+  },
+  {
+   "de": "Gemischtes Verb: Vokalwechsel + Endung -te.",
+   "en": "Mixed verb: vowel change + ending -te."
+  }
+ ],
+ "forms": [
+  {
+   "form": "beruflichen",
+   "context": "Über den beruflichen Werdegang erzählen — schriftlich, in der Vergangenheit.",
+   "en": "professional, career",
+   "lemma": "beruflich"
+  },
+  {
+   "form": "Werdegang",
+   "context": "Über den beruflichen Werdegang erzählen — schriftlich, in der Vergangenheit.",
+   "en": "career path, background",
+   "lemma": "der Werdegang"
+  },
+  {
+   "form": "schriftlich",
+   "context": "Über den beruflichen Werdegang erzählen — schriftlich, in der Vergangenheit.",
+   "en": "in writing; written",
+   "lemma": ""
+  },
+  {
+   "form": "Lebenslauf",
+   "context": "einen Lebenslauf und eine Berufsbiografie schriftlich erzählen",
+   "en": "CV, résumé",
+   "lemma": "der Lebenslauf"
+  },
+  {
+   "form": "Berufsbiografie",
+   "context": "einen Lebenslauf und eine Berufsbiografie schriftlich erzählen",
+   "en": "career history",
+   "lemma": "die Berufsbiografie"
+  },
+  {
+   "form": "gemischter",
+   "context": "das Präteritum regelmäßiger, unregelmäßiger und gemischter Verben bilden",
+   "en": "mixed",
+   "lemma": "gemischt"
+  },
+  {
+   "form": "Erzählvergangenheit",
+   "context": "Das Präteritum ist die Erzählvergangenheit: Man benutzt es vor allem schriftlich — in Berichten, Biografien, Zeitungstexten und Geschichten. Im Gespräch benutzt man dagegen meistens das Perfekt. Ausnahme: sein, haben, werden und die Modalverben stehen auch mündlich im Präteritum.",
+   "en": "narrative past tense",
+   "lemma": "die Erzählvergangenheit"
+  },
+  {
+   "form": "Biografien",
+   "context": "Das Präteritum ist die Erzählvergangenheit: Man benutzt es vor allem schriftlich — in Berichten, Biografien, Zeitungstexten und Geschichten. Im Gespräch benutzt man dagegen meistens das Perfekt. Ausnahme: sein, haben, werden und die Modalverben stehen auch mündlich im Präteritum.",
+   "en": "biographies",
+   "lemma": "die Biografie"
+  },
+  {
+   "form": "Zeitungstexten",
+   "context": "Das Präteritum ist die Erzählvergangenheit: Man benutzt es vor allem schriftlich — in Berichten, Biografien, Zeitungstexten und Geschichten. Im Gespräch benutzt man dagegen meistens das Perfekt. Ausnahme: sein, haben, werden und die Modalverben stehen auch mündlich im Präteritum.",
+   "en": "newspaper articles",
+   "lemma": "der Zeitungstext"
+  },
+  {
+   "form": "Geschichten",
+   "context": "Das Präteritum ist die Erzählvergangenheit: Man benutzt es vor allem schriftlich — in Berichten, Biografien, Zeitungstexten und Geschichten. Im Gespräch benutzt man dagegen meistens das Perfekt. Ausnahme: sein, haben, werden und die Modalverben stehen auch mündlich im Präteritum.",
+   "en": "stories",
+   "lemma": "die Geschichte"
+  },
+  {
+   "form": "mündlich",
+   "context": "Das Präteritum ist die Erzählvergangenheit: Man benutzt es vor allem schriftlich — in Berichten, Biografien, Zeitungstexten und Geschichten. Im Gespräch benutzt man dagegen meistens das Perfekt. Ausnahme: sein, haben, werden und die Modalverben stehen auch mündlich im Präteritum.",
+   "en": "orally, in speech",
+   "lemma": ""
+  },
+  {
+   "form": "gemischt",
+   "context": "gemischt (bringen)",
+   "en": "mixed",
+   "lemma": ""
+  },
+  {
+   "form": "arbeitete",
+   "context": "arbeitete",
+   "en": "worked",
+   "lemma": "arbeiten"
+  },
+  {
+   "form": "brachte",
+   "context": "brachte",
+   "en": "brought",
+   "lemma": "bringen"
+  },
+  {
+   "form": "arbeitetest",
+   "context": "arbeitetest",
+   "en": "worked (with du)",
+   "lemma": "arbeiten"
+  },
+  {
+   "form": "gingst",
+   "context": "gingst",
+   "en": "went (with du)",
+   "lemma": "gehen"
+  },
+  {
+   "form": "brachtest",
+   "context": "brachtest",
+   "en": "brought (with du)",
+   "lemma": "bringen"
+  },
+  {
+   "form": "arbeiteten",
+   "context": "arbeiteten",
+   "en": "worked (we/they)",
+   "lemma": "arbeiten"
+  },
+  {
+   "form": "gingen",
+   "context": "gingen",
+   "en": "went (we/they)",
+   "lemma": "gehen"
+  },
+  {
+   "form": "brachten",
+   "context": "brachten",
+   "en": "brought (we/they)",
+   "lemma": "bringen"
+  },
+  {
+   "form": "arbeitetet",
+   "context": "arbeitetet",
+   "en": "worked (with ihr)",
+   "lemma": "arbeiten"
+  },
+  {
+   "form": "gingt",
+   "context": "gingt",
+   "en": "went (with ihr)",
+   "lemma": "gehen"
+  },
+  {
+   "form": "brachtet",
+   "context": "brachtet",
+   "en": "brought (with ihr)",
+   "lemma": "bringen"
+  },
+  {
+   "form": "Studium",
+   "context": "Nach dem Studium bewarb sie sich bei einer kleinen Agentur.unregelmäßig: sich bewerben → bewarb",
+   "en": "university studies, degree",
+   "lemma": "das Studium"
+  },
+  {
+   "form": "bewarb",
+   "context": "Nach dem Studium bewarb sie sich bei einer kleinen Agentur.unregelmäßig: sich bewerben → bewarb",
+   "en": "applied",
+   "lemma": "sich bewerben"
+  },
+  {
+   "form": "kleinen",
+   "context": "Nach dem Studium bewarb sie sich bei einer kleinen Agentur.unregelmäßig: sich bewerben → bewarb",
+   "en": "small",
+   "lemma": "klein"
+  },
+  {
+   "form": "Agentur",
+   "context": "Nach dem Studium bewarb sie sich bei einer kleinen Agentur.unregelmäßig: sich bewerben → bewarb",
+   "en": "agency",
+   "lemma": "die Agentur"
+  },
+  {
+   "form": "leitete",
+   "context": "Drei Jahre lang leitete er das Team in Hamburg.regelmäßig: -te",
+   "en": "led, managed",
+   "lemma": "leiten"
+  },
+  {
+   "form": "kannte",
+   "context": "Die Firma kannte er schon aus seinem Praktikum.gemischt: kennen → kannte",
+   "en": "knew",
+   "lemma": "kennen"
+  },
+  {
+   "form": "unregelmäßigen",
+   "context": "Tipp: Merkhilfe: ich und er/es/sie haben im Präteritum immer dieselbe Form — ohne Endung bei unregelmäßigen Verben (ich ging / er ging).",
+   "en": "irregular",
+   "lemma": "unregelmäßig"
+  },
+  {
+   "form": "CV",
+   "context": "der Lebenslauf, ¨-e — EN: CV, résumé · FR: le CVBitte schicken Sie uns Ihren Lebenslauf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "résumé",
+   "context": "der Lebenslauf, ¨-e — EN: CV, résumé · FR: le CVBitte schicken Sie uns Ihren Lebenslauf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "CVBitte",
+   "context": "der Lebenslauf, ¨-e — EN: CV, résumé · FR: le CVBitte schicken Sie uns Ihren Lebenslauf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "formationSie",
+   "context": "die Ausbildung, -en — EN: vocational training · FR: la formationSie machte eine Ausbildung zur Kauffrau.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Kauffrau",
+   "context": "die Ausbildung, -en — EN: vocational training · FR: la formationSie machte eine Ausbildung zur Kauffrau.",
+   "en": "commercial clerk; businesswoman",
+   "lemma": "die Kauffrau"
+  },
+  {
+   "form": "pour",
+   "context": "sich bewerben um / bei — EN: to apply for / at · FR: postuler pour / chezEr bewarb sich bei einem großen Betrieb.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chezEr",
+   "context": "sich bewerben um / bei — EN: to apply for / at · FR: postuler pour / chezEr bewarb sich bei einem großen Betrieb.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "befristet",
+   "context": "die Stelle, -n — EN: job, position · FR: le posteDie Stelle war befristet.",
+   "en": "fixed-term, temporary",
+   "lemma": ""
+  },
+  {
+   "form": "plant",
+   "context": "der Betrieb, -e — EN: company, plant · FR: l'entrepriseDer Betrieb hat 200 Mitarbeiter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erledigen",
+   "context": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "to get done, handle",
+   "lemma": ""
+  },
+  {
+   "form": "done",
+   "context": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "handle",
+   "context": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "effectuer",
+   "context": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réglerSie",
+   "context": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erledigte",
+   "context": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "did, got done",
+   "lemma": "erledigen"
+  },
+  {
+   "form": "sorgfältig",
+   "context": "erledigen — EN: to get done, handle · FR: effectuer, réglerSie erledigte ihre Aufgaben sehr sorgfältig.",
+   "en": "carefully; careful",
+   "lemma": ""
+  },
+  {
+   "form": "zuständig",
+   "context": "zuständig sein für — EN: to be responsible for · FR: être responsable deIch war für den Einkauf zuständig.",
+   "en": "responsible",
+   "lemma": ""
+  },
+  {
+   "form": "responsible",
+   "context": "zuständig sein für — EN: to be responsible for · FR: être responsable deIch war für den Einkauf zuständig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "responsable",
+   "context": "zuständig sein für — EN: to be responsible for · FR: être responsable deIch war für den Einkauf zuständig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Einkauf",
+   "context": "zuständig sein für — EN: to be responsible for · FR: être responsable deIch war für den Einkauf zuständig.",
+   "en": "purchasing; shopping",
+   "lemma": "der Einkauf"
+  },
+  {
+   "form": "kündigen",
+   "context": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "to quit; to give notice",
+   "lemma": ""
+  },
+  {
+   "form": "quit",
+   "context": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "give",
+   "context": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "notice",
+   "context": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "démissionner",
+   "context": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "licencierNach",
+   "context": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "kündigte",
+   "context": "kündigen — EN: to quit / give notice · FR: démissionner, licencierNach zwei Jahren kündigte er.",
+   "en": "quit, handed in notice",
+   "lemma": "kündigen"
+  },
+  {
+   "form": "befördern",
+   "context": "befördern — EN: to promote · FR: promouvoir2019 wurde sie zur Abteilungsleiterin befördert.",
+   "en": "to promote; to transport",
+   "lemma": ""
+  },
+  {
+   "form": "promote",
+   "context": "befördern — EN: to promote · FR: promouvoir2019 wurde sie zur Abteilungsleiterin befördert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "promouvoir",
+   "context": "befördern — EN: to promote · FR: promouvoir2019 wurde sie zur Abteilungsleiterin befördert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Abteilungsleiterin",
+   "context": "befördern — EN: to promote · FR: promouvoir2019 wurde sie zur Abteilungsleiterin befördert.",
+   "en": "head of department (woman)",
+   "lemma": "die Abteilungsleiterin"
+  },
+  {
+   "form": "befördert",
+   "context": "befördern — EN: to promote · FR: promouvoir2019 wurde sie zur Abteilungsleiterin befördert.",
+   "en": "promoted",
+   "lemma": "befördern"
+  },
+  {
+   "form": "l'expérienceDort",
+   "context": "die Erfahrung, -en — EN: experience · FR: l'expérienceDort sammelte er erste Erfahrungen im Vertrieb.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sammelte",
+   "context": "die Erfahrung, -en — EN: experience · FR: l'expérienceDort sammelte er erste Erfahrungen im Vertrieb.",
+   "en": "gained, collected",
+   "lemma": "sammeln"
+  },
+  {
+   "form": "Vertrieb",
+   "context": "die Erfahrung, -en — EN: experience · FR: l'expérienceDort sammelte er erste Erfahrungen im Vertrieb.",
+   "en": "sales",
+   "lemma": "der Vertrieb"
+  },
+  {
+   "form": "Schichtdienst",
+   "context": "der Schichtdienst (Sg.) — EN: shift work · FR: le travail postéSchichtdienst war für sie sehr anstrengend.",
+   "en": "shift work",
+   "lemma": "der Schichtdienst"
+  },
+  {
+   "form": "shift",
+   "context": "der Schichtdienst (Sg.) — EN: shift work · FR: le travail postéSchichtdienst war für sie sehr anstrengend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "travail",
+   "context": "der Schichtdienst (Sg.) — EN: shift work · FR: le travail postéSchichtdienst war für sie sehr anstrengend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "postéSchichtdienst",
+   "context": "der Schichtdienst (Sg.) — EN: shift work · FR: le travail postéSchichtdienst war für sie sehr anstrengend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "self-employed",
+   "context": "selbstständig — EN: self-employed; independent · FR: indépendantSeit 2021 ist er selbstständig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "independent",
+   "context": "selbstständig — EN: self-employed; independent · FR: indépendantSeit 2021 ist er selbstständig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "indépendantSeit",
+   "context": "selbstständig — EN: self-employed; independent · FR: indépendantSeit 2021 ist er selbstständig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "absolvierte",
+   "context": "Nach der Schule absolvierte sie zunächst …",
+   "en": "completed",
+   "lemma": "absolvieren"
+  },
+  {
+   "form": "zunächst",
+   "context": "Nach der Schule absolvierte sie zunächst …",
+   "en": "first, at first",
+   "lemma": ""
+  },
+  {
+   "form": "Anschließend",
+   "context": "Anschließend arbeitete er einige Jahre als …",
+   "en": "afterwards, then",
+   "lemma": ""
+  },
+  {
+   "form": "wechselte",
+   "context": "Schließlich wechselte sie in die Branche …",
+   "en": "switched, moved",
+   "lemma": "wechseln"
+  },
+  {
+   "form": "Branche",
+   "context": "Schließlich wechselte sie in die Branche …",
+   "en": "industry, sector",
+   "lemma": "die Branche"
+  },
+  {
+   "form": "strukturieren",
+   "context": "Zeit strukturieren",
+   "en": "to structure",
+   "lemma": ""
+  },
+  {
+   "form": "Zunächst",
+   "context": "Zunächst … / Danach … / Schließlich …",
+   "en": "first, at first",
+   "lemma": ""
+  },
+  {
+   "form": "Arbeitszeugnis",
+   "context": "ein Arbeitszeugnis formulieren",
+   "en": "job reference",
+   "lemma": "das Arbeitszeugnis"
+  },
+  {
+   "form": "formulieren",
+   "context": "ein Arbeitszeugnis formulieren",
+   "en": "to word, formulate",
+   "lemma": ""
+  },
+  {
+   "form": "stets",
+   "context": "Sie erledigte ihre Aufgaben stets zuverlässig.",
+   "en": "always",
+   "lemma": ""
+  },
+  {
+   "form": "bedauern",
+   "context": "Wir bedauern ihr Ausscheiden sehr.",
+   "en": "regret",
+   "lemma": ""
+  },
+  {
+   "form": "Ausscheiden",
+   "context": "Wir bedauern ihr Ausscheiden sehr.",
+   "en": "departure (from a job)",
+   "lemma": "das Ausscheiden"
+  },
+  {
+   "form": "Leipzig",
+   "context": "Nach der Ausbildung ___ sie drei Jahre in Leipzig. (arbeiten, Präteritum)",
+   "en": "Leipzig (city in Germany)",
+   "lemma": ""
+  },
+  {
+   "form": "München",
+   "context": "Er ___ 2018 nach München und begann dort ein Studium. (ziehen, Präteritum)",
+   "en": "Munich (city in Germany)",
+   "lemma": ""
+  },
+  {
+   "form": "ziehen",
+   "context": "Er ___ 2018 nach München und begann dort ein Studium. (ziehen, Präteritum)",
+   "en": "to move; to pull",
+   "lemma": ""
+  },
+  {
+   "form": "schriftlichen",
+   "context": "Welcher Satz passt in einen schriftlichen Lebensbericht?",
+   "en": "written",
+   "lemma": "schriftlich"
+  },
+  {
+   "form": "Lebensbericht",
+   "context": "Welcher Satz passt in einen schriftlichen Lebensbericht?",
+   "en": "account of one's life",
+   "lemma": "der Lebensbericht"
+  }
+ ]
+}
