@@ -1,0 +1,877 @@
+{
+ "level": "A1",
+ "lesson": 12,
+ "title": "Ereignisse — Gestern ist etwas passiert",
+ "lines": [
+  {
+   "de": "Erzählen, was passiert ist — das Perfekt mit sein.",
+   "en": "Talk about what happened — the present perfect (Perfekt) with sein."
+  },
+  {
+   "de": "Textsorte: Gespräch · kurze Geschichte",
+   "en": "Text type: Conversation · Short story"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Hören Teil 3; telc A1 Lesen",
+   "en": "Exam link: Start Deutsch 1 Listening part 3; telc A1 Reading"
+  },
+  {
+   "de": "erzählen, was passiert ist",
+   "en": "talk about what happened"
+  },
+  {
+   "de": "das Perfekt mit sein bilden",
+   "en": "form the present perfect (Perfekt) with sein"
+  },
+  {
+   "de": "Monate und Jahreszeiten mit im angeben",
+   "en": "give months and seasons with im"
+  },
+  {
+   "de": "Grammatik: Das Perfekt mit sein",
+   "en": "Grammar: The present perfect (Perfekt) with sein"
+  },
+  {
+   "de": "Verben der Bewegung und der Veränderung bilden das Perfekt mit sein, nicht mit haben. Das Partizip endet fast immer auf -en.",
+   "en": "Verbs of movement and change form the present perfect with sein, not with haben. The participle almost always ends in -en."
+  },
+  {
+   "de": "Perfekt",
+   "en": "Present perfect (Perfekt)"
+  },
+  {
+   "de": "gehen",
+   "en": "to go"
+  },
+  {
+   "de": "ist gegangen",
+   "en": "has gone"
+  },
+  {
+   "de": "Bewegung",
+   "en": "movement"
+  },
+  {
+   "de": "fahren",
+   "en": "to go (by vehicle), to drive"
+  },
+  {
+   "de": "ist gefahren",
+   "en": "has gone (by vehicle)"
+  },
+  {
+   "de": "kommen",
+   "en": "to come"
+  },
+  {
+   "de": "ist gekommen",
+   "en": "has come"
+  },
+  {
+   "de": "ankommen",
+   "en": "to arrive"
+  },
+  {
+   "de": "ist angekommen",
+   "en": "has arrived"
+  },
+  {
+   "de": "Bewegung, trennbar",
+   "en": "movement, separable"
+  },
+  {
+   "de": "passieren",
+   "en": "to happen"
+  },
+  {
+   "de": "ist passiert",
+   "en": "has happened"
+  },
+  {
+   "de": "Veränderung",
+   "en": "change"
+  },
+  {
+   "de": "sein / bleiben",
+   "en": "to be / to stay"
+  },
+  {
+   "de": "ist gewesen / ist geblieben",
+   "en": "has been / has stayed"
+  },
+  {
+   "de": "Ausnahmen",
+   "en": "Exceptions"
+  },
+  {
+   "de": "Was ist denn hier passiert?passieren → ist passiert",
+   "en": "What happened here? passieren → ist passiert"
+  },
+  {
+   "de": "Ich bin mit dem Rad gefahren und bin gefallen.zweimal sein",
+   "en": "I was riding my bike and I fell off. sein twice"
+  },
+  {
+   "de": "Wir sind um acht angekommen.trennbar: an-ge-kommen",
+   "en": "We arrived at eight. separable: an-ge-kommen"
+  },
+  {
+   "de": "Tipp: Merkhilfe: Wenn Sie sich von A nach B bewegen oder sich etwas verändert, nehmen Sie sein.",
+   "en": "Tip: Memory aid: If you move from A to B or something changes, use sein."
+  },
+  {
+   "de": "Grammatik: im + Monat oder Jahreszeit",
+   "en": "Grammar: im + month or season"
+  },
+  {
+   "de": "Vor Monaten und Jahreszeiten steht im.",
+   "en": "Before months and seasons you use im."
+  },
+  {
+   "de": "Zeitangabe",
+   "en": "Time expression"
+  },
+  {
+   "de": "Monat",
+   "en": "Month"
+  },
+  {
+   "de": "im Januar, im Oktober",
+   "en": "in January, in October"
+  },
+  {
+   "de": "Jahreszeit",
+   "en": "Season"
+  },
+  {
+   "de": "im Frühling, im Herbst, im Winter",
+   "en": "in spring, in autumn, in winter"
+  },
+  {
+   "de": "im Sommer — aber: in den Ferien",
+   "en": "in summer — but: in the holidays"
+  },
+  {
+   "de": "Im Oktober bin ich nach Deutschland gekommen.im + Monat",
+   "en": "I came to Germany in October. im + month"
+  },
+  {
+   "de": "Tipp: Zur Erinnerung: am + Tag, um + Uhr, im + Monat.",
+   "en": "Tip: As a reminder: am + day, um + time, im + month."
+  },
+  {
+   "de": "passieren — EN: to happen · FR: arriver, se passerWas ist passiert?",
+   "en": "Example: What happened?"
+  },
+  {
+   "de": "der Unfall, ¨-e — EN: accident · FR: l'accidentZum Glück war es kein schwerer Unfall.",
+   "en": "Example: Luckily it wasn't a serious accident."
+  },
+  {
+   "de": "fallen — EN: to fall · FR: tomberIch bin vom Rad gefallen.",
+   "en": "Example: I fell off my bike."
+  },
+  {
+   "de": "gehen / kommen — EN: to go / come · FR: aller / venirWann bist du gekommen?",
+   "en": "Example: When did you come?"
+  },
+  {
+   "de": "fahren — EN: to go (by vehicle) · FR: aller (en véhicule)Wir sind mit dem Bus gefahren.",
+   "en": "Example: We went by bus."
+  },
+  {
+   "de": "ankommen — EN: to arrive · FR: arriverDer Zug ist pünktlich angekommen.",
+   "en": "Example: The train arrived on time."
+  },
+  {
+   "de": "bleiben — EN: to stay · FR: resterIch bin zu Hause geblieben.",
+   "en": "Example: I stayed at home."
+  },
+  {
+   "de": "das Krankenhaus, ¨-er — EN: hospital · FR: l'hôpitalSie ist ins Krankenhaus gefahren.",
+   "en": "Example: She went to hospital."
+  },
+  {
+   "de": "plötzlich — EN: suddenly · FR: soudainPlötzlich war das Rad weg.",
+   "en": "Example: Suddenly the bike was gone."
+  },
+  {
+   "de": "der Monat, -e — EN: month · FR: le moisIm nächsten Monat ziehe ich um.",
+   "en": "Example: Next month I'm moving house."
+  },
+  {
+   "de": "die Jahreszeit, -en — EN: season · FR: la saisonDer Herbst ist meine Lieblingsjahreszeit.",
+   "en": "Example: Autumn is my favourite season."
+  },
+  {
+   "de": "zum Glück — EN: luckily · FR: heureusementZum Glück ist nichts passiert.",
+   "en": "Example: Luckily nothing happened."
+  },
+  {
+   "de": "fragen, was passiert ist",
+   "en": "ask what happened"
+  },
+  {
+   "de": "Was ist denn passiert?",
+   "en": "So what happened?"
+  },
+  {
+   "de": "Wie ist das passiert?",
+   "en": "How did it happen?"
+  },
+  {
+   "de": "Geht es dir gut?",
+   "en": "Are you OK?"
+  },
+  {
+   "de": "Ich bin mit dem Rad gefahren und …",
+   "en": "I was riding my bike and …"
+  },
+  {
+   "de": "Plötzlich …",
+   "en": "Suddenly …"
+  },
+  {
+   "de": "Zum Glück ist nichts passiert.",
+   "en": "Luckily nothing happened."
+  },
+  {
+   "de": "Mitgefühl zeigen",
+   "en": "show sympathy"
+  },
+  {
+   "de": "Oh nein!",
+   "en": "Oh no!"
+  },
+  {
+   "de": "Das tut mir leid.",
+   "en": "I'm sorry."
+  },
+  {
+   "de": "Gute Besserung!",
+   "en": "Get well soon!"
+  },
+  {
+   "de": "Dialog: Auf der Straße",
+   "en": "Dialogue: On the street"
+  },
+  {
+   "de": "Ben: Was ist denn hier passiert?",
+   "en": "Ben: What happened here?"
+  },
+  {
+   "de": "Lia: Ich bin mit dem Rad gefahren und bin gefallen.",
+   "en": "Lia: I was riding my bike and I fell off."
+  },
+  {
+   "de": "Ben: Oh nein! Geht es dir gut?",
+   "en": "Ben: Oh no! Are you OK?"
+  },
+  {
+   "de": "Lia: Ja, zum Glück. Aber das Rad ist kaputt.",
+   "en": "Lia: Yes, luckily. But the bike is broken."
+  },
+  {
+   "de": "Ben: Bist du schon zum Arzt gegangen?",
+   "en": "Ben: Have you been to the doctor yet?"
+  },
+  {
+   "de": "Lia: Nein, ich bin einfach nach Hause gekommen.",
+   "en": "Lia: No, I just came home."
+  },
+  {
+   "de": "Was ist passiert?",
+   "en": "What happened?"
+  },
+  {
+   "de": "Zum Glück war es kein schwerer Unfall.",
+   "en": "Luckily it wasn't a serious accident."
+  },
+  {
+   "de": "Ich bin vom Rad gefallen.",
+   "en": "I fell off my bike."
+  },
+  {
+   "de": "Wann bist du gekommen?",
+   "en": "When did you come?"
+  },
+  {
+   "de": "Wir sind mit dem Bus gefahren.",
+   "en": "We went by bus."
+  },
+  {
+   "de": "Der Zug ist pünktlich angekommen.",
+   "en": "The train arrived on time."
+  },
+  {
+   "de": "Ich bin zu Hause geblieben.",
+   "en": "I stayed at home."
+  },
+  {
+   "de": "Sie ist ins Krankenhaus gefahren.",
+   "en": "She went to hospital."
+  },
+  {
+   "de": "Plötzlich war das Rad weg.",
+   "en": "Suddenly the bike was gone."
+  },
+  {
+   "de": "Im nächsten Monat ziehe ich um.",
+   "en": "Next month I'm moving house."
+  },
+  {
+   "de": "Der Herbst ist meine Lieblingsjahreszeit.",
+   "en": "Autumn is my favourite season."
+  },
+  {
+   "de": "Was ___ denn passiert? (sein, es)",
+   "en": "What ___ happened? (sein, es)"
+  },
+  {
+   "de": "Ich ___ mit dem Bus gefahren.",
+   "en": "I ___ gone by bus."
+  },
+  {
+   "de": "Wir ___ um acht angekommen. (sein, wir)",
+   "en": "We ___ arrived at eight. (sein, wir)"
+  },
+  {
+   "de": "Welches Verb bildet das Perfekt mit haben?",
+   "en": "Which verb forms the present perfect with haben?"
+  },
+  {
+   "de": "___ Oktober bin ich nach Köln gekommen. (Präposition)",
+   "en": "___ October I came to Cologne. (preposition)"
+  },
+  {
+   "de": "Erzählen Sie kurz, was Ihnen einmal passiert ist. Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens drei Verben im Perfekt mit sein. • Benutzen Sie einmal plötzlich oder zum Glück. • Schreiben Sie, wann das war (im …).",
+   "en": "Write briefly about something that once happened to you. Length: 30–40 words Checklist: • Use at least three verbs in the present perfect with sein. • Use plötzlich or zum Glück once. • Write when it was (im …)."
+  },
+  {
+   "de": "passieren bildet das Perfekt mit sein.",
+   "en": "passieren forms the present perfect with sein."
+  },
+  {
+   "de": "fahren ist ein Bewegungsverb → sein.",
+   "en": "fahren is a verb of movement → sein."
+  },
+  {
+   "de": "ankommen → sein.",
+   "en": "ankommen → sein (to arrive: present perfect with sein)."
+  },
+  {
+   "de": "arbeiten ist keine Bewegung → haben.",
+   "en": "arbeiten is not movement → haben."
+  },
+  {
+   "de": "im + Monat.",
+   "en": "im + month."
+  }
+ ],
+ "forms": [
+  {
+   "form": "passiert",
+   "context": "Erzählen, was passiert ist — das Perfekt mit sein.",
+   "en": "happened",
+   "lemma": "passieren"
+  },
+  {
+   "form": "sein",
+   "context": "Erzählen, was passiert ist — das Perfekt mit sein.",
+   "en": "to be",
+   "lemma": ""
+  },
+  {
+   "form": "Geschichte",
+   "context": "Textsorte: Gespräch · kurze Geschichte",
+   "en": "story; history",
+   "lemma": "die Geschichte"
+  },
+  {
+   "form": "Monate",
+   "context": "Monate und Jahreszeiten mit im angeben",
+   "en": "months",
+   "lemma": "der Monat"
+  },
+  {
+   "form": "Jahreszeiten",
+   "context": "Monate und Jahreszeiten mit im angeben",
+   "en": "seasons",
+   "lemma": "die Jahreszeit"
+  },
+  {
+   "form": "Bewegung",
+   "context": "Verben der Bewegung und der Veränderung bilden das Perfekt mit sein, nicht mit haben. Das Partizip endet fast immer auf -en.",
+   "en": "movement",
+   "lemma": "die Bewegung"
+  },
+  {
+   "form": "Veränderung",
+   "context": "Verben der Bewegung und der Veränderung bilden das Perfekt mit sein, nicht mit haben. Das Partizip endet fast immer auf -en.",
+   "en": "change",
+   "lemma": "die Veränderung"
+  },
+  {
+   "form": "endet",
+   "context": "Verben der Bewegung und der Veränderung bilden das Perfekt mit sein, nicht mit haben. Das Partizip endet fast immer auf -en.",
+   "en": "ends",
+   "lemma": "enden"
+  },
+  {
+   "form": "fast",
+   "context": "Verben der Bewegung und der Veränderung bilden das Perfekt mit sein, nicht mit haben. Das Partizip endet fast immer auf -en.",
+   "en": "almost",
+   "lemma": ""
+  },
+  {
+   "form": "gegangen",
+   "context": "ist gegangen",
+   "en": "gone",
+   "lemma": "gehen"
+  },
+  {
+   "form": "gefahren",
+   "context": "ist gefahren",
+   "en": "gone (by vehicle); driven",
+   "lemma": "fahren"
+  },
+  {
+   "form": "gekommen",
+   "context": "ist gekommen",
+   "en": "come",
+   "lemma": "kommen"
+  },
+  {
+   "form": "ankommen",
+   "context": "ankommen",
+   "en": "to arrive",
+   "lemma": ""
+  },
+  {
+   "form": "angekommen",
+   "context": "ist angekommen",
+   "en": "arrived",
+   "lemma": "ankommen"
+  },
+  {
+   "form": "passieren",
+   "context": "passieren",
+   "en": "to happen",
+   "lemma": ""
+  },
+  {
+   "form": "bleiben",
+   "context": "sein / bleiben",
+   "en": "to stay",
+   "lemma": ""
+  },
+  {
+   "form": "gewesen",
+   "context": "ist gewesen / ist geblieben",
+   "en": "been",
+   "lemma": "sein"
+  },
+  {
+   "form": "geblieben",
+   "context": "ist gewesen / ist geblieben",
+   "en": "stayed",
+   "lemma": "bleiben"
+  },
+  {
+   "form": "Ausnahmen",
+   "context": "Ausnahmen",
+   "en": "exceptions",
+   "lemma": "die Ausnahme"
+  },
+  {
+   "form": "Rad",
+   "context": "Ich bin mit dem Rad gefahren und bin gefallen.zweimal sein",
+   "en": "bike; wheel",
+   "lemma": "das Rad"
+  },
+  {
+   "form": "gefallen",
+   "context": "Ich bin mit dem Rad gefahren und bin gefallen.zweimal sein",
+   "en": "fallen",
+   "lemma": "fallen"
+  },
+  {
+   "form": "zweimal",
+   "context": "Ich bin mit dem Rad gefahren und bin gefallen.zweimal sein",
+   "en": "twice",
+   "lemma": ""
+  },
+  {
+   "form": "an-ge-kommen",
+   "context": "Wir sind um acht angekommen.trennbar: an-ge-kommen",
+   "en": "arrived (an-ge-kommen)",
+   "lemma": "ankommen"
+  },
+  {
+   "form": "bewegen",
+   "context": "Tipp: Merkhilfe: Wenn Sie sich von A nach B bewegen oder sich etwas verändert, nehmen Sie sein.",
+   "en": "move",
+   "lemma": "bewegen"
+  },
+  {
+   "form": "verändert",
+   "context": "Tipp: Merkhilfe: Wenn Sie sich von A nach B bewegen oder sich etwas verändert, nehmen Sie sein.",
+   "en": "changes",
+   "lemma": "verändern"
+  },
+  {
+   "form": "Monat",
+   "context": "Grammatik: im + Monat oder Jahreszeit",
+   "en": "month",
+   "lemma": "der Monat"
+  },
+  {
+   "form": "Jahreszeit",
+   "context": "Grammatik: im + Monat oder Jahreszeit",
+   "en": "season",
+   "lemma": "die Jahreszeit"
+  },
+  {
+   "form": "Monaten",
+   "context": "Vor Monaten und Jahreszeiten steht im.",
+   "en": "months",
+   "lemma": "der Monat"
+  },
+  {
+   "form": "Januar",
+   "context": "im Januar, im Oktober",
+   "en": "January",
+   "lemma": "der Januar"
+  },
+  {
+   "form": "Oktober",
+   "context": "im Januar, im Oktober",
+   "en": "October",
+   "lemma": "der Oktober"
+  },
+  {
+   "form": "Frühling",
+   "context": "im Frühling, im Herbst, im Winter",
+   "en": "spring",
+   "lemma": "der Frühling"
+  },
+  {
+   "form": "Herbst",
+   "context": "im Frühling, im Herbst, im Winter",
+   "en": "autumn",
+   "lemma": "der Herbst"
+  },
+  {
+   "form": "Winter",
+   "context": "im Frühling, im Herbst, im Winter",
+   "en": "winter",
+   "lemma": "der Winter"
+  },
+  {
+   "form": "Sommer",
+   "context": "im Sommer — aber: in den Ferien",
+   "en": "summer",
+   "lemma": "der Sommer"
+  },
+  {
+   "form": "Ferien",
+   "context": "im Sommer — aber: in den Ferien",
+   "en": "holidays",
+   "lemma": "die Ferien"
+  },
+  {
+   "form": "Deutschland",
+   "context": "Im Oktober bin ich nach Deutschland gekommen.im + Monat",
+   "en": "Germany",
+   "lemma": ""
+  },
+  {
+   "form": "Erinnerung",
+   "context": "Tipp: Zur Erinnerung: am + Tag, um + Uhr, im + Monat.",
+   "en": "reminder; memory",
+   "lemma": "die Erinnerung"
+  },
+  {
+   "form": "happen",
+   "context": "passieren — EN: to happen · FR: arriver, se passerWas ist passiert?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "arriver",
+   "context": "passieren — EN: to happen · FR: arriver, se passerWas ist passiert?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "passerWas",
+   "context": "passieren — EN: to happen · FR: arriver, se passerWas ist passiert?",
+   "en": "Was = what",
+   "lemma": ""
+  },
+  {
+   "form": "Unfall",
+   "context": "der Unfall, ¨-e — EN: accident · FR: l'accidentZum Glück war es kein schwerer Unfall.",
+   "en": "accident",
+   "lemma": "der Unfall"
+  },
+  {
+   "form": "accident",
+   "context": "der Unfall, ¨-e — EN: accident · FR: l'accidentZum Glück war es kein schwerer Unfall.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'accidentZum",
+   "context": "der Unfall, ¨-e — EN: accident · FR: l'accidentZum Glück war es kein schwerer Unfall.",
+   "en": "Zum = to the (zum Glück = luckily)",
+   "lemma": ""
+  },
+  {
+   "form": "Glück",
+   "context": "der Unfall, ¨-e — EN: accident · FR: l'accidentZum Glück war es kein schwerer Unfall.",
+   "en": "luck; happiness",
+   "lemma": "das Glück"
+  },
+  {
+   "form": "schwerer",
+   "context": "der Unfall, ¨-e — EN: accident · FR: l'accidentZum Glück war es kein schwerer Unfall.",
+   "en": "serious; heavy",
+   "lemma": "schwer"
+  },
+  {
+   "form": "fallen",
+   "context": "fallen — EN: to fall · FR: tomberIch bin vom Rad gefallen.",
+   "en": "to fall",
+   "lemma": ""
+  },
+  {
+   "form": "fall",
+   "context": "fallen — EN: to fall · FR: tomberIch bin vom Rad gefallen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tomberIch",
+   "context": "fallen — EN: to fall · FR: tomberIch bin vom Rad gefallen.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "venirWann",
+   "context": "gehen / kommen — EN: to go / come · FR: aller / venirWann bist du gekommen?",
+   "en": "Wann = when",
+   "lemma": ""
+  },
+  {
+   "form": "by",
+   "context": "fahren — EN: to go (by vehicle) · FR: aller (en véhicule)Wir sind mit dem Bus gefahren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vehicle",
+   "context": "fahren — EN: to go (by vehicle) · FR: aller (en véhicule)Wir sind mit dem Bus gefahren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "véhicule",
+   "context": "fahren — EN: to go (by vehicle) · FR: aller (en véhicule)Wir sind mit dem Bus gefahren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Bus",
+   "context": "fahren — EN: to go (by vehicle) · FR: aller (en véhicule)Wir sind mit dem Bus gefahren.",
+   "en": "bus",
+   "lemma": "der Bus"
+  },
+  {
+   "form": "arrive",
+   "context": "ankommen — EN: to arrive · FR: arriverDer Zug ist pünktlich angekommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "arriverDer",
+   "context": "ankommen — EN: to arrive · FR: arriverDer Zug ist pünktlich angekommen.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "Zug",
+   "context": "ankommen — EN: to arrive · FR: arriverDer Zug ist pünktlich angekommen.",
+   "en": "train",
+   "lemma": "der Zug"
+  },
+  {
+   "form": "stay",
+   "context": "bleiben — EN: to stay · FR: resterIch bin zu Hause geblieben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "resterIch",
+   "context": "bleiben — EN: to stay · FR: resterIch bin zu Hause geblieben.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "hospital",
+   "context": "das Krankenhaus, ¨-er — EN: hospital · FR: l'hôpitalSie ist ins Krankenhaus gefahren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'hôpitalSie",
+   "context": "das Krankenhaus, ¨-er — EN: hospital · FR: l'hôpitalSie ist ins Krankenhaus gefahren.",
+   "en": "Sie = she",
+   "lemma": ""
+  },
+  {
+   "form": "ins",
+   "context": "das Krankenhaus, ¨-er — EN: hospital · FR: l'hôpitalSie ist ins Krankenhaus gefahren.",
+   "en": "into the (in das)",
+   "lemma": ""
+  },
+  {
+   "form": "plötzlich",
+   "context": "plötzlich — EN: suddenly · FR: soudainPlötzlich war das Rad weg.",
+   "en": "suddenly",
+   "lemma": ""
+  },
+  {
+   "form": "suddenly",
+   "context": "plötzlich — EN: suddenly · FR: soudainPlötzlich war das Rad weg.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soudainPlötzlich",
+   "context": "plötzlich — EN: suddenly · FR: soudainPlötzlich war das Rad weg.",
+   "en": "Plötzlich = suddenly",
+   "lemma": "plötzlich"
+  },
+  {
+   "form": "weg",
+   "context": "plötzlich — EN: suddenly · FR: soudainPlötzlich war das Rad weg.",
+   "en": "gone; away",
+   "lemma": ""
+  },
+  {
+   "form": "month",
+   "context": "der Monat, -e — EN: month · FR: le moisIm nächsten Monat ziehe ich um.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "moisIm",
+   "context": "der Monat, -e — EN: month · FR: le moisIm nächsten Monat ziehe ich um.",
+   "en": "Im = in the",
+   "lemma": ""
+  },
+  {
+   "form": "nächsten",
+   "context": "der Monat, -e — EN: month · FR: le moisIm nächsten Monat ziehe ich um.",
+   "en": "next",
+   "lemma": "nächste"
+  },
+  {
+   "form": "ziehe",
+   "context": "der Monat, -e — EN: month · FR: le moisIm nächsten Monat ziehe ich um.",
+   "en": "move (house)",
+   "lemma": "umziehen"
+  },
+  {
+   "form": "season",
+   "context": "die Jahreszeit, -en — EN: season · FR: la saisonDer Herbst ist meine Lieblingsjahreszeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "saisonDer",
+   "context": "die Jahreszeit, -en — EN: season · FR: la saisonDer Herbst ist meine Lieblingsjahreszeit.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "Lieblingsjahreszeit",
+   "context": "die Jahreszeit, -en — EN: season · FR: la saisonDer Herbst ist meine Lieblingsjahreszeit.",
+   "en": "favourite season",
+   "lemma": "die Lieblingsjahreszeit"
+  },
+  {
+   "form": "luckily",
+   "context": "zum Glück — EN: luckily · FR: heureusementZum Glück ist nichts passiert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "heureusementZum",
+   "context": "zum Glück — EN: luckily · FR: heureusementZum Glück ist nichts passiert.",
+   "en": "Zum = to the (zum Glück = luckily)",
+   "lemma": ""
+  },
+  {
+   "form": "Plötzlich",
+   "context": "Plötzlich …",
+   "en": "suddenly",
+   "lemma": "plötzlich"
+  },
+  {
+   "form": "Mitgefühl",
+   "context": "Mitgefühl zeigen",
+   "en": "sympathy",
+   "lemma": "das Mitgefühl"
+  },
+  {
+   "form": "zeigen",
+   "context": "Mitgefühl zeigen",
+   "en": "to show",
+   "lemma": ""
+  },
+  {
+   "form": "Gute",
+   "context": "Gute Besserung!",
+   "en": "good",
+   "lemma": "gut"
+  },
+  {
+   "form": "Besserung",
+   "context": "Gute Besserung!",
+   "en": "recovery (Gute Besserung = get well soon)",
+   "lemma": "die Besserung"
+  },
+  {
+   "form": "Straße",
+   "context": "Dialog: Auf der Straße",
+   "en": "street",
+   "lemma": "die Straße"
+  },
+  {
+   "form": "Ben",
+   "context": "Ben: Was ist denn hier passiert?",
+   "en": "Ben (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Lia",
+   "context": "Lia: Ich bin mit dem Rad gefahren und bin gefallen.",
+   "en": "Lia (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Welches",
+   "context": "Welches Verb bildet das Perfekt mit haben?",
+   "en": "which",
+   "lemma": "welcher"
+  },
+  {
+   "form": "bildet",
+   "context": "Welches Verb bildet das Perfekt mit haben?",
+   "en": "forms",
+   "lemma": "bilden"
+  }
+ ]
+}
