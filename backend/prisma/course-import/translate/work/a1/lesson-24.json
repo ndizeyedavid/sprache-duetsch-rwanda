@@ -1,0 +1,667 @@
+{
+ "level": "A1",
+ "lesson": 24,
+ "title": "Feste feiern — Ich würde gern mit dir feiern",
+ "lines": [
+  {
+   "de": "Feste beschreiben und Wünsche höflich ausdrücken.",
+   "en": "Describe celebrations and express wishes politely."
+  },
+  {
+   "de": "Textsorte: Einladung · Gespräch",
+   "en": "Text type: Invitation · Conversation"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Schreiben Teil 2 (Einladung); telc A1 Schreiben",
+   "en": "Exam link: Start Deutsch 1 Writing part 2 (invitation); telc A1 Writing"
+  },
+  {
+   "de": "über Feste sprechen",
+   "en": "talk about celebrations"
+  },
+  {
+   "de": "Wünsche mit würde höflich ausdrücken",
+   "en": "express wishes politely with würde"
+  },
+  {
+   "de": "eine Einladung schreiben und darauf antworten",
+   "en": "write an invitation and reply to one"
+  },
+  {
+   "de": "Grammatik: Wünsche mit würde",
+   "en": "Grammar: wishes with würde"
+  },
+  {
+   "de": "Mit würde + Infinitiv drückt man einen Wunsch höflich aus. Das Verb im Infinitiv steht am Satzende.",
+   "en": "With würde + infinitive you express a wish politely. The verb in the infinitive goes at the end of the sentence."
+  },
+  {
+   "de": "würde",
+   "en": "would"
+  },
+  {
+   "de": "Ich würde gern mit dir feiern.",
+   "en": "I would like to celebrate with you."
+  },
+  {
+   "de": "würdest",
+   "en": "(you) would"
+  },
+  {
+   "de": "Würdest du mitkommen?",
+   "en": "Would you come along?"
+  },
+  {
+   "de": "Sie würde gern tanzen.",
+   "en": "She would like to dance."
+  },
+  {
+   "de": "würden",
+   "en": "(we / they) would"
+  },
+  {
+   "de": "Wir würden uns freuen.",
+   "en": "We would be delighted."
+  },
+  {
+   "de": "würdet",
+   "en": "(you all) would"
+  },
+  {
+   "de": "Würdet ihr auch kommen?",
+   "en": "Would you all come too?"
+  },
+  {
+   "de": "Würden Sie bitte helfen?",
+   "en": "Would you help, please?"
+  },
+  {
+   "de": "Ich würde am liebsten jeden Tag feiern.würde + Infinitiv am Ende",
+   "en": "Most of all, I would like to celebrate every day. würde + infinitive at the end"
+  },
+  {
+   "de": "Würdest du mir bitte helfen?höfliche Bitte",
+   "en": "Would you help me, please? polite request"
+  },
+  {
+   "de": "Tipp: würde ist höflicher als wollen: „Ich würde gern …\" klingt freundlicher als „Ich will …\".",
+   "en": "Tip: würde is more polite than wollen: \"Ich würde gern …\" (I would like …) sounds friendlier than \"Ich will …\" (I want …)."
+  },
+  {
+   "de": "das Fest, -e — EN: party, festival · FR: la fêteDas Fest war wunderschön.",
+   "en": "Example: The party was wonderful."
+  },
+  {
+   "de": "feiern — EN: to celebrate · FR: faire la fêteWir feiern am Samstag.",
+   "en": "Example: We're celebrating on Saturday."
+  },
+  {
+   "de": "der Geburtstag, -e — EN: birthday · FR: l'anniversaireWann hast du Geburtstag?",
+   "en": "Example: When is your birthday?"
+  },
+  {
+   "de": "die Einladung, -en — EN: invitation · FR: l'invitationDanke für die Einladung!",
+   "en": "Example: Thanks for the invitation!"
+  },
+  {
+   "de": "einladen — EN: to invite · FR: inviterIch lade dich herzlich ein.",
+   "en": "Example: I warmly invite you."
+  },
+  {
+   "de": "die Hochzeit, -en — EN: wedding · FR: le mariageDie Hochzeit ist im Juni.",
+   "en": "Example: The wedding is in June."
+  },
+  {
+   "de": "das Geschenk, -e — EN: present · FR: le cadeauIch habe ein Geschenk für dich.",
+   "en": "Example: I have a present for you."
+  },
+  {
+   "de": "gratulieren — EN: to congratulate · FR: féliciterIch gratuliere dir!",
+   "en": "Example: Congratulations!"
+  },
+  {
+   "de": "tanzen — EN: to dance · FR: danserWir haben die ganze Nacht getanzt.",
+   "en": "Example: We danced all night."
+  },
+  {
+   "de": "die Gäste (Pl.) — EN: guests · FR: les invitésEs kommen etwa zwanzig Gäste.",
+   "en": "Example: About twenty guests are coming."
+  },
+  {
+   "de": "mitbringen — EN: to bring along · FR: apporterSoll ich etwas mitbringen?",
+   "en": "Example: Shall I bring anything?"
+  },
+  {
+   "de": "sich freuen auf — EN: to look forward to · FR: se réjouir deIch freue mich auf das Fest!",
+   "en": "Example: I'm looking forward to the party!"
+  },
+  {
+   "de": "einladen",
+   "en": "inviting"
+  },
+  {
+   "de": "Ich würde dich gern einladen.",
+   "en": "I would like to invite you."
+  },
+  {
+   "de": "Hast du am Samstag Zeit?",
+   "en": "Are you free on Saturday?"
+  },
+  {
+   "de": "Wir feiern bei mir zu Hause.",
+   "en": "We're celebrating at my place."
+  },
+  {
+   "de": "Ja, sehr gern! Ich komme.",
+   "en": "Yes, I'd love to! I'll come."
+  },
+  {
+   "de": "Danke für die Einladung!",
+   "en": "Thanks for the invitation!"
+  },
+  {
+   "de": "Leider kann ich nicht, ich habe schon etwas vor.",
+   "en": "Unfortunately I can't, I already have plans."
+  },
+  {
+   "de": "gratulieren",
+   "en": "congratulating"
+  },
+  {
+   "de": "Herzlichen Glückwunsch zum Geburtstag!",
+   "en": "Happy birthday!"
+  },
+  {
+   "de": "Alles Gute!",
+   "en": "All the best!"
+  },
+  {
+   "de": "Viel Glück und Gesundheit!",
+   "en": "Good luck and good health!"
+  },
+  {
+   "de": "Dialog: Eine Einladung",
+   "en": "Dialogue: An invitation"
+  },
+  {
+   "de": "Mina: Ich habe am Samstag Geburtstag. Ich würde gern mit dir feiern.",
+   "en": "Mina: It's my birthday on Saturday. I would like to celebrate with you."
+  },
+  {
+   "de": "Taro: Oh, herzlichen Glückwunsch! Ich komme sehr gern.",
+   "en": "Taro: Oh, congratulations! I'd love to come."
+  },
+  {
+   "de": "Mina: Super! Wir fangen um sieben an.",
+   "en": "Mina: Great! We're starting at seven."
+  },
+  {
+   "de": "Taro: Soll ich etwas mitbringen?",
+   "en": "Taro: Shall I bring anything?"
+  },
+  {
+   "de": "Mina: Nein, danke. Komm einfach!",
+   "en": "Mina: No, thanks. Just come!"
+  },
+  {
+   "de": "Taro: Alles klar. Ich freue mich schon!",
+   "en": "Taro: All right. I'm already looking forward to it!"
+  },
+  {
+   "de": "Das Fest war wunderschön.",
+   "en": "The party was wonderful."
+  },
+  {
+   "de": "Wir feiern am Samstag.",
+   "en": "We're celebrating on Saturday."
+  },
+  {
+   "de": "Wann hast du Geburtstag?",
+   "en": "When is your birthday?"
+  },
+  {
+   "de": "Ich lade dich herzlich ein.",
+   "en": "I warmly invite you."
+  },
+  {
+   "de": "Die Hochzeit ist im Juni.",
+   "en": "The wedding is in June."
+  },
+  {
+   "de": "Ich habe ein Geschenk für dich.",
+   "en": "I have a present for you."
+  },
+  {
+   "de": "Ich gratuliere dir!",
+   "en": "Congratulations!"
+  },
+  {
+   "de": "Wir haben die ganze Nacht getanzt.",
+   "en": "We danced all night."
+  },
+  {
+   "de": "Es kommen etwa zwanzig Gäste.",
+   "en": "About twenty guests are coming."
+  },
+  {
+   "de": "Soll ich etwas mitbringen?",
+   "en": "Shall I bring anything?"
+  },
+  {
+   "de": "Ich freue mich auf das Fest!",
+   "en": "I'm looking forward to the party!"
+  },
+  {
+   "de": "Ich ___ gern mit dir feiern. (würde, ich)",
+   "en": "I ___ like to celebrate with you. (würde, ich)"
+  },
+  {
+   "de": "___ du mir bitte helfen?",
+   "en": "___ you help me, please?"
+  },
+  {
+   "de": "Wo steht der Infinitiv bei würde?",
+   "en": "Where does the infinitive go with würde?"
+  },
+  {
+   "de": "Was ist höflicher?",
+   "en": "What is more polite?"
+  },
+  {
+   "de": "Wir ___ uns sehr freuen. (würde, wir)",
+   "en": "We ___ be very pleased. (würde, wir)"
+  },
+  {
+   "de": "Schreiben Sie eine kurze Einladung zu einem Fest. Umfang: 30–40 Wörter Checkliste: • Nennen Sie Anlass, Tag und Uhrzeit. • Benutzen Sie einmal würde gern. • Bitten Sie um eine Antwort.",
+   "en": "Write a short invitation to a party. Length: 30–40 words Checklist: • Give the occasion, day and time. • Use würde gern once. • Ask for a reply."
+  },
+  {
+   "de": "ich würde — ohne Endung.",
+   "en": "ich würde — no ending."
+  },
+  {
+   "de": "2. Person Singular: würdest.",
+   "en": "2nd person singular: würdest."
+  },
+  {
+   "de": "würde + Infinitiv am Satzende — wie bei den Modalverben.",
+   "en": "würde + infinitive at the end of the sentence — as with the modal verbs."
+  },
+  {
+   "de": "würde gern ist die höfliche Form für einen Wunsch.",
+   "en": "würde gern is the polite form for a wish."
+  },
+  {
+   "de": "wir → würden.",
+   "en": "wir (we) → würden (would)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "ausdrücken",
+   "context": "Feste beschreiben und Wünsche höflich ausdrücken.",
+   "en": "express",
+   "lemma": ""
+  },
+  {
+   "form": "Einladung",
+   "context": "Textsorte: Einladung · Gespräch",
+   "en": "invitation",
+   "lemma": "die Einladung"
+  },
+  {
+   "form": "würde",
+   "context": "Wünsche mit würde höflich ausdrücken",
+   "en": "would",
+   "lemma": "werden"
+  },
+  {
+   "form": "darauf",
+   "context": "eine Einladung schreiben und darauf antworten",
+   "en": "to it; on it",
+   "lemma": ""
+  },
+  {
+   "form": "feiern",
+   "context": "Ich würde gern mit dir feiern.",
+   "en": "celebrate",
+   "lemma": ""
+  },
+  {
+   "form": "würdest",
+   "context": "würdest",
+   "en": "(you) would",
+   "lemma": "werden"
+  },
+  {
+   "form": "Würdest",
+   "context": "Würdest du mitkommen?",
+   "en": "(you) would",
+   "lemma": "werden"
+  },
+  {
+   "form": "würden",
+   "context": "würden",
+   "en": "(we / they) would",
+   "lemma": "werden"
+  },
+  {
+   "form": "freuen",
+   "context": "Wir würden uns freuen.",
+   "en": "be pleased; be glad",
+   "lemma": ""
+  },
+  {
+   "form": "würdet",
+   "context": "würdet",
+   "en": "(you all) would",
+   "lemma": "werden"
+  },
+  {
+   "form": "Würdet",
+   "context": "Würdet ihr auch kommen?",
+   "en": "(you all) would",
+   "lemma": "werden"
+  },
+  {
+   "form": "Würden",
+   "context": "Würden Sie bitte helfen?",
+   "en": "would",
+   "lemma": "werden"
+  },
+  {
+   "form": "freundlicher",
+   "context": "Tipp: würde ist höflicher als wollen: „Ich würde gern …\" klingt freundlicher als „Ich will …\".",
+   "en": "friendlier",
+   "lemma": "freundlich"
+  },
+  {
+   "form": "Fest",
+   "context": "das Fest, -e — EN: party, festival · FR: la fêteDas Fest war wunderschön.",
+   "en": "party; festival",
+   "lemma": "das Fest"
+  },
+  {
+   "form": "party",
+   "context": "das Fest, -e — EN: party, festival · FR: la fêteDas Fest war wunderschön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "festival",
+   "context": "das Fest, -e — EN: party, festival · FR: la fêteDas Fest war wunderschön.",
+   "en": "festival",
+   "lemma": "das Festival"
+  },
+  {
+   "form": "fêteDas",
+   "context": "das Fest, -e — EN: party, festival · FR: la fêteDas Fest war wunderschön.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "celebrate",
+   "context": "feiern — EN: to celebrate · FR: faire la fêteWir feiern am Samstag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fêteWir",
+   "context": "feiern — EN: to celebrate · FR: faire la fêteWir feiern am Samstag.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "Geburtstag",
+   "context": "der Geburtstag, -e — EN: birthday · FR: l'anniversaireWann hast du Geburtstag?",
+   "en": "birthday",
+   "lemma": "der Geburtstag"
+  },
+  {
+   "form": "birthday",
+   "context": "der Geburtstag, -e — EN: birthday · FR: l'anniversaireWann hast du Geburtstag?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'anniversaireWann",
+   "context": "der Geburtstag, -e — EN: birthday · FR: l'anniversaireWann hast du Geburtstag?",
+   "en": "when",
+   "lemma": ""
+  },
+  {
+   "form": "invitation",
+   "context": "die Einladung, -en — EN: invitation · FR: l'invitationDanke für die Einladung!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'invitationDanke",
+   "context": "die Einladung, -en — EN: invitation · FR: l'invitationDanke für die Einladung!",
+   "en": "thanks",
+   "lemma": ""
+  },
+  {
+   "form": "einladen",
+   "context": "einladen — EN: to invite · FR: inviterIch lade dich herzlich ein.",
+   "en": "to invite",
+   "lemma": ""
+  },
+  {
+   "form": "invite",
+   "context": "einladen — EN: to invite · FR: inviterIch lade dich herzlich ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "inviterIch",
+   "context": "einladen — EN: to invite · FR: inviterIch lade dich herzlich ein.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "lade",
+   "context": "einladen — EN: to invite · FR: inviterIch lade dich herzlich ein.",
+   "en": "invite",
+   "lemma": "einladen"
+  },
+  {
+   "form": "herzlich",
+   "context": "einladen — EN: to invite · FR: inviterIch lade dich herzlich ein.",
+   "en": "warmly",
+   "lemma": ""
+  },
+  {
+   "form": "Hochzeit",
+   "context": "die Hochzeit, -en — EN: wedding · FR: le mariageDie Hochzeit ist im Juni.",
+   "en": "wedding",
+   "lemma": "die Hochzeit"
+  },
+  {
+   "form": "wedding",
+   "context": "die Hochzeit, -en — EN: wedding · FR: le mariageDie Hochzeit ist im Juni.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mariageDie",
+   "context": "die Hochzeit, -en — EN: wedding · FR: le mariageDie Hochzeit ist im Juni.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Juni",
+   "context": "die Hochzeit, -en — EN: wedding · FR: le mariageDie Hochzeit ist im Juni.",
+   "en": "June",
+   "lemma": "der Juni"
+  },
+  {
+   "form": "present",
+   "context": "das Geschenk, -e — EN: present · FR: le cadeauIch habe ein Geschenk für dich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cadeauIch",
+   "context": "das Geschenk, -e — EN: present · FR: le cadeauIch habe ein Geschenk für dich.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "gratulieren",
+   "context": "gratulieren — EN: to congratulate · FR: féliciterIch gratuliere dir!",
+   "en": "to congratulate",
+   "lemma": ""
+  },
+  {
+   "form": "congratulate",
+   "context": "gratulieren — EN: to congratulate · FR: féliciterIch gratuliere dir!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "féliciterIch",
+   "context": "gratulieren — EN: to congratulate · FR: féliciterIch gratuliere dir!",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "gratuliere",
+   "context": "gratulieren — EN: to congratulate · FR: féliciterIch gratuliere dir!",
+   "en": "congratulate",
+   "lemma": "gratulieren"
+  },
+  {
+   "form": "danserWir",
+   "context": "tanzen — EN: to dance · FR: danserWir haben die ganze Nacht getanzt.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "ganze",
+   "context": "tanzen — EN: to dance · FR: danserWir haben die ganze Nacht getanzt.",
+   "en": "whole",
+   "lemma": "ganz"
+  },
+  {
+   "form": "getanzt",
+   "context": "tanzen — EN: to dance · FR: danserWir haben die ganze Nacht getanzt.",
+   "en": "danced",
+   "lemma": "tanzen"
+  },
+  {
+   "form": "Gäste",
+   "context": "die Gäste (Pl.) — EN: guests · FR: les invitésEs kommen etwa zwanzig Gäste.",
+   "en": "guests",
+   "lemma": "der Gast"
+  },
+  {
+   "form": "guests",
+   "context": "die Gäste (Pl.) — EN: guests · FR: les invitésEs kommen etwa zwanzig Gäste.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "invitésEs",
+   "context": "die Gäste (Pl.) — EN: guests · FR: les invitésEs kommen etwa zwanzig Gäste.",
+   "en": "it; there",
+   "lemma": ""
+  },
+  {
+   "form": "etwa",
+   "context": "die Gäste (Pl.) — EN: guests · FR: les invitésEs kommen etwa zwanzig Gäste.",
+   "en": "about; approximately",
+   "lemma": ""
+  },
+  {
+   "form": "mitbringen",
+   "context": "mitbringen — EN: to bring along · FR: apporterSoll ich etwas mitbringen?",
+   "en": "to bring along",
+   "lemma": ""
+  },
+  {
+   "form": "bring",
+   "context": "mitbringen — EN: to bring along · FR: apporterSoll ich etwas mitbringen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "apporterSoll",
+   "context": "mitbringen — EN: to bring along · FR: apporterSoll ich etwas mitbringen?",
+   "en": "shall; should",
+   "lemma": "sollen"
+  },
+  {
+   "form": "forward",
+   "context": "sich freuen auf — EN: to look forward to · FR: se réjouir deIch freue mich auf das Fest!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réjouir",
+   "context": "sich freuen auf — EN: to look forward to · FR: se réjouir deIch freue mich auf das Fest!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deIch",
+   "context": "sich freuen auf — EN: to look forward to · FR: se réjouir deIch freue mich auf das Fest!",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "freue",
+   "context": "sich freuen auf — EN: to look forward to · FR: se réjouir deIch freue mich auf das Fest!",
+   "en": "look forward; am glad",
+   "lemma": "freuen"
+  },
+  {
+   "form": "Herzlichen",
+   "context": "Herzlichen Glückwunsch zum Geburtstag!",
+   "en": "hearty; warm",
+   "lemma": "herzlich"
+  },
+  {
+   "form": "Glückwunsch",
+   "context": "Herzlichen Glückwunsch zum Geburtstag!",
+   "en": "congratulations",
+   "lemma": "der Glückwunsch"
+  },
+  {
+   "form": "Gesundheit",
+   "context": "Viel Glück und Gesundheit!",
+   "en": "health; bless you!",
+   "lemma": "die Gesundheit"
+  },
+  {
+   "form": "Mina",
+   "context": "Mina: Ich habe am Samstag Geburtstag. Ich würde gern mit dir feiern.",
+   "en": "Mina (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Taro",
+   "context": "Taro: Oh, herzlichen Glückwunsch! Ich komme sehr gern.",
+   "en": "Taro (name)",
+   "lemma": ""
+  },
+  {
+   "form": "herzlichen",
+   "context": "Taro: Oh, herzlichen Glückwunsch! Ich komme sehr gern.",
+   "en": "hearty; warm",
+   "lemma": "herzlich"
+  },
+  {
+   "form": "fangen",
+   "context": "Mina: Super! Wir fangen um sieben an.",
+   "en": "start (with an); catch",
+   "lemma": "anfangen"
+  },
+  {
+   "form": "Anlass",
+   "context": "Schreiben Sie eine kurze Einladung zu einem Fest. Umfang: 30–40 Wörter Checkliste: • Nennen Sie Anlass, Tag und Uhrzeit. • Benutzen Sie einmal würde gern. • Bitten Sie um eine Antwort.",
+   "en": "occasion",
+   "lemma": "der Anlass"
+  }
+ ]
+}
