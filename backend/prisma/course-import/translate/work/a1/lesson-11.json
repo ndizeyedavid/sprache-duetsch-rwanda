@@ -1,0 +1,997 @@
+{
+ "level": "A1",
+ "lesson": 11,
+ "title": "Gestern — Was hast du gestern gemacht?",
+ "lines": [
+  {
+   "de": "Über gestern sprechen — das Perfekt mit haben.",
+   "en": "Talk about yesterday — the present perfect (Perfekt) with haben."
+  },
+  {
+   "de": "Textsorte: Gespräch · Nachricht",
+   "en": "Text type: Conversation · Message"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Schreiben Teil 2 (kurze Mitteilung)",
+   "en": "Exam link: Start Deutsch 1 Writing part 2 (short message)"
+  },
+  {
+   "de": "über gestern und letzte Woche sprechen",
+   "en": "talk about yesterday and last week"
+  },
+  {
+   "de": "das Perfekt mit haben bilden",
+   "en": "form the present perfect (Perfekt) with haben"
+  },
+  {
+   "de": "Zeiträume mit von … bis und ab angeben",
+   "en": "give periods of time with von … bis and ab"
+  },
+  {
+   "de": "Grammatik: Das Perfekt mit haben",
+   "en": "Grammar: The present perfect (Perfekt) with haben"
+  },
+  {
+   "de": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "To talk about the past in conversation, you use the present perfect (Perfekt): haben in position 2 and the participle at the end of the sentence. Regular participles end in -t, irregular ones in -en."
+  },
+  {
+   "de": "Verbtyp",
+   "en": "Verb type"
+  },
+  {
+   "de": "Partizip",
+   "en": "Participle"
+  },
+  {
+   "de": "regelmäßig",
+   "en": "regular"
+  },
+  {
+   "de": "machen",
+   "en": "to do, to make"
+  },
+  {
+   "de": "gemacht",
+   "en": "done, made"
+  },
+  {
+   "de": "Er hat das gemacht.",
+   "en": "He did that."
+  },
+  {
+   "de": "unregelmäßig",
+   "en": "irregular"
+  },
+  {
+   "de": "schreiben",
+   "en": "to write"
+  },
+  {
+   "de": "geschrieben",
+   "en": "written"
+  },
+  {
+   "de": "Sie hat einen Brief geschrieben.",
+   "en": "She wrote a letter."
+  },
+  {
+   "de": "trennbar (regelm.)",
+   "en": "separable (regular)"
+  },
+  {
+   "de": "aufräumen",
+   "en": "to tidy up"
+  },
+  {
+   "de": "aufgeräumt",
+   "en": "tidied up"
+  },
+  {
+   "de": "Ich habe aufgeräumt.",
+   "en": "I tidied up."
+  },
+  {
+   "de": "trennbar (unregelm.)",
+   "en": "separable (irregular)"
+  },
+  {
+   "de": "angerufen",
+   "en": "called (on the phone)"
+  },
+  {
+   "de": "Ich habe dich angerufen.",
+   "en": "I called you."
+  },
+  {
+   "de": "Verben auf -ieren",
+   "en": "Verbs ending in -ieren"
+  },
+  {
+   "de": "telefonieren",
+   "en": "to phone"
+  },
+  {
+   "de": "telefoniert",
+   "en": "phoned"
+  },
+  {
+   "de": "Wir haben telefoniert.",
+   "en": "We talked on the phone."
+  },
+  {
+   "de": "Was hast du gestern gemacht? — Ich habe gearbeitet.haben + Partizip am Ende",
+   "en": "What did you do yesterday? — I worked. haben + participle at the end"
+  },
+  {
+   "de": "Wir haben Pizza gegessen und Wasser getrunken.unregelmäßig: gegessen, getrunken",
+   "en": "We ate pizza and drank water. irregular: gegessen, getrunken"
+  },
+  {
+   "de": "Tipp: Verben auf -ieren bekommen kein ge-: telefoniert, fotografiert, studiert.",
+   "en": "Tip: Verbs ending in -ieren don't get ge-: telefoniert, fotografiert, studiert."
+  },
+  {
+   "de": "Grammatik: von … bis und ab",
+   "en": "Grammar: von … bis and ab"
+  },
+  {
+   "de": "Mit von … bis nennt man Anfang und Ende, mit ab nur den Anfang.",
+   "en": "With von … bis you give the beginning and the end, with ab only the beginning."
+  },
+  {
+   "de": "Ausdruck",
+   "en": "Expression"
+  },
+  {
+   "de": "Bedeutung",
+   "en": "Meaning"
+  },
+  {
+   "de": "von … bis",
+   "en": "from … until"
+  },
+  {
+   "de": "Anfang und Ende",
+   "en": "beginning and end"
+  },
+  {
+   "de": "Von 9 Uhr bis 17 Uhr habe ich gearbeitet.",
+   "en": "I worked from 9:00 to 17:00."
+  },
+  {
+   "de": "ab",
+   "en": "from (… onwards)"
+  },
+  {
+   "de": "nur der Anfang",
+   "en": "only the beginning"
+  },
+  {
+   "de": "Ab 9 Uhr habe ich gearbeitet.",
+   "en": "I worked from 9 o'clock onwards."
+  },
+  {
+   "de": "von … an",
+   "en": "from … on"
+  },
+  {
+   "de": "ab diesem Moment",
+   "en": "from this moment on"
+  },
+  {
+   "de": "Von morgen an habe ich frei.",
+   "en": "From tomorrow on I have time off."
+  },
+  {
+   "de": "Ab zehn Uhr war ich zu Hause.ab = von diesem Zeitpunkt",
+   "en": "From ten o'clock I was at home. ab = from this point in time"
+  },
+  {
+   "de": "Tipp: Bei Uhrzeiten sagt man von 9 bis 17 Uhr — das Wort Uhr steht nur einmal, am Ende.",
+   "en": "Tip: With clock times you say von 9 bis 17 Uhr — the word Uhr comes only once, at the end."
+  },
+  {
+   "de": "gestern / heute / morgen — EN: yesterday / today / tomorrow · FR: hier / aujourd'hui / demainGestern war ich müde.",
+   "en": "Example: Yesterday I was tired."
+  },
+  {
+   "de": "letzte Woche — EN: last week · FR: la semaine dernièreLetzte Woche hatte ich viel Arbeit.",
+   "en": "Example: Last week I had a lot of work."
+  },
+  {
+   "de": "machen — EN: to do, make · FR: faireWas hast du gemacht?",
+   "en": "Example: What did you do?"
+  },
+  {
+   "de": "arbeiten — EN: to work · FR: travaillerIch habe bis acht gearbeitet.",
+   "en": "Example: I worked until eight."
+  },
+  {
+   "de": "lernen — EN: to study, learn · FR: apprendreGestern habe ich Deutsch gelernt.",
+   "en": "Example: Yesterday I studied German."
+  },
+  {
+   "de": "essen / trinken — EN: to eat / drink · FR: manger / boireWir haben zusammen gegessen.",
+   "en": "Example: We ate together."
+  },
+  {
+   "de": "telefonieren — EN: to phone · FR: téléphonerIch habe mit meiner Mutter telefoniert.",
+   "en": "Example: I talked to my mother on the phone."
+  },
+  {
+   "de": "einkaufen — EN: to go shopping · FR: faire les coursesAm Samstag habe ich eingekauft.",
+   "en": "Example: I went shopping on Saturday."
+  },
+  {
+   "de": "treffen — EN: to meet · FR: rencontrerIch habe Freunde getroffen.",
+   "en": "Example: I met friends."
+  },
+  {
+   "de": "die Woche, -n — EN: week · FR: la semaineDiese Woche ist sehr voll.",
+   "en": "Example: This week is very busy."
+  },
+  {
+   "de": "sonst noch — EN: else, in addition · FR: d'autreWas hast du sonst noch gemacht?",
+   "en": "Example: What else did you do?"
+  },
+  {
+   "de": "nichts — EN: nothing · FR: rienGestern habe ich nichts gemacht.",
+   "en": "Example: Yesterday I did nothing."
+  },
+  {
+   "de": "nach gestern fragen",
+   "en": "asking about yesterday"
+  },
+  {
+   "de": "Was hast du gestern gemacht?",
+   "en": "What did you do yesterday?"
+  },
+  {
+   "de": "Wie war dein Tag?",
+   "en": "How was your day?"
+  },
+  {
+   "de": "Was hast du sonst noch gemacht?",
+   "en": "What else did you do?"
+  },
+  {
+   "de": "erzählen",
+   "en": "telling"
+  },
+  {
+   "de": "Ich habe von neun bis fünf gearbeitet.",
+   "en": "I worked from nine to five."
+  },
+  {
+   "de": "Danach habe ich eingekauft.",
+   "en": "After that I went shopping."
+  },
+  {
+   "de": "Am Abend habe ich ferngesehen.",
+   "en": "In the evening I watched TV."
+  },
+  {
+   "de": "reagieren",
+   "en": "responding"
+  },
+  {
+   "de": "Oh, das war sicher anstrengend.",
+   "en": "Oh, that must have been tiring."
+  },
+  {
+   "de": "Klingt schön!",
+   "en": "Sounds nice!"
+  },
+  {
+   "de": "Wirklich? Erzähl mal!",
+   "en": "Really? Tell me about it!"
+  },
+  {
+   "de": "Dialog: Am Telefon",
+   "en": "Dialogue: On the phone"
+  },
+  {
+   "de": "Eva: Hallo Sami! Was hast du gestern gemacht?",
+   "en": "Eva: Hello Sami! What did you do yesterday?"
+  },
+  {
+   "de": "Sami: Ich habe von neun bis sechs gearbeitet.",
+   "en": "Sami: I worked from nine to six."
+  },
+  {
+   "de": "Eva: Oh je, das war lang. Und danach?",
+   "en": "Eva: Oh dear, that was long. And afterwards?"
+  },
+  {
+   "de": "Sami: Danach habe ich eingekauft und gekocht.",
+   "en": "Sami: After that I went shopping and cooked."
+  },
+  {
+   "de": "Eva: Hast du Frau Weber angerufen?",
+   "en": "Eva: Did you call Mrs Weber?"
+  },
+  {
+   "de": "Sami: Nein, das habe ich leider vergessen.",
+   "en": "Sami: No, unfortunately I forgot."
+  },
+  {
+   "de": "Gestern war ich müde.",
+   "en": "Yesterday I was tired."
+  },
+  {
+   "de": "Letzte Woche hatte ich viel Arbeit.",
+   "en": "Last week I had a lot of work."
+  },
+  {
+   "de": "Was hast du gemacht?",
+   "en": "What did you do?"
+  },
+  {
+   "de": "Ich habe bis acht gearbeitet.",
+   "en": "I worked until eight."
+  },
+  {
+   "de": "Gestern habe ich Deutsch gelernt.",
+   "en": "Yesterday I studied German."
+  },
+  {
+   "de": "Wir haben zusammen gegessen.",
+   "en": "We ate together."
+  },
+  {
+   "de": "Ich habe mit meiner Mutter telefoniert.",
+   "en": "I talked to my mother on the phone."
+  },
+  {
+   "de": "Am Samstag habe ich eingekauft.",
+   "en": "I went shopping on Saturday."
+  },
+  {
+   "de": "Ich habe Freunde getroffen.",
+   "en": "I met friends."
+  },
+  {
+   "de": "Diese Woche ist sehr voll.",
+   "en": "This week is very busy."
+  },
+  {
+   "de": "Gestern habe ich nichts gemacht.",
+   "en": "Yesterday I did nothing."
+  },
+  {
+   "de": "Was ___ du gestern gemacht? (haben, du)",
+   "en": "What ___ you do yesterday? (haben, du)"
+  },
+  {
+   "de": "Ich habe bis acht ___. (arbeiten, Partizip)",
+   "en": "I ___ until eight. (arbeiten, participle)"
+  },
+  {
+   "de": "Partizip von „schreiben\":",
+   "en": "Participle of \"schreiben\":"
+  },
+  {
+   "de": "Partizip von „telefonieren\":",
+   "en": "Participle of \"telefonieren\":"
+  },
+  {
+   "de": "Ich habe dich gestern ___. (anrufen, Partizip)",
+   "en": "I ___ you yesterday. (anrufen, participle)"
+  },
+  {
+   "de": "Schreiben Sie eine kurze Nachricht an eine Freundin: Was haben Sie gestern gemacht? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens vier Verben im Perfekt mit haben. • Nennen Sie eine Uhrzeit mit von … bis oder ab. • Stellen Sie am Ende eine Frage.",
+   "en": "Write a short message to a friend: What did you do yesterday? Length: 30–40 words Checklist: • Use at least four verbs in the present perfect with haben. • Give a time with von … bis or ab. • Ask a question at the end."
+  },
+  {
+   "de": "Perfekt: hast + Partizip am Ende.",
+   "en": "Present perfect: hast + participle at the end."
+  },
+  {
+   "de": "Regelmäßig: ge- + Stamm + -t.",
+   "en": "Regular: ge- + stem + -t."
+  },
+  {
+   "de": "Unregelmäßig: ge- + Stammwechsel + -en.",
+   "en": "Irregular: ge- + stem change + -en."
+  },
+  {
+   "de": "Verben auf -ieren bekommen kein ge-.",
+   "en": "Verbs ending in -ieren don't get ge-."
+  },
+  {
+   "de": "Bei trennbaren Verben steht ge- in der Mitte: an-ge-rufen.",
+   "en": "With separable verbs, ge- goes in the middle: an-ge-rufen."
+  }
+ ],
+ "forms": [
+  {
+   "form": "gestern",
+   "context": "Über gestern sprechen — das Perfekt mit haben.",
+   "en": "yesterday",
+   "lemma": ""
+  },
+  {
+   "form": "Perfekt",
+   "context": "Über gestern sprechen — das Perfekt mit haben.",
+   "en": "present perfect (tense)",
+   "lemma": "das Perfekt"
+  },
+  {
+   "form": "Nachricht",
+   "context": "Textsorte: Gespräch · Nachricht",
+   "en": "message",
+   "lemma": "die Nachricht"
+  },
+  {
+   "form": "kurze",
+   "context": "Prüfungsbezug: Start Deutsch 1 Schreiben Teil 2 (kurze Mitteilung)",
+   "en": "short",
+   "lemma": "kurz"
+  },
+  {
+   "form": "Mitteilung",
+   "context": "Prüfungsbezug: Start Deutsch 1 Schreiben Teil 2 (kurze Mitteilung)",
+   "en": "message, note",
+   "lemma": "die Mitteilung"
+  },
+  {
+   "form": "Woche",
+   "context": "über gestern und letzte Woche sprechen",
+   "en": "week",
+   "lemma": "die Woche"
+  },
+  {
+   "form": "Zeiträume",
+   "context": "Zeiträume mit von … bis und ab angeben",
+   "en": "periods of time",
+   "lemma": "der Zeitraum"
+  },
+  {
+   "form": "Vergangenheit",
+   "context": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "past",
+   "lemma": "die Vergangenheit"
+  },
+  {
+   "form": "Partizip",
+   "context": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "participle",
+   "lemma": "das Partizip"
+  },
+  {
+   "form": "Satzende",
+   "context": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "end of the sentence",
+   "lemma": "das Satzende"
+  },
+  {
+   "form": "Regelmäßige",
+   "context": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "regular",
+   "lemma": "regelmäßig"
+  },
+  {
+   "form": "Partizipien",
+   "context": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "participles",
+   "lemma": "das Partizip"
+  },
+  {
+   "form": "enden",
+   "context": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "to end",
+   "lemma": ""
+  },
+  {
+   "form": "unregelmäßige",
+   "context": "Für die Vergangenheit benutzt man im Gespräch das Perfekt: haben auf Position 2 und das Partizip am Satzende. Regelmäßige Partizipien enden auf -t, unregelmäßige auf -en.",
+   "en": "irregular",
+   "lemma": "unregelmäßig"
+  },
+  {
+   "form": "Verbtyp",
+   "context": "Verbtyp",
+   "en": "verb type",
+   "lemma": "der Verbtyp"
+  },
+  {
+   "form": "regelmäßig",
+   "context": "regelmäßig",
+   "en": "regular; regularly",
+   "lemma": ""
+  },
+  {
+   "form": "gemacht",
+   "context": "gemacht",
+   "en": "done, made",
+   "lemma": "machen"
+  },
+  {
+   "form": "unregelmäßig",
+   "context": "unregelmäßig",
+   "en": "irregular",
+   "lemma": ""
+  },
+  {
+   "form": "geschrieben",
+   "context": "geschrieben",
+   "en": "written",
+   "lemma": "schreiben"
+  },
+  {
+   "form": "Brief",
+   "context": "Sie hat einen Brief geschrieben.",
+   "en": "letter",
+   "lemma": "der Brief"
+  },
+  {
+   "form": "trennbar",
+   "context": "trennbar (regelm.)",
+   "en": "separable",
+   "lemma": ""
+  },
+  {
+   "form": "regelm",
+   "context": "trennbar (regelm.)",
+   "en": "regular (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "aufgeräumt",
+   "context": "aufgeräumt",
+   "en": "tidied up",
+   "lemma": "aufräumen"
+  },
+  {
+   "form": "unregelm",
+   "context": "trennbar (unregelm.)",
+   "en": "irregular (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "angerufen",
+   "context": "angerufen",
+   "en": "called (on the phone)",
+   "lemma": "anrufen"
+  },
+  {
+   "form": "dich",
+   "context": "Ich habe dich angerufen.",
+   "en": "you (informal)",
+   "lemma": ""
+  },
+  {
+   "form": "ieren",
+   "context": "Verben auf -ieren",
+   "en": "verb ending (-ieren)",
+   "lemma": ""
+  },
+  {
+   "form": "telefoniert",
+   "context": "telefoniert",
+   "en": "phoned",
+   "lemma": "telefonieren"
+  },
+  {
+   "form": "gearbeitet",
+   "context": "Was hast du gestern gemacht? — Ich habe gearbeitet.haben + Partizip am Ende",
+   "en": "worked",
+   "lemma": "arbeiten"
+  },
+  {
+   "form": "Pizza",
+   "context": "Wir haben Pizza gegessen und Wasser getrunken.unregelmäßig: gegessen, getrunken",
+   "en": "pizza",
+   "lemma": "die Pizza"
+  },
+  {
+   "form": "gegessen",
+   "context": "Wir haben Pizza gegessen und Wasser getrunken.unregelmäßig: gegessen, getrunken",
+   "en": "eaten",
+   "lemma": "essen"
+  },
+  {
+   "form": "getrunken",
+   "context": "Wir haben Pizza gegessen und Wasser getrunken.unregelmäßig: gegessen, getrunken",
+   "en": "drunk",
+   "lemma": "trinken"
+  },
+  {
+   "form": "bekommen",
+   "context": "Tipp: Verben auf -ieren bekommen kein ge-: telefoniert, fotografiert, studiert.",
+   "en": "get, receive",
+   "lemma": ""
+  },
+  {
+   "form": "ge",
+   "context": "Tipp: Verben auf -ieren bekommen kein ge-: telefoniert, fotografiert, studiert.",
+   "en": "ge- (participle prefix)",
+   "lemma": ""
+  },
+  {
+   "form": "fotografiert",
+   "context": "Tipp: Verben auf -ieren bekommen kein ge-: telefoniert, fotografiert, studiert.",
+   "en": "photographed",
+   "lemma": "fotografieren"
+  },
+  {
+   "form": "studiert",
+   "context": "Tipp: Verben auf -ieren bekommen kein ge-: telefoniert, fotografiert, studiert.",
+   "en": "studied",
+   "lemma": "studieren"
+  },
+  {
+   "form": "nennt",
+   "context": "Mit von … bis nennt man Anfang und Ende, mit ab nur den Anfang.",
+   "en": "names, gives",
+   "lemma": "nennen"
+  },
+  {
+   "form": "Anfang",
+   "context": "Mit von … bis nennt man Anfang und Ende, mit ab nur den Anfang.",
+   "en": "beginning, start",
+   "lemma": "der Anfang"
+  },
+  {
+   "form": "Ausdruck",
+   "context": "Ausdruck",
+   "en": "expression",
+   "lemma": "der Ausdruck"
+  },
+  {
+   "form": "Bedeutung",
+   "context": "Bedeutung",
+   "en": "meaning",
+   "lemma": "die Bedeutung"
+  },
+  {
+   "form": "diesem",
+   "context": "ab diesem Moment",
+   "en": "this",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitpunkt",
+   "context": "Ab zehn Uhr war ich zu Hause.ab = von diesem Zeitpunkt",
+   "en": "point in time",
+   "lemma": "der Zeitpunkt"
+  },
+  {
+   "form": "yesterday",
+   "context": "gestern / heute / morgen — EN: yesterday / today / tomorrow · FR: hier / aujourd'hui / demainGestern war ich müde.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "today",
+   "context": "gestern / heute / morgen — EN: yesterday / today / tomorrow · FR: hier / aujourd'hui / demainGestern war ich müde.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tomorrow",
+   "context": "gestern / heute / morgen — EN: yesterday / today / tomorrow · FR: hier / aujourd'hui / demainGestern war ich müde.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aujourd'hui",
+   "context": "gestern / heute / morgen — EN: yesterday / today / tomorrow · FR: hier / aujourd'hui / demainGestern war ich müde.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "demainGestern",
+   "context": "gestern / heute / morgen — EN: yesterday / today / tomorrow · FR: hier / aujourd'hui / demainGestern war ich müde.",
+   "en": "yesterday",
+   "lemma": ""
+  },
+  {
+   "form": "müde",
+   "context": "gestern / heute / morgen — EN: yesterday / today / tomorrow · FR: hier / aujourd'hui / demainGestern war ich müde.",
+   "en": "tired",
+   "lemma": ""
+  },
+  {
+   "form": "last",
+   "context": "letzte Woche — EN: last week · FR: la semaine dernièreLetzte Woche hatte ich viel Arbeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "week",
+   "context": "letzte Woche — EN: last week · FR: la semaine dernièreLetzte Woche hatte ich viel Arbeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "semaine",
+   "context": "letzte Woche — EN: last week · FR: la semaine dernièreLetzte Woche hatte ich viel Arbeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dernièreLetzte",
+   "context": "letzte Woche — EN: last week · FR: la semaine dernièreLetzte Woche hatte ich viel Arbeit.",
+   "en": "last",
+   "lemma": ""
+  },
+  {
+   "form": "hatte",
+   "context": "letzte Woche — EN: last week · FR: la semaine dernièreLetzte Woche hatte ich viel Arbeit.",
+   "en": "had",
+   "lemma": "haben"
+  },
+  {
+   "form": "do",
+   "context": "machen — EN: to do, make · FR: faireWas hast du gemacht?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "make",
+   "context": "machen — EN: to do, make · FR: faireWas hast du gemacht?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "faireWas",
+   "context": "machen — EN: to do, make · FR: faireWas hast du gemacht?",
+   "en": "what",
+   "lemma": ""
+  },
+  {
+   "form": "travaillerIch",
+   "context": "arbeiten — EN: to work · FR: travaillerIch habe bis acht gearbeitet.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "study",
+   "context": "lernen — EN: to study, learn · FR: apprendreGestern habe ich Deutsch gelernt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "learn",
+   "context": "lernen — EN: to study, learn · FR: apprendreGestern habe ich Deutsch gelernt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "apprendreGestern",
+   "context": "lernen — EN: to study, learn · FR: apprendreGestern habe ich Deutsch gelernt.",
+   "en": "yesterday",
+   "lemma": ""
+  },
+  {
+   "form": "gelernt",
+   "context": "lernen — EN: to study, learn · FR: apprendreGestern habe ich Deutsch gelernt.",
+   "en": "learned, studied",
+   "lemma": "lernen"
+  },
+  {
+   "form": "eat",
+   "context": "essen / trinken — EN: to eat / drink · FR: manger / boireWir haben zusammen gegessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "drink",
+   "context": "essen / trinken — EN: to eat / drink · FR: manger / boireWir haben zusammen gegessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "manger",
+   "context": "essen / trinken — EN: to eat / drink · FR: manger / boireWir haben zusammen gegessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "boireWir",
+   "context": "essen / trinken — EN: to eat / drink · FR: manger / boireWir haben zusammen gegessen.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "téléphonerIch",
+   "context": "telefonieren — EN: to phone · FR: téléphonerIch habe mit meiner Mutter telefoniert.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "meiner",
+   "context": "telefonieren — EN: to phone · FR: téléphonerIch habe mit meiner Mutter telefoniert.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "shopping",
+   "context": "einkaufen — EN: to go shopping · FR: faire les coursesAm Samstag habe ich eingekauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "eingekauft",
+   "context": "einkaufen — EN: to go shopping · FR: faire les coursesAm Samstag habe ich eingekauft.",
+   "en": "gone shopping, bought",
+   "lemma": "einkaufen"
+  },
+  {
+   "form": "treffen",
+   "context": "treffen — EN: to meet · FR: rencontrerIch habe Freunde getroffen.",
+   "en": "to meet",
+   "lemma": ""
+  },
+  {
+   "form": "meet",
+   "context": "treffen — EN: to meet · FR: rencontrerIch habe Freunde getroffen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rencontrerIch",
+   "context": "treffen — EN: to meet · FR: rencontrerIch habe Freunde getroffen.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "Freunde",
+   "context": "treffen — EN: to meet · FR: rencontrerIch habe Freunde getroffen.",
+   "en": "friends",
+   "lemma": "der Freund"
+  },
+  {
+   "form": "getroffen",
+   "context": "treffen — EN: to meet · FR: rencontrerIch habe Freunde getroffen.",
+   "en": "met",
+   "lemma": "treffen"
+  },
+  {
+   "form": "semaineDiese",
+   "context": "die Woche, -n — EN: week · FR: la semaineDiese Woche ist sehr voll.",
+   "en": "this",
+   "lemma": ""
+  },
+  {
+   "form": "voll",
+   "context": "die Woche, -n — EN: week · FR: la semaineDiese Woche ist sehr voll.",
+   "en": "full; busy",
+   "lemma": ""
+  },
+  {
+   "form": "sonst",
+   "context": "sonst noch — EN: else, in addition · FR: d'autreWas hast du sonst noch gemacht?",
+   "en": "else; otherwise",
+   "lemma": ""
+  },
+  {
+   "form": "else",
+   "context": "sonst noch — EN: else, in addition · FR: d'autreWas hast du sonst noch gemacht?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "addition",
+   "context": "sonst noch — EN: else, in addition · FR: d'autreWas hast du sonst noch gemacht?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'autreWas",
+   "context": "sonst noch — EN: else, in addition · FR: d'autreWas hast du sonst noch gemacht?",
+   "en": "what",
+   "lemma": ""
+  },
+  {
+   "form": "nothing",
+   "context": "nichts — EN: nothing · FR: rienGestern habe ich nichts gemacht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rienGestern",
+   "context": "nichts — EN: nothing · FR: rienGestern habe ich nichts gemacht.",
+   "en": "yesterday",
+   "lemma": ""
+  },
+  {
+   "form": "erzählen",
+   "context": "erzählen",
+   "en": "to tell",
+   "lemma": ""
+  },
+  {
+   "form": "ferngesehen",
+   "context": "Am Abend habe ich ferngesehen.",
+   "en": "watched TV",
+   "lemma": "fernsehen"
+  },
+  {
+   "form": "Oh",
+   "context": "Oh, das war sicher anstrengend.",
+   "en": "oh",
+   "lemma": ""
+  },
+  {
+   "form": "sicher",
+   "context": "Oh, das war sicher anstrengend.",
+   "en": "surely; safe, sure",
+   "lemma": ""
+  },
+  {
+   "form": "anstrengend",
+   "context": "Oh, das war sicher anstrengend.",
+   "en": "tiring",
+   "lemma": ""
+  },
+  {
+   "form": "Klingt",
+   "context": "Klingt schön!",
+   "en": "sounds",
+   "lemma": "klingen"
+  },
+  {
+   "form": "Erzähl",
+   "context": "Wirklich? Erzähl mal!",
+   "en": "tell",
+   "lemma": "erzählen"
+  },
+  {
+   "form": "Eva",
+   "context": "Eva: Hallo Sami! Was hast du gestern gemacht?",
+   "en": "Eva (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Sami",
+   "context": "Eva: Hallo Sami! Was hast du gestern gemacht?",
+   "en": "Sami (name)",
+   "lemma": ""
+  },
+  {
+   "form": "je",
+   "context": "Eva: Oh je, das war lang. Und danach?",
+   "en": "(Oh je) oh dear",
+   "lemma": ""
+  },
+  {
+   "form": "lang",
+   "context": "Eva: Oh je, das war lang. Und danach?",
+   "en": "long",
+   "lemma": ""
+  },
+  {
+   "form": "gekocht",
+   "context": "Sami: Danach habe ich eingekauft und gekocht.",
+   "en": "cooked",
+   "lemma": "kochen"
+  },
+  {
+   "form": "vergessen",
+   "context": "Sami: Nein, das habe ich leider vergessen.",
+   "en": "forgotten; to forget",
+   "lemma": ""
+  },
+  {
+   "form": "Gestern",
+   "context": "Gestern war ich müde.",
+   "en": "yesterday",
+   "lemma": ""
+  },
+  {
+   "form": "Diese",
+   "context": "Diese Woche ist sehr voll.",
+   "en": "this; these",
+   "lemma": ""
+  },
+  {
+   "form": "Freundin",
+   "context": "Schreiben Sie eine kurze Nachricht an eine Freundin: Was haben Sie gestern gemacht? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie mindestens vier Verben im Perfekt mit haben. • Nennen Sie eine Uhrzeit mit von … bis oder ab. • Stellen Sie am Ende eine Frage.",
+   "en": "friend (a woman); girlfriend",
+   "lemma": "die Freundin"
+  }
+ ]
+}
