@@ -9,7 +9,7 @@ import { corsOrigins,defaultEnrollmentOrigins,enrollmentAllowedOrigins,isTest } 
 import { logger } from "./lib/logger.js";
 import { errorHandler,notFoundHandler } from "./middleware/error.js";
 import { globalLimiter } from "./middleware/rate-limit.js";
-import { paypackWebhookRouter } from "./modules/paypack/webhook.routes.js";
+import { xendlyWebhookRouter } from "./modules/mobile-money/webhook.routes.js";
 import { apiRouter } from "./routes.js";
 
 export const createApp = (): Express => {
@@ -24,7 +24,7 @@ export const createApp = (): Express => {
       crossOriginEmbedderPolicy: false,
     }),
   );
-  // Enrollment site is external (Vercel + custom domain) — allow it even if CORS_ORIGINS not yet updated on Render
+  // The school website (deutschspracherw.org) posts applications cross-origin; always allow it.
   const enrollmentOrigins = [...new Set([...enrollmentAllowedOrigins, ...defaultEnrollmentOrigins])];
   const allowedOrigins = [...new Set([...corsOrigins, ...enrollmentOrigins])];
   app.use(
@@ -38,7 +38,8 @@ export const createApp = (): Express => {
     }),
   );
   app.use(compression());
-  app.use("/api/payments/paypack/webhook", paypackWebhookRouter);
+  // Raw body: the XendlyPay signature covers the exact bytes, so this is mounted before JSON parsing.
+  app.use("/api/payments/xendlypay/webhook", xendlyWebhookRouter);
   app.use(express.json({ limit: "2mb" }));
   app.use(express.urlencoded({ extended: true, limit: "2mb" }));
   app.use(cookieParser());
