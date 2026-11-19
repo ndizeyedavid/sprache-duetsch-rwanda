@@ -20,6 +20,17 @@ export async function assertFileAccess(user: AuthUser, name: string) {
       return;
     } catch (error) { if (!(error instanceof AppError) || error.statusCode !== 403) throw error; }
   }
+  // Past papers and their listening recordings: students of the paper's course (paid), teachers of that level.
+  const papers = await prisma.examPaper.findMany({
+    where: { isPublished: true, OR: [{ fileUrl: { endsWith: suffix } }, { audio: { some: { url: { endsWith: suffix } } } }] }, select: { levelId: true },
+  });
+  for (const paper of papers) {
+    try {
+      if (user.role === "TEACHER") await assertTeacherLevel(user.id, paper.levelId);
+      else await assertLevelAccess(user.id, paper.levelId);
+      return;
+    } catch (error) { if (!(error instanceof AppError) || error.statusCode !== 403) throw error; }
+  }
   const lessons = await prisma.lesson.findMany({ where: { OR: [
     { videoUrl: { endsWith: suffix } }, { audioUrl: { endsWith: suffix } },
     { materials: { some: { url: { endsWith: suffix } } } }, { body: { contains: suffix } },
