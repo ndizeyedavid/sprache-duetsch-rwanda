@@ -16,8 +16,10 @@ export function WritingPlayer({ activityId, config, value, onChange, disabled }:
     requestAnimationFrame(() => { input?.focus(); input?.setSelectionRange(start + 1, start + 1); });
   }
   const prompt = text(config.prompt);
+  const promptEn = text(config.promptEn);
   return <div className="space-y-2">
-    {prompt ? <p className="rounded-box border border-base-300 bg-base-200 p-3 text-sm whitespace-pre-wrap">{prompt}</p> : null}
+    {prompt ? <p className="rounded-box border border-base-300 bg-base-200 p-3 text-sm whitespace-pre-wrap" lang="de">{prompt}</p> : null}
+    {promptEn ? <p className="rounded-box bg-brand-tint p-3 text-sm whitespace-pre-wrap"><span className="font-semibold">In English: </span>{promptEn}</p> : null}
     <label htmlFor={`writing-${activityId}`} className="block text-sm font-medium">Your answer</label>
     <textarea ref={field} id={`writing-${activityId}`} value={answer} disabled={disabled} rows={7} onChange={event => onChange(event.target.value)}
       placeholder="Write your answer here…" className="textarea w-full rounded-box border-base-300 bg-base-100 text-sm leading-7" aria-describedby={`writing-count-${activityId}`} />
