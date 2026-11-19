@@ -4,7 +4,7 @@ export const MAX_PENDING_CLAIMS = 5;
 const MAX_AGE_DAYS = 366;
 
 /** Methods only finance may use: the gateway confirms itself, scholarships are granted, not paid. */
-const STAFF_ONLY = new Set(["PAYPACK", "SCHOLARSHIP"]);
+const STAFF_ONLY = new Set(["XENDLYPAY", "SCHOLARSHIP"]);
 
 export type ClaimMethod = { code: string; isActive: boolean; requiresReference: boolean };
 
@@ -13,7 +13,7 @@ export const studentCanReport = (code: string) => !STAFF_ONLY.has(code);
 /** Returns why a claim can't be accepted, or null when it is fine. */
 export function claimProblem(input: { paidAt: Date; reference?: string | null }, method: ClaimMethod | null, pending: number, now = new Date()): string | null {
   if (!method?.isActive) return "Choose an active payment method";
-  if (method.code === "PAYPACK") return "Gateway payments confirm themselves — use Pay now instead";
+  if (method.code === "XENDLYPAY") return "Gateway payments confirm themselves — use Pay now instead";
   if (STAFF_ONLY.has(method.code)) return "This payment method is recorded by the finance office";
   if (method.requiresReference && !input.reference?.trim()) return "Add the transaction reference from your receipt or SMS";
   if (input.paidAt.getTime() > now.getTime() + 5 * 60_000) return "The payment date cannot be in the future";
