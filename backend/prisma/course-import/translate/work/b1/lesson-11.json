@@ -1,0 +1,705 @@
+{
+ "level": "B1",
+ "lesson": 11,
+ "title": "Glücksmomente — Nachdem wir lange gewartet hatten, kam endlich die Nachricht",
+ "lines": [
+  {
+   "de": "Glücksmomente erzählen — und zwei Vergangenheiten sauber verbinden.",
+   "en": "Telling stories about happy moments — and linking two past times neatly."
+  },
+  {
+   "de": "ein glückliches Erlebnis spannend erzählen",
+   "en": "tell the story of a happy experience in an exciting way"
+  },
+  {
+   "de": "das Plusquamperfekt bilden",
+   "en": "form the past perfect (Plusquamperfekt)"
+  },
+  {
+   "de": "Handlungsabfolgen mit nachdem verbinden",
+   "en": "link sequences of actions with nachdem (after)"
+  },
+  {
+   "de": "Grammatik: Plusquamperfekt",
+   "en": "Grammar: past perfect (Plusquamperfekt)"
+  },
+  {
+   "de": "Das Plusquamperfekt ist die Vergangenheit vor der Vergangenheit. Man bildet es mit hatte oder war (Präteritum) + Partizip Perfekt. Man braucht es vor allem, um zu zeigen, welche von zwei vergangenen Handlungen zuerst passiert ist.",
+   "en": "The past perfect (Plusquamperfekt) is the past before the past. It is formed with hatte or war (simple past) + past participle. You need it above all to show which of two past actions happened first."
+  },
+  {
+   "de": "Zeitform",
+   "en": "Tense"
+  },
+  {
+   "de": "Plusquamperfekt (zuerst)",
+   "en": "Past perfect (first)"
+  },
+  {
+   "de": "Wir hatten tagelang gesucht …",
+   "en": "We had been searching for days …"
+  },
+  {
+   "de": "Präteritum/Perfekt (danach)",
+   "en": "Simple past/present perfect (afterwards)"
+  },
+  {
+   "de": "… dann fanden wir endlich die richtige Wohnung.",
+   "en": "… then we finally found the right flat."
+  },
+  {
+   "de": "mit sein",
+   "en": "with sein"
+  },
+  {
+   "de": "Nachdem sie angekommen war, rief sie sofort an.",
+   "en": "After she had arrived, she called straight away."
+  },
+  {
+   "de": "Nachdem ich die Prüfung bestanden hatte, feierten wir die ganze Nacht.nachdem-Satz: Plusquamperfekt; Hauptsatz: Präteritum",
+   "en": "After I had passed the exam, we celebrated all night. (nachdem clause: past perfect; main clause: simple past)"
+  },
+  {
+   "de": "Er war völlig erschöpft, denn er hatte den ganzen Tag gearbeitet.Grund liegt zeitlich davor",
+   "en": "He was completely exhausted because he had worked all day. (the reason happened earlier)"
+  },
+  {
+   "de": "Tipp: Zeitenfolge mit nachdem: Plusquamperfekt + Präteritum/Perfekt. Nicht zweimal dieselbe Zeit verwenden.",
+   "en": "Tip: Sequence of tenses with nachdem: past perfect + simple past/present perfect. Don't use the same tense twice."
+  },
+  {
+   "de": "Grammatik: Konjunktion nachdem",
+   "en": "Grammar: the conjunction nachdem (after)"
+  },
+  {
+   "de": "nachdem leitet einen Nebensatz ein (Verb am Ende) und zeigt: Diese Handlung war früher. Der nachdem-Satz kann vorn oder hinten stehen.",
+   "en": "nachdem introduces a subordinate clause (verb at the end) and shows: this action happened earlier. The nachdem clause can come first or last."
+  },
+  {
+   "de": "Nebensatz vorn",
+   "en": "Subordinate clause first"
+  },
+  {
+   "de": "Nachdem der Regen aufgehört hatte, gingen wir spazieren.",
+   "en": "After the rain had stopped, we went for a walk."
+  },
+  {
+   "de": "Wir gingen spazieren, nachdem der Regen aufgehört hatte.",
+   "en": "We went for a walk after the rain had stopped."
+  },
+  {
+   "de": "Nachdem wir umgezogen waren, fühlten wir uns sofort wohl.umziehen → sein-Verb",
+   "en": "After we had moved, we felt at home straight away. (umziehen → sein verb)"
+  },
+  {
+   "de": "Tipp: Nicht verwechseln: nachdem (Konjunktion, Nebensatz) ≠ danach (Adverb, Hauptsatz): Danach gingen wir spazieren.",
+   "en": "Tip: Don't mix them up: nachdem (conjunction, subordinate clause) ≠ danach (adverb, main clause): After that, we went for a walk."
+  },
+  {
+   "de": "der Glücksmoment, -e — EN: moment of happiness · FR: un moment de bonheurDas war einer der schönsten Glücksmomente meines Lebens.",
+   "en": "Example: That was one of the happiest moments of my life."
+  },
+  {
+   "de": "sich freuen über / auf — EN: to be happy about / look forward to · FR: se réjouir deIch habe mich riesig über die Nachricht gefreut.",
+   "en": "Example: I was thrilled about the news."
+  },
+  {
+   "de": "gelingen (gelang, gelungen) — EN: to succeed · FR: réussirDie Überraschung ist uns gelungen.",
+   "en": "Example: We pulled off the surprise."
+  },
+  {
+   "de": "das Erlebnis, -se — EN: experience, event · FR: l'expérience vécueDas war ein unvergessliches Erlebnis.",
+   "en": "Example: That was an unforgettable experience."
+  },
+  {
+   "de": "überraschen — EN: to surprise · FR: surprendreSie hat uns alle überrascht.",
+   "en": "Example: She surprised us all."
+  },
+  {
+   "de": "erleichtert — EN: relieved · FR: soulagéIch war unglaublich erleichtert.",
+   "en": "Example: I was incredibly relieved."
+  },
+  {
+   "de": "das Pech (Sg.) / das Glück (Sg.) — EN: bad luck / luck · FR: la malchance / la chanceErst hatten wir Pech, dann plötzlich Glück.",
+   "en": "Example: First we had bad luck, then suddenly good luck."
+  },
+  {
+   "de": "aufgeregt — EN: excited, nervous · FR: excité, nerveuxVor der Prüfung war ich sehr aufgeregt.",
+   "en": "Example: I was very nervous before the exam."
+  },
+  {
+   "de": "stolz sein auf — EN: to be proud of · FR: être fier deIch bin stolz auf meine Schwester.",
+   "en": "Example: I am proud of my sister."
+  },
+  {
+   "de": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "Example: The effort was worth it."
+  },
+  {
+   "de": "plötzlich — EN: suddenly · FR: soudainPlötzlich klingelte das Telefon.",
+   "en": "Example: Suddenly the phone rang."
+  },
+  {
+   "de": "unvergesslich — EN: unforgettable · FR: inoubliableDer Abend war einfach unvergesslich.",
+   "en": "Example: The evening was simply unforgettable."
+  },
+  {
+   "de": "eine Geschichte beginnen",
+   "en": "starting a story"
+  },
+  {
+   "de": "Das war vor ungefähr zwei Jahren …",
+   "en": "That was about two years ago …"
+  },
+  {
+   "de": "Ich erzähle euch mal, was mir passiert ist.",
+   "en": "Let me tell you what happened to me."
+  },
+  {
+   "de": "Eines Tages …",
+   "en": "One day …"
+  },
+  {
+   "de": "Spannung aufbauen",
+   "en": "building suspense"
+  },
+  {
+   "de": "Und plötzlich …",
+   "en": "And suddenly …"
+  },
+  {
+   "de": "Ihr könnt euch nicht vorstellen, was dann passierte.",
+   "en": "You can't imagine what happened next."
+  },
+  {
+   "de": "Nachdem wir stundenlang gewartet hatten, …",
+   "en": "After we had waited for hours, …"
+  },
+  {
+   "de": "auf eine Geschichte reagieren",
+   "en": "reacting to a story"
+  },
+  {
+   "de": "Was für ein Glück!",
+   "en": "What luck!"
+  },
+  {
+   "de": "Das kann ich gut nachempfinden.",
+   "en": "I can really relate to that."
+  },
+  {
+   "de": "So etwas habe ich auch schon einmal erlebt.",
+   "en": "I've experienced something like that too."
+  },
+  {
+   "de": "Das war einer der schönsten Glücksmomente meines Lebens.",
+   "en": "That was one of the happiest moments of my life."
+  },
+  {
+   "de": "Ich habe mich riesig über die Nachricht gefreut.",
+   "en": "I was thrilled about the news."
+  },
+  {
+   "de": "Die Überraschung ist uns gelungen.",
+   "en": "We pulled off the surprise."
+  },
+  {
+   "de": "Das war ein unvergessliches Erlebnis.",
+   "en": "That was an unforgettable experience."
+  },
+  {
+   "de": "Sie hat uns alle überrascht.",
+   "en": "She surprised us all."
+  },
+  {
+   "de": "Ich war unglaublich erleichtert.",
+   "en": "I was incredibly relieved."
+  },
+  {
+   "de": "Erst hatten wir Pech, dann plötzlich Glück.",
+   "en": "First we had bad luck, then suddenly good luck."
+  },
+  {
+   "de": "Vor der Prüfung war ich sehr aufgeregt.",
+   "en": "I was very nervous before the exam."
+  },
+  {
+   "de": "Ich bin stolz auf meine Schwester.",
+   "en": "I am proud of my sister."
+  },
+  {
+   "de": "Die Mühe hat sich gelohnt.",
+   "en": "The effort was worth it."
+  },
+  {
+   "de": "Plötzlich klingelte das Telefon.",
+   "en": "Suddenly the phone rang."
+  },
+  {
+   "de": "Der Abend war einfach unvergesslich.",
+   "en": "The evening was simply unforgettable."
+  },
+  {
+   "de": "Nachdem wir den Vertrag unterschrieben ___, feierten wir. (haben, Plusquamperfekt)",
+   "en": "After we ___ signed the contract, we celebrated. (haben, past perfect)"
+  },
+  {
+   "de": "Nachdem sie in Berlin angekommen ___, suchte sie sofort eine Wohnung.",
+   "en": "After she ___ arrived in Berlin, she immediately looked for a flat."
+  },
+  {
+   "de": "Welcher Satz zeigt die richtige Zeitenfolge?",
+   "en": "Which sentence shows the correct sequence of tenses?"
+  },
+  {
+   "de": "Er war müde, denn er ___ die ganze Nacht gearbeitet. (haben, Plusquamperfekt)",
+   "en": "He was tired because he ___ worked all night. (haben, past perfect)"
+  },
+  {
+   "de": "Wir räumten auf. ___ fuhren wir nach Hause. (Adverb, nicht 'nachdem')",
+   "en": "We tidied up. ___ we drove home. (adverb, not 'nachdem')"
+  },
+  {
+   "de": "Plusquamperfekt: hatten + Partizip unterschrieben.",
+   "en": "Past perfect (Plusquamperfekt): hatten + the participle unterschrieben."
+  },
+  {
+   "de": "ankommen bildet das Perfekt mit sein → war angekommen.",
+   "en": "ankommen forms the perfect tense with sein → war angekommen."
+  },
+  {
+   "de": "nachdem-Satz im Plusquamperfekt, Hauptsatz im Präteritum.",
+   "en": "nachdem clause in the past perfect, main clause in the simple past."
+  },
+  {
+   "de": "Die Arbeit liegt zeitlich vor der Müdigkeit.",
+   "en": "The work happened before the tiredness."
+  },
+  {
+   "de": "Im Hauptsatz steht ein Adverb wie danach oder anschließend.",
+   "en": "In the main clause you use an adverb such as danach or anschließend (afterwards)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Glücksmomente",
+   "context": "Glücksmomente erzählen — und zwei Vergangenheiten sauber verbinden.",
+   "en": "moments of happiness",
+   "lemma": "der Glücksmoment"
+  },
+  {
+   "form": "Vergangenheiten",
+   "context": "Glücksmomente erzählen — und zwei Vergangenheiten sauber verbinden.",
+   "en": "past times",
+   "lemma": "die Vergangenheit"
+  },
+  {
+   "form": "glückliches",
+   "context": "ein glückliches Erlebnis spannend erzählen",
+   "en": "happy",
+   "lemma": "glücklich"
+  },
+  {
+   "form": "Erlebnis",
+   "context": "ein glückliches Erlebnis spannend erzählen",
+   "en": "experience",
+   "lemma": "das Erlebnis"
+  },
+  {
+   "form": "Plusquamperfekt",
+   "context": "das Plusquamperfekt bilden",
+   "en": "past perfect",
+   "lemma": "das Plusquamperfekt"
+  },
+  {
+   "form": "Handlungsabfolgen",
+   "context": "Handlungsabfolgen mit nachdem verbinden",
+   "en": "sequences of actions",
+   "lemma": "die Handlungsabfolge"
+  },
+  {
+   "form": "vergangenen",
+   "context": "Das Plusquamperfekt ist die Vergangenheit vor der Vergangenheit. Man bildet es mit hatte oder war (Präteritum) + Partizip Perfekt. Man braucht es vor allem, um zu zeigen, welche von zwei vergangenen Handlungen zuerst passiert ist.",
+   "en": "past",
+   "lemma": "vergangen"
+  },
+  {
+   "form": "Zeitform",
+   "context": "Zeitform",
+   "en": "tense",
+   "lemma": "die Zeitform"
+  },
+  {
+   "form": "tagelang",
+   "context": "Wir hatten tagelang gesucht …",
+   "en": "for days",
+   "lemma": ""
+  },
+  {
+   "form": "gesucht",
+   "context": "Wir hatten tagelang gesucht …",
+   "en": "searched, looked for",
+   "lemma": "suchen"
+  },
+  {
+   "form": "rief",
+   "context": "Nachdem sie angekommen war, rief sie sofort an.",
+   "en": "called; rief an = phoned",
+   "lemma": "rufen"
+  },
+  {
+   "form": "bestanden",
+   "context": "Nachdem ich die Prüfung bestanden hatte, feierten wir die ganze Nacht.nachdem-Satz: Plusquamperfekt; Hauptsatz: Präteritum",
+   "en": "passed (an exam)",
+   "lemma": "bestehen"
+  },
+  {
+   "form": "feierten",
+   "context": "Nachdem ich die Prüfung bestanden hatte, feierten wir die ganze Nacht.nachdem-Satz: Plusquamperfekt; Hauptsatz: Präteritum",
+   "en": "celebrated",
+   "lemma": "feiern"
+  },
+  {
+   "form": "nachdem-Satz",
+   "context": "Nachdem ich die Prüfung bestanden hatte, feierten wir die ganze Nacht.nachdem-Satz: Plusquamperfekt; Hauptsatz: Präteritum",
+   "en": "nachdem clause",
+   "lemma": "der nachdem-Satz"
+  },
+  {
+   "form": "erschöpft",
+   "context": "Er war völlig erschöpft, denn er hatte den ganzen Tag gearbeitet.Grund liegt zeitlich davor",
+   "en": "exhausted",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitenfolge",
+   "context": "Tipp: Zeitenfolge mit nachdem: Plusquamperfekt + Präteritum/Perfekt. Nicht zweimal dieselbe Zeit verwenden.",
+   "en": "sequence of tenses",
+   "lemma": "die Zeitenfolge"
+  },
+  {
+   "form": "spazieren",
+   "context": "Nachdem der Regen aufgehört hatte, gingen wir spazieren.",
+   "en": "stroll; spazieren gehen = go for a walk",
+   "lemma": ""
+  },
+  {
+   "form": "fühlten",
+   "context": "Nachdem wir umgezogen waren, fühlten wir uns sofort wohl.umziehen → sein-Verb",
+   "en": "felt",
+   "lemma": "sich fühlen"
+  },
+  {
+   "form": "sein-Verb",
+   "context": "Nachdem wir umgezogen waren, fühlten wir uns sofort wohl.umziehen → sein-Verb",
+   "en": "sein verb",
+   "lemma": "das sein-Verb"
+  },
+  {
+   "form": "Glücksmoment",
+   "context": "der Glücksmoment, -e — EN: moment of happiness · FR: un moment de bonheurDas war einer der schönsten Glücksmomente meines Lebens.",
+   "en": "moment of happiness",
+   "lemma": "der Glücksmoment"
+  },
+  {
+   "form": "happiness",
+   "context": "der Glücksmoment, -e — EN: moment of happiness · FR: un moment de bonheurDas war einer der schönsten Glücksmomente meines Lebens.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bonheurDas",
+   "context": "der Glücksmoment, -e — EN: moment of happiness · FR: un moment de bonheurDas war einer der schönsten Glücksmomente meines Lebens.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "meines",
+   "context": "der Glücksmoment, -e — EN: moment of happiness · FR: un moment de bonheurDas war einer der schönsten Glücksmomente meines Lebens.",
+   "en": "of my",
+   "lemma": "mein"
+  },
+  {
+   "form": "Lebens",
+   "context": "der Glücksmoment, -e — EN: moment of happiness · FR: un moment de bonheurDas war einer der schönsten Glücksmomente meines Lebens.",
+   "en": "(of) life",
+   "lemma": "das Leben"
+  },
+  {
+   "form": "riesig",
+   "context": "sich freuen über / auf — EN: to be happy about / look forward to · FR: se réjouir deIch habe mich riesig über die Nachricht gefreut.",
+   "en": "hugely; huge",
+   "lemma": ""
+  },
+  {
+   "form": "gelingen",
+   "context": "gelingen (gelang, gelungen) — EN: to succeed · FR: réussirDie Überraschung ist uns gelungen.",
+   "en": "to succeed, work out",
+   "lemma": ""
+  },
+  {
+   "form": "gelang",
+   "context": "gelingen (gelang, gelungen) — EN: to succeed · FR: réussirDie Überraschung ist uns gelungen.",
+   "en": "succeeded, worked out",
+   "lemma": "gelingen"
+  },
+  {
+   "form": "gelungen",
+   "context": "gelingen (gelang, gelungen) — EN: to succeed · FR: réussirDie Überraschung ist uns gelungen.",
+   "en": "succeeded; successful",
+   "lemma": "gelingen"
+  },
+  {
+   "form": "succeed",
+   "context": "gelingen (gelang, gelungen) — EN: to succeed · FR: réussirDie Überraschung ist uns gelungen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réussirDie",
+   "context": "gelingen (gelang, gelungen) — EN: to succeed · FR: réussirDie Überraschung ist uns gelungen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'expérience",
+   "context": "das Erlebnis, -se — EN: experience, event · FR: l'expérience vécueDas war ein unvergessliches Erlebnis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vécueDas",
+   "context": "das Erlebnis, -se — EN: experience, event · FR: l'expérience vécueDas war ein unvergessliches Erlebnis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "unvergessliches",
+   "context": "das Erlebnis, -se — EN: experience, event · FR: l'expérience vécueDas war ein unvergessliches Erlebnis.",
+   "en": "unforgettable",
+   "lemma": "unvergesslich"
+  },
+  {
+   "form": "überraschen",
+   "context": "überraschen — EN: to surprise · FR: surprendreSie hat uns alle überrascht.",
+   "en": "to surprise",
+   "lemma": ""
+  },
+  {
+   "form": "surprise",
+   "context": "überraschen — EN: to surprise · FR: surprendreSie hat uns alle überrascht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "surprendreSie",
+   "context": "überraschen — EN: to surprise · FR: surprendreSie hat uns alle überrascht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erleichtert",
+   "context": "erleichtert — EN: relieved · FR: soulagéIch war unglaublich erleichtert.",
+   "en": "relieved",
+   "lemma": ""
+  },
+  {
+   "form": "relieved",
+   "context": "erleichtert — EN: relieved · FR: soulagéIch war unglaublich erleichtert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soulagéIch",
+   "context": "erleichtert — EN: relieved · FR: soulagéIch war unglaublich erleichtert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "unglaublich",
+   "context": "erleichtert — EN: relieved · FR: soulagéIch war unglaublich erleichtert.",
+   "en": "incredibly; incredible",
+   "lemma": ""
+  },
+  {
+   "form": "Pech",
+   "context": "das Pech (Sg.) / das Glück (Sg.) — EN: bad luck / luck · FR: la malchance / la chanceErst hatten wir Pech, dann plötzlich Glück.",
+   "en": "bad luck",
+   "lemma": "das Pech"
+  },
+  {
+   "form": "luck",
+   "context": "das Pech (Sg.) / das Glück (Sg.) — EN: bad luck / luck · FR: la malchance / la chanceErst hatten wir Pech, dann plötzlich Glück.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "malchance",
+   "context": "das Pech (Sg.) / das Glück (Sg.) — EN: bad luck / luck · FR: la malchance / la chanceErst hatten wir Pech, dann plötzlich Glück.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chanceErst",
+   "context": "das Pech (Sg.) / das Glück (Sg.) — EN: bad luck / luck · FR: la malchance / la chanceErst hatten wir Pech, dann plötzlich Glück.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aufgeregt",
+   "context": "aufgeregt — EN: excited, nervous · FR: excité, nerveuxVor der Prüfung war ich sehr aufgeregt.",
+   "en": "excited, nervous",
+   "lemma": ""
+  },
+  {
+   "form": "excited",
+   "context": "aufgeregt — EN: excited, nervous · FR: excité, nerveuxVor der Prüfung war ich sehr aufgeregt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "excité",
+   "context": "aufgeregt — EN: excited, nervous · FR: excité, nerveuxVor der Prüfung war ich sehr aufgeregt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nerveuxVor",
+   "context": "aufgeregt — EN: excited, nervous · FR: excité, nerveuxVor der Prüfung war ich sehr aufgeregt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lohnen",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "be worth it (sich lohnen)",
+   "lemma": "sich lohnen"
+  },
+  {
+   "form": "worth",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "it",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "valoir",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "peineDie",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Mühe",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "effort, trouble",
+   "lemma": "die Mühe"
+  },
+  {
+   "form": "gelohnt",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDie Mühe hat sich gelohnt.",
+   "en": "been worth it",
+   "lemma": "sich lohnen"
+  },
+  {
+   "form": "klingelte",
+   "context": "plötzlich — EN: suddenly · FR: soudainPlötzlich klingelte das Telefon.",
+   "en": "rang",
+   "lemma": "klingeln"
+  },
+  {
+   "form": "unvergesslich",
+   "context": "unvergesslich — EN: unforgettable · FR: inoubliableDer Abend war einfach unvergesslich.",
+   "en": "unforgettable",
+   "lemma": ""
+  },
+  {
+   "form": "unforgettable",
+   "context": "unvergesslich — EN: unforgettable · FR: inoubliableDer Abend war einfach unvergesslich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "inoubliableDer",
+   "context": "unvergesslich — EN: unforgettable · FR: inoubliableDer Abend war einfach unvergesslich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erzähle",
+   "context": "Ich erzähle euch mal, was mir passiert ist.",
+   "en": "tell",
+   "lemma": "erzählen"
+  },
+  {
+   "form": "Tages",
+   "context": "Eines Tages …",
+   "en": "day (eines Tages = one day)",
+   "lemma": "der Tag"
+  },
+  {
+   "form": "Spannung",
+   "context": "Spannung aufbauen",
+   "en": "suspense, tension",
+   "lemma": "die Spannung"
+  },
+  {
+   "form": "aufbauen",
+   "context": "Spannung aufbauen",
+   "en": "to build (up)",
+   "lemma": ""
+  },
+  {
+   "form": "passierte",
+   "context": "Ihr könnt euch nicht vorstellen, was dann passierte.",
+   "en": "happened",
+   "lemma": "passieren"
+  },
+  {
+   "form": "gewartet",
+   "context": "Nachdem wir stundenlang gewartet hatten, …",
+   "en": "waited",
+   "lemma": "warten"
+  },
+  {
+   "form": "nachempfinden",
+   "context": "Das kann ich gut nachempfinden.",
+   "en": "to relate to, empathise with",
+   "lemma": ""
+  },
+  {
+   "form": "erlebt",
+   "context": "So etwas habe ich auch schon einmal erlebt.",
+   "en": "experienced",
+   "lemma": "erleben"
+  },
+  {
+   "form": "suchte",
+   "context": "Nachdem sie in Berlin angekommen ___, suchte sie sofort eine Wohnung.",
+   "en": "looked for",
+   "lemma": "suchen"
+  },
+  {
+   "form": "räumten",
+   "context": "Wir räumten auf. ___ fuhren wir nach Hause. (Adverb, nicht 'nachdem')",
+   "en": "tidied (with auf)",
+   "lemma": "aufräumen"
+  },
+  {
+   "form": "fuhren",
+   "context": "Wir räumten auf. ___ fuhren wir nach Hause. (Adverb, nicht 'nachdem')",
+   "en": "drove, went",
+   "lemma": "fahren"
+  }
+ ]
+}
