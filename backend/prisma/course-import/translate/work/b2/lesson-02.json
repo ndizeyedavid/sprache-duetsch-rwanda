@@ -1,0 +1,905 @@
+{
+ "level": "B2",
+ "lesson": 2,
+ "title": "Das Leben in einer anderen Kultur — Ich habe es ihm gestern erklärt",
+ "lines": [
+  {
+   "de": "Über Ein- und Auswandern sprechen und einen Text zusammenfassen — mit sicherer Wortstellung im Mittelfeld.",
+   "en": "Talking about immigration and emigration and summarising a text — with confident word order in the middle field."
+  },
+  {
+   "de": "Textsorte: Zeitungsartikel · Zusammenfassung",
+   "en": "Text type: newspaper article · summary"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Lesen Teil 2; telc B2 Schreiben (Zusammenfassung)",
+   "en": "Exam link: Goethe B2 Reading part 2; telc B2 Writing (summary)"
+  },
+  {
+   "de": "über die Situation von Auswanderern und Expats sprechen",
+   "en": "talk about the situation of emigrants and expats"
+  },
+  {
+   "de": "Dativ- und Akkusativobjekte im Mittelfeld richtig anordnen",
+   "en": "put dative and accusative objects in the right order in the middle field (Mittelfeld)"
+  },
+  {
+   "de": "einen längeren Sachtext in eigenen Worten zusammenfassen",
+   "en": "summarise a longer non-fiction text in your own words"
+  },
+  {
+   "de": "Grammatik: Dativ- und Akkusativobjekt im Mittelfeld",
+   "en": "Grammar: dative and accusative objects in the middle field (Mittelfeld)"
+  },
+  {
+   "de": "Stehen beide Objekte im Satz, entscheidet eine einzige Regel über die Reihenfolge: Pronomen stehen vor Nomen, und zwischen zwei Pronomen steht der Akkusativ vor dem Dativ. Bei zwei Nomen gilt die Grundfolge Dativ vor Akkusativ.",
+   "en": "When both objects are in the sentence, a single rule decides the order: pronouns come before nouns, and between two pronouns the accusative comes before the dative. With two nouns, the basic order is dative before accusative."
+  },
+  {
+   "de": "Ich habe meinem Kollegen den Antrag erklärt.",
+   "en": "I explained the application to my colleague."
+  },
+  {
+   "de": "Ich habe ihm den Antrag erklärt.",
+   "en": "I explained the application to him."
+  },
+  {
+   "de": "Ich habe ihn meinem Kollegen erklärt.",
+   "en": "I explained it to my colleague."
+  },
+  {
+   "de": "Ich habe ihn ihm erklärt.",
+   "en": "I explained it to him."
+  },
+  {
+   "de": "Die Behörde hat der Familie die Aufenthaltserlaubnis verlängert.zwei Nomen: Dativ vor Akkusativ",
+   "en": "The authorities extended the family's residence permit. Two nouns: dative before accusative"
+  },
+  {
+   "de": "Die Behörde hat sie ihr verlängert.zwei Pronomen: Akkusativ vor Dativ",
+   "en": "The authorities extended it for them. Two pronouns: accusative before dative"
+  },
+  {
+   "de": "Hast du es deinen Eltern schon gesagt?Pronomen vor Nomen",
+   "en": "Have you told your parents about it yet? Pronoun before noun"
+  },
+  {
+   "de": "Tipp: Merkformel: Pronomen vor Nomen — und wenn beides Pronomen sind, kommt der kurze Akkusativ zuerst. „Ich gebe es dir\", nie „Ich gebe dir es\".",
+   "en": "Tip: Memory aid: pronoun before noun — and if both are pronouns, the short accusative comes first. “Ich gebe es dir”, never “Ich gebe dir es”."
+  },
+  {
+   "de": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "Example: Every year, thousands of skilled workers emigrate."
+  },
+  {
+   "de": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "Example: The country is making targeted efforts to attract foreign skilled workers."
+  },
+  {
+   "de": "die Aufenthaltserlaubnis, -se — EN: residence permit · FR: le titre de séjourDie Aufenthaltserlaubnis gilt zunächst für zwei Jahre.",
+   "en": "Example: The residence permit is initially valid for two years."
+  },
+  {
+   "de": "sich einleben — EN: to settle in · FR: s'acclimaterEs hat ein halbes Jahr gedauert, bis ich mich eingelebt hatte.",
+   "en": "Example: It took six months before I had settled in."
+  },
+  {
+   "de": "der Kulturschock (Sg.) — EN: culture shock · FR: le choc culturelDer Kulturschock kam erst nach einigen Monaten.",
+   "en": "Example: The culture shock only came after a few months."
+  },
+  {
+   "de": "die Heimat (Sg.) — EN: home, homeland · FR: le pays natalHeimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "Example: For me, home is not a place but a feeling."
+  },
+  {
+   "de": "das Heimweh (Sg.) — EN: homesickness · FR: le mal du paysAm Anfang hatte ich starkes Heimweh.",
+   "en": "Example: At the beginning, I was very homesick."
+  },
+  {
+   "de": "die Integration (Sg.) — EN: integration · FR: l'intégrationIntegration funktioniert nur in beide Richtungen.",
+   "en": "Example: Integration only works both ways."
+  },
+  {
+   "de": "der Lebensunterhalt (Sg.) — EN: living, livelihood · FR: les moyens de subsistanceSie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "Example: She earns her living as a translator."
+  },
+  {
+   "de": "die Anerkennung (Sg.) — EN: recognition (of qualifications) · FR: la reconnaissanceDie Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "Example: The recognition of her degree took months."
+  },
+  {
+   "de": "der Behördengang, ¨-e — EN: trip to a public office · FR: la démarche administrativeDie vielen Behördengänge waren das Anstrengendste.",
+   "en": "Example: All the trips to government offices were the most exhausting part."
+  },
+  {
+   "de": "sich zurechtfinden — EN: to find one's way around · FR: se débrouillerInzwischen finde ich mich gut zurecht.",
+   "en": "Example: By now I find my way around well."
+  },
+  {
+   "de": "die Sprachbarriere, -n — EN: language barrier · FR: la barrière linguistiqueDie Sprachbarriere war das größte Hindernis.",
+   "en": "Example: The language barrier was the biggest obstacle."
+  },
+  {
+   "de": "etwas in Angriff nehmen — EN: to tackle sth. · FR: s'attaquer à qc.Zuerst habe ich die Wohnungssuche in Angriff genommen.",
+   "en": "Example: First, I tackled the search for a flat."
+  },
+  {
+   "de": "eine Zusammenfassung einleiten",
+   "en": "Introducing a summary"
+  },
+  {
+   "de": "In dem Artikel „…\" von … geht es um …",
+   "en": "The article “…” by … is about …"
+  },
+  {
+   "de": "Der Text befasst sich mit der Frage, ob …",
+   "en": "The text deals with the question of whether …"
+  },
+  {
+   "de": "Der Autor / Die Autorin stellt dar, wie …",
+   "en": "The author describes how …"
+  },
+  {
+   "de": "Inhalte wiedergeben",
+   "en": "Reporting the content"
+  },
+  {
+   "de": "Laut dem Artikel …",
+   "en": "According to the article …"
+  },
+  {
+   "de": "Der Text nennt drei Gründe dafür, dass …",
+   "en": "The text gives three reasons why …"
+  },
+  {
+   "de": "Abschließend kommt die Autorin zu dem Schluss, dass …",
+   "en": "Finally, the author comes to the conclusion that …"
+  },
+  {
+   "de": "über Migration sprechen",
+   "en": "Talking about migration"
+  },
+  {
+   "de": "Was mir den Einstieg erleichtert hat, war …",
+   "en": "What made the start easier for me was …"
+  },
+  {
+   "de": "Besonders schwer fiel mir, dass …",
+   "en": "What I found particularly hard was that …"
+  },
+  {
+   "de": "Nach etwa einem Jahr hatte ich mich eingelebt.",
+   "en": "After about a year, I had settled in."
+  },
+  {
+   "de": "Jedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "Every year, thousands of skilled workers emigrate."
+  },
+  {
+   "de": "Das Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "The country is making targeted efforts to attract foreign skilled workers."
+  },
+  {
+   "de": "Die Aufenthaltserlaubnis gilt zunächst für zwei Jahre.",
+   "en": "The residence permit is initially valid for two years."
+  },
+  {
+   "de": "Es hat ein halbes Jahr gedauert, bis ich mich eingelebt hatte.",
+   "en": "It took six months before I had settled in."
+  },
+  {
+   "de": "Der Kulturschock kam erst nach einigen Monaten.",
+   "en": "The culture shock only came after a few months."
+  },
+  {
+   "de": "Heimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "For me, home is not a place but a feeling."
+  },
+  {
+   "de": "Am Anfang hatte ich starkes Heimweh.",
+   "en": "At the beginning, I was very homesick."
+  },
+  {
+   "de": "Integration funktioniert nur in beide Richtungen.",
+   "en": "Integration only works both ways."
+  },
+  {
+   "de": "Sie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "She earns her living as a translator."
+  },
+  {
+   "de": "Die Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "The recognition of her degree took months."
+  },
+  {
+   "de": "Die vielen Behördengänge waren das Anstrengendste.",
+   "en": "All the trips to government offices were the most exhausting part."
+  },
+  {
+   "de": "Inzwischen finde ich mich gut zurecht.",
+   "en": "By now I find my way around well."
+  },
+  {
+   "de": "Die Sprachbarriere war das größte Hindernis.",
+   "en": "The language barrier was the biggest obstacle."
+  },
+  {
+   "de": "Zuerst habe ich die Wohnungssuche in Angriff genommen.",
+   "en": "First, I tackled the search for a flat."
+  },
+  {
+   "de": "Die Beamtin hat ___ ausgestellt.",
+   "en": "The official has issued ___."
+  },
+  {
+   "de": "Hast du ___ deinen Eltern schon gezeigt? (das Foto → Pronomen)",
+   "en": "Have you shown ___ to your parents yet? (das Foto → pronoun)"
+  },
+  {
+   "de": "Ersetzen Sie beide Objekte: „Er erklärt dem Studenten die Regel.\"",
+   "en": "Replace both objects: “He explains the rule to the student.”"
+  },
+  {
+   "de": "Ich schicke ___ dir morgen. (den Vertrag → Pronomen)",
+   "en": "I'll send ___ to you tomorrow. (den Vertrag → pronoun)"
+  },
+  {
+   "de": "Eine Zusammenfassung schreibt man im ___. (Zeitform)",
+   "en": "A summary is written in the ___. (tense)"
+  },
+  {
+   "de": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "Summarise a newspaper article about emigration in your country and add your own assessment at the end. Length: 150–180 words Checklist: • In the first sentence, name the text type, title and topic. • Give only the main information, no examples and no quotations. • Write in the present tense throughout and in your own words. • Clearly separate the summary of the content from your own opinion."
+  },
+  {
+   "de": "Zwei Pronomen: Akkusativ (es) steht vor Dativ (dir).",
+   "en": "Two pronouns: accusative (es) comes before dative (dir)."
+  },
+  {
+   "de": "Zwei Nomen: Grundfolge Dativ vor Akkusativ.",
+   "en": "Two nouns: basic order dative before accusative."
+  },
+  {
+   "de": "Das Pronomen steht vor dem Nomen: es deinen Eltern.",
+   "en": "The pronoun comes before the noun: es deinen Eltern."
+  },
+  {
+   "de": "die Regel → sie (Akkusativ) zuerst, dem Studenten → ihm (Dativ) danach.",
+   "en": "die Regel → sie (accusative) first, dem Studenten → ihm (dative) after it."
+  },
+  {
+   "de": "der Vertrag ist maskulin, Akkusativ → ihn, und steht vor dem Dativpronomen.",
+   "en": "der Vertrag is masculine, accusative → ihn, and comes before the dative pronoun."
+  },
+  {
+   "de": "Zusammenfassungen stehen im Präsens, auch wenn der Originaltext in der Vergangenheit steht.",
+   "en": "Summaries are written in the present tense, even if the original text is in the past."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Auswandern",
+   "context": "Über Ein- und Auswandern sprechen und einen Text zusammenfassen — mit sicherer Wortstellung im Mittelfeld.",
+   "en": "emigrating, emigration",
+   "lemma": "das Auswandern"
+  },
+  {
+   "form": "Zusammenfassung",
+   "context": "Textsorte: Zeitungsartikel · Zusammenfassung",
+   "en": "summary",
+   "lemma": "die Zusammenfassung"
+  },
+  {
+   "form": "Auswanderern",
+   "context": "über die Situation von Auswanderern und Expats sprechen",
+   "en": "emigrants",
+   "lemma": "der Auswanderer"
+  },
+  {
+   "form": "Expats",
+   "context": "über die Situation von Auswanderern und Expats sprechen",
+   "en": "expats",
+   "lemma": "der Expat"
+  },
+  {
+   "form": "Akkusativobjekte",
+   "context": "Dativ- und Akkusativobjekte im Mittelfeld richtig anordnen",
+   "en": "accusative objects",
+   "lemma": "das Akkusativobjekt"
+  },
+  {
+   "form": "längeren",
+   "context": "einen längeren Sachtext in eigenen Worten zusammenfassen",
+   "en": "longer",
+   "lemma": "lang"
+  },
+  {
+   "form": "Worten",
+   "context": "einen längeren Sachtext in eigenen Worten zusammenfassen",
+   "en": "words (in eigenen Worten = in your own words)",
+   "lemma": "das Wort"
+  },
+  {
+   "form": "einzige",
+   "context": "Stehen beide Objekte im Satz, entscheidet eine einzige Regel über die Reihenfolge: Pronomen stehen vor Nomen, und zwischen zwei Pronomen steht der Akkusativ vor dem Dativ. Bei zwei Nomen gilt die Grundfolge Dativ vor Akkusativ.",
+   "en": "single, only",
+   "lemma": "einzig"
+  },
+  {
+   "form": "Grundfolge",
+   "context": "Stehen beide Objekte im Satz, entscheidet eine einzige Regel über die Reihenfolge: Pronomen stehen vor Nomen, und zwischen zwei Pronomen steht der Akkusativ vor dem Dativ. Bei zwei Nomen gilt die Grundfolge Dativ vor Akkusativ.",
+   "en": "basic order",
+   "lemma": "die Grundfolge"
+  },
+  {
+   "form": "Aufenthaltserlaubnis",
+   "context": "Die Behörde hat der Familie die Aufenthaltserlaubnis verlängert.zwei Nomen: Dativ vor Akkusativ",
+   "en": "residence permit",
+   "lemma": "die Aufenthaltserlaubnis"
+  },
+  {
+   "form": "verlängert",
+   "context": "Die Behörde hat der Familie die Aufenthaltserlaubnis verlängert.zwei Nomen: Dativ vor Akkusativ",
+   "en": "extended",
+   "lemma": "verlängern"
+  },
+  {
+   "form": "Merkformel",
+   "context": "Tipp: Merkformel: Pronomen vor Nomen — und wenn beides Pronomen sind, kommt der kurze Akkusativ zuerst. „Ich gebe es dir\", nie „Ich gebe dir es\".",
+   "en": "memory aid, rule of thumb",
+   "lemma": "die Merkformel"
+  },
+  {
+   "form": "beides",
+   "context": "Tipp: Merkformel: Pronomen vor Nomen — und wenn beides Pronomen sind, kommt der kurze Akkusativ zuerst. „Ich gebe es dir\", nie „Ich gebe dir es\".",
+   "en": "both",
+   "lemma": ""
+  },
+  {
+   "form": "gebe",
+   "context": "Tipp: Merkformel: Pronomen vor Nomen — und wenn beides Pronomen sind, kommt der kurze Akkusativ zuerst. „Ich gebe es dir\", nie „Ich gebe dir es\".",
+   "en": "give",
+   "lemma": "geben"
+  },
+  {
+   "form": "auswandern",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "to emigrate",
+   "lemma": ""
+  },
+  {
+   "form": "einwandern",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "to immigrate",
+   "lemma": ""
+  },
+  {
+   "form": "emigrate",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "immigrate",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "émigrer",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "immigrerJedes",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Tausende",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "thousands",
+   "lemma": "das Tausend"
+  },
+  {
+   "form": "Fachkräfte",
+   "context": "auswandern / einwandern — EN: to emigrate / immigrate · FR: émigrer / immigrerJedes Jahr wandern Tausende Fachkräfte aus.",
+   "en": "skilled workers",
+   "lemma": "die Fachkraft"
+  },
+  {
+   "form": "Fachkraft",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "skilled worker",
+   "lemma": "die Fachkraft"
+  },
+  {
+   "form": "skilled",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "worker",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "main-d'œuvre",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "qualifiéeDas",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "wirbt",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "recruits, courts (werben um); advertises",
+   "lemma": "werben"
+  },
+  {
+   "form": "gezielt",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "in a targeted way, specifically",
+   "lemma": ""
+  },
+  {
+   "form": "ausländische",
+   "context": "die Fachkraft, ¨-e — EN: skilled worker · FR: la main-d'œuvre qualifiéeDas Land wirbt gezielt um ausländische Fachkräfte.",
+   "en": "foreign",
+   "lemma": "ausländisch"
+  },
+  {
+   "form": "residence",
+   "context": "die Aufenthaltserlaubnis, -se — EN: residence permit · FR: le titre de séjourDie Aufenthaltserlaubnis gilt zunächst für zwei Jahre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "permit",
+   "context": "die Aufenthaltserlaubnis, -se — EN: residence permit · FR: le titre de séjourDie Aufenthaltserlaubnis gilt zunächst für zwei Jahre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "titre",
+   "context": "die Aufenthaltserlaubnis, -se — EN: residence permit · FR: le titre de séjourDie Aufenthaltserlaubnis gilt zunächst für zwei Jahre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "séjourDie",
+   "context": "die Aufenthaltserlaubnis, -se — EN: residence permit · FR: le titre de séjourDie Aufenthaltserlaubnis gilt zunächst für zwei Jahre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "einleben",
+   "context": "sich einleben — EN: to settle in · FR: s'acclimaterEs hat ein halbes Jahr gedauert, bis ich mich eingelebt hatte.",
+   "en": "to settle in (sich einleben)",
+   "lemma": ""
+  },
+  {
+   "form": "settle",
+   "context": "sich einleben — EN: to settle in · FR: s'acclimaterEs hat ein halbes Jahr gedauert, bis ich mich eingelebt hatte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'acclimaterEs",
+   "context": "sich einleben — EN: to settle in · FR: s'acclimaterEs hat ein halbes Jahr gedauert, bis ich mich eingelebt hatte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "halbes",
+   "context": "sich einleben — EN: to settle in · FR: s'acclimaterEs hat ein halbes Jahr gedauert, bis ich mich eingelebt hatte.",
+   "en": "half",
+   "lemma": "halb"
+  },
+  {
+   "form": "eingelebt",
+   "context": "sich einleben — EN: to settle in · FR: s'acclimaterEs hat ein halbes Jahr gedauert, bis ich mich eingelebt hatte.",
+   "en": "settled in",
+   "lemma": "einleben"
+  },
+  {
+   "form": "Kulturschock",
+   "context": "der Kulturschock (Sg.) — EN: culture shock · FR: le choc culturelDer Kulturschock kam erst nach einigen Monaten.",
+   "en": "culture shock",
+   "lemma": "der Kulturschock"
+  },
+  {
+   "form": "culture",
+   "context": "der Kulturschock (Sg.) — EN: culture shock · FR: le choc culturelDer Kulturschock kam erst nach einigen Monaten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "shock",
+   "context": "der Kulturschock (Sg.) — EN: culture shock · FR: le choc culturelDer Kulturschock kam erst nach einigen Monaten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "choc",
+   "context": "der Kulturschock (Sg.) — EN: culture shock · FR: le choc culturelDer Kulturschock kam erst nach einigen Monaten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "culturelDer",
+   "context": "der Kulturschock (Sg.) — EN: culture shock · FR: le choc culturelDer Kulturschock kam erst nach einigen Monaten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Heimat",
+   "context": "die Heimat (Sg.) — EN: home, homeland · FR: le pays natalHeimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "home, homeland",
+   "lemma": "die Heimat"
+  },
+  {
+   "form": "home",
+   "context": "die Heimat (Sg.) — EN: home, homeland · FR: le pays natalHeimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "homeland",
+   "context": "die Heimat (Sg.) — EN: home, homeland · FR: le pays natalHeimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pays",
+   "context": "die Heimat (Sg.) — EN: home, homeland · FR: le pays natalHeimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "natalHeimat",
+   "context": "die Heimat (Sg.) — EN: home, homeland · FR: le pays natalHeimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Gefühl",
+   "context": "die Heimat (Sg.) — EN: home, homeland · FR: le pays natalHeimat ist für mich kein Ort, sondern ein Gefühl.",
+   "en": "feeling",
+   "lemma": "das Gefühl"
+  },
+  {
+   "form": "paysAm",
+   "context": "das Heimweh (Sg.) — EN: homesickness · FR: le mal du paysAm Anfang hatte ich starkes Heimweh.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "starkes",
+   "context": "das Heimweh (Sg.) — EN: homesickness · FR: le mal du paysAm Anfang hatte ich starkes Heimweh.",
+   "en": "strong; severe",
+   "lemma": "stark"
+  },
+  {
+   "form": "Integration",
+   "context": "die Integration (Sg.) — EN: integration · FR: l'intégrationIntegration funktioniert nur in beide Richtungen.",
+   "en": "integration",
+   "lemma": "die Integration"
+  },
+  {
+   "form": "integration",
+   "context": "die Integration (Sg.) — EN: integration · FR: l'intégrationIntegration funktioniert nur in beide Richtungen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'intégrationIntegration",
+   "context": "die Integration (Sg.) — EN: integration · FR: l'intégrationIntegration funktioniert nur in beide Richtungen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Richtungen",
+   "context": "die Integration (Sg.) — EN: integration · FR: l'intégrationIntegration funktioniert nur in beide Richtungen.",
+   "en": "directions",
+   "lemma": "die Richtung"
+  },
+  {
+   "form": "Lebensunterhalt",
+   "context": "der Lebensunterhalt (Sg.) — EN: living, livelihood · FR: les moyens de subsistanceSie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "living, livelihood",
+   "lemma": "der Lebensunterhalt"
+  },
+  {
+   "form": "living",
+   "context": "der Lebensunterhalt (Sg.) — EN: living, livelihood · FR: les moyens de subsistanceSie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "livelihood",
+   "context": "der Lebensunterhalt (Sg.) — EN: living, livelihood · FR: les moyens de subsistanceSie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "moyens",
+   "context": "der Lebensunterhalt (Sg.) — EN: living, livelihood · FR: les moyens de subsistanceSie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "subsistanceSie",
+   "context": "der Lebensunterhalt (Sg.) — EN: living, livelihood · FR: les moyens de subsistanceSie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Übersetzerin",
+   "context": "der Lebensunterhalt (Sg.) — EN: living, livelihood · FR: les moyens de subsistanceSie verdient ihren Lebensunterhalt als Übersetzerin.",
+   "en": "translator (a woman)",
+   "lemma": "die Übersetzerin"
+  },
+  {
+   "form": "Anerkennung",
+   "context": "die Anerkennung (Sg.) — EN: recognition (of qualifications) · FR: la reconnaissanceDie Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "recognition",
+   "lemma": "die Anerkennung"
+  },
+  {
+   "form": "recognition",
+   "context": "die Anerkennung (Sg.) — EN: recognition (of qualifications) · FR: la reconnaissanceDie Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "qualifications",
+   "context": "die Anerkennung (Sg.) — EN: recognition (of qualifications) · FR: la reconnaissanceDie Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reconnaissanceDie",
+   "context": "die Anerkennung (Sg.) — EN: recognition (of qualifications) · FR: la reconnaissanceDie Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ihres",
+   "context": "die Anerkennung (Sg.) — EN: recognition (of qualifications) · FR: la reconnaissanceDie Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "her; their",
+   "lemma": "ihr"
+  },
+  {
+   "form": "Abschlusses",
+   "context": "die Anerkennung (Sg.) — EN: recognition (of qualifications) · FR: la reconnaissanceDie Anerkennung ihres Abschlusses dauerte Monate.",
+   "en": "degree, qualification",
+   "lemma": "der Abschluss"
+  },
+  {
+   "form": "Behördengang",
+   "context": "der Behördengang, ¨-e — EN: trip to a public office · FR: la démarche administrativeDie vielen Behördengänge waren das Anstrengendste.",
+   "en": "trip to a public office",
+   "lemma": "der Behördengang"
+  },
+  {
+   "form": "démarche",
+   "context": "der Behördengang, ¨-e — EN: trip to a public office · FR: la démarche administrativeDie vielen Behördengänge waren das Anstrengendste.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "administrativeDie",
+   "context": "der Behördengang, ¨-e — EN: trip to a public office · FR: la démarche administrativeDie vielen Behördengänge waren das Anstrengendste.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Behördengänge",
+   "context": "der Behördengang, ¨-e — EN: trip to a public office · FR: la démarche administrativeDie vielen Behördengänge waren das Anstrengendste.",
+   "en": "trips to public offices",
+   "lemma": "der Behördengang"
+  },
+  {
+   "form": "Anstrengendste",
+   "context": "der Behördengang, ¨-e — EN: trip to a public office · FR: la démarche administrativeDie vielen Behördengänge waren das Anstrengendste.",
+   "en": "most exhausting (thing)",
+   "lemma": "anstrengend"
+  },
+  {
+   "form": "zurechtfinden",
+   "context": "sich zurechtfinden — EN: to find one's way around · FR: se débrouillerInzwischen finde ich mich gut zurecht.",
+   "en": "to find one's way around",
+   "lemma": ""
+  },
+  {
+   "form": "débrouillerInzwischen",
+   "context": "sich zurechtfinden — EN: to find one's way around · FR: se débrouillerInzwischen finde ich mich gut zurecht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zurecht",
+   "context": "sich zurechtfinden — EN: to find one's way around · FR: se débrouillerInzwischen finde ich mich gut zurecht.",
+   "en": "(finde … zurecht) find my way around",
+   "lemma": "zurechtfinden"
+  },
+  {
+   "form": "Sprachbarriere",
+   "context": "die Sprachbarriere, -n — EN: language barrier · FR: la barrière linguistiqueDie Sprachbarriere war das größte Hindernis.",
+   "en": "language barrier",
+   "lemma": "die Sprachbarriere"
+  },
+  {
+   "form": "barrier",
+   "context": "die Sprachbarriere, -n — EN: language barrier · FR: la barrière linguistiqueDie Sprachbarriere war das größte Hindernis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "barrière",
+   "context": "die Sprachbarriere, -n — EN: language barrier · FR: la barrière linguistiqueDie Sprachbarriere war das größte Hindernis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "linguistiqueDie",
+   "context": "die Sprachbarriere, -n — EN: language barrier · FR: la barrière linguistiqueDie Sprachbarriere war das größte Hindernis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Hindernis",
+   "context": "die Sprachbarriere, -n — EN: language barrier · FR: la barrière linguistiqueDie Sprachbarriere war das größte Hindernis.",
+   "en": "obstacle",
+   "lemma": "das Hindernis"
+  },
+  {
+   "form": "Angriff",
+   "context": "etwas in Angriff nehmen — EN: to tackle sth. · FR: s'attaquer à qc.Zuerst habe ich die Wohnungssuche in Angriff genommen.",
+   "en": "attack (in Angriff nehmen = to tackle)",
+   "lemma": "der Angriff"
+  },
+  {
+   "form": "tackle",
+   "context": "etwas in Angriff nehmen — EN: to tackle sth. · FR: s'attaquer à qc.Zuerst habe ich die Wohnungssuche in Angriff genommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'attaquer",
+   "context": "etwas in Angriff nehmen — EN: to tackle sth. · FR: s'attaquer à qc.Zuerst habe ich die Wohnungssuche in Angriff genommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Wohnungssuche",
+   "context": "etwas in Angriff nehmen — EN: to tackle sth. · FR: s'attaquer à qc.Zuerst habe ich die Wohnungssuche in Angriff genommen.",
+   "en": "search for a flat",
+   "lemma": "die Wohnungssuche"
+  },
+  {
+   "form": "einleiten",
+   "context": "eine Zusammenfassung einleiten",
+   "en": "to introduce, begin",
+   "lemma": ""
+  },
+  {
+   "form": "befasst",
+   "context": "Der Text befasst sich mit der Frage, ob …",
+   "en": "deals (sich befassen mit = to deal with)",
+   "lemma": "befassen"
+  },
+  {
+   "form": "Autor",
+   "context": "Der Autor / Die Autorin stellt dar, wie …",
+   "en": "author (a man)",
+   "lemma": "der Autor"
+  },
+  {
+   "form": "Inhalte",
+   "context": "Inhalte wiedergeben",
+   "en": "contents",
+   "lemma": "der Inhalt"
+  },
+  {
+   "form": "wiedergeben",
+   "context": "Inhalte wiedergeben",
+   "en": "to reproduce, report",
+   "lemma": ""
+  },
+  {
+   "form": "Abschließend",
+   "context": "Abschließend kommt die Autorin zu dem Schluss, dass …",
+   "en": "finally, in conclusion",
+   "lemma": ""
+  },
+  {
+   "form": "Migration",
+   "context": "über Migration sprechen",
+   "en": "migration",
+   "lemma": "die Migration"
+  },
+  {
+   "form": "Einstieg",
+   "context": "Was mir den Einstieg erleichtert hat, war …",
+   "en": "start; entry",
+   "lemma": "der Einstieg"
+  },
+  {
+   "form": "Beamtin",
+   "context": "Die Beamtin hat ___ ausgestellt.",
+   "en": "official (a woman)",
+   "lemma": "die Beamtin"
+  },
+  {
+   "form": "ausgestellt",
+   "context": "Die Beamtin hat ___ ausgestellt.",
+   "en": "issued",
+   "lemma": "ausstellen"
+  },
+  {
+   "form": "gezeigt",
+   "context": "Hast du ___ deinen Eltern schon gezeigt? (das Foto → Pronomen)",
+   "en": "shown",
+   "lemma": "zeigen"
+  },
+  {
+   "form": "Fassen",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "summarise (fassen … zusammen)",
+   "lemma": "zusammenfassen"
+  },
+  {
+   "form": "Auswanderung",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "emigration",
+   "lemma": "die Auswanderung"
+  },
+  {
+   "form": "Einschätzung",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "assessment, view",
+   "lemma": "die Einschätzung"
+  },
+  {
+   "form": "Hauptinformationen",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "main information, key points",
+   "lemma": "die Hauptinformation"
+  },
+  {
+   "form": "Zitate",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "quotations",
+   "lemma": "das Zitat"
+  },
+  {
+   "form": "durchgehend",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "throughout",
+   "lemma": ""
+  },
+  {
+   "form": "Inhaltswiedergabe",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "summary of the content",
+   "lemma": "die Inhaltswiedergabe"
+  },
+  {
+   "form": "eigener",
+   "context": "Fassen Sie einen Zeitungsartikel über Auswanderung in Ihrem Land zusammen und ergänzen Sie am Ende Ihre eigene Einschätzung. Umfang: 150–180 Wörter Checkliste: • Nennen Sie im ersten Satz Textsorte, Titel und Thema. • Geben Sie nur die Hauptinformationen wieder, keine Beispiele und keine Zitate. • Schreiben Sie durchgehend im Präsens und in eigenen Worten. • Trennen Sie klar zwischen Inhaltswiedergabe und eigener Meinung.",
+   "en": "own",
+   "lemma": "eigen"
+  }
+ ]
+}
