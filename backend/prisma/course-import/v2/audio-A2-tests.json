@@ -1,0 +1,290 @@
+[
+ {
+  "url": "/audio/thorsten-high/845e4140bc9fc42d.mp3",
+  "voice": "thorsten-high",
+  "text": "Und jetzt das Wetter für das Wochenende. Am Samstag bleibt es trocken, aber es ist bewölkt und windig. Am Sonntag kommt dann von Westen Regen, und am Nachmittag gibt es auch Gewitter. Die Temperaturen liegen zwischen zwölf und fünfzehn Grad. Erst ab Montag scheint wieder öfter die Sonne."
+ },
+ {
+  "url": "/audio/kerstin-low/f7ebf4242dd7e226.mp3",
+  "voice": "kerstin-low",
+  "text": "Guten Tag, Herr Habimana, hier ist die Praxis Doktor Schneider. Sie haben morgen, am Dienstag, um neun Uhr einen Termin bei uns. Leider ist Frau Doktor Schneider krank. Am Mittwoch ist die Praxis geschlossen, aber am Donnerstag können Sie um halb elf kommen. Bitte rufen Sie uns kurz zurück. Vielen Dank und auf Wiederhören!"
+ },
+ {
+  "url": "/audio/kerstin-low/87b42b5e98a65079.mp3",
+  "voice": "kerstin-low",
+  "text": "Liebe Kundinnen und Kunden, heute haben wir ein besonderes Angebot für Sie: An unserer Fleischtheke kostet ein Kilo Hähnchen nur sieben Euro neunundneunzig. Das Angebot für Fisch ist leider schon vorbei, wir haben keinen frischen Fisch mehr. Und Schinken gibt es erst ab morgen billiger. Vielen Dank für Ihren Einkauf!"
+ },
+ {
+  "url": "/audio/thorsten-high/13ad7ec703d0c150.mp3",
+  "voice": "thorsten-high",
+  "text": "Achtung, eine Information für Reisende nach Frankfurt: Ihr Zug, Abfahrt neun Uhr fünfzehn, fährt heute nicht von Gleis vier, sondern von Gleis sechs. Der Zug hat etwa zehn Minuten Verspätung. Er hält heute nicht in Mainz. Reisende nach Mainz nehmen bitte die S-Bahn von Gleis zwölf."
+ },
+ {
+  "url": "/audio/kerstin-low/00876318bf430b3d.mp3",
+  "voice": "kerstin-low",
+  "text": "Und hier unser Tipp für das Wochenende: Im Stadtpark ist wieder das Afrika-Festival. Am Freitagabend können Sie dort in einem Kurs afrikanische Tänze lernen. Das große Konzert am Samstag ist leider schon ausverkauft. Aber am Sonntag gibt es von elf bis achtzehn Uhr einen Markt mit Essen und Kunst aus vielen Ländern. Der Eintritt ist frei."
+ },
+ {
+  "url": "/audio/dialogue/a50acb32e67a4405.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Hallo Amina! Na, wie war die Woche mit deinen Eltern?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Hallo Tobias! Sehr schön, aber auch anstrengend. Wir haben jeden Tag etwas anderes gemacht."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Am Montag wart ihr bestimmt im Museum, oder? Dein Vater interessiert sich doch so für Geschichte."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Das wollten wir eigentlich. Aber am Montag sind viele Museen geschlossen. Deshalb sind wir auf den Fernsehturm gefahren. Von oben sieht man die ganze Stadt."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Toll! Und am Dienstag?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Am Dienstag war das Wetter super. Mein Vater wollte eine Radtour machen, aber meine Mutter fährt nicht gern Fahrrad. Also haben wir eine Schifffahrt auf der Spree gemacht. Das hat allen gefallen."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Ihr wolltet doch auch ein Picknick im Park machen, oder?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ja, am Mittwoch. Aber leider hat es den ganzen Tag geregnet. Also sind wir ins Kaufhaus gegangen, und meine Mutter hat Geschenke für die Familie in Kigali gekauft."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Und am Donnerstag wart ihr im Theater, nicht wahr? Du hattest doch Karten."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ja, ich hatte Karten. Aber das Theater hat die Vorstellung abgesagt, weil ein Schauspieler krank war. Am Abend sind wir dann in ein Konzert gegangen. Das war fantastisch!"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Und am Freitag sind deine Eltern schon nach Hause geflogen?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Nein, erst am Samstag. Am Freitag waren wir noch mit meiner kleinen Nichte im Zoo. Sie wollte unbedingt die Elefanten sehen."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Da hattet ihr ja wirklich viel Programm!"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Oh ja. Jetzt brauche ich erst mal Urlaub!"
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/f103f1680aa55c4d.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Guten Morgen! Was darf es sein?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Guten Morgen. Ich hätte gern ein Vollkornbrot."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Das tut mir leid, Vollkornbrot haben wir heute nicht mehr. Aber unser Roggenbrot ist auch sehr gut."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ach nein, das isst mein Mann nicht. Dann nehme ich sechs Brötchen."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Gern. Sonst noch etwas? Vielleicht ein Stück Kuchen?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Nein danke, das ist alles."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/8b552fe864912327.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Guten Morgen, Eric! Du bist ja ganz nass! Bist du heute nicht mit dem Fahrrad ins Büro gekommen?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Nein, mein Fahrrad ist kaputt. Ich wollte dann den Bus nehmen, aber der war schon weg."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Oh nein! Und dann?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Dann bin ich zu Fuß gegangen. Eine halbe Stunde im Regen!"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Du Armer! Morgen kann ich dich mit dem Auto mitnehmen."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/c716cc7836a1bb4e.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Guten Tag, ich möchte ein Zimmer für zwei Nächte reservieren."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Gern. Möchten Sie ein Einzelzimmer oder ein Doppelzimmer?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Ein Doppelzimmer, bitte. Meine Frau kommt auch mit."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Wir haben noch ein Doppelzimmer mit Blick auf den See für hundertzwanzig Euro und eins zur Straße für neunzig Euro."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Zur Straße ist es bestimmt laut. Wir nehmen das Zimmer mit Seeblick."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/73f5725b134de3b4.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Und, was nimmst du? Den Fisch?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Nein, Fisch esse ich nicht so gern. Ich habe Lust auf eine Pizza."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Pizza gibt es heute leider nicht. Schau mal, das steht hier auf der Tafel."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Schade. Dann nehme ich die Gemüsesuppe mit Brot."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Gute Idee, die nehme ich auch."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/e22dff62c9893fcb.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Patrick hat am Samstag Geburtstag. Was schenken wir ihm? Vielleicht ein Buch?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Er liest doch nicht gern. Wie wäre es mit einem T-Shirt von seinem Fußballverein?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ach, er hat schon so viele T-Shirts. Aber er hört doch so gern Musik. Wir könnten ihm Karten für ein Konzert schenken."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Super Idee! Das machen wir."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/4063203c0491cdb8.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Liebe Hörerinnen und Hörer, herzlich willkommen zu unserer Sendung „Leben im Ausland“. Heute ist Sabine Hoffmann bei uns im Studio. Sie kommt aus Hannover und lebt seit drei Jahren in Ruanda. Frau Hoffmann, was machen Sie dort?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ich bin Deutschlehrerin an einer Sprachschule in Musanze. Das ist eine Stadt im Norden von Ruanda, nicht weit von den Vulkanen."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Haben Sie auch in Deutschland schon unterrichtet?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Nein. Nach der Schule habe ich zuerst als Sekretärin in einer Firma gearbeitet. Das war mir aber zu langweilig. Dann habe ich eine Ausbildung als Deutschlehrerin für Erwachsene gemacht."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Und wie sind Sie nach Ruanda gekommen?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Eine Freundin hat dort in einem Projekt gearbeitet. Ich habe sie besucht, und das Land hat mir sofort gefallen. Eigentlich wollte ich nur ein Jahr bleiben. Jetzt sind es schon drei Jahre."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Wer sind Ihre Schüler?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Meistens junge Leute zwischen achtzehn und dreißig. Die meisten möchten in Deutschland eine Ausbildung machen, zum Beispiel als Krankenpfleger oder als Elektriker. Nur wenige wollen in Deutschland studieren."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Sprechen Sie selbst auch Kinyarwanda, die Sprache der Menschen in Ruanda?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ich lerne es, aber es ist sehr schwer für mich. Die Grammatik ist ganz anders als im Deutschen. Auf dem Markt kann ich einkaufen und ein bisschen sprechen, mehr nicht. Zum Glück sprechen viele Leute Englisch oder Französisch."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Was gefällt Ihnen an Ihrem Leben in Musanze besonders gut?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Die Landschaft ist wunderschön, und die Menschen sind sehr freundlich. Am Wochenende gehe ich oft wandern. Nur das Wetter ist manchmal ein Problem: In der Regenzeit regnet es fast jeden Nachmittag."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Fehlt Ihnen etwas aus Deutschland?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Meine Familie natürlich. Und das deutsche Brot! Aber meine Eltern haben mich letztes Jahr besucht, und im Dezember fliege ich für drei Wochen nach Hause."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Und danach? Bleiben Sie in Ruanda?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ja, auf jeden Fall noch zwei Jahre. Unsere Schule möchte im Herbst auch in Kigali Kurse anbieten, und dort soll ich unterrichten."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Frau Hoffmann, vielen Dank für das Gespräch und alles Gute!"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ich danke Ihnen!"
+   }
+  ]
+ }
+]
