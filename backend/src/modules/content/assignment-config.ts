@@ -6,7 +6,7 @@ import { stableShuffle } from './activity-shuffle.js';
 /** Keys that reveal answers (or post-submission material) — removed at every depth. */
 const HIDDEN = new Set([
   'answer', 'answers', 'correctAnswer', 'correctIndex', 'correctIndices', 'correct', 'correctOrder',
-  'sampleAnswer', 'modelAnswer', 'explanation', 'transcript',
+  'sampleAnswer', 'modelAnswer', 'modelAnswerEn', 'explanation', 'explanationEn', 'transcript',
 ]);
 const LEGACY_AUTO_TYPES = ['FILL_BLANK', 'MCQ', 'TRUE_FALSE', 'ORDERING', 'LISTENING', 'MULTIPLE_SELECT'];
 
@@ -24,6 +24,8 @@ const clean = (entry: Prisma.JsonValue): Prisma.JsonValue => {
  */
 export const sanitizeActivityConfig = (value: Prisma.JsonValue, type?: string, seed?: string): Prisma.JsonValue => {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return value;
+  // Practice sessions are self-study checked in the browser: the student needs the answer keys.
+  if (type === 'PRACTICE') return value;
   const result = clean(value) as Prisma.JsonObject;
   const shuffleSeed = seed ?? JSON.stringify(value);
   if (value.practiceMode === true) {
