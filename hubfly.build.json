@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "project": {
+    "name": "platfrom"
+  },
+  "container": {
+    "name": "platfrom"
+  },
+  "build": {
+    "mode": "auto",
+    "workingDir": ".",
+    "contextDir": "."
+  },
+  "deploy": {
+    "tier": "dedicated",
+    "resources": {
+      "cpu": 1,
+      "ram": 800,
+      "storage": 1
+    },
+    "runtime": {
+      "autoSleep": false,
+      "autoScale": false,
+      "is24x7": true
+    },
+    "process": {}
+  },
+  "remove": {},
+  "metadata": {}
+}
