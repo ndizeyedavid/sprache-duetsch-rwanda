@@ -34,7 +34,7 @@ export function buildActivityReview(type: string, configValue: unknown, response
   const config = asConfig(configValue);
   if (config.practiceMode === true) return null;
   const revealed: Record<string, unknown> = {};
-  for (const key of ["transcript", "modelAnswer", "explanation"]) {
+  for (const key of ["transcript", "modelAnswer", "modelAnswerEn", "explanation", "explanationEn"]) {
     const value = config[key];
     if (typeof value === "string" && value.trim()) revealed[key] = value;
   }
@@ -44,6 +44,7 @@ export function buildActivityReview(type: string, configValue: unknown, response
 /** Attach review (or legacy practice feedback) to a student's own submission. */
 export function presentSubmission<T extends { response: unknown }>(submission: T, activity: { type: string; config: unknown }) {
   const config = asConfig(activity.config);
+  if (activity.type === "PRACTICE") return { ...submission, review: null };
   if (config.practiceMode === true) return { ...submission, practiceFeedback: activity.config };
   return { ...submission, review: buildActivityReview(activity.type, config, submission.response) };
 }
