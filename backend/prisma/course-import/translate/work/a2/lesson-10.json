@@ -1,0 +1,621 @@
+{
+ "level": "A2",
+ "lesson": 10,
+ "title": "Im Restaurant — Gut, dass du reserviert hast",
+ "lines": [
+  {
+   "de": "Im Restaurant bestellen, reklamieren und bezahlen.",
+   "en": "Order, complain and pay in a restaurant."
+  },
+  {
+   "de": "Textsorte: Gespräch im Restaurant · Speisekarte",
+   "en": "Text type: Conversation in a restaurant · Menu"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 2; telc A2 Hören",
+   "en": "Exam link: Goethe A2 Speaking part 2; telc A2 Listening"
+  },
+  {
+   "de": "im Restaurant bestellen und bezahlen",
+   "en": "order and pay in a restaurant"
+  },
+  {
+   "de": "höflich reklamieren und um etwas bitten",
+   "en": "complain politely and ask for something"
+  },
+  {
+   "de": "Sätze mit der Konjunktion dass bilden",
+   "en": "form sentences with the conjunction dass (that)"
+  },
+  {
+   "de": "Grammatik: Die Konjunktion dass",
+   "en": "Grammar: the conjunction dass (that)"
+  },
+  {
+   "de": "dass leitet einen Nebensatz ein: Das konjugierte Verb steht ganz am Ende. Man benutzt dass nach Verben und Ausdrücken der Meinung, des Wissens und des Gefühls.",
+   "en": "dass introduces a subordinate clause: the conjugated verb goes right at the end. You use dass after verbs and expressions of opinion, knowledge and feeling."
+  },
+  {
+   "de": "Nebensatz mit dass",
+   "en": "Subordinate clause with dass"
+  },
+  {
+   "de": "Ich finde,",
+   "en": "I think"
+  },
+  {
+   "de": "dass das Essen sehr gut ist.",
+   "en": "that the food is very good."
+  },
+  {
+   "de": "Gut,",
+   "en": "It's good"
+  },
+  {
+   "de": "dass du reserviert hast.",
+   "en": "that you booked."
+  },
+  {
+   "de": "Ich glaube,",
+   "en": "I believe"
+  },
+  {
+   "de": "dass wir zu viel bestellt haben.",
+   "en": "that we ordered too much."
+  },
+  {
+   "de": "Schade,",
+   "en": "It's a pity"
+  },
+  {
+   "de": "dass die Küche schon zu ist.",
+   "en": "that the kitchen is already closed."
+  },
+  {
+   "de": "Ich hoffe,",
+   "en": "I hope"
+  },
+  {
+   "de": "dass es dir schmeckt.",
+   "en": "that you enjoy it."
+  },
+  {
+   "de": "Es tut mir leid, dass Sie so lange warten mussten.Verb am Ende",
+   "en": "I'm sorry that you had to wait so long. Verb at the end"
+  },
+  {
+   "de": "Ich finde, dass die Suppe zu salzig ist.nach finden",
+   "en": "I think that the soup is too salty. after finden"
+  },
+  {
+   "de": "Schön, dass ihr gekommen seid.nach einem Adjektiv",
+   "en": "It's nice that you came. after an adjective"
+  },
+  {
+   "de": "Tipp: Nach dass steht immer ein Komma davor und das Verb am Satzende: …, dass das Essen gut schmeckt.",
+   "en": "Tip: There is always a comma before dass, and the verb goes at the end of the sentence: …, dass das Essen gut schmeckt (… that the food tastes good)."
+  },
+  {
+   "de": "reservieren — EN: to reserve, book · FR: réserverIch habe einen Tisch für vier Personen reserviert.",
+   "en": "Example: I've booked a table for four people."
+  },
+  {
+   "de": "die Speisekarte, -n — EN: menu · FR: la carteKönnten wir bitte die Speisekarte haben?",
+   "en": "Example: Could we have the menu, please?"
+  },
+  {
+   "de": "die Vorspeise, -n / die Nachspeise, -n — EN: starter / dessert · FR: l'entrée / le dessertAls Vorspeise nehme ich eine Suppe.",
+   "en": "Example: As a starter, I'll have a soup."
+  },
+  {
+   "de": "die Rechnung, -en — EN: bill · FR: l'additionDie Rechnung, bitte!",
+   "en": "Example: The bill, please!"
+  },
+  {
+   "de": "getrennt / zusammen — EN: separately / together · FR: séparément / ensembleZahlen Sie getrennt oder zusammen?",
+   "en": "Example: Are you paying separately or together?"
+  },
+  {
+   "de": "das Trinkgeld (Sg.) — EN: tip · FR: le pourboireIn Deutschland gibt man etwa zehn Prozent Trinkgeld.",
+   "en": "Example: In Germany, people tip about ten percent."
+  },
+  {
+   "de": "schmecken — EN: to taste · FR: avoir du goûtHat es Ihnen geschmeckt?",
+   "en": "Example: Did you enjoy your meal?"
+  },
+  {
+   "de": "versalzen / zu salzig — EN: too salty · FR: trop saléDie Suppe ist leider zu salzig.",
+   "en": "Example: Unfortunately, the soup is too salty."
+  },
+  {
+   "de": "kalt werden — EN: to go cold · FR: refroidirMein Essen ist kalt geworden.",
+   "en": "Example: My food has gone cold."
+  },
+  {
+   "de": "sich beschweren — EN: to complain · FR: se plaindreIch möchte mich nicht beschweren, aber …",
+   "en": "Example: I don't want to complain, but …"
+  },
+  {
+   "de": "die Bedienung (Sg.) — EN: service; waiter/waitress · FR: le serviceDie Bedienung war sehr freundlich.",
+   "en": "Example: The service was very friendly."
+  },
+  {
+   "de": "Ich hätte gern …",
+   "en": "I'd like …"
+  },
+  {
+   "de": "Für mich bitte einmal …",
+   "en": "For me, one …, please."
+  },
+  {
+   "de": "Was können Sie empfehlen?",
+   "en": "What can you recommend?"
+  },
+  {
+   "de": "höflich reklamieren",
+   "en": "complaining politely"
+  },
+  {
+   "de": "Entschuldigung, die Suppe ist leider kalt.",
+   "en": "Excuse me, I'm afraid the soup is cold."
+  },
+  {
+   "de": "Könnten Sie das bitte noch einmal bringen?",
+   "en": "Could you bring that again, please?"
+  },
+  {
+   "de": "Ich glaube, das habe ich nicht bestellt.",
+   "en": "I don't think I ordered that."
+  },
+  {
+   "de": "Wir möchten bitte zahlen.",
+   "en": "We'd like to pay, please."
+  },
+  {
+   "de": "Zusammen oder getrennt? — Zusammen, bitte.",
+   "en": "Together or separately? — Together, please."
+  },
+  {
+   "de": "Stimmt so, danke.",
+   "en": "Keep the change, thank you."
+  },
+  {
+   "de": "Dialog: Ein Abend im Restaurant",
+   "en": "Dialogue: An evening at a restaurant"
+  },
+  {
+   "de": "Kellner: Guten Abend. Haben Sie reserviert?",
+   "en": "Waiter: Good evening. Do you have a reservation?"
+  },
+  {
+   "de": "Nina: Ja, auf den Namen Keller, Tisch für zwei.",
+   "en": "Nina: Yes, under the name Keller, a table for two."
+  },
+  {
+   "de": "Max: Gut, dass du reserviert hast — hier ist ja alles voll.",
+   "en": "Max: Good thing you booked — it's completely full here."
+  },
+  {
+   "de": "Kellner: Was darf ich Ihnen bringen?",
+   "en": "Waiter: What can I bring you?"
+  },
+  {
+   "de": "Nina: Ich hätte gern die Gemüsesuppe. Aber bitte nicht zu salzig.",
+   "en": "Nina: I'd like the vegetable soup. But not too salty, please."
+  },
+  {
+   "de": "Max: Und für mich den Salat. Ich glaube, dass das reicht.",
+   "en": "Max: And the salad for me. I think that's enough."
+  },
+  {
+   "de": "Ich habe einen Tisch für vier Personen reserviert.",
+   "en": "I've booked a table for four people."
+  },
+  {
+   "de": "Könnten wir bitte die Speisekarte haben?",
+   "en": "Could we have the menu, please?"
+  },
+  {
+   "de": "Als Vorspeise nehme ich eine Suppe.",
+   "en": "As a starter, I'll have a soup."
+  },
+  {
+   "de": "Die Rechnung, bitte!",
+   "en": "The bill, please!"
+  },
+  {
+   "de": "Zahlen Sie getrennt oder zusammen?",
+   "en": "Are you paying separately or together?"
+  },
+  {
+   "de": "In Deutschland gibt man etwa zehn Prozent Trinkgeld.",
+   "en": "In Germany, people tip about ten percent."
+  },
+  {
+   "de": "Hat es Ihnen geschmeckt?",
+   "en": "Did you enjoy your meal?"
+  },
+  {
+   "de": "Die Suppe ist leider zu salzig.",
+   "en": "Unfortunately, the soup is too salty."
+  },
+  {
+   "de": "Mein Essen ist kalt geworden.",
+   "en": "My food has gone cold."
+  },
+  {
+   "de": "Ich möchte mich nicht beschweren, aber …",
+   "en": "I don't want to complain, but …"
+  },
+  {
+   "de": "Die Bedienung war sehr freundlich.",
+   "en": "The service was very friendly."
+  },
+  {
+   "de": "Gut, ___ du reserviert hast!",
+   "en": "It's good ___ you booked!"
+  },
+  {
+   "de": "Ich hoffe, dass es dir ___. (schmecken, Präsens)",
+   "en": "I hope you ___ it. (schmecken, present tense)"
+  },
+  {
+   "de": "Wie bittet man höflich um die Rechnung?",
+   "en": "How do you politely ask for the bill?"
+  },
+  {
+   "de": "Es tut mir leid, ___ Sie so lange warten mussten.",
+   "en": "I'm sorry ___ you had to wait so long."
+  },
+  {
+   "de": "Schreiben Sie eine kurze Bewertung für ein Restaurant im Internet. Umfang: 40–60 Wörter Checkliste: • Schreiben Sie, wann Sie dort waren und was Sie gegessen haben. • Benutzen Sie zweimal einen Satz mit dass. • Geben Sie am Ende eine Empfehlung.",
+   "en": "Write a short online review of a restaurant. Length: 40–60 words Checklist: • Write when you were there and what you ate. • Use a sentence with dass twice. • Give a recommendation at the end."
+  },
+  {
+   "de": "Nach dass steht das konjugierte Verb am Satzende.",
+   "en": "After dass, the conjugated verb goes at the end of the sentence."
+  },
+  {
+   "de": "Nach einem Adjektiv wie gut, schön, schade folgt ein dass-Satz.",
+   "en": "An adjective like gut, schön, schade is followed by a dass clause."
+  },
+  {
+   "de": "Das Verb steht am Ende des dass-Satzes.",
+   "en": "The verb goes at the end of the dass clause."
+  },
+  {
+   "de": "möchten + bitte ist die übliche höfliche Form.",
+   "en": "möchten + bitte is the usual polite form."
+  },
+  {
+   "de": "Nach „Es tut mir leid\" folgt ein dass-Satz.",
+   "en": "\"Es tut mir leid\" is followed by a dass clause."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Restaurant",
+   "context": "Im Restaurant bestellen, reklamieren und bezahlen.",
+   "en": "restaurant",
+   "lemma": "das Restaurant"
+  },
+  {
+   "form": "reklamieren",
+   "context": "Im Restaurant bestellen, reklamieren und bezahlen.",
+   "en": "to complain (about a fault)",
+   "lemma": ""
+  },
+  {
+   "form": "konjugierte",
+   "context": "dass leitet einen Nebensatz ein: Das konjugierte Verb steht ganz am Ende. Man benutzt dass nach Verben und Ausdrücken der Meinung, des Wissens und des Gefühls.",
+   "en": "conjugated",
+   "lemma": "konjugiert"
+  },
+  {
+   "form": "Meinung",
+   "context": "dass leitet einen Nebensatz ein: Das konjugierte Verb steht ganz am Ende. Man benutzt dass nach Verben und Ausdrücken der Meinung, des Wissens und des Gefühls.",
+   "en": "opinion",
+   "lemma": "die Meinung"
+  },
+  {
+   "form": "Wissens",
+   "context": "dass leitet einen Nebensatz ein: Das konjugierte Verb steht ganz am Ende. Man benutzt dass nach Verben und Ausdrücken der Meinung, des Wissens und des Gefühls.",
+   "en": "knowledge",
+   "lemma": "das Wissen"
+  },
+  {
+   "form": "Gefühls",
+   "context": "dass leitet einen Nebensatz ein: Das konjugierte Verb steht ganz am Ende. Man benutzt dass nach Verben und Ausdrücken der Meinung, des Wissens und des Gefühls.",
+   "en": "feeling",
+   "lemma": "das Gefühl"
+  },
+  {
+   "form": "reserviert",
+   "context": "dass du reserviert hast.",
+   "en": "reserved, booked",
+   "lemma": "reservieren"
+  },
+  {
+   "form": "Schade",
+   "context": "Schade,",
+   "en": "(what a) pity",
+   "lemma": ""
+  },
+  {
+   "form": "hoffe",
+   "context": "Ich hoffe,",
+   "en": "hope",
+   "lemma": "hoffen"
+  },
+  {
+   "form": "mussten",
+   "context": "Es tut mir leid, dass Sie so lange warten mussten.Verb am Ende",
+   "en": "had to",
+   "lemma": "müssen"
+  },
+  {
+   "form": "salzig",
+   "context": "Ich finde, dass die Suppe zu salzig ist.nach finden",
+   "en": "salty",
+   "lemma": ""
+  },
+  {
+   "form": "Komma",
+   "context": "Tipp: Nach dass steht immer ein Komma davor und das Verb am Satzende: …, dass das Essen gut schmeckt.",
+   "en": "comma",
+   "lemma": "das Komma"
+  },
+  {
+   "form": "reservieren",
+   "context": "reservieren — EN: to reserve, book · FR: réserverIch habe einen Tisch für vier Personen reserviert.",
+   "en": "to reserve, to book",
+   "lemma": ""
+  },
+  {
+   "form": "reserve",
+   "context": "reservieren — EN: to reserve, book · FR: réserverIch habe einen Tisch für vier Personen reserviert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réserverIch",
+   "context": "reservieren — EN: to reserve, book · FR: réserverIch habe einen Tisch für vier Personen reserviert.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "menu",
+   "context": "die Speisekarte, -n — EN: menu · FR: la carteKönnten wir bitte die Speisekarte haben?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "carteKönnten",
+   "context": "die Speisekarte, -n — EN: menu · FR: la carteKönnten wir bitte die Speisekarte haben?",
+   "en": "could",
+   "lemma": "können"
+  },
+  {
+   "form": "Nachspeise",
+   "context": "die Vorspeise, -n / die Nachspeise, -n — EN: starter / dessert · FR: l'entrée / le dessertAls Vorspeise nehme ich eine Suppe.",
+   "en": "dessert",
+   "lemma": "die Nachspeise"
+  },
+  {
+   "form": "starter",
+   "context": "die Vorspeise, -n / die Nachspeise, -n — EN: starter / dessert · FR: l'entrée / le dessertAls Vorspeise nehme ich eine Suppe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dessert",
+   "context": "die Vorspeise, -n / die Nachspeise, -n — EN: starter / dessert · FR: l'entrée / le dessertAls Vorspeise nehme ich eine Suppe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'entrée",
+   "context": "die Vorspeise, -n / die Nachspeise, -n — EN: starter / dessert · FR: l'entrée / le dessertAls Vorspeise nehme ich eine Suppe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dessertAls",
+   "context": "die Vorspeise, -n / die Nachspeise, -n — EN: starter / dessert · FR: l'entrée / le dessertAls Vorspeise nehme ich eine Suppe.",
+   "en": "as",
+   "lemma": "als"
+  },
+  {
+   "form": "l'additionDie",
+   "context": "die Rechnung, -en — EN: bill · FR: l'additionDie Rechnung, bitte!",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "separately",
+   "context": "getrennt / zusammen — EN: separately / together · FR: séparément / ensembleZahlen Sie getrennt oder zusammen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "together",
+   "context": "getrennt / zusammen — EN: separately / together · FR: séparément / ensembleZahlen Sie getrennt oder zusammen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "séparément",
+   "context": "getrennt / zusammen — EN: separately / together · FR: séparément / ensembleZahlen Sie getrennt oder zusammen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ensembleZahlen",
+   "context": "getrennt / zusammen — EN: separately / together · FR: séparément / ensembleZahlen Sie getrennt oder zusammen?",
+   "en": "pay",
+   "lemma": "zahlen"
+  },
+  {
+   "form": "Trinkgeld",
+   "context": "das Trinkgeld (Sg.) — EN: tip · FR: le pourboireIn Deutschland gibt man etwa zehn Prozent Trinkgeld.",
+   "en": "tip (money)",
+   "lemma": "das Trinkgeld"
+  },
+  {
+   "form": "tip",
+   "context": "das Trinkgeld (Sg.) — EN: tip · FR: le pourboireIn Deutschland gibt man etwa zehn Prozent Trinkgeld.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pourboireIn",
+   "context": "das Trinkgeld (Sg.) — EN: tip · FR: le pourboireIn Deutschland gibt man etwa zehn Prozent Trinkgeld.",
+   "en": "in",
+   "lemma": "in"
+  },
+  {
+   "form": "Prozent",
+   "context": "das Trinkgeld (Sg.) — EN: tip · FR: le pourboireIn Deutschland gibt man etwa zehn Prozent Trinkgeld.",
+   "en": "percent",
+   "lemma": "das Prozent"
+  },
+  {
+   "form": "goûtHat",
+   "context": "schmecken — EN: to taste · FR: avoir du goûtHat es Ihnen geschmeckt?",
+   "en": "has",
+   "lemma": "haben"
+  },
+  {
+   "form": "geschmeckt",
+   "context": "schmecken — EN: to taste · FR: avoir du goûtHat es Ihnen geschmeckt?",
+   "en": "tasted (good)",
+   "lemma": "schmecken"
+  },
+  {
+   "form": "versalzen",
+   "context": "versalzen / zu salzig — EN: too salty · FR: trop saléDie Suppe ist leider zu salzig.",
+   "en": "too salty",
+   "lemma": ""
+  },
+  {
+   "form": "too",
+   "context": "versalzen / zu salzig — EN: too salty · FR: trop saléDie Suppe ist leider zu salzig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "salty",
+   "context": "versalzen / zu salzig — EN: too salty · FR: trop saléDie Suppe ist leider zu salzig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trop",
+   "context": "versalzen / zu salzig — EN: too salty · FR: trop saléDie Suppe ist leider zu salzig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "saléDie",
+   "context": "versalzen / zu salzig — EN: too salty · FR: trop saléDie Suppe ist leider zu salzig.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "refroidirMein",
+   "context": "kalt werden — EN: to go cold · FR: refroidirMein Essen ist kalt geworden.",
+   "en": "my",
+   "lemma": "mein"
+  },
+  {
+   "form": "geworden",
+   "context": "kalt werden — EN: to go cold · FR: refroidirMein Essen ist kalt geworden.",
+   "en": "become, got",
+   "lemma": "werden"
+  },
+  {
+   "form": "beschweren",
+   "context": "sich beschweren — EN: to complain · FR: se plaindreIch möchte mich nicht beschweren, aber …",
+   "en": "to complain (sich beschweren)",
+   "lemma": ""
+  },
+  {
+   "form": "complain",
+   "context": "sich beschweren — EN: to complain · FR: se plaindreIch möchte mich nicht beschweren, aber …",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "plaindreIch",
+   "context": "sich beschweren — EN: to complain · FR: se plaindreIch möchte mich nicht beschweren, aber …",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "Bedienung",
+   "context": "die Bedienung (Sg.) — EN: service; waiter/waitress · FR: le serviceDie Bedienung war sehr freundlich.",
+   "en": "service; waiter, waitress",
+   "lemma": "die Bedienung"
+  },
+  {
+   "form": "waiter",
+   "context": "die Bedienung (Sg.) — EN: service; waiter/waitress · FR: le serviceDie Bedienung war sehr freundlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "waitress",
+   "context": "die Bedienung (Sg.) — EN: service; waiter/waitress · FR: le serviceDie Bedienung war sehr freundlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "serviceDie",
+   "context": "die Bedienung (Sg.) — EN: service; waiter/waitress · FR: le serviceDie Bedienung war sehr freundlich.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "bringen",
+   "context": "Könnten Sie das bitte noch einmal bringen?",
+   "en": "bring",
+   "lemma": ""
+  },
+  {
+   "form": "Keller",
+   "context": "Nina: Ja, auf den Namen Keller, Tisch für zwei.",
+   "en": "Keller (name); cellar, basement",
+   "lemma": ""
+  },
+  {
+   "form": "Max",
+   "context": "Max: Gut, dass du reserviert hast — hier ist ja alles voll.",
+   "en": "Max (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Gemüsesuppe",
+   "context": "Nina: Ich hätte gern die Gemüsesuppe. Aber bitte nicht zu salzig.",
+   "en": "vegetable soup",
+   "lemma": "die Gemüsesuppe"
+  },
+  {
+   "form": "reicht",
+   "context": "Max: Und für mich den Salat. Ich glaube, dass das reicht.",
+   "en": "is enough",
+   "lemma": "reichen"
+  },
+  {
+   "form": "bittet",
+   "context": "Wie bittet man höflich um die Rechnung?",
+   "en": "asks (bittet um = asks for)",
+   "lemma": "bitten"
+  },
+  {
+   "form": "Internet",
+   "context": "Schreiben Sie eine kurze Bewertung für ein Restaurant im Internet. Umfang: 40–60 Wörter Checkliste: • Schreiben Sie, wann Sie dort waren und was Sie gegessen haben. • Benutzen Sie zweimal einen Satz mit dass. • Geben Sie am Ende eine Empfehlung.",
+   "en": "internet",
+   "lemma": "das Internet"
+  }
+ ]
+}
