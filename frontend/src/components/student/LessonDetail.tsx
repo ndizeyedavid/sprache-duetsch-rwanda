@@ -1,6 +1,8 @@
 import { FiArrowRight,FiCheck,FiClock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { humanize } from '../../lib/services';
+import { LessonEnglishProvider } from '../learn/translate/LessonEnglishProvider';
+import type { LessonTranslation } from '../learn/types';
 import { AuthenticatedMedia } from '../ui/AuthenticatedMedia';
 import { CourseLessonReader } from './CourseLessonReader';
 import { CoursePractice } from './CoursePractice';
@@ -33,7 +35,10 @@ type Detail = {
   progressStatus: string;
   materials: Material[];
   activities: Activity[];
+  /** English help for this HTML lesson (prisma/course-import/translate), absent until imported. */
+  translation?: LessonTranslation | null;
 };
+
 
 type Props = {
   detail: Detail | null | undefined;
@@ -61,9 +66,11 @@ export function LessonDetail({ detail, slug, completing, actionError, onComplete
 
       {detail.videoUrl ? <AuthenticatedMedia key={detail.videoUrl} url={detail.videoUrl} kind="video" className="w-full rounded-box" /> : null}
       {detail.audioUrl ? <AuthenticatedMedia key={detail.audioUrl} url={detail.audioUrl} kind="audio" className="w-full" /> : null}
-      <CourseLessonReader key={detail.id} html={detail.body}>
-        <CoursePractice key={`practice-${detail.id}`} activities={detail.activities} />
-      </CourseLessonReader>
+      <LessonEnglishProvider translation={detail.translation} level={slug.toUpperCase()}>
+        <CourseLessonReader key={detail.id} html={detail.body} translation={detail.translation} level={slug.toUpperCase()}>
+          <CoursePractice key={`practice-${detail.id}`} activities={detail.activities} />
+        </CourseLessonReader>
+      </LessonEnglishProvider>
 
       {detail.materials.length > 0 ? <MaterialResourceList materials={detail.materials} /> : null}
 
