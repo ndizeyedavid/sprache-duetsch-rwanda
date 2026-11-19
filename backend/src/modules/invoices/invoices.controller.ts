@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 import { validatedBody, validatedParams } from "../../lib/request.js";
-import type { CheckoutInput } from "../paypack/paypack.schema.js";
+import type { CheckoutInput } from "../mobile-money/mobile-money.schema.js";
 import { checkInvoicePayment, getInvoice, payInvoice } from "./invoices.service.js";
 
 export const show = async (req: Request, res: Response): Promise<void> => {
