@@ -1,0 +1,713 @@
+{
+ "level": "B1",
+ "lesson": 23,
+ "title": "Umwelt und Klima — Statt zu klagen, fahre ich lieber Rad",
+ "lines": [
+  {
+   "de": "Über Umweltverhalten diskutieren — Alternativen und fehlende Begleitumstände ausdrücken.",
+   "en": "Discussing environmental behaviour — expressing alternatives and missing accompanying circumstances."
+  },
+  {
+   "de": "über Umwelt und Klimaschutz diskutieren",
+   "en": "discuss the environment and climate protection"
+  },
+  {
+   "de": "(an)statt … zu und ohne … zu verwenden",
+   "en": "use (an)statt … zu and ohne … zu"
+  },
+  {
+   "de": "den Unterschied zu (an)statt dass / ohne dass verstehen",
+   "en": "understand the difference from (an)statt dass / ohne dass"
+  },
+  {
+   "de": "Grammatik: (an)statt … zu und ohne … zu",
+   "en": "Grammar: (an)statt … zu and ohne … zu"
+  },
+  {
+   "de": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+   "en": "Both constructions shorten a subordinate clause. (an)statt … zu expresses an alternative that is not chosen. ohne … zu names an expected circumstance that is missing. Important: this short form only works if the main clause and the subordinate clause have the same subject."
+  },
+  {
+   "de": "Subjekte",
+   "en": "Subjects"
+  },
+  {
+   "de": "gleich",
+   "en": "the same"
+  },
+  {
+   "de": "statt … zu",
+   "en": "instead of (doing)"
+  },
+  {
+   "de": "Ich fahre Rad, statt im Stau zu stehen.",
+   "en": "I cycle instead of sitting in traffic jams."
+  },
+  {
+   "de": "ohne … zu",
+   "en": "without (doing)"
+  },
+  {
+   "de": "Er ging weg, ohne sich zu verabschieden.",
+   "en": "He left without saying goodbye."
+  },
+  {
+   "de": "verschieden",
+   "en": "different"
+  },
+  {
+   "de": "statt dass",
+   "en": "instead of (+ clause)"
+  },
+  {
+   "de": "Ich fahre Rad, statt dass mein Vater mich fährt.",
+   "en": "I cycle instead of my father driving me."
+  },
+  {
+   "de": "ohne dass",
+   "en": "without (+ clause)"
+  },
+  {
+   "de": "Die Bürger demonstrieren, ohne dass sich etwas ändert.",
+   "en": "The citizens demonstrate without anything changing."
+  },
+  {
+   "de": "Statt neue Kleidung zu kaufen, repariere ich meine alte.gleiches Subjekt → Infinitivkonstruktion",
+   "en": "Instead of buying new clothes, I repair my old ones. same subject → infinitive construction"
+  },
+  {
+   "de": "Wir leben komfortabel, ohne auf Nachhaltigkeit zu verzichten.ohne … zu",
+   "en": "We live comfortably without giving up on sustainability. ohne … zu"
+  },
+  {
+   "de": "Der Verbrauch steigt, ohne dass es jemand bemerkt.anderes Subjekt → ohne dass",
+   "en": "Consumption is rising without anyone noticing. different subject → ohne dass"
+  },
+  {
+   "de": "Tipp: Nach ohne steht nie ein zusätzliches nicht — die Verneinung steckt schon im Wort.",
+   "en": "Tip: After ohne there is never an extra nicht — the negation is already in the word."
+  },
+  {
+   "de": "der Klimaschutz (Sg.) — EN: climate protection · FR: la protection du climatKlimaschutz beginnt im Alltag.",
+   "en": "Example: Climate protection begins in everyday life."
+  },
+  {
+   "de": "die Umwelt (Sg.) — EN: environment · FR: l'environnementDas schadet der Umwelt.",
+   "en": "Example: That harms the environment."
+  },
+  {
+   "de": "nachhaltig — EN: sustainable · FR: durableWir wollen nachhaltiger leben.",
+   "en": "Example: We want to live more sustainably."
+  },
+  {
+   "de": "der Verbrauch (Sg.) — EN: consumption · FR: la consommationDer Verbrauch ist deutlich gesunken.",
+   "en": "Example: Consumption has fallen significantly."
+  },
+  {
+   "de": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Plastiktüten.",
+   "en": "Example: I do without plastic bags."
+  },
+  {
+   "de": "der Müll (Sg.) — EN: waste, rubbish · FR: les déchetsMüll wird bei uns getrennt.",
+   "en": "Example: At our place, the rubbish is sorted."
+  },
+  {
+   "de": "trennen — EN: to separate, sort · FR: trierPapier und Plastik muss man trennen.",
+   "en": "Example: You have to separate paper and plastic."
+  },
+  {
+   "de": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "Example: Renewable energy is being expanded."
+  },
+  {
+   "de": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "Example: Exhaust fumes pollute the air."
+  },
+  {
+   "de": "schaden (+ Dat.) — EN: to harm · FR: nuire àDas schadet dem Klima.",
+   "en": "Example: That harms the climate."
+  },
+  {
+   "de": "der öffentliche Nahverkehr (Sg.) — EN: public transport · FR: les transports en communDer Nahverkehr müsste günstiger sein.",
+   "en": "Example: Public transport ought to be cheaper."
+  },
+  {
+   "de": "umsteigen auf — EN: to switch to · FR: passer àViele steigen aufs Rad um.",
+   "en": "Example: Many people are switching to cycling."
+  },
+  {
+   "de": "Position beziehen",
+   "en": "Taking a position"
+  },
+  {
+   "de": "Ich bin überzeugt, dass …",
+   "en": "I am convinced that …"
+  },
+  {
+   "de": "Für mich ist entscheidend, dass …",
+   "en": "For me, the decisive thing is that …"
+  },
+  {
+   "de": "Statt immer nur zu diskutieren, sollten wir …",
+   "en": "Instead of always just talking, we should …"
+  },
+  {
+   "de": "einwenden",
+   "en": "Raising objections"
+  },
+  {
+   "de": "Das mag sein, allerdings …",
+   "en": "That may be, however …"
+  },
+  {
+   "de": "Man darf aber nicht vergessen, dass …",
+   "en": "But we mustn't forget that …"
+  },
+  {
+   "de": "Das lässt sich so pauschal nicht sagen.",
+   "en": "You can't make such a sweeping statement."
+  },
+  {
+   "de": "Ein erster Schritt wäre, … zu …",
+   "en": "A first step would be to …"
+  },
+  {
+   "de": "Sinnvoll wäre es, wenn …",
+   "en": "It would make sense if …"
+  },
+  {
+   "de": "Dazu gibt es eigentlich keine Alternative.",
+   "en": "There is really no alternative to that."
+  },
+  {
+   "de": "Klimaschutz beginnt im Alltag.",
+   "en": "Climate protection begins in everyday life."
+  },
+  {
+   "de": "Das schadet der Umwelt.",
+   "en": "That harms the environment."
+  },
+  {
+   "de": "Wir wollen nachhaltiger leben.",
+   "en": "We want to live more sustainably."
+  },
+  {
+   "de": "Der Verbrauch ist deutlich gesunken.",
+   "en": "Consumption has fallen significantly."
+  },
+  {
+   "de": "Ich verzichte auf Plastiktüten.",
+   "en": "I do without plastic bags."
+  },
+  {
+   "de": "Müll wird bei uns getrennt.",
+   "en": "At our place, the rubbish is sorted."
+  },
+  {
+   "de": "Papier und Plastik muss man trennen.",
+   "en": "You have to separate paper and plastic."
+  },
+  {
+   "de": "Erneuerbare Energien werden ausgebaut.",
+   "en": "Renewable energy is being expanded."
+  },
+  {
+   "de": "Die Abgase belasten die Luft.",
+   "en": "Exhaust fumes pollute the air."
+  },
+  {
+   "de": "Das schadet dem Klima.",
+   "en": "That harms the climate."
+  },
+  {
+   "de": "Der Nahverkehr müsste günstiger sein.",
+   "en": "Public transport ought to be cheaper."
+  },
+  {
+   "de": "Viele steigen aufs Rad um.",
+   "en": "Many people are switching to cycling."
+  },
+  {
+   "de": "Ich fahre mit dem Rad, ___ im Stau ___ stehen. (statt … zu)",
+   "en": "I ride my bike ___ ___ stand in traffic jams. (statt … zu)"
+  },
+  {
+   "de": "Er ging, ___ sich zu verabschieden.",
+   "en": "He left ___ saying goodbye."
+  },
+  {
+   "de": "Die Preise steigen, ___ ___ die Politik reagiert. (verschiedene Subjekte)",
+   "en": "Prices are rising ___ ___ politicians reacting. (different subjects)"
+  },
+  {
+   "de": "Wir leben komfortabel, ___ auf Nachhaltigkeit ___ verzichten. (ohne … zu)",
+   "en": "We live comfortably ___ ___ give up on sustainability. (ohne … zu)"
+  },
+  {
+   "de": "Gleiches Subjekt → Infinitivkonstruktion mit statt … zu.",
+   "en": "Same subject → infinitive construction with statt … zu."
+  },
+  {
+   "de": "Gleiches Subjekt und kein zusätzliches nicht.",
+   "en": "Same subject and no extra nicht."
+  },
+  {
+   "de": "Unterschiedliche Subjekte → ohne dass + Nebensatz.",
+   "en": "Different subjects → ohne dass + subordinate clause."
+  },
+  {
+   "de": "Struktur: statt + zu + Infinitiv am Ende des Nebensatzes.",
+   "en": "Structure: statt + zu + infinitive at the end of the clause."
+  },
+  {
+   "de": "ohne … zu nennt den fehlenden Umstand.",
+   "en": "ohne … zu names the missing circumstance."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Umweltverhalten",
+   "context": "Über Umweltverhalten diskutieren — Alternativen und fehlende Begleitumstände ausdrücken.",
+   "en": "environmental behaviour",
+   "lemma": "das Umweltverhalten"
+  },
+  {
+   "form": "fehlende",
+   "context": "Über Umweltverhalten diskutieren — Alternativen und fehlende Begleitumstände ausdrücken.",
+   "en": "missing",
+   "lemma": "fehlend"
+  },
+  {
+   "form": "Begleitumstände",
+   "context": "Über Umweltverhalten diskutieren — Alternativen und fehlende Begleitumstände ausdrücken.",
+   "en": "accompanying circumstances",
+   "lemma": "der Begleitumstand"
+  },
+  {
+   "form": "Umwelt",
+   "context": "über Umwelt und Klimaschutz diskutieren",
+   "en": "environment",
+   "lemma": "die Umwelt"
+  },
+  {
+   "form": "Klimaschutz",
+   "context": "über Umwelt und Klimaschutz diskutieren",
+   "en": "climate protection",
+   "lemma": "der Klimaschutz"
+  },
+  {
+   "form": "verkürzen",
+   "context": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+   "en": "to shorten",
+   "lemma": ""
+  },
+  {
+   "form": "gewählt",
+   "context": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+   "en": "chosen; elected",
+   "lemma": "wählen"
+  },
+  {
+   "form": "erwarteten",
+   "context": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+   "en": "expected",
+   "lemma": "erwartet"
+  },
+  {
+   "form": "Umstand",
+   "context": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+   "en": "circumstance",
+   "lemma": "der Umstand"
+  },
+  {
+   "form": "Haupt",
+   "context": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+   "en": "main (Hauptsatz = main clause)",
+   "lemma": ""
+  },
+  {
+   "form": "dasselbe",
+   "context": "Beide Konstruktionen verkürzen einen Nebensatz. (an)statt … zu drückt eine Alternative aus, die nicht gewählt wird. ohne … zu nennt einen erwarteten Umstand, der fehlt. Wichtig: Diese Kurzform geht nur, wenn Haupt- und Nebensatz dasselbe Subjekt haben.",
+   "en": "the same",
+   "lemma": "derselbe"
+  },
+  {
+   "form": "Subjekte",
+   "context": "Subjekte",
+   "en": "subjects",
+   "lemma": "das Subjekt"
+  },
+  {
+   "form": "verschieden",
+   "context": "verschieden",
+   "en": "different",
+   "lemma": ""
+  },
+  {
+   "form": "Bürger",
+   "context": "Die Bürger demonstrieren, ohne dass sich etwas ändert.",
+   "en": "citizens",
+   "lemma": "der Bürger"
+  },
+  {
+   "form": "demonstrieren",
+   "context": "Die Bürger demonstrieren, ohne dass sich etwas ändert.",
+   "en": "demonstrate, protest",
+   "lemma": ""
+  },
+  {
+   "form": "repariere",
+   "context": "Statt neue Kleidung zu kaufen, repariere ich meine alte.gleiches Subjekt → Infinitivkonstruktion",
+   "en": "repair",
+   "lemma": "reparieren"
+  },
+  {
+   "form": "gleiches",
+   "context": "Statt neue Kleidung zu kaufen, repariere ich meine alte.gleiches Subjekt → Infinitivkonstruktion",
+   "en": "same",
+   "lemma": "gleich"
+  },
+  {
+   "form": "Infinitivkonstruktion",
+   "context": "Statt neue Kleidung zu kaufen, repariere ich meine alte.gleiches Subjekt → Infinitivkonstruktion",
+   "en": "infinitive construction",
+   "lemma": "die Infinitivkonstruktion"
+  },
+  {
+   "form": "komfortabel",
+   "context": "Wir leben komfortabel, ohne auf Nachhaltigkeit zu verzichten.ohne … zu",
+   "en": "comfortably",
+   "lemma": ""
+  },
+  {
+   "form": "Nachhaltigkeit",
+   "context": "Wir leben komfortabel, ohne auf Nachhaltigkeit zu verzichten.ohne … zu",
+   "en": "sustainability",
+   "lemma": "die Nachhaltigkeit"
+  },
+  {
+   "form": "Verbrauch",
+   "context": "Der Verbrauch steigt, ohne dass es jemand bemerkt.anderes Subjekt → ohne dass",
+   "en": "consumption",
+   "lemma": "der Verbrauch"
+  },
+  {
+   "form": "steigt",
+   "context": "Der Verbrauch steigt, ohne dass es jemand bemerkt.anderes Subjekt → ohne dass",
+   "en": "rises, increases",
+   "lemma": "steigen"
+  },
+  {
+   "form": "bemerkt",
+   "context": "Der Verbrauch steigt, ohne dass es jemand bemerkt.anderes Subjekt → ohne dass",
+   "en": "notices",
+   "lemma": "bemerken"
+  },
+  {
+   "form": "zusätzliches",
+   "context": "Tipp: Nach ohne steht nie ein zusätzliches nicht — die Verneinung steckt schon im Wort.",
+   "en": "additional, extra",
+   "lemma": "zusätzlich"
+  },
+  {
+   "form": "steckt",
+   "context": "Tipp: Nach ohne steht nie ein zusätzliches nicht — die Verneinung steckt schon im Wort.",
+   "en": "is (contained); sticks",
+   "lemma": "stecken"
+  },
+  {
+   "form": "protection",
+   "context": "der Klimaschutz (Sg.) — EN: climate protection · FR: la protection du climatKlimaschutz beginnt im Alltag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "climatKlimaschutz",
+   "context": "der Klimaschutz (Sg.) — EN: climate protection · FR: la protection du climatKlimaschutz beginnt im Alltag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "environment",
+   "context": "die Umwelt (Sg.) — EN: environment · FR: l'environnementDas schadet der Umwelt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'environnementDas",
+   "context": "die Umwelt (Sg.) — EN: environment · FR: l'environnementDas schadet der Umwelt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "schadet",
+   "context": "die Umwelt (Sg.) — EN: environment · FR: l'environnementDas schadet der Umwelt.",
+   "en": "harms",
+   "lemma": "schaden"
+  },
+  {
+   "form": "nachhaltig",
+   "context": "nachhaltig — EN: sustainable · FR: durableWir wollen nachhaltiger leben.",
+   "en": "sustainable",
+   "lemma": ""
+  },
+  {
+   "form": "sustainable",
+   "context": "nachhaltig — EN: sustainable · FR: durableWir wollen nachhaltiger leben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "durableWir",
+   "context": "nachhaltig — EN: sustainable · FR: durableWir wollen nachhaltiger leben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nachhaltiger",
+   "context": "nachhaltig — EN: sustainable · FR: durableWir wollen nachhaltiger leben.",
+   "en": "more sustainably",
+   "lemma": "nachhaltig"
+  },
+  {
+   "form": "consumption",
+   "context": "der Verbrauch (Sg.) — EN: consumption · FR: la consommationDer Verbrauch ist deutlich gesunken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "consommationDer",
+   "context": "der Verbrauch (Sg.) — EN: consumption · FR: la consommationDer Verbrauch ist deutlich gesunken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gesunken",
+   "context": "der Verbrauch (Sg.) — EN: consumption · FR: la consommationDer Verbrauch ist deutlich gesunken.",
+   "en": "fallen, dropped",
+   "lemma": "sinken"
+  },
+  {
+   "form": "Plastiktüten",
+   "context": "verzichten auf — EN: to do without · FR: renoncer àIch verzichte auf Plastiktüten.",
+   "en": "plastic bags",
+   "lemma": "die Plastiktüte"
+  },
+  {
+   "form": "Müll",
+   "context": "der Müll (Sg.) — EN: waste, rubbish · FR: les déchetsMüll wird bei uns getrennt.",
+   "en": "rubbish, waste",
+   "lemma": "der Müll"
+  },
+  {
+   "form": "waste",
+   "context": "der Müll (Sg.) — EN: waste, rubbish · FR: les déchetsMüll wird bei uns getrennt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rubbish",
+   "context": "der Müll (Sg.) — EN: waste, rubbish · FR: les déchetsMüll wird bei uns getrennt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déchetsMüll",
+   "context": "der Müll (Sg.) — EN: waste, rubbish · FR: les déchetsMüll wird bei uns getrennt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trennen",
+   "context": "trennen — EN: to separate, sort · FR: trierPapier und Plastik muss man trennen.",
+   "en": "to separate, sort",
+   "lemma": ""
+  },
+  {
+   "form": "separate",
+   "context": "trennen — EN: to separate, sort · FR: trierPapier und Plastik muss man trennen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sort",
+   "context": "trennen — EN: to separate, sort · FR: trierPapier und Plastik muss man trennen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trierPapier",
+   "context": "trennen — EN: to separate, sort · FR: trierPapier und Plastik muss man trennen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Plastik",
+   "context": "trennen — EN: to separate, sort · FR: trierPapier und Plastik muss man trennen.",
+   "en": "plastic",
+   "lemma": "das Plastik"
+  },
+  {
+   "form": "erneuerbaren",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "renewable",
+   "lemma": "erneuerbar"
+  },
+  {
+   "form": "Energien",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "energies, energy sources",
+   "lemma": "die Energie"
+  },
+  {
+   "form": "renewable",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "energy",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "énergies",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "renouvelablesErneuerbare",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ausgebaut",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energy · FR: les énergies renouvelablesErneuerbare Energien werden ausgebaut.",
+   "en": "expanded",
+   "lemma": "ausbauen"
+  },
+  {
+   "form": "Abgas",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "exhaust gas",
+   "lemma": "das Abgas"
+  },
+  {
+   "form": "Abgase",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "exhaust fumes",
+   "lemma": "das Abgas"
+  },
+  {
+   "form": "exhaust",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fumes",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gaz",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'échappementDie",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "belasten",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "pollute; burden",
+   "lemma": ""
+  },
+  {
+   "form": "Luft",
+   "context": "der Abgas, -e / die Abgase (Pl.) — EN: exhaust fumes · FR: les gaz d'échappementDie Abgase belasten die Luft.",
+   "en": "air",
+   "lemma": "die Luft"
+  },
+  {
+   "form": "schaden",
+   "context": "schaden (+ Dat.) — EN: to harm · FR: nuire àDas schadet dem Klima.",
+   "en": "to harm",
+   "lemma": ""
+  },
+  {
+   "form": "harm",
+   "context": "schaden (+ Dat.) — EN: to harm · FR: nuire àDas schadet dem Klima.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nuire",
+   "context": "schaden (+ Dat.) — EN: to harm · FR: nuire àDas schadet dem Klima.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "öffentliche",
+   "context": "der öffentliche Nahverkehr (Sg.) — EN: public transport · FR: les transports en communDer Nahverkehr müsste günstiger sein.",
+   "en": "public",
+   "lemma": "öffentlich"
+  },
+  {
+   "form": "Nahverkehr",
+   "context": "der öffentliche Nahverkehr (Sg.) — EN: public transport · FR: les transports en communDer Nahverkehr müsste günstiger sein.",
+   "en": "local public transport",
+   "lemma": "der Nahverkehr"
+  },
+  {
+   "form": "transports",
+   "context": "der öffentliche Nahverkehr (Sg.) — EN: public transport · FR: les transports en communDer Nahverkehr müsste günstiger sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "communDer",
+   "context": "der öffentliche Nahverkehr (Sg.) — EN: public transport · FR: les transports en communDer Nahverkehr müsste günstiger sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "müsste",
+   "context": "der öffentliche Nahverkehr (Sg.) — EN: public transport · FR: les transports en communDer Nahverkehr müsste günstiger sein.",
+   "en": "ought to, would have to",
+   "lemma": "müssen"
+  },
+  {
+   "form": "àViele",
+   "context": "umsteigen auf — EN: to switch to · FR: passer àViele steigen aufs Rad um.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "einwenden",
+   "context": "einwenden",
+   "en": "to object",
+   "lemma": ""
+  },
+  {
+   "form": "pauschal",
+   "context": "Das lässt sich so pauschal nicht sagen.",
+   "en": "sweeping, general",
+   "lemma": ""
+  },
+  {
+   "form": "Erneuerbare",
+   "context": "Erneuerbare Energien werden ausgebaut.",
+   "en": "renewable",
+   "lemma": "erneuerbar"
+  }
+ ]
+}
