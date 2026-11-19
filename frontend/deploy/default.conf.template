@@ -1,9 +1,15 @@
-# class.deutshsprache.org is the retired platform hostname (retired 2026-10-19).
-# Page requests there move permanently to class.deutschspracherw.org, path and query kept,
-# so old bookmarks, emailed links and printed certificate/receipt QR codes keep working.
-map $host $retired_platform_host {
-    default                  0;
-    class.deutshsprache.org  1;
+# The platform has one public address: class.deutschspracherw.org. Page requests on any other hostname
+# (the retired class.deutshsprache.org, the Hubfly default *.hubfly.app host, or any domain attached later)
+# move there permanently, path and query kept, so bookmarks, emailed links and printed QR codes keep working.
+# Internal callers (health checks, the Hubfly network, IP addresses, local testing) are never redirected.
+map $host $send_to_canonical {
+    default                              1;
+    class.deutschspracherw.org           0;
+    ""                                   0;
+    localhost                            0;
+    "~^[0-9.]+$"                         0;
+    "~:"                                 0;
+    "~\.hubfly\.internal$"               0;
 }
 
 server {
@@ -53,13 +59,20 @@ server {
         try_files $uri =404;
     }
 
+    # Course audio (pre-generated MP3s): the URL is a hash of voice + text, so it never changes;
+    # a missing clip must 404 (the player then uses the device voice), never fall back to index.html.
+    location /audio/ {
+        add_header Cache-Control "public, max-age=31536000, immutable";
+        try_files $uri =404;
+    }
+
     location /assets/ {
         add_header Cache-Control "public, max-age=31536000, immutable";
         try_files $uri =404;
     }
 
     location / {
-        if ($retired_platform_host) {
+        if ($send_to_canonical) {
             return 301 https://class.deutschspracherw.org$request_uri;
         }
         add_header Cache-Control "no-cache";
