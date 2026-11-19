@@ -19,8 +19,30 @@ export const EMPTY_FILTERS: EnrolmentFilters = {
   intakeId: '',
   status: '',
   classGroupId: '',
+  campusId: '',
   awaitingOnly: false,
+  access: '',
+  activity: '',
 };
+
+/** Course access as the student experiences it (see backend register-insights.ts). */
+export const ACCESS_LABEL: Record<string, string> = {
+  OPEN: 'Unlocked',
+  UNPAID: 'Locked · unpaid',
+  SUSPENDED: 'Account suspended',
+  CLOSED: 'Enrolment closed',
+};
+
+export const ACCESS_FILTERS = [
+  { value: '', label: 'All access' },
+  ...Object.entries(ACCESS_LABEL).map(([value, label]) => ({ value, label })),
+];
+
+export const ACTIVITY_FILTERS = [
+  { value: '', label: 'All activity' },
+  { value: 'NEVER_SIGNED_IN', label: 'Never signed in' },
+  { value: 'NO_LESSONS', label: 'No lesson finished' },
+];
 
 export const FORM_HINT =
   'Places a registered student into a level, intake and class.';
