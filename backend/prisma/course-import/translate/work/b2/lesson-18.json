@@ -1,0 +1,755 @@
+{
+ "level": "B2",
+ "lesson": 18,
+ "title": "Erinnerungen aus der Geschichte — Das hätte verhindert werden können",
+ "lines": [
+  {
+   "de": "Über historische Ereignisse berichten und bewerten, was anders hätte laufen können.",
+   "en": "Report on historical events and assess what could have gone differently."
+  },
+  {
+   "de": "Textsorte: Museumsführung · Biografie · Kurzvortrag",
+   "en": "Text type: Museum tour · Biography · Short talk"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 1 (Kurzvortrag); ÖSD B2 Lesen",
+   "en": "Exam link: Goethe B2 Speaking part 1 (short talk); ÖSD B2 Reading"
+  },
+  {
+   "de": "Biografien verstehen und wiedergeben",
+   "en": "understand and retell biographies"
+  },
+  {
+   "de": "das Passiv mit Konjunktiv II der Vergangenheit bilden",
+   "en": "form the passive with the past subjunctive II (Konjunktiv II der Vergangenheit)"
+  },
+  {
+   "de": "einen strukturierten Kurzvortrag halten",
+   "en": "give a structured short talk"
+  },
+  {
+   "de": "Grammatik: Passiv mit Konjunktiv II der Vergangenheit",
+   "en": "Grammar: The passive with the past subjunctive II (Konjunktiv II der Vergangenheit)"
+  },
+  {
+   "de": "Um zu sagen, was in der Vergangenheit hätte getan werden können oder müssen, verbindet man den Konjunktiv II der Vergangenheit mit dem Passiv. Die Struktur lautet: hätte + Partizip II + werden, bei Modalverb zusätzlich das Modalverb im Infinitiv ganz am Ende.",
+   "en": "To say what could or should have been done in the past, you combine the past subjunctive II with the passive. The structure is: hätte + past participle (Partizip II) + werden; with a modal verb, the modal verb in the infinitive is also added at the very end."
+  },
+  {
+   "de": "Passiv Konjunktiv II Vergangenheit",
+   "en": "passive, past subjunctive II"
+  },
+  {
+   "de": "wäre + Partizip II + worden",
+   "en": "wäre + past participle + worden (would have been …)"
+  },
+  {
+   "de": "Der Vertrag wäre fast unterzeichnet worden.",
+   "en": "The treaty was very nearly signed."
+  },
+  {
+   "de": "hätte + Partizip II + werden + Modalverb",
+   "en": "hätte + past participle + werden + modal verb (could/should have been …)"
+  },
+  {
+   "de": "Das hätte verhindert werden können.",
+   "en": "That could have been prevented."
+  },
+  {
+   "de": "Vorwurf",
+   "en": "Reproach"
+  },
+  {
+   "de": "hätte + Partizip II + werden + müssen",
+   "en": "hätte + past participle + werden + müssen (should have been …)"
+  },
+  {
+   "de": "Die Bevölkerung hätte früher informiert werden müssen.",
+   "en": "The population should have been informed earlier."
+  },
+  {
+   "de": "Vergleich Aktiv",
+   "en": "comparison: active"
+  },
+  {
+   "de": "hätte + Infinitiv + Modalverb",
+   "en": "hätte + infinitive + modal verb (could/should have …)"
+  },
+  {
+   "de": "Man hätte das verhindern können.",
+   "en": "One could have prevented that."
+  },
+  {
+   "de": "Viele Dokumente hätten gerettet werden können.hätten + gerettet + werden + können",
+   "en": "Many documents could have been saved. — hätten + gerettet + werden + können"
+  },
+  {
+   "de": "Das Gebäude wäre beinahe abgerissen worden.Passiv Konjunktiv II ohne Modalverb",
+   "en": "The building was very nearly demolished. — passive subjunctive II without a modal verb"
+  },
+  {
+   "de": "Die Entscheidung hätte öffentlich diskutiert werden müssen.Vorwurf über Unterlassenes",
+   "en": "The decision should have been discussed publicly. — reproach about something that was not done"
+  },
+  {
+   "de": "Tipp: Die Reihenfolge am Satzende ist fest und lang: Partizip II + werden + Modalverb. Prägen Sie sich einen Mustersatz ein: „Das hätte gemacht werden können.\"",
+   "en": "Tip: The order at the end of the sentence is fixed and long: past participle + werden + modal verb. Memorise a model sentence: “Das hätte gemacht werden können.”"
+  },
+  {
+   "de": "das Ereignis, -se — EN: event · FR: l'événementDas Ereignis prägte eine ganze Generation.",
+   "en": "Example: The event shaped an entire generation."
+  },
+  {
+   "de": "die Epoche, -n — EN: era · FR: l'époqueIn welcher Epoche hätten Sie gern gelebt?",
+   "en": "Example: In which era would you have liked to live?"
+  },
+  {
+   "de": "die Zeitzeugin, -nen / der Zeitzeuge, -n — EN: contemporary witness · FR: le témoin de l'époqueZeitzeugen berichten im Museum.",
+   "en": "Example: Contemporary witnesses tell their stories in the museum."
+  },
+  {
+   "de": "die Quellenlage (Sg.) — EN: state of the sources · FR: l'état des sourcesDie Quellenlage ist für diese Jahre dünn.",
+   "en": "Example: Sources for these years are scarce."
+  },
+  {
+   "de": "der Wendepunkt, -e — EN: turning point · FR: le tournant1989 gilt als Wendepunkt.",
+   "en": "Example: 1989 is regarded as a turning point."
+  },
+  {
+   "de": "etwas verhindern — EN: to prevent · FR: empêcherDas hätte verhindert werden können.",
+   "en": "Example: That could have been prevented."
+  },
+  {
+   "de": "die Folge, -n — EN: consequence · FR: la conséquenceDie Folgen sind bis heute spürbar.",
+   "en": "Example: The consequences can still be felt today."
+  },
+  {
+   "de": "der Fortschritt, -e — EN: progress · FR: le progrèsDer medizinische Fortschritt beschleunigte sich.",
+   "en": "Example: Medical progress accelerated."
+  },
+  {
+   "de": "die Errungenschaft, -en — EN: achievement · FR: l'acquisDas Wahlrecht war eine große Errungenschaft.",
+   "en": "Example: The right to vote was a great achievement."
+  },
+  {
+   "de": "die Aufarbeitung (Sg.) — EN: coming to terms with the past · FR: le travail de mémoireDie Aufarbeitung dauerte Jahrzehnte.",
+   "en": "Example: Coming to terms with the past took decades."
+  },
+  {
+   "de": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "Example: Her achievement was only recognised late."
+  },
+  {
+   "de": "in Vergessenheit geraten — EN: to fall into oblivion · FR: tomber dans l'oubliIhr Name war fast in Vergessenheit geraten.",
+   "en": "Example: Her name had almost fallen into oblivion."
+  },
+  {
+   "de": "umstritten — EN: contested · FR: contestéSeine Rolle ist bis heute umstritten.",
+   "en": "Example: His role is still contested today."
+  },
+  {
+   "de": "die Gedenkstätte, -n — EN: memorial site · FR: le mémorialDie Gedenkstätte wurde 1995 eröffnet.",
+   "en": "Example: The memorial site was opened in 1995."
+  },
+  {
+   "de": "einen Kurzvortrag strukturieren",
+   "en": "Structuring a short talk"
+  },
+  {
+   "de": "Ich möchte Ihnen heute … vorstellen.",
+   "en": "Today I would like to present … to you."
+  },
+  {
+   "de": "Dazu gehe ich auf drei Punkte ein: erstens …, zweitens …, drittens …",
+   "en": "To do this, I will address three points: firstly …, secondly …, thirdly …"
+  },
+  {
+   "de": "Damit komme ich zum Schluss.",
+   "en": "That brings me to my conclusion."
+  },
+  {
+   "de": "eine Biografie wiedergeben",
+   "en": "Retelling a biography"
+  },
+  {
+   "de": "Geboren wurde sie … in …",
+   "en": "She was born … in …"
+  },
+  {
+   "de": "Bekannt geworden ist er vor allem durch …",
+   "en": "He became known above all through …"
+  },
+  {
+   "de": "Ihr Werk wurde erst nach ihrem Tod anerkannt.",
+   "en": "Her work was only recognised after her death."
+  },
+  {
+   "de": "historisch bewerten",
+   "en": "Making historical assessments"
+  },
+  {
+   "de": "Rückblickend hätte man … anders entscheiden können.",
+   "en": "Looking back, … could have been decided differently."
+  },
+  {
+   "de": "Aus heutiger Sicht erscheint das schwer nachvollziehbar.",
+   "en": "From today’s point of view, that seems hard to understand."
+  },
+  {
+   "de": "Darüber wird bis heute kontrovers diskutiert.",
+   "en": "This is still the subject of controversial debate today."
+  },
+  {
+   "de": "Das Ereignis prägte eine ganze Generation.",
+   "en": "The event shaped an entire generation."
+  },
+  {
+   "de": "In welcher Epoche hätten Sie gern gelebt?",
+   "en": "In which era would you have liked to live?"
+  },
+  {
+   "de": "Zeitzeugen berichten im Museum.",
+   "en": "Contemporary witnesses tell their stories in the museum."
+  },
+  {
+   "de": "Die Quellenlage ist für diese Jahre dünn.",
+   "en": "Sources for these years are scarce."
+  },
+  {
+   "de": "1989 gilt als Wendepunkt.",
+   "en": "1989 is regarded as a turning point."
+  },
+  {
+   "de": "Die Folgen sind bis heute spürbar.",
+   "en": "The consequences can still be felt today."
+  },
+  {
+   "de": "Der medizinische Fortschritt beschleunigte sich.",
+   "en": "Medical progress accelerated."
+  },
+  {
+   "de": "Das Wahlrecht war eine große Errungenschaft.",
+   "en": "The right to vote was a great achievement."
+  },
+  {
+   "de": "Die Aufarbeitung dauerte Jahrzehnte.",
+   "en": "Coming to terms with the past took decades."
+  },
+  {
+   "de": "Ihre Leistung wurde erst spät gewürdigt.",
+   "en": "Her achievement was only recognised late."
+  },
+  {
+   "de": "Ihr Name war fast in Vergessenheit geraten.",
+   "en": "Her name had almost fallen into oblivion."
+  },
+  {
+   "de": "Seine Rolle ist bis heute umstritten.",
+   "en": "His role is still contested today."
+  },
+  {
+   "de": "Die Gedenkstätte wurde 1995 eröffnet.",
+   "en": "The memorial site was opened in 1995."
+  },
+  {
+   "de": "Viele Dokumente ___ gerettet werden können. (haben, Konjunktiv II, Plural)",
+   "en": "Many documents could ___ been saved. (haben, subjunctive II, plural)"
+  },
+  {
+   "de": "Das Gebäude ___ beinahe abgerissen worden. (sein, Konjunktiv II)",
+   "en": "The building ___ very nearly demolished. (sein, subjunctive II)"
+  },
+  {
+   "de": "„Die Bevölkerung hätte früher informiert werden müssen\" drückt aus:",
+   "en": "“Die Bevölkerung hätte früher informiert werden müssen” expresses:"
+  },
+  {
+   "de": "Aktiv zu „Das hätte verhindert werden können\":",
+   "en": "Active form of “That could have been prevented”:"
+  },
+  {
+   "de": "Im Passiv Perfekt heißt das Partizip von werden nicht geworden, sondern ___.",
+   "en": "In the passive perfect, the participle of werden is not geworden but ___."
+  },
+  {
+   "de": "Schreiben Sie das Manuskript für einen Kurzvortrag (drei Minuten) über eine historische Person oder ein Ereignis aus Ihrem Land. Umfang: 200–250 Wörter Checkliste: • Einstieg mit einer Frage, einem Zitat oder einer Zahl. • Drei klar angekündigte Gliederungspunkte. • Mindestens ein Satz im Passiv mit Konjunktiv II der Vergangenheit. • Ein Schluss, der den Bezug zur Gegenwart herstellt.",
+   "en": "Write the script for a short talk (three minutes) about a historical person or an event from your country. Length: 200–250 words Checklist: • An opening with a question, a quotation or a figure. • Three clearly announced main points. • At least one sentence in the passive with the past subjunctive II. • A conclusion that makes the link to the present."
+  },
+  {
+   "de": "Feste Reihenfolge: hätte + Partizip II + werden + Modalverb im Infinitiv.",
+   "en": "Fixed order: hätte + past participle + werden + modal verb in the infinitive."
+  },
+  {
+   "de": "Das Subjekt steht im Plural → hätten.",
+   "en": "The subject is plural → hätten."
+  },
+  {
+   "de": "Passiv Konjunktiv II der Vergangenheit ohne Modalverb: wäre + Partizip II + worden.",
+   "en": "Passive past subjunctive II without a modal verb: wäre + past participle + worden."
+  },
+  {
+   "de": "Konjunktiv II der Vergangenheit mit müssen kritisiert, dass etwas nicht getan wurde.",
+   "en": "The past subjunctive II with müssen criticises the fact that something was not done."
+  },
+  {
+   "de": "Im Aktiv entfällt werden: hätte + Infinitiv + Modalverb.",
+   "en": "In the active, werden is dropped: hätte + infinitive + modal verb."
+  },
+  {
+   "de": "Im Passiv steht immer worden, nie geworden.",
+   "en": "In the passive, it is always worden, never geworden."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Museumsführung",
+   "context": "Textsorte: Museumsführung · Biografie · Kurzvortrag",
+   "en": "museum tour",
+   "lemma": "die Museumsführung"
+  },
+  {
+   "form": "strukturierten",
+   "context": "einen strukturierten Kurzvortrag halten",
+   "en": "structured",
+   "lemma": "strukturiert"
+  },
+  {
+   "form": "unterzeichnet",
+   "context": "Der Vertrag wäre fast unterzeichnet worden.",
+   "en": "signed",
+   "lemma": "unterzeichnen"
+  },
+  {
+   "form": "Bevölkerung",
+   "context": "Die Bevölkerung hätte früher informiert werden müssen.",
+   "en": "population",
+   "lemma": "die Bevölkerung"
+  },
+  {
+   "form": "informiert",
+   "context": "Die Bevölkerung hätte früher informiert werden müssen.",
+   "en": "informed",
+   "lemma": "informieren"
+  },
+  {
+   "form": "verhindern",
+   "context": "Man hätte das verhindern können.",
+   "en": "prevent",
+   "lemma": ""
+  },
+  {
+   "form": "gerettet",
+   "context": "Viele Dokumente hätten gerettet werden können.hätten + gerettet + werden + können",
+   "en": "saved, rescued",
+   "lemma": "retten"
+  },
+  {
+   "form": "beinahe",
+   "context": "Das Gebäude wäre beinahe abgerissen worden.Passiv Konjunktiv II ohne Modalverb",
+   "en": "almost, nearly",
+   "lemma": ""
+  },
+  {
+   "form": "abgerissen",
+   "context": "Das Gebäude wäre beinahe abgerissen worden.Passiv Konjunktiv II ohne Modalverb",
+   "en": "demolished",
+   "lemma": "abreißen"
+  },
+  {
+   "form": "öffentlich",
+   "context": "Die Entscheidung hätte öffentlich diskutiert werden müssen.Vorwurf über Unterlassenes",
+   "en": "publicly",
+   "lemma": ""
+  },
+  {
+   "form": "Unterlassenes",
+   "context": "Die Entscheidung hätte öffentlich diskutiert werden müssen.Vorwurf über Unterlassenes",
+   "en": "something not done",
+   "lemma": "das Unterlassene"
+  },
+  {
+   "form": "Mustersatz",
+   "context": "Tipp: Die Reihenfolge am Satzende ist fest und lang: Partizip II + werden + Modalverb. Prägen Sie sich einen Mustersatz ein: „Das hätte gemacht werden können.\"",
+   "en": "model sentence",
+   "lemma": "der Mustersatz"
+  },
+  {
+   "form": "l'événementDas",
+   "context": "das Ereignis, -se — EN: event · FR: l'événementDas Ereignis prägte eine ganze Generation.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "prägte",
+   "context": "das Ereignis, -se — EN: event · FR: l'événementDas Ereignis prägte eine ganze Generation.",
+   "en": "shaped",
+   "lemma": "prägen"
+  },
+  {
+   "form": "Generation",
+   "context": "das Ereignis, -se — EN: event · FR: l'événementDas Ereignis prägte eine ganze Generation.",
+   "en": "generation",
+   "lemma": "die Generation"
+  },
+  {
+   "form": "Epoche",
+   "context": "die Epoche, -n — EN: era · FR: l'époqueIn welcher Epoche hätten Sie gern gelebt?",
+   "en": "era, epoch",
+   "lemma": "die Epoche"
+  },
+  {
+   "form": "era",
+   "context": "die Epoche, -n — EN: era · FR: l'époqueIn welcher Epoche hätten Sie gern gelebt?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'époqueIn",
+   "context": "die Epoche, -n — EN: era · FR: l'époqueIn welcher Epoche hätten Sie gern gelebt?",
+   "en": "in",
+   "lemma": ""
+  },
+  {
+   "form": "gelebt",
+   "context": "die Epoche, -n — EN: era · FR: l'époqueIn welcher Epoche hätten Sie gern gelebt?",
+   "en": "lived",
+   "lemma": "leben"
+  },
+  {
+   "form": "Zeitzeugin",
+   "context": "die Zeitzeugin, -nen / der Zeitzeuge, -n — EN: contemporary witness · FR: le témoin de l'époqueZeitzeugen berichten im Museum.",
+   "en": "(female) contemporary witness",
+   "lemma": "die Zeitzeugin"
+  },
+  {
+   "form": "Zeitzeuge",
+   "context": "die Zeitzeugin, -nen / der Zeitzeuge, -n — EN: contemporary witness · FR: le témoin de l'époqueZeitzeugen berichten im Museum.",
+   "en": "contemporary witness",
+   "lemma": "der Zeitzeuge"
+  },
+  {
+   "form": "contemporary",
+   "context": "die Zeitzeugin, -nen / der Zeitzeuge, -n — EN: contemporary witness · FR: le témoin de l'époqueZeitzeugen berichten im Museum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "witness",
+   "context": "die Zeitzeugin, -nen / der Zeitzeuge, -n — EN: contemporary witness · FR: le témoin de l'époqueZeitzeugen berichten im Museum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "témoin",
+   "context": "die Zeitzeugin, -nen / der Zeitzeuge, -n — EN: contemporary witness · FR: le témoin de l'époqueZeitzeugen berichten im Museum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'époqueZeitzeugen",
+   "context": "die Zeitzeugin, -nen / der Zeitzeuge, -n — EN: contemporary witness · FR: le témoin de l'époqueZeitzeugen berichten im Museum.",
+   "en": "contemporary witnesses",
+   "lemma": "der Zeitzeuge"
+  },
+  {
+   "form": "Quellenlage",
+   "context": "die Quellenlage (Sg.) — EN: state of the sources · FR: l'état des sourcesDie Quellenlage ist für diese Jahre dünn.",
+   "en": "state of the sources",
+   "lemma": "die Quellenlage"
+  },
+  {
+   "form": "state",
+   "context": "die Quellenlage (Sg.) — EN: state of the sources · FR: l'état des sourcesDie Quellenlage ist für diese Jahre dünn.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sources",
+   "context": "die Quellenlage (Sg.) — EN: state of the sources · FR: l'état des sourcesDie Quellenlage ist für diese Jahre dünn.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'état",
+   "context": "die Quellenlage (Sg.) — EN: state of the sources · FR: l'état des sourcesDie Quellenlage ist für diese Jahre dünn.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sourcesDie",
+   "context": "die Quellenlage (Sg.) — EN: state of the sources · FR: l'état des sourcesDie Quellenlage ist für diese Jahre dünn.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "tournant",
+   "context": "der Wendepunkt, -e — EN: turning point · FR: le tournant1989 gilt als Wendepunkt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "empêcherDas",
+   "context": "etwas verhindern — EN: to prevent · FR: empêcherDas hätte verhindert werden können.",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "consequence",
+   "context": "die Folge, -n — EN: consequence · FR: la conséquenceDie Folgen sind bis heute spürbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "conséquenceDie",
+   "context": "die Folge, -n — EN: consequence · FR: la conséquenceDie Folgen sind bis heute spürbar.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "beschleunigte",
+   "context": "der Fortschritt, -e — EN: progress · FR: le progrèsDer medizinische Fortschritt beschleunigte sich.",
+   "en": "accelerated",
+   "lemma": "sich beschleunigen"
+  },
+  {
+   "form": "Errungenschaft",
+   "context": "die Errungenschaft, -en — EN: achievement · FR: l'acquisDas Wahlrecht war eine große Errungenschaft.",
+   "en": "achievement",
+   "lemma": "die Errungenschaft"
+  },
+  {
+   "form": "achievement",
+   "context": "die Errungenschaft, -en — EN: achievement · FR: l'acquisDas Wahlrecht war eine große Errungenschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'acquisDas",
+   "context": "die Errungenschaft, -en — EN: achievement · FR: l'acquisDas Wahlrecht war eine große Errungenschaft.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Wahlrecht",
+   "context": "die Errungenschaft, -en — EN: achievement · FR: l'acquisDas Wahlrecht war eine große Errungenschaft.",
+   "en": "right to vote",
+   "lemma": "das Wahlrecht"
+  },
+  {
+   "form": "Aufarbeitung",
+   "context": "die Aufarbeitung (Sg.) — EN: coming to terms with the past · FR: le travail de mémoireDie Aufarbeitung dauerte Jahrzehnte.",
+   "en": "coming to terms (with the past)",
+   "lemma": "die Aufarbeitung"
+  },
+  {
+   "form": "coming",
+   "context": "die Aufarbeitung (Sg.) — EN: coming to terms with the past · FR: le travail de mémoireDie Aufarbeitung dauerte Jahrzehnte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "terms",
+   "context": "die Aufarbeitung (Sg.) — EN: coming to terms with the past · FR: le travail de mémoireDie Aufarbeitung dauerte Jahrzehnte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mémoireDie",
+   "context": "die Aufarbeitung (Sg.) — EN: coming to terms with the past · FR: le travail de mémoireDie Aufarbeitung dauerte Jahrzehnte.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "würdigen",
+   "context": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "to honour, appreciate",
+   "lemma": ""
+  },
+  {
+   "form": "honour",
+   "context": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "appreciate",
+   "context": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rendre",
+   "context": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "hommage",
+   "context": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àIhre",
+   "context": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "her",
+   "lemma": ""
+  },
+  {
+   "form": "gewürdigt",
+   "context": "etwas würdigen — EN: to honour, appreciate · FR: rendre hommage àIhre Leistung wurde erst spät gewürdigt.",
+   "en": "recognised, honoured",
+   "lemma": "würdigen"
+  },
+  {
+   "form": "Vergessenheit",
+   "context": "in Vergessenheit geraten — EN: to fall into oblivion · FR: tomber dans l'oubliIhr Name war fast in Vergessenheit geraten.",
+   "en": "oblivion",
+   "lemma": "die Vergessenheit"
+  },
+  {
+   "form": "geraten",
+   "context": "in Vergessenheit geraten — EN: to fall into oblivion · FR: tomber dans l'oubliIhr Name war fast in Vergessenheit geraten.",
+   "en": "got (into); advised",
+   "lemma": ""
+  },
+  {
+   "form": "oblivion",
+   "context": "in Vergessenheit geraten — EN: to fall into oblivion · FR: tomber dans l'oubliIhr Name war fast in Vergessenheit geraten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tomber",
+   "context": "in Vergessenheit geraten — EN: to fall into oblivion · FR: tomber dans l'oubliIhr Name war fast in Vergessenheit geraten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'oubliIhr",
+   "context": "in Vergessenheit geraten — EN: to fall into oblivion · FR: tomber dans l'oubliIhr Name war fast in Vergessenheit geraten.",
+   "en": "her",
+   "lemma": ""
+  },
+  {
+   "form": "contested",
+   "context": "umstritten — EN: contested · FR: contestéSeine Rolle ist bis heute umstritten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "contestéSeine",
+   "context": "umstritten — EN: contested · FR: contestéSeine Rolle ist bis heute umstritten.",
+   "en": "his",
+   "lemma": ""
+  },
+  {
+   "form": "Gedenkstätte",
+   "context": "die Gedenkstätte, -n — EN: memorial site · FR: le mémorialDie Gedenkstätte wurde 1995 eröffnet.",
+   "en": "memorial site",
+   "lemma": "die Gedenkstätte"
+  },
+  {
+   "form": "memorial",
+   "context": "die Gedenkstätte, -n — EN: memorial site · FR: le mémorialDie Gedenkstätte wurde 1995 eröffnet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mémorialDie",
+   "context": "die Gedenkstätte, -n — EN: memorial site · FR: le mémorialDie Gedenkstätte wurde 1995 eröffnet.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "eröffnet",
+   "context": "die Gedenkstätte, -n — EN: memorial site · FR: le mémorialDie Gedenkstätte wurde 1995 eröffnet.",
+   "en": "opened",
+   "lemma": "eröffnen"
+  },
+  {
+   "form": "erstens",
+   "context": "Dazu gehe ich auf drei Punkte ein: erstens …, zweitens …, drittens …",
+   "en": "firstly",
+   "lemma": ""
+  },
+  {
+   "form": "zweitens",
+   "context": "Dazu gehe ich auf drei Punkte ein: erstens …, zweitens …, drittens …",
+   "en": "secondly",
+   "lemma": ""
+  },
+  {
+   "form": "drittens",
+   "context": "Dazu gehe ich auf drei Punkte ein: erstens …, zweitens …, drittens …",
+   "en": "thirdly",
+   "lemma": ""
+  },
+  {
+   "form": "Werk",
+   "context": "Ihr Werk wurde erst nach ihrem Tod anerkannt.",
+   "en": "work",
+   "lemma": "das Werk"
+  },
+  {
+   "form": "Tod",
+   "context": "Ihr Werk wurde erst nach ihrem Tod anerkannt.",
+   "en": "death",
+   "lemma": "der Tod"
+  },
+  {
+   "form": "anerkannt",
+   "context": "Ihr Werk wurde erst nach ihrem Tod anerkannt.",
+   "en": "recognised",
+   "lemma": "anerkennen"
+  },
+  {
+   "form": "historisch",
+   "context": "historisch bewerten",
+   "en": "historically",
+   "lemma": ""
+  },
+  {
+   "form": "nachvollziehbar",
+   "context": "Aus heutiger Sicht erscheint das schwer nachvollziehbar.",
+   "en": "understandable",
+   "lemma": ""
+  },
+  {
+   "form": "kontrovers",
+   "context": "Darüber wird bis heute kontrovers diskutiert.",
+   "en": "controversially",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitzeugen",
+   "context": "Zeitzeugen berichten im Museum.",
+   "en": "contemporary witnesses",
+   "lemma": "der Zeitzeuge"
+  },
+  {
+   "form": "Manuskript",
+   "context": "Schreiben Sie das Manuskript für einen Kurzvortrag (drei Minuten) über eine historische Person oder ein Ereignis aus Ihrem Land. Umfang: 200–250 Wörter Checkliste: • Einstieg mit einer Frage, einem Zitat oder einer Zahl. • Drei klar angekündigte Gliederungspunkte. • Mindestens ein Satz im Passiv mit Konjunktiv II der Vergangenheit. • Ein Schluss, der den Bezug zur Gegenwart herstellt.",
+   "en": "script, manuscript",
+   "lemma": "das Manuskript"
+  },
+  {
+   "form": "Zitat",
+   "context": "Schreiben Sie das Manuskript für einen Kurzvortrag (drei Minuten) über eine historische Person oder ein Ereignis aus Ihrem Land. Umfang: 200–250 Wörter Checkliste: • Einstieg mit einer Frage, einem Zitat oder einer Zahl. • Drei klar angekündigte Gliederungspunkte. • Mindestens ein Satz im Passiv mit Konjunktiv II der Vergangenheit. • Ein Schluss, der den Bezug zur Gegenwart herstellt.",
+   "en": "quotation",
+   "lemma": "das Zitat"
+  },
+  {
+   "form": "angekündigte",
+   "context": "Schreiben Sie das Manuskript für einen Kurzvortrag (drei Minuten) über eine historische Person oder ein Ereignis aus Ihrem Land. Umfang: 200–250 Wörter Checkliste: • Einstieg mit einer Frage, einem Zitat oder einer Zahl. • Drei klar angekündigte Gliederungspunkte. • Mindestens ein Satz im Passiv mit Konjunktiv II der Vergangenheit. • Ein Schluss, der den Bezug zur Gegenwart herstellt.",
+   "en": "announced",
+   "lemma": "angekündigt"
+  },
+  {
+   "form": "herstellt",
+   "context": "Schreiben Sie das Manuskript für einen Kurzvortrag (drei Minuten) über eine historische Person oder ein Ereignis aus Ihrem Land. Umfang: 200–250 Wörter Checkliste: • Einstieg mit einer Frage, einem Zitat oder einer Zahl. • Drei klar angekündigte Gliederungspunkte. • Mindestens ein Satz im Passiv mit Konjunktiv II der Vergangenheit. • Ein Schluss, der den Bezug zur Gegenwart herstellt.",
+   "en": "makes, establishes",
+   "lemma": "herstellen"
+  }
+ ]
+}
