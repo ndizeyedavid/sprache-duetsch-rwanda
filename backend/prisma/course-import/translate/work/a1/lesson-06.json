@@ -1,0 +1,913 @@
+{
+ "level": "A1",
+ "lesson": 6,
+ "title": "Im Büro — Ich brauche keinen Drucker",
+ "lines": [
+  {
+   "de": "Sagen, was man hat und was man braucht — im Singular und im Plural.",
+   "en": "Say what you have and what you need — in the singular and in the plural."
+  },
+  {
+   "de": "Textsorte: Gespräch · Liste",
+   "en": "Text type: Conversation · List"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Schreiben Teil 1 (Formular); telc A1",
+   "en": "Exam link: Start Deutsch 1 Writing part 1 (form); telc A1"
+  },
+  {
+   "de": "Dinge im Büro benennen",
+   "en": "name things in the office"
+  },
+  {
+   "de": "den Plural der Nomen bilden",
+   "en": "form the plural of nouns"
+  },
+  {
+   "de": "den Akkusativ nach haben, brauchen und suchen verwenden",
+   "en": "use the accusative (Akkusativ) after haben, brauchen and suchen"
+  },
+  {
+   "de": "Grammatik: Der Plural",
+   "en": "Grammar: The plural"
+  },
+  {
+   "de": "Im Deutschen gibt es fünf Pluralendungen. Im Plural ist der Artikel immer die. Lernen Sie den Plural zusammen mit dem Nomen.",
+   "en": "German has five plural endings. In the plural the article is always die. Learn the plural together with the noun."
+  },
+  {
+   "de": "Endung",
+   "en": "Ending"
+  },
+  {
+   "de": "Singular",
+   "en": "="
+  },
+  {
+   "de": "der Stift / der Schrank",
+   "en": "the pen / the wardrobe"
+  },
+  {
+   "de": "die Stifte / die Schränke",
+   "en": "the pens / the wardrobes"
+  },
+  {
+   "de": "die Briefmarke / die Rechnung",
+   "en": "the stamp / the bill"
+  },
+  {
+   "de": "die Briefmarken / die Rechnungen",
+   "en": "the stamps / the bills"
+  },
+  {
+   "de": "das Sofa / das Handy",
+   "en": "the sofa / the mobile phone"
+  },
+  {
+   "de": "die Sofas / die Handys",
+   "en": "the sofas / the mobile phones"
+  },
+  {
+   "de": "-er / ¨-er",
+   "en": "="
+  },
+  {
+   "de": "das Bild / das Buch",
+   "en": "the picture / the book"
+  },
+  {
+   "de": "die Bilder / die Bücher",
+   "en": "the pictures / the books"
+  },
+  {
+   "de": "der Kalender / der Drucker",
+   "en": "the calendar / the printer"
+  },
+  {
+   "de": "die Kalender / die Drucker",
+   "en": "the calendars / the printers"
+  },
+  {
+   "de": "Wir haben zwei Drucker und drei Computer.Plural ohne Endung",
+   "en": "We have two printers and three computers. plural without an ending"
+  },
+  {
+   "de": "Die Rechnungen liegen auf dem Tisch.Plural auf -en",
+   "en": "The bills are on the table. plural in -en"
+  },
+  {
+   "de": "Tipp: Nomen auf -e machen meistens -n: die Lampe → die Lampen. Nomen auf -ung immer -en: die Rechnung → die Rechnungen.",
+   "en": "Tip: Nouns ending in -e usually add -n: die Lampe → die Lampen. Nouns ending in -ung always add -en: die Rechnung → die Rechnungen."
+  },
+  {
+   "de": "Grammatik: Der Akkusativ nach haben, brauchen, suchen",
+   "en": "Grammar: The accusative (Akkusativ) after haben, brauchen, suchen"
+  },
+  {
+   "de": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "After these verbs the noun is in the accusative. Only with masculine nouns does the article change — with neuter, feminine and plural everything stays the same."
+  },
+  {
+   "de": "Ich habe den Schlüssel.",
+   "en": "I have the key."
+  },
+  {
+   "de": "einen Schlüssel",
+   "en": "a key"
+  },
+  {
+   "de": "keinen Schlüssel",
+   "en": "no key"
+  },
+  {
+   "de": "Ich habe das Formular.",
+   "en": "I have the form."
+  },
+  {
+   "de": "ein Formular",
+   "en": "a form"
+  },
+  {
+   "de": "kein Formular",
+   "en": "no form"
+  },
+  {
+   "de": "Ich habe die Briefmarke.",
+   "en": "I have the stamp."
+  },
+  {
+   "de": "eine Briefmarke",
+   "en": "a stamp"
+  },
+  {
+   "de": "keine Briefmarke",
+   "en": "no stamp"
+  },
+  {
+   "de": "Ich habe die Stifte.",
+   "en": "I have the pens."
+  },
+  {
+   "de": "— Stifte",
+   "en": "— pens"
+  },
+  {
+   "de": "keine Stifte",
+   "en": "no pens"
+  },
+  {
+   "de": "Ich brauche einen Drucker. — Ich brauche keinen Drucker.maskulin: einen / keinen",
+   "en": "I need a printer. — I don't need a printer. masculine: einen / keinen"
+  },
+  {
+   "de": "Suchst du eine Lampe?feminin bleibt eine",
+   "en": "Are you looking for a lamp? feminine stays eine"
+  },
+  {
+   "de": "Tipp: Nur maskulin ändert sich: der → den, ein → einen, kein → keinen. Alles andere bleibt!",
+   "en": "Tip: Only the masculine changes: der → den, ein → einen, kein → keinen. Everything else stays the same!"
+  },
+  {
+   "de": "der Computer, - — EN: computer · FR: l'ordinateurDer Computer ist langsam.",
+   "en": "Example: The computer is slow."
+  },
+  {
+   "de": "der Drucker, - — EN: printer · FR: l'imprimanteIch brauche keinen Drucker.",
+   "en": "Example: I don't need a printer."
+  },
+  {
+   "de": "das Formular, -e — EN: form · FR: le formulaireFüllen Sie das Formular aus.",
+   "en": "Example: Fill in the form."
+  },
+  {
+   "de": "die Rechnung, -en — EN: invoice, bill · FR: la factureDie Rechnung kommt morgen.",
+   "en": "Example: The bill is coming tomorrow."
+  },
+  {
+   "de": "die Briefmarke, -n — EN: stamp · FR: le timbreIch brauche zwei Briefmarken.",
+   "en": "Example: I need two stamps."
+  },
+  {
+   "de": "der Stift, -e — EN: pen, pencil · FR: le styloHast du einen Stift?",
+   "en": "Example: Do you have a pen?"
+  },
+  {
+   "de": "der Kalender, - — EN: calendar · FR: le calendrierDer Kalender hängt an der Wand.",
+   "en": "Example: The calendar is hanging on the wall."
+  },
+  {
+   "de": "brauchen — EN: to need · FR: avoir besoin deWir brauchen mehr Papier.",
+   "en": "Example: We need more paper."
+  },
+  {
+   "de": "suchen — EN: to look for · FR: chercherIch suche meinen Schlüssel.",
+   "en": "Example: I am looking for my key."
+  },
+  {
+   "de": "haben — EN: to have · FR: avoirHast du ein Handy?",
+   "en": "Example: Do you have a mobile phone?"
+  },
+  {
+   "de": "der Termin, -e — EN: appointment · FR: le rendez-vousIch habe einen Termin um drei.",
+   "en": "Example: I have an appointment at three."
+  },
+  {
+   "de": "die Unterschrift, -en — EN: signature · FR: la signatureHier fehlt noch die Unterschrift.",
+   "en": "Example: The signature is still missing here."
+  },
+  {
+   "de": "sagen, was man braucht",
+   "en": "saying what you need"
+  },
+  {
+   "de": "Ich brauche einen …",
+   "en": "I need a …"
+  },
+  {
+   "de": "Haben wir noch …?",
+   "en": "Do we still have …?"
+  },
+  {
+   "de": "Wir brauchen keine … mehr.",
+   "en": "We don't need any … any more."
+  },
+  {
+   "de": "etwas suchen",
+   "en": "looking for something"
+  },
+  {
+   "de": "Ich suche meinen Schlüssel.",
+   "en": "I am looking for my key."
+  },
+  {
+   "de": "Wo ist denn der Drucker?",
+   "en": "So where is the printer?"
+  },
+  {
+   "de": "Hast du das Formular gesehen?",
+   "en": "Have you seen the form?"
+  },
+  {
+   "de": "helfen",
+   "en": "helping"
+  },
+  {
+   "de": "Hier, bitte schön.",
+   "en": "Here you are."
+  },
+  {
+   "de": "Moment, ich schaue nach.",
+   "en": "Just a moment, I'll check."
+  },
+  {
+   "de": "Tut mir leid, ich habe keinen.",
+   "en": "Sorry, I don't have one."
+  },
+  {
+   "de": "Dialog: Neu im Büro",
+   "en": "Dialogue: New at the office"
+  },
+  {
+   "de": "Chefin: Brauchen Sie einen Computer?",
+   "en": "Boss: Do you need a computer?"
+  },
+  {
+   "de": "Omar: Nein, danke. Ich habe schon einen Laptop.",
+   "en": "Omar: No, thank you. I already have a laptop."
+  },
+  {
+   "de": "Chefin: Und einen Drucker?",
+   "en": "Boss: And a printer?"
+  },
+  {
+   "de": "Omar: Ich brauche keinen Drucker. Aber ich suche Stifte.",
+   "en": "Omar: I don't need a printer. But I'm looking for pens."
+  },
+  {
+   "de": "Chefin: Stifte sind im Schrank. Da sind auch Formulare.",
+   "en": "Boss: The pens are in the cupboard. There are forms there too."
+  },
+  {
+   "de": "Omar: Super, danke! Dann habe ich alles.",
+   "en": "Omar: Great, thanks! Then I have everything."
+  },
+  {
+   "de": "Der Computer ist langsam.",
+   "en": "The computer is slow."
+  },
+  {
+   "de": "Ich brauche keinen Drucker.",
+   "en": "I don't need a printer."
+  },
+  {
+   "de": "Füllen Sie das Formular aus.",
+   "en": "Fill in the form."
+  },
+  {
+   "de": "Die Rechnung kommt morgen.",
+   "en": "The bill is coming tomorrow."
+  },
+  {
+   "de": "Ich brauche zwei Briefmarken.",
+   "en": "I need two stamps."
+  },
+  {
+   "de": "Hast du einen Stift?",
+   "en": "Do you have a pen?"
+  },
+  {
+   "de": "Der Kalender hängt an der Wand.",
+   "en": "The calendar is hanging on the wall."
+  },
+  {
+   "de": "Wir brauchen mehr Papier.",
+   "en": "We need more paper."
+  },
+  {
+   "de": "Hast du ein Handy?",
+   "en": "Do you have a mobile phone?"
+  },
+  {
+   "de": "Ich habe einen Termin um drei.",
+   "en": "I have an appointment at three."
+  },
+  {
+   "de": "Hier fehlt noch die Unterschrift.",
+   "en": "The signature is still missing here."
+  },
+  {
+   "de": "Ich brauche ___ Drucker. (Verneinung, maskulin Akkusativ)",
+   "en": "I need ___ printer. (negation, masculine accusative)"
+  },
+  {
+   "de": "Hast du ___ Kugelschreiber?",
+   "en": "Do you have ___ ballpoint pen?"
+  },
+  {
+   "de": "die Rechnung → die ___ (Plural)",
+   "en": "the bill → the ___ (plural)"
+  },
+  {
+   "de": "Welcher Plural ist richtig?",
+   "en": "Which plural is correct?"
+  },
+  {
+   "de": "Ich suche ___ Lampe. (unbestimmt, feminin Akkusativ)",
+   "en": "I'm looking for ___ lamp. (indefinite, feminine accusative)"
+  },
+  {
+   "de": "Schreiben Sie eine Liste: Was brauchen Sie für Ihre Arbeit oder Ihren Kurs? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens fünf Dinge. • Benutzen Sie dreimal einen, eine oder keinen im Akkusativ. • Schreiben Sie zwei Nomen im Plural.",
+   "en": "Write a list: What do you need for your work or your course? Length: 25–35 words Checklist: • Name at least five things. • Use einen, eine or keinen in the accusative three times. • Write two nouns in the plural."
+  },
+  {
+   "de": "Maskulin im Akkusativ: kein → keinen.",
+   "en": "Masculine in the accusative: kein → keinen."
+  },
+  {
+   "de": "der Kugelschreiber ist maskulin → im Akkusativ einen.",
+   "en": "der Kugelschreiber is masculine → in the accusative einen."
+  },
+  {
+   "de": "Nomen auf -ung bilden den Plural mit -en.",
+   "en": "Nouns ending in -ung form the plural with -en."
+  },
+  {
+   "de": "das Buch → die Bücher (-er mit Umlaut).",
+   "en": "das Buch → die Bücher (-er with umlaut)."
+  },
+  {
+   "de": "Feminin bleibt im Akkusativ eine.",
+   "en": "The feminine stays eine in the accusative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "braucht",
+   "context": "Sagen, was man hat und was man braucht — im Singular und im Plural.",
+   "en": "needs",
+   "lemma": "brauchen"
+  },
+  {
+   "form": "Singular",
+   "context": "Sagen, was man hat und was man braucht — im Singular und im Plural.",
+   "en": "singular",
+   "lemma": "der Singular"
+  },
+  {
+   "form": "Liste",
+   "context": "Textsorte: Gespräch · Liste",
+   "en": "list",
+   "lemma": "die Liste"
+  },
+  {
+   "form": "Formular",
+   "context": "Prüfungsbezug: Start Deutsch 1 Schreiben Teil 1 (Formular); telc A1",
+   "en": "form",
+   "lemma": "das Formular"
+  },
+  {
+   "form": "bilden",
+   "context": "den Plural der Nomen bilden",
+   "en": "to form",
+   "lemma": ""
+  },
+  {
+   "form": "Akkusativ",
+   "context": "den Akkusativ nach haben, brauchen und suchen verwenden",
+   "en": "accusative",
+   "lemma": "der Akkusativ"
+  },
+  {
+   "form": "suchen",
+   "context": "den Akkusativ nach haben, brauchen und suchen verwenden",
+   "en": "to look for",
+   "lemma": ""
+  },
+  {
+   "form": "Deutschen",
+   "context": "Im Deutschen gibt es fünf Pluralendungen. Im Plural ist der Artikel immer die. Lernen Sie den Plural zusammen mit dem Nomen.",
+   "en": "German (the language)",
+   "lemma": "das Deutsche"
+  },
+  {
+   "form": "Pluralendungen",
+   "context": "Im Deutschen gibt es fünf Pluralendungen. Im Plural ist der Artikel immer die. Lernen Sie den Plural zusammen mit dem Nomen.",
+   "en": "plural endings",
+   "lemma": "die Pluralendung"
+  },
+  {
+   "form": "Endung",
+   "context": "Endung",
+   "en": "ending",
+   "lemma": "die Endung"
+  },
+  {
+   "form": "Stift",
+   "context": "der Stift / der Schrank",
+   "en": "pen, pencil",
+   "lemma": "der Stift"
+  },
+  {
+   "form": "Stifte",
+   "context": "die Stifte / die Schränke",
+   "en": "pens, pencils",
+   "lemma": "der Stift"
+  },
+  {
+   "form": "Schränke",
+   "context": "die Stifte / die Schränke",
+   "en": "cupboards, wardrobes",
+   "lemma": "der Schrank"
+  },
+  {
+   "form": "Briefmarke",
+   "context": "die Briefmarke / die Rechnung",
+   "en": "stamp",
+   "lemma": "die Briefmarke"
+  },
+  {
+   "form": "Rechnung",
+   "context": "die Briefmarke / die Rechnung",
+   "en": "bill, invoice",
+   "lemma": "die Rechnung"
+  },
+  {
+   "form": "Briefmarken",
+   "context": "die Briefmarken / die Rechnungen",
+   "en": "stamps",
+   "lemma": "die Briefmarke"
+  },
+  {
+   "form": "Rechnungen",
+   "context": "die Briefmarken / die Rechnungen",
+   "en": "bills, invoices",
+   "lemma": "die Rechnung"
+  },
+  {
+   "form": "Sofas",
+   "context": "die Sofas / die Handys",
+   "en": "sofas",
+   "lemma": "das Sofa"
+  },
+  {
+   "form": "Handys",
+   "context": "die Sofas / die Handys",
+   "en": "mobile phones",
+   "lemma": "das Handy"
+  },
+  {
+   "form": "Bild",
+   "context": "das Bild / das Buch",
+   "en": "picture",
+   "lemma": "das Bild"
+  },
+  {
+   "form": "Bilder",
+   "context": "die Bilder / die Bücher",
+   "en": "pictures",
+   "lemma": "das Bild"
+  },
+  {
+   "form": "Kalender",
+   "context": "der Kalender / der Drucker",
+   "en": "calendar",
+   "lemma": "der Kalender"
+  },
+  {
+   "form": "Drucker",
+   "context": "der Kalender / der Drucker",
+   "en": "printer; printers",
+   "lemma": "der Drucker"
+  },
+  {
+   "form": "Computer",
+   "context": "Wir haben zwei Drucker und drei Computer.Plural ohne Endung",
+   "en": "computer; computers",
+   "lemma": "der Computer"
+  },
+  {
+   "form": "liegen",
+   "context": "Die Rechnungen liegen auf dem Tisch.Plural auf -en",
+   "en": "lie, are (lying)",
+   "lemma": ""
+  },
+  {
+   "form": "ung",
+   "context": "Tipp: Nomen auf -e machen meistens -n: die Lampe → die Lampen. Nomen auf -ung immer -en: die Rechnung → die Rechnungen.",
+   "en": "noun ending (-ung)",
+   "lemma": ""
+  },
+  {
+   "form": "diesen",
+   "context": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "these; this",
+   "lemma": ""
+  },
+  {
+   "form": "steht",
+   "context": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "stands; is",
+   "lemma": "stehen"
+  },
+  {
+   "form": "beim",
+   "context": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "with the, at the (bei + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "maskulinen",
+   "context": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "masculine",
+   "lemma": "maskulin"
+  },
+  {
+   "form": "ändert",
+   "context": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "changes",
+   "lemma": "ändern"
+  },
+  {
+   "form": "bleibt",
+   "context": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "stays, remains",
+   "lemma": "bleiben"
+  },
+  {
+   "form": "alles",
+   "context": "Nach diesen Verben steht das Nomen im Akkusativ. Nur beim maskulinen Nomen ändert sich der Artikel — bei neutrum, feminin und Plural bleibt alles gleich.",
+   "en": "everything",
+   "lemma": ""
+  },
+  {
+   "form": "Suchst",
+   "context": "Suchst du eine Lampe?feminin bleibt eine",
+   "en": "look for (with du)",
+   "lemma": "suchen"
+  },
+  {
+   "form": "Alles",
+   "context": "Tipp: Nur maskulin ändert sich: der → den, ein → einen, kein → keinen. Alles andere bleibt!",
+   "en": "everything",
+   "lemma": ""
+  },
+  {
+   "form": "andere",
+   "context": "Tipp: Nur maskulin ändert sich: der → den, ein → einen, kein → keinen. Alles andere bleibt!",
+   "en": "other",
+   "lemma": ""
+  },
+  {
+   "form": "computer",
+   "context": "der Computer, - — EN: computer · FR: l'ordinateurDer Computer ist langsam.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'ordinateurDer",
+   "context": "der Computer, - — EN: computer · FR: l'ordinateurDer Computer ist langsam.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "langsam",
+   "context": "der Computer, - — EN: computer · FR: l'ordinateurDer Computer ist langsam.",
+   "en": "slow",
+   "lemma": ""
+  },
+  {
+   "form": "printer",
+   "context": "der Drucker, - — EN: printer · FR: l'imprimanteIch brauche keinen Drucker.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'imprimanteIch",
+   "context": "der Drucker, - — EN: printer · FR: l'imprimanteIch brauche keinen Drucker.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "form",
+   "context": "das Formular, -e — EN: form · FR: le formulaireFüllen Sie das Formular aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "formulaireFüllen",
+   "context": "das Formular, -e — EN: form · FR: le formulaireFüllen Sie das Formular aus.",
+   "en": "fill (… aus = fill in)",
+   "lemma": ""
+  },
+  {
+   "form": "invoice",
+   "context": "die Rechnung, -en — EN: invoice, bill · FR: la factureDie Rechnung kommt morgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bill",
+   "context": "die Rechnung, -en — EN: invoice, bill · FR: la factureDie Rechnung kommt morgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "factureDie",
+   "context": "die Rechnung, -en — EN: invoice, bill · FR: la factureDie Rechnung kommt morgen.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "stamp",
+   "context": "die Briefmarke, -n — EN: stamp · FR: le timbreIch brauche zwei Briefmarken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "timbreIch",
+   "context": "die Briefmarke, -n — EN: stamp · FR: le timbreIch brauche zwei Briefmarken.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "calendar",
+   "context": "der Kalender, - — EN: calendar · FR: le calendrierDer Kalender hängt an der Wand.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "calendrierDer",
+   "context": "der Kalender, - — EN: calendar · FR: le calendrierDer Kalender hängt an der Wand.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "hängt",
+   "context": "der Kalender, - — EN: calendar · FR: le calendrierDer Kalender hängt an der Wand.",
+   "en": "hangs, is hanging",
+   "lemma": "hängen"
+  },
+  {
+   "form": "an",
+   "context": "der Kalender, - — EN: calendar · FR: le calendrierDer Kalender hängt an der Wand.",
+   "en": "on; at",
+   "lemma": ""
+  },
+  {
+   "form": "Wand",
+   "context": "der Kalender, - — EN: calendar · FR: le calendrierDer Kalender hängt an der Wand.",
+   "en": "wall",
+   "lemma": "die Wand"
+  },
+  {
+   "form": "need",
+   "context": "brauchen — EN: to need · FR: avoir besoin deWir brauchen mehr Papier.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "avoir",
+   "context": "brauchen — EN: to need · FR: avoir besoin deWir brauchen mehr Papier.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "besoin",
+   "context": "brauchen — EN: to need · FR: avoir besoin deWir brauchen mehr Papier.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deWir",
+   "context": "brauchen — EN: to need · FR: avoir besoin deWir brauchen mehr Papier.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "look",
+   "context": "suchen — EN: to look for · FR: chercherIch suche meinen Schlüssel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "for",
+   "context": "suchen — EN: to look for · FR: chercherIch suche meinen Schlüssel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chercherIch",
+   "context": "suchen — EN: to look for · FR: chercherIch suche meinen Schlüssel.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "suche",
+   "context": "suchen — EN: to look for · FR: chercherIch suche meinen Schlüssel.",
+   "en": "look for, am looking for",
+   "lemma": "suchen"
+  },
+  {
+   "form": "meinen",
+   "context": "suchen — EN: to look for · FR: chercherIch suche meinen Schlüssel.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "have",
+   "context": "haben — EN: to have · FR: avoirHast du ein Handy?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "avoirHast",
+   "context": "haben — EN: to have · FR: avoirHast du ein Handy?",
+   "en": "have (with du)",
+   "lemma": ""
+  },
+  {
+   "form": "Termin",
+   "context": "der Termin, -e — EN: appointment · FR: le rendez-vousIch habe einen Termin um drei.",
+   "en": "appointment",
+   "lemma": "der Termin"
+  },
+  {
+   "form": "appointment",
+   "context": "der Termin, -e — EN: appointment · FR: le rendez-vousIch habe einen Termin um drei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rendez-vousIch",
+   "context": "der Termin, -e — EN: appointment · FR: le rendez-vousIch habe einen Termin um drei.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "Unterschrift",
+   "context": "die Unterschrift, -en — EN: signature · FR: la signatureHier fehlt noch die Unterschrift.",
+   "en": "signature",
+   "lemma": "die Unterschrift"
+  },
+  {
+   "form": "signature",
+   "context": "die Unterschrift, -en — EN: signature · FR: la signatureHier fehlt noch die Unterschrift.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "signatureHier",
+   "context": "die Unterschrift, -en — EN: signature · FR: la signatureHier fehlt noch die Unterschrift.",
+   "en": "here",
+   "lemma": ""
+  },
+  {
+   "form": "fehlt",
+   "context": "die Unterschrift, -en — EN: signature · FR: la signatureHier fehlt noch die Unterschrift.",
+   "en": "is missing",
+   "lemma": "fehlen"
+  },
+  {
+   "form": "denn",
+   "context": "Wo ist denn der Drucker?",
+   "en": "then (in questions); because",
+   "lemma": ""
+  },
+  {
+   "form": "gesehen",
+   "context": "Hast du das Formular gesehen?",
+   "en": "seen",
+   "lemma": "sehen"
+  },
+  {
+   "form": "helfen",
+   "context": "helfen",
+   "en": "to help",
+   "lemma": ""
+  },
+  {
+   "form": "Moment",
+   "context": "Moment, ich schaue nach.",
+   "en": "moment",
+   "lemma": "der Moment"
+  },
+  {
+   "form": "schaue",
+   "context": "Moment, ich schaue nach.",
+   "en": "look (… nach = check)",
+   "lemma": "schauen"
+  },
+  {
+   "form": "Tut",
+   "context": "Tut mir leid, ich habe keinen.",
+   "en": "does (Tut mir leid = I'm sorry)",
+   "lemma": "tun"
+  },
+  {
+   "form": "leid",
+   "context": "Tut mir leid, ich habe keinen.",
+   "en": "sorry (Tut mir leid = I'm sorry)",
+   "lemma": ""
+  },
+  {
+   "form": "Chefin",
+   "context": "Chefin: Brauchen Sie einen Computer?",
+   "en": "boss (a woman)",
+   "lemma": "die Chefin"
+  },
+  {
+   "form": "Omar",
+   "context": "Omar: Nein, danke. Ich habe schon einen Laptop.",
+   "en": "Omar (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Laptop",
+   "context": "Omar: Nein, danke. Ich habe schon einen Laptop.",
+   "en": "laptop",
+   "lemma": "der Laptop"
+  },
+  {
+   "form": "Formulare",
+   "context": "Chefin: Stifte sind im Schrank. Da sind auch Formulare.",
+   "en": "forms",
+   "lemma": "das Formular"
+  },
+  {
+   "form": "Füllen",
+   "context": "Füllen Sie das Formular aus.",
+   "en": "fill (… aus = fill in)",
+   "lemma": "füllen"
+  },
+  {
+   "form": "Ihre",
+   "context": "Schreiben Sie eine Liste: Was brauchen Sie für Ihre Arbeit oder Ihren Kurs? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens fünf Dinge. • Benutzen Sie dreimal einen, eine oder keinen im Akkusativ. • Schreiben Sie zwei Nomen im Plural.",
+   "en": "your (polite)",
+   "lemma": ""
+  },
+  {
+   "form": "Ihren",
+   "context": "Schreiben Sie eine Liste: Was brauchen Sie für Ihre Arbeit oder Ihren Kurs? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens fünf Dinge. • Benutzen Sie dreimal einen, eine oder keinen im Akkusativ. • Schreiben Sie zwei Nomen im Plural.",
+   "en": "your (polite)",
+   "lemma": ""
+  },
+  {
+   "form": "Kurs",
+   "context": "Schreiben Sie eine Liste: Was brauchen Sie für Ihre Arbeit oder Ihren Kurs? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens fünf Dinge. • Benutzen Sie dreimal einen, eine oder keinen im Akkusativ. • Schreiben Sie zwei Nomen im Plural.",
+   "en": "course",
+   "lemma": "der Kurs"
+  },
+  {
+   "form": "mindestens",
+   "context": "Schreiben Sie eine Liste: Was brauchen Sie für Ihre Arbeit oder Ihren Kurs? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens fünf Dinge. • Benutzen Sie dreimal einen, eine oder keinen im Akkusativ. • Schreiben Sie zwei Nomen im Plural.",
+   "en": "at least",
+   "lemma": ""
+  },
+  {
+   "form": "dreimal",
+   "context": "Schreiben Sie eine Liste: Was brauchen Sie für Ihre Arbeit oder Ihren Kurs? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens fünf Dinge. • Benutzen Sie dreimal einen, eine oder keinen im Akkusativ. • Schreiben Sie zwei Nomen im Plural.",
+   "en": "three times",
+   "lemma": ""
+  }
+ ]
+}
