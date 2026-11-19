@@ -1,0 +1,801 @@
+{
+ "level": "A2",
+ "lesson": 9,
+ "title": "Arbeitsleben — Bei guten Autos sind wir ganz vorn",
+ "lines": [
+  {
+   "de": "Über Arbeit und Firmen sprechen und sagen, was wichtig ist.",
+   "en": "Talk about work and companies and say what is important."
+  },
+  {
+   "de": "Textsorte: Bericht über einen Dokumentarfilm",
+   "en": "Text type: Report on a documentary film"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Lesen Teil 1 (kurzer Sachtext); telc A2 Lesen",
+   "en": "Exam link: Goethe A2 Reading part 1 (short factual text); telc A2 Reading"
+  },
+  {
+   "de": "über Arbeit, Firmen und Produkte sprechen",
+   "en": "talk about work, companies and products"
+  },
+  {
+   "de": "ausdrücken, was wichtig ist",
+   "en": "say what is important"
+  },
+  {
+   "de": "Adjektive ohne Artikel richtig deklinieren",
+   "en": "use the correct adjective endings without an article"
+  },
+  {
+   "de": "Grammatik: Adjektive ohne Artikel (Nullartikel)",
+   "en": "Grammar: adjectives without an article (zero article, Nullartikel)"
+  },
+  {
+   "de": "Wenn kein Artikel vor dem Adjektiv steht, muss das Adjektiv selbst zeigen, welcher Kasus gemeint ist. Es bekommt dann fast überall genau die Endung, die sonst der bestimmte Artikel hätte.",
+   "en": "When there is no article before the adjective, the adjective itself must show which case is meant. It then almost always takes exactly the ending that the definite article would otherwise have."
+  },
+  {
+   "de": "guter Service",
+   "en": "good service"
+  },
+  {
+   "de": "guten Service",
+   "en": "good service"
+  },
+  {
+   "de": "gutem Service",
+   "en": "good service"
+  },
+  {
+   "de": "gutes Design",
+   "en": "good design"
+  },
+  {
+   "de": "gutem Design",
+   "en": "good design"
+  },
+  {
+   "de": "gute Qualität",
+   "en": "good quality"
+  },
+  {
+   "de": "guter Qualität",
+   "en": "good quality"
+  },
+  {
+   "de": "gute Autos",
+   "en": "good cars"
+  },
+  {
+   "de": "guten Autos",
+   "en": "good cars"
+  },
+  {
+   "de": "Bei guten Autos sind wir ganz vorn.Dativ Plural: -en",
+   "en": "When it comes to good cars, we're the leaders. Dative plural: -en"
+  },
+  {
+   "de": "Wir arbeiten mit moderner Technik.Dativ feminin: -er",
+   "en": "We work with modern technology. Dative feminine: -er"
+  },
+  {
+   "de": "Gutes Design ist für uns sehr wichtig.Nominativ neutrum: -es",
+   "en": "Good design is very important to us. Nominative neuter: -es"
+  },
+  {
+   "de": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "Tip: This form is often used after quantities and in advertising texts: viel frisches Obst (lots of fresh fruit), mit großem Erfolg (with great success), aus bestem Material (made of the best material)."
+  },
+  {
+   "de": "die Firma, Firmen — EN: company · FR: l'entrepriseDie Firma hat 300 Mitarbeiter.",
+   "en": "Example: The company has 300 employees."
+  },
+  {
+   "de": "der Mitarbeiter, - / die Mitarbeiterin, -nen — EN: employee · FR: le/la salarié(e)Unsere Mitarbeiter sind sehr gut ausgebildet.",
+   "en": "Example: Our employees are very well trained."
+  },
+  {
+   "de": "die Qualität (Sg.) — EN: quality · FR: la qualitéQualität ist uns wichtiger als Schnelligkeit.",
+   "en": "Example: Quality is more important to us than speed."
+  },
+  {
+   "de": "herstellen — EN: to produce, manufacture · FR: fabriquerDie Firma stellt Maschinen her.",
+   "en": "Example: The company produces machines."
+  },
+  {
+   "de": "das Produkt, -e — EN: product · FR: le produitUnsere Produkte verkaufen wir weltweit.",
+   "en": "Example: We sell our products worldwide."
+  },
+  {
+   "de": "der Kunde, -n / die Kundin, -nen — EN: customer · FR: le client / la clienteUnsere Kunden kommen aus ganz Europa.",
+   "en": "Example: Our customers come from all over Europe."
+  },
+  {
+   "de": "das Fließband, ¨-er — EN: assembly line · FR: la chaîne de montageAm Fließband ist die Arbeit eintönig.",
+   "en": "Example: Work on the assembly line is monotonous."
+  },
+  {
+   "de": "erfolgreich — EN: successful · FR: performant, réussiDie Firma ist sehr erfolgreich.",
+   "en": "Example: The company is very successful."
+  },
+  {
+   "de": "exportieren — EN: to export · FR: exporterWir exportieren in über 40 Länder.",
+   "en": "Example: We export to over 40 countries."
+  },
+  {
+   "de": "wichtig sein — EN: to be important · FR: être importantWichtig ist vor allem gute Beratung.",
+   "en": "Example: Above all, good advice is important."
+  },
+  {
+   "de": "der Arbeitsplatz, ¨-e — EN: job; workplace · FR: l'emploi; le poste de travailHier entstehen 50 neue Arbeitsplätze.",
+   "en": "Example: 50 new jobs are being created here."
+  },
+  {
+   "de": "die Zukunft (Sg.) — EN: future · FR: l'avenirIn Zukunft bauen wir nur noch E-Autos.",
+   "en": "Example: In future, we will only build electric cars."
+  },
+  {
+   "de": "Wichtigkeit ausdrücken",
+   "en": "expressing importance"
+  },
+  {
+   "de": "Wichtig ist für uns vor allem …",
+   "en": "What matters most to us is …"
+  },
+  {
+   "de": "Besonders wichtig finde ich …",
+   "en": "I find … particularly important."
+  },
+  {
+   "de": "Darauf legen wir großen Wert.",
+   "en": "We attach great importance to that."
+  },
+  {
+   "de": "eine Firma beschreiben",
+   "en": "describing a company"
+  },
+  {
+   "de": "Die Firma stellt … her.",
+   "en": "The company produces …"
+  },
+  {
+   "de": "Sie hat etwa … Mitarbeiter.",
+   "en": "It has about … employees."
+  },
+  {
+   "de": "Bei … sind wir ganz vorn.",
+   "en": "When it comes to …, we're the leaders."
+  },
+  {
+   "de": "über die eigene Arbeit sprechen",
+   "en": "talking about your own work"
+  },
+  {
+   "de": "Ich arbeite seit … bei …",
+   "en": "I have been working at … for …"
+  },
+  {
+   "de": "Zu meinen Aufgaben gehört …",
+   "en": "My tasks include …"
+  },
+  {
+   "de": "Am besten gefällt mir …",
+   "en": "What I like best is …"
+  },
+  {
+   "de": "Dialog: Eine Firma vorstellen",
+   "en": "Dialogue: Presenting a company"
+  },
+  {
+   "de": "Reporterin: Was macht Ihre Firma genau?",
+   "en": "Reporter: What exactly does your company do?"
+  },
+  {
+   "de": "Herr Weiß: Wir stellen Teile für Autos her — seit über sechzig Jahren.",
+   "en": "Mr Weiß: We make parts for cars — and have done for over sixty years."
+  },
+  {
+   "de": "Reporterin: Und was ist Ihnen dabei besonders wichtig?",
+   "en": "Reporter: And what is especially important to you in this?"
+  },
+  {
+   "de": "Herr Weiß: Gute Qualität. Bei guten Autos sind wir ganz vorn.",
+   "en": "Mr Weiß: Good quality. When it comes to good cars, we're the leaders."
+  },
+  {
+   "de": "Reporterin: Wie viele Mitarbeiter haben Sie?",
+   "en": "Reporter: How many employees do you have?"
+  },
+  {
+   "de": "Herr Weiß: Rund 400. Und nächstes Jahr entstehen 50 neue Arbeitsplätze.",
+   "en": "Mr Weiß: Around 400. And next year 50 new jobs will be created."
+  },
+  {
+   "de": "Die Firma hat 300 Mitarbeiter.",
+   "en": "The company has 300 employees."
+  },
+  {
+   "de": "Unsere Mitarbeiter sind sehr gut ausgebildet.",
+   "en": "Our employees are very well trained."
+  },
+  {
+   "de": "Qualität ist uns wichtiger als Schnelligkeit.",
+   "en": "Quality is more important to us than speed."
+  },
+  {
+   "de": "Die Firma stellt Maschinen her.",
+   "en": "The company produces machines."
+  },
+  {
+   "de": "Unsere Produkte verkaufen wir weltweit.",
+   "en": "We sell our products worldwide."
+  },
+  {
+   "de": "Unsere Kunden kommen aus ganz Europa.",
+   "en": "Our customers come from all over Europe."
+  },
+  {
+   "de": "Am Fließband ist die Arbeit eintönig.",
+   "en": "Work on the assembly line is monotonous."
+  },
+  {
+   "de": "Die Firma ist sehr erfolgreich.",
+   "en": "The company is very successful."
+  },
+  {
+   "de": "Wir exportieren in über 40 Länder.",
+   "en": "We export to over 40 countries."
+  },
+  {
+   "de": "Wichtig ist vor allem gute Beratung.",
+   "en": "Above all, good advice is important."
+  },
+  {
+   "de": "Hier entstehen 50 neue Arbeitsplätze.",
+   "en": "50 new jobs are being created here."
+  },
+  {
+   "de": "In Zukunft bauen wir nur noch E-Autos.",
+   "en": "In future, we will only build electric cars."
+  },
+  {
+   "de": "Bei ___ Autos sind wir ganz vorn. (gut, Dativ Plural, ohne Artikel)",
+   "en": "When it comes to ___ cars, we're the leaders. (gut, dative plural, without an article)"
+  },
+  {
+   "de": "___ Qualität ist uns wichtig.",
+   "en": "___ quality is important to us."
+  },
+  {
+   "de": "Wir arbeiten mit ___ Technik. (modern, Dativ feminin)",
+   "en": "We work with ___ technology. (modern, dative feminine)"
+  },
+  {
+   "de": "___ Design ist für uns sehr wichtig.",
+   "en": "___ design is very important to us."
+  },
+  {
+   "de": "Wir verkaufen Möbel aus ___ Holz. (gut, Dativ neutrum)",
+   "en": "We sell furniture made of ___ wood. (gut, dative neuter)"
+  },
+  {
+   "de": "Stellen Sie eine Firma kurz vor: Was macht sie, wie groß ist sie, und was ist ihr wichtig? Umfang: 50–70 Wörter Checkliste: • Nennen Sie Name, Produkt und Größe der Firma. • Benutzen Sie dreimal ein Adjektiv ohne Artikel (gute Qualität …). • Schreiben Sie einen Satz über die Zukunft der Firma.",
+   "en": "Briefly present a company: What does it do, how big is it, and what is important to it? Length: 50–70 words Checklist: • Give the name, product and size of the company. • Use an adjective without an article three times (gute Qualität …). • Write a sentence about the company's future."
+  },
+  {
+   "de": "Dativ Plural ohne Artikel: -en.",
+   "en": "Dative plural without an article: -en."
+  },
+  {
+   "de": "die Qualität ist feminin; Nominativ feminin ohne Artikel: -e.",
+   "en": "die Qualität is feminine; nominative feminine without an article: -e."
+  },
+  {
+   "de": "Dativ feminin ohne Artikel: -er.",
+   "en": "Dative feminine without an article: -er."
+  },
+  {
+   "de": "das Design ist neutrum; Nominativ neutrum ohne Artikel: -es.",
+   "en": "das Design is neuter; nominative neuter without an article: -es."
+  },
+  {
+   "de": "Dativ neutrum ohne Artikel: -em.",
+   "en": "Dative neuter without an article: -em."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Firmen",
+   "context": "Über Arbeit und Firmen sprechen und sagen, was wichtig ist.",
+   "en": "companies",
+   "lemma": "die Firma"
+  },
+  {
+   "form": "Bericht",
+   "context": "Textsorte: Bericht über einen Dokumentarfilm",
+   "en": "report",
+   "lemma": "der Bericht"
+  },
+  {
+   "form": "Dokumentarfilm",
+   "context": "Textsorte: Bericht über einen Dokumentarfilm",
+   "en": "documentary (film)",
+   "lemma": "der Dokumentarfilm"
+  },
+  {
+   "form": "kurzer",
+   "context": "Prüfungsbezug: Goethe A2 Lesen Teil 1 (kurzer Sachtext); telc A2 Lesen",
+   "en": "short",
+   "lemma": "kurz"
+  },
+  {
+   "form": "Sachtext",
+   "context": "Prüfungsbezug: Goethe A2 Lesen Teil 1 (kurzer Sachtext); telc A2 Lesen",
+   "en": "factual text",
+   "lemma": "der Sachtext"
+  },
+  {
+   "form": "Nullartikel",
+   "context": "Grammatik: Adjektive ohne Artikel (Nullartikel)",
+   "en": "zero article (no article)",
+   "lemma": "der Nullartikel"
+  },
+  {
+   "form": "gemeint",
+   "context": "Wenn kein Artikel vor dem Adjektiv steht, muss das Adjektiv selbst zeigen, welcher Kasus gemeint ist. Es bekommt dann fast überall genau die Endung, die sonst der bestimmte Artikel hätte.",
+   "en": "meant",
+   "lemma": "meinen"
+  },
+  {
+   "form": "guter",
+   "context": "guter Service",
+   "en": "good",
+   "lemma": "gut"
+  },
+  {
+   "form": "Service",
+   "context": "guter Service",
+   "en": "service",
+   "lemma": "der Service"
+  },
+  {
+   "form": "gutem",
+   "context": "gutem Service",
+   "en": "good",
+   "lemma": "gut"
+  },
+  {
+   "form": "Design",
+   "context": "gutes Design",
+   "en": "design",
+   "lemma": "das Design"
+  },
+  {
+   "form": "Qualität",
+   "context": "gute Qualität",
+   "en": "quality",
+   "lemma": "die Qualität"
+  },
+  {
+   "form": "Autos",
+   "context": "gute Autos",
+   "en": "cars",
+   "lemma": "das Auto"
+  },
+  {
+   "form": "moderner",
+   "context": "Wir arbeiten mit moderner Technik.Dativ feminin: -er",
+   "en": "modern",
+   "lemma": "modern"
+  },
+  {
+   "form": "Technik",
+   "context": "Wir arbeiten mit moderner Technik.Dativ feminin: -er",
+   "en": "technology",
+   "lemma": "die Technik"
+  },
+  {
+   "form": "Mengenangaben",
+   "context": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "quantities, amounts",
+   "lemma": "die Mengenangabe"
+  },
+  {
+   "form": "Werbetexten",
+   "context": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "advertising texts",
+   "lemma": "der Werbetext"
+  },
+  {
+   "form": "Obst",
+   "context": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "fruit",
+   "lemma": "das Obst"
+  },
+  {
+   "form": "großem",
+   "context": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "great, big",
+   "lemma": "groß"
+  },
+  {
+   "form": "Erfolg",
+   "context": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "success",
+   "lemma": "der Erfolg"
+  },
+  {
+   "form": "bestem",
+   "context": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "best",
+   "lemma": "gut"
+  },
+  {
+   "form": "Material",
+   "context": "Tipp: Diese Form steht oft nach Mengenangaben und in Werbetexten: viel frisches Obst, mit großem Erfolg, aus bestem Material.",
+   "en": "material",
+   "lemma": "das Material"
+  },
+  {
+   "form": "l'entrepriseDie",
+   "context": "die Firma, Firmen — EN: company · FR: l'entrepriseDie Firma hat 300 Mitarbeiter.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "Mitarbeiter",
+   "context": "die Firma, Firmen — EN: company · FR: l'entrepriseDie Firma hat 300 Mitarbeiter.",
+   "en": "employees",
+   "lemma": "der Mitarbeiter"
+  },
+  {
+   "form": "Mitarbeiterin",
+   "context": "der Mitarbeiter, - / die Mitarbeiterin, -nen — EN: employee · FR: le/la salarié(e)Unsere Mitarbeiter sind sehr gut ausgebildet.",
+   "en": "employee (a woman)",
+   "lemma": "die Mitarbeiterin"
+  },
+  {
+   "form": "employee",
+   "context": "der Mitarbeiter, - / die Mitarbeiterin, -nen — EN: employee · FR: le/la salarié(e)Unsere Mitarbeiter sind sehr gut ausgebildet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "salarié",
+   "context": "der Mitarbeiter, - / die Mitarbeiterin, -nen — EN: employee · FR: le/la salarié(e)Unsere Mitarbeiter sind sehr gut ausgebildet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ausgebildet",
+   "context": "der Mitarbeiter, - / die Mitarbeiterin, -nen — EN: employee · FR: le/la salarié(e)Unsere Mitarbeiter sind sehr gut ausgebildet.",
+   "en": "trained",
+   "lemma": "ausbilden"
+  },
+  {
+   "form": "quality",
+   "context": "die Qualität (Sg.) — EN: quality · FR: la qualitéQualität ist uns wichtiger als Schnelligkeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "qualitéQualität",
+   "context": "die Qualität (Sg.) — EN: quality · FR: la qualitéQualität ist uns wichtiger als Schnelligkeit.",
+   "en": "quality",
+   "lemma": "die Qualität"
+  },
+  {
+   "form": "wichtiger",
+   "context": "die Qualität (Sg.) — EN: quality · FR: la qualitéQualität ist uns wichtiger als Schnelligkeit.",
+   "en": "more important",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "Schnelligkeit",
+   "context": "die Qualität (Sg.) — EN: quality · FR: la qualitéQualität ist uns wichtiger als Schnelligkeit.",
+   "en": "speed",
+   "lemma": "die Schnelligkeit"
+  },
+  {
+   "form": "herstellen",
+   "context": "herstellen — EN: to produce, manufacture · FR: fabriquerDie Firma stellt Maschinen her.",
+   "en": "to produce, to manufacture",
+   "lemma": ""
+  },
+  {
+   "form": "produce",
+   "context": "herstellen — EN: to produce, manufacture · FR: fabriquerDie Firma stellt Maschinen her.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "manufacture",
+   "context": "herstellen — EN: to produce, manufacture · FR: fabriquerDie Firma stellt Maschinen her.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fabriquerDie",
+   "context": "herstellen — EN: to produce, manufacture · FR: fabriquerDie Firma stellt Maschinen her.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "Maschinen",
+   "context": "herstellen — EN: to produce, manufacture · FR: fabriquerDie Firma stellt Maschinen her.",
+   "en": "machines",
+   "lemma": "die Maschine"
+  },
+  {
+   "form": "her",
+   "context": "herstellen — EN: to produce, manufacture · FR: fabriquerDie Firma stellt Maschinen her.",
+   "en": "produces (stellt … her); here; ago",
+   "lemma": "herstellen"
+  },
+  {
+   "form": "product",
+   "context": "das Produkt, -e — EN: product · FR: le produitUnsere Produkte verkaufen wir weltweit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "produitUnsere",
+   "context": "das Produkt, -e — EN: product · FR: le produitUnsere Produkte verkaufen wir weltweit.",
+   "en": "our",
+   "lemma": "unser"
+  },
+  {
+   "form": "verkaufen",
+   "context": "das Produkt, -e — EN: product · FR: le produitUnsere Produkte verkaufen wir weltweit.",
+   "en": "sell",
+   "lemma": ""
+  },
+  {
+   "form": "weltweit",
+   "context": "das Produkt, -e — EN: product · FR: le produitUnsere Produkte verkaufen wir weltweit.",
+   "en": "worldwide",
+   "lemma": ""
+  },
+  {
+   "form": "Kunde",
+   "context": "der Kunde, -n / die Kundin, -nen — EN: customer · FR: le client / la clienteUnsere Kunden kommen aus ganz Europa.",
+   "en": "customer",
+   "lemma": "der Kunde"
+  },
+  {
+   "form": "customer",
+   "context": "der Kunde, -n / die Kundin, -nen — EN: customer · FR: le client / la clienteUnsere Kunden kommen aus ganz Europa.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "client",
+   "context": "der Kunde, -n / die Kundin, -nen — EN: customer · FR: le client / la clienteUnsere Kunden kommen aus ganz Europa.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "clienteUnsere",
+   "context": "der Kunde, -n / die Kundin, -nen — EN: customer · FR: le client / la clienteUnsere Kunden kommen aus ganz Europa.",
+   "en": "our",
+   "lemma": "unser"
+  },
+  {
+   "form": "Kunden",
+   "context": "der Kunde, -n / die Kundin, -nen — EN: customer · FR: le client / la clienteUnsere Kunden kommen aus ganz Europa.",
+   "en": "customers",
+   "lemma": "der Kunde"
+  },
+  {
+   "form": "Europa",
+   "context": "der Kunde, -n / die Kundin, -nen — EN: customer · FR: le client / la clienteUnsere Kunden kommen aus ganz Europa.",
+   "en": "Europe",
+   "lemma": ""
+  },
+  {
+   "form": "Fließband",
+   "context": "das Fließband, ¨-er — EN: assembly line · FR: la chaîne de montageAm Fließband ist die Arbeit eintönig.",
+   "en": "assembly line",
+   "lemma": "das Fließband"
+  },
+  {
+   "form": "assembly",
+   "context": "das Fließband, ¨-er — EN: assembly line · FR: la chaîne de montageAm Fließband ist die Arbeit eintönig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "line",
+   "context": "das Fließband, ¨-er — EN: assembly line · FR: la chaîne de montageAm Fließband ist die Arbeit eintönig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chaîne",
+   "context": "das Fließband, ¨-er — EN: assembly line · FR: la chaîne de montageAm Fließband ist die Arbeit eintönig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "montageAm",
+   "context": "das Fließband, ¨-er — EN: assembly line · FR: la chaîne de montageAm Fließband ist die Arbeit eintönig.",
+   "en": "on the, at the",
+   "lemma": "an"
+  },
+  {
+   "form": "eintönig",
+   "context": "das Fließband, ¨-er — EN: assembly line · FR: la chaîne de montageAm Fließband ist die Arbeit eintönig.",
+   "en": "monotonous",
+   "lemma": ""
+  },
+  {
+   "form": "erfolgreich",
+   "context": "erfolgreich — EN: successful · FR: performant, réussiDie Firma ist sehr erfolgreich.",
+   "en": "successful",
+   "lemma": ""
+  },
+  {
+   "form": "successful",
+   "context": "erfolgreich — EN: successful · FR: performant, réussiDie Firma ist sehr erfolgreich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "performant",
+   "context": "erfolgreich — EN: successful · FR: performant, réussiDie Firma ist sehr erfolgreich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réussiDie",
+   "context": "erfolgreich — EN: successful · FR: performant, réussiDie Firma ist sehr erfolgreich.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "exportieren",
+   "context": "exportieren — EN: to export · FR: exporterWir exportieren in über 40 Länder.",
+   "en": "to export",
+   "lemma": ""
+  },
+  {
+   "form": "export",
+   "context": "exportieren — EN: to export · FR: exporterWir exportieren in über 40 Länder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "exporterWir",
+   "context": "exportieren — EN: to export · FR: exporterWir exportieren in über 40 Länder.",
+   "en": "we",
+   "lemma": "wir"
+  },
+  {
+   "form": "Länder",
+   "context": "exportieren — EN: to export · FR: exporterWir exportieren in über 40 Länder.",
+   "en": "countries",
+   "lemma": "das Land"
+  },
+  {
+   "form": "important",
+   "context": "wichtig sein — EN: to be important · FR: être importantWichtig ist vor allem gute Beratung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "importantWichtig",
+   "context": "wichtig sein — EN: to be important · FR: être importantWichtig ist vor allem gute Beratung.",
+   "en": "important",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "Beratung",
+   "context": "wichtig sein — EN: to be important · FR: être importantWichtig ist vor allem gute Beratung.",
+   "en": "advice, consultation",
+   "lemma": "die Beratung"
+  },
+  {
+   "form": "workplace",
+   "context": "der Arbeitsplatz, ¨-e — EN: job; workplace · FR: l'emploi; le poste de travailHier entstehen 50 neue Arbeitsplätze.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'emploi",
+   "context": "der Arbeitsplatz, ¨-e — EN: job; workplace · FR: l'emploi; le poste de travailHier entstehen 50 neue Arbeitsplätze.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "poste",
+   "context": "der Arbeitsplatz, ¨-e — EN: job; workplace · FR: l'emploi; le poste de travailHier entstehen 50 neue Arbeitsplätze.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "travailHier",
+   "context": "der Arbeitsplatz, ¨-e — EN: job; workplace · FR: l'emploi; le poste de travailHier entstehen 50 neue Arbeitsplätze.",
+   "en": "here",
+   "lemma": "hier"
+  },
+  {
+   "form": "entstehen",
+   "context": "der Arbeitsplatz, ¨-e — EN: job; workplace · FR: l'emploi; le poste de travailHier entstehen 50 neue Arbeitsplätze.",
+   "en": "are created, arise",
+   "lemma": ""
+  },
+  {
+   "form": "Arbeitsplätze",
+   "context": "der Arbeitsplatz, ¨-e — EN: job; workplace · FR: l'emploi; le poste de travailHier entstehen 50 neue Arbeitsplätze.",
+   "en": "jobs",
+   "lemma": "der Arbeitsplatz"
+  },
+  {
+   "form": "bauen",
+   "context": "die Zukunft (Sg.) — EN: future · FR: l'avenirIn Zukunft bauen wir nur noch E-Autos.",
+   "en": "build",
+   "lemma": ""
+  },
+  {
+   "form": "E-Autos",
+   "context": "die Zukunft (Sg.) — EN: future · FR: l'avenirIn Zukunft bauen wir nur noch E-Autos.",
+   "en": "electric cars",
+   "lemma": "das E-Auto"
+  },
+  {
+   "form": "Wichtigkeit",
+   "context": "Wichtigkeit ausdrücken",
+   "en": "importance",
+   "lemma": "die Wichtigkeit"
+  },
+  {
+   "form": "großen",
+   "context": "Darauf legen wir großen Wert.",
+   "en": "great, big",
+   "lemma": "groß"
+  },
+  {
+   "form": "Wert",
+   "context": "Darauf legen wir großen Wert.",
+   "en": "value (Wert legen auf = to value)",
+   "lemma": "der Wert"
+  },
+  {
+   "form": "Aufgaben",
+   "context": "Zu meinen Aufgaben gehört …",
+   "en": "tasks",
+   "lemma": "die Aufgabe"
+  },
+  {
+   "form": "Reporterin",
+   "context": "Reporterin: Was macht Ihre Firma genau?",
+   "en": "reporter (a woman)",
+   "lemma": "die Reporterin"
+  },
+  {
+   "form": "Weiß",
+   "context": "Herr Weiß: Wir stellen Teile für Autos her — seit über sechzig Jahren.",
+   "en": "Weiß (name); white; know(s)",
+   "lemma": ""
+  },
+  {
+   "form": "dabei",
+   "context": "Reporterin: Und was ist Ihnen dabei besonders wichtig?",
+   "en": "in doing so; with it",
+   "lemma": ""
+  },
+  {
+   "form": "Rund",
+   "context": "Herr Weiß: Rund 400. Und nächstes Jahr entstehen 50 neue Arbeitsplätze.",
+   "en": "around, about; round",
+   "lemma": "rund"
+  },
+  {
+   "form": "modern",
+   "context": "Wir arbeiten mit ___ Technik. (modern, Dativ feminin)",
+   "en": "modern",
+   "lemma": ""
+  }
+ ]
+}
