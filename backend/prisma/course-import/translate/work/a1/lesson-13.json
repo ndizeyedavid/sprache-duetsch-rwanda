@@ -1,0 +1,771 @@
+{
+ "level": "A1",
+ "lesson": 13,
+ "title": "Orientierung in der Stadt — Die Post ist neben dem Bahnhof",
+ "lines": [
+  {
+   "de": "Nach dem Weg fragen und sagen, wo etwas ist.",
+   "en": "Asking the way and saying where something is."
+  },
+  {
+   "de": "Textsorte: Gespräch auf der Straße · Stadtplan",
+   "en": "Text type: Conversation in the street · Town map"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Sprechen Teil 3 (bitten); telc A1 Hören",
+   "en": "Exam link: Start Deutsch 1 Speaking part 3 (making requests); telc A1 Listening"
+  },
+  {
+   "de": "nach dem Weg fragen",
+   "en": "ask the way"
+  },
+  {
+   "de": "sagen, wo ein Gebäude ist",
+   "en": "say where a building is"
+  },
+  {
+   "de": "lokale Präpositionen mit Dativ verwenden",
+   "en": "use local prepositions with the dative (Dativ)"
+  },
+  {
+   "de": "Grammatik: Wo? — lokale Präpositionen mit Dativ",
+   "en": "Grammar: Wo? — local prepositions with the dative (Dativ)"
+  },
+  {
+   "de": "Auf die Frage Wo? antwortet man mit einer Präposition und dem Dativ. Im Dativ ändert sich der Artikel: der/das → dem, die → der, Plural → den (+ -n am Nomen).",
+   "en": "To answer the question Wo? (Where?), you use a preposition and the dative. In the dative the article changes: der/das → dem, die → der, plural → den (+ -n on the noun)."
+  },
+  {
+   "de": "Nominativ",
+   "en": "Nominative"
+  },
+  {
+   "de": "Dativ (bestimmt)",
+   "en": "Dative (definite)"
+  },
+  {
+   "de": "Dativ (unbestimmt)",
+   "en": "Dative (indefinite)"
+  },
+  {
+   "de": "der Dom",
+   "en": "the cathedral"
+  },
+  {
+   "de": "neben dem Dom",
+   "en": "next to the cathedral"
+  },
+  {
+   "de": "neben einem Dom",
+   "en": "next to a cathedral"
+  },
+  {
+   "de": "das Café",
+   "en": "the café"
+  },
+  {
+   "de": "neben dem Café",
+   "en": "next to the café"
+  },
+  {
+   "de": "neben einem Café",
+   "en": "next to a café"
+  },
+  {
+   "de": "die Post",
+   "en": "the post office"
+  },
+  {
+   "de": "neben der Post",
+   "en": "next to the post office"
+  },
+  {
+   "de": "neben einer Post",
+   "en": "next to a post office"
+  },
+  {
+   "de": "die Häuser",
+   "en": "the houses"
+  },
+  {
+   "de": "neben den Häusern",
+   "en": "next to the houses"
+  },
+  {
+   "de": "— neben Häusern",
+   "en": "— next to houses"
+  },
+  {
+   "de": "Wo ist das Hotel? — Es ist neben dem Bahnhof.neben + Dativ",
+   "en": "Where is the hotel? — It is next to the train station. neben + dative"
+  },
+  {
+   "de": "Die Apotheke ist zwischen der Post und dem Café.zwischen + Dativ, zweimal",
+   "en": "The pharmacy is between the post office and the café. zwischen + dative, twice"
+  },
+  {
+   "de": "Das Museum liegt am Marktplatz.an dem → am",
+   "en": "The museum is on the market square. an dem → am"
+  },
+  {
+   "de": "Tipp: Weitere Präpositionen: auf, an, vor, hinter, zwischen, über, unter, in. Kurzformen: in dem → im, an dem → am.",
+   "en": "Tip: More prepositions: auf, an, vor, hinter, zwischen, über, unter, in. Short forms: in dem → im, an dem → am."
+  },
+  {
+   "de": "der Bahnhof, ¨-e — EN: train station · FR: la gareDer Bahnhof ist ganz nah.",
+   "en": "Example: The train station is very close."
+  },
+  {
+   "de": "die Post (Sg.) — EN: post office · FR: la posteDie Post ist neben der Bank.",
+   "en": "Example: The post office is next to the bank."
+  },
+  {
+   "de": "die Apotheke, -n — EN: pharmacy · FR: la pharmacieGibt es hier eine Apotheke?",
+   "en": "Example: Is there a pharmacy here?"
+  },
+  {
+   "de": "die Bank, -en — EN: bank · FR: la banqueDie Bank schließt um vier.",
+   "en": "Example: The bank closes at four."
+  },
+  {
+   "de": "das Hotel, -s — EN: hotel · FR: l'hôtelWir suchen das Hotel Maritim.",
+   "en": "Example: We are looking for the Hotel Maritim."
+  },
+  {
+   "de": "die Straße, -n — EN: street · FR: la rueIch wohne in der Hauptstraße.",
+   "en": "Example: I live on the main street."
+  },
+  {
+   "de": "der Platz, ¨-e — EN: square · FR: la placeTreffen wir uns am Marktplatz?",
+   "en": "Example: Shall we meet at the market square?"
+  },
+  {
+   "de": "neben / zwischen — EN: next to / between · FR: à côté de / entreDas Café ist neben dem Kino.",
+   "en": "Example: The café is next to the cinema."
+  },
+  {
+   "de": "gegenüber — EN: opposite · FR: en face deGegenüber dem Bahnhof ist ein Hotel.",
+   "en": "Example: Opposite the train station there is a hotel."
+  },
+  {
+   "de": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "Example: Go straight on."
+  },
+  {
+   "de": "suchen — EN: to look for · FR: chercherWir suchen die Apotheke.",
+   "en": "Example: We are looking for the pharmacy."
+  },
+  {
+   "de": "in der Nähe — EN: nearby · FR: à proximitéIst hier in der Nähe ein Supermarkt?",
+   "en": "Example: Is there a supermarket nearby?"
+  },
+  {
+   "de": "Entschuldigung, wo ist die Post?",
+   "en": "Excuse me, where is the post office?"
+  },
+  {
+   "de": "Wir suchen das Hotel Maritim.",
+   "en": "We are looking for the Hotel Maritim."
+  },
+  {
+   "de": "Ist hier in der Nähe eine Apotheke?",
+   "en": "Is there a pharmacy nearby?"
+  },
+  {
+   "de": "den Weg beschreiben",
+   "en": "describing the way"
+  },
+  {
+   "de": "Das ist neben dem Bahnhof.",
+   "en": "That is next to the train station."
+  },
+  {
+   "de": "Gehen Sie geradeaus und dann links.",
+   "en": "Go straight on and then left."
+  },
+  {
+   "de": "Das ist gleich gegenüber.",
+   "en": "That is right opposite."
+  },
+  {
+   "de": "sich bedanken",
+   "en": "saying thank you"
+  },
+  {
+   "de": "Vielen Dank!",
+   "en": "Thank you very much!"
+  },
+  {
+   "de": "Das ist sehr nett, danke.",
+   "en": "That's very kind, thank you."
+  },
+  {
+   "de": "Tut mir leid, ich bin auch fremd hier.",
+   "en": "I'm sorry, I'm not from here either."
+  },
+  {
+   "de": "Touristin: Entschuldigung, wir suchen das Hotel Maritim.",
+   "en": "Tourist: Excuse me, we are looking for the Hotel Maritim."
+  },
+  {
+   "de": "Passant: Das Hotel ist neben dem Bahnhof.",
+   "en": "Passer-by: The hotel is next to the train station."
+  },
+  {
+   "de": "Touristin: Und wo ist der Bahnhof?",
+   "en": "Tourist: And where is the train station?"
+  },
+  {
+   "de": "Passant: Gehen Sie geradeaus bis zum Marktplatz, dann rechts.",
+   "en": "Passer-by: Go straight on as far as the market square, then right."
+  },
+  {
+   "de": "Touristin: Ist dort auch eine Apotheke?",
+   "en": "Tourist: Is there a pharmacy there too?"
+  },
+  {
+   "de": "Passant: Ja, zwischen der Post und dem Café.",
+   "en": "Passer-by: Yes, between the post office and the café."
+  },
+  {
+   "de": "Der Bahnhof ist ganz nah.",
+   "en": "The train station is very close."
+  },
+  {
+   "de": "Die Post ist neben der Bank.",
+   "en": "The post office is next to the bank."
+  },
+  {
+   "de": "Gibt es hier eine Apotheke?",
+   "en": "Is there a pharmacy here?"
+  },
+  {
+   "de": "Die Bank schließt um vier.",
+   "en": "The bank closes at four."
+  },
+  {
+   "de": "Ich wohne in der Hauptstraße.",
+   "en": "I live on the main street."
+  },
+  {
+   "de": "Treffen wir uns am Marktplatz?",
+   "en": "Shall we meet at the market square?"
+  },
+  {
+   "de": "Das Café ist neben dem Kino.",
+   "en": "The café is next to the cinema."
+  },
+  {
+   "de": "Gegenüber dem Bahnhof ist ein Hotel.",
+   "en": "Opposite the train station there is a hotel."
+  },
+  {
+   "de": "Gehen Sie geradeaus.",
+   "en": "Go straight on."
+  },
+  {
+   "de": "Wir suchen die Apotheke.",
+   "en": "We are looking for the pharmacy."
+  },
+  {
+   "de": "Ist hier in der Nähe ein Supermarkt?",
+   "en": "Is there a supermarket nearby?"
+  },
+  {
+   "de": "Das Hotel ist neben ___ Bahnhof. (der, Dativ)",
+   "en": "The hotel is next to ___ train station. (der, dative)"
+  },
+  {
+   "de": "Die Apotheke ist neben ___ Post.",
+   "en": "The pharmacy is next to ___ post office."
+  },
+  {
+   "de": "Das Museum liegt ___ Marktplatz. (an dem, Kurzform)",
+   "en": "The museum is ___ market square. (an dem, short form)"
+  },
+  {
+   "de": "Welche Frage passt zu „neben dem Kino\"?",
+   "en": "Which question goes with \"neben dem Kino\"?"
+  },
+  {
+   "de": "Das Café ist zwischen ___ Bank und dem Kino. (die, Dativ)",
+   "en": "The café is between ___ bank and the cinema. (die, dative)"
+  },
+  {
+   "de": "Beschreiben Sie den Weg von Ihrer Wohnung zum Supermarkt. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie mindestens drei lokale Präpositionen mit Dativ. • Benutzen Sie links, rechts oder geradeaus. • Nennen Sie zwei Gebäude als Orientierung.",
+   "en": "Describe the way from your flat to the supermarket. Length: 25–35 words Checklist: • Use at least three local prepositions with the dative. • Use links, rechts or geradeaus. • Name two buildings as landmarks."
+  },
+  {
+   "de": "Dativ maskulin: der → dem.",
+   "en": "Dative masculine: der → dem."
+  },
+  {
+   "de": "die Post ist feminin; Dativ feminin: die → der.",
+   "en": "die Post is feminine; dative feminine: die → der."
+  },
+  {
+   "de": "an dem → am.",
+   "en": "an dem → am (short form)."
+  },
+  {
+   "de": "Position → Wo? → Dativ.",
+   "en": "Position → Wo? (Where?) → dative."
+  },
+  {
+   "de": "Dativ feminin: der Bank.",
+   "en": "Dative feminine: der Bank."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Stadtplan",
+   "context": "Textsorte: Gespräch auf der Straße · Stadtplan",
+   "en": "town map",
+   "lemma": "der Stadtplan"
+  },
+  {
+   "form": "Gebäude",
+   "context": "sagen, wo ein Gebäude ist",
+   "en": "building",
+   "lemma": "das Gebäude"
+  },
+  {
+   "form": "lokale",
+   "context": "lokale Präpositionen mit Dativ verwenden",
+   "en": "local",
+   "lemma": "lokal"
+  },
+  {
+   "form": "Dativ",
+   "context": "lokale Präpositionen mit Dativ verwenden",
+   "en": "dative (case)",
+   "lemma": "der Dativ"
+  },
+  {
+   "form": "antwortet",
+   "context": "Auf die Frage Wo? antwortet man mit einer Präposition und dem Dativ. Im Dativ ändert sich der Artikel: der/das → dem, die → der, Plural → den (+ -n am Nomen).",
+   "en": "answers",
+   "lemma": "antworten"
+  },
+  {
+   "form": "Nominativ",
+   "context": "Nominativ",
+   "en": "nominative (case)",
+   "lemma": "der Nominativ"
+  },
+  {
+   "form": "Dom",
+   "context": "der Dom",
+   "en": "cathedral",
+   "lemma": "der Dom"
+  },
+  {
+   "form": "neben",
+   "context": "neben dem Dom",
+   "en": "next to",
+   "lemma": ""
+  },
+  {
+   "form": "Post",
+   "context": "die Post",
+   "en": "post office; post",
+   "lemma": "die Post"
+  },
+  {
+   "form": "Häuser",
+   "context": "die Häuser",
+   "en": "houses",
+   "lemma": "das Haus"
+  },
+  {
+   "form": "Häusern",
+   "context": "neben den Häusern",
+   "en": "houses",
+   "lemma": "das Haus"
+  },
+  {
+   "form": "Bahnhof",
+   "context": "Wo ist das Hotel? — Es ist neben dem Bahnhof.neben + Dativ",
+   "en": "train station",
+   "lemma": "der Bahnhof"
+  },
+  {
+   "form": "Apotheke",
+   "context": "Die Apotheke ist zwischen der Post und dem Café.zwischen + Dativ, zweimal",
+   "en": "pharmacy",
+   "lemma": "die Apotheke"
+  },
+  {
+   "form": "zwischen",
+   "context": "Die Apotheke ist zwischen der Post und dem Café.zwischen + Dativ, zweimal",
+   "en": "between",
+   "lemma": ""
+  },
+  {
+   "form": "Museum",
+   "context": "Das Museum liegt am Marktplatz.an dem → am",
+   "en": "museum",
+   "lemma": "das Museum"
+  },
+  {
+   "form": "liegt",
+   "context": "Das Museum liegt am Marktplatz.an dem → am",
+   "en": "is (located); lies",
+   "lemma": "liegen"
+  },
+  {
+   "form": "Marktplatz",
+   "context": "Das Museum liegt am Marktplatz.an dem → am",
+   "en": "market square",
+   "lemma": "der Marktplatz"
+  },
+  {
+   "form": "Weitere",
+   "context": "Tipp: Weitere Präpositionen: auf, an, vor, hinter, zwischen, über, unter, in. Kurzformen: in dem → im, an dem → am.",
+   "en": "more; further",
+   "lemma": "weiter"
+  },
+  {
+   "form": "unter",
+   "context": "Tipp: Weitere Präpositionen: auf, an, vor, hinter, zwischen, über, unter, in. Kurzformen: in dem → im, an dem → am.",
+   "en": "under; below",
+   "lemma": ""
+  },
+  {
+   "form": "Kurzformen",
+   "context": "Tipp: Weitere Präpositionen: auf, an, vor, hinter, zwischen, über, unter, in. Kurzformen: in dem → im, an dem → am.",
+   "en": "short forms",
+   "lemma": "die Kurzform"
+  },
+  {
+   "form": "train",
+   "context": "der Bahnhof, ¨-e — EN: train station · FR: la gareDer Bahnhof ist ganz nah.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "station",
+   "context": "der Bahnhof, ¨-e — EN: train station · FR: la gareDer Bahnhof ist ganz nah.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gareDer",
+   "context": "der Bahnhof, ¨-e — EN: train station · FR: la gareDer Bahnhof ist ganz nah.",
+   "en": "Der = the (masculine)",
+   "lemma": ""
+  },
+  {
+   "form": "nah",
+   "context": "der Bahnhof, ¨-e — EN: train station · FR: la gareDer Bahnhof ist ganz nah.",
+   "en": "near; close",
+   "lemma": ""
+  },
+  {
+   "form": "post",
+   "context": "die Post (Sg.) — EN: post office · FR: la posteDie Post ist neben der Bank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "office",
+   "context": "die Post (Sg.) — EN: post office · FR: la posteDie Post ist neben der Bank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "posteDie",
+   "context": "die Post (Sg.) — EN: post office · FR: la posteDie Post ist neben der Bank.",
+   "en": "Die = the (feminine)",
+   "lemma": ""
+  },
+  {
+   "form": "Bank",
+   "context": "die Post (Sg.) — EN: post office · FR: la posteDie Post ist neben der Bank.",
+   "en": "bank; bench",
+   "lemma": "die Bank"
+  },
+  {
+   "form": "pharmacy",
+   "context": "die Apotheke, -n — EN: pharmacy · FR: la pharmacieGibt es hier eine Apotheke?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pharmacieGibt",
+   "context": "die Apotheke, -n — EN: pharmacy · FR: la pharmacieGibt es hier eine Apotheke?",
+   "en": "Gibt = gives (es gibt: there is)",
+   "lemma": "geben"
+  },
+  {
+   "form": "bank",
+   "context": "die Bank, -en — EN: bank · FR: la banqueDie Bank schließt um vier.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "banqueDie",
+   "context": "die Bank, -en — EN: bank · FR: la banqueDie Bank schließt um vier.",
+   "en": "Die = the (feminine)",
+   "lemma": ""
+  },
+  {
+   "form": "schließt",
+   "context": "die Bank, -en — EN: bank · FR: la banqueDie Bank schließt um vier.",
+   "en": "closes",
+   "lemma": "schließen"
+  },
+  {
+   "form": "l'hôtelWir",
+   "context": "das Hotel, -s — EN: hotel · FR: l'hôtelWir suchen das Hotel Maritim.",
+   "en": "Wir = we",
+   "lemma": ""
+  },
+  {
+   "form": "Maritim",
+   "context": "das Hotel, -s — EN: hotel · FR: l'hôtelWir suchen das Hotel Maritim.",
+   "en": "Maritim (hotel name)",
+   "lemma": ""
+  },
+  {
+   "form": "street",
+   "context": "die Straße, -n — EN: street · FR: la rueIch wohne in der Hauptstraße.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rueIch",
+   "context": "die Straße, -n — EN: street · FR: la rueIch wohne in der Hauptstraße.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "Hauptstraße",
+   "context": "die Straße, -n — EN: street · FR: la rueIch wohne in der Hauptstraße.",
+   "en": "main street",
+   "lemma": "die Hauptstraße"
+  },
+  {
+   "form": "Platz",
+   "context": "der Platz, ¨-e — EN: square · FR: la placeTreffen wir uns am Marktplatz?",
+   "en": "square; place; seat",
+   "lemma": "der Platz"
+  },
+  {
+   "form": "square",
+   "context": "der Platz, ¨-e — EN: square · FR: la placeTreffen wir uns am Marktplatz?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "placeTreffen",
+   "context": "der Platz, ¨-e — EN: square · FR: la placeTreffen wir uns am Marktplatz?",
+   "en": "Treffen = meet",
+   "lemma": "treffen"
+  },
+  {
+   "form": "next",
+   "context": "neben / zwischen — EN: next to / between · FR: à côté de / entreDas Café ist neben dem Kino.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "between",
+   "context": "neben / zwischen — EN: next to / between · FR: à côté de / entreDas Café ist neben dem Kino.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "côté",
+   "context": "neben / zwischen — EN: next to / between · FR: à côté de / entreDas Café ist neben dem Kino.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "entreDas",
+   "context": "neben / zwischen — EN: next to / between · FR: à côté de / entreDas Café ist neben dem Kino.",
+   "en": "Das = the (neuter)",
+   "lemma": ""
+  },
+  {
+   "form": "Kino",
+   "context": "neben / zwischen — EN: next to / between · FR: à côté de / entreDas Café ist neben dem Kino.",
+   "en": "cinema",
+   "lemma": "das Kino"
+  },
+  {
+   "form": "gegenüber",
+   "context": "gegenüber — EN: opposite · FR: en face deGegenüber dem Bahnhof ist ein Hotel.",
+   "en": "opposite",
+   "lemma": ""
+  },
+  {
+   "form": "opposite",
+   "context": "gegenüber — EN: opposite · FR: en face deGegenüber dem Bahnhof ist ein Hotel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "face",
+   "context": "gegenüber — EN: opposite · FR: en face deGegenüber dem Bahnhof ist ein Hotel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deGegenüber",
+   "context": "gegenüber — EN: opposite · FR: en face deGegenüber dem Bahnhof ist ein Hotel.",
+   "en": "Gegenüber = opposite",
+   "lemma": ""
+  },
+  {
+   "form": "links",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "left",
+   "lemma": ""
+  },
+  {
+   "form": "rechts",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "right",
+   "lemma": ""
+  },
+  {
+   "form": "geradeaus",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "straight on",
+   "lemma": ""
+  },
+  {
+   "form": "left",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "right",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "straight",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gauche",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "droite",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tout",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "droitGehen",
+   "context": "links / rechts / geradeaus — EN: left / right / straight on · FR: à gauche / à droite / tout droitGehen Sie geradeaus.",
+   "en": "Gehen = go",
+   "lemma": "gehen"
+  },
+  {
+   "form": "chercherWir",
+   "context": "suchen — EN: to look for · FR: chercherWir suchen die Apotheke.",
+   "en": "Wir = we",
+   "lemma": ""
+  },
+  {
+   "form": "Nähe",
+   "context": "in der Nähe — EN: nearby · FR: à proximitéIst hier in der Nähe ein Supermarkt?",
+   "en": "nearness (in der Nähe: nearby)",
+   "lemma": "die Nähe"
+  },
+  {
+   "form": "nearby",
+   "context": "in der Nähe — EN: nearby · FR: à proximitéIst hier in der Nähe ein Supermarkt?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "proximitéIst",
+   "context": "in der Nähe — EN: nearby · FR: à proximitéIst hier in der Nähe ein Supermarkt?",
+   "en": "Ist = is",
+   "lemma": "sein"
+  },
+  {
+   "form": "Supermarkt",
+   "context": "in der Nähe — EN: nearby · FR: à proximitéIst hier in der Nähe ein Supermarkt?",
+   "en": "supermarket",
+   "lemma": "der Supermarkt"
+  },
+  {
+   "form": "bedanken",
+   "context": "sich bedanken",
+   "en": "to thank (sich bedanken)",
+   "lemma": ""
+  },
+  {
+   "form": "nett",
+   "context": "Das ist sehr nett, danke.",
+   "en": "kind; nice",
+   "lemma": "nett"
+  },
+  {
+   "form": "fremd",
+   "context": "Tut mir leid, ich bin auch fremd hier.",
+   "en": "foreign; a stranger",
+   "lemma": "fremd"
+  },
+  {
+   "form": "Touristin",
+   "context": "Touristin: Entschuldigung, wir suchen das Hotel Maritim.",
+   "en": "tourist (woman)",
+   "lemma": "die Touristin"
+  },
+  {
+   "form": "Passant",
+   "context": "Passant: Das Hotel ist neben dem Bahnhof.",
+   "en": "passer-by",
+   "lemma": "der Passant"
+  },
+  {
+   "form": "Gegenüber",
+   "context": "Gegenüber dem Bahnhof ist ein Hotel.",
+   "en": "opposite",
+   "lemma": ""
+  },
+  {
+   "form": "Kurzform",
+   "context": "Das Museum liegt ___ Marktplatz. (an dem, Kurzform)",
+   "en": "short form",
+   "lemma": "die Kurzform"
+  },
+  {
+   "form": "Welche",
+   "context": "Welche Frage passt zu „neben dem Kino\"?",
+   "en": "which",
+   "lemma": ""
+  },
+  {
+   "form": "Wohnung",
+   "context": "Beschreiben Sie den Weg von Ihrer Wohnung zum Supermarkt. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie mindestens drei lokale Präpositionen mit Dativ. • Benutzen Sie links, rechts oder geradeaus. • Nennen Sie zwei Gebäude als Orientierung.",
+   "en": "flat; apartment",
+   "lemma": "die Wohnung"
+  },
+  {
+   "form": "Orientierung",
+   "context": "Beschreiben Sie den Weg von Ihrer Wohnung zum Supermarkt. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie mindestens drei lokale Präpositionen mit Dativ. • Benutzen Sie links, rechts oder geradeaus. • Nennen Sie zwei Gebäude als Orientierung.",
+   "en": "landmark; orientation",
+   "lemma": "die Orientierung"
+  }
+ ]
+}
