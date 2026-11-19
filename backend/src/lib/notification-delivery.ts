@@ -1,6 +1,6 @@
 import { writeAuditTx } from "./audit.js";
 import { badRequest, notFound } from "./http-error.js";
-import { env,smtpEnabled } from "../config/env.js";
+import { smtpEnabled } from "../config/env.js";
 import { canReceiveMail } from "./email-domain.js";
 import type { Prisma } from "../generated/prisma/client.js";
 import { logger } from "./logger.js";
@@ -9,7 +9,7 @@ import { prisma } from "./prisma.js";
 import { transact } from "./transactions.js";
 
 export interface DeliveryMail { subject: string; text: string; html: string }
-export const emailAvailable = () => smtpEnabled || Boolean(env.EMAIL_RELAY_URL);
+export const emailAvailable = () => smtpEnabled;
 
 export async function queueTransactionalEmail(userId: string, email: string, mail: DeliveryMail, eventKey: string, expiresAt?: Date) {
   return prisma.notificationDelivery.upsert({ where: { eventKey }, update: {}, create: {
@@ -19,7 +19,7 @@ export async function queueTransactionalEmail(userId: string, email: string, mai
 
 /** Claim each delivery once. Recover claims abandoned by a crashed process. */
 export async function dispatchEmailDeliveries(deliver: typeof sendMail = sendMail, userIds?: string[]): Promise<number> {
-  if (deliver === sendMail && !emailAvailable()) { logger.warn("Email delivery is unavailable: configure SMTP or HTTPS relay"); return 0; }
+  if (deliver === sendMail && !emailAvailable()) { logger.warn("Email delivery is unavailable: configure SMTP"); return 0; }
   const now = new Date();
   const scope = userIds ? { userId: { in: userIds } } : {};
   await prisma.notificationDelivery.updateMany({ where: { ...scope, status: "SENDING", nextAttemptAt: { lt: now } }, data: { status: "PENDING" } });
