@@ -10,6 +10,7 @@ import { PreparationPractice } from './PreparationPractice';
 import { PreparationPreview } from './PreparationPreview';
 import { PreparationResources } from './PreparationResources';
 import { StudioDialog } from './StudioDialog';
+import { isLessonContent } from '../learn/types';
 import { LessonContentFields } from './studio/LessonContentFields';
 import { LessonSettings } from './studio/LessonSettings';
 import type { ChangeLesson } from './studio/lesson-draft';
@@ -75,7 +76,7 @@ function LessonWorkspace({ data, refresh, ...props }: Props & { data: AuthoredLe
       </div>
     </div>
     <fieldset disabled={busy} className="min-w-0 px-5 py-6 sm:px-7">
-      <div role="tabpanel" id="studio-Content" aria-labelledby="studio-tab-Content" hidden={tab !== 'Content'}><LessonContentFields draft={draft} change={change}/></div>
+      <div role="tabpanel" id="studio-Content" aria-labelledby="studio-tab-Content" hidden={tab !== 'Content'}><LessonContentFields draft={draft} change={change} interactive={isLessonContent(data.content)}/></div>
       <div role="tabpanel" id="studio-Resources" aria-labelledby="studio-tab-Resources" hidden={tab !== 'Resources'}><PreparationResources lesson={data} onSaved={refresh}/></div>
       <div role="tabpanel" id="studio-Practice" aria-labelledby="studio-tab-Practice" hidden={tab !== 'Practice'}><PreparationPractice lesson={data} onSaved={refresh}/></div>
     </fieldset>
