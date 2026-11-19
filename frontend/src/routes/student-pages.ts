@@ -4,6 +4,10 @@ export const Courses = lazyPage(() => import("../pages/student/Courses").then((m
 export const CourseOverview = lazyPage(() => import("../pages/student/CourseOverview").then((module) => module.CourseOverview));
 export const CourseContents = lazyPage(() => import("../pages/student/CourseContents").then((module) => module.CourseContents));
 export const StudentLesson = lazyPage(() => import("../pages/student/LessonView").then((module) => module.StudentLesson));
+export const Review = lazyPage(() => import("../pages/student/Review").then((module) => module.Review));
+export const WordList = lazyPage(() => import("../pages/student/WordList").then((module) => module.WordList));
+export const Exams = lazyPage(() => import("../pages/student/Exams").then((module) => module.Exams));
+export const ExamPaperSheet = lazyPage(() => import("../pages/student/ExamPaperSheet").then((module) => module.ExamPaperSheet));
 export const StudentActivity = lazyPage(() => import("../pages/student/StudentActivity").then((module) => module.StudentActivity));
 export const Schedule = lazyPage(() => import("../pages/student/Schedule").then((module) => module.Schedule));
 export const Teachers = lazyPage(() => import("../pages/student/Teachers").then((module) => module.Teachers));
