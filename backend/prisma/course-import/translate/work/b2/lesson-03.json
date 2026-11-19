@@ -1,0 +1,929 @@
+{
+ "level": "B2",
+ "lesson": 3,
+ "title": "Vorurteile überwinden — Ich habe mich einfach überraschen lassen",
+ "lines": [
+  {
+   "de": "Über ersten Eindruck, Stereotype und Vorurteile sprechen — mit dem Ersatzinfinitiv im Perfekt.",
+   "en": "Talking about first impressions, stereotypes and prejudices — with the substitute infinitive (Ersatzinfinitiv) in the perfect tense."
+  },
+  {
+   "de": "Textsorte: Radiosendung · Erklärvideo · Definition",
+   "en": "Text type: radio programme · explainer video · definition"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Hören Teil 2; ÖSD B2 Sprechen (Diskussion)",
+   "en": "Exam link: Goethe B2 Listening part 2; ÖSD B2 Speaking (discussion)"
+  },
+  {
+   "de": "Personen beschreiben und über den ersten Eindruck sprechen",
+   "en": "describe people and talk about first impressions"
+  },
+  {
+   "de": "Selbst- und Fremdwahrnehmung gegenüberstellen",
+   "en": "contrast how you see yourself with how others see you"
+  },
+  {
+   "de": "das Perfekt von lassen, sehen und hören mit Ersatzinfinitiv bilden",
+   "en": "form the perfect tense of lassen, sehen and hören with the substitute infinitive (Ersatzinfinitiv)"
+  },
+  {
+   "de": "Grammatik: Perfekt mit Ersatzinfinitiv: lassen, sehen, hören",
+   "en": "Grammar: perfect tense with the substitute infinitive (Ersatzinfinitiv): lassen, sehen, hören"
+  },
+  {
+   "de": "Diese drei Verben bilden das Perfekt wie Modalverben: Steht ein zweiter Infinitiv im Satz, erscheint statt des Partizips noch einmal der Infinitiv — der sogenannte Ersatzinfinitiv. Das konjugierte haben rückt dann im Nebensatz vor die beiden Infinitive.",
+   "en": "These three verbs form the perfect tense like modal verbs: if there is a second infinitive in the sentence, the infinitive appears again instead of the participle — the so-called substitute infinitive (Ersatzinfinitiv). In a subordinate clause, the conjugated haben then moves in front of the two infinitives."
+  },
+  {
+   "de": "ohne zweites Verb",
+   "en": "without a second verb"
+  },
+  {
+   "de": "mit zweitem Verb (Ersatzinfinitiv)",
+   "en": "with a second verb (substitute infinitive)"
+  },
+  {
+   "de": "lassen",
+   "en": "to leave; to let"
+  },
+  {
+   "de": "Ich habe meinen Schlüssel gelassen.",
+   "en": "I left my key behind."
+  },
+  {
+   "de": "Ich habe mich überraschen lassen.",
+   "en": "I let myself be surprised."
+  },
+  {
+   "de": "sehen",
+   "en": "to see"
+  },
+  {
+   "de": "Ich habe ihn gesehen.",
+   "en": "I saw him."
+  },
+  {
+   "de": "Ich habe ihn kommen sehen.",
+   "en": "I saw him coming."
+  },
+  {
+   "de": "hören",
+   "en": "to hear"
+  },
+  {
+   "de": "Ich habe nichts gehört.",
+   "en": "I didn't hear anything."
+  },
+  {
+   "de": "Ich habe sie singen hören.",
+   "en": "I heard her singing."
+  },
+  {
+   "de": "im Nebensatz",
+   "en": "in a subordinate clause"
+  },
+  {
+   "de": "…, weil ich mich habe überraschen lassen.",
+   "en": "…, because I let myself be surprised."
+  },
+  {
+   "de": "Ich habe mir die Haare schneiden lassen, bevor ich zum Gespräch ging.lassen = veranlassen",
+   "en": "I had my hair cut before I went to the interview. lassen = to have something done (veranlassen)"
+  },
+  {
+   "de": "Wir haben die Vorurteile deutlich wachsen sehen.sehen + Infinitiv",
+   "en": "We have clearly seen the prejudices grow. sehen + infinitive"
+  },
+  {
+   "de": "Sie ärgert sich, dass sie sich davon hat beeinflussen lassen.Nebensatz: hat vor den beiden Infinitiven",
+   "en": "She is annoyed that she let herself be influenced by it. Subordinate clause: hat before the two infinitives"
+  },
+  {
+   "de": "Tipp: Im Nebensatz steht das konjugierte Verb ausnahmsweise nicht am Ende, sondern vor den Infinitiven: „…, weil ich es habe machen lassen.\"",
+   "en": "Tip: In a subordinate clause, the conjugated verb is, as an exception, not at the end but before the infinitives: “…, weil ich es habe machen lassen.”"
+  },
+  {
+   "de": "das Vorurteil, -e — EN: prejudice · FR: le préjugéVorurteile entstehen oft aus Unwissenheit.",
+   "en": "Example: Prejudices often arise from ignorance."
+  },
+  {
+   "de": "das Stereotyp, -e — EN: stereotype · FR: le stéréotypeDieses Stereotyp hält sich hartnäckig.",
+   "en": "Example: This stereotype is stubbornly persistent."
+  },
+  {
+   "de": "der erste Eindruck (Sg.) — EN: first impression · FR: la première impressionDer erste Eindruck entsteht in Sekunden.",
+   "en": "Example: A first impression forms within seconds."
+  },
+  {
+   "de": "die Selbstwahrnehmung (Sg.) — EN: self-perception · FR: la perception de soiSelbst- und Fremdwahrnehmung gehen weit auseinander.",
+   "en": "Example: How we see ourselves and how others see us differ widely."
+  },
+  {
+   "de": "voreingenommen — EN: biased · FR: partial, prévenuNiemand ist völlig frei von voreingenommenem Denken.",
+   "en": "Example: Nobody is completely free of biased thinking."
+  },
+  {
+   "de": "etwas hinterfragen — EN: to question, scrutinise · FR: remettre en questionMan sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "Example: You should regularly question your own assumptions."
+  },
+  {
+   "de": "die Schublade, -n (in Schubladen denken) — EN: pigeonhole, to pigeonhole · FR: la case, mettre dans des casesWir denken alle manchmal in Schubladen.",
+   "en": "Example: We all put people into pigeonholes sometimes."
+  },
+  {
+   "de": "zuschreiben (schrieb zu) — EN: to attribute to · FR: attribuer àMan schreibt ganzen Gruppen Eigenschaften zu.",
+   "en": "Example: People attribute characteristics to entire groups."
+  },
+  {
+   "de": "die Offenheit (Sg.) — EN: openness · FR: l'ouverture d'espritOffenheit ist die beste Gegenstrategie.",
+   "en": "Example: Openness is the best counter-strategy."
+  },
+  {
+   "de": "hartnäckig — EN: persistent, stubborn · FR: tenaceManche Klischees sind erstaunlich hartnäckig.",
+   "en": "Example: Some clichés are surprisingly persistent."
+  },
+  {
+   "de": "jemandem begegnen — EN: to encounter, meet · FR: rencontrer qn.Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "Example: Meet people without a ready-made picture in your head."
+  },
+  {
+   "de": "die Wahrnehmung, -en — EN: perception · FR: la perceptionUnsere Wahrnehmung täuscht uns häufiger, als wir denken.",
+   "en": "Example: Our perception deceives us more often than we think."
+  },
+  {
+   "de": "etwas relativieren — EN: to put into perspective · FR: relativiserEine persönliche Begegnung relativiert vieles.",
+   "en": "Example: A personal encounter puts a lot into perspective."
+  },
+  {
+   "de": "das Klischee, -s — EN: cliché · FR: le clichéDas ist ein Klischee, das nicht zutrifft.",
+   "en": "Example: That is a cliché that isn't true."
+  },
+  {
+   "de": "Auf den ersten Blick wirkt sie eher …",
+   "en": "At first glance, she seems rather …"
+  },
+  {
+   "de": "Man könnte sie für … halten.",
+   "en": "You could take her for …"
+  },
+  {
+   "de": "Sie macht einen sehr … Eindruck.",
+   "en": "She makes a very … impression."
+  },
+  {
+   "de": "ein Vorurteil benennen und entkräften",
+   "en": "Naming and refuting a prejudice"
+  },
+  {
+   "de": "Viele gehen davon aus, dass … — das stimmt so aber nicht.",
+   "en": "Many people assume that … — but that's not quite true."
+  },
+  {
+   "de": "Dieses Klischee hält sich, obwohl …",
+   "en": "This cliché persists although …"
+  },
+  {
+   "de": "Meine eigene Erfahrung spricht dagegen: …",
+   "en": "My own experience suggests otherwise: …"
+  },
+  {
+   "de": "vorsichtig verallgemeinern",
+   "en": "Generalising carefully"
+  },
+  {
+   "de": "Das lässt sich kaum pauschal sagen.",
+   "en": "You can hardly make a sweeping statement about that."
+  },
+  {
+   "de": "Tendenziell beobachtet man, dass …",
+   "en": "On the whole, you can observe that …"
+  },
+  {
+   "de": "Das trifft allenfalls auf einen Teil zu.",
+   "en": "That applies to only some of them, at most."
+  },
+  {
+   "de": "Vorurteile entstehen oft aus Unwissenheit.",
+   "en": "Prejudices often arise from ignorance."
+  },
+  {
+   "de": "Dieses Stereotyp hält sich hartnäckig.",
+   "en": "This stereotype is stubbornly persistent."
+  },
+  {
+   "de": "Der erste Eindruck entsteht in Sekunden.",
+   "en": "A first impression forms within seconds."
+  },
+  {
+   "de": "Selbst- und Fremdwahrnehmung gehen weit auseinander.",
+   "en": "How we see ourselves and how others see us differ widely."
+  },
+  {
+   "de": "Niemand ist völlig frei von voreingenommenem Denken.",
+   "en": "Nobody is completely free of biased thinking."
+  },
+  {
+   "de": "Man sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "You should regularly question your own assumptions."
+  },
+  {
+   "de": "Wir denken alle manchmal in Schubladen.",
+   "en": "We all put people into pigeonholes sometimes."
+  },
+  {
+   "de": "Man schreibt ganzen Gruppen Eigenschaften zu.",
+   "en": "People attribute characteristics to entire groups."
+  },
+  {
+   "de": "Offenheit ist die beste Gegenstrategie.",
+   "en": "Openness is the best counter-strategy."
+  },
+  {
+   "de": "Manche Klischees sind erstaunlich hartnäckig.",
+   "en": "Some clichés are surprisingly persistent."
+  },
+  {
+   "de": "Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "Meet people without a ready-made picture in your head."
+  },
+  {
+   "de": "Unsere Wahrnehmung täuscht uns häufiger, als wir denken.",
+   "en": "Our perception deceives us more often than we think."
+  },
+  {
+   "de": "Eine persönliche Begegnung relativiert vieles.",
+   "en": "A personal encounter puts a lot into perspective."
+  },
+  {
+   "de": "Das ist ein Klischee, das nicht zutrifft.",
+   "en": "That is a cliché that isn't true."
+  },
+  {
+   "de": "Perfekt von „Ich lasse mich überraschen\":",
+   "en": "Perfect tense of “I let myself be surprised”:"
+  },
+  {
+   "de": "Wir haben ihn schon von Weitem kommen ___. (sehen, Perfekt)",
+   "en": "We have ___ him coming from a long way off. (sehen, perfect tense)"
+  },
+  {
+   "de": "Welcher Nebensatz ist korrekt?",
+   "en": "Which subordinate clause is correct?"
+  },
+  {
+   "de": "Ich habe ihn im Nebenzimmer telefonieren ___. (hören, Perfekt)",
+   "en": "I have ___ him talking on the phone in the next room. (hören, perfect tense)"
+  },
+  {
+   "de": "In welchem Satz steht KEIN Ersatzinfinitiv?",
+   "en": "Which sentence has NO substitute infinitive?"
+  },
+  {
+   "de": "Sie ärgert sich, dass sie sich davon ___ beeinflussen lassen. (haben, konjugiert)",
+   "en": "She is annoyed that she ___ let herself be influenced by it. (haben, conjugated)"
+  },
+  {
+   "de": "Schreiben Sie einen Tagebucheintrag über eine Begegnung, bei der sich ein Vorurteil von Ihnen als falsch erwiesen hat. Umfang: 150–200 Wörter Checkliste: • Beschreiben Sie zuerst Ihre Erwartung an die Person oder Situation. • Erzählen Sie dann, was tatsächlich passiert ist. • Verwenden Sie mindestens einen Satz mit Ersatzinfinitiv. • Formulieren Sie am Schluss, was Sie daraus mitnehmen.",
+   "en": "Write a diary entry about an encounter in which one of your prejudices turned out to be wrong. Length: 150–200 words Checklist: • First describe what you expected of the person or situation. • Then tell what actually happened. • Use at least one sentence with a substitute infinitive (Ersatzinfinitiv). • At the end, put into words what you take away from it."
+  },
+  {
+   "de": "Mit einem zweiten Infinitiv steht der Ersatzinfinitiv lassen, nicht das Partizip gelassen.",
+   "en": "With a second infinitive, you use the substitute infinitive lassen, not the participle gelassen."
+  },
+  {
+   "de": "Ersatzinfinitiv: sehen statt gesehen, weil ein zweiter Infinitiv (kommen) im Satz steht.",
+   "en": "Substitute infinitive: sehen instead of gesehen, because there is a second infinitive (kommen) in the sentence."
+  },
+  {
+   "de": "Beim Ersatzinfinitiv rückt das konjugierte habe vor die beiden Infinitive.",
+   "en": "With the substitute infinitive, the conjugated habe moves in front of the two infinitives."
+  },
+  {
+   "de": "hören + Infinitiv → Ersatzinfinitiv hören.",
+   "en": "hören + infinitive → substitute infinitive hören."
+  },
+  {
+   "de": "Ohne zweiten Infinitiv bildet lassen ein normales Partizip: gelassen.",
+   "en": "Without a second infinitive, lassen forms a normal participle: gelassen."
+  },
+  {
+   "de": "Im Nebensatz steht das konjugierte Verb vor den beiden Infinitiven.",
+   "en": "In a subordinate clause, the conjugated verb comes before the two infinitives."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Eindruck",
+   "context": "Über ersten Eindruck, Stereotype und Vorurteile sprechen — mit dem Ersatzinfinitiv im Perfekt.",
+   "en": "impression",
+   "lemma": "der Eindruck"
+  },
+  {
+   "form": "Stereotype",
+   "context": "Über ersten Eindruck, Stereotype und Vorurteile sprechen — mit dem Ersatzinfinitiv im Perfekt.",
+   "en": "stereotypes",
+   "lemma": "das Stereotyp"
+  },
+  {
+   "form": "Vorurteile",
+   "context": "Über ersten Eindruck, Stereotype und Vorurteile sprechen — mit dem Ersatzinfinitiv im Perfekt.",
+   "en": "prejudices",
+   "lemma": "das Vorurteil"
+  },
+  {
+   "form": "Ersatzinfinitiv",
+   "context": "Über ersten Eindruck, Stereotype und Vorurteile sprechen — mit dem Ersatzinfinitiv im Perfekt.",
+   "en": "substitute infinitive",
+   "lemma": "der Ersatzinfinitiv"
+  },
+  {
+   "form": "Erklärvideo",
+   "context": "Textsorte: Radiosendung · Erklärvideo · Definition",
+   "en": "explainer video",
+   "lemma": "das Erklärvideo"
+  },
+  {
+   "form": "Definition",
+   "context": "Textsorte: Radiosendung · Erklärvideo · Definition",
+   "en": "definition",
+   "lemma": "die Definition"
+  },
+  {
+   "form": "Diskussion",
+   "context": "Prüfungsbezug: Goethe B2 Hören Teil 2; ÖSD B2 Sprechen (Diskussion)",
+   "en": "discussion",
+   "lemma": "die Diskussion"
+  },
+  {
+   "form": "Fremdwahrnehmung",
+   "context": "Selbst- und Fremdwahrnehmung gegenüberstellen",
+   "en": "how others see you",
+   "lemma": "die Fremdwahrnehmung"
+  },
+  {
+   "form": "zweiter",
+   "context": "Diese drei Verben bilden das Perfekt wie Modalverben: Steht ein zweiter Infinitiv im Satz, erscheint statt des Partizips noch einmal der Infinitiv — der sogenannte Ersatzinfinitiv. Das konjugierte haben rückt dann im Nebensatz vor die beiden Infinitive.",
+   "en": "second",
+   "lemma": "zweite"
+  },
+  {
+   "form": "Partizips",
+   "context": "Diese drei Verben bilden das Perfekt wie Modalverben: Steht ein zweiter Infinitiv im Satz, erscheint statt des Partizips noch einmal der Infinitiv — der sogenannte Ersatzinfinitiv. Das konjugierte haben rückt dann im Nebensatz vor die beiden Infinitive.",
+   "en": "participle",
+   "lemma": "das Partizip"
+  },
+  {
+   "form": "sogenannte",
+   "context": "Diese drei Verben bilden das Perfekt wie Modalverben: Steht ein zweiter Infinitiv im Satz, erscheint statt des Partizips noch einmal der Infinitiv — der sogenannte Ersatzinfinitiv. Das konjugierte haben rückt dann im Nebensatz vor die beiden Infinitive.",
+   "en": "so-called",
+   "lemma": "sogenannt"
+  },
+  {
+   "form": "Infinitive",
+   "context": "Diese drei Verben bilden das Perfekt wie Modalverben: Steht ein zweiter Infinitiv im Satz, erscheint statt des Partizips noch einmal der Infinitiv — der sogenannte Ersatzinfinitiv. Das konjugierte haben rückt dann im Nebensatz vor die beiden Infinitive.",
+   "en": "infinitives",
+   "lemma": "der Infinitiv"
+  },
+  {
+   "form": "zweites",
+   "context": "ohne zweites Verb",
+   "en": "second",
+   "lemma": "zweite"
+  },
+  {
+   "form": "zweitem",
+   "context": "mit zweitem Verb (Ersatzinfinitiv)",
+   "en": "second",
+   "lemma": "zweite"
+  },
+  {
+   "form": "gelassen",
+   "context": "Ich habe meinen Schlüssel gelassen.",
+   "en": "left (lassen); calm",
+   "lemma": "lassen"
+  },
+  {
+   "form": "schneiden",
+   "context": "Ich habe mir die Haare schneiden lassen, bevor ich zum Gespräch ging.lassen = veranlassen",
+   "en": "to cut",
+   "lemma": ""
+  },
+  {
+   "form": "veranlassen",
+   "context": "Ich habe mir die Haare schneiden lassen, bevor ich zum Gespräch ging.lassen = veranlassen",
+   "en": "to arrange for, cause",
+   "lemma": ""
+  },
+  {
+   "form": "wachsen",
+   "context": "Wir haben die Vorurteile deutlich wachsen sehen.sehen + Infinitiv",
+   "en": "to grow",
+   "lemma": ""
+  },
+  {
+   "form": "ärgert",
+   "context": "Sie ärgert sich, dass sie sich davon hat beeinflussen lassen.Nebensatz: hat vor den beiden Infinitiven",
+   "en": "annoys (sich ärgern = to be annoyed)",
+   "lemma": "ärgern"
+  },
+  {
+   "form": "beeinflussen",
+   "context": "Sie ärgert sich, dass sie sich davon hat beeinflussen lassen.Nebensatz: hat vor den beiden Infinitiven",
+   "en": "to influence",
+   "lemma": ""
+  },
+  {
+   "form": "Infinitiven",
+   "context": "Sie ärgert sich, dass sie sich davon hat beeinflussen lassen.Nebensatz: hat vor den beiden Infinitiven",
+   "en": "infinitives",
+   "lemma": "der Infinitiv"
+  },
+  {
+   "form": "ausnahmsweise",
+   "context": "Tipp: Im Nebensatz steht das konjugierte Verb ausnahmsweise nicht am Ende, sondern vor den Infinitiven: „…, weil ich es habe machen lassen.\"",
+   "en": "as an exception",
+   "lemma": ""
+  },
+  {
+   "form": "Vorurteil",
+   "context": "das Vorurteil, -e — EN: prejudice · FR: le préjugéVorurteile entstehen oft aus Unwissenheit.",
+   "en": "prejudice",
+   "lemma": "das Vorurteil"
+  },
+  {
+   "form": "prejudice",
+   "context": "das Vorurteil, -e — EN: prejudice · FR: le préjugéVorurteile entstehen oft aus Unwissenheit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "préjugéVorurteile",
+   "context": "das Vorurteil, -e — EN: prejudice · FR: le préjugéVorurteile entstehen oft aus Unwissenheit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Unwissenheit",
+   "context": "das Vorurteil, -e — EN: prejudice · FR: le préjugéVorurteile entstehen oft aus Unwissenheit.",
+   "en": "ignorance",
+   "lemma": "die Unwissenheit"
+  },
+  {
+   "form": "Stereotyp",
+   "context": "das Stereotyp, -e — EN: stereotype · FR: le stéréotypeDieses Stereotyp hält sich hartnäckig.",
+   "en": "stereotype",
+   "lemma": "das Stereotyp"
+  },
+  {
+   "form": "stereotype",
+   "context": "das Stereotyp, -e — EN: stereotype · FR: le stéréotypeDieses Stereotyp hält sich hartnäckig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stéréotypeDieses",
+   "context": "das Stereotyp, -e — EN: stereotype · FR: le stéréotypeDieses Stereotyp hält sich hartnäckig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "hartnäckig",
+   "context": "das Stereotyp, -e — EN: stereotype · FR: le stéréotypeDieses Stereotyp hält sich hartnäckig.",
+   "en": "persistent, stubborn",
+   "lemma": ""
+  },
+  {
+   "form": "impression",
+   "context": "der erste Eindruck (Sg.) — EN: first impression · FR: la première impressionDer erste Eindruck entsteht in Sekunden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "première",
+   "context": "der erste Eindruck (Sg.) — EN: first impression · FR: la première impressionDer erste Eindruck entsteht in Sekunden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "impressionDer",
+   "context": "der erste Eindruck (Sg.) — EN: first impression · FR: la première impressionDer erste Eindruck entsteht in Sekunden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Sekunden",
+   "context": "der erste Eindruck (Sg.) — EN: first impression · FR: la première impressionDer erste Eindruck entsteht in Sekunden.",
+   "en": "seconds",
+   "lemma": "die Sekunde"
+  },
+  {
+   "form": "Selbstwahrnehmung",
+   "context": "die Selbstwahrnehmung (Sg.) — EN: self-perception · FR: la perception de soiSelbst- und Fremdwahrnehmung gehen weit auseinander.",
+   "en": "self-perception",
+   "lemma": "die Selbstwahrnehmung"
+  },
+  {
+   "form": "self-perception",
+   "context": "die Selbstwahrnehmung (Sg.) — EN: self-perception · FR: la perception de soiSelbst- und Fremdwahrnehmung gehen weit auseinander.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "perception",
+   "context": "die Selbstwahrnehmung (Sg.) — EN: self-perception · FR: la perception de soiSelbst- und Fremdwahrnehmung gehen weit auseinander.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soiSelbst",
+   "context": "die Selbstwahrnehmung (Sg.) — EN: self-perception · FR: la perception de soiSelbst- und Fremdwahrnehmung gehen weit auseinander.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "auseinander",
+   "context": "die Selbstwahrnehmung (Sg.) — EN: self-perception · FR: la perception de soiSelbst- und Fremdwahrnehmung gehen weit auseinander.",
+   "en": "apart (auseinandergehen = to differ)",
+   "lemma": ""
+  },
+  {
+   "form": "voreingenommen",
+   "context": "voreingenommen — EN: biased · FR: partial, prévenuNiemand ist völlig frei von voreingenommenem Denken.",
+   "en": "biased",
+   "lemma": ""
+  },
+  {
+   "form": "biased",
+   "context": "voreingenommen — EN: biased · FR: partial, prévenuNiemand ist völlig frei von voreingenommenem Denken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "partial",
+   "context": "voreingenommen — EN: biased · FR: partial, prévenuNiemand ist völlig frei von voreingenommenem Denken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prévenuNiemand",
+   "context": "voreingenommen — EN: biased · FR: partial, prévenuNiemand ist völlig frei von voreingenommenem Denken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "voreingenommenem",
+   "context": "voreingenommen — EN: biased · FR: partial, prévenuNiemand ist völlig frei von voreingenommenem Denken.",
+   "en": "biased",
+   "lemma": "voreingenommen"
+  },
+  {
+   "form": "hinterfragen",
+   "context": "etwas hinterfragen — EN: to question, scrutinise · FR: remettre en questionMan sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "to question, scrutinise",
+   "lemma": ""
+  },
+  {
+   "form": "question",
+   "context": "etwas hinterfragen — EN: to question, scrutinise · FR: remettre en questionMan sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "scrutinise",
+   "context": "etwas hinterfragen — EN: to question, scrutinise · FR: remettre en questionMan sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "remettre",
+   "context": "etwas hinterfragen — EN: to question, scrutinise · FR: remettre en questionMan sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "questionMan",
+   "context": "etwas hinterfragen — EN: to question, scrutinise · FR: remettre en questionMan sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Annahmen",
+   "context": "etwas hinterfragen — EN: to question, scrutinise · FR: remettre en questionMan sollte eigene Annahmen regelmäßig hinterfragen.",
+   "en": "assumptions",
+   "lemma": "die Annahme"
+  },
+  {
+   "form": "Schublade",
+   "context": "die Schublade, -n (in Schubladen denken) — EN: pigeonhole, to pigeonhole · FR: la case, mettre dans des casesWir denken alle manchmal in Schubladen.",
+   "en": "drawer; pigeonhole",
+   "lemma": "die Schublade"
+  },
+  {
+   "form": "Schubladen",
+   "context": "die Schublade, -n (in Schubladen denken) — EN: pigeonhole, to pigeonhole · FR: la case, mettre dans des casesWir denken alle manchmal in Schubladen.",
+   "en": "drawers (in Schubladen denken = to pigeonhole)",
+   "lemma": "die Schublade"
+  },
+  {
+   "form": "pigeonhole",
+   "context": "die Schublade, -n (in Schubladen denken) — EN: pigeonhole, to pigeonhole · FR: la case, mettre dans des casesWir denken alle manchmal in Schubladen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "case",
+   "context": "die Schublade, -n (in Schubladen denken) — EN: pigeonhole, to pigeonhole · FR: la case, mettre dans des casesWir denken alle manchmal in Schubladen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "casesWir",
+   "context": "die Schublade, -n (in Schubladen denken) — EN: pigeonhole, to pigeonhole · FR: la case, mettre dans des casesWir denken alle manchmal in Schubladen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zuschreiben",
+   "context": "zuschreiben (schrieb zu) — EN: to attribute to · FR: attribuer àMan schreibt ganzen Gruppen Eigenschaften zu.",
+   "en": "to attribute (to)",
+   "lemma": ""
+  },
+  {
+   "form": "schrieb",
+   "context": "zuschreiben (schrieb zu) — EN: to attribute to · FR: attribuer àMan schreibt ganzen Gruppen Eigenschaften zu.",
+   "en": "wrote; (schrieb … zu) attributed",
+   "lemma": "schreiben"
+  },
+  {
+   "form": "attribute",
+   "context": "zuschreiben (schrieb zu) — EN: to attribute to · FR: attribuer àMan schreibt ganzen Gruppen Eigenschaften zu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "attribuer",
+   "context": "zuschreiben (schrieb zu) — EN: to attribute to · FR: attribuer àMan schreibt ganzen Gruppen Eigenschaften zu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àMan",
+   "context": "zuschreiben (schrieb zu) — EN: to attribute to · FR: attribuer àMan schreibt ganzen Gruppen Eigenschaften zu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Offenheit",
+   "context": "die Offenheit (Sg.) — EN: openness · FR: l'ouverture d'espritOffenheit ist die beste Gegenstrategie.",
+   "en": "openness",
+   "lemma": "die Offenheit"
+  },
+  {
+   "form": "openness",
+   "context": "die Offenheit (Sg.) — EN: openness · FR: l'ouverture d'espritOffenheit ist die beste Gegenstrategie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'ouverture",
+   "context": "die Offenheit (Sg.) — EN: openness · FR: l'ouverture d'espritOffenheit ist die beste Gegenstrategie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'espritOffenheit",
+   "context": "die Offenheit (Sg.) — EN: openness · FR: l'ouverture d'espritOffenheit ist die beste Gegenstrategie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Gegenstrategie",
+   "context": "die Offenheit (Sg.) — EN: openness · FR: l'ouverture d'espritOffenheit ist die beste Gegenstrategie.",
+   "en": "counter-strategy",
+   "lemma": "die Gegenstrategie"
+  },
+  {
+   "form": "persistent",
+   "context": "hartnäckig — EN: persistent, stubborn · FR: tenaceManche Klischees sind erstaunlich hartnäckig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stubborn",
+   "context": "hartnäckig — EN: persistent, stubborn · FR: tenaceManche Klischees sind erstaunlich hartnäckig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tenaceManche",
+   "context": "hartnäckig — EN: persistent, stubborn · FR: tenaceManche Klischees sind erstaunlich hartnäckig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Klischees",
+   "context": "hartnäckig — EN: persistent, stubborn · FR: tenaceManche Klischees sind erstaunlich hartnäckig.",
+   "en": "clichés",
+   "lemma": "das Klischee"
+  },
+  {
+   "form": "erstaunlich",
+   "context": "hartnäckig — EN: persistent, stubborn · FR: tenaceManche Klischees sind erstaunlich hartnäckig.",
+   "en": "surprisingly, astonishing",
+   "lemma": ""
+  },
+  {
+   "form": "jemandem",
+   "context": "jemandem begegnen — EN: to encounter, meet · FR: rencontrer qn.Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "(to) someone",
+   "lemma": "jemand"
+  },
+  {
+   "form": "begegnen",
+   "context": "jemandem begegnen — EN: to encounter, meet · FR: rencontrer qn.Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "to meet, encounter",
+   "lemma": ""
+  },
+  {
+   "form": "encounter",
+   "context": "jemandem begegnen — EN: to encounter, meet · FR: rencontrer qn.Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rencontrer",
+   "context": "jemandem begegnen — EN: to encounter, meet · FR: rencontrer qn.Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Begegnen",
+   "context": "jemandem begegnen — EN: to encounter, meet · FR: rencontrer qn.Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "meet, encounter",
+   "lemma": "begegnen"
+  },
+  {
+   "form": "fertiges",
+   "context": "jemandem begegnen — EN: to encounter, meet · FR: rencontrer qn.Begegnen Sie Menschen ohne fertiges Bild im Kopf.",
+   "en": "ready-made, finished",
+   "lemma": "fertig"
+  },
+  {
+   "form": "Wahrnehmung",
+   "context": "die Wahrnehmung, -en — EN: perception · FR: la perceptionUnsere Wahrnehmung täuscht uns häufiger, als wir denken.",
+   "en": "perception",
+   "lemma": "die Wahrnehmung"
+  },
+  {
+   "form": "perceptionUnsere",
+   "context": "die Wahrnehmung, -en — EN: perception · FR: la perceptionUnsere Wahrnehmung täuscht uns häufiger, als wir denken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "täuscht",
+   "context": "die Wahrnehmung, -en — EN: perception · FR: la perceptionUnsere Wahrnehmung täuscht uns häufiger, als wir denken.",
+   "en": "deceives, misleads",
+   "lemma": "täuschen"
+  },
+  {
+   "form": "relativieren",
+   "context": "etwas relativieren — EN: to put into perspective · FR: relativiserEine persönliche Begegnung relativiert vieles.",
+   "en": "to put into perspective",
+   "lemma": ""
+  },
+  {
+   "form": "perspective",
+   "context": "etwas relativieren — EN: to put into perspective · FR: relativiserEine persönliche Begegnung relativiert vieles.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "relativiserEine",
+   "context": "etwas relativieren — EN: to put into perspective · FR: relativiserEine persönliche Begegnung relativiert vieles.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Begegnung",
+   "context": "etwas relativieren — EN: to put into perspective · FR: relativiserEine persönliche Begegnung relativiert vieles.",
+   "en": "encounter, meeting",
+   "lemma": "die Begegnung"
+  },
+  {
+   "form": "relativiert",
+   "context": "etwas relativieren — EN: to put into perspective · FR: relativiserEine persönliche Begegnung relativiert vieles.",
+   "en": "puts into perspective",
+   "lemma": "relativieren"
+  },
+  {
+   "form": "vieles",
+   "context": "etwas relativieren — EN: to put into perspective · FR: relativiserEine persönliche Begegnung relativiert vieles.",
+   "en": "a lot, many things",
+   "lemma": "viel"
+  },
+  {
+   "form": "Klischee",
+   "context": "das Klischee, -s — EN: cliché · FR: le clichéDas ist ein Klischee, das nicht zutrifft.",
+   "en": "cliché",
+   "lemma": "das Klischee"
+  },
+  {
+   "form": "cliché",
+   "context": "das Klischee, -s — EN: cliché · FR: le clichéDas ist ein Klischee, das nicht zutrifft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "clichéDas",
+   "context": "das Klischee, -s — EN: cliché · FR: le clichéDas ist ein Klischee, das nicht zutrifft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zutrifft",
+   "context": "das Klischee, -s — EN: cliché · FR: le clichéDas ist ein Klischee, das nicht zutrifft.",
+   "en": "applies, is true",
+   "lemma": "zutreffen"
+  },
+  {
+   "form": "Blick",
+   "context": "Auf den ersten Blick wirkt sie eher …",
+   "en": "look, glance (auf den ersten Blick = at first glance)",
+   "lemma": "der Blick"
+  },
+  {
+   "form": "entkräften",
+   "context": "ein Vorurteil benennen und entkräften",
+   "en": "to refute, invalidate",
+   "lemma": ""
+  },
+  {
+   "form": "verallgemeinern",
+   "context": "vorsichtig verallgemeinern",
+   "en": "to generalise",
+   "lemma": ""
+  },
+  {
+   "form": "Tendenziell",
+   "context": "Tendenziell beobachtet man, dass …",
+   "en": "on the whole, tending to",
+   "lemma": ""
+  },
+  {
+   "form": "beobachtet",
+   "context": "Tendenziell beobachtet man, dass …",
+   "en": "observes; observed",
+   "lemma": "beobachten"
+  },
+  {
+   "form": "trifft",
+   "context": "Das trifft allenfalls auf einen Teil zu.",
+   "en": "(trifft … zu) applies; meets",
+   "lemma": "treffen"
+  },
+  {
+   "form": "allenfalls",
+   "context": "Das trifft allenfalls auf einen Teil zu.",
+   "en": "at most, at best",
+   "lemma": ""
+  },
+  {
+   "form": "Weitem",
+   "context": "Wir haben ihn schon von Weitem kommen ___. (sehen, Perfekt)",
+   "en": "von Weitem = from a distance",
+   "lemma": "weit"
+  },
+  {
+   "form": "Nebenzimmer",
+   "context": "Ich habe ihn im Nebenzimmer telefonieren ___. (hören, Perfekt)",
+   "en": "next room",
+   "lemma": "das Nebenzimmer"
+  },
+  {
+   "form": "Tagebucheintrag",
+   "context": "Schreiben Sie einen Tagebucheintrag über eine Begegnung, bei der sich ein Vorurteil von Ihnen als falsch erwiesen hat. Umfang: 150–200 Wörter Checkliste: • Beschreiben Sie zuerst Ihre Erwartung an die Person oder Situation. • Erzählen Sie dann, was tatsächlich passiert ist. • Verwenden Sie mindestens einen Satz mit Ersatzinfinitiv. • Formulieren Sie am Schluss, was Sie daraus mitnehmen.",
+   "en": "diary entry",
+   "lemma": "der Tagebucheintrag"
+  },
+  {
+   "form": "erwiesen",
+   "context": "Schreiben Sie einen Tagebucheintrag über eine Begegnung, bei der sich ein Vorurteil von Ihnen als falsch erwiesen hat. Umfang: 150–200 Wörter Checkliste: • Beschreiben Sie zuerst Ihre Erwartung an die Person oder Situation. • Erzählen Sie dann, was tatsächlich passiert ist. • Verwenden Sie mindestens einen Satz mit Ersatzinfinitiv. • Formulieren Sie am Schluss, was Sie daraus mitnehmen.",
+   "en": "proved (sich erweisen = to turn out)",
+   "lemma": "erweisen"
+  },
+  {
+   "form": "daraus",
+   "context": "Schreiben Sie einen Tagebucheintrag über eine Begegnung, bei der sich ein Vorurteil von Ihnen als falsch erwiesen hat. Umfang: 150–200 Wörter Checkliste: • Beschreiben Sie zuerst Ihre Erwartung an die Person oder Situation. • Erzählen Sie dann, was tatsächlich passiert ist. • Verwenden Sie mindestens einen Satz mit Ersatzinfinitiv. • Formulieren Sie am Schluss, was Sie daraus mitnehmen.",
+   "en": "from it",
+   "lemma": ""
+  },
+  {
+   "form": "mitnehmen",
+   "context": "Schreiben Sie einen Tagebucheintrag über eine Begegnung, bei der sich ein Vorurteil von Ihnen als falsch erwiesen hat. Umfang: 150–200 Wörter Checkliste: • Beschreiben Sie zuerst Ihre Erwartung an die Person oder Situation. • Erzählen Sie dann, was tatsächlich passiert ist. • Verwenden Sie mindestens einen Satz mit Ersatzinfinitiv. • Formulieren Sie am Schluss, was Sie daraus mitnehmen.",
+   "en": "to take away; take along",
+   "lemma": ""
+  }
+ ]
+}
