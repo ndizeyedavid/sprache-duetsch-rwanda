@@ -1,0 +1,705 @@
+{
+ "level": "B2",
+ "lesson": 4,
+ "title": "Wie würden Sie gern leben? — Ich habe vor, aufs Land zu ziehen",
+ "lines": [
+  {
+   "de": "Über Wohn- und Lebensformen sprechen — und wählen, wann zu + Infinitiv und wann dass steht.",
+   "en": "Talking about ways of housing and living — and choosing when to use zu + infinitive and when to use dass."
+  },
+  {
+   "de": "Textsorte: Lied · Forumsbeiträge",
+   "en": "Text type: song · forum posts"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 2 (Diskussion); telc B2 Lesen",
+   "en": "Exam link: Goethe B2 Speaking part 2 (discussion); telc B2 Reading"
+  },
+  {
+   "de": "über verschiedene Wohn- und Lebensformen sprechen",
+   "en": "talk about different ways of housing and living"
+  },
+  {
+   "de": "ausdrücken, was zu Hause für einen bedeutet",
+   "en": "express what home means to you"
+  },
+  {
+   "de": "Infinitivsätze mit zu und Nebensätze mit dass sicher unterscheiden",
+   "en": "confidently tell apart infinitive clauses (Infinitivsätze) with zu and subordinate clauses with dass"
+  },
+  {
+   "de": "Grammatik: Infinitivsatz mit zu oder Nebensatz mit dass?",
+   "en": "Grammar: infinitive clause (Infinitivsatz) with zu or subordinate clause with dass?"
+  },
+  {
+   "de": "Beide Formen hängen von denselben Verben und Ausdrücken ab. Entscheidend ist das Subjekt: Ist es in Haupt- und Nebensatz gleich, benutzt man den kürzeren Infinitivsatz mit zu. Sind die Subjekte verschieden, ist nur dass möglich.",
+   "en": "Both forms depend on the same verbs and expressions. The subject is what matters: if it is the same in the main clause and the subordinate clause, you use the shorter infinitive clause with zu. If the subjects are different, only dass is possible."
+  },
+  {
+   "de": "Infinitiv mit zu",
+   "en": "Infinitive with zu"
+  },
+  {
+   "de": "Ich habe vor, in eine WG zu ziehen.",
+   "en": "I'm planning to move into a shared flat."
+  },
+  {
+   "de": "dass-Satz",
+   "en": "dass clause"
+  },
+  {
+   "de": "Ich habe gehört, dass meine Schwester in eine WG zieht.",
+   "en": "I've heard that my sister is moving into a shared flat."
+  },
+  {
+   "de": "unpersönliches es",
+   "en": "impersonal es"
+  },
+  {
+   "de": "beides möglich",
+   "en": "both possible"
+  },
+  {
+   "de": "Es ist schön, zu Hause anzukommen. / Es ist schön, dass du da bist.",
+   "en": "It's nice to arrive home. / It's nice that you're here."
+  },
+  {
+   "de": "nach Modalverb",
+   "en": "after a modal verb"
+  },
+  {
+   "de": "nur dass",
+   "en": "only dass"
+  },
+  {
+   "de": "Ich hoffe, dass ich bald umziehen kann.",
+   "en": "I hope that I can move soon."
+  },
+  {
+   "de": "Sie träumt davon, ein kleines Haus am Stadtrand zu kaufen.gleiches Subjekt → zu + Infinitiv",
+   "en": "She dreams of buying a small house on the outskirts of town. Same subject → zu + infinitive"
+  },
+  {
+   "de": "Sie freut sich darüber, dass ihre Eltern nebenan wohnen.anderes Subjekt → dass",
+   "en": "She is happy that her parents live next door. Different subject → dass"
+  },
+  {
+   "de": "Ich bitte dich, pünktlich zu kommen.Ausnahme: nach bitten, raten, empfehlen bezieht sich der Infinitiv auf das Objekt (dich)",
+   "en": "I'm asking you to come on time. Exception: after bitten, raten, empfehlen, the infinitive refers to the object (dich)"
+  },
+  {
+   "de": "Tipp: Nach einem Verb mit Präposition steht im Hauptsatz ein Präpositionaladverb: Ich freue mich darauf, … zu … / Ich freue mich darauf, dass …",
+   "en": "Tip: After a verb with a preposition, the main clause has a prepositional adverb (Präpositionaladverb): Ich freue mich darauf, … zu … / Ich freue mich darauf, dass …"
+  },
+  {
+   "de": "die Wohnform, -en — EN: form of living · FR: le mode d'habitatEs gibt heute viele alternative Wohnformen.",
+   "en": "Example: Today there are many alternative forms of housing."
+  },
+  {
+   "de": "die Wohngemeinschaft, -en (WG) — EN: shared flat · FR: la colocationIn einer WG lernt man viel über Kompromisse.",
+   "en": "Example: In a shared flat, you learn a lot about compromise."
+  },
+  {
+   "de": "das Eigenheim, -e — EN: owner-occupied home · FR: la maison individuelleFür viele ist das Eigenheim immer noch das Ziel.",
+   "en": "Example: For many people, a home of their own is still the goal."
+  },
+  {
+   "de": "der Wohnraum (Sg.) — EN: housing, living space · FR: le logementBezahlbarer Wohnraum wird knapp.",
+   "en": "Example: Affordable housing is becoming scarce."
+  },
+  {
+   "de": "sich niederlassen — EN: to settle down · FR: s'installerIrgendwann möchte ich mich dort niederlassen.",
+   "en": "Example: At some point I'd like to settle down there."
+  },
+  {
+   "de": "das Zugehörigkeitsgefühl (Sg.) — EN: sense of belonging · FR: le sentiment d'appartenanceZu Hause ist für mich ein Zugehörigkeitsgefühl.",
+   "en": "Example: For me, home is a sense of belonging."
+  },
+  {
+   "de": "der Kompromiss, -e — EN: compromise · FR: le compromisOhne Kompromisse funktioniert kein Zusammenleben.",
+   "en": "Example: Living together never works without compromise."
+  },
+  {
+   "de": "die Privatsphäre (Sg.) — EN: privacy · FR: la vie privéeMir ist Privatsphäre wichtiger als Gesellschaft.",
+   "en": "Example: Privacy is more important to me than company."
+  },
+  {
+   "de": "beengt — EN: cramped · FR: exiguZu fünft war es doch sehr beengt.",
+   "en": "Example: With five of us, it really was very cramped."
+  },
+  {
+   "de": "der Stadtrand (Sg.) / das Umland (Sg.) — EN: outskirts / surrounding area · FR: la périphérieViele ziehen ins Umland, weil die Mieten dort niedriger sind.",
+   "en": "Example: Many people move to the surrounding area because rents are lower there."
+  },
+  {
+   "de": "die Infrastruktur (Sg.) — EN: infrastructure · FR: l'infrastructureAuf dem Land fehlt oft die Infrastruktur.",
+   "en": "Example: In the countryside, the infrastructure is often lacking."
+  },
+  {
+   "de": "sesshaft werden — EN: to settle, put down roots · FR: se sédentariserMit vierzig bin ich endlich sesshaft geworden.",
+   "en": "Example: At forty, I finally settled down."
+  },
+  {
+   "de": "das Zusammenleben (Sg.) — EN: living together · FR: la vie en communDas Zusammenleben muss man aushandeln.",
+   "en": "Example: Living together is something you have to negotiate."
+  },
+  {
+   "de": "sich etwas leisten können — EN: to be able to afford sth. · FR: pouvoir se permettre qc.Eine eigene Wohnung kann ich mir hier nicht leisten.",
+   "en": "Example: I can't afford a flat of my own here."
+  },
+  {
+   "de": "Wünsche und Vorlieben ausdrücken",
+   "en": "Expressing wishes and preferences"
+  },
+  {
+   "de": "Ich könnte mir gut vorstellen, … zu …",
+   "en": "I could easily imagine …"
+  },
+  {
+   "de": "Für mich käme das überhaupt nicht infrage.",
+   "en": "For me, that would be completely out of the question."
+  },
+  {
+   "de": "Das hat sicher Vorteile, allerdings …",
+   "en": "That certainly has advantages, however …"
+  },
+  {
+   "de": "Was für mich den Ausschlag geben würde, wäre …",
+   "en": "What would tip the balance for me would be …"
+  },
+  {
+   "de": "sagen, was zu Hause bedeutet",
+   "en": "Saying what home means"
+  },
+  {
+   "de": "Zu Hause ist für mich weniger ein Ort als …",
+   "en": "For me, home is less a place than …"
+  },
+  {
+   "de": "Ich fühle mich überall dort zu Hause, wo …",
+   "en": "I feel at home wherever …"
+  },
+  {
+   "de": "Heimat hat für mich viel mit … zu tun.",
+   "en": "For me, home has a lot to do with …"
+  },
+  {
+   "de": "Es gibt heute viele alternative Wohnformen.",
+   "en": "Today there are many alternative forms of housing."
+  },
+  {
+   "de": "In einer WG lernt man viel über Kompromisse.",
+   "en": "In a shared flat, you learn a lot about compromise."
+  },
+  {
+   "de": "Für viele ist das Eigenheim immer noch das Ziel.",
+   "en": "For many people, a home of their own is still the goal."
+  },
+  {
+   "de": "Bezahlbarer Wohnraum wird knapp.",
+   "en": "Affordable housing is becoming scarce."
+  },
+  {
+   "de": "Irgendwann möchte ich mich dort niederlassen.",
+   "en": "At some point I'd like to settle down there."
+  },
+  {
+   "de": "Zu Hause ist für mich ein Zugehörigkeitsgefühl.",
+   "en": "For me, home is a sense of belonging."
+  },
+  {
+   "de": "Ohne Kompromisse funktioniert kein Zusammenleben.",
+   "en": "Living together never works without compromise."
+  },
+  {
+   "de": "Mir ist Privatsphäre wichtiger als Gesellschaft.",
+   "en": "Privacy is more important to me than company."
+  },
+  {
+   "de": "Zu fünft war es doch sehr beengt.",
+   "en": "With five of us, it really was very cramped."
+  },
+  {
+   "de": "Viele ziehen ins Umland, weil die Mieten dort niedriger sind.",
+   "en": "Many people move to the surrounding area because rents are lower there."
+  },
+  {
+   "de": "Auf dem Land fehlt oft die Infrastruktur.",
+   "en": "In the countryside, the infrastructure is often lacking."
+  },
+  {
+   "de": "Mit vierzig bin ich endlich sesshaft geworden.",
+   "en": "At forty, I finally settled down."
+  },
+  {
+   "de": "Das Zusammenleben muss man aushandeln.",
+   "en": "Living together is something you have to negotiate."
+  },
+  {
+   "de": "Eine eigene Wohnung kann ich mir hier nicht leisten.",
+   "en": "I can't afford a flat of my own here."
+  },
+  {
+   "de": "Ich hoffe, ___ bald eine Wohnung finde.",
+   "en": "I hope ___ find a flat soon."
+  },
+  {
+   "de": "Sie hat vor, nächstes Jahr aufs Land ___ ___. (ziehen)",
+   "en": "She is planning ___ ___ to the countryside next year. (ziehen)"
+  },
+  {
+   "de": "Welcher Satz braucht zwingend dass?",
+   "en": "Which sentence must have dass?"
+  },
+  {
+   "de": "Es ist nicht leicht, in dieser Stadt etwas Bezahlbares ___ ___. (finden)",
+   "en": "It isn't easy ___ ___ something affordable in this city. (finden)"
+  },
+  {
+   "de": "Ich bitte dich, mir morgen kurz ___ ___. (helfen)",
+   "en": "I'm asking you ___ ___ me briefly tomorrow. (helfen)"
+  },
+  {
+   "de": "Welche Ergänzung passt? „Sie träumt ___, ein Haus zu bauen.\"",
+   "en": "Which completion fits? “She dreams ___ building a house.”"
+  },
+  {
+   "de": "Schreiben Sie einen Forumsbeitrag zur Frage: „Stadt oder Land — wo lebt es sich besser?\" Begründen Sie Ihre Position. Umfang: 160–200 Wörter Checkliste: • Beziehen Sie sich am Anfang auf die Frage des Forums. • Nennen Sie zwei Argumente mit je einem Beispiel. • Verwenden Sie mindestens zwei Infinitivsätze mit zu. • Schließen Sie mit einer klaren Empfehlung oder Frage an die anderen.",
+   "en": "Write a forum post on the question: “City or countryside — where is life better?” Give reasons for your position. Length: 160–200 words Checklist: • At the beginning, refer to the forum's question. • Give two arguments, each with an example. • Use at least two infinitive clauses with zu. • End with a clear recommendation or a question to the others."
+  },
+  {
+   "de": "Mit Modalverb oder konjugiertem Verb im Nebensatz steht dass; hier ist auch der kurze Infinitivsatz möglich, aber nur in der Form „zu finden\" ohne Subjekt.",
+   "en": "With a modal verb or a conjugated verb in the subordinate clause, you use dass; the short infinitive clause is also possible here, but only in the form “zu finden” without a subject."
+  },
+  {
+   "de": "Gleiches Subjekt → Infinitivsatz mit zu.",
+   "en": "Same subject → infinitive clause with zu."
+  },
+  {
+   "de": "Die Subjekte sind verschieden (ich / du), deshalb ist nur ein dass-Satz möglich.",
+   "en": "The subjects are different (ich / du), so only a dass clause is possible."
+  },
+  {
+   "de": "Nach einer es-Konstruktion folgt der Infinitiv mit zu.",
+   "en": "After an es construction comes the infinitive with zu."
+  },
+  {
+   "de": "Nach bitten bezieht sich der Infinitivsatz auf das Objekt dich — trotzdem steht zu + Infinitiv.",
+   "en": "After bitten, the infinitive clause refers to the object dich — even so, you use zu + infinitive."
+  },
+  {
+   "de": "träumen von → Präpositionaladverb davon.",
+   "en": "träumen von → prepositional adverb davon."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Wohn",
+   "context": "Über Wohn- und Lebensformen sprechen — und wählen, wann zu + Infinitiv und wann dass steht.",
+   "en": "housing, living (Wohn- in compounds)",
+   "lemma": "wohnen"
+  },
+  {
+   "form": "Lebensformen",
+   "context": "Über Wohn- und Lebensformen sprechen — und wählen, wann zu + Infinitiv und wann dass steht.",
+   "en": "ways of life, lifestyles",
+   "lemma": "die Lebensform"
+  },
+  {
+   "form": "Lied",
+   "context": "Textsorte: Lied · Forumsbeiträge",
+   "en": "song",
+   "lemma": "das Lied"
+  },
+  {
+   "form": "Forumsbeiträge",
+   "context": "Textsorte: Lied · Forumsbeiträge",
+   "en": "forum posts",
+   "lemma": "der Forumsbeitrag"
+  },
+  {
+   "form": "Infinitivsätze",
+   "context": "Infinitivsätze mit zu und Nebensätze mit dass sicher unterscheiden",
+   "en": "infinitive clauses",
+   "lemma": "der Infinitivsatz"
+  },
+  {
+   "form": "kürzeren",
+   "context": "Beide Formen hängen von denselben Verben und Ausdrücken ab. Entscheidend ist das Subjekt: Ist es in Haupt- und Nebensatz gleich, benutzt man den kürzeren Infinitivsatz mit zu. Sind die Subjekte verschieden, ist nur dass möglich.",
+   "en": "shorter",
+   "lemma": "kurz"
+  },
+  {
+   "form": "zieht",
+   "context": "Ich habe gehört, dass meine Schwester in eine WG zieht.",
+   "en": "moves; pulls",
+   "lemma": "ziehen"
+  },
+  {
+   "form": "anzukommen",
+   "context": "Es ist schön, zu Hause anzukommen. / Es ist schön, dass du da bist.",
+   "en": "to arrive",
+   "lemma": "ankommen"
+  },
+  {
+   "form": "träumt",
+   "context": "Sie träumt davon, ein kleines Haus am Stadtrand zu kaufen.gleiches Subjekt → zu + Infinitiv",
+   "en": "dreams",
+   "lemma": "träumen"
+  },
+  {
+   "form": "Wohnform",
+   "context": "die Wohnform, -en — EN: form of living · FR: le mode d'habitatEs gibt heute viele alternative Wohnformen.",
+   "en": "form of housing",
+   "lemma": "die Wohnform"
+  },
+  {
+   "form": "mode",
+   "context": "die Wohnform, -en — EN: form of living · FR: le mode d'habitatEs gibt heute viele alternative Wohnformen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'habitatEs",
+   "context": "die Wohnform, -en — EN: form of living · FR: le mode d'habitatEs gibt heute viele alternative Wohnformen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Wohnformen",
+   "context": "die Wohnform, -en — EN: form of living · FR: le mode d'habitatEs gibt heute viele alternative Wohnformen.",
+   "en": "forms of housing",
+   "lemma": "die Wohnform"
+  },
+  {
+   "form": "colocationIn",
+   "context": "die Wohngemeinschaft, -en (WG) — EN: shared flat · FR: la colocationIn einer WG lernt man viel über Kompromisse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Kompromisse",
+   "context": "die Wohngemeinschaft, -en (WG) — EN: shared flat · FR: la colocationIn einer WG lernt man viel über Kompromisse.",
+   "en": "compromises",
+   "lemma": "der Kompromiss"
+  },
+  {
+   "form": "Eigenheim",
+   "context": "das Eigenheim, -e — EN: owner-occupied home · FR: la maison individuelleFür viele ist das Eigenheim immer noch das Ziel.",
+   "en": "own home",
+   "lemma": "das Eigenheim"
+  },
+  {
+   "form": "owner-occupied",
+   "context": "das Eigenheim, -e — EN: owner-occupied home · FR: la maison individuelleFür viele ist das Eigenheim immer noch das Ziel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "maison",
+   "context": "das Eigenheim, -e — EN: owner-occupied home · FR: la maison individuelleFür viele ist das Eigenheim immer noch das Ziel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "individuelleFür",
+   "context": "das Eigenheim, -e — EN: owner-occupied home · FR: la maison individuelleFür viele ist das Eigenheim immer noch das Ziel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Wohnraum",
+   "context": "der Wohnraum (Sg.) — EN: housing, living space · FR: le logementBezahlbarer Wohnraum wird knapp.",
+   "en": "housing, living space",
+   "lemma": "der Wohnraum"
+  },
+  {
+   "form": "housing",
+   "context": "der Wohnraum (Sg.) — EN: housing, living space · FR: le logementBezahlbarer Wohnraum wird knapp.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "logementBezahlbarer",
+   "context": "der Wohnraum (Sg.) — EN: housing, living space · FR: le logementBezahlbarer Wohnraum wird knapp.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "knapp",
+   "context": "der Wohnraum (Sg.) — EN: housing, living space · FR: le logementBezahlbarer Wohnraum wird knapp.",
+   "en": "scarce; barely",
+   "lemma": ""
+  },
+  {
+   "form": "niederlassen",
+   "context": "sich niederlassen — EN: to settle down · FR: s'installerIrgendwann möchte ich mich dort niederlassen.",
+   "en": "to settle (down)",
+   "lemma": ""
+  },
+  {
+   "form": "s'installerIrgendwann",
+   "context": "sich niederlassen — EN: to settle down · FR: s'installerIrgendwann möchte ich mich dort niederlassen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Zugehörigkeitsgefühl",
+   "context": "das Zugehörigkeitsgefühl (Sg.) — EN: sense of belonging · FR: le sentiment d'appartenanceZu Hause ist für mich ein Zugehörigkeitsgefühl.",
+   "en": "sense of belonging",
+   "lemma": "das Zugehörigkeitsgefühl"
+  },
+  {
+   "form": "sense",
+   "context": "das Zugehörigkeitsgefühl (Sg.) — EN: sense of belonging · FR: le sentiment d'appartenanceZu Hause ist für mich ein Zugehörigkeitsgefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "belonging",
+   "context": "das Zugehörigkeitsgefühl (Sg.) — EN: sense of belonging · FR: le sentiment d'appartenanceZu Hause ist für mich ein Zugehörigkeitsgefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sentiment",
+   "context": "das Zugehörigkeitsgefühl (Sg.) — EN: sense of belonging · FR: le sentiment d'appartenanceZu Hause ist für mich ein Zugehörigkeitsgefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'appartenanceZu",
+   "context": "das Zugehörigkeitsgefühl (Sg.) — EN: sense of belonging · FR: le sentiment d'appartenanceZu Hause ist für mich ein Zugehörigkeitsgefühl.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Kompromiss",
+   "context": "der Kompromiss, -e — EN: compromise · FR: le compromisOhne Kompromisse funktioniert kein Zusammenleben.",
+   "en": "compromise",
+   "lemma": "der Kompromiss"
+  },
+  {
+   "form": "compromise",
+   "context": "der Kompromiss, -e — EN: compromise · FR: le compromisOhne Kompromisse funktioniert kein Zusammenleben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "compromisOhne",
+   "context": "der Kompromiss, -e — EN: compromise · FR: le compromisOhne Kompromisse funktioniert kein Zusammenleben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Zusammenleben",
+   "context": "der Kompromiss, -e — EN: compromise · FR: le compromisOhne Kompromisse funktioniert kein Zusammenleben.",
+   "en": "living together",
+   "lemma": "das Zusammenleben"
+  },
+  {
+   "form": "Privatsphäre",
+   "context": "die Privatsphäre (Sg.) — EN: privacy · FR: la vie privéeMir ist Privatsphäre wichtiger als Gesellschaft.",
+   "en": "privacy",
+   "lemma": "die Privatsphäre"
+  },
+  {
+   "form": "privacy",
+   "context": "die Privatsphäre (Sg.) — EN: privacy · FR: la vie privéeMir ist Privatsphäre wichtiger als Gesellschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vie",
+   "context": "die Privatsphäre (Sg.) — EN: privacy · FR: la vie privéeMir ist Privatsphäre wichtiger als Gesellschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "privéeMir",
+   "context": "die Privatsphäre (Sg.) — EN: privacy · FR: la vie privéeMir ist Privatsphäre wichtiger als Gesellschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beengt",
+   "context": "beengt — EN: cramped · FR: exiguZu fünft war es doch sehr beengt.",
+   "en": "cramped",
+   "lemma": ""
+  },
+  {
+   "form": "exiguZu",
+   "context": "beengt — EN: cramped · FR: exiguZu fünft war es doch sehr beengt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fünft",
+   "context": "beengt — EN: cramped · FR: exiguZu fünft war es doch sehr beengt.",
+   "en": "(zu fünft) five of us",
+   "lemma": ""
+  },
+  {
+   "form": "Umland",
+   "context": "der Stadtrand (Sg.) / das Umland (Sg.) — EN: outskirts / surrounding area · FR: la périphérieViele ziehen ins Umland, weil die Mieten dort niedriger sind.",
+   "en": "surrounding area",
+   "lemma": "das Umland"
+  },
+  {
+   "form": "surrounding",
+   "context": "der Stadtrand (Sg.) / das Umland (Sg.) — EN: outskirts / surrounding area · FR: la périphérieViele ziehen ins Umland, weil die Mieten dort niedriger sind.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "périphérieViele",
+   "context": "der Stadtrand (Sg.) / das Umland (Sg.) — EN: outskirts / surrounding area · FR: la périphérieViele ziehen ins Umland, weil die Mieten dort niedriger sind.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "niedriger",
+   "context": "der Stadtrand (Sg.) / das Umland (Sg.) — EN: outskirts / surrounding area · FR: la périphérieViele ziehen ins Umland, weil die Mieten dort niedriger sind.",
+   "en": "lower",
+   "lemma": "niedrig"
+  },
+  {
+   "form": "Infrastruktur",
+   "context": "die Infrastruktur (Sg.) — EN: infrastructure · FR: l'infrastructureAuf dem Land fehlt oft die Infrastruktur.",
+   "en": "infrastructure",
+   "lemma": "die Infrastruktur"
+  },
+  {
+   "form": "infrastructure",
+   "context": "die Infrastruktur (Sg.) — EN: infrastructure · FR: l'infrastructureAuf dem Land fehlt oft die Infrastruktur.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'infrastructureAuf",
+   "context": "die Infrastruktur (Sg.) — EN: infrastructure · FR: l'infrastructureAuf dem Land fehlt oft die Infrastruktur.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sesshaft",
+   "context": "sesshaft werden — EN: to settle, put down roots · FR: se sédentariserMit vierzig bin ich endlich sesshaft geworden.",
+   "en": "settled (sesshaft werden = to settle down)",
+   "lemma": ""
+  },
+  {
+   "form": "roots",
+   "context": "sesshaft werden — EN: to settle, put down roots · FR: se sédentariserMit vierzig bin ich endlich sesshaft geworden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sédentariserMit",
+   "context": "sesshaft werden — EN: to settle, put down roots · FR: se sédentariserMit vierzig bin ich endlich sesshaft geworden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "communDas",
+   "context": "das Zusammenleben (Sg.) — EN: living together · FR: la vie en communDas Zusammenleben muss man aushandeln.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aushandeln",
+   "context": "das Zusammenleben (Sg.) — EN: living together · FR: la vie en communDas Zusammenleben muss man aushandeln.",
+   "en": "to negotiate",
+   "lemma": ""
+  },
+  {
+   "form": "leisten",
+   "context": "sich etwas leisten können — EN: to be able to afford sth. · FR: pouvoir se permettre qc.Eine eigene Wohnung kann ich mir hier nicht leisten.",
+   "en": "to afford (sich leisten); achieve",
+   "lemma": ""
+  },
+  {
+   "form": "afford",
+   "context": "sich etwas leisten können — EN: to be able to afford sth. · FR: pouvoir se permettre qc.Eine eigene Wohnung kann ich mir hier nicht leisten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "permettre",
+   "context": "sich etwas leisten können — EN: to be able to afford sth. · FR: pouvoir se permettre qc.Eine eigene Wohnung kann ich mir hier nicht leisten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "käme",
+   "context": "Für mich käme das überhaupt nicht infrage.",
+   "en": "would come (infrage kommen = to be an option)",
+   "lemma": "kommen"
+  },
+  {
+   "form": "Vorteile",
+   "context": "Das hat sicher Vorteile, allerdings …",
+   "en": "advantages",
+   "lemma": "der Vorteil"
+  },
+  {
+   "form": "Ausschlag",
+   "context": "Was für mich den Ausschlag geben würde, wäre …",
+   "en": "den Ausschlag geben = to tip the balance",
+   "lemma": "der Ausschlag"
+  },
+  {
+   "form": "Bezahlbarer",
+   "context": "Bezahlbarer Wohnraum wird knapp.",
+   "en": "affordable",
+   "lemma": "bezahlbar"
+  },
+  {
+   "form": "Irgendwann",
+   "context": "Irgendwann möchte ich mich dort niederlassen.",
+   "en": "at some point, someday",
+   "lemma": ""
+  },
+  {
+   "form": "zwingend",
+   "context": "Welcher Satz braucht zwingend dass?",
+   "en": "necessarily, absolutely",
+   "lemma": ""
+  },
+  {
+   "form": "Bezahlbares",
+   "context": "Es ist nicht leicht, in dieser Stadt etwas Bezahlbares ___ ___. (finden)",
+   "en": "something affordable",
+   "lemma": "bezahlbar"
+  },
+  {
+   "form": "Ergänzung",
+   "context": "Welche Ergänzung passt? „Sie träumt ___, ein Haus zu bauen.\"",
+   "en": "completion, addition",
+   "lemma": "die Ergänzung"
+  },
+  {
+   "form": "lebt",
+   "context": "Schreiben Sie einen Forumsbeitrag zur Frage: „Stadt oder Land — wo lebt es sich besser?\" Begründen Sie Ihre Position. Umfang: 160–200 Wörter Checkliste: • Beziehen Sie sich am Anfang auf die Frage des Forums. • Nennen Sie zwei Argumente mit je einem Beispiel. • Verwenden Sie mindestens zwei Infinitivsätze mit zu. • Schließen Sie mit einer klaren Empfehlung oder Frage an die anderen.",
+   "en": "lives (wo lebt es sich besser? = where is life better?)",
+   "lemma": "leben"
+  },
+  {
+   "form": "Forums",
+   "context": "Schreiben Sie einen Forumsbeitrag zur Frage: „Stadt oder Land — wo lebt es sich besser?\" Begründen Sie Ihre Position. Umfang: 160–200 Wörter Checkliste: • Beziehen Sie sich am Anfang auf die Frage des Forums. • Nennen Sie zwei Argumente mit je einem Beispiel. • Verwenden Sie mindestens zwei Infinitivsätze mit zu. • Schließen Sie mit einer klaren Empfehlung oder Frage an die anderen.",
+   "en": "of the forum",
+   "lemma": "das Forum"
+  },
+  {
+   "form": "Argumente",
+   "context": "Schreiben Sie einen Forumsbeitrag zur Frage: „Stadt oder Land — wo lebt es sich besser?\" Begründen Sie Ihre Position. Umfang: 160–200 Wörter Checkliste: • Beziehen Sie sich am Anfang auf die Frage des Forums. • Nennen Sie zwei Argumente mit je einem Beispiel. • Verwenden Sie mindestens zwei Infinitivsätze mit zu. • Schließen Sie mit einer klaren Empfehlung oder Frage an die anderen.",
+   "en": "arguments",
+   "lemma": "das Argument"
+  },
+  {
+   "form": "klaren",
+   "context": "Schreiben Sie einen Forumsbeitrag zur Frage: „Stadt oder Land — wo lebt es sich besser?\" Begründen Sie Ihre Position. Umfang: 160–200 Wörter Checkliste: • Beziehen Sie sich am Anfang auf die Frage des Forums. • Nennen Sie zwei Argumente mit je einem Beispiel. • Verwenden Sie mindestens zwei Infinitivsätze mit zu. • Schließen Sie mit einer klaren Empfehlung oder Frage an die anderen.",
+   "en": "clear",
+   "lemma": "klar"
+  }
+ ]
+}
