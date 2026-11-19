@@ -1,0 +1,296 @@
+{
+  "level": "A1",
+  "lesson": 2,
+  "title": "Berufe — Ich arbeite als Krankenpfleger",
+  "titleEn": "Jobs — I work as a nurse",
+  "summary": "Über den Beruf und den Arbeitsplatz sprechen.",
+  "summaryEn": "Talk about your job and your workplace.",
+  "exam": "Goethe-Zertifikat A1 (Start Deutsch 1): Sprechen Teil 1 — sich vorstellen (Beruf)",
+  "goals": [
+    { "de": "den eigenen Beruf nennen", "en": "say what your job is" },
+    { "de": "sagen, wo man arbeitet", "en": "say where you work" },
+    { "de": "Sätze mit nicht verneinen", "en": "make sentences negative with nicht (not)" }
+  ],
+  "vocab": [
+    { "de": "der Beruf, -e", "en": "job, profession", "say": "der Beruf", "example": "Was sind Sie von Beruf?", "exampleEn": "What is your job?", "noteEn": "Plural: die Berufe. von Beruf = by profession: Ich bin Lehrerin von Beruf." },
+    { "de": "arbeiten", "en": "to work", "example": "Ich arbeite seit zwei Jahren hier.", "exampleEn": "I have been working here for two years.", "noteEn": "du arbeitest, er/sie arbeitet — with an extra -e-. German uses the present tense with seit: seit zwei Jahren = for two years." },
+    { "de": "machen", "en": "to do, to make", "example": "Was machen Sie beruflich?", "exampleEn": "What do you do for a living?", "noteEn": "beruflich = for work. With du: Was machst du beruflich?" },
+    { "de": "der Lehrer, - / die Lehrerin, -nen", "en": "teacher", "say": "der Lehrer, die Lehrerin", "example": "Meine Schwester ist Lehrerin.", "exampleEn": "My sister is a teacher.", "noteEn": "Plural: die Lehrer / die Lehrerinnen. No article after sein: Sie ist Lehrerin." },
+    { "de": "der Arzt, ¨-e / die Ärztin, -nen", "en": "doctor", "say": "der Arzt, die Ärztin", "example": "Der Arzt ist sehr freundlich.", "exampleEn": "The doctor is very friendly.", "noteEn": "Plural: die Ärzte / die Ärztinnen." },
+    { "de": "der Krankenpfleger, - / die Krankenpflegerin, -nen", "en": "nurse", "say": "der Krankenpfleger, die Krankenpflegerin", "example": "Er arbeitet als Krankenpfleger.", "exampleEn": "He works as a nurse.", "noteEn": "A man is a Krankenpfleger, a woman a Krankenpflegerin. Plural: die Krankenpfleger / die Krankenpflegerinnen." },
+    { "de": "der Student, -en / die Studentin, -nen", "en": "student (at a university)", "say": "der Student, die Studentin", "example": "Ich bin Studentin.", "exampleEn": "I am a student.", "noteEn": "Plural: die Studenten / die Studentinnen. A pupil at school is der Schüler / die Schülerin." },
+    { "de": "der Verkäufer, - / die Verkäuferin, -nen", "en": "shop assistant, salesperson", "say": "der Verkäufer, die Verkäuferin", "example": "Der Verkäufer hilft mir.", "exampleEn": "The shop assistant helps me.", "noteEn": "Plural: die Verkäufer / die Verkäuferinnen." },
+    { "de": "der Koch, ¨-e / die Köchin, -nen", "en": "cook, chef", "say": "der Koch, die Köchin", "example": "Der Koch arbeitet in einem Hotel.", "exampleEn": "The cook works in a hotel.", "noteEn": "Plural: die Köche / die Köchinnen. Note the umlaut: Koch → Köchin." },
+    { "de": "der Journalist, -en / die Journalistin, -nen", "en": "journalist", "say": "der Journalist, die Journalistin", "example": "Sie arbeitet als Journalistin in Berlin.", "exampleEn": "She works as a journalist in Berlin.", "noteEn": "Plural: die Journalisten / die Journalistinnen." },
+    { "de": "die Firma, Firmen", "en": "company, firm", "say": "die Firma", "example": "Die Firma ist klein.", "exampleEn": "The company is small.", "noteEn": "Plural: die Firmen. bei + company: Ich arbeite bei einer Firma." },
+    { "de": "das Büro, -s", "en": "office", "say": "das Büro", "example": "Mein Büro ist im dritten Stock.", "exampleEn": "My office is on the third floor.", "noteEn": "Plural: die Büros. The stress is on the last syllable: bü-RO." },
+    { "de": "das Krankenhaus, ¨-er", "en": "hospital", "say": "das Krankenhaus", "example": "Ich arbeite in einem Krankenhaus.", "exampleEn": "I work in a hospital.", "noteEn": "Plural: die Krankenhäuser. krank = ill, das Haus = house." },
+    { "de": "die Schule, -n", "en": "school", "say": "die Schule", "example": "Amina arbeitet in einer Schule in Huye.", "exampleEn": "Amina works in a school in Huye.", "noteEn": "Plural: die Schulen." },
+    { "de": "die Arbeit", "en": "work", "say": "die Arbeit", "example": "Die Arbeit ist interessant.", "exampleEn": "The work is interesting.", "noteEn": "Also “job”: Ich suche Arbeit. = I am looking for a job." },
+    { "de": "selbstständig", "en": "self-employed", "example": "Sie ist selbstständig.", "exampleEn": "She is self-employed.", "noteEn": "She works for herself and has her own business." },
+    { "de": "nicht", "en": "not", "example": "Heute arbeite ich nicht.", "exampleEn": "I am not working today.", "noteEn": "nicht makes a sentence negative. The grammar shows where it goes." }
+  ],
+  "grammar": [
+    {
+      "title": "Die Präpositionen als, bei, in",
+      "titleEn": "The prepositions als, bei, in",
+      "explanation": "Für den Beruf braucht man drei kleine Wörter: als für den Beruf, bei für die Firma, in für den Ort oder die Stadt.",
+      "explanationEn": "To talk about work you need three small words: als (as) + your job, bei (at, for) + the company, in (in) + the place or the town. After in and bei, ein changes: in einem Krankenhaus, in einem Büro, in einer Schule, bei einer Firma. Learn these as fixed phrases for now — Lesson 13 explains the endings.",
+      "table": {
+        "head": ["Präposition", "Frage", "Beispiel"],
+        "rows": [["als", "Was machen Sie beruflich?", "Ich arbeite als Krankenpfleger."], ["bei", "Wo arbeiten Sie?", "Ich arbeite bei Siemens."], ["in", "Wo arbeiten Sie?", "Ich arbeite in einem Krankenhaus."], ["in", "Wo leben Sie?", "Ich lebe in Kigali."]]
+      },
+      "examples": [
+        { "de": "Sie arbeitet als Journalistin bei einer Zeitung.", "en": "She works as a journalist for a newspaper.", "note": "als + Beruf, bei + Firma", "noteEn": "als + job, bei + company." },
+        { "de": "Ich bin Lehrer.", "en": "I am a teacher.", "note": "Nach sein steht der Beruf ohne Artikel", "noteEn": "After sein (to be) the job has no article — no ein." },
+        { "de": "Ich arbeite in einem Büro in Huye.", "en": "I work in an office in Huye.", "noteEn": "in + place, in + town." }
+      ],
+      "tip": "Achtung: „Ich bin Lehrer.“ — ohne ein! Das ist anders als im Englischen.",
+      "tipEn": "Careful: Ich bin Lehrer. — no ein! English says “I am a teacher”, German says “I am teacher”."
+    },
+    {
+      "title": "Verneinung mit nicht",
+      "titleEn": "Making sentences negative with nicht",
+      "explanation": "nicht verneint ein Verb, ein Adjektiv oder eine Angabe. Es steht meistens am Satzende — aber vor einem Adjektiv, vor einer Präposition und vor dem Beruf.",
+      "explanationEn": "nicht (not) makes a sentence negative. When it negates the verb, nicht goes to the end of the sentence: Ich arbeite heute nicht. But it goes before an adjective (nicht leicht), before a preposition (nicht in Köln) and before a job after sein (nicht Arzt).",
+      "table": {
+        "head": ["Was wird verneint?", "Position von nicht", "Beispiel"],
+        "rows": [["das Verb", "am Satzende", "Ich arbeite heute nicht."], ["ein Adjektiv", "vor dem Adjektiv", "Die Arbeit ist nicht leicht."], ["eine Präposition", "vor der Präposition", "Sie wohnt nicht in Köln."], ["der Beruf (nach sein)", "vor dem Beruf", "Er ist nicht Arzt."]]
+      },
+      "examples": [
+        { "de": "Jonas arbeitet heute nicht.", "en": "Jonas is not working today.", "note": "nicht am Ende", "noteEn": "nicht negates the verb, so it goes at the end." },
+        { "de": "Er ist nicht Arzt, er ist Krankenpfleger.", "en": "He is not a doctor, he is a nurse.", "note": "nicht vor dem Beruf", "noteEn": "nicht goes before the job." },
+        { "de": "Tom wohnt nicht in Wien.", "en": "Tom does not live in Vienna.", "note": "nicht vor der Präposition", "noteEn": "nicht goes before in + place." }
+      ],
+      "tip": "Ein Nomen mit ein oder eine verneint man meistens mit kein — das lernen Sie in Lektion 5.",
+      "tipEn": "A noun with ein/eine is usually made negative with kein (no, not a) — you will learn this in Lesson 5. For a job you will hear both: Ich bin nicht Arzt. / Ich bin kein Arzt."
+    },
+    {
+      "title": "Wortbildung: Berufe mit -in",
+      "titleEn": "Word building: jobs for women end in -in",
+      "explanation": "Die weibliche Form eines Berufs endet fast immer auf -in. Manchmal kommt ein Umlaut dazu.",
+      "explanationEn": "The female form of a job almost always ends in -in, and its article is die: der Lehrer → die Lehrerin. Sometimes the vowel also changes (a → ä, o → ö): der Arzt → die Ärztin. The plural of -in is -innen: die Lehrerinnen.",
+      "table": {
+        "head": ["maskulin", "feminin"],
+        "rows": [["der Journalist", "die Journalistin"], ["der Lehrer", "die Lehrerin"], ["der Krankenpfleger", "die Krankenpflegerin"], ["der Arzt", "die Ärztin"], ["der Koch", "die Köchin"]]
+      },
+      "examples": [
+        { "de": "Mein Vater ist Koch und meine Mutter ist Ärztin.", "en": "My father is a cook and my mother is a doctor.", "note": "beide ohne Artikel nach sein", "noteEn": "Both jobs have no article after sein." },
+        { "de": "Daniel ist Student und Diane ist Studentin.", "en": "Daniel is a student and Diane is a student, too.", "noteEn": "A man: Student. A woman: Studentin." }
+      ],
+      "tip": "Bei -in kommt manchmal ein Umlaut: Arzt → Ärztin, Koch → Köchin.",
+      "tipEn": "With -in the vowel sometimes gets an umlaut: Arzt → Ärztin, Koch → Köchin."
+    },
+    {
+      "title": "Verben im Präsens: er, sie, wir",
+      "titleEn": "Verbs in the present tense: he, she, we",
+      "explanation": "Für er und sie (eine Person) endet das Verb auf -t, für wir auf -en. Bei arbeiten kommt ein -e- dazu: du arbeitest, er arbeitet. sein ist unregelmäßig: er ist, wir sind.",
+      "explanationEn": "With er (he) and sie (she) the verb ends in -t: er wohnt, sie macht. With wir (we) it ends in -en, just like with Sie: wir wohnen. The stem of arbeiten ends in -t, so it adds an extra -e- for du and er/sie: du arbeitest, er arbeitet. sein is irregular: er ist, sie ist, wir sind. A name or a noun works like er/sie: Jonas arbeitet, mein Vater ist Koch.",
+      "table": {
+        "head": ["", "arbeiten", "machen", "sein"],
+        "rows": [["ich", "arbeite", "mache", "bin"], ["du", "arbeitest", "machst", "bist"], ["er / sie", "arbeitet", "macht", "ist"], ["wir", "arbeiten", "machen", "sind"], ["Sie", "arbeiten", "machen", "sind"]]
+      },
+      "examples": [
+        { "de": "Lena arbeitet bei einer Zeitung.", "en": "Lena works for a newspaper.", "noteEn": "Lena = sie → arbeitet, with the extra -e-." },
+        { "de": "Was macht Patrick? — Er ist Koch.", "en": "What does Patrick do? — He is a cook.", "noteEn": "er → macht, ist." },
+        { "de": "Wir arbeiten zusammen.", "en": "We work together.", "noteEn": "wir → -en, like Sie." },
+        { "de": "Sie arbeitet in Kigali. — Sie arbeiten in Kigali.", "en": "She works in Kigali. — You work in Kigali.", "noteEn": "The ending tells you who it is: sie arbeitet = she, Sie arbeiten = you (polite)." }
+      ],
+      "tip": "er und sie haben dieselbe Form: er arbeitet, sie arbeitet.",
+      "tipEn": "er and sie have the same form: er arbeitet, sie arbeitet. Look at the ending to tell sie (she) from Sie (you): sie arbeitet, Sie arbeiten."
+    }
+  ],
+  "phrases": [
+    { "function": "nach dem Beruf fragen", "functionEn": "asking about someone’s job", "items": [
+      { "de": "Was machen Sie beruflich?", "en": "What do you do for a living?" },
+      { "de": "Was bist du von Beruf?", "en": "What is your job? (informal)" },
+      { "de": "Und wo arbeitest du?", "en": "And where do you work?" }
+    ] },
+    { "function": "den Beruf nennen", "functionEn": "saying what your job is", "items": [
+      { "de": "Ich bin Lehrerin.", "en": "I am a teacher." },
+      { "de": "Ich arbeite als … bei …", "en": "I work as … at/for …" },
+      { "de": "Ich bin noch Studentin.", "en": "I am still a student." }
+    ] },
+    { "function": "verneinen", "functionEn": "saying no", "items": [
+      { "de": "Nein, ich arbeite nicht mehr dort.", "en": "No, I don’t work there any more." },
+      { "de": "Ich bin nicht Arzt, ich bin Krankenpfleger.", "en": "I am not a doctor, I am a nurse." },
+      { "de": "Heute arbeite ich nicht.", "en": "I am not working today." }
+    ] }
+  ],
+  "pronunciation": {
+    "focus": "Wortakzent",
+    "focusEn": "Word stress",
+    "explanation": "In deutschen Wörtern ist meistens die erste Silbe betont. Sprechen Sie diese Silbe lauter und länger. Wörter aus anderen Sprachen sind oft anders.",
+    "explanationEn": "In German words the first syllable is usually stressed: say it louder and longer. Words that come from other languages are often different — the stress is near the end.",
+    "examples": [
+      { "de": "Lehrerin", "en": "teacher (woman) — LEH-re-rin" },
+      { "de": "Arbeit", "en": "work — AR-beit" },
+      { "de": "Krankenpfleger", "en": "nurse — KRAN-ken-pfle-ger" },
+      { "de": "Journalistin", "en": "journalist (woman) — jour-na-LIS-tin: here the second-to-last syllable is stressed" },
+      { "de": "Student", "en": "student — stu-DENT" },
+      { "de": "Büro", "en": "office — bü-RO" }
+    ]
+  },
+  "dialogue": {
+    "title": "Auf einer Party",
+    "titleEn": "At a party",
+    "speakers": { "Lena": "f", "Jonas": "m" },
+    "lines": [
+      { "speaker": "Lena", "de": "Was machst du beruflich, Jonas?", "en": "What do you do for a living, Jonas?" },
+      { "speaker": "Jonas", "de": "Ich arbeite als Krankenpfleger in einem Krankenhaus.", "en": "I work as a nurse in a hospital." },
+      { "speaker": "Lena", "de": "Interessant! Arbeitest du auch nachts?", "en": "Interesting! Do you work at night, too?" },
+      { "speaker": "Jonas", "de": "Ja, manchmal. Und du? Bist du Lehrerin?", "en": "Yes, sometimes. And you? Are you a teacher?" },
+      { "speaker": "Lena", "de": "Nein, ich bin nicht Lehrerin. Ich bin Journalistin.", "en": "No, I’m not a teacher. I’m a journalist." },
+      { "speaker": "Jonas", "de": "Und wo arbeitest du?", "en": "And where do you work?" },
+      { "speaker": "Lena", "de": "Bei einer Zeitung hier in Köln. Aber heute arbeite ich nicht!", "en": "At a newspaper here in Cologne. But today I’m not working!" },
+      { "speaker": "Jonas", "de": "Ich auch nicht. Super!", "en": "Me neither. Great!" }
+    ]
+  },
+  "reading": {
+    "title": "Ich bin Krankenpfleger",
+    "titleEn": "I am a nurse",
+    "paragraphs": [
+      [
+        { "de": "Guten Tag! Ich heiße Jean-Paul Mugabo und wohne in Musanze.", "en": "Hello! My name is Jean-Paul Mugabo and I live in Musanze." },
+        { "de": "Ich bin Krankenpfleger von Beruf.", "en": "I am a nurse by profession." },
+        { "de": "Ich arbeite seit drei Jahren in einem Krankenhaus.", "en": "I have been working in a hospital for three years." },
+        { "de": "Die Arbeit ist nicht leicht, aber sehr interessant.", "en": "The work is not easy, but very interesting." },
+        { "de": "Manchmal arbeite ich auch nachts.", "en": "Sometimes I also work at night." }
+      ],
+      [
+        { "de": "Meine Kollegin Grace ist Ärztin.", "en": "My colleague Grace is a doctor." },
+        { "de": "Sie kommt aus Huye, aber sie wohnt jetzt in Musanze.", "en": "She comes from Huye, but now she lives in Musanze." },
+        { "de": "Mein Freund Patrick ist Koch.", "en": "My friend Patrick is a cook." },
+        { "de": "Er arbeitet nicht bei einer Firma, er ist selbstständig.", "en": "He does not work for a company, he is self-employed." }
+      ],
+      [
+        { "de": "Und Sie? Was machen Sie beruflich?", "en": "And you? What do you do for a living?" }
+      ]
+    ]
+  },
+  "glossary": {
+    "Jonas": ["Jonas (a first name)"],
+    "Lena": ["Lena (a first name)"],
+    "Siemens": ["Siemens (a German company)"]
+  },
+  "sessions": [
+    {
+      "key": "words",
+      "title": "Wörter",
+      "titleEn": "Words",
+      "items": [
+        { "kind": "match", "pairs": [["der Beruf", "job, profession"], ["die Firma", "company"], ["das Büro", "office"], ["das Krankenhaus", "hospital"], ["die Schule", "school"], ["arbeiten", "to work"]] },
+        { "kind": "choose", "prompt": "der Arzt", "listen": true, "options": ["doctor", "nurse", "teacher", "cook"], "optionsLang": "en", "answer": "doctor" },
+        { "kind": "choose", "promptEn": "Which word means “teacher” for a woman?", "options": ["Lehrerin", "Lehrer", "Ärztin", "Köchin"], "answer": "Lehrerin" },
+        { "kind": "choose", "prompt": "selbstständig", "promptEn": "What does this mean?", "options": ["self-employed", "unemployed", "a student", "at the office"], "optionsLang": "en", "answer": "self-employed" },
+        { "kind": "match", "pairs": [["der Lehrer", "teacher"], ["die Köchin", "cook"], ["der Verkäufer", "shop assistant"], ["die Studentin", "student"], ["der Journalist", "journalist"], ["die Krankenpflegerin", "nurse"]] },
+        { "kind": "choose", "prompt": "die Arbeit", "listen": true, "options": ["work", "office", "company", "school"], "optionsLang": "en", "answer": "work" },
+        { "kind": "translate", "from": "de", "text": "Ich bin Studentin.", "answer": "I am a student.", "distractors": ["teacher", "the"] },
+        { "kind": "choose", "promptEn": "Which word means “not”?", "options": ["nicht", "nein", "noch", "nachts"], "answer": "nicht" },
+        { "kind": "translate", "from": "en", "text": "I work in an office.", "answer": "Ich arbeite in einem Büro.", "accepted": ["Ich arbeite im Büro."], "distractors": ["als", "bei", "bin"] },
+        { "kind": "fill", "text": "Was sind Sie von ___?", "answer": "Beruf", "options": ["Beruf", "Arbeit", "Firma"], "en": "What is your job?", "explanationEn": "von Beruf = by profession. Was sind Sie von Beruf? asks about someone’s job." },
+        { "kind": "listen", "mode": "choose", "text": "Die Firma ist klein.", "options": ["Die Firma ist klein.", "Das Büro ist klein.", "Die Schule ist klein."], "en": "The company is small." },
+        { "kind": "choose", "prompt": "Was machen Sie beruflich?", "listen": true, "options": ["What do you do for a living?", "Where do you work?", "Where do you live?"], "optionsLang": "en", "answer": "What do you do for a living?" }
+      ]
+    },
+    {
+      "key": "grammar",
+      "title": "Grammatik",
+      "titleEn": "Grammar",
+      "items": [
+        { "kind": "choose", "promptEn": "Which sentence is correct?", "options": ["Ich bin ein Lehrer.", "Ich bin Lehrer.", "Ich bin der Lehrer von Beruf."], "answer": "Ich bin Lehrer.", "explanationEn": "After sein (to be) the job has no article: Ich bin Lehrer." },
+        { "kind": "fill", "text": "Ich arbeite ___ Journalistin.", "answer": "als", "en": "I work as a journalist.", "hintEn": "preposition for the job", "explanationEn": "als + job: Ich arbeite als Journalistin." },
+        { "kind": "fill", "text": "Sie arbeitet ___ Siemens.", "answer": "bei", "en": "She works at Siemens.", "hintEn": "preposition for the company", "explanationEn": "bei + company: Sie arbeitet bei Siemens." },
+        { "kind": "choose", "prompt": "Ich ___.", "promptEn": "Where does nicht go? “I am not working today.”", "options": ["arbeite heute nicht", "arbeite nicht heute", "nicht arbeite heute"], "answer": "arbeite heute nicht", "explanationEn": "When nicht negates the verb, it goes to the end of the sentence. The verb stays in position 2: Ich arbeite heute nicht." },
+        { "kind": "fill", "text": "der Arzt → die ___", "answer": "Ärztin", "en": "the doctor (a man) → the doctor (a woman)", "hintEn": "female form", "explanationEn": "Arzt + -in, and a becomes ä: die Ärztin." },
+        { "kind": "fill", "text": "Jonas ___ als Krankenpfleger.", "answer": "arbeitet", "options": ["arbeitet", "arbeite", "arbeitest"], "en": "Jonas works as a nurse.", "explanationEn": "Jonas = er. With er/sie the verb ends in -t, and arbeiten adds an extra -e-: er arbeitet." },
+        { "kind": "fill", "text": "Wo ___ du?", "answer": "arbeitest", "en": "Where do you work?", "hintEn": "arbeiten, with du", "explanationEn": "du → -st, and arbeiten adds an extra -e-: du arbeitest." },
+        { "kind": "choose", "prompt": "Claudine ist ___.", "promptEn": "Claudine is a cook.", "options": ["Köchin", "Koch", "Kochin"], "answer": "Köchin", "explanationEn": "Claudine is a woman: Koch + -in, and o becomes ö → Köchin. No article after sein." },
+        { "kind": "fill", "text": "Tom arbeitet ___ Köln.", "answer": "in", "options": ["in", "bei", "als"], "en": "Tom works in Cologne.", "explanationEn": "in + town: in Köln. bei is for a company, als for a job." },
+        { "kind": "choose", "prompt": "Keza ist ___ Lehrerin, sie ist Ärztin.", "promptEn": "Keza is not a teacher, she is a doctor.", "options": ["nicht", "nein", "auch"], "answer": "nicht", "explanationEn": "nicht (not) goes before the job: nicht Lehrerin. nein (no) answers a question." },
+        { "kind": "fill", "text": "Wir ___ Studenten.", "answer": "sind", "options": ["sind", "ist", "bist"], "en": "We are students.", "explanationEn": "sein is irregular: wir sind." },
+        { "kind": "order", "answer": "Was machst du beruflich?", "en": "What do you do for a living?" },
+        { "kind": "order", "answer": "Nachts arbeite ich nicht.", "en": "At night I don’t work." },
+        { "kind": "order", "answer": "Ich bin Krankenpfleger.", "en": "I am a nurse.", "distractors": ["ein"] },
+        { "kind": "order", "answer": "Lena wohnt nicht in Berlin.", "en": "Lena does not live in Berlin." }
+      ]
+    },
+    {
+      "key": "listen",
+      "title": "Hören & Sprechen",
+      "titleEn": "Listening & speaking",
+      "passage": "dialogue",
+      "items": [
+        { "kind": "truefalse", "statement": "Jonas arbeitet in einem Krankenhaus.", "statementEn": "Jonas works in a hospital.", "answer": true },
+        { "kind": "truefalse", "statement": "Lena ist Lehrerin.", "statementEn": "Lena is a teacher.", "answer": false, "explanationEn": "Lena is not a teacher. She is a journalist (Journalistin)." },
+        { "kind": "truefalse", "statement": "Jonas arbeitet manchmal nachts.", "statementEn": "Jonas sometimes works at night.", "answer": true },
+        { "kind": "truefalse", "statement": "Lena arbeitet heute.", "statementEn": "Lena is working today.", "answer": false, "explanationEn": "Lena says: Aber heute arbeite ich nicht! — she is not working today." },
+        { "kind": "listen", "mode": "choose", "text": "Wo arbeitet Lena?", "options": ["Wo arbeitet Lena?", "Wo wohnt Lena?", "Wie heißt Lena?"], "en": "Where does Lena work?" },
+        { "kind": "listen", "mode": "type", "text": "Ich bin Verkäuferin.", "en": "I am a shop assistant." },
+        { "kind": "listen", "mode": "choose", "text": "Sie arbeitet in einer Schule.", "options": ["Sie arbeitet in einer Schule.", "Sie arbeitet bei einer Firma.", "Sie arbeitet in einem Büro."], "en": "She works in a school." },
+        { "kind": "listen", "mode": "type", "text": "Was bist du von Beruf?", "en": "What is your job?" },
+        { "kind": "speak", "text": "Ich arbeite als Lehrerin.", "en": "I work as a teacher." },
+        { "kind": "speak", "text": "Wo arbeiten Sie?", "en": "Where do you work?" },
+        { "kind": "speak", "text": "Ich bin Student in Kigali.", "en": "I am a student in Kigali." }
+      ]
+    },
+    {
+      "key": "read",
+      "title": "Lesen",
+      "titleEn": "Reading",
+      "passage": "reading",
+      "items": [
+        { "kind": "truefalse", "statement": "Jean-Paul wohnt in Kigali.", "statementEn": "Jean-Paul lives in Kigali.", "answer": false, "explanationEn": "Jean-Paul lives in Musanze." },
+        { "kind": "truefalse", "statement": "Jean-Paul ist Krankenpfleger.", "statementEn": "Jean-Paul is a nurse.", "answer": true },
+        { "kind": "choose", "promptEn": "How long has Jean-Paul been working in the hospital?", "options": ["seit zwei Jahren", "seit drei Jahren", "seit vier Jahren"], "answer": "seit drei Jahren" },
+        { "kind": "truefalse", "statement": "Die Arbeit ist leicht.", "statementEn": "The work is easy.", "answer": false, "explanationEn": "Jean-Paul says: Die Arbeit ist nicht leicht, aber sehr interessant." },
+        { "kind": "choose", "promptEn": "What is Grace’s job?", "options": ["Ärztin", "Lehrerin", "Krankenpflegerin", "Köchin"], "answer": "Ärztin" },
+        { "kind": "truefalse", "statement": "Grace kommt aus Musanze.", "statementEn": "Grace comes from Musanze.", "answer": false, "explanationEn": "Grace comes from Huye, but now she lives in Musanze." },
+        { "kind": "choose", "promptEn": "What is true about Patrick?", "options": ["Er ist selbstständig.", "Er arbeitet bei einer Firma.", "Er ist Arzt."], "answer": "Er ist selbstständig." },
+        { "kind": "truefalse", "statement": "Grace ist die Kollegin von Jean-Paul.", "statementEn": "Grace is Jean-Paul’s colleague.", "answer": true }
+      ]
+    },
+    {
+      "key": "translate",
+      "title": "Übersetzen",
+      "titleEn": "Translate",
+      "items": [
+        { "kind": "translate", "from": "de", "text": "Ich arbeite als Krankenpfleger in Kigali.", "answer": "I work as a nurse in Kigali.", "accepted": ["I work in Kigali as a nurse.", "I am working as a nurse in Kigali.", "I work as a male nurse in Kigali."] },
+        { "kind": "translate", "from": "de", "text": "Die Arbeit ist nicht leicht.", "answer": "The work is not easy.", "accepted": ["The job is not easy.", "Work is not easy.", "The work is not light."] },
+        { "kind": "translate", "from": "de", "text": "Sie ist selbstständig.", "answer": "She is self-employed.", "accepted": ["She works for herself.", "She is independent."] },
+        { "kind": "translate", "from": "de", "text": "Mein Vater ist Koch.", "answer": "My father is a cook.", "accepted": ["My father is a chef.", "My dad is a cook.", "My dad is a chef."] },
+        { "kind": "translate", "from": "de", "text": "Er arbeitet bei einer Firma in Huye.", "answer": "He works for a company in Huye.", "accepted": ["He works at a company in Huye.", "He works in a company in Huye.", "He works for a firm in Huye.", "He works at a firm in Huye.", "He works in Huye for a company.", "He is working for a company in Huye."] },
+        { "kind": "translate", "from": "en", "text": "She is a doctor.", "answer": "Sie ist Ärztin.", "distractors": ["eine", "Arzt", "bin"], "explanationEn": "No article after sein, and a woman is an Ärztin." },
+        { "kind": "translate", "from": "en", "text": "Where does Keza work?", "answer": "Wo arbeitet Keza?", "distractors": ["arbeitest", "Wie", "bei"] },
+        { "kind": "translate", "from": "en", "text": "Patrick does not live in Kigali.", "answer": "Patrick wohnt nicht in Kigali.", "accepted": ["Patrick lebt nicht in Kigali."], "distractors": ["nein", "wohnst"] },
+        { "kind": "translate", "from": "en", "text": "He works as a journalist.", "answer": "Er arbeitet als Journalist.", "distractors": ["bei", "Journalistin", "arbeite"] },
+        { "kind": "translate", "from": "en", "text": "I work in a hospital in Musanze.", "answer": "Ich arbeite in einem Krankenhaus in Musanze.", "accepted": ["Ich arbeite im Krankenhaus in Musanze.", "Ich arbeite in Musanze in einem Krankenhaus.", "In Musanze arbeite ich in einem Krankenhaus."] }
+      ]
+    }
+  ],
+  "writing": {
+    "task": "Schreiben Sie über Ihren Beruf oder den Beruf einer Person in Ihrer Familie.",
+    "taskEn": "Write about your job or the job of someone in your family.",
+    "wordRange": "25–35 Wörter",
+    "checklist": [
+      { "de": "Nennen Sie den Beruf (ohne Artikel nach sein).", "en": "Say what the job is (no article after sein)." },
+      { "de": "Schreiben Sie, wo die Person arbeitet (bei / in).", "en": "Write where the person works (bei / in)." },
+      { "de": "Verneinen Sie einen Satz mit nicht.", "en": "Make one sentence negative with nicht." }
+    ],
+    "modelAnswer": "Mein Vater heißt Emmanuel. Er ist Lehrer. Er arbeitet in einer Schule in Huye. Die Arbeit ist interessant, aber nicht leicht. Meine Mutter ist nicht Lehrerin, sie ist Ärztin. Sie arbeitet in einem Krankenhaus.",
+    "modelAnswerEn": "My father’s name is Emmanuel. He is a teacher. He works in a school in Huye. The work is interesting, but not easy. My mother is not a teacher, she is a doctor. She works in a hospital."
+  },
+  "speaking": {
+    "task": "Stellen Sie sich vor und sprechen Sie über Ihren Beruf. Sprechen Sie 30 bis 60 Sekunden.",
+    "taskEn": "Introduce yourself and talk about your job. Speak for 30 to 60 seconds.",
+    "prompts": [
+      { "de": "Name: Wie heißen Sie?", "en": "Name: What is your name?" },
+      { "de": "Land und Wohnort: Woher kommen Sie? Wo wohnen Sie?", "en": "Country and home: Where are you from? Where do you live?" },
+      { "de": "Beruf: Was sind Sie von Beruf?", "en": "Job: What is your job?" },
+      { "de": "Arbeitsplatz: Wo arbeiten Sie?", "en": "Workplace: Where do you work?" },
+      { "de": "Sprachen: Welche Sprachen sprechen Sie?", "en": "Languages: Which languages do you speak?" }
+    ],
+    "modelAnswer": "Guten Tag! Mein Name ist Diane Ingabire. Ich komme aus Ruanda und wohne in Kigali. Ich bin noch Studentin, aber ich arbeite auch als Verkäuferin in einem Supermarkt. Ich spreche Kinyarwanda, Englisch und ein bisschen Deutsch.",
+    "modelAnswerEn": "Hello! My name is Diane Ingabire. I come from Rwanda and live in Kigali. I am still a student, but I also work as a shop assistant in a supermarket. I speak Kinyarwanda, English and a little German."
+  }
+}
