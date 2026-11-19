@@ -1,0 +1,991 @@
+{
+ "level": "A1",
+ "lesson": 7,
+ "title": "Fähigkeiten — Du kannst wirklich gut kochen!",
+ "lines": [
+  {
+   "de": "Sagen, was man kann und was man nicht kann.",
+   "en": "Say what you can do and what you can't do."
+  },
+  {
+   "de": "Textsorte: Gespräch · Kursangebot",
+   "en": "Text type: Conversation · Course offer"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Sprechen Teil 2; telc A1 Sprechen",
+   "en": "Exam link: Start Deutsch 1 Speaking part 2; telc A1 Speaking"
+  },
+  {
+   "de": "sagen, was man gut oder nicht gut kann",
+   "en": "say what you can and can't do well"
+  },
+  {
+   "de": "das Modalverb können verwenden",
+   "en": "use the modal verb können"
+  },
+  {
+   "de": "die Satzklammer im Satz erkennen",
+   "en": "recognise the sentence bracket (Satzklammer) in a sentence"
+  },
+  {
+   "de": "Grammatik: Das Modalverb können",
+   "en": "Grammar: The modal verb (Modalverb) können"
+  },
+  {
+   "de": "können drückt eine Fähigkeit aus. Achtung: ich und er/sie haben dieselbe Form und keine Endung.",
+   "en": "können expresses an ability. Careful: ich and er/sie have the same form and no ending."
+  },
+  {
+   "de": "Person",
+   "en": "="
+  },
+  {
+   "de": "können",
+   "en": "can; to be able to"
+  },
+  {
+   "de": "ich",
+   "en": "I"
+  },
+  {
+   "de": "kann",
+   "en": "can"
+  },
+  {
+   "de": "du",
+   "en": "you (informal)"
+  },
+  {
+   "de": "kannst",
+   "en": "(you) can"
+  },
+  {
+   "de": "er/es/sie",
+   "en": "he/it/she"
+  },
+  {
+   "de": "wir",
+   "en": "we"
+  },
+  {
+   "de": "ihr",
+   "en": "you (informal plural); her"
+  },
+  {
+   "de": "könnt",
+   "en": "(you all) can"
+  },
+  {
+   "de": "sie/Sie",
+   "en": "they/you (polite)"
+  },
+  {
+   "de": "Ich kann gut kochen, aber nicht backen.kann ohne Endung",
+   "en": "I can cook well, but I can't bake. kann without an ending"
+  },
+  {
+   "de": "Kannst du Gitarre spielen?Frage mit kannst",
+   "en": "Can you play the guitar? question with kannst"
+  },
+  {
+   "de": "Tipp: Nicht sagen: „Ich kanne\". Richtig: ich kann, er kann — beide ohne Endung.",
+   "en": "Tip: Don't say: \"Ich kanne\". Correct: ich kann, er kann — both without an ending."
+  },
+  {
+   "de": "Grammatik: Die Satzklammer",
+   "en": "Grammar: The sentence bracket (Satzklammer)"
+  },
+  {
+   "de": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "The modal verb is in position 2, the second verb is in the infinitive at the very end. Together they form a bracket around the sentence."
+  },
+  {
+   "de": "Satztyp",
+   "en": "Sentence type"
+  },
+  {
+   "de": "Pos. 1",
+   "en": "Position 1"
+  },
+  {
+   "de": "Modalverb",
+   "en": "Modal verb"
+  },
+  {
+   "de": "Mitte",
+   "en": "Middle"
+  },
+  {
+   "de": "Infinitiv",
+   "en": "Infinitive"
+  },
+  {
+   "de": "Aussage",
+   "en": "Statement"
+  },
+  {
+   "de": "Du",
+   "en": "You"
+  },
+  {
+   "de": "wirklich gut",
+   "en": "really well"
+  },
+  {
+   "de": "kochen.",
+   "en": "cook."
+  },
+  {
+   "de": "W-Frage",
+   "en": "W-question"
+  },
+  {
+   "de": "Was",
+   "en": "What"
+  },
+  {
+   "de": "du gut",
+   "en": "you … well"
+  },
+  {
+   "de": "machen?",
+   "en": "do?"
+  },
+  {
+   "de": "Ja/Nein-Frage",
+   "en": "Yes/no question"
+  },
+  {
+   "de": "Kannst",
+   "en": "Can (you)"
+  },
+  {
+   "de": "du mir",
+   "en": "you … me"
+  },
+  {
+   "de": "helfen?",
+   "en": "help?"
+  },
+  {
+   "de": "Meine Schwester kann sehr gut Klavier spielen.kann … spielen = Klammer",
+   "en": "My sister can play the piano very well. kann … spielen = bracket"
+  },
+  {
+   "de": "Können Sie das bitte wiederholen?höfliche Bitte",
+   "en": "Can you repeat that, please? polite request"
+  },
+  {
+   "de": "Tipp: Das zweite Verb steht immer im Infinitiv und immer ganz am Ende.",
+   "en": "Tip: The second verb is always in the infinitive and always at the very end."
+  },
+  {
+   "de": "können — EN: can, to be able to · FR: pouvoir, savoirIch kann schwimmen.",
+   "en": "Example: I can swim."
+  },
+  {
+   "de": "kochen — EN: to cook · FR: cuisinerDu kannst wirklich gut kochen!",
+   "en": "Example: You can really cook well!"
+  },
+  {
+   "de": "singen — EN: to sing · FR: chanterSie singt sehr schön.",
+   "en": "Example: She sings very beautifully."
+  },
+  {
+   "de": "tanzen — EN: to dance · FR: danserTanzen kann ich leider nicht.",
+   "en": "Example: Unfortunately, I can't dance."
+  },
+  {
+   "de": "Gitarre spielen — EN: to play the guitar · FR: jouer de la guitareEr spielt seit zehn Jahren Gitarre.",
+   "en": "Example: He has been playing the guitar for ten years."
+  },
+  {
+   "de": "schwimmen — EN: to swim · FR: nagerKannst du schwimmen?",
+   "en": "Example: Can you swim?"
+  },
+  {
+   "de": "Auto fahren — EN: to drive · FR: conduireIch kann noch nicht Auto fahren.",
+   "en": "Example: I can't drive yet."
+  },
+  {
+   "de": "reparieren — EN: to repair · FR: réparerMein Bruder kann alles reparieren.",
+   "en": "Example: My brother can repair everything."
+  },
+  {
+   "de": "gut / sehr gut / nicht so gut — EN: well / very well / not so well · FR: bien / très bien / pas très bienIch spreche nicht so gut Französisch.",
+   "en": "Example: I don't speak French very well."
+  },
+  {
+   "de": "ein bisschen — EN: a little · FR: un peuIch kann ein bisschen Deutsch.",
+   "en": "Example: I can speak a little German."
+  },
+  {
+   "de": "helfen — EN: to help · FR: aiderKannst du mir helfen?",
+   "en": "Example: Can you help me?"
+  },
+  {
+   "de": "der Kurs, -e — EN: course · FR: le coursIch mache einen Kochkurs.",
+   "en": "Example: I am doing a cooking course."
+  },
+  {
+   "de": "über Fähigkeiten sprechen",
+   "en": "talking about abilities"
+  },
+  {
+   "de": "Ich kann gut …",
+   "en": "I can … well."
+  },
+  {
+   "de": "Das kann ich leider nicht.",
+   "en": "Unfortunately, I can't do that."
+  },
+  {
+   "de": "Ich kann ein bisschen …",
+   "en": "I can … a little."
+  },
+  {
+   "de": "jemanden loben",
+   "en": "praising someone"
+  },
+  {
+   "de": "Du kannst wirklich gut kochen!",
+   "en": "You can really cook well!"
+  },
+  {
+   "de": "Das machst du super!",
+   "en": "You do that really well!"
+  },
+  {
+   "de": "Toll, wie du das kannst!",
+   "en": "It's great how well you can do that!"
+  },
+  {
+   "de": "Kannst du mir helfen?",
+   "en": "Can you help me?"
+  },
+  {
+   "de": "Kannst du das noch einmal sagen?",
+   "en": "Can you say that again?"
+  },
+  {
+   "de": "Dialog: Nach dem Essen",
+   "en": "Dialogue: After the meal"
+  },
+  {
+   "de": "Mia: Das war fantastisch! Du kannst wirklich gut kochen.",
+   "en": "Mia: That was fantastic! You can really cook well."
+  },
+  {
+   "de": "Luis: Danke! Kochen kann ich, aber backen kann ich gar nicht.",
+   "en": "Luis: Thanks! I can cook, but I can't bake at all."
+  },
+  {
+   "de": "Mia: Ich auch nicht. Dafür kann ich Gitarre spielen.",
+   "en": "Mia: Me neither. But I can play the guitar."
+  },
+  {
+   "de": "Luis: Wirklich? Kannst du uns etwas vorspielen?",
+   "en": "Luis: Really? Can you play something for us?"
+  },
+  {
+   "de": "Mia: Klar. Aber nur ein bisschen, ich bin nicht so gut.",
+   "en": "Mia: Sure. But only a little, I'm not that good."
+  },
+  {
+   "de": "Luis: Das glaube ich dir nicht!",
+   "en": "Luis: I don't believe you!"
+  },
+  {
+   "de": "Ich kann schwimmen.",
+   "en": "I can swim."
+  },
+  {
+   "de": "Sie singt sehr schön.",
+   "en": "She sings very beautifully."
+  },
+  {
+   "de": "Tanzen kann ich leider nicht.",
+   "en": "Unfortunately, I can't dance."
+  },
+  {
+   "de": "Er spielt seit zehn Jahren Gitarre.",
+   "en": "He has been playing the guitar for ten years."
+  },
+  {
+   "de": "Kannst du schwimmen?",
+   "en": "Can you swim?"
+  },
+  {
+   "de": "Ich kann noch nicht Auto fahren.",
+   "en": "I can't drive yet."
+  },
+  {
+   "de": "Mein Bruder kann alles reparieren.",
+   "en": "My brother can repair everything."
+  },
+  {
+   "de": "Ich spreche nicht so gut Französisch.",
+   "en": "I don't speak French very well."
+  },
+  {
+   "de": "Ich kann ein bisschen Deutsch.",
+   "en": "I can speak a little German."
+  },
+  {
+   "de": "Ich mache einen Kochkurs.",
+   "en": "I am doing a cooking course."
+  },
+  {
+   "de": "Ich ___ gut kochen. (können)",
+   "en": "I ___ cook well. (können)"
+  },
+  {
+   "de": "Welcher Satz ist richtig?",
+   "en": "Which sentence is correct?"
+  },
+  {
+   "de": "___ du mir helfen? (können, du)",
+   "en": "___ you help me? (können, du)"
+  },
+  {
+   "de": "Wo steht das zweite Verb?",
+   "en": "Where does the second verb go?"
+  },
+  {
+   "de": "Meine Eltern ___ sehr gut tanzen. (können, Plural)",
+   "en": "My parents ___ dance very well. (können, plural)"
+  },
+  {
+   "de": "Was können Sie gut und was nicht so gut? Schreiben Sie fünf Sätze. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie fünfmal können mit einem Infinitiv am Ende. • Schreiben Sie zwei positive und zwei negative Sätze. • Benutzen Sie gut, sehr gut, nicht so gut oder ein bisschen.",
+   "en": "What can you do well and what not so well? Write five sentences. Length: 25–35 words Checklist: • Use können five times with an infinitive at the end. • Write two positive and two negative sentences. • Use gut, sehr gut, nicht so gut or ein bisschen."
+  },
+  {
+   "de": "ich kann — ohne Endung.",
+   "en": "ich kann — without an ending."
+  },
+  {
+   "de": "Modalverb auf Position 2, Infinitiv am Ende.",
+   "en": "Modal verb in position 2, infinitive at the end."
+  },
+  {
+   "de": "2. Person Singular: kannst.",
+   "en": "2nd person singular: kannst."
+  },
+  {
+   "de": "Das ist die Satzklammer.",
+   "en": "That is the sentence bracket (Satzklammer)."
+  },
+  {
+   "de": "sie/wir → können.",
+   "en": "="
+  }
+ ],
+ "forms": [
+  {
+   "form": "Kursangebot",
+   "context": "Textsorte: Gespräch · Kursangebot",
+   "en": "course offer",
+   "lemma": "das Kursangebot"
+  },
+  {
+   "form": "Modalverb",
+   "context": "das Modalverb können verwenden",
+   "en": "modal verb",
+   "lemma": "das Modalverb"
+  },
+  {
+   "form": "Satzklammer",
+   "context": "die Satzklammer im Satz erkennen",
+   "en": "sentence bracket",
+   "lemma": "die Satzklammer"
+  },
+  {
+   "form": "erkennen",
+   "context": "die Satzklammer im Satz erkennen",
+   "en": "to recognise",
+   "lemma": ""
+  },
+  {
+   "form": "drückt",
+   "context": "können drückt eine Fähigkeit aus. Achtung: ich und er/sie haben dieselbe Form und keine Endung.",
+   "en": "presses; (… aus) expresses",
+   "lemma": "drücken"
+  },
+  {
+   "form": "Fähigkeit",
+   "context": "können drückt eine Fähigkeit aus. Achtung: ich und er/sie haben dieselbe Form und keine Endung.",
+   "en": "ability, skill",
+   "lemma": "die Fähigkeit"
+  },
+  {
+   "form": "Achtung",
+   "context": "können drückt eine Fähigkeit aus. Achtung: ich und er/sie haben dieselbe Form und keine Endung.",
+   "en": "careful!; attention",
+   "lemma": "die Achtung"
+  },
+  {
+   "form": "dieselbe",
+   "context": "können drückt eine Fähigkeit aus. Achtung: ich und er/sie haben dieselbe Form und keine Endung.",
+   "en": "the same",
+   "lemma": ""
+  },
+  {
+   "form": "Person",
+   "context": "Person",
+   "en": "person",
+   "lemma": "die Person"
+  },
+  {
+   "form": "kannst",
+   "context": "kannst",
+   "en": "can (with du)",
+   "lemma": "können"
+  },
+  {
+   "form": "ihr",
+   "context": "ihr",
+   "en": "you (plural); her; their",
+   "lemma": ""
+  },
+  {
+   "form": "könnt",
+   "context": "könnt",
+   "en": "can (with ihr)",
+   "lemma": "können"
+  },
+  {
+   "form": "kochen",
+   "context": "Ich kann gut kochen, aber nicht backen.kann ohne Endung",
+   "en": "to cook",
+   "lemma": ""
+  },
+  {
+   "form": "backen",
+   "context": "Ich kann gut kochen, aber nicht backen.kann ohne Endung",
+   "en": "to bake",
+   "lemma": ""
+  },
+  {
+   "form": "Kannst",
+   "context": "Kannst du Gitarre spielen?Frage mit kannst",
+   "en": "can (with du)",
+   "lemma": "können"
+  },
+  {
+   "form": "Gitarre",
+   "context": "Kannst du Gitarre spielen?Frage mit kannst",
+   "en": "guitar",
+   "lemma": "die Gitarre"
+  },
+  {
+   "form": "spielen",
+   "context": "Kannst du Gitarre spielen?Frage mit kannst",
+   "en": "to play",
+   "lemma": ""
+  },
+  {
+   "form": "Frage",
+   "context": "Kannst du Gitarre spielen?Frage mit kannst",
+   "en": "question",
+   "lemma": "die Frage"
+  },
+  {
+   "form": "kanne",
+   "context": "Tipp: Nicht sagen: „Ich kanne\". Richtig: ich kann, er kann — beide ohne Endung.",
+   "en": "wrong form (correct: kann)",
+   "lemma": ""
+  },
+  {
+   "form": "beide",
+   "context": "Tipp: Nicht sagen: „Ich kanne\". Richtig: ich kann, er kann — beide ohne Endung.",
+   "en": "both",
+   "lemma": ""
+  },
+  {
+   "form": "Position",
+   "context": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "position",
+   "lemma": "die Position"
+  },
+  {
+   "form": "zweite",
+   "context": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "second",
+   "lemma": ""
+  },
+  {
+   "form": "Verb",
+   "context": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "verb",
+   "lemma": "das Verb"
+  },
+  {
+   "form": "Infinitiv",
+   "context": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "infinitive",
+   "lemma": "der Infinitiv"
+  },
+  {
+   "form": "am",
+   "context": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "at the, on the (an + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "Ende",
+   "context": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "end",
+   "lemma": "das Ende"
+  },
+  {
+   "form": "Klammer",
+   "context": "Das Modalverb steht auf Position 2, das zweite Verb im Infinitiv ganz am Ende. Zusammen bilden sie eine Klammer um den Satz.",
+   "en": "bracket",
+   "lemma": "die Klammer"
+  },
+  {
+   "form": "Satztyp",
+   "context": "Satztyp",
+   "en": "sentence type",
+   "lemma": "der Satztyp"
+  },
+  {
+   "form": "Pos",
+   "context": "Pos. 1",
+   "en": "position (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "Mitte",
+   "context": "Mitte",
+   "en": "middle",
+   "lemma": "die Mitte"
+  },
+  {
+   "form": "Aussage",
+   "context": "Aussage",
+   "en": "statement",
+   "lemma": "die Aussage"
+  },
+  {
+   "form": "W-Frage",
+   "context": "W-Frage",
+   "en": "W-question (with wer, wie, wo …)",
+   "lemma": "die W-Frage"
+  },
+  {
+   "form": "Nein-Frage",
+   "context": "Ja/Nein-Frage",
+   "en": "(Ja/Nein-Frage) yes/no question",
+   "lemma": "die Ja/Nein-Frage"
+  },
+  {
+   "form": "Klavier",
+   "context": "Meine Schwester kann sehr gut Klavier spielen.kann … spielen = Klammer",
+   "en": "piano",
+   "lemma": "das Klavier"
+  },
+  {
+   "form": "höfliche",
+   "context": "Können Sie das bitte wiederholen?höfliche Bitte",
+   "en": "polite",
+   "lemma": "höflich"
+  },
+  {
+   "form": "can",
+   "context": "können — EN: can, to be able to · FR: pouvoir, savoirIch kann schwimmen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "be",
+   "context": "können — EN: can, to be able to · FR: pouvoir, savoirIch kann schwimmen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "able",
+   "context": "können — EN: can, to be able to · FR: pouvoir, savoirIch kann schwimmen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pouvoir",
+   "context": "können — EN: can, to be able to · FR: pouvoir, savoirIch kann schwimmen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "savoirIch",
+   "context": "können — EN: can, to be able to · FR: pouvoir, savoirIch kann schwimmen.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "schwimmen",
+   "context": "können — EN: can, to be able to · FR: pouvoir, savoirIch kann schwimmen.",
+   "en": "to swim",
+   "lemma": ""
+  },
+  {
+   "form": "cook",
+   "context": "kochen — EN: to cook · FR: cuisinerDu kannst wirklich gut kochen!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cuisinerDu",
+   "context": "kochen — EN: to cook · FR: cuisinerDu kannst wirklich gut kochen!",
+   "en": "you (informal)",
+   "lemma": ""
+  },
+  {
+   "form": "singen",
+   "context": "singen — EN: to sing · FR: chanterSie singt sehr schön.",
+   "en": "to sing",
+   "lemma": ""
+  },
+  {
+   "form": "sing",
+   "context": "singen — EN: to sing · FR: chanterSie singt sehr schön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chanterSie",
+   "context": "singen — EN: to sing · FR: chanterSie singt sehr schön.",
+   "en": "she; they; you (polite)",
+   "lemma": ""
+  },
+  {
+   "form": "singt",
+   "context": "singen — EN: to sing · FR: chanterSie singt sehr schön.",
+   "en": "sings",
+   "lemma": "singen"
+  },
+  {
+   "form": "tanzen",
+   "context": "tanzen — EN: to dance · FR: danserTanzen kann ich leider nicht.",
+   "en": "to dance",
+   "lemma": ""
+  },
+  {
+   "form": "dance",
+   "context": "tanzen — EN: to dance · FR: danserTanzen kann ich leider nicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "danserTanzen",
+   "context": "tanzen — EN: to dance · FR: danserTanzen kann ich leider nicht.",
+   "en": "dancing; to dance",
+   "lemma": ""
+  },
+  {
+   "form": "leider",
+   "context": "tanzen — EN: to dance · FR: danserTanzen kann ich leider nicht.",
+   "en": "unfortunately",
+   "lemma": ""
+  },
+  {
+   "form": "play",
+   "context": "Gitarre spielen — EN: to play the guitar · FR: jouer de la guitareEr spielt seit zehn Jahren Gitarre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "guitar",
+   "context": "Gitarre spielen — EN: to play the guitar · FR: jouer de la guitareEr spielt seit zehn Jahren Gitarre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jouer",
+   "context": "Gitarre spielen — EN: to play the guitar · FR: jouer de la guitareEr spielt seit zehn Jahren Gitarre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "de",
+   "context": "Gitarre spielen — EN: to play the guitar · FR: jouer de la guitareEr spielt seit zehn Jahren Gitarre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "guitareEr",
+   "context": "Gitarre spielen — EN: to play the guitar · FR: jouer de la guitareEr spielt seit zehn Jahren Gitarre.",
+   "en": "he",
+   "lemma": ""
+  },
+  {
+   "form": "spielt",
+   "context": "Gitarre spielen — EN: to play the guitar · FR: jouer de la guitareEr spielt seit zehn Jahren Gitarre.",
+   "en": "plays",
+   "lemma": "spielen"
+  },
+  {
+   "form": "swim",
+   "context": "schwimmen — EN: to swim · FR: nagerKannst du schwimmen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nagerKannst",
+   "context": "schwimmen — EN: to swim · FR: nagerKannst du schwimmen?",
+   "en": "can (with du)",
+   "lemma": ""
+  },
+  {
+   "form": "Auto",
+   "context": "Auto fahren — EN: to drive · FR: conduireIch kann noch nicht Auto fahren.",
+   "en": "car",
+   "lemma": "das Auto"
+  },
+  {
+   "form": "fahren",
+   "context": "Auto fahren — EN: to drive · FR: conduireIch kann noch nicht Auto fahren.",
+   "en": "to drive; to go (by vehicle)",
+   "lemma": ""
+  },
+  {
+   "form": "drive",
+   "context": "Auto fahren — EN: to drive · FR: conduireIch kann noch nicht Auto fahren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "conduireIch",
+   "context": "Auto fahren — EN: to drive · FR: conduireIch kann noch nicht Auto fahren.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "reparieren",
+   "context": "reparieren — EN: to repair · FR: réparerMein Bruder kann alles reparieren.",
+   "en": "to repair",
+   "lemma": ""
+  },
+  {
+   "form": "repair",
+   "context": "reparieren — EN: to repair · FR: réparerMein Bruder kann alles reparieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réparerMein",
+   "context": "reparieren — EN: to repair · FR: réparerMein Bruder kann alles reparieren.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "well",
+   "context": "gut / sehr gut / nicht so gut — EN: well / very well / not so well · FR: bien / très bien / pas très bienIch spreche nicht so gut Französisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "very",
+   "context": "gut / sehr gut / nicht so gut — EN: well / very well / not so well · FR: bien / très bien / pas très bienIch spreche nicht so gut Französisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bien",
+   "context": "gut / sehr gut / nicht so gut — EN: well / very well / not so well · FR: bien / très bien / pas très bienIch spreche nicht so gut Französisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "très",
+   "context": "gut / sehr gut / nicht so gut — EN: well / very well / not so well · FR: bien / très bien / pas très bienIch spreche nicht so gut Französisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bienIch",
+   "context": "gut / sehr gut / nicht so gut — EN: well / very well / not so well · FR: bien / très bien / pas très bienIch spreche nicht so gut Französisch.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "bisschen",
+   "context": "ein bisschen — EN: a little · FR: un peuIch kann ein bisschen Deutsch.",
+   "en": "bit (ein bisschen = a little)",
+   "lemma": ""
+  },
+  {
+   "form": "little",
+   "context": "ein bisschen — EN: a little · FR: un peuIch kann ein bisschen Deutsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "un",
+   "context": "ein bisschen — EN: a little · FR: un peuIch kann ein bisschen Deutsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "peuIch",
+   "context": "ein bisschen — EN: a little · FR: un peuIch kann ein bisschen Deutsch.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "help",
+   "context": "helfen — EN: to help · FR: aiderKannst du mir helfen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aiderKannst",
+   "context": "helfen — EN: to help · FR: aiderKannst du mir helfen?",
+   "en": "can (with du)",
+   "lemma": ""
+  },
+  {
+   "form": "course",
+   "context": "der Kurs, -e — EN: course · FR: le coursIch mache einen Kochkurs.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "coursIch",
+   "context": "der Kurs, -e — EN: course · FR: le coursIch mache einen Kochkurs.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "mache",
+   "context": "der Kurs, -e — EN: course · FR: le coursIch mache einen Kochkurs.",
+   "en": "do, make",
+   "lemma": "machen"
+  },
+  {
+   "form": "Kochkurs",
+   "context": "der Kurs, -e — EN: course · FR: le coursIch mache einen Kochkurs.",
+   "en": "cooking course",
+   "lemma": "der Kochkurs"
+  },
+  {
+   "form": "Fähigkeiten",
+   "context": "über Fähigkeiten sprechen",
+   "en": "abilities, skills",
+   "lemma": "die Fähigkeit"
+  },
+  {
+   "form": "jemanden",
+   "context": "jemanden loben",
+   "en": "someone",
+   "lemma": ""
+  },
+  {
+   "form": "loben",
+   "context": "jemanden loben",
+   "en": "to praise",
+   "lemma": ""
+  },
+  {
+   "form": "Toll",
+   "context": "Toll, wie du das kannst!",
+   "en": "great",
+   "lemma": "toll"
+  },
+  {
+   "form": "Essen",
+   "context": "Dialog: Nach dem Essen",
+   "en": "food, meal; to eat",
+   "lemma": "das Essen"
+  },
+  {
+   "form": "Mia",
+   "context": "Mia: Das war fantastisch! Du kannst wirklich gut kochen.",
+   "en": "Mia (name)",
+   "lemma": ""
+  },
+  {
+   "form": "war",
+   "context": "Mia: Das war fantastisch! Du kannst wirklich gut kochen.",
+   "en": "was",
+   "lemma": "sein"
+  },
+  {
+   "form": "fantastisch",
+   "context": "Mia: Das war fantastisch! Du kannst wirklich gut kochen.",
+   "en": "fantastic",
+   "lemma": ""
+  },
+  {
+   "form": "Luis",
+   "context": "Luis: Danke! Kochen kann ich, aber backen kann ich gar nicht.",
+   "en": "Luis (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Kochen",
+   "context": "Luis: Danke! Kochen kann ich, aber backen kann ich gar nicht.",
+   "en": "cook; cooking",
+   "lemma": "kochen"
+  },
+  {
+   "form": "gar",
+   "context": "Luis: Danke! Kochen kann ich, aber backen kann ich gar nicht.",
+   "en": "at all (gar nicht = not at all)",
+   "lemma": ""
+  },
+  {
+   "form": "Dafür",
+   "context": "Mia: Ich auch nicht. Dafür kann ich Gitarre spielen.",
+   "en": "on the other hand; for it",
+   "lemma": ""
+  },
+  {
+   "form": "uns",
+   "context": "Luis: Wirklich? Kannst du uns etwas vorspielen?",
+   "en": "us, to us",
+   "lemma": ""
+  },
+  {
+   "form": "vorspielen",
+   "context": "Luis: Wirklich? Kannst du uns etwas vorspielen?",
+   "en": "to play (for someone)",
+   "lemma": ""
+  },
+  {
+   "form": "Klar",
+   "context": "Mia: Klar. Aber nur ein bisschen, ich bin nicht so gut.",
+   "en": "sure; clear",
+   "lemma": "klar"
+  },
+  {
+   "form": "glaube",
+   "context": "Luis: Das glaube ich dir nicht!",
+   "en": "believe",
+   "lemma": "glauben"
+  },
+  {
+   "form": "Tanzen",
+   "context": "Tanzen kann ich leider nicht.",
+   "en": "dance; dancing",
+   "lemma": "tanzen"
+  },
+  {
+   "form": "fünfmal",
+   "context": "Was können Sie gut und was nicht so gut? Schreiben Sie fünf Sätze. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie fünfmal können mit einem Infinitiv am Ende. • Schreiben Sie zwei positive und zwei negative Sätze. • Benutzen Sie gut, sehr gut, nicht so gut oder ein bisschen.",
+   "en": "five times",
+   "lemma": ""
+  },
+  {
+   "form": "positive",
+   "context": "Was können Sie gut und was nicht so gut? Schreiben Sie fünf Sätze. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie fünfmal können mit einem Infinitiv am Ende. • Schreiben Sie zwei positive und zwei negative Sätze. • Benutzen Sie gut, sehr gut, nicht so gut oder ein bisschen.",
+   "en": "positive",
+   "lemma": "positiv"
+  },
+  {
+   "form": "negative",
+   "context": "Was können Sie gut und was nicht so gut? Schreiben Sie fünf Sätze. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie fünfmal können mit einem Infinitiv am Ende. • Schreiben Sie zwei positive und zwei negative Sätze. • Benutzen Sie gut, sehr gut, nicht so gut oder ein bisschen.",
+   "en": "negative",
+   "lemma": "negativ"
+  }
+ ]
+}
