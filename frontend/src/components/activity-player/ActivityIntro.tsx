@@ -1,6 +1,7 @@
 import { FiArrowLeft,FiClock,FiShield } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { humanize } from '../../lib/services';
+import { TranslatedText } from '../learn/translate/TranslatedText';
 import { heroGhost } from '../hero/hero-actions';
 import { PageHero } from '../hero/PageHero';
 import { isCompletionType } from './response-utils';
@@ -15,7 +16,7 @@ export function ActivityIntro({ slug, lessonId, code, title, type, instructions,
       eyebrow={`${code} · ${type && isCompletionType(type) ? 'Self-study' : 'Practice activity'}`}
       icon={FiClock}
       title={title ?? 'Practice activity'}
-      description={instructions ? <p className="whitespace-pre-wrap">{instructions}</p> : null}
+      description={instructions ? <p className="whitespace-pre-wrap"><TranslatedText text={instructions} /></p> : null}
       art="assignments"
       meta={type ? <>
         <span className="hero-chip hero-chip-solid">{humanize(type)}</span>
