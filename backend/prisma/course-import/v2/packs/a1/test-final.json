@@ -1,0 +1,402 @@
+{
+  "level": "A1",
+  "kind": "final",
+  "title": "Probeprüfung A1 · Start Deutsch 1",
+  "titleEn": "Mock exam A1 · Start Deutsch 1 format",
+  "description": "Probeprüfung im Format Goethe-Zertifikat A1: Start Deutsch 1. Die Prüfung hat drei Teile: Hören (etwa 20 Minuten), Lesen (25 Minuten) und Schreiben (20 Minuten). Sie haben zusammen 65 Minuten. Es gibt 45 Punkte, und zum Bestehen brauchen Sie 60 % (27 Punkte). Schreiben Teil 2 korrigiert Ihre Lehrerin oder Ihr Lehrer. Sprechen üben Sie mit Ihrer Lehrerin oder Ihrem Lehrer.",
+  "descriptionEn": "Mock exam in the format of the Goethe-Zertifikat A1: Start Deutsch 1. It has three parts: listening (about 20 minutes), reading (25 minutes) and writing (20 minutes), 65 minutes in total. There are 45 points, and you need 60% (27 points) to pass. Your teacher marks Writing part 2. You practise speaking with your teacher.",
+  "durationMinutes": 65,
+  "passMark": 60,
+  "maxAttempts": 3,
+  "after": 24,
+  "sections": [
+    {
+      "skill": "LISTENING",
+      "title": "Hören, Teil 1",
+      "titleEn": "Listening, part 1",
+      "intro": "Sie hören kurze Gespräche. Sie hören jeden Text zweimal. Wählen Sie a, b oder c. · You will hear short conversations twice. Choose a, b or c.",
+      "plays": 2,
+      "letters": true,
+      "questions": [
+        {
+          "type": "choose",
+          "listen": "F: Entschuldigung, was kostet die Jacke hier? Da steht neunundfünfzig Euro.\nM: Heute ist die Jacke billiger. Sie kostet nur neununddreißig Euro.\nF: Oh, prima! Und was kostet die Hose?\nM: Die Hose kostet neunundzwanzig Euro.",
+          "prompt": "Was kostet die Jacke heute?",
+          "options": [
+            "29 Euro",
+            "39 Euro",
+            "59 Euro"
+          ],
+          "answer": "39 Euro",
+          "explanation": "Heute kostet die Jacke nur 39 Euro. 59 Euro ist der alte Preis, und 29 Euro kostet die Hose."
+        },
+        {
+          "type": "choose",
+          "listen": "F: Praxis Doktor Keller, guten Tag.\nM: Guten Tag, hier ist Patrick Habimana. Mir tut der Hals weh. Kann ich heute um zehn Uhr kommen?\nF: Um zehn ist leider kein Termin mehr frei. Aber um halb zwölf oder um drei ist noch etwas frei.\nM: Um halb zwölf hole ich meine Tochter von der Schule ab. Dann komme ich um drei.",
+          "prompt": "Wann kommt Herr Habimana in die Praxis?",
+          "options": [
+            "10.00 Uhr",
+            "11.30 Uhr",
+            "15.00 Uhr"
+          ],
+          "answer": "15.00 Uhr",
+          "explanation": "Um 10 Uhr ist kein Termin frei, und um halb zwölf holt Herr Habimana seine Tochter ab. Er kommt um drei Uhr (15 Uhr)."
+        },
+        {
+          "type": "choose",
+          "listen": "M: Frau Weber, wo sind die Formulare? Im Schrank sind keine mehr.\nF: Ich glaube, sie liegen auf meinem Tisch.\nM: Nein, da ist nur Papier.\nF: Ach ja, richtig! Die Formulare sind hier in meiner Tasche. Entschuldigung!",
+          "prompt": "Wo sind die Formulare?",
+          "options": [
+            "in der Tasche",
+            "im Schrank",
+            "auf dem Tisch"
+          ],
+          "answer": "in der Tasche",
+          "explanation": "Im Schrank sind keine Formulare, und auf dem Tisch ist nur Papier. Die Formulare sind in Frau Webers Tasche."
+        },
+        {
+          "type": "choose",
+          "listen": "F: Guten Tag. Was möchten Sie essen?\nM: Ich möchte eine Tomatensuppe, bitte.\nF: Tut mir leid, Suppe haben wir heute nicht mehr. Aber wir haben Salat und Kuchen.\nM: Kuchen esse ich nicht so gern. Dann nehme ich einen Salat.",
+          "prompt": "Was isst der Mann?",
+          "options": [
+            "Salat",
+            "Suppe",
+            "Kuchen"
+          ],
+          "answer": "Salat",
+          "explanation": "Suppe gibt es heute nicht mehr, und Kuchen isst der Mann nicht so gern. Er nimmt einen Salat."
+        },
+        {
+          "type": "choose",
+          "listen": "F: Hallo Thomas, hier ist Anna. Wir gehen heute Abend ins Kino und treffen uns um sieben vor dem Kino. Kommst du mit?\nM: Ja, gern! Aber ich arbeite bis sieben im Büro, und mein Büro ist am Bahnhof. Können wir uns am Bahnhof treffen?\nF: Kein Problem. Dann warten wir um Viertel nach sieben am Bahnhof auf dich.",
+          "prompt": "Wo treffen sich Anna und Thomas?",
+          "options": [
+            "vor dem Kino",
+            "im Büro",
+            "am Bahnhof"
+          ],
+          "answer": "am Bahnhof",
+          "explanation": "Thomas arbeitet bis sieben im Büro, und sein Büro ist am Bahnhof. Anna wartet am Bahnhof auf ihn, nicht vor dem Kino."
+        },
+        {
+          "type": "choose",
+          "listen": "M: Guten Abend. Wann gibt es morgen Frühstück? Um halb sieben?\nF: Nein, morgen ist Sonntag. Am Sonntag gibt es Frühstück von acht bis elf Uhr.\nM: Prima, dann kann ich lange schlafen. Danke!",
+          "prompt": "Wann beginnt das Frühstück morgen?",
+          "options": [
+            "6.30 Uhr",
+            "8.00 Uhr",
+            "11.00 Uhr"
+          ],
+          "answer": "8.00 Uhr",
+          "explanation": "Morgen ist Sonntag. Am Sonntag gibt es Frühstück von 8 bis 11 Uhr, nicht ab halb sieben."
+        }
+      ]
+    },
+    {
+      "skill": "LISTENING",
+      "title": "Hören, Teil 2",
+      "titleEn": "Listening, part 2",
+      "intro": "Sie hören Ansagen. Lesen Sie zuerst den Satz. Sie hören jeden Text einmal. Richtig oder falsch? · You will hear announcements. Read the sentence first. You will hear each text once. True or false?",
+      "plays": 1,
+      "questions": [
+        {
+          "type": "truefalse",
+          "listen": "M: Achtung, bitte! Der Zug nach Frankfurt fährt heute nicht von Gleis drei. Er fährt heute von Gleis sieben. Wir wünschen Ihnen eine gute Reise!",
+          "statement": "Der Zug nach Frankfurt fährt heute von Gleis 7.",
+          "answer": true,
+          "explanation": "Der Zug fährt heute nicht von Gleis 3. Er fährt von Gleis 7."
+        },
+        {
+          "type": "truefalse",
+          "listen": "F: Liebe Fluggäste nach Kigali! Ihr Flugzeug fliegt heute nicht um zwölf Uhr. Es fliegt eine Stunde später, um dreizehn Uhr. Bitte entschuldigen Sie.",
+          "statement": "Das Flugzeug nach Kigali fliegt heute um 12 Uhr.",
+          "answer": false,
+          "explanation": "Das Flugzeug fliegt eine Stunde später, um 13 Uhr."
+        },
+        {
+          "type": "truefalse",
+          "listen": "F: Liebe Kundinnen und Kunden! Unser Angebot heute: Alle Schuhe für Kinder kosten nur zwanzig Euro. Sonst kosten sie fünfunddreißig Euro. Das Angebot gibt es nur heute!",
+          "statement": "Heute kosten die Kinderschuhe 20 Euro.",
+          "answer": true,
+          "explanation": "Heute kosten die Kinderschuhe nur 20 Euro. Sonst kosten sie 35 Euro."
+        },
+        {
+          "type": "truefalse",
+          "listen": "M: Und jetzt das Wetter für morgen: Am Morgen regnet es noch. Aber dann kommt die Sonne, und es wird warm. Gehen Sie doch in den Park!",
+          "statement": "Morgen regnet es den ganzen Tag.",
+          "answer": false,
+          "explanation": "Nur am Morgen regnet es. Dann kommt die Sonne, und es wird warm."
+        }
+      ]
+    },
+    {
+      "skill": "LISTENING",
+      "title": "Hören, Teil 3",
+      "titleEn": "Listening, part 3",
+      "intro": "Sie hören Nachrichten auf dem Anrufbeantworter. Sie hören jeden Text zweimal. Wählen Sie a, b oder c. · You will hear messages on an answering machine. You will hear each text twice. Choose a, b or c.",
+      "plays": 2,
+      "letters": true,
+      "questions": [
+        {
+          "type": "choose",
+          "listen": "F: Hallo Daniel, hier ist Keza. Wir wollen doch am Samstag zusammen einkaufen gehen. Aber am Samstag muss ich leider arbeiten, und am Sonntag sind die Geschäfte geschlossen. Hast du am Freitag nach der Arbeit Zeit? Ruf mich bitte an. Tschüss!",
+          "prompt": "Wann möchte Keza jetzt mit Daniel einkaufen gehen?",
+          "options": [
+            "am Freitag",
+            "am Samstag",
+            "am Sonntag"
+          ],
+          "answer": "am Freitag",
+          "explanation": "Am Samstag muss Keza arbeiten, und am Sonntag sind die Geschäfte geschlossen. Sie fragt: Hast du am Freitag Zeit?"
+        },
+        {
+          "type": "choose",
+          "listen": "M: Hallo Aline, hier ist Eric. Am Samstag feiere ich meinen Geburtstag, und ich würde dich gern einladen. Die Party beginnt um acht Uhr bei mir zu Hause. Saft und Wasser habe ich schon, und Thomas bringt seine Gitarre mit. Kannst du bitte einen Kuchen mitbringen? Bis Samstag!",
+          "prompt": "Was soll Aline mitbringen?",
+          "options": [
+            "Saft",
+            "eine Gitarre",
+            "einen Kuchen"
+          ],
+          "answer": "einen Kuchen",
+          "explanation": "Saft hat Eric schon, und Thomas bringt die Gitarre mit. Aline soll einen Kuchen mitbringen."
+        },
+        {
+          "type": "choose",
+          "listen": "F: Hallo Jonas, hier ist Amina. Wir treffen uns doch um drei vor dem Museum. Ich bin schon da, aber es regnet. Ich warte im Café neben dem Museum. Das Café ist gegenüber der Post. Bis gleich!",
+          "prompt": "Wo wartet Amina?",
+          "options": [
+            "vor dem Museum",
+            "im Café",
+            "in der Post"
+          ],
+          "answer": "im Café",
+          "explanation": "Es regnet. Amina wartet im Café neben dem Museum. Die Post ist gegenüber."
+        },
+        {
+          "type": "choose",
+          "listen": "M: Guten Tag, Frau Uwase, hier ist das Fahrradgeschäft Becker. Ihr Fahrrad ist fertig. Die Reparatur kostet leider nicht dreißig Euro. Sie kostet vierzig Euro, denn Ihr Fahrrad braucht auch eine neue Lampe. Sie können das Fahrrad heute bis achtzehn Uhr abholen. Auf Wiederhören!",
+          "prompt": "Wie viel kostet die Reparatur?",
+          "options": [
+            "18 Euro",
+            "30 Euro",
+            "40 Euro"
+          ],
+          "answer": "40 Euro",
+          "explanation": "Die Reparatur kostet nicht 30 Euro, sie kostet 40 Euro (mit der neuen Lampe). 18 ist die Uhrzeit: Frau Uwase kann das Fahrrad bis 18 Uhr abholen."
+        },
+        {
+          "type": "choose",
+          "listen": "F: Hallo Lukas, hier ist Lena. Ich freue mich auf Sonntag! Nimm bitte nicht den Bus, die U-Bahn ist viel schneller. Fahr mit der U-Bahn bis zum Marktplatz. Dort hole ich dich mit dem Auto ab. Bis Sonntag!",
+          "prompt": "Wie soll Lukas zum Marktplatz fahren?",
+          "options": [
+            "mit dem Bus",
+            "mit der U-Bahn",
+            "mit dem Auto"
+          ],
+          "answer": "mit der U-Bahn",
+          "explanation": "Lukas soll nicht den Bus nehmen. Er fährt mit der U-Bahn bis zum Marktplatz. Dort holt Lena ihn mit dem Auto ab."
+        }
+      ]
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 1",
+      "titleEn": "Reading, part 1",
+      "intro": "Lesen Sie die E-Mail. Sind die Sätze richtig oder falsch? · Read the email. Are the sentences true or false?",
+      "passage": "Lieber Jean-Paul,\n\nwie geht es dir? Ich habe eine neue Arbeit und wohne jetzt nicht mehr in Huye. Seit Mai wohne ich in Kigali. Meine Wohnung ist klein, aber sie ist hell und hat einen Balkon. Der Markt ist gleich um die Ecke. Am Samstag mache ich eine Party in der neuen Wohnung. Hast du Zeit? Deine Schwester kann auch gern mitkommen!\n\nViele Grüße\nClaudine",
+      "questions": [
+        {
+          "type": "truefalse",
+          "statement": "Claudine wohnt jetzt in Huye.",
+          "answer": false,
+          "explanation": "Claudine wohnt nicht mehr in Huye. Seit Mai wohnt sie in Kigali."
+        },
+        {
+          "type": "truefalse",
+          "statement": "Claudines Wohnung ist dunkel.",
+          "answer": false,
+          "explanation": "Die Wohnung ist klein, aber hell."
+        },
+        {
+          "type": "truefalse",
+          "statement": "Jean-Pauls Schwester darf auch zur Party kommen.",
+          "answer": true,
+          "explanation": "Claudine schreibt: Deine Schwester kann auch gern mitkommen."
+        }
+      ]
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 1",
+      "titleEn": "Reading, part 1",
+      "intro": "Lesen Sie die Nachricht. Sind die Sätze richtig oder falsch? · Read the note. Are the sentences true or false?",
+      "passage": "Liebe Ineza, lieber Gisa,\n\nich bin heute bis sieben Uhr bei der Arbeit. Das Essen steht in der Küche. Macht bitte zuerst eure Hausaufgaben, danach dürft ihr fernsehen. Um sechs Uhr kommt Oma. Sie bringt einen Kuchen mit. Räumt bitte vorher eure Zimmer auf! Papa kommt heute erst spät nach Hause.\n\nBis heute Abend!\nMama",
+      "questions": [
+        {
+          "type": "truefalse",
+          "statement": "Die Mutter arbeitet heute bis 19 Uhr.",
+          "answer": true,
+          "explanation": "Die Mutter ist bis sieben Uhr am Abend (19 Uhr) bei der Arbeit."
+        },
+        {
+          "type": "truefalse",
+          "statement": "Papa kommt um sechs Uhr nach Hause.",
+          "answer": false,
+          "explanation": "Um sechs Uhr kommt Oma. Papa kommt heute erst spät nach Hause."
+        }
+      ]
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 2",
+      "titleEn": "Reading, part 2",
+      "intro": "Lesen Sie die Situationen und die Texte aus dem Internet. Welcher Text passt: a oder b? · Read the situations and the texts from the internet. Which text fits: a or b?",
+      "letters": true,
+      "questions": [
+        {
+          "type": "choose",
+          "prompt": "Sie möchten am Sonntag mit Ihren Kindern schwimmen gehen. Wo finden Sie Informationen?",
+          "options": [
+            "www.schwimmbad-nord.de\nSchwimmbad Nord: Montag bis Sonntag von 8 bis 20 Uhr.\nKinder bis 12 Jahre bezahlen nur 2 Euro.",
+            "www.sauna-sonnenhof.de\nSchwimmbad und Sauna: jeden Tag von 10 bis 22 Uhr.\nNur für Gäste ab 18 Jahren."
+          ],
+          "answer": "www.schwimmbad-nord.de\nSchwimmbad Nord: Montag bis Sonntag von 8 bis 20 Uhr.\nKinder bis 12 Jahre bezahlen nur 2 Euro.",
+          "explanation": "Das Schwimmbad Nord ist auch am Sonntag offen, und Kinder dürfen kommen. Die Sauna Sonnenhof ist nur für Gäste ab 18 Jahren."
+        },
+        {
+          "type": "choose",
+          "prompt": "Ihr Handy ist kaputt. Sie möchten heute in ein Geschäft gehen, aber Sie haben keinen Termin. Wo finden Sie Hilfe?",
+          "options": [
+            "www.handy-hilfe-mitte.de\nWir reparieren Ihr Handy in einer Stunde!\nBitte machen Sie zuerst einen Termin.",
+            "www.handydoktor-koeln.de\nHandy kaputt? Kein Problem!\nKommen Sie einfach zu uns, auch ohne Termin."
+          ],
+          "answer": "www.handydoktor-koeln.de\nHandy kaputt? Kein Problem!\nKommen Sie einfach zu uns, auch ohne Termin.",
+          "explanation": "Beim Handydoktor brauchen Sie keinen Termin. Bei Handy-Hilfe Mitte brauchen Sie zuerst einen Termin."
+        },
+        {
+          "type": "choose",
+          "prompt": "Sie arbeiten von Montag bis Freitag von 8 bis 16 Uhr. Sie möchten Deutsch lernen. Wo finden Sie Informationen?",
+          "options": [
+            "www.sprachschule-am-park.de\nDeutschkurs A1: Montag und Mittwoch von 18 bis 20.30 Uhr.\nDer Kurs beginnt am 3. März.",
+            "www.deutsch-lernen-mitte.de\nDeutschkurs A1: Montag bis Freitag von 9 bis 13 Uhr.\nDer Kurs beginnt am 3. März."
+          ],
+          "answer": "www.sprachschule-am-park.de\nDeutschkurs A1: Montag und Mittwoch von 18 bis 20.30 Uhr.\nDer Kurs beginnt am 3. März.",
+          "explanation": "Der Kurs in der Sprachschule am Park ist am Abend, nach der Arbeit. Der andere Kurs ist von 9 bis 13 Uhr: Da arbeiten Sie."
+        },
+        {
+          "type": "choose",
+          "prompt": "Es ist Samstag. Ihr Sohn hat Fieber, und Sie möchten mit ihm zum Arzt gehen. Wo finden Sie Informationen?",
+          "options": [
+            "www.kinderarzt-dr-meier.de\nKinderarzt Dr. Meier: Montag bis Freitag von 8 bis 12 Uhr und von 15 bis 18 Uhr.",
+            "www.kinderaerzte-am-wochenende.de\nÄrzte für Kinder: Samstag und Sonntag von 9 bis 21 Uhr."
+          ],
+          "answer": "www.kinderaerzte-am-wochenende.de\nÄrzte für Kinder: Samstag und Sonntag von 9 bis 21 Uhr.",
+          "explanation": "Dr. Meier ist nur von Montag bis Freitag da. Die Ärzte für Kinder sind auch am Samstag da."
+        },
+        {
+          "type": "choose",
+          "prompt": "Sie suchen eine Wohnung für Ihre Familie. Sie sind vier Personen. Wo finden Sie Informationen?",
+          "options": [
+            "www.wohnen-in-bonn.de\nGroße Wohnung für Familien: 4 Zimmer, Küche, Bad und Balkon.\nMiete: 950 Euro.",
+            "www.zimmer-frei-bonn.de\nKleine Wohnung für eine Person: 1 Zimmer mit Küche und Bad.\nMiete: 390 Euro."
+          ],
+          "answer": "www.wohnen-in-bonn.de\nGroße Wohnung für Familien: 4 Zimmer, Küche, Bad und Balkon.\nMiete: 950 Euro.",
+          "explanation": "Die große Wohnung ist für Familien und hat 4 Zimmer. Die kleine Wohnung ist nur für eine Person."
+        }
+      ]
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 3",
+      "titleEn": "Reading, part 3",
+      "intro": "Lesen Sie die Schilder und Informationen. Sind die Sätze richtig oder falsch? · Read the signs and notices. Are the sentences true or false?",
+      "questions": [
+        {
+          "type": "truefalse",
+          "statement": "An der Tür einer Arztpraxis:\n\n„Praxis Dr. Berger\nWir machen vom 3. bis 14. August Urlaub.\nIn dieser Zeit hilft Ihnen Dr. Klein, Bahnhofstraße 5.“\n\nAm 10. August können Sie zu Dr. Klein gehen.",
+          "answer": true,
+          "explanation": "Vom 3. bis 14. August hilft Dr. Klein. Der 10. August ist in dieser Zeit."
+        },
+        {
+          "type": "truefalse",
+          "statement": "Im Büro, an einem Drucker:\n\n„Dieser Drucker ist kaputt.\nBitte nehmen Sie den Drucker in Zimmer 12.“\n\nDer Drucker in Zimmer 12 funktioniert.",
+          "answer": true,
+          "explanation": "Dieser Drucker ist kaputt. Sie sollen den Drucker in Zimmer 12 nehmen: Er funktioniert."
+        },
+        {
+          "type": "truefalse",
+          "statement": "Im Schwimmbad:\n\n„Kinder unter 10 Jahren dürfen nur mit ihren Eltern ins Wasser.\nBitte passen Sie gut auf Ihre Kinder auf!“\n\nEin Kind mit 8 Jahren darf allein ins Wasser.",
+          "answer": false,
+          "explanation": "Kinder unter 10 Jahren dürfen nur mit ihren Eltern ins Wasser. Ein Kind mit 8 Jahren darf nicht allein ins Wasser."
+        },
+        {
+          "type": "truefalse",
+          "statement": "In einem Kleidungsgeschäft:\n\n„Umtausch nur bis zwei Wochen nach dem Einkauf.\nBitte bringen Sie die Rechnung mit.“\n\nSie können die Kleidung 14 Tage lang umtauschen.",
+          "answer": true,
+          "explanation": "Zwei Wochen sind 14 Tage. So lange können Sie die Kleidung umtauschen (mit der Rechnung)."
+        },
+        {
+          "type": "truefalse",
+          "statement": "An der Tür einer Apotheke:\n\n„Apotheke am Markt\nMontag bis Freitag: 8–19 Uhr\nSamstag: 8–14 Uhr\nAm Sonntag ist die Apotheke am Bahnhof für Sie da.“\n\nAm Samstag ist die Apotheke am Markt bis 19 Uhr geöffnet.",
+          "answer": false,
+          "explanation": "Am Samstag ist die Apotheke am Markt nur bis 14 Uhr geöffnet. Bis 19 Uhr ist sie nur von Montag bis Freitag geöffnet."
+        }
+      ]
+    },
+    {
+      "skill": "WRITING",
+      "title": "Schreiben, Teil 1",
+      "titleEn": "Writing, part 1",
+      "intro": "Ihre Freundin Grace Mukamana möchte einen Deutschkurs machen. Sie füllen das Formular für sie aus. Schreiben Sie in jede Lücke ein Wort aus dem Text. · Your friend Grace Mukamana wants to take a German course. You fill in the form for her. Write one word from the text in each gap.",
+      "passage": "Grace Mukamana möchte einen Deutschkurs an einer Sprachschule machen. Sie kommt aus Ruanda, aber sie ist in Burundi geboren. Sie hat viele Jahre in Kigali gewohnt. Seit März wohnt sie mit ihrem Mann in Bonn. Grace ist Krankenpflegerin von Beruf und arbeitet in einem Krankenhaus in Köln. Sie spricht Kinyarwanda, Englisch und ein bisschen Deutsch. Sie möchte den Kurs am Samstag machen, denn von Montag bis Freitag arbeitet sie.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "Familienname: ___",
+          "answer": "Mukamana",
+          "explanation": "Grace ist der Vorname. Mukamana ist der Familienname."
+        },
+        {
+          "type": "fill",
+          "prompt": "Geburtsland: ___",
+          "answer": "Burundi",
+          "explanation": "Grace kommt aus Ruanda, aber sie ist in Burundi geboren."
+        },
+        {
+          "type": "fill",
+          "prompt": "Wohnort: ___",
+          "answer": "Bonn",
+          "explanation": "Seit März wohnt Grace in Bonn. In Kigali hat sie früher gewohnt, und in Köln arbeitet sie."
+        },
+        {
+          "type": "fill",
+          "prompt": "Beruf: ___",
+          "answer": "Krankenpflegerin",
+          "explanation": "Grace ist Krankenpflegerin von Beruf."
+        },
+        {
+          "type": "fill",
+          "prompt": "Kurs am: ___",
+          "answer": "Samstag",
+          "explanation": "Von Montag bis Freitag arbeitet Grace. Sie möchte den Kurs am Samstag machen."
+        }
+      ]
+    },
+    {
+      "skill": "WRITING",
+      "title": "Schreiben, Teil 2",
+      "titleEn": "Writing, part 2",
+      "intro": "Schreiben Sie eine E-Mail. Ihre Lehrerin oder Ihr Lehrer korrigiert diesen Text. · Write an email. Your teacher marks this text.",
+      "questions": [
+        {
+          "type": "write",
+          "prompt": "Sie können morgen nicht in den Deutschkurs kommen. Schreiben Sie Ihrer Lehrerin, Frau Weber, eine E-Mail.\n– Entschuldigen Sie sich.\n– Schreiben Sie, warum Sie nicht kommen können.\n– Bitten Sie Frau Weber um die Hausaufgaben.\nSchreiben Sie zu jedem Punkt ein bis zwei Sätze (etwa 30 Wörter). Vergessen Sie Anrede und Gruß nicht.\n(3 Punkte pro Inhaltspunkt, 1 Punkt für Anrede und Gruß)",
+          "promptEn": "You cannot come to the German course tomorrow. Write an email to your teacher, Ms Weber: apologise, say why you cannot come, and ask Ms Weber for the homework. Write one or two sentences for each point (about 30 words). Do not forget the greeting and the closing. (3 points for each point, 1 point for the greeting and closing)",
+          "points": 10,
+          "modelAnswer": "Liebe Frau Weber,\nes tut mir leid, aber ich kann morgen nicht in den Deutschkurs kommen. Ich bin krank und habe Fieber. Können Sie mir bitte die Hausaufgaben schicken?\nViele Grüße\nAmina"
+        }
+      ]
+    }
+  ]
+}
