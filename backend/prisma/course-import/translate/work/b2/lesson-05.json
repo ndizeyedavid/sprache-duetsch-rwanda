@@ -1,0 +1,929 @@
+{
+ "level": "B2",
+ "lesson": 5,
+ "title": "Beziehungen im digitalen Zeitalter — Ich bedauere, mich darauf eingelassen zu haben",
+ "lines": [
+  {
+   "de": "Diskutieren, wie digitale Kommunikation Beziehungen verändert — mit Infinitivsätzen in zwei Zeitstufen.",
+   "en": "Discussing how digital communication changes relationships — with infinitive clauses (Infinitivsätze) in two time frames."
+  },
+  {
+   "de": "Textsorte: Stellungnahme · Diskussion",
+   "en": "Text type: statement of opinion · discussion"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Schreiben Teil 1 (Forumsbeitrag); telc B2 Sprechen 2 (Diskussion)",
+   "en": "Exam link: Goethe B2 Writing part 1 (forum post); telc B2 Speaking 2 (discussion)"
+  },
+  {
+   "de": "darüber diskutieren, wie digitale Kommunikation Beziehungen verändert",
+   "en": "discuss how digital communication changes relationships"
+  },
+  {
+   "de": "Infinitivsätze in der Gegenwart und in der Vergangenheit bilden",
+   "en": "form infinitive clauses in the present and in the past"
+  },
+  {
+   "de": "eine Diskussion strukturiert führen und die eigene Meinung schriftlich zusammenfassen",
+   "en": "lead a discussion in a structured way and summarise your own opinion in writing"
+  },
+  {
+   "de": "Grammatik: Infinitivsätze in Gegenwart und Vergangenheit",
+   "en": "Grammar: infinitive clauses (Infinitivsätze) in the present and the past"
+  },
+  {
+   "de": "Ein Infinitivsatz kann gleichzeitig zum Hauptsatz liegen oder davor. Für die Gegenwart genügt zu + Infinitiv. Für die Vorzeitigkeit nimmt man Partizip II + zu haben oder zu sein — welches Hilfsverb, entscheidet wie beim Perfekt das Vollverb.",
+   "en": "An infinitive clause can refer to the same time as the main clause or to an earlier time. For the present, zu + infinitive is enough. For an earlier action (Vorzeitigkeit), you use the past participle (Partizip II) + zu haben or zu sein — as with the perfect tense, the main verb decides which auxiliary."
+  },
+  {
+   "de": "gleichzeitig",
+   "en": "simultaneous"
+  },
+  {
+   "de": "zu + Infinitiv",
+   "en": "zu + infinitive"
+  },
+  {
+   "de": "Ich freue mich, dich zu sehen.",
+   "en": "I'm glad to see you."
+  },
+  {
+   "de": "vorzeitig (haben-Verb)",
+   "en": "earlier (haben verb)"
+  },
+  {
+   "de": "Partizip II + zu haben",
+   "en": "past participle + zu haben"
+  },
+  {
+   "de": "Ich freue mich, dich gesehen zu haben.",
+   "en": "I'm glad to have seen you."
+  },
+  {
+   "de": "vorzeitig (sein-Verb)",
+   "en": "earlier (sein verb)"
+  },
+  {
+   "de": "Partizip II + zu sein",
+   "en": "past participle + zu sein"
+  },
+  {
+   "de": "Sie ist froh, früher gegangen zu sein.",
+   "en": "She is glad to have left earlier."
+  },
+  {
+   "de": "Verneinung",
+   "en": "Negation"
+  },
+  {
+   "de": "nicht vor zu",
+   "en": "nicht before zu"
+  },
+  {
+   "de": "Er bedauert, nicht geantwortet zu haben.",
+   "en": "He regrets not having replied."
+  },
+  {
+   "de": "Viele geben zu, zu viel Zeit in sozialen Netzwerken zu verbringen.gleichzeitig",
+   "en": "Many admit to spending too much time on social networks. simultaneous"
+  },
+  {
+   "de": "Er bereut, die Nachricht so schnell abgeschickt zu haben.vorzeitig mit haben",
+   "en": "He regrets having sent the message so quickly. earlier, with haben"
+  },
+  {
+   "de": "Sie behauptet, nie online gewesen zu sein.vorzeitig mit sein",
+   "en": "She claims never to have been online. earlier, with sein"
+  },
+  {
+   "de": "Tipp: Typische Verben mit vorzeitigem Infinitiv: bereuen, bedauern, zugeben, behaupten, sich erinnern, stolz sein, froh sein.",
+   "en": "Tip: Typical verbs with an infinitive for an earlier action: bereuen (to regret), bedauern (to regret), zugeben (to admit), behaupten (to claim), sich erinnern (to remember), stolz sein (to be proud), froh sein (to be glad)."
+  },
+  {
+   "de": "das digitale Zeitalter (Sg.) — EN: digital age · FR: l'ère numériqueIm digitalen Zeitalter verändert sich Nähe.",
+   "en": "Example: In the digital age, closeness is changing."
+  },
+  {
+   "de": "die Erreichbarkeit (Sg.) — EN: availability, being reachable · FR: la joignabilitéStändige Erreichbarkeit setzt viele unter Druck.",
+   "en": "Example: Being constantly reachable puts many people under pressure."
+  },
+  {
+   "de": "oberflächlich — EN: superficial · FR: superficielOnline-Kontakte bleiben oft oberflächlich.",
+   "en": "Example: Online contacts often remain superficial."
+  },
+  {
+   "de": "die Nähe / die Distanz — EN: closeness / distance · FR: la proximité / la distanceDigitale Nähe ersetzt keine echte Nähe.",
+   "en": "Example: Digital closeness is no substitute for real closeness."
+  },
+  {
+   "de": "sich austauschen — EN: to exchange ideas · FR: échangerWir tauschen uns täglich in der Gruppe aus.",
+   "en": "Example: We exchange ideas in the group every day."
+  },
+  {
+   "de": "der Bildschirm, -e — EN: screen · FR: l'écranWir verbringen Stunden vor dem Bildschirm.",
+   "en": "Example: We spend hours in front of the screen."
+  },
+  {
+   "de": "jemanden blockieren — EN: to block sb. · FR: bloquer qn.Man kann Leute heute einfach blockieren.",
+   "en": "Example: Nowadays you can simply block people."
+  },
+  {
+   "de": "der Gruppenzwang (Sg.) — EN: peer pressure · FR: la pression du groupeIn Chats entsteht schnell Gruppenzwang.",
+   "en": "Example: Peer pressure quickly develops in chats."
+  },
+  {
+   "de": "missverständlich — EN: ambiguous, easily misunderstood · FR: ambiguSchriftliche Nachrichten sind oft missverständlich.",
+   "en": "Example: Written messages are often easy to misunderstand."
+  },
+  {
+   "de": "der Umgangston (Sg.) — EN: tone, way of interacting · FR: le tonDer Umgangston im Netz ist rauer geworden.",
+   "en": "Example: The tone online has become harsher."
+  },
+  {
+   "de": "etwas bereuen — EN: to regret sth. · FR: regretter qc.Diese Nachricht bereue ich bis heute.",
+   "en": "Example: I still regret this message today."
+  },
+  {
+   "de": "die Verbindlichkeit (Sg.) — EN: commitment, reliability · FR: l'engagementVerabredungen haben an Verbindlichkeit verloren.",
+   "en": "Example: Arrangements to meet have become less binding."
+  },
+  {
+   "de": "entschleunigen — EN: to slow down · FR: ralentirAb und zu sollte man bewusst entschleunigen.",
+   "en": "Example: Now and then you should deliberately slow down."
+  },
+  {
+   "de": "der Mehrwert (Sg.) — EN: added value · FR: la valeur ajoutéeWelchen Mehrwert bringt das wirklich?",
+   "en": "Example: What added value does that really bring?"
+  },
+  {
+   "de": "eine Diskussion eröffnen und führen",
+   "en": "Opening and leading a discussion"
+  },
+  {
+   "de": "Lassen Sie uns mit der Frage beginnen, ob …",
+   "en": "Let's begin with the question of whether …"
+  },
+  {
+   "de": "Darf ich dazu kurz etwas ergänzen?",
+   "en": "May I briefly add something to that?"
+  },
+  {
+   "de": "Ich würde gern noch einmal auf den Punkt … zurückkommen.",
+   "en": "I'd like to come back to the point … again."
+  },
+  {
+   "de": "widersprechen und einlenken",
+   "en": "Disagreeing and giving ground"
+  },
+  {
+   "de": "Da muss ich entschieden widersprechen, weil …",
+   "en": "I must strongly disagree there, because …"
+  },
+  {
+   "de": "In dem Punkt gebe ich Ihnen recht, allerdings …",
+   "en": "On that point I agree with you, however …"
+  },
+  {
+   "de": "So weit würde ich nicht gehen.",
+   "en": "I wouldn't go that far."
+  },
+  {
+   "de": "zusammenfassen",
+   "en": "Summarising"
+  },
+  {
+   "de": "Zusammenfassend lässt sich sagen, dass …",
+   "en": "To sum up, one can say that …"
+  },
+  {
+   "de": "Wir sind uns offenbar einig, dass …",
+   "en": "We obviously agree that …"
+  },
+  {
+   "de": "Unterm Strich überwiegen für mich die Vorteile.",
+   "en": "All in all, for me the advantages outweigh the disadvantages."
+  },
+  {
+   "de": "Im digitalen Zeitalter verändert sich Nähe.",
+   "en": "In the digital age, closeness is changing."
+  },
+  {
+   "de": "Ständige Erreichbarkeit setzt viele unter Druck.",
+   "en": "Being constantly reachable puts many people under pressure."
+  },
+  {
+   "de": "Online-Kontakte bleiben oft oberflächlich.",
+   "en": "Online contacts often remain superficial."
+  },
+  {
+   "de": "Digitale Nähe ersetzt keine echte Nähe.",
+   "en": "Digital closeness is no substitute for real closeness."
+  },
+  {
+   "de": "Wir tauschen uns täglich in der Gruppe aus.",
+   "en": "We exchange ideas in the group every day."
+  },
+  {
+   "de": "Wir verbringen Stunden vor dem Bildschirm.",
+   "en": "We spend hours in front of the screen."
+  },
+  {
+   "de": "Man kann Leute heute einfach blockieren.",
+   "en": "Nowadays you can simply block people."
+  },
+  {
+   "de": "In Chats entsteht schnell Gruppenzwang.",
+   "en": "Peer pressure quickly develops in chats."
+  },
+  {
+   "de": "Schriftliche Nachrichten sind oft missverständlich.",
+   "en": "Written messages are often easy to misunderstand."
+  },
+  {
+   "de": "Der Umgangston im Netz ist rauer geworden.",
+   "en": "The tone online has become harsher."
+  },
+  {
+   "de": "Diese Nachricht bereue ich bis heute.",
+   "en": "I still regret this message today."
+  },
+  {
+   "de": "Verabredungen haben an Verbindlichkeit verloren.",
+   "en": "Arrangements to meet have become less binding."
+  },
+  {
+   "de": "Ab und zu sollte man bewusst entschleunigen.",
+   "en": "Now and then you should deliberately slow down."
+  },
+  {
+   "de": "Welchen Mehrwert bringt das wirklich?",
+   "en": "What added value does that really bring?"
+  },
+  {
+   "de": "Er bereut, die Nachricht so schnell ___ ___ ___. (abschicken, vorzeitig)",
+   "en": "He regrets ___ ___ ___ the message so quickly. (abschicken, earlier action)"
+  },
+  {
+   "de": "Sie ist froh, früher ___.",
+   "en": "She is glad ___ earlier."
+  },
+  {
+   "de": "Viele geben zu, zu viel Zeit online ___ ___. (verbringen, gleichzeitig)",
+   "en": "Many admit ___ ___ too much time online. (verbringen, simultaneous)"
+  },
+  {
+   "de": "Wo steht die Verneinung?",
+   "en": "Where does the negation go?"
+  },
+  {
+   "de": "Sie behauptet, den Kommentar nie ___ ___ ___. (sehen, vorzeitig)",
+   "en": "She claims never ___ ___ ___ the comment. (sehen, earlier action)"
+  },
+  {
+   "de": "Welches Verb verlangt typischerweise einen vorzeitigen Infinitivsatz?",
+   "en": "Which verb typically requires an infinitive clause for an earlier action?"
+  },
+  {
+   "de": "Fassen Sie Ihre Position in einer schriftlichen Stellungnahme zusammen: Macht digitale Kommunikation Beziehungen stärker oder schwächer? Umfang: 180–220 Wörter Checkliste: • Formulieren Sie Ihre These im ersten Absatz. • Stützen Sie sie mit zwei Argumenten und je einem Beispiel. • Nennen Sie ein Gegenargument und entkräften Sie es. • Verwenden Sie mindestens einen vorzeitigen Infinitivsatz.",
+   "en": "Summarise your position in a written statement: Does digital communication make relationships stronger or weaker? Length: 180–220 words Checklist: • State your thesis in the first paragraph. • Support it with two arguments, each with an example. • Name a counter-argument and refute it. • Use at least one infinitive clause for an earlier action."
+  },
+  {
+   "de": "Vorzeitigkeit: Partizip II + zu haben.",
+   "en": "Earlier action (Vorzeitigkeit): past participle + zu haben."
+  },
+  {
+   "de": "gehen bildet das Perfekt mit sein → Partizip II + zu sein.",
+   "en": "gehen forms the perfect tense with sein → past participle + zu sein."
+  },
+  {
+   "de": "Gleichzeitigkeit braucht nur zu + Infinitiv.",
+   "en": "Simultaneous action (Gleichzeitigkeit) only needs zu + infinitive."
+  },
+  {
+   "de": "nicht steht im Infinitivsatz vor dem Partizip, der dritte Satz bedeutet etwas anderes.",
+   "en": "In the infinitive clause, nicht comes before the participle; the third sentence means something different."
+  },
+  {
+   "de": "sehen ist ein haben-Verb → gesehen zu haben.",
+   "en": "sehen is a haben verb → gesehen zu haben."
+  },
+  {
+   "de": "Man bereut etwas, das bereits geschehen ist — also Vorzeitigkeit.",
+   "en": "You regret something that has already happened — so it is an earlier action (Vorzeitigkeit)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "digitale",
+   "context": "Diskutieren, wie digitale Kommunikation Beziehungen verändert — mit Infinitivsätzen in zwei Zeitstufen.",
+   "en": "digital",
+   "lemma": "digital"
+  },
+  {
+   "form": "Kommunikation",
+   "context": "Diskutieren, wie digitale Kommunikation Beziehungen verändert — mit Infinitivsätzen in zwei Zeitstufen.",
+   "en": "communication",
+   "lemma": "die Kommunikation"
+  },
+  {
+   "form": "Beziehungen",
+   "context": "Diskutieren, wie digitale Kommunikation Beziehungen verändert — mit Infinitivsätzen in zwei Zeitstufen.",
+   "en": "relationships",
+   "lemma": "die Beziehung"
+  },
+  {
+   "form": "Infinitivsätzen",
+   "context": "Diskutieren, wie digitale Kommunikation Beziehungen verändert — mit Infinitivsätzen in zwei Zeitstufen.",
+   "en": "infinitive clauses",
+   "lemma": "der Infinitivsatz"
+  },
+  {
+   "form": "Zeitstufen",
+   "context": "Diskutieren, wie digitale Kommunikation Beziehungen verändert — mit Infinitivsätzen in zwei Zeitstufen.",
+   "en": "time frames",
+   "lemma": "die Zeitstufe"
+  },
+  {
+   "form": "Stellungnahme",
+   "context": "Textsorte: Stellungnahme · Diskussion",
+   "en": "statement (of opinion)",
+   "lemma": "die Stellungnahme"
+  },
+  {
+   "form": "führen",
+   "context": "eine Diskussion strukturiert führen und die eigene Meinung schriftlich zusammenfassen",
+   "en": "to lead; to conduct",
+   "lemma": ""
+  },
+  {
+   "form": "genügt",
+   "context": "Ein Infinitivsatz kann gleichzeitig zum Hauptsatz liegen oder davor. Für die Gegenwart genügt zu + Infinitiv. Für die Vorzeitigkeit nimmt man Partizip II + zu haben oder zu sein — welches Hilfsverb, entscheidet wie beim Perfekt das Vollverb.",
+   "en": "is enough",
+   "lemma": "genügen"
+  },
+  {
+   "form": "Vorzeitigkeit",
+   "context": "Ein Infinitivsatz kann gleichzeitig zum Hauptsatz liegen oder davor. Für die Gegenwart genügt zu + Infinitiv. Für die Vorzeitigkeit nimmt man Partizip II + zu haben oder zu sein — welches Hilfsverb, entscheidet wie beim Perfekt das Vollverb.",
+   "en": "earlier action, anteriority",
+   "lemma": "die Vorzeitigkeit"
+  },
+  {
+   "form": "vorzeitig",
+   "context": "vorzeitig (haben-Verb)",
+   "en": "earlier; premature",
+   "lemma": ""
+  },
+  {
+   "form": "haben-Verb",
+   "context": "vorzeitig (haben-Verb)",
+   "en": "verb with haben (in the perfect)",
+   "lemma": "das haben-Verb"
+  },
+  {
+   "form": "froh",
+   "context": "Sie ist froh, früher gegangen zu sein.",
+   "en": "glad, happy",
+   "lemma": ""
+  },
+  {
+   "form": "bedauert",
+   "context": "Er bedauert, nicht geantwortet zu haben.",
+   "en": "regrets",
+   "lemma": "bedauern"
+  },
+  {
+   "form": "geantwortet",
+   "context": "Er bedauert, nicht geantwortet zu haben.",
+   "en": "answered, replied",
+   "lemma": "antworten"
+  },
+  {
+   "form": "sozialen",
+   "context": "Viele geben zu, zu viel Zeit in sozialen Netzwerken zu verbringen.gleichzeitig",
+   "en": "social",
+   "lemma": "sozial"
+  },
+  {
+   "form": "Netzwerken",
+   "context": "Viele geben zu, zu viel Zeit in sozialen Netzwerken zu verbringen.gleichzeitig",
+   "en": "networks",
+   "lemma": "das Netzwerk"
+  },
+  {
+   "form": "verbringen",
+   "context": "Viele geben zu, zu viel Zeit in sozialen Netzwerken zu verbringen.gleichzeitig",
+   "en": "to spend (time)",
+   "lemma": ""
+  },
+  {
+   "form": "bereut",
+   "context": "Er bereut, die Nachricht so schnell abgeschickt zu haben.vorzeitig mit haben",
+   "en": "regrets",
+   "lemma": "bereuen"
+  },
+  {
+   "form": "abgeschickt",
+   "context": "Er bereut, die Nachricht so schnell abgeschickt zu haben.vorzeitig mit haben",
+   "en": "sent (off)",
+   "lemma": "abschicken"
+  },
+  {
+   "form": "behauptet",
+   "context": "Sie behauptet, nie online gewesen zu sein.vorzeitig mit sein",
+   "en": "claims",
+   "lemma": "behaupten"
+  },
+  {
+   "form": "Typische",
+   "context": "Tipp: Typische Verben mit vorzeitigem Infinitiv: bereuen, bedauern, zugeben, behaupten, sich erinnern, stolz sein, froh sein.",
+   "en": "typical",
+   "lemma": "typisch"
+  },
+  {
+   "form": "vorzeitigem",
+   "context": "Tipp: Typische Verben mit vorzeitigem Infinitiv: bereuen, bedauern, zugeben, behaupten, sich erinnern, stolz sein, froh sein.",
+   "en": "earlier, anterior",
+   "lemma": "vorzeitig"
+  },
+  {
+   "form": "zugeben",
+   "context": "Tipp: Typische Verben mit vorzeitigem Infinitiv: bereuen, bedauern, zugeben, behaupten, sich erinnern, stolz sein, froh sein.",
+   "en": "to admit",
+   "lemma": ""
+  },
+  {
+   "form": "behaupten",
+   "context": "Tipp: Typische Verben mit vorzeitigem Infinitiv: bereuen, bedauern, zugeben, behaupten, sich erinnern, stolz sein, froh sein.",
+   "en": "to claim",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitalter",
+   "context": "das digitale Zeitalter (Sg.) — EN: digital age · FR: l'ère numériqueIm digitalen Zeitalter verändert sich Nähe.",
+   "en": "age, era",
+   "lemma": "das Zeitalter"
+  },
+  {
+   "form": "digital",
+   "context": "das digitale Zeitalter (Sg.) — EN: digital age · FR: l'ère numériqueIm digitalen Zeitalter verändert sich Nähe.",
+   "en": "digital",
+   "lemma": ""
+  },
+  {
+   "form": "age",
+   "context": "das digitale Zeitalter (Sg.) — EN: digital age · FR: l'ère numériqueIm digitalen Zeitalter verändert sich Nähe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'ère",
+   "context": "das digitale Zeitalter (Sg.) — EN: digital age · FR: l'ère numériqueIm digitalen Zeitalter verändert sich Nähe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "numériqueIm",
+   "context": "das digitale Zeitalter (Sg.) — EN: digital age · FR: l'ère numériqueIm digitalen Zeitalter verändert sich Nähe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "digitalen",
+   "context": "das digitale Zeitalter (Sg.) — EN: digital age · FR: l'ère numériqueIm digitalen Zeitalter verändert sich Nähe.",
+   "en": "digital",
+   "lemma": "digital"
+  },
+  {
+   "form": "Erreichbarkeit",
+   "context": "die Erreichbarkeit (Sg.) — EN: availability, being reachable · FR: la joignabilitéStändige Erreichbarkeit setzt viele unter Druck.",
+   "en": "availability, being reachable",
+   "lemma": "die Erreichbarkeit"
+  },
+  {
+   "form": "availability",
+   "context": "die Erreichbarkeit (Sg.) — EN: availability, being reachable · FR: la joignabilitéStändige Erreichbarkeit setzt viele unter Druck.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "being",
+   "context": "die Erreichbarkeit (Sg.) — EN: availability, being reachable · FR: la joignabilitéStändige Erreichbarkeit setzt viele unter Druck.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reachable",
+   "context": "die Erreichbarkeit (Sg.) — EN: availability, being reachable · FR: la joignabilitéStändige Erreichbarkeit setzt viele unter Druck.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "joignabilitéStändige",
+   "context": "die Erreichbarkeit (Sg.) — EN: availability, being reachable · FR: la joignabilitéStändige Erreichbarkeit setzt viele unter Druck.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Druck",
+   "context": "die Erreichbarkeit (Sg.) — EN: availability, being reachable · FR: la joignabilitéStändige Erreichbarkeit setzt viele unter Druck.",
+   "en": "pressure; printing",
+   "lemma": "der Druck"
+  },
+  {
+   "form": "oberflächlich",
+   "context": "oberflächlich — EN: superficial · FR: superficielOnline-Kontakte bleiben oft oberflächlich.",
+   "en": "superficial",
+   "lemma": ""
+  },
+  {
+   "form": "superficial",
+   "context": "oberflächlich — EN: superficial · FR: superficielOnline-Kontakte bleiben oft oberflächlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "superficielOnline-Kontakte",
+   "context": "oberflächlich — EN: superficial · FR: superficielOnline-Kontakte bleiben oft oberflächlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Distanz",
+   "context": "die Nähe / die Distanz — EN: closeness / distance · FR: la proximité / la distanceDigitale Nähe ersetzt keine echte Nähe.",
+   "en": "distance",
+   "lemma": "die Distanz"
+  },
+  {
+   "form": "closeness",
+   "context": "die Nähe / die Distanz — EN: closeness / distance · FR: la proximité / la distanceDigitale Nähe ersetzt keine echte Nähe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "proximité",
+   "context": "die Nähe / die Distanz — EN: closeness / distance · FR: la proximité / la distanceDigitale Nähe ersetzt keine echte Nähe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "distanceDigitale",
+   "context": "die Nähe / die Distanz — EN: closeness / distance · FR: la proximité / la distanceDigitale Nähe ersetzt keine echte Nähe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "austauschen",
+   "context": "sich austauschen — EN: to exchange ideas · FR: échangerWir tauschen uns täglich in der Gruppe aus.",
+   "en": "to exchange (ideas)",
+   "lemma": ""
+  },
+  {
+   "form": "ideas",
+   "context": "sich austauschen — EN: to exchange ideas · FR: échangerWir tauschen uns täglich in der Gruppe aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "échangerWir",
+   "context": "sich austauschen — EN: to exchange ideas · FR: échangerWir tauschen uns täglich in der Gruppe aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tauschen",
+   "context": "sich austauschen — EN: to exchange ideas · FR: échangerWir tauschen uns täglich in der Gruppe aus.",
+   "en": "exchange (tauschen … aus); swap",
+   "lemma": "tauschen"
+  },
+  {
+   "form": "Bildschirm",
+   "context": "der Bildschirm, -e — EN: screen · FR: l'écranWir verbringen Stunden vor dem Bildschirm.",
+   "en": "screen",
+   "lemma": "der Bildschirm"
+  },
+  {
+   "form": "screen",
+   "context": "der Bildschirm, -e — EN: screen · FR: l'écranWir verbringen Stunden vor dem Bildschirm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'écranWir",
+   "context": "der Bildschirm, -e — EN: screen · FR: l'écranWir verbringen Stunden vor dem Bildschirm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "blockieren",
+   "context": "jemanden blockieren — EN: to block sb. · FR: bloquer qn.Man kann Leute heute einfach blockieren.",
+   "en": "to block",
+   "lemma": ""
+  },
+  {
+   "form": "block",
+   "context": "jemanden blockieren — EN: to block sb. · FR: bloquer qn.Man kann Leute heute einfach blockieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bloquer",
+   "context": "jemanden blockieren — EN: to block sb. · FR: bloquer qn.Man kann Leute heute einfach blockieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Gruppenzwang",
+   "context": "der Gruppenzwang (Sg.) — EN: peer pressure · FR: la pression du groupeIn Chats entsteht schnell Gruppenzwang.",
+   "en": "peer pressure",
+   "lemma": "der Gruppenzwang"
+  },
+  {
+   "form": "peer",
+   "context": "der Gruppenzwang (Sg.) — EN: peer pressure · FR: la pression du groupeIn Chats entsteht schnell Gruppenzwang.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pression",
+   "context": "der Gruppenzwang (Sg.) — EN: peer pressure · FR: la pression du groupeIn Chats entsteht schnell Gruppenzwang.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "groupeIn",
+   "context": "der Gruppenzwang (Sg.) — EN: peer pressure · FR: la pression du groupeIn Chats entsteht schnell Gruppenzwang.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Chats",
+   "context": "der Gruppenzwang (Sg.) — EN: peer pressure · FR: la pression du groupeIn Chats entsteht schnell Gruppenzwang.",
+   "en": "chats",
+   "lemma": "der Chat"
+  },
+  {
+   "form": "missverständlich",
+   "context": "missverständlich — EN: ambiguous, easily misunderstood · FR: ambiguSchriftliche Nachrichten sind oft missverständlich.",
+   "en": "easily misunderstood, ambiguous",
+   "lemma": ""
+  },
+  {
+   "form": "ambiguous",
+   "context": "missverständlich — EN: ambiguous, easily misunderstood · FR: ambiguSchriftliche Nachrichten sind oft missverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "easily",
+   "context": "missverständlich — EN: ambiguous, easily misunderstood · FR: ambiguSchriftliche Nachrichten sind oft missverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "misunderstood",
+   "context": "missverständlich — EN: ambiguous, easily misunderstood · FR: ambiguSchriftliche Nachrichten sind oft missverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ambiguSchriftliche",
+   "context": "missverständlich — EN: ambiguous, easily misunderstood · FR: ambiguSchriftliche Nachrichten sind oft missverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Umgangston",
+   "context": "der Umgangston (Sg.) — EN: tone, way of interacting · FR: le tonDer Umgangston im Netz ist rauer geworden.",
+   "en": "tone (of interaction)",
+   "lemma": "der Umgangston"
+  },
+  {
+   "form": "tone",
+   "context": "der Umgangston (Sg.) — EN: tone, way of interacting · FR: le tonDer Umgangston im Netz ist rauer geworden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "interacting",
+   "context": "der Umgangston (Sg.) — EN: tone, way of interacting · FR: le tonDer Umgangston im Netz ist rauer geworden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tonDer",
+   "context": "der Umgangston (Sg.) — EN: tone, way of interacting · FR: le tonDer Umgangston im Netz ist rauer geworden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Netz",
+   "context": "der Umgangston (Sg.) — EN: tone, way of interacting · FR: le tonDer Umgangston im Netz ist rauer geworden.",
+   "en": "net, internet; network",
+   "lemma": "das Netz"
+  },
+  {
+   "form": "rauer",
+   "context": "der Umgangston (Sg.) — EN: tone, way of interacting · FR: le tonDer Umgangston im Netz ist rauer geworden.",
+   "en": "rougher, harsher",
+   "lemma": "rau"
+  },
+  {
+   "form": "regretter",
+   "context": "etwas bereuen — EN: to regret sth. · FR: regretter qc.Diese Nachricht bereue ich bis heute.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Verbindlichkeit",
+   "context": "die Verbindlichkeit (Sg.) — EN: commitment, reliability · FR: l'engagementVerabredungen haben an Verbindlichkeit verloren.",
+   "en": "commitment, reliability",
+   "lemma": "die Verbindlichkeit"
+  },
+  {
+   "form": "commitment",
+   "context": "die Verbindlichkeit (Sg.) — EN: commitment, reliability · FR: l'engagementVerabredungen haben an Verbindlichkeit verloren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reliability",
+   "context": "die Verbindlichkeit (Sg.) — EN: commitment, reliability · FR: l'engagementVerabredungen haben an Verbindlichkeit verloren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'engagementVerabredungen",
+   "context": "die Verbindlichkeit (Sg.) — EN: commitment, reliability · FR: l'engagementVerabredungen haben an Verbindlichkeit verloren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verloren",
+   "context": "die Verbindlichkeit (Sg.) — EN: commitment, reliability · FR: l'engagementVerabredungen haben an Verbindlichkeit verloren.",
+   "en": "lost",
+   "lemma": "verlieren"
+  },
+  {
+   "form": "entschleunigen",
+   "context": "entschleunigen — EN: to slow down · FR: ralentirAb und zu sollte man bewusst entschleunigen.",
+   "en": "to slow down",
+   "lemma": ""
+  },
+  {
+   "form": "ralentirAb",
+   "context": "entschleunigen — EN: to slow down · FR: ralentirAb und zu sollte man bewusst entschleunigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Mehrwert",
+   "context": "der Mehrwert (Sg.) — EN: added value · FR: la valeur ajoutéeWelchen Mehrwert bringt das wirklich?",
+   "en": "added value",
+   "lemma": "der Mehrwert"
+  },
+  {
+   "form": "added",
+   "context": "der Mehrwert (Sg.) — EN: added value · FR: la valeur ajoutéeWelchen Mehrwert bringt das wirklich?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "valeur",
+   "context": "der Mehrwert (Sg.) — EN: added value · FR: la valeur ajoutéeWelchen Mehrwert bringt das wirklich?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ajoutéeWelchen",
+   "context": "der Mehrwert (Sg.) — EN: added value · FR: la valeur ajoutéeWelchen Mehrwert bringt das wirklich?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "eröffnen",
+   "context": "eine Diskussion eröffnen und führen",
+   "en": "to open",
+   "lemma": ""
+  },
+  {
+   "form": "einlenken",
+   "context": "widersprechen und einlenken",
+   "en": "to give ground, compromise",
+   "lemma": ""
+  },
+  {
+   "form": "Zusammenfassend",
+   "context": "Zusammenfassend lässt sich sagen, dass …",
+   "en": "in summary, to sum up",
+   "lemma": ""
+  },
+  {
+   "form": "offenbar",
+   "context": "Wir sind uns offenbar einig, dass …",
+   "en": "obviously, apparently",
+   "lemma": ""
+  },
+  {
+   "form": "einig",
+   "context": "Wir sind uns offenbar einig, dass …",
+   "en": "in agreement (sich einig sein = to agree)",
+   "lemma": ""
+  },
+  {
+   "form": "Unterm",
+   "context": "Unterm Strich überwiegen für mich die Vorteile.",
+   "en": "under the (unter + dem)",
+   "lemma": "unter"
+  },
+  {
+   "form": "Strich",
+   "context": "Unterm Strich überwiegen für mich die Vorteile.",
+   "en": "line (unterm Strich = all in all)",
+   "lemma": "der Strich"
+  },
+  {
+   "form": "überwiegen",
+   "context": "Unterm Strich überwiegen für mich die Vorteile.",
+   "en": "outweigh, predominate",
+   "lemma": ""
+  },
+  {
+   "form": "Ständige",
+   "context": "Ständige Erreichbarkeit setzt viele unter Druck.",
+   "en": "constant",
+   "lemma": "ständig"
+  },
+  {
+   "form": "Online-Kontakte",
+   "context": "Online-Kontakte bleiben oft oberflächlich.",
+   "en": "online contacts",
+   "lemma": "der Online-Kontakt"
+  },
+  {
+   "form": "Digitale",
+   "context": "Digitale Nähe ersetzt keine echte Nähe.",
+   "en": "digital",
+   "lemma": "digital"
+  },
+  {
+   "form": "Schriftliche",
+   "context": "Schriftliche Nachrichten sind oft missverständlich.",
+   "en": "written",
+   "lemma": "schriftlich"
+  },
+  {
+   "form": "Verabredungen",
+   "context": "Verabredungen haben an Verbindlichkeit verloren.",
+   "en": "arrangements to meet, dates",
+   "lemma": "die Verabredung"
+  },
+  {
+   "form": "abschicken",
+   "context": "Er bereut, die Nachricht so schnell ___ ___ ___. (abschicken, vorzeitig)",
+   "en": "to send (off)",
+   "lemma": ""
+  },
+  {
+   "form": "typischerweise",
+   "context": "Welches Verb verlangt typischerweise einen vorzeitigen Infinitivsatz?",
+   "en": "typically",
+   "lemma": ""
+  },
+  {
+   "form": "vorzeitigen",
+   "context": "Welches Verb verlangt typischerweise einen vorzeitigen Infinitivsatz?",
+   "en": "earlier, anterior",
+   "lemma": "vorzeitig"
+  },
+  {
+   "form": "schwächer",
+   "context": "Fassen Sie Ihre Position in einer schriftlichen Stellungnahme zusammen: Macht digitale Kommunikation Beziehungen stärker oder schwächer? Umfang: 180–220 Wörter Checkliste: • Formulieren Sie Ihre These im ersten Absatz. • Stützen Sie sie mit zwei Argumenten und je einem Beispiel. • Nennen Sie ein Gegenargument und entkräften Sie es. • Verwenden Sie mindestens einen vorzeitigen Infinitivsatz.",
+   "en": "weaker",
+   "lemma": "schwach"
+  },
+  {
+   "form": "These",
+   "context": "Fassen Sie Ihre Position in einer schriftlichen Stellungnahme zusammen: Macht digitale Kommunikation Beziehungen stärker oder schwächer? Umfang: 180–220 Wörter Checkliste: • Formulieren Sie Ihre These im ersten Absatz. • Stützen Sie sie mit zwei Argumenten und je einem Beispiel. • Nennen Sie ein Gegenargument und entkräften Sie es. • Verwenden Sie mindestens einen vorzeitigen Infinitivsatz.",
+   "en": "thesis",
+   "lemma": "die These"
+  },
+  {
+   "form": "Absatz",
+   "context": "Fassen Sie Ihre Position in einer schriftlichen Stellungnahme zusammen: Macht digitale Kommunikation Beziehungen stärker oder schwächer? Umfang: 180–220 Wörter Checkliste: • Formulieren Sie Ihre These im ersten Absatz. • Stützen Sie sie mit zwei Argumenten und je einem Beispiel. • Nennen Sie ein Gegenargument und entkräften Sie es. • Verwenden Sie mindestens einen vorzeitigen Infinitivsatz.",
+   "en": "paragraph",
+   "lemma": "der Absatz"
+  },
+  {
+   "form": "Stützen",
+   "context": "Fassen Sie Ihre Position in einer schriftlichen Stellungnahme zusammen: Macht digitale Kommunikation Beziehungen stärker oder schwächer? Umfang: 180–220 Wörter Checkliste: • Formulieren Sie Ihre These im ersten Absatz. • Stützen Sie sie mit zwei Argumenten und je einem Beispiel. • Nennen Sie ein Gegenargument und entkräften Sie es. • Verwenden Sie mindestens einen vorzeitigen Infinitivsatz.",
+   "en": "support, back up",
+   "lemma": "stützen"
+  },
+  {
+   "form": "Gegenargument",
+   "context": "Fassen Sie Ihre Position in einer schriftlichen Stellungnahme zusammen: Macht digitale Kommunikation Beziehungen stärker oder schwächer? Umfang: 180–220 Wörter Checkliste: • Formulieren Sie Ihre These im ersten Absatz. • Stützen Sie sie mit zwei Argumenten und je einem Beispiel. • Nennen Sie ein Gegenargument und entkräften Sie es. • Verwenden Sie mindestens einen vorzeitigen Infinitivsatz.",
+   "en": "counter-argument",
+   "lemma": "das Gegenargument"
+  }
+ ]
+}
