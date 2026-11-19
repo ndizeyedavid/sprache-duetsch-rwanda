@@ -1,3 +1,4 @@
+import { GATEWAY_METHOD_CODE } from '../../lib/mobile-money';
 import { format } from 'date-fns';
 import { currencyAmount } from '../../lib/format';
 import type { ClaimStatus } from '../../lib/payment-claims';
@@ -14,9 +15,9 @@ export const STATUS_CLASS: Record<ClaimStatus, string> = {
 };
 
 /** Methods a student may report themselves; the gateway confirms itself and scholarships are granted by finance. */
-export const reportable = (method: { code: string; isActive?: boolean }) => method.isActive !== false && method.code !== 'PAYPACK' && method.code !== 'SCHOLARSHIP';
+export const reportable = (method: { code: string; isActive?: boolean }) => method.isActive !== false && method.code !== GATEWAY_METHOD_CODE && method.code !== 'SCHOLARSHIP';
 /** Methods finance can use to mark someone paid by hand (never the gateway). */
-export const manualMethod = (method: { code: string; isActive?: boolean }) => method.isActive !== false && method.code !== 'PAYPACK';
+export const manualMethod = (method: { code: string; isActive?: boolean }) => method.isActive !== false && method.code !== GATEWAY_METHOD_CODE;
 
 /** `yyyy-mm-dd` of today in local time, for date inputs. */
 export const todayInput = () => format(new Date(), 'yyyy-MM-dd');
