@@ -1,0 +1,683 @@
+{
+ "level": "B1",
+ "lesson": 24,
+ "title": "Zukunftsvisionen — Wir handeln jetzt, damit sich etwas ändert",
+ "lines": [
+  {
+   "de": "Visionen und Absichten formulieren — und irreale Vergleiche ziehen.",
+   "en": "Formulating visions and intentions — and making unreal comparisons."
+  },
+  {
+   "de": "Absichten und Ziele ausdrücken",
+   "en": "express intentions and goals"
+  },
+  {
+   "de": "damit und um … zu richtig unterscheiden",
+   "en": "correctly distinguish between damit and um … zu"
+  },
+  {
+   "de": "irreale Vergleiche mit als ob formulieren",
+   "en": "make unreal comparisons with als ob"
+  },
+  {
+   "de": "Grammatik: damit und um … zu (Absicht)",
+   "en": "Grammar: damit and um … zu (purpose)"
+  },
+  {
+   "de": "Beide antworten auf die Frage Wozu? Welches Ziel? Entscheidend ist das Subjekt: Sind die Subjekte in Haupt- und Nebensatz gleich, kann man um … zu benutzen. Sind sie verschieden, geht nur damit.",
+   "en": "Both answer the question: What for? With what aim? The subject is decisive: if the subjects in the main and subordinate clause are the same, you can use um … zu. If they are different, only damit works."
+  },
+  {
+   "de": "Möglich",
+   "en": "Possible"
+  },
+  {
+   "de": "um … zu ODER damit",
+   "en": "um … zu OR damit"
+  },
+  {
+   "de": "Wir sparen Energie, um Kosten zu senken.",
+   "en": "We save energy in order to reduce costs."
+  },
+  {
+   "de": "Wir sparen Energie, damit wir Kosten senken.",
+   "en": "We save energy so that we reduce costs."
+  },
+  {
+   "de": "nur damit",
+   "en": "only damit"
+  },
+  {
+   "de": "Ich erkläre es noch einmal, damit alle es verstehen.",
+   "en": "I'll explain it again so that everyone understands it."
+  },
+  {
+   "de": "nicht möglich",
+   "en": "not possible"
+  },
+  {
+   "de": "Ich erkläre es, um alle zu verstehen. ✗ (falsche Bedeutung)",
+   "en": "I explain it in order to understand everyone. ✗ (wrong meaning)"
+  },
+  {
+   "de": "Drei Familien haben den Betrieb übernommen, damit das Dorf eine Zukunft hat.verschiedene Subjekte → damit",
+   "en": "Three families have taken over the business so that the village has a future. different subjects → damit"
+  },
+  {
+   "de": "Sie zogen aufs Land, um ruhiger zu leben.gleiches Subjekt → um … zu",
+   "en": "They moved to the countryside in order to live more quietly. same subject → um … zu"
+  },
+  {
+   "de": "Tipp: Mit Modalverb geht nur damit: Ich schreibe es auf, damit du es nachlesen kannst.",
+   "en": "Tip: With a modal verb, only damit works: I'll write it down so that you can read it again later."
+  },
+  {
+   "de": "Grammatik: als ob + Konjunktiv II (irrealer Vergleich)",
+   "en": "Grammar: als ob + subjunctive II (Konjunktiv II) (unreal comparison)"
+  },
+  {
+   "de": "als ob leitet einen Vergleich ein, der nicht der Wirklichkeit entspricht. Im Nebensatz steht der Konjunktiv II, das Verb steht am Ende. Kurzform: als + Konjunktiv II direkt nach als (ohne ob).",
+   "en": "als ob introduces a comparison that does not match reality. The subordinate clause uses the subjunctive II (Konjunktiv II), with the verb at the end. Short form: als + subjunctive II directly after als (without ob)."
+  },
+  {
+   "de": "als ob + Verb am Ende",
+   "en": "als ob + verb at the end"
+  },
+  {
+   "de": "Er tut so, als ob er alles wüsste.",
+   "en": "He acts as if he knew everything."
+  },
+  {
+   "de": "als + Verb direkt danach",
+   "en": "als + verb directly after it"
+  },
+  {
+   "de": "Er tut so, als wüsste er alles.",
+   "en": "He acts as though he knew everything."
+  },
+  {
+   "de": "Vergangenheit",
+   "en": "Past"
+  },
+  {
+   "de": "Sie sah aus, als ob sie geweint hätte.",
+   "en": "She looked as if she had been crying."
+  },
+  {
+   "de": "Wir tun so, als ob wir unendlich viel Zeit hätten.Realität: Wir haben wenig Zeit.",
+   "en": "We act as if we had endless time. Reality: we have little time."
+  },
+  {
+   "de": "Es klingt, als wäre das Problem schon gelöst.Kurzform ohne ob",
+   "en": "It sounds as if the problem were already solved. short form without ob"
+  },
+  {
+   "de": "Tipp: Nach als ob steht immer Konjunktiv II — auch wenn der Hauptsatz im Präsens steht.",
+   "en": "Tip: als ob is always followed by the subjunctive II (Konjunktiv II) — even if the main clause is in the present tense."
+  },
+  {
+   "de": "die Vision, -en — EN: vision · FR: la visionSeine Vision war ein Dorf ohne Autos.",
+   "en": "Example: His vision was a village without cars."
+  },
+  {
+   "de": "das Ziel, -e — EN: goal · FR: l'objectifUnser Ziel ist, bis 2035 klimaneutral zu sein.",
+   "en": "Example: Our goal is to be climate-neutral by 2035."
+  },
+  {
+   "de": "umsetzen — EN: to implement · FR: mettre en œuvreDie Idee wurde schnell umgesetzt.",
+   "en": "Example: The idea was implemented quickly."
+  },
+  {
+   "de": "die Herausforderung, -en — EN: challenge · FR: le défiDie größte Herausforderung ist die Finanzierung.",
+   "en": "Example: The biggest challenge is the financing."
+  },
+  {
+   "de": "die Alternative, -n — EN: alternative · FR: l'alternativeDazu gibt es keine echte Alternative.",
+   "en": "Example: There's no real alternative to that."
+  },
+  {
+   "de": "sich zusammenschließen — EN: to join forces · FR: s'unirMehrere Familien haben sich zusammengeschlossen.",
+   "en": "Example: Several families have joined forces."
+  },
+  {
+   "de": "die Genossenschaft, -en — EN: cooperative · FR: la coopérativeSie gründeten eine Genossenschaft.",
+   "en": "Example: They founded a cooperative."
+  },
+  {
+   "de": "die Nachfrage (Sg.) — EN: demand · FR: la demandeDie Nachfrage nach regionalen Produkten wächst.",
+   "en": "Example: Demand for regional products is growing."
+  },
+  {
+   "de": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "Example: The state supports such projects."
+  },
+  {
+   "de": "realistisch — EN: realistic · FR: réalisteIst dieser Plan überhaupt realistisch?",
+   "en": "Example: Is this plan realistic at all?"
+  },
+  {
+   "de": "die Lösung, -en — EN: solution · FR: la solutionDas löst mehrere Probleme auf einmal.",
+   "en": "Example: That solves several problems at once."
+  },
+  {
+   "de": "überzeugt sein von — EN: to be convinced of · FR: être convaincu deIch bin davon überzeugt, dass es funktioniert.",
+   "en": "Example: I am convinced that it works."
+  },
+  {
+   "de": "Überzeugung ausdrücken",
+   "en": "Expressing conviction"
+  },
+  {
+   "de": "Ich bin davon überzeugt, dass … eine große Rolle spielen wird.",
+   "en": "I am convinced that … will play a big role."
+  },
+  {
+   "de": "Für mich besteht kein Zweifel daran, dass …",
+   "en": "For me, there is no doubt that …"
+  },
+  {
+   "de": "Meiner Überzeugung nach …",
+   "en": "In my firm opinion …"
+  },
+  {
+   "de": "Ziele nennen",
+   "en": "Stating goals"
+  },
+  {
+   "de": "Wir tun das, damit …",
+   "en": "We are doing this so that …"
+  },
+  {
+   "de": "Das Ziel dahinter ist, … zu …",
+   "en": "The aim behind it is to …"
+  },
+  {
+   "de": "Langfristig geht es darum, …",
+   "en": "In the long term, it's about …"
+  },
+  {
+   "de": "kritisch nachfragen",
+   "en": "Asking critical questions"
+  },
+  {
+   "de": "Ist das realistisch?",
+   "en": "Is that realistic?"
+  },
+  {
+   "de": "Wir können nicht so tun, als ob …",
+   "en": "We can't act as if …"
+  },
+  {
+   "de": "Wie soll das konkret funktionieren?",
+   "en": "How exactly is that supposed to work?"
+  },
+  {
+   "de": "Seine Vision war ein Dorf ohne Autos.",
+   "en": "His vision was a village without cars."
+  },
+  {
+   "de": "Unser Ziel ist, bis 2035 klimaneutral zu sein.",
+   "en": "Our goal is to be climate-neutral by 2035."
+  },
+  {
+   "de": "Die Idee wurde schnell umgesetzt.",
+   "en": "The idea was implemented quickly."
+  },
+  {
+   "de": "Die größte Herausforderung ist die Finanzierung.",
+   "en": "The biggest challenge is the financing."
+  },
+  {
+   "de": "Dazu gibt es keine echte Alternative.",
+   "en": "There's no real alternative to that."
+  },
+  {
+   "de": "Mehrere Familien haben sich zusammengeschlossen.",
+   "en": "Several families have joined forces."
+  },
+  {
+   "de": "Sie gründeten eine Genossenschaft.",
+   "en": "They founded a cooperative."
+  },
+  {
+   "de": "Die Nachfrage nach regionalen Produkten wächst.",
+   "en": "Demand for regional products is growing."
+  },
+  {
+   "de": "Der Staat fördert solche Projekte.",
+   "en": "The state supports such projects."
+  },
+  {
+   "de": "Ist dieser Plan überhaupt realistisch?",
+   "en": "Is this plan realistic at all?"
+  },
+  {
+   "de": "Das löst mehrere Probleme auf einmal.",
+   "en": "That solves several problems at once."
+  },
+  {
+   "de": "Ich bin davon überzeugt, dass es funktioniert.",
+   "en": "I am convinced that it works."
+  },
+  {
+   "de": "Ich erkläre es noch einmal, ___ alle es verstehen.",
+   "en": "I'll explain it again ___ everyone understands it."
+  },
+  {
+   "de": "Sie ist aufs Land gezogen, ___ ruhiger ___ leben. (um … zu)",
+   "en": "She moved to the countryside ___ ___ live more quietly. (um … zu)"
+  },
+  {
+   "de": "Er tut so, ___ ___ er alles wüsste. (irrealer Vergleich)",
+   "en": "He acts ___ ___ he knew everything. (unreal comparison)"
+  },
+  {
+   "de": "Welche Kurzform ist korrekt?",
+   "en": "Which short form is correct?"
+  },
+  {
+   "de": "Ich schreibe es auf, ___ du es später nachlesen kannst. (mit Modalverb)",
+   "en": "I'll write it down ___ you can read it again later. (with a modal verb)"
+  },
+  {
+   "de": "Die Subjekte sind verschieden (ich / alle) → nur damit.",
+   "en": "The subjects are different (ich / alle) → only damit."
+  },
+  {
+   "de": "Gleiches Subjekt → um … zu.",
+   "en": "Same subject → um … zu."
+  },
+  {
+   "de": "als ob + Konjunktiv II, Verb am Ende.",
+   "en": "als ob + subjunctive II, verb at the end."
+  },
+  {
+   "de": "Ohne ob folgt das Verb direkt auf als.",
+   "en": "Without ob, the verb comes directly after als."
+  },
+  {
+   "de": "Mit Modalverb im Nebensatz ist nur damit möglich.",
+   "en": "With a modal verb in the subordinate clause, only damit is possible."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Visionen",
+   "context": "Visionen und Absichten formulieren — und irreale Vergleiche ziehen.",
+   "en": "visions",
+   "lemma": "die Vision"
+  },
+  {
+   "form": "Absichten",
+   "context": "Visionen und Absichten formulieren — und irreale Vergleiche ziehen.",
+   "en": "intentions",
+   "lemma": "die Absicht"
+  },
+  {
+   "form": "Absicht",
+   "context": "Grammatik: damit und um … zu (Absicht)",
+   "en": "intention, purpose",
+   "lemma": "die Absicht"
+  },
+  {
+   "form": "Wozu",
+   "context": "Beide antworten auf die Frage Wozu? Welches Ziel? Entscheidend ist das Subjekt: Sind die Subjekte in Haupt- und Nebensatz gleich, kann man um … zu benutzen. Sind sie verschieden, geht nur damit.",
+   "en": "what for, why",
+   "lemma": ""
+  },
+  {
+   "form": "senken",
+   "context": "Wir sparen Energie, um Kosten zu senken.",
+   "en": "to reduce, lower",
+   "lemma": ""
+  },
+  {
+   "form": "erkläre",
+   "context": "Ich erkläre es noch einmal, damit alle es verstehen.",
+   "en": "explain",
+   "lemma": "erklären"
+  },
+  {
+   "form": "falsche",
+   "context": "Ich erkläre es, um alle zu verstehen. ✗ (falsche Bedeutung)",
+   "en": "wrong, false",
+   "lemma": "falsch"
+  },
+  {
+   "form": "Familien",
+   "context": "Drei Familien haben den Betrieb übernommen, damit das Dorf eine Zukunft hat.verschiedene Subjekte → damit",
+   "en": "families",
+   "lemma": "die Familie"
+  },
+  {
+   "form": "zogen",
+   "context": "Sie zogen aufs Land, um ruhiger zu leben.gleiches Subjekt → um … zu",
+   "en": "moved; pulled",
+   "lemma": "ziehen"
+  },
+  {
+   "form": "nachlesen",
+   "context": "Tipp: Mit Modalverb geht nur damit: Ich schreibe es auf, damit du es nachlesen kannst.",
+   "en": "to read again, look up",
+   "lemma": ""
+  },
+  {
+   "form": "Wirklichkeit",
+   "context": "als ob leitet einen Vergleich ein, der nicht der Wirklichkeit entspricht. Im Nebensatz steht der Konjunktiv II, das Verb steht am Ende. Kurzform: als + Konjunktiv II direkt nach als (ohne ob).",
+   "en": "reality",
+   "lemma": "die Wirklichkeit"
+  },
+  {
+   "form": "entspricht",
+   "context": "als ob leitet einen Vergleich ein, der nicht der Wirklichkeit entspricht. Im Nebensatz steht der Konjunktiv II, das Verb steht am Ende. Kurzform: als + Konjunktiv II direkt nach als (ohne ob).",
+   "en": "corresponds to, matches",
+   "lemma": "entsprechen"
+  },
+  {
+   "form": "geweint",
+   "context": "Sie sah aus, als ob sie geweint hätte.",
+   "en": "cried",
+   "lemma": "weinen"
+  },
+  {
+   "form": "unendlich",
+   "context": "Wir tun so, als ob wir unendlich viel Zeit hätten.Realität: Wir haben wenig Zeit.",
+   "en": "endless(ly), infinite",
+   "lemma": ""
+  },
+  {
+   "form": "Realität",
+   "context": "Wir tun so, als ob wir unendlich viel Zeit hätten.Realität: Wir haben wenig Zeit.",
+   "en": "reality",
+   "lemma": "die Realität"
+  },
+  {
+   "form": "gelöst",
+   "context": "Es klingt, als wäre das Problem schon gelöst.Kurzform ohne ob",
+   "en": "solved",
+   "lemma": "lösen"
+  },
+  {
+   "form": "Vision",
+   "context": "die Vision, -en — EN: vision · FR: la visionSeine Vision war ein Dorf ohne Autos.",
+   "en": "vision",
+   "lemma": "die Vision"
+  },
+  {
+   "form": "vision",
+   "context": "die Vision, -en — EN: vision · FR: la visionSeine Vision war ein Dorf ohne Autos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "visionSeine",
+   "context": "die Vision, -en — EN: vision · FR: la visionSeine Vision war ein Dorf ohne Autos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "goal",
+   "context": "das Ziel, -e — EN: goal · FR: l'objectifUnser Ziel ist, bis 2035 klimaneutral zu sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'objectifUnser",
+   "context": "das Ziel, -e — EN: goal · FR: l'objectifUnser Ziel ist, bis 2035 klimaneutral zu sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "klimaneutral",
+   "context": "das Ziel, -e — EN: goal · FR: l'objectifUnser Ziel ist, bis 2035 klimaneutral zu sein.",
+   "en": "climate-neutral",
+   "lemma": ""
+  },
+  {
+   "form": "umsetzen",
+   "context": "umsetzen — EN: to implement · FR: mettre en œuvreDie Idee wurde schnell umgesetzt.",
+   "en": "to implement",
+   "lemma": ""
+  },
+  {
+   "form": "implement",
+   "context": "umsetzen — EN: to implement · FR: mettre en œuvreDie Idee wurde schnell umgesetzt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "œuvreDie",
+   "context": "umsetzen — EN: to implement · FR: mettre en œuvreDie Idee wurde schnell umgesetzt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "umgesetzt",
+   "context": "umsetzen — EN: to implement · FR: mettre en œuvreDie Idee wurde schnell umgesetzt.",
+   "en": "implemented",
+   "lemma": "umsetzen"
+  },
+  {
+   "form": "défiDie",
+   "context": "die Herausforderung, -en — EN: challenge · FR: le défiDie größte Herausforderung ist die Finanzierung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Finanzierung",
+   "context": "die Herausforderung, -en — EN: challenge · FR: le défiDie größte Herausforderung ist die Finanzierung.",
+   "en": "financing, funding",
+   "lemma": "die Finanzierung"
+  },
+  {
+   "form": "l'alternativeDazu",
+   "context": "die Alternative, -n — EN: alternative · FR: l'alternativeDazu gibt es keine echte Alternative.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "echte",
+   "context": "die Alternative, -n — EN: alternative · FR: l'alternativeDazu gibt es keine echte Alternative.",
+   "en": "real, genuine",
+   "lemma": "echt"
+  },
+  {
+   "form": "zusammenschließen",
+   "context": "sich zusammenschließen — EN: to join forces · FR: s'unirMehrere Familien haben sich zusammengeschlossen.",
+   "en": "(sich) to join forces",
+   "lemma": ""
+  },
+  {
+   "form": "join",
+   "context": "sich zusammenschließen — EN: to join forces · FR: s'unirMehrere Familien haben sich zusammengeschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "forces",
+   "context": "sich zusammenschließen — EN: to join forces · FR: s'unirMehrere Familien haben sich zusammengeschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'unirMehrere",
+   "context": "sich zusammenschließen — EN: to join forces · FR: s'unirMehrere Familien haben sich zusammengeschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zusammengeschlossen",
+   "context": "sich zusammenschließen — EN: to join forces · FR: s'unirMehrere Familien haben sich zusammengeschlossen.",
+   "en": "joined forces",
+   "lemma": "sich zusammenschließen"
+  },
+  {
+   "form": "Genossenschaft",
+   "context": "die Genossenschaft, -en — EN: cooperative · FR: la coopérativeSie gründeten eine Genossenschaft.",
+   "en": "cooperative",
+   "lemma": "die Genossenschaft"
+  },
+  {
+   "form": "cooperative",
+   "context": "die Genossenschaft, -en — EN: cooperative · FR: la coopérativeSie gründeten eine Genossenschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "coopérativeSie",
+   "context": "die Genossenschaft, -en — EN: cooperative · FR: la coopérativeSie gründeten eine Genossenschaft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gründeten",
+   "context": "die Genossenschaft, -en — EN: cooperative · FR: la coopérativeSie gründeten eine Genossenschaft.",
+   "en": "founded",
+   "lemma": "gründen"
+  },
+  {
+   "form": "Nachfrage",
+   "context": "die Nachfrage (Sg.) — EN: demand · FR: la demandeDie Nachfrage nach regionalen Produkten wächst.",
+   "en": "demand; inquiry",
+   "lemma": "die Nachfrage"
+  },
+  {
+   "form": "demand",
+   "context": "die Nachfrage (Sg.) — EN: demand · FR: la demandeDie Nachfrage nach regionalen Produkten wächst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "demandeDie",
+   "context": "die Nachfrage (Sg.) — EN: demand · FR: la demandeDie Nachfrage nach regionalen Produkten wächst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "regionalen",
+   "context": "die Nachfrage (Sg.) — EN: demand · FR: la demandeDie Nachfrage nach regionalen Produkten wächst.",
+   "en": "regional",
+   "lemma": "regional"
+  },
+  {
+   "form": "wächst",
+   "context": "die Nachfrage (Sg.) — EN: demand · FR: la demandeDie Nachfrage nach regionalen Produkten wächst.",
+   "en": "grows, is growing",
+   "lemma": "wachsen"
+  },
+  {
+   "form": "fördern",
+   "context": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "to promote, support",
+   "lemma": ""
+  },
+  {
+   "form": "support",
+   "context": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soutenirDer",
+   "context": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Staat",
+   "context": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "state",
+   "lemma": "der Staat"
+  },
+  {
+   "form": "fördert",
+   "context": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "supports, promotes",
+   "lemma": "fördern"
+  },
+  {
+   "form": "solche",
+   "context": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "such",
+   "lemma": "solcher"
+  },
+  {
+   "form": "Projekte",
+   "context": "fördern — EN: to promote, support · FR: promouvoir, soutenirDer Staat fördert solche Projekte.",
+   "en": "projects",
+   "lemma": "das Projekt"
+  },
+  {
+   "form": "realistisch",
+   "context": "realistisch — EN: realistic · FR: réalisteIst dieser Plan überhaupt realistisch?",
+   "en": "realistic",
+   "lemma": ""
+  },
+  {
+   "form": "realistic",
+   "context": "realistisch — EN: realistic · FR: réalisteIst dieser Plan überhaupt realistisch?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réalisteIst",
+   "context": "realistisch — EN: realistic · FR: réalisteIst dieser Plan überhaupt realistisch?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "solution",
+   "context": "die Lösung, -en — EN: solution · FR: la solutionDas löst mehrere Probleme auf einmal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "solutionDas",
+   "context": "die Lösung, -en — EN: solution · FR: la solutionDas löst mehrere Probleme auf einmal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "convinced",
+   "context": "überzeugt sein von — EN: to be convinced of · FR: être convaincu deIch bin davon überzeugt, dass es funktioniert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "convaincu",
+   "context": "überzeugt sein von — EN: to be convinced of · FR: être convaincu deIch bin davon überzeugt, dass es funktioniert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Überzeugung",
+   "context": "Überzeugung ausdrücken",
+   "en": "conviction, belief",
+   "lemma": "die Überzeugung"
+  },
+  {
+   "form": "Zweifel",
+   "context": "Für mich besteht kein Zweifel daran, dass …",
+   "en": "doubt",
+   "lemma": "der Zweifel"
+  },
+  {
+   "form": "Langfristig",
+   "context": "Langfristig geht es darum, …",
+   "en": "in the long term",
+   "lemma": ""
+  },
+  {
+   "form": "kritisch",
+   "context": "kritisch nachfragen",
+   "en": "critical(ly)",
+   "lemma": ""
+  },
+  {
+   "form": "gezogen",
+   "context": "Sie ist aufs Land gezogen, ___ ruhiger ___ leben. (um … zu)",
+   "en": "moved; pulled",
+   "lemma": "ziehen"
+  }
+ ]
+}
