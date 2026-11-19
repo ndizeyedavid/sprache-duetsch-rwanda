@@ -1,0 +1,877 @@
+{
+ "level": "A1",
+ "lesson": 22,
+ "title": "Kleidung — Diese Schuhe gefallen mir besser",
+ "lines": [
+  {
+   "de": "Kleidung vergleichen und sagen, was man besser findet.",
+   "en": "Compare clothes and say what you like better."
+  },
+  {
+   "de": "Textsorte: Gespräch im Geschäft · Bewertung",
+   "en": "Text type: Conversation in a shop · Review"
+  },
+  {
+   "de": "Kleidung benennen",
+   "en": "name clothes"
+  },
+  {
+   "de": "mit Komparativ und Superlativ vergleichen",
+   "en": "compare with the comparative (Komparativ) and superlative (Superlativ)"
+  },
+  {
+   "de": "Vergleiche mit als und wie bilden",
+   "en": "make comparisons with als and wie"
+  },
+  {
+   "de": "Grammatik: Komparativ und Superlativ",
+   "en": "Grammar: comparative (Komparativ) and superlative (Superlativ)"
+  },
+  {
+   "de": "Der Komparativ endet auf -er, der Superlativ auf am …-(e)sten. Kurze Adjektive mit a, o, u bekommen oft einen Umlaut.",
+   "en": "The comparative ends in -er, the superlative in am …-(e)sten. Short adjectives with a, o, u often get an umlaut."
+  },
+  {
+   "de": "Positiv +",
+   "en": "Base form +"
+  },
+  {
+   "de": "Komparativ ++",
+   "en": "Comparative ++"
+  },
+  {
+   "de": "Superlativ +++",
+   "en": "Superlative +++"
+  },
+  {
+   "de": "schön",
+   "en": "beautiful; nice"
+  },
+  {
+   "de": "schöner",
+   "en": "more beautiful; nicer"
+  },
+  {
+   "de": "am schönsten",
+   "en": "(the) most beautiful; nicest"
+  },
+  {
+   "de": "billig",
+   "en": "cheap"
+  },
+  {
+   "de": "billiger",
+   "en": "cheaper"
+  },
+  {
+   "de": "am billigsten",
+   "en": "(the) cheapest"
+  },
+  {
+   "de": "alt",
+   "en": "old"
+  },
+  {
+   "de": "älter",
+   "en": "older"
+  },
+  {
+   "de": "am ältesten",
+   "en": "(the) oldest"
+  },
+  {
+   "de": "groß",
+   "en": "big"
+  },
+  {
+   "de": "größer",
+   "en": "bigger"
+  },
+  {
+   "de": "am größten",
+   "en": "(the) biggest"
+  },
+  {
+   "de": "gut",
+   "en": "good"
+  },
+  {
+   "de": "besser",
+   "en": "better"
+  },
+  {
+   "de": "am besten",
+   "en": "(the) best"
+  },
+  {
+   "de": "gern",
+   "en": "gladly; like (to)"
+  },
+  {
+   "de": "lieber",
+   "en": "rather; prefer"
+  },
+  {
+   "de": "am liebsten",
+   "en": "most of all; like best"
+  },
+  {
+   "de": "viel",
+   "en": "much; a lot"
+  },
+  {
+   "de": "mehr",
+   "en": "more"
+  },
+  {
+   "de": "am meisten",
+   "en": "(the) most"
+  },
+  {
+   "de": "Am besten sind seine Schuhe!gut → am besten",
+   "en": "His shoes are the best! gut → am besten"
+  },
+  {
+   "de": "Diese Jacke ist billiger als die andere.Komparativ + als",
+   "en": "This jacket is cheaper than the other one. comparative + als"
+  },
+  {
+   "de": "Ich trage am liebsten Jeans.gern → am liebsten",
+   "en": "I like wearing jeans best. gern → am liebsten"
+  },
+  {
+   "de": "Tipp: Nach -d, -t, -s und -z kommt ein e dazu: am ältesten, am interessantesten.",
+   "en": "Tip: After -d, -t, -s and -z, an e is added: am ältesten (the oldest), am interessantesten (the most interesting)."
+  },
+  {
+   "de": "Grammatik: Vergleiche mit als und wie",
+   "en": "Grammar: comparisons with als and wie"
+  },
+  {
+   "de": "Nach einem Komparativ steht als. Bei Gleichheit sagt man (genau)so … wie.",
+   "en": "After a comparative, you use als. When things are equal, you say (genau)so … wie (just as … as)."
+  },
+  {
+   "de": "Verhältnis",
+   "en": "Relation"
+  },
+  {
+   "de": "Struktur",
+   "en": "Structure"
+  },
+  {
+   "de": "ungleich (++)",
+   "en": "unequal (++)"
+  },
+  {
+   "de": "Komparativ + als",
+   "en": "comparative + als (than)"
+  },
+  {
+   "de": "Das Hemd gefällt ihr besser als die Hose.",
+   "en": "She likes the shirt better than the trousers."
+  },
+  {
+   "de": "gleich (+ = +)",
+   "en": "equal (+ = +)"
+  },
+  {
+   "de": "(genau)so … wie",
+   "en": "(just) as … as"
+  },
+  {
+   "de": "Lila mag sie genauso gern wie Rosa.",
+   "en": "She likes purple just as much as pink."
+  },
+  {
+   "de": "nicht gleich",
+   "en": "not equal"
+  },
+  {
+   "de": "nicht so … wie",
+   "en": "not as … as"
+  },
+  {
+   "de": "Die Schuhe sind nicht so teuer wie die Jacke.",
+   "en": "The shoes are not as expensive as the jacket."
+  },
+  {
+   "de": "Diese Schuhe gefallen mir besser als die schwarzen.besser als",
+   "en": "I like these shoes better than the black ones. besser als"
+  },
+  {
+   "de": "Tipp: Häufiger Fehler: nach einem Komparativ steht immer als — nie wie.",
+   "en": "Tip: Common mistake: after a comparative, you always use als — never wie."
+  },
+  {
+   "de": "die Kleidung (Sg.) — EN: clothing · FR: les vêtementsDie Kleidung hier ist günstig.",
+   "en": "Example: The clothes here are inexpensive."
+  },
+  {
+   "de": "die Hose, -n — EN: trousers · FR: le pantalonDie Hose ist zu lang.",
+   "en": "Example: The trousers are too long."
+  },
+  {
+   "de": "das Hemd, -en — EN: shirt · FR: la chemiseDas Hemd gefällt mir gut.",
+   "en": "Example: I like the shirt."
+  },
+  {
+   "de": "die Jacke, -n — EN: jacket · FR: la vesteDie Jacke ist warm.",
+   "en": "Example: The jacket is warm."
+  },
+  {
+   "de": "der Schuh, -e — EN: shoe · FR: la chaussureAm besten sind seine Schuhe!",
+   "en": "Example: His shoes are the best!"
+  },
+  {
+   "de": "das Kleid, -er — EN: dress · FR: la robeDas Kleid ist sehr schön.",
+   "en": "Example: The dress is very beautiful."
+  },
+  {
+   "de": "anprobieren — EN: to try on · FR: essayerDarf ich das anprobieren?",
+   "en": "Example: May I try this on?"
+  },
+  {
+   "de": "die Größe, -n — EN: size · FR: la tailleHaben Sie das in Größe 40?",
+   "en": "Example: Do you have this in size 40?"
+  },
+  {
+   "de": "passen — EN: to fit · FR: aller (taille)Die Hose passt mir nicht.",
+   "en": "Example: The trousers don't fit me."
+  },
+  {
+   "de": "stehen (+ Dat.) — EN: to suit · FR: aller bien àDas Kleid steht dir gut!",
+   "en": "Example: The dress suits you!"
+  },
+  {
+   "de": "die Farbe, -n — EN: colour · FR: la couleurWelche Farbe magst du lieber?",
+   "en": "Example: Which colour do you prefer?"
+  },
+  {
+   "de": "vergleichen",
+   "en": "comparing"
+  },
+  {
+   "de": "Diese Schuhe gefallen mir besser.",
+   "en": "I like these shoes better."
+  },
+  {
+   "de": "Das Hemd ist schöner als die Jacke.",
+   "en": "The shirt is nicer than the jacket."
+  },
+  {
+   "de": "Am besten finde ich das Kleid.",
+   "en": "I like the dress best."
+  },
+  {
+   "de": "im Geschäft",
+   "en": "in the shop"
+  },
+  {
+   "de": "Darf ich das anprobieren?",
+   "en": "May I try this on?"
+  },
+  {
+   "de": "Haben Sie das in Größe 40?",
+   "en": "Do you have this in size 40?"
+  },
+  {
+   "de": "Das steht dir sehr gut!",
+   "en": "That really suits you!"
+  },
+  {
+   "de": "Die Farbe gefällt mir nicht so.",
+   "en": "I don't really like the colour."
+  },
+  {
+   "de": "Dialog: Im Schuhgeschäft",
+   "en": "Dialogue: In the shoe shop"
+  },
+  {
+   "de": "Ida: Wie findest du die schwarzen Schuhe?",
+   "en": "Ida: What do you think of the black shoes?"
+  },
+  {
+   "de": "Nuri: Ganz okay. Aber diese hier gefallen mir besser.",
+   "en": "Nuri: They're OK. But I like these ones better."
+  },
+  {
+   "de": "Ida: Die braunen? Die sind aber teurer.",
+   "en": "Ida: The brown ones? But they're more expensive."
+  },
+  {
+   "de": "Nuri: Stimmt. Dafür sind sie bequemer.",
+   "en": "Nuri: True. But they're more comfortable."
+  },
+  {
+   "de": "Ida: Hmm. Am besten probierst du beide an.",
+   "en": "Ida: Hmm. The best thing is to try both on."
+  },
+  {
+   "de": "Nuri: Gute Idee. Haben Sie die in Größe 42?",
+   "en": "Nuri: Good idea. Do you have them in size 42?"
+  },
+  {
+   "de": "Die Kleidung hier ist günstig.",
+   "en": "The clothes here are inexpensive."
+  },
+  {
+   "de": "Die Hose ist zu lang.",
+   "en": "The trousers are too long."
+  },
+  {
+   "de": "Das Hemd gefällt mir gut.",
+   "en": "I like the shirt."
+  },
+  {
+   "de": "Die Jacke ist warm.",
+   "en": "The jacket is warm."
+  },
+  {
+   "de": "Am besten sind seine Schuhe!",
+   "en": "His shoes are the best!"
+  },
+  {
+   "de": "Das Kleid ist sehr schön.",
+   "en": "The dress is very beautiful."
+  },
+  {
+   "de": "Die Hose passt mir nicht.",
+   "en": "The trousers don't fit me."
+  },
+  {
+   "de": "Das Kleid steht dir gut!",
+   "en": "The dress suits you!"
+  },
+  {
+   "de": "Welche Farbe magst du lieber?",
+   "en": "Which colour do you prefer?"
+  },
+  {
+   "de": "Diese Schuhe gefallen mir ___ als die anderen. (gut, Komparativ)",
+   "en": "I like these shoes ___ than the others. (gut, comparative)"
+  },
+  {
+   "de": "___ sind seine Schuhe!",
+   "en": "His shoes are ___!"
+  },
+  {
+   "de": "Die Jacke ist teurer ___ das Hemd.",
+   "en": "The jacket is more expensive ___ the shirt."
+  },
+  {
+   "de": "Ich trage ___ Jeans. (gern, Superlativ: am …)",
+   "en": "I like wearing jeans ___. (gern, superlative: am …)"
+  },
+  {
+   "de": "alt → Komparativ: ___ (mit Umlaut)",
+   "en": "alt → comparative: ___ (with umlaut)"
+  },
+  {
+   "de": "Vergleichen Sie zwei Kleidungsstücke: Welches finden Sie besser und warum? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie zweimal einen Komparativ mit als. • Benutzen Sie einmal einen Superlativ (am …sten). • Schreiben Sie, was Ihnen besser gefällt.",
+   "en": "Compare two items of clothing: Which one do you think is better and why? Length: 30–40 words Checklist: • Use a comparative with als twice. • Use a superlative once (am …sten). • Write what you like better."
+  },
+  {
+   "de": "gut → besser (unregelmäßig).",
+   "en": "gut → besser (irregular)."
+  },
+  {
+   "de": "Superlativ von gut: am besten.",
+   "en": "Superlative of gut: am besten."
+  },
+  {
+   "de": "Nach einem Komparativ steht immer als.",
+   "en": "After a comparative, you always use als."
+  },
+  {
+   "de": "gern → lieber → am liebsten.",
+   "en": "gern → lieber → am liebsten (like → prefer → like most)."
+  },
+  {
+   "de": "Kurze Adjektive mit a bekommen oft einen Umlaut.",
+   "en": "Short adjectives with a often get an umlaut."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Kleidung",
+   "context": "Kleidung vergleichen und sagen, was man besser findet.",
+   "en": "clothes; clothing",
+   "lemma": "die Kleidung"
+  },
+  {
+   "form": "vergleichen",
+   "context": "Kleidung vergleichen und sagen, was man besser findet.",
+   "en": "compare",
+   "lemma": ""
+  },
+  {
+   "form": "besser",
+   "context": "Kleidung vergleichen und sagen, was man besser findet.",
+   "en": "better",
+   "lemma": "gut"
+  },
+  {
+   "form": "findet",
+   "context": "Kleidung vergleichen und sagen, was man besser findet.",
+   "en": "finds; thinks",
+   "lemma": "finden"
+  },
+  {
+   "form": "Geschäft",
+   "context": "Textsorte: Gespräch im Geschäft · Bewertung",
+   "en": "shop; business",
+   "lemma": "das Geschäft"
+  },
+  {
+   "form": "Bewertung",
+   "context": "Textsorte: Gespräch im Geschäft · Bewertung",
+   "en": "review; rating",
+   "lemma": "die Bewertung"
+  },
+  {
+   "form": "Komparativ",
+   "context": "mit Komparativ und Superlativ vergleichen",
+   "en": "comparative",
+   "lemma": "der Komparativ"
+  },
+  {
+   "form": "Superlativ",
+   "context": "mit Komparativ und Superlativ vergleichen",
+   "en": "superlative",
+   "lemma": "der Superlativ"
+  },
+  {
+   "form": "Vergleiche",
+   "context": "Vergleiche mit als und wie bilden",
+   "en": "comparisons",
+   "lemma": "der Vergleich"
+  },
+  {
+   "form": "sten",
+   "context": "Der Komparativ endet auf -er, der Superlativ auf am …-(e)sten. Kurze Adjektive mit a, o, u bekommen oft einen Umlaut.",
+   "en": "ending -(e)sten",
+   "lemma": ""
+  },
+  {
+   "form": "oft",
+   "context": "Der Komparativ endet auf -er, der Superlativ auf am …-(e)sten. Kurze Adjektive mit a, o, u bekommen oft einen Umlaut.",
+   "en": "often",
+   "lemma": ""
+  },
+  {
+   "form": "schöner",
+   "context": "schöner",
+   "en": "more beautiful; nicer",
+   "lemma": "schön"
+  },
+  {
+   "form": "schönsten",
+   "context": "am schönsten",
+   "en": "most beautiful; nicest",
+   "lemma": "schön"
+  },
+  {
+   "form": "billiger",
+   "context": "billiger",
+   "en": "cheaper",
+   "lemma": "billig"
+  },
+  {
+   "form": "billigsten",
+   "context": "am billigsten",
+   "en": "cheapest",
+   "lemma": "billig"
+  },
+  {
+   "form": "älter",
+   "context": "älter",
+   "en": "older",
+   "lemma": "alt"
+  },
+  {
+   "form": "ältesten",
+   "context": "am ältesten",
+   "en": "oldest",
+   "lemma": "alt"
+  },
+  {
+   "form": "größer",
+   "context": "größer",
+   "en": "bigger",
+   "lemma": "groß"
+  },
+  {
+   "form": "größten",
+   "context": "am größten",
+   "en": "biggest",
+   "lemma": "groß"
+  },
+  {
+   "form": "lieber",
+   "context": "lieber",
+   "en": "rather; prefer",
+   "lemma": "gern"
+  },
+  {
+   "form": "liebsten",
+   "context": "am liebsten",
+   "en": "most of all; best",
+   "lemma": "gern"
+  },
+  {
+   "form": "meisten",
+   "context": "am meisten",
+   "en": "most",
+   "lemma": "viel"
+  },
+  {
+   "form": "Schuhe",
+   "context": "Am besten sind seine Schuhe!gut → am besten",
+   "en": "shoes",
+   "lemma": "der Schuh"
+  },
+  {
+   "form": "trage",
+   "context": "Ich trage am liebsten Jeans.gern → am liebsten",
+   "en": "wear; carry",
+   "lemma": "tragen"
+  },
+  {
+   "form": "Jeans",
+   "context": "Ich trage am liebsten Jeans.gern → am liebsten",
+   "en": "jeans",
+   "lemma": "die Jeans"
+  },
+  {
+   "form": "dazu",
+   "context": "Tipp: Nach -d, -t, -s und -z kommt ein e dazu: am ältesten, am interessantesten.",
+   "en": "added; in addition",
+   "lemma": ""
+  },
+  {
+   "form": "interessantesten",
+   "context": "Tipp: Nach -d, -t, -s und -z kommt ein e dazu: am ältesten, am interessantesten.",
+   "en": "most interesting",
+   "lemma": "interessant"
+  },
+  {
+   "form": "Gleichheit",
+   "context": "Nach einem Komparativ steht als. Bei Gleichheit sagt man (genau)so … wie.",
+   "en": "equality",
+   "lemma": "die Gleichheit"
+  },
+  {
+   "form": "Verhältnis",
+   "context": "Verhältnis",
+   "en": "relation",
+   "lemma": "das Verhältnis"
+  },
+  {
+   "form": "Struktur",
+   "context": "Struktur",
+   "en": "structure",
+   "lemma": "die Struktur"
+  },
+  {
+   "form": "ungleich",
+   "context": "ungleich (++)",
+   "en": "unequal",
+   "lemma": ""
+  },
+  {
+   "form": "Hemd",
+   "context": "Das Hemd gefällt ihr besser als die Hose.",
+   "en": "shirt",
+   "lemma": "das Hemd"
+  },
+  {
+   "form": "Hose",
+   "context": "Das Hemd gefällt ihr besser als die Hose.",
+   "en": "trousers",
+   "lemma": "die Hose"
+  },
+  {
+   "form": "Lila",
+   "context": "Lila mag sie genauso gern wie Rosa.",
+   "en": "purple",
+   "lemma": "das Lila"
+  },
+  {
+   "form": "genauso",
+   "context": "Lila mag sie genauso gern wie Rosa.",
+   "en": "just as",
+   "lemma": ""
+  },
+  {
+   "form": "schwarzen",
+   "context": "Diese Schuhe gefallen mir besser als die schwarzen.besser als",
+   "en": "black",
+   "lemma": "schwarz"
+  },
+  {
+   "form": "Häufiger",
+   "context": "Tipp: Häufiger Fehler: nach einem Komparativ steht immer als — nie wie.",
+   "en": "common; frequent",
+   "lemma": "häufig"
+  },
+  {
+   "form": "Fehler",
+   "context": "Tipp: Häufiger Fehler: nach einem Komparativ steht immer als — nie wie.",
+   "en": "mistake",
+   "lemma": "der Fehler"
+  },
+  {
+   "form": "nie",
+   "context": "Tipp: Häufiger Fehler: nach einem Komparativ steht immer als — nie wie.",
+   "en": "never",
+   "lemma": ""
+  },
+  {
+   "form": "clothing",
+   "context": "die Kleidung (Sg.) — EN: clothing · FR: les vêtementsDie Kleidung hier ist günstig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vêtementsDie",
+   "context": "die Kleidung (Sg.) — EN: clothing · FR: les vêtementsDie Kleidung hier ist günstig.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "günstig",
+   "context": "die Kleidung (Sg.) — EN: clothing · FR: les vêtementsDie Kleidung hier ist günstig.",
+   "en": "inexpensive; good value",
+   "lemma": ""
+  },
+  {
+   "form": "trousers",
+   "context": "die Hose, -n — EN: trousers · FR: le pantalonDie Hose ist zu lang.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pantalonDie",
+   "context": "die Hose, -n — EN: trousers · FR: le pantalonDie Hose ist zu lang.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "shirt",
+   "context": "das Hemd, -en — EN: shirt · FR: la chemiseDas Hemd gefällt mir gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chemiseDas",
+   "context": "das Hemd, -en — EN: shirt · FR: la chemiseDas Hemd gefällt mir gut.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "jacket",
+   "context": "die Jacke, -n — EN: jacket · FR: la vesteDie Jacke ist warm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vesteDie",
+   "context": "die Jacke, -n — EN: jacket · FR: la vesteDie Jacke ist warm.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "warm",
+   "context": "die Jacke, -n — EN: jacket · FR: la vesteDie Jacke ist warm.",
+   "en": "warm",
+   "lemma": ""
+  },
+  {
+   "form": "Schuh",
+   "context": "der Schuh, -e — EN: shoe · FR: la chaussureAm besten sind seine Schuhe!",
+   "en": "shoe",
+   "lemma": "der Schuh"
+  },
+  {
+   "form": "shoe",
+   "context": "der Schuh, -e — EN: shoe · FR: la chaussureAm besten sind seine Schuhe!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chaussureAm",
+   "context": "der Schuh, -e — EN: shoe · FR: la chaussureAm besten sind seine Schuhe!",
+   "en": "am + superlative",
+   "lemma": ""
+  },
+  {
+   "form": "Kleid",
+   "context": "das Kleid, -er — EN: dress · FR: la robeDas Kleid ist sehr schön.",
+   "en": "dress",
+   "lemma": "das Kleid"
+  },
+  {
+   "form": "dress",
+   "context": "das Kleid, -er — EN: dress · FR: la robeDas Kleid ist sehr schön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "robeDas",
+   "context": "das Kleid, -er — EN: dress · FR: la robeDas Kleid ist sehr schön.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "anprobieren",
+   "context": "anprobieren — EN: to try on · FR: essayerDarf ich das anprobieren?",
+   "en": "try on",
+   "lemma": ""
+  },
+  {
+   "form": "try",
+   "context": "anprobieren — EN: to try on · FR: essayerDarf ich das anprobieren?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "essayerDarf",
+   "context": "anprobieren — EN: to try on · FR: essayerDarf ich das anprobieren?",
+   "en": "may",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "Größe",
+   "context": "die Größe, -n — EN: size · FR: la tailleHaben Sie das in Größe 40?",
+   "en": "size",
+   "lemma": "die Größe"
+  },
+  {
+   "form": "size",
+   "context": "die Größe, -n — EN: size · FR: la tailleHaben Sie das in Größe 40?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tailleHaben",
+   "context": "die Größe, -n — EN: size · FR: la tailleHaben Sie das in Größe 40?",
+   "en": "have",
+   "lemma": "haben"
+  },
+  {
+   "form": "fit",
+   "context": "passen — EN: to fit · FR: aller (taille)Die Hose passt mir nicht.",
+   "en": "fit; in good shape",
+   "lemma": ""
+  },
+  {
+   "form": "taille",
+   "context": "passen — EN: to fit · FR: aller (taille)Die Hose passt mir nicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Dat",
+   "context": "stehen (+ Dat.) — EN: to suit · FR: aller bien àDas Kleid steht dir gut!",
+   "en": "dative (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "àDas",
+   "context": "stehen (+ Dat.) — EN: to suit · FR: aller bien àDas Kleid steht dir gut!",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "colour",
+   "context": "die Farbe, -n — EN: colour · FR: la couleurWelche Farbe magst du lieber?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "couleurWelche",
+   "context": "die Farbe, -n — EN: colour · FR: la couleurWelche Farbe magst du lieber?",
+   "en": "which",
+   "lemma": ""
+  },
+  {
+   "form": "Schuhgeschäft",
+   "context": "Dialog: Im Schuhgeschäft",
+   "en": "shoe shop",
+   "lemma": "das Schuhgeschäft"
+  },
+  {
+   "form": "Ida",
+   "context": "Ida: Wie findest du die schwarzen Schuhe?",
+   "en": "Ida (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Nuri",
+   "context": "Nuri: Ganz okay. Aber diese hier gefallen mir besser.",
+   "en": "Nuri (name)",
+   "lemma": ""
+  },
+  {
+   "form": "braunen",
+   "context": "Ida: Die braunen? Die sind aber teurer.",
+   "en": "brown",
+   "lemma": "braun"
+  },
+  {
+   "form": "teurer",
+   "context": "Ida: Die braunen? Die sind aber teurer.",
+   "en": "more expensive",
+   "lemma": "teuer"
+  },
+  {
+   "form": "bequemer",
+   "context": "Nuri: Stimmt. Dafür sind sie bequemer.",
+   "en": "more comfortable",
+   "lemma": "bequem"
+  },
+  {
+   "form": "Hmm",
+   "context": "Ida: Hmm. Am besten probierst du beide an.",
+   "en": "hmm (thinking)",
+   "lemma": ""
+  },
+  {
+   "form": "probierst",
+   "context": "Ida: Hmm. Am besten probierst du beide an.",
+   "en": "(you) try on",
+   "lemma": "anprobieren"
+  },
+  {
+   "form": "Idee",
+   "context": "Nuri: Gute Idee. Haben Sie die in Größe 42?",
+   "en": "idea",
+   "lemma": "die Idee"
+  },
+  {
+   "form": "anderen",
+   "context": "Diese Schuhe gefallen mir ___ als die anderen. (gut, Komparativ)",
+   "en": "others; other",
+   "lemma": "andere"
+  },
+  {
+   "form": "Vergleichen",
+   "context": "Vergleichen Sie zwei Kleidungsstücke: Welches finden Sie besser und warum? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie zweimal einen Komparativ mit als. • Benutzen Sie einmal einen Superlativ (am …sten). • Schreiben Sie, was Ihnen besser gefällt.",
+   "en": "compare",
+   "lemma": "vergleichen"
+  },
+  {
+   "form": "Kleidungsstücke",
+   "context": "Vergleichen Sie zwei Kleidungsstücke: Welches finden Sie besser und warum? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie zweimal einen Komparativ mit als. • Benutzen Sie einmal einen Superlativ (am …sten). • Schreiben Sie, was Ihnen besser gefällt.",
+   "en": "items of clothing",
+   "lemma": "das Kleidungsstück"
+  },
+  {
+   "form": "warum",
+   "context": "Vergleichen Sie zwei Kleidungsstücke: Welches finden Sie besser und warum? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie zweimal einen Komparativ mit als. • Benutzen Sie einmal einen Superlativ (am …sten). • Schreiben Sie, was Ihnen besser gefällt.",
+   "en": "why",
+   "lemma": ""
+  }
+ ]
+}
