@@ -1,0 +1,831 @@
+{
+ "level": "A2",
+ "lesson": 4,
+ "title": "Einkaufen — Was darf es sein?",
+ "lines": [
+  {
+   "de": "An der Theke einkaufen, Mengen angeben und Wünsche äußern.",
+   "en": "Shop at the counter, give quantities and say what you would like."
+  },
+  {
+   "de": "Textsorte: Verkaufsgespräch · Einkaufszettel",
+   "en": "Text type: Sales conversation · Shopping list"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Hören Teil 1 (kurze Gespräche); telc A2 Sprechen",
+   "en": "Exam link: Goethe A2 Listening part 1 (short conversations); telc A2 Speaking"
+  },
+  {
+   "de": "an der Theke und auf dem Markt einkaufen",
+   "en": "shop at the counter and at the market"
+  },
+  {
+   "de": "Mengen und Verpackungen angeben",
+   "en": "give quantities and types of packaging"
+  },
+  {
+   "de": "Adjektive nach dem unbestimmten Artikel richtig deklinieren",
+   "en": "use the correct adjective endings after the indefinite article"
+  },
+  {
+   "de": "Grammatik: Adjektive nach dem unbestimmten Artikel",
+   "en": "Grammar: adjectives after the indefinite article (unbestimmter Artikel)"
+  },
+  {
+   "de": "Nach ein, kein und den Possessivartikeln trägt das Adjektiv die Information über Genus und Kasus — besonders dort, wo der Artikel selbst keine Endung hat.",
+   "en": "After ein, kein and the possessive articles, the adjective carries the information about gender and case — especially where the article itself has no ending."
+  },
+  {
+   "de": "ein magerer Schinken",
+   "en": "a lean ham"
+  },
+  {
+   "de": "einen mageren Schinken",
+   "en": "a lean ham"
+  },
+  {
+   "de": "einem mageren Schinken",
+   "en": "a lean ham"
+  },
+  {
+   "de": "ein helles Brot",
+   "en": "a white loaf"
+  },
+  {
+   "de": "einem hellen Brot",
+   "en": "a white loaf"
+  },
+  {
+   "de": "eine grüne Paprika",
+   "en": "a green pepper"
+  },
+  {
+   "de": "einer grünen Paprika",
+   "en": "a green pepper"
+  },
+  {
+   "de": "Plural (ohne Artikel)",
+   "en": "Plural (without an article)"
+  },
+  {
+   "de": "helle Brötchen",
+   "en": "white bread rolls"
+  },
+  {
+   "de": "hellen Brötchen",
+   "en": "white bread rolls"
+  },
+  {
+   "de": "Plural mit kein-/mein-",
+   "en": "Plural with kein-/mein-"
+  },
+  {
+   "de": "keine hellen Brötchen",
+   "en": "no white bread rolls"
+  },
+  {
+   "de": "keinen hellen Brötchen",
+   "en": "no white bread rolls"
+  },
+  {
+   "de": "Ich hätte gern einen mageren Schinken.Akkusativ maskulin: -en",
+   "en": "I'd like a lean ham. Accusative masculine: -en"
+  },
+  {
+   "de": "Haben Sie auch ein helles Brot?Akkusativ neutrum: -es",
+   "en": "Do you also have a white loaf? Accusative neuter: -es"
+  },
+  {
+   "de": "Mit einer grünen Paprika schmeckt der Salat besser.Dativ feminin: -en",
+   "en": "The salad tastes better with a green pepper. Dative feminine: -en"
+  },
+  {
+   "de": "Tipp: Im Plural endet das Adjektiv nach kein-, mein-, unser- immer auf -en: keine frischen Eier.",
+   "en": "Tip: In the plural, the adjective after kein-, mein-, unser- always ends in -en: keine frischen Eier (no fresh eggs)."
+  },
+  {
+   "de": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "Example: I'll take 200 grams of cheese."
+  },
+  {
+   "de": "das Pfund, -e — EN: pound (500 g) · FR: la livre (500 g)Ein Pfund sind 500 Gramm.",
+   "en": "Example: A pound is 500 grams."
+  },
+  {
+   "de": "die Packung, -en — EN: packet · FR: le paquetEine Packung Nudeln, bitte.",
+   "en": "Example: A packet of pasta, please."
+  },
+  {
+   "de": "die Scheibe, -n — EN: slice · FR: la trancheZehn Scheiben Schinken, bitte.",
+   "en": "Example: Ten slices of ham, please."
+  },
+  {
+   "de": "die Dose, -n — EN: tin, can · FR: la boîte de conserveZwei Dosen Tomaten brauche ich noch.",
+   "en": "Example: I still need two tins of tomatoes."
+  },
+  {
+   "de": "mager / fett — EN: lean / fatty · FR: maigre / grasIch möchte lieber einen mageren Schinken.",
+   "en": "Example: I'd prefer a lean ham."
+  },
+  {
+   "de": "frisch — EN: fresh · FR: fraisSind die Brötchen heute frisch?",
+   "en": "Example: Are the bread rolls fresh today?"
+  },
+  {
+   "de": "der Schinken, - — EN: ham · FR: le jambonDer Schinken kommt aus der Region .",
+   "en": "Example: The ham comes from the region."
+  },
+  {
+   "de": "die Theke, -n — EN: counter · FR: le comptoirAn der Theke ist noch frei.",
+   "en": "Example: There's still room at the counter."
+  },
+  {
+   "de": "sonst noch etwas? — EN: anything else? · FR: et avec ceci ?Sonst noch etwas? — Nein, danke, das ist alles.",
+   "en": "Example: Anything else? — No, thank you, that's all."
+  },
+  {
+   "de": "wiegen (wog) — EN: to weigh · FR: peserSoll ich das Stück wiegen?",
+   "en": "Example: Shall I weigh the piece?"
+  },
+  {
+   "de": "die Kasse, -n — EN: checkout, till · FR: la caisseBitte zahlen Sie an der Kasse.",
+   "en": "Example: Please pay at the checkout."
+  },
+  {
+   "de": "als Verkäufer sprechen",
+   "en": "speaking as a shop assistant"
+  },
+  {
+   "de": "Was darf es sein?",
+   "en": "What can I get you?"
+  },
+  {
+   "de": "Darf es etwas mehr sein?",
+   "en": "Is a little more all right?"
+  },
+  {
+   "de": "Sonst noch etwas?",
+   "en": "Anything else?"
+  },
+  {
+   "de": "Ich hätte gern 200 Gramm …",
+   "en": "I'd like 200 grams of …"
+  },
+  {
+   "de": "Haben Sie auch …?",
+   "en": "Do you also have …?"
+  },
+  {
+   "de": "Das ist alles, danke.",
+   "en": "That's all, thank you."
+  },
+  {
+   "de": "Mengen angeben",
+   "en": "giving quantities"
+  },
+  {
+   "de": "Ein Pfund, bitte.",
+   "en": "A pound, please."
+  },
+  {
+   "de": "Davon bitte drei Scheiben.",
+   "en": "Three slices of that, please."
+  },
+  {
+   "de": "Etwas weniger, bitte.",
+   "en": "A little less, please."
+  },
+  {
+   "de": "Dialog: An der Käsetheke",
+   "en": "Dialogue: At the cheese counter"
+  },
+  {
+   "de": "Verkäufer: Guten Tag! Was darf es sein?",
+   "en": "Shop assistant: Hello! What can I get you?"
+  },
+  {
+   "de": "Kundin: Ich hätte gern 200 Gramm von dem jungen Gouda.",
+   "en": "Customer: I'd like 200 grams of the young Gouda."
+  },
+  {
+   "de": "Verkäufer: Gern. Es sind 215 Gramm — darf es etwas mehr sein?",
+   "en": "Shop assistant: Certainly. It's 215 grams — is a little more all right?"
+  },
+  {
+   "de": "Kundin: Ja, das ist in Ordnung. Und dann noch einen mageren Schinken.",
+   "en": "Customer: Yes, that's fine. And then a lean ham as well."
+  },
+  {
+   "de": "Verkäufer: Wie viele Scheiben möchten Sie?",
+   "en": "Shop assistant: How many slices would you like?"
+  },
+  {
+   "de": "Kundin: Acht Scheiben, bitte. Dann ist das alles, danke.",
+   "en": "Customer: Eight slices, please. Then that's all, thank you."
+  },
+  {
+   "de": "Ich nehme 200 Gramm Käse.",
+   "en": "I'll take 200 grams of cheese."
+  },
+  {
+   "de": "Ein Pfund sind 500 Gramm.",
+   "en": "A pound is 500 grams."
+  },
+  {
+   "de": "Eine Packung Nudeln, bitte.",
+   "en": "A packet of pasta, please."
+  },
+  {
+   "de": "Zehn Scheiben Schinken, bitte.",
+   "en": "Ten slices of ham, please."
+  },
+  {
+   "de": "Zwei Dosen Tomaten brauche ich noch.",
+   "en": "I still need two tins of tomatoes."
+  },
+  {
+   "de": "Ich möchte lieber einen mageren Schinken.",
+   "en": "I'd prefer a lean ham."
+  },
+  {
+   "de": "Sind die Brötchen heute frisch?",
+   "en": "Are the bread rolls fresh today?"
+  },
+  {
+   "de": "Der Schinken kommt aus der Region.",
+   "en": "The ham comes from the region."
+  },
+  {
+   "de": "An der Theke ist noch frei.",
+   "en": "There's still room at the counter."
+  },
+  {
+   "de": "Sonst noch etwas? — Nein, danke, das ist alles.",
+   "en": "Anything else? — No, thank you, that's all."
+  },
+  {
+   "de": "Soll ich das Stück wiegen?",
+   "en": "Shall I weigh the piece?"
+  },
+  {
+   "de": "Bitte zahlen Sie an der Kasse.",
+   "en": "Please pay at the checkout."
+  },
+  {
+   "de": "Ich hätte gern ___ ___ Schinken. (ein, mager, Akkusativ)",
+   "en": "I'd like ___ ___ ham. (ein, mager, accusative)"
+  },
+  {
+   "de": "Haben Sie auch ___ Brot?",
+   "en": "Do you also have ___ bread?"
+  },
+  {
+   "de": "Mit ___ ___ Paprika schmeckt es besser. (eine, grün, Dativ)",
+   "en": "With ___ ___ pepper, it tastes better. (eine, grün, dative)"
+  },
+  {
+   "de": "Wie viel ist ein Pfund?",
+   "en": "How much is a pound (ein Pfund)?"
+  },
+  {
+   "de": "Wir haben leider keine ___ Brötchen mehr. (hell, Plural)",
+   "en": "Unfortunately, we have no more ___ bread rolls. (hell, plural)"
+  },
+  {
+   "de": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "Write a shopping list for a dinner with friends and add a quantity and an adjective for each product. Length: 40–60 words Checklist: • At least six products with a quantity. • Use an adjective with four of the products (ein frisches Brot …). • At the end, write how many people you are cooking for."
+  },
+  {
+   "de": "Akkusativ maskulin: einen + Adjektiv auf -en.",
+   "en": "Accusative masculine: einen + adjective ending in -en."
+  },
+  {
+   "de": "das Brot ist neutrum; im Akkusativ neutrum endet das Adjektiv auf -es.",
+   "en": "das Brot is neuter; in the accusative neuter, the adjective ends in -es."
+  },
+  {
+   "de": "Dativ feminin: einer + Adjektiv auf -en.",
+   "en": "Dative feminine: einer + adjective ending in -en."
+  },
+  {
+   "de": "Ein Pfund entspricht 500 Gramm; ein Kilogramm sind 1000 Gramm.",
+   "en": "A pound (Pfund) is 500 grams; a kilogram is 1000 grams."
+  },
+  {
+   "de": "Nach kein- endet das Adjektiv im Plural immer auf -en.",
+   "en": "After kein-, the adjective in the plural always ends in -en."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Theke",
+   "context": "An der Theke einkaufen, Mengen angeben und Wünsche äußern.",
+   "en": "counter",
+   "lemma": "die Theke"
+  },
+  {
+   "form": "Mengen",
+   "context": "An der Theke einkaufen, Mengen angeben und Wünsche äußern.",
+   "en": "quantities",
+   "lemma": "die Menge"
+  },
+  {
+   "form": "äußern",
+   "context": "An der Theke einkaufen, Mengen angeben und Wünsche äußern.",
+   "en": "to express",
+   "lemma": ""
+  },
+  {
+   "form": "Verkaufsgespräch",
+   "context": "Textsorte: Verkaufsgespräch · Einkaufszettel",
+   "en": "sales conversation",
+   "lemma": "das Verkaufsgespräch"
+  },
+  {
+   "form": "Einkaufszettel",
+   "context": "Textsorte: Verkaufsgespräch · Einkaufszettel",
+   "en": "shopping list",
+   "lemma": "der Einkaufszettel"
+  },
+  {
+   "form": "Gespräche",
+   "context": "Prüfungsbezug: Goethe A2 Hören Teil 1 (kurze Gespräche); telc A2 Sprechen",
+   "en": "conversations",
+   "lemma": "das Gespräch"
+  },
+  {
+   "form": "Verpackungen",
+   "context": "Mengen und Verpackungen angeben",
+   "en": "packaging, packages",
+   "lemma": "die Verpackung"
+  },
+  {
+   "form": "deklinieren",
+   "context": "Adjektive nach dem unbestimmten Artikel richtig deklinieren",
+   "en": "to decline (grammar)",
+   "lemma": ""
+  },
+  {
+   "form": "Possessivartikeln",
+   "context": "Nach ein, kein und den Possessivartikeln trägt das Adjektiv die Information über Genus und Kasus — besonders dort, wo der Artikel selbst keine Endung hat.",
+   "en": "possessive articles",
+   "lemma": "der Possessivartikel"
+  },
+  {
+   "form": "trägt",
+   "context": "Nach ein, kein und den Possessivartikeln trägt das Adjektiv die Information über Genus und Kasus — besonders dort, wo der Artikel selbst keine Endung hat.",
+   "en": "carries; wears",
+   "lemma": "tragen"
+  },
+  {
+   "form": "Information",
+   "context": "Nach ein, kein und den Possessivartikeln trägt das Adjektiv die Information über Genus und Kasus — besonders dort, wo der Artikel selbst keine Endung hat.",
+   "en": "information",
+   "lemma": "die Information"
+  },
+  {
+   "form": "selbst",
+   "context": "Nach ein, kein und den Possessivartikeln trägt das Adjektiv die Information über Genus und Kasus — besonders dort, wo der Artikel selbst keine Endung hat.",
+   "en": "itself; even",
+   "lemma": ""
+  },
+  {
+   "form": "magerer",
+   "context": "ein magerer Schinken",
+   "en": "lean",
+   "lemma": "mager"
+  },
+  {
+   "form": "Schinken",
+   "context": "ein magerer Schinken",
+   "en": "ham",
+   "lemma": "der Schinken"
+  },
+  {
+   "form": "mageren",
+   "context": "einen mageren Schinken",
+   "en": "lean",
+   "lemma": "mager"
+  },
+  {
+   "form": "helles",
+   "context": "ein helles Brot",
+   "en": "light; white (bread)",
+   "lemma": "hell"
+  },
+  {
+   "form": "hellen",
+   "context": "einem hellen Brot",
+   "en": "light; white (bread)",
+   "lemma": "hell"
+  },
+  {
+   "form": "grüne",
+   "context": "eine grüne Paprika",
+   "en": "green",
+   "lemma": "grün"
+  },
+  {
+   "form": "Paprika",
+   "context": "eine grüne Paprika",
+   "en": "(bell) pepper",
+   "lemma": "die Paprika"
+  },
+  {
+   "form": "grünen",
+   "context": "einer grünen Paprika",
+   "en": "green",
+   "lemma": "grün"
+  },
+  {
+   "form": "helle",
+   "context": "helle Brötchen",
+   "en": "light; white (bread)",
+   "lemma": "hell"
+  },
+  {
+   "form": "Brötchen",
+   "context": "helle Brötchen",
+   "en": "bread rolls",
+   "lemma": "das Brötchen"
+  },
+  {
+   "form": "frischen",
+   "context": "Tipp: Im Plural endet das Adjektiv nach kein-, mein-, unser- immer auf -en: keine frischen Eier.",
+   "en": "fresh",
+   "lemma": "frisch"
+  },
+  {
+   "form": "Eier",
+   "context": "Tipp: Im Plural endet das Adjektiv nach kein-, mein-, unser- immer auf -en: keine frischen Eier.",
+   "en": "eggs",
+   "lemma": "das Ei"
+  },
+  {
+   "form": "Gramm",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "grams",
+   "lemma": "das Gramm"
+  },
+  {
+   "form": "Kilogramm",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "kilogram",
+   "lemma": "das Kilogramm"
+  },
+  {
+   "form": "kg",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "kilogram",
+   "lemma": "das Kilogramm"
+  },
+  {
+   "form": "gram",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "kilogram",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gramme",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "kiloIch",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "Käse",
+   "context": "das Gramm (g) / das Kilogramm (kg) — EN: gram / kilogram · FR: le gramme / le kiloIch nehme 200 Gramm Käse.",
+   "en": "cheese",
+   "lemma": "der Käse"
+  },
+  {
+   "form": "Pfund",
+   "context": "das Pfund, -e — EN: pound (500 g) · FR: la livre (500 g)Ein Pfund sind 500 Gramm.",
+   "en": "pound (500 g)",
+   "lemma": "das Pfund"
+  },
+  {
+   "form": "pound",
+   "context": "das Pfund, -e — EN: pound (500 g) · FR: la livre (500 g)Ein Pfund sind 500 Gramm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "livre",
+   "context": "das Pfund, -e — EN: pound (500 g) · FR: la livre (500 g)Ein Pfund sind 500 Gramm.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Packung",
+   "context": "die Packung, -en — EN: packet · FR: le paquetEine Packung Nudeln, bitte.",
+   "en": "packet",
+   "lemma": "die Packung"
+  },
+  {
+   "form": "packet",
+   "context": "die Packung, -en — EN: packet · FR: le paquetEine Packung Nudeln, bitte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "paquetEine",
+   "context": "die Packung, -en — EN: packet · FR: le paquetEine Packung Nudeln, bitte.",
+   "en": "a, one",
+   "lemma": "ein"
+  },
+  {
+   "form": "Nudeln",
+   "context": "die Packung, -en — EN: packet · FR: le paquetEine Packung Nudeln, bitte.",
+   "en": "pasta, noodles",
+   "lemma": "die Nudel"
+  },
+  {
+   "form": "Scheibe",
+   "context": "die Scheibe, -n — EN: slice · FR: la trancheZehn Scheiben Schinken, bitte.",
+   "en": "slice",
+   "lemma": "die Scheibe"
+  },
+  {
+   "form": "slice",
+   "context": "die Scheibe, -n — EN: slice · FR: la trancheZehn Scheiben Schinken, bitte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trancheZehn",
+   "context": "die Scheibe, -n — EN: slice · FR: la trancheZehn Scheiben Schinken, bitte.",
+   "en": "ten",
+   "lemma": "zehn"
+  },
+  {
+   "form": "Scheiben",
+   "context": "die Scheibe, -n — EN: slice · FR: la trancheZehn Scheiben Schinken, bitte.",
+   "en": "slices",
+   "lemma": "die Scheibe"
+  },
+  {
+   "form": "Dose",
+   "context": "die Dose, -n — EN: tin, can · FR: la boîte de conserveZwei Dosen Tomaten brauche ich noch.",
+   "en": "tin, can",
+   "lemma": "die Dose"
+  },
+  {
+   "form": "tin",
+   "context": "die Dose, -n — EN: tin, can · FR: la boîte de conserveZwei Dosen Tomaten brauche ich noch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "boîte",
+   "context": "die Dose, -n — EN: tin, can · FR: la boîte de conserveZwei Dosen Tomaten brauche ich noch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "conserveZwei",
+   "context": "die Dose, -n — EN: tin, can · FR: la boîte de conserveZwei Dosen Tomaten brauche ich noch.",
+   "en": "two",
+   "lemma": "zwei"
+  },
+  {
+   "form": "Dosen",
+   "context": "die Dose, -n — EN: tin, can · FR: la boîte de conserveZwei Dosen Tomaten brauche ich noch.",
+   "en": "tins, cans",
+   "lemma": "die Dose"
+  },
+  {
+   "form": "Tomaten",
+   "context": "die Dose, -n — EN: tin, can · FR: la boîte de conserveZwei Dosen Tomaten brauche ich noch.",
+   "en": "tomatoes",
+   "lemma": "die Tomate"
+  },
+  {
+   "form": "mager",
+   "context": "mager / fett — EN: lean / fatty · FR: maigre / grasIch möchte lieber einen mageren Schinken.",
+   "en": "lean",
+   "lemma": ""
+  },
+  {
+   "form": "fett",
+   "context": "mager / fett — EN: lean / fatty · FR: maigre / grasIch möchte lieber einen mageren Schinken.",
+   "en": "fatty",
+   "lemma": ""
+  },
+  {
+   "form": "lean",
+   "context": "mager / fett — EN: lean / fatty · FR: maigre / grasIch möchte lieber einen mageren Schinken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fatty",
+   "context": "mager / fett — EN: lean / fatty · FR: maigre / grasIch möchte lieber einen mageren Schinken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "maigre",
+   "context": "mager / fett — EN: lean / fatty · FR: maigre / grasIch möchte lieber einen mageren Schinken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "grasIch",
+   "context": "mager / fett — EN: lean / fatty · FR: maigre / grasIch möchte lieber einen mageren Schinken.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "frisch",
+   "context": "frisch — EN: fresh · FR: fraisSind die Brötchen heute frisch?",
+   "en": "fresh",
+   "lemma": ""
+  },
+  {
+   "form": "fresh",
+   "context": "frisch — EN: fresh · FR: fraisSind die Brötchen heute frisch?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fraisSind",
+   "context": "frisch — EN: fresh · FR: fraisSind die Brötchen heute frisch?",
+   "en": "are",
+   "lemma": "sein"
+  },
+  {
+   "form": "ham",
+   "context": "der Schinken, - — EN: ham · FR: le jambonDer Schinken kommt aus der Region .",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jambonDer",
+   "context": "der Schinken, - — EN: ham · FR: le jambonDer Schinken kommt aus der Region .",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "counter",
+   "context": "die Theke, -n — EN: counter · FR: le comptoirAn der Theke ist noch frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "comptoirAn",
+   "context": "die Theke, -n — EN: counter · FR: le comptoirAn der Theke ist noch frei.",
+   "en": "at",
+   "lemma": "an"
+  },
+  {
+   "form": "anything",
+   "context": "sonst noch etwas? — EN: anything else? · FR: et avec ceci ?Sonst noch etwas? — Nein, danke, das ist alles.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ceci",
+   "context": "sonst noch etwas? — EN: anything else? · FR: et avec ceci ?Sonst noch etwas? — Nein, danke, das ist alles.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "wiegen",
+   "context": "wiegen (wog) — EN: to weigh · FR: peserSoll ich das Stück wiegen?",
+   "en": "to weigh",
+   "lemma": ""
+  },
+  {
+   "form": "wog",
+   "context": "wiegen (wog) — EN: to weigh · FR: peserSoll ich das Stück wiegen?",
+   "en": "weighed",
+   "lemma": "wiegen"
+  },
+  {
+   "form": "weigh",
+   "context": "wiegen (wog) — EN: to weigh · FR: peserSoll ich das Stück wiegen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "peserSoll",
+   "context": "wiegen (wog) — EN: to weigh · FR: peserSoll ich das Stück wiegen?",
+   "en": "shall, should",
+   "lemma": "sollen"
+  },
+  {
+   "form": "Kasse",
+   "context": "die Kasse, -n — EN: checkout, till · FR: la caisseBitte zahlen Sie an der Kasse.",
+   "en": "checkout, till",
+   "lemma": "die Kasse"
+  },
+  {
+   "form": "checkout",
+   "context": "die Kasse, -n — EN: checkout, till · FR: la caisseBitte zahlen Sie an der Kasse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "till",
+   "context": "die Kasse, -n — EN: checkout, till · FR: la caisseBitte zahlen Sie an der Kasse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "caisseBitte",
+   "context": "die Kasse, -n — EN: checkout, till · FR: la caisseBitte zahlen Sie an der Kasse.",
+   "en": "please",
+   "lemma": "bitte"
+  },
+  {
+   "form": "Davon",
+   "context": "Davon bitte drei Scheiben.",
+   "en": "of that",
+   "lemma": ""
+  },
+  {
+   "form": "weniger",
+   "context": "Etwas weniger, bitte.",
+   "en": "less",
+   "lemma": "wenig"
+  },
+  {
+   "form": "Käsetheke",
+   "context": "Dialog: An der Käsetheke",
+   "en": "cheese counter",
+   "lemma": "die Käsetheke"
+  },
+  {
+   "form": "jungen",
+   "context": "Kundin: Ich hätte gern 200 Gramm von dem jungen Gouda.",
+   "en": "young",
+   "lemma": "jung"
+  },
+  {
+   "form": "Gouda",
+   "context": "Kundin: Ich hätte gern 200 Gramm von dem jungen Gouda.",
+   "en": "Gouda (cheese)",
+   "lemma": "der Gouda"
+  },
+  {
+   "form": "Ordnung",
+   "context": "Kundin: Ja, das ist in Ordnung. Und dann noch einen mageren Schinken.",
+   "en": "order (in Ordnung = all right)",
+   "lemma": "die Ordnung"
+  },
+  {
+   "form": "Abendessen",
+   "context": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "dinner",
+   "lemma": "das Abendessen"
+  },
+  {
+   "form": "Freunden",
+   "context": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "friends",
+   "lemma": "der Freund"
+  },
+  {
+   "form": "Produkt",
+   "context": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "product",
+   "lemma": "das Produkt"
+  },
+  {
+   "form": "Menge",
+   "context": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "quantity, amount",
+   "lemma": "die Menge"
+  },
+  {
+   "form": "Produkte",
+   "context": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "products",
+   "lemma": "das Produkt"
+  },
+  {
+   "form": "Produkten",
+   "context": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "products",
+   "lemma": "das Produkt"
+  },
+  {
+   "form": "frisches",
+   "context": "Schreiben Sie einen Einkaufszettel für ein Abendessen mit Freunden und ergänzen Sie zu jedem Produkt eine Menge und ein Adjektiv. Umfang: 40–60 Wörter Checkliste: • Mindestens sechs Produkte mit Menge. • Benutzen Sie bei vier Produkten ein Adjektiv (ein frisches Brot …). • Schreiben Sie am Ende, für wie viele Personen Sie kochen.",
+   "en": "fresh",
+   "lemma": "frisch"
+  }
+ ]
+}
