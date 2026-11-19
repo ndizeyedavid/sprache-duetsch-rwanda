@@ -1,0 +1,691 @@
+{
+ "level": "B1",
+ "lesson": 9,
+ "title": "Gesundheit — Mit mehr Bewegung lebt man gesünder",
+ "lines": [
+  {
+   "de": "Über Gesundheit und Bewegung sprechen — und Dinge genau vergleichen.",
+   "en": "Talking about health and exercise — and comparing things precisely."
+  },
+  {
+   "de": "über Gesundheit, Sport und Wohlbefinden sprechen",
+   "en": "talk about health, sport and well-being"
+  },
+  {
+   "de": "Komparativ und Superlativ vor dem Nomen richtig deklinieren",
+   "en": "decline the comparative and superlative correctly before a noun"
+  },
+  {
+   "de": "Empfehlungen zu einem gesunden Alltag geben",
+   "en": "give recommendations for a healthy everyday life"
+  },
+  {
+   "de": "Grammatik: Komparativ und Superlativ als Attribut",
+   "en": "Grammar: comparative and superlative as attributive adjectives"
+  },
+  {
+   "de": "Steht ein Komparativ oder Superlativ vor einem Nomen, bekommt er zusätzlich die normale Adjektivendung: klein → kleiner- → der kleinere Raum; am kleinsten → kleinst- → der kleinste Raum. Beim Superlativ vor dem Nomen steht immer ein Artikel (kein am).",
+   "en": "If a comparative or superlative comes before a noun, it also takes the normal adjective ending: klein → kleiner- → der kleinere Raum (the smaller room); am kleinsten → kleinst- → der kleinste Raum (the smallest room). A superlative before a noun always has an article (no am)."
+  },
+  {
+   "de": "Grundform",
+   "en": "Base form"
+  },
+  {
+   "de": "Komparativ",
+   "en": "Comparative"
+  },
+  {
+   "de": "Superlativ (prädikativ)",
+   "en": "Superlative (predicative)"
+  },
+  {
+   "de": "vor dem Nomen",
+   "en": "before the noun"
+  },
+  {
+   "de": "gesund",
+   "en": "healthy"
+  },
+  {
+   "de": "gesünder",
+   "en": "healthier"
+  },
+  {
+   "de": "am gesündesten",
+   "en": "(the) healthiest"
+  },
+  {
+   "de": "der gesündere / der gesündeste Lebensstil",
+   "en": "the healthier / the healthiest lifestyle"
+  },
+  {
+   "de": "das bessere / das beste Ergebnis",
+   "en": "the better / the best result"
+  },
+  {
+   "de": "die meiste Zeit",
+   "en": "most of the time"
+  },
+  {
+   "de": "hoch",
+   "en": "high"
+  },
+  {
+   "de": "höher",
+   "en": "higher"
+  },
+  {
+   "de": "am höchsten",
+   "en": "(the) highest"
+  },
+  {
+   "de": "der höhere / der höchste Preis",
+   "en": "the higher / the highest price"
+  },
+  {
+   "de": "Sport trägt zu einem besseren Wohlbefinden bei.Dativ maskulin/neutrum: einem besser+en",
+   "en": "Sport contributes to a better sense of well-being. (dative masculine/neuter: einem besser+en)"
+  },
+  {
+   "de": "Das ist die einfachste Übung für den Rücken.Superlativ + Artikel + Endung -e",
+   "en": "This is the easiest exercise for the back. (superlative + article + ending -e)"
+  },
+  {
+   "de": "Ich suche eine gesündere Alternative zu Fertiggerichten.Akkusativ feminin: eine gesünder+e",
+   "en": "I'm looking for a healthier alternative to ready meals. (accusative feminine: eine gesünder+e)"
+  },
+  {
+   "de": "Tipp: Kurze Adjektive mit a, o, u bekommen im Komparativ oft einen Umlaut: alt → älter, groß → größer, jung → jünger, gesund → gesünder.",
+   "en": "Tip: Short adjectives with a, o, u often take an umlaut in the comparative: alt → älter (old → older), groß → größer (big → bigger), jung → jünger (young → younger), gesund → gesünder (healthy → healthier)."
+  },
+  {
+   "de": "das Wohlbefinden (Sg.) — EN: well-being · FR: le bien-êtreBewegung steigert das Wohlbefinden.",
+   "en": "Example: Exercise increases well-being."
+  },
+  {
+   "de": "die Bewegung (Sg.) — EN: physical activity · FR: l'activité physiqueViele Menschen haben zu wenig Bewegung.",
+   "en": "Example: Many people don't get enough exercise."
+  },
+  {
+   "de": "sich erholen — EN: to recover, relax · FR: se reposerIm Urlaub habe ich mich gut erholt.",
+   "en": "Example: I had a good rest on holiday."
+  },
+  {
+   "de": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine ausgewogene Ernährung ist wichtig.",
+   "en": "Example: A balanced diet is important."
+  },
+  {
+   "de": "der Stress (Sg.) — EN: stress · FR: le stressStress im Beruf macht auf Dauer krank.",
+   "en": "Example: Stress at work makes you ill in the long run."
+  },
+  {
+   "de": "vorbeugen (+ Dat.) — EN: to prevent · FR: prévenirRegelmäßiger Sport beugt Rückenschmerzen vor.",
+   "en": "Example: Regular sport prevents back pain."
+  },
+  {
+   "de": "die Ausdauer (Sg.) — EN: stamina · FR: l'enduranceBeim Laufen trainiert man die Ausdauer.",
+   "en": "Example: Running trains your stamina."
+  },
+  {
+   "de": "der Muskel, -n — EN: muscle · FR: le muscleNach dem Training tun mir alle Muskeln weh.",
+   "en": "Example: After training all my muscles hurt."
+  },
+  {
+   "de": "fit bleiben — EN: to stay fit · FR: rester en formeMit dem Rad zur Arbeit zu fahren hält fit.",
+   "en": "Example: Cycling to work keeps you fit."
+  },
+  {
+   "de": "beitragen zu (trug bei) — EN: to contribute to · FR: contribuer àSchlaf trägt zu einer besseren Konzentration bei.",
+   "en": "Example: Sleep contributes to better concentration."
+  },
+  {
+   "de": "der Ausgleich (Sg.) — EN: balance, counterbalance · FR: l'équilibreSport ist für mich ein guter Ausgleich zur Arbeit.",
+   "en": "Example: For me, sport is a good way to balance out work."
+  },
+  {
+   "de": "Im Vergleich zu … ist … deutlich …",
+   "en": "Compared to …, … is clearly …"
+  },
+  {
+   "de": "… ist weit gesünder als …",
+   "en": "… is far healthier than …"
+  },
+  {
+   "de": "Den größten Effekt hat …",
+   "en": "The biggest effect comes from …"
+  },
+  {
+   "de": "empfehlen",
+   "en": "recommending"
+  },
+  {
+   "de": "Schon 30 Minuten täglich reichen aus, um …",
+   "en": "Just 30 minutes a day is enough to …"
+  },
+  {
+   "de": "Besonders zu empfehlen ist …",
+   "en": "Especially recommended is …"
+  },
+  {
+   "de": "Am wirksamsten ist es, wenn man …",
+   "en": "It is most effective if you …"
+  },
+  {
+   "de": "über eigene Gewohnheiten sprechen",
+   "en": "talking about your own habits"
+  },
+  {
+   "de": "Ich achte darauf, dass …",
+   "en": "I make sure that …"
+  },
+  {
+   "de": "Früher habe ich …, heute dagegen …",
+   "en": "I used to …, but today …"
+  },
+  {
+   "de": "Mir fällt es schwer, regelmäßig …",
+   "en": "I find it hard to … regularly"
+  },
+  {
+   "de": "Bewegung steigert das Wohlbefinden.",
+   "en": "Exercise increases well-being."
+  },
+  {
+   "de": "Viele Menschen haben zu wenig Bewegung.",
+   "en": "Many people don't get enough exercise."
+  },
+  {
+   "de": "Im Urlaub habe ich mich gut erholt.",
+   "en": "I had a good rest on holiday."
+  },
+  {
+   "de": "Eine ausgewogene Ernährung ist wichtig.",
+   "en": "A balanced diet is important."
+  },
+  {
+   "de": "Stress im Beruf macht auf Dauer krank.",
+   "en": "Stress at work makes you ill in the long run."
+  },
+  {
+   "de": "Regelmäßiger Sport beugt Rückenschmerzen vor.",
+   "en": "Regular sport prevents back pain."
+  },
+  {
+   "de": "Beim Laufen trainiert man die Ausdauer.",
+   "en": "Running trains your stamina."
+  },
+  {
+   "de": "Nach dem Training tun mir alle Muskeln weh.",
+   "en": "After training all my muscles hurt."
+  },
+  {
+   "de": "Mit dem Rad zur Arbeit zu fahren hält fit.",
+   "en": "Cycling to work keeps you fit."
+  },
+  {
+   "de": "Schlaf trägt zu einer besseren Konzentration bei.",
+   "en": "Sleep contributes to better concentration."
+  },
+  {
+   "de": "Sport ist für mich ein guter Ausgleich zur Arbeit.",
+   "en": "For me, sport is a good way to balance out work."
+  },
+  {
+   "de": "Radfahren ist eine ___ Alternative zum Auto. (gesund, Komparativ)",
+   "en": "Cycling is a ___ alternative to the car. (gesund, comparative)"
+  },
+  {
+   "de": "Das ist ___ Übung für Anfänger.",
+   "en": "That is ___ exercise for beginners."
+  },
+  {
+   "de": "Mit ___ Schlaf fühlt man sich den ganzen Tag besser. (viel, Komparativ)",
+   "en": "With ___ sleep you feel better all day. (viel, comparative)"
+  },
+  {
+   "de": "Er sucht einen ___ Arbeitsplatz.",
+   "en": "He is looking for a ___ workplace."
+  },
+  {
+   "de": "Bewegung trägt zu einem ___ Wohlbefinden bei. (gut, Komparativ)",
+   "en": "Exercise contributes to a ___ sense of well-being. (gut, comparative)"
+  },
+  {
+   "de": "eine + Komparativ gesünder + Endung -e (Akkusativ/Nominativ feminin).",
+   "en": "eine + comparative gesünder + ending -e (accusative/nominative feminine)."
+  },
+  {
+   "de": "Vor dem Nomen steht der Superlativ mit Artikel und Adjektivendung, nicht mit am.",
+   "en": "Before the noun, the superlative takes an article and an adjective ending, not am."
+  },
+  {
+   "de": "viel → mehr (unregelmäßig, hier ohne Endung).",
+   "en": "viel → mehr (irregular, here without an ending)."
+  },
+  {
+   "de": "Akkusativ maskulin: einen + ruhiger + en.",
+   "en": "Accusative masculine: einen + ruhiger + en."
+  },
+  {
+   "de": "gut → besser; Dativ neutrum: einem besser+en.",
+   "en": "gut → besser; dative neuter: einem besser+en."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Wohlbefinden",
+   "context": "über Gesundheit, Sport und Wohlbefinden sprechen",
+   "en": "well-being",
+   "lemma": "das Wohlbefinden"
+  },
+  {
+   "form": "Empfehlungen",
+   "context": "Empfehlungen zu einem gesunden Alltag geben",
+   "en": "recommendations",
+   "lemma": "die Empfehlung"
+  },
+  {
+   "form": "gesunden",
+   "context": "Empfehlungen zu einem gesunden Alltag geben",
+   "en": "healthy",
+   "lemma": "gesund"
+  },
+  {
+   "form": "Attribut",
+   "context": "Grammatik: Komparativ und Superlativ als Attribut",
+   "en": "attribute (before a noun)",
+   "lemma": "das Attribut"
+  },
+  {
+   "form": "zusätzlich",
+   "context": "Steht ein Komparativ oder Superlativ vor einem Nomen, bekommt er zusätzlich die normale Adjektivendung: klein → kleiner- → der kleinere Raum; am kleinsten → kleinst- → der kleinste Raum. Beim Superlativ vor dem Nomen steht immer ein Artikel (kein am).",
+   "en": "additionally, also",
+   "lemma": ""
+  },
+  {
+   "form": "kleinere",
+   "context": "Steht ein Komparativ oder Superlativ vor einem Nomen, bekommt er zusätzlich die normale Adjektivendung: klein → kleiner- → der kleinere Raum; am kleinsten → kleinst- → der kleinste Raum. Beim Superlativ vor dem Nomen steht immer ein Artikel (kein am).",
+   "en": "smaller",
+   "lemma": "klein"
+  },
+  {
+   "form": "kleinsten",
+   "context": "Steht ein Komparativ oder Superlativ vor einem Nomen, bekommt er zusätzlich die normale Adjektivendung: klein → kleiner- → der kleinere Raum; am kleinsten → kleinst- → der kleinste Raum. Beim Superlativ vor dem Nomen steht immer ein Artikel (kein am).",
+   "en": "smallest",
+   "lemma": "klein"
+  },
+  {
+   "form": "kleinst",
+   "context": "Steht ein Komparativ oder Superlativ vor einem Nomen, bekommt er zusätzlich die normale Adjektivendung: klein → kleiner- → der kleinere Raum; am kleinsten → kleinst- → der kleinste Raum. Beim Superlativ vor dem Nomen steht immer ein Artikel (kein am).",
+   "en": "smallest (stem)",
+   "lemma": "klein"
+  },
+  {
+   "form": "kleinste",
+   "context": "Steht ein Komparativ oder Superlativ vor einem Nomen, bekommt er zusätzlich die normale Adjektivendung: klein → kleiner- → der kleinere Raum; am kleinsten → kleinst- → der kleinste Raum. Beim Superlativ vor dem Nomen steht immer ein Artikel (kein am).",
+   "en": "smallest",
+   "lemma": "klein"
+  },
+  {
+   "form": "Grundform",
+   "context": "Grundform",
+   "en": "base form",
+   "lemma": "die Grundform"
+  },
+  {
+   "form": "prädikativ",
+   "context": "Superlativ (prädikativ)",
+   "en": "predicative (after the verb)",
+   "lemma": ""
+  },
+  {
+   "form": "gesünder",
+   "context": "gesünder",
+   "en": "healthier",
+   "lemma": "gesund"
+  },
+  {
+   "form": "gesündesten",
+   "context": "am gesündesten",
+   "en": "healthiest",
+   "lemma": "gesund"
+  },
+  {
+   "form": "gesündere",
+   "context": "der gesündere / der gesündeste Lebensstil",
+   "en": "healthier",
+   "lemma": "gesund"
+  },
+  {
+   "form": "gesündeste",
+   "context": "der gesündere / der gesündeste Lebensstil",
+   "en": "healthiest",
+   "lemma": "gesund"
+  },
+  {
+   "form": "Lebensstil",
+   "context": "der gesündere / der gesündeste Lebensstil",
+   "en": "lifestyle",
+   "lemma": "der Lebensstil"
+  },
+  {
+   "form": "bessere",
+   "context": "das bessere / das beste Ergebnis",
+   "en": "better",
+   "lemma": "gut"
+  },
+  {
+   "form": "meiste",
+   "context": "die meiste Zeit",
+   "en": "most",
+   "lemma": "viel"
+  },
+  {
+   "form": "höher",
+   "context": "höher",
+   "en": "higher",
+   "lemma": "hoch"
+  },
+  {
+   "form": "höchsten",
+   "context": "am höchsten",
+   "en": "highest",
+   "lemma": "hoch"
+  },
+  {
+   "form": "höhere",
+   "context": "der höhere / der höchste Preis",
+   "en": "higher",
+   "lemma": "hoch"
+  },
+  {
+   "form": "höchste",
+   "context": "der höhere / der höchste Preis",
+   "en": "highest",
+   "lemma": "hoch"
+  },
+  {
+   "form": "besseren",
+   "context": "Sport trägt zu einem besseren Wohlbefinden bei.Dativ maskulin/neutrum: einem besser+en",
+   "en": "better",
+   "lemma": "gut"
+  },
+  {
+   "form": "einfachste",
+   "context": "Das ist die einfachste Übung für den Rücken.Superlativ + Artikel + Endung -e",
+   "en": "easiest, simplest",
+   "lemma": "einfach"
+  },
+  {
+   "form": "Übung",
+   "context": "Das ist die einfachste Übung für den Rücken.Superlativ + Artikel + Endung -e",
+   "en": "exercise",
+   "lemma": "die Übung"
+  },
+  {
+   "form": "Alternative",
+   "context": "Ich suche eine gesündere Alternative zu Fertiggerichten.Akkusativ feminin: eine gesünder+e",
+   "en": "alternative",
+   "lemma": "die Alternative"
+  },
+  {
+   "form": "Fertiggerichten",
+   "context": "Ich suche eine gesündere Alternative zu Fertiggerichten.Akkusativ feminin: eine gesünder+e",
+   "en": "ready meals",
+   "lemma": "das Fertiggericht"
+  },
+  {
+   "form": "jünger",
+   "context": "Tipp: Kurze Adjektive mit a, o, u bekommen im Komparativ oft einen Umlaut: alt → älter, groß → größer, jung → jünger, gesund → gesünder.",
+   "en": "younger",
+   "lemma": "jung"
+  },
+  {
+   "form": "well-being",
+   "context": "das Wohlbefinden (Sg.) — EN: well-being · FR: le bien-êtreBewegung steigert das Wohlbefinden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bien-êtreBewegung",
+   "context": "das Wohlbefinden (Sg.) — EN: well-being · FR: le bien-êtreBewegung steigert das Wohlbefinden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "steigert",
+   "context": "das Wohlbefinden (Sg.) — EN: well-being · FR: le bien-êtreBewegung steigert das Wohlbefinden.",
+   "en": "increases",
+   "lemma": "steigern"
+  },
+  {
+   "form": "physical",
+   "context": "die Bewegung (Sg.) — EN: physical activity · FR: l'activité physiqueViele Menschen haben zu wenig Bewegung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "activity",
+   "context": "die Bewegung (Sg.) — EN: physical activity · FR: l'activité physiqueViele Menschen haben zu wenig Bewegung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'activité",
+   "context": "die Bewegung (Sg.) — EN: physical activity · FR: l'activité physiqueViele Menschen haben zu wenig Bewegung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "physiqueViele",
+   "context": "die Bewegung (Sg.) — EN: physical activity · FR: l'activité physiqueViele Menschen haben zu wenig Bewegung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reposerIm",
+   "context": "sich erholen — EN: to recover, relax · FR: se reposerIm Urlaub habe ich mich gut erholt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ausgewogene",
+   "context": "die Ernährung (Sg.) — EN: diet, nutrition · FR: l'alimentationEine ausgewogene Ernährung ist wichtig.",
+   "en": "balanced",
+   "lemma": "ausgewogen"
+  },
+  {
+   "form": "Stress",
+   "context": "der Stress (Sg.) — EN: stress · FR: le stressStress im Beruf macht auf Dauer krank.",
+   "en": "stress",
+   "lemma": "der Stress"
+  },
+  {
+   "form": "stress",
+   "context": "der Stress (Sg.) — EN: stress · FR: le stressStress im Beruf macht auf Dauer krank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stressStress",
+   "context": "der Stress (Sg.) — EN: stress · FR: le stressStress im Beruf macht auf Dauer krank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vorbeugen",
+   "context": "vorbeugen (+ Dat.) — EN: to prevent · FR: prévenirRegelmäßiger Sport beugt Rückenschmerzen vor.",
+   "en": "to prevent",
+   "lemma": ""
+  },
+  {
+   "form": "prevent",
+   "context": "vorbeugen (+ Dat.) — EN: to prevent · FR: prévenirRegelmäßiger Sport beugt Rückenschmerzen vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prévenirRegelmäßiger",
+   "context": "vorbeugen (+ Dat.) — EN: to prevent · FR: prévenirRegelmäßiger Sport beugt Rückenschmerzen vor.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beugt",
+   "context": "vorbeugen (+ Dat.) — EN: to prevent · FR: prévenirRegelmäßiger Sport beugt Rückenschmerzen vor.",
+   "en": "prevents (with vor); bends",
+   "lemma": "vorbeugen"
+  },
+  {
+   "form": "Rückenschmerzen",
+   "context": "vorbeugen (+ Dat.) — EN: to prevent · FR: prévenirRegelmäßiger Sport beugt Rückenschmerzen vor.",
+   "en": "back pain",
+   "lemma": "der Rückenschmerz"
+  },
+  {
+   "form": "Muskel",
+   "context": "der Muskel, -n — EN: muscle · FR: le muscleNach dem Training tun mir alle Muskeln weh.",
+   "en": "muscle",
+   "lemma": "der Muskel"
+  },
+  {
+   "form": "muscle",
+   "context": "der Muskel, -n — EN: muscle · FR: le muscleNach dem Training tun mir alle Muskeln weh.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "muscleNach",
+   "context": "der Muskel, -n — EN: muscle · FR: le muscleNach dem Training tun mir alle Muskeln weh.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Muskeln",
+   "context": "der Muskel, -n — EN: muscle · FR: le muscleNach dem Training tun mir alle Muskeln weh.",
+   "en": "muscles",
+   "lemma": "der Muskel"
+  },
+  {
+   "form": "formeMit",
+   "context": "fit bleiben — EN: to stay fit · FR: rester en formeMit dem Rad zur Arbeit zu fahren hält fit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beitragen",
+   "context": "beitragen zu (trug bei) — EN: to contribute to · FR: contribuer àSchlaf trägt zu einer besseren Konzentration bei.",
+   "en": "to contribute",
+   "lemma": ""
+  },
+  {
+   "form": "trug",
+   "context": "beitragen zu (trug bei) — EN: to contribute to · FR: contribuer àSchlaf trägt zu einer besseren Konzentration bei.",
+   "en": "carried, wore; trug bei = contributed",
+   "lemma": "tragen"
+  },
+  {
+   "form": "contribute",
+   "context": "beitragen zu (trug bei) — EN: to contribute to · FR: contribuer àSchlaf trägt zu einer besseren Konzentration bei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "contribuer",
+   "context": "beitragen zu (trug bei) — EN: to contribute to · FR: contribuer àSchlaf trägt zu einer besseren Konzentration bei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àSchlaf",
+   "context": "beitragen zu (trug bei) — EN: to contribute to · FR: contribuer àSchlaf trägt zu einer besseren Konzentration bei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Konzentration",
+   "context": "beitragen zu (trug bei) — EN: to contribute to · FR: contribuer àSchlaf trägt zu einer besseren Konzentration bei.",
+   "en": "concentration",
+   "lemma": "die Konzentration"
+  },
+  {
+   "form": "Ausgleich",
+   "context": "der Ausgleich (Sg.) — EN: balance, counterbalance · FR: l'équilibreSport ist für mich ein guter Ausgleich zur Arbeit.",
+   "en": "balance, counterbalance",
+   "lemma": "der Ausgleich"
+  },
+  {
+   "form": "balance",
+   "context": "der Ausgleich (Sg.) — EN: balance, counterbalance · FR: l'équilibreSport ist für mich ein guter Ausgleich zur Arbeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "counterbalance",
+   "context": "der Ausgleich (Sg.) — EN: balance, counterbalance · FR: l'équilibreSport ist für mich ein guter Ausgleich zur Arbeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'équilibreSport",
+   "context": "der Ausgleich (Sg.) — EN: balance, counterbalance · FR: l'équilibreSport ist für mich ein guter Ausgleich zur Arbeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deutlich",
+   "context": "Im Vergleich zu … ist … deutlich …",
+   "en": "clearly, considerably",
+   "lemma": ""
+  },
+  {
+   "form": "weit",
+   "context": "… ist weit gesünder als …",
+   "en": "far",
+   "lemma": ""
+  },
+  {
+   "form": "Effekt",
+   "context": "Den größten Effekt hat …",
+   "en": "effect",
+   "lemma": "der Effekt"
+  },
+  {
+   "form": "wirksamsten",
+   "context": "Am wirksamsten ist es, wenn man …",
+   "en": "most effective",
+   "lemma": "wirksam"
+  },
+  {
+   "form": "achte",
+   "context": "Ich achte darauf, dass …",
+   "en": "make sure, pay attention",
+   "lemma": "achten"
+  },
+  {
+   "form": "Radfahren",
+   "context": "Radfahren ist eine ___ Alternative zum Auto. (gesund, Komparativ)",
+   "en": "cycling",
+   "lemma": "das Radfahren"
+  },
+  {
+   "form": "Anfänger",
+   "context": "Das ist ___ Übung für Anfänger.",
+   "en": "beginner(s)",
+   "lemma": "der Anfänger"
+  },
+  {
+   "form": "fühlt",
+   "context": "Mit ___ Schlaf fühlt man sich den ganzen Tag besser. (viel, Komparativ)",
+   "en": "feels",
+   "lemma": "sich fühlen"
+  },
+  {
+   "form": "sucht",
+   "context": "Er sucht einen ___ Arbeitsplatz.",
+   "en": "is looking for",
+   "lemma": "suchen"
+  }
+ ]
+}
