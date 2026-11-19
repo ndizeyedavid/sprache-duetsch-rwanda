@@ -4,11 +4,13 @@ import { z } from "zod";
 // Every runtime setting is validated once. Code never reads process.env directly.
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
-  PAYPACK_ENABLED: z.enum(["true", "false"]).default("false"),
-  PAYPACK_CLIENT_ID: z.string().optional(),
-  PAYPACK_CLIENT_SECRET: z.string().optional(),
-  PAYPACK_WEBHOOK_SECRET: z.string().optional(),
-  PAYPACK_WEBHOOK_MODE: z.enum(["development", "production"]).default("development"),
+  // XendlyPay mobile money (MTN MoMo + Airtel Money). One API key per XendlyPay app; never sent to browsers.
+  XENDLYPAY_ENABLED: z.enum(["true", "false"]).default("false"),
+  XENDLYPAY_API_KEY: z.string().optional(),
+  // Signing secret of the app's webhook. Until it is set, callbacks are refused and payments settle by polling.
+  XENDLYPAY_WEBHOOK_SECRET: z.string().optional(),
+  // The XendlyPay app mode this deployment expects. Payments made in any other mode are never credited.
+  XENDLYPAY_MODE: z.enum(["test", "live"]).default("live"),
   PORT: z.coerce.number().int().positive().default(4000),
   DATABASE_URL: z.string().min(1, "DATABASE_URL is required"),
   JWT_SECRET: z.string().min(16, "JWT_SECRET must be at least 16 characters"),
@@ -40,28 +42,21 @@ const envSchema = z.object({
   // Google OAuth — Client ID used to verify Google ID tokens (audience check).
   GOOGLE_CLIENT_ID: z.string().optional(),
   GOOGLE_CLIENT_SECRET: z.string().optional(),
-  // SMTP — Zoho Mail (smtp.zoho.com:465 SSL) for transactional and notification emails.
-  SMTP_HOST: z.string().default("smtp.zoho.com"),
-  SMTP_PORT: z.coerce.number().int().positive().default(465),
-  SMTP_SECURE: z.enum(["true", "false"]).default("true"),
+  // SMTP — Hubmail (mail.hubmail.space:587, STARTTLS) for transactional and notification emails.
+  // SMTP_SECURE="false" on 587 means STARTTLS is required (see lib/mailer.ts).
+  SMTP_HOST: z.string().default("mail.hubmail.space"),
+  SMTP_PORT: z.coerce.number().int().positive().default(587),
+  SMTP_SECURE: z.enum(["true", "false"]).default("false"),
   SMTP_USER: z.string().optional(),
   SMTP_PASS: z.string().optional(),
   SMTP_FROM: z.string().optional(),
   // Comma-separated origins allowed to call public enrollment endpoint without auth
   ENROLLMENT_ALLOWED_ORIGINS: z.string().optional(),
-  // HTTP relay on your VPS — Render calls this over HTTPS, VPS does SMTP to Gmail (bypasses Render's SMTP block)
-  EMAIL_RELAY_URL: z.string().optional(),
-  EMAIL_RELAY_SECRET: z.string().optional(),
 });
 
 const parsed = envSchema.superRefine((value, ctx) => {
-  if (value.PAYPACK_ENABLED === "true") {
-    for (const key of ["PAYPACK_CLIENT_ID", "PAYPACK_CLIENT_SECRET", "PAYPACK_WEBHOOK_SECRET"] as const) {
-      if (!value[key]?.trim()) ctx.addIssue({ code: "custom", path: [key], message: "Required when Paypack is enabled" });
-    }
-    if (value.NODE_ENV === "production" && value.PAYPACK_WEBHOOK_MODE !== "production") {
-      ctx.addIssue({ code: "custom", path: ["PAYPACK_WEBHOOK_MODE"], message: "Use production webhook mode in production" });
-    }
+  if (value.XENDLYPAY_ENABLED === "true" && !/^xpay_[A-Za-z0-9]+_[A-Za-z0-9]+$/.test(value.XENDLYPAY_API_KEY?.trim() ?? "")) {
+    ctx.addIssue({ code: "custom", path: ["XENDLYPAY_API_KEY"], message: "A XendlyPay key (xpay_…) is required when XendlyPay is enabled" });
   }
 }).safeParse(process.env);
 
@@ -95,7 +90,6 @@ export const defaultEnrollmentOrigins = [
   "https://www.deutschspracherw.org",
   "https://deutshsprache.org",
   "https://www.deutshsprache.org",
-  "https://deutsch-prache-rw.vercel.app",
 ];
 
 export const smtpEnabled = Boolean(env.SMTP_USER && env.SMTP_PASS);
