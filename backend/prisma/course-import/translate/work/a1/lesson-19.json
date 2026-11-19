@@ -1,0 +1,893 @@
+{
+ "level": "A1",
+ "lesson": 19,
+ "title": "Aussehen und früher — Früher war er ganz anders",
+ "lines": [
+  {
+   "de": "Personen beschreiben und sagen, wie es früher war.",
+   "en": "Describe people and say what things were like in the past."
+  },
+  {
+   "de": "Textsorte: Gespräch · altes Foto",
+   "en": "Text type: Conversation · Old photo"
+  },
+  {
+   "de": "Personen beschreiben",
+   "en": "describe people"
+  },
+  {
+   "de": "das Präteritum von sein und haben verwenden",
+   "en": "use the simple past (Präteritum) of sein and haben"
+  },
+  {
+   "de": "das Perfekt nicht trennbarer Verben bilden",
+   "en": "form the present perfect (Perfekt) of inseparable verbs"
+  },
+  {
+   "de": "Grammatik: Präteritum von sein und haben",
+   "en": "Grammar: simple past (Präteritum) of sein and haben"
+  },
+  {
+   "de": "Bei sein und haben benutzt man für die Vergangenheit fast immer das Präteritum — nicht das Perfekt. Das ist kürzer und klingt natürlich.",
+   "en": "With sein and haben, you almost always use the simple past to talk about the past — not the present perfect. It is shorter and sounds natural."
+  },
+  {
+   "de": "sein → war",
+   "en": "to be → was"
+  },
+  {
+   "de": "haben → hatte",
+   "en": "to have → had"
+  },
+  {
+   "de": "war",
+   "en": "was"
+  },
+  {
+   "de": "hatte",
+   "en": "had"
+  },
+  {
+   "de": "warst",
+   "en": "(you) were"
+  },
+  {
+   "de": "hattest",
+   "en": "(you) had"
+  },
+  {
+   "de": "waren",
+   "en": "(we / they) were"
+  },
+  {
+   "de": "hatten",
+   "en": "(we / they) had"
+  },
+  {
+   "de": "wart",
+   "en": "(you all) were"
+  },
+  {
+   "de": "hattet",
+   "en": "(you all) had"
+  },
+  {
+   "de": "Früher war er ganz anders.sein → war",
+   "en": "He used to be completely different. sein → war"
+  },
+  {
+   "de": "Der hatte doch gar keinen Bauch!haben → hatte",
+   "en": "But he didn't have a belly at all! haben → hatte"
+  },
+  {
+   "de": "Wir waren damals sehr jung.Plural: waren",
+   "en": "We were very young back then. Plural: waren"
+  },
+  {
+   "de": "Tipp: Nicht sagen: „Ich habe müde gewesen.\" Richtig: „Ich war müde.\"",
+   "en": "Tip: Don't say \"Ich habe müde gewesen.\" Correct: \"Ich war müde.\" (I was tired.)"
+  },
+  {
+   "de": "Grammatik: Perfekt: nicht trennbare Verben",
+   "en": "Grammar: present perfect (Perfekt): inseparable verbs"
+  },
+  {
+   "de": "Verben mit den Vorsilben be-, ge-, ver-, er-, ent-, emp-, miss-, zer- bilden das Partizip OHNE ge-.",
+   "en": "Verbs with the prefixes be-, ge-, ver-, er-, ent-, emp-, miss-, zer- form the participle WITHOUT ge-."
+  },
+  {
+   "de": "bekommen",
+   "en": "to get; got"
+  },
+  {
+   "de": "Er hat ein Geschenk bekommen.",
+   "en": "He got a present."
+  },
+  {
+   "de": "erkennen",
+   "en": "to recognise"
+  },
+  {
+   "de": "erkannt",
+   "en": "recognised"
+  },
+  {
+   "de": "Ich habe ihn nicht erkannt.",
+   "en": "I didn't recognise him."
+  },
+  {
+   "de": "vergessen",
+   "en": "to forget; forgotten"
+  },
+  {
+   "de": "Sie hat den Termin vergessen.",
+   "en": "She forgot the appointment."
+  },
+  {
+   "de": "verstehen",
+   "en": "to understand"
+  },
+  {
+   "de": "verstanden",
+   "en": "understood"
+  },
+  {
+   "de": "Hast du das verstanden?",
+   "en": "Did you understand that?"
+  },
+  {
+   "de": "entschuldigen",
+   "en": "to apologise; to excuse"
+  },
+  {
+   "de": "entschuldigt",
+   "en": "apologised"
+  },
+  {
+   "de": "Er hat sich entschuldigt.",
+   "en": "He apologised."
+  },
+  {
+   "de": "Ich habe dich auf dem Foto gar nicht erkannt!erkennen → erkannt, ohne ge-",
+   "en": "I didn't recognise you at all in the photo! erkennen → erkannt, without ge-"
+  },
+  {
+   "de": "Tipp: Merken Sie: be-, ge-, ver-, er-, ent- → kein ge- im Partizip.",
+   "en": "Tip: Remember: be-, ge-, ver-, er-, ent- → no ge- in the participle."
+  },
+  {
+   "de": "Grammatik: Adjektive mit un-",
+   "en": "Grammar: adjectives with un-"
+  },
+  {
+   "de": "Mit der Vorsilbe un- wird aus einem Adjektiv das Gegenteil.",
+   "en": "With the prefix un-, an adjective becomes its opposite."
+  },
+  {
+   "de": "Adjektiv",
+   "en": "Adjective"
+  },
+  {
+   "de": "Gegenteil",
+   "en": "Opposite"
+  },
+  {
+   "de": "sympathisch",
+   "en": "likeable; nice"
+  },
+  {
+   "de": "unsympathisch",
+   "en": "unpleasant; not likeable"
+  },
+  {
+   "de": "freundlich",
+   "en": "friendly"
+  },
+  {
+   "de": "unfreundlich",
+   "en": "unfriendly"
+  },
+  {
+   "de": "interessant",
+   "en": "interesting"
+  },
+  {
+   "de": "uninteressant",
+   "en": "uninteresting"
+  },
+  {
+   "de": "pünktlich",
+   "en": "punctual"
+  },
+  {
+   "de": "unpünktlich",
+   "en": "unpunctual; not on time"
+  },
+  {
+   "de": "Früher war er ziemlich unsympathisch, heute ist er sehr nett.un- + Adjektiv",
+   "en": "He used to be quite unpleasant; today he is very nice. un- + adjective"
+  },
+  {
+   "de": "Tipp: Vorsicht: Nicht jedes Adjektiv geht mit un-. Das Gegenteil von groß ist klein, nicht „ungroß\".",
+   "en": "Tip: Careful: not every adjective works with un-. The opposite of groß (big) is klein (small), not \"ungroß\"."
+  },
+  {
+   "de": "aussehen — EN: to look (like) · FR: avoir l'airDu siehst heute müde aus.",
+   "en": "Example: You look tired today."
+  },
+  {
+   "de": "der Bauch, ¨-e — EN: belly · FR: le ventreDer hatte doch keinen Bauch!",
+   "en": "Example: But he didn't have a belly!"
+  },
+  {
+   "de": "die Haare (Pl.) — EN: hair · FR: les cheveuxFrüher hatte er lange Haare.",
+   "en": "Example: He used to have long hair."
+  },
+  {
+   "de": "dick / dünn — EN: fat / thin · FR: gros / minceEr war damals sehr dünn.",
+   "en": "Example: He was very thin back then."
+  },
+  {
+   "de": "jung / alt — EN: young / old · FR: jeune / vieuxWir waren damals jung.",
+   "en": "Example: We were young back then."
+  },
+  {
+   "de": "sympathisch — EN: likeable · FR: sympathiqueSie ist sehr sympathisch.",
+   "en": "Example: She is very likeable."
+  },
+  {
+   "de": "freundlich — EN: friendly · FR: aimableDer Nachbar ist sehr freundlich.",
+   "en": "Example: The neighbour is very friendly."
+  },
+  {
+   "de": "erkennen — EN: to recognise · FR: reconnaîtreIch habe dich nicht erkannt!",
+   "en": "Example: I didn't recognise you!"
+  },
+  {
+   "de": "bekommen — EN: to get, receive · FR: recevoirIch habe einen Brief bekommen.",
+   "en": "Example: I got a letter."
+  },
+  {
+   "de": "vergessen — EN: to forget · FR: oublierIch habe deinen Namen vergessen.",
+   "en": "Example: I've forgotten your name."
+  },
+  {
+   "de": "damals / früher — EN: back then / in the past · FR: à l'époque / autrefoisDamals war alles anders.",
+   "en": "Example: Back then everything was different."
+  },
+  {
+   "de": "sich verändern — EN: to change · FR: changerDu hast dich gar nicht verändert!",
+   "en": "Example: You haven't changed at all!"
+  },
+  {
+   "de": "Er hat kurze, dunkle Haare.",
+   "en": "He has short, dark hair."
+  },
+  {
+   "de": "Sie sieht sehr jung aus.",
+   "en": "She looks very young."
+  },
+  {
+   "de": "Er ist groß und sportlich.",
+   "en": "He is tall and sporty."
+  },
+  {
+   "de": "über früher sprechen",
+   "en": "talking about the past"
+  },
+  {
+   "de": "Früher war er ganz anders.",
+   "en": "He used to be completely different."
+  },
+  {
+   "de": "Damals hatten wir kein Auto.",
+   "en": "Back then we didn't have a car."
+  },
+  {
+   "de": "Als Kind war ich sehr schüchtern.",
+   "en": "As a child I was very shy."
+  },
+  {
+   "de": "staunen",
+   "en": "expressing surprise"
+  },
+  {
+   "de": "Das gibt's doch nicht!",
+   "en": "I don't believe it!"
+  },
+  {
+   "de": "Ich habe dich gar nicht erkannt!",
+   "en": "I didn't recognise you at all!"
+  },
+  {
+   "de": "Du hast dich überhaupt nicht verändert.",
+   "en": "You haven't changed at all."
+  },
+  {
+   "de": "Dialog: Ein altes Foto",
+   "en": "Dialogue: An old photo"
+  },
+  {
+   "de": "Rosa: Schau mal, das Foto von 2005!",
+   "en": "Rosa: Look, the photo from 2005!"
+  },
+  {
+   "de": "Pit: Ist das Markus? Der hatte doch keinen Bauch!",
+   "en": "Pit: Is that Markus? But he didn't have a belly!"
+  },
+  {
+   "de": "Rosa: Nein, früher war er ganz anders. Sehr dünn.",
+   "en": "Rosa: No, he used to be completely different. Very thin."
+  },
+  {
+   "de": "Pit: Und so lange Haare! Ich habe ihn gar nicht erkannt.",
+   "en": "Pit: And such long hair! I didn't recognise him at all."
+  },
+  {
+   "de": "Rosa: Damals waren wir alle jung.",
+   "en": "Rosa: Back then we were all young."
+  },
+  {
+   "de": "Pit: Stimmt. Aber du hast dich gar nicht verändert!",
+   "en": "Pit: True. But you haven't changed at all!"
+  },
+  {
+   "de": "Du siehst heute müde aus.",
+   "en": "You look tired today."
+  },
+  {
+   "de": "Der hatte doch keinen Bauch!",
+   "en": "But he didn't have a belly!"
+  },
+  {
+   "de": "Früher hatte er lange Haare.",
+   "en": "He used to have long hair."
+  },
+  {
+   "de": "Er war damals sehr dünn.",
+   "en": "He was very thin back then."
+  },
+  {
+   "de": "Wir waren damals jung.",
+   "en": "We were young back then."
+  },
+  {
+   "de": "Sie ist sehr sympathisch.",
+   "en": "She is very likeable."
+  },
+  {
+   "de": "Der Nachbar ist sehr freundlich.",
+   "en": "The neighbour is very friendly."
+  },
+  {
+   "de": "Ich habe dich nicht erkannt!",
+   "en": "I didn't recognise you!"
+  },
+  {
+   "de": "Ich habe einen Brief bekommen.",
+   "en": "I got a letter."
+  },
+  {
+   "de": "Ich habe deinen Namen vergessen.",
+   "en": "I've forgotten your name."
+  },
+  {
+   "de": "Damals war alles anders.",
+   "en": "Back then everything was different."
+  },
+  {
+   "de": "Du hast dich gar nicht verändert!",
+   "en": "You haven't changed at all!"
+  },
+  {
+   "de": "Früher ___ er ganz anders. (sein, Präteritum)",
+   "en": "In the past he ___ completely different. (sein, simple past)"
+  },
+  {
+   "de": "Der ___ doch keinen Bauch! (haben, Präteritum)",
+   "en": "But he ___ no belly! (haben, simple past)"
+  },
+  {
+   "de": "Partizip von „erkennen\":",
+   "en": "Participle of \"erkennen\":"
+  },
+  {
+   "de": "freundlich → das Gegenteil mit un-: ___",
+   "en": "freundlich → the opposite with un-: ___"
+  },
+  {
+   "de": "Beschreiben Sie eine Person: Wie sieht sie heute aus und wie war sie früher? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie war und hatte mindestens dreimal. • Beschreiben Sie das Aussehen mit zwei Adjektiven. • Schreiben Sie, was sich verändert hat.",
+   "en": "Describe a person: What do they look like today and what were they like in the past? Length: 30–40 words Checklist: • Use war and hatte at least three times. • Describe their appearance with two adjectives. • Write what has changed."
+  },
+  {
+   "de": "sein → war.",
+   "en": "sein (to be) → war (was)."
+  },
+  {
+   "de": "haben → hatte.",
+   "en": "haben (to have) → hatte (had)."
+  },
+  {
+   "de": "Nicht trennbare Verben bilden das Partizip ohne ge-.",
+   "en": "Inseparable verbs form the participle without ge-."
+  },
+  {
+   "de": "Bei sein benutzt man das Präteritum.",
+   "en": "With sein you use the simple past."
+  },
+  {
+   "de": "un- + Adjektiv bildet das Gegenteil.",
+   "en": "un- + adjective forms the opposite."
+  }
+ ],
+ "forms": [
+  {
+   "form": "altes",
+   "context": "Textsorte: Gespräch · altes Foto",
+   "en": "old",
+   "lemma": "alt"
+  },
+  {
+   "form": "Präteritum",
+   "context": "das Präteritum von sein und haben verwenden",
+   "en": "simple past",
+   "lemma": "das Präteritum"
+  },
+  {
+   "form": "trennbarer",
+   "context": "das Perfekt nicht trennbarer Verben bilden",
+   "en": "separable",
+   "lemma": "trennbar"
+  },
+  {
+   "form": "kürzer",
+   "context": "Bei sein und haben benutzt man für die Vergangenheit fast immer das Präteritum — nicht das Perfekt. Das ist kürzer und klingt natürlich.",
+   "en": "shorter",
+   "lemma": "kurz"
+  },
+  {
+   "form": "natürlich",
+   "context": "Bei sein und haben benutzt man für die Vergangenheit fast immer das Präteritum — nicht das Perfekt. Das ist kürzer und klingt natürlich.",
+   "en": "natural; of course",
+   "lemma": ""
+  },
+  {
+   "form": "warst",
+   "context": "warst",
+   "en": "(you) were",
+   "lemma": "sein"
+  },
+  {
+   "form": "hattest",
+   "context": "hattest",
+   "en": "(you) had",
+   "lemma": "haben"
+  },
+  {
+   "form": "waren",
+   "context": "waren",
+   "en": "were",
+   "lemma": "sein"
+  },
+  {
+   "form": "hatten",
+   "context": "hatten",
+   "en": "had",
+   "lemma": "haben"
+  },
+  {
+   "form": "wart",
+   "context": "wart",
+   "en": "(you all) were",
+   "lemma": "sein"
+  },
+  {
+   "form": "hattet",
+   "context": "hattet",
+   "en": "(you all) had",
+   "lemma": "haben"
+  },
+  {
+   "form": "damals",
+   "context": "Wir waren damals sehr jung.Plural: waren",
+   "en": "back then",
+   "lemma": ""
+  },
+  {
+   "form": "jung",
+   "context": "Wir waren damals sehr jung.Plural: waren",
+   "en": "young",
+   "lemma": ""
+  },
+  {
+   "form": "ver",
+   "context": "Verben mit den Vorsilben be-, ge-, ver-, er-, ent-, emp-, miss-, zer- bilden das Partizip OHNE ge-.",
+   "en": "prefix ver-",
+   "lemma": ""
+  },
+  {
+   "form": "ent",
+   "context": "Verben mit den Vorsilben be-, ge-, ver-, er-, ent-, emp-, miss-, zer- bilden das Partizip OHNE ge-.",
+   "en": "prefix ent-",
+   "lemma": ""
+  },
+  {
+   "form": "emp",
+   "context": "Verben mit den Vorsilben be-, ge-, ver-, er-, ent-, emp-, miss-, zer- bilden das Partizip OHNE ge-.",
+   "en": "prefix emp-",
+   "lemma": ""
+  },
+  {
+   "form": "miss",
+   "context": "Verben mit den Vorsilben be-, ge-, ver-, er-, ent-, emp-, miss-, zer- bilden das Partizip OHNE ge-.",
+   "en": "prefix miss-",
+   "lemma": ""
+  },
+  {
+   "form": "zer",
+   "context": "Verben mit den Vorsilben be-, ge-, ver-, er-, ent-, emp-, miss-, zer- bilden das Partizip OHNE ge-.",
+   "en": "prefix zer-",
+   "lemma": ""
+  },
+  {
+   "form": "Geschenk",
+   "context": "Er hat ein Geschenk bekommen.",
+   "en": "present; gift",
+   "lemma": "das Geschenk"
+  },
+  {
+   "form": "erkannt",
+   "context": "erkannt",
+   "en": "recognised",
+   "lemma": "erkennen"
+  },
+  {
+   "form": "verstanden",
+   "context": "verstanden",
+   "en": "understood",
+   "lemma": "verstehen"
+  },
+  {
+   "form": "entschuldigen",
+   "context": "entschuldigen",
+   "en": "to apologise; excuse",
+   "lemma": ""
+  },
+  {
+   "form": "entschuldigt",
+   "context": "entschuldigt",
+   "en": "apologised; excused",
+   "lemma": "entschuldigen"
+  },
+  {
+   "form": "Gegenteil",
+   "context": "Mit der Vorsilbe un- wird aus einem Adjektiv das Gegenteil.",
+   "en": "opposite",
+   "lemma": "das Gegenteil"
+  },
+  {
+   "form": "sympathisch",
+   "context": "sympathisch",
+   "en": "likeable; nice",
+   "lemma": ""
+  },
+  {
+   "form": "unsympathisch",
+   "context": "unsympathisch",
+   "en": "unpleasant; not likeable",
+   "lemma": ""
+  },
+  {
+   "form": "unfreundlich",
+   "context": "unfreundlich",
+   "en": "unfriendly",
+   "lemma": ""
+  },
+  {
+   "form": "uninteressant",
+   "context": "uninteressant",
+   "en": "uninteresting",
+   "lemma": ""
+  },
+  {
+   "form": "unpünktlich",
+   "context": "unpünktlich",
+   "en": "unpunctual; late",
+   "lemma": ""
+  },
+  {
+   "form": "ungroß",
+   "context": "Tipp: Vorsicht: Nicht jedes Adjektiv geht mit un-. Das Gegenteil von groß ist klein, nicht „ungroß\".",
+   "en": "not a real word",
+   "lemma": ""
+  },
+  {
+   "form": "aussehen",
+   "context": "aussehen — EN: to look (like) · FR: avoir l'airDu siehst heute müde aus.",
+   "en": "to look (like)",
+   "lemma": ""
+  },
+  {
+   "form": "l'airDu",
+   "context": "aussehen — EN: to look (like) · FR: avoir l'airDu siehst heute müde aus.",
+   "en": "you",
+   "lemma": ""
+  },
+  {
+   "form": "siehst",
+   "context": "aussehen — EN: to look (like) · FR: avoir l'airDu siehst heute müde aus.",
+   "en": "(you) look; (you) see",
+   "lemma": "aussehen"
+  },
+  {
+   "form": "belly",
+   "context": "der Bauch, ¨-e — EN: belly · FR: le ventreDer hatte doch keinen Bauch!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ventreDer",
+   "context": "der Bauch, ¨-e — EN: belly · FR: le ventreDer hatte doch keinen Bauch!",
+   "en": "he",
+   "lemma": ""
+  },
+  {
+   "form": "Haare",
+   "context": "die Haare (Pl.) — EN: hair · FR: les cheveuxFrüher hatte er lange Haare.",
+   "en": "hair",
+   "lemma": "das Haar"
+  },
+  {
+   "form": "hair",
+   "context": "die Haare (Pl.) — EN: hair · FR: les cheveuxFrüher hatte er lange Haare.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cheveuxFrüher",
+   "context": "die Haare (Pl.) — EN: hair · FR: les cheveuxFrüher hatte er lange Haare.",
+   "en": "in the past",
+   "lemma": ""
+  },
+  {
+   "form": "dick",
+   "context": "dick / dünn — EN: fat / thin · FR: gros / minceEr war damals sehr dünn.",
+   "en": "fat; thick",
+   "lemma": ""
+  },
+  {
+   "form": "dünn",
+   "context": "dick / dünn — EN: fat / thin · FR: gros / minceEr war damals sehr dünn.",
+   "en": "thin",
+   "lemma": ""
+  },
+  {
+   "form": "fat",
+   "context": "dick / dünn — EN: fat / thin · FR: gros / minceEr war damals sehr dünn.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "thin",
+   "context": "dick / dünn — EN: fat / thin · FR: gros / minceEr war damals sehr dünn.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gros",
+   "context": "dick / dünn — EN: fat / thin · FR: gros / minceEr war damals sehr dünn.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "minceEr",
+   "context": "dick / dünn — EN: fat / thin · FR: gros / minceEr war damals sehr dünn.",
+   "en": "he",
+   "lemma": ""
+  },
+  {
+   "form": "young",
+   "context": "jung / alt — EN: young / old · FR: jeune / vieuxWir waren damals jung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jeune",
+   "context": "jung / alt — EN: young / old · FR: jeune / vieuxWir waren damals jung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vieuxWir",
+   "context": "jung / alt — EN: young / old · FR: jeune / vieuxWir waren damals jung.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "likeable",
+   "context": "sympathisch — EN: likeable · FR: sympathiqueSie ist sehr sympathisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sympathiqueSie",
+   "context": "sympathisch — EN: likeable · FR: sympathiqueSie ist sehr sympathisch.",
+   "en": "she",
+   "lemma": ""
+  },
+  {
+   "form": "friendly",
+   "context": "freundlich — EN: friendly · FR: aimableDer Nachbar ist sehr freundlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aimableDer",
+   "context": "freundlich — EN: friendly · FR: aimableDer Nachbar ist sehr freundlich.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "recognise",
+   "context": "erkennen — EN: to recognise · FR: reconnaîtreIch habe dich nicht erkannt!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reconnaîtreIch",
+   "context": "erkennen — EN: to recognise · FR: reconnaîtreIch habe dich nicht erkannt!",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "receive",
+   "context": "bekommen — EN: to get, receive · FR: recevoirIch habe einen Brief bekommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "recevoirIch",
+   "context": "bekommen — EN: to get, receive · FR: recevoirIch habe einen Brief bekommen.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "forget",
+   "context": "vergessen — EN: to forget · FR: oublierIch habe deinen Namen vergessen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "oublierIch",
+   "context": "vergessen — EN: to forget · FR: oublierIch habe deinen Namen vergessen.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "back",
+   "context": "damals / früher — EN: back then / in the past · FR: à l'époque / autrefoisDamals war alles anders.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "then",
+   "context": "damals / früher — EN: back then / in the past · FR: à l'époque / autrefoisDamals war alles anders.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'époque",
+   "context": "damals / früher — EN: back then / in the past · FR: à l'époque / autrefoisDamals war alles anders.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "autrefoisDamals",
+   "context": "damals / früher — EN: back then / in the past · FR: à l'époque / autrefoisDamals war alles anders.",
+   "en": "back then",
+   "lemma": ""
+  },
+  {
+   "form": "verändern",
+   "context": "sich verändern — EN: to change · FR: changerDu hast dich gar nicht verändert!",
+   "en": "to change",
+   "lemma": ""
+  },
+  {
+   "form": "change",
+   "context": "sich verändern — EN: to change · FR: changerDu hast dich gar nicht verändert!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "changerDu",
+   "context": "sich verändern — EN: to change · FR: changerDu hast dich gar nicht verändert!",
+   "en": "you",
+   "lemma": ""
+  },
+  {
+   "form": "dunkle",
+   "context": "Er hat kurze, dunkle Haare.",
+   "en": "dark",
+   "lemma": "dunkel"
+  },
+  {
+   "form": "sieht",
+   "context": "Sie sieht sehr jung aus.",
+   "en": "looks; sees",
+   "lemma": "aussehen"
+  },
+  {
+   "form": "sportlich",
+   "context": "Er ist groß und sportlich.",
+   "en": "sporty",
+   "lemma": ""
+  },
+  {
+   "form": "Damals",
+   "context": "Damals hatten wir kein Auto.",
+   "en": "back then",
+   "lemma": ""
+  },
+  {
+   "form": "schüchtern",
+   "context": "Als Kind war ich sehr schüchtern.",
+   "en": "shy",
+   "lemma": ""
+  },
+  {
+   "form": "staunen",
+   "context": "staunen",
+   "en": "to be amazed",
+   "lemma": ""
+  },
+  {
+   "form": "gibt's",
+   "context": "Das gibt's doch nicht!",
+   "en": "there is",
+   "lemma": "geben"
+  },
+  {
+   "form": "überhaupt",
+   "context": "Du hast dich überhaupt nicht verändert.",
+   "en": "at all",
+   "lemma": ""
+  },
+  {
+   "form": "Rosa",
+   "context": "Rosa: Schau mal, das Foto von 2005!",
+   "en": "Rosa (name); pink",
+   "lemma": ""
+  },
+  {
+   "form": "Pit",
+   "context": "Pit: Ist das Markus? Der hatte doch keinen Bauch!",
+   "en": "Pit (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Markus",
+   "context": "Pit: Ist das Markus? Der hatte doch keinen Bauch!",
+   "en": "Markus (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Stimmt",
+   "context": "Pit: Stimmt. Aber du hast dich gar nicht verändert!",
+   "en": "(that's) right",
+   "lemma": "stimmen"
+  },
+  {
+   "form": "Aussehen",
+   "context": "Beschreiben Sie eine Person: Wie sieht sie heute aus und wie war sie früher? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie war und hatte mindestens dreimal. • Beschreiben Sie das Aussehen mit zwei Adjektiven. • Schreiben Sie, was sich verändert hat.",
+   "en": "appearance; looks",
+   "lemma": "das Aussehen"
+  },
+  {
+   "form": "Adjektiven",
+   "context": "Beschreiben Sie eine Person: Wie sieht sie heute aus und wie war sie früher? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie war und hatte mindestens dreimal. • Beschreiben Sie das Aussehen mit zwei Adjektiven. • Schreiben Sie, was sich verändert hat.",
+   "en": "adjectives",
+   "lemma": "das Adjektiv"
+  }
+ ]
+}
