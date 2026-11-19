@@ -36,6 +36,19 @@ export type ApplicationReceipt = { reference: string | null; status: Application
 
 type Ref = { id: string; code: string; name: string };
 
+export type MatchVia = 'email' | 'phone' | 'name';
+
+/** Who else the applicant may be: earlier applications and student records (same email, phone or name). */
+export type ApplicationMatches = {
+  applications: { id: string; reference: string; status: ApplicationStatus; createdAt: string; via: MatchVia[] }[];
+  students: {
+    id: string; studentCode: string; name: string; email: string; status: string;
+    /** The account made for this applicant's own email (by the website form). */
+    own: boolean; via: MatchVia[]; lastLoginAt: string | null;
+    enrollments: { level: string; intake: string; status: string }[];
+  }[];
+};
+
 export type ApplicationRow = {
   id: string; reference: string; firstName: string; lastName: string; email: string; phone: string | null;
   levelId: string | null; intakeId: string | null; campusId: string | null; shift: Shift | null;
@@ -47,6 +60,7 @@ export type ApplicationRow = {
   campus: Ref | null;
   reviewedBy: { id: string; firstName: string; lastName: string } | null;
   student: { id: string; studentCode: string; status: string } | null;
+  matches?: ApplicationMatches | null;
 };
 
 export type ApplicationHistoryEntry = {
@@ -84,3 +98,7 @@ export type StudentFromApplication = {
   studentId: string; studentCode: string; accountCreated: boolean; enrollmentId: string | null; status: ApplicationStatus;
   invite: { emailQueued: boolean; emailConfigured: boolean; expiresAt: string; setupUrl?: string } | null;
 };
+
+export type AdmitRequest = { levelId: string; intakeId: string; campusId: string; classGroupId?: string; studentId?: string; windowOverrideReason?: string };
+export type AdmitResult = StudentFromApplication & { alreadyEnrolled: boolean };
+export type BulkStatusResult = { changed: string[]; skipped: { id: string; reference: string; reason: string }[] };
