@@ -1,0 +1,665 @@
+{
+ "level": "A2",
+ "lesson": 14,
+ "title": "Post und Telekommunikation — Es werden fleißig Päckchen gepackt",
+ "lines": [
+  {
+   "de": "Auf der Post etwas verschicken und beschreiben, was gemacht wird.",
+   "en": "Send something at the post office and describe what is done."
+  },
+  {
+   "de": "Textsorte: Zeitungsmeldung · Gebrauchsanweisung",
+   "en": "Text type: Newspaper report · Instructions for use"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Lesen Teil 4 (Anweisungen); telc A2 Lesen",
+   "en": "Exam link: Goethe A2 Reading part 4 (instructions); telc A2 Reading"
+  },
+  {
+   "de": "ein Päckchen oder einen Brief verschicken",
+   "en": "send a small parcel or a letter"
+  },
+  {
+   "de": "eine Gebrauchsanweisung verstehen",
+   "en": "understand instructions for use"
+  },
+  {
+   "de": "das Passiv im Präsens bilden und verstehen",
+   "en": "form and understand the passive (Passiv) in the present tense"
+  },
+  {
+   "de": "Grammatik: Passiv Präsens",
+   "en": "Grammar: Present passive (Passiv Präsens)"
+  },
+  {
+   "de": "Im Passiv ist wichtig, WAS gemacht wird — nicht wer es macht. Man bildet es mit werden (konjugiert) + Partizip II am Satzende. Das Passiv steht oft in Anweisungen, Berichten und Beschreibungen.",
+   "en": "In the passive, what matters is WHAT is done — not who does it. You form it with werden (conjugated) + past participle (Partizip II) at the end of the sentence. The passive is often used in instructions, reports and descriptions."
+  },
+  {
+   "de": "Aktiv",
+   "en": "Active"
+  },
+  {
+   "de": "Passiv Präsens",
+   "en": "Present passive"
+  },
+  {
+   "de": "Man packt das Päckchen.",
+   "en": "Someone packs the small parcel."
+  },
+  {
+   "de": "Das Päckchen wird gepackt.",
+   "en": "The small parcel is packed."
+  },
+  {
+   "de": "Die Mitarbeiter sortieren die Briefe.",
+   "en": "The staff sort the letters."
+  },
+  {
+   "de": "Die Briefe werden sortiert.",
+   "en": "The letters are sorted."
+  },
+  {
+   "de": "Man schickt das Paket am Montag.",
+   "en": "Someone sends the parcel on Monday."
+  },
+  {
+   "de": "Das Paket wird am Montag geschickt.",
+   "en": "The parcel is sent on Monday."
+  },
+  {
+   "de": "Man darf das nicht öffnen.",
+   "en": "You must not open that."
+  },
+  {
+   "de": "Das darf nicht geöffnet werden.",
+   "en": "That must not be opened."
+  },
+  {
+   "de": "Vor Weihnachten werden fleißig Päckchen gepackt.Plural: werden + Partizip II",
+   "en": "Before Christmas, small parcels are busily packed. — Plural: werden + past participle"
+  },
+  {
+   "de": "Das Formular wird am Schalter ausgefüllt.Singular: wird + Partizip II",
+   "en": "The form is filled in at the counter. — Singular: wird + past participle"
+  },
+  {
+   "de": "Hier werden keine Pakete angenommen.Passiv ohne Person",
+   "en": "No parcels are accepted here. — Passive without a person"
+  },
+  {
+   "de": "Tipp: Wer es macht, kann man mit von + Dativ nennen: Die Briefe werden von den Mitarbeitern sortiert. Meistens lässt man das aber weg.",
+   "en": "Tip: You can say who does it with von + dative (Dativ): The letters are sorted by the staff. But usually you leave this out."
+  },
+  {
+   "de": "das Päckchen, - — EN: small parcel · FR: le petit colisIch möchte ein Päckchen nach Ruanda schicken.",
+   "en": "Example: I would like to send a small parcel to Rwanda."
+  },
+  {
+   "de": "das Paket, -e — EN: parcel · FR: le colisDas Paket ist zu schwer.",
+   "en": "Example: The parcel is too heavy."
+  },
+  {
+   "de": "der Brief, -e — EN: letter · FR: la lettreDer Brief kostet 85 Cent.",
+   "en": "Example: The letter costs 85 cents."
+  },
+  {
+   "de": "die Briefmarke, -n — EN: stamp · FR: le timbreIch brauche noch zwei Briefmarken.",
+   "en": "Example: I still need two stamps."
+  },
+  {
+   "de": "der Umschlag, ¨-e — EN: envelope · FR: l'enveloppeSchreiben Sie die Adresse auf den Umschlag.",
+   "en": "Example: Write the address on the envelope."
+  },
+  {
+   "de": "die Adresse, -n — EN: address · FR: l'adresseDie Adresse ist leider falsch.",
+   "en": "Example: Unfortunately, the address is wrong."
+  },
+  {
+   "de": "der Absender, - — EN: sender · FR: l'expéditeurVergessen Sie den Absender nicht.",
+   "en": "Example: Don't forget the sender's address."
+  },
+  {
+   "de": "verschicken — EN: to send off · FR: envoyerDas Paket wird morgen verschickt.",
+   "en": "Example: The parcel will be sent off tomorrow."
+  },
+  {
+   "de": "der Schalter, - — EN: counter · FR: le guichetGehen Sie bitte zu Schalter drei.",
+   "en": "Example: Please go to counter three."
+  },
+  {
+   "de": "das Formular, -e — EN: form · FR: le formulaireFüllen Sie bitte dieses Formular aus.",
+   "en": "Example: Please fill in this form."
+  },
+  {
+   "de": "ankommen (kam an) — EN: to arrive · FR: arriverWann kommt das Paket an?",
+   "en": "Example: When will the parcel arrive?"
+  },
+  {
+   "de": "die Sendung, -en — EN: shipment, item sent · FR: l'envoiSie können Ihre Sendung online verfolgen.",
+   "en": "Example: You can track your shipment online."
+  },
+  {
+   "de": "auf der Post",
+   "en": "At the post office"
+  },
+  {
+   "de": "Ich möchte dieses Päckchen nach … schicken.",
+   "en": "I would like to send this small parcel to …"
+  },
+  {
+   "de": "Wie lange dauert es?",
+   "en": "How long does it take?"
+  },
+  {
+   "de": "eine Anweisung verstehen",
+   "en": "Understanding an instruction"
+  },
+  {
+   "de": "Zuerst wird … ausgefüllt.",
+   "en": "First, … is filled in."
+  },
+  {
+   "de": "Danach wird das Paket gewogen.",
+   "en": "Then the parcel is weighed."
+  },
+  {
+   "de": "Zum Schluss wird alles abgegeben.",
+   "en": "Finally, everything is handed in."
+  },
+  {
+   "de": "Muss ich hier etwas eintragen?",
+   "en": "Do I have to enter anything here?"
+  },
+  {
+   "de": "Brauche ich dafür ein Formular?",
+   "en": "Do I need a form for that?"
+  },
+  {
+   "de": "Können Sie mir das bitte zeigen?",
+   "en": "Could you show me that, please?"
+  },
+  {
+   "de": "Dialog: Am Postschalter",
+   "en": "Dialogue: At the post office counter"
+  },
+  {
+   "de": "Kunde: Guten Tag. Ich möchte dieses Päckchen nach Kigali schicken.",
+   "en": "Customer: Hello. I would like to send this small parcel to Kigali."
+  },
+  {
+   "de": "Mitarbeiterin: Gern. Dafür wird ein Formular ausgefüllt. Hier bitte.",
+   "en": "Clerk: Of course. For that, a form is filled in. Here you are."
+  },
+  {
+   "de": "Kunde: Muss ich auch den Inhalt angeben?",
+   "en": "Customer: Do I also have to state the contents?"
+  },
+  {
+   "de": "Mitarbeiterin: Ja, der Inhalt wird immer eingetragen. Und der Absender nicht vergessen!",
+   "en": "Clerk: Yes, the contents are always entered. And don't forget the sender's address!"
+  },
+  {
+   "de": "Kunde: Alles klar. Wie lange dauert es ungefähr?",
+   "en": "Customer: All right. About how long does it take?"
+  },
+  {
+   "de": "Mitarbeiterin: Etwa zwei Wochen. Pakete werden einmal pro Woche verschickt.",
+   "en": "Clerk: About two weeks. Parcels are sent off once a week."
+  },
+  {
+   "de": "Ich möchte ein Päckchen nach Ruanda schicken.",
+   "en": "I would like to send a small parcel to Rwanda."
+  },
+  {
+   "de": "Das Paket ist zu schwer.",
+   "en": "The parcel is too heavy."
+  },
+  {
+   "de": "Der Brief kostet 85 Cent.",
+   "en": "The letter costs 85 cents."
+  },
+  {
+   "de": "Ich brauche noch zwei Briefmarken.",
+   "en": "I still need two stamps."
+  },
+  {
+   "de": "Schreiben Sie die Adresse auf den Umschlag.",
+   "en": "Write the address on the envelope."
+  },
+  {
+   "de": "Die Adresse ist leider falsch.",
+   "en": "Unfortunately, the address is wrong."
+  },
+  {
+   "de": "Vergessen Sie den Absender nicht.",
+   "en": "Don't forget the sender's address."
+  },
+  {
+   "de": "Das Paket wird morgen verschickt.",
+   "en": "The parcel will be sent off tomorrow."
+  },
+  {
+   "de": "Gehen Sie bitte zu Schalter drei.",
+   "en": "Please go to counter three."
+  },
+  {
+   "de": "Füllen Sie bitte dieses Formular aus.",
+   "en": "Please fill in this form."
+  },
+  {
+   "de": "Wann kommt das Paket an?",
+   "en": "When will the parcel arrive?"
+  },
+  {
+   "de": "Sie können Ihre Sendung online verfolgen.",
+   "en": "You can track your shipment online."
+  },
+  {
+   "de": "Das Päckchen ___ heute noch verschickt. (werden, Singular)",
+   "en": "The small parcel ___ sent off later today. (werden, singular)"
+  },
+  {
+   "de": "Aktiv: „Man sortiert die Briefe.\" → Passiv:",
+   "en": "Active: “Someone sorts the letters.” → Passive:"
+  },
+  {
+   "de": "Vor Weihnachten ___ viele Päckchen gepackt. (werden, Plural)",
+   "en": "Before Christmas, many small parcels ___ packed. (werden, plural)"
+  },
+  {
+   "de": "Wie nennt man die Person, die das Paket schickt?",
+   "en": "What do you call the person who sends the parcel?"
+  },
+  {
+   "de": "Das Formular ___ am Schalter ausgefüllt. (werden)",
+   "en": "The form ___ filled in at the counter. (werden)"
+  },
+  {
+   "de": "Schreiben Sie eine kurze Anleitung: Wie schickt man ein Päckchen? Umfang: 40–60 Wörter Checkliste: • Nennen Sie drei Schritte in der richtigen Reihenfolge. • Benutzen Sie mindestens dreimal das Passiv (wird / werden + Partizip). • Schreiben Sie zum Schluss, wie lange es dauert.",
+   "en": "Write short instructions: How do you send a small parcel? Length: 40–60 words Checklist: • Name three steps in the right order. • Use the passive at least three times (wird / werden + participle). • At the end, write how long it takes."
+  },
+  {
+   "de": "Passiv Präsens Singular: wird + Partizip II.",
+   "en": "Present passive, singular: wird + past participle (Partizip II)."
+  },
+  {
+   "de": "Passiv = werden + Partizip II.",
+   "en": "Passive = werden + past participle (Partizip II)."
+  },
+  {
+   "de": "Das Subjekt steht im Plural → werden.",
+   "en": "The subject is plural → werden."
+  },
+  {
+   "de": "Der Absender schickt, der Empfänger bekommt.",
+   "en": "The sender sends, the recipient receives."
+  },
+  {
+   "de": "das Formular ist Singular → wird.",
+   "en": "das Formular is singular → wird."
+  }
+ ],
+ "forms": [
+  {
+   "form": "verschicken",
+   "context": "Auf der Post etwas verschicken und beschreiben, was gemacht wird.",
+   "en": "to send (off)",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitungsmeldung",
+   "context": "Textsorte: Zeitungsmeldung · Gebrauchsanweisung",
+   "en": "newspaper report",
+   "lemma": "die Zeitungsmeldung"
+  },
+  {
+   "form": "Gebrauchsanweisung",
+   "context": "Textsorte: Zeitungsmeldung · Gebrauchsanweisung",
+   "en": "instructions for use",
+   "lemma": "die Gebrauchsanweisung"
+  },
+  {
+   "form": "Päckchen",
+   "context": "ein Päckchen oder einen Brief verschicken",
+   "en": "small parcel",
+   "lemma": "das Päckchen"
+  },
+  {
+   "form": "Passiv",
+   "context": "das Passiv im Präsens bilden und verstehen",
+   "en": "passive (voice)",
+   "lemma": "das Passiv"
+  },
+  {
+   "form": "konjugiert",
+   "context": "Im Passiv ist wichtig, WAS gemacht wird — nicht wer es macht. Man bildet es mit werden (konjugiert) + Partizip II am Satzende. Das Passiv steht oft in Anweisungen, Berichten und Beschreibungen.",
+   "en": "conjugated",
+   "lemma": "konjugieren"
+  },
+  {
+   "form": "Beschreibungen",
+   "context": "Im Passiv ist wichtig, WAS gemacht wird — nicht wer es macht. Man bildet es mit werden (konjugiert) + Partizip II am Satzende. Das Passiv steht oft in Anweisungen, Berichten und Beschreibungen.",
+   "en": "descriptions",
+   "lemma": "die Beschreibung"
+  },
+  {
+   "form": "Aktiv",
+   "context": "Aktiv",
+   "en": "active (voice)",
+   "lemma": "das Aktiv"
+  },
+  {
+   "form": "packt",
+   "context": "Man packt das Päckchen.",
+   "en": "packs",
+   "lemma": "packen"
+  },
+  {
+   "form": "gepackt",
+   "context": "Das Päckchen wird gepackt.",
+   "en": "packed",
+   "lemma": "packen"
+  },
+  {
+   "form": "sortieren",
+   "context": "Die Mitarbeiter sortieren die Briefe.",
+   "en": "sort, to sort",
+   "lemma": ""
+  },
+  {
+   "form": "Briefe",
+   "context": "Die Mitarbeiter sortieren die Briefe.",
+   "en": "letters",
+   "lemma": "der Brief"
+  },
+  {
+   "form": "sortiert",
+   "context": "Die Briefe werden sortiert.",
+   "en": "sorted",
+   "lemma": "sortieren"
+  },
+  {
+   "form": "schickt",
+   "context": "Man schickt das Paket am Montag.",
+   "en": "sends",
+   "lemma": "schicken"
+  },
+  {
+   "form": "Paket",
+   "context": "Man schickt das Paket am Montag.",
+   "en": "parcel",
+   "lemma": "das Paket"
+  },
+  {
+   "form": "geschickt",
+   "context": "Das Paket wird am Montag geschickt.",
+   "en": "sent",
+   "lemma": "schicken"
+  },
+  {
+   "form": "öffnen",
+   "context": "Man darf das nicht öffnen.",
+   "en": "to open",
+   "lemma": ""
+  },
+  {
+   "form": "Weihnachten",
+   "context": "Vor Weihnachten werden fleißig Päckchen gepackt.Plural: werden + Partizip II",
+   "en": "Christmas",
+   "lemma": "das Weihnachten"
+  },
+  {
+   "form": "fleißig",
+   "context": "Vor Weihnachten werden fleißig Päckchen gepackt.Plural: werden + Partizip II",
+   "en": "busily; hard-working",
+   "lemma": ""
+  },
+  {
+   "form": "Schalter",
+   "context": "Das Formular wird am Schalter ausgefüllt.Singular: wird + Partizip II",
+   "en": "counter",
+   "lemma": "der Schalter"
+  },
+  {
+   "form": "ausgefüllt",
+   "context": "Das Formular wird am Schalter ausgefüllt.Singular: wird + Partizip II",
+   "en": "filled in",
+   "lemma": "ausfüllen"
+  },
+  {
+   "form": "Pakete",
+   "context": "Hier werden keine Pakete angenommen.Passiv ohne Person",
+   "en": "parcels",
+   "lemma": "das Paket"
+  },
+  {
+   "form": "angenommen",
+   "context": "Hier werden keine Pakete angenommen.Passiv ohne Person",
+   "en": "accepted",
+   "lemma": "annehmen"
+  },
+  {
+   "form": "lässt",
+   "context": "Tipp: Wer es macht, kann man mit von + Dativ nennen: Die Briefe werden von den Mitarbeitern sortiert. Meistens lässt man das aber weg.",
+   "en": "(… weg) leaves out; lets",
+   "lemma": "lassen"
+  },
+  {
+   "form": "parcel",
+   "context": "das Päckchen, - — EN: small parcel · FR: le petit colisIch möchte ein Päckchen nach Ruanda schicken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "petit",
+   "context": "das Päckchen, - — EN: small parcel · FR: le petit colisIch möchte ein Päckchen nach Ruanda schicken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "colisIch",
+   "context": "das Päckchen, - — EN: small parcel · FR: le petit colisIch möchte ein Päckchen nach Ruanda schicken.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "colisDas",
+   "context": "das Paket, -e — EN: parcel · FR: le colisDas Paket ist zu schwer.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "lettreDer",
+   "context": "der Brief, -e — EN: letter · FR: la lettreDer Brief kostet 85 Cent.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "Cent",
+   "context": "der Brief, -e — EN: letter · FR: la lettreDer Brief kostet 85 Cent.",
+   "en": "cent, cents",
+   "lemma": "der Cent"
+  },
+  {
+   "form": "Umschlag",
+   "context": "der Umschlag, ¨-e — EN: envelope · FR: l'enveloppeSchreiben Sie die Adresse auf den Umschlag.",
+   "en": "envelope",
+   "lemma": "der Umschlag"
+  },
+  {
+   "form": "envelope",
+   "context": "der Umschlag, ¨-e — EN: envelope · FR: l'enveloppeSchreiben Sie die Adresse auf den Umschlag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'enveloppeSchreiben",
+   "context": "der Umschlag, ¨-e — EN: envelope · FR: l'enveloppeSchreiben Sie die Adresse auf den Umschlag.",
+   "en": "Schreiben = write",
+   "lemma": "schreiben"
+  },
+  {
+   "form": "Adresse",
+   "context": "der Umschlag, ¨-e — EN: envelope · FR: l'enveloppeSchreiben Sie die Adresse auf den Umschlag.",
+   "en": "address",
+   "lemma": "die Adresse"
+  },
+  {
+   "form": "address",
+   "context": "die Adresse, -n — EN: address · FR: l'adresseDie Adresse ist leider falsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'adresseDie",
+   "context": "die Adresse, -n — EN: address · FR: l'adresseDie Adresse ist leider falsch.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "falsch",
+   "context": "die Adresse, -n — EN: address · FR: l'adresseDie Adresse ist leider falsch.",
+   "en": "wrong",
+   "lemma": ""
+  },
+  {
+   "form": "Absender",
+   "context": "der Absender, - — EN: sender · FR: l'expéditeurVergessen Sie den Absender nicht.",
+   "en": "sender",
+   "lemma": "der Absender"
+  },
+  {
+   "form": "sender",
+   "context": "der Absender, - — EN: sender · FR: l'expéditeurVergessen Sie den Absender nicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'expéditeurVergessen",
+   "context": "der Absender, - — EN: sender · FR: l'expéditeurVergessen Sie den Absender nicht.",
+   "en": "Vergessen = forget",
+   "lemma": "vergessen"
+  },
+  {
+   "form": "send",
+   "context": "verschicken — EN: to send off · FR: envoyerDas Paket wird morgen verschickt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "envoyerDas",
+   "context": "verschicken — EN: to send off · FR: envoyerDas Paket wird morgen verschickt.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "verschickt",
+   "context": "verschicken — EN: to send off · FR: envoyerDas Paket wird morgen verschickt.",
+   "en": "sent (off)",
+   "lemma": "verschicken"
+  },
+  {
+   "form": "guichetGehen",
+   "context": "der Schalter, - — EN: counter · FR: le guichetGehen Sie bitte zu Schalter drei.",
+   "en": "Gehen = go",
+   "lemma": "gehen"
+  },
+  {
+   "form": "arriverWann",
+   "context": "ankommen (kam an) — EN: to arrive · FR: arriverWann kommt das Paket an?",
+   "en": "Wann = when",
+   "lemma": ""
+  },
+  {
+   "form": "Sendung",
+   "context": "die Sendung, -en — EN: shipment, item sent · FR: l'envoiSie können Ihre Sendung online verfolgen.",
+   "en": "shipment; (TV) programme",
+   "lemma": "die Sendung"
+  },
+  {
+   "form": "shipment",
+   "context": "die Sendung, -en — EN: shipment, item sent · FR: l'envoiSie können Ihre Sendung online verfolgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sent",
+   "context": "die Sendung, -en — EN: shipment, item sent · FR: l'envoiSie können Ihre Sendung online verfolgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'envoiSie",
+   "context": "die Sendung, -en — EN: shipment, item sent · FR: l'envoiSie können Ihre Sendung online verfolgen.",
+   "en": "Sie = you (polite)",
+   "lemma": ""
+  },
+  {
+   "form": "online",
+   "context": "die Sendung, -en — EN: shipment, item sent · FR: l'envoiSie können Ihre Sendung online verfolgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verfolgen",
+   "context": "die Sendung, -en — EN: shipment, item sent · FR: l'envoiSie können Ihre Sendung online verfolgen.",
+   "en": "to track, to follow",
+   "lemma": ""
+  },
+  {
+   "form": "gewogen",
+   "context": "Danach wird das Paket gewogen.",
+   "en": "weighed",
+   "lemma": "wiegen"
+  },
+  {
+   "form": "abgegeben",
+   "context": "Zum Schluss wird alles abgegeben.",
+   "en": "handed in",
+   "lemma": "abgeben"
+  },
+  {
+   "form": "eintragen",
+   "context": "Muss ich hier etwas eintragen?",
+   "en": "to enter, to fill in",
+   "lemma": ""
+  },
+  {
+   "form": "Postschalter",
+   "context": "Dialog: Am Postschalter",
+   "en": "post office counter",
+   "lemma": "der Postschalter"
+  },
+  {
+   "form": "Inhalt",
+   "context": "Kunde: Muss ich auch den Inhalt angeben?",
+   "en": "contents",
+   "lemma": "der Inhalt"
+  },
+  {
+   "form": "eingetragen",
+   "context": "Mitarbeiterin: Ja, der Inhalt wird immer eingetragen. Und der Absender nicht vergessen!",
+   "en": "entered, filled in",
+   "lemma": "eintragen"
+  },
+  {
+   "form": "Anleitung",
+   "context": "Schreiben Sie eine kurze Anleitung: Wie schickt man ein Päckchen? Umfang: 40–60 Wörter Checkliste: • Nennen Sie drei Schritte in der richtigen Reihenfolge. • Benutzen Sie mindestens dreimal das Passiv (wird / werden + Partizip). • Schreiben Sie zum Schluss, wie lange es dauert.",
+   "en": "instructions, guide",
+   "lemma": "die Anleitung"
+  },
+  {
+   "form": "Schritte",
+   "context": "Schreiben Sie eine kurze Anleitung: Wie schickt man ein Päckchen? Umfang: 40–60 Wörter Checkliste: • Nennen Sie drei Schritte in der richtigen Reihenfolge. • Benutzen Sie mindestens dreimal das Passiv (wird / werden + Partizip). • Schreiben Sie zum Schluss, wie lange es dauert.",
+   "en": "steps",
+   "lemma": "der Schritt"
+  },
+  {
+   "form": "Reihenfolge",
+   "context": "Schreiben Sie eine kurze Anleitung: Wie schickt man ein Päckchen? Umfang: 40–60 Wörter Checkliste: • Nennen Sie drei Schritte in der richtigen Reihenfolge. • Benutzen Sie mindestens dreimal das Passiv (wird / werden + Partizip). • Schreiben Sie zum Schluss, wie lange es dauert.",
+   "en": "order, sequence",
+   "lemma": "die Reihenfolge"
+  }
+ ]
+}
