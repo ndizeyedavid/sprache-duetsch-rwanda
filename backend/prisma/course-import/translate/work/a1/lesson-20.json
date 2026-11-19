@@ -1,0 +1,801 @@
+{
+ "level": "A1",
+ "lesson": 20,
+ "title": "Zu Hause — Komm bitte sofort runter!",
+ "lines": [
+  {
+   "de": "Jemanden auffordern und über Personen sprechen.",
+   "en": "Ask someone to do something and talk about people."
+  },
+  {
+   "de": "Textsorte: Gespräch zu Hause · Nachricht",
+   "en": "Text type: Conversation at home · Message"
+  },
+  {
+   "de": "jemanden auffordern (du und ihr)",
+   "en": "ask someone to do something (du and ihr)"
+  },
+  {
+   "de": "den Imperativ mit du und ihr bilden",
+   "en": "form the imperative (Imperativ) with du and ihr"
+  },
+  {
+   "de": "Personalpronomen im Akkusativ verwenden",
+   "en": "use personal pronouns in the accusative (Akkusativ)"
+  },
+  {
+   "de": "Grammatik: Der Imperativ mit du und ihr",
+   "en": "Grammar: the imperative (Imperativ) with du and ihr"
+  },
+  {
+   "de": "Für du nimmt man den Verbstamm ohne Endung und ohne du. Für ihr nimmt man die normale ihr-Form ohne ihr.",
+   "en": "For du, you use the verb stem without an ending and without du. For ihr, you use the normal ihr form without ihr."
+  },
+  {
+   "de": "Komm!",
+   "en": "Come!"
+  },
+  {
+   "de": "Kommt!",
+   "en": "Come! (you all)"
+  },
+  {
+   "de": "decken",
+   "en": "to set (the table)"
+  },
+  {
+   "de": "Deck den Tisch!",
+   "en": "Set the table!"
+  },
+  {
+   "de": "Deckt den Tisch!",
+   "en": "Set the table! (you all)"
+  },
+  {
+   "de": "schlafen",
+   "en": "to sleep"
+  },
+  {
+   "de": "Schlaf gut!",
+   "en": "Sleep well!"
+  },
+  {
+   "de": "Schlaft gut!",
+   "en": "Sleep well! (you all)"
+  },
+  {
+   "de": "Vergiss das nicht!",
+   "en": "Don't forget that!"
+  },
+  {
+   "de": "Vergesst das nicht!",
+   "en": "Don't forget that! (you all)"
+  },
+  {
+   "de": "Räum auf!",
+   "en": "Tidy up!"
+  },
+  {
+   "de": "Räumt auf!",
+   "en": "Tidy up! (you all)"
+  },
+  {
+   "de": "sein / haben",
+   "en": "to be / to have"
+  },
+  {
+   "de": "Sei ruhig! / Hab Geduld!",
+   "en": "Be quiet! / Be patient!"
+  },
+  {
+   "de": "Seid ruhig! / Habt Geduld!",
+   "en": "Be quiet! / Be patient! (you all)"
+  },
+  {
+   "de": "Komm bitte sofort runter!du-Form ohne Endung",
+   "en": "Please come down right now! du form without an ending"
+  },
+  {
+   "de": "Kinder, räumt bitte euer Zimmer auf!ihr-Form mit -t",
+   "en": "Children, please tidy up your room! ihr form with -t"
+  },
+  {
+   "de": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "Tip: Verbs with the vowel change e → i keep it: du gibst → Gib! (Give!), du vergisst → Vergiss! (Forget!) But a → ä loses the umlaut: du schläfst → Schlaf! (Sleep!)"
+  },
+  {
+   "de": "Grammatik: Personalpronomen im Akkusativ",
+   "en": "Grammar: personal pronouns (Personalpronomen) in the accusative (Akkusativ)"
+  },
+  {
+   "de": "Das Akkusativpronomen ersetzt eine Person oder Sache im Akkusativ.",
+   "en": "The accusative pronoun replaces a person or thing in the accusative."
+  },
+  {
+   "de": "mich",
+   "en": "me"
+  },
+  {
+   "de": "dich",
+   "en": "you"
+  },
+  {
+   "de": "er / es / sie",
+   "en": "he / it / she"
+  },
+  {
+   "de": "ihn / es / sie",
+   "en": "him / it / her"
+  },
+  {
+   "de": "Ich komme um zehn an. Holst du mich bitte ab?ich → mich",
+   "en": "I'm arriving at ten. Can you pick me up, please? ich → mich"
+  },
+  {
+   "de": "Der Schlüssel? Ich habe ihn.der Schlüssel → ihn",
+   "en": "The key? I have it. der Schlüssel → ihn"
+  },
+  {
+   "de": "Tipp: Verwechseln Sie nicht mir (Dativ) und mich (Akkusativ): Hilf mir! — aber: Hol mich ab!",
+   "en": "Tip: Don't mix up mir (dative) and mich (accusative): Hilf mir! (Help me!) — but: Hol mich ab! (Pick me up!)"
+  },
+  {
+   "de": "sofort — EN: immediately · FR: tout de suiteKomm bitte sofort!",
+   "en": "Example: Please come right away!"
+  },
+  {
+   "de": "runterkommen — EN: to come down · FR: descendreKomm bitte runter!",
+   "en": "Example: Please come down!"
+  },
+  {
+   "de": "den Tisch decken — EN: to set the table · FR: mettre la tableDeck bitte den Tisch!",
+   "en": "Example: Please set the table!"
+  },
+  {
+   "de": "aufräumen — EN: to tidy up · FR: rangerRäum dein Zimmer auf!",
+   "en": "Example: Tidy up your room!"
+  },
+  {
+   "de": "abholen — EN: to pick up · FR: aller chercherHolst du mich bitte ab?",
+   "en": "Example: Can you pick me up, please?"
+  },
+  {
+   "de": "das Essen (Sg.) — EN: food, meal · FR: le repasDas Essen ist fertig!",
+   "en": "Example: The food is ready!"
+  },
+  {
+   "de": "fertig — EN: ready, finished · FR: prêt, finiBist du schon fertig?",
+   "en": "Example: Are you ready yet?"
+  },
+  {
+   "de": "warten auf — EN: to wait for · FR: attendreWir warten auf dich.",
+   "en": "Example: We're waiting for you."
+  },
+  {
+   "de": "sich beeilen — EN: to hurry · FR: se dépêcherBeeil dich bitte!",
+   "en": "Example: Please hurry up!"
+  },
+  {
+   "de": "nervös — EN: nervous · FR: nerveuxMach mich nicht nervös!",
+   "en": "Example: Don't make me nervous!"
+  },
+  {
+   "de": "gleich — EN: in a moment · FR: tout de suiteIch komme gleich!",
+   "en": "Example: I'm coming in a moment!"
+  },
+  {
+   "de": "noch einmal — EN: once again · FR: encore une foisSag das bitte noch einmal.",
+   "en": "Example: Please say that again."
+  },
+  {
+   "de": "auffordern",
+   "en": "asking someone to do something"
+  },
+  {
+   "de": "Komm bitte sofort runter!",
+   "en": "Please come down right now!"
+  },
+  {
+   "de": "Räum bitte dein Zimmer auf!",
+   "en": "Please tidy up your room!"
+  },
+  {
+   "de": "Beeil dich!",
+   "en": "Hurry up!"
+  },
+  {
+   "de": "Ja, ich komme gleich!",
+   "en": "Yes, I'm coming in a moment!"
+  },
+  {
+   "de": "Moment, ich bin noch nicht fertig.",
+   "en": "Just a moment, I'm not ready yet."
+  },
+  {
+   "de": "Okay, mache ich.",
+   "en": "OK, I'll do it."
+  },
+  {
+   "de": "um etwas bitten",
+   "en": "asking for something"
+  },
+  {
+   "de": "Holst du mich bitte ab?",
+   "en": "Can you pick me up, please?"
+  },
+  {
+   "de": "Dialog: Zu Hause am Abend",
+   "en": "Dialogue: At home in the evening"
+  },
+  {
+   "de": "Mutter: Lea, komm bitte sofort runter! Das Essen ist fertig.",
+   "en": "Mother: Lea, please come down right now! The food is ready."
+  },
+  {
+   "de": "Lea: Ja, ich komme gleich!",
+   "en": "Lea: Yes, I'm coming in a moment!"
+  },
+  {
+   "de": "Mutter: Und deck bitte noch den Tisch.",
+   "en": "Mother: And please set the table as well."
+  },
+  {
+   "de": "Lea: Okay. Holst du mich morgen vom Kurs ab?",
+   "en": "Lea: OK. Will you pick me up from my course tomorrow?"
+  },
+  {
+   "de": "Mutter: Ja, klar. Um wie viel Uhr?",
+   "en": "Mother: Yes, of course. At what time?"
+  },
+  {
+   "de": "Lea: Um sechs. Vergiss es bitte nicht!",
+   "en": "Lea: At six. Please don't forget!"
+  },
+  {
+   "de": "Komm bitte sofort!",
+   "en": "Please come right away!"
+  },
+  {
+   "de": "Komm bitte runter!",
+   "en": "Please come down!"
+  },
+  {
+   "de": "Deck bitte den Tisch!",
+   "en": "Please set the table!"
+  },
+  {
+   "de": "Räum dein Zimmer auf!",
+   "en": "Tidy up your room!"
+  },
+  {
+   "de": "Das Essen ist fertig!",
+   "en": "The food is ready!"
+  },
+  {
+   "de": "Bist du schon fertig?",
+   "en": "Are you ready yet?"
+  },
+  {
+   "de": "Wir warten auf dich.",
+   "en": "We're waiting for you."
+  },
+  {
+   "de": "Beeil dich bitte!",
+   "en": "Please hurry up!"
+  },
+  {
+   "de": "Mach mich nicht nervös!",
+   "en": "Don't make me nervous!"
+  },
+  {
+   "de": "Ich komme gleich!",
+   "en": "I'm coming in a moment!"
+  },
+  {
+   "de": "Sag das bitte noch einmal.",
+   "en": "Please say that again."
+  },
+  {
+   "de": "___ bitte sofort runter! (kommen, Imperativ du)",
+   "en": "Please ___ down right now! (kommen, imperative du)"
+  },
+  {
+   "de": "Imperativ ihr von „aufräumen\":",
+   "en": "ihr imperative of \"aufräumen\":"
+  },
+  {
+   "de": "Holst du ___ bitte ab? (ich, Akkusativ)",
+   "en": "Can you pick ___ up, please? (ich, accusative)"
+  },
+  {
+   "de": "Der Schlüssel? Ich habe ___.",
+   "en": "The key? I have ___."
+  },
+  {
+   "de": "Imperativ du von „vergessen\":",
+   "en": "du imperative of \"vergessen\":"
+  },
+  {
+   "de": "Schreiben Sie eine kurze Nachricht an Ihre Familie mit drei Bitten. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie dreimal den Imperativ mit du oder ihr. • Benutzen Sie einmal ein Akkusativpronomen (mich, dich, ihn …). • Schreiben Sie bitte in mindestens zwei Sätzen.",
+   "en": "Write a short message to your family with three requests. Length: 25–35 words Checklist: • Use the imperative with du or ihr three times. • Use an accusative pronoun once (mich, dich, ihn …). • Please write at least two sentences."
+  },
+  {
+   "de": "du-Imperativ: Verbstamm ohne Endung.",
+   "en": "du imperative: verb stem without an ending."
+  },
+  {
+   "de": "ihr-Form mit -t, Vorsilbe am Ende.",
+   "en": "ihr form with -t, prefix at the end."
+  },
+  {
+   "de": "ich → mich im Akkusativ.",
+   "en": "ich → mich in the accusative."
+  },
+  {
+   "de": "der Schlüssel → Akkusativ ihn.",
+   "en": "der Schlüssel (the key) → accusative ihn."
+  },
+  {
+   "de": "Der Vokalwechsel e → i bleibt im Imperativ.",
+   "en": "The vowel change e → i stays in the imperative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "auffordern",
+   "context": "Jemanden auffordern und über Personen sprechen.",
+   "en": "ask (to do something)",
+   "lemma": ""
+  },
+  {
+   "form": "nimmt",
+   "context": "Für du nimmt man den Verbstamm ohne Endung und ohne du. Für ihr nimmt man die normale ihr-Form ohne ihr.",
+   "en": "takes; uses",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "Verbstamm",
+   "context": "Für du nimmt man den Verbstamm ohne Endung und ohne du. Für ihr nimmt man die normale ihr-Form ohne ihr.",
+   "en": "verb stem",
+   "lemma": "der Verbstamm"
+  },
+  {
+   "form": "normale",
+   "context": "Für du nimmt man den Verbstamm ohne Endung und ohne du. Für ihr nimmt man die normale ihr-Form ohne ihr.",
+   "en": "normal",
+   "lemma": "normal"
+  },
+  {
+   "form": "ihr-Form",
+   "context": "Für du nimmt man den Verbstamm ohne Endung und ohne du. Für ihr nimmt man die normale ihr-Form ohne ihr.",
+   "en": "ihr form",
+   "lemma": "die ihr-Form"
+  },
+  {
+   "form": "Komm",
+   "context": "Komm!",
+   "en": "come! (du)",
+   "lemma": "kommen"
+  },
+  {
+   "form": "decken",
+   "context": "decken",
+   "en": "to set (the table); cover",
+   "lemma": ""
+  },
+  {
+   "form": "Deck",
+   "context": "Deck den Tisch!",
+   "en": "set! (du)",
+   "lemma": "decken"
+  },
+  {
+   "form": "Deckt",
+   "context": "Deckt den Tisch!",
+   "en": "set! (ihr)",
+   "lemma": "decken"
+  },
+  {
+   "form": "Schlaf",
+   "context": "Schlaf gut!",
+   "en": "sleep! (du)",
+   "lemma": "schlafen"
+  },
+  {
+   "form": "Schlaft",
+   "context": "Schlaft gut!",
+   "en": "sleep! (ihr)",
+   "lemma": "schlafen"
+  },
+  {
+   "form": "Vergiss",
+   "context": "Vergiss das nicht!",
+   "en": "forget! (du)",
+   "lemma": "vergessen"
+  },
+  {
+   "form": "Vergesst",
+   "context": "Vergesst das nicht!",
+   "en": "forget! (ihr)",
+   "lemma": "vergessen"
+  },
+  {
+   "form": "Räum",
+   "context": "Räum auf!",
+   "en": "tidy up! (du)",
+   "lemma": "aufräumen"
+  },
+  {
+   "form": "Räumt",
+   "context": "Räumt auf!",
+   "en": "tidy up! (ihr)",
+   "lemma": "aufräumen"
+  },
+  {
+   "form": "Hab",
+   "context": "Sei ruhig! / Hab Geduld!",
+   "en": "have! (du)",
+   "lemma": "haben"
+  },
+  {
+   "form": "Geduld",
+   "context": "Sei ruhig! / Hab Geduld!",
+   "en": "patience",
+   "lemma": "die Geduld"
+  },
+  {
+   "form": "Seid",
+   "context": "Seid ruhig! / Habt Geduld!",
+   "en": "be! (ihr)",
+   "lemma": "sein"
+  },
+  {
+   "form": "Habt",
+   "context": "Seid ruhig! / Habt Geduld!",
+   "en": "have! (ihr)",
+   "lemma": "haben"
+  },
+  {
+   "form": "runter",
+   "context": "Komm bitte sofort runter!du-Form ohne Endung",
+   "en": "down",
+   "lemma": ""
+  },
+  {
+   "form": "du-Form",
+   "context": "Komm bitte sofort runter!du-Form ohne Endung",
+   "en": "du form",
+   "lemma": "die du-Form"
+  },
+  {
+   "form": "räumt",
+   "context": "Kinder, räumt bitte euer Zimmer auf!ihr-Form mit -t",
+   "en": "tidy up! (ihr); tidies",
+   "lemma": "aufräumen"
+  },
+  {
+   "form": "euer",
+   "context": "Kinder, räumt bitte euer Zimmer auf!ihr-Form mit -t",
+   "en": "your (plural)",
+   "lemma": ""
+  },
+  {
+   "form": "Vokalwechsel",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "vowel change",
+   "lemma": "der Vokalwechsel"
+  },
+  {
+   "form": "behalten",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "keep",
+   "lemma": ""
+  },
+  {
+   "form": "gibst",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "(you) give",
+   "lemma": "geben"
+  },
+  {
+   "form": "Gib",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "give! (du)",
+   "lemma": "geben"
+  },
+  {
+   "form": "vergisst",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "(you) forget",
+   "lemma": "vergessen"
+  },
+  {
+   "form": "verliert",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "loses",
+   "lemma": "verlieren"
+  },
+  {
+   "form": "Umlaut",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "umlaut (ä, ö, ü)",
+   "lemma": "der Umlaut"
+  },
+  {
+   "form": "schläfst",
+   "context": "Tipp: Verben mit Vokalwechsel e → i behalten ihn: du gibst → Gib!, du vergisst → Vergiss! Aber a → ä verliert den Umlaut: du schläfst → Schlaf!",
+   "en": "(you) sleep",
+   "lemma": "schlafen"
+  },
+  {
+   "form": "Akkusativpronomen",
+   "context": "Das Akkusativpronomen ersetzt eine Person oder Sache im Akkusativ.",
+   "en": "accusative pronoun",
+   "lemma": "das Akkusativpronomen"
+  },
+  {
+   "form": "ersetzt",
+   "context": "Das Akkusativpronomen ersetzt eine Person oder Sache im Akkusativ.",
+   "en": "replaces",
+   "lemma": "ersetzen"
+  },
+  {
+   "form": "Holst",
+   "context": "Ich komme um zehn an. Holst du mich bitte ab?ich → mich",
+   "en": "(you) pick up",
+   "lemma": "abholen"
+  },
+  {
+   "form": "Verwechseln",
+   "context": "Tipp: Verwechseln Sie nicht mir (Dativ) und mich (Akkusativ): Hilf mir! — aber: Hol mich ab!",
+   "en": "mix up; confuse",
+   "lemma": "verwechseln"
+  },
+  {
+   "form": "Hilf",
+   "context": "Tipp: Verwechseln Sie nicht mir (Dativ) und mich (Akkusativ): Hilf mir! — aber: Hol mich ab!",
+   "en": "help! (du)",
+   "lemma": "helfen"
+  },
+  {
+   "form": "Hol",
+   "context": "Tipp: Verwechseln Sie nicht mir (Dativ) und mich (Akkusativ): Hilf mir! — aber: Hol mich ab!",
+   "en": "pick up!; fetch!",
+   "lemma": "abholen"
+  },
+  {
+   "form": "suiteKomm",
+   "context": "sofort — EN: immediately · FR: tout de suiteKomm bitte sofort!",
+   "en": "come! (du)",
+   "lemma": "kommen"
+  },
+  {
+   "form": "runterkommen",
+   "context": "runterkommen — EN: to come down · FR: descendreKomm bitte runter!",
+   "en": "to come down",
+   "lemma": ""
+  },
+  {
+   "form": "down",
+   "context": "runterkommen — EN: to come down · FR: descendreKomm bitte runter!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "descendreKomm",
+   "context": "runterkommen — EN: to come down · FR: descendreKomm bitte runter!",
+   "en": "come! (du)",
+   "lemma": "kommen"
+  },
+  {
+   "form": "set",
+   "context": "den Tisch decken — EN: to set the table · FR: mettre la tableDeck bitte den Tisch!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mettre",
+   "context": "den Tisch decken — EN: to set the table · FR: mettre la tableDeck bitte den Tisch!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tableDeck",
+   "context": "den Tisch decken — EN: to set the table · FR: mettre la tableDeck bitte den Tisch!",
+   "en": "set! (du)",
+   "lemma": "decken"
+  },
+  {
+   "form": "rangerRäum",
+   "context": "aufräumen — EN: to tidy up · FR: rangerRäum dein Zimmer auf!",
+   "en": "tidy up! (du)",
+   "lemma": "aufräumen"
+  },
+  {
+   "form": "abholen",
+   "context": "abholen — EN: to pick up · FR: aller chercherHolst du mich bitte ab?",
+   "en": "to pick up",
+   "lemma": ""
+  },
+  {
+   "form": "pick",
+   "context": "abholen — EN: to pick up · FR: aller chercherHolst du mich bitte ab?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chercherHolst",
+   "context": "abholen — EN: to pick up · FR: aller chercherHolst du mich bitte ab?",
+   "en": "(you) pick up",
+   "lemma": "abholen"
+  },
+  {
+   "form": "food",
+   "context": "das Essen (Sg.) — EN: food, meal · FR: le repasDas Essen ist fertig!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "meal",
+   "context": "das Essen (Sg.) — EN: food, meal · FR: le repasDas Essen ist fertig!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "repasDas",
+   "context": "das Essen (Sg.) — EN: food, meal · FR: le repasDas Essen ist fertig!",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "ready",
+   "context": "fertig — EN: ready, finished · FR: prêt, finiBist du schon fertig?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "finished",
+   "context": "fertig — EN: ready, finished · FR: prêt, finiBist du schon fertig?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prêt",
+   "context": "fertig — EN: ready, finished · FR: prêt, finiBist du schon fertig?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "finiBist",
+   "context": "fertig — EN: ready, finished · FR: prêt, finiBist du schon fertig?",
+   "en": "(you) are",
+   "lemma": "sein"
+  },
+  {
+   "form": "warten",
+   "context": "warten auf — EN: to wait for · FR: attendreWir warten auf dich.",
+   "en": "to wait",
+   "lemma": ""
+  },
+  {
+   "form": "wait",
+   "context": "warten auf — EN: to wait for · FR: attendreWir warten auf dich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "attendreWir",
+   "context": "warten auf — EN: to wait for · FR: attendreWir warten auf dich.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "beeilen",
+   "context": "sich beeilen — EN: to hurry · FR: se dépêcherBeeil dich bitte!",
+   "en": "to hurry",
+   "lemma": ""
+  },
+  {
+   "form": "hurry",
+   "context": "sich beeilen — EN: to hurry · FR: se dépêcherBeeil dich bitte!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dépêcherBeeil",
+   "context": "sich beeilen — EN: to hurry · FR: se dépêcherBeeil dich bitte!",
+   "en": "hurry! (du)",
+   "lemma": "beeilen"
+  },
+  {
+   "form": "nervös",
+   "context": "nervös — EN: nervous · FR: nerveuxMach mich nicht nervös!",
+   "en": "nervous",
+   "lemma": ""
+  },
+  {
+   "form": "nervous",
+   "context": "nervös — EN: nervous · FR: nerveuxMach mich nicht nervös!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nerveuxMach",
+   "context": "nervös — EN: nervous · FR: nerveuxMach mich nicht nervös!",
+   "en": "make! (du)",
+   "lemma": "machen"
+  },
+  {
+   "form": "once",
+   "context": "noch einmal — EN: once again · FR: encore une foisSag das bitte noch einmal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "again",
+   "context": "noch einmal — EN: once again · FR: encore une foisSag das bitte noch einmal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "encore",
+   "context": "noch einmal — EN: once again · FR: encore une foisSag das bitte noch einmal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "une",
+   "context": "noch einmal — EN: once again · FR: encore une foisSag das bitte noch einmal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "foisSag",
+   "context": "noch einmal — EN: once again · FR: encore une foisSag das bitte noch einmal.",
+   "en": "say! (du)",
+   "lemma": "sagen"
+  },
+  {
+   "form": "Beeil",
+   "context": "Beeil dich!",
+   "en": "hurry! (du)",
+   "lemma": "beeilen"
+  },
+  {
+   "form": "Lea",
+   "context": "Mutter: Lea, komm bitte sofort runter! Das Essen ist fertig.",
+   "en": "Lea (name)",
+   "lemma": ""
+  },
+  {
+   "form": "komm",
+   "context": "Mutter: Lea, komm bitte sofort runter! Das Essen ist fertig.",
+   "en": "come! (du)",
+   "lemma": "kommen"
+  },
+  {
+   "form": "deck",
+   "context": "Mutter: Und deck bitte noch den Tisch.",
+   "en": "set! (du)",
+   "lemma": "decken"
+  },
+  {
+   "form": "Mach",
+   "context": "Mach mich nicht nervös!",
+   "en": "make!; do! (du)",
+   "lemma": "machen"
+  },
+  {
+   "form": "Sag",
+   "context": "Sag das bitte noch einmal.",
+   "en": "say! (du)",
+   "lemma": "sagen"
+  },
+  {
+   "form": "Sätzen",
+   "context": "Schreiben Sie eine kurze Nachricht an Ihre Familie mit drei Bitten. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie dreimal den Imperativ mit du oder ihr. • Benutzen Sie einmal ein Akkusativpronomen (mich, dich, ihn …). • Schreiben Sie bitte in mindestens zwei Sätzen.",
+   "en": "sentences",
+   "lemma": "der Satz"
+  }
+ ]
+}
