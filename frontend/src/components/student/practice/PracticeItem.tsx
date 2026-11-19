@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useShuffledOptions } from '../../../hooks/useShuffledOptions';
 import { apiErrorMessage } from '../../../lib/api';
 import { submitActivity } from '../../../lib/services';
+import { RevealedText,TranslatedText } from '../../learn/translate/TranslatedText';
 import { ExerciseFields } from './ExerciseFields';
 import type { Activity,Answer,Config } from './types';
 
@@ -30,10 +31,10 @@ export function PracticeItem({ activity }: { activity: Activity }) {
     finally { setBusy(false); }
   }
   return <div className="space-y-5">
-    <p className="whitespace-pre-wrap text-sm leading-relaxed">{config.instruction || activity.instructions}</p>
+    <p className="whitespace-pre-wrap text-sm leading-relaxed"><TranslatedText text={config.instruction || activity.instructions || ''} /></p>
     {config.items ? <>
       <p className="text-xs text-muted">{answered} of {config.items.length} answered</p>
-      <ExerciseFields group={activity.id} items={config.items.map(item => { const key = feedback?.items?.find(row => row.id === item.id); return { ...item, answer: key?.answer, answers: key?.answers, explanation: key?.explanation }; })} allCorrect={saved && correct === true} answers={answers} checked={saved} onChange={(id, value) => change({ ...answers, [id]: value })} />
+      <ExerciseFields group={activity.id} items={config.items.map(item => { const key = feedback?.items?.find(row => row.id === item.id); return { ...item, answer: key?.answer, answers: key?.answers, explanation: key?.explanation, explanationEn: key?.explanationEn }; })} allCorrect={saved && correct === true} answers={answers} checked={saved} onChange={(id, value) => change({ ...answers, [id]: value })} />
     </> : config.options ? <fieldset className="grid gap-2" aria-label={activity.instructions || activity.title}>
       {options.map(({ value: option, index: i }) => <label key={i} className={`flex cursor-pointer items-center gap-3 rounded-box border p-3 text-sm ${response === i ? 'border-primary bg-base-200' : 'border-base-300'}`}>
         <input className="radio radio-primary radio-sm" type="radio" name={activity.id} checked={response === i} onChange={() => change(i)} />{option}
@@ -44,8 +45,8 @@ export function PracticeItem({ activity }: { activity: Activity }) {
       {saved && feedback?.modelAnswer && !auto ? <button className="btn btn-ghost btn-sm" onClick={() => setReveal(!reveal)}>{reveal ? 'Hide' : 'Compare with'} model answer</button> : null}
       {saved ? <span role="status" className={`text-sm font-semibold ${correct === false ? 'text-error' : 'text-success'}`}>{correct === true ? 'All correct!' : correct === false ? 'Review the marked answers' : 'Response saved'}</span> : null}
     </div>
-    {saved && correct === false && feedback?.explanation && !feedback.items?.some(item => item.explanation) ? <p className="rounded-box bg-base-200 p-3 text-sm">Answer: {feedback?.explanation}</p> : null}
-    {reveal ? <div className="rounded-box bg-base-200 p-4 text-sm leading-relaxed"><p className="mb-2 font-semibold">Model answer</p>{feedback?.modelAnswer}</div> : null}
+    {saved && correct === false && feedback?.explanation && !feedback.items?.some(item => item.explanation) ? <p className="rounded-box bg-base-200 p-3 text-sm">Answer: <RevealedText de={feedback.explanation} en={feedback.explanationEn} /></p> : null}
+    {reveal ? <div className="rounded-box bg-base-200 p-4 text-sm leading-relaxed"><p className="mb-2 font-semibold">Model answer</p><RevealedText de={feedback?.modelAnswer ?? ''} en={feedback?.modelAnswerEn} /></div> : null}
     {error ? <p role="alert" className="text-sm text-error">{error}</p> : null}
   </div>;
 }
