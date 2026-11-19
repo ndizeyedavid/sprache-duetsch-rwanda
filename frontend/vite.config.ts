@@ -23,6 +23,16 @@ export default defineConfig({
         clientsClaim: true,
         runtimeCaching: [
           {
+            // Course audio clips: kept on the phone after the first play (fetched whole, so 200s only).
+            urlPattern: ({ url }) => url.pathname.startsWith("/audio/"),
+            handler: "CacheFirst",
+            options: {
+              cacheName: "sparch-audio",
+              expiration: { maxEntries: 4000, maxAgeSeconds: 120 * 24 * 3600 },
+              cacheableResponse: { statuses: [200] },
+            },
+          },
+          {
             urlPattern: ({ request, url }) => request.destination === "image" && !url.pathname.startsWith("/api/"),
             handler: "CacheFirst",
             options: {
