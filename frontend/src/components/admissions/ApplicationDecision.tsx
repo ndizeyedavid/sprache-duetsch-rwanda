@@ -8,9 +8,11 @@ type Props = { app: ApplicationDetail; busy: boolean; onTransition: (status: App
 export function ApplicationDecision({ app, busy, onTransition }: Props) {
   const [reason, setReason] = useState('');
   const [missing, setMissing] = useState<ApplicationStatus | null>(null);
-  if (app.transitions.length === 0) return <p className="text-xs text-muted">This application is closed. No further decisions.</p>;
+  // Enrolling happens in the Enrol panel (account, course and enrolment together), not as a bare status change.
+  const options = app.transitions.filter((option) => option.status !== 'ENROLLED');
+  if (options.length === 0) return <p className="text-xs text-muted">This application is closed. No further decisions.</p>;
 
-  const needsReason = app.transitions.some((option) => option.reasonRequired);
+  const needsReason = options.some((option) => option.reasonRequired);
 
   function choose(status: ApplicationStatus, reasonRequired: boolean) {
     if (reasonRequired && !reason.trim()) {
@@ -24,7 +26,7 @@ export function ApplicationDecision({ app, busy, onTransition }: Props) {
 
   return (
     <section className="rounded-box border border-line bg-base-100 p-4">
-      <h3 className="text-sm font-semibold">Decision</h3>
+      <h3 className="text-sm font-semibold">Other decisions</h3>
       <label className="mt-3 block">
         <span className="mb-1 block text-xs text-muted">
           Note{needsReason ? ' — required to waitlist, reject or withdraw' : ' (optional)'}. Staff only; the applicant is not shown it.
@@ -34,10 +36,9 @@ export function ApplicationDecision({ app, busy, onTransition }: Props) {
       </label>
       {missing ? <p role="alert" className="mt-1 text-xs font-medium text-error">Add a note before choosing “{ACTION_LABEL[missing]}”.</p> : null}
       <div className="mt-3 flex flex-wrap gap-2">
-        {app.transitions.map((option) => {
-          const blocked = option.status === 'ENROLLED' && !app.studentId;
+        {options.map((option) => {
           return (
-            <button key={option.status} type="button" disabled={busy || blocked} title={blocked ? 'Create the student account first' : undefined}
+            <button key={option.status} type="button" disabled={busy}
               className={`btn btn-sm rounded-full text-xs ${ACTION_STYLE[option.status] ?? 'border-line bg-base-200'}`}
               onClick={() => choose(option.status, option.reasonRequired)}>
               {option.status === 'ACCEPTED' && app.status === 'WAITLISTED' ? 'Offer seat' : ACTION_LABEL[option.status]}
