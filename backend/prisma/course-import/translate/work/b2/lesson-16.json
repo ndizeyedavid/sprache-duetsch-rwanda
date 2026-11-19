@@ -1,0 +1,609 @@
+{
+ "level": "B2",
+ "lesson": 16,
+ "title": "Lebensstationen — Ich hätte damals mehr wagen können",
+ "lines": [
+  {
+   "de": "Über Erinnerungen und Lebenswege sprechen — und über das, was möglich gewesen wäre.",
+   "en": "Talk about memories and paths through life — and about what would have been possible."
+  },
+  {
+   "de": "Textsorte: Tagebucheintrag · Lebensbericht",
+   "en": "Text type: Diary entry · Life story"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 1; ÖSD B2 Schreiben",
+   "en": "Exam link: Goethe B2 Speaking part 1; ÖSD B2 Writing"
+  },
+  {
+   "de": "über Erinnerungen und wichtige Ereignisse im Leben sprechen",
+   "en": "talk about memories and important events in life"
+  },
+  {
+   "de": "das Perfekt von Modalverben bilden",
+   "en": "form the perfect tense (Perfekt) of modal verbs"
+  },
+  {
+   "de": "über irreale Möglichkeiten in der Vergangenheit sprechen",
+   "en": "talk about unreal possibilities in the past"
+  },
+  {
+   "de": "irreale Bedingungssätze in der Vergangenheit bilden",
+   "en": "form unreal conditional clauses in the past"
+  },
+  {
+   "de": "Grammatik: Perfekt der Modalverben",
+   "en": "Grammar: The perfect tense (Perfekt) of modal verbs"
+  },
+  {
+   "de": "Steht neben dem Modalverb ein zweites Verb, bildet man das Perfekt mit dem Ersatzinfinitiv: haben + Infinitiv + Modalverb im Infinitiv. Nur wenn das Modalverb allein steht, erscheint ein echtes Partizip.",
+   "en": "If there is a second verb alongside the modal verb, you form the perfect tense with the substitute infinitive (Ersatzinfinitiv): haben + infinitive + modal verb in the infinitive. Only when the modal verb stands alone does a real participle appear."
+  },
+  {
+   "de": "Situation",
+   "en": "="
+  },
+  {
+   "de": "mit zweitem Verb",
+   "en": "with a second verb"
+  },
+  {
+   "de": "haben + Infinitiv + Modalverb",
+   "en": "haben + infinitive + modal verb"
+  },
+  {
+   "de": "Ich habe früher nie reisen können.",
+   "en": "I was never able to travel in the past."
+  },
+  {
+   "de": "Modalverb allein",
+   "en": "modal verb on its own"
+  },
+  {
+   "de": "haben + Partizip II",
+   "en": "haben + past participle (Partizip II)"
+  },
+  {
+   "de": "Das habe ich nie gewollt.",
+   "en": "I never wanted that."
+  },
+  {
+   "de": "hat vor beiden Infinitiven",
+   "en": "hat before both infinitives"
+  },
+  {
+   "de": "…, weil ich nie habe reisen können.",
+   "en": "…, because I was never able to travel."
+  },
+  {
+   "de": "gesprochen meist",
+   "en": "in speech, usually"
+  },
+  {
+   "de": "Präteritum statt Perfekt",
+   "en": "simple past (Präteritum) instead of perfect"
+  },
+  {
+   "de": "Ich konnte früher nie reisen.",
+   "en": "I could never travel in the past."
+  },
+  {
+   "de": "Nach dem Abitur habe ich zuerst arbeiten müssen.Ersatzinfinitiv müssen statt gemusst",
+   "en": "After my school-leaving exams (Abitur), I first had to work. — substitute infinitive müssen instead of gemusst"
+  },
+  {
+   "de": "Sie ärgert sich, dass sie damals nicht hat studieren dürfen.Nebensatz: hat vor den Infinitiven",
+   "en": "She is annoyed that she wasn’t allowed to study back then. — subordinate clause: hat before the infinitives"
+  },
+  {
+   "de": "Tipp: Im Alltag benutzt man bei Modalverben meist das Präteritum (konnte, musste, wollte) — es ist kürzer und klingt natürlicher.",
+   "en": "Tip: In everyday language, you mostly use the simple past (Präteritum) with modal verbs (konnte, musste, wollte) — it is shorter and sounds more natural."
+  },
+  {
+   "de": "Grammatik: Konjunktiv II der Vergangenheit und irreale Bedingungssätze",
+   "en": "Grammar: The past subjunctive II (Konjunktiv II der Vergangenheit) and unreal conditional clauses"
+  },
+  {
+   "de": "Für nicht realisierte Möglichkeiten in der Vergangenheit nimmt man hätte oder wäre + Partizip II. Mit Modalverb wird daraus hätte + Infinitiv + Modalverb. Im irrealen Bedingungssatz stehen beide Satzteile in dieser Form.",
+   "en": "For possibilities in the past that were not realised, you use hätte or wäre + past participle (Partizip II). With a modal verb, this becomes hätte + infinitive + modal verb. In an unreal conditional clause, both parts of the sentence take this form."
+  },
+  {
+   "de": "irrealer Wunsch",
+   "en": "unreal wish"
+  },
+  {
+   "de": "Hätte ich damals bloß mehr gewagt!",
+   "en": "If only I had dared more back then!"
+  },
+  {
+   "de": "irreale Möglichkeit",
+   "en": "unreal possibility"
+  },
+  {
+   "de": "Ich hätte leicht im Ausland bleiben können.",
+   "en": "I could easily have stayed abroad."
+  },
+  {
+   "de": "irreale Bedingung",
+   "en": "unreal condition"
+  },
+  {
+   "de": "Wenn ich mehr Mut gehabt hätte, wäre ich geblieben.",
+   "en": "If I had had more courage, I would have stayed."
+  },
+  {
+   "de": "Hätte ich mehr Mut gehabt, wäre ich geblieben.",
+   "en": "Had I had more courage, I would have stayed."
+  },
+  {
+   "de": "irrealer Vorwurf",
+   "en": "unreal reproach"
+  },
+  {
+   "de": "Du hättest mir das sagen müssen.",
+   "en": "You should have told me that."
+  },
+  {
+   "de": "Wäre ich damals nicht umgezogen, hätte ich sie nie kennengelernt.beide Teile im Konjunktiv II der Vergangenheit",
+   "en": "Had I not moved back then, I would never have met her. — both parts in the past subjunctive II"
+  },
+  {
+   "de": "Das hätte ich mir sparen können.Modalverb im Infinitiv am Satzende",
+   "en": "I could have spared myself that. — modal verb in the infinitive at the end of the sentence"
+  },
+  {
+   "de": "Tipp: Die Reihenfolge am Satzende ist fest: hätte + Vollverb-Infinitiv + Modalverb-Infinitiv — „hätte machen können\", nie „hätte können machen\".",
+   "en": "Tip: The order at the end of the sentence is fixed: hätte + main-verb infinitive + modal-verb infinitive — “hätte machen können”, never “hätte können machen”."
+  },
+  {
+   "de": "die Lebensstation, -en — EN: stage of life · FR: l'étape de vieJede Lebensstation hat mich verändert.",
+   "en": "Example: Every stage of my life has changed me."
+  },
+  {
+   "de": "der Wendepunkt, -e — EN: turning point · FR: le tournantDas war der Wendepunkt meines Lebens.",
+   "en": "Example: That was the turning point of my life."
+  },
+  {
+   "de": "prägen — EN: to shape · FR: marquerDiese Jahre haben mich stark geprägt.",
+   "en": "Example: These years shaped me a great deal."
+  },
+  {
+   "de": "etwas bereuen — EN: to regret · FR: regretterIch bereue eigentlich nichts.",
+   "en": "Example: I don’t really regret anything."
+  },
+  {
+   "de": "der Zufall, ¨-e — EN: coincidence · FR: le hasardVieles im Leben ist reiner Zufall.",
+   "en": "Example: A lot in life is pure coincidence."
+  },
+  {
+   "de": "eine Chance ergreifen — EN: to seize an opportunity · FR: saisir une chanceDamals habe ich die Chance einfach ergriffen.",
+   "en": "Example: Back then, I simply seized the opportunity."
+  },
+  {
+   "de": "rückblickend — EN: looking back · FR: rétrospectivementRückblickend war es die richtige Entscheidung.",
+   "en": "Example: Looking back, it was the right decision."
+  },
+  {
+   "de": "die Weichen stellen — EN: to set the course · FR: orienter le cours des chosesMit 20 werden oft die Weichen gestellt.",
+   "en": "Example: The course of your life is often set at 20."
+  },
+  {
+   "de": "der Lebensabschnitt, -e — EN: phase of life · FR: la période de vieEin neuer Lebensabschnitt begann.",
+   "en": "Example: A new phase of life began."
+  },
+  {
+   "de": "etwas verpassen — EN: to miss out on · FR: manquerIch habe das Gefühl, nichts verpasst zu haben.",
+   "en": "Example: I feel that I haven’t missed out on anything."
+  },
+  {
+   "de": "der Mut (Sg.) — EN: courage · FR: le courageDafür fehlte mir damals der Mut.",
+   "en": "Example: Back then, I lacked the courage for that."
+  },
+  {
+   "de": "aufwachsen (wuchs auf) — EN: to grow up · FR: grandirIch bin bei meinen Großeltern aufgewachsen.",
+   "en": "Example: I grew up with my grandparents."
+  },
+  {
+   "de": "eine Entscheidung treffen — EN: to make a decision · FR: prendre une décisionDiese Entscheidung habe ich allein getroffen.",
+   "en": "Example: I made this decision on my own."
+  },
+  {
+   "de": "im Rückblick — EN: in hindsight · FR: avec le reculIm Rückblick erscheint alles logisch.",
+   "en": "Example: In hindsight, everything seems logical."
+  },
+  {
+   "de": "von Lebensstationen erzählen",
+   "en": "Talking about stages of your life"
+  },
+  {
+   "de": "Aufgewachsen bin ich in …",
+   "en": "I grew up in …"
+  },
+  {
+   "de": "Ein entscheidender Moment war, als …",
+   "en": "A decisive moment was when …"
+  },
+  {
+   "de": "Danach hat sich mein Leben völlig verändert.",
+   "en": "After that, my life changed completely."
+  },
+  {
+   "de": "über irreale Möglichkeiten sprechen",
+   "en": "Talking about unreal possibilities"
+  },
+  {
+   "de": "Ich hätte damals auch … können.",
+   "en": "Back then, I could also have …"
+  },
+  {
+   "de": "Wäre das nicht passiert, würde ich heute …",
+   "en": "If that hadn’t happened, today I would …"
+  },
+  {
+   "de": "Rückblickend hätte ich vielleicht … sollen.",
+   "en": "Looking back, perhaps I should have …"
+  },
+  {
+   "de": "Im Nachhinein bin ich froh, dass …",
+   "en": "In retrospect, I’m glad that …"
+  },
+  {
+   "de": "Das würde ich heute genauso wieder machen.",
+   "en": "I would do exactly the same again today."
+  },
+  {
+   "de": "Bereut habe ich es nie.",
+   "en": "I have never regretted it."
+  },
+  {
+   "de": "Jede Lebensstation hat mich verändert.",
+   "en": "Every stage of my life has changed me."
+  },
+  {
+   "de": "Das war der Wendepunkt meines Lebens.",
+   "en": "That was the turning point of my life."
+  },
+  {
+   "de": "Diese Jahre haben mich stark geprägt.",
+   "en": "These years shaped me a great deal."
+  },
+  {
+   "de": "Ich bereue eigentlich nichts.",
+   "en": "I don’t really regret anything."
+  },
+  {
+   "de": "Vieles im Leben ist reiner Zufall.",
+   "en": "A lot in life is pure coincidence."
+  },
+  {
+   "de": "Damals habe ich die Chance einfach ergriffen.",
+   "en": "Back then, I simply seized the opportunity."
+  },
+  {
+   "de": "Rückblickend war es die richtige Entscheidung.",
+   "en": "Looking back, it was the right decision."
+  },
+  {
+   "de": "Mit 20 werden oft die Weichen gestellt.",
+   "en": "The course of your life is often set at 20."
+  },
+  {
+   "de": "Ein neuer Lebensabschnitt begann.",
+   "en": "A new phase of life began."
+  },
+  {
+   "de": "Ich habe das Gefühl, nichts verpasst zu haben.",
+   "en": "I feel that I haven’t missed out on anything."
+  },
+  {
+   "de": "Dafür fehlte mir damals der Mut.",
+   "en": "Back then, I lacked the courage for that."
+  },
+  {
+   "de": "Ich bin bei meinen Großeltern aufgewachsen.",
+   "en": "I grew up with my grandparents."
+  },
+  {
+   "de": "Diese Entscheidung habe ich allein getroffen.",
+   "en": "I made this decision on my own."
+  },
+  {
+   "de": "Im Rückblick erscheint alles logisch.",
+   "en": "In hindsight, everything seems logical."
+  },
+  {
+   "de": "Perfekt von „Ich kann nicht reisen\":",
+   "en": "Perfect tense of “I can’t travel”:"
+  },
+  {
+   "de": "Nach dem Abitur habe ich zuerst arbeiten ___. (müssen, Perfekt)",
+   "en": "After my school-leaving exams (Abitur), I first ___ to work. (müssen, perfect tense)"
+  },
+  {
+   "de": "Irrealer Wunsch: ___ ich damals bloß mehr gewagt! (haben, Konjunktiv II)",
+   "en": "Unreal wish: If only I ___ dared more back then! (haben, subjunctive II)"
+  },
+  {
+   "de": "Welche Reihenfolge am Satzende ist korrekt?",
+   "en": "Which order at the end of the sentence is correct?"
+  },
+  {
+   "de": "___ ich damals nicht umgezogen, hätte ich sie nie kennengelernt. (sein, Konjunktiv II, uneingeleitet)",
+   "en": "___ I not moved back then, I would never have met her. (sein, subjunctive II, without a conjunction)"
+  },
+  {
+   "de": "Welcher Satz ist ein irrealer Vorwurf?",
+   "en": "Which sentence is an unreal reproach?"
+  },
+  {
+   "de": "Schreiben Sie einen Tagebucheintrag an einem wichtigen Wendepunkt Ihres Lebens — aus der Perspektive von damals. Umfang: 180–220 Wörter Checkliste: • Datum und Ort am Anfang. • Schildern Sie die Situation und Ihre Gefühle. • Verwenden Sie mindestens zwei Formen des Konjunktivs II der Vergangenheit. • Formulieren Sie am Ende eine offene Frage an die Zukunft.",
+   "en": "Write a diary entry at an important turning point in your life — from the perspective of that time. Length: 180–220 words Checklist: • Date and place at the beginning. • Describe the situation and your feelings. • Use at least two forms of the past subjunctive II. • At the end, ask an open question about the future."
+  },
+  {
+   "de": "Mit zweitem Verb steht der Ersatzinfinitiv können, nicht gekonnt.",
+   "en": "With a second verb, you use the substitute infinitive können, not gekonnt."
+  },
+  {
+   "de": "Ersatzinfinitiv: müssen statt gemusst.",
+   "en": "Substitute infinitive (Ersatzinfinitiv): müssen instead of gemusst."
+  },
+  {
+   "de": "Konjunktiv II der Vergangenheit: hätte + Partizip II.",
+   "en": "Past subjunctive II: hätte + past participle (Partizip II)."
+  },
+  {
+   "de": "hätte + Vollverb-Infinitiv + Modalverb-Infinitiv.",
+   "en": "hätte + main-verb infinitive + modal-verb infinitive."
+  },
+  {
+   "de": "umziehen ist ein sein-Verb; uneingeleitet steht das Verb auf Position 1.",
+   "en": "umziehen forms its perfect with sein; without a conjunction, the verb is in position 1."
+  },
+  {
+   "de": "Konjunktiv II der Vergangenheit mit Modalverb drückt einen Vorwurf über Nichtgetanes aus.",
+   "en": "The past subjunctive II with a modal verb expresses a reproach about something that was not done."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Lebenswege",
+   "context": "Über Erinnerungen und Lebenswege sprechen — und über das, was möglich gewesen wäre.",
+   "en": "paths through life",
+   "lemma": "der Lebensweg"
+  },
+  {
+   "form": "Möglichkeiten",
+   "context": "über irreale Möglichkeiten in der Vergangenheit sprechen",
+   "en": "possibilities",
+   "lemma": "die Möglichkeit"
+  },
+  {
+   "form": "gewollt",
+   "context": "Das habe ich nie gewollt.",
+   "en": "wanted",
+   "lemma": "wollen"
+  },
+  {
+   "form": "Abitur",
+   "context": "Nach dem Abitur habe ich zuerst arbeiten müssen.Ersatzinfinitiv müssen statt gemusst",
+   "en": "school-leaving exam",
+   "lemma": "das Abitur"
+  },
+  {
+   "form": "gemusst",
+   "context": "Nach dem Abitur habe ich zuerst arbeiten müssen.Ersatzinfinitiv müssen statt gemusst",
+   "en": "had to",
+   "lemma": "müssen"
+  },
+  {
+   "form": "realisierte",
+   "context": "Für nicht realisierte Möglichkeiten in der Vergangenheit nimmt man hätte oder wäre + Partizip II. Mit Modalverb wird daraus hätte + Infinitiv + Modalverb. Im irrealen Bedingungssatz stehen beide Satzteile in dieser Form.",
+   "en": "realised",
+   "lemma": "realisiert"
+  },
+  {
+   "form": "irrealen",
+   "context": "Für nicht realisierte Möglichkeiten in der Vergangenheit nimmt man hätte oder wäre + Partizip II. Mit Modalverb wird daraus hätte + Infinitiv + Modalverb. Im irrealen Bedingungssatz stehen beide Satzteile in dieser Form.",
+   "en": "unreal",
+   "lemma": "irreal"
+  },
+  {
+   "form": "Satzteile",
+   "context": "Für nicht realisierte Möglichkeiten in der Vergangenheit nimmt man hätte oder wäre + Partizip II. Mit Modalverb wird daraus hätte + Infinitiv + Modalverb. Im irrealen Bedingungssatz stehen beide Satzteile in dieser Form.",
+   "en": "parts of the sentence",
+   "lemma": "der Satzteil"
+  },
+  {
+   "form": "gewagt",
+   "context": "Hätte ich damals bloß mehr gewagt!",
+   "en": "dared",
+   "lemma": "wagen"
+  },
+  {
+   "form": "Mut",
+   "context": "Wenn ich mehr Mut gehabt hätte, wäre ich geblieben.",
+   "en": "courage",
+   "lemma": "der Mut"
+  },
+  {
+   "form": "Vollverb-Infinitiv",
+   "context": "Tipp: Die Reihenfolge am Satzende ist fest: hätte + Vollverb-Infinitiv + Modalverb-Infinitiv — „hätte machen können\", nie „hätte können machen\".",
+   "en": "main-verb infinitive",
+   "lemma": "der Vollverb-Infinitiv"
+  },
+  {
+   "form": "Modalverb-Infinitiv",
+   "context": "Tipp: Die Reihenfolge am Satzende ist fest: hätte + Vollverb-Infinitiv + Modalverb-Infinitiv — „hätte machen können\", nie „hätte können machen\".",
+   "en": "modal-verb infinitive",
+   "lemma": "der Modalverb-Infinitiv"
+  },
+  {
+   "form": "Lebensstation",
+   "context": "die Lebensstation, -en — EN: stage of life · FR: l'étape de vieJede Lebensstation hat mich verändert.",
+   "en": "stage of life",
+   "lemma": "die Lebensstation"
+  },
+  {
+   "form": "l'étape",
+   "context": "die Lebensstation, -en — EN: stage of life · FR: l'étape de vieJede Lebensstation hat mich verändert.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vieJede",
+   "context": "die Lebensstation, -en — EN: stage of life · FR: l'étape de vieJede Lebensstation hat mich verändert.",
+   "en": "every",
+   "lemma": ""
+  },
+  {
+   "form": "regretterIch",
+   "context": "etwas bereuen — EN: to regret · FR: regretterIch bereue eigentlich nichts.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "hasardVieles",
+   "context": "der Zufall, ¨-e — EN: coincidence · FR: le hasardVieles im Leben ist reiner Zufall.",
+   "en": "a lot, many things",
+   "lemma": ""
+  },
+  {
+   "form": "reiner",
+   "context": "der Zufall, ¨-e — EN: coincidence · FR: le hasardVieles im Leben ist reiner Zufall.",
+   "en": "pure, sheer",
+   "lemma": "rein"
+  },
+  {
+   "form": "ergreifen",
+   "context": "eine Chance ergreifen — EN: to seize an opportunity · FR: saisir une chanceDamals habe ich die Chance einfach ergriffen.",
+   "en": "to seize",
+   "lemma": ""
+  },
+  {
+   "form": "seize",
+   "context": "eine Chance ergreifen — EN: to seize an opportunity · FR: saisir une chanceDamals habe ich die Chance einfach ergriffen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "saisir",
+   "context": "eine Chance ergreifen — EN: to seize an opportunity · FR: saisir une chanceDamals habe ich die Chance einfach ergriffen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chanceDamals",
+   "context": "eine Chance ergreifen — EN: to seize an opportunity · FR: saisir une chanceDamals habe ich die Chance einfach ergriffen.",
+   "en": "back then",
+   "lemma": ""
+  },
+  {
+   "form": "ergriffen",
+   "context": "eine Chance ergreifen — EN: to seize an opportunity · FR: saisir une chanceDamals habe ich die Chance einfach ergriffen.",
+   "en": "seized",
+   "lemma": "ergreifen"
+  },
+  {
+   "form": "looking",
+   "context": "rückblickend — EN: looking back · FR: rétrospectivementRückblickend war es die richtige Entscheidung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rétrospectivementRückblickend",
+   "context": "rückblickend — EN: looking back · FR: rétrospectivementRückblickend war es die richtige Entscheidung.",
+   "en": "looking back",
+   "lemma": "rückblickend"
+  },
+  {
+   "form": "Weichen",
+   "context": "die Weichen stellen — EN: to set the course · FR: orienter le cours des chosesMit 20 werden oft die Weichen gestellt.",
+   "en": "(railway) points; course",
+   "lemma": "die Weiche"
+  },
+  {
+   "form": "orienter",
+   "context": "die Weichen stellen — EN: to set the course · FR: orienter le cours des chosesMit 20 werden oft die Weichen gestellt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chosesMit",
+   "context": "die Weichen stellen — EN: to set the course · FR: orienter le cours des chosesMit 20 werden oft die Weichen gestellt.",
+   "en": "at (age); with",
+   "lemma": ""
+  },
+  {
+   "form": "Lebensabschnitt",
+   "context": "der Lebensabschnitt, -e — EN: phase of life · FR: la période de vieEin neuer Lebensabschnitt begann.",
+   "en": "phase of life",
+   "lemma": "der Lebensabschnitt"
+  },
+  {
+   "form": "phase",
+   "context": "der Lebensabschnitt, -e — EN: phase of life · FR: la période de vieEin neuer Lebensabschnitt begann.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vieEin",
+   "context": "der Lebensabschnitt, -e — EN: phase of life · FR: la période de vieEin neuer Lebensabschnitt begann.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "manquerIch",
+   "context": "etwas verpassen — EN: to miss out on · FR: manquerIch habe das Gefühl, nichts verpasst zu haben.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "courage",
+   "context": "der Mut (Sg.) — EN: courage · FR: le courageDafür fehlte mir damals der Mut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "courageDafür",
+   "context": "der Mut (Sg.) — EN: courage · FR: le courageDafür fehlte mir damals der Mut.",
+   "en": "for that",
+   "lemma": ""
+  },
+  {
+   "form": "décisionDiese",
+   "context": "eine Entscheidung treffen — EN: to make a decision · FR: prendre une décisionDiese Entscheidung habe ich allein getroffen.",
+   "en": "this",
+   "lemma": ""
+  },
+  {
+   "form": "reculIm",
+   "context": "im Rückblick — EN: in hindsight · FR: avec le reculIm Rückblick erscheint alles logisch.",
+   "en": "in (the)",
+   "lemma": ""
+  },
+  {
+   "form": "logisch",
+   "context": "im Rückblick — EN: in hindsight · FR: avec le reculIm Rückblick erscheint alles logisch.",
+   "en": "logical",
+   "lemma": ""
+  },
+  {
+   "form": "Lebensstationen",
+   "context": "von Lebensstationen erzählen",
+   "en": "stages of life",
+   "lemma": "die Lebensstation"
+  },
+  {
+   "form": "Perspektive",
+   "context": "Schreiben Sie einen Tagebucheintrag an einem wichtigen Wendepunkt Ihres Lebens — aus der Perspektive von damals. Umfang: 180–220 Wörter Checkliste: • Datum und Ort am Anfang. • Schildern Sie die Situation und Ihre Gefühle. • Verwenden Sie mindestens zwei Formen des Konjunktivs II der Vergangenheit. • Formulieren Sie am Ende eine offene Frage an die Zukunft.",
+   "en": "perspective",
+   "lemma": "die Perspektive"
+  },
+  {
+   "form": "Konjunktivs",
+   "context": "Schreiben Sie einen Tagebucheintrag an einem wichtigen Wendepunkt Ihres Lebens — aus der Perspektive von damals. Umfang: 180–220 Wörter Checkliste: • Datum und Ort am Anfang. • Schildern Sie die Situation und Ihre Gefühle. • Verwenden Sie mindestens zwei Formen des Konjunktivs II der Vergangenheit. • Formulieren Sie am Ende eine offene Frage an die Zukunft.",
+   "en": "(of the) subjunctive",
+   "lemma": "der Konjunktiv"
+  }
+ ]
+}
