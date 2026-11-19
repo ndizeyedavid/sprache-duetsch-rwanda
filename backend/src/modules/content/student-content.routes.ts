@@ -8,6 +8,8 @@ import * as controller from "./content.controller.js";
 import {
 idParamsSchema,
 myNotesQuerySchema,
+reviewParamsSchema,
+saveReviewSchema,
 submitActivitySchema,
 updateProgressSchema
 } from "./content.schema.js";
@@ -17,6 +19,33 @@ studentContentRouter.get(
   requireAuth,
   requireRole("STUDENT"),
   asyncHandler(controller.myCourses),
+);
+studentContentRouter.get(
+  "/my/review/:levelId",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: reviewParamsSchema }),
+  asyncHandler(controller.myReview),
+);
+studentContentRouter.post(
+  "/my/review/:levelId",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: reviewParamsSchema, body: saveReviewSchema }),
+  asyncHandler(controller.saveMyReview),
+);
+studentContentRouter.get(
+  "/my/levels/:levelId/words",
+  requireAuth,
+  requireRole("STUDENT"),
+  validate({ params: reviewParamsSchema }),
+  asyncHandler(controller.myWordList),
+);
+studentContentRouter.get(
+  "/my/progress",
+  requireAuth,
+  requireRole("STUDENT"),
+  asyncHandler(controller.myProgress),
 );
 studentContentRouter.get(
   "/my/lessons/:id",
