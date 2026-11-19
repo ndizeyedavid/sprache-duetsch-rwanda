@@ -1,6 +1,7 @@
 import type { ApplicationStatus,Prisma } from "../../generated/prisma/client.js";
 import { buildPaginated,parsePagination } from "../../lib/pagination.js";
 import { prisma } from "../../lib/prisma.js";
+import { findMatches } from "./application-matches.js";
 import { applicationListInclude } from "./application-select.js";
 import type { ListApplicationsQuery } from "./applications.schema.js";
 
@@ -33,7 +34,9 @@ export const listApplications = async (query: ListApplicationsQuery) => {
     prisma.application.findMany({ where, orderBy, skip: pagination.skip, take: pagination.take, include: applicationListInclude }),
     prisma.application.count({ where }),
   ]);
-  return buildPaginated(rows, total, pagination);
+  // Each row says if the applicant applied before or is already a student (application-matches.ts).
+  const matches = await findMatches(rows);
+  return buildPaginated(rows.map((row) => ({ ...row, matches: matches.get(row.id) ?? null })), total, pagination);
 };
 
 /** Count per status for the queue tabs, honouring every filter except status. */
