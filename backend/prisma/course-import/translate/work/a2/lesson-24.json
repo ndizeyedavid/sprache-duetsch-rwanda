@@ -1,0 +1,655 @@
+{
+ "level": "A2",
+ "lesson": 24,
+ "title": "Arbeiten im Ausland — Wie sah dein Alltag aus?",
+ "lines": [
+  {
+   "de": "Von einer Zeit im Ausland erzählen und Begeisterung oder Enttäuschung ausdrücken.",
+   "en": "Talk about a time abroad and express enthusiasm or disappointment."
+  },
+  {
+   "de": "Textsorte: Mitarbeiterporträt · Erfahrungsbericht",
+   "en": "Text type: Employee profile · Personal experience report"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 1; telc A2 Schreiben",
+   "en": "Exam link: Goethe A2 Speaking part 1; telc A2 Writing"
+  },
+  {
+   "de": "von einer Zeit im Ausland erzählen",
+   "en": "talk about a time abroad"
+  },
+  {
+   "de": "Begeisterung und Enttäuschung ausdrücken",
+   "en": "express enthusiasm and disappointment"
+  },
+  {
+   "de": "das Präteritum regelmäßiger und unregelmäßiger Verben bilden",
+   "en": "form the simple past (Präteritum) of regular and irregular verbs"
+  },
+  {
+   "de": "Grammatik: Das Präteritum",
+   "en": "Grammar: The simple past (Präteritum)"
+  },
+  {
+   "de": "Das Präteritum ist die Vergangenheitsform zum Schreiben und Erzählen. Regelmäßige Verben bekommen -te, unregelmäßige ändern den Vokal. Im Gespräch benutzt man meistens das Perfekt — außer bei sein, haben und den Modalverben.",
+   "en": "The simple past (Präteritum) is the past tense for writing and telling stories. Regular verbs get -te, irregular ones change their vowel. In conversation you usually use the present perfect (Perfekt) — except with sein, haben and the modal verbs."
+  },
+  {
+   "de": "regelmäßig (sagen)",
+   "en": "regular (sagen)"
+  },
+  {
+   "de": "unregelmäßig (kommen)",
+   "en": "irregular (kommen)"
+  },
+  {
+   "de": "sagte",
+   "en": "(I/he/she) said"
+  },
+  {
+   "de": "kam",
+   "en": "(I/he/she) came"
+  },
+  {
+   "de": "sagtest",
+   "en": "(you) said"
+  },
+  {
+   "de": "kamst",
+   "en": "(you) came"
+  },
+  {
+   "de": "sagten",
+   "en": "(we/they) said"
+  },
+  {
+   "de": "kamen",
+   "en": "(we/they) came"
+  },
+  {
+   "de": "sagtet",
+   "en": "(you, plural) said"
+  },
+  {
+   "de": "kamt",
+   "en": "(you, plural) came"
+  },
+  {
+   "de": "Ich kam 2019 nach Österreich und blieb zwei Jahre.kommen → kam, bleiben → blieb",
+   "en": "I came to Austria in 2019 and stayed two years. — kommen → kam, bleiben → blieb"
+  },
+  {
+   "de": "Am Anfang war alles neu und ich hatte viele Fragen.sein und haben im Präteritum",
+   "en": "At the beginning everything was new and I had a lot of questions. — sein and haben in the simple past"
+  },
+  {
+   "de": "Wie sah dein Alltag damals aus?aussehen → sah … aus",
+   "en": "What was your everyday life like back then? — aussehen → sah … aus"
+  },
+  {
+   "de": "Tipp: ich und er/sie sind im Präteritum immer gleich: ich kam, er kam.",
+   "en": "Tip: ich and er/sie are always the same in the simple past: ich kam, er kam."
+  },
+  {
+   "de": "das Ausland (Sg.) — EN: abroad · FR: l'étrangerIch habe zwei Jahre im Ausland gearbeitet.",
+   "en": "Example: I worked abroad for two years."
+  },
+  {
+   "de": "der Alltag (Sg.) — EN: everyday life · FR: le quotidienWie sah dein Alltag dort aus?",
+   "en": "Example: What was your everyday life like there?"
+  },
+  {
+   "de": "sich gewöhnen an — EN: to get used to · FR: s'habituer àAn das Essen habe ich mich schnell gewöhnt.",
+   "en": "Example: I quickly got used to the food."
+  },
+  {
+   "de": "der Kollege, -n / die Kollegin, -nen — EN: colleague · FR: le/la collègueMeine Kollegen waren sehr nett.",
+   "en": "Example: My colleagues were very nice."
+  },
+  {
+   "de": "fremd — EN: foreign, unfamiliar · FR: étranger, inconnuAm Anfang war mir alles fremd.",
+   "en": "Example: At the beginning everything was unfamiliar to me."
+  },
+  {
+   "de": "der Unterschied, -e — EN: difference · FR: la différenceEs gibt große Unterschiede zwischen den Ländern.",
+   "en": "Example: There are big differences between the countries."
+  },
+  {
+   "de": "begeistert — EN: enthusiastic · FR: enthousiasteIch war von der Stadt total begeistert.",
+   "en": "Example: I was really thrilled with the city."
+  },
+  {
+   "de": "enttäuscht — EN: disappointed · FR: déçuVom Wetter war ich ziemlich enttäuscht.",
+   "en": "Example: I was quite disappointed with the weather."
+  },
+  {
+   "de": "das Heimweh (Sg.) — EN: homesickness · FR: le mal du paysManchmal hatte ich Heimweh.",
+   "en": "Example: Sometimes I was homesick."
+  },
+  {
+   "de": "die Erfahrung, -en — EN: experience · FR: l'expérienceDas war eine tolle Erfahrung.",
+   "en": "Example: That was a great experience."
+  },
+  {
+   "de": "zurückkommen (kam zurück) — EN: to come back · FR: revenirNach zwei Jahren kam ich zurück.",
+   "en": "Example: After two years I came back."
+  },
+  {
+   "de": "empfehlen (empfahl) — EN: to recommend · FR: recommanderIch kann das jedem empfehlen.",
+   "en": "Example: I can recommend it to everyone."
+  },
+  {
+   "de": "vom Alltag erzählen",
+   "en": "Talking about everyday life"
+  },
+  {
+   "de": "Mein Tag begann meistens um …",
+   "en": "My day usually started at …"
+  },
+  {
+   "de": "Nach der Arbeit …",
+   "en": "After work …"
+  },
+  {
+   "de": "Am Wochenende …",
+   "en": "At the weekend …"
+  },
+  {
+   "de": "Begeisterung ausdrücken",
+   "en": "Expressing enthusiasm"
+  },
+  {
+   "de": "Ich war total begeistert von …",
+   "en": "I was really thrilled with …"
+  },
+  {
+   "de": "Das war eine fantastische Zeit.",
+   "en": "That was a fantastic time."
+  },
+  {
+   "de": "Das würde ich sofort wieder machen.",
+   "en": "I would do that again straight away."
+  },
+  {
+   "de": "Enttäuschung ausdrücken",
+   "en": "Expressing disappointment"
+  },
+  {
+   "de": "Davon war ich ziemlich enttäuscht.",
+   "en": "I was quite disappointed by that."
+  },
+  {
+   "de": "Das hatte ich mir anders vorgestellt.",
+   "en": "I had imagined that differently."
+  },
+  {
+   "de": "Leider war es nicht so, wie ich dachte.",
+   "en": "Unfortunately it wasn't the way I thought."
+  },
+  {
+   "de": "Dialog: Zwei Jahre in Wien",
+   "en": "Dialogue: Two years in Vienna"
+  },
+  {
+   "de": "Ela: Du warst doch in Wien. Wie sah dein Alltag aus?",
+   "en": "Ela: You were in Vienna, weren't you? What was your everyday life like?"
+  },
+  {
+   "de": "Deniz: Ich stand früh auf, fuhr mit der Bahn ins Büro und kam erst abends zurück.",
+   "en": "Deniz: I got up early, took the train to the office and didn't come back until the evening."
+  },
+  {
+   "de": "Ela: Und wie waren die Kollegen?",
+   "en": "Ela: And what were your colleagues like?"
+  },
+  {
+   "de": "Deniz: Sehr nett. Am Anfang war mir alles fremd, aber ich gewöhnte mich schnell daran.",
+   "en": "Deniz: Very nice. At the beginning everything was unfamiliar to me, but I quickly got used to it."
+  },
+  {
+   "de": "Ela: Gab es auch etwas, das dir nicht gefiel?",
+   "en": "Ela: Was there anything you didn't like?"
+  },
+  {
+   "de": "Deniz: Vom Wetter war ich enttäuscht. Sonst war ich total begeistert.",
+   "en": "Deniz: I was disappointed with the weather. Otherwise I was really thrilled."
+  },
+  {
+   "de": "Ich habe zwei Jahre im Ausland gearbeitet.",
+   "en": "I worked abroad for two years."
+  },
+  {
+   "de": "Wie sah dein Alltag dort aus?",
+   "en": "What was your everyday life like there?"
+  },
+  {
+   "de": "An das Essen habe ich mich schnell gewöhnt.",
+   "en": "I quickly got used to the food."
+  },
+  {
+   "de": "Meine Kollegen waren sehr nett.",
+   "en": "My colleagues were very nice."
+  },
+  {
+   "de": "Am Anfang war mir alles fremd.",
+   "en": "At the beginning everything was unfamiliar to me."
+  },
+  {
+   "de": "Es gibt große Unterschiede zwischen den Ländern.",
+   "en": "There are big differences between the countries."
+  },
+  {
+   "de": "Ich war von der Stadt total begeistert.",
+   "en": "I was really thrilled with the city."
+  },
+  {
+   "de": "Vom Wetter war ich ziemlich enttäuscht.",
+   "en": "I was quite disappointed with the weather."
+  },
+  {
+   "de": "Manchmal hatte ich Heimweh.",
+   "en": "Sometimes I was homesick."
+  },
+  {
+   "de": "Das war eine tolle Erfahrung.",
+   "en": "That was a great experience."
+  },
+  {
+   "de": "Nach zwei Jahren kam ich zurück.",
+   "en": "After two years I came back."
+  },
+  {
+   "de": "Ich kann das jedem empfehlen.",
+   "en": "I can recommend it to everyone."
+  },
+  {
+   "de": "Ich ___ 2019 nach Österreich. (kommen, Präteritum)",
+   "en": "I ___ to Austria in 2019. (kommen, simple past)"
+  },
+  {
+   "de": "Am Anfang ___ alles neu.",
+   "en": "At the beginning everything ___ new."
+  },
+  {
+   "de": "Wie ___ dein Alltag aus? (aussehen, Präteritum)",
+   "en": "What ___ your everyday life like? (aussehen, simple past)"
+  },
+  {
+   "de": "Wir ___ zwei Jahre dort. (bleiben, Präteritum)",
+   "en": "We ___ there for two years. (bleiben, simple past)"
+  },
+  {
+   "de": "Welche Form ist im Präteritum gleich wie bei „ich\"?",
+   "en": "Which form is the same as for “ich” in the simple past?"
+  },
+  {
+   "de": "Erzählen Sie von einer Zeit in einem anderen Ort oder Land: Wie war Ihr Alltag? Umfang: 60–80 Wörter Checkliste: • Schreiben Sie, wo Sie waren und wie lange. • Benutzen Sie mindestens vier Verben im Präteritum. • Schreiben Sie, was Ihnen gefiel und was nicht.",
+   "en": "Tell us about a time in another place or country: What was your everyday life like? Length: 60–80 words Checklist: • Write where you were and for how long. • Use at least four verbs in the simple past. • Write what you liked and what you didn't."
+  },
+  {
+   "de": "kommen → kam (unregelmäßig, Vokalwechsel).",
+   "en": "kommen → kam (irregular, vowel change)."
+  },
+  {
+   "de": "sein steht in der Vergangenheit im Präteritum: war.",
+   "en": "In the past, sein is used in the simple past: war."
+  },
+  {
+   "de": "aussehen → sah … aus.",
+   "en": "aussehen (to look like) → sah … aus (looked like)."
+  },
+  {
+   "de": "bleiben → blieb; Plural: blieben.",
+   "en": "bleiben (to stay) → blieb; plural: blieben."
+  },
+  {
+   "de": "ich und er/es/sie haben im Präteritum immer dieselbe Form.",
+   "en": "ich and er/es/sie always have the same form in the simple past."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Begeisterung",
+   "context": "Von einer Zeit im Ausland erzählen und Begeisterung oder Enttäuschung ausdrücken.",
+   "en": "enthusiasm",
+   "lemma": "die Begeisterung"
+  },
+  {
+   "form": "Enttäuschung",
+   "context": "Von einer Zeit im Ausland erzählen und Begeisterung oder Enttäuschung ausdrücken.",
+   "en": "disappointment",
+   "lemma": "die Enttäuschung"
+  },
+  {
+   "form": "Mitarbeiterporträt",
+   "context": "Textsorte: Mitarbeiterporträt · Erfahrungsbericht",
+   "en": "employee profile",
+   "lemma": "das Mitarbeiterporträt"
+  },
+  {
+   "form": "regelmäßiger",
+   "context": "das Präteritum regelmäßiger und unregelmäßiger Verben bilden",
+   "en": "regular",
+   "lemma": "regelmäßig"
+  },
+  {
+   "form": "unregelmäßiger",
+   "context": "das Präteritum regelmäßiger und unregelmäßiger Verben bilden",
+   "en": "irregular",
+   "lemma": "unregelmäßig"
+  },
+  {
+   "form": "Vergangenheitsform",
+   "context": "Das Präteritum ist die Vergangenheitsform zum Schreiben und Erzählen. Regelmäßige Verben bekommen -te, unregelmäßige ändern den Vokal. Im Gespräch benutzt man meistens das Perfekt — außer bei sein, haben und den Modalverben.",
+   "en": "past tense form",
+   "lemma": "die Vergangenheitsform"
+  },
+  {
+   "form": "te",
+   "context": "Das Präteritum ist die Vergangenheitsform zum Schreiben und Erzählen. Regelmäßige Verben bekommen -te, unregelmäßige ändern den Vokal. Im Gespräch benutzt man meistens das Perfekt — außer bei sein, haben und den Modalverben.",
+   "en": "-te (simple past ending)",
+   "lemma": ""
+  },
+  {
+   "form": "ändern",
+   "context": "Das Präteritum ist die Vergangenheitsform zum Schreiben und Erzählen. Regelmäßige Verben bekommen -te, unregelmäßige ändern den Vokal. Im Gespräch benutzt man meistens das Perfekt — außer bei sein, haben und den Modalverben.",
+   "en": "change, to change",
+   "lemma": ""
+  },
+  {
+   "form": "sagte",
+   "context": "sagte",
+   "en": "said",
+   "lemma": "sagen"
+  },
+  {
+   "form": "sagtest",
+   "context": "sagtest",
+   "en": "said (with du)",
+   "lemma": "sagen"
+  },
+  {
+   "form": "kamst",
+   "context": "kamst",
+   "en": "came (with du)",
+   "lemma": "kommen"
+  },
+  {
+   "form": "sagten",
+   "context": "sagten",
+   "en": "said (wir/sie/Sie)",
+   "lemma": "sagen"
+  },
+  {
+   "form": "sagtet",
+   "context": "sagtet",
+   "en": "said (with ihr)",
+   "lemma": "sagen"
+  },
+  {
+   "form": "kamt",
+   "context": "kamt",
+   "en": "came (with ihr)",
+   "lemma": "kommen"
+  },
+  {
+   "form": "blieb",
+   "context": "Ich kam 2019 nach Österreich und blieb zwei Jahre.kommen → kam, bleiben → blieb",
+   "en": "stayed",
+   "lemma": "bleiben"
+  },
+  {
+   "form": "sah",
+   "context": "Wie sah dein Alltag damals aus?aussehen → sah … aus",
+   "en": "(… aus) looked (like); saw",
+   "lemma": "sehen"
+  },
+  {
+   "form": "Alltag",
+   "context": "Wie sah dein Alltag damals aus?aussehen → sah … aus",
+   "en": "everyday life",
+   "lemma": "der Alltag"
+  },
+  {
+   "form": "abroad",
+   "context": "das Ausland (Sg.) — EN: abroad · FR: l'étrangerIch habe zwei Jahre im Ausland gearbeitet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'étrangerIch",
+   "context": "das Ausland (Sg.) — EN: abroad · FR: l'étrangerIch habe zwei Jahre im Ausland gearbeitet.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "everyday",
+   "context": "der Alltag (Sg.) — EN: everyday life · FR: le quotidienWie sah dein Alltag dort aus?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "life",
+   "context": "der Alltag (Sg.) — EN: everyday life · FR: le quotidienWie sah dein Alltag dort aus?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "quotidienWie",
+   "context": "der Alltag (Sg.) — EN: everyday life · FR: le quotidienWie sah dein Alltag dort aus?",
+   "en": "Wie = how",
+   "lemma": ""
+  },
+  {
+   "form": "gewöhnen",
+   "context": "sich gewöhnen an — EN: to get used to · FR: s'habituer àAn das Essen habe ich mich schnell gewöhnt.",
+   "en": "to get used to (sich gewöhnen an)",
+   "lemma": ""
+  },
+  {
+   "form": "used",
+   "context": "sich gewöhnen an — EN: to get used to · FR: s'habituer àAn das Essen habe ich mich schnell gewöhnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'habituer",
+   "context": "sich gewöhnen an — EN: to get used to · FR: s'habituer àAn das Essen habe ich mich schnell gewöhnt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àAn",
+   "context": "sich gewöhnen an — EN: to get used to · FR: s'habituer àAn das Essen habe ich mich schnell gewöhnt.",
+   "en": "An = to (sich gewöhnen an)",
+   "lemma": ""
+  },
+  {
+   "form": "gewöhnt",
+   "context": "sich gewöhnen an — EN: to get used to · FR: s'habituer àAn das Essen habe ich mich schnell gewöhnt.",
+   "en": "got used to",
+   "lemma": "sich gewöhnen"
+  },
+  {
+   "form": "Kollege",
+   "context": "der Kollege, -n / die Kollegin, -nen — EN: colleague · FR: le/la collègueMeine Kollegen waren sehr nett.",
+   "en": "colleague (man)",
+   "lemma": "der Kollege"
+  },
+  {
+   "form": "colleague",
+   "context": "der Kollege, -n / die Kollegin, -nen — EN: colleague · FR: le/la collègueMeine Kollegen waren sehr nett.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "collègueMeine",
+   "context": "der Kollege, -n / die Kollegin, -nen — EN: colleague · FR: le/la collègueMeine Kollegen waren sehr nett.",
+   "en": "Meine = my",
+   "lemma": ""
+  },
+  {
+   "form": "Kollegen",
+   "context": "der Kollege, -n / die Kollegin, -nen — EN: colleague · FR: le/la collègueMeine Kollegen waren sehr nett.",
+   "en": "colleagues",
+   "lemma": "der Kollege"
+  },
+  {
+   "form": "unfamiliar",
+   "context": "fremd — EN: foreign, unfamiliar · FR: étranger, inconnuAm Anfang war mir alles fremd.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "étranger",
+   "context": "fremd — EN: foreign, unfamiliar · FR: étranger, inconnuAm Anfang war mir alles fremd.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "inconnuAm",
+   "context": "fremd — EN: foreign, unfamiliar · FR: étranger, inconnuAm Anfang war mir alles fremd.",
+   "en": "Am Anfang = at the beginning",
+   "lemma": ""
+  },
+  {
+   "form": "difference",
+   "context": "der Unterschied, -e — EN: difference · FR: la différenceEs gibt große Unterschiede zwischen den Ländern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "différenceEs",
+   "context": "der Unterschied, -e — EN: difference · FR: la différenceEs gibt große Unterschiede zwischen den Ländern.",
+   "en": "Es gibt = there are",
+   "lemma": ""
+  },
+  {
+   "form": "Unterschiede",
+   "context": "der Unterschied, -e — EN: difference · FR: la différenceEs gibt große Unterschiede zwischen den Ländern.",
+   "en": "differences",
+   "lemma": "der Unterschied"
+  },
+  {
+   "form": "enthousiasteIch",
+   "context": "begeistert — EN: enthusiastic · FR: enthousiasteIch war von der Stadt total begeistert.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "enttäuscht",
+   "context": "enttäuscht — EN: disappointed · FR: déçuVom Wetter war ich ziemlich enttäuscht.",
+   "en": "disappointed",
+   "lemma": ""
+  },
+  {
+   "form": "disappointed",
+   "context": "enttäuscht — EN: disappointed · FR: déçuVom Wetter war ich ziemlich enttäuscht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déçuVom",
+   "context": "enttäuscht — EN: disappointed · FR: déçuVom Wetter war ich ziemlich enttäuscht.",
+   "en": "Vom = by the, from the",
+   "lemma": ""
+  },
+  {
+   "form": "Heimweh",
+   "context": "das Heimweh (Sg.) — EN: homesickness · FR: le mal du paysManchmal hatte ich Heimweh.",
+   "en": "homesickness",
+   "lemma": "das Heimweh"
+  },
+  {
+   "form": "homesickness",
+   "context": "das Heimweh (Sg.) — EN: homesickness · FR: le mal du paysManchmal hatte ich Heimweh.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "paysManchmal",
+   "context": "das Heimweh (Sg.) — EN: homesickness · FR: le mal du paysManchmal hatte ich Heimweh.",
+   "en": "Manchmal = sometimes",
+   "lemma": ""
+  },
+  {
+   "form": "zurückkommen",
+   "context": "zurückkommen (kam zurück) — EN: to come back · FR: revenirNach zwei Jahren kam ich zurück.",
+   "en": "to come back",
+   "lemma": ""
+  },
+  {
+   "form": "revenirNach",
+   "context": "zurückkommen (kam zurück) — EN: to come back · FR: revenirNach zwei Jahren kam ich zurück.",
+   "en": "Nach = after",
+   "lemma": ""
+  },
+  {
+   "form": "recommanderIch",
+   "context": "empfehlen (empfahl) — EN: to recommend · FR: recommanderIch kann das jedem empfehlen.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "begann",
+   "context": "Mein Tag begann meistens um …",
+   "en": "began, started",
+   "lemma": "beginnen"
+  },
+  {
+   "form": "fantastische",
+   "context": "Das war eine fantastische Zeit.",
+   "en": "fantastic",
+   "lemma": "fantastisch"
+  },
+  {
+   "form": "vorgestellt",
+   "context": "Das hatte ich mir anders vorgestellt.",
+   "en": "imagined; introduced",
+   "lemma": "vorstellen"
+  },
+  {
+   "form": "dachte",
+   "context": "Leider war es nicht so, wie ich dachte.",
+   "en": "thought",
+   "lemma": "denken"
+  },
+  {
+   "form": "Ela",
+   "context": "Ela: Du warst doch in Wien. Wie sah dein Alltag aus?",
+   "en": "Ela (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Deniz",
+   "context": "Deniz: Ich stand früh auf, fuhr mit der Bahn ins Büro und kam erst abends zurück.",
+   "en": "Deniz (name)",
+   "lemma": ""
+  },
+  {
+   "form": "fuhr",
+   "context": "Deniz: Ich stand früh auf, fuhr mit der Bahn ins Büro und kam erst abends zurück.",
+   "en": "went, travelled; drove",
+   "lemma": "fahren"
+  },
+  {
+   "form": "erst",
+   "context": "Deniz: Ich stand früh auf, fuhr mit der Bahn ins Büro und kam erst abends zurück.",
+   "en": "only, not until; first",
+   "lemma": ""
+  },
+  {
+   "form": "gewöhnte",
+   "context": "Deniz: Sehr nett. Am Anfang war mir alles fremd, aber ich gewöhnte mich schnell daran.",
+   "en": "got used to",
+   "lemma": "sich gewöhnen"
+  },
+  {
+   "form": "gefiel",
+   "context": "Ela: Gab es auch etwas, das dir nicht gefiel?",
+   "en": "pleased; (dir gefiel) you liked",
+   "lemma": "gefallen"
+  }
+ ]
+}
