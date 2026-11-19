@@ -1,8 +1,8 @@
 import { useMemo,useState } from 'react';
 import { EmptyBlock,ErrorBlock,LoadingBlock } from '../../components/common/PageState';
 import { PaymentRequestHistory } from '../../components/payments/PaymentRequestHistory';
-import { PaypackCheckout } from '../../components/payments/PaypackCheckout';
-import { usePaypackCheckout } from '../../components/payments/usePaypackCheckout';
+import { MobileMoneyCheckout } from '../../components/payments/MobileMoneyCheckout';
+import { useMobileMoneyCheckout } from '../../components/payments/useMobileMoneyCheckout';
 import { DueCallout } from '../../components/payments-student/DueCallout';
 import { HowToPay } from '../../components/payments-student/HowToPay';
 import { PaymentsHero } from '../../components/payments-student/PaymentsHero';
@@ -26,7 +26,7 @@ export function Payments() {
   const finance = useApi('my-finance-detail', getMyFinanceDetail);
   const methods = useApi('active-payment-methods', listActivePaymentMethods);
   const profile = useApi('my-profile', getMyProfile);
-  const checkout = usePaypackCheckout(finance.refetch);
+  const checkout = useMobileMoneyCheckout(finance.refetch);
   const { pendingId, error: downloadError, download } = useDocumentDownload();
   const [receipt, setReceipt] = useState<Receipt | null>(null);
   const rows = useMemo(() => scheduleRows(finance.data?.charges ?? []), [finance.data]);
@@ -50,7 +50,7 @@ export function Payments() {
 
       <div id="pay" className="grid scroll-mt-24 items-start gap-4 lg:grid-cols-2">
         <Panel>
-          <PaypackCheckout balance={Math.max(0, money(account.balance))} currency={account.currency} checkout={checkout} />
+          <MobileMoneyCheckout balance={Math.max(0, money(account.balance))} currency={account.currency} checkout={checkout} />
           <PaymentRequestHistory rows={checkout.rows} />
         </Panel>
         <Panel>
