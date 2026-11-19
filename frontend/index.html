@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      // The platform moved from class.deutshsprache.org to class.deutschspracherw.org (2026-10-19).
-      // nginx redirects page requests; this covers tabs served from an old service-worker cache.
-      if (location.hostname === 'class.deutshsprache.org') {
-        location.replace('https://class.deutschspracherw.org' + location.pathname + location.search + location.hash);
-      }
+      // The platform lives on class.deutschspracherw.org (since 2026-10-19). nginx redirects page requests from any
+      // other public hostname; this covers tabs served from an old service-worker cache on those hostnames.
+      (function () {
+        var h = location.hostname;
+        if (h !== 'class.deutschspracherw.org' && (/(^|\.)deutshsprache\.org$/.test(h) || /\.hubfly\.app$/.test(h) || /(^|\.)deutschspracherw\.org$/.test(h))) {
+          location.replace('https://class.deutschspracherw.org' + location.pathname + location.search + location.hash);
+        }
+      })();
     </script>
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
