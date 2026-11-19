@@ -1,0 +1,799 @@
+{
+ "level": "B2",
+ "lesson": 13,
+ "title": "Den Kopf freibekommen — Beim Laufen komme ich auf die besten Gedanken",
+ "lines": [
+  {
+   "de": "Über Freizeit und Entspannung sprechen und eine Präsentation halten.",
+   "en": "Talk about free time and relaxation and give a presentation."
+  },
+  {
+   "de": "Textsorte: Radiosendung · Präsentation",
+   "en": "Text type: Radio programme · Presentation"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 1 (Kurzvortrag); ÖSD B2 Sprechen 2",
+   "en": "Exam link: Goethe B2 Speaking part 1 (short talk); ÖSD B2 Speaking 2"
+  },
+  {
+   "de": "über Freizeitaktivitäten und Entspannungsmethoden sprechen",
+   "en": "talk about leisure activities and relaxation methods"
+  },
+  {
+   "de": "eine Präsentation gliedern und halten",
+   "en": "structure and give a presentation"
+  },
+  {
+   "de": "die Präpositionen bei (temporal) und mithilfe von (modal) verwenden",
+   "en": "use the prepositions bei (temporal) and mithilfe von (modal)"
+  },
+  {
+   "de": "Feedback geben und annehmen",
+   "en": "give and accept feedback"
+  },
+  {
+   "de": "Grammatik: bei (temporal) und mithilfe (von) (modal)",
+   "en": "Grammar: bei (temporal) and mithilfe (von) (modal)"
+  },
+  {
+   "de": "Beide Präpositionen ersetzen einen ganzen Nebensatz und machen Texte dichter — genau das erwartet man bei B2. bei + Dativ nennt den Zeitpunkt oder die Begleitumstände, mithilfe + Genitiv (oder mithilfe von + Dativ) nennt das Mittel.",
+   "en": "Both prepositions replace a whole subordinate clause and make texts denser — exactly what is expected at B2. bei + dative states the time or the accompanying circumstances; mithilfe + genitive (or mithilfe von + dative) states the means."
+  },
+  {
+   "de": "Wenn ich laufe, …",
+   "en": "When I run, …"
+  },
+  {
+   "de": "bei + Dativ",
+   "en": "bei + dative (when, during)"
+  },
+  {
+   "de": "Beim Laufen komme ich auf gute Ideen.",
+   "en": "When I’m running, I come up with good ideas."
+  },
+  {
+   "de": "Während er sprach, …",
+   "en": "While he was speaking, …"
+  },
+  {
+   "de": "Bei seinem Vortrag wurde es ganz still.",
+   "en": "During his talk, it went completely quiet."
+  },
+  {
+   "de": "Wenn es regnet, …",
+   "en": "If it rains, …"
+  },
+  {
+   "de": "Bei Regen fällt die Wanderung aus.",
+   "en": "In case of rain, the hike is cancelled."
+  },
+  {
+   "de": "Indem man Atemübungen macht, …",
+   "en": "By doing breathing exercises, …"
+  },
+  {
+   "de": "mithilfe + Genitiv",
+   "en": "mithilfe + genitive (with the help of)"
+  },
+  {
+   "de": "Mithilfe von Atemübungen baut man Stress ab.",
+   "en": "With the help of breathing exercises, you reduce stress."
+  },
+  {
+   "de": "durch eine App",
+   "en": "through an app"
+  },
+  {
+   "de": "mithilfe von + Dativ",
+   "en": "mithilfe von + dative (with the help of)"
+  },
+  {
+   "de": "Mithilfe von Apps lässt sich der Schlaf messen.",
+   "en": "With the help of apps, sleep can be measured."
+  },
+  {
+   "de": "Beim Kochen schalte ich am besten ab.bei + nominalisiertem Verb: Zeitpunkt / Tätigkeit",
+   "en": "I unwind best when I’m cooking. — bei + nominalised verb: point in time / activity"
+  },
+  {
+   "de": "Mithilfe kurzer Pausen bleibt die Konzentration hoch.mithilfe + Genitiv: Mittel",
+   "en": "With the help of short breaks, concentration stays high. — mithilfe + genitive: means"
+  },
+  {
+   "de": "Bei starkem Stress hilft Bewegung mehr als Ruhe.bei + Bedingung",
+   "en": "Under heavy stress, exercise helps more than rest. — bei + condition"
+  },
+  {
+   "de": "Tipp: Nominalisierte Verben nach bei schreibt man groß und mit Artikel verschmolzen: bei dem Laufen → beim Laufen, bei dem Lesen → beim Lesen.",
+   "en": "Tip: Nominalised verbs after bei are written with a capital letter and merged with the article: bei dem Laufen → beim Laufen, bei dem Lesen → beim Lesen."
+  },
+  {
+   "de": "abschalten — EN: to switch off, unwind · FR: déconnecterAm Wochenende kann ich endlich abschalten.",
+   "en": "Example: At the weekend, I can finally switch off."
+  },
+  {
+   "de": "die Entspannung (Sg.) — EN: relaxation · FR: la détenteJeder findet Entspannung woanders.",
+   "en": "Example: Everyone finds relaxation somewhere different."
+  },
+  {
+   "de": "der Ausgleich (Sg.) — EN: balance, counterbalance · FR: l'équilibreSport ist mein Ausgleich zum Büroalltag.",
+   "en": "Example: Sport is my way of balancing out everyday office life."
+  },
+  {
+   "de": "zur Ruhe kommen — EN: to find peace, settle down · FR: retrouver le calmeAbends komme ich nur schwer zur Ruhe.",
+   "en": "Example: In the evenings, I find it hard to settle down."
+  },
+  {
+   "de": "die Achtsamkeit (Sg.) — EN: mindfulness · FR: la pleine conscienceAchtsamkeit ist längst kein Modewort mehr.",
+   "en": "Example: Mindfulness has long since stopped being a buzzword."
+  },
+  {
+   "de": "die Atemübung, -en — EN: breathing exercise · FR: l'exercice de respirationDrei Minuten Atemübungen wirken erstaunlich gut.",
+   "en": "Example: Three minutes of breathing exercises work surprisingly well."
+  },
+  {
+   "de": "auftanken — EN: to recharge · FR: recharger ses batteriesIm Urlaub tanke ich richtig auf.",
+   "en": "Example: On holiday, I really recharge my batteries."
+  },
+  {
+   "de": "die Gliederung, -en — EN: structure, outline · FR: le planZeigen Sie zuerst die Gliederung Ihres Vortrags.",
+   "en": "Example: First show the outline of your talk."
+  },
+  {
+   "de": "der Schwerpunkt, -e — EN: focus, main point · FR: l'axe principalDer zweite Schwerpunkt ist die Praxis.",
+   "en": "Example: The second focus is practice."
+  },
+  {
+   "de": "das Feedback (Sg.) — EN: feedback · FR: le retourDarf ich dir kurz Feedback geben?",
+   "en": "Example: May I give you some quick feedback?"
+  },
+  {
+   "de": "der Ausgangspunkt, -e — EN: starting point · FR: le point de départAusgangspunkt meines Vortrags ist eine Studie.",
+   "en": "Example: The starting point of my talk is a study."
+  },
+  {
+   "de": "die Erholung (Sg.) — EN: recovery, rest · FR: le reposErholung braucht mehr als einen freien Tag.",
+   "en": "Example: Recovery takes more than one day off."
+  },
+  {
+   "de": "der Alltag (Sg.) — EN: everyday life · FR: le quotidienIm Alltag bleibt dafür selten Zeit.",
+   "en": "Example: In everyday life, there is rarely time for that."
+  },
+  {
+   "de": "etwas bewusst tun — EN: to do sth. deliberately · FR: faire qc. consciemmentIch lege bewusst Pausen ein.",
+   "en": "Example: I deliberately take breaks."
+  },
+  {
+   "de": "eine Präsentation gliedern",
+   "en": "Structuring a presentation"
+  },
+  {
+   "de": "Ich habe meinen Vortrag in drei Teile gegliedert.",
+   "en": "I have divided my talk into three parts."
+  },
+  {
+   "de": "Zunächst …, anschließend …, zum Schluss …",
+   "en": "First …, then …, finally …"
+  },
+  {
+   "de": "Damit komme ich zu meinem zweiten Punkt.",
+   "en": "That brings me to my second point."
+  },
+  {
+   "de": "eine Präsentation abschließen",
+   "en": "Concluding a presentation"
+  },
+  {
+   "de": "Zusammenfassend lässt sich festhalten, dass …",
+   "en": "To sum up, it can be said that …"
+  },
+  {
+   "de": "Vielen Dank für Ihre Aufmerksamkeit.",
+   "en": "Thank you very much for your attention."
+  },
+  {
+   "de": "Gern beantworte ich jetzt Ihre Fragen.",
+   "en": "I’m happy to answer your questions now."
+  },
+  {
+   "de": "Feedback geben",
+   "en": "Giving feedback"
+  },
+  {
+   "de": "Besonders gut gefallen hat mir, wie …",
+   "en": "What I particularly liked was how …"
+  },
+  {
+   "de": "Was ich mir noch gewünscht hätte, wäre …",
+   "en": "What I would also have liked is …"
+  },
+  {
+   "de": "Vielleicht könntest du beim nächsten Mal …",
+   "en": "Maybe next time you could …"
+  },
+  {
+   "de": "Am Wochenende kann ich endlich abschalten.",
+   "en": "At the weekend, I can finally switch off."
+  },
+  {
+   "de": "Jeder findet Entspannung woanders.",
+   "en": "Everyone finds relaxation somewhere different."
+  },
+  {
+   "de": "Sport ist mein Ausgleich zum Büroalltag.",
+   "en": "Sport is my way of balancing out everyday office life."
+  },
+  {
+   "de": "Abends komme ich nur schwer zur Ruhe.",
+   "en": "In the evenings, I find it hard to settle down."
+  },
+  {
+   "de": "Achtsamkeit ist längst kein Modewort mehr.",
+   "en": "Mindfulness has long since stopped being a buzzword."
+  },
+  {
+   "de": "Drei Minuten Atemübungen wirken erstaunlich gut.",
+   "en": "Three minutes of breathing exercises work surprisingly well."
+  },
+  {
+   "de": "Im Urlaub tanke ich richtig auf.",
+   "en": "On holiday, I really recharge my batteries."
+  },
+  {
+   "de": "Zeigen Sie zuerst die Gliederung Ihres Vortrags.",
+   "en": "First show the outline of your talk."
+  },
+  {
+   "de": "Der zweite Schwerpunkt ist die Praxis.",
+   "en": "The second focus is practice."
+  },
+  {
+   "de": "Darf ich dir kurz Feedback geben?",
+   "en": "May I give you some quick feedback?"
+  },
+  {
+   "de": "Ausgangspunkt meines Vortrags ist eine Studie.",
+   "en": "The starting point of my talk is a study."
+  },
+  {
+   "de": "Erholung braucht mehr als einen freien Tag.",
+   "en": "Recovery takes more than one day off."
+  },
+  {
+   "de": "Im Alltag bleibt dafür selten Zeit.",
+   "en": "In everyday life, there is rarely time for that."
+  },
+  {
+   "de": "Ich lege bewusst Pausen ein.",
+   "en": "I deliberately take breaks."
+  },
+  {
+   "de": "___ Laufen komme ich auf die besten Ideen. (bei + Artikel, verschmolzen)",
+   "en": "___ running, I come up with the best ideas. (bei + article, merged)"
+  },
+  {
+   "de": "Welche Präposition nennt das Mittel?",
+   "en": "Which preposition states the means?"
+  },
+  {
+   "de": "___ Regen fällt die Wanderung aus.",
+   "en": "___ rain, the hike is cancelled."
+  },
+  {
+   "de": "„Mithilfe von Apps\" entspricht:",
+   "en": "“Mithilfe von Apps” is equivalent to:"
+  },
+  {
+   "de": "Nebensatz zu Präposition: „Während er vortrug, wurde es still.\" → ___ seinem Vortrag wurde es still.",
+   "en": "Subordinate clause to preposition: “While he was giving his talk, it went quiet.” → ___ his talk, it went quiet."
+  },
+  {
+   "de": "Was gehört an den Anfang einer Präsentation?",
+   "en": "What belongs at the beginning of a presentation?"
+  },
+  {
+   "de": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "Draft the outline and the introduction for a short talk about a relaxation method that you use yourself. Length: 150–180 words Checklist: • Begin with a question or a figure that makes people curious. • Announce three main points. • Use bei + nominalised verb at least once and mithilfe once. • Write a clear concluding sentence."
+  },
+  {
+   "de": "bei dem → beim; das nominalisierte Verb wird großgeschrieben.",
+   "en": "bei dem → beim; the nominalised verb is written with a capital letter."
+  },
+  {
+   "de": "mithilfe ist modal und nennt das Mittel; bei und während sind temporal.",
+   "en": "mithilfe is modal and states the means; bei and während are temporal."
+  },
+  {
+   "de": "bei + Dativ nennt hier die Bedingung bzw. den Umstand.",
+   "en": "Here, bei + dative states the condition or circumstance."
+  },
+  {
+   "de": "mithilfe entspricht einem indem-Satz: es nennt die Methode.",
+   "en": "mithilfe corresponds to an indem clause: it states the method."
+  },
+  {
+   "de": "bei + Dativ ersetzt den temporalen Nebensatz.",
+   "en": "bei + dative replaces the temporal subordinate clause."
+  },
+  {
+   "de": "Nach dem Einstieg kündigt man die Struktur an, damit das Publikum folgen kann.",
+   "en": "After the opening, you announce the structure so that the audience can follow."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Entspannung",
+   "context": "Über Freizeit und Entspannung sprechen und eine Präsentation halten.",
+   "en": "relaxation",
+   "lemma": "die Entspannung"
+  },
+  {
+   "form": "Präsentation",
+   "context": "Über Freizeit und Entspannung sprechen und eine Präsentation halten.",
+   "en": "presentation",
+   "lemma": "die Präsentation"
+  },
+  {
+   "form": "Kurzvortrag",
+   "context": "Prüfungsbezug: Goethe B2 Sprechen Teil 1 (Kurzvortrag); ÖSD B2 Sprechen 2",
+   "en": "short talk",
+   "lemma": "der Kurzvortrag"
+  },
+  {
+   "form": "Freizeitaktivitäten",
+   "context": "über Freizeitaktivitäten und Entspannungsmethoden sprechen",
+   "en": "leisure activities",
+   "lemma": "die Freizeitaktivität"
+  },
+  {
+   "form": "Entspannungsmethoden",
+   "context": "über Freizeitaktivitäten und Entspannungsmethoden sprechen",
+   "en": "relaxation methods",
+   "lemma": "die Entspannungsmethode"
+  },
+  {
+   "form": "gliedern",
+   "context": "eine Präsentation gliedern und halten",
+   "en": "to structure, divide",
+   "lemma": ""
+  },
+  {
+   "form": "temporal",
+   "context": "die Präpositionen bei (temporal) und mithilfe von (modal) verwenden",
+   "en": "temporal (about time)",
+   "lemma": ""
+  },
+  {
+   "form": "mithilfe",
+   "context": "die Präpositionen bei (temporal) und mithilfe von (modal) verwenden",
+   "en": "with the help of",
+   "lemma": ""
+  },
+  {
+   "form": "modal",
+   "context": "die Präpositionen bei (temporal) und mithilfe von (modal) verwenden",
+   "en": "modal (about means)",
+   "lemma": ""
+  },
+  {
+   "form": "Feedback",
+   "context": "Feedback geben und annehmen",
+   "en": "feedback",
+   "lemma": "das Feedback"
+  },
+  {
+   "form": "laufe",
+   "context": "Wenn ich laufe, …",
+   "en": "run",
+   "lemma": "laufen"
+  },
+  {
+   "form": "Ideen",
+   "context": "Beim Laufen komme ich auf gute Ideen.",
+   "en": "ideas",
+   "lemma": "die Idee"
+  },
+  {
+   "form": "still",
+   "context": "Bei seinem Vortrag wurde es ganz still.",
+   "en": "quiet, silent; still",
+   "lemma": ""
+  },
+  {
+   "form": "Atemübungen",
+   "context": "Indem man Atemübungen macht, …",
+   "en": "breathing exercises",
+   "lemma": "die Atemübung"
+  },
+  {
+   "form": "Mithilfe",
+   "context": "Mithilfe von Atemübungen baut man Stress ab.",
+   "en": "with the help of",
+   "lemma": ""
+  },
+  {
+   "form": "baut",
+   "context": "Mithilfe von Atemübungen baut man Stress ab.",
+   "en": "reduces",
+   "lemma": "abbauen"
+  },
+  {
+   "form": "App",
+   "context": "durch eine App",
+   "en": "app",
+   "lemma": "die App"
+  },
+  {
+   "form": "Apps",
+   "context": "Mithilfe von Apps lässt sich der Schlaf messen.",
+   "en": "apps",
+   "lemma": "die App"
+  },
+  {
+   "form": "messen",
+   "context": "Mithilfe von Apps lässt sich der Schlaf messen.",
+   "en": "measure",
+   "lemma": ""
+  },
+  {
+   "form": "schalte",
+   "context": "Beim Kochen schalte ich am besten ab.bei + nominalisiertem Verb: Zeitpunkt / Tätigkeit",
+   "en": "unwind, switch off",
+   "lemma": "abschalten"
+  },
+  {
+   "form": "nominalisiertem",
+   "context": "Beim Kochen schalte ich am besten ab.bei + nominalisiertem Verb: Zeitpunkt / Tätigkeit",
+   "en": "nominalised",
+   "lemma": "nominalisiert"
+  },
+  {
+   "form": "Pausen",
+   "context": "Mithilfe kurzer Pausen bleibt die Konzentration hoch.mithilfe + Genitiv: Mittel",
+   "en": "breaks",
+   "lemma": "die Pause"
+  },
+  {
+   "form": "starkem",
+   "context": "Bei starkem Stress hilft Bewegung mehr als Ruhe.bei + Bedingung",
+   "en": "severe, strong",
+   "lemma": "stark"
+  },
+  {
+   "form": "Nominalisierte",
+   "context": "Tipp: Nominalisierte Verben nach bei schreibt man groß und mit Artikel verschmolzen: bei dem Laufen → beim Laufen, bei dem Lesen → beim Lesen.",
+   "en": "nominalised",
+   "lemma": "nominalisiert"
+  },
+  {
+   "form": "verschmolzen",
+   "context": "Tipp: Nominalisierte Verben nach bei schreibt man groß und mit Artikel verschmolzen: bei dem Laufen → beim Laufen, bei dem Lesen → beim Lesen.",
+   "en": "merged",
+   "lemma": "verschmelzen"
+  },
+  {
+   "form": "unwind",
+   "context": "abschalten — EN: to switch off, unwind · FR: déconnecterAm Wochenende kann ich endlich abschalten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déconnecterAm",
+   "context": "abschalten — EN: to switch off, unwind · FR: déconnecterAm Wochenende kann ich endlich abschalten.",
+   "en": "at the, on the",
+   "lemma": ""
+  },
+  {
+   "form": "détenteJeder",
+   "context": "die Entspannung (Sg.) — EN: relaxation · FR: la détenteJeder findet Entspannung woanders.",
+   "en": "everyone",
+   "lemma": ""
+  },
+  {
+   "form": "woanders",
+   "context": "die Entspannung (Sg.) — EN: relaxation · FR: la détenteJeder findet Entspannung woanders.",
+   "en": "somewhere else",
+   "lemma": ""
+  },
+  {
+   "form": "Büroalltag",
+   "context": "der Ausgleich (Sg.) — EN: balance, counterbalance · FR: l'équilibreSport ist mein Ausgleich zum Büroalltag.",
+   "en": "everyday office life",
+   "lemma": "der Büroalltag"
+  },
+  {
+   "form": "peace",
+   "context": "zur Ruhe kommen — EN: to find peace, settle down · FR: retrouver le calmeAbends komme ich nur schwer zur Ruhe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "retrouver",
+   "context": "zur Ruhe kommen — EN: to find peace, settle down · FR: retrouver le calmeAbends komme ich nur schwer zur Ruhe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "calmeAbends",
+   "context": "zur Ruhe kommen — EN: to find peace, settle down · FR: retrouver le calmeAbends komme ich nur schwer zur Ruhe.",
+   "en": "in the evenings",
+   "lemma": ""
+  },
+  {
+   "form": "Achtsamkeit",
+   "context": "die Achtsamkeit (Sg.) — EN: mindfulness · FR: la pleine conscienceAchtsamkeit ist längst kein Modewort mehr.",
+   "en": "mindfulness",
+   "lemma": "die Achtsamkeit"
+  },
+  {
+   "form": "mindfulness",
+   "context": "die Achtsamkeit (Sg.) — EN: mindfulness · FR: la pleine conscienceAchtsamkeit ist längst kein Modewort mehr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pleine",
+   "context": "die Achtsamkeit (Sg.) — EN: mindfulness · FR: la pleine conscienceAchtsamkeit ist längst kein Modewort mehr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "conscienceAchtsamkeit",
+   "context": "die Achtsamkeit (Sg.) — EN: mindfulness · FR: la pleine conscienceAchtsamkeit ist längst kein Modewort mehr.",
+   "en": "mindfulness",
+   "lemma": "die Achtsamkeit"
+  },
+  {
+   "form": "Modewort",
+   "context": "die Achtsamkeit (Sg.) — EN: mindfulness · FR: la pleine conscienceAchtsamkeit ist längst kein Modewort mehr.",
+   "en": "buzzword",
+   "lemma": "das Modewort"
+  },
+  {
+   "form": "Atemübung",
+   "context": "die Atemübung, -en — EN: breathing exercise · FR: l'exercice de respirationDrei Minuten Atemübungen wirken erstaunlich gut.",
+   "en": "breathing exercise",
+   "lemma": "die Atemübung"
+  },
+  {
+   "form": "breathing",
+   "context": "die Atemübung, -en — EN: breathing exercise · FR: l'exercice de respirationDrei Minuten Atemübungen wirken erstaunlich gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "respirationDrei",
+   "context": "die Atemübung, -en — EN: breathing exercise · FR: l'exercice de respirationDrei Minuten Atemübungen wirken erstaunlich gut.",
+   "en": "three",
+   "lemma": ""
+  },
+  {
+   "form": "auftanken",
+   "context": "auftanken — EN: to recharge · FR: recharger ses batteriesIm Urlaub tanke ich richtig auf.",
+   "en": "to recharge",
+   "lemma": ""
+  },
+  {
+   "form": "recharge",
+   "context": "auftanken — EN: to recharge · FR: recharger ses batteriesIm Urlaub tanke ich richtig auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "recharger",
+   "context": "auftanken — EN: to recharge · FR: recharger ses batteriesIm Urlaub tanke ich richtig auf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "batteriesIm",
+   "context": "auftanken — EN: to recharge · FR: recharger ses batteriesIm Urlaub tanke ich richtig auf.",
+   "en": "in the, on",
+   "lemma": ""
+  },
+  {
+   "form": "tanke",
+   "context": "auftanken — EN: to recharge · FR: recharger ses batteriesIm Urlaub tanke ich richtig auf.",
+   "en": "recharge",
+   "lemma": "auftanken"
+  },
+  {
+   "form": "Gliederung",
+   "context": "die Gliederung, -en — EN: structure, outline · FR: le planZeigen Sie zuerst die Gliederung Ihres Vortrags.",
+   "en": "structure, outline",
+   "lemma": "die Gliederung"
+  },
+  {
+   "form": "structure",
+   "context": "die Gliederung, -en — EN: structure, outline · FR: le planZeigen Sie zuerst die Gliederung Ihres Vortrags.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "outline",
+   "context": "die Gliederung, -en — EN: structure, outline · FR: le planZeigen Sie zuerst die Gliederung Ihres Vortrags.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "planZeigen",
+   "context": "die Gliederung, -en — EN: structure, outline · FR: le planZeigen Sie zuerst die Gliederung Ihres Vortrags.",
+   "en": "show",
+   "lemma": "zeigen"
+  },
+  {
+   "form": "Vortrags",
+   "context": "die Gliederung, -en — EN: structure, outline · FR: le planZeigen Sie zuerst die Gliederung Ihres Vortrags.",
+   "en": "(of the) talk",
+   "lemma": "der Vortrag"
+  },
+  {
+   "form": "Schwerpunkt",
+   "context": "der Schwerpunkt, -e — EN: focus, main point · FR: l'axe principalDer zweite Schwerpunkt ist die Praxis.",
+   "en": "focus, main point",
+   "lemma": "der Schwerpunkt"
+  },
+  {
+   "form": "focus",
+   "context": "der Schwerpunkt, -e — EN: focus, main point · FR: l'axe principalDer zweite Schwerpunkt ist die Praxis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'axe",
+   "context": "der Schwerpunkt, -e — EN: focus, main point · FR: l'axe principalDer zweite Schwerpunkt ist die Praxis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "principalDer",
+   "context": "der Schwerpunkt, -e — EN: focus, main point · FR: l'axe principalDer zweite Schwerpunkt ist die Praxis.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "feedback",
+   "context": "das Feedback (Sg.) — EN: feedback · FR: le retourDarf ich dir kurz Feedback geben?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "retourDarf",
+   "context": "das Feedback (Sg.) — EN: feedback · FR: le retourDarf ich dir kurz Feedback geben?",
+   "en": "may",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "Ausgangspunkt",
+   "context": "der Ausgangspunkt, -e — EN: starting point · FR: le point de départAusgangspunkt meines Vortrags ist eine Studie.",
+   "en": "starting point",
+   "lemma": "der Ausgangspunkt"
+  },
+  {
+   "form": "starting",
+   "context": "der Ausgangspunkt, -e — EN: starting point · FR: le point de départAusgangspunkt meines Vortrags ist eine Studie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "départAusgangspunkt",
+   "context": "der Ausgangspunkt, -e — EN: starting point · FR: le point de départAusgangspunkt meines Vortrags ist eine Studie.",
+   "en": "starting point",
+   "lemma": "der Ausgangspunkt"
+  },
+  {
+   "form": "recovery",
+   "context": "die Erholung (Sg.) — EN: recovery, rest · FR: le reposErholung braucht mehr als einen freien Tag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reposErholung",
+   "context": "die Erholung (Sg.) — EN: recovery, rest · FR: le reposErholung braucht mehr als einen freien Tag.",
+   "en": "recovery, rest",
+   "lemma": "die Erholung"
+  },
+  {
+   "form": "freien",
+   "context": "die Erholung (Sg.) — EN: recovery, rest · FR: le reposErholung braucht mehr als einen freien Tag.",
+   "en": "free (day off)",
+   "lemma": "frei"
+  },
+  {
+   "form": "quotidienIm",
+   "context": "der Alltag (Sg.) — EN: everyday life · FR: le quotidienIm Alltag bleibt dafür selten Zeit.",
+   "en": "in the",
+   "lemma": ""
+  },
+  {
+   "form": "deliberately",
+   "context": "etwas bewusst tun — EN: to do sth. deliberately · FR: faire qc. consciemmentIch lege bewusst Pausen ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "consciemmentIch",
+   "context": "etwas bewusst tun — EN: to do sth. deliberately · FR: faire qc. consciemmentIch lege bewusst Pausen ein.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "gegliedert",
+   "context": "Ich habe meinen Vortrag in drei Teile gegliedert.",
+   "en": "divided, structured",
+   "lemma": "gliedern"
+  },
+  {
+   "form": "festhalten",
+   "context": "Zusammenfassend lässt sich festhalten, dass …",
+   "en": "to state; hold on to",
+   "lemma": ""
+  },
+  {
+   "form": "Aufmerksamkeit",
+   "context": "Vielen Dank für Ihre Aufmerksamkeit.",
+   "en": "attention",
+   "lemma": "die Aufmerksamkeit"
+  },
+  {
+   "form": "beantworte",
+   "context": "Gern beantworte ich jetzt Ihre Fragen.",
+   "en": "answer",
+   "lemma": "beantworten"
+  },
+  {
+   "form": "gewünscht",
+   "context": "Was ich mir noch gewünscht hätte, wäre …",
+   "en": "wished for, liked",
+   "lemma": "wünschen"
+  },
+  {
+   "form": "vortrug",
+   "context": "Nebensatz zu Präposition: „Während er vortrug, wurde es still.\" → ___ seinem Vortrag wurde es still.",
+   "en": "was giving a talk",
+   "lemma": "vortragen"
+  },
+  {
+   "form": "Entwerfen",
+   "context": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "draft, design",
+   "lemma": "entwerfen"
+  },
+  {
+   "form": "Einleitungstext",
+   "context": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "introductory text",
+   "lemma": "der Einleitungstext"
+  },
+  {
+   "form": "Entspannungsmethode",
+   "context": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "relaxation method",
+   "lemma": "die Entspannungsmethode"
+  },
+  {
+   "form": "neugierig",
+   "context": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "curious",
+   "lemma": ""
+  },
+  {
+   "form": "Gliederungspunkte",
+   "context": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "main points (of an outline)",
+   "lemma": "der Gliederungspunkt"
+  },
+  {
+   "form": "nominalisiertes",
+   "context": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "nominalised",
+   "lemma": "nominalisiert"
+  },
+  {
+   "form": "Schlusssatz",
+   "context": "Entwerfen Sie die Gliederung und den Einleitungstext für einen Kurzvortrag über eine Entspannungsmethode, die Sie selbst nutzen. Umfang: 150–180 Wörter Checkliste: • Beginnen Sie mit einer Frage oder einer Zahl, die neugierig macht. • Kündigen Sie drei Gliederungspunkte an. • Verwenden Sie mindestens einmal bei + nominalisiertes Verb und einmal mithilfe. • Formulieren Sie einen klaren Schlusssatz.",
+   "en": "concluding sentence",
+   "lemma": "der Schlusssatz"
+  }
+ ]
+}
