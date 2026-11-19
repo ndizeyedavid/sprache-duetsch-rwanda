@@ -8,6 +8,13 @@ describe('student activity config sanitizer', () => {
     expect(sanitizeActivityConfig({ answer: 'secret', items: [{ id: 'one', prompt: 'Hello', answer: 'Hallo', choices: ['Hallo', 'Danke'] }] }))
       .toEqual({ autoGraded: true, items: [{ id: 'one', prompt: 'Hello', choices: ['Hallo', 'Danke'] }] });
   });
+  it('hides explanations and model answers with their English until the student has answered', () => {
+    const config = { practiceMode: true, explanation: 'Erste Person.', explanationEn: 'First person.', modelAnswer: 'Ich bin Aline.', modelAnswerEn: 'I am Aline.',
+      items: [{ id: 'a', prompt: 'Ich ___ müde.', answer: 'bin', explanation: 'ich → bin', explanationEn: 'ich → bin (I am)' }] };
+    const shown = json(sanitizeActivityConfig(config, 'FILL_BLANK'));
+    for (const secret of ['Erste Person', 'First person', 'Ich bin Aline', 'I am Aline', 'ich → bin']) expect(shown).not.toContain(secret);
+    expect(shown).toContain('Ich ___ müde.');
+  });
   it('hides choice, true/false and multi-select keys', () => {
     expect(sanitizeActivityConfig({ question: 'Q', options: ['a', 'b'], correctIndex: 1 }, 'MCQ')).toEqual({ question: 'Q', options: ['a', 'b'], autoGraded: true });
     expect(sanitizeActivityConfig({ statement: 'S', correct: false }, 'TRUE_FALSE')).toEqual({ statement: 'S', autoGraded: true });
