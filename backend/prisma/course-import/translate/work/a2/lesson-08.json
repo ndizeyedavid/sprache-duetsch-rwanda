@@ -1,0 +1,667 @@
+{
+ "level": "A2",
+ "lesson": 8,
+ "title": "Gesundheit und Krankheit — Hoffentlich ist es nicht das Herz!",
+ "lines": [
+  {
+   "de": "Beschwerden beschreiben, Gründe nennen und Mitgefühl zeigen.",
+   "en": "Describe symptoms, give reasons and show sympathy."
+  },
+  {
+   "de": "Textsorte: Forumstext · Gespräch beim Arzt",
+   "en": "Text type: Forum post · Conversation at the doctor's"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Hören Teil 2 (Ansagen und Gespräche); ÖSD A2",
+   "en": "Exam link: Goethe A2 Listening part 2 (announcements and conversations); ÖSD A2"
+  },
+  {
+   "de": "Körperteile benennen und Beschwerden beschreiben",
+   "en": "name parts of the body and describe symptoms"
+  },
+  {
+   "de": "Gründe mit weil und deshalb ausdrücken",
+   "en": "express reasons with weil and deshalb"
+  },
+  {
+   "de": "Mitleid, Sorge und Hoffnung ausdrücken",
+   "en": "express sympathy, worry and hope"
+  },
+  {
+   "de": "Grammatik: Gründe ausdrücken: weil und deshalb",
+   "en": "Grammar: expressing reasons: weil (because) and deshalb (that's why)"
+  },
+  {
+   "de": "Beide verbinden einen Grund und eine Folge — der Unterschied liegt nur im Satzbau. weil leitet einen Nebensatz ein, und dort steht das Verb ganz am Ende. deshalb steht in einem Hauptsatz auf Position 1, das Verb folgt direkt dahinter.",
+   "en": "Both connect a reason and a consequence — the only difference is the sentence structure. weil introduces a subordinate clause (Nebensatz), and there the verb goes right at the end. deshalb goes in position 1 of a main clause (Hauptsatz), and the verb follows directly after it."
+  },
+  {
+   "de": "Konnektor",
+   "en": "Connector"
+  },
+  {
+   "de": "Satzbau",
+   "en": "Sentence structure"
+  },
+  {
+   "de": "weil",
+   "en": "because"
+  },
+  {
+   "de": "Nebensatz: Verb am Ende",
+   "en": "Subordinate clause: verb at the end"
+  },
+  {
+   "de": "Ich gehe zum Arzt, weil ich Schmerzen habe.",
+   "en": "I'm going to the doctor because I'm in pain."
+  },
+  {
+   "de": "weil (vorn)",
+   "en": "because (at the start)"
+  },
+  {
+   "de": "Nebensatz zuerst",
+   "en": "Subordinate clause first"
+  },
+  {
+   "de": "Weil ich Schmerzen habe, gehe ich zum Arzt.",
+   "en": "Because I'm in pain, I'm going to the doctor."
+  },
+  {
+   "de": "deshalb",
+   "en": "that's why, so"
+  },
+  {
+   "de": "Hauptsatz: Position 1",
+   "en": "Main clause: position 1"
+  },
+  {
+   "de": "Ich habe Schmerzen. Deshalb gehe ich zum Arzt.",
+   "en": "I'm in pain. That's why I'm going to the doctor."
+  },
+  {
+   "de": "auch so",
+   "en": "also like this"
+  },
+  {
+   "de": "darum, deswegen",
+   "en": "that's why, for that reason"
+  },
+  {
+   "de": "Du hast Probleme, weil du zu viel arbeitest.weil → Verb am Ende",
+   "en": "You have problems because you work too much. weil → verb at the end"
+  },
+  {
+   "de": "Meine Krankheit ist nicht schlimm. Deshalb mache ich mir keine Sorgen.deshalb → Verb auf Position 2",
+   "en": "My illness isn't serious. That's why I'm not worried. deshalb → verb in position 2"
+  },
+  {
+   "de": "Weil mein Rücken wehtut, kann ich nicht joggen.Nebensatz vorn, dann sofort das Verb",
+   "en": "Because my back hurts, I can't go jogging. Subordinate clause first, then the verb straight away"
+  },
+  {
+   "de": "Tipp: Auf die Frage „Warum?\" antwortet man mit weil, nicht mit deshalb: Warum gehst du zum Arzt? — Weil ich Fieber habe.",
+   "en": "Tip: You answer the question \"Warum?\" (Why?) with weil, not with deshalb: Warum gehst du zum Arzt? — Weil ich Fieber habe. (Why are you going to the doctor? — Because I have a fever.)"
+  },
+  {
+   "de": "die Gesundheit (Sg.) — EN: health · FR: la santéGesundheit ist das Wichtigste.",
+   "en": "Example: Health is the most important thing."
+  },
+  {
+   "de": "das Herz, -en — EN: heart · FR: le cœurHoffentlich ist es nicht das Herz!",
+   "en": "Example: Hopefully it's not the heart!"
+  },
+  {
+   "de": "der Rücken, - — EN: back · FR: le dosMein Rücken tut seit Tagen weh.",
+   "en": "Example: My back has been hurting for days."
+  },
+  {
+   "de": "die Schmerzen (Pl.) — EN: pain · FR: les douleursIch habe starke Schmerzen im Bein.",
+   "en": "Example: I have bad pain in my leg."
+  },
+  {
+   "de": "wehtun (tat weh) — EN: to hurt · FR: faire malMir tut der Kopf weh.",
+   "en": "Example: My head hurts."
+  },
+  {
+   "de": "sich fühlen — EN: to feel · FR: se sentirIch fühle mich heute viel besser.",
+   "en": "Example: I feel much better today."
+  },
+  {
+   "de": "der Termin, -e — EN: appointment · FR: le rendez-vousIch habe morgen einen Termin beim Arzt.",
+   "en": "Example: I have an appointment with the doctor tomorrow."
+  },
+  {
+   "de": "untersuchen — EN: to examine · FR: examinerDer Arzt hat mich gründlich untersucht.",
+   "en": "Example: The doctor examined me thoroughly."
+  },
+  {
+   "de": "das Medikament, -e — EN: medicine · FR: le médicamentNehmen Sie das Medikament dreimal täglich.",
+   "en": "Example: Take the medicine three times a day."
+  },
+  {
+   "de": "sich Sorgen machen — EN: to worry · FR: s'inquiéterMach dir keine Sorgen!",
+   "en": "Example: Don't worry!"
+  },
+  {
+   "de": "hoffentlich — EN: hopefully · FR: espérons queHoffentlich wird es bald besser.",
+   "en": "Example: Hopefully it will get better soon."
+  },
+  {
+   "de": "gute Besserung! — EN: get well soon! · FR: bon rétablissement !Gute Besserung und erhol dich gut!",
+   "en": "Example: Get well soon and have a good rest!"
+  },
+  {
+   "de": "Beschwerden beschreiben",
+   "en": "describing symptoms"
+  },
+  {
+   "de": "Mir tut der … weh.",
+   "en": "My … hurts."
+  },
+  {
+   "de": "Ich habe seit drei Tagen Schmerzen.",
+   "en": "I've been in pain for three days."
+  },
+  {
+   "de": "Mitleid und Sorge zeigen",
+   "en": "showing sympathy and concern"
+  },
+  {
+   "de": "Das tut mir leid!",
+   "en": "I'm sorry to hear that!"
+  },
+  {
+   "de": "Oh je, das klingt nicht gut.",
+   "en": "Oh dear, that doesn't sound good."
+  },
+  {
+   "de": "Warst du schon beim Arzt?",
+   "en": "Have you been to the doctor yet?"
+  },
+  {
+   "de": "Hoffnung ausdrücken",
+   "en": "expressing hope"
+  },
+  {
+   "de": "Hoffentlich ist es nichts Schlimmes.",
+   "en": "Hopefully it's nothing serious."
+  },
+  {
+   "de": "Das wird sicher wieder.",
+   "en": "I'm sure it will get better."
+  },
+  {
+   "de": "Ida: Du klingst gar nicht gut. Was ist los?",
+   "en": "Ida: You don't sound good at all. What's wrong?"
+  },
+  {
+   "de": "Tom: Mir tut seit gestern die Brust weh. Hoffentlich ist es nicht das Herz!",
+   "en": "Tom: My chest has been hurting since yesterday. Hopefully it's not my heart!"
+  },
+  {
+   "de": "Ida: Oh je. Warst du schon beim Arzt?",
+   "en": "Ida: Oh dear. Have you been to the doctor yet?"
+  },
+  {
+   "de": "Tom: Noch nicht, weil ich so viel Arbeit habe.",
+   "en": "Tom: Not yet, because I have so much work."
+  },
+  {
+   "de": "Ida: Du hast Schmerzen, deshalb solltest du sofort einen Termin machen!",
+   "en": "Ida: You're in pain, so you should make an appointment right away!"
+  },
+  {
+   "de": "Tom: Du hast recht. Ich rufe gleich an.",
+   "en": "Tom: You're right. I'll call right away."
+  },
+  {
+   "de": "Gesundheit ist das Wichtigste.",
+   "en": "Health is the most important thing."
+  },
+  {
+   "de": "Hoffentlich ist es nicht das Herz!",
+   "en": "Hopefully it's not the heart!"
+  },
+  {
+   "de": "Mein Rücken tut seit Tagen weh.",
+   "en": "My back has been hurting for days."
+  },
+  {
+   "de": "Ich habe starke Schmerzen im Bein.",
+   "en": "I have bad pain in my leg."
+  },
+  {
+   "de": "Mir tut der Kopf weh.",
+   "en": "My head hurts."
+  },
+  {
+   "de": "Ich fühle mich heute viel besser.",
+   "en": "I feel much better today."
+  },
+  {
+   "de": "Ich habe morgen einen Termin beim Arzt.",
+   "en": "I have an appointment with the doctor tomorrow."
+  },
+  {
+   "de": "Der Arzt hat mich gründlich untersucht.",
+   "en": "The doctor examined me thoroughly."
+  },
+  {
+   "de": "Nehmen Sie das Medikament dreimal täglich.",
+   "en": "Take the medicine three times a day."
+  },
+  {
+   "de": "Mach dir keine Sorgen!",
+   "en": "Don't worry!"
+  },
+  {
+   "de": "Hoffentlich wird es bald besser.",
+   "en": "Hopefully it will get better soon."
+  },
+  {
+   "de": "Gute Besserung und erhol dich gut!",
+   "en": "Get well soon and have a good rest!"
+  },
+  {
+   "de": "Ich gehe zum Arzt, ___ ich Fieber habe.",
+   "en": "I'm going to the doctor ___ I have a fever."
+  },
+  {
+   "de": "Mein Rücken tut weh. ___ kann ich nicht joggen.",
+   "en": "My back hurts. ___ I can't go jogging."
+  },
+  {
+   "de": "Warum bist du zu Hause?",
+   "en": "Why are you at home?"
+  },
+  {
+   "de": "___ ich Schmerzen habe, nehme ich ein Medikament. (Nebensatz vorn)",
+   "en": "___ I'm in pain, I take some medicine. (subordinate clause first)"
+  },
+  {
+   "de": "Mir ___ der Kopf weh. (wehtun, Präsens)",
+   "en": "My head ___. (wehtun, present tense)"
+  },
+  {
+   "de": "Schreiben Sie eine Nachricht an eine Kollegin: Sie sind krank und können nicht zur Arbeit kommen. Umfang: 40–60 Wörter Checkliste: • Schreiben Sie, was Ihnen fehlt. • Nennen Sie einen Grund mit weil oder deshalb. • Sagen Sie, wann Sie wahrscheinlich wiederkommen.",
+   "en": "Write a message to a colleague: you are ill and cannot come to work. Length: 40–60 words Checklist: • Write what is wrong with you. • Give a reason with weil or deshalb. • Say when you will probably be back."
+  },
+  {
+   "de": "Nebensatz mit Verb am Ende → weil.",
+   "en": "Subordinate clause with the verb at the end → weil."
+  },
+  {
+   "de": "Zwei Hauptsätze: deshalb steht auf Position 1, das Verb auf Position 2.",
+   "en": "Two main clauses: deshalb is in position 1, the verb in position 2."
+  },
+  {
+   "de": "Auf „Warum?\" antwortet man mit weil, und das Verb steht am Ende.",
+   "en": "You answer \"Warum?\" with weil, and the verb goes at the end."
+  },
+  {
+   "de": "Nach dem vorangestellten Nebensatz folgt sofort das Verb des Hauptsatzes.",
+   "en": "After the subordinate clause at the start, the verb of the main clause follows immediately."
+  },
+  {
+   "de": "wehtun ist trennbar: Mir tut der Kopf weh.",
+   "en": "wehtun is separable: Mir tut der Kopf weh. (My head hurts.)"
+  }
+ ],
+ "forms": [
+  {
+   "form": "Beschwerden",
+   "context": "Beschwerden beschreiben, Gründe nennen und Mitgefühl zeigen.",
+   "en": "symptoms, complaints",
+   "lemma": "die Beschwerde"
+  },
+  {
+   "form": "Forumstext",
+   "context": "Textsorte: Forumstext · Gespräch beim Arzt",
+   "en": "forum post",
+   "lemma": "der Forumstext"
+  },
+  {
+   "form": "Körperteile",
+   "context": "Körperteile benennen und Beschwerden beschreiben",
+   "en": "body parts",
+   "lemma": "der Körperteil"
+  },
+  {
+   "form": "deshalb",
+   "context": "Gründe mit weil und deshalb ausdrücken",
+   "en": "that's why, so",
+   "lemma": ""
+  },
+  {
+   "form": "Mitleid",
+   "context": "Mitleid, Sorge und Hoffnung ausdrücken",
+   "en": "sympathy, pity",
+   "lemma": "das Mitleid"
+  },
+  {
+   "form": "Sorge",
+   "context": "Mitleid, Sorge und Hoffnung ausdrücken",
+   "en": "worry, concern",
+   "lemma": "die Sorge"
+  },
+  {
+   "form": "Hoffnung",
+   "context": "Mitleid, Sorge und Hoffnung ausdrücken",
+   "en": "hope",
+   "lemma": "die Hoffnung"
+  },
+  {
+   "form": "verbinden",
+   "context": "Beide verbinden einen Grund und eine Folge — der Unterschied liegt nur im Satzbau. weil leitet einen Nebensatz ein, und dort steht das Verb ganz am Ende. deshalb steht in einem Hauptsatz auf Position 1, das Verb folgt direkt dahinter.",
+   "en": "connect",
+   "lemma": ""
+  },
+  {
+   "form": "Folge",
+   "context": "Beide verbinden einen Grund und eine Folge — der Unterschied liegt nur im Satzbau. weil leitet einen Nebensatz ein, und dort steht das Verb ganz am Ende. deshalb steht in einem Hauptsatz auf Position 1, das Verb folgt direkt dahinter.",
+   "en": "consequence, result; episode",
+   "lemma": "die Folge"
+  },
+  {
+   "form": "Satzbau",
+   "context": "Beide verbinden einen Grund und eine Folge — der Unterschied liegt nur im Satzbau. weil leitet einen Nebensatz ein, und dort steht das Verb ganz am Ende. deshalb steht in einem Hauptsatz auf Position 1, das Verb folgt direkt dahinter.",
+   "en": "sentence structure",
+   "lemma": "der Satzbau"
+  },
+  {
+   "form": "leitet",
+   "context": "Beide verbinden einen Grund und eine Folge — der Unterschied liegt nur im Satzbau. weil leitet einen Nebensatz ein, und dort steht das Verb ganz am Ende. deshalb steht in einem Hauptsatz auf Position 1, das Verb folgt direkt dahinter.",
+   "en": "introduces; leads",
+   "lemma": "einleiten"
+  },
+  {
+   "form": "Nebensatz",
+   "context": "Beide verbinden einen Grund und eine Folge — der Unterschied liegt nur im Satzbau. weil leitet einen Nebensatz ein, und dort steht das Verb ganz am Ende. deshalb steht in einem Hauptsatz auf Position 1, das Verb folgt direkt dahinter.",
+   "en": "subordinate clause",
+   "lemma": "der Nebensatz"
+  },
+  {
+   "form": "folgt",
+   "context": "Beide verbinden einen Grund und eine Folge — der Unterschied liegt nur im Satzbau. weil leitet einen Nebensatz ein, und dort steht das Verb ganz am Ende. deshalb steht in einem Hauptsatz auf Position 1, das Verb folgt direkt dahinter.",
+   "en": "follows",
+   "lemma": "folgen"
+  },
+  {
+   "form": "Konnektor",
+   "context": "Konnektor",
+   "en": "connector, linking word",
+   "lemma": "der Konnektor"
+  },
+  {
+   "form": "Schmerzen",
+   "context": "Ich gehe zum Arzt, weil ich Schmerzen habe.",
+   "en": "pain",
+   "lemma": "der Schmerz"
+  },
+  {
+   "form": "Deshalb",
+   "context": "Ich habe Schmerzen. Deshalb gehe ich zum Arzt.",
+   "en": "that's why, so",
+   "lemma": ""
+  },
+  {
+   "form": "darum",
+   "context": "darum, deswegen",
+   "en": "that's why",
+   "lemma": ""
+  },
+  {
+   "form": "deswegen",
+   "context": "darum, deswegen",
+   "en": "that's why, for that reason",
+   "lemma": ""
+  },
+  {
+   "form": "Probleme",
+   "context": "Du hast Probleme, weil du zu viel arbeitest.weil → Verb am Ende",
+   "en": "problems",
+   "lemma": "das Problem"
+  },
+  {
+   "form": "Krankheit",
+   "context": "Meine Krankheit ist nicht schlimm. Deshalb mache ich mir keine Sorgen.deshalb → Verb auf Position 2",
+   "en": "illness",
+   "lemma": "die Krankheit"
+  },
+  {
+   "form": "schlimm",
+   "context": "Meine Krankheit ist nicht schlimm. Deshalb mache ich mir keine Sorgen.deshalb → Verb auf Position 2",
+   "en": "bad, serious",
+   "lemma": ""
+  },
+  {
+   "form": "Sorgen",
+   "context": "Meine Krankheit ist nicht schlimm. Deshalb mache ich mir keine Sorgen.deshalb → Verb auf Position 2",
+   "en": "worries (sich Sorgen machen = to worry)",
+   "lemma": "die Sorge"
+  },
+  {
+   "form": "Rücken",
+   "context": "Weil mein Rücken wehtut, kann ich nicht joggen.Nebensatz vorn, dann sofort das Verb",
+   "en": "back",
+   "lemma": "der Rücken"
+  },
+  {
+   "form": "wehtut",
+   "context": "Weil mein Rücken wehtut, kann ich nicht joggen.Nebensatz vorn, dann sofort das Verb",
+   "en": "hurts",
+   "lemma": "wehtun"
+  },
+  {
+   "form": "health",
+   "context": "die Gesundheit (Sg.) — EN: health · FR: la santéGesundheit ist das Wichtigste.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "santéGesundheit",
+   "context": "die Gesundheit (Sg.) — EN: health · FR: la santéGesundheit ist das Wichtigste.",
+   "en": "health",
+   "lemma": "die Gesundheit"
+  },
+  {
+   "form": "Wichtigste",
+   "context": "die Gesundheit (Sg.) — EN: health · FR: la santéGesundheit ist das Wichtigste.",
+   "en": "most important (thing)",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "Herz",
+   "context": "das Herz, -en — EN: heart · FR: le cœurHoffentlich ist es nicht das Herz!",
+   "en": "heart",
+   "lemma": "das Herz"
+  },
+  {
+   "form": "heart",
+   "context": "das Herz, -en — EN: heart · FR: le cœurHoffentlich ist es nicht das Herz!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cœurHoffentlich",
+   "context": "das Herz, -en — EN: heart · FR: le cœurHoffentlich ist es nicht das Herz!",
+   "en": "hopefully",
+   "lemma": "hoffentlich"
+  },
+  {
+   "form": "dosMein",
+   "context": "der Rücken, - — EN: back · FR: le dosMein Rücken tut seit Tagen weh.",
+   "en": "my",
+   "lemma": "mein"
+  },
+  {
+   "form": "pain",
+   "context": "die Schmerzen (Pl.) — EN: pain · FR: les douleursIch habe starke Schmerzen im Bein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "douleursIch",
+   "context": "die Schmerzen (Pl.) — EN: pain · FR: les douleursIch habe starke Schmerzen im Bein.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "starke",
+   "context": "die Schmerzen (Pl.) — EN: pain · FR: les douleursIch habe starke Schmerzen im Bein.",
+   "en": "strong; bad (pain)",
+   "lemma": "stark"
+  },
+  {
+   "form": "Bein",
+   "context": "die Schmerzen (Pl.) — EN: pain · FR: les douleursIch habe starke Schmerzen im Bein.",
+   "en": "leg",
+   "lemma": "das Bein"
+  },
+  {
+   "form": "tat",
+   "context": "wehtun (tat weh) — EN: to hurt · FR: faire malMir tut der Kopf weh.",
+   "en": "hurt (tat … weh); did",
+   "lemma": "wehtun"
+  },
+  {
+   "form": "fühlen",
+   "context": "sich fühlen — EN: to feel · FR: se sentirIch fühle mich heute viel besser.",
+   "en": "feel",
+   "lemma": ""
+  },
+  {
+   "form": "sentirIch",
+   "context": "sich fühlen — EN: to feel · FR: se sentirIch fühle mich heute viel besser.",
+   "en": "I",
+   "lemma": "ich"
+  },
+  {
+   "form": "untersuchen",
+   "context": "untersuchen — EN: to examine · FR: examinerDer Arzt hat mich gründlich untersucht.",
+   "en": "to examine",
+   "lemma": ""
+  },
+  {
+   "form": "examine",
+   "context": "untersuchen — EN: to examine · FR: examinerDer Arzt hat mich gründlich untersucht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "examinerDer",
+   "context": "untersuchen — EN: to examine · FR: examinerDer Arzt hat mich gründlich untersucht.",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "gründlich",
+   "context": "untersuchen — EN: to examine · FR: examinerDer Arzt hat mich gründlich untersucht.",
+   "en": "thoroughly",
+   "lemma": ""
+  },
+  {
+   "form": "untersucht",
+   "context": "untersuchen — EN: to examine · FR: examinerDer Arzt hat mich gründlich untersucht.",
+   "en": "examined",
+   "lemma": "untersuchen"
+  },
+  {
+   "form": "Medikament",
+   "context": "das Medikament, -e — EN: medicine · FR: le médicamentNehmen Sie das Medikament dreimal täglich.",
+   "en": "medicine",
+   "lemma": "das Medikament"
+  },
+  {
+   "form": "medicine",
+   "context": "das Medikament, -e — EN: medicine · FR: le médicamentNehmen Sie das Medikament dreimal täglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "médicamentNehmen",
+   "context": "das Medikament, -e — EN: medicine · FR: le médicamentNehmen Sie das Medikament dreimal täglich.",
+   "en": "take",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "worry",
+   "context": "sich Sorgen machen — EN: to worry · FR: s'inquiéterMach dir keine Sorgen!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'inquiéterMach",
+   "context": "sich Sorgen machen — EN: to worry · FR: s'inquiéterMach dir keine Sorgen!",
+   "en": "make (command)",
+   "lemma": "machen"
+  },
+  {
+   "form": "espérons",
+   "context": "hoffentlich — EN: hopefully · FR: espérons queHoffentlich wird es bald besser.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "queHoffentlich",
+   "context": "hoffentlich — EN: hopefully · FR: espérons queHoffentlich wird es bald besser.",
+   "en": "hopefully",
+   "lemma": "hoffentlich"
+  },
+  {
+   "form": "rétablissement",
+   "context": "gute Besserung! — EN: get well soon! · FR: bon rétablissement !Gute Besserung und erhol dich gut!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "erhol",
+   "context": "gute Besserung! — EN: get well soon! · FR: bon rétablissement !Gute Besserung und erhol dich gut!",
+   "en": "rest, recover (command)",
+   "lemma": "sich erholen"
+  },
+  {
+   "form": "Schlimmes",
+   "context": "Hoffentlich ist es nichts Schlimmes.",
+   "en": "bad (nichts Schlimmes = nothing serious)",
+   "lemma": "schlimm"
+  },
+  {
+   "form": "klingst",
+   "context": "Ida: Du klingst gar nicht gut. Was ist los?",
+   "en": "sound (with du)",
+   "lemma": "klingen"
+  },
+  {
+   "form": "Brust",
+   "context": "Tom: Mir tut seit gestern die Brust weh. Hoffentlich ist es nicht das Herz!",
+   "en": "chest",
+   "lemma": "die Brust"
+  },
+  {
+   "form": "recht",
+   "context": "Tom: Du hast recht. Ich rufe gleich an.",
+   "en": "right (recht haben = to be right); quite",
+   "lemma": ""
+  },
+  {
+   "form": "rufe",
+   "context": "Tom: Du hast recht. Ich rufe gleich an.",
+   "en": "call (rufe … an)",
+   "lemma": "anrufen"
+  },
+  {
+   "form": "wahrscheinlich",
+   "context": "Schreiben Sie eine Nachricht an eine Kollegin: Sie sind krank und können nicht zur Arbeit kommen. Umfang: 40–60 Wörter Checkliste: • Schreiben Sie, was Ihnen fehlt. • Nennen Sie einen Grund mit weil oder deshalb. • Sagen Sie, wann Sie wahrscheinlich wiederkommen.",
+   "en": "probably",
+   "lemma": ""
+  },
+  {
+   "form": "wiederkommen",
+   "context": "Schreiben Sie eine Nachricht an eine Kollegin: Sie sind krank und können nicht zur Arbeit kommen. Umfang: 40–60 Wörter Checkliste: • Schreiben Sie, was Ihnen fehlt. • Nennen Sie einen Grund mit weil oder deshalb. • Sagen Sie, wann Sie wahrscheinlich wiederkommen.",
+   "en": "come back",
+   "lemma": ""
+  }
+ ]
+}
