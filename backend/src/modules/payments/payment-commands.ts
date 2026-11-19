@@ -25,7 +25,7 @@ export const createPaymentTx = async (tx: Prisma.TransactionClient, input: Creat
   }
   const { currency } = await ledgerContext(tx, input.studentId, input.enrollmentId, input.currency);
   const method = await validateMethod(tx, input.methodId, input.reference);
-  if (method.code === "PAYPACK" && !gatewayConfirmed) throw badRequest("Paypack payments must be confirmed by the gateway");
+  if (method.code === "XENDLYPAY" && !gatewayConfirmed) throw badRequest("XendlyPay payments must be confirmed by the gateway");
   if (input.paidAt && input.paidAt > new Date()) throw badRequest("A received payment cannot be dated in the future");
   if (input.reference && await tx.payment.findFirst({ where: { methodId: input.methodId, reference: input.reference, txnType: "PAYMENT" } }))
     throw badRequest("This transaction reference is already recorded");
