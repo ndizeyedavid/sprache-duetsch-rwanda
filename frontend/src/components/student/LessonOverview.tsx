@@ -4,6 +4,7 @@ import type { StudentLesson } from '../../lib/services';
 import { humanize } from '../../lib/services';
 import { heroGhost } from '../hero/hero-actions';
 import { PageHero } from '../hero/PageHero';
+import { isLessonContent } from '../learn/types';
 import { isBookPractice } from './course-practice-utils';
 
 type Props = { detail: StudentLesson | null; code: string; slug: string; fallbackTitle?: string; position: string };
@@ -15,19 +16,22 @@ export function LessonOverview({ detail, code, slug, fallbackTitle, position }: 
   const feedback = detail?.activities.filter(a => a.mySubmission?.feedback) ?? [];
   const graded = submitted.filter(a => a.mySubmission?.status === 'GRADED').length;
   const waiting = submitted.filter(a => !isBookPractice(a) && a.mySubmission?.status !== 'GRADED').length;
+  const sessions = detail?.activities.filter(a => a.type === 'PRACTICE') ?? [];
+  const interactive = isLessonContent(detail?.content);
   return (
     <PageHero
       compact
       eyebrow={`${code} · ${position}`}
       icon={done ? FiCheckCircle : FiBookOpen}
       title={detail?.title ?? fallbackTitle ?? 'Lesson'}
-      description={detail ? done ? 'Lesson complete. Keep moving! Your progress is saved.' : 'Read, practise, then mark it complete.' : 'Opening your lesson…'}
+      description={detail ? done ? 'Lesson complete. Keep moving! Your progress is saved.' : interactive ? 'Learn the words and the grammar, then finish the practice sessions.' : 'Read, practise, then mark it complete.' : 'Opening your lesson…'}
       art="notes"
       meta={detail ? <>
         <span className="hero-chip hero-chip-solid">{done ? 'Completed' : humanize(detail.progressStatus)}</span>
         <span className="hero-chip">{humanize(detail.contentType)}{detail.estimatedMinutes ? ` · ${detail.estimatedMinutes} min` : ''}</span>
         {detail.materials.length ? <a href="#lesson-resources" className="hero-chip">{detail.materials.length} resources</a> : null}
-        {detail.activities.length ? <a href={detail.activities.some(isBookPractice) ? '#course-reading' : '#lesson-practice'} className="hero-chip">Practice · {submitted.length}/{detail.activities.length} submitted</a> : null}
+        {interactive && sessions.length ? <a href="#lesson-practice" className="hero-chip">Practice · {sessions.filter(a => a.mySubmission).length}/{sessions.length} sessions</a>
+          : detail.activities.length ? <a href={detail.activities.some(isBookPractice) ? '#course-reading' : '#lesson-practice'} className="hero-chip">Practice · {submitted.length}/{detail.activities.length} submitted</a> : null}
       </> : null}
       actions={<Link to={`/courses/${slug}/learn`} className={heroGhost}><FiArrowLeft aria-hidden />{code} course map</Link>}
       footer={feedback.length ? (
