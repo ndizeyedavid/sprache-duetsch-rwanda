@@ -1,7 +1,7 @@
 import { prisma } from '../../lib/prisma.js';
 
-/** Flip-card study sets: completion-based, never formal assignments or grading work. */
-export const SELF_STUDY_TYPES = ['VOCABULARY', 'FLASHCARD'] as const;
+/** Flip-card study sets and v2 practice sessions: completion-based, never formal assignments or grading work. */
+export const SELF_STUDY_TYPES = ['VOCABULARY', 'FLASHCARD', 'PRACTICE'] as const;
 
 export function isPracticeConfig(config: unknown): boolean {
   return !!config && typeof config === 'object' && 'practiceMode' in config && config.practiceMode === true;
