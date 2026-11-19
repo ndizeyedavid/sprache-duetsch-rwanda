@@ -1,0 +1,957 @@
+{
+ "level": "A1",
+ "lesson": 9,
+ "title": "Essen und Trinken — Ich möchte einen Kaffee, bitte",
+ "lines": [
+  {
+   "de": "Im Café bestellen und sagen, was man mag.",
+   "en": "Order in a café and say what you like."
+  },
+  {
+   "de": "Textsorte: Gespräch im Café · Speisekarte",
+   "en": "Text type: Conversation in a café · Menu"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Sprechen Teil 3 (bitten und reagieren)",
+   "en": "Exam link: Start Deutsch 1 Speaking part 3 (making requests and responding)"
+  },
+  {
+   "de": "Essen und Getränke bestellen",
+   "en": "order food and drinks"
+  },
+  {
+   "de": "mit möchte höflich etwas wünschen",
+   "en": "ask for something politely with möchte"
+  },
+  {
+   "de": "zusammengesetzte Nomen verstehen",
+   "en": "understand compound nouns"
+  },
+  {
+   "de": "Grammatik: möchte",
+   "en": "Grammar: möchte (would like)"
+  },
+  {
+   "de": "möchte ist die höfliche Form für einen Wunsch. Es funktioniert wie ein Modalverb: ich und er/sie haben dieselbe Form.",
+   "en": "möchte is the polite form for a wish. It works like a modal verb: ich and er/sie have the same form."
+  },
+  {
+   "de": "möchte",
+   "en": "would like"
+  },
+  {
+   "de": "mögen (= gern haben)",
+   "en": "mögen (= to like)"
+  },
+  {
+   "de": "mag",
+   "en": "like / likes"
+  },
+  {
+   "de": "möchtest",
+   "en": "(you) would like"
+  },
+  {
+   "de": "magst",
+   "en": "(you) like"
+  },
+  {
+   "de": "möchten",
+   "en": "would like"
+  },
+  {
+   "de": "mögen",
+   "en": "like; to like"
+  },
+  {
+   "de": "möchtet",
+   "en": "(you all) would like"
+  },
+  {
+   "de": "mögt",
+   "en": "(you all) like"
+  },
+  {
+   "de": "Ich möchte einen Kaffee, bitte.möchte + Akkusativ",
+   "en": "I would like a coffee, please. möchte + accusative"
+  },
+  {
+   "de": "Ich möchte etwas essen.möchte + Infinitiv am Ende",
+   "en": "I would like to eat something. möchte + infinitive at the end"
+  },
+  {
+   "de": "Ich mag Schokoladenkuchen.mögen = etwas gern haben",
+   "en": "I like chocolate cake. mögen = to like something"
+  },
+  {
+   "de": "Tipp: Unterschied: Ich mag Kaffee (immer gern). Ich möchte einen Kaffee (jetzt, bitte).",
+   "en": "Tip: The difference: I like coffee (always). I would like a coffee (now, please)."
+  },
+  {
+   "de": "Grammatik: Zusammengesetzte Nomen",
+   "en": "Grammar: Compound nouns (zusammengesetzte Nomen)"
+  },
+  {
+   "de": "Zwei Nomen werden zu einem Wort. Der Artikel kommt immer vom letzten Wort.",
+   "en": "Two nouns become one word. The article always comes from the last word."
+  },
+  {
+   "de": "Wort 1",
+   "en": "Word 1"
+  },
+  {
+   "de": "Wort 2",
+   "en": "Word 2"
+  },
+  {
+   "de": "Zusammen",
+   "en": "Together"
+  },
+  {
+   "de": "die Schokolade",
+   "en": "the chocolate"
+  },
+  {
+   "de": "der Kuchen",
+   "en": "the cake"
+  },
+  {
+   "de": "der Schokoladenkuchen",
+   "en": "the chocolate cake"
+  },
+  {
+   "de": "der Fisch",
+   "en": "the fish"
+  },
+  {
+   "de": "die Suppe",
+   "en": "the soup"
+  },
+  {
+   "de": "die Fischsuppe",
+   "en": "the fish soup"
+  },
+  {
+   "de": "der Apfel",
+   "en": "the apple"
+  },
+  {
+   "de": "der Saft",
+   "en": "the juice"
+  },
+  {
+   "de": "der Apfelsaft",
+   "en": "the apple juice"
+  },
+  {
+   "de": "die Tomate",
+   "en": "the tomato"
+  },
+  {
+   "de": "der Salat",
+   "en": "the salad"
+  },
+  {
+   "de": "der Tomatensalat",
+   "en": "the tomato salad"
+  },
+  {
+   "de": "Ich nehme einen Apfelsaft und eine Tomatensuppe.der Saft → der Apfelsaft; die Suppe → die Tomatensuppe",
+   "en": "I'll have an apple juice and a tomato soup. der Saft → der Apfelsaft; die Suppe → die Tomatensuppe"
+  },
+  {
+   "de": "Tipp: Das letzte Wort bestimmt den Artikel — und das erste Wort wird betont.",
+   "en": "Tip: The last word decides the article — and the first word is stressed."
+  },
+  {
+   "de": "der Kaffee, -s — EN: coffee · FR: le caféIch trinke jeden Morgen Kaffee.",
+   "en": "Example: I drink coffee every morning."
+  },
+  {
+   "de": "der Tee, -s — EN: tea · FR: le théMöchtest du einen Tee?",
+   "en": "Example: Would you like a tea?"
+  },
+  {
+   "de": "der Saft, ¨-e — EN: juice · FR: le jusEin Apfelsaft, bitte.",
+   "en": "Example: An apple juice, please."
+  },
+  {
+   "de": "das Wasser (Sg.) — EN: water · FR: l'eauEin Glas Wasser, bitte.",
+   "en": "Example: A glass of water, please."
+  },
+  {
+   "de": "der Kuchen, - — EN: cake · FR: le gâteauDer Kuchen schmeckt super.",
+   "en": "Example: The cake tastes great."
+  },
+  {
+   "de": "die Suppe, -n — EN: soup · FR: la soupeIch nehme eine Suppe.",
+   "en": "Example: I'll have a soup."
+  },
+  {
+   "de": "der Salat, -e — EN: salad · FR: la saladeAls Vorspeise einen Salat.",
+   "en": "Example: A salad as a starter."
+  },
+  {
+   "de": "das Brot, -e — EN: bread · FR: le painZum Frühstück esse ich Brot.",
+   "en": "Example: I eat bread for breakfast."
+  },
+  {
+   "de": "bestellen — EN: to order · FR: commanderHaben Sie schon bestellt?",
+   "en": "Example: Have you already ordered?"
+  },
+  {
+   "de": "schmecken — EN: to taste good · FR: avoir bon goûtDas schmeckt sehr gut!",
+   "en": "Example: That tastes very good!"
+  },
+  {
+   "de": "mögen — EN: to like · FR: aimerIch mag keinen Fisch.",
+   "en": "Example: I don't like fish."
+  },
+  {
+   "de": "zahlen — EN: to pay · FR: payerWir möchten zahlen, bitte.",
+   "en": "Example: We would like to pay, please."
+  },
+  {
+   "de": "bestellen",
+   "en": "ordering"
+  },
+  {
+   "de": "Ich möchte einen Kaffee, bitte.",
+   "en": "I would like a coffee, please."
+  },
+  {
+   "de": "Für mich bitte eine Suppe.",
+   "en": "A soup for me, please."
+  },
+  {
+   "de": "Ich nehme den Kuchen.",
+   "en": "I'll have the cake."
+  },
+  {
+   "de": "fragen und anbieten",
+   "en": "asking and offering"
+  },
+  {
+   "de": "Was möchten Sie?",
+   "en": "What would you like?"
+  },
+  {
+   "de": "Möchtest du auch etwas?",
+   "en": "Would you like something too?"
+  },
+  {
+   "de": "Noch einen Kaffee?",
+   "en": "Another coffee?"
+  },
+  {
+   "de": "bezahlen",
+   "en": "paying"
+  },
+  {
+   "de": "Wir möchten zahlen, bitte.",
+   "en": "We would like to pay, please."
+  },
+  {
+   "de": "Zusammen oder getrennt?",
+   "en": "Together or separately?"
+  },
+  {
+   "de": "Das macht 8,50 Euro.",
+   "en": "That comes to 8.50 euros."
+  },
+  {
+   "de": "Dialog: Im Café",
+   "en": "Dialogue: In the café"
+  },
+  {
+   "de": "Kellner: Guten Tag. Was möchten Sie?",
+   "en": "Waiter: Hello. What would you like?"
+  },
+  {
+   "de": "Nina: Ich möchte einen Kaffee und ein Stück Kuchen, bitte.",
+   "en": "Nina: I would like a coffee and a piece of cake, please."
+  },
+  {
+   "de": "Kellner: Gern. Welchen Kuchen möchten Sie?",
+   "en": "Waiter: Certainly. Which cake would you like?"
+  },
+  {
+   "de": "Nina: Den Schokoladenkuchen, bitte. Und du, Onkel Harry?",
+   "en": "Nina: The chocolate cake, please. And you, Uncle Harry?"
+  },
+  {
+   "de": "Harry: Ich möchte was essen. Haben Sie eine Suppe?",
+   "en": "Harry: I would like something to eat. Do you have any soup?"
+  },
+  {
+   "de": "Kellner: Ja, heute gibt es Tomatensuppe.",
+   "en": "Waiter: Yes, today there is tomato soup."
+  },
+  {
+   "de": "Ich trinke jeden Morgen Kaffee.",
+   "en": "I drink coffee every morning."
+  },
+  {
+   "de": "Möchtest du einen Tee?",
+   "en": "Would you like a tea?"
+  },
+  {
+   "de": "Ein Apfelsaft, bitte.",
+   "en": "An apple juice, please."
+  },
+  {
+   "de": "Ein Glas Wasser, bitte.",
+   "en": "A glass of water, please."
+  },
+  {
+   "de": "Der Kuchen schmeckt super.",
+   "en": "The cake tastes great."
+  },
+  {
+   "de": "Ich nehme eine Suppe.",
+   "en": "I'll have a soup."
+  },
+  {
+   "de": "Als Vorspeise einen Salat.",
+   "en": "A salad as a starter."
+  },
+  {
+   "de": "Zum Frühstück esse ich Brot.",
+   "en": "I eat bread for breakfast."
+  },
+  {
+   "de": "Haben Sie schon bestellt?",
+   "en": "Have you already ordered?"
+  },
+  {
+   "de": "Das schmeckt sehr gut!",
+   "en": "That tastes very good!"
+  },
+  {
+   "de": "Ich mag keinen Fisch.",
+   "en": "I don't like fish."
+  },
+  {
+   "de": "Ich ___ einen Kaffee, bitte. (möchte, ich)",
+   "en": "I ___ a coffee, please. (möchte, ich)"
+  },
+  {
+   "de": "___ du auch etwas trinken?",
+   "en": "___ you like something to drink too?"
+  },
+  {
+   "de": "die Schokolade + der Kuchen =",
+   "en": "the chocolate + the cake ="
+  },
+  {
+   "de": "der Fisch + die Suppe = ___ Fischsuppe (Artikel)",
+   "en": "the fish + the soup = ___ fish soup (article)"
+  },
+  {
+   "de": "Was bedeutet „Ich mag Kaffee\"?",
+   "en": "What does \"Ich mag Kaffee\" mean?"
+  },
+  {
+   "de": "Schreiben Sie, was Sie im Café bestellen und was Sie gern mögen. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie dreimal möchte mit dem Akkusativ. • Benutzen Sie einmal mögen. • Schreiben Sie ein zusammengesetztes Nomen (z. B. Apfelsaft).",
+   "en": "Write what you order in the café and what you like. Length: 25–35 words Checklist: • Use möchte with the accusative three times. • Use mögen once. • Write a compound noun (e.g. Apfelsaft)."
+  },
+  {
+   "de": "ich möchte — ohne Endung.",
+   "en": "ich möchte — without an ending."
+  },
+  {
+   "de": "2. Person Singular: möchtest.",
+   "en": "2nd person singular: möchtest."
+  },
+  {
+   "de": "Der Artikel kommt vom letzten Wort: der Kuchen.",
+   "en": "The article comes from the last word: der Kuchen."
+  },
+  {
+   "de": "Das letzte Wort ist die Suppe → die Fischsuppe.",
+   "en": "The last word is die Suppe → die Fischsuppe."
+  },
+  {
+   "de": "mögen beschreibt eine allgemeine Vorliebe, möchte einen Wunsch im Moment.",
+   "en": "mögen describes a general preference, möchte a wish at the moment."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Café",
+   "context": "Im Café bestellen und sagen, was man mag.",
+   "en": "café",
+   "lemma": "das Café"
+  },
+  {
+   "form": "bestellen",
+   "context": "Im Café bestellen und sagen, was man mag.",
+   "en": "to order",
+   "lemma": ""
+  },
+  {
+   "form": "mag",
+   "context": "Im Café bestellen und sagen, was man mag.",
+   "en": "like, likes",
+   "lemma": "mögen"
+  },
+  {
+   "form": "Speisekarte",
+   "context": "Textsorte: Gespräch im Café · Speisekarte",
+   "en": "menu",
+   "lemma": "die Speisekarte"
+  },
+  {
+   "form": "reagieren",
+   "context": "Prüfungsbezug: Start Deutsch 1 Sprechen Teil 3 (bitten und reagieren)",
+   "en": "to react, to respond",
+   "lemma": ""
+  },
+  {
+   "form": "Getränke",
+   "context": "Essen und Getränke bestellen",
+   "en": "drinks",
+   "lemma": "das Getränk"
+  },
+  {
+   "form": "möchte",
+   "context": "mit möchte höflich etwas wünschen",
+   "en": "would like",
+   "lemma": "möchten"
+  },
+  {
+   "form": "höflich",
+   "context": "mit möchte höflich etwas wünschen",
+   "en": "polite; politely",
+   "lemma": ""
+  },
+  {
+   "form": "wünschen",
+   "context": "mit möchte höflich etwas wünschen",
+   "en": "to wish, to want",
+   "lemma": ""
+  },
+  {
+   "form": "zusammengesetzte",
+   "context": "zusammengesetzte Nomen verstehen",
+   "en": "compound",
+   "lemma": "zusammengesetzt"
+  },
+  {
+   "form": "verstehen",
+   "context": "zusammengesetzte Nomen verstehen",
+   "en": "to understand",
+   "lemma": ""
+  },
+  {
+   "form": "Wunsch",
+   "context": "möchte ist die höfliche Form für einen Wunsch. Es funktioniert wie ein Modalverb: ich und er/sie haben dieselbe Form.",
+   "en": "wish",
+   "lemma": "der Wunsch"
+  },
+  {
+   "form": "mögen",
+   "context": "mögen (= gern haben)",
+   "en": "to like",
+   "lemma": ""
+  },
+  {
+   "form": "möchtest",
+   "context": "möchtest",
+   "en": "would like (with du)",
+   "lemma": "möchten"
+  },
+  {
+   "form": "magst",
+   "context": "magst",
+   "en": "like (with du)",
+   "lemma": "mögen"
+  },
+  {
+   "form": "möchten",
+   "context": "möchten",
+   "en": "would like",
+   "lemma": ""
+  },
+  {
+   "form": "möchtet",
+   "context": "möchtet",
+   "en": "would like (with ihr)",
+   "lemma": "möchten"
+  },
+  {
+   "form": "mögt",
+   "context": "mögt",
+   "en": "like (with ihr)",
+   "lemma": "mögen"
+  },
+  {
+   "form": "Kaffee",
+   "context": "Ich möchte einen Kaffee, bitte.möchte + Akkusativ",
+   "en": "coffee",
+   "lemma": "der Kaffee"
+  },
+  {
+   "form": "Schokoladenkuchen",
+   "context": "Ich mag Schokoladenkuchen.mögen = etwas gern haben",
+   "en": "chocolate cake",
+   "lemma": "der Schokoladenkuchen"
+  },
+  {
+   "form": "Unterschied",
+   "context": "Tipp: Unterschied: Ich mag Kaffee (immer gern). Ich möchte einen Kaffee (jetzt, bitte).",
+   "en": "difference",
+   "lemma": "der Unterschied"
+  },
+  {
+   "form": "Zusammengesetzte",
+   "context": "Grammatik: Zusammengesetzte Nomen",
+   "en": "compound",
+   "lemma": "zusammengesetzt"
+  },
+  {
+   "form": "werden",
+   "context": "Zwei Nomen werden zu einem Wort. Der Artikel kommt immer vom letzten Wort.",
+   "en": "become; will",
+   "lemma": ""
+  },
+  {
+   "form": "vom",
+   "context": "Zwei Nomen werden zu einem Wort. Der Artikel kommt immer vom letzten Wort.",
+   "en": "from the, of the (von + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "letzten",
+   "context": "Zwei Nomen werden zu einem Wort. Der Artikel kommt immer vom letzten Wort.",
+   "en": "last",
+   "lemma": "letzte"
+  },
+  {
+   "form": "Schokolade",
+   "context": "die Schokolade",
+   "en": "chocolate",
+   "lemma": "die Schokolade"
+  },
+  {
+   "form": "Kuchen",
+   "context": "der Kuchen",
+   "en": "cake",
+   "lemma": "der Kuchen"
+  },
+  {
+   "form": "Fisch",
+   "context": "der Fisch",
+   "en": "fish",
+   "lemma": "der Fisch"
+  },
+  {
+   "form": "Suppe",
+   "context": "die Suppe",
+   "en": "soup",
+   "lemma": "die Suppe"
+  },
+  {
+   "form": "Fischsuppe",
+   "context": "die Fischsuppe",
+   "en": "fish soup",
+   "lemma": "die Fischsuppe"
+  },
+  {
+   "form": "Apfel",
+   "context": "der Apfel",
+   "en": "apple",
+   "lemma": "der Apfel"
+  },
+  {
+   "form": "Saft",
+   "context": "der Saft",
+   "en": "juice",
+   "lemma": "der Saft"
+  },
+  {
+   "form": "Apfelsaft",
+   "context": "der Apfelsaft",
+   "en": "apple juice",
+   "lemma": "der Apfelsaft"
+  },
+  {
+   "form": "Tomate",
+   "context": "die Tomate",
+   "en": "tomato",
+   "lemma": "die Tomate"
+  },
+  {
+   "form": "Salat",
+   "context": "der Salat",
+   "en": "salad; lettuce",
+   "lemma": "der Salat"
+  },
+  {
+   "form": "Tomatensalat",
+   "context": "der Tomatensalat",
+   "en": "tomato salad",
+   "lemma": "der Tomatensalat"
+  },
+  {
+   "form": "nehme",
+   "context": "Ich nehme einen Apfelsaft und eine Tomatensuppe.der Saft → der Apfelsaft; die Suppe → die Tomatensuppe",
+   "en": "take; I'll have",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "Tomatensuppe",
+   "context": "Ich nehme einen Apfelsaft und eine Tomatensuppe.der Saft → der Apfelsaft; die Suppe → die Tomatensuppe",
+   "en": "tomato soup",
+   "lemma": "die Tomatensuppe"
+  },
+  {
+   "form": "letzte",
+   "context": "Tipp: Das letzte Wort bestimmt den Artikel — und das erste Wort wird betont.",
+   "en": "last",
+   "lemma": ""
+  },
+  {
+   "form": "erste",
+   "context": "Tipp: Das letzte Wort bestimmt den Artikel — und das erste Wort wird betont.",
+   "en": "first",
+   "lemma": ""
+  },
+  {
+   "form": "wird",
+   "context": "Tipp: Das letzte Wort bestimmt den Artikel — und das erste Wort wird betont.",
+   "en": "is (wird betont = is stressed); becomes",
+   "lemma": "werden"
+  },
+  {
+   "form": "betont",
+   "context": "Tipp: Das letzte Wort bestimmt den Artikel — und das erste Wort wird betont.",
+   "en": "stressed (in speaking)",
+   "lemma": "betonen"
+  },
+  {
+   "form": "coffee",
+   "context": "der Kaffee, -s — EN: coffee · FR: le caféIch trinke jeden Morgen Kaffee.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "caféIch",
+   "context": "der Kaffee, -s — EN: coffee · FR: le caféIch trinke jeden Morgen Kaffee.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "trinke",
+   "context": "der Kaffee, -s — EN: coffee · FR: le caféIch trinke jeden Morgen Kaffee.",
+   "en": "drink",
+   "lemma": "trinken"
+  },
+  {
+   "form": "jeden",
+   "context": "der Kaffee, -s — EN: coffee · FR: le caféIch trinke jeden Morgen Kaffee.",
+   "en": "every",
+   "lemma": ""
+  },
+  {
+   "form": "Tee",
+   "context": "der Tee, -s — EN: tea · FR: le théMöchtest du einen Tee?",
+   "en": "tea",
+   "lemma": "der Tee"
+  },
+  {
+   "form": "tea",
+   "context": "der Tee, -s — EN: tea · FR: le théMöchtest du einen Tee?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "théMöchtest",
+   "context": "der Tee, -s — EN: tea · FR: le théMöchtest du einen Tee?",
+   "en": "would like (with du)",
+   "lemma": ""
+  },
+  {
+   "form": "juice",
+   "context": "der Saft, ¨-e — EN: juice · FR: le jusEin Apfelsaft, bitte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jusEin",
+   "context": "der Saft, ¨-e — EN: juice · FR: le jusEin Apfelsaft, bitte.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "Wasser",
+   "context": "das Wasser (Sg.) — EN: water · FR: l'eauEin Glas Wasser, bitte.",
+   "en": "water",
+   "lemma": "das Wasser"
+  },
+  {
+   "form": "Sg",
+   "context": "das Wasser (Sg.) — EN: water · FR: l'eauEin Glas Wasser, bitte.",
+   "en": "singular (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "water",
+   "context": "das Wasser (Sg.) — EN: water · FR: l'eauEin Glas Wasser, bitte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'eauEin",
+   "context": "das Wasser (Sg.) — EN: water · FR: l'eauEin Glas Wasser, bitte.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "Glas",
+   "context": "das Wasser (Sg.) — EN: water · FR: l'eauEin Glas Wasser, bitte.",
+   "en": "glass",
+   "lemma": "das Glas"
+  },
+  {
+   "form": "cake",
+   "context": "der Kuchen, - — EN: cake · FR: le gâteauDer Kuchen schmeckt super.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gâteauDer",
+   "context": "der Kuchen, - — EN: cake · FR: le gâteauDer Kuchen schmeckt super.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "schmeckt",
+   "context": "der Kuchen, - — EN: cake · FR: le gâteauDer Kuchen schmeckt super.",
+   "en": "tastes",
+   "lemma": "schmecken"
+  },
+  {
+   "form": "soup",
+   "context": "die Suppe, -n — EN: soup · FR: la soupeIch nehme eine Suppe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soupeIch",
+   "context": "die Suppe, -n — EN: soup · FR: la soupeIch nehme eine Suppe.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "salad",
+   "context": "der Salat, -e — EN: salad · FR: la saladeAls Vorspeise einen Salat.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "saladeAls",
+   "context": "der Salat, -e — EN: salad · FR: la saladeAls Vorspeise einen Salat.",
+   "en": "as",
+   "lemma": ""
+  },
+  {
+   "form": "Vorspeise",
+   "context": "der Salat, -e — EN: salad · FR: la saladeAls Vorspeise einen Salat.",
+   "en": "starter",
+   "lemma": "die Vorspeise"
+  },
+  {
+   "form": "Brot",
+   "context": "das Brot, -e — EN: bread · FR: le painZum Frühstück esse ich Brot.",
+   "en": "bread",
+   "lemma": "das Brot"
+  },
+  {
+   "form": "bread",
+   "context": "das Brot, -e — EN: bread · FR: le painZum Frühstück esse ich Brot.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "painZum",
+   "context": "das Brot, -e — EN: bread · FR: le painZum Frühstück esse ich Brot.",
+   "en": "for the (zu + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "Frühstück",
+   "context": "das Brot, -e — EN: bread · FR: le painZum Frühstück esse ich Brot.",
+   "en": "breakfast",
+   "lemma": "das Frühstück"
+  },
+  {
+   "form": "esse",
+   "context": "das Brot, -e — EN: bread · FR: le painZum Frühstück esse ich Brot.",
+   "en": "eat",
+   "lemma": "essen"
+  },
+  {
+   "form": "order",
+   "context": "bestellen — EN: to order · FR: commanderHaben Sie schon bestellt?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "commanderHaben",
+   "context": "bestellen — EN: to order · FR: commanderHaben Sie schon bestellt?",
+   "en": "have",
+   "lemma": ""
+  },
+  {
+   "form": "bestellt",
+   "context": "bestellen — EN: to order · FR: commanderHaben Sie schon bestellt?",
+   "en": "ordered",
+   "lemma": "bestellen"
+  },
+  {
+   "form": "schmecken",
+   "context": "schmecken — EN: to taste good · FR: avoir bon goûtDas schmeckt sehr gut!",
+   "en": "to taste (good)",
+   "lemma": ""
+  },
+  {
+   "form": "taste",
+   "context": "schmecken — EN: to taste good · FR: avoir bon goûtDas schmeckt sehr gut!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "good",
+   "context": "schmecken — EN: to taste good · FR: avoir bon goûtDas schmeckt sehr gut!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "goûtDas",
+   "context": "schmecken — EN: to taste good · FR: avoir bon goûtDas schmeckt sehr gut!",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "like",
+   "context": "mögen — EN: to like · FR: aimerIch mag keinen Fisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aimerIch",
+   "context": "mögen — EN: to like · FR: aimerIch mag keinen Fisch.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "zahlen",
+   "context": "zahlen — EN: to pay · FR: payerWir möchten zahlen, bitte.",
+   "en": "to pay",
+   "lemma": ""
+  },
+  {
+   "form": "pay",
+   "context": "zahlen — EN: to pay · FR: payerWir möchten zahlen, bitte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "payerWir",
+   "context": "zahlen — EN: to pay · FR: payerWir möchten zahlen, bitte.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "mich",
+   "context": "Für mich bitte eine Suppe.",
+   "en": "me",
+   "lemma": ""
+  },
+  {
+   "form": "anbieten",
+   "context": "fragen und anbieten",
+   "en": "to offer",
+   "lemma": ""
+  },
+  {
+   "form": "Möchtest",
+   "context": "Möchtest du auch etwas?",
+   "en": "would like (with du)",
+   "lemma": "möchten"
+  },
+  {
+   "form": "bezahlen",
+   "context": "bezahlen",
+   "en": "to pay",
+   "lemma": ""
+  },
+  {
+   "form": "getrennt",
+   "context": "Zusammen oder getrennt?",
+   "en": "separately",
+   "lemma": ""
+  },
+  {
+   "form": "Kellner",
+   "context": "Kellner: Guten Tag. Was möchten Sie?",
+   "en": "waiter",
+   "lemma": "der Kellner"
+  },
+  {
+   "form": "Nina",
+   "context": "Nina: Ich möchte einen Kaffee und ein Stück Kuchen, bitte.",
+   "en": "Nina (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Stück",
+   "context": "Nina: Ich möchte einen Kaffee und ein Stück Kuchen, bitte.",
+   "en": "piece",
+   "lemma": "das Stück"
+  },
+  {
+   "form": "Welchen",
+   "context": "Kellner: Gern. Welchen Kuchen möchten Sie?",
+   "en": "which",
+   "lemma": ""
+  },
+  {
+   "form": "Onkel",
+   "context": "Nina: Den Schokoladenkuchen, bitte. Und du, Onkel Harry?",
+   "en": "uncle",
+   "lemma": "der Onkel"
+  },
+  {
+   "form": "Harry",
+   "context": "Nina: Den Schokoladenkuchen, bitte. Und du, Onkel Harry?",
+   "en": "Harry (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Zum",
+   "context": "Zum Frühstück esse ich Brot.",
+   "en": "for the, to the (zu + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "trinken",
+   "context": "___ du auch etwas trinken?",
+   "en": "to drink",
+   "lemma": ""
+  },
+  {
+   "form": "bedeutet",
+   "context": "Was bedeutet „Ich mag Kaffee\"?",
+   "en": "means",
+   "lemma": "bedeuten"
+  },
+  {
+   "form": "zusammengesetztes",
+   "context": "Schreiben Sie, was Sie im Café bestellen und was Sie gern mögen. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie dreimal möchte mit dem Akkusativ. • Benutzen Sie einmal mögen. • Schreiben Sie ein zusammengesetztes Nomen (z. B. Apfelsaft).",
+   "en": "compound",
+   "lemma": "zusammengesetzt"
+  }
+ ]
+}
