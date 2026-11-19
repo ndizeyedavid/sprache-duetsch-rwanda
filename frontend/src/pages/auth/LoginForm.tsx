@@ -2,6 +2,7 @@ import type { FormEvent } from 'react';
 import { useEffect, useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link, useNavigate } from 'react-router-dom';
+import { PasswordField } from '../../components/auth/PasswordField';
 import { apiErrorMessage } from '../../lib/api';
 import { login } from '../../lib/auth-store';
 import { homePath } from '../../lib/roles';
@@ -50,11 +51,8 @@ export function LoginForm() {
           <input type="email" required autoComplete="email" placeholder="name@sparch.rw" value={email}
             onChange={(event) => setEmail(event.currentTarget.value)} className={FIELD} />
         </label>
-        <label className="block">
-          <span className="mb-2 block text-sm font-medium">Password</span>
-          <input type="password" required autoComplete="current-password" placeholder="••••••••" value={password}
-            onChange={(event) => setPassword(event.currentTarget.value)} className={FIELD} />
-        </label>
+        <PasswordField label="Password" autoComplete="current-password" placeholder="••••••••" value={password}
+          onChange={setPassword} inputClassName={FIELD} labelClassName="mb-2 block text-sm font-medium" />
 
         {error ? (
           <p role="alert" className="rounded-field bg-coral text-error-content px-3 py-2 text-xs font-medium text-coral">{error}</p>
