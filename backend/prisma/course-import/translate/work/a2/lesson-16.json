@@ -1,0 +1,737 @@
+{
+ "level": "A2",
+ "lesson": 16,
+ "title": "Im Hotel — Darf ich fragen, ob …?",
+ "lines": [
+  {
+   "de": "Ein Zimmer buchen, höflich nachfragen und den Weg beschreiben.",
+   "en": "Book a room, ask politely and describe the way."
+  },
+  {
+   "de": "Textsorte: Telefongespräch · Hotelbeschreibung",
+   "en": "Text type: Phone call · Hotel description"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 2; telc A2 Sprechen",
+   "en": "Exam link: Goethe A2 Speaking part 2; telc A2 Speaking"
+  },
+  {
+   "de": "ein Hotelzimmer buchen",
+   "en": "book a hotel room"
+  },
+  {
+   "de": "höflich mit indirekten Fragen nachfragen",
+   "en": "ask politely with indirect questions"
+  },
+  {
+   "de": "den Weg mit lokalen Präpositionen beschreiben",
+   "en": "describe the way with prepositions of place"
+  },
+  {
+   "de": "Grammatik: Indirekte Fragen",
+   "en": "Grammar: Indirect questions (indirekte Fragen)"
+  },
+  {
+   "de": "Indirekte Fragen klingen höflicher. Sie stehen in einem Nebensatz — das Verb geht ans Ende. Bei W-Fragen bleibt das Fragewort, bei Ja/Nein-Fragen benutzt man ob.",
+   "en": "Indirect questions sound more polite. They are in a subordinate clause (Nebensatz) — the verb goes to the end. In W-questions the question word stays; in yes/no questions you use ob."
+  },
+  {
+   "de": "Direkte Frage",
+   "en": "Direct question"
+  },
+  {
+   "de": "Indirekte Frage",
+   "en": "Indirect question"
+  },
+  {
+   "de": "Gibt es noch ein Zimmer frei?",
+   "en": "Is there still a room free?"
+  },
+  {
+   "de": "Darf ich fragen, ob noch ein Zimmer frei ist?",
+   "en": "May I ask whether there is still a room free?"
+  },
+  {
+   "de": "Wie lange bleiben Sie?",
+   "en": "How long are you staying?"
+  },
+  {
+   "de": "Können Sie mir sagen, wie lange Sie bleiben?",
+   "en": "Can you tell me how long you are staying?"
+  },
+  {
+   "de": "Wann gibt es Frühstück?",
+   "en": "When is breakfast?"
+  },
+  {
+   "de": "Wissen Sie, wann es Frühstück gibt?",
+   "en": "Do you know when breakfast is?"
+  },
+  {
+   "de": "Ist das Zimmer ruhig?",
+   "en": "Is the room quiet?"
+  },
+  {
+   "de": "Ich möchte gern wissen, ob das Zimmer ruhig ist.",
+   "en": "I would like to know whether the room is quiet."
+  },
+  {
+   "de": "Darf ich fragen, ob das Frühstück inklusive ist?Ja/Nein-Frage → ob",
+   "en": "May I ask whether breakfast is included? — yes/no question → ob"
+  },
+  {
+   "de": "Können Sie mir sagen, wo der Aufzug ist?W-Frage → Fragewort bleibt",
+   "en": "Can you tell me where the lift is? — W-question → the question word stays"
+  },
+  {
+   "de": "Tipp: Nach ob und nach dem Fragewort steht nie die Frage-Wortstellung: nicht „…, ob ist das Zimmer frei\", sondern „…, ob das Zimmer frei ist\".",
+   "en": "Tip: After ob and after the question word, you never use question word order: not “…, ob ist das Zimmer frei”, but “…, ob das Zimmer frei ist”."
+  },
+  {
+   "de": "Grammatik: Lokale Präpositionen: den Weg beschreiben",
+   "en": "Grammar: Prepositions of place: describing the way"
+  },
+  {
+   "de": "Für Wegbeschreibungen braucht man ein paar feste Ausdrücke. gegenüber und an … vorbei stehen mit dem Dativ, durch mit dem Akkusativ.",
+   "en": "For directions you need a few fixed expressions. gegenüber and an … vorbei take the dative, durch takes the accusative."
+  },
+  {
+   "de": "gegenüber (von)",
+   "en": "opposite"
+  },
+  {
+   "de": "Das Hotel liegt gegenüber dem Bahnhof.",
+   "en": "The hotel is opposite the station."
+  },
+  {
+   "de": "an … vorbei",
+   "en": "past …"
+  },
+  {
+   "de": "Gehen Sie an der Kirche vorbei.",
+   "en": "Go past the church."
+  },
+  {
+   "de": "durch",
+   "en": "through"
+  },
+  {
+   "de": "Gehen Sie durch den Park.",
+   "en": "Go through the park."
+  },
+  {
+   "de": "bis zu",
+   "en": "as far as, up to"
+  },
+  {
+   "de": "Gehen Sie bis zur Ampel.",
+   "en": "Go as far as the traffic lights."
+  },
+  {
+   "de": "um … herum",
+   "en": "around …"
+  },
+  {
+   "de": "Gehen Sie um das Gebäude herum.",
+   "en": "Go around the building."
+  },
+  {
+   "de": "Gehen Sie geradeaus und dann an der Post vorbei.an + Dativ … vorbei",
+   "en": "Go straight ahead and then past the post office. — an + dative … vorbei"
+  },
+  {
+   "de": "Das Restaurant ist gleich gegenüber dem Hotel.gegenüber + Dativ",
+   "en": "The restaurant is right opposite the hotel. — gegenüber + dative"
+  },
+  {
+   "de": "Tipp: vorbei und herum stehen immer hinter dem Nomen: an der Kirche vorbei, um den Platz herum.",
+   "en": "Tip: vorbei and herum always come after the noun: an der Kirche vorbei, um den Platz herum."
+  },
+  {
+   "de": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "Example: I would like a double room."
+  },
+  {
+   "de": "die Rezeption (Sg.) — EN: reception · FR: la réceptionDie Rezeption ist rund um die Uhr besetzt.",
+   "en": "Example: The reception is staffed around the clock."
+  },
+  {
+   "de": "buchen / reservieren — EN: to book / reserve · FR: réserverIch möchte ein Zimmer für zwei Nächte buchen.",
+   "en": "Example: I would like to book a room for two nights."
+  },
+  {
+   "de": "inklusive — EN: included · FR: inclusIst das Frühstück inklusive?",
+   "en": "Example: Is breakfast included?"
+  },
+  {
+   "de": "die Übernachtung, -en — EN: night, overnight stay · FR: la nuitéeWas kostet eine Übernachtung?",
+   "en": "Example: How much does one night cost?"
+  },
+  {
+   "de": "der Aufzug, ¨-e — EN: lift, elevator · FR: l'ascenseurDer Aufzug ist leider kaputt.",
+   "en": "Example: Unfortunately, the lift is broken."
+  },
+  {
+   "de": "die Anmeldung (Sg.) — EN: check-in, registration · FR: l'enregistrementDie Anmeldung ist ab 14 Uhr möglich.",
+   "en": "Example: Check-in is possible from 14:00."
+  },
+  {
+   "de": "ruhig / laut — EN: quiet / noisy · FR: calme / bruyantHaben Sie ein ruhigeres Zimmer?",
+   "en": "Example: Do you have a quieter room?"
+  },
+  {
+   "de": "geradeaus — EN: straight ahead · FR: tout droitGehen Sie einfach geradeaus.",
+   "en": "Example: Just go straight ahead."
+  },
+  {
+   "de": "die Ampel, -n — EN: traffic light · FR: le feuAn der Ampel biegen Sie links ab.",
+   "en": "Example: At the traffic lights, turn left."
+  },
+  {
+   "de": "abbiegen (bog ab) — EN: to turn off · FR: tournerBiegen Sie rechts ab.",
+   "en": "Example: Turn right."
+  },
+  {
+   "de": "in der Nähe von — EN: near · FR: près deDas Hotel ist in der Nähe vom Bahnhof.",
+   "en": "Example: The hotel is near the station."
+  },
+  {
+   "de": "ein Zimmer buchen",
+   "en": "Booking a room"
+  },
+  {
+   "de": "Ich möchte ein Zimmer für zwei Nächte buchen.",
+   "en": "I would like to book a room for two nights."
+  },
+  {
+   "de": "Haben Sie vom 3. bis zum 5. Mai noch etwas frei?",
+   "en": "Do you still have anything free from 3 to 5 May?"
+  },
+  {
+   "de": "Was kostet die Übernachtung?",
+   "en": "How much does a night cost?"
+  },
+  {
+   "de": "höflich nachfragen",
+   "en": "Asking politely"
+  },
+  {
+   "de": "Darf ich fragen, ob …?",
+   "en": "May I ask whether …?"
+  },
+  {
+   "de": "Könnten Sie mir sagen, wann …?",
+   "en": "Could you tell me when …?"
+  },
+  {
+   "de": "Ich wüsste gern, ob …",
+   "en": "I would like to know whether …"
+  },
+  {
+   "de": "Gehen Sie geradeaus bis zur Ampel.",
+   "en": "Go straight ahead as far as the traffic lights."
+  },
+  {
+   "de": "Dann biegen Sie links ab.",
+   "en": "Then turn left."
+  },
+  {
+   "de": "Das Hotel ist gegenüber dem Bahnhof.",
+   "en": "The hotel is opposite the station."
+  },
+  {
+   "de": "Dialog: Ein Zimmer buchen",
+   "en": "Dialogue: Booking a room"
+  },
+  {
+   "de": "Gast: Guten Tag. Darf ich fragen, ob Sie am Wochenende noch ein Zimmer frei haben?",
+   "en": "Guest: Hello. May I ask whether you still have a room free at the weekend?"
+  },
+  {
+   "de": "Rezeption: Für wie viele Nächte denn?",
+   "en": "Reception: For how many nights?"
+  },
+  {
+   "de": "Gast: Für zwei. Und können Sie mir sagen, ob das Frühstück inklusive ist?",
+   "en": "Guest: For two. And can you tell me whether breakfast is included?"
+  },
+  {
+   "de": "Rezeption: Ja, Frühstück ist im Preis enthalten. 95 Euro pro Nacht.",
+   "en": "Reception: Yes, breakfast is included in the price. 95 euros per night."
+  },
+  {
+   "de": "Gast: Gut. Und wissen Sie, wie ich vom Bahnhof zu Ihnen komme?",
+   "en": "Guest: Good. And do you know how I get to you from the station?"
+  },
+  {
+   "de": "Rezeption: Ganz einfach: geradeaus, an der Post vorbei — wir sind gegenüber dem Park.",
+   "en": "Reception: Very easy: straight ahead, past the post office — we are opposite the park."
+  },
+  {
+   "de": "Ich hätte gern ein Doppelzimmer.",
+   "en": "I would like a double room."
+  },
+  {
+   "de": "Die Rezeption ist rund um die Uhr besetzt.",
+   "en": "The reception is staffed around the clock."
+  },
+  {
+   "de": "Ist das Frühstück inklusive?",
+   "en": "Is breakfast included?"
+  },
+  {
+   "de": "Der Aufzug ist leider kaputt.",
+   "en": "Unfortunately, the lift is broken."
+  },
+  {
+   "de": "Die Anmeldung ist ab 14 Uhr möglich.",
+   "en": "Check-in is possible from 14:00."
+  },
+  {
+   "de": "Haben Sie ein ruhigeres Zimmer?",
+   "en": "Do you have a quieter room?"
+  },
+  {
+   "de": "Gehen Sie einfach geradeaus.",
+   "en": "Just go straight ahead."
+  },
+  {
+   "de": "An der Ampel biegen Sie links ab.",
+   "en": "At the traffic lights, turn left."
+  },
+  {
+   "de": "Biegen Sie rechts ab.",
+   "en": "Turn right."
+  },
+  {
+   "de": "Das Hotel ist in der Nähe vom Bahnhof.",
+   "en": "The hotel is near the station."
+  },
+  {
+   "de": "Können Sie mir sagen, ___ der Aufzug ist? (W-Frage: Wo?)",
+   "en": "Can you tell me ___ the lift is? (W-question: Wo?)"
+  },
+  {
+   "de": "Gehen Sie an ___ Kirche vorbei. (die, Dativ)",
+   "en": "Go past ___ church. (die, dative)"
+  },
+  {
+   "de": "Das Hotel liegt ___ dem Bahnhof.",
+   "en": "The hotel is ___ the station."
+  },
+  {
+   "de": "Gehen Sie ___ den Park. (Präposition mit Akkusativ)",
+   "en": "Go ___ the park. (preposition with accusative)"
+  },
+  {
+   "de": "Schreiben Sie eine E-Mail an ein Hotel und fragen Sie nach einem Zimmer. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Datum, Anzahl der Nächte und Zimmertyp. • Stellen Sie zwei indirekte Fragen (ob / wann). • Schreiben Sie eine passende Anrede und Schlussformel.",
+   "en": "Write an email to a hotel and ask about a room. Length: 50–70 words Checklist: • Give the date, the number of nights and the type of room. • Ask two indirect questions (ob / wann). • Write a suitable greeting and closing."
+  },
+  {
+   "de": "Nach ob steht das Verb am Ende des Nebensatzes.",
+   "en": "After ob, the verb goes at the end of the subordinate clause."
+  },
+  {
+   "de": "Bei W-Fragen bleibt das Fragewort erhalten.",
+   "en": "In W-questions, the question word is kept."
+  },
+  {
+   "de": "an … vorbei steht mit dem Dativ.",
+   "en": "an … vorbei takes the dative."
+  },
+  {
+   "de": "gegenüber + Dativ bedeutet „auf der anderen Seite\".",
+   "en": "gegenüber + dative means “on the other side”."
+  },
+  {
+   "de": "durch + Akkusativ.",
+   "en": "durch + accusative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "buchen",
+   "context": "Ein Zimmer buchen, höflich nachfragen und den Weg beschreiben.",
+   "en": "to book",
+   "lemma": ""
+  },
+  {
+   "form": "Hotelbeschreibung",
+   "context": "Textsorte: Telefongespräch · Hotelbeschreibung",
+   "en": "hotel description",
+   "lemma": "die Hotelbeschreibung"
+  },
+  {
+   "form": "Hotelzimmer",
+   "context": "ein Hotelzimmer buchen",
+   "en": "hotel room",
+   "lemma": "das Hotelzimmer"
+  },
+  {
+   "form": "indirekten",
+   "context": "höflich mit indirekten Fragen nachfragen",
+   "en": "indirect",
+   "lemma": "indirekt"
+  },
+  {
+   "form": "lokalen",
+   "context": "den Weg mit lokalen Präpositionen beschreiben",
+   "en": "of place; local",
+   "lemma": "lokal"
+  },
+  {
+   "form": "Indirekte",
+   "context": "Grammatik: Indirekte Fragen",
+   "en": "indirect",
+   "lemma": "indirekt"
+  },
+  {
+   "form": "Nein-Fragen",
+   "context": "Indirekte Fragen klingen höflicher. Sie stehen in einem Nebensatz — das Verb geht ans Ende. Bei W-Fragen bleibt das Fragewort, bei Ja/Nein-Fragen benutzt man ob.",
+   "en": "(Ja/Nein-Fragen) yes/no questions",
+   "lemma": "die Ja/Nein-Frage"
+  },
+  {
+   "form": "Direkte",
+   "context": "Direkte Frage",
+   "en": "direct",
+   "lemma": "direkt"
+  },
+  {
+   "form": "Wissen",
+   "context": "Wissen Sie, wann es Frühstück gibt?",
+   "en": "know; (das Wissen) knowledge",
+   "lemma": "wissen"
+  },
+  {
+   "form": "wissen",
+   "context": "Ich möchte gern wissen, ob das Zimmer ruhig ist.",
+   "en": "to know",
+   "lemma": ""
+  },
+  {
+   "form": "inklusive",
+   "context": "Darf ich fragen, ob das Frühstück inklusive ist?Ja/Nein-Frage → ob",
+   "en": "included",
+   "lemma": ""
+  },
+  {
+   "form": "Aufzug",
+   "context": "Können Sie mir sagen, wo der Aufzug ist?W-Frage → Fragewort bleibt",
+   "en": "lift, elevator",
+   "lemma": "der Aufzug"
+  },
+  {
+   "form": "Frage-Wortstellung",
+   "context": "Tipp: Nach ob und nach dem Fragewort steht nie die Frage-Wortstellung: nicht „…, ob ist das Zimmer frei\", sondern „…, ob das Zimmer frei ist\".",
+   "en": "question word order",
+   "lemma": "die Frage-Wortstellung"
+  },
+  {
+   "form": "sondern",
+   "context": "Tipp: Nach ob und nach dem Fragewort steht nie die Frage-Wortstellung: nicht „…, ob ist das Zimmer frei\", sondern „…, ob das Zimmer frei ist\".",
+   "en": "but (rather)",
+   "lemma": ""
+  },
+  {
+   "form": "Wegbeschreibungen",
+   "context": "Für Wegbeschreibungen braucht man ein paar feste Ausdrücke. gegenüber und an … vorbei stehen mit dem Dativ, durch mit dem Akkusativ.",
+   "en": "directions",
+   "lemma": "die Wegbeschreibung"
+  },
+  {
+   "form": "paar",
+   "context": "Für Wegbeschreibungen braucht man ein paar feste Ausdrücke. gegenüber und an … vorbei stehen mit dem Dativ, durch mit dem Akkusativ.",
+   "en": "(ein paar) a few; pair",
+   "lemma": ""
+  },
+  {
+   "form": "Ausdrücke",
+   "context": "Für Wegbeschreibungen braucht man ein paar feste Ausdrücke. gegenüber und an … vorbei stehen mit dem Dativ, durch mit dem Akkusativ.",
+   "en": "expressions",
+   "lemma": "der Ausdruck"
+  },
+  {
+   "form": "vorbei",
+   "context": "Für Wegbeschreibungen braucht man ein paar feste Ausdrücke. gegenüber und an … vorbei stehen mit dem Dativ, durch mit dem Akkusativ.",
+   "en": "past; over, finished",
+   "lemma": ""
+  },
+  {
+   "form": "durch",
+   "context": "Für Wegbeschreibungen braucht man ein paar feste Ausdrücke. gegenüber und an … vorbei stehen mit dem Dativ, durch mit dem Akkusativ.",
+   "en": "through",
+   "lemma": ""
+  },
+  {
+   "form": "herum",
+   "context": "um … herum",
+   "en": "around",
+   "lemma": ""
+  },
+  {
+   "form": "Einzelzimmer",
+   "context": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "single room",
+   "lemma": "das Einzelzimmer"
+  },
+  {
+   "form": "Doppelzimmer",
+   "context": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "double room",
+   "lemma": "das Doppelzimmer"
+  },
+  {
+   "form": "single",
+   "context": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "double",
+   "context": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chambre",
+   "context": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "simple",
+   "context": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "doubleIch",
+   "context": "das Einzelzimmer / das Doppelzimmer — EN: single / double room · FR: la chambre simple / doubleIch hätte gern ein Doppelzimmer.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "Rezeption",
+   "context": "die Rezeption (Sg.) — EN: reception · FR: la réceptionDie Rezeption ist rund um die Uhr besetzt.",
+   "en": "reception",
+   "lemma": "die Rezeption"
+  },
+  {
+   "form": "reception",
+   "context": "die Rezeption (Sg.) — EN: reception · FR: la réceptionDie Rezeption ist rund um die Uhr besetzt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réceptionDie",
+   "context": "die Rezeption (Sg.) — EN: reception · FR: la réceptionDie Rezeption ist rund um die Uhr besetzt.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "besetzt",
+   "context": "die Rezeption (Sg.) — EN: reception · FR: la réceptionDie Rezeption ist rund um die Uhr besetzt.",
+   "en": "staffed; occupied, busy",
+   "lemma": ""
+  },
+  {
+   "form": "Nächte",
+   "context": "buchen / reservieren — EN: to book / reserve · FR: réserverIch möchte ein Zimmer für zwei Nächte buchen.",
+   "en": "nights",
+   "lemma": "die Nacht"
+  },
+  {
+   "form": "included",
+   "context": "inklusive — EN: included · FR: inclusIst das Frühstück inklusive?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "inclusIst",
+   "context": "inklusive — EN: included · FR: inclusIst das Frühstück inklusive?",
+   "en": "Ist = is",
+   "lemma": "sein"
+  },
+  {
+   "form": "night",
+   "context": "die Übernachtung, -en — EN: night, overnight stay · FR: la nuitéeWas kostet eine Übernachtung?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nuitéeWas",
+   "context": "die Übernachtung, -en — EN: night, overnight stay · FR: la nuitéeWas kostet eine Übernachtung?",
+   "en": "Was = what",
+   "lemma": ""
+  },
+  {
+   "form": "lift",
+   "context": "der Aufzug, ¨-e — EN: lift, elevator · FR: l'ascenseurDer Aufzug ist leider kaputt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "elevator",
+   "context": "der Aufzug, ¨-e — EN: lift, elevator · FR: l'ascenseurDer Aufzug ist leider kaputt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'ascenseurDer",
+   "context": "der Aufzug, ¨-e — EN: lift, elevator · FR: l'ascenseurDer Aufzug ist leider kaputt.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "check-in",
+   "context": "die Anmeldung (Sg.) — EN: check-in, registration · FR: l'enregistrementDie Anmeldung ist ab 14 Uhr möglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "registration",
+   "context": "die Anmeldung (Sg.) — EN: check-in, registration · FR: l'enregistrementDie Anmeldung ist ab 14 Uhr möglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'enregistrementDie",
+   "context": "die Anmeldung (Sg.) — EN: check-in, registration · FR: l'enregistrementDie Anmeldung ist ab 14 Uhr möglich.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "noisy",
+   "context": "ruhig / laut — EN: quiet / noisy · FR: calme / bruyantHaben Sie ein ruhigeres Zimmer?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "calme",
+   "context": "ruhig / laut — EN: quiet / noisy · FR: calme / bruyantHaben Sie ein ruhigeres Zimmer?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bruyantHaben",
+   "context": "ruhig / laut — EN: quiet / noisy · FR: calme / bruyantHaben Sie ein ruhigeres Zimmer?",
+   "en": "Haben = have",
+   "lemma": "haben"
+  },
+  {
+   "form": "ruhigeres",
+   "context": "ruhig / laut — EN: quiet / noisy · FR: calme / bruyantHaben Sie ein ruhigeres Zimmer?",
+   "en": "quieter",
+   "lemma": "ruhig"
+  },
+  {
+   "form": "ahead",
+   "context": "geradeaus — EN: straight ahead · FR: tout droitGehen Sie einfach geradeaus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "feuAn",
+   "context": "die Ampel, -n — EN: traffic light · FR: le feuAn der Ampel biegen Sie links ab.",
+   "en": "An = at",
+   "lemma": ""
+  },
+  {
+   "form": "biegen",
+   "context": "die Ampel, -n — EN: traffic light · FR: le feuAn der Ampel biegen Sie links ab.",
+   "en": "(… ab) turn; bend",
+   "lemma": ""
+  },
+  {
+   "form": "abbiegen",
+   "context": "abbiegen (bog ab) — EN: to turn off · FR: tournerBiegen Sie rechts ab.",
+   "en": "to turn (off)",
+   "lemma": ""
+  },
+  {
+   "form": "bog",
+   "context": "abbiegen (bog ab) — EN: to turn off · FR: tournerBiegen Sie rechts ab.",
+   "en": "(bog … ab) turned; bent",
+   "lemma": "biegen"
+  },
+  {
+   "form": "turn",
+   "context": "abbiegen (bog ab) — EN: to turn off · FR: tournerBiegen Sie rechts ab.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tournerBiegen",
+   "context": "abbiegen (bog ab) — EN: to turn off · FR: tournerBiegen Sie rechts ab.",
+   "en": "Biegen … ab = turn",
+   "lemma": "biegen"
+  },
+  {
+   "form": "near",
+   "context": "in der Nähe von — EN: near · FR: près deDas Hotel ist in der Nähe vom Bahnhof.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "près",
+   "context": "in der Nähe von — EN: near · FR: près deDas Hotel ist in der Nähe vom Bahnhof.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "wüsste",
+   "context": "Ich wüsste gern, ob …",
+   "en": "would know; (… gern) would like to know",
+   "lemma": "wissen"
+  },
+  {
+   "form": "Gast",
+   "context": "Gast: Guten Tag. Darf ich fragen, ob Sie am Wochenende noch ein Zimmer frei haben?",
+   "en": "guest",
+   "lemma": "der Gast"
+  },
+  {
+   "form": "enthalten",
+   "context": "Rezeption: Ja, Frühstück ist im Preis enthalten. 95 Euro pro Nacht.",
+   "en": "included, contained",
+   "lemma": ""
+  },
+  {
+   "form": "Biegen",
+   "context": "Biegen Sie rechts ab.",
+   "en": "(… ab) turn; bend",
+   "lemma": "biegen"
+  },
+  {
+   "form": "E-Mail",
+   "context": "Schreiben Sie eine E-Mail an ein Hotel und fragen Sie nach einem Zimmer. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Datum, Anzahl der Nächte und Zimmertyp. • Stellen Sie zwei indirekte Fragen (ob / wann). • Schreiben Sie eine passende Anrede und Schlussformel.",
+   "en": "email",
+   "lemma": "die E-Mail"
+  },
+  {
+   "form": "Anzahl",
+   "context": "Schreiben Sie eine E-Mail an ein Hotel und fragen Sie nach einem Zimmer. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Datum, Anzahl der Nächte und Zimmertyp. • Stellen Sie zwei indirekte Fragen (ob / wann). • Schreiben Sie eine passende Anrede und Schlussformel.",
+   "en": "number",
+   "lemma": "die Anzahl"
+  },
+  {
+   "form": "Zimmertyp",
+   "context": "Schreiben Sie eine E-Mail an ein Hotel und fragen Sie nach einem Zimmer. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Datum, Anzahl der Nächte und Zimmertyp. • Stellen Sie zwei indirekte Fragen (ob / wann). • Schreiben Sie eine passende Anrede und Schlussformel.",
+   "en": "type of room",
+   "lemma": "der Zimmertyp"
+  },
+  {
+   "form": "indirekte",
+   "context": "Schreiben Sie eine E-Mail an ein Hotel und fragen Sie nach einem Zimmer. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Datum, Anzahl der Nächte und Zimmertyp. • Stellen Sie zwei indirekte Fragen (ob / wann). • Schreiben Sie eine passende Anrede und Schlussformel.",
+   "en": "indirect",
+   "lemma": "indirekt"
+  },
+  {
+   "form": "passende",
+   "context": "Schreiben Sie eine E-Mail an ein Hotel und fragen Sie nach einem Zimmer. Umfang: 50–70 Wörter Checkliste: • Nennen Sie Datum, Anzahl der Nächte und Zimmertyp. • Stellen Sie zwei indirekte Fragen (ob / wann). • Schreiben Sie eine passende Anrede und Schlussformel.",
+   "en": "suitable, matching",
+   "lemma": "passend"
+  }
+ ]
+}
