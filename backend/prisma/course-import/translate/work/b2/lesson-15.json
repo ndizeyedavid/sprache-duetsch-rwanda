@@ -1,0 +1,865 @@
+{
+ "level": "B2",
+ "lesson": 15,
+ "title": "Kraftwerke abschalten? — Sollte der Strom ausfallen, bleiben Sie ruhig",
+ "lines": [
+  {
+   "de": "Über Energieformen diskutieren und Bedingungen ausdrücken — auch ohne wenn.",
+   "en": "Discuss forms of energy and express conditions — even without wenn."
+  },
+  {
+   "de": "Textsorte: Zeitungsartikel · Leserbrief",
+   "en": "Text type: Newspaper article · Letter to the editor"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Schreiben Teil 1; telc B2 Lesen und Schreiben",
+   "en": "Exam link: Goethe B2 Writing part 1; telc B2 Reading and Writing"
+  },
+  {
+   "de": "über Vor- und Nachteile verschiedener Energieformen sprechen",
+   "en": "talk about the advantages and disadvantages of different forms of energy"
+  },
+  {
+   "de": "Bedingungen mit wenn und falls ausdrücken",
+   "en": "express conditions with wenn and falls"
+  },
+  {
+   "de": "uneingeleitete Bedingungssätze bilden und verstehen",
+   "en": "form and understand conditional clauses without a conjunction (uneingeleitete Bedingungssätze)"
+  },
+  {
+   "de": "einen Leserbrief schreiben",
+   "en": "write a letter to the editor"
+  },
+  {
+   "de": "Grammatik: Bedingungssätze: wenn, falls und uneingeleitet",
+   "en": "Grammar: Conditional clauses (Bedingungssätze): wenn, falls and without a conjunction (uneingeleitet)"
+  },
+  {
+   "de": "Für Bedingungen gibt es drei Formen. wenn ist neutral und am häufigsten. falls betont, dass die Bedingung eher unsicher ist. Im uneingeleiteten Bedingungssatz entfällt die Konjunktion ganz und das konjugierte Verb rückt an die erste Stelle — das klingt formell und begegnet Ihnen vor allem in Zeitungstexten und offiziellen Hinweisen.",
+   "en": "There are three forms for conditions. wenn is neutral and the most common. falls emphasises that the condition is rather uncertain. In a conditional clause without a conjunction, the conjunction is dropped completely and the conjugated verb moves to first position — this sounds formal, and you will come across it mainly in newspaper texts and official notices."
+  },
+  {
+   "de": "Konjunktion + Verb am Ende",
+   "en": "conjunction + verb at the end"
+  },
+  {
+   "de": "Wenn der Strom ausfällt, funktioniert nichts mehr.",
+   "en": "If the power goes out, nothing works any more."
+  },
+  {
+   "de": "Falls der Strom ausfällt, informieren wir Sie.",
+   "en": "In case the power goes out, we will inform you."
+  },
+  {
+   "de": "uneingeleitet",
+   "en": "without a conjunction"
+  },
+  {
+   "de": "Verb auf Position 1",
+   "en": "verb in position 1"
+  },
+  {
+   "de": "Fällt der Strom aus, funktioniert nichts mehr.",
+   "en": "If the power goes out, nothing works any more."
+  },
+  {
+   "de": "uneingeleitet mit sollte",
+   "en": "without a conjunction, with sollte"
+  },
+  {
+   "de": "sollte auf Position 1",
+   "en": "sollte in position 1"
+  },
+  {
+   "de": "Sollte der Strom ausfallen, bleiben Sie bitte ruhig.",
+   "en": "Should the power go out, please stay calm."
+  },
+  {
+   "de": "Würden wir mehr investieren, wäre das Netz stabiler.",
+   "en": "If we invested more, the grid would be more stable."
+  },
+  {
+   "de": "Sollten Sie Fragen haben, wenden Sie sich an die Hotline.sehr häufig in formellen Texten",
+   "en": "Should you have any questions, please contact the hotline. — very common in formal texts"
+  },
+  {
+   "de": "Hätte man früher umgebaut, wäre der Ausstieg leichter gewesen.uneingeleitet und irreal in der Vergangenheit",
+   "en": "Had the system been converted earlier, the phase-out would have been easier. — without a conjunction and unreal in the past"
+  },
+  {
+   "de": "Falls es zu Engpässen kommt, wird abgeschaltet.falls bei unsicherer Bedingung",
+   "en": "In case there are shortages, the power will be switched off. — falls for an uncertain condition"
+  },
+  {
+   "de": "Tipp: Im Hauptsatz nach einem vorangestellten Bedingungssatz steht oft dann oder so: „Fällt der Strom aus, dann hilft nur noch Warten.\"",
+   "en": "Tip: In the main clause after a conditional clause placed first, there is often dann or so: “If the power goes out, then all you can do is wait.”"
+  },
+  {
+   "de": "das Kraftwerk, -e — EN: power plant · FR: la centrale électriqueDas letzte Kraftwerk ging 2023 vom Netz.",
+   "en": "Example: The last power plant was taken off the grid in 2023."
+  },
+  {
+   "de": "die erneuerbaren Energien (Pl.) — EN: renewable energies · FR: les énergies renouvelablesErneuerbare Energien decken inzwischen die Hälfte.",
+   "en": "Example: Renewable energies now cover half."
+  },
+  {
+   "de": "der Atomausstieg (Sg.) — EN: nuclear phase-out · FR: la sortie du nucléaireDer Atomausstieg war lange umstritten.",
+   "en": "Example: The nuclear phase-out was controversial for a long time."
+  },
+  {
+   "de": "die Versorgungssicherheit (Sg.) — EN: security of supply · FR: la sécurité d'approvisionnementVersorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "Example: Security of supply is the opponents’ main argument."
+  },
+  {
+   "de": "der Stromausfall, ¨-e — EN: power cut · FR: la panne de courantEin großflächiger Stromausfall hätte dramatische Folgen.",
+   "en": "Example: A large-scale power cut would have dramatic consequences."
+  },
+  {
+   "de": "der Engpass, ¨-e — EN: bottleneck, shortage · FR: la pénurieIm Winter drohen Engpässe.",
+   "en": "Example: There is a risk of shortages in winter."
+  },
+  {
+   "de": "das Stromnetz, -e — EN: power grid · FR: le réseau électriqueDas Stromnetz muss ausgebaut werden.",
+   "en": "Example: The power grid has to be expanded."
+  },
+  {
+   "de": "der Verbrauch (Sg.) — EN: consumption · FR: la consommationDer Verbrauch ist leicht gesunken.",
+   "en": "Example: Consumption has fallen slightly."
+  },
+  {
+   "de": "die Umweltbilanz (Sg.) — EN: environmental footprint · FR: le bilan environnementalDie Umweltbilanz fällt gemischt aus.",
+   "en": "Example: The environmental footprint turns out to be mixed."
+  },
+  {
+   "de": "umstritten — EN: controversial · FR: controverséDas Projekt ist bis heute umstritten.",
+   "en": "Example: The project is still controversial today."
+  },
+  {
+   "de": "die Endlagerung (Sg.) — EN: final storage (of waste) · FR: le stockage définitifDie Frage der Endlagerung ist ungelöst.",
+   "en": "Example: The question of final storage is unresolved."
+  },
+  {
+   "de": "subventionieren — EN: to subsidise · FR: subventionnerDer Staat subventioniert den Ausbau.",
+   "en": "Example: The state subsidises the expansion."
+  },
+  {
+   "de": "einsparen — EN: to save, cut back · FR: économiserJeder Haushalt kann Energie einsparen.",
+   "en": "Example: Every household can save energy."
+  },
+  {
+   "de": "der Leserbrief, -e — EN: letter to the editor · FR: le courrier des lecteursIhr Leserbrief erschien eine Woche später.",
+   "en": "Example: Her letter to the editor appeared a week later."
+  },
+  {
+   "de": "einen Leserbrief einleiten",
+   "en": "Opening a letter to the editor"
+  },
+  {
+   "de": "mit großem Interesse habe ich Ihren Artikel vom … gelesen.",
+   "en": "I read your article of … with great interest."
+  },
+  {
+   "de": "Als langjährige Leserin möchte ich dazu Stellung nehmen.",
+   "en": "As a long-standing reader, I would like to comment on this."
+  },
+  {
+   "de": "Ihr Beitrag greift ein wichtiges Thema auf, allerdings …",
+   "en": "Your article takes up an important topic; however, …"
+  },
+  {
+   "de": "Position begründen",
+   "en": "Justifying your position"
+  },
+  {
+   "de": "Dafür spricht vor allem, dass …",
+   "en": "The main argument in favour of this is that …"
+  },
+  {
+   "de": "Nicht berücksichtigt wurde dabei, dass …",
+   "en": "What was not taken into account here is that …"
+  },
+  {
+   "de": "Meiner Ansicht nach wird hier übersehen, dass …",
+   "en": "In my view, what is being overlooked here is that …"
+  },
+  {
+   "de": "fordern",
+   "en": "Making demands"
+  },
+  {
+   "de": "Deshalb halte ich es für dringend notwendig, dass …",
+   "en": "That is why I consider it urgently necessary that …"
+  },
+  {
+   "de": "Hier ist die Politik gefragt.",
+   "en": "This is where politicians need to act."
+  },
+  {
+   "de": "Es wäre an der Zeit, endlich … zu …",
+   "en": "It is high time to finally …"
+  },
+  {
+   "de": "Das letzte Kraftwerk ging 2023 vom Netz.",
+   "en": "The last power plant was taken off the grid in 2023."
+  },
+  {
+   "de": "Erneuerbare Energien decken inzwischen die Hälfte.",
+   "en": "Renewable energies now cover half."
+  },
+  {
+   "de": "Der Atomausstieg war lange umstritten.",
+   "en": "The nuclear phase-out was controversial for a long time."
+  },
+  {
+   "de": "Versorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "Security of supply is the opponents’ main argument."
+  },
+  {
+   "de": "Ein großflächiger Stromausfall hätte dramatische Folgen.",
+   "en": "A large-scale power cut would have dramatic consequences."
+  },
+  {
+   "de": "Im Winter drohen Engpässe.",
+   "en": "There is a risk of shortages in winter."
+  },
+  {
+   "de": "Das Stromnetz muss ausgebaut werden.",
+   "en": "The power grid has to be expanded."
+  },
+  {
+   "de": "Der Verbrauch ist leicht gesunken.",
+   "en": "Consumption has fallen slightly."
+  },
+  {
+   "de": "Die Umweltbilanz fällt gemischt aus.",
+   "en": "The environmental footprint turns out to be mixed."
+  },
+  {
+   "de": "Das Projekt ist bis heute umstritten.",
+   "en": "The project is still controversial today."
+  },
+  {
+   "de": "Die Frage der Endlagerung ist ungelöst.",
+   "en": "The question of final storage is unresolved."
+  },
+  {
+   "de": "Der Staat subventioniert den Ausbau.",
+   "en": "The state subsidises the expansion."
+  },
+  {
+   "de": "Jeder Haushalt kann Energie einsparen.",
+   "en": "Every household can save energy."
+  },
+  {
+   "de": "Ihr Leserbrief erschien eine Woche später.",
+   "en": "Her letter to the editor appeared a week later."
+  },
+  {
+   "de": "Uneingeleitet: „Wenn der Strom ausfällt, …\" →",
+   "en": "Without a conjunction: “If the power goes out, …” →"
+  },
+  {
+   "de": "___ Sie Fragen haben, wenden Sie sich an uns. (formell, mit sollen im Konjunktiv II)",
+   "en": "___ you have any questions, please contact us. (formal, with sollen in the subjunctive II)"
+  },
+  {
+   "de": "Welche Konjunktion betont, dass die Bedingung eher unsicher ist?",
+   "en": "Which conjunction emphasises that the condition is rather uncertain?"
+  },
+  {
+   "de": "Irreal und uneingeleitet: ___ man früher investiert, wäre das Netz heute stabiler. (haben, Konjunktiv II)",
+   "en": "Unreal and without a conjunction: ___ we invested earlier, the grid would be more stable today. (haben, subjunctive II)"
+  },
+  {
+   "de": "Welches Wort kann den Hauptsatz nach einem Bedingungssatz einleiten?",
+   "en": "Which word can introduce the main clause after a conditional clause?"
+  },
+  {
+   "de": "Umformung: „Falls es zu Engpässen kommt …\" → ___ es zu Engpässen, wird abgeschaltet. (kommen, uneingeleitet)",
+   "en": "Transformation: “In case there are shortages …” → ___ there are shortages, the power is switched off. (kommen, without a conjunction)"
+  },
+  {
+   "de": "Schreiben Sie einen Leserbrief zu einem Artikel über den Ausbau erneuerbarer Energien in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Beziehen Sie sich im ersten Satz auf den Artikel (Titel und Datum). • Formulieren Sie Ihre Position eindeutig. • Verwenden Sie mindestens einen uneingeleiteten Bedingungssatz. • Schließen Sie mit einer Forderung oder einem Appell.",
+   "en": "Write a letter to the editor about an article on the expansion of renewable energies in your country. Length: 180–220 words Checklist: • Refer to the article (title and date) in the first sentence. • State your position clearly. • Use at least one conditional clause without a conjunction. • End with a demand or an appeal."
+  },
+  {
+   "de": "Im uneingeleiteten Bedingungssatz steht das konjugierte Verb auf Position 1.",
+   "en": "In a conditional clause without a conjunction, the conjugated verb is in position 1."
+  },
+  {
+   "de": "Sollten + Subjekt auf Position 1 ist die übliche formelle Höflichkeitsform.",
+   "en": "Sollten + subject in position 1 is the usual formal polite form."
+  },
+  {
+   "de": "falls signalisiert, dass man eher nicht mit dem Eintreten rechnet.",
+   "en": "falls signals that you don’t really expect it to happen."
+  },
+  {
+   "de": "Hätte auf Position 1 ersetzt „Wenn man früher investiert hätte\".",
+   "en": "Hätte in position 1 replaces “Wenn man früher investiert hätte”."
+  },
+  {
+   "de": "dann (oder so) steht häufig am Anfang des Hauptsatzes.",
+   "en": "dann (or so) often comes at the beginning of the main clause."
+  },
+  {
+   "de": "Das konjugierte Verb rückt an die Spitze des Satzes.",
+   "en": "The conjugated verb moves to the front of the sentence."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Energieformen",
+   "context": "Über Energieformen diskutieren und Bedingungen ausdrücken — auch ohne wenn.",
+   "en": "forms of energy",
+   "lemma": "die Energieform"
+  },
+  {
+   "form": "Leserbrief",
+   "context": "Textsorte: Zeitungsartikel · Leserbrief",
+   "en": "letter to the editor",
+   "lemma": "der Leserbrief"
+  },
+  {
+   "form": "verschiedener",
+   "context": "über Vor- und Nachteile verschiedener Energieformen sprechen",
+   "en": "(of) different, various",
+   "lemma": "verschieden"
+  },
+  {
+   "form": "uneingeleitete",
+   "context": "uneingeleitete Bedingungssätze bilden und verstehen",
+   "en": "without a conjunction",
+   "lemma": "uneingeleitet"
+  },
+  {
+   "form": "Bedingungssätze",
+   "context": "uneingeleitete Bedingungssätze bilden und verstehen",
+   "en": "conditional clauses",
+   "lemma": "der Bedingungssatz"
+  },
+  {
+   "form": "uneingeleitet",
+   "context": "Grammatik: Bedingungssätze: wenn, falls und uneingeleitet",
+   "en": "without a conjunction",
+   "lemma": ""
+  },
+  {
+   "form": "unsicher",
+   "context": "Für Bedingungen gibt es drei Formen. wenn ist neutral und am häufigsten. falls betont, dass die Bedingung eher unsicher ist. Im uneingeleiteten Bedingungssatz entfällt die Konjunktion ganz und das konjugierte Verb rückt an die erste Stelle — das klingt formell und begegnet Ihnen vor allem in Zeitungstexten und offiziellen Hinweisen.",
+   "en": "uncertain; unsafe",
+   "lemma": ""
+  },
+  {
+   "form": "uneingeleiteten",
+   "context": "Für Bedingungen gibt es drei Formen. wenn ist neutral und am häufigsten. falls betont, dass die Bedingung eher unsicher ist. Im uneingeleiteten Bedingungssatz entfällt die Konjunktion ganz und das konjugierte Verb rückt an die erste Stelle — das klingt formell und begegnet Ihnen vor allem in Zeitungstexten und offiziellen Hinweisen.",
+   "en": "without a conjunction",
+   "lemma": "uneingeleitet"
+  },
+  {
+   "form": "entfällt",
+   "context": "Für Bedingungen gibt es drei Formen. wenn ist neutral und am häufigsten. falls betont, dass die Bedingung eher unsicher ist. Im uneingeleiteten Bedingungssatz entfällt die Konjunktion ganz und das konjugierte Verb rückt an die erste Stelle — das klingt formell und begegnet Ihnen vor allem in Zeitungstexten und offiziellen Hinweisen.",
+   "en": "is dropped",
+   "lemma": "entfallen"
+  },
+  {
+   "form": "formell",
+   "context": "Für Bedingungen gibt es drei Formen. wenn ist neutral und am häufigsten. falls betont, dass die Bedingung eher unsicher ist. Im uneingeleiteten Bedingungssatz entfällt die Konjunktion ganz und das konjugierte Verb rückt an die erste Stelle — das klingt formell und begegnet Ihnen vor allem in Zeitungstexten und offiziellen Hinweisen.",
+   "en": "formal",
+   "lemma": ""
+  },
+  {
+   "form": "begegnet",
+   "context": "Für Bedingungen gibt es drei Formen. wenn ist neutral und am häufigsten. falls betont, dass die Bedingung eher unsicher ist. Im uneingeleiteten Bedingungssatz entfällt die Konjunktion ganz und das konjugierte Verb rückt an die erste Stelle — das klingt formell und begegnet Ihnen vor allem in Zeitungstexten und offiziellen Hinweisen.",
+   "en": "meets, comes across",
+   "lemma": "begegnen"
+  },
+  {
+   "form": "offiziellen",
+   "context": "Für Bedingungen gibt es drei Formen. wenn ist neutral und am häufigsten. falls betont, dass die Bedingung eher unsicher ist. Im uneingeleiteten Bedingungssatz entfällt die Konjunktion ganz und das konjugierte Verb rückt an die erste Stelle — das klingt formell und begegnet Ihnen vor allem in Zeitungstexten und offiziellen Hinweisen.",
+   "en": "official",
+   "lemma": "offiziell"
+  },
+  {
+   "form": "ausfällt",
+   "context": "Wenn der Strom ausfällt, funktioniert nichts mehr.",
+   "en": "fails, goes out",
+   "lemma": "ausfallen"
+  },
+  {
+   "form": "ausfallen",
+   "context": "Sollte der Strom ausfallen, bleiben Sie bitte ruhig.",
+   "en": "fail, go out; be cancelled",
+   "lemma": ""
+  },
+  {
+   "form": "investieren",
+   "context": "Würden wir mehr investieren, wäre das Netz stabiler.",
+   "en": "invest",
+   "lemma": ""
+  },
+  {
+   "form": "stabiler",
+   "context": "Würden wir mehr investieren, wäre das Netz stabiler.",
+   "en": "more stable",
+   "lemma": "stabil"
+  },
+  {
+   "form": "wenden",
+   "context": "Sollten Sie Fragen haben, wenden Sie sich an die Hotline.sehr häufig in formellen Texten",
+   "en": "turn (to), contact",
+   "lemma": ""
+  },
+  {
+   "form": "Hotline",
+   "context": "Sollten Sie Fragen haben, wenden Sie sich an die Hotline.sehr häufig in formellen Texten",
+   "en": "hotline",
+   "lemma": "die Hotline"
+  },
+  {
+   "form": "umgebaut",
+   "context": "Hätte man früher umgebaut, wäre der Ausstieg leichter gewesen.uneingeleitet und irreal in der Vergangenheit",
+   "en": "converted, rebuilt",
+   "lemma": "umbauen"
+  },
+  {
+   "form": "Ausstieg",
+   "context": "Hätte man früher umgebaut, wäre der Ausstieg leichter gewesen.uneingeleitet und irreal in der Vergangenheit",
+   "en": "phase-out, exit",
+   "lemma": "der Ausstieg"
+  },
+  {
+   "form": "Engpässen",
+   "context": "Falls es zu Engpässen kommt, wird abgeschaltet.falls bei unsicherer Bedingung",
+   "en": "shortages",
+   "lemma": "der Engpass"
+  },
+  {
+   "form": "abgeschaltet",
+   "context": "Falls es zu Engpässen kommt, wird abgeschaltet.falls bei unsicherer Bedingung",
+   "en": "switched off",
+   "lemma": "abschalten"
+  },
+  {
+   "form": "unsicherer",
+   "context": "Falls es zu Engpässen kommt, wird abgeschaltet.falls bei unsicherer Bedingung",
+   "en": "uncertain",
+   "lemma": "unsicher"
+  },
+  {
+   "form": "vorangestellten",
+   "context": "Tipp: Im Hauptsatz nach einem vorangestellten Bedingungssatz steht oft dann oder so: „Fällt der Strom aus, dann hilft nur noch Warten.\"",
+   "en": "placed first",
+   "lemma": "vorangestellt"
+  },
+  {
+   "form": "Kraftwerk",
+   "context": "das Kraftwerk, -e — EN: power plant · FR: la centrale électriqueDas letzte Kraftwerk ging 2023 vom Netz.",
+   "en": "power plant",
+   "lemma": "das Kraftwerk"
+  },
+  {
+   "form": "power",
+   "context": "das Kraftwerk, -e — EN: power plant · FR: la centrale électriqueDas letzte Kraftwerk ging 2023 vom Netz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "centrale",
+   "context": "das Kraftwerk, -e — EN: power plant · FR: la centrale électriqueDas letzte Kraftwerk ging 2023 vom Netz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "électriqueDas",
+   "context": "das Kraftwerk, -e — EN: power plant · FR: la centrale électriqueDas letzte Kraftwerk ging 2023 vom Netz.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "energies",
+   "context": "die erneuerbaren Energien (Pl.) — EN: renewable energies · FR: les énergies renouvelablesErneuerbare Energien decken inzwischen die Hälfte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Atomausstieg",
+   "context": "der Atomausstieg (Sg.) — EN: nuclear phase-out · FR: la sortie du nucléaireDer Atomausstieg war lange umstritten.",
+   "en": "nuclear phase-out",
+   "lemma": "der Atomausstieg"
+  },
+  {
+   "form": "nuclear",
+   "context": "der Atomausstieg (Sg.) — EN: nuclear phase-out · FR: la sortie du nucléaireDer Atomausstieg war lange umstritten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "phase-out",
+   "context": "der Atomausstieg (Sg.) — EN: nuclear phase-out · FR: la sortie du nucléaireDer Atomausstieg war lange umstritten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nucléaireDer",
+   "context": "der Atomausstieg (Sg.) — EN: nuclear phase-out · FR: la sortie du nucléaireDer Atomausstieg war lange umstritten.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "umstritten",
+   "context": "der Atomausstieg (Sg.) — EN: nuclear phase-out · FR: la sortie du nucléaireDer Atomausstieg war lange umstritten.",
+   "en": "controversial",
+   "lemma": ""
+  },
+  {
+   "form": "Versorgungssicherheit",
+   "context": "die Versorgungssicherheit (Sg.) — EN: security of supply · FR: la sécurité d'approvisionnementVersorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "security of supply",
+   "lemma": "die Versorgungssicherheit"
+  },
+  {
+   "form": "supply",
+   "context": "die Versorgungssicherheit (Sg.) — EN: security of supply · FR: la sécurité d'approvisionnementVersorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sécurité",
+   "context": "die Versorgungssicherheit (Sg.) — EN: security of supply · FR: la sécurité d'approvisionnementVersorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'approvisionnementVersorgungssicherheit",
+   "context": "die Versorgungssicherheit (Sg.) — EN: security of supply · FR: la sécurité d'approvisionnementVersorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "security of supply",
+   "lemma": "die Versorgungssicherheit"
+  },
+  {
+   "form": "Hauptargument",
+   "context": "die Versorgungssicherheit (Sg.) — EN: security of supply · FR: la sécurité d'approvisionnementVersorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "main argument",
+   "lemma": "das Hauptargument"
+  },
+  {
+   "form": "Gegner",
+   "context": "die Versorgungssicherheit (Sg.) — EN: security of supply · FR: la sécurité d'approvisionnementVersorgungssicherheit ist das Hauptargument der Gegner.",
+   "en": "opponents",
+   "lemma": "der Gegner"
+  },
+  {
+   "form": "Stromausfall",
+   "context": "der Stromausfall, ¨-e — EN: power cut · FR: la panne de courantEin großflächiger Stromausfall hätte dramatische Folgen.",
+   "en": "power cut",
+   "lemma": "der Stromausfall"
+  },
+  {
+   "form": "panne",
+   "context": "der Stromausfall, ¨-e — EN: power cut · FR: la panne de courantEin großflächiger Stromausfall hätte dramatische Folgen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "courantEin",
+   "context": "der Stromausfall, ¨-e — EN: power cut · FR: la panne de courantEin großflächiger Stromausfall hätte dramatische Folgen.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "großflächiger",
+   "context": "der Stromausfall, ¨-e — EN: power cut · FR: la panne de courantEin großflächiger Stromausfall hätte dramatische Folgen.",
+   "en": "large-scale",
+   "lemma": "großflächig"
+  },
+  {
+   "form": "dramatische",
+   "context": "der Stromausfall, ¨-e — EN: power cut · FR: la panne de courantEin großflächiger Stromausfall hätte dramatische Folgen.",
+   "en": "dramatic",
+   "lemma": "dramatisch"
+  },
+  {
+   "form": "Engpass",
+   "context": "der Engpass, ¨-e — EN: bottleneck, shortage · FR: la pénurieIm Winter drohen Engpässe.",
+   "en": "bottleneck, shortage",
+   "lemma": "der Engpass"
+  },
+  {
+   "form": "bottleneck",
+   "context": "der Engpass, ¨-e — EN: bottleneck, shortage · FR: la pénurieIm Winter drohen Engpässe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "shortage",
+   "context": "der Engpass, ¨-e — EN: bottleneck, shortage · FR: la pénurieIm Winter drohen Engpässe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pénurieIm",
+   "context": "der Engpass, ¨-e — EN: bottleneck, shortage · FR: la pénurieIm Winter drohen Engpässe.",
+   "en": "in (the)",
+   "lemma": ""
+  },
+  {
+   "form": "drohen",
+   "context": "der Engpass, ¨-e — EN: bottleneck, shortage · FR: la pénurieIm Winter drohen Engpässe.",
+   "en": "threaten, loom",
+   "lemma": ""
+  },
+  {
+   "form": "Engpässe",
+   "context": "der Engpass, ¨-e — EN: bottleneck, shortage · FR: la pénurieIm Winter drohen Engpässe.",
+   "en": "shortages",
+   "lemma": "der Engpass"
+  },
+  {
+   "form": "Stromnetz",
+   "context": "das Stromnetz, -e — EN: power grid · FR: le réseau électriqueDas Stromnetz muss ausgebaut werden.",
+   "en": "power grid",
+   "lemma": "das Stromnetz"
+  },
+  {
+   "form": "grid",
+   "context": "das Stromnetz, -e — EN: power grid · FR: le réseau électriqueDas Stromnetz muss ausgebaut werden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réseau",
+   "context": "das Stromnetz, -e — EN: power grid · FR: le réseau électriqueDas Stromnetz muss ausgebaut werden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Umweltbilanz",
+   "context": "die Umweltbilanz (Sg.) — EN: environmental footprint · FR: le bilan environnementalDie Umweltbilanz fällt gemischt aus.",
+   "en": "environmental footprint",
+   "lemma": "die Umweltbilanz"
+  },
+  {
+   "form": "environmental",
+   "context": "die Umweltbilanz (Sg.) — EN: environmental footprint · FR: le bilan environnementalDie Umweltbilanz fällt gemischt aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "footprint",
+   "context": "die Umweltbilanz (Sg.) — EN: environmental footprint · FR: le bilan environnementalDie Umweltbilanz fällt gemischt aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bilan",
+   "context": "die Umweltbilanz (Sg.) — EN: environmental footprint · FR: le bilan environnementalDie Umweltbilanz fällt gemischt aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "environnementalDie",
+   "context": "die Umweltbilanz (Sg.) — EN: environmental footprint · FR: le bilan environnementalDie Umweltbilanz fällt gemischt aus.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "controversial",
+   "context": "umstritten — EN: controversial · FR: controverséDas Projekt ist bis heute umstritten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "controverséDas",
+   "context": "umstritten — EN: controversial · FR: controverséDas Projekt ist bis heute umstritten.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Endlagerung",
+   "context": "die Endlagerung (Sg.) — EN: final storage (of waste) · FR: le stockage définitifDie Frage der Endlagerung ist ungelöst.",
+   "en": "final storage (of waste)",
+   "lemma": "die Endlagerung"
+  },
+  {
+   "form": "final",
+   "context": "die Endlagerung (Sg.) — EN: final storage (of waste) · FR: le stockage définitifDie Frage der Endlagerung ist ungelöst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "storage",
+   "context": "die Endlagerung (Sg.) — EN: final storage (of waste) · FR: le stockage définitifDie Frage der Endlagerung ist ungelöst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stockage",
+   "context": "die Endlagerung (Sg.) — EN: final storage (of waste) · FR: le stockage définitifDie Frage der Endlagerung ist ungelöst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "définitifDie",
+   "context": "die Endlagerung (Sg.) — EN: final storage (of waste) · FR: le stockage définitifDie Frage der Endlagerung ist ungelöst.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "ungelöst",
+   "context": "die Endlagerung (Sg.) — EN: final storage (of waste) · FR: le stockage définitifDie Frage der Endlagerung ist ungelöst.",
+   "en": "unresolved",
+   "lemma": ""
+  },
+  {
+   "form": "subventionieren",
+   "context": "subventionieren — EN: to subsidise · FR: subventionnerDer Staat subventioniert den Ausbau.",
+   "en": "to subsidise",
+   "lemma": ""
+  },
+  {
+   "form": "subsidise",
+   "context": "subventionieren — EN: to subsidise · FR: subventionnerDer Staat subventioniert den Ausbau.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "subventionnerDer",
+   "context": "subventionieren — EN: to subsidise · FR: subventionnerDer Staat subventioniert den Ausbau.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "subventioniert",
+   "context": "subventionieren — EN: to subsidise · FR: subventionnerDer Staat subventioniert den Ausbau.",
+   "en": "subsidises",
+   "lemma": "subventionieren"
+  },
+  {
+   "form": "Ausbau",
+   "context": "subventionieren — EN: to subsidise · FR: subventionnerDer Staat subventioniert den Ausbau.",
+   "en": "expansion",
+   "lemma": "der Ausbau"
+  },
+  {
+   "form": "einsparen",
+   "context": "einsparen — EN: to save, cut back · FR: économiserJeder Haushalt kann Energie einsparen.",
+   "en": "to save, cut back",
+   "lemma": ""
+  },
+  {
+   "form": "économiserJeder",
+   "context": "einsparen — EN: to save, cut back · FR: économiserJeder Haushalt kann Energie einsparen.",
+   "en": "every, each",
+   "lemma": ""
+  },
+  {
+   "form": "editor",
+   "context": "der Leserbrief, -e — EN: letter to the editor · FR: le courrier des lecteursIhr Leserbrief erschien eine Woche später.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "courrier",
+   "context": "der Leserbrief, -e — EN: letter to the editor · FR: le courrier des lecteursIhr Leserbrief erschien eine Woche später.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lecteursIhr",
+   "context": "der Leserbrief, -e — EN: letter to the editor · FR: le courrier des lecteursIhr Leserbrief erschien eine Woche später.",
+   "en": "her; your",
+   "lemma": ""
+  },
+  {
+   "form": "erschien",
+   "context": "der Leserbrief, -e — EN: letter to the editor · FR: le courrier des lecteursIhr Leserbrief erschien eine Woche später.",
+   "en": "appeared",
+   "lemma": "erscheinen"
+  },
+  {
+   "form": "langjährige",
+   "context": "Als langjährige Leserin möchte ich dazu Stellung nehmen.",
+   "en": "long-standing",
+   "lemma": "langjährig"
+  },
+  {
+   "form": "Leserin",
+   "context": "Als langjährige Leserin möchte ich dazu Stellung nehmen.",
+   "en": "(female) reader",
+   "lemma": "die Leserin"
+  },
+  {
+   "form": "Beitrag",
+   "context": "Ihr Beitrag greift ein wichtiges Thema auf, allerdings …",
+   "en": "article, contribution",
+   "lemma": "der Beitrag"
+  },
+  {
+   "form": "greift",
+   "context": "Ihr Beitrag greift ein wichtiges Thema auf, allerdings …",
+   "en": "takes up, addresses",
+   "lemma": "aufgreifen"
+  },
+  {
+   "form": "wichtiges",
+   "context": "Ihr Beitrag greift ein wichtiges Thema auf, allerdings …",
+   "en": "important",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "berücksichtigt",
+   "context": "Nicht berücksichtigt wurde dabei, dass …",
+   "en": "taken into account",
+   "lemma": "berücksichtigen"
+  },
+  {
+   "form": "übersehen",
+   "context": "Meiner Ansicht nach wird hier übersehen, dass …",
+   "en": "overlooked; to overlook",
+   "lemma": ""
+  },
+  {
+   "form": "dringend",
+   "context": "Deshalb halte ich es für dringend notwendig, dass …",
+   "en": "urgently",
+   "lemma": ""
+  },
+  {
+   "form": "notwendig",
+   "context": "Deshalb halte ich es für dringend notwendig, dass …",
+   "en": "necessary",
+   "lemma": ""
+  },
+  {
+   "form": "Uneingeleitet",
+   "context": "Uneingeleitet: „Wenn der Strom ausfällt, …\" →",
+   "en": "without a conjunction",
+   "lemma": "uneingeleitet"
+  },
+  {
+   "form": "investiert",
+   "context": "Irreal und uneingeleitet: ___ man früher investiert, wäre das Netz heute stabiler. (haben, Konjunktiv II)",
+   "en": "invested",
+   "lemma": "investieren"
+  },
+  {
+   "form": "Umformung",
+   "context": "Umformung: „Falls es zu Engpässen kommt …\" → ___ es zu Engpässen, wird abgeschaltet. (kommen, uneingeleitet)",
+   "en": "transformation, rewriting",
+   "lemma": "die Umformung"
+  },
+  {
+   "form": "erneuerbarer",
+   "context": "Schreiben Sie einen Leserbrief zu einem Artikel über den Ausbau erneuerbarer Energien in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Beziehen Sie sich im ersten Satz auf den Artikel (Titel und Datum). • Formulieren Sie Ihre Position eindeutig. • Verwenden Sie mindestens einen uneingeleiteten Bedingungssatz. • Schließen Sie mit einer Forderung oder einem Appell.",
+   "en": "(of) renewable",
+   "lemma": "erneuerbar"
+  },
+  {
+   "form": "Appell",
+   "context": "Schreiben Sie einen Leserbrief zu einem Artikel über den Ausbau erneuerbarer Energien in Ihrem Land. Umfang: 180–220 Wörter Checkliste: • Beziehen Sie sich im ersten Satz auf den Artikel (Titel und Datum). • Formulieren Sie Ihre Position eindeutig. • Verwenden Sie mindestens einen uneingeleiteten Bedingungssatz. • Schließen Sie mit einer Forderung oder einem Appell.",
+   "en": "appeal",
+   "lemma": "der Appell"
+  }
+ ]
+}
