@@ -1,0 +1,230 @@
+[
+ {
+  "url": "/audio/dialogue/1d44ce039fa5a785.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Entschuldigung, was kostet die Jacke hier? Da steht neunundfünfzig Euro."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Heute ist die Jacke billiger. Sie kostet nur neununddreißig Euro."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Oh, prima! Und was kostet die Hose?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Die Hose kostet neunundzwanzig Euro."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/c6d5c81a8f4d8819.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Praxis Doktor Keller, guten Tag."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Guten Tag, hier ist Patrick Habimana. Mir tut der Hals weh. Kann ich heute um zehn Uhr kommen?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Um zehn ist leider kein Termin mehr frei. Aber um halb zwölf oder um drei ist noch etwas frei."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Um halb zwölf hole ich meine Tochter von der Schule ab. Dann komme ich um drei."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/de8623d8288baf4d.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Frau Weber, wo sind die Formulare? Im Schrank sind keine mehr."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ich glaube, sie liegen auf meinem Tisch."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Nein, da ist nur Papier."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Ach ja, richtig! Die Formulare sind hier in meiner Tasche. Entschuldigung!"
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/63e2402d4990bede.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Guten Tag. Was möchten Sie essen?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Ich möchte eine Tomatensuppe, bitte."
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Tut mir leid, Suppe haben wir heute nicht mehr. Aber wir haben Salat und Kuchen."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Kuchen esse ich nicht so gern. Dann nehme ich einen Salat."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/9c5a64c2c963099c.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Hallo Thomas, hier ist Anna. Wir gehen heute Abend ins Kino und treffen uns um sieben vor dem Kino. Kommst du mit?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Ja, gern! Aber ich arbeite bis sieben im Büro, und mein Büro ist am Bahnhof. Können wir uns am Bahnhof treffen?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Kein Problem. Dann warten wir um Viertel nach sieben am Bahnhof auf dich."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/7d8299c1aeaa81a6.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Guten Abend. Wann gibt es morgen Frühstück? Um halb sieben?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Nein, morgen ist Sonntag. Am Sonntag gibt es Frühstück von acht bis elf Uhr."
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Prima, dann kann ich lange schlafen. Danke!"
+   }
+  ]
+ },
+ {
+  "url": "/audio/thorsten-high/3ec5ae01587cf4be.mp3",
+  "voice": "thorsten-high",
+  "text": "Achtung, bitte! Der Zug nach Frankfurt fährt heute nicht von Gleis drei. Er fährt heute von Gleis sieben. Wir wünschen Ihnen eine gute Reise!"
+ },
+ {
+  "url": "/audio/kerstin-low/8424f9b59819a89e.mp3",
+  "voice": "kerstin-low",
+  "text": "Liebe Fluggäste nach Kigali! Ihr Flugzeug fliegt heute nicht um zwölf Uhr. Es fliegt eine Stunde später, um dreizehn Uhr. Bitte entschuldigen Sie."
+ },
+ {
+  "url": "/audio/kerstin-low/6ea38e1d33f69a7e.mp3",
+  "voice": "kerstin-low",
+  "text": "Liebe Kundinnen und Kunden! Unser Angebot heute: Alle Schuhe für Kinder kosten nur zwanzig Euro. Sonst kosten sie fünfunddreißig Euro. Das Angebot gibt es nur heute!"
+ },
+ {
+  "url": "/audio/thorsten-high/4f2413bfd9ac6649.mp3",
+  "voice": "thorsten-high",
+  "text": "Und jetzt das Wetter für morgen: Am Morgen regnet es noch. Aber dann kommt die Sonne, und es wird warm. Gehen Sie doch in den Park!"
+ },
+ {
+  "url": "/audio/kerstin-low/89953b5e87f014ea.mp3",
+  "voice": "kerstin-low",
+  "text": "Hallo Daniel, hier ist Keza. Wir wollen doch am Samstag zusammen einkaufen gehen. Aber am Samstag muss ich leider arbeiten, und am Sonntag sind die Geschäfte geschlossen. Hast du am Freitag nach der Arbeit Zeit? Ruf mich bitte an. Tschüss!"
+ },
+ {
+  "url": "/audio/thorsten-high/0a7667d01c334adb.mp3",
+  "voice": "thorsten-high",
+  "text": "Hallo Aline, hier ist Eric. Am Samstag feiere ich meinen Geburtstag, und ich würde dich gern einladen. Die Party beginnt um acht Uhr bei mir zu Hause. Saft und Wasser habe ich schon, und Thomas bringt seine Gitarre mit. Kannst du bitte einen Kuchen mitbringen? Bis Samstag!"
+ },
+ {
+  "url": "/audio/kerstin-low/737a2cba58054a6d.mp3",
+  "voice": "kerstin-low",
+  "text": "Hallo Jonas, hier ist Amina. Wir treffen uns doch um drei vor dem Museum. Ich bin schon da, aber es regnet. Ich warte im Café neben dem Museum. Das Café ist gegenüber der Post. Bis gleich!"
+ },
+ {
+  "url": "/audio/thorsten-high/d07ddd6429fc116a.mp3",
+  "voice": "thorsten-high",
+  "text": "Guten Tag, Frau Uwase, hier ist das Fahrradgeschäft Becker. Ihr Fahrrad ist fertig. Die Reparatur kostet leider nicht dreißig Euro. Sie kostet vierzig Euro, denn Ihr Fahrrad braucht auch eine neue Lampe. Sie können das Fahrrad heute bis achtzehn Uhr abholen. Auf Wiederhören!"
+ },
+ {
+  "url": "/audio/kerstin-low/4b81fea1ca007edf.mp3",
+  "voice": "kerstin-low",
+  "text": "Hallo Lukas, hier ist Lena. Ich freue mich auf Sonntag! Nimm bitte nicht den Bus, die U-Bahn ist viel schneller. Fahr mit der U-Bahn bis zum Marktplatz. Dort hole ich dich mit dem Auto ab. Bis Sonntag!"
+ },
+ {
+  "url": "/audio/dialogue/7b7875e79aed2035.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Woher kommst du, Jean-Paul?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Ich komme aus Ruanda, aus Kigali. Aber jetzt wohne ich in Köln."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/a7d10ab81df2004b.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Sind Sie Lehrerin, Frau Mukamana?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Nein, ich bin Ärztin. Mein Mann ist Lehrer."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/8e6154986c00554f.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Wie alt ist deine Schwester Keza?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Sie ist zwanzig. Mein Bruder ist zwölf."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/6b13b35cba876e5b.mp3",
+  "parts": [
+   {
+    "voice": "thorsten-high",
+    "text": "Bist du verheiratet, Aline?"
+   },
+   {
+    "voice": "kerstin-low",
+    "text": "Nein, ich bin ledig. Aber meine Schwester ist verheiratet."
+   }
+  ]
+ },
+ {
+  "url": "/audio/dialogue/26a04405b70802a6.mp3",
+  "parts": [
+   {
+    "voice": "kerstin-low",
+    "text": "Wo wohnt dein Bruder?"
+   },
+   {
+    "voice": "thorsten-high",
+    "text": "Er ist Student und wohnt in Kigali. Meine Eltern wohnen in Huye."
+   }
+  ]
+ }
+]
