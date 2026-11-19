@@ -1,0 +1,939 @@
+{
+ "level": "B2",
+ "lesson": 10,
+ "title": "Botschaften senden — Das dürfte kein Zufall gewesen sein",
+ "lines": [
+  {
+   "de": "Über verbale und nonverbale Kommunikation sprechen und Vermutungen äußern.",
+   "en": "Talk about verbal and non-verbal communication and express assumptions."
+  },
+  {
+   "de": "Textsorte: Zeitschriftenartikel · Erklärvideo",
+   "en": "Text type: Magazine article · Explainer video"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Hören Teil 1; telc B2 Hören",
+   "en": "Exam link: Goethe B2 Listening part 1; telc B2 Listening"
+  },
+  {
+   "de": "über Körpersprache, Gestik und kulturelle Unterschiede sprechen",
+   "en": "talk about body language, gestures and cultural differences"
+  },
+  {
+   "de": "Vermutungen über Gegenwart und Vergangenheit mit Modalverben äußern",
+   "en": "express assumptions about the present and the past with modal verbs"
+  },
+  {
+   "de": "Nebensätze mit ohne dass und ohne … zu bilden",
+   "en": "form subordinate clauses with ohne dass and ohne … zu"
+  },
+  {
+   "de": "Grammatik: Vermutungen mit Modalverben",
+   "en": "Grammar: Assumptions with modal verbs"
+  },
+  {
+   "de": "Modalverben drücken nicht nur Fähigkeit oder Pflicht aus, sondern auch, wie sicher sich die sprechende Person ist. Für die Vergangenheit setzt man den Infinitiv Perfekt dahinter: Partizip II + haben oder sein.",
+   "en": "Modal verbs express not only ability or obligation but also how certain the speaker is. For the past, you put the perfect infinitive (Infinitiv Perfekt) after them: past participle (Partizip II) + haben or sein."
+  },
+  {
+   "de": "Sicherheit",
+   "en": "Certainty"
+  },
+  {
+   "de": "Gegenwart",
+   "en": "Present"
+  },
+  {
+   "de": "so gut wie sicher",
+   "en": "as good as certain"
+  },
+  {
+   "de": "Sie muss das wissen.",
+   "en": "She must know that."
+  },
+  {
+   "de": "Sie muss das gewusst haben.",
+   "en": "She must have known that."
+  },
+  {
+   "de": "ziemlich wahrscheinlich",
+   "en": "quite likely"
+  },
+  {
+   "de": "dürfte",
+   "en": "is probably / is likely to"
+  },
+  {
+   "de": "Das dürfte stimmen.",
+   "en": "That is probably right."
+  },
+  {
+   "de": "Das dürfte gestimmt haben.",
+   "en": "That was probably right."
+  },
+  {
+   "de": "möglich",
+   "en": "possible"
+  },
+  {
+   "de": "können / könnte",
+   "en": "can / could"
+  },
+  {
+   "de": "Er könnte recht haben.",
+   "en": "He could be right."
+  },
+  {
+   "de": "Er könnte recht gehabt haben.",
+   "en": "He could have been right."
+  },
+  {
+   "de": "ausgeschlossen",
+   "en": "ruled out"
+  },
+  {
+   "de": "nicht können",
+   "en": "can’t (be)"
+  },
+  {
+   "de": "Das kann nicht stimmen.",
+   "en": "That can’t be right."
+  },
+  {
+   "de": "Das kann nicht gestimmt haben.",
+   "en": "That can’t have been right."
+  },
+  {
+   "de": "fremde Behauptung",
+   "en": "someone else’s claim"
+  },
+  {
+   "de": "Er soll sehr überzeugend sein.",
+   "en": "He is said to be very convincing."
+  },
+  {
+   "de": "Er soll sehr überzeugend gewesen sein.",
+   "en": "He is said to have been very convincing."
+  },
+  {
+   "de": "eigene Behauptung",
+   "en": "one’s own claim"
+  },
+  {
+   "de": "Sie will nichts gemerkt haben.",
+   "en": "She claims not to have noticed anything."
+  },
+  {
+   "de": "Die Geste muss für ihn eine andere Bedeutung gehabt haben.sehr sichere Vermutung über die Vergangenheit",
+   "en": "The gesture must have had a different meaning for him. — very confident assumption about the past"
+  },
+  {
+   "de": "Das dürfte an den unterschiedlichen Konventionen liegen.dürfte = höfliche, wahrscheinliche Vermutung",
+   "en": "That is probably due to the different conventions. — dürfte = polite, probable assumption"
+  },
+  {
+   "de": "Er soll sich dort entschuldigt haben.sollen = andere behaupten das",
+   "en": "He is said to have apologised there. — sollen = others claim this"
+  },
+  {
+   "de": "Tipp: Unterscheiden Sie streng: „Sie will nichts gewusst haben\" heißt, sie behauptet es — nicht, dass sie es wollte.",
+   "en": "Tip: Keep these strictly apart: “Sie will nichts gewusst haben” means she claims it — not that she wanted it."
+  },
+  {
+   "de": "Grammatik: ohne dass und ohne … zu",
+   "en": "Grammar: ohne dass and ohne … zu (without)"
+  },
+  {
+   "de": "Beide nennen einen erwarteten Umstand, der nicht eintritt. Sind die Subjekte in Haupt- und Nebensatz gleich, benutzt man die kürzere Infinitivform ohne … zu. Sind sie verschieden, steht ohne dass.",
+   "en": "Both describe an expected circumstance that does not happen. If the subjects of the main clause and the subordinate clause are the same, you use the shorter infinitive form ohne … zu. If they are different, you use ohne dass."
+  },
+  {
+   "de": "Er verließ den Raum, ohne sich zu verabschieden.",
+   "en": "He left the room without saying goodbye."
+  },
+  {
+   "de": "Er verließ den Raum, ohne dass es jemand bemerkte.",
+   "en": "He left the room without anyone noticing."
+  },
+  {
+   "de": "mit Konjunktiv II",
+   "en": "with the subjunctive II (Konjunktiv II)"
+  },
+  {
+   "de": "Sie half mir, ohne dass ich darum gebeten hätte.",
+   "en": "She helped me without my having asked her to."
+  },
+  {
+   "de": "Wir kommunizieren ständig, ohne ein Wort zu sagen.gleiches Subjekt",
+   "en": "We communicate constantly without saying a word. — same subject"
+  },
+  {
+   "de": "Die Geste wurde missverstanden, ohne dass es jemand merkte.verschiedene Subjekte",
+   "en": "The gesture was misunderstood without anyone noticing. — different subjects"
+  },
+  {
+   "de": "Tipp: Nach ohne steht nie ein zusätzliches nicht — die Verneinung steckt bereits im Konnektor.",
+   "en": "Tip: Never put an extra nicht after ohne — the negation is already contained in the connector."
+  },
+  {
+   "de": "die Körpersprache (Sg.) — EN: body language · FR: le langage corporelKörpersprache verrät oft mehr als Worte.",
+   "en": "Example: Body language often reveals more than words."
+  },
+  {
+   "de": "die Geste, -n / die Gestik (Sg.) — EN: gesture / gestures · FR: le geste / la gestuelleDieselbe Geste bedeutet anderswo das Gegenteil.",
+   "en": "Example: The same gesture means the opposite elsewhere."
+  },
+  {
+   "de": "die Mimik (Sg.) — EN: facial expression · FR: les expressions du visageAn ihrer Mimik sah man die Zweifel.",
+   "en": "Example: You could see the doubts in her facial expression."
+  },
+  {
+   "de": "der Blickkontakt (Sg.) — EN: eye contact · FR: le contact visuelBlickkontakt wird nicht überall gleich bewertet.",
+   "en": "Example: Eye contact is not judged the same way everywhere."
+  },
+  {
+   "de": "nonverbal — EN: non-verbal · FR: non verbalEin großer Teil der Kommunikation ist nonverbal.",
+   "en": "Example: A large part of communication is non-verbal."
+  },
+  {
+   "de": "die Haltung, -en — EN: posture; attitude · FR: la posture; l'attitudeEine offene Haltung wirkt einladend.",
+   "en": "Example: An open posture seems inviting."
+  },
+  {
+   "de": "etwas signalisieren — EN: to signal sth. · FR: signaler qc.Nicken signalisiert nicht überall Zustimmung.",
+   "en": "Example: Nodding does not signal agreement everywhere."
+  },
+  {
+   "de": "die Konvention, -en — EN: convention · FR: la conventionBegrüßungskonventionen unterscheiden sich stark.",
+   "en": "Example: Greeting conventions differ greatly."
+  },
+  {
+   "de": "der Tonfall (Sg.) — EN: tone of voice · FR: le tonEs war nicht der Inhalt, sondern der Tonfall.",
+   "en": "Example: It wasn’t the content but the tone of voice."
+  },
+  {
+   "de": "jemandem etwas unterstellen — EN: to impute sth. to sb. · FR: imputer qc. à qn.Man sollte niemandem böse Absichten unterstellen.",
+   "en": "Example: You shouldn’t attribute bad intentions to anyone."
+  },
+  {
+   "de": "die Distanzzone, -n — EN: personal space · FR: la distance interpersonnelleDie angenehme Distanzzone ist kulturell geprägt.",
+   "en": "Example: The comfortable personal space is culturally determined."
+  },
+  {
+   "de": "zweideutig — EN: ambiguous · FR: ambiguSeine Antwort war bewusst zweideutig.",
+   "en": "Example: His answer was deliberately ambiguous."
+  },
+  {
+   "de": "etwas deuten als — EN: to interpret as · FR: interpréter commeSchweigen wurde als Ablehnung gedeutet.",
+   "en": "Example: Silence was interpreted as rejection."
+  },
+  {
+   "de": "die Absicht, -en — EN: intention · FR: l'intentionDas war sicher nicht seine Absicht.",
+   "en": "Example: That was certainly not his intention."
+  },
+  {
+   "de": "Vermutungen äußern",
+   "en": "Expressing assumptions"
+  },
+  {
+   "de": "Das dürfte damit zusammenhängen, dass …",
+   "en": "That is probably connected with the fact that …"
+  },
+  {
+   "de": "Es könnte gut sein, dass …",
+   "en": "It could well be that …"
+  },
+  {
+   "de": "Da muss ein Missverständnis vorgelegen haben.",
+   "en": "There must have been a misunderstanding."
+  },
+  {
+   "de": "Sicherheit abstufen",
+   "en": "Expressing degrees of certainty"
+  },
+  {
+   "de": "Ich bin mir ziemlich sicher, dass …",
+   "en": "I’m fairly sure that …"
+  },
+  {
+   "de": "Ich vermute eher, dass …",
+   "en": "I rather suspect that …"
+  },
+  {
+   "de": "Das kann eigentlich nicht sein.",
+   "en": "That can’t really be true."
+  },
+  {
+   "de": "über kulturelle Unterschiede sprechen",
+   "en": "Talking about cultural differences"
+  },
+  {
+   "de": "Bei uns gilt es als unhöflich, wenn …",
+   "en": "Where I come from, it is considered rude if …"
+  },
+  {
+   "de": "Das wird je nach Region ganz unterschiedlich gehandhabt.",
+   "en": "That is handled very differently depending on the region."
+  },
+  {
+   "de": "Darauf würde ich im Ausland besonders achten.",
+   "en": "I would pay particular attention to that abroad."
+  },
+  {
+   "de": "Körpersprache verrät oft mehr als Worte.",
+   "en": "Body language often reveals more than words."
+  },
+  {
+   "de": "Dieselbe Geste bedeutet anderswo das Gegenteil.",
+   "en": "The same gesture means the opposite elsewhere."
+  },
+  {
+   "de": "An ihrer Mimik sah man die Zweifel.",
+   "en": "You could see the doubts in her facial expression."
+  },
+  {
+   "de": "Blickkontakt wird nicht überall gleich bewertet.",
+   "en": "Eye contact is not judged the same way everywhere."
+  },
+  {
+   "de": "Ein großer Teil der Kommunikation ist nonverbal.",
+   "en": "A large part of communication is non-verbal."
+  },
+  {
+   "de": "Eine offene Haltung wirkt einladend.",
+   "en": "An open posture seems inviting."
+  },
+  {
+   "de": "Nicken signalisiert nicht überall Zustimmung.",
+   "en": "Nodding does not signal agreement everywhere."
+  },
+  {
+   "de": "Begrüßungskonventionen unterscheiden sich stark.",
+   "en": "Greeting conventions differ greatly."
+  },
+  {
+   "de": "Es war nicht der Inhalt, sondern der Tonfall.",
+   "en": "It wasn’t the content but the tone of voice."
+  },
+  {
+   "de": "Man sollte niemandem böse Absichten unterstellen.",
+   "en": "You shouldn’t attribute bad intentions to anyone."
+  },
+  {
+   "de": "Die angenehme Distanzzone ist kulturell geprägt.",
+   "en": "The comfortable personal space is culturally determined."
+  },
+  {
+   "de": "Seine Antwort war bewusst zweideutig.",
+   "en": "His answer was deliberately ambiguous."
+  },
+  {
+   "de": "Schweigen wurde als Ablehnung gedeutet.",
+   "en": "Silence was interpreted as rejection."
+  },
+  {
+   "de": "Das war sicher nicht seine Absicht.",
+   "en": "That was certainly not his intention."
+  },
+  {
+   "de": "Welcher Satz drückt die größte Sicherheit aus?",
+   "en": "Which sentence expresses the greatest certainty?"
+  },
+  {
+   "de": "Das ___ an den unterschiedlichen Konventionen liegen. (wahrscheinliche Vermutung)",
+   "en": "That ___ be due to the different conventions. (probable assumption)"
+  },
+  {
+   "de": "Vermutung über die Vergangenheit: Sie muss die Geste falsch ___ ___. (verstehen)",
+   "en": "Assumption about the past: She must ___ ___ the gesture wrongly. (verstehen)"
+  },
+  {
+   "de": "„Er soll sich entschuldigt haben\" bedeutet:",
+   "en": "“Er soll sich entschuldigt haben” means:"
+  },
+  {
+   "de": "Er ging, ___ sich ___ verabschieden. (gleiches Subjekt)",
+   "en": "He left, ___ ___ saying goodbye. (same subject)"
+  },
+  {
+   "de": "Die Geste wurde missverstanden, ___ es jemand merkte.",
+   "en": "The gesture was misunderstood ___ anyone noticing."
+  },
+  {
+   "de": "Beschreiben Sie eine Situation, in der Körpersprache zu einem Missverständnis geführt hat, und erklären Sie mögliche Gründe. Umfang: 160–200 Wörter Checkliste: • Schildern Sie die Situation knapp und konkret. • Äußern Sie mindestens zwei Vermutungen mit Modalverben. • Verwenden Sie einmal ohne … zu oder ohne dass. • Formulieren Sie am Ende einen Rat für ähnliche Situationen.",
+   "en": "Describe a situation in which body language led to a misunderstanding, and explain possible reasons. Length: 160–200 words Checklist: • Describe the situation briefly and concretely. • Express at least two assumptions with modal verbs. • Use ohne … zu or ohne dass once. • At the end, give a piece of advice for similar situations."
+  },
+  {
+   "de": "müssen signalisiert eine so gut wie sichere Vermutung.",
+   "en": "müssen signals an assumption that is as good as certain."
+  },
+  {
+   "de": "dürfte drückt eine höfliche, ziemlich wahrscheinliche Vermutung aus.",
+   "en": "dürfte expresses a polite, quite probable assumption."
+  },
+  {
+   "de": "Infinitiv Perfekt: Partizip II + haben.",
+   "en": "Perfect infinitive (Infinitiv Perfekt): past participle (Partizip II) + haben."
+  },
+  {
+   "de": "sollen gibt eine fremde Behauptung wieder; wollen gäbe die eigene wieder.",
+   "en": "sollen reports someone else’s claim; wollen would report the subject’s own claim."
+  },
+  {
+   "de": "Gleiches Subjekt → ohne … zu + Infinitiv.",
+   "en": "Same subject → ohne … zu + infinitive."
+  },
+  {
+   "de": "Die Subjekte sind verschieden, also steht ohne dass.",
+   "en": "The subjects are different, so ohne dass is used."
+  }
+ ],
+ "forms": [
+  {
+   "form": "verbale",
+   "context": "Über verbale und nonverbale Kommunikation sprechen und Vermutungen äußern.",
+   "en": "verbal",
+   "lemma": "verbal"
+  },
+  {
+   "form": "nonverbale",
+   "context": "Über verbale und nonverbale Kommunikation sprechen und Vermutungen äußern.",
+   "en": "non-verbal",
+   "lemma": "nonverbal"
+  },
+  {
+   "form": "Körpersprache",
+   "context": "über Körpersprache, Gestik und kulturelle Unterschiede sprechen",
+   "en": "body language",
+   "lemma": "die Körpersprache"
+  },
+  {
+   "form": "Gestik",
+   "context": "über Körpersprache, Gestik und kulturelle Unterschiede sprechen",
+   "en": "gestures, gesticulation",
+   "lemma": "die Gestik"
+  },
+  {
+   "form": "kulturelle",
+   "context": "über Körpersprache, Gestik und kulturelle Unterschiede sprechen",
+   "en": "cultural",
+   "lemma": "kulturell"
+  },
+  {
+   "form": "sprechende",
+   "context": "Modalverben drücken nicht nur Fähigkeit oder Pflicht aus, sondern auch, wie sicher sich die sprechende Person ist. Für die Vergangenheit setzt man den Infinitiv Perfekt dahinter: Partizip II + haben oder sein.",
+   "en": "speaking",
+   "lemma": "sprechend"
+  },
+  {
+   "form": "gestimmt",
+   "context": "Das dürfte gestimmt haben.",
+   "en": "been right",
+   "lemma": "stimmen"
+  },
+  {
+   "form": "ausgeschlossen",
+   "context": "ausgeschlossen",
+   "en": "ruled out, impossible",
+   "lemma": "ausschließen"
+  },
+  {
+   "form": "gemerkt",
+   "context": "Sie will nichts gemerkt haben.",
+   "en": "noticed",
+   "lemma": "merken"
+  },
+  {
+   "form": "unterschiedlichen",
+   "context": "Das dürfte an den unterschiedlichen Konventionen liegen.dürfte = höfliche, wahrscheinliche Vermutung",
+   "en": "different",
+   "lemma": "unterschiedlich"
+  },
+  {
+   "form": "Konventionen",
+   "context": "Das dürfte an den unterschiedlichen Konventionen liegen.dürfte = höfliche, wahrscheinliche Vermutung",
+   "en": "conventions",
+   "lemma": "die Konvention"
+  },
+  {
+   "form": "wahrscheinliche",
+   "context": "Das dürfte an den unterschiedlichen Konventionen liegen.dürfte = höfliche, wahrscheinliche Vermutung",
+   "en": "probable, likely",
+   "lemma": "wahrscheinlich"
+  },
+  {
+   "form": "kürzere",
+   "context": "Beide nennen einen erwarteten Umstand, der nicht eintritt. Sind die Subjekte in Haupt- und Nebensatz gleich, benutzt man die kürzere Infinitivform ohne … zu. Sind sie verschieden, steht ohne dass.",
+   "en": "shorter",
+   "lemma": "kurz"
+  },
+  {
+   "form": "Infinitivform",
+   "context": "Beide nennen einen erwarteten Umstand, der nicht eintritt. Sind die Subjekte in Haupt- und Nebensatz gleich, benutzt man die kürzere Infinitivform ohne … zu. Sind sie verschieden, steht ohne dass.",
+   "en": "infinitive form",
+   "lemma": "die Infinitivform"
+  },
+  {
+   "form": "verließ",
+   "context": "Er verließ den Raum, ohne sich zu verabschieden.",
+   "en": "left",
+   "lemma": "verlassen"
+  },
+  {
+   "form": "bemerkte",
+   "context": "Er verließ den Raum, ohne dass es jemand bemerkte.",
+   "en": "noticed",
+   "lemma": "bemerken"
+  },
+  {
+   "form": "kommunizieren",
+   "context": "Wir kommunizieren ständig, ohne ein Wort zu sagen.gleiches Subjekt",
+   "en": "communicate",
+   "lemma": ""
+  },
+  {
+   "form": "ständig",
+   "context": "Wir kommunizieren ständig, ohne ein Wort zu sagen.gleiches Subjekt",
+   "en": "constantly",
+   "lemma": ""
+  },
+  {
+   "form": "missverstanden",
+   "context": "Die Geste wurde missverstanden, ohne dass es jemand merkte.verschiedene Subjekte",
+   "en": "misunderstood",
+   "lemma": "missverstehen"
+  },
+  {
+   "form": "merkte",
+   "context": "Die Geste wurde missverstanden, ohne dass es jemand merkte.verschiedene Subjekte",
+   "en": "noticed",
+   "lemma": "merken"
+  },
+  {
+   "form": "bereits",
+   "context": "Tipp: Nach ohne steht nie ein zusätzliches nicht — die Verneinung steckt bereits im Konnektor.",
+   "en": "already",
+   "lemma": ""
+  },
+  {
+   "form": "body",
+   "context": "die Körpersprache (Sg.) — EN: body language · FR: le langage corporelKörpersprache verrät oft mehr als Worte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "langage",
+   "context": "die Körpersprache (Sg.) — EN: body language · FR: le langage corporelKörpersprache verrät oft mehr als Worte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "corporelKörpersprache",
+   "context": "die Körpersprache (Sg.) — EN: body language · FR: le langage corporelKörpersprache verrät oft mehr als Worte.",
+   "en": "body language",
+   "lemma": "die Körpersprache"
+  },
+  {
+   "form": "verrät",
+   "context": "die Körpersprache (Sg.) — EN: body language · FR: le langage corporelKörpersprache verrät oft mehr als Worte.",
+   "en": "reveals, gives away",
+   "lemma": "verraten"
+  },
+  {
+   "form": "Worte",
+   "context": "die Körpersprache (Sg.) — EN: body language · FR: le langage corporelKörpersprache verrät oft mehr als Worte.",
+   "en": "words",
+   "lemma": "das Wort"
+  },
+  {
+   "form": "gesture",
+   "context": "die Geste, -n / die Gestik (Sg.) — EN: gesture / gestures · FR: le geste / la gestuelleDieselbe Geste bedeutet anderswo das Gegenteil.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gestures",
+   "context": "die Geste, -n / die Gestik (Sg.) — EN: gesture / gestures · FR: le geste / la gestuelleDieselbe Geste bedeutet anderswo das Gegenteil.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gestuelleDieselbe",
+   "context": "die Geste, -n / die Gestik (Sg.) — EN: gesture / gestures · FR: le geste / la gestuelleDieselbe Geste bedeutet anderswo das Gegenteil.",
+   "en": "the same",
+   "lemma": ""
+  },
+  {
+   "form": "anderswo",
+   "context": "die Geste, -n / die Gestik (Sg.) — EN: gesture / gestures · FR: le geste / la gestuelleDieselbe Geste bedeutet anderswo das Gegenteil.",
+   "en": "elsewhere",
+   "lemma": ""
+  },
+  {
+   "form": "Mimik",
+   "context": "die Mimik (Sg.) — EN: facial expression · FR: les expressions du visageAn ihrer Mimik sah man die Zweifel.",
+   "en": "facial expression(s)",
+   "lemma": "die Mimik"
+  },
+  {
+   "form": "facial",
+   "context": "die Mimik (Sg.) — EN: facial expression · FR: les expressions du visageAn ihrer Mimik sah man die Zweifel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "expressions",
+   "context": "die Mimik (Sg.) — EN: facial expression · FR: les expressions du visageAn ihrer Mimik sah man die Zweifel.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "visageAn",
+   "context": "die Mimik (Sg.) — EN: facial expression · FR: les expressions du visageAn ihrer Mimik sah man die Zweifel.",
+   "en": "by, from",
+   "lemma": ""
+  },
+  {
+   "form": "Blickkontakt",
+   "context": "der Blickkontakt (Sg.) — EN: eye contact · FR: le contact visuelBlickkontakt wird nicht überall gleich bewertet.",
+   "en": "eye contact",
+   "lemma": "der Blickkontakt"
+  },
+  {
+   "form": "eye",
+   "context": "der Blickkontakt (Sg.) — EN: eye contact · FR: le contact visuelBlickkontakt wird nicht überall gleich bewertet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "visuelBlickkontakt",
+   "context": "der Blickkontakt (Sg.) — EN: eye contact · FR: le contact visuelBlickkontakt wird nicht überall gleich bewertet.",
+   "en": "eye contact",
+   "lemma": "der Blickkontakt"
+  },
+  {
+   "form": "bewertet",
+   "context": "der Blickkontakt (Sg.) — EN: eye contact · FR: le contact visuelBlickkontakt wird nicht überall gleich bewertet.",
+   "en": "judged, rated",
+   "lemma": "bewerten"
+  },
+  {
+   "form": "nonverbal",
+   "context": "nonverbal — EN: non-verbal · FR: non verbalEin großer Teil der Kommunikation ist nonverbal.",
+   "en": "non-verbal",
+   "lemma": ""
+  },
+  {
+   "form": "non-verbal",
+   "context": "nonverbal — EN: non-verbal · FR: non verbalEin großer Teil der Kommunikation ist nonverbal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "non",
+   "context": "nonverbal — EN: non-verbal · FR: non verbalEin großer Teil der Kommunikation ist nonverbal.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verbalEin",
+   "context": "nonverbal — EN: non-verbal · FR: non verbalEin großer Teil der Kommunikation ist nonverbal.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "Haltung",
+   "context": "die Haltung, -en — EN: posture; attitude · FR: la posture; l'attitudeEine offene Haltung wirkt einladend.",
+   "en": "posture; attitude",
+   "lemma": "die Haltung"
+  },
+  {
+   "form": "posture",
+   "context": "die Haltung, -en — EN: posture; attitude · FR: la posture; l'attitudeEine offene Haltung wirkt einladend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "attitude",
+   "context": "die Haltung, -en — EN: posture; attitude · FR: la posture; l'attitudeEine offene Haltung wirkt einladend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'attitudeEine",
+   "context": "die Haltung, -en — EN: posture; attitude · FR: la posture; l'attitudeEine offene Haltung wirkt einladend.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "einladend",
+   "context": "die Haltung, -en — EN: posture; attitude · FR: la posture; l'attitudeEine offene Haltung wirkt einladend.",
+   "en": "inviting",
+   "lemma": ""
+  },
+  {
+   "form": "signalisieren",
+   "context": "etwas signalisieren — EN: to signal sth. · FR: signaler qc.Nicken signalisiert nicht überall Zustimmung.",
+   "en": "to signal",
+   "lemma": ""
+  },
+  {
+   "form": "signal",
+   "context": "etwas signalisieren — EN: to signal sth. · FR: signaler qc.Nicken signalisiert nicht überall Zustimmung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "signaler",
+   "context": "etwas signalisieren — EN: to signal sth. · FR: signaler qc.Nicken signalisiert nicht überall Zustimmung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Nicken",
+   "context": "etwas signalisieren — EN: to signal sth. · FR: signaler qc.Nicken signalisiert nicht überall Zustimmung.",
+   "en": "nodding",
+   "lemma": "das Nicken"
+  },
+  {
+   "form": "signalisiert",
+   "context": "etwas signalisieren — EN: to signal sth. · FR: signaler qc.Nicken signalisiert nicht überall Zustimmung.",
+   "en": "signals",
+   "lemma": "signalisieren"
+  },
+  {
+   "form": "Zustimmung",
+   "context": "etwas signalisieren — EN: to signal sth. · FR: signaler qc.Nicken signalisiert nicht überall Zustimmung.",
+   "en": "agreement, approval",
+   "lemma": "die Zustimmung"
+  },
+  {
+   "form": "Konvention",
+   "context": "die Konvention, -en — EN: convention · FR: la conventionBegrüßungskonventionen unterscheiden sich stark.",
+   "en": "convention",
+   "lemma": "die Konvention"
+  },
+  {
+   "form": "convention",
+   "context": "die Konvention, -en — EN: convention · FR: la conventionBegrüßungskonventionen unterscheiden sich stark.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "conventionBegrüßungskonventionen",
+   "context": "die Konvention, -en — EN: convention · FR: la conventionBegrüßungskonventionen unterscheiden sich stark.",
+   "en": "greeting conventions",
+   "lemma": "die Begrüßungskonvention"
+  },
+  {
+   "form": "Tonfall",
+   "context": "der Tonfall (Sg.) — EN: tone of voice · FR: le tonEs war nicht der Inhalt, sondern der Tonfall.",
+   "en": "tone of voice",
+   "lemma": "der Tonfall"
+  },
+  {
+   "form": "voice",
+   "context": "der Tonfall (Sg.) — EN: tone of voice · FR: le tonEs war nicht der Inhalt, sondern der Tonfall.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tonEs",
+   "context": "der Tonfall (Sg.) — EN: tone of voice · FR: le tonEs war nicht der Inhalt, sondern der Tonfall.",
+   "en": "it",
+   "lemma": ""
+  },
+  {
+   "form": "unterstellen",
+   "context": "jemandem etwas unterstellen — EN: to impute sth. to sb. · FR: imputer qc. à qn.Man sollte niemandem böse Absichten unterstellen.",
+   "en": "to impute, insinuate",
+   "lemma": ""
+  },
+  {
+   "form": "impute",
+   "context": "jemandem etwas unterstellen — EN: to impute sth. to sb. · FR: imputer qc. à qn.Man sollte niemandem böse Absichten unterstellen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "imputer",
+   "context": "jemandem etwas unterstellen — EN: to impute sth. to sb. · FR: imputer qc. à qn.Man sollte niemandem böse Absichten unterstellen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "niemandem",
+   "context": "jemandem etwas unterstellen — EN: to impute sth. to sb. · FR: imputer qc. à qn.Man sollte niemandem böse Absichten unterstellen.",
+   "en": "(to) nobody",
+   "lemma": ""
+  },
+  {
+   "form": "böse",
+   "context": "jemandem etwas unterstellen — EN: to impute sth. to sb. · FR: imputer qc. à qn.Man sollte niemandem böse Absichten unterstellen.",
+   "en": "bad, evil; angry",
+   "lemma": ""
+  },
+  {
+   "form": "Distanzzone",
+   "context": "die Distanzzone, -n — EN: personal space · FR: la distance interpersonnelleDie angenehme Distanzzone ist kulturell geprägt.",
+   "en": "personal space",
+   "lemma": "die Distanzzone"
+  },
+  {
+   "form": "personal",
+   "context": "die Distanzzone, -n — EN: personal space · FR: la distance interpersonnelleDie angenehme Distanzzone ist kulturell geprägt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "interpersonnelleDie",
+   "context": "die Distanzzone, -n — EN: personal space · FR: la distance interpersonnelleDie angenehme Distanzzone ist kulturell geprägt.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "angenehme",
+   "context": "die Distanzzone, -n — EN: personal space · FR: la distance interpersonnelleDie angenehme Distanzzone ist kulturell geprägt.",
+   "en": "comfortable, pleasant",
+   "lemma": "angenehm"
+  },
+  {
+   "form": "kulturell",
+   "context": "die Distanzzone, -n — EN: personal space · FR: la distance interpersonnelleDie angenehme Distanzzone ist kulturell geprägt.",
+   "en": "culturally",
+   "lemma": ""
+  },
+  {
+   "form": "zweideutig",
+   "context": "zweideutig — EN: ambiguous · FR: ambiguSeine Antwort war bewusst zweideutig.",
+   "en": "ambiguous",
+   "lemma": ""
+  },
+  {
+   "form": "ambiguSeine",
+   "context": "zweideutig — EN: ambiguous · FR: ambiguSeine Antwort war bewusst zweideutig.",
+   "en": "his",
+   "lemma": ""
+  },
+  {
+   "form": "deuten",
+   "context": "etwas deuten als — EN: to interpret as · FR: interpréter commeSchweigen wurde als Ablehnung gedeutet.",
+   "en": "to interpret",
+   "lemma": ""
+  },
+  {
+   "form": "interpret",
+   "context": "etwas deuten als — EN: to interpret as · FR: interpréter commeSchweigen wurde als Ablehnung gedeutet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "interpréter",
+   "context": "etwas deuten als — EN: to interpret as · FR: interpréter commeSchweigen wurde als Ablehnung gedeutet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "commeSchweigen",
+   "context": "etwas deuten als — EN: to interpret as · FR: interpréter commeSchweigen wurde als Ablehnung gedeutet.",
+   "en": "silence",
+   "lemma": "das Schweigen"
+  },
+  {
+   "form": "Ablehnung",
+   "context": "etwas deuten als — EN: to interpret as · FR: interpréter commeSchweigen wurde als Ablehnung gedeutet.",
+   "en": "rejection",
+   "lemma": "die Ablehnung"
+  },
+  {
+   "form": "gedeutet",
+   "context": "etwas deuten als — EN: to interpret as · FR: interpréter commeSchweigen wurde als Ablehnung gedeutet.",
+   "en": "interpreted",
+   "lemma": "deuten"
+  },
+  {
+   "form": "intention",
+   "context": "die Absicht, -en — EN: intention · FR: l'intentionDas war sicher nicht seine Absicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'intentionDas",
+   "context": "die Absicht, -en — EN: intention · FR: l'intentionDas war sicher nicht seine Absicht.",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "zusammenhängen",
+   "context": "Das dürfte damit zusammenhängen, dass …",
+   "en": "be connected",
+   "lemma": ""
+  },
+  {
+   "form": "vorgelegen",
+   "context": "Da muss ein Missverständnis vorgelegen haben.",
+   "en": "existed, been there",
+   "lemma": "vorliegen"
+  },
+  {
+   "form": "abstufen",
+   "context": "Sicherheit abstufen",
+   "en": "to grade, scale",
+   "lemma": ""
+  },
+  {
+   "form": "vermute",
+   "context": "Ich vermute eher, dass …",
+   "en": "suspect, assume",
+   "lemma": "vermuten"
+  },
+  {
+   "form": "unhöflich",
+   "context": "Bei uns gilt es als unhöflich, wenn …",
+   "en": "rude, impolite",
+   "lemma": ""
+  },
+  {
+   "form": "unterschiedlich",
+   "context": "Das wird je nach Region ganz unterschiedlich gehandhabt.",
+   "en": "differently",
+   "lemma": ""
+  },
+  {
+   "form": "gehandhabt",
+   "context": "Das wird je nach Region ganz unterschiedlich gehandhabt.",
+   "en": "handled",
+   "lemma": "handhaben"
+  },
+  {
+   "form": "Begrüßungskonventionen",
+   "context": "Begrüßungskonventionen unterscheiden sich stark.",
+   "en": "greeting conventions",
+   "lemma": "die Begrüßungskonvention"
+  },
+  {
+   "form": "Schweigen",
+   "context": "Schweigen wurde als Ablehnung gedeutet.",
+   "en": "silence",
+   "lemma": "das Schweigen"
+  },
+  {
+   "form": "geführt",
+   "context": "Beschreiben Sie eine Situation, in der Körpersprache zu einem Missverständnis geführt hat, und erklären Sie mögliche Gründe. Umfang: 160–200 Wörter Checkliste: • Schildern Sie die Situation knapp und konkret. • Äußern Sie mindestens zwei Vermutungen mit Modalverben. • Verwenden Sie einmal ohne … zu oder ohne dass. • Formulieren Sie am Ende einen Rat für ähnliche Situationen.",
+   "en": "led",
+   "lemma": "führen"
+  },
+  {
+   "form": "mögliche",
+   "context": "Beschreiben Sie eine Situation, in der Körpersprache zu einem Missverständnis geführt hat, und erklären Sie mögliche Gründe. Umfang: 160–200 Wörter Checkliste: • Schildern Sie die Situation knapp und konkret. • Äußern Sie mindestens zwei Vermutungen mit Modalverben. • Verwenden Sie einmal ohne … zu oder ohne dass. • Formulieren Sie am Ende einen Rat für ähnliche Situationen.",
+   "en": "possible",
+   "lemma": "möglich"
+  },
+  {
+   "form": "ähnliche",
+   "context": "Beschreiben Sie eine Situation, in der Körpersprache zu einem Missverständnis geführt hat, und erklären Sie mögliche Gründe. Umfang: 160–200 Wörter Checkliste: • Schildern Sie die Situation knapp und konkret. • Äußern Sie mindestens zwei Vermutungen mit Modalverben. • Verwenden Sie einmal ohne … zu oder ohne dass. • Formulieren Sie am Ende einen Rat für ähnliche Situationen.",
+   "en": "similar",
+   "lemma": "ähnlich"
+  }
+ ]
+}
