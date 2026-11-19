@@ -7,6 +7,7 @@ import { prisma } from "../../lib/prisma.js";
 import type {
 UpdateProgressInput
 } from "./content.schema.js";
+import { recordLessonCompleted } from "./learning-events.js";
 import { assertLessonAvailable } from "./lesson-availability.js";
 export const upsertLessonProgress = async (
   userId: string,
@@ -40,6 +41,8 @@ export const upsertLessonProgress = async (
   }
 
   const completedAt = input.status === "COMPLETED" ? new Date() : null;
+  const before = await prisma.lessonProgress.findUnique({ where: { studentId_lessonId: { studentId: profile.studentId, lessonId } }, select: { status: true } });
+  if (input.status === "COMPLETED" && before?.status !== "COMPLETED") await recordLessonCompleted(profile.studentId, lessonId);
 
   return prisma.lessonProgress.upsert({
     where: { studentId_lessonId: { studentId: profile.studentId, lessonId } },
