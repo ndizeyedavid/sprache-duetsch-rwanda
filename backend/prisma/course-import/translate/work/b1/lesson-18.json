@@ -1,0 +1,737 @@
+{
+ "level": "B1",
+ "lesson": 18,
+ "title": "Politik und Gesellschaft — Davon halte ich ehrlich gesagt wenig",
+ "lines": [
+  {
+   "de": "Die eigene Meinung zu gesellschaftlichen Themen sagen — und sich klar auf etwas beziehen.",
+   "en": "Giving your opinion on social issues — and referring clearly to something."
+  },
+  {
+   "de": "die eigene Meinung zu politischen und gesellschaftlichen Themen äußern",
+   "en": "express your own opinion on political and social issues"
+  },
+  {
+   "de": "Verben mit festen Präpositionen verwenden",
+   "en": "use verbs with fixed prepositions"
+  },
+  {
+   "de": "Präpositionaladverbien mit da(r)- und wo(r)- bilden",
+   "en": "form prepositional adverbs (Präpositionaladverbien) with da(r)- and wo(r)-"
+  },
+  {
+   "de": "Grammatik: Präpositionaladverbien: da(r)- und wo(r)-",
+   "en": "Grammar: prepositional adverbs (Präpositionaladverbien): da(r)- and wo(r)-"
+  },
+  {
+   "de": "Viele Verben verlangen eine feste Präposition. Bezieht man sich auf eine Sache (nicht auf eine Person), ersetzt man Präposition + Nomen durch da(r)- + Präposition. In Fragen steht wo(r)- + Präposition. Das r kommt dazu, wenn die Präposition mit einem Vokal beginnt.",
+   "en": "Many verbs require a fixed preposition. If you are referring to a thing (not a person), you replace preposition + noun with da(r)- + preposition. In questions, you use wo(r)- + preposition. The r is added when the preposition begins with a vowel."
+  },
+  {
+   "de": "Bezug",
+   "en": "Refers to"
+  },
+  {
+   "de": "Ich denke oft daran.",
+   "en": "I often think about it."
+  },
+  {
+   "de": "Ich denke oft an ihn.",
+   "en": "I often think about him."
+  },
+  {
+   "de": "Woran denkst du?",
+   "en": "What are you thinking about?"
+  },
+  {
+   "de": "An wen denkst du?",
+   "en": "Who are you thinking about?"
+  },
+  {
+   "de": "darüber, darauf, daran, darin",
+   "en": "about it, for it, of it, in it"
+  },
+  {
+   "de": "über ihn, auf sie, an ihn",
+   "en": "about him, for her, of him"
+  },
+  {
+   "de": "damit, davon, dafür, dagegen",
+   "en": "with it, of it, for it, against it"
+  },
+  {
+   "de": "mit ihm, von ihr, für sie",
+   "en": "with him, of her, for her"
+  },
+  {
+   "de": "Von dieser Idee halte ich wenig. → Davon halte ich wenig.halten von + Dativ",
+   "en": "I don't think much of this idea. → I don't think much of it. halten von + dative"
+  },
+  {
+   "de": "Worüber habt ihr so lange diskutiert?diskutieren über + Akkusativ",
+   "en": "What did you discuss for so long? diskutieren über + accusative"
+  },
+  {
+   "de": "Ich bin dafür, dass alle mitentscheiden dürfen.da(r)- kann auf einen dass-Satz vorausweisen",
+   "en": "I am in favour of everyone being allowed to have a say. da(r)- can point ahead to a dass clause"
+  },
+  {
+   "de": "Tipp: Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über.",
+   "en": "Tip: Useful verbs with prepositions: to be interested in, to stand up for, to deal with, to think of, to take part in, to get involved in, to protest against, to vote on."
+  },
+  {
+   "de": "die Wahl, -en — EN: election, choice · FR: l'élection, le choixDie Wahl findet im Herbst statt.",
+   "en": "Example: The election takes place in autumn."
+  },
+  {
+   "de": "wählen — EN: to vote, elect · FR: voter, élireAb 18 Jahren darf man wählen.",
+   "en": "Example: You can vote from the age of 18."
+  },
+  {
+   "de": "die Partei, -en — EN: political party · FR: le partiMehrere Parteien sind im Parlament vertreten.",
+   "en": "Example: Several parties are represented in parliament."
+  },
+  {
+   "de": "sich engagieren für — EN: to get involved in · FR: s'engager pourSie engagiert sich für Bildung.",
+   "en": "Example: She is committed to education."
+  },
+  {
+   "de": "das Ehrenamt, ¨-er — EN: voluntary work · FR: le bénévolatViele Menschen arbeiten im Ehrenamt.",
+   "en": "Example: Many people do voluntary work."
+  },
+  {
+   "de": "die Gerechtigkeit (Sg.) — EN: justice · FR: la justiceEs geht ihnen um soziale Gerechtigkeit.",
+   "en": "Example: What matters to them is social justice."
+  },
+  {
+   "de": "die Gleichberechtigung (Sg.) — EN: equal rights · FR: l'égalité des droitsGleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "Example: Equal rights are not yet taken for granted everywhere."
+  },
+  {
+   "de": "sich einsetzen für — EN: to stand up for · FR: défendre, militer pourEr setzt sich für bessere Radwege ein.",
+   "en": "Example: He campaigns for better cycle paths."
+  },
+  {
+   "de": "die Gesellschaft, -en — EN: society · FR: la sociétéUnsere Gesellschaft verändert sich schnell.",
+   "en": "Example: Our society is changing quickly."
+  },
+  {
+   "de": "die Mehrheit / die Minderheit — EN: majority / minority · FR: la majorité / la minoritéDie Mehrheit war dagegen.",
+   "en": "Example: The majority was against it."
+  },
+  {
+   "de": "das Gesetz, -e — EN: law · FR: la loiDas neue Gesetz gilt ab Januar.",
+   "en": "Example: The new law applies from January."
+  },
+  {
+   "de": "skeptisch — EN: sceptical · FR: sceptiqueIch bin da eher skeptisch.",
+   "en": "Example: I'm rather sceptical about that."
+  },
+  {
+   "de": "Meinung äußern",
+   "en": "Expressing your opinion"
+  },
+  {
+   "de": "Davon halte ich ehrlich gesagt wenig.",
+   "en": "To be honest, I don't think much of that."
+  },
+  {
+   "de": "Ich bin absolut dafür / dagegen, dass …",
+   "en": "I am absolutely for / against the idea that …"
+  },
+  {
+   "de": "Meiner Ansicht nach …",
+   "en": "In my view …"
+  },
+  {
+   "de": "widersprechen",
+   "en": "Disagreeing"
+  },
+  {
+   "de": "Da bin ich ganz anderer Meinung.",
+   "en": "I see that quite differently."
+  },
+  {
+   "de": "Das kann man so nicht sagen.",
+   "en": "You can't really say that."
+  },
+  {
+   "de": "Dem würde ich widersprechen, weil …",
+   "en": "I would disagree with that because …"
+  },
+  {
+   "de": "nachhaken",
+   "en": "Probing further"
+  },
+  {
+   "de": "Worauf stützt sich das?",
+   "en": "What is that based on?"
+  },
+  {
+   "de": "Wofür genau setzen Sie sich ein?",
+   "en": "What exactly are you campaigning for?"
+  },
+  {
+   "de": "Woran denken Sie dabei konkret?",
+   "en": "What specifically do you have in mind?"
+  },
+  {
+   "de": "Die Wahl findet im Herbst statt.",
+   "en": "The election takes place in autumn."
+  },
+  {
+   "de": "Ab 18 Jahren darf man wählen.",
+   "en": "You can vote from the age of 18."
+  },
+  {
+   "de": "Mehrere Parteien sind im Parlament vertreten.",
+   "en": "Several parties are represented in parliament."
+  },
+  {
+   "de": "Sie engagiert sich für Bildung.",
+   "en": "She is committed to education."
+  },
+  {
+   "de": "Viele Menschen arbeiten im Ehrenamt.",
+   "en": "Many people do voluntary work."
+  },
+  {
+   "de": "Es geht ihnen um soziale Gerechtigkeit.",
+   "en": "What matters to them is social justice."
+  },
+  {
+   "de": "Gleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "Equal rights are not yet taken for granted everywhere."
+  },
+  {
+   "de": "Er setzt sich für bessere Radwege ein.",
+   "en": "He campaigns for better cycle paths."
+  },
+  {
+   "de": "Unsere Gesellschaft verändert sich schnell.",
+   "en": "Our society is changing quickly."
+  },
+  {
+   "de": "Die Mehrheit war dagegen.",
+   "en": "The majority was against it."
+  },
+  {
+   "de": "Das neue Gesetz gilt ab Januar.",
+   "en": "The new law applies from January."
+  },
+  {
+   "de": "Ich bin da eher skeptisch.",
+   "en": "I'm rather sceptical about that."
+  },
+  {
+   "de": "— Ich bin gegen diesen Vorschlag. — Ich bin auch ___. (Präpositionaladverb)",
+   "en": "— I'm against this proposal. — I'm ___ too. (prepositional adverb)"
+  },
+  {
+   "de": "___ interessierst du dich am meisten?",
+   "en": "___ are you most interested in?"
+  },
+  {
+   "de": "Sie hat lange ___ gesprochen, dass sich etwas ändern muss. (darüber/davon?)",
+   "en": "She spoke for a long time ___ the fact that something has to change. (darüber/davon?)"
+  },
+  {
+   "de": "Ich denke oft an meine Großmutter. →",
+   "en": "I often think about my grandmother. →"
+  },
+  {
+   "de": "___ haltet ihr von dem neuen Gesetz? (Fragewort mit wo(r)-)",
+   "en": "___ do you think of the new law? (question word with wo(r)-)"
+  },
+  {
+   "de": "gegen + Sache → dagegen.",
+   "en": "gegen + thing → dagegen."
+  },
+  {
+   "de": "sich interessieren für + Sache → Frage mit wofür.",
+   "en": "sich interessieren für + thing → question with wofür."
+  },
+  {
+   "de": "sprechen über + Akkusativ → darüber, mit r vor dem Vokal.",
+   "en": "sprechen über + accusative → darüber, with r before the vowel."
+  },
+  {
+   "de": "Bei Personen bleibt die Präposition mit Pronomen — da(r)- nur bei Sachen.",
+   "en": "With people, the preposition stays and takes a pronoun — da(r)- only for things."
+  },
+  {
+   "de": "halten von in der Bedeutung 'bewerten' fragt mit Was hältst du von …? — nicht mit wovon.",
+   "en": "halten von in the sense of 'to rate, judge' forms its question with Was hältst du von …? — not with wovon."
+  }
+ ],
+ "forms": [
+  {
+   "form": "gesellschaftlichen",
+   "context": "Die eigene Meinung zu gesellschaftlichen Themen sagen — und sich klar auf etwas beziehen.",
+   "en": "social",
+   "lemma": "gesellschaftlich"
+  },
+  {
+   "form": "politischen",
+   "context": "die eigene Meinung zu politischen und gesellschaftlichen Themen äußern",
+   "en": "political",
+   "lemma": "politisch"
+  },
+  {
+   "form": "Präpositionaladverbien",
+   "context": "Präpositionaladverbien mit da(r)- und wo(r)- bilden",
+   "en": "prepositional adverbs",
+   "lemma": "das Präpositionaladverb"
+  },
+  {
+   "form": "Bezieht",
+   "context": "Viele Verben verlangen eine feste Präposition. Bezieht man sich auf eine Sache (nicht auf eine Person), ersetzt man Präposition + Nomen durch da(r)- + Präposition. In Fragen steht wo(r)- + Präposition. Das r kommt dazu, wenn die Präposition mit einem Vokal beginnt.",
+   "en": "refers (sich beziehen auf)",
+   "lemma": "sich beziehen"
+  },
+  {
+   "form": "Bezug",
+   "context": "Bezug",
+   "en": "reference, relation",
+   "lemma": "der Bezug"
+  },
+  {
+   "form": "denke",
+   "context": "Ich denke oft daran.",
+   "en": "think",
+   "lemma": "denken"
+  },
+  {
+   "form": "denkst",
+   "context": "Woran denkst du?",
+   "en": "think (with du)",
+   "lemma": "denken"
+  },
+  {
+   "form": "darin",
+   "context": "darüber, darauf, daran, darin",
+   "en": "in it, in there",
+   "lemma": ""
+  },
+  {
+   "form": "halte",
+   "context": "Von dieser Idee halte ich wenig. → Davon halte ich wenig.halten von + Dativ",
+   "en": "think (halten von); hold",
+   "lemma": "halten"
+  },
+  {
+   "form": "diskutiert",
+   "context": "Worüber habt ihr so lange diskutiert?diskutieren über + Akkusativ",
+   "en": "discussed",
+   "lemma": "diskutieren"
+  },
+  {
+   "form": "diskutieren",
+   "context": "Worüber habt ihr so lange diskutiert?diskutieren über + Akkusativ",
+   "en": "to discuss",
+   "lemma": ""
+  },
+  {
+   "form": "mitentscheiden",
+   "context": "Ich bin dafür, dass alle mitentscheiden dürfen.da(r)- kann auf einen dass-Satz vorausweisen",
+   "en": "to have a say",
+   "lemma": ""
+  },
+  {
+   "form": "dass-Satz",
+   "context": "Ich bin dafür, dass alle mitentscheiden dürfen.da(r)- kann auf einen dass-Satz vorausweisen",
+   "en": "dass clause",
+   "lemma": "der dass-Satz"
+  },
+  {
+   "form": "vorausweisen",
+   "context": "Ich bin dafür, dass alle mitentscheiden dürfen.da(r)- kann auf einen dass-Satz vorausweisen",
+   "en": "to point ahead (to)",
+   "lemma": ""
+  },
+  {
+   "form": "Nützliche",
+   "context": "Tipp: Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über.",
+   "en": "useful",
+   "lemma": "nützlich"
+  },
+  {
+   "form": "einsetzen",
+   "context": "Tipp: Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über.",
+   "en": "(sich) stand up for; to use",
+   "lemma": ""
+  },
+  {
+   "form": "beschäftigen",
+   "context": "Tipp: Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über.",
+   "en": "(sich) deal with; to employ",
+   "lemma": ""
+  },
+  {
+   "form": "engagieren",
+   "context": "Tipp: Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über.",
+   "en": "(sich) get involved; to hire",
+   "lemma": ""
+  },
+  {
+   "form": "protestieren",
+   "context": "Tipp: Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über.",
+   "en": "to protest",
+   "lemma": ""
+  },
+  {
+   "form": "gegen",
+   "context": "Tipp: Nützliche Verben mit Präposition: sich interessieren für, sich einsetzen für, sich beschäftigen mit, halten von, teilnehmen an, sich engagieren für, protestieren gegen, abstimmen über.",
+   "en": "against",
+   "lemma": ""
+  },
+  {
+   "form": "election",
+   "context": "die Wahl, -en — EN: election, choice · FR: l'élection, le choixDie Wahl findet im Herbst statt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "choice",
+   "context": "die Wahl, -en — EN: election, choice · FR: l'élection, le choixDie Wahl findet im Herbst statt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'élection",
+   "context": "die Wahl, -en — EN: election, choice · FR: l'élection, le choixDie Wahl findet im Herbst statt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "choixDie",
+   "context": "die Wahl, -en — EN: election, choice · FR: l'élection, le choixDie Wahl findet im Herbst statt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "elect",
+   "context": "wählen — EN: to vote, elect · FR: voter, élireAb 18 Jahren darf man wählen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "élireAb",
+   "context": "wählen — EN: to vote, elect · FR: voter, élireAb 18 Jahren darf man wählen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Partei",
+   "context": "die Partei, -en — EN: political party · FR: le partiMehrere Parteien sind im Parlament vertreten.",
+   "en": "(political) party",
+   "lemma": "die Partei"
+  },
+  {
+   "form": "political",
+   "context": "die Partei, -en — EN: political party · FR: le partiMehrere Parteien sind im Parlament vertreten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "partiMehrere",
+   "context": "die Partei, -en — EN: political party · FR: le partiMehrere Parteien sind im Parlament vertreten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Parteien",
+   "context": "die Partei, -en — EN: political party · FR: le partiMehrere Parteien sind im Parlament vertreten.",
+   "en": "(political) parties",
+   "lemma": "die Partei"
+  },
+  {
+   "form": "Parlament",
+   "context": "die Partei, -en — EN: political party · FR: le partiMehrere Parteien sind im Parlament vertreten.",
+   "en": "parliament",
+   "lemma": "das Parlament"
+  },
+  {
+   "form": "vertreten",
+   "context": "die Partei, -en — EN: political party · FR: le partiMehrere Parteien sind im Parlament vertreten.",
+   "en": "represented; to represent",
+   "lemma": ""
+  },
+  {
+   "form": "involved",
+   "context": "sich engagieren für — EN: to get involved in · FR: s'engager pourSie engagiert sich für Bildung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'engager",
+   "context": "sich engagieren für — EN: to get involved in · FR: s'engager pourSie engagiert sich für Bildung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pourSie",
+   "context": "sich engagieren für — EN: to get involved in · FR: s'engager pourSie engagiert sich für Bildung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "engagiert",
+   "context": "sich engagieren für — EN: to get involved in · FR: s'engager pourSie engagiert sich für Bildung.",
+   "en": "is involved, committed",
+   "lemma": "sich engagieren"
+  },
+  {
+   "form": "Bildung",
+   "context": "sich engagieren für — EN: to get involved in · FR: s'engager pourSie engagiert sich für Bildung.",
+   "en": "education",
+   "lemma": "die Bildung"
+  },
+  {
+   "form": "Ehrenamt",
+   "context": "das Ehrenamt, ¨-er — EN: voluntary work · FR: le bénévolatViele Menschen arbeiten im Ehrenamt.",
+   "en": "voluntary work",
+   "lemma": "das Ehrenamt"
+  },
+  {
+   "form": "voluntary",
+   "context": "das Ehrenamt, ¨-er — EN: voluntary work · FR: le bénévolatViele Menschen arbeiten im Ehrenamt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bénévolatViele",
+   "context": "das Ehrenamt, ¨-er — EN: voluntary work · FR: le bénévolatViele Menschen arbeiten im Ehrenamt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Gerechtigkeit",
+   "context": "die Gerechtigkeit (Sg.) — EN: justice · FR: la justiceEs geht ihnen um soziale Gerechtigkeit.",
+   "en": "justice",
+   "lemma": "die Gerechtigkeit"
+  },
+  {
+   "form": "justice",
+   "context": "die Gerechtigkeit (Sg.) — EN: justice · FR: la justiceEs geht ihnen um soziale Gerechtigkeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "justiceEs",
+   "context": "die Gerechtigkeit (Sg.) — EN: justice · FR: la justiceEs geht ihnen um soziale Gerechtigkeit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soziale",
+   "context": "die Gerechtigkeit (Sg.) — EN: justice · FR: la justiceEs geht ihnen um soziale Gerechtigkeit.",
+   "en": "social",
+   "lemma": "sozial"
+  },
+  {
+   "form": "Gleichberechtigung",
+   "context": "die Gleichberechtigung (Sg.) — EN: equal rights · FR: l'égalité des droitsGleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "equal rights, equality",
+   "lemma": "die Gleichberechtigung"
+  },
+  {
+   "form": "equal",
+   "context": "die Gleichberechtigung (Sg.) — EN: equal rights · FR: l'égalité des droitsGleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rights",
+   "context": "die Gleichberechtigung (Sg.) — EN: equal rights · FR: l'égalité des droitsGleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'égalité",
+   "context": "die Gleichberechtigung (Sg.) — EN: equal rights · FR: l'égalité des droitsGleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "droitsGleichberechtigung",
+   "context": "die Gleichberechtigung (Sg.) — EN: equal rights · FR: l'égalité des droitsGleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "selbstverständlich",
+   "context": "die Gleichberechtigung (Sg.) — EN: equal rights · FR: l'égalité des droitsGleichberechtigung ist noch nicht überall selbstverständlich.",
+   "en": "taken for granted; of course",
+   "lemma": ""
+  },
+  {
+   "form": "défendre",
+   "context": "sich einsetzen für — EN: to stand up for · FR: défendre, militer pourEr setzt sich für bessere Radwege ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "militer",
+   "context": "sich einsetzen für — EN: to stand up for · FR: défendre, militer pourEr setzt sich für bessere Radwege ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Radwege",
+   "context": "sich einsetzen für — EN: to stand up for · FR: défendre, militer pourEr setzt sich für bessere Radwege ein.",
+   "en": "cycle paths",
+   "lemma": "der Radweg"
+  },
+  {
+   "form": "Gesellschaft",
+   "context": "die Gesellschaft, -en — EN: society · FR: la sociétéUnsere Gesellschaft verändert sich schnell.",
+   "en": "society; company",
+   "lemma": "die Gesellschaft"
+  },
+  {
+   "form": "society",
+   "context": "die Gesellschaft, -en — EN: society · FR: la sociétéUnsere Gesellschaft verändert sich schnell.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sociétéUnsere",
+   "context": "die Gesellschaft, -en — EN: society · FR: la sociétéUnsere Gesellschaft verändert sich schnell.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Mehrheit",
+   "context": "die Mehrheit / die Minderheit — EN: majority / minority · FR: la majorité / la minoritéDie Mehrheit war dagegen.",
+   "en": "majority",
+   "lemma": "die Mehrheit"
+  },
+  {
+   "form": "Minderheit",
+   "context": "die Mehrheit / die Minderheit — EN: majority / minority · FR: la majorité / la minoritéDie Mehrheit war dagegen.",
+   "en": "minority",
+   "lemma": "die Minderheit"
+  },
+  {
+   "form": "majority",
+   "context": "die Mehrheit / die Minderheit — EN: majority / minority · FR: la majorité / la minoritéDie Mehrheit war dagegen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "minority",
+   "context": "die Mehrheit / die Minderheit — EN: majority / minority · FR: la majorité / la minoritéDie Mehrheit war dagegen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "majorité",
+   "context": "die Mehrheit / die Minderheit — EN: majority / minority · FR: la majorité / la minoritéDie Mehrheit war dagegen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "minoritéDie",
+   "context": "die Mehrheit / die Minderheit — EN: majority / minority · FR: la majorité / la minoritéDie Mehrheit war dagegen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Gesetz",
+   "context": "das Gesetz, -e — EN: law · FR: la loiDas neue Gesetz gilt ab Januar.",
+   "en": "law",
+   "lemma": "das Gesetz"
+  },
+  {
+   "form": "law",
+   "context": "das Gesetz, -e — EN: law · FR: la loiDas neue Gesetz gilt ab Januar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "loiDas",
+   "context": "das Gesetz, -e — EN: law · FR: la loiDas neue Gesetz gilt ab Januar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "skeptisch",
+   "context": "skeptisch — EN: sceptical · FR: sceptiqueIch bin da eher skeptisch.",
+   "en": "sceptical",
+   "lemma": ""
+  },
+  {
+   "form": "sceptical",
+   "context": "skeptisch — EN: sceptical · FR: sceptiqueIch bin da eher skeptisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sceptiqueIch",
+   "context": "skeptisch — EN: sceptical · FR: sceptiqueIch bin da eher skeptisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "absolut",
+   "context": "Ich bin absolut dafür / dagegen, dass …",
+   "en": "absolutely",
+   "lemma": ""
+  },
+  {
+   "form": "Ansicht",
+   "context": "Meiner Ansicht nach …",
+   "en": "view, opinion",
+   "lemma": "die Ansicht"
+  },
+  {
+   "form": "anderer",
+   "context": "Da bin ich ganz anderer Meinung.",
+   "en": "different, other",
+   "lemma": "andere"
+  },
+  {
+   "form": "nachhaken",
+   "context": "nachhaken",
+   "en": "to probe, follow up",
+   "lemma": ""
+  },
+  {
+   "form": "stützt",
+   "context": "Worauf stützt sich das?",
+   "en": "is based (sich stützen auf); supports",
+   "lemma": "stützen"
+  },
+  {
+   "form": "denken",
+   "context": "Woran denken Sie dabei konkret?",
+   "en": "to think",
+   "lemma": ""
+  },
+  {
+   "form": "konkret",
+   "context": "Woran denken Sie dabei konkret?",
+   "en": "specifically, concrete",
+   "lemma": ""
+  },
+  {
+   "form": "Präpositionaladverb",
+   "context": "— Ich bin gegen diesen Vorschlag. — Ich bin auch ___. (Präpositionaladverb)",
+   "en": "prepositional adverb",
+   "lemma": "das Präpositionaladverb"
+  },
+  {
+   "form": "interessierst",
+   "context": "___ interessierst du dich am meisten?",
+   "en": "are interested (with du)",
+   "lemma": "sich interessieren"
+  },
+  {
+   "form": "haltet",
+   "context": "___ haltet ihr von dem neuen Gesetz? (Fragewort mit wo(r)-)",
+   "en": "think (of) (with ihr); hold",
+   "lemma": "halten"
+  }
+ ]
+}
