@@ -44,7 +44,9 @@ student enrolled in A1–B2. The 15-account scenario dataset remains removed.
 
 - Verify `/api/health` after every release; it checks database connectivity.
 - Configure `PUBLIC_APP_URL` and `CORS_ORIGINS` for the actual frontend hostname. When updating the environment through the API, send the complete variable list: the current platform replaces that list rather than merging individual entries.
-- Configure SMTP or the HTTPS email relay for password reset and email notifications.
+- Email: Hubmail SMTP (`mail.hubmail.space:587`, STARTTLS) sending as `info@deutschspracherw.org`; the domain's MX, SPF and DKIM (`hubfly._domainkey`) are on Cloudflare.
+- Payments: XendlyPay (`backend/XENDLYPAY.md`). Webhook URL `https://class.deutschspracherw.org/api/payments/xendlypay/webhook`. Keep `XENDLYPAY_MODE` equal to the XendlyPay app's mode.
+- Domains: the platform answers only on `class.deutschspracherw.org` and the homepage only on `deutschspracherw.org`; nginx in each container 301-redirects every other hostname (see `frontend/deploy/default.conf.template` and the homepage repo's `nginx.conf`).
 - Keep API responses and authenticated resources out of any public edge cache.
 - Verify the volume backup destination and perform a restore test before using real student data. A requested daily backup schedule alone is not proof of a working backup.
 - Use `hubfly deploy status <buildId>` and `hubfly deploy events <buildId>` to confirm terminal deployment success.
