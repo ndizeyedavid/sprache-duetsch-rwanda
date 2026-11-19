@@ -1,0 +1,949 @@
+{
+ "level": "A1",
+ "lesson": 5,
+ "title": "Gegenstände — Das ist ein Kugelschreiber",
+ "lines": [
+  {
+   "de": "Dinge benennen, die man noch nicht kennt — und sagen, was etwas nicht ist.",
+   "en": "Name things you don't know yet — and say what something is not."
+  },
+  {
+   "de": "Textsorte: Gespräch · Quiz",
+   "en": "Text type: Conversation · Quiz"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Hören Teil 1; telc A1 Hören",
+   "en": "Exam link: Start Deutsch 1 Listening part 1; telc A1 Listening"
+  },
+  {
+   "de": "Gegenstände benennen und erfragen",
+   "en": "name objects and ask what things are"
+  },
+  {
+   "de": "den unbestimmten Artikel ein und eine verwenden",
+   "en": "use the indefinite article ein and eine"
+  },
+  {
+   "de": "mit kein und keine verneinen",
+   "en": "make sentences negative with kein and keine"
+  },
+  {
+   "de": "Grammatik: Der unbestimmte Artikel: ein, eine",
+   "en": "Grammar: The indefinite article (unbestimmter Artikel): ein, eine"
+  },
+  {
+   "de": "Wenn eine Sache neu ist oder man sie nicht genau kennt, benutzt man ein oder eine. Maskulin und neutrum sind gleich: ein.",
+   "en": "When a thing is new or you don't know it exactly, you use ein or eine. Masculine and neuter are the same: ein."
+  },
+  {
+   "de": "bestimmt",
+   "en": "definite"
+  },
+  {
+   "de": "unbestimmt",
+   "en": "indefinite"
+  },
+  {
+   "de": "der Schlüssel",
+   "en": "the key"
+  },
+  {
+   "de": "ein Schlüssel",
+   "en": "a key"
+  },
+  {
+   "de": "das Buch",
+   "en": "the book"
+  },
+  {
+   "de": "ein Buch",
+   "en": "a book"
+  },
+  {
+   "de": "die Brille",
+   "en": "the glasses"
+  },
+  {
+   "de": "eine Brille",
+   "en": "a pair of glasses"
+  },
+  {
+   "de": "Plural",
+   "en": "="
+  },
+  {
+   "de": "die Bücher",
+   "en": "the books"
+  },
+  {
+   "de": "— Bücher (kein Artikel)",
+   "en": "— books (no article)"
+  },
+  {
+   "de": "Was ist das? — Das ist ein Kugelschreiber.maskulin: ein",
+   "en": "What is that? — That is a ballpoint pen. masculine: ein"
+  },
+  {
+   "de": "Das ist eine Brille.feminin: eine",
+   "en": "That is a pair of glasses. feminine: eine"
+  },
+  {
+   "de": "Tipp: Im Plural gibt es keinen unbestimmten Artikel: Das sind Bücher.",
+   "en": "Tip: In the plural there is no indefinite article: These are books."
+  },
+  {
+   "de": "Grammatik: Die Verneinung: kein, keine",
+   "en": "Grammar: Negation (Verneinung): kein, keine"
+  },
+  {
+   "de": "Ein Nomen mit ein, eine oder ohne Artikel verneint man mit kein. Die Endungen sind genau wie bei ein.",
+   "en": "A noun with ein, eine or without an article is made negative with kein. The endings are exactly the same as for ein."
+  },
+  {
+   "de": "positiv",
+   "en": "positive"
+  },
+  {
+   "de": "negativ",
+   "en": "negative"
+  },
+  {
+   "de": "kein Schlüssel",
+   "en": "no key"
+  },
+  {
+   "de": "kein Buch",
+   "en": "no book"
+  },
+  {
+   "de": "keine Brille",
+   "en": "no glasses"
+  },
+  {
+   "de": "— Bücher",
+   "en": "— books"
+  },
+  {
+   "de": "keine Bücher",
+   "en": "no books"
+  },
+  {
+   "de": "Das ist kein Bleistift, das ist ein Kugelschreiber.kein + maskulin",
+   "en": "That is not a pencil, it is a ballpoint pen. kein + masculine"
+  },
+  {
+   "de": "Ich habe keine Zeit.keine + feminin",
+   "en": "I have no time. keine + feminine"
+  },
+  {
+   "de": "Tipp: Merken Sie: ein → kein. Nur ein k davor! Mit nicht verneint man Verben und Adjektive, mit kein die Nomen.",
+   "en": "Tip: Remember: ein → kein. Just a k in front! You use nicht to make verbs and adjectives negative, and kein for nouns."
+  },
+  {
+   "de": "der Kugelschreiber, - — EN: ballpoint pen · FR: le styloHast du einen Kugelschreiber?",
+   "en": "Example: Do you have a ballpoint pen?"
+  },
+  {
+   "de": "der Bleistift, -e — EN: pencil · FR: le crayonDer Bleistift ist kurz.",
+   "en": "Example: The pencil is short."
+  },
+  {
+   "de": "das Buch, ¨-er — EN: book · FR: le livreDas Buch ist sehr gut.",
+   "en": "Example: The book is very good."
+  },
+  {
+   "de": "das Heft, -e — EN: exercise book · FR: le cahierMein Heft ist blau.",
+   "en": "Example: My exercise book is blue."
+  },
+  {
+   "de": "die Brille, -n — EN: glasses · FR: les lunettesOhne Brille sehe ich nichts.",
+   "en": "Example: Without glasses I can't see anything."
+  },
+  {
+   "de": "der Schlüssel, - — EN: key · FR: la cléWo ist mein Schlüssel?",
+   "en": "Example: Where is my key?"
+  },
+  {
+   "de": "die Tasche, -n — EN: bag · FR: le sacDie Tasche ist schwer.",
+   "en": "Example: The bag is heavy."
+  },
+  {
+   "de": "das Handy, -s — EN: mobile phone · FR: le portableMein Handy ist kaputt.",
+   "en": "Example: My mobile phone is broken."
+  },
+  {
+   "de": "der Schirm, -e — EN: umbrella · FR: le parapluieNimm einen Schirm mit!",
+   "en": "Example: Take an umbrella with you!"
+  },
+  {
+   "de": "das Papier, -e — EN: paper · FR: le papierIch brauche noch Papier.",
+   "en": "Example: I need some more paper."
+  },
+  {
+   "de": "der Buchstabe, -n — EN: letter (of the alphabet) · FR: la lettreDas ist der Buchstabe F.",
+   "en": "Example: That is the letter F."
+  },
+  {
+   "de": "kein, keine — EN: no, not a · FR: aucun, pas deDas ist kein Problem.",
+   "en": "Example: That's no problem."
+  },
+  {
+   "de": "nach einer Sache fragen",
+   "en": "asking about a thing"
+  },
+  {
+   "de": "Was ist das?",
+   "en": "What is that?"
+  },
+  {
+   "de": "Wie heißt das auf Deutsch?",
+   "en": "What is that called in German?"
+  },
+  {
+   "de": "Wie schreibt man das?",
+   "en": "How do you spell that?"
+  },
+  {
+   "de": "eine Sache benennen",
+   "en": "naming a thing"
+  },
+  {
+   "de": "Das ist ein …",
+   "en": "That is a …"
+  },
+  {
+   "de": "Das sind …",
+   "en": "Those are …"
+  },
+  {
+   "de": "Das ist kein …, das ist ein …",
+   "en": "That is not a …, it is a …"
+  },
+  {
+   "de": "um Hilfe bitten",
+   "en": "asking for help"
+  },
+  {
+   "de": "Entschuldigung, ich verstehe das nicht.",
+   "en": "Sorry, I don't understand that."
+  },
+  {
+   "de": "Können Sie das bitte wiederholen?",
+   "en": "Can you repeat that, please?"
+  },
+  {
+   "de": "Noch einmal, bitte.",
+   "en": "Once more, please."
+  },
+  {
+   "de": "Dialog: Im Unterricht",
+   "en": "Dialogue: In class"
+  },
+  {
+   "de": "Lehrerin: Was ist das?",
+   "en": "Teacher: What is that?"
+  },
+  {
+   "de": "Ali: Das ist ein Bleistift.",
+   "en": "Ali: That is a pencil."
+  },
+  {
+   "de": "Lehrerin: Nein, das ist kein Bleistift. Schauen Sie genau.",
+   "en": "Teacher: No, that is not a pencil. Look carefully."
+  },
+  {
+   "de": "Ali: Ah — das ist ein Kugelschreiber!",
+   "en": "Ali: Ah — that is a ballpoint pen!"
+  },
+  {
+   "de": "Lehrerin: Richtig. Und wie schreibt man das?",
+   "en": "Teacher: Correct. And how do you spell that?"
+  },
+  {
+   "de": "Ali: K-U-G-E-L-S-C-H-R-E-I-B-E-R. Das ist ein langes Wort!",
+   "en": "Ali: K-U-G-E-L-S-C-H-R-E-I-B-E-R. That is a long word!"
+  },
+  {
+   "de": "Hast du einen Kugelschreiber?",
+   "en": "Do you have a ballpoint pen?"
+  },
+  {
+   "de": "Der Bleistift ist kurz.",
+   "en": "The pencil is short."
+  },
+  {
+   "de": "Das Buch ist sehr gut.",
+   "en": "The book is very good."
+  },
+  {
+   "de": "Mein Heft ist blau.",
+   "en": "My exercise book is blue."
+  },
+  {
+   "de": "Ohne Brille sehe ich nichts.",
+   "en": "Without glasses I can't see anything."
+  },
+  {
+   "de": "Wo ist mein Schlüssel?",
+   "en": "Where is my key?"
+  },
+  {
+   "de": "Die Tasche ist schwer.",
+   "en": "The bag is heavy."
+  },
+  {
+   "de": "Mein Handy ist kaputt.",
+   "en": "My mobile phone is broken."
+  },
+  {
+   "de": "Nimm einen Schirm mit!",
+   "en": "Take an umbrella with you!"
+  },
+  {
+   "de": "Ich brauche noch Papier.",
+   "en": "I need some more paper."
+  },
+  {
+   "de": "Das ist der Buchstabe F.",
+   "en": "That is the letter F."
+  },
+  {
+   "de": "Das ist kein Problem.",
+   "en": "That's no problem."
+  },
+  {
+   "de": "Das ist ___ Brille. (unbestimmter Artikel, feminin)",
+   "en": "That is ___ pair of glasses. (indefinite article, feminine)"
+  },
+  {
+   "de": "Das ist ___ Buch.",
+   "en": "That is ___ book."
+  },
+  {
+   "de": "Das ist ___ Bleistift, das ist ein Kugelschreiber. (Verneinung, maskulin)",
+   "en": "That is ___ pencil, it is a ballpoint pen. (negation, masculine)"
+  },
+  {
+   "de": "Ich habe ___ Zeit. (Verneinung, feminin)",
+   "en": "I have ___ time. (negation, feminine)"
+  },
+  {
+   "de": "Wann benutzt man nicht und wann kein?",
+   "en": "When do you use nicht and when kein?"
+  },
+  {
+   "de": "Was ist in Ihrer Tasche? Schreiben Sie fünf Dinge auf. Umfang: 20–30 Wörter Checkliste: • Benutzen Sie ein oder eine richtig. • Verneinen Sie einen Satz mit kein oder keine. • Schreiben Sie zu zwei Dingen ein Adjektiv.",
+   "en": "What is in your bag? Write down five things. Length: 20–30 words Checklist: • Use ein or eine correctly. • Make one sentence negative with kein or keine. • Write an adjective for two of the things."
+  },
+  {
+   "de": "die Brille ist feminin → eine.",
+   "en": "die Brille is feminine → eine."
+  },
+  {
+   "de": "das Buch ist neutrum → ein.",
+   "en": "das Buch is neuter → ein."
+  },
+  {
+   "de": "ein → kein.",
+   "en": "="
+  },
+  {
+   "de": "die Zeit ist feminin → keine.",
+   "en": "die Zeit is feminine → keine."
+  },
+  {
+   "de": "kein verneint Nomen, nicht verneint Verben, Adjektive und Angaben.",
+   "en": "kein makes nouns negative; nicht makes verbs, adjectives and adverbials negative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "kennt",
+   "context": "Dinge benennen, die man noch nicht kennt — und sagen, was etwas nicht ist.",
+   "en": "knows",
+   "lemma": "kennen"
+  },
+  {
+   "form": "Quiz",
+   "context": "Textsorte: Gespräch · Quiz",
+   "en": "quiz",
+   "lemma": "das Quiz"
+  },
+  {
+   "form": "Hören",
+   "context": "Prüfungsbezug: Start Deutsch 1 Hören Teil 1; telc A1 Hören",
+   "en": "listening; to hear",
+   "lemma": "hören"
+  },
+  {
+   "form": "Gegenstände",
+   "context": "Gegenstände benennen und erfragen",
+   "en": "objects, things",
+   "lemma": "der Gegenstand"
+  },
+  {
+   "form": "erfragen",
+   "context": "Gegenstände benennen und erfragen",
+   "en": "to ask about",
+   "lemma": ""
+  },
+  {
+   "form": "unbestimmten",
+   "context": "den unbestimmten Artikel ein und eine verwenden",
+   "en": "indefinite",
+   "lemma": "unbestimmt"
+  },
+  {
+   "form": "kein",
+   "context": "mit kein und keine verneinen",
+   "en": "no, not a",
+   "lemma": ""
+  },
+  {
+   "form": "unbestimmte",
+   "context": "Grammatik: Der unbestimmte Artikel: ein, eine",
+   "en": "indefinite",
+   "lemma": "unbestimmt"
+  },
+  {
+   "form": "Wenn",
+   "context": "Wenn eine Sache neu ist oder man sie nicht genau kennt, benutzt man ein oder eine. Maskulin und neutrum sind gleich: ein.",
+   "en": "when; if",
+   "lemma": ""
+  },
+  {
+   "form": "Sache",
+   "context": "Wenn eine Sache neu ist oder man sie nicht genau kennt, benutzt man ein oder eine. Maskulin und neutrum sind gleich: ein.",
+   "en": "thing",
+   "lemma": "die Sache"
+  },
+  {
+   "form": "genau",
+   "context": "Wenn eine Sache neu ist oder man sie nicht genau kennt, benutzt man ein oder eine. Maskulin und neutrum sind gleich: ein.",
+   "en": "exactly; carefully",
+   "lemma": ""
+  },
+  {
+   "form": "gleich",
+   "context": "Wenn eine Sache neu ist oder man sie nicht genau kennt, benutzt man ein oder eine. Maskulin und neutrum sind gleich: ein.",
+   "en": "the same; in a moment",
+   "lemma": ""
+  },
+  {
+   "form": "bestimmt",
+   "context": "bestimmt",
+   "en": "definite; certainly",
+   "lemma": ""
+  },
+  {
+   "form": "unbestimmt",
+   "context": "unbestimmt",
+   "en": "indefinite",
+   "lemma": ""
+  },
+  {
+   "form": "Schlüssel",
+   "context": "der Schlüssel",
+   "en": "key",
+   "lemma": "der Schlüssel"
+  },
+  {
+   "form": "Buch",
+   "context": "das Buch",
+   "en": "book",
+   "lemma": "das Buch"
+  },
+  {
+   "form": "Brille",
+   "context": "die Brille",
+   "en": "glasses",
+   "lemma": "die Brille"
+  },
+  {
+   "form": "Bücher",
+   "context": "die Bücher",
+   "en": "books",
+   "lemma": "das Buch"
+  },
+  {
+   "form": "Kugelschreiber",
+   "context": "Was ist das? — Das ist ein Kugelschreiber.maskulin: ein",
+   "en": "ballpoint pen",
+   "lemma": "der Kugelschreiber"
+  },
+  {
+   "form": "gibt",
+   "context": "Tipp: Im Plural gibt es keinen unbestimmten Artikel: Das sind Bücher.",
+   "en": "gives (es gibt = there is)",
+   "lemma": "geben"
+  },
+  {
+   "form": "keinen",
+   "context": "Tipp: Im Plural gibt es keinen unbestimmten Artikel: Das sind Bücher.",
+   "en": "no, not a",
+   "lemma": ""
+  },
+  {
+   "form": "Verneinung",
+   "context": "Grammatik: Die Verneinung: kein, keine",
+   "en": "negation",
+   "lemma": "die Verneinung"
+  },
+  {
+   "form": "ohne",
+   "context": "Ein Nomen mit ein, eine oder ohne Artikel verneint man mit kein. Die Endungen sind genau wie bei ein.",
+   "en": "without",
+   "lemma": ""
+  },
+  {
+   "form": "verneint",
+   "context": "Ein Nomen mit ein, eine oder ohne Artikel verneint man mit kein. Die Endungen sind genau wie bei ein.",
+   "en": "makes negative",
+   "lemma": "verneinen"
+  },
+  {
+   "form": "Endungen",
+   "context": "Ein Nomen mit ein, eine oder ohne Artikel verneint man mit kein. Die Endungen sind genau wie bei ein.",
+   "en": "endings",
+   "lemma": "die Endung"
+  },
+  {
+   "form": "positiv",
+   "context": "positiv",
+   "en": "positive",
+   "lemma": ""
+  },
+  {
+   "form": "negativ",
+   "context": "negativ",
+   "en": "negative",
+   "lemma": ""
+  },
+  {
+   "form": "Bleistift",
+   "context": "Das ist kein Bleistift, das ist ein Kugelschreiber.kein + maskulin",
+   "en": "pencil",
+   "lemma": "der Bleistift"
+  },
+  {
+   "form": "Zeit",
+   "context": "Ich habe keine Zeit.keine + feminin",
+   "en": "time",
+   "lemma": "die Zeit"
+  },
+  {
+   "form": "davor",
+   "context": "Tipp: Merken Sie: ein → kein. Nur ein k davor! Mit nicht verneint man Verben und Adjektive, mit kein die Nomen.",
+   "en": "in front of it; before",
+   "lemma": ""
+  },
+  {
+   "form": "Verben",
+   "context": "Tipp: Merken Sie: ein → kein. Nur ein k davor! Mit nicht verneint man Verben und Adjektive, mit kein die Nomen.",
+   "en": "verbs",
+   "lemma": "das Verb"
+  },
+  {
+   "form": "Adjektive",
+   "context": "Tipp: Merken Sie: ein → kein. Nur ein k davor! Mit nicht verneint man Verben und Adjektive, mit kein die Nomen.",
+   "en": "adjectives",
+   "lemma": "das Adjektiv"
+  },
+  {
+   "form": "ballpoint",
+   "context": "der Kugelschreiber, - — EN: ballpoint pen · FR: le styloHast du einen Kugelschreiber?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pen",
+   "context": "der Kugelschreiber, - — EN: ballpoint pen · FR: le styloHast du einen Kugelschreiber?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "styloHast",
+   "context": "der Kugelschreiber, - — EN: ballpoint pen · FR: le styloHast du einen Kugelschreiber?",
+   "en": "have (with du)",
+   "lemma": ""
+  },
+  {
+   "form": "pencil",
+   "context": "der Bleistift, -e — EN: pencil · FR: le crayonDer Bleistift ist kurz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "crayonDer",
+   "context": "der Bleistift, -e — EN: pencil · FR: le crayonDer Bleistift ist kurz.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "kurz",
+   "context": "der Bleistift, -e — EN: pencil · FR: le crayonDer Bleistift ist kurz.",
+   "en": "short",
+   "lemma": ""
+  },
+  {
+   "form": "book",
+   "context": "das Buch, ¨-er — EN: book · FR: le livreDas Buch ist sehr gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "livreDas",
+   "context": "das Buch, ¨-er — EN: book · FR: le livreDas Buch ist sehr gut.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Heft",
+   "context": "das Heft, -e — EN: exercise book · FR: le cahierMein Heft ist blau.",
+   "en": "exercise book",
+   "lemma": "das Heft"
+  },
+  {
+   "form": "exercise",
+   "context": "das Heft, -e — EN: exercise book · FR: le cahierMein Heft ist blau.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cahierMein",
+   "context": "das Heft, -e — EN: exercise book · FR: le cahierMein Heft ist blau.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "glasses",
+   "context": "die Brille, -n — EN: glasses · FR: les lunettesOhne Brille sehe ich nichts.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "les",
+   "context": "die Brille, -n — EN: glasses · FR: les lunettesOhne Brille sehe ich nichts.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lunettesOhne",
+   "context": "die Brille, -n — EN: glasses · FR: les lunettesOhne Brille sehe ich nichts.",
+   "en": "without",
+   "lemma": ""
+  },
+  {
+   "form": "sehe",
+   "context": "die Brille, -n — EN: glasses · FR: les lunettesOhne Brille sehe ich nichts.",
+   "en": "see",
+   "lemma": "sehen"
+  },
+  {
+   "form": "nichts",
+   "context": "die Brille, -n — EN: glasses · FR: les lunettesOhne Brille sehe ich nichts.",
+   "en": "nothing",
+   "lemma": ""
+  },
+  {
+   "form": "key",
+   "context": "der Schlüssel, - — EN: key · FR: la cléWo ist mein Schlüssel?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cléWo",
+   "context": "der Schlüssel, - — EN: key · FR: la cléWo ist mein Schlüssel?",
+   "en": "where",
+   "lemma": ""
+  },
+  {
+   "form": "Tasche",
+   "context": "die Tasche, -n — EN: bag · FR: le sacDie Tasche ist schwer.",
+   "en": "bag",
+   "lemma": "die Tasche"
+  },
+  {
+   "form": "bag",
+   "context": "die Tasche, -n — EN: bag · FR: le sacDie Tasche ist schwer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sacDie",
+   "context": "die Tasche, -n — EN: bag · FR: le sacDie Tasche ist schwer.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "schwer",
+   "context": "die Tasche, -n — EN: bag · FR: le sacDie Tasche ist schwer.",
+   "en": "heavy; difficult",
+   "lemma": ""
+  },
+  {
+   "form": "Handy",
+   "context": "das Handy, -s — EN: mobile phone · FR: le portableMein Handy ist kaputt.",
+   "en": "mobile phone",
+   "lemma": "das Handy"
+  },
+  {
+   "form": "mobile",
+   "context": "das Handy, -s — EN: mobile phone · FR: le portableMein Handy ist kaputt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "phone",
+   "context": "das Handy, -s — EN: mobile phone · FR: le portableMein Handy ist kaputt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "portableMein",
+   "context": "das Handy, -s — EN: mobile phone · FR: le portableMein Handy ist kaputt.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "kaputt",
+   "context": "das Handy, -s — EN: mobile phone · FR: le portableMein Handy ist kaputt.",
+   "en": "broken",
+   "lemma": ""
+  },
+  {
+   "form": "Schirm",
+   "context": "der Schirm, -e — EN: umbrella · FR: le parapluieNimm einen Schirm mit!",
+   "en": "umbrella",
+   "lemma": "der Schirm"
+  },
+  {
+   "form": "umbrella",
+   "context": "der Schirm, -e — EN: umbrella · FR: le parapluieNimm einen Schirm mit!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parapluieNimm",
+   "context": "der Schirm, -e — EN: umbrella · FR: le parapluieNimm einen Schirm mit!",
+   "en": "take",
+   "lemma": ""
+  },
+  {
+   "form": "Papier",
+   "context": "das Papier, -e — EN: paper · FR: le papierIch brauche noch Papier.",
+   "en": "paper",
+   "lemma": "das Papier"
+  },
+  {
+   "form": "paper",
+   "context": "das Papier, -e — EN: paper · FR: le papierIch brauche noch Papier.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "papierIch",
+   "context": "das Papier, -e — EN: paper · FR: le papierIch brauche noch Papier.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "brauche",
+   "context": "das Papier, -e — EN: paper · FR: le papierIch brauche noch Papier.",
+   "en": "need",
+   "lemma": "brauchen"
+  },
+  {
+   "form": "Buchstabe",
+   "context": "der Buchstabe, -n — EN: letter (of the alphabet) · FR: la lettreDas ist der Buchstabe F.",
+   "en": "letter (of the alphabet)",
+   "lemma": "der Buchstabe"
+  },
+  {
+   "form": "letter",
+   "context": "der Buchstabe, -n — EN: letter (of the alphabet) · FR: la lettreDas ist der Buchstabe F.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "the",
+   "context": "der Buchstabe, -n — EN: letter (of the alphabet) · FR: la lettreDas ist der Buchstabe F.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "alphabet",
+   "context": "der Buchstabe, -n — EN: letter (of the alphabet) · FR: la lettreDas ist der Buchstabe F.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lettreDas",
+   "context": "der Buchstabe, -n — EN: letter (of the alphabet) · FR: la lettreDas ist der Buchstabe F.",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "no",
+   "context": "kein, keine — EN: no, not a · FR: aucun, pas deDas ist kein Problem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "not",
+   "context": "kein, keine — EN: no, not a · FR: aucun, pas deDas ist kein Problem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aucun",
+   "context": "kein, keine — EN: no, not a · FR: aucun, pas deDas ist kein Problem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pas",
+   "context": "kein, keine — EN: no, not a · FR: aucun, pas deDas ist kein Problem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deDas",
+   "context": "kein, keine — EN: no, not a · FR: aucun, pas deDas ist kein Problem.",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "Problem",
+   "context": "kein, keine — EN: no, not a · FR: aucun, pas deDas ist kein Problem.",
+   "en": "problem",
+   "lemma": "das Problem"
+  },
+  {
+   "form": "Hilfe",
+   "context": "um Hilfe bitten",
+   "en": "help",
+   "lemma": "die Hilfe"
+  },
+  {
+   "form": "bitten",
+   "context": "um Hilfe bitten",
+   "en": "to ask (um … bitten = ask for)",
+   "lemma": ""
+  },
+  {
+   "form": "Entschuldigung",
+   "context": "Entschuldigung, ich verstehe das nicht.",
+   "en": "sorry; excuse me",
+   "lemma": "die Entschuldigung"
+  },
+  {
+   "form": "verstehe",
+   "context": "Entschuldigung, ich verstehe das nicht.",
+   "en": "understand",
+   "lemma": "verstehen"
+  },
+  {
+   "form": "Unterricht",
+   "context": "Dialog: Im Unterricht",
+   "en": "class, lessons",
+   "lemma": "der Unterricht"
+  },
+  {
+   "form": "Ali",
+   "context": "Ali: Das ist ein Bleistift.",
+   "en": "Ali (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Schauen",
+   "context": "Lehrerin: Nein, das ist kein Bleistift. Schauen Sie genau.",
+   "en": "look",
+   "lemma": "schauen"
+  },
+  {
+   "form": "Ah",
+   "context": "Ali: Ah — das ist ein Kugelschreiber!",
+   "en": "ah",
+   "lemma": ""
+  },
+  {
+   "form": "Richtig",
+   "context": "Lehrerin: Richtig. Und wie schreibt man das?",
+   "en": "correct, right",
+   "lemma": "richtig"
+  },
+  {
+   "form": "K-U-G-E-L-S-C-H-R-E-I-B-E-R",
+   "context": "Ali: K-U-G-E-L-S-C-H-R-E-I-B-E-R. Das ist ein langes Wort!",
+   "en": "Kugelschreiber, spelled out",
+   "lemma": ""
+  },
+  {
+   "form": "langes",
+   "context": "Ali: K-U-G-E-L-S-C-H-R-E-I-B-E-R. Das ist ein langes Wort!",
+   "en": "long",
+   "lemma": "lang"
+  },
+  {
+   "form": "Wort",
+   "context": "Ali: K-U-G-E-L-S-C-H-R-E-I-B-E-R. Das ist ein langes Wort!",
+   "en": "word",
+   "lemma": "das Wort"
+  },
+  {
+   "form": "Ohne",
+   "context": "Ohne Brille sehe ich nichts.",
+   "en": "without",
+   "lemma": ""
+  },
+  {
+   "form": "Nimm",
+   "context": "Nimm einen Schirm mit!",
+   "en": "take (… mit = take with you)",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "unbestimmter",
+   "context": "Das ist ___ Brille. (unbestimmter Artikel, feminin)",
+   "en": "indefinite",
+   "lemma": "unbestimmt"
+  },
+  {
+   "form": "Wann",
+   "context": "Wann benutzt man nicht und wann kein?",
+   "en": "when",
+   "lemma": ""
+  },
+  {
+   "form": "wann",
+   "context": "Wann benutzt man nicht und wann kein?",
+   "en": "when",
+   "lemma": ""
+  },
+  {
+   "form": "Ihrer",
+   "context": "Was ist in Ihrer Tasche? Schreiben Sie fünf Dinge auf. Umfang: 20–30 Wörter Checkliste: • Benutzen Sie ein oder eine richtig. • Verneinen Sie einen Satz mit kein oder keine. • Schreiben Sie zu zwei Dingen ein Adjektiv.",
+   "en": "your (polite)",
+   "lemma": ""
+  },
+  {
+   "form": "richtig",
+   "context": "Was ist in Ihrer Tasche? Schreiben Sie fünf Dinge auf. Umfang: 20–30 Wörter Checkliste: • Benutzen Sie ein oder eine richtig. • Verneinen Sie einen Satz mit kein oder keine. • Schreiben Sie zu zwei Dingen ein Adjektiv.",
+   "en": "correctly; correct",
+   "lemma": ""
+  },
+  {
+   "form": "Satz",
+   "context": "Was ist in Ihrer Tasche? Schreiben Sie fünf Dinge auf. Umfang: 20–30 Wörter Checkliste: • Benutzen Sie ein oder eine richtig. • Verneinen Sie einen Satz mit kein oder keine. • Schreiben Sie zu zwei Dingen ein Adjektiv.",
+   "en": "sentence",
+   "lemma": "der Satz"
+  },
+  {
+   "form": "Dingen",
+   "context": "Was ist in Ihrer Tasche? Schreiben Sie fünf Dinge auf. Umfang: 20–30 Wörter Checkliste: • Benutzen Sie ein oder eine richtig. • Verneinen Sie einen Satz mit kein oder keine. • Schreiben Sie zu zwei Dingen ein Adjektiv.",
+   "en": "things",
+   "lemma": "das Ding"
+  }
+ ]
+}
