@@ -1,0 +1,737 @@
+{
+ "level": "A2",
+ "lesson": 17,
+ "title": "Reisen und Verkehr — Wir wollen nach Rumänien",
+ "lines": [
+  {
+   "de": "Über Reisegewohnheiten sprechen und sagen, wohin man fährt.",
+   "en": "Talk about travel habits and say where you are going."
+  },
+  {
+   "de": "Textsorte: Reisetagebuch · Kommentar",
+   "en": "Text type: Travel diary · Comment"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Schreiben Teil 1; ÖSD A2 Schreiben",
+   "en": "Exam link: Goethe A2 Writing part 1; ÖSD A2 Writing"
+  },
+  {
+   "de": "über Reisegewohnheiten sprechen",
+   "en": "talk about travel habits"
+  },
+  {
+   "de": "Ziele und Orte mit den richtigen Präpositionen nennen",
+   "en": "name destinations and places with the right prepositions"
+  },
+  {
+   "de": "einen Reisebericht kommentieren",
+   "en": "comment on a travel report"
+  },
+  {
+   "de": "Grammatik: Wohin? und Wo? bei Orten und Ländern",
+   "en": "Grammar: Wohin? (where to?) and Wo? (where?) with places and countries"
+  },
+  {
+   "de": "Für Reiseziele gibt es feste Regeln. Länder und Städte ohne Artikel stehen mit nach, Länder mit Artikel und Orte wie Meer oder Berge brauchen eine andere Präposition. Und bei Personen heißt es immer zu.",
+   "en": "There are fixed rules for travel destinations. Countries and cities without an article take nach; countries with an article and places like the sea or mountains need a different preposition. And with people, it is always zu."
+  },
+  {
+   "de": "Ziel",
+   "en": "Destination"
+  },
+  {
+   "de": "Wohin?",
+   "en": "Where to?"
+  },
+  {
+   "de": "Wo?",
+   "en": "Where?"
+  },
+  {
+   "de": "Stadt / Land ohne Artikel",
+   "en": "City / country without an article"
+  },
+  {
+   "de": "nach Rumänien, nach Wien",
+   "en": "to Romania, to Vienna"
+  },
+  {
+   "de": "in Rumänien, in Wien",
+   "en": "in Romania, in Vienna"
+  },
+  {
+   "de": "Land mit Artikel",
+   "en": "Country with an article"
+  },
+  {
+   "de": "in die Schweiz, in die Türkei",
+   "en": "to Switzerland, to Turkey"
+  },
+  {
+   "de": "in der Schweiz, in der Türkei",
+   "en": "in Switzerland, in Turkey"
+  },
+  {
+   "de": "Meer / See / Berge",
+   "en": "Sea / lake / mountains"
+  },
+  {
+   "de": "ans Meer, an den See, in die Berge",
+   "en": "to the sea, to the lake, to the mountains"
+  },
+  {
+   "de": "am Meer, am See, in den Bergen",
+   "en": "at the sea, at the lake, in the mountains"
+  },
+  {
+   "de": "Personen",
+   "en": "People"
+  },
+  {
+   "de": "zu meiner Tante",
+   "en": "to my aunt's"
+  },
+  {
+   "de": "bei meiner Tante",
+   "en": "at my aunt's"
+  },
+  {
+   "de": "Gebäude",
+   "en": "Buildings"
+  },
+  {
+   "de": "ins Hotel, zum Bahnhof",
+   "en": "to the hotel, to the station"
+  },
+  {
+   "de": "im Hotel, am Bahnhof",
+   "en": "in the hotel, at the station"
+  },
+  {
+   "de": "Im Sommer fahren wir ans Meer.Wohin? → an + Akkusativ",
+   "en": "In summer we go to the sea. — Where to? → an + accusative"
+  },
+  {
+   "de": "Letztes Jahr waren wir am Meer.Wo? → an + Dativ",
+   "en": "Last year we were at the sea. — Where? → an + dative"
+  },
+  {
+   "de": "Wir wollen nach Rumänien, aber meine Schwester will in die Schweiz.ohne Artikel: nach / mit Artikel: in + Akkusativ",
+   "en": "We want to go to Romania, but my sister wants to go to Switzerland. — without an article: nach / with an article: in + accusative"
+  },
+  {
+   "de": "Tipp: Länder mit Artikel sind z. B. die Schweiz, die Türkei, die USA (Pl.), der Iran. Alle anderen stehen mit nach.",
+   "en": "Tip: Countries with an article are, for example, die Schweiz, die Türkei, die USA (pl.), der Iran. All the others take nach."
+  },
+  {
+   "de": "die Reise, -n — EN: journey, trip · FR: le voyageDie Reise dauert zwei Tage.",
+   "en": "Example: The journey takes two days."
+  },
+  {
+   "de": "verreisen — EN: to go away, travel · FR: partir en voyageWir verreisen jedes Jahr im August.",
+   "en": "Example: We go away every year in August."
+  },
+  {
+   "de": "der Zug, ¨-e — EN: train · FR: le trainDer Zug hat zwanzig Minuten Verspätung.",
+   "en": "Example: The train is twenty minutes late."
+  },
+  {
+   "de": "umsteigen (stieg um) — EN: to change (trains) · FR: changer (de train)In Frankfurt müssen wir umsteigen.",
+   "en": "Example: We have to change trains in Frankfurt."
+  },
+  {
+   "de": "die Verspätung, -en — EN: delay · FR: le retardEntschuldigung für die Verspätung!",
+   "en": "Example: Sorry for the delay!"
+  },
+  {
+   "de": "die Fahrkarte, -n — EN: ticket · FR: le billetIch habe die Fahrkarte online gekauft.",
+   "en": "Example: I bought the ticket online."
+  },
+  {
+   "de": "der Koffer, - — EN: suitcase · FR: la valiseMein Koffer ist viel zu schwer.",
+   "en": "Example: My suitcase is much too heavy."
+  },
+  {
+   "de": "das Gepäck (Sg.) — EN: luggage · FR: les bagagesWo kann ich mein Gepäck lassen?",
+   "en": "Example: Where can I leave my luggage?"
+  },
+  {
+   "de": "unterwegs — EN: on the way · FR: en routeWir waren den ganzen Tag unterwegs.",
+   "en": "Example: We were out all day."
+  },
+  {
+   "de": "die Grenze, -n — EN: border · FR: la frontièreAn der Grenze gab es keine Kontrolle.",
+   "en": "Example: There was no check at the border."
+  },
+  {
+   "de": "sich auf etwas freuen — EN: to look forward to · FR: se réjouir deIch freue mich schon sehr auf die Reise.",
+   "en": "Example: I'm really looking forward to the trip."
+  },
+  {
+   "de": "übernachten — EN: to stay overnight · FR: passer la nuitWir übernachten bei Freunden.",
+   "en": "Example: We are staying overnight with friends."
+  },
+  {
+   "de": "über Reisepläne sprechen",
+   "en": "Talking about travel plans"
+  },
+  {
+   "de": "Dieses Jahr wollen wir nach …",
+   "en": "This year we want to go to …"
+  },
+  {
+   "de": "Wir fahren mit dem Zug / mit dem Auto.",
+   "en": "We are going by train / by car."
+  },
+  {
+   "de": "Wir bleiben ungefähr zwei Wochen.",
+   "en": "We are staying for about two weeks."
+  },
+  {
+   "de": "Ich reise am liebsten allein.",
+   "en": "I like travelling alone best."
+  },
+  {
+   "de": "Meistens fahren wir ans Meer.",
+   "en": "We usually go to the sea."
+  },
+  {
+   "de": "Fliegen mag ich überhaupt nicht.",
+   "en": "I don't like flying at all."
+  },
+  {
+   "de": "etwas kommentieren",
+   "en": "Commenting on something"
+  },
+  {
+   "de": "Das klingt toll!",
+   "en": "That sounds great!"
+  },
+  {
+   "de": "Da war ich auch schon einmal.",
+   "en": "I've been there too."
+  },
+  {
+   "de": "Das würde ich auch gern machen.",
+   "en": "I would like to do that too."
+  },
+  {
+   "de": "Dialog: Urlaubspläne",
+   "en": "Dialogue: Holiday plans"
+  },
+  {
+   "de": "Dana: Wohin fahrt ihr dieses Jahr?",
+   "en": "Dana: Where are you going this year?"
+  },
+  {
+   "de": "Robert: Wir wollen nach Rumänien. Meine Großeltern wohnen dort.",
+   "en": "Robert: We want to go to Romania. My grandparents live there."
+  },
+  {
+   "de": "Dana: Schön! Und wie kommt ihr hin?",
+   "en": "Dana: Nice! And how are you getting there?"
+  },
+  {
+   "de": "Robert: Mit dem Zug. Wir müssen zweimal umsteigen.",
+   "en": "Robert: By train. We have to change twice."
+  },
+  {
+   "de": "Dana: Wir fahren wie immer ans Meer. Am Meer kann ich am besten abschalten.",
+   "en": "Dana: We're going to the sea, as always. I can switch off best by the sea."
+  },
+  {
+   "de": "Robert: Das verstehe ich. Letztes Jahr waren wir auch am Meer.",
+   "en": "Robert: I understand that. Last year we were at the sea too."
+  },
+  {
+   "de": "Die Reise dauert zwei Tage.",
+   "en": "The journey takes two days."
+  },
+  {
+   "de": "Wir verreisen jedes Jahr im August.",
+   "en": "We go away every year in August."
+  },
+  {
+   "de": "Der Zug hat zwanzig Minuten Verspätung.",
+   "en": "The train is twenty minutes late."
+  },
+  {
+   "de": "In Frankfurt müssen wir umsteigen.",
+   "en": "We have to change trains in Frankfurt."
+  },
+  {
+   "de": "Entschuldigung für die Verspätung!",
+   "en": "Sorry for the delay!"
+  },
+  {
+   "de": "Ich habe die Fahrkarte online gekauft.",
+   "en": "I bought the ticket online."
+  },
+  {
+   "de": "Mein Koffer ist viel zu schwer.",
+   "en": "My suitcase is much too heavy."
+  },
+  {
+   "de": "Wo kann ich mein Gepäck lassen?",
+   "en": "Where can I leave my luggage?"
+  },
+  {
+   "de": "Wir waren den ganzen Tag unterwegs.",
+   "en": "We were out all day."
+  },
+  {
+   "de": "An der Grenze gab es keine Kontrolle.",
+   "en": "There was no check at the border."
+  },
+  {
+   "de": "Ich freue mich schon sehr auf die Reise.",
+   "en": "I'm really looking forward to the trip."
+  },
+  {
+   "de": "Wir übernachten bei Freunden.",
+   "en": "We are staying overnight with friends."
+  },
+  {
+   "de": "Wir fahren ___ Rumänien. (Land ohne Artikel)",
+   "en": "We are going ___ Romania. (country without an article)"
+  },
+  {
+   "de": "Meine Schwester fliegt ___ Schweiz.",
+   "en": "My sister is flying ___ Switzerland."
+  },
+  {
+   "de": "Im Sommer fahren wir ___ Meer. (Wohin? an + das)",
+   "en": "In summer we go ___ sea. (Wohin? an + das)"
+  },
+  {
+   "de": "Letztes Jahr waren wir ___ Meer.",
+   "en": "Last year we were ___ sea."
+  },
+  {
+   "de": "Wir fahren ___ meiner Tante. (Person, Wohin?)",
+   "en": "We are going ___ my aunt's. (person, Wohin?)"
+  },
+  {
+   "de": "Schreiben Sie einen kurzen Eintrag für ein Reisetagebuch: Wohin fahren Sie, wie und mit wem? Umfang: 50–70 Wörter Checkliste: • Nennen Sie das Ziel mit der richtigen Präposition (nach / in die / ans). • Beschreiben Sie die Fahrt in zwei Sätzen. • Schreiben Sie, worauf Sie sich besonders freuen.",
+   "en": "Write a short entry for a travel diary: Where are you going, how and with whom? Length: 50–70 words Checklist: • Name the destination with the right preposition (nach / in die / ans). • Describe the journey in two sentences. • Write what you are especially looking forward to."
+  },
+  {
+   "de": "Länder ohne Artikel stehen mit nach.",
+   "en": "Countries without an article take nach."
+  },
+  {
+   "de": "Länder mit Artikel: in + Akkusativ → in die Schweiz.",
+   "en": "Countries with an article: in + accusative → in die Schweiz."
+  },
+  {
+   "de": "an das → ans Meer (Richtung, Akkusativ).",
+   "en": "an das → ans Meer (direction, accusative)."
+  },
+  {
+   "de": "Wo? → an dem → am Meer (Dativ).",
+   "en": "Wo? → an dem → am Meer (dative)."
+  },
+  {
+   "de": "Bei Personen steht immer zu + Dativ.",
+   "en": "With people, you always use zu + dative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Reisegewohnheiten",
+   "context": "Über Reisegewohnheiten sprechen und sagen, wohin man fährt.",
+   "en": "travel habits",
+   "lemma": "die Reisegewohnheit"
+  },
+  {
+   "form": "fährt",
+   "context": "Über Reisegewohnheiten sprechen und sagen, wohin man fährt.",
+   "en": "goes, travels; drives",
+   "lemma": "fahren"
+  },
+  {
+   "form": "Reisetagebuch",
+   "context": "Textsorte: Reisetagebuch · Kommentar",
+   "en": "travel diary",
+   "lemma": "das Reisetagebuch"
+  },
+  {
+   "form": "Kommentar",
+   "context": "Textsorte: Reisetagebuch · Kommentar",
+   "en": "comment",
+   "lemma": "der Kommentar"
+  },
+  {
+   "form": "Ziele",
+   "context": "Ziele und Orte mit den richtigen Präpositionen nennen",
+   "en": "destinations; goals",
+   "lemma": "das Ziel"
+  },
+  {
+   "form": "Reisebericht",
+   "context": "einen Reisebericht kommentieren",
+   "en": "travel report",
+   "lemma": "der Reisebericht"
+  },
+  {
+   "form": "kommentieren",
+   "context": "einen Reisebericht kommentieren",
+   "en": "to comment on",
+   "lemma": ""
+  },
+  {
+   "form": "Orten",
+   "context": "Grammatik: Wohin? und Wo? bei Orten und Ländern",
+   "en": "places",
+   "lemma": "der Ort"
+  },
+  {
+   "form": "Ländern",
+   "context": "Grammatik: Wohin? und Wo? bei Orten und Ländern",
+   "en": "countries",
+   "lemma": "das Land"
+  },
+  {
+   "form": "Reiseziele",
+   "context": "Für Reiseziele gibt es feste Regeln. Länder und Städte ohne Artikel stehen mit nach, Länder mit Artikel und Orte wie Meer oder Berge brauchen eine andere Präposition. Und bei Personen heißt es immer zu.",
+   "en": "travel destinations",
+   "lemma": "das Reiseziel"
+  },
+  {
+   "form": "Städte",
+   "context": "Für Reiseziele gibt es feste Regeln. Länder und Städte ohne Artikel stehen mit nach, Länder mit Artikel und Orte wie Meer oder Berge brauchen eine andere Präposition. Und bei Personen heißt es immer zu.",
+   "en": "cities, towns",
+   "lemma": "die Stadt"
+  },
+  {
+   "form": "Rumänien",
+   "context": "nach Rumänien, nach Wien",
+   "en": "Romania",
+   "lemma": ""
+  },
+  {
+   "form": "Schweiz",
+   "context": "in die Schweiz, in die Türkei",
+   "en": "Switzerland",
+   "lemma": "die Schweiz"
+  },
+  {
+   "form": "Türkei",
+   "context": "in die Schweiz, in die Türkei",
+   "en": "Turkey",
+   "lemma": "die Türkei"
+  },
+  {
+   "form": "Bergen",
+   "context": "am Meer, am See, in den Bergen",
+   "en": "mountains",
+   "lemma": "der Berg"
+  },
+  {
+   "form": "Letztes",
+   "context": "Letztes Jahr waren wir am Meer.Wo? → an + Dativ",
+   "en": "last",
+   "lemma": "letzte"
+  },
+  {
+   "form": "USA",
+   "context": "Tipp: Länder mit Artikel sind z. B. die Schweiz, die Türkei, die USA (Pl.), der Iran. Alle anderen stehen mit nach.",
+   "en": "the USA",
+   "lemma": "die USA"
+  },
+  {
+   "form": "Iran",
+   "context": "Tipp: Länder mit Artikel sind z. B. die Schweiz, die Türkei, die USA (Pl.), der Iran. Alle anderen stehen mit nach.",
+   "en": "Iran",
+   "lemma": "der Iran"
+  },
+  {
+   "form": "Reise",
+   "context": "die Reise, -n — EN: journey, trip · FR: le voyageDie Reise dauert zwei Tage.",
+   "en": "journey, trip",
+   "lemma": "die Reise"
+  },
+  {
+   "form": "journey",
+   "context": "die Reise, -n — EN: journey, trip · FR: le voyageDie Reise dauert zwei Tage.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trip",
+   "context": "die Reise, -n — EN: journey, trip · FR: le voyageDie Reise dauert zwei Tage.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "voyageDie",
+   "context": "die Reise, -n — EN: journey, trip · FR: le voyageDie Reise dauert zwei Tage.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "verreisen",
+   "context": "verreisen — EN: to go away, travel · FR: partir en voyageWir verreisen jedes Jahr im August.",
+   "en": "to go away (on a trip)",
+   "lemma": ""
+  },
+  {
+   "form": "away",
+   "context": "verreisen — EN: to go away, travel · FR: partir en voyageWir verreisen jedes Jahr im August.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "travel",
+   "context": "verreisen — EN: to go away, travel · FR: partir en voyageWir verreisen jedes Jahr im August.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "partir",
+   "context": "verreisen — EN: to go away, travel · FR: partir en voyageWir verreisen jedes Jahr im August.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "voyageWir",
+   "context": "verreisen — EN: to go away, travel · FR: partir en voyageWir verreisen jedes Jahr im August.",
+   "en": "Wir = we",
+   "lemma": ""
+  },
+  {
+   "form": "August",
+   "context": "verreisen — EN: to go away, travel · FR: partir en voyageWir verreisen jedes Jahr im August.",
+   "en": "August",
+   "lemma": "der August"
+  },
+  {
+   "form": "trainDer",
+   "context": "der Zug, ¨-e — EN: train · FR: le trainDer Zug hat zwanzig Minuten Verspätung.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "Verspätung",
+   "context": "der Zug, ¨-e — EN: train · FR: le trainDer Zug hat zwanzig Minuten Verspätung.",
+   "en": "delay",
+   "lemma": "die Verspätung"
+  },
+  {
+   "form": "umsteigen",
+   "context": "umsteigen (stieg um) — EN: to change (trains) · FR: changer (de train)In Frankfurt müssen wir umsteigen.",
+   "en": "to change (trains)",
+   "lemma": ""
+  },
+  {
+   "form": "stieg",
+   "context": "umsteigen (stieg um) — EN: to change (trains) · FR: changer (de train)In Frankfurt müssen wir umsteigen.",
+   "en": "(… um) changed; climbed",
+   "lemma": "steigen"
+  },
+  {
+   "form": "trains",
+   "context": "umsteigen (stieg um) — EN: to change (trains) · FR: changer (de train)In Frankfurt müssen wir umsteigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "changer",
+   "context": "umsteigen (stieg um) — EN: to change (trains) · FR: changer (de train)In Frankfurt müssen wir umsteigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Frankfurt",
+   "context": "umsteigen (stieg um) — EN: to change (trains) · FR: changer (de train)In Frankfurt müssen wir umsteigen.",
+   "en": "Frankfurt (city in Germany)",
+   "lemma": ""
+  },
+  {
+   "form": "delay",
+   "context": "die Verspätung, -en — EN: delay · FR: le retardEntschuldigung für die Verspätung!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "retardEntschuldigung",
+   "context": "die Verspätung, -en — EN: delay · FR: le retardEntschuldigung für die Verspätung!",
+   "en": "Entschuldigung = sorry",
+   "lemma": "die Entschuldigung"
+  },
+  {
+   "form": "Fahrkarte",
+   "context": "die Fahrkarte, -n — EN: ticket · FR: le billetIch habe die Fahrkarte online gekauft.",
+   "en": "ticket",
+   "lemma": "die Fahrkarte"
+  },
+  {
+   "form": "Koffer",
+   "context": "der Koffer, - — EN: suitcase · FR: la valiseMein Koffer ist viel zu schwer.",
+   "en": "suitcase",
+   "lemma": "der Koffer"
+  },
+  {
+   "form": "suitcase",
+   "context": "der Koffer, - — EN: suitcase · FR: la valiseMein Koffer ist viel zu schwer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "valiseMein",
+   "context": "der Koffer, - — EN: suitcase · FR: la valiseMein Koffer ist viel zu schwer.",
+   "en": "Mein = my",
+   "lemma": ""
+  },
+  {
+   "form": "Gepäck",
+   "context": "das Gepäck (Sg.) — EN: luggage · FR: les bagagesWo kann ich mein Gepäck lassen?",
+   "en": "luggage",
+   "lemma": "das Gepäck"
+  },
+  {
+   "form": "luggage",
+   "context": "das Gepäck (Sg.) — EN: luggage · FR: les bagagesWo kann ich mein Gepäck lassen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bagagesWo",
+   "context": "das Gepäck (Sg.) — EN: luggage · FR: les bagagesWo kann ich mein Gepäck lassen?",
+   "en": "Wo = where",
+   "lemma": ""
+  },
+  {
+   "form": "lassen",
+   "context": "das Gepäck (Sg.) — EN: luggage · FR: les bagagesWo kann ich mein Gepäck lassen?",
+   "en": "to leave; to let",
+   "lemma": ""
+  },
+  {
+   "form": "way",
+   "context": "unterwegs — EN: on the way · FR: en routeWir waren den ganzen Tag unterwegs.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "routeWir",
+   "context": "unterwegs — EN: on the way · FR: en routeWir waren den ganzen Tag unterwegs.",
+   "en": "Wir = we",
+   "lemma": ""
+  },
+  {
+   "form": "Grenze",
+   "context": "die Grenze, -n — EN: border · FR: la frontièreAn der Grenze gab es keine Kontrolle.",
+   "en": "border",
+   "lemma": "die Grenze"
+  },
+  {
+   "form": "border",
+   "context": "die Grenze, -n — EN: border · FR: la frontièreAn der Grenze gab es keine Kontrolle.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "frontièreAn",
+   "context": "die Grenze, -n — EN: border · FR: la frontièreAn der Grenze gab es keine Kontrolle.",
+   "en": "An = at",
+   "lemma": ""
+  },
+  {
+   "form": "Kontrolle",
+   "context": "die Grenze, -n — EN: border · FR: la frontièreAn der Grenze gab es keine Kontrolle.",
+   "en": "check, control",
+   "lemma": "die Kontrolle"
+  },
+  {
+   "form": "passer",
+   "context": "übernachten — EN: to stay overnight · FR: passer la nuitWir übernachten bei Freunden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nuitWir",
+   "context": "übernachten — EN: to stay overnight · FR: passer la nuitWir übernachten bei Freunden.",
+   "en": "Wir = we",
+   "lemma": ""
+  },
+  {
+   "form": "Reisepläne",
+   "context": "über Reisepläne sprechen",
+   "en": "travel plans",
+   "lemma": "der Reiseplan"
+  },
+  {
+   "form": "reise",
+   "context": "Ich reise am liebsten allein.",
+   "en": "travel",
+   "lemma": "reisen"
+  },
+  {
+   "form": "Fliegen",
+   "context": "Fliegen mag ich überhaupt nicht.",
+   "en": "flying",
+   "lemma": "das Fliegen"
+  },
+  {
+   "form": "Urlaubspläne",
+   "context": "Dialog: Urlaubspläne",
+   "en": "holiday plans",
+   "lemma": "der Urlaubsplan"
+  },
+  {
+   "form": "Dana",
+   "context": "Dana: Wohin fahrt ihr dieses Jahr?",
+   "en": "Dana (name)",
+   "lemma": ""
+  },
+  {
+   "form": "fahrt",
+   "context": "Dana: Wohin fahrt ihr dieses Jahr?",
+   "en": "go, travel (with ihr)",
+   "lemma": "fahren"
+  },
+  {
+   "form": "Robert",
+   "context": "Robert: Wir wollen nach Rumänien. Meine Großeltern wohnen dort.",
+   "en": "Robert (name)",
+   "lemma": ""
+  },
+  {
+   "form": "hin",
+   "context": "Dana: Schön! Und wie kommt ihr hin?",
+   "en": "there (to that place)",
+   "lemma": ""
+  },
+  {
+   "form": "abschalten",
+   "context": "Dana: Wir fahren wie immer ans Meer. Am Meer kann ich am besten abschalten.",
+   "en": "to switch off, to unwind",
+   "lemma": ""
+  },
+  {
+   "form": "fliegt",
+   "context": "Meine Schwester fliegt ___ Schweiz.",
+   "en": "flies",
+   "lemma": "fliegen"
+  },
+  {
+   "form": "Eintrag",
+   "context": "Schreiben Sie einen kurzen Eintrag für ein Reisetagebuch: Wohin fahren Sie, wie und mit wem? Umfang: 50–70 Wörter Checkliste: • Nennen Sie das Ziel mit der richtigen Präposition (nach / in die / ans). • Beschreiben Sie die Fahrt in zwei Sätzen. • Schreiben Sie, worauf Sie sich besonders freuen.",
+   "en": "entry",
+   "lemma": "der Eintrag"
+  },
+  {
+   "form": "Fahrt",
+   "context": "Schreiben Sie einen kurzen Eintrag für ein Reisetagebuch: Wohin fahren Sie, wie und mit wem? Umfang: 50–70 Wörter Checkliste: • Nennen Sie das Ziel mit der richtigen Präposition (nach / in die / ans). • Beschreiben Sie die Fahrt in zwei Sätzen. • Schreiben Sie, worauf Sie sich besonders freuen.",
+   "en": "journey, trip",
+   "lemma": "die Fahrt"
+  },
+  {
+   "form": "worauf",
+   "context": "Schreiben Sie einen kurzen Eintrag für ein Reisetagebuch: Wohin fahren Sie, wie und mit wem? Umfang: 50–70 Wörter Checkliste: • Nennen Sie das Ziel mit der richtigen Präposition (nach / in die / ans). • Beschreiben Sie die Fahrt in zwei Sätzen. • Schreiben Sie, worauf Sie sich besonders freuen.",
+   "en": "what (… for)",
+   "lemma": ""
+  }
+ ]
+}
