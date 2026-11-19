@@ -3,7 +3,7 @@ export const REDACTED_PATHS = [
   "req.headers.authorization",
   "req.headers.cookie",
   "req.headers[\"x-relay-secret\"]",
-  "req.headers[\"x-paypack-signature\"]",
+  "req.headers[\"x-xendly-signature\"]",
   "req.headers[\"x-webhook-signature\"]",
   "res.headers[\"set-cookie\"]",
   "*.password",
