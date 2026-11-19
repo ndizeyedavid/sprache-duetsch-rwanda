@@ -1,0 +1,693 @@
+{
+ "level": "B1",
+ "lesson": 22,
+ "title": "Geschichte — 1989 wurde die Mauer geöffnet",
+ "lines": [
+  {
+   "de": "Historische Ereignisse berichten — im Passiv der Vergangenheit.",
+   "en": "Reporting historical events — in the past passive."
+  },
+  {
+   "de": "über historische Ereignisse berichten",
+   "en": "report on historical events"
+  },
+  {
+   "de": "Passiv Präteritum und Passiv Perfekt bilden",
+   "en": "form the simple past passive (Passiv Präteritum) and the present perfect passive (Passiv Perfekt)"
+  },
+  {
+   "de": "Jahreszahlen und Zeitangaben in Berichten verwenden",
+   "en": "use years and time expressions in reports"
+  },
+  {
+   "de": "Grammatik: Passiv in der Vergangenheit",
+   "en": "Grammar: the passive (Passiv) in the past"
+  },
+  {
+   "de": "Für historische Berichte braucht man zwei Formen. Passiv Präteritum (wurde + Partizip II) ist die übliche Schriftform. Passiv Perfekt (ist … worden) benutzt man eher mündlich. Achtung: Im Perfekt heißt das Partizip von werden nicht geworden, sondern worden.",
+   "en": "For historical reports you need two forms. The simple past passive (Passiv Präteritum: wurde + past participle) is the usual written form. The present perfect passive (Passiv Perfekt: ist … worden) is used more in speech. Careful: in the present perfect, the participle of werden is not geworden but worden."
+  },
+  {
+   "de": "wird + Partizip II",
+   "en": "wird + past participle"
+  },
+  {
+   "de": "Das Gebäude wird renoviert.",
+   "en": "The building is being renovated."
+  },
+  {
+   "de": "Passiv Präteritum",
+   "en": "Simple past passive (Passiv Präteritum)"
+  },
+  {
+   "de": "wurde + Partizip II",
+   "en": "wurde + past participle"
+  },
+  {
+   "de": "Das Gebäude wurde 1965 gebaut.",
+   "en": "The building was built in 1965."
+  },
+  {
+   "de": "Passiv Perfekt",
+   "en": "Present perfect passive (Passiv Perfekt)"
+  },
+  {
+   "de": "ist + Partizip II + worden",
+   "en": "ist + past participle + worden"
+  },
+  {
+   "de": "Das Gebäude ist 1965 gebaut worden.",
+   "en": "The building was built in 1965."
+  },
+  {
+   "de": "Passiv Plusquamperfekt",
+   "en": "Past perfect passive (Passiv Plusquamperfekt)"
+  },
+  {
+   "de": "war + Partizip II + worden",
+   "en": "war + past participle + worden"
+  },
+  {
+   "de": "Das Gebäude war schon gebaut worden.",
+   "en": "The building had already been built."
+  },
+  {
+   "de": "Nach dem Krieg wurde das Land in vier Zonen aufgeteilt.Passiv Präteritum — typisch für Geschichtstexte",
+   "en": "After the war, the country was divided into four zones. simple past passive — typical of history texts"
+  },
+  {
+   "de": "Die Grenze ist 1989 geöffnet worden.Passiv Perfekt mit worden",
+   "en": "The border was opened in 1989. present perfect passive with worden"
+  },
+  {
+   "de": "Viele Städte wurden von den Bürgern selbst wieder aufgebaut.Urheber mit von + Dativ",
+   "en": "Many cities were rebuilt by the citizens themselves. agent with von + dative"
+  },
+  {
+   "de": "Tipp: Nur Verben mit Akkusativobjekt können ein persönliches Passiv bilden. Ohne Objekt entsteht ein unpersönliches Passiv: Damals wurde viel diskutiert.",
+   "en": "Tip: Only verbs with an accusative object can form a personal passive. Without an object, you get an impersonal passive: Damals wurde viel diskutiert."
+  },
+  {
+   "de": "das Ereignis, -se — EN: event · FR: l'événement1989 war ein historisches Ereignis.",
+   "en": "Example: 1989 was a historic event."
+  },
+  {
+   "de": "die Grenze, -n — EN: border · FR: la frontièreDie Grenze war jahrzehntelang geschlossen.",
+   "en": "Example: The border was closed for decades."
+  },
+  {
+   "de": "die Wiedervereinigung (Sg.) — EN: reunification · FR: la réunificationDie Wiedervereinigung fand 1990 statt.",
+   "en": "Example: Reunification took place in 1990."
+  },
+  {
+   "de": "die Verfassung, -en — EN: constitution · FR: la constitutionDie Verfassung wurde 1949 beschlossen.",
+   "en": "Example: The constitution was adopted in 1949."
+  },
+  {
+   "de": "einführen — EN: to introduce · FR: introduire, instaurerDas Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "Example: Women's right to vote was introduced in 1918."
+  },
+  {
+   "de": "zerstören — EN: to destroy · FR: détruireViele Städte wurden im Krieg zerstört.",
+   "en": "Example: Many cities were destroyed in the war."
+  },
+  {
+   "de": "der Wiederaufbau (Sg.) — EN: reconstruction · FR: la reconstructionDer Wiederaufbau dauerte Jahrzehnte.",
+   "en": "Example: The reconstruction took decades."
+  },
+  {
+   "de": "die Besatzung (Sg.) — EN: occupation · FR: l'occupationNach 1945 gab es vier Besatzungszonen.",
+   "en": "Example: After 1945 there were four occupation zones."
+  },
+  {
+   "de": "die Flucht (Sg.) — EN: escape, flight · FR: la fuiteDie Flucht war lebensgefährlich.",
+   "en": "Example: The escape was extremely dangerous."
+  },
+  {
+   "de": "beschließen (beschloss, beschlossen) — EN: to decide, pass (a law) · FR: décider, adopterDas Gesetz wurde einstimmig beschlossen.",
+   "en": "Example: The law was passed unanimously."
+  },
+  {
+   "de": "das Jahrhundert, -e — EN: century · FR: le siècleIm 20. Jahrhundert veränderte sich alles.",
+   "en": "Example: In the 20th century everything changed."
+  },
+  {
+   "de": "friedlich — EN: peaceful · FR: pacifiqueDie Revolution verlief friedlich.",
+   "en": "Example: The revolution was peaceful."
+  },
+  {
+   "de": "berichten",
+   "en": "Reporting"
+  },
+  {
+   "de": "Im Jahr … wurde …",
+   "en": "In the year …, … was …"
+  },
+  {
+   "de": "Zu dieser Zeit wurde …",
+   "en": "At that time, … was …"
+  },
+  {
+   "de": "Erst … Jahre später wurde …",
+   "en": "Only … years later was …"
+  },
+  {
+   "de": "einordnen",
+   "en": "Putting things in context"
+  },
+  {
+   "de": "Das war ein entscheidender Moment, weil …",
+   "en": "That was a decisive moment because …"
+  },
+  {
+   "de": "Bis dahin war es üblich, dass …",
+   "en": "Until then it was usual that …"
+  },
+  {
+   "de": "Infolgedessen änderte sich …",
+   "en": "As a result, … changed."
+  },
+  {
+   "de": "In meinem Land war die Entwicklung anders: …",
+   "en": "In my country, things developed differently: …"
+  },
+  {
+   "de": "Ähnlich wie in … wurde auch bei uns …",
+   "en": "As in …, in our country too, … was …"
+  },
+  {
+   "de": "Darüber wird bei uns bis heute diskutiert.",
+   "en": "That is still being discussed in our country today."
+  },
+  {
+   "de": "1989 war ein historisches Ereignis.",
+   "en": "1989 was a historic event."
+  },
+  {
+   "de": "Die Grenze war jahrzehntelang geschlossen.",
+   "en": "The border was closed for decades."
+  },
+  {
+   "de": "Die Wiedervereinigung fand 1990 statt.",
+   "en": "Reunification took place in 1990."
+  },
+  {
+   "de": "Die Verfassung wurde 1949 beschlossen.",
+   "en": "The constitution was adopted in 1949."
+  },
+  {
+   "de": "Das Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "Women's right to vote was introduced in 1918."
+  },
+  {
+   "de": "Viele Städte wurden im Krieg zerstört.",
+   "en": "Many cities were destroyed in the war."
+  },
+  {
+   "de": "Der Wiederaufbau dauerte Jahrzehnte.",
+   "en": "The reconstruction took decades."
+  },
+  {
+   "de": "Nach 1945 gab es vier Besatzungszonen.",
+   "en": "After 1945 there were four occupation zones."
+  },
+  {
+   "de": "Die Flucht war lebensgefährlich.",
+   "en": "The escape was extremely dangerous."
+  },
+  {
+   "de": "Das Gesetz wurde einstimmig beschlossen.",
+   "en": "The law was passed unanimously."
+  },
+  {
+   "de": "Im 20. Jahrhundert veränderte sich alles.",
+   "en": "In the 20th century everything changed."
+  },
+  {
+   "de": "Die Revolution verlief friedlich.",
+   "en": "The revolution was peaceful."
+  },
+  {
+   "de": "Die Universität ___ 1810 gegründet. (werden, Passiv Präteritum)",
+   "en": "The university ___ founded in 1810. (werden, simple past passive)"
+  },
+  {
+   "de": "Passiv Perfekt von „Man hat das Museum renoviert“:",
+   "en": "Present perfect passive of “They renovated the museum”:"
+  },
+  {
+   "de": "In der BRD ___ die Demokratie eingeführt. (werden, Präteritum)",
+   "en": "In the FRG, democracy ___ introduced. (werden, simple past)"
+  },
+  {
+   "de": "Wer die Handlung ausführt, nennt man im Passiv mit:",
+   "en": "In the passive, the person who carries out the action is named with:"
+  },
+  {
+   "de": "Damals ___ viel über die Zukunft diskutiert. (werden, Präteritum, unpersönlich)",
+   "en": "Back then, there ___ a lot of discussion about the future. (werden, simple past, impersonal)"
+  },
+  {
+   "de": "Passiv Präteritum: wurde + Partizip II.",
+   "en": "Simple past passive: wurde + past participle."
+  },
+  {
+   "de": "Im Passiv Perfekt heißt das Partizip worden, nicht geworden, und das Hilfsverb ist sein.",
+   "en": "In the present perfect passive, the participle is worden, not geworden, and the auxiliary verb is sein."
+  },
+  {
+   "de": "Singular Subjekt → wurde.",
+   "en": "Singular subject → wurde."
+  },
+  {
+   "de": "Der Urheber steht mit von + Dativ: von den Bürgern.",
+   "en": "The agent is given with von + dative: von den Bürgern."
+  },
+  {
+   "de": "Unpersönliches Passiv ohne Subjekt: wurde diskutiert.",
+   "en": "Impersonal passive without a subject: wurde diskutiert."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Historische",
+   "context": "Historische Ereignisse berichten — im Passiv der Vergangenheit.",
+   "en": "historical",
+   "lemma": "historisch"
+  },
+  {
+   "form": "historische",
+   "context": "über historische Ereignisse berichten",
+   "en": "historical",
+   "lemma": "historisch"
+  },
+  {
+   "form": "Jahreszahlen",
+   "context": "Jahreszahlen und Zeitangaben in Berichten verwenden",
+   "en": "years, dates",
+   "lemma": "die Jahreszahl"
+  },
+  {
+   "form": "übliche",
+   "context": "Für historische Berichte braucht man zwei Formen. Passiv Präteritum (wurde + Partizip II) ist die übliche Schriftform. Passiv Perfekt (ist … worden) benutzt man eher mündlich. Achtung: Im Perfekt heißt das Partizip von werden nicht geworden, sondern worden.",
+   "en": "usual",
+   "lemma": "üblich"
+  },
+  {
+   "form": "Schriftform",
+   "context": "Für historische Berichte braucht man zwei Formen. Passiv Präteritum (wurde + Partizip II) ist die übliche Schriftform. Passiv Perfekt (ist … worden) benutzt man eher mündlich. Achtung: Im Perfekt heißt das Partizip von werden nicht geworden, sondern worden.",
+   "en": "written form",
+   "lemma": "die Schriftform"
+  },
+  {
+   "form": "gebaut",
+   "context": "Das Gebäude wurde 1965 gebaut.",
+   "en": "built",
+   "lemma": "bauen"
+  },
+  {
+   "form": "Krieg",
+   "context": "Nach dem Krieg wurde das Land in vier Zonen aufgeteilt.Passiv Präteritum — typisch für Geschichtstexte",
+   "en": "war",
+   "lemma": "der Krieg"
+  },
+  {
+   "form": "Zonen",
+   "context": "Nach dem Krieg wurde das Land in vier Zonen aufgeteilt.Passiv Präteritum — typisch für Geschichtstexte",
+   "en": "zones",
+   "lemma": "die Zone"
+  },
+  {
+   "form": "aufgeteilt",
+   "context": "Nach dem Krieg wurde das Land in vier Zonen aufgeteilt.Passiv Präteritum — typisch für Geschichtstexte",
+   "en": "divided (up)",
+   "lemma": "aufteilen"
+  },
+  {
+   "form": "Geschichtstexte",
+   "context": "Nach dem Krieg wurde das Land in vier Zonen aufgeteilt.Passiv Präteritum — typisch für Geschichtstexte",
+   "en": "history texts",
+   "lemma": "der Geschichtstext"
+  },
+  {
+   "form": "Bürgern",
+   "context": "Viele Städte wurden von den Bürgern selbst wieder aufgebaut.Urheber mit von + Dativ",
+   "en": "citizens",
+   "lemma": "der Bürger"
+  },
+  {
+   "form": "Urheber",
+   "context": "Viele Städte wurden von den Bürgern selbst wieder aufgebaut.Urheber mit von + Dativ",
+   "en": "agent, originator",
+   "lemma": "der Urheber"
+  },
+  {
+   "form": "Akkusativobjekt",
+   "context": "Tipp: Nur Verben mit Akkusativobjekt können ein persönliches Passiv bilden. Ohne Objekt entsteht ein unpersönliches Passiv: Damals wurde viel diskutiert.",
+   "en": "accusative object",
+   "lemma": "das Akkusativobjekt"
+  },
+  {
+   "form": "persönliches",
+   "context": "Tipp: Nur Verben mit Akkusativobjekt können ein persönliches Passiv bilden. Ohne Objekt entsteht ein unpersönliches Passiv: Damals wurde viel diskutiert.",
+   "en": "personal",
+   "lemma": "persönlich"
+  },
+  {
+   "form": "unpersönliches",
+   "context": "Tipp: Nur Verben mit Akkusativobjekt können ein persönliches Passiv bilden. Ohne Objekt entsteht ein unpersönliches Passiv: Damals wurde viel diskutiert.",
+   "en": "impersonal",
+   "lemma": "unpersönlich"
+  },
+  {
+   "form": "l'événement",
+   "context": "das Ereignis, -se — EN: event · FR: l'événement1989 war ein historisches Ereignis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "historisches",
+   "context": "das Ereignis, -se — EN: event · FR: l'événement1989 war ein historisches Ereignis.",
+   "en": "historic, historical",
+   "lemma": "historisch"
+  },
+  {
+   "form": "frontièreDie",
+   "context": "die Grenze, -n — EN: border · FR: la frontièreDie Grenze war jahrzehntelang geschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jahrzehntelang",
+   "context": "die Grenze, -n — EN: border · FR: la frontièreDie Grenze war jahrzehntelang geschlossen.",
+   "en": "for decades",
+   "lemma": ""
+  },
+  {
+   "form": "Wiedervereinigung",
+   "context": "die Wiedervereinigung (Sg.) — EN: reunification · FR: la réunificationDie Wiedervereinigung fand 1990 statt.",
+   "en": "reunification",
+   "lemma": "die Wiedervereinigung"
+  },
+  {
+   "form": "reunification",
+   "context": "die Wiedervereinigung (Sg.) — EN: reunification · FR: la réunificationDie Wiedervereinigung fand 1990 statt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réunificationDie",
+   "context": "die Wiedervereinigung (Sg.) — EN: reunification · FR: la réunificationDie Wiedervereinigung fand 1990 statt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Verfassung",
+   "context": "die Verfassung, -en — EN: constitution · FR: la constitutionDie Verfassung wurde 1949 beschlossen.",
+   "en": "constitution",
+   "lemma": "die Verfassung"
+  },
+  {
+   "form": "constitution",
+   "context": "die Verfassung, -en — EN: constitution · FR: la constitutionDie Verfassung wurde 1949 beschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "constitutionDie",
+   "context": "die Verfassung, -en — EN: constitution · FR: la constitutionDie Verfassung wurde 1949 beschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beschlossen",
+   "context": "die Verfassung, -en — EN: constitution · FR: la constitutionDie Verfassung wurde 1949 beschlossen.",
+   "en": "decided, passed (a law)",
+   "lemma": "beschließen"
+  },
+  {
+   "form": "einführen",
+   "context": "einführen — EN: to introduce · FR: introduire, instaurerDas Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "to introduce",
+   "lemma": ""
+  },
+  {
+   "form": "introduce",
+   "context": "einführen — EN: to introduce · FR: introduire, instaurerDas Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "introduire",
+   "context": "einführen — EN: to introduce · FR: introduire, instaurerDas Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "instaurerDas",
+   "context": "einführen — EN: to introduce · FR: introduire, instaurerDas Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Frauenwahlrecht",
+   "context": "einführen — EN: to introduce · FR: introduire, instaurerDas Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "women's right to vote",
+   "lemma": "das Frauenwahlrecht"
+  },
+  {
+   "form": "eingeführt",
+   "context": "einführen — EN: to introduce · FR: introduire, instaurerDas Frauenwahlrecht wurde 1918 eingeführt.",
+   "en": "introduced",
+   "lemma": "einführen"
+  },
+  {
+   "form": "zerstören",
+   "context": "zerstören — EN: to destroy · FR: détruireViele Städte wurden im Krieg zerstört.",
+   "en": "to destroy",
+   "lemma": ""
+  },
+  {
+   "form": "destroy",
+   "context": "zerstören — EN: to destroy · FR: détruireViele Städte wurden im Krieg zerstört.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "détruireViele",
+   "context": "zerstören — EN: to destroy · FR: détruireViele Städte wurden im Krieg zerstört.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zerstört",
+   "context": "zerstören — EN: to destroy · FR: détruireViele Städte wurden im Krieg zerstört.",
+   "en": "destroyed",
+   "lemma": "zerstören"
+  },
+  {
+   "form": "Wiederaufbau",
+   "context": "der Wiederaufbau (Sg.) — EN: reconstruction · FR: la reconstructionDer Wiederaufbau dauerte Jahrzehnte.",
+   "en": "reconstruction",
+   "lemma": "der Wiederaufbau"
+  },
+  {
+   "form": "reconstruction",
+   "context": "der Wiederaufbau (Sg.) — EN: reconstruction · FR: la reconstructionDer Wiederaufbau dauerte Jahrzehnte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reconstructionDer",
+   "context": "der Wiederaufbau (Sg.) — EN: reconstruction · FR: la reconstructionDer Wiederaufbau dauerte Jahrzehnte.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Jahrzehnte",
+   "context": "der Wiederaufbau (Sg.) — EN: reconstruction · FR: la reconstructionDer Wiederaufbau dauerte Jahrzehnte.",
+   "en": "decades",
+   "lemma": "das Jahrzehnt"
+  },
+  {
+   "form": "Besatzung",
+   "context": "die Besatzung (Sg.) — EN: occupation · FR: l'occupationNach 1945 gab es vier Besatzungszonen.",
+   "en": "occupation; crew",
+   "lemma": "die Besatzung"
+  },
+  {
+   "form": "l'occupationNach",
+   "context": "die Besatzung (Sg.) — EN: occupation · FR: l'occupationNach 1945 gab es vier Besatzungszonen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Besatzungszonen",
+   "context": "die Besatzung (Sg.) — EN: occupation · FR: l'occupationNach 1945 gab es vier Besatzungszonen.",
+   "en": "occupation zones",
+   "lemma": "die Besatzungszone"
+  },
+  {
+   "form": "Flucht",
+   "context": "die Flucht (Sg.) — EN: escape, flight · FR: la fuiteDie Flucht war lebensgefährlich.",
+   "en": "escape, flight",
+   "lemma": "die Flucht"
+  },
+  {
+   "form": "flight",
+   "context": "die Flucht (Sg.) — EN: escape, flight · FR: la fuiteDie Flucht war lebensgefährlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fuiteDie",
+   "context": "die Flucht (Sg.) — EN: escape, flight · FR: la fuiteDie Flucht war lebensgefährlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lebensgefährlich",
+   "context": "die Flucht (Sg.) — EN: escape, flight · FR: la fuiteDie Flucht war lebensgefährlich.",
+   "en": "life-threatening",
+   "lemma": ""
+  },
+  {
+   "form": "beschließen",
+   "context": "beschließen (beschloss, beschlossen) — EN: to decide, pass (a law) · FR: décider, adopterDas Gesetz wurde einstimmig beschlossen.",
+   "en": "to decide; to pass (a law)",
+   "lemma": ""
+  },
+  {
+   "form": "beschloss",
+   "context": "beschließen (beschloss, beschlossen) — EN: to decide, pass (a law) · FR: décider, adopterDas Gesetz wurde einstimmig beschlossen.",
+   "en": "decided",
+   "lemma": "beschließen"
+  },
+  {
+   "form": "adopterDas",
+   "context": "beschließen (beschloss, beschlossen) — EN: to decide, pass (a law) · FR: décider, adopterDas Gesetz wurde einstimmig beschlossen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "einstimmig",
+   "context": "beschließen (beschloss, beschlossen) — EN: to decide, pass (a law) · FR: décider, adopterDas Gesetz wurde einstimmig beschlossen.",
+   "en": "unanimous(ly)",
+   "lemma": ""
+  },
+  {
+   "form": "Jahrhundert",
+   "context": "das Jahrhundert, -e — EN: century · FR: le siècleIm 20. Jahrhundert veränderte sich alles.",
+   "en": "century",
+   "lemma": "das Jahrhundert"
+  },
+  {
+   "form": "century",
+   "context": "das Jahrhundert, -e — EN: century · FR: le siècleIm 20. Jahrhundert veränderte sich alles.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "siècleIm",
+   "context": "das Jahrhundert, -e — EN: century · FR: le siècleIm 20. Jahrhundert veränderte sich alles.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "veränderte",
+   "context": "das Jahrhundert, -e — EN: century · FR: le siècleIm 20. Jahrhundert veränderte sich alles.",
+   "en": "changed",
+   "lemma": "verändern"
+  },
+  {
+   "form": "friedlich",
+   "context": "friedlich — EN: peaceful · FR: pacifiqueDie Revolution verlief friedlich.",
+   "en": "peaceful",
+   "lemma": ""
+  },
+  {
+   "form": "peaceful",
+   "context": "friedlich — EN: peaceful · FR: pacifiqueDie Revolution verlief friedlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pacifiqueDie",
+   "context": "friedlich — EN: peaceful · FR: pacifiqueDie Revolution verlief friedlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Revolution",
+   "context": "friedlich — EN: peaceful · FR: pacifiqueDie Revolution verlief friedlich.",
+   "en": "revolution",
+   "lemma": "die Revolution"
+  },
+  {
+   "form": "verlief",
+   "context": "friedlich — EN: peaceful · FR: pacifiqueDie Revolution verlief friedlich.",
+   "en": "went, passed off",
+   "lemma": "verlaufen"
+  },
+  {
+   "form": "entscheidender",
+   "context": "Das war ein entscheidender Moment, weil …",
+   "en": "decisive",
+   "lemma": "entscheidend"
+  },
+  {
+   "form": "üblich",
+   "context": "Bis dahin war es üblich, dass …",
+   "en": "usual, customary",
+   "lemma": ""
+  },
+  {
+   "form": "Infolgedessen",
+   "context": "Infolgedessen änderte sich …",
+   "en": "as a result, consequently",
+   "lemma": ""
+  },
+  {
+   "form": "änderte",
+   "context": "Infolgedessen änderte sich …",
+   "en": "changed",
+   "lemma": "ändern"
+  },
+  {
+   "form": "Universität",
+   "context": "Die Universität ___ 1810 gegründet. (werden, Passiv Präteritum)",
+   "en": "university",
+   "lemma": "die Universität"
+  },
+  {
+   "form": "gegründet",
+   "context": "Die Universität ___ 1810 gegründet. (werden, Passiv Präteritum)",
+   "en": "founded",
+   "lemma": "gründen"
+  },
+  {
+   "form": "BRD",
+   "context": "In der BRD ___ die Demokratie eingeführt. (werden, Präteritum)",
+   "en": "FRG (Federal Republic of Germany)",
+   "lemma": ""
+  },
+  {
+   "form": "Demokratie",
+   "context": "In der BRD ___ die Demokratie eingeführt. (werden, Präteritum)",
+   "en": "democracy",
+   "lemma": "die Demokratie"
+  },
+  {
+   "form": "ausführt",
+   "context": "Wer die Handlung ausführt, nennt man im Passiv mit:",
+   "en": "carries out",
+   "lemma": "ausführen"
+  },
+  {
+   "form": "unpersönlich",
+   "context": "Damals ___ viel über die Zukunft diskutiert. (werden, Präteritum, unpersönlich)",
+   "en": "impersonal",
+   "lemma": ""
+  }
+ ]
+}
