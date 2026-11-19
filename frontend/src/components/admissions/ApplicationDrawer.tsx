@@ -2,20 +2,21 @@ import { useApi } from '../../hooks/useApi';
 import { getApplication } from '../../lib/admissions-api';
 import { ErrorBlock,LoadingBlock } from '../common/PageState';
 import { Modal } from '../ui/Modal';
-import { ApplicationCourseEditor } from './ApplicationCourseEditor';
+import { AdmitPanel } from './AdmitPanel';
+import { AdmitResult } from './AdmitResult';
 import { ApplicationDecision } from './ApplicationDecision';
 import { ApplicationDetails } from './ApplicationDetails';
 import { ApplicationHistory } from './ApplicationHistory';
-import { CreateStudentAction } from './CreateStudentAction';
+import { ApplicationMatchesPanel } from './ApplicationMatchesPanel';
 import type { AdmissionRefs } from './useAdmissionRefs';
 import { useDrawerActions } from './useDrawerActions';
 
 const OPEN = ['NEW', 'REVIEWING', 'ACCEPTED', 'WAITLISTED'];
 
-type Props = { id: string | null; refs: AdmissionRefs; onClose: () => void; onChanged: () => void };
+type Props = { id: string | null; refs: AdmissionRefs; onClose: () => void; onChanged: () => void; onOpen: (id: string) => void };
 
-/** Review one application: facts, course corrections, decision, account creation and audit trail. */
-export function ApplicationDrawer({ id, refs, onClose, onChanged }: Props) {
+/** Review one application: facts and contact, who they may already be, enrol in one step, other decisions, audit trail. */
+export function ApplicationDrawer({ id, refs, onClose, onChanged, onOpen }: Props) {
   const detail = useApi(`application:${id ?? ''}`, () => getApplication(id ?? ''), Boolean(id));
   const { refetch } = detail;
   const actions = useDrawerActions(id, () => { refetch(); onChanged(); });
@@ -42,11 +43,13 @@ export function ApplicationDrawer({ id, refs, onClose, onChanged }: Props) {
               {actions.notice.text}
             </p>
           ) : null}
-          {OPEN.includes(app.status) && !app.studentId ? (
-            <ApplicationCourseEditor key={`${app.id}:${app.levelId}:${app.intakeId}:${app.campusId}:${app.shift}`} app={app} refs={refs} busy={actions.busy} onSave={actions.saveCourse} />
-          ) : null}
+          <ApplicationMatchesPanel matches={app.matches} onOpenApplication={(other) => { actions.reset(); onOpen(other); }} />
+          {actions.admitted ? <AdmitResult result={actions.admitted} app={app} />
+            : OPEN.includes(app.status) ? (
+              <AdmitPanel key={`${app.id}:${app.levelId}:${app.intakeId}:${app.campusId}`} app={app} refs={refs} busy={actions.busy}
+                onAdmit={actions.admit} onSaveCourse={actions.saveCourse} />
+            ) : null}
           <ApplicationDecision key={`${app.id}:${app.status}`} app={app} busy={actions.busy} onTransition={actions.transition} />
-          <CreateStudentAction key={app.id} app={app} refs={refs} busy={actions.busy} created={actions.created} onCreate={actions.createStudent} />
           <ApplicationHistory history={app.history} />
         </div>
       )}
