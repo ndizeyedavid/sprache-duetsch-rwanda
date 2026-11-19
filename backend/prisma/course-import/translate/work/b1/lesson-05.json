@@ -1,0 +1,767 @@
+{
+ "level": "B1",
+ "lesson": 5,
+ "title": "Zukunft — In zehn Jahren wird vieles anders sein",
+ "lines": [
+  {
+   "de": "Vorhersagen treffen, Vermutungen äußern und Versprechen geben.",
+   "en": "Making predictions, expressing assumptions and making promises."
+  },
+  {
+   "de": "über die Zukunft sprechen und Prognosen formulieren",
+   "en": "talk about the future and make forecasts"
+  },
+  {
+   "de": "Futur I korrekt bilden und verwenden",
+   "en": "form and use the future tense (Futur I) correctly"
+  },
+  {
+   "de": "erkennen, wann Präsens + Zeitangabe reicht",
+   "en": "recognise when the present tense + a time expression is enough"
+  },
+  {
+   "de": "Grammatik: Zukunft: Präsens oder Futur I?",
+   "en": "Grammar: The future: present tense or future tense (Futur I)?"
+  },
+  {
+   "de": "Für sichere, geplante Ereignisse benutzt man im Deutschen fast immer das Präsens mit einer Zeitangabe. Das Futur I (werden + Infinitiv) benutzt man für Vorhersagen, Vermutungen, Versprechen und starke Aufforderungen.",
+   "en": "For certain, planned events, German almost always uses the present tense with a time expression. The future tense (Futur I: werden + infinitive) is used for predictions, assumptions, promises and strong commands."
+  },
+  {
+   "de": "Funktion",
+   "en": "Function"
+  },
+  {
+   "de": "Form",
+   "en": "="
+  },
+  {
+   "de": "sicheres Ereignis / Plan",
+   "en": "certain event / plan"
+  },
+  {
+   "de": "Präsens + Zeitangabe",
+   "en": "present tense + time expression"
+  },
+  {
+   "de": "Morgen fliege ich nach Kigali.",
+   "en": "Tomorrow I'm flying to Kigali."
+  },
+  {
+   "de": "Vorhersage / Vermutung",
+   "en": "prediction / assumption"
+  },
+  {
+   "de": "Futur I",
+   "en": "future tense (Futur I)"
+  },
+  {
+   "de": "Die Preise werden weiter steigen.",
+   "en": "Prices will keep rising."
+  },
+  {
+   "de": "Versprechen / Vorsatz",
+   "en": "promise / resolution"
+  },
+  {
+   "de": "Ich werde dich nie wieder enttäuschen.",
+   "en": "I will never disappoint you again."
+  },
+  {
+   "de": "Aufforderung (streng)",
+   "en": "command (strict)"
+  },
+  {
+   "de": "Du wirst jetzt sofort dein Zimmer aufräumen!",
+   "en": "You will tidy your room right now!"
+  },
+  {
+   "de": "Bald werden die meisten Autos elektrisch fahren.werden konjugiert, Infinitiv am Satzende",
+   "en": "Soon most cars will run on electricity. (werden conjugated, infinitive at the end of the sentence)"
+  },
+  {
+   "de": "Wahrscheinlich wird es morgen regnen.Vermutung — oft mit wahrscheinlich, wohl, vermutlich",
+   "en": "It will probably rain tomorrow. (assumption — often with wahrscheinlich, wohl, vermutlich = probably)"
+  },
+  {
+   "de": "Nächste Woche beginnt der neue Kurs.sicheres Ereignis → Präsens",
+   "en": "The new course starts next week. (certain event → present tense)"
+  },
+  {
+   "de": "Tipp: Vermutungen über die Gegenwart gehen auch mit Futur I: Sie wird wohl noch im Büro sein. (= Sie ist wahrscheinlich noch im Büro.)",
+   "en": "Tip: You can also use the future tense (Futur I) for assumptions about the present: She will probably still be at the office. (= She is probably still at the office.)"
+  },
+  {
+   "de": "die Vorhersage, -n — EN: prediction, forecast · FR: la prévisionSeine Vorhersage war völlig falsch.",
+   "en": "Example: His prediction was completely wrong."
+  },
+  {
+   "de": "die Entwicklung, -en — EN: development · FR: le développementDie technische Entwicklung geht rasant weiter.",
+   "en": "Example: Technical development is continuing at a rapid pace."
+  },
+  {
+   "de": "voraussichtlich — EN: probably, expected · FR: probablementDas Projekt dauert voraussichtlich ein Jahr.",
+   "en": "Example: The project is expected to last a year."
+  },
+  {
+   "de": "der Fortschritt, -e — EN: progress · FR: le progrèsDer medizinische Fortschritt rettet Leben.",
+   "en": "Example: Medical progress saves lives."
+  },
+  {
+   "de": "ersetzen — EN: to replace · FR: remplacerMaschinen werden viele Tätigkeiten ersetzen.",
+   "en": "Example: Machines will replace many tasks."
+  },
+  {
+   "de": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "Example: Artificial intelligence is changing the world of work."
+  },
+  {
+   "de": "vermutlich — EN: presumably · FR: vraisemblablementVermutlich wird das teurer als geplant.",
+   "en": "Example: That will presumably be more expensive than planned."
+  },
+  {
+   "de": "sich verändern — EN: to change · FR: changerDie Städte werden sich stark verändern.",
+   "en": "Example: Cities will change a great deal."
+  },
+  {
+   "de": "die Prognose, -n — EN: forecast · FR: le pronosticDie Prognose für dieses Jahr ist positiv.",
+   "en": "Example: The forecast for this year is positive."
+  },
+  {
+   "de": "zunehmen (nahm zu, zugenommen) — EN: to increase · FR: augmenterDer Verkehr wird weiter zunehmen.",
+   "en": "Example: Traffic will continue to increase."
+  },
+  {
+   "de": "abnehmen (nahm ab, abgenommen) — EN: to decrease · FR: diminuerDie Zahl der Beschäftigten nimmt ab.",
+   "en": "Example: The number of employees is decreasing."
+  },
+  {
+   "de": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht klar zum Homeoffice.",
+   "en": "Example: The trend is clearly towards working from home."
+  },
+  {
+   "de": "Vorhersagen",
+   "en": "making predictions"
+  },
+  {
+   "de": "Ich bin überzeugt, dass … eine große Rolle spielen wird.",
+   "en": "I am convinced that … will play a big role."
+  },
+  {
+   "de": "In zehn Jahren wird es … geben.",
+   "en": "In ten years there will be …"
+  },
+  {
+   "de": "Es ist zu erwarten, dass …",
+   "en": "It is to be expected that …"
+  },
+  {
+   "de": "Vermutungen abschwächen",
+   "en": "softening assumptions"
+  },
+  {
+   "de": "Das wird wohl noch etwas dauern.",
+   "en": "That will probably take a while yet."
+  },
+  {
+   "de": "Möglicherweise wird sich das ändern.",
+   "en": "That might change."
+  },
+  {
+   "de": "Ich könnte mir vorstellen, dass …",
+   "en": "I could imagine that …"
+  },
+  {
+   "de": "Versprechen geben",
+   "en": "making promises"
+  },
+  {
+   "de": "Ich werde mich darum kümmern.",
+   "en": "I will take care of it."
+  },
+  {
+   "de": "Das werde ich nicht vergessen.",
+   "en": "I won't forget that."
+  },
+  {
+   "de": "Darauf können Sie sich verlassen.",
+   "en": "You can rely on that."
+  },
+  {
+   "de": "Seine Vorhersage war völlig falsch.",
+   "en": "His prediction was completely wrong."
+  },
+  {
+   "de": "Die technische Entwicklung geht rasant weiter.",
+   "en": "Technical development is continuing at a rapid pace."
+  },
+  {
+   "de": "Das Projekt dauert voraussichtlich ein Jahr.",
+   "en": "The project is expected to last a year."
+  },
+  {
+   "de": "Der medizinische Fortschritt rettet Leben.",
+   "en": "Medical progress saves lives."
+  },
+  {
+   "de": "Maschinen werden viele Tätigkeiten ersetzen.",
+   "en": "Machines will replace many tasks."
+  },
+  {
+   "de": "Künstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "Artificial intelligence is changing the world of work."
+  },
+  {
+   "de": "Vermutlich wird das teurer als geplant.",
+   "en": "That will presumably be more expensive than planned."
+  },
+  {
+   "de": "Die Städte werden sich stark verändern.",
+   "en": "Cities will change a great deal."
+  },
+  {
+   "de": "Die Prognose für dieses Jahr ist positiv.",
+   "en": "The forecast for this year is positive."
+  },
+  {
+   "de": "Der Verkehr wird weiter zunehmen.",
+   "en": "Traffic will continue to increase."
+  },
+  {
+   "de": "Die Zahl der Beschäftigten nimmt ab.",
+   "en": "The number of employees is decreasing."
+  },
+  {
+   "de": "Der Trend geht klar zum Homeoffice.",
+   "en": "The trend is clearly towards working from home."
+  },
+  {
+   "de": "In zwanzig Jahren ___ wir ganz anders arbeiten. (werden)",
+   "en": "In twenty years we ___ work completely differently. (werden)"
+  },
+  {
+   "de": "Welcher Satz drückt ein sicheres, geplantes Ereignis aus?",
+   "en": "Which sentence expresses a certain, planned event?"
+  },
+  {
+   "de": "Ich verspreche dir: Ich ___ dich morgen ___. (anrufen, Futur I)",
+   "en": "I promise you: I ___ ___ you tomorrow. (anrufen, future tense)"
+  },
+  {
+   "de": "Sie ist nicht am Platz. Sie ___ wohl in einer Besprechung sein.",
+   "en": "She is not at her desk. She ___ probably be in a meeting."
+  },
+  {
+   "de": "Die Mieten ___ in den nächsten Jahren weiter ___. (steigen, Futur I)",
+   "en": "Rents ___ ___ further over the next few years. (steigen, future tense)"
+  },
+  {
+   "de": "Futur I: werden (konjugiert) + Infinitiv am Ende.",
+   "en": "Future tense (Futur I): werden (conjugated) + infinitive at the end."
+  },
+  {
+   "de": "Präsens + Zeitangabe steht für feste Pläne.",
+   "en": "Present tense + time expression is used for fixed plans."
+  },
+  {
+   "de": "werde + Infinitiv anrufen am Satzende.",
+   "en": "werde + the infinitive anrufen at the end of the sentence."
+  },
+  {
+   "de": "Vermutung über die Gegenwart mit Futur I: sie wird … sein.",
+   "en": "Assumption about the present with the future tense (Futur I): sie wird … sein."
+  },
+  {
+   "de": "Vorhersage → Futur I.",
+   "en": "Prediction → future tense (Futur I)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Vorhersagen",
+   "context": "Vorhersagen treffen, Vermutungen äußern und Versprechen geben.",
+   "en": "predictions",
+   "lemma": "die Vorhersage"
+  },
+  {
+   "form": "Vermutungen",
+   "context": "Vorhersagen treffen, Vermutungen äußern und Versprechen geben.",
+   "en": "assumptions, guesses",
+   "lemma": "die Vermutung"
+  },
+  {
+   "form": "Versprechen",
+   "context": "Vorhersagen treffen, Vermutungen äußern und Versprechen geben.",
+   "en": "promises",
+   "lemma": "das Versprechen"
+  },
+  {
+   "form": "Prognosen",
+   "context": "über die Zukunft sprechen und Prognosen formulieren",
+   "en": "forecasts",
+   "lemma": "die Prognose"
+  },
+  {
+   "form": "Futur",
+   "context": "Futur I korrekt bilden und verwenden",
+   "en": "future tense",
+   "lemma": "das Futur"
+  },
+  {
+   "form": "sichere",
+   "context": "Für sichere, geplante Ereignisse benutzt man im Deutschen fast immer das Präsens mit einer Zeitangabe. Das Futur I (werden + Infinitiv) benutzt man für Vorhersagen, Vermutungen, Versprechen und starke Aufforderungen.",
+   "en": "certain, sure; safe",
+   "lemma": "sicher"
+  },
+  {
+   "form": "Ereignisse",
+   "context": "Für sichere, geplante Ereignisse benutzt man im Deutschen fast immer das Präsens mit einer Zeitangabe. Das Futur I (werden + Infinitiv) benutzt man für Vorhersagen, Vermutungen, Versprechen und starke Aufforderungen.",
+   "en": "events",
+   "lemma": "das Ereignis"
+  },
+  {
+   "form": "Aufforderungen",
+   "context": "Für sichere, geplante Ereignisse benutzt man im Deutschen fast immer das Präsens mit einer Zeitangabe. Das Futur I (werden + Infinitiv) benutzt man für Vorhersagen, Vermutungen, Versprechen und starke Aufforderungen.",
+   "en": "commands, requests",
+   "lemma": "die Aufforderung"
+  },
+  {
+   "form": "Funktion",
+   "context": "Funktion",
+   "en": "function",
+   "lemma": "die Funktion"
+  },
+  {
+   "form": "sicheres",
+   "context": "sicheres Ereignis / Plan",
+   "en": "certain, sure; safe",
+   "lemma": "sicher"
+  },
+  {
+   "form": "fliege",
+   "context": "Morgen fliege ich nach Kigali.",
+   "en": "fly, am flying",
+   "lemma": "fliegen"
+  },
+  {
+   "form": "Vorhersage",
+   "context": "Vorhersage / Vermutung",
+   "en": "prediction, forecast",
+   "lemma": "die Vorhersage"
+  },
+  {
+   "form": "Vermutung",
+   "context": "Vorhersage / Vermutung",
+   "en": "assumption, guess",
+   "lemma": "die Vermutung"
+  },
+  {
+   "form": "Vorsatz",
+   "context": "Versprechen / Vorsatz",
+   "en": "resolution, intention",
+   "lemma": "der Vorsatz"
+  },
+  {
+   "form": "werde",
+   "context": "Ich werde dich nie wieder enttäuschen.",
+   "en": "will (future); become",
+   "lemma": "werden"
+  },
+  {
+   "form": "enttäuschen",
+   "context": "Ich werde dich nie wieder enttäuschen.",
+   "en": "disappoint",
+   "lemma": ""
+  },
+  {
+   "form": "streng",
+   "context": "Aufforderung (streng)",
+   "en": "strict",
+   "lemma": ""
+  },
+  {
+   "form": "wirst",
+   "context": "Du wirst jetzt sofort dein Zimmer aufräumen!",
+   "en": "will (with du); become",
+   "lemma": "werden"
+  },
+  {
+   "form": "elektrisch",
+   "context": "Bald werden die meisten Autos elektrisch fahren.werden konjugiert, Infinitiv am Satzende",
+   "en": "electric; electrically",
+   "lemma": ""
+  },
+  {
+   "form": "wohl",
+   "context": "Wahrscheinlich wird es morgen regnen.Vermutung — oft mit wahrscheinlich, wohl, vermutlich",
+   "en": "probably; well",
+   "lemma": ""
+  },
+  {
+   "form": "vermutlich",
+   "context": "Wahrscheinlich wird es morgen regnen.Vermutung — oft mit wahrscheinlich, wohl, vermutlich",
+   "en": "presumably, probably",
+   "lemma": ""
+  },
+  {
+   "form": "Gegenwart",
+   "context": "Tipp: Vermutungen über die Gegenwart gehen auch mit Futur I: Sie wird wohl noch im Büro sein. (= Sie ist wahrscheinlich noch im Büro.)",
+   "en": "present (time)",
+   "lemma": "die Gegenwart"
+  },
+  {
+   "form": "prediction",
+   "context": "die Vorhersage, -n — EN: prediction, forecast · FR: la prévisionSeine Vorhersage war völlig falsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "forecast",
+   "context": "die Vorhersage, -n — EN: prediction, forecast · FR: la prévisionSeine Vorhersage war völlig falsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prévisionSeine",
+   "context": "die Vorhersage, -n — EN: prediction, forecast · FR: la prévisionSeine Vorhersage war völlig falsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "völlig",
+   "context": "die Vorhersage, -n — EN: prediction, forecast · FR: la prévisionSeine Vorhersage war völlig falsch.",
+   "en": "completely",
+   "lemma": ""
+  },
+  {
+   "form": "Entwicklung",
+   "context": "die Entwicklung, -en — EN: development · FR: le développementDie technische Entwicklung geht rasant weiter.",
+   "en": "development",
+   "lemma": "die Entwicklung"
+  },
+  {
+   "form": "development",
+   "context": "die Entwicklung, -en — EN: development · FR: le développementDie technische Entwicklung geht rasant weiter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "développementDie",
+   "context": "die Entwicklung, -en — EN: development · FR: le développementDie technische Entwicklung geht rasant weiter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rasant",
+   "context": "die Entwicklung, -en — EN: development · FR: le développementDie technische Entwicklung geht rasant weiter.",
+   "en": "rapidly; rapid",
+   "lemma": ""
+  },
+  {
+   "form": "voraussichtlich",
+   "context": "voraussichtlich — EN: probably, expected · FR: probablementDas Projekt dauert voraussichtlich ein Jahr.",
+   "en": "expected; probably",
+   "lemma": ""
+  },
+  {
+   "form": "probably",
+   "context": "voraussichtlich — EN: probably, expected · FR: probablementDas Projekt dauert voraussichtlich ein Jahr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "expected",
+   "context": "voraussichtlich — EN: probably, expected · FR: probablementDas Projekt dauert voraussichtlich ein Jahr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "probablementDas",
+   "context": "voraussichtlich — EN: probably, expected · FR: probablementDas Projekt dauert voraussichtlich ein Jahr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Fortschritt",
+   "context": "der Fortschritt, -e — EN: progress · FR: le progrèsDer medizinische Fortschritt rettet Leben.",
+   "en": "progress",
+   "lemma": "der Fortschritt"
+  },
+  {
+   "form": "progrèsDer",
+   "context": "der Fortschritt, -e — EN: progress · FR: le progrèsDer medizinische Fortschritt rettet Leben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "medizinische",
+   "context": "der Fortschritt, -e — EN: progress · FR: le progrèsDer medizinische Fortschritt rettet Leben.",
+   "en": "medical",
+   "lemma": "medizinisch"
+  },
+  {
+   "form": "rettet",
+   "context": "der Fortschritt, -e — EN: progress · FR: le progrèsDer medizinische Fortschritt rettet Leben.",
+   "en": "saves, rescues",
+   "lemma": "retten"
+  },
+  {
+   "form": "replace",
+   "context": "ersetzen — EN: to replace · FR: remplacerMaschinen werden viele Tätigkeiten ersetzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "remplacerMaschinen",
+   "context": "ersetzen — EN: to replace · FR: remplacerMaschinen werden viele Tätigkeiten ersetzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Tätigkeiten",
+   "context": "ersetzen — EN: to replace · FR: remplacerMaschinen werden viele Tätigkeiten ersetzen.",
+   "en": "activities, tasks",
+   "lemma": "die Tätigkeit"
+  },
+  {
+   "form": "künstliche",
+   "context": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "artificial",
+   "lemma": "künstlich"
+  },
+  {
+   "form": "Intelligenz",
+   "context": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "intelligence",
+   "lemma": "die Intelligenz"
+  },
+  {
+   "form": "artificial",
+   "context": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "intelligence",
+   "context": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'intelligence",
+   "context": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "artificielleKünstliche",
+   "context": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Arbeitswelt",
+   "context": "künstliche Intelligenz (Sg.) — EN: artificial intelligence · FR: l'intelligence artificielleKünstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "world of work",
+   "lemma": "die Arbeitswelt"
+  },
+  {
+   "form": "presumably",
+   "context": "vermutlich — EN: presumably · FR: vraisemblablementVermutlich wird das teurer als geplant.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vraisemblablementVermutlich",
+   "context": "vermutlich — EN: presumably · FR: vraisemblablementVermutlich wird das teurer als geplant.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "geplant",
+   "context": "vermutlich — EN: presumably · FR: vraisemblablementVermutlich wird das teurer als geplant.",
+   "en": "planned",
+   "lemma": "planen"
+  },
+  {
+   "form": "changerDie",
+   "context": "sich verändern — EN: to change · FR: changerDie Städte werden sich stark verändern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Prognose",
+   "context": "die Prognose, -n — EN: forecast · FR: le pronosticDie Prognose für dieses Jahr ist positiv.",
+   "en": "forecast",
+   "lemma": "die Prognose"
+  },
+  {
+   "form": "pronosticDie",
+   "context": "die Prognose, -n — EN: forecast · FR: le pronosticDie Prognose für dieses Jahr ist positiv.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zunehmen",
+   "context": "zunehmen (nahm zu, zugenommen) — EN: to increase · FR: augmenterDer Verkehr wird weiter zunehmen.",
+   "en": "to increase; to gain weight",
+   "lemma": ""
+  },
+  {
+   "form": "nahm",
+   "context": "zunehmen (nahm zu, zugenommen) — EN: to increase · FR: augmenterDer Verkehr wird weiter zunehmen.",
+   "en": "took; nahm zu = increased",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "zugenommen",
+   "context": "zunehmen (nahm zu, zugenommen) — EN: to increase · FR: augmenterDer Verkehr wird weiter zunehmen.",
+   "en": "increased",
+   "lemma": "zunehmen"
+  },
+  {
+   "form": "increase",
+   "context": "zunehmen (nahm zu, zugenommen) — EN: to increase · FR: augmenterDer Verkehr wird weiter zunehmen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "augmenterDer",
+   "context": "zunehmen (nahm zu, zugenommen) — EN: to increase · FR: augmenterDer Verkehr wird weiter zunehmen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Verkehr",
+   "context": "zunehmen (nahm zu, zugenommen) — EN: to increase · FR: augmenterDer Verkehr wird weiter zunehmen.",
+   "en": "traffic",
+   "lemma": "der Verkehr"
+  },
+  {
+   "form": "abnehmen",
+   "context": "abnehmen (nahm ab, abgenommen) — EN: to decrease · FR: diminuerDie Zahl der Beschäftigten nimmt ab.",
+   "en": "to decrease; to lose weight",
+   "lemma": ""
+  },
+  {
+   "form": "abgenommen",
+   "context": "abnehmen (nahm ab, abgenommen) — EN: to decrease · FR: diminuerDie Zahl der Beschäftigten nimmt ab.",
+   "en": "decreased",
+   "lemma": "abnehmen"
+  },
+  {
+   "form": "decrease",
+   "context": "abnehmen (nahm ab, abgenommen) — EN: to decrease · FR: diminuerDie Zahl der Beschäftigten nimmt ab.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "diminuerDie",
+   "context": "abnehmen (nahm ab, abgenommen) — EN: to decrease · FR: diminuerDie Zahl der Beschäftigten nimmt ab.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Zahl",
+   "context": "abnehmen (nahm ab, abgenommen) — EN: to decrease · FR: diminuerDie Zahl der Beschäftigten nimmt ab.",
+   "en": "number",
+   "lemma": "die Zahl"
+  },
+  {
+   "form": "Beschäftigten",
+   "context": "abnehmen (nahm ab, abgenommen) — EN: to decrease · FR: diminuerDie Zahl der Beschäftigten nimmt ab.",
+   "en": "employees",
+   "lemma": "der/die Beschäftigte"
+  },
+  {
+   "form": "Trend",
+   "context": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht klar zum Homeoffice.",
+   "en": "trend",
+   "lemma": "der Trend"
+  },
+  {
+   "form": "trend",
+   "context": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht klar zum Homeoffice.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tendanceDer",
+   "context": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht klar zum Homeoffice.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Homeoffice",
+   "context": "der Trend, -s — EN: trend · FR: la tendanceDer Trend geht klar zum Homeoffice.",
+   "en": "working from home",
+   "lemma": "das Homeoffice"
+  },
+  {
+   "form": "erwarten",
+   "context": "Es ist zu erwarten, dass …",
+   "en": "expect",
+   "lemma": ""
+  },
+  {
+   "form": "abschwächen",
+   "context": "Vermutungen abschwächen",
+   "en": "to soften, weaken",
+   "lemma": ""
+  },
+  {
+   "form": "dauern",
+   "context": "Das wird wohl noch etwas dauern.",
+   "en": "take (time), last",
+   "lemma": ""
+  },
+  {
+   "form": "Möglicherweise",
+   "context": "Möglicherweise wird sich das ändern.",
+   "en": "possibly",
+   "lemma": ""
+  },
+  {
+   "form": "kümmern",
+   "context": "Ich werde mich darum kümmern.",
+   "en": "take care (of)",
+   "lemma": "sich kümmern"
+  },
+  {
+   "form": "Künstliche",
+   "context": "Künstliche Intelligenz verändert die Arbeitswelt.",
+   "en": "artificial",
+   "lemma": "künstlich"
+  },
+  {
+   "form": "Vermutlich",
+   "context": "Vermutlich wird das teurer als geplant.",
+   "en": "presumably, probably",
+   "lemma": ""
+  },
+  {
+   "form": "geplantes",
+   "context": "Welcher Satz drückt ein sicheres, geplantes Ereignis aus?",
+   "en": "planned",
+   "lemma": "geplant"
+  },
+  {
+   "form": "verspreche",
+   "context": "Ich verspreche dir: Ich ___ dich morgen ___. (anrufen, Futur I)",
+   "en": "promise",
+   "lemma": "versprechen"
+  },
+  {
+   "form": "Besprechung",
+   "context": "Sie ist nicht am Platz. Sie ___ wohl in einer Besprechung sein.",
+   "en": "meeting",
+   "lemma": "die Besprechung"
+  },
+  {
+   "form": "Mieten",
+   "context": "Die Mieten ___ in den nächsten Jahren weiter ___. (steigen, Futur I)",
+   "en": "rents",
+   "lemma": "die Miete"
+  }
+ ]
+}
