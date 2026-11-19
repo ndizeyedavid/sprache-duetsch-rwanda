@@ -1,0 +1,747 @@
+{
+ "level": "A2",
+ "lesson": 21,
+ "title": "Staat und Verwaltung — Ja genau, den meine ich",
+ "lines": [
+  {
+   "de": "Dokumente benennen, nach etwas fragen und auf etwas zeigen.",
+   "en": "Name documents, ask about something and point to something."
+  },
+  {
+   "de": "Textsorte: Flyer · Gespräch im Amt",
+   "en": "Text type: Flyer · Conversation at a public office"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Hören Teil 1; ÖSD A2",
+   "en": "Exam link: Goethe A2 Listening part 1; ÖSD A2"
+  },
+  {
+   "de": "Dokumente und Formulare benennen",
+   "en": "name documents and forms"
+  },
+  {
+   "de": "mit welch- genau nachfragen",
+   "en": "ask precisely with welch-"
+  },
+  {
+   "de": "mit Demonstrativpronomen auf etwas zeigen",
+   "en": "point to something with demonstrative pronouns (Demonstrativpronomen)"
+  },
+  {
+   "de": "Grammatik: Frageartikel welch-",
+   "en": "Grammar: The interrogative article (Frageartikel) welch-"
+  },
+  {
+   "de": "Mit welch- fragt man nach einer bestimmten Sache aus einer Gruppe. Die Endungen sind dieselben wie beim bestimmten Artikel.",
+   "en": "With welch- you ask about a particular thing from a group. The endings are the same as for the definite article."
+  },
+  {
+   "de": "welcher Ausweis?",
+   "en": "which ID card?"
+  },
+  {
+   "de": "welches Formular?",
+   "en": "which form?"
+  },
+  {
+   "de": "welche Karte?",
+   "en": "which card?"
+  },
+  {
+   "de": "welche Papiere?",
+   "en": "which papers?"
+  },
+  {
+   "de": "welchen Ausweis?",
+   "en": "which ID card?"
+  },
+  {
+   "de": "welchem Ausweis?",
+   "en": "which ID card?"
+  },
+  {
+   "de": "welchem Formular?",
+   "en": "which form?"
+  },
+  {
+   "de": "welcher Karte?",
+   "en": "which card?"
+  },
+  {
+   "de": "welchen Papieren?",
+   "en": "which papers?"
+  },
+  {
+   "de": "Welches Formular brauche ich?Akkusativ neutrum",
+   "en": "Which form do I need? — accusative neuter"
+  },
+  {
+   "de": "Welchen Ausweis meinen Sie?Akkusativ maskulin",
+   "en": "Which ID card do you mean? — accusative masculine"
+  },
+  {
+   "de": "Tipp: welch- fragt nach einer Auswahl, was für ein- fragt nach der Art oder Eigenschaft.",
+   "en": "Tip: welch- asks about a choice, was für ein- asks about the kind or quality."
+  },
+  {
+   "de": "Grammatik: Demonstrativpronomen: der, das, die / dies-",
+   "en": "Grammar: Demonstrative pronouns (Demonstrativpronomen): der, das, die / dies-"
+  },
+  {
+   "de": "Wenn man auf etwas zeigt oder etwas schon genannt wurde, ersetzt man das Nomen durch der, das, die — betont gesprochen. dies- benutzt man für etwas Näheres oder Genaueres.",
+   "en": "When you point to something or something has already been mentioned, you replace the noun with der, das, die — spoken with stress. You use dies- for something closer or more specific."
+  },
+  {
+   "de": "der / dieser",
+   "en": "that one / this one"
+  },
+  {
+   "de": "das / dieses",
+   "en": "that one / this one"
+  },
+  {
+   "de": "die / diese",
+   "en": "that one / this one; those / these"
+  },
+  {
+   "de": "den / diesen",
+   "en": "that one / this one"
+  },
+  {
+   "de": "Den meine ich.",
+   "en": "I mean that one."
+  },
+  {
+   "de": "Das brauche ich nicht.",
+   "en": "I don't need that one."
+  },
+  {
+   "de": "Die ist richtig.",
+   "en": "That one is right."
+  },
+  {
+   "de": "Die sind fertig.",
+   "en": "Those are ready."
+  },
+  {
+   "de": "Welchen Antrag meinen Sie? — Ja genau, den meine ich.den = diesen Antrag, betont am Satzanfang",
+   "en": "Which application do you mean? — Yes, exactly, I mean that one. — den = diesen Antrag, stressed at the start of the sentence"
+  },
+  {
+   "de": "Dieses Formular müssen Sie ausfüllen, das andere nicht.dies- für Genaueres",
+   "en": "You have to fill in this form, not the other one. — dies- for something more specific"
+  },
+  {
+   "de": "Tipp: Im Gespräch steht das Demonstrativpronomen oft am Satzanfang: „Den kenne ich.\" „Die brauche ich nicht.\"",
+   "en": "Tip: In conversation, the demonstrative pronoun often comes at the start of the sentence: “Den kenne ich.” “Die brauche ich nicht.”"
+  },
+  {
+   "de": "das Amt, ¨-er — EN: public office · FR: l'administrationIch muss morgen aufs Amt.",
+   "en": "Example: I have to go to the public office tomorrow."
+  },
+  {
+   "de": "der Ausweis, -e — EN: ID card · FR: la carte d'identitéHaben Sie Ihren Ausweis dabei?",
+   "en": "Example: Do you have your ID card with you?"
+  },
+  {
+   "de": "der Antrag, ¨-e — EN: application (form) · FR: la demandeDer Antrag muss unterschrieben werden.",
+   "en": "Example: The application must be signed."
+  },
+  {
+   "de": "das Formular, -e — EN: form · FR: le formulaireWelches Formular brauche ich?",
+   "en": "Example: Which form do I need?"
+  },
+  {
+   "de": "ausfüllen — EN: to fill in · FR: remplirBitte füllen Sie das Formular aus.",
+   "en": "Example: Please fill in the form."
+  },
+  {
+   "de": "unterschreiben (unterschrieb) — EN: to sign · FR: signerUnterschreiben Sie bitte hier unten.",
+   "en": "Example: Please sign down here."
+  },
+  {
+   "de": "die Unterlagen (Pl.) — EN: documents · FR: les documentsBringen Sie alle Unterlagen mit.",
+   "en": "Example: Bring all your documents with you."
+  },
+  {
+   "de": "die Bescheinigung, -en — EN: certificate, confirmation · FR: l'attestationIch brauche eine Bescheinigung vom Arbeitgeber.",
+   "en": "Example: I need a certificate from my employer."
+  },
+  {
+   "de": "die Anmeldung (Sg.) — EN: registration · FR: l'inscriptionDie Anmeldung dauert nur zehn Minuten.",
+   "en": "Example: Registration only takes ten minutes."
+  },
+  {
+   "de": "der Termin, -e — EN: appointment · FR: le rendez-vousHaben Sie einen Termin?",
+   "en": "Example: Do you have an appointment?"
+  },
+  {
+   "de": "die Gebühr, -en — EN: fee · FR: les fraisDie Gebühr beträgt 25 Euro.",
+   "en": "Example: The fee is 25 euros."
+  },
+  {
+   "de": "gültig — EN: valid · FR: valableMein Pass ist nur noch drei Monate gültig.",
+   "en": "Example: My passport is only valid for three more months."
+  },
+  {
+   "de": "um eine Beschreibung bitten",
+   "en": "Asking for a description"
+  },
+  {
+   "de": "Können Sie mir sagen, welches Formular ich brauche?",
+   "en": "Can you tell me which form I need?"
+  },
+  {
+   "de": "Was muss ich genau mitbringen?",
+   "en": "What exactly do I have to bring?"
+  },
+  {
+   "de": "Wie funktioniert das?",
+   "en": "How does that work?"
+  },
+  {
+   "de": "etwas genau benennen",
+   "en": "Naming something precisely"
+  },
+  {
+   "de": "Welchen Antrag meinen Sie? — Den hier.",
+   "en": "Which application do you mean? — This one here."
+  },
+  {
+   "de": "Ja genau, den meine ich.",
+   "en": "Yes, exactly, I mean that one."
+  },
+  {
+   "de": "Nein, dieses Formular ist es nicht.",
+   "en": "No, it's not this form."
+  },
+  {
+   "de": "etwas berichten",
+   "en": "Reporting something"
+  },
+  {
+   "de": "Zuerst habe ich einen Termin gemacht.",
+   "en": "First I made an appointment."
+  },
+  {
+   "de": "Danach musste ich ein Formular ausfüllen.",
+   "en": "After that I had to fill in a form."
+  },
+  {
+   "de": "Am Ende hat alles nur zehn Minuten gedauert.",
+   "en": "In the end, everything only took ten minutes."
+  },
+  {
+   "de": "Dialog: Im Bürgerbüro",
+   "en": "Dialogue: At the citizens' office"
+  },
+  {
+   "de": "Mitarbeiter: Guten Tag. Was kann ich für Sie tun?",
+   "en": "Clerk: Hello. What can I do for you?"
+  },
+  {
+   "de": "Lara: Ich möchte mich anmelden. Welches Formular brauche ich?",
+   "en": "Lara: I would like to register. Which form do I need?"
+  },
+  {
+   "de": "Mitarbeiter: Dieses hier. Und Ihren Ausweis brauche ich auch.",
+   "en": "Clerk: This one here. And I also need your ID card."
+  },
+  {
+   "de": "Lara: Meinen Pass oder den Personalausweis?",
+   "en": "Lara: My passport or my identity card?"
+  },
+  {
+   "de": "Mitarbeiter: Den Personalausweis.",
+   "en": "Clerk: The identity card."
+  },
+  {
+   "de": "Lara: Ja genau, den meine ich. Muss ich hier unten unterschreiben?",
+   "en": "Lara: Yes, exactly, that's the one I mean. Do I have to sign down here?"
+  },
+  {
+   "de": "Ich muss morgen aufs Amt.",
+   "en": "I have to go to the public office tomorrow."
+  },
+  {
+   "de": "Haben Sie Ihren Ausweis dabei?",
+   "en": "Do you have your ID card with you?"
+  },
+  {
+   "de": "Der Antrag muss unterschrieben werden.",
+   "en": "The application must be signed."
+  },
+  {
+   "de": "Welches Formular brauche ich?",
+   "en": "Which form do I need?"
+  },
+  {
+   "de": "Bitte füllen Sie das Formular aus.",
+   "en": "Please fill in the form."
+  },
+  {
+   "de": "Unterschreiben Sie bitte hier unten.",
+   "en": "Please sign down here."
+  },
+  {
+   "de": "Bringen Sie alle Unterlagen mit.",
+   "en": "Bring all your documents with you."
+  },
+  {
+   "de": "Ich brauche eine Bescheinigung vom Arbeitgeber.",
+   "en": "I need a certificate from my employer."
+  },
+  {
+   "de": "Die Anmeldung dauert nur zehn Minuten.",
+   "en": "Registration only takes ten minutes."
+  },
+  {
+   "de": "Haben Sie einen Termin?",
+   "en": "Do you have an appointment?"
+  },
+  {
+   "de": "Die Gebühr beträgt 25 Euro.",
+   "en": "The fee is 25 euros."
+  },
+  {
+   "de": "Mein Pass ist nur noch drei Monate gültig.",
+   "en": "My passport is only valid for three more months."
+  },
+  {
+   "de": "___ Formular brauche ich? (welch-, neutrum)",
+   "en": "___ form do I need? (welch-, neuter)"
+  },
+  {
+   "de": "___ Ausweis meinen Sie?",
+   "en": "___ ID card do you mean?"
+  },
+  {
+   "de": "Ja genau, ___ meine ich. (der Antrag → Demonstrativpronomen, Akkusativ)",
+   "en": "Yes, exactly, I mean ___. (der Antrag → demonstrative pronoun, accusative)"
+  },
+  {
+   "de": "___ Formular müssen Sie ausfüllen, das andere nicht.",
+   "en": "You have to fill in ___ form, not the other one."
+  },
+  {
+   "de": "Bitte ___ Sie das Formular ___. (ausfüllen, Imperativ Sie-Form)",
+   "en": "Please ___ the form ___. (ausfüllen, imperative Sie form)"
+  },
+  {
+   "de": "Berichten Sie kurz von einem Termin bei einer Behörde: Was mussten Sie tun und mitbringen? Umfang: 50–70 Wörter Checkliste: • Nennen Sie drei Schritte in der richtigen Reihenfolge. • Benutzen Sie einmal welch- und einmal ein Demonstrativpronomen. • Schreiben Sie, wie lange es gedauert hat.",
+   "en": "Report briefly on an appointment at a public authority: What did you have to do and bring? Length: 50–70 words Checklist: • Name three steps in the right order. • Use welch- once and a demonstrative pronoun once. • Write how long it took."
+  },
+  {
+   "de": "das Formular ist neutrum → welches.",
+   "en": "das Formular is neuter → welches."
+  },
+  {
+   "de": "Akkusativ maskulin: welchen Ausweis.",
+   "en": "Accusative masculine: welchen Ausweis."
+  },
+  {
+   "de": "Akkusativ maskulin: den, betont am Satzanfang.",
+   "en": "Accusative masculine: den, stressed at the start of the sentence."
+  },
+  {
+   "de": "das Formular ist neutrum → dieses.",
+   "en": "das Formular is neuter → dieses."
+  },
+  {
+   "de": "Trennbares Verb im Imperativ: Füllen Sie … aus.",
+   "en": "Separable verb in the imperative: Füllen Sie … aus."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Dokumente",
+   "context": "Dokumente benennen, nach etwas fragen und auf etwas zeigen.",
+   "en": "documents",
+   "lemma": "das Dokument"
+  },
+  {
+   "form": "Flyer",
+   "context": "Textsorte: Flyer · Gespräch im Amt",
+   "en": "flyer",
+   "lemma": "der Flyer"
+  },
+  {
+   "form": "Amt",
+   "context": "Textsorte: Flyer · Gespräch im Amt",
+   "en": "public office, authority",
+   "lemma": "das Amt"
+  },
+  {
+   "form": "welch",
+   "context": "mit welch- genau nachfragen",
+   "en": "which (welch-)",
+   "lemma": ""
+  },
+  {
+   "form": "Demonstrativpronomen",
+   "context": "mit Demonstrativpronomen auf etwas zeigen",
+   "en": "demonstrative pronoun",
+   "lemma": "das Demonstrativpronomen"
+  },
+  {
+   "form": "Frageartikel",
+   "context": "Grammatik: Frageartikel welch-",
+   "en": "interrogative article",
+   "lemma": "der Frageartikel"
+  },
+  {
+   "form": "Ausweis",
+   "context": "welcher Ausweis?",
+   "en": "ID card",
+   "lemma": "der Ausweis"
+  },
+  {
+   "form": "Papiere",
+   "context": "welche Papiere?",
+   "en": "papers, documents",
+   "lemma": "das Papier"
+  },
+  {
+   "form": "Papieren",
+   "context": "welchen Papieren?",
+   "en": "papers, documents",
+   "lemma": "das Papier"
+  },
+  {
+   "form": "Auswahl",
+   "context": "Tipp: welch- fragt nach einer Auswahl, was für ein- fragt nach der Art oder Eigenschaft.",
+   "en": "choice, selection",
+   "lemma": "die Auswahl"
+  },
+  {
+   "form": "Art",
+   "context": "Tipp: welch- fragt nach einer Auswahl, was für ein- fragt nach der Art oder Eigenschaft.",
+   "en": "kind, type; way",
+   "lemma": "die Art"
+  },
+  {
+   "form": "Eigenschaft",
+   "context": "Tipp: welch- fragt nach einer Auswahl, was für ein- fragt nach der Art oder Eigenschaft.",
+   "en": "quality, characteristic",
+   "lemma": "die Eigenschaft"
+  },
+  {
+   "form": "dies",
+   "context": "Grammatik: Demonstrativpronomen: der, das, die / dies-",
+   "en": "this (dies-)",
+   "lemma": ""
+  },
+  {
+   "form": "genannt",
+   "context": "Wenn man auf etwas zeigt oder etwas schon genannt wurde, ersetzt man das Nomen durch der, das, die — betont gesprochen. dies- benutzt man für etwas Näheres oder Genaueres.",
+   "en": "mentioned, named",
+   "lemma": "nennen"
+  },
+  {
+   "form": "wurde",
+   "context": "Wenn man auf etwas zeigt oder etwas schon genannt wurde, ersetzt man das Nomen durch der, das, die — betont gesprochen. dies- benutzt man für etwas Näheres oder Genaueres.",
+   "en": "was (passive); became",
+   "lemma": "werden"
+  },
+  {
+   "form": "gesprochen",
+   "context": "Wenn man auf etwas zeigt oder etwas schon genannt wurde, ersetzt man das Nomen durch der, das, die — betont gesprochen. dies- benutzt man für etwas Näheres oder Genaueres.",
+   "en": "spoken",
+   "lemma": "sprechen"
+  },
+  {
+   "form": "Näheres",
+   "context": "Wenn man auf etwas zeigt oder etwas schon genannt wurde, ersetzt man das Nomen durch der, das, die — betont gesprochen. dies- benutzt man für etwas Näheres oder Genaueres.",
+   "en": "something closer",
+   "lemma": "nah"
+  },
+  {
+   "form": "Genaueres",
+   "context": "Wenn man auf etwas zeigt oder etwas schon genannt wurde, ersetzt man das Nomen durch der, das, die — betont gesprochen. dies- benutzt man für etwas Näheres oder Genaueres.",
+   "en": "something more specific",
+   "lemma": "genau"
+  },
+  {
+   "form": "Antrag",
+   "context": "Welchen Antrag meinen Sie? — Ja genau, den meine ich.den = diesen Antrag, betont am Satzanfang",
+   "en": "application (form)",
+   "lemma": "der Antrag"
+  },
+  {
+   "form": "Satzanfang",
+   "context": "Welchen Antrag meinen Sie? — Ja genau, den meine ich.den = diesen Antrag, betont am Satzanfang",
+   "en": "start of the sentence",
+   "lemma": "der Satzanfang"
+  },
+  {
+   "form": "ausfüllen",
+   "context": "Dieses Formular müssen Sie ausfüllen, das andere nicht.dies- für Genaueres",
+   "en": "to fill in",
+   "lemma": ""
+  },
+  {
+   "form": "kenne",
+   "context": "Tipp: Im Gespräch steht das Demonstrativpronomen oft am Satzanfang: „Den kenne ich.\" „Die brauche ich nicht.\"",
+   "en": "know",
+   "lemma": "kennen"
+  },
+  {
+   "form": "public",
+   "context": "das Amt, ¨-er — EN: public office · FR: l'administrationIch muss morgen aufs Amt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'administrationIch",
+   "context": "das Amt, ¨-er — EN: public office · FR: l'administrationIch muss morgen aufs Amt.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "aufs",
+   "context": "das Amt, ¨-er — EN: public office · FR: l'administrationIch muss morgen aufs Amt.",
+   "en": "to the (auf + das)",
+   "lemma": ""
+  },
+  {
+   "form": "ID",
+   "context": "der Ausweis, -e — EN: ID card · FR: la carte d'identitéHaben Sie Ihren Ausweis dabei?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "card",
+   "context": "der Ausweis, -e — EN: ID card · FR: la carte d'identitéHaben Sie Ihren Ausweis dabei?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "carte",
+   "context": "der Ausweis, -e — EN: ID card · FR: la carte d'identitéHaben Sie Ihren Ausweis dabei?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'identitéHaben",
+   "context": "der Ausweis, -e — EN: ID card · FR: la carte d'identitéHaben Sie Ihren Ausweis dabei?",
+   "en": "Haben = have",
+   "lemma": "haben"
+  },
+  {
+   "form": "application",
+   "context": "der Antrag, ¨-e — EN: application (form) · FR: la demandeDer Antrag muss unterschrieben werden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "demandeDer",
+   "context": "der Antrag, ¨-e — EN: application (form) · FR: la demandeDer Antrag muss unterschrieben werden.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "unterschrieben",
+   "context": "der Antrag, ¨-e — EN: application (form) · FR: la demandeDer Antrag muss unterschrieben werden.",
+   "en": "signed",
+   "lemma": "unterschreiben"
+  },
+  {
+   "form": "formulaireWelches",
+   "context": "das Formular, -e — EN: form · FR: le formulaireWelches Formular brauche ich?",
+   "en": "Welches = which",
+   "lemma": ""
+  },
+  {
+   "form": "fill",
+   "context": "ausfüllen — EN: to fill in · FR: remplirBitte füllen Sie das Formular aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "remplirBitte",
+   "context": "ausfüllen — EN: to fill in · FR: remplirBitte füllen Sie das Formular aus.",
+   "en": "Bitte = please",
+   "lemma": ""
+  },
+  {
+   "form": "unterschreiben",
+   "context": "unterschreiben (unterschrieb) — EN: to sign · FR: signerUnterschreiben Sie bitte hier unten.",
+   "en": "to sign",
+   "lemma": ""
+  },
+  {
+   "form": "unterschrieb",
+   "context": "unterschreiben (unterschrieb) — EN: to sign · FR: signerUnterschreiben Sie bitte hier unten.",
+   "en": "signed",
+   "lemma": "unterschreiben"
+  },
+  {
+   "form": "signerUnterschreiben",
+   "context": "unterschreiben (unterschrieb) — EN: to sign · FR: signerUnterschreiben Sie bitte hier unten.",
+   "en": "Unterschreiben = sign",
+   "lemma": "unterschreiben"
+  },
+  {
+   "form": "unten",
+   "context": "unterschreiben (unterschrieb) — EN: to sign · FR: signerUnterschreiben Sie bitte hier unten.",
+   "en": "down, below",
+   "lemma": ""
+  },
+  {
+   "form": "Unterlagen",
+   "context": "die Unterlagen (Pl.) — EN: documents · FR: les documentsBringen Sie alle Unterlagen mit.",
+   "en": "documents",
+   "lemma": "die Unterlagen"
+  },
+  {
+   "form": "documents",
+   "context": "die Unterlagen (Pl.) — EN: documents · FR: les documentsBringen Sie alle Unterlagen mit.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "documentsBringen",
+   "context": "die Unterlagen (Pl.) — EN: documents · FR: les documentsBringen Sie alle Unterlagen mit.",
+   "en": "Bringen … mit = bring along",
+   "lemma": "bringen"
+  },
+  {
+   "form": "Bescheinigung",
+   "context": "die Bescheinigung, -en — EN: certificate, confirmation · FR: l'attestationIch brauche eine Bescheinigung vom Arbeitgeber.",
+   "en": "certificate, confirmation",
+   "lemma": "die Bescheinigung"
+  },
+  {
+   "form": "certificate",
+   "context": "die Bescheinigung, -en — EN: certificate, confirmation · FR: l'attestationIch brauche eine Bescheinigung vom Arbeitgeber.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "confirmation",
+   "context": "die Bescheinigung, -en — EN: certificate, confirmation · FR: l'attestationIch brauche eine Bescheinigung vom Arbeitgeber.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'attestationIch",
+   "context": "die Bescheinigung, -en — EN: certificate, confirmation · FR: l'attestationIch brauche eine Bescheinigung vom Arbeitgeber.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "Arbeitgeber",
+   "context": "die Bescheinigung, -en — EN: certificate, confirmation · FR: l'attestationIch brauche eine Bescheinigung vom Arbeitgeber.",
+   "en": "employer",
+   "lemma": "der Arbeitgeber"
+  },
+  {
+   "form": "l'inscriptionDie",
+   "context": "die Anmeldung (Sg.) — EN: registration · FR: l'inscriptionDie Anmeldung dauert nur zehn Minuten.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "rendez-vousHaben",
+   "context": "der Termin, -e — EN: appointment · FR: le rendez-vousHaben Sie einen Termin?",
+   "en": "Haben = have",
+   "lemma": "haben"
+  },
+  {
+   "form": "Gebühr",
+   "context": "die Gebühr, -en — EN: fee · FR: les fraisDie Gebühr beträgt 25 Euro.",
+   "en": "fee",
+   "lemma": "die Gebühr"
+  },
+  {
+   "form": "fee",
+   "context": "die Gebühr, -en — EN: fee · FR: les fraisDie Gebühr beträgt 25 Euro.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fraisDie",
+   "context": "die Gebühr, -en — EN: fee · FR: les fraisDie Gebühr beträgt 25 Euro.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "beträgt",
+   "context": "die Gebühr, -en — EN: fee · FR: les fraisDie Gebühr beträgt 25 Euro.",
+   "en": "is, amounts to",
+   "lemma": "betragen"
+  },
+  {
+   "form": "gültig",
+   "context": "gültig — EN: valid · FR: valableMein Pass ist nur noch drei Monate gültig.",
+   "en": "valid",
+   "lemma": ""
+  },
+  {
+   "form": "valid",
+   "context": "gültig — EN: valid · FR: valableMein Pass ist nur noch drei Monate gültig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "valableMein",
+   "context": "gültig — EN: valid · FR: valableMein Pass ist nur noch drei Monate gültig.",
+   "en": "Mein = my",
+   "lemma": ""
+  },
+  {
+   "form": "Beschreibung",
+   "context": "um eine Beschreibung bitten",
+   "en": "description",
+   "lemma": "die Beschreibung"
+  },
+  {
+   "form": "gedauert",
+   "context": "Am Ende hat alles nur zehn Minuten gedauert.",
+   "en": "lasted, taken (time)",
+   "lemma": "dauern"
+  },
+  {
+   "form": "Bürgerbüro",
+   "context": "Dialog: Im Bürgerbüro",
+   "en": "citizens' office",
+   "lemma": "das Bürgerbüro"
+  },
+  {
+   "form": "tun",
+   "context": "Mitarbeiter: Guten Tag. Was kann ich für Sie tun?",
+   "en": "to do",
+   "lemma": ""
+  },
+  {
+   "form": "Lara",
+   "context": "Lara: Ich möchte mich anmelden. Welches Formular brauche ich?",
+   "en": "Lara (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Personalausweis",
+   "context": "Lara: Meinen Pass oder den Personalausweis?",
+   "en": "identity card",
+   "lemma": "der Personalausweis"
+  },
+  {
+   "form": "Unterschreiben",
+   "context": "Unterschreiben Sie bitte hier unten.",
+   "en": "sign",
+   "lemma": "unterschreiben"
+  },
+  {
+   "form": "Sie-Form",
+   "context": "Bitte ___ Sie das Formular ___. (ausfüllen, Imperativ Sie-Form)",
+   "en": "Sie form (polite form)",
+   "lemma": "die Sie-Form"
+  },
+  {
+   "form": "Behörde",
+   "context": "Berichten Sie kurz von einem Termin bei einer Behörde: Was mussten Sie tun und mitbringen? Umfang: 50–70 Wörter Checkliste: • Nennen Sie drei Schritte in der richtigen Reihenfolge. • Benutzen Sie einmal welch- und einmal ein Demonstrativpronomen. • Schreiben Sie, wie lange es gedauert hat.",
+   "en": "public authority",
+   "lemma": "die Behörde"
+  }
+ ]
+}
