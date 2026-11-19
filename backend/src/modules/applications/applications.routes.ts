@@ -5,7 +5,9 @@ import { ADMIN_ROLES } from "../../lib/roles.js";
 import { requireAuth } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/rbac.js";
 import { validate } from "../../middleware/validate.js";
+import { admitApplicationSchema } from "./admit-application.js";
 import * as controller from "./applications.controller.js";
+import { bulkTransitionSchema } from "./bulk-transition.js";
 import {
 applicationIdSchema,
 createApplicationSchema,
@@ -35,9 +37,12 @@ staff.use(requireAuth, requireRole(...ADMIN_ROLES));
 staff.get("/", validate({ query: listApplicationsQuerySchema }), asyncHandler(controller.list));
 staff.get("/summary", validate({ query: listApplicationsQuerySchema }), asyncHandler(controller.summary));
 staff.get("/waitlist", validate({ query: waitlistQuerySchema }), asyncHandler(controller.waitlist));
+staff.get("/export", validate({ query: listApplicationsQuerySchema }), asyncHandler(controller.exportCsv));
+staff.post("/bulk-status", validate({ body: bulkTransitionSchema }), asyncHandler(controller.bulkStatus));
 staff.get("/:id", validate({ params: applicationIdSchema }), asyncHandler(controller.get));
 staff.patch("/:id", validate({ params: applicationIdSchema, body: updateApplicationSchema }), asyncHandler(controller.update));
 staff.post("/:id/status", validate({ params: applicationIdSchema, body: transitionApplicationSchema }), asyncHandler(controller.transition));
 staff.post("/:id/student", validate({ params: applicationIdSchema, body: createStudentFromApplicationSchema }), asyncHandler(controller.createStudent));
+staff.post("/:id/admit", validate({ params: applicationIdSchema, body: admitApplicationSchema }), asyncHandler(controller.admit));
 
 applicationsRouter.use(staff);
