@@ -1,0 +1,653 @@
+{
+ "level": "A2",
+ "lesson": 11,
+ "title": "Firmenporträt — Ich freue mich so!",
+ "lines": [
+  {
+   "de": "Gratulieren, sich bedanken und über Gefühle sprechen.",
+   "en": "Congratulate, say thank you and talk about feelings."
+  },
+  {
+   "de": "Textsorte: Zeitungsartikel · Interview",
+   "en": "Text type: Newspaper article · Interview"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Schreiben Teil 2 (persönliche Mitteilung); ÖSD A2 Schreiben",
+   "en": "Exam link: Goethe A2 Writing part 2 (personal message); ÖSD A2 Writing"
+  },
+  {
+   "de": "gratulieren und sich bedanken",
+   "en": "congratulate and say thank you"
+  },
+  {
+   "de": "über Gefühle sprechen",
+   "en": "talk about feelings"
+  },
+  {
+   "de": "reflexive Verben richtig verwenden",
+   "en": "use reflexive verbs correctly"
+  },
+  {
+   "de": "Grammatik: Reflexive Verben",
+   "en": "Grammar: reflexive verbs (reflexive Verben)"
+  },
+  {
+   "de": "Bei reflexiven Verben zeigt das Reflexivpronomen zurück auf das Subjekt. Die Formen sind fast wie beim Akkusativpronomen — nur in der 3. Person heißt es immer sich.",
+   "en": "With reflexive verbs, the reflexive pronoun (Reflexivpronomen) refers back to the subject. The forms are almost the same as the accusative pronouns — only in the 3rd person is it always sich."
+  },
+  {
+   "de": "Reflexivpronomen",
+   "en": "Reflexive pronoun"
+  },
+  {
+   "de": "Ich freue mich sehr.",
+   "en": "I'm very happy."
+  },
+  {
+   "de": "Freust du dich auch?",
+   "en": "Are you happy too?"
+  },
+  {
+   "de": "sich",
+   "en": "himself, herself, itself, themselves"
+  },
+  {
+   "de": "Sie freut sich über das Geschenk.",
+   "en": "She is happy about the present."
+  },
+  {
+   "de": "Wir bedanken uns herzlich.",
+   "en": "We say a warm thank you."
+  },
+  {
+   "de": "Ihr habt euch gut vorbereitet.",
+   "en": "You have prepared well."
+  },
+  {
+   "de": "Sie interessieren sich für die Firma.",
+   "en": "They are interested in the company."
+  },
+  {
+   "de": "Ich freue mich so über die Einladung!sich freuen über + Akkusativ",
+   "en": "I'm so happy about the invitation! sich freuen über + accusative"
+  },
+  {
+   "de": "Wir bedanken uns ganz herzlich bei Ihnen.sich bedanken bei + Dativ",
+   "en": "We thank you very warmly. sich bedanken bei + dative"
+  },
+  {
+   "de": "Hast du dich schon angemeldet?im Perfekt steht das Pronomen nach dem Hilfsverb",
+   "en": "Have you registered yet? In the present perfect, the pronoun goes after the auxiliary verb"
+  },
+  {
+   "de": "Tipp: Wichtige reflexive Verben für A2: sich freuen, sich bedanken, sich ärgern, sich interessieren, sich treffen, sich anmelden, sich beeilen, sich erholen, sich vorstellen.",
+   "en": "Tip: Important reflexive verbs for A2: sich freuen (to be happy), sich bedanken (to say thank you), sich ärgern (to be annoyed), sich interessieren (to be interested), sich treffen (to meet), sich anmelden (to register), sich beeilen (to hurry), sich erholen (to relax), sich vorstellen (to introduce yourself)."
+  },
+  {
+   "de": "sich freuen über / auf — EN: to be happy about / look forward to · FR: se réjouir deIch freue mich sehr über deine Nachricht.",
+   "en": "Example: I'm very happy about your message."
+  },
+  {
+   "de": "sich bedanken bei — EN: to thank sb. · FR: remercier qn.Wir bedanken uns bei allen Mitarbeitern.",
+   "en": "Example: We thank all our employees."
+  },
+  {
+   "de": "gratulieren (+ Dat.) — EN: to congratulate · FR: féliciterIch gratuliere dir zum neuen Job!",
+   "en": "Example: Congratulations on your new job!"
+  },
+  {
+   "de": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "Example: The company is celebrating its 50th anniversary."
+  },
+  {
+   "de": "feiern — EN: to celebrate · FR: fêterWir feiern das am Freitag.",
+   "en": "Example: We're celebrating it on Friday."
+  },
+  {
+   "de": "das Geschenk, -e — EN: present · FR: le cadeauVielen Dank für das schöne Geschenk!",
+   "en": "Example: Thank you very much for the lovely present!"
+  },
+  {
+   "de": "stolz — EN: proud · FR: fierWir sind alle sehr stolz.",
+   "en": "Example: We are all very proud."
+  },
+  {
+   "de": "sich ärgern über — EN: to be annoyed about · FR: s'énerver à propos deÄrgere dich nicht darüber!",
+   "en": "Example: Don't get annoyed about it!"
+  },
+  {
+   "de": "herzlich — EN: warm, sincere · FR: cordialHerzlichen Glückwunsch!",
+   "en": "Example: Congratulations!"
+  },
+  {
+   "de": "die Rede, -n — EN: speech · FR: le discoursDer Chef hält eine kurze Rede.",
+   "en": "Example: The boss is giving a short speech."
+  },
+  {
+   "de": "der Erfolg, -e — EN: success · FR: le succèsDas war ein großer Erfolg für uns.",
+   "en": "Example: That was a great success for us."
+  },
+  {
+   "de": "sich freuen, dass … — EN: to be glad that … · FR: être content que …Ich freue mich, dass du kommst.",
+   "en": "Example: I'm glad that you're coming."
+  },
+  {
+   "de": "Herzlichen Glückwunsch zum …!",
+   "en": "Congratulations on the …!"
+  },
+  {
+   "de": "Ich gratuliere dir ganz herzlich!",
+   "en": "Warmest congratulations!"
+  },
+  {
+   "de": "Alles Gute für die Zukunft!",
+   "en": "All the best for the future!"
+  },
+  {
+   "de": "Vielen Dank für …",
+   "en": "Thank you very much for …"
+  },
+  {
+   "de": "Das ist wirklich sehr nett von Ihnen.",
+   "en": "That's really very kind of you."
+  },
+  {
+   "de": "Wir bedanken uns ganz herzlich.",
+   "en": "We say a very warm thank you."
+  },
+  {
+   "de": "Gefühle ausdrücken",
+   "en": "expressing feelings"
+  },
+  {
+   "de": "Ich freue mich so!",
+   "en": "I'm so happy!"
+  },
+  {
+   "de": "Darüber habe ich mich sehr gefreut.",
+   "en": "I was very happy about that."
+  },
+  {
+   "de": "Ich bin richtig stolz.",
+   "en": "I'm really proud."
+  },
+  {
+   "de": "Dialog: Beim Firmenjubiläum",
+   "en": "Dialogue: At the company anniversary"
+  },
+  {
+   "de": "Frau Ott: Herzlichen Glückwunsch zum Jubiläum! Fünfzig Jahre — das ist toll.",
+   "en": "Ms Ott: Congratulations on the anniversary! Fifty years — that's great."
+  },
+  {
+   "de": "Herr Said: Vielen Dank! Ich freue mich so, dass Sie gekommen sind.",
+   "en": "Mr Said: Thank you very much! I'm so happy that you came."
+  },
+  {
+   "de": "Frau Ott: Sehr gern. Und das Fest ist wirklich schön geworden.",
+   "en": "Ms Ott: My pleasure. And the party has turned out really nice."
+  },
+  {
+   "de": "Herr Said: Wir bedanken uns vor allem bei unseren Mitarbeitern.",
+   "en": "Mr Said: Above all, we thank our employees."
+  },
+  {
+   "de": "Frau Ott: Das kann ich verstehen. Sie können stolz sein.",
+   "en": "Ms Ott: I can understand that. You can be proud."
+  },
+  {
+   "de": "Herr Said: Das sind wir auch. Kommen Sie, ich stelle Ihnen das Team vor.",
+   "en": "Mr Said: And we are. Come, I'll introduce you to the team."
+  },
+  {
+   "de": "Ich freue mich sehr über deine Nachricht.",
+   "en": "I'm very happy about your message."
+  },
+  {
+   "de": "Wir bedanken uns bei allen Mitarbeitern.",
+   "en": "We thank all our employees."
+  },
+  {
+   "de": "Ich gratuliere dir zum neuen Job!",
+   "en": "Congratulations on your new job!"
+  },
+  {
+   "de": "Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "The company is celebrating its 50th anniversary."
+  },
+  {
+   "de": "Wir feiern das am Freitag.",
+   "en": "We're celebrating it on Friday."
+  },
+  {
+   "de": "Vielen Dank für das schöne Geschenk!",
+   "en": "Thank you very much for the lovely present!"
+  },
+  {
+   "de": "Wir sind alle sehr stolz.",
+   "en": "We are all very proud."
+  },
+  {
+   "de": "Ärgere dich nicht darüber!",
+   "en": "Don't get annoyed about it!"
+  },
+  {
+   "de": "Herzlichen Glückwunsch!",
+   "en": "Congratulations!"
+  },
+  {
+   "de": "Der Chef hält eine kurze Rede.",
+   "en": "The boss is giving a short speech."
+  },
+  {
+   "de": "Das war ein großer Erfolg für uns.",
+   "en": "That was a great success for us."
+  },
+  {
+   "de": "Ich freue mich, dass du kommst.",
+   "en": "I'm glad that you're coming."
+  },
+  {
+   "de": "Ich freue ___ sehr über deine Nachricht.",
+   "en": "I am ___ very happy about your message."
+  },
+  {
+   "de": "Wir bedanken ___ herzlich.",
+   "en": "We ___ say a warm thank you."
+  },
+  {
+   "de": "Sie interessiert ___ für Technik. (3. Person Singular)",
+   "en": "She is interested ___ in technology. (3rd person singular)"
+  },
+  {
+   "de": "Ich gratuliere ___ zum neuen Job! (du, Dativ)",
+   "en": "I congratulate ___ on the new job! (du, dative)"
+  },
+  {
+   "de": "Schreiben Sie eine kurze Nachricht: Gratulieren Sie einer Freundin zu einer neuen Stelle. Umfang: 40–60 Wörter Checkliste: • Beginnen Sie mit einem Glückwunsch. • Benutzen Sie zweimal ein reflexives Verb (sich freuen, sich bedanken). • Schlagen Sie am Ende ein Treffen vor.",
+   "en": "Write a short message: congratulate a friend on her new job. Length: 40–60 words Checklist: • Begin with congratulations. • Use a reflexive verb twice (sich freuen, sich bedanken). • At the end, suggest meeting up."
+  },
+  {
+   "de": "1. Person Singular: mich.",
+   "en": "1st person singular: mich."
+  },
+  {
+   "de": "1. Person Plural: uns.",
+   "en": "1st person plural: uns."
+  },
+  {
+   "de": "In der 3. Person steht immer sich.",
+   "en": "In the 3rd person, it is always sich."
+  },
+  {
+   "de": "Das Reflexivpronomen steht direkt nach dem Subjekt.",
+   "en": "The reflexive pronoun comes directly after the subject."
+  },
+  {
+   "de": "gratulieren steht mit dem Dativ: Ich gratuliere dir.",
+   "en": "gratulieren takes the dative: Ich gratuliere dir. (I congratulate you.)"
+  }
+ ],
+ "forms": [
+  {
+   "form": "Gefühle",
+   "context": "Gratulieren, sich bedanken und über Gefühle sprechen.",
+   "en": "feelings",
+   "lemma": "das Gefühl"
+  },
+  {
+   "form": "Zeitungsartikel",
+   "context": "Textsorte: Zeitungsartikel · Interview",
+   "en": "newspaper article",
+   "lemma": "der Zeitungsartikel"
+  },
+  {
+   "form": "persönliche",
+   "context": "Prüfungsbezug: Goethe A2 Schreiben Teil 2 (persönliche Mitteilung); ÖSD A2 Schreiben",
+   "en": "personal",
+   "lemma": "persönlich"
+  },
+  {
+   "form": "reflexive",
+   "context": "reflexive Verben richtig verwenden",
+   "en": "reflexive",
+   "lemma": "reflexiv"
+  },
+  {
+   "form": "Reflexive",
+   "context": "Grammatik: Reflexive Verben",
+   "en": "reflexive",
+   "lemma": "reflexiv"
+  },
+  {
+   "form": "reflexiven",
+   "context": "Bei reflexiven Verben zeigt das Reflexivpronomen zurück auf das Subjekt. Die Formen sind fast wie beim Akkusativpronomen — nur in der 3. Person heißt es immer sich.",
+   "en": "reflexive",
+   "lemma": "reflexiv"
+  },
+  {
+   "form": "zeigt",
+   "context": "Bei reflexiven Verben zeigt das Reflexivpronomen zurück auf das Subjekt. Die Formen sind fast wie beim Akkusativpronomen — nur in der 3. Person heißt es immer sich.",
+   "en": "points; shows",
+   "lemma": "zeigen"
+  },
+  {
+   "form": "Reflexivpronomen",
+   "context": "Bei reflexiven Verben zeigt das Reflexivpronomen zurück auf das Subjekt. Die Formen sind fast wie beim Akkusativpronomen — nur in der 3. Person heißt es immer sich.",
+   "en": "reflexive pronoun",
+   "lemma": "das Reflexivpronomen"
+  },
+  {
+   "form": "zurück",
+   "context": "Bei reflexiven Verben zeigt das Reflexivpronomen zurück auf das Subjekt. Die Formen sind fast wie beim Akkusativpronomen — nur in der 3. Person heißt es immer sich.",
+   "en": "back",
+   "lemma": ""
+  },
+  {
+   "form": "Freust",
+   "context": "Freust du dich auch?",
+   "en": "are happy (with du)",
+   "lemma": "sich freuen"
+  },
+  {
+   "form": "freut",
+   "context": "Sie freut sich über das Geschenk.",
+   "en": "is happy",
+   "lemma": "sich freuen"
+  },
+  {
+   "form": "vorbereitet",
+   "context": "Ihr habt euch gut vorbereitet.",
+   "en": "prepared",
+   "lemma": "vorbereiten"
+  },
+  {
+   "form": "interessieren",
+   "context": "Sie interessieren sich für die Firma.",
+   "en": "to interest (sich interessieren = to be interested)",
+   "lemma": ""
+  },
+  {
+   "form": "angemeldet",
+   "context": "Hast du dich schon angemeldet?im Perfekt steht das Pronomen nach dem Hilfsverb",
+   "en": "registered",
+   "lemma": "anmelden"
+  },
+  {
+   "form": "Hilfsverb",
+   "context": "Hast du dich schon angemeldet?im Perfekt steht das Pronomen nach dem Hilfsverb",
+   "en": "auxiliary verb",
+   "lemma": "das Hilfsverb"
+  },
+  {
+   "form": "ärgern",
+   "context": "Tipp: Wichtige reflexive Verben für A2: sich freuen, sich bedanken, sich ärgern, sich interessieren, sich treffen, sich anmelden, sich beeilen, sich erholen, sich vorstellen.",
+   "en": "to annoy (sich ärgern = to be annoyed)",
+   "lemma": ""
+  },
+  {
+   "form": "happy",
+   "context": "sich freuen über / auf — EN: to be happy about / look forward to · FR: se réjouir deIch freue mich sehr über deine Nachricht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "about",
+   "context": "sich freuen über / auf — EN: to be happy about / look forward to · FR: se réjouir deIch freue mich sehr über deine Nachricht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "thank",
+   "context": "sich bedanken bei — EN: to thank sb. · FR: remercier qn.Wir bedanken uns bei allen Mitarbeitern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sb",
+   "context": "sich bedanken bei — EN: to thank sb. · FR: remercier qn.Wir bedanken uns bei allen Mitarbeitern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "remercier",
+   "context": "sich bedanken bei — EN: to thank sb. · FR: remercier qn.Wir bedanken uns bei allen Mitarbeitern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "qn",
+   "context": "sich bedanken bei — EN: to thank sb. · FR: remercier qn.Wir bedanken uns bei allen Mitarbeitern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Mitarbeitern",
+   "context": "sich bedanken bei — EN: to thank sb. · FR: remercier qn.Wir bedanken uns bei allen Mitarbeitern.",
+   "en": "employees",
+   "lemma": "der Mitarbeiter"
+  },
+  {
+   "form": "Jubiläum",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "anniversary",
+   "lemma": "das Jubiläum"
+  },
+  {
+   "form": "Jubiläen",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "anniversaries",
+   "lemma": "das Jubiläum"
+  },
+  {
+   "form": "anniversary",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'anniversaire",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'une",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "entreprise",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "feiert",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "celebrates",
+   "lemma": "feiern"
+  },
+  {
+   "form": "jähriges",
+   "context": "das Jubiläum, Jubiläen — EN: anniversary · FR: l'anniversaire (d'une entreprise)Die Firma feiert ihr 50-jähriges Jubiläum.",
+   "en": "-year (50-jähriges = 50-year)",
+   "lemma": "jährig"
+  },
+  {
+   "form": "fêterWir",
+   "context": "feiern — EN: to celebrate · FR: fêterWir feiern das am Freitag.",
+   "en": "we",
+   "lemma": "wir"
+  },
+  {
+   "form": "cadeauVielen",
+   "context": "das Geschenk, -e — EN: present · FR: le cadeauVielen Dank für das schöne Geschenk!",
+   "en": "many (vielen Dank = thanks a lot)",
+   "lemma": "viel"
+  },
+  {
+   "form": "fierWir",
+   "context": "stolz — EN: proud · FR: fierWir sind alle sehr stolz.",
+   "en": "we",
+   "lemma": "wir"
+  },
+  {
+   "form": "annoyed",
+   "context": "sich ärgern über — EN: to be annoyed about · FR: s'énerver à propos deÄrgere dich nicht darüber!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'énerver",
+   "context": "sich ärgern über — EN: to be annoyed about · FR: s'énerver à propos deÄrgere dich nicht darüber!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "propos",
+   "context": "sich ärgern über — EN: to be annoyed about · FR: s'énerver à propos deÄrgere dich nicht darüber!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deÄrgere",
+   "context": "sich ärgern über — EN: to be annoyed about · FR: s'énerver à propos deÄrgere dich nicht darüber!",
+   "en": "get annoyed (command)",
+   "lemma": "sich ärgern"
+  },
+  {
+   "form": "darüber",
+   "context": "sich ärgern über — EN: to be annoyed about · FR: s'énerver à propos deÄrgere dich nicht darüber!",
+   "en": "about it",
+   "lemma": ""
+  },
+  {
+   "form": "sincere",
+   "context": "herzlich — EN: warm, sincere · FR: cordialHerzlichen Glückwunsch!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cordialHerzlichen",
+   "context": "herzlich — EN: warm, sincere · FR: cordialHerzlichen Glückwunsch!",
+   "en": "warm, sincere",
+   "lemma": "herzlich"
+  },
+  {
+   "form": "Rede",
+   "context": "die Rede, -n — EN: speech · FR: le discoursDer Chef hält eine kurze Rede.",
+   "en": "speech",
+   "lemma": "die Rede"
+  },
+  {
+   "form": "speech",
+   "context": "die Rede, -n — EN: speech · FR: le discoursDer Chef hält eine kurze Rede.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "discoursDer",
+   "context": "die Rede, -n — EN: speech · FR: le discoursDer Chef hält eine kurze Rede.",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "hält",
+   "context": "die Rede, -n — EN: speech · FR: le discoursDer Chef hält eine kurze Rede.",
+   "en": "holds; gives (a speech)",
+   "lemma": "halten"
+  },
+  {
+   "form": "success",
+   "context": "der Erfolg, -e — EN: success · FR: le succèsDas war ein großer Erfolg für uns.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "succèsDas",
+   "context": "der Erfolg, -e — EN: success · FR: le succèsDas war ein großer Erfolg für uns.",
+   "en": "that, the",
+   "lemma": "das"
+  },
+  {
+   "form": "großer",
+   "context": "der Erfolg, -e — EN: success · FR: le succèsDas war ein großer Erfolg für uns.",
+   "en": "great, big",
+   "lemma": "groß"
+  },
+  {
+   "form": "glad",
+   "context": "sich freuen, dass … — EN: to be glad that … · FR: être content que …Ich freue mich, dass du kommst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "content",
+   "context": "sich freuen, dass … — EN: to be glad that … · FR: être content que …Ich freue mich, dass du kommst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "que",
+   "context": "sich freuen, dass … — EN: to be glad that … · FR: être content que …Ich freue mich, dass du kommst.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Darüber",
+   "context": "Darüber habe ich mich sehr gefreut.",
+   "en": "about it, about that",
+   "lemma": ""
+  },
+  {
+   "form": "gefreut",
+   "context": "Darüber habe ich mich sehr gefreut.",
+   "en": "been happy, been pleased",
+   "lemma": "sich freuen"
+  },
+  {
+   "form": "Firmenjubiläum",
+   "context": "Dialog: Beim Firmenjubiläum",
+   "en": "company anniversary",
+   "lemma": "das Firmenjubiläum"
+  },
+  {
+   "form": "Ott",
+   "context": "Frau Ott: Herzlichen Glückwunsch zum Jubiläum! Fünfzig Jahre — das ist toll.",
+   "en": "Ott (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Said",
+   "context": "Herr Said: Vielen Dank! Ich freue mich so, dass Sie gekommen sind.",
+   "en": "Said (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Team",
+   "context": "Herr Said: Das sind wir auch. Kommen Sie, ich stelle Ihnen das Team vor.",
+   "en": "team",
+   "lemma": "das Team"
+  },
+  {
+   "form": "Ärgere",
+   "context": "Ärgere dich nicht darüber!",
+   "en": "get annoyed (command)",
+   "lemma": "sich ärgern"
+  },
+  {
+   "form": "interessiert",
+   "context": "Sie interessiert ___ für Technik. (3. Person Singular)",
+   "en": "is interested (sich …); interested",
+   "lemma": "sich interessieren"
+  },
+  {
+   "form": "reflexives",
+   "context": "Schreiben Sie eine kurze Nachricht: Gratulieren Sie einer Freundin zu einer neuen Stelle. Umfang: 40–60 Wörter Checkliste: • Beginnen Sie mit einem Glückwunsch. • Benutzen Sie zweimal ein reflexives Verb (sich freuen, sich bedanken). • Schlagen Sie am Ende ein Treffen vor.",
+   "en": "reflexive",
+   "lemma": "reflexiv"
+  }
+ ]
+}
