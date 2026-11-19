@@ -1,0 +1,699 @@
+{
+ "level": "A2",
+ "lesson": 23,
+ "title": "Ausbildung und Beruf — Der Beruf, der zu mir passt",
+ "lines": [
+  {
+   "de": "Über Ausbildung und Berufswünsche sprechen und Dinge genauer beschreiben.",
+   "en": "Talk about vocational training and career wishes, and describe things more precisely."
+  },
+  {
+   "de": "Textsorte: Klappentext · Berufsporträt",
+   "en": "Text type: Blurb · Job profile"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 1; ÖSD A2 Lesen",
+   "en": "Exam link: Goethe A2 Speaking part 1; ÖSD A2 Reading"
+  },
+  {
+   "de": "über Ausbildung und Berufswünsche sprechen",
+   "en": "talk about vocational training and career wishes"
+  },
+  {
+   "de": "Zufriedenheit und Unzufriedenheit ausdrücken",
+   "en": "express satisfaction and dissatisfaction"
+  },
+  {
+   "de": "Relativsätze im Nominativ und Akkusativ bilden",
+   "en": "form relative clauses (Relativsätze) in the nominative and accusative"
+  },
+  {
+   "de": "Grammatik: Relativsätze im Nominativ und Akkusativ",
+   "en": "Grammar: Relative clauses (Relativsätze) in the nominative and accusative"
+  },
+  {
+   "de": "Ein Relativsatz beschreibt ein Nomen genauer. Das Relativpronomen sieht fast aus wie der bestimmte Artikel; das Verb steht am Ende. Genus und Numerus kommen vom Nomen davor, der Kasus von der Rolle im Relativsatz.",
+   "en": "A relative clause describes a noun more precisely. The relative pronoun (Relativpronomen) looks almost like the definite article; the verb goes at the end. Gender and number come from the noun before it, the case from its role in the relative clause."
+  },
+  {
+   "de": "den",
+   "en": "that, which, whom"
+  },
+  {
+   "de": "Beispiel Nom.",
+   "en": "Example nom."
+  },
+  {
+   "de": "der Beruf, der zu mir passt",
+   "en": "the job that suits me"
+  },
+  {
+   "de": "das Fach, das mir gefällt",
+   "en": "the subject that I like"
+  },
+  {
+   "de": "die Stelle, die frei ist",
+   "en": "the position that is vacant"
+  },
+  {
+   "de": "die Kurse, die neu sind",
+   "en": "the courses that are new"
+  },
+  {
+   "de": "Beispiel Akk.",
+   "en": "Example acc."
+  },
+  {
+   "de": "der Beruf, den ich suche",
+   "en": "the job that I am looking for"
+  },
+  {
+   "de": "das Fach, das ich mag",
+   "en": "the subject that I like"
+  },
+  {
+   "de": "die Stelle, die ich finde",
+   "en": "the position that I find"
+  },
+  {
+   "de": "die Kurse, die ich belege",
+   "en": "the courses that I take"
+  },
+  {
+   "de": "Das ist genau der Beruf, der zu mir passt.Nominativ: der passt — Subjekt im Relativsatz",
+   "en": "That is exactly the job that suits me. — Nominative: der passt — subject in the relative clause"
+  },
+  {
+   "de": "Das ist der Beruf, den ich schon lange machen will.Akkusativ: ich will ihn machen",
+   "en": "That is the job that I have wanted to do for a long time. — Accusative: ich will ihn machen"
+  },
+  {
+   "de": "Ich suche eine Ausbildung, die mir Spaß macht.feminin, Nominativ",
+   "en": "I'm looking for vocational training that I enjoy. — feminine, nominative"
+  },
+  {
+   "de": "Tipp: Fragen Sie sich: Ist das Nomen im Relativsatz Subjekt (→ Nominativ) oder Objekt (→ Akkusativ)?",
+   "en": "Tip: Ask yourself: Is the noun the subject in the relative clause (→ nominative) or the object (→ accusative)?"
+  },
+  {
+   "de": "die Ausbildung, -en — EN: vocational training · FR: la formationDie Ausbildung dauert drei Jahre.",
+   "en": "Example: The training takes three years."
+  },
+  {
+   "de": "der Auszubildende, -n (Azubi) — EN: trainee, apprentice · FR: l'apprenti(e)Wir suchen zwei Auszubildende.",
+   "en": "Example: We are looking for two trainees."
+  },
+  {
+   "de": "das Praktikum, Praktika — EN: internship · FR: le stageIch mache gerade ein Praktikum.",
+   "en": "Example: I'm doing an internship at the moment."
+  },
+  {
+   "de": "die Berufsschule, -n — EN: vocational school · FR: l'école professionnelleZweimal pro Woche gehe ich in die Berufsschule.",
+   "en": "Example: I go to vocational school twice a week."
+  },
+  {
+   "de": "sich bewerben um — EN: to apply for · FR: postuler pourIch habe mich um eine Stelle beworben.",
+   "en": "Example: I have applied for a job."
+  },
+  {
+   "de": "die Stelle, -n — EN: position, job · FR: le posteDie Stelle ist ab September frei.",
+   "en": "Example: The position is vacant from September."
+  },
+  {
+   "de": "zufrieden sein mit — EN: to be satisfied with · FR: être satisfait deMit meiner Arbeit bin ich sehr zufrieden.",
+   "en": "Example: I'm very satisfied with my work."
+  },
+  {
+   "de": "passen zu — EN: to suit · FR: convenir àDer Beruf passt gut zu mir.",
+   "en": "Example: The job suits me well."
+  },
+  {
+   "de": "verdienen — EN: to earn · FR: gagnerIn der Ausbildung verdient man wenig.",
+   "en": "Example: You earn little during training."
+  },
+  {
+   "de": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceDafür braucht man handwerkliche Fähigkeiten.",
+   "en": "Example: For that you need manual skills."
+  },
+  {
+   "de": "der Abschluss, ¨-e — EN: qualification, degree · FR: le diplômeNach dem Abschluss möchte ich arbeiten.",
+   "en": "Example: After finishing my qualification, I'd like to work."
+  },
+  {
+   "de": "sich entscheiden für — EN: to decide on · FR: opter pourIch habe mich für eine Ausbildung entschieden.",
+   "en": "Example: I have decided on vocational training."
+  },
+  {
+   "de": "über Berufswünsche sprechen",
+   "en": "Talking about career wishes"
+  },
+  {
+   "de": "Ich suche einen Beruf, der …",
+   "en": "I'm looking for a job that …"
+  },
+  {
+   "de": "Am liebsten würde ich …",
+   "en": "Most of all I would like to …"
+  },
+  {
+   "de": "Zufriedenheit ausdrücken",
+   "en": "Expressing satisfaction"
+  },
+  {
+   "de": "Mit meiner Ausbildung bin ich sehr zufrieden.",
+   "en": "I'm very satisfied with my training."
+  },
+  {
+   "de": "Die Arbeit macht mir Spaß.",
+   "en": "I enjoy the work."
+  },
+  {
+   "de": "Ich habe die richtige Wahl getroffen.",
+   "en": "I have made the right choice."
+  },
+  {
+   "de": "Unzufriedenheit ausdrücken",
+   "en": "Expressing dissatisfaction"
+  },
+  {
+   "de": "Das ist nicht das, was ich erwartet habe.",
+   "en": "That is not what I expected."
+  },
+  {
+   "de": "Mir gefällt nicht, dass …",
+   "en": "I don't like that …"
+  },
+  {
+   "de": "Ich überlege, etwas anderes zu machen.",
+   "en": "I'm thinking about doing something else."
+  },
+  {
+   "de": "Dialog: Welcher Beruf passt?",
+   "en": "Dialogue: Which job is the right fit?"
+  },
+  {
+   "de": "Beraterin: Was suchen Sie denn genau?",
+   "en": "Adviser: What exactly are you looking for?"
+  },
+  {
+   "de": "Yusuf: Einen Beruf, der zu mir passt. Ich arbeite gern mit den Händen.",
+   "en": "Yusuf: A job that suits me. I like working with my hands."
+  },
+  {
+   "de": "Beraterin: Dann wäre vielleicht eine technische Ausbildung interessant.",
+   "en": "Adviser: Then maybe technical training would be interesting."
+  },
+  {
+   "de": "Yusuf: Gibt es eine Stelle, die ich sofort anfangen kann?",
+   "en": "Yusuf: Is there a position that I can start straight away?"
+  },
+  {
+   "de": "Beraterin: Es gibt drei Betriebe, die noch Auszubildende suchen.",
+   "en": "Adviser: There are three companies that are still looking for trainees."
+  },
+  {
+   "de": "Yusuf: Gut. Das ist genau die Information, die ich gebraucht habe.",
+   "en": "Yusuf: Good. That's exactly the information that I needed."
+  },
+  {
+   "de": "Die Ausbildung dauert drei Jahre.",
+   "en": "The training takes three years."
+  },
+  {
+   "de": "Wir suchen zwei Auszubildende.",
+   "en": "We are looking for two trainees."
+  },
+  {
+   "de": "Ich mache gerade ein Praktikum.",
+   "en": "I'm doing an internship at the moment."
+  },
+  {
+   "de": "Zweimal pro Woche gehe ich in die Berufsschule.",
+   "en": "I go to vocational school twice a week."
+  },
+  {
+   "de": "Ich habe mich um eine Stelle beworben.",
+   "en": "I have applied for a job."
+  },
+  {
+   "de": "Die Stelle ist ab September frei.",
+   "en": "The position is vacant from September."
+  },
+  {
+   "de": "Mit meiner Arbeit bin ich sehr zufrieden.",
+   "en": "I'm very satisfied with my work."
+  },
+  {
+   "de": "Der Beruf passt gut zu mir.",
+   "en": "The job suits me well."
+  },
+  {
+   "de": "In der Ausbildung verdient man wenig.",
+   "en": "You earn little during training."
+  },
+  {
+   "de": "Dafür braucht man handwerkliche Fähigkeiten.",
+   "en": "For that you need manual skills."
+  },
+  {
+   "de": "Nach dem Abschluss möchte ich arbeiten.",
+   "en": "After finishing my qualification, I'd like to work."
+  },
+  {
+   "de": "Ich habe mich für eine Ausbildung entschieden.",
+   "en": "I have decided on vocational training."
+  },
+  {
+   "de": "Das ist der Beruf, ___ zu mir passt. (Relativpronomen, Nominativ maskulin)",
+   "en": "That is the job ___ suits me. (relative pronoun, nominative masculine)"
+  },
+  {
+   "de": "Das ist der Beruf, ___ ich machen will.",
+   "en": "That is the job ___ I want to do."
+  },
+  {
+   "de": "Ich suche eine Ausbildung, ___ mir Spaß macht. (feminin, Nominativ)",
+   "en": "I'm looking for vocational training ___ is fun for me. (feminine, nominative)"
+  },
+  {
+   "de": "Das sind die Kurse, ___ neu sind. (Plural, Nominativ)",
+   "en": "These are the courses ___ are new. (plural, nominative)"
+  },
+  {
+   "de": "Beschreiben Sie Ihren Traumberuf: Was möchten Sie machen und warum passt das zu Ihnen? Umfang: 50–70 Wörter Checkliste: • Nennen Sie den Beruf und zwei Gründe. • Benutzen Sie mindestens zwei Relativsätze (der …, die …, das …). • Schreiben Sie, was Sie dafür noch lernen müssen.",
+   "en": "Describe your dream job: What would you like to do and why does it suit you? Length: 50–70 words Checklist: • Name the job and two reasons. • Use at least two relative clauses (der …, die …, das …). • Write what you still need to learn for it."
+  },
+  {
+   "de": "Der Beruf ist Subjekt im Relativsatz → der.",
+   "en": "Beruf is the subject in the relative clause → der."
+  },
+  {
+   "de": "Hier ist der Beruf Objekt (ich will ihn machen) → Akkusativ den.",
+   "en": "Here Beruf is the object (ich will ihn machen) → accusative den."
+  },
+  {
+   "de": "die Ausbildung, Subjekt im Relativsatz → die.",
+   "en": "die Ausbildung, subject in the relative clause → die."
+  },
+  {
+   "de": "das Fach ist neutrum; im Akkusativ bleibt es das.",
+   "en": "das Fach is neuter; in the accusative it stays das."
+  },
+  {
+   "de": "Plural Nominativ und Akkusativ: die.",
+   "en": "Plural nominative and accusative: die."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Ausbildung",
+   "context": "Über Ausbildung und Berufswünsche sprechen und Dinge genauer beschreiben.",
+   "en": "(vocational) training",
+   "lemma": "die Ausbildung"
+  },
+  {
+   "form": "Berufswünsche",
+   "context": "Über Ausbildung und Berufswünsche sprechen und Dinge genauer beschreiben.",
+   "en": "career wishes",
+   "lemma": "der Berufswunsch"
+  },
+  {
+   "form": "genauer",
+   "context": "Über Ausbildung und Berufswünsche sprechen und Dinge genauer beschreiben.",
+   "en": "more precisely",
+   "lemma": "genau"
+  },
+  {
+   "form": "Klappentext",
+   "context": "Textsorte: Klappentext · Berufsporträt",
+   "en": "blurb (on a book)",
+   "lemma": "der Klappentext"
+  },
+  {
+   "form": "Berufsporträt",
+   "context": "Textsorte: Klappentext · Berufsporträt",
+   "en": "job profile",
+   "lemma": "das Berufsporträt"
+  },
+  {
+   "form": "Zufriedenheit",
+   "context": "Zufriedenheit und Unzufriedenheit ausdrücken",
+   "en": "satisfaction",
+   "lemma": "die Zufriedenheit"
+  },
+  {
+   "form": "Unzufriedenheit",
+   "context": "Zufriedenheit und Unzufriedenheit ausdrücken",
+   "en": "dissatisfaction",
+   "lemma": "die Unzufriedenheit"
+  },
+  {
+   "form": "Relativsätze",
+   "context": "Relativsätze im Nominativ und Akkusativ bilden",
+   "en": "relative clauses",
+   "lemma": "der Relativsatz"
+  },
+  {
+   "form": "Relativsatz",
+   "context": "Ein Relativsatz beschreibt ein Nomen genauer. Das Relativpronomen sieht fast aus wie der bestimmte Artikel; das Verb steht am Ende. Genus und Numerus kommen vom Nomen davor, der Kasus von der Rolle im Relativsatz.",
+   "en": "relative clause",
+   "lemma": "der Relativsatz"
+  },
+  {
+   "form": "beschreibt",
+   "context": "Ein Relativsatz beschreibt ein Nomen genauer. Das Relativpronomen sieht fast aus wie der bestimmte Artikel; das Verb steht am Ende. Genus und Numerus kommen vom Nomen davor, der Kasus von der Rolle im Relativsatz.",
+   "en": "describes",
+   "lemma": "beschreiben"
+  },
+  {
+   "form": "Relativpronomen",
+   "context": "Ein Relativsatz beschreibt ein Nomen genauer. Das Relativpronomen sieht fast aus wie der bestimmte Artikel; das Verb steht am Ende. Genus und Numerus kommen vom Nomen davor, der Kasus von der Rolle im Relativsatz.",
+   "en": "relative pronoun",
+   "lemma": "das Relativpronomen"
+  },
+  {
+   "form": "Numerus",
+   "context": "Ein Relativsatz beschreibt ein Nomen genauer. Das Relativpronomen sieht fast aus wie der bestimmte Artikel; das Verb steht am Ende. Genus und Numerus kommen vom Nomen davor, der Kasus von der Rolle im Relativsatz.",
+   "en": "number (grammar)",
+   "lemma": "der Numerus"
+  },
+  {
+   "form": "Nom",
+   "context": "Beispiel Nom.",
+   "en": "nom. (nominative)",
+   "lemma": ""
+  },
+  {
+   "form": "Fach",
+   "context": "das Fach, das mir gefällt",
+   "en": "subject",
+   "lemma": "das Fach"
+  },
+  {
+   "form": "Kurse",
+   "context": "die Kurse, die neu sind",
+   "en": "courses",
+   "lemma": "der Kurs"
+  },
+  {
+   "form": "belege",
+   "context": "die Kurse, die ich belege",
+   "en": "take (a course)",
+   "lemma": "belegen"
+  },
+  {
+   "form": "Spaß",
+   "context": "Ich suche eine Ausbildung, die mir Spaß macht.feminin, Nominativ",
+   "en": "fun (Spaß machen = be fun)",
+   "lemma": "der Spaß"
+  },
+  {
+   "form": "Objekt",
+   "context": "Tipp: Fragen Sie sich: Ist das Nomen im Relativsatz Subjekt (→ Nominativ) oder Objekt (→ Akkusativ)?",
+   "en": "object",
+   "lemma": "das Objekt"
+  },
+  {
+   "form": "vocational",
+   "context": "die Ausbildung, -en — EN: vocational training · FR: la formationDie Ausbildung dauert drei Jahre.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "formationDie",
+   "context": "die Ausbildung, -en — EN: vocational training · FR: la formationDie Ausbildung dauert drei Jahre.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "Auszubildende",
+   "context": "der Auszubildende, -n (Azubi) — EN: trainee, apprentice · FR: l'apprenti(e)Wir suchen zwei Auszubildende.",
+   "en": "trainee, apprentice",
+   "lemma": "der Auszubildende"
+  },
+  {
+   "form": "Azubi",
+   "context": "der Auszubildende, -n (Azubi) — EN: trainee, apprentice · FR: l'apprenti(e)Wir suchen zwei Auszubildende.",
+   "en": "trainee (short for Auszubildende)",
+   "lemma": "der Azubi"
+  },
+  {
+   "form": "trainee",
+   "context": "der Auszubildende, -n (Azubi) — EN: trainee, apprentice · FR: l'apprenti(e)Wir suchen zwei Auszubildende.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "apprentice",
+   "context": "der Auszubildende, -n (Azubi) — EN: trainee, apprentice · FR: l'apprenti(e)Wir suchen zwei Auszubildende.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'apprenti",
+   "context": "der Auszubildende, -n (Azubi) — EN: trainee, apprentice · FR: l'apprenti(e)Wir suchen zwei Auszubildende.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Praktikum",
+   "context": "das Praktikum, Praktika — EN: internship · FR: le stageIch mache gerade ein Praktikum.",
+   "en": "internship",
+   "lemma": "das Praktikum"
+  },
+  {
+   "form": "Praktika",
+   "context": "das Praktikum, Praktika — EN: internship · FR: le stageIch mache gerade ein Praktikum.",
+   "en": "internships",
+   "lemma": "das Praktikum"
+  },
+  {
+   "form": "internship",
+   "context": "das Praktikum, Praktika — EN: internship · FR: le stageIch mache gerade ein Praktikum.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stageIch",
+   "context": "das Praktikum, Praktika — EN: internship · FR: le stageIch mache gerade ein Praktikum.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "Berufsschule",
+   "context": "die Berufsschule, -n — EN: vocational school · FR: l'école professionnelleZweimal pro Woche gehe ich in die Berufsschule.",
+   "en": "vocational school",
+   "lemma": "die Berufsschule"
+  },
+  {
+   "form": "school",
+   "context": "die Berufsschule, -n — EN: vocational school · FR: l'école professionnelleZweimal pro Woche gehe ich in die Berufsschule.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'école",
+   "context": "die Berufsschule, -n — EN: vocational school · FR: l'école professionnelleZweimal pro Woche gehe ich in die Berufsschule.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "professionnelleZweimal",
+   "context": "die Berufsschule, -n — EN: vocational school · FR: l'école professionnelleZweimal pro Woche gehe ich in die Berufsschule.",
+   "en": "Zweimal = twice",
+   "lemma": ""
+  },
+  {
+   "form": "bewerben",
+   "context": "sich bewerben um — EN: to apply for · FR: postuler pourIch habe mich um eine Stelle beworben.",
+   "en": "to apply (sich bewerben)",
+   "lemma": ""
+  },
+  {
+   "form": "apply",
+   "context": "sich bewerben um — EN: to apply for · FR: postuler pourIch habe mich um eine Stelle beworben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "postuler",
+   "context": "sich bewerben um — EN: to apply for · FR: postuler pourIch habe mich um eine Stelle beworben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pourIch",
+   "context": "sich bewerben um — EN: to apply for · FR: postuler pourIch habe mich um eine Stelle beworben.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "beworben",
+   "context": "sich bewerben um — EN: to apply for · FR: postuler pourIch habe mich um eine Stelle beworben.",
+   "en": "applied",
+   "lemma": "sich bewerben"
+  },
+  {
+   "form": "satisfied",
+   "context": "zufrieden sein mit — EN: to be satisfied with · FR: être satisfait deMit meiner Arbeit bin ich sehr zufrieden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "satisfait",
+   "context": "zufrieden sein mit — EN: to be satisfied with · FR: être satisfait deMit meiner Arbeit bin ich sehr zufrieden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "deMit",
+   "context": "zufrieden sein mit — EN: to be satisfied with · FR: être satisfait deMit meiner Arbeit bin ich sehr zufrieden.",
+   "en": "Mit = with",
+   "lemma": ""
+  },
+  {
+   "form": "convenir",
+   "context": "passen zu — EN: to suit · FR: convenir àDer Beruf passt gut zu mir.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àDer",
+   "context": "passen zu — EN: to suit · FR: convenir àDer Beruf passt gut zu mir.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "verdienen",
+   "context": "verdienen — EN: to earn · FR: gagnerIn der Ausbildung verdient man wenig.",
+   "en": "to earn",
+   "lemma": ""
+  },
+  {
+   "form": "earn",
+   "context": "verdienen — EN: to earn · FR: gagnerIn der Ausbildung verdient man wenig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gagnerIn",
+   "context": "verdienen — EN: to earn · FR: gagnerIn der Ausbildung verdient man wenig.",
+   "en": "In = in",
+   "lemma": ""
+  },
+  {
+   "form": "verdient",
+   "context": "verdienen — EN: to earn · FR: gagnerIn der Ausbildung verdient man wenig.",
+   "en": "earns",
+   "lemma": "verdienen"
+  },
+  {
+   "form": "ability",
+   "context": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceDafür braucht man handwerkliche Fähigkeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "skill",
+   "context": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceDafür braucht man handwerkliche Fähigkeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "compétenceDafür",
+   "context": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceDafür braucht man handwerkliche Fähigkeiten.",
+   "en": "Dafür = for that",
+   "lemma": ""
+  },
+  {
+   "form": "handwerkliche",
+   "context": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceDafür braucht man handwerkliche Fähigkeiten.",
+   "en": "manual, craft",
+   "lemma": "handwerklich"
+  },
+  {
+   "form": "Abschluss",
+   "context": "der Abschluss, ¨-e — EN: qualification, degree · FR: le diplômeNach dem Abschluss möchte ich arbeiten.",
+   "en": "qualification, degree",
+   "lemma": "der Abschluss"
+  },
+  {
+   "form": "qualification",
+   "context": "der Abschluss, ¨-e — EN: qualification, degree · FR: le diplômeNach dem Abschluss möchte ich arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "diplômeNach",
+   "context": "der Abschluss, ¨-e — EN: qualification, degree · FR: le diplômeNach dem Abschluss möchte ich arbeiten.",
+   "en": "Nach = after",
+   "lemma": ""
+  },
+  {
+   "form": "opter",
+   "context": "sich entscheiden für — EN: to decide on · FR: opter pourIch habe mich für eine Ausbildung entschieden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "entschieden",
+   "context": "sich entscheiden für — EN: to decide on · FR: opter pourIch habe mich für eine Ausbildung entschieden.",
+   "en": "decided",
+   "lemma": "sich entscheiden"
+  },
+  {
+   "form": "erwartet",
+   "context": "Das ist nicht das, was ich erwartet habe.",
+   "en": "expected",
+   "lemma": "erwarten"
+  },
+  {
+   "form": "überlege",
+   "context": "Ich überlege, etwas anderes zu machen.",
+   "en": "am thinking about",
+   "lemma": "überlegen"
+  },
+  {
+   "form": "Beraterin",
+   "context": "Beraterin: Was suchen Sie denn genau?",
+   "en": "adviser (woman)",
+   "lemma": "die Beraterin"
+  },
+  {
+   "form": "Yusuf",
+   "context": "Yusuf: Einen Beruf, der zu mir passt. Ich arbeite gern mit den Händen.",
+   "en": "Yusuf (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Händen",
+   "context": "Yusuf: Einen Beruf, der zu mir passt. Ich arbeite gern mit den Händen.",
+   "en": "hands",
+   "lemma": "die Hand"
+  },
+  {
+   "form": "technische",
+   "context": "Beraterin: Dann wäre vielleicht eine technische Ausbildung interessant.",
+   "en": "technical",
+   "lemma": "technisch"
+  },
+  {
+   "form": "Betriebe",
+   "context": "Beraterin: Es gibt drei Betriebe, die noch Auszubildende suchen.",
+   "en": "companies, businesses",
+   "lemma": "der Betrieb"
+  },
+  {
+   "form": "gebraucht",
+   "context": "Yusuf: Gut. Das ist genau die Information, die ich gebraucht habe.",
+   "en": "needed; second-hand",
+   "lemma": "brauchen"
+  },
+  {
+   "form": "Traumberuf",
+   "context": "Beschreiben Sie Ihren Traumberuf: Was möchten Sie machen und warum passt das zu Ihnen? Umfang: 50–70 Wörter Checkliste: • Nennen Sie den Beruf und zwei Gründe. • Benutzen Sie mindestens zwei Relativsätze (der …, die …, das …). • Schreiben Sie, was Sie dafür noch lernen müssen.",
+   "en": "dream job",
+   "lemma": "der Traumberuf"
+  }
+ ]
+}
