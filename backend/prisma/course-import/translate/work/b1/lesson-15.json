@@ -1,0 +1,843 @@
+{
+ "level": "B1",
+ "lesson": 15,
+ "title": "Bewerbungen — Ich spreche sowohl Englisch als auch Französisch",
+ "lines": [
+  {
+   "de": "Sich schriftlich und mündlich bewerben — Informationen elegant verbinden.",
+   "en": "Applying for jobs in writing and in person — linking information elegantly."
+  },
+  {
+   "de": "ein Bewerbungsschreiben strukturieren",
+   "en": "structure a letter of application"
+  },
+  {
+   "de": "zweiteilige Konnektoren sicher verwenden",
+   "en": "use two-part connectors confidently"
+  },
+  {
+   "de": "sich im Vorstellungsgespräch vorstellen",
+   "en": "introduce yourself in a job interview"
+  },
+  {
+   "de": "Grammatik: Zweiteilige Konnektoren",
+   "en": "Grammar: two-part connectors (zweiteilige Konnektoren)"
+  },
+  {
+   "de": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "Two-part connectors link two equal elements. They make texts more concise and come across as professional in job applications. Important: the two linked parts must be grammatically the same."
+  },
+  {
+   "de": "sowohl … als auch",
+   "en": "both … and"
+  },
+  {
+   "de": "A und B",
+   "en": "A and B"
+  },
+  {
+   "de": "Ich habe sowohl im Verkauf als auch im Einkauf gearbeitet.",
+   "en": "I have worked both in sales and in purchasing."
+  },
+  {
+   "de": "nicht nur … sondern auch",
+   "en": "not only … but also"
+  },
+  {
+   "de": "A und zusätzlich B",
+   "en": "A and additionally B"
+  },
+  {
+   "de": "Sie spricht nicht nur Deutsch, sondern auch Spanisch.",
+   "en": "She speaks not only German but also Spanish."
+  },
+  {
+   "de": "entweder … oder",
+   "en": "either … or"
+  },
+  {
+   "de": "A oder B (nur eins)",
+   "en": "A or B (only one)"
+  },
+  {
+   "de": "Ich kann entweder montags oder freitags anfangen.",
+   "en": "I can start either on Monday or on Friday."
+  },
+  {
+   "de": "weder … noch",
+   "en": "neither … nor"
+  },
+  {
+   "de": "nicht A und nicht B",
+   "en": "not A and not B"
+  },
+  {
+   "de": "Er hat weder Erfahrung noch eine Ausbildung.",
+   "en": "He has neither experience nor training."
+  },
+  {
+   "de": "zwar … aber",
+   "en": "admittedly … but"
+  },
+  {
+   "de": "Einschränkung",
+   "en": "Limitation"
+  },
+  {
+   "de": "Ich habe zwar wenig Erfahrung, aber viel Motivation.",
+   "en": "I may have little experience, but I have a lot of motivation."
+  },
+  {
+   "de": "je … desto",
+   "en": "the … the"
+  },
+  {
+   "de": "Verhältnis (Lektion 19)",
+   "en": "Proportion (Lesson 19)"
+  },
+  {
+   "de": "Je mehr Praxis, desto sicherer wird man.",
+   "en": "The more practice, the more confident you become."
+  },
+  {
+   "de": "Ich bringe sowohl technisches Verständnis als auch Teamfähigkeit mit.zwei Nomengruppen im Akkusativ",
+   "en": "I bring both technical understanding and the ability to work in a team. two noun groups in the accusative"
+  },
+  {
+   "de": "Weder die Bezahlung noch die Arbeitszeiten haben mich überzeugt.weder … noch ist schon verneint — kein nicht dazu",
+   "en": "Neither the pay nor the working hours convinced me. weder … noch is already negative — no extra nicht"
+  },
+  {
+   "de": "Tipp: Nach sondern auch steht kein neues Verb, wenn das Verb gleich bleibt: Sie arbeitet nicht nur schnell, sondern auch sehr genau.",
+   "en": "Tip: After sondern auch there is no new verb if the verb stays the same: She works not only quickly but also very accurately."
+  },
+  {
+   "de": "die Bewerbung, -en — EN: application · FR: la candidatureIhre Bewerbung hat uns überzeugt.",
+   "en": "Example: Your application convinced us."
+  },
+  {
+   "de": "die Stellenanzeige, -n — EN: job advertisement · FR: l'offre d'emploiIch habe Ihre Stellenanzeige im Internet gelesen.",
+   "en": "Example: I read your job advertisement on the internet."
+  },
+  {
+   "de": "das Anschreiben, - — EN: cover letter · FR: la lettre de motivationDas Anschreiben sollte eine Seite lang sein.",
+   "en": "Example: The cover letter should be one page long."
+  },
+  {
+   "de": "die Anlage, -n — EN: attachment, enclosure · FR: la pièce jointeAnlagen: Lebenslauf und Zeugnisse.",
+   "en": "Example: Enclosures: CV and certificates."
+  },
+  {
+   "de": "das Zeugnis, -se — EN: certificate, reference · FR: le certificat, l'attestationBitte legen Sie Ihre Zeugnisse bei.",
+   "en": "Example: Please enclose your certificates."
+  },
+  {
+   "de": "das Vorstellungsgespräch, -e — EN: job interview · FR: l'entretien d'embaucheDas Vorstellungsgespräch ist am Dienstag.",
+   "en": "Example: The job interview is on Tuesday."
+  },
+  {
+   "de": "die Berufserfahrung (Sg.) — EN: work experience · FR: l'expérience professionnelleIch habe fünf Jahre Berufserfahrung.",
+   "en": "Example: I have five years of work experience."
+  },
+  {
+   "de": "beherrschen — EN: to have a command of · FR: maîtriserIch beherrsche Englisch in Wort und Schrift.",
+   "en": "Example: I have a good command of spoken and written English."
+  },
+  {
+   "de": "teamfähig — EN: good at teamwork · FR: apte au travail en équipeIch bin teamfähig und belastbar.",
+   "en": "Example: I am a good team player and can work under pressure."
+  },
+  {
+   "de": "belastbar — EN: resilient, able to work under pressure · FR: résistant au stressAuch unter Zeitdruck bin ich belastbar.",
+   "en": "Example: I can cope with pressure, even when time is tight."
+  },
+  {
+   "de": "der Arbeitgeber, - — EN: employer · FR: l'employeurMein früherer Arbeitgeber gibt Ihnen gern Auskunft.",
+   "en": "Example: My former employer will be happy to give you information."
+  },
+  {
+   "de": "zur Verfügung stehen — EN: to be available · FR: être disponibleAb dem 1. März stehe ich Ihnen zur Verfügung.",
+   "en": "Example: I will be available from 1 March."
+  },
+  {
+   "de": "Anschreiben beginnen",
+   "en": "Starting a cover letter"
+  },
+  {
+   "de": "Mit großem Interesse habe ich Ihre Anzeige gelesen.",
+   "en": "I read your advertisement with great interest."
+  },
+  {
+   "de": "Hiermit bewerbe ich mich um die Stelle als …",
+   "en": "I hereby apply for the position of …"
+  },
+  {
+   "de": "Auf Ihre ausgeschriebene Position passe ich besonders gut, weil …",
+   "en": "I am particularly well suited to the position you advertised because …"
+  },
+  {
+   "de": "Qualifikationen nennen",
+   "en": "Stating your qualifications"
+  },
+  {
+   "de": "Ich verfüge sowohl über … als auch über …",
+   "en": "I have both … and …"
+  },
+  {
+   "de": "Während meiner Tätigkeit bei … habe ich Erfahrungen in … gesammelt.",
+   "en": "During my work at …, I gained experience in …"
+  },
+  {
+   "de": "Zu meinen Aufgaben gehörte unter anderem …",
+   "en": "My duties included, among other things, …"
+  },
+  {
+   "de": "Anschreiben beenden",
+   "en": "Ending a cover letter"
+  },
+  {
+   "de": "Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen.",
+   "en": "I would be very pleased to be invited to a personal interview."
+  },
+  {
+   "de": "Für Rückfragen stehe ich Ihnen gern zur Verfügung.",
+   "en": "I will be happy to answer any further questions."
+  },
+  {
+   "de": "Mit freundlichen Grüßen",
+   "en": "Kind regards"
+  },
+  {
+   "de": "Ihre Bewerbung hat uns überzeugt.",
+   "en": "Your application convinced us."
+  },
+  {
+   "de": "Ich habe Ihre Stellenanzeige im Internet gelesen.",
+   "en": "I read your job advertisement on the internet."
+  },
+  {
+   "de": "Das Anschreiben sollte eine Seite lang sein.",
+   "en": "The cover letter should be one page long."
+  },
+  {
+   "de": "Anlagen: Lebenslauf und Zeugnisse.",
+   "en": "Enclosures: CV and certificates."
+  },
+  {
+   "de": "Bitte legen Sie Ihre Zeugnisse bei.",
+   "en": "Please enclose your certificates."
+  },
+  {
+   "de": "Das Vorstellungsgespräch ist am Dienstag.",
+   "en": "The job interview is on Tuesday."
+  },
+  {
+   "de": "Ich habe fünf Jahre Berufserfahrung.",
+   "en": "I have five years of work experience."
+  },
+  {
+   "de": "Ich beherrsche Englisch in Wort und Schrift.",
+   "en": "I have a good command of spoken and written English."
+  },
+  {
+   "de": "Ich bin teamfähig und belastbar.",
+   "en": "I am a good team player and can work under pressure."
+  },
+  {
+   "de": "Auch unter Zeitdruck bin ich belastbar.",
+   "en": "I can cope with pressure, even when time is tight."
+  },
+  {
+   "de": "Mein früherer Arbeitgeber gibt Ihnen gern Auskunft.",
+   "en": "My former employer will be happy to give you information."
+  },
+  {
+   "de": "Ab dem 1. März stehe ich Ihnen zur Verfügung.",
+   "en": "I will be available from 1 March."
+  },
+  {
+   "de": "Ich spreche ___ Deutsch ___ ___ Französisch. (sowohl … als auch)",
+   "en": "I speak ___ German ___ ___ French. (sowohl … als auch)"
+  },
+  {
+   "de": "'Weder … noch' bedeutet:",
+   "en": "'Weder … noch' means:"
+  },
+  {
+   "de": "Ich kann ___ am Montag ___ am Mittwoch anfangen — bitte wählen Sie. (entweder … oder)",
+   "en": "I can start ___ on Monday ___ on Wednesday — please choose. (entweder … oder)"
+  },
+  {
+   "de": "Ich habe ___ wenig Erfahrung, ___ ich lerne sehr schnell. (zwar … aber)",
+   "en": "I have ___ little experience, ___ I learn very quickly. (zwar … aber)"
+  },
+  {
+   "de": "sowohl Deutsch als auch Französisch = beide Sprachen.",
+   "en": "sowohl Deutsch als auch Französisch = both languages."
+  },
+  {
+   "de": "weder … noch enthält die Verneinung bereits.",
+   "en": "weder … noch already contains the negation."
+  },
+  {
+   "de": "entweder … oder nennt zwei Alternativen, von denen nur eine gilt.",
+   "en": "entweder … oder names two alternatives, of which only one applies."
+  },
+  {
+   "de": "Der feste Konnektor lautet nicht nur … sondern auch.",
+   "en": "The fixed connector is nicht nur … sondern auch."
+  },
+  {
+   "de": "zwar … aber drückt eine Einschränkung aus.",
+   "en": "zwar … aber expresses a limitation."
+  }
+ ],
+ "forms": [
+  {
+   "form": "elegant",
+   "context": "Sich schriftlich und mündlich bewerben — Informationen elegant verbinden.",
+   "en": "elegant(ly)",
+   "lemma": ""
+  },
+  {
+   "form": "Bewerbungsschreiben",
+   "context": "ein Bewerbungsschreiben strukturieren",
+   "en": "letter of application",
+   "lemma": "das Bewerbungsschreiben"
+  },
+  {
+   "form": "zweiteilige",
+   "context": "zweiteilige Konnektoren sicher verwenden",
+   "en": "two-part",
+   "lemma": "zweiteilig"
+  },
+  {
+   "form": "Vorstellungsgespräch",
+   "context": "sich im Vorstellungsgespräch vorstellen",
+   "en": "job interview",
+   "lemma": "das Vorstellungsgespräch"
+  },
+  {
+   "form": "Zweiteilige",
+   "context": "Grammatik: Zweiteilige Konnektoren",
+   "en": "two-part",
+   "lemma": "zweiteilig"
+  },
+  {
+   "form": "gleichwertige",
+   "context": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "equal, equivalent",
+   "lemma": "gleichwertig"
+  },
+  {
+   "form": "Elemente",
+   "context": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "elements",
+   "lemma": "das Element"
+  },
+  {
+   "form": "Texte",
+   "context": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "texts",
+   "lemma": "der Text"
+  },
+  {
+   "form": "dichter",
+   "context": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "denser, more concise",
+   "lemma": "dicht"
+  },
+  {
+   "form": "wirken",
+   "context": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "to come across, seem; to have an effect",
+   "lemma": ""
+  },
+  {
+   "form": "professionell",
+   "context": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "professional(ly)",
+   "lemma": ""
+  },
+  {
+   "form": "verbundenen",
+   "context": "Zweiteilige Konnektoren verbinden zwei gleichwertige Elemente. Sie machen Texte dichter und wirken in Bewerbungen professionell. Wichtig: Die beiden verbundenen Teile müssen grammatisch gleich sein.",
+   "en": "linked, connected",
+   "lemma": "verbunden"
+  },
+  {
+   "form": "sowohl",
+   "context": "sowohl … als auch",
+   "en": "both (sowohl … als auch)",
+   "lemma": ""
+  },
+  {
+   "form": "Verkauf",
+   "context": "Ich habe sowohl im Verkauf als auch im Einkauf gearbeitet.",
+   "en": "sales, selling",
+   "lemma": "der Verkauf"
+  },
+  {
+   "form": "Spanisch",
+   "context": "Sie spricht nicht nur Deutsch, sondern auch Spanisch.",
+   "en": "Spanish (the language)",
+   "lemma": ""
+  },
+  {
+   "form": "entweder",
+   "context": "entweder … oder",
+   "en": "either (entweder … oder)",
+   "lemma": ""
+  },
+  {
+   "form": "freitags",
+   "context": "Ich kann entweder montags oder freitags anfangen.",
+   "en": "on Fridays",
+   "lemma": ""
+  },
+  {
+   "form": "weder",
+   "context": "weder … noch",
+   "en": "neither (weder … noch)",
+   "lemma": ""
+  },
+  {
+   "form": "zwar",
+   "context": "zwar … aber",
+   "en": "admittedly (zwar … aber)",
+   "lemma": ""
+  },
+  {
+   "form": "Einschränkung",
+   "context": "Einschränkung",
+   "en": "limitation, restriction",
+   "lemma": "die Einschränkung"
+  },
+  {
+   "form": "Motivation",
+   "context": "Ich habe zwar wenig Erfahrung, aber viel Motivation.",
+   "en": "motivation",
+   "lemma": "die Motivation"
+  },
+  {
+   "form": "desto",
+   "context": "je … desto",
+   "en": "the (je … desto = the … the)",
+   "lemma": ""
+  },
+  {
+   "form": "sicherer",
+   "context": "Je mehr Praxis, desto sicherer wird man.",
+   "en": "more confident; safer",
+   "lemma": "sicher"
+  },
+  {
+   "form": "bringe",
+   "context": "Ich bringe sowohl technisches Verständnis als auch Teamfähigkeit mit.zwei Nomengruppen im Akkusativ",
+   "en": "bring; (… mit) bring along",
+   "lemma": "bringen"
+  },
+  {
+   "form": "technisches",
+   "context": "Ich bringe sowohl technisches Verständnis als auch Teamfähigkeit mit.zwei Nomengruppen im Akkusativ",
+   "en": "technical",
+   "lemma": "technisch"
+  },
+  {
+   "form": "Verständnis",
+   "context": "Ich bringe sowohl technisches Verständnis als auch Teamfähigkeit mit.zwei Nomengruppen im Akkusativ",
+   "en": "understanding",
+   "lemma": "das Verständnis"
+  },
+  {
+   "form": "Teamfähigkeit",
+   "context": "Ich bringe sowohl technisches Verständnis als auch Teamfähigkeit mit.zwei Nomengruppen im Akkusativ",
+   "en": "ability to work in a team",
+   "lemma": "die Teamfähigkeit"
+  },
+  {
+   "form": "Nomengruppen",
+   "context": "Ich bringe sowohl technisches Verständnis als auch Teamfähigkeit mit.zwei Nomengruppen im Akkusativ",
+   "en": "noun groups",
+   "lemma": "die Nomengruppe"
+  },
+  {
+   "form": "Weder",
+   "context": "Weder die Bezahlung noch die Arbeitszeiten haben mich überzeugt.weder … noch ist schon verneint — kein nicht dazu",
+   "en": "neither (weder … noch)",
+   "lemma": ""
+  },
+  {
+   "form": "Bezahlung",
+   "context": "Weder die Bezahlung noch die Arbeitszeiten haben mich überzeugt.weder … noch ist schon verneint — kein nicht dazu",
+   "en": "pay, payment",
+   "lemma": "die Bezahlung"
+  },
+  {
+   "form": "Arbeitszeiten",
+   "context": "Weder die Bezahlung noch die Arbeitszeiten haben mich überzeugt.weder … noch ist schon verneint — kein nicht dazu",
+   "en": "working hours",
+   "lemma": "die Arbeitszeit"
+  },
+  {
+   "form": "Bewerbung",
+   "context": "die Bewerbung, -en — EN: application · FR: la candidatureIhre Bewerbung hat uns überzeugt.",
+   "en": "application",
+   "lemma": "die Bewerbung"
+  },
+  {
+   "form": "candidatureIhre",
+   "context": "die Bewerbung, -en — EN: application · FR: la candidatureIhre Bewerbung hat uns überzeugt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Stellenanzeige",
+   "context": "die Stellenanzeige, -n — EN: job advertisement · FR: l'offre d'emploiIch habe Ihre Stellenanzeige im Internet gelesen.",
+   "en": "job advertisement",
+   "lemma": "die Stellenanzeige"
+  },
+  {
+   "form": "advertisement",
+   "context": "die Stellenanzeige, -n — EN: job advertisement · FR: l'offre d'emploiIch habe Ihre Stellenanzeige im Internet gelesen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'offre",
+   "context": "die Stellenanzeige, -n — EN: job advertisement · FR: l'offre d'emploiIch habe Ihre Stellenanzeige im Internet gelesen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'emploiIch",
+   "context": "die Stellenanzeige, -n — EN: job advertisement · FR: l'offre d'emploiIch habe Ihre Stellenanzeige im Internet gelesen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Anschreiben",
+   "context": "das Anschreiben, - — EN: cover letter · FR: la lettre de motivationDas Anschreiben sollte eine Seite lang sein.",
+   "en": "cover letter",
+   "lemma": "das Anschreiben"
+  },
+  {
+   "form": "cover",
+   "context": "das Anschreiben, - — EN: cover letter · FR: la lettre de motivationDas Anschreiben sollte eine Seite lang sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lettre",
+   "context": "das Anschreiben, - — EN: cover letter · FR: la lettre de motivationDas Anschreiben sollte eine Seite lang sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "motivationDas",
+   "context": "das Anschreiben, - — EN: cover letter · FR: la lettre de motivationDas Anschreiben sollte eine Seite lang sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Anlage",
+   "context": "die Anlage, -n — EN: attachment, enclosure · FR: la pièce jointeAnlagen: Lebenslauf und Zeugnisse.",
+   "en": "enclosure, attachment; facility",
+   "lemma": "die Anlage"
+  },
+  {
+   "form": "attachment",
+   "context": "die Anlage, -n — EN: attachment, enclosure · FR: la pièce jointeAnlagen: Lebenslauf und Zeugnisse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "enclosure",
+   "context": "die Anlage, -n — EN: attachment, enclosure · FR: la pièce jointeAnlagen: Lebenslauf und Zeugnisse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pièce",
+   "context": "die Anlage, -n — EN: attachment, enclosure · FR: la pièce jointeAnlagen: Lebenslauf und Zeugnisse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jointeAnlagen",
+   "context": "die Anlage, -n — EN: attachment, enclosure · FR: la pièce jointeAnlagen: Lebenslauf und Zeugnisse.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Zeugnisse",
+   "context": "die Anlage, -n — EN: attachment, enclosure · FR: la pièce jointeAnlagen: Lebenslauf und Zeugnisse.",
+   "en": "certificates, references",
+   "lemma": "das Zeugnis"
+  },
+  {
+   "form": "Zeugnis",
+   "context": "das Zeugnis, -se — EN: certificate, reference · FR: le certificat, l'attestationBitte legen Sie Ihre Zeugnisse bei.",
+   "en": "certificate, reference; school report",
+   "lemma": "das Zeugnis"
+  },
+  {
+   "form": "reference",
+   "context": "das Zeugnis, -se — EN: certificate, reference · FR: le certificat, l'attestationBitte legen Sie Ihre Zeugnisse bei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "certificat",
+   "context": "das Zeugnis, -se — EN: certificate, reference · FR: le certificat, l'attestationBitte legen Sie Ihre Zeugnisse bei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'attestationBitte",
+   "context": "das Zeugnis, -se — EN: certificate, reference · FR: le certificat, l'attestationBitte legen Sie Ihre Zeugnisse bei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'entretien",
+   "context": "das Vorstellungsgespräch, -e — EN: job interview · FR: l'entretien d'embaucheDas Vorstellungsgespräch ist am Dienstag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'embaucheDas",
+   "context": "das Vorstellungsgespräch, -e — EN: job interview · FR: l'entretien d'embaucheDas Vorstellungsgespräch ist am Dienstag.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Berufserfahrung",
+   "context": "die Berufserfahrung (Sg.) — EN: work experience · FR: l'expérience professionnelleIch habe fünf Jahre Berufserfahrung.",
+   "en": "work experience",
+   "lemma": "die Berufserfahrung"
+  },
+  {
+   "form": "professionnelleIch",
+   "context": "die Berufserfahrung (Sg.) — EN: work experience · FR: l'expérience professionnelleIch habe fünf Jahre Berufserfahrung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beherrschen",
+   "context": "beherrschen — EN: to have a command of · FR: maîtriserIch beherrsche Englisch in Wort und Schrift.",
+   "en": "to have a command of, master",
+   "lemma": ""
+  },
+  {
+   "form": "command",
+   "context": "beherrschen — EN: to have a command of · FR: maîtriserIch beherrsche Englisch in Wort und Schrift.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "maîtriserIch",
+   "context": "beherrschen — EN: to have a command of · FR: maîtriserIch beherrsche Englisch in Wort und Schrift.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beherrsche",
+   "context": "beherrschen — EN: to have a command of · FR: maîtriserIch beherrsche Englisch in Wort und Schrift.",
+   "en": "have a command of, master",
+   "lemma": "beherrschen"
+  },
+  {
+   "form": "Schrift",
+   "context": "beherrschen — EN: to have a command of · FR: maîtriserIch beherrsche Englisch in Wort und Schrift.",
+   "en": "writing; script",
+   "lemma": "die Schrift"
+  },
+  {
+   "form": "teamfähig",
+   "context": "teamfähig — EN: good at teamwork · FR: apte au travail en équipeIch bin teamfähig und belastbar.",
+   "en": "good at teamwork",
+   "lemma": ""
+  },
+  {
+   "form": "teamwork",
+   "context": "teamfähig — EN: good at teamwork · FR: apte au travail en équipeIch bin teamfähig und belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "apte",
+   "context": "teamfähig — EN: good at teamwork · FR: apte au travail en équipeIch bin teamfähig und belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "équipeIch",
+   "context": "teamfähig — EN: good at teamwork · FR: apte au travail en équipeIch bin teamfähig und belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "belastbar",
+   "context": "teamfähig — EN: good at teamwork · FR: apte au travail en équipeIch bin teamfähig und belastbar.",
+   "en": "resilient, able to work under pressure",
+   "lemma": ""
+  },
+  {
+   "form": "resilient",
+   "context": "belastbar — EN: resilient, able to work under pressure · FR: résistant au stressAuch unter Zeitdruck bin ich belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "under",
+   "context": "belastbar — EN: resilient, able to work under pressure · FR: résistant au stressAuch unter Zeitdruck bin ich belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pressure",
+   "context": "belastbar — EN: resilient, able to work under pressure · FR: résistant au stressAuch unter Zeitdruck bin ich belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "résistant",
+   "context": "belastbar — EN: resilient, able to work under pressure · FR: résistant au stressAuch unter Zeitdruck bin ich belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stressAuch",
+   "context": "belastbar — EN: resilient, able to work under pressure · FR: résistant au stressAuch unter Zeitdruck bin ich belastbar.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitdruck",
+   "context": "belastbar — EN: resilient, able to work under pressure · FR: résistant au stressAuch unter Zeitdruck bin ich belastbar.",
+   "en": "time pressure",
+   "lemma": "der Zeitdruck"
+  },
+  {
+   "form": "employer",
+   "context": "der Arbeitgeber, - — EN: employer · FR: l'employeurMein früherer Arbeitgeber gibt Ihnen gern Auskunft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'employeurMein",
+   "context": "der Arbeitgeber, - — EN: employer · FR: l'employeurMein früherer Arbeitgeber gibt Ihnen gern Auskunft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "früherer",
+   "context": "der Arbeitgeber, - — EN: employer · FR: l'employeurMein früherer Arbeitgeber gibt Ihnen gern Auskunft.",
+   "en": "former, previous",
+   "lemma": "früher"
+  },
+  {
+   "form": "Auskunft",
+   "context": "der Arbeitgeber, - — EN: employer · FR: l'employeurMein früherer Arbeitgeber gibt Ihnen gern Auskunft.",
+   "en": "information",
+   "lemma": "die Auskunft"
+  },
+  {
+   "form": "Verfügung",
+   "context": "zur Verfügung stehen — EN: to be available · FR: être disponibleAb dem 1. März stehe ich Ihnen zur Verfügung.",
+   "en": "disposal (zur Verfügung = available)",
+   "lemma": "die Verfügung"
+  },
+  {
+   "form": "available",
+   "context": "zur Verfügung stehen — EN: to be available · FR: être disponibleAb dem 1. März stehe ich Ihnen zur Verfügung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "disponibleAb",
+   "context": "zur Verfügung stehen — EN: to be available · FR: être disponibleAb dem 1. März stehe ich Ihnen zur Verfügung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "März",
+   "context": "zur Verfügung stehen — EN: to be available · FR: être disponibleAb dem 1. März stehe ich Ihnen zur Verfügung.",
+   "en": "March",
+   "lemma": "der März"
+  },
+  {
+   "form": "ausgeschriebene",
+   "context": "Auf Ihre ausgeschriebene Position passe ich besonders gut, weil …",
+   "en": "advertised",
+   "lemma": "ausgeschrieben"
+  },
+  {
+   "form": "Qualifikationen",
+   "context": "Qualifikationen nennen",
+   "en": "qualifications",
+   "lemma": "die Qualifikation"
+  },
+  {
+   "form": "verfüge",
+   "context": "Ich verfüge sowohl über … als auch über …",
+   "en": "have, possess (verfügen über)",
+   "lemma": "verfügen"
+  },
+  {
+   "form": "Tätigkeit",
+   "context": "Während meiner Tätigkeit bei … habe ich Erfahrungen in … gesammelt.",
+   "en": "work, activity; job",
+   "lemma": "die Tätigkeit"
+  },
+  {
+   "form": "gesammelt",
+   "context": "Während meiner Tätigkeit bei … habe ich Erfahrungen in … gesammelt.",
+   "en": "gathered, collected",
+   "lemma": "sammeln"
+  },
+  {
+   "form": "gehörte",
+   "context": "Zu meinen Aufgaben gehörte unter anderem …",
+   "en": "was part of, belonged",
+   "lemma": "gehören"
+  },
+  {
+   "form": "anderem",
+   "context": "Zu meinen Aufgaben gehörte unter anderem …",
+   "en": "other (unter anderem = among other things)",
+   "lemma": "andere"
+  },
+  {
+   "form": "persönlichen",
+   "context": "Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen.",
+   "en": "personal",
+   "lemma": "persönlich"
+  },
+  {
+   "form": "Rückfragen",
+   "context": "Für Rückfragen stehe ich Ihnen gern zur Verfügung.",
+   "en": "further questions, queries",
+   "lemma": "die Rückfrage"
+  },
+  {
+   "form": "freundlichen",
+   "context": "Mit freundlichen Grüßen",
+   "en": "friendly, kind",
+   "lemma": "freundlich"
+  },
+  {
+   "form": "Grüßen",
+   "context": "Mit freundlichen Grüßen",
+   "en": "greetings, regards",
+   "lemma": "der Gruß"
+  },
+  {
+   "form": "Anlagen",
+   "context": "Anlagen: Lebenslauf und Zeugnisse.",
+   "en": "enclosures, attachments",
+   "lemma": "die Anlage"
+  }
+ ]
+}
