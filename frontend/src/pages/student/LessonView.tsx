@@ -5,6 +5,8 @@ import { LessonHomework } from '../../components/assignments/LessonHomework';
 import { ErrorBlock,LoadingBlock } from '../../components/common/PageState';
 import { CoursePlayerShell } from '../../components/student/CoursePlayerShell';
 import { LessonDetail } from '../../components/student/LessonDetail';
+import { LessonV2 } from '../../components/learn/lesson/LessonV2';
+import { isLessonContent } from '../../components/learn/types';
 import { LessonOverview } from '../../components/student/LessonOverview';
 import { useApi } from '../../hooks/useApi';
 import { apiErrorMessage } from '../../lib/api';
@@ -42,7 +44,9 @@ export function StudentLesson() {
     {hero}
     <CoursePlayerShell course={course} slug={slug} activeLessonId={lessonId}>
       {lesson.loading || switching ? <LoadingBlock label="Opening lesson…" /> : lesson.error || !detail ? <section className="card border border-base-300 bg-base-100 p-6"><h2 className="mb-3 text-xl font-semibold">{lesson.error?.toLowerCase().includes('prerequisite') ? 'Complete the previous lesson first' : 'Lesson unavailable'}</h2><ErrorBlock message={lesson.error ?? 'Could not load this lesson.'} onRetry={lesson.refetch} />{prev ? <Link to={`/courses/${slug}/learn/${prev.id}`} className="btn btn-sm mt-4 self-start rounded-full">Previous lesson</Link> : null}</section> : <div className="space-y-3 roomy:space-y-4">
-        <section className="card min-w-0 border border-base-300 bg-base-100 p-4 xl:p-5 roomy:p-7"><LessonDetail key={lessonId} detail={detail} showHeader={false} slug={slug} completing={completing} actionError={actionError} onComplete={handleComplete} /></section>
+        {isLessonContent(detail.content)
+          ? <LessonV2 key={lessonId} lesson={detail} content={detail.content} base={`/courses/${slug}/learn/${lessonId}`} done={detail.progressStatus === 'COMPLETED'} completing={completing} actionError={actionError} onComplete={handleComplete} />
+          : <section className="card min-w-0 border border-base-300 bg-base-100 p-4 xl:p-5 roomy:p-7"><LessonDetail key={lessonId} detail={detail} showHeader={false} slug={slug} completing={completing} actionError={actionError} onComplete={handleComplete} /></section>}
         <LessonHomework lessonId={lessonId} />
         <nav aria-label="Lesson navigation" className="grid gap-3 sm:grid-cols-2">
           {prev ? <Link to={`/courses/${slug}/learn/${prev.id}`} className="card flex-row items-center gap-3 border border-base-300 bg-base-100 p-4 hover:border-primary"><FiChevronLeft aria-hidden className="shrink-0" /><div><p className="text-[0.625rem] text-muted">Previous lesson</p><p className="mt-1 text-xs font-semibold">{prev.title}</p></div></Link> : <span />}
