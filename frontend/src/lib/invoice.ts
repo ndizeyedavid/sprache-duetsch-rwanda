@@ -1,5 +1,5 @@
 import { apiGet, apiPost } from './api';
-import type { PaymentCheckout, PaypackClient } from './paypack';
+import type { MobileMoneyClient, MobileMoneyConfig, PaymentCheckout } from './mobile-money';
 import type { Money } from './services/money';
 
 export type InvoiceLineStatus = 'PAID' | 'OVERDUE' | 'PARTIALLY_PAID' | 'UPCOMING';
@@ -14,15 +14,15 @@ export interface PublicInvoice {
     nextDueAmount: Money; nextDueAt: string | null; currency: string; status: string;
   } | null;
   lines: { id: string; description: string; type: string; amount: Money; outstanding: Money; dueAt: string | null; status: InvoiceLineStatus }[];
-  paypack: { enabled: boolean; minimumAmount: number };
+  mobileMoney: MobileMoneyConfig;
   checkouts: PaymentCheckout[];
 }
 
 const base = (token: string) => `/invoices/${encodeURIComponent(token)}`;
 export const getInvoice = (token: string) => apiGet<PublicInvoice>(base(token));
 
-/** Paypack calls scoped to the invoice link instead of the signed-in student. */
-export const invoicePaypackClient = (token: string): PaypackClient => ({
+/** Mobile-money calls scoped to the invoice link instead of the signed-in student. */
+export const invoiceMobileMoneyClient = (token: string): MobileMoneyClient => ({
   list: () => getInvoice(token).then(invoice => invoice.checkouts),
   check: id => apiGet<PaymentCheckout>(`${base(token)}/checkouts/${id}`),
   start: body => apiPost<PaymentCheckout>(`${base(token)}/pay`, body),
