@@ -1,0 +1,629 @@
+{
+ "level": "A2",
+ "lesson": 20,
+ "title": "Bücher und Presse — Ich durfte eigentlich keine Comics lesen",
+ "lines": [
+  {
+   "de": "Über Lesegewohnheiten früher und heute sprechen.",
+   "en": "Talk about reading habits in the past and today."
+  },
+  {
+   "de": "Textsorte: Magazintext · Interview",
+   "en": "Text type: Magazine article · Interview"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Lesen Teil 2; telc A2 Lesen",
+   "en": "Exam link: Goethe A2 Reading part 2; telc A2 Reading"
+  },
+  {
+   "de": "über Bücher, Zeitungen und Lesegewohnheiten sprechen",
+   "en": "talk about books, newspapers and reading habits"
+  },
+  {
+   "de": "Interesse und Desinteresse ausdrücken",
+   "en": "express interest and lack of interest"
+  },
+  {
+   "de": "das Präteritum der Modalverben bilden",
+   "en": "form the simple past (Präteritum) of modal verbs"
+  },
+  {
+   "de": "Grammatik: Präteritum der Modalverben",
+   "en": "Grammar: Simple past (Präteritum) of modal verbs"
+  },
+  {
+   "de": "Über die Vergangenheit sprechen Modalverben fast immer im Präteritum — das ist kürzer als das Perfekt und klingt natürlicher. Achtung: Der Umlaut fällt weg.",
+   "en": "When talking about the past, modal verbs are almost always used in the simple past (Präteritum) — it is shorter than the present perfect (Perfekt) and sounds more natural. Watch out: the umlaut is dropped."
+  },
+  {
+   "de": "Präteritum",
+   "en": "Simple past"
+  },
+  {
+   "de": "durfte",
+   "en": "was allowed to"
+  },
+  {
+   "de": "Ich durfte keine Comics lesen.",
+   "en": "I wasn't allowed to read comics."
+  },
+  {
+   "de": "konnte",
+   "en": "could, was able to"
+  },
+  {
+   "de": "Mit sechs konnte ich schon lesen.",
+   "en": "At six I could already read."
+  },
+  {
+   "de": "musste",
+   "en": "had to"
+  },
+  {
+   "de": "Wir mussten jeden Tag eine Seite lesen.",
+   "en": "We had to read a page every day."
+  },
+  {
+   "de": "wollte",
+   "en": "wanted (to)"
+  },
+  {
+   "de": "Ich wollte immer Abenteuerbücher.",
+   "en": "I always wanted adventure books."
+  },
+  {
+   "de": "Ich sollte lieber lernen.",
+   "en": "I was supposed to study instead."
+  },
+  {
+   "de": "mochte",
+   "en": "liked"
+  },
+  {
+   "de": "Gedichte mochte ich nie.",
+   "en": "I never liked poems."
+  },
+  {
+   "de": "Als Kind durfte ich abends nicht lange lesen.dürfen → durfte, ohne Umlaut",
+   "en": "As a child, I wasn't allowed to read for long in the evenings. — dürfen → durfte, without an umlaut"
+  },
+  {
+   "de": "Wir mussten in der Schule viel auswendig lernen.müssen → musste",
+   "en": "We had to learn a lot by heart at school. — müssen → musste"
+  },
+  {
+   "de": "Ich konnte das Buch einfach nicht weglegen.können → konnte",
+   "en": "I just couldn't put the book down. — können → konnte"
+  },
+  {
+   "de": "Tipp: ich und er/sie haben dieselbe Form und keine Endung: ich durfte, er durfte.",
+   "en": "Tip: ich and er/sie have the same form and no ending: ich durfte, er durfte."
+  },
+  {
+   "de": "das Buch, ¨-er — EN: book · FR: le livreDas Buch hat mir sehr gefallen.",
+   "en": "Example: I really liked the book."
+  },
+  {
+   "de": "die Zeitung, -en — EN: newspaper · FR: le journalIch lese die Zeitung online.",
+   "en": "Example: I read the newspaper online."
+  },
+  {
+   "de": "die Zeitschrift, -en — EN: magazine · FR: le magazineDiese Zeitschrift erscheint jeden Monat.",
+   "en": "Example: This magazine comes out every month."
+  },
+  {
+   "de": "der Comic, -s — EN: comic · FR: la bande dessinéeAls Kind liebte ich Comics.",
+   "en": "Example: As a child, I loved comics."
+  },
+  {
+   "de": "der Roman, -e — EN: novel · FR: le romanSie schreibt gerade ihren zweiten Roman.",
+   "en": "Example: She is writing her second novel at the moment."
+  },
+  {
+   "de": "der Artikel, - — EN: article · FR: l'articleDer Artikel war sehr interessant.",
+   "en": "Example: The article was very interesting."
+  },
+  {
+   "de": "die Schlagzeile, -n — EN: headline · FR: le titreDie Schlagzeile stand auf der ersten Seite.",
+   "en": "Example: The headline was on the front page."
+  },
+  {
+   "de": "sich interessieren für — EN: to be interested in · FR: s'intéresser àFür Politik interessiere ich mich wenig.",
+   "en": "Example: I'm not very interested in politics."
+  },
+  {
+   "de": "langweilig finden — EN: to find boring · FR: trouver ennuyeuxKrimis finde ich meistens langweilig.",
+   "en": "Example: I usually find crime novels boring."
+  },
+  {
+   "de": "die Bibliothek, -en — EN: library · FR: la bibliothèqueIn der Bibliothek kann man kostenlos lesen.",
+   "en": "Example: You can read for free in the library."
+  },
+  {
+   "de": "ausleihen (lieh aus) — EN: to borrow · FR: emprunterIch habe mir drei Bücher ausgeliehen.",
+   "en": "Example: I have borrowed three books."
+  },
+  {
+   "de": "die Geschichte, -n — EN: story · FR: l'histoireDie Geschichte ist wirklich spannend.",
+   "en": "Example: The story is really exciting."
+  },
+  {
+   "de": "Interesse ausdrücken",
+   "en": "Expressing interest"
+  },
+  {
+   "de": "Dafür interessiere ich mich sehr.",
+   "en": "I'm very interested in that."
+  },
+  {
+   "de": "Das lese ich besonders gern.",
+   "en": "I especially like reading that."
+  },
+  {
+   "de": "Das Thema finde ich spannend.",
+   "en": "I find the topic exciting."
+  },
+  {
+   "de": "Desinteresse ausdrücken",
+   "en": "Expressing lack of interest"
+  },
+  {
+   "de": "Das interessiert mich überhaupt nicht.",
+   "en": "That doesn't interest me at all."
+  },
+  {
+   "de": "Damit kann ich wenig anfangen.",
+   "en": "That doesn't mean much to me."
+  },
+  {
+   "de": "Das ist nicht so mein Thema.",
+   "en": "That's not really my thing."
+  },
+  {
+   "de": "Als Kind durfte ich …",
+   "en": "As a child, I was allowed to …"
+  },
+  {
+   "de": "Wir mussten damals …",
+   "en": "Back then we had to …"
+  },
+  {
+   "de": "Früher konnte ich stundenlang lesen.",
+   "en": "In the past I could read for hours."
+  },
+  {
+   "de": "Dialog: Was hast du früher gelesen?",
+   "en": "Dialogue: What did you read when you were younger?"
+  },
+  {
+   "de": "Jana: Hast du als Kind viel gelesen?",
+   "en": "Jana: Did you read a lot as a child?"
+  },
+  {
+   "de": "Hakim: Ja, aber ich durfte eigentlich keine Comics lesen.",
+   "en": "Hakim: Yes, but actually I wasn't allowed to read comics."
+  },
+  {
+   "de": "Jana: Wirklich? Warum nicht?",
+   "en": "Jana: Really? Why not?"
+  },
+  {
+   "de": "Hakim: Meine Eltern fanden das zu einfach. Ich sollte lieber Romane lesen.",
+   "en": "Hakim: My parents thought they were too simple. I was supposed to read novels instead."
+  },
+  {
+   "de": "Jana: Und, hast du?",
+   "en": "Jana: And did you?"
+  },
+  {
+   "de": "Hakim: Manchmal. Aber die Comics konnte ich einfach nicht weglegen.",
+   "en": "Hakim: Sometimes. But I just couldn't put the comics down."
+  },
+  {
+   "de": "Das Buch hat mir sehr gefallen.",
+   "en": "I really liked the book."
+  },
+  {
+   "de": "Ich lese die Zeitung online.",
+   "en": "I read the newspaper online."
+  },
+  {
+   "de": "Diese Zeitschrift erscheint jeden Monat.",
+   "en": "This magazine comes out every month."
+  },
+  {
+   "de": "Als Kind liebte ich Comics.",
+   "en": "As a child, I loved comics."
+  },
+  {
+   "de": "Sie schreibt gerade ihren zweiten Roman.",
+   "en": "She is writing her second novel at the moment."
+  },
+  {
+   "de": "Der Artikel war sehr interessant.",
+   "en": "The article was very interesting."
+  },
+  {
+   "de": "Die Schlagzeile stand auf der ersten Seite.",
+   "en": "The headline was on the front page."
+  },
+  {
+   "de": "Für Politik interessiere ich mich wenig.",
+   "en": "I'm not very interested in politics."
+  },
+  {
+   "de": "Krimis finde ich meistens langweilig.",
+   "en": "I usually find crime novels boring."
+  },
+  {
+   "de": "In der Bibliothek kann man kostenlos lesen.",
+   "en": "You can read for free in the library."
+  },
+  {
+   "de": "Ich habe mir drei Bücher ausgeliehen.",
+   "en": "I have borrowed three books."
+  },
+  {
+   "de": "Die Geschichte ist wirklich spannend.",
+   "en": "The story is really exciting."
+  },
+  {
+   "de": "Als Kind ___ ich keine Comics lesen. (dürfen, Präteritum)",
+   "en": "As a child, I ___ read any comics. (dürfen, simple past)"
+  },
+  {
+   "de": "Wir ___ in der Schule viel lesen.",
+   "en": "We ___ read a lot at school."
+  },
+  {
+   "de": "Mit sechs Jahren ___ ich schon lesen. (können, Präteritum)",
+   "en": "At the age of six, I ___ already read. (können, simple past)"
+  },
+  {
+   "de": "Welche Form hat KEINEN Umlaut?",
+   "en": "Which form has NO umlaut?"
+  },
+  {
+   "de": "Gedichte ___ ich nie. (mögen, Präteritum)",
+   "en": "I never ___ poems. (mögen, simple past)"
+  },
+  {
+   "de": "Schreiben Sie kurz über Ihre Lesegewohnheiten als Kind und heute. Umfang: 50–70 Wörter Checkliste: • Benutzen Sie mindestens drei Modalverben im Präteritum. • Vergleichen Sie früher und heute. • Schreiben Sie, was Sie heute am liebsten lesen.",
+   "en": "Write briefly about your reading habits as a child and today. Length: 50–70 words Checklist: • Use at least three modal verbs in the simple past. • Compare the past and today. • Write what you like reading most today."
+  },
+  {
+   "de": "dürfen → durfte, ohne Umlaut.",
+   "en": "dürfen → durfte, without an umlaut."
+  },
+  {
+   "de": "müssen → mussten im Präteritum, ohne Umlaut.",
+   "en": "müssen → mussten in the simple past, without an umlaut."
+  },
+  {
+   "de": "können → konnte.",
+   "en": "können (can) → konnte (could)."
+  },
+  {
+   "de": "Im Präteritum fällt der Umlaut weg; mit Umlaut wäre es der Konjunktiv II.",
+   "en": "In the simple past, the umlaut is dropped; with an umlaut it would be the subjunctive (Konjunktiv II)."
+  },
+  {
+   "de": "mögen → mochte.",
+   "en": "mögen (like) → mochte (liked)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Lesegewohnheiten",
+   "context": "Über Lesegewohnheiten früher und heute sprechen.",
+   "en": "reading habits",
+   "lemma": "die Lesegewohnheit"
+  },
+  {
+   "form": "Zeitungen",
+   "context": "über Bücher, Zeitungen und Lesegewohnheiten sprechen",
+   "en": "newspapers",
+   "lemma": "die Zeitung"
+  },
+  {
+   "form": "Interesse",
+   "context": "Interesse und Desinteresse ausdrücken",
+   "en": "interest",
+   "lemma": "das Interesse"
+  },
+  {
+   "form": "Desinteresse",
+   "context": "Interesse und Desinteresse ausdrücken",
+   "en": "lack of interest",
+   "lemma": "das Desinteresse"
+  },
+  {
+   "form": "durfte",
+   "context": "durfte",
+   "en": "was allowed to",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "Comics",
+   "context": "Ich durfte keine Comics lesen.",
+   "en": "comics",
+   "lemma": "der Comic"
+  },
+  {
+   "form": "Seite",
+   "context": "Wir mussten jeden Tag eine Seite lesen.",
+   "en": "page; side",
+   "lemma": "die Seite"
+  },
+  {
+   "form": "Abenteuerbücher",
+   "context": "Ich wollte immer Abenteuerbücher.",
+   "en": "adventure books",
+   "lemma": "das Abenteuerbuch"
+  },
+  {
+   "form": "Gedichte",
+   "context": "Gedichte mochte ich nie.",
+   "en": "poems",
+   "lemma": "das Gedicht"
+  },
+  {
+   "form": "weglegen",
+   "context": "Ich konnte das Buch einfach nicht weglegen.können → konnte",
+   "en": "to put down, to put away",
+   "lemma": ""
+  },
+  {
+   "form": "newspaper",
+   "context": "die Zeitung, -en — EN: newspaper · FR: le journalIch lese die Zeitung online.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "journalIch",
+   "context": "die Zeitung, -en — EN: newspaper · FR: le journalIch lese die Zeitung online.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "lese",
+   "context": "die Zeitung, -en — EN: newspaper · FR: le journalIch lese die Zeitung online.",
+   "en": "read",
+   "lemma": "lesen"
+  },
+  {
+   "form": "Zeitschrift",
+   "context": "die Zeitschrift, -en — EN: magazine · FR: le magazineDiese Zeitschrift erscheint jeden Monat.",
+   "en": "magazine",
+   "lemma": "die Zeitschrift"
+  },
+  {
+   "form": "magazine",
+   "context": "die Zeitschrift, -en — EN: magazine · FR: le magazineDiese Zeitschrift erscheint jeden Monat.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "magazineDiese",
+   "context": "die Zeitschrift, -en — EN: magazine · FR: le magazineDiese Zeitschrift erscheint jeden Monat.",
+   "en": "Diese = this",
+   "lemma": ""
+  },
+  {
+   "form": "erscheint",
+   "context": "die Zeitschrift, -en — EN: magazine · FR: le magazineDiese Zeitschrift erscheint jeden Monat.",
+   "en": "comes out, appears",
+   "lemma": "erscheinen"
+  },
+  {
+   "form": "Comic",
+   "context": "der Comic, -s — EN: comic · FR: la bande dessinéeAls Kind liebte ich Comics.",
+   "en": "comic",
+   "lemma": "der Comic"
+  },
+  {
+   "form": "comic",
+   "context": "der Comic, -s — EN: comic · FR: la bande dessinéeAls Kind liebte ich Comics.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bande",
+   "context": "der Comic, -s — EN: comic · FR: la bande dessinéeAls Kind liebte ich Comics.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dessinéeAls",
+   "context": "der Comic, -s — EN: comic · FR: la bande dessinéeAls Kind liebte ich Comics.",
+   "en": "Als Kind = as a child",
+   "lemma": ""
+  },
+  {
+   "form": "liebte",
+   "context": "der Comic, -s — EN: comic · FR: la bande dessinéeAls Kind liebte ich Comics.",
+   "en": "loved",
+   "lemma": "lieben"
+  },
+  {
+   "form": "Roman",
+   "context": "der Roman, -e — EN: novel · FR: le romanSie schreibt gerade ihren zweiten Roman.",
+   "en": "novel",
+   "lemma": "der Roman"
+  },
+  {
+   "form": "novel",
+   "context": "der Roman, -e — EN: novel · FR: le romanSie schreibt gerade ihren zweiten Roman.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "romanSie",
+   "context": "der Roman, -e — EN: novel · FR: le romanSie schreibt gerade ihren zweiten Roman.",
+   "en": "Sie = she",
+   "lemma": ""
+  },
+  {
+   "form": "article",
+   "context": "der Artikel, - — EN: article · FR: l'articleDer Artikel war sehr interessant.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'articleDer",
+   "context": "der Artikel, - — EN: article · FR: l'articleDer Artikel war sehr interessant.",
+   "en": "Der = the",
+   "lemma": ""
+  },
+  {
+   "form": "Schlagzeile",
+   "context": "die Schlagzeile, -n — EN: headline · FR: le titreDie Schlagzeile stand auf der ersten Seite.",
+   "en": "headline",
+   "lemma": "die Schlagzeile"
+  },
+  {
+   "form": "headline",
+   "context": "die Schlagzeile, -n — EN: headline · FR: le titreDie Schlagzeile stand auf der ersten Seite.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "titreDie",
+   "context": "die Schlagzeile, -n — EN: headline · FR: le titreDie Schlagzeile stand auf der ersten Seite.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "interested",
+   "context": "sich interessieren für — EN: to be interested in · FR: s'intéresser àFür Politik interessiere ich mich wenig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'intéresser",
+   "context": "sich interessieren für — EN: to be interested in · FR: s'intéresser àFür Politik interessiere ich mich wenig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àFür",
+   "context": "sich interessieren für — EN: to be interested in · FR: s'intéresser àFür Politik interessiere ich mich wenig.",
+   "en": "Für = in (interessieren für)",
+   "lemma": ""
+  },
+  {
+   "form": "Politik",
+   "context": "sich interessieren für — EN: to be interested in · FR: s'intéresser àFür Politik interessiere ich mich wenig.",
+   "en": "politics",
+   "lemma": "die Politik"
+  },
+  {
+   "form": "interessiere",
+   "context": "sich interessieren für — EN: to be interested in · FR: s'intéresser àFür Politik interessiere ich mich wenig.",
+   "en": "(… mich) am interested",
+   "lemma": "sich interessieren"
+  },
+  {
+   "form": "trouver",
+   "context": "langweilig finden — EN: to find boring · FR: trouver ennuyeuxKrimis finde ich meistens langweilig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ennuyeuxKrimis",
+   "context": "langweilig finden — EN: to find boring · FR: trouver ennuyeuxKrimis finde ich meistens langweilig.",
+   "en": "Krimis = crime novels",
+   "lemma": "der Krimi"
+  },
+  {
+   "form": "library",
+   "context": "die Bibliothek, -en — EN: library · FR: la bibliothèqueIn der Bibliothek kann man kostenlos lesen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bibliothèqueIn",
+   "context": "die Bibliothek, -en — EN: library · FR: la bibliothèqueIn der Bibliothek kann man kostenlos lesen.",
+   "en": "In = in",
+   "lemma": ""
+  },
+  {
+   "form": "ausleihen",
+   "context": "ausleihen (lieh aus) — EN: to borrow · FR: emprunterIch habe mir drei Bücher ausgeliehen.",
+   "en": "to borrow; to lend",
+   "lemma": ""
+  },
+  {
+   "form": "lieh",
+   "context": "ausleihen (lieh aus) — EN: to borrow · FR: emprunterIch habe mir drei Bücher ausgeliehen.",
+   "en": "(… aus) borrowed; lent",
+   "lemma": "leihen"
+  },
+  {
+   "form": "borrow",
+   "context": "ausleihen (lieh aus) — EN: to borrow · FR: emprunterIch habe mir drei Bücher ausgeliehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "emprunterIch",
+   "context": "ausleihen (lieh aus) — EN: to borrow · FR: emprunterIch habe mir drei Bücher ausgeliehen.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "ausgeliehen",
+   "context": "ausleihen (lieh aus) — EN: to borrow · FR: emprunterIch habe mir drei Bücher ausgeliehen.",
+   "en": "borrowed",
+   "lemma": "ausleihen"
+  },
+  {
+   "form": "l'histoireDie",
+   "context": "die Geschichte, -n — EN: story · FR: l'histoireDie Geschichte ist wirklich spannend.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "stundenlang",
+   "context": "Früher konnte ich stundenlang lesen.",
+   "en": "for hours",
+   "lemma": ""
+  },
+  {
+   "form": "gelesen",
+   "context": "Dialog: Was hast du früher gelesen?",
+   "en": "read (past participle)",
+   "lemma": "lesen"
+  },
+  {
+   "form": "Jana",
+   "context": "Jana: Hast du als Kind viel gelesen?",
+   "en": "Jana (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Hakim",
+   "context": "Hakim: Ja, aber ich durfte eigentlich keine Comics lesen.",
+   "en": "Hakim (name)",
+   "lemma": ""
+  },
+  {
+   "form": "fanden",
+   "context": "Hakim: Meine Eltern fanden das zu einfach. Ich sollte lieber Romane lesen.",
+   "en": "found, thought",
+   "lemma": "finden"
+  },
+  {
+   "form": "Romane",
+   "context": "Hakim: Meine Eltern fanden das zu einfach. Ich sollte lieber Romane lesen.",
+   "en": "novels",
+   "lemma": "der Roman"
+  },
+  {
+   "form": "Krimis",
+   "context": "Krimis finde ich meistens langweilig.",
+   "en": "crime novels, crime shows",
+   "lemma": "der Krimi"
+  }
+ ]
+}
