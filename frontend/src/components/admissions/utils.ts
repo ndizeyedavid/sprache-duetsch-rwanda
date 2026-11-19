@@ -42,3 +42,11 @@ export const applyLink = (levelId?: string, intakeId?: string): string => {
   const text = params.toString();
   return text ? `/apply?${text}` : '/apply';
 };
+
+/** wa.me number for a phone typed any common Rwandan way ("0788…", "+250 788…", "788…"); null when unusable. */
+export function whatsappNumber(phone: string | null | undefined): string | null {
+  const digits = (phone ?? '').replace(/\D/g, '');
+  if (digits.length === 9) return `250${digits}`;
+  if (digits.length === 10 && digits.startsWith('0')) return `250${digits.slice(1)}`;
+  return digits.length >= 11 ? digits : null;
+}
