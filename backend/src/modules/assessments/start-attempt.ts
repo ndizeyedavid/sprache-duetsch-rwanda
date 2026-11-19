@@ -22,6 +22,7 @@ export const startAttempt = async (userId: string, assessmentId: string) => tran
       availableFrom: true,
       availableUntil: true,
       prerequisiteLessonId: true,
+      sections: true,
       questions: { orderBy: { order: "asc" }, include: { question: true } },
     },
   });
@@ -86,7 +87,7 @@ export const startAttempt = async (userId: string, assessmentId: string) => tran
       status: "IN_PROGRESS",
       maxScore: new Prisma.Decimal(maxScore),
       startedAt: now,
-      questionSnapshot: JSON.parse(JSON.stringify({ questions: assessment.questions, durationMinutes: assessment.durationMinutes, passMark: assessment.passMark })) as Prisma.InputJsonValue,
+      questionSnapshot: JSON.parse(JSON.stringify({ questions: assessment.questions, durationMinutes: assessment.durationMinutes, passMark: assessment.passMark, sections: assessment.sections ?? [] })) as Prisma.InputJsonValue,
     },
   });
 
