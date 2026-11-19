@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { FiBookOpen,FiFileText,FiHelpCircle } from "react-icons/fi";
+import { FiAward,FiBookOpen,FiFileText,FiHelpCircle } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { ResourceArticles } from "../../components/admin/ResourceArticles";
+import { ResourceExamPapers } from "../../components/admin/ResourceExamPapers";
 import { ResourceFaqs } from "../../components/admin/ResourceFaqs";
 import { ResourceLibrary } from "../../components/admin/ResourceLibrary";
 import { WORKSPACE_CONTEXT } from "../../components/admin/workspace-context";
@@ -12,13 +13,14 @@ const SECTIONS = [
   { title: "Library", hint: "Find level materials and lessons", icon: FiBookOpen },
   { title: "Articles", hint: "Publish stories and school updates", icon: FiFileText },
   { title: "FAQs", hint: "Clear answers to common questions", icon: FiHelpCircle },
+  { title: "Past papers", hint: "Exam papers with audio and answers", icon: FiAward },
 ] as const;
 const context = WORKSPACE_CONTEXT.resources;
 
 export function AdminResources() {
   const [section, setSection] = useState<string>("Library");
   const sections = (
-    <nav aria-label="Resource sections" className="grid gap-2 sm:grid-cols-3">
+    <nav aria-label="Resource sections" className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
       {SECTIONS.map(({ title, hint, icon: Icon }) => (
         <button key={title} type="button" aria-pressed={section === title} onClick={() => setSection(title)}
           className={`flex items-center gap-3 rounded-box border px-3 py-2.5 text-left transition ${section === title ? "border-base-content bg-base-200" : "border-base-300 bg-base-100 hover:bg-base-200"}`}>
@@ -34,9 +36,9 @@ export function AdminResources() {
   return (
     <div className="space-y-5">
       <PageHero eyebrow={context.category} icon={context.icon} title="Resources" art="notes" footer={sections}
-        description="Lesson materials, articles and answers to common questions, gathered in one library for every level."
+        description="Lesson materials, articles, answers to common questions and past papers, gathered in one library for every level."
         actions={context.links.map((link) => <Link key={link.to} to={link.to} className={heroGhost}>{link.label}</Link>)} />
-      {section === "Library" ? <ResourceLibrary /> : section === "Articles" ? <ResourceArticles isStaff /> : <ResourceFaqs isStaff />}
+      {section === "Library" ? <ResourceLibrary /> : section === "Articles" ? <ResourceArticles isStaff /> : section === "Past papers" ? <ResourceExamPapers /> : <ResourceFaqs isStaff />}
     </div>
   );
 }
