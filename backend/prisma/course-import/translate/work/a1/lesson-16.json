@@ -1,0 +1,649 @@
+{
+ "level": "A1",
+ "lesson": 16,
+ "title": "Probleme und Hilfe — Vor zwei Tagen ging alles noch",
+ "lines": [
+  {
+   "de": "Ein Problem beschreiben und sagen, seit wann es besteht.",
+   "en": "Describe a problem and say how long it has been going on."
+  },
+  {
+   "de": "Textsorte: Gespräch · Reklamation",
+   "en": "Text type: Conversation · Complaint"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Sprechen Teil 3; telc A1 Hören",
+   "en": "Exam link: Start Deutsch 1 Speaking part 3; telc A1 Listening"
+  },
+  {
+   "de": "ein Problem beschreiben",
+   "en": "describe a problem"
+  },
+  {
+   "de": "Zeitangaben mit vor, nach und in machen",
+   "en": "give times with vor, nach and in"
+  },
+  {
+   "de": "eine Dauer mit für angeben",
+   "en": "give a duration with für"
+  },
+  {
+   "de": "Grammatik: Temporale Präpositionen vor, nach, in + Dativ",
+   "en": "Grammar: prepositions of time (temporale Präpositionen) vor, nach, in + dative (Dativ)"
+  },
+  {
+   "de": "Diese drei Präpositionen antworten auf die Frage Wann? Sie stehen alle mit dem Dativ.",
+   "en": "These three prepositions answer the question Wann? (When?). They all take the dative."
+  },
+  {
+   "de": "vor",
+   "en": "ago; before"
+  },
+  {
+   "de": "in der Vergangenheit",
+   "en": "in the past"
+  },
+  {
+   "de": "vor einem Monat, vor zwei Tagen",
+   "en": "a month ago, two days ago"
+  },
+  {
+   "de": "nach",
+   "en": "after"
+  },
+  {
+   "de": "danach",
+   "en": "afterwards"
+  },
+  {
+   "de": "nach der Arbeit, nach einer Stunde",
+   "en": "after work, after an hour"
+  },
+  {
+   "de": "in",
+   "en": "in"
+  },
+  {
+   "de": "in der Zukunft",
+   "en": "in the future"
+  },
+  {
+   "de": "in einer Woche, in zwei Jahren",
+   "en": "in a week, in two years"
+  },
+  {
+   "de": "Vor zwei Tagen ging alles noch.vor + Dativ Plural: zwei Tagen",
+   "en": "Two days ago everything was still working. vor + dative plural: zwei Tagen"
+  },
+  {
+   "de": "In einer Woche komme ich wieder.in + Dativ für die Zukunft",
+   "en": "I'll come back in a week. in + dative for the future"
+  },
+  {
+   "de": "Nach der Arbeit gehe ich einkaufen.nach + Dativ feminin",
+   "en": "After work I go shopping. nach + dative feminine"
+  },
+  {
+   "de": "Tipp: Im Dativ Plural bekommt das Nomen ein -n: vor zwei Tagen, in drei Wochen, nach zwei Stunden.",
+   "en": "Tip: In the dative plural, the noun gets an -n: vor zwei Tagen (two days ago), in drei Wochen (in three weeks), nach zwei Stunden (after two hours)."
+  },
+  {
+   "de": "Grammatik: Die Präposition für + Akkusativ",
+   "en": "Grammar: the preposition für + accusative (Akkusativ)"
+  },
+  {
+   "de": "für antwortet auf die Frage Wie lange? und steht mit dem Akkusativ.",
+   "en": "für answers the question Wie lange? (How long?) and takes the accusative."
+  },
+  {
+   "de": "Frage",
+   "en": "Question"
+  },
+  {
+   "de": "Antwort",
+   "en": "Answer"
+  },
+  {
+   "de": "Wie lange?",
+   "en": "How long?"
+  },
+  {
+   "de": "für einen Tag",
+   "en": "for a day"
+  },
+  {
+   "de": "für ein Jahr",
+   "en": "for a year"
+  },
+  {
+   "de": "für eine Woche",
+   "en": "for a week"
+  },
+  {
+   "de": "für zwei Wochen",
+   "en": "for two weeks"
+  },
+  {
+   "de": "Ich brauche das Gerät nur für einen Tag.für + Akkusativ maskulin: einen",
+   "en": "I only need the device for one day. für + accusative masculine: einen"
+  },
+  {
+   "de": "Tipp: Unterscheiden Sie: seit (hat angefangen und dauert an) und für (geplante Dauer).",
+   "en": "Tip: Note the difference: seit (has started and is still going on) and für (planned duration)."
+  },
+  {
+   "de": "das Problem, -e — EN: problem · FR: le problèmeWir haben hier ein Problem.",
+   "en": "Example: We have a problem here."
+  },
+  {
+   "de": "kaputt — EN: broken · FR: casséDer Drucker ist kaputt.",
+   "en": "Example: The printer is broken."
+  },
+  {
+   "de": "funktionieren — EN: to work, function · FR: fonctionnerDas funktioniert leider nicht.",
+   "en": "Example: Unfortunately, that doesn't work."
+  },
+  {
+   "de": "reparieren — EN: to repair · FR: réparerKönnen Sie das reparieren?",
+   "en": "Example: Can you repair that?"
+  },
+  {
+   "de": "umtauschen — EN: to exchange · FR: échangerKann ich das umtauschen?",
+   "en": "Example: Can I exchange this?"
+  },
+  {
+   "de": "die Garantie (Sg.) — EN: guarantee · FR: la garantieEs ist noch Garantie drauf.",
+   "en": "Example: It is still under guarantee."
+  },
+  {
+   "de": "die Rechnung, -en — EN: receipt, bill · FR: le reçu, la factureHaben Sie die Rechnung?",
+   "en": "Example: Do you have the receipt?"
+  },
+  {
+   "de": "gekauft haben — EN: to have bought · FR: avoir achetéIch habe es vor einem Monat gekauft.",
+   "en": "Example: I bought it a month ago."
+  },
+  {
+   "de": "seit — EN: since, for · FR: depuisSeit zwei Tagen geht es nicht mehr.",
+   "en": "Example: It hasn't worked for two days."
+  },
+  {
+   "de": "vor / nach / in — EN: ago / after / in · FR: il y a / après / dansVor zwei Tagen war alles gut.",
+   "en": "Example: Two days ago everything was fine."
+  },
+  {
+   "de": "leider — EN: unfortunately · FR: malheureusementLeider kann ich nicht helfen.",
+   "en": "Example: Unfortunately, I can't help."
+  },
+  {
+   "de": "sofort — EN: immediately · FR: tout de suiteIch komme sofort.",
+   "en": "Example: I'm coming right away."
+  },
+  {
+   "de": "Wir haben hier ein Problem.",
+   "en": "We have a problem here."
+  },
+  {
+   "de": "Das funktioniert nicht mehr.",
+   "en": "That doesn't work any more."
+  },
+  {
+   "de": "Vor zwei Tagen ging alles noch.",
+   "en": "Two days ago everything was still working."
+  },
+  {
+   "de": "Was kann ich machen?",
+   "en": "What can I do?"
+  },
+  {
+   "de": "Können Sie das reparieren?",
+   "en": "Can you repair that?"
+  },
+  {
+   "de": "Kein Problem, das machen wir.",
+   "en": "No problem, we'll do that."
+  },
+  {
+   "de": "Haben Sie die Rechnung?",
+   "en": "Do you have the receipt?"
+  },
+  {
+   "de": "Das dauert ungefähr eine Woche.",
+   "en": "That takes about a week."
+  },
+  {
+   "de": "Dialog: Im Elektrogeschäft",
+   "en": "Dialogue: At the electronics shop"
+  },
+  {
+   "de": "Kundin: Guten Tag. Wir haben hier ein Problem.",
+   "en": "Customer: Hello. We have a problem here."
+  },
+  {
+   "de": "Verkäufer: Was ist denn los?",
+   "en": "Shop assistant: What's the matter?"
+  },
+  {
+   "de": "Kundin: Der Drucker funktioniert nicht mehr. Vor zwei Tagen ging alles noch.",
+   "en": "Customer: The printer doesn't work any more. Two days ago everything was still working."
+  },
+  {
+   "de": "Verkäufer: Wann haben Sie ihn gekauft?",
+   "en": "Shop assistant: When did you buy it?"
+  },
+  {
+   "de": "Kundin: Vor einem Monat. Hier ist die Rechnung.",
+   "en": "Customer: A month ago. Here is the receipt."
+  },
+  {
+   "de": "Verkäufer: Gut, dann reparieren wir das. In einer Woche ist er fertig.",
+   "en": "Shop assistant: Good, then we'll repair it. It will be ready in a week."
+  },
+  {
+   "de": "Der Drucker ist kaputt.",
+   "en": "The printer is broken."
+  },
+  {
+   "de": "Das funktioniert leider nicht.",
+   "en": "Unfortunately, that doesn't work."
+  },
+  {
+   "de": "Kann ich das umtauschen?",
+   "en": "Can I exchange this?"
+  },
+  {
+   "de": "Es ist noch Garantie drauf.",
+   "en": "It is still under guarantee."
+  },
+  {
+   "de": "Ich habe es vor einem Monat gekauft.",
+   "en": "I bought it a month ago."
+  },
+  {
+   "de": "Seit zwei Tagen geht es nicht mehr.",
+   "en": "It hasn't worked for two days."
+  },
+  {
+   "de": "Vor zwei Tagen war alles gut.",
+   "en": "Two days ago everything was fine."
+  },
+  {
+   "de": "Leider kann ich nicht helfen.",
+   "en": "Unfortunately, I can't help."
+  },
+  {
+   "de": "Ich komme sofort.",
+   "en": "I'm coming right away."
+  },
+  {
+   "de": "___ zwei Tagen ging alles noch. (Präposition für die Vergangenheit)",
+   "en": "Two days ___, everything was still working. (preposition for the past)"
+  },
+  {
+   "de": "___ einer Woche komme ich wieder.",
+   "en": "I'll come back ___ a week."
+  },
+  {
+   "de": "Ich brauche das nur ___ einen Tag. (Präposition für die Dauer)",
+   "en": "I only need it ___ one day. (preposition for a duration)"
+  },
+  {
+   "de": "Was ist im Dativ Plural richtig?",
+   "en": "What is correct in the dative plural?"
+  },
+  {
+   "de": "___ der Arbeit gehe ich einkaufen. (Präposition: danach)",
+   "en": "___ work I go shopping. (preposition: danach)"
+  },
+  {
+   "de": "Schreiben Sie eine kurze Nachricht: Etwas ist kaputt und Sie brauchen Hilfe. Umfang: 30–40 Wörter Checkliste: • Beschreiben Sie das Problem. • Benutzen Sie vor und in mit dem Dativ. • Bitten Sie höflich um Hilfe.",
+   "en": "Write a short message: Something is broken and you need help. Length: 30–40 words Checklist: • Describe the problem. • Use vor and in with the dative. • Ask politely for help."
+  },
+  {
+   "de": "vor + Dativ für einen Zeitpunkt in der Vergangenheit.",
+   "en": "vor + dative for a point in time in the past."
+  },
+  {
+   "de": "in + Dativ für die Zukunft.",
+   "en": "in + dative for the future."
+  },
+  {
+   "de": "für + Akkusativ antwortet auf Wie lange?",
+   "en": "für + accusative answers Wie lange? (How long?)"
+  },
+  {
+   "de": "Im Dativ Plural bekommt das Nomen ein -n.",
+   "en": "In the dative plural, the noun gets an -n."
+  },
+  {
+   "de": "nach + Dativ.",
+   "en": "nach + dative."
+  }
+ ],
+ "forms": [
+  {
+   "form": "besteht",
+   "context": "Ein Problem beschreiben und sagen, seit wann es besteht.",
+   "en": "exists",
+   "lemma": "bestehen"
+  },
+  {
+   "form": "Reklamation",
+   "context": "Textsorte: Gespräch · Reklamation",
+   "en": "complaint",
+   "lemma": "die Reklamation"
+  },
+  {
+   "form": "Zeitangaben",
+   "context": "Zeitangaben mit vor, nach und in machen",
+   "en": "time expressions",
+   "lemma": "die Zeitangabe"
+  },
+  {
+   "form": "Dauer",
+   "context": "eine Dauer mit für angeben",
+   "en": "duration",
+   "lemma": "die Dauer"
+  },
+  {
+   "form": "stehen",
+   "context": "Diese drei Präpositionen antworten auf die Frage Wann? Sie stehen alle mit dem Dativ.",
+   "en": "are used; stand",
+   "lemma": ""
+  },
+  {
+   "form": "Tagen",
+   "context": "vor einem Monat, vor zwei Tagen",
+   "en": "days",
+   "lemma": "der Tag"
+  },
+  {
+   "form": "Stunde",
+   "context": "nach der Arbeit, nach einer Stunde",
+   "en": "hour",
+   "lemma": "die Stunde"
+  },
+  {
+   "form": "Zukunft",
+   "context": "in der Zukunft",
+   "en": "future",
+   "lemma": "die Zukunft"
+  },
+  {
+   "form": "ging",
+   "context": "Vor zwei Tagen ging alles noch.vor + Dativ Plural: zwei Tagen",
+   "en": "worked; went",
+   "lemma": "gehen"
+  },
+  {
+   "form": "wieder",
+   "context": "In einer Woche komme ich wieder.in + Dativ für die Zukunft",
+   "en": "again; back",
+   "lemma": ""
+  },
+  {
+   "form": "Wochen",
+   "context": "Tipp: Im Dativ Plural bekommt das Nomen ein -n: vor zwei Tagen, in drei Wochen, nach zwei Stunden.",
+   "en": "weeks",
+   "lemma": "die Woche"
+  },
+  {
+   "form": "Stunden",
+   "context": "Tipp: Im Dativ Plural bekommt das Nomen ein -n: vor zwei Tagen, in drei Wochen, nach zwei Stunden.",
+   "en": "hours",
+   "lemma": "die Stunde"
+  },
+  {
+   "form": "lange",
+   "context": "für antwortet auf die Frage Wie lange? und steht mit dem Akkusativ.",
+   "en": "long",
+   "lemma": ""
+  },
+  {
+   "form": "Gerät",
+   "context": "Ich brauche das Gerät nur für einen Tag.für + Akkusativ maskulin: einen",
+   "en": "device; appliance",
+   "lemma": "das Gerät"
+  },
+  {
+   "form": "Unterscheiden",
+   "context": "Tipp: Unterscheiden Sie: seit (hat angefangen und dauert an) und für (geplante Dauer).",
+   "en": "distinguish",
+   "lemma": "unterscheiden"
+  },
+  {
+   "form": "angefangen",
+   "context": "Tipp: Unterscheiden Sie: seit (hat angefangen und dauert an) und für (geplante Dauer).",
+   "en": "started",
+   "lemma": "anfangen"
+  },
+  {
+   "form": "dauert",
+   "context": "Tipp: Unterscheiden Sie: seit (hat angefangen und dauert an) und für (geplante Dauer).",
+   "en": "lasts; continues",
+   "lemma": "dauern"
+  },
+  {
+   "form": "geplante",
+   "context": "Tipp: Unterscheiden Sie: seit (hat angefangen und dauert an) und für (geplante Dauer).",
+   "en": "planned",
+   "lemma": "geplant"
+  },
+  {
+   "form": "problèmeWir",
+   "context": "das Problem, -e — EN: problem · FR: le problèmeWir haben hier ein Problem.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "broken",
+   "context": "kaputt — EN: broken · FR: casséDer Drucker ist kaputt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "casséDer",
+   "context": "kaputt — EN: broken · FR: casséDer Drucker ist kaputt.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "funktionieren",
+   "context": "funktionieren — EN: to work, function · FR: fonctionnerDas funktioniert leider nicht.",
+   "en": "to work, function",
+   "lemma": ""
+  },
+  {
+   "form": "function",
+   "context": "funktionieren — EN: to work, function · FR: fonctionnerDas funktioniert leider nicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fonctionnerDas",
+   "context": "funktionieren — EN: to work, function · FR: fonctionnerDas funktioniert leider nicht.",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "réparerKönnen",
+   "context": "reparieren — EN: to repair · FR: réparerKönnen Sie das reparieren?",
+   "en": "can",
+   "lemma": "können"
+  },
+  {
+   "form": "umtauschen",
+   "context": "umtauschen — EN: to exchange · FR: échangerKann ich das umtauschen?",
+   "en": "to exchange",
+   "lemma": ""
+  },
+  {
+   "form": "exchange",
+   "context": "umtauschen — EN: to exchange · FR: échangerKann ich das umtauschen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "échangerKann",
+   "context": "umtauschen — EN: to exchange · FR: échangerKann ich das umtauschen?",
+   "en": "can",
+   "lemma": "können"
+  },
+  {
+   "form": "Garantie",
+   "context": "die Garantie (Sg.) — EN: guarantee · FR: la garantieEs ist noch Garantie drauf.",
+   "en": "guarantee",
+   "lemma": "die Garantie"
+  },
+  {
+   "form": "guarantee",
+   "context": "die Garantie (Sg.) — EN: guarantee · FR: la garantieEs ist noch Garantie drauf.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "garantieEs",
+   "context": "die Garantie (Sg.) — EN: guarantee · FR: la garantieEs ist noch Garantie drauf.",
+   "en": "it",
+   "lemma": ""
+  },
+  {
+   "form": "drauf",
+   "context": "die Garantie (Sg.) — EN: guarantee · FR: la garantieEs ist noch Garantie drauf.",
+   "en": "on it",
+   "lemma": ""
+  },
+  {
+   "form": "receipt",
+   "context": "die Rechnung, -en — EN: receipt, bill · FR: le reçu, la factureHaben Sie die Rechnung?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reçu",
+   "context": "die Rechnung, -en — EN: receipt, bill · FR: le reçu, la factureHaben Sie die Rechnung?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "factureHaben",
+   "context": "die Rechnung, -en — EN: receipt, bill · FR: le reçu, la factureHaben Sie die Rechnung?",
+   "en": "have",
+   "lemma": "haben"
+  },
+  {
+   "form": "gekauft",
+   "context": "gekauft haben — EN: to have bought · FR: avoir achetéIch habe es vor einem Monat gekauft.",
+   "en": "bought",
+   "lemma": "kaufen"
+  },
+  {
+   "form": "bought",
+   "context": "gekauft haben — EN: to have bought · FR: avoir achetéIch habe es vor einem Monat gekauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "achetéIch",
+   "context": "gekauft haben — EN: to have bought · FR: avoir achetéIch habe es vor einem Monat gekauft.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "since",
+   "context": "seit — EN: since, for · FR: depuisSeit zwei Tagen geht es nicht mehr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "depuisSeit",
+   "context": "seit — EN: since, for · FR: depuisSeit zwei Tagen geht es nicht mehr.",
+   "en": "since; for",
+   "lemma": ""
+  },
+  {
+   "form": "ago",
+   "context": "vor / nach / in — EN: ago / after / in · FR: il y a / après / dansVor zwei Tagen war alles gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "after",
+   "context": "vor / nach / in — EN: ago / after / in · FR: il y a / après / dansVor zwei Tagen war alles gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "il",
+   "context": "vor / nach / in — EN: ago / after / in · FR: il y a / après / dansVor zwei Tagen war alles gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "après",
+   "context": "vor / nach / in — EN: ago / after / in · FR: il y a / après / dansVor zwei Tagen war alles gut.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dansVor",
+   "context": "vor / nach / in — EN: ago / after / in · FR: il y a / après / dansVor zwei Tagen war alles gut.",
+   "en": "ago; before",
+   "lemma": ""
+  },
+  {
+   "form": "unfortunately",
+   "context": "leider — EN: unfortunately · FR: malheureusementLeider kann ich nicht helfen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "malheureusementLeider",
+   "context": "leider — EN: unfortunately · FR: malheureusementLeider kann ich nicht helfen.",
+   "en": "unfortunately",
+   "lemma": ""
+  },
+  {
+   "form": "sofort",
+   "context": "sofort — EN: immediately · FR: tout de suiteIch komme sofort.",
+   "en": "immediately",
+   "lemma": ""
+  },
+  {
+   "form": "immediately",
+   "context": "sofort — EN: immediately · FR: tout de suiteIch komme sofort.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "suiteIch",
+   "context": "sofort — EN: immediately · FR: tout de suiteIch komme sofort.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "ungefähr",
+   "context": "Das dauert ungefähr eine Woche.",
+   "en": "about; approximately",
+   "lemma": ""
+  },
+  {
+   "form": "Elektrogeschäft",
+   "context": "Dialog: Im Elektrogeschäft",
+   "en": "electronics shop",
+   "lemma": "das Elektrogeschäft"
+  },
+  {
+   "form": "Kundin",
+   "context": "Kundin: Guten Tag. Wir haben hier ein Problem.",
+   "en": "customer (female)",
+   "lemma": "die Kundin"
+  },
+  {
+   "form": "fertig",
+   "context": "Verkäufer: Gut, dann reparieren wir das. In einer Woche ist er fertig.",
+   "en": "ready; finished",
+   "lemma": ""
+  }
+ ]
+}
