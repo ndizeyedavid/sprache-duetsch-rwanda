@@ -1,0 +1,865 @@
+{
+ "level": "A2",
+ "lesson": 2,
+ "title": "Wohnen — Wohin mit der Kommode?",
+ "lines": [
+  {
+   "de": "Eine Wohnung einrichten und sagen, wo etwas steht und wohin es kommt.",
+   "en": "Furnish an apartment and say where something is and where it goes."
+  },
+  {
+   "de": "Textsorte: Gespräch · Magazintext",
+   "en": "Text type: Conversation · Magazine article"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 2 (über Bilder sprechen); ÖSD A2",
+   "en": "Exam link: Goethe A2 Speaking part 2 (talking about pictures); ÖSD A2"
+  },
+  {
+   "de": "Möbel und Räume benennen",
+   "en": "name furniture and rooms"
+  },
+  {
+   "de": "Tipps zum Einrichten geben",
+   "en": "give tips on furnishing a home"
+  },
+  {
+   "de": "Wechselpräpositionen mit Dativ und Akkusativ unterscheiden",
+   "en": "tell apart two-way prepositions (Wechselpräpositionen) with the dative (Dativ) and the accusative (Akkusativ)"
+  },
+  {
+   "de": "Grammatik: Wechselpräpositionen: Wo? oder Wohin?",
+   "en": "Grammar: two-way prepositions (Wechselpräpositionen): Wo? (where?) or Wohin? (where to?)"
+  },
+  {
+   "de": "Neun Präpositionen können mit Dativ oder Akkusativ stehen. Die Frage entscheidet: Wo? (Position, keine Bewegung) → Dativ. Wohin? (Richtung, Bewegung zu einem Ziel) → Akkusativ.",
+   "en": "Nine prepositions can take the dative (Dativ) or the accusative (Akkusativ). The question decides: Wo? = where? (position, no movement) → dative. Wohin? = where to? (direction, movement towards a goal) → accusative."
+  },
+  {
+   "de": "Wo? + Dativ",
+   "en": "Wo? (where?) + dative"
+  },
+  {
+   "de": "Wohin? + Akkusativ",
+   "en": "Wohin? (where to?) + accusative"
+  },
+  {
+   "de": "Die Lampe ist im Wohnzimmer.",
+   "en": "The lamp is in the living room."
+  },
+  {
+   "de": "Wir stellen die Lampe ins Wohnzimmer.",
+   "en": "We put the lamp in the living room."
+  },
+  {
+   "de": "auf",
+   "en": "on"
+  },
+  {
+   "de": "Das Buch liegt auf dem Tisch.",
+   "en": "The book is lying on the table."
+  },
+  {
+   "de": "Ich lege das Buch auf den Tisch.",
+   "en": "I put the book on the table."
+  },
+  {
+   "de": "an",
+   "en": "on, at"
+  },
+  {
+   "de": "Das Bild hängt an der Wand.",
+   "en": "The picture is hanging on the wall."
+  },
+  {
+   "de": "Wir hängen das Bild an die Wand.",
+   "en": "We hang the picture on the wall."
+  },
+  {
+   "de": "neben",
+   "en": "next to"
+  },
+  {
+   "de": "Der Stuhl steht neben dem Bett.",
+   "en": "The chair is standing next to the bed."
+  },
+  {
+   "de": "Stell den Stuhl neben das Bett!",
+   "en": "Put the chair next to the bed!"
+  },
+  {
+   "de": "weitere",
+   "en": "others"
+  },
+  {
+   "de": "über, unter, vor, hinter, zwischen",
+   "en": "over, under, in front of, behind, between"
+  },
+  {
+   "de": "Wohin mit der Kommode? — Stell sie bitte zwischen das Fenster und den Schrank.Wohin? → Akkusativ",
+   "en": "Where should the chest of drawers go? — Please put it between the window and the wardrobe. Wohin? → accusative"
+  },
+  {
+   "de": "Der Teppich liegt schon unter dem Tisch.Wo? → Dativ",
+   "en": "The rug is already lying under the table. Wo? → dative"
+  },
+  {
+   "de": "Häng die Jacke bitte in den Schrank.Bewegung → Akkusativ",
+   "en": "Please hang the jacket in the wardrobe. Movement → accusative"
+  },
+  {
+   "de": "Tipp: Kurzformen: in dem → im, in das → ins, an dem → am, an das → ans.",
+   "en": "Tip: Short forms: in dem → im, in das → ins, an dem → am, an das → ans."
+  },
+  {
+   "de": "Grammatik: Verben mit Wechselpräpositionen",
+   "en": "Grammar: verbs with two-way prepositions"
+  },
+  {
+   "de": "Bestimmte Verbpaare gehören fest zu Wo? oder Wohin?. Die Verben auf -setzen, -legen, -stellen, -hängen (regelmäßig) bedeuten Bewegung; sitzen, liegen, stehen, hängen (unregelmäßig) bedeuten Position.",
+   "en": "Certain pairs of verbs always go with Wo? or Wohin?. The verbs ending in -setzen, -legen, -stellen, -hängen (regular) express movement; sitzen, liegen, stehen, hängen (irregular) express position."
+  },
+  {
+   "de": "stellen (stellte, gestellt)",
+   "en": "to put (standing), to place"
+  },
+  {
+   "de": "stehen (stand, gestanden)",
+   "en": "to stand"
+  },
+  {
+   "de": "legen (legte, gelegt)",
+   "en": "to lay, to put (lying)"
+  },
+  {
+   "de": "liegen (lag, gelegen)",
+   "en": "to lie, to be lying"
+  },
+  {
+   "de": "setzen (setzte, gesetzt)",
+   "en": "to seat, to put"
+  },
+  {
+   "de": "sitzen (saß, gesessen)",
+   "en": "to sit, to be sitting"
+  },
+  {
+   "de": "hängen (hängte, gehängt)",
+   "en": "to hang (something) up"
+  },
+  {
+   "de": "hängen (hing, gehangen)",
+   "en": "to hang, to be hanging"
+  },
+  {
+   "de": "Ich stelle die Vase auf den Tisch. — Jetzt steht sie auf dem Tisch.stellen → stehen",
+   "en": "I put the vase on the table. — Now it is standing on the table. stellen → stehen"
+  },
+  {
+   "de": "Leg die Zeitung auf das Regal. — Sie liegt schon auf dem Regal.legen → liegen",
+   "en": "Put the newspaper on the shelf. — It is already lying on the shelf. legen → liegen"
+  },
+  {
+   "de": "Tipp: Eselsbrücke: Die kurzen, regelmäßigen Verben (stellen, legen, setzen) machen Bewegung — und Bewegung braucht den Akkusativ.",
+   "en": "Tip: Memory trick: The short, regular verbs (stellen, legen, setzen) express movement — and movement needs the accusative."
+  },
+  {
+   "de": "die Kommode, -n — EN: chest of drawers · FR: la commodeDie Kommode passt gut neben das Bett.",
+   "en": "Example: The chest of drawers fits well next to the bed."
+  },
+  {
+   "de": "der Schrank, ¨-e — EN: cupboard, wardrobe · FR: l'armoireDer Schrank ist zu groß für das Zimmer.",
+   "en": "Example: The wardrobe is too big for the room."
+  },
+  {
+   "de": "das Regal, -e — EN: shelf · FR: l'étagèreStell die Bücher bitte ins Regal.",
+   "en": "Example: Please put the books on the shelf."
+  },
+  {
+   "de": "der Teppich, -e — EN: carpet, rug · FR: le tapisDer Teppich liegt vor dem Sofa.",
+   "en": "Example: The rug lies in front of the sofa."
+  },
+  {
+   "de": "die Wand, ¨-e — EN: wall · FR: le murAn der Wand hängt ein großes Bild.",
+   "en": "Example: A big picture hangs on the wall."
+  },
+  {
+   "de": "die Ecke, -n — EN: corner · FR: le coinIn der Ecke steht eine Lampe.",
+   "en": "Example: A lamp stands in the corner."
+  },
+  {
+   "de": "einrichten — EN: to furnish · FR: aménagerWir richten gerade die neue Wohnung ein.",
+   "en": "Example: We are furnishing the new apartment right now."
+  },
+  {
+   "de": "der Umzug, ¨-e — EN: move (house) · FR: le déménagementDer Umzug war sehr anstrengend.",
+   "en": "Example: The move was very tiring."
+  },
+  {
+   "de": "passen zu — EN: to go with, suit · FR: aller avecDas Sofa passt gut zu dem Teppich.",
+   "en": "Example: The sofa goes well with the rug."
+  },
+  {
+   "de": "gemütlich — EN: cosy · FR: confortableJetzt sieht das Zimmer richtig gemütlich aus.",
+   "en": "Example: Now the room looks really cosy."
+  },
+  {
+   "de": "aufräumen — EN: to tidy up · FR: rangerRäum bitte dein Zimmer auf!",
+   "en": "Example: Please tidy up your room!"
+  },
+  {
+   "de": "der Platz, ¨-e — EN: space; place · FR: la placeHier ist leider kein Platz mehr.",
+   "en": "Example: Unfortunately, there is no more space here."
+  },
+  {
+   "de": "Stell doch die Kommode neben das Fenster.",
+   "en": "Why don't you put the chest of drawers next to the window?"
+  },
+  {
+   "de": "Das Bild passt besser an die andere Wand.",
+   "en": "The picture fits better on the other wall."
+  },
+  {
+   "de": "Wie wäre es, wenn der Tisch in die Ecke kommt?",
+   "en": "What if the table goes in the corner?"
+  },
+  {
+   "de": "Ja, das sieht gut aus.",
+   "en": "Yes, that looks good."
+  },
+  {
+   "de": "Hm, das gefällt mir nicht so.",
+   "en": "Hmm, I don't really like that."
+  },
+  {
+   "de": "Gute Idee, das probieren wir!",
+   "en": "Good idea, let's try that!"
+  },
+  {
+   "de": "nach dem Platz fragen",
+   "en": "asking where something goes"
+  },
+  {
+   "de": "Wohin mit dem Regal?",
+   "en": "Where should the shelf go?"
+  },
+  {
+   "de": "Wo soll das Sofa stehen?",
+   "en": "Where should the sofa stand?"
+  },
+  {
+   "de": "Passt das überhaupt dahin?",
+   "en": "Does that even fit there?"
+  },
+  {
+   "de": "Dialog: Beim Umzug",
+   "en": "Dialogue: Moving house"
+  },
+  {
+   "de": "Lena: Wohin mit der Kommode? Sie ist ziemlich schwer.",
+   "en": "Lena: Where should the chest of drawers go? It's quite heavy."
+  },
+  {
+   "de": "Ben: Stell sie doch zwischen das Fenster und den Schrank.",
+   "en": "Ben: Why don't you put it between the window and the wardrobe?"
+  },
+  {
+   "de": "Lena: Okay. Und der Teppich? Der liegt noch im Flur.",
+   "en": "Lena: Okay. And the rug? It's still lying in the hallway."
+  },
+  {
+   "de": "Ben: Leg ihn bitte vor das Sofa. Dann wird es gemütlicher.",
+   "en": "Ben: Please put it in front of the sofa. Then it will be cosier."
+  },
+  {
+   "de": "Lena: Und das Bild? Hängen wir es an diese Wand?",
+   "en": "Lena: And the picture? Shall we hang it on this wall?"
+  },
+  {
+   "de": "Ben: Lieber über die Kommode. Da sieht man es besser.",
+   "en": "Ben: Better above the chest of drawers. You can see it better there."
+  },
+  {
+   "de": "Die Kommode passt gut neben das Bett.",
+   "en": "The chest of drawers fits well next to the bed."
+  },
+  {
+   "de": "Der Schrank ist zu groß für das Zimmer.",
+   "en": "The wardrobe is too big for the room."
+  },
+  {
+   "de": "Stell die Bücher bitte ins Regal.",
+   "en": "Please put the books on the shelf."
+  },
+  {
+   "de": "Der Teppich liegt vor dem Sofa.",
+   "en": "The rug lies in front of the sofa."
+  },
+  {
+   "de": "An der Wand hängt ein großes Bild.",
+   "en": "A big picture hangs on the wall."
+  },
+  {
+   "de": "In der Ecke steht eine Lampe.",
+   "en": "A lamp stands in the corner."
+  },
+  {
+   "de": "Wir richten gerade die neue Wohnung ein.",
+   "en": "We are furnishing the new apartment right now."
+  },
+  {
+   "de": "Der Umzug war sehr anstrengend.",
+   "en": "The move was very tiring."
+  },
+  {
+   "de": "Das Sofa passt gut zu dem Teppich.",
+   "en": "The sofa goes well with the rug."
+  },
+  {
+   "de": "Jetzt sieht das Zimmer richtig gemütlich aus.",
+   "en": "Now the room looks really cosy."
+  },
+  {
+   "de": "Hier ist leider kein Platz mehr.",
+   "en": "Unfortunately, there is no more space here."
+  },
+  {
+   "de": "Stell die Lampe bitte auf ___ Tisch.",
+   "en": "Please put the lamp on ___ table."
+  },
+  {
+   "de": "Das Bild hängt an ___ Wand. (Wo?)",
+   "en": "The picture is hanging on ___ wall. (Wo?)"
+  },
+  {
+   "de": "Welches Verb bedeutet Bewegung?",
+   "en": "Which verb expresses movement?"
+  },
+  {
+   "de": "Die Bücher ___ schon im Regal. (liegen/legen, Präsens)",
+   "en": "The books ___ already on the shelf. (liegen/legen, present tense)"
+  },
+  {
+   "de": "Wir hängen das Foto ___ die Tür. (Präposition für „neben\"? Nein — über/an/neben: wählen Sie 'neben')",
+   "en": "We hang the photo ___ the door. (Preposition for \"neben\"? No — über/an/neben: choose 'neben')"
+  },
+  {
+   "de": "Beschreiben Sie Ihr Lieblingszimmer: Welche Möbel gibt es und wo stehen sie? Umfang: 50–70 Wörter Checkliste: • Nennen Sie mindestens vier Möbelstücke. • Benutzen Sie viermal eine Wechselpräposition mit Dativ (Wo?). • Schreiben Sie zum Schluss, warum Sie dieses Zimmer mögen.",
+   "en": "Describe your favourite room: What furniture is there, and where is it? Length: 50–70 words Checklist: • Name at least four pieces of furniture. • Use a two-way preposition with the dative (Wo?) four times. • At the end, write why you like this room."
+  },
+  {
+   "de": "Wohin? → Akkusativ. der Tisch → den Tisch.",
+   "en": "Wohin? → accusative. der Tisch → den Tisch."
+  },
+  {
+   "de": "Wo? → Dativ. die Wand → der Wand.",
+   "en": "Wo? → dative. die Wand → der Wand."
+  },
+  {
+   "de": "legen, stellen und setzen bedeuten Bewegung und stehen mit dem Akkusativ.",
+   "en": "legen, stellen and setzen express movement and take the accusative."
+  },
+  {
+   "de": "Hier geht es um die Position (Wo?), also liegen.",
+   "en": "This is about position (Wo?), so liegen."
+  },
+  {
+   "de": "neben + Akkusativ, weil es eine Bewegung ist.",
+   "en": "neben + accusative, because it is a movement."
+  }
+ ],
+ "forms": [
+  {
+   "form": "einrichten",
+   "context": "Eine Wohnung einrichten und sagen, wo etwas steht und wohin es kommt.",
+   "en": "to furnish",
+   "lemma": ""
+  },
+  {
+   "form": "wohin",
+   "context": "Eine Wohnung einrichten und sagen, wo etwas steht und wohin es kommt.",
+   "en": "where (to)",
+   "lemma": ""
+  },
+  {
+   "form": "Magazintext",
+   "context": "Textsorte: Gespräch · Magazintext",
+   "en": "magazine article",
+   "lemma": "der Magazintext"
+  },
+  {
+   "form": "ÖSD",
+   "context": "Prüfungsbezug: Goethe A2 Sprechen Teil 2 (über Bilder sprechen); ÖSD A2",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Einrichten",
+   "context": "Tipps zum Einrichten geben",
+   "en": "furnishing (a home)",
+   "lemma": "das Einrichten"
+  },
+  {
+   "form": "Wechselpräpositionen",
+   "context": "Wechselpräpositionen mit Dativ und Akkusativ unterscheiden",
+   "en": "two-way prepositions",
+   "lemma": "die Wechselpräposition"
+  },
+  {
+   "form": "Wohin",
+   "context": "Grammatik: Wechselpräpositionen: Wo? oder Wohin?",
+   "en": "where (to)",
+   "lemma": ""
+  },
+  {
+   "form": "entscheidet",
+   "context": "Neun Präpositionen können mit Dativ oder Akkusativ stehen. Die Frage entscheidet: Wo? (Position, keine Bewegung) → Dativ. Wohin? (Richtung, Bewegung zu einem Ziel) → Akkusativ.",
+   "en": "decides",
+   "lemma": "entscheiden"
+  },
+  {
+   "form": "Richtung",
+   "context": "Neun Präpositionen können mit Dativ oder Akkusativ stehen. Die Frage entscheidet: Wo? (Position, keine Bewegung) → Dativ. Wohin? (Richtung, Bewegung zu einem Ziel) → Akkusativ.",
+   "en": "direction",
+   "lemma": "die Richtung"
+  },
+  {
+   "form": "Ziel",
+   "context": "Neun Präpositionen können mit Dativ oder Akkusativ stehen. Die Frage entscheidet: Wo? (Position, keine Bewegung) → Dativ. Wohin? (Richtung, Bewegung zu einem Ziel) → Akkusativ.",
+   "en": "goal, destination",
+   "lemma": "das Ziel"
+  },
+  {
+   "form": "Wohnzimmer",
+   "context": "Die Lampe ist im Wohnzimmer.",
+   "en": "living room",
+   "lemma": "das Wohnzimmer"
+  },
+  {
+   "form": "lege",
+   "context": "Ich lege das Buch auf den Tisch.",
+   "en": "put, lay",
+   "lemma": "legen"
+  },
+  {
+   "form": "hängen",
+   "context": "Wir hängen das Bild an die Wand.",
+   "en": "hang",
+   "lemma": ""
+  },
+  {
+   "form": "Stell",
+   "context": "Stell den Stuhl neben das Bett!",
+   "en": "put (command)",
+   "lemma": "stellen"
+  },
+  {
+   "form": "Kommode",
+   "context": "Wohin mit der Kommode? — Stell sie bitte zwischen das Fenster und den Schrank.Wohin? → Akkusativ",
+   "en": "chest of drawers",
+   "lemma": "die Kommode"
+  },
+  {
+   "form": "Fenster",
+   "context": "Wohin mit der Kommode? — Stell sie bitte zwischen das Fenster und den Schrank.Wohin? → Akkusativ",
+   "en": "window",
+   "lemma": "das Fenster"
+  },
+  {
+   "form": "Teppich",
+   "context": "Der Teppich liegt schon unter dem Tisch.Wo? → Dativ",
+   "en": "carpet, rug",
+   "lemma": "der Teppich"
+  },
+  {
+   "form": "Häng",
+   "context": "Häng die Jacke bitte in den Schrank.Bewegung → Akkusativ",
+   "en": "hang (command)",
+   "lemma": "hängen"
+  },
+  {
+   "form": "Verbpaare",
+   "context": "Bestimmte Verbpaare gehören fest zu Wo? oder Wohin?. Die Verben auf -setzen, -legen, -stellen, -hängen (regelmäßig) bedeuten Bewegung; sitzen, liegen, stehen, hängen (unregelmäßig) bedeuten Position.",
+   "en": "verb pairs",
+   "lemma": "das Verbpaar"
+  },
+  {
+   "form": "setzen",
+   "context": "Bestimmte Verbpaare gehören fest zu Wo? oder Wohin?. Die Verben auf -setzen, -legen, -stellen, -hängen (regelmäßig) bedeuten Bewegung; sitzen, liegen, stehen, hängen (unregelmäßig) bedeuten Position.",
+   "en": "to seat, to put",
+   "lemma": ""
+  },
+  {
+   "form": "legen",
+   "context": "Bestimmte Verbpaare gehören fest zu Wo? oder Wohin?. Die Verben auf -setzen, -legen, -stellen, -hängen (regelmäßig) bedeuten Bewegung; sitzen, liegen, stehen, hängen (unregelmäßig) bedeuten Position.",
+   "en": "to lay, to put",
+   "lemma": ""
+  },
+  {
+   "form": "bedeuten",
+   "context": "Bestimmte Verbpaare gehören fest zu Wo? oder Wohin?. Die Verben auf -setzen, -legen, -stellen, -hängen (regelmäßig) bedeuten Bewegung; sitzen, liegen, stehen, hängen (unregelmäßig) bedeuten Position.",
+   "en": "mean",
+   "lemma": ""
+  },
+  {
+   "form": "sitzen",
+   "context": "Bestimmte Verbpaare gehören fest zu Wo? oder Wohin?. Die Verben auf -setzen, -legen, -stellen, -hängen (regelmäßig) bedeuten Bewegung; sitzen, liegen, stehen, hängen (unregelmäßig) bedeuten Position.",
+   "en": "to sit",
+   "lemma": ""
+  },
+  {
+   "form": "stellte",
+   "context": "stellen (stellte, gestellt)",
+   "en": "put (past)",
+   "lemma": "stellen"
+  },
+  {
+   "form": "gestellt",
+   "context": "stellen (stellte, gestellt)",
+   "en": "put (past participle)",
+   "lemma": "stellen"
+  },
+  {
+   "form": "stand",
+   "context": "stehen (stand, gestanden)",
+   "en": "stood",
+   "lemma": "stehen"
+  },
+  {
+   "form": "gestanden",
+   "context": "stehen (stand, gestanden)",
+   "en": "stood",
+   "lemma": "stehen"
+  },
+  {
+   "form": "legte",
+   "context": "legen (legte, gelegt)",
+   "en": "laid, put",
+   "lemma": "legen"
+  },
+  {
+   "form": "gelegt",
+   "context": "legen (legte, gelegt)",
+   "en": "laid, put",
+   "lemma": "legen"
+  },
+  {
+   "form": "lag",
+   "context": "liegen (lag, gelegen)",
+   "en": "lay, was lying",
+   "lemma": "liegen"
+  },
+  {
+   "form": "gelegen",
+   "context": "liegen (lag, gelegen)",
+   "en": "lain; located",
+   "lemma": "liegen"
+  },
+  {
+   "form": "setzte",
+   "context": "setzen (setzte, gesetzt)",
+   "en": "seated, put",
+   "lemma": "setzen"
+  },
+  {
+   "form": "gesetzt",
+   "context": "setzen (setzte, gesetzt)",
+   "en": "seated, put",
+   "lemma": "setzen"
+  },
+  {
+   "form": "saß",
+   "context": "sitzen (saß, gesessen)",
+   "en": "sat",
+   "lemma": "sitzen"
+  },
+  {
+   "form": "gesessen",
+   "context": "sitzen (saß, gesessen)",
+   "en": "sat",
+   "lemma": "sitzen"
+  },
+  {
+   "form": "hängte",
+   "context": "hängen (hängte, gehängt)",
+   "en": "hung (something) up",
+   "lemma": "hängen"
+  },
+  {
+   "form": "gehängt",
+   "context": "hängen (hängte, gehängt)",
+   "en": "hung (up)",
+   "lemma": "hängen"
+  },
+  {
+   "form": "hing",
+   "context": "hängen (hing, gehangen)",
+   "en": "hung, was hanging",
+   "lemma": "hängen"
+  },
+  {
+   "form": "gehangen",
+   "context": "hängen (hing, gehangen)",
+   "en": "hung",
+   "lemma": "hängen"
+  },
+  {
+   "form": "stelle",
+   "context": "Ich stelle die Vase auf den Tisch. — Jetzt steht sie auf dem Tisch.stellen → stehen",
+   "en": "put, place",
+   "lemma": "stellen"
+  },
+  {
+   "form": "Vase",
+   "context": "Ich stelle die Vase auf den Tisch. — Jetzt steht sie auf dem Tisch.stellen → stehen",
+   "en": "vase",
+   "lemma": "die Vase"
+  },
+  {
+   "form": "Leg",
+   "context": "Leg die Zeitung auf das Regal. — Sie liegt schon auf dem Regal.legen → liegen",
+   "en": "put, lay (command)",
+   "lemma": "legen"
+  },
+  {
+   "form": "Eselsbrücke",
+   "context": "Tipp: Eselsbrücke: Die kurzen, regelmäßigen Verben (stellen, legen, setzen) machen Bewegung — und Bewegung braucht den Akkusativ.",
+   "en": "memory trick",
+   "lemma": "die Eselsbrücke"
+  },
+  {
+   "form": "kurzen",
+   "context": "Tipp: Eselsbrücke: Die kurzen, regelmäßigen Verben (stellen, legen, setzen) machen Bewegung — und Bewegung braucht den Akkusativ.",
+   "en": "short",
+   "lemma": "kurz"
+  },
+  {
+   "form": "regelmäßigen",
+   "context": "Tipp: Eselsbrücke: Die kurzen, regelmäßigen Verben (stellen, legen, setzen) machen Bewegung — und Bewegung braucht den Akkusativ.",
+   "en": "regular",
+   "lemma": "regelmäßig"
+  },
+  {
+   "form": "chest",
+   "context": "die Kommode, -n — EN: chest of drawers · FR: la commodeDie Kommode passt gut neben das Bett.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "drawers",
+   "context": "die Kommode, -n — EN: chest of drawers · FR: la commodeDie Kommode passt gut neben das Bett.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "commodeDie",
+   "context": "die Kommode, -n — EN: chest of drawers · FR: la commodeDie Kommode passt gut neben das Bett.",
+   "en": "the",
+   "lemma": "die"
+  },
+  {
+   "form": "l'étagèreStell",
+   "context": "das Regal, -e — EN: shelf · FR: l'étagèreStell die Bücher bitte ins Regal.",
+   "en": "put (command)",
+   "lemma": "stellen"
+  },
+  {
+   "form": "carpet",
+   "context": "der Teppich, -e — EN: carpet, rug · FR: le tapisDer Teppich liegt vor dem Sofa.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rug",
+   "context": "der Teppich, -e — EN: carpet, rug · FR: le tapisDer Teppich liegt vor dem Sofa.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tapisDer",
+   "context": "der Teppich, -e — EN: carpet, rug · FR: le tapisDer Teppich liegt vor dem Sofa.",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "wall",
+   "context": "die Wand, ¨-e — EN: wall · FR: le murAn der Wand hängt ein großes Bild.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "murAn",
+   "context": "die Wand, ¨-e — EN: wall · FR: le murAn der Wand hängt ein großes Bild.",
+   "en": "on, at",
+   "lemma": "an"
+  },
+  {
+   "form": "großes",
+   "context": "die Wand, ¨-e — EN: wall · FR: le murAn der Wand hängt ein großes Bild.",
+   "en": "big, large",
+   "lemma": "groß"
+  },
+  {
+   "form": "coinIn",
+   "context": "die Ecke, -n — EN: corner · FR: le coinIn der Ecke steht eine Lampe.",
+   "en": "in",
+   "lemma": "in"
+  },
+  {
+   "form": "furnish",
+   "context": "einrichten — EN: to furnish · FR: aménagerWir richten gerade die neue Wohnung ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aménagerWir",
+   "context": "einrichten — EN: to furnish · FR: aménagerWir richten gerade die neue Wohnung ein.",
+   "en": "we",
+   "lemma": "wir"
+  },
+  {
+   "form": "richten",
+   "context": "einrichten — EN: to furnish · FR: aménagerWir richten gerade die neue Wohnung ein.",
+   "en": "furnish (richten … ein)",
+   "lemma": "einrichten"
+  },
+  {
+   "form": "gerade",
+   "context": "einrichten — EN: to furnish · FR: aménagerWir richten gerade die neue Wohnung ein.",
+   "en": "right now; straight",
+   "lemma": ""
+  },
+  {
+   "form": "Umzug",
+   "context": "der Umzug, ¨-e — EN: move (house) · FR: le déménagementDer Umzug war sehr anstrengend.",
+   "en": "move (house)",
+   "lemma": "der Umzug"
+  },
+  {
+   "form": "move",
+   "context": "der Umzug, ¨-e — EN: move (house) · FR: le déménagementDer Umzug war sehr anstrengend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déménagementDer",
+   "context": "der Umzug, ¨-e — EN: move (house) · FR: le déménagementDer Umzug war sehr anstrengend.",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "avecDas",
+   "context": "passen zu — EN: to go with, suit · FR: aller avecDas Sofa passt gut zu dem Teppich.",
+   "en": "the",
+   "lemma": "das"
+  },
+  {
+   "form": "gemütlich",
+   "context": "gemütlich — EN: cosy · FR: confortableJetzt sieht das Zimmer richtig gemütlich aus.",
+   "en": "cosy",
+   "lemma": ""
+  },
+  {
+   "form": "cosy",
+   "context": "gemütlich — EN: cosy · FR: confortableJetzt sieht das Zimmer richtig gemütlich aus.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "confortableJetzt",
+   "context": "gemütlich — EN: cosy · FR: confortableJetzt sieht das Zimmer richtig gemütlich aus.",
+   "en": "now",
+   "lemma": "jetzt"
+  },
+  {
+   "form": "space",
+   "context": "der Platz, ¨-e — EN: space; place · FR: la placeHier ist leider kein Platz mehr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "place",
+   "context": "der Platz, ¨-e — EN: space; place · FR: la placeHier ist leider kein Platz mehr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "placeHier",
+   "context": "der Platz, ¨-e — EN: space; place · FR: la placeHier ist leider kein Platz mehr.",
+   "en": "here",
+   "lemma": "hier"
+  },
+  {
+   "form": "Hm",
+   "context": "Hm, das gefällt mir nicht so.",
+   "en": "hmm",
+   "lemma": ""
+  },
+  {
+   "form": "probieren",
+   "context": "Gute Idee, das probieren wir!",
+   "en": "try",
+   "lemma": ""
+  },
+  {
+   "form": "dahin",
+   "context": "Passt das überhaupt dahin?",
+   "en": "there (to that place)",
+   "lemma": ""
+  },
+  {
+   "form": "Lena",
+   "context": "Lena: Wohin mit der Kommode? Sie ist ziemlich schwer.",
+   "en": "Lena (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Flur",
+   "context": "Lena: Okay. Und der Teppich? Der liegt noch im Flur.",
+   "en": "hallway",
+   "lemma": "der Flur"
+  },
+  {
+   "form": "gemütlicher",
+   "context": "Ben: Leg ihn bitte vor das Sofa. Dann wird es gemütlicher.",
+   "en": "cosier",
+   "lemma": "gemütlich"
+  },
+  {
+   "form": "Hängen",
+   "context": "Lena: Und das Bild? Hängen wir es an diese Wand?",
+   "en": "hang",
+   "lemma": "hängen"
+  },
+  {
+   "form": "Lieblingszimmer",
+   "context": "Beschreiben Sie Ihr Lieblingszimmer: Welche Möbel gibt es und wo stehen sie? Umfang: 50–70 Wörter Checkliste: • Nennen Sie mindestens vier Möbelstücke. • Benutzen Sie viermal eine Wechselpräposition mit Dativ (Wo?). • Schreiben Sie zum Schluss, warum Sie dieses Zimmer mögen.",
+   "en": "favourite room",
+   "lemma": "das Lieblingszimmer"
+  },
+  {
+   "form": "viermal",
+   "context": "Beschreiben Sie Ihr Lieblingszimmer: Welche Möbel gibt es und wo stehen sie? Umfang: 50–70 Wörter Checkliste: • Nennen Sie mindestens vier Möbelstücke. • Benutzen Sie viermal eine Wechselpräposition mit Dativ (Wo?). • Schreiben Sie zum Schluss, warum Sie dieses Zimmer mögen.",
+   "en": "four times",
+   "lemma": ""
+  },
+  {
+   "form": "Wechselpräposition",
+   "context": "Beschreiben Sie Ihr Lieblingszimmer: Welche Möbel gibt es und wo stehen sie? Umfang: 50–70 Wörter Checkliste: • Nennen Sie mindestens vier Möbelstücke. • Benutzen Sie viermal eine Wechselpräposition mit Dativ (Wo?). • Schreiben Sie zum Schluss, warum Sie dieses Zimmer mögen.",
+   "en": "two-way preposition",
+   "lemma": "die Wechselpräposition"
+  },
+  {
+   "form": "Schluss",
+   "context": "Beschreiben Sie Ihr Lieblingszimmer: Welche Möbel gibt es und wo stehen sie? Umfang: 50–70 Wörter Checkliste: • Nennen Sie mindestens vier Möbelstücke. • Benutzen Sie viermal eine Wechselpräposition mit Dativ (Wo?). • Schreiben Sie zum Schluss, warum Sie dieses Zimmer mögen.",
+   "en": "end",
+   "lemma": "der Schluss"
+  },
+  {
+   "form": "dieses",
+   "context": "Beschreiben Sie Ihr Lieblingszimmer: Welche Möbel gibt es und wo stehen sie? Umfang: 50–70 Wörter Checkliste: • Nennen Sie mindestens vier Möbelstücke. • Benutzen Sie viermal eine Wechselpräposition mit Dativ (Wo?). • Schreiben Sie zum Schluss, warum Sie dieses Zimmer mögen.",
+   "en": "this",
+   "lemma": "dieser"
+  }
+ ]
+}
