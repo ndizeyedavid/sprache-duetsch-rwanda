@@ -83,6 +83,11 @@
   --color-sun-soft: #fdf0ce;
   --color-coral: #d76d5b;
   --color-coral-soft: #ffe9e6;
+  /* Practice feedback (course v2): dark text on a pale tint, both above 4.5:1 contrast. */
+  --color-ok: #136f53;
+  --color-ok-soft: #e3f4ed;
+  --color-bad: #a3262a;
+  --color-bad-soft: #fbe7e6;
   --color-night: #203044;
 
   /* Status-pill surfaces. Each pairs a solid tint with an "ink" mixed toward
