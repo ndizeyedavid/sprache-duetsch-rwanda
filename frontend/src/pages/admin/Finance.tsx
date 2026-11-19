@@ -11,7 +11,7 @@ import { useApi } from '../../hooks/useApi';
 import { currencyAmount } from '../../lib/format';
 import { listClaims } from '../../lib/payment-claims';
 import { getFinanceDashboard,listCampuses,listLevels,money } from '../../lib/services';
-import { PaypackMonitor } from '../../components/payments/PaypackMonitor';
+import { MobileMoneyMonitor } from '../../components/payments/MobileMoneyMonitor';
 import { COLORS } from '../../lib/theme';
 
 export function AdminFinance() {
@@ -49,7 +49,7 @@ export function AdminFinance() {
  return (
  <div className="space-y-5">
  {hero}
- <PaypackMonitor />
+ <MobileMoneyMonitor />
  <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
  <AcademicMetricCard label="Total billed" value={format(money(data.totalBilled))} note="Charges less approved discounts" icon={FiDollarSign} />
  <AcademicMetricCard label="Collected" value={format(money(data.totalCollected))} note="Payments less refunds" tone="success" icon={FiTrendingUp} />
