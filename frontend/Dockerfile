@@ -6,9 +6,11 @@ COPY . .
 ARG VITE_GOOGLE_CLIENT_ID=""
 ENV VITE_API_URL=/api
 ENV VITE_GOOGLE_CLIENT_ID=$VITE_GOOGLE_CLIENT_ID
-RUN npm run build
+RUN npm run build && rm -rf dist/audio
 
 FROM nginx:stable-alpine
+# Course audio in its own layer (straight from the build context): redeploys reuse it unless clips change.
+COPY public/audio /usr/share/nginx/html/audio
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY deploy/default.conf.template /etc/nginx/templates/default.conf.template
 EXPOSE 8080
