@@ -1,0 +1,277 @@
+{
+  "level": "A1",
+  "kind": "module",
+  "module": 1,
+  "title": "Modultest 1 · Erste Kontakte",
+  "titleEn": "Module test 1 · First contacts",
+  "description": "Hören, Lesen, Wörter, Grammatik und Schreiben aus den Lektionen 1–3 – Hören, Lesen und Schreiben wie in der Prüfung Start Deutsch 1. Sie haben 30 Minuten. Zum Bestehen brauchen Sie 60 %.",
+  "descriptionEn": "Listening, reading, words, grammar and writing from lessons 1–3, with listening, reading and writing tasks like the Start Deutsch 1 exam. You have 30 minutes and need 60% to pass. Your teacher marks the writing task.",
+  "durationMinutes": 30,
+  "passMark": 60,
+  "maxAttempts": 3,
+  "after": 3,
+  "sections": [
+    {
+      "skill": "LISTENING",
+      "title": "Hören",
+      "titleEn": "Listening",
+      "intro": "Sie hören kurze Gespräche. Sie hören jeden Text zweimal. Wählen Sie die richtige Lösung. · You will hear short conversations, each twice. Choose the right answer. (Like Start Deutsch 1, Hören Teil 1.)",
+      "questions": [
+        {
+          "type": "choose",
+          "listen": "F: Woher kommst du, Jean-Paul?\nM: Ich komme aus Ruanda, aus Kigali. Aber jetzt wohne ich in Köln.",
+          "prompt": "Wo wohnt Jean-Paul jetzt?",
+          "options": [
+            "in Kigali",
+            "in Köln",
+            "in Wien"
+          ],
+          "answer": "in Köln"
+        },
+        {
+          "type": "choose",
+          "listen": "M: Sind Sie Lehrerin, Frau Mukamana?\nF: Nein, ich bin Ärztin. Mein Mann ist Lehrer.",
+          "prompt": "Was ist Frau Mukamana von Beruf?",
+          "options": [
+            "Lehrerin",
+            "Ärztin",
+            "Journalistin"
+          ],
+          "answer": "Ärztin"
+        },
+        {
+          "type": "choose",
+          "listen": "F: Wie alt ist deine Schwester Keza?\nM: Sie ist zwanzig. Mein Bruder ist zwölf.",
+          "prompt": "Wie alt ist Keza?",
+          "options": [
+            "zwölf",
+            "zwanzig",
+            "dreißig"
+          ],
+          "answer": "zwanzig"
+        },
+        {
+          "type": "truefalse",
+          "listen": "M: Bist du verheiratet, Aline?\nF: Nein, ich bin ledig. Aber meine Schwester ist verheiratet.",
+          "statement": "Aline ist verheiratet.",
+          "answer": false
+        },
+        {
+          "type": "truefalse",
+          "listen": "F: Wo wohnt dein Bruder?\nM: Er ist Student und wohnt in Kigali. Meine Eltern wohnen in Huye.",
+          "statement": "Der Bruder wohnt in Kigali.",
+          "answer": true
+        }
+      ],
+      "plays": 2,
+      "letters": true
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen",
+      "titleEn": "Reading",
+      "intro": "Lesen Sie die E-Mail. Richtig oder falsch? · Read the email. True or false? (Like Start Deutsch 1, Lesen Teil 1.)",
+      "passage": "Hallo Sara,\n\nich heiße Aline Uwase und komme aus Ruanda. Ich wohne in Musanze und bin Lehrerin von Beruf. Mein Mann heißt Eric. Er arbeitet als Krankenpfleger in einem Krankenhaus. Wir haben zwei Kinder: Daniel ist zehn und Grace ist sieben. Meine Eltern wohnen auch in Musanze.\n\nViele Grüße\nAline",
+      "questions": [
+        {
+          "type": "truefalse",
+          "statement": "Aline wohnt in Kigali.",
+          "answer": false,
+          "explanation": "Aline wohnt in Musanze."
+        },
+        {
+          "type": "truefalse",
+          "statement": "Aline ist Lehrerin.",
+          "answer": true
+        },
+        {
+          "type": "truefalse",
+          "statement": "Eric arbeitet in einem Krankenhaus.",
+          "answer": true
+        },
+        {
+          "type": "choose",
+          "prompt": "Wie viele Kinder hat Aline?",
+          "options": [
+            "ein Kind",
+            "zwei Kinder",
+            "drei Kinder"
+          ],
+          "answer": "zwei Kinder"
+        },
+        {
+          "type": "truefalse",
+          "statement": "Die Eltern von Aline wohnen nicht in Musanze.",
+          "answer": false,
+          "explanation": "Ihre Eltern wohnen auch in Musanze."
+        }
+      ],
+      "letters": true
+    },
+    {
+      "skill": "VOCABULARY",
+      "title": "Wortschatz",
+      "titleEn": "Words",
+      "intro": "Wählen Sie das richtige Wort. · Choose the right word.",
+      "questions": [
+        {
+          "type": "match",
+          "prompt": "Was passt zusammen? · Match the German words with their meaning.",
+          "pairs": [
+            [
+              "der Bruder",
+              "brother"
+            ],
+            [
+              "die Schwester",
+              "sister"
+            ],
+            [
+              "die Eltern",
+              "parents"
+            ],
+            [
+              "der Beruf",
+              "job"
+            ],
+            [
+              "das Krankenhaus",
+              "hospital"
+            ]
+          ]
+        },
+        {
+          "type": "choose",
+          "prompt": "Mein Vater und meine Mutter sind meine …",
+          "options": [
+            "Eltern",
+            "Geschwister",
+            "Kinder"
+          ],
+          "answer": "Eltern"
+        },
+        {
+          "type": "choose",
+          "prompt": "Herr Weber arbeitet im Krankenhaus. Er ist …",
+          "options": [
+            "Arzt",
+            "Lehrer",
+            "Verkäufer"
+          ],
+          "answer": "Arzt"
+        },
+        {
+          "type": "choose",
+          "prompt": "Ich bin nicht verheiratet. Ich bin …",
+          "options": [
+            "ledig",
+            "alt",
+            "Student"
+          ],
+          "answer": "ledig"
+        },
+        {
+          "type": "fill",
+          "prompt": "Auf ___! Bis morgen!",
+          "answer": "Wiedersehen"
+        }
+      ]
+    },
+    {
+      "skill": "GRAMMAR",
+      "title": "Grammatik",
+      "titleEn": "Grammar",
+      "intro": "Ergänzen Sie oder wählen Sie die richtige Form. · Complete the sentence or choose the right form.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "Woher ___ du? — Aus Kigali.",
+          "answer": "kommst",
+          "explanation": "du → kommst"
+        },
+        {
+          "type": "fill",
+          "prompt": "Ich ___ Lehrer von Beruf.",
+          "answer": "bin",
+          "explanation": "ich → bin"
+        },
+        {
+          "type": "choose",
+          "prompt": "Er arbeitet ___ MTN.",
+          "options": [
+            "bei",
+            "als",
+            "aus"
+          ],
+          "answer": "bei",
+          "explanation": "bei + Firma"
+        },
+        {
+          "type": "choose",
+          "prompt": "Ich arbeite ___ Krankenpfleger.",
+          "options": [
+            "als",
+            "bei",
+            "in"
+          ],
+          "answer": "als",
+          "explanation": "als + Beruf"
+        },
+        {
+          "type": "choose",
+          "prompt": "Das ist ___ Bruder.",
+          "options": [
+            "mein",
+            "meine"
+          ],
+          "answer": "mein"
+        },
+        {
+          "type": "choose",
+          "prompt": "Wie heißt ___ Schwester?",
+          "options": [
+            "dein",
+            "deine"
+          ],
+          "answer": "deine"
+        },
+        {
+          "type": "choose",
+          "prompt": "Kommst du nicht aus Kenia? — ___, ich komme aus Kenia.",
+          "options": [
+            "Doch",
+            "Ja",
+            "Nein"
+          ],
+          "answer": "Doch",
+          "explanation": "Nach einer verneinten Frage antwortet man positiv mit doch."
+        },
+        {
+          "type": "order",
+          "answer": "Ich arbeite heute nicht.",
+          "en": "I am not working today."
+        },
+        {
+          "type": "order",
+          "answer": "Wo wohnt deine Familie?",
+          "en": "Where does your family live?"
+        }
+      ]
+    },
+    {
+      "skill": "WRITING",
+      "title": "Schreiben",
+      "titleEn": "Writing",
+      "intro": "Schreiben Sie eine kurze E-Mail, wie in der Prüfung (Start Deutsch 1, Schreiben Teil 2). Ihre Lehrerin oder Ihr Lehrer korrigiert den Text. · Write a short email, like in the exam. Your teacher marks it.",
+      "questions": [
+        {
+          "type": "write",
+          "points": 10,
+          "prompt": "Ihre neue Kursleiterin, Frau Weber, möchte Sie kennenlernen. Schreiben Sie ihr eine E-Mail (circa 30 Wörter):\n– Wer sind Sie? (Name, Land)\n– Was machen Sie? (Beruf)\n– Wer ist in Ihrer Familie?\n(3 Punkte pro Inhaltspunkt, 1 Punkt für Anrede und Gruß)",
+          "promptEn": "Your new course leader, Ms Weber, wants to get to know you. Write her an email (about 30 words): who you are (name, country), what you do (job), and who is in your family. 3 points for each content point, 1 point for greeting and closing.",
+          "modelAnswer": "Liebe Frau Weber, ich heiße Jean-Paul Mugisha und komme aus Ruanda. Ich bin Verkäufer und arbeite bei einer Firma in Kigali. Ich bin verheiratet und wir haben zwei Kinder. Viele Grüße, Jean-Paul"
+        }
+      ]
+    }
+  ]
+}
