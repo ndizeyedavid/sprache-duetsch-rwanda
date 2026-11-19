@@ -1,0 +1,719 @@
+{
+ "level": "A1",
+ "lesson": 15,
+ "title": "Im Stadtviertel — Das Zimmer gefällt mir",
+ "lines": [
+  {
+   "de": "Sagen, was einem gefällt und wem etwas gehört.",
+   "en": "Say what you like and who something belongs to."
+  },
+  {
+   "de": "Textsorte: Gespräch · Stadtteilporträt",
+   "en": "Text type: Conversation · Neighbourhood portrait"
+  },
+  {
+   "de": "über das eigene Stadtviertel sprechen",
+   "en": "talk about your own neighbourhood"
+  },
+  {
+   "de": "Personalpronomen im Dativ verwenden",
+   "en": "use personal pronouns in the dative (Dativ)"
+  },
+  {
+   "de": "Verben mit Dativ wie gefallen, gehören und helfen benutzen",
+   "en": "use verbs with the dative, such as gefallen, gehören and helfen"
+  },
+  {
+   "de": "Grammatik: Personalpronomen im Dativ",
+   "en": "Grammar: personal pronouns (Personalpronomen) in the dative (Dativ)"
+  },
+  {
+   "de": "Einige wichtige Verben brauchen den Dativ. Dann steht die Person im Dativ, nicht im Akkusativ.",
+   "en": "Some important verbs need the dative. Then the person is in the dative, not in the accusative."
+  },
+  {
+   "de": "Dativ",
+   "en": "Dative"
+  },
+  {
+   "de": "mir",
+   "en": "(to) me"
+  },
+  {
+   "de": "dir",
+   "en": "(to) you"
+  },
+  {
+   "de": "er / es",
+   "en": "he / it"
+  },
+  {
+   "de": "ihm",
+   "en": "(to) him / it"
+  },
+  {
+   "de": "uns",
+   "en": "(to) us"
+  },
+  {
+   "de": "euch",
+   "en": "(to) you (plural)"
+  },
+  {
+   "de": "sie / Sie",
+   "en": "they / you (formal)"
+  },
+  {
+   "de": "ihnen / Ihnen",
+   "en": "(to) them / (to) you (formal)"
+  },
+  {
+   "de": "Das Zimmer gefällt mir sehr gut.gefallen + Dativ",
+   "en": "I like the room very much. gefallen + dative"
+  },
+  {
+   "de": "Kannst du uns helfen?helfen + Dativ",
+   "en": "Can you help us? helfen + dative"
+  },
+  {
+   "de": "Tipp: Höflich schreibt man Ihnen immer groß.",
+   "en": "Tip: In the polite form, Ihnen is always written with a capital letter."
+  },
+  {
+   "de": "Grammatik: Verben mit Dativ",
+   "en": "Grammar: verbs with the dative (Dativ)"
+  },
+  {
+   "de": "Diese Verben verlangen immer den Dativ. Lernen Sie sie als feste Gruppe.",
+   "en": "These verbs always take the dative. Learn them as a fixed group."
+  },
+  {
+   "de": "Verb",
+   "en": "verb"
+  },
+  {
+   "de": "gefallen",
+   "en": "to please, to like"
+  },
+  {
+   "de": "Das Zimmer gefällt mir.",
+   "en": "I like the room."
+  },
+  {
+   "de": "ich finde es schön",
+   "en": "I think it's nice"
+  },
+  {
+   "de": "gehören",
+   "en": "to belong (to)"
+  },
+  {
+   "de": "Das Fahrrad gehört ihm.",
+   "en": "The bike belongs to him."
+  },
+  {
+   "de": "es ist sein Fahrrad",
+   "en": "it is his bike"
+  },
+  {
+   "de": "Sie hilft uns.",
+   "en": "She helps us."
+  },
+  {
+   "de": "sie gibt Hilfe",
+   "en": "she gives help"
+  },
+  {
+   "de": "danken",
+   "en": "to thank"
+  },
+  {
+   "de": "Ich danke dir.",
+   "en": "I thank you."
+  },
+  {
+   "de": "ich sage danke",
+   "en": "I say thank you"
+  },
+  {
+   "de": "schmecken",
+   "en": "to taste (good)"
+  },
+  {
+   "de": "Der Kuchen schmeckt mir.",
+   "en": "The cake tastes good to me."
+  },
+  {
+   "de": "ich finde ihn gut",
+   "en": "I think it's good"
+  },
+  {
+   "de": "Wem gehört die Tasche? — Sie gehört mir.Frage mit Wem? → Dativ",
+   "en": "Who does the bag belong to? — It belongs to me. Question with Wem? → dative"
+  },
+  {
+   "de": "Tipp: Fragewort für den Dativ: Wem? — Wem gehört das? Wem gefällt das?",
+   "en": "Tip: Question word for the dative: Wem? (to whom?) — Who does that belong to? Who likes that?"
+  },
+  {
+   "de": "das Viertel, - — EN: district, quarter · FR: le quartierDas Viertel ist sehr lebendig.",
+   "en": "Example: The district is very lively."
+  },
+  {
+   "de": "gefallen — EN: to please, to like · FR: plaireDas Zimmer gefällt mir.",
+   "en": "Example: I like the room."
+  },
+  {
+   "de": "gehören — EN: to belong to · FR: appartenir àWem gehört das Fahrrad?",
+   "en": "Example: Who does the bike belong to?"
+  },
+  {
+   "de": "helfen — EN: to help · FR: aiderKönnen Sie mir helfen?",
+   "en": "Example: Can you help me?"
+  },
+  {
+   "de": "der Markt, ¨-e — EN: market · FR: le marchéSamstags gehe ich auf den Markt.",
+   "en": "Example: On Saturdays I go to the market."
+  },
+  {
+   "de": "der Supermarkt, ¨-e — EN: supermarket · FR: le supermarchéDer Supermarkt ist gleich um die Ecke.",
+   "en": "Example: The supermarket is just around the corner."
+  },
+  {
+   "de": "lebendig — EN: lively · FR: animéHier ist es immer lebendig.",
+   "en": "Example: It's always lively here."
+  },
+  {
+   "de": "ruhig — EN: quiet · FR: calmeMeine Straße ist sehr ruhig.",
+   "en": "Example: My street is very quiet."
+  },
+  {
+   "de": "der Park, -s — EN: park · FR: le parcIm Park spielen viele Kinder.",
+   "en": "Example: Lots of children play in the park."
+  },
+  {
+   "de": "die Leute (Pl.) — EN: people · FR: les gensDie Leute hier sind sehr nett.",
+   "en": "Example: The people here are very nice."
+  },
+  {
+   "de": "wem — EN: to whom · FR: à quiWem gehört die Jacke?",
+   "en": "Example: Who does the jacket belong to?"
+  },
+  {
+   "de": "um die Ecke — EN: around the corner · FR: au coin de la rueDie Bäckerei ist um die Ecke.",
+   "en": "Example: The bakery is around the corner."
+  },
+  {
+   "de": "sagen, was gefällt",
+   "en": "saying what you like"
+  },
+  {
+   "de": "Das gefällt mir sehr gut.",
+   "en": "I like that very much."
+  },
+  {
+   "de": "Mir gefällt besonders …",
+   "en": "I especially like …"
+  },
+  {
+   "de": "Das gefällt mir gar nicht.",
+   "en": "I don't like that at all."
+  },
+  {
+   "de": "über das Viertel sprechen",
+   "en": "talking about the neighbourhood"
+  },
+  {
+   "de": "Hier ist immer viel los.",
+   "en": "There's always a lot going on here."
+  },
+  {
+   "de": "Die Leute sind sehr freundlich.",
+   "en": "The people are very friendly."
+  },
+  {
+   "de": "Alles ist in der Nähe.",
+   "en": "Everything is nearby."
+  },
+  {
+   "de": "Wem gehört das?",
+   "en": "Who does that belong to?"
+  },
+  {
+   "de": "Wie gefällt dir die Wohnung?",
+   "en": "How do you like the flat?"
+  },
+  {
+   "de": "Dialog: Ein Zimmer anschauen",
+   "en": "Dialogue: Viewing a room"
+  },
+  {
+   "de": "Vermieterin: Und das ist das Zimmer. Wie gefällt es Ihnen?",
+   "en": "Landlady: And this is the room. How do you like it?"
+  },
+  {
+   "de": "Ines: Es gefällt mir sehr gut. Es ist schön hell.",
+   "en": "Ines: I like it very much. It's nice and bright."
+  },
+  {
+   "de": "Vermieterin: Der Schrank gehört übrigens zum Zimmer.",
+   "en": "Landlady: By the way, the wardrobe comes with the room."
+  },
+  {
+   "de": "Ines: Super. Und wie ist das Viertel?",
+   "en": "Ines: Great. And what's the neighbourhood like?"
+  },
+  {
+   "de": "Vermieterin: Sehr lebendig. Der Markt ist gleich um die Ecke.",
+   "en": "Landlady: Very lively. The market is just around the corner."
+  },
+  {
+   "de": "Ines: Das gefällt mir. Können Sie mir den Vertrag schicken?",
+   "en": "Ines: I like that. Can you send me the contract?"
+  },
+  {
+   "de": "Das Viertel ist sehr lebendig.",
+   "en": "The district is very lively."
+  },
+  {
+   "de": "Wem gehört das Fahrrad?",
+   "en": "Who does the bike belong to?"
+  },
+  {
+   "de": "Können Sie mir helfen?",
+   "en": "Can you help me?"
+  },
+  {
+   "de": "Samstags gehe ich auf den Markt.",
+   "en": "On Saturdays I go to the market."
+  },
+  {
+   "de": "Der Supermarkt ist gleich um die Ecke.",
+   "en": "The supermarket is just around the corner."
+  },
+  {
+   "de": "Hier ist es immer lebendig.",
+   "en": "It's always lively here."
+  },
+  {
+   "de": "Meine Straße ist sehr ruhig.",
+   "en": "My street is very quiet."
+  },
+  {
+   "de": "Im Park spielen viele Kinder.",
+   "en": "Lots of children play in the park."
+  },
+  {
+   "de": "Die Leute hier sind sehr nett.",
+   "en": "The people here are very nice."
+  },
+  {
+   "de": "Wem gehört die Jacke?",
+   "en": "Who does the jacket belong to?"
+  },
+  {
+   "de": "Die Bäckerei ist um die Ecke.",
+   "en": "The bakery is around the corner."
+  },
+  {
+   "de": "Das Zimmer gefällt ___ sehr. (ich, Dativ)",
+   "en": "The room pleases ___ a lot. (ich, dative)"
+  },
+  {
+   "de": "Kannst du ___ helfen? (wir)",
+   "en": "Can you help ___? (wir)"
+  },
+  {
+   "de": "Wem gehört das Fahrrad? — Es gehört ___. (er, Dativ)",
+   "en": "Who does the bike belong to? — It belongs to ___. (er, dative)"
+  },
+  {
+   "de": "Welches Fragewort passt zum Dativ?",
+   "en": "Which question word goes with the dative?"
+  },
+  {
+   "de": "Der Kuchen schmeckt ___ gut. (du, Dativ)",
+   "en": "The cake tastes good to ___. (du, dative)"
+  },
+  {
+   "de": "Beschreiben Sie Ihr Stadtviertel: Was gefällt Ihnen dort und was nicht? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie zweimal gefallen mit dem Dativ. • Nennen Sie drei Orte in der Nähe. • Schreiben Sie, wie die Leute dort sind.",
+   "en": "Describe your neighbourhood: What do you like there and what don't you like? Length: 30–40 words Checklist: • Use gefallen with the dative twice. • Name three places nearby. • Write what the people there are like."
+  },
+  {
+   "de": "ich → mir.",
+   "en": "ich → mir (I → to me)."
+  },
+  {
+   "de": "wir → uns im Dativ.",
+   "en": "wir → uns in the dative."
+  },
+  {
+   "de": "er → ihm.",
+   "en": "er → ihm (he → to him)."
+  },
+  {
+   "de": "Wem? fragt nach dem Dativ.",
+   "en": "Wem? asks for the dative."
+  },
+  {
+   "de": "du → dir.",
+   "en": "du → dir (you → to you)."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Stadtteilporträt",
+   "context": "Textsorte: Gespräch · Stadtteilporträt",
+   "en": "neighbourhood portrait",
+   "lemma": "das Stadtteilporträt"
+  },
+  {
+   "form": "eigene",
+   "context": "über das eigene Stadtviertel sprechen",
+   "en": "own",
+   "lemma": "eigen"
+  },
+  {
+   "form": "Stadtviertel",
+   "context": "über das eigene Stadtviertel sprechen",
+   "en": "neighbourhood; district",
+   "lemma": "das Stadtviertel"
+  },
+  {
+   "form": "gehören",
+   "context": "Verben mit Dativ wie gefallen, gehören und helfen benutzen",
+   "en": "to belong",
+   "lemma": ""
+  },
+  {
+   "form": "Einige",
+   "context": "Einige wichtige Verben brauchen den Dativ. Dann steht die Person im Dativ, nicht im Akkusativ.",
+   "en": "some",
+   "lemma": ""
+  },
+  {
+   "form": "wichtige",
+   "context": "Einige wichtige Verben brauchen den Dativ. Dann steht die Person im Dativ, nicht im Akkusativ.",
+   "en": "important",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "ihm",
+   "context": "ihm",
+   "en": "(to) him",
+   "lemma": ""
+  },
+  {
+   "form": "euch",
+   "context": "euch",
+   "en": "(to) you (plural)",
+   "lemma": ""
+  },
+  {
+   "form": "verlangen",
+   "context": "Diese Verben verlangen immer den Dativ. Lernen Sie sie als feste Gruppe.",
+   "en": "require; demand",
+   "lemma": ""
+  },
+  {
+   "form": "feste",
+   "context": "Diese Verben verlangen immer den Dativ. Lernen Sie sie als feste Gruppe.",
+   "en": "fixed",
+   "lemma": "fest"
+  },
+  {
+   "form": "Gruppe",
+   "context": "Diese Verben verlangen immer den Dativ. Lernen Sie sie als feste Gruppe.",
+   "en": "group",
+   "lemma": "die Gruppe"
+  },
+  {
+   "form": "Fahrrad",
+   "context": "Das Fahrrad gehört ihm.",
+   "en": "bicycle",
+   "lemma": "das Fahrrad"
+  },
+  {
+   "form": "danken",
+   "context": "danken",
+   "en": "to thank",
+   "lemma": ""
+  },
+  {
+   "form": "sage",
+   "context": "ich sage danke",
+   "en": "say",
+   "lemma": "sagen"
+  },
+  {
+   "form": "Fragewort",
+   "context": "Tipp: Fragewort für den Dativ: Wem? — Wem gehört das? Wem gefällt das?",
+   "en": "question word",
+   "lemma": "das Fragewort"
+  },
+  {
+   "form": "district",
+   "context": "das Viertel, - — EN: district, quarter · FR: le quartierDas Viertel ist sehr lebendig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "quartierDas",
+   "context": "das Viertel, - — EN: district, quarter · FR: le quartierDas Viertel ist sehr lebendig.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "lebendig",
+   "context": "das Viertel, - — EN: district, quarter · FR: le quartierDas Viertel ist sehr lebendig.",
+   "en": "lively",
+   "lemma": ""
+  },
+  {
+   "form": "plaireDas",
+   "context": "gefallen — EN: to please, to like · FR: plaireDas Zimmer gefällt mir.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "belong",
+   "context": "gehören — EN: to belong to · FR: appartenir àWem gehört das Fahrrad?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "appartenir",
+   "context": "gehören — EN: to belong to · FR: appartenir àWem gehört das Fahrrad?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àWem",
+   "context": "gehören — EN: to belong to · FR: appartenir àWem gehört das Fahrrad?",
+   "en": "(to) whom",
+   "lemma": ""
+  },
+  {
+   "form": "aiderKönnen",
+   "context": "helfen — EN: to help · FR: aiderKönnen Sie mir helfen?",
+   "en": "can",
+   "lemma": "können"
+  },
+  {
+   "form": "Markt",
+   "context": "der Markt, ¨-e — EN: market · FR: le marchéSamstags gehe ich auf den Markt.",
+   "en": "market",
+   "lemma": "der Markt"
+  },
+  {
+   "form": "market",
+   "context": "der Markt, ¨-e — EN: market · FR: le marchéSamstags gehe ich auf den Markt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "marchéSamstags",
+   "context": "der Markt, ¨-e — EN: market · FR: le marchéSamstags gehe ich auf den Markt.",
+   "en": "on Saturdays",
+   "lemma": ""
+  },
+  {
+   "form": "supermarket",
+   "context": "der Supermarkt, ¨-e — EN: supermarket · FR: le supermarchéDer Supermarkt ist gleich um die Ecke.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "supermarchéDer",
+   "context": "der Supermarkt, ¨-e — EN: supermarket · FR: le supermarchéDer Supermarkt ist gleich um die Ecke.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Ecke",
+   "context": "der Supermarkt, ¨-e — EN: supermarket · FR: le supermarchéDer Supermarkt ist gleich um die Ecke.",
+   "en": "corner",
+   "lemma": "die Ecke"
+  },
+  {
+   "form": "lively",
+   "context": "lebendig — EN: lively · FR: animéHier ist es immer lebendig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "animéHier",
+   "context": "lebendig — EN: lively · FR: animéHier ist es immer lebendig.",
+   "en": "here",
+   "lemma": ""
+  },
+  {
+   "form": "ruhig",
+   "context": "ruhig — EN: quiet · FR: calmeMeine Straße ist sehr ruhig.",
+   "en": "quiet; calm",
+   "lemma": ""
+  },
+  {
+   "form": "quiet",
+   "context": "ruhig — EN: quiet · FR: calmeMeine Straße ist sehr ruhig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "calmeMeine",
+   "context": "ruhig — EN: quiet · FR: calmeMeine Straße ist sehr ruhig.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "Park",
+   "context": "der Park, -s — EN: park · FR: le parcIm Park spielen viele Kinder.",
+   "en": "park",
+   "lemma": "der Park"
+  },
+  {
+   "form": "park",
+   "context": "der Park, -s — EN: park · FR: le parcIm Park spielen viele Kinder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parcIm",
+   "context": "der Park, -s — EN: park · FR: le parcIm Park spielen viele Kinder.",
+   "en": "in the",
+   "lemma": ""
+  },
+  {
+   "form": "Leute",
+   "context": "die Leute (Pl.) — EN: people · FR: les gensDie Leute hier sind sehr nett.",
+   "en": "people",
+   "lemma": "die Leute"
+  },
+  {
+   "form": "people",
+   "context": "die Leute (Pl.) — EN: people · FR: les gensDie Leute hier sind sehr nett.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gensDie",
+   "context": "die Leute (Pl.) — EN: people · FR: les gensDie Leute hier sind sehr nett.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "whom",
+   "context": "wem — EN: to whom · FR: à quiWem gehört die Jacke?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "quiWem",
+   "context": "wem — EN: to whom · FR: à quiWem gehört die Jacke?",
+   "en": "(to) whom",
+   "lemma": ""
+  },
+  {
+   "form": "Jacke",
+   "context": "wem — EN: to whom · FR: à quiWem gehört die Jacke?",
+   "en": "jacket",
+   "lemma": "die Jacke"
+  },
+  {
+   "form": "around",
+   "context": "um die Ecke — EN: around the corner · FR: au coin de la rueDie Bäckerei ist um die Ecke.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "corner",
+   "context": "um die Ecke — EN: around the corner · FR: au coin de la rueDie Bäckerei ist um die Ecke.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "au",
+   "context": "um die Ecke — EN: around the corner · FR: au coin de la rueDie Bäckerei ist um die Ecke.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "coin",
+   "context": "um die Ecke — EN: around the corner · FR: au coin de la rueDie Bäckerei ist um die Ecke.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rueDie",
+   "context": "um die Ecke — EN: around the corner · FR: au coin de la rueDie Bäckerei ist um die Ecke.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Bäckerei",
+   "context": "um die Ecke — EN: around the corner · FR: au coin de la rueDie Bäckerei ist um die Ecke.",
+   "en": "bakery",
+   "lemma": "die Bäckerei"
+  },
+  {
+   "form": "besonders",
+   "context": "Mir gefällt besonders …",
+   "en": "especially",
+   "lemma": ""
+  },
+  {
+   "form": "los",
+   "context": "Hier ist immer viel los.",
+   "en": "going on",
+   "lemma": ""
+  },
+  {
+   "form": "anschauen",
+   "context": "Dialog: Ein Zimmer anschauen",
+   "en": "to look at; view",
+   "lemma": ""
+  },
+  {
+   "form": "Vermieterin",
+   "context": "Vermieterin: Und das ist das Zimmer. Wie gefällt es Ihnen?",
+   "en": "landlady",
+   "lemma": "die Vermieterin"
+  },
+  {
+   "form": "Ines",
+   "context": "Ines: Es gefällt mir sehr gut. Es ist schön hell.",
+   "en": "Ines (name)",
+   "lemma": ""
+  },
+  {
+   "form": "übrigens",
+   "context": "Vermieterin: Der Schrank gehört übrigens zum Zimmer.",
+   "en": "by the way",
+   "lemma": ""
+  },
+  {
+   "form": "Vertrag",
+   "context": "Ines: Das gefällt mir. Können Sie mir den Vertrag schicken?",
+   "en": "contract",
+   "lemma": "der Vertrag"
+  },
+  {
+   "form": "schicken",
+   "context": "Ines: Das gefällt mir. Können Sie mir den Vertrag schicken?",
+   "en": "send",
+   "lemma": ""
+  },
+  {
+   "form": "Samstags",
+   "context": "Samstags gehe ich auf den Markt.",
+   "en": "on Saturdays",
+   "lemma": ""
+  },
+  {
+   "form": "Orte",
+   "context": "Beschreiben Sie Ihr Stadtviertel: Was gefällt Ihnen dort und was nicht? Umfang: 30–40 Wörter Checkliste: • Benutzen Sie zweimal gefallen mit dem Dativ. • Nennen Sie drei Orte in der Nähe. • Schreiben Sie, wie die Leute dort sind.",
+   "en": "places",
+   "lemma": "der Ort"
+  }
+ ]
+}
