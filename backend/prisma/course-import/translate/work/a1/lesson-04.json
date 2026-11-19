@@ -1,0 +1,1521 @@
+{
+ "level": "A1",
+ "lesson": 4,
+ "title": "Möbel und Dinge — Der Schrank ist neu",
+ "lines": [
+  {
+   "de": "Lernziele",
+   "en": "Learning goals"
+  },
+  {
+   "de": "Dinge benennen, beschreiben und bewerten.",
+   "en": "Name, describe and give your opinion of things."
+  },
+  {
+   "de": "Textsorte: Gespräch · Anzeige",
+   "en": "Text type: Conversation · Advertisement"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 2 (Anzeigen); telc A1 Lesen",
+   "en": "Exam link: Start Deutsch 1 Reading part 2 (advertisements); telc A1 Reading"
+  },
+  {
+   "de": "Nach dieser Lektion können Sie:",
+   "en": "After this lesson you can:"
+  },
+  {
+   "de": "Möbel und Dinge benennen",
+   "en": "name furniture and things"
+  },
+  {
+   "de": "den bestimmten Artikel der, das, die verwenden",
+   "en": "use the definite article der, das, die"
+  },
+  {
+   "de": "Dinge mit er, es, sie ersetzen und bewerten",
+   "en": "replace things with er, es, sie and give your opinion of them"
+  },
+  {
+   "de": "Grammatik: Der bestimmte Artikel: der, das, die",
+   "en": "Grammar: The definite article (bestimmter Artikel): der, das, die"
+  },
+  {
+   "de": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "Every German noun has an article. You usually cannot guess it — always learn every noun together with its article."
+  },
+  {
+   "de": "Genus",
+   "en": "Gender"
+  },
+  {
+   "de": "Artikel",
+   "en": "Article"
+  },
+  {
+   "de": "Beispiel",
+   "en": "Example"
+  },
+  {
+   "de": "maskulin",
+   "en": "masculine"
+  },
+  {
+   "de": "der",
+   "en": "the (masculine)"
+  },
+  {
+   "de": "der Tisch, der Stuhl, der Schrank",
+   "en": "the table, the chair, the wardrobe"
+  },
+  {
+   "de": "neutrum",
+   "en": "neuter"
+  },
+  {
+   "de": "das",
+   "en": "the (neuter)"
+  },
+  {
+   "de": "das Bett, das Sofa, das Regal",
+   "en": "the bed, the sofa, the shelf"
+  },
+  {
+   "de": "feminin",
+   "en": "feminine"
+  },
+  {
+   "de": "die",
+   "en": "the (feminine and plural)"
+  },
+  {
+   "de": "die Lampe, die Uhr, die Tür",
+   "en": "the lamp, the clock, the door"
+  },
+  {
+   "de": "Plural (alle)",
+   "en": "Plural (all)"
+  },
+  {
+   "de": "die Tische, die Betten, die Lampen",
+   "en": "the tables, the beds, the lamps"
+  },
+  {
+   "de": "Beispiele",
+   "en": "Examples"
+  },
+  {
+   "de": "Der Tisch ist schön und das Bett ist bequem.maskulin und neutrum",
+   "en": "The table is beautiful and the bed is comfortable. masculine and neuter"
+  },
+  {
+   "de": "Die Lampe kostet 45 Euro.feminin",
+   "en": "The lamp costs 45 euros. feminine"
+  },
+  {
+   "de": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "Tip: Study tip: Write every new noun in colour — blue for der, green for das, red for die."
+  },
+  {
+   "de": "Grammatik: Personalpronomen: er, es, sie",
+   "en": "Grammar: Personal pronouns (Personalpronomen): er, es, sie"
+  },
+  {
+   "de": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "Instead of repeating the noun, you use a pronoun. The pronoun matches the article."
+  },
+  {
+   "de": "Pronomen",
+   "en": "Pronoun"
+  },
+  {
+   "de": "der Tisch",
+   "en": "the table"
+  },
+  {
+   "de": "er",
+   "en": "he; it (masculine)"
+  },
+  {
+   "de": "Der Tisch? Er ist schön.",
+   "en": "The table? It is beautiful."
+  },
+  {
+   "de": "das Bett",
+   "en": "the bed"
+  },
+  {
+   "de": "es",
+   "en": "it (neuter)"
+  },
+  {
+   "de": "Das Bett? Es kostet 450 Euro.",
+   "en": "The bed? It costs 450 euros."
+  },
+  {
+   "de": "die Lampe",
+   "en": "the lamp"
+  },
+  {
+   "de": "sie",
+   "en": "she; it (feminine); they"
+  },
+  {
+   "de": "Die Lampe? Sie ist zu teuer.",
+   "en": "The lamp? It is too expensive."
+  },
+  {
+   "de": "die Stühle (Pl.)",
+   "en": "the chairs (pl.)"
+  },
+  {
+   "de": "Die Stühle? Sie sind bequem.",
+   "en": "The chairs? They are comfortable."
+  },
+  {
+   "de": "Wie findest du den Schrank? — Er gefällt mir gut.der Schrank → er",
+   "en": "What do you think of the wardrobe? — I like it a lot. der Schrank → er"
+  },
+  {
+   "de": "Die Uhr ist alt, aber sie funktioniert noch.die Uhr → sie",
+   "en": "The clock is old, but it still works. die Uhr → sie"
+  },
+  {
+   "de": "Tipp: Merken Sie sich: der → er, das → es, die → sie. Das ist einfach!",
+   "en": "Tip: Remember: der → er, das → es, die → sie. That's easy!"
+  },
+  {
+   "de": "Wortschatz",
+   "en": "Vocabulary"
+  },
+  {
+   "de": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "The most important words of the lesson with English (EN) and French (FR) translations. Then practise them with the flashcards."
+  },
+  {
+   "de": "der Tisch, -e — EN: table · FR: la tableDer Tisch ist aus Holz.",
+   "en": "Example: The table is made of wood."
+  },
+  {
+   "de": "der Stuhl, ¨-e — EN: chair · FR: la chaiseWir brauchen noch vier Stühle.",
+   "en": "Example: We need four more chairs."
+  },
+  {
+   "de": "das Bett, -en — EN: bed · FR: le litDas Bett ist sehr bequem.",
+   "en": "Example: The bed is very comfortable."
+  },
+  {
+   "de": "der Schrank, ¨-e — EN: cupboard, wardrobe · FR: l'armoireDer Schrank ist zu groß.",
+   "en": "Example: The wardrobe is too big."
+  },
+  {
+   "de": "die Lampe, -n — EN: lamp · FR: la lampeDie Lampe kostet 30 Euro.",
+   "en": "Example: The lamp costs 30 euros."
+  },
+  {
+   "de": "das Sofa, -s — EN: sofa · FR: le canapéDas Sofa ist neu.",
+   "en": "Example: The sofa is new."
+  },
+  {
+   "de": "das Regal, -e — EN: shelf · FR: l'étagèreDas Regal ist praktisch.",
+   "en": "Example: The shelf is practical."
+  },
+  {
+   "de": "schön / hässlich — EN: beautiful / ugly · FR: beau / laidDer Stuhl ist wirklich schön.",
+   "en": "Example: The chair is really beautiful."
+  },
+  {
+   "de": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "Example: That is much too expensive!"
+  },
+  {
+   "de": "neu / alt — EN: new / old · FR: neuf / vieuxMein Sofa ist schon alt.",
+   "en": "Example: My sofa is already old."
+  },
+  {
+   "de": "kosten — EN: to cost · FR: coûterWas kostet die Lampe?",
+   "en": "Example: How much does the lamp cost?"
+  },
+  {
+   "de": "finden — EN: to find, to think of · FR: trouverWie findest du den Tisch?",
+   "en": "Example: What do you think of the table?"
+  },
+  {
+   "de": "Redemittel",
+   "en": "Useful phrases"
+  },
+  {
+   "de": "nach dem Preis fragen",
+   "en": "asking about the price"
+  },
+  {
+   "de": "Was kostet das?",
+   "en": "How much does that cost?"
+  },
+  {
+   "de": "Wie teuer ist der Schrank?",
+   "en": "How expensive is the wardrobe?"
+  },
+  {
+   "de": "Das kostet 45 Euro.",
+   "en": "That costs 45 euros."
+  },
+  {
+   "de": "etwas bewerten",
+   "en": "giving your opinion of something"
+  },
+  {
+   "de": "Der Tisch ist schön!",
+   "en": "The table is beautiful!"
+  },
+  {
+   "de": "Das finde ich nicht so schön.",
+   "en": "I don't think that's very nice."
+  },
+  {
+   "de": "Das ist mir zu teuer.",
+   "en": "That's too expensive for me."
+  },
+  {
+   "de": "nachfragen",
+   "en": "asking follow-up questions"
+  },
+  {
+   "de": "Wie findest du das Sofa?",
+   "en": "What do you think of the sofa?"
+  },
+  {
+   "de": "Gefällt dir die Lampe?",
+   "en": "Do you like the lamp?"
+  },
+  {
+   "de": "Und das Regal?",
+   "en": "And the shelf?"
+  },
+  {
+   "de": "Dialog: Im Möbelhaus",
+   "en": "Dialogue: At the furniture shop"
+  },
+  {
+   "de": "Nora: Schau mal, der Tisch! Wie findest du ihn?",
+   "en": "Nora: Look, the table! What do you think of it?"
+  },
+  {
+   "de": "Kai: Er ist schön. Aber was kostet er?",
+   "en": "Kai: It's beautiful. But how much does it cost?"
+  },
+  {
+   "de": "Nora: 450 Euro. Das ist nicht billig.",
+   "en": "Nora: 450 euros. That's not cheap."
+  },
+  {
+   "de": "Kai: Und die Lampe da? Sie ist nur 30 Euro.",
+   "en": "Kai: And the lamp there? It's only 30 euros."
+  },
+  {
+   "de": "Nora: Die Lampe finde ich nicht so schön.",
+   "en": "Nora: I don't think the lamp is very nice."
+  },
+  {
+   "de": "Kai: Okay. Dann nehmen wir nur den Tisch.",
+   "en": "Kai: Okay. Then we'll just take the table."
+  },
+  {
+   "de": "Lernen Sie die 12 Wörter dieser Lektion. Drehen Sie jede Karte um: Englisch / Französisch und ein Beispielsatz.",
+   "en": "Learn the 12 words of this lesson. Turn over each card: English / French and an example sentence."
+  },
+  {
+   "de": "Der Tisch ist aus Holz.",
+   "en": "The table is made of wood."
+  },
+  {
+   "de": "Wir brauchen noch vier Stühle.",
+   "en": "We need four more chairs."
+  },
+  {
+   "de": "Das Bett ist sehr bequem.",
+   "en": "The bed is very comfortable."
+  },
+  {
+   "de": "Der Schrank ist zu groß.",
+   "en": "The wardrobe is too big."
+  },
+  {
+   "de": "Die Lampe kostet 30 Euro.",
+   "en": "The lamp costs 30 euros."
+  },
+  {
+   "de": "Das Sofa ist neu.",
+   "en": "The sofa is new."
+  },
+  {
+   "de": "Das Regal ist praktisch.",
+   "en": "The shelf is practical."
+  },
+  {
+   "de": "Der Stuhl ist wirklich schön.",
+   "en": "The chair is really beautiful."
+  },
+  {
+   "de": "Das ist viel zu teuer!",
+   "en": "That is much too expensive!"
+  },
+  {
+   "de": "Mein Sofa ist schon alt.",
+   "en": "My sofa is already old."
+  },
+  {
+   "de": "Was kostet die Lampe?",
+   "en": "How much does the lamp cost?"
+  },
+  {
+   "de": "Wie findest du den Tisch?",
+   "en": "What do you think of the table?"
+  },
+  {
+   "de": "Wählen Sie die richtige Antwort.",
+   "en": "Choose the correct answer."
+  },
+  {
+   "de": "___ Lampe ist sehr schön.",
+   "en": "___ lamp is very beautiful."
+  },
+  {
+   "de": "Ergänzen Sie die Lücke.",
+   "en": "Fill in the gap."
+  },
+  {
+   "de": "Der Tisch? ___ ist neu. (Pronomen)",
+   "en": "The table? ___ is new. (pronoun)"
+  },
+  {
+   "de": "Das Bett? ___ kostet 450 Euro. (Pronomen)",
+   "en": "The bed? ___ costs 450 euros. (pronoun)"
+  },
+  {
+   "de": "Welcher Artikel passt zu „Schrank\"?",
+   "en": "Which article goes with \"Schrank\"?"
+  },
+  {
+   "de": "Was ___ der Stuhl? — 80 Euro. (kosten, Präsens)",
+   "en": "How much ___ the chair? — 80 euros. (kosten, present tense)"
+  },
+  {
+   "de": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "Describe three pieces of furniture in your room: What are they like? Length: 25–35 words Checklist: • Use the correct article with every noun. • Use er, es or sie once. • Write an adjective for each piece of furniture."
+  },
+  {
+   "de": "die Lampe ist feminin.",
+   "en": "die Lampe is feminine."
+  },
+  {
+   "de": "der → er.",
+   "en": "="
+  },
+  {
+   "de": "das → es.",
+   "en": "="
+  },
+  {
+   "de": "der Schrank — maskulin.",
+   "en": "der Schrank — masculine."
+  },
+  {
+   "de": "er/es/sie → kostet.",
+   "en": "="
+  }
+ ],
+ "forms": [
+  {
+   "form": "Lernziele",
+   "context": "Lernziele",
+   "en": "learning goals",
+   "lemma": "das Lernziel"
+  },
+  {
+   "form": "Dinge",
+   "context": "Dinge benennen, beschreiben und bewerten.",
+   "en": "things",
+   "lemma": "das Ding"
+  },
+  {
+   "form": "benennen",
+   "context": "Dinge benennen, beschreiben und bewerten.",
+   "en": "to name",
+   "lemma": ""
+  },
+  {
+   "form": "beschreiben",
+   "context": "Dinge benennen, beschreiben und bewerten.",
+   "en": "to describe",
+   "lemma": ""
+  },
+  {
+   "form": "bewerten",
+   "context": "Dinge benennen, beschreiben und bewerten.",
+   "en": "to rate, to judge",
+   "lemma": ""
+  },
+  {
+   "form": "Textsorte",
+   "context": "Textsorte: Gespräch · Anzeige",
+   "en": "text type",
+   "lemma": "die Textsorte"
+  },
+  {
+   "form": "Gespräch",
+   "context": "Textsorte: Gespräch · Anzeige",
+   "en": "conversation",
+   "lemma": "das Gespräch"
+  },
+  {
+   "form": "Anzeige",
+   "context": "Textsorte: Gespräch · Anzeige",
+   "en": "advertisement",
+   "lemma": "die Anzeige"
+  },
+  {
+   "form": "Prüfungsbezug",
+   "context": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 2 (Anzeigen); telc A1 Lesen",
+   "en": "exam link",
+   "lemma": "der Prüfungsbezug"
+  },
+  {
+   "form": "Start",
+   "context": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 2 (Anzeigen); telc A1 Lesen",
+   "en": "start",
+   "lemma": "der Start"
+  },
+  {
+   "form": "Lesen",
+   "context": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 2 (Anzeigen); telc A1 Lesen",
+   "en": "reading; to read",
+   "lemma": "lesen"
+  },
+  {
+   "form": "Teil",
+   "context": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 2 (Anzeigen); telc A1 Lesen",
+   "en": "part",
+   "lemma": "der Teil"
+  },
+  {
+   "form": "Anzeigen",
+   "context": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 2 (Anzeigen); telc A1 Lesen",
+   "en": "advertisements",
+   "lemma": "die Anzeige"
+  },
+  {
+   "form": "telc",
+   "context": "Prüfungsbezug: Start Deutsch 1 Lesen Teil 2 (Anzeigen); telc A1 Lesen",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Nach",
+   "context": "Nach dieser Lektion können Sie:",
+   "en": "after; to (a place)",
+   "lemma": ""
+  },
+  {
+   "form": "dieser",
+   "context": "Nach dieser Lektion können Sie:",
+   "en": "this",
+   "lemma": ""
+  },
+  {
+   "form": "Lektion",
+   "context": "Nach dieser Lektion können Sie:",
+   "en": "lesson",
+   "lemma": "die Lektion"
+  },
+  {
+   "form": "Möbel",
+   "context": "Möbel und Dinge benennen",
+   "en": "furniture",
+   "lemma": "das Möbel"
+  },
+  {
+   "form": "bestimmten",
+   "context": "den bestimmten Artikel der, das, die verwenden",
+   "en": "definite",
+   "lemma": "bestimmt"
+  },
+  {
+   "form": "Artikel",
+   "context": "den bestimmten Artikel der, das, die verwenden",
+   "en": "article",
+   "lemma": "der Artikel"
+  },
+  {
+   "form": "ersetzen",
+   "context": "Dinge mit er, es, sie ersetzen und bewerten",
+   "en": "to replace",
+   "lemma": ""
+  },
+  {
+   "form": "Grammatik",
+   "context": "Grammatik: Der bestimmte Artikel: der, das, die",
+   "en": "grammar",
+   "lemma": "die Grammatik"
+  },
+  {
+   "form": "bestimmte",
+   "context": "Grammatik: Der bestimmte Artikel: der, das, die",
+   "en": "definite",
+   "lemma": "bestimmt"
+  },
+  {
+   "form": "Jedes",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "every, each",
+   "lemma": ""
+  },
+  {
+   "form": "deutsche",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "German",
+   "lemma": "deutsch"
+  },
+  {
+   "form": "Nomen",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "noun",
+   "lemma": "das Nomen"
+  },
+  {
+   "form": "kann",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "can",
+   "lemma": "können"
+  },
+  {
+   "form": "ihn",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "him; it",
+   "lemma": ""
+  },
+  {
+   "form": "meistens",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "usually, mostly",
+   "lemma": ""
+  },
+  {
+   "form": "raten",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "to guess",
+   "lemma": ""
+  },
+  {
+   "form": "jedes",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "every, each",
+   "lemma": ""
+  },
+  {
+   "form": "immer",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "always",
+   "lemma": ""
+  },
+  {
+   "form": "seinem",
+   "context": "Jedes deutsche Nomen hat einen Artikel. Man kann ihn meistens nicht raten — lernen Sie jedes Nomen immer zusammen mit seinem Artikel.",
+   "en": "its; his",
+   "lemma": ""
+  },
+  {
+   "form": "Genus",
+   "context": "Genus",
+   "en": "gender (grammar)",
+   "lemma": "das Genus"
+  },
+  {
+   "form": "Beispiel",
+   "context": "Beispiel",
+   "en": "example",
+   "lemma": "das Beispiel"
+  },
+  {
+   "form": "maskulin",
+   "context": "maskulin",
+   "en": "masculine",
+   "lemma": ""
+  },
+  {
+   "form": "Tisch",
+   "context": "der Tisch, der Stuhl, der Schrank",
+   "en": "table",
+   "lemma": "der Tisch"
+  },
+  {
+   "form": "Stuhl",
+   "context": "der Tisch, der Stuhl, der Schrank",
+   "en": "chair",
+   "lemma": "der Stuhl"
+  },
+  {
+   "form": "Schrank",
+   "context": "der Tisch, der Stuhl, der Schrank",
+   "en": "cupboard, wardrobe",
+   "lemma": "der Schrank"
+  },
+  {
+   "form": "neutrum",
+   "context": "neutrum",
+   "en": "neuter",
+   "lemma": "das Neutrum"
+  },
+  {
+   "form": "Bett",
+   "context": "das Bett, das Sofa, das Regal",
+   "en": "bed",
+   "lemma": "das Bett"
+  },
+  {
+   "form": "Sofa",
+   "context": "das Bett, das Sofa, das Regal",
+   "en": "sofa",
+   "lemma": "das Sofa"
+  },
+  {
+   "form": "Regal",
+   "context": "das Bett, das Sofa, das Regal",
+   "en": "shelf",
+   "lemma": "das Regal"
+  },
+  {
+   "form": "feminin",
+   "context": "feminin",
+   "en": "feminine",
+   "lemma": ""
+  },
+  {
+   "form": "Lampe",
+   "context": "die Lampe, die Uhr, die Tür",
+   "en": "lamp",
+   "lemma": "die Lampe"
+  },
+  {
+   "form": "Uhr",
+   "context": "die Lampe, die Uhr, die Tür",
+   "en": "clock, watch; o'clock",
+   "lemma": "die Uhr"
+  },
+  {
+   "form": "Tür",
+   "context": "die Lampe, die Uhr, die Tür",
+   "en": "door",
+   "lemma": "die Tür"
+  },
+  {
+   "form": "Plural",
+   "context": "Plural (alle)",
+   "en": "plural",
+   "lemma": "der Plural"
+  },
+  {
+   "form": "Tische",
+   "context": "die Tische, die Betten, die Lampen",
+   "en": "tables",
+   "lemma": "der Tisch"
+  },
+  {
+   "form": "Betten",
+   "context": "die Tische, die Betten, die Lampen",
+   "en": "beds",
+   "lemma": "das Bett"
+  },
+  {
+   "form": "Lampen",
+   "context": "die Tische, die Betten, die Lampen",
+   "en": "lamps",
+   "lemma": "die Lampe"
+  },
+  {
+   "form": "Beispiele",
+   "context": "Beispiele",
+   "en": "examples",
+   "lemma": "das Beispiel"
+  },
+  {
+   "form": "bequem",
+   "context": "Der Tisch ist schön und das Bett ist bequem.maskulin und neutrum",
+   "en": "comfortable",
+   "lemma": ""
+  },
+  {
+   "form": "kostet",
+   "context": "Die Lampe kostet 45 Euro.feminin",
+   "en": "costs",
+   "lemma": "kosten"
+  },
+  {
+   "form": "Euro",
+   "context": "Die Lampe kostet 45 Euro.feminin",
+   "en": "euro(s)",
+   "lemma": "der Euro"
+  },
+  {
+   "form": "Tipp",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "tip",
+   "lemma": "der Tipp"
+  },
+  {
+   "form": "Lerntipp",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "study tip",
+   "lemma": "der Lerntipp"
+  },
+  {
+   "form": "Schreiben",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "write; writing",
+   "lemma": "schreiben"
+  },
+  {
+   "form": "neue",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "new",
+   "lemma": "neu"
+  },
+  {
+   "form": "Farbe",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "colour",
+   "lemma": "die Farbe"
+  },
+  {
+   "form": "blau",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "blue",
+   "lemma": ""
+  },
+  {
+   "form": "für",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "for",
+   "lemma": ""
+  },
+  {
+   "form": "grün",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "green",
+   "lemma": ""
+  },
+  {
+   "form": "rot",
+   "context": "Tipp: Lerntipp: Schreiben Sie jedes neue Nomen mit Farbe — blau für der, grün für das, rot für die.",
+   "en": "red",
+   "lemma": ""
+  },
+  {
+   "form": "Personalpronomen",
+   "context": "Grammatik: Personalpronomen: er, es, sie",
+   "en": "personal pronoun",
+   "lemma": "das Personalpronomen"
+  },
+  {
+   "form": "Statt",
+   "context": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "instead of",
+   "lemma": ""
+  },
+  {
+   "form": "zu",
+   "context": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "to; too",
+   "lemma": ""
+  },
+  {
+   "form": "wiederholen",
+   "context": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "to repeat",
+   "lemma": ""
+  },
+  {
+   "form": "benutzt",
+   "context": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "uses",
+   "lemma": "benutzen"
+  },
+  {
+   "form": "Pronomen",
+   "context": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "pronoun",
+   "lemma": "das Pronomen"
+  },
+  {
+   "form": "richtet",
+   "context": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "follows (sich richten nach)",
+   "lemma": "richten"
+  },
+  {
+   "form": "nach",
+   "context": "Statt das Nomen zu wiederholen, benutzt man ein Pronomen. Es richtet sich nach dem Artikel.",
+   "en": "according to; after; to",
+   "lemma": ""
+  },
+  {
+   "form": "teuer",
+   "context": "Die Lampe? Sie ist zu teuer.",
+   "en": "expensive",
+   "lemma": ""
+  },
+  {
+   "form": "Stühle",
+   "context": "die Stühle (Pl.)",
+   "en": "chairs",
+   "lemma": "der Stuhl"
+  },
+  {
+   "form": "Pl",
+   "context": "die Stühle (Pl.)",
+   "en": "plural (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "findest",
+   "context": "Wie findest du den Schrank? — Er gefällt mir gut.der Schrank → er",
+   "en": "find, think of (with du)",
+   "lemma": "finden"
+  },
+  {
+   "form": "gefällt",
+   "context": "Wie findest du den Schrank? — Er gefällt mir gut.der Schrank → er",
+   "en": "pleases (gefällt mir = I like)",
+   "lemma": "gefallen"
+  },
+  {
+   "form": "funktioniert",
+   "context": "Die Uhr ist alt, aber sie funktioniert noch.die Uhr → sie",
+   "en": "works",
+   "lemma": "funktionieren"
+  },
+  {
+   "form": "Merken",
+   "context": "Tipp: Merken Sie sich: der → er, das → es, die → sie. Das ist einfach!",
+   "en": "remember (sich merken)",
+   "lemma": "merken"
+  },
+  {
+   "form": "Wortschatz",
+   "context": "Wortschatz",
+   "en": "vocabulary",
+   "lemma": "der Wortschatz"
+  },
+  {
+   "form": "wichtigsten",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "most important",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "Wörter",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "words",
+   "lemma": "das Wort"
+  },
+  {
+   "form": "englischer",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "English",
+   "lemma": "englisch"
+  },
+  {
+   "form": "EN",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "English (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "französischer",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "French",
+   "lemma": "französisch"
+  },
+  {
+   "form": "FR",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "French (abbreviation)",
+   "lemma": ""
+  },
+  {
+   "form": "Übersetzung",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "translation",
+   "lemma": "die Übersetzung"
+  },
+  {
+   "form": "Üben",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "practise",
+   "lemma": "üben"
+  },
+  {
+   "form": "danach",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "afterwards, then",
+   "lemma": ""
+  },
+  {
+   "form": "Lernkarten",
+   "context": "Die wichtigsten Wörter der Lektion mit englischer (EN) und französischer (FR) Übersetzung. Üben Sie sie danach mit den Lernkarten.",
+   "en": "flashcards",
+   "lemma": "die Lernkarte"
+  },
+  {
+   "form": "table",
+   "context": "der Tisch, -e — EN: table · FR: la tableDer Tisch ist aus Holz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "la",
+   "context": "der Tisch, -e — EN: table · FR: la tableDer Tisch ist aus Holz.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tableDer",
+   "context": "der Tisch, -e — EN: table · FR: la tableDer Tisch ist aus Holz.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Holz",
+   "context": "der Tisch, -e — EN: table · FR: la tableDer Tisch ist aus Holz.",
+   "en": "wood",
+   "lemma": "das Holz"
+  },
+  {
+   "form": "chair",
+   "context": "der Stuhl, ¨-e — EN: chair · FR: la chaiseWir brauchen noch vier Stühle.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chaiseWir",
+   "context": "der Stuhl, ¨-e — EN: chair · FR: la chaiseWir brauchen noch vier Stühle.",
+   "en": "we",
+   "lemma": ""
+  },
+  {
+   "form": "brauchen",
+   "context": "der Stuhl, ¨-e — EN: chair · FR: la chaiseWir brauchen noch vier Stühle.",
+   "en": "need, to need",
+   "lemma": ""
+  },
+  {
+   "form": "en",
+   "context": "das Bett, -en — EN: bed · FR: le litDas Bett ist sehr bequem.",
+   "en": "plural ending (-en)",
+   "lemma": ""
+  },
+  {
+   "form": "bed",
+   "context": "das Bett, -en — EN: bed · FR: le litDas Bett ist sehr bequem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "le",
+   "context": "das Bett, -en — EN: bed · FR: le litDas Bett ist sehr bequem.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "litDas",
+   "context": "das Bett, -en — EN: bed · FR: le litDas Bett ist sehr bequem.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "cupboard",
+   "context": "der Schrank, ¨-e — EN: cupboard, wardrobe · FR: l'armoireDer Schrank ist zu groß.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "wardrobe",
+   "context": "der Schrank, ¨-e — EN: cupboard, wardrobe · FR: l'armoireDer Schrank ist zu groß.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'armoireDer",
+   "context": "der Schrank, ¨-e — EN: cupboard, wardrobe · FR: l'armoireDer Schrank ist zu groß.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "lamp",
+   "context": "die Lampe, -n — EN: lamp · FR: la lampeDie Lampe kostet 30 Euro.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lampeDie",
+   "context": "die Lampe, -n — EN: lamp · FR: la lampeDie Lampe kostet 30 Euro.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "sofa",
+   "context": "das Sofa, -s — EN: sofa · FR: le canapéDas Sofa ist neu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "canapéDas",
+   "context": "das Sofa, -s — EN: sofa · FR: le canapéDas Sofa ist neu.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "neu",
+   "context": "das Sofa, -s — EN: sofa · FR: le canapéDas Sofa ist neu.",
+   "en": "new",
+   "lemma": ""
+  },
+  {
+   "form": "shelf",
+   "context": "das Regal, -e — EN: shelf · FR: l'étagèreDas Regal ist praktisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'étagèreDas",
+   "context": "das Regal, -e — EN: shelf · FR: l'étagèreDas Regal ist praktisch.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "praktisch",
+   "context": "das Regal, -e — EN: shelf · FR: l'étagèreDas Regal ist praktisch.",
+   "en": "practical",
+   "lemma": ""
+  },
+  {
+   "form": "hässlich",
+   "context": "schön / hässlich — EN: beautiful / ugly · FR: beau / laidDer Stuhl ist wirklich schön.",
+   "en": "ugly",
+   "lemma": ""
+  },
+  {
+   "form": "beautiful",
+   "context": "schön / hässlich — EN: beautiful / ugly · FR: beau / laidDer Stuhl ist wirklich schön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ugly",
+   "context": "schön / hässlich — EN: beautiful / ugly · FR: beau / laidDer Stuhl ist wirklich schön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "beau",
+   "context": "schön / hässlich — EN: beautiful / ugly · FR: beau / laidDer Stuhl ist wirklich schön.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "laidDer",
+   "context": "schön / hässlich — EN: beautiful / ugly · FR: beau / laidDer Stuhl ist wirklich schön.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "wirklich",
+   "context": "schön / hässlich — EN: beautiful / ugly · FR: beau / laidDer Stuhl ist wirklich schön.",
+   "en": "really",
+   "lemma": ""
+  },
+  {
+   "form": "billig",
+   "context": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "cheap",
+   "lemma": ""
+  },
+  {
+   "form": "expensive",
+   "context": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cheap",
+   "context": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cher",
+   "context": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bon",
+   "context": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "marchéDas",
+   "context": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "viel",
+   "context": "teuer / billig — EN: expensive / cheap · FR: cher / bon marchéDas ist viel zu teuer!",
+   "en": "much, a lot",
+   "lemma": ""
+  },
+  {
+   "form": "new",
+   "context": "neu / alt — EN: new / old · FR: neuf / vieuxMein Sofa ist schon alt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "old",
+   "context": "neu / alt — EN: new / old · FR: neuf / vieuxMein Sofa ist schon alt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "neuf",
+   "context": "neu / alt — EN: new / old · FR: neuf / vieuxMein Sofa ist schon alt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vieuxMein",
+   "context": "neu / alt — EN: new / old · FR: neuf / vieuxMein Sofa ist schon alt.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "schon",
+   "context": "neu / alt — EN: new / old · FR: neuf / vieuxMein Sofa ist schon alt.",
+   "en": "already",
+   "lemma": ""
+  },
+  {
+   "form": "kosten",
+   "context": "kosten — EN: to cost · FR: coûterWas kostet die Lampe?",
+   "en": "to cost",
+   "lemma": ""
+  },
+  {
+   "form": "to",
+   "context": "kosten — EN: to cost · FR: coûterWas kostet die Lampe?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "cost",
+   "context": "kosten — EN: to cost · FR: coûterWas kostet die Lampe?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "coûterWas",
+   "context": "kosten — EN: to cost · FR: coûterWas kostet die Lampe?",
+   "en": "what",
+   "lemma": ""
+  },
+  {
+   "form": "finden",
+   "context": "finden — EN: to find, to think of · FR: trouverWie findest du den Tisch?",
+   "en": "to find; to think of",
+   "lemma": ""
+  },
+  {
+   "form": "find",
+   "context": "finden — EN: to find, to think of · FR: trouverWie findest du den Tisch?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "think",
+   "context": "finden — EN: to find, to think of · FR: trouverWie findest du den Tisch?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "of",
+   "context": "finden — EN: to find, to think of · FR: trouverWie findest du den Tisch?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trouverWie",
+   "context": "finden — EN: to find, to think of · FR: trouverWie findest du den Tisch?",
+   "en": "how",
+   "lemma": ""
+  },
+  {
+   "form": "Redemittel",
+   "context": "Redemittel",
+   "en": "useful phrases",
+   "lemma": "das Redemittel"
+  },
+  {
+   "form": "Preis",
+   "context": "nach dem Preis fragen",
+   "en": "price",
+   "lemma": "der Preis"
+  },
+  {
+   "form": "etwas",
+   "context": "etwas bewerten",
+   "en": "something",
+   "lemma": ""
+  },
+  {
+   "form": "finde",
+   "context": "Das finde ich nicht so schön.",
+   "en": "find, think",
+   "lemma": "finden"
+  },
+  {
+   "form": "so",
+   "context": "Das finde ich nicht so schön.",
+   "en": "so",
+   "lemma": ""
+  },
+  {
+   "form": "nachfragen",
+   "context": "nachfragen",
+   "en": "to ask, to enquire",
+   "lemma": ""
+  },
+  {
+   "form": "Gefällt",
+   "context": "Gefällt dir die Lampe?",
+   "en": "pleases (Gefällt dir …? = Do you like …?)",
+   "lemma": "gefallen"
+  },
+  {
+   "form": "Dialog",
+   "context": "Dialog: Im Möbelhaus",
+   "en": "dialogue",
+   "lemma": "der Dialog"
+  },
+  {
+   "form": "Möbelhaus",
+   "context": "Dialog: Im Möbelhaus",
+   "en": "furniture shop",
+   "lemma": "das Möbelhaus"
+  },
+  {
+   "form": "Nora",
+   "context": "Nora: Schau mal, der Tisch! Wie findest du ihn?",
+   "en": "Nora (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Schau",
+   "context": "Nora: Schau mal, der Tisch! Wie findest du ihn?",
+   "en": "look",
+   "lemma": "schauen"
+  },
+  {
+   "form": "mal",
+   "context": "Nora: Schau mal, der Tisch! Wie findest du ihn?",
+   "en": "just (softens a request)",
+   "lemma": ""
+  },
+  {
+   "form": "Kai",
+   "context": "Kai: Er ist schön. Aber was kostet er?",
+   "en": "Kai (name)",
+   "lemma": ""
+  },
+  {
+   "form": "da",
+   "context": "Kai: Und die Lampe da? Sie ist nur 30 Euro.",
+   "en": "there",
+   "lemma": ""
+  },
+  {
+   "form": "nur",
+   "context": "Kai: Und die Lampe da? Sie ist nur 30 Euro.",
+   "en": "only",
+   "lemma": ""
+  },
+  {
+   "form": "Okay",
+   "context": "Kai: Okay. Dann nehmen wir nur den Tisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Dann",
+   "context": "Kai: Okay. Dann nehmen wir nur den Tisch.",
+   "en": "then",
+   "lemma": ""
+  },
+  {
+   "form": "nehmen",
+   "context": "Kai: Okay. Dann nehmen wir nur den Tisch.",
+   "en": "take, to take",
+   "lemma": ""
+  },
+  {
+   "form": "Drehen",
+   "context": "Lernen Sie die 12 Wörter dieser Lektion. Drehen Sie jede Karte um: Englisch / Französisch und ein Beispielsatz.",
+   "en": "turn (… um = turn over)",
+   "lemma": "drehen"
+  },
+  {
+   "form": "jede",
+   "context": "Lernen Sie die 12 Wörter dieser Lektion. Drehen Sie jede Karte um: Englisch / Französisch und ein Beispielsatz.",
+   "en": "every, each",
+   "lemma": ""
+  },
+  {
+   "form": "Karte",
+   "context": "Lernen Sie die 12 Wörter dieser Lektion. Drehen Sie jede Karte um: Englisch / Französisch und ein Beispielsatz.",
+   "en": "card",
+   "lemma": "die Karte"
+  },
+  {
+   "form": "um",
+   "context": "Lernen Sie die 12 Wörter dieser Lektion. Drehen Sie jede Karte um: Englisch / Französisch und ein Beispielsatz.",
+   "en": "over (umdrehen); at (a time)",
+   "lemma": ""
+  },
+  {
+   "form": "Beispielsatz",
+   "context": "Lernen Sie die 12 Wörter dieser Lektion. Drehen Sie jede Karte um: Englisch / Französisch und ein Beispielsatz.",
+   "en": "example sentence",
+   "lemma": "der Beispielsatz"
+  },
+  {
+   "form": "Wählen",
+   "context": "Wählen Sie die richtige Antwort.",
+   "en": "choose",
+   "lemma": "wählen"
+  },
+  {
+   "form": "richtige",
+   "context": "Wählen Sie die richtige Antwort.",
+   "en": "correct, right",
+   "lemma": "richtig"
+  },
+  {
+   "form": "Antwort",
+   "context": "Wählen Sie die richtige Antwort.",
+   "en": "answer",
+   "lemma": "die Antwort"
+  },
+  {
+   "form": "Ergänzen",
+   "context": "Ergänzen Sie die Lücke.",
+   "en": "complete, fill in",
+   "lemma": "ergänzen"
+  },
+  {
+   "form": "Lücke",
+   "context": "Ergänzen Sie die Lücke.",
+   "en": "gap",
+   "lemma": "die Lücke"
+  },
+  {
+   "form": "Welcher",
+   "context": "Welcher Artikel passt zu „Schrank\"?",
+   "en": "which",
+   "lemma": ""
+  },
+  {
+   "form": "passt",
+   "context": "Welcher Artikel passt zu „Schrank\"?",
+   "en": "fits, goes with",
+   "lemma": "passen"
+  },
+  {
+   "form": "Präsens",
+   "context": "Was ___ der Stuhl? — 80 Euro. (kosten, Präsens)",
+   "en": "present tense",
+   "lemma": "das Präsens"
+  },
+  {
+   "form": "Beschreiben",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "describe",
+   "lemma": "beschreiben"
+  },
+  {
+   "form": "Möbelstücke",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "pieces of furniture",
+   "lemma": "das Möbelstück"
+  },
+  {
+   "form": "Ihrem",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "your (polite)",
+   "lemma": ""
+  },
+  {
+   "form": "Zimmer",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "room",
+   "lemma": "das Zimmer"
+  },
+  {
+   "form": "Umfang",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "length (of a text)",
+   "lemma": "der Umfang"
+  },
+  {
+   "form": "Checkliste",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "checklist",
+   "lemma": "die Checkliste"
+  },
+  {
+   "form": "Benutzen",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "use",
+   "lemma": "benutzen"
+  },
+  {
+   "form": "jedem",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "every, each",
+   "lemma": ""
+  },
+  {
+   "form": "richtigen",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "correct, right",
+   "lemma": "richtig"
+  },
+  {
+   "form": "einmal",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "once",
+   "lemma": ""
+  },
+  {
+   "form": "Möbelstück",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "piece of furniture",
+   "lemma": "das Möbelstück"
+  },
+  {
+   "form": "Adjektiv",
+   "context": "Beschreiben Sie drei Möbelstücke in Ihrem Zimmer: Wie sind sie? Umfang: 25–35 Wörter Checkliste: • Benutzen Sie bei jedem Nomen den richtigen Artikel. • Benutzen Sie einmal er, es oder sie. • Schreiben Sie bei jedem Möbelstück ein Adjektiv.",
+   "en": "adjective",
+   "lemma": "das Adjektiv"
+  }
+ ]
+}
