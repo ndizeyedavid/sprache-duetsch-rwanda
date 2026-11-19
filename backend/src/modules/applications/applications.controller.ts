@@ -1,5 +1,6 @@
 import type { Request,Response } from "express";
 import { actorId,validatedBody,validatedParams,validatedQuery } from "../../lib/request.js";
+import type { AdmitApplicationInput } from "./admit-application.js";
 import type {
 CreateApplicationInput,
 CreateStudentFromApplicationInput,
@@ -9,6 +10,7 @@ UpdateApplicationInput,
 WaitlistQuery,
 } from "./applications.schema.js";
 import * as service from "./applications.service.js";
+import type { BulkTransitionInput } from "./bulk-transition.js";
 
 export const create = async (req: Request, res: Response): Promise<void> => {
   const result = await service.createCatalogApplication(validatedBody<CreateApplicationInput>(req));
@@ -46,4 +48,18 @@ export const createStudent = async (req: Request, res: Response): Promise<void> 
   const { id } = validatedParams<{ id: string }>(req);
   const result = await service.createStudentFromApplication(id, validatedBody<CreateStudentFromApplicationInput>(req), actorId(req));
   res.status(result.accountCreated ? 201 : 200).json({ success: true, data: result });
+};
+
+export const admit = async (req: Request, res: Response): Promise<void> => {
+  const { id } = validatedParams<{ id: string }>(req);
+  const result = await service.admitApplication(id, validatedBody<AdmitApplicationInput>(req), actorId(req));
+  res.status(result.accountCreated ? 201 : 200).json({ success: true, data: result });
+};
+
+export const bulkStatus = async (req: Request, res: Response): Promise<void> => {
+  res.json({ success: true, data: await service.bulkTransition(validatedBody<BulkTransitionInput>(req), actorId(req)) });
+};
+
+export const exportCsv = async (req: Request, res: Response): Promise<void> => {
+  await service.exportApplications(res, validatedQuery<ListApplicationsQuery>(req));
 };
