@@ -4,9 +4,9 @@ import { logger } from "./lib/logger.js";
 import { prisma } from "./lib/prisma.js";
 import { startReminderJobs } from "./lib/reminders.js";
 
-import { startPaypackReconciliation } from "./modules/paypack/reconciliation.js";
+import { startMobileMoneyReconciliation } from "./modules/mobile-money/reconciliation.js";
 
-const paypackJob = startPaypackReconciliation();
+const mobileMoneyJob = startMobileMoneyReconciliation();
 const app = createApp();
 
 const server = app.listen(env.PORT, () => {
@@ -21,7 +21,7 @@ const shutdown = (signal: string): void => {
     return;
   }
   shuttingDown = true;
-  void paypackJob?.stop();
+  void mobileMoneyJob?.stop();
   logger.info({ signal }, "Shutting down");
 
   const forceExit = setTimeout(() => {
