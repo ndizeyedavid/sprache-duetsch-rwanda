@@ -1,0 +1,905 @@
+{
+ "level": "B2",
+ "lesson": 9,
+ "title": "Auf der Suche nach frischen Ideen — Wir müssten eine Entscheidung treffen",
+ "lines": [
+  {
+   "de": "Vorschläge diskutieren und sich einigen — mit Nomen-Verb-Verbindungen und Konjunktiv II ohne würde.",
+   "en": "Discuss proposals and reach agreement — with noun-verb combinations and the subjunctive II (Konjunktiv II) without würde."
+  },
+  {
+   "de": "Textsorte: Infotext · Diskussion im Assessment-Center",
+   "en": "Text type: Info text · Discussion at an assessment centre"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 2 (gemeinsam etwas planen); ÖSD B2 Sprechen 3",
+   "en": "Exam link: Goethe B2 Speaking part 2 (planning something together); ÖSD B2 Speaking 3"
+  },
+  {
+   "de": "über Assessment-Center und Auswahlverfahren sprechen",
+   "en": "talk about assessment centres and selection procedures"
+  },
+  {
+   "de": "Vorschläge machen, diskutieren und sich einigen",
+   "en": "make proposals, discuss them and reach agreement"
+  },
+  {
+   "de": "Nomen-Verb-Verbindungen statt einfacher Verben verwenden",
+   "en": "use noun-verb combinations (Nomen-Verb-Verbindungen) instead of simple verbs"
+  },
+  {
+   "de": "den Konjunktiv II ohne würde bilden",
+   "en": "form the subjunctive II (Konjunktiv II) without würde"
+  },
+  {
+   "de": "Grammatik: Nomen-Verb-Verbindungen",
+   "en": "Grammar: Noun-verb combinations (Nomen-Verb-Verbindungen)"
+  },
+  {
+   "de": "In formellen Texten ersetzt oft eine feste Verbindung aus Nomen und Verb ein einfaches Verb. Das Verb trägt dabei kaum eigene Bedeutung — die Bedeutung steckt im Nomen. Diese Verbindungen sind fest: Artikel und Präposition kann man nicht frei wählen.",
+   "en": "In formal texts, a fixed combination of a noun and a verb often replaces a simple verb. The verb carries hardly any meaning of its own — the meaning lies in the noun. These combinations are fixed: you cannot choose the article and preposition freely."
+  },
+  {
+   "de": "einfaches Verb",
+   "en": "simple verb"
+  },
+  {
+   "de": "Nomen-Verb-Verbindung",
+   "en": "noun-verb combination"
+  },
+  {
+   "de": "entscheiden",
+   "en": "to decide"
+  },
+  {
+   "de": "eine Entscheidung treffen",
+   "en": "to make a decision"
+  },
+  {
+   "de": "kritisieren",
+   "en": "to criticise"
+  },
+  {
+   "de": "Kritik üben an (+ Dat.)",
+   "en": "to level criticism at (+ dat.)"
+  },
+  {
+   "de": "antworten",
+   "en": "to answer"
+  },
+  {
+   "de": "eine Antwort geben",
+   "en": "to give an answer"
+  },
+  {
+   "de": "Hilfe leisten",
+   "en": "to provide help"
+  },
+  {
+   "de": "berücksichtigen",
+   "en": "to take into account"
+  },
+  {
+   "de": "etwas in Betracht ziehen",
+   "en": "to consider something"
+  },
+  {
+   "de": "beenden",
+   "en": "to end"
+  },
+  {
+   "de": "etwas zum Abschluss bringen",
+   "en": "to bring something to a conclusion"
+  },
+  {
+   "de": "zu einer Einigung kommen",
+   "en": "to reach an agreement"
+  },
+  {
+   "de": "Wir sollten die Vorschläge zunächst in Betracht ziehen.= berücksichtigen",
+   "en": "We should first consider the proposals. = berücksichtigen (take into account)"
+  },
+  {
+   "de": "An dem Konzept wurde deutliche Kritik geübt.= Das Konzept wurde deutlich kritisiert.",
+   "en": "Clear criticism was levelled at the concept. = The concept was clearly criticised."
+  },
+  {
+   "de": "Nach zwei Stunden kamen wir endlich zu einer Einigung.= Wir einigten uns endlich.",
+   "en": "After two hours we finally reached an agreement. = We finally agreed."
+  },
+  {
+   "de": "Tipp: Im Gespräch wirkt das einfache Verb natürlicher, in schriftlichen und formellen Texten die Nomen-Verb-Verbindung. Für die B2-Prüfung lohnt sich beides.",
+   "en": "Tip: In conversation the simple verb sounds more natural; in written and formal texts, the noun-verb combination does. For the B2 exam, it is worth knowing both."
+  },
+  {
+   "de": "Grammatik: Konjunktiv II ohne würde",
+   "en": "Grammar: Subjunctive II (Konjunktiv II) without würde"
+  },
+  {
+   "de": "Bei vielen Verben bildet man den Konjunktiv II direkt aus dem Präteritumstamm — ohne würde. Das klingt gehobener und ist bei einer kleinen Gruppe von Verben sogar die einzige übliche Form.",
+   "en": "With many verbs, you form the subjunctive II directly from the simple past stem (Präteritumstamm) — without würde. This sounds more elevated, and for a small group of verbs it is even the only common form."
+  },
+  {
+   "de": "Konjunktiv II",
+   "en": "subjunctive II (Konjunktiv II)"
+  },
+  {
+   "de": "war / hatte",
+   "en": "was / had"
+  },
+  {
+   "de": "wäre / hätte",
+   "en": "would be / would have"
+  },
+  {
+   "de": "Das wäre eine gute Lösung.",
+   "en": "That would be a good solution."
+  },
+  {
+   "de": "konnte / musste / durfte",
+   "en": "could / had to / was allowed to"
+  },
+  {
+   "de": "könnte / müsste / dürfte",
+   "en": "could / would have to / would be allowed to"
+  },
+  {
+   "de": "Wir müssten uns bald entscheiden.",
+   "en": "We would have to decide soon."
+  },
+  {
+   "de": "wissen / finden",
+   "en": "to know / to find"
+  },
+  {
+   "de": "wusste / fand",
+   "en": "knew / found"
+  },
+  {
+   "de": "wüsste / fände",
+   "en": "would know / would find"
+  },
+  {
+   "de": "Ich fände den zweiten Vorschlag besser.",
+   "en": "I would find the second proposal better."
+  },
+  {
+   "de": "kommen / gehen",
+   "en": "to come / to go"
+  },
+  {
+   "de": "kam / ging",
+   "en": "came / went"
+  },
+  {
+   "de": "käme / ginge",
+   "en": "would come / would go"
+  },
+  {
+   "de": "Das käme für mich nicht infrage.",
+   "en": "That would be out of the question for me."
+  },
+  {
+   "de": "alle übrigen Verben",
+   "en": "all other verbs"
+  },
+  {
+   "de": "würde + Infinitiv",
+   "en": "würde + infinitive"
+  },
+  {
+   "de": "Ich würde zuerst die Kosten prüfen.",
+   "en": "I would check the costs first."
+  },
+  {
+   "de": "Es wäre sinnvoll, zuerst die Zielgruppe festzulegen.wäre statt würde sein",
+   "en": "It would be sensible to define the target group first. — wäre instead of würde sein"
+  },
+  {
+   "de": "Ich fände es besser, wenn wir das gemeinsam entscheiden.fände — sehr gebräuchlich",
+   "en": "I would find it better if we decided this together. — fände — very common"
+  },
+  {
+   "de": "Dürfte ich dazu noch etwas ergänzen?dürfte — höfliche Bitte",
+   "en": "Might I add something to that? — dürfte — polite request"
+  },
+  {
+   "de": "Tipp: Merken Sie sich die Kerngruppe: wäre, hätte, würde, könnte, müsste, dürfte, sollte, wüsste, fände, käme, ginge, gäbe, bräuchte.",
+   "en": "Tip: Memorise the core group: wäre, hätte, würde, könnte, müsste, dürfte, sollte, wüsste, fände, käme, ginge, gäbe, bräuchte."
+  },
+  {
+   "de": "das Assessment-Center, - — EN: assessment centre · FR: le centre d'évaluationDas Assessment-Center dauert zwei Tage.",
+   "en": "Example: The assessment centre lasts two days."
+  },
+  {
+   "de": "das Auswahlverfahren, - — EN: selection procedure · FR: la procédure de sélectionDas Auswahlverfahren ist mehrstufig.",
+   "en": "Example: The selection procedure has several stages."
+  },
+  {
+   "de": "die Gruppenaufgabe, -n — EN: group task · FR: l'exercice de groupeIn der Gruppenaufgabe wird Teamverhalten beobachtet.",
+   "en": "Example: In the group task, team behaviour is observed."
+  },
+  {
+   "de": "sich durchsetzen — EN: to assert oneself · FR: s'imposerMan muss sich durchsetzen, ohne andere zu übergehen.",
+   "en": "Example: You have to assert yourself without ignoring others."
+  },
+  {
+   "de": "der Vorschlag, ¨-e — EN: proposal · FR: la propositionIhr Vorschlag überzeugt mich.",
+   "en": "Example: Your proposal convinces me."
+  },
+  {
+   "de": "etwas abwägen (wog ab) — EN: to weigh up · FR: peser, évaluerWir sollten Vor- und Nachteile abwägen.",
+   "en": "Example: We should weigh up the pros and cons."
+  },
+  {
+   "de": "sich einigen auf (+ Akk.) — EN: to agree on · FR: se mettre d'accord surEinigen wir uns auf die zweite Variante.",
+   "en": "Example: Let's agree on the second option."
+  },
+  {
+   "de": "der Kompromissvorschlag, ¨-e — EN: compromise proposal · FR: la proposition de compromisDarf ich einen Kompromissvorschlag machen?",
+   "en": "Example: May I make a compromise proposal?"
+  },
+  {
+   "de": "die Umsetzung (Sg.) — EN: implementation · FR: la mise en œuvreDie Umsetzung ist aufwendiger als gedacht.",
+   "en": "Example: The implementation is more complex than expected."
+  },
+  {
+   "de": "der Zeitrahmen (Sg.) — EN: time frame · FR: le calendrierDer Zeitrahmen ist eng.",
+   "en": "Example: The time frame is tight."
+  },
+  {
+   "de": "realisierbar — EN: feasible · FR: réalisableIst das im Budget überhaupt realisierbar?",
+   "en": "Example: Is that even feasible within the budget?"
+  },
+  {
+   "de": "das Budget, -s — EN: budget · FR: le budgetDas Budget liegt bei 5.000 Euro.",
+   "en": "Example: The budget is 5,000 euros."
+  },
+  {
+   "de": "etwas in Betracht ziehen — EN: to consider sth. · FR: envisager qc.Diese Option sollten wir in Betracht ziehen.",
+   "en": "Example: We should consider this option."
+  },
+  {
+   "de": "eine Entscheidung treffen — EN: to make a decision · FR: prendre une décisionWir müssen heute eine Entscheidung treffen.",
+   "en": "Example: We have to make a decision today."
+  },
+  {
+   "de": "Ich würde vorschlagen, dass wir …",
+   "en": "I would suggest that we …"
+  },
+  {
+   "de": "Wie wäre es, wenn wir zunächst …?",
+   "en": "How about if we first …?"
+  },
+  {
+   "de": "Mein Vorschlag wäre Folgender: …",
+   "en": "My proposal would be the following: …"
+  },
+  {
+   "de": "auf Vorschläge reagieren",
+   "en": "responding to proposals"
+  },
+  {
+   "de": "Das halte ich für sinnvoll, allerdings …",
+   "en": "I think that makes sense, however …"
+  },
+  {
+   "de": "Da hätte ich Bedenken, weil …",
+   "en": "I would have concerns about that, because …"
+  },
+  {
+   "de": "Diesen Punkt fände ich wichtiger als …",
+   "en": "I would find this point more important than …"
+  },
+  {
+   "de": "Können wir uns darauf einigen, dass …?",
+   "en": "Can we agree that …?"
+  },
+  {
+   "de": "Ist damit auch für Sie alles geklärt?",
+   "en": "Is everything clear for you too now?"
+  },
+  {
+   "de": "Das Assessment-Center dauert zwei Tage.",
+   "en": "The assessment centre lasts two days."
+  },
+  {
+   "de": "Das Auswahlverfahren ist mehrstufig.",
+   "en": "The selection procedure has several stages."
+  },
+  {
+   "de": "In der Gruppenaufgabe wird Teamverhalten beobachtet.",
+   "en": "In the group task, team behaviour is observed."
+  },
+  {
+   "de": "Man muss sich durchsetzen, ohne andere zu übergehen.",
+   "en": "You have to assert yourself without ignoring others."
+  },
+  {
+   "de": "Ihr Vorschlag überzeugt mich.",
+   "en": "Your proposal convinces me."
+  },
+  {
+   "de": "Wir sollten Vor- und Nachteile abwägen.",
+   "en": "We should weigh up the pros and cons."
+  },
+  {
+   "de": "Einigen wir uns auf die zweite Variante.",
+   "en": "Let's agree on the second option."
+  },
+  {
+   "de": "Darf ich einen Kompromissvorschlag machen?",
+   "en": "May I make a compromise proposal?"
+  },
+  {
+   "de": "Die Umsetzung ist aufwendiger als gedacht.",
+   "en": "The implementation is more complex than expected."
+  },
+  {
+   "de": "Der Zeitrahmen ist eng.",
+   "en": "The time frame is tight."
+  },
+  {
+   "de": "Ist das im Budget überhaupt realisierbar?",
+   "en": "Is that even feasible within the budget?"
+  },
+  {
+   "de": "Das Budget liegt bei 5.000 Euro.",
+   "en": "The budget is 5,000 euros."
+  },
+  {
+   "de": "Diese Option sollten wir in Betracht ziehen.",
+   "en": "We should consider this option."
+  },
+  {
+   "de": "Wir müssen heute eine Entscheidung treffen.",
+   "en": "We have to make a decision today."
+  },
+  {
+   "de": "Was bedeutet „eine Entscheidung treffen\"?",
+   "en": "What does “eine Entscheidung treffen” mean?"
+  },
+  {
+   "de": "An dem Konzept wurde deutliche Kritik ___. (üben, Passiv Präteritum)",
+   "en": "Clear criticism was ___ at the concept. (üben, simple past passive)"
+  },
+  {
+   "de": "Konjunktiv II ohne würde: Ich ___ den zweiten Vorschlag besser. (finden)",
+   "en": "Subjunctive II without würde: I ___ the second proposal better. (finden)"
+  },
+  {
+   "de": "Welche Form ist KEIN Konjunktiv II ohne würde?",
+   "en": "Which form is NOT a subjunctive II without würde?"
+  },
+  {
+   "de": "Das ___ für mich nicht infrage. (kommen, Konjunktiv II)",
+   "en": "That ___ out of the question for me. (kommen, subjunctive II)"
+  },
+  {
+   "de": "Welcher Satz ist am höflichsten?",
+   "en": "Which sentence is the most polite?"
+  },
+  {
+   "de": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "Plan an event for your team in writing: Record the decisions of a planning meeting in bullet points and full sentences. Length: 140–180 words Checklist: • State the occasion, date and participants. • Record at least three decisions. • Use at least three noun-verb combinations. • At the end, name the open points and the people responsible."
+  },
+  {
+   "de": "Nomen-Verb-Verbindungen ersetzen ein einfaches Verb; die Bedeutung steckt im Nomen.",
+   "en": "Noun-verb combinations replace a simple verb; the meaning lies in the noun."
+  },
+  {
+   "de": "Kritik üben an + Dativ → im Passiv: Kritik wurde geübt.",
+   "en": "Kritik üben an + dative → in the passive: Kritik wurde geübt (criticism was levelled)."
+  },
+  {
+   "de": "finden → fand → fände.",
+   "en": "finden → fand → fände (find → found → would find)."
+  },
+  {
+   "de": "Bei regelmäßigen Verben ist die Form mit dem Präteritum identisch, deshalb benutzt man würde + Infinitiv.",
+   "en": "With regular verbs, the form is identical to the simple past, so you use würde + infinitive."
+  },
+  {
+   "de": "kommen → kam → käme.",
+   "en": "kommen → kam → käme (come → came → would come)."
+  },
+  {
+   "de": "Konjunktiv II von dürfen ist die übliche höfliche Form in Besprechungen.",
+   "en": "The subjunctive II of dürfen is the usual polite form in meetings."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Infotext",
+   "context": "Textsorte: Infotext · Diskussion im Assessment-Center",
+   "en": "info text",
+   "lemma": "der Infotext"
+  },
+  {
+   "form": "Assessment-Center",
+   "context": "Textsorte: Infotext · Diskussion im Assessment-Center",
+   "en": "assessment centre",
+   "lemma": "das Assessment-Center"
+  },
+  {
+   "form": "Auswahlverfahren",
+   "context": "über Assessment-Center und Auswahlverfahren sprechen",
+   "en": "selection procedures",
+   "lemma": "das Auswahlverfahren"
+  },
+  {
+   "form": "einfacher",
+   "context": "Nomen-Verb-Verbindungen statt einfacher Verben verwenden",
+   "en": "simple",
+   "lemma": "einfach"
+  },
+  {
+   "form": "formellen",
+   "context": "In formellen Texten ersetzt oft eine feste Verbindung aus Nomen und Verb ein einfaches Verb. Das Verb trägt dabei kaum eigene Bedeutung — die Bedeutung steckt im Nomen. Diese Verbindungen sind fest: Artikel und Präposition kann man nicht frei wählen.",
+   "en": "formal",
+   "lemma": "formell"
+  },
+  {
+   "form": "Texten",
+   "context": "In formellen Texten ersetzt oft eine feste Verbindung aus Nomen und Verb ein einfaches Verb. Das Verb trägt dabei kaum eigene Bedeutung — die Bedeutung steckt im Nomen. Diese Verbindungen sind fest: Artikel und Präposition kann man nicht frei wählen.",
+   "en": "texts",
+   "lemma": "der Text"
+  },
+  {
+   "form": "einfaches",
+   "context": "In formellen Texten ersetzt oft eine feste Verbindung aus Nomen und Verb ein einfaches Verb. Das Verb trägt dabei kaum eigene Bedeutung — die Bedeutung steckt im Nomen. Diese Verbindungen sind fest: Artikel und Präposition kann man nicht frei wählen.",
+   "en": "simple",
+   "lemma": "einfach"
+  },
+  {
+   "form": "Verbindungen",
+   "context": "In formellen Texten ersetzt oft eine feste Verbindung aus Nomen und Verb ein einfaches Verb. Das Verb trägt dabei kaum eigene Bedeutung — die Bedeutung steckt im Nomen. Diese Verbindungen sind fest: Artikel und Präposition kann man nicht frei wählen.",
+   "en": "combinations; connections",
+   "lemma": "die Verbindung"
+  },
+  {
+   "form": "Nomen-Verb-Verbindung",
+   "context": "Nomen-Verb-Verbindung",
+   "en": "noun-verb combination",
+   "lemma": "die Nomen-Verb-Verbindung"
+  },
+  {
+   "form": "kritisieren",
+   "context": "kritisieren",
+   "en": "to criticise",
+   "lemma": ""
+  },
+  {
+   "form": "berücksichtigen",
+   "context": "berücksichtigen",
+   "en": "to take into account",
+   "lemma": ""
+  },
+  {
+   "form": "Betracht",
+   "context": "etwas in Betracht ziehen",
+   "en": "consideration",
+   "lemma": "der Betracht"
+  },
+  {
+   "form": "Einigung",
+   "context": "zu einer Einigung kommen",
+   "en": "agreement",
+   "lemma": "die Einigung"
+  },
+  {
+   "form": "Konzept",
+   "context": "An dem Konzept wurde deutliche Kritik geübt.= Das Konzept wurde deutlich kritisiert.",
+   "en": "concept; plan",
+   "lemma": "das Konzept"
+  },
+  {
+   "form": "deutliche",
+   "context": "An dem Konzept wurde deutliche Kritik geübt.= Das Konzept wurde deutlich kritisiert.",
+   "en": "clear",
+   "lemma": "deutlich"
+  },
+  {
+   "form": "kritisiert",
+   "context": "An dem Konzept wurde deutliche Kritik geübt.= Das Konzept wurde deutlich kritisiert.",
+   "en": "criticised",
+   "lemma": "kritisieren"
+  },
+  {
+   "form": "einigten",
+   "context": "Nach zwei Stunden kamen wir endlich zu einer Einigung.= Wir einigten uns endlich.",
+   "en": "agreed",
+   "lemma": "sich einigen"
+  },
+  {
+   "form": "einfache",
+   "context": "Tipp: Im Gespräch wirkt das einfache Verb natürlicher, in schriftlichen und formellen Texten die Nomen-Verb-Verbindung. Für die B2-Prüfung lohnt sich beides.",
+   "en": "simple",
+   "lemma": "einfach"
+  },
+  {
+   "form": "Präteritumstamm",
+   "context": "Bei vielen Verben bildet man den Konjunktiv II direkt aus dem Präteritumstamm — ohne würde. Das klingt gehobener und ist bei einer kleinen Gruppe von Verben sogar die einzige übliche Form.",
+   "en": "simple past stem",
+   "lemma": "der Präteritumstamm"
+  },
+  {
+   "form": "gehobener",
+   "context": "Bei vielen Verben bildet man den Konjunktiv II direkt aus dem Präteritumstamm — ohne würde. Das klingt gehobener und ist bei einer kleinen Gruppe von Verben sogar die einzige übliche Form.",
+   "en": "more elevated; more formal",
+   "lemma": "gehoben"
+  },
+  {
+   "form": "dürfte",
+   "context": "könnte / müsste / dürfte",
+   "en": "would be allowed to; might",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "müssten",
+   "context": "Wir müssten uns bald entscheiden.",
+   "en": "would have to",
+   "lemma": "müssen"
+  },
+  {
+   "form": "fände",
+   "context": "wüsste / fände",
+   "en": "would find",
+   "lemma": "finden"
+  },
+  {
+   "form": "ginge",
+   "context": "käme / ginge",
+   "en": "would go",
+   "lemma": "gehen"
+  },
+  {
+   "form": "übrigen",
+   "context": "alle übrigen Verben",
+   "en": "other; remaining",
+   "lemma": "übrig"
+  },
+  {
+   "form": "Zielgruppe",
+   "context": "Es wäre sinnvoll, zuerst die Zielgruppe festzulegen.wäre statt würde sein",
+   "en": "target group",
+   "lemma": "die Zielgruppe"
+  },
+  {
+   "form": "festzulegen",
+   "context": "Es wäre sinnvoll, zuerst die Zielgruppe festzulegen.wäre statt würde sein",
+   "en": "to define; to set",
+   "lemma": "festlegen"
+  },
+  {
+   "form": "gebräuchlich",
+   "context": "Ich fände es besser, wenn wir das gemeinsam entscheiden.fände — sehr gebräuchlich",
+   "en": "common; in use",
+   "lemma": ""
+  },
+  {
+   "form": "Dürfte",
+   "context": "Dürfte ich dazu noch etwas ergänzen?dürfte — höfliche Bitte",
+   "en": "might; may",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "Kerngruppe",
+   "context": "Tipp: Merken Sie sich die Kerngruppe: wäre, hätte, würde, könnte, müsste, dürfte, sollte, wüsste, fände, käme, ginge, gäbe, bräuchte.",
+   "en": "core group",
+   "lemma": "die Kerngruppe"
+  },
+  {
+   "form": "gäbe",
+   "context": "Tipp: Merken Sie sich die Kerngruppe: wäre, hätte, würde, könnte, müsste, dürfte, sollte, wüsste, fände, käme, ginge, gäbe, bräuchte.",
+   "en": "there would be; would give",
+   "lemma": "geben"
+  },
+  {
+   "form": "bräuchte",
+   "context": "Tipp: Merken Sie sich die Kerngruppe: wäre, hätte, würde, könnte, müsste, dürfte, sollte, wüsste, fände, käme, ginge, gäbe, bräuchte.",
+   "en": "would need",
+   "lemma": "brauchen"
+  },
+  {
+   "form": "assessment",
+   "context": "das Assessment-Center, - — EN: assessment centre · FR: le centre d'évaluationDas Assessment-Center dauert zwei Tage.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "centre",
+   "context": "das Assessment-Center, - — EN: assessment centre · FR: le centre d'évaluationDas Assessment-Center dauert zwei Tage.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'évaluationDas",
+   "context": "das Assessment-Center, - — EN: assessment centre · FR: le centre d'évaluationDas Assessment-Center dauert zwei Tage.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "selection",
+   "context": "das Auswahlverfahren, - — EN: selection procedure · FR: la procédure de sélectionDas Auswahlverfahren ist mehrstufig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "procedure",
+   "context": "das Auswahlverfahren, - — EN: selection procedure · FR: la procédure de sélectionDas Auswahlverfahren ist mehrstufig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "procédure",
+   "context": "das Auswahlverfahren, - — EN: selection procedure · FR: la procédure de sélectionDas Auswahlverfahren ist mehrstufig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sélectionDas",
+   "context": "das Auswahlverfahren, - — EN: selection procedure · FR: la procédure de sélectionDas Auswahlverfahren ist mehrstufig.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "mehrstufig",
+   "context": "das Auswahlverfahren, - — EN: selection procedure · FR: la procédure de sélectionDas Auswahlverfahren ist mehrstufig.",
+   "en": "multi-stage",
+   "lemma": ""
+  },
+  {
+   "form": "Gruppenaufgabe",
+   "context": "die Gruppenaufgabe, -n — EN: group task · FR: l'exercice de groupeIn der Gruppenaufgabe wird Teamverhalten beobachtet.",
+   "en": "group task",
+   "lemma": "die Gruppenaufgabe"
+  },
+  {
+   "form": "group",
+   "context": "die Gruppenaufgabe, -n — EN: group task · FR: l'exercice de groupeIn der Gruppenaufgabe wird Teamverhalten beobachtet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "task",
+   "context": "die Gruppenaufgabe, -n — EN: group task · FR: l'exercice de groupeIn der Gruppenaufgabe wird Teamverhalten beobachtet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Teamverhalten",
+   "context": "die Gruppenaufgabe, -n — EN: group task · FR: l'exercice de groupeIn der Gruppenaufgabe wird Teamverhalten beobachtet.",
+   "en": "team behaviour",
+   "lemma": "das Teamverhalten"
+  },
+  {
+   "form": "durchsetzen",
+   "context": "sich durchsetzen — EN: to assert oneself · FR: s'imposerMan muss sich durchsetzen, ohne andere zu übergehen.",
+   "en": "assert (oneself)",
+   "lemma": "sich durchsetzen"
+  },
+  {
+   "form": "assert",
+   "context": "sich durchsetzen — EN: to assert oneself · FR: s'imposerMan muss sich durchsetzen, ohne andere zu übergehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'imposerMan",
+   "context": "sich durchsetzen — EN: to assert oneself · FR: s'imposerMan muss sich durchsetzen, ohne andere zu übergehen.",
+   "en": "Man = one; you",
+   "lemma": ""
+  },
+  {
+   "form": "übergehen",
+   "context": "sich durchsetzen — EN: to assert oneself · FR: s'imposerMan muss sich durchsetzen, ohne andere zu übergehen.",
+   "en": "to ignore; to pass over",
+   "lemma": ""
+  },
+  {
+   "form": "propositionIhr",
+   "context": "der Vorschlag, ¨-e — EN: proposal · FR: la propositionIhr Vorschlag überzeugt mich.",
+   "en": "Ihr = your (formal); her; their",
+   "lemma": ""
+  },
+  {
+   "form": "peser",
+   "context": "etwas abwägen (wog ab) — EN: to weigh up · FR: peser, évaluerWir sollten Vor- und Nachteile abwägen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "évaluerWir",
+   "context": "etwas abwägen (wog ab) — EN: to weigh up · FR: peser, évaluerWir sollten Vor- und Nachteile abwägen.",
+   "en": "Wir = we",
+   "lemma": ""
+  },
+  {
+   "form": "d'accord",
+   "context": "sich einigen auf (+ Akk.) — EN: to agree on · FR: se mettre d'accord surEinigen wir uns auf die zweite Variante.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "surEinigen",
+   "context": "sich einigen auf (+ Akk.) — EN: to agree on · FR: se mettre d'accord surEinigen wir uns auf die zweite Variante.",
+   "en": "Einigen = let's agree",
+   "lemma": "sich einigen"
+  },
+  {
+   "form": "Kompromissvorschlag",
+   "context": "der Kompromissvorschlag, ¨-e — EN: compromise proposal · FR: la proposition de compromisDarf ich einen Kompromissvorschlag machen?",
+   "en": "compromise proposal",
+   "lemma": "der Kompromissvorschlag"
+  },
+  {
+   "form": "proposition",
+   "context": "der Kompromissvorschlag, ¨-e — EN: compromise proposal · FR: la proposition de compromisDarf ich einen Kompromissvorschlag machen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "compromisDarf",
+   "context": "der Kompromissvorschlag, ¨-e — EN: compromise proposal · FR: la proposition de compromisDarf ich einen Kompromissvorschlag machen?",
+   "en": "Darf = may",
+   "lemma": "dürfen"
+  },
+  {
+   "form": "Umsetzung",
+   "context": "die Umsetzung (Sg.) — EN: implementation · FR: la mise en œuvreDie Umsetzung ist aufwendiger als gedacht.",
+   "en": "implementation",
+   "lemma": "die Umsetzung"
+  },
+  {
+   "form": "implementation",
+   "context": "die Umsetzung (Sg.) — EN: implementation · FR: la mise en œuvreDie Umsetzung ist aufwendiger als gedacht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mise",
+   "context": "die Umsetzung (Sg.) — EN: implementation · FR: la mise en œuvreDie Umsetzung ist aufwendiger als gedacht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "aufwendiger",
+   "context": "die Umsetzung (Sg.) — EN: implementation · FR: la mise en œuvreDie Umsetzung ist aufwendiger als gedacht.",
+   "en": "more complex; more costly",
+   "lemma": "aufwendig"
+  },
+  {
+   "form": "Zeitrahmen",
+   "context": "der Zeitrahmen (Sg.) — EN: time frame · FR: le calendrierDer Zeitrahmen ist eng.",
+   "en": "time frame",
+   "lemma": "der Zeitrahmen"
+  },
+  {
+   "form": "frame",
+   "context": "der Zeitrahmen (Sg.) — EN: time frame · FR: le calendrierDer Zeitrahmen ist eng.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "realisierbar",
+   "context": "realisierbar — EN: feasible · FR: réalisableIst das im Budget überhaupt realisierbar?",
+   "en": "feasible",
+   "lemma": ""
+  },
+  {
+   "form": "feasible",
+   "context": "realisierbar — EN: feasible · FR: réalisableIst das im Budget überhaupt realisierbar?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "réalisableIst",
+   "context": "realisierbar — EN: feasible · FR: réalisableIst das im Budget überhaupt realisierbar?",
+   "en": "Ist = is",
+   "lemma": "sein"
+  },
+  {
+   "form": "Budget",
+   "context": "realisierbar — EN: feasible · FR: réalisableIst das im Budget überhaupt realisierbar?",
+   "en": "budget",
+   "lemma": "das Budget"
+  },
+  {
+   "form": "budget",
+   "context": "das Budget, -s — EN: budget · FR: le budgetDas Budget liegt bei 5.000 Euro.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "budgetDas",
+   "context": "das Budget, -s — EN: budget · FR: le budgetDas Budget liegt bei 5.000 Euro.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "envisager",
+   "context": "etwas in Betracht ziehen — EN: to consider sth. · FR: envisager qc.Diese Option sollten wir in Betracht ziehen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "décisionWir",
+   "context": "eine Entscheidung treffen — EN: to make a decision · FR: prendre une décisionWir müssen heute eine Entscheidung treffen.",
+   "en": "Wir = we",
+   "lemma": ""
+  },
+  {
+   "form": "Folgender",
+   "context": "Mein Vorschlag wäre Folgender: …",
+   "en": "the following",
+   "lemma": "folgend"
+  },
+  {
+   "form": "Bedenken",
+   "context": "Da hätte ich Bedenken, weil …",
+   "en": "concerns; doubts",
+   "lemma": "das Bedenken"
+  },
+  {
+   "form": "geklärt",
+   "context": "Ist damit auch für Sie alles geklärt?",
+   "en": "clarified; settled",
+   "lemma": "klären"
+  },
+  {
+   "form": "höflichsten",
+   "context": "Welcher Satz ist am höflichsten?",
+   "en": "most polite",
+   "lemma": "höflich"
+  },
+  {
+   "form": "Protokollieren",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "record; take minutes of",
+   "lemma": "protokollieren"
+  },
+  {
+   "form": "Entscheidungen",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "decisions",
+   "lemma": "die Entscheidung"
+  },
+  {
+   "form": "Planungsrunde",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "planning meeting",
+   "lemma": "die Planungsrunde"
+  },
+  {
+   "form": "Stichpunkten",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "bullet points; notes",
+   "lemma": "der Stichpunkt"
+  },
+  {
+   "form": "ausformulierten",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "fully written-out",
+   "lemma": "ausformuliert"
+  },
+  {
+   "form": "Beteiligte",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "participants; those involved",
+   "lemma": "der Beteiligte"
+  },
+  {
+   "form": "offene",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "open; unresolved",
+   "lemma": "offen"
+  },
+  {
+   "form": "Verantwortliche",
+   "context": "Planen Sie schriftlich eine Veranstaltung für Ihr Team: Protokollieren Sie die Entscheidungen einer Planungsrunde in Stichpunkten und ausformulierten Sätzen. Umfang: 140–180 Wörter Checkliste: • Nennen Sie Anlass, Datum und Beteiligte. • Halten Sie mindestens drei Entscheidungen fest. • Verwenden Sie mindestens drei Nomen-Verb-Verbindungen. • Nennen Sie am Ende offene Punkte und Verantwortliche.",
+   "en": "people responsible",
+   "lemma": "der Verantwortliche"
+  }
+ ]
+}
