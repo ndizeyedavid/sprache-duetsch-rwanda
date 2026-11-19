@@ -1,0 +1,315 @@
+{
+  "level": "A1",
+  "lesson": 3,
+  "title": "Familie — Das ist meine Schwester",
+  "titleEn": "Family — This is my sister",
+  "summary": "Die Familie vorstellen und Ja/Nein-Fragen stellen.",
+  "summaryEn": "Introduce your family and ask yes/no questions.",
+  "exam": "Goethe-Zertifikat A1 (Start Deutsch 1): Sprechen Teil 2 — um Informationen bitten und Informationen geben",
+  "goals": [
+    { "de": "die Familie vorstellen", "en": "introduce your family" },
+    { "de": "die Possessivartikel mein und dein verwenden", "en": "use mein (my) and dein (your)" },
+    { "de": "Ja/Nein-Fragen stellen und mit ja, nein oder doch antworten", "en": "ask yes/no questions and answer with ja (yes), nein (no) or doch (yes, after a negative question)" }
+  ],
+  "vocab": [
+    { "de": "die Familie, -n", "en": "family", "say": "die Familie", "example": "Meine Familie ist groß.", "exampleEn": "My family is big.", "noteEn": "Plural: die Familien." },
+    { "de": "die Eltern (Pl.)", "en": "parents", "say": "die Eltern", "example": "Meine Eltern wohnen in Kigali.", "exampleEn": "My parents live in Kigali.", "noteEn": "Only plural: die Eltern = mother and father." },
+    { "de": "der Vater, ¨- / die Mutter, ¨-", "en": "father / mother", "say": "der Vater, die Mutter", "example": "Das sind mein Vater und meine Mutter.", "exampleEn": "These are my father and my mother.", "noteEn": "Plural: die Väter / die Mütter. At home children often say Papa and Mama." },
+    { "de": "der Bruder, ¨-", "en": "brother", "say": "der Bruder", "example": "Mein Bruder ist 25 Jahre alt.", "exampleEn": "My brother is 25 years old.", "noteEn": "Plural: die Brüder." },
+    { "de": "die Schwester, -n", "en": "sister", "say": "die Schwester", "example": "Das ist meine Schwester Keza.", "exampleEn": "This is my sister Keza.", "noteEn": "Plural: die Schwestern." },
+    { "de": "die Geschwister (Pl.)", "en": "brothers and sisters, siblings", "say": "die Geschwister", "example": "Hast du Geschwister?", "exampleEn": "Do you have any brothers or sisters?", "noteEn": "Only plural: all your brothers and sisters together." },
+    { "de": "das Kind, -er", "en": "child", "say": "das Kind", "example": "Wir haben zwei Kinder.", "exampleEn": "We have two children.", "noteEn": "Plural: die Kinder." },
+    { "de": "der Sohn, ¨-e / die Tochter, ¨-", "en": "son / daughter", "say": "der Sohn, die Tochter", "example": "Unsere Tochter geht zur Schule.", "exampleEn": "Our daughter goes to school.", "noteEn": "Plural: die Söhne / die Töchter. unser, unsere = our." },
+    { "de": "der Mann, ¨-er / die Frau, -en", "en": "man, husband / woman, wife", "say": "der Mann, die Frau", "example": "Das ist meine Frau.", "exampleEn": "This is my wife.", "noteEn": "mein Mann = my husband, meine Frau = my wife. Plural: die Männer / die Frauen." },
+    { "de": "der Großvater, ¨- / die Großmutter, ¨-", "en": "grandfather / grandmother", "say": "der Großvater, die Großmutter", "example": "Mein Großvater ist 80.", "exampleEn": "My grandfather is 80.", "noteEn": "Both together: die Großeltern (grandparents). Children often say Opa and Oma." },
+    { "de": "der Cousin, -s / die Cousine, -n", "en": "cousin", "say": "der Cousin, die Cousine", "example": "Mein Cousin wohnt in Musanze.", "exampleEn": "My cousin lives in Musanze.", "noteEn": "A man is a Cousin, a woman a Cousine. The words come from French and keep a French sound." },
+    { "de": "verheiratet / ledig", "en": "married / single", "example": "Ich bin verheiratet.", "exampleEn": "I am married.", "noteEn": "ledig = not married." },
+    { "de": "haben", "en": "to have", "example": "Ich habe zwei Brüder.", "exampleEn": "I have two brothers.", "noteEn": "ich habe, du hast, er/sie hat — see the grammar." },
+    { "de": "wie alt", "en": "how old", "example": "Wie alt ist dein Sohn?", "exampleEn": "How old is your son?", "noteEn": "The answer: Er ist zehn (Jahre alt)." },
+    { "de": "das Jahr, -e", "en": "year", "say": "das Jahr", "example": "Meine Tochter ist zehn Jahre alt.", "exampleEn": "My daughter is ten years old.", "noteEn": "Plural: die Jahre. … Jahre alt = … years old." },
+    { "de": "zusammen leben", "en": "to live together", "example": "Wir leben alle zusammen.", "exampleEn": "We all live together.", "noteEn": "leben = to live. For your home, leben and wohnen mean the same." },
+    { "de": "doch", "en": "yes (after a negative question)", "example": "Bist du nicht verheiratet? — Doch!", "exampleEn": "Aren’t you married? — Yes, I am!", "noteEn": "Say doch to answer yes to a question with nicht or kein." }
+  ],
+  "grammar": [
+    {
+      "title": "Possessivartikel mein und dein",
+      "titleEn": "mein (my) and dein (your)",
+      "explanation": "mein und dein zeigen, zu wem jemand oder etwas gehört. Bei femininen Nomen und im Plural kommt ein -e dazu.",
+      "explanationEn": "mein (my) and dein (your, when you say du) show who someone or something belongs to. The ending depends on the noun after it: masculine (der) and neuter (das) nouns have no ending — mein Bruder, mein Kind. Feminine (die) nouns and all plurals add -e — meine Schwester, meine Eltern.",
+      "table": {
+        "head": ["", "maskulin (der)", "neutrum (das)", "feminin (die)", "Plural (die)"],
+        "rows": [["ich →", "mein Bruder", "mein Kind", "meine Schwester", "meine Eltern"], ["du →", "dein Bruder", "dein Kind", "deine Schwester", "deine Eltern"]]
+      },
+      "examples": [
+        { "de": "Das ist mein Vater und das ist meine Mutter.", "en": "This is my father and this is my mother.", "note": "maskulin ohne -e, feminin mit -e", "noteEn": "Masculine: no ending. Feminine: -e." },
+        { "de": "Sind das deine Kinder?", "en": "Are these your children?", "note": "Plural immer mit -e", "noteEn": "The plural always has -e." },
+        { "de": "Wie heißt dein Kind?", "en": "What is your child’s name?", "note": "neutrum ohne -e", "noteEn": "das Kind is neuter: no ending, like masculine." }
+      ],
+      "tip": "Die Endung richtet sich nach dem Nomen danach, nicht nach der Person: meine Schwester, auch wenn ein Mann spricht.",
+      "tipEn": "The ending depends on the noun that follows, not on the person who speaks: a man also says meine Schwester."
+    },
+    {
+      "title": "Ja/Nein-Frage, W-Frage und Aussage",
+      "titleEn": "Yes/no questions, W-questions and statements",
+      "explanation": "Drei Satztypen, aber nur zwei Positionen für das Verb: In der Aussage und in der W-Frage steht das Verb auf Position 2. Bei der Ja/Nein-Frage steht das Verb ganz vorn.",
+      "explanationEn": "Three kinds of sentences, but only two places for the verb. In a statement and in a W-question the verb is in position 2. In a yes/no question the verb comes first, before the subject: Ist das deine Frau?",
+      "table": {
+        "head": ["Satztyp", "Position 1", "Position 2", "Rest"],
+        "rows": [["Ja/Nein-Frage", "Ist (Verb)", "das", "deine Frau?"], ["W-Frage", "Wer", "ist (Verb)", "das?"], ["Aussage", "Das", "ist (Verb)", "meine Frau."]]
+      },
+      "examples": [
+        { "de": "Hast du Geschwister? — Ja, einen Bruder.", "en": "Do you have any brothers or sisters? — Yes, one brother.", "note": "Verb auf Position 1", "noteEn": "Yes/no question: the verb is in position 1. (After haben, ein becomes einen for der-words: einen Bruder — Lesson 6.)" },
+        { "de": "Wie alt ist deine Schwester?", "en": "How old is your sister?", "note": "W-Frage: Verb auf Position 2", "noteEn": "W-question: the verb is in position 2." },
+        { "de": "Meine Schwester ist neunzehn.", "en": "My sister is nineteen.", "note": "Aussage: Verb auf Position 2", "noteEn": "Statement: the verb is in position 2." }
+      ],
+      "tip": "Bei der Ja/Nein-Frage gibt es kein Fragewort — das Verb beginnt den Satz.",
+      "tipEn": "A yes/no question has no question word — the verb starts the sentence."
+    },
+    {
+      "title": "ja, nein oder doch?",
+      "titleEn": "ja, nein or doch?",
+      "explanation": "Nach einer normalen Frage antwortet man mit ja oder nein. Nach einer verneinten Frage benutzt man doch, wenn die Antwort positiv ist.",
+      "explanationEn": "After a normal yes/no question you answer ja (yes) or nein (no). After a negative question — a question with nicht or kein — you say doch when the answer is positive. For a negative answer you still say nein.",
+      "table": {
+        "head": ["Frage", "Antwort positiv", "Antwort negativ"],
+        "rows": [["Ist das deine Frau?", "Ja, das ist meine Frau.", "Nein, das ist nicht meine Frau."], ["Ist das nicht deine Frau?", "Doch, das ist meine Frau.", "Nein, das ist nicht meine Frau."]]
+      },
+      "examples": [
+        { "de": "Hast du keine Geschwister? — Doch, ich habe zwei Brüder.", "en": "Don’t you have any brothers or sisters? — Yes, I do: I have two brothers.", "note": "verneinte Frage, positive Antwort → doch", "noteEn": "Negative question, positive answer → doch. (keine = no, not any — you learn kein in Lesson 5.)" },
+        { "de": "Bist du nicht Studentin? — Doch, ich bin Studentin in Huye.", "en": "Aren’t you a student? — Yes, I am. I am a student in Huye.", "note": "verneinte Frage mit nicht → doch", "noteEn": "A negative question with nicht and a positive answer → doch." },
+        { "de": "Wohnt deine Schwester nicht in Kigali? — Nein, sie wohnt in Huye.", "en": "Doesn’t your sister live in Kigali? — No, she lives in Huye.", "note": "negative Antwort → nein", "noteEn": "The answer is negative → nein." }
+      ],
+      "tip": "doch gibt es im Englischen nicht — merken Sie sich: verneinte Frage + positive Antwort = doch.",
+      "tipEn": "English has no word like doch. Remember: negative question + positive answer = doch."
+    },
+    {
+      "title": "Das Verb haben — und sie (Plural)",
+      "titleEn": "The verb haben (to have) — and sie (they)",
+      "explanation": "haben ist fast regelmäßig, aber: du hast, er/sie hat. Für mehrere Personen (meine Eltern = sie) endet das Verb auf -en, wie bei wir und Sie.",
+      "explanationEn": "haben (to have) is almost regular, but the b disappears in du hast and er/sie hat. For several people — meine Eltern, meine Brüder = sie (they) — the verb ends in -en, just like with wir and Sie: Meine Eltern wohnen in Huye. Sie haben zwei Kinder.",
+      "table": {
+        "head": ["", "haben", "sein", "wohnen"],
+        "rows": [["ich", "habe", "bin", "wohne"], ["du", "hast", "bist", "wohnst"], ["er / sie", "hat", "ist", "wohnt"], ["wir", "haben", "sind", "wohnen"], ["sie (Plural)", "haben", "sind", "wohnen"], ["Sie", "haben", "sind", "wohnen"]]
+      },
+      "examples": [
+        { "de": "Hast du Kinder? — Ja, ich habe eine Tochter.", "en": "Do you have children? — Yes, I have a daughter.", "noteEn": "du hast, ich habe." },
+        { "de": "Eric hat zwei Schwestern.", "en": "Eric has two sisters.", "noteEn": "Eric = er → hat." },
+        { "de": "Meine Brüder sind Studenten.", "en": "My brothers are students.", "noteEn": "meine Brüder = sie (they) → sind." }
+      ],
+      "tip": "Achtung: sie hat, sie haben, Sie haben — das Verb zeigt, wer gemeint ist.",
+      "tipEn": "Watch the verb: sie hat = she has, sie haben = they have, Sie haben = you have (polite)."
+    },
+    {
+      "title": "Wie alt? — Zahlen und Alter",
+      "titleEn": "How old? — Numbers and age",
+      "explanation": "Nach dem Alter fragt man mit Wie alt …? Man antwortet mit … ist … Jahre alt oder nur mit der Zahl. Ab 21 sagt man zuerst die Einer: 25 = fünfundzwanzig.",
+      "explanationEn": "Ask about age with Wie alt …? (How old …?). Answer: Er ist 25 Jahre alt. — or just: Er ist 25. From 21 on, German says the ones first, then und, then the tens: 25 = fünfundzwanzig (five-and-twenty). Numbers are written as one word.",
+      "table": {
+        "head": ["Zahl", "auf Deutsch"],
+        "rows": [["1–10", "eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn"], ["11–12", "elf, zwölf"], ["13–19", "dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn"], ["20–90", "zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig"], ["21, 25, 48", "einundzwanzig, fünfundzwanzig, achtundvierzig"], ["100", "hundert"]]
+      },
+      "examples": [
+        { "de": "Wie alt bist du? — Ich bin zwanzig.", "en": "How old are you? — I am twenty." },
+        { "de": "Meine Mutter ist achtundvierzig Jahre alt.", "en": "My mother is forty-eight years old.", "noteEn": "48 = acht + und + vierzig." },
+        { "de": "Meine Großmutter ist einundachtzig.", "en": "My grandmother is eighty-one.", "noteEn": "81 = ein + und + achtzig. Jahre alt is often left out." }
+      ],
+      "tip": "Bei 21, 31, 41 … sagt man ein-: einundzwanzig, nicht einsundzwanzig.",
+      "tipEn": "For 21, 31, 41 … say ein-: einundzwanzig, not einsundzwanzig. Watch the spelling: sechzehn (16), siebzehn (17), sechzig (60), siebzig (70)."
+    }
+  ],
+  "phrases": [
+    { "function": "die Familie vorstellen", "functionEn": "introducing your family", "items": [
+      { "de": "Das ist mein Bruder.", "en": "This is my brother." },
+      { "de": "Das sind meine Eltern.", "en": "These are my parents." },
+      { "de": "Wir sind vier Personen.", "en": "There are four of us." }
+    ] },
+    { "function": "nach der Familie fragen", "functionEn": "asking about someone’s family", "items": [
+      { "de": "Hast du Geschwister?", "en": "Do you have any brothers or sisters?" },
+      { "de": "Wie alt ist deine Schwester?", "en": "How old is your sister?" },
+      { "de": "Bist du verheiratet?", "en": "Are you married?" }
+    ] },
+    { "function": "antworten", "functionEn": "answering", "items": [
+      { "de": "Ja, einen Bruder und eine Schwester.", "en": "Yes, one brother and one sister." },
+      { "de": "Nein, ich bin Einzelkind.", "en": "No, I am an only child." },
+      { "de": "Doch, ich habe zwei Kinder.", "en": "Yes, I do. I have two children." }
+    ] }
+  ],
+  "pronunciation": {
+    "focus": "Satzmelodie bei Fragen",
+    "focusEn": "Sentence melody in questions",
+    "explanation": "Bei einer Ja/Nein-Frage geht die Stimme am Ende nach oben ↗. Bei einer W-Frage geht sie nach unten ↘.",
+    "explanationEn": "In a yes/no question your voice goes up at the end ↗. In a W-question (wer, wie, wo …) it goes down ↘.",
+    "examples": [
+      { "de": "Ist das deine Schwester? ↗", "en": "Is that your sister? (voice goes up)" },
+      { "de": "Wer ist das? ↘", "en": "Who is that? (voice goes down)" },
+      { "de": "Hast du Kinder? ↗", "en": "Do you have children? (voice goes up)" },
+      { "de": "Wie alt ist dein Bruder? ↘", "en": "How old is your brother? (voice goes down)" }
+    ]
+  },
+  "dialogue": {
+    "title": "Ein Familienfoto",
+    "titleEn": "A family photo",
+    "speakers": { "Pia": "f", "Sam": "m" },
+    "lines": [
+      { "speaker": "Pia", "de": "Wer ist das auf dem Foto?", "en": "Who is that in the photo?" },
+      { "speaker": "Sam", "de": "Das ist meine Schwester Lina.", "en": "That’s my sister Lina." },
+      { "speaker": "Pia", "de": "Und ist das dein Bruder?", "en": "And is that your brother?" },
+      { "speaker": "Sam", "de": "Nein, das ist mein Cousin.", "en": "No, that’s my cousin." },
+      { "speaker": "Pia", "de": "Hast du keine Brüder?", "en": "Don’t you have any brothers?" },
+      { "speaker": "Sam", "de": "Doch, zwei! Aber sie sind nicht auf dem Foto.", "en": "Yes, I do — two! But they are not in the photo." },
+      { "speaker": "Pia", "de": "Wie alt ist Lina?", "en": "How old is Lina?" },
+      { "speaker": "Sam", "de": "Sie ist neunzehn. Sie ist Studentin in Huye.", "en": "She is nineteen. She is a student in Huye." },
+      { "speaker": "Pia", "de": "Und du? Bist du verheiratet?", "en": "And you? Are you married?" },
+      { "speaker": "Sam", "de": "Nein, ich bin noch ledig.", "en": "No, I am still single." }
+    ]
+  },
+  "reading": {
+    "title": "Meine Familie",
+    "titleEn": "My family",
+    "paragraphs": [
+      [
+        { "de": "Hallo! Ich heiße Aline und bin 21 Jahre alt.", "en": "Hi! My name is Aline and I am 21 years old." },
+        { "de": "Wir sind fünf Personen: meine Eltern, mein Bruder, meine Schwester und ich.", "en": "There are five of us: my parents, my brother, my sister and me." },
+        { "de": "Mein Vater ist Lehrer und meine Mutter ist Krankenpflegerin.", "en": "My father is a teacher and my mother is a nurse." }
+      ],
+      [
+        { "de": "Mein Bruder Eric ist 24 Jahre alt.", "en": "My brother Eric is 24 years old." },
+        { "de": "Er ist Student in Kigali und noch ledig.", "en": "He is a student in Kigali and still single." },
+        { "de": "Meine Schwester Keza ist 30.", "en": "My sister Keza is 30." },
+        { "de": "Sie ist verheiratet und hat zwei Kinder.", "en": "She is married and has two children." }
+      ],
+      [
+        { "de": "Meine Eltern und ich leben zusammen in Huye.", "en": "My parents and I live together in Huye." },
+        { "de": "Und du? Hast du Geschwister?", "en": "And you? Do you have any brothers or sisters?" }
+      ]
+    ]
+  },
+  "glossary": {
+    "Frau": ["wife; woman; Mrs", "die Frau"],
+    "Lina": ["Lina (a first name)"],
+    "Pia": ["Pia (a first name)"],
+    "Sam": ["Sam (a first name)"],
+    "Possessivartikel": ["possessive articles (words like mein, dein)", "der Possessivartikel"],
+    "Nein-Fragen": ["yes/no questions (Ja/Nein-Fragen)", "die Ja/Nein-Frage"]
+  },
+  "sessions": [
+    {
+      "key": "words",
+      "title": "Wörter",
+      "titleEn": "Words",
+      "items": [
+        { "kind": "match", "pairs": [["die Familie", "family"], ["die Eltern", "parents"], ["der Bruder", "brother"], ["die Schwester", "sister"], ["das Kind", "child"], ["die Geschwister", "siblings"]] },
+        { "kind": "choose", "prompt": "der Cousin", "listen": true, "options": ["cousin", "uncle", "brother", "son"], "optionsLang": "en", "answer": "cousin" },
+        { "kind": "choose", "promptEn": "Which word means “married”?", "options": ["verheiratet", "ledig", "zusammen", "alt"], "answer": "verheiratet" },
+        { "kind": "choose", "prompt": "der Großvater", "promptEn": "What does this mean?", "options": ["grandfather", "father", "grandmother", "uncle"], "optionsLang": "en", "answer": "grandfather" },
+        { "kind": "match", "pairs": [["der Vater", "father"], ["die Mutter", "mother"], ["der Sohn", "son"], ["die Tochter", "daughter"], ["der Mann", "husband"], ["die Frau", "wife"]] },
+        { "kind": "choose", "prompt": "ledig", "listen": true, "options": ["single (not married)", "married", "old", "together"], "optionsLang": "en", "answer": "single (not married)" },
+        { "kind": "translate", "from": "de", "text": "Das sind meine Eltern.", "answer": "These are my parents.", "accepted": ["Those are my parents.", "They are my parents."], "distractors": ["is", "children"] },
+        { "kind": "choose", "promptEn": "Which question asks about age?", "options": ["Wie alt bist du?", "Wie heißt du?", "Wo wohnst du?"], "answer": "Wie alt bist du?" },
+        { "kind": "translate", "from": "en", "text": "I have two children.", "answer": "Ich habe zwei Kinder.", "accepted": ["Ich habe 2 Kinder."], "distractors": ["hast", "Kind", "bin"] },
+        { "kind": "fill", "text": "Mein Vater und meine Mutter sind meine ___.", "answer": "Eltern", "options": ["Eltern", "Geschwister", "Kinder"], "en": "My father and my mother are my parents.", "explanationEn": "die Eltern = mother and father together." },
+        { "kind": "listen", "mode": "choose", "text": "Meine Familie ist groß.", "options": ["Meine Familie ist groß.", "Meine Familie ist klein.", "Mein Vater ist groß."], "en": "My family is big." },
+        { "kind": "choose", "prompt": "Wir sind vier Personen.", "listen": true, "options": ["There are four of us.", "We are four years old.", "We have four children."], "optionsLang": "en", "answer": "There are four of us." }
+      ]
+    },
+    {
+      "key": "grammar",
+      "title": "Grammatik",
+      "titleEn": "Grammar",
+      "items": [
+        { "kind": "fill", "text": "Das ist ___ Schwester.", "answer": "meine", "en": "This is my sister.", "hintEn": "mein — Schwester is feminine (die)", "explanationEn": "Feminine nouns take meine: die Schwester → meine Schwester." },
+        { "kind": "choose", "prompt": "Das ist ___ Bruder.", "promptEn": "This is my brother.", "options": ["meine", "mein", "meinen"], "answer": "mein", "explanationEn": "der Bruder is masculine, so mein has no ending: Das ist mein Bruder." },
+        { "kind": "choose", "prompt": "Hast du keine Kinder?", "promptEn": "Answer yes: you have two children.", "options": ["Ja, ich habe zwei.", "Doch, ich habe zwei.", "Nein, ich habe zwei."], "answer": "Doch, ich habe zwei.", "explanationEn": "The question is negative (keine), so a positive answer starts with doch." },
+        { "kind": "fill", "text": "___ das deine Frau?", "answer": "Ist", "en": "Is that your wife?", "hintEn": "sein — yes/no question", "explanationEn": "In a yes/no question the verb comes first: Ist das …?" },
+        { "kind": "fill", "text": "Sind das ___ Eltern?", "answer": "deine", "en": "Are those your parents?", "hintEn": "dein — Eltern is plural", "explanationEn": "In the plural it is always deine: deine Eltern." },
+        { "kind": "fill", "text": "Wie heißt ___ Tochter?", "answer": "deine", "options": ["deine", "dein"], "en": "What is your daughter’s name?", "explanationEn": "die Tochter is feminine, so dein gets -e: deine Tochter." },
+        { "kind": "fill", "text": "___ du Geschwister?", "answer": "Hast", "options": ["Hast", "Hat", "Habe"], "en": "Do you have any brothers or sisters?", "explanationEn": "du → hast. In a yes/no question the verb comes first." },
+        { "kind": "fill", "text": "Amina ___ drei Kinder.", "answer": "hat", "options": ["hat", "hast", "haben"], "en": "Amina has three children.", "explanationEn": "Amina = sie (she) → hat." },
+        { "kind": "fill", "text": "Meine Eltern ___ in Musanze.", "answer": "wohnen", "accepted": ["leben"], "en": "My parents live in Musanze.", "hintEn": "wohnen — meine Eltern = sie (they)", "explanationEn": "meine Eltern = sie (they), so the verb ends in -en: wohnen." },
+        { "kind": "choose", "prompt": "Ist das nicht dein Bruder? — ___, das ist mein Cousin.", "promptEn": "Isn’t that your brother? — No, that is my cousin.", "options": ["Nein", "Doch", "Ja"], "answer": "Nein", "explanationEn": "The answer is negative (it is not your brother), so you say nein. Doch would mean: yes, it is my brother." },
+        { "kind": "choose", "prompt": "Bist du nicht verheiratet? — ___, das ist meine Frau.", "promptEn": "Aren’t you married? — Yes, I am. This is my wife.", "options": ["Doch", "Ja", "Nein"], "answer": "Doch", "explanationEn": "A negative question (nicht) with a positive answer → doch." },
+        { "kind": "order", "answer": "Ist deine Mutter Lehrerin?", "en": "Is your mother a teacher?" },
+        { "kind": "order", "answer": "Wie alt ist dein Bruder?", "en": "How old is your brother?" },
+        { "kind": "order", "answer": "Das sind meine Kinder.", "en": "These are my children." },
+        { "kind": "order", "answer": "Wohnt deine Schwester in Kigali?", "en": "Does your sister live in Kigali?" }
+      ]
+    },
+    {
+      "key": "listen",
+      "title": "Hören & Sprechen",
+      "titleEn": "Listening & speaking",
+      "passage": "dialogue",
+      "items": [
+        { "kind": "truefalse", "statement": "Lina ist die Schwester von Sam.", "statementEn": "Lina is Sam’s sister.", "answer": true },
+        { "kind": "truefalse", "statement": "Sam hat keine Brüder.", "statementEn": "Sam has no brothers.", "answer": false, "explanationEn": "Sam says: Doch, zwei! — he has two brothers, but they are not in the photo." },
+        { "kind": "truefalse", "statement": "Lina ist neunzehn Jahre alt.", "statementEn": "Lina is nineteen years old.", "answer": true },
+        { "kind": "truefalse", "statement": "Sam ist verheiratet.", "statementEn": "Sam is married.", "answer": false, "explanationEn": "Sam says: Nein, ich bin noch ledig. — he is single." },
+        { "kind": "listen", "mode": "choose", "text": "Ist das deine Mutter?", "options": ["Ist das deine Mutter?", "Das ist deine Mutter.", "Ist das meine Mutter?"], "en": "Is that your mother?" },
+        { "kind": "listen", "mode": "type", "text": "Meine Schwester ist Lehrerin.", "en": "My sister is a teacher." },
+        { "kind": "listen", "mode": "choose", "text": "Mein Bruder ist zwanzig.", "options": ["Mein Bruder ist zwanzig.", "Mein Bruder ist zwölf.", "Mein Bruder ist zweiundzwanzig."], "en": "My brother is twenty." },
+        { "kind": "listen", "mode": "type", "text": "Das ist mein Mann.", "en": "This is my husband." },
+        { "kind": "speak", "text": "Das ist meine Familie.", "en": "This is my family." },
+        { "kind": "speak", "text": "Bist du verheiratet?", "en": "Are you married?" },
+        { "kind": "speak", "text": "Doch, ich habe zwei Brüder.", "en": "Yes, I do. I have two brothers." }
+      ]
+    },
+    {
+      "key": "read",
+      "title": "Lesen",
+      "titleEn": "Reading",
+      "passage": "reading",
+      "items": [
+        { "kind": "truefalse", "statement": "Aline hat zwei Geschwister.", "statementEn": "Aline has two brothers and sisters.", "answer": true },
+        { "kind": "choose", "promptEn": "How old is Eric?", "options": ["vierundzwanzig", "zweiundvierzig", "vierzehn"], "answer": "vierundzwanzig", "explanationEn": "24 = vier + und + zwanzig: vierundzwanzig." },
+        { "kind": "truefalse", "statement": "Eric ist verheiratet.", "statementEn": "Eric is married.", "answer": false, "explanationEn": "Eric is still single (noch ledig)." },
+        { "kind": "truefalse", "statement": "Der Vater von Aline ist Lehrer.", "statementEn": "Aline’s father is a teacher.", "answer": true },
+        { "kind": "choose", "promptEn": "Who has two children?", "options": ["Keza", "Eric", "Aline"], "answer": "Keza" },
+        { "kind": "truefalse", "statement": "Aline wohnt in Kigali.", "statementEn": "Aline lives in Kigali.", "answer": false, "explanationEn": "Aline lives with her parents in Huye. Her brother Eric is a student in Kigali." },
+        { "kind": "choose", "promptEn": "How many people are in Aline’s family?", "options": ["vier", "fünf", "sechs"], "answer": "fünf" },
+        { "kind": "truefalse", "statement": "Keza ist dreißig Jahre alt.", "statementEn": "Keza is thirty years old.", "answer": true }
+      ]
+    },
+    {
+      "key": "translate",
+      "title": "Übersetzen",
+      "titleEn": "Translate",
+      "items": [
+        { "kind": "translate", "from": "de", "text": "Mein Bruder ist fünfundzwanzig Jahre alt.", "answer": "My brother is twenty-five years old.", "accepted": ["My brother is 25 years old.", "My brother is twenty-five.", "My brother is 25."] },
+        { "kind": "translate", "from": "de", "text": "Wir haben zwei Kinder.", "answer": "We have two children.", "accepted": ["We have 2 children.", "We have two kids.", "We have got two children."] },
+        { "kind": "translate", "from": "de", "text": "Ist das dein Mann?", "answer": "Is that your husband?", "accepted": ["Is this your husband?"] },
+        { "kind": "translate", "from": "de", "text": "Meine Eltern wohnen in Huye.", "answer": "My parents live in Huye.", "accepted": ["My parents are living in Huye."] },
+        { "kind": "translate", "from": "de", "text": "Meine Schwester ist nicht verheiratet.", "answer": "My sister is not married.", "accepted": ["My sister is single.", "My sister is unmarried."] },
+        { "kind": "translate", "from": "en", "text": "Is that your sister?", "answer": "Ist das deine Schwester?", "accepted": ["Ist das Ihre Schwester?"] },
+        { "kind": "translate", "from": "en", "text": "My grandfather is seventy years old.", "answer": "Mein Großvater ist siebzig Jahre alt.", "accepted": ["Mein Großvater ist 70 Jahre alt.", "Mein Großvater ist siebzig.", "Mein Großvater ist 70."] },
+        { "kind": "translate", "from": "en", "text": "Do you have children?", "answer": "Hast du Kinder?", "accepted": ["Haben Sie Kinder?"] },
+        { "kind": "translate", "from": "en", "text": "My brother and I live together.", "answer": "Mein Bruder und ich leben zusammen.", "accepted": ["Mein Bruder und ich wohnen zusammen.", "Ich und mein Bruder leben zusammen.", "Ich und mein Bruder wohnen zusammen."] },
+        { "kind": "translate", "from": "en", "text": "This is my son Eric.", "answer": "Das ist mein Sohn Eric.", "accepted": ["Das ist Eric, mein Sohn."] }
+      ]
+    }
+  ],
+  "writing": {
+    "task": "Stellen Sie Ihre Familie vor: Wer gehört dazu und wie alt sind die Personen?",
+    "taskEn": "Introduce your family: who is in it, and how old are they?",
+    "wordRange": "25–35 Wörter",
+    "checklist": [
+      { "de": "Nennen Sie mindestens drei Personen.", "en": "Name at least three people." },
+      { "de": "Benutzen Sie mein und meine richtig.", "en": "Use mein and meine correctly." },
+      { "de": "Schreiben Sie ein Alter mit „ist … Jahre alt“.", "en": "Give one age with “ist … Jahre alt” (is … years old)." }
+    ],
+    "modelAnswer": "Meine Familie ist klein. Mein Vater heißt Joseph und ist 52 Jahre alt. Meine Mutter Marie ist Lehrerin. Ich habe einen Bruder. Er heißt David und ist 17. Wir wohnen zusammen in Musanze.",
+    "modelAnswerEn": "My family is small. My father’s name is Joseph and he is 52 years old. My mother Marie is a teacher. I have one brother. His name is David and he is 17. We live together in Musanze."
+  },
+  "speaking": {
+    "task": "Thema: Familie. Stellen Sie mit jedem Wort eine Frage, wie in der Prüfung (Sprechen Teil 2). Beantworten Sie die Frage dann selbst.",
+    "taskEn": "Topic: family. Ask a question with each word, as in the exam (Speaking Part 2). Then answer the question yourself.",
+    "prompts": [
+      { "de": "Karte: Geschwister", "en": "Card: brothers and sisters" },
+      { "de": "Karte: Eltern", "en": "Card: parents" },
+      { "de": "Karte: Kinder", "en": "Card: children" },
+      { "de": "Karte: verheiratet", "en": "Card: married" },
+      { "de": "Karte: Alter", "en": "Card: age" }
+    ],
+    "modelAnswer": "Hast du Geschwister? — Ja, ich habe einen Bruder und zwei Schwestern. Wo wohnen deine Eltern? — Meine Eltern wohnen in Kigali. Hast du Kinder? — Nein, ich habe keine Kinder. Bist du verheiratet? — Nein, ich bin ledig. Wie alt ist dein Bruder? — Er ist zweiundzwanzig.",
+    "modelAnswerEn": "Do you have any brothers or sisters? — Yes, I have one brother and two sisters. Where do your parents live? — My parents live in Kigali. Do you have children? — No, I don’t have any children. Are you married? — No, I am single. How old is your brother? — He is twenty-two."
+  }
+}
