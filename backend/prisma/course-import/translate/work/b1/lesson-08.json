@@ -1,0 +1,887 @@
+{
+ "level": "B1",
+ "lesson": 8,
+ "title": "Berufsfindung — Da ich gern mit Menschen arbeite, …",
+ "lines": [
+  {
+   "de": "Den passenden Beruf finden — Gründe nennen und Abläufe zeitlich ordnen.",
+   "en": "Finding the right job — giving reasons and putting events in time order."
+  },
+  {
+   "de": "eigene Stärken und Berufswünsche begründen",
+   "en": "give reasons for your own strengths and career wishes"
+  },
+  {
+   "de": "Gründe mit da ausdrücken",
+   "en": "express reasons with da (as, since)"
+  },
+  {
+   "de": "Handlungen mit bevor und während zeitlich einordnen",
+   "en": "place actions in time with bevor (before) and während (while)"
+  },
+  {
+   "de": "Grammatik: Konjunktion da (Grund)",
+   "en": "Grammar: the conjunction da (reason)"
+  },
+  {
+   "de": "da leitet wie weil einen Grund ein. Unterschied: da nennt einen Grund, den der Hörer schon kennt oder leicht akzeptiert — deshalb steht der da-Satz meistens vorn. weil nennt eine neue Information und steht oft hinten (und kann allein auf die Frage 'Warum?' antworten).",
+   "en": "Like weil, da introduces a reason. The difference: da gives a reason that the listener already knows or easily accepts — that is why the da clause usually comes first. weil gives new information and often comes at the end (and can answer the question 'Warum?' on its own)."
+  },
+  {
+   "de": "Position",
+   "en": "="
+  },
+  {
+   "de": "da (bekannter Grund)",
+   "en": "da (known reason)"
+  },
+  {
+   "de": "meist vorn",
+   "en": "usually at the start"
+  },
+  {
+   "de": "Da du schon Erfahrung hast, ist die Stelle ideal für dich.",
+   "en": "As you already have experience, the job is ideal for you."
+  },
+  {
+   "de": "weil (neuer Grund)",
+   "en": "weil (new reason)"
+  },
+  {
+   "de": "meist hinten",
+   "en": "usually at the end"
+  },
+  {
+   "de": "Die Stelle ist ideal, weil du schon Erfahrung hast.",
+   "en": "The job is ideal because you already have experience."
+  },
+  {
+   "de": "Antwort auf 'Warum?'",
+   "en": "Answer to 'Warum?' (Why?)"
+  },
+  {
+   "de": "nur weil",
+   "en": "only weil"
+  },
+  {
+   "de": "Warum? — Weil ich gern draußen arbeite.",
+   "en": "Why? — Because I like working outdoors."
+  },
+  {
+   "de": "Da ich sehr gern organisiere, passt ein Büroberuf gut zu mir.Nebensatz vorn, Verb am Ende",
+   "en": "As I really enjoy organising, an office job suits me well. (subordinate clause first, verb at the end)"
+  },
+  {
+   "de": "Da die Bewerbungsfrist abgelaufen ist, musst du bis nächstes Jahr warten.Grund ist beiden bekannt",
+   "en": "As the application deadline has passed, you'll have to wait until next year. (both people know the reason)"
+  },
+  {
+   "de": "Tipp: da klingt etwas formeller als weil und passt gut in Bewerbungen und Berichte.",
+   "en": "Tip: da sounds a little more formal than weil and fits well in applications and reports."
+  },
+  {
+   "de": "Grammatik: bevor und während",
+   "en": "Grammar: bevor (before) and während (while)"
+  },
+  {
+   "de": "Beide Konjunktionen leiten temporale Nebensätze ein (Verb am Ende). bevor: Handlung A liegt zeitlich vor Handlung B. während: beide Handlungen laufen gleichzeitig.",
+   "en": "Both conjunctions introduce time clauses (verb at the end). bevor: action A happens before action B. während: both actions happen at the same time."
+  },
+  {
+   "de": "Zeitverhältnis",
+   "en": "Time relation"
+  },
+  {
+   "de": "bevor",
+   "en": "before"
+  },
+  {
+   "de": "A vor B",
+   "en": "A before B"
+  },
+  {
+   "de": "Bevor ich mich bewerbe, informiere ich mich über die Firma.",
+   "en": "Before I apply, I find out about the company."
+  },
+  {
+   "de": "während",
+   "en": "while"
+  },
+  {
+   "de": "A und B gleichzeitig",
+   "en": "A and B at the same time"
+  },
+  {
+   "de": "Während ich studierte, arbeitete ich als Kellner.",
+   "en": "While I was studying, I worked as a waiter."
+  },
+  {
+   "de": "nachdem",
+   "en": "after"
+  },
+  {
+   "de": "A nach B (siehe Lektion 11)",
+   "en": "A after B (see Lesson 11)"
+  },
+  {
+   "de": "Nachdem ich das Praktikum beendet hatte, bekam ich eine Zusage.",
+   "en": "After I had finished the internship, I got a job offer."
+  },
+  {
+   "de": "Während sie telefonierte, notierte er alle wichtigen Daten.beide Handlungen gleichzeitig",
+   "en": "While she was on the phone, he noted down all the important details. (both actions at the same time)"
+  },
+  {
+   "de": "Bevor du unterschreibst, lies den Vertrag genau durch.Reihenfolge: erst lesen, dann unterschreiben",
+   "en": "Before you sign, read the contract carefully. (order: read first, then sign)"
+  },
+  {
+   "de": "Tipp: während kann auch einen Gegensatz ausdrücken: Während mein Bruder gern redet, höre ich lieber zu.",
+   "en": "Tip: während can also express a contrast: While my brother likes talking, I prefer to listen."
+  },
+  {
+   "de": "die Stärke, -n — EN: strength · FR: le point fortMeine größte Stärke ist meine Geduld.",
+   "en": "Example: My greatest strength is my patience."
+  },
+  {
+   "de": "die Schwäche, -n — EN: weakness · FR: la faiblesseUngeduld ist eine Schwäche von mir.",
+   "en": "Example: Impatience is one of my weaknesses."
+  },
+  {
+   "de": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceFür diesen Beruf braucht man organisatorische Fähigkeiten.",
+   "en": "Example: For this job you need organisational skills."
+  },
+  {
+   "de": "geeignet sein für — EN: to be suitable for · FR: être adapté àDieser Beruf ist gut für dich geeignet.",
+   "en": "Example: This job is well suited to you."
+  },
+  {
+   "de": "der Ausbildungsberuf, -e — EN: apprenticeship occupation · FR: le métier en apprentissageEs gibt über 300 Ausbildungsberufe.",
+   "en": "Example: There are over 300 apprenticeship occupations."
+  },
+  {
+   "de": "das Praktikum, Praktika — EN: internship · FR: le stageWährend des Studiums machte sie zwei Praktika.",
+   "en": "Example: During her studies she did two internships."
+  },
+  {
+   "de": "die Berufsberatung, -en — EN: careers guidance · FR: l'orientation professionnelleDie Berufsberatung hat mir sehr geholfen.",
+   "en": "Example: The careers guidance helped me a lot."
+  },
+  {
+   "de": "sich orientieren — EN: to get one's bearings · FR: s'orienterIch muss mich beruflich neu orientieren.",
+   "en": "Example: I need to find a new direction in my career."
+  },
+  {
+   "de": "der Verdienst (Sg.) — EN: earnings · FR: le salaireDer Verdienst ist am Anfang niedrig.",
+   "en": "Example: Pay is low at the start."
+  },
+  {
+   "de": "abwechslungsreich — EN: varied · FR: variéDie Arbeit ist sehr abwechslungsreich.",
+   "en": "Example: The work is very varied."
+  },
+  {
+   "de": "der Schreibtisch, -e — EN: desk · FR: le bureau (meuble)Ich sitze nicht gern den ganzen Tag am Schreibtisch.",
+   "en": "Example: I don't like sitting at a desk all day."
+  },
+  {
+   "de": "sich vorstellen (etwas) — EN: to imagine sth. · FR: s'imaginer qc.Ich kann mir gut vorstellen, im Ausland zu arbeiten.",
+   "en": "Example: I can easily imagine working abroad."
+  },
+  {
+   "de": "Interessen begründen",
+   "en": "explaining your interests"
+  },
+  {
+   "de": "Da ich gern mit Menschen zu tun habe, …",
+   "en": "As I enjoy dealing with people, …"
+  },
+  {
+   "de": "Mir liegt besonders …",
+   "en": "I'm particularly good at …"
+  },
+  {
+   "de": "Was mir Spaß macht, ist …",
+   "en": "What I enjoy is …"
+  },
+  {
+   "de": "Abläufe schildern",
+   "en": "describing a sequence of events"
+  },
+  {
+   "de": "Bevor ich mich entschieden habe, habe ich …",
+   "en": "Before I decided, I …"
+  },
+  {
+   "de": "Während meiner Ausbildung habe ich …",
+   "en": "During my training I …"
+  },
+  {
+   "de": "Im Anschluss daran …",
+   "en": "Following that, …"
+  },
+  {
+   "de": "abwägen",
+   "en": "weighing things up"
+  },
+  {
+   "de": "Dafür spricht, dass …",
+   "en": "One argument for it is that …"
+  },
+  {
+   "de": "Dagegen spricht allerdings …",
+   "en": "However, one argument against it is …"
+  },
+  {
+   "de": "Letztlich war für mich entscheidend, dass …",
+   "en": "In the end, the deciding factor for me was that …"
+  },
+  {
+   "de": "Meine größte Stärke ist meine Geduld.",
+   "en": "My greatest strength is my patience."
+  },
+  {
+   "de": "Ungeduld ist eine Schwäche von mir.",
+   "en": "Impatience is one of my weaknesses."
+  },
+  {
+   "de": "Für diesen Beruf braucht man organisatorische Fähigkeiten.",
+   "en": "For this job you need organisational skills."
+  },
+  {
+   "de": "Dieser Beruf ist gut für dich geeignet.",
+   "en": "This job is well suited to you."
+  },
+  {
+   "de": "Es gibt über 300 Ausbildungsberufe.",
+   "en": "There are over 300 apprenticeship occupations."
+  },
+  {
+   "de": "Während des Studiums machte sie zwei Praktika.",
+   "en": "During her studies she did two internships."
+  },
+  {
+   "de": "Die Berufsberatung hat mir sehr geholfen.",
+   "en": "The careers guidance helped me a lot."
+  },
+  {
+   "de": "Ich muss mich beruflich neu orientieren.",
+   "en": "I need to find a new direction in my career."
+  },
+  {
+   "de": "Der Verdienst ist am Anfang niedrig.",
+   "en": "Pay is low at the start."
+  },
+  {
+   "de": "Die Arbeit ist sehr abwechslungsreich.",
+   "en": "The work is very varied."
+  },
+  {
+   "de": "Ich sitze nicht gern den ganzen Tag am Schreibtisch.",
+   "en": "I don't like sitting at a desk all day."
+  },
+  {
+   "de": "Ich kann mir gut vorstellen, im Ausland zu arbeiten.",
+   "en": "I can easily imagine working abroad."
+  },
+  {
+   "de": "___ ich sehr gern reise, suche ich einen Job in der Tourismusbranche.",
+   "en": "___ I love travelling, I'm looking for a job in the tourism industry."
+  },
+  {
+   "de": "___ ich zur Arbeit fahre, höre ich meistens Podcasts.",
+   "en": "___ I drive to work, I usually listen to podcasts."
+  },
+  {
+   "de": "___ du den Vertrag unterschreibst, solltest du ihn genau lesen.",
+   "en": "___ you sign the contract, you should read it carefully."
+  },
+  {
+   "de": "Auf die Frage „Warum willst du das machen?“ antwortet man mit:",
+   "en": "To the question “Why do you want to do that?” you answer with:"
+  },
+  {
+   "de": "___ meine Kollegin im Urlaub war, habe ich ihre Aufgaben übernommen.",
+   "en": "___ my colleague was on holiday, I took over her tasks."
+  },
+  {
+   "de": "Grund am Satzanfang → da (weil ist ebenfalls möglich).",
+   "en": "Reason at the start of the sentence → da (weil is also possible)."
+  },
+  {
+   "de": "Beide Handlungen laufen gleichzeitig.",
+   "en": "Both actions happen at the same time."
+  },
+  {
+   "de": "Das Lesen kommt zeitlich vor dem Unterschreiben.",
+   "en": "The reading comes before the signing."
+  },
+  {
+   "de": "Nur weil kann allein auf eine Warum-Frage antworten.",
+   "en": "Only weil can answer a 'warum' question on its own."
+  },
+  {
+   "de": "Gleichzeitigkeit über einen Zeitraum.",
+   "en": "Two things happening at the same time over a period."
+  }
+ ],
+ "forms": [
+  {
+   "form": "passenden",
+   "context": "Den passenden Beruf finden — Gründe nennen und Abläufe zeitlich ordnen.",
+   "en": "suitable, right",
+   "lemma": "passend"
+  },
+  {
+   "form": "Abläufe",
+   "context": "Den passenden Beruf finden — Gründe nennen und Abläufe zeitlich ordnen.",
+   "en": "sequences, processes",
+   "lemma": "der Ablauf"
+  },
+  {
+   "form": "ordnen",
+   "context": "Den passenden Beruf finden — Gründe nennen und Abläufe zeitlich ordnen.",
+   "en": "to put in order",
+   "lemma": ""
+  },
+  {
+   "form": "Stärken",
+   "context": "eigene Stärken und Berufswünsche begründen",
+   "en": "strengths",
+   "lemma": "die Stärke"
+  },
+  {
+   "form": "begründen",
+   "context": "eigene Stärken und Berufswünsche begründen",
+   "en": "to give reasons for",
+   "lemma": ""
+  },
+  {
+   "form": "bevor",
+   "context": "Handlungen mit bevor und während zeitlich einordnen",
+   "en": "before",
+   "lemma": ""
+  },
+  {
+   "form": "während",
+   "context": "Handlungen mit bevor und während zeitlich einordnen",
+   "en": "while; during",
+   "lemma": ""
+  },
+  {
+   "form": "einordnen",
+   "context": "Handlungen mit bevor und während zeitlich einordnen",
+   "en": "to place, classify",
+   "lemma": ""
+  },
+  {
+   "form": "Hörer",
+   "context": "da leitet wie weil einen Grund ein. Unterschied: da nennt einen Grund, den der Hörer schon kennt oder leicht akzeptiert — deshalb steht der da-Satz meistens vorn. weil nennt eine neue Information und steht oft hinten (und kann allein auf die Frage 'Warum?' antworten).",
+   "en": "listener; (phone) receiver",
+   "lemma": "der Hörer"
+  },
+  {
+   "form": "akzeptiert",
+   "context": "da leitet wie weil einen Grund ein. Unterschied: da nennt einen Grund, den der Hörer schon kennt oder leicht akzeptiert — deshalb steht der da-Satz meistens vorn. weil nennt eine neue Information und steht oft hinten (und kann allein auf die Frage 'Warum?' antworten).",
+   "en": "accepts",
+   "lemma": "akzeptieren"
+  },
+  {
+   "form": "da-Satz",
+   "context": "da leitet wie weil einen Grund ein. Unterschied: da nennt einen Grund, den der Hörer schon kennt oder leicht akzeptiert — deshalb steht der da-Satz meistens vorn. weil nennt eine neue Information und steht oft hinten (und kann allein auf die Frage 'Warum?' antworten).",
+   "en": "da clause",
+   "lemma": "der da-Satz"
+  },
+  {
+   "form": "bekannter",
+   "context": "da (bekannter Grund)",
+   "en": "known",
+   "lemma": "bekannt"
+  },
+  {
+   "form": "ideal",
+   "context": "Da du schon Erfahrung hast, ist die Stelle ideal für dich.",
+   "en": "ideal",
+   "lemma": ""
+  },
+  {
+   "form": "neuer",
+   "context": "weil (neuer Grund)",
+   "en": "new",
+   "lemma": "neu"
+  },
+  {
+   "form": "organisiere",
+   "context": "Da ich sehr gern organisiere, passt ein Büroberuf gut zu mir.Nebensatz vorn, Verb am Ende",
+   "en": "organise",
+   "lemma": "organisieren"
+  },
+  {
+   "form": "Büroberuf",
+   "context": "Da ich sehr gern organisiere, passt ein Büroberuf gut zu mir.Nebensatz vorn, Verb am Ende",
+   "en": "office job",
+   "lemma": "der Büroberuf"
+  },
+  {
+   "form": "Bewerbungsfrist",
+   "context": "Da die Bewerbungsfrist abgelaufen ist, musst du bis nächstes Jahr warten.Grund ist beiden bekannt",
+   "en": "application deadline",
+   "lemma": "die Bewerbungsfrist"
+  },
+  {
+   "form": "abgelaufen",
+   "context": "Da die Bewerbungsfrist abgelaufen ist, musst du bis nächstes Jahr warten.Grund ist beiden bekannt",
+   "en": "expired, passed",
+   "lemma": "ablaufen"
+  },
+  {
+   "form": "bekannt",
+   "context": "Da die Bewerbungsfrist abgelaufen ist, musst du bis nächstes Jahr warten.Grund ist beiden bekannt",
+   "en": "known; well-known",
+   "lemma": ""
+  },
+  {
+   "form": "formeller",
+   "context": "Tipp: da klingt etwas formeller als weil und passt gut in Bewerbungen und Berichte.",
+   "en": "more formal",
+   "lemma": "formell"
+  },
+  {
+   "form": "Bewerbungen",
+   "context": "Tipp: da klingt etwas formeller als weil und passt gut in Bewerbungen und Berichte.",
+   "en": "applications",
+   "lemma": "die Bewerbung"
+  },
+  {
+   "form": "Berichte",
+   "context": "Tipp: da klingt etwas formeller als weil und passt gut in Bewerbungen und Berichte.",
+   "en": "reports",
+   "lemma": "der Bericht"
+  },
+  {
+   "form": "Nebensätze",
+   "context": "Beide Konjunktionen leiten temporale Nebensätze ein (Verb am Ende). bevor: Handlung A liegt zeitlich vor Handlung B. während: beide Handlungen laufen gleichzeitig.",
+   "en": "subordinate clauses",
+   "lemma": "der Nebensatz"
+  },
+  {
+   "form": "Zeitverhältnis",
+   "context": "Zeitverhältnis",
+   "en": "time relation",
+   "lemma": "das Zeitverhältnis"
+  },
+  {
+   "form": "Bevor",
+   "context": "Bevor ich mich bewerbe, informiere ich mich über die Firma.",
+   "en": "before",
+   "lemma": ""
+  },
+  {
+   "form": "bewerbe",
+   "context": "Bevor ich mich bewerbe, informiere ich mich über die Firma.",
+   "en": "apply",
+   "lemma": "sich bewerben"
+  },
+  {
+   "form": "informiere",
+   "context": "Bevor ich mich bewerbe, informiere ich mich über die Firma.",
+   "en": "find out (with mich); inform",
+   "lemma": "sich informieren"
+  },
+  {
+   "form": "Während",
+   "context": "Während ich studierte, arbeitete ich als Kellner.",
+   "en": "while; during",
+   "lemma": ""
+  },
+  {
+   "form": "studierte",
+   "context": "Während ich studierte, arbeitete ich als Kellner.",
+   "en": "studied, was studying",
+   "lemma": "studieren"
+  },
+  {
+   "form": "nachdem",
+   "context": "nachdem",
+   "en": "after",
+   "lemma": ""
+  },
+  {
+   "form": "siehe",
+   "context": "A nach B (siehe Lektion 11)",
+   "en": "see",
+   "lemma": "sehen"
+  },
+  {
+   "form": "Nachdem",
+   "context": "Nachdem ich das Praktikum beendet hatte, bekam ich eine Zusage.",
+   "en": "after",
+   "lemma": ""
+  },
+  {
+   "form": "beendet",
+   "context": "Nachdem ich das Praktikum beendet hatte, bekam ich eine Zusage.",
+   "en": "finished, completed",
+   "lemma": "beenden"
+  },
+  {
+   "form": "Zusage",
+   "context": "Nachdem ich das Praktikum beendet hatte, bekam ich eine Zusage.",
+   "en": "acceptance, offer",
+   "lemma": "die Zusage"
+  },
+  {
+   "form": "telefonierte",
+   "context": "Während sie telefonierte, notierte er alle wichtigen Daten.beide Handlungen gleichzeitig",
+   "en": "was on the phone",
+   "lemma": "telefonieren"
+  },
+  {
+   "form": "notierte",
+   "context": "Während sie telefonierte, notierte er alle wichtigen Daten.beide Handlungen gleichzeitig",
+   "en": "noted down",
+   "lemma": "notieren"
+  },
+  {
+   "form": "wichtigen",
+   "context": "Während sie telefonierte, notierte er alle wichtigen Daten.beide Handlungen gleichzeitig",
+   "en": "important",
+   "lemma": "wichtig"
+  },
+  {
+   "form": "Daten",
+   "context": "Während sie telefonierte, notierte er alle wichtigen Daten.beide Handlungen gleichzeitig",
+   "en": "details, data",
+   "lemma": "die Daten"
+  },
+  {
+   "form": "unterschreibst",
+   "context": "Bevor du unterschreibst, lies den Vertrag genau durch.Reihenfolge: erst lesen, dann unterschreiben",
+   "en": "sign (with du)",
+   "lemma": "unterschreiben"
+  },
+  {
+   "form": "redet",
+   "context": "Tipp: während kann auch einen Gegensatz ausdrücken: Während mein Bruder gern redet, höre ich lieber zu.",
+   "en": "talks",
+   "lemma": "reden"
+  },
+  {
+   "form": "Stärke",
+   "context": "die Stärke, -n — EN: strength · FR: le point fortMeine größte Stärke ist meine Geduld.",
+   "en": "strength",
+   "lemma": "die Stärke"
+  },
+  {
+   "form": "strength",
+   "context": "die Stärke, -n — EN: strength · FR: le point fortMeine größte Stärke ist meine Geduld.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "point",
+   "context": "die Stärke, -n — EN: strength · FR: le point fortMeine größte Stärke ist meine Geduld.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fortMeine",
+   "context": "die Stärke, -n — EN: strength · FR: le point fortMeine größte Stärke ist meine Geduld.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Schwäche",
+   "context": "die Schwäche, -n — EN: weakness · FR: la faiblesseUngeduld ist eine Schwäche von mir.",
+   "en": "weakness",
+   "lemma": "die Schwäche"
+  },
+  {
+   "form": "weakness",
+   "context": "die Schwäche, -n — EN: weakness · FR: la faiblesseUngeduld ist eine Schwäche von mir.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "faiblesseUngeduld",
+   "context": "die Schwäche, -n — EN: weakness · FR: la faiblesseUngeduld ist eine Schwäche von mir.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "compétenceFür",
+   "context": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceFür diesen Beruf braucht man organisatorische Fähigkeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "organisatorische",
+   "context": "die Fähigkeit, -en — EN: ability, skill · FR: la compétenceFür diesen Beruf braucht man organisatorische Fähigkeiten.",
+   "en": "organisational",
+   "lemma": "organisatorisch"
+  },
+  {
+   "form": "geeignet",
+   "context": "geeignet sein für — EN: to be suitable for · FR: être adapté àDieser Beruf ist gut für dich geeignet.",
+   "en": "suitable",
+   "lemma": ""
+  },
+  {
+   "form": "suitable",
+   "context": "geeignet sein für — EN: to be suitable for · FR: être adapté àDieser Beruf ist gut für dich geeignet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "adapté",
+   "context": "geeignet sein für — EN: to be suitable for · FR: être adapté àDieser Beruf ist gut für dich geeignet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "àDieser",
+   "context": "geeignet sein für — EN: to be suitable for · FR: être adapté àDieser Beruf ist gut für dich geeignet.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Ausbildungsberuf",
+   "context": "der Ausbildungsberuf, -e — EN: apprenticeship occupation · FR: le métier en apprentissageEs gibt über 300 Ausbildungsberufe.",
+   "en": "apprenticeship occupation",
+   "lemma": "der Ausbildungsberuf"
+  },
+  {
+   "form": "apprenticeship",
+   "context": "der Ausbildungsberuf, -e — EN: apprenticeship occupation · FR: le métier en apprentissageEs gibt über 300 Ausbildungsberufe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "occupation",
+   "context": "der Ausbildungsberuf, -e — EN: apprenticeship occupation · FR: le métier en apprentissageEs gibt über 300 Ausbildungsberufe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "métier",
+   "context": "der Ausbildungsberuf, -e — EN: apprenticeship occupation · FR: le métier en apprentissageEs gibt über 300 Ausbildungsberufe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "apprentissageEs",
+   "context": "der Ausbildungsberuf, -e — EN: apprenticeship occupation · FR: le métier en apprentissageEs gibt über 300 Ausbildungsberufe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Ausbildungsberufe",
+   "context": "der Ausbildungsberuf, -e — EN: apprenticeship occupation · FR: le métier en apprentissageEs gibt über 300 Ausbildungsberufe.",
+   "en": "apprenticeship occupations",
+   "lemma": "der Ausbildungsberuf"
+  },
+  {
+   "form": "stageWährend",
+   "context": "das Praktikum, Praktika — EN: internship · FR: le stageWährend des Studiums machte sie zwei Praktika.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Studiums",
+   "context": "das Praktikum, Praktika — EN: internship · FR: le stageWährend des Studiums machte sie zwei Praktika.",
+   "en": "(university) studies",
+   "lemma": "das Studium"
+  },
+  {
+   "form": "Berufsberatung",
+   "context": "die Berufsberatung, -en — EN: careers guidance · FR: l'orientation professionnelleDie Berufsberatung hat mir sehr geholfen.",
+   "en": "careers guidance",
+   "lemma": "die Berufsberatung"
+  },
+  {
+   "form": "careers",
+   "context": "die Berufsberatung, -en — EN: careers guidance · FR: l'orientation professionnelleDie Berufsberatung hat mir sehr geholfen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "guidance",
+   "context": "die Berufsberatung, -en — EN: careers guidance · FR: l'orientation professionnelleDie Berufsberatung hat mir sehr geholfen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'orientation",
+   "context": "die Berufsberatung, -en — EN: careers guidance · FR: l'orientation professionnelleDie Berufsberatung hat mir sehr geholfen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "professionnelleDie",
+   "context": "die Berufsberatung, -en — EN: careers guidance · FR: l'orientation professionnelleDie Berufsberatung hat mir sehr geholfen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "orientieren",
+   "context": "sich orientieren — EN: to get one's bearings · FR: s'orienterIch muss mich beruflich neu orientieren.",
+   "en": "find one's way, orient",
+   "lemma": "sich orientieren"
+  },
+  {
+   "form": "one's",
+   "context": "sich orientieren — EN: to get one's bearings · FR: s'orienterIch muss mich beruflich neu orientieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bearings",
+   "context": "sich orientieren — EN: to get one's bearings · FR: s'orienterIch muss mich beruflich neu orientieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'orienterIch",
+   "context": "sich orientieren — EN: to get one's bearings · FR: s'orienterIch muss mich beruflich neu orientieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Verdienst",
+   "context": "der Verdienst (Sg.) — EN: earnings · FR: le salaireDer Verdienst ist am Anfang niedrig.",
+   "en": "earnings, pay",
+   "lemma": "der Verdienst"
+  },
+  {
+   "form": "earnings",
+   "context": "der Verdienst (Sg.) — EN: earnings · FR: le salaireDer Verdienst ist am Anfang niedrig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "salaireDer",
+   "context": "der Verdienst (Sg.) — EN: earnings · FR: le salaireDer Verdienst ist am Anfang niedrig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "niedrig",
+   "context": "der Verdienst (Sg.) — EN: earnings · FR: le salaireDer Verdienst ist am Anfang niedrig.",
+   "en": "low",
+   "lemma": ""
+  },
+  {
+   "form": "abwechslungsreich",
+   "context": "abwechslungsreich — EN: varied · FR: variéDie Arbeit ist sehr abwechslungsreich.",
+   "en": "varied",
+   "lemma": ""
+  },
+  {
+   "form": "varied",
+   "context": "abwechslungsreich — EN: varied · FR: variéDie Arbeit ist sehr abwechslungsreich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "variéDie",
+   "context": "abwechslungsreich — EN: varied · FR: variéDie Arbeit ist sehr abwechslungsreich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Schreibtisch",
+   "context": "der Schreibtisch, -e — EN: desk · FR: le bureau (meuble)Ich sitze nicht gern den ganzen Tag am Schreibtisch.",
+   "en": "desk",
+   "lemma": "der Schreibtisch"
+  },
+  {
+   "form": "desk",
+   "context": "der Schreibtisch, -e — EN: desk · FR: le bureau (meuble)Ich sitze nicht gern den ganzen Tag am Schreibtisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bureau",
+   "context": "der Schreibtisch, -e — EN: desk · FR: le bureau (meuble)Ich sitze nicht gern den ganzen Tag am Schreibtisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "meuble",
+   "context": "der Schreibtisch, -e — EN: desk · FR: le bureau (meuble)Ich sitze nicht gern den ganzen Tag am Schreibtisch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sitze",
+   "context": "der Schreibtisch, -e — EN: desk · FR: le bureau (meuble)Ich sitze nicht gern den ganzen Tag am Schreibtisch.",
+   "en": "sit",
+   "lemma": "sitzen"
+  },
+  {
+   "form": "imagine",
+   "context": "sich vorstellen (etwas) — EN: to imagine sth. · FR: s'imaginer qc.Ich kann mir gut vorstellen, im Ausland zu arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "sth",
+   "context": "sich vorstellen (etwas) — EN: to imagine sth. · FR: s'imaginer qc.Ich kann mir gut vorstellen, im Ausland zu arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'imaginer",
+   "context": "sich vorstellen (etwas) — EN: to imagine sth. · FR: s'imaginer qc.Ich kann mir gut vorstellen, im Ausland zu arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "qc",
+   "context": "sich vorstellen (etwas) — EN: to imagine sth. · FR: s'imaginer qc.Ich kann mir gut vorstellen, im Ausland zu arbeiten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Anschluss",
+   "context": "Im Anschluss daran …",
+   "en": "connection; im Anschluss = afterwards",
+   "lemma": "der Anschluss"
+  },
+  {
+   "form": "abwägen",
+   "context": "abwägen",
+   "en": "to weigh up",
+   "lemma": ""
+  },
+  {
+   "form": "Letztlich",
+   "context": "Letztlich war für mich entscheidend, dass …",
+   "en": "in the end, ultimately",
+   "lemma": ""
+  },
+  {
+   "form": "entscheidend",
+   "context": "Letztlich war für mich entscheidend, dass …",
+   "en": "decisive, crucial",
+   "lemma": ""
+  },
+  {
+   "form": "Ungeduld",
+   "context": "Ungeduld ist eine Schwäche von mir.",
+   "en": "impatience",
+   "lemma": "die Ungeduld"
+  },
+  {
+   "form": "Tourismusbranche",
+   "context": "___ ich sehr gern reise, suche ich einen Job in der Tourismusbranche.",
+   "en": "tourism industry",
+   "lemma": "die Tourismusbranche"
+  },
+  {
+   "form": "Podcasts",
+   "context": "___ ich zur Arbeit fahre, höre ich meistens Podcasts.",
+   "en": "podcasts",
+   "lemma": "der Podcast"
+  }
+ ]
+}
