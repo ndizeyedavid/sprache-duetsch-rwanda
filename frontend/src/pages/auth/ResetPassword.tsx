@@ -1,6 +1,7 @@
 import type { FormEvent } from 'react';
 import { useState } from 'react';
 import { Link,useSearchParams } from 'react-router-dom';
+import { PasswordField } from '../../components/auth/PasswordField';
 import { apiErrorMessage,apiPost } from '../../lib/api';
 
 export function ResetPassword() {
@@ -27,8 +28,8 @@ export function ResetPassword() {
     <h1 className="text-xl font-semibold sm:text-2xl">{setup ? 'Verify your email & set your password' : 'Choose a new password'}</h1>
     {setup && !done ? <p className="mt-3 text-sm text-base-content/70">Choose a password to confirm your email and finish setting up your student portal account. Course approval and enrollment are handled separately by admissions.</p> : null}
     {done ? <div className="mt-5 space-y-4"><div role="status" className="alert alert-success alert-soft">{setup ? 'Email verified. Your account is ready — you can sign in now.' : 'Password updated. You can sign in now.'}</div><Link className="btn btn-primary w-full" to="/login">Sign in</Link></div> : <form className="mt-6 space-y-4" onSubmit={submit}>
-      <label className="block"><span className="mb-1.5 block text-xs font-medium">New password</span><input className="input w-full" type="password" minLength={8} maxLength={128} required autoComplete="new-password" value={password} onChange={e => setPassword(e.currentTarget.value)} /></label>
-      <label className="block"><span className="mb-1.5 block text-xs font-medium">Confirm password</span><input className="input w-full" type="password" minLength={8} maxLength={128} required autoComplete="new-password" value={confirm} onChange={e => setConfirm(e.currentTarget.value)} /></label>
+      <PasswordField label="New password" minLength={8} maxLength={128} value={password} onChange={setPassword} />
+      <PasswordField label="Confirm password" minLength={8} maxLength={128} value={confirm} onChange={setConfirm} />
       {error ? <div role="alert" className="alert alert-error alert-soft text-sm">{error}</div> : null}
       <button className="btn btn-primary w-full" disabled={busy}>{busy ? 'Saving…' : setup ? 'Verify email & create password' : 'Update password'}</button>
       <Link className="link link-primary block text-center text-sm" to="/forgot-password">Request a new reset link</Link>
