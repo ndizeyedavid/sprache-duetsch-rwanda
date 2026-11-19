@@ -1,0 +1,901 @@
+{
+ "level": "A2",
+ "lesson": 1,
+ "title": "Berufe und Familie — Unser Opa war auch schon Bäcker",
+ "lines": [
+  {
+   "de": "Über Berufe in der Familie sprechen und eine Familiengeschichte erzählen.",
+   "en": "Talk about jobs in the family and tell a family story."
+  },
+  {
+   "de": "Textsorte: Gespräch · Familiengeschichte",
+   "en": "Text type: Conversation · Family story"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Sprechen Teil 1 (über sich erzählen); telc A2 Sprechen",
+   "en": "Exam link: Goethe A2 Speaking part 1 (talking about yourself); telc A2 Speaking"
+  },
+  {
+   "de": "über Berufe in der Familie sprechen",
+   "en": "talk about jobs in the family"
+  },
+  {
+   "de": "die Possessivartikel unser und euer richtig verwenden",
+   "en": "use the possessive articles (Possessivartikel) unser and euer correctly"
+  },
+  {
+   "de": "eine Geschichte in der Vergangenheit erzählen (Perfekt und Präteritum)",
+   "en": "tell a story in the past: present perfect (Perfekt) and simple past (Präteritum)"
+  },
+  {
+   "de": "Grammatik: Possessivartikel unser und euer",
+   "en": "Grammar: the possessive articles (Possessivartikel) unser (our) and euer (your, plural)"
+  },
+  {
+   "de": "unser und euer bekommen dieselben Endungen wie mein und dein. Achtung bei euer: Wenn eine Endung dazukommt, fällt das e weg — euer Vater, aber eure Mutter.",
+   "en": "unser and euer take the same endings as mein and dein. Careful with euer: when an ending is added, the e drops out — euer Vater (your father), but eure Mutter (your mother)."
+  },
+  {
+   "de": "unser Opa",
+   "en": "our grandpa"
+  },
+  {
+   "de": "unser Kind",
+   "en": "our child"
+  },
+  {
+   "de": "unsere Oma",
+   "en": "our grandma"
+  },
+  {
+   "de": "unsere Eltern",
+   "en": "our parents"
+  },
+  {
+   "de": "unseren Opa",
+   "en": "our grandpa"
+  },
+  {
+   "de": "unserem Opa",
+   "en": "our grandpa"
+  },
+  {
+   "de": "unserem Kind",
+   "en": "our child"
+  },
+  {
+   "de": "unserer Oma",
+   "en": "our grandma"
+  },
+  {
+   "de": "unseren Eltern",
+   "en": "our parents"
+  },
+  {
+   "de": "euer →",
+   "en": "euer (your, plural) →"
+  },
+  {
+   "de": "euer Opa",
+   "en": "your grandpa"
+  },
+  {
+   "de": "euer Kind",
+   "en": "your child"
+  },
+  {
+   "de": "eure Oma",
+   "en": "your grandma"
+  },
+  {
+   "de": "eure Eltern",
+   "en": "your parents"
+  },
+  {
+   "de": "Unser Großvater hatte eine kleine Bäckerei.Nominativ maskulin: unser ohne Endung",
+   "en": "Our grandfather had a small bakery. Nominative masculine: unser without an ending"
+  },
+  {
+   "de": "Wir besuchen unsere Tante jeden Sonntag.Akkusativ feminin: unsere",
+   "en": "We visit our aunt every Sunday. Accusative feminine: unsere"
+  },
+  {
+   "de": "Wie geht es eurer Mutter?Dativ feminin: eurer — das e von euer fällt weg",
+   "en": "How is your mother? Dative feminine: eurer — the e of euer drops out"
+  },
+  {
+   "de": "Tipp: Merken Sie sich: euer + Endung → eure, euren, eurem, eurer. Ohne Endung bleibt es euer.",
+   "en": "Tip: Remember: euer + ending → eure, euren, eurem, eurer. Without an ending it stays euer."
+  },
+  {
+   "de": "Grammatik: Perfekt oder Präteritum?",
+   "en": "Grammar: present perfect (Perfekt) or simple past (Präteritum)?"
+  },
+  {
+   "de": "Wenn Sie über die Vergangenheit sprechen, benutzen Sie meistens das Perfekt. Bei sein, haben und den Modalverben benutzt man aber fast immer das Präteritum — das ist kürzer und klingt natürlicher.",
+   "en": "When you talk about the past, you usually use the present perfect (Perfekt). But with sein, haben and the modal verbs, people almost always use the simple past (Präteritum) — it is shorter and sounds more natural."
+  },
+  {
+   "de": "Form in der Vergangenheit",
+   "en": "Form in the past"
+  },
+  {
+   "de": "die meisten Verben",
+   "en": "most verbs"
+  },
+  {
+   "de": "Perfekt: haben/sein + Partizip",
+   "en": "Present perfect (Perfekt): haben/sein + past participle"
+  },
+  {
+   "de": "Mein Vater hat als Bäcker gearbeitet.",
+   "en": "My father worked as a baker."
+  },
+  {
+   "de": "sein",
+   "en": "to be"
+  },
+  {
+   "de": "Präteritum: war",
+   "en": "Simple past (Präteritum): war (was)"
+  },
+  {
+   "de": "Mein Opa war auch Bäcker.",
+   "en": "My grandpa was a baker too."
+  },
+  {
+   "de": "haben",
+   "en": "to have"
+  },
+  {
+   "de": "Präteritum: hatte",
+   "en": "Simple past (Präteritum): hatte (had)"
+  },
+  {
+   "de": "Wir hatten damals kein Auto.",
+   "en": "We didn't have a car back then."
+  },
+  {
+   "de": "Modalverben",
+   "en": "Modal verbs"
+  },
+  {
+   "de": "Präteritum: konnte, musste, wollte",
+   "en": "Simple past (Präteritum): konnte, musste, wollte (could, had to, wanted to)"
+  },
+  {
+   "de": "Ich musste jeden Morgen um vier aufstehen.",
+   "en": "I had to get up at four every morning."
+  },
+  {
+   "de": "Früher war das Leben härter, aber wir waren zufrieden.sein → war",
+   "en": "In the past, life was harder, but we were content. sein → war"
+  },
+  {
+   "de": "Meine Mutter hat in der Backstube geholfen.Perfekt mit haben",
+   "en": "My mother helped in the bakery. Present perfect with haben"
+  },
+  {
+   "de": "Als Kind wollte ich Pilotin werden.Modalverb im Präteritum",
+   "en": "As a child, I wanted to become a pilot. Modal verb in the simple past"
+  },
+  {
+   "de": "Tipp: Nicht sagen: „Ich habe müde gewesen.\" Richtig ist: „Ich war müde.\"",
+   "en": "Tip: Don't say \"Ich habe müde gewesen.\" The correct form is \"Ich war müde.\" (I was tired.)"
+  },
+  {
+   "de": "der Beruf, -e — EN: job, profession · FR: le métierWas ist dein Beruf?",
+   "en": "Example: What is your job?"
+  },
+  {
+   "de": "der Bäcker, - / die Bäckerin, -nen — EN: baker · FR: le boulanger / la boulangèreMein Opa war Bäcker.",
+   "en": "Example: My grandpa was a baker."
+  },
+  {
+   "de": "die Großeltern (Pl.) — EN: grandparents · FR: les grands-parentsMeine Großeltern wohnen auf dem Land.",
+   "en": "Example: My grandparents live in the countryside."
+  },
+  {
+   "de": "der Verwandte, -n — EN: relative · FR: le parent (de la famille)Wir haben viele Verwandte in Deutschland.",
+   "en": "Example: We have a lot of relatives in Germany."
+  },
+  {
+   "de": "die Geschichte, -n — EN: story; history · FR: l'histoireErzähl mir die Geschichte noch einmal!",
+   "en": "Example: Tell me the story again!"
+  },
+  {
+   "de": "erzählen — EN: to tell · FR: raconterMeine Oma erzählt gern von früher.",
+   "en": "Example: My grandma likes to talk about the old days."
+  },
+  {
+   "de": "arbeiten als — EN: to work as · FR: travailler commeSie arbeitet als Krankenschwester.",
+   "en": "Example: She works as a nurse."
+  },
+  {
+   "de": "der Betrieb, -e — EN: business, company · FR: l'entrepriseDer Betrieb gehört seit 1950 unserer Familie.",
+   "en": "Example: The business has belonged to our family since 1950."
+  },
+  {
+   "de": "stolz sein auf — EN: to be proud of · FR: être fier deWir sind stolz auf unsere Eltern.",
+   "en": "Example: We are proud of our parents."
+  },
+  {
+   "de": "früher — EN: in the past · FR: autrefoisFrüher gab es hier noch keine Supermärkte.",
+   "en": "Example: In the past, there were no supermarkets here yet."
+  },
+  {
+   "de": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "Example: First he learned the trade, then he took over the bakery."
+  },
+  {
+   "de": "übernehmen (übernahm) — EN: to take over · FR: reprendreMein Bruder hat den Betrieb übernommen.",
+   "en": "Example: My brother took over the business."
+  },
+  {
+   "de": "über den Beruf sprechen",
+   "en": "talking about your job"
+  },
+  {
+   "de": "Was machst du beruflich?",
+   "en": "What do you do for a living?"
+  },
+  {
+   "de": "Ich arbeite als … bei …",
+   "en": "I work as … at …"
+  },
+  {
+   "de": "Mein Vater war von Beruf …",
+   "en": "By profession, my father was …"
+  },
+  {
+   "de": "eine Familiengeschichte erzählen",
+   "en": "telling a family story"
+  },
+  {
+   "de": "Meine Großeltern kamen aus …",
+   "en": "My grandparents came from …"
+  },
+  {
+   "de": "Zuerst … , dann … , und schließlich …",
+   "en": "First … , then … , and finally …"
+  },
+  {
+   "de": "Das war vor ungefähr fünfzig Jahren.",
+   "en": "That was about fifty years ago."
+  },
+  {
+   "de": "Und was ist dann passiert?",
+   "en": "And what happened then?"
+  },
+  {
+   "de": "Wie lange hat er das gemacht?",
+   "en": "How long did he do that?"
+  },
+  {
+   "de": "Erzähl mal weiter!",
+   "en": "Go on, tell me more!"
+  },
+  {
+   "de": "Dialog: Beim Familienfest",
+   "en": "Dialogue: At the family celebration"
+  },
+  {
+   "de": "Nadia: Ist das euer Großvater auf dem Foto?",
+   "en": "Nadia: Is that your grandfather in the photo?"
+  },
+  {
+   "de": "Tim: Ja, das ist unser Opa Franz. Er war Bäcker, so wie mein Vater.",
+   "en": "Tim: Yes, that's our grandpa Franz. He was a baker, just like my father."
+  },
+  {
+   "de": "Nadia: Wirklich? Und wie lange hatte er die Bäckerei?",
+   "en": "Nadia: Really? And how long did he have the bakery?"
+  },
+  {
+   "de": "Tim: Fast vierzig Jahre. Er musste jeden Morgen um halb vier aufstehen.",
+   "en": "Tim: Almost forty years. He had to get up at half past three every morning."
+  },
+  {
+   "de": "Nadia: Oh je! Und wer hat den Betrieb dann übernommen?",
+   "en": "Nadia: Oh dear! And who took over the business after that?"
+  },
+  {
+   "de": "Tim: Mein Vater. Und jetzt arbeitet auch meine Schwester dort.",
+   "en": "Tim: My father. And now my sister works there too."
+  },
+  {
+   "de": "Was ist dein Beruf?",
+   "en": "What is your job?"
+  },
+  {
+   "de": "Mein Opa war Bäcker.",
+   "en": "My grandpa was a baker."
+  },
+  {
+   "de": "Meine Großeltern wohnen auf dem Land.",
+   "en": "My grandparents live in the countryside."
+  },
+  {
+   "de": "Wir haben viele Verwandte in Deutschland.",
+   "en": "We have a lot of relatives in Germany."
+  },
+  {
+   "de": "Erzähl mir die Geschichte noch einmal!",
+   "en": "Tell me the story again!"
+  },
+  {
+   "de": "Meine Oma erzählt gern von früher.",
+   "en": "My grandma likes to talk about the old days."
+  },
+  {
+   "de": "Sie arbeitet als Krankenschwester.",
+   "en": "She works as a nurse."
+  },
+  {
+   "de": "Der Betrieb gehört seit 1950 unserer Familie.",
+   "en": "The business has belonged to our family since 1950."
+  },
+  {
+   "de": "Wir sind stolz auf unsere Eltern.",
+   "en": "We are proud of our parents."
+  },
+  {
+   "de": "Früher gab es hier noch keine Supermärkte.",
+   "en": "In the past, there were no supermarkets here yet."
+  },
+  {
+   "de": "Zuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "First he learned the trade, then he took over the bakery."
+  },
+  {
+   "de": "Mein Bruder hat den Betrieb übernommen.",
+   "en": "My brother took over the business."
+  },
+  {
+   "de": "Das ist ___ Opa. Er war Bäcker. (unser, Nominativ maskulin)",
+   "en": "That is ___ grandpa. He was a baker. (unser, nominative masculine)"
+  },
+  {
+   "de": "Wie geht es ___ Mutter?",
+   "en": "How is ___ mother?"
+  },
+  {
+   "de": "Mein Großvater ___ Bäcker. (sein, Vergangenheit)",
+   "en": "My grandfather ___ a baker. (sein, past)"
+  },
+  {
+   "de": "Wir besuchen ___ Großeltern am Wochenende. (unser, Akkusativ Plural)",
+   "en": "We visit ___ grandparents at the weekend. (unser, accusative plural)"
+  },
+  {
+   "de": "Schreiben Sie kurz über einen Beruf in Ihrer Familie: Wer hat ihn gemacht, wie lange, und wie war das? Umfang: 50–70 Wörter Checkliste: • Nennen Sie die Person und ihren Beruf. • Benutzen Sie war, hatte und mindestens zwei Verben im Perfekt. • Schreiben Sie am Ende, wie Sie das finden.",
+   "en": "Write briefly about a job in your family: Who did it, for how long, and what was it like? Length: 50–70 words Checklist: • Name the person and their job. • Use war, hatte and at least two verbs in the present perfect. • At the end, write what you think of it."
+  },
+  {
+   "de": "Im Nominativ maskulin steht unser ohne Endung.",
+   "en": "In the nominative masculine, unser has no ending."
+  },
+  {
+   "de": "Dativ feminin: eurer — bei euer fällt das e weg, wenn eine Endung dazukommt.",
+   "en": "Dative feminine: eurer — with euer, the e drops out when an ending is added."
+  },
+  {
+   "de": "Bei sein benutzt man das Präteritum: war.",
+   "en": "With sein, you use the simple past: war."
+  },
+  {
+   "de": "sein steht in der Vergangenheit fast immer im Präteritum.",
+   "en": "When talking about the past, sein is almost always in the simple past."
+  },
+  {
+   "de": "Akkusativ Plural: unsere.",
+   "en": "Accusative plural: unsere."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Berufe",
+   "context": "Über Berufe in der Familie sprechen und eine Familiengeschichte erzählen.",
+   "en": "jobs, professions",
+   "lemma": "der Beruf"
+  },
+  {
+   "form": "Familiengeschichte",
+   "context": "Über Berufe in der Familie sprechen und eine Familiengeschichte erzählen.",
+   "en": "family story",
+   "lemma": "die Familiengeschichte"
+  },
+  {
+   "form": "Goethe",
+   "context": "Prüfungsbezug: Goethe A2 Sprechen Teil 1 (über sich erzählen); telc A2 Sprechen",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "unser",
+   "context": "die Possessivartikel unser und euer richtig verwenden",
+   "en": "our",
+   "lemma": ""
+  },
+  {
+   "form": "dieselben",
+   "context": "unser und euer bekommen dieselben Endungen wie mein und dein. Achtung bei euer: Wenn eine Endung dazukommt, fällt das e weg — euer Vater, aber eure Mutter.",
+   "en": "the same",
+   "lemma": "derselbe"
+  },
+  {
+   "form": "dazukommt",
+   "context": "unser und euer bekommen dieselben Endungen wie mein und dein. Achtung bei euer: Wenn eine Endung dazukommt, fällt das e weg — euer Vater, aber eure Mutter.",
+   "en": "is added",
+   "lemma": "dazukommen"
+  },
+  {
+   "form": "fällt",
+   "context": "unser und euer bekommen dieselben Endungen wie mein und dein. Achtung bei euer: Wenn eine Endung dazukommt, fällt das e weg — euer Vater, aber eure Mutter.",
+   "en": "drops out; falls",
+   "lemma": "wegfallen"
+  },
+  {
+   "form": "eure",
+   "context": "unser und euer bekommen dieselben Endungen wie mein und dein. Achtung bei euer: Wenn eine Endung dazukommt, fällt das e weg — euer Vater, aber eure Mutter.",
+   "en": "your (plural)",
+   "lemma": "euer"
+  },
+  {
+   "form": "Opa",
+   "context": "unser Opa",
+   "en": "grandpa",
+   "lemma": "der Opa"
+  },
+  {
+   "form": "Oma",
+   "context": "unsere Oma",
+   "en": "grandma",
+   "lemma": "die Oma"
+  },
+  {
+   "form": "unseren",
+   "context": "unseren Opa",
+   "en": "our",
+   "lemma": "unser"
+  },
+  {
+   "form": "unserem",
+   "context": "unserem Opa",
+   "en": "our",
+   "lemma": "unser"
+  },
+  {
+   "form": "unserer",
+   "context": "unserer Oma",
+   "en": "our",
+   "lemma": "unser"
+  },
+  {
+   "form": "Unser",
+   "context": "Unser Großvater hatte eine kleine Bäckerei.Nominativ maskulin: unser ohne Endung",
+   "en": "our",
+   "lemma": ""
+  },
+  {
+   "form": "kleine",
+   "context": "Unser Großvater hatte eine kleine Bäckerei.Nominativ maskulin: unser ohne Endung",
+   "en": "small, little",
+   "lemma": "klein"
+  },
+  {
+   "form": "besuchen",
+   "context": "Wir besuchen unsere Tante jeden Sonntag.Akkusativ feminin: unsere",
+   "en": "visit",
+   "lemma": ""
+  },
+  {
+   "form": "Tante",
+   "context": "Wir besuchen unsere Tante jeden Sonntag.Akkusativ feminin: unsere",
+   "en": "aunt",
+   "lemma": "die Tante"
+  },
+  {
+   "form": "Sonntag",
+   "context": "Wir besuchen unsere Tante jeden Sonntag.Akkusativ feminin: unsere",
+   "en": "Sunday",
+   "lemma": "der Sonntag"
+  },
+  {
+   "form": "eurer",
+   "context": "Wie geht es eurer Mutter?Dativ feminin: eurer — das e von euer fällt weg",
+   "en": "your (plural)",
+   "lemma": "euer"
+  },
+  {
+   "form": "euren",
+   "context": "Tipp: Merken Sie sich: euer + Endung → eure, euren, eurem, eurer. Ohne Endung bleibt es euer.",
+   "en": "your (plural)",
+   "lemma": "euer"
+  },
+  {
+   "form": "eurem",
+   "context": "Tipp: Merken Sie sich: euer + Endung → eure, euren, eurem, eurer. Ohne Endung bleibt es euer.",
+   "en": "your (plural)",
+   "lemma": "euer"
+  },
+  {
+   "form": "natürlicher",
+   "context": "Wenn Sie über die Vergangenheit sprechen, benutzen Sie meistens das Perfekt. Bei sein, haben und den Modalverben benutzt man aber fast immer das Präteritum — das ist kürzer und klingt natürlicher.",
+   "en": "more natural",
+   "lemma": "natürlich"
+  },
+  {
+   "form": "Bäcker",
+   "context": "Mein Vater hat als Bäcker gearbeitet.",
+   "en": "baker",
+   "lemma": "der Bäcker"
+  },
+  {
+   "form": "konnte",
+   "context": "Präteritum: konnte, musste, wollte",
+   "en": "could, was able to",
+   "lemma": "können"
+  },
+  {
+   "form": "musste",
+   "context": "Präteritum: konnte, musste, wollte",
+   "en": "had to",
+   "lemma": "müssen"
+  },
+  {
+   "form": "härter",
+   "context": "Früher war das Leben härter, aber wir waren zufrieden.sein → war",
+   "en": "harder",
+   "lemma": "hart"
+  },
+  {
+   "form": "zufrieden",
+   "context": "Früher war das Leben härter, aber wir waren zufrieden.sein → war",
+   "en": "content, satisfied",
+   "lemma": ""
+  },
+  {
+   "form": "Backstube",
+   "context": "Meine Mutter hat in der Backstube geholfen.Perfekt mit haben",
+   "en": "bakery (baking room)",
+   "lemma": "die Backstube"
+  },
+  {
+   "form": "geholfen",
+   "context": "Meine Mutter hat in der Backstube geholfen.Perfekt mit haben",
+   "en": "helped",
+   "lemma": "helfen"
+  },
+  {
+   "form": "Pilotin",
+   "context": "Als Kind wollte ich Pilotin werden.Modalverb im Präteritum",
+   "en": "pilot (a woman)",
+   "lemma": "die Pilotin"
+  },
+  {
+   "form": "job",
+   "context": "der Beruf, -e — EN: job, profession · FR: le métierWas ist dein Beruf?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "profession",
+   "context": "der Beruf, -e — EN: job, profession · FR: le métierWas ist dein Beruf?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "métierWas",
+   "context": "der Beruf, -e — EN: job, profession · FR: le métierWas ist dein Beruf?",
+   "en": "what",
+   "lemma": "was"
+  },
+  {
+   "form": "Bäckerin",
+   "context": "der Bäcker, - / die Bäckerin, -nen — EN: baker · FR: le boulanger / la boulangèreMein Opa war Bäcker.",
+   "en": "baker (a woman)",
+   "lemma": "die Bäckerin"
+  },
+  {
+   "form": "baker",
+   "context": "der Bäcker, - / die Bäckerin, -nen — EN: baker · FR: le boulanger / la boulangèreMein Opa war Bäcker.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "boulanger",
+   "context": "der Bäcker, - / die Bäckerin, -nen — EN: baker · FR: le boulanger / la boulangèreMein Opa war Bäcker.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "boulangèreMein",
+   "context": "der Bäcker, - / die Bäckerin, -nen — EN: baker · FR: le boulanger / la boulangèreMein Opa war Bäcker.",
+   "en": "my",
+   "lemma": "mein"
+  },
+  {
+   "form": "Großeltern",
+   "context": "die Großeltern (Pl.) — EN: grandparents · FR: les grands-parentsMeine Großeltern wohnen auf dem Land.",
+   "en": "grandparents",
+   "lemma": "die Großeltern"
+  },
+  {
+   "form": "grandparents",
+   "context": "die Großeltern (Pl.) — EN: grandparents · FR: les grands-parentsMeine Großeltern wohnen auf dem Land.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "grands-parentsMeine",
+   "context": "die Großeltern (Pl.) — EN: grandparents · FR: les grands-parentsMeine Großeltern wohnen auf dem Land.",
+   "en": "my",
+   "lemma": "mein"
+  },
+  {
+   "form": "Verwandte",
+   "context": "der Verwandte, -n — EN: relative · FR: le parent (de la famille)Wir haben viele Verwandte in Deutschland.",
+   "en": "relatives",
+   "lemma": "der Verwandte"
+  },
+  {
+   "form": "relative",
+   "context": "der Verwandte, -n — EN: relative · FR: le parent (de la famille)Wir haben viele Verwandte in Deutschland.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parent",
+   "context": "der Verwandte, -n — EN: relative · FR: le parent (de la famille)Wir haben viele Verwandte in Deutschland.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "famille",
+   "context": "der Verwandte, -n — EN: relative · FR: le parent (de la famille)Wir haben viele Verwandte in Deutschland.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "story",
+   "context": "die Geschichte, -n — EN: story; history · FR: l'histoireErzähl mir die Geschichte noch einmal!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "history",
+   "context": "die Geschichte, -n — EN: story; history · FR: l'histoireErzähl mir die Geschichte noch einmal!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'histoireErzähl",
+   "context": "die Geschichte, -n — EN: story; history · FR: l'histoireErzähl mir die Geschichte noch einmal!",
+   "en": "tell",
+   "lemma": "erzählen"
+  },
+  {
+   "form": "tell",
+   "context": "erzählen — EN: to tell · FR: raconterMeine Oma erzählt gern von früher.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "raconterMeine",
+   "context": "erzählen — EN: to tell · FR: raconterMeine Oma erzählt gern von früher.",
+   "en": "my",
+   "lemma": "mein"
+  },
+  {
+   "form": "erzählt",
+   "context": "erzählen — EN: to tell · FR: raconterMeine Oma erzählt gern von früher.",
+   "en": "tells",
+   "lemma": "erzählen"
+  },
+  {
+   "form": "as",
+   "context": "arbeiten als — EN: to work as · FR: travailler commeSie arbeitet als Krankenschwester.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "travailler",
+   "context": "arbeiten als — EN: to work as · FR: travailler commeSie arbeitet als Krankenschwester.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "commeSie",
+   "context": "arbeiten als — EN: to work as · FR: travailler commeSie arbeitet als Krankenschwester.",
+   "en": "she",
+   "lemma": "sie"
+  },
+  {
+   "form": "Krankenschwester",
+   "context": "arbeiten als — EN: to work as · FR: travailler commeSie arbeitet als Krankenschwester.",
+   "en": "nurse (a woman)",
+   "lemma": "die Krankenschwester"
+  },
+  {
+   "form": "Betrieb",
+   "context": "der Betrieb, -e — EN: business, company · FR: l'entrepriseDer Betrieb gehört seit 1950 unserer Familie.",
+   "en": "business, company",
+   "lemma": "der Betrieb"
+  },
+  {
+   "form": "business",
+   "context": "der Betrieb, -e — EN: business, company · FR: l'entrepriseDer Betrieb gehört seit 1950 unserer Familie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "company",
+   "context": "der Betrieb, -e — EN: business, company · FR: l'entrepriseDer Betrieb gehört seit 1950 unserer Familie.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'entrepriseDer",
+   "context": "der Betrieb, -e — EN: business, company · FR: l'entrepriseDer Betrieb gehört seit 1950 unserer Familie.",
+   "en": "the",
+   "lemma": "der"
+  },
+  {
+   "form": "stolz",
+   "context": "stolz sein auf — EN: to be proud of · FR: être fier deWir sind stolz auf unsere Eltern.",
+   "en": "proud",
+   "lemma": ""
+  },
+  {
+   "form": "proud",
+   "context": "stolz sein auf — EN: to be proud of · FR: être fier deWir sind stolz auf unsere Eltern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fier",
+   "context": "stolz sein auf — EN: to be proud of · FR: être fier deWir sind stolz auf unsere Eltern.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "autrefoisFrüher",
+   "context": "früher — EN: in the past · FR: autrefoisFrüher gab es hier noch keine Supermärkte.",
+   "en": "in the past",
+   "lemma": "früher"
+  },
+  {
+   "form": "gab",
+   "context": "früher — EN: in the past · FR: autrefoisFrüher gab es hier noch keine Supermärkte.",
+   "en": "there were (es gab); gave",
+   "lemma": "geben"
+  },
+  {
+   "form": "Supermärkte",
+   "context": "früher — EN: in the past · FR: autrefoisFrüher gab es hier noch keine Supermärkte.",
+   "en": "supermarkets",
+   "lemma": "der Supermarkt"
+  },
+  {
+   "form": "zuerst",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "first, at first",
+   "lemma": ""
+  },
+  {
+   "form": "first",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "that",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'abord",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "puis",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ensuiteZuerst",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "first, at first",
+   "lemma": "zuerst"
+  },
+  {
+   "form": "lernte",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "learned",
+   "lemma": "lernen"
+  },
+  {
+   "form": "übernahm",
+   "context": "zuerst / dann / danach — EN: first / then / after that · FR: d'abord / puis / ensuiteZuerst lernte er, dann übernahm er die Bäckerei.",
+   "en": "took over",
+   "lemma": "übernehmen"
+  },
+  {
+   "form": "übernehmen",
+   "context": "übernehmen (übernahm) — EN: to take over · FR: reprendreMein Bruder hat den Betrieb übernommen.",
+   "en": "to take over",
+   "lemma": ""
+  },
+  {
+   "form": "take",
+   "context": "übernehmen (übernahm) — EN: to take over · FR: reprendreMein Bruder hat den Betrieb übernommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "over",
+   "context": "übernehmen (übernahm) — EN: to take over · FR: reprendreMein Bruder hat den Betrieb übernommen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reprendreMein",
+   "context": "übernehmen (übernahm) — EN: to take over · FR: reprendreMein Bruder hat den Betrieb übernommen.",
+   "en": "my",
+   "lemma": "mein"
+  },
+  {
+   "form": "übernommen",
+   "context": "übernehmen (übernahm) — EN: to take over · FR: reprendreMein Bruder hat den Betrieb übernommen.",
+   "en": "taken over",
+   "lemma": "übernehmen"
+  },
+  {
+   "form": "kamen",
+   "context": "Meine Großeltern kamen aus …",
+   "en": "came",
+   "lemma": "kommen"
+  },
+  {
+   "form": "Zuerst",
+   "context": "Zuerst … , dann … , und schließlich …",
+   "en": "first, at first",
+   "lemma": ""
+  },
+  {
+   "form": "schließlich",
+   "context": "Zuerst … , dann … , und schließlich …",
+   "en": "finally",
+   "lemma": ""
+  },
+  {
+   "form": "Familienfest",
+   "context": "Dialog: Beim Familienfest",
+   "en": "family celebration",
+   "lemma": "das Familienfest"
+  },
+  {
+   "form": "Nadia",
+   "context": "Nadia: Ist das euer Großvater auf dem Foto?",
+   "en": "Nadia (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Franz",
+   "context": "Tim: Ja, das ist unser Opa Franz. Er war Bäcker, so wie mein Vater.",
+   "en": "Franz (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Wochenende",
+   "context": "Wir besuchen ___ Großeltern am Wochenende. (unser, Akkusativ Plural)",
+   "en": "weekend",
+   "lemma": "das Wochenende"
+  }
+ ]
+}
