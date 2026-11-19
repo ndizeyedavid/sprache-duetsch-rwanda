@@ -1,6 +1,6 @@
 import { FiRefreshCw, FiSmartphone } from 'react-icons/fi';
 import { currencyAmount } from '../../lib/format';
-import type { PaymentCheckout } from '../../lib/paypack';
+import type { PaymentCheckout } from '../../lib/mobile-money';
 import { PaymentStatusBadge } from './PaymentStatusBadge';
 
 type Props = { row: PaymentCheckout; checking: boolean; onCheck: () => void };
