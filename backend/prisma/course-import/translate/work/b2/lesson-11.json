@@ -1,0 +1,837 @@
+{
+ "level": "B2",
+ "lesson": 11,
+ "title": "Richtig streiten — Das hättest du mir doch mal sagen können",
+ "lines": [
+  {
+   "de": "Kritik äußern und auf Kritik reagieren — und hören, wie Modalpartikeln den Ton verändern.",
+   "en": "Express criticism and respond to criticism — and hear how modal particles change the tone."
+  },
+  {
+   "de": "Textsorte: Streitgespräch · formelle E-Mail",
+   "en": "Text type: Argument · formal email"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Sprechen Teil 2; telc B2 Schreiben (formelle Reaktion)",
+   "en": "Exam link: Goethe B2 Speaking part 2; telc B2 Writing (formal response)"
+  },
+  {
+   "de": "Kritik sachlich äußern und angemessen darauf reagieren",
+   "en": "express criticism objectively and respond to it appropriately"
+  },
+  {
+   "de": "Modalpartikeln bewusst einsetzen, um den Ton zu steuern",
+   "en": "use modal particles deliberately to control the tone"
+  },
+  {
+   "de": "schriftlich auf Kritik reagieren, ohne den Konflikt zu verschärfen",
+   "en": "respond to criticism in writing without making the conflict worse"
+  },
+  {
+   "de": "Grammatik: Modalpartikeln beim Kritisieren",
+   "en": "Grammar: Modal particles (Modalpartikeln) when criticising"
+  },
+  {
+   "de": "Modalpartikeln ändern den Inhalt eines Satzes nicht, aber seine Wirkung — und beim Streiten entscheidet genau das. Sie stehen immer unbetont im Mittelfeld und nie auf Position 1. Dieselbe Partikel kann je nach Satzart entschärfen oder verschärfen.",
+   "en": "Modal particles do not change the content of a sentence, but they do change its effect — and in an argument, that is exactly what matters. They are always unstressed, stand in the middle field (Mittelfeld) and never in position 1. The same particle can soften or sharpen, depending on the type of sentence."
+  },
+  {
+   "de": "Hör mir bitte mal kurz zu.",
+   "en": "Just listen to me for a moment, please."
+  },
+  {
+   "de": "appelliert an Bekanntes; vorwurfsvoll bei Kritik",
+   "en": "appeals to what is already known; reproachful in criticism"
+  },
+  {
+   "de": "Das weißt du doch längst.",
+   "en": "But you’ve known that for ages."
+  },
+  {
+   "de": "eben / halt",
+   "en": "just, simply (that’s how it is)"
+  },
+  {
+   "de": "stellt etwas als unabänderlich hin",
+   "en": "presents something as unchangeable"
+  },
+  {
+   "de": "So ist es eben gelaufen.",
+   "en": "That’s just how it went."
+  },
+  {
+   "de": "Bezug auf gemeinsames Wissen; betont Erstaunen",
+   "en": "refers to shared knowledge; emphasises surprise"
+  },
+  {
+   "de": "Du hast ja recht.",
+   "en": "You’re right, of course."
+  },
+  {
+   "de": "bloß / nur",
+   "en": "on earth / just (intensifying)"
+  },
+  {
+   "de": "verstärkt Vorwurf oder Wunsch",
+   "en": "intensifies a reproach or a wish"
+  },
+  {
+   "de": "Warum hast du das bloß nicht gesagt?",
+   "en": "Why on earth didn’t you say so?"
+  },
+  {
+   "de": "schon",
+   "en": "admittedly, true enough"
+  },
+  {
+   "de": "räumt ein, schränkt dann ein",
+   "en": "concedes, then qualifies"
+  },
+  {
+   "de": "Das stimmt schon, aber …",
+   "en": "That’s true enough, but …"
+  },
+  {
+   "de": "Das hättest du mir doch mal sagen können.doch + mal: Vorwurf, aber abgemildert",
+   "en": "You could have told me that, you know. — doch + mal: reproach, but softened"
+  },
+  {
+   "de": "Du hast ja recht, trotzdem ärgert es mich.ja = ich erkenne es an",
+   "en": "You’re right, of course, but it still annoys me. — ja = I acknowledge it"
+  },
+  {
+   "de": "Das ist nun mal nicht zu ändern.nun mal: Resignation, beendet die Diskussion",
+   "en": "That just can’t be changed. — nun mal: resignation, ends the discussion"
+  },
+  {
+   "de": "Tipp: In schriftlicher formeller Kritik lässt man Modalpartikeln weg — dort wirken sie schnell unprofessionell. Im Gespräch dagegen klingt man ohne sie schroff.",
+   "en": "Tip: In formal written criticism, you leave out modal particles — there they quickly seem unprofessional. In conversation, on the other hand, you sound brusque without them."
+  },
+  {
+   "de": "die Kritik (Sg.) — EN: criticism · FR: la critiqueSachliche Kritik ist keine Beleidigung.",
+   "en": "Example: Objective criticism is not an insult."
+  },
+  {
+   "de": "jemandem einen Vorwurf machen — EN: to reproach sb. · FR: faire un reproche à qn.Ich will dir keinen Vorwurf machen.",
+   "en": "Example: I don’t want to reproach you."
+  },
+  {
+   "de": "sich rechtfertigen — EN: to justify oneself · FR: se justifierDu musst dich nicht rechtfertigen.",
+   "en": "Example: You don’t have to justify yourself."
+  },
+  {
+   "de": "einlenken — EN: to back down, relent · FR: céderIrgendwann muss einer einlenken.",
+   "en": "Example: At some point, someone has to back down."
+  },
+  {
+   "de": "der Streitpunkt, -e — EN: point of contention · FR: le point de litigeDer eigentliche Streitpunkt ist ein anderer.",
+   "en": "Example: The real point of contention is something else."
+  },
+  {
+   "de": "eskalieren / deeskalieren — EN: to escalate / de-escalate · FR: s'envenimer / désamorcerEin ruhiger Ton hilft zu deeskalieren.",
+   "en": "Example: A calm tone helps to de-escalate."
+  },
+  {
+   "de": "sachlich bleiben — EN: to stay objective · FR: rester objectifVersuchen wir, sachlich zu bleiben.",
+   "en": "Example: Let’s try to stay objective."
+  },
+  {
+   "de": "jemanden verletzen — EN: to hurt sb. · FR: blesser qn.Das hat mich wirklich verletzt.",
+   "en": "Example: That really hurt me."
+  },
+  {
+   "de": "die Schuldzuweisung, -en — EN: assignment of blame · FR: l'attribution de responsabilitéSchuldzuweisungen bringen uns nicht weiter.",
+   "en": "Example: Assigning blame doesn’t get us anywhere."
+  },
+  {
+   "de": "nachtragend — EN: unforgiving, resentful · FR: rancunierIch bin wirklich nicht nachtragend.",
+   "en": "Example: I really don’t bear grudges."
+  },
+  {
+   "de": "sich entschuldigen für — EN: to apologise for · FR: s'excuser deIch entschuldige mich für meinen Ton.",
+   "en": "Example: I apologise for my tone."
+  },
+  {
+   "de": "der Kompromiss, -e — EN: compromise · FR: le compromisAm Ende fanden wir einen Kompromiss.",
+   "en": "Example: In the end, we found a compromise."
+  },
+  {
+   "de": "jemandem ins Wort fallen — EN: to interrupt sb. · FR: couper la parole à qn.Bitte fall mir nicht ständig ins Wort.",
+   "en": "Example: Please stop interrupting me all the time."
+  },
+  {
+   "de": "die Aussprache (Sg.) — EN: clearing the air, frank talk · FR: l'explication, la mise au pointNach der Aussprache war die Luft rein.",
+   "en": "Example: After the frank talk, the air was cleared."
+  },
+  {
+   "de": "Kritik äußern",
+   "en": "Expressing criticism"
+  },
+  {
+   "de": "Mir ist aufgefallen, dass … — das stört mich.",
+   "en": "I’ve noticed that … — that bothers me."
+  },
+  {
+   "de": "Ich würde mir wünschen, dass …",
+   "en": "I would like it if …"
+  },
+  {
+   "de": "Aus meiner Sicht ist da etwas schiefgelaufen.",
+   "en": "From my point of view, something went wrong there."
+  },
+  {
+   "de": "auf Kritik reagieren",
+   "en": "Responding to criticism"
+  },
+  {
+   "de": "Das kann ich nachvollziehen.",
+   "en": "I can understand that."
+  },
+  {
+   "de": "Da haben Sie völlig recht, das tut mir leid.",
+   "en": "You’re absolutely right about that, I’m sorry."
+  },
+  {
+   "de": "Das sehe ich anders, und zwar aus folgendem Grund: …",
+   "en": "I see it differently, for the following reason: …"
+  },
+  {
+   "de": "den Streit beenden",
+   "en": "Ending the argument"
+  },
+  {
+   "de": "Lassen Sie uns das sachlich klären.",
+   "en": "Let’s sort this out objectively."
+  },
+  {
+   "de": "Dann machen wir es künftig so.",
+   "en": "Then that’s how we’ll do it in future."
+  },
+  {
+   "de": "Sachliche Kritik ist keine Beleidigung.",
+   "en": "Objective criticism is not an insult."
+  },
+  {
+   "de": "Ich will dir keinen Vorwurf machen.",
+   "en": "I don’t want to reproach you."
+  },
+  {
+   "de": "Du musst dich nicht rechtfertigen.",
+   "en": "You don’t have to justify yourself."
+  },
+  {
+   "de": "Irgendwann muss einer einlenken.",
+   "en": "At some point, someone has to back down."
+  },
+  {
+   "de": "Der eigentliche Streitpunkt ist ein anderer.",
+   "en": "The real point of contention is something else."
+  },
+  {
+   "de": "Ein ruhiger Ton hilft zu deeskalieren.",
+   "en": "A calm tone helps to de-escalate."
+  },
+  {
+   "de": "Versuchen wir, sachlich zu bleiben.",
+   "en": "Let’s try to stay objective."
+  },
+  {
+   "de": "Das hat mich wirklich verletzt.",
+   "en": "That really hurt me."
+  },
+  {
+   "de": "Schuldzuweisungen bringen uns nicht weiter.",
+   "en": "Assigning blame doesn’t get us anywhere."
+  },
+  {
+   "de": "Ich bin wirklich nicht nachtragend.",
+   "en": "I really don’t bear grudges."
+  },
+  {
+   "de": "Ich entschuldige mich für meinen Ton.",
+   "en": "I apologise for my tone."
+  },
+  {
+   "de": "Am Ende fanden wir einen Kompromiss.",
+   "en": "In the end, we found a compromise."
+  },
+  {
+   "de": "Bitte fall mir nicht ständig ins Wort.",
+   "en": "Please stop interrupting me all the time."
+  },
+  {
+   "de": "Nach der Aussprache war die Luft rein.",
+   "en": "After the frank talk, the air was cleared."
+  },
+  {
+   "de": "Welche Partikel macht die Bitte am freundlichsten? „Hör mir ___ kurz zu.\"",
+   "en": "Which particle makes the request sound friendliest? “Listen to me ___ for a moment.”"
+  },
+  {
+   "de": "Das hättest du mir ___ sagen können! (vorwurfsvoll)",
+   "en": "You could ___ have told me that! (reproachful)"
+  },
+  {
+   "de": "„So ist es eben gelaufen\" bedeutet:",
+   "en": "“So ist es eben gelaufen” means:"
+  },
+  {
+   "de": "Wo gehören Modalpartikeln NICHT hin?",
+   "en": "Where do modal particles NOT belong?"
+  },
+  {
+   "de": "Warum hast du das ___ nicht früher gesagt? (verstärkter Vorwurf)",
+   "en": "Why ___ didn’t you say so earlier? (intensified reproach)"
+  },
+  {
+   "de": "Welche Reaktion deeskaliert am stärksten?",
+   "en": "Which response de-escalates the most?"
+  },
+  {
+   "de": "Ein Kollege hat Ihre Arbeit in einer E-Mail an das ganze Team kritisiert. Antworten Sie schriftlich und sachlich. Umfang: 160–200 Wörter Checkliste: • Formelle Anrede und Schlussformel. • Nehmen Sie den berechtigten Teil der Kritik an. • Widersprechen Sie dem unberechtigten Teil mit einem Argument. • Keine Modalpartikeln, keine Vorwürfe — ein konkreter Vorschlag zum Schluss.",
+   "en": "A colleague has criticised your work in an email to the whole team. Reply in writing and objectively. Length: 160–200 words Checklist: • Formal greeting and closing. • Accept the justified part of the criticism. • Contradict the unjustified part with an argument. • No modal particles, no accusations — a concrete suggestion at the end."
+  },
+  {
+   "de": "mal verkleinert die Bitte und macht sie unaufdringlich.",
+   "en": "mal makes the request smaller and unobtrusive."
+  },
+  {
+   "de": "doch appelliert an etwas Bekanntes und klingt in Kritik vorwurfsvoll.",
+   "en": "doch appeals to something already known and sounds reproachful in criticism."
+  },
+  {
+   "de": "eben und halt stellen etwas als unabänderlich dar.",
+   "en": "eben and halt present something as unchangeable."
+  },
+  {
+   "de": "In formellen schriftlichen Texten wirken sie unprofessionell.",
+   "en": "In formal written texts, they seem unprofessional."
+  },
+  {
+   "de": "bloß und nur verstärken den Vorwurf in einer Frage.",
+   "en": "bloß and nur intensify the reproach in a question."
+  },
+  {
+   "de": "Zuerst anerkennen, dann widersprechen — das senkt die Spannung.",
+   "en": "First acknowledge, then disagree — that reduces the tension."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Streitgespräch",
+   "context": "Textsorte: Streitgespräch · formelle E-Mail",
+   "en": "argument, dispute",
+   "lemma": "das Streitgespräch"
+  },
+  {
+   "form": "Reaktion",
+   "context": "Prüfungsbezug: Goethe B2 Sprechen Teil 2; telc B2 Schreiben (formelle Reaktion)",
+   "en": "response, reaction",
+   "lemma": "die Reaktion"
+  },
+  {
+   "form": "steuern",
+   "context": "Modalpartikeln bewusst einsetzen, um den Ton zu steuern",
+   "en": "to control, steer",
+   "lemma": ""
+  },
+  {
+   "form": "verschärfen",
+   "context": "schriftlich auf Kritik reagieren, ohne den Konflikt zu verschärfen",
+   "en": "to make worse, intensify",
+   "lemma": ""
+  },
+  {
+   "form": "Satzart",
+   "context": "Modalpartikeln ändern den Inhalt eines Satzes nicht, aber seine Wirkung — und beim Streiten entscheidet genau das. Sie stehen immer unbetont im Mittelfeld und nie auf Position 1. Dieselbe Partikel kann je nach Satzart entschärfen oder verschärfen.",
+   "en": "sentence type",
+   "lemma": "die Satzart"
+  },
+  {
+   "form": "entschärfen",
+   "context": "Modalpartikeln ändern den Inhalt eines Satzes nicht, aber seine Wirkung — und beim Streiten entscheidet genau das. Sie stehen immer unbetont im Mittelfeld und nie auf Position 1. Dieselbe Partikel kann je nach Satzart entschärfen oder verschärfen.",
+   "en": "to soften, defuse",
+   "lemma": ""
+  },
+  {
+   "form": "Hör",
+   "context": "Hör mir bitte mal kurz zu.",
+   "en": "listen",
+   "lemma": "zuhören"
+  },
+  {
+   "form": "appelliert",
+   "context": "appelliert an Bekanntes; vorwurfsvoll bei Kritik",
+   "en": "appeals",
+   "lemma": "appellieren"
+  },
+  {
+   "form": "Bekanntes",
+   "context": "appelliert an Bekanntes; vorwurfsvoll bei Kritik",
+   "en": "something known",
+   "lemma": "das Bekannte"
+  },
+  {
+   "form": "vorwurfsvoll",
+   "context": "appelliert an Bekanntes; vorwurfsvoll bei Kritik",
+   "en": "reproachful",
+   "lemma": ""
+  },
+  {
+   "form": "weißt",
+   "context": "Das weißt du doch längst.",
+   "en": "know",
+   "lemma": "wissen"
+  },
+  {
+   "form": "längst",
+   "context": "Das weißt du doch längst.",
+   "en": "for ages, long ago",
+   "lemma": ""
+  },
+  {
+   "form": "eben",
+   "context": "eben / halt",
+   "en": "just, simply; just now",
+   "lemma": ""
+  },
+  {
+   "form": "halt",
+   "context": "eben / halt",
+   "en": "just, simply; stop!",
+   "lemma": ""
+  },
+  {
+   "form": "unabänderlich",
+   "context": "stellt etwas als unabänderlich hin",
+   "en": "unchangeable",
+   "lemma": ""
+  },
+  {
+   "form": "gelaufen",
+   "context": "So ist es eben gelaufen.",
+   "en": "gone, turned out",
+   "lemma": "laufen"
+  },
+  {
+   "form": "Erstaunen",
+   "context": "Bezug auf gemeinsames Wissen; betont Erstaunen",
+   "en": "astonishment, surprise",
+   "lemma": "das Erstaunen"
+  },
+  {
+   "form": "verstärkt",
+   "context": "verstärkt Vorwurf oder Wunsch",
+   "en": "intensifies",
+   "lemma": "verstärken"
+  },
+  {
+   "form": "Vorwurf",
+   "context": "verstärkt Vorwurf oder Wunsch",
+   "en": "reproach, accusation",
+   "lemma": "der Vorwurf"
+  },
+  {
+   "form": "schränkt",
+   "context": "räumt ein, schränkt dann ein",
+   "en": "qualifies, limits",
+   "lemma": "einschränken"
+  },
+  {
+   "form": "abgemildert",
+   "context": "Das hättest du mir doch mal sagen können.doch + mal: Vorwurf, aber abgemildert",
+   "en": "softened",
+   "lemma": "abmildern"
+  },
+  {
+   "form": "erkenne",
+   "context": "Du hast ja recht, trotzdem ärgert es mich.ja = ich erkenne es an",
+   "en": "acknowledge",
+   "lemma": "anerkennen"
+  },
+  {
+   "form": "nun",
+   "context": "Das ist nun mal nicht zu ändern.nun mal: Resignation, beendet die Diskussion",
+   "en": "now; well",
+   "lemma": ""
+  },
+  {
+   "form": "Resignation",
+   "context": "Das ist nun mal nicht zu ändern.nun mal: Resignation, beendet die Diskussion",
+   "en": "resignation",
+   "lemma": "die Resignation"
+  },
+  {
+   "form": "schriftlicher",
+   "context": "Tipp: In schriftlicher formeller Kritik lässt man Modalpartikeln weg — dort wirken sie schnell unprofessionell. Im Gespräch dagegen klingt man ohne sie schroff.",
+   "en": "written",
+   "lemma": "schriftlich"
+  },
+  {
+   "form": "unprofessionell",
+   "context": "Tipp: In schriftlicher formeller Kritik lässt man Modalpartikeln weg — dort wirken sie schnell unprofessionell. Im Gespräch dagegen klingt man ohne sie schroff.",
+   "en": "unprofessional",
+   "lemma": ""
+  },
+  {
+   "form": "schroff",
+   "context": "Tipp: In schriftlicher formeller Kritik lässt man Modalpartikeln weg — dort wirken sie schnell unprofessionell. Im Gespräch dagegen klingt man ohne sie schroff.",
+   "en": "brusque, curt",
+   "lemma": ""
+  },
+  {
+   "form": "criticism",
+   "context": "die Kritik (Sg.) — EN: criticism · FR: la critiqueSachliche Kritik ist keine Beleidigung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "critiqueSachliche",
+   "context": "die Kritik (Sg.) — EN: criticism · FR: la critiqueSachliche Kritik ist keine Beleidigung.",
+   "en": "objective, factual",
+   "lemma": "sachlich"
+  },
+  {
+   "form": "Beleidigung",
+   "context": "die Kritik (Sg.) — EN: criticism · FR: la critiqueSachliche Kritik ist keine Beleidigung.",
+   "en": "insult",
+   "lemma": "die Beleidigung"
+  },
+  {
+   "form": "reproach",
+   "context": "jemandem einen Vorwurf machen — EN: to reproach sb. · FR: faire un reproche à qn.Ich will dir keinen Vorwurf machen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "reproche",
+   "context": "jemandem einen Vorwurf machen — EN: to reproach sb. · FR: faire un reproche à qn.Ich will dir keinen Vorwurf machen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rechtfertigen",
+   "context": "sich rechtfertigen — EN: to justify oneself · FR: se justifierDu musst dich nicht rechtfertigen.",
+   "en": "to justify",
+   "lemma": ""
+  },
+  {
+   "form": "justify",
+   "context": "sich rechtfertigen — EN: to justify oneself · FR: se justifierDu musst dich nicht rechtfertigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "justifierDu",
+   "context": "sich rechtfertigen — EN: to justify oneself · FR: se justifierDu musst dich nicht rechtfertigen.",
+   "en": "you",
+   "lemma": ""
+  },
+  {
+   "form": "relent",
+   "context": "einlenken — EN: to back down, relent · FR: céderIrgendwann muss einer einlenken.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "céderIrgendwann",
+   "context": "einlenken — EN: to back down, relent · FR: céderIrgendwann muss einer einlenken.",
+   "en": "at some point",
+   "lemma": ""
+  },
+  {
+   "form": "Streitpunkt",
+   "context": "der Streitpunkt, -e — EN: point of contention · FR: le point de litigeDer eigentliche Streitpunkt ist ein anderer.",
+   "en": "point of contention",
+   "lemma": "der Streitpunkt"
+  },
+  {
+   "form": "contention",
+   "context": "der Streitpunkt, -e — EN: point of contention · FR: le point de litigeDer eigentliche Streitpunkt ist ein anderer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "litigeDer",
+   "context": "der Streitpunkt, -e — EN: point of contention · FR: le point de litigeDer eigentliche Streitpunkt ist ein anderer.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "eigentliche",
+   "context": "der Streitpunkt, -e — EN: point of contention · FR: le point de litigeDer eigentliche Streitpunkt ist ein anderer.",
+   "en": "real, actual",
+   "lemma": "eigentlich"
+  },
+  {
+   "form": "deeskalieren",
+   "context": "eskalieren / deeskalieren — EN: to escalate / de-escalate · FR: s'envenimer / désamorcerEin ruhiger Ton hilft zu deeskalieren.",
+   "en": "to de-escalate",
+   "lemma": ""
+  },
+  {
+   "form": "de-escalate",
+   "context": "eskalieren / deeskalieren — EN: to escalate / de-escalate · FR: s'envenimer / désamorcerEin ruhiger Ton hilft zu deeskalieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'envenimer",
+   "context": "eskalieren / deeskalieren — EN: to escalate / de-escalate · FR: s'envenimer / désamorcerEin ruhiger Ton hilft zu deeskalieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "désamorcerEin",
+   "context": "eskalieren / deeskalieren — EN: to escalate / de-escalate · FR: s'envenimer / désamorcerEin ruhiger Ton hilft zu deeskalieren.",
+   "en": "a, an",
+   "lemma": ""
+  },
+  {
+   "form": "objective",
+   "context": "sachlich bleiben — EN: to stay objective · FR: rester objectifVersuchen wir, sachlich zu bleiben.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "objectifVersuchen",
+   "context": "sachlich bleiben — EN: to stay objective · FR: rester objectifVersuchen wir, sachlich zu bleiben.",
+   "en": "let’s try",
+   "lemma": "versuchen"
+  },
+  {
+   "form": "verletzen",
+   "context": "jemanden verletzen — EN: to hurt sb. · FR: blesser qn.Das hat mich wirklich verletzt.",
+   "en": "to hurt",
+   "lemma": ""
+  },
+  {
+   "form": "blesser",
+   "context": "jemanden verletzen — EN: to hurt sb. · FR: blesser qn.Das hat mich wirklich verletzt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verletzt",
+   "context": "jemanden verletzen — EN: to hurt sb. · FR: blesser qn.Das hat mich wirklich verletzt.",
+   "en": "hurt",
+   "lemma": "verletzen"
+  },
+  {
+   "form": "Schuldzuweisung",
+   "context": "die Schuldzuweisung, -en — EN: assignment of blame · FR: l'attribution de responsabilitéSchuldzuweisungen bringen uns nicht weiter.",
+   "en": "assignment of blame",
+   "lemma": "die Schuldzuweisung"
+  },
+  {
+   "form": "assignment",
+   "context": "die Schuldzuweisung, -en — EN: assignment of blame · FR: l'attribution de responsabilitéSchuldzuweisungen bringen uns nicht weiter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "blame",
+   "context": "die Schuldzuweisung, -en — EN: assignment of blame · FR: l'attribution de responsabilitéSchuldzuweisungen bringen uns nicht weiter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'attribution",
+   "context": "die Schuldzuweisung, -en — EN: assignment of blame · FR: l'attribution de responsabilitéSchuldzuweisungen bringen uns nicht weiter.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "responsabilitéSchuldzuweisungen",
+   "context": "die Schuldzuweisung, -en — EN: assignment of blame · FR: l'attribution de responsabilitéSchuldzuweisungen bringen uns nicht weiter.",
+   "en": "assigning blame",
+   "lemma": "die Schuldzuweisung"
+  },
+  {
+   "form": "nachtragend",
+   "context": "nachtragend — EN: unforgiving, resentful · FR: rancunierIch bin wirklich nicht nachtragend.",
+   "en": "resentful, unforgiving",
+   "lemma": ""
+  },
+  {
+   "form": "unforgiving",
+   "context": "nachtragend — EN: unforgiving, resentful · FR: rancunierIch bin wirklich nicht nachtragend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "resentful",
+   "context": "nachtragend — EN: unforgiving, resentful · FR: rancunierIch bin wirklich nicht nachtragend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rancunierIch",
+   "context": "nachtragend — EN: unforgiving, resentful · FR: rancunierIch bin wirklich nicht nachtragend.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "apologise",
+   "context": "sich entschuldigen für — EN: to apologise for · FR: s'excuser deIch entschuldige mich für meinen Ton.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "s'excuser",
+   "context": "sich entschuldigen für — EN: to apologise for · FR: s'excuser deIch entschuldige mich für meinen Ton.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "entschuldige",
+   "context": "sich entschuldigen für — EN: to apologise for · FR: s'excuser deIch entschuldige mich für meinen Ton.",
+   "en": "apologise",
+   "lemma": "sich entschuldigen"
+  },
+  {
+   "form": "compromisAm",
+   "context": "der Kompromiss, -e — EN: compromise · FR: le compromisAm Ende fanden wir einen Kompromiss.",
+   "en": "at the, in the",
+   "lemma": ""
+  },
+  {
+   "form": "interrupt",
+   "context": "jemandem ins Wort fallen — EN: to interrupt sb. · FR: couper la parole à qn.Bitte fall mir nicht ständig ins Wort.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "couper",
+   "context": "jemandem ins Wort fallen — EN: to interrupt sb. · FR: couper la parole à qn.Bitte fall mir nicht ständig ins Wort.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "parole",
+   "context": "jemandem ins Wort fallen — EN: to interrupt sb. · FR: couper la parole à qn.Bitte fall mir nicht ständig ins Wort.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "clearing",
+   "context": "die Aussprache (Sg.) — EN: clearing the air, frank talk · FR: l'explication, la mise au pointNach der Aussprache war die Luft rein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "air",
+   "context": "die Aussprache (Sg.) — EN: clearing the air, frank talk · FR: l'explication, la mise au pointNach der Aussprache war die Luft rein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "frank",
+   "context": "die Aussprache (Sg.) — EN: clearing the air, frank talk · FR: l'explication, la mise au pointNach der Aussprache war die Luft rein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "talk",
+   "context": "die Aussprache (Sg.) — EN: clearing the air, frank talk · FR: l'explication, la mise au pointNach der Aussprache war die Luft rein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'explication",
+   "context": "die Aussprache (Sg.) — EN: clearing the air, frank talk · FR: l'explication, la mise au pointNach der Aussprache war die Luft rein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pointNach",
+   "context": "die Aussprache (Sg.) — EN: clearing the air, frank talk · FR: l'explication, la mise au pointNach der Aussprache war die Luft rein.",
+   "en": "after",
+   "lemma": ""
+  },
+  {
+   "form": "schiefgelaufen",
+   "context": "Aus meiner Sicht ist da etwas schiefgelaufen.",
+   "en": "gone wrong",
+   "lemma": "schieflaufen"
+  },
+  {
+   "form": "nachvollziehen",
+   "context": "Das kann ich nachvollziehen.",
+   "en": "to understand, follow",
+   "lemma": ""
+  },
+  {
+   "form": "folgendem",
+   "context": "Das sehe ich anders, und zwar aus folgendem Grund: …",
+   "en": "following",
+   "lemma": "folgend"
+  },
+  {
+   "form": "künftig",
+   "context": "Dann machen wir es künftig so.",
+   "en": "in future",
+   "lemma": ""
+  },
+  {
+   "form": "Sachliche",
+   "context": "Sachliche Kritik ist keine Beleidigung.",
+   "en": "objective, factual",
+   "lemma": "sachlich"
+  },
+  {
+   "form": "Schuldzuweisungen",
+   "context": "Schuldzuweisungen bringen uns nicht weiter.",
+   "en": "assigning blame",
+   "lemma": "die Schuldzuweisung"
+  },
+  {
+   "form": "freundlichsten",
+   "context": "Welche Partikel macht die Bitte am freundlichsten? „Hör mir ___ kurz zu.\"",
+   "en": "(the) friendliest",
+   "lemma": "freundlich"
+  },
+  {
+   "form": "verstärkter",
+   "context": "Warum hast du das ___ nicht früher gesagt? (verstärkter Vorwurf)",
+   "en": "intensified, stronger",
+   "lemma": "verstärkt"
+  },
+  {
+   "form": "deeskaliert",
+   "context": "Welche Reaktion deeskaliert am stärksten?",
+   "en": "de-escalates",
+   "lemma": "deeskalieren"
+  },
+  {
+   "form": "stärksten",
+   "context": "Welche Reaktion deeskaliert am stärksten?",
+   "en": "(the) most, strongest",
+   "lemma": "stark"
+  },
+  {
+   "form": "berechtigten",
+   "context": "Ein Kollege hat Ihre Arbeit in einer E-Mail an das ganze Team kritisiert. Antworten Sie schriftlich und sachlich. Umfang: 160–200 Wörter Checkliste: • Formelle Anrede und Schlussformel. • Nehmen Sie den berechtigten Teil der Kritik an. • Widersprechen Sie dem unberechtigten Teil mit einem Argument. • Keine Modalpartikeln, keine Vorwürfe — ein konkreter Vorschlag zum Schluss.",
+   "en": "justified",
+   "lemma": "berechtigt"
+  },
+  {
+   "form": "unberechtigten",
+   "context": "Ein Kollege hat Ihre Arbeit in einer E-Mail an das ganze Team kritisiert. Antworten Sie schriftlich und sachlich. Umfang: 160–200 Wörter Checkliste: • Formelle Anrede und Schlussformel. • Nehmen Sie den berechtigten Teil der Kritik an. • Widersprechen Sie dem unberechtigten Teil mit einem Argument. • Keine Modalpartikeln, keine Vorwürfe — ein konkreter Vorschlag zum Schluss.",
+   "en": "unjustified",
+   "lemma": "unberechtigt"
+  },
+  {
+   "form": "Argument",
+   "context": "Ein Kollege hat Ihre Arbeit in einer E-Mail an das ganze Team kritisiert. Antworten Sie schriftlich und sachlich. Umfang: 160–200 Wörter Checkliste: • Formelle Anrede und Schlussformel. • Nehmen Sie den berechtigten Teil der Kritik an. • Widersprechen Sie dem unberechtigten Teil mit einem Argument. • Keine Modalpartikeln, keine Vorwürfe — ein konkreter Vorschlag zum Schluss.",
+   "en": "argument",
+   "lemma": "das Argument"
+  },
+  {
+   "form": "konkreter",
+   "context": "Ein Kollege hat Ihre Arbeit in einer E-Mail an das ganze Team kritisiert. Antworten Sie schriftlich und sachlich. Umfang: 160–200 Wörter Checkliste: • Formelle Anrede und Schlussformel. • Nehmen Sie den berechtigten Teil der Kritik an. • Widersprechen Sie dem unberechtigten Teil mit einem Argument. • Keine Modalpartikeln, keine Vorwürfe — ein konkreter Vorschlag zum Schluss.",
+   "en": "concrete, specific",
+   "lemma": "konkret"
+  }
+ ]
+}
