@@ -1,0 +1,681 @@
+{
+ "level": "B1",
+ "lesson": 19,
+ "title": "Tourismus — Je länger ich unterwegs bin, desto mehr entdecke ich",
+ "lines": [
+  {
+   "de": "Reisen planen und bewerten — Verhältnisse ausdrücken und freundlicher klingen.",
+   "en": "Planning and evaluating trips — expressing proportions and sounding friendlier."
+  },
+  {
+   "de": "eine Reise beschreiben und Empfehlungen geben",
+   "en": "describe a trip and give recommendations"
+  },
+  {
+   "de": "je … desto/umso korrekt bilden",
+   "en": "form je … desto/umso correctly"
+  },
+  {
+   "de": "mit Modalpartikeln freundlicher und natürlicher sprechen",
+   "en": "speak in a friendlier, more natural way with modal particles (Modalpartikeln)"
+  },
+  {
+   "de": "Grammatik: je … desto / umso",
+   "en": "Grammar: je … desto / umso"
+  },
+  {
+   "de": "Diese zweiteilige Konjunktion zeigt, dass zwei Dinge sich gemeinsam verändern. Der je-Teil ist ein Nebensatz (Verb am Ende), der desto-Teil ein Hauptsatz (Verb direkt nach desto + Komparativ). In beiden Teilen steht ein Komparativ.",
+   "en": "This two-part conjunction shows that two things change together. The je part is a subordinate clause (verb at the end), the desto part is a main clause (verb directly after desto + comparative). Both parts contain a comparative."
+  },
+  {
+   "de": "Teil",
+   "en": "Part"
+  },
+  {
+   "de": "Nebensatz",
+   "en": "Subordinate clause"
+  },
+  {
+   "de": "je + Komparativ … Verb",
+   "en": "je + comparative … verb"
+  },
+  {
+   "de": "Je früher man bucht,",
+   "en": "The earlier you book,"
+  },
+  {
+   "de": "desto/umso + Komparativ + Verb + Subjekt",
+   "en": "desto/umso + comparative + verb + subject"
+  },
+  {
+   "de": "desto günstiger wird die Reise.",
+   "en": "the cheaper the trip will be."
+  },
+  {
+   "de": "ganzer Satz",
+   "en": "Whole sentence"
+  },
+  {
+   "de": "Je länger der Urlaub dauert, umso entspannter werde ich.",
+   "en": "The longer the holiday lasts, the more relaxed I become."
+  },
+  {
+   "de": "Je mehr Menschen mitfahren, desto billiger wird es für alle.mehr = Komparativ von viel",
+   "en": "The more people come along, the cheaper it gets for everyone. mehr = comparative of viel"
+  },
+  {
+   "de": "Je älter ich wurde, desto lieber reiste ich allein.auch in der Vergangenheit möglich",
+   "en": "The older I got, the more I preferred to travel alone. also possible in the past"
+  },
+  {
+   "de": "Tipp: desto und umso sind austauschbar. Der Hauptsatz folgt immer auf den je-Satz — nie umgekehrt.",
+   "en": "Tip: desto and umso are interchangeable. The main clause always follows the je clause — never the other way round."
+  },
+  {
+   "de": "Grammatik: Modalpartikeln",
+   "en": "Grammar: modal particles (Modalpartikeln)"
+  },
+  {
+   "de": "Modalpartikeln verändern den Ton eines Satzes, nicht seinen Inhalt. Sie stehen im Mittelfeld und sind im gesprochenen Deutsch sehr häufig. Ohne sie klingt man oft hart oder unfreundlich.",
+   "en": "Modal particles change the tone of a sentence, not its content. They stand in the middle field (Mittelfeld) and are very common in spoken German. Without them, you often sound harsh or unfriendly."
+  },
+  {
+   "de": "Partikel",
+   "en": "Particle"
+  },
+  {
+   "de": "Wirkung",
+   "en": "Effect"
+  },
+  {
+   "de": "freundliche Frage",
+   "en": "friendly question"
+  },
+  {
+   "de": "Wo bist du denn gewesen?",
+   "en": "So where have you been?"
+  },
+  {
+   "de": "eigentlich",
+   "en": "actually, by the way"
+  },
+  {
+   "de": "beiläufige Frage",
+   "en": "casual question"
+  },
+  {
+   "de": "Gibt es hier eigentlich ein Museum?",
+   "en": "Is there a museum here, by the way?"
+  },
+  {
+   "de": "doch",
+   "en": "why don't you …"
+  },
+  {
+   "de": "freundliche Aufforderung / Bitte",
+   "en": "friendly prompt / request"
+  },
+  {
+   "de": "ja",
+   "en": "as you know"
+  },
+  {
+   "de": "Bezug auf gemeinsames Wissen",
+   "en": "refers to shared knowledge"
+  },
+  {
+   "de": "Du warst ja schon einmal dort.",
+   "en": "You've already been there once, after all."
+  },
+  {
+   "de": "mal",
+   "en": "just"
+  },
+  {
+   "de": "macht eine Bitte kleiner",
+   "en": "softens a request"
+  },
+  {
+   "de": "Schau mal kurz auf die Karte.",
+   "en": "Just take a quick look at the map."
+  },
+  {
+   "de": "Wie war es denn in den Bergen?echtes Interesse",
+   "en": "So how was it in the mountains? genuine interest"
+  },
+  {
+   "de": "Fahr doch mal mit dem Zug statt mit dem Auto.doch + mal = freundlicher Vorschlag",
+   "en": "Why don't you take the train instead of the car for once? doch + mal = friendly suggestion"
+  },
+  {
+   "de": "Tipp: Modalpartikeln werden nie betont und stehen nie auf Position 1.",
+   "en": "Tip: Modal particles are never stressed and never stand in position 1."
+  },
+  {
+   "de": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementWir haben eine günstige Unterkunft gefunden.",
+   "en": "Example: We found affordable accommodation."
+  },
+  {
+   "de": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueDie bekannteste Sehenswürdigkeit ist der Dom.",
+   "en": "Example: The most famous sight is the cathedral."
+  },
+  {
+   "de": "buchen — EN: to book · FR: réserverJe früher man bucht, desto billiger wird es.",
+   "en": "Example: The earlier you book, the cheaper it gets."
+  },
+  {
+   "de": "die Reiseroute, -n — EN: itinerary · FR: l'itinéraireUnsere Reiseroute führt durch drei Länder.",
+   "en": "Example: Our route goes through three countries."
+  },
+  {
+   "de": "der Ausflug, ¨-e — EN: excursion · FR: l'excursionWir machen einen Ausflug an den See.",
+   "en": "Example: We are going on an excursion to the lake."
+  },
+  {
+   "de": "sich lohnen — EN: to be worth it · FR: valoir la peineDer Umweg lohnt sich wirklich.",
+   "en": "Example: The detour is really worth it."
+  },
+  {
+   "de": "überfüllt — EN: overcrowded · FR: bondéIm August ist alles überfüllt.",
+   "en": "Example: In August everything is overcrowded."
+  },
+  {
+   "de": "die Nebensaison (Sg.) — EN: off-season · FR: la basse saisonIn der Nebensaison ist es viel ruhiger.",
+   "en": "Example: In the off-season it is much quieter."
+  },
+  {
+   "de": "der Reiseführer, - — EN: guidebook; tour guide · FR: le guideIm Reiseführer steht ein guter Tipp dazu.",
+   "en": "Example: There's a good tip about it in the guidebook."
+  },
+  {
+   "de": "die Landschaft, -en — EN: landscape · FR: le paysageDie Landschaft dort ist atemberaubend.",
+   "en": "Example: The landscape there is breathtaking."
+  },
+  {
+   "de": "entdecken — EN: to discover · FR: découvrirWir haben ein kleines Dorf entdeckt.",
+   "en": "Example: We discovered a small village."
+  },
+  {
+   "de": "eine Reise empfehlen",
+   "en": "Recommending a trip"
+  },
+  {
+   "de": "Besonders lohnt sich ein Besuch in …",
+   "en": "A visit to … is particularly worthwhile."
+  },
+  {
+   "de": "Was du dir unbedingt ansehen solltest, ist …",
+   "en": "What you really must see is …"
+  },
+  {
+   "de": "Fahr doch mal in der Nebensaison.",
+   "en": "Why don't you go in the off-season?"
+  },
+  {
+   "de": "von einer Reise erzählen",
+   "en": "Talking about a trip"
+  },
+  {
+   "de": "Am beeindruckendsten fand ich …",
+   "en": "What I found most impressive was …"
+  },
+  {
+   "de": "Was mich überrascht hat, war …",
+   "en": "What surprised me was …"
+  },
+  {
+   "de": "Je länger wir dort waren, desto besser gefiel es uns.",
+   "en": "The longer we were there, the more we liked it."
+  },
+  {
+   "de": "Wie war es denn dort?",
+   "en": "So how was it there?"
+  },
+  {
+   "de": "Gibt es eigentlich auch günstige Unterkünfte?",
+   "en": "Is there also cheap accommodation, by the way?"
+  },
+  {
+   "de": "Wir haben eine günstige Unterkunft gefunden.",
+   "en": "We found affordable accommodation."
+  },
+  {
+   "de": "Die bekannteste Sehenswürdigkeit ist der Dom.",
+   "en": "The most famous sight is the cathedral."
+  },
+  {
+   "de": "Je früher man bucht, desto billiger wird es.",
+   "en": "The earlier you book, the cheaper it gets."
+  },
+  {
+   "de": "Unsere Reiseroute führt durch drei Länder.",
+   "en": "Our route goes through three countries."
+  },
+  {
+   "de": "Wir machen einen Ausflug an den See.",
+   "en": "We are going on an excursion to the lake."
+  },
+  {
+   "de": "Der Umweg lohnt sich wirklich.",
+   "en": "The detour is really worth it."
+  },
+  {
+   "de": "Im August ist alles überfüllt.",
+   "en": "In August everything is overcrowded."
+  },
+  {
+   "de": "In der Nebensaison ist es viel ruhiger.",
+   "en": "In the off-season it is much quieter."
+  },
+  {
+   "de": "Im Reiseführer steht ein guter Tipp dazu.",
+   "en": "There's a good tip about it in the guidebook."
+  },
+  {
+   "de": "Die Landschaft dort ist atemberaubend.",
+   "en": "The landscape there is breathtaking."
+  },
+  {
+   "de": "Wir haben ein kleines Dorf entdeckt.",
+   "en": "We discovered a small village."
+  },
+  {
+   "de": "___ früher man bucht, ___ billiger wird der Flug.",
+   "en": "___ earlier you book, ___ cheaper the flight gets."
+  },
+  {
+   "de": "Welche Partikel macht die Frage freundlicher? „Wo warst du ___?“",
+   "en": "Which particle makes the question friendlier? “Where were you ___?”"
+  },
+  {
+   "de": "Komm ___ einfach mit! (freundliche Aufforderung)",
+   "en": "Just come ___ along! (friendly prompt)"
+  },
+  {
+   "de": "___ länger die Fahrt dauerte, ___ müder wurden wir.",
+   "en": "___ longer the journey lasted, ___ more tired we became."
+  },
+  {
+   "de": "je + Komparativ im Nebensatz, desto/umso + Komparativ im Hauptsatz.",
+   "en": "je + comparative in the subordinate clause, desto/umso + comparative in the main clause."
+  },
+  {
+   "de": "Nach desto + Komparativ folgt das Verb, dann das Subjekt.",
+   "en": "After desto + comparative comes the verb, then the subject."
+  },
+  {
+   "de": "denn signalisiert echtes Interesse in Fragen.",
+   "en": "denn signals genuine interest in questions."
+  },
+  {
+   "de": "doch macht eine Aufforderung einladend statt befehlend.",
+   "en": "doch makes a request sound inviting instead of commanding."
+  },
+  {
+   "de": "Auch in der Vergangenheit mit je … desto.",
+   "en": "je … desto also works in the past."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Reisen",
+   "context": "Reisen planen und bewerten — Verhältnisse ausdrücken und freundlicher klingen.",
+   "en": "trips; travelling",
+   "lemma": "die Reise"
+  },
+  {
+   "form": "Verhältnisse",
+   "context": "Reisen planen und bewerten — Verhältnisse ausdrücken und freundlicher klingen.",
+   "en": "proportions, relations; conditions",
+   "lemma": "das Verhältnis"
+  },
+  {
+   "form": "umso",
+   "context": "je … desto/umso korrekt bilden",
+   "en": "the (je … umso = the … the)",
+   "lemma": ""
+  },
+  {
+   "form": "Modalpartikeln",
+   "context": "mit Modalpartikeln freundlicher und natürlicher sprechen",
+   "en": "modal particles",
+   "lemma": "die Modalpartikel"
+  },
+  {
+   "form": "je-Teil",
+   "context": "Diese zweiteilige Konjunktion zeigt, dass zwei Dinge sich gemeinsam verändern. Der je-Teil ist ein Nebensatz (Verb am Ende), der desto-Teil ein Hauptsatz (Verb direkt nach desto + Komparativ). In beiden Teilen steht ein Komparativ.",
+   "en": "je part",
+   "lemma": "der je-Teil"
+  },
+  {
+   "form": "desto-Teil",
+   "context": "Diese zweiteilige Konjunktion zeigt, dass zwei Dinge sich gemeinsam verändern. Der je-Teil ist ein Nebensatz (Verb am Ende), der desto-Teil ein Hauptsatz (Verb direkt nach desto + Komparativ). In beiden Teilen steht ein Komparativ.",
+   "en": "desto part",
+   "lemma": "der desto-Teil"
+  },
+  {
+   "form": "Teilen",
+   "context": "Diese zweiteilige Konjunktion zeigt, dass zwei Dinge sich gemeinsam verändern. Der je-Teil ist ein Nebensatz (Verb am Ende), der desto-Teil ein Hauptsatz (Verb direkt nach desto + Komparativ). In beiden Teilen steht ein Komparativ.",
+   "en": "parts",
+   "lemma": "der Teil"
+  },
+  {
+   "form": "bucht",
+   "context": "Je früher man bucht,",
+   "en": "books",
+   "lemma": "buchen"
+  },
+  {
+   "form": "ganzer",
+   "context": "ganzer Satz",
+   "en": "whole, entire",
+   "lemma": "ganz"
+  },
+  {
+   "form": "länger",
+   "context": "Je länger der Urlaub dauert, umso entspannter werde ich.",
+   "en": "longer",
+   "lemma": "lang"
+  },
+  {
+   "form": "entspannter",
+   "context": "Je länger der Urlaub dauert, umso entspannter werde ich.",
+   "en": "more relaxed",
+   "lemma": "entspannt"
+  },
+  {
+   "form": "mitfahren",
+   "context": "Je mehr Menschen mitfahren, desto billiger wird es für alle.mehr = Komparativ von viel",
+   "en": "to come along, travel with",
+   "lemma": ""
+  },
+  {
+   "form": "reiste",
+   "context": "Je älter ich wurde, desto lieber reiste ich allein.auch in der Vergangenheit möglich",
+   "en": "travelled",
+   "lemma": "reisen"
+  },
+  {
+   "form": "austauschbar",
+   "context": "Tipp: desto und umso sind austauschbar. Der Hauptsatz folgt immer auf den je-Satz — nie umgekehrt.",
+   "en": "interchangeable",
+   "lemma": ""
+  },
+  {
+   "form": "je-Satz",
+   "context": "Tipp: desto und umso sind austauschbar. Der Hauptsatz folgt immer auf den je-Satz — nie umgekehrt.",
+   "en": "je clause",
+   "lemma": "der je-Satz"
+  },
+  {
+   "form": "umgekehrt",
+   "context": "Tipp: desto und umso sind austauschbar. Der Hauptsatz folgt immer auf den je-Satz — nie umgekehrt.",
+   "en": "the other way round",
+   "lemma": ""
+  },
+  {
+   "form": "Ton",
+   "context": "Modalpartikeln verändern den Ton eines Satzes, nicht seinen Inhalt. Sie stehen im Mittelfeld und sind im gesprochenen Deutsch sehr häufig. Ohne sie klingt man oft hart oder unfreundlich.",
+   "en": "tone; sound",
+   "lemma": "der Ton"
+  },
+  {
+   "form": "Satzes",
+   "context": "Modalpartikeln verändern den Ton eines Satzes, nicht seinen Inhalt. Sie stehen im Mittelfeld und sind im gesprochenen Deutsch sehr häufig. Ohne sie klingt man oft hart oder unfreundlich.",
+   "en": "sentence (genitive)",
+   "lemma": "der Satz"
+  },
+  {
+   "form": "hart",
+   "context": "Modalpartikeln verändern den Ton eines Satzes, nicht seinen Inhalt. Sie stehen im Mittelfeld und sind im gesprochenen Deutsch sehr häufig. Ohne sie klingt man oft hart oder unfreundlich.",
+   "en": "harsh, hard",
+   "lemma": ""
+  },
+  {
+   "form": "Partikel",
+   "context": "Partikel",
+   "en": "particle",
+   "lemma": "die Partikel"
+  },
+  {
+   "form": "Wirkung",
+   "context": "Wirkung",
+   "en": "effect",
+   "lemma": "die Wirkung"
+  },
+  {
+   "form": "beiläufige",
+   "context": "beiläufige Frage",
+   "en": "casual, incidental",
+   "lemma": "beiläufig"
+  },
+  {
+   "form": "gemeinsames",
+   "context": "Bezug auf gemeinsames Wissen",
+   "en": "shared, common",
+   "lemma": "gemeinsam"
+  },
+  {
+   "form": "l'hébergementWir",
+   "context": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementWir haben eine günstige Unterkunft gefunden.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "günstige",
+   "context": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementWir haben eine günstige Unterkunft gefunden.",
+   "en": "affordable, cheap; favourable",
+   "lemma": "günstig"
+  },
+  {
+   "form": "gefunden",
+   "context": "die Unterkunft, ¨-e — EN: accommodation · FR: l'hébergementWir haben eine günstige Unterkunft gefunden.",
+   "en": "found",
+   "lemma": "finden"
+  },
+  {
+   "form": "touristiqueDie",
+   "context": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueDie bekannteste Sehenswürdigkeit ist der Dom.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bekannteste",
+   "context": "die Sehenswürdigkeit, -en — EN: sight, attraction · FR: le site touristiqueDie bekannteste Sehenswürdigkeit ist der Dom.",
+   "en": "most famous, best-known",
+   "lemma": "bekannt"
+  },
+  {
+   "form": "réserverJe",
+   "context": "buchen — EN: to book · FR: réserverJe früher man bucht, desto billiger wird es.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Reiseroute",
+   "context": "die Reiseroute, -n — EN: itinerary · FR: l'itinéraireUnsere Reiseroute führt durch drei Länder.",
+   "en": "route, itinerary",
+   "lemma": "die Reiseroute"
+  },
+  {
+   "form": "itinerary",
+   "context": "die Reiseroute, -n — EN: itinerary · FR: l'itinéraireUnsere Reiseroute führt durch drei Länder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'itinéraireUnsere",
+   "context": "die Reiseroute, -n — EN: itinerary · FR: l'itinéraireUnsere Reiseroute führt durch drei Länder.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "führt",
+   "context": "die Reiseroute, -n — EN: itinerary · FR: l'itinéraireUnsere Reiseroute führt durch drei Länder.",
+   "en": "leads, goes",
+   "lemma": "führen"
+  },
+  {
+   "form": "excursion",
+   "context": "der Ausflug, ¨-e — EN: excursion · FR: l'excursionWir machen einen Ausflug an den See.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'excursionWir",
+   "context": "der Ausflug, ¨-e — EN: excursion · FR: l'excursionWir machen einen Ausflug an den See.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "peineDer",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDer Umweg lohnt sich wirklich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Umweg",
+   "context": "sich lohnen — EN: to be worth it · FR: valoir la peineDer Umweg lohnt sich wirklich.",
+   "en": "detour",
+   "lemma": "der Umweg"
+  },
+  {
+   "form": "überfüllt",
+   "context": "überfüllt — EN: overcrowded · FR: bondéIm August ist alles überfüllt.",
+   "en": "overcrowded",
+   "lemma": ""
+  },
+  {
+   "form": "overcrowded",
+   "context": "überfüllt — EN: overcrowded · FR: bondéIm August ist alles überfüllt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bondéIm",
+   "context": "überfüllt — EN: overcrowded · FR: bondéIm August ist alles überfüllt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Nebensaison",
+   "context": "die Nebensaison (Sg.) — EN: off-season · FR: la basse saisonIn der Nebensaison ist es viel ruhiger.",
+   "en": "off-season",
+   "lemma": "die Nebensaison"
+  },
+  {
+   "form": "off-season",
+   "context": "die Nebensaison (Sg.) — EN: off-season · FR: la basse saisonIn der Nebensaison ist es viel ruhiger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "basse",
+   "context": "die Nebensaison (Sg.) — EN: off-season · FR: la basse saisonIn der Nebensaison ist es viel ruhiger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "saisonIn",
+   "context": "die Nebensaison (Sg.) — EN: off-season · FR: la basse saisonIn der Nebensaison ist es viel ruhiger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Reiseführer",
+   "context": "der Reiseführer, - — EN: guidebook; tour guide · FR: le guideIm Reiseführer steht ein guter Tipp dazu.",
+   "en": "guidebook; tour guide",
+   "lemma": "der Reiseführer"
+  },
+  {
+   "form": "guidebook",
+   "context": "der Reiseführer, - — EN: guidebook; tour guide · FR: le guideIm Reiseführer steht ein guter Tipp dazu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "guide",
+   "context": "der Reiseführer, - — EN: guidebook; tour guide · FR: le guideIm Reiseführer steht ein guter Tipp dazu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "guideIm",
+   "context": "der Reiseführer, - — EN: guidebook; tour guide · FR: le guideIm Reiseführer steht ein guter Tipp dazu.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "atemberaubend",
+   "context": "die Landschaft, -en — EN: landscape · FR: le paysageDie Landschaft dort ist atemberaubend.",
+   "en": "breathtaking",
+   "lemma": ""
+  },
+  {
+   "form": "entdecken",
+   "context": "entdecken — EN: to discover · FR: découvrirWir haben ein kleines Dorf entdeckt.",
+   "en": "to discover",
+   "lemma": ""
+  },
+  {
+   "form": "discover",
+   "context": "entdecken — EN: to discover · FR: découvrirWir haben ein kleines Dorf entdeckt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "découvrirWir",
+   "context": "entdecken — EN: to discover · FR: découvrirWir haben ein kleines Dorf entdeckt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Dorf",
+   "context": "entdecken — EN: to discover · FR: découvrirWir haben ein kleines Dorf entdeckt.",
+   "en": "village",
+   "lemma": "das Dorf"
+  },
+  {
+   "form": "entdeckt",
+   "context": "entdecken — EN: to discover · FR: découvrirWir haben ein kleines Dorf entdeckt.",
+   "en": "discovered",
+   "lemma": "entdecken"
+  },
+  {
+   "form": "ansehen",
+   "context": "Was du dir unbedingt ansehen solltest, ist …",
+   "en": "to look at, see",
+   "lemma": ""
+  },
+  {
+   "form": "beeindruckendsten",
+   "context": "Am beeindruckendsten fand ich …",
+   "en": "most impressive",
+   "lemma": "beeindruckend"
+  },
+  {
+   "form": "Unterkünfte",
+   "context": "Gibt es eigentlich auch günstige Unterkünfte?",
+   "en": "places to stay, accommodation",
+   "lemma": "die Unterkunft"
+  },
+  {
+   "form": "Flug",
+   "context": "___ früher man bucht, ___ billiger wird der Flug.",
+   "en": "flight",
+   "lemma": "der Flug"
+  },
+  {
+   "form": "dauerte",
+   "context": "___ länger die Fahrt dauerte, ___ müder wurden wir.",
+   "en": "lasted",
+   "lemma": "dauern"
+  },
+  {
+   "form": "müder",
+   "context": "___ länger die Fahrt dauerte, ___ müder wurden wir.",
+   "en": "more tired",
+   "lemma": "müde"
+  }
+ ]
+}
