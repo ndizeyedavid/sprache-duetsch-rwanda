@@ -1,0 +1,697 @@
+{
+ "level": "B1",
+ "lesson": 13,
+ "title": "Sprache — Deshalb kam es zu einem Missverständnis",
+ "lines": [
+  {
+   "de": "Über Sprache, Dialekte und Missverständnisse sprechen — Gründe und Folgen verknüpfen.",
+   "en": "Talking about language, dialects and misunderstandings — linking reasons and consequences."
+  },
+  {
+   "de": "ein sprachliches Missverständnis erzählen und aufklären",
+   "en": "talk about a language misunderstanding and clear it up"
+  },
+  {
+   "de": "Gründe und Folgen mit Konnektoren und Adverbien ausdrücken",
+   "en": "express reasons and consequences with connectors and adverbs"
+  },
+  {
+   "de": "die kausale Präposition wegen + Genitiv verwenden",
+   "en": "use the causal preposition wegen + genitive"
+  },
+  {
+   "de": "Grammatik: Gründe und Folgen ausdrücken",
+   "en": "Grammar: expressing reasons and consequences"
+  },
+  {
+   "de": "Für denselben Zusammenhang gibt es im Deutschen mehrere Mittel — sie unterscheiden sich nur im Satzbau. Achten Sie darauf, ob Sie einen Nebensatz, einen Hauptsatz oder eine Präposition brauchen.",
+   "en": "German has several ways to express the same relationship — they differ only in sentence structure. Pay attention to whether you need a subordinate clause (Nebensatz), a main clause (Hauptsatz) or a preposition."
+  },
+  {
+   "de": "Mittel",
+   "en": "Means"
+  },
+  {
+   "de": "Typ",
+   "en": "Type"
+  },
+  {
+   "de": "weil / da",
+   "en": "because / since"
+  },
+  {
+   "de": "Nebensatz (Verb am Ende)",
+   "en": "Subordinate clause (verb at the end)"
+  },
+  {
+   "de": "Es gab ein Missverständnis, weil sie Dialekt sprach.",
+   "en": "There was a misunderstanding because she spoke in dialect."
+  },
+  {
+   "de": "denn",
+   "en": "because, for"
+  },
+  {
+   "de": "Hauptsatz (normale Wortstellung)",
+   "en": "Main clause (normal word order)"
+  },
+  {
+   "de": "Es gab ein Missverständnis, denn sie sprach Dialekt.",
+   "en": "There was a misunderstanding, because she spoke in dialect."
+  },
+  {
+   "de": "deshalb / darum / deswegen / daher / aus diesem Grund",
+   "en": "therefore / that's why / because of that / hence / for this reason"
+  },
+  {
+   "de": "Hauptsatz, Position 1",
+   "en": "Main clause, position 1"
+  },
+  {
+   "de": "Sie sprach Dialekt. Deshalb gab es ein Missverständnis.",
+   "en": "She spoke in dialect. That's why there was a misunderstanding."
+  },
+  {
+   "de": "nämlich",
+   "en": "you see, namely"
+  },
+  {
+   "de": "Hauptsatz, nach dem Verb",
+   "en": "Main clause, after the verb"
+  },
+  {
+   "de": "Ich habe sie nicht verstanden. Sie sprach nämlich Dialekt.",
+   "en": "I didn't understand her. She was speaking in dialect, you see."
+  },
+  {
+   "de": "wegen + Genitiv",
+   "en": "because of + genitive"
+  },
+  {
+   "de": "Präposition + Nomen",
+   "en": "Preposition + noun"
+  },
+  {
+   "de": "Wegen des Dialekts habe ich nichts verstanden.",
+   "en": "Because of the dialect, I didn't understand anything."
+  },
+  {
+   "de": "Aus diesem Grund musste ich dreimal nachfragen.Folge, Position 1 → Verb auf Position 2",
+   "en": "For this reason, I had to ask three times. Consequence, position 1 → verb in position 2"
+  },
+  {
+   "de": "Ich konnte ihn nicht verstehen. Er sprach nämlich sehr schnell.nämlich steht nie auf Position 1",
+   "en": "I couldn't understand him. He was speaking very fast, you see. nämlich never goes in position 1"
+  },
+  {
+   "de": "Wegen der starken Betonung klang das Wort ganz anders.wegen + Genitiv feminin",
+   "en": "Because of the strong stress, the word sounded completely different. wegen + genitive feminine"
+  },
+  {
+   "de": "Tipp: nämlich erklärt rückwirkend den vorherigen Satz und steht immer im Mittelfeld — nie am Satzanfang.",
+   "en": "Tip: nämlich explains the previous sentence after the fact and always stands in the middle field (Mittelfeld) — never at the start of the sentence."
+  },
+  {
+   "de": "das Missverständnis, -se — EN: misunderstanding · FR: le malentenduEs war nur ein kleines Missverständnis.",
+   "en": "Example: It was just a small misunderstanding."
+  },
+  {
+   "de": "der Dialekt, -e — EN: dialect · FR: le dialecteIn Bayern spricht man einen ganz eigenen Dialekt.",
+   "en": "Example: In Bavaria, people speak a dialect all of their own."
+  },
+  {
+   "de": "die Aussprache (Sg.) — EN: pronunciation · FR: la prononciationSeine Aussprache ist sehr deutlich.",
+   "en": "Example: His pronunciation is very clear."
+  },
+  {
+   "de": "die Betonung, -en — EN: stress, emphasis · FR: l'accentuationDie Betonung liegt auf der ersten Silbe.",
+   "en": "Example: The stress is on the first syllable."
+  },
+  {
+   "de": "der Akzent, -e — EN: accent · FR: l'accentMan hört, dass sie einen leichten Akzent hat.",
+   "en": "Example: You can hear that she has a slight accent."
+  },
+  {
+   "de": "die Bedeutung, -en — EN: meaning · FR: la significationDas Wort hat zwei Bedeutungen.",
+   "en": "Example: The word has two meanings."
+  },
+  {
+   "de": "nachfragen — EN: to ask for clarification · FR: demander des précisionsFragen Sie ruhig nach, wenn etwas unklar ist.",
+   "en": "Example: Feel free to ask if something is unclear."
+  },
+  {
+   "de": "sich verständigen — EN: to communicate, make oneself understood · FR: se faire comprendreMit Händen und Füßen konnten wir uns verständigen.",
+   "en": "Example: We managed to communicate using our hands and feet."
+  },
+  {
+   "de": "peinlich — EN: embarrassing · FR: gênantDas war mir ziemlich peinlich.",
+   "en": "Example: That was rather embarrassing for me."
+  },
+  {
+   "de": "verwechseln — EN: to mix up, confuse · FR: confondreIch habe die beiden Wörter verwechselt.",
+   "en": "Example: I mixed up the two words."
+  },
+  {
+   "de": "der Ausdruck, ¨-e — EN: expression · FR: l'expressionDieser Ausdruck ist sehr umgangssprachlich.",
+   "en": "Example: This expression is very colloquial."
+  },
+  {
+   "de": "Entschuldigung, das habe ich nicht ganz verstanden.",
+   "en": "Sorry, I didn't quite understand that."
+  },
+  {
+   "de": "Könnten Sie das bitte noch einmal wiederholen?",
+   "en": "Could you please repeat that?"
+  },
+  {
+   "de": "Was bedeutet … genau?",
+   "en": "What exactly does … mean?"
+  },
+  {
+   "de": "ein Missverständnis aufklären",
+   "en": "clearing up a misunderstanding"
+  },
+  {
+   "de": "Da haben wir aneinander vorbeigeredet.",
+   "en": "We were talking at cross purposes there."
+  },
+  {
+   "de": "Ich glaube, da liegt ein Missverständnis vor.",
+   "en": "I think there's a misunderstanding here."
+  },
+  {
+   "de": "So war das gar nicht gemeint.",
+   "en": "That's not what I meant at all."
+  },
+  {
+   "de": "eine Geschichte erzählen",
+   "en": "telling a story"
+  },
+  {
+   "de": "Folgendes ist mir passiert: …",
+   "en": "This is what happened to me: …"
+  },
+  {
+   "de": "In meiner Sprache bedeutet das nämlich …",
+   "en": "You see, in my language that means …"
+  },
+  {
+   "de": "Da haben alle gelacht.",
+   "en": "Then everyone laughed."
+  },
+  {
+   "de": "Es war nur ein kleines Missverständnis.",
+   "en": "It was just a small misunderstanding."
+  },
+  {
+   "de": "In Bayern spricht man einen ganz eigenen Dialekt.",
+   "en": "In Bavaria, people speak a dialect all of their own."
+  },
+  {
+   "de": "Seine Aussprache ist sehr deutlich.",
+   "en": "His pronunciation is very clear."
+  },
+  {
+   "de": "Die Betonung liegt auf der ersten Silbe.",
+   "en": "The stress is on the first syllable."
+  },
+  {
+   "de": "Man hört, dass sie einen leichten Akzent hat.",
+   "en": "You can hear that she has a slight accent."
+  },
+  {
+   "de": "Das Wort hat zwei Bedeutungen.",
+   "en": "The word has two meanings."
+  },
+  {
+   "de": "Fragen Sie ruhig nach, wenn etwas unklar ist.",
+   "en": "Feel free to ask if something is unclear."
+  },
+  {
+   "de": "Mit Händen und Füßen konnten wir uns verständigen.",
+   "en": "We managed to communicate using our hands and feet."
+  },
+  {
+   "de": "Das war mir ziemlich peinlich.",
+   "en": "That was rather embarrassing for me."
+  },
+  {
+   "de": "Ich habe die beiden Wörter verwechselt.",
+   "en": "I mixed up the two words."
+  },
+  {
+   "de": "Dieser Ausdruck ist sehr umgangssprachlich.",
+   "en": "This expression is very colloquial."
+  },
+  {
+   "de": "Er sprach sehr leise. ___ habe ich nichts verstanden.",
+   "en": "He spoke very quietly. ___ I didn't understand anything."
+  },
+  {
+   "de": "Ich konnte nicht kommen. Ich war ___ krank. (Adverb für den Grund)",
+   "en": "I couldn't come. I was ___ ill. (adverb for the reason)"
+  },
+  {
+   "de": "___ des Lärms konnten wir uns kaum unterhalten.",
+   "en": "___ the noise, we could hardly talk to each other."
+  },
+  {
+   "de": "Welcher Satz hat die richtige Wortstellung?",
+   "en": "Which sentence has the correct word order?"
+  },
+  {
+   "de": "Sie kannte das Wort nicht. ___ ___ ___ fragte sie nach. (dreiteilig: Aus … … )",
+   "en": "She didn't know the word. ___ ___ ___ she asked for clarification. (three parts: Aus … … )"
+  },
+  {
+   "de": "Folge im Hauptsatz auf Position 1 → deshalb, Verb auf Position 2.",
+   "en": "Consequence in the main clause in position 1 → deshalb, verb in position 2."
+  },
+  {
+   "de": "nämlich steht im Mittelfeld, nach dem konjugierten Verb.",
+   "en": "nämlich goes in the middle field, after the conjugated verb."
+  },
+  {
+   "de": "Kausale Präposition wegen + Genitiv.",
+   "en": "Causal preposition wegen + genitive."
+  },
+  {
+   "de": "Nach denn folgt ein Hauptsatz mit normaler Wortstellung.",
+   "en": "denn is followed by a main clause with normal word order."
+  },
+  {
+   "de": "Aus diesem Grund = Folge, steht auf Position 1.",
+   "en": "Aus diesem Grund = consequence, goes in position 1."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Dialekte",
+   "context": "Über Sprache, Dialekte und Missverständnisse sprechen — Gründe und Folgen verknüpfen.",
+   "en": "dialects",
+   "lemma": "der Dialekt"
+  },
+  {
+   "form": "Missverständnisse",
+   "context": "Über Sprache, Dialekte und Missverständnisse sprechen — Gründe und Folgen verknüpfen.",
+   "en": "misunderstandings",
+   "lemma": "das Missverständnis"
+  },
+  {
+   "form": "verknüpfen",
+   "context": "Über Sprache, Dialekte und Missverständnisse sprechen — Gründe und Folgen verknüpfen.",
+   "en": "to link, connect",
+   "lemma": ""
+  },
+  {
+   "form": "sprachliches",
+   "context": "ein sprachliches Missverständnis erzählen und aufklären",
+   "en": "linguistic, language",
+   "lemma": "sprachlich"
+  },
+  {
+   "form": "Missverständnis",
+   "context": "ein sprachliches Missverständnis erzählen und aufklären",
+   "en": "misunderstanding",
+   "lemma": "das Missverständnis"
+  },
+  {
+   "form": "aufklären",
+   "context": "ein sprachliches Missverständnis erzählen und aufklären",
+   "en": "to clear up; to inform",
+   "lemma": ""
+  },
+  {
+   "form": "Konnektoren",
+   "context": "Gründe und Folgen mit Konnektoren und Adverbien ausdrücken",
+   "en": "connectors",
+   "lemma": "der Konnektor"
+  },
+  {
+   "form": "kausale",
+   "context": "die kausale Präposition wegen + Genitiv verwenden",
+   "en": "causal",
+   "lemma": "kausal"
+  },
+  {
+   "form": "denselben",
+   "context": "Für denselben Zusammenhang gibt es im Deutschen mehrere Mittel — sie unterscheiden sich nur im Satzbau. Achten Sie darauf, ob Sie einen Nebensatz, einen Hauptsatz oder eine Präposition brauchen.",
+   "en": "the same",
+   "lemma": "derselbe"
+  },
+  {
+   "form": "Zusammenhang",
+   "context": "Für denselben Zusammenhang gibt es im Deutschen mehrere Mittel — sie unterscheiden sich nur im Satzbau. Achten Sie darauf, ob Sie einen Nebensatz, einen Hauptsatz oder eine Präposition brauchen.",
+   "en": "connection, context",
+   "lemma": "der Zusammenhang"
+  },
+  {
+   "form": "Mittel",
+   "context": "Für denselben Zusammenhang gibt es im Deutschen mehrere Mittel — sie unterscheiden sich nur im Satzbau. Achten Sie darauf, ob Sie einen Nebensatz, einen Hauptsatz oder eine Präposition brauchen.",
+   "en": "means, ways; remedy",
+   "lemma": "das Mittel"
+  },
+  {
+   "form": "Achten",
+   "context": "Für denselben Zusammenhang gibt es im Deutschen mehrere Mittel — sie unterscheiden sich nur im Satzbau. Achten Sie darauf, ob Sie einen Nebensatz, einen Hauptsatz oder eine Präposition brauchen.",
+   "en": "pay attention (to)",
+   "lemma": "achten"
+  },
+  {
+   "form": "Typ",
+   "context": "Typ",
+   "en": "type; guy",
+   "lemma": "der Typ"
+  },
+  {
+   "form": "Dialekt",
+   "context": "Es gab ein Missverständnis, weil sie Dialekt sprach.",
+   "en": "dialect",
+   "lemma": "der Dialekt"
+  },
+  {
+   "form": "daher",
+   "context": "deshalb / darum / deswegen / daher / aus diesem Grund",
+   "en": "therefore, hence; from there",
+   "lemma": ""
+  },
+  {
+   "form": "nämlich",
+   "context": "nämlich",
+   "en": "you see; namely",
+   "lemma": ""
+  },
+  {
+   "form": "Dialekts",
+   "context": "Wegen des Dialekts habe ich nichts verstanden.",
+   "en": "dialect (genitive)",
+   "lemma": "der Dialekt"
+  },
+  {
+   "form": "Betonung",
+   "context": "Wegen der starken Betonung klang das Wort ganz anders.wegen + Genitiv feminin",
+   "en": "stress, emphasis",
+   "lemma": "die Betonung"
+  },
+  {
+   "form": "klang",
+   "context": "Wegen der starken Betonung klang das Wort ganz anders.wegen + Genitiv feminin",
+   "en": "sounded",
+   "lemma": "klingen"
+  },
+  {
+   "form": "rückwirkend",
+   "context": "Tipp: nämlich erklärt rückwirkend den vorherigen Satz und steht immer im Mittelfeld — nie am Satzanfang.",
+   "en": "retroactively, looking back",
+   "lemma": ""
+  },
+  {
+   "form": "vorherigen",
+   "context": "Tipp: nämlich erklärt rückwirkend den vorherigen Satz und steht immer im Mittelfeld — nie am Satzanfang.",
+   "en": "previous",
+   "lemma": "vorherig"
+  },
+  {
+   "form": "Mittelfeld",
+   "context": "Tipp: nämlich erklärt rückwirkend den vorherigen Satz und steht immer im Mittelfeld — nie am Satzanfang.",
+   "en": "middle field (of a sentence)",
+   "lemma": "das Mittelfeld"
+  },
+  {
+   "form": "misunderstanding",
+   "context": "das Missverständnis, -se — EN: misunderstanding · FR: le malentenduEs war nur ein kleines Missverständnis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "malentenduEs",
+   "context": "das Missverständnis, -se — EN: misunderstanding · FR: le malentenduEs war nur ein kleines Missverständnis.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "kleines",
+   "context": "das Missverständnis, -se — EN: misunderstanding · FR: le malentenduEs war nur ein kleines Missverständnis.",
+   "en": "small, little",
+   "lemma": "klein"
+  },
+  {
+   "form": "dialect",
+   "context": "der Dialekt, -e — EN: dialect · FR: le dialecteIn Bayern spricht man einen ganz eigenen Dialekt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dialecteIn",
+   "context": "der Dialekt, -e — EN: dialect · FR: le dialecteIn Bayern spricht man einen ganz eigenen Dialekt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Bayern",
+   "context": "der Dialekt, -e — EN: dialect · FR: le dialecteIn Bayern spricht man einen ganz eigenen Dialekt.",
+   "en": "Bavaria (a German state)",
+   "lemma": ""
+  },
+  {
+   "form": "pronunciation",
+   "context": "die Aussprache (Sg.) — EN: pronunciation · FR: la prononciationSeine Aussprache ist sehr deutlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prononciationSeine",
+   "context": "die Aussprache (Sg.) — EN: pronunciation · FR: la prononciationSeine Aussprache ist sehr deutlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "emphasis",
+   "context": "die Betonung, -en — EN: stress, emphasis · FR: l'accentuationDie Betonung liegt auf der ersten Silbe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'accentuationDie",
+   "context": "die Betonung, -en — EN: stress, emphasis · FR: l'accentuationDie Betonung liegt auf der ersten Silbe.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Silbe",
+   "context": "die Betonung, -en — EN: stress, emphasis · FR: l'accentuationDie Betonung liegt auf der ersten Silbe.",
+   "en": "syllable",
+   "lemma": "die Silbe"
+  },
+  {
+   "form": "Akzent",
+   "context": "der Akzent, -e — EN: accent · FR: l'accentMan hört, dass sie einen leichten Akzent hat.",
+   "en": "accent",
+   "lemma": "der Akzent"
+  },
+  {
+   "form": "accent",
+   "context": "der Akzent, -e — EN: accent · FR: l'accentMan hört, dass sie einen leichten Akzent hat.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'accentMan",
+   "context": "der Akzent, -e — EN: accent · FR: l'accentMan hört, dass sie einen leichten Akzent hat.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "leichten",
+   "context": "der Akzent, -e — EN: accent · FR: l'accentMan hört, dass sie einen leichten Akzent hat.",
+   "en": "slight; light, easy",
+   "lemma": "leicht"
+  },
+  {
+   "form": "meaning",
+   "context": "die Bedeutung, -en — EN: meaning · FR: la significationDas Wort hat zwei Bedeutungen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "significationDas",
+   "context": "die Bedeutung, -en — EN: meaning · FR: la significationDas Wort hat zwei Bedeutungen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ask",
+   "context": "nachfragen — EN: to ask for clarification · FR: demander des précisionsFragen Sie ruhig nach, wenn etwas unklar ist.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "clarification",
+   "context": "nachfragen — EN: to ask for clarification · FR: demander des précisionsFragen Sie ruhig nach, wenn etwas unklar ist.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "demander",
+   "context": "nachfragen — EN: to ask for clarification · FR: demander des précisionsFragen Sie ruhig nach, wenn etwas unklar ist.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "précisionsFragen",
+   "context": "nachfragen — EN: to ask for clarification · FR: demander des précisionsFragen Sie ruhig nach, wenn etwas unklar ist.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "unklar",
+   "context": "nachfragen — EN: to ask for clarification · FR: demander des précisionsFragen Sie ruhig nach, wenn etwas unklar ist.",
+   "en": "unclear",
+   "lemma": ""
+  },
+  {
+   "form": "verständigen",
+   "context": "sich verständigen — EN: to communicate, make oneself understood · FR: se faire comprendreMit Händen und Füßen konnten wir uns verständigen.",
+   "en": "to communicate (sich verständigen)",
+   "lemma": ""
+  },
+  {
+   "form": "communicate",
+   "context": "sich verständigen — EN: to communicate, make oneself understood · FR: se faire comprendreMit Händen und Füßen konnten wir uns verständigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "understood",
+   "context": "sich verständigen — EN: to communicate, make oneself understood · FR: se faire comprendreMit Händen und Füßen konnten wir uns verständigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "comprendreMit",
+   "context": "sich verständigen — EN: to communicate, make oneself understood · FR: se faire comprendreMit Händen und Füßen konnten wir uns verständigen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Füßen",
+   "context": "sich verständigen — EN: to communicate, make oneself understood · FR: se faire comprendreMit Händen und Füßen konnten wir uns verständigen.",
+   "en": "feet",
+   "lemma": "der Fuß"
+  },
+  {
+   "form": "konnten",
+   "context": "sich verständigen — EN: to communicate, make oneself understood · FR: se faire comprendreMit Händen und Füßen konnten wir uns verständigen.",
+   "en": "could, were able to",
+   "lemma": "können"
+  },
+  {
+   "form": "peinlich",
+   "context": "peinlich — EN: embarrassing · FR: gênantDas war mir ziemlich peinlich.",
+   "en": "embarrassing",
+   "lemma": ""
+  },
+  {
+   "form": "embarrassing",
+   "context": "peinlich — EN: embarrassing · FR: gênantDas war mir ziemlich peinlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gênantDas",
+   "context": "peinlich — EN: embarrassing · FR: gênantDas war mir ziemlich peinlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mix",
+   "context": "verwechseln — EN: to mix up, confuse · FR: confondreIch habe die beiden Wörter verwechselt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "confuse",
+   "context": "verwechseln — EN: to mix up, confuse · FR: confondreIch habe die beiden Wörter verwechselt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "confondreIch",
+   "context": "verwechseln — EN: to mix up, confuse · FR: confondreIch habe die beiden Wörter verwechselt.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "verwechselt",
+   "context": "verwechseln — EN: to mix up, confuse · FR: confondreIch habe die beiden Wörter verwechselt.",
+   "en": "mixed up, confused",
+   "lemma": "verwechseln"
+  },
+  {
+   "form": "expression",
+   "context": "der Ausdruck, ¨-e — EN: expression · FR: l'expressionDieser Ausdruck ist sehr umgangssprachlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'expressionDieser",
+   "context": "der Ausdruck, ¨-e — EN: expression · FR: l'expressionDieser Ausdruck ist sehr umgangssprachlich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "umgangssprachlich",
+   "context": "der Ausdruck, ¨-e — EN: expression · FR: l'expressionDieser Ausdruck ist sehr umgangssprachlich.",
+   "en": "colloquial, informal",
+   "lemma": ""
+  },
+  {
+   "form": "aneinander",
+   "context": "Da haben wir aneinander vorbeigeredet.",
+   "en": "each other",
+   "lemma": ""
+  },
+  {
+   "form": "vorbeigeredet",
+   "context": "Da haben wir aneinander vorbeigeredet.",
+   "en": "talked past (each other)",
+   "lemma": "vorbeireden"
+  },
+  {
+   "form": "Folgendes",
+   "context": "Folgendes ist mir passiert: …",
+   "en": "the following",
+   "lemma": "folgend"
+  },
+  {
+   "form": "gelacht",
+   "context": "Da haben alle gelacht.",
+   "en": "laughed",
+   "lemma": "lachen"
+  },
+  {
+   "form": "Lärms",
+   "context": "___ des Lärms konnten wir uns kaum unterhalten.",
+   "en": "noise (genitive)",
+   "lemma": "der Lärm"
+  },
+  {
+   "form": "unterhalten",
+   "context": "___ des Lärms konnten wir uns kaum unterhalten.",
+   "en": "to talk, chat (sich unterhalten); to entertain",
+   "lemma": ""
+  },
+  {
+   "form": "fragte",
+   "context": "Sie kannte das Wort nicht. ___ ___ ___ fragte sie nach. (dreiteilig: Aus … … )",
+   "en": "asked",
+   "lemma": "fragen"
+  },
+  {
+   "form": "dreiteilig",
+   "context": "Sie kannte das Wort nicht. ___ ___ ___ fragte sie nach. (dreiteilig: Aus … … )",
+   "en": "three-part",
+   "lemma": ""
+  }
+ ]
+}
