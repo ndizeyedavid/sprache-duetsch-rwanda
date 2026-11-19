@@ -1,3 +1,4 @@
+import { PasswordField } from '../../components/auth/PasswordField';
 import { currencyAmount } from '../../lib/format';
 import type { ReferenceItem } from './reference-item';
 import type { FormEvent } from 'react';
@@ -108,19 +109,14 @@ return (<section className=" rounded-box bg-base-100 p-6 sm:p-8">
  </select>
  </label>
 
- <label className="block">
- <span className="mb-1.5 block text-xs font-medium">Password</span>
- <input
- type="password"
- required
+ <PasswordField
+ label="Password"
  minLength={8}
- autoComplete="new-password"
  placeholder="At least 8 characters"
  value={password}
- onChange={(event) => setPassword(event.currentTarget.value)}
- className="input w-full rounded-field border-line bg-base-200"
+ onChange={setPassword}
+ inputClassName="input w-full rounded-field border-line bg-base-200"
  />
- </label>
 
  {error ? (
  <p role="alert" className="text-xs font-medium text-error">
