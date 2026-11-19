@@ -1,18 +1,17 @@
 import { useState } from 'react';
-import { createStudentFromApplication,transitionApplication,updateApplication } from '../../lib/admissions-api';
-import type { ApplicationStatus,StudentFromApplication } from '../../lib/admissions-types';
+import { admitApplication,transitionApplication,updateApplication } from '../../lib/admissions-api';
+import type { AdmitRequest,AdmitResult,ApplicationStatus } from '../../lib/admissions-types';
 import { apiErrorMessage } from '../../lib/api';
 import { STATUS_LABEL } from './constants';
 
 export type Notice = { tone: 'ok' | 'error'; text: string };
 export type CoursePatch = Parameters<typeof updateApplication>[1];
-export type StudentRequest = Parameters<typeof createStudentFromApplication>[1];
 
 /** Writes from the review drawer: one busy flag, one feedback line, refresh after each success. */
 export function useDrawerActions(applicationId: string | null, onChanged: () => void) {
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<Notice | null>(null);
-  const [created, setCreated] = useState<StudentFromApplication | null>(null);
+  const [admitted, setAdmitted] = useState<AdmitResult | null>(null);
 
   async function run(work: (id: string) => Promise<string>) {
     if (!applicationId) return;
@@ -32,17 +31,16 @@ export function useDrawerActions(applicationId: string | null, onChanged: () => 
   return {
     busy,
     notice,
-    created,
-    reset: () => { setNotice(null); setCreated(null); },
+    admitted,
+    reset: () => { setNotice(null); setAdmitted(null); },
     saveCourse: (patch: CoursePatch) => run(async (id) => { await updateApplication(id, patch); return 'Course details saved.'; }),
     transition: (status: ApplicationStatus, reason?: string) =>
       run(async (id) => { await transitionApplication(id, status, reason); return `Application marked ${STATUS_LABEL[status].toLowerCase()}.`; }),
-    createStudent: (body: StudentRequest) =>
+    admit: (body: AdmitRequest) =>
       run(async (id) => {
-        const result = await createStudentFromApplication(id, body);
-        setCreated(result);
-        const what = result.accountCreated ? `Student account ${result.studentCode} created` : `Linked to existing student ${result.studentCode}`;
-        return result.enrollmentId ? `${what} and enrolled.` : `${what}.`;
+        const result = await admitApplication(id, body);
+        setAdmitted(result);
+        return result.alreadyEnrolled ? `Linked to ${result.studentCode}'s existing enrolment.` : `${result.studentCode} is enrolled.`;
       }),
   };
 }
