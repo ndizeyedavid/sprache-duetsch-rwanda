@@ -1,3 +1,4 @@
+import { formatDistanceToNowStrict } from 'date-fns';
 import type { ClassGroupItem,EnrollmentRow } from '../../lib/services';
 import { EMPTY_FILTERS } from './constants';
 import type { EnrolmentFilters,RegisterStats } from './types';
@@ -12,8 +13,10 @@ function searchHaystack(row: EnrollmentRow): string {
     enrolFullName(row),
     row.student.studentCode,
     row.student.user.email,
+    row.student.user.phone ?? '',
     row.level.code,
     row.intake.name,
+    row.campus?.name ?? '',
     row.classGroup?.name ?? '',
   ]
     .join(' ')
@@ -27,7 +30,10 @@ export function hasActiveFilters(filters: EnrolmentFilters): boolean {
     filters.intakeId !== '' ||
     filters.status !== '' ||
     filters.classGroupId !== '' ||
-    filters.awaitingOnly
+    filters.campusId !== '' ||
+    filters.awaitingOnly ||
+    filters.access !== '' ||
+    filters.activity !== ''
   );
 }
 
@@ -39,7 +45,11 @@ export function filterEnrolments(rows: EnrollmentRow[], filters: EnrolmentFilter
     if (filters.intakeId && row.intake.id !== filters.intakeId) return false;
     if (filters.status && row.status !== filters.status) return false;
     if (filters.classGroupId && row.classGroup?.id !== filters.classGroupId) return false;
+    if (filters.campusId && row.campus?.id !== filters.campusId) return false;
     if (filters.awaitingOnly && (row.status !== 'ACTIVE' || row.classGroup)) return false;
+    if (filters.access && row.access !== filters.access) return false;
+    if (filters.activity === 'NEVER_SIGNED_IN' && row.lastLoginAt) return false;
+    if (filters.activity === 'NO_LESSONS' && (row.progress?.lessonsDone ?? 0) > 0) return false;
     return true;
   });
 }
@@ -51,6 +61,8 @@ export function registerStats(rows: EnrollmentRow[]): RegisterStats {
     active: active.length,
     awaitingClass: active.filter((row) => !row.classGroup).length,
     closed: rows.filter((row) => row.status === 'COMPLETED' || row.status === 'WITHDRAWN').length,
+    unpaid: active.filter((row) => row.access === 'UNPAID').length,
+    neverSignedIn: active.filter((row) => !row.lastLoginAt).length,
   };
 }
 
@@ -66,8 +78,11 @@ export function classOptionsFor(
     .filter((group) => !intakeId || group.intakeId === intakeId);
 }
 
+/** Code and teacher tell apart classes that share a name ("A1" three times in one intake). */
 export function classOptionLabel(group: ClassGroupItem): string {
-  return `${group.name} · ${group.shift} · ${group._count.enrollments} enrolled`;
+  const teacher = group.teacher ? `${group.teacher.firstName} ${group.teacher.lastName}` : 'no teacher yet';
+  const seats = group.capacity ? `${group._count.enrollments}/${group.capacity}` : `${group._count.enrollments} enrolled`;
+  return `${group.name} (${group.code}) · ${group.shift.toLowerCase()} · ${teacher} · ${seats}`;
 }
 
 /** The API rejects the same student + level + intake twice, so catch it before submitting. */
@@ -99,4 +114,15 @@ export function parseFee(value: string): { fee: number | undefined; error: strin
 
 export function resetFilters(): EnrolmentFilters {
   return { ...EMPTY_FILTERS };
+}
+/** "When did they last sign in" in words; never-signed-in students stand out. */
+export function lastSeen(iso: string | null | undefined): string {
+  return iso ? `${formatDistanceToNowStrict(new Date(iso))} ago` : 'Never signed in';
+}
+
+/** Campuses that appear in the register, for the campus filter. */
+export function registerCampuses(rows: EnrollmentRow[]): { id: string; name: string }[] {
+  const seen = new Map<string, string>();
+  for (const row of rows) if (row.campus) seen.set(row.campus.id, row.campus.name);
+  return [...seen].map(([id, name]) => ({ id, name })).sort((a, b) => a.name.localeCompare(b.name));
 }
