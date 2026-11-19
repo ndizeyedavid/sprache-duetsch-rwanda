@@ -3,7 +3,7 @@ import type { Money } from './services/money';
 import type { MyFinance } from './services/my-finance';
 import type { PaymentMethod } from './services/payment-method';
 
-/** A recorded payment (cash, bank, MoMo, card or a settled Paypack request) with its receipt. */
+/** A recorded payment (cash, bank, MoMo, card or a settled XendlyPay mobile-money request) with its receipt. */
 export type MyPaymentRow = MyFinance['payments'][number] & {
   receipt?: { id: string; receiptNumber: string; voidedAt?: string | null } | null;
 };
