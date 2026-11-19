@@ -1,0 +1,873 @@
+{
+ "level": "B2",
+ "lesson": 14,
+ "title": "Weniger Stress im Alltag und Beruf — Ich gehe heute wegen des Termins früher ins Büro",
+ "lines": [
+  {
+   "de": "Über Stress und Downshifting sprechen — und das Mittelfeld richtig ordnen.",
+   "en": "Talk about stress and downshifting — and order the middle field (Mittelfeld) correctly."
+  },
+  {
+   "de": "Textsorte: Zeitungsnachricht · Ratgeber-Webseite",
+   "en": "Text type: Newspaper report · Advice website"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe B2 Lesen Teil 3; telc B2 Schreiben",
+   "en": "Exam link: Goethe B2 Reading part 3; telc B2 Writing"
+  },
+  {
+   "de": "über Stress im Beruf sprechen und Tipps zum Stressabbau geben",
+   "en": "talk about stress at work and give tips on reducing stress"
+  },
+  {
+   "de": "die Reihenfolge der Angaben im Mittelfeld beherrschen (Te-Ka-Mo-Lo)",
+   "en": "master the order of adverbials in the middle field (Te-Ka-Mo-Lo)"
+  },
+  {
+   "de": "einen Ratgebertext verstehen und selbst schreiben",
+   "en": "understand an advice text and write one yourself"
+  },
+  {
+   "de": "Grammatik: Te-Ka-Mo-Lo: die Reihenfolge im Mittelfeld",
+   "en": "Grammar: Te-Ka-Mo-Lo: word order in the middle field (Mittelfeld)"
+  },
+  {
+   "de": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "If there are several adverbials in the middle field, they follow a basic order: temporal (when?), causal (why?), modal (how?), local (where to? where?). The formula is not a rigid rule but the neutral default — stressed elements may deviate from it."
+  },
+  {
+   "de": "Te — wann?",
+   "en": "Te — when?"
+  },
+  {
+   "de": "Ka — warum?",
+   "en": "Ka — why?"
+  },
+  {
+   "de": "Mo — wie?",
+   "en": "Mo — how?"
+  },
+  {
+   "de": "Lo — wo/wohin?",
+   "en": "Lo — where/where to?"
+  },
+  {
+   "de": "heute",
+   "en": "today"
+  },
+  {
+   "de": "wegen des Termins",
+   "en": "because of the appointment"
+  },
+  {
+   "de": "mit dem Rad",
+   "en": "by bike"
+  },
+  {
+   "de": "ins Büro",
+   "en": "to the office"
+  },
+  {
+   "de": "seit Montag",
+   "en": "since Monday"
+  },
+  {
+   "de": "aus gesundheitlichen Gründen",
+   "en": "for health reasons"
+  },
+  {
+   "de": "nur noch halbtags",
+   "en": "only half-days now"
+  },
+  {
+   "de": "im Homeoffice",
+   "en": "in the home office"
+  },
+  {
+   "de": "nächste Woche",
+   "en": "next week"
+  },
+  {
+   "de": "in Ruhe",
+   "en": "in peace, calmly"
+  },
+  {
+   "de": "am Schreibtisch",
+   "en": "at the desk"
+  },
+  {
+   "de": "Ich fahre heute wegen des Termins mit dem Rad ins Büro.alle vier Angaben in der Grundreihenfolge",
+   "en": "Today I’m cycling to the office because of the appointment. — all four adverbials in the basic order"
+  },
+  {
+   "de": "Sie arbeitet seit Januar aus familiären Gründen nur noch vier Tage.Te – Ka – Mo",
+   "en": "Since January, she has only been working four days a week, for family reasons. — Te – Ka – Mo"
+  },
+  {
+   "de": "Ins Büro fahre ich heute ausnahmsweise mit dem Auto.Betontes Element rückt auf Position 1",
+   "en": "Today, for once, I’m driving to the office. — the stressed element moves to position 1"
+  },
+  {
+   "de": "Tipp: Zwei weitere Faustregeln ergänzen Te-Ka-Mo-Lo: Pronomen stehen ganz vorn im Mittelfeld, und Bekanntes steht vor Neuem.",
+   "en": "Tip: Two more rules of thumb complement Te-Ka-Mo-Lo: pronouns come right at the front of the middle field, and known information comes before new information."
+  },
+  {
+   "de": "der Stress (Sg.) / der Stressabbau (Sg.) — EN: stress / stress relief · FR: le stress / la gestion du stressZum Stressabbau hilft mir nur Bewegung.",
+   "en": "Example: Only exercise helps me to reduce stress."
+  },
+  {
+   "de": "die Belastung, -en — EN: strain, burden · FR: la chargeDie Belastung ist seit der Umstrukturierung gestiegen.",
+   "en": "Example: The strain has increased since the restructuring."
+  },
+  {
+   "de": "der Termindruck (Sg.) — EN: deadline pressure · FR: la pression des délaisUnter Termindruck mache ich mehr Fehler.",
+   "en": "Example: Under deadline pressure, I make more mistakes."
+  },
+  {
+   "de": "die Work-Life-Balance (Sg.) — EN: work-life balance · FR: l'équilibre vie professionnelle-vie privéeDie Work-Life-Balance stimmt bei mir gerade nicht.",
+   "en": "Example: My work-life balance isn’t right at the moment."
+  },
+  {
+   "de": "kürzertreten — EN: to cut back, take it easier · FR: lever le piedIch habe beschlossen, beruflich kürzerzutreten.",
+   "en": "Example: I have decided to cut back at work."
+  },
+  {
+   "de": "die Überforderung (Sg.) — EN: being overwhelmed · FR: le surmenageDauerhafte Überforderung macht krank.",
+   "en": "Example: Being constantly overwhelmed makes you ill."
+  },
+  {
+   "de": "Prioritäten setzen — EN: to set priorities · FR: définir des prioritésMan muss lernen, Prioritäten zu setzen.",
+   "en": "Example: You have to learn to set priorities."
+  },
+  {
+   "de": "delegieren — EN: to delegate · FR: déléguerVieles lässt sich problemlos delegieren.",
+   "en": "Example: Many things can easily be delegated."
+  },
+  {
+   "de": "die Erreichbarkeit (Sg.) — EN: being reachable · FR: la disponibilitéStändige Erreichbarkeit verhindert echte Erholung.",
+   "en": "Example: Being constantly reachable prevents real recovery."
+  },
+  {
+   "de": "Nein sagen — EN: to say no · FR: savoir dire nonNein sagen will geübt sein.",
+   "en": "Example: Saying no takes practice."
+  },
+  {
+   "de": "der Ausgleichssport (Sg.) — EN: sport as a balance · FR: le sport d'équilibreAusgleichssport senkt den Stresspegel.",
+   "en": "Example: Sport as a balance lowers your stress level."
+  },
+  {
+   "de": "die Pause einlegen — EN: to take a break · FR: faire une pauseLegen Sie alle 90 Minuten eine Pause ein.",
+   "en": "Example: Take a break every 90 minutes."
+  },
+  {
+   "de": "aus gesundheitlichen Gründen — EN: for health reasons · FR: pour raisons de santéEr arbeitet aus gesundheitlichen Gründen weniger.",
+   "en": "Example: He works less for health reasons."
+  },
+  {
+   "de": "nachhaltig — EN: lasting, sustainable · FR: durableKurzfristige Tricks helfen nicht nachhaltig.",
+   "en": "Example: Short-term tricks don’t help in the long run."
+  },
+  {
+   "de": "Was sich bei mir bewährt hat, ist …",
+   "en": "What has worked well for me is …"
+  },
+  {
+   "de": "Versuchen Sie es doch einmal damit, …",
+   "en": "Why don’t you try …"
+  },
+  {
+   "de": "Besonders wirksam ist es, wenn man …",
+   "en": "It is particularly effective if you …"
+  },
+  {
+   "de": "über eigene Belastung sprechen",
+   "en": "Talking about your own stress"
+  },
+  {
+   "de": "In letzter Zeit merke ich, dass …",
+   "en": "Recently, I’ve noticed that …"
+  },
+  {
+   "de": "Mir wächst das gerade alles etwas über den Kopf.",
+   "en": "It’s all getting a bit too much for me at the moment."
+  },
+  {
+   "de": "Ich habe gelernt, rechtzeitig Grenzen zu ziehen.",
+   "en": "I have learned to set limits in good time."
+  },
+  {
+   "de": "Auf Dauer geht das nicht gut.",
+   "en": "That won’t work in the long run."
+  },
+  {
+   "de": "Spätestens dann sollte man etwas ändern.",
+   "en": "By then at the latest, you should change something."
+  },
+  {
+   "de": "Unterschätzen Sie nicht, wie schnell …",
+   "en": "Don’t underestimate how quickly …"
+  },
+  {
+   "de": "Zum Stressabbau hilft mir nur Bewegung.",
+   "en": "Only exercise helps me to reduce stress."
+  },
+  {
+   "de": "Die Belastung ist seit der Umstrukturierung gestiegen.",
+   "en": "The strain has increased since the restructuring."
+  },
+  {
+   "de": "Unter Termindruck mache ich mehr Fehler.",
+   "en": "Under deadline pressure, I make more mistakes."
+  },
+  {
+   "de": "Die Work-Life-Balance stimmt bei mir gerade nicht.",
+   "en": "My work-life balance isn’t right at the moment."
+  },
+  {
+   "de": "Ich habe beschlossen, beruflich kürzerzutreten.",
+   "en": "I have decided to cut back at work."
+  },
+  {
+   "de": "Dauerhafte Überforderung macht krank.",
+   "en": "Being constantly overwhelmed makes you ill."
+  },
+  {
+   "de": "Man muss lernen, Prioritäten zu setzen.",
+   "en": "You have to learn to set priorities."
+  },
+  {
+   "de": "Vieles lässt sich problemlos delegieren.",
+   "en": "Many things can easily be delegated."
+  },
+  {
+   "de": "Ständige Erreichbarkeit verhindert echte Erholung.",
+   "en": "Being constantly reachable prevents real recovery."
+  },
+  {
+   "de": "Nein sagen will geübt sein.",
+   "en": "Saying no takes practice."
+  },
+  {
+   "de": "Ausgleichssport senkt den Stresspegel.",
+   "en": "Sport as a balance lowers your stress level."
+  },
+  {
+   "de": "Legen Sie alle 90 Minuten eine Pause ein.",
+   "en": "Take a break every 90 minutes."
+  },
+  {
+   "de": "Er arbeitet aus gesundheitlichen Gründen weniger.",
+   "en": "He works less for health reasons."
+  },
+  {
+   "de": "Kurzfristige Tricks helfen nicht nachhaltig.",
+   "en": "Short-term tricks don’t help in the long run."
+  },
+  {
+   "de": "Welche Reihenfolge ist neutral korrekt?",
+   "en": "Which order is correct in a neutral sentence?"
+  },
+  {
+   "de": "Was steht in Te-Ka-Mo-Lo an erster Stelle? (ein Wort)",
+   "en": "What comes first in Te-Ka-Mo-Lo? (one word)"
+  },
+  {
+   "de": "Wo steht die kausale Angabe?",
+   "en": "Where does the causal adverbial go?"
+  },
+  {
+   "de": "Wo stehen Pronomen im Mittelfeld?",
+   "en": "Where do pronouns go in the middle field?"
+  },
+  {
+   "de": "Sie arbeitet ___ Januar aus familiären Gründen nur noch halbtags. (temporale Präposition)",
+   "en": "___ January, she has only been working half-days, for family reasons. (temporal preposition)"
+  },
+  {
+   "de": "Welche Angabe ist modal?",
+   "en": "Which adverbial is modal?"
+  },
+  {
+   "de": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "Write an advice text for a company website: “Five ways to less stress in everyday working life.” Length: 180–220 words Checklist: • A short introduction that names the problem. • Five concrete, practical tips, each with one sentence of justification. • Pay deliberate attention to the order of adverbials in the middle field. • A concluding sentence that encourages readers to try them out."
+  },
+  {
+   "de": "Temporal (heute) vor modal (mit dem Rad) vor lokal (ins Büro).",
+   "en": "Temporal (heute) before modal (mit dem Rad) before local (ins Büro)."
+  },
+  {
+   "de": "Te = temporale Angabe: wann?",
+   "en": "Te = temporal adverbial: when?"
+  },
+  {
+   "de": "Kausal steht nach temporal und vor modal.",
+   "en": "Causal comes after temporal and before modal."
+  },
+  {
+   "de": "Pronomen rücken im Mittelfeld immer nach vorn, vor alle Angaben.",
+   "en": "In the middle field, pronouns always move to the front, before all adverbials."
+  },
+  {
+   "de": "seit + Dativ nennt den Beginn eines noch andauernden Zeitraums.",
+   "en": "seit + dative states the beginning of a period that is still going on."
+  },
+  {
+   "de": "Modal antwortet auf die Frage „wie?\".",
+   "en": "Modal answers the question “how?”."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Downshifting",
+   "context": "Über Stress und Downshifting sprechen — und das Mittelfeld richtig ordnen.",
+   "en": "downshifting",
+   "lemma": "das Downshifting"
+  },
+  {
+   "form": "Zeitungsnachricht",
+   "context": "Textsorte: Zeitungsnachricht · Ratgeber-Webseite",
+   "en": "newspaper report",
+   "lemma": "die Zeitungsnachricht"
+  },
+  {
+   "form": "Ratgeber-Webseite",
+   "context": "Textsorte: Zeitungsnachricht · Ratgeber-Webseite",
+   "en": "advice website",
+   "lemma": "die Ratgeber-Webseite"
+  },
+  {
+   "form": "Stressabbau",
+   "context": "über Stress im Beruf sprechen und Tipps zum Stressabbau geben",
+   "en": "stress reduction",
+   "lemma": "der Stressabbau"
+  },
+  {
+   "form": "Te-Ka-Mo-Lo",
+   "context": "die Reihenfolge der Angaben im Mittelfeld beherrschen (Te-Ka-Mo-Lo)",
+   "en": "time–cause–manner–place",
+   "lemma": ""
+  },
+  {
+   "form": "Grundreihenfolge",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "basic order",
+   "lemma": "die Grundreihenfolge"
+  },
+  {
+   "form": "kausal",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "causal",
+   "lemma": ""
+  },
+  {
+   "form": "lokal",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "local (about place)",
+   "lemma": ""
+  },
+  {
+   "form": "Formel",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "formula",
+   "lemma": "die Formel"
+  },
+  {
+   "form": "starre",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "rigid",
+   "lemma": "starr"
+  },
+  {
+   "form": "Normalfall",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "normal case, default",
+   "lemma": "der Normalfall"
+  },
+  {
+   "form": "betonte",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "stressed, emphasised",
+   "lemma": "betont"
+  },
+  {
+   "form": "abweichen",
+   "context": "Stehen mehrere Angaben im Mittelfeld, folgen sie einer Grundreihenfolge: temporal (wann?), kausal (warum?), modal (wie?), lokal (wohin? wo?). Die Formel ist keine starre Regel, sondern der neutrale Normalfall — betonte Elemente dürfen davon abweichen.",
+   "en": "deviate",
+   "lemma": ""
+  },
+  {
+   "form": "Ka",
+   "context": "Ka — warum?",
+   "en": "causal (abbr.)",
+   "lemma": ""
+  },
+  {
+   "form": "Lo",
+   "context": "Lo — wo/wohin?",
+   "en": "local (abbr.)",
+   "lemma": ""
+  },
+  {
+   "form": "Termins",
+   "context": "wegen des Termins",
+   "en": "(of the) appointment",
+   "lemma": "der Termin"
+  },
+  {
+   "form": "gesundheitlichen",
+   "context": "aus gesundheitlichen Gründen",
+   "en": "health",
+   "lemma": "gesundheitlich"
+  },
+  {
+   "form": "Gründen",
+   "context": "aus gesundheitlichen Gründen",
+   "en": "reasons",
+   "lemma": "der Grund"
+  },
+  {
+   "form": "halbtags",
+   "context": "nur noch halbtags",
+   "en": "half-days, part-time",
+   "lemma": ""
+  },
+  {
+   "form": "familiären",
+   "context": "Sie arbeitet seit Januar aus familiären Gründen nur noch vier Tage.Te – Ka – Mo",
+   "en": "family",
+   "lemma": "familiär"
+  },
+  {
+   "form": "Betontes",
+   "context": "Ins Büro fahre ich heute ausnahmsweise mit dem Auto.Betontes Element rückt auf Position 1",
+   "en": "stressed, emphasised",
+   "lemma": "betont"
+  },
+  {
+   "form": "Faustregeln",
+   "context": "Tipp: Zwei weitere Faustregeln ergänzen Te-Ka-Mo-Lo: Pronomen stehen ganz vorn im Mittelfeld, und Bekanntes steht vor Neuem.",
+   "en": "rules of thumb",
+   "lemma": "die Faustregel"
+  },
+  {
+   "form": "Neuem",
+   "context": "Tipp: Zwei weitere Faustregeln ergänzen Te-Ka-Mo-Lo: Pronomen stehen ganz vorn im Mittelfeld, und Bekanntes steht vor Neuem.",
+   "en": "new information",
+   "lemma": "das Neue"
+  },
+  {
+   "form": "relief",
+   "context": "der Stress (Sg.) / der Stressabbau (Sg.) — EN: stress / stress relief · FR: le stress / la gestion du stressZum Stressabbau hilft mir nur Bewegung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gestion",
+   "context": "der Stress (Sg.) / der Stressabbau (Sg.) — EN: stress / stress relief · FR: le stress / la gestion du stressZum Stressabbau hilft mir nur Bewegung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "stressZum",
+   "context": "der Stress (Sg.) / der Stressabbau (Sg.) — EN: stress / stress relief · FR: le stress / la gestion du stressZum Stressabbau hilft mir nur Bewegung.",
+   "en": "for (the)",
+   "lemma": ""
+  },
+  {
+   "form": "Belastung",
+   "context": "die Belastung, -en — EN: strain, burden · FR: la chargeDie Belastung ist seit der Umstrukturierung gestiegen.",
+   "en": "strain, burden",
+   "lemma": "die Belastung"
+  },
+  {
+   "form": "strain",
+   "context": "die Belastung, -en — EN: strain, burden · FR: la chargeDie Belastung ist seit der Umstrukturierung gestiegen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "burden",
+   "context": "die Belastung, -en — EN: strain, burden · FR: la chargeDie Belastung ist seit der Umstrukturierung gestiegen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "chargeDie",
+   "context": "die Belastung, -en — EN: strain, burden · FR: la chargeDie Belastung ist seit der Umstrukturierung gestiegen.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "Umstrukturierung",
+   "context": "die Belastung, -en — EN: strain, burden · FR: la chargeDie Belastung ist seit der Umstrukturierung gestiegen.",
+   "en": "restructuring",
+   "lemma": "die Umstrukturierung"
+  },
+  {
+   "form": "Termindruck",
+   "context": "der Termindruck (Sg.) — EN: deadline pressure · FR: la pression des délaisUnter Termindruck mache ich mehr Fehler.",
+   "en": "deadline pressure",
+   "lemma": "der Termindruck"
+  },
+  {
+   "form": "délaisUnter",
+   "context": "der Termindruck (Sg.) — EN: deadline pressure · FR: la pression des délaisUnter Termindruck mache ich mehr Fehler.",
+   "en": "under",
+   "lemma": ""
+  },
+  {
+   "form": "Work-Life-Balance",
+   "context": "die Work-Life-Balance (Sg.) — EN: work-life balance · FR: l'équilibre vie professionnelle-vie privéeDie Work-Life-Balance stimmt bei mir gerade nicht.",
+   "en": "work-life balance",
+   "lemma": "die Work-Life-Balance"
+  },
+  {
+   "form": "work-life",
+   "context": "die Work-Life-Balance (Sg.) — EN: work-life balance · FR: l'équilibre vie professionnelle-vie privéeDie Work-Life-Balance stimmt bei mir gerade nicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'équilibre",
+   "context": "die Work-Life-Balance (Sg.) — EN: work-life balance · FR: l'équilibre vie professionnelle-vie privéeDie Work-Life-Balance stimmt bei mir gerade nicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "professionnelle-vie",
+   "context": "die Work-Life-Balance (Sg.) — EN: work-life balance · FR: l'équilibre vie professionnelle-vie privéeDie Work-Life-Balance stimmt bei mir gerade nicht.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "privéeDie",
+   "context": "die Work-Life-Balance (Sg.) — EN: work-life balance · FR: l'équilibre vie professionnelle-vie privéeDie Work-Life-Balance stimmt bei mir gerade nicht.",
+   "en": "the",
+   "lemma": ""
+  },
+  {
+   "form": "kürzertreten",
+   "context": "kürzertreten — EN: to cut back, take it easier · FR: lever le piedIch habe beschlossen, beruflich kürzerzutreten.",
+   "en": "to cut back",
+   "lemma": ""
+  },
+  {
+   "form": "cut",
+   "context": "kürzertreten — EN: to cut back, take it easier · FR: lever le piedIch habe beschlossen, beruflich kürzerzutreten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "easier",
+   "context": "kürzertreten — EN: to cut back, take it easier · FR: lever le piedIch habe beschlossen, beruflich kürzerzutreten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lever",
+   "context": "kürzertreten — EN: to cut back, take it easier · FR: lever le piedIch habe beschlossen, beruflich kürzerzutreten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "piedIch",
+   "context": "kürzertreten — EN: to cut back, take it easier · FR: lever le piedIch habe beschlossen, beruflich kürzerzutreten.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "kürzerzutreten",
+   "context": "kürzertreten — EN: to cut back, take it easier · FR: lever le piedIch habe beschlossen, beruflich kürzerzutreten.",
+   "en": "to cut back",
+   "lemma": "kürzertreten"
+  },
+  {
+   "form": "Überforderung",
+   "context": "die Überforderung (Sg.) — EN: being overwhelmed · FR: le surmenageDauerhafte Überforderung macht krank.",
+   "en": "being overwhelmed",
+   "lemma": "die Überforderung"
+  },
+  {
+   "form": "overwhelmed",
+   "context": "die Überforderung (Sg.) — EN: being overwhelmed · FR: le surmenageDauerhafte Überforderung macht krank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "surmenageDauerhafte",
+   "context": "die Überforderung (Sg.) — EN: being overwhelmed · FR: le surmenageDauerhafte Überforderung macht krank.",
+   "en": "constant, permanent",
+   "lemma": "dauerhaft"
+  },
+  {
+   "form": "Prioritäten",
+   "context": "Prioritäten setzen — EN: to set priorities · FR: définir des prioritésMan muss lernen, Prioritäten zu setzen.",
+   "en": "priorities",
+   "lemma": "die Priorität"
+  },
+  {
+   "form": "priorities",
+   "context": "Prioritäten setzen — EN: to set priorities · FR: définir des prioritésMan muss lernen, Prioritäten zu setzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "définir",
+   "context": "Prioritäten setzen — EN: to set priorities · FR: définir des prioritésMan muss lernen, Prioritäten zu setzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "prioritésMan",
+   "context": "Prioritäten setzen — EN: to set priorities · FR: définir des prioritésMan muss lernen, Prioritäten zu setzen.",
+   "en": "one, you",
+   "lemma": ""
+  },
+  {
+   "form": "delegieren",
+   "context": "delegieren — EN: to delegate · FR: déléguerVieles lässt sich problemlos delegieren.",
+   "en": "to delegate",
+   "lemma": ""
+  },
+  {
+   "form": "delegate",
+   "context": "delegieren — EN: to delegate · FR: déléguerVieles lässt sich problemlos delegieren.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "déléguerVieles",
+   "context": "delegieren — EN: to delegate · FR: déléguerVieles lässt sich problemlos delegieren.",
+   "en": "many things",
+   "lemma": ""
+  },
+  {
+   "form": "problemlos",
+   "context": "delegieren — EN: to delegate · FR: déléguerVieles lässt sich problemlos delegieren.",
+   "en": "easily, without problems",
+   "lemma": ""
+  },
+  {
+   "form": "disponibilitéStändige",
+   "context": "die Erreichbarkeit (Sg.) — EN: being reachable · FR: la disponibilitéStändige Erreichbarkeit verhindert echte Erholung.",
+   "en": "constant",
+   "lemma": "ständig"
+  },
+  {
+   "form": "verhindert",
+   "context": "die Erreichbarkeit (Sg.) — EN: being reachable · FR: la disponibilitéStändige Erreichbarkeit verhindert echte Erholung.",
+   "en": "prevents",
+   "lemma": "verhindern"
+  },
+  {
+   "form": "say",
+   "context": "Nein sagen — EN: to say no · FR: savoir dire nonNein sagen will geübt sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "savoir",
+   "context": "Nein sagen — EN: to say no · FR: savoir dire nonNein sagen will geübt sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "dire",
+   "context": "Nein sagen — EN: to say no · FR: savoir dire nonNein sagen will geübt sein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "nonNein",
+   "context": "Nein sagen — EN: to say no · FR: savoir dire nonNein sagen will geübt sein.",
+   "en": "no",
+   "lemma": ""
+  },
+  {
+   "form": "Ausgleichssport",
+   "context": "der Ausgleichssport (Sg.) — EN: sport as a balance · FR: le sport d'équilibreAusgleichssport senkt den Stresspegel.",
+   "en": "sport as a balance",
+   "lemma": "der Ausgleichssport"
+  },
+  {
+   "form": "d'équilibreAusgleichssport",
+   "context": "der Ausgleichssport (Sg.) — EN: sport as a balance · FR: le sport d'équilibreAusgleichssport senkt den Stresspegel.",
+   "en": "sport as a balance",
+   "lemma": "der Ausgleichssport"
+  },
+  {
+   "form": "senkt",
+   "context": "der Ausgleichssport (Sg.) — EN: sport as a balance · FR: le sport d'équilibreAusgleichssport senkt den Stresspegel.",
+   "en": "lowers",
+   "lemma": "senken"
+  },
+  {
+   "form": "Stresspegel",
+   "context": "der Ausgleichssport (Sg.) — EN: sport as a balance · FR: le sport d'équilibreAusgleichssport senkt den Stresspegel.",
+   "en": "stress level",
+   "lemma": "der Stresspegel"
+  },
+  {
+   "form": "einlegen",
+   "context": "die Pause einlegen — EN: to take a break · FR: faire une pauseLegen Sie alle 90 Minuten eine Pause ein.",
+   "en": "to take (a break)",
+   "lemma": ""
+  },
+  {
+   "form": "break",
+   "context": "die Pause einlegen — EN: to take a break · FR: faire une pauseLegen Sie alle 90 Minuten eine Pause ein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "pauseLegen",
+   "context": "die Pause einlegen — EN: to take a break · FR: faire une pauseLegen Sie alle 90 Minuten eine Pause ein.",
+   "en": "take (a break)",
+   "lemma": "einlegen"
+  },
+  {
+   "form": "reasons",
+   "context": "aus gesundheitlichen Gründen — EN: for health reasons · FR: pour raisons de santéEr arbeitet aus gesundheitlichen Gründen weniger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "raisons",
+   "context": "aus gesundheitlichen Gründen — EN: for health reasons · FR: pour raisons de santéEr arbeitet aus gesundheitlichen Gründen weniger.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "santéEr",
+   "context": "aus gesundheitlichen Gründen — EN: for health reasons · FR: pour raisons de santéEr arbeitet aus gesundheitlichen Gründen weniger.",
+   "en": "he",
+   "lemma": ""
+  },
+  {
+   "form": "lasting",
+   "context": "nachhaltig — EN: lasting, sustainable · FR: durableKurzfristige Tricks helfen nicht nachhaltig.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "durableKurzfristige",
+   "context": "nachhaltig — EN: lasting, sustainable · FR: durableKurzfristige Tricks helfen nicht nachhaltig.",
+   "en": "short-term",
+   "lemma": "kurzfristig"
+  },
+  {
+   "form": "Tricks",
+   "context": "nachhaltig — EN: lasting, sustainable · FR: durableKurzfristige Tricks helfen nicht nachhaltig.",
+   "en": "tricks",
+   "lemma": "der Trick"
+  },
+  {
+   "form": "bewährt",
+   "context": "Was sich bei mir bewährt hat, ist …",
+   "en": "proved effective",
+   "lemma": "sich bewähren"
+  },
+  {
+   "form": "wirksam",
+   "context": "Besonders wirksam ist es, wenn man …",
+   "en": "effective",
+   "lemma": ""
+  },
+  {
+   "form": "letzter",
+   "context": "In letzter Zeit merke ich, dass …",
+   "en": "last, recent",
+   "lemma": "letzt"
+  },
+  {
+   "form": "merke",
+   "context": "In letzter Zeit merke ich, dass …",
+   "en": "notice",
+   "lemma": "merken"
+  },
+  {
+   "form": "Grenzen",
+   "context": "Ich habe gelernt, rechtzeitig Grenzen zu ziehen.",
+   "en": "limits, boundaries",
+   "lemma": "die Grenze"
+  },
+  {
+   "form": "Spätestens",
+   "context": "Spätestens dann sollte man etwas ändern.",
+   "en": "at the latest",
+   "lemma": ""
+  },
+  {
+   "form": "Unterschätzen",
+   "context": "Unterschätzen Sie nicht, wie schnell …",
+   "en": "underestimate",
+   "lemma": "unterschätzen"
+  },
+  {
+   "form": "Dauerhafte",
+   "context": "Dauerhafte Überforderung macht krank.",
+   "en": "constant, permanent",
+   "lemma": "dauerhaft"
+  },
+  {
+   "form": "Kurzfristige",
+   "context": "Kurzfristige Tricks helfen nicht nachhaltig.",
+   "en": "short-term",
+   "lemma": "kurzfristig"
+  },
+  {
+   "form": "neutral",
+   "context": "Welche Reihenfolge ist neutral korrekt?",
+   "en": "neutral(ly)",
+   "lemma": ""
+  },
+  {
+   "form": "Firmen-Webseite",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "company website",
+   "lemma": "die Firmen-Webseite"
+  },
+  {
+   "form": "Wege",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "ways",
+   "lemma": "der Weg"
+  },
+  {
+   "form": "Arbeitsalltag",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "everyday working life",
+   "lemma": "der Arbeitsalltag"
+  },
+  {
+   "form": "benennt",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "names",
+   "lemma": "benennen"
+  },
+  {
+   "form": "umsetzbare",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "practical, feasible",
+   "lemma": "umsetzbar"
+  },
+  {
+   "form": "Begründung",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "justification, reason",
+   "lemma": "die Begründung"
+  },
+  {
+   "form": "Ausprobieren",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "trying out",
+   "lemma": "das Ausprobieren"
+  },
+  {
+   "form": "auffordert",
+   "context": "Schreiben Sie einen Ratgebertext für eine Firmen-Webseite: „Fünf Wege zu weniger Stress im Arbeitsalltag.\" Umfang: 180–220 Wörter Checkliste: • Eine kurze Einleitung, die das Problem benennt. • Fünf konkrete, umsetzbare Tipps mit je einem Satz Begründung. • Achten Sie bewusst auf die Reihenfolge der Angaben im Mittelfeld. • Ein Schlusssatz, der zum Ausprobieren auffordert.",
+   "en": "encourages, invites",
+   "lemma": "auffordern"
+  }
+ ]
+}
