@@ -1,0 +1,811 @@
+{
+ "level": "A1",
+ "lesson": 18,
+ "title": "Gesundheit und Tipps — Trinken Sie viel Tee!",
+ "lines": [
+  {
+   "de": "Ratschläge geben und Anweisungen weitergeben.",
+   "en": "Give advice and pass on instructions."
+  },
+  {
+   "de": "Textsorte: Gespräch beim Arzt · Ratgeber",
+   "en": "Text type: Conversation at the doctor's · Advice guide"
+  },
+  {
+   "de": "über Krankheiten sprechen",
+   "en": "talk about illnesses"
+  },
+  {
+   "de": "Ratschläge mit dem Imperativ (Sie) geben",
+   "en": "give advice with the Sie imperative (Imperativ)"
+  },
+  {
+   "de": "eine Anweisung mit sollen weitergeben",
+   "en": "pass on an instruction with sollen"
+  },
+  {
+   "de": "Grammatik: Der Imperativ mit Sie",
+   "en": "Grammar: the imperative (Imperativ) with Sie"
+  },
+  {
+   "de": "Für eine höfliche Aufforderung stellt man das Verb an Position 1 und setzt Sie dahinter. Mit bitte klingt es freundlich.",
+   "en": "For a polite request, you put the verb in position 1 and Sie after it. With bitte it sounds friendly."
+  },
+  {
+   "de": "Imperativ",
+   "en": "Imperative"
+  },
+  {
+   "de": "Sie trinken viel Tee.",
+   "en": "You drink a lot of tea."
+  },
+  {
+   "de": "Trinken Sie viel Tee!",
+   "en": "Drink a lot of tea!"
+  },
+  {
+   "de": "Sie gehen zum Arzt.",
+   "en": "You go to the doctor."
+  },
+  {
+   "de": "Gehen Sie zum Arzt!",
+   "en": "Go to the doctor!"
+  },
+  {
+   "de": "Sie nehmen die Tabletten.",
+   "en": "You take the tablets."
+  },
+  {
+   "de": "Nehmen Sie die Tabletten!",
+   "en": "Take the tablets!"
+  },
+  {
+   "de": "Sie sind ruhig.",
+   "en": "You are quiet."
+  },
+  {
+   "de": "Seien Sie bitte ruhig!",
+   "en": "Please be quiet!"
+  },
+  {
+   "de": "Trinken Sie bitte viel Wasser!Verb + Sie + bitte",
+   "en": "Please drink a lot of water! Verb + Sie + bitte"
+  },
+  {
+   "de": "Bleiben Sie heute zu Hause.freundliche Empfehlung",
+   "en": "Stay at home today. friendly recommendation"
+  },
+  {
+   "de": "Tipp: Nur sein ist unregelmäßig: Seien Sie bitte vorsichtig!",
+   "en": "Tip: Only sein is irregular: Seien Sie bitte vorsichtig! (Please be careful!)"
+  },
+  {
+   "de": "Grammatik: Imperativ und sollen",
+   "en": "Grammar: imperative (Imperativ) and sollen"
+  },
+  {
+   "de": "Mit sollen gibt man eine Anweisung weiter, die eine andere Person gesagt hat.",
+   "en": "With sollen you pass on an instruction that another person has given."
+  },
+  {
+   "de": "direkt (Imperativ)",
+   "en": "direct (imperative)"
+  },
+  {
+   "de": "indirekt (mit sollen)",
+   "en": "indirect (with sollen)"
+  },
+  {
+   "de": "Die Ärztin: „Trinken Sie viel Tee!\"",
+   "en": "The doctor: \"Drink a lot of tea!\""
+  },
+  {
+   "de": "Die Ärztin sagt, ich soll viel Tee trinken.",
+   "en": "The doctor says I should drink a lot of tea."
+  },
+  {
+   "de": "Der Chef: „Rufen Sie Herrn Berg an!\"",
+   "en": "The boss: \"Call Mr Berg!\""
+  },
+  {
+   "de": "Der Chef sagt, ich soll Herrn Berg anrufen.",
+   "en": "The boss says I should call Mr Berg."
+  },
+  {
+   "de": "soll",
+   "en": "should"
+  },
+  {
+   "de": "sollst",
+   "en": "(you) should"
+  },
+  {
+   "de": "wir / sie / Sie",
+   "en": "we / they / you (formal)"
+  },
+  {
+   "de": "sollen",
+   "en": "should"
+  },
+  {
+   "de": "Schwester Angelika sagt, Sie sollen ihm diesen Tee geben.sollen + Infinitiv am Ende",
+   "en": "Nurse Angelika says you should give him this tea. sollen + infinitive at the end"
+  },
+  {
+   "de": "Tipp: sollen heißt: Jemand anderes möchte das. Müssen ist stärker — es gibt keine Wahl.",
+   "en": "Tip: sollen means: someone else wants it. müssen is stronger — there is no choice."
+  },
+  {
+   "de": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "Example: I have been ill since yesterday."
+  },
+  {
+   "de": "die Erkältung, -en — EN: cold · FR: le rhumeIch habe eine Erkältung.",
+   "en": "Example: I have a cold."
+  },
+  {
+   "de": "das Fieber (Sg.) — EN: fever · FR: la fièvreHast du Fieber?",
+   "en": "Example: Do you have a fever?"
+  },
+  {
+   "de": "die Tablette, -n — EN: tablet, pill · FR: le compriméNehmen Sie die Tabletten dreimal täglich.",
+   "en": "Example: Take the tablets three times a day."
+  },
+  {
+   "de": "der Arzt, ¨-e / die Ärztin, -nen — EN: doctor · FR: le médecinGehen Sie zum Arzt!",
+   "en": "Example: Go to the doctor!"
+  },
+  {
+   "de": "der Hals, ¨-e — EN: throat, neck · FR: la gorgeMein Hals tut weh.",
+   "en": "Example: My throat hurts."
+  },
+  {
+   "de": "der Kopf, ¨-e — EN: head · FR: la têteIch habe Kopfschmerzen.",
+   "en": "Example: I have a headache."
+  },
+  {
+   "de": "wehtun — EN: to hurt · FR: faire malMir tut der Bauch weh.",
+   "en": "Example: My stomach hurts."
+  },
+  {
+   "de": "sich ausruhen — EN: to rest · FR: se reposerRuhen Sie sich aus!",
+   "en": "Example: Get some rest!"
+  },
+  {
+   "de": "die Apotheke, -n — EN: pharmacy · FR: la pharmacieDas bekommen Sie in der Apotheke.",
+   "en": "Example: You can get that at the pharmacy."
+  },
+  {
+   "de": "dreimal täglich — EN: three times a day · FR: trois fois par jourNehmen Sie das dreimal täglich.",
+   "en": "Example: Take this three times a day."
+  },
+  {
+   "de": "gute Besserung — EN: get well soon · FR: bon rétablissementGute Besserung!",
+   "en": "Example: Get well soon!"
+  },
+  {
+   "de": "sagen, was fehlt",
+   "en": "saying what's wrong"
+  },
+  {
+   "de": "Mir tut der Hals weh.",
+   "en": "My throat hurts."
+  },
+  {
+   "de": "Ich habe Fieber.",
+   "en": "I have a fever."
+  },
+  {
+   "de": "Ich fühle mich nicht gut.",
+   "en": "I don't feel well."
+  },
+  {
+   "de": "Ratschläge geben",
+   "en": "giving advice"
+  },
+  {
+   "de": "Ruhen Sie sich aus!",
+   "en": "Get some rest!"
+  },
+  {
+   "de": "eine Anweisung weitergeben",
+   "en": "passing on an instruction"
+  },
+  {
+   "de": "Die Ärztin sagt, ich soll viel trinken.",
+   "en": "The doctor says I should drink a lot."
+  },
+  {
+   "de": "Du sollst die Tabletten nehmen.",
+   "en": "You should take the tablets."
+  },
+  {
+   "de": "Er soll heute zu Hause bleiben.",
+   "en": "He should stay at home today."
+  },
+  {
+   "de": "Dialog: Beim Arzt",
+   "en": "Dialogue: At the doctor's"
+  },
+  {
+   "de": "Ärztin: Guten Tag. Was fehlt Ihnen denn?",
+   "en": "Doctor: Hello. So, what's wrong?"
+  },
+  {
+   "de": "Herr Sow: Mein Hals tut weh und ich habe Fieber.",
+   "en": "Mr Sow: My throat hurts and I have a fever."
+  },
+  {
+   "de": "Ärztin: Das ist eine Erkältung. Trinken Sie viel Tee!",
+   "en": "Doctor: It's a cold. Drink a lot of tea!"
+  },
+  {
+   "de": "Herr Sow: Und soll ich Tabletten nehmen?",
+   "en": "Mr Sow: And should I take tablets?"
+  },
+  {
+   "de": "Ärztin: Ja, dreimal täglich. Und bleiben Sie zwei Tage zu Hause.",
+   "en": "Doctor: Yes, three times a day. And stay at home for two days."
+  },
+  {
+   "de": "Herr Sow: Gut, danke. Dann gehe ich jetzt in die Apotheke.",
+   "en": "Mr Sow: OK, thank you. Then I'll go to the pharmacy now."
+  },
+  {
+   "de": "Ich bin seit gestern krank.",
+   "en": "I have been ill since yesterday."
+  },
+  {
+   "de": "Ich habe eine Erkältung.",
+   "en": "I have a cold."
+  },
+  {
+   "de": "Hast du Fieber?",
+   "en": "Do you have a fever?"
+  },
+  {
+   "de": "Nehmen Sie die Tabletten dreimal täglich.",
+   "en": "Take the tablets three times a day."
+  },
+  {
+   "de": "Mein Hals tut weh.",
+   "en": "My throat hurts."
+  },
+  {
+   "de": "Ich habe Kopfschmerzen.",
+   "en": "I have a headache."
+  },
+  {
+   "de": "Mir tut der Bauch weh.",
+   "en": "My stomach hurts."
+  },
+  {
+   "de": "Das bekommen Sie in der Apotheke.",
+   "en": "You can get that at the pharmacy."
+  },
+  {
+   "de": "Nehmen Sie das dreimal täglich.",
+   "en": "Take this three times a day."
+  },
+  {
+   "de": "___ Sie viel Tee! (trinken, Imperativ)",
+   "en": "___ a lot of tea! (trinken, imperative)"
+  },
+  {
+   "de": "Welcher Imperativ ist richtig?",
+   "en": "Which imperative is correct?"
+  },
+  {
+   "de": "Die Ärztin sagt, ich ___ viel trinken. (sollen, ich)",
+   "en": "The doctor says I ___ drink a lot. (sollen, ich)"
+  },
+  {
+   "de": "Imperativ von „sein\" mit Sie:",
+   "en": "Imperative of \"sein\" with Sie:"
+  },
+  {
+   "de": "Der Chef sagt, du ___ ihn anrufen. (sollen, du)",
+   "en": "The boss says you ___ call him. (sollen, du)"
+  },
+  {
+   "de": "Eine Freundin ist krank. Schreiben Sie ihr drei Tipps. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie dreimal den Imperativ. • Schreiben Sie einen Satz mit sollen. • Beenden Sie mit einem guten Wunsch.",
+   "en": "A friend is ill. Write her three tips. Length: 25–35 words Checklist: • Use the imperative three times. • Write a sentence with sollen. • End with a good wish."
+  },
+  {
+   "de": "Imperativ mit Sie: Verb auf Position 1, dann Sie.",
+   "en": "Imperative with Sie: verb in position 1, then Sie."
+  },
+  {
+   "de": "Das Verb steht ganz vorn.",
+   "en": "The verb comes right at the beginning."
+  },
+  {
+   "de": "ich soll — ohne Endung.",
+   "en": "ich soll — no ending."
+  },
+  {
+   "de": "sein ist unregelmäßig: Seien Sie …",
+   "en": "sein is irregular: Seien Sie …"
+  },
+  {
+   "de": "2. Person Singular: sollst.",
+   "en": "2nd person singular: sollst."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Ratschläge",
+   "context": "Ratschläge geben und Anweisungen weitergeben.",
+   "en": "advice; tips",
+   "lemma": "der Ratschlag"
+  },
+  {
+   "form": "geben",
+   "context": "Ratschläge geben und Anweisungen weitergeben.",
+   "en": "give",
+   "lemma": ""
+  },
+  {
+   "form": "Anweisungen",
+   "context": "Ratschläge geben und Anweisungen weitergeben.",
+   "en": "instructions",
+   "lemma": "die Anweisung"
+  },
+  {
+   "form": "weitergeben",
+   "context": "Ratschläge geben und Anweisungen weitergeben.",
+   "en": "pass on",
+   "lemma": ""
+  },
+  {
+   "form": "Ratgeber",
+   "context": "Textsorte: Gespräch beim Arzt · Ratgeber",
+   "en": "advice guide",
+   "lemma": "der Ratgeber"
+  },
+  {
+   "form": "Krankheiten",
+   "context": "über Krankheiten sprechen",
+   "en": "illnesses",
+   "lemma": "die Krankheit"
+  },
+  {
+   "form": "Imperativ",
+   "context": "Ratschläge mit dem Imperativ (Sie) geben",
+   "en": "imperative",
+   "lemma": "der Imperativ"
+  },
+  {
+   "form": "Anweisung",
+   "context": "eine Anweisung mit sollen weitergeben",
+   "en": "instruction",
+   "lemma": "die Anweisung"
+  },
+  {
+   "form": "sollen",
+   "context": "eine Anweisung mit sollen weitergeben",
+   "en": "should; be supposed to",
+   "lemma": ""
+  },
+  {
+   "form": "Aufforderung",
+   "context": "Für eine höfliche Aufforderung stellt man das Verb an Position 1 und setzt Sie dahinter. Mit bitte klingt es freundlich.",
+   "en": "request",
+   "lemma": "die Aufforderung"
+  },
+  {
+   "form": "stellt",
+   "context": "Für eine höfliche Aufforderung stellt man das Verb an Position 1 und setzt Sie dahinter. Mit bitte klingt es freundlich.",
+   "en": "puts",
+   "lemma": "stellen"
+  },
+  {
+   "form": "setzt",
+   "context": "Für eine höfliche Aufforderung stellt man das Verb an Position 1 und setzt Sie dahinter. Mit bitte klingt es freundlich.",
+   "en": "puts; places",
+   "lemma": "setzen"
+  },
+  {
+   "form": "dahinter",
+   "context": "Für eine höfliche Aufforderung stellt man das Verb an Position 1 und setzt Sie dahinter. Mit bitte klingt es freundlich.",
+   "en": "after it; behind it",
+   "lemma": ""
+  },
+  {
+   "form": "Tabletten",
+   "context": "Sie nehmen die Tabletten.",
+   "en": "tablets",
+   "lemma": "die Tablette"
+  },
+  {
+   "form": "Seien",
+   "context": "Seien Sie bitte ruhig!",
+   "en": "be (imperative)",
+   "lemma": "sein"
+  },
+  {
+   "form": "freundliche",
+   "context": "Bleiben Sie heute zu Hause.freundliche Empfehlung",
+   "en": "friendly",
+   "lemma": "freundlich"
+  },
+  {
+   "form": "Empfehlung",
+   "context": "Bleiben Sie heute zu Hause.freundliche Empfehlung",
+   "en": "recommendation",
+   "lemma": "die Empfehlung"
+  },
+  {
+   "form": "vorsichtig",
+   "context": "Tipp: Nur sein ist unregelmäßig: Seien Sie bitte vorsichtig!",
+   "en": "careful",
+   "lemma": ""
+  },
+  {
+   "form": "gesagt",
+   "context": "Mit sollen gibt man eine Anweisung weiter, die eine andere Person gesagt hat.",
+   "en": "said",
+   "lemma": "sagen"
+  },
+  {
+   "form": "indirekt",
+   "context": "indirekt (mit sollen)",
+   "en": "indirect",
+   "lemma": ""
+  },
+  {
+   "form": "soll",
+   "context": "Die Ärztin sagt, ich soll viel Tee trinken.",
+   "en": "should",
+   "lemma": "sollen"
+  },
+  {
+   "form": "Chef",
+   "context": "Der Chef: „Rufen Sie Herrn Berg an!\"",
+   "en": "boss",
+   "lemma": "der Chef"
+  },
+  {
+   "form": "Rufen",
+   "context": "Der Chef: „Rufen Sie Herrn Berg an!\"",
+   "en": "call; phone",
+   "lemma": "anrufen"
+  },
+  {
+   "form": "Herrn",
+   "context": "Der Chef: „Rufen Sie Herrn Berg an!\"",
+   "en": "Mr; gentleman",
+   "lemma": "der Herr"
+  },
+  {
+   "form": "sollst",
+   "context": "sollst",
+   "en": "(you) should",
+   "lemma": "sollen"
+  },
+  {
+   "form": "Angelika",
+   "context": "Schwester Angelika sagt, Sie sollen ihm diesen Tee geben.sollen + Infinitiv am Ende",
+   "en": "Angelika (name)",
+   "lemma": ""
+  },
+  {
+   "form": "anderes",
+   "context": "Tipp: sollen heißt: Jemand anderes möchte das. Müssen ist stärker — es gibt keine Wahl.",
+   "en": "else; other",
+   "lemma": "andere"
+  },
+  {
+   "form": "stärker",
+   "context": "Tipp: sollen heißt: Jemand anderes möchte das. Müssen ist stärker — es gibt keine Wahl.",
+   "en": "stronger",
+   "lemma": "stark"
+  },
+  {
+   "form": "Wahl",
+   "context": "Tipp: sollen heißt: Jemand anderes möchte das. Müssen ist stärker — es gibt keine Wahl.",
+   "en": "choice",
+   "lemma": "die Wahl"
+  },
+  {
+   "form": "krank",
+   "context": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "ill; sick",
+   "lemma": ""
+  },
+  {
+   "form": "gesund",
+   "context": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "healthy",
+   "lemma": ""
+  },
+  {
+   "form": "ill",
+   "context": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "healthy",
+   "context": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "malade",
+   "context": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "bonne",
+   "context": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "santéIch",
+   "context": "krank / gesund — EN: ill / healthy · FR: malade / en bonne santéIch bin seit gestern krank.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "Erkältung",
+   "context": "die Erkältung, -en — EN: cold · FR: le rhumeIch habe eine Erkältung.",
+   "en": "cold (illness)",
+   "lemma": "die Erkältung"
+  },
+  {
+   "form": "cold",
+   "context": "die Erkältung, -en — EN: cold · FR: le rhumeIch habe eine Erkältung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rhumeIch",
+   "context": "die Erkältung, -en — EN: cold · FR: le rhumeIch habe eine Erkältung.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "Fieber",
+   "context": "das Fieber (Sg.) — EN: fever · FR: la fièvreHast du Fieber?",
+   "en": "fever",
+   "lemma": "das Fieber"
+  },
+  {
+   "form": "fever",
+   "context": "das Fieber (Sg.) — EN: fever · FR: la fièvreHast du Fieber?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fièvreHast",
+   "context": "das Fieber (Sg.) — EN: fever · FR: la fièvreHast du Fieber?",
+   "en": "(you) have",
+   "lemma": "haben"
+  },
+  {
+   "form": "Tablette",
+   "context": "die Tablette, -n — EN: tablet, pill · FR: le compriméNehmen Sie die Tabletten dreimal täglich.",
+   "en": "tablet; pill",
+   "lemma": "die Tablette"
+  },
+  {
+   "form": "tablet",
+   "context": "die Tablette, -n — EN: tablet, pill · FR: le compriméNehmen Sie die Tabletten dreimal täglich.",
+   "en": "tablet",
+   "lemma": "das Tablet"
+  },
+  {
+   "form": "pill",
+   "context": "die Tablette, -n — EN: tablet, pill · FR: le compriméNehmen Sie die Tabletten dreimal täglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "compriméNehmen",
+   "context": "die Tablette, -n — EN: tablet, pill · FR: le compriméNehmen Sie die Tabletten dreimal täglich.",
+   "en": "take",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "täglich",
+   "context": "die Tablette, -n — EN: tablet, pill · FR: le compriméNehmen Sie die Tabletten dreimal täglich.",
+   "en": "daily; a day",
+   "lemma": ""
+  },
+  {
+   "form": "doctor",
+   "context": "der Arzt, ¨-e / die Ärztin, -nen — EN: doctor · FR: le médecinGehen Sie zum Arzt!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "médecinGehen",
+   "context": "der Arzt, ¨-e / die Ärztin, -nen — EN: doctor · FR: le médecinGehen Sie zum Arzt!",
+   "en": "go",
+   "lemma": "gehen"
+  },
+  {
+   "form": "Hals",
+   "context": "der Hals, ¨-e — EN: throat, neck · FR: la gorgeMein Hals tut weh.",
+   "en": "throat; neck",
+   "lemma": "der Hals"
+  },
+  {
+   "form": "throat",
+   "context": "der Hals, ¨-e — EN: throat, neck · FR: la gorgeMein Hals tut weh.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "neck",
+   "context": "der Hals, ¨-e — EN: throat, neck · FR: la gorgeMein Hals tut weh.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "gorgeMein",
+   "context": "der Hals, ¨-e — EN: throat, neck · FR: la gorgeMein Hals tut weh.",
+   "en": "my",
+   "lemma": ""
+  },
+  {
+   "form": "weh",
+   "context": "der Hals, ¨-e — EN: throat, neck · FR: la gorgeMein Hals tut weh.",
+   "en": "hurts (tut … weh)",
+   "lemma": "wehtun"
+  },
+  {
+   "form": "Kopf",
+   "context": "der Kopf, ¨-e — EN: head · FR: la têteIch habe Kopfschmerzen.",
+   "en": "head",
+   "lemma": "der Kopf"
+  },
+  {
+   "form": "head",
+   "context": "der Kopf, ¨-e — EN: head · FR: la têteIch habe Kopfschmerzen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "têteIch",
+   "context": "der Kopf, ¨-e — EN: head · FR: la têteIch habe Kopfschmerzen.",
+   "en": "I",
+   "lemma": ""
+  },
+  {
+   "form": "Kopfschmerzen",
+   "context": "der Kopf, ¨-e — EN: head · FR: la têteIch habe Kopfschmerzen.",
+   "en": "headache",
+   "lemma": "der Kopfschmerz"
+  },
+  {
+   "form": "wehtun",
+   "context": "wehtun — EN: to hurt · FR: faire malMir tut der Bauch weh.",
+   "en": "to hurt",
+   "lemma": ""
+  },
+  {
+   "form": "hurt",
+   "context": "wehtun — EN: to hurt · FR: faire malMir tut der Bauch weh.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "malMir",
+   "context": "wehtun — EN: to hurt · FR: faire malMir tut der Bauch weh.",
+   "en": "(to) me",
+   "lemma": ""
+  },
+  {
+   "form": "Bauch",
+   "context": "wehtun — EN: to hurt · FR: faire malMir tut der Bauch weh.",
+   "en": "stomach; belly",
+   "lemma": "der Bauch"
+  },
+  {
+   "form": "ausruhen",
+   "context": "sich ausruhen — EN: to rest · FR: se reposerRuhen Sie sich aus!",
+   "en": "to rest (sich ausruhen)",
+   "lemma": ""
+  },
+  {
+   "form": "reposerRuhen",
+   "context": "sich ausruhen — EN: to rest · FR: se reposerRuhen Sie sich aus!",
+   "en": "rest",
+   "lemma": "ausruhen"
+  },
+  {
+   "form": "pharmacieDas",
+   "context": "die Apotheke, -n — EN: pharmacy · FR: la pharmacieDas bekommen Sie in der Apotheke.",
+   "en": "that",
+   "lemma": ""
+  },
+  {
+   "form": "three",
+   "context": "dreimal täglich — EN: three times a day · FR: trois fois par jourNehmen Sie das dreimal täglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "times",
+   "context": "dreimal täglich — EN: three times a day · FR: trois fois par jourNehmen Sie das dreimal täglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "trois",
+   "context": "dreimal täglich — EN: three times a day · FR: trois fois par jourNehmen Sie das dreimal täglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "fois",
+   "context": "dreimal täglich — EN: three times a day · FR: trois fois par jourNehmen Sie das dreimal täglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "par",
+   "context": "dreimal täglich — EN: three times a day · FR: trois fois par jourNehmen Sie das dreimal täglich.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "jourNehmen",
+   "context": "dreimal täglich — EN: three times a day · FR: trois fois par jourNehmen Sie das dreimal täglich.",
+   "en": "take",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "soon",
+   "context": "gute Besserung — EN: get well soon · FR: bon rétablissementGute Besserung!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "rétablissementGute",
+   "context": "gute Besserung — EN: get well soon · FR: bon rétablissementGute Besserung!",
+   "en": "good",
+   "lemma": "gut"
+  },
+  {
+   "form": "fühle",
+   "context": "Ich fühle mich nicht gut.",
+   "en": "feel",
+   "lemma": "fühlen"
+  },
+  {
+   "form": "Ruhen",
+   "context": "Ruhen Sie sich aus!",
+   "en": "rest",
+   "lemma": "ausruhen"
+  },
+  {
+   "form": "Sow",
+   "context": "Herr Sow: Mein Hals tut weh und ich habe Fieber.",
+   "en": "Sow (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Tage",
+   "context": "Ärztin: Ja, dreimal täglich. Und bleiben Sie zwei Tage zu Hause.",
+   "en": "days",
+   "lemma": "der Tag"
+  },
+  {
+   "form": "Tipps",
+   "context": "Eine Freundin ist krank. Schreiben Sie ihr drei Tipps. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie dreimal den Imperativ. • Schreiben Sie einen Satz mit sollen. • Beenden Sie mit einem guten Wunsch.",
+   "en": "tips",
+   "lemma": "der Tipp"
+  },
+  {
+   "form": "Beenden",
+   "context": "Eine Freundin ist krank. Schreiben Sie ihr drei Tipps. Umfang: 25–35 Wörter Checkliste: • Benutzen Sie dreimal den Imperativ. • Schreiben Sie einen Satz mit sollen. • Beenden Sie mit einem guten Wunsch.",
+   "en": "end; finish",
+   "lemma": "beenden"
+  }
+ ]
+}
