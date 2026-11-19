@@ -8,6 +8,8 @@ const SCOPED: RegExp[] = [
   /^\/payments(\/(export|charges|discounts|receipts|reports\/(summary|outstanding)))?$/,
   /^\/students(\/(export|placements\/queue))?$/,
   /^\/(enrollments|classes|sessions|certificates|assignments)$/,
+  /^\/enrollments\/register$/,
+  /^\/applications\/export$/,
   /^\/attendance\/(summary|export)$/,
   /^\/assessments\/(attempts(\/export)?|skills)$/,
   /^\/content\/activity-submissions$/,
