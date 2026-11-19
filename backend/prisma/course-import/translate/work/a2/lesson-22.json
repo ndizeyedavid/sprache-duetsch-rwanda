@@ -1,0 +1,699 @@
+{
+ "level": "A2",
+ "lesson": 22,
+ "title": "Mobilität und Verkehr — Seit ich meinen Wagen verkauft habe, …",
+ "lines": [
+  {
+   "de": "Über Mobilität sprechen und etwas Schritt für Schritt erklären.",
+   "en": "Talk about mobility and explain something step by step."
+  },
+  {
+   "de": "Textsorte: Anleitung · Erfahrungsbericht",
+   "en": "Text type: Instructions · Personal experience report"
+  },
+  {
+   "de": "Prüfungsbezug: Goethe A2 Lesen Teil 4; telc A2 Sprechen",
+   "en": "Exam link: Goethe A2 Reading part 4; telc A2 Speaking"
+  },
+  {
+   "de": "über Verkehrsmittel und Mobilität sprechen",
+   "en": "talk about means of transport and mobility"
+  },
+  {
+   "de": "etwas Schritt für Schritt erklären",
+   "en": "explain something step by step"
+  },
+  {
+   "de": "Zeiträume mit seit(dem) und bis ausdrücken",
+   "en": "express periods of time with seit(dem) and bis"
+  },
+  {
+   "de": "Grammatik: Die Konjunktionen seit(dem) und bis",
+   "en": "Grammar: The conjunctions seit(dem) and bis"
+  },
+  {
+   "de": "Beide verbinden zwei Handlungen zeitlich und leiten einen Nebensatz ein — das Verb steht am Ende. seitdem nennt den Anfang eines Zeitraums, bis das Ende.",
+   "en": "Both link two actions in time and introduce a subordinate clause (Nebensatz) — the verb goes at the end. seitdem gives the beginning of a period of time, bis gives the end."
+  },
+  {
+   "de": "Konjunktion",
+   "en": "Conjunction"
+  },
+  {
+   "de": "seit / seitdem",
+   "en": "since"
+  },
+  {
+   "de": "Anfang: ab diesem Moment bis jetzt",
+   "en": "Beginning: from this moment until now"
+  },
+  {
+   "de": "Seit ich mein Auto verkauft habe, fahre ich Rad.",
+   "en": "Since I sold my car, I've been cycling."
+  },
+  {
+   "de": "bis",
+   "en": "until"
+  },
+  {
+   "de": "Ende: bis zu diesem Moment",
+   "en": "End: up to this moment"
+  },
+  {
+   "de": "Ich fahre Rad, bis es zu kalt wird.",
+   "en": "I cycle until it gets too cold."
+  },
+  {
+   "de": "Ich spare viel Geld, seitdem ich die Bahn nehme.",
+   "en": "I've been saving a lot of money since I started taking the train."
+  },
+  {
+   "de": "Vergleich: Präposition",
+   "en": "Comparison: preposition"
+  },
+  {
+   "de": "seit + Dativ",
+   "en": "seit + dative"
+  },
+  {
+   "de": "Seit einem Jahr fahre ich Rad.",
+   "en": "I've been cycling for a year."
+  },
+  {
+   "de": "Seitdem ich in der Stadt wohne, brauche ich kein Auto mehr.Nebensatz vorn, Verb am Ende",
+   "en": "Since I've been living in the city, I don't need a car any more. — subordinate clause first, verb at the end"
+  },
+  {
+   "de": "Warte bitte, bis die Ampel grün wird.bis nennt das Ende",
+   "en": "Please wait until the light turns green. — bis gives the end"
+  },
+  {
+   "de": "Tipp: Unterschied: seit + Nomen (Seit zwei Jahren …), seitdem + Satz (Seitdem ich hier wohne, …).",
+   "en": "Tip: Difference: seit + noun (Seit zwei Jahren …), seitdem + clause (Seitdem ich hier wohne, …)."
+  },
+  {
+   "de": "das Verkehrsmittel, - — EN: means of transport · FR: le moyen de transportWelches Verkehrsmittel nimmst du?",
+   "en": "Example: Which means of transport do you take?"
+  },
+  {
+   "de": "die Straßenbahn, -en — EN: tram · FR: le tramwayDie Straßenbahn fährt alle zehn Minuten.",
+   "en": "Example: The tram runs every ten minutes."
+  },
+  {
+   "de": "die U-Bahn / die S-Bahn — EN: underground / city train · FR: le métro / le train urbainMit der U-Bahn bin ich schneller.",
+   "en": "Example: I'm faster by underground."
+  },
+  {
+   "de": "der Wagen, - — EN: car · FR: la voitureIch habe meinen Wagen verkauft.",
+   "en": "Example: I have sold my car."
+  },
+  {
+   "de": "der Führerschein, -e — EN: driving licence · FR: le permis de conduireIch mache gerade den Führerschein.",
+   "en": "Example: I'm learning to drive at the moment."
+  },
+  {
+   "de": "die Haltestelle, -n — EN: stop · FR: l'arrêtDie Haltestelle ist gleich um die Ecke.",
+   "en": "Example: The stop is just around the corner."
+  },
+  {
+   "de": "der Fahrplan, ¨-e — EN: timetable · FR: les horairesSchau mal im Fahrplan nach.",
+   "en": "Example: Have a look in the timetable."
+  },
+  {
+   "de": "einsteigen / aussteigen — EN: to get on / off · FR: monter / descendreAn der nächsten Haltestelle steigen wir aus.",
+   "en": "Example: We get off at the next stop."
+  },
+  {
+   "de": "der Stau, -s — EN: traffic jam · FR: l'embouteillageAuf der Autobahn war wieder Stau.",
+   "en": "Example: There was another traffic jam on the motorway."
+  },
+  {
+   "de": "sparen — EN: to save · FR: économiserSo spare ich viel Geld.",
+   "en": "Example: That way I save a lot of money."
+  },
+  {
+   "de": "die Entfernung, -en — EN: distance · FR: la distanceDie Entfernung beträgt nur drei Kilometer.",
+   "en": "Example: The distance is only three kilometres."
+  },
+  {
+   "de": "umweltfreundlich — EN: environmentally friendly · FR: écologiqueDas Fahrrad ist am umweltfreundlichsten.",
+   "en": "Example: The bicycle is the most environmentally friendly."
+  },
+  {
+   "de": "etwas erklären",
+   "en": "Explaining something"
+  },
+  {
+   "de": "Das geht so: Zuerst …, dann …",
+   "en": "It works like this: First …, then …"
+  },
+  {
+   "de": "Danach musst du …",
+   "en": "After that you have to …"
+  },
+  {
+   "de": "Zum Schluss …",
+   "en": "Finally …"
+  },
+  {
+   "de": "über Mobilität sprechen",
+   "en": "Talking about mobility"
+  },
+  {
+   "de": "Ich fahre meistens mit der Bahn.",
+   "en": "I usually go by train."
+  },
+  {
+   "de": "Seitdem ich kein Auto mehr habe, …",
+   "en": "Since I no longer have a car, …"
+  },
+  {
+   "de": "Zu Fuß bin ich in zehn Minuten da.",
+   "en": "On foot I'm there in ten minutes."
+  },
+  {
+   "de": "Vor- und Nachteile nennen",
+   "en": "Naming advantages and disadvantages"
+  },
+  {
+   "de": "Das spart viel Geld.",
+   "en": "That saves a lot of money."
+  },
+  {
+   "de": "Der Nachteil ist, dass …",
+   "en": "The disadvantage is that …"
+  },
+  {
+   "de": "Dafür bin ich flexibler.",
+   "en": "But in return I'm more flexible."
+  },
+  {
+   "de": "Dialog: Ohne Auto in der Stadt",
+   "en": "Dialogue: Without a car in the city"
+  },
+  {
+   "de": "Ivo: Du hast wirklich dein Auto verkauft?",
+   "en": "Ivo: You really sold your car?"
+  },
+  {
+   "de": "Tanja: Ja. Seit ich meinen Wagen verkauft habe, fahre ich nur noch Rad und Bahn.",
+   "en": "Tanja: Yes. Since I sold my car, I only travel by bike and train."
+  },
+  {
+   "de": "Ivo: Und das funktioniert?",
+   "en": "Ivo: And that works?"
+  },
+  {
+   "de": "Tanja: Sehr gut. Und ich spare im Monat fast 300 Euro.",
+   "en": "Tanja: Very well. And I save almost 300 euros a month."
+  },
+  {
+   "de": "Ivo: Aber im Winter ist das doch unangenehm.",
+   "en": "Ivo: But in winter that's unpleasant, isn't it?"
+  },
+  {
+   "de": "Tanja: Dann nehme ich die Straßenbahn — bis es wieder wärmer wird.",
+   "en": "Tanja: Then I take the tram — until it gets warmer again."
+  },
+  {
+   "de": "Welches Verkehrsmittel nimmst du?",
+   "en": "Which means of transport do you take?"
+  },
+  {
+   "de": "Die Straßenbahn fährt alle zehn Minuten.",
+   "en": "The tram runs every ten minutes."
+  },
+  {
+   "de": "Mit der U-Bahn bin ich schneller.",
+   "en": "I'm faster by underground."
+  },
+  {
+   "de": "Ich habe meinen Wagen verkauft.",
+   "en": "I have sold my car."
+  },
+  {
+   "de": "Ich mache gerade den Führerschein.",
+   "en": "I'm learning to drive at the moment."
+  },
+  {
+   "de": "Die Haltestelle ist gleich um die Ecke.",
+   "en": "The stop is just around the corner."
+  },
+  {
+   "de": "Schau mal im Fahrplan nach.",
+   "en": "Have a look in the timetable."
+  },
+  {
+   "de": "An der nächsten Haltestelle steigen wir aus.",
+   "en": "We get off at the next stop."
+  },
+  {
+   "de": "Auf der Autobahn war wieder Stau.",
+   "en": "There was another traffic jam on the motorway."
+  },
+  {
+   "de": "So spare ich viel Geld.",
+   "en": "That way I save a lot of money."
+  },
+  {
+   "de": "Die Entfernung beträgt nur drei Kilometer.",
+   "en": "The distance is only three kilometres."
+  },
+  {
+   "de": "Das Fahrrad ist am umweltfreundlichsten.",
+   "en": "The bicycle is the most environmentally friendly."
+  },
+  {
+   "de": "___ ich mein Auto verkauft habe, fahre ich Rad. (Konjunktion)",
+   "en": "___ I sold my car, I've been cycling. (conjunction)"
+  },
+  {
+   "de": "Warte bitte, ___ die Ampel grün wird.",
+   "en": "Please wait ___ the light turns green."
+  },
+  {
+   "de": "Was steht nach seit + Nomen?",
+   "en": "What comes after seit + noun?"
+  },
+  {
+   "de": "Ich spare viel Geld, ___ ich die Bahn nehme.",
+   "en": "I save a lot of money ___ I've been taking the train."
+  },
+  {
+   "de": "An der nächsten Haltestelle ___ wir ___. (aussteigen, Präsens)",
+   "en": "At the next stop we ___ ___. (aussteigen, present tense)"
+  },
+  {
+   "de": "Erklären Sie in einer kurzen Anleitung, wie man in Ihrer Stadt ein Ticket kauft und fährt. Umfang: 50–70 Wörter Checkliste: • Nennen Sie die Schritte mit zuerst, dann, danach, zum Schluss. • Benutzen Sie einmal seitdem oder bis. • Schreiben Sie, was ein Ticket kostet.",
+   "en": "Explain in short instructions how to buy a ticket and travel in your town. Length: 50–70 words Checklist: • Give the steps with zuerst, dann, danach, zum Schluss. • Use seitdem or bis once. • Write how much a ticket costs."
+  },
+  {
+   "de": "seit/seitdem nennt den Anfang eines Zeitraums, der bis jetzt dauert.",
+   "en": "seit/seitdem gives the beginning of a period of time that lasts until now."
+  },
+  {
+   "de": "bis nennt das Ende eines Zeitraums.",
+   "en": "bis gives the end of a period of time."
+  },
+  {
+   "de": "seit als Präposition steht mit dem Dativ; vor einem ganzen Satz steht seitdem.",
+   "en": "seit as a preposition takes the dative; before a whole clause, you use seitdem."
+  },
+  {
+   "de": "Trennbares Verb: steigen … aus.",
+   "en": "Separable verb: steigen … aus."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Mobilität",
+   "context": "Über Mobilität sprechen und etwas Schritt für Schritt erklären.",
+   "en": "mobility",
+   "lemma": "die Mobilität"
+  },
+  {
+   "form": "Schritt",
+   "context": "Über Mobilität sprechen und etwas Schritt für Schritt erklären.",
+   "en": "step",
+   "lemma": "der Schritt"
+  },
+  {
+   "form": "Erfahrungsbericht",
+   "context": "Textsorte: Anleitung · Erfahrungsbericht",
+   "en": "experience report",
+   "lemma": "der Erfahrungsbericht"
+  },
+  {
+   "form": "Konjunktionen",
+   "context": "Grammatik: Die Konjunktionen seit(dem) und bis",
+   "en": "conjunctions",
+   "lemma": "die Konjunktion"
+  },
+  {
+   "form": "Handlungen",
+   "context": "Beide verbinden zwei Handlungen zeitlich und leiten einen Nebensatz ein — das Verb steht am Ende. seitdem nennt den Anfang eines Zeitraums, bis das Ende.",
+   "en": "actions",
+   "lemma": "die Handlung"
+  },
+  {
+   "form": "zeitlich",
+   "context": "Beide verbinden zwei Handlungen zeitlich und leiten einen Nebensatz ein — das Verb steht am Ende. seitdem nennt den Anfang eines Zeitraums, bis das Ende.",
+   "en": "in time",
+   "lemma": ""
+  },
+  {
+   "form": "leiten",
+   "context": "Beide verbinden zwei Handlungen zeitlich und leiten einen Nebensatz ein — das Verb steht am Ende. seitdem nennt den Anfang eines Zeitraums, bis das Ende.",
+   "en": "(… ein) introduce; lead",
+   "lemma": ""
+  },
+  {
+   "form": "seitdem",
+   "context": "Beide verbinden zwei Handlungen zeitlich und leiten einen Nebensatz ein — das Verb steht am Ende. seitdem nennt den Anfang eines Zeitraums, bis das Ende.",
+   "en": "since (then)",
+   "lemma": ""
+  },
+  {
+   "form": "Zeitraums",
+   "context": "Beide verbinden zwei Handlungen zeitlich und leiten einen Nebensatz ein — das Verb steht am Ende. seitdem nennt den Anfang eines Zeitraums, bis das Ende.",
+   "en": "period of time",
+   "lemma": "der Zeitraum"
+  },
+  {
+   "form": "verkauft",
+   "context": "Seit ich mein Auto verkauft habe, fahre ich Rad.",
+   "en": "sold",
+   "lemma": "verkaufen"
+  },
+  {
+   "form": "spare",
+   "context": "Ich spare viel Geld, seitdem ich die Bahn nehme.",
+   "en": "save",
+   "lemma": "sparen"
+  },
+  {
+   "form": "Geld",
+   "context": "Ich spare viel Geld, seitdem ich die Bahn nehme.",
+   "en": "money",
+   "lemma": "das Geld"
+  },
+  {
+   "form": "Seitdem",
+   "context": "Seitdem ich in der Stadt wohne, brauche ich kein Auto mehr.Nebensatz vorn, Verb am Ende",
+   "en": "since (then)",
+   "lemma": ""
+  },
+  {
+   "form": "means",
+   "context": "das Verkehrsmittel, - — EN: means of transport · FR: le moyen de transportWelches Verkehrsmittel nimmst du?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "transport",
+   "context": "das Verkehrsmittel, - — EN: means of transport · FR: le moyen de transportWelches Verkehrsmittel nimmst du?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "moyen",
+   "context": "das Verkehrsmittel, - — EN: means of transport · FR: le moyen de transportWelches Verkehrsmittel nimmst du?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "transportWelches",
+   "context": "das Verkehrsmittel, - — EN: means of transport · FR: le moyen de transportWelches Verkehrsmittel nimmst du?",
+   "en": "Welches = which",
+   "lemma": ""
+  },
+  {
+   "form": "nimmst",
+   "context": "das Verkehrsmittel, - — EN: means of transport · FR: le moyen de transportWelches Verkehrsmittel nimmst du?",
+   "en": "take (with du)",
+   "lemma": "nehmen"
+  },
+  {
+   "form": "Straßenbahn",
+   "context": "die Straßenbahn, -en — EN: tram · FR: le tramwayDie Straßenbahn fährt alle zehn Minuten.",
+   "en": "tram",
+   "lemma": "die Straßenbahn"
+  },
+  {
+   "form": "tram",
+   "context": "die Straßenbahn, -en — EN: tram · FR: le tramwayDie Straßenbahn fährt alle zehn Minuten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tramwayDie",
+   "context": "die Straßenbahn, -en — EN: tram · FR: le tramwayDie Straßenbahn fährt alle zehn Minuten.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "S-Bahn",
+   "context": "die U-Bahn / die S-Bahn — EN: underground / city train · FR: le métro / le train urbainMit der U-Bahn bin ich schneller.",
+   "en": "city train",
+   "lemma": "die S-Bahn"
+  },
+  {
+   "form": "city",
+   "context": "die U-Bahn / die S-Bahn — EN: underground / city train · FR: le métro / le train urbainMit der U-Bahn bin ich schneller.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "métro",
+   "context": "die U-Bahn / die S-Bahn — EN: underground / city train · FR: le métro / le train urbainMit der U-Bahn bin ich schneller.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "urbainMit",
+   "context": "die U-Bahn / die S-Bahn — EN: underground / city train · FR: le métro / le train urbainMit der U-Bahn bin ich schneller.",
+   "en": "Mit = with, by",
+   "lemma": ""
+  },
+  {
+   "form": "schneller",
+   "context": "die U-Bahn / die S-Bahn — EN: underground / city train · FR: le métro / le train urbainMit der U-Bahn bin ich schneller.",
+   "en": "faster",
+   "lemma": "schnell"
+  },
+  {
+   "form": "Wagen",
+   "context": "der Wagen, - — EN: car · FR: la voitureIch habe meinen Wagen verkauft.",
+   "en": "car",
+   "lemma": "der Wagen"
+  },
+  {
+   "form": "car",
+   "context": "der Wagen, - — EN: car · FR: la voitureIch habe meinen Wagen verkauft.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "voitureIch",
+   "context": "der Wagen, - — EN: car · FR: la voitureIch habe meinen Wagen verkauft.",
+   "en": "Ich = I",
+   "lemma": ""
+  },
+  {
+   "form": "Führerschein",
+   "context": "der Führerschein, -e — EN: driving licence · FR: le permis de conduireIch mache gerade den Führerschein.",
+   "en": "driving licence",
+   "lemma": "der Führerschein"
+  },
+  {
+   "form": "driving",
+   "context": "der Führerschein, -e — EN: driving licence · FR: le permis de conduireIch mache gerade den Führerschein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "licence",
+   "context": "der Führerschein, -e — EN: driving licence · FR: le permis de conduireIch mache gerade den Führerschein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "permis",
+   "context": "der Führerschein, -e — EN: driving licence · FR: le permis de conduireIch mache gerade den Führerschein.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Haltestelle",
+   "context": "die Haltestelle, -n — EN: stop · FR: l'arrêtDie Haltestelle ist gleich um die Ecke.",
+   "en": "stop (bus, tram)",
+   "lemma": "die Haltestelle"
+  },
+  {
+   "form": "stop",
+   "context": "die Haltestelle, -n — EN: stop · FR: l'arrêtDie Haltestelle ist gleich um die Ecke.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'arrêtDie",
+   "context": "die Haltestelle, -n — EN: stop · FR: l'arrêtDie Haltestelle ist gleich um die Ecke.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "Fahrplan",
+   "context": "der Fahrplan, ¨-e — EN: timetable · FR: les horairesSchau mal im Fahrplan nach.",
+   "en": "timetable",
+   "lemma": "der Fahrplan"
+  },
+  {
+   "form": "timetable",
+   "context": "der Fahrplan, ¨-e — EN: timetable · FR: les horairesSchau mal im Fahrplan nach.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "horairesSchau",
+   "context": "der Fahrplan, ¨-e — EN: timetable · FR: les horairesSchau mal im Fahrplan nach.",
+   "en": "Schau … nach = look it up",
+   "lemma": "schauen"
+  },
+  {
+   "form": "descendreAn",
+   "context": "einsteigen / aussteigen — EN: to get on / off · FR: monter / descendreAn der nächsten Haltestelle steigen wir aus.",
+   "en": "An = at",
+   "lemma": ""
+  },
+  {
+   "form": "Stau",
+   "context": "der Stau, -s — EN: traffic jam · FR: l'embouteillageAuf der Autobahn war wieder Stau.",
+   "en": "traffic jam",
+   "lemma": "der Stau"
+  },
+  {
+   "form": "jam",
+   "context": "der Stau, -s — EN: traffic jam · FR: l'embouteillageAuf der Autobahn war wieder Stau.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'embouteillageAuf",
+   "context": "der Stau, -s — EN: traffic jam · FR: l'embouteillageAuf der Autobahn war wieder Stau.",
+   "en": "Auf = on",
+   "lemma": ""
+  },
+  {
+   "form": "Autobahn",
+   "context": "der Stau, -s — EN: traffic jam · FR: l'embouteillageAuf der Autobahn war wieder Stau.",
+   "en": "motorway",
+   "lemma": "die Autobahn"
+  },
+  {
+   "form": "sparen",
+   "context": "sparen — EN: to save · FR: économiserSo spare ich viel Geld.",
+   "en": "to save",
+   "lemma": ""
+  },
+  {
+   "form": "save",
+   "context": "sparen — EN: to save · FR: économiserSo spare ich viel Geld.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "économiserSo",
+   "context": "sparen — EN: to save · FR: économiserSo spare ich viel Geld.",
+   "en": "So = that way",
+   "lemma": ""
+  },
+  {
+   "form": "Entfernung",
+   "context": "die Entfernung, -en — EN: distance · FR: la distanceDie Entfernung beträgt nur drei Kilometer.",
+   "en": "distance",
+   "lemma": "die Entfernung"
+  },
+  {
+   "form": "distance",
+   "context": "die Entfernung, -en — EN: distance · FR: la distanceDie Entfernung beträgt nur drei Kilometer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "distanceDie",
+   "context": "die Entfernung, -en — EN: distance · FR: la distanceDie Entfernung beträgt nur drei Kilometer.",
+   "en": "Die = the",
+   "lemma": ""
+  },
+  {
+   "form": "Kilometer",
+   "context": "die Entfernung, -en — EN: distance · FR: la distanceDie Entfernung beträgt nur drei Kilometer.",
+   "en": "kilometre, kilometres",
+   "lemma": "der Kilometer"
+  },
+  {
+   "form": "umweltfreundlich",
+   "context": "umweltfreundlich — EN: environmentally friendly · FR: écologiqueDas Fahrrad ist am umweltfreundlichsten.",
+   "en": "environmentally friendly",
+   "lemma": ""
+  },
+  {
+   "form": "environmentally",
+   "context": "umweltfreundlich — EN: environmentally friendly · FR: écologiqueDas Fahrrad ist am umweltfreundlichsten.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "écologiqueDas",
+   "context": "umweltfreundlich — EN: environmentally friendly · FR: écologiqueDas Fahrrad ist am umweltfreundlichsten.",
+   "en": "Das = the",
+   "lemma": ""
+  },
+  {
+   "form": "umweltfreundlichsten",
+   "context": "umweltfreundlich — EN: environmentally friendly · FR: écologiqueDas Fahrrad ist am umweltfreundlichsten.",
+   "en": "most environmentally friendly",
+   "lemma": "umweltfreundlich"
+  },
+  {
+   "form": "Fuß",
+   "context": "Zu Fuß bin ich in zehn Minuten da.",
+   "en": "foot (zu Fuß = on foot)",
+   "lemma": "der Fuß"
+  },
+  {
+   "form": "Nachteile",
+   "context": "Vor- und Nachteile nennen",
+   "en": "disadvantages",
+   "lemma": "der Nachteil"
+  },
+  {
+   "form": "spart",
+   "context": "Das spart viel Geld.",
+   "en": "saves",
+   "lemma": "sparen"
+  },
+  {
+   "form": "Nachteil",
+   "context": "Der Nachteil ist, dass …",
+   "en": "disadvantage",
+   "lemma": "der Nachteil"
+  },
+  {
+   "form": "flexibler",
+   "context": "Dafür bin ich flexibler.",
+   "en": "more flexible",
+   "lemma": "flexibel"
+  },
+  {
+   "form": "Ivo",
+   "context": "Ivo: Du hast wirklich dein Auto verkauft?",
+   "en": "Ivo (name)",
+   "lemma": ""
+  },
+  {
+   "form": "Tanja",
+   "context": "Tanja: Ja. Seit ich meinen Wagen verkauft habe, fahre ich nur noch Rad und Bahn.",
+   "en": "Tanja (name)",
+   "lemma": ""
+  },
+  {
+   "form": "unangenehm",
+   "context": "Ivo: Aber im Winter ist das doch unangenehm.",
+   "en": "unpleasant",
+   "lemma": ""
+  },
+  {
+   "form": "wärmer",
+   "context": "Tanja: Dann nehme ich die Straßenbahn — bis es wieder wärmer wird.",
+   "en": "warmer",
+   "lemma": "warm"
+  },
+  {
+   "form": "kauft",
+   "context": "Erklären Sie in einer kurzen Anleitung, wie man in Ihrer Stadt ein Ticket kauft und fährt. Umfang: 50–70 Wörter Checkliste: • Nennen Sie die Schritte mit zuerst, dann, danach, zum Schluss. • Benutzen Sie einmal seitdem oder bis. • Schreiben Sie, was ein Ticket kostet.",
+   "en": "buys",
+   "lemma": "kaufen"
+  }
+ ]
+}
