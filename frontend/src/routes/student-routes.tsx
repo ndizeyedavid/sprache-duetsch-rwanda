@@ -3,7 +3,7 @@ import { AppLayout } from "../components/layout/AppLayout";
 import { STUDENT_ROLES } from "../lib/roles";
 import { StudentAttendance } from "../pages/student/Attendance";
 import { RequireRole } from "./guards";
-import { Activity,AssignmentDetail,Assignments,CourseContents,CourseOverview,Courses,Dashboard,Grades,Messages,/* Notes, */Payments,Placement,Profile,Schedule,StudentActivity,StudentLesson,Teachers } from "./student-pages";
+import { Activity,AssignmentDetail,Assignments,CourseContents,CourseOverview,Courses,Dashboard,ExamPaperSheet,Exams,Grades,Messages,/* Notes, */Payments,Placement,Profile,Review,Schedule,StudentActivity,StudentLesson,Teachers,WordList } from "./student-pages";
 
 /** Student pages. Rendered inside <Routes> as a fragment. */
 export function studentRoutes() {
@@ -14,12 +14,16 @@ export function studentRoutes() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:slug" element={<CourseOverview />} />
         <Route path="/courses/:slug/learn" element={<CourseContents />} />
+        <Route path="/courses/:slug/review" element={<Review />} />
+        <Route path="/courses/:slug/words" element={<WordList />} />
         <Route path="/courses/:slug/learn/:lessonId" element={<StudentLesson />} />
         <Route path="/courses/:slug/learn/:lessonId/activity/:activityId" element={<StudentActivity />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/assignments" element={<Assignments />} />
         <Route path="/assignments/:id" element={<AssignmentDetail />} />
         <Route path="/grades" element={<Grades />} />
+        <Route path="/exams" element={<Exams />} />
+        <Route path="/exams/papers/:id" element={<ExamPaperSheet />} />
         <Route path="/attendance" element={<StudentAttendance />} />
         <Route path="/instructors" element={<Teachers />} />
         <Route path="/messages" element={<Messages />} />
