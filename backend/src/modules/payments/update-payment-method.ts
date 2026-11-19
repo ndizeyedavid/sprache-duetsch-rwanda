@@ -14,8 +14,8 @@ export const updatePaymentMethod = async (
     throw notFound("Payment method not found");
   }
 
-  if (input.code && input.code !== before.code && (before.code === "PAYPACK" || input.code === "PAYPACK")) {
-    throw conflict("The Paypack gateway code cannot be reassigned");
+  if (input.code && input.code !== before.code && (before.code === "XENDLYPAY" || input.code === "XENDLYPAY")) {
+    throw conflict("The XendlyPay gateway code cannot be reassigned");
   }
   if (input.code && input.code !== before.code) {
     const duplicate = await tx.paymentMethodConfig.findUnique({
