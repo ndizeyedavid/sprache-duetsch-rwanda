@@ -1,0 +1,167 @@
+{
+  "level": "A2",
+  "kind": "final",
+  "title": "Probeprüfung A2 · Goethe-Zertifikat A2",
+  "titleEn": "Mock exam A2 · Goethe-Zertifikat A2 format",
+  "description": "Probeprüfung im Format der schriftlichen Prüfung des Goethe-Zertifikats A2: Lesen (30 Minuten, vier Teile, 20 Punkte), Hören (circa 30 Minuten, vier Teile, 20 Punkte) und Schreiben (30 Minuten, zwei Teile, 20 Punkte). Sie haben insgesamt 90 Minuten und können 60 Punkte bekommen. Zum Bestehen brauchen Sie 60 %. Ihre Lehrerin oder Ihr Lehrer korrigiert den Teil Schreiben. Den Teil Sprechen üben Sie mit Ihrer Lehrerin oder Ihrem Lehrer.",
+  "descriptionEn": "A mock exam in the format of the Goethe-Zertifikat A2 written exam: Reading (30 minutes, four parts, 20 points), Listening (about 30 minutes, four parts, 20 points) and Writing (30 minutes, two parts, 20 points). You have 90 minutes in total and can score 60 points. You need 60% to pass. Your teacher marks the writing part. You practise the speaking part (Sprechen) with your teacher.",
+  "durationMinutes": 90,
+  "passMark": 60,
+  "maxAttempts": 3,
+  "after": 24,
+  "sections": [
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 1",
+      "titleEn": "Reading, part 1",
+      "intro": "Lesen Sie den Zeitungsartikel und die Aufgaben. Wählen Sie für jede Aufgabe die richtige Lösung a, b oder c. · Read the newspaper article and the tasks. Choose the right answer a, b or c for each task.",
+      "letters": true,
+      "passage": "Deutsch lernen bei einer Tasse Kaffee\n\nJeden Donnerstagabend ist im Café „Kivu“ in der Freiburger Altstadt kein Platz mehr frei. Dann treffen sich hier Menschen aus vielen Ländern zum Sprachcafé. Die Idee dazu hatte Diane Mukeshimana. Die 29-Jährige kommt aus Huye in Ruanda und lebt seit vier Jahren in Deutschland.\n\n„Am Anfang war es schwer für mich“, erzählt sie. „In Kigali habe ich einen Deutschkurs gemacht und die Prüfung bestanden. Aber hier habe ich die Leute oft nicht verstanden, weil alle so schnell gesprochen haben.“ Zuerst hat Diane als Kellnerin in einem Hotelrestaurant gearbeitet. Dort musste sie jeden Tag mit Gästen sprechen. „Das war mein bester Deutschkurs!“, sagt sie und lacht.\n\nVor zwei Jahren hat sie dann ihr eigenes Café eröffnet. Hier verkauft sie vor allem Kaffee aus ihrer Heimat. Den bekommt sie direkt von Bauern, die am Kivusee leben. Das Sprachcafé war zuerst nur ein Treffen mit ein paar Freunden. Heute kommen jede Woche bis zu vierzig Gäste: Studenten, Rentner und Familien.\n\nDie Regeln sind einfach: Man spricht nur Deutsch, und Fehler sind kein Problem. Der Eintritt ist frei, nur die Getränke muss man bezahlen. Ab Mai gibt es das Sprachcafé auch am Samstagvormittag – dann auch mit Spielen für Kinder.",
+      "questions": [
+        { "type": "choose", "prompt": "Diane Mukeshimana …", "options": ["wohnt in Huye.", "ist vor vier Jahren nach Deutschland gekommen.", "hat ihr Café vor vier Jahren eröffnet."], "answer": "ist vor vier Jahren nach Deutschland gekommen." },
+        { "type": "choose", "prompt": "Am Anfang hatte Diane in Deutschland Probleme, weil …", "options": ["sie keine Arbeit gefunden hat.", "sie in Kigali keinen Deutschkurs gemacht hat.", "die Leute sehr schnell gesprochen haben."], "answer": "die Leute sehr schnell gesprochen haben." },
+        { "type": "choose", "prompt": "Wo hat Diane am meisten Deutsch gelernt?", "options": ["bei ihrer Arbeit als Kellnerin", "in ihrem Deutschkurs in Kigali", "im Sprachcafé mit ihren Freunden"], "answer": "bei ihrer Arbeit als Kellnerin" },
+        { "type": "choose", "prompt": "Am Anfang waren im Sprachcafé …", "options": ["nur Studenten.", "nur ein paar Freunde von Diane.", "viele Familien."], "answer": "nur ein paar Freunde von Diane." },
+        { "type": "choose", "prompt": "Ab Mai …", "options": ["gibt es das Sprachcafé zweimal pro Woche.", "gibt es das Sprachcafé nur noch am Samstag.", "muss man im Sprachcafé Eintritt bezahlen."], "answer": "gibt es das Sprachcafé zweimal pro Woche." }
+      ]
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 2",
+      "titleEn": "Reading, part 2",
+      "intro": "Sie sind im Kaufhaus Sonnenberg. Lesen Sie die Aufgaben und den Wegweiser. In welchen Stock gehen Sie? Wählen Sie die richtige Lösung a, b oder c. · You are in the Sonnenberg department store. Read the tasks and the store guide. Which floor do you go to? Choose the right answer a, b or c.",
+      "letters": true,
+      "passage": "Kaufhaus Sonnenberg – Wegweiser\n\n4. Stock: Restaurant „Stadtblick“ mit Dachterrasse · Kundenservice (Geschenkgutscheine, Geschenkverpackung) · Fotostudio (Passfotos, Porträts) · Toiletten\n\n3. Stock: Elektro (Fernseher, Computer, Handys, Kameras) · Haushaltsgeräte (Kaffeemaschinen, Waschmaschinen, Kühlschränke) · Spielwaren · Papier und Schreibwaren\n\n2. Stock: Herrenmode · Herrenschuhe · Sportkleidung · Sportartikel (Bälle, Fahrräder, Zelte)\n\n1. Stock: Damenmode · Damenschuhe · Kindermode · Bettwäsche und Handtücher\n\nErdgeschoss: Information · Taschen und Koffer · Regenschirme · Uhren und Schmuck · Parfümerie und Kosmetik · Zeitungen, Zeitschriften und Bücher\n\nUntergeschoss: Lebensmittel und Getränke · Bäckerei · Haushaltswaren (Geschirr, Töpfe, Gläser) · Schuhreparatur und Schlüsseldienst",
+      "questions": [
+        { "type": "choose", "prompt": "Ihre Freundin hat Geburtstag. Sie möchten ihr eine Uhr schenken.", "options": ["Erdgeschoss", "4. Stock", "anderer Stock"], "answer": "Erdgeschoss" },
+        { "type": "choose", "prompt": "Sie brauchen für Ihre Bewerbung ein Foto von sich.", "options": ["2. Stock", "3. Stock", "anderer Stock"], "answer": "anderer Stock" },
+        { "type": "choose", "prompt": "Sie brauchen für Ihren Deutschkurs Hefte und Stifte.", "options": ["Erdgeschoss", "3. Stock", "anderer Stock"], "answer": "3. Stock" },
+        { "type": "choose", "prompt": "Ihre Schuhe sind kaputt. Sie möchten aber keine neuen kaufen.", "options": ["Untergeschoss", "2. Stock", "anderer Stock"], "answer": "Untergeschoss" },
+        { "type": "choose", "prompt": "Sie sind umgezogen und brauchen noch Teller und Tassen.", "options": ["1. Stock", "3. Stock", "anderer Stock"], "answer": "anderer Stock" }
+      ]
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 3",
+      "titleEn": "Reading, part 3",
+      "intro": "Lesen Sie die E-Mail und die Aufgaben. Wählen Sie für jede Aufgabe die richtige Lösung a, b oder c. · Read the email and the tasks. Choose the right answer a, b or c for each task.",
+      "letters": true,
+      "passage": "Liebe Aline,\n\nvielen Dank für deine Nachricht und die schönen Fotos von deiner Hochzeit! Du siehst wunderbar aus. Entschuldige bitte, dass ich erst jetzt antworte. Du denkst bestimmt, ich arbeite zu viel. Aber nein – ich bin umgezogen!\n\nIch wohne jetzt nicht mehr im Wohnheim, sondern in einer eigenen Wohnung. Sie hat zwei Zimmer und einen großen Balkon. Nur die Küche gefällt mir nicht, weil sie sehr klein ist. Aber die Wohnung liegt ganz in der Nähe vom Krankenhaus. Früher musste ich jeden Morgen eine halbe Stunde mit dem Bus fahren. Jetzt gehe ich in zehn Minuten zu Fuß zur Arbeit.\n\nMeine Ausbildung macht mir immer mehr Spaß. Am Anfang habe ich nur morgens gearbeitet, aber seit Oktober muss ich auch nachts arbeiten. Das ist anstrengend, aber meine Kollegen sind sehr nett und helfen mir viel.\n\nWann besuchst du mich endlich in Leipzig? Du wolltest ja im Dezember kommen, aber dann ist es hier kalt und dunkel. Komm doch lieber im Mai! Dann ist das Wetter schön, und wir können zusammen an den See fahren. Ein Hotel brauchst du nicht, du kannst bei mir schlafen.\n\nViele Grüße, auch an deinen Mann!\nDeine Keza",
+      "questions": [
+        { "type": "choose", "prompt": "Keza antwortet erst jetzt, weil …", "options": ["sie zu viel arbeiten musste.", "sie Alines Fotos nicht bekommen hat.", "sie in eine andere Wohnung gezogen ist."], "answer": "sie in eine andere Wohnung gezogen ist." },
+        { "type": "choose", "prompt": "Was gefällt Keza an ihrer Wohnung nicht?", "options": ["der Balkon", "die Küche", "die Zimmer"], "answer": "die Küche" },
+        { "type": "choose", "prompt": "Zur Arbeit braucht Keza jetzt …", "options": ["zehn Minuten zu Fuß.", "eine halbe Stunde zu Fuß.", "zehn Minuten mit dem Bus."], "answer": "zehn Minuten zu Fuß." },
+        { "type": "choose", "prompt": "In ihrer Ausbildung …", "options": ["arbeitet Keza nur morgens.", "findet Keza die Kollegen nicht nett.", "muss Keza jetzt auch nachts arbeiten."], "answer": "muss Keza jetzt auch nachts arbeiten." },
+        { "type": "choose", "prompt": "Keza möchte, dass Aline …", "options": ["im Dezember nach Leipzig kommt.", "im Mai zu Besuch kommt.", "ein Hotel in Leipzig bucht."], "answer": "im Mai zu Besuch kommt." }
+      ]
+    },
+    {
+      "skill": "READING",
+      "title": "Lesen, Teil 4",
+      "titleEn": "Reading, part 4",
+      "intro": "Lesen Sie die Aufgaben und die Anzeigen a bis f. Welche Anzeige passt zu welcher Person? Für eine Aufgabe gibt es keine Lösung. Wählen Sie dann x. Beispiel: Herr Nshuti spricht Englisch, Französisch und Deutsch und sucht eine Stelle in einem Hotel. Lösung: d. Die Anzeige aus dem Beispiel können Sie nicht mehr wählen. · Read the tasks and the ads a to f. Which ad fits which person? For one task there is no matching ad: then choose x. Example: Mr Nshuti speaks English, French and German and is looking for a job in a hotel. Answer: d. You cannot choose the ad from the example again.",
+      "letters": true,
+      "passage": "a  Deutsch am Wochenende! Intensivkurs A2 im Sprachzentrum „Lingua“ in Kigali-Kimihurura: samstags und sonntags von 9 bis 13 Uhr, acht Wochen lang. Kleine Gruppen mit höchstens zehn Personen. Anmeldung im Sprachzentrum oder online.\n\nb  Kochkurs „Deutsche Küche“: Wir kochen zusammen Kartoffelsalat, Gulasch und Apfelkuchen. Jeden Mittwoch von 18 bis 21 Uhr im Restaurant „Edelweiß“ in Kigali-Nyarutarama. 15.000 Franc pro Abend, Lebensmittel inklusive.\n\nc  Mit dem Fahrrad um den Kivusee! Zwei Tage durch eine wunderschöne Landschaft, Übernachtung in einem Gästehaus direkt am See. Fahrräder und Helme bekommen Sie von uns. Start jeden Samstag um 8 Uhr in Rubavu.\n\nd  Das Hotel „Akagera“ in Kigali sucht freundliche Mitarbeiterinnen und Mitarbeiter für die Rezeption (Teilzeit). Sie sprechen Englisch, Französisch und Deutsch? Dann schicken Sie uns Ihre Bewerbung!\n\ne  Nachhilfe in Mathematik und Physik für Schülerinnen und Schüler der Klassen 7 bis 12. Eine Lehrerin mit viel Erfahrung kommt zu Ihnen nach Hause, Montag bis Freitag am Nachmittag.\n\nf  Wir ziehen nach Deutschland und verkaufen fast alles: Sofa, Tisch mit vier Stühlen, Bett und Kleiderschrank. Alles ist fast neu und sehr günstig! Abholung in Kigali-Remera, nur am Samstag ab 10 Uhr.",
+      "questions": [
+        { "type": "choose", "prompt": "Moritz macht ein Praktikum in Kigali. Am Wochenende möchte er Sport machen und einen See in Ruanda kennenlernen.", "options": ["a", "b", "c", "d", "e", "f", "x"], "answer": "c" },
+        { "type": "choose", "prompt": "Josiane arbeitet von Montag bis Freitag in einem Büro. In ihrer Freizeit möchte sie besser Deutsch sprechen lernen.", "options": ["a", "b", "c", "d", "e", "f", "x"], "answer": "a" },
+        { "type": "choose", "prompt": "Claudine möchte kochen lernen. Sie hat aber nur am Wochenende Zeit.", "options": ["a", "b", "c", "d", "e", "f", "x"], "answer": "x" },
+        { "type": "choose", "prompt": "Herr und Frau Mugisha haben eine Wohnung gefunden. Jetzt brauchen sie Möbel, aber sie haben nicht viel Geld.", "options": ["a", "b", "c", "d", "e", "f", "x"], "answer": "f" },
+        { "type": "choose", "prompt": "Der Sohn von Frau Uwase hat schlechte Noten in Mathematik. Sie sucht Hilfe für ihn.", "options": ["a", "b", "c", "d", "e", "f", "x"], "answer": "e" }
+      ]
+    },
+    {
+      "skill": "LISTENING",
+      "title": "Hören, Teil 1",
+      "titleEn": "Listening, part 1",
+      "intro": "Sie hören fünf kurze Texte. Sie hören jeden Text zweimal. Wählen Sie für jede Aufgabe die richtige Lösung a, b oder c. · You will hear five short texts. You will hear each text twice. Choose the right answer a, b or c for each task.",
+      "plays": 2,
+      "letters": true,
+      "questions": [
+        { "type": "choose", "listen": "Und jetzt das Wetter für das Wochenende. Am Samstag bleibt es trocken, aber es ist bewölkt und windig. Am Sonntag kommt dann von Westen Regen, und am Nachmittag gibt es auch Gewitter. Die Temperaturen liegen zwischen zwölf und fünfzehn Grad. Erst ab Montag scheint wieder öfter die Sonne.", "prompt": "Wie wird das Wetter am Sonntag?", "options": ["trocken und windig", "sonnig", "Regen und Gewitter"], "answer": "Regen und Gewitter" },
+        { "type": "choose", "listen": "F: Guten Tag, Herr Habimana, hier ist die Praxis Doktor Schneider. Sie haben morgen, am Dienstag, um neun Uhr einen Termin bei uns. Leider ist Frau Doktor Schneider krank. Am Mittwoch ist die Praxis geschlossen, aber am Donnerstag können Sie um halb elf kommen. Bitte rufen Sie uns kurz zurück. Vielen Dank und auf Wiederhören!", "prompt": "Wann soll Herr Habimana in die Praxis kommen?", "options": ["am Donnerstag um 10.30 Uhr", "am Dienstag um 9.00 Uhr", "am Mittwoch um 10.30 Uhr"], "answer": "am Donnerstag um 10.30 Uhr" },
+        { "type": "choose", "listen": "F: Liebe Kundinnen und Kunden, heute haben wir ein besonderes Angebot für Sie: An unserer Fleischtheke kostet ein Kilo Hähnchen nur sieben Euro neunundneunzig. Das Angebot für Fisch ist leider schon vorbei, wir haben keinen frischen Fisch mehr. Und Schinken gibt es erst ab morgen billiger. Vielen Dank für Ihren Einkauf!", "prompt": "Was ist heute billiger?", "options": ["Fisch", "Hähnchen", "Schinken"], "answer": "Hähnchen" },
+        { "type": "choose", "listen": "Achtung, eine Information für Reisende nach Frankfurt: Ihr Zug, Abfahrt neun Uhr fünfzehn, fährt heute nicht von Gleis vier, sondern von Gleis sechs. Der Zug hat etwa zehn Minuten Verspätung. Er hält heute nicht in Mainz. Reisende nach Mainz nehmen bitte die S-Bahn von Gleis zwölf.", "prompt": "Von welchem Gleis fährt der Zug nach Frankfurt heute ab?", "options": ["von Gleis 4", "von Gleis 12", "von Gleis 6"], "answer": "von Gleis 6" },
+        { "type": "choose", "listen": "F: Und hier unser Tipp für das Wochenende: Im Stadtpark ist wieder das Afrika-Festival. Am Freitagabend können Sie dort in einem Kurs afrikanische Tänze lernen. Das große Konzert am Samstag ist leider schon ausverkauft. Aber am Sonntag gibt es von elf bis achtzehn Uhr einen Markt mit Essen und Kunst aus vielen Ländern. Der Eintritt ist frei.", "prompt": "Was kann man am Sonntag beim Festival machen?", "options": ["auf einen Markt gehen", "ein Konzert hören", "tanzen lernen"], "answer": "auf einen Markt gehen" }
+      ]
+    },
+    {
+      "skill": "LISTENING",
+      "title": "Hören, Teil 2",
+      "titleEn": "Listening, part 2",
+      "intro": "Sie hören ein Gespräch. Sie hören den Text einmal. Amina erzählt ihrem Kollegen Tobias von der Woche mit ihren Eltern in Berlin. Was haben sie an welchem Tag gemacht? Wählen Sie für jeden Tag einen passenden Buchstaben a bis i. Wählen Sie jeden Buchstaben nur einmal. · You will hear a conversation once. Amina tells her colleague Tobias about the week with her parents in Berlin. What did they do on which day? Choose a matching letter a to i for each day. Use each letter only once.",
+      "plays": 1,
+      "letters": true,
+      "passage": "a  eine Schifffahrt\n\nb  im Museum\n\nc  eine Radtour\n\nd  im Zoo\n\ne  im Konzert\n\nf  im Kaufhaus\n\ng  auf dem Fernsehturm\n\nh  im Theater\n\ni  ein Picknick im Park",
+      "listen": "M: Hallo Amina! Na, wie war die Woche mit deinen Eltern?\nF: Hallo Tobias! Sehr schön, aber auch anstrengend. Wir haben jeden Tag etwas anderes gemacht.\nM: Am Montag wart ihr bestimmt im Museum, oder? Dein Vater interessiert sich doch so für Geschichte.\nF: Das wollten wir eigentlich. Aber am Montag sind viele Museen geschlossen. Deshalb sind wir auf den Fernsehturm gefahren. Von oben sieht man die ganze Stadt.\nM: Toll! Und am Dienstag?\nF: Am Dienstag war das Wetter super. Mein Vater wollte eine Radtour machen, aber meine Mutter fährt nicht gern Fahrrad. Also haben wir eine Schifffahrt auf der Spree gemacht. Das hat allen gefallen.\nM: Ihr wolltet doch auch ein Picknick im Park machen, oder?\nF: Ja, am Mittwoch. Aber leider hat es den ganzen Tag geregnet. Also sind wir ins Kaufhaus gegangen, und meine Mutter hat Geschenke für die Familie in Kigali gekauft.\nM: Und am Donnerstag wart ihr im Theater, nicht wahr? Du hattest doch Karten.\nF: Ja, ich hatte Karten. Aber das Theater hat die Vorstellung abgesagt, weil ein Schauspieler krank war. Am Abend sind wir dann in ein Konzert gegangen. Das war fantastisch!\nM: Und am Freitag sind deine Eltern schon nach Hause geflogen?\nF: Nein, erst am Samstag. Am Freitag waren wir noch mit meiner kleinen Nichte im Zoo. Sie wollte unbedingt die Elefanten sehen.\nM: Da hattet ihr ja wirklich viel Programm!\nF: Oh ja. Jetzt brauche ich erst mal Urlaub!",
+      "questions": [
+        { "type": "choose", "prompt": "Montag", "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i"], "answer": "g" },
+        { "type": "choose", "prompt": "Dienstag", "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i"], "answer": "a" },
+        { "type": "choose", "prompt": "Mittwoch", "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i"], "answer": "f" },
+        { "type": "choose", "prompt": "Donnerstag", "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i"], "answer": "e" },
+        { "type": "choose", "prompt": "Freitag", "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i"], "answer": "d" }
+      ]
+    },
+    {
+      "skill": "LISTENING",
+      "title": "Hören, Teil 3",
+      "titleEn": "Listening, part 3",
+      "intro": "Sie hören fünf kurze Gespräche. Sie hören jeden Text einmal. Wählen Sie für jede Aufgabe die richtige Lösung a, b oder c. · You will hear five short conversations. You will hear each text once. Choose the right answer a, b or c for each task.",
+      "plays": 1,
+      "letters": true,
+      "questions": [
+        { "type": "choose", "listen": "M: Guten Morgen! Was darf es sein?\nF: Guten Morgen. Ich hätte gern ein Vollkornbrot.\nM: Das tut mir leid, Vollkornbrot haben wir heute nicht mehr. Aber unser Roggenbrot ist auch sehr gut.\nF: Ach nein, das isst mein Mann nicht. Dann nehme ich sechs Brötchen.\nM: Gern. Sonst noch etwas? Vielleicht ein Stück Kuchen?\nF: Nein danke, das ist alles.", "prompt": "Was kauft die Frau?", "options": ["Vollkornbrot", "Brötchen", "Kuchen"], "answer": "Brötchen" },
+        { "type": "choose", "listen": "F: Guten Morgen, Eric! Du bist ja ganz nass! Bist du heute nicht mit dem Fahrrad ins Büro gekommen?\nM: Nein, mein Fahrrad ist kaputt. Ich wollte dann den Bus nehmen, aber der war schon weg.\nF: Oh nein! Und dann?\nM: Dann bin ich zu Fuß gegangen. Eine halbe Stunde im Regen!\nF: Du Armer! Morgen kann ich dich mit dem Auto mitnehmen.", "prompt": "Wie ist Eric heute ins Büro gekommen?", "options": ["mit dem Fahrrad", "mit dem Bus", "zu Fuß"], "answer": "zu Fuß" },
+        { "type": "choose", "listen": "M: Guten Tag, ich möchte ein Zimmer für zwei Nächte reservieren.\nF: Gern. Möchten Sie ein Einzelzimmer oder ein Doppelzimmer?\nM: Ein Doppelzimmer, bitte. Meine Frau kommt auch mit.\nF: Wir haben noch ein Doppelzimmer mit Blick auf den See für hundertzwanzig Euro und eins zur Straße für neunzig Euro.\nM: Zur Straße ist es bestimmt laut. Wir nehmen das Zimmer mit Seeblick.", "prompt": "Welches Zimmer nimmt der Mann?", "options": ["ein Doppelzimmer mit Seeblick", "ein Doppelzimmer zur Straße", "ein Einzelzimmer"], "answer": "ein Doppelzimmer mit Seeblick" },
+        { "type": "choose", "listen": "F: Und, was nimmst du? Den Fisch?\nM: Nein, Fisch esse ich nicht so gern. Ich habe Lust auf eine Pizza.\nF: Pizza gibt es heute leider nicht. Schau mal, das steht hier auf der Tafel.\nM: Schade. Dann nehme ich die Gemüsesuppe mit Brot.\nF: Gute Idee, die nehme ich auch.", "prompt": "Was isst der Mann?", "options": ["Fisch", "Gemüsesuppe", "Pizza"], "answer": "Gemüsesuppe" },
+        { "type": "choose", "listen": "F: Patrick hat am Samstag Geburtstag. Was schenken wir ihm? Vielleicht ein Buch?\nM: Er liest doch nicht gern. Wie wäre es mit einem T-Shirt von seinem Fußballverein?\nF: Ach, er hat schon so viele T-Shirts. Aber er hört doch so gern Musik. Wir könnten ihm Karten für ein Konzert schenken.\nM: Super Idee! Das machen wir.", "prompt": "Was schenken die beiden Patrick?", "options": ["ein Buch", "ein T-Shirt", "Konzertkarten"], "answer": "Konzertkarten" }
+      ]
+    },
+    {
+      "skill": "LISTENING",
+      "title": "Hören, Teil 4",
+      "titleEn": "Listening, part 4",
+      "intro": "Sie hören ein Interview. Sie hören den Text zweimal. In der Radiosendung „Leben im Ausland“ spricht der Moderator mit Sabine Hoffmann. Sie ist Deutschlehrerin in Ruanda. Wählen Sie für jede Aussage: Ja oder Nein? · You will hear an interview twice. On the radio programme “Leben im Ausland” (Living abroad), the host talks to Sabine Hoffmann, a German teacher in Rwanda. For each statement, choose Ja (yes) or Nein (no).",
+      "plays": 2,
+      "letters": true,
+      "listen": "M: Liebe Hörerinnen und Hörer, herzlich willkommen zu unserer Sendung „Leben im Ausland“. Heute ist Sabine Hoffmann bei uns im Studio. Sie kommt aus Hannover und lebt seit drei Jahren in Ruanda. Frau Hoffmann, was machen Sie dort?\nF: Ich bin Deutschlehrerin an einer Sprachschule in Musanze. Das ist eine Stadt im Norden von Ruanda, nicht weit von den Vulkanen.\nM: Haben Sie auch in Deutschland schon unterrichtet?\nF: Nein. Nach der Schule habe ich zuerst als Sekretärin in einer Firma gearbeitet. Das war mir aber zu langweilig. Dann habe ich eine Ausbildung als Deutschlehrerin für Erwachsene gemacht.\nM: Und wie sind Sie nach Ruanda gekommen?\nF: Eine Freundin hat dort in einem Projekt gearbeitet. Ich habe sie besucht, und das Land hat mir sofort gefallen. Eigentlich wollte ich nur ein Jahr bleiben. Jetzt sind es schon drei Jahre.\nM: Wer sind Ihre Schüler?\nF: Meistens junge Leute zwischen achtzehn und dreißig. Die meisten möchten in Deutschland eine Ausbildung machen, zum Beispiel als Krankenpfleger oder als Elektriker. Nur wenige wollen in Deutschland studieren.\nM: Sprechen Sie selbst auch Kinyarwanda, die Sprache der Menschen in Ruanda?\nF: Ich lerne es, aber es ist sehr schwer für mich. Die Grammatik ist ganz anders als im Deutschen. Auf dem Markt kann ich einkaufen und ein bisschen sprechen, mehr nicht. Zum Glück sprechen viele Leute Englisch oder Französisch.\nM: Was gefällt Ihnen an Ihrem Leben in Musanze besonders gut?\nF: Die Landschaft ist wunderschön, und die Menschen sind sehr freundlich. Am Wochenende gehe ich oft wandern. Nur das Wetter ist manchmal ein Problem: In der Regenzeit regnet es fast jeden Nachmittag.\nM: Fehlt Ihnen etwas aus Deutschland?\nF: Meine Familie natürlich. Und das deutsche Brot! Aber meine Eltern haben mich letztes Jahr besucht, und im Dezember fliege ich für drei Wochen nach Hause.\nM: Und danach? Bleiben Sie in Ruanda?\nF: Ja, auf jeden Fall noch zwei Jahre. Unsere Schule möchte im Herbst auch in Kigali Kurse anbieten, und dort soll ich unterrichten.\nM: Frau Hoffmann, vielen Dank für das Gespräch und alles Gute!\nF: Ich danke Ihnen!",
+      "questions": [
+        { "type": "choose", "prompt": "Frau Hoffmann war in Deutschland schon Lehrerin.", "options": ["Ja", "Nein"], "answer": "Nein" },
+        { "type": "choose", "prompt": "Frau Hoffmann wollte zuerst nur ein Jahr in Ruanda bleiben.", "options": ["Ja", "Nein"], "answer": "Ja" },
+        { "type": "choose", "prompt": "Die meisten Schülerinnen und Schüler möchten in Deutschland studieren.", "options": ["Ja", "Nein"], "answer": "Nein" },
+        { "type": "choose", "prompt": "Frau Hoffmann spricht nur ein bisschen Kinyarwanda.", "options": ["Ja", "Nein"], "answer": "Ja" },
+        { "type": "choose", "prompt": "Im Dezember geht Frau Hoffmann für immer nach Deutschland zurück.", "options": ["Ja", "Nein"], "answer": "Nein" }
+      ]
+    },
+    {
+      "skill": "WRITING",
+      "title": "Schreiben, Teil 1",
+      "titleEn": "Writing, part 1",
+      "intro": "Schreiben Sie eine SMS. Ihre Lehrerin oder Ihr Lehrer korrigiert den Text. · Write a text message. Your teacher marks it.",
+      "questions": [
+        {
+          "type": "write",
+          "prompt": "Sie wohnen in Kigali. Ihr Freund Jonas aus Deutschland kommt am Freitagabend mit dem Flugzeug an. Sie können ihn aber nicht vom Flughafen abholen. Schreiben Sie Jonas eine SMS.\n\n• Entschuldigen Sie sich und schreiben Sie, warum Sie nicht kommen können.\n• Erklären Sie, wie Jonas zu Ihrer Wohnung kommt.\n• Schreiben Sie, wer dort auf ihn wartet.\n\nSchreiben Sie 20–30 Wörter. Schreiben Sie zu jedem Punkt einen Satz.\n(Bewertung: Aufgabenerfüllung 5 Punkte, Sprache 5 Punkte)",
+          "promptEn": "You live in Kigali. Your friend Jonas from Germany arrives by plane on Friday evening, but you cannot pick him up at the airport. Write Jonas a text message.\n• Say sorry and explain why you cannot come.\n• Explain how Jonas gets to your flat.\n• Say who is waiting for him there.\nWrite 20–30 words, one sentence for each point. (Marking: task completion 5 points, language 5 points)",
+          "points": 10,
+          "modelAnswer": "Hallo Jonas, entschuldige, ich kann dich nicht abholen, weil ich arbeiten muss. Nimm ein Taxi zu meiner Wohnung in Kimihurura. Mein Bruder Emmanuel wartet dort. Bis später!\nInnocent"
+        }
+      ]
+    },
+    {
+      "skill": "WRITING",
+      "title": "Schreiben, Teil 2",
+      "titleEn": "Writing, part 2",
+      "intro": "Schreiben Sie eine E-Mail. Ihre Lehrerin oder Ihr Lehrer korrigiert den Text. · Write an email. Your teacher marks it.",
+      "questions": [
+        {
+          "type": "write",
+          "prompt": "Sie besuchen einen Deutschkurs bei Frau Wagner. Nächste Woche können Sie nicht zum Kurs kommen. Am Dienstag schreibt der Kurs einen Test. Schreiben Sie Frau Wagner eine E-Mail.\n\n• Schreiben Sie, warum Sie nicht kommen können.\n• Fragen Sie nach den Hausaufgaben.\n• Fragen Sie, ob Sie den Test später schreiben können.\n\nSchreiben Sie 30–40 Wörter. Vergessen Sie die Anrede und den Gruß am Ende nicht.\n(Bewertung: Aufgabenerfüllung 5 Punkte, Sprache 5 Punkte)",
+          "promptEn": "You are taking a German course with Ms Wagner. Next week you cannot come to the course, and on Tuesday the class is writing a test. Write Ms Wagner an email.\n• Say why you cannot come.\n• Ask about the homework.\n• Ask whether you can write the test later.\nWrite 30–40 words. Do not forget the greeting at the start and the closing at the end. (Marking: task completion 5 points, language 5 points)",
+          "points": 10,
+          "modelAnswer": "Liebe Frau Wagner,\nleider kann ich nächste Woche nicht zum Kurs kommen, weil ich für meine Firma nach Huye fahren muss. Können Sie mir bitte die Hausaufgaben schicken? Kann ich den Test später schreiben?\nViele Grüße\nDivine Uwera"
+        }
+      ]
+    }
+  ]
+}
