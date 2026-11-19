@@ -7,6 +7,7 @@ export { getAssessment } from './get-assessment.js';
 export { getAttemptDetail } from './get-attempt-detail.js';
 export { getMyAssessment } from './get-my-assessment.js';
 export { getMyAttempt } from './get-my-attempt.js';
+export { getMyAssessmentResult } from './get-my-result.js';
 export { getMySkillProfile } from './get-my-skill-profile.js';
 export { getQuestion } from './get-question.js';
 export { getSkillProfile } from './get-skill-profile.js';
