@@ -27,6 +27,8 @@ export const activityTypeSchema = z.enum([
   "SPEAKING",
   "PRONUNCIATION",
   "FLASHCARD",
+  // Course v2 practice sessions: imported, but staff must be able to rename/unpublish them in the studio.
+  "PRACTICE",
 ]);
 export const progressStatusSchema = z.enum(["NOT_STARTED", "IN_PROGRESS", "COMPLETED"]);
 export const searchTypeSchema = z.enum(["LESSON", "MODULE", "MATERIAL"]);
@@ -104,6 +106,12 @@ export const updateActivitySchema = createActivitySchema.partial().refine(
 export const updateProgressSchema = z.object({
   status: progressStatusSchema,
   secondsWatched: z.coerce.number().int().min(0).optional(),
+});
+
+export const reviewParamsSchema = z.object({ levelId: z.string().uuid() });
+export const saveReviewSchema = z.object({
+  results: z.record(z.string().max(120), z.boolean()).refine((value) => Object.keys(value).length <= 60, { message: "Too many results" }),
+  seconds: z.coerce.number().min(0).max(7200).optional(),
 });
 
 export const submitActivitySchema = z.object({
