@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FiArrowLeft,FiArrowRight,FiRotateCw } from 'react-icons/fi';
+import { EnglishOf } from '../learn/translate/TranslatedText';
 import { AuthenticatedMedia } from '../ui/AuthenticatedMedia';
 import { flashcards } from './config-readers';
 import type { PlayerProps } from './types';
@@ -27,7 +28,7 @@ export function FlashcardPlayer({ config, onChange, disabled }: PlayerProps) {
     <button type="button" disabled={disabled} onClick={flip} aria-label={flipped ? 'Show the front' : 'Turn the card'}
       className={`flex min-h-48 w-full flex-col items-center justify-center gap-2 rounded-box border-2 p-6 text-center transition ${flipped ? 'border-primary bg-base-200' : 'border-base-300 bg-base-100'}`}>
       <span className="text-xl font-bold" aria-live="polite">{flipped ? card.back : card.front}</span>
-      {flipped && card.example ? <span className="text-sm italic text-muted">{card.example}</span> : null}
+      {flipped && card.example ? <span className="text-sm italic text-muted">{card.example}<EnglishOf text={card.example} /></span> : null}
       <span className="mt-2 inline-flex items-center gap-1 text-xs text-muted"><FiRotateCw aria-hidden />{flipped ? 'Tap to see the word' : 'Tap to see the meaning'}</span>
     </button>
     {flipped && card.audioUrl ? <AuthenticatedMedia key={card.audioUrl} url={card.audioUrl} kind="audio" title="pronunciation" className="w-full" /> : null}
