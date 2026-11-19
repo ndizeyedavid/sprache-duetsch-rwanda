@@ -1,0 +1,969 @@
+{
+ "level": "A1",
+ "lesson": 8,
+ "title": "Termine und Uhrzeit — Am Montag um neun habe ich Zeit",
+ "lines": [
+  {
+   "de": "Die Uhrzeit sagen und Termine vereinbaren.",
+   "en": "Tell the time and make appointments."
+  },
+  {
+   "de": "Textsorte: Telefongespräch · Terminkalender",
+   "en": "Text type: Phone call · Appointment calendar"
+  },
+  {
+   "de": "Prüfungsbezug: Start Deutsch 1 Hören Teil 2 (Ansagen); telc A1 Hören",
+   "en": "Exam link: Start Deutsch 1 Listening part 2 (announcements); telc A1 Listening"
+  },
+  {
+   "de": "die Uhrzeit sagen und erfragen",
+   "en": "tell the time and ask the time"
+  },
+  {
+   "de": "Termine mit am und um angeben",
+   "en": "say when appointments are, using am and um"
+  },
+  {
+   "de": "die Verbposition im Satz richtig wählen",
+   "en": "put the verb in the right position in a sentence"
+  },
+  {
+   "de": "Grammatik: Temporale Präpositionen am und um",
+   "en": "Grammar: Prepositions of time (temporale Präpositionen) am and um"
+  },
+  {
+   "de": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "am goes before days of the week and times of day, um before clock times. You must remember one exception: in der Nacht (at night)."
+  },
+  {
+   "de": "Präposition",
+   "en": "Preposition"
+  },
+  {
+   "de": "Verwendung",
+   "en": "Use"
+  },
+  {
+   "de": "am",
+   "en": "on / in the (an + dem)"
+  },
+  {
+   "de": "Wochentage",
+   "en": "Days of the week"
+  },
+  {
+   "de": "am Montag, am Freitag",
+   "en": "on Monday, on Friday"
+  },
+  {
+   "de": "Tageszeiten",
+   "en": "Times of day"
+  },
+  {
+   "de": "am Morgen, am Abend",
+   "en": "in the morning, in the evening"
+  },
+  {
+   "de": "um",
+   "en": "at"
+  },
+  {
+   "de": "Uhrzeiten",
+   "en": "Clock times"
+  },
+  {
+   "de": "um drei Uhr, um halb neun",
+   "en": "at three o'clock, at half past eight"
+  },
+  {
+   "de": "Ausnahme",
+   "en": "Exception"
+  },
+  {
+   "de": "in der Nacht",
+   "en": "at night"
+  },
+  {
+   "de": "Am Dienstag um zehn habe ich einen Termin.am + Tag, um + Uhrzeit",
+   "en": "On Tuesday at ten I have an appointment. am + day, um + clock time"
+  },
+  {
+   "de": "Am Abend bin ich meistens zu Hause.am + Tageszeit",
+   "en": "In the evening I am usually at home. am + time of day"
+  },
+  {
+   "de": "Tipp: Merkhilfe: am dem Tag, um die Uhr.",
+   "en": "Tip: Memory aid: am with the day, um with the clock."
+  },
+  {
+   "de": "Grammatik: Die Verbposition im Satz",
+   "en": "Grammar: The position of the verb in the sentence"
+  },
+  {
+   "de": "Das Verb bleibt immer auf Position 2. Wenn eine Zeitangabe vorn steht, rückt das Subjekt hinter das Verb.",
+   "en": "The verb always stays in position 2. If a time expression comes first, the subject moves behind the verb."
+  },
+  {
+   "de": "Position 1",
+   "en": "="
+  },
+  {
+   "de": "Position 2 (Verb)",
+   "en": "Position 2 (verb)"
+  },
+  {
+   "de": "Rest",
+   "en": "="
+  },
+  {
+   "de": "Ich",
+   "en": "I"
+  },
+  {
+   "de": "habe",
+   "en": "have"
+  },
+  {
+   "de": "leider am Montag keine Zeit.",
+   "en": "unfortunately no time on Monday."
+  },
+  {
+   "de": "Leider",
+   "en": "Unfortunately"
+  },
+  {
+   "de": "ich am Montag keine Zeit.",
+   "en": "I … no time on Monday."
+  },
+  {
+   "de": "Am Montag",
+   "en": "On Monday"
+  },
+  {
+   "de": "ich leider keine Zeit.",
+   "en": "I … unfortunately no time."
+  },
+  {
+   "de": "Um acht Uhr beginnt der Kurs.Zeitangabe vorn, Subjekt hinter dem Verb",
+   "en": "At eight o'clock the course starts. time expression first, subject after the verb"
+  },
+  {
+   "de": "Der Kurs beginnt um acht Uhr.Subjekt vorn",
+   "en": "The course starts at eight o'clock. subject first"
+  },
+  {
+   "de": "Tipp: Nicht sagen: „Am Montag ich habe Zeit.\" Richtig: „Am Montag habe ich Zeit.\"",
+   "en": "Tip: Don't say: \"Am Montag ich habe Zeit.\" Correct: \"Am Montag habe ich Zeit.\""
+  },
+  {
+   "de": "die Uhr, -en — EN: clock; o'clock · FR: l'horloge ; heureEs ist drei Uhr.",
+   "en": "Example: It is three o'clock."
+  },
+  {
+   "de": "die Uhrzeit, -en — EN: time of day · FR: l'heureWie spät ist es?",
+   "en": "Example: What time is it?"
+  },
+  {
+   "de": "halb — EN: half · FR: et demieEs ist halb neun (8:30).",
+   "en": "Example: It is half past eight (8:30)."
+  },
+  {
+   "de": "Viertel vor / nach — EN: quarter to / past · FR: moins le quart / et quartViertel nach drei (3:15).",
+   "en": "Example: Quarter past three (3:15)."
+  },
+  {
+   "de": "der Termin, -e — EN: appointment · FR: le rendez-vousIch habe einen Termin beim Arzt.",
+   "en": "Example: I have an appointment at the doctor's."
+  },
+  {
+   "de": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "Example: I have Wednesday off."
+  },
+  {
+   "de": "der Morgen / der Abend — EN: morning / evening · FR: le matin / le soirAm Abend lerne ich Deutsch.",
+   "en": "Example: In the evening I study German."
+  },
+  {
+   "de": "frei haben — EN: to have time off · FR: être libreAm Freitag habe ich frei.",
+   "en": "Example: I have Friday off."
+  },
+  {
+   "de": "Zeit haben — EN: to have time · FR: avoir le tempsHast du morgen Zeit?",
+   "en": "Example: Do you have time tomorrow?"
+  },
+  {
+   "de": "passen — EN: to suit, be convenient · FR: convenirPasst dir Montag um zehn?",
+   "en": "Example: Does Monday at ten suit you?"
+  },
+  {
+   "de": "pünktlich — EN: on time · FR: ponctuelBitte sei pünktlich!",
+   "en": "Example: Please be on time!"
+  },
+  {
+   "de": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "Example: Can we talk on the phone later?"
+  },
+  {
+   "de": "nach der Zeit fragen",
+   "en": "asking the time"
+  },
+  {
+   "de": "Wie spät ist es?",
+   "en": "What time is it?"
+  },
+  {
+   "de": "Wann hast du Zeit?",
+   "en": "When do you have time?"
+  },
+  {
+   "de": "Um wie viel Uhr?",
+   "en": "At what time?"
+  },
+  {
+   "de": "einen Termin vorschlagen",
+   "en": "suggesting an appointment"
+  },
+  {
+   "de": "Passt dir Montag um neun?",
+   "en": "Does Monday at nine suit you?"
+  },
+  {
+   "de": "Wie wäre es am Dienstag?",
+   "en": "How about Tuesday?"
+  },
+  {
+   "de": "Geht es auch später?",
+   "en": "Is later possible too?"
+  },
+  {
+   "de": "zusagen oder absagen",
+   "en": "accepting or declining"
+  },
+  {
+   "de": "Ja, das passt gut.",
+   "en": "Yes, that suits me fine."
+  },
+  {
+   "de": "Nein, da kann ich leider nicht.",
+   "en": "No, unfortunately I can't make it then."
+  },
+  {
+   "de": "Tut mir leid, da habe ich schon einen Termin.",
+   "en": "Sorry, I already have an appointment then."
+  },
+  {
+   "de": "Dialog: Ein Termin am Telefon",
+   "en": "Dialogue: An appointment on the phone"
+  },
+  {
+   "de": "Praxis: Praxis Dr. Berg, guten Tag.",
+   "en": "Practice: Dr. Berg's practice, hello."
+  },
+  {
+   "de": "Herr Kito: Guten Tag, ich hätte gern einen Termin.",
+   "en": "Mr Kito: Hello, I would like an appointment."
+  },
+  {
+   "de": "Praxis: Passt Ihnen Montag um neun Uhr?",
+   "en": "Practice: Does Monday at nine o'clock suit you?"
+  },
+  {
+   "de": "Herr Kito: Am Montag um neun habe ich leider keine Zeit.",
+   "en": "Mr Kito: Unfortunately I don't have time on Monday at nine."
+  },
+  {
+   "de": "Praxis: Und am Dienstag um halb elf?",
+   "en": "Practice: And on Tuesday at half past ten?"
+  },
+  {
+   "de": "Herr Kito: Ja, das passt gut. Vielen Dank!",
+   "en": "Mr Kito: Yes, that suits me fine. Thank you very much!"
+  },
+  {
+   "de": "Es ist drei Uhr.",
+   "en": "It is three o'clock."
+  },
+  {
+   "de": "Es ist halb neun (8:30).",
+   "en": "It is half past eight (8:30)."
+  },
+  {
+   "de": "Viertel nach drei (3:15).",
+   "en": "Quarter past three (3:15)."
+  },
+  {
+   "de": "Ich habe einen Termin beim Arzt.",
+   "en": "I have an appointment at the doctor's."
+  },
+  {
+   "de": "Am Mittwoch habe ich frei.",
+   "en": "I have Wednesday off."
+  },
+  {
+   "de": "Am Abend lerne ich Deutsch.",
+   "en": "In the evening I study German."
+  },
+  {
+   "de": "Am Freitag habe ich frei.",
+   "en": "I have Friday off."
+  },
+  {
+   "de": "Hast du morgen Zeit?",
+   "en": "Do you have time tomorrow?"
+  },
+  {
+   "de": "Passt dir Montag um zehn?",
+   "en": "Does Monday at ten suit you?"
+  },
+  {
+   "de": "Bitte sei pünktlich!",
+   "en": "Please be on time!"
+  },
+  {
+   "de": "Können wir später telefonieren?",
+   "en": "Can we talk on the phone later?"
+  },
+  {
+   "de": "___ Montag habe ich Zeit. (Präposition)",
+   "en": "___ Monday I have time. (preposition)"
+  },
+  {
+   "de": "Der Kurs beginnt ___ neun Uhr. (Präposition)",
+   "en": "The course starts ___ nine o'clock. (preposition)"
+  },
+  {
+   "de": "8:30 Uhr sagt man:",
+   "en": "For 8:30 you say:"
+  },
+  {
+   "de": "Ausnahme: ___ der Nacht schlafe ich. (Präposition)",
+   "en": "Exception: ___ the night I sleep. (preposition)"
+  },
+  {
+   "de": "Schreiben Sie Ihren Wochenplan: Was machen Sie wann? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens vier Termine. • Benutzen Sie am und um richtig. • Beginnen Sie zwei Sätze mit der Zeitangabe.",
+   "en": "Write your weekly plan: What do you do when? Length: 25–35 words Checklist: • Name at least four appointments. • Use am and um correctly. • Start two sentences with the time expression."
+  },
+  {
+   "de": "am + Wochentag.",
+   "en": "am + day of the week."
+  },
+  {
+   "de": "um + Uhrzeit.",
+   "en": "um + clock time."
+  },
+  {
+   "de": "Das Verb bleibt auf Position 2, das Subjekt rückt dahinter.",
+   "en": "The verb stays in position 2; the subject moves behind it."
+  },
+  {
+   "de": "Im Deutschen zählt man zur nächsten Stunde: halb neun = 8:30.",
+   "en": "In German you count towards the next hour: halb neun = 8:30."
+  },
+  {
+   "de": "Nicht am, sondern in der Nacht.",
+   "en": "Not am, but in der Nacht."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Uhrzeit",
+   "context": "Die Uhrzeit sagen und Termine vereinbaren.",
+   "en": "time (of day)",
+   "lemma": "die Uhrzeit"
+  },
+  {
+   "form": "Termine",
+   "context": "Die Uhrzeit sagen und Termine vereinbaren.",
+   "en": "appointments",
+   "lemma": "der Termin"
+  },
+  {
+   "form": "vereinbaren",
+   "context": "Die Uhrzeit sagen und Termine vereinbaren.",
+   "en": "to arrange, to agree on",
+   "lemma": ""
+  },
+  {
+   "form": "Telefongespräch",
+   "context": "Textsorte: Telefongespräch · Terminkalender",
+   "en": "phone call",
+   "lemma": "das Telefongespräch"
+  },
+  {
+   "form": "Terminkalender",
+   "context": "Textsorte: Telefongespräch · Terminkalender",
+   "en": "appointment calendar, diary",
+   "lemma": "der Terminkalender"
+  },
+  {
+   "form": "Ansagen",
+   "context": "Prüfungsbezug: Start Deutsch 1 Hören Teil 2 (Ansagen); telc A1 Hören",
+   "en": "announcements",
+   "lemma": "die Ansage"
+  },
+  {
+   "form": "angeben",
+   "context": "Termine mit am und um angeben",
+   "en": "to state, to give",
+   "lemma": ""
+  },
+  {
+   "form": "Verbposition",
+   "context": "die Verbposition im Satz richtig wählen",
+   "en": "verb position",
+   "lemma": "die Verbposition"
+  },
+  {
+   "form": "Temporale",
+   "context": "Grammatik: Temporale Präpositionen am und um",
+   "en": "of time, temporal",
+   "lemma": "temporal"
+  },
+  {
+   "form": "Präpositionen",
+   "context": "Grammatik: Temporale Präpositionen am und um",
+   "en": "prepositions",
+   "lemma": "die Präposition"
+  },
+  {
+   "form": "vor",
+   "context": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "before; in front of; to (time)",
+   "lemma": ""
+  },
+  {
+   "form": "Wochentagen",
+   "context": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "days of the week",
+   "lemma": "der Wochentag"
+  },
+  {
+   "form": "Tageszeiten",
+   "context": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "times of day",
+   "lemma": "die Tageszeit"
+  },
+  {
+   "form": "Uhrzeiten",
+   "context": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "clock times",
+   "lemma": "die Uhrzeit"
+  },
+  {
+   "form": "Ausnahme",
+   "context": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "exception",
+   "lemma": "die Ausnahme"
+  },
+  {
+   "form": "müssen",
+   "context": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "must, have to",
+   "lemma": ""
+  },
+  {
+   "form": "Nacht",
+   "context": "am steht vor Wochentagen und Tageszeiten, um vor Uhrzeiten. Eine Ausnahme müssen Sie sich merken: in der Nacht.",
+   "en": "night",
+   "lemma": "die Nacht"
+  },
+  {
+   "form": "Präposition",
+   "context": "Präposition",
+   "en": "preposition",
+   "lemma": "die Präposition"
+  },
+  {
+   "form": "Verwendung",
+   "context": "Verwendung",
+   "en": "use",
+   "lemma": "die Verwendung"
+  },
+  {
+   "form": "Wochentage",
+   "context": "Wochentage",
+   "en": "days of the week",
+   "lemma": "der Wochentag"
+  },
+  {
+   "form": "Montag",
+   "context": "am Montag, am Freitag",
+   "en": "Monday",
+   "lemma": "der Montag"
+  },
+  {
+   "form": "Freitag",
+   "context": "am Montag, am Freitag",
+   "en": "Friday",
+   "lemma": "der Freitag"
+  },
+  {
+   "form": "halb",
+   "context": "um drei Uhr, um halb neun",
+   "en": "half (halb neun = 8:30)",
+   "lemma": ""
+  },
+  {
+   "form": "Dienstag",
+   "context": "Am Dienstag um zehn habe ich einen Termin.am + Tag, um + Uhrzeit",
+   "en": "Tuesday",
+   "lemma": "der Dienstag"
+  },
+  {
+   "form": "Hause",
+   "context": "Am Abend bin ich meistens zu Hause.am + Tageszeit",
+   "en": "home (zu Hause = at home)",
+   "lemma": "das Haus"
+  },
+  {
+   "form": "Tageszeit",
+   "context": "Am Abend bin ich meistens zu Hause.am + Tageszeit",
+   "en": "time of day",
+   "lemma": "die Tageszeit"
+  },
+  {
+   "form": "Merkhilfe",
+   "context": "Tipp: Merkhilfe: am dem Tag, um die Uhr.",
+   "en": "memory aid",
+   "lemma": "die Merkhilfe"
+  },
+  {
+   "form": "Zeitangabe",
+   "context": "Das Verb bleibt immer auf Position 2. Wenn eine Zeitangabe vorn steht, rückt das Subjekt hinter das Verb.",
+   "en": "time expression",
+   "lemma": "die Zeitangabe"
+  },
+  {
+   "form": "vorn",
+   "context": "Das Verb bleibt immer auf Position 2. Wenn eine Zeitangabe vorn steht, rückt das Subjekt hinter das Verb.",
+   "en": "at the front, first",
+   "lemma": ""
+  },
+  {
+   "form": "rückt",
+   "context": "Das Verb bleibt immer auf Position 2. Wenn eine Zeitangabe vorn steht, rückt das Subjekt hinter das Verb.",
+   "en": "moves",
+   "lemma": "rücken"
+  },
+  {
+   "form": "Subjekt",
+   "context": "Das Verb bleibt immer auf Position 2. Wenn eine Zeitangabe vorn steht, rückt das Subjekt hinter das Verb.",
+   "en": "subject",
+   "lemma": "das Subjekt"
+  },
+  {
+   "form": "hinter",
+   "context": "Das Verb bleibt immer auf Position 2. Wenn eine Zeitangabe vorn steht, rückt das Subjekt hinter das Verb.",
+   "en": "behind, after",
+   "lemma": ""
+  },
+  {
+   "form": "Rest",
+   "context": "Rest",
+   "en": "rest",
+   "lemma": "der Rest"
+  },
+  {
+   "form": "beginnt",
+   "context": "Um acht Uhr beginnt der Kurs.Zeitangabe vorn, Subjekt hinter dem Verb",
+   "en": "begins, starts",
+   "lemma": "beginnen"
+  },
+  {
+   "form": "clock",
+   "context": "die Uhr, -en — EN: clock; o'clock · FR: l'horloge ; heureEs ist drei Uhr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "o'clock",
+   "context": "die Uhr, -en — EN: clock; o'clock · FR: l'horloge ; heureEs ist drei Uhr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'horloge",
+   "context": "die Uhr, -en — EN: clock; o'clock · FR: l'horloge ; heureEs ist drei Uhr.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "heureEs",
+   "context": "die Uhr, -en — EN: clock; o'clock · FR: l'horloge ; heureEs ist drei Uhr.",
+   "en": "it",
+   "lemma": ""
+  },
+  {
+   "form": "time",
+   "context": "die Uhrzeit, -en — EN: time of day · FR: l'heureWie spät ist es?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "day",
+   "context": "die Uhrzeit, -en — EN: time of day · FR: l'heureWie spät ist es?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "l'heureWie",
+   "context": "die Uhrzeit, -en — EN: time of day · FR: l'heureWie spät ist es?",
+   "en": "how; what",
+   "lemma": ""
+  },
+  {
+   "form": "spät",
+   "context": "die Uhrzeit, -en — EN: time of day · FR: l'heureWie spät ist es?",
+   "en": "late (Wie spät ist es? = What time is it?)",
+   "lemma": ""
+  },
+  {
+   "form": "half",
+   "context": "halb — EN: half · FR: et demieEs ist halb neun (8:30).",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "et",
+   "context": "halb — EN: half · FR: et demieEs ist halb neun (8:30).",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "demieEs",
+   "context": "halb — EN: half · FR: et demieEs ist halb neun (8:30).",
+   "en": "it",
+   "lemma": ""
+  },
+  {
+   "form": "Viertel",
+   "context": "Viertel vor / nach — EN: quarter to / past · FR: moins le quart / et quartViertel nach drei (3:15).",
+   "en": "quarter",
+   "lemma": "das Viertel"
+  },
+  {
+   "form": "quarter",
+   "context": "Viertel vor / nach — EN: quarter to / past · FR: moins le quart / et quartViertel nach drei (3:15).",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "past",
+   "context": "Viertel vor / nach — EN: quarter to / past · FR: moins le quart / et quartViertel nach drei (3:15).",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "moins",
+   "context": "Viertel vor / nach — EN: quarter to / past · FR: moins le quart / et quartViertel nach drei (3:15).",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "quart",
+   "context": "Viertel vor / nach — EN: quarter to / past · FR: moins le quart / et quartViertel nach drei (3:15).",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "quartViertel",
+   "context": "Viertel vor / nach — EN: quarter to / past · FR: moins le quart / et quartViertel nach drei (3:15).",
+   "en": "quarter",
+   "lemma": ""
+  },
+  {
+   "form": "Mittwoch",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "Wednesday",
+   "lemma": "der Mittwoch"
+  },
+  {
+   "form": "Monday",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Tuesday",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Wednesday",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "lundi",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mardi",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "mercrediAm",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "on the (an + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "frei",
+   "context": "der Montag / Dienstag / Mittwoch — EN: Monday / Tuesday / Wednesday · FR: lundi / mardi / mercrediAm Mittwoch habe ich frei.",
+   "en": "free; off (frei haben = have time off)",
+   "lemma": ""
+  },
+  {
+   "form": "morning",
+   "context": "der Morgen / der Abend — EN: morning / evening · FR: le matin / le soirAm Abend lerne ich Deutsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "evening",
+   "context": "der Morgen / der Abend — EN: morning / evening · FR: le matin / le soirAm Abend lerne ich Deutsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "matin",
+   "context": "der Morgen / der Abend — EN: morning / evening · FR: le matin / le soirAm Abend lerne ich Deutsch.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "soirAm",
+   "context": "der Morgen / der Abend — EN: morning / evening · FR: le matin / le soirAm Abend lerne ich Deutsch.",
+   "en": "in the, on the (an + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "off",
+   "context": "frei haben — EN: to have time off · FR: être libreAm Freitag habe ich frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "être",
+   "context": "frei haben — EN: to have time off · FR: être libreAm Freitag habe ich frei.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "libreAm",
+   "context": "frei haben — EN: to have time off · FR: être libreAm Freitag habe ich frei.",
+   "en": "on the (an + dem)",
+   "lemma": ""
+  },
+  {
+   "form": "tempsHast",
+   "context": "Zeit haben — EN: to have time · FR: avoir le tempsHast du morgen Zeit?",
+   "en": "have (with du)",
+   "lemma": ""
+  },
+  {
+   "form": "passen",
+   "context": "passen — EN: to suit, be convenient · FR: convenirPasst dir Montag um zehn?",
+   "en": "to suit, to fit",
+   "lemma": ""
+  },
+  {
+   "form": "suit",
+   "context": "passen — EN: to suit, be convenient · FR: convenirPasst dir Montag um zehn?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "convenient",
+   "context": "passen — EN: to suit, be convenient · FR: convenirPasst dir Montag um zehn?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "convenirPasst",
+   "context": "passen — EN: to suit, be convenient · FR: convenirPasst dir Montag um zehn?",
+   "en": "suits",
+   "lemma": ""
+  },
+  {
+   "form": "pünktlich",
+   "context": "pünktlich — EN: on time · FR: ponctuelBitte sei pünktlich!",
+   "en": "on time, punctual",
+   "lemma": ""
+  },
+  {
+   "form": "on",
+   "context": "pünktlich — EN: on time · FR: ponctuelBitte sei pünktlich!",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "ponctuelBitte",
+   "context": "pünktlich — EN: on time · FR: ponctuelBitte sei pünktlich!",
+   "en": "please",
+   "lemma": ""
+  },
+  {
+   "form": "sei",
+   "context": "pünktlich — EN: on time · FR: ponctuelBitte sei pünktlich!",
+   "en": "be (with du)",
+   "lemma": "sein"
+  },
+  {
+   "form": "später",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "later",
+   "lemma": "spät"
+  },
+  {
+   "form": "früher",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "earlier; in the past",
+   "lemma": "früh"
+  },
+  {
+   "form": "later",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "earlier",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "plus",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tard",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "tôtKönnen",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "can",
+   "lemma": ""
+  },
+  {
+   "form": "telefonieren",
+   "context": "später / früher — EN: later / earlier · FR: plus tard / plus tôtKönnen wir später telefonieren?",
+   "en": "to phone, to talk on the phone",
+   "lemma": ""
+  },
+  {
+   "form": "vorschlagen",
+   "context": "einen Termin vorschlagen",
+   "en": "to suggest",
+   "lemma": ""
+  },
+  {
+   "form": "wäre",
+   "context": "Wie wäre es am Dienstag?",
+   "en": "would be",
+   "lemma": "sein"
+  },
+  {
+   "form": "zusagen",
+   "context": "zusagen oder absagen",
+   "en": "to accept, to say yes",
+   "lemma": ""
+  },
+  {
+   "form": "absagen",
+   "context": "zusagen oder absagen",
+   "en": "to cancel, to say no",
+   "lemma": ""
+  },
+  {
+   "form": "Telefon",
+   "context": "Dialog: Ein Termin am Telefon",
+   "en": "telephone",
+   "lemma": "das Telefon"
+  },
+  {
+   "form": "Praxis",
+   "context": "Praxis: Praxis Dr. Berg, guten Tag.",
+   "en": "(doctor's) practice",
+   "lemma": "die Praxis"
+  },
+  {
+   "form": "Dr",
+   "context": "Praxis: Praxis Dr. Berg, guten Tag.",
+   "en": "Dr (doctor)",
+   "lemma": ""
+  },
+  {
+   "form": "Berg",
+   "context": "Praxis: Praxis Dr. Berg, guten Tag.",
+   "en": "Berg (name); mountain",
+   "lemma": "der Berg"
+  },
+  {
+   "form": "Kito",
+   "context": "Herr Kito: Guten Tag, ich hätte gern einen Termin.",
+   "en": "Kito (name)",
+   "lemma": ""
+  },
+  {
+   "form": "hätte",
+   "context": "Herr Kito: Guten Tag, ich hätte gern einen Termin.",
+   "en": "would have (ich hätte gern = I would like)",
+   "lemma": "haben"
+  },
+  {
+   "form": "gern",
+   "context": "Herr Kito: Guten Tag, ich hätte gern einen Termin.",
+   "en": "gladly (hätte gern = would like)",
+   "lemma": ""
+  },
+  {
+   "form": "Vielen",
+   "context": "Herr Kito: Ja, das passt gut. Vielen Dank!",
+   "en": "many (Vielen Dank = thank you very much)",
+   "lemma": "viel"
+  },
+  {
+   "form": "Dank",
+   "context": "Herr Kito: Ja, das passt gut. Vielen Dank!",
+   "en": "thanks",
+   "lemma": "der Dank"
+  },
+  {
+   "form": "sagt",
+   "context": "8:30 Uhr sagt man:",
+   "en": "says",
+   "lemma": "sagen"
+  },
+  {
+   "form": "schlafe",
+   "context": "Ausnahme: ___ der Nacht schlafe ich. (Präposition)",
+   "en": "sleep",
+   "lemma": "schlafen"
+  },
+  {
+   "form": "Wochenplan",
+   "context": "Schreiben Sie Ihren Wochenplan: Was machen Sie wann? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens vier Termine. • Benutzen Sie am und um richtig. • Beginnen Sie zwei Sätze mit der Zeitangabe.",
+   "en": "weekly plan",
+   "lemma": "der Wochenplan"
+  },
+  {
+   "form": "Beginnen",
+   "context": "Schreiben Sie Ihren Wochenplan: Was machen Sie wann? Umfang: 25–35 Wörter Checkliste: • Nennen Sie mindestens vier Termine. • Benutzen Sie am und um richtig. • Beginnen Sie zwei Sätze mit der Zeitangabe.",
+   "en": "begin, start",
+   "lemma": "beginnen"
+  }
+ ]
+}
