@@ -1,0 +1,923 @@
+{
+ "level": "B1",
+ "lesson": 14,
+ "title": "Weiterbildung — Ein spannender Kurs mit ausgewählten Themen",
+ "lines": [
+  {
+   "de": "Kursangebote verstehen und auswählen — Partizipien als Adjektive nutzen.",
+   "en": "Understanding and choosing courses on offer — using participles as adjectives."
+  },
+  {
+   "de": "Kursbeschreibungen verstehen und vergleichen",
+   "en": "understand and compare course descriptions"
+  },
+  {
+   "de": "Partizip I und Partizip II als Adjektiv bilden",
+   "en": "form the present participle (Partizip I) and past participle (Partizip II) as adjectives"
+  },
+  {
+   "de": "sich für eine Weiterbildung anmelden",
+   "en": "register for a further training course"
+  },
+  {
+   "de": "Grammatik: Partizip I als Adjektiv",
+   "en": "Grammar: present participle (Partizip I) as an adjective"
+  },
+  {
+   "de": "Partizip I = Infinitiv + d + Adjektivendung. Bedeutung: aktiv und gleichzeitig — die Person oder Sache tut gerade etwas.",
+   "en": "Present participle (Partizip I) = infinitive + d + adjective ending. Meaning: active and simultaneous — the person or thing is doing something at that moment."
+  },
+  {
+   "de": "Partizip I",
+   "en": "Present participle (Partizip I)"
+  },
+  {
+   "de": "faszinieren",
+   "en": "to fascinate"
+  },
+  {
+   "de": "faszinierend-",
+   "en": "fascinating"
+  },
+  {
+   "de": "ein faszinierender Vortrag",
+   "en": "a fascinating talk"
+  },
+  {
+   "de": "ein Vortrag, der fasziniert",
+   "en": "a talk that fascinates"
+  },
+  {
+   "de": "passen",
+   "en": "to fit, suit"
+  },
+  {
+   "de": "passend-",
+   "en": "suitable, fitting"
+  },
+  {
+   "de": "die passende Strategie",
+   "en": "the right strategy"
+  },
+  {
+   "de": "die Strategie, die passt",
+   "en": "the strategy that fits"
+  },
+  {
+   "de": "überzeugen",
+   "en": "to convince"
+  },
+  {
+   "de": "überzeugend-",
+   "en": "convincing"
+  },
+  {
+   "de": "ein überzeugendes Auftreten",
+   "en": "a convincing manner"
+  },
+  {
+   "de": "ein Auftreten, das überzeugt",
+   "en": "a manner that convinces"
+  },
+  {
+   "de": "Wir suchen eine Lösung mit überzeugenden Argumenten.Dativ Plural: -en",
+   "en": "We are looking for a solution with convincing arguments. Dative plural: -en"
+  },
+  {
+   "de": "Das war ein herausfordernder, aber lohnender Kurs.zwei Partizipien I als Attribut",
+   "en": "That was a challenging but rewarding course. two present participles (Partizip I) used as attributes"
+  },
+  {
+   "de": "Tipp: Partizip I steht fast nur vor einem Nomen. Als Prädikat benutzt man es nicht: nicht 'Der Kurs ist interessierend', sondern 'Der Kurs ist interessant'.",
+   "en": "Tip: The present participle (Partizip I) is almost only used before a noun. It is not used as a predicate: not 'Der Kurs ist interessierend', but 'Der Kurs ist interessant'."
+  },
+  {
+   "de": "Grammatik: Partizip II als Adjektiv",
+   "en": "Grammar: past participle (Partizip II) as an adjective"
+  },
+  {
+   "de": "Partizip II + Adjektivendung. Bedeutung: passiv und abgeschlossen — mit der Person oder Sache ist etwas gemacht worden.",
+   "en": "Past participle (Partizip II) + adjective ending. Meaning: passive and completed — something has been done to the person or thing."
+  },
+  {
+   "de": "Partizip II",
+   "en": "Past participle (Partizip II)"
+  },
+  {
+   "de": "auswählen",
+   "en": "to select, choose"
+  },
+  {
+   "de": "ausgewählt-",
+   "en": "selected"
+  },
+  {
+   "de": "ausgewählte Themen",
+   "en": "selected topics"
+  },
+  {
+   "de": "Themen, die ausgewählt wurden",
+   "en": "topics that were selected"
+  },
+  {
+   "de": "verstecken",
+   "en": "to hide"
+  },
+  {
+   "de": "versteckt-",
+   "en": "hidden"
+  },
+  {
+   "de": "versteckte Talente",
+   "en": "hidden talents"
+  },
+  {
+   "de": "Talente, die versteckt sind",
+   "en": "talents that are hidden"
+  },
+  {
+   "de": "renovieren",
+   "en": "to renovate"
+  },
+  {
+   "de": "renoviert-",
+   "en": "renovated"
+  },
+  {
+   "de": "ein renoviertes Seminarhaus",
+   "en": "a renovated seminar centre"
+  },
+  {
+   "de": "ein Haus, das renoviert wurde",
+   "en": "a house that was renovated"
+  },
+  {
+   "de": "Der Kurs richtet sich an fortgeschrittene Lernende.fortgeschritten = Partizip II als Adjektiv",
+   "en": "The course is aimed at advanced learners. fortgeschritten = past participle (Partizip II) used as an adjective"
+  },
+  {
+   "de": "Bitte bringen Sie die ausgefüllten Formulare mit.Akkusativ Plural: -en",
+   "en": "Please bring the completed forms with you. Accusative plural: -en"
+  },
+  {
+   "de": "Tipp: Faustregel: Partizip I = macht etwas (aktiv), Partizip II = etwas wurde damit gemacht (passiv).",
+   "en": "Tip: Rule of thumb: Partizip I = does something (active), Partizip II = something was done to it (passive)."
+  },
+  {
+   "de": "die Weiterbildung, -en — EN: further training · FR: la formation continueDie Firma zahlt die Weiterbildung.",
+   "en": "Example: The company pays for the further training."
+  },
+  {
+   "de": "der Kurs, -e / der Lehrgang, ¨-e — EN: course · FR: le cours / la formationDer Lehrgang dauert sechs Monate.",
+   "en": "Example: The training course lasts six months."
+  },
+  {
+   "de": "die Kenntnisse (Pl.) — EN: knowledge, skills · FR: les connaissancesGute Computerkenntnisse sind Voraussetzung.",
+   "en": "Example: Good computer skills are a requirement."
+  },
+  {
+   "de": "die Voraussetzung, -en — EN: requirement · FR: la condition préalableWelche Voraussetzungen muss ich erfüllen?",
+   "en": "Example: Which requirements do I have to meet?"
+  },
+  {
+   "de": "der Teilnehmer, - / die Teilnehmerin, -nen — EN: participant · FR: le/la participant(e)Der Kurs hat maximal zwölf Teilnehmer.",
+   "en": "Example: The course has a maximum of twelve participants."
+  },
+  {
+   "de": "die Teilnahme (Sg.) — EN: participation · FR: la participationDie Teilnahme ist kostenlos.",
+   "en": "Example: Participation is free of charge."
+  },
+  {
+   "de": "sich anmelden zu — EN: to register for · FR: s'inscrire àIch habe mich zum Abendkurs angemeldet.",
+   "en": "Example: I have registered for the evening course."
+  },
+  {
+   "de": "die Gebühr, -en — EN: fee · FR: les fraisDie Gebühr beträgt 90 Euro.",
+   "en": "Example: The fee is 90 euros."
+  },
+  {
+   "de": "das Zertifikat, -e — EN: certificate · FR: le certificatAm Ende erhalten Sie ein Zertifikat.",
+   "en": "Example: At the end you receive a certificate."
+  },
+  {
+   "de": "anspruchsvoll — EN: demanding · FR: exigeantDer Kurs ist ziemlich anspruchsvoll.",
+   "en": "Example: The course is quite demanding."
+  },
+  {
+   "de": "berufsbegleitend — EN: part-time alongside work · FR: en cours d'emploiSie studiert berufsbegleitend.",
+   "en": "Example: She studies part-time alongside her job."
+  },
+  {
+   "de": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "Example: The course teaches practical basics."
+  },
+  {
+   "de": "sich informieren",
+   "en": "Asking for information"
+  },
+  {
+   "de": "Ich interessiere mich für den Kurs …",
+   "en": "I'm interested in the course …"
+  },
+  {
+   "de": "Könnten Sie mir sagen, ob noch Plätze frei sind?",
+   "en": "Could you tell me whether there are still places available?"
+  },
+  {
+   "de": "Welche Vorkenntnisse werden erwartet?",
+   "en": "What prior knowledge is expected?"
+  },
+  {
+   "de": "sich anmelden",
+   "en": "Registering"
+  },
+  {
+   "de": "Hiermit melde ich mich verbindlich zu … an.",
+   "en": "I hereby make a binding registration for …"
+  },
+  {
+   "de": "Bitte senden Sie mir die Anmeldeunterlagen.",
+   "en": "Please send me the registration documents."
+  },
+  {
+   "de": "Ist eine Ratenzahlung möglich?",
+   "en": "Is it possible to pay in instalments?"
+  },
+  {
+   "de": "einen Kurs bewerten",
+   "en": "Evaluating a course"
+  },
+  {
+   "de": "Besonders hilfreich fand ich …",
+   "en": "What I found particularly helpful was …"
+  },
+  {
+   "de": "Was mir gefehlt hat, war …",
+   "en": "What I missed was …"
+  },
+  {
+   "de": "Ich würde den Kurs auf jeden Fall weiterempfehlen.",
+   "en": "I would definitely recommend the course."
+  },
+  {
+   "de": "Die Firma zahlt die Weiterbildung.",
+   "en": "The company pays for the further training."
+  },
+  {
+   "de": "Der Lehrgang dauert sechs Monate.",
+   "en": "The training course lasts six months."
+  },
+  {
+   "de": "Gute Computerkenntnisse sind Voraussetzung.",
+   "en": "Good computer skills are a requirement."
+  },
+  {
+   "de": "Welche Voraussetzungen muss ich erfüllen?",
+   "en": "Which requirements do I have to meet?"
+  },
+  {
+   "de": "Der Kurs hat maximal zwölf Teilnehmer.",
+   "en": "The course has a maximum of twelve participants."
+  },
+  {
+   "de": "Die Teilnahme ist kostenlos.",
+   "en": "Participation is free of charge."
+  },
+  {
+   "de": "Ich habe mich zum Abendkurs angemeldet.",
+   "en": "I have registered for the evening course."
+  },
+  {
+   "de": "Die Gebühr beträgt 90 Euro.",
+   "en": "The fee is 90 euros."
+  },
+  {
+   "de": "Am Ende erhalten Sie ein Zertifikat.",
+   "en": "At the end you receive a certificate."
+  },
+  {
+   "de": "Der Kurs ist ziemlich anspruchsvoll.",
+   "en": "The course is quite demanding."
+  },
+  {
+   "de": "Sie studiert berufsbegleitend.",
+   "en": "She studies part-time alongside her job."
+  },
+  {
+   "de": "Der Kurs vermittelt praktische Grundlagen.",
+   "en": "The course teaches practical basics."
+  },
+  {
+   "de": "Das war ein ___ Vortrag. (faszinieren, Partizip I)",
+   "en": "That was a ___ talk. (faszinieren, present participle)"
+  },
+  {
+   "de": "Bitte bringen Sie die ___ Unterlagen mit.",
+   "en": "Please bring the ___ documents with you."
+  },
+  {
+   "de": "Der Kurs richtet sich an ___ Lernende. (fortschreiten → fortgeschritten)",
+   "en": "The course is aimed at ___ learners. (fortschreiten → fortgeschritten)"
+  },
+  {
+   "de": "Welche Bedeutung hat 'duftende Gewürze'?",
+   "en": "What does 'duftende Gewürze' mean?"
+  },
+  {
+   "de": "Wir bieten ___ Themen aus der Praxis an. (auswählen, Partizip II)",
+   "en": "We offer ___ topics from real-life practice. (auswählen, past participle)"
+  },
+  {
+   "de": "faszinieren + d + Endung -er (Nominativ maskulin).",
+   "en": "faszinieren + d + ending -er (nominative masculine)."
+  },
+  {
+   "de": "Passiv und abgeschlossen → Partizip II: die ausgefüllten Unterlagen.",
+   "en": "Passive and completed → past participle (Partizip II): die ausgefüllten Unterlagen."
+  },
+  {
+   "de": "Partizip II + Endung -e (Akkusativ Plural ohne Artikel).",
+   "en": "Past participle (Partizip II) + ending -e (accusative plural without an article)."
+  },
+  {
+   "de": "Partizip I ist aktiv und gleichzeitig.",
+   "en": "The present participle (Partizip I) is active and simultaneous."
+  },
+  {
+   "de": "Akkusativ Plural ohne Artikel: ausgewählte Themen.",
+   "en": "Accusative plural without an article: ausgewählte Themen."
+  }
+ ],
+ "forms": [
+  {
+   "form": "Kursangebote",
+   "context": "Kursangebote verstehen und auswählen — Partizipien als Adjektive nutzen.",
+   "en": "courses on offer",
+   "lemma": "das Kursangebot"
+  },
+  {
+   "form": "auswählen",
+   "context": "Kursangebote verstehen und auswählen — Partizipien als Adjektive nutzen.",
+   "en": "to select, choose",
+   "lemma": ""
+  },
+  {
+   "form": "nutzen",
+   "context": "Kursangebote verstehen und auswählen — Partizipien als Adjektive nutzen.",
+   "en": "to use",
+   "lemma": ""
+  },
+  {
+   "form": "Kursbeschreibungen",
+   "context": "Kursbeschreibungen verstehen und vergleichen",
+   "en": "course descriptions",
+   "lemma": "die Kursbeschreibung"
+  },
+  {
+   "form": "Weiterbildung",
+   "context": "sich für eine Weiterbildung anmelden",
+   "en": "further training",
+   "lemma": "die Weiterbildung"
+  },
+  {
+   "form": "faszinieren",
+   "context": "faszinieren",
+   "en": "to fascinate",
+   "lemma": ""
+  },
+  {
+   "form": "faszinierend",
+   "context": "faszinierend-",
+   "en": "fascinating",
+   "lemma": ""
+  },
+  {
+   "form": "faszinierender",
+   "context": "ein faszinierender Vortrag",
+   "en": "fascinating",
+   "lemma": "faszinierend"
+  },
+  {
+   "form": "Vortrag",
+   "context": "ein faszinierender Vortrag",
+   "en": "talk, lecture",
+   "lemma": "der Vortrag"
+  },
+  {
+   "form": "fasziniert",
+   "context": "ein Vortrag, der fasziniert",
+   "en": "fascinates; fascinated",
+   "lemma": "faszinieren"
+  },
+  {
+   "form": "passend",
+   "context": "passend-",
+   "en": "suitable, fitting",
+   "lemma": ""
+  },
+  {
+   "form": "Strategie",
+   "context": "die passende Strategie",
+   "en": "strategy",
+   "lemma": "die Strategie"
+  },
+  {
+   "form": "überzeugend",
+   "context": "überzeugend-",
+   "en": "convincing",
+   "lemma": ""
+  },
+  {
+   "form": "überzeugendes",
+   "context": "ein überzeugendes Auftreten",
+   "en": "convincing",
+   "lemma": "überzeugend"
+  },
+  {
+   "form": "Auftreten",
+   "context": "ein überzeugendes Auftreten",
+   "en": "manner, appearance",
+   "lemma": "das Auftreten"
+  },
+  {
+   "form": "Lösung",
+   "context": "Wir suchen eine Lösung mit überzeugenden Argumenten.Dativ Plural: -en",
+   "en": "solution",
+   "lemma": "die Lösung"
+  },
+  {
+   "form": "überzeugenden",
+   "context": "Wir suchen eine Lösung mit überzeugenden Argumenten.Dativ Plural: -en",
+   "en": "convincing",
+   "lemma": "überzeugend"
+  },
+  {
+   "form": "Argumenten",
+   "context": "Wir suchen eine Lösung mit überzeugenden Argumenten.Dativ Plural: -en",
+   "en": "arguments",
+   "lemma": "das Argument"
+  },
+  {
+   "form": "herausfordernder",
+   "context": "Das war ein herausfordernder, aber lohnender Kurs.zwei Partizipien I als Attribut",
+   "en": "challenging",
+   "lemma": "herausfordernd"
+  },
+  {
+   "form": "lohnender",
+   "context": "Das war ein herausfordernder, aber lohnender Kurs.zwei Partizipien I als Attribut",
+   "en": "rewarding, worthwhile",
+   "lemma": "lohnend"
+  },
+  {
+   "form": "Prädikat",
+   "context": "Tipp: Partizip I steht fast nur vor einem Nomen. Als Prädikat benutzt man es nicht: nicht 'Der Kurs ist interessierend', sondern 'Der Kurs ist interessant'.",
+   "en": "predicate",
+   "lemma": "das Prädikat"
+  },
+  {
+   "form": "interessierend",
+   "context": "Tipp: Partizip I steht fast nur vor einem Nomen. Als Prädikat benutzt man es nicht: nicht 'Der Kurs ist interessierend', sondern 'Der Kurs ist interessant'.",
+   "en": "interesting (present participle)",
+   "lemma": "interessieren"
+  },
+  {
+   "form": "abgeschlossen",
+   "context": "Partizip II + Adjektivendung. Bedeutung: passiv und abgeschlossen — mit der Person oder Sache ist etwas gemacht worden.",
+   "en": "completed; locked",
+   "lemma": ""
+  },
+  {
+   "form": "worden",
+   "context": "Partizip II + Adjektivendung. Bedeutung: passiv und abgeschlossen — mit der Person oder Sache ist etwas gemacht worden.",
+   "en": "been (passive)",
+   "lemma": "werden"
+  },
+  {
+   "form": "ausgewählt",
+   "context": "ausgewählt-",
+   "en": "selected, chosen",
+   "lemma": "auswählen"
+  },
+  {
+   "form": "ausgewählte",
+   "context": "ausgewählte Themen",
+   "en": "selected",
+   "lemma": "ausgewählt"
+  },
+  {
+   "form": "Themen",
+   "context": "ausgewählte Themen",
+   "en": "topics",
+   "lemma": "das Thema"
+  },
+  {
+   "form": "wurden",
+   "context": "Themen, die ausgewählt wurden",
+   "en": "were (passive); became",
+   "lemma": "werden"
+  },
+  {
+   "form": "verstecken",
+   "context": "verstecken",
+   "en": "to hide",
+   "lemma": ""
+  },
+  {
+   "form": "versteckt",
+   "context": "versteckt-",
+   "en": "hidden",
+   "lemma": "verstecken"
+  },
+  {
+   "form": "versteckte",
+   "context": "versteckte Talente",
+   "en": "hidden",
+   "lemma": "versteckt"
+  },
+  {
+   "form": "Talente",
+   "context": "versteckte Talente",
+   "en": "talents",
+   "lemma": "das Talent"
+  },
+  {
+   "form": "renoviertes",
+   "context": "ein renoviertes Seminarhaus",
+   "en": "renovated",
+   "lemma": "renoviert"
+  },
+  {
+   "form": "Seminarhaus",
+   "context": "ein renoviertes Seminarhaus",
+   "en": "seminar centre",
+   "lemma": "das Seminarhaus"
+  },
+  {
+   "form": "fortgeschrittene",
+   "context": "Der Kurs richtet sich an fortgeschrittene Lernende.fortgeschritten = Partizip II als Adjektiv",
+   "en": "advanced",
+   "lemma": "fortgeschritten"
+  },
+  {
+   "form": "Lernende",
+   "context": "Der Kurs richtet sich an fortgeschrittene Lernende.fortgeschritten = Partizip II als Adjektiv",
+   "en": "learners",
+   "lemma": "der/die Lernende"
+  },
+  {
+   "form": "fortgeschritten",
+   "context": "Der Kurs richtet sich an fortgeschrittene Lernende.fortgeschritten = Partizip II als Adjektiv",
+   "en": "advanced",
+   "lemma": ""
+  },
+  {
+   "form": "ausgefüllten",
+   "context": "Bitte bringen Sie die ausgefüllten Formulare mit.Akkusativ Plural: -en",
+   "en": "completed, filled in",
+   "lemma": "ausgefüllt"
+  },
+  {
+   "form": "Faustregel",
+   "context": "Tipp: Faustregel: Partizip I = macht etwas (aktiv), Partizip II = etwas wurde damit gemacht (passiv).",
+   "en": "rule of thumb",
+   "lemma": "die Faustregel"
+  },
+  {
+   "form": "further",
+   "context": "die Weiterbildung, -en — EN: further training · FR: la formation continueDie Firma zahlt die Weiterbildung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "formation",
+   "context": "die Weiterbildung, -en — EN: further training · FR: la formation continueDie Firma zahlt die Weiterbildung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "continueDie",
+   "context": "die Weiterbildung, -en — EN: further training · FR: la formation continueDie Firma zahlt die Weiterbildung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "zahlt",
+   "context": "die Weiterbildung, -en — EN: further training · FR: la formation continueDie Firma zahlt die Weiterbildung.",
+   "en": "pays (for)",
+   "lemma": "zahlen"
+  },
+  {
+   "form": "Lehrgang",
+   "context": "der Kurs, -e / der Lehrgang, ¨-e — EN: course · FR: le cours / la formationDer Lehrgang dauert sechs Monate.",
+   "en": "training course",
+   "lemma": "der Lehrgang"
+  },
+  {
+   "form": "cours",
+   "context": "der Kurs, -e / der Lehrgang, ¨-e — EN: course · FR: le cours / la formationDer Lehrgang dauert sechs Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "formationDer",
+   "context": "der Kurs, -e / der Lehrgang, ¨-e — EN: course · FR: le cours / la formationDer Lehrgang dauert sechs Monate.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Kenntnisse",
+   "context": "die Kenntnisse (Pl.) — EN: knowledge, skills · FR: les connaissancesGute Computerkenntnisse sind Voraussetzung.",
+   "en": "knowledge, skills",
+   "lemma": "die Kenntnis"
+  },
+  {
+   "form": "knowledge",
+   "context": "die Kenntnisse (Pl.) — EN: knowledge, skills · FR: les connaissancesGute Computerkenntnisse sind Voraussetzung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "skills",
+   "context": "die Kenntnisse (Pl.) — EN: knowledge, skills · FR: les connaissancesGute Computerkenntnisse sind Voraussetzung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "connaissancesGute",
+   "context": "die Kenntnisse (Pl.) — EN: knowledge, skills · FR: les connaissancesGute Computerkenntnisse sind Voraussetzung.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Computerkenntnisse",
+   "context": "die Kenntnisse (Pl.) — EN: knowledge, skills · FR: les connaissancesGute Computerkenntnisse sind Voraussetzung.",
+   "en": "computer skills",
+   "lemma": "die Computerkenntnis"
+  },
+  {
+   "form": "Voraussetzung",
+   "context": "die Kenntnisse (Pl.) — EN: knowledge, skills · FR: les connaissancesGute Computerkenntnisse sind Voraussetzung.",
+   "en": "requirement, prerequisite",
+   "lemma": "die Voraussetzung"
+  },
+  {
+   "form": "requirement",
+   "context": "die Voraussetzung, -en — EN: requirement · FR: la condition préalableWelche Voraussetzungen muss ich erfüllen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "condition",
+   "context": "die Voraussetzung, -en — EN: requirement · FR: la condition préalableWelche Voraussetzungen muss ich erfüllen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "préalableWelche",
+   "context": "die Voraussetzung, -en — EN: requirement · FR: la condition préalableWelche Voraussetzungen muss ich erfüllen?",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Voraussetzungen",
+   "context": "die Voraussetzung, -en — EN: requirement · FR: la condition préalableWelche Voraussetzungen muss ich erfüllen?",
+   "en": "requirements",
+   "lemma": "die Voraussetzung"
+  },
+  {
+   "form": "erfüllen",
+   "context": "die Voraussetzung, -en — EN: requirement · FR: la condition préalableWelche Voraussetzungen muss ich erfüllen?",
+   "en": "to fulfil, meet",
+   "lemma": ""
+  },
+  {
+   "form": "Teilnehmer",
+   "context": "der Teilnehmer, - / die Teilnehmerin, -nen — EN: participant · FR: le/la participant(e)Der Kurs hat maximal zwölf Teilnehmer.",
+   "en": "participant(s)",
+   "lemma": "der Teilnehmer"
+  },
+  {
+   "form": "Teilnehmerin",
+   "context": "der Teilnehmer, - / die Teilnehmerin, -nen — EN: participant · FR: le/la participant(e)Der Kurs hat maximal zwölf Teilnehmer.",
+   "en": "participant (a woman)",
+   "lemma": "die Teilnehmerin"
+  },
+  {
+   "form": "participant",
+   "context": "der Teilnehmer, - / die Teilnehmerin, -nen — EN: participant · FR: le/la participant(e)Der Kurs hat maximal zwölf Teilnehmer.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "maximal",
+   "context": "der Teilnehmer, - / die Teilnehmerin, -nen — EN: participant · FR: le/la participant(e)Der Kurs hat maximal zwölf Teilnehmer.",
+   "en": "at most, maximum",
+   "lemma": ""
+  },
+  {
+   "form": "Teilnahme",
+   "context": "die Teilnahme (Sg.) — EN: participation · FR: la participationDie Teilnahme ist kostenlos.",
+   "en": "participation",
+   "lemma": "die Teilnahme"
+  },
+  {
+   "form": "participation",
+   "context": "die Teilnahme (Sg.) — EN: participation · FR: la participationDie Teilnahme ist kostenlos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "participationDie",
+   "context": "die Teilnahme (Sg.) — EN: participation · FR: la participationDie Teilnahme ist kostenlos.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "Abendkurs",
+   "context": "sich anmelden zu — EN: to register for · FR: s'inscrire àIch habe mich zum Abendkurs angemeldet.",
+   "en": "evening course",
+   "lemma": "der Abendkurs"
+  },
+  {
+   "form": "Zertifikat",
+   "context": "das Zertifikat, -e — EN: certificate · FR: le certificatAm Ende erhalten Sie ein Zertifikat.",
+   "en": "certificate",
+   "lemma": "das Zertifikat"
+  },
+  {
+   "form": "certificatAm",
+   "context": "das Zertifikat, -e — EN: certificate · FR: le certificatAm Ende erhalten Sie ein Zertifikat.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "anspruchsvoll",
+   "context": "anspruchsvoll — EN: demanding · FR: exigeantDer Kurs ist ziemlich anspruchsvoll.",
+   "en": "demanding",
+   "lemma": ""
+  },
+  {
+   "form": "demanding",
+   "context": "anspruchsvoll — EN: demanding · FR: exigeantDer Kurs ist ziemlich anspruchsvoll.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "exigeantDer",
+   "context": "anspruchsvoll — EN: demanding · FR: exigeantDer Kurs ist ziemlich anspruchsvoll.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "berufsbegleitend",
+   "context": "berufsbegleitend — EN: part-time alongside work · FR: en cours d'emploiSie studiert berufsbegleitend.",
+   "en": "part-time alongside work",
+   "lemma": ""
+  },
+  {
+   "form": "part-time",
+   "context": "berufsbegleitend — EN: part-time alongside work · FR: en cours d'emploiSie studiert berufsbegleitend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "alongside",
+   "context": "berufsbegleitend — EN: part-time alongside work · FR: en cours d'emploiSie studiert berufsbegleitend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "d'emploiSie",
+   "context": "berufsbegleitend — EN: part-time alongside work · FR: en cours d'emploiSie studiert berufsbegleitend.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vermitteln",
+   "context": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "to impart, teach; to arrange",
+   "lemma": ""
+  },
+  {
+   "form": "impart",
+   "context": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "teach",
+   "context": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "transmettreDer",
+   "context": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "=",
+   "lemma": ""
+  },
+  {
+   "form": "vermittelt",
+   "context": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "teaches, imparts",
+   "lemma": "vermitteln"
+  },
+  {
+   "form": "praktische",
+   "context": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "practical",
+   "lemma": "praktisch"
+  },
+  {
+   "form": "Grundlagen",
+   "context": "vermitteln — EN: to impart, teach · FR: transmettreDer Kurs vermittelt praktische Grundlagen.",
+   "en": "basics, foundations",
+   "lemma": "die Grundlage"
+  },
+  {
+   "form": "informieren",
+   "context": "sich informieren",
+   "en": "to inform; (sich) find out",
+   "lemma": ""
+  },
+  {
+   "form": "Plätze",
+   "context": "Könnten Sie mir sagen, ob noch Plätze frei sind?",
+   "en": "places, seats",
+   "lemma": "der Platz"
+  },
+  {
+   "form": "Vorkenntnisse",
+   "context": "Welche Vorkenntnisse werden erwartet?",
+   "en": "prior knowledge",
+   "lemma": "die Vorkenntnis"
+  },
+  {
+   "form": "melde",
+   "context": "Hiermit melde ich mich verbindlich zu … an.",
+   "en": "register (melde … an); report",
+   "lemma": "anmelden"
+  },
+  {
+   "form": "verbindlich",
+   "context": "Hiermit melde ich mich verbindlich zu … an.",
+   "en": "binding; obliging",
+   "lemma": ""
+  },
+  {
+   "form": "senden",
+   "context": "Bitte senden Sie mir die Anmeldeunterlagen.",
+   "en": "to send",
+   "lemma": ""
+  },
+  {
+   "form": "Anmeldeunterlagen",
+   "context": "Bitte senden Sie mir die Anmeldeunterlagen.",
+   "en": "registration documents",
+   "lemma": "die Anmeldeunterlagen"
+  },
+  {
+   "form": "Ratenzahlung",
+   "context": "Ist eine Ratenzahlung möglich?",
+   "en": "payment in instalments",
+   "lemma": "die Ratenzahlung"
+  },
+  {
+   "form": "hilfreich",
+   "context": "Besonders hilfreich fand ich …",
+   "en": "helpful",
+   "lemma": ""
+  },
+  {
+   "form": "gefehlt",
+   "context": "Was mir gefehlt hat, war …",
+   "en": "missed, been lacking",
+   "lemma": "fehlen"
+  },
+  {
+   "form": "weiterempfehlen",
+   "context": "Ich würde den Kurs auf jeden Fall weiterempfehlen.",
+   "en": "to recommend (to others)",
+   "lemma": ""
+  },
+  {
+   "form": "fortschreiten",
+   "context": "Der Kurs richtet sich an ___ Lernende. (fortschreiten → fortgeschritten)",
+   "en": "to progress, advance",
+   "lemma": ""
+  },
+  {
+   "form": "duftende",
+   "context": "Welche Bedeutung hat 'duftende Gewürze'?",
+   "en": "fragrant",
+   "lemma": "duftend"
+  },
+  {
+   "form": "Gewürze",
+   "context": "Welche Bedeutung hat 'duftende Gewürze'?",
+   "en": "spices",
+   "lemma": "das Gewürz"
+  }
+ ]
+}
