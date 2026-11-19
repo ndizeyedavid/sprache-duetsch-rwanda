@@ -6,6 +6,7 @@ const ACTION_TEXT: Record<string, string> = {
   APPLICATION_STATUS_CHANGED: 'Status changed',
   APPLICATION_UPDATED: 'Course details edited',
   APPLICATION_STUDENT_LINKED: 'Student account linked',
+  APPLICATION_ADMITTED: 'Reviewed, accepted and enrolled',
 };
 
 const statusOf = (value: Record<string, unknown> | null): string | null => {
